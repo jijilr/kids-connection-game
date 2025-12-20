@@ -119,27 +119,53 @@ class _GameScreenState extends State<GameScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.transparent,
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
         elevation: 0,
-        title: Text(
-          'CONNECTIONS',
-          style: GoogleFonts.inter(
-            color: Colors.black,
-            fontWeight: FontWeight.w900,
-            letterSpacing: 1.5,
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [Color(0xFF667eea), Color(0xFF764ba2)],
+            ),
           ),
+        ),
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Text('🎮', style: TextStyle(fontSize: 24)),
+            const SizedBox(width: 8),
+            Text(
+              'CONNECTIONS',
+              style: GoogleFonts.quicksand(
+                color: Colors.white,
+                fontWeight: FontWeight.w800,
+                fontSize: 22,
+                letterSpacing: 2,
+              ),
+            ),
+            const SizedBox(width: 8),
+            const Text('🧩', style: TextStyle(fontSize: 24)),
+          ],
         ),
         centerTitle: true,
         actions: [
-          IconButton(
-            icon: const Icon(Icons.refresh, color: Colors.black),
-            onPressed: () {
-              _hasPlayedGameOverSound = false;
-              _soundService.stopAll();
-              Provider.of<GameProvider>(context, listen: false).startNewGame();
-            },
+          Container(
+            margin: const EdgeInsets.only(right: 8),
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.2),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: IconButton(
+              icon: const Icon(Icons.refresh_rounded, color: Colors.white),
+              onPressed: () {
+                _hasPlayedGameOverSound = false;
+                _soundService.stopAll();
+                Provider.of<GameProvider>(context, listen: false).startNewGame();
+              },
+            ),
           ),
         ],
       ),
