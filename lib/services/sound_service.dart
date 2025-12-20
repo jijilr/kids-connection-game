@@ -104,20 +104,11 @@ class SoundService {
     });
   }
   
-  /// Play an asset with platform-specific handling
-  /// On web, uses UrlSource with the correct base path
-  /// On native platforms, uses AssetSource
+  /// Play an asset - audioplayers handles platform differences internally
   Future<void> _playAsset(String assetPath) async {
-    if (kIsWeb) {
-      // On web, we need to use UrlSource with the deployed base path
-      // The base-href is /kids-connection-game/ so assets are at:
-      // /kids-connection-game/assets/[assetPath]
-      final webPath = 'assets/$assetPath';
-      return _player.play(UrlSource(webPath));
-    } else {
-      // On native platforms, use AssetSource directly
-      return _player.play(AssetSource(assetPath));
-    }
+    // AssetSource works for all platforms including web
+    // The audioplayers package handles the platform-specific asset loading
+    return _player.play(AssetSource(assetPath));
   }
 
   /// Clear the queue and stop current audio
