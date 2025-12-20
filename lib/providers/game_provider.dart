@@ -310,13 +310,40 @@ class GameProvider extends ChangeNotifier {
     return true;
   }
   
-  /// Auto-Solve: Automatically solves one group
-  bool useAutoSolve() {
-    if (_autoSolveRemaining <= 0 || _isGameOver) return false;
+  /// Auto-Solve: Triggers solving ALL remaining groups (animated from UI)
+  /// Returns the number of unsolved groups to solve
+  int useAutoSolveAll() {
+    if (_autoSolveRemaining <= 0 || _isGameOver) return 0;
     
     _autoSolveRemaining--;
-    _currentScore = (_currentScore - _lifelinePenalty * 2).clamp(0, 999999); // Double penalty
+    _currentScore = (_currentScore - _lifelinePenalty * 3).clamp(0, 999999); // Triple penalty for solving all
     
+    // Get count of unsolved groups
+    int unsolvedCount = _targetGroups.where((group) {
+      return !_solvedGroups.any((solved) => 
+          solved.groupingKey == group.groupingKey && 
+          solved.groupingValue == group.groupingValue);
+    }).length;
+    
+    notifyListeners();
+    return unsolvedCount;
+  }
+  
+  /// Get the next unsolved group (for preview/animation) without solving it
+  GameGroup? getNextUnsolvedGroup() {
+    List<GameGroup> unsolvedGroups = _targetGroups.where((group) {
+      return !_solvedGroups.any((solved) => 
+          solved.groupingKey == group.groupingKey && 
+          solved.groupingValue == group.groupingValue);
+    }).toList();
+    
+    if (unsolvedGroups.isEmpty) return null;
+    return unsolvedGroups.first;
+  }
+  
+  /// Solve exactly one unsolved group (called by UI animation)
+  /// Returns the solved group or null if none left
+  GameGroup? solveNextGroup() {
     // Get unsolved groups
     List<GameGroup> unsolvedGroups = _targetGroups.where((group) {
       return !_solvedGroups.any((solved) => 
@@ -324,45 +351,45 @@ class GameProvider extends ChangeNotifier {
           solved.groupingValue == group.groupingValue);
     }).toList();
     
-    if (unsolvedGroups.isNotEmpty) {
-      // Solve the first unsolved group
-      GameGroup groupToSolve = unsolvedGroups.first;
-      
-      // Mark all items from this group as solved
-      for (var groupItem in groupToSolve.items) {
-        for (var currentItem in _currentItems) {
-          if (currentItem.id == groupItem.id) {
-            currentItem.isSolved = true;
-            currentItem.isSelected = false;
-          }
+    if (unsolvedGroups.isEmpty) return null;
+    
+    // Solve the first unsolved group
+    GameGroup groupToSolve = unsolvedGroups.first;
+    
+    // Mark all items from this group as solved
+    for (var groupItem in groupToSolve.items) {
+      for (var currentItem in _currentItems) {
+        if (currentItem.id == groupItem.id) {
+          currentItem.isSolved = true;
+          currentItem.isSelected = false;
         }
-      }
-      
-      // Deselect all
-      for (var item in _selectedItems) {
-        item.isSelected = false;
-      }
-      _selectedItems.clear();
-      
-      // Add to solved and remove from current
-      _solvedGroups.add(groupToSolve);
-      _currentItems.removeWhere((item) => item.isSolved);
-      
-      // Check for victory
-      if (_solvedGroups.length == 4) {
-        _isVictory = true;
-        _isGameOver = true;
-        _totalGamesPlayed++;
-        _totalGamesWon++;
-        if (_currentScore > _highScore) {
-          _highScore = _currentScore;
-        }
-        _saveStats();
       }
     }
     
+    // Deselect all
+    for (var item in _selectedItems) {
+      item.isSelected = false;
+    }
+    _selectedItems.clear();
+    
+    // Add to solved and remove from current
+    _solvedGroups.add(groupToSolve);
+    _currentItems.removeWhere((item) => item.isSolved);
+    
+    // Check for victory
+    if (_solvedGroups.length == 4) {
+      _isVictory = true;
+      _isGameOver = true;
+      _totalGamesPlayed++;
+      _totalGamesWon++;
+      if (_currentScore > _highScore) {
+        _highScore = _currentScore;
+      }
+      _saveStats();
+    }
+    
     notifyListeners();
-    return true;
+    return groupToSolve;
   }
   
   /// Clear the active hint

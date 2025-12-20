@@ -224,7 +224,7 @@ class SoundService {
     }
   }
 
-  /// Play sound when Auto-Solve lifeline is used
+  /// Play sound when Auto-Solve lifeline is used (intro)
   Future<void> playAutoSolve() async {
     final index = _random.nextInt(3) + 1;
     final filename = 'lifeline_solve_${index.toString().padLeft(2, '0')}.mp3';
@@ -232,6 +232,30 @@ class SoundService {
       await _enqueue('audio/lifelines/$filename', priority: true);
     } catch (e) {
       await playCorrect();
+    }
+  }
+
+  /// Play "finding group" narration during auto-solve
+  /// "Let's look for the dinosaurs...", "Can you see the pattern?"
+  Future<void> playSolveFinding() async {
+    final index = _random.nextInt(2) + 1; // 2 variants
+    final filename = 'solve_finding_${index.toString().padLeft(2, '0')}.mp3';
+    try {
+      await _enqueue('audio/lifelines/$filename', priority: true);
+    } catch (e) {
+      // Silent fallback - finding narration is optional
+    }
+  }
+
+  /// Play confirmation before submitting during auto-solve
+  /// "Yes! These belong together!", "That's right, let's submit!"
+  Future<void> playSolveConfirm() async {
+    final index = _random.nextInt(2) + 1; // 2 variants
+    final filename = 'solve_confirm_${index.toString().padLeft(2, '0')}.mp3';
+    try {
+      await _enqueue('audio/lifelines/$filename', priority: true);
+    } catch (e) {
+      // Silent fallback
     }
   }
 

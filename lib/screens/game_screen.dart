@@ -17,6 +17,7 @@ class GameScreen extends StatefulWidget {
 class _GameScreenState extends State<GameScreen> {
   final SoundService _soundService = SoundService();
   bool _hasPlayedGameOverSound = false;
+  bool _isSolvingAll = false; // Flag for animated solve
 
   @override
   void initState() {
@@ -35,6 +36,84 @@ class _GameScreenState extends State<GameScreen> {
   void _onItemTap(GameProvider game, item) {
     _soundService.playItemName(item.name);
     game.toggleSelection(item);
+  }
+
+
+
+  /// Animate solving all remaining groups one by one - HUMAN PACE
+  Future<void> _animatedSolveAll(GameProvider game) async {
+    if (_isSolvingAll) return;
+    
+    int groupsToSolve = game.useAutoSolveAll();
+    if (groupsToSolve == 0) return;
+    
+    setState(() => _isSolvingAll = true);
+    
+    // Play initial "Let me help you" audio
+    _soundService.playAutoSolve();
+    
+    // Wait for the intro sound
+    await Future.delayed(const Duration(milliseconds: 3000));
+    
+    // Solve each group with human-like pacing
+    for (int i = 0; i < groupsToSolve; i++) {
+      if (!mounted || game.isGameOver) break;
+      
+      // Get the next group to solve
+      final groupToSolve = game.getNextUnsolvedGroup();
+      if (groupToSolve == null) break;
+      
+      // Play "finding" narration at the start of each group
+      // "Let's look for the dinosaurs...", "Can you see the pattern?"
+      _soundService.playSolveFinding();
+      await Future.delayed(const Duration(milliseconds: 2000));
+      
+      // SELECT ITEMS ONE BY ONE (like a human)
+      for (int j = 0; j < groupToSolve.items.length; j++) {
+        if (!mounted) break;
+        
+        final item = groupToSolve.items[j];
+        
+        // Find and select this item in current items
+        final currentItem = game.currentItems.firstWhere(
+          (i) => i.id == item.id,
+          orElse: () => item,
+        );
+        
+        // Play item name and select it
+        _soundService.playItemName(item.name);
+        game.toggleSelection(currentItem);
+        
+        // Wait between selections (human thinking time)
+        await Future.delayed(const Duration(milliseconds: 1200));
+      }
+      
+      // Play confirmation before submitting
+      // "Yes! These belong together!", "That's right, let's submit!"
+      _soundService.playSolveConfirm();
+      await Future.delayed(const Duration(milliseconds: 2000));
+      
+      // Now solve this group
+      final solvedGroup = game.solveNextGroup();
+      if (solvedGroup != null) {
+        // Just announce the category (no "Great job!" since computer solved it)
+        await Future.delayed(const Duration(milliseconds: 500));
+        _soundService.playCategory(solvedGroup.displayName);
+        
+        // Wait before moving to next group
+        await Future.delayed(const Duration(milliseconds: 2500));
+      }
+    }
+    
+    // Victory!
+    if (game.isVictory) {
+      await Future.delayed(const Duration(milliseconds: 1200));
+      _soundService.playVictory();
+    }
+    
+    if (mounted) {
+      setState(() => _isSolvingAll = false);
+    }
   }
 
   @override
@@ -97,46 +176,61 @@ class _GameScreenState extends State<GameScreen> {
                 _buildFreezeIndicator(),
               
               Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Column(
-                    children: [
-                      const SizedBox(height: 8),
-                      // Solved Groups
-                      ...game.solvedGroups.map((group) => SolvedGroupCard(
-                        group: group,
-                        onTap: () {
-                          if (group.items.isNotEmpty) {
-                            _soundService.playEducational(group.items.first.name);
-                          }
-                        },
-                      )),
-                      
-                      if (game.solvedGroups.isNotEmpty) const SizedBox(height: 8),
+                child: LayoutBuilder(
+                  builder: (context, constraints) {
+                    final screenWidth = constraints.maxWidth;
+                    
+                    // Dynamic grid columns based on width
+                    int columns = 4;
+                    if (screenWidth < 280) columns = 3;
+                    
+                    // Simple responsive spacing
+                    final spacing = (screenWidth * 0.02).clamp(6.0, 10.0);
+                    final padding = (screenWidth * 0.03).clamp(8.0, 16.0);
 
-                      // Grid
-                      Expanded(
-                        child: GridView.builder(
-                          itemCount: game.currentItems.length,
-                          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 4,
-                            crossAxisSpacing: 8,
-                            mainAxisSpacing: 8,
-                            childAspectRatio: 0.85, 
+                    return SingleChildScrollView(
+                      padding: EdgeInsets.symmetric(horizontal: padding),
+                      child: Column(
+                        children: [
+                          SizedBox(height: spacing),
+                          // Solved Groups
+                          ...game.solvedGroups.map((group) => SolvedGroupCard(
+                            group: group,
+                            onTap: () {
+                              if (group.items.isNotEmpty) {
+                                _soundService.playEducational(group.items.first.name);
+                              }
+                            },
+                          )),
+                          
+                          if (game.solvedGroups.isNotEmpty) SizedBox(height: spacing),
+
+                          // Clean Grid with SQUARE cards (1:1 aspect ratio)
+                          GridView.builder(
+                            shrinkWrap: true,
+                            physics: const NeverScrollableScrollPhysics(),
+                            itemCount: game.currentItems.length,
+                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: columns,
+                              crossAxisSpacing: spacing,
+                              mainAxisSpacing: spacing,
+                              childAspectRatio: 1.0, // Square cards - always elegant
+                            ),
+                            itemBuilder: (context, index) {
+                              final item = game.currentItems[index];
+                              final isRevealed = game.revealedItemIds.contains(item.id);
+                              return ItemCard(
+                                item: item,
+                                isRevealed: isRevealed,
+                                onTap: _isSolvingAll ? () {} : () => _onItemTap(game, item),
+                              );
+                            },
                           ),
-                          itemBuilder: (context, index) {
-                            final item = game.currentItems[index];
-                            final isRevealed = game.revealedItemIds.contains(item.id);
-                            return ItemCard(
-                              item: item,
-                              isRevealed: isRevealed,
-                              onTap: () => _onItemTap(game, item),
-                            );
-                          },
-                        ),
+                          SizedBox(height: spacing),
+                        ],
                       ),
-                    ],
-                  ),
+                    );
+                  },
                 ),
               ),
               
@@ -351,16 +445,13 @@ class _GameScreenState extends State<GameScreen> {
           ),
           _buildLifelineButton(
             icon: Icons.auto_fix_high,
-            label: 'Solve',
+            label: _isSolvingAll ? '...' : 'Solve All',
             count: game.autoSolveRemaining,
             color: Colors.green,
-            onPressed: game.autoSolveRemaining > 0 ? () {
-              if (game.useAutoSolve()) {
-                _soundService.playAutoSolve();
-                final lastGroup = game.solvedGroups.last;
-                _soundService.playCategory(lastGroup.displayName);
-              }
-            } : null,
+            isActive: _isSolvingAll,
+            onPressed: (game.autoSolveRemaining > 0 && !_isSolvingAll) 
+                ? () => _animatedSolveAll(game) 
+                : null,
           ),
         ],
       ),

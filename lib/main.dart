@@ -32,54 +32,77 @@ class ConnectionsGameApp extends StatelessWidget {
   }
 }
 
-/// A wrapper that constrains the app to mobile dimensions on web/desktop
+/// A smart wrapper that adapts to different screen sizes
+/// - Mobile: Full screen
+/// - Tablet: Centered with max width
+/// - Desktop/Web: Centered with max width and decorations
 class ResponsiveWrapper extends StatelessWidget {
   final Widget child;
   
-  // Maximum width for the mobile-like view
-  static const double maxMobileWidth = 450.0;
+  // Breakpoints
+  static const double mobileMaxWidth = 600.0;
+  static const double tabletMaxWidth = 900.0;
+  static const double contentMaxWidth = 500.0; // Max width for game content
   
   const ResponsiveWrapper({Key? key, required this.child}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // Get the screen size
-    final screenSize = MediaQuery.of(context).size;
-    final isWideScreen = screenSize.width > maxMobileWidth;
-    
-    // If not a wide screen (mobile), just return the child directly
-    if (!isWideScreen) {
-      return child;
-    }
-    
-    // For wide screens (web/desktop), center the app in a phone-like container
-    return Scaffold(
-      backgroundColor: const Color(0xFF1a1a2e), // Dark background
-      body: Center(
-        child: Container(
-          width: maxMobileWidth,
-          height: screenSize.height,
-          decoration: BoxDecoration(
-            color: Colors.white,
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(0.3),
-                blurRadius: 30,
-                spreadRadius: 5,
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final screenWidth = constraints.maxWidth;
+        final screenHeight = constraints.maxHeight;
+        
+        // Mobile: Use full width
+        if (screenWidth <= mobileMaxWidth) {
+          return child;
+        }
+        
+        // Tablet/Desktop: Center with max width
+        // Calculate optimal width based on screen size
+        double optimalWidth = contentMaxWidth;
+        
+        // On very wide screens, allow slightly wider
+        if (screenWidth > tabletMaxWidth) {
+          optimalWidth = (screenWidth * 0.4).clamp(contentMaxWidth, 600.0);
+        }
+        
+        // Landscape mode on tablets: use more space
+        if (screenWidth > screenHeight && screenWidth <= tabletMaxWidth) {
+          optimalWidth = (screenWidth * 0.6).clamp(400.0, 600.0);
+        }
+        
+        return Scaffold(
+          backgroundColor: const Color(0xFF1a1a2e), // Dark background
+          body: Center(
+            child: Container(
+              width: optimalWidth,
+              constraints: BoxConstraints(
+                maxHeight: screenHeight,
               ),
-            ],
-            // Optional: Add rounded corners for a device-like look
-            borderRadius: screenSize.height < 900 
-                ? null // Full height on smaller screens
-                : const BorderRadius.vertical(
-                    top: Radius.circular(20),
-                    bottom: Radius.circular(20),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.3),
+                    blurRadius: 30,
+                    spreadRadius: 5,
                   ),
+                ],
+                // Rounded corners on larger screens
+                borderRadius: screenHeight > 700 
+                    ? const BorderRadius.vertical(
+                        top: Radius.circular(20),
+                        bottom: Radius.circular(20),
+                      )
+                    : null,
+              ),
+              clipBehavior: Clip.antiAlias,
+              child: child,
+            ),
           ),
-          clipBehavior: Clip.antiAlias,
-          child: child,
-        ),
-      ),
+        );
+      },
     );
   }
 }

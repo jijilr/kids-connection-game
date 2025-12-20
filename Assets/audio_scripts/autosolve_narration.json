@@ -1,0 +1,118 @@
+{
+    "autosolve_narration": {
+        "description": "Narration audio for the human-paced auto-solve feature",
+        "folder": "assets/audio/lifelines/",
+        "files": {
+            "intro": {
+                "note": "Played at the start when Solve All is pressed",
+                "variants": [
+                    {
+                        "filename": "lifeline_solve_01.mp3",
+                        "text": "Let me help you! Watch carefully...",
+                        "voice": "friendly, encouraging"
+                    },
+                    {
+                        "filename": "lifeline_solve_02.mp3",
+                        "text": "I'll show you how to solve this! Pay attention...",
+                        "voice": "helpful, teacher-like"
+                    },
+                    {
+                        "filename": "lifeline_solve_03.mp3",
+                        "text": "Magic time! Let me find the groups for you...",
+                        "voice": "playful, magical"
+                    }
+                ]
+            },
+            "finding_group_intro": {
+                "note": "Played before selecting each group (optional, can add later)",
+                "variants": [
+                    {
+                        "filename": "solve_finding_01.mp3",
+                        "text": "Let's look for the dinosaurs...",
+                        "voice": "thoughtful, teaching"
+                    },
+                    {
+                        "filename": "solve_finding_02.mp3",
+                        "text": "Can you see the pattern? Let me show you...",
+                        "voice": "encouraging"
+                    }
+                ]
+            },
+            "selecting_item": {
+                "note": "Short sounds while selecting items (use item name audio instead)",
+                "description": "Item names are already played from assets/audio/names/"
+            },
+            "before_submit": {
+                "note": "Played right before submitting (optional)",
+                "variants": [
+                    {
+                        "filename": "solve_confirm_01.mp3",
+                        "text": "Yes! These belong together!",
+                        "voice": "confident, happy"
+                    },
+                    {
+                        "filename": "solve_confirm_02.mp3",
+                        "text": "That's right, let's submit!",
+                        "voice": "excited"
+                    }
+                ]
+            }
+        }
+    },
+    "timing_guide": {
+        "description": "Timing for the human-paced auto-solve animation",
+        "steps": [
+            {
+                "step": "Intro sound",
+                "duration": "1500ms wait"
+            },
+            {
+                "step": "Select item 1",
+                "audio": "item name",
+                "wait": "600ms"
+            },
+            {
+                "step": "Select item 2",
+                "audio": "item name",
+                "wait": "600ms"
+            },
+            {
+                "step": "Select item 3",
+                "audio": "item name",
+                "wait": "600ms"
+            },
+            {
+                "step": "Select item 4",
+                "audio": "item name",
+                "wait": "600ms"
+            },
+            {
+                "step": "Think pause",
+                "duration": "800ms",
+                "note": "simulates human thinking"
+            },
+            {
+                "step": "Submit/Solve",
+                "audio": "correct + category",
+                "wait": "1800ms"
+            },
+            {
+                "step": "Repeat for next group",
+                "note": "loops for all remaining groups"
+            }
+        ],
+        "total_per_group": "~6.5 seconds per group"
+    },
+    "priority": {
+        "high": [
+            "lifeline_solve_01.mp3 to _03.mp3 (already have these!)"
+        ],
+        "medium": [
+            "solve_confirm_01.mp3, solve_confirm_02.mp3"
+        ],
+        "low": [
+            "solve_finding_01.mp3, solve_finding_02.mp3 (group-specific intros)"
+        ]
+    },
+    "note": "The existing lifeline_solve audio files work perfectly for the intro. Item names are already playing. The confirm sounds are optional but would add polish."
+}

@@ -49,37 +49,44 @@ class ItemCard extends StatelessWidget {
                   ? Border.all(color: Colors.amber, width: 3)
                   : null,
         ),
-        child: Stack(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Image.asset(
-                item.imagePath,
-                fit: BoxFit.contain,
-                errorBuilder: (context, error, stackTrace) {
-                  return const Icon(Icons.image_not_supported, size: 40, color: Colors.grey);
-                },
-              ),
-            ),
-            // Sparkle indicator for revealed items
-            if (isRevealed)
-              Positioned(
-                top: 4,
-                right: 4,
-                child: Container(
-                  padding: const EdgeInsets.all(4),
-                  decoration: BoxDecoration(
-                    color: Colors.amber,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: const Icon(
-                    Icons.star,
-                    size: 14,
-                    color: Colors.white,
-                  ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(10),
+          child: Stack(
+            fit: StackFit.expand,
+            children: [
+              // Image fills the entire card
+              Padding(
+                padding: const EdgeInsets.all(6),
+                child: Image.asset(
+                  item.imagePath,
+                  fit: BoxFit.contain, // Contain to show full image
+                  errorBuilder: (context, error, stackTrace) {
+                    return const Center(
+                      child: Icon(Icons.image_not_supported, size: 32, color: Colors.grey),
+                    );
+                  },
                 ),
               ),
-          ],
+              // Sparkle indicator for revealed items
+              if (isRevealed)
+                Positioned(
+                  top: 4,
+                  right: 4,
+                  child: Container(
+                    padding: const EdgeInsets.all(3),
+                    decoration: BoxDecoration(
+                      color: Colors.amber,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Icon(
+                      Icons.star,
+                      size: 12,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+            ],
+          ),
         ),
       ),
     );
