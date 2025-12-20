@@ -34,6 +34,8 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   void _onItemTap(GameProvider game, item) {
+    // Notify sound service of user interaction (required for web audio)
+    _soundService.notifyUserInteraction();
     _soundService.playItemName(item.name);
     game.toggleSelection(item);
   }

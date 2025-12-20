@@ -1,4 +1,5 @@
 import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:math';
 import 'dart:async';
 import 'dart:collection';
@@ -8,6 +9,7 @@ import 'dart:collection';
 /// item name pronunciations, and educational content.
 /// 
 /// Features a queueing system to ensure no two audio files play simultaneously.
+/// Includes web-specific handling for browser autoplay policies.
 class SoundService {
   static final SoundService _instance = SoundService._internal();
   factory SoundService() => _instance;
@@ -22,6 +24,9 @@ class SoundService {
   final Queue<_AudioTask> _audioQueue = Queue<_AudioTask>();
   bool _isPlaying = false;
   Completer<void>? _currentPlayCompleter;
+  
+  // Web-specific: Track if user has interacted (required for autoplay)
+  bool _userHasInteracted = false;
 
   void _initPlayer() {
     // Listen for when audio completes to play next in queue
@@ -35,6 +40,29 @@ class SoundService {
         // Already handled by onPlayerComplete
       }
     });
+    
+    // Set audio context for web - log mode for debugging
+    if (kIsWeb) {
+      _player.setReleaseMode(ReleaseMode.stop);
+    }
+  }
+  
+  /// Call this when user interacts with the app (tap, click, etc.)
+  /// This unlocks audio playback on web browsers.
+  void notifyUserInteraction() {
+    if (!_userHasInteracted) {
+      _userHasInteracted = true;
+      // On web, try to "warm up" the audio context with a silent play
+      if (kIsWeb) {
+        _player.setVolume(0);
+        _playAsset('audio/feedback/correct_01.mp3').then((_) {
+          _player.stop();
+          _player.setVolume(1.0);
+        }).catchError((_) {
+          _player.setVolume(1.0);
+        });
+      }
+    }
   }
 
   void _onAudioComplete() {
@@ -70,10 +98,26 @@ class SoundService {
     
     _currentPlayCompleter = Completer<void>();
     
-    _player.play(AssetSource(task.assetPath)).catchError((e) {
+    _playAsset(task.assetPath).catchError((e) {
       print('Error playing audio: ${task.assetPath} - $e');
       _onAudioComplete();
     });
+  }
+  
+  /// Play an asset with platform-specific handling
+  /// On web, uses UrlSource with the correct base path
+  /// On native platforms, uses AssetSource
+  Future<void> _playAsset(String assetPath) async {
+    if (kIsWeb) {
+      // On web, we need to use UrlSource with the deployed base path
+      // The base-href is /kids-connection-game/ so assets are at:
+      // /kids-connection-game/assets/[assetPath]
+      final webPath = 'assets/$assetPath';
+      return _player.play(UrlSource(webPath));
+    } else {
+      // On native platforms, use AssetSource directly
+      return _player.play(AssetSource(assetPath));
+    }
   }
 
   /// Clear the queue and stop current audio
