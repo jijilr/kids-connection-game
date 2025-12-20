@@ -60,11 +60,11 @@ flutter:
   
   assets:
     - Assets/
-    - assets/audio/feedback/
-    - assets/audio/categories/
-    - assets/audio/names/
-    - assets/audio/educational/
-    - assets/audio/lifelines/
+    - Assets/audio/feedback/
+    - Assets/audio/categories/
+    - Assets/audio/names/
+    - Assets/audio/educational/
+    - Assets/audio/lifelines/
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a

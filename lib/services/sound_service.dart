@@ -55,7 +55,7 @@ class SoundService {
       // On web, try to "warm up" the audio context with a silent play
       if (kIsWeb) {
         _player.setVolume(0);
-        _playAsset('audio/feedback/correct_01.mp3').then((_) {
+        _playAsset('Assets/audio/feedback/correct_01.mp3').then((_) {
           _player.stop();
           _player.setVolume(1.0);
         }).catchError((_) {
@@ -140,21 +140,21 @@ class SoundService {
   Future<void> playCorrect() async {
     final index = _random.nextInt(8) + 1; // correct_01 to correct_08
     final filename = 'correct_${index.toString().padLeft(2, '0')}.mp3';
-    await _enqueue('audio/feedback/$filename', priority: true);
+    await _enqueue('Assets/audio/feedback/$filename', priority: true);
   }
 
   /// Play a random "wrong" sound when an incorrect guess is made
   Future<void> playWrong() async {
     final index = _random.nextInt(6) + 1; // wrong_01 to wrong_06
     final filename = 'wrong_${index.toString().padLeft(2, '0')}.mp3';
-    await _enqueue('audio/feedback/$filename', priority: true);
+    await _enqueue('Assets/audio/feedback/$filename', priority: true);
   }
 
   /// Play a random "one away" sound (3 out of 4 correct)
   Future<void> playOneAway() async {
     final index = _random.nextInt(4) + 1; // oneaway_01 to oneaway_04
     final filename = 'oneaway_${index.toString().padLeft(2, '0')}.mp3';
-    await _enqueue('audio/feedback/$filename', priority: true);
+    await _enqueue('Assets/audio/feedback/$filename', priority: true);
   }
 
   /// Play a random "victory" sound when all groups are solved
@@ -163,7 +163,7 @@ class SoundService {
     clearQueue();
     final index = _random.nextInt(5) + 1; // victory_01 to victory_05
     final filename = 'victory_${index.toString().padLeft(2, '0')}.mp3';
-    await _enqueue('audio/feedback/$filename', priority: true);
+    await _enqueue('Assets/audio/feedback/$filename', priority: true);
   }
 
   /// Play a random "game over" sound
@@ -172,21 +172,21 @@ class SoundService {
     clearQueue();
     final index = _random.nextInt(3) + 1; // gameover_01 to gameover_03
     final filename = 'gameover_${index.toString().padLeft(2, '0')}.mp3';
-    await _enqueue('audio/feedback/$filename', priority: true);
+    await _enqueue('Assets/audio/feedback/$filename', priority: true);
   }
 
   /// Play a random "encourage" sound after mistakes
   Future<void> playEncourage() async {
     final index = _random.nextInt(4) + 1; // encourage_01 to encourage_04
     final filename = 'encourage_${index.toString().padLeft(2, '0')}.mp3';
-    await _enqueue('audio/feedback/$filename');
+    await _enqueue('Assets/audio/feedback/$filename');
   }
 
   /// Play a random "instruction" sound
   Future<void> playInstruction() async {
     final index = _random.nextInt(4) + 1; // instruct_01 to instruct_04
     final filename = 'instruct_${index.toString().padLeft(2, '0')}.mp3';
-    await _enqueue('audio/feedback/$filename');
+    await _enqueue('Assets/audio/feedback/$filename');
   }
 
   // ============ CATEGORY ANNOUNCEMENTS ============
@@ -197,7 +197,7 @@ class SoundService {
     final normalizedKey = _normalizeCategoryKey(categoryKey);
     final index = _random.nextInt(3) + 1; // cat_xxx_01 to cat_xxx_03 (usually)
     final filename = 'cat_${normalizedKey}_${index.toString().padLeft(2, '0')}.mp3';
-    await _enqueue('audio/categories/$filename');
+    await _enqueue('Assets/audio/categories/$filename');
   }
 
   // ============ ITEM NAME PRONUNCIATIONS ============
@@ -208,7 +208,7 @@ class SoundService {
     final normalizedName = _normalizeItemName(itemName);
     final filename = 'name_$normalizedName.mp3';
     // Item names are priority - user just tapped, provide immediate feedback
-    await _enqueue('audio/names/$filename', priority: true);
+    await _enqueue('Assets/audio/names/$filename', priority: true);
   }
 
   // ============ EDUCATIONAL CONTENT ============
@@ -219,7 +219,7 @@ class SoundService {
     final normalizedName = _normalizeItemName(itemName);
     final index = _random.nextInt(3) + 1; // edu_xxx_01 to edu_xxx_03
     final filename = 'edu_${normalizedName}_${index.toString().padLeft(2, '0')}.mp3';
-    await _enqueue('audio/educational/$filename');
+    await _enqueue('Assets/audio/educational/$filename');
   }
 
   /// Play educational content explaining why an item doesn't belong to a category
@@ -229,7 +229,7 @@ class SoundService {
     final normalizedName = _normalizeItemName(itemName);
     final normalizedCategory = _normalizeCategoryKey(wrongCategory);
     final filename = 'edu_${normalizedName}_not_$normalizedCategory.mp3';
-    await _enqueue('audio/educational/$filename');
+    await _enqueue('Assets/audio/educational/$filename');
   }
 
   // ============ LIFELINE SOUNDS ============
@@ -239,7 +239,7 @@ class SoundService {
     final index = _random.nextInt(3) + 1;
     final filename = 'lifeline_reveal_${index.toString().padLeft(2, '0')}.mp3';
     try {
-      await _enqueue('audio/lifelines/$filename', priority: true);
+      await _enqueue('Assets/audio/lifelines/$filename', priority: true);
     } catch (e) {
       // Fallback to correct sound if lifeline audio not available
       await playCorrect();
@@ -251,7 +251,7 @@ class SoundService {
     final index = _random.nextInt(3) + 1;
     final filename = 'lifeline_hint_${index.toString().padLeft(2, '0')}.mp3';
     try {
-      await _enqueue('audio/lifelines/$filename', priority: true);
+      await _enqueue('Assets/audio/lifelines/$filename', priority: true);
     } catch (e) {
       await playInstruction();
     }
@@ -262,7 +262,7 @@ class SoundService {
     final index = _random.nextInt(3) + 1;
     final filename = 'lifeline_freeze_${index.toString().padLeft(2, '0')}.mp3';
     try {
-      await _enqueue('audio/lifelines/$filename', priority: true);
+      await _enqueue('Assets/audio/lifelines/$filename', priority: true);
     } catch (e) {
       // Silent fallback for freeze
     }
@@ -273,7 +273,7 @@ class SoundService {
     final index = _random.nextInt(3) + 1;
     final filename = 'lifeline_solve_${index.toString().padLeft(2, '0')}.mp3';
     try {
-      await _enqueue('audio/lifelines/$filename', priority: true);
+      await _enqueue('Assets/audio/lifelines/$filename', priority: true);
     } catch (e) {
       await playCorrect();
     }
@@ -285,7 +285,7 @@ class SoundService {
     final index = _random.nextInt(2) + 1; // 2 variants
     final filename = 'solve_finding_${index.toString().padLeft(2, '0')}.mp3';
     try {
-      await _enqueue('audio/lifelines/$filename', priority: true);
+      await _enqueue('Assets/audio/lifelines/$filename', priority: true);
     } catch (e) {
       // Silent fallback - finding narration is optional
     }
@@ -297,7 +297,7 @@ class SoundService {
     final index = _random.nextInt(2) + 1; // 2 variants
     final filename = 'solve_confirm_${index.toString().padLeft(2, '0')}.mp3';
     try {
-      await _enqueue('audio/lifelines/$filename', priority: true);
+      await _enqueue('Assets/audio/lifelines/$filename', priority: true);
     } catch (e) {
       // Silent fallback
     }
