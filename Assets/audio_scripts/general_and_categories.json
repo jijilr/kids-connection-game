@@ -1,0 +1,192 @@
+{
+  "general_feedback": {
+    "correct": [
+      {"id": "correct_01", "text": "That's right! Great job!"},
+      {"id": "correct_02", "text": "Yay! You found a match!"},
+      {"id": "correct_03", "text": "Awesome! You're so smart!"},
+      {"id": "correct_04", "text": "Perfect! Keep going!"},
+      {"id": "correct_05", "text": "Wonderful! You got it!"},
+      {"id": "correct_06", "text": "Excellent work!"},
+      {"id": "correct_07", "text": "Super! That's exactly right!"},
+      {"id": "correct_08", "text": "Brilliant! You're a star!"}
+    ],
+    "wrong": [
+      {"id": "wrong_01", "text": "Oops! That's not quite right. Try again!"},
+      {"id": "wrong_02", "text": "Hmm, not this time. Keep trying!"},
+      {"id": "wrong_03", "text": "Almost! Think about what these have in common."},
+      {"id": "wrong_04", "text": "Not quite! Look more carefully."},
+      {"id": "wrong_05", "text": "Good try! But let's think again."},
+      {"id": "wrong_06", "text": "Oopsie! These don't belong together."}
+    ],
+    "one_away": [
+      {"id": "oneaway_01", "text": "So close! You're one away!"},
+      {"id": "oneaway_02", "text": "Almost there! Just one is wrong!"},
+      {"id": "oneaway_03", "text": "You're so close! One doesn't belong!"},
+      {"id": "oneaway_04", "text": "Nearly perfect! Check one more time!"}
+    ],
+    "victory": [
+      {"id": "victory_01", "text": "You did it! You're amazing!"},
+      {"id": "victory_02", "text": "Hooray! You won the game!"},
+      {"id": "victory_03", "text": "Fantastic! You solved all the puzzles!"},
+      {"id": "victory_04", "text": "Champion! You found all the connections!"},
+      {"id": "victory_05", "text": "Wonderful job! You're a puzzle master!"}
+    ],
+    "game_over": [
+      {"id": "gameover_01", "text": "Oh no! Game over. Let's try again!"},
+      {"id": "gameover_02", "text": "Don't worry! Practice makes perfect!"},
+      {"id": "gameover_03", "text": "Good try! Want to play again?"}
+    ],
+    "encouragement": [
+      {"id": "encourage_01", "text": "You can do it!"},
+      {"id": "encourage_02", "text": "Keep trying! You're doing great!"},
+      {"id": "encourage_03", "text": "Think carefully! You've got this!"},
+      {"id": "encourage_04", "text": "Take your time! No rush!"}
+    ],
+    "instructions": [
+      {"id": "instruct_01", "text": "Find four things that belong together!"},
+      {"id": "instruct_02", "text": "Tap on four pictures that have something in common!"},
+      {"id": "instruct_03", "text": "Look for things that are similar!"},
+      {"id": "instruct_04", "text": "What do these have in common? Find four!"}
+    ]
+  },
+  "item_names": [
+    {"id": "name_airplane", "filename": "airplane_1.png", "text": "Airplane", "phonetic": "Air-plane"},
+    {"id": "name_allosaurus", "filename": "allosaurus_1.png", "text": "Allosaurus", "phonetic": "Al-oh-SORE-us"},
+    {"id": "name_ankylosaurus", "filename": "ankylosaurus_1.png", "text": "Ankylosaurus", "phonetic": "An-KY-loh-SORE-us"},
+    {"id": "name_ant", "filename": "ant_1.png", "text": "Ant", "phonetic": "Ant"},
+    {"id": "name_archaeopteryx", "filename": "archaeopteryx_1.png", "text": "Archaeopteryx", "phonetic": "Ar-kee-OP-ter-iks"},
+    {"id": "name_bear", "filename": "bear_1.png", "text": "Bear", "phonetic": "Bear"},
+    {"id": "name_bee", "filename": "bee_1.png", "text": "Bee", "phonetic": "Bee"},
+    {"id": "name_beetle", "filename": "beetle_1.png", "text": "Beetle", "phonetic": "Bee-tul"},
+    {"id": "name_bicycle", "filename": "bicycle_1.png", "text": "Bicycle", "phonetic": "By-sih-kul"},
+    {"id": "name_brachiosaurus", "filename": "brachiosaurus_1.png", "text": "Brachiosaurus", "phonetic": "BRAK-ee-oh-SORE-us"},
+    {"id": "name_butterfly", "filename": "butterfly_1.png", "text": "Butterfly", "phonetic": "But-ter-fly"},
+    {"id": "name_car", "filename": "car_1.png", "text": "Car", "phonetic": "Car"},
+    {"id": "name_ceratosaurus", "filename": "ceratosaurus_1.png", "text": "Ceratosaurus", "phonetic": "Ser-AT-oh-SORE-us"},
+    {"id": "name_daffodil", "filename": "daffodil_1.png", "text": "Daffodil", "phonetic": "Daf-oh-dil"},
+    {"id": "name_daisy", "filename": "daisy_1.png", "text": "Daisy", "phonetic": "Day-zee"},
+    {"id": "name_doll", "filename": "doll_1.png", "text": "Doll", "phonetic": "Doll"},
+    {"id": "name_eagle", "filename": "eagle_1.png", "text": "Eagle", "phonetic": "Ee-gul"},
+    {"id": "name_elasmosaurus", "filename": "elasmosaurus_1.png", "text": "Elasmosaurus", "phonetic": "Ee-LAZ-moh-SORE-us"},
+    {"id": "name_elephant", "filename": "elephant_1.png", "text": "Elephant", "phonetic": "El-eh-funt"},
+    {"id": "name_giganotosaurus", "filename": "giganotosaurus_1.png", "text": "Giganotosaurus", "phonetic": "Jig-AN-oh-toh-SORE-us"},
+    {"id": "name_goldfish", "filename": "goldfish_1.png", "text": "Goldfish", "phonetic": "Gold-fish"},
+    {"id": "name_ichthyosaurus", "filename": "ichthyosaurus_1.png", "text": "Ichthyosaurus", "phonetic": "Ik-thee-oh-SORE-us"},
+    {"id": "name_iguanodon", "filename": "iguanodon_1.png", "text": "Iguanodon", "phonetic": "Ig-WAN-oh-don"},
+    {"id": "name_kangaroo", "filename": "kangaroo_1.png", "text": "Kangaroo", "phonetic": "Kang-gah-ROO"},
+    {"id": "name_kronosaurus", "filename": "kronosaurus_1.png", "text": "Kronosaurus", "phonetic": "KRON-oh-SORE-us"},
+    {"id": "name_lion", "filename": "lion_1.png", "text": "Lion", "phonetic": "Ly-un"},
+    {"id": "name_liopleurodon", "filename": "liopleurodon_1.png", "text": "Liopleurodon", "phonetic": "LY-oh-PLOOR-oh-don"},
+    {"id": "name_microraptor", "filename": "microraptor_1.png", "text": "Microraptor", "phonetic": "MY-kroh-RAP-tor"},
+    {"id": "name_mosasaurus", "filename": "mosasaurus_1.png", "text": "Mosasaurus", "phonetic": "MOH-zah-SORE-us"},
+    {"id": "name_oak", "filename": "oak_1.png", "text": "Oak Tree", "phonetic": "Oak Tree"},
+    {"id": "name_ostrich", "filename": "ostrich_1.png", "text": "Ostrich", "phonetic": "Oss-tritch"},
+    {"id": "name_parasaurolophus", "filename": "parasaurolophus_1.png", "text": "Parasaurolophus", "phonetic": "Para-saw-ROL-oh-fus"},
+    {"id": "name_parrot", "filename": "parrot_1.png", "text": "Parrot", "phonetic": "Pair-ut"},
+    {"id": "name_penguin", "filename": "penguin_1.png", "text": "Penguin", "phonetic": "Pen-gwin"},
+    {"id": "name_plesiosaurus", "filename": "plesiosaurus_1.png", "text": "Plesiosaurus", "phonetic": "PLEE-zee-oh-SORE-us"},
+    {"id": "name_pteranodon", "filename": "pteranodon_1.png", "text": "Pteranodon", "phonetic": "Ter-AN-oh-don"},
+    {"id": "name_pterodactyl", "filename": "pterodactyl_1.png", "text": "Pterodactyl", "phonetic": "Ter-oh-DAK-til"},
+    {"id": "name_puzzle", "filename": "puzzle_1.png", "text": "Puzzle", "phonetic": "Puz-ul"},
+    {"id": "name_quetzalcoatlus", "filename": "quetzalcoatlus_1.png", "text": "Quetzalcoatlus", "phonetic": "Ket-zal-koh-AT-lus"},
+    {"id": "name_robot", "filename": "robot_1.png", "text": "Robot", "phonetic": "Row-bot"},
+    {"id": "name_salmon", "filename": "salmon_1.png", "text": "Salmon", "phonetic": "Sam-un"},
+    {"id": "name_shark", "filename": "shark_1.png", "text": "Shark", "phonetic": "Shark"},
+    {"id": "name_stegosaurus", "filename": "stegosaurus_1.png", "text": "Stegosaurus", "phonetic": "STEG-oh-SORE-us"},
+    {"id": "name_teddy_bear", "filename": "teddy_bear_1.png", "text": "Teddy Bear", "phonetic": "Ted-ee Bear"},
+    {"id": "name_tiger", "filename": "tiger_1.png", "text": "Tiger", "phonetic": "Ty-ger"},
+    {"id": "name_titanoboa", "filename": "titanoboa_1.png", "text": "Titanoboa", "phonetic": "Ty-TAN-oh-BOH-ah"},
+    {"id": "name_train", "filename": "train_1.png", "text": "Train", "phonetic": "Train"},
+    {"id": "name_trex", "filename": "trex_1.png", "text": "T-Rex", "phonetic": "Tee-Rex"},
+    {"id": "name_triceratops", "filename": "triceratops_1.png", "text": "Triceratops", "phonetic": "Try-SER-ah-tops"},
+    {"id": "name_tulsi", "filename": "tulsi_1.png", "text": "Tulsi Plant", "phonetic": "Tul-see Plant"},
+    {"id": "name_tuna", "filename": "tuna_1.png", "text": "Tuna", "phonetic": "Too-nah"},
+    {"id": "name_utahraptor", "filename": "utahraptor_1.png", "text": "Utahraptor", "phonetic": "YOO-tah-RAP-tor"},
+    {"id": "name_velociraptor", "filename": "velociraptor_1.png", "text": "Velociraptor", "phonetic": "Vel-OSS-ee-RAP-tor"}
+  ],
+  "category_success": {
+    "Carnivore": [
+      {"id": "cat_carnivore_01", "text": "These are all carnivores! Dinosaurs that eat meat!"},
+      {"id": "cat_carnivore_02", "text": "Carnivores are meat eaters! They hunted other animals!"},
+      {"id": "cat_carnivore_03", "text": "You found the meat-eating dinosaurs! They had sharp teeth!"}
+    ],
+    "Herbivore": [
+      {"id": "cat_herbivore_01", "text": "These are all herbivores! Dinosaurs that eat plants!"},
+      {"id": "cat_herbivore_02", "text": "Plant eaters! They loved leaves and grass!"},
+      {"id": "cat_herbivore_03", "text": "Herbivores are gentle giants that only ate plants!"}
+    ],
+    "Marine Reptile": [
+      {"id": "cat_marine_01", "text": "These all swam in the ocean! They're marine reptiles!"},
+      {"id": "cat_marine_02", "text": "Sea creatures from long ago! They lived in water!"},
+      {"id": "cat_marine_03", "text": "These prehistoric animals ruled the ancient seas!"}
+    ],
+    "Flying Reptile": [
+      {"id": "cat_flying_01", "text": "These could all fly! They're called pterosaurs!"},
+      {"id": "cat_flying_02", "text": "Flying reptiles! They soared through the sky!"},
+      {"id": "cat_flying_03", "text": "These had wings and could fly like birds!"}
+    ],
+    "Bird": [
+      {"id": "cat_bird_01", "text": "These are all birds! They have feathers and beaks!"},
+      {"id": "cat_bird_02", "text": "Birds! Some can fly, some can't, but they all have feathers!"},
+      {"id": "cat_bird_03", "text": "You found the birds! They lay eggs and have wings!"}
+    ],
+    "Mammal": [
+      {"id": "cat_mammal_01", "text": "These are all mammals! They have fur and drink milk as babies!"},
+      {"id": "cat_mammal_02", "text": "Mammals! Warm-blooded animals with hair or fur!"},
+      {"id": "cat_mammal_03", "text": "Furry friends! Mammals take care of their babies!"}
+    ],
+    "Insect": [
+      {"id": "cat_insect_01", "text": "These are all insects! They have six legs!"},
+      {"id": "cat_insect_02", "text": "Insects! Tiny creatures with six legs and antennae!"},
+      {"id": "cat_insect_03", "text": "You found the bugs! All insects have six legs!"}
+    ],
+    "Fish": [
+      {"id": "cat_fish_01", "text": "These are all fish! They breathe underwater with gills!"},
+      {"id": "cat_fish_02", "text": "Fish! They swim in water and have scales!"},
+      {"id": "cat_fish_03", "text": "Splish splash! These all live and swim in water!"}
+    ],
+    "Transport": [
+      {"id": "cat_transport_01", "text": "These all help us travel! They're vehicles!"},
+      {"id": "cat_transport_02", "text": "Transportation! Things that take us places!"},
+      {"id": "cat_transport_03", "text": "Zoom zoom! These all help people get around!"}
+    ],
+    "Toy": [
+      {"id": "cat_toy_01", "text": "These are all toys! Things kids play with!"},
+      {"id": "cat_toy_02", "text": "Playtime! These are all fun toys!"},
+      {"id": "cat_toy_03", "text": "Toys for playing! Everyone loves toys!"}
+    ],
+    "Plant": [
+      {"id": "cat_plant_01", "text": "These are all plants! They grow from the ground!"},
+      {"id": "cat_plant_02", "text": "Plants! They need sun and water to grow!"},
+      {"id": "cat_plant_03", "text": "Green and growing! Plants make oxygen for us!"}
+    ],
+    "Flightless": [
+      {"id": "cat_flightless_01", "text": "These birds can't fly! But they're still amazing!"},
+      {"id": "cat_flightless_02", "text": "Flightless birds! They walk or swim instead of fly!"},
+      {"id": "cat_flightless_03", "text": "Not all birds fly! These ones stay on the ground!"}
+    ],
+    "Big Cat": [
+      {"id": "cat_bigcat_01", "text": "These are big cats! Powerful hunters!"},
+      {"id": "cat_bigcat_02", "text": "Big cats! Like house cats but much bigger and stronger!"},
+      {"id": "cat_bigcat_03", "text": "Roar! These big cats are the kings of the jungle!"}
+    ],
+    "Snake": [
+      {"id": "cat_snake_01", "text": "This is the Titanoboa! The biggest snake ever!"},
+      {"id": "cat_snake_02", "text": "A giant prehistoric snake! It was longer than a school bus!"}
+    ],
+    "Flower": [
+      {"id": "cat_flower_01", "text": "These are all flowers! Beautiful and colorful!"},
+      {"id": "cat_flower_02", "text": "Pretty flowers! They smell nice and attract bees!"},
+      {"id": "cat_flower_03", "text": "Blooming beauties! Flowers come in many colors!"}
+    ],
+    "Land": [
+      {"id": "cat_land_01", "text": "These all travel on land! Cars, bikes, and more!"},
+      {"id": "cat_land_02", "text": "Land vehicles! They use roads and streets!"}
+    ],
+    "Prehistoric": [
+      {"id": "cat_prehistoric_01", "text": "These are all prehistoric! They lived millions of years ago!"},
+      {"id": "cat_prehistoric_02", "text": "Ancient creatures! They roamed the Earth long before people!"},
+      {"id": "cat_prehistoric_03", "text": "From long, long ago! These animals are now extinct!"}
+    ]
+  }
+}

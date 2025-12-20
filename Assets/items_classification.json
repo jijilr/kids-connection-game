@@ -1,0 +1,957 @@
+{
+    "items": [
+        {
+            "id": "airplane",
+            "name": "Airplane",
+            "filename": "airplane_1.png",
+            "tags": {
+                "living": false,
+                "natural": false,
+                "category": "transport",
+                "transport_type": "air",
+                "has_wheels": true,
+                "flies": true,
+                "man_made": true
+            }
+        },
+        {
+            "id": "allosaurus",
+            "name": "Allosaurus",
+            "filename": "allosaurus_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "habitat": "land",
+                "has_legs": true,
+                "reptile": true
+            }
+        },
+        {
+            "id": "ankylosaurus",
+            "name": "Ankylosaurus",
+            "filename": "ankylosaurus_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "herbivore",
+                "habitat": "land",
+                "has_legs": true,
+                "reptile": true,
+                "armored": true
+            }
+        },
+        {
+            "id": "ant",
+            "name": "Ant",
+            "filename": "ant_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "insect",
+                "has_legs": true,
+                "small": true,
+                "habitat": "land",
+                "social": true
+            }
+        },
+        {
+            "id": "archaeopteryx",
+            "name": "Archaeopteryx",
+            "filename": "archaeopteryx_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "flies": true,
+                "has_feathers": true,
+                "bird_like": true
+            }
+        },
+        {
+            "id": "bear",
+            "name": "Bear",
+            "filename": "bear_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "mammal",
+                "diet": "omnivore",
+                "habitat": "land",
+                "has_legs": true,
+                "furry": true,
+                "large": true
+            }
+        },
+        {
+            "id": "bee",
+            "name": "Bee",
+            "filename": "bee_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "insect",
+                "flies": true,
+                "small": true,
+                "makes_honey": true,
+                "has_stripes": true
+            }
+        },
+        {
+            "id": "beetle",
+            "name": "Beetle",
+            "filename": "beetle_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "insect",
+                "has_legs": true,
+                "small": true,
+                "has_shell": true
+            }
+        },
+        {
+            "id": "bicycle",
+            "name": "Bicycle",
+            "filename": "bicycle_1.png",
+            "tags": {
+                "living": false,
+                "natural": false,
+                "category": "transport",
+                "transport_type": "land",
+                "has_wheels": true,
+                "man_made": true,
+                "human_powered": true
+            }
+        },
+        {
+            "id": "brachiosaurus",
+            "name": "Brachiosaurus",
+            "filename": "brachiosaurus_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "herbivore",
+                "habitat": "land",
+                "has_legs": true,
+                "reptile": true,
+                "large": true,
+                "long_neck": true
+            }
+        },
+        {
+            "id": "butterfly",
+            "name": "Butterfly",
+            "filename": "butterfly_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "insect",
+                "flies": true,
+                "small": true,
+                "colorful": true,
+                "has_wings": true
+            }
+        },
+        {
+            "id": "car",
+            "name": "Car",
+            "filename": "car_1.png",
+            "tags": {
+                "living": false,
+                "natural": false,
+                "category": "transport",
+                "transport_type": "land",
+                "has_wheels": true,
+                "man_made": true,
+                "has_engine": true
+            }
+        },
+        {
+            "id": "ceratosaurus",
+            "name": "Ceratosaurus",
+            "filename": "ceratosaurus_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "habitat": "land",
+                "has_legs": true,
+                "reptile": true,
+                "has_horns": true
+            }
+        },
+        {
+            "id": "daffodil",
+            "name": "Daffodil",
+            "filename": "daffodil_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "plant",
+                "plant_type": "flower",
+                "colorful": true,
+                "yellow": true
+            }
+        },
+        {
+            "id": "daisy",
+            "name": "Daisy",
+            "filename": "daisy_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "plant",
+                "plant_type": "flower",
+                "colorful": true,
+                "white": true
+            }
+        },
+        {
+            "id": "doll",
+            "name": "Doll",
+            "filename": "doll_1.png",
+            "tags": {
+                "living": false,
+                "natural": false,
+                "category": "toy",
+                "man_made": true,
+                "for_kids": true,
+                "human_shaped": true
+            }
+        },
+        {
+            "id": "eagle",
+            "name": "Eagle",
+            "filename": "eagle_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "bird",
+                "flies": true,
+                "diet": "carnivore",
+                "has_feathers": true,
+                "has_beak": true,
+                "bird_of_prey": true
+            }
+        },
+        {
+            "id": "elasmosaurus",
+            "name": "Elasmosaurus",
+            "filename": "elasmosaurus_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "habitat": "water",
+                "reptile": true,
+                "long_neck": true,
+                "swims": true
+            }
+        },
+        {
+            "id": "elephant",
+            "name": "Elephant",
+            "filename": "elephant_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "mammal",
+                "diet": "herbivore",
+                "habitat": "land",
+                "has_legs": true,
+                "large": true,
+                "has_trunk": true,
+                "gray": true
+            }
+        },
+        {
+            "id": "giganotosaurus",
+            "name": "Giganotosaurus",
+            "filename": "giganotosaurus_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "habitat": "land",
+                "has_legs": true,
+                "reptile": true,
+                "large": true
+            }
+        },
+        {
+            "id": "goldfish",
+            "name": "Goldfish",
+            "filename": "goldfish_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "fish",
+                "habitat": "water",
+                "swims": true,
+                "small": true,
+                "pet": true,
+                "orange": true
+            }
+        },
+        {
+            "id": "ichthyosaurus",
+            "name": "Ichthyosaurus",
+            "filename": "ichthyosaurus_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "habitat": "water",
+                "reptile": true,
+                "swims": true
+            }
+        },
+        {
+            "id": "iguanodon",
+            "name": "Iguanodon",
+            "filename": "iguanodon_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "herbivore",
+                "habitat": "land",
+                "has_legs": true,
+                "reptile": true
+            }
+        },
+        {
+            "id": "kangaroo",
+            "name": "Kangaroo",
+            "filename": "kangaroo_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "mammal",
+                "diet": "herbivore",
+                "habitat": "land",
+                "has_legs": true,
+                "furry": true,
+                "jumps": true,
+                "has_pouch": true,
+                "australian": true
+            }
+        },
+        {
+            "id": "kronosaurus",
+            "name": "Kronosaurus",
+            "filename": "kronosaurus_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "habitat": "water",
+                "reptile": true,
+                "swims": true,
+                "large": true
+            }
+        },
+        {
+            "id": "lion",
+            "name": "Lion",
+            "filename": "lion_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "mammal",
+                "diet": "carnivore",
+                "habitat": "land",
+                "has_legs": true,
+                "furry": true,
+                "large": true,
+                "big_cat": true,
+                "has_mane": true
+            }
+        },
+        {
+            "id": "liopleurodon",
+            "name": "Liopleurodon",
+            "filename": "liopleurodon_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "habitat": "water",
+                "reptile": true,
+                "swims": true
+            }
+        },
+        {
+            "id": "microraptor",
+            "name": "Microraptor",
+            "filename": "microraptor_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "flies": true,
+                "has_feathers": true,
+                "small": true
+            }
+        },
+        {
+            "id": "mosasaurus",
+            "name": "Mosasaurus",
+            "filename": "mosasaurus_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "habitat": "water",
+                "reptile": true,
+                "swims": true,
+                "large": true
+            }
+        },
+        {
+            "id": "oak",
+            "name": "Oak",
+            "filename": "oak_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "plant",
+                "plant_type": "tree",
+                "large": true,
+                "green": true,
+                "has_leaves": true
+            }
+        },
+        {
+            "id": "ostrich",
+            "name": "Ostrich",
+            "filename": "ostrich_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "bird",
+                "flightless": true,
+                "has_feathers": true,
+                "has_beak": true,
+                "has_legs": true,
+                "large": true,
+                "runs_fast": true
+            }
+        },
+        {
+            "id": "parasaurolophus",
+            "name": "Parasaurolophus",
+            "filename": "parasaurolophus_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "herbivore",
+                "habitat": "land",
+                "has_legs": true,
+                "reptile": true,
+                "has_crest": true
+            }
+        },
+        {
+            "id": "parrot",
+            "name": "Parrot",
+            "filename": "parrot_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "bird",
+                "flies": true,
+                "has_feathers": true,
+                "has_beak": true,
+                "colorful": true,
+                "can_talk": true,
+                "tropical": true
+            }
+        },
+        {
+            "id": "penguin",
+            "name": "Penguin",
+            "filename": "penguin_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "bird",
+                "flightless": true,
+                "swims": true,
+                "has_feathers": true,
+                "has_beak": true,
+                "black_white": true,
+                "cold_climate": true
+            }
+        },
+        {
+            "id": "plesiosaurus",
+            "name": "Plesiosaurus",
+            "filename": "plesiosaurus_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "habitat": "water",
+                "reptile": true,
+                "swims": true,
+                "long_neck": true
+            }
+        },
+        {
+            "id": "pteranodon",
+            "name": "Pteranodon",
+            "filename": "pteranodon_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "flies": true,
+                "reptile": true,
+                "has_crest": true
+            }
+        },
+        {
+            "id": "pterodactyl",
+            "name": "Pterodactyl",
+            "filename": "pterodactyl_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "flies": true,
+                "reptile": true
+            }
+        },
+        {
+            "id": "puzzle",
+            "name": "Puzzle",
+            "filename": "puzzle_1.png",
+            "tags": {
+                "living": false,
+                "natural": false,
+                "category": "toy",
+                "man_made": true,
+                "for_kids": true,
+                "educational": true
+            }
+        },
+        {
+            "id": "quetzalcoatlus",
+            "name": "Quetzalcoatlus",
+            "filename": "quetzalcoatlus_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "flies": true,
+                "reptile": true,
+                "large": true
+            }
+        },
+        {
+            "id": "rhamphorhynchus",
+            "name": "Rhamphorhynchus",
+            "filename": "rhamphorhynchus_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "flies": true,
+                "reptile": true,
+                "has_tail": true
+            }
+        },
+        {
+            "id": "robot",
+            "name": "Robot",
+            "filename": "robot_1.png",
+            "tags": {
+                "living": false,
+                "natural": false,
+                "category": "toy",
+                "man_made": true,
+                "for_kids": true,
+                "electronic": true,
+                "human_shaped": true
+            }
+        },
+        {
+            "id": "salmon",
+            "name": "Salmon",
+            "filename": "salmon_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "fish",
+                "habitat": "water",
+                "swims": true,
+                "edible": true,
+                "pink": true
+            }
+        },
+        {
+            "id": "shark",
+            "name": "Shark",
+            "filename": "shark_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "fish",
+                "habitat": "water",
+                "swims": true,
+                "diet": "carnivore",
+                "large": true,
+                "has_fins": true,
+                "predator": true
+            }
+        },
+        {
+            "id": "stegosaurus",
+            "name": "Stegosaurus",
+            "filename": "stegosaurus_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "herbivore",
+                "habitat": "land",
+                "has_legs": true,
+                "reptile": true,
+                "has_plates": true,
+                "has_spikes": true
+            }
+        },
+        {
+            "id": "teddy_bear",
+            "name": "Teddy Bear",
+            "filename": "teddy_bear_1.png",
+            "tags": {
+                "living": false,
+                "natural": false,
+                "category": "toy",
+                "man_made": true,
+                "for_kids": true,
+                "soft": true,
+                "cuddly": true,
+                "bear_shaped": true
+            }
+        },
+        {
+            "id": "tiger",
+            "name": "Tiger",
+            "filename": "tiger_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "mammal",
+                "diet": "carnivore",
+                "habitat": "land",
+                "has_legs": true,
+                "furry": true,
+                "large": true,
+                "big_cat": true,
+                "has_stripes": true,
+                "orange": true
+            }
+        },
+        {
+            "id": "titanoboa",
+            "name": "Titanoboa",
+            "filename": "titanoboa_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "reptile",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "habitat": "land",
+                "snake": true,
+                "large": true,
+                "no_legs": true
+            }
+        },
+        {
+            "id": "train",
+            "name": "Train",
+            "filename": "train_1.png",
+            "tags": {
+                "living": false,
+                "natural": false,
+                "category": "transport",
+                "transport_type": "rail",
+                "has_wheels": true,
+                "man_made": true,
+                "has_engine": true,
+                "large": true
+            }
+        },
+        {
+            "id": "trex",
+            "name": "T-Rex",
+            "filename": "trex_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "habitat": "land",
+                "has_legs": true,
+                "reptile": true,
+                "large": true,
+                "small_arms": true,
+                "predator": true
+            }
+        },
+        {
+            "id": "triceratops",
+            "name": "Triceratops",
+            "filename": "triceratops_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "herbivore",
+                "habitat": "land",
+                "has_legs": true,
+                "reptile": true,
+                "has_horns": true,
+                "has_frill": true
+            }
+        },
+        {
+            "id": "tulsi",
+            "name": "Tulsi",
+            "filename": "tulsi_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "plant",
+                "plant_type": "herb",
+                "green": true,
+                "medicinal": true,
+                "edible": true
+            }
+        },
+        {
+            "id": "tuna",
+            "name": "Tuna",
+            "filename": "tuna_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": false,
+                "category": "fish",
+                "habitat": "water",
+                "swims": true,
+                "large": true,
+                "edible": true
+            }
+        },
+        {
+            "id": "utahraptor",
+            "name": "Utahraptor",
+            "filename": "utahraptor_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "habitat": "land",
+                "has_legs": true,
+                "reptile": true,
+                "has_claws": true
+            }
+        },
+        {
+            "id": "velociraptor",
+            "name": "Velociraptor",
+            "filename": "velociraptor_1.png",
+            "tags": {
+                "living": true,
+                "natural": true,
+                "extinct": true,
+                "category": "dinosaur",
+                "era": "prehistoric",
+                "diet": "carnivore",
+                "habitat": "land",
+                "has_legs": true,
+                "reptile": true,
+                "has_claws": true,
+                "small": true,
+                "fast": true
+            }
+        }
+    ],
+    "groupings": {
+        "living": {
+            "display_name": "Living Things",
+            "description": "Things that are alive or were once alive",
+            "true_label": "Living",
+            "false_label": "Non-Living"
+        },
+        "extinct": {
+            "display_name": "Extinct",
+            "description": "Animals that no longer exist",
+            "true_label": "Extinct",
+            "false_label": "Still Alive Today"
+        },
+        "flies": {
+            "display_name": "Can Fly",
+            "description": "Things that can fly through the air",
+            "true_label": "Flies",
+            "false_label": "Cannot Fly"
+        },
+        "swims": {
+            "display_name": "Can Swim",
+            "description": "Things that can swim in water",
+            "true_label": "Swims",
+            "false_label": "Cannot Swim"
+        },
+        "diet": {
+            "display_name": "Diet Type",
+            "values": {
+                "carnivore": "Meat Eaters",
+                "herbivore": "Plant Eaters",
+                "omnivore": "Eats Both"
+            }
+        },
+        "habitat": {
+            "display_name": "Habitat",
+            "values": {
+                "land": "Lives on Land",
+                "water": "Lives in Water"
+            }
+        },
+        "category": {
+            "display_name": "Category",
+            "values": {
+                "dinosaur": "Dinosaurs",
+                "mammal": "Mammals",
+                "bird": "Birds",
+                "fish": "Fish",
+                "insect": "Insects",
+                "plant": "Plants",
+                "toy": "Toys",
+                "transport": "Transport",
+                "reptile": "Reptiles"
+            }
+        },
+        "large": {
+            "display_name": "Size",
+            "true_label": "Large",
+            "false_label": "Small"
+        },
+        "furry": {
+            "display_name": "Has Fur",
+            "true_label": "Furry",
+            "false_label": "Not Furry"
+        },
+        "has_legs": {
+            "display_name": "Has Legs",
+            "true_label": "Has Legs",
+            "false_label": "No Legs"
+        },
+        "man_made": {
+            "display_name": "Man Made",
+            "true_label": "Made by Humans",
+            "false_label": "Natural"
+        },
+        "colorful": {
+            "display_name": "Colorful",
+            "true_label": "Colorful",
+            "false_label": "Not Colorful"
+        },
+        "predator": {
+            "display_name": "Predator",
+            "true_label": "Predators",
+            "false_label": "Not Predators"
+        }
+    }
+}

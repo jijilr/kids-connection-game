@@ -1,0 +1,2117 @@
+[
+  {
+    "text": "That's right! Great job!",
+    "output": "Assets\\audio\\feedback/correct_01.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Yay! You found a match!",
+    "output": "Assets\\audio\\feedback/correct_02.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Awesome! You're so smart!",
+    "output": "Assets\\audio\\feedback/correct_03.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Perfect! Keep going!",
+    "output": "Assets\\audio\\feedback/correct_04.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Wonderful! You got it!",
+    "output": "Assets\\audio\\feedback/correct_05.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Excellent work!",
+    "output": "Assets\\audio\\feedback/correct_06.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Super! That's exactly right!",
+    "output": "Assets\\audio\\feedback/correct_07.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Brilliant! You're a star!",
+    "output": "Assets\\audio\\feedback/correct_08.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Oops! That's not quite right. Try again!",
+    "output": "Assets\\audio\\feedback/wrong_01.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Hmm, not this time. Keep trying!",
+    "output": "Assets\\audio\\feedback/wrong_02.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Almost! Think about what these have in common.",
+    "output": "Assets\\audio\\feedback/wrong_03.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Not quite! Look more carefully.",
+    "output": "Assets\\audio\\feedback/wrong_04.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Good try! But let's think again.",
+    "output": "Assets\\audio\\feedback/wrong_05.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Oopsie! These don't belong together.",
+    "output": "Assets\\audio\\feedback/wrong_06.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "So close! You're one away!",
+    "output": "Assets\\audio\\feedback/oneaway_01.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Almost there! Just one is wrong!",
+    "output": "Assets\\audio\\feedback/oneaway_02.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "You're so close! One doesn't belong!",
+    "output": "Assets\\audio\\feedback/oneaway_03.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Nearly perfect! Check one more time!",
+    "output": "Assets\\audio\\feedback/oneaway_04.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "You did it! You're amazing!",
+    "output": "Assets\\audio\\feedback/victory_01.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Hooray! You won the game!",
+    "output": "Assets\\audio\\feedback/victory_02.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Fantastic! You solved all the puzzles!",
+    "output": "Assets\\audio\\feedback/victory_03.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Champion! You found all the connections!",
+    "output": "Assets\\audio\\feedback/victory_04.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Wonderful job! You're a puzzle master!",
+    "output": "Assets\\audio\\feedback/victory_05.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Oh no! Game over. Let's try again!",
+    "output": "Assets\\audio\\feedback/gameover_01.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Don't worry! Practice makes perfect!",
+    "output": "Assets\\audio\\feedback/gameover_02.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Good try! Want to play again?",
+    "output": "Assets\\audio\\feedback/gameover_03.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "You can do it!",
+    "output": "Assets\\audio\\feedback/encourage_01.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Keep trying! You're doing great!",
+    "output": "Assets\\audio\\feedback/encourage_02.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Think carefully! You've got this!",
+    "output": "Assets\\audio\\feedback/encourage_03.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Take your time! No rush!",
+    "output": "Assets\\audio\\feedback/encourage_04.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Find four things that belong together!",
+    "output": "Assets\\audio\\feedback/instruct_01.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Tap on four pictures that have something in common!",
+    "output": "Assets\\audio\\feedback/instruct_02.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Look for things that are similar!",
+    "output": "Assets\\audio\\feedback/instruct_03.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "What do these have in common? Find four!",
+    "output": "Assets\\audio\\feedback/instruct_04.mp3",
+    "category": "feedback"
+  },
+  {
+    "text": "Airplane",
+    "output": "Assets\\audio\\names/name_airplane.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Allosaurus",
+    "output": "Assets\\audio\\names/name_allosaurus.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Ankylosaurus",
+    "output": "Assets\\audio\\names/name_ankylosaurus.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Ant",
+    "output": "Assets\\audio\\names/name_ant.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Archaeopteryx",
+    "output": "Assets\\audio\\names/name_archaeopteryx.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Bear",
+    "output": "Assets\\audio\\names/name_bear.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Bee",
+    "output": "Assets\\audio\\names/name_bee.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Beetle",
+    "output": "Assets\\audio\\names/name_beetle.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Bicycle",
+    "output": "Assets\\audio\\names/name_bicycle.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Brachiosaurus",
+    "output": "Assets\\audio\\names/name_brachiosaurus.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Butterfly",
+    "output": "Assets\\audio\\names/name_butterfly.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Car",
+    "output": "Assets\\audio\\names/name_car.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Ceratosaurus",
+    "output": "Assets\\audio\\names/name_ceratosaurus.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Daffodil",
+    "output": "Assets\\audio\\names/name_daffodil.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Daisy",
+    "output": "Assets\\audio\\names/name_daisy.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Doll",
+    "output": "Assets\\audio\\names/name_doll.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Eagle",
+    "output": "Assets\\audio\\names/name_eagle.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Elasmosaurus",
+    "output": "Assets\\audio\\names/name_elasmosaurus.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Elephant",
+    "output": "Assets\\audio\\names/name_elephant.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Giganotosaurus",
+    "output": "Assets\\audio\\names/name_giganotosaurus.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Goldfish",
+    "output": "Assets\\audio\\names/name_goldfish.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Ichthyosaurus",
+    "output": "Assets\\audio\\names/name_ichthyosaurus.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Iguanodon",
+    "output": "Assets\\audio\\names/name_iguanodon.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Kangaroo",
+    "output": "Assets\\audio\\names/name_kangaroo.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Kronosaurus",
+    "output": "Assets\\audio\\names/name_kronosaurus.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Lion",
+    "output": "Assets\\audio\\names/name_lion.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Liopleurodon",
+    "output": "Assets\\audio\\names/name_liopleurodon.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Microraptor",
+    "output": "Assets\\audio\\names/name_microraptor.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Mosasaurus",
+    "output": "Assets\\audio\\names/name_mosasaurus.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Oak Tree",
+    "output": "Assets\\audio\\names/name_oak.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Ostrich",
+    "output": "Assets\\audio\\names/name_ostrich.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Parasaurolophus",
+    "output": "Assets\\audio\\names/name_parasaurolophus.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Parrot",
+    "output": "Assets\\audio\\names/name_parrot.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Penguin",
+    "output": "Assets\\audio\\names/name_penguin.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Plesiosaurus",
+    "output": "Assets\\audio\\names/name_plesiosaurus.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Pteranodon",
+    "output": "Assets\\audio\\names/name_pteranodon.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Pterodactyl",
+    "output": "Assets\\audio\\names/name_pterodactyl.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Puzzle",
+    "output": "Assets\\audio\\names/name_puzzle.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Quetzalcoatlus",
+    "output": "Assets\\audio\\names/name_quetzalcoatlus.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Robot",
+    "output": "Assets\\audio\\names/name_robot.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Salmon",
+    "output": "Assets\\audio\\names/name_salmon.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Shark",
+    "output": "Assets\\audio\\names/name_shark.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Stegosaurus",
+    "output": "Assets\\audio\\names/name_stegosaurus.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Teddy Bear",
+    "output": "Assets\\audio\\names/name_teddy_bear.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Tiger",
+    "output": "Assets\\audio\\names/name_tiger.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Titanoboa",
+    "output": "Assets\\audio\\names/name_titanoboa.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Train",
+    "output": "Assets\\audio\\names/name_train.mp3",
+    "category": "names"
+  },
+  {
+    "text": "T-Rex",
+    "output": "Assets\\audio\\names/name_trex.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Triceratops",
+    "output": "Assets\\audio\\names/name_triceratops.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Tulsi Plant",
+    "output": "Assets\\audio\\names/name_tulsi.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Tuna",
+    "output": "Assets\\audio\\names/name_tuna.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Utahraptor",
+    "output": "Assets\\audio\\names/name_utahraptor.mp3",
+    "category": "names"
+  },
+  {
+    "text": "Velociraptor",
+    "output": "Assets\\audio\\names/name_velociraptor.mp3",
+    "category": "names"
+  },
+  {
+    "text": "These are all carnivores! Dinosaurs that eat meat!",
+    "output": "Assets\\audio\\categories/cat_carnivore_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Carnivores are meat eaters! They hunted other animals!",
+    "output": "Assets\\audio\\categories/cat_carnivore_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "You found the meat-eating dinosaurs! They had sharp teeth!",
+    "output": "Assets\\audio\\categories/cat_carnivore_03.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These are all herbivores! Dinosaurs that eat plants!",
+    "output": "Assets\\audio\\categories/cat_herbivore_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Plant eaters! They loved leaves and grass!",
+    "output": "Assets\\audio\\categories/cat_herbivore_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Herbivores are gentle giants that only ate plants!",
+    "output": "Assets\\audio\\categories/cat_herbivore_03.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These all swam in the ocean! They're marine reptiles!",
+    "output": "Assets\\audio\\categories/cat_marine_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Sea creatures from long ago! They lived in water!",
+    "output": "Assets\\audio\\categories/cat_marine_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These prehistoric animals ruled the ancient seas!",
+    "output": "Assets\\audio\\categories/cat_marine_03.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These could all fly! They're called pterosaurs!",
+    "output": "Assets\\audio\\categories/cat_flying_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Flying reptiles! They soared through the sky!",
+    "output": "Assets\\audio\\categories/cat_flying_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These had wings and could fly like birds!",
+    "output": "Assets\\audio\\categories/cat_flying_03.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These are all birds! They have feathers and beaks!",
+    "output": "Assets\\audio\\categories/cat_bird_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Birds! Some can fly, some can't, but they all have feathers!",
+    "output": "Assets\\audio\\categories/cat_bird_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "You found the birds! They lay eggs and have wings!",
+    "output": "Assets\\audio\\categories/cat_bird_03.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These are all mammals! They have fur and drink milk as babies!",
+    "output": "Assets\\audio\\categories/cat_mammal_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Mammals! Warm-blooded animals with hair or fur!",
+    "output": "Assets\\audio\\categories/cat_mammal_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Furry friends! Mammals take care of their babies!",
+    "output": "Assets\\audio\\categories/cat_mammal_03.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These are all insects! They have six legs!",
+    "output": "Assets\\audio\\categories/cat_insect_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Insects! Tiny creatures with six legs and antennae!",
+    "output": "Assets\\audio\\categories/cat_insect_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "You found the bugs! All insects have six legs!",
+    "output": "Assets\\audio\\categories/cat_insect_03.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These are all fish! They breathe underwater with gills!",
+    "output": "Assets\\audio\\categories/cat_fish_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Fish! They swim in water and have scales!",
+    "output": "Assets\\audio\\categories/cat_fish_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Splish splash! These all live and swim in water!",
+    "output": "Assets\\audio\\categories/cat_fish_03.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These all help us travel! They're vehicles!",
+    "output": "Assets\\audio\\categories/cat_transport_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Transportation! Things that take us places!",
+    "output": "Assets\\audio\\categories/cat_transport_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Zoom zoom! These all help people get around!",
+    "output": "Assets\\audio\\categories/cat_transport_03.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These are all toys! Things kids play with!",
+    "output": "Assets\\audio\\categories/cat_toy_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Playtime! These are all fun toys!",
+    "output": "Assets\\audio\\categories/cat_toy_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Toys for playing! Everyone loves toys!",
+    "output": "Assets\\audio\\categories/cat_toy_03.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These are all plants! They grow from the ground!",
+    "output": "Assets\\audio\\categories/cat_plant_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Plants! They need sun and water to grow!",
+    "output": "Assets\\audio\\categories/cat_plant_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Green and growing! Plants make oxygen for us!",
+    "output": "Assets\\audio\\categories/cat_plant_03.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These birds can't fly! But they're still amazing!",
+    "output": "Assets\\audio\\categories/cat_flightless_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Flightless birds! They walk or swim instead of fly!",
+    "output": "Assets\\audio\\categories/cat_flightless_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Not all birds fly! These ones stay on the ground!",
+    "output": "Assets\\audio\\categories/cat_flightless_03.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These are big cats! Powerful hunters!",
+    "output": "Assets\\audio\\categories/cat_bigcat_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Big cats! Like house cats but much bigger and stronger!",
+    "output": "Assets\\audio\\categories/cat_bigcat_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Roar! These big cats are the kings of the jungle!",
+    "output": "Assets\\audio\\categories/cat_bigcat_03.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "This is the Titanoboa! The biggest snake ever!",
+    "output": "Assets\\audio\\categories/cat_snake_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "A giant prehistoric snake! It was longer than a school bus!",
+    "output": "Assets\\audio\\categories/cat_snake_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These are all flowers! Beautiful and colorful!",
+    "output": "Assets\\audio\\categories/cat_flower_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Pretty flowers! They smell nice and attract bees!",
+    "output": "Assets\\audio\\categories/cat_flower_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Blooming beauties! Flowers come in many colors!",
+    "output": "Assets\\audio\\categories/cat_flower_03.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These all travel on land! Cars, bikes, and more!",
+    "output": "Assets\\audio\\categories/cat_land_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Land vehicles! They use roads and streets!",
+    "output": "Assets\\audio\\categories/cat_land_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "These are all prehistoric! They lived millions of years ago!",
+    "output": "Assets\\audio\\categories/cat_prehistoric_01.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Ancient creatures! They roamed the Earth long before people!",
+    "output": "Assets\\audio\\categories/cat_prehistoric_02.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "From long, long ago! These animals are now extinct!",
+    "output": "Assets\\audio\\categories/cat_prehistoric_03.mp3",
+    "category": "categories"
+  },
+  {
+    "text": "Allosaurus was a fierce meat-eating dinosaur! It had sharp claws and teeth!",
+    "output": "Assets\\audio\\educational/edu_allosaurus_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "The Allosaurus lived about 150 million years ago!",
+    "output": "Assets\\audio\\educational/edu_allosaurus_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Allosaurus means different lizard! It was a fast hunter!",
+    "output": "Assets\\audio\\educational/edu_allosaurus_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Allosaurus is not a plant eater! It had sharp teeth for eating meat!",
+    "output": "Assets\\audio\\educational/edu_allosaurus_not_herb.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Allosaurus lived on land, not in the water!",
+    "output": "Assets\\audio\\educational/edu_allosaurus_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Allosaurus couldn't fly! It walked on two strong legs!",
+    "output": "Assets\\audio\\educational/edu_allosaurus_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ankylosaurus was covered in armor like a tank!",
+    "output": "Assets\\audio\\educational/edu_ankylosaurus_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This dinosaur had a club at the end of its tail for protection!",
+    "output": "Assets\\audio\\educational/edu_ankylosaurus_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ankylosaurus only ate plants even though it looked tough!",
+    "output": "Assets\\audio\\educational/edu_ankylosaurus_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ankylosaurus didn't eat meat! It was a gentle plant eater!",
+    "output": "Assets\\audio\\educational/edu_ankylosaurus_not_carn.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ankylosaurus lived on land, not in the ocean!",
+    "output": "Assets\\audio\\educational/edu_ankylosaurus_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ankylosaurus was too heavy to fly! It stayed on the ground!",
+    "output": "Assets\\audio\\educational/edu_ankylosaurus_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Archaeopteryx had feathers like a bird but teeth like a dinosaur!",
+    "output": "Assets\\audio\\educational/edu_archaeopteryx_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Scientists call Archaeopteryx the first bird!",
+    "output": "Assets\\audio\\educational/edu_archaeopteryx_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Archaeopteryx could probably fly short distances!",
+    "output": "Assets\\audio\\educational/edu_archaeopteryx_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Archaeopteryx ate small animals, not plants!",
+    "output": "Assets\\audio\\educational/edu_archaeopteryx_not_herb.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Archaeopteryx lived on land and flew in the air, not in water!",
+    "output": "Assets\\audio\\educational/edu_archaeopteryx_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Brachiosaurus was one of the tallest dinosaurs ever!",
+    "output": "Assets\\audio\\educational/edu_brachiosaurus_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This gentle giant could reach leaves at the very top of trees!",
+    "output": "Assets\\audio\\educational/edu_brachiosaurus_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Brachiosaurus was as tall as a four-story building!",
+    "output": "Assets\\audio\\educational/edu_brachiosaurus_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Brachiosaurus didn't eat meat! It loved eating leaves from tall trees!",
+    "output": "Assets\\audio\\educational/edu_brachiosaurus_not_carn.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Brachiosaurus walked on land! It was too big for the water!",
+    "output": "Assets\\audio\\educational/edu_brachiosaurus_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Brachiosaurus was way too big and heavy to fly!",
+    "output": "Assets\\audio\\educational/edu_brachiosaurus_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ceratosaurus had a horn on its nose!",
+    "output": "Assets\\audio\\educational/edu_ceratosaurus_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This meat-eater was a skilled hunter!",
+    "output": "Assets\\audio\\educational/edu_ceratosaurus_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ceratosaurus means horned lizard!",
+    "output": "Assets\\audio\\educational/edu_ceratosaurus_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ceratosaurus was a meat eater with sharp teeth!",
+    "output": "Assets\\audio\\educational/edu_ceratosaurus_not_herb.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ceratosaurus hunted on land, not in water!",
+    "output": "Assets\\audio\\educational/edu_ceratosaurus_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ceratosaurus walked on two legs but couldn't fly!",
+    "output": "Assets\\audio\\educational/edu_ceratosaurus_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Elasmosaurus had the longest neck of any sea creature!",
+    "output": "Assets\\audio\\educational/edu_elasmosaurus_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This marine reptile swam in ancient oceans!",
+    "output": "Assets\\audio\\educational/edu_elasmosaurus_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Elasmosaurus used its long neck to catch fish!",
+    "output": "Assets\\audio\\educational/edu_elasmosaurus_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Elasmosaurus lived in the ocean, not on land!",
+    "output": "Assets\\audio\\educational/edu_elasmosaurus_not_land.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Elasmosaurus couldn't fly! It swam in the sea!",
+    "output": "Assets\\audio\\educational/edu_elasmosaurus_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Elasmosaurus ate fish and other sea creatures!",
+    "output": "Assets\\audio\\educational/edu_elasmosaurus_not_herb.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Giganotosaurus was even bigger than T-Rex!",
+    "output": "Assets\\audio\\educational/edu_giganotosaurus_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This giant hunter lived in South America!",
+    "output": "Assets\\audio\\educational/edu_giganotosaurus_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Giganotosaurus means giant southern lizard!",
+    "output": "Assets\\audio\\educational/edu_giganotosaurus_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Giganotosaurus was a fierce meat eater!",
+    "output": "Assets\\audio\\educational/edu_giganotosaurus_not_herb.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Giganotosaurus lived on land, not in water!",
+    "output": "Assets\\audio\\educational/edu_giganotosaurus_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This huge dinosaur couldn't fly!",
+    "output": "Assets\\audio\\educational/edu_giganotosaurus_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ichthyosaurus looked like a dolphin but was a reptile!",
+    "output": "Assets\\audio\\educational/edu_ichthyosaurus_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This speedy swimmer lived in ancient seas!",
+    "output": "Assets\\audio\\educational/edu_ichthyosaurus_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ichthyosaurus means fish lizard!",
+    "output": "Assets\\audio\\educational/edu_ichthyosaurus_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ichthyosaurus couldn't walk on land! It only swam!",
+    "output": "Assets\\audio\\educational/edu_ichthyosaurus_not_land.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ichthyosaurus swam, it didn't fly!",
+    "output": "Assets\\audio\\educational/edu_ichthyosaurus_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ichthyosaurus looked like a fish but was actually a reptile!",
+    "output": "Assets\\audio\\educational/edu_ichthyosaurus_not_fish.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Iguanodon had spiky thumbs for protection!",
+    "output": "Assets\\audio\\educational/edu_iguanodon_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This plant eater could walk on two or four legs!",
+    "output": "Assets\\audio\\educational/edu_iguanodon_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Iguanodon was one of the first dinosaurs ever discovered!",
+    "output": "Assets\\audio\\educational/edu_iguanodon_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Iguanodon only ate plants! It was a herbivore!",
+    "output": "Assets\\audio\\educational/edu_iguanodon_not_carn.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Iguanodon lived on land, not in water!",
+    "output": "Assets\\audio\\educational/edu_iguanodon_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Iguanodon couldn't fly! It stayed on the ground!",
+    "output": "Assets\\audio\\educational/edu_iguanodon_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Kronosaurus was a powerful ocean hunter!",
+    "output": "Assets\\audio\\educational/edu_kronosaurus_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This sea monster had huge jaws and sharp teeth!",
+    "output": "Assets\\audio\\educational/edu_kronosaurus_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Kronosaurus was named after a Greek god!",
+    "output": "Assets\\audio\\educational/edu_kronosaurus_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Kronosaurus lived in the ocean, not on land!",
+    "output": "Assets\\audio\\educational/edu_kronosaurus_not_land.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Kronosaurus couldn't fly! It was a swimmer!",
+    "output": "Assets\\audio\\educational/edu_kronosaurus_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Kronosaurus was a fierce meat eater!",
+    "output": "Assets\\audio\\educational/edu_kronosaurus_not_herb.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Liopleurodon was one of the biggest ocean predators!",
+    "output": "Assets\\audio\\educational/edu_liopleurodon_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This giant had four flippers for swimming!",
+    "output": "Assets\\audio\\educational/edu_liopleurodon_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Liopleurodon could smell prey from far away!",
+    "output": "Assets\\audio\\educational/edu_liopleurodon_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Liopleurodon only lived in the ocean!",
+    "output": "Assets\\audio\\educational/edu_liopleurodon_not_land.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Liopleurodon swam in the sea, it couldn't fly!",
+    "output": "Assets\\audio\\educational/edu_liopleurodon_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Liopleurodon ate fish and other sea creatures!",
+    "output": "Assets\\audio\\educational/edu_liopleurodon_not_herb.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Microraptor had four wings and could glide!",
+    "output": "Assets\\audio\\educational/edu_microraptor_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This tiny dinosaur was covered in feathers!",
+    "output": "Assets\\audio\\educational/edu_microraptor_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Microraptor was only about the size of a chicken!",
+    "output": "Assets\\audio\\educational/edu_microraptor_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Microraptor ate small animals and insects!",
+    "output": "Assets\\audio\\educational/edu_microraptor_not_herb.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Microraptor lived in trees, not in water!",
+    "output": "Assets\\audio\\educational/edu_microraptor_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Mosasaurus was the king of the ancient seas!",
+    "output": "Assets\\audio\\educational/edu_mosasaurus_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This giant lizard swam faster than most fish!",
+    "output": "Assets\\audio\\educational/edu_mosasaurus_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Mosasaurus could swallow sharks whole!",
+    "output": "Assets\\audio\\educational/edu_mosasaurus_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Mosasaurus only lived in the ocean!",
+    "output": "Assets\\audio\\educational/edu_mosasaurus_not_land.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Mosasaurus couldn't fly! It was a swimmer!",
+    "output": "Assets\\audio\\educational/edu_mosasaurus_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Mosasaurus was a fierce hunter that ate meat!",
+    "output": "Assets\\audio\\educational/edu_mosasaurus_not_herb.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Parasaurolophus had a long crest on its head!",
+    "output": "Assets\\audio\\educational/edu_parasaurolophus_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This dinosaur could make loud sounds with its crest!",
+    "output": "Assets\\audio\\educational/edu_parasaurolophus_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Parasaurolophus was a gentle plant eater!",
+    "output": "Assets\\audio\\educational/edu_parasaurolophus_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Parasaurolophus didn't eat meat! It loved plants!",
+    "output": "Assets\\audio\\educational/edu_parasaurolophus_not_carn.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Parasaurolophus lived on land, not in water!",
+    "output": "Assets\\audio\\educational/edu_parasaurolophus_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Parasaurolophus couldn't fly! It walked on the ground!",
+    "output": "Assets\\audio\\educational/edu_parasaurolophus_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Plesiosaurus had a very long neck and small head!",
+    "output": "Assets\\audio\\educational/edu_plesiosaurus_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This sea creature used flippers to swim!",
+    "output": "Assets\\audio\\educational/edu_plesiosaurus_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Some people think Plesiosaurus is the Loch Ness Monster!",
+    "output": "Assets\\audio\\educational/edu_plesiosaurus_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Plesiosaurus lived in the ocean, not on land!",
+    "output": "Assets\\audio\\educational/edu_plesiosaurus_not_land.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Plesiosaurus swam in the sea, it couldn't fly!",
+    "output": "Assets\\audio\\educational/edu_plesiosaurus_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Plesiosaurus ate fish and squid!",
+    "output": "Assets\\audio\\educational/edu_plesiosaurus_not_herb.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Pteranodon had a wingspan as wide as a small airplane!",
+    "output": "Assets\\audio\\educational/edu_pteranodon_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This flying reptile had no teeth!",
+    "output": "Assets\\audio\\educational/edu_pteranodon_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Pteranodon caught fish from the ocean!",
+    "output": "Assets\\audio\\educational/edu_pteranodon_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Pteranodon flew in the sky! It didn't walk much!",
+    "output": "Assets\\audio\\educational/edu_pteranodon_not_land.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Pteranodon flew over the water but didn't live in it!",
+    "output": "Assets\\audio\\educational/edu_pteranodon_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Pteranodon looks like a bird but it's actually a reptile!",
+    "output": "Assets\\audio\\educational/edu_pteranodon_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Pterodactyl means winged finger!",
+    "output": "Assets\\audio\\educational/edu_pterodactyl_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This flying reptile had a long crest on its head!",
+    "output": "Assets\\audio\\educational/edu_pterodactyl_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Pterodactyls were some of the first creatures to fly!",
+    "output": "Assets\\audio\\educational/edu_pterodactyl_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Pterodactyl is not a bird! It's a flying reptile!",
+    "output": "Assets\\audio\\educational/edu_pterodactyl_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Pterodactyl flew in the sky, not in water!",
+    "output": "Assets\\audio\\educational/edu_pterodactyl_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Quetzalcoatlus was the biggest flying animal ever!",
+    "output": "Assets\\audio\\educational/edu_quetzalcoatlus_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "It was as tall as a giraffe when standing!",
+    "output": "Assets\\audio\\educational/edu_quetzalcoatlus_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This giant could fly long distances!",
+    "output": "Assets\\audio\\educational/edu_quetzalcoatlus_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Quetzalcoatlus was a reptile, not a bird!",
+    "output": "Assets\\audio\\educational/edu_quetzalcoatlus_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Quetzalcoatlus flew in the air, not in water!",
+    "output": "Assets\\audio\\educational/edu_quetzalcoatlus_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Rhamphorhynchus had a long tail with a diamond shape at the end!",
+    "output": "Assets\\audio\\educational/edu_rhamphorhynchus_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This flying reptile had sharp teeth for catching fish!",
+    "output": "Assets\\audio\\educational/edu_rhamphorhynchus_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Rhamphorhynchus was smaller than most pterosaurs!",
+    "output": "Assets\\audio\\educational/edu_rhamphorhynchus_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Rhamphorhynchus is a reptile, not a bird!",
+    "output": "Assets\\audio\\educational/edu_rhamphorhynchus_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Rhamphorhynchus flew over water but lived on land!",
+    "output": "Assets\\audio\\educational/edu_rhamphorhynchus_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Stegosaurus had big plates on its back!",
+    "output": "Assets\\audio\\educational/edu_stegosaurus_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This dinosaur had a tiny brain the size of a walnut!",
+    "output": "Assets\\audio\\educational/edu_stegosaurus_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Stegosaurus used its spiked tail to fight enemies!",
+    "output": "Assets\\audio\\educational/edu_stegosaurus_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Stegosaurus was a plant eater! Not a meat eater!",
+    "output": "Assets\\audio\\educational/edu_stegosaurus_not_carn.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Stegosaurus lived on land, not in water!",
+    "output": "Assets\\audio\\educational/edu_stegosaurus_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Stegosaurus was too heavy to fly!",
+    "output": "Assets\\audio\\educational/edu_stegosaurus_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Titanoboa was the biggest snake that ever lived!",
+    "output": "Assets\\audio\\educational/edu_titanoboa_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This giant snake was longer than a school bus!",
+    "output": "Assets\\audio\\educational/edu_titanoboa_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Titanoboa lived in swamps and rivers!",
+    "output": "Assets\\audio\\educational/edu_titanoboa_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Titanoboa lived in rivers, not the ocean!",
+    "output": "Assets\\audio\\educational/edu_titanoboa_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Snakes can't fly! Titanoboa slithered on land!",
+    "output": "Assets\\audio\\educational/edu_titanoboa_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "T-Rex was the king of the dinosaurs!",
+    "output": "Assets\\audio\\educational/edu_trex_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "T-Rex had tiny arms but a huge, powerful jaw!",
+    "output": "Assets\\audio\\educational/edu_trex_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "T-Rex could eat 500 pounds of meat in one bite!",
+    "output": "Assets\\audio\\educational/edu_trex_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "T-Rex means tyrant lizard king!",
+    "output": "Assets\\audio\\educational/edu_trex_04.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "T-Rex was a meat eater with the strongest bite ever!",
+    "output": "Assets\\audio\\educational/edu_trex_not_herb.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "T-Rex lived on land, not in water!",
+    "output": "Assets\\audio\\educational/edu_trex_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "T-Rex couldn't fly! It walked on two big legs!",
+    "output": "Assets\\audio\\educational/edu_trex_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Triceratops had three horns on its face!",
+    "output": "Assets\\audio\\educational/edu_triceratops_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This dinosaur had a big frill to protect its neck!",
+    "output": "Assets\\audio\\educational/edu_triceratops_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Triceratops means three-horned face!",
+    "output": "Assets\\audio\\educational/edu_triceratops_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Triceratops only ate plants! It was a herbivore!",
+    "output": "Assets\\audio\\educational/edu_triceratops_not_carn.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Triceratops lived on land, not in water!",
+    "output": "Assets\\audio\\educational/edu_triceratops_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Triceratops was too heavy to fly!",
+    "output": "Assets\\audio\\educational/edu_triceratops_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Utahraptor was one of the biggest raptors!",
+    "output": "Assets\\audio\\educational/edu_utahraptor_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This dinosaur had a huge claw on each foot!",
+    "output": "Assets\\audio\\educational/edu_utahraptor_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Utahraptor was smart and hunted in groups!",
+    "output": "Assets\\audio\\educational/edu_utahraptor_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Utahraptor was a meat eater! A fierce hunter!",
+    "output": "Assets\\audio\\educational/edu_utahraptor_not_herb.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Utahraptor lived on land, not in water!",
+    "output": "Assets\\audio\\educational/edu_utahraptor_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Utahraptor couldn't fly! It ran very fast instead!",
+    "output": "Assets\\audio\\educational/edu_utahraptor_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Velociraptor was a super fast and smart dinosaur!",
+    "output": "Assets\\audio\\educational/edu_velociraptor_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "This dinosaur was actually covered in feathers!",
+    "output": "Assets\\audio\\educational/edu_velociraptor_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Velociraptor was only about the size of a turkey!",
+    "output": "Assets\\audio\\educational/edu_velociraptor_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Velociraptor was a meat eater!",
+    "output": "Assets\\audio\\educational/edu_velociraptor_not_herb.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Velociraptor lived on land, not in water!",
+    "output": "Assets\\audio\\educational/edu_velociraptor_not_marine.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Velociraptor had feathers but couldn't really fly!",
+    "output": "Assets\\audio\\educational/edu_velociraptor_not_fly.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Eagles are powerful birds of prey!",
+    "output": "Assets\\audio\\educational/edu_eagle_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Eagles have amazing eyesight! They can see fish from high up!",
+    "output": "Assets\\audio\\educational/edu_eagle_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "The bald eagle is a symbol of the United States!",
+    "output": "Assets\\audio\\educational/edu_eagle_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Eagles are birds, not mammals! They lay eggs!",
+    "output": "Assets\\audio\\educational/edu_eagle_not_mammal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Eagles are birds! They have feathers, not antennae!",
+    "output": "Assets\\audio\\educational/edu_eagle_not_insect.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ostriches are the biggest birds in the world!",
+    "output": "Assets\\audio\\educational/edu_ostrich_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ostriches can't fly but they can run very fast!",
+    "output": "Assets\\audio\\educational/edu_ostrich_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ostrich eggs are the biggest eggs of any bird!",
+    "output": "Assets\\audio\\educational/edu_ostrich_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ostriches can't fly! But they can run really fast!",
+    "output": "Assets\\audio\\educational/edu_ostrich_not_flying.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ostriches are birds! They have feathers and lay eggs!",
+    "output": "Assets\\audio\\educational/edu_ostrich_not_mammal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Parrots can learn to talk and copy sounds!",
+    "output": "Assets\\audio\\educational/edu_parrot_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Parrots love eating seeds, nuts, and fruit!",
+    "output": "Assets\\audio\\educational/edu_parrot_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Parrots come in many beautiful colors!",
+    "output": "Assets\\audio\\educational/edu_parrot_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Parrots are birds! They have feathers and beaks!",
+    "output": "Assets\\audio\\educational/edu_parrot_not_mammal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Parrots are birds, not insects!",
+    "output": "Assets\\audio\\educational/edu_parrot_not_insect.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Penguins are birds that can't fly but swim like champions!",
+    "output": "Assets\\audio\\educational/edu_penguin_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Penguins live in cold places and keep warm in groups!",
+    "output": "Assets\\audio\\educational/edu_penguin_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Penguin dads keep the eggs warm on their feet!",
+    "output": "Assets\\audio\\educational/edu_penguin_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Penguins can't fly! They use their wings to swim!",
+    "output": "Assets\\audio\\educational/edu_penguin_not_flying.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Penguins are birds! They lay eggs!",
+    "output": "Assets\\audio\\educational/edu_penguin_not_mammal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Penguins look like fish underwater, but they're birds!",
+    "output": "Assets\\audio\\educational/edu_penguin_not_fish.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Bears are big and strong mammals!",
+    "output": "Assets\\audio\\educational/edu_bear_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Some bears sleep all winter! That's called hibernation!",
+    "output": "Assets\\audio\\educational/edu_bear_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Bears love eating honey, fish, and berries!",
+    "output": "Assets\\audio\\educational/edu_bear_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Bears are mammals with fur, not birds with feathers!",
+    "output": "Assets\\audio\\educational/edu_bear_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Bears eat fish but they're not fish! They're mammals!",
+    "output": "Assets\\audio\\educational/edu_bear_not_fish.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Elephants are the biggest land animals!",
+    "output": "Assets\\audio\\educational/edu_elephant_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Elephants use their trunks like hands to grab things!",
+    "output": "Assets\\audio\\educational/edu_elephant_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Elephants are very smart and have great memories!",
+    "output": "Assets\\audio\\educational/edu_elephant_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Elephants are mammals! They can't fly!",
+    "output": "Assets\\audio\\educational/edu_elephant_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Elephants live on land! They're mammals, not fish!",
+    "output": "Assets\\audio\\educational/edu_elephant_not_fish.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Kangaroos hop instead of walk!",
+    "output": "Assets\\audio\\educational/edu_kangaroo_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Baby kangaroos live in their mommy's pouch!",
+    "output": "Assets\\audio\\educational/edu_kangaroo_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Kangaroos can jump very far and very high!",
+    "output": "Assets\\audio\\educational/edu_kangaroo_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Kangaroos are mammals! They have fur and pouches!",
+    "output": "Assets\\audio\\educational/edu_kangaroo_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Kangaroos can't fly! They hop on strong legs!",
+    "output": "Assets\\audio\\educational/edu_kangaroo_not_flying.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Lions are called the king of the jungle!",
+    "output": "Assets\\audio\\educational/edu_lion_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Male lions have big fluffy manes around their faces!",
+    "output": "Assets\\audio\\educational/edu_lion_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Lions live in groups called prides!",
+    "output": "Assets\\audio\\educational/edu_lion_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Lions are big cats! They have fur, not feathers!",
+    "output": "Assets\\audio\\educational/edu_lion_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Lions live on land! They're not fish!",
+    "output": "Assets\\audio\\educational/edu_lion_not_fish.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Tigers have orange fur with black stripes!",
+    "output": "Assets\\audio\\educational/edu_tiger_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Every tiger has unique stripes, like fingerprints!",
+    "output": "Assets\\audio\\educational/edu_tiger_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Tigers are the biggest cats in the world!",
+    "output": "Assets\\audio\\educational/edu_tiger_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Tigers are mammals! Big cats with stripes!",
+    "output": "Assets\\audio\\educational/edu_tiger_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Tigers can swim but they're not fish!",
+    "output": "Assets\\audio\\educational/edu_tiger_not_fish.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ants are tiny but super strong! They can carry things many times their weight!",
+    "output": "Assets\\audio\\educational/edu_ant_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ants live in big groups called colonies!",
+    "output": "Assets\\audio\\educational/edu_ant_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "All insects have six legs, and ants are insects!",
+    "output": "Assets\\audio\\educational/edu_ant_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ants are insects, not birds! They have six legs!",
+    "output": "Assets\\audio\\educational/edu_ant_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Ants are insects! They're very different from mammals!",
+    "output": "Assets\\audio\\educational/edu_ant_not_mammal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Bees make sweet honey!",
+    "output": "Assets\\audio\\educational/edu_bee_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Bees help flowers grow by carrying pollen!",
+    "output": "Assets\\audio\\educational/edu_bee_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Bees do a special dance to tell other bees where food is!",
+    "output": "Assets\\audio\\educational/edu_bee_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Bees are insects! They have six legs and antennae!",
+    "output": "Assets\\audio\\educational/edu_bee_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Bees are tiny insects, not mammals!",
+    "output": "Assets\\audio\\educational/edu_bee_not_mammal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Beetles have hard shell-like wings!",
+    "output": "Assets\\audio\\educational/edu_beetle_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "There are more types of beetles than any other insect!",
+    "output": "Assets\\audio\\educational/edu_beetle_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Beetles can be many colors, even shiny!",
+    "output": "Assets\\audio\\educational/edu_beetle_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Beetles are insects with six legs, not birds!",
+    "output": "Assets\\audio\\educational/edu_beetle_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Beetles are small insects, not mammals!",
+    "output": "Assets\\audio\\educational/edu_beetle_not_mammal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Butterflies start life as caterpillars!",
+    "output": "Assets\\audio\\educational/edu_butterfly_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Butterflies have beautiful colorful wings!",
+    "output": "Assets\\audio\\educational/edu_butterfly_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Butterflies drink nectar from flowers!",
+    "output": "Assets\\audio\\educational/edu_butterfly_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Butterflies are insects! They have six legs, not two!",
+    "output": "Assets\\audio\\educational/edu_butterfly_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Butterflies are insects, not mammals!",
+    "output": "Assets\\audio\\educational/edu_butterfly_not_mammal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Goldfish are popular pets!",
+    "output": "Assets\\audio\\educational/edu_goldfish_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Goldfish can remember things for months!",
+    "output": "Assets\\audio\\educational/edu_goldfish_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Goldfish breathe underwater using gills!",
+    "output": "Assets\\audio\\educational/edu_goldfish_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Goldfish are fish! They breathe in water!",
+    "output": "Assets\\audio\\educational/edu_goldfish_not_mammal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Goldfish swim, they don't fly! They're fish!",
+    "output": "Assets\\audio\\educational/edu_goldfish_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Salmon swim upstream to lay their eggs!",
+    "output": "Assets\\audio\\educational/edu_salmon_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Salmon can live in both rivers and oceans!",
+    "output": "Assets\\audio\\educational/edu_salmon_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Salmon is a healthy food with lots of good oils!",
+    "output": "Assets\\audio\\educational/edu_salmon_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Salmon are fish! They have scales and gills!",
+    "output": "Assets\\audio\\educational/edu_salmon_not_mammal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Salmon swim in water! They're fish, not birds!",
+    "output": "Assets\\audio\\educational/edu_salmon_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Sharks have been around since before the dinosaurs!",
+    "output": "Assets\\audio\\educational/edu_shark_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Sharks can smell blood from very far away!",
+    "output": "Assets\\audio\\educational/edu_shark_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Sharks keep growing new teeth their whole life!",
+    "output": "Assets\\audio\\educational/edu_shark_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Sharks are fish! They breathe with gills!",
+    "output": "Assets\\audio\\educational/edu_shark_not_mammal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Sharks live in the ocean! They're fish, not birds!",
+    "output": "Assets\\audio\\educational/edu_shark_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Tuna are super fast swimmers!",
+    "output": "Assets\\audio\\educational/edu_tuna_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Tuna can weigh as much as a car!",
+    "output": "Assets\\audio\\educational/edu_tuna_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Tuna travel in big groups called schools!",
+    "output": "Assets\\audio\\educational/edu_tuna_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Tuna are fish! They have fins and scales!",
+    "output": "Assets\\audio\\educational/edu_tuna_not_mammal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Tuna swim in the sea! They're fish!",
+    "output": "Assets\\audio\\educational/edu_tuna_not_bird.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Airplanes fly high in the sky!",
+    "output": "Assets\\audio\\educational/edu_airplane_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Airplanes help people travel to faraway places fast!",
+    "output": "Assets\\audio\\educational/edu_airplane_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Airplanes have wings to help them fly!",
+    "output": "Assets\\audio\\educational/edu_airplane_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "An airplane is a machine, not an animal!",
+    "output": "Assets\\audio\\educational/edu_airplane_not_animal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Airplanes are vehicles! They're not alive!",
+    "output": "Assets\\audio\\educational/edu_airplane_not_living.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Bicycles have two wheels!",
+    "output": "Assets\\audio\\educational/edu_bicycle_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "You pedal with your feet to make a bicycle go!",
+    "output": "Assets\\audio\\educational/edu_bicycle_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Riding a bicycle is great exercise!",
+    "output": "Assets\\audio\\educational/edu_bicycle_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "A bicycle is something you ride, not an animal!",
+    "output": "Assets\\audio\\educational/edu_bicycle_not_animal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Bicycles are not alive! They're vehicles!",
+    "output": "Assets\\audio\\educational/edu_bicycle_not_living.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Cars have four wheels and an engine!",
+    "output": "Assets\\audio\\educational/edu_car_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Cars drive on roads and streets!",
+    "output": "Assets\\audio\\educational/edu_car_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Cars help families go places together!",
+    "output": "Assets\\audio\\educational/edu_car_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "A car is a machine, not an animal!",
+    "output": "Assets\\audio\\educational/edu_car_not_animal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Cars are vehicles! They need gas or electricity!",
+    "output": "Assets\\audio\\educational/edu_car_not_living.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Trains run on special tracks called railways!",
+    "output": "Assets\\audio\\educational/edu_train_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Trains can carry many people at once!",
+    "output": "Assets\\audio\\educational/edu_train_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Choo choo! Trains make fun sounds!",
+    "output": "Assets\\audio\\educational/edu_train_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "A train is a vehicle, not an animal!",
+    "output": "Assets\\audio\\educational/edu_train_not_animal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Trains are machines that run on tracks!",
+    "output": "Assets\\audio\\educational/edu_train_not_living.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Dolls are fun toys to play with!",
+    "output": "Assets\\audio\\educational/edu_doll_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "You can dress up dolls in different clothes!",
+    "output": "Assets\\audio\\educational/edu_doll_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Dolls can be your pretend friends!",
+    "output": "Assets\\audio\\educational/edu_doll_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "A doll is a toy, not a real animal or person!",
+    "output": "Assets\\audio\\educational/edu_doll_not_animal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Dolls are toys! They're not alive!",
+    "output": "Assets\\audio\\educational/edu_doll_not_living.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Puzzles are fun brain games!",
+    "output": "Assets\\audio\\educational/edu_puzzle_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "You put puzzle pieces together to make a picture!",
+    "output": "Assets\\audio\\educational/edu_puzzle_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Puzzles help you think and solve problems!",
+    "output": "Assets\\audio\\educational/edu_puzzle_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "A puzzle is a game, not an animal!",
+    "output": "Assets\\audio\\educational/edu_puzzle_not_animal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Puzzles are toys! They're not alive!",
+    "output": "Assets\\audio\\educational/edu_puzzle_not_living.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Robots are machines that can do tasks!",
+    "output": "Assets\\audio\\educational/edu_robot_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Some robots can walk and talk!",
+    "output": "Assets\\audio\\educational/edu_robot_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Robots are powered by electricity or batteries!",
+    "output": "Assets\\audio\\educational/edu_robot_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "A robot is a machine, not an animal!",
+    "output": "Assets\\audio\\educational/edu_robot_not_animal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Robots are built by people! They're not alive!",
+    "output": "Assets\\audio\\educational/edu_robot_not_living.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Teddy bears are soft and cuddly toys!",
+    "output": "Assets\\audio\\educational/edu_teddy_bear_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Teddy bears are named after President Theodore Roosevelt!",
+    "output": "Assets\\audio\\educational/edu_teddy_bear_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Teddy bears are great for hugs!",
+    "output": "Assets\\audio\\educational/edu_teddy_bear_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "A teddy bear is a stuffed toy, not a real bear!",
+    "output": "Assets\\audio\\educational/edu_teddy_bear_not_animal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Teddy bears are toys! They're not alive!",
+    "output": "Assets\\audio\\educational/edu_teddy_bear_not_living.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Daffodils are bright yellow spring flowers!",
+    "output": "Assets\\audio\\educational/edu_daffodil_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Daffodils grow from bulbs in the ground!",
+    "output": "Assets\\audio\\educational/edu_daffodil_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Daffodils are one of the first flowers to bloom in spring!",
+    "output": "Assets\\audio\\educational/edu_daffodil_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "A daffodil is a flower, not an animal!",
+    "output": "Assets\\audio\\educational/edu_daffodil_not_animal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Daisies have white petals and yellow centers!",
+    "output": "Assets\\audio\\educational/edu_daisy_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Daisies grow in fields and gardens!",
+    "output": "Assets\\audio\\educational/edu_daisy_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "You can make daisy chains with these flowers!",
+    "output": "Assets\\audio\\educational/edu_daisy_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "A daisy is a flower, not an animal!",
+    "output": "Assets\\audio\\educational/edu_daisy_not_animal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Oak trees can live for hundreds of years!",
+    "output": "Assets\\audio\\educational/edu_oak_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Acorns come from oak trees!",
+    "output": "Assets\\audio\\educational/edu_oak_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Oak trees give us shade and wood!",
+    "output": "Assets\\audio\\educational/edu_oak_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "An oak is a tree, not an animal!",
+    "output": "Assets\\audio\\educational/edu_oak_not_animal.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Tulsi is also called holy basil!",
+    "output": "Assets\\audio\\educational/edu_tulsi_01.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Tulsi is used in medicine and cooking!",
+    "output": "Assets\\audio\\educational/edu_tulsi_02.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Tulsi leaves smell wonderful!",
+    "output": "Assets\\audio\\educational/edu_tulsi_03.mp3",
+    "category": "educational"
+  },
+  {
+    "text": "Tulsi is a plant, not an animal!",
+    "output": "Assets\\audio\\educational/edu_tulsi_not_animal.mp3",
+    "category": "educational"
+  }
+]

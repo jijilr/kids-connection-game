@@ -1,0 +1,1368 @@
+{
+    "educational_facts": {
+        "allosaurus": {
+            "about": [
+                {
+                    "id": "edu_allosaurus_01",
+                    "text": "Allosaurus was a fierce meat-eating dinosaur! It had sharp claws and teeth!"
+                },
+                {
+                    "id": "edu_allosaurus_02",
+                    "text": "The Allosaurus lived about 150 million years ago!"
+                },
+                {
+                    "id": "edu_allosaurus_03",
+                    "text": "Allosaurus means different lizard! It was a fast hunter!"
+                }
+            ],
+            "not_herbivore": {
+                "id": "edu_allosaurus_not_herb",
+                "text": "Allosaurus is not a plant eater! It had sharp teeth for eating meat!"
+            },
+            "not_marine": {
+                "id": "edu_allosaurus_not_marine",
+                "text": "Allosaurus lived on land, not in the water!"
+            },
+            "not_flying": {
+                "id": "edu_allosaurus_not_fly",
+                "text": "Allosaurus couldn't fly! It walked on two strong legs!"
+            }
+        },
+        "ankylosaurus": {
+            "about": [
+                {
+                    "id": "edu_ankylosaurus_01",
+                    "text": "Ankylosaurus was covered in armor like a tank!"
+                },
+                {
+                    "id": "edu_ankylosaurus_02",
+                    "text": "This dinosaur had a club at the end of its tail for protection!"
+                },
+                {
+                    "id": "edu_ankylosaurus_03",
+                    "text": "Ankylosaurus only ate plants even though it looked tough!"
+                }
+            ],
+            "not_carnivore": {
+                "id": "edu_ankylosaurus_not_carn",
+                "text": "Ankylosaurus didn't eat meat! It was a gentle plant eater!"
+            },
+            "not_marine": {
+                "id": "edu_ankylosaurus_not_marine",
+                "text": "Ankylosaurus lived on land, not in the ocean!"
+            },
+            "not_flying": {
+                "id": "edu_ankylosaurus_not_fly",
+                "text": "Ankylosaurus was too heavy to fly! It stayed on the ground!"
+            }
+        },
+        "archaeopteryx": {
+            "about": [
+                {
+                    "id": "edu_archaeopteryx_01",
+                    "text": "Archaeopteryx had feathers like a bird but teeth like a dinosaur!"
+                },
+                {
+                    "id": "edu_archaeopteryx_02",
+                    "text": "Scientists call Archaeopteryx the first bird!"
+                },
+                {
+                    "id": "edu_archaeopteryx_03",
+                    "text": "Archaeopteryx could probably fly short distances!"
+                }
+            ],
+            "not_herbivore": {
+                "id": "edu_archaeopteryx_not_herb",
+                "text": "Archaeopteryx ate small animals, not plants!"
+            },
+            "not_marine": {
+                "id": "edu_archaeopteryx_not_marine",
+                "text": "Archaeopteryx lived on land and flew in the air, not in water!"
+            }
+        },
+        "brachiosaurus": {
+            "about": [
+                {
+                    "id": "edu_brachiosaurus_01",
+                    "text": "Brachiosaurus was one of the tallest dinosaurs ever!"
+                },
+                {
+                    "id": "edu_brachiosaurus_02",
+                    "text": "This gentle giant could reach leaves at the very top of trees!"
+                },
+                {
+                    "id": "edu_brachiosaurus_03",
+                    "text": "Brachiosaurus was as tall as a four-story building!"
+                }
+            ],
+            "not_carnivore": {
+                "id": "edu_brachiosaurus_not_carn",
+                "text": "Brachiosaurus didn't eat meat! It loved eating leaves from tall trees!"
+            },
+            "not_marine": {
+                "id": "edu_brachiosaurus_not_marine",
+                "text": "Brachiosaurus walked on land! It was too big for the water!"
+            },
+            "not_flying": {
+                "id": "edu_brachiosaurus_not_fly",
+                "text": "Brachiosaurus was way too big and heavy to fly!"
+            }
+        },
+        "ceratosaurus": {
+            "about": [
+                {
+                    "id": "edu_ceratosaurus_01",
+                    "text": "Ceratosaurus had a horn on its nose!"
+                },
+                {
+                    "id": "edu_ceratosaurus_02",
+                    "text": "This meat-eater was a skilled hunter!"
+                },
+                {
+                    "id": "edu_ceratosaurus_03",
+                    "text": "Ceratosaurus means horned lizard!"
+                }
+            ],
+            "not_herbivore": {
+                "id": "edu_ceratosaurus_not_herb",
+                "text": "Ceratosaurus was a meat eater with sharp teeth!"
+            },
+            "not_marine": {
+                "id": "edu_ceratosaurus_not_marine",
+                "text": "Ceratosaurus hunted on land, not in water!"
+            },
+            "not_flying": {
+                "id": "edu_ceratosaurus_not_fly",
+                "text": "Ceratosaurus walked on two legs but couldn't fly!"
+            }
+        },
+        "elasmosaurus": {
+            "about": [
+                {
+                    "id": "edu_elasmosaurus_01",
+                    "text": "Elasmosaurus had the longest neck of any sea creature!"
+                },
+                {
+                    "id": "edu_elasmosaurus_02",
+                    "text": "This marine reptile swam in ancient oceans!"
+                },
+                {
+                    "id": "edu_elasmosaurus_03",
+                    "text": "Elasmosaurus used its long neck to catch fish!"
+                }
+            ],
+            "not_land": {
+                "id": "edu_elasmosaurus_not_land",
+                "text": "Elasmosaurus lived in the ocean, not on land!"
+            },
+            "not_flying": {
+                "id": "edu_elasmosaurus_not_fly",
+                "text": "Elasmosaurus couldn't fly! It swam in the sea!"
+            },
+            "not_herbivore": {
+                "id": "edu_elasmosaurus_not_herb",
+                "text": "Elasmosaurus ate fish and other sea creatures!"
+            }
+        },
+        "giganotosaurus": {
+            "about": [
+                {
+                    "id": "edu_giganotosaurus_01",
+                    "text": "Giganotosaurus was even bigger than T-Rex!"
+                },
+                {
+                    "id": "edu_giganotosaurus_02",
+                    "text": "This giant hunter lived in South America!"
+                },
+                {
+                    "id": "edu_giganotosaurus_03",
+                    "text": "Giganotosaurus means giant southern lizard!"
+                }
+            ],
+            "not_herbivore": {
+                "id": "edu_giganotosaurus_not_herb",
+                "text": "Giganotosaurus was a fierce meat eater!"
+            },
+            "not_marine": {
+                "id": "edu_giganotosaurus_not_marine",
+                "text": "Giganotosaurus lived on land, not in water!"
+            },
+            "not_flying": {
+                "id": "edu_giganotosaurus_not_fly",
+                "text": "This huge dinosaur couldn't fly!"
+            }
+        },
+        "ichthyosaurus": {
+            "about": [
+                {
+                    "id": "edu_ichthyosaurus_01",
+                    "text": "Ichthyosaurus looked like a dolphin but was a reptile!"
+                },
+                {
+                    "id": "edu_ichthyosaurus_02",
+                    "text": "This speedy swimmer lived in ancient seas!"
+                },
+                {
+                    "id": "edu_ichthyosaurus_03",
+                    "text": "Ichthyosaurus means fish lizard!"
+                }
+            ],
+            "not_land": {
+                "id": "edu_ichthyosaurus_not_land",
+                "text": "Ichthyosaurus couldn't walk on land! It only swam!"
+            },
+            "not_flying": {
+                "id": "edu_ichthyosaurus_not_fly",
+                "text": "Ichthyosaurus swam, it didn't fly!"
+            },
+            "not_fish": {
+                "id": "edu_ichthyosaurus_not_fish",
+                "text": "Ichthyosaurus looked like a fish but was actually a reptile!"
+            }
+        },
+        "iguanodon": {
+            "about": [
+                {
+                    "id": "edu_iguanodon_01",
+                    "text": "Iguanodon had spiky thumbs for protection!"
+                },
+                {
+                    "id": "edu_iguanodon_02",
+                    "text": "This plant eater could walk on two or four legs!"
+                },
+                {
+                    "id": "edu_iguanodon_03",
+                    "text": "Iguanodon was one of the first dinosaurs ever discovered!"
+                }
+            ],
+            "not_carnivore": {
+                "id": "edu_iguanodon_not_carn",
+                "text": "Iguanodon only ate plants! It was a herbivore!"
+            },
+            "not_marine": {
+                "id": "edu_iguanodon_not_marine",
+                "text": "Iguanodon lived on land, not in water!"
+            },
+            "not_flying": {
+                "id": "edu_iguanodon_not_fly",
+                "text": "Iguanodon couldn't fly! It stayed on the ground!"
+            }
+        },
+        "kronosaurus": {
+            "about": [
+                {
+                    "id": "edu_kronosaurus_01",
+                    "text": "Kronosaurus was a powerful ocean hunter!"
+                },
+                {
+                    "id": "edu_kronosaurus_02",
+                    "text": "This sea monster had huge jaws and sharp teeth!"
+                },
+                {
+                    "id": "edu_kronosaurus_03",
+                    "text": "Kronosaurus was named after a Greek god!"
+                }
+            ],
+            "not_land": {
+                "id": "edu_kronosaurus_not_land",
+                "text": "Kronosaurus lived in the ocean, not on land!"
+            },
+            "not_flying": {
+                "id": "edu_kronosaurus_not_fly",
+                "text": "Kronosaurus couldn't fly! It was a swimmer!"
+            },
+            "not_herbivore": {
+                "id": "edu_kronosaurus_not_herb",
+                "text": "Kronosaurus was a fierce meat eater!"
+            }
+        },
+        "liopleurodon": {
+            "about": [
+                {
+                    "id": "edu_liopleurodon_01",
+                    "text": "Liopleurodon was one of the biggest ocean predators!"
+                },
+                {
+                    "id": "edu_liopleurodon_02",
+                    "text": "This giant had four flippers for swimming!"
+                },
+                {
+                    "id": "edu_liopleurodon_03",
+                    "text": "Liopleurodon could smell prey from far away!"
+                }
+            ],
+            "not_land": {
+                "id": "edu_liopleurodon_not_land",
+                "text": "Liopleurodon only lived in the ocean!"
+            },
+            "not_flying": {
+                "id": "edu_liopleurodon_not_fly",
+                "text": "Liopleurodon swam in the sea, it couldn't fly!"
+            },
+            "not_herbivore": {
+                "id": "edu_liopleurodon_not_herb",
+                "text": "Liopleurodon ate fish and other sea creatures!"
+            }
+        },
+        "microraptor": {
+            "about": [
+                {
+                    "id": "edu_microraptor_01",
+                    "text": "Microraptor had four wings and could glide!"
+                },
+                {
+                    "id": "edu_microraptor_02",
+                    "text": "This tiny dinosaur was covered in feathers!"
+                },
+                {
+                    "id": "edu_microraptor_03",
+                    "text": "Microraptor was only about the size of a chicken!"
+                }
+            ],
+            "not_herbivore": {
+                "id": "edu_microraptor_not_herb",
+                "text": "Microraptor ate small animals and insects!"
+            },
+            "not_marine": {
+                "id": "edu_microraptor_not_marine",
+                "text": "Microraptor lived in trees, not in water!"
+            }
+        },
+        "mosasaurus": {
+            "about": [
+                {
+                    "id": "edu_mosasaurus_01",
+                    "text": "Mosasaurus was the king of the ancient seas!"
+                },
+                {
+                    "id": "edu_mosasaurus_02",
+                    "text": "This giant lizard swam faster than most fish!"
+                },
+                {
+                    "id": "edu_mosasaurus_03",
+                    "text": "Mosasaurus could swallow sharks whole!"
+                }
+            ],
+            "not_land": {
+                "id": "edu_mosasaurus_not_land",
+                "text": "Mosasaurus only lived in the ocean!"
+            },
+            "not_flying": {
+                "id": "edu_mosasaurus_not_fly",
+                "text": "Mosasaurus couldn't fly! It was a swimmer!"
+            },
+            "not_herbivore": {
+                "id": "edu_mosasaurus_not_herb",
+                "text": "Mosasaurus was a fierce hunter that ate meat!"
+            }
+        },
+        "parasaurolophus": {
+            "about": [
+                {
+                    "id": "edu_parasaurolophus_01",
+                    "text": "Parasaurolophus had a long crest on its head!"
+                },
+                {
+                    "id": "edu_parasaurolophus_02",
+                    "text": "This dinosaur could make loud sounds with its crest!"
+                },
+                {
+                    "id": "edu_parasaurolophus_03",
+                    "text": "Parasaurolophus was a gentle plant eater!"
+                }
+            ],
+            "not_carnivore": {
+                "id": "edu_parasaurolophus_not_carn",
+                "text": "Parasaurolophus didn't eat meat! It loved plants!"
+            },
+            "not_marine": {
+                "id": "edu_parasaurolophus_not_marine",
+                "text": "Parasaurolophus lived on land, not in water!"
+            },
+            "not_flying": {
+                "id": "edu_parasaurolophus_not_fly",
+                "text": "Parasaurolophus couldn't fly! It walked on the ground!"
+            }
+        },
+        "plesiosaurus": {
+            "about": [
+                {
+                    "id": "edu_plesiosaurus_01",
+                    "text": "Plesiosaurus had a very long neck and small head!"
+                },
+                {
+                    "id": "edu_plesiosaurus_02",
+                    "text": "This sea creature used flippers to swim!"
+                },
+                {
+                    "id": "edu_plesiosaurus_03",
+                    "text": "Some people think Plesiosaurus is the Loch Ness Monster!"
+                }
+            ],
+            "not_land": {
+                "id": "edu_plesiosaurus_not_land",
+                "text": "Plesiosaurus lived in the ocean, not on land!"
+            },
+            "not_flying": {
+                "id": "edu_plesiosaurus_not_fly",
+                "text": "Plesiosaurus swam in the sea, it couldn't fly!"
+            },
+            "not_herbivore": {
+                "id": "edu_plesiosaurus_not_herb",
+                "text": "Plesiosaurus ate fish and squid!"
+            }
+        },
+        "pteranodon": {
+            "about": [
+                {
+                    "id": "edu_pteranodon_01",
+                    "text": "Pteranodon had a wingspan as wide as a small airplane!"
+                },
+                {
+                    "id": "edu_pteranodon_02",
+                    "text": "This flying reptile had no teeth!"
+                },
+                {
+                    "id": "edu_pteranodon_03",
+                    "text": "Pteranodon caught fish from the ocean!"
+                }
+            ],
+            "not_land": {
+                "id": "edu_pteranodon_not_land",
+                "text": "Pteranodon flew in the sky! It didn't walk much!"
+            },
+            "not_marine": {
+                "id": "edu_pteranodon_not_marine",
+                "text": "Pteranodon flew over the water but didn't live in it!"
+            },
+            "not_bird": {
+                "id": "edu_pteranodon_not_bird",
+                "text": "Pteranodon looks like a bird but it's actually a reptile!"
+            }
+        },
+        "pterodactyl": {
+            "about": [
+                {
+                    "id": "edu_pterodactyl_01",
+                    "text": "Pterodactyl means winged finger!"
+                },
+                {
+                    "id": "edu_pterodactyl_02",
+                    "text": "This flying reptile had a long crest on its head!"
+                },
+                {
+                    "id": "edu_pterodactyl_03",
+                    "text": "Pterodactyls were some of the first creatures to fly!"
+                }
+            ],
+            "not_bird": {
+                "id": "edu_pterodactyl_not_bird",
+                "text": "Pterodactyl is not a bird! It's a flying reptile!"
+            },
+            "not_marine": {
+                "id": "edu_pterodactyl_not_marine",
+                "text": "Pterodactyl flew in the sky, not in water!"
+            }
+        },
+        "quetzalcoatlus": {
+            "about": [
+                {
+                    "id": "edu_quetzalcoatlus_01",
+                    "text": "Quetzalcoatlus was the biggest flying animal ever!"
+                },
+                {
+                    "id": "edu_quetzalcoatlus_02",
+                    "text": "It was as tall as a giraffe when standing!"
+                },
+                {
+                    "id": "edu_quetzalcoatlus_03",
+                    "text": "This giant could fly long distances!"
+                }
+            ],
+            "not_bird": {
+                "id": "edu_quetzalcoatlus_not_bird",
+                "text": "Quetzalcoatlus was a reptile, not a bird!"
+            },
+            "not_marine": {
+                "id": "edu_quetzalcoatlus_not_marine",
+                "text": "Quetzalcoatlus flew in the air, not in water!"
+            }
+        },
+        "rhamphorhynchus": {
+            "about": [
+                {
+                    "id": "edu_rhamphorhynchus_01",
+                    "text": "Rhamphorhynchus had a long tail with a diamond shape at the end!"
+                },
+                {
+                    "id": "edu_rhamphorhynchus_02",
+                    "text": "This flying reptile had sharp teeth for catching fish!"
+                },
+                {
+                    "id": "edu_rhamphorhynchus_03",
+                    "text": "Rhamphorhynchus was smaller than most pterosaurs!"
+                }
+            ],
+            "not_bird": {
+                "id": "edu_rhamphorhynchus_not_bird",
+                "text": "Rhamphorhynchus is a reptile, not a bird!"
+            },
+            "not_marine": {
+                "id": "edu_rhamphorhynchus_not_marine",
+                "text": "Rhamphorhynchus flew over water but lived on land!"
+            }
+        },
+        "stegosaurus": {
+            "about": [
+                {
+                    "id": "edu_stegosaurus_01",
+                    "text": "Stegosaurus had big plates on its back!"
+                },
+                {
+                    "id": "edu_stegosaurus_02",
+                    "text": "This dinosaur had a tiny brain the size of a walnut!"
+                },
+                {
+                    "id": "edu_stegosaurus_03",
+                    "text": "Stegosaurus used its spiked tail to fight enemies!"
+                }
+            ],
+            "not_carnivore": {
+                "id": "edu_stegosaurus_not_carn",
+                "text": "Stegosaurus was a plant eater! Not a meat eater!"
+            },
+            "not_marine": {
+                "id": "edu_stegosaurus_not_marine",
+                "text": "Stegosaurus lived on land, not in water!"
+            },
+            "not_flying": {
+                "id": "edu_stegosaurus_not_fly",
+                "text": "Stegosaurus was too heavy to fly!"
+            }
+        },
+        "titanoboa": {
+            "about": [
+                {
+                    "id": "edu_titanoboa_01",
+                    "text": "Titanoboa was the biggest snake that ever lived!"
+                },
+                {
+                    "id": "edu_titanoboa_02",
+                    "text": "This giant snake was longer than a school bus!"
+                },
+                {
+                    "id": "edu_titanoboa_03",
+                    "text": "Titanoboa lived in swamps and rivers!"
+                }
+            ],
+            "not_marine": {
+                "id": "edu_titanoboa_not_marine",
+                "text": "Titanoboa lived in rivers, not the ocean!"
+            },
+            "not_flying": {
+                "id": "edu_titanoboa_not_fly",
+                "text": "Snakes can't fly! Titanoboa slithered on land!"
+            }
+        },
+        "trex": {
+            "about": [
+                {
+                    "id": "edu_trex_01",
+                    "text": "T-Rex was the king of the dinosaurs!"
+                },
+                {
+                    "id": "edu_trex_02",
+                    "text": "T-Rex had tiny arms but a huge, powerful jaw!"
+                },
+                {
+                    "id": "edu_trex_03",
+                    "text": "T-Rex could eat 500 pounds of meat in one bite!"
+                },
+                {
+                    "id": "edu_trex_04",
+                    "text": "T-Rex means tyrant lizard king!"
+                }
+            ],
+            "not_herbivore": {
+                "id": "edu_trex_not_herb",
+                "text": "T-Rex was a meat eater with the strongest bite ever!"
+            },
+            "not_marine": {
+                "id": "edu_trex_not_marine",
+                "text": "T-Rex lived on land, not in water!"
+            },
+            "not_flying": {
+                "id": "edu_trex_not_fly",
+                "text": "T-Rex couldn't fly! It walked on two big legs!"
+            }
+        },
+        "triceratops": {
+            "about": [
+                {
+                    "id": "edu_triceratops_01",
+                    "text": "Triceratops had three horns on its face!"
+                },
+                {
+                    "id": "edu_triceratops_02",
+                    "text": "This dinosaur had a big frill to protect its neck!"
+                },
+                {
+                    "id": "edu_triceratops_03",
+                    "text": "Triceratops means three-horned face!"
+                }
+            ],
+            "not_carnivore": {
+                "id": "edu_triceratops_not_carn",
+                "text": "Triceratops only ate plants! It was a herbivore!"
+            },
+            "not_marine": {
+                "id": "edu_triceratops_not_marine",
+                "text": "Triceratops lived on land, not in water!"
+            },
+            "not_flying": {
+                "id": "edu_triceratops_not_fly",
+                "text": "Triceratops was too heavy to fly!"
+            }
+        },
+        "utahraptor": {
+            "about": [
+                {
+                    "id": "edu_utahraptor_01",
+                    "text": "Utahraptor was one of the biggest raptors!"
+                },
+                {
+                    "id": "edu_utahraptor_02",
+                    "text": "This dinosaur had a huge claw on each foot!"
+                },
+                {
+                    "id": "edu_utahraptor_03",
+                    "text": "Utahraptor was smart and hunted in groups!"
+                }
+            ],
+            "not_herbivore": {
+                "id": "edu_utahraptor_not_herb",
+                "text": "Utahraptor was a meat eater! A fierce hunter!"
+            },
+            "not_marine": {
+                "id": "edu_utahraptor_not_marine",
+                "text": "Utahraptor lived on land, not in water!"
+            },
+            "not_flying": {
+                "id": "edu_utahraptor_not_fly",
+                "text": "Utahraptor couldn't fly! It ran very fast instead!"
+            }
+        },
+        "velociraptor": {
+            "about": [
+                {
+                    "id": "edu_velociraptor_01",
+                    "text": "Velociraptor was a super fast and smart dinosaur!"
+                },
+                {
+                    "id": "edu_velociraptor_02",
+                    "text": "This dinosaur was actually covered in feathers!"
+                },
+                {
+                    "id": "edu_velociraptor_03",
+                    "text": "Velociraptor was only about the size of a turkey!"
+                }
+            ],
+            "not_herbivore": {
+                "id": "edu_velociraptor_not_herb",
+                "text": "Velociraptor was a meat eater!"
+            },
+            "not_marine": {
+                "id": "edu_velociraptor_not_marine",
+                "text": "Velociraptor lived on land, not in water!"
+            },
+            "not_flying": {
+                "id": "edu_velociraptor_not_fly",
+                "text": "Velociraptor had feathers but couldn't really fly!"
+            }
+        },
+        "eagle": {
+            "about": [
+                {
+                    "id": "edu_eagle_01",
+                    "text": "Eagles are powerful birds of prey!"
+                },
+                {
+                    "id": "edu_eagle_02",
+                    "text": "Eagles have amazing eyesight! They can see fish from high up!"
+                },
+                {
+                    "id": "edu_eagle_03",
+                    "text": "The bald eagle is a symbol of the United States!"
+                }
+            ],
+            "not_mammal": {
+                "id": "edu_eagle_not_mammal",
+                "text": "Eagles are birds, not mammals! They lay eggs!"
+            },
+            "not_insect": {
+                "id": "edu_eagle_not_insect",
+                "text": "Eagles are birds! They have feathers, not antennae!"
+            }
+        },
+        "ostrich": {
+            "about": [
+                {
+                    "id": "edu_ostrich_01",
+                    "text": "Ostriches are the biggest birds in the world!"
+                },
+                {
+                    "id": "edu_ostrich_02",
+                    "text": "Ostriches can't fly but they can run very fast!"
+                },
+                {
+                    "id": "edu_ostrich_03",
+                    "text": "Ostrich eggs are the biggest eggs of any bird!"
+                }
+            ],
+            "not_flying": {
+                "id": "edu_ostrich_not_flying",
+                "text": "Ostriches can't fly! But they can run really fast!"
+            },
+            "not_mammal": {
+                "id": "edu_ostrich_not_mammal",
+                "text": "Ostriches are birds! They have feathers and lay eggs!"
+            }
+        },
+        "parrot": {
+            "about": [
+                {
+                    "id": "edu_parrot_01",
+                    "text": "Parrots can learn to talk and copy sounds!"
+                },
+                {
+                    "id": "edu_parrot_02",
+                    "text": "Parrots love eating seeds, nuts, and fruit!"
+                },
+                {
+                    "id": "edu_parrot_03",
+                    "text": "Parrots come in many beautiful colors!"
+                }
+            ],
+            "not_mammal": {
+                "id": "edu_parrot_not_mammal",
+                "text": "Parrots are birds! They have feathers and beaks!"
+            },
+            "not_insect": {
+                "id": "edu_parrot_not_insect",
+                "text": "Parrots are birds, not insects!"
+            }
+        },
+        "penguin": {
+            "about": [
+                {
+                    "id": "edu_penguin_01",
+                    "text": "Penguins are birds that can't fly but swim like champions!"
+                },
+                {
+                    "id": "edu_penguin_02",
+                    "text": "Penguins live in cold places and keep warm in groups!"
+                },
+                {
+                    "id": "edu_penguin_03",
+                    "text": "Penguin dads keep the eggs warm on their feet!"
+                }
+            ],
+            "not_flying": {
+                "id": "edu_penguin_not_flying",
+                "text": "Penguins can't fly! They use their wings to swim!"
+            },
+            "not_mammal": {
+                "id": "edu_penguin_not_mammal",
+                "text": "Penguins are birds! They lay eggs!"
+            },
+            "not_fish": {
+                "id": "edu_penguin_not_fish",
+                "text": "Penguins look like fish underwater, but they're birds!"
+            }
+        },
+        "bear": {
+            "about": [
+                {
+                    "id": "edu_bear_01",
+                    "text": "Bears are big and strong mammals!"
+                },
+                {
+                    "id": "edu_bear_02",
+                    "text": "Some bears sleep all winter! That's called hibernation!"
+                },
+                {
+                    "id": "edu_bear_03",
+                    "text": "Bears love eating honey, fish, and berries!"
+                }
+            ],
+            "not_bird": {
+                "id": "edu_bear_not_bird",
+                "text": "Bears are mammals with fur, not birds with feathers!"
+            },
+            "not_fish": {
+                "id": "edu_bear_not_fish",
+                "text": "Bears eat fish but they're not fish! They're mammals!"
+            }
+        },
+        "elephant": {
+            "about": [
+                {
+                    "id": "edu_elephant_01",
+                    "text": "Elephants are the biggest land animals!"
+                },
+                {
+                    "id": "edu_elephant_02",
+                    "text": "Elephants use their trunks like hands to grab things!"
+                },
+                {
+                    "id": "edu_elephant_03",
+                    "text": "Elephants are very smart and have great memories!"
+                }
+            ],
+            "not_bird": {
+                "id": "edu_elephant_not_bird",
+                "text": "Elephants are mammals! They can't fly!"
+            },
+            "not_fish": {
+                "id": "edu_elephant_not_fish",
+                "text": "Elephants live on land! They're mammals, not fish!"
+            }
+        },
+        "kangaroo": {
+            "about": [
+                {
+                    "id": "edu_kangaroo_01",
+                    "text": "Kangaroos hop instead of walk!"
+                },
+                {
+                    "id": "edu_kangaroo_02",
+                    "text": "Baby kangaroos live in their mommy's pouch!"
+                },
+                {
+                    "id": "edu_kangaroo_03",
+                    "text": "Kangaroos can jump very far and very high!"
+                }
+            ],
+            "not_bird": {
+                "id": "edu_kangaroo_not_bird",
+                "text": "Kangaroos are mammals! They have fur and pouches!"
+            },
+            "not_flying": {
+                "id": "edu_kangaroo_not_flying",
+                "text": "Kangaroos can't fly! They hop on strong legs!"
+            }
+        },
+        "lion": {
+            "about": [
+                {
+                    "id": "edu_lion_01",
+                    "text": "Lions are called the king of the jungle!"
+                },
+                {
+                    "id": "edu_lion_02",
+                    "text": "Male lions have big fluffy manes around their faces!"
+                },
+                {
+                    "id": "edu_lion_03",
+                    "text": "Lions live in groups called prides!"
+                }
+            ],
+            "not_bird": {
+                "id": "edu_lion_not_bird",
+                "text": "Lions are big cats! They have fur, not feathers!"
+            },
+            "not_fish": {
+                "id": "edu_lion_not_fish",
+                "text": "Lions live on land! They're not fish!"
+            }
+        },
+        "tiger": {
+            "about": [
+                {
+                    "id": "edu_tiger_01",
+                    "text": "Tigers have orange fur with black stripes!"
+                },
+                {
+                    "id": "edu_tiger_02",
+                    "text": "Every tiger has unique stripes, like fingerprints!"
+                },
+                {
+                    "id": "edu_tiger_03",
+                    "text": "Tigers are the biggest cats in the world!"
+                }
+            ],
+            "not_bird": {
+                "id": "edu_tiger_not_bird",
+                "text": "Tigers are mammals! Big cats with stripes!"
+            },
+            "not_fish": {
+                "id": "edu_tiger_not_fish",
+                "text": "Tigers can swim but they're not fish!"
+            }
+        },
+        "ant": {
+            "about": [
+                {
+                    "id": "edu_ant_01",
+                    "text": "Ants are tiny but super strong! They can carry things many times their weight!"
+                },
+                {
+                    "id": "edu_ant_02",
+                    "text": "Ants live in big groups called colonies!"
+                },
+                {
+                    "id": "edu_ant_03",
+                    "text": "All insects have six legs, and ants are insects!"
+                }
+            ],
+            "not_bird": {
+                "id": "edu_ant_not_bird",
+                "text": "Ants are insects, not birds! They have six legs!"
+            },
+            "not_mammal": {
+                "id": "edu_ant_not_mammal",
+                "text": "Ants are insects! They're very different from mammals!"
+            }
+        },
+        "bee": {
+            "about": [
+                {
+                    "id": "edu_bee_01",
+                    "text": "Bees make sweet honey!"
+                },
+                {
+                    "id": "edu_bee_02",
+                    "text": "Bees help flowers grow by carrying pollen!"
+                },
+                {
+                    "id": "edu_bee_03",
+                    "text": "Bees do a special dance to tell other bees where food is!"
+                }
+            ],
+            "not_bird": {
+                "id": "edu_bee_not_bird",
+                "text": "Bees are insects! They have six legs and antennae!"
+            },
+            "not_mammal": {
+                "id": "edu_bee_not_mammal",
+                "text": "Bees are tiny insects, not mammals!"
+            }
+        },
+        "beetle": {
+            "about": [
+                {
+                    "id": "edu_beetle_01",
+                    "text": "Beetles have hard shell-like wings!"
+                },
+                {
+                    "id": "edu_beetle_02",
+                    "text": "There are more types of beetles than any other insect!"
+                },
+                {
+                    "id": "edu_beetle_03",
+                    "text": "Beetles can be many colors, even shiny!"
+                }
+            ],
+            "not_bird": {
+                "id": "edu_beetle_not_bird",
+                "text": "Beetles are insects with six legs, not birds!"
+            },
+            "not_mammal": {
+                "id": "edu_beetle_not_mammal",
+                "text": "Beetles are small insects, not mammals!"
+            }
+        },
+        "butterfly": {
+            "about": [
+                {
+                    "id": "edu_butterfly_01",
+                    "text": "Butterflies start life as caterpillars!"
+                },
+                {
+                    "id": "edu_butterfly_02",
+                    "text": "Butterflies have beautiful colorful wings!"
+                },
+                {
+                    "id": "edu_butterfly_03",
+                    "text": "Butterflies drink nectar from flowers!"
+                }
+            ],
+            "not_bird": {
+                "id": "edu_butterfly_not_bird",
+                "text": "Butterflies are insects! They have six legs, not two!"
+            },
+            "not_mammal": {
+                "id": "edu_butterfly_not_mammal",
+                "text": "Butterflies are insects, not mammals!"
+            }
+        },
+        "goldfish": {
+            "about": [
+                {
+                    "id": "edu_goldfish_01",
+                    "text": "Goldfish are popular pets!"
+                },
+                {
+                    "id": "edu_goldfish_02",
+                    "text": "Goldfish can remember things for months!"
+                },
+                {
+                    "id": "edu_goldfish_03",
+                    "text": "Goldfish breathe underwater using gills!"
+                }
+            ],
+            "not_mammal": {
+                "id": "edu_goldfish_not_mammal",
+                "text": "Goldfish are fish! They breathe in water!"
+            },
+            "not_bird": {
+                "id": "edu_goldfish_not_bird",
+                "text": "Goldfish swim, they don't fly! They're fish!"
+            }
+        },
+        "salmon": {
+            "about": [
+                {
+                    "id": "edu_salmon_01",
+                    "text": "Salmon swim upstream to lay their eggs!"
+                },
+                {
+                    "id": "edu_salmon_02",
+                    "text": "Salmon can live in both rivers and oceans!"
+                },
+                {
+                    "id": "edu_salmon_03",
+                    "text": "Salmon is a healthy food with lots of good oils!"
+                }
+            ],
+            "not_mammal": {
+                "id": "edu_salmon_not_mammal",
+                "text": "Salmon are fish! They have scales and gills!"
+            },
+            "not_bird": {
+                "id": "edu_salmon_not_bird",
+                "text": "Salmon swim in water! They're fish, not birds!"
+            }
+        },
+        "shark": {
+            "about": [
+                {
+                    "id": "edu_shark_01",
+                    "text": "Sharks have been around since before the dinosaurs!"
+                },
+                {
+                    "id": "edu_shark_02",
+                    "text": "Sharks can smell blood from very far away!"
+                },
+                {
+                    "id": "edu_shark_03",
+                    "text": "Sharks keep growing new teeth their whole life!"
+                }
+            ],
+            "not_mammal": {
+                "id": "edu_shark_not_mammal",
+                "text": "Sharks are fish! They breathe with gills!"
+            },
+            "not_bird": {
+                "id": "edu_shark_not_bird",
+                "text": "Sharks live in the ocean! They're fish, not birds!"
+            }
+        },
+        "tuna": {
+            "about": [
+                {
+                    "id": "edu_tuna_01",
+                    "text": "Tuna are super fast swimmers!"
+                },
+                {
+                    "id": "edu_tuna_02",
+                    "text": "Tuna can weigh as much as a car!"
+                },
+                {
+                    "id": "edu_tuna_03",
+                    "text": "Tuna travel in big groups called schools!"
+                }
+            ],
+            "not_mammal": {
+                "id": "edu_tuna_not_mammal",
+                "text": "Tuna are fish! They have fins and scales!"
+            },
+            "not_bird": {
+                "id": "edu_tuna_not_bird",
+                "text": "Tuna swim in the sea! They're fish!"
+            }
+        },
+        "airplane": {
+            "about": [
+                {
+                    "id": "edu_airplane_01",
+                    "text": "Airplanes fly high in the sky!"
+                },
+                {
+                    "id": "edu_airplane_02",
+                    "text": "Airplanes help people travel to faraway places fast!"
+                },
+                {
+                    "id": "edu_airplane_03",
+                    "text": "Airplanes have wings to help them fly!"
+                }
+            ],
+            "not_animal": {
+                "id": "edu_airplane_not_animal",
+                "text": "An airplane is a machine, not an animal!"
+            },
+            "not_living": {
+                "id": "edu_airplane_not_living",
+                "text": "Airplanes are vehicles! They're not alive!"
+            }
+        },
+        "bicycle": {
+            "about": [
+                {
+                    "id": "edu_bicycle_01",
+                    "text": "Bicycles have two wheels!"
+                },
+                {
+                    "id": "edu_bicycle_02",
+                    "text": "You pedal with your feet to make a bicycle go!"
+                },
+                {
+                    "id": "edu_bicycle_03",
+                    "text": "Riding a bicycle is great exercise!"
+                }
+            ],
+            "not_animal": {
+                "id": "edu_bicycle_not_animal",
+                "text": "A bicycle is something you ride, not an animal!"
+            },
+            "not_living": {
+                "id": "edu_bicycle_not_living",
+                "text": "Bicycles are not alive! They're vehicles!"
+            }
+        },
+        "car": {
+            "about": [
+                {
+                    "id": "edu_car_01",
+                    "text": "Cars have four wheels and an engine!"
+                },
+                {
+                    "id": "edu_car_02",
+                    "text": "Cars drive on roads and streets!"
+                },
+                {
+                    "id": "edu_car_03",
+                    "text": "Cars help families go places together!"
+                }
+            ],
+            "not_animal": {
+                "id": "edu_car_not_animal",
+                "text": "A car is a machine, not an animal!"
+            },
+            "not_living": {
+                "id": "edu_car_not_living",
+                "text": "Cars are vehicles! They need gas or electricity!"
+            }
+        },
+        "train": {
+            "about": [
+                {
+                    "id": "edu_train_01",
+                    "text": "Trains run on special tracks called railways!"
+                },
+                {
+                    "id": "edu_train_02",
+                    "text": "Trains can carry many people at once!"
+                },
+                {
+                    "id": "edu_train_03",
+                    "text": "Choo choo! Trains make fun sounds!"
+                }
+            ],
+            "not_animal": {
+                "id": "edu_train_not_animal",
+                "text": "A train is a vehicle, not an animal!"
+            },
+            "not_living": {
+                "id": "edu_train_not_living",
+                "text": "Trains are machines that run on tracks!"
+            }
+        },
+        "doll": {
+            "about": [
+                {
+                    "id": "edu_doll_01",
+                    "text": "Dolls are fun toys to play with!"
+                },
+                {
+                    "id": "edu_doll_02",
+                    "text": "You can dress up dolls in different clothes!"
+                },
+                {
+                    "id": "edu_doll_03",
+                    "text": "Dolls can be your pretend friends!"
+                }
+            ],
+            "not_animal": {
+                "id": "edu_doll_not_animal",
+                "text": "A doll is a toy, not a real animal or person!"
+            },
+            "not_living": {
+                "id": "edu_doll_not_living",
+                "text": "Dolls are toys! They're not alive!"
+            }
+        },
+        "puzzle": {
+            "about": [
+                {
+                    "id": "edu_puzzle_01",
+                    "text": "Puzzles are fun brain games!"
+                },
+                {
+                    "id": "edu_puzzle_02",
+                    "text": "You put puzzle pieces together to make a picture!"
+                },
+                {
+                    "id": "edu_puzzle_03",
+                    "text": "Puzzles help you think and solve problems!"
+                }
+            ],
+            "not_animal": {
+                "id": "edu_puzzle_not_animal",
+                "text": "A puzzle is a game, not an animal!"
+            },
+            "not_living": {
+                "id": "edu_puzzle_not_living",
+                "text": "Puzzles are toys! They're not alive!"
+            }
+        },
+        "robot": {
+            "about": [
+                {
+                    "id": "edu_robot_01",
+                    "text": "Robots are machines that can do tasks!"
+                },
+                {
+                    "id": "edu_robot_02",
+                    "text": "Some robots can walk and talk!"
+                },
+                {
+                    "id": "edu_robot_03",
+                    "text": "Robots are powered by electricity or batteries!"
+                }
+            ],
+            "not_animal": {
+                "id": "edu_robot_not_animal",
+                "text": "A robot is a machine, not an animal!"
+            },
+            "not_living": {
+                "id": "edu_robot_not_living",
+                "text": "Robots are built by people! They're not alive!"
+            }
+        },
+        "teddy_bear": {
+            "about": [
+                {
+                    "id": "edu_teddy_bear_01",
+                    "text": "Teddy bears are soft and cuddly toys!"
+                },
+                {
+                    "id": "edu_teddy_bear_02",
+                    "text": "Teddy bears are named after President Theodore Roosevelt!"
+                },
+                {
+                    "id": "edu_teddy_bear_03",
+                    "text": "Teddy bears are great for hugs!"
+                }
+            ],
+            "not_animal": {
+                "id": "edu_teddy_bear_not_animal",
+                "text": "A teddy bear is a stuffed toy, not a real bear!"
+            },
+            "not_living": {
+                "id": "edu_teddy_bear_not_living",
+                "text": "Teddy bears are toys! They're not alive!"
+            }
+        },
+        "daffodil": {
+            "about": [
+                {
+                    "id": "edu_daffodil_01",
+                    "text": "Daffodils are bright yellow spring flowers!"
+                },
+                {
+                    "id": "edu_daffodil_02",
+                    "text": "Daffodils grow from bulbs in the ground!"
+                },
+                {
+                    "id": "edu_daffodil_03",
+                    "text": "Daffodils are one of the first flowers to bloom in spring!"
+                }
+            ],
+            "not_animal": {
+                "id": "edu_daffodil_not_animal",
+                "text": "A daffodil is a flower, not an animal!"
+            }
+        },
+        "daisy": {
+            "about": [
+                {
+                    "id": "edu_daisy_01",
+                    "text": "Daisies have white petals and yellow centers!"
+                },
+                {
+                    "id": "edu_daisy_02",
+                    "text": "Daisies grow in fields and gardens!"
+                },
+                {
+                    "id": "edu_daisy_03",
+                    "text": "You can make daisy chains with these flowers!"
+                }
+            ],
+            "not_animal": {
+                "id": "edu_daisy_not_animal",
+                "text": "A daisy is a flower, not an animal!"
+            }
+        },
+        "oak": {
+            "about": [
+                {
+                    "id": "edu_oak_01",
+                    "text": "Oak trees can live for hundreds of years!"
+                },
+                {
+                    "id": "edu_oak_02",
+                    "text": "Acorns come from oak trees!"
+                },
+                {
+                    "id": "edu_oak_03",
+                    "text": "Oak trees give us shade and wood!"
+                }
+            ],
+            "not_animal": {
+                "id": "edu_oak_not_animal",
+                "text": "An oak is a tree, not an animal!"
+            }
+        },
+        "tulsi": {
+            "about": [
+                {
+                    "id": "edu_tulsi_01",
+                    "text": "Tulsi is also called holy basil!"
+                },
+                {
+                    "id": "edu_tulsi_02",
+                    "text": "Tulsi is used in medicine and cooking!"
+                },
+                {
+                    "id": "edu_tulsi_03",
+                    "text": "Tulsi leaves smell wonderful!"
+                }
+            ],
+            "not_animal": {
+                "id": "edu_tulsi_not_animal",
+                "text": "Tulsi is a plant, not an animal!"
+            }
+        }
+    }
+}

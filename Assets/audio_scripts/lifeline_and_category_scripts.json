@@ -1,0 +1,485 @@
+{
+    "lifeline_audio": {
+        "description": "Audio for when lifelines are activated",
+        "files": {
+            "reveal_one": {
+                "folder": "assets/audio/lifelines/",
+                "variants": [
+                    {
+                        "filename": "lifeline_reveal_01.mp3",
+                        "text": "Look for the glowing items! Each one belongs to a different group.",
+                        "voice": "friendly, encouraging"
+                    },
+                    {
+                        "filename": "lifeline_reveal_02.mp3",
+                        "text": "I've highlighted one item from each group. The stars show you a clue!",
+                        "voice": "friendly, helpful"
+                    },
+                    {
+                        "filename": "lifeline_reveal_03.mp3",
+                        "text": "See the shiny ones? Those are your hints! One from each category.",
+                        "voice": "excited, playful"
+                    }
+                ]
+            },
+            "category_hint": {
+                "folder": "assets/audio/lifelines/",
+                "variants": [
+                    {
+                        "filename": "lifeline_hint_01.mp3",
+                        "text": "Here's a clue! Look at the banner to see what group to find.",
+                        "voice": "helpful, encouraging"
+                    },
+                    {
+                        "filename": "lifeline_hint_02.mp3",
+                        "text": "I'll give you a hint! Check the yellow banner for the category name.",
+                        "voice": "friendly, supportive"
+                    },
+                    {
+                        "filename": "lifeline_hint_03.mp3",
+                        "text": "Need some help? Look at the hint above to find the right group!",
+                        "voice": "gentle, encouraging"
+                    }
+                ]
+            },
+            "freeze": {
+                "folder": "assets/audio/lifelines/",
+                "variants": [
+                    {
+                        "filename": "lifeline_freeze_01.mp3",
+                        "text": "Freeze activated! Your next mistake is protected.",
+                        "voice": "cool, confident"
+                    },
+                    {
+                        "filename": "lifeline_freeze_02.mp3",
+                        "text": "Ice shield on! Don't worry, your next wrong guess won't count.",
+                        "voice": "reassuring, playful"
+                    },
+                    {
+                        "filename": "lifeline_freeze_03.mp3",
+                        "text": "You're protected now! Go ahead and take a guess - it's safe!",
+                        "voice": "encouraging, supportive"
+                    }
+                ]
+            },
+            "auto_solve": {
+                "folder": "assets/audio/lifelines/",
+                "variants": [
+                    {
+                        "filename": "lifeline_solve_01.mp3",
+                        "text": "Magic time! Let me solve one group for you!",
+                        "voice": "excited, magical"
+                    },
+                    {
+                        "filename": "lifeline_solve_02.mp3",
+                        "text": "Abracadabra! Watch as I find a matching group!",
+                        "voice": "playful, magical"
+                    },
+                    {
+                        "filename": "lifeline_solve_03.mp3",
+                        "text": "I'll help you out! Here's one group, all solved!",
+                        "voice": "helpful, cheerful"
+                    }
+                ]
+            }
+        }
+    },
+    "new_category_audio": {
+        "description": "Audio announcements for the new tag-based categories from items_classification.json",
+        "note": "These replace/supplement the old sub-category announcements",
+        "files": {
+            "living": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_living_01.mp3",
+                        "text": "Living things! These are all alive or were once alive.",
+                        "voice": "educational, friendly"
+                    },
+                    {
+                        "filename": "cat_living_02.mp3",
+                        "text": "You found all the living things! Great job!",
+                        "voice": "celebratory"
+                    }
+                ]
+            },
+            "nonliving": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_nonliving_01.mp3",
+                        "text": "Non-living things! These were never alive.",
+                        "voice": "educational, friendly"
+                    },
+                    {
+                        "filename": "cat_nonliving_02.mp3",
+                        "text": "Excellent! You found all the things that aren't alive!",
+                        "voice": "celebratory"
+                    }
+                ]
+            },
+            "extinct": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_extinct_01.mp3",
+                        "text": "Extinct animals! These creatures don't exist anymore.",
+                        "voice": "educational, slightly sad"
+                    },
+                    {
+                        "filename": "cat_extinct_02.mp3",
+                        "text": "You found all the extinct ones! They lived millions of years ago.",
+                        "voice": "educational"
+                    }
+                ]
+            },
+            "still_alive": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_stillalive_01.mp3",
+                        "text": "Still alive today! You can see these animals in the world right now!",
+                        "voice": "excited, educational"
+                    },
+                    {
+                        "filename": "cat_stillalive_02.mp3",
+                        "text": "These animals are alive today! Maybe you've even seen some!",
+                        "voice": "friendly, encouraging"
+                    }
+                ]
+            },
+            "flies": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_flies_01.mp3",
+                        "text": "Things that fly! They all have wings and can go up in the sky!",
+                        "voice": "excited, playful"
+                    },
+                    {
+                        "filename": "cat_flies_02.mp3",
+                        "text": "Flying things! Whoooosh! Up, up and away!",
+                        "voice": "fun, energetic"
+                    }
+                ]
+            },
+            "cannot_fly": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_nofly_01.mp3",
+                        "text": "These can't fly! They stay on the ground or in the water.",
+                        "voice": "educational, friendly"
+                    },
+                    {
+                        "filename": "cat_nofly_02.mp3",
+                        "text": "No wings for these! They walk, run, or swim instead.",
+                        "voice": "educational"
+                    }
+                ]
+            },
+            "swims": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_swims_01.mp3",
+                        "text": "Swimmers! Splash splash! These all love the water!",
+                        "voice": "playful, fun"
+                    },
+                    {
+                        "filename": "cat_swims_02.mp3",
+                        "text": "Water creatures! They can all swim and live in the water.",
+                        "voice": "educational, friendly"
+                    }
+                ]
+            },
+            "carnivore": {
+                "folder": "assets/audio/categories/",
+                "note": "Already exists but adding new variants",
+                "variants": [
+                    {
+                        "filename": "cat_meateaters_01.mp3",
+                        "text": "Meat eaters! These animals hunt and eat other animals.",
+                        "voice": "educational, slightly dramatic"
+                    },
+                    {
+                        "filename": "cat_meateaters_02.mp3",
+                        "text": "Carnivores! They have sharp teeth for eating meat!",
+                        "voice": "educational, exciting"
+                    }
+                ]
+            },
+            "herbivore": {
+                "folder": "assets/audio/categories/",
+                "note": "Already exists but adding new variants",
+                "variants": [
+                    {
+                        "filename": "cat_planteaters_01.mp3",
+                        "text": "Plant eaters! These animals only eat plants and leaves.",
+                        "voice": "educational, gentle"
+                    },
+                    {
+                        "filename": "cat_planteaters_02.mp3",
+                        "text": "Herbivores! They munch on grass, leaves, and vegetables!",
+                        "voice": "friendly, educational"
+                    }
+                ]
+            },
+            "land_habitat": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_landanimals_01.mp3",
+                        "text": "Land animals! These all live on solid ground.",
+                        "voice": "educational, friendly"
+                    },
+                    {
+                        "filename": "cat_landanimals_02.mp3",
+                        "text": "On the land! These creatures walk or crawl on the earth.",
+                        "voice": "educational"
+                    }
+                ]
+            },
+            "water_habitat": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_wateranimals_01.mp3",
+                        "text": "Water animals! These all live in the ocean, sea, or rivers.",
+                        "voice": "educational, calm"
+                    },
+                    {
+                        "filename": "cat_wateranimals_02.mp3",
+                        "text": "In the water! Glub glub! These creatures live underwater.",
+                        "voice": "playful, educational"
+                    }
+                ]
+            },
+            "large": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_large_01.mp3",
+                        "text": "Big ones! These are all large animals or things!",
+                        "voice": "impressed, friendly"
+                    },
+                    {
+                        "filename": "cat_large_02.mp3",
+                        "text": "The large group! Wow, these are all really big!",
+                        "voice": "excited"
+                    }
+                ]
+            },
+            "small": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_small_01.mp3",
+                        "text": "Tiny things! These are all small and little!",
+                        "voice": "cute, friendly"
+                    },
+                    {
+                        "filename": "cat_small_02.mp3",
+                        "text": "The small group! Little but mighty!",
+                        "voice": "playful"
+                    }
+                ]
+            },
+            "furry": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_furry_01.mp3",
+                        "text": "Furry animals! So soft and fluffy!",
+                        "voice": "warm, friendly"
+                    },
+                    {
+                        "filename": "cat_furry_02.mp3",
+                        "text": "These all have fur! Nice and warm and cuddly!",
+                        "voice": "cozy, friendly"
+                    }
+                ]
+            },
+            "man_made": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_manmade_01.mp3",
+                        "text": "Made by humans! People built or created all of these!",
+                        "voice": "educational, proud"
+                    },
+                    {
+                        "filename": "cat_manmade_02.mp3",
+                        "text": "Human inventions! These were all made by people!",
+                        "voice": "educational, friendly"
+                    }
+                ]
+            },
+            "natural": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_natural_01.mp3",
+                        "text": "From nature! These all exist naturally in the world!",
+                        "voice": "calm, educational"
+                    },
+                    {
+                        "filename": "cat_natural_02.mp3",
+                        "text": "Natural things! Not made by humans, but by nature!",
+                        "voice": "educational, peaceful"
+                    }
+                ]
+            },
+            "dinosaurs": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_dinosaurs_01.mp3",
+                        "text": "Dinosaurs! Rawr! These giant reptiles lived millions of years ago!",
+                        "voice": "exciting, dramatic"
+                    },
+                    {
+                        "filename": "cat_dinosaurs_02.mp3",
+                        "text": "The dinosaur group! They ruled the Earth long, long ago!",
+                        "voice": "educational, exciting"
+                    }
+                ]
+            },
+            "mammals": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_mammals_01.mp3",
+                        "text": "Mammals! These animals are warm-blooded and have fur!",
+                        "voice": "educational, friendly"
+                    },
+                    {
+                        "filename": "cat_mammals_02.mp3",
+                        "text": "The mammal group! Just like us humans, they're mammals too!",
+                        "voice": "educational, engaging"
+                    }
+                ]
+            },
+            "birds": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_birds_01.mp3",
+                        "text": "Birds! Tweet tweet! They have feathers and beaks!",
+                        "voice": "cheerful, playful"
+                    },
+                    {
+                        "filename": "cat_birds_02.mp3",
+                        "text": "The bird group! They lay eggs and have beautiful feathers!",
+                        "voice": "educational, friendly"
+                    }
+                ]
+            },
+            "fish": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_fish_new_01.mp3",
+                        "text": "Fish! Blub blub! They breathe underwater with gills!",
+                        "voice": "playful, educational"
+                    },
+                    {
+                        "filename": "cat_fish_new_02.mp3",
+                        "text": "The fish group! They swim with fins and live in water!",
+                        "voice": "educational, friendly"
+                    }
+                ]
+            },
+            "insects": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_insects_01.mp3",
+                        "text": "Insects! Tiny creatures with six legs!",
+                        "voice": "educational, curious"
+                    },
+                    {
+                        "filename": "cat_insects_02.mp3",
+                        "text": "The insect group! Buzz buzz! They're small but very important!",
+                        "voice": "educational, playful"
+                    }
+                ]
+            },
+            "plants": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_plants_01.mp3",
+                        "text": "Plants! They grow in the ground and need sunlight!",
+                        "voice": "calm, educational"
+                    },
+                    {
+                        "filename": "cat_plants_02.mp3",
+                        "text": "The plant group! Trees, flowers, and herbs - all plants!",
+                        "voice": "educational, peaceful"
+                    }
+                ]
+            },
+            "toys": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_toys_01.mp3",
+                        "text": "Toys! Fun things to play with!",
+                        "voice": "excited, playful"
+                    },
+                    {
+                        "filename": "cat_toys_02.mp3",
+                        "text": "The toy group! Playtime favorites!",
+                        "voice": "cheerful, fun"
+                    }
+                ]
+            },
+            "transport": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_transport_new_01.mp3",
+                        "text": "Transport! Vroom vroom! These help us travel from place to place!",
+                        "voice": "energetic, fun"
+                    },
+                    {
+                        "filename": "cat_transport_new_02.mp3",
+                        "text": "Things that move us! Cars, planes, trains - all transport!",
+                        "voice": "educational, excited"
+                    }
+                ]
+            },
+            "predators": {
+                "folder": "assets/audio/categories/",
+                "variants": [
+                    {
+                        "filename": "cat_predators_01.mp3",
+                        "text": "Predators! These are the hunters of the animal kingdom!",
+                        "voice": "dramatic, educational"
+                    },
+                    {
+                        "filename": "cat_predators_02.mp3",
+                        "text": "The hunter group! They chase and catch their food!",
+                        "voice": "exciting, educational"
+                    }
+                ]
+            }
+        }
+    },
+    "total_files_needed": {
+        "lifeline_audio": "12 files (4 lifelines × 3 variants each)",
+        "new_category_audio": "~50 files (25 categories × 2 variants each)",
+        "grand_total": "~62 new audio files"
+    },
+    "voice_guidelines": {
+        "tone": "Child-friendly, encouraging, educational",
+        "speed": "Moderate, clear pronunciation",
+        "style": "Like a friendly teacher or game show host",
+        "avoid": "Scary tones, complex words, talking down to kids"
+    },
+    "folder_structure": {
+        "lifelines": "assets/audio/lifelines/",
+        "categories": "assets/audio/categories/ (add to existing)"
+    }
+}
