@@ -214,7 +214,8 @@ class SoundService {
   /// [categoryKey] should be lowercase like 'bigcat', 'bird', 'prehistoric', etc.
   Future<void> playCategory(String categoryKey) async {
     final normalizedKey = _normalizeCategoryKey(categoryKey);
-    final index = _random.nextInt(3) + 1; // cat_xxx_01 to cat_xxx_03 (usually)
+    // Use 1-2 range since some categories only have 2 audio files
+    final index = _random.nextInt(2) + 1; // cat_xxx_01 to cat_xxx_02
     final filename = 'cat_${normalizedKey}_${index.toString().padLeft(2, '0')}.mp3';
     await _enqueue('Assets/audio/categories/$filename');
   }
