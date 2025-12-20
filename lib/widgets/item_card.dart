@@ -15,73 +15,123 @@ class ItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Fun colors for selected state
+    final selectedGradient = const LinearGradient(
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+      colors: [Color(0xFF6C5CE7), Color(0xFFA29BFE)],
+    );
+    
+    final normalGradient = const LinearGradient(
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+      colors: [Colors.white, Color(0xFFF8F9FA)],
+    );
+    
+    final revealedGradient = const LinearGradient(
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+      colors: [Color(0xFFFFE66D), Color(0xFFFFD93D)],
+    );
+
     return GestureDetector(
       onTap: onTap,
       child: AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
+        duration: const Duration(milliseconds: 250),
+        curve: Curves.easeOutBack,
+        transform: item.isSelected 
+            ? (Matrix4.identity()..scale(0.95))
+            : Matrix4.identity(),
         decoration: BoxDecoration(
-          color: item.isSelected ? const Color(0xFF5A5A5A) : const Color(0xFFEFEFEF),
-          borderRadius: BorderRadius.circular(12),
+          gradient: item.isSelected 
+              ? selectedGradient 
+              : isRevealed 
+                  ? revealedGradient 
+                  : normalGradient,
+          borderRadius: BorderRadius.circular(16),
           boxShadow: [
-            if (!item.isSelected && !isRevealed)
-              BoxShadow(
-                color: Colors.black.withOpacity(0.1),
-                blurRadius: 4,
-                offset: const Offset(0, 2),
-              ),
-            // Glowing effect for revealed items
-            if (isRevealed)
-              BoxShadow(
-                color: Colors.amber.withOpacity(0.6),
-                blurRadius: 12,
-                spreadRadius: 2,
-              ),
-            if (isRevealed)
-              BoxShadow(
-                color: Colors.amber.withOpacity(0.3),
-                blurRadius: 20,
-                spreadRadius: 4,
-              ),
+            BoxShadow(
+              color: item.isSelected 
+                  ? const Color(0xFF6C5CE7).withOpacity(0.4)
+                  : isRevealed
+                      ? const Color(0xFFFFD93D).withOpacity(0.5)
+                      : Colors.black.withOpacity(0.08),
+              blurRadius: item.isSelected || isRevealed ? 12 : 6,
+              offset: const Offset(0, 4),
+              spreadRadius: item.isSelected || isRevealed ? 2 : 0,
+            ),
           ],
-          border: item.isSelected
-              ? Border.all(color: Colors.white, width: 2)
-              : isRevealed
-                  ? Border.all(color: Colors.amber, width: 3)
-                  : null,
+          border: Border.all(
+            color: item.isSelected 
+                ? Colors.white.withOpacity(0.5)
+                : isRevealed
+                    ? const Color(0xFFFF9F43)
+                    : Colors.grey.withOpacity(0.1),
+            width: item.isSelected || isRevealed ? 3 : 1,
+          ),
         ),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(14),
           child: Stack(
             fit: StackFit.expand,
             children: [
-              // Image fills the entire card
+              // Image with nice padding
               Padding(
-                padding: const EdgeInsets.all(6),
+                padding: const EdgeInsets.all(8),
                 child: Image.asset(
                   item.imagePath,
-                  fit: BoxFit.contain, // Contain to show full image
+                  fit: BoxFit.contain,
                   errorBuilder: (context, error, stackTrace) {
-                    return const Center(
-                      child: Icon(Icons.image_not_supported, size: 32, color: Colors.grey),
+                    return Center(
+                      child: Icon(
+                        Icons.image_not_supported_rounded,
+                        size: 32,
+                        color: Colors.grey.shade400,
+                      ),
                     );
                   },
                 ),
               ),
-              // Sparkle indicator for revealed items
+              // Sparkle overlay for revealed items
               if (isRevealed)
                 Positioned(
                   top: 4,
                   right: 4,
                   child: Container(
-                    padding: const EdgeInsets.all(3),
+                    padding: const EdgeInsets.all(4),
                     decoration: BoxDecoration(
-                      color: Colors.amber,
-                      borderRadius: BorderRadius.circular(8),
+                      color: const Color(0xFFFF6B6B),
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color(0xFFFF6B6B).withOpacity(0.5),
+                          blurRadius: 8,
+                          spreadRadius: 1,
+                        ),
+                      ],
                     ),
                     child: const Icon(
-                      Icons.star,
-                      size: 12,
+                      Icons.auto_awesome,
+                      size: 14,
                       color: Colors.white,
+                    ),
+                  ),
+                ),
+              // Selection checkmark
+              if (item.isSelected)
+                Positioned(
+                  bottom: 4,
+                  right: 4,
+                  child: Container(
+                    padding: const EdgeInsets.all(4),
+                    decoration: const BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.circle,
+                    ),
+                    child: const Icon(
+                      Icons.check_rounded,
+                      size: 16,
+                      color: Color(0xFF6C5CE7),
                     ),
                   ),
                 ),

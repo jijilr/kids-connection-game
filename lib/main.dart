@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:provider/provider.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'providers/game_provider.dart';
@@ -7,6 +6,41 @@ import 'screens/game_screen.dart';
 
 void main() {
   runApp(const ConnectionsGameApp());
+}
+
+// Fun, child-friendly color palette
+class AppColors {
+  // Primary gradient colors
+  static const Color primaryPink = Color(0xFFFF6B9D);
+  static const Color primaryPurple = Color(0xFF9B6DFF);
+  static const Color primaryBlue = Color(0xFF4ECDC4);
+  static const Color primaryYellow = Color(0xFFFFE66D);
+  static const Color primaryOrange = Color(0xFFFF8C42);
+  
+  // Background colors
+  static const Color backgroundStart = Color(0xFFE8F5FF);
+  static const Color backgroundEnd = Color(0xFFFFF0F5);
+  
+  // Card colors
+  static const Color cardBackground = Colors.white;
+  static const Color cardSelected = Color(0xFF6C5CE7);
+  
+  // Text colors
+  static const Color textPrimary = Color(0xFF2D3436);
+  static const Color textLight = Colors.white;
+  
+  // Playful gradients
+  static const LinearGradient funGradient = LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [primaryPink, primaryPurple, primaryBlue],
+  );
+  
+  static const LinearGradient sunshineGradient = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [Color(0xFFFFF9E6), Color(0xFFFFE8F0)],
+  );
 }
 
 class ConnectionsGameApp extends StatelessWidget {
@@ -22,9 +56,17 @@ class ConnectionsGameApp extends StatelessWidget {
         title: 'Connections Game',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primarySwatch: Colors.blue,
-          textTheme: GoogleFonts.interTextTheme(),
+          primaryColor: AppColors.primaryPurple,
+          scaffoldBackgroundColor: AppColors.backgroundStart,
+          textTheme: GoogleFonts.quicksandTextTheme().apply(
+            bodyColor: AppColors.textPrimary,
+            displayColor: AppColors.textPrimary,
+          ),
           useMaterial3: true,
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: AppColors.primaryPurple,
+            brightness: Brightness.light,
+          ),
         ),
         home: const ResponsiveWrapper(child: GameScreen()),
       ),
@@ -32,17 +74,12 @@ class ConnectionsGameApp extends StatelessWidget {
   }
 }
 
-/// A smart wrapper that adapts to different screen sizes
-/// - Mobile: Full screen
-/// - Tablet: Centered with max width
-/// - Desktop/Web: Centered with max width and decorations
+/// A smart wrapper that adapts to different screen sizes with fun styling
 class ResponsiveWrapper extends StatelessWidget {
   final Widget child;
   
-  // Breakpoints
   static const double mobileMaxWidth = 600.0;
-  static const double tabletMaxWidth = 900.0;
-  static const double contentMaxWidth = 500.0; // Max width for game content
+  static const double contentMaxWidth = 480.0;
   
   const ResponsiveWrapper({Key? key, required this.child}) : super(key: key);
 
@@ -53,49 +90,49 @@ class ResponsiveWrapper extends StatelessWidget {
         final screenWidth = constraints.maxWidth;
         final screenHeight = constraints.maxHeight;
         
-        // Mobile: Use full width
+        // Mobile: Use full width with gradient background
         if (screenWidth <= mobileMaxWidth) {
-          return child;
+          return Container(
+            decoration: const BoxDecoration(
+              gradient: AppColors.sunshineGradient,
+            ),
+            child: child,
+          );
         }
         
-        // Tablet/Desktop: Center with max width
-        // Calculate optimal width based on screen size
+        // Larger screens: Center with playful frame
         double optimalWidth = contentMaxWidth;
-        
-        // On very wide screens, allow slightly wider
-        if (screenWidth > tabletMaxWidth) {
-          optimalWidth = (screenWidth * 0.4).clamp(contentMaxWidth, 600.0);
+        if (screenWidth > 900) {
+          optimalWidth = (screenWidth * 0.4).clamp(contentMaxWidth, 550.0);
         }
         
-        // Landscape mode on tablets: use more space
-        if (screenWidth > screenHeight && screenWidth <= tabletMaxWidth) {
-          optimalWidth = (screenWidth * 0.6).clamp(400.0, 600.0);
-        }
-        
-        return Scaffold(
-          backgroundColor: const Color(0xFF1a1a2e), // Dark background
-          body: Center(
+        return Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Color(0xFF667eea),
+                Color(0xFF764ba2),
+                Color(0xFFf093fb),
+              ],
+            ),
+          ),
+          child: Center(
             child: Container(
               width: optimalWidth,
-              constraints: BoxConstraints(
-                maxHeight: screenHeight,
-              ),
+              constraints: BoxConstraints(maxHeight: screenHeight * 0.95),
+              margin: const EdgeInsets.symmetric(vertical: 20),
               decoration: BoxDecoration(
-                color: Colors.white,
+                gradient: AppColors.sunshineGradient,
+                borderRadius: BorderRadius.circular(30),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.3),
+                    color: Colors.black.withOpacity(0.2),
                     blurRadius: 30,
                     spreadRadius: 5,
                   ),
                 ],
-                // Rounded corners on larger screens
-                borderRadius: screenHeight > 700 
-                    ? const BorderRadius.vertical(
-                        top: Radius.circular(20),
-                        bottom: Radius.circular(20),
-                      )
-                    : null,
               ),
               clipBehavior: Clip.antiAlias,
               child: child,
