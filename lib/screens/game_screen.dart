@@ -64,10 +64,8 @@ class _GameScreenState extends State<GameScreen> {
       final groupToSolve = game.getNextUnsolvedGroup();
       if (groupToSolve == null) break;
       
-      // Play "finding" narration at the start of each group
-      _soundService.playSolveFinding();
-      await _soundService.waitForCurrentAudio();
-      await Future.delayed(const Duration(milliseconds: 300));
+      // Small pause before starting to select items
+      await Future.delayed(const Duration(milliseconds: 500));
       
       // SELECT ITEMS ONE BY ONE (like a human) - synchronized with audio
       for (int j = 0; j < groupToSolve.items.length; j++) {
