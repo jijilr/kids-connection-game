@@ -104,11 +104,20 @@ class SoundService {
     });
   }
   
-  /// Play an asset - audioplayers handles platform differences internally
+  /// Play an asset with platform-specific handling
+  /// On web: use UrlSource with direct path (audioplayers AssetSource adds extra 'assets/' prefix)
+  /// On native: use AssetSource which works correctly
   Future<void> _playAsset(String assetPath) async {
-    // AssetSource works for all platforms including web
-    // The audioplayers package handles the platform-specific asset loading
-    return _player.play(AssetSource(assetPath));
+    if (kIsWeb) {
+      // On web, Flutter assets are served from /assets/ folder
+      // AssetSource on web incorrectly adds another 'assets/' prefix
+      // So we use UrlSource with the correct direct path
+      final webPath = 'assets/$assetPath';
+      return _player.play(UrlSource(webPath));
+    } else {
+      // On native platforms, AssetSource works correctly
+      return _player.play(AssetSource(assetPath));
+    }
   }
 
   /// Clear the queue and stop current audio
