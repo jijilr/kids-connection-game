@@ -41,7 +41,6 @@ class _GameScreenState extends State<GameScreen> {
   }
 
 
-
   /// Animate solving all remaining groups one by one - HUMAN PACE
   Future<void> _animatedSolveAll(GameProvider game) async {
     if (_isSolvingAll) return;
@@ -53,9 +52,9 @@ class _GameScreenState extends State<GameScreen> {
     
     // Play initial "Let me help you" audio
     _soundService.playAutoSolve();
-    
-    // Wait for the intro sound
-    await Future.delayed(const Duration(milliseconds: 3000));
+    // Wait for the intro sound to finish
+    await _soundService.waitForCurrentAudio();
+    await Future.delayed(const Duration(milliseconds: 500)); // Small pause after intro
     
     // Solve each group with human-like pacing
     for (int i = 0; i < groupsToSolve; i++) {
@@ -66,11 +65,11 @@ class _GameScreenState extends State<GameScreen> {
       if (groupToSolve == null) break;
       
       // Play "finding" narration at the start of each group
-      // "Let's look for the dinosaurs...", "Can you see the pattern?"
       _soundService.playSolveFinding();
-      await Future.delayed(const Duration(milliseconds: 2000));
+      await _soundService.waitForCurrentAudio();
+      await Future.delayed(const Duration(milliseconds: 300));
       
-      // SELECT ITEMS ONE BY ONE (like a human)
+      // SELECT ITEMS ONE BY ONE (like a human) - synchronized with audio
       for (int j = 0; j < groupToSolve.items.length; j++) {
         if (!mounted) break;
         
@@ -82,34 +81,38 @@ class _GameScreenState extends State<GameScreen> {
           orElse: () => item,
         );
         
-        // Play item name and select it
-        _soundService.playItemName(item.name);
+        // Select the item first (visual)
         game.toggleSelection(currentItem);
         
-        // Wait between selections (human thinking time)
-        await Future.delayed(const Duration(milliseconds: 1200));
+        // Play item name and WAIT for it to finish
+        _soundService.playItemName(item.name);
+        await _soundService.waitForCurrentAudio();
+        
+        // Small pause between items for visual clarity
+        await Future.delayed(const Duration(milliseconds: 400));
       }
       
       // Play confirmation before submitting
-      // "Yes! These belong together!", "That's right, let's submit!"
       _soundService.playSolveConfirm();
-      await Future.delayed(const Duration(milliseconds: 2000));
+      await _soundService.waitForCurrentAudio();
+      await Future.delayed(const Duration(milliseconds: 300));
       
       // Now solve this group
       final solvedGroup = game.solveNextGroup();
       if (solvedGroup != null) {
-        // Just announce the category (no "Great job!" since computer solved it)
-        await Future.delayed(const Duration(milliseconds: 500));
+        // Short pause, then announce the category
+        await Future.delayed(const Duration(milliseconds: 300));
         _soundService.playCategory(solvedGroup.displayName);
+        await _soundService.waitForCurrentAudio();
         
         // Wait before moving to next group
-        await Future.delayed(const Duration(milliseconds: 2500));
+        await Future.delayed(const Duration(milliseconds: 800));
       }
     }
     
     // Victory!
     if (game.isVictory) {
-      await Future.delayed(const Duration(milliseconds: 1200));
+      await Future.delayed(const Duration(milliseconds: 500));
       _soundService.playVictory();
     }
     

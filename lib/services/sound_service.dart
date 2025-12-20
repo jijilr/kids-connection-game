@@ -124,6 +124,25 @@ class SoundService {
   void clearQueue() {
     _audioQueue.clear();
   }
+  
+  /// Wait for the current audio to complete (if any is playing)
+  /// Returns immediately if no audio is playing
+  Future<void> waitForCurrentAudio() async {
+    if (_isPlaying && _currentPlayCompleter != null) {
+      await _currentPlayCompleter!.future;
+    }
+  }
+  
+  /// Wait for all queued audio to complete
+  Future<void> waitForAllAudio() async {
+    while (_isPlaying || _audioQueue.isNotEmpty) {
+      if (_currentPlayCompleter != null) {
+        await _currentPlayCompleter!.future;
+      }
+      // Small delay to allow queue processing
+      await Future.delayed(const Duration(milliseconds: 50));
+    }
+  }
 
   // ============ FEEDBACK SOUNDS ============
   
