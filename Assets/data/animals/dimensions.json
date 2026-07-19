@@ -1,0 +1,31 @@
+{
+  "category": {
+    "type": "intrinsic",
+    "question": "What kind of animal is it?",
+    "values": {
+      "dinosaur": "Dinosaurs",
+      "mammal": "Mammals",
+      "bird": "Birds",
+      "fish": "Fish",
+      "insect": "Insects",
+      "reptile": "Reptiles"
+    }
+  },
+  "diet": {
+    "type": "intrinsic",
+    "question": "What does it eat?",
+    "values": {
+      "carnivore": "Meat-eaters",
+      "herbivore": "Plant-eaters",
+      "omnivore": "Eats both"
+    }
+  },
+  "habitat": {
+    "type": "intrinsic",
+    "question": "Where does it live?",
+    "values": {
+      "land": "On land",
+      "water": "In water"
+    }
+  }
+}

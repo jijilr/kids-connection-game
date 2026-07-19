@@ -1,0 +1,937 @@
+{
+  "entities": [
+    {
+      "id": "allosaurus",
+      "name": "Allosaurus",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "habitat:land",
+        "has_legs",
+        "reptile"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "ankylosaurus",
+      "name": "Ankylosaurus",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:herbivore",
+        "habitat:land",
+        "has_legs",
+        "reptile",
+        "armored"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "ant",
+      "name": "Ant",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:insect",
+        "has_legs",
+        "small",
+        "habitat:land",
+        "social"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "archaeopteryx",
+      "name": "Archaeopteryx",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "flies",
+        "has_feathers",
+        "bird_like"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "bear",
+      "name": "Bear",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:mammal",
+        "diet:omnivore",
+        "habitat:land",
+        "has_legs",
+        "furry",
+        "large"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "bee",
+      "name": "Bee",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:insect",
+        "flies",
+        "small",
+        "makes_honey",
+        "has_stripes"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "beetle",
+      "name": "Beetle",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:insect",
+        "has_legs",
+        "small",
+        "has_shell"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "brachiosaurus",
+      "name": "Brachiosaurus",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:herbivore",
+        "habitat:land",
+        "has_legs",
+        "reptile",
+        "large",
+        "long_neck"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "butterfly",
+      "name": "Butterfly",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:insect",
+        "flies",
+        "small",
+        "colorful",
+        "has_wings"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "ceratosaurus",
+      "name": "Ceratosaurus",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "habitat:land",
+        "has_legs",
+        "reptile",
+        "has_horns"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "eagle",
+      "name": "Eagle",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:bird",
+        "flies",
+        "diet:carnivore",
+        "has_feathers",
+        "has_beak",
+        "bird_of_prey"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "elasmosaurus",
+      "name": "Elasmosaurus",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "habitat:water",
+        "reptile",
+        "long_neck",
+        "swims"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "elephant",
+      "name": "Elephant",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:mammal",
+        "diet:herbivore",
+        "habitat:land",
+        "has_legs",
+        "large",
+        "has_trunk",
+        "gray"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "giganotosaurus",
+      "name": "Giganotosaurus",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "habitat:land",
+        "has_legs",
+        "reptile",
+        "large"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "goldfish",
+      "name": "Goldfish",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:fish",
+        "habitat:water",
+        "swims",
+        "small",
+        "pet",
+        "orange"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "ichthyosaurus",
+      "name": "Ichthyosaurus",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "habitat:water",
+        "reptile",
+        "swims"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "iguanodon",
+      "name": "Iguanodon",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:herbivore",
+        "habitat:land",
+        "has_legs",
+        "reptile"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "kangaroo",
+      "name": "Kangaroo",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:mammal",
+        "diet:herbivore",
+        "habitat:land",
+        "has_legs",
+        "furry",
+        "jumps",
+        "has_pouch",
+        "australian"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "kronosaurus",
+      "name": "Kronosaurus",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "habitat:water",
+        "reptile",
+        "swims",
+        "large"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "lion",
+      "name": "Lion",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:mammal",
+        "diet:carnivore",
+        "habitat:land",
+        "has_legs",
+        "furry",
+        "large",
+        "big_cat",
+        "has_mane"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "liopleurodon",
+      "name": "Liopleurodon",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "habitat:water",
+        "reptile",
+        "swims"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "microraptor",
+      "name": "Microraptor",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "flies",
+        "has_feathers",
+        "small"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "mosasaurus",
+      "name": "Mosasaurus",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "habitat:water",
+        "reptile",
+        "swims",
+        "large"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "ostrich",
+      "name": "Ostrich",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:bird",
+        "flightless",
+        "has_feathers",
+        "has_beak",
+        "has_legs",
+        "large",
+        "runs_fast"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "parasaurolophus",
+      "name": "Parasaurolophus",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:herbivore",
+        "habitat:land",
+        "has_legs",
+        "reptile",
+        "has_crest"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "parrot",
+      "name": "Parrot",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:bird",
+        "flies",
+        "has_feathers",
+        "has_beak",
+        "colorful",
+        "can_talk",
+        "tropical"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "penguin",
+      "name": "Penguin",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:bird",
+        "flightless",
+        "swims",
+        "has_feathers",
+        "has_beak",
+        "black_white",
+        "cold_climate"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "plesiosaurus",
+      "name": "Plesiosaurus",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "habitat:water",
+        "reptile",
+        "swims",
+        "long_neck"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "pteranodon",
+      "name": "Pteranodon",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "flies",
+        "reptile",
+        "has_crest"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "pterodactyl",
+      "name": "Pterodactyl",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "flies",
+        "reptile"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "quetzalcoatlus",
+      "name": "Quetzalcoatlus",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "flies",
+        "reptile",
+        "large"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "rhamphorhynchus",
+      "name": "Rhamphorhynchus",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "flies",
+        "reptile",
+        "has_tail"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "salmon",
+      "name": "Salmon",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:fish",
+        "habitat:water",
+        "swims",
+        "edible",
+        "pink"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "shark",
+      "name": "Shark",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:fish",
+        "habitat:water",
+        "swims",
+        "diet:carnivore",
+        "large",
+        "has_fins",
+        "predator"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "stegosaurus",
+      "name": "Stegosaurus",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:herbivore",
+        "habitat:land",
+        "has_legs",
+        "reptile",
+        "has_plates",
+        "has_spikes"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "tiger",
+      "name": "Tiger",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:mammal",
+        "diet:carnivore",
+        "habitat:land",
+        "has_legs",
+        "furry",
+        "large",
+        "big_cat",
+        "has_stripes",
+        "orange"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "titanoboa",
+      "name": "Titanoboa",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:reptile",
+        "era:prehistoric",
+        "diet:carnivore",
+        "habitat:land",
+        "snake",
+        "large",
+        "no_legs"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "trex",
+      "name": "T-Rex",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "habitat:land",
+        "has_legs",
+        "reptile",
+        "large",
+        "small_arms",
+        "predator"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "triceratops",
+      "name": "Triceratops",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:herbivore",
+        "habitat:land",
+        "has_legs",
+        "reptile",
+        "has_horns",
+        "has_frill"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "tuna",
+      "name": "Tuna",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "category:fish",
+        "habitat:water",
+        "swims",
+        "large",
+        "edible"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "utahraptor",
+      "name": "Utahraptor",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "habitat:land",
+        "has_legs",
+        "reptile",
+        "has_claws"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    },
+    {
+      "id": "velociraptor",
+      "name": "Velociraptor",
+      "domain": "animals",
+      "tags": [
+        "living",
+        "natural",
+        "extinct",
+        "category:dinosaur",
+        "era:prehistoric",
+        "diet:carnivore",
+        "habitat:land",
+        "has_legs",
+        "reptile",
+        "has_claws",
+        "small",
+        "fast"
+      ],
+      "facts": [],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "human:migrated",
+        "tags": "human:migrated"
+      }
+    }
+  ]
+}
