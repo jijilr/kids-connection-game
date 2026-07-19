@@ -27,5 +27,15 @@
       "land": "On land",
       "water": "In water"
     }
+  },
+  "dino_kind": {
+    "type": "intrinsic",
+    "question": "What kind of dinosaur is it?",
+    "values": {
+      "flyer": "Flyers",
+      "swimmer": "Swimmers",
+      "land_hunter": "Land hunters",
+      "land_grazer": "Land grazers"
+    }
   }
 }

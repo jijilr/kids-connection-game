@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'providers/game_provider.dart';
-import 'screens/game_screen.dart';
+import 'providers/engine_provider.dart';
+import 'screens/engine_screen.dart';
 
 void main() {
   runApp(const ConnectionsGameApp());
@@ -50,7 +50,7 @@ class ConnectionsGameApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => GameProvider()),
+        ChangeNotifierProvider(create: (_) => EngineProvider()..init()),
       ],
       child: MaterialApp(
         title: 'Connections Game',
@@ -68,7 +68,7 @@ class ConnectionsGameApp extends StatelessWidget {
             brightness: Brightness.light,
           ),
         ),
-        home: const ResponsiveWrapper(child: GameScreen()),
+        home: const ResponsiveWrapper(child: EngineScreen()),
       ),
     );
   }

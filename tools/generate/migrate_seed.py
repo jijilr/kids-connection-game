@@ -35,20 +35,44 @@ def flatten(tags: dict) -> list[str]:
     return res
 
 
+def add_dino_kind(tags: list[str]) -> None:
+    """Materialize a 4-valued 'dino_kind' compound (locomotion x diet) for dinosaurs so
+    P1 can demonstrate descent (Animals -> Dinosaurs -> kinds -> back). Derived, not
+    invented — provenance stamped 'derived:compound'."""
+    if "category:dinosaur" not in tags:
+        return
+    if "flies" in tags:
+        kind = "flyer"
+    elif "swims" in tags or "habitat:water" in tags:
+        kind = "swimmer"
+    elif "diet:carnivore" in tags:
+        kind = "land_hunter"
+    elif "diet:herbivore" in tags:
+        kind = "land_grazer"
+    else:
+        return
+    tags.append(f"dino_kind:{kind}")
+
+
 def main() -> None:
     data = json.loads(SRC.read_text(encoding="utf-8"))
     entities = []
     for it in data["items"]:
         if it["tags"].get("category") not in ANIMAL_CATEGORIES:
             continue
+        tags = flatten(it["tags"])
+        add_dino_kind(tags)
+        prov = {"entity": "human:migrated", "tags": "human:migrated"}
+        if any(t.startswith("dino_kind:") for t in tags):
+            prov["dino_kind"] = "derived:compound"
         entities.append({
             "id": it["id"],
             "name": it["name"],
             "domain": "animals",
-            "tags": flatten(it["tags"]),
+            "tags": tags,
             "facts": [],
             "recognizability": 0.6,  # placeholder; DeepSeek scores properly in P2
-            "provenance": {"entity": "human:migrated", "tags": "human:migrated"},
+            "provenance": prov,
         })
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({"entities": entities}, indent=2) + "\n", encoding="utf-8")

@@ -13,13 +13,15 @@
         "diet:carnivore",
         "habitat:land",
         "has_legs",
-        "reptile"
+        "reptile",
+        "dino_kind:land_hunter"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -36,13 +38,15 @@
         "habitat:land",
         "has_legs",
         "reptile",
-        "armored"
+        "armored",
+        "dino_kind:land_grazer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -78,13 +82,15 @@
         "diet:carnivore",
         "flies",
         "has_feathers",
-        "bird_like"
+        "bird_like",
+        "dino_kind:flyer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -162,13 +168,15 @@
         "has_legs",
         "reptile",
         "large",
-        "long_neck"
+        "long_neck",
+        "dino_kind:land_grazer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -205,13 +213,15 @@
         "habitat:land",
         "has_legs",
         "reptile",
-        "has_horns"
+        "has_horns",
+        "dino_kind:land_hunter"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -249,13 +259,15 @@
         "habitat:water",
         "reptile",
         "long_neck",
-        "swims"
+        "swims",
+        "dino_kind:swimmer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -294,13 +306,15 @@
         "habitat:land",
         "has_legs",
         "reptile",
-        "large"
+        "large",
+        "dino_kind:land_hunter"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -337,13 +351,15 @@
         "diet:carnivore",
         "habitat:water",
         "reptile",
-        "swims"
+        "swims",
+        "dino_kind:swimmer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -359,13 +375,15 @@
         "diet:herbivore",
         "habitat:land",
         "has_legs",
-        "reptile"
+        "reptile",
+        "dino_kind:land_grazer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -405,13 +423,15 @@
         "habitat:water",
         "reptile",
         "swims",
-        "large"
+        "large",
+        "dino_kind:swimmer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -450,13 +470,15 @@
         "diet:carnivore",
         "habitat:water",
         "reptile",
-        "swims"
+        "swims",
+        "dino_kind:swimmer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -472,13 +494,15 @@
         "diet:carnivore",
         "flies",
         "has_feathers",
-        "small"
+        "small",
+        "dino_kind:flyer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -495,13 +519,15 @@
         "habitat:water",
         "reptile",
         "swims",
-        "large"
+        "large",
+        "dino_kind:swimmer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -540,13 +566,15 @@
         "habitat:land",
         "has_legs",
         "reptile",
-        "has_crest"
+        "has_crest",
+        "dino_kind:land_grazer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -607,13 +635,15 @@
         "habitat:water",
         "reptile",
         "swims",
-        "long_neck"
+        "long_neck",
+        "dino_kind:swimmer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -629,13 +659,15 @@
         "diet:carnivore",
         "flies",
         "reptile",
-        "has_crest"
+        "has_crest",
+        "dino_kind:flyer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -650,13 +682,15 @@
         "era:prehistoric",
         "diet:carnivore",
         "flies",
-        "reptile"
+        "reptile",
+        "dino_kind:flyer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -672,13 +706,15 @@
         "diet:carnivore",
         "flies",
         "reptile",
-        "large"
+        "large",
+        "dino_kind:flyer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -694,13 +730,15 @@
         "diet:carnivore",
         "flies",
         "reptile",
-        "has_tail"
+        "has_tail",
+        "dino_kind:flyer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -760,13 +798,15 @@
         "has_legs",
         "reptile",
         "has_plates",
-        "has_spikes"
+        "has_spikes",
+        "dino_kind:land_grazer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -832,13 +872,15 @@
         "reptile",
         "large",
         "small_arms",
-        "predator"
+        "predator",
+        "dino_kind:land_hunter"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -856,13 +898,15 @@
         "has_legs",
         "reptile",
         "has_horns",
-        "has_frill"
+        "has_frill",
+        "dino_kind:land_grazer"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -899,13 +943,15 @@
         "habitat:land",
         "has_legs",
         "reptile",
-        "has_claws"
+        "has_claws",
+        "dino_kind:land_hunter"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     },
     {
@@ -924,13 +970,15 @@
         "reptile",
         "has_claws",
         "small",
-        "fast"
+        "fast",
+        "dino_kind:land_hunter"
       ],
       "facts": [],
       "recognizability": 0.6,
       "provenance": {
         "entity": "human:migrated",
-        "tags": "human:migrated"
+        "tags": "human:migrated",
+        "dino_kind": "derived:compound"
       }
     }
   ]
