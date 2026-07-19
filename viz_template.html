@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taxonomic Tree — Epistemological Classification Engine</title>
+<style>
+  :root {
+    --bg: #0f0f1a;
+    --panel: #1a1a2e;
+    --card: #16213e;
+    --text: #e0e0e0;
+    --muted: #8892b0;
+    --accent: #6c5ce7;
+    --accent2: #a29bfe;
+    --border: #2a2a4a;
+    --hover: #252545;
+    --success: #27ae60;
+    --danger: #e74c3c;
+    --warn: #f39c12;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+  }
+
+  /* ── LEFT PANEL: TREE ── */
+  #tree-panel {
+    width: 320px;
+    min-width: 280px;
+    background: var(--panel);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 20px 16px;
+    gap: 8px;
+  }
+  #tree-panel h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent2);
+    margin-bottom: 8px;
+  }
+  #tree-panel .subtitle {
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+  .tree-node {
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+    position: relative;
+    margin-left: 0;
+  }
+  .tree-node:hover { background: var(--hover); border-color: var(--border); }
+  .tree-node.active {
+    background: linear-gradient(135deg, rgba(108,92,231,0.2), rgba(162,155,254,0.1));
+    border-color: var(--accent);
+  }
+  .tree-node .label {
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .tree-node .hint {
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .tree-node.depth-0 { margin-left: 0; }
+  .tree-node.depth-1 { margin-left: 20px; }
+  .tree-node.depth-2 { margin-left: 40px; }
+  .tree-node.depth-3 { margin-left: 60px; }
+  .tree-node.depth-4 { margin-left: 80px; }
+  .tree-node.depth-5 { margin-left: 100px; }
+  .tree-connector {
+    width: 2px;
+    height: 12px;
+    margin-left: 30px;
+    background: var(--border);
+  }
+  .parallel-label {
+    font-size: 10px;
+    color: var(--warn);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 12px 0 4px 0;
+    padding-left: 4px;
+  }
+  .parallel-branch {
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    border: 1px dashed var(--border);
+    transition: all 0.2s;
+    margin-left: 20px;
+    margin-bottom: 4px;
+  }
+  .parallel-branch:hover {
+    background: rgba(243,156,18,0.1);
+    border-color: var(--warn);
+  }
+
+  /* ── MAIN AREA ── */
+  #main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* TOP BAR */
+  #topbar {
+    padding: 16px 24px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  #topbar .domain-name {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--accent2);
+    margin-right: auto;
+  }
+  #topbar .stats {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* DIMENSION TABS */
+  #dim-tabs {
+    display: flex;
+    gap: 6px;
+    padding: 12px 24px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+  }
+  #dim-tabs button {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  #dim-tabs button:hover { border-color: var(--accent); color: var(--text); }
+  #dim-tabs button.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+
+  /* QUESTION BAR */
+  #question-bar {
+    padding: 12px 24px;
+    background: linear-gradient(90deg, rgba(108,92,231,0.1), transparent);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent2);
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* GRID */
+  #grid-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+  }
+  .item-card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 16px;
+    border: 2px solid transparent;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+  .item-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+  .item-card.dimmed { opacity: 0.3; transform: scale(0.95); }
+  .item-card .emoji-icon {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 8px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  }
+  .item-card .item-name {
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  .item-card .item-funfact {
+    font-size: 11px;
+    color: var(--muted);
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    flex: 1;
+  }
+  .item-card .item-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: center;
+  }
+  .item-card .tag-chip {
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.08);
+    color: var(--muted);
+  }
+  .item-card .tag-chip.highlight {
+    font-weight: 700;
+  }
+
+  /* GROUP SEPARATOR */
+  .group-header {
+    grid-column: 1 / -1;
+    padding: 8px 20px;
+    margin-top: 8px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .group-header .count {
+    font-size: 12px;
+    opacity: 0.8;
+  }
+
+  /* LEGEND */
+  #legend {
+    display: flex;
+    gap: 16px;
+    padding: 12px 24px;
+    background: var(--panel);
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+  }
+
+  /* Animations */
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .item-card { animation: slideIn 0.3s ease-out both; }
+</style>
+</head>
+<body>
+
+<!-- LEFT PANEL: TAXONOMIC TREE -->
+<div id="tree-panel">
+  <h2>🧬 Taxonomy Tree</h2>
+  <div class="subtitle" id="tree-domain">Domain: prehistoric_life</div>
+  <div id="tree-content"></div>
+</div>
+
+<!-- MAIN AREA -->
+<div id="main">
+  <!-- TOP BAR -->
+  <div id="topbar">
+    <span class="domain-name">🦕 Prehistoric Life</span>
+    <span class="stats" id="item-count">24 creatures</span>
+  </div>
+
+  <!-- DIMENSION TABS -->
+  <div id="dim-tabs"></div>
+
+  <!-- QUESTION -->
+  <div id="question-bar"></div>
+
+  <!-- ITEM GRID -->
+  <div id="grid-container">
+    <div id="grid"></div>
+  </div>
+
+  <!-- LEGEND -->
+  <div id="legend"></div>
+</div>
+
+<script>
+// ─── DATA (generated by DeepSeek) ───
+const DATA = <TAXONOMIC_DATA_PLACEHOLDER>;
+
+const items = DATA.items;
+const dimensions = DATA.dimensions;
+const domain = DATA.domain;
+
+// Build lookup: dimensionKey -> { valueTag -> { displayName, color } }
+const dimLookup = {};
+for (const dim of dimensions) {
+  dimLookup[dim.key] = dim;
+}
+
+// Dino emojis for visual variety
+const EMJOIS = ["🦖","🦕","🐊","🦈","🐢","🦎","🦅","🐘","🐅","🌿","🪲","🦋","🐠","🦴","🐉","🦇","🌴","🐍","🦭","🐬","🦏","🐪","🦩","🌵"];
+
+// ─── STATE ───
+let activeDimIdx = 0;
+let activeDim = dimensions[0];
+let activeTreePath = [];  // current depth path
+
+// ─── RENDER TREE ───
+function renderTree() {
+  const container = document.getElementById("tree-content");
+  
+  // Build a hierarchical tree based on the first 3 dimensions
+  const treeDef = {
+    name: "All Creatures",
+    depth: 0,
+    children: []
+  };
+
+  // Use category dimension for the first split
+  const catDim = dimensions.find(d => d.key === "category");
+  const dietDim = dimensions.find(d => d.key === "diet");
+  const eraDim = dimensions.find(d => d.key === "era");
+
+  if (catDim) {
+    for (const [val, info] of Object.entries(catDim.values)) {
+      const catItems = items.filter(i => i.tags.includes(val));
+      if (catItems.length === 0) continue;
+
+      const dietChildren = [];
+      if (dietDim) {
+        for (const [dVal, dInfo] of Object.entries(dietDim.values)) {
+          const dietItems = catItems.filter(i => i.tags.includes(dVal));
+          if (dietItems.length === 0) continue;
+
+          const eraChildren = [];
+          if (eraDim) {
+            for (const [eVal, eInfo] of Object.entries(eraDim.values)) {
+              const eraItems = dietItems.filter(i => i.tags.includes(eVal));
+              if (eraItems.length > 0) {
+                eraChildren.push({
+                  name: eInfo.displayName,
+                  depth: 3,
+                  count: eraItems.length,
+                  color: eInfo.color,
+                  dimKey: eraDim.key,
+                  dimVal: eVal
+                });
+              }
+            }
+          }
+
+          dietChildren.push({
+            name: dInfo.displayName,
+            depth: 2,
+            count: dietItems.length,
+            color: dInfo.color,
+            dimKey: dietDim.key,
+            dimVal: dVal,
+            children: eraChildren
+          });
+        }
+      }
+
+      treeDef.children.push({
+        name: info.displayName,
+        depth: 1,
+        count: catItems.length,
+        color: info.color,
+        dimKey: catDim.key,
+        dimVal: val,
+        children: dietChildren
+      });
+    }
+  }
+
+  let html = '';
+  
+  // Root node
+  html += `<div class="tree-node depth-0 active" onclick="resetTree()">
+    <div class="label">🌍 ${treeDef.name}</div>
+    <div class="hint">${items.length} items · ${dimensions.length} dimensions</div>
+  </div>`;
+
+  // Render children recursively
+  function renderChildren(nodes, depth) {
+    for (const node of nodes) {
+      html += `<div class="tree-connector" style="margin-left:${depth*20+30}px"></div>`;
+      const isActive = activeTreePath.length > depth-1 && 
+                       activeTreePath[depth-1]?.dimVal === node.dimVal;
+      html += `<div class="tree-node depth-${depth} ${isActive ? 'active' : ''}" 
+                    onclick="navigateTree('${node.dimKey}', '${node.dimVal}', ${depth})"
+                    style="border-left: 3px solid ${node.color || 'var(--border)'}">
+        <div class="label">${node.name}</div>
+        <div class="hint">${node.count} items</div>
+      </div>`;
+      
+      if (node.children && isActive) {
+        renderChildren(node.children, depth + 1);
+        
+        // Show parallel dimensions at this depth
+        if (depth >= 1 && node.children.length > 0) {
+          const otherDims = dimensions.filter(d => d.key !== node.dimKey);
+          html += `<div class="parallel-label">🔄 Parallel paths:</div>`;
+          for (const pd of otherDims.slice(0, 3)) {
+            const vals = Object.entries(pd.values).slice(0, 2);
+            html += `<div class="parallel-branch" onclick="switchDimension('${pd.key}')">
+              Group by: ${pd.displayName} (${vals.map(v => v[1].displayName).join(' vs ')})...
+            </div>`;
+          }
+        }
+      }
+    }
+  }
+
+  renderChildren(treeDef.children, 1);
+  container.innerHTML = html;
+}
+
+function navigateTree(dimKey, dimVal, depth) {
+  activeTreePath = activeTreePath.slice(0, depth);
+  activeTreePath.push({ dimKey, dimVal, depth });
+  
+  // Switch active dimension and filter
+  const dimIdx = dimensions.findIndex(d => d.key === dimKey);
+  if (dimIdx >= 0) switchDimension(dimKey);
+  
+  renderTree();
+}
+
+function resetTree() {
+  activeTreePath = [];
+  switchDimension(dimensions[0].key);
+  renderTree();
+}
+
+function switchDimension(dimKey) {
+  const idx = dimensions.findIndex(d => d.key === dimKey);
+  if (idx < 0) return;
+  activeDimIdx = idx;
+  activeDim = dimensions[idx];
+  renderAll();
+}
+
+// ─── RENDER DIMENSION TABS ───
+function renderTabs() {
+  const container = document.getElementById("dim-tabs");
+  container.innerHTML = dimensions.map((d, i) => 
+    `<button class="${i === activeDimIdx ? 'active' : ''}" 
+             onclick="switchDimension('${d.key}')">
+       ${d.displayName}
+     </button>`
+  ).join("");
+}
+
+// ─── RENDER QUESTION ───
+function renderQuestion() {
+  document.getElementById("question-bar").textContent = 
+    `❓ ${activeDim.question}`;
+}
+
+// ─── RENDER GRID ───
+function renderGrid() {
+  const container = document.getElementById("grid");
+  const values = activeDim.values;
+  const valKeys = Object.keys(values);
+  
+  // Group items by their value for the active dimension
+  const groups = {};
+  valKeys.forEach(vk => { groups[vk] = []; });
+  groups["_other"] = [];
+  
+  items.forEach(item => {
+    let found = false;
+    for (const vk of valKeys) {
+      if (item.tags.includes(vk)) {
+        groups[vk].push(item);
+        found = true;
+        break;
+      }
+    }
+    if (!found) groups["_other"].push(item);
+  });
+
+  let html = '';
+  
+  // Render groups
+  valKeys.forEach(vk => {
+    const group = groups[vk];
+    if (group.length === 0) return;
+    const info = values[vk];
+    
+    html += `<div class="group-header" style="background:${info.color}22;color:${info.color};border-left:4px solid ${info.color}">
+      ${info.displayName} <span class="count">(${group.length} items)</span>
+    </div>`;
+    
+    group.forEach((item, idx) => {
+      const emoji = EMJOIS[parseInt(item.id.replace('item_','')) % EMJOIS.length] || "🦕";
+      const dimTags = [activeDim.key];
+      
+      html += `<div class="item-card" style="animation-delay:${idx * 0.05}s;border-color:${info.color}44">
+        <div class="emoji-icon">${emoji}</div>
+        <div class="item-name">${item.name}</div>
+        <div class="item-funfact">${item.funFact}</div>
+        <div class="item-tags">
+          ${item.tags.map(t => {
+            const isTag = valKeys.includes(t);
+            return `<span class="tag-chip ${isTag ? 'highlight' : ''}" 
+                         style="${isTag ? `background:${info.color}33;color:${info.color};font-weight:700` : ''}">
+              ${t}
+            </span>`;
+          }).join("")}
+        </div>
+      </div>`;
+    });
+  });
+
+  // Other items
+  if (groups["_other"].length > 0) {
+    html += `<div class="group-header" style="background:#555;color:#999">
+      Uncategorized <span class="count">(${groups["_other"].length} items)</span>
+    </div>`;
+    groups["_other"].forEach(item => {
+      html += `<div class="item-card dimmed">
+        <div class="emoji-icon">❓</div>
+        <div class="item-name">${item.name}</div>
+        <div class="item-funfact">${item.funFact}</div>
+        <div class="item-tags">${item.tags.map(t => `<span class="tag-chip">${t}</span>`).join("")}</div>
+      </div>`;
+    });
+  }
+  
+  container.innerHTML = html;
+}
+
+// ─── RENDER LEGEND ───
+function renderLegend() {
+  const container = document.getElementById("legend");
+  container.innerHTML = Object.entries(activeDim.values).map(([k, v]) => 
+    `<div class="legend-item">
+      <div class="legend-dot" style="background:${v.color}"></div>
+      <span>${v.displayName}</span>
+    </div>`
+  ).join("");
+}
+
+// ─── UPDATE STATS ───
+function updateStats() {
+  document.getElementById("item-count").textContent = 
+    `${items.length} creatures · ${dimensions.length} dimensions`;
+  document.getElementById("tree-domain").textContent = 
+    `Domain: ${domain}`;
+}
+
+// ─── RENDER ALL ───
+function renderAll() {
+  renderTabs();
+  renderQuestion();
+  renderGrid();
+  renderLegend();
+  updateStats();
+}
+
+// ─── INIT ───
+renderTree();
+renderAll();
+
+// Keyboard shortcuts
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight" && activeDimIdx < dimensions.length - 1) {
+    switchDimension(dimensions[activeDimIdx + 1].key);
+  } else if (e.key === "ArrowLeft" && activeDimIdx > 0) {
+    switchDimension(dimensions[activeDimIdx - 1].key);
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,516 @@
+{
+  "domain": "prehistoric_life",
+  "items": [
+    {
+      "id": "item_01",
+      "name": "T-Rex",
+      "imagePrompt": "Cute cartoon T-Rex, large head, tiny arms, sharp teeth, flat vector art, bright colors, white background, for children",
+      "funFact": "T-Rex had teeth as long as bananas and could eat up to 500 pounds of meat in one bite!",
+      "tags": [
+        "carnivore",
+        "extinct",
+        "cretaceous",
+        "land",
+        "large",
+        "bipedal",
+        "dinosaur"
+      ]
+    },
+    {
+      "id": "item_02",
+      "name": "Triceratops",
+      "imagePrompt": "Cute cartoon Triceratops, three horns on head, frill, flat vector art, bright colors, white background, for children",
+      "funFact": "Triceratops had three horns and a bony frill to protect its neck from predators like T-Rex.",
+      "tags": [
+        "herbivore",
+        "extinct",
+        "cretaceous",
+        "land",
+        "large",
+        "quadrupedal",
+        "dinosaur"
+      ]
+    },
+    {
+      "id": "item_03",
+      "name": "Stegosaurus",
+      "imagePrompt": "Cute cartoon Stegosaurus, plates on back, spiked tail, flat vector art, bright colors, white background, for children",
+      "funFact": "Stegosaurus had a brain the size of a walnut, but its spiked tail could swing with great force!",
+      "tags": [
+        "herbivore",
+        "extinct",
+        "jurassic",
+        "land",
+        "large",
+        "quadrupedal",
+        "dinosaur"
+      ]
+    },
+    {
+      "id": "item_04",
+      "name": "Pteranodon",
+      "imagePrompt": "Cute cartoon Pteranodon, large crest on head, long wings, flat vector art, bright colors, white background, for children",
+      "funFact": "Pteranodon was a flying reptile with a wingspan as wide as a small airplane, but it had no teeth!",
+      "tags": [
+        "carnivore",
+        "extinct",
+        "cretaceous",
+        "air",
+        "large",
+        "flying",
+        "pterosaur"
+      ]
+    },
+    {
+      "id": "item_05",
+      "name": "Plesiosaurus",
+      "imagePrompt": "Cute cartoon Plesiosaurus, long neck, flippers, flat vector art, bright colors, white background, for children",
+      "funFact": "Plesiosaurus swam using four flippers like paddles, and some people think it might be the Loch Ness Monster!",
+      "tags": [
+        "carnivore",
+        "extinct",
+        "jurassic",
+        "water",
+        "large",
+        "swimming",
+        "marine_reptile"
+      ]
+    },
+    {
+      "id": "item_06",
+      "name": "Velociraptor",
+      "imagePrompt": "Cute cartoon Velociraptor, feathered, claw on foot, flat vector art, bright colors, white background, for children",
+      "funFact": "Velociraptor was actually about the size of a turkey and covered in feathers, not scaly skin!",
+      "tags": [
+        "carnivore",
+        "extinct",
+        "cretaceous",
+        "land",
+        "small",
+        "bipedal",
+        "dinosaur"
+      ]
+    },
+    {
+      "id": "item_07",
+      "name": "Brachiosaurus",
+      "imagePrompt": "Cute cartoon Brachiosaurus, very long neck, tall body, flat vector art, bright colors, white background, for children",
+      "funFact": "Brachiosaurus could reach heights of 40 feet tall, letting it munch on treetops like a giant giraffe!",
+      "tags": [
+        "herbivore",
+        "extinct",
+        "jurassic",
+        "land",
+        "large",
+        "quadrupedal",
+        "dinosaur"
+      ]
+    },
+    {
+      "id": "item_08",
+      "name": "Ichthyosaurus",
+      "imagePrompt": "Cute cartoon Ichthyosaurus, dolphin-like body, fins, flat vector art, bright colors, white background, for children",
+      "funFact": "Ichthyosaurus looked like a dolphin but was a reptile, and it gave birth to live young in the water.",
+      "tags": [
+        "carnivore",
+        "extinct",
+        "triassic",
+        "water",
+        "medium",
+        "swimming",
+        "marine_reptile"
+      ]
+    },
+    {
+      "id": "item_09",
+      "name": "Ankylosaurus",
+      "imagePrompt": "Cute cartoon Ankylosaurus, armored body, club tail, flat vector art, bright colors, white background, for children",
+      "funFact": "Ankylosaurus had a club on its tail that could smash bones, and its body was covered in bony armor!",
+      "tags": [
+        "herbivore",
+        "extinct",
+        "cretaceous",
+        "land",
+        "large",
+        "quadrupedal",
+        "dinosaur"
+      ]
+    },
+    {
+      "id": "item_10",
+      "name": "Archaeopteryx",
+      "imagePrompt": "Cute cartoon Archaeopteryx, feathered wings, claws, flat vector art, bright colors, white background, for children",
+      "funFact": "Archaeopteryx is the missing link between dinosaurs and birds, with feathers and teeth!",
+      "tags": [
+        "carnivore",
+        "extinct",
+        "jurassic",
+        "air",
+        "small",
+        "flying",
+        "dinosaur"
+      ]
+    },
+    {
+      "id": "item_11",
+      "name": "Mosasaurus",
+      "imagePrompt": "Cute cartoon Mosasaurus, long body, flippers, sharp teeth, flat vector art, bright colors, white background, for children",
+      "funFact": "Mosasaurus was a giant marine lizard that could grow longer than a school bus and ate fish and sharks!",
+      "tags": [
+        "carnivore",
+        "extinct",
+        "cretaceous",
+        "water",
+        "large",
+        "swimming",
+        "marine_reptile"
+      ]
+    },
+    {
+      "id": "item_12",
+      "name": "Diplodocus",
+      "imagePrompt": "Cute cartoon Diplodocus, extremely long neck and tail, flat vector art, bright colors, white background, for children",
+      "funFact": "Diplodocus had a tail so long it could crack like a whip, making a loud sound to scare predators!",
+      "tags": [
+        "herbivore",
+        "extinct",
+        "jurassic",
+        "land",
+        "large",
+        "quadrupedal",
+        "dinosaur"
+      ]
+    },
+    {
+      "id": "item_13",
+      "name": "Pterodactylus",
+      "imagePrompt": "Cute cartoon Pterodactylus, pointed beak, wings, flat vector art, bright colors, white background, for children",
+      "funFact": "Pterodactylus was a small flying reptile that ate fish and insects, and its name means 'wing finger'.",
+      "tags": [
+        "carnivore",
+        "extinct",
+        "jurassic",
+        "air",
+        "small",
+        "flying",
+        "pterosaur"
+      ]
+    },
+    {
+      "id": "item_14",
+      "name": "Crocodile",
+      "imagePrompt": "Cute cartoon crocodile, long snout, scaly skin, flat vector art, bright colors, white background, for children",
+      "funFact": "Crocodiles are living dinosaurs' cousins and have been around for over 200 million years!",
+      "tags": [
+        "carnivore",
+        "alive_today",
+        "modern",
+        "water",
+        "large",
+        "quadrupedal",
+        "dinosaur"
+      ]
+    },
+    {
+      "id": "item_15",
+      "name": "Shark",
+      "imagePrompt": "Cute cartoon shark, dorsal fin, sharp teeth, flat vector art, bright colors, white background, for children",
+      "funFact": "Sharks have been swimming in the oceans for over 400 million years, even before dinosaurs!",
+      "tags": [
+        "carnivore",
+        "alive_today",
+        "modern",
+        "water",
+        "large",
+        "swimming",
+        "marine_reptile"
+      ]
+    },
+    {
+      "id": "item_16",
+      "name": "Dimetrodon",
+      "imagePrompt": "Cute cartoon Dimetrodon, sail on back, lizard-like body, flat vector art, bright colors, white background, for children",
+      "funFact": "Dimetrodon was not a dinosaur but a mammal-like reptile with a sail to warm up in the sun!",
+      "tags": [
+        "carnivore",
+        "extinct",
+        "triassic",
+        "land",
+        "medium",
+        "quadrupedal",
+        "early_mammal"
+      ]
+    },
+    {
+      "id": "item_17",
+      "name": "Mammoth",
+      "imagePrompt": "Cute cartoon mammoth, long curved tusks, furry body, flat vector art, bright colors, white background, for children",
+      "funFact": "Mammoths had thick fur and tusks that could be 15 feet long, and they lived during the Ice Age!",
+      "tags": [
+        "herbivore",
+        "extinct",
+        "modern",
+        "land",
+        "large",
+        "quadrupedal",
+        "early_mammal"
+      ]
+    },
+    {
+      "id": "item_18",
+      "name": "Saber-Toothed Tiger",
+      "imagePrompt": "Cute cartoon saber-toothed tiger, long fangs, muscular body, flat vector art, bright colors, white background, for children",
+      "funFact": "Saber-toothed tigers had canine teeth up to 7 inches long, perfect for stabbing prey!",
+      "tags": [
+        "carnivore",
+        "extinct",
+        "modern",
+        "land",
+        "medium",
+        "quadrupedal",
+        "early_mammal"
+      ]
+    },
+    {
+      "id": "item_19",
+      "name": "Dragonfly (Meganeura)",
+      "imagePrompt": "Cute cartoon giant dragonfly, large wings, big eyes, flat vector art, bright colors, white background, for children",
+      "funFact": "Meganeura was a giant dragonfly with a wingspan of 2.5 feet, as big as a pigeon!",
+      "tags": [
+        "carnivore",
+        "extinct",
+        "triassic",
+        "air",
+        "small",
+        "flying",
+        "insect"
+      ]
+    },
+    {
+      "id": "item_20",
+      "name": "Ginkgo Tree",
+      "imagePrompt": "Cute cartoon ginkgo tree, fan-shaped leaves, trunk, flat vector art, bright colors, white background, for children",
+      "funFact": "Ginkgo trees have been around since the time of dinosaurs and are still alive today!",
+      "tags": [
+        "herbivore",
+        "alive_today",
+        "modern",
+        "land",
+        "large",
+        "quadrupedal",
+        "plant"
+      ]
+    },
+    {
+      "id": "item_21",
+      "name": "Turtle",
+      "imagePrompt": "Cute cartoon turtle, shell, flippers, flat vector art, bright colors, white background, for children",
+      "funFact": "Turtles have been on Earth for over 200 million years, and some can live for more than 100 years!",
+      "tags": [
+        "omnivore",
+        "alive_today",
+        "modern",
+        "water",
+        "medium",
+        "swimming",
+        "marine_reptile"
+      ]
+    },
+    {
+      "id": "item_22",
+      "name": "Lizard",
+      "imagePrompt": "Cute cartoon lizard, four legs, long tail, flat vector art, bright colors, white background, for children",
+      "funFact": "Lizards are modern relatives of dinosaurs and can regrow their tails if they lose them!",
+      "tags": [
+        "carnivore",
+        "alive_today",
+        "modern",
+        "land",
+        "small",
+        "quadrupedal",
+        "dinosaur"
+      ]
+    },
+    {
+      "id": "item_23",
+      "name": "Coelacanth",
+      "imagePrompt": "Cute cartoon coelacanth, lobed fins, blue scales, flat vector art, bright colors, white background, for children",
+      "funFact": "Coelacanths were thought to be extinct for 66 million years until one was caught alive in 1938!",
+      "tags": [
+        "carnivore",
+        "alive_today",
+        "modern",
+        "water",
+        "medium",
+        "swimming",
+        "marine_reptile"
+      ]
+    },
+    {
+      "id": "item_24",
+      "name": "Fern",
+      "imagePrompt": "Cute cartoon fern, green fronds, curly leaves, flat vector art, bright colors, white background, for children",
+      "funFact": "Ferns are ancient plants that were food for many dinosaurs and still grow in forests today!",
+      "tags": [
+        "herbivore",
+        "alive_today",
+        "modern",
+        "land",
+        "small",
+        "quadrupedal",
+        "plant"
+      ]
+    }
+  ],
+  "dimensions": [
+    {
+      "key": "living_status",
+      "displayName": "Living Status",
+      "question": "Is this creature alive today?",
+      "values": {
+        "extinct": {
+          "displayName": "Extinct",
+          "color": "#95A5A6"
+        },
+        "alive_today": {
+          "displayName": "Alive Today",
+          "color": "#27AE60"
+        }
+      }
+    },
+    {
+      "key": "diet",
+      "displayName": "Diet Type",
+      "question": "What do they eat?",
+      "values": {
+        "carnivore": {
+          "displayName": "Meat-Eaters",
+          "color": "#E74C3C"
+        },
+        "herbivore": {
+          "displayName": "Plant-Eaters",
+          "color": "#2ECC71"
+        },
+        "omnivore": {
+          "displayName": "Eats Both",
+          "color": "#F39C12"
+        }
+      }
+    },
+    {
+      "key": "era",
+      "displayName": "Geological Era",
+      "question": "When did they live?",
+      "values": {
+        "triassic": {
+          "displayName": "Triassic",
+          "color": "#9B59B6"
+        },
+        "jurassic": {
+          "displayName": "Jurassic",
+          "color": "#3498DB"
+        },
+        "cretaceous": {
+          "displayName": "Cretaceous",
+          "color": "#E67E22"
+        },
+        "modern": {
+          "displayName": "Modern",
+          "color": "#1ABC9C"
+        }
+      }
+    },
+    {
+      "key": "habitat",
+      "displayName": "Habitat",
+      "question": "Where did they live?",
+      "values": {
+        "land": {
+          "displayName": "Land",
+          "color": "#8E44AD"
+        },
+        "water": {
+          "displayName": "Water",
+          "color": "#2980B9"
+        },
+        "air": {
+          "displayName": "Air",
+          "color": "#1ABC9C"
+        }
+      }
+    },
+    {
+      "key": "size",
+      "displayName": "Size",
+      "question": "How big were they?",
+      "values": {
+        "small": {
+          "displayName": "Small",
+          "color": "#F1C40F"
+        },
+        "medium": {
+          "displayName": "Medium",
+          "color": "#E67E22"
+        },
+        "large": {
+          "displayName": "Large",
+          "color": "#E74C3C"
+        }
+      }
+    },
+    {
+      "key": "locomotion",
+      "displayName": "Locomotion",
+      "question": "How did they move?",
+      "values": {
+        "bipedal": {
+          "displayName": "Two Legs",
+          "color": "#9B59B6"
+        },
+        "quadrupedal": {
+          "displayName": "Four Legs",
+          "color": "#3498DB"
+        },
+        "swimming": {
+          "displayName": "Swimming",
+          "color": "#2980B9"
+        },
+        "flying": {
+          "displayName": "Flying",
+          "color": "#1ABC9C"
+        }
+      }
+    },
+    {
+      "key": "category",
+      "displayName": "Category",
+      "question": "What type of creature?",
+      "values": {
+        "dinosaur": {
+          "displayName": "Dinosaur",
+          "color": "#E74C3C"
+        },
+        "pterosaur": {
+          "displayName": "Pterosaur",
+          "color": "#9B59B6"
+        },
+        "marine_reptile": {
+          "displayName": "Marine Reptile",
+          "color": "#2980B9"
+        },
+        "early_mammal": {
+          "displayName": "Early Mammal",
+          "color": "#F39C12"
+        },
+        "insect": {
+          "displayName": "Insect",
+          "color": "#2ECC71"
+        },
+        "plant": {
+          "displayName": "Plant",
+          "color": "#27AE60"
+        }
+      }
+    }
+  ]
+}

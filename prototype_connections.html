@@ -1,0 +1,323 @@
+<title>Branching Connections — prototype</title>
+<style>
+  :root{
+    --bg:#FBFAF8; --surface:#ffffff; --tile:#F1EFF6; --tile-b:rgba(24,18,48,.10);
+    --text:#1E1B2E; --muted:#6B6780; --accent:#6C5CE7; --accent-t:#ffffff; --done:#1FA98A;
+    --radius:12px; --maxw:600px;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#131118; --surface:#1C1A23; --tile:#26232F; --tile-b:rgba(255,255,255,.11);
+      --text:#ECEAF2; --muted:#9A94AC; --accent:#8B7CF0; --done:#43C9AE; }
+  }
+  :root[data-theme="dark"]{ --bg:#131118; --surface:#1C1A23; --tile:#26232F; --tile-b:rgba(255,255,255,.11);
+      --text:#ECEAF2; --muted:#9A94AC; --accent:#8B7CF0; --done:#43C9AE; }
+  :root[data-theme="light"]{ --bg:#FBFAF8; --surface:#ffffff; --tile:#F1EFF6; --tile-b:rgba(24,18,48,.10);
+      --text:#1E1B2E; --muted:#6B6780; --accent:#6C5CE7; --done:#1FA98A; }
+
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--text);font-family:var(--font)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:24px 16px 56px;min-height:100vh}
+  header{margin-bottom:16px}
+  .brand{font-weight:700;font-size:18px;display:flex;align-items:center;gap:8px}
+  .tag{font-size:11px;font-weight:600;color:var(--muted);border:1px solid var(--tile-b);padding:2px 8px;border-radius:20px;text-transform:uppercase;letter-spacing:.06em}
+  .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.5}
+  .path{color:var(--muted);font-size:13px;margin-top:10px;font-weight:500}
+  .path b{color:var(--text)}
+
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+  .tile{min-height:66px;border:1px solid var(--tile-b);background:var(--tile);color:var(--text);
+    border-radius:var(--radius);font:600 14px/1.15 var(--font);cursor:pointer;padding:6px;
+    display:flex;align-items:center;justify-content:center;text-align:center;transition:transform .12s ease,background .12s ease}
+  .tile:hover{transform:translateY(-1px)}
+  .tile[aria-pressed="true"]{background:var(--accent);color:var(--accent-t);border-color:transparent;transform:scale(.97)}
+  .tile:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+  .bar{border-radius:var(--radius);padding:10px 13px;color:#fff;margin-bottom:8px}
+  .bar.pop{animation:barpop .4s ease}
+  .bar .n{font-weight:700;font-size:13px;letter-spacing:.03em}
+  .bar .m{font-size:12px;opacity:.92;margin-top:2px}
+
+  .status{text-align:center;min-height:20px;margin-top:12px;color:var(--muted);font-size:13px}
+  .status.pulse{color:var(--accent);font-weight:600;animation:pulse 1.3s ease infinite}
+  .controls{display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap}
+  .btn{appearance:none;border:1px solid var(--tile-b);background:var(--surface);color:var(--text);
+    padding:9px 16px;border-radius:10px;font:600 14px var(--font);cursor:pointer;transition:border-color .12s}
+  .btn:hover{border-color:var(--accent)}
+  .btn:disabled{opacity:.4;cursor:default}
+  .btn.primary{background:var(--accent);color:var(--accent-t);border-color:transparent}
+  .btn.dev{border-style:dashed;color:var(--muted)}
+  .btn.dev:hover{border-color:var(--accent);color:var(--accent)}
+  .btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+  .results{background:var(--surface);border:1px solid var(--tile-b);border-radius:14px;padding:16px 18px;margin-top:16px}
+  .rtitle{font-weight:700;font-size:15px;margin-bottom:4px}
+  .rhint{color:var(--muted);font-size:12px;margin:0 0 12px;line-height:1.5}
+  .rhint b{color:var(--text)}
+  .row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid var(--tile-b);font-size:14px}
+  .row.best{color:var(--accent);font-weight:700}
+  .row.link{cursor:pointer;border-radius:8px;margin:0 -8px;padding-left:8px;padding-right:8px}
+  .row.link:hover{background:var(--tile)}
+  .arr{opacity:.55}
+  .rs{color:var(--muted);font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:12.5px}
+  .row.best .rs{color:var(--accent)}
+  .lead{color:var(--muted);font-size:14px;line-height:1.6;margin:16px 0 4px}
+  .lead b{color:var(--text)}
+  .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+  .map{background:var(--surface);border:1px solid var(--tile-b);border-radius:12px;padding:12px 14px;margin-top:18px}
+  .mtitle{font-weight:700;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+  .mtitle .leg{font-weight:400;text-transform:none;letter-spacing:0}
+  .mrow{display:flex;align-items:center;gap:6px;padding:3px 0;line-height:1.3;font-size:13px}
+  .mrow.d1{padding-left:20px}
+  .mrow.d2{padding-left:44px;color:var(--muted);font-size:12px}
+  .mrow.cur{color:var(--accent);font-weight:700}
+  .mk{width:15px;text-align:center;display:inline-block;flex:none}
+  .mk.done{color:var(--done)}
+  .mk.cur{color:var(--accent)}
+  .mk.todo{color:var(--muted);opacity:.5}
+  .msum{color:var(--muted);font-size:12px;margin-top:10px;border-top:1px solid var(--tile-b);padding-top:9px;line-height:1.5}
+  .msum b{color:var(--text)}
+
+  @keyframes shk{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+  @keyframes barpop{from{opacity:0;transform:translateY(-8px) scale(.98)}to{opacity:1;transform:none}}
+  @keyframes pulse{50%{opacity:.5}}
+  .shake{animation:shk .3s}
+  @media (prefers-reduced-motion:reduce){.shake,.bar.pop,.status.pulse{animation:none}.tile{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand">🧩 Branching Connections <span class="tag">prototype</span></div>
+    <div class="sub">Solve all four groups. Your <b>cleanest</b> group decides which branch you dive into next.</div>
+    <div class="path" id="path"></div>
+  </header>
+  <div id="app"></div>
+</div>
+
+<script>
+const TREE = {
+  root:{ title:'Animals', groups:[
+    {key:'bigcats', name:'Big cats', items:['Lion','Tiger','Leopard','Cheetah']},
+    {key:'sea', name:'Sea animals', items:['Shark','Dolphin','Octopus','Whale']},
+    {key:'birds', name:'Birds', items:['Owl','Penguin','Eagle','Parrot']},
+    {key:'insects', name:'Insects', items:['Ant','Bee','Butterfly','Beetle']}
+  ]},
+  bigcats:{ title:'The Cat Family', groups:[
+    {name:'Roaring cats', items:['Lion','Tiger','Jaguar','Leopard']},
+    {name:'Speed hunters', items:['Cheetah','Caracal','Serval','Ocelot']},
+    {name:'Cold-climate cats', items:['Snow leopard','Lynx','Bobcat','Puma']},
+    {name:'House cats', items:['Persian','Siamese','Tabby','Bengal']}
+  ]},
+  sea:{ title:'Ocean Life', groups:[
+    {name:'Fish', items:['Shark','Tuna','Salmon','Swordfish']},
+    {name:'Sea mammals', items:['Dolphin','Whale','Seal','Otter']},
+    {name:'Soft-bodied', items:['Octopus','Squid','Cuttlefish','Jellyfish']},
+    {name:'Shellfish', items:['Crab','Lobster','Shrimp','Clam']}
+  ]},
+  birds:{ title:'The Bird World', groups:[
+    {name:'Birds of prey', items:['Eagle','Hawk','Falcon','Owl']},
+    {name:'Water birds', items:['Penguin','Duck','Swan','Pelican']},
+    {name:'Tropical talkers', items:['Parrot','Macaw','Toucan','Cockatoo']},
+    {name:'Garden birds', items:['Robin','Sparrow','Finch','Crow']}
+  ]},
+  insects:{ title:'Tiny Creatures', groups:[
+    {name:'Fliers', items:['Bee','Butterfly','Dragonfly','Moth']},
+    {name:'Crawlers', items:['Ant','Beetle','Ladybug','Cockroach']},
+    {name:'Not really insects', items:['Spider','Scorpion','Centipede','Tick']},
+    {name:'Hoppers', items:['Grasshopper','Cricket','Flea','Locust']}
+  ]}
+};
+const BAR=['#6C5CE7','#138A7C','#B4791A','#C24E70'];
+const MAXDEPTH=2;
+
+const app=document.getElementById('app');
+const pathEl=document.getElementById('path');
+let pathTitles=[], node, tiles, selected, solved, stats, mistakes, startT, finished, msg, curKey;
+let walking=false, busy=false, steps=[], stepIdx=0, visited=new Set(), popIdx=null, shakeFlag=false;
+
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function sleep(ms){return new Promise(r=>setTimeout(r,ms));}
+function setPath(arr){pathTitles=arr.slice();}
+
+function loadNode(key){
+  curKey=key; node=TREE[key];
+  tiles=[]; node.groups.forEach((g,gi)=>g.items.forEach(w=>tiles.push({word:w,g:gi,solved:false})));
+  shuffle(tiles);
+  selected=[]; solved=[]; stats=node.groups.map(()=>({near:0,order:null,time:null}));
+  mistakes=0; startT=Date.now(); finished=false;
+}
+function initBoard(key,isRoot){ loadNode(key); if(isRoot) pathTitles=[node.title]; msg='Pick 4 that go together.'; render(); }
+function setEq(words,items){return words.length===4 && items.every(x=>words.includes(x));}
+
+function onTile(w){
+  if(finished||walking) return;
+  const t=tiles.find(t=>t.word===w); if(!t||t.solved) return;
+  const i=selected.indexOf(w);
+  if(i>=0) selected.splice(i,1); else if(selected.length<4) selected.push(w);
+  render();
+}
+function onSubmit(){
+  if(selected.length!==4||finished||walking) return;
+  let hit=-1;
+  node.groups.forEach((g,gi)=>{ if(!solved.includes(gi) && setEq(selected,g.items)) hit=gi; });
+  if(hit>=0){
+    tiles.forEach(t=>{ if(t.g===hit) t.solved=true; });
+    solved.push(hit); stats[hit].order=solved.length; stats[hit].time=Date.now()-startT;
+    selected=[]; msg='Nice — '+node.groups[hit].name+'!'; popIdx=hit;
+    if(solved.length===4){ finished=true; visited.add(curKey); }
+    render();
+  } else {
+    mistakes++; let near=false;
+    node.groups.forEach((g,gi)=>{ if(!solved.includes(gi)){ const o=selected.filter(w=>g.items.includes(w)).length; if(o===3){ stats[gi].near++; near=true; } } });
+    msg=near?'So close — one away!':'Not a group — try again.'; shakeFlag=true; render();
+  }
+}
+function onDeselect(){ selected=[]; render(); }
+function onShuffle(){ const uns=tiles.filter(t=>!t.solved); shuffle(uns); tiles=tiles.filter(t=>t.solved).concat(uns); render(); }
+function bestIdx(){ return node.groups.map((g,i)=>i).sort((a,b)=> stats[a].near-stats[b].near || stats[a].order-stats[b].order || stats[a].time-stats[b].time )[0]; }
+function descend(){ descendTo(bestIdx()); }
+function descendTo(i){ const nk=node.groups[i].key; if(nk&&TREE[nk]){ pathTitles.push(TREE[nk].title); initBoard(nk,false); } }
+
+async function animateSolve(){
+  for(let gi=0; gi<node.groups.length; gi++){
+    if(!walking) return;
+    selected=[];
+    for(const w of node.groups[gi].items){
+      if(!walking) return;
+      selected=selected.concat([w]); render();
+      await sleep(280);
+    }
+    if(!walking) return;
+    await sleep(200);
+    tiles.forEach(t=>{ if(t.g===gi) t.solved=true; });
+    solved.push(gi); popIdx=gi; selected=[]; render();
+    await sleep(320);
+  }
+}
+function showNodeSolved(key){
+  loadNode(key);
+  node.groups.forEach((g,gi)=>{ tiles.forEach(t=>{ if(t.g===gi) t.solved=true; }); solved.push(gi); });
+  popIdx=null; render();
+}
+function buildSteps(){
+  const s=[];
+  (function dfs(key,depth,path){
+    s.push({kind:'enter',key,path:path.slice()});
+    if(depth<MAXDEPTH){
+      TREE[key].groups.filter(g=>g.key&&TREE[g.key]).forEach(g=>{
+        dfs(g.key,depth+1,path.concat(TREE[g.key].title));
+        s.push({kind:'return',key,path:path.slice()});
+      });
+    }
+  })('root',0,['Animals']);
+  return s;
+}
+function startWalk(){ walking=true; busy=false; steps=buildSteps(); stepIdx=0; visited=new Set(); runStep(); }
+function stopWalk(){ walking=false; busy=false; setTimeout(()=>initBoard('root',true),30); }
+async function runStep(){
+  if(!walking||busy) return;
+  if(stepIdx>=steps.length) stepIdx=0;
+  const st=steps[stepIdx]; stepIdx++;
+  busy=true;
+  setPath(st.path);
+  if(st.kind==='enter'){
+    loadNode(st.key); render();
+    await sleep(480); if(!walking){busy=false;return;}
+    await animateSolve(); if(!walking){busy=false;return;}
+    visited.add(st.key);
+  } else {
+    showNodeSolved(st.key); visited.add(st.key);
+  }
+  busy=false; render();
+}
+
+function renderMap(){
+  const mk=k=> curKey===k?'<span class="mk cur">●</span>':(visited.has(k)?'<span class="mk done">✓</span>':'<span class="mk todo">○</span>');
+  let m='<div class="mtitle">Tree map &nbsp;<span class="leg">● here &nbsp; ✓ done &nbsp; ○ to-do</span></div>';
+  m+='<div class="mrow d0'+(curKey==='root'?' cur':'')+'">'+mk('root')+'🌳 Animals</div>';
+  TREE.root.groups.forEach(g=>{
+    m+='<div class="mrow d1'+(curKey===g.key?' cur':'')+'">'+mk(g.key)+(TREE[g.key]?TREE[g.key].title:g.name)+'</div>';
+    if(curKey===g.key&&TREE[g.key]){
+      TREE[g.key].groups.forEach(sg=>{ m+='<div class="mrow d2"><span class="mk todo">·</span>'+sg.name+'</div>'; });
+    }
+  });
+  const depth=pathTitles.length-1;
+  const explored=TREE.root.groups.filter(g=>visited.has(g.key)).length;
+  const here=curKey==='root'?'the top':'inside a branch';
+  m+='<div class="msum"><b>Depth</b> here: <b>'+depth+'</b> ('+here+') &nbsp;·&nbsp; <b>breadth</b> at the top: <b>'+TREE.root.groups.length+'</b> branches &nbsp;·&nbsp; explored so far: <b>'+explored+'</b>/'+TREE.root.groups.length+'</div>';
+  return '<div class="map">'+m+'</div>';
+}
+
+function render(){
+  pathEl.innerHTML='You are here:&nbsp; '+pathTitles.map((t,i)=> i===pathTitles.length-1?('<b>'+t+'</b>'):t).join('&nbsp; › &nbsp;');
+  let h='';
+  solved.forEach(gi=>{ const g=node.groups[gi];
+    h+='<div class="bar'+(gi===popIdx?' pop':'')+'" style="background:'+BAR[gi]+'"><div class="n">'+g.name.toUpperCase()+'</div><div class="m">'+g.items.join('  ·  ')+'</div></div>';
+  });
+  popIdx=null;
+
+  if(finished){
+    const bi=bestIdx(); const nk=node.groups[bi].key; const deeper=nk&&TREE[nk];
+    let rows='';
+    node.groups.forEach((g,i)=>{ const s=stats[i]; const best=i===bi; const canGo=g.key&&TREE[g.key];
+      rows+='<div class="row'+(best?' best':'')+(canGo?' link':'')+'"'+(canGo?' data-descend="'+i+'"':'')+'>'
+          +'<span>'+(best?'★ ':'')+g.name+(canGo?' <span class="arr">→</span>':'')+'</span>'
+          +'<span class="rs">'+s.near+' near · #'+s.order+' · '+(s.time/1000).toFixed(1)+'s</span></div>';
+    });
+    let footer;
+    if(deeper){
+      footer='<p class="lead">You read <b>'+node.groups[bi].name+'</b> most cleanly, so we follow that line deeper.</p>'
+        +'<div class="controls"><button class="btn" data-act="restart">Start over</button>'
+        +'<button class="btn primary" data-act="descend">Descend into '+TREE[nk].title+' →</button></div>';
+    } else {
+      footer='<p class="lead">🌱 Deepest branch in this prototype. In the real engine, <b>this is where the generator writes the next layer</b>.</p>'
+        +'<div class="controls"><button class="btn primary" data-act="restart">Start over</button></div>';
+    }
+    h+='<div class="results"><div class="rtitle">Solved! Your reads, ranked</div>'
+      +'<div class="rhint">fewest near-misses → first solved → fastest &nbsp;·&nbsp; <b>testing:</b> tap any branch to jump into it</div>'
+      +rows+footer+'</div>';
+  } else {
+    const uns=tiles.filter(t=>!t.solved);
+    if(uns.length){
+      h+='<div class="grid">';
+      uns.forEach(t=>{ const on=selected.includes(t.word); h+='<button class="tile" data-word="'+t.word+'" aria-pressed="'+on+'">'+t.word+'</button>'; });
+      h+='</div>';
+    }
+    if(walking){
+      h+='<div class="status pulse">'+(busy?'⚡ Solving one tile at a time…':'⏸ Ready — click Next for the next move')+'</div>';
+      h+='<div class="controls">'
+        +'<button class="btn primary" data-act="next"'+(busy?' disabled':'')+'>Next move →</button>'
+        +'<button class="btn dev" data-act="stop">Stop</button>'
+        +'</div>';
+    } else {
+      h+='<div class="status'+(shakeFlag?' shake':'')+'">'+msg+(mistakes?' · <span class="mono">'+mistakes+' mistakes</span>':'')+'</div>';
+      h+='<div class="controls">'
+        +'<button class="btn" data-act="deselect"'+(selected.length?'':' disabled')+'>Deselect</button>'
+        +'<button class="btn" data-act="shuffle">Shuffle</button>'
+        +'<button class="btn primary" data-act="submit"'+(selected.length===4?'':' disabled')+'>Submit</button>'
+        +'</div>';
+      h+='<div class="controls" style="margin-top:8px"><button class="btn dev" data-act="walk">▶ Step through the tree (testing)</button></div>';
+    }
+  }
+  h+=renderMap();
+  app.innerHTML=h;
+  shakeFlag=false;
+}
+
+app.addEventListener('click',e=>{
+  const tile=e.target.closest('[data-word]'); if(tile){ onTile(tile.dataset.word); return; }
+  const dr=e.target.closest('[data-descend]'); if(dr){ descendTo(+dr.dataset.descend); return; }
+  const b=e.target.closest('[data-act]'); if(!b) return;
+  const a=b.dataset.act;
+  if(a==='submit')onSubmit(); else if(a==='deselect')onDeselect();
+  else if(a==='shuffle')onShuffle(); else if(a==='descend')descend();
+  else if(a==='restart')restart(); else if(a==='walk')startWalk();
+  else if(a==='next')runStep(); else if(a==='stop')stopWalk();
+});
+function restart(){ walking=false; visited=new Set(); initBoard('root',true); }
+
+initBoard('root',true);
+</script>

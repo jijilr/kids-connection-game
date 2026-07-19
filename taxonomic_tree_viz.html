@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taxonomic Tree — Epistemological Classification Engine</title>
+<style>:root{--bg:#0f0f1a;--panel:#1a1a2e;--card:#16213e;--text:#e0e0e0;--muted:#8892b0;--accent:#6c5ce7;--accent2:#a29bfe;--border:#2a2a4a;--hover:#252545;--success:#27ae60;--danger:#e74c3c;--warn:#f39c12}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);height:100vh;display:flex;overflow:hidden}#tree-panel{width:320px;min-width:280px;background:var(--panel);border-right:1px solid var(--border);display:flex;flex-direction:column;overflow-y:auto;padding:20px 16px;gap:8px}#tree-panel h2{font-size:14px;text-transform:uppercase;letter-spacing:2px;color:var(--accent2);margin-bottom:8px}#tree-panel .subtitle{font-size:11px;color:var(--muted);margin-bottom:16px}.tree-node{padding:10px 12px;border-radius:8px;cursor:pointer;border:1px solid transparent;transition:all 0.2s;position:relative}.tree-node:hover{background:var(--hover);border-color:var(--border)}.tree-node.active{background:linear-gradient(135deg,rgba(108,92,231,0.2),rgba(162,155,254,0.1));border-color:var(--accent)}.tree-node .label{font-weight:600;font-size:13px}.tree-node .hint{font-size:11px;color:var(--muted)}.tree-node.depth-0{margin-left:0}.tree-node.depth-1{margin-left:20px}.tree-node.depth-2{margin-left:40px}.tree-node.depth-3{margin-left:60px}.tree-node.depth-4{margin-left:80px}.tree-connector{width:2px;height:12px;margin-left:30px;background:var(--border)}.parallel-label{font-size:10px;color:var(--warn);text-transform:uppercase;letter-spacing:1.5px;margin:12px 0 4px 0;padding-left:4px}.parallel-branch{padding:6px 10px;border-radius:6px;cursor:pointer;font-size:12px;border:1px dashed var(--border);transition:all 0.2s;margin-left:20px;margin-bottom:4px}.parallel-branch:hover{background:rgba(243,156,18,0.1);border-color:var(--warn)}#main{flex:1;display:flex;flex-direction:column;overflow:hidden}#topbar{padding:16px 24px;background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:16px;flex-wrap:wrap}#topbar .domain-name{font-weight:700;font-size:18px;color:var(--accent2);margin-right:auto}#topbar .stats{font-size:12px;color:var(--muted)}#dim-tabs{display:flex;gap:6px;padding:12px 24px;background:var(--panel);border-bottom:1px solid var(--border);overflow-x:auto}#dim-tabs button{padding:8px 16px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;font-size:12px;font-weight:600;white-space:nowrap;transition:all 0.2s}#dim-tabs button:hover{border-color:var(--accent);color:var(--text)}#dim-tabs button.active{background:var(--accent);color:#fff;border-color:var(--accent)}#question-bar{padding:12px 24px;background:linear-gradient(90deg,rgba(108,92,231,0.1),transparent);font-size:18px;font-weight:600;color:var(--accent2);border-bottom:1px solid var(--border)}#grid-container{flex:1;overflow-y:auto;padding:24px}#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}.item-card{background:var(--card);border-radius:12px;padding:16px;border:2px solid transparent;transition:all 0.3s cubic-bezier(0.34,1.56,0.64,1);cursor:pointer;display:flex;flex-direction:column}.item-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3)}.item-card.dimmed{opacity:0.3;transform:scale(0.95)}.item-card .emoji-icon{font-size:40px;text-align:center;margin-bottom:8px;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.3))}.item-card .item-name{font-weight:700;font-size:15px;text-align:center;margin-bottom:4px}.item-card .item-funfact{font-size:11px;color:var(--muted);text-align:center;margin-bottom:10px;line-height:1.4;flex:1}.item-card .item-tags{display:flex;flex-wrap:wrap;gap:4px;justify-content:center}.item-card .tag-chip{font-size:10px;padding:3px 8px;border-radius:10px;background:rgba(255,255,255,0.08);color:var(--muted)}.item-card .tag-chip.highlight{font-weight:700}.group-header{grid-column:1/-1;padding:8px 20px;margin-top:8px;border-radius:8px;font-weight:700;font-size:14px;display:flex;align-items:center;gap:8px}.group-header .count{font-size:12px;opacity:0.8}#legend{display:flex;gap:16px;padding:12px 24px;background:var(--panel);border-top:1px solid var(--border);flex-wrap:wrap}.legend-item{display:flex;align-items:center;gap:6px;font-size:12px}.legend-dot{width:12px;height:12px;border-radius:3px}@keyframes slideIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}.item-card{animation:slideIn 0.3s ease-out both}</style>
+</head>
+<body>
+<div id="tree-panel"><h2>🧬 Taxonomy Tree</h2><div class="subtitle" id="tree-domain">Domain: prehistoric_life</div><div id="tree-content"></div></div>
+<div id="main">
+<div id="topbar"><span class="domain-name">🦕 Prehistoric Life</span><span class="stats" id="item-count">24 creatures</span></div>
+<div id="dim-tabs"></div>
+<div id="question-bar"></div>
+<div id="grid-container"><div id="grid"></div></div>
+<div id="legend"></div>
+</div>
+<script>
+// ─── Embedded taxonomic data (generated by DeepSeek) ───
+const TAXONOMIC_DATA = {"domain":"prehistoric_life","items":[{"id":"item_01","name":"T-Rex","imagePrompt":"Cute cartoon T-Rex, large head, tiny arms, sharp teeth, flat vector art, bright colors, white background, for children","funFact":"T-Rex had teeth as long as bananas and could eat up to 500 pounds of meat in one bite!","tags":["carnivore","extinct","cretaceous","land","large","bipedal","dinosaur"]},{"id":"item_02","name":"Triceratops","imagePrompt":"Cute cartoon Triceratops, three horns on head, frill, flat vector art, bright colors, white background, for children","funFact":"Triceratops had three horns and a bony frill to protect its neck from predators like T-Rex.","tags":["herbivore","extinct","cretaceous","land","large","quadrupedal","dinosaur"]},{"id":"item_03","name":"Stegosaurus","imagePrompt":"Cute cartoon Stegosaurus, plates on back, spiked tail, flat vector art, bright colors, white background, for children","funFact":"Stegosaurus had a brain the size of a walnut, but its spiked tail could swing with great force!","tags":["herbivore","extinct","jurassic","land","large","quadrupedal","dinosaur"]},{"id":"item_04","name":"Pteranodon","imagePrompt":"Cute cartoon Pteranodon, large crest on head, long wings, flat vector art, bright colors, white background, for children","funFact":"Pteranodon was a flying reptile with a wingspan as wide as a small airplane, but it had no teeth!","tags":["carnivore","extinct","cretaceous","air","large","flying","pterosaur"]},{"id":"item_05","name":"Plesiosaurus","imagePrompt":"Cute cartoon Plesiosaurus, long neck, flippers, flat vector art, bright colors, white background, for children","funFact":"Plesiosaurus swam using four flippers like paddles, and some people think it might be the Loch Ness Monster!","tags":["carnivore","extinct","jurassic","water","large","swimming","marine_reptile"]},{"id":"item_06","name":"Velociraptor","imagePrompt":"Cute cartoon Velociraptor, feathered, claw on foot, flat vector art, bright colors, white background, for children","funFact":"Velociraptor was actually about the size of a turkey and covered in feathers, not scaly skin!","tags":["carnivore","extinct","cretaceous","land","small","bipedal","dinosaur"]},{"id":"item_07","name":"Brachiosaurus","imagePrompt":"Cute cartoon Brachiosaurus, very long neck, tall body, flat vector art, bright colors, white background, for children","funFact":"Brachiosaurus could reach heights of 40 feet tall, letting it munch on treetops like a giant giraffe!","tags":["herbivore","extinct","jurassic","land","large","quadrupedal","dinosaur"]},{"id":"item_08","name":"Ichthyosaurus","imagePrompt":"Cute cartoon Ichthyosaurus, dolphin-like body, fins, flat vector art, bright colors, white background, for children","funFact":"Ichthyosaurus looked like a dolphin but was a reptile, and it gave birth to live young in the water.","tags":["carnivore","extinct","triassic","water","medium","swimming","marine_reptile"]},{"id":"item_09","name":"Ankylosaurus","imagePrompt":"Cute cartoon Ankylosaurus, armored body, club tail, flat vector art, bright colors, white background, for children","funFact":"Ankylosaurus had a club on its tail that could smash bones, and its body was covered in bony armor!","tags":["herbivore","extinct","cretaceous","land","large","quadrupedal","dinosaur"]},{"id":"item_10","name":"Archaeopteryx","imagePrompt":"Cute cartoon Archaeopteryx, feathered wings, claws, flat vector art, bright colors, white background, for children","funFact":"Archaeopteryx is the missing link between dinosaurs and birds, with feathers and teeth!","tags":["carnivore","extinct","jurassic","air","small","flying","dinosaur"]},{"id":"item_11","name":"Mosasaurus","imagePrompt":"Cute cartoon Mosasaurus, long body, flippers, sharp teeth, flat vector art, bright colors, white background, for children","funFact":"Mosasaurus was a giant marine lizard that could grow longer than a school bus and ate fish and sharks!","tags":["carnivore","extinct","cretaceous","water","large","swimming","marine_reptile"]},{"id":"item_12","name":"Diplodocus","imagePrompt":"Cute cartoon Diplodocus, extremely long neck and tail, flat vector art, bright colors, white background, for children","funFact":"Diplodocus had a tail so long it could crack like a whip, making a loud sound to scare predators!","tags":["herbivore","extinct","jurassic","land","large","quadrupedal","dinosaur"]},{"id":"item_13","name":"Pterodactylus","imagePrompt":"Cute cartoon Pterodactylus, pointed beak, wings, flat vector art, bright colors, white background, for children","funFact":"Pterodactylus was a small flying reptile that ate fish and insects, and its name means 'wing finger'.","tags":["carnivore","extinct","jurassic","air","small","flying","pterosaur"]},{"id":"item_14","name":"Crocodile","imagePrompt":"Cute cartoon crocodile, long snout, scaly skin, flat vector art, bright colors, white background, for children","funFact":"Crocodiles are living dinosaurs' cousins and have been around for over 200 million years!","tags":["carnivore","alive_today","modern","water","large","quadrupedal","dinosaur"]},{"id":"item_15","name":"Shark","imagePrompt":"Cute cartoon shark, dorsal fin, sharp teeth, flat vector art, bright colors, white background, for children","funFact":"Sharks have been swimming in the oceans for over 400 million years, even before dinosaurs!","tags":["carnivore","alive_today","modern","water","large","swimming","marine_reptile"]},{"id":"item_16","name":"Dimetrodon","imagePrompt":"Cute cartoon Dimetrodon, sail on back, lizard-like body, flat vector art, bright colors, white background, for children","funFact":"Dimetrodon was not a dinosaur but a mammal-like reptile with a sail to warm up in the sun!","tags":["carnivore","extinct","triassic","land","medium","quadrupedal","early_mammal"]},{"id":"item_17","name":"Mammoth","imagePrompt":"Cute cartoon mammoth, long curved tusks, furry body, flat vector art, bright colors, white background, for children","funFact":"Mammoths had thick fur and tusks that could be 15 feet long, and they lived during the Ice Age!","tags":["herbivore","extinct","modern","land","large","quadrupedal","early_mammal"]},{"id":"item_18","name":"Saber-Toothed Tiger","imagePrompt":"Cute cartoon saber-toothed tiger, long fangs, muscular body, flat vector art, bright colors, white background, for children","funFact":"Saber-toothed tigers had canine teeth up to 7 inches long, perfect for stabbing prey!","tags":["carnivore","extinct","modern","land","medium","quadrupedal","early_mammal"]},{"id":"item_19","name":"Dragonfly (Meganeura)","imagePrompt":"Cute cartoon giant dragonfly, large wings, big eyes, flat vector art, bright colors, white background, for children","funFact":"Meganeura was a giant dragonfly with a wingspan of 2.5 feet, as big as a pigeon!","tags":["carnivore","extinct","triassic","air","small","flying","insect"]},{"id":"item_20","name":"Ginkgo Tree","imagePrompt":"Cute cartoon ginkgo tree, fan-shaped leaves, trunk, flat vector art, bright colors, white background, for children","funFact":"Ginkgo trees have been around since the time of dinosaurs and are still alive today!","tags":["herbivore","alive_today","modern","land","large","quadrupedal","plant"]},{"id":"item_21","name":"Turtle","imagePrompt":"Cute cartoon turtle, shell, flippers, flat vector art, bright colors, white background, for children","funFact":"Turtles have been on Earth for over 200 million years, and some can live for more than 100 years!","tags":["omnivore","alive_today","modern","water","medium","swimming","marine_reptile"]},{"id":"item_22","name":"Lizard","imagePrompt":"Cute cartoon lizard, four legs, long tail, flat vector art, bright colors, white background, for children","funFact":"Lizards are modern relatives of dinosaurs and can regrow their tails if they lose them!","tags":["carnivore","alive_today","modern","land","small","quadrupedal","dinosaur"]},{"id":"item_23","name":"Coelacanth","imagePrompt":"Cute cartoon coelacanth, lobed fins, blue scales, flat vector art, bright colors, white background, for children","funFact":"Coelacanths were thought to be extinct for 66 million years until one was caught alive in 1938!","tags":["carnivore","alive_today","modern","water","medium","swimming","marine_reptile"]},{"id":"item_24","name":"Fern","imagePrompt":"Cute cartoon fern, green fronds, curly leaves, flat vector art, bright colors, white background, for children","funFact":"Ferns are ancient plants that were food for many dinosaurs and still grow in forests today!","tags":["herbivore","alive_today","modern","land","small","quadrupedal","plant"]}],"dimensions":[{"key":"living_status","displayName":"Living Status","question":"Is this creature alive today?","values":{"extinct":{"displayName":"Extinct","color":"#95A5A6"},"alive_today":{"displayName":"Alive Today","color":"#27AE60"}}},{"key":"diet","displayName":"Diet Type","question":"What do they eat?","values":{"carnivore":{"displayName":"Meat-Eaters","color":"#E74C3C"},"herbivore":{"displayName":"Plant-Eaters","color":"#2ECC71"},"omnivore":{"displayName":"Eats Both","color":"#F39C12"}}},{"key":"era","displayName":"Geological Era","question":"When did they live?","values":{"triassic":{"displayName":"Triassic","color":"#9B59B6"},"jurassic":{"displayName":"Jurassic","color":"#3498DB"},"cretaceous":{"displayName":"Cretaceous","color":"#E67E22"},"modern":{"displayName":"Modern","color":"#1ABC9C"}}},{"key":"habitat","displayName":"Habitat","question":"Where did they live?","values":{"land":{"displayName":"Land","color":"#8E44AD"},"water":{"displayName":"Water","color":"#2980B9"},"air":{"displayName":"Air","color":"#1ABC9C"}}},{"key":"size","displayName":"Size","question":"How big were they?","values":{"small":{"displayName":"Small","color":"#F1C40F"},"medium":{"displayName":"Medium","color":"#E67E22"},"large":{"displayName":"Large","color":"#E74C3C"}}},{"key":"locomotion","displayName":"Locomotion","question":"How did they move?","values":{"bipedal":{"displayName":"Two Legs","color":"#9B59B6"},"quadrupedal":{"displayName":"Four Legs","color":"#3498DB"},"swimming":{"displayName":"Swimming","color":"#2980B9"},"flying":{"displayName":"Flying","color":"#1ABC9C"}}},{"key":"category","displayName":"Category","question":"What type of creature?","values":{"dinosaur":{"displayName":"Dinosaur","color":"#E74C3C"},"pterosaur":{"displayName":"Pterosaur","color":"#9B59B6"},"marine_reptile":{"displayName":"Marine Reptile","color":"#2980B9"},"early_mammal":{"displayName":"Early Mammal","color":"#F39C12"},"insect":{"displayName":"Insect","color":"#2ECC71"},"plant":{"displayName":"Plant","color":"#27AE60"}}}]};
+startApp(TAXONOMIC_DATA);
+
+function startApp(DATA) {
+const items = DATA.items;
+const dimensions = DATA.dimensions;
+const domain = DATA.domain;
+const EMJOIS = ["🦖","🦕","🐊","🦈","🐢","🦎","🦅","🐘","🐅","🌿","🪲","🦋","🐠","🦴","🐉","🦇","🌴","🐍","🦭","🐬","🦏","🐪","🦩","🌵"];
+let activeDimIdx = 0;
+let activeDim = dimensions[0];
+let activeTreePath = [];
+
+function renderTree() {
+  const container = document.getElementById("tree-content");
+  const catDim = dimensions.find(d => d.key === "category");
+  const dietDim = dimensions.find(d => d.key === "diet");
+  const eraDim = dimensions.find(d => d.key === "era");
+  let html = `<div class="tree-node depth-0 active" onclick="window._resetTree()"><div class="label">🌍 All Creatures</div><div class="hint">${items.length} items · ${dimensions.length} dimensions</div></div>`;
+  
+  if (catDim) {
+    for (const [val, info] of Object.entries(catDim.values)) {
+      const catItems = items.filter(i => i.tags.includes(val));
+      if (catItems.length === 0) continue;
+      html += `<div class="tree-connector" style="margin-left:30px"></div>`;
+      const active1 = activeTreePath.length > 0 && activeTreePath[0]?.dimVal === val;
+      html += `<div class="tree-node depth-1 ${active1?'active':''}" onclick="window._navTree('${catDim.key}','${val}',1)" style="border-left:3px solid ${info.color}"><div class="label">${info.displayName}</div><div class="hint">${catItems.length} items</div></div>`;
+      
+      if (active1 && dietDim) {
+        for (const [dVal, dInfo] of Object.entries(dietDim.values)) {
+          const dietItems = catItems.filter(i => i.tags.includes(dVal));
+          if (dietItems.length === 0) continue;
+          html += `<div class="tree-connector" style="margin-left:50px"></div>`;
+          const active2 = activeTreePath.length > 1 && activeTreePath[1]?.dimVal === dVal;
+          html += `<div class="tree-node depth-2 ${active2?'active':''}" onclick="window._navTree('${dietDim.key}','${dVal}',2)" style="border-left:3px solid ${dInfo.color}"><div class="label">${dInfo.displayName}</div><div class="hint">${dietItems.length} items</div></div>`;
+          
+          if (active2 && eraDim) {
+            for (const [eVal, eInfo] of Object.entries(eraDim.values)) {
+              const eraItems = dietItems.filter(i => i.tags.includes(eVal));
+              if (eraItems.length === 0) continue;
+              html += `<div class="tree-connector" style="margin-left:70px"></div>`;
+              html += `<div class="tree-node depth-3" onclick="window._switchDim('${eraDim.key}')" style="border-left:3px solid ${eInfo.color}"><div class="label">${eInfo.displayName}</div><div class="hint">${eraItems.length} items</div></div>`;
+            }
+          }
+        }
+        // Parallel branches
+        if (active1) {
+          const otherDims = dimensions.filter(d => d.key !== catDim.key && d.key !== dietDim.key);
+          html += `<div class="parallel-label">🔄 Parallel paths:</div>`;
+          for (const pd of otherDims.slice(0, 3)) {
+            const vals = Object.entries(pd.values).slice(0, 2);
+            html += `<div class="parallel-branch" onclick="window._switchDim('${pd.key}')">Group by: ${pd.displayName} (${vals.map(v=>v[1].displayName).join(' vs ')})...</div>`;
+          }
+        }
+      }
+    }
+  }
+  container.innerHTML = html;
+}
+
+window._navTree = function(dimKey, dimVal, depth) {
+  activeTreePath = activeTreePath.slice(0, depth);
+  activeTreePath.push({dimKey, dimVal, depth});
+  const idx = dimensions.findIndex(d => d.key === dimKey);
+  if (idx >= 0) { activeDimIdx = idx; activeDim = dimensions[idx]; }
+  renderAll();
+};
+window._resetTree = function() {
+  activeTreePath = [];
+  activeDimIdx = 0; activeDim = dimensions[0];
+  renderAll();
+};
+window._switchDim = function(dimKey) {
+  const idx = dimensions.findIndex(d => d.key === dimKey);
+  if (idx < 0) return;
+  activeDimIdx = idx; activeDim = dimensions[idx];
+  renderAll();
+};
+
+function renderAll() {
+  // Tabs
+  document.getElementById("dim-tabs").innerHTML = dimensions.map((d,i) => 
+    `<button class="${i===activeDimIdx?'active':''}" onclick="window._switchDim('${d.key}')">${d.displayName}</button>`
+  ).join("");
+  // Question
+  document.getElementById("question-bar").textContent = `❓ ${activeDim.question}`;
+  // Grid
+  const container = document.getElementById("grid");
+  const values = activeDim.values;
+  const valKeys = Object.keys(values);
+  const groups = {};
+  valKeys.forEach(vk => { groups[vk] = []; });
+  groups["_other"] = [];
+  items.forEach(item => {
+    let found = false;
+    for (const vk of valKeys) { if (item.tags.includes(vk)) { groups[vk].push(item); found = true; break; } }
+    if (!found) groups["_other"].push(item);
+  });
+  let html = '';
+  valKeys.forEach(vk => {
+    const group = groups[vk];
+    if (group.length === 0) return;
+    const info = values[vk];
+    html += `<div class="group-header" style="background:${info.color}22;color:${info.color};border-left:4px solid ${info.color}">${info.displayName} <span class="count">(${group.length} items)</span></div>`;
+    group.forEach((item, idx) => {
+      const emoji = EMJOIS[parseInt(item.id.replace('item_','')) % EMJOIS.length] || "🦕";
+      html += `<div class="item-card" style="animation-delay:${idx*0.05}s;border-color:${info.color}44"><div class="emoji-icon">${emoji}</div><div class="item-name">${item.name}</div><div class="item-funfact">${item.funFact}</div><div class="item-tags">${item.tags.map(t => {const isTag=valKeys.includes(t);return `<span class="tag-chip${isTag?' highlight':''}" style="${isTag?`background:${info.color}33;color:${info.color};font-weight:700`:''}">${t}</span>`;}).join("")}</div></div>`;
+    });
+  });
+  if (groups["_other"].length > 0) {
+    html += `<div class="group-header" style="background:#555;color:#999">Uncategorized <span class="count">(${groups["_other"].length} items)</span></div>`;
+    groups["_other"].forEach(item => { html += `<div class="item-card dimmed"><div class="emoji-icon">❓</div><div class="item-name">${item.name}</div><div class="item-funfact">${item.funFact}</div><div class="item-tags">${item.tags.map(t=>`<span class="tag-chip">${t}</span>`).join("")}</div></div>`; });
+  }
+  container.innerHTML = html;
+  // Legend
+  document.getElementById("legend").innerHTML = Object.entries(activeDim.values).map(([k,v]) => `<div class="legend-item"><div class="legend-dot" style="background:${v.color}"></div><span>${v.displayName}</span></div>`).join("");
+  // Stats
+  document.getElementById("item-count").textContent = `${items.length} creatures · ${dimensions.length} dimensions`;
+  document.getElementById("tree-domain").textContent = `Domain: ${domain}`;
+}
+renderTree();
+renderAll();
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight" && activeDimIdx < dimensions.length - 1) window._switchDim(dimensions[activeDimIdx + 1].key);
+  else if (e.key === "ArrowLeft" && activeDimIdx > 0) window._switchDim(dimensions[activeDimIdx - 1].key);
+});
+}
+</script>
+</body>
+</html>

@@ -148,7 +148,7 @@ class _GroupingStrategy {
   final dynamic value;
   final String displayName;
   final int count;
-  
+
   _GroupingStrategy({
     required this.key,
     required this.value,
