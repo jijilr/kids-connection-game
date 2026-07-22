@@ -1,957 +1,1052 @@
 {
   "entities": [
     {
-      "id": "allosaurus",
-      "name": "Allosaurus",
+      "id": "dog",
+      "name": "dog",
       "domain": "animals",
       "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
-        "habitat:land",
-        "has_legs",
-        "reptile",
-        "dino_kind:land_hunter"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "ankylosaurus",
-      "name": "Ankylosaurus",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:herbivore",
-        "habitat:land",
-        "has_legs",
-        "reptile",
-        "armored",
-        "dino_kind:land_grazer"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "ant",
-      "name": "Ant",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "category:insect",
-        "has_legs",
-        "small",
-        "habitat:land",
-        "social"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
-      }
-    },
-    {
-      "id": "archaeopteryx",
-      "name": "Archaeopteryx",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
-        "flies",
-        "has_feathers",
-        "bird_like",
-        "dino_kind:flyer"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "bear",
-      "name": "Bear",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
         "category:mammal",
-        "diet:omnivore",
+        "size:small",
         "habitat:land",
-        "has_legs",
-        "furry",
-        "large"
+        "diet:omnivore"
       ],
-      "facts": [],
-      "recognizability": 0.6,
+      "facts": [
+        "Dogs are called man's best friend because they love to play and be with people."
+      ],
+      "recognizability": 0.95,
       "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
       }
     },
     {
-      "id": "bee",
-      "name": "Bee",
+      "id": "cat",
+      "name": "cat",
       "domain": "animals",
       "tags": [
-        "living",
-        "natural",
-        "category:insect",
-        "flies",
-        "small",
-        "makes_honey",
-        "has_stripes"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
-      }
-    },
-    {
-      "id": "beetle",
-      "name": "Beetle",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "category:insect",
-        "has_legs",
-        "small",
-        "has_shell"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
-      }
-    },
-    {
-      "id": "brachiosaurus",
-      "name": "Brachiosaurus",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:herbivore",
+        "category:mammal",
+        "size:small",
         "habitat:land",
-        "has_legs",
-        "reptile",
-        "large",
-        "long_neck",
-        "dino_kind:land_grazer"
+        "diet:carnivore"
       ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "butterfly",
-      "name": "Butterfly",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "category:insect",
-        "flies",
-        "small",
-        "colorful",
-        "has_wings"
+      "facts": [
+        "Cats can purr when they are happy and relaxed."
       ],
-      "facts": [],
-      "recognizability": 0.6,
+      "recognizability": 0.95,
       "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
-      }
-    },
-    {
-      "id": "ceratosaurus",
-      "name": "Ceratosaurus",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
-        "habitat:land",
-        "has_legs",
-        "reptile",
-        "has_horns",
-        "dino_kind:land_hunter"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "eagle",
-      "name": "Eagle",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "category:bird",
-        "flies",
-        "diet:carnivore",
-        "has_feathers",
-        "has_beak",
-        "bird_of_prey"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
-      }
-    },
-    {
-      "id": "elasmosaurus",
-      "name": "Elasmosaurus",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
-        "habitat:water",
-        "reptile",
-        "long_neck",
-        "swims",
-        "dino_kind:swimmer"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
       }
     },
     {
       "id": "elephant",
-      "name": "Elephant",
+      "name": "elephant",
       "domain": "animals",
       "tags": [
-        "living",
-        "natural",
         "category:mammal",
+        "size:huge",
+        "habitat:land",
         "diet:herbivore",
-        "habitat:land",
-        "has_legs",
-        "large",
-        "has_trunk",
-        "gray"
+        "swims"
       ],
-      "facts": [],
-      "recognizability": 0.6,
+      "facts": [
+        "Elephants are the largest land animals and have long trunks."
+      ],
+      "recognizability": 0.9,
       "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
       }
     },
     {
-      "id": "giganotosaurus",
-      "name": "Giganotosaurus",
+      "id": "horse",
+      "name": "horse",
       "domain": "animals",
       "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
-        "habitat:land",
-        "has_legs",
-        "reptile",
-        "large",
-        "dino_kind:land_hunter"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "goldfish",
-      "name": "Goldfish",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "category:fish",
-        "habitat:water",
-        "swims",
-        "small",
-        "pet",
-        "orange"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
-      }
-    },
-    {
-      "id": "ichthyosaurus",
-      "name": "Ichthyosaurus",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
-        "habitat:water",
-        "reptile",
-        "swims",
-        "dino_kind:swimmer"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "iguanodon",
-      "name": "Iguanodon",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:herbivore",
-        "habitat:land",
-        "has_legs",
-        "reptile",
-        "dino_kind:land_grazer"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "kangaroo",
-      "name": "Kangaroo",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
         "category:mammal",
-        "diet:herbivore",
+        "size:big",
         "habitat:land",
-        "has_legs",
-        "furry",
-        "jumps",
-        "has_pouch",
-        "australian"
+        "diet:herbivore",
+        "swims"
       ],
-      "facts": [],
-      "recognizability": 0.6,
+      "facts": [
+        "Horses can run very fast and have been used for riding for thousands of years."
+      ],
+      "recognizability": 0.85,
       "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
       }
     },
     {
-      "id": "kronosaurus",
-      "name": "Kronosaurus",
+      "id": "cow",
+      "name": "cow",
       "domain": "animals",
       "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
-        "habitat:water",
-        "reptile",
-        "swims",
-        "large",
-        "dino_kind:swimmer"
+        "category:mammal",
+        "size:big",
+        "habitat:land",
+        "diet:herbivore"
       ],
-      "facts": [],
-      "recognizability": 0.6,
+      "facts": [
+        "Cows give us milk, which we drink and use to make cheese."
+      ],
+      "recognizability": 0.8,
       "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "pig",
+      "name": "pig",
+      "domain": "animals",
+      "tags": [
+        "category:mammal",
+        "size:big",
+        "habitat:land",
+        "diet:omnivore",
+        "swims"
+      ],
+      "facts": [
+        "Pigs are very smart animals and like to roll in mud to stay cool."
+      ],
+      "recognizability": 0.8,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
       }
     },
     {
       "id": "lion",
-      "name": "Lion",
+      "name": "lion",
       "domain": "animals",
       "tags": [
-        "living",
-        "natural",
         "category:mammal",
-        "diet:carnivore",
+        "size:big",
         "habitat:land",
-        "has_legs",
-        "furry",
-        "large",
-        "big_cat",
-        "has_mane"
+        "diet:carnivore"
       ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
-      }
-    },
-    {
-      "id": "liopleurodon",
-      "name": "Liopleurodon",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
-        "habitat:water",
-        "reptile",
-        "swims",
-        "dino_kind:swimmer"
+      "facts": [
+        "Lions are called the kings of the jungle and live in groups called prides."
       ],
-      "facts": [],
-      "recognizability": 0.6,
+      "recognizability": 0.9,
       "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "microraptor",
-      "name": "Microraptor",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
-        "flies",
-        "has_feathers",
-        "small",
-        "dino_kind:flyer"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "mosasaurus",
-      "name": "Mosasaurus",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
-        "habitat:water",
-        "reptile",
-        "swims",
-        "large",
-        "dino_kind:swimmer"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "ostrich",
-      "name": "Ostrich",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "category:bird",
-        "flightless",
-        "has_feathers",
-        "has_beak",
-        "has_legs",
-        "large",
-        "runs_fast"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
-      }
-    },
-    {
-      "id": "parasaurolophus",
-      "name": "Parasaurolophus",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:herbivore",
-        "habitat:land",
-        "has_legs",
-        "reptile",
-        "has_crest",
-        "dino_kind:land_grazer"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "parrot",
-      "name": "Parrot",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "category:bird",
-        "flies",
-        "has_feathers",
-        "has_beak",
-        "colorful",
-        "can_talk",
-        "tropical"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
-      }
-    },
-    {
-      "id": "penguin",
-      "name": "Penguin",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "category:bird",
-        "flightless",
-        "swims",
-        "has_feathers",
-        "has_beak",
-        "black_white",
-        "cold_climate"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
-      }
-    },
-    {
-      "id": "plesiosaurus",
-      "name": "Plesiosaurus",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
-        "habitat:water",
-        "reptile",
-        "swims",
-        "long_neck",
-        "dino_kind:swimmer"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "pteranodon",
-      "name": "Pteranodon",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
-        "flies",
-        "reptile",
-        "has_crest",
-        "dino_kind:flyer"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "pterodactyl",
-      "name": "Pterodactyl",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
-        "flies",
-        "reptile",
-        "dino_kind:flyer"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "quetzalcoatlus",
-      "name": "Quetzalcoatlus",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
-        "flies",
-        "reptile",
-        "large",
-        "dino_kind:flyer"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "rhamphorhynchus",
-      "name": "Rhamphorhynchus",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
-        "flies",
-        "reptile",
-        "has_tail",
-        "dino_kind:flyer"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "salmon",
-      "name": "Salmon",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "category:fish",
-        "habitat:water",
-        "swims",
-        "edible",
-        "pink"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
-      }
-    },
-    {
-      "id": "shark",
-      "name": "Shark",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "category:fish",
-        "habitat:water",
-        "swims",
-        "diet:carnivore",
-        "large",
-        "has_fins",
-        "predator"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
-      }
-    },
-    {
-      "id": "stegosaurus",
-      "name": "Stegosaurus",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:herbivore",
-        "habitat:land",
-        "has_legs",
-        "reptile",
-        "has_plates",
-        "has_spikes",
-        "dino_kind:land_grazer"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
       }
     },
     {
       "id": "tiger",
-      "name": "Tiger",
+      "name": "tiger",
       "domain": "animals",
       "tags": [
-        "living",
-        "natural",
         "category:mammal",
+        "size:big",
+        "habitat:land",
         "diet:carnivore",
-        "habitat:land",
-        "has_legs",
-        "furry",
-        "large",
-        "big_cat",
-        "has_stripes",
-        "orange"
+        "swims"
       ],
-      "facts": [],
-      "recognizability": 0.6,
+      "facts": [
+        "Tigers have orange fur with black stripes and are excellent swimmers."
+      ],
+      "recognizability": 0.85,
       "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
       }
     },
     {
-      "id": "titanoboa",
-      "name": "Titanoboa",
+      "id": "bear",
+      "name": "bear",
       "domain": "animals",
       "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:reptile",
-        "era:prehistoric",
-        "diet:carnivore",
+        "category:mammal",
+        "size:huge",
         "habitat:land",
-        "snake",
-        "large",
-        "no_legs"
+        "diet:omnivore",
+        "swims"
       ],
-      "facts": [],
-      "recognizability": 0.6,
+      "facts": [
+        "Bears eat berries, fish, and honey, and some hibernate in winter."
+      ],
+      "recognizability": 0.85,
       "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
       }
     },
     {
-      "id": "trex",
-      "name": "T-Rex",
+      "id": "whale",
+      "name": "whale",
       "domain": "animals",
       "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
-        "habitat:land",
-        "has_legs",
-        "reptile",
-        "large",
-        "small_arms",
-        "predator",
-        "dino_kind:land_hunter"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "triceratops",
-      "name": "Triceratops",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
-        "diet:herbivore",
-        "habitat:land",
-        "has_legs",
-        "reptile",
-        "has_horns",
-        "has_frill",
-        "dino_kind:land_grazer"
-      ],
-      "facts": [],
-      "recognizability": 0.6,
-      "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "tuna",
-      "name": "Tuna",
-      "domain": "animals",
-      "tags": [
-        "living",
-        "natural",
-        "category:fish",
+        "category:mammal",
+        "size:huge",
         "habitat:water",
-        "swims",
-        "large",
-        "edible"
+        "diet:carnivore",
+        "swims"
       ],
-      "facts": [],
-      "recognizability": 0.6,
+      "facts": [
+        "Whales are the biggest animals on Earth and they breathe air like us."
+      ],
+      "recognizability": 0.8,
       "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated"
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
       }
     },
     {
-      "id": "utahraptor",
-      "name": "Utahraptor",
+      "id": "dolphin",
+      "name": "dolphin",
       "domain": "animals",
       "tags": [
-        "living",
-        "natural",
-        "extinct",
-        "category:dinosaur",
-        "era:prehistoric",
+        "category:mammal",
+        "size:big",
+        "habitat:water",
         "diet:carnivore",
-        "habitat:land",
-        "has_legs",
-        "reptile",
-        "has_claws",
-        "dino_kind:land_hunter"
+        "swims"
       ],
-      "facts": [],
+      "facts": [
+        "Dolphins are very smart and use clicks and whistles to talk to each other."
+      ],
+      "recognizability": 0.85,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "bat",
+      "name": "bat",
+      "domain": "animals",
+      "tags": [
+        "category:mammal",
+        "size:tiny",
+        "habitat:land",
+        "flies"
+      ],
+      "facts": [
+        "Bats are the only mammals that can truly fly, and they sleep hanging upside down."
+      ],
+      "recognizability": 0.7,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "eagle",
+      "name": "eagle",
+      "domain": "animals",
+      "tags": [
+        "category:bird",
+        "size:big",
+        "habitat:land",
+        "diet:carnivore",
+        "flies"
+      ],
+      "facts": [
+        "Eagles have very sharp eyesight and can spot prey from far away."
+      ],
+      "recognizability": 0.8,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "penguin",
+      "name": "penguin",
+      "domain": "animals",
+      "tags": [
+        "category:bird",
+        "size:small",
+        "habitat:water",
+        "diet:carnivore",
+        "swims"
+      ],
+      "facts": [
+        "Penguins cannot fly, but they are excellent swimmers and live in cold places."
+      ],
+      "recognizability": 0.85,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "parrot",
+      "name": "parrot",
+      "domain": "animals",
+      "tags": [
+        "category:bird",
+        "size:small",
+        "habitat:land",
+        "diet:herbivore",
+        "flies"
+      ],
+      "facts": [
+        "Parrots can mimic human speech and have colorful feathers."
+      ],
+      "recognizability": 0.8,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "owl",
+      "name": "owl",
+      "domain": "animals",
+      "tags": [
+        "category:bird",
+        "size:small",
+        "habitat:land",
+        "diet:carnivore",
+        "flies"
+      ],
+      "facts": [
+        "Owls can turn their heads almost all the way around and hunt at night."
+      ],
+      "recognizability": 0.8,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "duck",
+      "name": "duck",
+      "domain": "animals",
+      "tags": [
+        "category:bird",
+        "size:small",
+        "habitat:water",
+        "diet:omnivore",
+        "flies",
+        "swims"
+      ],
+      "facts": [
+        "Ducks have waterproof feathers and love to swim in ponds."
+      ],
+      "recognizability": 0.8,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "chicken",
+      "name": "chicken",
+      "domain": "animals",
+      "tags": [
+        "category:bird",
+        "size:small",
+        "habitat:land",
+        "diet:omnivore"
+      ],
+      "facts": [
+        "Chickens lay eggs that we eat for breakfast."
+      ],
+      "recognizability": 0.8,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "flamingo",
+      "name": "flamingo",
+      "domain": "animals",
+      "tags": [
+        "category:bird",
+        "size:big",
+        "habitat:water",
+        "flies",
+        "swims"
+      ],
+      "facts": [
+        "Flamingos are pink because they eat shrimp and algae."
+      ],
+      "recognizability": 0.7,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "swan",
+      "name": "swan",
+      "domain": "animals",
+      "tags": [
+        "category:bird",
+        "size:big",
+        "habitat:water",
+        "flies",
+        "swims"
+      ],
+      "facts": [
+        "Swans have long necks and are graceful swimmers."
+      ],
+      "recognizability": 0.7,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "robin",
+      "name": "robin",
+      "domain": "animals",
+      "tags": [
+        "category:bird",
+        "size:tiny",
+        "habitat:land",
+        "diet:omnivore",
+        "flies"
+      ],
+      "facts": [
+        "Robins have a red breast and sing beautiful songs in spring."
+      ],
       "recognizability": 0.6,
       "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "goldfish",
+      "name": "goldfish",
+      "domain": "animals",
+      "tags": [
+        "category:fish",
+        "size:tiny",
+        "habitat:water",
+        "diet:omnivore",
+        "swims"
+      ],
+      "facts": [
+        "Goldfish are popular pets and can be orange, white, or black."
+      ],
+      "recognizability": 0.8,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "clownfish",
+      "name": "clownfish",
+      "domain": "animals",
+      "tags": [
+        "category:fish",
+        "size:tiny",
+        "habitat:water",
+        "diet:omnivore",
+        "swims"
+      ],
+      "facts": [
+        "Clownfish live among sea anemones and are orange with white stripes."
+      ],
+      "recognizability": 0.8,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "shark",
+      "name": "shark",
+      "domain": "animals",
+      "tags": [
+        "category:fish",
+        "size:huge",
+        "habitat:water",
+        "diet:carnivore",
+        "swims"
+      ],
+      "facts": [
+        "Sharks have been around for millions of years and have many sharp teeth."
+      ],
+      "recognizability": 0.9,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "salmon",
+      "name": "salmon",
+      "domain": "animals",
+      "tags": [
+        "category:fish",
+        "size:small",
+        "habitat:water",
+        "diet:carnivore",
+        "swims"
+      ],
+      "facts": [
+        "Salmon swim upstream to lay eggs, jumping over waterfalls."
+      ],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "seahorse",
+      "name": "seahorse",
+      "domain": "animals",
+      "tags": [
+        "category:fish",
+        "size:tiny",
+        "habitat:water",
+        "diet:carnivore",
+        "swims"
+      ],
+      "facts": [
+        "Seahorses are tiny fish that swim upright and the fathers carry babies."
+      ],
+      "recognizability": 0.7,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "pufferfish",
+      "name": "pufferfish",
+      "domain": "animals",
+      "tags": [
+        "category:fish",
+        "size:small",
+        "habitat:water",
+        "diet:omnivore",
+        "swims"
+      ],
+      "facts": [
+        "Pufferfish puff up into a spiky ball when scared."
+      ],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "angelfish",
+      "name": "angelfish",
+      "domain": "animals",
+      "tags": [
+        "category:fish",
+        "size:small",
+        "habitat:water",
+        "diet:omnivore",
+        "swims"
+      ],
+      "facts": [
+        "Angelfish have flat bodies and long fins, and live in warm seas."
+      ],
+      "recognizability": 0.5,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "catfish",
+      "name": "catfish",
+      "domain": "animals",
+      "tags": [
+        "category:fish",
+        "size:big",
+        "habitat:water",
+        "diet:omnivore",
+        "swims"
+      ],
+      "facts": [
+        "Catfish have whiskers like a cat and live at the bottom of rivers."
+      ],
+      "recognizability": 0.5,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "trout",
+      "name": "trout",
+      "domain": "animals",
+      "tags": [
+        "category:fish",
+        "size:small",
+        "habitat:water",
+        "diet:carnivore",
+        "swims"
+      ],
+      "facts": [
+        "Trout are colorful fish that live in clear, cold streams."
+      ],
+      "recognizability": 0.5,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "butterfly",
+      "name": "butterfly",
+      "domain": "animals",
+      "tags": [
+        "category:insect",
+        "size:tiny",
+        "habitat:land",
+        "diet:herbivore",
+        "flies"
+      ],
+      "facts": [
+        "Butterflies have colorful wings and start as caterpillars."
+      ],
+      "recognizability": 0.9,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "bee",
+      "name": "bee",
+      "domain": "animals",
+      "tags": [
+        "category:insect",
+        "size:tiny",
+        "habitat:land",
+        "diet:herbivore",
+        "flies"
+      ],
+      "facts": [
+        "Bees make honey and help flowers grow by spreading pollen."
+      ],
+      "recognizability": 0.85,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "ant",
+      "name": "ant",
+      "domain": "animals",
+      "tags": [
+        "category:insect",
+        "size:tiny",
+        "habitat:land",
+        "diet:omnivore"
+      ],
+      "facts": [
+        "Ants are very strong and work together in big groups called colonies."
+      ],
+      "recognizability": 0.8,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "ladybug",
+      "name": "ladybug",
+      "domain": "animals",
+      "tags": [
+        "category:insect",
+        "size:tiny",
+        "habitat:land",
+        "diet:carnivore",
+        "flies"
+      ],
+      "facts": [
+        "Ladybugs are red with black spots and eat tiny bugs that harm plants."
+      ],
+      "recognizability": 0.8,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "grasshopper",
+      "name": "grasshopper",
+      "domain": "animals",
+      "tags": [
+        "category:insect",
+        "size:tiny",
+        "habitat:land",
+        "diet:herbivore",
+        "flies"
+      ],
+      "facts": [
+        "Grasshoppers can jump very high and make sounds by rubbing their legs."
+      ],
+      "recognizability": 0.7,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "dragonfly",
+      "name": "dragonfly",
+      "domain": "animals",
+      "tags": [
+        "category:insect",
+        "size:tiny",
+        "habitat:land",
+        "diet:carnivore",
+        "flies"
+      ],
+      "facts": [
+        "Dragonflies have two pairs of wings and can fly very fast."
+      ],
+      "recognizability": 0.7,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "cricket",
+      "name": "cricket",
+      "domain": "animals",
+      "tags": [
+        "category:insect",
+        "size:tiny",
+        "habitat:land",
+        "diet:omnivore",
+        "flies"
+      ],
+      "facts": [
+        "Crickets make chirping sounds by rubbing their wings together."
+      ],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "firefly",
+      "name": "firefly",
+      "domain": "animals",
+      "tags": [
+        "category:insect",
+        "size:tiny",
+        "habitat:land",
+        "diet:carnivore",
+        "flies"
+      ],
+      "facts": [
+        "Fireflies light up at night to find friends."
+      ],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "snake",
+      "name": "snake",
+      "domain": "animals",
+      "tags": [
+        "category:reptile",
+        "size:big",
+        "habitat:land",
+        "diet:carnivore",
+        "swims"
+      ],
+      "facts": [
+        "Snakes have no legs and slither on the ground to move."
+      ],
+      "recognizability": 0.85,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "turtle",
+      "name": "turtle",
+      "domain": "animals",
+      "tags": [
+        "category:reptile",
+        "size:small",
+        "habitat:water",
+        "diet:omnivore",
+        "swims"
+      ],
+      "facts": [
+        "Turtles have a hard shell that protects them like a house."
+      ],
+      "recognizability": 0.85,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "lizard",
+      "name": "lizard",
+      "domain": "animals",
+      "tags": [
+        "category:reptile",
+        "size:small",
+        "habitat:land",
+        "diet:carnivore"
+      ],
+      "facts": [
+        "Lizards can shed their tail to escape from enemies."
+      ],
+      "recognizability": 0.7,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "crocodile",
+      "name": "crocodile",
+      "domain": "animals",
+      "tags": [
+        "category:reptile",
+        "size:huge",
+        "habitat:water",
+        "diet:carnivore",
+        "swims"
+      ],
+      "facts": [
+        "Crocodiles have powerful jaws and live in rivers and swamps."
+      ],
+      "recognizability": 0.85,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "alligator",
+      "name": "alligator",
+      "domain": "animals",
+      "tags": [
+        "category:reptile",
+        "size:huge",
+        "habitat:water",
+        "diet:carnivore",
+        "swims"
+      ],
+      "facts": [
+        "Alligators have a wide, rounded snout and live in fresh water."
+      ],
+      "recognizability": 0.8,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "chameleon",
+      "name": "chameleon",
+      "domain": "animals",
+      "tags": [
+        "category:reptile",
+        "size:small",
+        "habitat:land",
+        "diet:carnivore"
+      ],
+      "facts": [
+        "Chameleons can change color to hide from enemies."
+      ],
+      "recognizability": 0.7,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "iguana",
+      "name": "iguana",
+      "domain": "animals",
+      "tags": [
+        "category:reptile",
+        "size:big",
+        "habitat:land",
+        "diet:herbivore",
+        "swims"
+      ],
+      "facts": [
+        "Iguanas have a row of spines on their back and like to bask in the sun."
+      ],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "gecko",
+      "name": "gecko",
+      "domain": "animals",
+      "tags": [
+        "category:reptile",
+        "size:tiny",
+        "habitat:land",
+        "diet:carnivore"
+      ],
+      "facts": [
+        "Geckos can climb walls and ceilings because their feet have tiny hairs."
+      ],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "frog",
+      "name": "frog",
+      "domain": "animals",
+      "tags": [
+        "category:amphibian",
+        "size:tiny",
+        "habitat:water",
+        "diet:carnivore",
+        "swims"
+      ],
+      "facts": [
+        "Frogs start as tadpoles in water and grow legs to live on land."
+      ],
+      "recognizability": 0.9,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "salamander",
+      "name": "salamander",
+      "domain": "animals",
+      "tags": [
+        "category:amphibian",
+        "size:small",
+        "habitat:water",
+        "diet:carnivore",
+        "swims"
+      ],
+      "facts": [
+        "Salamanders look like lizards but have smooth, moist skin."
+      ],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "toad",
+      "name": "toad",
+      "domain": "animals",
+      "tags": [
+        "category:amphibian",
+        "size:small",
+        "habitat:land",
+        "diet:carnivore"
+      ],
+      "facts": [
+        "Toads have bumpy, dry skin and live in gardens."
+      ],
+      "recognizability": 0.7,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "newt",
+      "name": "newt",
+      "domain": "animals",
+      "tags": [
+        "category:amphibian",
+        "size:tiny",
+        "habitat:water",
+        "diet:carnivore",
+        "swims"
+      ],
+      "facts": [
+        "Newts are small amphibians that can regrow lost body parts."
+      ],
+      "recognizability": 0.5,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "axolotl",
+      "name": "axolotl",
+      "domain": "animals",
+      "tags": [
+        "category:amphibian",
+        "size:small",
+        "habitat:water",
+        "diet:carnivore",
+        "swims"
+      ],
+      "facts": [
+        "Axolotls keep their gills and stay in water their whole life."
+      ],
+      "recognizability": 0.5,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "caecilian",
+      "name": "caecilian",
+      "domain": "animals",
+      "tags": [
+        "category:amphibian",
+        "size:small",
+        "habitat:land",
+        "diet:carnivore"
+      ],
+      "facts": [
+        "Caecilians are legless amphibians that look like worms."
+      ],
+      "recognizability": 0.3,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "tyrannosaurus_rex",
+      "name": "Tyrannosaurus rex",
+      "domain": "animals",
+      "tags": [
+        "category:dinosaur",
+        "size:huge",
+        "habitat:land",
+        "diet:carnivore",
+        "dino_kind:land_hunter"
+      ],
+      "facts": [
+        "T. rex had tiny arms but huge jaws with sharp teeth."
+      ],
+      "recognizability": 0.95,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
       }
     },
     {
@@ -959,26 +1054,308 @@
       "name": "Velociraptor",
       "domain": "animals",
       "tags": [
-        "living",
-        "natural",
-        "extinct",
         "category:dinosaur",
-        "era:prehistoric",
-        "diet:carnivore",
+        "size:small",
         "habitat:land",
-        "has_legs",
-        "reptile",
-        "has_claws",
-        "small",
-        "fast",
+        "diet:carnivore",
         "dino_kind:land_hunter"
       ],
-      "facts": [],
+      "facts": [
+        "Velociraptors were fast hunters with a big claw on each foot."
+      ],
+      "recognizability": 0.85,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "spinosaurus",
+      "name": "Spinosaurus",
+      "domain": "animals",
+      "tags": [
+        "category:dinosaur",
+        "size:huge",
+        "habitat:land",
+        "diet:carnivore",
+        "swims",
+        "dino_kind:swimmer"
+      ],
+      "facts": [
+        "Spinosaurus had a sail on its back and ate fish."
+      ],
+      "recognizability": 0.7,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "allosaurus",
+      "name": "Allosaurus",
+      "domain": "animals",
+      "tags": [
+        "category:dinosaur",
+        "size:huge",
+        "habitat:land",
+        "diet:carnivore",
+        "dino_kind:land_hunter"
+      ],
+      "facts": [
+        "Allosaurus was a large meat-eating dinosaur with sharp teeth."
+      ],
       "recognizability": 0.6,
       "provenance": {
-        "entity": "human:migrated",
-        "tags": "human:migrated",
-        "dino_kind": "derived:compound"
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "triceratops",
+      "name": "Triceratops",
+      "domain": "animals",
+      "tags": [
+        "category:dinosaur",
+        "size:huge",
+        "habitat:land",
+        "diet:herbivore",
+        "dino_kind:land_grazer"
+      ],
+      "facts": [
+        "Triceratops had three horns and a big frill on its head."
+      ],
+      "recognizability": 0.9,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "stegosaurus",
+      "name": "Stegosaurus",
+      "domain": "animals",
+      "tags": [
+        "category:dinosaur",
+        "size:huge",
+        "habitat:land",
+        "diet:herbivore",
+        "dino_kind:land_grazer"
+      ],
+      "facts": [
+        "Stegosaurus had plates on its back and a spiky tail."
+      ],
+      "recognizability": 0.85,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "brachiosaurus",
+      "name": "Brachiosaurus",
+      "domain": "animals",
+      "tags": [
+        "category:dinosaur",
+        "size:huge",
+        "habitat:land",
+        "diet:herbivore",
+        "dino_kind:land_grazer"
+      ],
+      "facts": [
+        "Brachiosaurus had a very long neck to reach high leaves."
+      ],
+      "recognizability": 0.8,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "diplodocus",
+      "name": "Diplodocus",
+      "domain": "animals",
+      "tags": [
+        "category:dinosaur",
+        "size:huge",
+        "habitat:land",
+        "diet:herbivore",
+        "dino_kind:land_grazer"
+      ],
+      "facts": [
+        "Diplodocus was one of the longest dinosaurs with a whip-like tail."
+      ],
+      "recognizability": 0.7,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "pteranodon",
+      "name": "Pteranodon",
+      "domain": "animals",
+      "tags": [
+        "category:dinosaur",
+        "size:big",
+        "habitat:land",
+        "diet:carnivore",
+        "flies",
+        "dino_kind:flyer"
+      ],
+      "facts": [
+        "Pteranodon was a flying reptile with a large crest on its head."
+      ],
+      "recognizability": 0.7,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "quetzalcoatlus",
+      "name": "Quetzalcoatlus",
+      "domain": "animals",
+      "tags": [
+        "category:dinosaur",
+        "size:huge",
+        "habitat:land",
+        "diet:carnivore",
+        "flies",
+        "dino_kind:flyer"
+      ],
+      "facts": [
+        "Quetzalcoatlus was one of the largest flying animals ever."
+      ],
+      "recognizability": 0.5,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "rhamphorhynchus",
+      "name": "Rhamphorhynchus",
+      "domain": "animals",
+      "tags": [
+        "category:dinosaur",
+        "size:small",
+        "habitat:land",
+        "diet:carnivore",
+        "flies",
+        "dino_kind:flyer"
+      ],
+      "facts": [
+        "Rhamphorhynchus had a long tail with a diamond-shaped tip."
+      ],
+      "recognizability": 0.4,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "pterodactylus",
+      "name": "Pterodactylus",
+      "domain": "animals",
+      "tags": [
+        "category:dinosaur",
+        "size:small",
+        "habitat:land",
+        "diet:carnivore",
+        "flies",
+        "dino_kind:flyer"
+      ],
+      "facts": [
+        "Pterodactylus was a small flying reptile with a long beak."
+      ],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "mosasaurus",
+      "name": "Mosasaurus",
+      "domain": "animals",
+      "tags": [
+        "category:dinosaur",
+        "size:huge",
+        "habitat:water",
+        "diet:carnivore",
+        "swims",
+        "dino_kind:swimmer"
+      ],
+      "facts": [
+        "Mosasaurus was a giant marine reptile that lived in the sea."
+      ],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "plesiosaurus",
+      "name": "Plesiosaurus",
+      "domain": "animals",
+      "tags": [
+        "category:dinosaur",
+        "size:big",
+        "habitat:water",
+        "diet:carnivore",
+        "swims",
+        "dino_kind:swimmer"
+      ],
+      "facts": [
+        "Plesiosaurus had a long neck and flippers to swim."
+      ],
+      "recognizability": 0.6,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "ichthyosaurus",
+      "name": "Ichthyosaurus",
+      "domain": "animals",
+      "tags": [
+        "category:dinosaur",
+        "size:big",
+        "habitat:water",
+        "diet:carnivore",
+        "swims",
+        "dino_kind:swimmer"
+      ],
+      "facts": [
+        "Ichthyosaurus looked like a dolphin and lived in the ocean."
+      ],
+      "recognizability": 0.5,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
+      }
+    },
+    {
+      "id": "elasmosaurus",
+      "name": "Elasmosaurus",
+      "domain": "animals",
+      "tags": [
+        "category:dinosaur",
+        "size:huge",
+        "habitat:water",
+        "diet:carnivore",
+        "swims",
+        "dino_kind:swimmer"
+      ],
+      "facts": [
+        "Elasmosaurus had an extremely long neck and four flippers."
+      ],
+      "recognizability": 0.4,
+      "provenance": {
+        "entity": "deepseek:generated+verified",
+        "tags": "deepseek:generated+verified"
       }
     }
   ]

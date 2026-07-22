@@ -37,5 +37,15 @@
       "land_hunter": "Land hunters",
       "land_grazer": "Land grazers"
     }
+  },
+  "size": {
+    "type": "intrinsic",
+    "question": "How big is it?",
+    "values": {
+      "tiny": "Tiny",
+      "small": "Small",
+      "big": "Big",
+      "huge": "Huge"
+    }
   }
 }
