@@ -125,4 +125,16 @@ class EngineProvider extends ChangeNotifier {
     _stack.removeLast();
     _open();
   }
+
+  /// Other lenses that re-sort the *same* animals at this node (the "wider" move).
+  List<Dimension> get regroupOptions => board == null
+      ? const []
+      : _repo.assembler.regroupDimensions(_stack.last.filter, _stack.last.dim.id);
+
+  /// Regroup: same node (same filter + breadcrumb), a different sorting dimension.
+  void regroupBy(Dimension d) {
+    final lvl = _stack.last;
+    _stack[_stack.length - 1] = _Level(lvl.filter, d, lvl.label);
+    _open();
+  }
 }

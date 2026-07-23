@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../providers/engine_provider.dart';
+import '../models/dimension.dart';
 import '../services/board_assembler.dart';
 import '../widgets/tile_card.dart';
 
@@ -67,9 +68,11 @@ class EngineScreen extends StatelessWidget {
                       for (int i = 0; i < g.solved.length; i++)
                         _solvedBanner(context, g, g.solved[i], i),
                       if (g.solved.isNotEmpty) const SizedBox(height: 6),
+                      if (g.boardComplete && g.regroupOptions.isNotEmpty)
+                        _regroupSection(context, g),
                       if (g.atFloor)
                         _floorCard(context)
-                      else
+                      else if (!g.boardComplete)
                         _grid(context, g),
                       const SizedBox(height: 8),
                     ],
@@ -237,6 +240,65 @@ class EngineScreen extends StatelessWidget {
                 ],
               ),
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _regroupSection(BuildContext context, EngineProvider g) {
+    return Container(
+      width: double.infinity,
+      margin: const EdgeInsets.only(top: 4, bottom: 4),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: const Color(0xFFEDEBFA),
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(Icons.autorenew_rounded, size: 18, color: Color(0xFF6C5CE7)),
+              const SizedBox(width: 6),
+              Text(
+                'Same animals — a new way to see them',
+                style: GoogleFonts.quicksand(
+                  fontWeight: FontWeight.w800,
+                  fontSize: 14,
+                  color: const Color(0xFF4A3FB0),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 10),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [for (final d in g.regroupOptions) _lensChip(g, d)],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _lensChip(EngineProvider g, Dimension d) {
+    return GestureDetector(
+      onTap: () => g.regroupBy(d),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 9),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(color: const Color(0xFF6C5CE7)),
+        ),
+        child: Text(
+          d.question,
+          style: GoogleFonts.inter(
+            fontWeight: FontWeight.w600,
+            fontSize: 13,
+            color: const Color(0xFF6C5CE7),
+          ),
         ),
       ),
     );

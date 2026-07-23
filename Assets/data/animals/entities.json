@@ -1357,6 +1357,27 @@
         "entity": "deepseek:generated+verified",
         "tags": "deepseek:generated+verified"
       }
+    },
+    {
+      "id": "giganotosaurus",
+      "name": "Giganotosaurus",
+      "domain": "animals",
+      "tags": [
+        "category:dinosaur",
+        "size:huge",
+        "habitat:land",
+        "diet:carnivore",
+        "dino_kind:land_hunter"
+      ],
+      "facts": [
+        "Giganotosaurus was one of the biggest meat-eaters, even larger than T. rex."
+      ],
+      "recognizability": 0.55,
+      "provenance": {
+        "entity": "human:added",
+        "tags": "human:added",
+        "dino_kind": "derived:compound"
+      }
     }
   ]
 }

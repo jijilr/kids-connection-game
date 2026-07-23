@@ -103,4 +103,22 @@ class BoardAssembler {
     }
     return out;
   }
+
+  /// "Regroup" lenses for a node: boardable dimensions (excluding [exceptId]) that
+  /// cover a majority of the filtered pool — i.e. re-sort roughly the *same* animals
+  /// a different way, rather than silently dropping most of them.
+  List<Dimension> regroupDimensions(List<PathFilter> filter, String exceptId) {
+    final pool = _filtered(filter);
+    if (pool.isEmpty) return const [];
+    final out = <Dimension>[];
+    for (final d in boardableDimensions(filter)) {
+      if (d.id == exceptId) continue;
+      final covered = pool.where((e) {
+        final v = e.valueFor(d.id);
+        return v != null && d.values.containsKey(v);
+      }).length;
+      if (covered >= pool.length * 0.6) out.add(d);
+    }
+    return out;
+  }
 }

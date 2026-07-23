@@ -43,5 +43,11 @@ void main() {
       '${dims.map((d) => d.id).toList()}');
   print('(empty is expected & correct: a single category rarely has a 4-valued '
       'sub-dimension — the wide-shallow floor. Compound dimensions come in P4.)');
+
+  print('\nREGROUP (same animals, new lens):');
+  print('  at root (sorting by category): '
+      '${asm.regroupDimensions(const [], 'category').map((d) => d.id).toList()}');
+  print('  inside Dinosaurs (sorting by dino_kind): '
+      '${asm.regroupDimensions(const [('category', 'dinosaur')], 'dino_kind').map((d) => d.id).toList()}');
   print('\nALL OK');
 }
