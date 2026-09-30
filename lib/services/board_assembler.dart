@@ -25,11 +25,17 @@ class Board {
   final List<BoardGroup> groups; // 4
   final List<Entity> tiles; // 16, shuffled
   final List<PathFilter> filter;
+
+  /// Dimensions that ALSO cleanly partition these exact tiles into 4×4 — the
+  /// "regroup" lenses (same 16 animals, seen a different way).
+  final List<Dimension> lenses;
+
   const Board({
     required this.dimension,
     required this.groups,
     required this.tiles,
     required this.filter,
+    this.lenses = const [],
   });
 }
 
@@ -104,21 +110,64 @@ class BoardAssembler {
     return out;
   }
 
-  /// "Regroup" lenses for a node: boardable dimensions (excluding [exceptId]) that
-  /// cover a majority of the filtered pool — i.e. re-sort roughly the *same* animals
-  /// a different way, rather than silently dropping most of them.
-  List<Dimension> regroupDimensions(List<PathFilter> filter, String exceptId) {
-    final pool = _filtered(filter);
-    if (pool.isEmpty) return const [];
-    final out = <Dimension>[];
-    for (final d in boardableDimensions(filter)) {
-      if (d.id == exceptId) continue;
-      final covered = pool.where((e) {
-        final v = e.valueFor(d.id);
-        return v != null && d.values.containsKey(v);
-      }).length;
-      if (covered >= pool.length * 0.6) out.add(d);
+  /// Group a FIXED set of tiles by [dim]. Returns 4 groups of 4 iff they split
+  /// cleanly (every tile tagged, exactly 4 values, 4 each); else null. This is how
+  /// the SAME 16 tiles get re-partitioned on regroup.
+  List<BoardGroup>? partitionBy(List<Entity> tiles, Dimension dim) {
+    final byValue = <String, List<Entity>>{};
+    for (final e in tiles) {
+      final v = e.valueFor(dim.id);
+      if (v == null || !dim.values.containsKey(v)) return null;
+      byValue.putIfAbsent(v, () => []).add(e);
     }
-    return out;
+    if (byValue.length != 4 || byValue.values.any((g) => g.length != 4)) return null;
+    final groups = <BoardGroup>[];
+    byValue.forEach((v, items) => groups.add(BoardGroup(
+        dimId: dim.id, value: v, label: dim.label(v), items: items)));
+    return groups;
+  }
+
+  /// Every dimension that cleanly partitions these exact tiles into 4×4 (the lenses).
+  List<Dimension> lensesFor(List<Entity> tiles) =>
+      registry.all.where((d) => partitionBy(tiles, d) != null).toList();
+
+  /// Build a MULTI-LENS board: 16 tiles forming a [rowDim]×[colDim] grid (one entity
+  /// per cell), so the SAME tiles split cleanly by both. Returns null if the pool
+  /// can't fill the grid. This is what makes same-16 regroup possible.
+  Board? assembleGrid({
+    List<PathFilter> filter = const [],
+    required Dimension rowDim,
+    required Dimension colDim,
+  }) {
+    final pool = _filtered(filter);
+    final cols = colDim.values.keys.toList();
+    if (cols.length < 4) return null;
+    final useCols = ([...cols]..shuffle(_random)).take(4).toList();
+    final rowVals = rowDim.values.keys.where((rv) => useCols.every(
+        (cv) => pool.any((e) => e.isIn(rowDim.id, rv) && e.isIn(colDim.id, cv)))).toList();
+    if (rowVals.length < 4) return null;
+    final useRows = ([...rowVals]..shuffle(_random)).take(4).toList();
+
+    final tiles = <Entity>[];
+    final used = <String>{};
+    for (final rv in useRows) {
+      for (final cv in useCols) {
+        final cands = pool
+            .where((e) => e.isIn(rowDim.id, rv) && e.isIn(colDim.id, cv) && !used.contains(e.id))
+            .toList()
+          ..sort((a, b) => b.recognizability.compareTo(a.recognizability));
+        if (cands.isEmpty) return null;
+        used.add(cands.first.id);
+        tiles.add(cands.first);
+      }
+    }
+    final groups = partitionBy(tiles, rowDim)!;
+    return Board(
+      dimension: rowDim,
+      groups: groups,
+      tiles: [...tiles]..shuffle(_random),
+      filter: filter,
+      lenses: lensesFor(tiles),
+    );
   }
 }

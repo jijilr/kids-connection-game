@@ -241,10 +241,10 @@
       "domain": "animals",
       "tags": [
         "category:bird",
-        "size:big",
         "habitat:land",
         "diet:carnivore",
-        "flies"
+        "flies",
+        "size:big"
       ],
       "facts": [
         "Eagles have very sharp eyesight and can spot prey from far away."
@@ -1377,6 +1377,25 @@
         "entity": "human:added",
         "tags": "human:added",
         "dino_kind": "derived:compound"
+      }
+    },
+    {
+      "id": "ostrich",
+      "name": "Ostrich",
+      "domain": "animals",
+      "tags": [
+        "category:bird",
+        "size:huge",
+        "habitat:land",
+        "diet:omnivore"
+      ],
+      "facts": [
+        "The ostrich is the biggest bird in the world, and it cannot fly."
+      ],
+      "recognizability": 0.78,
+      "provenance": {
+        "entity": "human:added",
+        "tags": "human:added"
       }
     }
   ]

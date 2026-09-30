@@ -46,7 +46,15 @@ class EngineProvider extends ChangeNotifier {
 
   void _open() {
     final lvl = _stack.last;
-    board = _repo.assembler.assemble(filter: lvl.filter, dimension: lvl.dim);
+    Board? b;
+    final size = registry.byId('size');
+    // Root/category boards are built as a category×size grid so the SAME 16 can
+    // be regrouped by size (the "same animals, new lens" magic).
+    if (lvl.dim.id == 'category' && size != null) {
+      b = _repo.assembler.assembleGrid(filter: lvl.filter, rowDim: lvl.dim, colDim: size);
+    }
+    b ??= _repo.assembler.assemble(filter: lvl.filter, dimension: lvl.dim);
+    board = b;
     atFloor = board == null;
     selected.clear();
     solved.clear();
@@ -126,15 +134,33 @@ class EngineProvider extends ChangeNotifier {
     _open();
   }
 
-  /// Other lenses that re-sort the *same* animals at this node (the "wider" move).
-  List<Dimension> get regroupOptions => board == null
-      ? const []
-      : _repo.assembler.regroupDimensions(_stack.last.filter, _stack.last.dim.id);
+  /// Lenses that re-sort the *exact same tiles* a different way (the "wider" move).
+  List<Dimension> get regroupOptions {
+    final b = board;
+    if (b == null) return const [];
+    return b.lenses.where((d) => d.id != b.dimension.id).toList();
+  }
 
-  /// Regroup: same node (same filter + breadcrumb), a different sorting dimension.
+  /// Regroup: keep the SAME 16 tiles, re-partition them by a new lens. This is the
+  /// "watch Tiger jump from Mammals to Big" moment — same animals, new grouping.
   void regroupBy(Dimension d) {
+    final b = board;
+    if (b == null) return;
+    final groups = _repo.assembler.partitionBy(b.tiles, d);
+    if (groups == null) return;
+    board = Board(
+      dimension: d,
+      groups: groups,
+      tiles: b.tiles,
+      filter: b.filter,
+      lenses: b.lenses,
+    );
     final lvl = _stack.last;
     _stack[_stack.length - 1] = _Level(lvl.filter, d, lvl.label);
-    _open();
+    selected.clear();
+    solved.clear();
+    mistakes = 0;
+    message = 'Same animals — now sorted by ${d.question.toLowerCase()}';
+    notifyListeners();
   }
 }
