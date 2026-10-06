@@ -1,0 +1,54 @@
+{
+  "name": "Pea plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Peas are annual plants, with a life cycle of one year.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Peas are annual plants, with a life cycle of one year.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "vegetable",
+      "basis": "judged, not sourced",
+      "why": "The sources say peas are eaten as a vegetable and grown as a fresh vegetable crop."
+    },
+    "part_we_eat": {
+      "value": "seeds_or_pods",
+      "quote": "Each pod contains several seeds (peas), which can have green or yellow cotyledons when mature.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Pea",
+      "title": "Pea",
+      "asked_for": "Pea plant",
+      "revision": 1378096580,
+      "fetched_on": "2026-10-06",
+      "sha256": "0a819904b277388af243d3e5cec3ea25621e8e8c352f529d2076da0976e96542"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Pea",
+      "title": "Pea",
+      "asked_for": "Pea",
+      "revision": 10994046,
+      "fetched_on": "2026-10-06",
+      "sha256": "f2b7b94b79aec5e1a27e0a4a77287770c86fd65928f6c3bdb65b7dc2430f0b4c"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

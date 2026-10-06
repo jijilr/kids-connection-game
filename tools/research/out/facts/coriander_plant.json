@@ -1,0 +1,54 @@
+{
+  "name": "Coriander plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Coriander (), or Coriandrum sativum, is an annual herb in the family Apiaceae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "The sources describe coriander as an annual herb that is grown and used in cooking, so it is still living."
+    },
+    "kind_of_plant": {
+      "value": "vegetable",
+      "quote": "All parts of the plant are edible, with the fresh leaves and dried seeds most traditionally used in cooking.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "part_we_eat": {
+      "value": "leaves",
+      "quote": "All parts of the plant are edible, with the fresh leaves and dried seeds most traditionally used in cooking.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Coriander",
+      "title": "Coriander",
+      "asked_for": "Coriander",
+      "revision": 1376096465,
+      "fetched_on": "2026-10-06",
+      "sha256": "4b2643e1b2f98449bdc11303366ead8516f1c3c9be028bad2808776cf1b99319"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Coriander",
+      "title": "Coriander",
+      "asked_for": "Coriander",
+      "revision": 10573097,
+      "fetched_on": "2026-10-06",
+      "sha256": "c18179851b772d98967c19abf9f0daba41c0c35b466c9bb8b00c78c7f48ad24e"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

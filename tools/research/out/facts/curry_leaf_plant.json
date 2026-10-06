@@ -1,0 +1,45 @@
+{
+  "name": "Curry leaf plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Bergera koenigii, synonym Murraya koenigii, and commonly known as curry tree, curry bush or sweet neem, is a tree in the citrus family Rutaceae, first described by Carl Linnaeus in 1767.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "The sources describe it as a tree that is native to several regions and has been introduced elsewhere, indicating it is still living."
+    },
+    "kind_of_plant": {
+      "value": "tree",
+      "quote": "Bergera koenigii, synonym Murraya koenigii, and commonly known as curry tree, curry bush or sweet neem, is a tree in the citrus family Rutaceae, first described by Carl Linnaeus in 1767.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "tree_academic": {
+      "value": true,
+      "quote": "Bergera koenigii, synonym Murraya koenigii, and commonly known as curry tree, curry bush or sweet neem, is a tree in the citrus family Rutaceae, first described by Carl Linnaeus in 1767.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Curry_tree",
+      "title": "Curry tree",
+      "asked_for": "Curry leaf",
+      "revision": 1373218266,
+      "fetched_on": "2026-10-06",
+      "sha256": "71a04bf10f9822d9225746138f34bd394eb280ae815cd307a7867cab4c1f57f8"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

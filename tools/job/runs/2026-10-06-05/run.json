@@ -1,0 +1,848 @@
+{
+  "id": "2026-10-06-05",
+  "started": "2026-10-06",
+  "rehearse": null,
+  "cap_inr": 60.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "plant/vegetable",
+        "chain": "Plants > Vegetable plants > What grows under the ground",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "under_the_ground"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [],
+        "offers": [
+          {
+            "name": "Carrot plant",
+            "familiar": 0.8,
+            "why": "orange carrot with leafy top",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Radish plant",
+            "familiar": 0.7,
+            "why": "white radish with green leaves",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Onion plant",
+            "familiar": 0.7,
+            "why": "round onion with green shoots",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Potato plant",
+            "familiar": 0.6,
+            "why": "brown potatoes dug from soil",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Garlic plant",
+            "familiar": 0.6,
+            "why": "white garlic bulb with leaves",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Beetroot plant",
+            "familiar": 0.6,
+            "why": "dark red round root",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Ginger plant",
+            "familiar": 0.5,
+            "why": "knobby ginger root with leaves",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Sweet potato plant",
+            "familiar": 0.5,
+            "why": "reddish sweet potato with leaves",
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "plant/vegetable",
+        "chain": "Plants > Vegetable plants > The leaves",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "leaves"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [],
+        "offers": [
+          {
+            "name": "Coriander plant",
+            "familiar": 0.9,
+            "why": "common herb in kitchens",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Cabbage plant",
+            "familiar": 0.9,
+            "why": "round leafy vegetable",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Mint plant",
+            "familiar": 0.85,
+            "why": "familiar herb with smell",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Curry leaf plant",
+            "familiar": 0.85,
+            "why": "used in cooking",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Spinach plant",
+            "familiar": 0.8,
+            "why": "common leafy vegetable",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Fenugreek plant",
+            "familiar": 0.8,
+            "why": "common methi leaves",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Mustard plant",
+            "familiar": 0.7,
+            "why": "yellow flowers and leaves",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Lettuce plant",
+            "familiar": 0.7,
+            "why": "leafy salad vegetable",
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "plant/vegetable",
+        "chain": "Plants > Vegetable plants > The seeds or pods",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [],
+        "offers": [
+          {
+            "name": "Pea plant",
+            "familiar": 0.8,
+            "why": "green pods with peas",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Bean plant",
+            "familiar": 0.8,
+            "why": "long green pods",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Cucumber plant",
+            "familiar": 0.8,
+            "why": "green cucumber with vine",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Pumpkin seeds",
+            "familiar": 0.8,
+            "why": "flat white seeds",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Coriander seeds",
+            "familiar": 0.8,
+            "why": "small round brown seeds",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Ladies finger plant",
+            "familiar": 0.7,
+            "why": "okra pods on plant",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Bottle gourd plant",
+            "familiar": 0.7,
+            "why": "large green gourd",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Bitter gourd plant",
+            "familiar": 0.7,
+            "why": "bumpy green vegetable",
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": []
+  },
+  "retry_held": false,
+  "things": [
+    {
+      "name": "Carrot plant",
+      "passed": false,
+      "why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "thing": {
+        "name": "Carrot plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "under_the_ground"
+        },
+        "familiar": 0.8,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.8,
+      "judged_not_sourced": [],
+      "ask": 0
+    },
+    {
+      "name": "Radish plant",
+      "passed": false,
+      "why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "thing": {
+        "name": "Radish plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "under_the_ground"
+        },
+        "familiar": 0.7,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.7,
+      "judged_not_sourced": [],
+      "ask": 0
+    },
+    {
+      "name": "Onion plant",
+      "passed": false,
+      "why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "thing": {
+        "name": "Onion plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "under_the_ground"
+        },
+        "familiar": 0.7,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.7,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 0
+    },
+    {
+      "name": "Potato plant",
+      "passed": false,
+      "familiar": 0.6,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 0
+    },
+    {
+      "name": "Garlic plant",
+      "passed": false,
+      "familiar": 0.6,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 0
+    },
+    {
+      "name": "Beetroot plant",
+      "passed": false,
+      "familiar": 0.6,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 0
+    },
+    {
+      "name": "Ginger plant",
+      "passed": false,
+      "familiar": 0.5,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 0
+    },
+    {
+      "name": "Sweet potato plant",
+      "passed": false,
+      "familiar": 0.5,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 0
+    },
+    {
+      "name": "Coriander plant",
+      "passed": false,
+      "why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "thing": {
+        "name": "Coriander plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "leaves"
+        },
+        "familiar": 0.9,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.9,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Cabbage plant",
+      "passed": false,
+      "why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "thing": {
+        "name": "Cabbage plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "leaves"
+        },
+        "familiar": 0.9,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.9,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Mint plant",
+      "passed": false,
+      "why": [
+        "it could not be settled that it belongs in 'Plants'",
+        "it could not be settled that it belongs in 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The leaves'",
+        "everything: no page was found for it"
+      ],
+      "thing": {
+        "name": "Mint plant",
+        "fields": {},
+        "familiar": 0.85,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.85,
+      "judged_not_sourced": [],
+      "ask": 1
+    },
+    {
+      "name": "Curry leaf plant",
+      "passed": false,
+      "why": [
+        "the pages point to 'Trees', not 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The leaves'"
+      ],
+      "thing": {
+        "name": "Curry leaf plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree",
+          "tree_academic": true
+        },
+        "familiar": 0.85,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "tree_academic": true,
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.85,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Spinach plant",
+      "passed": false,
+      "why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "thing": {
+        "name": "Spinach plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "leaves"
+        },
+        "familiar": 0.8,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.8,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Fenugreek plant",
+      "passed": false,
+      "why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "thing": {
+        "name": "Fenugreek plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "leaves"
+        },
+        "familiar": 0.8,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.8,
+      "judged_not_sourced": [
+        "extinct",
+        "kind_of_plant",
+        "part_we_eat"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Mustard plant",
+      "passed": false,
+      "why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "thing": {
+        "name": "Mustard plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "leaves"
+        },
+        "familiar": 0.7,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.7,
+      "judged_not_sourced": [],
+      "ask": 1
+    },
+    {
+      "name": "Pea plant",
+      "passed": false,
+      "why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "thing": {
+        "name": "Pea plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "familiar": 0.8,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "judged_not_sourced": [
+        "kind_of_plant"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Bean plant",
+      "passed": false,
+      "why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "thing": {
+        "name": "Bean plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "familiar": 0.8,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Cucumber plant",
+      "passed": false,
+      "why": [
+        "the pages point to 'The fruit', not 'The seeds or pods'"
+      ],
+      "thing": {
+        "name": "Cucumber plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "fruit"
+        },
+        "familiar": 0.8,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Pumpkin seeds",
+      "passed": false,
+      "why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "thing": {
+        "name": "Pumpkin seeds",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "familiar": 0.8,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "judged_not_sourced": [
+        "extinct",
+        "kind_of_plant"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Coriander seeds",
+      "passed": false,
+      "why": [
+        "it could not be settled that it belongs in 'Plants'",
+        "it could not be settled that it belongs in 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The seeds or pods'",
+        "everything: no page was found for it"
+      ],
+      "thing": {
+        "name": "Coriander seeds",
+        "fields": {},
+        "familiar": 0.8,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "judged_not_sourced": [],
+      "ask": 2
+    },
+    {
+      "name": "Ladies finger plant",
+      "passed": false,
+      "why": [
+        "it could not be settled that it belongs in 'Plants'",
+        "it could not be settled that it belongs in 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The seeds or pods'",
+        "everything: no page was found for it"
+      ],
+      "thing": {
+        "name": "Ladies finger plant",
+        "fields": {},
+        "familiar": 0.7,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.7,
+      "judged_not_sourced": [],
+      "ask": 2
+    },
+    {
+      "name": "Bottle gourd plant",
+      "passed": false,
+      "why": [
+        "the pages point to 'The fruit', not 'The seeds or pods'"
+      ],
+      "thing": {
+        "name": "Bottle gourd plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "fruit"
+        },
+        "familiar": 0.7,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.7,
+      "judged_not_sourced": [],
+      "ask": 2
+    },
+    {
+      "name": "Bitter gourd plant",
+      "passed": false,
+      "why": [
+        "the pages point to 'The fruit', not 'The seeds or pods'"
+      ],
+      "thing": {
+        "name": "Bitter gourd plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "fruit"
+        },
+        "familiar": 0.7,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-05"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.7,
+      "judged_not_sourced": [
+        "extinct",
+        "kind_of_plant"
+      ],
+      "ask": 2
+    }
+  ],
+  "sheets": [],
+  "stopped": "",
+  "spent_usd": {
+    "deepseek": 0.02,
+    "drawing": 0.0,
+    "picture_checks": 0.0
+  }
+}

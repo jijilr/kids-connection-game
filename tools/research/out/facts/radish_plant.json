@@ -1,0 +1,55 @@
+{
+  "name": "Radish plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "The radish (Raphanus sativus or Raphanus raphanistrum subsp. sativus) is a flowering plant in the mustard family, Brassicaceae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Domesticated in Asia, radishes are grown and consumed globally.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "vegetable",
+      "quote": "A radish is an edible root vegetable of the Brassicaceae family.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "part_we_eat": {
+      "value": "under_the_ground",
+      "quote": "Its large taproot is commonly used as a root vegetable, although the entire plant is edible and its leaves are sometimes used as a leaf vegetable.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Radish",
+      "title": "Radish",
+      "asked_for": "Radish",
+      "revision": 1375183622,
+      "fetched_on": "2026-10-06",
+      "sha256": "124b3efb9ce6e3234e86f411bcb9facbe7cda9c6263707d1429d78f5e9842e26"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Radish",
+      "title": "Radish",
+      "asked_for": "Radish",
+      "revision": 9843210,
+      "fetched_on": "2026-10-06",
+      "sha256": "3bf715975e17db1952640e835bd468cf4ac4ba2b76daa52de737dd3089b3d0ff"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

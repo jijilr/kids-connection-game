@@ -1,0 +1,44 @@
+{
+  "name": "Pumpkin seeds",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "A pumpkin seed, also known as a pepita (from the Mexican Spanish: pepita de calabaza, 'little seed of squash'), is the edible seed of a pumpkin or certain other cultivars of squash.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "Pumpkin seeds come from pumpkins and squash plants that are still grown and eaten today, so they are not extinct."
+    },
+    "kind_of_plant": {
+      "value": "vegetable",
+      "basis": "judged, not sourced",
+      "why": "Pumpkin seeds come from pumpkins, which are squash plants grown in gardens and eaten as vegetables."
+    },
+    "part_we_eat": {
+      "value": "seeds_or_pods",
+      "quote": "A pumpkin seed, also known as a pepita (from the Mexican Spanish: pepita de calabaza, 'little seed of squash'), is the edible seed of a pumpkin or certain other cultivars of squash.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Pumpkin_seed",
+      "title": "Pumpkin seed",
+      "asked_for": "Pumpkin seeds",
+      "revision": 1312229672,
+      "fetched_on": "2026-10-06",
+      "sha256": "2c84e05f1f4e3e3411a7bd9b7b500822b609712b4c4eb78a5fc9349e34a35926"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Mustard plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "The mustard plant is any one of several plant species in the genera Brassica, Rhamphospermum and Sinapis in the family Brassicaceae (the mustard family).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Mild white mustard (Sinapis hirta) grows wild in North Africa, the Middle East and Mediterranean Europe and has spread farther by long cultivation; brown or Indian mustard (B. juncea), originally from the foothills of the Himalaya, is grown commercially in the UK, Canada and the US; black mustard (B. nigra) in Argentina, Chile, the US and some European countries.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "vegetable",
+      "quote": "Many vegetables are cultivated varieties of mustard plants; domestication may have begun 6,000 years ago.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "part_we_eat": {
+      "value": "leaves",
+      "quote": "Some kinds of mustard plants have edible leaves.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Mustard_plant",
+      "title": "Mustard plant",
+      "asked_for": "Mustard plant",
+      "revision": 1376221441,
+      "fetched_on": "2026-10-06",
+      "sha256": "e4b272b2dd03f9f5bbfb73bd37ff8c57821f5f3178f777dfeb0794bc12a73be6"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Mustard_plant",
+      "title": "Mustard plant",
+      "asked_for": "Mustard plant",
+      "revision": 8972281,
+      "fetched_on": "2026-10-06",
+      "sha256": "6b76e9af918b872e019debdb48fe862b431c215cd2df74820bfc32edd12a4cd4"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "Fenugreek plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Fenugreek is a plant in the family Fabaceae.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "The sources describe fenugreek as an annual plant that is cultivated worldwide, so it is still living."
+    },
+    "kind_of_plant": {
+      "value": "vegetable",
+      "basis": "judged, not sourced",
+      "why": "Fenugreek is an herb whose leaves and seeds are eaten as food, so a parent would call it a vegetable plant rather than a tree, flower, or grain."
+    },
+    "part_we_eat": {
+      "value": "leaves",
+      "basis": "judged, not sourced",
+      "why": "The sources say fenugreek's leaves are used as a herb and eaten, so the part we eat is the leaves."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Fenugreek",
+      "title": "Fenugreek",
+      "asked_for": "Fenugreek",
+      "revision": 1367888200,
+      "fetched_on": "2026-10-06",
+      "sha256": "5043ecda46ee5bbd9fb434dba8c4dbbb76ace3cd84fa64a35a5176acfcabbb5f"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Fenugreek",
+      "title": "Fenugreek",
+      "asked_for": "Fenugreek",
+      "revision": 8826734,
+      "fetched_on": "2026-10-06",
+      "sha256": "314635b9cc8f826a24b830a5e870e0ba4fc45ecea5a1d4f3966056898900d6b1"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

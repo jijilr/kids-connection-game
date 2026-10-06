@@ -1,0 +1,55 @@
+{
+  "name": "Carrot plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "The carrot (Daucus carota subsp. sativus) is a root vegetable in the umbellifer family Apiaceae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Domesticated carrots are grown for food in many parts of the world.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "vegetable",
+      "quote": "The carrot (Daucus carota subsp. sativus) is a root vegetable in the umbellifer family Apiaceae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "part_we_eat": {
+      "value": "under_the_ground",
+      "quote": "Carrots are grown in the ground, and carrots roots are a common edible vegetable.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Carrot",
+      "title": "Carrot",
+      "asked_for": "Carrot",
+      "revision": 1375798146,
+      "fetched_on": "2026-10-06",
+      "sha256": "a099e79d837ad10a7e3335e2c87084f119315798d29773cfc6df8b075ec0b246"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Carrot",
+      "title": "Carrot",
+      "asked_for": "Carrot",
+      "revision": 10903312,
+      "fetched_on": "2026-10-06",
+      "sha256": "49622a8267c367881c824d8bef737e353badba50d111d534e16ced393e9f1cb1"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

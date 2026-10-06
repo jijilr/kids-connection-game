@@ -12857,12 +12857,521 @@
         "checked_by_ear": false,
         "clip": null
       }
+    },
+    "carrot_plant": {
+      "name": "Carrot plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.8,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "radish_plant": {
+      "name": "Radish plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.7,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "onion_plant": {
+      "name": "Onion plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.7,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "potato_plant": {
+      "name": "Potato plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.6,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "garlic_plant": {
+      "name": "Garlic plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.6,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "beetroot_plant": {
+      "name": "Beetroot plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.6,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "ginger_plant": {
+      "name": "Ginger plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.5,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "sweet_potato_plant": {
+      "name": "Sweet potato plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.5,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "coriander_plant": {
+      "name": "Coriander plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.9,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "cabbage_plant": {
+      "name": "Cabbage plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.9,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "mint_plant": {
+      "name": "Mint plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "it could not be settled that it belongs in 'Plants'",
+        "it could not be settled that it belongs in 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The leaves'",
+        "everything: no page was found for it"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.85,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "curry_leaf_plant": {
+      "name": "Curry leaf plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "the pages point to 'Trees', not 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The leaves'"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "tree_academic": true,
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.85,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "spinach_plant": {
+      "name": "Spinach plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.8,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "fenugreek_plant": {
+      "name": "Fenugreek plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.8,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "mustard_plant": {
+      "name": "Mustard plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.7,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "pea_plant": {
+      "name": "Pea plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "bean_plant": {
+      "name": "Bean plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "cucumber_plant": {
+      "name": "Cucumber plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "the pages point to 'The fruit', not 'The seeds or pods'"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "pumpkin_seeds": {
+      "name": "Pumpkin seeds",
+      "status": "waiting for the owner",
+      "status_why": [
+        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "coriander_seeds": {
+      "name": "Coriander seeds",
+      "status": "waiting for the owner",
+      "status_why": [
+        "it could not be settled that it belongs in 'Plants'",
+        "it could not be settled that it belongs in 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The seeds or pods'",
+        "everything: no page was found for it"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "ladies_finger_plant": {
+      "name": "Ladies finger plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "it could not be settled that it belongs in 'Plants'",
+        "it could not be settled that it belongs in 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The seeds or pods'",
+        "everything: no page was found for it"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.7,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "bottle_gourd_plant": {
+      "name": "Bottle gourd plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "the pages point to 'The fruit', not 'The seeds or pods'"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.7,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
+    },
+    "bitter_gourd_plant": {
+      "name": "Bitter gourd plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "the pages point to 'The fruit', not 'The seeds or pods'"
+      ],
+      "held_from": "job:2026-10-06-05",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.7,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ]
+      }
     }
   },
   "worked_out": {
     "things_by_status": {
       "in the game": 143,
-      "waiting for the owner": 8,
+      "waiting for the owner": 31,
       "kept for later": 5,
       "excluded": 3
     },
@@ -13171,6 +13680,123 @@
             "with_picture": 4
           }
         },
+        "could_be_filled_by": [
+          {
+            "name": "Carrot plant",
+            "status": "waiting for the owner",
+            "group": "under_the_ground"
+          },
+          {
+            "name": "Radish plant",
+            "status": "waiting for the owner",
+            "group": "under_the_ground"
+          },
+          {
+            "name": "Onion plant",
+            "status": "waiting for the owner",
+            "group": "under_the_ground"
+          },
+          {
+            "name": "Potato plant",
+            "status": "waiting for the owner",
+            "group": "under_the_ground"
+          },
+          {
+            "name": "Garlic plant",
+            "status": "waiting for the owner",
+            "group": "under_the_ground"
+          },
+          {
+            "name": "Beetroot plant",
+            "status": "waiting for the owner",
+            "group": "under_the_ground"
+          },
+          {
+            "name": "Ginger plant",
+            "status": "waiting for the owner",
+            "group": "under_the_ground"
+          },
+          {
+            "name": "Sweet potato plant",
+            "status": "waiting for the owner",
+            "group": "under_the_ground"
+          },
+          {
+            "name": "Coriander plant",
+            "status": "waiting for the owner",
+            "group": "leaves"
+          },
+          {
+            "name": "Cabbage plant",
+            "status": "waiting for the owner",
+            "group": "leaves"
+          },
+          {
+            "name": "Mint plant",
+            "status": "waiting for the owner",
+            "group": "leaves"
+          },
+          {
+            "name": "Curry leaf plant",
+            "status": "waiting for the owner",
+            "group": "leaves"
+          },
+          {
+            "name": "Spinach plant",
+            "status": "waiting for the owner",
+            "group": "leaves"
+          },
+          {
+            "name": "Fenugreek plant",
+            "status": "waiting for the owner",
+            "group": "leaves"
+          },
+          {
+            "name": "Mustard plant",
+            "status": "waiting for the owner",
+            "group": "leaves"
+          },
+          {
+            "name": "Pea plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Bean plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Cucumber plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Pumpkin seeds",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Coriander seeds",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Ladies finger plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Bottle gourd plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Bitter gourd plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          }
+        ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
@@ -13367,7 +13993,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "fill.py",
+    "by": "job:2026-10-06-05",
     "on": "2026-10-06"
   }
 }

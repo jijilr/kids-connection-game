@@ -1,0 +1,44 @@
+{
+  "name": "Bitter gourd plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Momordica charantia (commonly called bitter melon, gouya,  cerassee, goya, bitter apple, bitter gourd, bitter squash, balsam-pear, karela, karavila and many more names listed below) is a tropical and subtropical vine of the family Cucurbitaceae, widely grown in Asia, Africa, and the Caribbean for its edible fruit.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "The sources describe it as a widely grown, currently used food plant, so it is still living."
+    },
+    "kind_of_plant": {
+      "value": "vegetable",
+      "basis": "judged, not sourced",
+      "why": "It is a vine grown for its edible fruit, which is widely used as a vegetable in cooking."
+    },
+    "part_we_eat": {
+      "value": "fruit",
+      "quote": "Momordica charantia (commonly called bitter melon, gouya,  cerassee, goya, bitter apple, bitter gourd, bitter squash, balsam-pear, karela, karavila and many more names listed below) is a tropical and subtropical vine of the family Cucurbitaceae, widely grown in Asia, Africa, and the Caribbean for its edible fruit.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Momordica_charantia",
+      "title": "Momordica charantia",
+      "asked_for": "Bitter gourd",
+      "revision": 1378360676,
+      "fetched_on": "2026-10-06",
+      "sha256": "f79606fb69584a240590335f8a5315bdea825618c404aec9fafea07e87e57f64"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

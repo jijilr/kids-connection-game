@@ -1,0 +1,54 @@
+{
+  "name": "Bean plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "A bean is the seed of plants in many genera of the legume family (Fabaceae) used as a vegetable for human consumption or animal feed.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "Beans are widely cultivated and eaten today, so the bean plant is still living."
+    },
+    "kind_of_plant": {
+      "value": "vegetable",
+      "quote": "A bean is the seed of plants in many genera of the legume family (Fabaceae) used as a vegetable for human consumption or animal feed.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "part_we_eat": {
+      "value": "seeds_or_pods",
+      "quote": "The unripe seedpods of some varieties are also eaten whole as green beans or edamame (immature soybean).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Bean",
+      "title": "Bean",
+      "asked_for": "Bean",
+      "revision": 1373686563,
+      "fetched_on": "2026-10-06",
+      "sha256": "75d52dc6b03f22fb4b11b951df6dde3e80dea43b11e366b4ff1c10bbae0e20ed"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Bean",
+      "title": "Bean",
+      "asked_for": "Bean",
+      "revision": 9689892,
+      "fetched_on": "2026-10-06",
+      "sha256": "446a90ada78f8fd97c13eb5458937655906b708e823cf61fb979ac42b224d7bf"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}
