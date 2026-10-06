@@ -495,7 +495,8 @@ def game_sense(client, config, spend, dictionary: dict, things: dict, ask: dict,
               for value, label in definition["values"].items()]
     first, second = field_rules.sort_twice(client, config, spend, labels_along(dictionary, before) or "things of every kind",
                                            {"wording": definition["wording"], "values": values}, [name])
-    placed, unclear = field_rules.one_value_each([name], first, second, [v["key"] for v in values])
+    placed, unclear = field_rules.one_value_each([name], first, second, [v["key"] for v in values],
+                                                 {v["key"]: v["label"] for v in values})
     return placed.get(name), unclear.get(name, "")
 
 

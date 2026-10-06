@@ -106,9 +106,13 @@ def test_a_thing_in_the_game_without_a_picture_is_planned_for_drawing():
 
 # ------------------------------------------------------------------ a field is decided by four tests
 
-def stand_in(sorting: dict, checking: dict = None):
-    """In place of the two sorting calls: the parent's answer, and the checker's."""
+def stand_in(sorting: dict, checking: dict = None, not_birds: tuple = ()):
+    """In place of the sorting calls: the parent's answer, and the checker's. Asked what
+    kind of animal each new name is, it says a bird, except for those in `not_birds`."""
     def ask(client, config, spend, system, user, options=None):
+        if "What kind of animal is it?" in user:
+            kind = {name: "fish" if name in not_birds else "bird" for name in sorting}
+            return kind if system == field_rules.SORTER else {name: [value] for name, value in kind.items()}
         if system == field_rules.SORTER:
             return dict(sorting)
         return {name: [value] for name, value in sorting.items()} if checking is None else dict(checking)
@@ -129,14 +133,15 @@ def candidate() -> dict:
         {"key": "trees", "label": "In the trees", "members": ["Parrot", "Owl"], "new": ["Woodpecker", "Mynah", "Sparrow"]}]}
 
 
-def run_test(sorting_changes: dict = None, checking: dict = None, recognise=know_all, change=None) -> dict:
+def run_test(sorting_changes: dict = None, checking: dict = None, recognise=know_all, change=None,
+             not_birds: tuple = ()) -> dict:
     dictionary, things, path = small_world()
     field = candidate()
     if change:
         change(dictionary, things, field)
     sorting = {name: v["key"] for v in field["values"] for name in v["members"] + v["new"]}
     sorting.update(sorting_changes or {})
-    real, field_rules.reslib.ask = field_rules.reslib.ask, stand_in(sorting, checking)
+    real, field_rules.reslib.ask = field_rules.reslib.ask, stand_in(sorting, checking, not_birds)
     try:
         return field_rules.test(None, {"model": "x", "thinking": "off"}, None, dictionary, things, set(things), path,
                                 "Animals > Birds", field, recognise, 0.5)
@@ -159,6 +164,21 @@ def test_a_value_without_four_familiar_things_fails():
             o.update(recognised=o["value"] != "water", suitable=True, familiar=0.9)
     result = run_test(recognise=few_know)
     assert len(result["why"]) == 1 and "'On the water' has 2" in result["why"][0]
+
+
+def test_a_suggested_name_that_is_not_a_thing_of_the_circle_does_not_count():
+    # the water birds that were suggested turn out not to be birds at all: the value is left with two
+    result = run_test(not_birds=("Goose", "Pelican", "Flamingo"))
+    assert "'On the water' has 2" in result["why"][0]
+    assert result["not_of_this_circle"] == ["Goose", "Pelican", "Flamingo"]
+
+
+def test_where_the_proposer_and_the_checks_place_a_thing_differently_the_field_fails():
+    def crow_moved(dictionary, things, field):         # the proposer says the yard; both checks say the sky
+        field["values"][0]["members"].remove("Crow")
+        field["values"][2]["members"].append("Crow")
+    result = run_test(sorting_changes={"Crow": "sky"}, change=crow_moved)
+    assert "Crow - the proposer put it in 'yard', both checks in 'sky'" in result["why"][0]
 
 
 def test_a_thing_with_two_values_or_none_fails_and_so_does_a_disagreement():

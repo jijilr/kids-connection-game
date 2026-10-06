@@ -133,15 +133,19 @@ def _determines(known: dict, other: dict) -> float:
     return sum(max(v.count(x) for x in set(v)) for v in by_value.values()) / total if total else 0.0
 
 
-def one_value_each(names: list, first: dict, second: dict, values: list) -> tuple:
+def one_value_each(names: list, first: dict, second: dict, values: list, labels: dict = None) -> tuple:
     """Two separate sortings of the same things. A thing is placed only when both give it
-    the same single value. Returns (name -> value, name -> why it is not placed)."""
+    the same single value. An answer may name a group by its key or by its label.
+    Returns (name -> value, name -> why it is not placed)."""
     placed, unclear = {}, {}
+    known = {v: v for v in values}
+    known.update({key_of(label): v for v, label in (labels or {}).items()})
     for name in names:
         a = key_of(first.get(name, ""))
+        a = known.get(a, a)
         b = second.get(name)
         b = [key_of(x) for x in b] if isinstance(b, list) else [key_of(b)] if isinstance(b, str) else []
-        b = [x for x in b if x in values]
+        b = list(dict.fromkeys(known[x] for x in b if x in known))
         if a in values and b == [a]:
             placed[name] = a
         elif a == "several" or len(b) > 1:
@@ -236,9 +240,15 @@ def test(client, config, spend, dictionary: dict, things: dict, taken: set, path
 
     # 2. one value each, for the things already there and for the new names alike
     first, second = sort_twice(client, config, spend, chain, candidate, list(names) + list(offered))
-    placed, unclear = one_value_each(list(names) + list(offered), first, second, values)
+    placed, unclear = one_value_each(list(names) + list(offered), first, second, values, result["values"])
     result["placed"] = {names[n]: v for n, v in placed.items() if n in names}
     wrong = {n: why for n, why in unclear.items() if n in names}
+    # the proposer's own sorting is a third opinion: where it put a thing in another group than
+    # both checks did, the groups have no sharp edge (a crow: big, or small?)
+    said = {name: value["key"] for value in candidate["values"] for name in value["members"]}
+    for name, value in placed.items():
+        if name in names and said.get(name, value) != value:
+            wrong[name] = f"the proposer put it in '{said[name]}', both checks in '{value}'"
     if wrong:
         result["why"].append("not every thing has one value: " + "; ".join(f"{n} - {why}" for n, why in wrong.items()))
         return result
@@ -249,8 +259,22 @@ def test(client, config, spend, dictionary: dict, things: dict, taken: set, path
         result["why"].append("it is not a new field: " + same)
         return result
 
-    # 1. four familiar members for each value
+    # 1. four familiar members for each value. A new name counts only if it is a thing of this
+    #    circle at all (a toy, not an orange): two checks sort it among the circle's own neighbours.
     new = [{"name": n, "value": v, "familiar": 1.0} for n, v in placed.items() if n in offered]
+    if new:
+        parent_field, here = path[-1]
+        parent = dictionary["fields"][parent_field]
+        beside = [t for t in things.values() if all(t["fields"].get(f) == v for f, v in path[:-1])]
+        neighbours = {"wording": parent["wording"], "values": [
+            {"key": str(v), "label": label, "such_as": [t["name"] for t in beside if t["fields"].get(parent_field) == v][:4]}
+            for v, label in parent["values"].items()]}
+        above = " > ".join(dictionary["fields"][f]["values"][str(v)] for f, v in path[:-1]) or "things of every kind"
+        a, b = sort_twice(client, config, spend, above, neighbours, [o["name"] for o in new])
+        belongs, _ = one_value_each([o["name"] for o in new], a, b, [v["key"] for v in neighbours["values"]],
+                                    {v["key"]: v["label"] for v in neighbours["values"]})
+        result["not_of_this_circle"] = [o["name"] for o in new if belongs.get(o["name"]) != str(here)]
+        new = [o for o in new if belongs.get(o["name"]) == str(here)]
     for value in candidate["values"]:
         batch = [o for o in new if o["value"] == value["key"]]
         recognise(client, config, spend, {"chain": f"{chain} > {value['label']}"}, batch)
