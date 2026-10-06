@@ -614,9 +614,11 @@ def ground_thing(client, config, spend, dictionary: dict, ask: dict, offer: dict
                 "why": [f"it was {gone['status']} on purpose: " + "; ".join(gone.get("status_why", []))]}
     # "Pumpkin seeds" when Pumpkin plant is in the game: the same thing again, or a part of it
     kind = ask["fixed"].get("kind_of_thing")
+    # ...within the same circle: a river bank is land beside a river, not the river again
+    circle = list(ask["fixed"].items())[:len(str(ask.get("circle", "")).split("/"))] or [("kind_of_thing", kind)]
     for entry in cat.load()["things"].values():
         base = fetch.other_names(entry["name"])[-1].lower()
-        if (entry["status"] == cat.IN_GAME and entry["fields"].get("kind_of_thing") == kind
+        if (entry["status"] == cat.IN_GAME and all(entry["fields"].get(f) == v for f, v in circle)
                 and (name.lower() == base or name.lower().startswith(base + " "))):
             return {"name": name, "passed": False, "not_needed": True, "familiar": offer["familiar"],
                     "fields": dict(ask["fixed"]),
