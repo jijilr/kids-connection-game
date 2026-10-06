@@ -1,8 +1,8 @@
 {
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-10-06",
-  "dictionary_version": 3,
-  "things": 143,
+  "dictionary_version": 4,
+  "things": 157,
   "rules": {
     "weights": {
       "nearness": 3,
@@ -28,23 +28,23 @@
       "level": 1
     },
     "made_by_people": {
-      "boards_open": 1,
-      "level": 1
+      "boards_open": 3,
+      "level": 2
     }
   },
   "proposals": [
-    "nature_not_alive/sky",
     "nature_not_alive/water",
     "nature_not_alive/land",
     "nature_not_alive/ground",
-    "made_by_people/vehicle"
+    "animal/reptile",
+    "animal/bird"
   ],
   "circles": {
     "seed": {
       "label": "Everything",
       "steps_from_seed": 0,
       "branch": null,
-      "members": 143,
+      "members": 157,
       "open": true,
       "sorted_by": "kind_of_thing",
       "decisions": [],
@@ -70,16 +70,25 @@
         "field": "no field splits it four ways",
         "things": 4
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-10-06",
+          "what": "the owner held the proposed field",
+          "why": "held without a reason given; Vehicles and Things in the house go first",
+          "status": "waiting",
+          "retry_when": "the owner takes it up again"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.33,
         "unlocks": 0.33,
         "cheapness": 0.33
       },
-      "score": 2.8,
-      "move": "deepening",
-      "status": "proposable"
+      "score": 3.8,
+      "move": "widening",
+      "status": "held",
+      "held_by": "the owner: held without a reason given; Vehicles and Things in the house go first; until the owner takes it up again"
     },
     "animal/bird": {
       "label": "Birds",
@@ -94,12 +103,12 @@
       "decisions": [],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.33,
         "unlocks": 0.33,
         "cheapness": 0.29
       },
-      "score": 2.7,
-      "move": "deepening",
+      "score": 3.7,
+      "move": "widening",
       "status": "proposable"
     },
     "animal/fish": {
@@ -115,12 +124,12 @@
       "decisions": [],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.33,
         "unlocks": 0.33,
         "cheapness": 0.21
       },
-      "score": 2.6,
-      "move": "deepening",
+      "score": 3.6,
+      "move": "widening",
       "status": "proposable"
     },
     "animal/insect": {
@@ -136,12 +145,12 @@
       "decisions": [],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.33,
         "unlocks": 0.33,
         "cheapness": 0.25
       },
-      "score": 2.7,
-      "move": "deepening",
+      "score": 3.7,
+      "move": "widening",
       "status": "proposable"
     },
     "animal/reptile": {
@@ -163,12 +172,12 @@
       ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.33,
         "unlocks": 0.33,
         "cheapness": 0.33
       },
-      "score": 2.8,
-      "move": "deepening",
+      "score": 3.8,
+      "move": "widening",
       "status": "proposable"
     },
     "animal/amphibian": {
@@ -192,11 +201,11 @@
       ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.33,
         "unlocks": 0.0,
         "cheapness": 0.8
       },
-      "score": 3.1,
+      "score": 4.1,
       "move": "widening",
       "status": "rejected"
     },
@@ -242,12 +251,12 @@
       "decisions": [],
       "factors": {
         "nearness": 0.33,
-        "neglect": 0.0,
+        "neglect": 0.33,
         "unlocks": 0.33,
         "cheapness": 0.21
       },
-      "score": 2.1,
-      "move": "deepening",
+      "score": 3.1,
+      "move": "widening",
       "status": "held",
       "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
     },
@@ -264,12 +273,12 @@
       "decisions": [],
       "factors": {
         "nearness": 0.33,
-        "neglect": 0.0,
+        "neglect": 0.33,
         "unlocks": 0.33,
         "cheapness": 0.29
       },
-      "score": 2.2,
-      "move": "deepening",
+      "score": 3.2,
+      "move": "widening",
       "status": "held",
       "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
     },
@@ -286,12 +295,12 @@
       "decisions": [],
       "factors": {
         "nearness": 0.33,
-        "neglect": 0.0,
+        "neglect": 0.33,
         "unlocks": 0.33,
         "cheapness": 0.21
       },
-      "score": 2.1,
-      "move": "deepening",
+      "score": 3.1,
+      "move": "widening",
       "status": "held",
       "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
     },
@@ -308,12 +317,12 @@
       "decisions": [],
       "factors": {
         "nearness": 0.33,
-        "neglect": 0.0,
+        "neglect": 0.33,
         "unlocks": 0.33,
         "cheapness": 0.22
       },
-      "score": 2.1,
-      "move": "deepening",
+      "score": 3.1,
+      "move": "widening",
       "status": "held",
       "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
     },
@@ -321,7 +330,7 @@
       "label": "Plants",
       "steps_from_seed": 1,
       "branch": "plant",
-      "members": 17,
+      "members": 31,
       "open": true,
       "sorted_by": "kind_of_plant",
       "decisions": [],
@@ -348,13 +357,14 @@
       ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.33,
         "unlocks": 0.33,
         "cheapness": 0.2
       },
-      "score": 2.6,
-      "move": "deepening",
-      "status": "proposable"
+      "score": 3.6,
+      "move": "widening",
+      "status": "held",
+      "held_by": "the owner: thin groups, and one tree can truly give several things (a mango tree gives fruit, shade and wood), which risks a second solution; until a field is found in which each tree has one true value"
     },
     "plant/flower": {
       "label": "Flowers",
@@ -377,13 +387,14 @@
       ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.33,
         "unlocks": 0.33,
         "cheapness": 0.2
       },
-      "score": 2.6,
-      "move": "deepening",
-      "status": "proposable"
+      "score": 3.6,
+      "move": "widening",
+      "status": "held",
+      "held_by": "the owner: no four-way split that a four-year-old knows well; until a natural four-way split is found"
     },
     "plant/grass_grain": {
       "label": "Grasses and grains",
@@ -406,30 +417,22 @@
       ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.33,
         "unlocks": 0.33,
         "cheapness": 0.21
       },
-      "score": 2.6,
-      "move": "deepening",
-      "status": "proposable"
+      "score": 3.6,
+      "move": "widening",
+      "status": "held",
+      "held_by": "the owner: no four-way split that a four-year-old knows well; until a natural four-way split is found"
     },
     "plant/vegetable": {
       "label": "Vegetable plants",
       "steps_from_seed": 2,
       "branch": "plant",
-      "members": 4,
-      "open": false,
+      "members": 18,
+      "open": true,
       "sorted_by": "part_we_eat",
-      "missing": {
-        "field": null,
-        "short": {
-          "under_the_ground": 4,
-          "leaves": 4,
-          "seeds_or_pods": 4
-        },
-        "things": 12
-      },
       "decisions": [
         {
           "date": "2026-10-06",
@@ -437,17 +440,104 @@
           "why": "four clear groups a child sees at home and in the market",
           "status": "approved",
           "move": "widening"
+        },
+        {
+          "date": "2026-10-06",
+          "what": "the owner ruled that maize counts as a vegetable plant for this game, in 'the seeds or pods'",
+          "why": "the scientist's answer, a grass whose seeds are a grain, is kept apart in kind_of_plant_academic and never sorts a board",
+          "status": "approved",
+          "move": ""
         }
       ],
-      "factors": {
-        "nearness": 0.5,
-        "neglect": 0.0,
-        "unlocks": 0.33,
-        "cheapness": 0.25
+      "status": "open"
+    },
+    "plant/vegetable/fruit": {
+      "label": "The fruit",
+      "steps_from_seed": 3,
+      "branch": "plant",
+      "members": 4,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 12
       },
-      "score": 2.7,
-      "move": "deepening",
-      "status": "approved by the owner"
+      "decisions": [],
+      "factors": {
+        "nearness": 0.33,
+        "neglect": 0.33,
+        "unlocks": 0.33,
+        "cheapness": 0.2
+      },
+      "score": 3.1,
+      "move": "widening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+    },
+    "plant/vegetable/under_the_ground": {
+      "label": "What grows under the ground",
+      "steps_from_seed": 3,
+      "branch": "plant",
+      "members": 5,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 11
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.33,
+        "neglect": 0.33,
+        "unlocks": 0.33,
+        "cheapness": 0.21
+      },
+      "score": 3.1,
+      "move": "widening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+    },
+    "plant/vegetable/leaves": {
+      "label": "The leaves",
+      "steps_from_seed": 3,
+      "branch": "plant",
+      "members": 5,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 11
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.33,
+        "neglect": 0.33,
+        "unlocks": 0.33,
+        "cheapness": 0.21
+      },
+      "score": 3.1,
+      "move": "widening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+    },
+    "plant/vegetable/seeds_or_pods": {
+      "label": "The seeds or pods",
+      "steps_from_seed": 3,
+      "branch": "plant",
+      "members": 4,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 12
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.33,
+        "neglect": 0.33,
+        "unlocks": 0.33,
+        "cheapness": 0.2
+      },
+      "score": 3.1,
+      "move": "widening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
     },
     "nature_not_alive": {
       "label": "Things in nature that are not alive",
@@ -480,13 +570,14 @@
       ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.5,
+        "neglect": 0.67,
         "unlocks": 0.33,
         "cheapness": 0.2
       },
-      "score": 4.1,
+      "score": 4.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the owner: no four-way split that a four-year-old knows well; until a natural four-way split is found"
     },
     "nature_not_alive/water": {
       "label": "Water",
@@ -501,11 +592,11 @@
       "decisions": [],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.5,
+        "neglect": 0.67,
         "unlocks": 0.33,
         "cheapness": 0.2
       },
-      "score": 4.1,
+      "score": 4.6,
       "move": "widening",
       "status": "proposable"
     },
@@ -522,11 +613,11 @@
       "decisions": [],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.5,
+        "neglect": 0.67,
         "unlocks": 0.33,
         "cheapness": 0.22
       },
-      "score": 4.1,
+      "score": 4.6,
       "move": "widening",
       "status": "proposable"
     },
@@ -543,11 +634,11 @@
       "decisions": [],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.5,
+        "neglect": 0.67,
         "unlocks": 0.33,
         "cheapness": 0.21
       },
-      "score": 4.1,
+      "score": 4.6,
       "move": "widening",
       "status": "proposable"
     },
@@ -567,20 +658,35 @@
       "branch": "made_by_people",
       "members": 4,
       "open": false,
+      "sorted_by": "where_it_travels",
       "missing": {
-        "field": "no field splits it four ways",
+        "field": null,
+        "short": {
+          "road": 1,
+          "rails": 3,
+          "water": 4,
+          "air": 4
+        },
         "things": 12
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-10-06",
+          "what": "the owner approved the field where_it_travels as proposed: on the road, on rails, on water, in the air",
+          "why": "a natural four-way split that a four-year-old knows well",
+          "status": "approved",
+          "move": "widening"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.5,
+        "neglect": 0.0,
         "unlocks": 0.33,
-        "cheapness": 0.2
+        "cheapness": 0.25
       },
-      "score": 4.1,
-      "move": "widening",
-      "status": "proposable"
+      "score": 2.7,
+      "move": "deepening",
+      "status": "approved by the owner"
     },
     "made_by_people/toy": {
       "label": "Toys",
@@ -595,12 +701,12 @@
       "decisions": [],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.5,
+        "neglect": 0.0,
         "unlocks": 0.33,
         "cheapness": 0.24
       },
-      "score": 4.1,
-      "move": "widening",
+      "score": 2.6,
+      "move": "deepening",
       "status": "proposable"
     },
     "made_by_people/household": {
@@ -609,20 +715,34 @@
       "branch": "made_by_people",
       "members": 7,
       "open": false,
+      "sorted_by": "kind_of_house_thing",
       "missing": {
-        "field": "no field splits it four ways",
+        "field": null,
+        "short": {
+          "furniture": 1,
+          "cleaning": 4,
+          "electric": 4
+        },
         "things": 9
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-10-06",
+          "what": "the owner approved the field kind_of_house_thing as proposed: furniture, things to eat and drink with, things to clean with, things that run on electricity",
+          "why": "a natural four-way split that a four-year-old knows well",
+          "status": "approved",
+          "move": "deepening"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.5,
+        "neglect": 0.0,
         "unlocks": 0.33,
-        "cheapness": 0.24
+        "cheapness": 0.31
       },
-      "score": 4.1,
-      "move": "widening",
-      "status": "proposable"
+      "score": 2.8,
+      "move": "deepening",
+      "status": "approved by the owner"
     },
     "made_by_people/tool": {
       "label": "Tools",
@@ -634,16 +754,25 @@
         "field": "no field splits it four ways",
         "things": 11
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-10-06",
+          "what": "the owner held the proposed field",
+          "why": "held without a reason given; Vehicles and Things in the house go first",
+          "status": "waiting",
+          "retry_when": "the owner takes it up again"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.5,
+        "neglect": 0.0,
         "unlocks": 0.33,
         "cheapness": 0.21
       },
-      "score": 4.1,
-      "move": "widening",
-      "status": "proposable"
+      "score": 2.6,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "the owner: held without a reason given; Vehicles and Things in the house go first; until the owner takes it up again"
     },
     "made_by_people/building": {
       "label": "Buildings",
@@ -664,12 +793,12 @@
       ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.5,
+        "neglect": 0.0,
         "unlocks": 0.33,
         "cheapness": 0.24
       },
-      "score": 4.1,
-      "move": "widening",
+      "score": 2.6,
+      "move": "deepening",
       "status": "proposable"
     }
   }

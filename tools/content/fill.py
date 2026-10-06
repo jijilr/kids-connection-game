@@ -56,6 +56,8 @@ def main():
                     continue
                 if not applies(definition["expected_on"], thing["fields"]):
                     continue
+                if key not in values.get(name, {}) and definition.get("only_where_science_differs"):
+                    continue    # carried only where a scientist's answer differs: nothing to fill here
                 if key not in values.get(name, {}):
                     unanswered.append(f"{key}: needs '{name}', and the owner has approved no value for it")
                     continue

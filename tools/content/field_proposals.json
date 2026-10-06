@@ -206,7 +206,20 @@
         ]
       }
     },
-    "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in. 'Under the ground' is used and not 'root', so that potato and onion need no scientist's twin."
+    "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in. 'Under the ground' is used and not 'root', so that potato and onion need no scientist's twin.",
+    "rulings": [
+      "Maize counts as a vegetable plant for this game, in 'the seeds or pods'. The scientist's answer, a grass or grain, is recorded in kind_of_plant_academic (the owner, 6 Oct 2026)."
+    ],
+    "twins": {
+      "kind_of_plant_academic": {
+        "maize_plant": "grass_grain"
+      }
+    },
+    "notes": {
+      "maize_plant": {
+        "kind_of_plant_academic": "To a scientist maize is a tall grass, and its seeds are a cereal grain. In this game it is a vegetable plant whose seeds we eat."
+      }
+    }
   },
   "plant/tree": {
     "status": "held by the owner on 2026-10-06: besides the thin groups, one tree can truly give several things (a mango tree gives fruit, shade and wood), which risks a second solution",
@@ -413,7 +426,7 @@
     "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in. Rain is already listed as both sky and water, so it stays off this board."
   },
   "made_by_people/vehicle": {
-    "status": "awaiting the owner",
+    "status": "approved by the owner on 2026-10-06, as proposed",
     "field": "where_it_travels",
     "wording": "Where does it travel?",
     "proposer_confidence": "strong: the owner's own example. Rails is the thinnest group",
@@ -429,7 +442,7 @@
           "Auto-rickshaw",
           "Lorry",
           "Scooter",
-          "Jeep"
+          "Motorbike"
         ]
       },
       "rails": {
@@ -469,7 +482,7 @@
     "note": "Proposed on 2026-10-06, after the owner asked for circles with natural four-way splits a four-year-old knows well. The examples are suggestions; the job settles each one before it goes in."
   },
   "made_by_people/household": {
-    "status": "awaiting the owner",
+    "status": "approved by the owner on 2026-10-06, as proposed",
     "field": "kind_of_house_thing",
     "wording": "What kind of thing in the house is it?",
     "proposer_confidence": "strong: four groups a child meets every day. A thing that both cleans and runs on electricity, such as a washing machine, must stay off the board",
@@ -519,14 +532,14 @@
           "Television",
           "Light bulb",
           "Fridge",
-          "Iron"
+          "Electric iron"
         ]
       }
     },
     "note": "Proposed on 2026-10-06, after the owner asked for circles with natural four-way splits a four-year-old knows well. The examples are suggestions; the job settles each one before it goes in."
   },
   "made_by_people/tool": {
-    "status": "awaiting the owner",
+    "status": "held by the owner on 2026-10-06",
     "field": "what_tool_does",
     "wording": "What do we do with it?",
     "proposer_confidence": "middling: cutting, digging and fixing are clear; the fourth group is thinner, and a knife is also a kitchen thing",
@@ -578,7 +591,7 @@
     "note": "Proposed on 2026-10-06, after the owner asked for circles with natural four-way splits a four-year-old knows well. The examples are suggestions; the job settles each one before it goes in."
   },
   "animal/mammal": {
-    "status": "awaiting the owner",
+    "status": "held by the owner on 2026-10-06",
     "field": "where_mammal_lives",
     "wording": "Where does it live?",
     "proposer_confidence": "middling: farm and wild are full already; pets and sea animals are thinner. Animals is also the deepest branch, so the engine would widen elsewhere first",

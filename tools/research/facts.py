@@ -100,6 +100,9 @@ def describe(dictionary: dict) -> str:
             f"{k} is {' or '.join(v) if isinstance(v, list) else v}" for k, v in rule.items()) + "."
         sense = {"everyday": " Use the everyday meaning, as a parent would say it to a child.",
                  "academic": " Use the meaning a scientist would give."}.get(field.get("meaning"), "")
+        if field.get("only_where_science_differs"):
+            sense += (" Answer this one ONLY if a sentence shows that a scientist's answer differs from the "
+                      "everyday one; otherwise leave it out, and do not list it under cannot_tell.")
         choices = "; ".join(f"{value} ({label})" for value, label in field["values"].items())
         lines.append(f'- {key}: "{field["wording"]}" Choices: {choices}. {when}{sense}')
     return "\n".join(lines)
@@ -203,10 +206,16 @@ def ground(client, config, spend, dictionary: dict, name: str) -> dict:
                              "value": verdict["value"]})
             elif verdict:
                 kept[key] = verdict
-    weak = [w for w in weak if w["field"] not in kept]
+    # a field carried only where science differs is never missed, and is dropped when it says
+    # the same as the everyday field beside it
+    differs_only = {k for k, definition in dictionary["fields"].items() if definition.get("only_where_science_differs")}
+    for key in differs_only & set(kept):
+        if kept[key]["value"] == kept.get(dictionary["fields"][key]["everyday_partner"], {}).get("value"):
+            del kept[key]
+    weak = [w for w in weak if w["field"] not in kept and w["field"] not in differs_only]
     seen = lambda key: [w for w in weak if w["field"] == key]
     for key in order:
-        expected = applies(dictionary["fields"][key]["expected_on"], kept)
+        expected = applies(dictionary["fields"][key]["expected_on"], kept) and key not in differs_only
         if expected and key not in kept and not seen(key):
             weak.append({"field": key, "why": "the model gave no answer for it"})
     # a field that was judged in the end keeps only the judgement's own complaint, if any

@@ -140,6 +140,11 @@ def judge(circles: dict, branches: dict, old: dict, proposals: dict):
             circle["status"] = "rejected"
         elif "approved" in statuses:
             circle["status"] = "approved by the owner"
+        elif statuses and statuses[-1] == "waiting":
+            # the owner held it: it is not proposed again until what he waits for has come
+            last = [d for d in circle["decisions"] if d.get("status")][-1]
+            circle["status"] = "held"
+            circle["held_by"] = "the owner: " + last["why"] + (f"; until {last['retry_when']}" if last.get("retry_when") else "")
         elif "one_solution" in missing:
             circle["status"] = "held"
             circle["held_by"] = "one clean solution: " + missing["one_solution"]

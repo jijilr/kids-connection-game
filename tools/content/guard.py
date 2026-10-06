@@ -37,8 +37,12 @@ def problems(dictionary: dict, store: dict) -> list:
                 out.append(f"{key}: '{name}: depends' needs a note saying why")
         for name, definition in fields.items():
             expected = applies(definition["expected_on"], thing["fields"])
-            if expected and name not in thing["fields"]:
+            differs_only = definition.get("only_where_science_differs")
+            if expected and name not in thing["fields"] and not differs_only:
                 out.append(f"{key}: missing '{name}', which the dictionary expects on it")
+            if differs_only and thing["fields"].get(name) is not None \
+                    and thing["fields"].get(name) == thing["fields"].get(definition["everyday_partner"]):
+                out.append(f"{key}: '{name}' is the same as its everyday value; it is recorded only where science differs")
             if not expected and name in thing["fields"]:
                 out.append(f"{key}: carries '{name}', which does not apply to it")
         for name in thing.get("notes", {}):

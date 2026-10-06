@@ -1,13 +1,14 @@
 {
-  "version": 3,
-  "status": "version 3 approved by the owner on 2026-10-06 (versions 1 and 2 the same day). The game reads this file.",
+  "version": 4,
+  "status": "version 4 approved by the owner on 2026-10-06 (versions 1 to 3 the same day). The game reads this file.",
   "about": "Every field a thing may carry, and the only values that field may take. A field that does not apply to a thing is left out of that thing; it is never written as 'not applicable'. The wording is what a child sees or hears; it is not data.",
   "rules": [
     "A field holds the everyday meaning, which is what the game sorts by.",
     "An _academic field is added only where science disagrees with the everyday meaning. It never sorts a board and never marks a child wrong.",
     "A new field enters this file only after the owner has approved its values, and the version number then goes up by one.",
     "A thing that truly fits more than one value of a field lists them all, and stays off boards sorted by that field.",
-    "The value 'depends' is only for things experts debate. It needs a note saying why, and such a thing also stays off boards sorted by that field."
+    "The value 'depends' is only for things experts debate. It needs a note saying why, and such a thing also stays off boards sorted by that field.",
+    "An _academic field marked `only_where_science_differs` is carried only by the things for which a scientist's answer differs from the everyday one. It is absent everywhere else, and it never sorts a board."
   ],
   "fields": {
     "kind_of_thing": {
@@ -154,6 +155,51 @@
         "kind_of_plant": "vegetable"
       },
       "since": 3
+    },
+    "kind_of_plant_academic": {
+      "wording": "What kind of plant is it to a scientist?",
+      "meaning": "academic",
+      "everyday_partner": "kind_of_plant",
+      "values": {
+        "tree": "Trees",
+        "flower": "Flowers",
+        "grass_grain": "Grasses and grains",
+        "vegetable": "Vegetable plants"
+      },
+      "expected_on": {
+        "kind_of_thing": "plant"
+      },
+      "only_where_science_differs": true,
+      "sorts_boards": false,
+      "since": 4
+    },
+    "where_it_travels": {
+      "wording": "Where does it travel?",
+      "meaning": "everyday",
+      "values": {
+        "road": "On the road",
+        "rails": "On rails",
+        "water": "On water",
+        "air": "In the air"
+      },
+      "expected_on": {
+        "kind_of_made_thing": "vehicle"
+      },
+      "since": 4
+    },
+    "kind_of_house_thing": {
+      "wording": "What kind of thing in the house is it?",
+      "meaning": "everyday",
+      "values": {
+        "furniture": "Furniture",
+        "eating": "Things to eat and drink with",
+        "cleaning": "Things to clean with",
+        "electric": "Things that run on electricity"
+      },
+      "expected_on": {
+        "kind_of_made_thing": "household"
+      },
+      "since": 4
     }
   }
 }
