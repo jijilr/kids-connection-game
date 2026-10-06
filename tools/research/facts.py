@@ -60,7 +60,7 @@ SECOND_READER = "You check a claim against a quoted sentence. You judge only fro
 
 SECOND_TASK = """Each item says something about "{name}" and gives the sentence it is said to come from.
 
-"supported": would a careful reader agree, from this sentence alone, that the statement is true of {name}? An everyday reading is enough: a sentence saying it is "a motor vehicle" shows it is a vehicle; a sentence saying people drink from it shows it is a thing in the house. Answer false if the sentence is about something else, or does not show it.
+"supported": would a careful reader agree, from this sentence alone, that {name} belongs in that group? An everyday reading is enough: a sentence saying it is "a motor vehicle" shows it belongs with Vehicles; "a building where people go to pray" shows it belongs with Buildings; a sentence saying people drink from it shows it belongs with Things in the house. Answer false if the sentence is about something else, or does not show it.
 
 Return JSON: {{"items": [{{"id": "a", "supported": true}}]}}
 
@@ -138,8 +138,9 @@ def ground(client, config, spend, dictionary: dict, name: str) -> dict:
     if candidates:
         keys = list(candidates)
         listing = "\n".join(
-            f'{chr(97 + i)}. statement: {name} - {dictionary["fields"][k]["wording"]} '
-            f'{dictionary["fields"][k]["values"][candidates[k]["value"]]}.\n   quote: "{candidates[k]["quote"]}"'
+            f'{chr(97 + i)}. statement: {name} belongs in the group '
+            f'"{dictionary["fields"][k]["values"][candidates[k]["value"]]}". '
+            f'(The game asks: {dictionary["fields"][k]["wording"]})\n   quote: "{candidates[k]["quote"]}"'
             for i, k in enumerate(keys))
         verdicts = {str(v.get("id")): v.get("supported") for v in
                     ask(client, config, spend, SECOND_READER, SECOND_TASK.format(name=name, items=listing),

@@ -1,8 +1,9 @@
 """Move things the owner has approved out of the review queue and into the data.
 
-A drafted thing is held whenever the drafter or the checker had a doubt. The owner
-knows the child; when he says yes, the thing goes in as drafted, marked as approved by
-him. Nothing is changed about it here except that mark.
+A drafted thing is held whenever the drafter, the checker or the job had a doubt. The
+owner knows the child; when he says yes, the thing goes in as drafted, marked as
+approved by him. Nothing is changed about it here except that mark. A thing approved
+this way has no picture yet: the next run of tools/prepare_next.py draws it.
 
     python tools/content/approve.py "Volcano" "Desert" "Cave"
 """
@@ -24,7 +25,7 @@ def main():
     queue = master.queue_view(master.load())["for_the_owner"]
 
     wanted = {slug(name) for name in names}
-    found = [e for e in queue if slug(e["name"]) in wanted and e.get("from", "").startswith("check:")]
+    found = [e for e in queue if slug(e["name"]) in wanted and e.get("from", "").startswith(("check:", "job:"))]
     missing = wanted - {slug(e["name"]) for e in found}
     if missing:
         raise SystemExit(f"Not in the queue as a drafted thing: {sorted(missing)}. Nothing changed.")
