@@ -1,0 +1,4001 @@
+{
+  "id": "2026-10-07-03",
+  "started": "2026-10-07",
+  "rehearse": null,
+  "cap_inr": 200.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "nature_not_alive/land",
+        "chain": "Things in nature that are not alive > Places on land > Flat land",
+        "fixed": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "land",
+          "shape_of_the_land": "flat"
+        },
+        "need": 3,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Field",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Plain",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Meadow",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Farm",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Park",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "nature_not_alive/land",
+        "chain": "Things in nature that are not alive > Places on land > Land beside water",
+        "fixed": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "land",
+          "shape_of_the_land": "by_water"
+        },
+        "need": 3,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "River bank",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Lake shore",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Pond edge",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Island",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "offers_1": [
+          {
+            "name": "Waterfall",
+            "familiar": 0.8,
+            "why": "Falling water, exciting to see",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Stream",
+            "familiar": 0.7,
+            "why": "Small flowing water, like a tiny river",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "offers_2": [
+          {
+            "name": "Canal",
+            "familiar": 0.6,
+            "why": "Man-made waterway, seen in some areas.",
+            "recognised": false,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Backwater",
+            "familiar": 0.5,
+            "why": "Coastal water, known in Kerala but less common elsewhere.",
+            "recognised": false,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "nature_not_alive/land",
+        "chain": "Things in nature that are not alive > Places on land > Hollows and holes in the land",
+        "fixed": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "land",
+          "shape_of_the_land": "hollow"
+        },
+        "need": 3,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Pit",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Tunnel",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Well",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Ditch",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Valley",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Hole",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "offers_1": [
+          {
+            "name": "Pothole",
+            "familiar": 0.9,
+            "why": "A deep hole in a road, often filled with water.",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Burrow",
+            "familiar": 0.8,
+            "why": "A hole or tunnel dug by a small animal, like a rabbit.",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Canyon",
+            "familiar": 0.7,
+            "why": "A deep, narrow valley with steep sides, like a big ditch.",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Crater",
+            "familiar": 0.7,
+            "why": "A bowl-shaped hole at the top of a volcano or where a meteor hit.",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Sinkhole",
+            "familiar": 0.6,
+            "why": "A sudden hole in the ground where the surface has collapsed.",
+            "recognised": false,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Grotto",
+            "familiar": 0.5,
+            "why": "A small picturesque cave, often near water.",
+            "recognised": false,
+            "suitable": true,
+            "own_thing": false
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "nature_not_alive/land",
+        "chain": "Things in nature that are not alive > Places on land > High land",
+        "fixed": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "land",
+          "shape_of_the_land": "high"
+        },
+        "need": 1,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Cliff",
+            "familiar": 0.85,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "animal/mammal",
+        "chain": "Animals > Mammals > Pets at home",
+        "fixed": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "mammal",
+          "pet_farm_or_wild": "pet"
+        },
+        "need": 1,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Guinea Pig",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Hamster",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "animal/mammal",
+        "chain": "Animals > Mammals > Farm animals",
+        "fixed": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "mammal",
+          "pet_farm_or_wild": "farm"
+        },
+        "need": 1,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Sheep",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Pig",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Donkey",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Buffalo",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "animal/mammal",
+        "chain": "Animals > Mammals > Wild animals in water",
+        "fixed": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "mammal",
+          "pet_farm_or_wild": "wild_water"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Whale",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Dolphin",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Seal",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Walrus",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Otter",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "animal/bird",
+        "chain": "Animals > Birds > Farm animals",
+        "fixed": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "pet_farm_or_wild_of_bird": "farm"
+        },
+        "need": 1,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Rooster",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Turkey",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Goose",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Ostrich",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "offers_1": [
+          {
+            "name": "Kingfisher",
+            "familiar": 0.7,
+            "why": "bright bird seen near water",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Swan",
+            "familiar": 0.7,
+            "why": "white bird in parks and stories",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Lovebird",
+            "familiar": 0.7,
+            "why": "small colorful pet bird",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Myna",
+            "familiar": 0.6,
+            "why": "common bird in Indian neighborhoods",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "offers_2": [
+          {
+            "name": "Flamingo",
+            "familiar": 0.7,
+            "why": "pink bird seen in pictures",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Woodpecker",
+            "familiar": 0.7,
+            "why": "bird with long beak in stories",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Vulture",
+            "familiar": 0.6,
+            "why": "big bird seen in pictures",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "animal/bird",
+        "chain": "Animals > Birds > Pets at home",
+        "fixed": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "pet_farm_or_wild_of_bird": "pet"
+        },
+        "need": 3,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Budgie",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Lovebird",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Canary",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Cockatiel",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Myna",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Finch",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "animal/bird",
+        "chain": "Animals > Birds > Wild animals in water",
+        "fixed": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "pet_farm_or_wild_of_bird": "wild_water"
+        },
+        "need": 3,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Seagull",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Pelican",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Swan",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "offers_1": [
+          {
+            "name": "Flamingo",
+            "familiar": 0.85,
+            "why": "Pink bird with long legs, seen in groups.",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Swan",
+            "familiar": 0.8,
+            "why": "Large white bird seen in ponds and lakes.",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Stork",
+            "familiar": 0.7,
+            "why": "Tall bird with long beak, often near water.",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Kingfisher",
+            "familiar": 0.7,
+            "why": "Bright blue bird that dives for fish.",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Crane",
+            "familiar": 0.7,
+            "why": "Tall bird with long neck, seen in wetlands.",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Heron",
+            "familiar": 0.6,
+            "why": "Long-legged bird that stands in water.",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Ibis",
+            "familiar": 0.5,
+            "why": "Bird with long curved beak, found near water.",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/building",
+        "chain": "Things people make > Buildings > Cross over or climb up",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "cross"
+        },
+        "need": 2,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Flyover",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Footbridge",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Subway",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/building",
+        "chain": "Things people make > Buildings > Pray",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "pray"
+        },
+        "need": 3,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Church",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Mosque",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Gurudwara",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Shrine",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Monastery",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Synagogue",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/building",
+        "chain": "Things people make > Buildings > Buy and sell",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "buy"
+        },
+        "need": 3,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Market",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Mall",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Supermarket",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Bakery",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Stall",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/building",
+        "chain": "Things people make > Buildings > Get well",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "heal"
+        },
+        "need": 3,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Clinic",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Nursing home",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Health centre",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Doctor's office",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      }
+    ],
+    "circles": [
+      {
+        "circle": "nature_not_alive/ground",
+        "label": "Rocks and soil",
+        "chain": "Things in nature that are not alive > Rocks and soil",
+        "needs_field": true,
+        "expect_things": 11,
+        "done": true
+      },
+      {
+        "circle": "nature_not_alive/sky",
+        "label": "Things in the sky",
+        "chain": "Things in nature that are not alive > Things in the sky",
+        "needs_field": true,
+        "expect_things": 16,
+        "done": true
+      },
+      {
+        "circle": "nature_not_alive/water",
+        "label": "Water",
+        "chain": "Things in nature that are not alive > Water",
+        "needs_field": true,
+        "expect_things": 16,
+        "done": true
+      },
+      {
+        "circle": "nature_not_alive/land",
+        "label": "Places on land",
+        "chain": "Things in nature that are not alive > Places on land",
+        "needs_field": true,
+        "expect_things": 14,
+        "field_added": true,
+        "asks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "done": true
+      },
+      {
+        "circle": "animal/mammal",
+        "label": "Mammals",
+        "chain": "Animals > Mammals",
+        "needs_field": true,
+        "expect_things": 8,
+        "field_added": true,
+        "asks": [
+          4,
+          5,
+          6
+        ],
+        "done": true
+      },
+      {
+        "circle": "animal/reptile",
+        "label": "Reptiles",
+        "chain": "Animals > Reptiles",
+        "needs_field": true,
+        "expect_things": 8,
+        "done": true
+      },
+      {
+        "circle": "animal/bird",
+        "label": "Birds",
+        "chain": "Animals > Birds",
+        "needs_field": true,
+        "expect_things": 10,
+        "field_added": true,
+        "asks": [
+          7,
+          8,
+          9
+        ],
+        "done": true
+      },
+      {
+        "circle": "animal/insect",
+        "label": "Insects",
+        "chain": "Animals > Insects",
+        "needs_field": true,
+        "expect_things": 12,
+        "done": true
+      },
+      {
+        "circle": "animal/fish",
+        "label": "Fish",
+        "chain": "Animals > Fish",
+        "needs_field": true,
+        "expect_things": 15,
+        "done": true
+      },
+      {
+        "circle": "plant/tree",
+        "label": "Trees",
+        "chain": "Plants > Trees",
+        "needs_field": true,
+        "expect_things": 16,
+        "done": true
+      },
+      {
+        "circle": "plant/flower",
+        "label": "Flowers",
+        "chain": "Plants > Flowers",
+        "needs_field": true,
+        "expect_things": 16,
+        "done": true
+      },
+      {
+        "circle": "plant/grass_grain",
+        "label": "Grasses and grains",
+        "chain": "Plants > Grasses and grains",
+        "needs_field": true,
+        "expect_things": 15,
+        "done": true
+      },
+      {
+        "circle": "made_by_people/toy",
+        "label": "Toys",
+        "chain": "Things people make > Toys",
+        "needs_field": true,
+        "expect_things": 13,
+        "done": true
+      },
+      {
+        "circle": "made_by_people/tool",
+        "label": "Tools",
+        "chain": "Things people make > Tools",
+        "needs_field": true,
+        "expect_things": 15,
+        "done": true
+      },
+      {
+        "circle": "made_by_people/building",
+        "label": "Buildings",
+        "chain": "Things people make > Buildings",
+        "needs_field": true,
+        "expect_things": 13,
+        "field_added": true,
+        "asks": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": [],
+    "held_back": [
+      "Amphibians: rejected",
+      "Land hunters: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Land grazers: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Flyers: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Swimmers: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "The fruit: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "What grows under the ground: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "The leaves: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "The seeds or pods: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "On the road: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "On rails: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "On water: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "In the air: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Furniture: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Things to eat and drink with: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Things to clean with: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Things that run on electricity: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+    ],
+    "played": null
+  },
+  "retry_held": true,
+  "things": [
+    {
+      "name": "Field",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Field",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "land",
+          "shape_of_the_land": "flat"
+        },
+        "familiar": 0.9,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "flat"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_nature",
+        "kind_of_thing",
+        "shape_of_the_land"
+      ],
+      "ask": 0,
+      "draw": "A flat green field of crops in India, whole and open, with rows of small plants growing on brown soil, under a clear sky",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_5_01_c1"
+    },
+    {
+      "name": "Plain",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Plain",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "land",
+          "shape_of_the_land": "flat"
+        },
+        "familiar": 0.8,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "flat"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "draw": "A wide, flat green grassy plain with no hills or mountains, stretching to the horizon, with a few small trees and a river, in natural green and brown colors, as seen in India",
+      "tries": 2,
+      "tile": "job_2026_10_07_03_7_01_c1",
+      "no_tile": "no tile of it passed the checks after 1 sheet(s)"
+    },
+    {
+      "name": "Meadow",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Meadow",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "land",
+          "shape_of_the_land": "flat"
+        },
+        "familiar": 0.7,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "flat"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_nature",
+        "shape_of_the_land"
+      ],
+      "ask": 0,
+      "draw": "A wide flat green meadow of tall grass and small wildflowers, open under the sky, with a few scattered bushes at the edges, no trees in the middle",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_5_01_c3"
+    },
+    {
+      "name": "Farm",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'Things people make', not 'Things in nature that are not alive'"
+      ],
+      "thing": {
+        "name": "Farm",
+        "fields": {
+          "kind_of_thing": "made_by_people"
+        },
+        "familiar": 0.9,
+        "reviewed": 6,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "flat"
+      },
+      "familiar": 0.9,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_thing"
+      ],
+      "ask": 0
+    },
+    {
+      "name": "Park",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'Things people make', not 'Things in nature that are not alive'"
+      ],
+      "thing": {
+        "name": "Park",
+        "fields": {
+          "kind_of_thing": "made_by_people"
+        },
+        "familiar": 0.9,
+        "reviewed": 6,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "flat"
+      },
+      "familiar": 0.9,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0
+    },
+    {
+      "name": "River bank",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.8,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "why": [
+        "it is River again, or a part of it, and that is already in the game"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Lake shore",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.7,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "why": [
+        "it is Lake again, or a part of it, and that is already in the game"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Pond edge",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.7,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "why": [
+        "it is Pond again, or a part of it, and that is already in the game"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Island",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Island",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "land",
+          "shape_of_the_land": "by_water"
+        },
+        "familiar": 0.9,
+        "reviewed": 6,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "shape_of_the_land"
+      ],
+      "ask": 1,
+      "not_drawn": true,
+      "no_tile": "its facts passed, but only 1 of the 3 things the group needs did, so it was not drawn. A later run carries on from here",
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Waterfall",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Places on land': it fits more than one group: water and land"
+      ],
+      "thing": {
+        "name": "Waterfall",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "water"
+        },
+        "familiar": 0.8,
+        "reviewed": 6,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Stream",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'Water', not 'Places on land'"
+      ],
+      "thing": {
+        "name": "Stream",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "water"
+        },
+        "familiar": 0.7,
+        "reviewed": 6,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "familiar": 0.7,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 1
+    },
+    {
+      "name": "Canal",
+      "passed": false,
+      "familiar": 0.6,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Backwater",
+      "passed": false,
+      "familiar": 0.5,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Pit",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Places on land': it fits no group"
+      ],
+      "thing": {
+        "name": "Pit",
+        "fields": {
+          "kind_of_thing": "nature_not_alive"
+        },
+        "familiar": 0.8,
+        "reviewed": 6,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "hollow"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_thing"
+      ],
+      "ask": 2,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Tunnel",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'Things people make', not 'Things in nature that are not alive'"
+      ],
+      "thing": {
+        "name": "Tunnel",
+        "fields": {
+          "kind_of_thing": "made_by_people"
+        },
+        "familiar": 0.9,
+        "reviewed": 6,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "hollow"
+      },
+      "familiar": 0.9,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 2
+    },
+    {
+      "name": "Well",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'Things people make', not 'Things in nature that are not alive'"
+      ],
+      "thing": {
+        "name": "Well",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household"
+        },
+        "familiar": 0.9,
+        "reviewed": 6,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_made_thing": "household",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "hollow"
+      },
+      "familiar": 0.9,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Ditch",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'Things people make', not 'Things in nature that are not alive'"
+      ],
+      "thing": {
+        "name": "Ditch",
+        "fields": {
+          "kind_of_thing": "made_by_people"
+        },
+        "familiar": 0.7,
+        "reviewed": 6,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "hollow"
+      },
+      "familiar": 0.7,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 2
+    },
+    {
+      "name": "Valley",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Valley",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "land",
+          "shape_of_the_land": "hollow"
+        },
+        "familiar": 0.9,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "hollow"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 2,
+      "draw": "A green valley between two brown hills, with a blue river flowing along its flat floor from one end to the other, open grassy sides, under clear sky",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_5_01_c4"
+    },
+    {
+      "name": "Hole",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Places on land': it fits no group"
+      ],
+      "thing": {
+        "name": "Hole",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground"
+        },
+        "familiar": 0.9,
+        "reviewed": 6,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "hollow"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_nature"
+      ],
+      "ask": 2,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Pothole",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Pothole",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "land",
+          "shape_of_the_land": "hollow"
+        },
+        "familiar": 0.9,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "hollow"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 2,
+      "draw": "A shallow round hole in dry brown ground filled with muddy water, ringed by a low grassy rim, seen in India",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_5_01_c5"
+    },
+    {
+      "name": "Burrow",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Places on land': it fits no group"
+      ],
+      "thing": {
+        "name": "Burrow",
+        "fields": {
+          "kind_of_thing": "nature_not_alive"
+        },
+        "familiar": 0.8,
+        "reviewed": 6,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "hollow"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 2,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Canyon",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Canyon",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "land",
+          "shape_of_the_land": "hollow"
+        },
+        "familiar": 0.7,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "hollow"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 2,
+      "draw": "A deep, wide rocky canyon with steep brown and red cliff walls, a river flowing along the bottom, dry ground around it, under a clear sky",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_5_01_c6"
+    },
+    {
+      "name": "Crater",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Crater",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "land",
+          "shape_of_the_land": "hollow"
+        },
+        "familiar": 0.7,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "hollow"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 2,
+      "draw": "A round bowl-shaped hollow in dry brown ground, with a raised rim of earth all around it, empty inside, seen from above",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_5_01_c7"
+    },
+    {
+      "name": "Cliff",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Cliff",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "land",
+          "shape_of_the_land": "high"
+        },
+        "familiar": 0.85,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "high"
+      },
+      "familiar": 0.85,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "shape_of_the_land"
+      ],
+      "ask": 3,
+      "draw": "A tall steep rocky cliff face, grey-brown rock, rising straight up from flat ground, with a few loose fallen rocks at its base, under a plain sky",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_5_01_c8"
+    },
+    {
+      "name": "Guinea Pig",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Guinea Pig",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "mammal",
+          "extinct": false,
+          "pet_farm_or_wild": "pet"
+        },
+        "familiar": 0.7,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false,
+        "pet_farm_or_wild": "pet"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 4,
+      "draw": "A small round furry guinea pig with short brown, white and black fur, tiny ears, small dark eyes, short legs, sitting on plain ground, whole body shown",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_1_01_c1"
+    },
+    {
+      "name": "Hamster",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Hamster",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "mammal",
+          "extinct": false,
+          "pet_farm_or_wild": "pet"
+        },
+        "familiar": 0.8,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false,
+        "pet_farm_or_wild": "pet"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 4,
+      "draw": "A small golden-brown hamster with a stout body, tiny ears, short tail, and big cheek pouches, standing whole on plain ground, facing forward",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_1_01_c2"
+    },
+    {
+      "name": "Sheep",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Sheep",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "mammal",
+          "extinct": false,
+          "pet_farm_or_wild": "farm"
+        },
+        "familiar": 0.9,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false,
+        "pet_farm_or_wild": "farm"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 5,
+      "draw": "A woolly white sheep standing on grass, four legs, fluffy body, small head with curled horns, black face and legs, short tail, seen in India",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_1_01_c3"
+    },
+    {
+      "name": "Pig",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Pig",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "mammal",
+          "extinct": false,
+          "pet_farm_or_wild": "farm"
+        },
+        "familiar": 0.9,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false,
+        "pet_farm_or_wild": "farm"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 5,
+      "draw": "A plump pink farm pig standing on all four legs, whole body, curly tail, flat snout, small eyes, short legs, natural pink skin with a few dark spots, standing on plain ground",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_1_01_c4"
+    },
+    {
+      "name": "Whale",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Whale",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "mammal",
+          "extinct": false,
+          "pet_farm_or_wild": "wild_water"
+        },
+        "familiar": 0.9,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 6,
+      "draw": "A big blue whale, whole, swimming at the water surface, smooth grey-blue body, white belly, wide flat tail, small eye, waterline only, no other animals",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_1_01_c5"
+    },
+    {
+      "name": "Dolphin",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Dolphin",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "mammal",
+          "extinct": false,
+          "pet_farm_or_wild": "wild_water"
+        },
+        "familiar": 0.9,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 6,
+      "draw": "A single grey dolphin with a smooth fish-like body, a pointed snout, a fin on its back, two side flippers and a flat tail, leaping above blue water",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_1_01_c6"
+    },
+    {
+      "name": "Seal",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Seal",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "mammal",
+          "extinct": false,
+          "pet_farm_or_wild": "wild_water"
+        },
+        "familiar": 0.8,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 6,
+      "draw": "A grey seal with a sleek barrel body, four flippers, whiskers, big dark eyes, and a doggish face, resting on wet ground or water, whole and alone",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_1_01_c7"
+    },
+    {
+      "name": "Walrus",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Walrus",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "mammal",
+          "extinct": false,
+          "pet_farm_or_wild": "wild_water"
+        },
+        "familiar": 0.7,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 6,
+      "draw": "A big grey-brown walrus with two long white tusks, thick whiskers, and flippers, resting on ice over blue water",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_1_01_c8"
+    },
+    {
+      "name": "Otter",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Otter",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "mammal",
+          "extinct": false,
+          "pet_farm_or_wild": "wild_water"
+        },
+        "familiar": 0.7,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 6,
+      "draw": "A brown otter with a long slim body, short legs, webbed feet, small ears and a thick tail, swimming on water, whole body shown",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_1_01_c9"
+    },
+    {
+      "name": "Rooster",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.9,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "pet_farm_or_wild_of_bird": "farm"
+      },
+      "why": [
+        "it is Hen under another name: both are filed under 'Chicken'"
+      ],
+      "ask": 7
+    },
+    {
+      "name": "Turkey",
+      "passed": false,
+      "why": [
+        "it could not be settled that it belongs in 'Animals'"
+      ],
+      "thing": {
+        "name": "Turkey",
+        "fields": {},
+        "familiar": 0.8,
+        "reviewed": 8,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "pet_farm_or_wild_of_bird": "farm"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 7,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Goose",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Farm animals': it fits more than one group: farm and wild_water"
+      ],
+      "thing": {
+        "name": "Goose",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false
+        },
+        "familiar": 0.9,
+        "reviewed": 8,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "farm"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 7,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Ostrich",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'Wild animals on land', not 'Farm animals'"
+      ],
+      "thing": {
+        "name": "Ostrich",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false,
+          "pet_farm_or_wild_of_bird": "wild_land"
+        },
+        "familiar": 0.8,
+        "reviewed": 8,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "farm"
+      },
+      "familiar": 0.8,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 7
+    },
+    {
+      "name": "Kingfisher",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'Wild animals in water', not 'Farm animals'"
+      ],
+      "thing": {
+        "name": "Kingfisher",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false,
+          "pet_farm_or_wild_of_bird": "wild_land"
+        },
+        "familiar": 0.7,
+        "reviewed": 8,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "farm"
+      },
+      "familiar": 0.7,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 7
+    },
+    {
+      "name": "Swan",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'Wild animals in water', not 'Farm animals'"
+      ],
+      "thing": {
+        "name": "Swan",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false,
+          "pet_farm_or_wild_of_bird": "wild_water"
+        },
+        "familiar": 0.7,
+        "reviewed": 8,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "farm"
+      },
+      "familiar": 0.7,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "pet_farm_or_wild_of_bird"
+      ],
+      "ask": 7
+    },
+    {
+      "name": "Lovebird",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'Pets at home', not 'Farm animals'"
+      ],
+      "thing": {
+        "name": "Lovebird",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false,
+          "pet_farm_or_wild_of_bird": "pet"
+        },
+        "familiar": 0.7,
+        "reviewed": 8,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "farm"
+      },
+      "familiar": 0.7,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 7
+    },
+    {
+      "name": "Myna",
+      "passed": false,
+      "familiar": 0.6,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "pet_farm_or_wild_of_bird": "farm"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 7,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Flamingo",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'Wild animals in water', not 'Farm animals'"
+      ],
+      "thing": {
+        "name": "Flamingo",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false,
+          "pet_farm_or_wild_of_bird": "wild_water"
+        },
+        "familiar": 0.7,
+        "reviewed": 8,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "farm"
+      },
+      "familiar": 0.7,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 7
+    },
+    {
+      "name": "Woodpecker",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'Wild animals on land', not 'Farm animals'"
+      ],
+      "thing": {
+        "name": "Woodpecker",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false,
+          "pet_farm_or_wild_of_bird": "wild_land"
+        },
+        "familiar": 0.7,
+        "reviewed": 8,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "farm"
+      },
+      "familiar": 0.7,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 7
+    },
+    {
+      "name": "Vulture",
+      "passed": false,
+      "familiar": 0.6,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "pet_farm_or_wild_of_bird": "farm"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 7,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Budgie",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Budgie",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false,
+          "pet_farm_or_wild_of_bird": "pet"
+        },
+        "familiar": 0.8,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "pet"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 8,
+      "draw": "A small green and yellow budgie parrot with black scalloped markings on its back and wings, long tail, standing whole on plain ground, in natural colors",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_2_01_c1"
+    },
+    {
+      "name": "Canary",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Canary",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false,
+          "pet_farm_or_wild_of_bird": "pet"
+        },
+        "familiar": 0.8,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "pet"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 8,
+      "draw": "A small bright yellow pet canary bird with a rounded head, short orange beak, black eyes, and folded wings, standing whole on a plain perch",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_2_01_c8"
+    },
+    {
+      "name": "Cockatiel",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Cockatiel",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false,
+          "pet_farm_or_wild_of_bird": "pet"
+        },
+        "familiar": 0.7,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "pet"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 8,
+      "draw": "A whole grey cockatiel standing on the ground, with a yellow face, orange cheek patch, tall curved crest, long tail feathers, and small beak, in natural colours",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_2_01_c3"
+    },
+    {
+      "name": "Finch",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Pets at home': it fits more than one group: pet and wild_land"
+      ],
+      "thing": {
+        "name": "Finch",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false,
+          "pet_farm_or_wild_of_bird": "wild_land"
+        },
+        "familiar": 0.7,
+        "reviewed": 8,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "pet"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "extinct",
+        "pet_farm_or_wild_of_bird"
+      ],
+      "ask": 8,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Seagull",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Seagull",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false,
+          "pet_farm_or_wild_of_bird": "wild_water"
+        },
+        "familiar": 0.8,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "wild_water"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 9,
+      "draw": "A white seagull with grey wings, yellow beak, webbed feet, standing on the ground, whole body shown, natural colours, as seen in India",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_2_01_c4"
+    },
+    {
+      "name": "Pelican",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Pelican",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false,
+          "pet_farm_or_wild_of_bird": "wild_water"
+        },
+        "familiar": 0.7,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "wild_water"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 9,
+      "draw": "A large white pelican standing on water, with a very long beak and a big throat pouch, webbed feet, and pale feathers, seen in India",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_2_01_c5"
+    },
+    {
+      "name": "Stork",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Wild animals in water': it fits more than one group: wild_land and wild_water"
+      ],
+      "thing": {
+        "name": "Stork",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false,
+          "pet_farm_or_wild_of_bird": "wild_land"
+        },
+        "familiar": 0.7,
+        "reviewed": 8,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "wild_water"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "pet_farm_or_wild_of_bird"
+      ],
+      "ask": 9,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Crane",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Crane",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false,
+          "pet_farm_or_wild_of_bird": "wild_water"
+        },
+        "familiar": 0.7,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "wild_water"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "extinct",
+        "pet_farm_or_wild_of_bird"
+      ],
+      "ask": 9,
+      "draw": "A tall grey crane standing whole on wet ground, long thin legs, long neck stretched up, pointed bill, white and grey feathers with a red patch on its face",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_2_01_c6"
+    },
+    {
+      "name": "Heron",
+      "passed": false,
+      "familiar": 0.6,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "pet_farm_or_wild_of_bird": "wild_water"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 9,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Ibis",
+      "passed": false,
+      "familiar": 0.5,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "pet_farm_or_wild_of_bird": "wild_water"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 9,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Flyover",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Flyover",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "cross"
+        },
+        "familiar": 0.7,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "cross"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "what_people_do_there"
+      ],
+      "ask": 10,
+      "draw": "A concrete road bridge arching over another road, with grey pillars and railings on top, seen in India",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_3_01_c1"
+    },
+    {
+      "name": "Footbridge",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Footbridge",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "cross"
+        },
+        "familiar": 0.8,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "cross"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing",
+        "what_people_do_there"
+      ],
+      "ask": 10,
+      "draw": "A simple concrete footbridge with metal railings, spanning over a small Indian road or stream, grey and brown, whole bridge with steps at both ends, plain ground below",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_3_01_c2"
+    },
+    {
+      "name": "Subway",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Buildings': it fits more than one group: vehicle and building"
+      ],
+      "thing": {
+        "name": "Subway",
+        "fields": {
+          "kind_of_thing": "made_by_people"
+        },
+        "familiar": 0.7,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "cross"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 10,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Church",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Church",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "pray"
+        },
+        "familiar": 0.9,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "pray"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "what_people_do_there"
+      ],
+      "ask": 11,
+      "draw": "A white church building with a tall pointed steeple and cross on top, arched windows and a big door, standing on plain ground, as seen in India",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_3_01_c3"
+    },
+    {
+      "name": "Mosque",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Mosque",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "pray"
+        },
+        "familiar": 0.9,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "pray"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 11,
+      "draw": "A white mosque in India with a big round dome, two tall thin minarets, arched doorways, and a small courtyard, standing on plain ground",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_3_01_c4"
+    },
+    {
+      "name": "Gurudwara",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Gurudwara",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "pray"
+        },
+        "familiar": 0.8,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "pray"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing"
+      ],
+      "ask": 11,
+      "draw": "A white Indian gurdwara with a golden dome, arched windows, a tall flagpole with an orange Nishan Sahib flag, and a small free kitchen hall, standing on plain ground",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_3_01_c5"
+    },
+    {
+      "name": "Shrine",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Shrine",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "pray"
+        },
+        "familiar": 0.7,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "pray"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 11,
+      "draw": "A small Indian home shrine: a tiny wooden mandir cabinet with a domed top, gold and red painted, open front showing a small idol inside, sitting on the floor",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_3_01_c6"
+    },
+    {
+      "name": "Market",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Market",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "buy"
+        },
+        "familiar": 0.9,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "buy"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing",
+        "kind_of_thing"
+      ],
+      "ask": 12,
+      "draw": "An Indian open-air market: rows of small stalls with colourful cloth awnings, baskets of fruit and vegetables on the ground, whole scene on bare earth",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_3_01_c7"
+    },
+    {
+      "name": "Mall",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Mall",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "buy"
+        },
+        "familiar": 0.8,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "buy"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 12,
+      "draw": "A big modern Indian shopping mall building, whole, with glass front, flat roof, many small shops inside facing a central walkway, food court, parking in front, natural colours",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_3_01_c8"
+    },
+    {
+      "name": "Supermarket",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Supermarket",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "buy"
+        },
+        "familiar": 0.7,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "buy"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_thing"
+      ],
+      "ask": 12,
+      "draw": "A big Indian supermarket building with glass doors, trolleys outside, shelves of colourful food and vegetables seen through windows, on plain ground",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_3_01_c9"
+    },
+    {
+      "name": "Bakery",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Bakery",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "buy"
+        },
+        "familiar": 0.8,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "buy"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 12,
+      "draw": "An Indian neighbourhood bakery shop, whole front view: a small open storefront with glass display trays of bread, buns, cakes and pastries, a counter, and a signboard, standing on plain ground",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_4_01_c1"
+    },
+    {
+      "name": "Clinic",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Clinic",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "heal"
+        },
+        "familiar": 0.8,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "heal"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "what_people_do_there"
+      ],
+      "ask": 13,
+      "draw": "A small Indian clinic building, single storey, white walls, red cross sign, glass door, few steps, plain ground, no people",
+      "tries": 1,
+      "tile": "job_2026_10_07_03_4_01_c2"
+    },
+    {
+      "name": "Nursing home",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Get well': it fits more than one group: heal and live"
+      ],
+      "thing": {
+        "name": "Nursing home",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building"
+        },
+        "familiar": 0.7,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "heal"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 13,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Health centre",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Health centre",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "heal"
+        },
+        "familiar": 0.7,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "heal"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_thing",
+        "what_people_do_there"
+      ],
+      "ask": 13,
+      "draw": "A small Indian health centre building, single or two storey, white walls, red roof, glass windows, a door, a red cross sign, standing on plain ground",
+      "tries": 2,
+      "tile": "job_2026_10_07_03_6_01_c1",
+      "no_tile": "no tile of it passed the checks after 1 sheet(s)"
+    },
+    {
+      "name": "Doctor's office",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Doctor's office",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "heal"
+        },
+        "familiar": 0.8,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-03"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "heal"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 13,
+      "draw": "An Indian doctor's clinic: a small white building with a red cross board, a glass door, one window, and a step, standing alone on plain ground",
+      "tries": 2,
+      "tile": null,
+      "no_tile": "no tile of it passed the checks after 2 sheet(s)",
+      "held_as": "held by the rules"
+    }
+  ],
+  "sheets": [
+    "job_2026_10_07_03_1_01",
+    "job_2026_10_07_03_2_01",
+    "job_2026_10_07_03_3_01",
+    "job_2026_10_07_03_4_01",
+    "job_2026_10_07_03_5_01",
+    "job_2026_10_07_03_6_01",
+    "job_2026_10_07_03_7_01"
+  ],
+  "stopped": "",
+  "fields_added": [
+    {
+      "circle": "nature_not_alive/land",
+      "label": "Places on land",
+      "field": "shape_of_the_land",
+      "wording": "What is the land mostly like there?",
+      "values": {
+        "high": "High land",
+        "flat": "Flat land",
+        "by_water": "Land beside water",
+        "hollow": "Hollows and holes in the land"
+      },
+      "filled": 6,
+      "off_the_board": [],
+      "source": "the library",
+      "full_values": [
+        "high",
+        "flat",
+        "by_water",
+        "hollow"
+      ],
+      "version": 6
+    },
+    {
+      "circle": "animal/mammal",
+      "label": "Mammals",
+      "field": "pet_farm_or_wild",
+      "wording": "Is it mostly a pet, a farm animal or a wild animal?",
+      "values": {
+        "pet": "Pets at home",
+        "farm": "Farm animals",
+        "wild_land": "Wild animals on land",
+        "wild_water": "Wild animals in water"
+      },
+      "filled": 12,
+      "off_the_board": [],
+      "source": "the library",
+      "full_values": [
+        "pet",
+        "farm",
+        "wild_land",
+        "wild_water"
+      ],
+      "version": 7
+    },
+    {
+      "circle": "animal/bird",
+      "label": "Birds",
+      "field": "pet_farm_or_wild_of_bird",
+      "wording": "Is it mostly a pet, a farm animal or a wild animal?",
+      "values": {
+        "pet": "Pets at home",
+        "farm": "Farm animals",
+        "wild_land": "Wild animals on land",
+        "wild_water": "Wild animals in water"
+      },
+      "filled": 10,
+      "off_the_board": [
+        "pigeon"
+      ],
+      "source": "the library",
+      "full_values": [
+        "pet",
+        "farm",
+        "wild_land",
+        "wild_water"
+      ],
+      "version": 8
+    },
+    {
+      "circle": "made_by_people/building",
+      "label": "Buildings",
+      "field": "what_people_do_there",
+      "wording": "What do people mostly do there?",
+      "values": {
+        "live": "Live",
+        "learn": "Learn",
+        "pray": "Pray",
+        "buy": "Buy and sell",
+        "heal": "Get well",
+        "travel": "Start a journey",
+        "cross": "Cross over or climb up"
+      },
+      "filled": 7,
+      "off_the_board": [],
+      "source": "the library",
+      "full_values": [
+        "learn",
+        "pray",
+        "buy",
+        "heal",
+        "travel",
+        "cross"
+      ],
+      "version": 9
+    }
+  ],
+  "fields_held": [
+    {
+      "circle": "nature_not_alive/ground",
+      "label": "Rocks and soil",
+      "tried": [
+        {
+          "wording": "How big are its pieces mostly?",
+          "values": {
+            "one_big": "One big hard piece",
+            "small": "Small pieces you can pick up",
+            "grains": "Tiny grains",
+            "fine": "Fine, like powder or paste"
+          },
+          "why": [
+            "not every thing has one value: 3 of the 9 things there fit more than one group, and at most 1 may (Soil: fine and grains; Gravel: small and grains; Coal: one_big and small)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What is it mostly: hard, runny, airy, or light?",
+          "values": {
+            "solid": "Hard and solid",
+            "liquid": "Wet and runny",
+            "gas": "Air, mist or gas",
+            "light": "Light or fire"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Hard and solid' has 9, 'Wet and runny' has 0, 'Air, mist or gas' has 0, 'Light or fire' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "How big are the pieces you see?",
+          "values": {
+            "one_big_piece": "One big piece",
+            "small_pieces": "Small pieces",
+            "tiny_grains": "Tiny grains",
+            "soft_and_squishy": "Soft and squishy"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 9 things there fit more than one group, and at most 1 may (Soil: small_pieces and tiny_grains; Coal: one_big_piece and small_pieces)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What color is it?",
+          "values": {
+            "black": "Black",
+            "brown": "Brown",
+            "gray": "Gray",
+            "yellow": "Yellow"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 9 things there fit more than one group, and at most 1 may (Sand: yellow and brown; Clay: brown and gray)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "How does it feel when you touch it?",
+          "values": {
+            "hard_and_smooth": "Hard and smooth",
+            "rough_and_grainy": "Rough and grainy",
+            "soft_and_sticky": "Soft and sticky",
+            "black_and_dusty": "Black and dusty"
+          },
+          "why": [
+            "only 0 of its values have four familiar things, and a board needs four: 'Hard and smooth' has 3, 'Rough and grainy' has 3, 'Soft and sticky' has 2, 'Black and dusty' has 1"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "nature_not_alive/sky",
+      "label": "Things in the sky",
+      "tried": [
+        {
+          "wording": "What is it made of?",
+          "values": {
+            "rock": "Made of rock",
+            "water": "Made of water",
+            "fire": "Made of fire",
+            "air": "Made of air"
+          },
+          "why": [
+            "not every thing has one value: 3 of the 16 names sorted have no single group, and at most one in 8 may (Cloud, Steam, Fog)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "How does it move?",
+          "values": {
+            "floats": "Floats in the sky",
+            "shines": "Shines and stays",
+            "orbits": "Goes around the Earth",
+            "still": "Stays still"
+          },
+          "why": [
+            "not every thing has one value: 9 of the 12 names sorted have no single group, and at most one in 8 may (Moon, Bird, Plane, Leaf, Lamp, Candle)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What shape is it?",
+          "values": {
+            "round": "Round like a ball",
+            "fluffy": "Fluffy and soft",
+            "pointy": "Pointy and sharp",
+            "flat": "Flat and wide"
+          },
+          "why": [
+            "only 0 of its values have four familiar things, and a board needs four: 'Round like a ball' has 2, 'Fluffy and soft' has 1, 'Pointy and sharp' has 1, 'Flat and wide' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "nature_not_alive/water",
+      "label": "Water",
+      "tried": [
+        {
+          "wording": "What is the water mostly doing?",
+          "values": {
+            "flows": "Flowing along",
+            "still": "Standing still",
+            "sea": "Salty sea water",
+            "frozen": "Frozen hard",
+            "falls": "Falling from the sky"
+          },
+          "why": [
+            "only 3 of its values have four familiar things, and a board needs four: 'Flowing along' has 4, 'Standing still' has 5, 'Salty sea water' has 2, 'Frozen hard' has 4, 'Falling from the sky' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What is it mostly: hard, runny, airy, or light?",
+          "values": {
+            "solid": "Hard and solid",
+            "liquid": "Wet and runny",
+            "gas": "Air, mist or gas",
+            "light": "Light or fire"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Hard and solid' has 2, 'Wet and runny' has 9, 'Air, mist or gas' has 3, 'Light or fire' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "Does the water flow or stay still?",
+          "values": {
+            "flows": "Water that flows",
+            "still": "Water that stays still",
+            "waves": "Water with big waves",
+            "frozen": "Water that is frozen hard"
+          },
+          "why": [
+            "only 3 of its values have four familiar things, and a board needs four: 'Water that flows' has 6, 'Water that stays still' has 4, 'Water with big waves' has 3, 'Water that is frozen hard' has 5"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "Is the water big or small?",
+          "values": {
+            "very_big": "Very big water",
+            "big": "Big water",
+            "small": "Small water",
+            "tiny": "Tiny water"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 72% of the things where the proposer did (Bay: 'very_big' or 'big'; Shore: 'very_big' or 'no one group'; Canal: 'big' or 'small'; Puddle: 'small' or 'tiny')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "Is the water salty or not salty?",
+          "values": {
+            "salty": "Salty water",
+            "not_salty": "Not salty water",
+            "frozen": "Frozen water",
+            "rain": "Rain water"
+          },
+          "why": [
+            "not every thing has one value: 3 of the 18 names sorted have no single group, and at most one in 8 may (Shore, Pool, Iceberg)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "animal/reptile",
+      "label": "Reptiles",
+      "tried": [
+        {
+          "wording": "How does it mostly move?",
+          "values": {
+            "walks": "Walks or runs",
+            "flies": "Flies",
+            "swims": "Swims",
+            "crawls": "Crawls or slithers",
+            "hops": "Hops or jumps"
+          },
+          "why": [
+            "not every thing has one value: 5 of the 12 things there fit more than one group, and at most 1 may (Crocodile: crawls and swims and walks; Turtle: walks and swims; Anaconda: swims and crawls; Titanoboa: swims and crawls; Vasuki indicus: swims and crawls)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What does it mostly eat?",
+          "values": {
+            "plants": "Mostly plants",
+            "meat": "Mostly meat or fish",
+            "insects": "Mostly insects and worms",
+            "both": "Plants and meat alike"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Mostly plants' has 1, 'Mostly meat or fish' has 8, 'Mostly insects and worms' has 3, 'Plants and meat alike' has 2"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What covers its body?",
+          "values": {
+            "fur": "Fur or hair",
+            "feathers": "Feathers",
+            "scales": "Scales",
+            "shell": "A hard shell",
+            "bare_skin": "Smooth bare skin"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 12 things there fit more than one group, and at most 1 may (Tortoise: shell and scales; Turtle: shell and scales)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What is its body like?",
+          "values": {
+            "long_and_legless": "Long and no legs",
+            "four_legs_and_shell": "Four legs and a shell",
+            "four_legs_and_scaly_skin": "Four legs and scaly skin",
+            "big_and_bumpy_armor": "Big and bumpy armor"
+          },
+          "why": [
+            "not every thing has one value: 5 of the 19 names sorted have no single group, and at most one in 8 may (Worm, Eel, Snail, Hermit crab, Dinosaur)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What is its tail like?",
+          "values": {
+            "long_thin_tail": "Long thin tail",
+            "short_stubby_tail": "Short stubby tail",
+            "thick_heavy_tail": "Thick heavy tail",
+            "no_tail": "No tail"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 64% of the things where the proposer did (Monitor lizard: 'long_thin_tail' or 'thick_heavy_tail'; Anaconda: 'long_thin_tail' or 'thick_heavy_tail'; Python: 'long_thin_tail' or 'thick_heavy_tail'; Titanoboa: 'long_thin_tail' or 'thick_heavy_tail')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What is its mouth like?",
+          "values": {
+            "long_snout": "Long snout",
+            "wide_mouth": "Wide mouth",
+            "beak": "Beak",
+            "small_mouth": "Small mouth"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 74% of the things where the proposer did (House lizard: 'wide_mouth' or 'small_mouth'; Crocodile: 'long_snout' or 'no one group'; Chameleon: 'wide_mouth' or 'small_mouth'; Monitor lizard: 'wide_mouth' or 'long_snout')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "animal/insect",
+      "label": "Insects",
+      "tried": [
+        {
+          "wording": "How many legs does it have?",
+          "values": {
+            "no_legs": "No legs",
+            "two": "Two legs",
+            "four": "Four legs",
+            "six": "Six legs",
+            "eight": "Eight legs",
+            "many": "Many legs"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'No legs' has 0, 'Two legs' has 0, 'Four legs' has 0, 'Six legs' has 13, 'Eight legs' has 0, 'Many legs' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "How does it mostly move?",
+          "values": {
+            "walks": "Walks or runs",
+            "flies": "Flies",
+            "swims": "Swims",
+            "crawls": "Crawls or slithers",
+            "hops": "Hops or jumps"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Ladybug: 'flies' or 'no one group'; Beetle: 'flies' or 'crawls')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What does it mostly eat?",
+          "values": {
+            "plants": "Mostly plants",
+            "meat": "Mostly meat or fish",
+            "insects": "Mostly insects and worms",
+            "both": "Plants and meat alike"
+          },
+          "why": [
+            "not every thing has one value: 5 of the 16 names sorted have no single group, and at most one in 8 may (Ant, Beetle, Wasp, Firefly, Cricket)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "Where do you usually see it?",
+          "values": {
+            "in_the_house": "In the house",
+            "in_the_garden": "In the garden",
+            "in_the_water": "In the water",
+            "in_the_sky": "In the sky"
+          },
+          "why": [
+            "not every thing has one value: 6 of the 8 things there fit more than one group, and at most 1 may (Butterfly: in_the_garden and in_the_sky; Ant: in_the_garden and in_the_house; Housefly: in_the_house and in_the_garden; Mosquito: in_the_garden and in_the_house and in_the_sky; Honeybee: in_the_garden and in_the_sky; Ladybug: in_the_garden and in_the_sky)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What color is it mostly?",
+          "values": {
+            "red": "Red",
+            "black": "Black",
+            "yellow": "Yellow",
+            "green": "Green"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Red' has 1, 'Black' has 9, 'Yellow' has 1, 'Green' has 2"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "How many wings does it have?",
+          "values": {
+            "two_wings": "Two wings",
+            "four_wings": "Four wings",
+            "no_wings": "No wings",
+            "many_wings": "Many wings"
+          },
+          "why": [
+            "not every thing has one value: 7 of the 19 names sorted have no single group, and at most one in 8 may (Ant, Spider, Centipede, Millipede, Earthworm, Snail)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "animal/fish",
+      "label": "Fish",
+      "tried": [
+        {
+          "wording": "Where does it spend most of its life?",
+          "values": {
+            "land": "On the ground",
+            "water": "In water",
+            "trees": "In trees",
+            "underground": "Under the ground"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'On the ground' has 0, 'In water' has 8, 'In trees' has 0, 'Under the ground' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "How does it mostly move?",
+          "values": {
+            "walks": "Walks or runs",
+            "flies": "Flies",
+            "swims": "Swims",
+            "crawls": "Crawls or slithers",
+            "hops": "Hops or jumps"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Walks or runs' has 0, 'Flies' has 0, 'Swims' has 8, 'Crawls or slithers' has 0, 'Hops or jumps' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What covers its body?",
+          "values": {
+            "fur": "Fur or hair",
+            "feathers": "Feathers",
+            "scales": "Scales",
+            "shell": "A hard shell",
+            "bare_skin": "Smooth bare skin"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 78% of the things where the proposer did (Shark: 'bare_skin' or 'scales'; Catfish: 'bare_skin' or 'scales')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What shape is the fish?",
+          "values": {
+            "round_like_a_ball": "Round like a ball",
+            "long_like_a_cucumber": "Long like a cucumber",
+            "flat_like_a_plate": "Flat like a plate",
+            "other_shape": "Other shape"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 57% of the things where the proposer did (Goldfish: 'round_like_a_ball' or 'other_shape'; Catla fish: 'long_like_a_cucumber' or 'other_shape'; Shark: 'flat_like_a_plate' or 'long_like_a_cucumber'; Clownfish: 'round_like_a_ball' or 'other_shape')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "How big is the fish?",
+          "values": {
+            "tiny_like_a_pea": "Tiny like a pea",
+            "small_like_a_cat": "Small like a cat",
+            "big_like_a_person": "Big like a person",
+            "huge_like_a_car": "Huge like a car"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 5 things there fit more than one group, and at most 1 may (Shark: huge_like_a_car and big_like_a_person; Clownfish: tiny_like_a_pea and small_like_a_cat)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What color is the fish?",
+          "values": {
+            "orange_or_red": "Orange or red",
+            "silver_or_grey": "Silver or grey",
+            "blue_or_green": "Blue or green",
+            "black_or_white": "Black or white"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 12 names sorted have no single group, and at most one in 8 may (Betta fish, Mandarin fish)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "plant/tree",
+      "label": "Trees",
+      "tried": [
+        {
+          "wording": "How does it grow?",
+          "values": {
+            "tree": "Tall, with a woody trunk",
+            "bush": "As a bush",
+            "small_plant": "As a small soft plant",
+            "climber": "Climbing up a support",
+            "creeper": "Creeping along the ground",
+            "grass": "Like grass"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Tall, with a woody trunk' has 6, 'As a bush' has 0, 'As a small soft plant' has 1, 'Climbing up a support' has 0, 'Creeping along the ground' has 0, 'Like grass' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What shape are the leaves?",
+          "values": {
+            "big_round_leaves": "Big round leaves",
+            "long_feathery_leaves": "Long feathery leaves",
+            "big_wide_leaves": "Big wide leaves",
+            "small_thin_leaves": "Small thin leaves"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 61% of the things where the proposer did (Mango tree: 'big_round_leaves' or 'long_feathery_leaves'; Neem tree: 'long_feathery_leaves' or 'small_thin_leaves'; Guava tree: 'big_round_leaves' or 'small_thin_leaves'; Jackfruit tree: 'big_round_leaves' or 'no one group')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What is the trunk like?",
+          "values": {
+            "thick_woody_trunk": "Thick woody trunk",
+            "soft_green_stem": "Soft green stem",
+            "thin_woody_stem": "Thin woody stem",
+            "no_trunk": "No trunk"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 14 names sorted have no single group, and at most one in 8 may (Guava tree, Lemon tree)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What kind of fruit does it give?",
+          "values": {
+            "big_fruit": "Big fruit",
+            "small_fruit": "Small fruit",
+            "no_fruit": "No fruit",
+            "many_seeds_fruit": "Fruit with many seeds"
+          },
+          "why": [
+            "not every thing has one value: 6 of the 23 names sorted have no single group, and at most one in 8 may (Papaya plant, Watermelon plant, Pineapple plant, Muskmelon plant, Guava tree, Tamarind tree)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "plant/flower",
+      "label": "Flowers",
+      "tried": [
+        {
+          "wording": "Where does it mostly grow?",
+          "values": {
+            "water": "In water",
+            "fields": "In farm fields",
+            "gardens": "In gardens and parks",
+            "forests": "In forests",
+            "dry_places": "In dry, sandy places"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 14 names sorted have no single group, and at most one in 8 may (Sunflower, Daisy)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "How does it grow?",
+          "values": {
+            "tree": "Tall, with a woody trunk",
+            "bush": "As a bush",
+            "small_plant": "As a small soft plant",
+            "climber": "Climbing up a support",
+            "creeper": "Creeping along the ground",
+            "grass": "Like grass"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Tall, with a woody trunk' has 0, 'As a bush' has 1, 'As a small soft plant' has 9, 'Climbing up a support' has 2, 'Creeping along the ground' has 0, 'Like grass' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What colour is its flower mostly?",
+          "values": {
+            "red": "Red",
+            "yellow": "Yellow or orange",
+            "white": "White",
+            "pink": "Pink or purple",
+            "blue": "Blue"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 4 things there fit more than one group, and at most 1 may (Rose: red and yellow and white and pink; Lotus: pink and white)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What shape is the flower?",
+          "values": {
+            "round_flat": "Round and flat",
+            "cup_or_bowl": "Cup or bowl shaped",
+            "many_petals": "Many petals in a ball",
+            "spiky_or_star": "Spiky or star shaped"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 4 things there fit more than one group, and at most 1 may (Sunflower: many_petals and round_flat; Lotus: many_petals and cup_or_bowl)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What color is the flower?",
+          "values": {
+            "red": "Red",
+            "yellow": "Yellow",
+            "pink": "Pink",
+            "white": "White"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 4 things there fit more than one group, and at most 1 may (Rose: red and yellow and pink and white; Lotus: pink and white)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "Does the flower smell nice?",
+          "values": {
+            "strong_smell": "Strong sweet smell",
+            "light_smell": "Light or no smell",
+            "bad_smell": "Bad or rotten smell",
+            "spicy_smell": "Spicy or sharp smell"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 4 things there fit more than one group, and at most 1 may (Lotus: light_smell and strong_smell; Marigold: spicy_smell and bad_smell)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "plant/grass_grain",
+      "label": "Grasses and grains",
+      "tried": [
+        {
+          "wording": "How does it grow?",
+          "values": {
+            "tree": "Tall, with a woody trunk",
+            "bush": "As a bush",
+            "small_plant": "As a small soft plant",
+            "climber": "Climbing up a support",
+            "creeper": "Creeping along the ground",
+            "grass": "Like grass"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 60% of the things where the proposer did (Rice plant: 'small_plant' or 'grass'; Wheat: 'small_plant' or 'grass')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What is its stem like?",
+          "values": {
+            "soft_green_stem": "Soft green stem",
+            "hard_woody_stem": "Hard woody stem",
+            "thick_juicy_stem": "Thick juicy stem",
+            "climbing_vine_stem": "Climbing vine stem"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 82% of the things where the proposer did (Papaya plant: 'thick_juicy_stem' or 'soft_green_stem'; Bottle gourd vine: 'thick_juicy_stem' or 'climbing_vine_stem'; Pumpkin vine: 'thick_juicy_stem' or 'climbing_vine_stem')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What is its leaf like?",
+          "values": {
+            "long_thin_leaves": "Long thin leaves",
+            "broad_flat_leaves": "Broad flat leaves",
+            "small_round_leaves": "Small round leaves",
+            "needle_like_leaves": "Needle-like leaves"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Bamboo: 'needle_like_leaves' or 'long_thin_leaves'; Palm tree: 'long_thin_leaves' or 'broad_flat_leaves'; Spinach: 'small_round_leaves' or 'broad_flat_leaves')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What is its seed head like?",
+          "values": {
+            "tiny_grains_on_stalk": "Tiny grains on stalk",
+            "thick_sweet_stalk": "Thick sweet stalk",
+            "hard_woody_stem_no_grains": "Hard woody stem, no grains",
+            "no_seed_head": "No seed head"
+          },
+          "why": [
+            "not every thing has one value: 1 of the 7 names sorted have no single group, and at most one in 8 may (Teak tree)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "made_by_people/toy",
+      "label": "Toys",
+      "tried": [
+        {
+          "wording": "How do we mostly play with it?",
+          "values": {
+            "throw": "Throw, kick or hit it",
+            "ride": "Ride or sit on it",
+            "build": "Build or make with it",
+            "cuddle": "Cuddle or pretend with it",
+            "roll": "Push or pull it along",
+            "fly": "Fly it",
+            "sound": "Make sounds with it"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 7 things there fit more than one group, and at most 1 may (Ball: throw and roll; Balloon: throw and cuddle)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "How do you play with it?",
+          "values": {
+            "throw_and_catch": "Throw and catch",
+            "cuddle_and_hug": "Cuddle and hug",
+            "build_and_stack": "Build and stack",
+            "push_and_roll": "Push and roll"
+          },
+          "why": [
+            "not every thing has a value: Kite - it fits no group; Balloon - it fits more than one group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What shape is it?",
+          "values": {
+            "round": "Round",
+            "long_and_thin": "Long and thin",
+            "square_or_rectangle": "Square or rectangle",
+            "has_arms_and_legs": "Has arms and legs"
+          },
+          "why": [
+            "not every thing has a value: Kite - it fits no group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What is it mostly made of?",
+          "values": {
+            "cloth_or_soft": "Cloth or soft",
+            "plastic": "Plastic",
+            "paper_or_light": "Paper or light",
+            "wood": "Wood"
+          },
+          "why": [
+            "not every thing has a value: Ball - it fits more than one group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "made_by_people/tool",
+      "label": "Tools",
+      "tried": [
+        {
+          "wording": "What job does it mostly do?",
+          "values": {
+            "cuts": "Cuts",
+            "hits": "Hits or knocks in",
+            "digs": "Digs",
+            "measures": "Measures",
+            "holds": "Holds or grips",
+            "turns": "Turns or tightens"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Cuts' has 2, 'Hits or knocks in' has 3, 'Digs' has 5, 'Measures' has 0, 'Holds or grips' has 0, 'Turns or tightens' has 3"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What kind of tool is it?",
+          "values": {
+            "hammering_tool": "Hammering tool",
+            "digging_tool": "Digging tool",
+            "cutting_tool": "Cutting tool",
+            "turning_tool": "Turning tool"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Hammering tool' has 3, 'Digging tool' has 4, 'Cutting tool' has 2, 'Turning tool' has 3"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What shape is the part that does the work?",
+          "values": {
+            "flat_and_wide": "Flat and wide",
+            "toothed_edge": "Toothed edge",
+            "pointed_and_thin": "Pointed and thin",
+            "heavy_and_blocky": "Heavy and blocky"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 77% of the things where the proposer did (Axe: 'pointed_and_thin' or 'no one group'; Rake: 'flat_and_wide' or 'toothed_edge'; Fork: 'flat_and_wide' or 'toothed_edge'; Machete: 'pointed_and_thin' or 'no one group')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "How do we use it?",
+          "values": {
+            "hit_and_knock": "Hit and knock",
+            "dig_and_scoop": "Dig and scoop",
+            "cut_and_chop": "Cut and chop",
+            "turn_and_tighten": "Turn and tighten"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Hit and knock' has 3, 'Dig and scoop' has 3, 'Cut and chop' has 2, 'Turn and tighten' has 4"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-03",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    }
+  ],
+  "open_before": [
+    "animal",
+    "animal/dinosaur",
+    "made_by_people",
+    "made_by_people/household",
+    "made_by_people/vehicle",
+    "nature_not_alive",
+    "plant",
+    "plant/vegetable",
+    "seed"
+  ],
+  "spent_usd": {
+    "deepseek": 0.21885,
+    "drawing": 0.9771,
+    "picture_checks": 0.00342
+  },
+  "opened": [
+    "Mammals"
+  ]
+}

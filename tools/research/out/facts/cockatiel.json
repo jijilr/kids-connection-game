@@ -1,0 +1,55 @@
+{
+  "name": "Cockatiel",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The cockatiel (Nymphicus hollandicus), also known as the weero/weiro or quarrion, is a species of small- to medium-sized parrot belonging to the cockatoo family (Cacatuidae), of which it is the smallest member.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "The cockatiel (Nymphicus hollandicus), also known as the weero/weiro or quarrion, is a species of small- to medium-sized parrot belonging to the cockatoo family (Cacatuidae), of which it is the smallest member.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Cockatiels are native to Australia, favouring the Australian wetlands, scrublands, and bushlands.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild_of_bird": {
+      "value": "pet",
+      "quote": "their strong affinity for human interaction has made them among the most commonly kept companion parrots worldwide and one of the five most popular pet bird species",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cockatiel",
+      "title": "Cockatiel",
+      "asked_for": "Cockatiel",
+      "revision": 1370317239,
+      "fetched_on": "2026-10-07",
+      "sha256": "99e5e3289c5559ee5d6ac6e0c8d63082dc751eac3a351098e85810f9d46f2916"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cockatiel",
+      "title": "Cockatiel",
+      "asked_for": "Cockatiel",
+      "revision": 10941542,
+      "fetched_on": "2026-10-07",
+      "sha256": "643a95e8f5dbd0f27c8e18c58c7a962f91869f9e6064caf806db942a0bab004d"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

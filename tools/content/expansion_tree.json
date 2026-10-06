@@ -1,8 +1,8 @@
 {
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-10-07",
-  "dictionary_version": 5,
-  "things": 191,
+  "dictionary_version": 9,
+  "things": 226,
   "rules": {
     "weights": {
       "nearness": 3,
@@ -16,7 +16,7 @@
   },
   "branches": {
     "animal": {
-      "boards_open": 2,
+      "boards_open": 3,
       "level": 2
     },
     "plant": {
@@ -33,18 +33,16 @@
     }
   },
   "proposals": [
-    "nature_not_alive/ground",
-    "nature_not_alive/sky",
-    "nature_not_alive/water",
     "nature_not_alive/land",
-    "animal/mammal"
+    "animal/bird",
+    "made_by_people/building"
   ],
   "circles": {
     "seed": {
       "label": "Everything",
       "steps_from_seed": 0,
       "branch": null,
-      "members": 191,
+      "members": 226,
       "open": true,
       "sorted_by": "kind_of_thing",
       "decisions": [],
@@ -54,7 +52,7 @@
       "label": "Animals",
       "steps_from_seed": 1,
       "branch": "animal",
-      "members": 76,
+      "members": 91,
       "open": true,
       "sorted_by": "kind_of_animal",
       "decisions": [],
@@ -64,12 +62,9 @@
       "label": "Mammals",
       "steps_from_seed": 2,
       "branch": "animal",
-      "members": 12,
-      "open": false,
-      "missing": {
-        "field": "no field splits it four ways",
-        "things": 4
-      },
+      "members": 21,
+      "open": true,
+      "sorted_by": "pet_farm_or_wild",
       "decisions": [
         {
           "date": "2026-10-06",
@@ -109,27 +104,117 @@
           "what": "given back to the rules: fields now come from the field library",
           "why": "the owner's ruling of 7 Oct 2026: the model chooses a question from the library and does not invent one",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules added the field \"Is it mostly a pet, a farm animal or a wild animal?\" in job run 2026-10-07-03",
+          "why": "it passed the four tests: Pets at home, Farm animals, Wild animals on land, Wild animals in water",
+          "status": "added by the rules"
         }
       ],
-      "factors": {
-        "nearness": 0.5,
-        "neglect": 0.33,
-        "unlocks": 0.33,
-        "cheapness": 0.33
+      "status": "open"
+    },
+    "animal/mammal/pet": {
+      "label": "Pets at home",
+      "steps_from_seed": 3,
+      "branch": "animal",
+      "members": 5,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 11
       },
-      "score": 3.8,
-      "move": "widening",
-      "status": "proposable"
+      "decisions": [],
+      "factors": {
+        "nearness": 0.33,
+        "neglect": 0.0,
+        "unlocks": 0.33,
+        "cheapness": 0.21
+      },
+      "score": 2.1,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+    },
+    "animal/mammal/farm": {
+      "label": "Farm animals",
+      "steps_from_seed": 3,
+      "branch": "animal",
+      "members": 5,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 11
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.33,
+        "neglect": 0.0,
+        "unlocks": 0.33,
+        "cheapness": 0.21
+      },
+      "score": 2.1,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+    },
+    "animal/mammal/wild_land": {
+      "label": "Wild animals on land",
+      "steps_from_seed": 3,
+      "branch": "animal",
+      "members": 6,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 10
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.33,
+        "neglect": 0.0,
+        "unlocks": 0.33,
+        "cheapness": 0.22
+      },
+      "score": 2.1,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+    },
+    "animal/mammal/wild_water": {
+      "label": "Wild animals in water",
+      "steps_from_seed": 3,
+      "branch": "animal",
+      "members": 5,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 11
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.33,
+        "neglect": 0.0,
+        "unlocks": 0.33,
+        "cheapness": 0.21
+      },
+      "score": 2.1,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
     },
     "animal/bird": {
       "label": "Birds",
       "steps_from_seed": 2,
       "branch": "animal",
-      "members": 10,
+      "members": 16,
       "open": false,
+      "sorted_by": "pet_farm_or_wild_of_bird",
       "missing": {
-        "field": "no field splits it four ways",
-        "things": 6
+        "field": null,
+        "short": {
+          "farm": 1
+        },
+        "things": 1
       },
       "decisions": [
         {
@@ -157,16 +242,22 @@
           "what": "given back to the rules: fields now come from the field library",
           "why": "the owner's ruling of 7 Oct 2026: the model chooses a question from the library and does not invent one",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules added the field \"Is it mostly a pet, a farm animal or a wild animal?\" in job run 2026-10-07-03",
+          "why": "it passed the four tests: Pets at home, Farm animals, Wild animals on land, Wild animals in water",
+          "status": "added by the rules"
         }
       ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.33,
+        "neglect": 0.0,
         "unlocks": 0.33,
-        "cheapness": 0.29
+        "cheapness": 0.8
       },
-      "score": 3.7,
-      "move": "widening",
+      "score": 3.8,
+      "move": "deepening",
       "status": "proposable"
     },
     "animal/fish": {
@@ -205,17 +296,25 @@
           "what": "given back to the rules: fields now come from the field library",
           "why": "the owner's ruling of 7 Oct 2026: the model chooses a question from the library and does not invent one",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-03",
+          "why": "\"Where does it spend most of its life?\": only 1 of its values have four familiar things, and a board needs four: 'On the ground' has 0, 'In water' has 8, 'In trees' has 0, 'Under the ground' has 0; \"How does it mostly move?\": only 1 of its values have four familiar things, and a board needs four: 'Walks or runs' has 0, 'Flies' has 0, 'Swims' has 8, 'Crawls or slithers' has 0, 'Hops or jumps' has 0; \"What covers its body?\": its groups have no sharp edges: both checks placed only 78% of the things where the proposer did (Shark: 'bare_skin' or 'scales'; Catfish: 'bare_skin' or 'scales'); \"What shape is the fish?\": its groups have no sharp edges: both checks placed only 57% of the things where the proposer did (Goldfish: 'round_like_a_ball' or 'other_shape'; Catla fish: 'long_like_a_cucumber' or 'other_shape'; Shark: 'flat_like_a_plate' or 'long_like_a_cucumber'; Clownfish: 'round_like_a_ball' or 'other_shape'); \"How big is the fish?\": not every thing has one value: 2 of the 5 things there fit more than one group, and at most 1 may (Shark: huge_like_a_car and big_like_a_person; Clownfish: tiny_like_a_pea and small_like_a_cat); \"What color is the fish?\": not every thing has one value: 2 of the 12 names sorted have no single group, and at most one in 8 may (Betta fish, Mandarin fish)",
+          "members_then": 5,
+          "status": "held by the rules"
         }
       ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.33,
+        "neglect": 0.0,
         "unlocks": 0.33,
         "cheapness": 0.21
       },
-      "score": 3.6,
-      "move": "widening",
-      "status": "proposable"
+      "score": 2.6,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "the rules: \"Where does it spend most of its life?\": only 1 of its values have four familiar things, and a board needs four: 'On the ground' has 0, 'In water' has 8, 'In trees' has 0, 'Under the ground' has 0; \"How does it mostly move?\": only 1 of its values have four familiar things, and a board needs four: 'Walks or runs' has 0, 'Flies' has 0, 'Swims' has 8, 'Crawls or slithers' has 0, 'Hops or jumps' has 0; \"What covers its body?\": its groups have no sharp edges: both checks placed only 78% of the things where the proposer did (Shark: 'bare_skin' or 'scales'; Catfish: 'bare_skin' or 'scales'); \"What shape is the fish?\": its groups have no sharp edges: both checks placed only 57% of the things where the proposer did (Goldfish: 'round_like_a_ball' or 'other_shape'; Catla fish: 'long_like_a_cucumber' or 'other_shape'; Shark: 'flat_like_a_plate' or 'long_like_a_cucumber'; Clownfish: 'round_like_a_ball' or 'other_shape'); \"How big is the fish?\": not every thing has one value: 2 of the 5 things there fit more than one group, and at most 1 may (Shark: huge_like_a_car and big_like_a_person; Clownfish: tiny_like_a_pea and small_like_a_cat); \"What color is the fish?\": not every thing has one value: 2 of the 12 names sorted have no single group, and at most one in 8 may (Betta fish, Mandarin fish)"
     },
     "animal/insect": {
       "label": "Insects",
@@ -253,17 +352,25 @@
           "what": "given back to the rules: fields now come from the field library",
           "why": "the owner's ruling of 7 Oct 2026: the model chooses a question from the library and does not invent one",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-03",
+          "why": "\"How many legs does it have?\": only 1 of its values have four familiar things, and a board needs four: 'No legs' has 0, 'Two legs' has 0, 'Four legs' has 0, 'Six legs' has 13, 'Eight legs' has 0, 'Many legs' has 0; \"How does it mostly move?\": its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Ladybug: 'flies' or 'no one group'; Beetle: 'flies' or 'crawls'); \"What does it mostly eat?\": not every thing has one value: 5 of the 16 names sorted have no single group, and at most one in 8 may (Ant, Beetle, Wasp, Firefly, Cricket); \"Where do you usually see it?\": not every thing has one value: 6 of the 8 things there fit more than one group, and at most 1 may (Butterfly: in_the_garden and in_the_sky; Ant: in_the_garden and in_the_house; Housefly: in_the_house and in_the_garden; Mosquito: in_the_garden and in_the_house and in_the_sky; Honeybee: in_the_garden and in_the_sky; Ladybug: in_the_garden and in_the_sky); \"What color is it mostly?\": only 1 of its values have four familiar things, and a board needs four: 'Red' has 1, 'Black' has 9, 'Yellow' has 1, 'Green' has 2; \"How many wings does it have?\": not every thing has one value: 7 of the 19 names sorted have no single group, and at most one in 8 may (Ant, Spider, Centipede, Millipede, Earthworm, Snail)",
+          "members_then": 8,
+          "status": "held by the rules"
         }
       ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.33,
+        "neglect": 0.0,
         "unlocks": 0.33,
         "cheapness": 0.25
       },
-      "score": 3.7,
-      "move": "widening",
-      "status": "proposable"
+      "score": 2.7,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "the rules: \"How many legs does it have?\": only 1 of its values have four familiar things, and a board needs four: 'No legs' has 0, 'Two legs' has 0, 'Four legs' has 0, 'Six legs' has 13, 'Eight legs' has 0, 'Many legs' has 0; \"How does it mostly move?\": its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Ladybug: 'flies' or 'no one group'; Beetle: 'flies' or 'crawls'); \"What does it mostly eat?\": not every thing has one value: 5 of the 16 names sorted have no single group, and at most one in 8 may (Ant, Beetle, Wasp, Firefly, Cricket); \"Where do you usually see it?\": not every thing has one value: 6 of the 8 things there fit more than one group, and at most 1 may (Butterfly: in_the_garden and in_the_sky; Ant: in_the_garden and in_the_house; Housefly: in_the_house and in_the_garden; Mosquito: in_the_garden and in_the_house and in_the_sky; Honeybee: in_the_garden and in_the_sky; Ladybug: in_the_garden and in_the_sky); \"What color is it mostly?\": only 1 of its values have four familiar things, and a board needs four: 'Red' has 1, 'Black' has 9, 'Yellow' has 1, 'Green' has 2; \"How many wings does it have?\": not every thing has one value: 7 of the 19 names sorted have no single group, and at most one in 8 may (Ant, Spider, Centipede, Millipede, Earthworm, Snail)"
     },
     "animal/reptile": {
       "label": "Reptiles",
@@ -306,17 +413,25 @@
           "what": "given back to the rules: fields now come from the field library",
           "why": "the owner's ruling of 7 Oct 2026: the model chooses a question from the library and does not invent one",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-03",
+          "why": "\"How does it mostly move?\": not every thing has one value: 5 of the 12 things there fit more than one group, and at most 1 may (Crocodile: crawls and swims and walks; Turtle: walks and swims; Anaconda: swims and crawls; Titanoboa: swims and crawls; Vasuki indicus: swims and crawls); \"What does it mostly eat?\": only 1 of its values have four familiar things, and a board needs four: 'Mostly plants' has 1, 'Mostly meat or fish' has 8, 'Mostly insects and worms' has 3, 'Plants and meat alike' has 2; \"What covers its body?\": not every thing has one value: 2 of the 12 things there fit more than one group, and at most 1 may (Tortoise: shell and scales; Turtle: shell and scales); \"What is its body like?\": not every thing has one value: 5 of the 19 names sorted have no single group, and at most one in 8 may (Worm, Eel, Snail, Hermit crab, Dinosaur); \"What is its tail like?\": its groups have no sharp edges: both checks placed only 64% of the things where the proposer did (Monitor lizard: 'long_thin_tail' or 'thick_heavy_tail'; Anaconda: 'long_thin_tail' or 'thick_heavy_tail'; Python: 'long_thin_tail' or 'thick_heavy_tail'; Titanoboa: 'long_thin_tail' or 'thick_heavy_tail'); \"What is its mouth like?\": its groups have no sharp edges: both checks placed only 74% of the things where the proposer did (House lizard: 'wide_mouth' or 'small_mouth'; Crocodile: 'long_snout' or 'no one group'; Chameleon: 'wide_mouth' or 'small_mouth'; Monitor lizard: 'wide_mouth' or 'long_snout')",
+          "members_then": 12,
+          "status": "held by the rules"
         }
       ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.33,
+        "neglect": 0.0,
         "unlocks": 0.33,
         "cheapness": 0.33
       },
-      "score": 3.8,
-      "move": "widening",
-      "status": "proposable"
+      "score": 2.8,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "the rules: \"How does it mostly move?\": not every thing has one value: 5 of the 12 things there fit more than one group, and at most 1 may (Crocodile: crawls and swims and walks; Turtle: walks and swims; Anaconda: swims and crawls; Titanoboa: swims and crawls; Vasuki indicus: swims and crawls); \"What does it mostly eat?\": only 1 of its values have four familiar things, and a board needs four: 'Mostly plants' has 1, 'Mostly meat or fish' has 8, 'Mostly insects and worms' has 3, 'Plants and meat alike' has 2; \"What covers its body?\": not every thing has one value: 2 of the 12 things there fit more than one group, and at most 1 may (Tortoise: shell and scales; Turtle: shell and scales); \"What is its body like?\": not every thing has one value: 5 of the 19 names sorted have no single group, and at most one in 8 may (Worm, Eel, Snail, Hermit crab, Dinosaur); \"What is its tail like?\": its groups have no sharp edges: both checks placed only 64% of the things where the proposer did (Monitor lizard: 'long_thin_tail' or 'thick_heavy_tail'; Anaconda: 'long_thin_tail' or 'thick_heavy_tail'; Python: 'long_thin_tail' or 'thick_heavy_tail'; Titanoboa: 'long_thin_tail' or 'thick_heavy_tail'); \"What is its mouth like?\": its groups have no sharp edges: both checks placed only 74% of the things where the proposer did (House lizard: 'wide_mouth' or 'small_mouth'; Crocodile: 'long_snout' or 'no one group'; Chameleon: 'wide_mouth' or 'small_mouth'; Monitor lizard: 'wide_mouth' or 'long_snout')"
     },
     "animal/amphibian": {
       "label": "Amphibians",
@@ -339,11 +454,11 @@
       ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.33,
+        "neglect": 0.0,
         "unlocks": 0.0,
         "cheapness": 0.8
       },
-      "score": 4.1,
+      "score": 3.1,
       "move": "widening",
       "status": "rejected"
     },
@@ -389,12 +504,12 @@
       "decisions": [],
       "factors": {
         "nearness": 0.33,
-        "neglect": 0.33,
+        "neglect": 0.0,
         "unlocks": 0.33,
         "cheapness": 0.21
       },
-      "score": 3.1,
-      "move": "widening",
+      "score": 2.1,
+      "move": "deepening",
       "status": "held",
       "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
     },
@@ -411,12 +526,12 @@
       "decisions": [],
       "factors": {
         "nearness": 0.33,
-        "neglect": 0.33,
+        "neglect": 0.0,
         "unlocks": 0.33,
         "cheapness": 0.29
       },
-      "score": 3.2,
-      "move": "widening",
+      "score": 2.2,
+      "move": "deepening",
       "status": "held",
       "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
     },
@@ -433,12 +548,12 @@
       "decisions": [],
       "factors": {
         "nearness": 0.33,
-        "neglect": 0.33,
+        "neglect": 0.0,
         "unlocks": 0.33,
         "cheapness": 0.21
       },
-      "score": 3.1,
-      "move": "widening",
+      "score": 2.1,
+      "move": "deepening",
       "status": "held",
       "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
     },
@@ -455,12 +570,12 @@
       "decisions": [],
       "factors": {
         "nearness": 0.33,
-        "neglect": 0.33,
+        "neglect": 0.0,
         "unlocks": 0.33,
         "cheapness": 0.22
       },
-      "score": 3.1,
-      "move": "widening",
+      "score": 2.1,
+      "move": "deepening",
       "status": "held",
       "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
     },
@@ -523,6 +638,13 @@
           "what": "given back to the rules: fields now come from the field library",
           "why": "the owner's ruling of 7 Oct 2026: the model chooses a question from the library and does not invent one",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-03",
+          "why": "\"How does it grow?\": only 1 of its values have four familiar things, and a board needs four: 'Tall, with a woody trunk' has 6, 'As a bush' has 0, 'As a small soft plant' has 1, 'Climbing up a support' has 0, 'Creeping along the ground' has 0, 'Like grass' has 0; \"What shape are the leaves?\": its groups have no sharp edges: both checks placed only 61% of the things where the proposer did (Mango tree: 'big_round_leaves' or 'long_feathery_leaves'; Neem tree: 'long_feathery_leaves' or 'small_thin_leaves'; Guava tree: 'big_round_leaves' or 'small_thin_leaves'; Jackfruit tree: 'big_round_leaves' or 'no one group'); \"What is the trunk like?\": not every thing has one value: 2 of the 14 names sorted have no single group, and at most one in 8 may (Guava tree, Lemon tree); \"What kind of fruit does it give?\": not every thing has one value: 6 of the 23 names sorted have no single group, and at most one in 8 may (Papaya plant, Watermelon plant, Pineapple plant, Muskmelon plant, Guava tree, Tamarind tree)",
+          "members_then": 4,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -533,7 +655,8 @@
       },
       "score": 3.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"How does it grow?\": only 1 of its values have four familiar things, and a board needs four: 'Tall, with a woody trunk' has 6, 'As a bush' has 0, 'As a small soft plant' has 1, 'Climbing up a support' has 0, 'Creeping along the ground' has 0, 'Like grass' has 0; \"What shape are the leaves?\": its groups have no sharp edges: both checks placed only 61% of the things where the proposer did (Mango tree: 'big_round_leaves' or 'long_feathery_leaves'; Neem tree: 'long_feathery_leaves' or 'small_thin_leaves'; Guava tree: 'big_round_leaves' or 'small_thin_leaves'; Jackfruit tree: 'big_round_leaves' or 'no one group'); \"What is the trunk like?\": not every thing has one value: 2 of the 14 names sorted have no single group, and at most one in 8 may (Guava tree, Lemon tree); \"What kind of fruit does it give?\": not every thing has one value: 6 of the 23 names sorted have no single group, and at most one in 8 may (Papaya plant, Watermelon plant, Pineapple plant, Muskmelon plant, Guava tree, Tamarind tree)"
     },
     "plant/flower": {
       "label": "Flowers",
@@ -584,6 +707,13 @@
           "what": "given back to the rules: fields now come from the field library",
           "why": "the owner's ruling of 7 Oct 2026: the model chooses a question from the library and does not invent one",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-03",
+          "why": "\"Where does it mostly grow?\": not every thing has one value: 2 of the 14 names sorted have no single group, and at most one in 8 may (Sunflower, Daisy); \"How does it grow?\": only 1 of its values have four familiar things, and a board needs four: 'Tall, with a woody trunk' has 0, 'As a bush' has 1, 'As a small soft plant' has 9, 'Climbing up a support' has 2, 'Creeping along the ground' has 0, 'Like grass' has 0; \"What colour is its flower mostly?\": not every thing has one value: 2 of the 4 things there fit more than one group, and at most 1 may (Rose: red and yellow and white and pink; Lotus: pink and white); \"What shape is the flower?\": not every thing has one value: 2 of the 4 things there fit more than one group, and at most 1 may (Sunflower: many_petals and round_flat; Lotus: many_petals and cup_or_bowl); \"What color is the flower?\": not every thing has one value: 2 of the 4 things there fit more than one group, and at most 1 may (Rose: red and yellow and pink and white; Lotus: pink and white); \"Does the flower smell nice?\": not every thing has one value: 2 of the 4 things there fit more than one group, and at most 1 may (Lotus: light_smell and strong_smell; Marigold: spicy_smell and bad_smell)",
+          "members_then": 4,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -594,7 +724,8 @@
       },
       "score": 3.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"Where does it mostly grow?\": not every thing has one value: 2 of the 14 names sorted have no single group, and at most one in 8 may (Sunflower, Daisy); \"How does it grow?\": only 1 of its values have four familiar things, and a board needs four: 'Tall, with a woody trunk' has 0, 'As a bush' has 1, 'As a small soft plant' has 9, 'Climbing up a support' has 2, 'Creeping along the ground' has 0, 'Like grass' has 0; \"What colour is its flower mostly?\": not every thing has one value: 2 of the 4 things there fit more than one group, and at most 1 may (Rose: red and yellow and white and pink; Lotus: pink and white); \"What shape is the flower?\": not every thing has one value: 2 of the 4 things there fit more than one group, and at most 1 may (Sunflower: many_petals and round_flat; Lotus: many_petals and cup_or_bowl); \"What color is the flower?\": not every thing has one value: 2 of the 4 things there fit more than one group, and at most 1 may (Rose: red and yellow and pink and white; Lotus: pink and white); \"Does the flower smell nice?\": not every thing has one value: 2 of the 4 things there fit more than one group, and at most 1 may (Lotus: light_smell and strong_smell; Marigold: spicy_smell and bad_smell)"
     },
     "plant/grass_grain": {
       "label": "Grasses and grains",
@@ -645,6 +776,13 @@
           "what": "given back to the rules: fields now come from the field library",
           "why": "the owner's ruling of 7 Oct 2026: the model chooses a question from the library and does not invent one",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-03",
+          "why": "\"How does it grow?\": its groups have no sharp edges: both checks placed only 60% of the things where the proposer did (Rice plant: 'small_plant' or 'grass'; Wheat: 'small_plant' or 'grass'); \"What is its stem like?\": its groups have no sharp edges: both checks placed only 82% of the things where the proposer did (Papaya plant: 'thick_juicy_stem' or 'soft_green_stem'; Bottle gourd vine: 'thick_juicy_stem' or 'climbing_vine_stem'; Pumpkin vine: 'thick_juicy_stem' or 'climbing_vine_stem'); \"What is its leaf like?\": its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Bamboo: 'needle_like_leaves' or 'long_thin_leaves'; Palm tree: 'long_thin_leaves' or 'broad_flat_leaves'; Spinach: 'small_round_leaves' or 'broad_flat_leaves'); \"What is its seed head like?\": not every thing has one value: 1 of the 7 names sorted have no single group, and at most one in 8 may (Teak tree)",
+          "members_then": 5,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -655,7 +793,8 @@
       },
       "score": 3.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"How does it grow?\": its groups have no sharp edges: both checks placed only 60% of the things where the proposer did (Rice plant: 'small_plant' or 'grass'; Wheat: 'small_plant' or 'grass'); \"What is its stem like?\": its groups have no sharp edges: both checks placed only 82% of the things where the proposer did (Papaya plant: 'thick_juicy_stem' or 'soft_green_stem'; Bottle gourd vine: 'thick_juicy_stem' or 'climbing_vine_stem'; Pumpkin vine: 'thick_juicy_stem' or 'climbing_vine_stem'); \"What is its leaf like?\": its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Bamboo: 'needle_like_leaves' or 'long_thin_leaves'; Palm tree: 'long_thin_leaves' or 'broad_flat_leaves'; Spinach: 'small_round_leaves' or 'broad_flat_leaves'); \"What is its seed head like?\": not every thing has one value: 1 of the 7 names sorted have no single group, and at most one in 8 may (Teak tree)"
     },
     "plant/vegetable": {
       "label": "Vegetable plants",
@@ -774,7 +913,7 @@
       "label": "Things in nature that are not alive",
       "steps_from_seed": 1,
       "branch": "nature_not_alive",
-      "members": 24,
+      "members": 32,
       "open": true,
       "sorted_by": "kind_of_nature",
       "decisions": [],
@@ -829,6 +968,13 @@
           "what": "given back to the rules: fields now come from the field library",
           "why": "the owner's ruling of 7 Oct 2026: the model chooses a question from the library and does not invent one",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-03",
+          "why": "\"What is it made of?\": not every thing has one value: 3 of the 16 names sorted have no single group, and at most one in 8 may (Cloud, Steam, Fog); \"How does it move?\": not every thing has one value: 9 of the 12 names sorted have no single group, and at most one in 8 may (Moon, Bird, Plane, Leaf, Lamp, Candle); \"What shape is it?\": only 0 of its values have four familiar things, and a board needs four: 'Round like a ball' has 2, 'Fluffy and soft' has 1, 'Pointy and sharp' has 1, 'Flat and wide' has 0",
+          "members_then": 4,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -839,7 +985,8 @@
       },
       "score": 4.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What is it made of?\": not every thing has one value: 3 of the 16 names sorted have no single group, and at most one in 8 may (Cloud, Steam, Fog); \"How does it move?\": not every thing has one value: 9 of the 12 names sorted have no single group, and at most one in 8 may (Moon, Bird, Plane, Leaf, Lamp, Candle); \"What shape is it?\": only 0 of its values have four familiar things, and a board needs four: 'Round like a ball' has 2, 'Fluffy and soft' has 1, 'Pointy and sharp' has 1, 'Flat and wide' has 0"
     },
     "nature_not_alive/water": {
       "label": "Water",
@@ -877,6 +1024,13 @@
           "what": "given back to the rules: fields now come from the field library",
           "why": "the owner's ruling of 7 Oct 2026: the model chooses a question from the library and does not invent one",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-03",
+          "why": "\"What is the water mostly doing?\": only 3 of its values have four familiar things, and a board needs four: 'Flowing along' has 4, 'Standing still' has 5, 'Salty sea water' has 2, 'Frozen hard' has 4, 'Falling from the sky' has 0; \"What is it mostly: hard, runny, airy, or light?\": only 1 of its values have four familiar things, and a board needs four: 'Hard and solid' has 2, 'Wet and runny' has 9, 'Air, mist or gas' has 3, 'Light or fire' has 0; \"Does the water flow or stay still?\": only 3 of its values have four familiar things, and a board needs four: 'Water that flows' has 6, 'Water that stays still' has 4, 'Water with big waves' has 3, 'Water that is frozen hard' has 5; \"Is the water big or small?\": its groups have no sharp edges: both checks placed only 72% of the things where the proposer did (Bay: 'very_big' or 'big'; Shore: 'very_big' or 'no one group'; Canal: 'big' or 'small'; Puddle: 'small' or 'tiny'); \"Is the water salty or not salty?\": not every thing has one value: 3 of the 18 names sorted have no single group, and at most one in 8 may (Shore, Pool, Iceberg)",
+          "members_then": 4,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -887,17 +1041,22 @@
       },
       "score": 4.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What is the water mostly doing?\": only 3 of its values have four familiar things, and a board needs four: 'Flowing along' has 4, 'Standing still' has 5, 'Salty sea water' has 2, 'Frozen hard' has 4, 'Falling from the sky' has 0; \"What is it mostly: hard, runny, airy, or light?\": only 1 of its values have four familiar things, and a board needs four: 'Hard and solid' has 2, 'Wet and runny' has 9, 'Air, mist or gas' has 3, 'Light or fire' has 0; \"Does the water flow or stay still?\": only 3 of its values have four familiar things, and a board needs four: 'Water that flows' has 6, 'Water that stays still' has 4, 'Water with big waves' has 3, 'Water that is frozen hard' has 5; \"Is the water big or small?\": its groups have no sharp edges: both checks placed only 72% of the things where the proposer did (Bay: 'very_big' or 'big'; Shore: 'very_big' or 'no one group'; Canal: 'big' or 'small'; Puddle: 'small' or 'tiny'); \"Is the water salty or not salty?\": not every thing has one value: 3 of the 18 names sorted have no single group, and at most one in 8 may (Shore, Pool, Iceberg)"
     },
     "nature_not_alive/land": {
       "label": "Places on land",
       "steps_from_seed": 2,
       "branch": "nature_not_alive",
-      "members": 6,
+      "members": 14,
       "open": false,
+      "sorted_by": "shape_of_the_land",
       "missing": {
-        "field": "no field splits it four ways",
-        "things": 10
+        "field": null,
+        "short": {
+          "by_water": 3
+        },
+        "things": 3
       },
       "decisions": [
         {
@@ -925,15 +1084,21 @@
           "what": "given back to the rules: fields now come from the field library",
           "why": "the owner's ruling of 7 Oct 2026: the model chooses a question from the library and does not invent one",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules added the field \"What is the land mostly like there?\" in job run 2026-10-07-03",
+          "why": "it passed the four tests: High land, Flat land, Land beside water, Hollows and holes in the land",
+          "status": "added by the rules"
         }
       ],
       "factors": {
         "nearness": 0.5,
         "neglect": 0.67,
         "unlocks": 0.33,
-        "cheapness": 0.22
+        "cheapness": 0.57
       },
-      "score": 4.6,
+      "score": 5.3,
       "move": "widening",
       "status": "proposable"
     },
@@ -972,6 +1137,13 @@
           "what": "the field \"What happens when it gets wet?\" was withdrawn",
           "why": "it passed on groups padded with other names for mud; a name must now be a thing of its own",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-03",
+          "why": "\"How big are its pieces mostly?\": not every thing has one value: 3 of the 9 things there fit more than one group, and at most 1 may (Soil: fine and grains; Gravel: small and grains; Coal: one_big and small); \"What is it mostly: hard, runny, airy, or light?\": only 1 of its values have four familiar things, and a board needs four: 'Hard and solid' has 9, 'Wet and runny' has 0, 'Air, mist or gas' has 0, 'Light or fire' has 0; \"How big are the pieces you see?\": not every thing has one value: 2 of the 9 things there fit more than one group, and at most 1 may (Soil: small_pieces and tiny_grains; Coal: one_big_piece and small_pieces); \"What color is it?\": not every thing has one value: 2 of the 9 things there fit more than one group, and at most 1 may (Sand: yellow and brown; Clay: brown and gray); \"How does it feel when you touch it?\": only 0 of its values have four familiar things, and a board needs four: 'Hard and smooth' has 3, 'Rough and grainy' has 3, 'Soft and sticky' has 2, 'Black and dusty' has 1",
+          "members_then": 9,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -982,13 +1154,14 @@
       },
       "score": 4.7,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"How big are its pieces mostly?\": not every thing has one value: 3 of the 9 things there fit more than one group, and at most 1 may (Soil: fine and grains; Gravel: small and grains; Coal: one_big and small); \"What is it mostly: hard, runny, airy, or light?\": only 1 of its values have four familiar things, and a board needs four: 'Hard and solid' has 9, 'Wet and runny' has 0, 'Air, mist or gas' has 0, 'Light or fire' has 0; \"How big are the pieces you see?\": not every thing has one value: 2 of the 9 things there fit more than one group, and at most 1 may (Soil: small_pieces and tiny_grains; Coal: one_big_piece and small_pieces); \"What color is it?\": not every thing has one value: 2 of the 9 things there fit more than one group, and at most 1 may (Sand: yellow and brown; Clay: brown and gray); \"How does it feel when you touch it?\": only 0 of its values have four familiar things, and a board needs four: 'Hard and smooth' has 3, 'Rough and grainy' has 3, 'Soft and sticky' has 2, 'Black and dusty' has 1"
     },
     "made_by_people": {
       "label": "Things people make",
       "steps_from_seed": 1,
       "branch": "made_by_people",
-      "members": 60,
+      "members": 72,
       "open": true,
       "sorted_by": "kind_of_made_thing",
       "decisions": [],
@@ -1136,6 +1309,13 @@
           "what": "given back to the rules: fields now come from the field library",
           "why": "the owner's ruling of 7 Oct 2026: the model chooses a question from the library and does not invent one",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-03",
+          "why": "\"How do we mostly play with it?\": not every thing has one value: 2 of the 7 things there fit more than one group, and at most 1 may (Ball: throw and roll; Balloon: throw and cuddle); \"How do you play with it?\": not every thing has a value: Kite - it fits no group; Balloon - it fits more than one group; \"What shape is it?\": not every thing has a value: Kite - it fits no group; \"What is it mostly made of?\": not every thing has a value: Ball - it fits more than one group",
+          "members_then": 7,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -1146,7 +1326,8 @@
       },
       "score": 2.6,
       "move": "deepening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"How do we mostly play with it?\": not every thing has one value: 2 of the 7 things there fit more than one group, and at most 1 may (Ball: throw and roll; Balloon: throw and cuddle); \"How do you play with it?\": not every thing has a value: Kite - it fits no group; Balloon - it fits more than one group; \"What shape is it?\": not every thing has a value: Kite - it fits no group; \"What is it mostly made of?\": not every thing has a value: Ball - it fits more than one group"
     },
     "made_by_people/household": {
       "label": "Things in the house",
@@ -1303,6 +1484,13 @@
           "what": "given back to the rules: fields now come from the field library",
           "why": "the owner's ruling of 7 Oct 2026: the model chooses a question from the library and does not invent one",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-03",
+          "why": "\"What job does it mostly do?\": only 1 of its values have four familiar things, and a board needs four: 'Cuts' has 2, 'Hits or knocks in' has 3, 'Digs' has 5, 'Measures' has 0, 'Holds or grips' has 0, 'Turns or tightens' has 3; \"What kind of tool is it?\": only 1 of its values have four familiar things, and a board needs four: 'Hammering tool' has 3, 'Digging tool' has 4, 'Cutting tool' has 2, 'Turning tool' has 3; \"What shape is the part that does the work?\": its groups have no sharp edges: both checks placed only 77% of the things where the proposer did (Axe: 'pointed_and_thin' or 'no one group'; Rake: 'flat_and_wide' or 'toothed_edge'; Fork: 'flat_and_wide' or 'toothed_edge'; Machete: 'pointed_and_thin' or 'no one group'); \"How do we use it?\": only 1 of its values have four familiar things, and a board needs four: 'Hit and knock' has 3, 'Dig and scoop' has 3, 'Cut and chop' has 2, 'Turn and tighten' has 4",
+          "members_then": 5,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -1313,17 +1501,22 @@
       },
       "score": 2.6,
       "move": "deepening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What job does it mostly do?\": only 1 of its values have four familiar things, and a board needs four: 'Cuts' has 2, 'Hits or knocks in' has 3, 'Digs' has 5, 'Measures' has 0, 'Holds or grips' has 0, 'Turns or tightens' has 3; \"What kind of tool is it?\": only 1 of its values have four familiar things, and a board needs four: 'Hammering tool' has 3, 'Digging tool' has 4, 'Cutting tool' has 2, 'Turning tool' has 3; \"What shape is the part that does the work?\": its groups have no sharp edges: both checks placed only 77% of the things where the proposer did (Axe: 'pointed_and_thin' or 'no one group'; Rake: 'flat_and_wide' or 'toothed_edge'; Fork: 'flat_and_wide' or 'toothed_edge'; Machete: 'pointed_and_thin' or 'no one group'); \"How do we use it?\": only 1 of its values have four familiar things, and a board needs four: 'Hit and knock' has 3, 'Dig and scoop' has 3, 'Cut and chop' has 2, 'Turn and tighten' has 4"
     },
     "made_by_people/building": {
       "label": "Buildings",
       "steps_from_seed": 2,
       "branch": "made_by_people",
-      "members": 7,
+      "members": 19,
       "open": false,
+      "sorted_by": "what_people_do_there",
       "missing": {
-        "field": "no field splits it four ways",
-        "things": 9
+        "field": null,
+        "short": {
+          "heal": 1
+        },
+        "things": 1
       },
       "decisions": [
         {
@@ -1356,15 +1549,21 @@
           "what": "given back to the rules: fields now come from the field library",
           "why": "the owner's ruling of 7 Oct 2026: the model chooses a question from the library and does not invent one",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules added the field \"What do people mostly do there?\" in job run 2026-10-07-03",
+          "why": "it passed the four tests: Live, Learn, Pray, Buy and sell, Get well, Start a journey, Cross over or climb up",
+          "status": "added by the rules"
         }
       ],
       "factors": {
         "nearness": 0.5,
         "neglect": 0.0,
         "unlocks": 0.33,
-        "cheapness": 0.24
+        "cheapness": 0.8
       },
-      "score": 2.6,
+      "score": 3.8,
       "move": "deepening",
       "status": "proposable"
     }

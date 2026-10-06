@@ -1,0 +1,49 @@
+{
+  "name": "Bakery",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A bakery (also known as a bakehouse, baker's shop or bake shop) is an establishment that produces and sells flour-based baked goods made in an oven such as bread, cookies, cakes, doughnuts, pizzas, bagels, pastries, and pies.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "The place where a baker works is called a bakehouse or a bakery.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "what_people_do_there": {
+      "value": "buy",
+      "quote": "A bakery (also known as a bakehouse, baker's shop or bake shop) is an establishment that produces and sells flour-based baked goods made in an oven such as bread, cookies, cakes, doughnuts, pizzas, bagels, pastries, and pies.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Bakery",
+      "title": "Bakery",
+      "asked_for": "Bakery",
+      "revision": 1374860843,
+      "fetched_on": "2026-10-07",
+      "sha256": "17e584ece0df1c197161333bcecd2afbbac907a2e885e31e50584cb992cfdb27"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Baker",
+      "title": "Baker",
+      "asked_for": "Bakery",
+      "revision": 10545319,
+      "fetched_on": "2026-10-07",
+      "sha256": "92b58119747bb9b659b50d67633117e8ad781f396e9334ce696317f5ee4e6a69"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

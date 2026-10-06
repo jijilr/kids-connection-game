@@ -1,0 +1,55 @@
+{
+  "name": "Sheep",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "A domestic sheep (Ovis aries) is a domesticated mammal related to wild sheep and goats.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "A domestic sheep (Ovis aries) is a domesticated mammal related to wild sheep and goats.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "There are around 1.2 billion domestic sheep as of 2019, making them easily the most common species of sheep.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "farm",
+      "quote": "Sheep are owned and looked after by a sheep farmer.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Sheep",
+      "title": "Sheep",
+      "asked_for": "Sheep",
+      "revision": 1376891803,
+      "fetched_on": "2026-10-07",
+      "sha256": "94f051b57fcbd375ce7c6d5991193257c3512a4cdfcc1832a0f665da09494aca"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Domestic_sheep",
+      "title": "Domestic sheep",
+      "asked_for": "Sheep",
+      "revision": 10937279,
+      "fetched_on": "2026-10-07",
+      "sha256": "25616032a78903278be1a00c1ad413b67cdab44e9d12bd90ddd1ed2309f1248a"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

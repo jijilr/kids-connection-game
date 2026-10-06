@@ -1,0 +1,55 @@
+{
+  "name": "Seal",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Pinnipeds  are the seals and their relatives, a group of semi-aquatic marine mammals.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "Pinnipeds  are the seals and their relatives, a group of semi-aquatic marine mammals.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "They comprise the extant families Odobenidae (whose only living member is the walrus), Otariidae (the eared seals: sea lions and fur seals), and Phocidae (the earless seals, or true seals), with 34 extant species and more than 50 extinct species described from fossils.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_water",
+      "quote": "They spend most of their lives in water, but come ashore to mate, give birth, molt or to avoid ocean predators, such as sharks and orcas.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Pinniped",
+      "title": "Pinniped",
+      "asked_for": "Seal (mammal)",
+      "revision": 1377488817,
+      "fetched_on": "2026-10-07",
+      "sha256": "716beebdec3fafbd0ee106106957f0805227bf339e84e83d959d1702852a8388"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Pinniped",
+      "title": "Pinniped",
+      "asked_for": "Seal (animal)",
+      "revision": 10941203,
+      "fetched_on": "2026-10-07",
+      "sha256": "9cd16f64cb3884417f5ed2b13a7b7be22941849f364b8e8caa6362c0cb68a3b5"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Supermarket",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "basis": "judged, not sourced",
+      "why": "A supermarket is a retail store or shop, which is a place built and operated by people."
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "The traditional supermarket occupies a large amount of floor space, usually on a single level.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_people_do_there": {
+      "value": "buy",
+      "quote": "The basic appeal is the availability of a broad selection of goods under a single roof, at relatively low prices.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Supermarket",
+      "title": "Supermarket",
+      "asked_for": "Supermarket",
+      "revision": 1369952460,
+      "fetched_on": "2026-10-07",
+      "sha256": "ba8f75b8370bb820819057c3d0e3b3671ec336c87e85daf5fb45c8bb4dde603c"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Supermarket",
+      "title": "Supermarket",
+      "asked_for": "Supermarket",
+      "revision": 10690866,
+      "fetched_on": "2026-10-07",
+      "sha256": "9144cb4abcf8e73aa4939719a80c818fcb00977396f18cd03de4a21ec4b5cf80"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

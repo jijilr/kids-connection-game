@@ -1,0 +1,54 @@
+{
+  "name": "Swan",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Swans are birds of the genus Cygnus within the family Anatidae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "Swans are birds of the genus Cygnus within the family Anatidae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "There are six living and many extinct species of swan; in addition, there is a species known as the coscoroba swan, which is no longer considered one of the true swans.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild_of_bird": {
+      "value": "wild_water",
+      "basis": "judged, not sourced",
+      "why": "Swans live on water in the wild, swimming on ponds, lakes, or oceans rather than being kept as pets or farm animals."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Swan",
+      "title": "Swan",
+      "asked_for": "Swan",
+      "revision": 1373991344,
+      "fetched_on": "2026-10-07",
+      "sha256": "6d92fa6b0f0c2b47f1eeb90aa50211f20169b2fea0ecac40cdbb47bf9c20f0eb"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Swan",
+      "title": "Swan",
+      "asked_for": "Swan",
+      "revision": 8688330,
+      "fetched_on": "2026-10-07",
+      "sha256": "678c470f84672088112677c0906ea6cf2c9e02a43d6557b57a83f2a76489bf69"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

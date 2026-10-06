@@ -1,0 +1,50 @@
+{
+  "name": "Nursing home",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A nursing home is a facility for the residential care of older people, senior citizens, or disabled people.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "A nursing home is a facility for the residential care of older people, senior citizens, or disabled people.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "what_people_do_there",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "heal",
+      "quote": "Nursing homes are used by people who do not need to be in a hospital, but require care that is hard to provide in a home setting."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Nursing_home",
+      "title": "Nursing home",
+      "asked_for": "Nursing home",
+      "revision": 1358209184,
+      "fetched_on": "2026-10-07",
+      "sha256": "889df14a044d744acdd483a0db39157b11df7d55e7edc3ff8653ac572710aba4"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Nursing_home",
+      "title": "Nursing home",
+      "asked_for": "Nursing home",
+      "revision": 9247129,
+      "fetched_on": "2026-10-07",
+      "sha256": "e0cb4c21138c16159df9cee221a4dd607f9b95108d518773c3d81b5d6ff55631"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

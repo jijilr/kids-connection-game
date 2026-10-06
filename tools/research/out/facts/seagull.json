@@ -1,0 +1,55 @@
+{
+  "name": "Seagull",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Gulls, also called seagulls, is a common name that refers to any type of bird.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "Gulls, also called seagulls, is a common name that refers to any type of bird.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Many species of gulls have learned to coexist successfully with humans and thrive in human habitats.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild_of_bird": {
+      "value": "wild_water",
+      "quote": "Gulls used to be found only near the sea, as they are water birds with webbed feet for swimming.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Gull",
+      "title": "Gull",
+      "asked_for": "Seagull",
+      "revision": 1377875802,
+      "fetched_on": "2026-10-07",
+      "sha256": "d88b91ebc8c042b2ad2661516ecffd1c8ff104edad468cd4e7d0c8a15ba9a210"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Gull",
+      "title": "Gull",
+      "asked_for": "Seagull",
+      "revision": 8204094,
+      "fetched_on": "2026-10-07",
+      "sha256": "e63cc528ff5253d26df6df2a78f571ed7dca85757d223f51274bb454a7bf97d5"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

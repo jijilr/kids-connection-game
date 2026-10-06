@@ -1,0 +1,46 @@
+{
+  "name": "Budgie",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The budgerigar ( BUJ-ər-ih-gar, -⁠ə-ree-; Melopsittacus undulatus), also known as the common parakeet, shell parakeet or budgie ( BUJ-ee), is a small, long-tailed, seed-eating parrot native to Australia.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "The budgerigar ( BUJ-ər-ih-gar, -⁠ə-ree-; Melopsittacus undulatus), also known as the common parakeet, shell parakeet or budgie ( BUJ-ee), is a small, long-tailed, seed-eating parrot native to Australia.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "They are found wild throughout the drier parts of Australia, where they have survived harsh inland conditions for over five million years.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild_of_bird": {
+      "value": "pet",
+      "quote": "First recorded in 1805, budgerigars are popular pets around the world due to their small size, low cost, and ability to mimic human speech.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Budgerigar",
+      "title": "Budgerigar",
+      "asked_for": "Budgie (bird)",
+      "revision": 1372354796,
+      "fetched_on": "2026-10-07",
+      "sha256": "b8731776f39e124d44ee3ceb1d1abc11b0915bac3dbb912e06de85c3935710ec"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

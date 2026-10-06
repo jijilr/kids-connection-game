@@ -1,0 +1,49 @@
+{
+  "name": "Valley",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A valley is a type of landform.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "quote": "A valley is a lower part in the land that sits between two higher parts which might be hills or mountains.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "shape_of_the_land": {
+      "value": "hollow",
+      "quote": "A valley is a lower part in the land that sits between two higher parts which might be hills or mountains.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Valley",
+      "title": "Valley",
+      "asked_for": "Valley",
+      "revision": 1377543917,
+      "fetched_on": "2026-10-07",
+      "sha256": "3a4f87b13621c986359171a5e6a74e166f1788f19e93980930124ac6aab4d814"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Valley",
+      "title": "Valley",
+      "asked_for": "Valley",
+      "revision": 8464842,
+      "fetched_on": "2026-10-07",
+      "sha256": "cf08674557ee006c5c53a3fd628990424c049faafbcc6b45a682837165d80c6d"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

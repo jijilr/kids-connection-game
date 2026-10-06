@@ -1,0 +1,47 @@
+{
+  "name": "Meadow",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A meadow is a field of grass and other non-woody plants.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "basis": "judged, not sourced",
+      "why": "A meadow is an open field or habitat covered with grass and plants, so it is a place on land."
+    },
+    "shape_of_the_land": {
+      "value": "flat",
+      "basis": "judged, not sourced",
+      "why": "A meadow is described as an open field of grass, which is flat land."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Meadow",
+      "title": "Meadow",
+      "asked_for": "Meadow",
+      "revision": 1368813703,
+      "fetched_on": "2026-10-07",
+      "sha256": "96f4eda67922e90df4c8a75ca34e0ac741ccc2e350239db2762614a493b6d72d"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Meadow",
+      "title": "Meadow",
+      "asked_for": "Meadow",
+      "revision": 10715182,
+      "fetched_on": "2026-10-07",
+      "sha256": "a9d680cab64f132f43c09ad395012233d76e30732bb3040b4fcd377b9603b7d9"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

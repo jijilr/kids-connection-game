@@ -1,0 +1,49 @@
+{
+  "name": "Plain",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "In geography, a plain is a large area of land with no hills or mountains.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "quote": "In geography, a plain is a large area of land with no hills or mountains.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "shape_of_the_land": {
+      "value": "flat",
+      "quote": "In geography, a plain, commonly known as flatland, is a flat expanse of land  that generally has few rapid or steep changes in elevation.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Plain",
+      "title": "Plain",
+      "asked_for": "Plain",
+      "revision": 1369885849,
+      "fetched_on": "2026-10-07",
+      "sha256": "6f63b8e986b390ab1314a7e7013ea05167a10af66da46a0ac4961cd4141c7cff"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Plain",
+      "title": "Plain",
+      "asked_for": "Plain",
+      "revision": 8849476,
+      "fetched_on": "2026-10-07",
+      "sha256": "737f0570e830b0f87fa5833c25af695cd94fbeabe5aec766e7bd9b4c4cd83251"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

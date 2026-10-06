@@ -1,0 +1,49 @@
+{
+  "name": "Mall",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A mall or shopping center is a large building that is full of many smaller shops and stores.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "A mall or shopping center is a large building that is full of many smaller shops and stores.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "what_people_do_there": {
+      "value": "buy",
+      "quote": "People visit the stores in the mall to shop.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Shopping_mall",
+      "title": "Shopping mall",
+      "asked_for": "Shopping mall",
+      "revision": 1376014467,
+      "fetched_on": "2026-10-07",
+      "sha256": "72b01931d144f68daca960e7f7676c24a428cad2614c3a4fd303ab02e05ed3c5"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Mall",
+      "title": "Mall",
+      "asked_for": "Mall",
+      "revision": 10895839,
+      "fetched_on": "2026-10-07",
+      "sha256": "1b499c4e77555d4f7e712f5695e1886f3b9faf576337aee71b2e19d83f9cc153"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

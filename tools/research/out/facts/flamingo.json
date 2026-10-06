@@ -1,0 +1,55 @@
+{
+  "name": "Flamingo",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Flamingos or flamingoes () are a type of wading bird in the family Phoenicopteridae, which is the only extant family in the order Phoenicopteriformes.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "Flamingos () are types of birds.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "There are four flamingo species distributed throughout the Americas (including the Caribbean), and two species native to Afro-Eurasia.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild_of_bird": {
+      "value": "wild_water",
+      "quote": "Flamingos are wading birds. This means they live by water, such as lakes.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Flamingo",
+      "title": "Flamingo",
+      "asked_for": "Flamingo",
+      "revision": 1374721268,
+      "fetched_on": "2026-10-07",
+      "sha256": "30851b580c5356483eebf2fb5326bcaf0041f398f75baf31af90fe23c0a511d1"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Flamingo",
+      "title": "Flamingo",
+      "asked_for": "Flamingo",
+      "revision": 9819174,
+      "fetched_on": "2026-10-07",
+      "sha256": "71df4c579e27d9f7027370f6ab8f2d55c5193d3ef42b8cdd5d92b91926f71f73"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

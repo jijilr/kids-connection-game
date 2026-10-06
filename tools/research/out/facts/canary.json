@@ -1,0 +1,55 @@
+{
+  "name": "Canary",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The canary (Serinus canaria), also called the island canary, Atlantic canary or common canary, is a small passerine bird.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "The canary (Serinus canaria), also called the island canary, Atlantic canary or common canary, is a small passerine bird.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "The species is common in captivity.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild_of_bird": {
+      "value": "pet",
+      "quote": "They are popular pets.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Domestic_canary",
+      "title": "Domestic canary",
+      "asked_for": "Domestic canary",
+      "revision": 1377092624,
+      "fetched_on": "2026-10-07",
+      "sha256": "9ecc5ab4cc9fd11ce1ea176ef2d0bc51c6257cb0b0939362bbef1d5ce2af29d9"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Canary",
+      "title": "Canary",
+      "asked_for": "Canary",
+      "revision": 10392820,
+      "fetched_on": "2026-10-07",
+      "sha256": "f2021333778b5a18b2da1a4fce216aec4610f59ea81e56fc26d2e72ba371e7b2"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

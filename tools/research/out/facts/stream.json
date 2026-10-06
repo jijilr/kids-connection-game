@@ -1,0 +1,43 @@
+{
+  "name": "Stream",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A stream is a continuous body of surface water  flowing within the bed and banks of a channel.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "water",
+      "quote": "A stream is a natural flow of water moving across land between banks.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Stream",
+      "title": "Stream",
+      "asked_for": "Stream",
+      "revision": 1374578029,
+      "fetched_on": "2026-10-07",
+      "sha256": "afdb0a976fa2a5d435f8320899126337a83511088b8153073c73be83c53a51af"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Stream",
+      "title": "Stream",
+      "asked_for": "Stream",
+      "revision": 9718148,
+      "fetched_on": "2026-10-07",
+      "sha256": "91ed1f66bb685830928ad8ed1a0b821d897d5bec7e0498f65cdb0037cb288d95"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

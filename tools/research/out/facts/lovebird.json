@@ -1,0 +1,55 @@
+{
+  "name": "Lovebird",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Lovebird is the common name for the genus Agapornis, a small group of parrots in the Old World parrot family Psittaculidae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "A lovebird (Agapornis) is a type of parrot.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Of the nine extant species in the genus, all are native to the African continent, with the grey-headed lovebird being native to the African island of Madagascar.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild_of_bird": {
+      "value": "pet",
+      "quote": "Some species are kept as pets,               and several coloured mutations have been selectively bred in aviculture.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Lovebird",
+      "title": "Lovebird",
+      "asked_for": "Lovebird",
+      "revision": 1363166989,
+      "fetched_on": "2026-10-07",
+      "sha256": "3bbc5a47c50ea4d3bd7572176707ee38058ed0d05523cbfb9b235fea502b3af9"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Lovebird",
+      "title": "Lovebird",
+      "asked_for": "Lovebird",
+      "revision": 8528131,
+      "fetched_on": "2026-10-07",
+      "sha256": "63f80e9d3770e2b85000cfe8424955d1c346f3bd5bf02f8f2833ae92e42e647a"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

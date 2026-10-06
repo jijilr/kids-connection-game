@@ -1,0 +1,55 @@
+{
+  "name": "Pelican",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Pelicans are a genus of large water birds of the family Pelecanidae.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "Pelicans are a genus of large water birds of the family Pelecanidae.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "The eight living pelican species have a patchy global distribution, ranging latitudinally from the tropics to the temperate zone.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild_of_bird": {
+      "value": "wild_water",
+      "quote": "Pelicans will frequent inland waterways but are most known for residing along maritime and coastal zones, where they feed principally on fish in their large throat pouches, diving into the water and catching them at/near the water's surface.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Pelican",
+      "title": "Pelican",
+      "asked_for": "Pelican",
+      "revision": 1375493588,
+      "fetched_on": "2026-10-07",
+      "sha256": "c8d987e4cb2e8af57500a050664498e5bb6deff0f304b216bfaa582eb7b22c64"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Pelican",
+      "title": "Pelican",
+      "asked_for": "Pelican",
+      "revision": 10538880,
+      "fetched_on": "2026-10-07",
+      "sha256": "f9d0b71481e488216221399551e148a2312589f86f969ec5543906de1ebfd687"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

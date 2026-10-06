@@ -1,0 +1,49 @@
+{
+  "name": "Crater",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A crater is a landform consisting of a hole or depression on a planetary surface, usually caused either by an object hitting the surface, or by geological activity on the planet.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "quote": "A crater is a landform consisting of a hole or depression on a planetary surface, usually caused either by an object hitting the surface, or by geological activity on the planet.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "shape_of_the_land": {
+      "value": "hollow",
+      "quote": "A crater is a landform consisting of a hole or depression on a planetary surface, usually caused either by an object hitting the surface, or by geological activity on the planet.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Crater",
+      "title": "Crater",
+      "asked_for": "Crater",
+      "revision": 1371821759,
+      "fetched_on": "2026-10-07",
+      "sha256": "003b1953a28ce9dfa0a7a1cb04e1f2ce00b2476fb75be3e0f52c0a0b8ae1a7a4"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Crater",
+      "title": "Crater",
+      "asked_for": "Crater",
+      "revision": 7823877,
+      "fetched_on": "2026-10-07",
+      "sha256": "8876d142d7fbc39849583bc591a1c62fffaf0c3b30d9dcb8041c62082b9afc19"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

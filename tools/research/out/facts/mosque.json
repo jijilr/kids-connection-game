@@ -1,0 +1,49 @@
+{
+  "name": "Mosque",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A mosque ( MOSK), also called a masjid ( MASS-jid, MUSS-), is a place of worship for Muslims.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "The term usually refers to a covered building, but can be any place where Islamic prayers are performed, such as an outdoor courtyard.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_people_do_there": {
+      "value": "pray",
+      "quote": "A mosque is a place where Muslims worship.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Mosque",
+      "title": "Mosque",
+      "asked_for": "Mosque",
+      "revision": 1377994815,
+      "fetched_on": "2026-10-07",
+      "sha256": "90400c4a85c80bac3fc1b2b0e123dfe72e0a341fb8b90507aadf5665247b9f0a"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Mosque",
+      "title": "Mosque",
+      "asked_for": "Mosque",
+      "revision": 11005388,
+      "fetched_on": "2026-10-07",
+      "sha256": "60603ca919d92da52d57fa16b96c5ebf7ef54817cc987e7ee7242ef50cd3b89a"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Dolphin",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "A dolphin is any one of the 40 extant species of aquatic mammal from the cetacean families Delphinidae (the oceanic dolphins), Platanistidae (the Indian river dolphins), Iniidae (the New World river dolphins), Pontoporiidae (the brackish dolphins), and the probably extinct Lipotidae (baiji or Chinese river dolphin).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "They are mammals, not fish.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "A dolphin is any one of the 40 extant species of aquatic mammal from the cetacean families Delphinidae (the oceanic dolphins), Platanistidae (the Indian river dolphins), Iniidae (the New World river dolphins), Pontoporiidae (the brackish dolphins), and the probably extinct Lipotidae (baiji or Chinese river dolphin).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_water",
+      "quote": "Dolphins are widespread, mostly in pelagic marine environments but some thrive in brackish and freshwater bodies.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Dolphin",
+      "title": "Dolphin",
+      "asked_for": "Dolphin",
+      "revision": 1375794602,
+      "fetched_on": "2026-10-07",
+      "sha256": "0342e734246d48a9650ab45e2421a296dfb7a998ba082ba826be6a8df3f32ffb"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Dolphin",
+      "title": "Dolphin",
+      "asked_for": "Dolphin",
+      "revision": 10929004,
+      "fetched_on": "2026-10-07",
+      "sha256": "f6ec7a4e79f696dc53c144a32786f85174fc9380618a0ac09fa2050d8427b5ed"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

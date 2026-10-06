@@ -1,0 +1,49 @@
+{
+  "name": "Canyon",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A canyon (or gorge) is a big and deep crack in the ground, or a  very deep valley.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "quote": "A canyon (or gorge) is a big and deep crack in the ground, or a  very deep valley.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "shape_of_the_land": {
+      "value": "hollow",
+      "quote": "A canyon (or gorge) is a big and deep crack in the ground, or a  very deep valley.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Canyon",
+      "title": "Canyon",
+      "asked_for": "Canyon",
+      "revision": 1375229066,
+      "fetched_on": "2026-10-07",
+      "sha256": "cb49a836fa6867d96f437c262ec6315fa14c042bbcef582510cb63c44ed4db56"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Canyon",
+      "title": "Canyon",
+      "asked_for": "Canyon",
+      "revision": 9921868,
+      "fetched_on": "2026-10-07",
+      "sha256": "c3b564ae2b768596e2ff0f656e8b10a1e7a7eb29c652689f39b0bb8baa972894"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

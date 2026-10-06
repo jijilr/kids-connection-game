@@ -1,0 +1,53 @@
+{
+  "name": "Crane",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Cranes are a type of large bird with long legs and necks in the biological family Gruidae of the order Gruiformes.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "Cranes are a type of large bird with long legs and necks in the biological family Gruidae of the order Gruiformes.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "The sources describe cranes as currently living on most continents and as having 15 living species, so they are still living."
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "pet_farm_or_wild_of_bird",
+      "why": "uncertain: two judgements disagree: 'Wild animals on land' and 'Wild animals in water'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Crane_(bird)",
+      "title": "Crane (bird)",
+      "asked_for": "Crane (bird)",
+      "revision": 1373512249,
+      "fetched_on": "2026-10-07",
+      "sha256": "92bfc20928b7fdc7efa694c909c431fe3e8cea7793676ffa985e38fe2d413c89"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Crane_(bird)",
+      "title": "Crane (bird)",
+      "asked_for": "Crane (bird)",
+      "revision": 8537974,
+      "fetched_on": "2026-10-07",
+      "sha256": "3e7150ebdcf0347cca8ea2ae39f2ae6c77c1ebe976de37921391fcff13ae3747"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

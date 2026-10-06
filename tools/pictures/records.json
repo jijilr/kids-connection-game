@@ -1320,6 +1320,244 @@
       },
       "cost_usd": 0.0537,
       "vision_check_cost_usd": 5e-05
+    },
+    "job_2026_10_07_03_1_01": {
+      "plan_key": "job_2026_10_07_03_1",
+      "purpose": "drawn by the job, run 2026-10-07-03",
+      "file": "tools/pictures/sheets/job_2026_10_07_03_1_01.png",
+      "grid": 3,
+      "size": "2880x2880",
+      "cells": [
+        "guinea_pig",
+        "hamster",
+        "sheep",
+        "pig",
+        "whale",
+        "dolphin",
+        "seal",
+        "walrus",
+        "otter"
+      ],
+      "names": {
+        "guinea_pig": "Guinea Pig",
+        "hamster": "Hamster",
+        "sheep": "Sheep",
+        "pig": "Pig",
+        "whale": "Whale",
+        "dolphin": "Dolphin",
+        "seal": "Seal",
+        "walrus": "Walrus",
+        "otter": "Otter"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 3 by 3 grid of 9 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Guinea Pig: A small round furry guinea pig with short brown, white and black fur, tiny ears, small dark eyes, short legs, sitting on plain ground, whole body shown.\n2. Hamster: A small golden-brown hamster with a stout body, tiny ears, short tail, and big cheek pouches, standing whole on plain ground, facing forward.\n3. Sheep: A woolly white sheep standing on grass, four legs, fluffy body, small head with curled horns, black face and legs, short tail, seen in India.\n4. Pig: A plump pink farm pig standing on all four legs, whole body, curly tail, flat snout, small eyes, short legs, natural pink skin with a few dark spots, standing on plain ground.\n5. Whale: A big blue whale, whole, swimming at the water surface, smooth grey-blue body, white belly, wide flat tail, small eye, waterline only, no other animals.\n6. Dolphin: A single grey dolphin with a smooth fish-like body, a pointed snout, a fin on its back, two side flippers and a flat tail, leaping above blue water.\n7. Seal: A grey seal with a sleek barrel body, four flippers, whiskers, big dark eyes, and a doggish face, resting on wet ground or water, whole and alone.\n8. Walrus: A big grey-brown walrus with two long white tusks, thick whiskers, and flippers, resting on ice over blue water.\n9. Otter: A brown otter with a long slim body, short legs, webbed feet, small ears and a thick tail, swimming on water, whole body shown.\n\nFor this sheet: Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-07",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 586
+      },
+      "cost_usd": 0.1808,
+      "vision_check_cost_usd": 0.0005
+    },
+    "job_2026_10_07_03_2_01": {
+      "plan_key": "job_2026_10_07_03_2",
+      "purpose": "drawn by the job, run 2026-10-07-03, second tries",
+      "file": "tools/pictures/sheets/job_2026_10_07_03_2_01.png",
+      "grid": 3,
+      "size": "2880x2880",
+      "cells": [
+        "budgie",
+        "canary",
+        "cockatiel",
+        "seagull",
+        "pelican",
+        "crane",
+        "budgie",
+        "canary",
+        "cockatiel"
+      ],
+      "names": {
+        "budgie": "Budgie",
+        "canary": "Canary",
+        "cockatiel": "Cockatiel",
+        "seagull": "Seagull",
+        "pelican": "Pelican",
+        "crane": "Crane"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 3 by 3 grid of 9 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Budgie: A small green and yellow budgie parrot with black scalloped markings on its back and wings, long tail, standing whole on plain ground, in natural colors.\n2. Canary: A small bright yellow pet canary bird with a rounded head, short orange beak, black eyes, and folded wings, standing whole on a plain perch.\n3. Cockatiel: A whole grey cockatiel standing on the ground, with a yellow face, orange cheek patch, tall curved crest, long tail feathers, and small beak, in natural colours.\n4. Seagull: A white seagull with grey wings, yellow beak, webbed feet, standing on the ground, whole body shown, natural colours, as seen in India.\n5. Pelican: A large white pelican standing on water, with a very long beak and a big throat pouch, webbed feet, and pale feathers, seen in India.\n6. Crane: A tall grey crane standing whole on wet ground, long thin legs, long neck stretched up, pointed bill, white and grey feathers with a red patch on its face.\n7. Budgie: A small green and yellow budgie parrot with black scalloped markings on its back and wings, long tail, standing whole on plain ground, in natural colors; a second view of it.\n8. Canary: A small bright yellow pet canary bird with a rounded head, short orange beak, black eyes, and folded wings, standing whole on a plain perch; a second view of it.\n9. Cockatiel: A whole grey cockatiel standing on the ground, with a yellow face, orange cheek patch, tall curved crest, long tail feathers, and small beak, in natural colours; a second view of it.\n\nFor this sheet: Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-07",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 601
+      },
+      "cost_usd": 0.1809,
+      "vision_check_cost_usd": 0.0005
+    },
+    "job_2026_10_07_03_3_01": {
+      "plan_key": "job_2026_10_07_03_3",
+      "purpose": "drawn by the job, run 2026-10-07-03, second tries",
+      "file": "tools/pictures/sheets/job_2026_10_07_03_3_01.png",
+      "grid": 3,
+      "size": "2880x2880",
+      "cells": [
+        "flyover",
+        "footbridge",
+        "church",
+        "mosque",
+        "gurudwara",
+        "shrine",
+        "market",
+        "mall",
+        "supermarket"
+      ],
+      "names": {
+        "flyover": "Flyover",
+        "footbridge": "Footbridge",
+        "church": "Church",
+        "mosque": "Mosque",
+        "gurudwara": "Gurudwara",
+        "shrine": "Shrine",
+        "market": "Market",
+        "mall": "Mall",
+        "supermarket": "Supermarket"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 3 by 3 grid of 9 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Flyover: A concrete road bridge arching over another road, with grey pillars and railings on top, seen in India.\n2. Footbridge: A simple concrete footbridge with metal railings, spanning over a small Indian road or stream, grey and brown, whole bridge with steps at both ends, plain ground below.\n3. Church: A white church building with a tall pointed steeple and cross on top, arched windows and a big door, standing on plain ground, as seen in India.\n4. Mosque: A white mosque in India with a big round dome, two tall thin minarets, arched doorways, and a small courtyard, standing on plain ground.\n5. Gurudwara: A white Indian gurdwara with a golden dome, arched windows, a tall flagpole with an orange Nishan Sahib flag, and a small free kitchen hall, standing on plain ground.\n6. Shrine: A small Indian home shrine: a tiny wooden mandir cabinet with a domed top, gold and red painted, open front showing a small idol inside, sitting on the floor.\n7. Market: An Indian open-air market: rows of small stalls with colourful cloth awnings, baskets of fruit and vegetables on the ground, whole scene on bare earth.\n8. Mall: A big modern Indian shopping mall building, whole, with glass front, flat roof, many small shops inside facing a central walkway, food court, parking in front, natural colours.\n9. Supermarket: A big Indian supermarket building with glass doors, trolleys outside, shelves of colourful food and vegetables seen through windows, on plain ground.\n\nFor this sheet: Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-07",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 566
+      },
+      "cost_usd": 0.1807,
+      "vision_check_cost_usd": 0.00055
+    },
+    "job_2026_10_07_03_4_01": {
+      "plan_key": "job_2026_10_07_03_4",
+      "purpose": "drawn by the job, run 2026-10-07-03, second tries",
+      "file": "tools/pictures/sheets/job_2026_10_07_03_4_01.png",
+      "grid": 2,
+      "size": "1920x1920",
+      "cells": [
+        "bakery",
+        "clinic",
+        "health_centre",
+        "doctor_s_office"
+      ],
+      "names": {
+        "bakery": "Bakery",
+        "clinic": "Clinic",
+        "health_centre": "Health centre",
+        "doctor_s_office": "Doctor's office"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 2 by 2 grid of 4 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Bakery: An Indian neighbourhood bakery shop, whole front view: a small open storefront with glass display trays of bread, buns, cakes and pastries, a counter, and a signboard, standing on plain ground.\n2. Clinic: A small Indian clinic building, single storey, white walls, red cross sign, glass door, few steps, plain ground, no people.\n3. Health centre: A small Indian health centre building, single or two storey, white walls, red roof, glass windows, a door, a red cross sign, standing on plain ground.\n4. Doctor's office: An Indian doctor's clinic: a small white building with a red cross board, a glass door, one window, and a step, standing alone on plain ground.\n\nFor this sheet: Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-07",
+      "tokens": {
+        "image_output_tokens": 3276,
+        "text_input_tokens": 385
+      },
+      "cost_usd": 0.1002,
+      "vision_check_cost_usd": 0.00031
+    },
+    "job_2026_10_07_03_5_01": {
+      "plan_key": "job_2026_10_07_03_5",
+      "purpose": "drawn by the job, run 2026-10-07-03, second tries",
+      "file": "tools/pictures/sheets/job_2026_10_07_03_5_01.png",
+      "grid": 3,
+      "size": "2880x2880",
+      "cells": [
+        "field",
+        "plain",
+        "meadow",
+        "valley",
+        "pothole",
+        "canyon",
+        "crater",
+        "cliff",
+        "field"
+      ],
+      "names": {
+        "field": "Field",
+        "plain": "Plain",
+        "meadow": "Meadow",
+        "valley": "Valley",
+        "pothole": "Pothole",
+        "canyon": "Canyon",
+        "crater": "Crater",
+        "cliff": "Cliff"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 3 by 3 grid of 9 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Field: A flat green field of crops in India, whole and open, with rows of small plants growing on brown soil, under a clear sky.\n2. Plain: A wide, flat green grassy plain with no hills or mountains, stretching to the horizon, with a few small trees and a river, in natural green and brown colors, as seen in India.\n3. Meadow: A wide flat green meadow of tall grass and small wildflowers, open under the sky, with a few scattered bushes at the edges, no trees in the middle.\n4. Valley: A green valley between two brown hills, with a blue river flowing along its flat floor from one end to the other, open grassy sides, under clear sky.\n5. Pothole: A shallow round hole in dry brown ground filled with muddy water, ringed by a low grassy rim, seen in India.\n6. Canyon: A deep, wide rocky canyon with steep brown and red cliff walls, a river flowing along the bottom, dry ground around it, under a clear sky.\n7. Crater: A round bowl-shaped hollow in dry brown ground, with a raised rim of earth all around it, empty inside, seen from above.\n8. Cliff: A tall steep rocky cliff face, grey-brown rock, rising straight up from flat ground, with a few loose fallen rocks at its base, under a plain sky.\n9. Field: A flat green field of crops in India, whole and open, with rows of small plants growing on brown soil, under a clear sky; a second view of it.\n\nFor this sheet: No people, no animals and no buildings.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-07",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 530
+      },
+      "cost_usd": 0.1805,
+      "vision_check_cost_usd": 0.00067
+    },
+    "job_2026_10_07_03_6_01": {
+      "plan_key": "job_2026_10_07_03_6",
+      "purpose": "drawn by the job, run 2026-10-07-03, second tries",
+      "file": "tools/pictures/sheets/job_2026_10_07_03_6_01.png",
+      "grid": 2,
+      "size": "1920x1920",
+      "cells": [
+        "health_centre",
+        "doctor_s_office",
+        "health_centre",
+        "doctor_s_office"
+      ],
+      "names": {
+        "health_centre": "Health centre",
+        "doctor_s_office": "Doctor's office"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 2 by 2 grid of 4 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Health centre: A small Indian health centre building, single or two storey, white walls, red roof, glass windows, a door, a red cross sign, standing on plain ground.\n2. Doctor's office: An Indian doctor's clinic: a small white building with a red cross board, a glass door, one window, and a step, standing alone on plain ground.\n3. Health centre: A small Indian health centre building, single or two storey, white walls, red roof, glass windows, a door, a red cross sign, standing on plain ground; a second view of it.\n4. Doctor's office: An Indian doctor's clinic: a small white building with a red cross board, a glass door, one window, and a step, standing alone on plain ground; a second view of it.\n\nFor this sheet: Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-07",
+      "tokens": {
+        "image_output_tokens": 3276,
+        "text_input_tokens": 398
+      },
+      "cost_usd": 0.1003,
+      "vision_check_cost_usd": 0.00023
+    },
+    "job_2026_10_07_03_7_01": {
+      "plan_key": "job_2026_10_07_03_7",
+      "purpose": "drawn by the job, run 2026-10-07-03, second tries",
+      "file": "tools/pictures/sheets/job_2026_10_07_03_7_01.png",
+      "grid": 1,
+      "size": "1024x1024",
+      "cells": [
+        "plain"
+      ],
+      "names": {
+        "plain": "Plain"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image showing exactly one subject, whole and centred, with a wide plain white margin on every side:\n\n1. Plain: A wide, flat green grassy plain with no hills or mountains, stretching to the horizon, with a few small trees and a river, in natural green and brown colors, as seen in India.\n\nFor this sheet: No people, no animals and no buildings.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-07",
+      "tokens": {
+        "image_output_tokens": 1756,
+        "text_input_tokens": 203
+      },
+      "cost_usd": 0.0537,
+      "vision_check_cost_usd": 0.00012
     }
   },
   "tiles": {
@@ -15877,6 +16115,2310 @@
       "review_note": "",
       "history": [],
       "reviewed_on": "2026-10-07"
+    },
+    "job_2026_10_07_03_1_01_c1": {
+      "thing_id": "guinea_pig",
+      "expected_thing": "guinea_pig",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_1_01_c1.png",
+      "master_size": [
+        890,
+        890
+      ],
+      "master_sha256": "47c76fd6d88c4098748e65ac3190ce61700e2fc67ff60d2f56c68b211b5d71e8",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Guinea Pig: A small round furry guinea pig with short brown, white and black fur, tiny ears, small dark eyes, short legs, sitting on plain ground, whole body shown",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          63,
+          246,
+          830,
+          822
+        ],
+        "picture_shape": 1.33,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Guinea Pig",
+        "shows": "guinea_pig",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/guinea_pig.webp"
+    },
+    "job_2026_10_07_03_1_01_c2": {
+      "thing_id": "hamster",
+      "expected_thing": "hamster",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_1_01_c2.png",
+      "master_size": [
+        791,
+        791
+      ],
+      "master_sha256": "b5fbc8436fc44b652ba0f2b70af34590f69051480e092b43184ace6d13295fb5",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_1_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_1_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Hamster: A small golden-brown hamster with a stout body, tiny ears, short tail, and big cheek pouches, standing whole on plain ground, facing forward",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1124,
+          180,
+          1646,
+          862
+        ],
+        "picture_shape": 0.77,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Hamster",
+        "shows": "hamster",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/hamster.webp"
+    },
+    "job_2026_10_07_03_1_01_c3": {
+      "thing_id": "sheep",
+      "expected_thing": "sheep",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_1_01_c3.png",
+      "master_size": [
+        981,
+        981
+      ],
+      "master_sha256": "5867f3670336107a8d038063a0b4549e39a15e0de9cc770c43d665ac80a47901",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_1_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_1_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Sheep: A woolly white sheep standing on grass, four legs, fluffy body, small head with curled horns, black face and legs, short tail, seen in India",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1985,
+          121,
+          2831,
+          880
+        ],
+        "picture_shape": 1.11,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Sheep",
+        "shows": "sheep",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/sheep.webp"
+    },
+    "job_2026_10_07_03_1_01_c4": {
+      "thing_id": "pig",
+      "expected_thing": "pig",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_1_01_c4.png",
+      "master_size": [
+        973,
+        973
+      ],
+      "master_sha256": "8fca4f4d5b4ee55c3fdcb5b6b24a6a4d56a80f34420bd8b5a85716f39d690e45",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_1_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_1_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Pig: A plump pink farm pig standing on all four legs, whole body, curly tail, flat snout, small eyes, short legs, natural pink skin with a few dark spots, standing on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          47,
+          1114,
+          886,
+          1771
+        ],
+        "picture_shape": 1.28,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Pig",
+        "shows": "pig",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/pig.webp"
+    },
+    "job_2026_10_07_03_1_01_c5": {
+      "thing_id": "whale",
+      "expected_thing": "whale",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_1_01_c5.png",
+      "master_size": [
+        1079,
+        1079
+      ],
+      "master_sha256": "1b280db13899e4ac478b46bd7677c2bb55fe97dc1a52d093fd95c371b767110e",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_1_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_1_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Whale: A big blue whale, whole, swimming at the water surface, smooth grey-blue body, white belly, wide flat tail, small eye, waterline only, no other animals",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [
+          "the picture is far from square"
+        ],
+        "picture_box": [
+          976,
+          1194,
+          1906,
+          1650
+        ],
+        "picture_shape": 2.04,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Whale",
+        "shows": "whale",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/whale.webp"
+    },
+    "job_2026_10_07_03_1_01_c6": {
+      "thing_id": "dolphin",
+      "expected_thing": "dolphin",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_1_01_c6.png",
+      "master_size": [
+        1001,
+        1001
+      ],
+      "master_sha256": "e40b7d6708d82536730039e4c6ce9b3b5db4af3fedb868073fecfdf25c3a2321",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_1_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_1_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Dolphin: A single grey dolphin with a smooth fish-like body, a pointed snout, a fin on its back, two side flippers and a flat tail, leaping above blue water",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1970,
+          1056,
+          2833,
+          1869
+        ],
+        "picture_shape": 1.06,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Dolphin",
+        "shows": "dolphin",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/dolphin.webp"
+    },
+    "job_2026_10_07_03_1_01_c7": {
+      "thing_id": "seal",
+      "expected_thing": "seal",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_1_01_c7.png",
+      "master_size": [
+        1023,
+        1023
+      ],
+      "master_sha256": "15666e7521c8c96927e053bf23496ea276bd4d59beee8cd06625e0cb81ea77f0",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_1_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_1_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Seal: A grey seal with a sleek barrel body, four flippers, whiskers, big dark eyes, and a doggish face, resting on wet ground or water, whole and alone",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          45,
+          2097,
+          927,
+          2729
+        ],
+        "picture_shape": 1.4,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Seal",
+        "shows": "seal",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/seal.webp"
+    },
+    "job_2026_10_07_03_1_01_c8": {
+      "thing_id": "walrus",
+      "expected_thing": "walrus",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_1_01_c8.png",
+      "master_size": [
+        1056,
+        1056
+      ],
+      "master_sha256": "186408888912d4597a067b43d37fb769a1ee8c651a3a246775fa34ced333c424",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_1_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_1_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Walrus: A big grey-brown walrus with two long white tusks, thick whiskers, and flippers, resting on ice over blue water",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          976,
+          2051,
+          1886,
+          2787
+        ],
+        "picture_shape": 1.24,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Walrus",
+        "shows": "walrus",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/walrus.webp"
+    },
+    "job_2026_10_07_03_1_01_c9": {
+      "thing_id": "otter",
+      "expected_thing": "otter",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_1_01_c9.png",
+      "master_size": [
+        1053,
+        1053
+      ],
+      "master_sha256": "9048842012e7865be0f2bee1e8f9dc01e1bbec36528eb49af3aa62022729ad88",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_1_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_1_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Otter: A brown otter with a long slim body, short legs, webbed feet, small ears and a thick tail, swimming on water, whole body shown",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1936,
+          2164,
+          2844,
+          2713
+        ],
+        "picture_shape": 1.65,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Otter",
+        "shows": "otter",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/otter.webp"
+    },
+    "job_2026_10_07_03_2_01_c1": {
+      "thing_id": "budgie",
+      "expected_thing": "budgie",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_2_01_c1.png",
+      "master_size": [
+        955,
+        955
+      ],
+      "master_sha256": "beb077d8aacc097aea4db47507ffd6d871e70bf16833621c364920465c6bb629",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_2_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_2_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Budgie: A small green and yellow budgie parrot with black scalloped markings on its back and wings, long tail, standing whole on plain ground, in natural colors",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          59,
+          180,
+          882,
+          829
+        ],
+        "picture_shape": 1.27,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Budgie",
+        "shows": "budgie",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "among": [
+          "job_2026_10_07_03_2_01_c1",
+          "job_2026_10_07_03_2_01_c7"
+        ],
+        "chosen": true,
+        "why": "Its face and beak are a little clearer, making the budgie easier to recognise at a glance.",
+        "cost_usd": 0.00015
+      },
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/budgie.webp"
+    },
+    "job_2026_10_07_03_2_01_c2": {
+      "thing_id": null,
+      "expected_thing": "canary",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_2_01_c2.png",
+      "master_size": [
+        835,
+        835
+      ],
+      "master_sha256": "c4a2bc61c9f771d3b57d30fd9b8d280edaa0bfd00f60dc20f6e9f6822bb6d137",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_2_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_2_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Canary: A small bright yellow pet canary bird with a rounded head, short orange beak, black eyes, and folded wings, standing whole on a plain perch",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1092,
+          148,
+          1732,
+          868
+        ],
+        "picture_shape": 0.89,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Canary",
+        "shows": "canary",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_10_07_03_2_01_c8 better",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "among": [
+          "job_2026_10_07_03_2_01_c2",
+          "job_2026_10_07_03_2_01_c8"
+        ],
+        "chosen": false,
+        "why": "The bright yellow bird is larger and centered, making it easy to recognize at a glance.",
+        "cost_usd": 0.00012
+      },
+      "reviewed_on": "2026-10-07"
+    },
+    "job_2026_10_07_03_2_01_c3": {
+      "thing_id": "cockatiel",
+      "expected_thing": "cockatiel",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_2_01_c3.png",
+      "master_size": [
+        928,
+        928
+      ],
+      "master_sha256": "d4b5c1372e36c7d4cd748d5bbe77ab7317b239afbb81fc5c7e71a3b52c0b88c6",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_2_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_2_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Cockatiel: A whole grey cockatiel standing on the ground, with a yellow face, orange cheek patch, tall curved crest, long tail feathers, and small beak, in natural colours",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1942,
+          46,
+          2736,
+          846
+        ],
+        "picture_shape": 0.99,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Cockatiel",
+        "shows": "cockatiel",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "among": [
+          "job_2026_10_07_03_2_01_c3",
+          "job_2026_10_07_03_2_01_c9"
+        ],
+        "chosen": true,
+        "why": "Its full crest and body are clearly visible, making the cockatiel easy to recognize at a glance.",
+        "cost_usd": 9e-05
+      },
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/cockatiel.webp"
+    },
+    "job_2026_10_07_03_2_01_c4": {
+      "thing_id": "seagull",
+      "expected_thing": "seagull",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_2_01_c4.png",
+      "master_size": [
+        942,
+        942
+      ],
+      "master_sha256": "b76bf02f33c658ee52132a485072f44938b98974fb0eac171f0a918903e22393",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_2_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_2_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Seagull: A white seagull with grey wings, yellow beak, webbed feet, standing on the ground, whole body shown, natural colours, as seen in India",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          71,
+          1113,
+          883,
+          1805
+        ],
+        "picture_shape": 1.17,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Seagull",
+        "shows": "seagull",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/seagull.webp"
+    },
+    "job_2026_10_07_03_2_01_c5": {
+      "thing_id": "pelican",
+      "expected_thing": "pelican",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_2_01_c5.png",
+      "master_size": [
+        1012,
+        1012
+      ],
+      "master_sha256": "74f2f0f9e3d52a69d7a248ba1ac86dd8a14f7976ad8ba669f8d130f77ecb769f",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_2_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_2_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Pelican: A large white pelican standing on water, with a very long beak and a big throat pouch, webbed feet, and pale feathers, seen in India",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1036,
+          1007,
+          1848,
+          1879
+        ],
+        "picture_shape": 0.93,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Pelican",
+        "shows": "pelican",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/pelican.webp"
+    },
+    "job_2026_10_07_03_2_01_c6": {
+      "thing_id": "crane",
+      "expected_thing": "crane",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_2_01_c6.png",
+      "master_size": [
+        1064,
+        1064
+      ],
+      "master_sha256": "66282b7c16976cdb419ac235c802b2cc2d41dd74f04a560505633fe666991918",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_2_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_2_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Crane: A tall grey crane standing whole on wet ground, long thin legs, long neck stretched up, pointed bill, white and grey feathers with a red patch on its face",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2091,
+          970,
+          2725,
+          1887
+        ],
+        "picture_shape": 0.69,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Crane",
+        "shows": "crane",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/crane.webp"
+    },
+    "job_2026_10_07_03_2_01_c7": {
+      "thing_id": null,
+      "expected_thing": "budgie",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_2_01_c7.png",
+      "master_size": [
+        934,
+        934
+      ],
+      "master_sha256": "4eb632d160784c030efcdb4b8a447d57a3297cbd50696ab842e5a96b2ede7bf9",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_2_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_2_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Budgie: A small green and yellow budgie parrot with black scalloped markings on its back and wings, long tail, standing whole on plain ground, in natural colors; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          70,
+          2075,
+          875,
+          2705
+        ],
+        "picture_shape": 1.28,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Budgie",
+        "shows": "budgie",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_10_07_03_2_01_c1 better",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "among": [
+          "job_2026_10_07_03_2_01_c1",
+          "job_2026_10_07_03_2_01_c7"
+        ],
+        "chosen": false,
+        "why": "Its face and beak are a little clearer, making the budgie easier to recognise at a glance.",
+        "cost_usd": 0.00015
+      },
+      "reviewed_on": "2026-10-07"
+    },
+    "job_2026_10_07_03_2_01_c8": {
+      "thing_id": "canary",
+      "expected_thing": "canary",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_2_01_c8.png",
+      "master_size": [
+        822,
+        822
+      ],
+      "master_sha256": "32cea5685f13c58f6eb8fd679d922c96602442ae871a6a7b5e18aa1a3c7a6e4e",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_2_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_2_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Canary: A small bright yellow pet canary bird with a rounded head, short orange beak, black eyes, and folded wings, standing whole on a plain perch; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1047,
+          2045,
+          1756,
+          2751
+        ],
+        "picture_shape": 1.0,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Canary",
+        "shows": "canary",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "among": [
+          "job_2026_10_07_03_2_01_c2",
+          "job_2026_10_07_03_2_01_c8"
+        ],
+        "chosen": true,
+        "why": "The bright yellow bird is larger and centered, making it easy to recognize at a glance.",
+        "cost_usd": 0.00012
+      },
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/canary.webp"
+    },
+    "job_2026_10_07_03_2_01_c9": {
+      "thing_id": null,
+      "expected_thing": "cockatiel",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_2_01_c9.png",
+      "master_size": [
+        942,
+        942
+      ],
+      "master_sha256": "0becd5634c407b27d50b9a0b179dd653000f33c613848e9b43a6fe39ce32e704",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_2_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_2_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Cockatiel: A whole grey cockatiel standing on the ground, with a yellow face, orange cheek patch, tall curved crest, long tail feathers, and small beak, in natural colours; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1962,
+          1930,
+          2750,
+          2742
+        ],
+        "picture_shape": 0.97,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Cockatiel",
+        "shows": "cockatiel",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_10_07_03_2_01_c3 better",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "among": [
+          "job_2026_10_07_03_2_01_c3",
+          "job_2026_10_07_03_2_01_c9"
+        ],
+        "chosen": false,
+        "why": "Its full crest and body are clearly visible, making the cockatiel easy to recognize at a glance.",
+        "cost_usd": 9e-05
+      },
+      "reviewed_on": "2026-10-07"
+    },
+    "job_2026_10_07_03_3_01_c1": {
+      "thing_id": "flyover",
+      "expected_thing": "flyover",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_3_01_c1.png",
+      "master_size": [
+        1007,
+        1007
+      ],
+      "master_sha256": "0aa2694a670574e9821467fc5c6310a26fe20b604d7608b87086a26882fd75e1",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_3_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_3_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Flyover: A concrete road bridge arching over another road, with grey pillars and railings on top, seen in India",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          45,
+          258,
+          913,
+          912
+        ],
+        "picture_shape": 1.33,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Flyover",
+        "shows": "flyover",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/flyover.webp"
+    },
+    "job_2026_10_07_03_3_01_c2": {
+      "thing_id": "footbridge",
+      "expected_thing": "footbridge",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_3_01_c2.png",
+      "master_size": [
+        1058,
+        1058
+      ],
+      "master_sha256": "89fa0c1bde1220bec948f53a92ff041561323101f3ad0eb15e21ffd829af5ba6",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_3_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_3_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Footbridge: A simple concrete footbridge with metal railings, spanning over a small Indian road or stream, grey and brown, whole bridge with steps at both ends, plain ground below",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          985,
+          345,
+          1897,
+          915
+        ],
+        "picture_shape": 1.6,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Footbridge",
+        "shows": "footbridge",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/footbridge.webp"
+    },
+    "job_2026_10_07_03_3_01_c3": {
+      "thing_id": "church",
+      "expected_thing": "church",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_3_01_c3.png",
+      "master_size": [
+        1010,
+        1010
+      ],
+      "master_sha256": "990b9de5ea03152d4c20a7d4ae97b4d0030e32af6612d6b90d5c224c02417f2c",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_3_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_3_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Church: A white church building with a tall pointed steeple and cross on top, arched windows and a big door, standing on plain ground, as seen in India",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2023,
+          65,
+          2774,
+          936
+        ],
+        "picture_shape": 0.86,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Church",
+        "shows": "church",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/church.webp"
+    },
+    "job_2026_10_07_03_3_01_c4": {
+      "thing_id": "mosque",
+      "expected_thing": "mosque",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_3_01_c4.png",
+      "master_size": [
+        1001,
+        1001
+      ],
+      "master_sha256": "d2948e4e2f6687b9f826229b5f4e17c2115627e7d74c47e3d002df4555d22f6d",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_3_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_3_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Mosque: A white mosque in India with a big round dome, two tall thin minarets, arched doorways, and a small courtyard, standing on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          47,
+          1017,
+          908,
+          1880
+        ],
+        "picture_shape": 1.0,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Mosque",
+        "shows": "mosque",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/mosque.webp"
+    },
+    "job_2026_10_07_03_3_01_c5": {
+      "thing_id": "gurudwara",
+      "expected_thing": "gurudwara",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_3_01_c5.png",
+      "master_size": [
+        1060,
+        1060
+      ],
+      "master_sha256": "ff6541781499488b287af2e444c4e8f11ccbbfc59bdc0e3562938c6b74b99a68",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_3_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_3_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Gurudwara: A white Indian gurdwara with a golden dome, arched windows, a tall flagpole with an orange Nishan Sahib flag, and a small free kitchen hall, standing on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          984,
+          1004,
+          1898,
+          1880
+        ],
+        "picture_shape": 1.04,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Gurudwara",
+        "shows": "gurudwara",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/gurudwara.webp"
+    },
+    "job_2026_10_07_03_3_01_c6": {
+      "thing_id": "shrine",
+      "expected_thing": "shrine",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_3_01_c6.png",
+      "master_size": [
+        999,
+        999
+      ],
+      "master_sha256": "2b4e0fae25ce00cd97b81dfe2f1a89862ff658154bc1f15866964d7aca4e237f",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_3_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_3_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Shrine: A small Indian home shrine: a tiny wooden mandir cabinet with a domed top, gold and red painted, open front showing a small idol inside, sitting on the floor",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2100,
+          1015,
+          2706,
+          1876
+        ],
+        "picture_shape": 0.7,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Shrine",
+        "shows": "shrine",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/shrine.webp"
+    },
+    "job_2026_10_07_03_3_01_c7": {
+      "thing_id": "market",
+      "expected_thing": "market",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_3_01_c7.png",
+      "master_size": [
+        999,
+        999
+      ],
+      "master_sha256": "b1686eb9c28ae9045465624c9b160b9c5719674738ea4b70824b8ed3e01e8de5",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_3_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_3_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Market: An Indian open-air market: rows of small stalls with colourful cloth awnings, baskets of fruit and vegetables on the ground, whole scene on bare earth",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          45,
+          2085,
+          906,
+          2820
+        ],
+        "picture_shape": 1.17,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Market",
+        "shows": "market",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/market.webp"
+    },
+    "job_2026_10_07_03_3_01_c8": {
+      "thing_id": "mall",
+      "expected_thing": "mall",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_3_01_c8.png",
+      "master_size": [
+        1053,
+        1053
+      ],
+      "master_sha256": "74697a4ceeff42c551e1e6187b5303648c6adfde06cb64ff0cfbb7ef93463eeb",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_3_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_3_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Mall: A big modern Indian shopping mall building, whole, with glass front, flat roof, many small shops inside facing a central walkway, food court, parking in front, natural colours",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          985,
+          2120,
+          1893,
+          2815
+        ],
+        "picture_shape": 1.31,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Mall",
+        "shows": "mall",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/mall.webp"
+    },
+    "job_2026_10_07_03_3_01_c9": {
+      "thing_id": "supermarket",
+      "expected_thing": "supermarket",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_3_01_c9.png",
+      "master_size": [
+        1008,
+        1008
+      ],
+      "master_sha256": "b049b4996c12ae532426d6079021403d59e63154189059519c321be665db6677",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_3_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_3_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Supermarket: A big Indian supermarket building with glass doors, trolleys outside, shelves of colourful food and vegetables seen through windows, on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1967,
+          2091,
+          2836,
+          2807
+        ],
+        "picture_shape": 1.21,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Supermarket",
+        "shows": "supermarket",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/supermarket.webp"
+    },
+    "job_2026_10_07_03_4_01_c1": {
+      "thing_id": "bakery",
+      "expected_thing": "bakery",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_4_01_c1.png",
+      "master_size": [
+        981,
+        981
+      ],
+      "master_sha256": "c4e89e12f4f935d317b2cc0b0ed3219babf546116effb42ec3e6f5e3b8a9be64",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_4_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_4_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Bakery: An Indian neighbourhood bakery shop, whole front view: a small open storefront with glass display trays of bread, buns, cakes and pastries, a counter, and a signboard, standing on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          67,
+          118,
+          913,
+          877
+        ],
+        "picture_shape": 1.11,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Bakery",
+        "shows": "bakery",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/bakery.webp"
+    },
+    "job_2026_10_07_03_4_01_c2": {
+      "thing_id": "clinic",
+      "expected_thing": "clinic",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_4_01_c2.png",
+      "master_size": [
+        1008,
+        1008
+      ],
+      "master_sha256": "ac7da280036cd00ac796342510b0a543ac5b5df75f11fe4e113f0f37e6f7fca3",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_4_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_4_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Clinic: A small Indian clinic building, single storey, white walls, red cross sign, glass door, few steps, plain ground, no people",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1009,
+          210,
+          1878,
+          893
+        ],
+        "picture_shape": 1.27,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Clinic",
+        "shows": "clinic",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/clinic.webp"
+    },
+    "job_2026_10_07_03_4_01_c3": {
+      "thing_id": null,
+      "expected_thing": "health_centre",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_4_01_c3.png",
+      "master_size": [
+        1049,
+        1049
+      ],
+      "master_sha256": "b910cdac358d56c1d30d8a3a916c5012d1999238962fce152ab711ff12f71156",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_4_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_4_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Health centre: A small Indian health centre building, single or two storey, white walls, red roof, glass windows, a door, a red cross sign, standing on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          31,
+          1069,
+          935,
+          1830
+        ],
+        "picture_shape": 1.19,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Clinic",
+        "shows": "clinic",
+        "matches_cell": false,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "job_2026_10_07_03_4_01_c4": {
+      "thing_id": null,
+      "expected_thing": "doctor_s_office",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_4_01_c4.png",
+      "master_size": [
+        988,
+        988
+      ],
+      "master_sha256": "c57862fbc80f1f853e22223d2e35e0e7406de3876ed6bc07fc1f6be8aa4fd841",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_4_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_4_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Doctor's office: An Indian doctor's clinic: a small white building with a red cross board, a glass door, one window, and a step, standing alone on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1021,
+          1160,
+          1873,
+          1836
+        ],
+        "picture_shape": 1.26,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Clinic",
+        "shows": "clinic",
+        "matches_cell": false,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "job_2026_10_07_03_5_01_c1": {
+      "thing_id": "field",
+      "expected_thing": "field",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_5_01_c1.png",
+      "master_size": [
+        1001,
+        1001
+      ],
+      "master_sha256": "efbce05414982c9de5289ba2426885bd96d963d09913292d1f3471d8722a5e4b",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_5_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_5_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Field: A flat green field of crops in India, whole and open, with rows of small plants growing on brown soil, under a clear sky",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          60,
+          162,
+          923,
+          908
+        ],
+        "picture_shape": 1.16,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Field",
+        "shows": "field",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "among": [
+          "job_2026_10_07_03_5_01_c1",
+          "job_2026_10_07_03_5_01_c9"
+        ],
+        "chosen": true,
+        "why": "The clear sky, horizon, and long crop rows make the field easy to recognize at a glance.",
+        "cost_usd": 0.0001
+      },
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/field.webp"
+    },
+    "job_2026_10_07_03_5_01_c2": {
+      "thing_id": null,
+      "expected_thing": "plain",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_5_01_c2.png",
+      "master_size": [
+        1013,
+        1013
+      ],
+      "master_sha256": "18abab6b5861fddd793f53a4da38351466e48571c9d02b11f9e09f851282a8b1",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_5_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_5_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Plain: A wide, flat green grassy plain with no hills or mountains, stretching to the horizon, with a few small trees and a river, in natural green and brown colors, as seen in India",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1002,
+          177,
+          1875,
+          901
+        ],
+        "picture_shape": 1.21,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Meadow",
+        "shows": "meadow",
+        "matches_cell": false,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "job_2026_10_07_03_5_01_c3": {
+      "thing_id": "meadow",
+      "expected_thing": "meadow",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_5_01_c3.png",
+      "master_size": [
+        1007,
+        1007
+      ],
+      "master_sha256": "f32abe295a004c3af9c74eb4cb1679a95b8923920974a3ee25b1b3f59e25b9a1",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_5_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_5_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Meadow: A wide flat green meadow of tall grass and small wildflowers, open under the sky, with a few scattered bushes at the edges, no trees in the middle",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1958,
+          182,
+          2826,
+          909
+        ],
+        "picture_shape": 1.19,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Meadow",
+        "shows": "meadow",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/meadow.webp"
+    },
+    "job_2026_10_07_03_5_01_c4": {
+      "thing_id": "valley",
+      "expected_thing": "valley",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_5_01_c4.png",
+      "master_size": [
+        1010,
+        1010
+      ],
+      "master_sha256": "777fc2825ce3c32adfa8217b6075b78fc2d5a56d8c6dbbb267070e1367496e8a",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_5_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_5_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Valley: A green valley between two brown hills, with a blue river flowing along its flat floor from one end to the other, open grassy sides, under clear sky",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          56,
+          1050,
+          927,
+          1822
+        ],
+        "picture_shape": 1.13,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Valley",
+        "shows": "valley",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/valley.webp"
+    },
+    "job_2026_10_07_03_5_01_c5": {
+      "thing_id": "pothole",
+      "expected_thing": "pothole",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_5_01_c5.png",
+      "master_size": [
+        1017,
+        1017
+      ],
+      "master_sha256": "c3992c4604c3fea70bd5bb9e200a5aec024385e14fa891fe4cc2a32dfe5ef8a6",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_5_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_5_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Pothole: A shallow round hole in dry brown ground filled with muddy water, ringed by a low grassy rim, seen in India",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1000,
+          1077,
+          1877,
+          1808
+        ],
+        "picture_shape": 1.2,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Pothole",
+        "shows": "pothole",
+        "matches_cell": true,
+        "problems": "Hard to recognise"
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/pothole.webp"
+    },
+    "job_2026_10_07_03_5_01_c6": {
+      "thing_id": "canyon",
+      "expected_thing": "canyon",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_5_01_c6.png",
+      "master_size": [
+        1023,
+        1023
+      ],
+      "master_sha256": "b6a3781b00f029cf68b3b55f21d72b70132368d3ee457eecdff55d57aa6b724b",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_5_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_5_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Canyon: A deep, wide rocky canyon with steep brown and red cliff walls, a river flowing along the bottom, dry ground around it, under a clear sky",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1949,
+          1049,
+          2831,
+          1824
+        ],
+        "picture_shape": 1.14,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Canyon",
+        "shows": "canyon",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/canyon.webp"
+    },
+    "job_2026_10_07_03_5_01_c7": {
+      "thing_id": "crater",
+      "expected_thing": "crater",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_5_01_c7.png",
+      "master_size": [
+        1059,
+        1059
+      ],
+      "master_sha256": "4866ba03d1e0ffd91346e8923289ecec0aed246212ee1df53b54e7565b562616",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_5_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_5_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Crater: A round bowl-shaped hollow in dry brown ground, with a raised rim of earth all around it, empty inside, seen from above",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          28,
+          2025,
+          941,
+          2688
+        ],
+        "picture_shape": 1.38,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Crater",
+        "shows": "crater",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/crater.webp"
+    },
+    "job_2026_10_07_03_5_01_c8": {
+      "thing_id": "cliff",
+      "expected_thing": "cliff",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_5_01_c8.png",
+      "master_size": [
+        989,
+        989
+      ],
+      "master_sha256": "8fbf108e7fae0f27c37a2aa5788875dd279e006213ebdc71ba7020d411f3657d",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_5_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_5_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Cliff: A tall steep rocky cliff face, grey-brown rock, rising straight up from flat ground, with a few loose fallen rocks at its base, under a plain sky",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1009,
+          1942,
+          1862,
+          2772
+        ],
+        "picture_shape": 1.03,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Cliff",
+        "shows": "cliff",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/cliff.webp"
+    },
+    "job_2026_10_07_03_5_01_c9": {
+      "thing_id": null,
+      "expected_thing": "field",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_5_01_c9.png",
+      "master_size": [
+        1043,
+        1043
+      ],
+      "master_sha256": "e6747ba77e83197cb7b6e03e33afe0588825d51584e0947ed77f760a875fc32a",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_5_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_5_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Field: A flat green field of crops in India, whole and open, with rows of small plants growing on brown soil, under a clear sky; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1944,
+          1978,
+          2843,
+          2762
+        ],
+        "picture_shape": 1.15,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Field",
+        "shows": "field",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_10_07_03_5_01_c1 better",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "among": [
+          "job_2026_10_07_03_5_01_c1",
+          "job_2026_10_07_03_5_01_c9"
+        ],
+        "chosen": false,
+        "why": "The clear sky, horizon, and long crop rows make the field easy to recognize at a glance.",
+        "cost_usd": 0.0001
+      },
+      "reviewed_on": "2026-10-07"
+    },
+    "job_2026_10_07_03_6_01_c1": {
+      "thing_id": "health_centre",
+      "expected_thing": "health_centre",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_6_01_c1.png",
+      "master_size": [
+        981,
+        981
+      ],
+      "master_sha256": "bd1298c9b8d60ea59cd4444daa199200a986f045790f4e57e0a5af30e69e92f1",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_6_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_6_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Health centre: A small Indian health centre building, single or two storey, white walls, red roof, glass windows, a door, a red cross sign, standing on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0251,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          60,
+          118,
+          906,
+          863
+        ],
+        "picture_shape": 1.14,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Health centre",
+        "shows": "health_centre",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "among": [
+          "job_2026_10_07_03_6_01_c1",
+          "job_2026_10_07_03_6_01_c3"
+        ],
+        "chosen": true,
+        "why": "The front-facing building and large red cross make it easiest to recognize as a health centre at a glance.",
+        "cost_usd": 8e-05
+      },
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/health_centre.webp"
+    },
+    "job_2026_10_07_03_6_01_c2": {
+      "thing_id": null,
+      "expected_thing": "doctor_s_office",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_6_01_c2.png",
+      "master_size": [
+        971,
+        971
+      ],
+      "master_sha256": "472b82cbdbdd512acc2f86a98651e7b422161aab7972e0b45f8d7c6186509498",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_6_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_6_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Doctor's office: An Indian doctor's clinic: a small white building with a red cross board, a glass door, one window, and a step, standing alone on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0251,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1023,
+          225,
+          1860,
+          859
+        ],
+        "picture_shape": 1.32,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Health centre",
+        "shows": "health_centre",
+        "matches_cell": false,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "job_2026_10_07_03_6_01_c3": {
+      "thing_id": null,
+      "expected_thing": "health_centre",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_6_01_c3.png",
+      "master_size": [
+        1003,
+        1003
+      ],
+      "master_sha256": "2e75635bcce89eaf5413ffc3664afe2f0f39fcefc282a1c1e89357b88be209e6",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_6_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_6_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Health centre: A small Indian health centre building, single or two storey, white walls, red roof, glass windows, a door, a red cross sign, standing on plain ground; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0251,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          62,
+          1072,
+          927,
+          1802
+        ],
+        "picture_shape": 1.18,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Health centre",
+        "shows": "health_centre",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_10_07_03_6_01_c1 better",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "among": [
+          "job_2026_10_07_03_6_01_c1",
+          "job_2026_10_07_03_6_01_c3"
+        ],
+        "chosen": false,
+        "why": "The front-facing building and large red cross make it easiest to recognize as a health centre at a glance.",
+        "cost_usd": 8e-05
+      },
+      "reviewed_on": "2026-10-07"
+    },
+    "job_2026_10_07_03_6_01_c4": {
+      "thing_id": null,
+      "expected_thing": "doctor_s_office",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_6_01_c4.png",
+      "master_size": [
+        976,
+        976
+      ],
+      "master_sha256": "c6b1cabb55809e7eb60a27dc63de3d5dcc9fcd36e75f96f3a2a4fd732a8f98b6",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_6_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_6_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Doctor's office: An Indian doctor's clinic: a small white building with a red cross board, a glass door, one window, and a step, standing alone on plain ground; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0251,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1019,
+          1140,
+          1860,
+          1790
+        ],
+        "picture_shape": 1.29,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Health centre",
+        "shows": "health_centre",
+        "matches_cell": false,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "job_2026_10_07_03_7_01_c1": {
+      "thing_id": "plain",
+      "expected_thing": "plain",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_7_01_c1.png",
+      "master_size": [
+        1107,
+        1107
+      ],
+      "master_sha256": "71c5db81df777e550b6ecd504fb533b55205e1c09152f908244a5ab3d6fbeff7",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_03_7_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_03_7_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Plain: A wide, flat green grassy plain with no hills or mountains, stretching to the horizon, with a few small trees and a river, in natural green and brown colors, as seen in India",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0537,
+      "cut": {
+        "flags": [],
+        "notes": [
+          "the picture is far from square"
+        ],
+        "picture_box": [
+          35,
+          362,
+          989,
+          735
+        ],
+        "picture_shape": 2.56,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Plain",
+        "shows": "plain",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/plain.webp"
     }
   }
 }

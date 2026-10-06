@@ -1,0 +1,35 @@
+{
+  "name": "Turkey",
+  "fields": {},
+  "weak_spots": [
+    {
+      "field": "kind_of_thing",
+      "why": "uncertain: two judgements disagree: 'Things people make' and 'Animals'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Turkey",
+      "title": "Turkey",
+      "asked_for": "Turkey",
+      "revision": 1378792754,
+      "fetched_on": "2026-10-07",
+      "sha256": "b9dbdd003d4df713f41361465a1af4aec6e68ba9e92fbff969bc8ca3dd609564"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Turkey",
+      "title": "Turkey",
+      "asked_for": "Turkey",
+      "revision": 11019188,
+      "fetched_on": "2026-10-07",
+      "sha256": "c07979309ea53a81a424e3d0201cbf10bacdc380c23367a9f6d3116ca1a3fb37"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

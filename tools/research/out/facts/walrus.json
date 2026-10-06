@@ -1,0 +1,55 @@
+{
+  "name": "Walrus",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The walrus (Odobenus rosmarus; plural walrus or walruses) is a large pinniped marine mammal with  discontinuous distribution about the North Pole in the Arctic Ocean and subarctic seas of the Northern Hemisphere.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "The walrus (Odobenus rosmarus; plural walrus or walruses) is a large pinniped marine mammal with  discontinuous distribution about the North Pole in the Arctic Ocean and subarctic seas of the Northern Hemisphere.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "It is the only extant species in the family Odobenidae and genus Odobenus.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_water",
+      "quote": "Walrus live mostly in shallow waters above the continental shelves, spending significant amounts of their lives on the sea ice looking for benthic bivalve molluscs.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Walrus",
+      "title": "Walrus",
+      "asked_for": "Walrus",
+      "revision": 1357803621,
+      "fetched_on": "2026-10-07",
+      "sha256": "a6f47b1422a3f3c3a2e9a302f3f9531684b539fa96df4d28e7c66fedbc4c4e46"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Walrus",
+      "title": "Walrus",
+      "asked_for": "Walrus",
+      "revision": 10995657,
+      "fetched_on": "2026-10-07",
+      "sha256": "491cd3066867eddb57d74d1ad12560458cb37ec6be2fc514a367184272fc9754"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Hole",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A hole is an opening in or through a particular medium, usually a solid body.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "ground",
+      "basis": "judged, not sourced",
+      "why": "A hole in nature is an opening in the ground, like a hole in the earth."
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "what_happens_when_wet",
+      "why": "uncertain: two judgements disagree: 'Gets mushy' and 'Washes away'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Hole",
+      "title": "Hole",
+      "asked_for": "Hole",
+      "revision": 1374255056,
+      "fetched_on": "2026-10-07",
+      "sha256": "273bb1118d4c4edbbf883d6099f6d2b20ed00d8cb44a4583139bd40a172d6acc"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Definition",
+      "title": "Definition",
+      "asked_for": "Definition",
+      "revision": 9453746,
+      "fetched_on": "2026-10-07",
+      "sha256": "b2cbce5230a9dc137f14131b01dc95896e9c3e804ab9fd7e656a3d7d794da1c1"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

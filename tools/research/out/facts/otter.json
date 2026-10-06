@@ -1,0 +1,55 @@
+{
+  "name": "Otter",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Otters are carnivorous mammals in the subfamily Lutrinae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "Otters are carnivorous mammals in the subfamily Lutrinae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "The 14 extant otter species are all semiaquatic, both freshwater and marine.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_water",
+      "quote": "The 14 extant otter species are all semiaquatic, both freshwater and marine.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Otter",
+      "title": "Otter",
+      "asked_for": "Otter",
+      "revision": 1368579762,
+      "fetched_on": "2026-10-07",
+      "sha256": "a4cb2dc134f2ee624099f25cb98ce14d575ace6da80ae3df2e1c912f67e8576b"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Otter",
+      "title": "Otter",
+      "asked_for": "Otter",
+      "revision": 9364353,
+      "fetched_on": "2026-10-07",
+      "sha256": "90ac5521f75329f6ed8fd26e8cd3b6cd19f6fe3e15865f1eda178a66e0ff6580"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

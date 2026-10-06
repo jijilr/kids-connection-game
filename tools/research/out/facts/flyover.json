@@ -1,0 +1,50 @@
+{
+  "name": "Flyover",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "An overpass, called an overbridge or flyover in the United Kingdom and some other Commonwealth countries, is a bridge, road, railway or similar structure that is over another road or railway.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "An overpass, called an overbridge or flyover in the United Kingdom and some other Commonwealth countries, is a bridge, road, railway or similar structure that is over another road or railway.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "what_people_do_there",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "cross",
+      "quote": "An overpass, called an overbridge or flyover in the United Kingdom and some other Commonwealth countries, is a bridge, road, railway or similar structure that is over another road or railway."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Overpass",
+      "title": "Overpass",
+      "asked_for": "Overpass",
+      "revision": 1375344046,
+      "fetched_on": "2026-10-07",
+      "sha256": "04d2c3db3860ef9014504645224518add1f892ad2271f137a927575508bd585c"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Flyover",
+      "title": "Flyover",
+      "asked_for": "Flyover",
+      "revision": 8498270,
+      "fetched_on": "2026-10-07",
+      "sha256": "77c4a6a92862cd33d8e87c9653528fe41f79aaadf64b477a98c3cdbdaf1a097d"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

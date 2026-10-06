@@ -1,0 +1,43 @@
+{
+  "name": "Waterfall",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A waterfall is any point in a river or stream where water flows over a vertical drop or a series of steep drops.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "water",
+      "quote": "A waterfall is a place where water rushes down a steep ledge.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Waterfall",
+      "title": "Waterfall",
+      "asked_for": "Waterfall",
+      "revision": 1376058742,
+      "fetched_on": "2026-10-07",
+      "sha256": "b621a20ed448b584d272f05700a839e7888a1391857bb01f142377736fb8f4d4"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Waterfall",
+      "title": "Waterfall",
+      "asked_for": "Waterfall",
+      "revision": 10393932,
+      "fetched_on": "2026-10-07",
+      "sha256": "23688b9837242f4d3171353076d24a124559c0e9b2ecaa201c35df6e7fec3f8e"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

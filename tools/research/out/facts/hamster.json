@@ -1,0 +1,55 @@
+{
+  "name": "Hamster",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Hamsters are rodents (order Rodentia) belonging to the subfamily Cricetinae, which contains 19 species classified in seven genera.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "Hamsters are rodents (order Rodentia) belonging to the subfamily Cricetinae, which contains 19 species classified in seven genera.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "They have become established as popular small pets.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "pet",
+      "quote": "They have become established as popular small pets.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Hamster",
+      "title": "Hamster",
+      "asked_for": "Hamster",
+      "revision": 1377652344,
+      "fetched_on": "2026-10-07",
+      "sha256": "341a12095911ac1df47b53a20b469e76be253debbc3e222dd297fc7cf033e898"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Hamster",
+      "title": "Hamster",
+      "asked_for": "Hamster",
+      "revision": 10625167,
+      "fetched_on": "2026-10-07",
+      "sha256": "766f97eaa5f20dede9cb19f8371d901440d65a12f3b6d65b5275bbaf56d94b04"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

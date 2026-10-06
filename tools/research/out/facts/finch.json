@@ -1,0 +1,53 @@
+{
+  "name": "Finch",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The true finches are small to medium-sized passerine birds in the family Fringillidae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "The true finches are small to medium-sized passerine birds in the family Fringillidae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "The sources describe finches in the present tense as living birds with many species, and mention no extinction."
+    },
+    "pet_farm_or_wild_of_bird": {
+      "value": "wild_land",
+      "basis": "judged, not sourced",
+      "why": "Finches are wild songbirds that live in a wide range of natural habitats, though some are kept as pets."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Finch",
+      "title": "Finch",
+      "asked_for": "Finch",
+      "revision": 1378798637,
+      "fetched_on": "2026-10-07",
+      "sha256": "ea9473d8e2a0f3959b9127bbb05ac860d4fab784cee6270b9f4a8dc5aa3673dc"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Finch",
+      "title": "Finch",
+      "asked_for": "Finch",
+      "revision": 6173753,
+      "fetched_on": "2026-10-07",
+      "sha256": "47274ae460c5c9680d6494cc117f33bcb939a0aee0b81daaa33f727e212ce68d"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

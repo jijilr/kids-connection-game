@@ -1,0 +1,55 @@
+{
+  "name": "Whale",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Whales are a widely distributed and diverse group of fully aquatic placental marine mammals.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "Whales are a widely distributed and diverse group of fully aquatic placental marine mammals.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Mysticetes include four extant (living) families: Balaenopteridae (the rorquals), Balaenidae (right whales), Cetotheriidae (the pygmy right whale), and Eschrichtiidae (the grey whale).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_water",
+      "quote": "Whales are fully aquatic, open-ocean animals: they can feed, mate, give birth, suckle and raise their young at sea.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Whale",
+      "title": "Whale",
+      "asked_for": "Whale",
+      "revision": 1377720929,
+      "fetched_on": "2026-10-07",
+      "sha256": "8636fd488ed65bae904f8c26f29e863b8d669faef946710afca2faf50205ab67"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Whale",
+      "title": "Whale",
+      "asked_for": "Whale",
+      "revision": 10895152,
+      "fetched_on": "2026-10-07",
+      "sha256": "0e4bb05de1c544613ae7c00ea8c36359e8ddfe9084a60308d20d8ce0eb0c82e8"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

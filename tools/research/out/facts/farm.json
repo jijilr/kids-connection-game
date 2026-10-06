@@ -1,0 +1,41 @@
+{
+  "name": "Farm",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "basis": "judged, not sourced",
+      "why": "A farm is an area of land and its buildings used for agriculture, which people establish and manage."
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "uncertain: two judgements disagree: 'Tools' and 'Buildings'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Farm",
+      "title": "Farm",
+      "asked_for": "Farm",
+      "revision": 1374708910,
+      "fetched_on": "2026-10-07",
+      "sha256": "2a759e4c6e017bc5ea64abc8e1be17f7db3d2ab11003c7b5c2e538a82e18069a"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Farm",
+      "title": "Farm",
+      "asked_for": "Farm",
+      "revision": 9944648,
+      "fetched_on": "2026-10-07",
+      "sha256": "322a36a737b0206a52e529a5618f76afff3db4b3d408e2c051ad054da10038ec"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Guinea Pig",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The guinea pig (Cavia porcellus), also known as the domestic guinea pig, cavy or domestic cavy ( KAY-vee), is a species of rodent.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "The guinea pig (Cavia porcellus), also known as the domestic guinea pig, cavy or domestic cavy ( KAY-vee), is a species of rodent.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Guinea pigs have been raised by humans as a meat source, as pets, as laboratory test subjects, and for ceremonial use.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "pet",
+      "quote": "In Western society, the guinea pig has enjoyed widespread popularity as a pet since its introduction to Europe and North America by European traders in the 16th century.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Guinea_pig",
+      "title": "Guinea pig",
+      "asked_for": "Guinea Pig",
+      "revision": 1374811556,
+      "fetched_on": "2026-10-07",
+      "sha256": "0443d17d005ddf83bee57d8b30b78cd5a6cfb44b66fc425782f27516f785d349"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

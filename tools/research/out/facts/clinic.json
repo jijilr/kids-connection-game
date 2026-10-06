@@ -1,0 +1,48 @@
+{
+  "name": "Clinic",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A clinic (or outpatient clinic or ambulatory care clinic) is a health facility that is primarily focused on the care of outpatients.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "A clinic is a medical facility that gives health care for patients in an area.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "what_people_do_there": {
+      "value": "heal",
+      "basis": "judged, not sourced",
+      "why": "A clinic is a health facility where people go to get care and treatment for injuries or illness, so people mostly go there to get well."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Clinic",
+      "title": "Clinic",
+      "asked_for": "Clinic",
+      "revision": 1376682750,
+      "fetched_on": "2026-10-07",
+      "sha256": "4b521eff9388541a851c029f8ba0fd619db72d2ceae2acba202d6bff835560b4"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Clinic",
+      "title": "Clinic",
+      "asked_for": "Clinic",
+      "revision": 10126170,
+      "fetched_on": "2026-10-07",
+      "sha256": "558e770bec514ff05604475db5ca5b2a4c9057e748c60d995756afe233cdc768"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

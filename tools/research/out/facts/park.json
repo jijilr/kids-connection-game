@@ -1,0 +1,42 @@
+{
+  "name": "Park",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A park is an area of natural, semi-natural or planted space set aside for human enjoyment and recreation or for the protection of wildlife or natural habitats.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "uncertain: two judgements disagree: 'Toys' and 'Buildings'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Park",
+      "title": "Park",
+      "asked_for": "Park",
+      "revision": 1376913404,
+      "fetched_on": "2026-10-07",
+      "sha256": "7c6d7dfba25359ae61287615777689366134db02c2f932f37b4aa96a859bf068"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Park",
+      "title": "Park",
+      "asked_for": "Park",
+      "revision": 8605430,
+      "fetched_on": "2026-10-07",
+      "sha256": "00a56e0cfe2742f9e0bee9ebdb7f6c845bdc081b912ddbaba3eeabdf87d16c61"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

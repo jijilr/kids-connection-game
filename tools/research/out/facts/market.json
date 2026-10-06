@@ -1,0 +1,47 @@
+{
+  "name": "Market",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "basis": "judged, not sourced",
+      "why": "A market is a place people set up and build for buying and selling, so it is something people make."
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "basis": "judged, not sourced",
+      "why": "A market is a place or special building where people go to buy and sell things."
+    },
+    "what_people_do_there": {
+      "value": "buy",
+      "quote": "A market is a place where people go to buy or sell things.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Marketplace",
+      "title": "Marketplace",
+      "asked_for": "Marketplace",
+      "revision": 1375606714,
+      "fetched_on": "2026-10-07",
+      "sha256": "fe1e9795ce36362db5f37b1de1f9080416f66b409d0952311ae5e286a55029a2"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Market",
+      "title": "Market",
+      "asked_for": "Market",
+      "revision": 10930580,
+      "fetched_on": "2026-10-07",
+      "sha256": "b2d4276a2681b647b7c1eb74a26ed32b45408ce5ace044170aaed0349e9089a5"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

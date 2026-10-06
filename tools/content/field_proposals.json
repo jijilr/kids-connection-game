@@ -360,6 +360,72 @@
         ],
         "date": "2026-10-07",
         "run": "2026-10-07-02"
+      },
+      {
+        "wording": "How does it grow?",
+        "values": {
+          "tree": "Tall, with a woody trunk",
+          "bush": "As a bush",
+          "small_plant": "As a small soft plant",
+          "climber": "Climbing up a support",
+          "creeper": "Creeping along the ground",
+          "grass": "Like grass"
+        },
+        "why": [
+          "only 1 of its values have four familiar things, and a board needs four: 'Tall, with a woody trunk' has 6, 'As a bush' has 0, 'As a small soft plant' has 1, 'Climbing up a support' has 0, 'Creeping along the ground' has 0, 'Like grass' has 0"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "What shape are the leaves?",
+        "values": {
+          "big_round_leaves": "Big round leaves",
+          "long_feathery_leaves": "Long feathery leaves",
+          "big_wide_leaves": "Big wide leaves",
+          "small_thin_leaves": "Small thin leaves"
+        },
+        "why": [
+          "its groups have no sharp edges: both checks placed only 61% of the things where the proposer did (Mango tree: 'big_round_leaves' or 'long_feathery_leaves'; Neem tree: 'long_feathery_leaves' or 'small_thin_leaves'; Guava tree: 'big_round_leaves' or 'small_thin_leaves'; Jackfruit tree: 'big_round_leaves' or 'no one group')"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "What is the trunk like?",
+        "values": {
+          "thick_woody_trunk": "Thick woody trunk",
+          "soft_green_stem": "Soft green stem",
+          "thin_woody_stem": "Thin woody stem",
+          "no_trunk": "No trunk"
+        },
+        "why": [
+          "not every thing has one value: 2 of the 14 names sorted have no single group, and at most one in 8 may (Guava tree, Lemon tree)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "What kind of fruit does it give?",
+        "values": {
+          "big_fruit": "Big fruit",
+          "small_fruit": "Small fruit",
+          "no_fruit": "No fruit",
+          "many_seeds_fruit": "Fruit with many seeds"
+        },
+        "why": [
+          "not every thing has one value: 6 of the 23 names sorted have no single group, and at most one in 8 may (Papaya plant, Watermelon plant, Pineapple plant, Muskmelon plant, Guava tree, Tamarind tree)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
       }
     ],
     "refused_by_an_earlier_test": [
@@ -582,6 +648,106 @@
         ],
         "date": "2026-10-07",
         "run": "2026-10-07-02"
+      },
+      {
+        "wording": "Where does it mostly grow?",
+        "values": {
+          "water": "In water",
+          "fields": "In farm fields",
+          "gardens": "In gardens and parks",
+          "forests": "In forests",
+          "dry_places": "In dry, sandy places"
+        },
+        "why": [
+          "not every thing has one value: 2 of the 14 names sorted have no single group, and at most one in 8 may (Sunflower, Daisy)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "How does it grow?",
+        "values": {
+          "tree": "Tall, with a woody trunk",
+          "bush": "As a bush",
+          "small_plant": "As a small soft plant",
+          "climber": "Climbing up a support",
+          "creeper": "Creeping along the ground",
+          "grass": "Like grass"
+        },
+        "why": [
+          "only 1 of its values have four familiar things, and a board needs four: 'Tall, with a woody trunk' has 0, 'As a bush' has 1, 'As a small soft plant' has 9, 'Climbing up a support' has 2, 'Creeping along the ground' has 0, 'Like grass' has 0"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "What colour is its flower mostly?",
+        "values": {
+          "red": "Red",
+          "yellow": "Yellow or orange",
+          "white": "White",
+          "pink": "Pink or purple",
+          "blue": "Blue"
+        },
+        "why": [
+          "not every thing has one value: 2 of the 4 things there fit more than one group, and at most 1 may (Rose: red and yellow and white and pink; Lotus: pink and white)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "What shape is the flower?",
+        "values": {
+          "round_flat": "Round and flat",
+          "cup_or_bowl": "Cup or bowl shaped",
+          "many_petals": "Many petals in a ball",
+          "spiky_or_star": "Spiky or star shaped"
+        },
+        "why": [
+          "not every thing has one value: 2 of the 4 things there fit more than one group, and at most 1 may (Sunflower: many_petals and round_flat; Lotus: many_petals and cup_or_bowl)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "What color is the flower?",
+        "values": {
+          "red": "Red",
+          "yellow": "Yellow",
+          "pink": "Pink",
+          "white": "White"
+        },
+        "why": [
+          "not every thing has one value: 2 of the 4 things there fit more than one group, and at most 1 may (Rose: red and yellow and pink and white; Lotus: pink and white)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "Does the flower smell nice?",
+        "values": {
+          "strong_smell": "Strong sweet smell",
+          "light_smell": "Light or no smell",
+          "bad_smell": "Bad or rotten smell",
+          "spicy_smell": "Spicy or sharp smell"
+        },
+        "why": [
+          "not every thing has one value: 2 of the 4 things there fit more than one group, and at most 1 may (Lotus: light_smell and strong_smell; Marigold: spicy_smell and bad_smell)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
       }
     ],
     "refused_by_an_earlier_test": [
@@ -802,6 +968,72 @@
         ],
         "date": "2026-10-07",
         "run": "2026-10-07-02"
+      },
+      {
+        "wording": "How does it grow?",
+        "values": {
+          "tree": "Tall, with a woody trunk",
+          "bush": "As a bush",
+          "small_plant": "As a small soft plant",
+          "climber": "Climbing up a support",
+          "creeper": "Creeping along the ground",
+          "grass": "Like grass"
+        },
+        "why": [
+          "its groups have no sharp edges: both checks placed only 60% of the things where the proposer did (Rice plant: 'small_plant' or 'grass'; Wheat: 'small_plant' or 'grass')"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "What is its stem like?",
+        "values": {
+          "soft_green_stem": "Soft green stem",
+          "hard_woody_stem": "Hard woody stem",
+          "thick_juicy_stem": "Thick juicy stem",
+          "climbing_vine_stem": "Climbing vine stem"
+        },
+        "why": [
+          "its groups have no sharp edges: both checks placed only 82% of the things where the proposer did (Papaya plant: 'thick_juicy_stem' or 'soft_green_stem'; Bottle gourd vine: 'thick_juicy_stem' or 'climbing_vine_stem'; Pumpkin vine: 'thick_juicy_stem' or 'climbing_vine_stem')"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "What is its leaf like?",
+        "values": {
+          "long_thin_leaves": "Long thin leaves",
+          "broad_flat_leaves": "Broad flat leaves",
+          "small_round_leaves": "Small round leaves",
+          "needle_like_leaves": "Needle-like leaves"
+        },
+        "why": [
+          "its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Bamboo: 'needle_like_leaves' or 'long_thin_leaves'; Palm tree: 'long_thin_leaves' or 'broad_flat_leaves'; Spinach: 'small_round_leaves' or 'broad_flat_leaves')"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "What is its seed head like?",
+        "values": {
+          "tiny_grains_on_stalk": "Tiny grains on stalk",
+          "thick_sweet_stalk": "Thick sweet stalk",
+          "hard_woody_stem_no_grains": "Hard woody stem, no grains",
+          "no_seed_head": "No seed head"
+        },
+        "why": [
+          "not every thing has one value: 1 of the 7 names sorted have no single group, and at most one in 8 may (Teak tree)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
       }
     ],
     "refused_by_an_earlier_test": [
@@ -1024,6 +1256,54 @@
         ],
         "date": "2026-10-07",
         "run": "2026-10-07-02"
+      },
+      {
+        "wording": "What is it made of?",
+        "values": {
+          "rock": "Made of rock",
+          "water": "Made of water",
+          "fire": "Made of fire",
+          "air": "Made of air"
+        },
+        "why": [
+          "not every thing has one value: 3 of the 16 names sorted have no single group, and at most one in 8 may (Cloud, Steam, Fog)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "How does it move?",
+        "values": {
+          "floats": "Floats in the sky",
+          "shines": "Shines and stays",
+          "orbits": "Goes around the Earth",
+          "still": "Stays still"
+        },
+        "why": [
+          "not every thing has one value: 9 of the 12 names sorted have no single group, and at most one in 8 may (Moon, Bird, Plane, Leaf, Lamp, Candle)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "What shape is it?",
+        "values": {
+          "round": "Round like a ball",
+          "fluffy": "Fluffy and soft",
+          "pointy": "Pointy and sharp",
+          "flat": "Flat and wide"
+        },
+        "why": [
+          "only 0 of its values have four familiar things, and a board needs four: 'Round like a ball' has 2, 'Fluffy and soft' has 1, 'Pointy and sharp' has 1, 'Flat and wide' has 0"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
       }
     ],
     "refused_by_an_earlier_test": [
@@ -1361,6 +1641,72 @@
         ],
         "date": "2026-10-07",
         "run": "2026-10-07-02"
+      },
+      {
+        "wording": "What job does it mostly do?",
+        "values": {
+          "cuts": "Cuts",
+          "hits": "Hits or knocks in",
+          "digs": "Digs",
+          "measures": "Measures",
+          "holds": "Holds or grips",
+          "turns": "Turns or tightens"
+        },
+        "why": [
+          "only 1 of its values have four familiar things, and a board needs four: 'Cuts' has 2, 'Hits or knocks in' has 3, 'Digs' has 5, 'Measures' has 0, 'Holds or grips' has 0, 'Turns or tightens' has 3"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "What kind of tool is it?",
+        "values": {
+          "hammering_tool": "Hammering tool",
+          "digging_tool": "Digging tool",
+          "cutting_tool": "Cutting tool",
+          "turning_tool": "Turning tool"
+        },
+        "why": [
+          "only 1 of its values have four familiar things, and a board needs four: 'Hammering tool' has 3, 'Digging tool' has 4, 'Cutting tool' has 2, 'Turning tool' has 3"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "What shape is the part that does the work?",
+        "values": {
+          "flat_and_wide": "Flat and wide",
+          "toothed_edge": "Toothed edge",
+          "pointed_and_thin": "Pointed and thin",
+          "heavy_and_blocky": "Heavy and blocky"
+        },
+        "why": [
+          "its groups have no sharp edges: both checks placed only 77% of the things where the proposer did (Axe: 'pointed_and_thin' or 'no one group'; Rake: 'flat_and_wide' or 'toothed_edge'; Fork: 'flat_and_wide' or 'toothed_edge'; Machete: 'pointed_and_thin' or 'no one group')"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "How do we use it?",
+        "values": {
+          "hit_and_knock": "Hit and knock",
+          "dig_and_scoop": "Dig and scoop",
+          "cut_and_chop": "Cut and chop",
+          "turn_and_tighten": "Turn and tighten"
+        },
+        "why": [
+          "only 1 of its values have four familiar things, and a board needs four: 'Hit and knock' has 3, 'Dig and scoop' has 3, 'Cut and chop' has 2, 'Turn and tighten' has 4"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
       }
     ],
     "refused_by_an_earlier_test": [
@@ -1451,25 +1797,24 @@
     ]
   },
   "animal/mammal": {
-    "status": "held by the owner on 2026-10-06",
-    "field": "where_mammal_lives",
-    "wording": "Where does it live?",
-    "proposer_confidence": "middling: farm and wild are full already; pets and sea animals are thinner. Animals is also the deepest branch, so the engine would widen elsewhere first",
+    "status": "approved by the rules on 2026-10-07, job run 2026-10-07-03",
+    "field": "pet_farm_or_wild",
+    "wording": "Is it mostly a pet, a farm animal or a wild animal?",
     "values": {
-      "home": {
-        "label": "At home with us",
+      "pet": {
+        "label": "Pets at home",
         "have": [
           "dog",
           "cat",
           "rabbit"
         ],
         "examples": [
-          "Guinea pig",
+          "Guinea Pig",
           "Hamster"
         ]
       },
       "farm": {
-        "label": "On the farm",
+        "label": "Farm animals",
         "have": [
           "cow",
           "horse",
@@ -1477,13 +1822,13 @@
         ],
         "examples": [
           "Sheep",
-          "Buffalo",
           "Pig",
-          "Donkey"
+          "Donkey",
+          "Buffalo"
         ]
       },
-      "wild": {
-        "label": "In the wild",
+      "wild_land": {
+        "label": "Wild animals on land",
         "have": [
           "elephant",
           "lion",
@@ -1494,21 +1839,59 @@
         ],
         "examples": [
           "Deer",
-          "Zebra"
+          "Fox",
+          "Wolf",
+          "Zebra",
+          "Kangaroo",
+          "Panda"
         ]
       },
-      "sea": {
-        "label": "In the sea",
+      "wild_water": {
+        "label": "Wild animals in water",
         "have": [],
         "examples": [
           "Whale",
           "Dolphin",
           "Seal",
-          "Sea lion"
+          "Walrus",
+          "Otter"
         ]
       }
     },
-    "note": "Proposed on 2026-10-06, after the owner asked for circles with natural four-way splits a four-year-old knows well. The examples are suggestions; the job settles each one before it goes in.",
+    "library": "pet_farm_or_wild",
+    "source": "the library",
+    "assign": {},
+    "notes": {},
+    "familiar": {
+      "Guinea Pig": 0.7,
+      "Hamster": 0.8,
+      "Sheep": 0.9,
+      "Pig": 0.9,
+      "Donkey": 0.8,
+      "Buffalo": 0.7,
+      "Deer": 0.8,
+      "Fox": 0.7,
+      "Wolf": 0.8,
+      "Zebra": 0.9,
+      "Kangaroo": 0.9,
+      "Panda": 0.9,
+      "Whale": 0.9,
+      "Dolphin": 0.9,
+      "Seal": 0.8,
+      "Walrus": 0.7,
+      "Otter": 0.7
+    },
+    "tests": {
+      "four familiar things in at least four values": {
+        "pet": 5,
+        "farm": 7,
+        "wild_land": 12,
+        "wild_water": 5
+      },
+      "one value for each thing": "12 things already in the circle placed alike by two checks; 0 fit more than one group; sharpness 0.97",
+      "one clean solution": "sample boards passed",
+      "not a synonym": "no existing field asks or splits the same"
+    },
     "refused_by_the_rules": [
       {
         "wording": "What is its body covered with?",
@@ -1595,92 +1978,64 @@
         "run": "2026-10-07-02"
       }
     ],
-    "refused_by_an_earlier_test": [
-      {
-        "wording": "What is its body covered with?",
-        "values": {
-          "fur": "Fur or hair",
-          "short_hair": "Short smooth hair",
-          "thick_skin": "Thick wrinkly skin",
-          "spotted_patchy": "Spotted or patchy coat"
+    "earlier": {
+      "status": "held by the owner on 2026-10-06",
+      "field": "where_mammal_lives",
+      "wording": "Where does it live?",
+      "values": {
+        "home": {
+          "label": "At home with us",
+          "have": [
+            "dog",
+            "cat",
+            "rabbit"
+          ],
+          "examples": [
+            "Guinea pig",
+            "Hamster"
+          ]
         },
-        "why": [
-          "not every thing has one value: Cow - it fits more than one group: short_hair and spotted_patchy; Tiger - it fits more than one group: fur and spotted_patchy; Horse - it fits more than one group: short_hair and spotted_patchy; Goat - the proposer put it in 'short_hair', both checks in 'fur'"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "What kind of tail does it have?",
-        "values": {
-          "long_tail": "Long hanging tail",
-          "short_tail": "Short or fluffy tail",
-          "tuft_tail": "Tail with a tuft",
-          "no_tail": "No tail at all"
+        "farm": {
+          "label": "On the farm",
+          "have": [
+            "cow",
+            "horse",
+            "goat"
+          ],
+          "examples": [
+            "Sheep",
+            "Buffalo",
+            "Pig",
+            "Donkey"
+          ]
         },
-        "why": [
-          "not every thing has one value: Elephant - the two checks disagree: 'no_tail' and 'short_tail'; Dog - the proposer put it in 'long_tail', both checks in 'short_tail'; Lion - the proposer put it in 'long_tail', both checks in 'tuft_tail'"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "What do its legs look like?",
-        "values": {
-          "paws": "Soft paws with claws",
-          "hooves": "Hard hooves",
-          "long_legs": "Very long legs",
-          "short_legs": "Very short legs"
+        "wild": {
+          "label": "In the wild",
+          "have": [
+            "elephant",
+            "lion",
+            "tiger",
+            "monkey",
+            "bear",
+            "giraffe"
+          ],
+          "examples": [
+            "Deer",
+            "Zebra"
+          ]
         },
-        "why": [
-          "not every thing has one value: Elephant - it fits no group; Monkey - it fits no group; Rabbit - it fits no group; Giraffe - the proposer put it in 'hooves', both checks in 'long_legs'"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "What kind of feet does it have?",
-        "values": {
-          "paws": "Soft paws",
-          "hooves": "Hard hooves",
-          "hands": "Hands for grabbing",
-          "big_round_feet": "Big round feet"
-        },
-        "why": [
-          "not every thing has one value: Rabbit - the proposer put it in 'big_round_feet', both checks in 'paws'"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "What kind of ears does it have?",
-        "values": {
-          "pointy_ears": "Pointy ears",
-          "floppy_ears": "Floppy ears",
-          "small_ears": "Small ears",
-          "long_neck_ears": "Ears on a long neck"
-        },
-        "why": [
-          "not every thing has one value: Cow - the two checks disagree: 'floppy_ears' and 'small_ears'; Dog - the proposer put it in 'pointy_ears', both checks in 'floppy_ears'; Lion - the proposer put it in 'pointy_ears', both checks in 'small_ears'; Tiger - the proposer put it in 'pointy_ears', both checks in 'small_ears'; Horse - the proposer put it in 'small_ears', both checks in 'pointy_ears'; Rabbit - the proposer put it in 'floppy_ears', both checks in 'long_neck_ears'"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "What is its body covered with?",
-        "values": {
-          "fur": "Furry body",
-          "short_hair": "Short smooth hair",
-          "spotted_patchy": "Spotted or patchy skin",
-          "wrinkly_skin": "Wrinkly skin"
-        },
-        "why": [
-          "not every thing has one value: Cow - it fits more than one group: short_hair and spotted_patchy; Elephant - the proposer put it in 'short_hair', both checks in 'wrinkly_skin'; Goat - the proposer put it in 'short_hair', both checks in 'fur'"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
+        "sea": {
+          "label": "In the sea",
+          "have": [],
+          "examples": [
+            "Whale",
+            "Dolphin",
+            "Seal",
+            "Sea lion"
+          ]
+        }
       }
-    ]
+    }
   },
   "nature_not_alive/water": {
     "status": "held by the rules on 2026-10-07: no field passed the tests",
@@ -1771,6 +2126,87 @@
         ],
         "date": "2026-10-07",
         "run": "2026-10-07-02"
+      },
+      {
+        "wording": "What is the water mostly doing?",
+        "values": {
+          "flows": "Flowing along",
+          "still": "Standing still",
+          "sea": "Salty sea water",
+          "frozen": "Frozen hard",
+          "falls": "Falling from the sky"
+        },
+        "why": [
+          "only 3 of its values have four familiar things, and a board needs four: 'Flowing along' has 4, 'Standing still' has 5, 'Salty sea water' has 2, 'Frozen hard' has 4, 'Falling from the sky' has 0"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "What is it mostly: hard, runny, airy, or light?",
+        "values": {
+          "solid": "Hard and solid",
+          "liquid": "Wet and runny",
+          "gas": "Air, mist or gas",
+          "light": "Light or fire"
+        },
+        "why": [
+          "only 1 of its values have four familiar things, and a board needs four: 'Hard and solid' has 2, 'Wet and runny' has 9, 'Air, mist or gas' has 3, 'Light or fire' has 0"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "Does the water flow or stay still?",
+        "values": {
+          "flows": "Water that flows",
+          "still": "Water that stays still",
+          "waves": "Water with big waves",
+          "frozen": "Water that is frozen hard"
+        },
+        "why": [
+          "only 3 of its values have four familiar things, and a board needs four: 'Water that flows' has 6, 'Water that stays still' has 4, 'Water with big waves' has 3, 'Water that is frozen hard' has 5"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "Is the water big or small?",
+        "values": {
+          "very_big": "Very big water",
+          "big": "Big water",
+          "small": "Small water",
+          "tiny": "Tiny water"
+        },
+        "why": [
+          "its groups have no sharp edges: both checks placed only 72% of the things where the proposer did (Bay: 'very_big' or 'big'; Shore: 'very_big' or 'no one group'; Canal: 'big' or 'small'; Puddle: 'small' or 'tiny')"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "Is the water salty or not salty?",
+        "values": {
+          "salty": "Salty water",
+          "not_salty": "Not salty water",
+          "frozen": "Frozen water",
+          "rain": "Rain water"
+        },
+        "why": [
+          "not every thing has one value: 3 of the 18 names sorted have no single group, and at most one in 8 may (Shore, Pool, Iceberg)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
       }
     ],
     "refused_by_an_earlier_test": [
@@ -1861,10 +2297,94 @@
     ]
   },
   "nature_not_alive/land": {
-    "status": "held by the rules on 2026-10-07: no field passed the tests",
-    "field": null,
-    "wording": "",
-    "values": {},
+    "status": "approved by the rules on 2026-10-07, job run 2026-10-07-03",
+    "field": "shape_of_the_land",
+    "wording": "What is the land mostly like there?",
+    "values": {
+      "high": {
+        "label": "High land",
+        "have": [
+          "mountain",
+          "hill",
+          "volcano"
+        ],
+        "examples": [
+          "Cliff"
+        ]
+      },
+      "flat": {
+        "label": "Flat land",
+        "have": [
+          "desert"
+        ],
+        "examples": [
+          "Field",
+          "Plain",
+          "Meadow",
+          "Farm",
+          "Park"
+        ]
+      },
+      "by_water": {
+        "label": "Land beside water",
+        "have": [
+          "beach"
+        ],
+        "examples": [
+          "River bank",
+          "Lake shore",
+          "Pond edge",
+          "Island"
+        ]
+      },
+      "hollow": {
+        "label": "Hollows and holes in the land",
+        "have": [
+          "cave"
+        ],
+        "examples": [
+          "Pit",
+          "Tunnel",
+          "Well",
+          "Ditch",
+          "Valley",
+          "Hole"
+        ]
+      }
+    },
+    "library": "shape_of_the_land",
+    "source": "the library",
+    "assign": {},
+    "notes": {},
+    "familiar": {
+      "Cliff": 0.85,
+      "Field": 0.9,
+      "Plain": 0.8,
+      "Meadow": 0.7,
+      "Farm": 0.9,
+      "Park": 0.9,
+      "River bank": 0.8,
+      "Lake shore": 0.7,
+      "Pond edge": 0.7,
+      "Island": 0.9,
+      "Pit": 0.8,
+      "Tunnel": 0.9,
+      "Well": 0.9,
+      "Ditch": 0.7,
+      "Valley": 0.9,
+      "Hole": 0.9
+    },
+    "tests": {
+      "four familiar things in at least four values": {
+        "high": 4,
+        "flat": 6,
+        "by_water": 5,
+        "hollow": 7
+      },
+      "one value for each thing": "6 things already in the circle placed alike by two checks; 0 fit more than one group; sharpness 0.96",
+      "one clean solution": "sample boards passed",
+      "not a synonym": "no existing field asks or splits the same"
+    },
     "refused_by_the_rules": [
       {
         "wording": "What shape is the land?",
@@ -1950,96 +2470,10 @@
         "date": "2026-10-07",
         "run": "2026-10-07-02"
       }
-    ],
-    "refused_by_an_earlier_test": [
-      {
-        "wording": "What shape is the land here?",
-        "values": {
-          "high_raised": "High raised land",
-          "flat_open": "Flat open land",
-          "sandy_shore": "Sandy shore",
-          "hole_underground": "Hole in the ground"
-        },
-        "why": [
-          "not every value has four familiar things: 'Sandy shore' has 1, 'Hole in the ground' has 1"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "What is the ground made of?",
-        "values": {
-          "rock": "Rock",
-          "sand": "Sand",
-          "soil": "Soil",
-          "grass": "Grass"
-        },
-        "why": [
-          "not every thing has one value: Hill - it fits more than one group: soil and grass"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "Is the land high up or low down?",
-        "values": {
-          "high_up": "High up",
-          "low_down": "Low down",
-          "flat_ground": "Flat ground",
-          "water_edge": "Water edge"
-        },
-        "why": [
-          "not every thing has one value: Beach - the proposer put it in 'low_down', both checks in 'water_edge'"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "What shape is the land?",
-        "values": {
-          "high_raised": "High raised land",
-          "flat_open": "Flat open land",
-          "water_edge": "Water edge land",
-          "hole_underground": "Hole in the ground"
-        },
-        "why": [
-          "not every value has four familiar things: 'Flat open land' has 2, 'Hole in the ground' has 1"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "What is the land made of?",
-        "values": {
-          "rock": "Rock land",
-          "sand": "Sand land",
-          "soil": "Soil land",
-          "ice": "Ice land"
-        },
-        "why": [
-          "not every value has four familiar things: 'Sand land' has 2, 'Ice land' has 1"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "Is the land high up or low down?",
-        "values": {
-          "high_up": "High up land",
-          "low_down": "Low down land",
-          "under_ground": "Under the ground",
-          "at_water_level": "At water level"
-        },
-        "why": [
-          "not every thing has one value: Beach - the proposer put it in 'low_down', both checks in 'at_water_level'; Cave - the proposer put it in 'low_down', both checks in 'under_ground'"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      }
     ]
   },
   "nature_not_alive/ground": {
-    "status": "withdrawn on 2026-10-07: it passed on groups padded with other names for mud; a name must now be a thing of its own",
+    "status": "held by the rules on 2026-10-07: no field passed the tests",
     "field": "what_happens_when_wet",
     "wording": "What happens when it gets wet?",
     "values": {
@@ -2136,6 +2570,86 @@
         ],
         "date": "2026-10-07",
         "run": "withdrawn"
+      },
+      {
+        "wording": "How big are its pieces mostly?",
+        "values": {
+          "one_big": "One big hard piece",
+          "small": "Small pieces you can pick up",
+          "grains": "Tiny grains",
+          "fine": "Fine, like powder or paste"
+        },
+        "why": [
+          "not every thing has one value: 3 of the 9 things there fit more than one group, and at most 1 may (Soil: fine and grains; Gravel: small and grains; Coal: one_big and small)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "What is it mostly: hard, runny, airy, or light?",
+        "values": {
+          "solid": "Hard and solid",
+          "liquid": "Wet and runny",
+          "gas": "Air, mist or gas",
+          "light": "Light or fire"
+        },
+        "why": [
+          "only 1 of its values have four familiar things, and a board needs four: 'Hard and solid' has 9, 'Wet and runny' has 0, 'Air, mist or gas' has 0, 'Light or fire' has 0"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "How big are the pieces you see?",
+        "values": {
+          "one_big_piece": "One big piece",
+          "small_pieces": "Small pieces",
+          "tiny_grains": "Tiny grains",
+          "soft_and_squishy": "Soft and squishy"
+        },
+        "why": [
+          "not every thing has one value: 2 of the 9 things there fit more than one group, and at most 1 may (Soil: small_pieces and tiny_grains; Coal: one_big_piece and small_pieces)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "What color is it?",
+        "values": {
+          "black": "Black",
+          "brown": "Brown",
+          "gray": "Gray",
+          "yellow": "Yellow"
+        },
+        "why": [
+          "not every thing has one value: 2 of the 9 things there fit more than one group, and at most 1 may (Sand: yellow and brown; Clay: brown and gray)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "How does it feel when you touch it?",
+        "values": {
+          "hard_and_smooth": "Hard and smooth",
+          "rough_and_grainy": "Rough and grainy",
+          "soft_and_sticky": "Soft and sticky",
+          "black_and_dusty": "Black and dusty"
+        },
+        "why": [
+          "only 0 of its values have four familiar things, and a board needs four: 'Hard and smooth' has 3, 'Rough and grainy' has 3, 'Soft and sticky' has 2, 'Black and dusty' has 1"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
       }
     ]
   },
@@ -2228,6 +2742,104 @@
         ],
         "date": "2026-10-07",
         "run": "2026-10-07-02"
+      },
+      {
+        "wording": "How does it mostly move?",
+        "values": {
+          "walks": "Walks or runs",
+          "flies": "Flies",
+          "swims": "Swims",
+          "crawls": "Crawls or slithers",
+          "hops": "Hops or jumps"
+        },
+        "why": [
+          "not every thing has one value: 5 of the 12 things there fit more than one group, and at most 1 may (Crocodile: crawls and swims and walks; Turtle: walks and swims; Anaconda: swims and crawls; Titanoboa: swims and crawls; Vasuki indicus: swims and crawls)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "What does it mostly eat?",
+        "values": {
+          "plants": "Mostly plants",
+          "meat": "Mostly meat or fish",
+          "insects": "Mostly insects and worms",
+          "both": "Plants and meat alike"
+        },
+        "why": [
+          "only 1 of its values have four familiar things, and a board needs four: 'Mostly plants' has 1, 'Mostly meat or fish' has 8, 'Mostly insects and worms' has 3, 'Plants and meat alike' has 2"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "What covers its body?",
+        "values": {
+          "fur": "Fur or hair",
+          "feathers": "Feathers",
+          "scales": "Scales",
+          "shell": "A hard shell",
+          "bare_skin": "Smooth bare skin"
+        },
+        "why": [
+          "not every thing has one value: 2 of the 12 things there fit more than one group, and at most 1 may (Tortoise: shell and scales; Turtle: shell and scales)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "What is its body like?",
+        "values": {
+          "long_and_legless": "Long and no legs",
+          "four_legs_and_shell": "Four legs and a shell",
+          "four_legs_and_scaly_skin": "Four legs and scaly skin",
+          "big_and_bumpy_armor": "Big and bumpy armor"
+        },
+        "why": [
+          "not every thing has one value: 5 of the 19 names sorted have no single group, and at most one in 8 may (Worm, Eel, Snail, Hermit crab, Dinosaur)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "What is its tail like?",
+        "values": {
+          "long_thin_tail": "Long thin tail",
+          "short_stubby_tail": "Short stubby tail",
+          "thick_heavy_tail": "Thick heavy tail",
+          "no_tail": "No tail"
+        },
+        "why": [
+          "its groups have no sharp edges: both checks placed only 64% of the things where the proposer did (Monitor lizard: 'long_thin_tail' or 'thick_heavy_tail'; Anaconda: 'long_thin_tail' or 'thick_heavy_tail'; Python: 'long_thin_tail' or 'thick_heavy_tail'; Titanoboa: 'long_thin_tail' or 'thick_heavy_tail')"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "What is its mouth like?",
+        "values": {
+          "long_snout": "Long snout",
+          "wide_mouth": "Wide mouth",
+          "beak": "Beak",
+          "small_mouth": "Small mouth"
+        },
+        "why": [
+          "its groups have no sharp edges: both checks placed only 74% of the things where the proposer did (House lizard: 'wide_mouth' or 'small_mouth'; Crocodile: 'long_snout' or 'no one group'; Chameleon: 'wide_mouth' or 'small_mouth'; Monitor lizard: 'wide_mouth' or 'long_snout')"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
       }
     ],
     "refused_by_an_earlier_test": [
@@ -2318,10 +2930,102 @@
     ]
   },
   "animal/bird": {
-    "status": "held by the rules on 2026-10-07: no field passed the tests",
-    "field": null,
-    "wording": "",
-    "values": {},
+    "status": "approved by the rules on 2026-10-07, job run 2026-10-07-03",
+    "field": "pet_farm_or_wild_of_bird",
+    "wording": "Is it mostly a pet, a farm animal or a wild animal?",
+    "values": {
+      "pet": {
+        "label": "Pets at home",
+        "have": [
+          "parrot"
+        ],
+        "examples": [
+          "Budgie",
+          "Lovebird",
+          "Canary",
+          "Cockatiel",
+          "Myna",
+          "Finch"
+        ]
+      },
+      "farm": {
+        "label": "Farm animals",
+        "have": [
+          "hen",
+          "duck",
+          "peacock"
+        ],
+        "examples": [
+          "Rooster",
+          "Turkey",
+          "Goose",
+          "Ostrich"
+        ]
+      },
+      "wild_land": {
+        "label": "Wild animals on land",
+        "have": [
+          "crow",
+          "sparrow",
+          "eagle",
+          "owl"
+        ],
+        "examples": [
+          "Woodpecker"
+        ]
+      },
+      "wild_water": {
+        "label": "Wild animals in water",
+        "have": [
+          "penguin"
+        ],
+        "examples": [
+          "Seagull",
+          "Pelican",
+          "Swan"
+        ]
+      }
+    },
+    "library": "pet_farm_or_wild",
+    "source": "the library",
+    "assign": {
+      "pigeon": [
+        "pet",
+        "wild_land"
+      ]
+    },
+    "notes": {
+      "pigeon": {
+        "pet_farm_or_wild_of_bird": "Two checks could not give it one group: Pets at home and Wild animals on land. It stays off boards sorted by this field. Job run 2026-10-07-03."
+      }
+    },
+    "familiar": {
+      "Budgie": 0.8,
+      "Lovebird": 0.7,
+      "Canary": 0.8,
+      "Cockatiel": 0.7,
+      "Myna": 0.8,
+      "Finch": 0.7,
+      "Rooster": 0.9,
+      "Turkey": 0.8,
+      "Goose": 0.9,
+      "Ostrich": 0.8,
+      "Woodpecker": 0.7,
+      "Seagull": 0.8,
+      "Pelican": 0.7,
+      "Swan": 0.9
+    },
+    "tests": {
+      "four familiar things in at least four values": {
+        "pet": 7,
+        "farm": 7,
+        "wild_land": 5,
+        "wild_water": 4
+      },
+      "one value for each thing": "9 things already in the circle placed alike by two checks; 1 fit more than one group; sharpness 0.88",
+      "one clean solution": "sample boards passed",
+      "not a synonym": "no existing field asks or splits the same"
+    },
     "refused_by_the_rules": [
       {
         "wording": "Where does this bird live?",
@@ -2406,92 +3110,6 @@
         ],
         "date": "2026-10-07",
         "run": "2026-10-07-02"
-      }
-    ],
-    "refused_by_an_earlier_test": [
-      {
-        "wording": "Where does this bird live?",
-        "values": {
-          "in_trees": "Birds in trees",
-          "on_farms": "Birds on farms",
-          "in_water": "Birds in water",
-          "in_mountains": "Birds in mountains"
-        },
-        "why": [
-          "not every thing has one value: Crow - it fits more than one group: in_trees and on_farms; Duck - it fits more than one group: in_water and on_farms; Peacock - it fits more than one group: in_trees and on_farms; Owl - the proposer put it in 'in_mountains', both checks in 'in_trees'"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "What color is this bird?",
-        "values": {
-          "black": "Black birds",
-          "white": "White birds",
-          "green": "Green birds",
-          "brown": "Brown birds"
-        },
-        "why": [
-          "not every thing has one value: Pigeon - it fits more than one group; Hen - it fits more than one group; Duck - it fits more than one group; Peacock - it fits more than one group; Penguin - it fits more than one group: black and white; Owl - the proposer put it in 'white', both checks in 'brown'"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "What does this bird eat?",
-        "values": {
-          "seeds": "Birds that eat seeds",
-          "fruits": "Birds that eat fruits",
-          "fish": "Birds that eat fish",
-          "meat": "Birds that eat meat"
-        },
-        "why": [
-          "not every thing has one value: Crow - it fits more than one group: meat and seeds and fruits; Parrot - it fits more than one group: seeds and fruits; Hen - it fits more than one group: seeds and meat; Duck - it fits more than one group: seeds and meat; Peacock - it fits more than one group: seeds and meat; Eagle - it fits more than one group: meat and fish; Penguin - it fits more than one group: fish and meat"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "Is this bird big or small?",
-        "values": {
-          "very_big": "Very big birds",
-          "big": "Big birds",
-          "small": "Small birds",
-          "very_small": "Very small birds"
-        },
-        "why": [
-          "not every thing has one value: Peacock - the two checks disagree: 'very_big' and 'big'; Crow - the proposer put it in 'small', both checks in 'big'"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "What shape is this bird?",
-        "values": {
-          "long_neck": "Birds with long necks",
-          "round_body": "Birds with round bodies",
-          "long_tail": "Birds with long tails",
-          "small_body": "Birds with small bodies"
-        },
-        "why": [
-          "not every thing has one value: Eagle - it fits no group; Parrot - the proposer put it in 'long_tail', both checks in 'round_body'; Duck - the proposer put it in 'long_neck', both checks in 'round_body'; Peacock - the proposer put it in 'long_neck', both checks in 'long_tail'"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "Does this bird have long legs or short legs?",
-        "values": {
-          "very_long_legs": "Birds with very long legs",
-          "long_legs": "Birds with long legs",
-          "short_legs": "Birds with short legs",
-          "very_short_legs": "Birds with very short legs"
-        },
-        "why": [
-          "not every thing has one value: Pigeon - the proposer put it in 'short_legs', both checks in 'very_short_legs'; Hen - the proposer put it in 'long_legs', both checks in 'short_legs'; Duck - the proposer put it in 'long_legs', both checks in 'very_short_legs'; Peacock - the proposer put it in 'very_long_legs', both checks in 'long_legs'; Sparrow - the proposer put it in 'short_legs', both checks in 'very_short_legs'"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
       }
     ]
   },
@@ -2584,6 +3202,105 @@
         ],
         "date": "2026-10-07",
         "run": "2026-10-07-02"
+      },
+      {
+        "wording": "How many legs does it have?",
+        "values": {
+          "no_legs": "No legs",
+          "two": "Two legs",
+          "four": "Four legs",
+          "six": "Six legs",
+          "eight": "Eight legs",
+          "many": "Many legs"
+        },
+        "why": [
+          "only 1 of its values have four familiar things, and a board needs four: 'No legs' has 0, 'Two legs' has 0, 'Four legs' has 0, 'Six legs' has 13, 'Eight legs' has 0, 'Many legs' has 0"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "How does it mostly move?",
+        "values": {
+          "walks": "Walks or runs",
+          "flies": "Flies",
+          "swims": "Swims",
+          "crawls": "Crawls or slithers",
+          "hops": "Hops or jumps"
+        },
+        "why": [
+          "its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Ladybug: 'flies' or 'no one group'; Beetle: 'flies' or 'crawls')"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "What does it mostly eat?",
+        "values": {
+          "plants": "Mostly plants",
+          "meat": "Mostly meat or fish",
+          "insects": "Mostly insects and worms",
+          "both": "Plants and meat alike"
+        },
+        "why": [
+          "not every thing has one value: 5 of the 16 names sorted have no single group, and at most one in 8 may (Ant, Beetle, Wasp, Firefly, Cricket)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "Where do you usually see it?",
+        "values": {
+          "in_the_house": "In the house",
+          "in_the_garden": "In the garden",
+          "in_the_water": "In the water",
+          "in_the_sky": "In the sky"
+        },
+        "why": [
+          "not every thing has one value: 6 of the 8 things there fit more than one group, and at most 1 may (Butterfly: in_the_garden and in_the_sky; Ant: in_the_garden and in_the_house; Housefly: in_the_house and in_the_garden; Mosquito: in_the_garden and in_the_house and in_the_sky; Honeybee: in_the_garden and in_the_sky; Ladybug: in_the_garden and in_the_sky)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "What color is it mostly?",
+        "values": {
+          "red": "Red",
+          "black": "Black",
+          "yellow": "Yellow",
+          "green": "Green"
+        },
+        "why": [
+          "only 1 of its values have four familiar things, and a board needs four: 'Red' has 1, 'Black' has 9, 'Yellow' has 1, 'Green' has 2"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "How many wings does it have?",
+        "values": {
+          "two_wings": "Two wings",
+          "four_wings": "Four wings",
+          "no_wings": "No wings",
+          "many_wings": "Many wings"
+        },
+        "why": [
+          "not every thing has one value: 7 of the 19 names sorted have no single group, and at most one in 8 may (Ant, Spider, Centipede, Millipede, Earthworm, Snail)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
       }
     ],
     "refused_by_an_earlier_test": [
@@ -2762,6 +3479,104 @@
         ],
         "date": "2026-10-07",
         "run": "2026-10-07-02"
+      },
+      {
+        "wording": "Where does it spend most of its life?",
+        "values": {
+          "land": "On the ground",
+          "water": "In water",
+          "trees": "In trees",
+          "underground": "Under the ground"
+        },
+        "why": [
+          "only 1 of its values have four familiar things, and a board needs four: 'On the ground' has 0, 'In water' has 8, 'In trees' has 0, 'Under the ground' has 0"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "How does it mostly move?",
+        "values": {
+          "walks": "Walks or runs",
+          "flies": "Flies",
+          "swims": "Swims",
+          "crawls": "Crawls or slithers",
+          "hops": "Hops or jumps"
+        },
+        "why": [
+          "only 1 of its values have four familiar things, and a board needs four: 'Walks or runs' has 0, 'Flies' has 0, 'Swims' has 8, 'Crawls or slithers' has 0, 'Hops or jumps' has 0"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "What covers its body?",
+        "values": {
+          "fur": "Fur or hair",
+          "feathers": "Feathers",
+          "scales": "Scales",
+          "shell": "A hard shell",
+          "bare_skin": "Smooth bare skin"
+        },
+        "why": [
+          "its groups have no sharp edges: both checks placed only 78% of the things where the proposer did (Shark: 'bare_skin' or 'scales'; Catfish: 'bare_skin' or 'scales')"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "What shape is the fish?",
+        "values": {
+          "round_like_a_ball": "Round like a ball",
+          "long_like_a_cucumber": "Long like a cucumber",
+          "flat_like_a_plate": "Flat like a plate",
+          "other_shape": "Other shape"
+        },
+        "why": [
+          "its groups have no sharp edges: both checks placed only 57% of the things where the proposer did (Goldfish: 'round_like_a_ball' or 'other_shape'; Catla fish: 'long_like_a_cucumber' or 'other_shape'; Shark: 'flat_like_a_plate' or 'long_like_a_cucumber'; Clownfish: 'round_like_a_ball' or 'other_shape')"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "How big is the fish?",
+        "values": {
+          "tiny_like_a_pea": "Tiny like a pea",
+          "small_like_a_cat": "Small like a cat",
+          "big_like_a_person": "Big like a person",
+          "huge_like_a_car": "Huge like a car"
+        },
+        "why": [
+          "not every thing has one value: 2 of the 5 things there fit more than one group, and at most 1 may (Shark: huge_like_a_car and big_like_a_person; Clownfish: tiny_like_a_pea and small_like_a_cat)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "What color is the fish?",
+        "values": {
+          "orange_or_red": "Orange or red",
+          "silver_or_grey": "Silver or grey",
+          "blue_or_green": "Blue or green",
+          "black_or_white": "Black or white"
+        },
+        "why": [
+          "not every thing has one value: 2 of the 12 names sorted have no single group, and at most one in 8 may (Betta fish, Mandarin fish)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
       }
     ],
     "refused_by_an_earlier_test": [
@@ -2940,6 +3755,73 @@
         ],
         "date": "2026-10-07",
         "run": "2026-10-07-02"
+      },
+      {
+        "wording": "How do we mostly play with it?",
+        "values": {
+          "throw": "Throw, kick or hit it",
+          "ride": "Ride or sit on it",
+          "build": "Build or make with it",
+          "cuddle": "Cuddle or pretend with it",
+          "roll": "Push or pull it along",
+          "fly": "Fly it",
+          "sound": "Make sounds with it"
+        },
+        "why": [
+          "not every thing has one value: 2 of the 7 things there fit more than one group, and at most 1 may (Ball: throw and roll; Balloon: throw and cuddle)"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the library"
+      },
+      {
+        "wording": "How do you play with it?",
+        "values": {
+          "throw_and_catch": "Throw and catch",
+          "cuddle_and_hug": "Cuddle and hug",
+          "build_and_stack": "Build and stack",
+          "push_and_roll": "Push and roll"
+        },
+        "why": [
+          "not every thing has a value: Kite - it fits no group; Balloon - it fits more than one group"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "What shape is it?",
+        "values": {
+          "round": "Round",
+          "long_and_thin": "Long and thin",
+          "square_or_rectangle": "Square or rectangle",
+          "has_arms_and_legs": "Has arms and legs"
+        },
+        "why": [
+          "not every thing has a value: Kite - it fits no group"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
+      },
+      {
+        "wording": "What is it mostly made of?",
+        "values": {
+          "cloth_or_soft": "Cloth or soft",
+          "plastic": "Plastic",
+          "paper_or_light": "Paper or light",
+          "wood": "Wood"
+        },
+        "why": [
+          "not every thing has a value: Ball - it fits more than one group"
+        ],
+        "date": "2026-10-07",
+        "run": "2026-10-07-03",
+        "library": null,
+        "source": "the model"
       }
     ],
     "refused_by_an_earlier_test": [
@@ -3030,10 +3912,142 @@
     ]
   },
   "made_by_people/building": {
-    "status": "held by the rules on 2026-10-07: no field passed the tests",
-    "field": null,
-    "wording": "",
-    "values": {},
+    "status": "approved by the rules on 2026-10-07, job run 2026-10-07-03",
+    "field": "what_people_do_there",
+    "wording": "What do people mostly do there?",
+    "values": {
+      "live": {
+        "label": "Live",
+        "have": [
+          "house"
+        ],
+        "examples": [
+          "Hut"
+        ]
+      },
+      "learn": {
+        "label": "Learn",
+        "have": [
+          "school"
+        ],
+        "examples": [
+          "Library",
+          "Classroom",
+          "Nursery"
+        ]
+      },
+      "pray": {
+        "label": "Pray",
+        "have": [
+          "temple"
+        ],
+        "examples": [
+          "Church",
+          "Mosque",
+          "Gurudwara",
+          "Shrine",
+          "Monastery",
+          "Synagogue"
+        ]
+      },
+      "buy": {
+        "label": "Buy and sell",
+        "have": [
+          "shop"
+        ],
+        "examples": [
+          "Market",
+          "Mall",
+          "Supermarket",
+          "Bakery",
+          "Stall"
+        ]
+      },
+      "heal": {
+        "label": "Get well",
+        "have": [
+          "hospital"
+        ],
+        "examples": [
+          "Clinic",
+          "Nursing home",
+          "Health centre",
+          "Doctor's office"
+        ]
+      },
+      "travel": {
+        "label": "Start a journey",
+        "have": [],
+        "examples": [
+          "Airport",
+          "Railway station",
+          "Bus stand",
+          "Port",
+          "Metro station",
+          "Taxi stand"
+        ]
+      },
+      "cross": {
+        "label": "Cross over or climb up",
+        "have": [
+          "bridge",
+          "tower"
+        ],
+        "examples": [
+          "Flyover",
+          "Footbridge",
+          "Subway"
+        ]
+      }
+    },
+    "library": "what_people_do_there",
+    "source": "the library",
+    "assign": {},
+    "notes": {},
+    "familiar": {
+      "Hut": 0.9,
+      "Library": 0.8,
+      "Classroom": 0.9,
+      "Nursery": 0.7,
+      "Church": 0.9,
+      "Mosque": 0.9,
+      "Gurudwara": 0.8,
+      "Shrine": 0.7,
+      "Monastery": 0.7,
+      "Synagogue": 0.7,
+      "Market": 0.9,
+      "Mall": 0.8,
+      "Supermarket": 0.7,
+      "Bakery": 0.8,
+      "Stall": 0.7,
+      "Clinic": 0.8,
+      "Nursing home": 0.7,
+      "Health centre": 0.7,
+      "Doctor's office": 0.8,
+      "Airport": 0.8,
+      "Railway station": 0.9,
+      "Bus stand": 0.9,
+      "Port": 0.7,
+      "Metro station": 0.8,
+      "Taxi stand": 0.8,
+      "Flyover": 0.7,
+      "Footbridge": 0.8,
+      "Subway": 0.7
+    },
+    "tests": {
+      "four familiar things in at least four values": {
+        "live": 2,
+        "learn": 4,
+        "pray": 7,
+        "buy": 6,
+        "heal": 5,
+        "travel": 6,
+        "cross": 5
+      },
+      "one value for each thing": "7 things already in the circle placed alike by two checks; 0 fit more than one group; sharpness 0.97",
+      "one clean solution": "sample boards passed",
+      "not a synonym": "no existing field asks or splits the same"
+    },
     "refused_by_the_rules": [
       {
         "wording": "Who goes inside this building?",
@@ -3118,92 +4132,6 @@
         ],
         "date": "2026-10-07",
         "run": "2026-10-07-02"
-      }
-    ],
-    "refused_by_an_earlier_test": [
-      {
-        "wording": "Who uses this building?",
-        "values": {
-          "everyone": "Everyone uses it",
-          "children": "Children use it",
-          "sick_people": "Sick people use it",
-          "worshippers": "Worshippers use it"
-        },
-        "why": [
-          "not every thing has one value: Temple - the proposer put it in 'everyone', both checks in 'worshippers'; School - the proposer put it in 'everyone', both checks in 'children'; Hospital - the proposer put it in 'everyone', both checks in 'sick_people'"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "What happens inside this building?",
-        "values": {
-          "living": "People live there",
-          "learning": "People learn there",
-          "buying_selling": "People buy and sell",
-          "healing": "People get help"
-        },
-        "why": [
-          "not every thing has one value: Temple - it fits no group; Bridge - it fits no group; Tower - it fits no group"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "What shape is this building?",
-        "values": {
-          "tall": "Tall and thin",
-          "long": "Long and flat",
-          "pointy": "Pointy top",
-          "boxy": "Boxy and wide"
-        },
-        "why": [
-          "not every thing has one value: Temple - the proposer put it in 'pointy', both checks in 'boxy'"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "What is this building made of?",
-        "values": {
-          "mud_or_clay": "Mud or clay",
-          "stone_or_rock": "Stone or rock",
-          "brick_or_cement": "Brick or cement",
-          "wood_or_bamboo": "Wood or bamboo"
-        },
-        "why": [
-          "not every thing has one value: House - it fits more than one group: brick_or_cement and wood_or_bamboo and mud_or_clay and stone_or_rock; Temple - it fits more than one group: stone_or_rock and brick_or_cement and wood_or_bamboo; School - it fits more than one group: brick_or_cement and wood_or_bamboo; Shop - it fits more than one group: brick_or_cement and wood_or_bamboo; Hospital - it fits more than one group; Bridge - it fits more than one group: stone_or_rock and brick_or_cement and wood_or_bamboo; Tower - it fits more than one group: stone_or_rock and brick_or_cement and wood_or_bamboo"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "What shape is the top of this building?",
-        "values": {
-          "pointy_roof": "Pointy roof",
-          "flat_roof": "Flat roof",
-          "round_roof": "Round roof",
-          "no_roof": "No roof"
-        },
-        "why": [
-          "not every thing has one value: House - it fits more than one group: pointy_roof and flat_roof; Temple - it fits more than one group: pointy_roof and flat_roof and round_roof; School - it fits more than one group: flat_roof and pointy_roof; Shop - it fits more than one group: flat_roof and pointy_roof; Bridge - it fits no group; Tower - it fits more than one group: pointy_roof and flat_roof and round_roof"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
-      },
-      {
-        "wording": "How many floors does this building have?",
-        "values": {
-          "one_floor": "One floor",
-          "two_floors": "Two floors",
-          "many_floors": "Many floors",
-          "no_floors": "No floors"
-        },
-        "why": [
-          "not every thing has one value: House - it fits more than one group: one_floor and two_floors and many_floors; Temple - it fits more than one group: one_floor and two_floors and many_floors; School - it fits more than one group: one_floor and two_floors and many_floors; Shop - it fits more than one group: one_floor and two_floors and many_floors; Hospital - it fits more than one group: one_floor and two_floors and many_floors; Tower - it fits more than one group: one_floor and two_floors and many_floors"
-        ],
-        "date": "2026-10-07",
-        "run": "2026-10-07-01"
       }
     ]
   }

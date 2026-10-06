@@ -1,0 +1,48 @@
+{
+  "name": "Cliff",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A cliff is a vertical or very steep natural wall of rock.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "quote": "Cliffs are common on coasts, in mountainous areas, escarpments and along rivers.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "shape_of_the_land": {
+      "value": "high",
+      "basis": "judged, not sourced",
+      "why": "A cliff is a tall, steep wall of rock, so the land there is high."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cliff",
+      "title": "Cliff",
+      "asked_for": "Cliff",
+      "revision": 1376862496,
+      "fetched_on": "2026-10-07",
+      "sha256": "b81ec0b1ab95a927eb4abb402d145395fa53ac5af2b008caa3976bd7449e6b6c"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cliff",
+      "title": "Cliff",
+      "asked_for": "Cliff",
+      "revision": 7562116,
+      "fetched_on": "2026-10-07",
+      "sha256": "51fbfe0d332e152089afd93fbf78f553f76e62071446d5e4e289c336bed90279"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

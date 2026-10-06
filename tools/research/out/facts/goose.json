@@ -1,0 +1,54 @@
+{
+  "name": "Goose",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "A goose (pl.: geese) is a bird of any of several waterfowl species in the family Anatidae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "A goose (pl.: geese) is a bird of any of several waterfowl species in the family Anatidae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Geese migrate in groups in the spring and fall, flying together in a V-shape.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "pet_farm_or_wild_of_bird",
+      "why": "uncertain: two judgements disagree: 'Wild animals in water' and 'Farm animals'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Goose",
+      "title": "Goose",
+      "asked_for": "Goose",
+      "revision": 1373187094,
+      "fetched_on": "2026-10-07",
+      "sha256": "83a35a47bfea45dba78ff6fb6435c665f1f5ae2fbe3ba42005e175f6f471ed96"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Goose",
+      "title": "Goose",
+      "asked_for": "Goose",
+      "revision": 10790889,
+      "fetched_on": "2026-10-07",
+      "sha256": "7a73c52f36b58ebe857c537c6a7beae513d80194dae76b593d686b8380262b66"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

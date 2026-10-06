@@ -1,0 +1,42 @@
+{
+  "name": "Burrow",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A burrow is a hole or tunnel in the ground made by an animal.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_nature",
+      "why": "uncertain: two judgements disagree: 'Rocks and soil' and 'Places on land'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Burrow",
+      "title": "Burrow",
+      "asked_for": "Burrow",
+      "revision": 1358164157,
+      "fetched_on": "2026-10-07",
+      "sha256": "26beada51f390dbc4501ef3ebf422f45758d605d9e8027e7eb225f8d26bef568"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Burrow",
+      "title": "Burrow",
+      "asked_for": "Burrow",
+      "revision": 8856208,
+      "fetched_on": "2026-10-07",
+      "sha256": "27ef81d1bf91a2b877ab3168e34664216d2089201db3f8da9aa0c420422b85c9"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

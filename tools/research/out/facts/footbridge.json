@@ -1,0 +1,42 @@
+{
+  "name": "Footbridge",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A footbridge (also a pedestrian bridge, pedestrian overpass, or pedestrian overcrossing) is a bridge designed solely for pedestrians.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "uncertain: two judgements disagree: 'Vehicles' and 'Buildings'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Footbridge",
+      "title": "Footbridge",
+      "asked_for": "Footbridge",
+      "revision": 1375879482,
+      "fetched_on": "2026-10-07",
+      "sha256": "57f9878a609d65e7e9cceba229c733b0a76b683e6dcfd146cf6db5a9e678fb6a"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Footbridge",
+      "title": "Footbridge",
+      "asked_for": "Footbridge",
+      "revision": 10913967,
+      "fetched_on": "2026-10-07",
+      "sha256": "7d762d3334cd2b455c2d02e4b82f1a0170595deb62c0da0136c8c84cfcc7fd66"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

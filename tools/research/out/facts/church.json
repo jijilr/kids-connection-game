@@ -1,0 +1,50 @@
+{
+  "name": "Church",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A church, church building, or church house is a building used for Christian worship services and other Christian religious activities.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "A church, church building, or church house is a building used for Christian worship services and other Christian religious activities.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "what_people_do_there",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "pray",
+      "quote": "Steeples often house a belfry that contains church bells, which call Christians to Christian prayer and worship."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Church_(building)",
+      "title": "Church (building)",
+      "asked_for": "Church (building)",
+      "revision": 1378214162,
+      "fetched_on": "2026-10-07",
+      "sha256": "17d5a055ab0f7945a7384abfe2bec8e850814aaf5754c386207326a7f713b6f7"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Church_(building)",
+      "title": "Church (building)",
+      "asked_for": "Church (building)",
+      "revision": 10909140,
+      "fetched_on": "2026-10-07",
+      "sha256": "80c770d6a60f5aa2a30ec3368d001b45a53fc6e4a66f44e5030226d5bd9a8144"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

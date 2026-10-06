@@ -1,0 +1,40 @@
+{
+  "name": "Doctor's office",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "is a medical facility in which one or more medical doctors, usually general practitioners (GP), receive and treat patients.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "is a medical facility in which one or more medical doctors, usually general practitioners (GP), receive and treat patients.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_people_do_there": {
+      "value": "heal",
+      "quote": "receive and treat patients.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Doctor%27s_office",
+      "title": "Doctor's office",
+      "asked_for": "Doctor's office",
+      "revision": 1357017115,
+      "fetched_on": "2026-10-07",
+      "sha256": "5b0e629aa74513600688ec10a4c4f52cc2e4db10acaee0877a8e02416528558b"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

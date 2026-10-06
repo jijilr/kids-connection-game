@@ -1,0 +1,46 @@
+{
+  "name": "Field",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "basis": "judged, not sourced",
+      "why": "A field is a property that fills space, like temperature or density, which is a non-living part of nature."
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "basis": "judged, not sourced",
+      "why": "A field is a property that fills space, and in everyday terms a field is a place on land."
+    },
+    "shape_of_the_land": {
+      "value": "flat",
+      "basis": "judged, not sourced",
+      "why": "A field is a piece of open land, which people picture as flat ground."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Field_(geography)",
+      "title": "Field (geography)",
+      "asked_for": "Field (geography)",
+      "revision": 1311986953,
+      "fetched_on": "2026-10-07",
+      "sha256": "04657b72edfdf4c0043463568d8148959b4f62ff3b42c06437cfbcdb84ac63be"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Farm",
+      "title": "Farm",
+      "asked_for": "Farm",
+      "revision": 9944648,
+      "fetched_on": "2026-10-07",
+      "sha256": "322a36a737b0206a52e529a5618f76afff3db4b3d408e2c051ad054da10038ec"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

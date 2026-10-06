@@ -1,0 +1,49 @@
+{
+  "name": "Shrine",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "Shrines are built in the surroundings of the grave of pious men.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "Shrines can be found in various settings, such as churches, temples, cemeteries, or as household shrines.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_people_do_there": {
+      "value": "pray",
+      "quote": "People visit the shrines to pray for themselves and also for the dead.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Shrine",
+      "title": "Shrine",
+      "asked_for": "Shrine",
+      "revision": 1375423470,
+      "fetched_on": "2026-10-07",
+      "sha256": "a4119df73d6c17dbacca5ce4aca97e45a4fb1092c9b92f860d1f967dd5f368f4"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Shrine",
+      "title": "Shrine",
+      "asked_for": "Shrine",
+      "revision": 10517741,
+      "fetched_on": "2026-10-07",
+      "sha256": "be2e86b1ae9f253549346c6c9be1f3ef986e79bc24854b7f98dd27f7e0f40468"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Ditch",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A ditch is a small-to-moderate size trench created to channel water.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "uncertain: two judgements disagree: 'Tools' and 'Things in the house'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Ditch",
+      "title": "Ditch",
+      "asked_for": "Ditch",
+      "revision": 1369962842,
+      "fetched_on": "2026-10-07",
+      "sha256": "52aad2a8100ae39d4337ded17f64e1bebdd4ba16267387df561a04d847fd9c84"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Ditch",
+      "title": "Ditch",
+      "asked_for": "Ditch",
+      "revision": 6526767,
+      "fetched_on": "2026-10-07",
+      "sha256": "92a082f7bfe319ee5b7baabd53b15636b169940778e72838104d7ba4b07fd6d0"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

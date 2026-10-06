@@ -1,0 +1,55 @@
+{
+  "name": "Kingfisher",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Kingfishers are a family, the Alcedinidae, of small to medium-sized, brightly coloured birds in the order Coraciiformes.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "Kingfishers are small birds of the order Coraciiformes.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "A few species, principally insular forms, are threatened with extinction.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild_of_bird": {
+      "value": "wild_land",
+      "quote": "They can be found in deep forests near calm ponds and small rivers.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Kingfisher",
+      "title": "Kingfisher",
+      "asked_for": "Kingfisher",
+      "revision": 1378290105,
+      "fetched_on": "2026-10-07",
+      "sha256": "57966224731563d0d87949b876b5761fea68f3a33ae4140137a86ca4fec205ba"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Kingfisher",
+      "title": "Kingfisher",
+      "asked_for": "Kingfisher",
+      "revision": 10945308,
+      "fetched_on": "2026-10-07",
+      "sha256": "3ddf689f390d9d063cdcb946da65f090667889df6142c230654473972acf1c22"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

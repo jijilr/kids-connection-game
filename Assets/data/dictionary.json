@@ -1,6 +1,6 @@
 {
-  "version": 5,
-  "status": "version 5. Versions 1 to 4 were approved by the owner. Since 7 Oct 2026 a field is added by the rules when it passes the four tests, and the digest of the run that added it says so. The game reads this file.",
+  "version": 9,
+  "status": "version 9. Versions 1 to 4 were approved by the owner. Since 7 Oct 2026 a field is added by the rules when it passes the four tests, and the digest of the run that added it says so. The game reads this file.",
   "about": "Every field a thing may carry, and the only values that field may take. A field that does not apply to a thing is left out of that thing; it is never written as 'not applicable'. The wording is what a child sees or hears; it is not data.",
   "rules": [
     "A field holds the everyday meaning, which is what the game sorts by.",
@@ -223,6 +223,73 @@
         "on": "2026-10-07",
         "why": "it passed on groups padded with other names for mud; a name must now be a thing of its own"
       }
+    },
+    "shape_of_the_land": {
+      "wording": "What is the land mostly like there?",
+      "meaning": "everyday",
+      "values": {
+        "high": "High land",
+        "flat": "Flat land",
+        "by_water": "Land beside water",
+        "hollow": "Hollows and holes in the land"
+      },
+      "expected_on": {
+        "kind_of_nature": "land"
+      },
+      "since": 6,
+      "library": "shape_of_the_land",
+      "added_by": "the rules, job run 2026-10-07-03"
+    },
+    "pet_farm_or_wild": {
+      "wording": "Is it mostly a pet, a farm animal or a wild animal?",
+      "meaning": "everyday",
+      "values": {
+        "pet": "Pets at home",
+        "farm": "Farm animals",
+        "wild_land": "Wild animals on land",
+        "wild_water": "Wild animals in water"
+      },
+      "expected_on": {
+        "kind_of_animal": "mammal"
+      },
+      "since": 7,
+      "library": "pet_farm_or_wild",
+      "added_by": "the rules, job run 2026-10-07-03"
+    },
+    "pet_farm_or_wild_of_bird": {
+      "wording": "Is it mostly a pet, a farm animal or a wild animal?",
+      "meaning": "everyday",
+      "values": {
+        "pet": "Pets at home",
+        "farm": "Farm animals",
+        "wild_land": "Wild animals on land",
+        "wild_water": "Wild animals in water"
+      },
+      "expected_on": {
+        "kind_of_animal": "bird"
+      },
+      "since": 8,
+      "library": "pet_farm_or_wild",
+      "added_by": "the rules, job run 2026-10-07-03"
+    },
+    "what_people_do_there": {
+      "wording": "What do people mostly do there?",
+      "meaning": "everyday",
+      "values": {
+        "live": "Live",
+        "learn": "Learn",
+        "pray": "Pray",
+        "buy": "Buy and sell",
+        "heal": "Get well",
+        "travel": "Start a journey",
+        "cross": "Cross over or climb up"
+      },
+      "expected_on": {
+        "kind_of_made_thing": "building"
+      },
+      "since": 9,
+      "library": "what_people_do_there",
+      "added_by": "the rules, job run 2026-10-07-03"
     }
   }
 }

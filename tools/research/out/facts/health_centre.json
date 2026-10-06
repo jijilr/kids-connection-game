@@ -1,0 +1,38 @@
+{
+  "name": "Health centre",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "basis": "judged, not sourced",
+      "why": "A health centre is a clinic staffed by doctors and nurses, so it is a place people build and run."
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "A community health center, healthcare center or health center is one of a network of clinics staffed by a group of general practitioners and nurses providing healthcare services to people in a certain area.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_people_do_there": {
+      "value": "heal",
+      "basis": "judged, not sourced",
+      "why": "A health centre is a clinic where people go to get medical care and get well."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Community_health_center",
+      "title": "Community health center",
+      "asked_for": "Health centre",
+      "revision": 1349333527,
+      "fetched_on": "2026-10-07",
+      "sha256": "0c1f4d6ac68f137b3085a2a7c2c220d1096f24494c698a34dd9d3f8eab90e4eb"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

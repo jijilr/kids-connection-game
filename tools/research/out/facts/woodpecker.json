@@ -1,0 +1,55 @@
+{
+  "name": "Woodpecker",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Woodpeckers are part of the bird family Picidae, which also includes the piculets, wrynecks, and sapsuckers.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "Woodpeckers are part of the bird family Picidae, which also includes the piculets, wrynecks, and sapsuckers.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Almost 20 species are threatened with extinction due to loss of habitat or habitat fragmentation.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild_of_bird": {
+      "value": "wild_land",
+      "quote": "Most species live in forests or woodland habitats, although a few species are known that live in treeless areas, such as rocky hillsides and deserts, and the Gila woodpecker specializes in exploiting cacti.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Woodpecker",
+      "title": "Woodpecker",
+      "asked_for": "Woodpecker",
+      "revision": 1378289696,
+      "fetched_on": "2026-10-07",
+      "sha256": "a64a1d8a11f42e6c17a3b405fbf5f28b2344b582b6cfc6c205a920ff21aaf59b"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Woodpecker",
+      "title": "Woodpecker",
+      "asked_for": "Woodpecker",
+      "revision": 9846115,
+      "fetched_on": "2026-10-07",
+      "sha256": "db7871324bc96937ef6e1972a74817d5d59c4642c317cf11f6355fcccc0be52f"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

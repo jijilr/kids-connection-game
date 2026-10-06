@@ -1,0 +1,48 @@
+{
+  "name": "Island",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "An island is a piece of land that is surrounded by a body of water such as a lake, river, sea or ocean.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "quote": "An island is a piece of land that is surrounded by a body of water such as a lake, river, sea or ocean.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "shape_of_the_land": {
+      "value": "by_water",
+      "basis": "judged, not sourced",
+      "why": "An island is a piece of land completely surrounded by water, so the land is beside water."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Island",
+      "title": "Island",
+      "asked_for": "Island",
+      "revision": 1377722292,
+      "fetched_on": "2026-10-07",
+      "sha256": "5e277c9decd102a51fb14d295d863dd66681ed128740e02684b8a7cad8d1a424"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Island",
+      "title": "Island",
+      "asked_for": "Island",
+      "revision": 10841268,
+      "fetched_on": "2026-10-07",
+      "sha256": "d7adb49e74fa224e87f2ee1c0b3eadd3f8081bebb4d84b304ddf80fc337a98f0"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Ostrich",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Ostriches are large flightless birds.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "Ostriches are large flightless birds.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Two living species are recognised: the common ostrich, native to large parts of Sub-Saharan Africa, and the Somali ostrich, native to the Horn of Africa.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild_of_bird": {
+      "value": "wild_land",
+      "quote": "The ostrich (Struthio camelus) is a large flightless bird that lives in Africa.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Ostrich",
+      "title": "Ostrich",
+      "asked_for": "Ostrich",
+      "revision": 1365340313,
+      "fetched_on": "2026-10-07",
+      "sha256": "cff316290e46aeb9257c53f1370381a7d6dbe716ac9d5657db1f519138cd8166"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Ostrich",
+      "title": "Ostrich",
+      "asked_for": "Ostrich",
+      "revision": 10900769,
+      "fetched_on": "2026-10-07",
+      "sha256": "31725c28a097faf636efa1e711c759877e22ca21f49f9ce79d6989c702ad96db"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

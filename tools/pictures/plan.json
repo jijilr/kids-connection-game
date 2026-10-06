@@ -2631,6 +2631,293 @@
           "draw": "A patch of wet brown mud, dark and glossy, soft and mushy, with a few small puddles and squelchy lumps, resting on bare ground"
         }
       ]
+    },
+    "job_2026_10_07_03_1": {
+      "purpose": "drawn by the job, run 2026-10-07-03",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.",
+      "cells": [
+        {
+          "thing": "guinea_pig",
+          "name": "Guinea Pig",
+          "draw": "A small round furry guinea pig with short brown, white and black fur, tiny ears, small dark eyes, short legs, sitting on plain ground, whole body shown"
+        },
+        {
+          "thing": "hamster",
+          "name": "Hamster",
+          "draw": "A small golden-brown hamster with a stout body, tiny ears, short tail, and big cheek pouches, standing whole on plain ground, facing forward"
+        },
+        {
+          "thing": "sheep",
+          "name": "Sheep",
+          "draw": "A woolly white sheep standing on grass, four legs, fluffy body, small head with curled horns, black face and legs, short tail, seen in India"
+        },
+        {
+          "thing": "pig",
+          "name": "Pig",
+          "draw": "A plump pink farm pig standing on all four legs, whole body, curly tail, flat snout, small eyes, short legs, natural pink skin with a few dark spots, standing on plain ground"
+        },
+        {
+          "thing": "whale",
+          "name": "Whale",
+          "draw": "A big blue whale, whole, swimming at the water surface, smooth grey-blue body, white belly, wide flat tail, small eye, waterline only, no other animals"
+        },
+        {
+          "thing": "dolphin",
+          "name": "Dolphin",
+          "draw": "A single grey dolphin with a smooth fish-like body, a pointed snout, a fin on its back, two side flippers and a flat tail, leaping above blue water"
+        },
+        {
+          "thing": "seal",
+          "name": "Seal",
+          "draw": "A grey seal with a sleek barrel body, four flippers, whiskers, big dark eyes, and a doggish face, resting on wet ground or water, whole and alone"
+        },
+        {
+          "thing": "walrus",
+          "name": "Walrus",
+          "draw": "A big grey-brown walrus with two long white tusks, thick whiskers, and flippers, resting on ice over blue water"
+        },
+        {
+          "thing": "otter",
+          "name": "Otter",
+          "draw": "A brown otter with a long slim body, short legs, webbed feet, small ears and a thick tail, swimming on water, whole body shown"
+        }
+      ]
+    },
+    "job_2026_10_07_03_2": {
+      "purpose": "drawn by the job, run 2026-10-07-03, second tries",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.",
+      "cells": [
+        {
+          "thing": "budgie",
+          "name": "Budgie",
+          "draw": "A small green and yellow budgie parrot with black scalloped markings on its back and wings, long tail, standing whole on plain ground, in natural colors"
+        },
+        {
+          "thing": "canary",
+          "name": "Canary",
+          "draw": "A small bright yellow pet canary bird with a rounded head, short orange beak, black eyes, and folded wings, standing whole on a plain perch"
+        },
+        {
+          "thing": "cockatiel",
+          "name": "Cockatiel",
+          "draw": "A whole grey cockatiel standing on the ground, with a yellow face, orange cheek patch, tall curved crest, long tail feathers, and small beak, in natural colours"
+        },
+        {
+          "thing": "seagull",
+          "name": "Seagull",
+          "draw": "A white seagull with grey wings, yellow beak, webbed feet, standing on the ground, whole body shown, natural colours, as seen in India"
+        },
+        {
+          "thing": "pelican",
+          "name": "Pelican",
+          "draw": "A large white pelican standing on water, with a very long beak and a big throat pouch, webbed feet, and pale feathers, seen in India"
+        },
+        {
+          "thing": "crane",
+          "name": "Crane",
+          "draw": "A tall grey crane standing whole on wet ground, long thin legs, long neck stretched up, pointed bill, white and grey feathers with a red patch on its face"
+        },
+        {
+          "thing": "budgie",
+          "name": "Budgie",
+          "draw": "A small green and yellow budgie parrot with black scalloped markings on its back and wings, long tail, standing whole on plain ground, in natural colors; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        },
+        {
+          "thing": "canary",
+          "name": "Canary",
+          "draw": "A small bright yellow pet canary bird with a rounded head, short orange beak, black eyes, and folded wings, standing whole on a plain perch; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        },
+        {
+          "thing": "cockatiel",
+          "name": "Cockatiel",
+          "draw": "A whole grey cockatiel standing on the ground, with a yellow face, orange cheek patch, tall curved crest, long tail feathers, and small beak, in natural colours; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        }
+      ]
+    },
+    "job_2026_10_07_03_3": {
+      "purpose": "drawn by the job, run 2026-10-07-03, second tries",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.",
+      "cells": [
+        {
+          "thing": "flyover",
+          "name": "Flyover",
+          "draw": "A concrete road bridge arching over another road, with grey pillars and railings on top, seen in India"
+        },
+        {
+          "thing": "footbridge",
+          "name": "Footbridge",
+          "draw": "A simple concrete footbridge with metal railings, spanning over a small Indian road or stream, grey and brown, whole bridge with steps at both ends, plain ground below"
+        },
+        {
+          "thing": "church",
+          "name": "Church",
+          "draw": "A white church building with a tall pointed steeple and cross on top, arched windows and a big door, standing on plain ground, as seen in India"
+        },
+        {
+          "thing": "mosque",
+          "name": "Mosque",
+          "draw": "A white mosque in India with a big round dome, two tall thin minarets, arched doorways, and a small courtyard, standing on plain ground"
+        },
+        {
+          "thing": "gurudwara",
+          "name": "Gurudwara",
+          "draw": "A white Indian gurdwara with a golden dome, arched windows, a tall flagpole with an orange Nishan Sahib flag, and a small free kitchen hall, standing on plain ground"
+        },
+        {
+          "thing": "shrine",
+          "name": "Shrine",
+          "draw": "A small Indian home shrine: a tiny wooden mandir cabinet with a domed top, gold and red painted, open front showing a small idol inside, sitting on the floor"
+        },
+        {
+          "thing": "market",
+          "name": "Market",
+          "draw": "An Indian open-air market: rows of small stalls with colourful cloth awnings, baskets of fruit and vegetables on the ground, whole scene on bare earth"
+        },
+        {
+          "thing": "mall",
+          "name": "Mall",
+          "draw": "A big modern Indian shopping mall building, whole, with glass front, flat roof, many small shops inside facing a central walkway, food court, parking in front, natural colours"
+        },
+        {
+          "thing": "supermarket",
+          "name": "Supermarket",
+          "draw": "A big Indian supermarket building with glass doors, trolleys outside, shelves of colourful food and vegetables seen through windows, on plain ground"
+        }
+      ]
+    },
+    "job_2026_10_07_03_4": {
+      "purpose": "drawn by the job, run 2026-10-07-03, second tries",
+      "grid": 2,
+      "size": 1920,
+      "only_for_this_sheet": "Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.",
+      "cells": [
+        {
+          "thing": "bakery",
+          "name": "Bakery",
+          "draw": "An Indian neighbourhood bakery shop, whole front view: a small open storefront with glass display trays of bread, buns, cakes and pastries, a counter, and a signboard, standing on plain ground"
+        },
+        {
+          "thing": "clinic",
+          "name": "Clinic",
+          "draw": "A small Indian clinic building, single storey, white walls, red cross sign, glass door, few steps, plain ground, no people"
+        },
+        {
+          "thing": "health_centre",
+          "name": "Health centre",
+          "draw": "A small Indian health centre building, single or two storey, white walls, red roof, glass windows, a door, a red cross sign, standing on plain ground"
+        },
+        {
+          "thing": "doctor_s_office",
+          "name": "Doctor's office",
+          "draw": "An Indian doctor's clinic: a small white building with a red cross board, a glass door, one window, and a step, standing alone on plain ground"
+        }
+      ]
+    },
+    "job_2026_10_07_03_5": {
+      "purpose": "drawn by the job, run 2026-10-07-03, second tries",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "No people, no animals and no buildings.",
+      "cells": [
+        {
+          "thing": "field",
+          "name": "Field",
+          "draw": "A flat green field of crops in India, whole and open, with rows of small plants growing on brown soil, under a clear sky"
+        },
+        {
+          "thing": "plain",
+          "name": "Plain",
+          "draw": "A wide, flat green grassy plain with no hills or mountains, stretching to the horizon, with a few small trees and a river, in natural green and brown colors, as seen in India"
+        },
+        {
+          "thing": "meadow",
+          "name": "Meadow",
+          "draw": "A wide flat green meadow of tall grass and small wildflowers, open under the sky, with a few scattered bushes at the edges, no trees in the middle"
+        },
+        {
+          "thing": "valley",
+          "name": "Valley",
+          "draw": "A green valley between two brown hills, with a blue river flowing along its flat floor from one end to the other, open grassy sides, under clear sky"
+        },
+        {
+          "thing": "pothole",
+          "name": "Pothole",
+          "draw": "A shallow round hole in dry brown ground filled with muddy water, ringed by a low grassy rim, seen in India"
+        },
+        {
+          "thing": "canyon",
+          "name": "Canyon",
+          "draw": "A deep, wide rocky canyon with steep brown and red cliff walls, a river flowing along the bottom, dry ground around it, under a clear sky"
+        },
+        {
+          "thing": "crater",
+          "name": "Crater",
+          "draw": "A round bowl-shaped hollow in dry brown ground, with a raised rim of earth all around it, empty inside, seen from above"
+        },
+        {
+          "thing": "cliff",
+          "name": "Cliff",
+          "draw": "A tall steep rocky cliff face, grey-brown rock, rising straight up from flat ground, with a few loose fallen rocks at its base, under a plain sky"
+        },
+        {
+          "thing": "field",
+          "name": "Field",
+          "draw": "A flat green field of crops in India, whole and open, with rows of small plants growing on brown soil, under a clear sky; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        }
+      ]
+    },
+    "job_2026_10_07_03_6": {
+      "purpose": "drawn by the job, run 2026-10-07-03, second tries",
+      "grid": 2,
+      "size": 1920,
+      "only_for_this_sheet": "Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.",
+      "cells": [
+        {
+          "thing": "health_centre",
+          "name": "Health centre",
+          "draw": "A small Indian health centre building, single or two storey, white walls, red roof, glass windows, a door, a red cross sign, standing on plain ground"
+        },
+        {
+          "thing": "doctor_s_office",
+          "name": "Doctor's office",
+          "draw": "An Indian doctor's clinic: a small white building with a red cross board, a glass door, one window, and a step, standing alone on plain ground"
+        },
+        {
+          "thing": "health_centre",
+          "name": "Health centre",
+          "draw": "A small Indian health centre building, single or two storey, white walls, red roof, glass windows, a door, a red cross sign, standing on plain ground; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        },
+        {
+          "thing": "doctor_s_office",
+          "name": "Doctor's office",
+          "draw": "An Indian doctor's clinic: a small white building with a red cross board, a glass door, one window, and a step, standing alone on plain ground; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        }
+      ]
+    },
+    "job_2026_10_07_03_7": {
+      "purpose": "drawn by the job, run 2026-10-07-03, second tries",
+      "grid": 1,
+      "size": 1024,
+      "only_for_this_sheet": "No people, no animals and no buildings.",
+      "cells": [
+        {
+          "thing": "plain",
+          "name": "Plain",
+          "draw": "A wide, flat green grassy plain with no hills or mountains, stretching to the horizon, with a few small trees and a river, in natural green and brown colors, as seen in India"
+        }
+      ]
     }
   }
 }

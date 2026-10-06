@@ -1,0 +1,49 @@
+{
+  "name": "Pothole",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A pothole is a pot-shaped depression in a road surface, usually asphalt pavement, where traffic has removed broken pieces of the pavement.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "quote": "Kettles (also called potholes or kettle holes) are shallow bodies of water.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "shape_of_the_land": {
+      "value": "hollow",
+      "quote": "When the block melts, the hole it leaves behind is a pothole.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Pothole",
+      "title": "Pothole",
+      "asked_for": "Pothole",
+      "revision": 1376575477,
+      "fetched_on": "2026-10-07",
+      "sha256": "0216d2d9979de1c2186aab3293689660e0428cabae4d71ed9839d71e52e24347"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Kettle_(landform)",
+      "title": "Kettle (landform)",
+      "asked_for": "Pothole (landform)",
+      "revision": 11018784,
+      "fetched_on": "2026-10-07",
+      "sha256": "dd0b65b63882c1a523518c37d2a82e89c846d8fcdf5ac958c2c6d2b677254c7d"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

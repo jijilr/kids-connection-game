@@ -1,0 +1,42 @@
+{
+  "name": "Tunnel",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "Building tunnels is a large civil engineering project that could cost very high sums of money.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "uncertain: two judgements disagree: 'Vehicles' and 'Buildings'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Tunnel",
+      "title": "Tunnel",
+      "asked_for": "Tunnel",
+      "revision": 1373672483,
+      "fetched_on": "2026-10-07",
+      "sha256": "e3e6099b590f6395df17d14918acfe865ac4927f565075e4d2e4cff446dec240"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Tunnel",
+      "title": "Tunnel",
+      "asked_for": "Tunnel",
+      "revision": 10860059,
+      "fetched_on": "2026-10-07",
+      "sha256": "1ac25430e40a8033da40c0cc02d4c10ab3ea6ddc93986ee3d7e5613cfbc802fa"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}
