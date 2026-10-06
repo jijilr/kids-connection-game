@@ -2563,6 +2563,74 @@
           "look_closely": "a second try; the better of the two is kept"
         }
       ]
+    },
+    "job_2026_10_07_02_1": {
+      "purpose": "drawn by the job, run 2026-10-07-02",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "No people, no animals and no buildings.",
+      "cells": [
+        {
+          "thing": "wet_soil",
+          "name": "Wet soil",
+          "draw": "A patch of wet brown soil, dark and glistening with moisture, soft and sticky, clumped together in a mushy lump on the ground, natural earthy colours"
+        },
+        {
+          "thing": "muck",
+          "name": "Muck",
+          "draw": "A dark brown, soft, wet lump of muck soil, glistening and mushy, resting on the ground in India, with no plants or leaves visible in it"
+        },
+        {
+          "thing": "wet_dirt",
+          "name": "Wet dirt",
+          "draw": "A patch of wet brown mud, dark and glossy, soft and mushy, with a few small puddles and squelchy lumps, resting on bare ground"
+        },
+        {
+          "thing": "boulder",
+          "name": "Boulder",
+          "draw": "A single large grey-brown rock, bigger than a child, rough and rounded, resting alone on plain ground"
+        },
+        {
+          "thing": "pebble",
+          "name": "Pebble",
+          "draw": "One smooth grey-brown pebble, rounded oval, resting alone on plain ground, with faint quartz veins and a slightly rough natural surface, as an Indian child finds on a beach or riverbank"
+        },
+        {
+          "thing": "gravel",
+          "name": "Gravel",
+          "draw": "A small heap of loose grey and brown rock pieces, some tiny granules and some larger pebbles, all hard and rough, resting on bare ground"
+        },
+        {
+          "thing": "coal",
+          "name": "Coal",
+          "draw": "A single shiny black lump of coal, hard and blocky with rough edges, resting on bare ground, in natural black colour"
+        },
+        {
+          "thing": "wet_soil",
+          "name": "Wet soil",
+          "draw": "A patch of wet brown soil, dark and glistening with moisture, soft and sticky, clumped together in a mushy lump on the ground, natural earthy colours; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        },
+        {
+          "thing": "muck",
+          "name": "Muck",
+          "draw": "A dark brown, soft, wet lump of muck soil, glistening and mushy, resting on the ground in India, with no plants or leaves visible in it; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        }
+      ]
+    },
+    "job_2026_10_07_02_2": {
+      "purpose": "drawn by the job, run 2026-10-07-02, second tries",
+      "grid": 1,
+      "size": 1024,
+      "only_for_this_sheet": "No people, no animals and no buildings.",
+      "cells": [
+        {
+          "thing": "wet_dirt",
+          "name": "Wet dirt",
+          "draw": "A patch of wet brown mud, dark and glossy, soft and mushy, with a few small puddles and squelchy lumps, resting on bare ground"
+        }
+      ]
     }
   }
 }

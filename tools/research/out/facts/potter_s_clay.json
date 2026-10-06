@@ -1,0 +1,16 @@
+{
+  "name": "Potter's clay",
+  "fields": {},
+  "weak_spots": [
+    {
+      "field": "kind_of_thing",
+      "why": "uncertain: two judgements disagree: 'Things in nature that are not alive' and 'Things people make'"
+    }
+  ],
+  "pages": [],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

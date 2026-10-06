@@ -1,0 +1,46 @@
+{
+  "name": "Gravel",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "basis": "judged, not sourced",
+      "why": "Gravel is a loose aggregation of rock fragments that occurs naturally on Earth through geological processes."
+    },
+    "kind_of_nature": {
+      "value": "ground",
+      "basis": "judged, not sourced",
+      "why": "Gravel is loose rock fragments found on the Earth's surface, so it belongs with rocks and soil."
+    },
+    "what_happens_when_wet": {
+      "value": "stays_hard",
+      "basis": "judged, not sourced",
+      "why": "Gravel is loose rock particles, so wetting it does not make it sticky or mushy and it does not wash away like soil."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Gravel",
+      "title": "Gravel",
+      "asked_for": "Gravel",
+      "revision": 1367407711,
+      "fetched_on": "2026-10-07",
+      "sha256": "028d40fe1ec229efa648f956f417ebfcaf71d7da2258415e671e6aee6a006fe9"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Gravel",
+      "title": "Gravel",
+      "asked_for": "Gravel",
+      "revision": 9002795,
+      "fetched_on": "2026-10-07",
+      "sha256": "6b0baee13de9919fa252cd2b6b06ad45b759e2c08a43b53e6e8c74ccb208cb52"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

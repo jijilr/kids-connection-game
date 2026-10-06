@@ -1,6 +1,6 @@
 {
   "about": "The master record of every thing: what is known about it, where that came from, its picture and its voice clip, and (worked out, never set by hand) its circles and boards. Read and written only through tools/catalogue/catalogue.py. Assets/data/things.json is the game's copy of it, and tools/content/review_queue.json is its list of what is held.",
-  "dictionary_version": 4,
+  "dictionary_version": 5,
   "statuses": {
     "in the game": "The game shows it. It is in the game's copy.",
     "waiting for the owner": "A check had a doubt about it. The owner decides.",
@@ -20,7 +20,7 @@
         "tree_academic": true
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -113,7 +113,7 @@
         "tree_academic": false
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "notes": {
         "tree_academic": "A banana plant has no woody trunk. Its stem is made of tightly rolled leaves, so scientists call it a giant herb."
@@ -206,7 +206,7 @@
         "tree_academic": "depends"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "notes": {
         "tree_academic": "A palm has a tall woody trunk but does not grow wood in rings as other trees do, so botanists differ on whether to call it a true tree."
@@ -302,7 +302,7 @@
         "kind_of_plant": "flower"
       },
       "familiar": 0.85,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -393,7 +393,7 @@
         "kind_of_plant": "flower"
       },
       "familiar": 0.85,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -484,7 +484,7 @@
         "kind_of_plant": "flower"
       },
       "familiar": 0.8,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -566,7 +566,7 @@
         "kind_of_plant": "flower"
       },
       "familiar": 0.8,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -626,7 +626,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 0.75,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -716,7 +716,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -808,7 +808,7 @@
         "tree_academic": true
       },
       "familiar": 0.7,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -903,7 +903,7 @@
         "kind_of_nature": "sky"
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -987,7 +987,7 @@
         "kind_of_nature": "sky"
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1074,7 +1074,7 @@
         ]
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1149,10 +1149,11 @@
       "status": "in the game",
       "fields": {
         "kind_of_thing": "nature_not_alive",
-        "kind_of_nature": "ground"
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "stays_hard"
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1201,7 +1202,8 @@
           }
         },
         "no_sentence_for": [
-          "kind_of_nature"
+          "kind_of_nature",
+          "what_happens_when_wet"
         ]
       },
       "worked_out": {
@@ -1234,7 +1236,7 @@
         "kind_of_nature": "sky"
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1316,10 +1318,11 @@
       "status": "in the game",
       "fields": {
         "kind_of_thing": "nature_not_alive",
-        "kind_of_nature": "ground"
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1367,7 +1370,8 @@
           }
         },
         "no_sentence_for": [
-          "kind_of_nature"
+          "kind_of_nature",
+          "what_happens_when_wet"
         ]
       },
       "worked_out": {
@@ -1400,7 +1404,7 @@
         "kind_of_nature": "land"
       },
       "familiar": 0.85,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1485,7 +1489,7 @@
         "kind_of_nature": "sky"
       },
       "familiar": 0.85,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1567,7 +1571,7 @@
         "where_it_travels": "road"
       },
       "familiar": 0.98,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1660,7 +1664,7 @@
         "kind_of_house_thing": "furniture"
       },
       "familiar": 0.97,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1754,7 +1758,7 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.97,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1836,7 +1840,7 @@
         "kind_of_made_thing": "toy"
       },
       "familiar": 0.96,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1913,7 +1917,7 @@
         "where_it_travels": "road"
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2010,7 +2014,7 @@
         "kind_of_house_thing": "eating"
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2096,7 +2100,7 @@
         "kind_of_house_thing": "eating"
       },
       "familiar": 0.94,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2187,7 +2191,7 @@
         "where_it_travels": "road"
       },
       "familiar": 0.94,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2277,7 +2281,7 @@
         "kind_of_made_thing": "toy"
       },
       "familiar": 0.93,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2364,7 +2368,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2447,7 +2451,7 @@
         "where_it_travels": "rails"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2539,7 +2543,7 @@
         "kind_of_made_thing": "toy"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2627,7 +2631,7 @@
         "extinct": false
       },
       "familiar": 0.99,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2718,7 +2722,7 @@
         "extinct": false
       },
       "familiar": 0.98,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2809,7 +2813,7 @@
         "extinct": false
       },
       "familiar": 0.98,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2900,7 +2904,7 @@
         "extinct": false
       },
       "familiar": 0.97,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2993,7 +2997,7 @@
         "extinct": false
       },
       "familiar": 0.96,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3086,7 +3090,7 @@
         "extinct": false
       },
       "familiar": 0.96,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3179,7 +3183,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3269,7 +3273,7 @@
         "extinct": false
       },
       "familiar": 0.94,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3359,7 +3363,7 @@
         "extinct": false
       },
       "familiar": 0.93,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3441,7 +3445,7 @@
         "extinct": false
       },
       "familiar": 0.92,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3532,7 +3536,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3625,7 +3629,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3716,7 +3720,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3807,7 +3811,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3898,7 +3902,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3991,7 +3995,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4073,7 +4077,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4164,7 +4168,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4255,7 +4259,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4337,7 +4341,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4430,7 +4434,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4521,7 +4525,7 @@
         "extinct": false
       },
       "familiar": 0.75,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4614,7 +4618,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4707,7 +4711,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4789,7 +4793,7 @@
         "extinct": false
       },
       "familiar": 0.75,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4871,7 +4875,7 @@
         "extinct": false
       },
       "familiar": 0.7,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4964,7 +4968,7 @@
         "extinct": false
       },
       "familiar": 0.65,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5055,7 +5059,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5147,7 +5151,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5240,7 +5244,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5331,7 +5335,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5422,7 +5426,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5512,7 +5516,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5603,7 +5607,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5693,7 +5697,7 @@
         "extinct": false
       },
       "familiar": 0.75,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5784,7 +5788,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5866,7 +5870,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5957,7 +5961,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6047,7 +6051,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6138,7 +6142,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6229,7 +6233,7 @@
         "extinct": false
       },
       "familiar": 0.7,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6320,7 +6324,7 @@
         "extinct": false
       },
       "familiar": 0.6,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6411,7 +6415,7 @@
         "extinct": false
       },
       "familiar": 0.6,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6502,7 +6506,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6593,7 +6597,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6679,7 +6683,7 @@
         "extinct": false
       },
       "familiar": 0.6,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6771,7 +6775,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "shown_as": "T. rex",
       "picture": {
@@ -6869,7 +6873,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c2",
@@ -6966,7 +6970,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c5",
@@ -7063,7 +7067,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c3",
@@ -7160,7 +7164,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "notes": {
         "kind_of_dinosaur": "Scientists debate how much time Spinosaurus spent in water."
@@ -7258,7 +7262,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c1",
@@ -7355,7 +7359,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c2",
@@ -7440,7 +7444,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c3",
@@ -7535,7 +7539,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c4",
@@ -7630,7 +7634,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c5",
@@ -7725,7 +7729,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c6",
@@ -7822,7 +7826,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c8",
@@ -7919,7 +7923,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c7",
@@ -8016,7 +8020,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c6",
@@ -8111,7 +8115,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c9",
@@ -8208,7 +8212,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c1",
@@ -8285,7 +8289,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c3",
@@ -8372,7 +8376,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c5",
@@ -8457,7 +8461,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c2",
@@ -8542,7 +8546,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c4",
@@ -8629,7 +8633,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c5",
@@ -8716,7 +8720,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "shown_as": "Pterodactyl",
       "picture": {
@@ -8804,7 +8808,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c8",
@@ -8891,7 +8895,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c9",
@@ -8976,7 +8980,7 @@
         "extinct": false
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "animals_6_01_c1",
@@ -9066,7 +9070,7 @@
         "extinct": false
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "animals_5_01_c9",
@@ -9147,7 +9151,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "notes": {
         "general": "Its picture is drawn like a giant boa or anaconda, its closest living relatives; what it really looked like is not known."
@@ -9229,7 +9233,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "notes": {
         "general": "Its length is estimated from fossil backbones, so it is uncertain. Its picture is drawn like a very large python, the living snake scientists model it on; what it really looked like is not known."
@@ -9299,7 +9303,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "plants_2_01_c5",
@@ -9389,7 +9393,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "size_test_plants_9_01_c7",
@@ -9479,7 +9483,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "plants_2_01_c6",
@@ -9569,7 +9573,7 @@
         "part_we_eat": "fruit"
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "size_test_plants_9_01_c8",
@@ -9665,7 +9669,7 @@
         "part_we_eat": "fruit"
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "size_test_plants_9_01_c9",
@@ -9756,7 +9760,7 @@
         "part_we_eat": "fruit"
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "plants_2_01_c7",
@@ -9843,7 +9847,7 @@
         "part_we_eat": "fruit"
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "plants_2_01_c8",
@@ -9937,7 +9941,7 @@
         "kind_of_made_thing": "toy"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10009,7 +10013,7 @@
         "kind_of_made_thing": "toy"
       },
       "familiar": 0.85,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10086,7 +10090,7 @@
         "kind_of_house_thing": "furniture"
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10181,7 +10185,7 @@
         "kind_of_house_thing": "furniture"
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10276,7 +10280,7 @@
         "kind_of_house_thing": "eating"
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10362,7 +10366,7 @@
         "kind_of_house_thing": "eating"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10456,7 +10460,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10541,7 +10545,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.85,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10626,7 +10630,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.8,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10708,7 +10712,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.75,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10790,7 +10794,7 @@
         "kind_of_nature": "water"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10875,7 +10879,7 @@
         "kind_of_nature": "water"
       },
       "familiar": 0.85,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10960,7 +10964,7 @@
         "kind_of_nature": "water"
       },
       "familiar": 0.85,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11045,7 +11049,7 @@
         "kind_of_nature": "land"
       },
       "familiar": 0.85,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11130,7 +11134,7 @@
         "kind_of_nature": "land"
       },
       "familiar": 0.8,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11212,10 +11216,11 @@
       "status": "in the game",
       "fields": {
         "kind_of_thing": "nature_not_alive",
-        "kind_of_nature": "ground"
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_mushy"
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11263,7 +11268,8 @@
           }
         },
         "no_sentence_for": [
-          "kind_of_nature"
+          "kind_of_nature",
+          "what_happens_when_wet"
         ]
       },
       "worked_out": {
@@ -11293,10 +11299,11 @@
       "status": "in the game",
       "fields": {
         "kind_of_thing": "nature_not_alive",
-        "kind_of_nature": "ground"
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
       },
       "familiar": 0.85,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11349,7 +11356,9 @@
             "quote": "Clay is a type of fine-grained natural soil  material containing clay minerals (hydrous aluminium phyllosilicates, e.g. kaolinite, Al2Si2O5(OH)4)."
           }
         },
-        "no_sentence_for": []
+        "no_sentence_for": [
+          "what_happens_when_wet"
+        ]
       },
       "worked_out": {
         "circles": [
@@ -11378,10 +11387,11 @@
       "status": "in the game",
       "fields": {
         "kind_of_thing": "nature_not_alive",
-        "kind_of_nature": "ground"
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_mushy"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11434,7 +11444,9 @@
             "basis": "sourced"
           }
         },
-        "no_sentence_for": []
+        "no_sentence_for": [
+          "what_happens_when_wet"
+        ]
       },
       "worked_out": {
         "circles": [
@@ -11466,7 +11478,7 @@
         "kind_of_nature": "water"
       },
       "familiar": 0.95,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -11551,7 +11563,7 @@
         "kind_of_made_thing": "toy"
       },
       "familiar": 0.97,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "toys_top_up",
       "picture": {
@@ -11636,7 +11648,7 @@
         "kind_of_made_thing": "toy"
       },
       "familiar": 0.96,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked",
       "drafted_in": "toys_top_up",
       "picture": {
@@ -11721,7 +11733,7 @@
         "kind_of_nature": "land"
       },
       "familiar": 0.7,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked, approved by the owner",
       "drafted_in": "made_and_nature",
       "notes": {
@@ -11809,7 +11821,7 @@
         "kind_of_nature": "land"
       },
       "familiar": 0.75,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked, approved by the owner",
       "drafted_in": "land_top_up",
       "notes": {
@@ -11897,7 +11909,7 @@
         "kind_of_nature": "land"
       },
       "familiar": 0.7,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "deepseek:drafted+checked, approved by the owner",
       "drafted_in": "land_top_up",
       "notes": {
@@ -12089,7 +12101,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c6",
@@ -12173,7 +12185,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c7",
@@ -12483,7 +12495,7 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-03",
       "worked_out": {
@@ -12568,7 +12580,7 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-02",
       "worked_out": {
@@ -12653,7 +12665,7 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-03",
       "notes": {
@@ -12730,7 +12742,7 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.8,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-01",
       "worked_out": {
@@ -12815,7 +12827,7 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.8,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-03",
       "notes": {
@@ -12900,7 +12912,7 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.7,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-03",
       "notes": {
@@ -13015,7 +13027,7 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -13119,7 +13131,7 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.8,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -13222,7 +13234,7 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.8,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -13325,7 +13337,7 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.7,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -13428,7 +13440,7 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.7,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -13611,7 +13623,7 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -13714,7 +13726,7 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -13950,7 +13962,7 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14054,7 +14066,7 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14155,7 +14167,7 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14259,7 +14271,7 @@
         "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-07",
       "sources": {
@@ -14363,7 +14375,7 @@
         "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.8,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14647,7 +14659,7 @@
         "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.7,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -15117,7 +15129,7 @@
         "kind_of_plant_academic": "grass_grain"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-09",
       "notes": {
@@ -15218,7 +15230,7 @@
         "where_it_travels": "road"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -15306,7 +15318,7 @@
         "where_it_travels": "road"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -15403,7 +15415,7 @@
         "where_it_travels": "rails"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -15492,7 +15504,7 @@
         "where_it_travels": "rails"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -15581,7 +15593,7 @@
         "where_it_travels": "rails"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -15679,7 +15691,7 @@
         "where_it_travels": "rails"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -15775,7 +15787,7 @@
         "where_it_travels": "water"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -15873,7 +15885,7 @@
         "where_it_travels": "water"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -15971,7 +15983,7 @@
         "where_it_travels": "water"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16069,7 +16081,7 @@
         "where_it_travels": "water"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16167,7 +16179,7 @@
         "where_it_travels": "water"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16265,7 +16277,7 @@
         "where_it_travels": "air"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16362,7 +16374,7 @@
         "where_it_travels": "air"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16460,7 +16472,7 @@
         "where_it_travels": "air"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16558,7 +16570,7 @@
         "where_it_travels": "air"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16656,7 +16668,7 @@
         "kind_of_house_thing": "furniture"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16753,7 +16765,7 @@
         "kind_of_house_thing": "furniture"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16851,7 +16863,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16947,7 +16959,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17045,7 +17057,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17143,7 +17155,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17241,7 +17253,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.8,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17329,7 +17341,7 @@
         "kind_of_house_thing": "electric"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17427,7 +17439,7 @@
         "kind_of_house_thing": "electric"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17524,7 +17536,7 @@
         "kind_of_house_thing": "electric"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17621,7 +17633,7 @@
         "kind_of_house_thing": "electric"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17718,7 +17730,7 @@
         "kind_of_house_thing": "electric"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17814,7 +17826,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-10",
       "notes": {
@@ -17908,7 +17920,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-10",
       "notes": {
@@ -18002,7 +18014,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 4,
+      "reviewed": 5,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-10",
       "notes": {
@@ -18086,15 +18098,1034 @@
         "approved_on": "2026-10-07",
         "other_tries": 0
       }
+    },
+    "wet_soil": {
+      "name": "Wet soil",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_mushy"
+      },
+      "familiar": 0.8,
+      "reviewed": 5,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-07-02",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "nature_not_alive",
+            "open_now": true
+          },
+          {
+            "circle": "nature_not_alive",
+            "sorted_by": "kind_of_nature",
+            "group": "ground",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_07_02_1_01_c8",
+        "game_file": "Assets/pictures/wet_soil.webp",
+        "game_sha256": "06c5b215ea1dc26cea434cfffc6b033160f3a2c85647033e254673c23addca1e",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c8.png",
+        "master_sha256": "1d02ae1794ff2b3431c4bbefb3f7a43cb8b9469d72e622481fbb4bfa5cdb0cdb",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-07",
+        "other_tries": 1
+      },
+      "sources": {
+        "pages": [],
+        "facts": "tools/research/out/facts/wet_soil.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "Wet soil is soil with water in it, a non-living part of nature rather than an animal, plant, or made thing."
+          },
+          "kind_of_nature": {
+            "basis": "judged, not sourced",
+            "why": "Wet soil is soil that is wet, and soil is the ground under our feet."
+          },
+          "what_happens_when_wet": {
+            "basis": "judged, not sourced",
+            "why": "Wet soil soaks up water and turns soft and mushy, unlike hard dry ground."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Wet soil",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "muck": {
+      "name": "Muck",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_mushy"
+      },
+      "familiar": 0.7,
+      "reviewed": 5,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-07-02",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "nature_not_alive",
+            "open_now": true
+          },
+          {
+            "circle": "nature_not_alive",
+            "sorted_by": "kind_of_nature",
+            "group": "ground",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_07_02_1_01_c2",
+        "game_file": "Assets/pictures/muck.webp",
+        "game_sha256": "31ee56cb729a89ae3a3e621358f60e48bedc4c2f0d94970c7faf6a15ca13c5f5",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c2.png",
+        "master_sha256": "93e44906d6fe890d80be585408b646c98a429d6f017e450ef4658b81f52c2a5c",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-07",
+        "other_tries": 1
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Sapric",
+            "title": "Sapric",
+            "asked_for": "Muck (soil)",
+            "revision": 1306793542,
+            "fetched_on": "2026-10-07",
+            "sha256": "03ce79da8b748da61be3252fc432630b28290bfb6243e9dfb00dbbb7430091f4"
+          }
+        ],
+        "facts": "tools/research/out/facts/muck.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Muck is a sapric soil that is naturally waterlogged or is artificially drained."
+          },
+          "kind_of_nature": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Muck is a sapric soil that is naturally waterlogged or is artificially drained."
+          },
+          "what_happens_when_wet": {
+            "basis": "judged, not sourced",
+            "why": "Muck is a waterlogged, decomposed soil, so when wet it turns soft and mushy."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Muck",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "wet_dirt": {
+      "name": "Wet dirt",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_mushy"
+      },
+      "familiar": 0.8,
+      "reviewed": 5,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-07-02",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "nature_not_alive",
+            "open_now": true
+          },
+          {
+            "circle": "nature_not_alive",
+            "sorted_by": "kind_of_nature",
+            "group": "ground",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_07_02_2_01_c1",
+        "game_file": "Assets/pictures/wet_dirt.webp",
+        "game_sha256": "e9ba661d3808ebd744b60487a7776c6494bc78a57fb284170d17ae680167cabc",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_2_01_c1.png",
+        "master_sha256": "d70f44e28c6e8cabfe079ccff5985f2e90b5f925e3e50b72634844254b31a56a",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-07",
+        "other_tries": 1
+      },
+      "sources": {
+        "pages": [],
+        "facts": "tools/research/out/facts/wet_dirt.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "Wet dirt is soil mixed with water, a non-living part of nature."
+          },
+          "kind_of_nature": {
+            "basis": "judged, not sourced",
+            "why": "Wet dirt is soil mixed with water, and soil is the everyday ground material."
+          },
+          "what_happens_when_wet": {
+            "basis": "judged, not sourced",
+            "why": "Wet dirt turns soft and mushy, not hard, sticky, or washed away."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Wet dirt",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "boulder": {
+      "name": "Boulder",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "stays_hard"
+      },
+      "familiar": 0.8,
+      "reviewed": 5,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-07-02",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "nature_not_alive",
+            "open_now": true
+          },
+          {
+            "circle": "nature_not_alive",
+            "sorted_by": "kind_of_nature",
+            "group": "ground",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_07_02_1_01_c4",
+        "game_file": "Assets/pictures/boulder.webp",
+        "game_sha256": "80d188684fa06811040634cf54047579b9fe2ca491990f20361ab9ea630a305c",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c4.png",
+        "master_sha256": "9fda60fbfff71c4035fa7e486ae94a9e9aaf6c5e1f48a710ee4edd80d3840baa",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-07",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Boulder",
+            "title": "Boulder",
+            "asked_for": "Boulder",
+            "revision": 1358572143,
+            "fetched_on": "2026-10-07",
+            "sha256": "1921d0204598ec60f25b9b8937abfeaa7d54184119b19d658f13eb23cf50a1f5"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Boulder",
+            "title": "Boulder",
+            "asked_for": "Boulder",
+            "revision": 9347671,
+            "fetched_on": "2026-10-07",
+            "sha256": "60b126237d816d497c384782c58f763d966aeb8f30010c7e9a18df6d69ff2fac"
+          }
+        ],
+        "facts": "tools/research/out/facts/boulder.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "In geology, a boulder is a rock fragment with size greater than 25.6 cm (10.1 in) in diameter."
+          },
+          "kind_of_nature": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "In geology, a boulder is a rock fragment with size greater than 25.6 cm (10.1 in) in diameter."
+          },
+          "what_happens_when_wet": {
+            "basis": "judged, not sourced",
+            "why": "A boulder is a solid rock fragment, so getting wet does not make it sticky, mushy, or wash it away."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Boulder",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "pebble": {
+      "name": "Pebble",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "stays_hard"
+      },
+      "familiar": 0.9,
+      "reviewed": 5,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-07-02",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "nature_not_alive",
+            "open_now": true
+          },
+          {
+            "circle": "nature_not_alive",
+            "sorted_by": "kind_of_nature",
+            "group": "ground",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_07_02_1_01_c5",
+        "game_file": "Assets/pictures/pebble.webp",
+        "game_sha256": "f5f41b1deff5734fdab6353c6fd657309450ee1e17bb30ead9b49c9277ed1578",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c5.png",
+        "master_sha256": "aaac678e894209d2a201291b4ea11a9d274b6ee3f9f98f7330173894ac2a1aed",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-07",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Pebble",
+            "title": "Pebble",
+            "asked_for": "Pebble",
+            "revision": 1370988432,
+            "fetched_on": "2026-10-07",
+            "sha256": "a41a54d4aebe730a19e9c997712c8e63d2b8438cd607ecae6cad12b505af03ce"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Pebble",
+            "title": "Pebble",
+            "asked_for": "Pebble",
+            "revision": 7771550,
+            "fetched_on": "2026-10-07",
+            "sha256": "41fbf2515fa96cd580323b0641062c42db29bed8b2dbfbee9462b9fe6dfe0d17"
+          }
+        ],
+        "facts": "tools/research/out/facts/pebble.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A pebble is a clast of rock with a particle size of 4–64 mm (0.16–2.52 in) based on the Udden-Wentworth scale of sedimentology."
+          },
+          "kind_of_nature": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A pebble is a clast of rock with a particle size of 4–64 mm (0.16–2.52 in) based on the Udden-Wentworth scale of sedimentology."
+          },
+          "what_happens_when_wet": {
+            "basis": "judged, not sourced",
+            "why": "A pebble is a piece of rock, and rock does not soften or dissolve when it gets wet."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Pebble",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "gravel": {
+      "name": "Gravel",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "stays_hard"
+      },
+      "familiar": 0.8,
+      "reviewed": 5,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-07-02",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "nature_not_alive",
+            "open_now": true
+          },
+          {
+            "circle": "nature_not_alive",
+            "sorted_by": "kind_of_nature",
+            "group": "ground",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_07_02_1_01_c6",
+        "game_file": "Assets/pictures/gravel.webp",
+        "game_sha256": "45053dfb7b06f2e74463e10eabd10466768e2cd1e1337e2c597120d52588fccb",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c6.png",
+        "master_sha256": "c1273dc497486dae0cc529052c25a3e490b19fbee168028c76937ffea5893066",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-07",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Gravel",
+            "title": "Gravel",
+            "asked_for": "Gravel",
+            "revision": 1367407711,
+            "fetched_on": "2026-10-07",
+            "sha256": "028d40fe1ec229efa648f956f417ebfcaf71d7da2258415e671e6aee6a006fe9"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Gravel",
+            "title": "Gravel",
+            "asked_for": "Gravel",
+            "revision": 9002795,
+            "fetched_on": "2026-10-07",
+            "sha256": "6b0baee13de9919fa252cd2b6b06ad45b759e2c08a43b53e6e8c74ccb208cb52"
+          }
+        ],
+        "facts": "tools/research/out/facts/gravel.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "Gravel is a loose aggregation of rock fragments that occurs naturally on Earth through geological processes."
+          },
+          "kind_of_nature": {
+            "basis": "judged, not sourced",
+            "why": "Gravel is loose rock fragments found on the Earth's surface, so it belongs with rocks and soil."
+          },
+          "what_happens_when_wet": {
+            "basis": "judged, not sourced",
+            "why": "Gravel is loose rock particles, so wetting it does not make it sticky or mushy and it does not wash away like soil."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Gravel",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "coal": {
+      "name": "Coal",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "stays_hard"
+      },
+      "familiar": 0.7,
+      "reviewed": 5,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-07-02",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "nature_not_alive",
+            "open_now": true
+          },
+          {
+            "circle": "nature_not_alive",
+            "sorted_by": "kind_of_nature",
+            "group": "ground",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_07_02_1_01_c7",
+        "game_file": "Assets/pictures/coal.webp",
+        "game_sha256": "70afce084f05eb38283686cf12e8688f3a9b6a201d74d75eb57c93d28e2d9656",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c7.png",
+        "master_sha256": "fbac7f66e0cbdba4782fe01da30abca69943153eca089685115e9ed187ea53bf",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-07",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Coal",
+            "title": "Coal",
+            "asked_for": "Coal",
+            "revision": 1373605559,
+            "fetched_on": "2026-10-07",
+            "sha256": "5a88118f9c0935b49431ae807665029956f96f516761ecc8aee39a2452b5f96c"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Coal",
+            "title": "Coal",
+            "asked_for": "Coal",
+            "revision": 10940350,
+            "fetched_on": "2026-10-07",
+            "sha256": "a1cf8d93c17ae772c2ea7192f8523c1360ef49ee88d8aecd86aee3c6674c0849"
+          }
+        ],
+        "facts": "tools/research/out/facts/coal.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Coal is a combustible black or brownish-black sedimentary rock, formed as layers called coal seams."
+          },
+          "kind_of_nature": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Coal is a combustible black or brownish-black sedimentary rock, formed as layers called coal seams."
+          },
+          "what_happens_when_wet": {
+            "basis": "judged, not sourced",
+            "why": "Coal is a hard rock, so getting it wet would not make it sticky, mushy, or wash it away."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Coal",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "chalk": {
+      "name": "Chalk",
+      "status": "waiting for the owner",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'Stays hard': the two checks disagree: 'gets_mushy' and 'washes_away'"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "stays_hard"
+      },
+      "familiar": 0.9,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "wet_clay": {
+      "name": "Wet clay",
+      "status": "held by the rules",
+      "status_why": [
+        "its facts passed, but only 1 of the 3 things the group needs did, so it was not drawn. A later run carries on from here"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.8,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "potter_s_clay": {
+      "name": "Potter's clay",
+      "status": "held by the rules",
+      "status_why": [
+        "it could not be settled that it belongs in 'Things in nature that are not alive'"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.7,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "slush": {
+      "name": "Slush",
+      "status": "waiting for the owner",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'Rocks and soil': it fits more than one group: water and ground"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.8,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "sludge": {
+      "name": "Sludge",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.3,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "gumbo": {
+      "name": "Gumbo",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.2,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "ooze": {
+      "name": "Ooze",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.2,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "adhesive_mud": {
+      "name": "Adhesive mud",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.1,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "mire": {
+      "name": "Mire",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.1,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "sticky_soil": {
+      "name": "Sticky soil",
+      "status": "waiting for the owner",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'Gets sticky': it fits more than one group: gets_sticky and gets_mushy"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.8,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "sticky_dirt": {
+      "name": "Sticky dirt",
+      "status": "waiting for the owner",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'Gets sticky': it fits more than one group: gets_sticky and gets_mushy"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.8,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "sticky_earth": {
+      "name": "Sticky earth",
+      "status": "waiting for the owner",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'Gets sticky': it fits more than one group: gets_sticky and gets_mushy"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.7,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "white_sand": {
+      "name": "White sand",
+      "status": "waiting for the owner",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'Rocks and soil': it fits more than one group: ground and land"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "familiar": 0.9,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "yellow_sand": {
+      "name": "Yellow sand",
+      "status": "waiting for the owner",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'Rocks and soil': it fits more than one group: ground and land"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "familiar": 0.9,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "dust": {
+      "name": "Dust",
+      "status": "held by the rules",
+      "status_why": [
+        "its facts passed, but only 2 of the 3 things the group needs did, so it was not drawn. A later run carries on from here"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "familiar": 0.9,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "ash": {
+      "name": "Ash",
+      "status": "held by the rules",
+      "status_why": [
+        "its facts passed, but only 2 of the 3 things the group needs did, so it was not drawn. A later run carries on from here"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "familiar": 0.7,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "soot": {
+      "name": "Soot",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "familiar": 0.3,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "silt": {
+      "name": "Silt",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "familiar": 0.2,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "sewage": {
+      "name": "Sewage",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "familiar": 0.7,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "runoff": {
+      "name": "Runoff",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "familiar": 0.65,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
+    },
+    "sediment": {
+      "name": "Sediment",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-07-02",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "familiar": 0.6,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/ground"
+        ]
+      }
     }
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 187,
-      "held by the rules": 15,
+      "in the game": 194,
+      "held by the rules": 29,
       "kept for later": 5,
       "excluded": 3,
-      "taken out of the game": 9
+      "taken out of the game": 9,
+      "waiting for the owner": 7
     },
     "circles_that_can_open_now": [
       "seed",
@@ -18110,7 +19141,7 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 187,
+        "things": 194,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
@@ -18126,8 +19157,8 @@
           },
           "nature_not_alive": {
             "label": "Things in nature that are not alive",
-            "things": 20,
-            "with_picture": 20
+            "things": 27,
+            "with_picture": 27
           },
           "made_by_people": {
             "label": "Things people make",
@@ -18497,7 +19528,7 @@
       },
       "nature_not_alive": {
         "label": "Things in nature that are not alive",
-        "things": 20,
+        "things": 27,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_nature",
         "groups": {
@@ -18518,8 +19549,8 @@
           },
           "ground": {
             "label": "Rocks and soil",
-            "things": 5,
-            "with_picture": 5
+            "things": 12,
+            "with_picture": 12
           }
         },
         "open_by_its_things": true,
@@ -18570,12 +19601,143 @@
       },
       "nature_not_alive/ground": {
         "label": "Rocks and soil",
-        "things": 5,
+        "things": 12,
         "steps_from_seed": 2,
+        "sorted_by": "what_happens_when_wet",
+        "groups": {
+          "stays_hard": {
+            "label": "Stays hard",
+            "things": 5,
+            "with_picture": 5
+          },
+          "gets_sticky": {
+            "label": "Gets sticky",
+            "things": 1,
+            "with_picture": 1
+          },
+          "gets_mushy": {
+            "label": "Gets mushy",
+            "things": 5,
+            "with_picture": 5
+          },
+          "washes_away": {
+            "label": "Washes away",
+            "things": 1,
+            "with_picture": 1
+          }
+        },
+        "could_be_filled_by": [
+          {
+            "name": "Chalk",
+            "status": "waiting for the owner",
+            "group": "stays_hard"
+          },
+          {
+            "name": "Wet clay",
+            "status": "held by the rules",
+            "group": "gets_sticky"
+          },
+          {
+            "name": "Potter's clay",
+            "status": "held by the rules",
+            "group": "gets_sticky"
+          },
+          {
+            "name": "Slush",
+            "status": "waiting for the owner",
+            "group": "gets_sticky"
+          },
+          {
+            "name": "Sludge",
+            "status": "held by the rules",
+            "group": "gets_sticky"
+          },
+          {
+            "name": "Gumbo",
+            "status": "held by the rules",
+            "group": "gets_sticky"
+          },
+          {
+            "name": "Ooze",
+            "status": "held by the rules",
+            "group": "gets_sticky"
+          },
+          {
+            "name": "Adhesive mud",
+            "status": "held by the rules",
+            "group": "gets_sticky"
+          },
+          {
+            "name": "Mire",
+            "status": "held by the rules",
+            "group": "gets_sticky"
+          },
+          {
+            "name": "Sticky soil",
+            "status": "waiting for the owner",
+            "group": "gets_sticky"
+          },
+          {
+            "name": "Sticky dirt",
+            "status": "waiting for the owner",
+            "group": "gets_sticky"
+          },
+          {
+            "name": "Sticky earth",
+            "status": "waiting for the owner",
+            "group": "gets_sticky"
+          },
+          {
+            "name": "White sand",
+            "status": "waiting for the owner",
+            "group": "washes_away"
+          },
+          {
+            "name": "Yellow sand",
+            "status": "waiting for the owner",
+            "group": "washes_away"
+          },
+          {
+            "name": "Dust",
+            "status": "held by the rules",
+            "group": "washes_away"
+          },
+          {
+            "name": "Ash",
+            "status": "held by the rules",
+            "group": "washes_away"
+          },
+          {
+            "name": "Soot",
+            "status": "held by the rules",
+            "group": "washes_away"
+          },
+          {
+            "name": "Silt",
+            "status": "held by the rules",
+            "group": "washes_away"
+          },
+          {
+            "name": "Sewage",
+            "status": "held by the rules",
+            "group": "washes_away"
+          },
+          {
+            "name": "Runoff",
+            "status": "held by the rules",
+            "group": "washes_away"
+          },
+          {
+            "name": "Sediment",
+            "status": "held by the rules",
+            "group": "washes_away"
+          }
+        ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+          "3 more thing(s) in 'Gets sticky'",
+          "3 more thing(s) in 'Washes away'"
         ]
       },
       "made_by_people": {
@@ -18805,7 +19967,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job run 2026-10-07-01",
+    "by": "job run 2026-10-07-02",
     "on": "2026-10-07"
   }
 }

@@ -1258,6 +1258,68 @@
       },
       "cost_usd": 0.1001,
       "vision_check_cost_usd": 0.00016
+    },
+    "job_2026_10_07_02_1_01": {
+      "plan_key": "job_2026_10_07_02_1",
+      "purpose": "drawn by the job, run 2026-10-07-02",
+      "file": "tools/pictures/sheets/job_2026_10_07_02_1_01.png",
+      "grid": 3,
+      "size": "2880x2880",
+      "cells": [
+        "wet_soil",
+        "muck",
+        "wet_dirt",
+        "boulder",
+        "pebble",
+        "gravel",
+        "coal",
+        "wet_soil",
+        "muck"
+      ],
+      "names": {
+        "wet_soil": "Wet soil",
+        "muck": "Muck",
+        "wet_dirt": "Wet dirt",
+        "boulder": "Boulder",
+        "pebble": "Pebble",
+        "gravel": "Gravel",
+        "coal": "Coal"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 3 by 3 grid of 9 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Wet soil: A patch of wet brown soil, dark and glistening with moisture, soft and sticky, clumped together in a mushy lump on the ground, natural earthy colours.\n2. Muck: A dark brown, soft, wet lump of muck soil, glistening and mushy, resting on the ground in India, with no plants or leaves visible in it.\n3. Wet dirt: A patch of wet brown mud, dark and glossy, soft and mushy, with a few small puddles and squelchy lumps, resting on bare ground.\n4. Boulder: A single large grey-brown rock, bigger than a child, rough and rounded, resting alone on plain ground.\n5. Pebble: One smooth grey-brown pebble, rounded oval, resting alone on plain ground, with faint quartz veins and a slightly rough natural surface, as an Indian child finds on a beach or riverbank.\n6. Gravel: A small heap of loose grey and brown rock pieces, some tiny granules and some larger pebbles, all hard and rough, resting on bare ground.\n7. Coal: A single shiny black lump of coal, hard and blocky with rough edges, resting on bare ground, in natural black colour.\n8. Wet soil: A patch of wet brown soil, dark and glistening with moisture, soft and sticky, clumped together in a mushy lump on the ground, natural earthy colours; a second view of it.\n9. Muck: A dark brown, soft, wet lump of muck soil, glistening and mushy, resting on the ground in India, with no plants or leaves visible in it; a second view of it.\n\nFor this sheet: No people, no animals and no buildings.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-07",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 556
+      },
+      "cost_usd": 0.1807,
+      "vision_check_cost_usd": 0.00071
+    },
+    "job_2026_10_07_02_2_01": {
+      "plan_key": "job_2026_10_07_02_2",
+      "purpose": "drawn by the job, run 2026-10-07-02, second tries",
+      "file": "tools/pictures/sheets/job_2026_10_07_02_2_01.png",
+      "grid": 1,
+      "size": "1024x1024",
+      "cells": [
+        "wet_dirt"
+      ],
+      "names": {
+        "wet_dirt": "Wet dirt"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image showing exactly one subject, whole and centred, with a wide plain white margin on every side:\n\n1. Wet dirt: A patch of wet brown mud, dark and glossy, soft and mushy, with a few small puddles and squelchy lumps, resting on bare ground.\n\nFor this sheet: No people, no animals and no buildings.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-07",
+      "tokens": {
+        "image_output_tokens": 1756,
+        "text_input_tokens": 198
+      },
+      "cost_usd": 0.0537,
+      "vision_check_cost_usd": 5e-05
     }
   },
   "tiles": {
@@ -15311,6 +15373,513 @@
       },
       "reviewed_on": "2026-10-07",
       "published_file": "Assets/pictures/broom.webp"
+    },
+    "job_2026_10_07_02_1_01_c1": {
+      "thing_id": null,
+      "expected_thing": "wet_soil",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c1.png",
+      "master_size": [
+        963,
+        963
+      ],
+      "master_sha256": "b287007ccbba6c22e2a799f6a3fa17f63602e0f61c5a5454ea658124dc471c13",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_02_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_02_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Wet soil: A patch of wet brown soil, dark and glistening with moisture, soft and sticky, clumped together in a mushy lump on the ground, natural earthy colours",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          94,
+          172,
+          924,
+          874
+        ],
+        "picture_shape": 1.18,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Muck",
+        "shows": "muck",
+        "matches_cell": false,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "job_2026_10_07_02_1_01_c2": {
+      "thing_id": "muck",
+      "expected_thing": "muck",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c2.png",
+      "master_size": [
+        892,
+        892
+      ],
+      "master_sha256": "3f20249b1f95eefbf085bce3e79f14f4095fdc9ee5ef895ff8cab340a58493ef",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_02_1_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_02_1_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Muck: A dark brown, soft, wet lump of muck soil, glistening and mushy, resting on the ground in India, with no plants or leaves visible in it",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1051,
+          204,
+          1820,
+          846
+        ],
+        "picture_shape": 1.2,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Muck",
+        "shows": "muck",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "among": [
+          "job_2026_10_07_02_1_01_c2",
+          "job_2026_10_07_02_1_01_c9"
+        ],
+        "chosen": true,
+        "why": "The first looks more like a clearly muddy, messy clump of muck.",
+        "cost_usd": 9e-05
+      },
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/muck.webp"
+    },
+    "job_2026_10_07_02_1_01_c3": {
+      "thing_id": null,
+      "expected_thing": "wet_dirt",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c3.png",
+      "master_size": [
+        979,
+        979
+      ],
+      "master_sha256": "79621b203267b9c40b5de89026f129f3e003581a5ac96502650fac362fa8dd59",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_02_1_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_02_1_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Wet dirt: A patch of wet brown mud, dark and glossy, soft and mushy, with a few small puddles and squelchy lumps, resting on bare ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1953,
+          168,
+          2797,
+          881
+        ],
+        "picture_shape": 1.18,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Wet soil",
+        "shows": "wet_soil",
+        "matches_cell": false,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "job_2026_10_07_02_1_01_c4": {
+      "thing_id": "boulder",
+      "expected_thing": "boulder",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c4.png",
+      "master_size": [
+        964,
+        964
+      ],
+      "master_sha256": "f67f51e51cf56f6f0ff522347d4549b8a235127b9ea849408ae8777cf219d00b",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_02_1_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_02_1_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Boulder: A single large grey-brown rock, bigger than a child, rough and rounded, resting alone on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          91,
+          1066,
+          922,
+          1824
+        ],
+        "picture_shape": 1.1,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Boulder",
+        "shows": "boulder",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/boulder.webp"
+    },
+    "job_2026_10_07_02_1_01_c5": {
+      "thing_id": "pebble",
+      "expected_thing": "pebble",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c5.png",
+      "master_size": [
+        831,
+        831
+      ],
+      "master_sha256": "e3d211ca37e9accef60f2f38e9e3155e9c838265759d93ead014218ed38c423e",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_02_1_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_02_1_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Pebble: One smooth grey-brown pebble, rounded oval, resting alone on plain ground, with faint quartz veins and a slightly rough natural surface, as an Indian child finds on a beach or riverbank",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1077,
+          1179,
+          1793,
+          1729
+        ],
+        "picture_shape": 1.3,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Pebble",
+        "shows": "pebble",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/pebble.webp"
+    },
+    "job_2026_10_07_02_1_01_c6": {
+      "thing_id": "gravel",
+      "expected_thing": "gravel",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c6.png",
+      "master_size": [
+        999,
+        999
+      ],
+      "master_sha256": "0b73395580979a24b961c0bd284f8624b39c5bbaba170e3856b0ec09d43e2319",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_02_1_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_02_1_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Gravel: A small heap of loose grey and brown rock pieces, some tiny granules and some larger pebbles, all hard and rough, resting on bare ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1949,
+          1122,
+          2810,
+          1801
+        ],
+        "picture_shape": 1.27,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Gravel",
+        "shows": "gravel",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/gravel.webp"
+    },
+    "job_2026_10_07_02_1_01_c7": {
+      "thing_id": "coal",
+      "expected_thing": "coal",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c7.png",
+      "master_size": [
+        897,
+        897
+      ],
+      "master_sha256": "cb810d38a35904798e08d9207204821d7a4f31d888329f11a1a45b8934a7a3a2",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_02_1_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_02_1_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Coal: A single shiny black lump of coal, hard and blocky with rough edges, resting on bare ground, in natural black colour",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          104,
+          2034,
+          877,
+          2751
+        ],
+        "picture_shape": 1.08,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Coal",
+        "shows": "coal",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/coal.webp"
+    },
+    "job_2026_10_07_02_1_01_c8": {
+      "thing_id": "wet_soil",
+      "expected_thing": "wet_soil",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c8.png",
+      "master_size": [
+        967,
+        967
+      ],
+      "master_sha256": "9a7e62a5004ccb067dc4960b2c26de8c8f5333084d168a22d179a3e22b43cddf",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_02_1_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_02_1_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Wet soil: A patch of wet brown soil, dark and glistening with moisture, soft and sticky, clumped together in a mushy lump on the ground, natural earthy colours; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1015,
+          1996,
+          1849,
+          2734
+        ],
+        "picture_shape": 1.13,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Wet soil",
+        "shows": "wet_soil",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/wet_soil.webp"
+    },
+    "job_2026_10_07_02_1_01_c9": {
+      "thing_id": null,
+      "expected_thing": "muck",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c9.png",
+      "master_size": [
+        959,
+        959
+      ],
+      "master_sha256": "aa74ae18a1ce8ec7e3a56e6dc5fc8d5cefcc97daa8c89893424222ba0a38c410",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_02_1_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_02_1_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Muck: A dark brown, soft, wet lump of muck soil, glistening and mushy, resting on the ground in India, with no plants or leaves visible in it; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1959,
+          2035,
+          2786,
+          2727
+        ],
+        "picture_shape": 1.2,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Muck",
+        "shows": "muck",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_10_07_02_1_01_c2 better",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "among": [
+          "job_2026_10_07_02_1_01_c2",
+          "job_2026_10_07_02_1_01_c9"
+        ],
+        "chosen": false,
+        "why": "The first looks more like a clearly muddy, messy clump of muck.",
+        "cost_usd": 9e-05
+      },
+      "reviewed_on": "2026-10-07"
+    },
+    "job_2026_10_07_02_2_01_c1": {
+      "thing_id": "wet_dirt",
+      "expected_thing": "wet_dirt",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_2_01_c1.png",
+      "master_size": [
+        1016,
+        1016
+      ],
+      "master_sha256": "615dc9ae1f557f9337d38f799b263d349f3ecb416b63cdc149364c8758732210",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_02_2_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_02_2_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Wet dirt: A patch of wet brown mud, dark and glossy, soft and mushy, with a few small puddles and squelchy lumps, resting on bare ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0537,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          76,
+          191,
+          952,
+          852
+        ],
+        "picture_shape": 1.33,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "wet dirt",
+        "shows": "wet_dirt",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/wet_dirt.webp"
     }
   }
 }

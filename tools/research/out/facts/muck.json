@@ -1,0 +1,39 @@
+{
+  "name": "Muck",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "Muck is a sapric soil that is naturally waterlogged or is artificially drained.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "ground",
+      "quote": "Muck is a sapric soil that is naturally waterlogged or is artificially drained.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_happens_when_wet": {
+      "value": "gets_mushy",
+      "basis": "judged, not sourced",
+      "why": "Muck is a waterlogged, decomposed soil, so when wet it turns soft and mushy."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Sapric",
+      "title": "Sapric",
+      "asked_for": "Muck (soil)",
+      "revision": 1306793542,
+      "fetched_on": "2026-10-07",
+      "sha256": "03ce79da8b748da61be3252fc432630b28290bfb6243e9dfb00dbbb7430091f4"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

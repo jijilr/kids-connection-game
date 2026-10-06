@@ -1,0 +1,39 @@
+{
+  "name": "Pebbles",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A pebble is a piece of rock with a particle size of 4 to 64 millimetres.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "ground",
+      "quote": "A pebble is a piece of rock with a particle size of 4 to 64 millimetres.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "what_happens_when_wet",
+      "why": "uncertain: two judgements disagree: 'Stays hard' and 'Washes away'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Pebble",
+      "title": "Pebble",
+      "asked_for": "Pebbles",
+      "revision": 7771550,
+      "fetched_on": "2026-10-07",
+      "sha256": "41fbf2515fa96cd580323b0641062c42db29bed8b2dbfbee9462b9fe6dfe0d17"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

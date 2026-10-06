@@ -1,0 +1,2920 @@
+{
+  "id": "2026-10-07-02",
+  "started": "2026-10-07",
+  "rehearse": null,
+  "cap_inr": 200.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "nature_not_alive/ground",
+        "chain": "Things in nature that are not alive > Rocks and soil > Gets mushy",
+        "fixed": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "gets_mushy"
+        },
+        "need": 2,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Wet soil",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Mud patch",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Muck",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Wet dirt",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "nature_not_alive/ground",
+        "chain": "Things in nature that are not alive > Rocks and soil > Stays hard",
+        "fixed": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "stays_hard"
+        },
+        "need": 3,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Boulder",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Pebble",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Stone",
+            "familiar": 0.95,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "offers_1": [
+          {
+            "name": "Brick",
+            "familiar": 0.9,
+            "why": "hard block in walls",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Chalk",
+            "familiar": 0.9,
+            "why": "hard white writing stick",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Gravel",
+            "familiar": 0.8,
+            "why": "small hard bits on paths",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Cement",
+            "familiar": 0.7,
+            "why": "hard grey powder mix",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Coal",
+            "familiar": 0.7,
+            "why": "hard black lumps",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Concrete",
+            "familiar": 0.6,
+            "why": "hard grey floor",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Salt crystal",
+            "familiar": 0.6,
+            "why": "hard tiny white grains",
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "nature_not_alive/ground",
+        "chain": "Things in nature that are not alive > Rocks and soil > Gets sticky",
+        "fixed": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "gets_sticky"
+        },
+        "need": 3,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Wet clay",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Potter's clay",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Sticky clay",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Clay lump",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Clay ball",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "offers_1": [
+          {
+            "name": "Slush",
+            "familiar": 0.8,
+            "why": "Sticky wet mud after rain",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Muck",
+            "familiar": 0.7,
+            "why": "Sticky dirt",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Sludge",
+            "familiar": 0.3,
+            "why": "Thick sticky mud",
+            "recognised": false,
+            "suitable": true
+          },
+          {
+            "name": "Gumbo",
+            "familiar": 0.2,
+            "why": "Sticky soil that clumps",
+            "recognised": false,
+            "suitable": true
+          },
+          {
+            "name": "Ooze",
+            "familiar": 0.2,
+            "why": "Wet sticky ground",
+            "recognised": false,
+            "suitable": true
+          },
+          {
+            "name": "Adhesive mud",
+            "familiar": 0.1,
+            "why": "Mud that sticks to hands",
+            "recognised": false,
+            "suitable": true
+          },
+          {
+            "name": "Mire",
+            "familiar": 0.1,
+            "why": "Soft sticky earth",
+            "recognised": false,
+            "suitable": true
+          }
+        ],
+        "offers_2": [
+          {
+            "name": "Sticky mud",
+            "familiar": 0.9,
+            "why": "mud that sticks to feet",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Sticky soil",
+            "familiar": 0.8,
+            "why": "soil that sticks to hands",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Wet soil",
+            "familiar": 0.8,
+            "why": "soil after rain",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Sticky dirt",
+            "familiar": 0.8,
+            "why": "dirt that sticks",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Damp soil",
+            "familiar": 0.7,
+            "why": "slightly wet soil",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Sticky earth",
+            "familiar": 0.7,
+            "why": "earth that clings",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Wet earth",
+            "familiar": 0.7,
+            "why": "earth after rain",
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "nature_not_alive/ground",
+        "chain": "Things in nature that are not alive > Rocks and soil > Washes away",
+        "fixed": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "washes_away"
+        },
+        "need": 3,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Gravel",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "White sand",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Yellow sand",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "offers_1": [
+          {
+            "name": "Pebble",
+            "familiar": 0.9,
+            "why": "Small smooth stone, common on paths and gardens.",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Dust",
+            "familiar": 0.9,
+            "why": "Dry dirt particles, visible on surfaces and in air.",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Chalk",
+            "familiar": 0.9,
+            "why": "Soft white rock, used for writing on boards.",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Gravel",
+            "familiar": 0.8,
+            "why": "Loose small stones, seen on roads and driveways.",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Ash",
+            "familiar": 0.7,
+            "why": "Grey powder left after fire, common in kitchens.",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Soot",
+            "familiar": 0.3,
+            "why": "Black powder from smoke, seen on cooking pots.",
+            "recognised": false,
+            "suitable": true
+          },
+          {
+            "name": "Silt",
+            "familiar": 0.2,
+            "why": "Fine sand-like sediment in rivers and ponds.",
+            "recognised": false,
+            "suitable": true
+          }
+        ],
+        "offers_2": [
+          {
+            "name": "Pebbles",
+            "familiar": 0.9,
+            "why": "Small stones, common on paths and playgrounds.",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Gravel",
+            "familiar": 0.8,
+            "why": "Loose stones, seen on roads and driveways.",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Boulders",
+            "familiar": 0.8,
+            "why": "Large rocks, seen in hills or parks.",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Sewage",
+            "familiar": 0.7,
+            "why": "Dirty water with waste, seen in open drains.",
+            "recognised": false,
+            "suitable": true
+          },
+          {
+            "name": "Runoff",
+            "familiar": 0.65,
+            "why": "Water flowing over ground after rain.",
+            "recognised": false,
+            "suitable": true
+          },
+          {
+            "name": "Sludge",
+            "familiar": 0.6,
+            "why": "Thick muddy waste, seen near drains after rain.",
+            "recognised": false,
+            "suitable": true
+          },
+          {
+            "name": "Sediment",
+            "familiar": 0.6,
+            "why": "Material that settles at the bottom of water.",
+            "recognised": false,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      }
+    ],
+    "circles": [
+      {
+        "circle": "nature_not_alive/sky",
+        "label": "Things in the sky",
+        "chain": "Things in nature that are not alive > Things in the sky",
+        "needs_field": true,
+        "expect_things": 16,
+        "done": true
+      },
+      {
+        "circle": "nature_not_alive/water",
+        "label": "Water",
+        "chain": "Things in nature that are not alive > Water",
+        "needs_field": true,
+        "expect_things": 16,
+        "done": true
+      },
+      {
+        "circle": "nature_not_alive/land",
+        "label": "Places on land",
+        "chain": "Things in nature that are not alive > Places on land",
+        "needs_field": true,
+        "expect_things": 14,
+        "done": true
+      },
+      {
+        "circle": "nature_not_alive/ground",
+        "label": "Rocks and soil",
+        "chain": "Things in nature that are not alive > Rocks and soil",
+        "needs_field": true,
+        "expect_things": 15,
+        "field_added": true,
+        "asks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "done": true
+      },
+      {
+        "circle": "animal/mammal",
+        "label": "Mammals",
+        "chain": "Animals > Mammals",
+        "needs_field": true,
+        "expect_things": 8,
+        "done": true
+      },
+      {
+        "circle": "animal/reptile",
+        "label": "Reptiles",
+        "chain": "Animals > Reptiles",
+        "needs_field": true,
+        "expect_things": 8,
+        "done": true
+      },
+      {
+        "circle": "animal/bird",
+        "label": "Birds",
+        "chain": "Animals > Birds",
+        "needs_field": true,
+        "expect_things": 10,
+        "done": true
+      },
+      {
+        "circle": "animal/insect",
+        "label": "Insects",
+        "chain": "Animals > Insects",
+        "needs_field": true,
+        "expect_things": 12,
+        "done": true
+      },
+      {
+        "circle": "animal/fish",
+        "label": "Fish",
+        "chain": "Animals > Fish",
+        "needs_field": true,
+        "expect_things": 15,
+        "done": true
+      },
+      {
+        "circle": "plant/tree",
+        "label": "Trees",
+        "chain": "Plants > Trees",
+        "needs_field": true,
+        "expect_things": 16,
+        "done": true
+      },
+      {
+        "circle": "plant/flower",
+        "label": "Flowers",
+        "chain": "Plants > Flowers",
+        "needs_field": true,
+        "expect_things": 16,
+        "done": true
+      },
+      {
+        "circle": "plant/grass_grain",
+        "label": "Grasses and grains",
+        "chain": "Plants > Grasses and grains",
+        "needs_field": true,
+        "expect_things": 15,
+        "done": true
+      },
+      {
+        "circle": "made_by_people/toy",
+        "label": "Toys",
+        "chain": "Things people make > Toys",
+        "needs_field": true,
+        "expect_things": 13,
+        "done": true
+      },
+      {
+        "circle": "made_by_people/tool",
+        "label": "Tools",
+        "chain": "Things people make > Tools",
+        "needs_field": true,
+        "expect_things": 15,
+        "done": true
+      },
+      {
+        "circle": "made_by_people/building",
+        "label": "Buildings",
+        "chain": "Things people make > Buildings",
+        "needs_field": true,
+        "expect_things": 13,
+        "done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": [],
+    "held_back": [
+      "Amphibians: rejected",
+      "Land hunters: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Land grazers: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Flyers: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Swimmers: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "The fruit: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "What grows under the ground: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "The leaves: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "The seeds or pods: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "On the road: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "On rails: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "On water: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "In the air: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Furniture: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Things to eat and drink with: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Things to clean with: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Things that run on electricity: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+    ],
+    "played": null
+  },
+  "retry_held": true,
+  "things": [
+    {
+      "name": "Wet soil",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Wet soil",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "gets_mushy"
+        },
+        "familiar": 0.8,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_mushy"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_nature",
+        "kind_of_thing",
+        "what_happens_when_wet"
+      ],
+      "ask": 0,
+      "draw": "A patch of wet brown soil, dark and glistening with moisture, soft and sticky, clumped together in a mushy lump on the ground, natural earthy colours",
+      "tries": 1,
+      "tile": "job_2026_10_07_02_1_01_c8"
+    },
+    {
+      "name": "Mud patch",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.9,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_mushy"
+      },
+      "why": [
+        "it is Mud again, or a part of it, and that is already in the game"
+      ],
+      "ask": 0
+    },
+    {
+      "name": "Muck",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Muck",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "gets_mushy"
+        },
+        "familiar": 0.7,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_mushy"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "what_happens_when_wet"
+      ],
+      "ask": 0,
+      "draw": "A dark brown, soft, wet lump of muck soil, glistening and mushy, resting on the ground in India, with no plants or leaves visible in it",
+      "tries": 1,
+      "tile": "job_2026_10_07_02_1_01_c2"
+    },
+    {
+      "name": "Wet dirt",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Wet dirt",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "gets_mushy"
+        },
+        "familiar": 0.8,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_mushy"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_nature",
+        "kind_of_thing",
+        "what_happens_when_wet"
+      ],
+      "ask": 0,
+      "draw": "A patch of wet brown mud, dark and glossy, soft and mushy, with a few small puddles and squelchy lumps, resting on bare ground",
+      "tries": 2,
+      "tile": "job_2026_10_07_02_2_01_c1",
+      "no_tile": "no tile of it passed the checks after 1 sheet(s)"
+    },
+    {
+      "name": "Boulder",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Boulder",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "stays_hard"
+        },
+        "familiar": 0.8,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "stays_hard"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "what_happens_when_wet"
+      ],
+      "ask": 1,
+      "draw": "A single large grey-brown rock, bigger than a child, rough and rounded, resting alone on plain ground",
+      "tries": 1,
+      "tile": "job_2026_10_07_02_1_01_c4"
+    },
+    {
+      "name": "Pebble",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Pebble",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "stays_hard"
+        },
+        "familiar": 0.9,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "stays_hard"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "what_happens_when_wet"
+      ],
+      "ask": 1,
+      "draw": "One smooth grey-brown pebble, rounded oval, resting alone on plain ground, with faint quartz veins and a slightly rough natural surface, as an Indian child finds on a beach or riverbank",
+      "tries": 1,
+      "tile": "job_2026_10_07_02_1_01_c5"
+    },
+    {
+      "name": "Stone",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.95,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "stays_hard"
+      },
+      "why": [
+        "it is Rock under another name: both are filed under 'Rock (geology)'"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Brick",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'Things people make', not 'Things in nature that are not alive'"
+      ],
+      "thing": {
+        "name": "Brick",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building"
+        },
+        "familiar": 0.9,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_made_thing": "building",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "stays_hard"
+      },
+      "familiar": 0.9,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Chalk",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Stays hard': the two checks disagree: 'gets_mushy' and 'washes_away'"
+      ],
+      "thing": {
+        "name": "Chalk",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "washes_away"
+        },
+        "familiar": 0.9,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "stays_hard"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": true,
+      "judged_not_sourced": [
+        "what_happens_when_wet"
+      ],
+      "ask": 1,
+      "held_as": "waiting for the owner"
+    },
+    {
+      "name": "Gravel",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Gravel",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "stays_hard"
+        },
+        "familiar": 0.8,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "stays_hard"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_nature",
+        "kind_of_thing",
+        "what_happens_when_wet"
+      ],
+      "ask": 1,
+      "draw": "A small heap of loose grey and brown rock pieces, some tiny granules and some larger pebbles, all hard and rough, resting on bare ground",
+      "tries": 1,
+      "tile": "job_2026_10_07_02_1_01_c6"
+    },
+    {
+      "name": "Cement",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'Things people make', not 'Things in nature that are not alive'"
+      ],
+      "thing": {
+        "name": "Cement",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building"
+        },
+        "familiar": 0.7,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_made_thing": "building",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "stays_hard"
+      },
+      "familiar": 0.7,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing",
+        "kind_of_thing"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Coal",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Coal",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "stays_hard"
+        },
+        "familiar": 0.7,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "stays_hard"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "what_happens_when_wet"
+      ],
+      "ask": 1,
+      "draw": "A single shiny black lump of coal, hard and blocky with rough edges, resting on bare ground, in natural black colour",
+      "tries": 1,
+      "tile": "job_2026_10_07_02_1_01_c7"
+    },
+    {
+      "name": "Wet clay",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Wet clay",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "gets_sticky"
+        },
+        "familiar": 0.8,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02",
+        "notes": {
+          "what_happens_when_wet": "The pages point to 'Gets mushy'. Two checks, sorting it as a parent would, both put it in 'Gets sticky'."
+        }
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_nature",
+        "kind_of_thing",
+        "what_happens_when_wet"
+      ],
+      "ask": 2,
+      "not_drawn": true,
+      "no_tile": "its facts passed, but only 1 of the 3 things the group needs did, so it was not drawn. A later run carries on from here",
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Potter's clay",
+      "passed": false,
+      "why": [
+        "it could not be settled that it belongs in 'Things in nature that are not alive'"
+      ],
+      "thing": {
+        "name": "Potter's clay",
+        "fields": {},
+        "familiar": 0.7,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 2,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Sticky clay",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'Things people make', not 'Things in nature that are not alive'"
+      ],
+      "thing": {
+        "name": "Sticky clay",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy"
+        },
+        "familiar": 0.8,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_made_thing": "toy",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.8,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing",
+        "kind_of_thing"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Clay lump",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.8,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "why": [
+        "it is Clay again, or a part of it, and that is already in the game"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Clay ball",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.8,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "why": [
+        "it is Clay again, or a part of it, and that is already in the game"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Slush",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Rocks and soil': it fits more than one group: water and ground"
+      ],
+      "thing": {
+        "name": "Slush",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "water"
+        },
+        "familiar": 0.8,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": true,
+      "judged_not_sourced": [],
+      "ask": 2,
+      "held_as": "waiting for the owner"
+    },
+    {
+      "name": "Sludge",
+      "passed": false,
+      "familiar": 0.3,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 2,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Gumbo",
+      "passed": false,
+      "familiar": 0.2,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 2,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Ooze",
+      "passed": false,
+      "familiar": 0.2,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 2,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Adhesive mud",
+      "passed": false,
+      "familiar": 0.1,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 2,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Mire",
+      "passed": false,
+      "familiar": 0.1,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 2,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Sticky mud",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'Gets mushy', not 'Gets sticky'"
+      ],
+      "thing": {
+        "name": "Sticky mud",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "gets_mushy"
+        },
+        "familiar": 0.9,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.9,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_nature",
+        "kind_of_thing",
+        "what_happens_when_wet"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Sticky soil",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Gets sticky': it fits more than one group: gets_sticky and gets_mushy"
+      ],
+      "thing": {
+        "name": "Sticky soil",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground"
+        },
+        "familiar": 0.8,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": true,
+      "judged_not_sourced": [
+        "kind_of_nature",
+        "kind_of_thing"
+      ],
+      "ask": 2,
+      "held_as": "waiting for the owner"
+    },
+    {
+      "name": "Sticky dirt",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Gets sticky': it fits more than one group: gets_sticky and gets_mushy"
+      ],
+      "thing": {
+        "name": "Sticky dirt",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "gets_mushy"
+        },
+        "familiar": 0.8,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": true,
+      "judged_not_sourced": [
+        "kind_of_nature",
+        "kind_of_thing",
+        "what_happens_when_wet"
+      ],
+      "ask": 2,
+      "held_as": "waiting for the owner"
+    },
+    {
+      "name": "Damp soil",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'Gets mushy', not 'Gets sticky'"
+      ],
+      "thing": {
+        "name": "Damp soil",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "gets_mushy"
+        },
+        "familiar": 0.7,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.7,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_nature",
+        "kind_of_thing",
+        "what_happens_when_wet"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Sticky earth",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Gets sticky': it fits more than one group: gets_sticky and gets_mushy"
+      ],
+      "thing": {
+        "name": "Sticky earth",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "gets_mushy"
+        },
+        "familiar": 0.7,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": true,
+      "judged_not_sourced": [
+        "kind_of_nature",
+        "kind_of_thing",
+        "what_happens_when_wet"
+      ],
+      "ask": 2,
+      "held_as": "waiting for the owner"
+    },
+    {
+      "name": "Wet earth",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'Gets mushy', not 'Gets sticky'"
+      ],
+      "thing": {
+        "name": "Wet earth",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "gets_mushy"
+        },
+        "familiar": 0.7,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "familiar": 0.7,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_nature",
+        "kind_of_thing",
+        "what_happens_when_wet"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "White sand",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Rocks and soil': it fits more than one group: ground and land"
+      ],
+      "thing": {
+        "name": "White sand",
+        "fields": {
+          "kind_of_thing": "nature_not_alive"
+        },
+        "familiar": 0.9,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": true,
+      "judged_not_sourced": [
+        "kind_of_thing"
+      ],
+      "ask": 3,
+      "held_as": "waiting for the owner"
+    },
+    {
+      "name": "Yellow sand",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Rocks and soil': it fits more than one group: ground and land"
+      ],
+      "thing": {
+        "name": "Yellow sand",
+        "fields": {
+          "kind_of_thing": "nature_not_alive"
+        },
+        "familiar": 0.9,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": true,
+      "judged_not_sourced": [],
+      "ask": 3,
+      "held_as": "waiting for the owner"
+    },
+    {
+      "name": "Dust",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Dust",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "washes_away"
+        },
+        "familiar": 0.9,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "what_happens_when_wet"
+      ],
+      "ask": 3,
+      "not_drawn": true,
+      "no_tile": "its facts passed, but only 2 of the 3 things the group needs did, so it was not drawn. A later run carries on from here",
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Ash",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Ash",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "washes_away"
+        },
+        "familiar": 0.7,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "what_happens_when_wet"
+      ],
+      "ask": 3,
+      "not_drawn": true,
+      "no_tile": "its facts passed, but only 2 of the 3 things the group needs did, so it was not drawn. A later run carries on from here",
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Soot",
+      "passed": false,
+      "familiar": 0.3,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 3,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Silt",
+      "passed": false,
+      "familiar": 0.2,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 3,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Pebbles",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'Stays hard', not 'Washes away'"
+      ],
+      "thing": {
+        "name": "Pebbles",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground"
+        },
+        "familiar": 0.9,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "familiar": 0.9,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 3
+    },
+    {
+      "name": "Boulders",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'Stays hard', not 'Washes away'"
+      ],
+      "thing": {
+        "name": "Boulders",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "ground",
+          "what_happens_when_wet": "stays_hard"
+        },
+        "familiar": 0.8,
+        "reviewed": 5,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-02"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "familiar": 0.8,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "what_happens_when_wet"
+      ],
+      "ask": 3
+    },
+    {
+      "name": "Sewage",
+      "passed": false,
+      "familiar": 0.7,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 3,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Runoff",
+      "passed": false,
+      "familiar": 0.65,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 3,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Sediment",
+      "passed": false,
+      "familiar": 0.6,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 3,
+      "held_as": "held by the rules"
+    }
+  ],
+  "sheets": [
+    "job_2026_10_07_02_1_01",
+    "job_2026_10_07_02_2_01"
+  ],
+  "stopped": "",
+  "fields_added": [
+    {
+      "circle": "nature_not_alive/ground",
+      "label": "Rocks and soil",
+      "field": "what_happens_when_wet",
+      "wording": "What happens when it gets wet?",
+      "values": {
+        "stays_hard": "Stays hard",
+        "gets_sticky": "Gets sticky",
+        "gets_mushy": "Gets mushy",
+        "washes_away": "Washes away"
+      },
+      "filled": 5,
+      "off_the_board": [],
+      "version": 5
+    }
+  ],
+  "fields_held": [
+    {
+      "circle": "nature_not_alive/sky",
+      "label": "Things in the sky",
+      "tried": [
+        {
+          "wording": "When do we see it?",
+          "values": {
+            "daytime": "In the day",
+            "nighttime": "At night",
+            "anytime": "Any time",
+            "never": "We never see it"
+          },
+          "why": [
+            "not every thing has one value: 1 of the 4 things there fit more than one group, and at most 0 may (Cloud: anytime and daytime and nighttime)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What shape is it?",
+          "values": {
+            "round": "Round like a ball",
+            "fluffy": "Fluffy like cotton",
+            "pointy": "Pointy like a triangle",
+            "long": "Long like a line"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 81% of the things where the proposer did (Star: 'round' or 'pointy'; Tree: 'pointy' or 'no one group'; Arrow: 'pointy' or 'no one group'; Pencil: 'long' or 'no one group')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Does it give light?",
+          "values": {
+            "gives_light": "Gives light",
+            "no_light": "Does not give light",
+            "reflects_light": "Shines with others' light",
+            "blocks_light": "Blocks light"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Moon: 'gives_light' or 'reflects_light'; Cloud: 'no_light' or 'blocks_light'; Tree: 'no_light' or 'blocks_light'; Window: 'reflects_light' or 'no one group')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What is it made of?",
+          "values": {
+            "rock": "Made of rock",
+            "water": "Made of water",
+            "fire": "Made of fire",
+            "air": "Made of air"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 60% of the things where the proposer did (Moon: 'air' or 'rock'; Candle: 'fire' or 'no one group'; Lamp: 'fire' or 'no one group'; Torch: 'fire' or 'no one group')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How does it move?",
+          "values": {
+            "stays_still": "Stays still",
+            "floats": "Floats in the sky",
+            "rolls": "Rolls on the ground",
+            "flows": "Flows like water"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 80% of the things where the proposer did (Leaf: 'floats' or 'no one group'; Tap: 'flows' or 'no one group'; Hose: 'flows' or 'no one group')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What does it give us?",
+          "values": {
+            "light": "Gives us light",
+            "water": "Gives us water",
+            "food": "Gives us food",
+            "air": "Gives us air"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Milk: 'food' or 'no one group'; Tree: 'air' or 'no one group'; Plant: 'air' or 'no one group'; Leaf: 'air' or 'no one group')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        }
+      ]
+    },
+    {
+      "circle": "nature_not_alive/water",
+      "label": "Water",
+      "tried": [
+        {
+          "wording": "How big is the water?",
+          "values": {
+            "tiny": "Tiny water",
+            "small": "Small water",
+            "big": "Big water",
+            "long": "Long water"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 52% of the things where the proposer did (Lake: 'small' or 'big'; Pond: 'tiny' or 'small'; Bowl: 'tiny' or 'small'; Mug: 'tiny' or 'no one group')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Does the water move or stay still?",
+          "values": {
+            "still": "Still water",
+            "moving": "Moving water",
+            "wavy": "Wavy water",
+            "falling": "Falling water"
+          },
+          "why": [
+            "not every thing has one value: 1 of the 4 things there fit more than one group, and at most 0 may (Sea: moving and wavy)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Is the water salty or not salty?",
+          "values": {
+            "salty": "Salty water",
+            "not_salty": "Not salty water",
+            "sweet": "Sweet water",
+            "dirty": "Dirty water"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 65% of the things where the proposer did (Lagoon: 'salty' or 'no one group'; Pool: 'not_salty' or 'no one group'; Well: 'sweet' or 'not_salty'; Spring: 'sweet' or 'not_salty')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Does the water flow or stay still?",
+          "values": {
+            "flowing": "Water that flows",
+            "still": "Water that stays still",
+            "big_waves": "Big water with waves",
+            "frozen": "Frozen water"
+          },
+          "why": [
+            "not every value has four familiar things: 'Water that flows' has 3, 'Big water with waves' has 1"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Is the water big or small?",
+          "values": {
+            "very_big": "Very big water",
+            "big": "Big water",
+            "small": "Small water",
+            "tiny": "Tiny water"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 61% of the things where the proposer did (Bay: 'very_big' or 'big'; Harbor: 'very_big' or 'big'; Shore: 'very_big' or 'no one group'; Pool: 'big' or 'small')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Is the water salty or not salty?",
+          "values": {
+            "salty": "Salty water",
+            "not_salty": "Not salty water",
+            "sweet": "Sweet water",
+            "no_taste": "Water with no taste"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 56% of the things where the proposer did (Lagoon: 'salty' or 'no one group'; Harbor: 'salty' or 'no one group'; Shore: 'salty' or 'no one group'; Pool: 'not_salty' or 'no one group')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        }
+      ]
+    },
+    {
+      "circle": "nature_not_alive/land",
+      "label": "Places on land",
+      "tried": [
+        {
+          "wording": "What shape is the land?",
+          "values": {
+            "high_raised": "High raised land",
+            "flat_low": "Flat low land",
+            "hole_underground": "Hole or underground",
+            "water_edge": "Water edge"
+          },
+          "why": [
+            "not every value has four familiar things: 'Flat low land' has 3, 'Hole or underground' has 1, 'Water edge' has 1"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What is the land made of?",
+          "values": {
+            "rock": "Rock",
+            "sand": "Sand",
+            "soil": "Soil",
+            "water": "Water"
+          },
+          "why": [
+            "not every value has four familiar things: 'Sand' has 2, 'Water' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Is the land high or low?",
+          "values": {
+            "very_high": "Very high",
+            "high": "High",
+            "low": "Low",
+            "underground": "Underground"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 82% of the things where the proposer did (Cliff: 'very_high' or 'high'; Skyscraper: 'very_high' or 'no one group'; Dune: 'high' or 'low'; Mound: 'high' or 'low')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What shape is the land?",
+          "values": {
+            "high_rocky": "High rocky land",
+            "flat_sandy": "Flat sandy land",
+            "hole_underground": "Hole or underground",
+            "water_edge": "Water edge"
+          },
+          "why": [
+            "not every thing has one value: 1 of the 6 things there fit more than one group, and at most 0 may (Beach: water_edge and flat_sandy)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Is the land high or low?",
+          "values": {
+            "very_high": "Very high land",
+            "high": "High land",
+            "low": "Low land",
+            "underground": "Underground"
+          },
+          "why": [
+            "not every value has four familiar things: 'Very high land' has 2, 'Underground' has 1"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What is the land made of?",
+          "values": {
+            "rock": "Rock",
+            "sand": "Sand",
+            "soil": "Soil",
+            "water": "Water"
+          },
+          "why": [
+            "not every value has four familiar things: 'Rock' has 3, 'Sand' has 2, 'Water' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        }
+      ]
+    },
+    {
+      "circle": "animal/mammal",
+      "label": "Mammals",
+      "tried": [
+        {
+          "wording": "What is its body covered with?",
+          "values": {
+            "fur": "Furry animals",
+            "hair": "Hairy animals",
+            "thick_skin": "Thick-skinned animals",
+            "scales": "Scaly animals"
+          },
+          "why": [
+            "not every thing has one value: 4 of the 12 things there fit more than one group, and at most 1 may (Cow: fur and hair; Horse: fur and hair; Goat: fur and hair; Giraffe: fur and hair)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How many legs does it have?",
+          "values": {
+            "two_legs": "Two-legged animals",
+            "four_legs": "Four-legged animals",
+            "six_legs": "Six-legged animals",
+            "many_legs": "Many-legged animals"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Monkey: 'four_legs' or 'no one group'; Spider: 'many_legs' or 'no one group'; Scorpion: 'many_legs' or 'no one group'; Crab: 'many_legs' or 'no one group')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Is it big or small?",
+          "values": {
+            "very_big": "Very big animals",
+            "big": "Big animals",
+            "medium": "Medium animals",
+            "small": "Small animals"
+          },
+          "why": [
+            "not every thing has one value: 4 of the 12 things there fit more than one group, and at most 1 may (Cow: very_big and big; Monkey: medium and small; Horse: very_big and big; Bear: very_big and big)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What does its skin look like?",
+          "values": {
+            "fur_or_hair": "Furry or hairy",
+            "thick_grey_skin": "Thick grey skin",
+            "spots_or_patches": "Spots or patches",
+            "scales_or_feathers": "Scales or feathers"
+          },
+          "why": [
+            "not every value has four familiar things: 'Scales or feathers' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What does it eat?",
+          "values": {
+            "eats_meat": "Eats meat",
+            "eats_plants": "Eats plants",
+            "eats_everything": "Eats everything",
+            "eats_nectar": "Eats nectar"
+          },
+          "why": [
+            "not every value has four familiar things: 'Eats nectar' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How does it move?",
+          "values": {
+            "walks_or_runs": "Walks or runs",
+            "hops": "Hops",
+            "swims": "Swims",
+            "flies": "Flies"
+          },
+          "why": [
+            "not every value has four familiar things: 'Hops' has 2, 'Swims' has 3, 'Flies' has 1"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        }
+      ]
+    },
+    {
+      "circle": "animal/reptile",
+      "label": "Reptiles",
+      "tried": [
+        {
+          "wording": "What is its body covered with?",
+          "values": {
+            "dry_scales": "Dry scaly skin",
+            "hard_shell": "Hard shell on back",
+            "bumpy_armor": "Bumpy armor plates",
+            "smooth_wet_skin": "Smooth wet skin"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 77% of the things where the proposer did (Crocodile: 'bumpy_armor' or 'dry_scales'; Alligator: 'bumpy_armor' or 'dry_scales'; Caiman: 'bumpy_armor' or 'dry_scales'; Gharial: 'bumpy_armor' or 'dry_scales')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How many legs does it have?",
+          "values": {
+            "four_legs": "Four legs",
+            "no_legs": "No legs",
+            "two_legs": "Two legs",
+            "many_legs": "Many legs"
+          },
+          "why": [
+            "not every value has four familiar things: 'Two legs' has 0, 'Many legs' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Where does it live?",
+          "values": {
+            "in_water": "In water",
+            "on_land": "On land",
+            "in_trees": "In trees",
+            "underground": "Underground"
+          },
+          "why": [
+            "not every thing has one value: 5 of the 12 things there fit more than one group, and at most 1 may (Crocodile: in_water and on_land; Turtle: in_water and on_land; Anaconda: in_water and on_land; Titanoboa: in_water and on_land; Vasuki indicus: in_water and on_land)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What is its body like?",
+          "values": {
+            "long_and_no_legs": "Long and no legs",
+            "four_legs_and_shell": "Four legs and shell",
+            "four_legs_and_scaly": "Four legs and scaly",
+            "long_and_four_legs": "Long and four legs"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 84% of the things where the proposer did (Snail: 'four_legs_and_shell' or 'no one group'; Hermit crab: 'four_legs_and_shell' or 'no one group'; Armadillo: 'four_legs_and_shell' or 'no one group'; Pangolin: 'four_legs_and_shell' or 'no one group')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How many legs does it have?",
+          "values": {
+            "no_legs": "No legs",
+            "four_legs": "Four legs",
+            "two_legs": "Two legs",
+            "many_legs": "Many legs"
+          },
+          "why": [
+            "not every value has four familiar things: 'Two legs' has 0, 'Many legs' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What is its tail like?",
+          "values": {
+            "long_thin_tail": "Long thin tail",
+            "short_stubby_tail": "Short stubby tail",
+            "thick_heavy_tail": "Thick heavy tail",
+            "no_tail": "No tail"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Monitor lizard: 'long_thin_tail' or 'thick_heavy_tail'; Anaconda: 'long_thin_tail' or 'thick_heavy_tail'; Python: 'long_thin_tail' or 'thick_heavy_tail'; Titanoboa: 'long_thin_tail' or 'thick_heavy_tail')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        }
+      ]
+    },
+    {
+      "circle": "animal/bird",
+      "label": "Birds",
+      "tried": [
+        {
+          "wording": "Where does this bird live?",
+          "values": {
+            "in_trees": "In trees",
+            "on_farms": "On farms",
+            "near_water": "Near water",
+            "in_mountains": "In mountains"
+          },
+          "why": [
+            "not every thing has one value: 5 of the 10 things there fit more than one group, and at most 1 may (Crow: in_trees and on_farms; Pigeon: in_trees and on_farms; Duck: near_water and on_farms; Peacock: in_trees and on_farms; Eagle: in_mountains and in_trees)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What color is this bird?",
+          "values": {
+            "black": "Black",
+            "white": "White",
+            "green": "Green",
+            "brown": "Brown"
+          },
+          "why": [
+            "not every thing has a value: Pigeon - it fits more than one group; Duck - it fits more than one group; Peacock - it fits more than one group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How big is this bird?",
+          "values": {
+            "very_big": "Very big",
+            "big": "Big",
+            "small": "Small",
+            "very_small": "Very small"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 84% of the things where the proposer did (Crow: 'small' or 'big'; Flamingo: 'big' or 'very_big'; Heron: 'big' or 'no one group'; Koel: 'small' or 'no one group')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Where does this bird find its food?",
+          "values": {
+            "on_the_ground": "On the ground",
+            "in_trees_and_bushes": "In trees and bushes",
+            "in_the_water": "In the water",
+            "high_in_the_sky": "High in the sky"
+          },
+          "why": [
+            "not every value has four familiar things: 'High in the sky' has 3"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What does this bird eat?",
+          "values": {
+            "seeds_and_grains": "Seeds and grains",
+            "fruits_and_nuts": "Fruits and nuts",
+            "small_animals": "Small animals",
+            "water_plants_and_fish": "Water plants and fish"
+          },
+          "why": [
+            "not every thing has one value: 5 of the 10 things there fit more than one group, and at most 1 may (Crow: seeds_and_grains and small_animals; Parrot: fruits_and_nuts and seeds_and_grains; Hen: seeds_and_grains and small_animals; Duck: water_plants_and_fish and seeds_and_grains; Peacock: seeds_and_grains and small_animals)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Where does this bird make its nest?",
+          "values": {
+            "in_trees": "In trees",
+            "on_the_ground": "On the ground",
+            "in_holes_and_burrows": "In holes and burrows",
+            "on_cliffs_and_high_rocks": "On cliffs and high rocks"
+          },
+          "why": [
+            "not every thing has one value: 3 of the 10 things there fit more than one group, and at most 1 may (Pigeon: in_holes_and_burrows and on_cliffs_and_high_rocks; Eagle: in_trees and on_cliffs_and_high_rocks; Owl: in_holes_and_burrows and in_trees)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        }
+      ]
+    },
+    {
+      "circle": "animal/insect",
+      "label": "Insects",
+      "tried": [
+        {
+          "wording": "Where do you see it?",
+          "values": {
+            "in_the_house": "In the house",
+            "in_the_garden": "In the garden",
+            "in_the_water": "In the water",
+            "in_the_sky": "In the sky"
+          },
+          "why": [
+            "not every value has four familiar things: 'In the house' has 2, 'In the water' has 0, 'In the sky' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How does it move?",
+          "values": {
+            "flies": "It flies",
+            "crawls": "It crawls",
+            "hops": "It hops",
+            "swims": "It swims"
+          },
+          "why": [
+            "not every value has four familiar things: 'It hops' has 1, 'It swims' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What is on its body?",
+          "values": {
+            "has_wings": "It has wings",
+            "has_antennae": "It has antennae",
+            "has_fur": "It has fur",
+            "has_scales": "It has scales"
+          },
+          "why": [
+            "not every thing has one value: 7 of the 8 things there fit more than one group, and at most 1 may (Butterfly: has_wings and has_antennae; Housefly: has_wings and has_antennae; Mosquito: has_wings and has_antennae; Honeybee: has_wings and has_antennae; Cockroach: has_antennae and has_wings; Grasshopper: has_wings and has_antennae; Ladybug: has_wings and has_antennae)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Where do you usually see it?",
+          "values": {
+            "in_the_house": "In the house",
+            "in_the_garden": "In the garden",
+            "in_the_water": "In the water",
+            "in_the_sky": "In the sky"
+          },
+          "why": [
+            "not every thing has one value: 6 of the 8 things there fit more than one group, and at most 1 may (Butterfly: in_the_garden and in_the_sky; Ant: in_the_garden and in_the_house; Housefly: in_the_house and in_the_garden; Mosquito: in_the_garden and in_the_house and in_the_sky; Honeybee: in_the_garden and in_the_sky; Ladybug: in_the_garden and in_the_sky)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What color is it?",
+          "values": {
+            "red": "Red",
+            "black": "Black",
+            "brown": "Brown",
+            "yellow": "Yellow"
+          },
+          "why": [
+            "not every thing has a value: Butterfly - it fits more than one group; Ant - it fits more than one group; Housefly - it fits more than one group; Mosquito - it fits more than one group; Honeybee - it fits more than one group; Cockroach - it fits more than one group; Grasshopper - it fits more than one group; Ladybug - it fits more than one group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What shape are its wings?",
+          "values": {
+            "round_wings": "Round wings",
+            "long_thin_wings": "Long thin wings",
+            "clear_wings": "Clear wings",
+            "no_wings": "No wings"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 50% of the things where the proposer did (Butterfly: 'long_thin_wings' or 'round_wings'; Cockroach: 'no_wings' or 'clear_wings'; Grasshopper: 'no_wings' or 'clear_wings'; Ladybug: 'round_wings' or 'clear_wings')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        }
+      ]
+    },
+    {
+      "circle": "animal/fish",
+      "label": "Fish",
+      "tried": [
+        {
+          "wording": "What shape is the fish?",
+          "values": {
+            "round_like_a_ball": "Round like a ball",
+            "long_like_a_cucumber": "Long like a cucumber",
+            "flat_like_a_plate": "Flat like a plate",
+            "pointy_like_a_triangle": "Pointy like a triangle"
+          },
+          "why": [
+            "not every thing has one value: 1 of the 5 things there fit more than one group, and at most 0 may (Catla fish: long_like_a_cucumber and round_like_a_ball)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How big is the fish?",
+          "values": {
+            "tiny_like_a_pea": "Tiny like a pea",
+            "small_like_a_banana": "Small like a banana",
+            "big_like_a_bicycle": "Big like a bicycle",
+            "huge_like_a_car": "Huge like a car"
+          },
+          "why": [
+            "not every value has four familiar things: 'Tiny like a pea' has 3, 'Huge like a car' has 3"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What color is the fish?",
+          "values": {
+            "orange": "Orange",
+            "silver_or_grey": "Silver or grey",
+            "blue": "Blue",
+            "yellow": "Yellow"
+          },
+          "why": [
+            "not every value has four familiar things: 'Silver or grey' has 3"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What shape is the fish?",
+          "values": {
+            "long_like_a_cucumber": "Long like a cucumber",
+            "round_like_a_ball": "Round like a ball",
+            "flat_like_a_plate": "Flat like a plate",
+            "other_shape": "Other shape"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Goldfish: 'round_like_a_ball' or 'other_shape'; Catla fish: 'long_like_a_cucumber' or 'other_shape'; Shark: 'flat_like_a_plate' or 'long_like_a_cucumber'; Clownfish: 'round_like_a_ball' or 'other_shape')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How big is the fish?",
+          "values": {
+            "tiny_like_a_pea": "Tiny like a pea",
+            "small_like_a_cat": "Small like a cat",
+            "big_like_a_person": "Big like a person",
+            "huge_like_a_car": "Huge like a car"
+          },
+          "why": [
+            "not every thing has one value: 5 of the 5 things there fit more than one group, and at most 0 may (Goldfish: tiny_like_a_pea and small_like_a_cat; Rohu fish: small_like_a_cat and big_like_a_person; Catla fish: small_like_a_cat and big_like_a_person; Shark: big_like_a_person and huge_like_a_car; Clownfish: tiny_like_a_pea and small_like_a_cat)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Where does the fish live?",
+          "values": {
+            "in_a_home_tank": "In a home tank",
+            "in_a_river_or_pond": "In a river or pond",
+            "in_the_deep_sea": "In the deep sea",
+            "in_a_coral_reef": "In a coral reef"
+          },
+          "why": [
+            "not every thing has one value: 1 of the 5 things there fit more than one group, and at most 0 may (Goldfish: in_a_home_tank and in_a_river_or_pond)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        }
+      ]
+    },
+    {
+      "circle": "plant/tree",
+      "label": "Trees",
+      "tried": [
+        {
+          "wording": "What shape are the leaves?",
+          "values": {
+            "long_leaves": "Long leaves",
+            "small_leaves": "Small leaves",
+            "round_leaves": "Round leaves",
+            "feathery_leaves": "Feathery leaves"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 61% of the things where the proposer did (Coconut tree: 'long_leaves' or 'feathery_leaves'; Palm tree: 'long_leaves' or 'feathery_leaves'; Date palm: 'long_leaves' or 'feathery_leaves'; Areca palm: 'long_leaves' or 'feathery_leaves')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What is the trunk like?",
+          "values": {
+            "thick_trunk": "Thick trunk",
+            "soft_stem": "Soft stem",
+            "thin_trunk": "Thin trunk",
+            "no_trunk": "No trunk"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 81% of the things where the proposer did (Rose plant: 'thin_trunk' or 'soft_stem'; Hibiscus plant: 'thin_trunk' or 'soft_stem'; Tulsi plant: 'thin_trunk' or 'soft_stem')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What kind of fruit does it give?",
+          "values": {
+            "big_fruit": "Big fruit",
+            "small_fruit": "Small fruit",
+            "no_fruit": "No fruit",
+            "many_seeds": "Many seeds"
+          },
+          "why": [
+            "not every thing has one value: 1 of the 4 things there fit more than one group, and at most 0 may (Banana plant: big_fruit and small_fruit)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What shape are the leaves?",
+          "values": {
+            "big_round_leaves": "Big round leaves",
+            "long_feathery_leaves": "Long feathery leaves",
+            "small_thin_leaves": "Small thin leaves",
+            "spiky_leaves": "Spiky leaves"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 71% of the things where the proposer did (Mango tree: 'big_round_leaves' or 'long_feathery_leaves'; Neem tree: 'long_feathery_leaves' or 'small_thin_leaves'; Guava tree: 'big_round_leaves' or 'small_thin_leaves'; Tamarind tree: 'long_feathery_leaves' or 'small_thin_leaves')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What is the trunk like?",
+          "values": {
+            "thick_rough_trunk": "Thick rough trunk",
+            "soft_green_stem": "Soft green stem",
+            "thin_woody_stem": "Thin woody stem",
+            "no_trunk": "No trunk"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 76% of the things where the proposer did (Rose plant: 'soft_green_stem' or 'thin_woody_stem'; Hibiscus plant: 'soft_green_stem' or 'thin_woody_stem'; Sugarcane plant: 'thin_woody_stem' or 'no one group'; Lettuce plant: 'no_trunk' or 'soft_green_stem')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What kind of fruit does it give?",
+          "values": {
+            "big_fruit": "Big fruit",
+            "small_fruit": "Small fruit",
+            "no_fruit": "No fruit",
+            "many_seeds": "Many seeds"
+          },
+          "why": [
+            "not every thing has a value: Banana plant - it fits more than one group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        }
+      ]
+    },
+    {
+      "circle": "plant/flower",
+      "label": "Flowers",
+      "tried": [
+        {
+          "wording": "What shape is the flower?",
+          "values": {
+            "cup_shape": "Cup or bowl shape",
+            "round_puff": "Round puff or ball",
+            "flat_open": "Flat and open",
+            "big_face": "Big round face"
+          },
+          "why": [
+            "not every thing has a value: Rose - it fits more than one group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What color is the flower?",
+          "values": {
+            "red": "Red or pink",
+            "yellow": "Yellow or orange",
+            "white": "White or cream",
+            "blue_purple": "Blue or purple"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 4 things there fit more than one group, and at most 0 may (Rose: red and yellow and white; Lotus: red and white and blue_purple)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Does the flower smell nice?",
+          "values": {
+            "very_sweet": "Very sweet smell",
+            "light_smell": "Light or no smell",
+            "strong_spicy": "Strong spicy smell",
+            "bad_smell": "Bad or rotten smell"
+          },
+          "why": [
+            "not every value has four familiar things: 'Strong spicy smell' has 2, 'Bad or rotten smell' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What shape is the flower?",
+          "values": {
+            "cup_or_bowl": "Cup or bowl shape",
+            "round_flat": "Round flat shape",
+            "star_or_spiky": "Star or spiky shape",
+            "bell_or_trumpet": "Bell or trumpet shape"
+          },
+          "why": [
+            "not every thing has one value: 1 of the 4 things there fit more than one group, and at most 0 may (Lotus: round_flat and cup_or_bowl)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How big is the flower?",
+          "values": {
+            "very_big": "Very big flower",
+            "medium": "Medium flower",
+            "small": "Small flower",
+            "tiny": "Tiny flower"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 57% of the things where the proposer did (Marigold: 'medium' or 'small'; Dahlia: 'very_big' or 'medium'; Peony: 'very_big' or 'medium'; Hibiscus: 'very_big' or 'medium')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How many petals does the flower have?",
+          "values": {
+            "many_petals": "Many petals",
+            "five_petals": "Five petals",
+            "four_petals": "Four petals",
+            "three_petals": "Three petals"
+          },
+          "why": [
+            "not every value has four familiar things: 'Four petals' has 1, 'Three petals' has 2"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        }
+      ]
+    },
+    {
+      "circle": "plant/grass_grain",
+      "label": "Grasses and grains",
+      "tried": [
+        {
+          "wording": "How tall is it?",
+          "values": {
+            "very_tall": "Very tall, taller than a house",
+            "tall": "Tall, taller than a person",
+            "medium": "Medium, about knee-high",
+            "short": "Short, close to the ground"
+          },
+          "why": [
+            "not every value has four familiar things: 'Very tall, taller than a house' has 2, 'Tall, taller than a person' has 0, 'Medium, about knee-high' has 2, 'Short, close to the ground' has 1"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Is its stem thick and hard, or thin and soft?",
+          "values": {
+            "very_thick_hard": "Very thick and hard stem",
+            "thick_soft": "Thick but soft stem",
+            "thin_hard": "Thin but hard stem",
+            "thin_soft": "Thin and soft stem"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 72% of the things where the proposer did (Rice plant: 'thin_hard' or 'thin_soft'; Wheat: 'thick_soft' or 'thin_soft'; Jowar plant: 'thick_soft' or 'thin_soft'; Bajra plant: 'thick_soft' or 'thin_soft')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Does it have grains we can eat?",
+          "values": {
+            "big_grains": "Yes, big grains",
+            "small_grains": "Yes, small grains",
+            "no_grains_but_sweet": "No grains, but sweet juice inside",
+            "no_grains": "No grains at all"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Rice plant: 'small_grains' or 'big_grains'; Jowar: 'big_grains' or 'small_grains'; Bajra: 'big_grains' or 'small_grains'; Millet: 'big_grains' or 'small_grains')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Where does it grow?",
+          "values": {
+            "in_water": "In water",
+            "on_land": "On land",
+            "in_forest": "In the forest",
+            "in_desert": "In the desert"
+          },
+          "why": [
+            "not every thing has one value: 1 of the 5 things there fit more than one group, and at most 0 may (Rice plant: in_water and on_land)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How does it look?",
+          "values": {
+            "tall_and_thick": "Tall and thick",
+            "tall_and_thin": "Tall and thin",
+            "short_and_green": "Short and green",
+            "bushy_and_round": "Bushy and round"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 5 things there fit more than one group, and at most 0 may (Rice plant: short_and_green and tall_and_thin; Bamboo: tall_and_thin and tall_and_thick)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What is its stem like?",
+          "values": {
+            "soft_and_green": "Soft and green",
+            "hard_and_woody": "Hard and woody",
+            "thick_and_juicy": "Thick and juicy",
+            "climbing_and_vine": "Climbing and vine"
+          },
+          "why": [
+            "not every value has four familiar things: 'Soft and green' has 3, 'Hard and woody' has 1, 'Thick and juicy' has 1, 'Climbing and vine' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        }
+      ]
+    },
+    {
+      "circle": "made_by_people/toy",
+      "label": "Toys",
+      "tried": [
+        {
+          "wording": "What is it made of?",
+          "values": {
+            "soft": "Soft and cuddly",
+            "plastic": "Plastic and hard",
+            "paper": "Paper and light",
+            "air": "Air and stretchy"
+          },
+          "why": [
+            "not every thing has a value: Ball - it fits more than one group; Doll - it fits more than one group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How do you play with it?",
+          "values": {
+            "throw": "Throw and catch",
+            "cuddle": "Cuddle and hug",
+            "build": "Build and stack",
+            "push": "Push and roll"
+          },
+          "why": [
+            "not every thing has a value: Kite - it fits no group; Balloon - it fits no group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What shape is it?",
+          "values": {
+            "round": "Round and ball-shaped",
+            "animal": "Animal-shaped",
+            "box": "Box-shaped",
+            "vehicle": "Vehicle-shaped"
+          },
+          "why": [
+            "not every thing has a value: Doll - it fits no group; Kite - it fits no group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How does it move?",
+          "values": {
+            "rolls": "Rolls on wheels",
+            "flies": "Flies in the air",
+            "bounces": "Bounces up and down",
+            "stays_still": "Stays still"
+          },
+          "why": [
+            "not every thing has one value: 1 of the 7 things there fit more than one group, and at most 0 may (Ball: bounces and rolls)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What is it made of?",
+          "values": {
+            "cloth": "Made of cloth",
+            "plastic": "Made of plastic",
+            "paper": "Made of paper",
+            "rubber": "Made of rubber"
+          },
+          "why": [
+            "not every thing has a value: Building blocks - it fits more than one group; Toy car - it fits more than one group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How do you play with it?",
+          "values": {
+            "throw_and_catch": "Throw and catch",
+            "push_and_roll": "Push and roll",
+            "cuddle_and_hug": "Cuddle and hug",
+            "fly_in_the_air": "Fly in the air"
+          },
+          "why": [
+            "not every thing has a value: Building blocks - it fits no group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        }
+      ]
+    },
+    {
+      "circle": "made_by_people/tool",
+      "label": "Tools",
+      "tried": [
+        {
+          "wording": "How do we move it to make it work?",
+          "values": {
+            "push_and_pull": "Push and pull with hands",
+            "press_and_turn": "Press and turn",
+            "swing_and_hit": "Swing and hit",
+            "push_with_foot": "Push with foot"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Hammer: 'push_and_pull' or 'swing_and_hit'; Hand drill: 'push_and_pull' or 'press_and_turn'; Chisel: 'push_and_pull' or 'swing_and_hit'; Hoe: 'push_with_foot' or 'push_and_pull')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What is it made of?",
+          "values": {
+            "metal_head_wood_handle": "Metal head, wood handle",
+            "all_metal": "All metal",
+            "metal_blade_wood_handle": "Metal blade, wood handle",
+            "other_materials": "Other materials"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 62% of the things where the proposer did (Saw: 'all_metal' or 'metal_blade_wood_handle'; Screwdriver: 'all_metal' or 'metal_blade_wood_handle'; Axe: 'metal_head_wood_handle' or 'metal_blade_wood_handle'; Hatchet: 'metal_head_wood_handle' or 'metal_blade_wood_handle')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What does it do to things?",
+          "values": {
+            "hits_and_smashes": "Hits and smashes",
+            "cuts_and_slices": "Cuts and slices",
+            "digs_and_lifts": "Digs and lifts",
+            "twists_and_fastens": "Twists and fastens"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Axe: 'hits_and_smashes' or 'cuts_and_slices'; Pickaxe: 'hits_and_smashes' or 'no one group'; Hatchet: 'hits_and_smashes' or 'cuts_and_slices'; Mattock: 'hits_and_smashes' or 'no one group')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How do we hold it when we use it?",
+          "values": {
+            "one_hand": "Hold with one hand",
+            "two_hands": "Hold with two hands",
+            "one_hand_and_guide": "Hold with one hand and guide with the other",
+            "not_held": "Not held while working"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 5 things there fit more than one group, and at most 0 may (Spade: two_hands and one_hand_and_guide; Axe: two_hands and one_hand_and_guide)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What shape is the part that does the work?",
+          "values": {
+            "flat_and_wide": "Flat and wide",
+            "pointed_and_thin": "Pointed and thin",
+            "toothed_edge": "Toothed edge",
+            "heavy_block": "Heavy block"
+          },
+          "why": [
+            "not every thing has one value: 1 of the 5 things there fit more than one group, and at most 0 may (Axe: pointed_and_thin and toothed_edge)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "How does it move when you use it?",
+          "values": {
+            "up_and_down": "Up and down",
+            "back_and_forth": "Back and forth",
+            "turn_around": "Turn around",
+            "push_into_ground": "Push into the ground"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 82% of the things where the proposer did (Pestle: 'up_and_down' or 'no one group'; Chain saw: 'back_and_forth' or 'turn_around'; Pliers: 'turn_around' or 'no one group'; Hoe: 'push_into_ground' or 'back_and_forth')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        }
+      ]
+    },
+    {
+      "circle": "made_by_people/building",
+      "label": "Buildings",
+      "tried": [
+        {
+          "wording": "Who goes inside this building?",
+          "values": {
+            "families": "Families live here",
+            "worshippers": "People pray here",
+            "learners": "Children learn here",
+            "sick_people": "Sick people get help"
+          },
+          "why": [
+            "not every thing has a value: Shop - it fits no group; Bridge - it fits no group; Tower - it fits no group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What happens inside this building?",
+          "values": {
+            "buying_selling": "People buy and sell",
+            "learning": "Children learn",
+            "healing": "Sick people get help",
+            "praying": "People pray"
+          },
+          "why": [
+            "not every thing has a value: House - it fits no group; Bridge - it fits no group; Tower - it fits no group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What does this building look like?",
+          "values": {
+            "tall_and_thin": "Tall and thin",
+            "long_and_flat": "Long and flat",
+            "with_a_dome": "Has a dome",
+            "with_a_sign": "Has a sign outside"
+          },
+          "why": [
+            "not every thing has a value: House - it fits no group; School - it fits no group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "Where do people go?",
+          "values": {
+            "to_learn": "Places to learn",
+            "to_buy": "Places to buy things",
+            "to_get_help": "Places to get help",
+            "to_visit": "Places to visit"
+          },
+          "why": [
+            "not every thing has a value: House - it fits no group; Bridge - it fits no group; Tower - it fits no group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What do people do there?",
+          "values": {
+            "learn": "Places where people learn",
+            "buy": "Places where people buy things",
+            "get_help": "Places where people get help",
+            "visit": "Places where people visit"
+          },
+          "why": [
+            "not every thing has a value: House - it fits no group; Bridge - it fits no group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        },
+        {
+          "wording": "What does it look like?",
+          "values": {
+            "tall": "Tall and thin",
+            "long": "Long and flat",
+            "big": "Big and wide",
+            "small": "Small and cozy"
+          },
+          "why": [
+            "not every value has four familiar things: 'Tall and thin' has 3, 'Long and flat' has 1"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-02"
+        }
+      ]
+    }
+  ],
+  "open_before": [
+    "animal",
+    "animal/dinosaur",
+    "made_by_people",
+    "made_by_people/household",
+    "made_by_people/vehicle",
+    "nature_not_alive",
+    "plant",
+    "plant/vegetable",
+    "seed"
+  ],
+  "spent_usd": {
+    "deepseek": 0.16411,
+    "drawing": 0.2344,
+    "picture_checks": 0.00085
+  },
+  "opened": []
+}

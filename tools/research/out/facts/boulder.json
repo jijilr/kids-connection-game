@@ -1,0 +1,48 @@
+{
+  "name": "Boulder",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "In geology, a boulder is a rock fragment with size greater than 25.6 cm (10.1 in) in diameter.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "ground",
+      "quote": "In geology, a boulder is a rock fragment with size greater than 25.6 cm (10.1 in) in diameter.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_happens_when_wet": {
+      "value": "stays_hard",
+      "basis": "judged, not sourced",
+      "why": "A boulder is a solid rock fragment, so getting wet does not make it sticky, mushy, or wash it away."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Boulder",
+      "title": "Boulder",
+      "asked_for": "Boulder",
+      "revision": 1358572143,
+      "fetched_on": "2026-10-07",
+      "sha256": "1921d0204598ec60f25b9b8937abfeaa7d54184119b19d658f13eb23cf50a1f5"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Boulder",
+      "title": "Boulder",
+      "asked_for": "Boulder",
+      "revision": 9347671,
+      "fetched_on": "2026-10-07",
+      "sha256": "60b126237d816d497c384782c58f763d966aeb8f30010c7e9a18df6d69ff2fac"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

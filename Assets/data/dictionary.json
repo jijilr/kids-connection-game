@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "status": "version 4 approved by the owner on 2026-10-06 (versions 1 to 3 the same day). The game reads this file.",
+  "version": 5,
+  "status": "version 5. Versions 1 to 4 were approved by the owner. Since 7 Oct 2026 a field is added by the rules when it passes the four tests, and the digest of the run that added it says so. The game reads this file.",
   "about": "Every field a thing may carry, and the only values that field may take. A field that does not apply to a thing is left out of that thing; it is never written as 'not applicable'. The wording is what a child sees or hears; it is not data.",
   "rules": [
     "A field holds the everyday meaning, which is what the game sorts by.",
@@ -201,6 +201,21 @@
         "kind_of_made_thing": "household"
       },
       "since": 4
+    },
+    "what_happens_when_wet": {
+      "wording": "What happens when it gets wet?",
+      "meaning": "everyday",
+      "values": {
+        "stays_hard": "Stays hard",
+        "gets_sticky": "Gets sticky",
+        "gets_mushy": "Gets mushy",
+        "washes_away": "Washes away"
+      },
+      "expected_on": {
+        "kind_of_nature": "ground"
+      },
+      "since": 5,
+      "added_by": "the rules, job run 2026-10-07-02"
     }
   }
 }

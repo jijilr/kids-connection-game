@@ -1,0 +1,42 @@
+{
+  "name": "Brick",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A brick (not to be confused with the coring method) is a man-made building material used to make walls,  and make places to walk.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "basis": "judged, not sourced",
+      "why": "Bricks are building material used to build walls and other parts of buildings."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Brick",
+      "title": "Brick",
+      "asked_for": "Brick",
+      "revision": 1378498497,
+      "fetched_on": "2026-10-07",
+      "sha256": "8acf014fe9fde38e8d9df325959e806b18830b60fff0dc5e54d6f11536c2736e"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Brick",
+      "title": "Brick",
+      "asked_for": "Brick",
+      "revision": 10888626,
+      "fetched_on": "2026-10-07",
+      "sha256": "abe7ab05d4a2625145cd7d45641a7082d0fe1ba7bc5e6e7e05ecf814a345fe11"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

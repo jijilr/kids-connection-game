@@ -1,0 +1,43 @@
+{
+  "name": "Slush",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "In the natural environment, slush forms when ice or snow melts or during mixed precipitation.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "water",
+      "quote": "Slush, also called slush ice, is a slurry mixture of small ice crystals (e.g. snow) and liquid water.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Slush",
+      "title": "Slush",
+      "asked_for": "Slush",
+      "revision": 1375303723,
+      "fetched_on": "2026-10-07",
+      "sha256": "68bd029df603d8e8fbd2a8e02941770068d016fbcb912be4009c28667c1f1180"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Slush",
+      "title": "Slush",
+      "asked_for": "Slush",
+      "revision": 10358979,
+      "fetched_on": "2026-10-07",
+      "sha256": "2183c5df7d854e06d155d39a2487db64a83faf140d8141fc0fa44d39b6cd69ff"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

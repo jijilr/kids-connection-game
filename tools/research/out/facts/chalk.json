@@ -1,0 +1,48 @@
+{
+  "name": "Chalk",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "Chalk is a soft, white, porous, sedimentary carbonate rock.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "ground",
+      "quote": "Chalk is a soft, white, porous, sedimentary carbonate rock.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_happens_when_wet": {
+      "value": "washes_away",
+      "basis": "judged, not sourced",
+      "why": "The source says rain will wash chalk marks off the ground, so when wet it washes away."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Chalk",
+      "title": "Chalk",
+      "asked_for": "Chalk",
+      "revision": 1377668010,
+      "fetched_on": "2026-10-07",
+      "sha256": "aa07a401a3042e37b86608033c16f2d2f1ce954eb8c03bc2bd089e64d4b20297"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Chalk",
+      "title": "Chalk",
+      "asked_for": "Chalk",
+      "revision": 10143394,
+      "fetched_on": "2026-10-07",
+      "sha256": "e455bee619c3ec79f0205b6755f25f2d5badf2eeda1d7016ed64a6d6887856ee"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

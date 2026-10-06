@@ -1,8 +1,8 @@
 {
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-10-07",
-  "dictionary_version": 4,
-  "things": 187,
+  "dictionary_version": 5,
+  "things": 194,
   "rules": {
     "weights": {
       "nearness": 3,
@@ -33,18 +33,14 @@
     }
   },
   "proposals": [
-    "nature_not_alive/sky",
-    "nature_not_alive/water",
-    "nature_not_alive/land",
-    "nature_not_alive/ground",
-    "animal/mammal"
+    "nature_not_alive/ground"
   ],
   "circles": {
     "seed": {
       "label": "Everything",
       "steps_from_seed": 0,
       "branch": null,
-      "members": 187,
+      "members": 194,
       "open": true,
       "sorted_by": "kind_of_thing",
       "decisions": [],
@@ -96,6 +92,13 @@
           "what": "given back to the rules after test 2 was recalibrated",
           "why": "run 2026-10-07-01 judged it by a test stricter than the owner's own fields can pass",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-02",
+          "why": "\"What is its body covered with?\": not every thing has one value: 4 of the 12 things there fit more than one group, and at most 1 may (Cow: fur and hair; Horse: fur and hair; Goat: fur and hair; Giraffe: fur and hair); \"How many legs does it have?\": its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Monkey: 'four_legs' or 'no one group'; Spider: 'many_legs' or 'no one group'; Scorpion: 'many_legs' or 'no one group'; Crab: 'many_legs' or 'no one group'); \"Is it big or small?\": not every thing has one value: 4 of the 12 things there fit more than one group, and at most 1 may (Cow: very_big and big; Monkey: medium and small; Horse: very_big and big; Bear: very_big and big); \"What does its skin look like?\": not every value has four familiar things: 'Scales or feathers' has 0; \"What does it eat?\": not every value has four familiar things: 'Eats nectar' has 0; \"How does it move?\": not every value has four familiar things: 'Hops' has 2, 'Swims' has 3, 'Flies' has 1",
+          "members_then": 12,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -106,7 +109,8 @@
       },
       "score": 3.8,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What is its body covered with?\": not every thing has one value: 4 of the 12 things there fit more than one group, and at most 1 may (Cow: fur and hair; Horse: fur and hair; Goat: fur and hair; Giraffe: fur and hair); \"How many legs does it have?\": its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Monkey: 'four_legs' or 'no one group'; Spider: 'many_legs' or 'no one group'; Scorpion: 'many_legs' or 'no one group'; Crab: 'many_legs' or 'no one group'); \"Is it big or small?\": not every thing has one value: 4 of the 12 things there fit more than one group, and at most 1 may (Cow: very_big and big; Monkey: medium and small; Horse: very_big and big; Bear: very_big and big); \"What does its skin look like?\": not every value has four familiar things: 'Scales or feathers' has 0; \"What does it eat?\": not every value has four familiar things: 'Eats nectar' has 0; \"How does it move?\": not every value has four familiar things: 'Hops' has 2, 'Swims' has 3, 'Flies' has 1"
     },
     "animal/bird": {
       "label": "Birds",
@@ -131,6 +135,13 @@
           "what": "given back to the rules after test 2 was recalibrated",
           "why": "run 2026-10-07-01 judged it by a test stricter than the owner's own fields can pass",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-02",
+          "why": "\"Where does this bird live?\": not every thing has one value: 5 of the 10 things there fit more than one group, and at most 1 may (Crow: in_trees and on_farms; Pigeon: in_trees and on_farms; Duck: near_water and on_farms; Peacock: in_trees and on_farms; Eagle: in_mountains and in_trees); \"What color is this bird?\": not every thing has a value: Pigeon - it fits more than one group; Duck - it fits more than one group; Peacock - it fits more than one group; \"How big is this bird?\": its groups have no sharp edges: both checks placed only 84% of the things where the proposer did (Crow: 'small' or 'big'; Flamingo: 'big' or 'very_big'; Heron: 'big' or 'no one group'; Koel: 'small' or 'no one group'); \"Where does this bird find its food?\": not every value has four familiar things: 'High in the sky' has 3; \"What does this bird eat?\": not every thing has one value: 5 of the 10 things there fit more than one group, and at most 1 may (Crow: seeds_and_grains and small_animals; Parrot: fruits_and_nuts and seeds_and_grains; Hen: seeds_and_grains and small_animals; Duck: water_plants_and_fish and seeds_and_grains; Peacock: seeds_and_grains and small_animals); \"Where does this bird make its nest?\": not every thing has one value: 3 of the 10 things there fit more than one group, and at most 1 may (Pigeon: in_holes_and_burrows and on_cliffs_and_high_rocks; Eagle: in_trees and on_cliffs_and_high_rocks; Owl: in_holes_and_burrows and in_trees)",
+          "members_then": 10,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -141,7 +152,8 @@
       },
       "score": 3.7,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"Where does this bird live?\": not every thing has one value: 5 of the 10 things there fit more than one group, and at most 1 may (Crow: in_trees and on_farms; Pigeon: in_trees and on_farms; Duck: near_water and on_farms; Peacock: in_trees and on_farms; Eagle: in_mountains and in_trees); \"What color is this bird?\": not every thing has a value: Pigeon - it fits more than one group; Duck - it fits more than one group; Peacock - it fits more than one group; \"How big is this bird?\": its groups have no sharp edges: both checks placed only 84% of the things where the proposer did (Crow: 'small' or 'big'; Flamingo: 'big' or 'very_big'; Heron: 'big' or 'no one group'; Koel: 'small' or 'no one group'); \"Where does this bird find its food?\": not every value has four familiar things: 'High in the sky' has 3; \"What does this bird eat?\": not every thing has one value: 5 of the 10 things there fit more than one group, and at most 1 may (Crow: seeds_and_grains and small_animals; Parrot: fruits_and_nuts and seeds_and_grains; Hen: seeds_and_grains and small_animals; Duck: water_plants_and_fish and seeds_and_grains; Peacock: seeds_and_grains and small_animals); \"Where does this bird make its nest?\": not every thing has one value: 3 of the 10 things there fit more than one group, and at most 1 may (Pigeon: in_holes_and_burrows and on_cliffs_and_high_rocks; Eagle: in_trees and on_cliffs_and_high_rocks; Owl: in_holes_and_burrows and in_trees)"
     },
     "animal/fish": {
       "label": "Fish",
@@ -166,6 +178,13 @@
           "what": "given back to the rules after test 2 was recalibrated",
           "why": "run 2026-10-07-01 judged it by a test stricter than the owner's own fields can pass",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-02",
+          "why": "\"What shape is the fish?\": not every thing has one value: 1 of the 5 things there fit more than one group, and at most 0 may (Catla fish: long_like_a_cucumber and round_like_a_ball); \"How big is the fish?\": not every value has four familiar things: 'Tiny like a pea' has 3, 'Huge like a car' has 3; \"What color is the fish?\": not every value has four familiar things: 'Silver or grey' has 3; \"What shape is the fish?\": its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Goldfish: 'round_like_a_ball' or 'other_shape'; Catla fish: 'long_like_a_cucumber' or 'other_shape'; Shark: 'flat_like_a_plate' or 'long_like_a_cucumber'; Clownfish: 'round_like_a_ball' or 'other_shape'); \"How big is the fish?\": not every thing has one value: 5 of the 5 things there fit more than one group, and at most 0 may (Goldfish: tiny_like_a_pea and small_like_a_cat; Rohu fish: small_like_a_cat and big_like_a_person; Catla fish: small_like_a_cat and big_like_a_person; Shark: big_like_a_person and huge_like_a_car; Clownfish: tiny_like_a_pea and small_like_a_cat); \"Where does the fish live?\": not every thing has one value: 1 of the 5 things there fit more than one group, and at most 0 may (Goldfish: in_a_home_tank and in_a_river_or_pond)",
+          "members_then": 5,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -176,7 +195,8 @@
       },
       "score": 3.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What shape is the fish?\": not every thing has one value: 1 of the 5 things there fit more than one group, and at most 0 may (Catla fish: long_like_a_cucumber and round_like_a_ball); \"How big is the fish?\": not every value has four familiar things: 'Tiny like a pea' has 3, 'Huge like a car' has 3; \"What color is the fish?\": not every value has four familiar things: 'Silver or grey' has 3; \"What shape is the fish?\": its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Goldfish: 'round_like_a_ball' or 'other_shape'; Catla fish: 'long_like_a_cucumber' or 'other_shape'; Shark: 'flat_like_a_plate' or 'long_like_a_cucumber'; Clownfish: 'round_like_a_ball' or 'other_shape'); \"How big is the fish?\": not every thing has one value: 5 of the 5 things there fit more than one group, and at most 0 may (Goldfish: tiny_like_a_pea and small_like_a_cat; Rohu fish: small_like_a_cat and big_like_a_person; Catla fish: small_like_a_cat and big_like_a_person; Shark: big_like_a_person and huge_like_a_car; Clownfish: tiny_like_a_pea and small_like_a_cat); \"Where does the fish live?\": not every thing has one value: 1 of the 5 things there fit more than one group, and at most 0 may (Goldfish: in_a_home_tank and in_a_river_or_pond)"
     },
     "animal/insect": {
       "label": "Insects",
@@ -201,6 +221,13 @@
           "what": "given back to the rules after test 2 was recalibrated",
           "why": "run 2026-10-07-01 judged it by a test stricter than the owner's own fields can pass",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-02",
+          "why": "\"Where do you see it?\": not every value has four familiar things: 'In the house' has 2, 'In the water' has 0, 'In the sky' has 0; \"How does it move?\": not every value has four familiar things: 'It hops' has 1, 'It swims' has 0; \"What is on its body?\": not every thing has one value: 7 of the 8 things there fit more than one group, and at most 1 may (Butterfly: has_wings and has_antennae; Housefly: has_wings and has_antennae; Mosquito: has_wings and has_antennae; Honeybee: has_wings and has_antennae; Cockroach: has_antennae and has_wings; Grasshopper: has_wings and has_antennae; Ladybug: has_wings and has_antennae); \"Where do you usually see it?\": not every thing has one value: 6 of the 8 things there fit more than one group, and at most 1 may (Butterfly: in_the_garden and in_the_sky; Ant: in_the_garden and in_the_house; Housefly: in_the_house and in_the_garden; Mosquito: in_the_garden and in_the_house and in_the_sky; Honeybee: in_the_garden and in_the_sky; Ladybug: in_the_garden and in_the_sky); \"What color is it?\": not every thing has a value: Butterfly - it fits more than one group; Ant - it fits more than one group; Housefly - it fits more than one group; Mosquito - it fits more than one group; Honeybee - it fits more than one group; Cockroach - it fits more than one group; Grasshopper - it fits more than one group; Ladybug - it fits more than one group; \"What shape are its wings?\": its groups have no sharp edges: both checks placed only 50% of the things where the proposer did (Butterfly: 'long_thin_wings' or 'round_wings'; Cockroach: 'no_wings' or 'clear_wings'; Grasshopper: 'no_wings' or 'clear_wings'; Ladybug: 'round_wings' or 'clear_wings')",
+          "members_then": 8,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -211,7 +238,8 @@
       },
       "score": 3.7,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"Where do you see it?\": not every value has four familiar things: 'In the house' has 2, 'In the water' has 0, 'In the sky' has 0; \"How does it move?\": not every value has four familiar things: 'It hops' has 1, 'It swims' has 0; \"What is on its body?\": not every thing has one value: 7 of the 8 things there fit more than one group, and at most 1 may (Butterfly: has_wings and has_antennae; Housefly: has_wings and has_antennae; Mosquito: has_wings and has_antennae; Honeybee: has_wings and has_antennae; Cockroach: has_antennae and has_wings; Grasshopper: has_wings and has_antennae; Ladybug: has_wings and has_antennae); \"Where do you usually see it?\": not every thing has one value: 6 of the 8 things there fit more than one group, and at most 1 may (Butterfly: in_the_garden and in_the_sky; Ant: in_the_garden and in_the_house; Housefly: in_the_house and in_the_garden; Mosquito: in_the_garden and in_the_house and in_the_sky; Honeybee: in_the_garden and in_the_sky; Ladybug: in_the_garden and in_the_sky); \"What color is it?\": not every thing has a value: Butterfly - it fits more than one group; Ant - it fits more than one group; Housefly - it fits more than one group; Mosquito - it fits more than one group; Honeybee - it fits more than one group; Cockroach - it fits more than one group; Grasshopper - it fits more than one group; Ladybug - it fits more than one group; \"What shape are its wings?\": its groups have no sharp edges: both checks placed only 50% of the things where the proposer did (Butterfly: 'long_thin_wings' or 'round_wings'; Cockroach: 'no_wings' or 'clear_wings'; Grasshopper: 'no_wings' or 'clear_wings'; Ladybug: 'round_wings' or 'clear_wings')"
     },
     "animal/reptile": {
       "label": "Reptiles",
@@ -241,6 +269,13 @@
           "what": "given back to the rules after test 2 was recalibrated",
           "why": "run 2026-10-07-01 judged it by a test stricter than the owner's own fields can pass",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-02",
+          "why": "\"What is its body covered with?\": its groups have no sharp edges: both checks placed only 77% of the things where the proposer did (Crocodile: 'bumpy_armor' or 'dry_scales'; Alligator: 'bumpy_armor' or 'dry_scales'; Caiman: 'bumpy_armor' or 'dry_scales'; Gharial: 'bumpy_armor' or 'dry_scales'); \"How many legs does it have?\": not every value has four familiar things: 'Two legs' has 0, 'Many legs' has 0; \"Where does it live?\": not every thing has one value: 5 of the 12 things there fit more than one group, and at most 1 may (Crocodile: in_water and on_land; Turtle: in_water and on_land; Anaconda: in_water and on_land; Titanoboa: in_water and on_land; Vasuki indicus: in_water and on_land); \"What is its body like?\": its groups have no sharp edges: both checks placed only 84% of the things where the proposer did (Snail: 'four_legs_and_shell' or 'no one group'; Hermit crab: 'four_legs_and_shell' or 'no one group'; Armadillo: 'four_legs_and_shell' or 'no one group'; Pangolin: 'four_legs_and_shell' or 'no one group'); \"How many legs does it have?\": not every value has four familiar things: 'Two legs' has 0, 'Many legs' has 0; \"What is its tail like?\": its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Monitor lizard: 'long_thin_tail' or 'thick_heavy_tail'; Anaconda: 'long_thin_tail' or 'thick_heavy_tail'; Python: 'long_thin_tail' or 'thick_heavy_tail'; Titanoboa: 'long_thin_tail' or 'thick_heavy_tail')",
+          "members_then": 12,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -251,7 +286,8 @@
       },
       "score": 3.8,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What is its body covered with?\": its groups have no sharp edges: both checks placed only 77% of the things where the proposer did (Crocodile: 'bumpy_armor' or 'dry_scales'; Alligator: 'bumpy_armor' or 'dry_scales'; Caiman: 'bumpy_armor' or 'dry_scales'; Gharial: 'bumpy_armor' or 'dry_scales'); \"How many legs does it have?\": not every value has four familiar things: 'Two legs' has 0, 'Many legs' has 0; \"Where does it live?\": not every thing has one value: 5 of the 12 things there fit more than one group, and at most 1 may (Crocodile: in_water and on_land; Turtle: in_water and on_land; Anaconda: in_water and on_land; Titanoboa: in_water and on_land; Vasuki indicus: in_water and on_land); \"What is its body like?\": its groups have no sharp edges: both checks placed only 84% of the things where the proposer did (Snail: 'four_legs_and_shell' or 'no one group'; Hermit crab: 'four_legs_and_shell' or 'no one group'; Armadillo: 'four_legs_and_shell' or 'no one group'; Pangolin: 'four_legs_and_shell' or 'no one group'); \"How many legs does it have?\": not every value has four familiar things: 'Two legs' has 0, 'Many legs' has 0; \"What is its tail like?\": its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Monitor lizard: 'long_thin_tail' or 'thick_heavy_tail'; Anaconda: 'long_thin_tail' or 'thick_heavy_tail'; Python: 'long_thin_tail' or 'thick_heavy_tail'; Titanoboa: 'long_thin_tail' or 'thick_heavy_tail')"
     },
     "animal/amphibian": {
       "label": "Amphibians",
@@ -445,6 +481,13 @@
           "what": "given back to the rules after test 2 was recalibrated",
           "why": "run 2026-10-07-01 judged it by a test stricter than the owner's own fields can pass",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-02",
+          "why": "\"What shape are the leaves?\": its groups have no sharp edges: both checks placed only 61% of the things where the proposer did (Coconut tree: 'long_leaves' or 'feathery_leaves'; Palm tree: 'long_leaves' or 'feathery_leaves'; Date palm: 'long_leaves' or 'feathery_leaves'; Areca palm: 'long_leaves' or 'feathery_leaves'); \"What is the trunk like?\": its groups have no sharp edges: both checks placed only 81% of the things where the proposer did (Rose plant: 'thin_trunk' or 'soft_stem'; Hibiscus plant: 'thin_trunk' or 'soft_stem'; Tulsi plant: 'thin_trunk' or 'soft_stem'); \"What kind of fruit does it give?\": not every thing has one value: 1 of the 4 things there fit more than one group, and at most 0 may (Banana plant: big_fruit and small_fruit); \"What shape are the leaves?\": its groups have no sharp edges: both checks placed only 71% of the things where the proposer did (Mango tree: 'big_round_leaves' or 'long_feathery_leaves'; Neem tree: 'long_feathery_leaves' or 'small_thin_leaves'; Guava tree: 'big_round_leaves' or 'small_thin_leaves'; Tamarind tree: 'long_feathery_leaves' or 'small_thin_leaves'); \"What is the trunk like?\": its groups have no sharp edges: both checks placed only 76% of the things where the proposer did (Rose plant: 'soft_green_stem' or 'thin_woody_stem'; Hibiscus plant: 'soft_green_stem' or 'thin_woody_stem'; Sugarcane plant: 'thin_woody_stem' or 'no one group'; Lettuce plant: 'no_trunk' or 'soft_green_stem'); \"What kind of fruit does it give?\": not every thing has a value: Banana plant - it fits more than one group",
+          "members_then": 4,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -455,7 +498,8 @@
       },
       "score": 3.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What shape are the leaves?\": its groups have no sharp edges: both checks placed only 61% of the things where the proposer did (Coconut tree: 'long_leaves' or 'feathery_leaves'; Palm tree: 'long_leaves' or 'feathery_leaves'; Date palm: 'long_leaves' or 'feathery_leaves'; Areca palm: 'long_leaves' or 'feathery_leaves'); \"What is the trunk like?\": its groups have no sharp edges: both checks placed only 81% of the things where the proposer did (Rose plant: 'thin_trunk' or 'soft_stem'; Hibiscus plant: 'thin_trunk' or 'soft_stem'; Tulsi plant: 'thin_trunk' or 'soft_stem'); \"What kind of fruit does it give?\": not every thing has one value: 1 of the 4 things there fit more than one group, and at most 0 may (Banana plant: big_fruit and small_fruit); \"What shape are the leaves?\": its groups have no sharp edges: both checks placed only 71% of the things where the proposer did (Mango tree: 'big_round_leaves' or 'long_feathery_leaves'; Neem tree: 'long_feathery_leaves' or 'small_thin_leaves'; Guava tree: 'big_round_leaves' or 'small_thin_leaves'; Tamarind tree: 'long_feathery_leaves' or 'small_thin_leaves'); \"What is the trunk like?\": its groups have no sharp edges: both checks placed only 76% of the things where the proposer did (Rose plant: 'soft_green_stem' or 'thin_woody_stem'; Hibiscus plant: 'soft_green_stem' or 'thin_woody_stem'; Sugarcane plant: 'thin_woody_stem' or 'no one group'; Lettuce plant: 'no_trunk' or 'soft_green_stem'); \"What kind of fruit does it give?\": not every thing has a value: Banana plant - it fits more than one group"
     },
     "plant/flower": {
       "label": "Flowers",
@@ -493,6 +537,13 @@
           "what": "given back to the rules after test 2 was recalibrated",
           "why": "run 2026-10-07-01 judged it by a test stricter than the owner's own fields can pass",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-02",
+          "why": "\"What shape is the flower?\": not every thing has a value: Rose - it fits more than one group; \"What color is the flower?\": not every thing has one value: 2 of the 4 things there fit more than one group, and at most 0 may (Rose: red and yellow and white; Lotus: red and white and blue_purple); \"Does the flower smell nice?\": not every value has four familiar things: 'Strong spicy smell' has 2, 'Bad or rotten smell' has 0; \"What shape is the flower?\": not every thing has one value: 1 of the 4 things there fit more than one group, and at most 0 may (Lotus: round_flat and cup_or_bowl); \"How big is the flower?\": its groups have no sharp edges: both checks placed only 57% of the things where the proposer did (Marigold: 'medium' or 'small'; Dahlia: 'very_big' or 'medium'; Peony: 'very_big' or 'medium'; Hibiscus: 'very_big' or 'medium'); \"How many petals does the flower have?\": not every value has four familiar things: 'Four petals' has 1, 'Three petals' has 2",
+          "members_then": 4,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -503,7 +554,8 @@
       },
       "score": 3.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What shape is the flower?\": not every thing has a value: Rose - it fits more than one group; \"What color is the flower?\": not every thing has one value: 2 of the 4 things there fit more than one group, and at most 0 may (Rose: red and yellow and white; Lotus: red and white and blue_purple); \"Does the flower smell nice?\": not every value has four familiar things: 'Strong spicy smell' has 2, 'Bad or rotten smell' has 0; \"What shape is the flower?\": not every thing has one value: 1 of the 4 things there fit more than one group, and at most 0 may (Lotus: round_flat and cup_or_bowl); \"How big is the flower?\": its groups have no sharp edges: both checks placed only 57% of the things where the proposer did (Marigold: 'medium' or 'small'; Dahlia: 'very_big' or 'medium'; Peony: 'very_big' or 'medium'; Hibiscus: 'very_big' or 'medium'); \"How many petals does the flower have?\": not every value has four familiar things: 'Four petals' has 1, 'Three petals' has 2"
     },
     "plant/grass_grain": {
       "label": "Grasses and grains",
@@ -541,6 +593,13 @@
           "what": "given back to the rules after test 2 was recalibrated",
           "why": "run 2026-10-07-01 judged it by a test stricter than the owner's own fields can pass",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-02",
+          "why": "\"How tall is it?\": not every value has four familiar things: 'Very tall, taller than a house' has 2, 'Tall, taller than a person' has 0, 'Medium, about knee-high' has 2, 'Short, close to the ground' has 1; \"Is its stem thick and hard, or thin and soft?\": its groups have no sharp edges: both checks placed only 72% of the things where the proposer did (Rice plant: 'thin_hard' or 'thin_soft'; Wheat: 'thick_soft' or 'thin_soft'; Jowar plant: 'thick_soft' or 'thin_soft'; Bajra plant: 'thick_soft' or 'thin_soft'); \"Does it have grains we can eat?\": its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Rice plant: 'small_grains' or 'big_grains'; Jowar: 'big_grains' or 'small_grains'; Bajra: 'big_grains' or 'small_grains'; Millet: 'big_grains' or 'small_grains'); \"Where does it grow?\": not every thing has one value: 1 of the 5 things there fit more than one group, and at most 0 may (Rice plant: in_water and on_land); \"How does it look?\": not every thing has one value: 2 of the 5 things there fit more than one group, and at most 0 may (Rice plant: short_and_green and tall_and_thin; Bamboo: tall_and_thin and tall_and_thick); \"What is its stem like?\": not every value has four familiar things: 'Soft and green' has 3, 'Hard and woody' has 1, 'Thick and juicy' has 1, 'Climbing and vine' has 0",
+          "members_then": 5,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -551,7 +610,8 @@
       },
       "score": 3.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"How tall is it?\": not every value has four familiar things: 'Very tall, taller than a house' has 2, 'Tall, taller than a person' has 0, 'Medium, about knee-high' has 2, 'Short, close to the ground' has 1; \"Is its stem thick and hard, or thin and soft?\": its groups have no sharp edges: both checks placed only 72% of the things where the proposer did (Rice plant: 'thin_hard' or 'thin_soft'; Wheat: 'thick_soft' or 'thin_soft'; Jowar plant: 'thick_soft' or 'thin_soft'; Bajra plant: 'thick_soft' or 'thin_soft'); \"Does it have grains we can eat?\": its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Rice plant: 'small_grains' or 'big_grains'; Jowar: 'big_grains' or 'small_grains'; Bajra: 'big_grains' or 'small_grains'; Millet: 'big_grains' or 'small_grains'); \"Where does it grow?\": not every thing has one value: 1 of the 5 things there fit more than one group, and at most 0 may (Rice plant: in_water and on_land); \"How does it look?\": not every thing has one value: 2 of the 5 things there fit more than one group, and at most 0 may (Rice plant: short_and_green and tall_and_thin; Bamboo: tall_and_thin and tall_and_thick); \"What is its stem like?\": not every value has four familiar things: 'Soft and green' has 3, 'Hard and woody' has 1, 'Thick and juicy' has 1, 'Climbing and vine' has 0"
     },
     "plant/vegetable": {
       "label": "Vegetable plants",
@@ -670,7 +730,7 @@
       "label": "Things in nature that are not alive",
       "steps_from_seed": 1,
       "branch": "nature_not_alive",
-      "members": 20,
+      "members": 27,
       "open": true,
       "sorted_by": "kind_of_nature",
       "decisions": [],
@@ -712,6 +772,13 @@
           "what": "given back to the rules after test 2 was recalibrated",
           "why": "run 2026-10-07-01 judged it by a test stricter than the owner's own fields can pass",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-02",
+          "why": "\"When do we see it?\": not every thing has one value: 1 of the 4 things there fit more than one group, and at most 0 may (Cloud: anytime and daytime and nighttime); \"What shape is it?\": its groups have no sharp edges: both checks placed only 81% of the things where the proposer did (Star: 'round' or 'pointy'; Tree: 'pointy' or 'no one group'; Arrow: 'pointy' or 'no one group'; Pencil: 'long' or 'no one group'); \"Does it give light?\": its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Moon: 'gives_light' or 'reflects_light'; Cloud: 'no_light' or 'blocks_light'; Tree: 'no_light' or 'blocks_light'; Window: 'reflects_light' or 'no one group'); \"What is it made of?\": its groups have no sharp edges: both checks placed only 60% of the things where the proposer did (Moon: 'air' or 'rock'; Candle: 'fire' or 'no one group'; Lamp: 'fire' or 'no one group'; Torch: 'fire' or 'no one group'); \"How does it move?\": its groups have no sharp edges: both checks placed only 80% of the things where the proposer did (Leaf: 'floats' or 'no one group'; Tap: 'flows' or 'no one group'; Hose: 'flows' or 'no one group'); \"What does it give us?\": its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Milk: 'food' or 'no one group'; Tree: 'air' or 'no one group'; Plant: 'air' or 'no one group'; Leaf: 'air' or 'no one group')",
+          "members_then": 4,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -722,7 +789,8 @@
       },
       "score": 4.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"When do we see it?\": not every thing has one value: 1 of the 4 things there fit more than one group, and at most 0 may (Cloud: anytime and daytime and nighttime); \"What shape is it?\": its groups have no sharp edges: both checks placed only 81% of the things where the proposer did (Star: 'round' or 'pointy'; Tree: 'pointy' or 'no one group'; Arrow: 'pointy' or 'no one group'; Pencil: 'long' or 'no one group'); \"Does it give light?\": its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Moon: 'gives_light' or 'reflects_light'; Cloud: 'no_light' or 'blocks_light'; Tree: 'no_light' or 'blocks_light'; Window: 'reflects_light' or 'no one group'); \"What is it made of?\": its groups have no sharp edges: both checks placed only 60% of the things where the proposer did (Moon: 'air' or 'rock'; Candle: 'fire' or 'no one group'; Lamp: 'fire' or 'no one group'; Torch: 'fire' or 'no one group'); \"How does it move?\": its groups have no sharp edges: both checks placed only 80% of the things where the proposer did (Leaf: 'floats' or 'no one group'; Tap: 'flows' or 'no one group'; Hose: 'flows' or 'no one group'); \"What does it give us?\": its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Milk: 'food' or 'no one group'; Tree: 'air' or 'no one group'; Plant: 'air' or 'no one group'; Leaf: 'air' or 'no one group')"
     },
     "nature_not_alive/water": {
       "label": "Water",
@@ -747,6 +815,13 @@
           "what": "given back to the rules after test 2 was recalibrated",
           "why": "run 2026-10-07-01 judged it by a test stricter than the owner's own fields can pass",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-02",
+          "why": "\"How big is the water?\": its groups have no sharp edges: both checks placed only 52% of the things where the proposer did (Lake: 'small' or 'big'; Pond: 'tiny' or 'small'; Bowl: 'tiny' or 'small'; Mug: 'tiny' or 'no one group'); \"Does the water move or stay still?\": not every thing has one value: 1 of the 4 things there fit more than one group, and at most 0 may (Sea: moving and wavy); \"Is the water salty or not salty?\": its groups have no sharp edges: both checks placed only 65% of the things where the proposer did (Lagoon: 'salty' or 'no one group'; Pool: 'not_salty' or 'no one group'; Well: 'sweet' or 'not_salty'; Spring: 'sweet' or 'not_salty'); \"Does the water flow or stay still?\": not every value has four familiar things: 'Water that flows' has 3, 'Big water with waves' has 1; \"Is the water big or small?\": its groups have no sharp edges: both checks placed only 61% of the things where the proposer did (Bay: 'very_big' or 'big'; Harbor: 'very_big' or 'big'; Shore: 'very_big' or 'no one group'; Pool: 'big' or 'small'); \"Is the water salty or not salty?\": its groups have no sharp edges: both checks placed only 56% of the things where the proposer did (Lagoon: 'salty' or 'no one group'; Harbor: 'salty' or 'no one group'; Shore: 'salty' or 'no one group'; Pool: 'not_salty' or 'no one group')",
+          "members_then": 4,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -757,7 +832,8 @@
       },
       "score": 4.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"How big is the water?\": its groups have no sharp edges: both checks placed only 52% of the things where the proposer did (Lake: 'small' or 'big'; Pond: 'tiny' or 'small'; Bowl: 'tiny' or 'small'; Mug: 'tiny' or 'no one group'); \"Does the water move or stay still?\": not every thing has one value: 1 of the 4 things there fit more than one group, and at most 0 may (Sea: moving and wavy); \"Is the water salty or not salty?\": its groups have no sharp edges: both checks placed only 65% of the things where the proposer did (Lagoon: 'salty' or 'no one group'; Pool: 'not_salty' or 'no one group'; Well: 'sweet' or 'not_salty'; Spring: 'sweet' or 'not_salty'); \"Does the water flow or stay still?\": not every value has four familiar things: 'Water that flows' has 3, 'Big water with waves' has 1; \"Is the water big or small?\": its groups have no sharp edges: both checks placed only 61% of the things where the proposer did (Bay: 'very_big' or 'big'; Harbor: 'very_big' or 'big'; Shore: 'very_big' or 'no one group'; Pool: 'big' or 'small'); \"Is the water salty or not salty?\": its groups have no sharp edges: both checks placed only 56% of the things where the proposer did (Lagoon: 'salty' or 'no one group'; Harbor: 'salty' or 'no one group'; Shore: 'salty' or 'no one group'; Pool: 'not_salty' or 'no one group')"
     },
     "nature_not_alive/land": {
       "label": "Places on land",
@@ -782,6 +858,13 @@
           "what": "given back to the rules after test 2 was recalibrated",
           "why": "run 2026-10-07-01 judged it by a test stricter than the owner's own fields can pass",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-02",
+          "why": "\"What shape is the land?\": not every value has four familiar things: 'Flat low land' has 3, 'Hole or underground' has 1, 'Water edge' has 1; \"What is the land made of?\": not every value has four familiar things: 'Sand' has 2, 'Water' has 0; \"Is the land high or low?\": its groups have no sharp edges: both checks placed only 82% of the things where the proposer did (Cliff: 'very_high' or 'high'; Skyscraper: 'very_high' or 'no one group'; Dune: 'high' or 'low'; Mound: 'high' or 'low'); \"What shape is the land?\": not every thing has one value: 1 of the 6 things there fit more than one group, and at most 0 may (Beach: water_edge and flat_sandy); \"Is the land high or low?\": not every value has four familiar things: 'Very high land' has 2, 'Underground' has 1; \"What is the land made of?\": not every value has four familiar things: 'Rock' has 3, 'Sand' has 2, 'Water' has 0",
+          "members_then": 6,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -792,17 +875,23 @@
       },
       "score": 4.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What shape is the land?\": not every value has four familiar things: 'Flat low land' has 3, 'Hole or underground' has 1, 'Water edge' has 1; \"What is the land made of?\": not every value has four familiar things: 'Sand' has 2, 'Water' has 0; \"Is the land high or low?\": its groups have no sharp edges: both checks placed only 82% of the things where the proposer did (Cliff: 'very_high' or 'high'; Skyscraper: 'very_high' or 'no one group'; Dune: 'high' or 'low'; Mound: 'high' or 'low'); \"What shape is the land?\": not every thing has one value: 1 of the 6 things there fit more than one group, and at most 0 may (Beach: water_edge and flat_sandy); \"Is the land high or low?\": not every value has four familiar things: 'Very high land' has 2, 'Underground' has 1; \"What is the land made of?\": not every value has four familiar things: 'Rock' has 3, 'Sand' has 2, 'Water' has 0"
     },
     "nature_not_alive/ground": {
       "label": "Rocks and soil",
       "steps_from_seed": 2,
       "branch": "nature_not_alive",
-      "members": 5,
+      "members": 12,
       "open": false,
+      "sorted_by": "what_happens_when_wet",
       "missing": {
-        "field": "no field splits it four ways",
-        "things": 11
+        "field": null,
+        "short": {
+          "gets_sticky": 3,
+          "washes_away": 3
+        },
+        "things": 6
       },
       "decisions": [
         {
@@ -817,15 +906,21 @@
           "what": "given back to the rules after test 2 was recalibrated",
           "why": "run 2026-10-07-01 judged it by a test stricter than the owner's own fields can pass",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules added the field \"What happens when it gets wet?\" in job run 2026-10-07-02",
+          "why": "it passed the four tests: Stays hard, Gets sticky, Gets mushy, Washes away",
+          "status": "added by the rules"
         }
       ],
       "factors": {
         "nearness": 0.5,
         "neglect": 0.67,
         "unlocks": 0.33,
-        "cheapness": 0.21
+        "cheapness": 0.4
       },
-      "score": 4.6,
+      "score": 5.0,
       "move": "widening",
       "status": "proposable"
     },
@@ -968,6 +1063,13 @@
           "what": "given back to the rules after test 2 was recalibrated",
           "why": "run 2026-10-07-01 judged it by a test stricter than the owner's own fields can pass",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-02",
+          "why": "\"What is it made of?\": not every thing has a value: Ball - it fits more than one group; Doll - it fits more than one group; \"How do you play with it?\": not every thing has a value: Kite - it fits no group; Balloon - it fits no group; \"What shape is it?\": not every thing has a value: Doll - it fits no group; Kite - it fits no group; \"How does it move?\": not every thing has one value: 1 of the 7 things there fit more than one group, and at most 0 may (Ball: bounces and rolls); \"What is it made of?\": not every thing has a value: Building blocks - it fits more than one group; Toy car - it fits more than one group; \"How do you play with it?\": not every thing has a value: Building blocks - it fits no group",
+          "members_then": 7,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -978,7 +1080,8 @@
       },
       "score": 2.6,
       "move": "deepening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What is it made of?\": not every thing has a value: Ball - it fits more than one group; Doll - it fits more than one group; \"How do you play with it?\": not every thing has a value: Kite - it fits no group; Balloon - it fits no group; \"What shape is it?\": not every thing has a value: Doll - it fits no group; Kite - it fits no group; \"How does it move?\": not every thing has one value: 1 of the 7 things there fit more than one group, and at most 0 may (Ball: bounces and rolls); \"What is it made of?\": not every thing has a value: Building blocks - it fits more than one group; Toy car - it fits more than one group; \"How do you play with it?\": not every thing has a value: Building blocks - it fits no group"
     },
     "made_by_people/household": {
       "label": "Things in the house",
@@ -1122,6 +1225,13 @@
           "what": "given back to the rules after test 2 was recalibrated",
           "why": "run 2026-10-07-01 judged it by a test stricter than the owner's own fields can pass",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-02",
+          "why": "\"How do we move it to make it work?\": its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Hammer: 'push_and_pull' or 'swing_and_hit'; Hand drill: 'push_and_pull' or 'press_and_turn'; Chisel: 'push_and_pull' or 'swing_and_hit'; Hoe: 'push_with_foot' or 'push_and_pull'); \"What is it made of?\": its groups have no sharp edges: both checks placed only 62% of the things where the proposer did (Saw: 'all_metal' or 'metal_blade_wood_handle'; Screwdriver: 'all_metal' or 'metal_blade_wood_handle'; Axe: 'metal_head_wood_handle' or 'metal_blade_wood_handle'; Hatchet: 'metal_head_wood_handle' or 'metal_blade_wood_handle'); \"What does it do to things?\": its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Axe: 'hits_and_smashes' or 'cuts_and_slices'; Pickaxe: 'hits_and_smashes' or 'no one group'; Hatchet: 'hits_and_smashes' or 'cuts_and_slices'; Mattock: 'hits_and_smashes' or 'no one group'); \"How do we hold it when we use it?\": not every thing has one value: 2 of the 5 things there fit more than one group, and at most 0 may (Spade: two_hands and one_hand_and_guide; Axe: two_hands and one_hand_and_guide); \"What shape is the part that does the work?\": not every thing has one value: 1 of the 5 things there fit more than one group, and at most 0 may (Axe: pointed_and_thin and toothed_edge); \"How does it move when you use it?\": its groups have no sharp edges: both checks placed only 82% of the things where the proposer did (Pestle: 'up_and_down' or 'no one group'; Chain saw: 'back_and_forth' or 'turn_around'; Pliers: 'turn_around' or 'no one group'; Hoe: 'push_into_ground' or 'back_and_forth')",
+          "members_then": 5,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -1132,7 +1242,8 @@
       },
       "score": 2.6,
       "move": "deepening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"How do we move it to make it work?\": its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Hammer: 'push_and_pull' or 'swing_and_hit'; Hand drill: 'push_and_pull' or 'press_and_turn'; Chisel: 'push_and_pull' or 'swing_and_hit'; Hoe: 'push_with_foot' or 'push_and_pull'); \"What is it made of?\": its groups have no sharp edges: both checks placed only 62% of the things where the proposer did (Saw: 'all_metal' or 'metal_blade_wood_handle'; Screwdriver: 'all_metal' or 'metal_blade_wood_handle'; Axe: 'metal_head_wood_handle' or 'metal_blade_wood_handle'; Hatchet: 'metal_head_wood_handle' or 'metal_blade_wood_handle'); \"What does it do to things?\": its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Axe: 'hits_and_smashes' or 'cuts_and_slices'; Pickaxe: 'hits_and_smashes' or 'no one group'; Hatchet: 'hits_and_smashes' or 'cuts_and_slices'; Mattock: 'hits_and_smashes' or 'no one group'); \"How do we hold it when we use it?\": not every thing has one value: 2 of the 5 things there fit more than one group, and at most 0 may (Spade: two_hands and one_hand_and_guide; Axe: two_hands and one_hand_and_guide); \"What shape is the part that does the work?\": not every thing has one value: 1 of the 5 things there fit more than one group, and at most 0 may (Axe: pointed_and_thin and toothed_edge); \"How does it move when you use it?\": its groups have no sharp edges: both checks placed only 82% of the things where the proposer did (Pestle: 'up_and_down' or 'no one group'; Chain saw: 'back_and_forth' or 'turn_around'; Pliers: 'turn_around' or 'no one group'; Hoe: 'push_into_ground' or 'back_and_forth')"
     },
     "made_by_people/building": {
       "label": "Buildings",
@@ -1162,6 +1273,13 @@
           "what": "given back to the rules after test 2 was recalibrated",
           "why": "run 2026-10-07-01 judged it by a test stricter than the owner's own fields can pass",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-02",
+          "why": "\"Who goes inside this building?\": not every thing has a value: Shop - it fits no group; Bridge - it fits no group; Tower - it fits no group; \"What happens inside this building?\": not every thing has a value: House - it fits no group; Bridge - it fits no group; Tower - it fits no group; \"What does this building look like?\": not every thing has a value: House - it fits no group; School - it fits no group; \"Where do people go?\": not every thing has a value: House - it fits no group; Bridge - it fits no group; Tower - it fits no group; \"What do people do there?\": not every thing has a value: House - it fits no group; Bridge - it fits no group; \"What does it look like?\": not every value has four familiar things: 'Tall and thin' has 3, 'Long and flat' has 1",
+          "members_then": 7,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -1172,7 +1290,8 @@
       },
       "score": 2.6,
       "move": "deepening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"Who goes inside this building?\": not every thing has a value: Shop - it fits no group; Bridge - it fits no group; Tower - it fits no group; \"What happens inside this building?\": not every thing has a value: House - it fits no group; Bridge - it fits no group; Tower - it fits no group; \"What does this building look like?\": not every thing has a value: House - it fits no group; School - it fits no group; \"Where do people go?\": not every thing has a value: House - it fits no group; Bridge - it fits no group; Tower - it fits no group; \"What do people do there?\": not every thing has a value: House - it fits no group; Bridge - it fits no group; \"What does it look like?\": not every value has four familiar things: 'Tall and thin' has 3, 'Long and flat' has 1"
     }
   }
 }

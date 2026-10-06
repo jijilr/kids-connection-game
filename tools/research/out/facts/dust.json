@@ -1,0 +1,48 @@
+{
+  "name": "Dust",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "Dust is made of fine particles of solid matter.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "ground",
+      "quote": "On Earth, it generally consists of particles in the atmosphere that come from various sources such as soil lifted by wind (an aeolian process), volcanic eruptions, and pollution.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "what_happens_when_wet",
+      "why": "uncertain: two judgements disagree: 'Gets mushy' and 'Washes away'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Dust",
+      "title": "Dust",
+      "asked_for": "Dust",
+      "revision": 1368643047,
+      "fetched_on": "2026-10-07",
+      "sha256": "62a2793864dff4967a9cebfcac3c4001b7737b8022c39eddffcef831db0188e2"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Dust",
+      "title": "Dust",
+      "asked_for": "Dust",
+      "revision": 9948510,
+      "fetched_on": "2026-10-07",
+      "sha256": "c6d12376193809e877d1b32a2d5dfb01d2a8f5e9e0dd6d492ad0ccac5201a4ee"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Pebble",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A pebble is a clast of rock with a particle size of 4–64 mm (0.16–2.52 in) based on the Udden-Wentworth scale of sedimentology.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "ground",
+      "quote": "A pebble is a clast of rock with a particle size of 4–64 mm (0.16–2.52 in) based on the Udden-Wentworth scale of sedimentology.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_happens_when_wet": {
+      "value": "stays_hard",
+      "basis": "judged, not sourced",
+      "why": "A pebble is a piece of rock, and rock does not soften or dissolve when it gets wet."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Pebble",
+      "title": "Pebble",
+      "asked_for": "Pebble",
+      "revision": 1370988432,
+      "fetched_on": "2026-10-07",
+      "sha256": "a41a54d4aebe730a19e9c997712c8e63d2b8438cd607ecae6cad12b505af03ce"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Pebble",
+      "title": "Pebble",
+      "asked_for": "Pebble",
+      "revision": 7771550,
+      "fetched_on": "2026-10-07",
+      "sha256": "41fbf2515fa96cd580323b0641062c42db29bed8b2dbfbee9462b9fe6dfe0d17"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -39,6 +39,97 @@
         "a plant the owner is keeping for a later board"
       ],
       "from": "owner"
+    },
+    {
+      "name": "Chalk",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "stays_hard"
+      },
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Stays hard': the two checks disagree: 'gets_mushy' and 'washes_away'"
+      ],
+      "from": "job:2026-10-07-02",
+      "familiar": 0.9
+    },
+    {
+      "name": "Slush",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Rocks and soil': it fits more than one group: water and ground"
+      ],
+      "from": "job:2026-10-07-02",
+      "familiar": 0.8
+    },
+    {
+      "name": "Sticky soil",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Gets sticky': it fits more than one group: gets_sticky and gets_mushy"
+      ],
+      "from": "job:2026-10-07-02",
+      "familiar": 0.8
+    },
+    {
+      "name": "Sticky dirt",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Gets sticky': it fits more than one group: gets_sticky and gets_mushy"
+      ],
+      "from": "job:2026-10-07-02",
+      "familiar": 0.8
+    },
+    {
+      "name": "Sticky earth",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "gets_sticky"
+      },
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Gets sticky': it fits more than one group: gets_sticky and gets_mushy"
+      ],
+      "from": "job:2026-10-07-02",
+      "familiar": 0.7
+    },
+    {
+      "name": "White sand",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Rocks and soil': it fits more than one group: ground and land"
+      ],
+      "from": "job:2026-10-07-02",
+      "familiar": 0.9
+    },
+    {
+      "name": "Yellow sand",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground",
+        "what_happens_when_wet": "washes_away"
+      },
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Rocks and soil': it fits more than one group: ground and land"
+      ],
+      "from": "job:2026-10-07-02",
+      "familiar": 0.9
     }
   ],
   "held_by_the_rules": [
@@ -165,6 +256,104 @@
         "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
       "from": "job:2026-10-06-08"
+    },
+    {
+      "name": "Wet clay",
+      "why": [
+        "its facts passed, but only 1 of the 3 things the group needs did, so it was not drawn. A later run carries on from here"
+      ],
+      "from": "job:2026-10-07-02"
+    },
+    {
+      "name": "Potter's clay",
+      "why": [
+        "it could not be settled that it belongs in 'Things in nature that are not alive'"
+      ],
+      "from": "job:2026-10-07-02"
+    },
+    {
+      "name": "Sludge",
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "from": "job:2026-10-07-02"
+    },
+    {
+      "name": "Gumbo",
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "from": "job:2026-10-07-02"
+    },
+    {
+      "name": "Ooze",
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "from": "job:2026-10-07-02"
+    },
+    {
+      "name": "Adhesive mud",
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "from": "job:2026-10-07-02"
+    },
+    {
+      "name": "Mire",
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "from": "job:2026-10-07-02"
+    },
+    {
+      "name": "Dust",
+      "why": [
+        "its facts passed, but only 2 of the 3 things the group needs did, so it was not drawn. A later run carries on from here"
+      ],
+      "from": "job:2026-10-07-02"
+    },
+    {
+      "name": "Ash",
+      "why": [
+        "its facts passed, but only 2 of the 3 things the group needs did, so it was not drawn. A later run carries on from here"
+      ],
+      "from": "job:2026-10-07-02"
+    },
+    {
+      "name": "Soot",
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "from": "job:2026-10-07-02"
+    },
+    {
+      "name": "Silt",
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "from": "job:2026-10-07-02"
+    },
+    {
+      "name": "Sewage",
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "from": "job:2026-10-07-02"
+    },
+    {
+      "name": "Runoff",
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "from": "job:2026-10-07-02"
+    },
+    {
+      "name": "Sediment",
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "from": "job:2026-10-07-02"
     }
   ]
 }

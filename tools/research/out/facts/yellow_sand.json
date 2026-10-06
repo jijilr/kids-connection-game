@@ -1,0 +1,33 @@
+{
+  "name": "Yellow sand",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "Asian Dust (also yellow dust, yellow sand, yellow wind, or kosa) is a meteorological phenomenon that affects much of East Asia year-round and especially during the spring months.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_nature",
+      "why": "uncertain: two judgements disagree: 'Things in the sky' and 'Rocks and soil'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Asian_Dust",
+      "title": "Asian Dust",
+      "asked_for": "Yellow sand",
+      "revision": 1353721486,
+      "fetched_on": "2026-10-07",
+      "sha256": "1c14bb2dfa6abda72657a619471a354697bd14188e21d77674b7a4e5260d2ed1"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}
