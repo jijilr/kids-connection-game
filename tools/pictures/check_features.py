@@ -24,7 +24,7 @@ import json
 import os
 import sys
 
-from piclib import PLAN, RECORDS, ROOT, load_records, read_json, today, write_json
+from piclib import PLAN, RECORDS, ROOT, load_records, original, read_json, today, write_json
 
 RULE = "approved under the owner's standing rule of 2026-10-06: it passed the feature check against the cited sources"
 CHECK_RULE = "v2: fails only on must_show and listed mistakes; other features are reported"
@@ -113,7 +113,7 @@ def main():
             raise SystemExit(f"{cell.get('name') or cell['thing']} has no `must_show`. Write what tells it "
                              "from its look-alikes in research/curated.json, then run apply_research.py.")
         name = sheet["names"][tile["expected_thing"]]
-        answer, usage = ask(client, check["model"], (ROOT / tile["master_file"]).read_bytes(), name, cell)
+        answer, usage = ask(client, check["model"], original(ROOT / tile["master_file"]).read_bytes(), name, cell)
         if usage is not None:
             spent += (usage.prompt_tokens * check["usd_per_million_input_tokens"]
                       + usage.completion_tokens * check["usd_per_million_output_tokens"]) / 1_000_000

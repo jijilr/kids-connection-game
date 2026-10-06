@@ -35,7 +35,8 @@ import numpy as np
 from PIL import Image
 from scipy import ndimage
 
-from piclib import PLAN, RECORDS, ROOT, TILES, load_records, read_json, relative, thing_names, today, write_json
+from piclib import (PLAN, RECORDS, ROOT, TILES, load_records, original, read_json, relative,
+                    thing_names, today, write_json)
 
 INK_TOLERANCE = 24      # how far from the background colour a pixel must be to count as picture
 SHRINK = 2              # patches are found on a sheet shrunk by this much
@@ -208,7 +209,7 @@ def main():
     names = dict(thing_names(), **sheet.get("names", {}))
     planned = plan["sheets"][sheet["plan_key"]]["cells"]
 
-    image = Image.open(ROOT / sheet["file"])
+    image = Image.open(original(ROOT / sheet["file"]))
     try:
         cut = cut_all(image, sheet["grid"])
     except CutError as problem:

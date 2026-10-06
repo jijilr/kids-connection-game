@@ -27,6 +27,18 @@ ABOUT = ("One record per sheet and per tile. A tile's thing_id stays null until 
          "to draw again.")
 
 
+def original(path: pathlib.Path) -> pathlib.Path:
+    """An original sheet or a full-size master, which live in Git LFS, not in the main
+    repository (the owner's ruling of 6 Oct 2026). Only the small game versions are
+    ordinary files. Stops with a clear message if the real file has not been fetched."""
+    if not path.exists():
+        raise SystemExit(f"{relative(path)} is missing. Fetch the originals with: git lfs pull")
+    with path.open("rb") as file:
+        if file.read(40).startswith(b"version https://git-lfs"):
+            raise SystemExit(f"{relative(path)} is only a pointer. Fetch the originals with: git lfs pull")
+    return path
+
+
 def read_json(path, default=None):
     if not path.exists():
         return default

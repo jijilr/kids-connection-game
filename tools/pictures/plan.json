@@ -26,6 +26,20 @@
     "prices_checked_on": "2026-10-06",
     "source": "https://developers.openai.com/api/docs/models"
   },
+  "feature_check": {
+    "model": "gpt-6.1-sol",
+    "usd_per_million_input_tokens": 2.0,
+    "usd_per_million_output_tokens": 10.0,
+    "prices_checked_on": "2026-10-06",
+    "source": "https://developers.openai.com/api/docs/models",
+    "why": "prehistoric animals are compared feature by feature with what museum and encyclopedia sources say, on the full-resolution master"
+  },
+  "storage": {
+    "ruled_on": "2026-10-06",
+    "originals_and_masters": "Git LFS: tools/pictures/sheets, tools/pictures/tiles/masters and tools/pictures/tiles/superseded (see .gitattributes). records.json points to each file by its path.",
+    "in_the_project": "Only the small game versions (384 px WebP): tools/pictures/tiles/app and Assets/pictures.",
+    "to_fetch_the_originals": "git lfs pull"
+  },
   "sheets": {
     "trial_plants_9": {
       "purpose": "trial: nine plants on one sheet",
@@ -2045,13 +2059,5 @@
         }
       ]
     }
-  },
-  "feature_check": {
-    "model": "gpt-6.1-sol",
-    "usd_per_million_input_tokens": 2.0,
-    "usd_per_million_output_tokens": 10.0,
-    "prices_checked_on": "2026-10-06",
-    "source": "https://developers.openai.com/api/docs/models",
-    "why": "prehistoric animals are compared feature by feature with what museum and encyclopedia sources say, on the full-resolution master"
   }
 }
