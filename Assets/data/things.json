@@ -1727,6 +1727,175 @@
       "notes": {
         "general": "Held at first: the pages do not show that it belongs in 'Buildings'; kind_of_made_thing: on a second reading, the sentence does not show it"
       }
+    },
+    "carrot_plant": {
+      "name": "Carrot plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.9,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06"
+    },
+    "radish_plant": {
+      "name": "Radish plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.8,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06"
+    },
+    "onion_plant": {
+      "name": "Onion plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.8,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06"
+    },
+    "potato_plant": {
+      "name": "Potato plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.7,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06"
+    },
+    "garlic_plant": {
+      "name": "Garlic plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.7,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06"
+    },
+    "coriander_plant": {
+      "name": "Coriander plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.9,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06"
+    },
+    "cabbage_plant": {
+      "name": "Cabbage plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.9,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06"
+    },
+    "spinach_plant": {
+      "name": "Spinach plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.9,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06"
+    },
+    "fenugreek_plant": {
+      "name": "Fenugreek plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.9,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06"
+    },
+    "mustard_plant": {
+      "name": "Mustard plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.9,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06"
+    },
+    "bean_plant": {
+      "name": "Bean plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06"
+    },
+    "pumpkin_seeds": {
+      "name": "Pumpkin seeds",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.9,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06"
+    },
+    "ladies_finger_plant": {
+      "name": "Ladies finger plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.7,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06"
     }
   }
 }

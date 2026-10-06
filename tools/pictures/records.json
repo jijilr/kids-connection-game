@@ -878,6 +878,106 @@
       },
       "cost_usd": 0.1001,
       "vision_check_cost_usd": 0.00022
+    },
+    "job_2026_10_06_06_1_01": {
+      "plan_key": "job_2026_10_06_06_1",
+      "purpose": "drawn by the job, run 2026-10-06-06",
+      "file": "tools/pictures/sheets/job_2026_10_06_06_1_01.png",
+      "grid": 3,
+      "size": "2880x2880",
+      "cells": [
+        "carrot_plant",
+        "radish_plant",
+        "onion_plant",
+        "potato_plant",
+        "garlic_plant",
+        "coriander_plant",
+        "cabbage_plant",
+        "spinach_plant",
+        "fenugreek_plant"
+      ],
+      "names": {
+        "carrot_plant": "Carrot plant",
+        "radish_plant": "Radish plant",
+        "onion_plant": "Onion plant",
+        "potato_plant": "Potato plant",
+        "garlic_plant": "Garlic plant",
+        "coriander_plant": "Coriander plant",
+        "cabbage_plant": "Cabbage plant",
+        "spinach_plant": "Spinach plant",
+        "fenugreek_plant": "Fenugreek plant"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 3 by 3 grid of 9 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Carrot plant: Draw one whole orange carrot with a long pointed root and a leafy green top, growing half-buried in brown soil.\n2. Radish plant: A small round red radish with a white tip and green leafy top, whole, growing half-buried in brown soil so its root is clearly under the ground.\n3. Onion plant: A round onion bulb with dry golden-brown papery skin, purple-red and white, with green leafy shoots on top, growing half-buried in brown soil.\n4. Potato plant: A single whole potato with light-brown skin and small dimples, growing half-buried under the ground, with green leaves above.\n5. Garlic plant: A whole white garlic bulb with papery skin, pulled apart into small cloves, growing at the bottom of a long green stalk under the ground.\n6. Coriander plant: A bunch of fresh green cilantro leaves with thin light stems, whole and leafy, the kind sold in Indian markets, clearly showing many small green leaves.\n7. Cabbage plant: Draw one whole round green cabbage with tightly packed smooth leaves forming a dense ball, showing the leafy head clearly.\n8. Spinach plant: Draw one fresh green spinach plant with many dark green oval leaves on thin stems, larger at the bottom, small yellow-green flowers on top, whole and natural.\n9. Fenugreek plant: A bunch of fresh green fenugreek leaves with three small oval leaflets on each stem, lying whole, natural green colour.\n\nFor this sheet: No people and no animals.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-06",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 519
+      },
+      "cost_usd": 0.1805,
+      "vision_check_cost_usd": 0.00054
+    },
+    "job_2026_10_06_06_2_01": {
+      "plan_key": "job_2026_10_06_06_2",
+      "purpose": "drawn by the job, run 2026-10-06-06, second tries",
+      "file": "tools/pictures/sheets/job_2026_10_06_06_2_01.png",
+      "grid": 3,
+      "size": "2880x2880",
+      "cells": [
+        "mustard_plant",
+        "pumpkin_seeds",
+        "pea_plant",
+        "bean_plant",
+        "ladies_finger_plant",
+        "mustard_plant",
+        "pumpkin_seeds",
+        "pea_plant",
+        "bean_plant"
+      ],
+      "names": {
+        "mustard_plant": "Mustard plant",
+        "pumpkin_seeds": "Pumpkin seeds",
+        "pea_plant": "Pea plant",
+        "bean_plant": "Bean plant",
+        "ladies_finger_plant": "Ladies finger plant"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 3 by 3 grid of 9 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Mustard plant: A leafy green mustard plant with a cluster of small yellow flowers on top, broad green leaves with wavy edges, growing in brown soil.\n2. Pumpkin seeds: A single flat oval white pumpkin seed with a smooth pale husk, lying whole, showing its two pointed ends and light green tint at the edge.\n3. Pea plant: A small round green pea seed, smooth and whole, with a tiny pale scar, shown alone on white.\n4. Bean plant: A handful of plump kidney-shaped seeds, cream, red, and black, smooth and shiny, spilling from a split green pod.\n5. Ladies finger plant: One whole green okra pod, long and ridged with a pointed tip, lying on a plain white background, showing the seeds inside.\n6. Mustard plant: A leafy green mustard plant with a cluster of small yellow flowers on top, broad green leaves with wavy edges, growing in brown soil; a second view of it.\n7. Pumpkin seeds: A single flat oval white pumpkin seed with a smooth pale husk, lying whole, showing its two pointed ends and light green tint at the edge; a second view of it.\n8. Pea plant: A small round green pea seed, smooth and whole, with a tiny pale scar, shown alone on white; a second view of it.\n9. Bean plant: A handful of plump kidney-shaped seeds, cream, red, and black, smooth and shiny, spilling from a split green pod; a second view of it.\n\nFor this sheet: No people and no animals.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-06",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 521
+      },
+      "cost_usd": 0.1805,
+      "vision_check_cost_usd": 0.00089
+    },
+    "job_2026_10_06_06_3_01": {
+      "plan_key": "job_2026_10_06_06_3",
+      "purpose": "drawn by the job, run 2026-10-06-06, second tries",
+      "file": "tools/pictures/sheets/job_2026_10_06_06_3_01.png",
+      "grid": 1,
+      "size": "1024x1024",
+      "cells": [
+        "pea_plant"
+      ],
+      "names": {
+        "pea_plant": "Pea plant"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image showing exactly one subject, whole and centred, with a wide plain white margin on every side:\n\n1. Pea plant: A small round green pea seed, smooth and whole, with a tiny pale scar, shown alone on white.\n\nFor this sheet: No people and no animals.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-06",
+      "tokens": {
+        "image_output_tokens": 1756,
+        "text_input_tokens": 185
+      },
+      "cost_usd": 0.0536,
+      "vision_check_cost_usd": 0.00017
     }
   },
   "tiles": {
@@ -11841,6 +11941,994 @@
         "cost_usd": 8e-05
       },
       "reviewed_on": "2026-10-06"
+    },
+    "job_2026_10_06_06_1_01_c1": {
+      "thing_id": "carrot_plant",
+      "expected_thing": "carrot_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c1.png",
+      "master_size": [
+        1035,
+        1035
+      ],
+      "master_sha256": "11476d7a628830e341ff3fb64fdec74faf4bebeebf0d0f9f71c193768d6af3ba",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Carrot plant: Draw one whole orange carrot with a long pointed root and a leafy green top, growing half-buried in brown soil",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          158,
+          39,
+          784,
+          931
+        ],
+        "picture_shape": 0.7,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Carrot plant",
+        "shows": "carrot_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/carrot_plant.webp"
+    },
+    "job_2026_10_06_06_1_01_c2": {
+      "thing_id": "radish_plant",
+      "expected_thing": "radish_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c2.png",
+      "master_size": [
+        1018,
+        1018
+      ],
+      "master_sha256": "4d627514bba74064e4464416e993c11bb635cb300037135e0811b14e8ea8ce05",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_1_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_1_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Radish plant: A small round red radish with a white tip and green leafy top, whole, growing half-buried in brown soil so its root is clearly under the ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1077,
+          52,
+          1798,
+          930
+        ],
+        "picture_shape": 0.82,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Radish plant",
+        "shows": "radish_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/radish_plant.webp"
+    },
+    "job_2026_10_06_06_1_01_c3": {
+      "thing_id": "onion_plant",
+      "expected_thing": "onion_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c3.png",
+      "master_size": [
+        1027,
+        1027
+      ],
+      "master_sha256": "a05142b39a66438566729bed86f72e4e782d82d83cc124b84390fb948a4b9d5b",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_1_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_1_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Onion plant: A round onion bulb with dry golden-brown papery skin, purple-red and white, with green leafy shoots on top, growing half-buried in brown soil",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2077,
+          39,
+          2694,
+          924
+        ],
+        "picture_shape": 0.7,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Onion plant",
+        "shows": "onion_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/onion_plant.webp"
+    },
+    "job_2026_10_06_06_1_01_c4": {
+      "thing_id": "potato_plant",
+      "expected_thing": "potato_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c4.png",
+      "master_size": [
+        1036,
+        1036
+      ],
+      "master_sha256": "2ab4c84a99274f790b3dff66680d86df170595267fa3cb88e958f47292b82fb1",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_1_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_1_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Potato plant: A single whole potato with light-brown skin and small dimples, growing half-buried under the ground, with green leaves above",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          152,
+          988,
+          837,
+          1881
+        ],
+        "picture_shape": 0.77,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Potato plant",
+        "shows": "potato_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/potato_plant.webp"
+    },
+    "job_2026_10_06_06_1_01_c5": {
+      "thing_id": "garlic_plant",
+      "expected_thing": "garlic_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c5.png",
+      "master_size": [
+        1039,
+        1039
+      ],
+      "master_sha256": "e101eb83e5ca5997a382dbdf26bf9b5ccf48650cafe41d68f0110260a07bf91b",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_1_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_1_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Garlic plant: A whole white garlic bulb with papery skin, pulled apart into small cloves, growing at the bottom of a long green stalk under the ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1090,
+          983,
+          1744,
+          1879
+        ],
+        "picture_shape": 0.73,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Garlic plant",
+        "shows": "garlic_plant",
+        "matches_cell": true,
+        "problems": "cut off"
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/garlic_plant.webp"
+    },
+    "job_2026_10_06_06_1_01_c6": {
+      "thing_id": "coriander_plant",
+      "expected_thing": "coriander_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c6.png",
+      "master_size": [
+        1042,
+        1042
+      ],
+      "master_sha256": "146cbac96cfc1eac3b51cf4b5e4d666d7dc2cc535c68cb82c3f3d65b79397a8e",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_1_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_1_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Coriander plant: A bunch of fresh green cilantro leaves with thin light stems, whole and leafy, the kind sold in Indian markets, clearly showing many small green leaves",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1976,
+          983,
+          2790,
+          1881
+        ],
+        "picture_shape": 0.91,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Coriander plant",
+        "shows": "coriander_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/coriander_plant.webp"
+    },
+    "job_2026_10_06_06_1_01_c7": {
+      "thing_id": "cabbage_plant",
+      "expected_thing": "cabbage_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c7.png",
+      "master_size": [
+        986,
+        986
+      ],
+      "master_sha256": "3a92d05c0014a4085ac4eca70f08c866d2c81beda0a2e123a4b114b576fd2841",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_1_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_1_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Cabbage plant: Draw one whole round green cabbage with tightly packed smooth leaves forming a dense ball, showing the leafy head clearly",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          64,
+          1964,
+          867,
+          2814
+        ],
+        "picture_shape": 0.94,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Cabbage plant",
+        "shows": "cabbage_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/cabbage_plant.webp"
+    },
+    "job_2026_10_06_06_1_01_c8": {
+      "thing_id": "spinach_plant",
+      "expected_thing": "spinach_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c8.png",
+      "master_size": [
+        1056,
+        1056
+      ],
+      "master_sha256": "06340977044670f3170990e604657e7e0a33001593d7d5308455d06328fce1e2",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_1_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_1_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Spinach plant: Draw one fresh green spinach plant with many dark green oval leaves on thin stems, larger at the bottom, small yellow-green flowers on top, whole and natural",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1011,
+          1928,
+          1814,
+          2838
+        ],
+        "picture_shape": 0.88,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Spinach plant",
+        "shows": "spinach_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/spinach_plant.webp"
+    },
+    "job_2026_10_06_06_1_01_c9": {
+      "thing_id": "fenugreek_plant",
+      "expected_thing": "fenugreek_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c9.png",
+      "master_size": [
+        1007,
+        1007
+      ],
+      "master_sha256": "2f0bd276970f431572ba00a85348b979e68aaccb857c98e8cddcc0f117155791",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_1_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_1_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Fenugreek plant: A bunch of fresh green fenugreek leaves with three small oval leaflets on each stem, lying whole, natural green colour",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1964,
+          1952,
+          2823,
+          2820
+        ],
+        "picture_shape": 0.99,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Fenugreek plant",
+        "shows": "fenugreek_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/fenugreek_plant.webp"
+    },
+    "job_2026_10_06_06_2_01_c1": {
+      "thing_id": null,
+      "expected_thing": "mustard_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c1.png",
+      "master_size": [
+        999,
+        999
+      ],
+      "master_sha256": "9fd6395ad60c504cc63802a1666f419c3137d455eef96376a933094ec5b81e98",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_2_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_2_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Mustard plant: A leafy green mustard plant with a cluster of small yellow flowers on top, broad green leaves with wavy edges, growing in brown soil",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          72,
+          60,
+          848,
+          921
+        ],
+        "picture_shape": 0.9,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Mustard plant",
+        "shows": "mustard_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_10_06_06_2_01_c6 better",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "job_2026_10_06_06_2_01_c1",
+          "job_2026_10_06_06_2_01_c6"
+        ],
+        "chosen": false,
+        "why": "Its centered, upright flowering plant is clearer and easier to recognize at a glance.",
+        "cost_usd": 8e-05
+      },
+      "reviewed_on": "2026-10-06"
+    },
+    "job_2026_10_06_06_2_01_c2": {
+      "thing_id": null,
+      "expected_thing": "pumpkin_seeds",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c2.png",
+      "master_size": [
+        839,
+        839
+      ],
+      "master_sha256": "4ec8354be6da244fe5dd1230b04288ef186def4004a0eb003c48dcb4c4493de1",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_2_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_2_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Pumpkin seeds: A single flat oval white pumpkin seed with a smooth pale husk, lying whole, showing its two pointed ends and light green tint at the edge",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1078,
+          290,
+          1801,
+          748
+        ],
+        "picture_shape": 1.58,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Pumpkin seeds",
+        "shows": "pumpkin_seeds",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_10_06_06_2_01_c7 better",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "job_2026_10_06_06_2_01_c2",
+          "job_2026_10_06_06_2_01_c7"
+        ],
+        "chosen": false,
+        "why": "Its clear, symmetrical seed shape is easiest for a small child to recognize at a glance.",
+        "cost_usd": 0.0001
+      },
+      "reviewed_on": "2026-10-06"
+    },
+    "job_2026_10_06_06_2_01_c3": {
+      "thing_id": null,
+      "expected_thing": "pea_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c3.png",
+      "master_size": [
+        542,
+        542
+      ],
+      "master_sha256": "223dc8fa86f1a3fda712b412686bc81870da4e0df04df5c6ff4cfc5a0a496065",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_2_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_2_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Pea plant: A small round green pea seed, smooth and whole, with a tiny pale scar, shown alone on white",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2186,
+          303,
+          2602,
+          770
+        ],
+        "picture_shape": 0.89,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "none",
+        "shows": null,
+        "matches_cell": false,
+        "problems": "hard to recognise"
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "job_2026_10_06_06_2_01_c4": {
+      "thing_id": "bean_plant",
+      "expected_thing": "bean_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c4.png",
+      "master_size": [
+        893,
+        893
+      ],
+      "master_sha256": "d77cc9900842c4ca8e44c998152397be26e6536ac281c60dc0140bf79fb9aae6",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_2_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_2_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Bean plant: A handful of plump kidney-shaped seeds, cream, red, and black, smooth and shiny, spilling from a split green pod",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          73,
+          1070,
+          843,
+          1797
+        ],
+        "picture_shape": 1.06,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Bean plant",
+        "shows": "bean_plant",
+        "matches_cell": true,
+        "problems": "More than one thing"
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "job_2026_10_06_06_2_01_c4",
+          "job_2026_10_06_06_2_01_c9"
+        ],
+        "chosen": true,
+        "why": "The open pod and clearly visible colorful beans make it easy to recognize at a glance.",
+        "cost_usd": 0.0001
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/bean_plant.webp"
+    },
+    "job_2026_10_06_06_2_01_c5": {
+      "thing_id": "ladies_finger_plant",
+      "expected_thing": "ladies_finger_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c5.png",
+      "master_size": [
+        1001,
+        1001
+      ],
+      "master_sha256": "e361d5f7b8436780e15990f9752d42df1f007da53f329534f18e0ad53a18c2cb",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_2_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_2_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Ladies finger plant: One whole green okra pod, long and ridged with a pointed tip, lying on a plain white background, showing the seeds inside",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1022,
+          1182,
+          1885,
+          1639
+        ],
+        "picture_shape": 1.89,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Ladies finger plant",
+        "shows": "ladies_finger_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/ladies_finger_plant.webp"
+    },
+    "job_2026_10_06_06_2_01_c6": {
+      "thing_id": "mustard_plant",
+      "expected_thing": "mustard_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c6.png",
+      "master_size": [
+        1038,
+        1038
+      ],
+      "master_sha256": "bb159f5a736d7502cedc425121643bb43bd03a369f5e297cd07723ab396c7604",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_2_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_2_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Mustard plant: A leafy green mustard plant with a cluster of small yellow flowers on top, broad green leaves with wavy edges, growing in brown soil; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2003,
+          995,
+          2811,
+          1890
+        ],
+        "picture_shape": 0.9,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Mustard plant",
+        "shows": "mustard_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "job_2026_10_06_06_2_01_c1",
+          "job_2026_10_06_06_2_01_c6"
+        ],
+        "chosen": true,
+        "why": "Its centered, upright flowering plant is clearer and easier to recognize at a glance.",
+        "cost_usd": 8e-05
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/mustard_plant.webp"
+    },
+    "job_2026_10_06_06_2_01_c7": {
+      "thing_id": "pumpkin_seeds",
+      "expected_thing": "pumpkin_seeds",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c7.png",
+      "master_size": [
+        838,
+        838
+      ],
+      "master_sha256": "a795dd15bccb96d632e27c680595311b2b3602b9b9c814b9071df01096100b1d",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_2_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_2_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Pumpkin seeds: A single flat oval white pumpkin seed with a smooth pale husk, lying whole, showing its two pointed ends and light green tint at the edge; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          105,
+          2149,
+          827,
+          2618
+        ],
+        "picture_shape": 1.54,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Pumpkin seeds",
+        "shows": "pumpkin_seeds",
+        "matches_cell": true,
+        "problems": "single seed"
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "job_2026_10_06_06_2_01_c2",
+          "job_2026_10_06_06_2_01_c7"
+        ],
+        "chosen": true,
+        "why": "Its clear, symmetrical seed shape is easiest for a small child to recognize at a glance.",
+        "cost_usd": 0.0001
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/pumpkin_seeds.webp"
+    },
+    "job_2026_10_06_06_2_01_c8": {
+      "thing_id": null,
+      "expected_thing": "pea_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c8.png",
+      "master_size": [
+        539,
+        539
+      ],
+      "master_sha256": "83202b281e65443fb54946393f50a80e2a68a213406a7c382358c9c1f8d70184",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_2_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_2_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Pea plant: A small round green pea seed, smooth and whole, with a tiny pale scar, shown alone on white; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1232,
+          2167,
+          1646,
+          2632
+        ],
+        "picture_shape": 0.89,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "none",
+        "shows": null,
+        "matches_cell": false,
+        "problems": "hard to recognise"
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "job_2026_10_06_06_2_01_c9": {
+      "thing_id": null,
+      "expected_thing": "bean_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c9.png",
+      "master_size": [
+        928,
+        928
+      ],
+      "master_sha256": "e753578451883067aec570a674226b99f6c28a55f6a1e023c8ce4245570108da",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_2_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_2_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Bean plant: A handful of plump kidney-shaped seeds, cream, red, and black, smooth and shiny, spilling from a split green pod; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1984,
+          2025,
+          2784,
+          2761
+        ],
+        "picture_shape": 1.09,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Bean plant",
+        "shows": "bean_plant",
+        "matches_cell": true,
+        "problems": "more than one thing"
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_10_06_06_2_01_c4 better",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "job_2026_10_06_06_2_01_c4",
+          "job_2026_10_06_06_2_01_c9"
+        ],
+        "chosen": false,
+        "why": "The open pod and clearly visible colorful beans make it easy to recognize at a glance.",
+        "cost_usd": 0.0001
+      },
+      "reviewed_on": "2026-10-06"
+    },
+    "job_2026_10_06_06_3_01_c1": {
+      "thing_id": null,
+      "expected_thing": "pea_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_3_01_c1.png",
+      "master_size": [
+        521,
+        521
+      ],
+      "master_sha256": "49b0ca91cc29a6c0077501f677631c56ee3393a1cda417d9b96af71dbd2a83e7",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_06_3_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_06_3_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Pea plant: A small round green pea seed, smooth and whole, with a tiny pale scar, shown alone on white",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0536,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          303,
+          288,
+          721,
+          737
+        ],
+        "picture_shape": 0.93,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "none",
+        "shows": null,
+        "matches_cell": false,
+        "problems": "hard to recognise"
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
     }
   }
 }

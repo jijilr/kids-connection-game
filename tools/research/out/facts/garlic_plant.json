@@ -1,0 +1,53 @@
+{
+  "name": "Garlic plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Garlic (Allium sativum) is a species of bulbous flowering plants in the genus Allium.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "Garlic is a plant that is widely cultivated and eaten today, so it is still living."
+    },
+    "kind_of_plant": {
+      "value": "vegetable",
+      "basis": "judged, not sourced",
+      "why": "Garlic is a bulbous plant grown and eaten as a food, like an onion, so a parent would call it a vegetable."
+    },
+    "part_we_eat": {
+      "value": "under_the_ground",
+      "quote": "The part of the garlic plant that people eat is called the head or bulb. It grows at the bottom of a long green stalk.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Garlic",
+      "title": "Garlic",
+      "asked_for": "Garlic",
+      "revision": 1377107391,
+      "fetched_on": "2026-10-06",
+      "sha256": "d4232fa71cc916d823553e2e08b02227ee33e0e393bd77863aed6f195e670e26"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Garlic",
+      "title": "Garlic",
+      "asked_for": "Garlic",
+      "revision": 10920317,
+      "fetched_on": "2026-10-06",
+      "sha256": "333cfdca88ac36412070d82bb836b1d46325e49711f87a5e59ccc9d637993c2f"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

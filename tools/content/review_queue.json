@@ -135,74 +135,6 @@
       "familiar": 0.6
     },
     {
-      "name": "Carrot plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "under_the_ground"
-      },
-      "why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.8
-    },
-    {
-      "name": "Radish plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "under_the_ground"
-      },
-      "why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.7
-    },
-    {
-      "name": "Onion plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "under_the_ground"
-      },
-      "why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.7
-    },
-    {
-      "name": "Potato plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "under_the_ground"
-      },
-      "why": [
-        "the check doubts a four-year-old would recognise it"
-      ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.6
-    },
-    {
-      "name": "Garlic plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "under_the_ground"
-      },
-      "why": [
-        "the check doubts a four-year-old would recognise it"
-      ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.6
-    },
-    {
       "name": "Beetroot plant",
       "fields": {
         "kind_of_thing": "plant",
@@ -242,48 +174,19 @@
       "familiar": 0.5
     },
     {
-      "name": "Coriander plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "leaves"
-      },
-      "why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.9
-    },
-    {
-      "name": "Cabbage plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "leaves"
-      },
-      "why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.9
-    },
-    {
       "name": "Mint plant",
       "fields": {
         "kind_of_thing": "plant",
+        "extinct": false,
         "kind_of_plant": "vegetable",
         "part_we_eat": "leaves"
       },
       "why": [
-        "it could not be settled that it belongs in 'Plants'",
-        "it could not be settled that it belongs in 'Vegetable plants'",
-        "it could not be settled that it belongs in 'The leaves'",
-        "everything: no page was found for it"
+        "the pages and the judgements point to 'Flowers', not 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The leaves'"
       ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.85
+      "from": "job:2026-10-06-06",
+      "familiar": 0.9
     },
     {
       "name": "Curry leaf plant",
@@ -295,53 +198,11 @@
         "part_we_eat": "leaves"
       },
       "why": [
-        "the pages point to 'Trees', not 'Vegetable plants'",
+        "the pages and the judgements point to 'Trees', not 'Vegetable plants'",
         "it could not be settled that it belongs in 'The leaves'"
       ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.85
-    },
-    {
-      "name": "Spinach plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "leaves"
-      },
-      "why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.8
-    },
-    {
-      "name": "Fenugreek plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "leaves"
-      },
-      "why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.8
-    },
-    {
-      "name": "Mustard plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "leaves"
-      },
-      "why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.7
+      "from": "job:2026-10-06-06",
+      "familiar": 0.9
     },
     {
       "name": "Pea plant",
@@ -352,112 +213,26 @@
         "part_we_eat": "seeds_or_pods"
       },
       "why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+        "no tile of it passed the checks after 2 sheet(s)"
       ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.8
-    },
-    {
-      "name": "Bean plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "seeds_or_pods"
-      },
-      "why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.8
-    },
-    {
-      "name": "Cucumber plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "seeds_or_pods"
-      },
-      "why": [
-        "the pages point to 'The fruit', not 'The seeds or pods'"
-      ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.8
-    },
-    {
-      "name": "Pumpkin seeds",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "seeds_or_pods"
-      },
-      "why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "from": "job:2026-10-06-05",
+      "from": "job:2026-10-06-06",
       "familiar": 0.8
     },
     {
       "name": "Coriander seeds",
       "fields": {
         "kind_of_thing": "plant",
+        "extinct": false,
         "kind_of_plant": "vegetable",
         "part_we_eat": "seeds_or_pods"
       },
       "why": [
-        "it could not be settled that it belongs in 'Plants'",
         "it could not be settled that it belongs in 'Vegetable plants'",
         "it could not be settled that it belongs in 'The seeds or pods'",
-        "everything: no page was found for it"
+        "kind_of_plant: uncertain: two judgements disagree: 'Grasses and grains' and 'Vegetable plants'"
       ],
-      "from": "job:2026-10-06-05",
+      "from": "job:2026-10-06-06",
       "familiar": 0.8
-    },
-    {
-      "name": "Ladies finger plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "seeds_or_pods"
-      },
-      "why": [
-        "it could not be settled that it belongs in 'Plants'",
-        "it could not be settled that it belongs in 'Vegetable plants'",
-        "it could not be settled that it belongs in 'The seeds or pods'",
-        "everything: no page was found for it"
-      ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.7
-    },
-    {
-      "name": "Bottle gourd plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "seeds_or_pods"
-      },
-      "why": [
-        "the pages point to 'The fruit', not 'The seeds or pods'"
-      ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.7
-    },
-    {
-      "name": "Bitter gourd plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "seeds_or_pods"
-      },
-      "why": [
-        "the pages point to 'The fruit', not 'The seeds or pods'"
-      ],
-      "from": "job:2026-10-06-05",
-      "familiar": 0.7
     }
   ]
 }

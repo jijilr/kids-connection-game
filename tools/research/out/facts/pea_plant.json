@@ -15,8 +15,9 @@
     },
     "kind_of_plant": {
       "value": "vegetable",
-      "basis": "judged, not sourced",
-      "why": "The sources say peas are eaten as a vegetable and grown as a fresh vegetable crop."
+      "quote": "Peas are eaten as a vegetable.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
     },
     "part_we_eat": {
       "value": "seeds_or_pods",

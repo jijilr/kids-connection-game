@@ -9,13 +9,14 @@
     },
     "extinct": {
       "value": false,
-      "basis": "judged, not sourced",
-      "why": "Spinach is described as a currently grown and consumed plant, with 2024 world production figures, so it is still living."
+      "quote": "It is an annual plant (rarely biennial), growing as tall as 30 cm (1 ft).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
     },
     "kind_of_plant": {
       "value": "vegetable",
-      "quote": "Spinach is a green, leafy vegetable.",
-      "source": "wikipedia_simple",
+      "quote": "Its leaves are a common vegetable consumed either fresh, cooked or after storage (using preservation techniques like canning, freezing, or dehydration).",
+      "source": "wikipedia_en",
       "basis": "sourced"
     },
     "part_we_eat": {

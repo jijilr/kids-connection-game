@@ -1,15 +1,45 @@
 {
   "name": "Ladies finger plant",
-  "fields": {},
-  "weak_spots": [
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Okra (US: , UK: ), Abelmoschus esculentus, known in some English-speaking countries as lady's fingers, is a flowering plant in the mallow family native to West Africa.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "The sources describe okra as a currently cultivated flowering plant, so it is still living."
+    },
+    "kind_of_plant": {
+      "value": "vegetable",
+      "quote": "Cultivated in tropical, subtropical, and warm temperate regions around the world for its edible green (red in some cultivars) seed pods, okra is used in the cuisines of many countries.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "part_we_eat": {
+      "value": "seeds_or_pods",
+      "quote": "Cultivated in tropical, subtropical, and warm temperate regions around the world for its edible green (red in some cultivars) seed pods, okra is used in the cuisines of many countries.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
     {
-      "field": "everything",
-      "why": "no page was found for it"
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Okra",
+      "title": "Okra",
+      "asked_for": "Okra",
+      "revision": 1378086927,
+      "fetched_on": "2026-10-06",
+      "sha256": "2fe3d93163d2ceb001c3ace5c9c445e99ddfdafec1b23b7c4910a8d1bfd45bc4"
     }
   ],
-  "pages": [],
   "read_by": {
     "model": "deepseek-flash",
-    "date": "2026-10-06"
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
   }
 }

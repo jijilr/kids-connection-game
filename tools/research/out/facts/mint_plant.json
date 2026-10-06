@@ -1,15 +1,48 @@
 {
   "name": "Mint plant",
-  "fields": {},
-  "weak_spots": [
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Mentha, also known as mint (from Greek μίνθα míntha, Linear B mi-ta), is a genus of flowering plants in the mint family, Lamiaceae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "The sources describe mint as a currently existing genus of flowering plants with many species and uses, so it is still living."
+    },
+    "kind_of_plant": {
+      "value": "flower",
+      "quote": "Mentha, also known as mint (from Greek μίνθα míntha, Linear B mi-ta), is a genus of flowering plants in the mint family, Lamiaceae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
     {
-      "field": "everything",
-      "why": "no page was found for it"
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Mentha",
+      "title": "Mentha",
+      "asked_for": "Mentha",
+      "revision": 1371284917,
+      "fetched_on": "2026-10-06",
+      "sha256": "f0415334128858be52e2fa89b6ec7b87fe2eb0e97ab9ee1bed4b8e570ebe55db"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Mentha",
+      "title": "Mentha",
+      "asked_for": "Mentha",
+      "revision": 10400352,
+      "fetched_on": "2026-10-06",
+      "sha256": "ff9f00f435796e900229f104fcb3dcc5cd9ead38f00be7edf8a3ddb34159791e"
     }
   ],
-  "pages": [],
   "read_by": {
     "model": "deepseek-flash",
-    "date": "2026-10-06"
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
   }
 }

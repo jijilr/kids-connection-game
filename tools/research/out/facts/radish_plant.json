@@ -9,14 +9,13 @@
     },
     "extinct": {
       "value": false,
-      "quote": "Domesticated in Asia, radishes are grown and consumed globally.",
-      "source": "wikipedia_en",
-      "basis": "sourced"
+      "basis": "judged, not sourced",
+      "why": "The sources describe radishes as currently grown and eaten all over the world, so the plant is still living."
     },
     "kind_of_plant": {
       "value": "vegetable",
-      "quote": "A radish is an edible root vegetable of the Brassicaceae family.",
-      "source": "wikipedia_simple",
+      "quote": "Its large taproot is commonly used as a root vegetable, although the entire plant is edible and its leaves are sometimes used as a leaf vegetable.",
+      "source": "wikipedia_en",
       "basis": "sourced"
     },
     "part_we_eat": {

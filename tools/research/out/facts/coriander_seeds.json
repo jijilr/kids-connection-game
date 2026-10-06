@@ -1,15 +1,27 @@
 {
   "name": "Coriander seeds",
-  "fields": {},
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "basis": "judged, not sourced",
+      "why": "Coriander seeds are the seeds of the coriander plant, so they are a plant."
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "Coriander seeds come from a plant that is still living and widely grown."
+    }
+  },
   "weak_spots": [
     {
-      "field": "everything",
-      "why": "no page was found for it"
+      "field": "kind_of_plant",
+      "why": "uncertain: two judgements disagree: 'Grasses and grains' and 'Vegetable plants'"
     }
   ],
   "pages": [],
   "read_by": {
     "model": "deepseek-flash",
-    "date": "2026-10-06"
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
   }
 }

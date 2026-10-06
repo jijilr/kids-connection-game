@@ -2156,6 +2156,129 @@
           "look_closely": "a second try; the better of the two is kept"
         }
       ]
+    },
+    "job_2026_10_06_06_1": {
+      "purpose": "drawn by the job, run 2026-10-06-06",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "No people and no animals.",
+      "cells": [
+        {
+          "thing": "carrot_plant",
+          "name": "Carrot plant",
+          "draw": "Draw one whole orange carrot with a long pointed root and a leafy green top, growing half-buried in brown soil"
+        },
+        {
+          "thing": "radish_plant",
+          "name": "Radish plant",
+          "draw": "A small round red radish with a white tip and green leafy top, whole, growing half-buried in brown soil so its root is clearly under the ground"
+        },
+        {
+          "thing": "onion_plant",
+          "name": "Onion plant",
+          "draw": "A round onion bulb with dry golden-brown papery skin, purple-red and white, with green leafy shoots on top, growing half-buried in brown soil"
+        },
+        {
+          "thing": "potato_plant",
+          "name": "Potato plant",
+          "draw": "A single whole potato with light-brown skin and small dimples, growing half-buried under the ground, with green leaves above"
+        },
+        {
+          "thing": "garlic_plant",
+          "name": "Garlic plant",
+          "draw": "A whole white garlic bulb with papery skin, pulled apart into small cloves, growing at the bottom of a long green stalk under the ground"
+        },
+        {
+          "thing": "coriander_plant",
+          "name": "Coriander plant",
+          "draw": "A bunch of fresh green cilantro leaves with thin light stems, whole and leafy, the kind sold in Indian markets, clearly showing many small green leaves"
+        },
+        {
+          "thing": "cabbage_plant",
+          "name": "Cabbage plant",
+          "draw": "Draw one whole round green cabbage with tightly packed smooth leaves forming a dense ball, showing the leafy head clearly"
+        },
+        {
+          "thing": "spinach_plant",
+          "name": "Spinach plant",
+          "draw": "Draw one fresh green spinach plant with many dark green oval leaves on thin stems, larger at the bottom, small yellow-green flowers on top, whole and natural"
+        },
+        {
+          "thing": "fenugreek_plant",
+          "name": "Fenugreek plant",
+          "draw": "A bunch of fresh green fenugreek leaves with three small oval leaflets on each stem, lying whole, natural green colour"
+        }
+      ]
+    },
+    "job_2026_10_06_06_2": {
+      "purpose": "drawn by the job, run 2026-10-06-06, second tries",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "No people and no animals.",
+      "cells": [
+        {
+          "thing": "mustard_plant",
+          "name": "Mustard plant",
+          "draw": "A leafy green mustard plant with a cluster of small yellow flowers on top, broad green leaves with wavy edges, growing in brown soil"
+        },
+        {
+          "thing": "pumpkin_seeds",
+          "name": "Pumpkin seeds",
+          "draw": "A single flat oval white pumpkin seed with a smooth pale husk, lying whole, showing its two pointed ends and light green tint at the edge"
+        },
+        {
+          "thing": "pea_plant",
+          "name": "Pea plant",
+          "draw": "A small round green pea seed, smooth and whole, with a tiny pale scar, shown alone on white"
+        },
+        {
+          "thing": "bean_plant",
+          "name": "Bean plant",
+          "draw": "A handful of plump kidney-shaped seeds, cream, red, and black, smooth and shiny, spilling from a split green pod"
+        },
+        {
+          "thing": "ladies_finger_plant",
+          "name": "Ladies finger plant",
+          "draw": "One whole green okra pod, long and ridged with a pointed tip, lying on a plain white background, showing the seeds inside"
+        },
+        {
+          "thing": "mustard_plant",
+          "name": "Mustard plant",
+          "draw": "A leafy green mustard plant with a cluster of small yellow flowers on top, broad green leaves with wavy edges, growing in brown soil; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        },
+        {
+          "thing": "pumpkin_seeds",
+          "name": "Pumpkin seeds",
+          "draw": "A single flat oval white pumpkin seed with a smooth pale husk, lying whole, showing its two pointed ends and light green tint at the edge; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        },
+        {
+          "thing": "pea_plant",
+          "name": "Pea plant",
+          "draw": "A small round green pea seed, smooth and whole, with a tiny pale scar, shown alone on white; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        },
+        {
+          "thing": "bean_plant",
+          "name": "Bean plant",
+          "draw": "A handful of plump kidney-shaped seeds, cream, red, and black, smooth and shiny, spilling from a split green pod; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        }
+      ]
+    },
+    "job_2026_10_06_06_3": {
+      "purpose": "drawn by the job, run 2026-10-06-06, second tries",
+      "grid": 1,
+      "size": 1024,
+      "only_for_this_sheet": "No people and no animals.",
+      "cells": [
+        {
+          "thing": "pea_plant",
+          "name": "Pea plant",
+          "draw": "A small round green pea seed, smooth and whole, with a tiny pale scar, shown alone on white"
+        }
+      ]
     }
   }
 }

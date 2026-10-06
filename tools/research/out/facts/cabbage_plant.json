@@ -3,14 +3,14 @@
   "fields": {
     "kind_of_thing": {
       "value": "plant",
-      "quote": "Cabbage, comprising several cultivars of Brassica oleracea, is a leafy green, red (purple), or white (pale green) biennial plant grown as an annual vegetable crop for its dense-leaved heads.",
-      "source": "wikipedia_en",
+      "quote": "Cabbage (Brassica oleracea Capitata Group) is an edible plant.",
+      "source": "wikipedia_simple",
       "basis": "sourced"
     },
     "extinct": {
       "value": false,
       "basis": "judged, not sourced",
-      "why": "Cabbage is described as a plant grown and eaten today, so it is still living."
+      "why": "Cabbage is a plant grown and eaten today, so it is still living."
     },
     "kind_of_plant": {
       "value": "vegetable",

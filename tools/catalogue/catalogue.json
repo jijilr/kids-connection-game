@@ -9556,7 +9556,8 @@
           }
         },
         "no_sentence_for": [
-          "kind_of_plant"
+          "kind_of_plant",
+          "part_we_eat"
         ]
       },
       "worked_out": {
@@ -9639,7 +9640,9 @@
             "basis": "sourced"
           }
         },
-        "no_sentence_for": []
+        "no_sentence_for": [
+          "part_we_eat"
+        ]
       },
       "worked_out": {
         "circles": [
@@ -9717,7 +9720,8 @@
           }
         },
         "no_sentence_for": [
-          "kind_of_plant"
+          "kind_of_plant",
+          "part_we_eat"
         ]
       },
       "worked_out": {
@@ -9805,7 +9809,8 @@
           }
         },
         "no_sentence_for": [
-          "kind_of_plant"
+          "kind_of_plant",
+          "part_we_eat"
         ]
       },
       "worked_out": {
@@ -12860,11 +12865,104 @@
     },
     "carrot_plant": {
       "name": "Carrot plant",
-      "status": "waiting for the owner",
-      "status_why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "held_from": "job:2026-10-06-05",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.9,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "plant",
+            "open_now": true
+          },
+          {
+            "circle": "plant",
+            "sorted_by": "kind_of_plant",
+            "group": "vegetable",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_06_1_01_c1",
+        "game_file": "Assets/pictures/carrot_plant.webp",
+        "game_sha256": "b954fdb218755b3c2acf0a9bdb740c6ea20f404770a4dfffddcd7ba73781b547",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c1.png",
+        "master_sha256": "44bcf237aff10fd6e91ee7de210a2262ef870fb3561ede905d0e041512af8861",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Carrot",
+            "title": "Carrot",
+            "asked_for": "Carrot",
+            "revision": 1375798146,
+            "fetched_on": "2026-10-06",
+            "sha256": "a099e79d837ad10a7e3335e2c87084f119315798d29773cfc6df8b075ec0b246"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Carrot",
+            "title": "Carrot",
+            "asked_for": "Carrot",
+            "revision": 10903312,
+            "fetched_on": "2026-10-06",
+            "sha256": "49622a8267c367881c824d8bef737e353badba50d111d534e16ced393e9f1cb1"
+          }
+        ],
+        "facts": "tools/research/out/facts/carrot_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The carrot (Daucus carota subsp. sativus) is a root vegetable in the umbellifer family Apiaceae."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Domesticated carrots are grown for food in many parts of the world."
+          },
+          "kind_of_plant": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "The carrot (pronounced CARE-ot) is a type of root vegetable and a plant."
+          },
+          "part_we_eat": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Carrots are grown in the ground, and carrots roots are a common edible vegetable."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Carrot plant",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "radish_plant": {
+      "name": "Radish plant",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
@@ -12872,43 +12970,191 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.8,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "plant",
           "plant/vegetable"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "plant",
+            "open_now": true
+          },
+          {
+            "circle": "plant",
+            "sorted_by": "kind_of_plant",
+            "group": "vegetable",
+            "open_now": true
+          }
         ]
-      }
-    },
-    "radish_plant": {
-      "name": "Radish plant",
-      "status": "waiting for the owner",
-      "status_why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "held_from": "job:2026-10-06-05",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "under_the_ground"
       },
-      "familiar": 0.7,
-      "worked_out": {
-        "would_join": [
-          "seed",
-          "plant",
-          "plant/vegetable"
-        ]
+      "picture": {
+        "tile": "job_2026_10_06_06_1_01_c2",
+        "game_file": "Assets/pictures/radish_plant.webp",
+        "game_sha256": "5aacf9cfb543b87e87884f6a647d574502c5c51576e3fdbdd56bfd7d35098bf4",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c2.png",
+        "master_sha256": "106d2feaf4fd1a531d64dbd9c07646cb64e0de626c6d6c8380ee8ed2201ea666",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Radish",
+            "title": "Radish",
+            "asked_for": "Radish",
+            "revision": 1375183622,
+            "fetched_on": "2026-10-06",
+            "sha256": "124b3efb9ce6e3234e86f411bcb9facbe7cda9c6263707d1429d78f5e9842e26"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Radish",
+            "title": "Radish",
+            "asked_for": "Radish",
+            "revision": 9843210,
+            "fetched_on": "2026-10-06",
+            "sha256": "3bf715975e17db1952640e835bd468cf4ac4ba2b76daa52de737dd3089b3d0ff"
+          }
+        ],
+        "facts": "tools/research/out/facts/radish_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The radish (Raphanus sativus or Raphanus raphanistrum subsp. sativus) is a flowering plant in the mustard family, Brassicaceae."
+          },
+          "extinct": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe radishes as currently grown and eaten all over the world, so the plant is still living."
+          },
+          "kind_of_plant": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Its large taproot is commonly used as a root vegetable, although the entire plant is edible and its leaves are sometimes used as a leaf vegetable."
+          },
+          "part_we_eat": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Its large taproot is commonly used as a root vegetable, although the entire plant is edible and its leaves are sometimes used as a leaf vegetable."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Radish plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "onion_plant": {
       "name": "Onion plant",
-      "status": "waiting for the owner",
-      "status_why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "held_from": "job:2026-10-06-05",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.8,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "plant",
+          "plant/vegetable"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "plant",
+            "open_now": true
+          },
+          {
+            "circle": "plant",
+            "sorted_by": "kind_of_plant",
+            "group": "vegetable",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_06_1_01_c3",
+        "game_file": "Assets/pictures/onion_plant.webp",
+        "game_sha256": "b5314c44173edcc099bf69d189f81f9b17d9932ca8ad564f5582a20e861796c6",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c3.png",
+        "master_sha256": "8b6d1f3c4826cb59b067bc668eed062fc8e283d3191f8442f2568982c1711d0a",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Onion",
+            "title": "Onion",
+            "asked_for": "Onion",
+            "revision": 1378200900,
+            "fetched_on": "2026-10-06",
+            "sha256": "b6328fa1a9f1b2aeeb04b40ddbddd4dcc8a333174cfaf45350682b1f8803d03d"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Onion",
+            "title": "Onion",
+            "asked_for": "Onion",
+            "revision": 10739981,
+            "fetched_on": "2026-10-06",
+            "sha256": "e5d5b2c17aa9c732cf2f3dc1a8ea8c4d43067debc1b05a593b14c26a94384337"
+          }
+        ],
+        "facts": "tools/research/out/facts/onion_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Onions are plants in the genus, Allium."
+          },
+          "extinct": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe onions as widely cultivated and eaten around the world today, so the plant is still living."
+          },
+          "kind_of_plant": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "They are eaten as vegetables."
+          },
+          "part_we_eat": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The bulbs are composed of shortened, compressed, underground stems surrounded by fleshy modified scale (leaves) that envelop a central bud at the tip of the stem."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Onion plant",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "potato_plant": {
+      "name": "Potato plant",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
@@ -12916,54 +13162,185 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.7,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "plant",
           "plant/vegetable"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "plant",
+            "open_now": true
+          },
+          {
+            "circle": "plant",
+            "sorted_by": "kind_of_plant",
+            "group": "vegetable",
+            "open_now": true
+          }
         ]
-      }
-    },
-    "potato_plant": {
-      "name": "Potato plant",
-      "status": "waiting for the owner",
-      "status_why": [
-        "the check doubts a four-year-old would recognise it"
-      ],
-      "held_from": "job:2026-10-06-05",
-      "fields": {
-        "kind_of_thing": "plant",
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "under_the_ground"
       },
-      "familiar": 0.6,
-      "worked_out": {
-        "would_join": [
-          "seed",
-          "plant",
-          "plant/vegetable"
-        ]
+      "picture": {
+        "tile": "job_2026_10_06_06_1_01_c4",
+        "game_file": "Assets/pictures/potato_plant.webp",
+        "game_sha256": "a62c999cf23b7d65466f75a2b1fbad63ed63b46dae6ad703d67afd46816c50ab",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c4.png",
+        "master_sha256": "e1f681d13d47b847e7426a050a7c608bb70731fb79c7747f5f3b4da8b7a80503",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Potato",
+            "title": "Potato",
+            "asked_for": "Potato plant",
+            "revision": 1378814806,
+            "fetched_on": "2026-10-06",
+            "sha256": "729df32eba2e263459dc15d1aeab4fa9fd73c402bc32ce2b619f861a420d8834"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Potato",
+            "title": "Potato",
+            "asked_for": "Potato",
+            "revision": 10852805,
+            "fetched_on": "2026-10-06",
+            "sha256": "3227ae296d1e94d9957896215fd277c7d4ed74c0ea0f3392a43f87c008d4e8fe"
+          }
+        ],
+        "facts": "tools/research/out/facts/potato_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe the potato as a plant, Solanum tuberosum, with leaves and underground tubers."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Many varieties of the potato are cultivated in the Andes region of South America, where the species is indigenous."
+          },
+          "kind_of_plant": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A potato is a vegetable, the Solanum tuberosum."
+          },
+          "part_we_eat": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "The part of the potato that people eat is a tuber that grows under the ground."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Potato plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "garlic_plant": {
       "name": "Garlic plant",
-      "status": "waiting for the owner",
-      "status_why": [
-        "the check doubts a four-year-old would recognise it"
-      ],
-      "held_from": "job:2026-10-06-05",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "plant",
+        "extinct": false,
         "kind_of_plant": "vegetable",
         "part_we_eat": "under_the_ground"
       },
-      "familiar": 0.6,
+      "familiar": 0.7,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "plant",
           "plant/vegetable"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "plant",
+            "open_now": true
+          },
+          {
+            "circle": "plant",
+            "sorted_by": "kind_of_plant",
+            "group": "vegetable",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_06_1_01_c5",
+        "game_file": "Assets/pictures/garlic_plant.webp",
+        "game_sha256": "c186d84d59acceee2fc7f41b62bea2973df7e9f4882f074c552486cae04b34c4",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c5.png",
+        "master_sha256": "ce166f8c7cf341f30784d91049fb066ad29d10d0771c8ff92ccbc857e6194cbc",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Garlic",
+            "title": "Garlic",
+            "asked_for": "Garlic",
+            "revision": 1377107391,
+            "fetched_on": "2026-10-06",
+            "sha256": "d4232fa71cc916d823553e2e08b02227ee33e0e393bd77863aed6f195e670e26"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Garlic",
+            "title": "Garlic",
+            "asked_for": "Garlic",
+            "revision": 10920317,
+            "fetched_on": "2026-10-06",
+            "sha256": "333cfdca88ac36412070d82bb836b1d46325e49711f87a5e59ccc9d637993c2f"
+          }
+        ],
+        "facts": "tools/research/out/facts/garlic_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Garlic (Allium sativum) is a species of bulbous flowering plants in the genus Allium."
+          },
+          "extinct": {
+            "basis": "judged, not sourced",
+            "why": "Garlic is a plant that is widely cultivated and eaten today, so it is still living."
+          },
+          "kind_of_plant": {
+            "basis": "judged, not sourced",
+            "why": "Garlic is a bulbous plant grown and eaten as a food, like an onion, so a parent would call it a vegetable."
+          },
+          "part_we_eat": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "The part of the garlic plant that people eat is called the head or bulb. It grows at the bottom of a long green stalk."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Garlic plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "beetroot_plant": {
@@ -12985,6 +13362,11 @@
           "plant",
           "plant/vegetable"
         ]
+      },
+      "voice": {
+        "say": "Beetroot plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "ginger_plant": {
@@ -13006,6 +13388,11 @@
           "plant",
           "plant/vegetable"
         ]
+      },
+      "voice": {
+        "say": "Ginger plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "sweet_potato_plant": {
@@ -13027,15 +13414,16 @@
           "plant",
           "plant/vegetable"
         ]
+      },
+      "voice": {
+        "say": "Sweet potato plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "coriander_plant": {
       "name": "Coriander plant",
-      "status": "waiting for the owner",
-      "status_why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "held_from": "job:2026-10-06-05",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
@@ -13043,21 +13431,95 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "plant",
           "plant/vegetable"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "plant",
+            "open_now": true
+          },
+          {
+            "circle": "plant",
+            "sorted_by": "kind_of_plant",
+            "group": "vegetable",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_06_1_01_c6",
+        "game_file": "Assets/pictures/coriander_plant.webp",
+        "game_sha256": "3a86151e486acb4caf8fe75fbac479450f7e4972e029f2bb5552a48ea776ef81",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c6.png",
+        "master_sha256": "4ca66b06ddfed0c155c4e38307ee226078560fa20bf9f756931622072fc21cfd",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Coriander",
+            "title": "Coriander",
+            "asked_for": "Coriander",
+            "revision": 1376096465,
+            "fetched_on": "2026-10-06",
+            "sha256": "4b2643e1b2f98449bdc11303366ead8516f1c3c9be028bad2808776cf1b99319"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Coriander",
+            "title": "Coriander",
+            "asked_for": "Coriander",
+            "revision": 10573097,
+            "fetched_on": "2026-10-06",
+            "sha256": "c18179851b772d98967c19abf9f0daba41c0c35b466c9bb8b00c78c7f48ad24e"
+          }
+        ],
+        "facts": "tools/research/out/facts/coriander_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Coriander (), or Coriandrum sativum, is an annual herb in the family Apiaceae."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Coriander (), or Coriandrum sativum, is an annual herb in the family Apiaceae."
+          },
+          "kind_of_plant": {
+            "basis": "judged, not sourced",
+            "why": "Coriander is an edible herb whose leaves and seeds are used in cooking, so a parent would call it a vegetable plant."
+          },
+          "part_we_eat": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "All parts of the plant are edible, with the fresh leaves and dried seeds most traditionally used in cooking."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Coriander plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "cabbage_plant": {
       "name": "Cabbage plant",
-      "status": "waiting for the owner",
-      "status_why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "held_from": "job:2026-10-06-05",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
@@ -13065,30 +13527,146 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "plant",
           "plant/vegetable"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "plant",
+            "open_now": true
+          },
+          {
+            "circle": "plant",
+            "sorted_by": "kind_of_plant",
+            "group": "vegetable",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_06_1_01_c7",
+        "game_file": "Assets/pictures/cabbage_plant.webp",
+        "game_sha256": "2021236ac39793a35cf4bc8ee11ae11cdee7803c80241598855cc8b02117b081",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c7.png",
+        "master_sha256": "9e53163e1b8441900f4085e7652df9ccf0f10588639b0c0a6ba4171f40954a53",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Cabbage",
+            "title": "Cabbage",
+            "asked_for": "Cabbage",
+            "revision": 1377914159,
+            "fetched_on": "2026-10-06",
+            "sha256": "24e7a0ab752a70fe2dec9cebe75bf2ec4ad5a6945c473fd363e6e64b02abc3fb"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Cabbage",
+            "title": "Cabbage",
+            "asked_for": "Cabbage",
+            "revision": 10756907,
+            "fetched_on": "2026-10-06",
+            "sha256": "be6b39796e8be52943291c2e466eed6cd1d501e208c2ba89d1794390b0ae408e"
+          }
+        ],
+        "facts": "tools/research/out/facts/cabbage_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Cabbage (Brassica oleracea Capitata Group) is an edible plant."
+          },
+          "extinct": {
+            "basis": "judged, not sourced",
+            "why": "Cabbage is a plant grown and eaten today, so it is still living."
+          },
+          "kind_of_plant": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Cabbage, comprising several cultivars of Brassica oleracea, is a leafy green, red (purple), or white (pale green) biennial plant grown as an annual vegetable crop for its dense-leaved heads."
+          },
+          "part_we_eat": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Cabbage, comprising several cultivars of Brassica oleracea, is a leafy green, red (purple), or white (pale green) biennial plant grown as an annual vegetable crop for its dense-leaved heads."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Cabbage plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "mint_plant": {
       "name": "Mint plant",
       "status": "waiting for the owner",
       "status_why": [
-        "it could not be settled that it belongs in 'Plants'",
-        "it could not be settled that it belongs in 'Vegetable plants'",
-        "it could not be settled that it belongs in 'The leaves'",
-        "everything: no page was found for it"
+        "the pages and the judgements point to 'Flowers', not 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The leaves'"
       ],
-      "held_from": "job:2026-10-06-05",
+      "held_from": "job:2026-10-06-06",
       "fields": {
         "kind_of_thing": "plant",
+        "extinct": false,
         "kind_of_plant": "vegetable",
         "part_we_eat": "leaves"
       },
-      "familiar": 0.85,
+      "familiar": 0.9,
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Mentha",
+            "title": "Mentha",
+            "asked_for": "Mentha",
+            "revision": 1371284917,
+            "fetched_on": "2026-10-06",
+            "sha256": "f0415334128858be52e2fa89b6ec7b87fe2eb0e97ab9ee1bed4b8e570ebe55db"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Mentha",
+            "title": "Mentha",
+            "asked_for": "Mentha",
+            "revision": 10400352,
+            "fetched_on": "2026-10-06",
+            "sha256": "ff9f00f435796e900229f104fcb3dcc5cd9ead38f00be7edf8a3ddb34159791e"
+          }
+        ],
+        "facts": "tools/research/out/facts/mint_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Mentha, also known as mint (from Greek μίνθα míntha, Linear B mi-ta), is a genus of flowering plants in the mint family, Lamiaceae."
+          }
+        },
+        "no_sentence_for": [
+          "kind_of_plant",
+          "part_we_eat"
+        ]
+      },
+      "voice": {
+        "say": "Mint plant",
+        "checked_by_ear": false,
+        "clip": null
+      },
       "worked_out": {
         "would_join": [
           "seed",
@@ -13101,10 +13679,10 @@
       "name": "Curry leaf plant",
       "status": "waiting for the owner",
       "status_why": [
-        "the pages point to 'Trees', not 'Vegetable plants'",
+        "the pages and the judgements point to 'Trees', not 'Vegetable plants'",
         "it could not be settled that it belongs in 'The leaves'"
       ],
-      "held_from": "job:2026-10-06-05",
+      "held_from": "job:2026-10-06-06",
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
@@ -13112,7 +13690,46 @@
         "tree_academic": true,
         "part_we_eat": "leaves"
       },
-      "familiar": 0.85,
+      "familiar": 0.9,
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Curry_tree",
+            "title": "Curry tree",
+            "asked_for": "Curry leaf",
+            "revision": 1373218266,
+            "fetched_on": "2026-10-06",
+            "sha256": "71a04bf10f9822d9225746138f34bd394eb280ae815cd307a7867cab4c1f57f8"
+          }
+        ],
+        "facts": "tools/research/out/facts/curry_leaf_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Bergera koenigii, synonym Murraya koenigii, and commonly known as curry tree, curry bush or sweet neem, is a tree in the citrus family Rutaceae, first described by Carl Linnaeus in 1767."
+          },
+          "extinct": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe it as a tree that is native to several regions and has been introduced elsewhere, indicating it is still living."
+          },
+          "tree_academic": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Bergera koenigii, synonym Murraya koenigii, and commonly known as curry tree, curry bush or sweet neem, is a tree in the citrus family Rutaceae, first described by Carl Linnaeus in 1767."
+          }
+        },
+        "no_sentence_for": [
+          "kind_of_plant",
+          "part_we_eat"
+        ]
+      },
+      "voice": {
+        "say": "Curry leaf plant",
+        "checked_by_ear": false,
+        "clip": null
+      },
       "worked_out": {
         "would_join": [
           "seed",
@@ -13123,77 +13740,299 @@
     },
     "spinach_plant": {
       "name": "Spinach plant",
-      "status": "waiting for the owner",
-      "status_why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "held_from": "job:2026-10-06-05",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
         "kind_of_plant": "vegetable",
         "part_we_eat": "leaves"
       },
-      "familiar": 0.8,
+      "familiar": 0.9,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "plant",
           "plant/vegetable"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "plant",
+            "open_now": true
+          },
+          {
+            "circle": "plant",
+            "sorted_by": "kind_of_plant",
+            "group": "vegetable",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_06_1_01_c8",
+        "game_file": "Assets/pictures/spinach_plant.webp",
+        "game_sha256": "54ae609d773549b702fdf5d37f29a538dfc3caf6ff7911a75b0b0d51bf28c02d",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c8.png",
+        "master_sha256": "cf7631da9aedd974e7409e31b8988b4d28ad6446e9229a8dc3c30b44b3edf8ae",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Spinach",
+            "title": "Spinach",
+            "asked_for": "Spinach",
+            "revision": 1375799965,
+            "fetched_on": "2026-10-06",
+            "sha256": "bd723821bc66ffc5d3cf5e2a3d0f27e229ea8ea9df63c685365abb8ffc3c3930"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Spinach",
+            "title": "Spinach",
+            "asked_for": "Spinach",
+            "revision": 8074497,
+            "fetched_on": "2026-10-06",
+            "sha256": "13d791f20c6b1f0dc2777671b7217a829491e0e4401f7917454c1f0aa7bf1f65"
+          }
+        ],
+        "facts": "tools/research/out/facts/spinach_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Spinach (Spinacia oleracea) is a leafy green flowering plant native to Central and Western Asia."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "It is an annual plant (rarely biennial), growing as tall as 30 cm (1 ft)."
+          },
+          "kind_of_plant": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Its leaves are a common vegetable consumed either fresh, cooked or after storage (using preservation techniques like canning, freezing, or dehydration)."
+          },
+          "part_we_eat": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Its leaves are a common vegetable consumed either fresh, cooked or after storage (using preservation techniques like canning, freezing, or dehydration)."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Spinach plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "fenugreek_plant": {
       "name": "Fenugreek plant",
-      "status": "waiting for the owner",
-      "status_why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "held_from": "job:2026-10-06-05",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
         "kind_of_plant": "vegetable",
         "part_we_eat": "leaves"
       },
-      "familiar": 0.8,
+      "familiar": 0.9,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "plant",
           "plant/vegetable"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "plant",
+            "open_now": true
+          },
+          {
+            "circle": "plant",
+            "sorted_by": "kind_of_plant",
+            "group": "vegetable",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_06_1_01_c9",
+        "game_file": "Assets/pictures/fenugreek_plant.webp",
+        "game_sha256": "09aa94f189b408e6e4c8f971d0c1920d6733d100af1c72af263f9fd1feb37b56",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_1_01_c9.png",
+        "master_sha256": "637a78c3d26498a5151f4606ce72c0022de469a1b3389843d753169f7312708e",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Fenugreek",
+            "title": "Fenugreek",
+            "asked_for": "Fenugreek",
+            "revision": 1367888200,
+            "fetched_on": "2026-10-06",
+            "sha256": "5043ecda46ee5bbd9fb434dba8c4dbbb76ace3cd84fa64a35a5176acfcabbb5f"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Fenugreek",
+            "title": "Fenugreek",
+            "asked_for": "Fenugreek",
+            "revision": 8826734,
+            "fetched_on": "2026-10-06",
+            "sha256": "314635b9cc8f826a24b830a5e870e0ba4fc45ecea5a1d4f3966056898900d6b1"
+          }
+        ],
+        "facts": "tools/research/out/facts/fenugreek_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Fenugreek is a plant in the family Fabaceae."
+          },
+          "extinct": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe fenugreek as an annual plant that is cultivated worldwide, so it is still living."
+          },
+          "kind_of_plant": {
+            "basis": "judged, not sourced",
+            "why": "Fenugreek is grown for its edible leaves and seeds used as a herb and spice, so a parent would call it a vegetable plant rather than a tree, flower, or grass."
+          },
+          "part_we_eat": {
+            "basis": "judged, not sourced",
+            "why": "The sources say fenugreek's leaves are used as a herb and eaten, so the part we eat is the leaves."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Fenugreek plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "mustard_plant": {
       "name": "Mustard plant",
-      "status": "waiting for the owner",
-      "status_why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "held_from": "job:2026-10-06-05",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
         "kind_of_plant": "vegetable",
         "part_we_eat": "leaves"
       },
-      "familiar": 0.7,
+      "familiar": 0.9,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "plant",
           "plant/vegetable"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "plant",
+            "open_now": true
+          },
+          {
+            "circle": "plant",
+            "sorted_by": "kind_of_plant",
+            "group": "vegetable",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_06_2_01_c6",
+        "game_file": "Assets/pictures/mustard_plant.webp",
+        "game_sha256": "7a70ab465e0eb0297a694594f9c6a57c829acaec7ac923614fbcbff6f5885055",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c6.png",
+        "master_sha256": "4245db7662bf10f34138ca92a320c2ad01d3ba214c69aa1f996a2d267ca18e7e",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 1
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Mustard_plant",
+            "title": "Mustard plant",
+            "asked_for": "Mustard plant",
+            "revision": 1376221441,
+            "fetched_on": "2026-10-06",
+            "sha256": "e4b272b2dd03f9f5bbfb73bd37ff8c57821f5f3178f777dfeb0794bc12a73be6"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Mustard_plant",
+            "title": "Mustard plant",
+            "asked_for": "Mustard plant",
+            "revision": 8972281,
+            "fetched_on": "2026-10-06",
+            "sha256": "6b76e9af918b872e019debdb48fe862b431c215cd2df74820bfc32edd12a4cd4"
+          }
+        ],
+        "facts": "tools/research/out/facts/mustard_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The mustard plant is any one of several plant species in the genera Brassica, Rhamphospermum and Sinapis in the family Brassicaceae (the mustard family)."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Mild white mustard (Sinapis hirta) grows wild in North Africa, the Middle East and Mediterranean Europe and has spread farther by long cultivation; brown or Indian mustard (B. juncea), originally from the foothills of the Himalaya, is grown commercially in the UK, Canada and the US; black mustard (B. nigra) in Argentina, Chile, the US and some European countries."
+          },
+          "kind_of_plant": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Many vegetables are cultivated varieties of mustard plants; domestication may have begun 6,000 years ago."
+          },
+          "part_we_eat": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Some kinds of mustard plants have edible leaves."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Mustard plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "pea_plant": {
       "name": "Pea plant",
       "status": "waiting for the owner",
       "status_why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
+        "no tile of it passed the checks after 2 sheet(s)"
       ],
-      "held_from": "job:2026-10-06-05",
+      "held_from": "job:2026-10-06-06",
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
@@ -13201,6 +14040,57 @@
         "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.8,
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Pea",
+            "title": "Pea",
+            "asked_for": "Pea plant",
+            "revision": 1378096580,
+            "fetched_on": "2026-10-06",
+            "sha256": "0a819904b277388af243d3e5cec3ea25621e8e8c352f529d2076da0976e96542"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Pea",
+            "title": "Pea",
+            "asked_for": "Pea",
+            "revision": 10994046,
+            "fetched_on": "2026-10-06",
+            "sha256": "f2b7b94b79aec5e1a27e0a4a77287770c86fd65928f6c3bdb65b7dc2430f0b4c"
+          }
+        ],
+        "facts": "tools/research/out/facts/pea_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Peas are annual plants, with a life cycle of one year."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Peas are annual plants, with a life cycle of one year."
+          },
+          "kind_of_plant": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Peas are eaten as a vegetable."
+          },
+          "part_we_eat": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Each pod contains several seeds (peas), which can have green or yellow cotyledons when mature."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Pea plant",
+        "checked_by_ear": false,
+        "clip": null
+      },
       "worked_out": {
         "would_join": [
           "seed",
@@ -13211,11 +14101,7 @@
     },
     "bean_plant": {
       "name": "Bean plant",
-      "status": "waiting for the owner",
-      "status_why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "held_from": "job:2026-10-06-05",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
@@ -13223,19 +14109,97 @@
         "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.8,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "plant",
           "plant/vegetable"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "plant",
+            "open_now": true
+          },
+          {
+            "circle": "plant",
+            "sorted_by": "kind_of_plant",
+            "group": "vegetable",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_06_2_01_c4",
+        "game_file": "Assets/pictures/bean_plant.webp",
+        "game_sha256": "4e73f49196b5e438d8cd33b28c92e095a9d9eeb3005f1398662b7dedfb915463",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c4.png",
+        "master_sha256": "c037090f3be3b7677f660c7f2fb585dd2dc297d36b30c97b220eaaac09bb8bf0",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 1
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Bean",
+            "title": "Bean",
+            "asked_for": "Bean",
+            "revision": 1373686563,
+            "fetched_on": "2026-10-06",
+            "sha256": "75d52dc6b03f22fb4b11b951df6dde3e80dea43b11e366b4ff1c10bbae0e20ed"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Bean",
+            "title": "Bean",
+            "asked_for": "Bean",
+            "revision": 9689892,
+            "fetched_on": "2026-10-06",
+            "sha256": "446a90ada78f8fd97c13eb5458937655906b708e823cf61fb979ac42b224d7bf"
+          }
+        ],
+        "facts": "tools/research/out/facts/bean_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A bean is the seed of plants in many genera of the legume family (Fabaceae) used as a vegetable for human consumption or animal feed."
+          },
+          "extinct": {
+            "basis": "judged, not sourced",
+            "why": "Beans are widely cultivated and eaten today, so the bean plant is still living."
+          },
+          "kind_of_plant": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A bean is the seed of plants in many genera of the legume family (Fabaceae) used as a vegetable for human consumption or animal feed."
+          },
+          "part_we_eat": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A bean is the seed of plants in many genera of the legume family (Fabaceae) used as a vegetable for human consumption or animal feed."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Bean plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "cucumber_plant": {
       "name": "Cucumber plant",
-      "status": "waiting for the owner",
+      "status": "taken out of the game",
       "status_why": [
-        "the pages point to 'The fruit', not 'The seeds or pods'"
+        "not needed: the pages and the judgements point to 'The fruit', not 'The seeds or pods'"
       ],
       "held_from": "job:2026-10-06-05",
       "fields": {
@@ -13251,46 +14215,176 @@
           "plant",
           "plant/vegetable"
         ]
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Cucumber",
+            "title": "Cucumber",
+            "asked_for": "Cucumber",
+            "revision": 1353895530,
+            "fetched_on": "2026-10-06",
+            "sha256": "56417804dbed6a85162687c1edee46a1f80f216d14c0983312678bbb2b246b42"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Cucumber",
+            "title": "Cucumber",
+            "asked_for": "Cucumber",
+            "revision": 10747564,
+            "fetched_on": "2026-10-06",
+            "sha256": "75ab402459d0ecd43204e9ee0842ac271e315fee982fa9b423be9342f982349f"
+          }
+        ],
+        "facts": "tools/research/out/facts/cucumber_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The cucumber (Cucumis sativus) is a widely-cultivated creeping vine plant in the family Cucurbitaceae that bears cylindrical to spherical fruits, used as culinary vegetables."
+          },
+          "extinct": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe cucumbers as widely grown and cultivated today, so the plant is still living."
+          },
+          "kind_of_plant": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The cucumber (Cucumis sativus) is a widely-cultivated creeping vine plant in the family Cucurbitaceae that bears cylindrical to spherical fruits, used as culinary vegetables."
+          }
+        },
+        "no_sentence_for": [
+          "part_we_eat"
+        ]
+      },
+      "voice": {
+        "say": "Cucumber plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "pumpkin_seeds": {
       "name": "Pumpkin seeds",
-      "status": "waiting for the owner",
-      "status_why": [
-        "100% of the boards sorted by 'part_we_eat' would have a second clean solution"
-      ],
-      "held_from": "job:2026-10-06-05",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
         "kind_of_plant": "vegetable",
         "part_we_eat": "seeds_or_pods"
       },
-      "familiar": 0.8,
+      "familiar": 0.9,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "plant",
           "plant/vegetable"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "plant",
+            "open_now": true
+          },
+          {
+            "circle": "plant",
+            "sorted_by": "kind_of_plant",
+            "group": "vegetable",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_06_2_01_c7",
+        "game_file": "Assets/pictures/pumpkin_seeds.webp",
+        "game_sha256": "81f3fdcf0665da347f3bf82e3a72bccb2ce1761a7f430c76aea25289e9f4df4c",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c7.png",
+        "master_sha256": "0c3bf98123f802000c78b2c785c74aa3b5a4279c9a05bfaffb86b3c4554e854e",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 1
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Pumpkin_seed",
+            "title": "Pumpkin seed",
+            "asked_for": "Pumpkin seeds",
+            "revision": 1312229672,
+            "fetched_on": "2026-10-06",
+            "sha256": "2c84e05f1f4e3e3411a7bd9b7b500822b609712b4c4eb78a5fc9349e34a35926"
+          }
+        ],
+        "facts": "tools/research/out/facts/pumpkin_seeds.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A pumpkin seed, also known as a pepita (from the Mexican Spanish: pepita de calabaza, 'little seed of squash'), is the edible seed of a pumpkin or certain other cultivars of squash."
+          },
+          "extinct": {
+            "basis": "judged, not sourced",
+            "why": "Pumpkin seeds come from pumpkins and squash plants that are still grown and eaten today, so they are not extinct."
+          },
+          "kind_of_plant": {
+            "basis": "judged, not sourced",
+            "why": "Pumpkin seeds come from pumpkins, which are squash plants grown in gardens and eaten as vegetables."
+          },
+          "part_we_eat": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A pumpkin seed, also known as a pepita (from the Mexican Spanish: pepita de calabaza, 'little seed of squash'), is the edible seed of a pumpkin or certain other cultivars of squash."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Pumpkin seeds",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "coriander_seeds": {
       "name": "Coriander seeds",
       "status": "waiting for the owner",
       "status_why": [
-        "it could not be settled that it belongs in 'Plants'",
         "it could not be settled that it belongs in 'Vegetable plants'",
         "it could not be settled that it belongs in 'The seeds or pods'",
-        "everything: no page was found for it"
+        "kind_of_plant: uncertain: two judgements disagree: 'Grasses and grains' and 'Vegetable plants'"
       ],
-      "held_from": "job:2026-10-06-05",
+      "held_from": "job:2026-10-06-06",
       "fields": {
         "kind_of_thing": "plant",
+        "extinct": false,
         "kind_of_plant": "vegetable",
         "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.8,
+      "sources": {
+        "pages": [],
+        "facts": "tools/research/out/facts/coriander_seeds.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "Coriander seeds are the seeds of the coriander plant, so they are a plant."
+          }
+        },
+        "no_sentence_for": [
+          "kind_of_plant",
+          "part_we_eat"
+        ]
+      },
+      "voice": {
+        "say": "Coriander seeds",
+        "checked_by_ear": false,
+        "clip": null
+      },
       "worked_out": {
         "would_join": [
           "seed",
@@ -13301,33 +14395,96 @@
     },
     "ladies_finger_plant": {
       "name": "Ladies finger plant",
-      "status": "waiting for the owner",
-      "status_why": [
-        "it could not be settled that it belongs in 'Plants'",
-        "it could not be settled that it belongs in 'Vegetable plants'",
-        "it could not be settled that it belongs in 'The seeds or pods'",
-        "everything: no page was found for it"
-      ],
-      "held_from": "job:2026-10-06-05",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "plant",
+        "extinct": false,
         "kind_of_plant": "vegetable",
         "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.7,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-06",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "plant",
           "plant/vegetable"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "plant",
+            "open_now": true
+          },
+          {
+            "circle": "plant",
+            "sorted_by": "kind_of_plant",
+            "group": "vegetable",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_06_2_01_c5",
+        "game_file": "Assets/pictures/ladies_finger_plant.webp",
+        "game_sha256": "93e96a9ea5bb811da2662c55583bc7e2f059d06f2af22fc81ecc140de3ffcb45",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c5.png",
+        "master_sha256": "d1a03d1771fe1642c464bb9fc714a8043d45e978307c4498e8499c894a1ab9eb",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Okra",
+            "title": "Okra",
+            "asked_for": "Okra",
+            "revision": 1378086927,
+            "fetched_on": "2026-10-06",
+            "sha256": "2fe3d93163d2ceb001c3ace5c9c445e99ddfdafec1b23b7c4910a8d1bfd45bc4"
+          }
+        ],
+        "facts": "tools/research/out/facts/ladies_finger_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Okra (US: , UK: ), Abelmoschus esculentus, known in some English-speaking countries as lady's fingers, is a flowering plant in the mallow family native to West Africa."
+          },
+          "extinct": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe okra as a currently cultivated flowering plant, so it is still living."
+          },
+          "kind_of_plant": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Cultivated in tropical, subtropical, and warm temperate regions around the world for its edible green (red in some cultivars) seed pods, okra is used in the cuisines of many countries."
+          },
+          "part_we_eat": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Cultivated in tropical, subtropical, and warm temperate regions around the world for its edible green (red in some cultivars) seed pods, okra is used in the cuisines of many countries."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Ladies finger plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "bottle_gourd_plant": {
       "name": "Bottle gourd plant",
-      "status": "waiting for the owner",
+      "status": "taken out of the game",
       "status_why": [
-        "the pages point to 'The fruit', not 'The seeds or pods'"
+        "not needed: the pages and the judgements point to 'The fruit', not 'The seeds or pods'"
       ],
       "held_from": "job:2026-10-06-05",
       "fields": {
@@ -13343,13 +14500,51 @@
           "plant",
           "plant/vegetable"
         ]
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Calabash",
+            "title": "Calabash",
+            "asked_for": "Bottle gourd",
+            "revision": 1376025433,
+            "fetched_on": "2026-10-06",
+            "sha256": "cd7b252854e8608dd498150f415c022157c6c30674d2ffe94968d5f12610d496"
+          }
+        ],
+        "facts": "tools/research/out/facts/bottle_gourd_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Calabash (; Lagenaria siceraria), also known as bottle gourd, white-flowered gourd, long melon, birdhouse gourd, New Guinea bean, New Guinea butter bean or Tasmania bean, is a vine which is grown for its fruit."
+          },
+          "extinct": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe the bottle gourd as a vine that is grown and cultivated across the tropics, indicating it is still living."
+          },
+          "kind_of_plant": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "It can be either harvested young to be consumed as a vegetable, or harvested mature to be dried and used as a kitchen utensil (typically as a ladle or bowl), beverage container or a musical instrument."
+          }
+        },
+        "no_sentence_for": [
+          "part_we_eat"
+        ]
+      },
+      "voice": {
+        "say": "Bottle gourd plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "bitter_gourd_plant": {
       "name": "Bitter gourd plant",
-      "status": "waiting for the owner",
+      "status": "taken out of the game",
       "status_why": [
-        "the pages point to 'The fruit', not 'The seeds or pods'"
+        "not needed: the pages and the judgements point to 'The fruit', not 'The seeds or pods'"
       ],
       "held_from": "job:2026-10-06-05",
       "fields": {
@@ -13365,15 +14560,53 @@
           "plant",
           "plant/vegetable"
         ]
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Momordica_charantia",
+            "title": "Momordica charantia",
+            "asked_for": "Bitter gourd",
+            "revision": 1378360676,
+            "fetched_on": "2026-10-06",
+            "sha256": "f79606fb69584a240590335f8a5315bdea825618c404aec9fafea07e87e57f64"
+          }
+        ],
+        "facts": "tools/research/out/facts/bitter_gourd_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Momordica charantia (commonly called bitter melon, gouya,  cerassee, goya, bitter apple, bitter gourd, bitter squash, balsam-pear, karela, karavila and many more names listed below) is a tropical and subtropical vine of the family Cucurbitaceae, widely grown in Asia, Africa, and the Caribbean for its edible fruit."
+          },
+          "extinct": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe it as a widely grown vine with edible fruit, so it is still living."
+          },
+          "kind_of_plant": {
+            "basis": "judged, not sourced",
+            "why": "It is a vine grown for its edible fruit, which is used as a vegetable in cooking."
+          }
+        },
+        "no_sentence_for": [
+          "part_we_eat"
+        ]
+      },
+      "voice": {
+        "say": "Bitter gourd plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     }
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 143,
-      "waiting for the owner": 31,
+      "in the game": 156,
+      "waiting for the owner": 15,
       "kept for later": 5,
-      "excluded": 3
+      "excluded": 3,
+      "taken out of the game": 3
     },
     "circles_that_can_open_now": [
       "seed",
@@ -13386,7 +14619,7 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 143,
+        "things": 156,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
@@ -13397,8 +14630,8 @@
           },
           "plant": {
             "label": "Plants",
-            "things": 17,
-            "with_picture": 17
+            "things": 30,
+            "with_picture": 30
           },
           "nature_not_alive": {
             "label": "Things in nature that are not alive",
@@ -13609,7 +14842,7 @@
       },
       "plant": {
         "label": "Plants",
-        "things": 17,
+        "things": 30,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_plant",
         "groups": {
@@ -13630,8 +14863,8 @@
           },
           "vegetable": {
             "label": "Vegetable plants",
-            "things": 4,
-            "with_picture": 4
+            "things": 17,
+            "with_picture": 17
           }
         },
         "open_by_its_things": true,
@@ -13670,7 +14903,7 @@
       },
       "plant/vegetable": {
         "label": "Vegetable plants",
-        "things": 4,
+        "things": 17,
         "steps_from_seed": 2,
         "sorted_by": "part_we_eat",
         "groups": {
@@ -13678,34 +14911,24 @@
             "label": "The fruit",
             "things": 4,
             "with_picture": 4
+          },
+          "under_the_ground": {
+            "label": "What grows under the ground",
+            "things": 5,
+            "with_picture": 5
+          },
+          "leaves": {
+            "label": "The leaves",
+            "things": 5,
+            "with_picture": 5
+          },
+          "seeds_or_pods": {
+            "label": "The seeds or pods",
+            "things": 3,
+            "with_picture": 3
           }
         },
         "could_be_filled_by": [
-          {
-            "name": "Carrot plant",
-            "status": "waiting for the owner",
-            "group": "under_the_ground"
-          },
-          {
-            "name": "Radish plant",
-            "status": "waiting for the owner",
-            "group": "under_the_ground"
-          },
-          {
-            "name": "Onion plant",
-            "status": "waiting for the owner",
-            "group": "under_the_ground"
-          },
-          {
-            "name": "Potato plant",
-            "status": "waiting for the owner",
-            "group": "under_the_ground"
-          },
-          {
-            "name": "Garlic plant",
-            "status": "waiting for the owner",
-            "group": "under_the_ground"
-          },
           {
             "name": "Beetroot plant",
             "status": "waiting for the owner",
@@ -13722,16 +14945,6 @@
             "group": "under_the_ground"
           },
           {
-            "name": "Coriander plant",
-            "status": "waiting for the owner",
-            "group": "leaves"
-          },
-          {
-            "name": "Cabbage plant",
-            "status": "waiting for the owner",
-            "group": "leaves"
-          },
-          {
             "name": "Mint plant",
             "status": "waiting for the owner",
             "group": "leaves"
@@ -13742,37 +14955,7 @@
             "group": "leaves"
           },
           {
-            "name": "Spinach plant",
-            "status": "waiting for the owner",
-            "group": "leaves"
-          },
-          {
-            "name": "Fenugreek plant",
-            "status": "waiting for the owner",
-            "group": "leaves"
-          },
-          {
-            "name": "Mustard plant",
-            "status": "waiting for the owner",
-            "group": "leaves"
-          },
-          {
             "name": "Pea plant",
-            "status": "waiting for the owner",
-            "group": "seeds_or_pods"
-          },
-          {
-            "name": "Bean plant",
-            "status": "waiting for the owner",
-            "group": "seeds_or_pods"
-          },
-          {
-            "name": "Cucumber plant",
-            "status": "waiting for the owner",
-            "group": "seeds_or_pods"
-          },
-          {
-            "name": "Pumpkin seeds",
             "status": "waiting for the owner",
             "group": "seeds_or_pods"
           },
@@ -13780,29 +14963,12 @@
             "name": "Coriander seeds",
             "status": "waiting for the owner",
             "group": "seeds_or_pods"
-          },
-          {
-            "name": "Ladies finger plant",
-            "status": "waiting for the owner",
-            "group": "seeds_or_pods"
-          },
-          {
-            "name": "Bottle gourd plant",
-            "status": "waiting for the owner",
-            "group": "seeds_or_pods"
-          },
-          {
-            "name": "Bitter gourd plant",
-            "status": "waiting for the owner",
-            "group": "seeds_or_pods"
           }
         ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "4 more thing(s) in 'What grows under the ground'",
-          "4 more thing(s) in 'The leaves'",
-          "4 more thing(s) in 'The seeds or pods'"
+          "1 more thing(s) in 'The seeds or pods'"
         ]
       },
       "nature_not_alive": {
@@ -13993,7 +15159,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-10-06-05",
+    "by": "job run 2026-10-06-06",
     "on": "2026-10-06"
   }
 }

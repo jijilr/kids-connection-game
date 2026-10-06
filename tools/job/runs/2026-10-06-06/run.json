@@ -1,0 +1,864 @@
+{
+  "id": "2026-10-06-06",
+  "started": "2026-10-06",
+  "rehearse": null,
+  "cap_inr": 60.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "plant/vegetable",
+        "chain": "Plants > Vegetable plants > What grows under the ground",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "under_the_ground"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [
+          {
+            "name": "Carrot plant",
+            "status": "waiting for the owner",
+            "group": "under_the_ground"
+          },
+          {
+            "name": "Radish plant",
+            "status": "waiting for the owner",
+            "group": "under_the_ground"
+          },
+          {
+            "name": "Onion plant",
+            "status": "waiting for the owner",
+            "group": "under_the_ground"
+          },
+          {
+            "name": "Potato plant",
+            "status": "waiting for the owner",
+            "group": "under_the_ground"
+          },
+          {
+            "name": "Garlic plant",
+            "status": "waiting for the owner",
+            "group": "under_the_ground"
+          },
+          {
+            "name": "Beetroot plant",
+            "status": "waiting for the owner",
+            "group": "under_the_ground"
+          },
+          {
+            "name": "Ginger plant",
+            "status": "waiting for the owner",
+            "group": "under_the_ground"
+          },
+          {
+            "name": "Sweet potato plant",
+            "status": "waiting for the owner",
+            "group": "under_the_ground"
+          }
+        ],
+        "retried": [
+          "Carrot plant",
+          "Radish plant",
+          "Onion plant",
+          "Potato plant",
+          "Garlic plant",
+          "Beetroot plant",
+          "Ginger plant",
+          "Sweet potato plant"
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "plant/vegetable",
+        "chain": "Plants > Vegetable plants > The leaves",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "leaves"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [
+          {
+            "name": "Coriander plant",
+            "status": "waiting for the owner",
+            "group": "leaves"
+          },
+          {
+            "name": "Cabbage plant",
+            "status": "waiting for the owner",
+            "group": "leaves"
+          },
+          {
+            "name": "Mint plant",
+            "status": "waiting for the owner",
+            "group": "leaves"
+          },
+          {
+            "name": "Curry leaf plant",
+            "status": "waiting for the owner",
+            "group": "leaves"
+          },
+          {
+            "name": "Spinach plant",
+            "status": "waiting for the owner",
+            "group": "leaves"
+          },
+          {
+            "name": "Fenugreek plant",
+            "status": "waiting for the owner",
+            "group": "leaves"
+          },
+          {
+            "name": "Mustard plant",
+            "status": "waiting for the owner",
+            "group": "leaves"
+          }
+        ],
+        "retried": [
+          "Coriander plant",
+          "Cabbage plant",
+          "Mint plant",
+          "Curry leaf plant",
+          "Spinach plant",
+          "Fenugreek plant",
+          "Mustard plant"
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "plant/vegetable",
+        "chain": "Plants > Vegetable plants > The seeds or pods",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [
+          {
+            "name": "Pea plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Bean plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Cucumber plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Pumpkin seeds",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Coriander seeds",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Ladies finger plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Bottle gourd plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Bitter gourd plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          }
+        ],
+        "retried": [
+          "Pumpkin seeds",
+          "Pea plant",
+          "Bean plant",
+          "Coriander seeds",
+          "Cucumber plant",
+          "Ladies finger plant",
+          "Bottle gourd plant",
+          "Bitter gourd plant"
+        ],
+        "facts_done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": []
+  },
+  "retry_held": true,
+  "things": [
+    {
+      "name": "Carrot plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Carrot plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "under_the_ground"
+        },
+        "familiar": 0.9,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "draw": "Draw one whole orange carrot with a long pointed root and a leafy green top, growing half-buried in brown soil",
+      "tries": 1,
+      "tile": "job_2026_10_06_06_1_01_c1"
+    },
+    {
+      "name": "Radish plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Radish plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "under_the_ground"
+        },
+        "familiar": 0.8,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 0,
+      "draw": "A small round red radish with a white tip and green leafy top, whole, growing half-buried in brown soil so its root is clearly under the ground",
+      "tries": 1,
+      "tile": "job_2026_10_06_06_1_01_c2"
+    },
+    {
+      "name": "Onion plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Onion plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "under_the_ground"
+        },
+        "familiar": 0.8,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 0,
+      "draw": "A round onion bulb with dry golden-brown papery skin, purple-red and white, with green leafy shoots on top, growing half-buried in brown soil",
+      "tries": 1,
+      "tile": "job_2026_10_06_06_1_01_c3"
+    },
+    {
+      "name": "Potato plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Potato plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "under_the_ground"
+        },
+        "familiar": 0.7,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "kind_of_thing"
+      ],
+      "ask": 0,
+      "draw": "A single whole potato with light-brown skin and small dimples, growing half-buried under the ground, with green leaves above",
+      "tries": 1,
+      "tile": "job_2026_10_06_06_1_01_c4"
+    },
+    {
+      "name": "Garlic plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Garlic plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "under_the_ground"
+        },
+        "familiar": 0.7,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "extinct",
+        "kind_of_plant"
+      ],
+      "ask": 0,
+      "draw": "A whole white garlic bulb with papery skin, pulled apart into small cloves, growing at the bottom of a long green stalk under the ground",
+      "tries": 1,
+      "tile": "job_2026_10_06_06_1_01_c5"
+    },
+    {
+      "name": "Coriander plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Coriander plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "leaves"
+        },
+        "familiar": 0.9,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "kind_of_plant"
+      ],
+      "ask": 1,
+      "draw": "A bunch of fresh green cilantro leaves with thin light stems, whole and leafy, the kind sold in Indian markets, clearly showing many small green leaves",
+      "tries": 1,
+      "tile": "job_2026_10_06_06_1_01_c6"
+    },
+    {
+      "name": "Cabbage plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Cabbage plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "leaves"
+        },
+        "familiar": 0.9,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 1,
+      "draw": "Draw one whole round green cabbage with tightly packed smooth leaves forming a dense ball, showing the leafy head clearly",
+      "tries": 1,
+      "tile": "job_2026_10_06_06_1_01_c7"
+    },
+    {
+      "name": "Mint plant",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'Flowers', not 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The leaves'"
+      ],
+      "thing": {
+        "name": "Mint plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "flower"
+        },
+        "familiar": 0.9,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Curry leaf plant",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'Trees', not 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The leaves'"
+      ],
+      "thing": {
+        "name": "Curry leaf plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree",
+          "tree_academic": true
+        },
+        "familiar": 0.9,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "tree_academic": true,
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Spinach plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Spinach plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "leaves"
+        },
+        "familiar": 0.9,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 1,
+      "draw": "Draw one fresh green spinach plant with many dark green oval leaves on thin stems, larger at the bottom, small yellow-green flowers on top, whole and natural",
+      "tries": 1,
+      "tile": "job_2026_10_06_06_1_01_c8"
+    },
+    {
+      "name": "Fenugreek plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Fenugreek plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "leaves"
+        },
+        "familiar": 0.9,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "extinct",
+        "kind_of_plant",
+        "part_we_eat"
+      ],
+      "ask": 1,
+      "draw": "A bunch of fresh green fenugreek leaves with three small oval leaflets on each stem, lying whole, natural green colour",
+      "tries": 1,
+      "tile": "job_2026_10_06_06_1_01_c9"
+    },
+    {
+      "name": "Mustard plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Mustard plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "leaves"
+        },
+        "familiar": 0.9,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 1,
+      "draw": "A leafy green mustard plant with a cluster of small yellow flowers on top, broad green leaves with wavy edges, growing in brown soil",
+      "tries": 1,
+      "tile": "job_2026_10_06_06_2_01_c6"
+    },
+    {
+      "name": "Pumpkin seeds",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Pumpkin seeds",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "familiar": 0.9,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "extinct",
+        "kind_of_plant"
+      ],
+      "ask": 2,
+      "draw": "A single flat oval white pumpkin seed with a smooth pale husk, lying whole, showing its two pointed ends and light green tint at the edge",
+      "tries": 1,
+      "tile": "job_2026_10_06_06_2_01_c7"
+    },
+    {
+      "name": "Pea plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Pea plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "familiar": 0.8,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 2,
+      "draw": "A small round green pea seed, smooth and whole, with a tiny pale scar, shown alone on white",
+      "tries": 2,
+      "tile": null,
+      "no_tile": "no tile of it passed the checks after 2 sheet(s)"
+    },
+    {
+      "name": "Bean plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Bean plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "familiar": 0.8,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 2,
+      "draw": "A handful of plump kidney-shaped seeds, cream, red, and black, smooth and shiny, spilling from a split green pod",
+      "tries": 1,
+      "tile": "job_2026_10_06_06_2_01_c4"
+    },
+    {
+      "name": "Coriander seeds",
+      "passed": false,
+      "why": [
+        "it could not be settled that it belongs in 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The seeds or pods'",
+        "kind_of_plant: uncertain: two judgements disagree: 'Grasses and grains' and 'Vegetable plants'"
+      ],
+      "thing": {
+        "name": "Coriander seeds",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false
+        },
+        "familiar": 0.8,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "kind_of_thing",
+        "extinct"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Cucumber plant",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'The fruit', not 'The seeds or pods'"
+      ],
+      "thing": {
+        "name": "Cucumber plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "fruit"
+        },
+        "familiar": 0.7,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.7,
+      "not_needed": true,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Ladies finger plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Ladies finger plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "familiar": 0.7,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 2,
+      "draw": "One whole green okra pod, long and ridged with a pointed tip, lying on a plain white background, showing the seeds inside",
+      "tries": 1,
+      "tile": "job_2026_10_06_06_2_01_c5"
+    },
+    {
+      "name": "Bottle gourd plant",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'The fruit', not 'The seeds or pods'"
+      ],
+      "thing": {
+        "name": "Bottle gourd plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "fruit"
+        },
+        "familiar": 0.7,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.7,
+      "not_needed": true,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Bitter gourd plant",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'The fruit', not 'The seeds or pods'"
+      ],
+      "thing": {
+        "name": "Bitter gourd plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "fruit"
+        },
+        "familiar": 0.7,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-06"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.7,
+      "not_needed": true,
+      "judged_not_sourced": [
+        "extinct",
+        "kind_of_plant"
+      ],
+      "ask": 2
+    }
+  ],
+  "sheets": [
+    "job_2026_10_06_06_1_01",
+    "job_2026_10_06_06_2_01",
+    "job_2026_10_06_06_3_01"
+  ],
+  "stopped": "",
+  "spent_usd": {
+    "deepseek": 0.02108,
+    "drawing": 0.4146,
+    "picture_checks": 0.00188
+  }
+}

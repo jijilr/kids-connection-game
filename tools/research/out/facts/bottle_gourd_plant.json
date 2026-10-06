@@ -3,25 +3,24 @@
   "fields": {
     "kind_of_thing": {
       "value": "plant",
-      "quote": "is a vine which is grown for its fruit",
+      "quote": "Calabash (; Lagenaria siceraria), also known as bottle gourd, white-flowered gourd, long melon, birdhouse gourd, New Guinea bean, New Guinea butter bean or Tasmania bean, is a vine which is grown for its fruit.",
       "source": "wikipedia_en",
       "basis": "sourced"
     },
     "extinct": {
       "value": false,
-      "quote": "is native to tropical Africa, and cultivated across the tropics",
-      "source": "wikipedia_en",
-      "basis": "sourced"
+      "basis": "judged, not sourced",
+      "why": "The sources describe the bottle gourd as a vine that is grown and cultivated across the tropics, indicating it is still living."
     },
     "kind_of_plant": {
       "value": "vegetable",
-      "quote": "It can be either harvested young to be consumed as a vegetable, or harvested mature to be dried and used as a kitchen utensil",
+      "quote": "It can be either harvested young to be consumed as a vegetable, or harvested mature to be dried and used as a kitchen utensil (typically as a ladle or bowl), beverage container or a musical instrument.",
       "source": "wikipedia_en",
       "basis": "sourced"
     },
     "part_we_eat": {
       "value": "fruit",
-      "quote": "is a vine which is grown for its fruit",
+      "quote": "Calabash (; Lagenaria siceraria), also known as bottle gourd, white-flowered gourd, long melon, birdhouse gourd, New Guinea bean, New Guinea butter bean or Tasmania bean, is a vine which is grown for its fruit.",
       "source": "wikipedia_en",
       "basis": "sourced"
     }
