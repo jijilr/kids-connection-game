@@ -18663,6 +18663,49 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "Chalk",
+        "checked_by_ear": false,
+        "clip": null
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Chalk",
+            "title": "Chalk",
+            "asked_for": "Chalk",
+            "revision": 1377668010,
+            "fetched_on": "2026-10-07",
+            "sha256": "aa07a401a3042e37b86608033c16f2d2f1ce954eb8c03bc2bd089e64d4b20297"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Chalk",
+            "title": "Chalk",
+            "asked_for": "Chalk",
+            "revision": 10143394,
+            "fetched_on": "2026-10-07",
+            "sha256": "e455bee619c3ec79f0205b6755f25f2d5badf2eeda1d7016ed64a6d6887856ee"
+          }
+        ],
+        "facts": "tools/research/out/facts/chalk.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Chalk is a soft, white, porous, sedimentary carbonate rock."
+          },
+          "kind_of_nature": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Chalk is a soft, white, porous, sedimentary carbonate rock."
+          }
+        },
+        "no_sentence_for": [
+          "what_happens_when_wet"
+        ]
       }
     },
     "wet_clay": {
@@ -18684,6 +18727,28 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "Wet clay",
+        "checked_by_ear": false,
+        "clip": null
+      },
+      "sources": {
+        "pages": [],
+        "facts": "tools/research/out/facts/wet_clay.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "Wet clay is a naturally occurring earth material, not an animal, plant, or something people make."
+          },
+          "kind_of_nature": {
+            "basis": "judged, not sourced",
+            "why": "Wet clay is soft, sticky earth that is part of the soil underfoot."
+          }
+        },
+        "no_sentence_for": [
+          "what_happens_when_wet"
+        ]
       }
     },
     "potter_s_clay": {
@@ -18704,6 +18769,21 @@
           "seed",
           "nature_not_alive",
           "nature_not_alive/ground"
+        ]
+      },
+      "voice": {
+        "say": "Potter's clay",
+        "checked_by_ear": false,
+        "clip": null
+      },
+      "sources": {
+        "pages": [],
+        "facts": "tools/research/out/facts/potter_s_clay.json",
+        "evidence": {},
+        "no_sentence_for": [
+          "kind_of_thing",
+          "kind_of_nature",
+          "what_happens_when_wet"
         ]
       }
     },
@@ -18727,6 +18807,45 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "Slush",
+        "checked_by_ear": false,
+        "clip": null
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Slush",
+            "title": "Slush",
+            "asked_for": "Slush",
+            "revision": 1375303723,
+            "fetched_on": "2026-10-07",
+            "sha256": "68bd029df603d8e8fbd2a8e02941770068d016fbcb912be4009c28667c1f1180"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Slush",
+            "title": "Slush",
+            "asked_for": "Slush",
+            "revision": 10358979,
+            "fetched_on": "2026-10-07",
+            "sha256": "2183c5df7d854e06d155d39a2487db64a83faf140d8141fc0fa44d39b6cd69ff"
+          }
+        ],
+        "facts": "tools/research/out/facts/slush.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "In the natural environment, slush forms when ice or snow melts or during mixed precipitation."
+          }
+        },
+        "no_sentence_for": [
+          "kind_of_nature",
+          "what_happens_when_wet"
+        ]
       }
     },
     "sludge": {
@@ -18748,6 +18867,11 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "Sludge",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "gumbo": {
@@ -18769,6 +18893,11 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "Gumbo",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "ooze": {
@@ -18790,6 +18919,11 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "Ooze",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "adhesive_mud": {
@@ -18811,6 +18945,11 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "Adhesive mud",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "mire": {
@@ -18832,6 +18971,11 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "Mire",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "sticky_soil": {
@@ -18853,6 +18997,28 @@
           "seed",
           "nature_not_alive",
           "nature_not_alive/ground"
+        ]
+      },
+      "voice": {
+        "say": "Sticky soil",
+        "checked_by_ear": false,
+        "clip": null
+      },
+      "sources": {
+        "pages": [],
+        "facts": "tools/research/out/facts/sticky_soil.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "Sticky soil is mud or earth, a non-living part of nature."
+          },
+          "kind_of_nature": {
+            "basis": "judged, not sourced",
+            "why": "Sticky soil is a type of soil, which belongs to the rocks-and-soil ground category."
+          }
+        },
+        "no_sentence_for": [
+          "what_happens_when_wet"
         ]
       }
     },
@@ -18876,6 +19042,28 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "Sticky dirt",
+        "checked_by_ear": false,
+        "clip": null
+      },
+      "sources": {
+        "pages": [],
+        "facts": "tools/research/out/facts/sticky_dirt.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "Sticky dirt is a kind of soil or mud, which is non-living material found in nature."
+          },
+          "kind_of_nature": {
+            "basis": "judged, not sourced",
+            "why": "Sticky dirt is a kind of soil, and soil is covered by the \"Rocks and soil\" choice."
+          }
+        },
+        "no_sentence_for": [
+          "what_happens_when_wet"
+        ]
       }
     },
     "sticky_earth": {
@@ -18897,6 +19085,28 @@
           "seed",
           "nature_not_alive",
           "nature_not_alive/ground"
+        ]
+      },
+      "voice": {
+        "say": "Sticky earth",
+        "checked_by_ear": false,
+        "clip": null
+      },
+      "sources": {
+        "pages": [],
+        "facts": "tools/research/out/facts/sticky_earth.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "Sticky earth is a kind of soil or mud, which is non-living material found in nature."
+          },
+          "kind_of_nature": {
+            "basis": "judged, not sourced",
+            "why": "Sticky earth is a kind of soil, and soil is covered by the ground category."
+          }
+        },
+        "no_sentence_for": [
+          "what_happens_when_wet"
         ]
       }
     },
@@ -18920,6 +19130,25 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "White sand",
+        "checked_by_ear": false,
+        "clip": null
+      },
+      "sources": {
+        "pages": [],
+        "facts": "tools/research/out/facts/white_sand.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "Sand is a non-living material found in nature, not an animal, plant, or manufactured object."
+          }
+        },
+        "no_sentence_for": [
+          "kind_of_nature",
+          "what_happens_when_wet"
+        ]
       }
     },
     "yellow_sand": {
@@ -18942,6 +19171,36 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "Yellow sand",
+        "checked_by_ear": false,
+        "clip": null
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Asian_Dust",
+            "title": "Asian Dust",
+            "asked_for": "Yellow sand",
+            "revision": 1353721486,
+            "fetched_on": "2026-10-07",
+            "sha256": "1c14bb2dfa6abda72657a619471a354697bd14188e21d77674b7a4e5260d2ed1"
+          }
+        ],
+        "facts": "tools/research/out/facts/yellow_sand.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Asian Dust (also yellow dust, yellow sand, yellow wind, or kosa) is a meteorological phenomenon that affects much of East Asia year-round and especially during the spring months."
+          }
+        },
+        "no_sentence_for": [
+          "kind_of_nature",
+          "what_happens_when_wet"
+        ]
       }
     },
     "dust": {
@@ -18962,6 +19221,49 @@
           "seed",
           "nature_not_alive",
           "nature_not_alive/ground"
+        ]
+      },
+      "voice": {
+        "say": "Dust",
+        "checked_by_ear": false,
+        "clip": null
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Dust",
+            "title": "Dust",
+            "asked_for": "Dust",
+            "revision": 1368643047,
+            "fetched_on": "2026-10-07",
+            "sha256": "62a2793864dff4967a9cebfcac3c4001b7737b8022c39eddffcef831db0188e2"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Dust",
+            "title": "Dust",
+            "asked_for": "Dust",
+            "revision": 9948510,
+            "fetched_on": "2026-10-07",
+            "sha256": "c6d12376193809e877d1b32a2d5dfb01d2a8f5e9e0dd6d492ad0ccac5201a4ee"
+          }
+        ],
+        "facts": "tools/research/out/facts/dust.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Dust is made of fine particles of solid matter."
+          },
+          "kind_of_nature": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "On Earth, it generally consists of particles in the atmosphere that come from various sources such as soil lifted by wind (an aeolian process), volcanic eruptions, and pollution."
+          }
+        },
+        "no_sentence_for": [
+          "what_happens_when_wet"
         ]
       }
     },
@@ -18984,6 +19286,51 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "Ash",
+        "checked_by_ear": false,
+        "clip": null
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Ash",
+            "title": "Ash",
+            "asked_for": "Ash",
+            "revision": 1373910405,
+            "fetched_on": "2026-10-07",
+            "sha256": "45ceaf2d95d604f78c96999dc85d1fc5319c77c85f26d4d20e1d654f5818c94c"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Tuff",
+            "title": "Tuff",
+            "asked_for": "Volcanic ash",
+            "revision": 10699237,
+            "fetched_on": "2026-10-07",
+            "sha256": "032c0440047687a9570a8019211b14607e5aa88a38fb1738826c37d077c8d789"
+          }
+        ],
+        "facts": "tools/research/out/facts/ash.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Tuff (from Italian tufo) is a type of rock produced by the eruption of volcanoes."
+          },
+          "kind_of_nature": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Tuff (from Italian tufo) is a type of rock produced by the eruption of volcanoes."
+          },
+          "what_happens_when_wet": {
+            "basis": "judged, not sourced",
+            "why": "Ash is a loose, non-solid residue that would wash away when water is poured on it."
+          }
+        },
+        "no_sentence_for": []
       }
     },
     "soot": {
@@ -19005,6 +19352,11 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "Soot",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "silt": {
@@ -19026,6 +19378,11 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "Silt",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "sewage": {
@@ -19047,6 +19404,11 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "Sewage",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "runoff": {
@@ -19068,6 +19430,11 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "Runoff",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "sediment": {
@@ -19089,6 +19456,11 @@
           "nature_not_alive",
           "nature_not_alive/ground"
         ]
+      },
+      "voice": {
+        "say": "Sediment",
+        "checked_by_ear": false,
+        "clip": null
       }
     }
   },
@@ -19895,7 +20267,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "after job run 2026-10-07-02",
+    "by": "catalogue.py refresh",
     "on": "2026-10-07"
   }
 }

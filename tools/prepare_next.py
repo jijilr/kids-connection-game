@@ -6,11 +6,15 @@ Nobody approves a circle or a field. Rules decide, and a digest says what was do
   1. plan      every closed circle one step from an open board, in the order the
                expansion engine gives (its scores and its balance rules). With the child's
                saved progress, only the circles one step from where he is. No model.
-  2. field     a circle with no field to sort it by: DeepSeek proposes up to three, and
-               four tests decide (tools/job/fields.py): four familiar things for each
-               value, one value for each thing, one clean solution, not a synonym. A field
-               that passes enters the dictionary and is filled in on every thing it applies
-               to. One that fails is held with the reason.
+  2. field     a circle with no field to sort it by: the model CHOOSES up to three
+               questions from the field library (tools/content/field_library.json), which
+               holds real ways of sorting from biology, geography and everyday life. It
+               does not invent them. Four tests decide (tools/job/fields.py): four familiar
+               things in at least four of the values, one value for each thing, one clean
+               solution, not a synonym. Only when nothing from the library passes may the
+               model propose a question of its own; if that passes, it joins the library.
+               A field that passes enters the dictionary and is filled in on every thing
+               it applies to. A circle with none is held, with the reasons.
   3. names     DeepSeek suggests things for each group; a second call says which a
                four-year-old would know.
   4. facts     the pages are fetched; DeepSeek fills the dictionary's fields from them,
@@ -70,7 +74,7 @@ import facts                                 # noqa: E402  grounded dictionary v
 import fetch                                 # noqa: E402  the pages
 import reslib                                # noqa: E402  DeepSeek, with a hard cap
 import fields as field_rules                 # noqa: E402  the four tests a new field must pass
-from boards import GROUPS, members, second_solution_rate, split   # noqa: E402
+from boards import GROUPS, PER_GROUP, members, second_solution_rate, split   # noqa: E402
 from expand import AMBIGUITY_LIMIT, HELD_BY_RULES, build_circles, in_order   # noqa: E402
 from expand import rebuild as rebuild_tree, record as record_decision      # noqa: E402
 
@@ -81,7 +85,6 @@ RECORDS = PICTURES / "records.json"
 TREE = ROOT / "tools/content/expansion_tree.json"
 PROPOSALS = ROOT / "tools/content/field_proposals.json"
 PROGRESS = ROOT / "tools/job/progress.json"     # the child's saved progress, saved from the game by a grown-up
-FIELD_TRIES = 2           # times DeepSeek is asked for fields for one circle in a run
 FIELD_LIKELY_USD = 0.03   # what settling one field has cost
 SHARE_OF_CAP = 0.85       # a circle is started only while its likely cost fits in this share of what is left
 DEFAULT_CAP_INR = 200
@@ -226,8 +229,19 @@ def asks_for(catalogue: dict, cid: str) -> tuple:
     wanted = {}
     if "why" in missing:        # too few things to be a group on the board above
         wanted[None] = missing["things"]
-    for value, short in (missing.get("short") or {}).items():
-        wanted[value] = short
+    short = missing.get("short") or {}
+    proposal = (cat.read_json(PROPOSALS) or {}).get(cid, {})
+    if short and str(proposal.get("status", "")).startswith("approved by the rules"):
+        # a field may have more than four values, and a board uses any four: fill the four
+        # that are nearest to full, counting the names that came with the field
+        things, field = cat.game_copy(catalogue)["things"], circle["sorted_by"]
+        groups = split(things, members(things, path), field)
+        have = {str(v): len(groups.get(v, [])) for v in dictionary["fields"][field]["values"]}
+        ready = {v: len(proposal.get("values", {}).get(v, {}).get("examples", [])) for v in have}
+        best = sorted(have, key=lambda v: (-min(PER_GROUP + SPARE, have[v] + ready[v]), -have[v]))[:GROUPS]
+        short = {v: PER_GROUP - have[v] for v in best if have[v] < PER_GROUP}
+    for value, lacking in short.items():
+        wanted[value] = lacking
     for value, short in wanted.items():
         fixed = dict(path)
         if value is not None:
@@ -330,9 +344,12 @@ def expected_cost(the_plan: dict, rate: float, cap_inr: float) -> tuple:
 # ------------------------------------------------------------------ 2. field
 
 def settle_field(client, config, deepseek_step, run: dict, entry: dict) -> bool:
-    """A circle with no field: DeepSeek proposes, and the four tests decide. The first
-    candidate to pass enters the dictionary and is filled in on every thing it applies
-    to. If none passes, the circle is held by the rules with the reasons. True if added."""
+    """A circle with no field. First the model chooses questions from the field library,
+    and the four tests decide. Only if none of those passes does the model propose a
+    question of its own, which goes through the same tests and, if it passes, joins the
+    library. The first candidate to pass enters the dictionary and is filled in on every
+    thing it applies to. If none passes, the circle is held by the rules with the
+    reasons. True if a field was added."""
     catalogue, dictionary = cat.load(), cat.read_json(cat.DICTIONARY)
     things = cat.game_copy(catalogue)["things"]
     raw = build_circles(dictionary, things, cat.read_json(cat.SETTINGS))
@@ -344,24 +361,36 @@ def settle_field(client, config, deepseek_step, run: dict, entry: dict) -> bool:
     earlier = [f'"{r["wording"]}" ({"; ".join(r["why"])})' for r in before.get("refused_by_the_rules", [])]
     if before.get("wording") and "held by the owner" in str(before.get("status", "")):
         earlier.append(f'"{before["wording"]}" (the owner held it)')
+    # a library question already refused for this circle is not offered to it again
+    refused_before = {r.get("library") for r in before.get("refused_by_the_rules", [])}
+    questions = [q for q in field_rules.library_for(field_rules.load_library(), cid) if q["id"] not in refused_before]
+    sources = (("the library", lambda spend, refused: field_rules.choose(
+                    client, config, spend, questions, entry["chain"], names, refused, names)),
+               ("the model", lambda spend, refused: field_rules.propose(
+                    client, config, spend, dictionary, entry["chain"], names, refused, names)))
     tried = []
-    for attempt in range(FIELD_TRIES):
+    for source, ask in sources:
         refused = earlier + [f'"{t["wording"]}" ({"; ".join(t["why"])})' for t in tried]
-        candidates = deepseek_step(lambda spend: field_rules.propose(
-            client, config, spend, dictionary, entry["chain"], names, refused, names))
+        candidates = deepseek_step(lambda spend: ask(spend, refused))
+        if source == "the library":
+            say("  chosen from the library: " + (", ".join(f'"{c["wording"]}"' for c in candidates) or "nothing fits"))
+        elif candidates:
+            say("  nothing from the library passed, so the model proposes its own")
         for candidate in candidates:
             candidate["key"] = field_rules.unique_key(dictionary, candidate["key"], path)
             result = deepseek_step(lambda spend: field_rules.test(
                 client, config, spend, dictionary, things, set(catalogue["things"]), path, entry["chain"],
                 candidate, recognise, AMBIGUITY_LIMIT))
+            result["source"] = source
             tried.append(result)
             say(f'  "{result["wording"]}": ' + ("passed the four tests" if not result["why"] else "refused - " + "; ".join(result["why"])))
             if not result["why"] and add_field(run, entry, result, before):
+                if source == "the model":
+                    field_rules.add_to_library(candidate, result["values"], cid,
+                                               f"proposed by the model for {entry['label']}; it passed the four tests in job run {run['id']}")
                 return True
-        if not candidates:
-            break
     refusals = [{"wording": t["wording"], "values": t["values"], "why": t["why"] or ["it could not be filled in"],
-                 "date": today(), "run": run["id"]} for t in tried]
+                 "date": today(), "run": run["id"], "library": t.get("library"), "source": t.get("source")} for t in tried]
     proposals = cat.read_json(PROPOSALS) or {}
     kept = proposals.get(cid) or {"status": "", "field": None, "wording": "", "values": {}}
     kept["refused_by_the_rules"] = kept.get("refused_by_the_rules", []) + refusals
@@ -399,13 +428,14 @@ def add_field(run: dict, entry: dict, result: dict, before: dict) -> bool:
     proposals[cid] = {
         "status": f"approved by the rules on {today()}, job run {run['id']}",
         "field": key, "wording": result["wording"], "values": values,
+        "library": result.get("library"), "source": result.get("source"),
         # a thing that fits more than one group lists them, and stays off boards sorted by the field
         "assign": dict(result.get("several", {})),
         "notes": {thing: {key: "Two checks could not give it one group: " + " and ".join(label[v] for v in fits)
                           + f". It stays off boards sorted by this field. Job run {run['id']}."}
                   for thing, fits in result.get("several", {}).items()},
         "familiar": {n: o["familiar"] for n, o in result["new"].items()},
-        "tests": {"four familiar things for each value": result["counts"],
+        "tests": {"four familiar things in at least four values": result["counts"],
                   "one value for each thing": f"{len(result['placed'])} things already in the circle placed alike by two "
                                               f"checks; {len(result.get('several', {}))} fit more than one group; "
                                               f"sharpness {result.get('sharpness')}",
@@ -431,6 +461,7 @@ def add_field(run: dict, entry: dict, result: dict, before: dict) -> bool:
     run["fields_added"].append({"circle": cid, "label": entry["label"], "field": key, "wording": result["wording"],
                                 "values": result["values"], "filled": len(result["placed"]) + len(result.get("several", {})),
                                 "off_the_board": sorted(result.get("several", {})),
+                                "source": result.get("source"), "full_values": result.get("full_values", []),
                                 "version": dictionary["version"]})
     return True
 
@@ -795,7 +826,9 @@ def digest(run: dict, budget) -> list:
         lines.append("Prepared one step ahead of the child's saved progress: " + ", ".join(run["plan"]["played"]) + ".")
     lines.append("Circles opened: " + (", ".join(run.get("opened", [])) or "none") + ".")
     lines.append("Fields added: " + ("; ".join(
-        f'"{f["wording"]}" for {f["label"]} ({", ".join(f["values"].values())}), filled in on {f["filled"]} things'
+        f'"{f["wording"]}" for {f["label"]}, from {f.get("source") or "the model"} '
+        f'(groups with four familiar things: {", ".join(f["values"][v] for v in f.get("full_values") or f["values"])}'
+        + (f', of {len(f["values"])} values' if len(f["values"]) > GROUPS else "") + f'), filled in on {f["filled"]} things'
         + (f' ({", ".join(f["off_the_board"])} fit more than one group and stay off that board)' if f.get("off_the_board") else "")
         for f in run.get("fields_added", [])) or "none") + ".")
     lines.append(f"Things added: {len(added)}" + (": " + ", ".join(t["name"] for t in added) if added else "") + ".")

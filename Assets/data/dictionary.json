@@ -9,7 +9,8 @@
     "A thing that truly fits more than one value of a field lists them all, and stays off boards sorted by that field.",
     "The value 'depends' is only for things experts debate. It needs a note saying why, and such a thing also stays off boards sorted by that field.",
     "An _academic field marked `only_where_science_differs` is carried only by the things for which a scientist's answer differs from the everyday one. It is absent everywhere else, and it never sorts a board.",
-    "A field marked `withdrawn` was taken back by the owner. It is kept, with the values things carry for it, and never sorts a board."
+    "A field marked `withdrawn` was taken back by the owner. It is kept, with the values things carry for it, and never sorts a board.",
+    "Since the owner's second ruling of 7 Oct 2026 a new field is a question from the field library (tools/content/field_library.json), which holds real ways of sorting from biology, geography and everyday life; such a field names its library question. A field may have more than four values, and a board uses any four of them that have enough familiar things."
   ],
   "fields": {
     "kind_of_thing": {
@@ -155,7 +156,8 @@
       "expected_on": {
         "kind_of_plant": "vegetable"
       },
-      "since": 3
+      "since": 3,
+      "library": "part_we_eat"
     },
     "kind_of_plant_academic": {
       "wording": "What kind of plant is it to a scientist?",

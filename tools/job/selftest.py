@@ -106,10 +106,12 @@ def test_a_thing_in_the_game_without_a_picture_is_planned_for_drawing():
 
 # ------------------------------------------------------------------ a field is decided by four tests
 
-def stand_in(sorting: dict, checking: dict = None, not_birds: tuple = ()):
+def stand_in(sorting: dict, checking: dict = None, not_birds: tuple = (), more: dict = None):
     """In place of the sorting calls: the parent's answer, and the checker's. Asked what
     kind of animal each new name is, it says a bird, except for those in `not_birds`."""
     def ask(client, config, spend, system, user, options=None):
+        if "Some of its groups need more things" in user:
+            return dict(more or {})
         if "What kind of animal is it?" in user:
             kind = {name: "fish" if name in not_birds else "bird" for name in sorting}
             return kind if system == field_rules.SORTER else {name: [value] for name, value in kind.items()}
@@ -134,14 +136,15 @@ def candidate() -> dict:
 
 
 def run_test(sorting_changes: dict = None, checking: dict = None, recognise=know_all, change=None,
-             not_birds: tuple = ()) -> dict:
+             not_birds: tuple = (), more: dict = None) -> dict:
     dictionary, things, path = small_world()
     field = candidate()
     if change:
         change(dictionary, things, field)
     sorting = {name: v["key"] for v in field["values"] for name in v["members"] + v["new"]}
     sorting.update(sorting_changes or {})
-    real, field_rules.reslib.ask = field_rules.reslib.ask, stand_in(sorting, checking, not_birds)
+    sorting.update({name: value for value, names in (more or {}).items() for name in names})
+    real, field_rules.reslib.ask = field_rules.reslib.ask, stand_in(sorting, checking, not_birds, more)
     try:
         return field_rules.test(None, {"model": "x", "thinking": "off"}, None, dictionary, things, set(things), path,
                                 "Animals > Birds", field, recognise, 0.5)
@@ -188,6 +191,18 @@ def test_a_suggested_name_that_is_only_another_name_for_a_thing_there_does_not_c
     assert job.held_as(dropped, "run", rehearsal=False) == ("", [])
 
 
+def test_a_group_that_is_short_is_asked_for_more_names_once():
+    def no_water_names(dictionary, things, field):      # the chooser offered no new water bird
+        field["values"][1]["new"] = []
+    short = run_test(change=no_water_names)
+    assert "'On the water' has 2" in short["why"][0]    # asked again, and nothing came
+    more = run_test(change=no_water_names, more={"water": ["Goose", "Pelican"]})
+    assert more["why"] == [] and more["counts"]["water"] == 4 and more["topped_up"] == ["Goose", "Pelican"]
+    # the names that come back are vetted like any other: these are not birds at all
+    wrong = run_test(change=no_water_names, more={"water": ["Goose", "Pelican"]}, not_birds=("Goose", "Pelican"))
+    assert "'On the water' has 2" in wrong["why"][0] and wrong["not_of_this_circle"] == ["Goose", "Pelican"]
+
+
 def test_groups_with_no_sharp_edges_fail():
     def crow_moved(dictionary, things, field):         # the proposer says the yard; both checks say the sky
         field["values"][0]["members"].remove("Crow")
@@ -209,6 +224,9 @@ def test_a_few_things_may_fit_two_groups_and_then_stay_off_the_board():
     # two in eight: too many
     two = run_test(checking={"Duck": ["water", "yard"], "Hen": ["yard", "trees"]})
     assert "2 of the 8 things there fit more than one group, and at most 1 may" in two["why"][0]
+    # and of all the names sorted, no more than one in eight may be without a single group
+    names = run_test(checking={"Kite": ["sky", "trees"], "Goose": ["water", "yard"], "Rooster": ["yard", "sky"]})
+    assert "3 of the 20 names sorted have no single group, and at most one in 8 may" in names["why"][0]
     # a thing that fits no group cannot be recorded at all
     none = run_test(sorting_changes={"Owl": "none"}, checking={"Owl": []})
     assert "not every thing has a value: Owl - it fits no group" in none["why"][0]
@@ -274,9 +292,85 @@ def test_a_malformed_field_is_refused_before_anything_is_asked():
     dictionary, _, _ = small_world()
     three = candidate()
     three["values"].pop()
-    assert "it has 3 values, not four" in field_rules.shape_problems(three, dictionary)
+    assert "it has 3 values, and a board needs four" in field_rules.shape_problems(three, dictionary)
     assert field_rules.shape_problems(candidate(), dictionary) == []
     assert field_rules.unique_key(dictionary, "kind_of_animal", [("kind_of_animal", "bird")]) == "kind_of_animal_of_bird"
+
+
+# ------------------------------------------------------------------ the field library
+
+def test_the_model_chooses_from_the_library_and_cannot_invent():
+    library = field_rules.load_library()
+    ids = [q["id"] for q in library["questions"]]
+    assert len(ids) == len(set(ids)) and all(len(q["values"]) >= 4 and q["wording"] and q["from"] for q in library["questions"])
+    # a question is offered to the circles it is meant for, and to those inside them
+    offered = lambda cid: {q["id"] for q in field_rules.library_for(library, cid)}
+    assert {"where_it_lives", "how_it_moves", "pet_farm_or_wild"} <= offered("animal/mammal")
+    assert "pet_farm_or_wild" not in offered("animal/fish")
+    assert "what_the_water_does" in offered("nature_not_alive/water")
+    assert "what_the_water_does" not in offered("made_by_people/vehicle/water")     # boats are not water
+    assert "what_it_is_made_of" in offered("made_by_people/household/furniture")
+    # what the model sends back is held to the library: an invented question is dropped, and
+    # the wording and the groups are the library's own whatever the model writes
+    questions = field_rules.library_for(library, "animal/bird")
+    answer = {"chosen": [
+        {"question": "what_song_it_sings", "groups": [{"key": "sweet", "members": ["Parrot"], "new": []}]},
+        {"question": "how_it_moves", "groups": [{"key": "flies", "label": "Zooms", "members": ["Crow"], "new": ["Kite"]},
+                                                {"key": "invented_group", "members": ["Hen"], "new": []}]},
+        {"question": "how_it_moves", "groups": []}]}
+    real, field_rules.reslib.ask = field_rules.reslib.ask, lambda *a, **k: answer
+    try:
+        chosen = field_rules.choose(None, {"model": "x", "thinking": "off"}, None, questions, "Animals > Birds", ["Crow", "Hen"], [], [])
+    finally:
+        field_rules.reslib.ask = real
+    assert [c["library"] for c in chosen] == ["how_it_moves"]
+    assert chosen[0]["wording"] == "How does it mostly move?"
+    assert [v["key"] for v in chosen[0]["values"]] == ["walks", "flies", "swims", "crawls", "hops"]
+    flies = chosen[0]["values"][1]
+    assert flies["label"] == "Flies" and flies["members"] == ["Crow"] and flies["new"] == ["Kite"]
+    assert all(v["members"] == [] for v in chosen[0]["values"] if v["key"] != "flies")
+
+
+def test_a_field_may_have_more_than_four_values_and_needs_four_of_them_full():
+    def a_fifth_value(dictionary, things, field):       # a fifth group that nothing here belongs to yet
+        field["values"].append({"key": "ice", "label": "On the ice", "members": [], "new": []})
+    five = run_test(change=a_fifth_value)
+    assert five["why"] == [] and five["counts"]["ice"] == 0
+    assert five["full_values"] == ["sky", "water", "yard", "trees"] and len(five["definition"]["values"]) == 5
+
+    def nobody_knows_the_water_birds(client, config, spend, ask, offers):
+        for o in offers:
+            o.update(recognised=o["value"] != "water", suitable=True, familiar=0.9, own_thing=True)
+    three = run_test(change=a_fifth_value, recognise=nobody_knows_the_water_birds)
+    assert "only 3 of its values have four familiar things, and a board needs four" in three["why"][0]
+
+
+def test_a_question_that_says_mostly_is_answered_by_what_is_mostly_true():
+    seen = []
+    def remember(client, config, spend, system, user, options=None):
+        seen.append(user)
+        return {}
+    real, field_rules.reslib.ask = field_rules.reslib.ask, remember
+    try:
+        piles = [{"key": "a", "label": "A"}]
+        field_rules.sort_twice(None, {"model": "x", "thinking": "off"}, None, "Animals", {"wording": "Where does it spend most of its life?", "values": piles}, ["Crow"])
+        field_rules.sort_twice(None, {"model": "x", "thinking": "off"}, None, "Animals", {"wording": "How many legs does it have?", "values": piles}, ["Crow"])
+    finally:
+        field_rules.reslib.ask = real
+    assert all("what is true of the thing most of the time" in prompt for prompt in seen[:2])
+    assert not any("most of the time" in prompt for prompt in seen[2:])
+
+
+def test_the_same_library_question_may_serve_two_circles():
+    dictionary, things, _ = small_world()
+    dictionary["fields"]["how_it_moves"] = {"wording": "How does it mostly move?", "library": "how_it_moves", "meaning": "everyday",
+                                            "expected_on": {"kind_of_animal": "mammal"},
+                                            "values": {"walks": "Walks or runs", "flies": "Flies", "swims": "Swims", "crawls": "Crawls or slithers"}}
+    again = {"wording": "How does it mostly move?", "library": "how_it_moves",
+             "values": [{"label": l} for l in ("Walks or runs", "Flies", "Swims", "Crawls or slithers")]}
+    assert field_rules.synonym_of(dictionary, things, {}, again) == ""
+    assert "it asks the same question" in field_rules.synonym_of(dictionary, things, {}, dict(again, library=None))
+    assert field_rules.unique_key(dictionary, "how_it_moves", [("kind_of_animal", "bird")]) == "how_it_moves_of_bird"
 
 
 # ------------------------------------------------------------------ who hears of what
@@ -304,6 +398,7 @@ def test_the_digest_says_what_was_done_and_how_to_take_it_back():
     run = {"id": "2026-10-07-01", "rehearse": None, "stopped": "", "sheets": ["s1"], "opened": ["Water"],
            "plan": {"circles": [{"label": "Water", "done": True}, {"label": "Birds"}], "blocked": [], "played": None},
            "fields_added": [{"label": "Water", "wording": "Where is the water?", "filled": 4, "field": "where",
+                             "source": "the library", "full_values": ["a", "b", "c", "d"],
                              "off_the_board": ["sea"],
                              "values": {"a": "In the sky", "b": "On the ground", "c": "In the house", "d": "Under the ground"}}],
            "fields_held": [{"label": "Rocks and soil", "tried": [{"wording": "How hard is it?", "why": ["'Soft' has 2"]}]}],
@@ -316,7 +411,7 @@ def test_the_digest_says_what_was_done_and_how_to_take_it_back():
                        "held_as": cat.WAITING}]}
     text = "\n".join(job.digest(run, budget))
     assert "Circles opened: Water." in text
-    assert 'Fields added: "Where is the water?" for Water' in text and "filled in on 4 things" in text
+    assert 'Fields added: "Where is the water?" for Water, from the library' in text and "filled in on 4 things" in text
     assert "Things added: 1: Tap." in text and "Cost: Rs 50.0 of a hard cap of Rs 200" in text
     assert "Rocks and soil: no field passed the tests" in text and "Geyser (the check doubts" in text
     assert "For you: \n  - Whirlpool: the check says it is not suitable" in text

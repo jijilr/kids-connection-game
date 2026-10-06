@@ -1,0 +1,369 @@
+{
+  "about": "The field library: real, teachable sorting questions, drawn from how biology, geography and everyday life already classify things (the owner's ruling of 7 Oct 2026). For a circle with no field, the model CHOOSES questions from here that apply; it does not invent them. The four tests then decide (tools/job/fields.py). The model may propose a new question only when nothing here fits; it goes through the same tests, and if it passes it is added here with a note saying so. A question may have more than four values: a board uses any four that have enough familiar things. Where things overlap, the wording asks what is MOSTLY true.",
+  "how_to_add": "Add a question by hand under `questions`: an id of its own, the wording as said to the child, where it applies, where the classification comes from, and its values with a short group name each. `for` holds circles as the catalogue names them (python tools/catalogue/catalogue.py circles): `animal` covers every circle inside Animals, `animal/mammal` only Mammals and what is inside it. Nothing else needs changing; the next run can choose it.",
+  "questions": [
+    {
+      "id": "where_it_lives",
+      "wording": "Where does it spend most of its life?",
+      "for": [
+        "animal"
+      ],
+      "from": "biology: habitat",
+      "values": {
+        "land": "On the ground",
+        "water": "In water",
+        "trees": "In trees",
+        "underground": "Under the ground"
+      }
+    },
+    {
+      "id": "how_it_moves",
+      "wording": "How does it mostly move?",
+      "for": [
+        "animal"
+      ],
+      "from": "primary-school science: how animals move",
+      "values": {
+        "walks": "Walks or runs",
+        "flies": "Flies",
+        "swims": "Swims",
+        "crawls": "Crawls or slithers",
+        "hops": "Hops or jumps"
+      }
+    },
+    {
+      "id": "body_covering",
+      "wording": "What covers its body?",
+      "for": [
+        "animal"
+      ],
+      "from": "biology: body covering",
+      "values": {
+        "fur": "Fur or hair",
+        "feathers": "Feathers",
+        "scales": "Scales",
+        "shell": "A hard shell",
+        "bare_skin": "Smooth bare skin"
+      }
+    },
+    {
+      "id": "what_it_eats",
+      "wording": "What does it mostly eat?",
+      "for": [
+        "animal"
+      ],
+      "from": "biology: herbivore, carnivore, insect-eater, omnivore",
+      "values": {
+        "plants": "Mostly plants",
+        "meat": "Mostly meat or fish",
+        "insects": "Mostly insects and worms",
+        "both": "Plants and meat alike"
+      }
+    },
+    {
+      "id": "how_many_legs",
+      "wording": "How many legs does it have?",
+      "for": [
+        "animal"
+      ],
+      "from": "biology: body plan",
+      "values": {
+        "no_legs": "No legs",
+        "two": "Two legs",
+        "four": "Four legs",
+        "six": "Six legs",
+        "eight": "Eight legs",
+        "many": "Many legs"
+      }
+    },
+    {
+      "id": "pet_farm_or_wild",
+      "wording": "Is it mostly a pet, a farm animal or a wild animal?",
+      "for": [
+        "animal/mammal",
+        "animal/bird"
+      ],
+      "from": "everyday life, and nursery-school lessons: pet, farm, wild and water animals",
+      "values": {
+        "pet": "Pets at home",
+        "farm": "Farm animals",
+        "wild_land": "Wild animals on land",
+        "wild_water": "Wild animals in water"
+      }
+    },
+    {
+      "id": "part_we_eat",
+      "wording": "Which part of the plant do we mostly eat?",
+      "for": [
+        "plant"
+      ],
+      "from": "botany and the kitchen: root, stem, leaf, flower, fruit, seed. Already used for Vegetable plants as the dictionary field part_we_eat",
+      "values": {
+        "fruit": "The fruit",
+        "under_the_ground": "What grows under the ground",
+        "leaves": "The leaves",
+        "seeds_or_pods": "The seeds or pods",
+        "stem": "The stem",
+        "flower": "The flower"
+      }
+    },
+    {
+      "id": "where_it_grows",
+      "wording": "Where does it mostly grow?",
+      "for": [
+        "plant"
+      ],
+      "from": "geography and botany: habitat",
+      "values": {
+        "water": "In water",
+        "fields": "In farm fields",
+        "gardens": "In gardens and parks",
+        "forests": "In forests",
+        "dry_places": "In dry, sandy places"
+      }
+    },
+    {
+      "id": "how_it_grows",
+      "wording": "How does it grow?",
+      "for": [
+        "plant"
+      ],
+      "from": "primary-school science: trees, shrubs, herbs, climbers, creepers",
+      "values": {
+        "tree": "Tall, with a woody trunk",
+        "bush": "As a bush",
+        "small_plant": "As a small soft plant",
+        "climber": "Climbing up a support",
+        "creeper": "Creeping along the ground",
+        "grass": "Like grass"
+      }
+    },
+    {
+      "id": "flower_colour",
+      "wording": "What colour is its flower mostly?",
+      "for": [
+        "plant/flower"
+      ],
+      "from": "everyday life: colours",
+      "values": {
+        "red": "Red",
+        "yellow": "Yellow or orange",
+        "white": "White",
+        "pink": "Pink or purple",
+        "blue": "Blue"
+      }
+    },
+    {
+      "id": "what_the_water_does",
+      "wording": "What is the water mostly doing?",
+      "for": [
+        "nature_not_alive/water"
+      ],
+      "from": "geography: rivers, lakes, seas, ice and rain",
+      "values": {
+        "flows": "Flowing along",
+        "still": "Standing still",
+        "sea": "Salty sea water",
+        "frozen": "Frozen hard",
+        "falls": "Falling from the sky"
+      }
+    },
+    {
+      "id": "shape_of_the_land",
+      "wording": "What is the land mostly like there?",
+      "for": [
+        "nature_not_alive/land"
+      ],
+      "from": "geography: landforms",
+      "values": {
+        "high": "High land",
+        "flat": "Flat land",
+        "by_water": "Land beside water",
+        "hollow": "Hollows and holes in the land"
+      }
+    },
+    {
+      "id": "size_of_its_pieces",
+      "wording": "How big are its pieces mostly?",
+      "for": [
+        "nature_not_alive/ground"
+      ],
+      "from": "geology: boulder, pebble, sand, clay",
+      "values": {
+        "one_big": "One big hard piece",
+        "small": "Small pieces you can pick up",
+        "grains": "Tiny grains",
+        "fine": "Fine, like powder or paste"
+      }
+    },
+    {
+      "id": "when_we_see_it",
+      "wording": "When do we mostly see it?",
+      "for": [
+        "nature_not_alive/sky"
+      ],
+      "from": "everyday life and astronomy: day and night, fair weather and storm",
+      "values": {
+        "day": "In the daytime",
+        "night": "At night",
+        "storm": "When it rains or storms",
+        "dawn_dusk": "At sunrise or sunset"
+      }
+    },
+    {
+      "id": "solid_liquid_gas",
+      "wording": "What is it mostly: hard, runny, airy, or light?",
+      "for": [
+        "nature_not_alive"
+      ],
+      "from": "primary-school science: solid, liquid and gas",
+      "values": {
+        "solid": "Hard and solid",
+        "liquid": "Wet and runny",
+        "gas": "Air, mist or gas",
+        "light": "Light or fire"
+      }
+    },
+    {
+      "id": "what_it_is_made_of",
+      "wording": "What is it mostly made of?",
+      "for": [
+        "made_by_people"
+      ],
+      "from": "everyday life and materials science",
+      "values": {
+        "wood": "Wood",
+        "metal": "Metal",
+        "clay": "Clay or pottery",
+        "cloth": "Cloth",
+        "plastic": "Plastic",
+        "glass": "Glass",
+        "paper": "Paper",
+        "rubber": "Rubber",
+        "stone": "Stone, brick or cement"
+      }
+    },
+    {
+      "id": "what_makes_it_go",
+      "wording": "What mostly makes it go?",
+      "for": [
+        "made_by_people"
+      ],
+      "from": "everyday science: sources of energy",
+      "values": {
+        "muscle": "People or animals",
+        "fuel": "Petrol, diesel or other fuel",
+        "electricity": "Electricity",
+        "wind": "Wind"
+      }
+    },
+    {
+      "id": "how_many_wheels",
+      "wording": "How many wheels does it have?",
+      "for": [
+        "made_by_people/vehicle"
+      ],
+      "from": "everyday life: two-wheelers, three-wheelers, four-wheelers",
+      "values": {
+        "no_wheels": "No wheels",
+        "two": "Two wheels",
+        "three": "Three wheels",
+        "four": "Four wheels",
+        "many": "More than four wheels"
+      }
+    },
+    {
+      "id": "what_the_vehicle_is_for",
+      "wording": "What is it mostly used for?",
+      "for": [
+        "made_by_people/vehicle"
+      ],
+      "from": "everyday life: passenger, goods, emergency and work vehicles",
+      "values": {
+        "people": "Carrying people",
+        "goods": "Carrying goods",
+        "rescue": "Helping in an emergency",
+        "work": "Doing heavy work"
+      }
+    },
+    {
+      "id": "what_the_tool_does",
+      "wording": "What job does it mostly do?",
+      "for": [
+        "made_by_people/tool"
+      ],
+      "from": "everyday life: kinds of tools by their job",
+      "values": {
+        "cuts": "Cuts",
+        "hits": "Hits or knocks in",
+        "digs": "Digs",
+        "measures": "Measures",
+        "holds": "Holds or grips",
+        "turns": "Turns or tightens"
+      }
+    },
+    {
+      "id": "what_people_do_there",
+      "wording": "What do people mostly do there?",
+      "for": [
+        "made_by_people/building"
+      ],
+      "from": "everyday life and social studies: places in a town",
+      "values": {
+        "live": "Live",
+        "learn": "Learn",
+        "pray": "Pray",
+        "buy": "Buy and sell",
+        "heal": "Get well",
+        "travel": "Start a journey",
+        "cross": "Cross over or climb up"
+      }
+    },
+    {
+      "id": "how_we_play_with_it",
+      "wording": "How do we mostly play with it?",
+      "for": [
+        "made_by_people/toy"
+      ],
+      "from": "everyday life: kinds of play",
+      "values": {
+        "throw": "Throw, kick or hit it",
+        "ride": "Ride or sit on it",
+        "build": "Build or make with it",
+        "cuddle": "Cuddle or pretend with it",
+        "roll": "Push or pull it along",
+        "fly": "Fly it",
+        "sound": "Make sounds with it"
+      }
+    },
+    {
+      "id": "what_we_do_on_it",
+      "wording": "What do we mostly do with it?",
+      "for": [
+        "made_by_people/household/furniture"
+      ],
+      "from": "everyday life: kinds of furniture",
+      "values": {
+        "sit": "Sit on it",
+        "sleep": "Sleep on it",
+        "store": "Keep things in it",
+        "put": "Put things on it"
+      }
+    },
+    {
+      "id": "which_room",
+      "wording": "In which room is it mostly kept?",
+      "for": [
+        "made_by_people/household"
+      ],
+      "from": "everyday life: rooms of a house",
+      "values": {
+        "kitchen": "The kitchen",
+        "bedroom": "The bedroom",
+        "bathroom": "The bathroom",
+        "living_room": "The living room",
+        "outside": "Outside the house"
+      }
+    }
+  ]
+}
