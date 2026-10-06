@@ -6,7 +6,9 @@ scripts' is in tools/research/out/prehistoric.json.
 
 For each animal this reports:
   - features both have, features only one has, and features that contradict each other;
-  - the same for the mistakes to avoid and for what tells the animal apart;
+  - the same for the mistakes to avoid;
+  - for each judge that has chosen what tells the animals apart (tell_apart.py), how its
+    choice compares with Claude's hand-written list, with its cost and time;
   - how many of Claude's features can be found in the pages the scripts fetched.
 DeepSeek does the pairing, and every pair and every unpaired item is written to the
 report, so the pairing itself can be read and doubted.
@@ -120,51 +122,84 @@ def find_in_pages(client, config, spend, name: str, statements: list) -> list:
     return result
 
 
-def compare(client, config, spend, name: str, claude: dict, script: dict) -> dict:
+def judges_run() -> dict:
+    """judge name -> its saved choice, for every judge that has been run."""
+    return {path.stem[len("tell_apart_"):]: read_json(path) for path in sorted(OUT.glob("tell_apart_*.json"))}
+
+
+def compare(client, config, spend, name: str, claude: dict, script: dict, judges: dict) -> dict:
     claims = lambda items: [i["claim"] for i in items]
     return {
         "name": name,
         "features": pair(client, config, spend, name, claude["features"], claims(script["features"])),
         "mistakes": pair(client, config, spend, name, claude["not_this"], claims(script["not_this"]), MISTAKES),
-        "tells_apart": pair(client, config, spend, name, claude["must_show"], claims(script["must_show"])),
+        "tells_apart": {judge: pair(client, config, spend, name, claude["must_show"],
+                                    claims(chosen["animals"].get(name, {}).get("must_show", [])))
+                        for judge, chosen in judges.items()},
         "claude_features_in_the_pages": find_in_pages(client, config, spend, name, claude["features"]),
         "uncertain_points": {"claude": claude["disagreement"], "claude_brought_to_owner": claude["brought_to_owner"],
                              "deepseek": claims(script["debated"])},
+        "for_the_owner": script.get("for_the_owner", ""),
         "sources": {"claude": claude["sources"], "deepseek": [s["url"] for s in script["sources"]]},
         "deepseek_dropped": {k: len(v) for k, v in script["dropped"].items()},
     }
 
 
+def tally(pairings: list) -> dict:
+    """Counts over one kind of pairing, for all animals. `a` is Claude's side."""
+    return {
+        "claude": sum(len(p["only_a"]) + len({x["claude"] for x in p["same"] + p["contradict"]}) for p in pairings),
+        "script": sum(len(p["only_b"]) + len({x["deepseek"] for x in p["same"] + p["contradict"]}) for p in pairings),
+        "claude_matched": sum(len({x["claude"] for x in p["same"]}) for p in pairings),
+        "script_matched": sum(len({x["deepseek"] for x in p["same"]}) for p in pairings),
+        "only_claude": sum(len(p["only_a"]) for p in pairings),
+        "only_script": sum(len(p["only_b"]) for p in pairings),
+        "contradictions": sum(len(p["contradict"]) for p in pairings),
+    }
+
+
 def write_markdown(report: dict):
     t, lines = report["totals"], []
-    lines += ["# Benchmark: scripted research (DeepSeek) against Claude's research", "",
-              f"{report['date']}. {len(report['animals'])} prehistoric animals. Pairing done by DeepSeek; every pair is listed below.", "",
-              "## Totals", "",
-              "| | Claude | DeepSeek |", "|---|---|---|",
-              f"| Features | {t['features']['claude']} | {t['features']['deepseek']} |",
-              f"| Features the other side also has | {t['features']['claude_matched']} | {t['features']['deepseek_matched']} |",
-              f"| Features only this side has | {t['features']['only_claude']} | {t['features']['only_deepseek']} |",
-              f"| Mistakes to avoid | {t['mistakes']['claude']} | {t['mistakes']['deepseek']} |",
-              f"| Traits that tell it apart | {t['tells_apart']['claude']} | {t['tells_apart']['deepseek']} |",
-              f"| Traits that tell it apart, matched by the other side | {t['tells_apart']['claude_matched']} | {t['tells_apart']['deepseek_matched']} |",
-              "", f"Contradictions between the two: {t['features']['contradictions']}.",
+    lines += ["# Benchmark: scripted research against Claude's research", "",
+              f"{report['date']}. {len(report['animals'])} prehistoric animals. DeepSeek did the pairing; every pair is listed below.", "",
+              "## Features and mistakes", "",
+              "| | Claude | DeepSeek scripts |", "|---|---|---|",
+              f"| Features | {t['features']['claude']} | {t['features']['script']} |",
+              f"| Features the other side also has | {t['features']['claude_matched']} | {t['features']['script_matched']} |",
+              f"| Features only this side has | {t['features']['only_claude']} | {t['features']['only_script']} |",
+              f"| Mistakes to avoid | {t['mistakes']['claude']} | {t['mistakes']['script']} |",
+              f"| Mistakes the other side also has | {t['mistakes']['claude_matched']} | {t['mistakes']['script_matched']} |",
+              "", f"Contradictions flagged in features: {t['features']['contradictions']}.",
               f"Claude's features with a sentence in the fetched pages: {t['claude_in_pages']['found']} of "
               f"{t['features']['claude']} ({t['claude_in_pages']['all']} cover the whole feature, "
               f"{t['claude_in_pages']['part']} a part of it).",
               f"DeepSeek's items dropped because their sentence was not in the page: {t['deepseek_dropped']['quote_not_in_the_page']}; "
-              f"dropped at the second reading: {t['deepseek_dropped']['second_reading']}.",
-              f"Cost of this comparison: {report['spend']['inr_at_peak_prices']} rupees at most.", ""]
+              f"dropped at the second reading: {t['deepseek_dropped']['second_reading']}.", "",
+              "## What tells the animals apart: the judges side by side", "",
+              "Every judge chose from the same checked features, with the same question.", "",
+              "| Judge | Model | Traits chosen | Of Claude's traits, matched | Flagged as contradicting | Seconds | Cost at most |",
+              "|---|---|---|---|---|---|---|"]
+    for judge, j in t["judges"].items():
+        lines.append(f"| {judge} | {j['model']} | {j['script']} | {j['claude_matched']} of {j['claude']} | "
+                     f"{j['contradictions']} | {j['seconds']} | Rs {j['inr']} |")
+    lines += ["", f"Cost of this comparison itself: {report['spend']['inr_at_peak_prices']} rupees at most.", ""]
     for a in report["animals"]:
         f = a["features"]
-        lines += [f"## {a['name']}", "",
-                  f"Features: {len(f['same'])} shared pairs, {len(f['only_a'])} only Claude, {len(f['only_b'])} only DeepSeek, "
-                  f"{len(f['contradict'])} contradictions.", ""]
+        lines += [f"## {a['name']}", ""]
+        if a["for_the_owner"]:
+            lines += [f"**For the owner:** {a['for_the_owner']}.", ""]
+        first = next(iter(a["tells_apart"].values()), None)
+        if first is not None:
+            lines += ["What tells it apart:", "",
+                      "- Claude, by hand: " + "; ".join(first["only_a"] + list(dict.fromkeys(x["claude"] for x in first["same"] + first["contradict"])))]
+            for judge, p in a["tells_apart"].items():
+                lines.append(f"- {judge}: " + ("; ".join(p["only_b"] + list(dict.fromkeys(x["deepseek"] for x in p["same"] + p["contradict"]))) or "(nothing chosen)"))
+        lines += ["", f"Features: {len(f['same'])} shared pairs, {len(f['only_a'])} only Claude, {len(f['only_b'])} only DeepSeek, "
+                  f"{len(f['contradict'])} flagged contradictions.", ""]
         for c in f["contradict"]:
-            lines += [f"- **Contradiction.** Claude: {c['claude']} / DeepSeek: {c['deepseek']} ({c['note']})"]
-        lines += ["", "Only Claude:"] + [f"- {x}" for x in f["only_a"]] or ["- (none)"]
-        lines += ["", "Only DeepSeek:"] + [f"- {x}" for x in f["only_b"]] or ["- (none)"]
-        lines += ["", "What tells it apart - Claude: " + "; ".join(a["tells_apart"]["only_a"] + [p["claude"] for p in a["tells_apart"]["same"]]),
-                  "", "What tells it apart - DeepSeek: " + "; ".join(a["tells_apart"]["only_b"] + [p["deepseek"] for p in a["tells_apart"]["same"]]), ""]
+            lines += [f"- **Flagged.** Claude: {c['claude']} / DeepSeek: {c['deepseek']} ({c['note']})"]
+        lines += ["", "Only Claude:"] + ([f"- {x}" for x in f["only_a"]] or ["- (none)"])
+        lines += ["", "Only DeepSeek:"] + ([f"- {x}" for x in f["only_b"]] or ["- (none)"]) + [""]
     (REPORT / "report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
@@ -175,22 +210,12 @@ def main():
     config = read_json(CONFIG)
     claude = claude_research()
     script = {a["name"]: a for a in read_json(OUT / "prehistoric.json")["animals"]}
+    judges = judges_run()
     names = [n for n in claude if n in script]
     client, spend, started = deepseek(), Spend(config, cap), time.time()
 
     with ThreadPoolExecutor(max_workers=6) as pool:
-        animals = list(pool.map(lambda n: compare(client, config, spend, n, claude[n], script[n]), names))
-
-    def side(key):
-        return {
-            "claude": sum(len(a[key]["only_a"]) + len({p["claude"] for p in a[key]["same"] + a[key]["contradict"]}) for a in animals),
-            "deepseek": sum(len(a[key]["only_b"]) + len({p["deepseek"] for p in a[key]["same"] + a[key]["contradict"]}) for a in animals),
-            "claude_matched": sum(len({p["claude"] for p in a[key]["same"]}) for a in animals),
-            "deepseek_matched": sum(len({p["deepseek"] for p in a[key]["same"]}) for a in animals),
-            "only_claude": sum(len(a[key]["only_a"]) for a in animals),
-            "only_deepseek": sum(len(a[key]["only_b"]) for a in animals),
-            "contradictions": sum(len(a[key]["contradict"]) for a in animals),
-        }
+        animals = list(pool.map(lambda n: compare(client, config, spend, n, claude[n], script[n], judges), names))
 
     found = [f for a in animals for f in a["claude_features_in_the_pages"]]
     report = {
@@ -198,12 +223,18 @@ def main():
                  "on 6 Oct 2026, for the same animals. DeepSeek did the pairing; read the pairs before trusting the counts.",
         "date": today(), "seconds": round(time.time() - started),
         "totals": {
-            "features": side("features"), "mistakes": side("mistakes"), "tells_apart": side("tells_apart"),
+            "features": tally([a["features"] for a in animals]),
+            "mistakes": tally([a["mistakes"] for a in animals]),
+            "judges": {judge: dict(tally([a["tells_apart"][judge] for a in animals]), model=chosen["model"],
+                                   seconds=chosen["seconds"], usd=chosen["spend"]["usd_at_peak_prices"],
+                                   inr=chosen["spend"]["inr_at_peak_prices"])
+                       for judge, chosen in judges.items()},
             "claude_in_pages": {"found": sum(f["found"] for f in found),
                                 "all": sum(f["covers"] == "all" for f in found),
                                 "part": sum(f["found"] and f["covers"] != "all" for f in found)},
             "deepseek_dropped": {k: sum(a["deepseek_dropped"][k] for a in animals)
                                  for k in ("quote_not_in_the_page", "second_reading")},
+            "for_the_owner": [a["name"] for a in animals if a["for_the_owner"]],
         },
         "spend": spend.summary(),
         "animals": animals,
@@ -211,8 +242,11 @@ def main():
     write_json(REPORT / "report.json", report)
     write_markdown(report)
     print(f"{len(animals)} animals compared in {report['seconds']} seconds.")
-    for key in ("features", "mistakes", "tells_apart"):
+    for key in ("features", "mistakes"):
         print(f"  {key}: {report['totals'][key]}")
+    for judge, j in report["totals"]["judges"].items():
+        print(f"  judge {judge}: chose {j['script']}, matched {j['claude_matched']} of Claude's {j['claude']}, "
+              f"flagged {j['contradictions']}, {j['seconds']} s, Rs {j['inr']}")
     print(f"  Claude's features found in the fetched pages: {report['totals']['claude_in_pages']}")
     print(spend.line())
 

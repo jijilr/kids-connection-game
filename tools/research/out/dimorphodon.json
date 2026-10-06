@@ -2,23 +2,8 @@
   "name": "Dimorphodon",
   "features": [
     {
-      "claim": "Dimorphodon had a large, bulky skull.",
+      "claim": "Dimorphodon had a large, bulky skull about 23 centimetres long.",
       "quote": "Dimorphodon had a large, bulky skull approximately 23 centimetres (9.1 in) in length, whose weight was reduced by large openings separated from each other by thin bony partitions.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Dimorphodon had two different kinds of teeth in its jaws.",
-      "quote": "referring to the fact that it had two distinct types of teeth in its jaws – which is comparatively rare among reptiles",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "The front of the upper jaw had four or five fang-like teeth.",
-      "quote": "The front of the upper jaw had four or five fang-like teeth followed by an indeterminate number of smaller teeth; the maxilla of all exemplars is damaged at the back.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "The lower jaw had five longer teeth and thirty to forty tiny, flattened pointed teeth shaped like lancets.",
-      "quote": "The lower jaw had five longer teeth and thirty to forty tiny, flattened pointed teeth, shaped like lancets.",
       "source": "wikipedia_en"
     },
     {
@@ -27,19 +12,39 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "Dimorphodon had proportionally short wings.",
-      "quote": "The body structure of Dimorphodon displays many \"primitive\" characteristics, such as, according to Owen, a very small brain-pan and proportionally short wings.",
-      "source": "wikipedia_en"
-    },
-    {
       "claim": "Dimorphodon had a long tail made of thirty vertebrae.",
       "quote": "The tail of Dimorphodon was long and consisted of thirty vertebrae.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "The first five or six tail vertebrae were short and flexible, but the rest got longer and were stiffened.",
-      "quote": "The first five or six were short and flexible, but the remainder gradually increased in length and were stiffened by elongated vertebral processes.",
+      "claim": "Dimorphodon had two different kinds of teeth in its jaws.",
+      "quote": "referring to the fact that it had two distinct types of teeth in its jaws – which is comparatively rare among reptiles.",
       "source": "wikipedia_en"
+    },
+    {
+      "claim": "The front of Dimorphodon's upper jaw had four or five fang-like teeth.",
+      "quote": "The front of the upper jaw had four or five fang-like teeth followed by an indeterminate number of smaller teeth; the maxilla of all exemplars is damaged at the back.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Dimorphodon's lower jaw had five longer teeth and thirty to forty tiny, flattened pointed teeth shaped like lancets.",
+      "quote": "The lower jaw had five longer teeth and thirty to forty tiny, flattened pointed teeth, shaped like lancets.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Dimorphodon had proportionally short wings.",
+      "quote": "The body structure of Dimorphodon displays many \"primitive\" characteristics, such as, according to Owen, a very small brain-pan and proportionally short wings.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Dimorphodon was about 1 metre long and had a wingspan of about 1.45 metres.",
+      "quote": "Dimorphodon had an adult body length of 1 metre (3.3 ft) long, with a 1.45 metre (4.6 ft) wingspan.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Dimorphodon had a big head, a small brain, a tall beak, and two types of teeth.",
+      "quote": "It had a big head, a small brain, a tall beak, and two types of teeth.",
+      "source": "wikipedia_simple"
     },
     {
       "claim": "Dimorphodon had a fifth toe that was elongated, clawless, and pointed to the side.",
@@ -52,36 +57,26 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "Dimorphodon had an adult body length of 1 metre and a wingspan of 1.45 metres.",
-      "quote": "Dimorphodon had an adult body length of 1 metre (3.3 ft) long, with a 1.45 metre (4.6 ft) wingspan.",
+      "claim": "Dimorphodon had a plantigrade gait in its hindlimbs.",
+      "quote": "the well preserved foot of it shows that pterosaurs do not have a digitigrade posture in their hindlimbs, but that it have a plantigrade gait, as has been inferred from footprints.",
       "source": "wikipedia_en"
-    },
-    {
-      "claim": "Dimorphodon had a big head, a small brain, a tall beak, and two types of teeth.",
-      "quote": "It had a big head, a small brain, a tall beak, and two types of teeth.",
-      "source": "wikipedia_simple"
     }
   ],
   "not_this": [],
   "debated": [
     {
-      "claim": "Whether Dimorphodon had a tail vane at the end of its tail is uncertain.",
+      "claim": "It is uncertain whether Dimorphodon had a tail vane at the end of its tail.",
       "quote": "The terminal end of the tail may have borne a Rhamphorhynchus-like tail vane, although no  impressions have yet been found in Dimorphodon fossils to confirm this speculation.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Whether Dimorphodon had a membranous pouch on the underside of its neck is uncertain.",
+      "claim": "It is uncertain whether Dimorphodon had a membranous pouch on the underside of its neck.",
       "quote": "The neck was short but strong and flexible and may have had a membranous pouch on the underside.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Whether Dimorphodon had a puffin-like beak is speculative.",
+      "claim": "Many depictions give Dimorphodon a speculative puffin-like beak.",
       "quote": "Many depictions give it a speculative puffin-like 'beak' because of the superficial similarities between the two animals' skulls.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Whether Dimorphodon walked as a quadruped or a biped is debated.",
-      "quote": "However, his rival Harry Govier Seeley, propagating the view that pterosaurs were warm-blooded and active, argued that Dimorphodon was either an agile quadruped or even a running biped due to its relatively well developed hindlimbs and characteristics of its pelvis.",
       "source": "wikipedia_en"
     }
   ],
@@ -89,7 +84,7 @@
     "quote_not_in_the_page": [],
     "second_reading": [
       {
-        "claim": "Older pictures show Dimorphodon as a soarer, but newer studies say it was a poor flyer.",
+        "claim": "Older pictures show Dimorphodon as a soarer, but recent studies show it was a rather poor flyer.",
         "quote": "Like many pterosaurs, Dimorphodon has been perceived as a soarer in the past, correlating to historical perceptions of pterosaurs as seabird analogues. However, more recent studies show that the animal was actually a rather poor flyer: its wings are proportionally short in relation to the body and its skeleton rather robust, offering very little gliding potential.",
         "source": "wikipedia_en",
         "kind": "not_this",
@@ -103,10 +98,17 @@
         "why": "a picture could not show it"
       },
       {
-        "claim": "Older pictures show Dimorphodon as very ungainly on the ground, but Seeley argued it was agile.",
+        "claim": "Owen thought Dimorphodon was very ungainly on the ground, but Seeley argued it was an agile quadruped or even a running biped.",
         "quote": "He speculated that the fifth toe supported a membrane between the tail and the legs and that the animal was therefore very ungainly on the ground. However, his rival Harry Govier Seeley, propagating the view that pterosaurs were warm-blooded and active, argued that Dimorphodon was either an agile quadruped or even a running biped due to its relatively well developed hindlimbs and characteristics of its pelvis.",
         "source": "wikipedia_en",
         "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Researchers disagree about what Dimorphodon ate.",
+        "quote": "The diet of Dimorphodon has been questioned among researchers, with earlier interpretations depicting it as an insectivore or a piscivore.",
+        "source": "wikipedia_en",
+        "kind": "debated",
         "why": "a picture could not show it"
       }
     ]
@@ -141,19 +143,25 @@
   "group": "flyer",
   "must_show": [
     {
-      "claim": "Dimorphodon had two different kinds of teeth in its jaws.",
-      "quote": "referring to the fact that it had two distinct types of teeth in its jaws – which is comparatively rare among reptiles",
+      "claim": "Dimorphodon had a large, bulky skull about 23 centimetres long.",
+      "quote": "Dimorphodon had a large, bulky skull approximately 23 centimetres (9.1 in) in length, whose weight was reduced by large openings separated from each other by thin bony partitions.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "The front of the upper jaw had four or five fang-like teeth.",
-      "quote": "The front of the upper jaw had four or five fang-like teeth followed by an indeterminate number of smaller teeth; the maxilla of all exemplars is damaged at the back.",
+      "claim": "Dimorphodon had proportionally short wings.",
+      "quote": "The body structure of Dimorphodon displays many \"primitive\" characteristics, such as, according to Owen, a very small brain-pan and proportionally short wings.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Dimorphodon had a fifth toe that was elongated, clawless, and pointed to the side.",
-      "quote": "Dimorphodon's was elongated, clawless, and oriented to the side.",
-      "source": "wikipedia_en"
+      "claim": "Dimorphodon had a big head, a small brain, a tall beak, and two types of teeth.",
+      "quote": "It had a big head, a small brain, a tall beak, and two types of teeth.",
+      "source": "wikipedia_simple"
     }
-  ]
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "why": "large bulky tall-beaked skull, short wings"
+  }
 }

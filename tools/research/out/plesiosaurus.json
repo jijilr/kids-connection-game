@@ -2,83 +2,82 @@
   "name": "Plesiosaurus",
   "features": [
     {
-      "claim": "It had a small head.",
+      "claim": "Plesiosaurus had a small head.",
       "quote": "Compared to other plesiosaur genera, Plesiosaurus has a small head.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had a long, slender neck.",
+      "claim": "Plesiosaurus had a long and slender neck.",
       "quote": "Measuring around 3.5 m (11 ft) long, it is distinguishable by its small head, long and slender neck, broad turtle-like body, a short tail, and two pairs of large, elongated paddles.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its body was broad and turtle-like.",
+      "claim": "Plesiosaurus had a broad turtle-like body.",
       "quote": "Measuring around 3.5 m (11 ft) long, it is distinguishable by its small head, long and slender neck, broad turtle-like body, a short tail, and two pairs of large, elongated paddles.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had a short tail.",
+      "claim": "Plesiosaurus had a short tail.",
       "quote": "Measuring around 3.5 m (11 ft) long, it is distinguishable by its small head, long and slender neck, broad turtle-like body, a short tail, and two pairs of large, elongated paddles.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had two pairs of large, elongated paddles.",
+      "claim": "Plesiosaurus had two pairs of large, elongated paddles.",
       "quote": "Measuring around 3.5 m (11 ft) long, it is distinguishable by its small head, long and slender neck, broad turtle-like body, a short tail, and two pairs of large, elongated paddles.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its teeth were simple, needle-like cones.",
+      "claim": "Plesiosaurus grew to 2.87–3.5 m (9.4–11.5 ft) in length.",
+      "quote": "Plesiosaurus was a moderately sized plesiosaur that grew to 2.87–3.5 m (9.4–11.5 ft) in length.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Plesiosaurus had a U-shaped jaw.",
+      "quote": "Its U-shaped jaw and sharp teeth would have been like a fish trap.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Plesiosaurus had sharp teeth.",
+      "quote": "Its U-shaped jaw and sharp teeth would have been like a fish trap.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The teeth of Plesiosaurus are simple, needle-like cones that are slightly curved and circular in transverse section.",
       "quote": "The teeth of Plesiosaurus are \"simple, needle-like cones\" that are \"slightly curved and circular in transverse section\".",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had a series of conical teeth in sockets.",
-      "quote": "The snout was short, but the jaws were able to open very wide, and had a series of conical teeth in sockets.",
-      "source": "wikipedia_simple"
+      "claim": "The forelimbs are elongate and relatively narrow compared to those of most plesiosaurs.",
+      "quote": "The forelimbs are elongate and relatively narrow compared to those of most plesiosaurs.",
+      "source": "wikipedia_en"
     },
     {
-      "claim": "It grew to about 3 to 5 metres long.",
-      "quote": "Plesiosaurus was a fairly typical member of its order, and measured around 3 to 5 metres (10 to 16 ft) in total length.",
-      "source": "wikipedia_simple"
+      "claim": "The hindlimbs are long and narrow, and in adults, they are much smaller than the forelimbs.",
+      "quote": "The hindlimbs are long and narrow, and in adults, they are much smaller than the forelimbs.",
+      "source": "wikipedia_en"
     },
     {
-      "claim": "It had a short snout.",
-      "quote": "The snout was short, but the jaws were able to open very wide, and had a series of conical teeth in sockets.",
-      "source": "wikipedia_simple"
-    },
-    {
-      "claim": "Its neck was quite long.",
-      "quote": "The neck was quite long, and the short tail was used for steering.",
-      "source": "wikipedia_simple"
+      "claim": "The hand paddle has five digits.",
+      "quote": "The hand paddle has five digits; the phalangeal formula is uncertain, but the count for one large individual, from \"thumb\" to fifth \"finger\", is 4-8-9-8-6.",
+      "source": "wikipedia_en"
     }
   ],
   "not_this": [],
-  "debated": [],
+  "debated": [
+    {
+      "claim": "The phalangeal formula of the hand is uncertain.",
+      "quote": "The hand paddle has five digits; the phalangeal formula is uncertain, but the count for one large individual, from \"thumb\" to fifth \"finger\", is 4-8-9-8-6.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The phalangeal formula of the foot is uncertain.",
+      "quote": "Like the hand, the phalangeal formula is uncertain, but is at least 3-7-9-8-7 from innermost to outer \"toe\".",
+      "source": "wikipedia_en"
+    }
+  ],
   "dropped": {
     "quote_not_in_the_page": [],
-    "second_reading": [
-      {
-        "claim": "It was a large reptile that lived in the sea.",
-        "quote": "Plesiosaurus was a large marine reptile from the Early to Late Jurassic period.",
-        "source": "wikipedia_simple",
-        "kind": "features",
-        "why": "a picture could not show it"
-      },
-      {
-        "claim": "It used its large paddles to swim.",
-        "quote": "Like all plesiosaurs, it used its large paddles to swim.",
-        "source": "wikipedia_simple",
-        "kind": "features",
-        "why": "a picture could not show it"
-      },
-      {
-        "claim": "Scientists are not sure whether it was warm-blooded or cold-blooded.",
-        "quote": "Scientists have wondered whether ancient reptiles like pleisiosaurs were warm-blooded or cold-blooded.",
-        "source": "wikipedia_simple",
-        "kind": "debated",
-        "why": "a picture could not show it"
-      }
-    ]
+    "second_reading": []
   },
   "sources": [
     {
@@ -110,24 +109,25 @@
   "group": "swimmer",
   "must_show": [
     {
-      "claim": "It had a long, slender neck.",
+      "claim": "Plesiosaurus had a long and slender neck.",
       "quote": "Measuring around 3.5 m (11 ft) long, it is distinguishable by its small head, long and slender neck, broad turtle-like body, a short tail, and two pairs of large, elongated paddles.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had two pairs of large, elongated paddles.",
+      "claim": "Plesiosaurus had a small head.",
+      "quote": "Compared to other plesiosaur genera, Plesiosaurus has a small head.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Plesiosaurus had a short tail.",
       "quote": "Measuring around 3.5 m (11 ft) long, it is distinguishable by its small head, long and slender neck, broad turtle-like body, a short tail, and two pairs of large, elongated paddles.",
       "source": "wikipedia_en"
-    },
-    {
-      "claim": "Its teeth were simple, needle-like cones.",
-      "quote": "The teeth of Plesiosaurus are \"simple, needle-like cones\" that are \"slightly curved and circular in transverse section\".",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "It had a short snout.",
-      "quote": "The snout was short, but the jaws were able to open very wide, and had a series of conical teeth in sockets.",
-      "source": "wikipedia_simple"
     }
-  ]
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "why": "Long slender neck, small head, short tail."
+  }
 }

@@ -3,6 +3,8 @@
     fetch.py      save the source pages for a thing, with their addresses and revisions
     extract.py    DeepSeek reads only those pages and lists what they say, each item with
                   the exact sentence it came from; a script checks every sentence
+    tell_apart.py a judge picks, from the checked features only, what tells each animal
+                  from its look-alikes
     benchmark.py  compare the result with the research Claude did by hand on 6 Oct 2026
 
 The rule the owner set on 6 Oct 2026: research must not depend on a Claude session, and
@@ -80,8 +82,8 @@ def sources_block(sources: list, longest: int) -> str:
 class Spend:
     """Counts tokens and money across calls, and stops the run at the cap."""
 
-    def __init__(self, config: dict, cap_usd: float):
-        self.prices, self.cap = config["usd_per_million_tokens_at_peak"], cap_usd
+    def __init__(self, config: dict, cap_usd: float, prices: dict = None):
+        self.prices, self.cap = prices or config["usd_per_million_tokens_at_peak"], cap_usd
         self.inr = config["inr_per_usd"]
         self.hit = self.miss = self.out = self.calls = 0
         self.lock = threading.Lock()
@@ -125,17 +127,33 @@ def deepseek():
     return OpenAI(api_key=key, base_url="https://api.deepseek.com")
 
 
-def ask(client, config: dict, spend: Spend, system: str, user: str) -> dict:
-    """One question to DeepSeek, answered as JSON. Temperature 0: the same pages should
-    give the same answer."""
+def openai_client():
+    """OpenAI client, through the key the picture scripts already use. Read from the
+    environment and never written anywhere."""
+    from openai import OpenAI
+
+    if not os.environ.get("OPENAI_API_KEY"):
+        raise SystemExit("OPENAI_API_KEY is not set in the environment.")
+    return OpenAI()
+
+
+def ask(client, config: dict, spend: Spend, system: str, user: str, judge: dict = None) -> dict:
+    """One question to a model, answered as JSON. Without `judge` it goes to the
+    everyday DeepSeek model with long reasoning off: copying sentences out of a page
+    needs none, and with it off the answer is steadier (temperature 0 applies) and
+    costs a fraction as much. A judge from config.json may reason at length."""
+    judge = judge or {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"]}
     spend.check()
+    options = {}
+    if judge["provider"] == "deepseek":
+        options["extra_body"] = {"thinking": {"type": judge["thinking"]}}
+        if judge["thinking"] == "disabled":
+            options["temperature"] = 0
+        elif judge.get("reasoning_effort"):
+            options["reasoning_effort"] = judge["reasoning_effort"]
     reply = client.chat.completions.create(
-        model=config["model"], temperature=0, response_format={"type": "json_object"},
-        messages=[{"role": "system", "content": system}, {"role": "user", "content": user}],
-        # Copying sentences out of a page needs no long reasoning. With thinking off the
-        # answer is steadier (temperature 0 applies) and costs a fraction as much.
-        extra_body={"thinking": {"type": config["thinking"]}},
-    )
+        model=judge["model"], response_format={"type": "json_object"},
+        messages=[{"role": "system", "content": system}, {"role": "user", "content": user}], **options)
     spend.add(reply.usage)
     try:
         return json.loads(reply.choices[0].message.content)

@@ -2,18 +2,23 @@
   "name": "Argentinosaurus",
   "features": [
     {
-      "claim": "It was an enormous, long-necked, long-tailed, four-legged plant-eater.",
+      "claim": "Argentinosaurus was an enormous, long-necked, long-tailed, four-legged plant-eater.",
       "quote": "It was an enormous, long-necked, long-tailed, quadrupedal, plant-eater from Argentina, South America during the Cretaceous period.",
       "source": "wikipedia_simple"
     },
     {
-      "claim": "It walked on four legs.",
-      "quote": "How it moved:\non four legs",
-      "source": "nhm_dino_directory"
+      "claim": "It was a giant sauropod dinosaur.",
+      "quote": "Argentinosaurus (meaning \"lizard from Argentina\") is a genus of giant sauropod dinosaur that lived during the Early Cretaceous period in what is now Argentina.",
+      "source": "wikipedia_en"
     },
     {
-      "claim": "It had a long neck that it could use to sweep the ground or reach high up for plants.",
-      "quote": "Argentinosaurus probably used its long neck to sweep the ground or to reach high up in search of vegetation.",
+      "claim": "It measured 30–35 m long and weighed 65–80 tonnes.",
+      "quote": "Although it is only known from fragmentary remains, Argentinosaurus was one of the largest known land animals of all time, measuring 30–35 m (98–115 ft) long and weighing 65–80 t (72–88 short tons).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It moved on four legs.",
+      "quote": "How it moved:\non four legs",
       "source": "nhm_dino_directory"
     },
     {
@@ -22,26 +27,41 @@
       "source": "nhm_dino_directory"
     },
     {
-      "claim": "It was one of the largest land animals ever found.",
-      "quote": "But it is one of the largest land animals ever found.",
-      "source": "nhm_dino_directory"
+      "claim": "It had a long tail.",
+      "quote": "It was an enormous, long-necked, long-tailed, quadrupedal, plant-eater from Argentina, South America during the Cretaceous period.",
+      "source": "wikipedia_simple"
     }
   ],
   "not_this": [],
-  "debated": [
-    {
-      "claim": "Its exact size is hard to estimate because its remains are incomplete.",
-      "quote": "The exact size of Argentinosaurus is hard to estimate due to the incompleteness of its fossilised remains.",
-      "source": "nhm_dino_directory"
-    }
-  ],
+  "debated": [],
   "dropped": {
     "quote_not_in_the_page": [],
     "second_reading": [
       {
+        "claim": "It had a long neck that it probably used to sweep the ground or reach high up for vegetation.",
+        "quote": "Argentinosaurus probably used its long neck to sweep the ground or to reach high up in search of vegetation.",
+        "source": "nhm_dino_directory",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
         "claim": "It ate tough plant material.",
         "quote": "Food:\ntough plant material",
         "source": "nhm_dino_directory",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It had a slender fibula bone in its lower leg.",
+        "quote": "While the holotype specimen does not preserve a femur, it preserves a slender fibula (originally interpreted as a tibia) that is 1.55 metres (5.1 ft) in length.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Its thigh bone was 2.5 metres long.",
+        "quote": "The complete femur that was assigned to Argentinosaurus is 2.5 metres (8.2 ft) long.",
+        "source": "wikipedia_en",
         "kind": "features",
         "why": "a picture could not show it"
       },
@@ -60,50 +80,29 @@
         "why": "a picture could not show it"
       },
       {
-        "claim": "It had a slender fibula bone in its lower leg.",
-        "quote": "While the holotype specimen does not preserve a femur, it preserves a slender fibula (originally interpreted as a tibia) that is 1.55 metres (5.1 ft) in length.",
-        "source": "wikipedia_en",
-        "kind": "features",
+        "claim": "Its exact size is hard to estimate because its remains are incomplete.",
+        "quote": "The exact size of Argentinosaurus is hard to estimate due to the incompleteness of its fossilised remains.",
+        "source": "nhm_dino_directory",
+        "kind": "debated",
         "why": "a picture could not show it"
       },
       {
-        "claim": "Its back vertebrae were enormous even for sauropods.",
-        "quote": "The vertebrae were enormous  even for sauropods; one dorsal vertebra has a reconstructed height of 159 centimetres (63 in) and a width of 129 centimetres (51 in), and the vertebral centra are up to 57 centimetres (22 in) in width.",
+        "claim": "Its exact size is difficult to estimate because of the incompleteness of its remains.",
+        "quote": "Argentinosaurus is among the largest known land animals, although its exact size is difficult to estimate because of the incompleteness of its remains.",
         "source": "wikipedia_en",
-        "kind": "features",
+        "kind": "debated",
         "why": "a picture could not show it"
       },
       {
-        "claim": "Its dorsal ribs were tubular and cylindrical in shape.",
-        "quote": "The dorsal ribs were tubular and cylindrical in shape, in contrast with other titanosaurs.",
-        "source": "wikipedia_en",
-        "kind": "features",
-        "why": "a picture could not show it"
-      },
-      {
-        "claim": "It probably had six sacral vertebrae in the hip region.",
-        "quote": "Argentinosaurus, like many titanosaurs, probably had six sacral vertebrae (those in the hip region), although the last one is not preserved.",
-        "source": "wikipedia_en",
-        "kind": "features",
-        "why": "a picture could not show it"
-      },
-      {
-        "claim": "The original position of the known back vertebrae in the spine is disputed.",
+        "claim": "The original position of the known back vertebrae within the spine is disputed.",
         "quote": "Because of their incomplete preservation, the original position of the known dorsal vertebrae within the vertebral column is disputed.",
         "source": "wikipedia_en",
         "kind": "debated",
         "why": "a picture could not show it"
       },
       {
-        "claim": "Whether it had extra joints between its vertebrae is argued about.",
+        "claim": "Whether it had accessory joints between the vertebrae is contentious.",
         "quote": "Another contentious issue is the presence of hyposphene-hypantrum articulations, accessory joints between vertebrae that were located below the main articular processes.",
-        "source": "wikipedia_en",
-        "kind": "debated",
-        "why": "a picture could not show it"
-      },
-      {
-        "claim": "It is uncertain whether any of the thigh bones belonged to Argentinosaurus.",
-        "quote": "As of 2019, however, it was still uncertain whether any of these femora belonged to Argentinosaurus.",
         "source": "wikipedia_en",
         "kind": "debated",
         "why": "a picture could not show it"
@@ -150,14 +149,20 @@
   "group": "land_grazer",
   "must_show": [
     {
-      "claim": "It had a long neck that it could use to sweep the ground or reach high up for plants.",
-      "quote": "Argentinosaurus probably used its long neck to sweep the ground or to reach high up in search of vegetation.",
-      "source": "nhm_dino_directory"
+      "claim": "Argentinosaurus was an enormous, long-necked, long-tailed, four-legged plant-eater.",
+      "quote": "It was an enormous, long-necked, long-tailed, quadrupedal, plant-eater from Argentina, South America during the Cretaceous period.",
+      "source": "wikipedia_simple"
     },
     {
-      "claim": "Its teeth were for stripping vegetation from branches.",
-      "quote": "Teeth:\nfor stripping vegetation from branches",
-      "source": "nhm_dino_directory"
+      "claim": "It had a long tail.",
+      "quote": "It was an enormous, long-necked, long-tailed, quadrupedal, plant-eater from Argentina, South America during the Cretaceous period.",
+      "source": "wikipedia_simple"
     }
-  ]
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "why": "long neck and tail, no unique shape"
+  }
 }

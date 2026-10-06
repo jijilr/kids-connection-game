@@ -2,113 +2,120 @@
   "name": "Tyrannosaurus rex",
   "features": [
     {
-      "claim": "It walked on two legs and ate other animals.",
+      "claim": "Tyrannosaurus was a bipedal carnivore with a massive skull balanced by a long, heavy tail.",
       "quote": "Like other tyrannosaurids, Tyrannosaurus was a bipedal carnivore with a massive skull balanced by a long, heavy tail.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had a very big head and a long, heavy tail.",
-      "quote": "Tyrannosaurus was a bipedal carnivore with a massive skull balanced by a long, heavy tail.",
-      "source": "wikipedia_simple"
-    },
-    {
-      "claim": "Its arms were short but strong, with two fingers that had claws.",
+      "claim": "Its forelimbs were short but unusually powerful for their size, and had two clawed digits.",
       "quote": "Relative to its large and powerful hind limbs, the forelimbs of Tyrannosaurus were short but unusually powerful for their size, and they had two clawed digits.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its back legs were long and strong.",
-      "quote": "In contrast to the arms, the hindlimbs were among the longest in proportion to body size of any theropod.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Its neck was short, deep and strong to hold up its huge head.",
-      "quote": "Compared to these, it was exceptionally short, deep and muscular to support the massive head.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Its head was wide at the back but had a narrow snout, so it could see well with both eyes.",
+      "claim": "The skull was extremely wide at the rear but had a narrow snout, allowing unusually good binocular vision.",
       "quote": "It was extremely wide at the rear but had a narrow snout, allowing unusually good binocular vision.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "The front of its upper jaw was shaped like a U.",
+      "claim": "The tip of the upper jaw was U-shaped.",
       "quote": "The tip of the upper jaw was U-shaped (most non-tyrannosauroid carnivores had V-shaped upper jaws), which increased the amount of tissue and bone a tyrannosaur could rip out with one bite, although it also increased the stresses on the front teeth.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its teeth were strong and thick, not thin like daggers.",
+      "claim": "The teeth were robust, like lethal bananas rather than daggers, more widely spaced and also had reinforcing ridges.",
       "quote": "The remaining teeth were robust, like \"lethal bananas\" rather than daggers, more widely spaced and also had reinforcing ridges.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had sixty pointed teeth with saw edges for crushing bone.",
-      "quote": "Teeth: 60 saw-edged, bone-crushing, pointed teeth",
-      "source": "nhm_dino_directory"
+      "claim": "The neck was exceptionally short, deep and muscular to support the massive head.",
+      "quote": "Compared to these, it was exceptionally short, deep and muscular to support the massive head.",
+      "source": "wikipedia_en"
     },
     {
-      "claim": "Its skin had scales.",
+      "claim": "The hindlimbs were among the longest in proportion to body size of any theropod.",
+      "quote": "In contrast to the arms, the hindlimbs were among the longest in proportion to body size of any theropod.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The tail was heavy and moderately long, in order to balance the massive head and torso.",
+      "quote": "The tail was heavy and moderately long, in order to balance the massive head and torso and to provide space for massive locomotor muscles that attached to the thighbones.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Preserved skin from Tyrannosaurus and its close relatives shows that these dinosaurs had scales.",
       "quote": "Preserved skin from Tyrannosaurus and its close relatives shows that these dinosaurs had scales.",
       "source": "nhm_dino_directory"
     },
     {
-      "claim": "It held its body about level with the ground and its tail stretched out behind to balance its head.",
-      "quote": "Modern representations in museums, art, and film show T. rex with its body approximately parallel to the ground with the tail extended behind the body to balance the head.",
-      "source": "wikipedia_en"
+      "claim": "T. rex's height was 3.5–4.0 metres tall at the hips.",
+      "quote": "The length of T. rex is normally estimated at closer to 12 metres long, and T. rex’s height as 3.5–4.0 metres tall at the hips.",
+      "source": "nhm_dino_directory"
     },
     {
-      "claim": "It was about twelve metres long and weighed about seven thousand kilogrammes.",
-      "quote": "Length: 12.0m Weight: 7000kg",
+      "claim": "Tyrannosaurus had 60 saw-edged, bone-crushing, pointed teeth.",
+      "quote": "Teeth:\n60 saw-edged, bone-crushing, pointed teeth",
       "source": "nhm_dino_directory"
     }
   ],
   "not_this": [
     {
-      "claim": "Old pictures showed it standing upright like a tripod with its tail dragging, but that pose was wrong.",
+      "claim": "The old upright, tail-dragging pose was wrong and could not have been maintained by a living animal.",
       "quote": "By 1970, scientists realized this pose was incorrect and could not have been maintained by a living animal, as it would have resulted in the dislocation or weakening of several joints, including the hips and the articulation between the head and the spinal column.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Old pictures gave it long three-fingered arms like Allosaurus, but that was wrong.",
+      "claim": "The old picture of Tyrannosaurus with longer, three-fingered forelimbs like Allosaurus was wrong.",
       "quote": "For the initial mounted skeleton as seen by the public in 1915, Osborn substituted longer, three-fingered forelimbs like those of Allosaurus.",
       "source": "wikipedia_en"
     }
   ],
   "debated": [
     {
-      "claim": "Scientists are not sure whether it had feathers.",
-      "quote": "However, there's currently no direct evidence that supports the idea of T. rex feathers.",
+      "claim": "Whether Tyrannosaurus had feathers is debated, and there is currently no direct evidence that supports the idea of T. rex feathers.",
+      "quote": "However, there’s currently no direct evidence that supports the idea of T. rex feathers.",
       "source": "nhm_dino_directory"
     },
     {
-      "claim": "Scientists are not sure whether it had lips covering its teeth.",
+      "claim": "Whether theropods such as Tyrannosaurus had their upper teeth covered in lips is debated.",
       "quote": "A conference abstract published in 2016 posited that theropods such as Tyrannosaurus had their upper teeth covered in lips, instead of bare teeth as seen in crocodilians.",
       "source": "wikipedia_en"
+    },
+    {
+      "claim": "How T. rex used its small arms is a matter of debate.",
+      "quote": "Compared to its overall body size, T. rex had surprisingly small arms. How it used them is a matter of debate.",
+      "source": "nhm_dino_directory"
     }
   ],
   "dropped": {
     "quote_not_in_the_page": [],
     "second_reading": [
       {
-        "claim": "The idea that it was mainly a scavenger is no longer accepted.",
-        "quote": "Most paleontologists today accept that Tyrannosaurus was a predator, and the idea of Tyrannosaurus being primarily a scavenger has been discredited.",
-        "source": "wikipedia_en",
-        "kind": "not_this",
-        "why": "the sentence does not support it"
-      },
-      {
-        "claim": "Scientists do not agree on what its little arms were used for.",
-        "quote": "Compared to its overall body size, T. rex had surprisingly small arms. How it used them is a matter of debate.",
+        "claim": "The largest known Tyrannosaurus are T. rex specimens named Sue and Scotty, which jointly hold the Guinness World Record.",
+        "quote": "The largest known Tyrannosaurus are T. rex specimens named Sue and Scotty, which jointly hold the Guinness World Record.",
         "source": "nhm_dino_directory",
-        "kind": "debated",
+        "kind": "features",
         "why": "a picture could not show it"
       },
       {
-        "claim": "Scientists do not agree on how many species of Tyrannosaurus there were.",
-        "quote": "In a 2022 study, Gregory S. Paul and colleagues argued that Tyrannosaurus rex, as traditionally understood, actually represents three species: the type species Tyrannosaurus rex, and two previously unrecognized species: T. imperator (meaning \"tyrant lizard emperor\") and T. regina (meaning \"tyrant lizard queen\").",
+        "claim": "The idea that Tyrannosaurus was primarily a scavenger has been discredited.",
+        "quote": "Most paleontologists today accept that Tyrannosaurus was a predator, and the idea of Tyrannosaurus being primarily a scavenger has been discredited.",
         "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The old idea that the forelimbs were useless was dismissed.",
+        "quote": "In the first detailed scientific description of Tyrannosaurus forelimbs, paleontologists Kenneth Carpenter and Matt Smith dismissed notions that the forelimbs were useless or that Tyrannosaurus was an obligate scavenger.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Whether Nanotyrannus is really a separate genus of tyrannosaurids is disputed.",
+        "quote": "Scientists disagree whether Nanotyrannus is really a separate genus of tyrannosaurids.",
+        "source": "wikipedia_simple",
         "kind": "debated",
-        "why": "the sentence does not support it"
+        "why": "a picture could not show it"
       }
     ]
   },
@@ -152,24 +159,30 @@
   "group": "land_hunter",
   "must_show": [
     {
-      "claim": "It had a very big head and a long, heavy tail.",
-      "quote": "Tyrannosaurus was a bipedal carnivore with a massive skull balanced by a long, heavy tail.",
-      "source": "wikipedia_simple"
-    },
-    {
-      "claim": "Its arms were short but strong, with two fingers that had claws.",
-      "quote": "Relative to its large and powerful hind limbs, the forelimbs of Tyrannosaurus were short but unusually powerful for their size, and they had two clawed digits.",
+      "claim": "Tyrannosaurus was a bipedal carnivore with a massive skull balanced by a long, heavy tail.",
+      "quote": "Like other tyrannosaurids, Tyrannosaurus was a bipedal carnivore with a massive skull balanced by a long, heavy tail.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its head was wide at the back but had a narrow snout, so it could see well with both eyes.",
+      "claim": "The skull was extremely wide at the rear but had a narrow snout, allowing unusually good binocular vision.",
       "quote": "It was extremely wide at the rear but had a narrow snout, allowing unusually good binocular vision.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It held its body about level with the ground and its tail stretched out behind to balance its head.",
-      "quote": "Modern representations in museums, art, and film show T. rex with its body approximately parallel to the ground with the tail extended behind the body to balance the head.",
+      "claim": "The neck was exceptionally short, deep and muscular to support the massive head.",
+      "quote": "Compared to these, it was exceptionally short, deep and muscular to support the massive head.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The hindlimbs were among the longest in proportion to body size of any theropod.",
+      "quote": "In contrast to the arms, the hindlimbs were among the longest in proportion to body size of any theropod.",
       "source": "wikipedia_en"
     }
-  ]
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "why": "massive skull, narrow snout, short deep neck, long hindlimbs"
+  }
 }

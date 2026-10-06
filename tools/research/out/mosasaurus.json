@@ -2,7 +2,7 @@
   "name": "Mosasaurus",
   "features": [
     {
-      "claim": "It had a streamlined body.",
+      "claim": "Mosasaurus had a streamlined body.",
       "quote": "As such, it had a streamlined body, an elongated tail ending with a downturn supporting a two-lobed fin, and two pairs of flippers.",
       "source": "wikipedia_en"
     },
@@ -17,13 +17,28 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its skull was conical and tapered to a short snout.",
+      "claim": "Its skull was conical and tapered to a short snout that reached a little past the frontmost teeth.",
       "quote": "The skull of Mosasaurus is conical and tapers off to a short snout which extends a little beyond the frontmost teeth.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had robust jaws and strong muscles for powerful bites.",
+      "claim": "It had robust jaws and strong muscles for powerful bites with dozens of large cutting teeth.",
       "quote": "The skull of Mosasaurus had robust jaws and strong muscles capable of powerful bites using dozens of large teeth adapted for cutting prey.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its teeth were large and robust, with prismatic surfaces and two opposite cutting edges.",
+      "quote": "The features of teeth in Mosasaurus vary across species, but unifying characteristics include a design specialized for cutting prey, highly prismatic surfaces (enamel circumference shaped by flat sides called prisms), and two opposite cutting edges.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its rib cage was unusually deep and formed an almost perfect semicircle, giving a barrel-shaped chest.",
+      "quote": "Compared to other mosasaurs, the rib cage of Mosasaurus is unusually deep and forms an almost perfect semicircle, giving it a barrel-shaped chest.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its forelimbs were wide and robust, with fan-shaped scapula and humerus that were wider than tall.",
+      "quote": "The forelimbs of Mosasaurus are wide and robust. The scapula and humerus are fan-shaped and wider than tall.",
       "source": "wikipedia_en"
     },
     {
@@ -32,65 +47,47 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its rib cage was deep and formed an almost perfect semicircle, giving a barrel-shaped chest.",
-      "quote": "Compared to other mosasaurs, the rib cage of Mosasaurus is unusually deep and forms an almost perfect semicircle, giving it a barrel-shaped chest.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Its forelimbs were wide and robust.",
-      "quote": "The forelimbs of Mosasaurus are wide and robust.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "The largest species could reach up to 12 meters in maximum length.",
+      "claim": "The largest species, M. hoffmanni, is estimated to reach up to 12 meters in maximum length.",
       "quote": "The largest species, M. hoffmanni, is estimated to measure up to 12 meters (39 ft) in maximum length.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had a long and straight lower jawbone.",
-      "quote": "The disparity is also reflected in the dentary, the lower jawbone, although all species share a long and straight dentary.",
+      "claim": "The snout is blunt in M. hoffmanni and pointed in M. lemonnieri.",
+      "quote": "In M. hoffmanni, this snout is blunt, while in M. lemonnieri it is pointed.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its nostrils were placed further back on the skull than in nearly all other mosasaurs.",
-      "quote": "They are placed further toward the back of the skull than in nearly all other mosasaurs (exceeded only by Goronyosaurus), and begin above the fourth or fifth maxillary teeth.",
+      "claim": "The upper jaws are robust, broad and deep in most species, but slender in M. conodon.",
+      "quote": "The upper jaws in most species are robustly built, broad, and deep except in M. conodon, where they are slender.",
       "source": "wikipedia_en"
     }
   ],
   "not_this": [
     {
-      "claim": "It did not have webbed feet or limbs for walking.",
+      "claim": "It is wrong to picture Mosasaurus with webbed feet and limbs for walking.",
       "quote": "Scientists during the early and mid-1800s initially imagined Mosasaurus as an amphibious marine reptile with webbed feet and limbs for walking.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It did not have claws.",
+      "claim": "It is wrong to picture Mosasaurus with claws, because the phalanges show no sign of muscle or tendon attachment.",
       "quote": "He clarified that earlier interpretations of claws were erroneous and demonstrated how the phalanges show no indication of muscle or tendon attachment, which would make walking impossible.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It was not a giant flippered sea snake.",
+      "claim": "It is wrong to picture Mosasaurus as a giant flippered sea snake.",
       "quote": "While in the past derived mosasaurs were depicted as akin to giant flippered sea snakes, it is now understood that they were more similar in build to other large marine vertebrates such as ichthyosaurs, marine crocodylomorphs, and archaeocete whales through convergent evolution.",
       "source": "wikipedia_en"
-    }
-  ],
-  "debated": [
+    },
     {
-      "claim": "The maximum length of M. hoffmanni is uncertain.",
-      "quote": "No explicit justification for the 1:10 ratio was provided in Russell (1967), and it has been considered to be probably overestimated by Cleary et al. (2018).",
+      "claim": "The Crystal Palace sculpture of Mosasaurus, with its boxy head and monitor-lizard lips and scales, is inaccurate.",
+      "quote": "Many elements of the sculpture can be considered inaccurate, even for the time.",
       "source": "wikipedia_en"
     }
   ],
+  "debated": [],
   "dropped": {
     "quote_not_in_the_page": [],
     "second_reading": [
-      {
-        "claim": "Its teeth were large and robust, designed for cutting prey.",
-        "quote": "Mosasaurus teeth are large and robust except for those in M. conodon and M. lemonnieri, which instead have more slender teeth.",
-        "source": "wikipedia_en",
-        "kind": "features",
-        "why": "the sentence does not support it"
-      },
       {
         "claim": "The exact relationships of Mosasaurus as a squamate are still debated.",
         "quote": "The exact affinities of Mosasaurus as a squamate remain controversial, and scientists continue to debate whether its closest living relatives are monitor lizards or snakes.",
@@ -99,8 +96,22 @@
         "why": "a picture could not show it"
       },
       {
-        "claim": "The number of species in the genus is uncertain.",
-        "quote": "Another five species still nominally classified within Mosasaurus are planned to be reassessed.",
+        "claim": "The maximum length of M. hoffmanni is uncertain, with different estimates given.",
+        "quote": "No explicit justification for the 1:10 ratio was provided in Russell (1967), and it has been considered to be probably overestimated by Cleary et al. (2018).",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "the sentence does not support it"
+      },
+      {
+        "claim": "The number of species in the genus was long unclear because the type species had no clear diagnosis.",
+        "quote": "There is considerable morphological variability across the currently-recognized species in Mosasaurus—from the robustly-built M. hoffmanni to the slender and serpentine M. lemonnieri—but an unclear diagnosis (description of distinguishing features) of the type species M. hoffmanni led to a historically problematic classification.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Whether the Antarctic Mosasaurus remains are really Mosasaurus or Moanasaurus is not settled.",
+        "quote": "However, it is possible that such specimens may actually represent Moanasaurus, although this depends on the outcome of a pending revision of the genus.",
         "source": "wikipedia_en",
         "kind": "debated",
         "why": "a picture could not show it"
@@ -132,19 +143,20 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its rib cage was deep and formed an almost perfect semicircle, giving a barrel-shaped chest.",
+      "claim": "Its rib cage was unusually deep and formed an almost perfect semicircle, giving a barrel-shaped chest.",
       "quote": "Compared to other mosasaurs, the rib cage of Mosasaurus is unusually deep and forms an almost perfect semicircle, giving it a barrel-shaped chest.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had a long and straight lower jawbone.",
-      "quote": "The disparity is also reflected in the dentary, the lower jawbone, although all species share a long and straight dentary.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Its nostrils were placed further back on the skull than in nearly all other mosasaurs.",
-      "quote": "They are placed further toward the back of the skull than in nearly all other mosasaurs (exceeded only by Goronyosaurus), and begin above the fourth or fifth maxillary teeth.",
+      "claim": "Its skull was conical and tapered to a short snout that reached a little past the frontmost teeth.",
+      "quote": "The skull of Mosasaurus is conical and tapers off to a short snout which extends a little beyond the frontmost teeth.",
       "source": "wikipedia_en"
     }
-  ]
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "why": "Tail with downward fluke, deep barrel chest, conical skull with short snout."
+  }
 }

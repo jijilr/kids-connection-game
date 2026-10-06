@@ -2,119 +2,121 @@
   "name": "Brachiosaurus",
   "features": [
     {
-      "claim": "It walked on four legs.",
-      "quote": "How it moved: on 4 legs",
-      "source": "nhm_dino_directory"
-    },
-    {
-      "claim": "Its front legs were longer than its back legs.",
-      "quote": "Brachiosaurus' front legs – its 'arms' – were longer than its back legs.",
-      "source": "nhm_dino_directory"
-    },
-    {
-      "claim": "Its body tilted upward because of its longer front legs.",
-      "quote": "This gave the dinosaur a distinctive upward-tilted body posture, which – along with its long neck – made Brachiosaurus very well adapted for feeding on tall trees.",
-      "source": "nhm_dino_directory"
-    },
-    {
-      "claim": "It had a long neck.",
-      "quote": "Its long neck enabled it to browse foliage at heights that were inaccessible to most other herbivorous dinosaurs.",
-      "source": "wikipedia_simple"
-    },
-    {
-      "claim": "It had a small skull.",
-      "quote": "Like all sauropod dinosaurs, Brachiosaurus was a quadruped with a small skull, a long neck, a large trunk with a high-ellipsoid cross section, a long, muscular tail and slender, columnar limbs.",
+      "claim": "Brachiosaurus had a disproportionately long neck.",
+      "quote": "It had a disproportionately long neck, small skull, and large overall size, all of which are typical for sauropods.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had a long, muscular tail.",
-      "quote": "Like all sauropod dinosaurs, Brachiosaurus was a quadruped with a small skull, a long neck, a large trunk with a high-ellipsoid cross section, a long, muscular tail and slender, columnar limbs.",
+      "claim": "Brachiosaurus had a small skull.",
+      "quote": "It had a disproportionately long neck, small skull, and large overall size, all of which are typical for sauropods.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had slender, columnar limbs.",
-      "quote": "Like all sauropod dinosaurs, Brachiosaurus was a quadruped with a small skull, a long neck, a large trunk with a high-ellipsoid cross section, a long, muscular tail and slender, columnar limbs.",
+      "claim": "Brachiosaurus had longer forelimbs than hindlimbs.",
+      "quote": "Atypically, Brachiosaurus had longer forelimbs than hindlimbs, which resulted in a steeply inclined trunk and a proportionally shorter tail.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its teeth were peg-like and used for stripping leaves.",
+      "claim": "Its trunk was steeply inclined and its tail was proportionally shorter.",
+      "quote": "Atypically, Brachiosaurus had longer forelimbs than hindlimbs, which resulted in a steeply inclined trunk and a proportionally shorter tail.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Brachiosaurus walked on four legs.",
+      "quote": "How it moved:\non 4 legs",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Brachiosaurus was a very tall plant-eating dinosaur.",
+      "quote": "Brachiosaurus was a very tall plant-eating dinosaur that lived in prehistoric North America.",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Its teeth were peg-like and adapted for stripping leaves rather than chewing.",
       "quote": "Its peg-like teeth were adapted for stripping leaves rather than chewing, indicating a feeding strategy focused on high-browsing.",
       "source": "wikipedia_simple"
     },
     {
-      "claim": "It could reach heights of up to 16 meters at full stretch.",
-      "quote": "At full stretch, Brachiosaurus could reach heights of up to 16 meters (52 feet).",
-      "source": "wikipedia_simple"
+      "claim": "Brachiosaurus was a quadruped with a large trunk with a high-ellipsoid cross section, a long, muscular tail and slender, columnar limbs.",
+      "quote": "Like all sauropod dinosaurs, Brachiosaurus was a quadruped with a small skull, a long neck, a large trunk with a high-ellipsoid cross section, a long, muscular tail and slender, columnar limbs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The overall build of Brachiosaurus resembles a giraffe more than any other living animal.",
+      "quote": "The overall build of Brachiosaurus resembles a giraffe more than any other living animal.",
+      "source": "wikipedia_en"
     }
   ],
   "not_this": [
     {
-      "claim": "Old pictures showed Brachiosaurus living in water, but it actually lived on land.",
-      "quote": "It was believed throughout the nineteenth and early twentieth centuries that sauropods like Brachiosaurus were too massive to support their own weight on dry land, and instead lived partly submerged in water.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Old pictures showed its nostrils on top of its head as snorkels, but that idea is wrong.",
+      "claim": "Old pictures showed sauropods using their large nasal openings as snorkels when submerged, but this was an error.",
       "quote": "Traditionally, the fleshy nostrils of sauropods were thought to have been placed likewise on top of the head, roughly at the rear of the bony nostril opening, because these animals were erroneously thought to have been amphibious, using their large nasal openings as snorkels when submerged.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Old pictures showed it rearing up on its hind legs, but it was not suited for that.",
-      "quote": "Unlike other sauropods, it was unsuited for rearing on its hindlimbs.",
+      "claim": "Most popular depictions of Brachiosaurus are in fact based on Giraffatitan, a different genus.",
+      "quote": "Most popular depictions of Brachiosaurus are in fact based on Giraffatitan, a genus of brachiosaurid dinosaur from the Tendaguru Formation of Tanzania.",
       "source": "wikipedia_en"
+    },
+    {
+      "claim": "Most full-body reconstructions of Brachiosaurus are based on the related African dinosaur Giraffatitan.",
+      "quote": "Most full-body reconstructions of Brachiosaurus are based on the related African dinosaur Giraffatitan.",
+      "source": "nhm_dino_directory"
     }
   ],
   "debated": [
     {
-      "claim": "Scientists are not sure whether its neck was held upright or horizontally.",
+      "claim": "The neck posture of brachiosaurids is debated, with estimates ranging from near-vertical to horizontal.",
       "quote": "Ongoing debate revolves around the neck posture of brachiosaurids, with estimates ranging from near-vertical to horizontal orientations.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Scientists are not sure where its fleshy nostrils were placed.",
-      "quote": "Czerkas speculated on the function of the peculiar brachiosaurid nose, and pointed out that there was no conclusive way to determine where the nostrils where located, unless a head with skin impressions was found.",
+      "claim": "The length of Brachiosaurus has been estimated at 20–22 meters and 18 meters.",
+      "quote": "The length of Brachiosaurus has been estimated at 20–22 meters (66–72 ft) and 18 meters (59 ft), and its height at 9.4 meters (30+3⁄4 ft) and 12–13 meters (39–43 ft).",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Scientists are not sure if it had a trunk.",
-      "quote": "It has been proposed that sauropods, including Brachiosaurus, may have had proboscises (trunks) based on the position of the bony narial orifice, to increase their upward reach.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Scientists are not sure if it had ornamental nasal crests.",
-      "quote": "He also noted that in modern reptiles, the presence of bulbous, enlarged, and uplifted nasal bones can be correlated with fleshy horns and knobby protuberances, and that Brachiosaurus and other sauropods with large noses could have had ornamental nasal crests.",
+      "claim": "The mass of the holotype specimen has been estimated within the range of 28.3–46.9 metric tons.",
+      "quote": "Over the years, the mass of the holotype specimen has been estimated within the range of 28.3–46.9 metric tons (31.2–51.7 short tons).",
       "source": "wikipedia_en"
     }
   ],
   "dropped": {
     "quote_not_in_the_page": [
       {
-        "claim": "It was about 22 meters long.",
-        "quote": "Length: 22.0m",
+        "claim": "Brachiosaurus was about 22 metres long.",
+        "quote": "Length:\n22.0m",
         "source": "nhm_dino_directory",
         "kind": "features"
       },
       {
-        "claim": "It weighed about 46,900 kilograms.",
-        "quote": "Weight: 46900kg",
+        "claim": "Brachiosaurus weighed about 46,900 kilogrammes.",
+        "quote": "Weight:\n46900kg",
         "source": "nhm_dino_directory",
         "kind": "features"
       }
     ],
     "second_reading": [
       {
-        "claim": "Brachiosaurus was a plant-eating dinosaur.",
-        "quote": "Brachiosaurus was a strictly herbivorous dinosaur.",
-        "source": "wikipedia_simple",
+        "claim": "Its front legs were longer than its back legs, giving it an upward-tilted body posture.",
+        "quote": "This gave the dinosaur a distinctive upward-tilted body posture, which – along with its long neck – made Brachiosaurus very well adapted for feeding on tall trees.",
+        "source": "nhm_dino_directory",
         "kind": "features",
-        "why": "a picture could not show it"
+        "why": "the sentence does not support it"
       },
       {
-        "claim": "Old pictures showed it as cold-blooded, but newer research suggests it was warm-blooded.",
-        "quote": "It has been used as an example of a dinosaur that was most likely ectothermic because of its large size and the corresponding need for sufficient forage, but more recent research suggests it was warm-blooded.",
+        "claim": "Old pictures showed Brachiosaurus living partly submerged in water, but it was a fully terrestrial animal.",
+        "quote": "It was believed throughout the nineteenth and early twentieth centuries that sauropods like Brachiosaurus were too massive to support their own weight on dry land, and instead lived partly submerged in water.",
         "source": "wikipedia_en",
         "kind": "not_this",
-        "why": "a picture could not show it"
+        "why": "the sentence does not support it"
+      },
+      {
+        "claim": "It is not entirely clear what the evolutionary benefit of the air sacs invading the bones was.",
+        "quote": "It is not entirely clear what the evolutionary benefit of this phenomenon was but in any case it considerably lightened the skeleton.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "the sentence does not support it"
       }
     ]
   },
@@ -158,19 +160,25 @@
   "group": "land_grazer",
   "must_show": [
     {
-      "claim": "Its front legs were longer than its back legs.",
-      "quote": "Brachiosaurus' front legs – its 'arms' – were longer than its back legs.",
-      "source": "nhm_dino_directory"
+      "claim": "Brachiosaurus had a disproportionately long neck.",
+      "quote": "It had a disproportionately long neck, small skull, and large overall size, all of which are typical for sauropods.",
+      "source": "wikipedia_en"
     },
     {
-      "claim": "Its body tilted upward because of its longer front legs.",
-      "quote": "This gave the dinosaur a distinctive upward-tilted body posture, which – along with its long neck – made Brachiosaurus very well adapted for feeding on tall trees.",
-      "source": "nhm_dino_directory"
+      "claim": "Brachiosaurus had longer forelimbs than hindlimbs.",
+      "quote": "Atypically, Brachiosaurus had longer forelimbs than hindlimbs, which resulted in a steeply inclined trunk and a proportionally shorter tail.",
+      "source": "wikipedia_en"
     },
     {
-      "claim": "It had a long neck.",
-      "quote": "Its long neck enabled it to browse foliage at heights that were inaccessible to most other herbivorous dinosaurs.",
-      "source": "wikipedia_simple"
+      "claim": "Its trunk was steeply inclined and its tail was proportionally shorter.",
+      "quote": "Atypically, Brachiosaurus had longer forelimbs than hindlimbs, which resulted in a steeply inclined trunk and a proportionally shorter tail.",
+      "source": "wikipedia_en"
     }
-  ]
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "why": "long neck, longer forelimbs, steep trunk"
+  }
 }

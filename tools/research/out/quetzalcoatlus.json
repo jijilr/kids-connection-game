@@ -2,23 +2,28 @@
   "name": "Quetzalcoatlus",
   "features": [
     {
-      "claim": "It was a giant pterosaur, the largest animal ever to fly.",
-      "quote": "Quetzalcoatlus  is a genus of giant pterosaur, the largest animal ever to fly.",
-      "source": "wikipedia_simple"
-    },
-    {
-      "claim": "It had an unusually long neck.",
+      "claim": "Quetzalcoatlus had a long neck.",
       "quote": "Quetzalcoatlus had an unusually long neck, and when it stood on the ground it was as tall as a giraffe.",
       "source": "wikipedia_simple"
     },
     {
-      "claim": "When it stood on the ground it was as tall as a giraffe.",
+      "claim": "When it stood on the ground, it was as tall as a giraffe.",
       "quote": "Quetzalcoatlus had an unusually long neck, and when it stood on the ground it was as tall as a giraffe.",
       "source": "wikipedia_simple"
     },
     {
       "claim": "It had a long beak with no teeth.",
       "quote": "The feeding habits of Quetzalcoatlus (which had a long beak with no teeth) are unknown.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "It was light in construction.",
+      "quote": "The largest individuals measured a size of 10 to 12 meters wing-span (33-40 feet), but was light in construction (~200 pounds).",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Its wingspan was 10 to 12 meters.",
+      "quote": "The largest individuals measured a size of 10 to 12 meters wing-span (33-40 feet), but was light in construction (~200 pounds).",
       "source": "wikipedia_simple"
     },
     {
@@ -32,7 +37,7 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "It likely walked on four legs.",
+      "claim": "It was likely quadrupedal.",
       "quote": "Based on the limb morphology of Q. lawsoni, related azhdarchids such as Zhejiangopterus, and pterosaurs at large, in addition to azhdarchid tracks from South Korea, Quetzalcoatlus was likely quadrupedal.",
       "source": "wikipedia_en"
     },
@@ -42,28 +47,17 @@
       "source": "wikipedia_en"
     },
     {
+      "claim": "It had a long, slender, toothless beak.",
+      "quote": "Like other azhdarchids, Quetzalcoatlus lawsoni had a long, slender, toothless beak, with a gape of around 52 degrees.",
+      "source": "wikipedia_en"
+    },
+    {
       "claim": "It had a crest at the base of the beak.",
       "quote": "At the base of the beak, formed from the premaxilla, was a crest, referred to by some authors as a sagittal crest.",
       "source": "wikipedia_en"
-    },
-    {
-      "claim": "It had small, narrow feet.",
-      "quote": "This contrasts the morphology seen in Q. lawsoni and other azhdarchids, which had small, narrow feet.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "It had a wingspan of 10 to 12 meters.",
-      "quote": "The largest individuals measured a size of 10 to 12 meters wing-span (33-40 feet), but was light in construction (~200 pounds).",
-      "source": "wikipedia_simple"
     }
   ],
-  "not_this": [
-    {
-      "claim": "It is wrong to picture it as a wading bird with large, broad feet, because it had small, narrow feet.",
-      "quote": "However, wading animals tend to have large, long and broad feet, with a high surface area. This contrasts the morphology seen in Q. lawsoni and other azhdarchids, which had small, narrow feet.",
-      "source": "wikipedia_en"
-    }
-  ],
+  "not_this": [],
   "debated": [
     {
       "claim": "Its exact size is hard to determine.",
@@ -71,7 +65,7 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its weight is uncertain, and the question cannot be settled at present.",
+      "claim": "Its weight cannot be settled at present.",
       "quote": "Since we have only a few bones, the question of weight cannot be settled at present.",
       "source": "wikipedia_simple"
     }
@@ -87,23 +81,30 @@
         "why": "a picture could not show it"
       },
       {
-        "claim": "It is wrong to picture it as a fish-eating skimmer bird, because its jaw does not show the adaptations for skimming.",
-        "quote": "This view is gaining ground, because the jaw does not show the adaptations for skimming found in modern birds who catch fish this way.",
+        "claim": "Old pictures showing it feeding by skimming the water like a skimmer bird are wrong.",
+        "quote": "Thus, skimming is very unlikely.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Old pictures showing it as a scavenger like a vulture are not supported.",
+        "quote": "However, David Martill dismissed this connection, noting that the association was nothing more than circumstantial evidence.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Old pictures showing it as a fish-eater like pteranodontids are wrong.",
+        "quote": "In 1975, Douglas Lawson rejected the notion that Quetzalcoatlus might have had a fish-eating (piscivorous) lifestyle like pteranodontids.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Old pictures showing it as too heavy to fly are probably wrong.",
+        "quote": "However, a recent discussion of this idea concluded they probably could fly after all.",
         "source": "wikipedia_simple",
-        "kind": "not_this",
-        "why": "a picture could not show it"
-      },
-      {
-        "claim": "It is wrong to picture it as a scavenger like a vulture, because its beak was weak and unhooked and could not tear flesh.",
-        "quote": "Since Q. lawsoni's beak was relatively weak and unhooked, being compared by Wann Langston Jr. to chopsticks, it is unlikely that it could have torn flesh from a carcass.",
-        "source": "wikipedia_en",
-        "kind": "not_this",
-        "why": "a picture could not show it"
-      },
-      {
-        "claim": "It is wrong to picture it as a skimmer, because azhdarchids lack the adaptations needed for skimming.",
-        "quote": "He did not, however, indicate any morphological indicators for this behavior, and indeed, azhdarchids lack many of the adaptations necessary for such a feeding method (such as robust, aerodynamic beaks with shock-absorbing structures, and the neck flexibility necessary for skimming).",
-        "source": "wikipedia_en",
         "kind": "not_this",
         "why": "a picture could not show it"
       },
@@ -153,7 +154,7 @@
   "group": "flyer",
   "must_show": [
     {
-      "claim": "It had an unusually long neck.",
+      "claim": "Quetzalcoatlus had a long neck.",
       "quote": "Quetzalcoatlus had an unusually long neck, and when it stood on the ground it was as tall as a giraffe.",
       "source": "wikipedia_simple"
     },
@@ -167,5 +168,11 @@
       "quote": "At the base of the beak, formed from the premaxilla, was a crest, referred to by some authors as a sagittal crest.",
       "source": "wikipedia_en"
     }
-  ]
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "why": "long neck, long toothless beak, crest at beak base"
+  }
 }

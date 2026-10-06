@@ -2,18 +2,13 @@
   "name": "Rhamphorhynchus",
   "features": [
     {
-      "claim": "It had a long tail.",
-      "quote": "Rhamphorhynchus (, from Ancient Greek rhamphos meaning \"beak\" and rhynchus meaning \"snout\") is a genus of long-tailed pterosaurs in the Jurassic period.",
-      "source": "wikipedia_en"
+      "claim": "Rhamphorhynchus had a long tail.",
+      "quote": "Rhamphorhynchus had a long tail, stiffened with ligaments, which ended in a small diamond-shaped rudder that helped provide stability while flying.",
+      "source": "wikipedia_simple"
     },
     {
-      "claim": "Its long tail was stiffened with ligaments.",
-      "quote": "Less specialized than contemporary, short-tailed pterodactyloid pterosaurs such as Pterodactylus, it had a long tail, stiffened with ligaments, which ended in a characteristic soft-tissue tail vane.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Its tail ended in a soft-tissue vane.",
-      "quote": "Less specialized than contemporary, short-tailed pterodactyloid pterosaurs such as Pterodactylus, it had a long tail, stiffened with ligaments, which ended in a characteristic soft-tissue tail vane.",
+      "claim": "The tail was stiffened with ligaments and ended in a soft-tissue tail vane.",
+      "quote": "it had a long tail, stiffened with ligaments, which ended in a characteristic soft-tissue tail vane.",
       "source": "wikipedia_en"
     },
     {
@@ -22,22 +17,17 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "The tip of its jaws was curved, sharp and beak-like, with no teeth.",
-      "quote": "The mouth of Rhamphorhynchus housed needle-like teeth, which were angled forward, with a curved, sharp, beak-like tip lacking teeth, indicating a diet mainly of fish; indeed, fish and cephalopod remains are frequently found in Rhamphorhynchus abdominal contents, as well as in their coprolites.",
-      "source": "wikipedia_en"
+      "claim": "The jaws had needle-like teeth angled forward and a curved, sharp, beak-like tip without teeth.",
+      "quote": "The jaws of Rhamphorhynchus housed needle-like teeth, which were angled forward, with a curved, sharp, beak-like tip lacking teeth.",
+      "source": "wikipedia_simple"
     },
     {
-      "claim": "It had no bony or soft tissue crest on its head.",
-      "quote": "Contrary to a 1927 report by pterosaur researcher Ferdinand Broili, Rhamphorhynchus lacked any bony or soft tissue crest, as seen in several species of contemporary small pterodactyloid pterosaurs.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Its teeth intermesh when the jaw is closed.",
+      "claim": "The teeth intermesh when the jaw is closed.",
       "quote": "The teeth of Rhamphorhynchus intermesh when the jaw is closed and are suggestive of a piscivorous diet.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had twenty teeth in the upper jaws and fourteen in the lower jaws.",
+      "claim": "There are twenty teeth in the upper jaws and fourteen in the lower jaws.",
       "quote": "There are twenty teeth in the upper jaws and fourteen in the lower jaws.",
       "source": "wikipedia_en"
     },
@@ -47,36 +37,50 @@
       "source": "wikipedia_en"
     },
     {
+      "claim": "The smallest known specimen had a wingspan of only 290 millimeters.",
+      "quote": "The smallest known Rhamphorhynchus specimen has a wingspan of only 290 millimeters (11.4 in); however, it is likely that even such a small individual was capable of flight.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Juveniles had relatively short skulls with large eyes.",
+      "quote": "Juvenile Rhamphorhynchus had relatively short skulls with large eyes, and the toothless beak-like tips of the jaws were shorter in juveniles than adults, with rounded, blunt lower jaw tips eventually becoming slender and pointed as the animals grew.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Adults developed a strong upward hook at the end of the lower jaw.",
+      "quote": "Adult Rhamphorhynchus also developed a strong upward \"hook\" at the end of the lower jaw.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The tail vane changed shape with age, from oval to diamond-shaped to triangular.",
+      "quote": "In juveniles, the vane was shallow relative to the tail and roughly oval, or \"lancet-shaped\". As growth progressed, the tail vane became diamond-shaped, and finally triangular in the largest individuals.",
+      "source": "wikipedia_en"
+    },
+    {
       "claim": "Its body was covered with hairs.",
       "quote": "Like other pterosaurs, its body was covered with hairs, which suggests it had temperature regulation ('hot-blooded') and a high rate of metabolism.",
       "source": "wikipedia_simple"
-    },
-    {
-      "claim": "Its feet were broad and large.",
-      "quote": "Its feet are broad and large, being useful for propulsion, and the predicted floating position is adequate by pterosaur standards.",
-      "source": "wikipedia_en"
     }
   ],
   "not_this": [
     {
-      "claim": "Old pictures sometimes show a crest on its head, but it had no crest.",
+      "claim": "Rhamphorhynchus did not have a crest.",
       "quote": "Contrary to a 1927 report by pterosaur researcher Ferdinand Broili, Rhamphorhynchus lacked any bony or soft tissue crest, as seen in several species of contemporary small pterodactyloid pterosaurs.",
       "source": "wikipedia_en"
     }
   ],
-  "debated": [],
+  "debated": [
+    {
+      "claim": "Whether Rhamphorhynchus had a crest was disputed.",
+      "quote": "However, subsequent examination of this specimen by Wellnhofer in 1975 and Bennett in 2002 using both visible and ultraviolet light found no trace of a crest; both concluded that Broili was mistaken.",
+      "source": "wikipedia_en"
+    }
+  ],
   "dropped": {
     "quote_not_in_the_page": [],
     "second_reading": [
       {
-        "claim": "It had a short torso and short legs.",
-        "quote": "Like several pteranodontians it has hatchet-shaped deltopectoral crests, a short torso and short legs, all features associated with water based launching in pterosaurs.",
-        "source": "wikipedia_en",
-        "kind": "features",
-        "why": "the sentence does not support it"
-      },
-      {
-        "claim": "Whether the two groups of adult specimens were different sexes is not settled.",
+        "claim": "Whether Rhamphorhynchus showed sexual dimorphism is inconclusive.",
         "quote": "However, without any known variation in the actual form of the bones or soft tissue (morphological differences), he found the case for sexual dimorphism inconclusive.",
         "source": "wikipedia_en",
         "kind": "debated",
@@ -121,19 +125,25 @@
   "group": "flyer",
   "must_show": [
     {
-      "claim": "It had a long tail.",
-      "quote": "Rhamphorhynchus (, from Ancient Greek rhamphos meaning \"beak\" and rhynchus meaning \"snout\") is a genus of long-tailed pterosaurs in the Jurassic period.",
+      "claim": "Rhamphorhynchus had a long tail.",
+      "quote": "Rhamphorhynchus had a long tail, stiffened with ligaments, which ended in a small diamond-shaped rudder that helped provide stability while flying.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "The tail was stiffened with ligaments and ended in a soft-tissue tail vane.",
+      "quote": "it had a long tail, stiffened with ligaments, which ended in a characteristic soft-tissue tail vane.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its tail ended in a soft-tissue vane.",
-      "quote": "Less specialized than contemporary, short-tailed pterodactyloid pterosaurs such as Pterodactylus, it had a long tail, stiffened with ligaments, which ended in a characteristic soft-tissue tail vane.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "The tip of its jaws was curved, sharp and beak-like, with no teeth.",
-      "quote": "The mouth of Rhamphorhynchus housed needle-like teeth, which were angled forward, with a curved, sharp, beak-like tip lacking teeth, indicating a diet mainly of fish; indeed, fish and cephalopod remains are frequently found in Rhamphorhynchus abdominal contents, as well as in their coprolites.",
-      "source": "wikipedia_en"
+      "claim": "The jaws had needle-like teeth angled forward and a curved, sharp, beak-like tip without teeth.",
+      "quote": "The jaws of Rhamphorhynchus housed needle-like teeth, which were angled forward, with a curved, sharp, beak-like tip lacking teeth.",
+      "source": "wikipedia_simple"
     }
-  ]
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "why": "long stiff tail with vane, beak-tipped toothy jaws"
+  }
 }

@@ -2,55 +2,55 @@
   "name": "Diplodocus",
   "features": [
     {
-      "claim": "Diplodocus was a very large, long-necked animal that walked on four legs.",
+      "claim": "Diplodocus was a very large, long-necked, four-legged animal with a long, whip-like tail.",
       "quote": "Among the best-known sauropods, Diplodocus were very large, long-necked, quadrupedal animals, with long, whip-like tails.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its front legs were a little shorter than its back legs, so its body was mostly horizontal.",
+      "claim": "Its front limbs were a little shorter than its back limbs, so its body was mostly horizontal.",
       "quote": "Their forelimbs were slightly shorter than their hind limbs, resulting in a largely horizontal posture.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had a long tail that made up about 55% of its total body length.",
-      "quote": "The estimated tail length of Diplodocus makes up approximately 55% of the total body length, with the tail sometimes hypothesized to be capable of functioning like a very long, tapering bullwhip.",
-      "source": "wikipedia_en"
+      "claim": "Its head was short.",
+      "quote": "It had a short 6 ft long head.",
+      "source": "wikipedia_simple"
     },
     {
-      "claim": "It had small peg-like teeth that pointed forward and were only at the front of the jaws.",
+      "claim": "Its teeth were small and peg-like, pointed forward, and only at the front of the jaws.",
       "quote": "Diplodocus had small, 'peg'-like teeth that pointed forward and were only present in the anterior sections of the jaws.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its front feet had finger and hand bones arranged in a vertical column shaped like a horseshoe in cross section.",
-      "quote": "Like other sauropods, the manus (front \"feet\") of Diplodocus were highly modified, with the finger and hand bones arranged into a vertical column, horseshoe-shaped in cross section.",
+      "claim": "Its teeth were in rows like a comb.",
+      "quote": "Teeth:\nin rows like a comb",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Its tail was about 55% of its total body length.",
+      "quote": "The estimated tail length of Diplodocus makes up approximately 55% of the total body length, with the tail sometimes hypothesized to be capable of functioning like a very long, tapering bullwhip.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had claws on only one digit of the front limb, and that claw was unusually large and flattened from side to side.",
+      "claim": "It had no claws on all but one digit of the front limb, and that claw was unusually large, flattened from side to side, and detached from the bones of the hand.",
       "quote": "Diplodocus lacked claws on all but one digit of the front limb, and this claw was unusually large relative to other sauropods, flattened from side to side, and detached from the bones of the hand.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Some species had narrow, pointed, keratinous spines like an iguana's, up to 18 centimeters long, on the whiplash part of the tail and possibly along the back and neck.",
-      "quote": "The discovery of partial diplodocid skin impressions in 1990 showed that some species had narrow, pointed, keratinous spines, much like those on an iguana. The spines could be up to 18 centimeters (7.1 in) long, on the \"whiplash\" portion of their tails, and possibly along the back and neck as well, similarly to hadrosaurids.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Its skin had several different types of scales, including rectangular, polygonal, pebble, ovoid, dome, and globular shapes.",
-      "quote": "Fossilized skin of Diplodocus sp., discovered at the Mother's Day Quarry, exhibits several different types of scale shapes including rectangular, polygonal, pebble, ovoid, dome, and globular.",
+      "claim": "Some species had narrow, pointed, keratinous spines, much like those on an iguana, up to 18 centimeters long on the whiplash part of their tails.",
+      "quote": "The discovery of partial diplodocid skin impressions in 1990 showed that some species had narrow, pointed, keratinous spines, much like those on an iguana.",
       "source": "wikipedia_en"
     }
   ],
   "not_this": [
     {
-      "claim": "Old pictures showed Diplodocus with its legs sprawled out like a lizard, but this was wrong.",
-      "quote": "Hay argued that Diplodocus had a sprawling, lizard-like gait with widely splayed legs, and was supported by Gustav Tornier. This hypothesis was contested by William Jacob Holland, who demonstrated that a sprawling Diplodocus would have needed a trench through which to pull its belly. Finds of sauropod footprints in the 1930s eventually put Hay's theory to rest.",
+      "claim": "Older pictures showed Diplodocus with its legs sprawled out like a lizard, but this was shown to be wrong.",
+      "quote": "This hypothesis was contested by William Jacob Holland, who demonstrated that a sprawling Diplodocus would have needed a trench through which to pull its belly.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Older pictures often showed Diplodocus with its neck held high up in the air, but studies say its neck was closer to horizontal.",
-      "quote": "Later, diplodocids were often portrayed with their necks held high up in the air, allowing them to graze from tall trees. Studies looking at the morphology of sauropod necks have concluded that the neutral posture of Diplodocus neck was close to horizontal, rather than vertical, and scientists such as Kent Stevens have used this to argue that sauropods including Diplodocus did not raise their heads much above shoulder level.",
+      "claim": "Older pictures showed Diplodocus with its neck held high up in the air, but studies concluded its neutral neck posture was close to horizontal.",
+      "quote": "Studies looking at the morphology of sauropod necks have concluded that the neutral posture of Diplodocus neck was close to horizontal, rather than vertical, and scientists such as Kent Stevens have used this to argue that sauropods including Diplodocus did not raise their heads much above shoulder level.",
       "source": "wikipedia_en"
     }
   ],
@@ -70,20 +70,6 @@
     "quote_not_in_the_page": [],
     "second_reading": [
       {
-        "claim": "Its tail was made of about 80 tail bones.",
-        "quote": "This extremely long tail is composed of about 80 caudal vertebrae, which are almost double the number some of the earlier sauropods had in their tails (such as Shunosaurus with 43), and far more than contemporaneous macronarians had (such as Camarasaurus with 53).",
-        "source": "wikipedia_en",
-        "kind": "features",
-        "why": "a picture could not show it"
-      },
-      {
-        "claim": "The middle part of its tail had oddly shaped chevron bones called double beams.",
-        "quote": "The middle part of the tail had \"double beams\" (oddly shaped chevron bones on the underside, which gave Diplodocus its name).",
-        "source": "wikipedia_en",
-        "kind": "features",
-        "why": "a picture could not show it"
-      },
-      {
         "claim": "Its neck was made of at least 15 vertebrae.",
         "quote": "Its braincase was small, and the neck was composed of at least 15 vertebrae.",
         "source": "wikipedia_en",
@@ -91,14 +77,28 @@
         "why": "a picture could not show it"
       },
       {
-        "claim": "It had a long neck that it would have used to reach high and low vegetation, and to drink water.",
-        "quote": "Diplodocus had a long neck that it would have used to reach high and low vegetation, and to drink water.",
-        "source": "nhm_dino_directory",
+        "claim": "Its tail was made of about 80 caudal vertebrae.",
+        "quote": "This extremely long tail is composed of about 80 caudal vertebrae, which are almost double the number some of the earlier sauropods had in their tails (such as Shunosaurus with 43), and far more than contemporaneous macronarians had (such as Camarasaurus with 53).",
+        "source": "wikipedia_en",
         "kind": "features",
         "why": "a picture could not show it"
       },
       {
-        "claim": "The documentary Walking with Dinosaurs showed a mother Diplodocus using an ovipositor to lay eggs, but that was pure speculation.",
+        "claim": "The middle of its tail had double beams, which are oddly shaped chevron bones on the underside.",
+        "quote": "The middle part of the tail had \"double beams\" (oddly shaped chevron bones on the underside, which gave Diplodocus its name).",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Its front feet had finger and hand bones arranged into a vertical column, horseshoe-shaped in cross section.",
+        "quote": "Like other sauropods, the manus (front \"feet\") of Diplodocus were highly modified, with the finger and hand bones arranged into a vertical column, horseshoe-shaped in cross section.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "A documentary showed a mother Diplodocus using an ovipositor to lay eggs, but that was pure speculation.",
         "quote": "The documentary Walking with Dinosaurs portrayed a mother Diplodocus using an ovipositor to lay eggs, but it was pure speculation on the part of the documentary author.",
         "source": "wikipedia_en",
         "kind": "not_this",
@@ -112,7 +112,7 @@
         "why": "a picture could not show it"
       },
       {
-        "claim": "The function of the unusually specialized claw on its front limb is unknown.",
+        "claim": "The function of the unusually specialized claw on the front limb is unknown.",
         "quote": "The function of this unusually specialized claw is unknown.",
         "source": "wikipedia_en",
         "kind": "debated",
@@ -160,19 +160,25 @@
   "group": "land_grazer",
   "must_show": [
     {
-      "claim": "It had a long tail that made up about 55% of its total body length.",
+      "claim": "Diplodocus was a very large, long-necked, four-legged animal with a long, whip-like tail.",
+      "quote": "Among the best-known sauropods, Diplodocus were very large, long-necked, quadrupedal animals, with long, whip-like tails.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its front limbs were a little shorter than its back limbs, so its body was mostly horizontal.",
+      "quote": "Their forelimbs were slightly shorter than their hind limbs, resulting in a largely horizontal posture.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its tail was about 55% of its total body length.",
       "quote": "The estimated tail length of Diplodocus makes up approximately 55% of the total body length, with the tail sometimes hypothesized to be capable of functioning like a very long, tapering bullwhip.",
       "source": "wikipedia_en"
-    },
-    {
-      "claim": "It had claws on only one digit of the front limb, and that claw was unusually large and flattened from side to side.",
-      "quote": "Diplodocus lacked claws on all but one digit of the front limb, and this claw was unusually large relative to other sauropods, flattened from side to side, and detached from the bones of the hand.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Some species had narrow, pointed, keratinous spines like an iguana's, up to 18 centimeters long, on the whiplash part of the tail and possibly along the back and neck.",
-      "quote": "The discovery of partial diplodocid skin impressions in 1990 showed that some species had narrow, pointed, keratinous spines, much like those on an iguana. The spines could be up to 18 centimeters (7.1 in) long, on the \"whiplash\" portion of their tails, and possibly along the back and neck as well, similarly to hadrosaurids.",
-      "source": "wikipedia_en"
     }
-  ]
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "why": "whip tail, horizontal body, very long tail"
+  }
 }

@@ -2,24 +2,19 @@
   "name": "Velociraptor",
   "features": [
     {
-      "claim": "It was a small to medium-sized dinosaur.",
-      "quote": "Velociraptor was a small to medium-sized dromaeosaurid",
+      "claim": "Velociraptor was a small to medium-sized dromaeosaurid.",
+      "quote": "Velociraptor was a small to medium-sized dromaeosaurid, with adults measuring between 1.5–2.07 m (4.9–6.8 ft) long, approximately 0.5 m (1.6 ft) high at the hips, and weighing about 14.1–19.7 kg (31–43 lb).",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It was slender and lightly built.",
+      "claim": "It was a slender, lightly built meat-eater.",
       "quote": "It was a slender, lightly built carnivore.",
       "source": "wikipedia_simple"
     },
     {
       "claim": "It walked on two legs.",
-      "quote": "It was a bipedal, feathered carnivore with a long tail and an enlarged sickle-shaped claw on each hindfoot",
+      "quote": "It was a bipedal, feathered carnivore with a long tail and an enlarged sickle-shaped claw on each hindfoot, which is thought to have been used to tackle and restrain prey.",
       "source": "wikipedia_en"
-    },
-    {
-      "claim": "It had feathers.",
-      "quote": "Velociraptor is now thought to have had a fine feather-like covering.",
-      "source": "nhm_dino_directory"
     },
     {
       "claim": "It had a long, low skull with an upturned snout.",
@@ -27,92 +22,97 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its snout was narrow.",
+      "claim": "Its skull was elongated and grew up to 23 cm long.",
+      "quote": "The skull of Velociraptor was rather elongated and grew up to 23 cm (9.1 in) long.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its snout was narrow and took up about 60% of the skull length.",
       "quote": "The snout, which occupied about 60% of the entire skull length, was notably narrow and mainly formed by the nasal, premaxilla, and maxilla bones.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had lots of sharp, pointed teeth.",
-      "quote": "Teeth:\nlots of sharp, pointed teeth",
-      "source": "nhm_dino_directory"
+      "claim": "Its teeth were fairly equal in shape and had serrations, more strongly serrated on the back edge than the front.",
+      "quote": "The teeth of Velociraptor were fairly homodont (equal in shape) and had several denticles (serrations), each more strongly serrated on the back edge than the front.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a large hand with three long fingers ending in strongly curved claws.",
+      "quote": "Velociraptor, like other dromaeosaurids, had a large manus with three elongated digits (fingers), which ended up in strongly curved unguals (claw bones) that were similar in construction and flexibility to the wing bones of modern birds.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a sickle-shaped claw on its foot that could grow to over 6.5 cm long.",
+      "quote": "This enlarged claw, which could grow to over 6.5 cm (2.6 in) long around its outer edge, was most likely a predatory device used to restrain struggling prey.",
+      "source": "wikipedia_en"
     },
     {
       "claim": "It had a long tail.",
-      "quote": "It was a bipedal, feathered carnivore with a long tail and an enlarged sickle-shaped claw on each hindfoot",
+      "quote": "It was a bipedal, feathered carnivore with a long tail and an enlarged sickle-shaped claw on each hindfoot, which is thought to have been used to tackle and restrain prey.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had a big sickle-shaped claw on each foot.",
-      "quote": "Velociraptor had one sickle-shaped claw on its foot which measured 6.5 centimeters along its length, and a smaller one on each hand.",
-      "source": "wikipedia_simple"
-    },
-    {
-      "claim": "It had three long fingers on each hand.",
-      "quote": "Velociraptor, like other dromaeosaurids, had a large manus with three elongated digits (fingers), which ended up in strongly curved unguals (claw bones)",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "It was about two meters long.",
-      "quote": "It was about two meters long (nearly seven feet) and 0.62 meters tall at the hip.",
+      "claim": "It had feathers.",
+      "quote": "Velociraptor was warm blooded and had feathers.",
       "source": "wikipedia_simple"
     }
   ],
   "not_this": [
     {
-      "claim": "Old pictures show it much bigger than it really was.",
+      "claim": "Films and toys show it much bigger than it really was.",
       "quote": "As portrayed in the Jurassic Park movies, Velociraptor was recreated at twice its actual size and closely modelled on Deinonychus.",
       "source": "nhm_dino_directory"
     },
     {
-      "claim": "Old pictures show it without feathers, but it really had feathers.",
+      "claim": "Films and toys show it without feathers, but it really had them.",
       "quote": "Jurassic Park and its sequel The Lost World: Jurassic Park were released before the discovery that dromaeosaurs had feathers, so the Velociraptor in both films were depicted as scaled and featherless.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Old pictures show it with the size and snout of Deinonychus, not its own.",
+      "claim": "Films and toys show it with the size, proportions and snout of Deinonychus, not of Velociraptor.",
       "quote": "They portrayed the animals with the size, proportions, and snout shape of Deinonychus rather than Velociraptor.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Old pictures show it much bigger than the real animal.",
-      "quote": "In reality, Velociraptor was roughly the size of a turkey, considerably smaller than the approximately 2 m (6.6 ft) long and 90 kg (200 lb) reptiles seen in the novels and films",
       "source": "wikipedia_en"
     }
   ],
   "debated": [
     {
-      "claim": "Some think it may have been bigger than the usual estimate.",
+      "claim": "Some think Velociraptor may have been larger than the usual estimate.",
       "quote": "Some estimates suggest that Velociraptor may have been larger, possibly reaching lengths of about 2.5 m (8 ft) and weighing up to 28 kg (60 lb).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The tail may have been more flexible sideways than once thought.",
+      "quote": "However, at least one specimen has preserved a series of intact tail vertebrae curved sideways into an S-shape, suggesting that there was considerably more horizontal flexibility than once thought.",
       "source": "wikipedia_en"
     }
   ],
   "dropped": {
-    "quote_not_in_the_page": [
-      {
-        "claim": "It ate other animals.",
-        "quote": "Food:\nother animals",
-        "source": "nhm_dino_directory",
-        "kind": "features"
-      }
-    ],
+    "quote_not_in_the_page": [],
     "second_reading": [
       {
-        "claim": "The feather bumps found on one arm bone may not really belong to Velociraptor.",
-        "quote": "However, the specimen number has been corrected to IGM 100/3503 and its referral to Velociraptor may require reevaluation, pending further study.",
+        "claim": "It was warm-blooded to some degree.",
+        "quote": "Velociraptor was warm-blooded to some degree, as it required a significant amount of energy to hunt.",
         "source": "wikipedia_en",
-        "kind": "debated",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The idea that its feathers mean its ancestors could fly has been dropped.",
+        "quote": "This idea has since been discarded; the unmodified forearms count against it.",
+        "source": "wikipedia_simple",
+        "kind": "not_this",
         "why": "the sentence does not support it"
       },
       {
-        "claim": "One specimen might be a third kind of Velociraptor, but this is not settled.",
-        "quote": "Mark J. Powers in his 2020 master thesis fully described MPC-D 100/982, which he concluded to represent a new and third species of Velociraptor.",
+        "claim": "The feather specimen may not really belong to Velociraptor.",
+        "quote": "However, the specimen number has been corrected to IGM 100/3503 and its referral to Velociraptor may require reevaluation, pending further study.",
         "source": "wikipedia_en",
         "kind": "debated",
         "why": "a picture could not show it"
       },
       {
-        "claim": "The second named species might not belong to Velociraptor at all.",
-        "quote": "However, the 2013 study noted that while \"the elongate shape of the maxilla in V. osmolskae is similar to that of V. mongoliensis,\" phylogenetic analysis found it to be closer to Linheraptor, making the genus paraphyletic; thus, V. osmolskae might not actually belong to the genus Velociraptor and requires reassessment.",
+        "claim": "It may not have had a fully developed nasal thermoregulation apparatus like modern warm-blooded animals.",
+        "quote": "Tada with team suggested that Velociraptor and most other non-avian dinosaurs may not have possessed a fully or well-developed nasal thermoregulation apparatus as modern endothermic animals do.",
         "source": "wikipedia_en",
         "kind": "debated",
         "why": "a picture could not show it"
@@ -159,24 +159,30 @@
   "group": "land_hunter",
   "must_show": [
     {
-      "claim": "It had feathers.",
-      "quote": "Velociraptor is now thought to have had a fine feather-like covering.",
-      "source": "nhm_dino_directory"
-    },
-    {
       "claim": "It had a long, low skull with an upturned snout.",
       "quote": "Velociraptor can be distinguished from other dromaeosaurids by its long and low skull, with an upturned snout.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had a big sickle-shaped claw on each foot.",
-      "quote": "Velociraptor had one sickle-shaped claw on its foot which measured 6.5 centimeters along its length, and a smaller one on each hand.",
-      "source": "wikipedia_simple"
+      "claim": "It had a large hand with three long fingers ending in strongly curved claws.",
+      "quote": "Velociraptor, like other dromaeosaurids, had a large manus with three elongated digits (fingers), which ended up in strongly curved unguals (claw bones) that were similar in construction and flexibility to the wing bones of modern birds.",
+      "source": "wikipedia_en"
     },
     {
-      "claim": "It had three long fingers on each hand.",
-      "quote": "Velociraptor, like other dromaeosaurids, had a large manus with three elongated digits (fingers), which ended up in strongly curved unguals (claw bones)",
+      "claim": "It had a sickle-shaped claw on its foot that could grow to over 6.5 cm long.",
+      "quote": "This enlarged claw, which could grow to over 6.5 cm (2.6 in) long around its outer edge, was most likely a predatory device used to restrain struggling prey.",
       "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had feathers.",
+      "quote": "Velociraptor was warm blooded and had feathers.",
+      "source": "wikipedia_simple"
     }
-  ]
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "why": "upturned snout, long-fingered hands, sickle claw, feathers"
+  }
 }

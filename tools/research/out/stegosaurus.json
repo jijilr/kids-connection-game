@@ -2,114 +2,118 @@
   "name": "Stegosaurus",
   "features": [
     {
-      "claim": "It had a double row of kite-shaped plates standing up along its back.",
+      "claim": "Stegosaurus had a rounded back.",
+      "quote": "They were large, heavily built, herbivorous quadrupeds with rounded backs, short fore limbs, long hind limbs, and tails held high in the air.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Stegosaurus had a double row of kite-shaped plates standing upright along its back.",
       "quote": "The quadrupedal Stegosaurus is one of the most easily identifiable dinosaur genera, due to the distinctive double row of kite-shaped plates rising vertically along the rounded back and the two pairs of long spikes extending horizontally near the end of the tail.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had two pairs of long spikes sticking out sideways near the end of its tail.",
+      "claim": "Stegosaurus had two pairs of long spikes near the end of its tail.",
       "quote": "The quadrupedal Stegosaurus is one of the most easily identifiable dinosaur genera, due to the distinctive double row of kite-shaped plates rising vertically along the rounded back and the two pairs of long spikes extending horizontally near the end of the tail.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It walked on four legs.",
-      "quote": "They were large, heavily built, herbivorous quadrupeds with rounded backs, short fore limbs, long hind limbs, and tails held high in the air.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Its front legs were short and its back legs were long.",
-      "quote": "They were large, heavily built, herbivorous quadrupeds with rounded backs, short fore limbs, long hind limbs, and tails held high in the air.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "It held its tail high up in the air.",
-      "quote": "They were large, heavily built, herbivorous quadrupeds with rounded backs, short fore limbs, long hind limbs, and tails held high in the air.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "It had a short neck and a small head.",
+      "claim": "Stegosaurus had a short neck and a small head.",
       "quote": "It had a short neck and a small head, meaning it most likely ate low-lying bushes and shrubs.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its head was held low, probably no higher than one metre above the ground.",
-      "quote": "The tail appears to have been held well clear of the ground, while the head of Stegosaurus was positioned relatively low down, probably no higher than 1 m (3.3 ft) above the ground.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Its skull was long and narrow.",
+      "claim": "Stegosaurus had a long and narrow skull.",
       "quote": "The long and narrow skull was small in proportion to the body.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had no front teeth and probably had a horny beak instead.",
+      "claim": "Stegosaurus had no front teeth and probably had a horny beak.",
       "quote": "This interpretation is supported by the absence of front teeth and their likely replacement by a horny beak or rhamphotheca.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its teeth were small, triangular and flat.",
-      "quote": "Stegosaurian teeth were small, triangular, and flat; wear facets show that they did grind their food.",
+      "claim": "Stegosaurus had short fore limbs and long hind limbs.",
+      "quote": "They were large, heavily built, herbivorous quadrupeds with rounded backs, short fore limbs, long hind limbs, and tails held high in the air.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Each back foot had three short toes and each front foot had five toes.",
+      "claim": "Each hind foot had three short toes and each fore foot had five toes.",
       "quote": "The hind feet each had three short toes, while each fore foot had five toes; only the inner two toes had a blunt hoof.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "The plates were covered in a horny sheath.",
-      "quote": "This indicates that the plates were covered in keratinous sheaths.",
+      "claim": "Stegosaurus held its tail well clear of the ground.",
+      "quote": "The tail appears to have been held well clear of the ground, while the head of Stegosaurus was positioned relatively low down, probably no higher than 1 m (3.3 ft) above the ground.",
       "source": "wikipedia_en"
     }
   ],
   "not_this": [
     {
-      "claim": "Old pictures show the plates lying flat on the back like roof tiles, but the plates actually stood on edge.",
-      "quote": "The plates lie flat along the back, as a shingle-like armor. This was Marsh's initial interpretation, which led to the name 'roof lizard'. As further and complete plates were found, their form showed they stood on edge, rather than lying flat.",
+      "claim": "Old pictures showed the plates lying flat on the back, but they actually stood upright.",
+      "quote": "After finding a specimen that had been covered with mud, which had held the plates in place, Marsh realised that they stood vertically, alternately on either side of the spine.",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Old pictures showed a single row of plates, but the plates were in two staggered rows.",
+      "quote": "Like Marsh's reconstruction, Knight's first restoration had a single row of large plates, though he next used a double row for his more well-known 1901 painting, produced under the direction of Frederic Lucas.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Old pictures show the plates in a single row, but that idea was dropped.",
-      "quote": "By 1891, Marsh published a more familiar view of Stegosaurus, with a single row of plates. This was dropped fairly early on (apparently because it was poorly understood how the plates were embedded in the skin and they were thought to overlap too much in this arrangement).",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Old pictures show the tail spikes pointing up, but the spikes stuck out sideways from the tail.",
+      "claim": "Old pictures showed the tail spikes pointing vertically, but they actually stuck out horizontally.",
       "quote": "Discoveries of articulated stegosaur armor show, at least in some species, these spikes protruded horizontally from the tail, not vertically as is often depicted.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Old pictures showed Stegosaurus as bipedal and long-necked, which was wrong.",
+      "quote": "Jobin restored the Stegosaurus as bipedal and long-necked, with the plates arranged along the tail and the back covered in spikes.",
       "source": "wikipedia_en"
     }
   ],
   "debated": [
     {
-      "claim": "The arrangement of the plates on the back may have been different in different species.",
+      "claim": "The arrangement of the plates on the back may have varied between species.",
       "quote": "In a 2010 review of Stegosaurus species, Peter Galton suggested that the arrangement of the plates on the back may have varied between species, and that the pattern of plates as viewed in profile may have been important for species recognition.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Whether the plates could move has been disputed.",
-      "quote": "However, mobility of the plates has been disputed by other paleontologists.",
+      "claim": "Whether Stegosaurus could rear up on its hind legs is disputed.",
+      "quote": "Although Stegosaurus is undoubtedly now considered to have been quadrupedal, some discussion has occurred over whether it could have reared up on its hind legs, using its tail to form a tripod with its hind limbs, to browse for higher foliage.",
       "source": "wikipedia_en"
     }
   ],
   "dropped": {
-    "quote_not_in_the_page": [],
+    "quote_not_in_the_page": [
+      {
+        "claim": "Stegosaurus was about 9.0m long.",
+        "quote": "Length:\n9.0m",
+        "source": "nhm_dino_directory",
+        "kind": "features"
+      }
+    ],
     "second_reading": [
       {
-        "claim": "Old pictures show the plates in pairs in two rows, but the plates were actually in two rows that alternated.",
-        "quote": "The plates were paired in a double row along the back, such as in Knight's 1901 reconstruction and the 1933 film King Kong.",
-        "source": "wikipedia_en",
-        "kind": "not_this",
-        "why": "the sentence does not support it"
+        "claim": "Stegosaurus had a small head and its brain was around the size of a plum.",
+        "quote": "Compared with the rest of its body, Stegosaurus had a small head and its brain was around the size of a plum!",
+        "source": "nhm_dino_directory",
+        "kind": "features",
+        "why": "a picture could not show it"
       },
       {
-        "claim": "Scientists are not sure what the plates were for.",
+        "claim": "Stegosaurus was a large, slow moving plant-eater.",
+        "quote": "A large, slow moving plant-eater, Stegosaurus would have defended itself from predators like Allosaurus and Ceratosaurus with its powerful spiked tail.",
+        "source": "nhm_dino_directory",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Scientists are not sure what the plates were used for.",
         "quote": "Scientists are not exactly sure what the plates were used for.",
         "source": "nhm_dino_directory",
         "kind": "debated",
         "why": "a picture could not show it"
       },
       {
-        "claim": "Whether the tail spikes were only for display or were used as weapons has been debated.",
+        "claim": "Whether the tail spikes were only for display or used as a weapon is debated.",
         "quote": "There has been debate about whether the tail spikes were only used for display, as posited by Gilmore in 1914, or used as a weapon.",
         "source": "wikipedia_en",
         "kind": "debated",
@@ -157,19 +161,25 @@
   "group": "land_grazer",
   "must_show": [
     {
-      "claim": "It had a double row of kite-shaped plates standing up along its back.",
+      "claim": "Stegosaurus had a double row of kite-shaped plates standing upright along its back.",
       "quote": "The quadrupedal Stegosaurus is one of the most easily identifiable dinosaur genera, due to the distinctive double row of kite-shaped plates rising vertically along the rounded back and the two pairs of long spikes extending horizontally near the end of the tail.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had two pairs of long spikes sticking out sideways near the end of its tail.",
+      "claim": "Stegosaurus had two pairs of long spikes near the end of its tail.",
       "quote": "The quadrupedal Stegosaurus is one of the most easily identifiable dinosaur genera, due to the distinctive double row of kite-shaped plates rising vertically along the rounded back and the two pairs of long spikes extending horizontally near the end of the tail.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It held its tail high up in the air.",
-      "quote": "They were large, heavily built, herbivorous quadrupeds with rounded backs, short fore limbs, long hind limbs, and tails held high in the air.",
+      "claim": "Stegosaurus had a short neck and a small head.",
+      "quote": "It had a short neck and a small head, meaning it most likely ate low-lying bushes and shrubs.",
       "source": "wikipedia_en"
     }
-  ]
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "why": "back plates, tail spikes, short neck"
+  }
 }

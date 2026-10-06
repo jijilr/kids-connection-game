@@ -2,29 +2,24 @@
   "name": "Titanoboa",
   "features": [
     {
-      "claim": "It was a giant snake.",
-      "quote": "Titanoboa (; lit. 'titanic boa') is a genus of extinct giant boid snake (being the biological family of all boas and anacondas) that lived during the middle and late Paleocene epoch.",
+      "claim": "Titanoboa was a giant boid snake.",
+      "quote": "Titanoboa (; lit. 'titanic boa') is a genus of extinct giant boid snake (being the biological family of all boas and anacondas) that lived during the middle and late Paleocene epoch.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It could grow up to about 12.8 metres long, or maybe even up to 14.3 metres.",
+      "claim": "Titanoboa could grow up to about 12.8 metres long, or perhaps even up to 14.3 metres.",
       "quote": "Titanoboa is estimated to grow up to 12.8 m (42 ft) or perhaps even up to 14.3 m (47 ft) long, and weigh around 730 to 1,135 kg (1,610 to 2,500 lb).",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It weighed over a ton.",
-      "quote": "It was about 42 feet long (12.8 m), and weighed over a ton (about 1135 kg or 2,500 pounds).",
-      "source": "wikipedia_simple"
-    },
-    {
-      "claim": "Its skull was about 40 centimetres long.",
+      "claim": "Titanoboa's skull was about 40 cm long.",
       "quote": "The later discovery of skull material allowed for size estimates based on skull-to-body-length proportions: applying anaconda proportions to the 40 cm (16 in) skull of Titanoboa results in a total body length around 14.3 m (47 ft) (± 1.28 m (4 ft 2 in)).",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had many teeth on the roof of its mouth and along its jaws.",
-      "quote": "According to it, Titanoboa has a high amount of palatal and marginal tooth positions compared to other boids.",
-      "source": "wikipedia_en"
+      "claim": "Titanoboa weighed over a ton.",
+      "quote": "It was about 42 feet long (12.8 m), and weighed over a ton (about 1135 kg or 2,500 pounds).",
+      "source": "wikipedia_simple"
     }
   ],
   "not_this": [],
@@ -33,91 +28,84 @@
     "quote_not_in_the_page": [],
     "second_reading": [
       {
-        "claim": "Its backbones were very strong and wide, with a five-sided shape when seen from the front.",
+        "claim": "Titanoboa's vertebrae were very robust and wide, with a pentagonal shape seen from the front.",
         "quote": "Its vertebrae are very robust and wide, with a pentagonal shape in anterior view, as in other members of Boinae; the genus is considered to be most closely related to other extant boines from the Indo-Pacific region, such as those from Madagascar.",
         "source": "wikipedia_en",
         "kind": "features",
         "why": "a picture could not show it"
       },
       {
-        "claim": "Its backbones had a special T-shaped spine on top.",
+        "claim": "Titanoboa's vertebrae had a uniquely T-shaped neural spine.",
         "quote": "However, Titanoboa's vertebrae are distinct due to being very robust and with a uniquely T-shaped neural spine, which also has an expanded posterior margin and a thin, blade-like anterior process.",
         "source": "wikipedia_en",
         "kind": "features",
         "why": "a picture could not show it"
       },
       {
-        "claim": "Its teeth were only weakly attached to the jawbone.",
+        "claim": "Titanoboa had a high number of tooth positions on the palate and jaws compared to other boids.",
+        "quote": "According to it, Titanoboa has a high amount of palatal and marginal tooth positions compared to other boids.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Titanoboa's teeth were only weakly attached to the jawbone.",
         "quote": "The teeth themselves are weakly ankylosed; they are not strongly connected to the jawbone.",
         "source": "wikipedia_en",
         "kind": "features",
         "why": "a picture could not show it"
       },
       {
-        "claim": "It probably lived partly in water.",
+        "claim": "Titanoboa is thought to have been a semi-aquatic apex predator.",
         "quote": "Titanoboa is thought to have been a semi-aquatic apex predator, with a diet consisting primarily of fish.",
         "source": "wikipedia_en",
         "kind": "features",
         "why": "a picture could not show it"
       },
       {
-        "claim": "It ate mostly fish.",
+        "claim": "Titanoboa's skull shows adaptations for eating fish.",
         "quote": "In the 2013 abstract, Head and colleagues noted that the skull of this snake displays multiple adaptations to a piscivorous diet, including the anatomy of the palate, the tooth count, and the anatomy of the teeth themselves.",
         "source": "wikipedia_en",
         "kind": "features",
         "why": "a picture could not show it"
       },
       {
-        "claim": "It may also have eaten turtles and crocodile-like animals.",
-        "quote": "Though, given its large size, its still possible for it to prey on other animals, such as turtles and the aforementioned crocodyliforms.",
-        "source": "wikipedia_en",
-        "kind": "features",
-        "why": "a picture could not show it"
-      },
-      {
-        "claim": "It lived in a tropical rainforest.",
-        "quote": "Titanoboa lived in the first recorded tropical forest in South America.",
+        "claim": "Titanoboa was a relative of the anaconda and the boa constrictor.",
+        "quote": "Now extinct, the snake was a relative of the anaconda and the boa constrictor.",
         "source": "wikipedia_simple",
         "kind": "features",
         "why": "a picture could not show it"
       },
       {
-        "claim": "It is wrong to say Titanoboa is still the largest snake ever found.",
-        "quote": "It was named and described in 2009 as Titanoboa cerrejonensis, and lauded as the largest snake ever found at that time.",
-        "source": "wikipedia_en",
+        "claim": "Titanoboa is not the largest snake ever found; that record was later surpassed.",
+        "quote": "It was the largest known snake until 2005 when Vasuki indicus was found.",
+        "source": "wikipedia_simple",
         "kind": "not_this",
-        "why": "a picture could not show it"
+        "why": "the sentence does not support it"
       },
       {
-        "claim": "It is wrong to say Titanoboa is the longest snake in the world.",
+        "claim": "Titanoboa is not the longest snake in the world; Vasuki indicus was described as longer.",
         "quote": "Vasuki indicus, a madtsoiid described in 2024, was subsequently described as the longest snake in the world, even surpassing Titanoboa; although the vertebral dimensions of Vasuki are smaller than those of Titanoboa, the largest length estimates of 12.8 m (42 ft) ± 2.2 m (7 ft 3 in) may indicate a longer body for Vasuki.",
         "source": "wikipedia_en",
         "kind": "not_this",
         "why": "a picture could not show it"
       },
       {
-        "claim": "It is wrong to say Titanoboa is the largest known snake.",
-        "quote": "It was the second largest known snake.",
-        "source": "wikipedia_simple",
-        "kind": "not_this",
-        "why": "a picture could not show it"
-      },
-      {
-        "claim": "The skulls found are not yet described.",
+        "claim": "The skulls of Titanoboa have not been described.",
         "quote": "Though the skulls are undescribed, an article about them by the BBC in 2012 and an abstract in the annals of the Society of Vertebrate Paleontology have been published.",
         "source": "wikipedia_en",
         "kind": "debated",
         "why": "a picture could not show it"
       },
       {
-        "claim": "The specimens are incomplete or not described.",
+        "claim": "Titanoboa specimens are incomplete or undescribed.",
         "quote": "Titanoboa specimens are either incomplete or undescribed, consisting primarily of thoracic vertebrae that were located before (anterior of) the cloaca, which possess the same characteristics as other boids and especially Boa, such as a short, posteriorly pointing prezygapophyseal process.",
         "source": "wikipedia_en",
         "kind": "debated",
         "why": "a picture could not show it"
       },
       {
-        "claim": "The skull is only briefly described.",
+        "claim": "The skull material is only briefly described in a 2013 abstract.",
         "quote": "The skull material is only briefly described in a 2013 abstract.",
         "source": "wikipedia_en",
         "kind": "debated",
@@ -153,16 +141,18 @@
     "rule": "every item carries a sentence found word for word in the saved page"
   },
   "group": "giant_snake",
+  "for_the_owner": "the saved pages say little about how it looked: only 4 checked features",
   "must_show": [
     {
-      "claim": "It was a giant snake.",
-      "quote": "Titanoboa (; lit. 'titanic boa') is a genus of extinct giant boid snake (being the biological family of all boas and anacondas) that lived during the middle and late Paleocene epoch.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "It had many teeth on the roof of its mouth and along its jaws.",
-      "quote": "According to it, Titanoboa has a high amount of palatal and marginal tooth positions compared to other boids.",
+      "claim": "Titanoboa was a giant boid snake.",
+      "quote": "Titanoboa (; lit. 'titanic boa') is a genus of extinct giant boid snake (being the biological family of all boas and anacondas) that lived during the middle and late Paleocene epoch.",
       "source": "wikipedia_en"
     }
-  ]
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "why": "giant boid snake body shape"
+  }
 }

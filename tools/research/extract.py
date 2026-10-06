@@ -11,8 +11,10 @@ Then a second DeepSeek call, which did not write the items, reads each one with 
 sentence only and says whether the sentence supports it and whether a picture could
 show it. Items that fail are dropped.
 
-Last, for each group of look-alikes, DeepSeek picks from each animal's own surviving
-features the few that tell it from the others. Nothing new can enter at that step.
+An animal left with very few features is marked for the owner: the pages say too
+little about how it looked for a script to describe it.
+
+What tells each animal from its look-alikes is chosen afterwards, by tell_apart.py.
 
     python tools/research/extract.py --prehistoric [--cap 0.60] [--again]
     python tools/research/extract.py "Tyrannosaurus rex" Titanoboa
@@ -45,7 +47,9 @@ Return JSON with three lists:
 
 Each item: {{"claim": "one plain sentence", "quote": "exact words from a source", "source": "the source id"}}
 The claim restates its quote in plain words a child's teacher would use. It must say ONLY what the quote says: no reason, number or detail that is not in the quote. Choose a quote long enough to carry the whole claim.
-Prefer the features that make this animal recognisable. Leave a list empty if the sources say nothing for it."""
+Give the features of shape and proportion first: they are what make this animal recognisable.
+A sentence about {name} itself outranks a sentence about its whole family or group, such as one beginning "like all sauropods". Where the two differ, use the sentence about {name}, and do not list the general one.
+Leave a list empty if the sources say nothing for it."""
 
 SECOND_READER = (
     "You check claims against quoted sentences. You judge only from the quote given, never from "
@@ -63,16 +67,6 @@ For each item answer two questions.
 Return JSON: {{"items": [{{"id": "f1", "supported": true, "visible": true}}, ...]}}
 
 {items}"""
-
-GROUP_READER = "You compare lists. You choose only from the lists given and add nothing of your own."
-
-GROUP_TASK = """These extinct animals appear together in a sorting game, so their pictures must be told apart. Each animal has a list of features, already checked against sources.
-
-For EACH animal, choose from ITS OWN list the 2 to 4 features that best tell it from the other animals here, and that a picture clearly shows. Prefer shape over size: on a plain background nothing shows how big an animal is.
-
-Return JSON: {{"<animal name>": ["f2", "f5"], ...}} using the ids given.
-
-{lists}"""
 
 
 def read_one(client, config, spend, name: str) -> dict:
@@ -126,23 +120,6 @@ def read_one(client, config, spend, name: str) -> dict:
     }
 
 
-def tell_apart(client, config, spend, group: str, members: list) -> dict:
-    """must_show for each member: ids chosen from its own checked features."""
-    lists, index = [], {}
-    for record in members:
-        lines = []
-        for i, item in enumerate(record["features"], 1):
-            index[(record["name"], f"f{i}")] = item
-            lines.append(f"  f{i}. {item['claim']}")
-        lists.append(f"{record['name']}:\n" + "\n".join(lines))
-    answer = ask(client, config, spend, GROUP_READER, GROUP_TASK.format(lists="\n\n".join(lists)))
-    chosen = {}
-    for record in members:
-        ids = [i for i in answer.get(record["name"]) or [] if (record["name"], str(i)) in index]
-        chosen[record["name"]] = [index[(record["name"], str(i))] for i in ids][:4]
-    return chosen
-
-
 def main():
     argv, cap = sys.argv[1:], 0.60
     if "--cap" in argv:   # in US dollars, at peak prices
@@ -176,17 +153,18 @@ def main():
               f"{len(record['debated'])} debated;  dropped {len(lost['quote_not_in_the_page'])} with no such "
               f"sentence, {len(lost['second_reading'])} at the second reading")
 
-    # what tells each from its look-alikes, group by group
-    by_group = {}
+    # the pages say too little about some animals for a script to describe them
+    fewest = config["fewest_features_before_asking_the_owner"]
     for record in records:
-        if not record.get("problem") and record["name"] in groups:
-            by_group.setdefault(groups[record["name"]], []).append(record)
-    for group, members in by_group.items():
-        chosen = tell_apart(client, config, spend, group, members)
-        for record in members:
-            record["group"] = group
-            record["must_show"] = chosen.get(record["name"], [])
-            write_json(OUT / f"{slug(record['name'])}.json", record)
+        if record.get("problem"):
+            continue
+        record["group"] = groups.get(record["name"])
+        record.pop("for_the_owner", None)
+        if len(record["features"]) < fewest:
+            record["for_the_owner"] = (f"the saved pages say little about how it looked: only "
+                                       f"{len(record['features'])} checked features")
+            print(f"  FOR THE OWNER - {record['name']}: {record['for_the_owner']}")
+        write_json(OUT / f"{slug(record['name'])}.json", record)
 
     if "--prehistoric" in sys.argv:
         write_json(OUT / "prehistoric.json", {

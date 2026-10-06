@@ -2,8 +2,13 @@
   "name": "Brontosaurus",
   "features": [
     {
-      "claim": "It was a big animal with a long neck and four legs.",
+      "claim": "Brontosaurus was a large, long-necked, four-legged animal.",
       "quote": "Brontosaurus was a large, long-necked, quadrupedal animal with a long, whip-like tail, and forelimbs that were slightly shorter than its hindlimbs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a long tail that ended like a whip.",
+      "quote": "As in other diplodocids, the last portion of the tail of Brontosaurus possessed a whip-like structure.",
       "source": "wikipedia_en"
     },
     {
@@ -12,17 +17,12 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had a long tail that ended like a whip.",
-      "quote": "The anatomy of Brontosaurus is well known, with fossils demonstrating that it was large, long-necked, and quadrupedal with a long tail terminating in a whip-like structure.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Its front legs were short and thick, and its back legs were long and thick.",
+      "claim": "Its front limbs were short and stout, and its back limbs were long and thick.",
       "quote": "The forelimbs were short and stout whereas the hindlimbs were elongated and thick, supported respectively by a heavily built shoulder girdle and pelvis.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had a single big claw on each front limb.",
+      "claim": "It had one large claw on each front limb, pointing toward the body.",
       "quote": "Brontosaurus had a single large claw on each forelimb which faced towards the body, whereas the rest of the phalanges lacked unguals.",
       "source": "wikipedia_en"
     },
@@ -32,7 +32,7 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its jaws had chisel-like teeth for eating plants.",
+      "claim": "Its jaws were lined with chisel-like teeth for eating plants.",
       "quote": "Jaws of Apatosaurus and other diplodocids were lined with spatulate (chisel-like) teeth which were adapted for herbivory.",
       "source": "wikipedia_en"
     },
@@ -42,41 +42,41 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its neck bones carried paired spines, making the neck wide and deep.",
-      "quote": "Like those of other diplodocids, the vertebrae of the neck were deeply bifurcated on the dorsal side; that is, they carried paired spines, resulting in a wide and deep neck.",
+      "claim": "The largest species grew up to 21–23 m long and weighed 15–20 tonnes.",
+      "quote": "The largest species, B. excelsus, measured up to 21–23 m (69–75 ft) long from head to tail and weighed up to 15–20 t (17–22 short tons); other species were smaller, measuring 19 m (62 ft) long and weighing 14 t (15 short tons).",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its back sloped up toward the tail, making an arched back.",
+      "claim": "Its back had an arched shape because the spines of its back bones grew taller toward the tail.",
       "quote": "The neural spines of the dorsals would increase in height further towards the tail, creating an arched back.",
       "source": "wikipedia_en"
     }
   ],
   "not_this": [
     {
-      "claim": "Old pictures gave it a skull like a Camarasaurus, but that was wrong.",
-      "quote": "These skulls were likely those of Camarasaurus, the only other sauropod of which good skull material was known at the time.",
+      "claim": "Old pictures gave it a Camarasaurus-like skull, but its skull was probably like Apatosaurus's.",
+      "quote": "Although the skull of Brontosaurus has not been found, it was probably similar to the skull of the closely related Apatosaurus.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Old pictures showed its tail with too few bones.",
+      "claim": "Old pictures showed its tail dragging with too few vertebrae, but the tail was actually long and whip-like.",
       "quote": "To finish the mount, the rest of the tail was fashioned to appear as Marsh believed it should, which meant it had too few vertebrae.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Old pictures showed its arm bones crossing, but in life they stayed parallel.",
+      "claim": "Old pictures showed its radius and ulna crossing, but in life they stayed parallel.",
       "quote": "Charles Gilmore in 1936 noted that previous reconstructions erroneously proposed that the radius and ulna could cross, when in life they would have remained parallel.",
       "source": "wikipedia_en"
     }
   ],
   "debated": [
     {
-      "claim": "No skull of Brontosaurus has been found, so its skull shape is not known for sure.",
+      "claim": "No skull of Brontosaurus has been found, so its skull shape is not known for certain.",
       "quote": "Although the skull of Brontosaurus has not been found, it was probably similar to the skull of the closely related Apatosaurus.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Some studies say its neck was less flexible than people thought, while others say it held its neck up high.",
+      "claim": "Whether it held its neck high up is debated.",
       "quote": "Though some studies have suggested that diplodocid necks were less flexible than previously believed, other studies have found that all tetrapods appear to hold their necks at the maximum possible vertical extension when in a normal, alert posture, and argue that the same would hold true for sauropods barring any unknown, unique characteristics that set the soft tissue anatomy of their necks apart from that of other animals.",
       "source": "wikipedia_en"
     }
@@ -85,35 +85,35 @@
     "quote_not_in_the_page": [],
     "second_reading": [
       {
-        "claim": "Its neck bones were very strong and heavy.",
+        "claim": "Its neck bones were very strong and heavily built.",
         "quote": "The cervical vertebrae are notably extremely robust and heavily built, in contrast to its lightly built relatives Diplodocus and Barosaurus.",
         "source": "wikipedia_en",
         "kind": "features",
         "why": "a picture could not show it"
       },
       {
-        "claim": "It was a plant eater that fed on ferns, cycadeoids, seed ferns and horsetails at ground height.",
-        "quote": "Being a diplodocid sauropod, Brontosaurus was herbivorous and fed on ferns, cycadeoids, seed ferns, and horsetails, eating at ground height as a nonselective browser.",
+        "claim": "Its thigh bones were very stout and robust.",
+        "quote": "The femora of Brontosaurus are very stout and represent some of the most robust femora of any member of Sauropoda.",
         "source": "wikipedia_en",
         "kind": "features",
         "why": "a picture could not show it"
       },
       {
-        "claim": "Old pictures showed it living in water, but that is not supported by fossils.",
-        "quote": "This is unsupported by fossil evidence.",
+        "claim": "Old pictures showed it living in water, but sauropods like Brontosaurus are now thought to have lived fully on land.",
+        "quote": "Recent findings do not support this, and sauropods are thought to have been fully terrestrial animals.",
         "source": "wikipedia_en",
         "kind": "not_this",
         "why": "a picture could not show it"
       },
       {
-        "claim": "Some scientists still think Brontosaurus is the same as Apatosaurus.",
+        "claim": "Some paleontologists still think Brontosaurus is the same as Apatosaurus, not a separate genus.",
         "quote": "However, the status of Brontosaurus is still uncertain, with some paleontologists still considering it a synonym of Apatosaurus.",
         "source": "wikipedia_en",
         "kind": "debated",
         "why": "a picture could not show it"
       },
       {
-        "claim": "Whether it could crack its tail like a whip is not agreed on.",
+        "claim": "Whether its tail could crack like a whip is disputed.",
         "quote": "More recently, Baron (2020) has considered the use of the tail as a bullwhip unlikely because of the potentially catastrophic muscle and skeletal damage such speeds could cause on the large and heavy tail.",
         "source": "wikipedia_en",
         "kind": "debated",
@@ -152,18 +152,24 @@
   "must_show": [
     {
       "claim": "It had a long tail that ended like a whip.",
-      "quote": "The anatomy of Brontosaurus is well known, with fossils demonstrating that it was large, long-necked, and quadrupedal with a long tail terminating in a whip-like structure.",
+      "quote": "As in other diplodocids, the last portion of the tail of Brontosaurus possessed a whip-like structure.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had a single big claw on each front limb.",
-      "quote": "Brontosaurus had a single large claw on each forelimb which faced towards the body, whereas the rest of the phalanges lacked unguals.",
+      "claim": "Its snout was squared off and low.",
+      "quote": "Their snouts were squared off and low, in contrast to those of macronarians.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its back sloped up toward the tail, making an arched back.",
+      "claim": "Its back had an arched shape because the spines of its back bones grew taller toward the tail.",
       "quote": "The neural spines of the dorsals would increase in height further towards the tail, creating an arched back.",
       "source": "wikipedia_en"
     }
-  ]
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "why": "whip tail, squared snout, arched back"
+  }
 }

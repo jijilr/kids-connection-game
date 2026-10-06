@@ -2,113 +2,117 @@
   "name": "Allosaurus",
   "features": [
     {
-      "claim": "It had a big skull on a short neck and a long tail.",
+      "claim": "Allosaurus had a massive skull on a short neck.",
       "quote": "Allosaurus was a typical large theropod, having a massive skull on a short neck, a long, slightly sloping tail, and reduced forelimbs.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its mouth was full of many sharp teeth with saw-like edges.",
-      "quote": "Its skull was light, robust, and equipped with dozens of sharp, serrated teeth.",
+      "claim": "Allosaurus had a long, slightly sloping tail.",
+      "quote": "Allosaurus was a typical large theropod, having a massive skull on a short neck, a long, slightly sloping tail, and reduced forelimbs.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had small horns above its eyes.",
+      "claim": "Allosaurus had reduced forelimbs.",
+      "quote": "Allosaurus was a typical large theropod, having a massive skull on a short neck, a long, slightly sloping tail, and reduced forelimbs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Allosaurus had three-fingered hands.",
       "quote": "It had three-fingered hands and distinctive horns above its eyes.",
       "source": "nhm_dino_directory"
     },
     {
-      "claim": "Its hands had three fingers with big curved claws.",
+      "claim": "Allosaurus had distinctive horns above its eyes.",
+      "quote": "It had three-fingered hands and distinctive horns above its eyes.",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Allosaurus had dozens of sharp, serrated teeth.",
+      "quote": "Its skull was light, robust, and equipped with dozens of sharp, serrated teeth.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Allosaurus had dagger-like teeth with serrated edges.",
+      "quote": "Teeth:\ndagger-like with serrated edges",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Allosaurus had three fingers per hand, tipped with large, strongly curved and pointed claws.",
       "quote": "The forelimbs of Allosaurus are short in comparison to the hindlimbs (only about 35% the length of the hindlimbs in adults) and have three fingers per hand, tipped with large, strongly curved and pointed claws.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its arms were short next to its big back legs.",
-      "quote": "Its three-fingered forelimbs were smaller than its large hind legs, and the body was balanced by a long, heavy tail.",
-      "source": "wikipedia_simple"
+      "claim": "Allosaurus had a long, muscular tail that balanced its body.",
+      "quote": "Relative to the large and powerful legs, its three-fingered hands were small and the body was balanced by a long, muscular tail.",
+      "source": "wikipedia_en"
     },
     {
-      "claim": "Its body was balanced by a long, heavy tail.",
-      "quote": "Its three-fingered forelimbs were smaller than its large hind legs, and the body was balanced by a long, heavy tail.",
-      "source": "wikipedia_simple"
-    },
-    {
-      "claim": "It had a broad rib cage that made a barrel chest.",
+      "claim": "Allosaurus had a broad rib cage giving it a barrel chest.",
       "quote": "The rib cage is broad, giving it a barrel chest, especially in comparison to less derived theropods like Ceratosaurus.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its skin had small scales.",
+      "claim": "Allosaurus had small scales on its skin.",
       "quote": "The impression shows small scales measuring 1 to 3 millimeters in diameter.",
       "source": "wikipedia_en"
-    }
-  ],
-  "not_this": [
-    {
-      "claim": "Old pictures show Allosaurus as a kind of Tyrannosaurus, but that is wrong.",
-      "quote": "Allosaurus was depicted as a species of Tyrannosaurus in the 1967 horror film The Beast of Hollow Mountain, and the 1967 film The Valley of Gwangi.",
-      "source": "wikipedia_simple"
-    }
-  ],
-  "debated": [
-    {
-      "claim": "No one knows for sure why Allosaurus had small horns on its skull.",
-      "quote": "No one knows for sure why Allosaurus had small horns on its skull.",
-      "source": "nhm_dino_directory"
     },
     {
-      "claim": "One skin impression might not be from Allosaurus.",
-      "quote": "However, it has been noted that these scales are more similar to those of sauropods, and due to the presence of non-theropod remains associated with the tail of \"Big Al Two\" there is a possibility that this skin impression is not from Allosaurus.",
-      "source": "wikipedia_en"
+      "claim": "Allosaurus moved on two legs.",
+      "quote": "How it moved:\non 2 legs",
+      "source": "nhm_dino_directory"
     }
   ],
+  "not_this": [],
+  "debated": [],
   "dropped": {
-    "quote_not_in_the_page": [
-      {
-        "claim": "It was about 9.7 metres long.",
-        "quote": "Length:\n9.7m",
-        "source": "nhm_dino_directory",
-        "kind": "features"
-      },
-      {
-        "claim": "It weighed about 2700 kilograms.",
-        "quote": "Weight:\n2700kg",
-        "source": "nhm_dino_directory",
-        "kind": "features"
-      }
-    ],
+    "quote_not_in_the_page": [],
     "second_reading": [
       {
-        "claim": "Allosaurus was a large meat-eating dinosaur that walked on two legs.",
-        "quote": "Allosaurus was a large meat-eating dinosaur that lived in prehistoric North America.",
-        "source": "nhm_dino_directory",
-        "kind": "features",
-        "why": "the sentence does not support it"
-      },
-      {
-        "claim": "It lived in the Late Jurassic, about 152 to 145 million years ago.",
-        "quote": "When it lived:\nLate Jurassic, 152–145 million years ago",
-        "source": "nhm_dino_directory",
-        "kind": "features",
-        "why": "a picture could not show it"
-      },
-      {
-        "claim": "People once thought Saurophaganax was a bigger cousin of Allosaurus, but that idea was a mistake.",
+        "claim": "Saurophaganax was not a larger cousin of Allosaurus; it was probably named by mistake and many of the bones actually belonged to Allosaurus.",
         "quote": "Saurophaganax, a related dinosaur, was once thought to be a larger cousin of Allosaurus. But recent research has shown that Saurophaganax was probably named by mistake, and many of the bones actually belonged to Allosaurus.",
         "source": "nhm_dino_directory",
         "kind": "not_this",
-        "why": "the sentence does not support it"
+        "why": "a picture could not show it"
       },
       {
-        "claim": "Scientists are not sure whether Allosaurus hunted in packs or lived alone.",
+        "claim": "Saurophaganax did not exist as a separate genus of allosaurid; it was a mixture of Allosaurus and sauropod fossils.",
+        "quote": "In 2024, Andy Danison and colleagues showed that Saurophaganax did not exist as a separate genus of allosaurid, as it consisted of a mixture of Allosaurus and sauropod fossils.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The idea that Allosaurus used its skull like a hatchet against prey is disputed by other scientists.",
+        "quote": "The authors suggested that Allosaurus used its skull like a hatchet against prey, attacking open-mouthed, slashing flesh with its teeth, and tearing it away without splintering bones, but this is disputed by other scientists.",
+        "source": "wikipedia_simple",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "No one knows for sure why Allosaurus had small horns on its skull.",
+        "quote": "No one knows for sure why Allosaurus had small horns on its skull.",
+        "source": "nhm_dino_directory",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Scientists have debated whether Allosaurus had cooperative social behavior and hunted in packs or was a solitary predator that forms congregations.",
         "quote": "Scientists have debated whether Allosaurus had cooperative social behavior and hunted in packs or was a solitary predator that forms congregations, with evidence supporting both arguments.",
         "source": "wikipedia_en",
         "kind": "debated",
         "why": "a picture could not show it"
       },
       {
-        "claim": "Experts are not sure if Allosaurus attacked very large plant-eating dinosaurs while they were alive or mostly ate them after they were dead.",
+        "claim": "Experts aren't sure if Allosaurus would have attacked very large herbivorous dinosaurs while they were alive or mostly fed on them after they were already dead.",
         "quote": "Experts aren’t sure if Allosaurus would have attacked very large herbivorous dinosaurs while they were alive or mostly fed on them after they were already dead.",
         "source": "nhm_dino_directory",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It is possible that a skin impression from the tail of 'Big Al Two' is not from Allosaurus.",
+        "quote": "However, it has been noted that these scales are more similar to those of sauropods, and due to the presence of non-theropod remains associated with the tail of \"Big Al Two\" there is a possibility that this skin impression is not from Allosaurus.",
+        "source": "wikipedia_en",
         "kind": "debated",
         "why": "a picture could not show it"
       }
@@ -154,19 +158,20 @@
   "group": "land_hunter",
   "must_show": [
     {
-      "claim": "It had small horns above its eyes.",
+      "claim": "Allosaurus had distinctive horns above its eyes.",
       "quote": "It had three-fingered hands and distinctive horns above its eyes.",
       "source": "nhm_dino_directory"
     },
     {
-      "claim": "Its hands had three fingers with big curved claws.",
-      "quote": "The forelimbs of Allosaurus are short in comparison to the hindlimbs (only about 35% the length of the hindlimbs in adults) and have three fingers per hand, tipped with large, strongly curved and pointed claws.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "It had a broad rib cage that made a barrel chest.",
+      "claim": "Allosaurus had a broad rib cage giving it a barrel chest.",
       "quote": "The rib cage is broad, giving it a barrel chest, especially in comparison to less derived theropods like Ceratosaurus.",
       "source": "wikipedia_en"
     }
-  ]
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "why": "horns above eyes, barrel chest"
+  }
 }

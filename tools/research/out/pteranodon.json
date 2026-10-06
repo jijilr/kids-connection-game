@@ -2,115 +2,111 @@
   "name": "Pteranodon",
   "features": [
     {
-      "claim": "It had a big crest on its head.",
-      "quote": "The most distinctive characteristic of Pteranodon is its cranial crest.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "It had no teeth in its beak.",
-      "quote": "Unlike earlier pterosaurs, such as Rhamphorhynchus and Pterodactylus, Pteranodon had toothless beaks, similar to those of birds.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Its beak was long, thin and ended in sharp points.",
-      "quote": "The beaks were long, slender, and ended in thin, sharp points.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Its upper jaw was longer than the lower jaw and curved upward.",
-      "quote": "The upper jaw, which was longer than the lower jaw, was curved upward; while this normally has been attributed only to the upward-curving beak, one specimen (UALVP 24238) has a curvature corresponding with the beak widening towards the tip.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Males had much bigger crests than females.",
-      "quote": "The crests of males were far larger than those of females.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "In one species the crest was long and swept back, and in the other it was tall and upright.",
-      "quote": "In P. longiceps, they were long and backswept, whereas in P. sternbergi, they were tall and upright.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Females had small, rounded crests.",
-      "quote": "Females of both species were smaller and bore small, rounded crests.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Its tail was short.",
-      "quote": "Beyond the synsacrum, the tail was relatively short, and the last few vertebrae were fused into a bony rod.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "Its wings could be up to seven meters across.",
-      "quote": "With its wings open it was up to 7 meters across.",
+      "claim": "Pteranodon had a big crest at the back of its head.",
+      "quote": "Pteranodon had a big crest at the back of its head.",
       "source": "wikipedia_simple"
     },
     {
-      "claim": "Males were bigger than females.",
-      "quote": "Females of both species were smaller than the males, and had small, rounded crests.",
-      "source": "wikipedia_simple"
-    },
-    {
-      "claim": "It had a small pouch like a pelican at the back of its jaw.",
+      "claim": "Pteranodon had no teeth in its long mouth.",
       "quote": "It had no teeth in its long mouth, and it had a small pouch like a pelican at the back of its jaw.",
       "source": "wikipedia_simple"
     },
     {
-      "claim": "Its hind feet had four metatarsals tipped with slightly curved claws.",
-      "quote": "Pteranodon's hind feet had four metatarsals, which were tipped with less curved claws.",
-      "source": "wikipedia_en"
-    }
-  ],
-  "not_this": [],
-  "debated": [
+      "claim": "Pteranodon had a small pouch like a pelican at the back of its jaw.",
+      "quote": "It had no teeth in its long mouth, and it had a small pouch like a pelican at the back of its jaw.",
+      "source": "wikipedia_simple"
+    },
     {
-      "claim": "Scientists debate whether it walked on two legs or four.",
-      "quote": "Historically, terrestrial locomotion in Pteranodon, as in pterosaurs overall, has been the subject of debate, chiefly the matter of whether or not they were bipedal or quadrupedal.",
+      "claim": "Pteranodon longiceps had a straight crest that went backwards.",
+      "quote": "Pteranodon longiceps had a straight crest that went backwards, and Pteranodon sternbergi had a bigger, flatter crest that went upward.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Pteranodon sternbergi had a bigger, flatter crest that went upward.",
+      "quote": "Pteranodon longiceps had a straight crest that went backwards, and Pteranodon sternbergi had a bigger, flatter crest that went upward.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "With its wings open it was up to 7 meters across.",
+      "quote": "With its wings open it was up to 7 meters across.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Females of both species were smaller than the males, and had small, rounded crests.",
+      "quote": "Females of both species were smaller than the males, and had small, rounded crests.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Pteranodon had toothless beaks, similar to those of birds.",
+      "quote": "Unlike earlier pterosaurs, such as Rhamphorhynchus and Pterodactylus, Pteranodon had toothless beaks, similar to those of birds.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The beaks were long, slender, and ended in thin, sharp points.",
+      "quote": "The beaks were long, slender, and ended in thin, sharp points.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The upper jaw, which was longer than the lower jaw, was curved upward.",
+      "quote": "The upper jaw, which was longer than the lower jaw, was curved upward; while this normally has been attributed only to the upward-curving beak, one specimen (UALVP 24238) has a curvature corresponding with the beak widening towards the tip.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The crests consisted of skull bones projecting upward and backward from the skull.",
+      "quote": "These crests consisted of skull bones (frontals) projecting upward and backward from the skull.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The tail was relatively short, and the last few vertebrae were fused into a bony rod.",
+      "quote": "Beyond the synsacrum, the tail was relatively short, and the last few vertebrae were fused into a bony rod.",
       "source": "wikipedia_en"
     }
   ],
+  "not_this": [
+    {
+      "claim": "Old pictures that show Pteranodon with teeth are wrong, because it had no teeth.",
+      "quote": "Marsh recognized this major difference, describing the specimens as \"distinguished from all previously known genera of the order Pterosauria by the entire absence of teeth.\"",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Old pictures that show Pteranodon unable to walk or stand are wrong, because trackways suggest it was quadrupedal.",
+      "quote": "Trackways suggest that pterosaurs like Pteranodon were quadrupedal.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Old pictures that show Pteranodon only gliding are wrong, because studies indicate it could flap its wings substantially.",
+      "quote": "studies of Pteranodon wing loading (the strength of the wings vs. the weight of the body) indicate that they were capable of substantial flapping flight, contrary to some earlier suggestions that they were so big they could only glide.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [],
   "dropped": {
     "quote_not_in_the_page": [],
     "second_reading": [
       {
-        "claim": "Old pictures showed it with teeth, but it had none.",
-        "quote": "In 1876, Othniel Charles Marsh recognised it as a genus of its own, making particular note of its complete lack of teeth, which at the time was unique among pterosaurs.",
-        "source": "wikipedia_en",
-        "kind": "not_this",
-        "why": "the sentence does not support it"
-      },
-      {
-        "claim": "Old pictures showed it only gliding, but it could flap its wings.",
-        "quote": "studies of Pteranodon wing loading (the strength of the wings vs. the weight of the body) indicate that they were capable of substantial flapping flight, contrary to some earlier suggestions that they were so big they could only glide.",
-        "source": "wikipedia_en",
-        "kind": "not_this",
-        "why": "a picture could not show it"
-      },
-      {
-        "claim": "Old pictures showed it unable to walk or stand, but that is wrong.",
-        "quote": "The earliest model of Pteranodon locomotion, put forward by Cherrie D. Bramwell and G. R. Whitfield, suggested that they were utterly incapable of walking or standing.",
-        "source": "wikipedia_en",
-        "kind": "not_this",
-        "why": "the sentence does not support it"
-      },
-      {
-        "claim": "Scientists debate whether the upright-crested species belongs in its own genus, Geosternbergia.",
-        "quote": "Some researchers have suggested the latter two as a genus of their own, Geosternbergia, though this is the subject of some debate.",
+        "claim": "Scientists debate whether the crest was used as a rudder.",
+        "quote": "In 1943, Dominik von Kripp suggested that the crest may have served as a rudder, an idea embraced by several later researchers.",
         "source": "wikipedia_en",
         "kind": "debated",
         "why": "a picture could not show it"
       },
       {
-        "claim": "Scientists debate what the crest was for.",
-        "quote": "Pteranodon was notable for its skull crest, though the function of this crest has been a subject of debate.",
+        "claim": "Scientists debate whether the crest was used for heat exchange.",
+        "quote": "Alexander Kellner suggested that the large crests of the pterosaur Tapejara, as well as other species, might be used for heat exchange, allowing these pterosaurs to absorb or shed heat and regulate body temperature, which also would account for the correlation between crest size and body size.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "the sentence does not support it"
+      },
+      {
+        "claim": "Scientists debate whether the crest was used as an aerodynamic counterbalance.",
+        "quote": "Scientific interpretations of the crest's function began in 1910, when George Francis Eaton proposed two possibilities: an aerodynamic counterbalance and a muscle attachment point.",
         "source": "wikipedia_en",
         "kind": "debated",
         "why": "a picture could not show it"
       },
       {
-        "claim": "Scientists debate whether young Pteranodon could fly or needed parental care.",
-        "quote": "Thus, in contrast with Bennett 2017, Yang et al. concluded Pteranodon was more altricial than smaller pterosaurs, with early juveniles requiring parental care; though they may still have had wings capable of flight, they likely only flew occasionally so as to maintain a low tissue maturity and high growth rate.",
+        "claim": "Scientists debate whether the crest was used as a muscle attachment point.",
+        "quote": "Scientific interpretations of the crest's function began in 1910, when George Francis Eaton proposed two possibilities: an aerodynamic counterbalance and a muscle attachment point.",
         "source": "wikipedia_en",
         "kind": "debated",
         "why": "a picture could not show it"
@@ -147,19 +143,25 @@
   "group": "flyer",
   "must_show": [
     {
-      "claim": "It had no teeth in its beak.",
-      "quote": "Unlike earlier pterosaurs, such as Rhamphorhynchus and Pterodactylus, Pteranodon had toothless beaks, similar to those of birds.",
-      "source": "wikipedia_en"
+      "claim": "Pteranodon had a big crest at the back of its head.",
+      "quote": "Pteranodon had a big crest at the back of its head.",
+      "source": "wikipedia_simple"
     },
     {
-      "claim": "Its upper jaw was longer than the lower jaw and curved upward.",
+      "claim": "Pteranodon had no teeth in its long mouth.",
+      "quote": "It had no teeth in its long mouth, and it had a small pouch like a pelican at the back of its jaw.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "The upper jaw, which was longer than the lower jaw, was curved upward.",
       "quote": "The upper jaw, which was longer than the lower jaw, was curved upward; while this normally has been attributed only to the upward-curving beak, one specimen (UALVP 24238) has a curvature corresponding with the beak widening towards the tip.",
       "source": "wikipedia_en"
-    },
-    {
-      "claim": "It had a big crest on its head.",
-      "quote": "The most distinctive characteristic of Pteranodon is its cranial crest.",
-      "source": "wikipedia_en"
     }
-  ]
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "why": "large backward head crest, toothless upturned beak"
+  }
 }

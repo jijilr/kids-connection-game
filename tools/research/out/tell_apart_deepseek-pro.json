@@ -1,0 +1,501 @@
+{
+  "judge": "deepseek-pro",
+  "model": "deepseek-v4-pro",
+  "date": "2026-10-06",
+  "seconds": 174,
+  "spend": {
+    "calls": 5,
+    "input_tokens_cache_hit": 0,
+    "input_tokens_cache_miss": 7377,
+    "output_tokens": 61756,
+    "usd_at_peak_prices": 0.2543,
+    "inr_at_peak_prices": 24.5
+  },
+  "animals": {
+    "Tyrannosaurus rex": {
+      "must_show": [
+        {
+          "claim": "Its forelimbs were short but unusually powerful for their size, and had two clawed digits.",
+          "quote": "Relative to its large and powerful hind limbs, the forelimbs of Tyrannosaurus were short but unusually powerful for their size, and they had two clawed digits.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "The skull was extremely wide at the rear but had a narrow snout, allowing unusually good binocular vision.",
+          "quote": "It was extremely wide at the rear but had a narrow snout, allowing unusually good binocular vision.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "The tip of the upper jaw was U-shaped.",
+          "quote": "The tip of the upper jaw was U-shaped (most non-tyrannosauroid carnivores had V-shaped upper jaws), which increased the amount of tissue and bone a tyrannosaur could rip out with one bite, although it also increased the stresses on the front teeth.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "The hindlimbs were among the longest in proportion to body size of any theropod.",
+          "quote": "In contrast to the arms, the hindlimbs were among the longest in proportion to body size of any theropod.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "tiny two-fingered arms, wide rear/narrow snout, U-shaped jaw, long legs"
+    },
+    "Giganotosaurus": {
+      "must_show": [
+        {
+          "claim": "The front of its lower jaw was flattened and had a downward-pointing chin at the tip.",
+          "quote": "The front of the lower jaw was flattened and had a downward-projecting process (or \"chin\") at the tip.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "It had rough, wrinkled nasal bones and a ridge-like crest on the bone in front of the eye.",
+          "quote": "The skull was low, with rugose (rough and wrinkled) nasal bones and a ridge-like crest on the lacrimal bone in front of the eye.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "downward-pointing chin, crest before the eye"
+    },
+    "Velociraptor": {
+      "must_show": [
+        {
+          "claim": "It was a slender, lightly built meat-eater.",
+          "quote": "It was a slender, lightly built carnivore.",
+          "source": "wikipedia_simple"
+        },
+        {
+          "claim": "It had a long, low skull with an upturned snout.",
+          "quote": "Velociraptor can be distinguished from other dromaeosaurids by its long and low skull, with an upturned snout.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "slender build, long low upturned snout"
+    },
+    "Allosaurus": {
+      "must_show": [
+        {
+          "claim": "Allosaurus had distinctive horns above its eyes.",
+          "quote": "It had three-fingered hands and distinctive horns above its eyes.",
+          "source": "nhm_dino_directory"
+        },
+        {
+          "claim": "Allosaurus had a broad rib cage giving it a barrel chest.",
+          "quote": "The rib cage is broad, giving it a barrel chest, especially in comparison to less derived theropods like Ceratosaurus.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "horns over eyes, barrel chest"
+    },
+    "Spinosaurus": {
+      "must_show": [
+        {
+          "claim": "It had a sail on its back made of very long spines growing from its back bones.",
+          "quote": "Very tall neural spines growing on the back vertebrae of Spinosaurus formed the basis of what is usually called the animal's \"sail\".",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Spinosaurus had a long, low, narrow skull like a crocodile's.",
+          "quote": "The skull of Spinosaurus was long, low, and narrow, similar to that of a modern crocodilian, and bore straight conical teeth with few to no serrations.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "It had a wide, paddle-like tail.",
+          "quote": "It also had a wide, paddle-like tail.",
+          "source": "nhm_dino_directory"
+        },
+        {
+          "claim": "It had a crest on its head shaped like a scimitar.",
+          "quote": "Spinosaurus mirabilis had a weird crest on its head that looked like a scimitar.",
+          "source": "wikipedia_simple"
+        }
+      ],
+      "why": "sail on back, crocodile-like snout, paddle tail, scimitar crest"
+    },
+    "Brachiosaurus": {
+      "must_show": [
+        {
+          "claim": "Brachiosaurus had longer forelimbs than hindlimbs.",
+          "quote": "Atypically, Brachiosaurus had longer forelimbs than hindlimbs, which resulted in a steeply inclined trunk and a proportionally shorter tail.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Its trunk was steeply inclined and its tail was proportionally shorter.",
+          "quote": "Atypically, Brachiosaurus had longer forelimbs than hindlimbs, which resulted in a steeply inclined trunk and a proportionally shorter tail.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "The overall build of Brachiosaurus resembles a giraffe more than any other living animal.",
+          "quote": "The overall build of Brachiosaurus resembles a giraffe more than any other living animal.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "giraffe-like build, longer front legs, steep body"
+    },
+    "Brontosaurus": {
+      "must_show": [
+        {
+          "claim": "Its front limbs were short and stout, and its back limbs were long and thick.",
+          "quote": "The forelimbs were short and stout whereas the hindlimbs were elongated and thick, supported respectively by a heavily built shoulder girdle and pelvis.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Its snout was squared off and low.",
+          "quote": "Their snouts were squared off and low, in contrast to those of macronarians.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Its back had an arched shape because the spines of its back bones grew taller toward the tail.",
+          "quote": "The neural spines of the dorsals would increase in height further towards the tail, creating an arched back.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "stout front legs, squared snout, arched back"
+    },
+    "Diplodocus": {
+      "must_show": [
+        {
+          "claim": "Its tail was about 55% of its total body length.",
+          "quote": "The estimated tail length of Diplodocus makes up approximately 55% of the total body length, with the tail sometimes hypothesized to be capable of functioning like a very long, tapering bullwhip.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Its front limbs were a little shorter than its back limbs, so its body was mostly horizontal.",
+          "quote": "Their forelimbs were slightly shorter than their hind limbs, resulting in a largely horizontal posture.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Its head was short.",
+          "quote": "It had a short 6 ft long head.",
+          "source": "wikipedia_simple"
+        }
+      ],
+      "why": "very long tail, horizontal body, short head"
+    },
+    "Argentinosaurus": {
+      "must_show": [
+        {
+          "claim": "Argentinosaurus was an enormous, long-necked, long-tailed, four-legged plant-eater.",
+          "quote": "It was an enormous, long-necked, long-tailed, quadrupedal, plant-eater from Argentina, South America during the Cretaceous period.",
+          "source": "wikipedia_simple"
+        }
+      ],
+      "why": "no unique shape features; generic sauropod silhouette"
+    },
+    "Amargasaurus": {
+      "must_show": [
+        {
+          "claim": "Amargasaurus had two parallel rows of tall spines down its neck and back.",
+          "quote": "Most distinctively, it sported two parallel rows of tall spines down its neck and back, taller than in any other known sauropod.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "The spines on the last two back vertebrae, the hip, and the front of the tail flared into a paddle shape at the top.",
+          "quote": "The last two dorsal vertebrae, the hip, and the foremost tail in Amargasaurus also had elongated spines; these were not bifurcated but flared into a paddle-shaped upper end.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Amargasaurus had a long, low skull on the end of a long neck.",
+          "quote": "It was a quadrupedal herbivore with a long, low skull on the end of a long neck, much like its relative Dicraeosaurus.",
+          "source": "wikipedia_simple"
+        }
+      ],
+      "why": "double row of tall spines, paddle spines, long low skull"
+    },
+    "Triceratops": {
+      "must_show": [
+        {
+          "claim": "Triceratops had a large bony frill.",
+          "quote": "Bearing a large bony frill, three horns on the skull, and a large, four-legged body, exhibiting convergent evolution with rhinoceroses, Triceratops is one of the most recognizable of all dinosaurs and the best-known ceratopsian.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Triceratops had three horns on its skull.",
+          "quote": "Bearing a large bony frill, three horns on the skull, and a large, four-legged body, exhibiting convergent evolution with rhinoceroses, Triceratops is one of the most recognizable of all dinosaurs and the best-known ceratopsian.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "large bony frill and three horns"
+    },
+    "Ankylosaurus": {
+      "must_show": [
+        {
+          "claim": "Ankylosaurus was covered in armor plates, with bony half-rings on its neck.",
+          "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Ankylosaurus had a large club on the end of its tail.",
+          "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Ankylosaurus had a wide, low skull.",
+          "quote": "It had a wide, low skull, with two horns pointing backward from the back of the head, and two horns below these that pointed backward and down.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "armor, tail club, wide low skull"
+    },
+    "Stegosaurus": {
+      "must_show": [
+        {
+          "claim": "Stegosaurus had a double row of kite-shaped plates standing upright along its back.",
+          "quote": "The quadrupedal Stegosaurus is one of the most easily identifiable dinosaur genera, due to the distinctive double row of kite-shaped plates rising vertically along the rounded back and the two pairs of long spikes extending horizontally near the end of the tail.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Stegosaurus had two pairs of long spikes near the end of its tail.",
+          "quote": "The quadrupedal Stegosaurus is one of the most easily identifiable dinosaur genera, due to the distinctive double row of kite-shaped plates rising vertically along the rounded back and the two pairs of long spikes extending horizontally near the end of the tail.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Stegosaurus had short fore limbs and long hind limbs.",
+          "quote": "They were large, heavily built, herbivorous quadrupeds with rounded backs, short fore limbs, long hind limbs, and tails held high in the air.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "upright plates, tail spikes, short front legs"
+    },
+    "Pachycephalosaurus": {
+      "must_show": [
+        {
+          "claim": "It stood and walked on two legs.",
+          "quote": "Pachycephalosaurus was a bipedal herbivore, possessing long, strong legs and somewhat small arms with five-fingered hands.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "It had a large bony dome on top of its head.",
+          "quote": "Pachycephalosaurus is famous for having a large, bony dome on top of its skull, up to 25 cm (10 in) thick, which safely cushioned its brain.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "The back of the dome had bony knobs, and short bony spikes stuck up from the snout.",
+          "quote": "The dome's rear aspect was edged with bony knobs and short bony spikes projected upwards from the snout.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "bipedal, dome, skull spikes"
+    },
+    "Parasaurolophus": {
+      "must_show": [
+        {
+          "claim": "Parasaurolophus had a long, distinctive head crest.",
+          "quote": "Parasaurolophus was a duck-billed dinosaur with a long, distinctive head crest.",
+          "source": "nhm_dino_directory"
+        },
+        {
+          "claim": "The crest was a long curved tube that went upwards and back from the skull.",
+          "quote": "They had a large head crest, which was a long curved tube. It went upwards and back from the skull.",
+          "source": "wikipedia_simple"
+        }
+      ],
+      "why": "long curved head crest"
+    },
+    "Mosasaurus": {
+      "must_show": [
+        {
+          "claim": "Its skull was conical and tapered to a short snout that reached a little past the frontmost teeth.",
+          "quote": "The skull of Mosasaurus is conical and tapers off to a short snout which extends a little beyond the frontmost teeth.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Its rib cage was unusually deep and formed an almost perfect semicircle, giving a barrel-shaped chest.",
+          "quote": "Compared to other mosasaurs, the rib cage of Mosasaurus is unusually deep and forms an almost perfect semicircle, giving it a barrel-shaped chest.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "short conical snout and barrel-shaped chest"
+    },
+    "Kronosaurus": {
+      "must_show": [
+        {
+          "claim": "Kronosaurus had a long head.",
+          "quote": "Like all plesiosaurs, Kronosaurus has four paddle-like limbs, a short tail and, like most pliosaurids, a long head and a short neck.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Kronosaurus had a short neck.",
+          "quote": "Like all plesiosaurs, Kronosaurus has four paddle-like limbs, a short tail and, like most pliosaurids, a long head and a short neck.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "The back pair of flippers was bigger than the front pair.",
+          "quote": "The limbs of Kronosaurus were modified into flippers, with the back pair larger than the front.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "long head, short neck, hind flippers bigger"
+    },
+    "Mixosaurus": {
+      "must_show": [
+        {
+          "claim": "It had a long tail with a low fin.",
+          "quote": "It possessed a long tail with a low fin, suggesting it wasn't as fast as Jurassic Ichthyosaurs, but also possessed a dorsal fin for stability in the water.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "It had a dorsal fin for stability in the water.",
+          "quote": "It possessed a long tail with a low fin, suggesting it wasn't as fast as Jurassic Ichthyosaurs, but also possessed a dorsal fin for stability in the water.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "It had a relatively large skull compared to its body.",
+          "quote": "They had relatively large skulls compared to their bodies, unlike the basal ichthyosaurs, but resembled fish-shaped ichthyosaurs that appeared later.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "It had a sagittal crest on its skull.",
+          "quote": "M. cornalianus has a sagittal crest associated with the expansion of the upper temporal fenestra.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "dorsal fin, low tail fin, large skull, sagittal crest"
+    },
+    "Tylosaurus": {
+      "must_show": [
+        {
+          "claim": "Tylosaurus had a long, toothless snout knob sticking out from its snout.",
+          "quote": "The most recognizable characteristic of Tylosaurus is the elongated edentulous rostrum that protrudes from its snout, for which the genus is named.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "The head of Tylosaurus was strongly conical and its snout was longer than most mosasaurs.",
+          "quote": "The head was strongly conical and the snout proportionally longer than most mosasaurs, with the exception of Ectenosaurus.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "toothless snout knob and longer conical snout"
+    },
+    "Plesiosaurus": {
+      "must_show": [
+        {
+          "claim": "Plesiosaurus had a broad turtle-like body.",
+          "quote": "Measuring around 3.5 m (11 ft) long, it is distinguishable by its small head, long and slender neck, broad turtle-like body, a short tail, and two pairs of large, elongated paddles.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Plesiosaurus had a U-shaped jaw.",
+          "quote": "Its U-shaped jaw and sharp teeth would have been like a fish trap.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "turtle-like body and U-shaped jaw"
+    },
+    "Elasmosaurus": {
+      "must_show": [
+        {
+          "claim": "Elasmosaurus had an extremely long neck.",
+          "quote": "Measuring 10.3 meters (34 ft) in length, Elasmosaurus would have had a streamlined body with paddle-like limbs, a short tail, a small head, and an extremely long neck.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "The skull would have been slender and triangular.",
+          "quote": "The skull would have been slender and triangular, with large, fang-like teeth at the front, and smaller teeth towards the back.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "extremely long neck and slender triangular skull"
+    },
+    "Pterodactylus": {
+      "must_show": [
+        {
+          "claim": "The skulls of adult Pterodactylus were long and thin.",
+          "quote": "The skulls of adult Pterodactylus were long and thin, with about 90 narrow and conical teeth.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "The skull and jaws were straight.",
+          "quote": "Another autapomorphy that Pterodactylus has is that the skull and jaws were straight, which are unlike the upwardly curved jaws seen in the related ctenochasmatids.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "long, thin, straight jaws"
+    },
+    "Pteranodon": {
+      "must_show": [
+        {
+          "claim": "Pteranodon had a big crest at the back of its head.",
+          "quote": "Pteranodon had a big crest at the back of its head.",
+          "source": "wikipedia_simple"
+        },
+        {
+          "claim": "The upper jaw, which was longer than the lower jaw, was curved upward.",
+          "quote": "The upper jaw, which was longer than the lower jaw, was curved upward; while this normally has been attributed only to the upward-curving beak, one specimen (UALVP 24238) has a curvature corresponding with the beak widening towards the tip.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "big back-of-head crest and upward-curved beak"
+    },
+    "Quetzalcoatlus": {
+      "must_show": [
+        {
+          "claim": "Quetzalcoatlus had a long neck.",
+          "quote": "Quetzalcoatlus had an unusually long neck, and when it stood on the ground it was as tall as a giraffe.",
+          "source": "wikipedia_simple"
+        },
+        {
+          "claim": "It had broad wings.",
+          "quote": "There have been various models of the morphology of pterodactyloid wings, though based on multiple well-preserved pterosaur specimens, it is likely that azhdarchids had broad wings, with a membrane called the brachiopatagium extending from the tip of the wing finger to the outer side of each ankle.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "It had a crest at the base of the beak.",
+          "quote": "At the base of the beak, formed from the premaxilla, was a crest, referred to by some authors as a sagittal crest.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "long neck, broad wings, crest at beak base"
+    },
+    "Rhamphorhynchus": {
+      "must_show": [
+        {
+          "claim": "The tail was stiffened with ligaments and ended in a soft-tissue tail vane.",
+          "quote": "it had a long tail, stiffened with ligaments, which ended in a characteristic soft-tissue tail vane.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "The jaws had needle-like teeth angled forward and a curved, sharp, beak-like tip without teeth.",
+          "quote": "The jaws of Rhamphorhynchus housed needle-like teeth, which were angled forward, with a curved, sharp, beak-like tip lacking teeth.",
+          "source": "wikipedia_simple"
+        },
+        {
+          "claim": "Adults developed a strong upward hook at the end of the lower jaw.",
+          "quote": "Adult Rhamphorhynchus also developed a strong upward \"hook\" at the end of the lower jaw.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "tail vane, toothless curved beak tip, lower jaw hook"
+    },
+    "Dimorphodon": {
+      "must_show": [
+        {
+          "claim": "Dimorphodon had a large, bulky skull about 23 centimetres long.",
+          "quote": "Dimorphodon had a large, bulky skull approximately 23 centimetres (9.1 in) in length, whose weight was reduced by large openings separated from each other by thin bony partitions.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Dimorphodon had proportionally short wings.",
+          "quote": "The body structure of Dimorphodon displays many \"primitive\" characteristics, such as, according to Owen, a very small brain-pan and proportionally short wings.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "bulky skull and short wings"
+    },
+    "Titanoboa": {
+      "must_show": [
+        {
+          "claim": "Titanoboa was a giant boid snake.",
+          "quote": "Titanoboa (; lit. 'titanic boa') is a genus of extinct giant boid snake (being the biological family of all boas and anacondas) that lived during the middle and late Paleocene epoch.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "Only shape-related feature: it was a boid snake; other features are size/weight not visible."
+    },
+    "Vasuki indicus": {
+      "must_show": [
+        {
+          "claim": "Its body was slightly smaller in its vertebral dimensions than Titanoboa's.",
+          "quote": "Although the vertebral dimensions of Vasuki are slightly smaller than those of Titanoboa (estimated at 12.8 m (42 ft) ± 2.2 m (7 ft 3 in)), the upper length estimates indicate a longer body for the former.",
+          "source": "wikipedia_en"
+        }
+      ],
+      "why": "Only comparative non-length feature: its vertebrae were slightly smaller than Titanoboa's; no clear outline feature listed."
+    }
+  }
+}

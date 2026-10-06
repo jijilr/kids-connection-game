@@ -44,8 +44,45 @@
     }
   },
   "longest_text_sent_per_source": 60000,
+  "fewest_features_before_asking_the_owner": 5,
   "model": "deepseek-flash",
   "thinking": "disabled",
+  "judges": {
+    "about": "The models that can do the one step needing judgement: choosing what tells an animal from its look-alikes. Each chooses only from features already checked against the saved pages. `use` names the one whose choice is written into the results.",
+    "use": "deepseek-flash",
+    "use_note": "Provisional, until the owner chooses from the benchmark of 6 Oct 2026: with the same lists and question, the everyday DeepSeek model agreed with the hand-written lists most often and cost least.",
+    "deepseek-flash": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "thinking": "disabled",
+      "usd_per_million_tokens": {
+        "input_cache_hit": 0.006,
+        "input_cache_miss": 0.3,
+        "output": 1.2
+      }
+    },
+    "deepseek-pro": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "thinking": "enabled",
+      "reasoning_effort": "high",
+      "usd_per_million_tokens": {
+        "input_cache_hit": 0.044,
+        "input_cache_miss": 1.32,
+        "output": 3.96
+      }
+    },
+    "openai": {
+      "provider": "openai",
+      "model": "gpt-6.1-sol",
+      "usd_per_million_tokens": {
+        "input_cache_hit": 2.0,
+        "input_cache_miss": 2.0,
+        "output": 10.0
+      },
+      "note": "The stronger OpenAI model the picture checks already use, through the same key."
+    }
+  },
   "prices_checked_on": "2026-10-06",
   "usd_per_million_tokens_at_peak": {
     "input_cache_hit": 0.006,
