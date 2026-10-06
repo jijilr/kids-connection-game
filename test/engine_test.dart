@@ -213,6 +213,35 @@ void main() {
     }
   });
 
+  test('Vegetable plants, Vehicles and Things in the house each open into a board of pictures', () {
+    const circles = <(List<PathFilter>, String)>[
+      ([('kind_of_thing', 'plant'), ('kind_of_plant', 'vegetable')], 'part_we_eat'),
+      ([('kind_of_thing', 'made_by_people'), ('kind_of_made_thing', 'vehicle')], 'where_it_travels'),
+      ([('kind_of_thing', 'made_by_people'), ('kind_of_made_thing', 'household')], 'kind_of_house_thing'),
+    ];
+    for (final (filter, field) in circles) {
+      for (int seed = 0; seed < 20; seed++) {
+        final repo = repoWithSeed(seed);
+        final inside = repo.assembler.boardableDimensions(filter);
+        expect(inside.map((d) => d.id), [field], reason: '$filter');
+        expect(repo.assembler.hasPictureBoard(filter, inside.first), isTrue, reason: field);
+        final board = repo.assembler.assemble(filter: filter, dimension: inside.first)!;
+        expect(board.groups, hasLength(4));
+        expect(board.style, isNotNull, reason: 'drawn, not names only');
+        expect(board.tiles.every(media.hasPicture), isTrue);
+        expect(repo.assembler.secondSolution(board.tiles, board.dimension), isNull, reason: field);
+      }
+    }
+    // the scientist's answer for maize is kept, and sorts nothing
+    expect(thing('maize_plant').valueFor('kind_of_plant'), 'vegetable');
+    expect(thing('maize_plant').valueFor('kind_of_plant_academic'), 'grass_grain');
+    expect(
+        repoWithSeed(1)
+            .assembler
+            .boardableDimensions(const [('kind_of_thing', 'plant')]).map((d) => d.id),
+        isNot(contains('kind_of_plant_academic')));
+  });
+
   test('approved tiles ship with the game and are the first choice of style', () {
     final lotus = media.forEntity(thing('lotus'));
     expect(lotus.art, 'Assets/pictures/lotus.webp');
