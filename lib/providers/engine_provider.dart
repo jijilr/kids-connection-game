@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 import 'package:flutter/foundation.dart';
 import '../models/entity.dart';
@@ -5,6 +6,7 @@ import '../models/dimension.dart';
 import '../services/board_assembler.dart';
 import '../services/content_repository.dart';
 import '../services/media.dart';
+import '../services/progress.dart';
 
 /// One stop on the traversal path: the filter that got us here + the rule this
 /// board sorts by + a breadcrumb label.
@@ -21,12 +23,24 @@ enum SubmitResult { notReady, correct, roundDone, wrong, oneAway }
 /// Game state for the text/picture engine: a 4×4 board assembled fresh from the
 /// graph (one named rule per board) and the filter-stack traversal (dig deeper / back).
 class EngineProvider extends ChangeNotifier {
-  EngineProvider({ContentRepository? repo, Random? random})
-      : _repo = repo ?? ContentRepository(),
-        _random = random ?? Random();
+  EngineProvider({
+    ContentRepository? repo,
+    Random? random,
+    ProgressStore? progressStore,
+    DateTime Function()? clock,
+  })  : _repo = repo ?? ContentRepository(),
+        _random = random ?? Random(),
+        _progressStore = progressStore ?? MemoryProgressStore(),
+        _now = clock ?? DateTime.now;
 
   final ContentRepository _repo;
   final Random _random;
+  final ProgressStore _progressStore;
+  final DateTime Function() _now;
+
+  /// Which boards have been opened and solved on this device. The job that prepares
+  /// the next level reads a saved copy of it to know where the child is.
+  Progress progress = Progress();
   bool isLoading = true;
 
   final List<_Level> _stack = [];
@@ -80,6 +94,7 @@ class EngineProvider extends ChangeNotifier {
 
   Future<void> init() async {
     await _repo.load();
+    progress = await _progressStore.load();
     final start = _repo.settings;
     _stack
       ..clear()
@@ -103,6 +118,10 @@ class EngineProvider extends ChangeNotifier {
     mistakes = 0;
     _order = b == null ? [] : [...b.tiles];
     message = '';
+    if (b != null) {
+      progress.opened(Progress.boardId(lvl.filter), _now());
+      unawaited(_progressStore.save(progress));
+    }
     notifyListeners();
   }
 
@@ -142,6 +161,8 @@ class EngineProvider extends ChangeNotifier {
       solved.add(g);
       selected.clear();
       if (boardFinished) {
+        progress.solved(Progress.boardId(_stack.last.filter), _now());
+        unawaited(_progressStore.save(progress));
         message = 'Solved!';
         notifyListeners();
         return SubmitResult.roundDone;

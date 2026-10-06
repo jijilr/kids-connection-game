@@ -7,6 +7,7 @@ import '../providers/engine_provider.dart';
 import '../services/board_assembler.dart';
 import '../services/sound_service.dart';
 import '../services/speaker.dart';
+import '../widgets/grown_up_panel.dart';
 import '../widgets/solved_group_bar.dart';
 import '../widgets/tile_card.dart';
 
@@ -39,13 +40,21 @@ class EngineScreen extends StatelessWidget {
             ),
           ),
         ),
-        title: Text(
-          'CONNECTIONS',
-          style: GoogleFonts.quicksand(
-            color: Colors.white,
-            fontWeight: FontWeight.w800,
-            fontSize: 20,
-            letterSpacing: 2,
+        // A long press on the title opens the grown-up's panel: out of a small child's way.
+        title: GestureDetector(
+          key: const ValueKey('title'),
+          onLongPress: () => showDialog<void>(
+            context: context,
+            builder: (_) => GrownUpPanel(progress: context.read<EngineProvider>().progress),
+          ),
+          child: Text(
+            'CONNECTIONS',
+            style: GoogleFonts.quicksand(
+              color: Colors.white,
+              fontWeight: FontWeight.w800,
+              fontSize: 20,
+              letterSpacing: 2,
+            ),
           ),
         ),
         centerTitle: true,

@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'providers/engine_provider.dart';
 import 'screens/engine_screen.dart';
+import 'services/progress.dart';
 
 void main() {
   runApp(const ConnectionsGameApp());
@@ -50,7 +51,8 @@ class ConnectionsGameApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => EngineProvider()..init()),
+        ChangeNotifierProvider(
+            create: (_) => EngineProvider(progressStore: DeviceProgressStore())..init()),
       ],
       child: MaterialApp(
         title: 'Connections Game',

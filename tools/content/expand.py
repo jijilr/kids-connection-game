@@ -2,8 +2,11 @@
 chooses which line to analyse. The aim is a well-rounded child, not a specialist, so it
 will not keep digging into the branch he already loves.
 
-It only PROPOSES. It never drafts things, never touches the dictionary, and never
-changes the data. The owner approves; then draft.py / check.py / guard.py do the work.
+It only says which circle is next. It never drafts things, never touches the dictionary,
+and never changes the data. Since the owner's ruling of 7 Oct 2026 nobody approves its
+choice: the job (tools/prepare_next.py) takes the circles in the order given here, and
+the balance rules below are what hold a circle back. The owner can still hold or reject
+a circle himself with `decide`.
 
 Its memory is tools/content/expansion_tree.json. Every run rebuilds the tree from the
 real data (which decides what is open and what is missing) and carries the decisions
@@ -36,6 +39,8 @@ WIDENING_BASE = 0.25      # share of proposals that must widen when branches are
 WIDENING_PER_LEVEL = 0.25  # ...plus this much for each level of gap between them
 AMBIGUITY_LIMIT = 0.5     # above this share of second solutions, a field does not open a circle
 TOP = 5
+HELD_BY_RULES = "held by the rules"
+READY = ("proposable", "approved by the owner")      # the job may prepare these
 
 
 # ------------------------------------------------------------------ the tree
@@ -134,17 +139,21 @@ def judge(circles: dict, branches: dict, old: dict, proposals: dict):
         circle["move"] = "deepening" if opens_a_board and favoured else "widening"
 
         statuses = [d["status"] for d in circle["decisions"] if d.get("status")]
+        last = [d for d in circle["decisions"] if d.get("status")][-1] if statuses else {}
         too_deep = opens_a_board and circle["steps_from_seed"] > shallowest + GAP_LIMIT
         circle.pop("held_by", None)
         if statuses and statuses[-1] == "rejected":
             circle["status"] = "rejected"
-        elif "approved" in statuses:
-            circle["status"] = "approved by the owner"
         elif statuses and statuses[-1] == "waiting":
-            # the owner held it: it is not proposed again until what he waits for has come
-            last = [d for d in circle["decisions"] if d.get("status")][-1]
+            # the owner held it himself: it is left alone until he says otherwise
             circle["status"] = "held"
             circle["held_by"] = "the owner: " + last["why"] + (f"; until {last['retry_when']}" if last.get("retry_when") else "")
+        elif statuses and statuses[-1] == HELD_BY_RULES and last.get("members_then") == circle["members"]:
+            # the rules found no field that passes the tests: tried again once its things have changed
+            circle["status"] = "held"
+            circle["held_by"] = "the rules: " + last["why"]
+        elif "approved" in statuses:
+            circle["status"] = "approved by the owner"
         elif "one_solution" in missing:
             circle["status"] = "held"
             circle["held_by"] = "one clean solution: " + missing["one_solution"]
@@ -176,6 +185,35 @@ def propose(circles: dict, branches: dict) -> tuple:
             chosen.remove(first_wide)
             chosen.insert(0, first_wide)
     return chosen, share
+
+
+def in_order(circles: dict, played: set = None) -> list:
+    """The circles the job prepares, best first: every closed circle one step from an
+    open board that no rule and no decision holds back. `played` are the boards the
+    child has played, from his saved progress: with it, only the circles one step from
+    where he actually is are kept. Without it, he may be anywhere, so all of them are."""
+    def parent(cid):
+        return cid.rsplit("/", 1)[0] if "/" in cid else "seed"
+    ready = [cid for cid, c in circles.items() if c["status"] in READY
+             and (played is None or parent(cid) in played | {"seed"})]
+    # a widening goes before a deepening of the same score, as the balance rule asks
+    return sorted(ready, key=lambda cid: (-circles[cid]["score"], circles[cid]["move"] != "widening"))
+
+
+def record(circle: str, what: str, why: str, status: str = None, **more) -> dict:
+    """Add a decision to a circle and rebuild the tree. Used by the job, which decides by
+    rules, and by `decide` below, which is the owner's own word."""
+    tree = rebuild()
+    if circle not in tree["circles"]:
+        raise SystemExit(f"No circle '{circle}'. Known: {', '.join(tree['circles'])}")
+    decision = {"date": datetime.date.today().isoformat(), "what": what, "why": why, **more}
+    if status:
+        decision["status"] = status
+    if status == "approved":  # remembered for the rhythm rule once the circle is open
+        decision["move"] = tree["circles"][circle].get("move", "")
+    tree["circles"][circle]["decisions"].append(decision)
+    write_json(TREE, tree)
+    return rebuild()
 
 
 # ------------------------------------------------------------------ reporting
@@ -232,14 +270,14 @@ def show(tree: dict):
     print(f"{tree['things']} things, dictionary version {tree['dictionary_version']}")
     print("branches:", {circles[b]['label']: f"level {s['level']}, {s['boards_open']} board(s)"
                         for b, s in tree["branches"].items()})
-    print(f"\nPROPOSALS (at least {tree['rules']['widening_share_now']:.0%} must widen):")
-    for rank, cid in enumerate(tree["proposals"], 1):
+    print(f"\nNEXT, in the order the job takes them:")
+    for rank, cid in enumerate(in_order(circles), 1):
         c = circles[cid]
         print(f"  {rank}. {c['label']}  [{c['score']}]  {c['move']}  - needs {what_is_missing(c)}")
-    if not tree["proposals"]:
+    if not in_order(circles):
         print("  none")
-    print("\nNOT PROPOSED:")
-    waiting = [c for c in circles.values() if c["status"] not in ("open", "proposable")]
+    print("\nHELD BACK:")
+    waiting = [c for c in circles.values() if c["status"] not in ("open",) + READY]
     for c in sorted(waiting, key=lambda c: -c["score"]):
         reason = c.get("held_by") or (c["decisions"][-1]["why"] if c["decisions"] else "")
         print(f"  {c['label']}  [{c['score']}]  {c['status']}  - needs {what_is_missing(c)}"
@@ -248,29 +286,20 @@ def show(tree: dict):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="The expansion engine. It only proposes.")
+    parser = argparse.ArgumentParser(description="The expansion engine. It says which circle is next.")
     sub = parser.add_subparsers(dest="command")
     decide = sub.add_parser("decide", help="record a decision on a circle")
     decide.add_argument("circle")
     decide.add_argument("--what", required=True)
     decide.add_argument("--why", required=True)
-    decide.add_argument("--status", choices=["approved", "rejected", "waiting"])
+    decide.add_argument("--status", choices=["approved", "rejected", "waiting", "released"])
     decide.add_argument("--retry-when")
     args = parser.parse_args()
 
-    tree = rebuild()
     if args.command == "decide":
-        if args.circle not in tree["circles"]:
-            raise SystemExit(f"No circle '{args.circle}'. Known: {', '.join(tree['circles'])}")
-        decision = {"date": datetime.date.today().isoformat(), "what": args.what, "why": args.why}
-        if args.status:
-            decision["status"] = args.status
-        if args.status == "approved":  # remembered for the rhythm rule once the circle is open
-            decision["move"] = tree["circles"][args.circle].get("move", "")
-        if args.retry_when:
-            decision["retry_when"] = args.retry_when
-        tree["circles"][args.circle]["decisions"].append(decision)
-        write_json(TREE, tree)
+        more = {"retry_when": args.retry_when} if args.retry_when else {}
+        tree = record(args.circle, args.what, args.why, args.status, **more)
+    else:
         tree = rebuild()
     show(tree)
 

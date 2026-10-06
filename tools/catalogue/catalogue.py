@@ -73,7 +73,9 @@ LATER = "kept for later"
 NOT_YET = "not in the game yet"
 EXCLUDED = "excluded"
 TAKEN_OUT = "taken out of the game"
+RULES = "held by the rules"
 HELD = (WAITING, LATER, NOT_YET)          # these make up the owner's queue
+OFF_GAME = HELD + (RULES,)                # recorded and held, by the owner or by a rule
 STATUSES = {
     IN_GAME: "The game shows it. It is in the game's copy.",
     WAITING: "A check had a doubt about it. The owner decides.",
@@ -81,6 +83,8 @@ STATUSES = {
     NOT_YET: "Ready, but deliberately not in the game yet.",
     EXCLUDED: "The owner ruled it out.",
     TAKEN_OUT: "It was in the game or the queue and a script took it out. Kept, so nothing is lost.",
+    RULES: "A rule held it, with the reason: a four-year-old would not know it, its facts could not be "
+           "grounded, or no picture of it passed. It is not sent to the owner; a later run may take it up again.",
 }
 # what the game's copy carries for each thing, and nothing else
 GAME_KEYS = ("name", "shown_as", "fields", "familiar", "reviewed", "source", "notes", "drafted_in")
@@ -152,7 +156,10 @@ def queue_view(catalogue: dict) -> dict:
                 item["familiar"] = entry["familiar"]
             held.append(item)
         held += [dict(offer) for offer in entry.get("also_offered", [])]
-    return {"for_the_owner": held}
+    # held by a rule, with the reason: kept here to be seen, and not for the owner to decide
+    by_rules = [{"name": e["name"], "why": e.get("status_why", []), "from": e.get("held_from", "")}
+                for e in catalogue["things"].values() if e["status"] == RULES]
+    return {"for_the_owner": held, "held_by_the_rules": by_rules}
 
 
 # ------------------------------------------------------------------ working out
@@ -235,7 +242,7 @@ def work_out(catalogue: dict):
         waiting = [{"name": e["name"], "status": e["status"],
                     **({"group": str(e["fields"][field])} if field and field in e["fields"] else {})}
                    for e in catalogue["things"].values()
-                   if e["status"] in HELD and e.get("fields")
+                   if e["status"] in OFF_GAME and e.get("fields")
                    and all(e["fields"].get(f) == v for f, v in path)
                    and (cid != "seed")]
         if waiting and not circle["open"]:
@@ -452,7 +459,7 @@ def set_queue(sender: str, entries: list):
         things = catalogue["things"]
         wanted = {slug(e["name"]) for e in entries}
         for key, entry in things.items():
-            if entry.get("held_from") == sender and entry["status"] in HELD and key not in wanted:
+            if entry.get("held_from") == sender and entry["status"] in OFF_GAME and key not in wanted:
                 entry["status"], entry["status_why"] = TAKEN_OUT, [f"no longer held by {sender}, {today()}"]
             entry["also_offered"] = [o for o in entry.get("also_offered", []) if o.get("from") != sender]
             if not entry["also_offered"]:
@@ -596,9 +603,9 @@ def main():
               "the game's copy and the queue.")
     elif command == "circles":
         show_circles(catalogue)
-    elif command == "queue":
+    elif command in ("queue", "held"):      # what waits for the owner; what the rules hold
         for entry in catalogue["things"].values():
-            if entry["status"] in HELD:
+            if entry["status"] in (HELD if command == "queue" else (RULES,)):
                 print(f"  {entry['name']}  [{entry['status']}]  " + "; ".join(entry.get("status_why", [])))
     elif command == "show" and len(args) == 2:
         entry = catalogue["things"].get(slug(args[1]))
