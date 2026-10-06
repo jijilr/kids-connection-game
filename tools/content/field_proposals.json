@@ -5,49 +5,411 @@
     "field": "kind_of_made_thing",
     "wording": "What do we use it for?",
     "values": {
-      "vehicle":   { "label": "Vehicles",            "have": ["car", "bicycle", "bus", "train"] },
-      "toy":       { "label": "Toys",                "have": ["ball", "teddy_bear", "doll"] },
-      "household": { "label": "Things in the house", "have": ["chair", "cup", "spoon"] },
-      "tool":      { "label": "Tools",               "have": ["hammer"] },
-      "building":  { "label": "Buildings",           "have": ["house"] }
+      "vehicle": {
+        "label": "Vehicles",
+        "have": [
+          "car",
+          "bicycle",
+          "bus",
+          "train"
+        ]
+      },
+      "toy": {
+        "label": "Toys",
+        "have": [
+          "ball",
+          "teddy_bear",
+          "doll"
+        ]
+      },
+      "household": {
+        "label": "Things in the house",
+        "have": [
+          "chair",
+          "cup",
+          "spoon"
+        ]
+      },
+      "tool": {
+        "label": "Tools",
+        "have": [
+          "hammer"
+        ]
+      },
+      "building": {
+        "label": "Buildings",
+        "have": [
+          "house"
+        ]
+      }
     },
-    "rulings": ["House gets a fifth value, Buildings, which stays off the board until it has four members."]
+    "rulings": [
+      "House gets a fifth value, Buildings, which stays off the board until it has four members."
+    ]
   },
   "nature_not_alive": {
     "status": "approved by the owner on 2026-10-06",
     "field": "kind_of_nature",
     "wording": "What kind of thing in nature is it?",
     "values": {
-      "sky":    { "label": "Things in the sky", "have": ["sun", "moon", "star", "cloud"] },
-      "water":  { "label": "Water",             "have": ["river"] },
-      "land":   { "label": "Places on land",    "have": ["mountain"] },
-      "ground": { "label": "Rocks and soil",    "have": ["rock", "sand"] }
+      "sky": {
+        "label": "Things in the sky",
+        "have": [
+          "sun",
+          "moon",
+          "star",
+          "cloud"
+        ]
+      },
+      "water": {
+        "label": "Water",
+        "have": [
+          "river"
+        ]
+      },
+      "land": {
+        "label": "Places on land",
+        "have": [
+          "mountain"
+        ]
+      },
+      "ground": {
+        "label": "Rocks and soil",
+        "have": [
+          "rock",
+          "sand"
+        ]
+      }
     },
-    "assign": { "rain": ["sky", "water"] },
-    "rulings": ["Rain fits two groups, so it lists both and stays off this board. It is NOT marked 'depends': that label is only for things experts debate."]
+    "assign": {
+      "rain": [
+        "sky",
+        "water"
+      ]
+    },
+    "rulings": [
+      "Rain fits two groups, so it lists both and stays off this board. It is NOT marked 'depends': that label is only for things experts debate."
+    ]
   },
   "plant": {
     "status": "approved by the owner on 2026-10-06, with the groups he chose",
     "field": "kind_of_plant",
     "wording": "What kind of plant is it?",
     "values": {
-      "tree":        { "label": "Trees",              "have": ["mango_tree", "coconut_tree", "neem_tree", "banana_plant"] },
-      "flower":      { "label": "Flowers",            "have": ["rose", "sunflower", "lotus", "marigold"] },
-      "grass_grain": { "label": "Grasses and grains", "have": ["rice_plant", "grass"] },
-      "vegetable":   { "label": "Vegetable plants",   "have": [] }
+      "tree": {
+        "label": "Trees",
+        "have": [
+          "mango_tree",
+          "coconut_tree",
+          "neem_tree",
+          "banana_plant"
+        ]
+      },
+      "flower": {
+        "label": "Flowers",
+        "have": [
+          "rose",
+          "sunflower",
+          "lotus",
+          "marigold"
+        ]
+      },
+      "grass_grain": {
+        "label": "Grasses and grains",
+        "have": [
+          "rice_plant",
+          "grass"
+        ]
+      },
+      "vegetable": {
+        "label": "Vegetable plants",
+        "have": []
+      }
     },
     "twins": {
-      "tree_academic": { "mango_tree": true, "neem_tree": true, "banana_plant": false, "coconut_tree": "depends" }
+      "tree_academic": {
+        "mango_tree": true,
+        "neem_tree": true,
+        "banana_plant": false,
+        "coconut_tree": "depends"
+      }
     },
     "notes": {
-      "banana_plant": { "tree_academic": "A banana plant has no woody trunk. Its stem is made of tightly rolled leaves, so scientists call it a giant herb." },
-      "coconut_tree": { "tree_academic": "A palm has a tall woody trunk but does not grow wood in rings as other trees do, so botanists differ on whether to call it a true tree." }
+      "banana_plant": {
+        "tree_academic": "A banana plant has no woody trunk. Its stem is made of tightly rolled leaves, so scientists call it a giant herb."
+      },
+      "coconut_tree": {
+        "tree_academic": "A palm has a tall woody trunk but does not grow wood in rings as other trees do, so botanists differ on whether to call it a true tree."
+      }
     },
     "rulings": [
       "The owner replaced 'Plants in pots' (it sorts by where a plant grows, not what kind it is) with Grasses and grains and Vegetable plants.",
       "Banana plant is a tree, with an _academic twin.",
       "The new members of Grasses and grains and Vegetable plants are the owner's own list (see owner_list.py)."
     ],
-    "waiting": ["Cactus", "Tulsi", "Money plant", "Aloe vera"]
+    "waiting": [
+      "Cactus",
+      "Tulsi",
+      "Money plant",
+      "Aloe vera"
+    ]
+  },
+  "plant/vegetable": {
+    "status": "awaiting the owner",
+    "field": "part_we_eat",
+    "wording": "Which part of the plant do we eat?",
+    "proposer_confidence": "strong: four clear groups, each with four or more plants a child sees at home or in the market",
+    "values": {
+      "fruit": {
+        "label": "We eat the fruit",
+        "have": [
+          "tomato_plant",
+          "brinjal_plant",
+          "chilli_plant",
+          "pumpkin_plant"
+        ],
+        "examples": [
+          "Okra plant",
+          "Cucumber plant"
+        ]
+      },
+      "under_the_ground": {
+        "label": "We eat what grows under the ground",
+        "have": [],
+        "examples": [
+          "Carrot plant",
+          "Radish plant",
+          "Beetroot plant",
+          "Potato plant",
+          "Onion plant"
+        ]
+      },
+      "leaves": {
+        "label": "We eat the leaves",
+        "have": [],
+        "examples": [
+          "Spinach plant",
+          "Cabbage plant",
+          "Coriander plant",
+          "Curry leaf plant",
+          "Mint plant"
+        ]
+      },
+      "seeds_or_pods": {
+        "label": "We eat the seeds or pods",
+        "have": [],
+        "examples": [
+          "Pea plant",
+          "Bean plant",
+          "Maize plant",
+          "Drumstick plant"
+        ]
+      }
+    },
+    "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in. 'Under the ground' is used and not 'root', so that potato and onion need no scientist's twin."
+  },
+  "plant/tree": {
+    "status": "awaiting the owner",
+    "field": "tree_gives",
+    "wording": "What do we get from the tree?",
+    "proposer_confidence": "middling: fruit and shade are easy; nuts and wood are thin for a four-year-old, and many trees look alike in a small picture",
+    "values": {
+      "fruit": {
+        "label": "Fruit",
+        "have": [
+          "mango_tree",
+          "banana_plant"
+        ],
+        "examples": [
+          "Jackfruit tree",
+          "Guava tree",
+          "Papaya tree",
+          "Orange tree"
+        ]
+      },
+      "nuts": {
+        "label": "Nuts",
+        "have": [
+          "coconut_tree"
+        ],
+        "examples": [
+          "Cashew tree",
+          "Areca palm",
+          "Almond tree",
+          "Walnut tree"
+        ]
+      },
+      "shade": {
+        "label": "Shade",
+        "have": [
+          "neem_tree"
+        ],
+        "examples": [
+          "Banyan tree",
+          "Peepal tree",
+          "Rain tree",
+          "Tamarind tree"
+        ]
+      },
+      "wood": {
+        "label": "Wood",
+        "have": [],
+        "examples": [
+          "Teak tree",
+          "Pine tree",
+          "Sandalwood tree",
+          "Rubber tree"
+        ]
+      }
+    },
+    "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in."
+  },
+  "plant/flower": {
+    "status": "awaiting the owner",
+    "field": "where_flower_grows",
+    "wording": "Where does the flower grow?",
+    "proposer_confidence": "weak: no four-way split of flowers is both true of every flower and plain to a four-year-old; colour was rejected because a rose is not one colour",
+    "values": {
+      "bush": {
+        "label": "On a bush",
+        "have": [
+          "rose"
+        ],
+        "examples": [
+          "Hibiscus",
+          "Jasmine",
+          "Ixora"
+        ]
+      },
+      "water": {
+        "label": "In water",
+        "have": [
+          "lotus"
+        ],
+        "examples": [
+          "Water lily",
+          "Water hyacinth"
+        ]
+      },
+      "tall_stem": {
+        "label": "On one tall stem",
+        "have": [
+          "sunflower"
+        ],
+        "examples": [
+          "Tulip",
+          "Lily",
+          "Tuberose"
+        ]
+      },
+      "tree": {
+        "label": "On a tree",
+        "have": [],
+        "examples": [
+          "Gulmohar",
+          "Champa",
+          "Ashoka"
+        ]
+      }
+    },
+    "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in. Marigold fits none of these cleanly."
+  },
+  "plant/grass_grain": {
+    "status": "awaiting the owner",
+    "field": "grass_gives",
+    "wording": "What do we get from it?",
+    "proposer_confidence": "weak: only the grains reach four familiar members",
+    "values": {
+      "grain": {
+        "label": "Grain to eat",
+        "have": [
+          "rice_plant",
+          "wheat"
+        ],
+        "examples": [
+          "Maize plant",
+          "Ragi plant",
+          "Barley"
+        ]
+      },
+      "sweet": {
+        "label": "Something sweet",
+        "have": [
+          "sugarcane"
+        ],
+        "examples": []
+      },
+      "making": {
+        "label": "Something to build or weave with",
+        "have": [
+          "bamboo"
+        ],
+        "examples": [
+          "Reed",
+          "Cane"
+        ]
+      },
+      "grazing": {
+        "label": "Food for animals",
+        "have": [
+          "grass"
+        ],
+        "examples": [
+          "Fodder grass",
+          "Hay"
+        ]
+      }
+    },
+    "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in."
+  },
+  "nature_not_alive/sky": {
+    "status": "awaiting the owner",
+    "field": "kind_of_sky_thing",
+    "wording": "What kind of thing in the sky is it?",
+    "proposer_confidence": "weak: a four-year-old knows about eight things in the sky, not sixteen",
+    "values": {
+      "light": {
+        "label": "Lights far away",
+        "have": [
+          "sun",
+          "moon",
+          "star"
+        ],
+        "examples": [
+          "Planet",
+          "Shooting star",
+          "Comet"
+        ]
+      },
+      "weather": {
+        "label": "Weather",
+        "have": [
+          "cloud"
+        ],
+        "examples": [
+          "Rainbow",
+          "Lightning",
+          "Fog"
+        ]
+      },
+      "falling": {
+        "label": "Things that fall from the sky",
+        "have": [],
+        "examples": [
+          "Snow",
+          "Hail"
+        ]
+      },
+      "time_of_day": {
+        "label": "Times of day",
+        "have": [],
+        "examples": [
+          "Sunrise",
+          "Sunset",
+          "Night sky"
+        ]
+      }
+    },
+    "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in. Rain is already listed as both sky and water, so it stays off this board."
   }
 }
