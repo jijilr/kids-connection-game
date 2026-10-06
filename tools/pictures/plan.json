@@ -674,7 +674,10 @@
             "https://floridamuseum.ufl.edu/100-years/object/titanoboa",
             "https://news.unl.edu/newsrooms/unltoday/article/boa-constructors-titanoboa-arrives-is-assembled-at-morrill-hall"
           ],
-          "research_file": "sea_reptiles_and_snakes.json"
+          "research_file": "sea_reptiles_and_snakes.json",
+          "must_show": [
+            "A very thick, heavy-bodied snake shaped like a boa or an anaconda"
+          ]
         },
         {
           "thing": "vasuki_indicus",
@@ -699,7 +702,10 @@
             "https://en.wikipedia.org/wiki/Vasuki_indicus",
             "https://www.sci.news/paleontology/vasuki-indicus-12873.html"
           ],
-          "research_file": "sea_reptiles_and_snakes.json"
+          "research_file": "sea_reptiles_and_snakes.json",
+          "must_show": [
+            "A very thick, round-bodied snake shaped and patterned like a python"
+          ]
         },
         {
           "thing": "frog",
@@ -740,6 +746,9 @@
             "https://news.unl.edu/newsrooms/unltoday/article/boa-constructors-titanoboa-arrives-is-assembled-at-morrill-hall"
           ],
           "research_file": "sea_reptiles_and_snakes.json",
+          "must_show": [
+            "A very thick, heavy-bodied snake shaped like a boa or an anaconda"
+          ],
           "look_closely": "a second try; the better of the two is kept"
         },
         {
@@ -766,6 +775,9 @@
             "https://www.sci.news/paleontology/vasuki-indicus-12873.html"
           ],
           "research_file": "sea_reptiles_and_snakes.json",
+          "must_show": [
+            "A very thick, round-bodied snake shaped and patterned like a python"
+          ],
           "look_closely": "a second try; the better of the two is kept"
         },
         {
@@ -807,7 +819,11 @@
             "https://australian.museum/learn/dinosaurs/fact-sheets/tyrannosaurus-rex/",
             "https://www.fieldmuseum.org/blog/sue-t-rex"
           ],
-          "research_file": "hunters_and_armoured.json"
+          "research_file": "hunters_and_armoured.json",
+          "must_show": [
+            "A deep, heavy skull, very wide at the back",
+            "Very small arms"
+          ]
         },
         {
           "thing": "giganotosaurus",
@@ -835,7 +851,10 @@
             "https://en.wikipedia.org/wiki/Giganotosaurus",
             "https://australian.museum/learn/dinosaurs/fact-sheets/giganotosaurus-carolinii/"
           ],
-          "research_file": "hunters_and_armoured.json"
+          "research_file": "hunters_and_armoured.json",
+          "must_show": [
+            "A long, low skull, clearly longer than it is deep"
+          ]
         },
         {
           "thing": "allosaurus",
@@ -862,7 +881,11 @@
             "https://www.nhm.ac.uk/discover/dino-directory/allosaurus.html",
             "https://en.wikipedia.org/wiki/Allosaurus"
           ],
-          "research_file": "hunters_and_armoured.json"
+          "research_file": "hunters_and_armoured.json",
+          "must_show": [
+            "Short horns above the eyes",
+            "Arms with large curved claws"
+          ]
         },
         {
           "thing": "spinosaurus",
@@ -889,7 +912,13 @@
             "https://www.nhm.ac.uk/discover/dino-directory/spinosaurus.html",
             "https://en.wikipedia.org/wiki/Spinosaurus"
           ],
-          "research_file": "hunters_and_armoured.json"
+          "research_file": "hunters_and_armoured.json",
+          "must_show": [
+            "A tall sail along the back",
+            "A long, low, narrow crocodile-like snout",
+            "Short back legs",
+            "A tall tail flattened from side to side like a paddle"
+          ]
         },
         {
           "thing": "velociraptor",
@@ -915,7 +944,12 @@
             "https://www.nhm.ac.uk/discover/dino-directory/velociraptor.html",
             "https://en.wikipedia.org/wiki/Velociraptor"
           ],
-          "research_file": "hunters_and_armoured.json"
+          "research_file": "hunters_and_armoured.json",
+          "must_show": [
+            "A body covered in feathers",
+            "A long stiff tail held straight out behind",
+            "A raised sickle-shaped claw on the second toe of at least one foot"
+          ]
         },
         {
           "thing": "triceratops",
@@ -942,7 +976,12 @@
             "https://www.nhm.ac.uk/discover/dino-directory/triceratops.html",
             "https://en.wikipedia.org/wiki/Triceratops"
           ],
-          "research_file": "hunters_and_armoured.json"
+          "research_file": "hunters_and_armoured.json",
+          "must_show": [
+            "Two long brow horns and one short nose horn",
+            "A large solid neck frill",
+            "A parrot-like beak"
+          ]
         },
         {
           "thing": "stegosaurus",
@@ -969,7 +1008,11 @@
             "https://www.nhm.ac.uk/discover/dino-directory/stegosaurus.html",
             "https://en.wikipedia.org/wiki/Stegosaurus"
           ],
-          "research_file": "hunters_and_armoured.json"
+          "research_file": "hunters_and_armoured.json",
+          "must_show": [
+            "Two rows of tall upright plates along the back",
+            "Spikes near the tip of the tail"
+          ]
         },
         {
           "thing": "ankylosaurus",
@@ -996,7 +1039,11 @@
             "https://www.nhm.ac.uk/discover/dino-directory/ankylosaurus.html",
             "https://en.wikipedia.org/wiki/Ankylosaurus"
           ],
-          "research_file": "hunters_and_armoured.json"
+          "research_file": "hunters_and_armoured.json",
+          "must_show": [
+            "A low, wide, flat-backed body covered in bony armour",
+            "A large club at the tip of the tail"
+          ]
         },
         {
           "thing": "parasaurolophus",
@@ -1022,7 +1069,11 @@
             "https://www.nhm.ac.uk/discover/dino-directory/parasaurolophus.html",
             "https://en.wikipedia.org/wiki/Parasaurolophus"
           ],
-          "research_file": "hunters_and_armoured.json"
+          "research_file": "hunters_and_armoured.json",
+          "must_show": [
+            "One long tube-shaped crest sweeping up and back from the head",
+            "A flat duck-like beak"
+          ]
         }
       ]
     },
@@ -1057,7 +1108,11 @@
             "https://en.wikipedia.org/wiki/Brachiosaurus",
             "https://en.wikipedia.org/wiki/Sauropoda"
           ],
-          "research_file": "long_necks_dome_head_flyers.json"
+          "research_file": "long_necks_dome_head_flyers.json",
+          "must_show": [
+            "Front legs longer than the back legs, so the shoulders stand above the hips and the back slopes down to the tail",
+            "A very long neck rising steeply upward"
+          ]
         },
         {
           "thing": "brontosaurus",
@@ -1085,7 +1140,12 @@
             "https://www.britannica.com/animal/brontosaurus",
             "https://en.wikipedia.org/wiki/Brontosaurus"
           ],
-          "research_file": "long_necks_dome_head_flyers.json"
+          "research_file": "long_necks_dome_head_flyers.json",
+          "must_show": [
+            "A heavy body with a level back, the shoulders no higher than the hips",
+            "A strikingly thick, deep neck held forward",
+            "A long tail tapering to a thin whip"
+          ]
         },
         {
           "thing": "diplodocus",
@@ -1112,7 +1172,12 @@
             "https://en.wikipedia.org/wiki/Sauropoda",
             "https://news.yale.edu/2022/11/11/strike-pose-yales-iconic-dinosaur-skeletons-get-new-look"
           ],
-          "research_file": "long_necks_dome_head_flyers.json"
+          "research_file": "long_necks_dome_head_flyers.json",
+          "must_show": [
+            "A slim, light body with a level back",
+            "A long thin neck held roughly level",
+            "A very long tail tapering to a thin whip"
+          ]
         },
         {
           "thing": "argentinosaurus",
@@ -1139,7 +1204,12 @@
             "https://en.wikipedia.org/wiki/Argentinosaurus",
             "https://en.wikipedia.org/wiki/Sauropoda"
           ],
-          "research_file": "long_necks_dome_head_flyers.json"
+          "research_file": "long_necks_dome_head_flyers.json",
+          "must_show": [
+            "An enormously massive, broad, deep body on four thick pillar-like legs",
+            "Shoulders about level with the hips, not raised like a giraffe's",
+            "No thin whip end to the tail, and no spines, sail or armour"
+          ]
         },
         {
           "thing": "amargasaurus",
@@ -1166,7 +1236,11 @@
             "https://museum.wa.gov.au/explore/dinosaur-discovery/amargasaurus",
             "https://en.wikipedia.org/wiki/Amargasaurus"
           ],
-          "research_file": "long_necks_dome_head_flyers.json"
+          "research_file": "long_necks_dome_head_flyers.json",
+          "must_show": [
+            "Two rows of tall spines along the top of the neck",
+            "A short neck for a long-neck, carried low"
+          ]
         },
         {
           "thing": "pachycephalosaurus",
@@ -1191,7 +1265,11 @@
             "https://www.nhm.ac.uk/discover/dino-directory/pachycephalosaurus.html",
             "https://en.wikipedia.org/wiki/Pachycephalosaurus"
           ],
-          "research_file": "long_necks_dome_head_flyers.json"
+          "research_file": "long_necks_dome_head_flyers.json",
+          "must_show": [
+            "A large rounded dome of bone on top of the head",
+            "Walking on two back legs"
+          ]
         },
         {
           "thing": "pterodactylus",
@@ -1220,7 +1298,12 @@
             "https://en.wikipedia.org/wiki/Pterodactylus",
             "https://en.wikipedia.org/wiki/Pterosaur"
           ],
-          "research_file": "long_necks_dome_head_flyers.json"
+          "research_file": "long_necks_dome_head_flyers.json",
+          "must_show": [
+            "Jaws with teeth",
+            "Only a low crest on top of the head, with no long crest pointing backward",
+            "A short stub of a tail"
+          ]
         },
         {
           "thing": "pteranodon",
@@ -1250,7 +1333,12 @@
             "https://en.wikipedia.org/wiki/Pteranodon",
             "https://en.wikipedia.org/wiki/Pterosaur"
           ],
-          "research_file": "long_necks_dome_head_flyers.json"
+          "research_file": "long_necks_dome_head_flyers.json",
+          "must_show": [
+            "A long toothless beak",
+            "A long crest sweeping backward from the back of the skull",
+            "A very short tail"
+          ]
         },
         {
           "thing": "quetzalcoatlus",
@@ -1280,7 +1368,12 @@
             "https://www.britannica.com/animal/Quetzalcoatlus",
             "https://en.wikipedia.org/wiki/Quetzalcoatlus"
           ],
-          "research_file": "long_necks_dome_head_flyers.json"
+          "research_file": "long_necks_dome_head_flyers.json",
+          "must_show": [
+            "A very long, straight neck",
+            "A long, pointed, toothless beak",
+            "No long crest pointing backward"
+          ]
         }
       ]
     },
@@ -1317,7 +1410,12 @@
             "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0011998",
             "https://phys.org/news/2013-09-mosasaur-fossil-early-lizards-tails.html"
           ],
-          "research_file": "sea_reptiles_and_snakes.json"
+          "research_file": "sea_reptiles_and_snakes.json",
+          "must_show": [
+            "A short blunt snout with teeth right up to its tip",
+            "Four paddle-shaped flippers",
+            "A tail ending in a two-lobed fin"
+          ]
         },
         {
           "thing": "tylosaurus",
@@ -1346,7 +1444,12 @@
             "https://en.wikipedia.org/wiki/Mosasaur",
             "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0011998"
           ],
-          "research_file": "sea_reptiles_and_snakes.json"
+          "research_file": "sea_reptiles_and_snakes.json",
+          "must_show": [
+            "A long narrow snout whose tip sticks out past the front teeth as a blunt toothless end",
+            "Four paddle-shaped flippers",
+            "A tail ending in a two-lobed fin"
+          ]
         },
         {
           "thing": "kronosaurus",
@@ -1374,7 +1477,12 @@
             "https://www.museum.qld.gov.au/collections-and-research/explore/marine-reptiles/",
             "https://plesiosauria.com/directory/genera/kronosaurus/"
           ],
-          "research_file": "sea_reptiles_and_snakes.json"
+          "research_file": "sea_reptiles_and_snakes.json",
+          "must_show": [
+            "An enormous head, about a quarter of the animal's length",
+            "A very short neck",
+            "Four large flippers and a short tail with no big tail fin"
+          ]
         },
         {
           "thing": "plesiosaurus",
@@ -1403,7 +1511,12 @@
             "https://en.wikipedia.org/wiki/Plesiosaur",
             "https://plesiosauria.com/directory/genera/plesiosaurus/"
           ],
-          "research_file": "sea_reptiles_and_snakes.json"
+          "research_file": "sea_reptiles_and_snakes.json",
+          "must_show": [
+            "A small head on a long neck",
+            "A neck about as long as the body and tail together, not twice as long",
+            "Four flippers and a short tail"
+          ]
         },
         {
           "thing": "elasmosaurus",
@@ -1431,7 +1544,12 @@
             "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0070877",
             "https://en.wikipedia.org/wiki/Plesiosaur"
           ],
-          "research_file": "sea_reptiles_and_snakes.json"
+          "research_file": "sea_reptiles_and_snakes.json",
+          "must_show": [
+            "A very small head on an extremely long neck",
+            "A neck clearly longer than the body and tail together",
+            "Four flippers and a short tail"
+          ]
         },
         {
           "thing": "mixosaurus",
@@ -1459,7 +1577,12 @@
             "https://www.app.pan.pl/archive/published/app65/app007312020.html",
             "https://ucmp.berkeley.edu/diapsids/ichthyosauria.html"
           ],
-          "research_file": "sea_reptiles_and_snakes.json"
+          "research_file": "sea_reptiles_and_snakes.json",
+          "must_show": [
+            "A fish-shaped body with long narrow jaws",
+            "An upright fin on the back",
+            "A long tail with a low triangular fin, not a tall crescent"
+          ]
         },
         {
           "thing": "rhamphorhynchus",
@@ -1489,7 +1612,12 @@
             "https://en.wikipedia.org/wiki/Rhamphorhynchus",
             "https://www.nhm.ac.uk/discover/the-truth-about-pterosaurs.html"
           ],
-          "research_file": "long_necks_dome_head_flyers.json"
+          "research_file": "long_necks_dome_head_flyers.json",
+          "must_show": [
+            "A long thin tail ending in a diamond-shaped vane",
+            "Teeth showing in the jaws",
+            "No crest on the head"
+          ]
         },
         {
           "thing": "dimorphodon",
@@ -1517,7 +1645,12 @@
             "https://en.wikipedia.org/wiki/Dimorphodon",
             "https://en.wikipedia.org/wiki/Pterosaur"
           ],
-          "research_file": "long_necks_dome_head_flyers.json"
+          "research_file": "long_necks_dome_head_flyers.json",
+          "must_show": [
+            "A very large, deep head",
+            "Long fangs at the front of the jaws",
+            "A long straight tail with no vane at its tip"
+          ]
         },
         {
           "thing": "tylosaurus",
@@ -1547,6 +1680,11 @@
             "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0011998"
           ],
           "research_file": "sea_reptiles_and_snakes.json",
+          "must_show": [
+            "A long narrow snout whose tip sticks out past the front teeth as a blunt toothless end",
+            "Four paddle-shaped flippers",
+            "A tail ending in a two-lobed fin"
+          ],
           "look_closely": "a second try; the better of the two is kept"
         }
       ]
@@ -1626,7 +1764,13 @@
             "https://www.nhm.ac.uk/discover/dino-directory/spinosaurus.html",
             "https://en.wikipedia.org/wiki/Spinosaurus"
           ],
-          "research_file": "hunters_and_armoured.json"
+          "research_file": "hunters_and_armoured.json",
+          "must_show": [
+            "A tall sail along the back",
+            "A long, low, narrow crocodile-like snout",
+            "Short back legs",
+            "A tall tail flattened from side to side like a paddle"
+          ]
         },
         {
           "thing": "brontosaurus",
@@ -1654,7 +1798,12 @@
             "https://www.britannica.com/animal/brontosaurus",
             "https://en.wikipedia.org/wiki/Brontosaurus"
           ],
-          "research_file": "long_necks_dome_head_flyers.json"
+          "research_file": "long_necks_dome_head_flyers.json",
+          "must_show": [
+            "A heavy body with a level back, the shoulders no higher than the hips",
+            "A strikingly thick, deep neck held forward",
+            "A long tail tapering to a thin whip"
+          ]
         },
         {
           "thing": "pterodactylus",
@@ -1683,7 +1832,12 @@
             "https://en.wikipedia.org/wiki/Pterodactylus",
             "https://en.wikipedia.org/wiki/Pterosaur"
           ],
-          "research_file": "long_necks_dome_head_flyers.json"
+          "research_file": "long_necks_dome_head_flyers.json",
+          "must_show": [
+            "Jaws with teeth",
+            "Only a low crest on top of the head, with no long crest pointing backward",
+            "A short stub of a tail"
+          ]
         },
         {
           "thing": "tylosaurus",
@@ -1712,7 +1866,12 @@
             "https://en.wikipedia.org/wiki/Mosasaur",
             "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0011998"
           ],
-          "research_file": "sea_reptiles_and_snakes.json"
+          "research_file": "sea_reptiles_and_snakes.json",
+          "must_show": [
+            "A long narrow snout whose tip sticks out past the front teeth as a blunt toothless end",
+            "Four paddle-shaped flippers",
+            "A tail ending in a two-lobed fin"
+          ]
         },
         {
           "thing": "mixosaurus",
@@ -1740,7 +1899,12 @@
             "https://www.app.pan.pl/archive/published/app65/app007312020.html",
             "https://ucmp.berkeley.edu/diapsids/ichthyosauria.html"
           ],
-          "research_file": "sea_reptiles_and_snakes.json"
+          "research_file": "sea_reptiles_and_snakes.json",
+          "must_show": [
+            "A fish-shaped body with long narrow jaws",
+            "An upright fin on the back",
+            "A long tail with a low triangular fin, not a tall crescent"
+          ]
         },
         {
           "thing": "rhamphorhynchus",
@@ -1770,7 +1934,12 @@
             "https://en.wikipedia.org/wiki/Rhamphorhynchus",
             "https://www.nhm.ac.uk/discover/the-truth-about-pterosaurs.html"
           ],
-          "research_file": "long_necks_dome_head_flyers.json"
+          "research_file": "long_necks_dome_head_flyers.json",
+          "must_show": [
+            "A long thin tail ending in a diamond-shaped vane",
+            "Teeth showing in the jaws",
+            "No crest on the head"
+          ]
         },
         {
           "thing": "dimorphodon",
@@ -1798,7 +1967,12 @@
             "https://en.wikipedia.org/wiki/Dimorphodon",
             "https://en.wikipedia.org/wiki/Pterosaur"
           ],
-          "research_file": "long_necks_dome_head_flyers.json"
+          "research_file": "long_necks_dome_head_flyers.json",
+          "must_show": [
+            "A very large, deep head",
+            "Long fangs at the front of the jaws",
+            "A long straight tail with no vane at its tip"
+          ]
         },
         {
           "thing": "spinosaurus",
@@ -1826,6 +2000,12 @@
             "https://en.wikipedia.org/wiki/Spinosaurus"
           ],
           "research_file": "hunters_and_armoured.json",
+          "must_show": [
+            "A tall sail along the back",
+            "A long, low, narrow crocodile-like snout",
+            "Short back legs",
+            "A tall tail flattened from side to side like a paddle"
+          ],
           "look_closely": "a second try; the better of the two is kept"
         },
         {
@@ -1856,6 +2036,11 @@
             "https://en.wikipedia.org/wiki/Pterosaur"
           ],
           "research_file": "long_necks_dome_head_flyers.json",
+          "must_show": [
+            "Jaws with teeth",
+            "Only a low crest on top of the head, with no long crest pointing backward",
+            "A short stub of a tail"
+          ],
           "look_closely": "a second try; the better of the two is kept"
         }
       ]

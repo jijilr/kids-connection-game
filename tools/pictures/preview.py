@@ -61,9 +61,11 @@ def for_owner(records: dict) -> Image.Image:
     waiting = []
     for tile_id, tile in records["tiles"].items():
         check = tile.get("feature_check")
-        if check and not check["passed"] and tile["review"] == "waiting for the owner":
-            only_sources = all(r.startswith("the sources disagree") for r in check["reasons"])
-            waiting.append((not only_sources, tile_id, tile))
+        if not check or tile["review"] != "waiting for the owner":
+            continue
+        failed = any(not r.startswith("the sources disagree") for r in check["reasons"])
+        if failed or check.get("sources_disagree") or not check["passed"]:
+            waiting.append((failed, tile_id, tile))
     waiting.sort(key=lambda w: (w[0], w[1]))
     columns = 5
     rows = -(-len(waiting) // columns)

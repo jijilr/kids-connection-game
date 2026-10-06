@@ -589,7 +589,7 @@
       },
       "cost_usd": 0.1832,
       "vision_check_cost_usd": 0.00069,
-      "feature_check_cost_usd": 0.05472
+      "feature_check_cost_usd": 0.12205
     },
     "animals_6_01": {
       "plan_key": "animals_6",
@@ -748,7 +748,7 @@
       },
       "cost_usd": 0.1859,
       "vision_check_cost_usd": 0.00082,
-      "feature_check_cost_usd": 0.05244
+      "feature_check_cost_usd": 0.11425
     }
   },
   "tiles": {
@@ -1230,7 +1230,7 @@
       "reviewed_on": "2026-10-06"
     },
     "trial_nature_9_01_c1": {
-      "thing_id": "river",
+      "thing_id": null,
       "expected_thing": "river",
       "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c1.png",
       "master_size": [
@@ -1271,11 +1271,10 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "replaced by the newer, larger tile from nature_1_large_01, by the owner's ruling of 2026-10-06",
       "history": [],
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/river.webp"
+      "reviewed_on": "2026-10-06"
     },
     "trial_nature_9_01_c2": {
       "thing_id": null,
@@ -1325,7 +1324,7 @@
       "reviewed_on": "2026-10-06"
     },
     "trial_nature_9_01_c3": {
-      "thing_id": "lake",
+      "thing_id": null,
       "expected_thing": "lake",
       "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c3.png",
       "master_size": [
@@ -1366,14 +1365,13 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "replaced by the newer, larger tile from nature_1_large_01, by the owner's ruling of 2026-10-06",
       "history": [],
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/lake.webp"
+      "reviewed_on": "2026-10-06"
     },
     "trial_nature_9_01_c4": {
-      "thing_id": "mountain",
+      "thing_id": null,
       "expected_thing": "mountain",
       "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c4.png",
       "master_size": [
@@ -1414,14 +1412,13 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "replaced by the newer, larger tile from nature_1_large_01, by the owner's ruling of 2026-10-06",
       "history": [],
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/mountain.webp"
+      "reviewed_on": "2026-10-06"
     },
     "trial_nature_9_01_c5": {
-      "thing_id": "hill",
+      "thing_id": null,
       "expected_thing": "hill",
       "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c5.png",
       "master_size": [
@@ -1462,14 +1459,13 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "replaced by the newer, larger tile from nature_1_large_01, by the owner's ruling of 2026-10-06",
       "history": [],
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/hill.webp"
+      "reviewed_on": "2026-10-06"
     },
     "trial_nature_9_01_c6": {
-      "thing_id": "volcano",
+      "thing_id": null,
       "expected_thing": "volcano",
       "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c6.png",
       "master_size": [
@@ -1510,14 +1506,13 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "replaced by the newer, larger tile from nature_1_large_01, by the owner's ruling of 2026-10-06",
       "history": [],
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/volcano.webp"
+      "reviewed_on": "2026-10-06"
     },
     "trial_nature_9_01_c7": {
-      "thing_id": "rock",
+      "thing_id": null,
       "expected_thing": "rock",
       "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c7.png",
       "master_size": [
@@ -1558,14 +1553,13 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "replaced by the newer, larger tile from nature_1_large_01, by the owner's ruling of 2026-10-06",
       "history": [],
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/rock.webp"
+      "reviewed_on": "2026-10-06"
     },
     "trial_nature_9_01_c8": {
-      "thing_id": "sand",
+      "thing_id": null,
       "expected_thing": "sand",
       "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c8.png",
       "master_size": [
@@ -1606,14 +1600,13 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "replaced by the newer, larger tile from nature_1_large_01, by the owner's ruling of 2026-10-06",
       "history": [],
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/sand.webp"
+      "reviewed_on": "2026-10-06"
     },
     "trial_nature_9_01_c9": {
-      "thing_id": "soil",
+      "thing_id": null,
       "expected_thing": "soil",
       "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c9.png",
       "master_size": [
@@ -1654,11 +1647,10 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "replaced by the newer, larger tile from nature_1_large_01, by the owner's ruling of 2026-10-06",
       "history": [],
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/soil.webp"
+      "reviewed_on": "2026-10-06"
     },
     "trial_plants_4_01_c1": {
       "thing_id": null,
@@ -2305,7 +2297,7 @@
       "published_file": "Assets/pictures/brinjal_plant.webp"
     },
     "plants_2_01_c1": {
-      "thing_id": null,
+      "thing_id": "neem_tree",
       "expected_thing": "neem_tree",
       "master_file": "tools/pictures/tiles/masters/plants_2_01_c1.png",
       "master_size": [
@@ -2347,12 +2339,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/neem_tree.webp"
     },
     "plants_2_01_c2": {
-      "thing_id": null,
+      "thing_id": "sunflower",
       "expected_thing": "sunflower",
       "master_file": "tools/pictures/tiles/masters/plants_2_01_c2.png",
       "master_size": [
@@ -2394,12 +2388,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/sunflower.webp"
     },
     "plants_2_01_c3": {
-      "thing_id": null,
+      "thing_id": "marigold",
       "expected_thing": "marigold",
       "master_file": "tools/pictures/tiles/masters/plants_2_01_c3.png",
       "master_size": [
@@ -2441,9 +2437,11 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/marigold.webp"
     },
     "plants_2_01_c4": {
       "thing_id": null,
@@ -2488,12 +2486,24 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
-      "review_note": "",
-      "history": []
+      "review": "set aside",
+      "review_note": "a second try; the check rated plants_2_01_c9 better: The flat green patch looks like the grass children commonly see on a lawn.",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "plants_2_01_c4",
+          "plants_2_01_c9"
+        ],
+        "chosen": false,
+        "why": "The flat green patch looks like the grass children commonly see on a lawn.",
+        "cost_usd": 9e-05
+      },
+      "reviewed_on": "2026-10-06"
     },
     "plants_2_01_c5": {
-      "thing_id": null,
+      "thing_id": "wheat",
       "expected_thing": "wheat",
       "master_file": "tools/pictures/tiles/masters/plants_2_01_c5.png",
       "master_size": [
@@ -2535,12 +2545,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/wheat.webp"
     },
     "plants_2_01_c6": {
-      "thing_id": null,
+      "thing_id": "bamboo",
       "expected_thing": "bamboo",
       "master_file": "tools/pictures/tiles/masters/plants_2_01_c6.png",
       "master_size": [
@@ -2582,12 +2594,14 @@
         "matches_cell": true,
         "problems": "cut off"
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/bamboo.webp"
     },
     "plants_2_01_c7": {
-      "thing_id": null,
+      "thing_id": "chilli_plant",
       "expected_thing": "chilli_plant",
       "master_file": "tools/pictures/tiles/masters/plants_2_01_c7.png",
       "master_size": [
@@ -2629,12 +2643,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/chilli_plant.webp"
     },
     "plants_2_01_c8": {
-      "thing_id": null,
+      "thing_id": "pumpkin_plant",
       "expected_thing": "pumpkin_plant",
       "master_file": "tools/pictures/tiles/masters/plants_2_01_c8.png",
       "master_size": [
@@ -2676,12 +2692,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/pumpkin_plant.webp"
     },
     "plants_2_01_c9": {
-      "thing_id": null,
+      "thing_id": "grass",
       "expected_thing": "grass",
       "master_file": "tools/pictures/tiles/masters/plants_2_01_c9.png",
       "master_size": [
@@ -2723,12 +2741,25 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
-      "review_note": "",
-      "history": []
+      "review": "approved",
+      "review_note": "chosen over plants_2_01_c4 by the check, under the owner's ruling of 2026-10-06: The flat green patch looks like the grass children commonly see on a lawn.",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "plants_2_01_c4",
+          "plants_2_01_c9"
+        ],
+        "chosen": true,
+        "why": "The flat green patch looks like the grass children commonly see on a lawn.",
+        "cost_usd": 9e-05
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/grass.webp"
     },
     "nature_1_large_01_c1": {
-      "thing_id": null,
+      "thing_id": "river",
       "expected_thing": "river",
       "master_file": "tools/pictures/tiles/masters/nature_1_large_01_c1.png",
       "master_size": [
@@ -2770,9 +2801,11 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/river.webp"
     },
     "nature_1_large_01_c2": {
       "thing_id": null,
@@ -2817,12 +2850,24 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
-      "review_note": "",
-      "history": []
+      "review": "set aside",
+      "review_note": "a second try; the check rated nature_2_01_c6 better: The clearer, more visible waves make it read as the sea at a glance, while its edges stay soft.",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "nature_1_large_01_c2",
+          "nature_2_01_c6"
+        ],
+        "chosen": false,
+        "why": "The clearer, more visible waves make it read as the sea at a glance, while its edges stay soft.",
+        "cost_usd": 9e-05
+      },
+      "reviewed_on": "2026-10-06"
     },
     "nature_1_large_01_c3": {
-      "thing_id": null,
+      "thing_id": "lake",
       "expected_thing": "lake",
       "master_file": "tools/pictures/tiles/masters/nature_1_large_01_c3.png",
       "master_size": [
@@ -2864,12 +2909,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/lake.webp"
     },
     "nature_1_large_01_c4": {
-      "thing_id": null,
+      "thing_id": "mountain",
       "expected_thing": "mountain",
       "master_file": "tools/pictures/tiles/masters/nature_1_large_01_c4.png",
       "master_size": [
@@ -2911,12 +2958,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/mountain.webp"
     },
     "nature_1_large_01_c5": {
-      "thing_id": null,
+      "thing_id": "hill",
       "expected_thing": "hill",
       "master_file": "tools/pictures/tiles/masters/nature_1_large_01_c5.png",
       "master_size": [
@@ -2958,12 +3007,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/hill.webp"
     },
     "nature_1_large_01_c6": {
-      "thing_id": null,
+      "thing_id": "volcano",
       "expected_thing": "volcano",
       "master_file": "tools/pictures/tiles/masters/nature_1_large_01_c6.png",
       "master_size": [
@@ -3005,12 +3056,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/volcano.webp"
     },
     "nature_1_large_01_c7": {
-      "thing_id": null,
+      "thing_id": "rock",
       "expected_thing": "rock",
       "master_file": "tools/pictures/tiles/masters/nature_1_large_01_c7.png",
       "master_size": [
@@ -3052,12 +3105,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/rock.webp"
     },
     "nature_1_large_01_c8": {
-      "thing_id": null,
+      "thing_id": "sand",
       "expected_thing": "sand",
       "master_file": "tools/pictures/tiles/masters/nature_1_large_01_c8.png",
       "master_size": [
@@ -3099,12 +3154,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/sand.webp"
     },
     "nature_1_large_01_c9": {
-      "thing_id": null,
+      "thing_id": "soil",
       "expected_thing": "soil",
       "master_file": "tools/pictures/tiles/masters/nature_1_large_01_c9.png",
       "master_size": [
@@ -3146,12 +3203,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/soil.webp"
     },
     "nature_2_01_c1": {
-      "thing_id": null,
+      "thing_id": "sun",
       "expected_thing": "sun",
       "master_file": "tools/pictures/tiles/masters/nature_2_01_c1.png",
       "master_size": [
@@ -3193,12 +3252,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/sun.webp"
     },
     "nature_2_01_c2": {
-      "thing_id": null,
+      "thing_id": "moon",
       "expected_thing": "moon",
       "master_file": "tools/pictures/tiles/masters/nature_2_01_c2.png",
       "master_size": [
@@ -3240,12 +3301,14 @@
         "matches_cell": true,
         "problems": "More than one thing"
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/moon.webp"
     },
     "nature_2_01_c3": {
-      "thing_id": null,
+      "thing_id": "star",
       "expected_thing": "star",
       "master_file": "tools/pictures/tiles/masters/nature_2_01_c3.png",
       "master_size": [
@@ -3287,12 +3350,14 @@
         "matches_cell": true,
         "problems": "More than one star"
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/star.webp"
     },
     "nature_2_01_c4": {
-      "thing_id": null,
+      "thing_id": "cloud",
       "expected_thing": "cloud",
       "master_file": "tools/pictures/tiles/masters/nature_2_01_c4.png",
       "master_size": [
@@ -3334,12 +3399,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/cloud.webp"
     },
     "nature_2_01_c5": {
-      "thing_id": null,
+      "thing_id": "rain",
       "expected_thing": "rain",
       "master_file": "tools/pictures/tiles/masters/nature_2_01_c5.png",
       "master_size": [
@@ -3381,12 +3448,14 @@
         "matches_cell": true,
         "problems": "Cloud and rain together"
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/rain.webp"
     },
     "nature_2_01_c6": {
-      "thing_id": null,
+      "thing_id": "sea",
       "expected_thing": "sea",
       "master_file": "tools/pictures/tiles/masters/nature_2_01_c6.png",
       "master_size": [
@@ -3428,12 +3497,25 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
-      "review_note": "",
-      "history": []
+      "review": "approved",
+      "review_note": "chosen over nature_1_large_01_c2 by the check, under the owner's ruling of 2026-10-06: The clearer, more visible waves make it read as the sea at a glance, while its edges stay soft.",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "nature_1_large_01_c2",
+          "nature_2_01_c6"
+        ],
+        "chosen": true,
+        "why": "The clearer, more visible waves make it read as the sea at a glance, while its edges stay soft.",
+        "cost_usd": 9e-05
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/sea.webp"
     },
     "nature_2_01_c7": {
-      "thing_id": null,
+      "thing_id": "pond",
       "expected_thing": "pond",
       "master_file": "tools/pictures/tiles/masters/nature_2_01_c7.png",
       "master_size": [
@@ -3475,12 +3557,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/pond.webp"
     },
     "nature_2_01_c8": {
-      "thing_id": null,
+      "thing_id": "beach",
       "expected_thing": "beach",
       "master_file": "tools/pictures/tiles/masters/nature_2_01_c8.png",
       "master_size": [
@@ -3522,12 +3606,14 @@
         "matches_cell": true,
         "problems": "More than one thing (beach and sea)"
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/beach.webp"
     },
     "nature_2_01_c9": {
-      "thing_id": null,
+      "thing_id": "desert",
       "expected_thing": "desert",
       "master_file": "tools/pictures/tiles/masters/nature_2_01_c9.png",
       "master_size": [
@@ -3569,12 +3655,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/desert.webp"
     },
     "made_1_01_c1": {
-      "thing_id": null,
+      "thing_id": "car",
       "expected_thing": "car",
       "master_file": "tools/pictures/tiles/masters/made_1_01_c1.png",
       "master_size": [
@@ -3618,12 +3706,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/car.webp"
     },
     "made_1_01_c2": {
-      "thing_id": null,
+      "thing_id": "bicycle",
       "expected_thing": "bicycle",
       "master_file": "tools/pictures/tiles/masters/made_1_01_c2.png",
       "master_size": [
@@ -3665,12 +3755,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/bicycle.webp"
     },
     "made_1_01_c3": {
-      "thing_id": null,
+      "thing_id": "bus",
       "expected_thing": "bus",
       "master_file": "tools/pictures/tiles/masters/made_1_01_c3.png",
       "master_size": [
@@ -3714,12 +3806,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/bus.webp"
     },
     "made_1_01_c4": {
-      "thing_id": null,
+      "thing_id": "train",
       "expected_thing": "train",
       "master_file": "tools/pictures/tiles/masters/made_1_01_c4.png",
       "master_size": [
@@ -3763,12 +3857,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/train.webp"
     },
     "made_1_01_c5": {
-      "thing_id": null,
+      "thing_id": "hammer",
       "expected_thing": "hammer",
       "master_file": "tools/pictures/tiles/masters/made_1_01_c5.png",
       "master_size": [
@@ -3812,12 +3908,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/hammer.webp"
     },
     "made_1_01_c6": {
-      "thing_id": null,
+      "thing_id": "spade",
       "expected_thing": "spade",
       "master_file": "tools/pictures/tiles/masters/made_1_01_c6.png",
       "master_size": [
@@ -3861,12 +3959,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/spade.webp"
     },
     "made_1_01_c7": {
-      "thing_id": null,
+      "thing_id": "saw",
       "expected_thing": "saw",
       "master_file": "tools/pictures/tiles/masters/made_1_01_c7.png",
       "master_size": [
@@ -3910,12 +4010,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/saw.webp"
     },
     "made_1_01_c8": {
-      "thing_id": null,
+      "thing_id": "screwdriver",
       "expected_thing": "screwdriver",
       "master_file": "tools/pictures/tiles/masters/made_1_01_c8.png",
       "master_size": [
@@ -3959,12 +4061,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/screwdriver.webp"
     },
     "made_1_01_c9": {
-      "thing_id": null,
+      "thing_id": "axe",
       "expected_thing": "axe",
       "master_file": "tools/pictures/tiles/masters/made_1_01_c9.png",
       "master_size": [
@@ -4008,12 +4112,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/axe.webp"
     },
     "made_2_01_c1": {
-      "thing_id": null,
+      "thing_id": "ball",
       "expected_thing": "ball",
       "master_file": "tools/pictures/tiles/masters/made_2_01_c1.png",
       "master_size": [
@@ -4055,12 +4161,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/ball.webp"
     },
     "made_2_01_c2": {
-      "thing_id": null,
+      "thing_id": "teddy_bear",
       "expected_thing": "teddy_bear",
       "master_file": "tools/pictures/tiles/masters/made_2_01_c2.png",
       "master_size": [
@@ -4102,12 +4210,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/teddy_bear.webp"
     },
     "made_2_01_c3": {
-      "thing_id": null,
+      "thing_id": "doll",
       "expected_thing": "doll",
       "master_file": "tools/pictures/tiles/masters/made_2_01_c3.png",
       "master_size": [
@@ -4149,12 +4259,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/doll.webp"
     },
     "made_2_01_c4": {
-      "thing_id": null,
+      "thing_id": "building_blocks",
       "expected_thing": "building_blocks",
       "master_file": "tools/pictures/tiles/masters/made_2_01_c4.png",
       "master_size": [
@@ -4196,12 +4308,14 @@
         "matches_cell": true,
         "problems": "more than one thing"
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/building_blocks.webp"
     },
     "made_2_01_c5": {
-      "thing_id": null,
+      "thing_id": "toy_car",
       "expected_thing": "toy_car",
       "master_file": "tools/pictures/tiles/masters/made_2_01_c5.png",
       "master_size": [
@@ -4243,12 +4357,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/toy_car.webp"
     },
     "made_2_01_c6": {
-      "thing_id": null,
+      "thing_id": "kite",
       "expected_thing": "kite",
       "master_file": "tools/pictures/tiles/masters/made_2_01_c6.png",
       "master_size": [
@@ -4290,12 +4406,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/kite.webp"
     },
     "made_2_01_c7": {
-      "thing_id": null,
+      "thing_id": "balloon",
       "expected_thing": "balloon",
       "master_file": "tools/pictures/tiles/masters/made_2_01_c7.png",
       "master_size": [
@@ -4339,12 +4457,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/balloon.webp"
     },
     "made_2_01_c8": {
-      "thing_id": null,
+      "thing_id": "house",
       "expected_thing": "house",
       "master_file": "tools/pictures/tiles/masters/made_2_01_c8.png",
       "master_size": [
@@ -4386,12 +4506,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/house.webp"
     },
     "made_2_01_c9": {
-      "thing_id": null,
+      "thing_id": "cave",
       "expected_thing": "cave",
       "master_file": "tools/pictures/tiles/masters/made_2_01_c9.png",
       "master_size": [
@@ -4433,12 +4555,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/cave.webp"
     },
     "made_3_01_c1": {
-      "thing_id": null,
+      "thing_id": "chair",
       "expected_thing": "chair",
       "master_file": "tools/pictures/tiles/masters/made_3_01_c1.png",
       "master_size": [
@@ -4480,12 +4604,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/chair.webp"
     },
     "made_3_01_c2": {
-      "thing_id": null,
+      "thing_id": "cup",
       "expected_thing": "cup",
       "master_file": "tools/pictures/tiles/masters/made_3_01_c2.png",
       "master_size": [
@@ -4527,12 +4653,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/cup.webp"
     },
     "made_3_01_c3": {
-      "thing_id": null,
+      "thing_id": "spoon",
       "expected_thing": "spoon",
       "master_file": "tools/pictures/tiles/masters/made_3_01_c3.png",
       "master_size": [
@@ -4574,12 +4702,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/spoon.webp"
     },
     "made_3_01_c4": {
-      "thing_id": null,
+      "thing_id": "table",
       "expected_thing": "table",
       "master_file": "tools/pictures/tiles/masters/made_3_01_c4.png",
       "master_size": [
@@ -4621,12 +4751,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/table.webp"
     },
     "made_3_01_c5": {
-      "thing_id": null,
+      "thing_id": "bed",
       "expected_thing": "bed",
       "master_file": "tools/pictures/tiles/masters/made_3_01_c5.png",
       "master_size": [
@@ -4668,12 +4800,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/bed.webp"
     },
     "made_3_01_c6": {
-      "thing_id": null,
+      "thing_id": "plate",
       "expected_thing": "plate",
       "master_file": "tools/pictures/tiles/masters/made_3_01_c6.png",
       "master_size": [
@@ -4715,12 +4849,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/plate.webp"
     },
     "made_3_01_c7": {
-      "thing_id": null,
+      "thing_id": "glass",
       "expected_thing": "glass",
       "master_file": "tools/pictures/tiles/masters/made_3_01_c7.png",
       "master_size": [
@@ -4762,12 +4898,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/glass.webp"
     },
     "made_3_01_c8": {
-      "thing_id": null,
+      "thing_id": "clay",
       "expected_thing": "clay",
       "master_file": "tools/pictures/tiles/masters/made_3_01_c8.png",
       "master_size": [
@@ -4809,12 +4947,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/clay.webp"
     },
     "made_3_01_c9": {
-      "thing_id": null,
+      "thing_id": "mud",
       "expected_thing": "mud",
       "master_file": "tools/pictures/tiles/masters/made_3_01_c9.png",
       "master_size": [
@@ -4856,12 +4996,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/mud.webp"
     },
     "animals_1_01_c1": {
-      "thing_id": null,
+      "thing_id": "dog",
       "expected_thing": "dog",
       "master_file": "tools/pictures/tiles/masters/animals_1_01_c1.png",
       "master_size": [
@@ -4903,12 +5045,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/dog.webp"
     },
     "animals_1_01_c2": {
-      "thing_id": null,
+      "thing_id": "cat",
       "expected_thing": "cat",
       "master_file": "tools/pictures/tiles/masters/animals_1_01_c2.png",
       "master_size": [
@@ -4950,12 +5094,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/cat.webp"
     },
     "animals_1_01_c3": {
-      "thing_id": null,
+      "thing_id": "cow",
       "expected_thing": "cow",
       "master_file": "tools/pictures/tiles/masters/animals_1_01_c3.png",
       "master_size": [
@@ -4997,12 +5143,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/cow.webp"
     },
     "animals_1_01_c4": {
-      "thing_id": null,
+      "thing_id": "elephant",
       "expected_thing": "elephant",
       "master_file": "tools/pictures/tiles/masters/animals_1_01_c4.png",
       "master_size": [
@@ -5044,12 +5192,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/elephant.webp"
     },
     "animals_1_01_c5": {
-      "thing_id": null,
+      "thing_id": "lion",
       "expected_thing": "lion",
       "master_file": "tools/pictures/tiles/masters/animals_1_01_c5.png",
       "master_size": [
@@ -5091,12 +5241,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/lion.webp"
     },
     "animals_1_01_c6": {
-      "thing_id": null,
+      "thing_id": "tiger",
       "expected_thing": "tiger",
       "master_file": "tools/pictures/tiles/masters/animals_1_01_c6.png",
       "master_size": [
@@ -5138,12 +5290,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/tiger.webp"
     },
     "animals_1_01_c7": {
-      "thing_id": null,
+      "thing_id": "monkey",
       "expected_thing": "monkey",
       "master_file": "tools/pictures/tiles/masters/animals_1_01_c7.png",
       "master_size": [
@@ -5185,12 +5339,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/monkey.webp"
     },
     "animals_1_01_c8": {
-      "thing_id": null,
+      "thing_id": "horse",
       "expected_thing": "horse",
       "master_file": "tools/pictures/tiles/masters/animals_1_01_c8.png",
       "master_size": [
@@ -5232,12 +5388,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/horse.webp"
     },
     "animals_1_01_c9": {
-      "thing_id": null,
+      "thing_id": "goat",
       "expected_thing": "goat",
       "master_file": "tools/pictures/tiles/masters/animals_1_01_c9.png",
       "master_size": [
@@ -5279,12 +5437,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/goat.webp"
     },
     "animals_2_01_c1": {
-      "thing_id": null,
+      "thing_id": "rabbit",
       "expected_thing": "rabbit",
       "master_file": "tools/pictures/tiles/masters/animals_2_01_c1.png",
       "master_size": [
@@ -5326,12 +5486,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/rabbit.webp"
     },
     "animals_2_01_c2": {
-      "thing_id": null,
+      "thing_id": "bear",
       "expected_thing": "bear",
       "master_file": "tools/pictures/tiles/masters/animals_2_01_c2.png",
       "master_size": [
@@ -5373,12 +5535,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/bear.webp"
     },
     "animals_2_01_c3": {
-      "thing_id": null,
+      "thing_id": "giraffe",
       "expected_thing": "giraffe",
       "master_file": "tools/pictures/tiles/masters/animals_2_01_c3.png",
       "master_size": [
@@ -5420,12 +5584,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/giraffe.webp"
     },
     "animals_2_01_c4": {
-      "thing_id": null,
+      "thing_id": "goldfish",
       "expected_thing": "goldfish",
       "master_file": "tools/pictures/tiles/masters/animals_2_01_c4.png",
       "master_size": [
@@ -5467,12 +5633,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/goldfish.webp"
     },
     "animals_2_01_c5": {
-      "thing_id": null,
+      "thing_id": "rohu_fish",
       "expected_thing": "rohu_fish",
       "master_file": "tools/pictures/tiles/masters/animals_2_01_c5.png",
       "master_size": [
@@ -5514,9 +5682,11 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/rohu_fish.webp"
     },
     "animals_2_01_c6": {
       "thing_id": null,
@@ -5561,12 +5731,24 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
-      "review_note": "",
-      "history": []
+      "review": "set aside",
+      "review_note": "a second try; the check rated animals_2_01_c9 better: Its large head and prominent upturned mouth make it more distinctly catla-like.",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "animals_2_01_c6",
+          "animals_2_01_c9"
+        ],
+        "chosen": false,
+        "why": "Its large head and prominent upturned mouth make it more distinctly catla-like.",
+        "cost_usd": 9e-05
+      },
+      "reviewed_on": "2026-10-06"
     },
     "animals_2_01_c7": {
-      "thing_id": null,
+      "thing_id": "shark",
       "expected_thing": "shark",
       "master_file": "tools/pictures/tiles/masters/animals_2_01_c7.png",
       "master_size": [
@@ -5608,12 +5790,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/shark.webp"
     },
     "animals_2_01_c8": {
-      "thing_id": null,
+      "thing_id": "clownfish",
       "expected_thing": "clownfish",
       "master_file": "tools/pictures/tiles/masters/animals_2_01_c8.png",
       "master_size": [
@@ -5655,12 +5839,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/clownfish.webp"
     },
     "animals_2_01_c9": {
-      "thing_id": null,
+      "thing_id": "catla_fish",
       "expected_thing": "catla_fish",
       "master_file": "tools/pictures/tiles/masters/animals_2_01_c9.png",
       "master_size": [
@@ -5702,12 +5888,25 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
-      "review_note": "",
-      "history": []
+      "review": "approved",
+      "review_note": "chosen over animals_2_01_c6 by the check, under the owner's ruling of 2026-10-06: Its large head and prominent upturned mouth make it more distinctly catla-like.",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "animals_2_01_c6",
+          "animals_2_01_c9"
+        ],
+        "chosen": true,
+        "why": "Its large head and prominent upturned mouth make it more distinctly catla-like.",
+        "cost_usd": 9e-05
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/catla_fish.webp"
     },
     "animals_3_01_c1": {
-      "thing_id": null,
+      "thing_id": "crow",
       "expected_thing": "crow",
       "master_file": "tools/pictures/tiles/masters/animals_3_01_c1.png",
       "master_size": [
@@ -5749,12 +5948,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/crow.webp"
     },
     "animals_3_01_c2": {
-      "thing_id": null,
+      "thing_id": "pigeon",
       "expected_thing": "pigeon",
       "master_file": "tools/pictures/tiles/masters/animals_3_01_c2.png",
       "master_size": [
@@ -5796,12 +5997,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/pigeon.webp"
     },
     "animals_3_01_c3": {
-      "thing_id": null,
+      "thing_id": "parrot",
       "expected_thing": "parrot",
       "master_file": "tools/pictures/tiles/masters/animals_3_01_c3.png",
       "master_size": [
@@ -5843,12 +6046,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/parrot.webp"
     },
     "animals_3_01_c4": {
-      "thing_id": null,
+      "thing_id": "hen",
       "expected_thing": "hen",
       "master_file": "tools/pictures/tiles/masters/animals_3_01_c4.png",
       "master_size": [
@@ -5890,12 +6095,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/hen.webp"
     },
     "animals_3_01_c5": {
-      "thing_id": null,
+      "thing_id": "duck",
       "expected_thing": "duck",
       "master_file": "tools/pictures/tiles/masters/animals_3_01_c5.png",
       "master_size": [
@@ -5937,12 +6144,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/duck.webp"
     },
     "animals_3_01_c6": {
-      "thing_id": null,
+      "thing_id": "peacock",
       "expected_thing": "peacock",
       "master_file": "tools/pictures/tiles/masters/animals_3_01_c6.png",
       "master_size": [
@@ -5984,12 +6193,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/peacock.webp"
     },
     "animals_3_01_c7": {
-      "thing_id": null,
+      "thing_id": "sparrow",
       "expected_thing": "sparrow",
       "master_file": "tools/pictures/tiles/masters/animals_3_01_c7.png",
       "master_size": [
@@ -6031,12 +6242,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/sparrow.webp"
     },
     "animals_3_01_c8": {
-      "thing_id": null,
+      "thing_id": "eagle",
       "expected_thing": "eagle",
       "master_file": "tools/pictures/tiles/masters/animals_3_01_c8.png",
       "master_size": [
@@ -6078,12 +6291,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/eagle.webp"
     },
     "animals_3_01_c9": {
-      "thing_id": null,
+      "thing_id": "owl",
       "expected_thing": "owl",
       "master_file": "tools/pictures/tiles/masters/animals_3_01_c9.png",
       "master_size": [
@@ -6125,12 +6340,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/owl.webp"
     },
     "animals_4_01_c1": {
-      "thing_id": null,
+      "thing_id": "butterfly",
       "expected_thing": "butterfly",
       "master_file": "tools/pictures/tiles/masters/animals_4_01_c1.png",
       "master_size": [
@@ -6172,12 +6389,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/butterfly.webp"
     },
     "animals_4_01_c2": {
-      "thing_id": null,
+      "thing_id": "ant",
       "expected_thing": "ant",
       "master_file": "tools/pictures/tiles/masters/animals_4_01_c2.png",
       "master_size": [
@@ -6219,12 +6438,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/ant.webp"
     },
     "animals_4_01_c3": {
-      "thing_id": null,
+      "thing_id": "housefly",
       "expected_thing": "housefly",
       "master_file": "tools/pictures/tiles/masters/animals_4_01_c3.png",
       "master_size": [
@@ -6266,12 +6487,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/housefly.webp"
     },
     "animals_4_01_c4": {
-      "thing_id": null,
+      "thing_id": "mosquito",
       "expected_thing": "mosquito",
       "master_file": "tools/pictures/tiles/masters/animals_4_01_c4.png",
       "master_size": [
@@ -6313,12 +6536,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/mosquito.webp"
     },
     "animals_4_01_c5": {
-      "thing_id": null,
+      "thing_id": "honeybee",
       "expected_thing": "honeybee",
       "master_file": "tools/pictures/tiles/masters/animals_4_01_c5.png",
       "master_size": [
@@ -6360,12 +6585,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/honeybee.webp"
     },
     "animals_4_01_c6": {
-      "thing_id": null,
+      "thing_id": "cockroach",
       "expected_thing": "cockroach",
       "master_file": "tools/pictures/tiles/masters/animals_4_01_c6.png",
       "master_size": [
@@ -6407,12 +6634,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/cockroach.webp"
     },
     "animals_4_01_c7": {
-      "thing_id": null,
+      "thing_id": "grasshopper",
       "expected_thing": "grasshopper",
       "master_file": "tools/pictures/tiles/masters/animals_4_01_c7.png",
       "master_size": [
@@ -6454,12 +6683,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/grasshopper.webp"
     },
     "animals_4_01_c8": {
-      "thing_id": null,
+      "thing_id": "ladybug",
       "expected_thing": "ladybug",
       "master_file": "tools/pictures/tiles/masters/animals_4_01_c8.png",
       "master_size": [
@@ -6501,12 +6732,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/ladybug.webp"
     },
     "animals_4_01_c9": {
-      "thing_id": null,
+      "thing_id": "penguin",
       "expected_thing": "penguin",
       "master_file": "tools/pictures/tiles/masters/animals_4_01_c9.png",
       "master_size": [
@@ -6548,12 +6781,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/penguin.webp"
     },
     "animals_5_01_c1": {
-      "thing_id": null,
+      "thing_id": "house_lizard",
       "expected_thing": "house_lizard",
       "master_file": "tools/pictures/tiles/masters/animals_5_01_c1.png",
       "master_size": [
@@ -6595,12 +6830,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/house_lizard.webp"
     },
     "animals_5_01_c2": {
-      "thing_id": null,
+      "thing_id": "crocodile",
       "expected_thing": "crocodile",
       "master_file": "tools/pictures/tiles/masters/animals_5_01_c2.png",
       "master_size": [
@@ -6644,12 +6881,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/crocodile.webp"
     },
     "animals_5_01_c3": {
-      "thing_id": null,
+      "thing_id": "tortoise",
       "expected_thing": "tortoise",
       "master_file": "tools/pictures/tiles/masters/animals_5_01_c3.png",
       "master_size": [
@@ -6691,12 +6930,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/tortoise.webp"
     },
     "animals_5_01_c4": {
-      "thing_id": null,
+      "thing_id": "turtle",
       "expected_thing": "turtle",
       "master_file": "tools/pictures/tiles/masters/animals_5_01_c4.png",
       "master_size": [
@@ -6738,12 +6979,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/turtle.webp"
     },
     "animals_5_01_c5": {
-      "thing_id": null,
+      "thing_id": "chameleon",
       "expected_thing": "chameleon",
       "master_file": "tools/pictures/tiles/masters/animals_5_01_c5.png",
       "master_size": [
@@ -6785,12 +7028,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/chameleon.webp"
     },
     "animals_5_01_c6": {
-      "thing_id": null,
+      "thing_id": "monitor_lizard",
       "expected_thing": "monitor_lizard",
       "master_file": "tools/pictures/tiles/masters/animals_5_01_c6.png",
       "master_size": [
@@ -6832,12 +7077,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/monitor_lizard.webp"
     },
     "animals_5_01_c7": {
-      "thing_id": null,
+      "thing_id": "snake",
       "expected_thing": "snake",
       "master_file": "tools/pictures/tiles/masters/animals_5_01_c7.png",
       "master_size": [
@@ -6879,12 +7126,25 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
-      "review_note": "",
-      "history": []
+      "review": "approved",
+      "review_note": "chosen over animals_6_01_c9 by the check, under the owner's ruling of 2026-10-06: Its clearly visible head and coiled body make it read as an ordinary snake at a glance.",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "animals_5_01_c7",
+          "animals_6_01_c9"
+        ],
+        "chosen": true,
+        "why": "Its clearly visible head and coiled body make it read as an ordinary snake at a glance.",
+        "cost_usd": 8e-05
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/snake.webp"
     },
     "animals_5_01_c8": {
-      "thing_id": null,
+      "thing_id": "cobra",
       "expected_thing": "cobra",
       "master_file": "tools/pictures/tiles/masters/animals_5_01_c8.png",
       "master_size": [
@@ -6926,12 +7186,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/cobra.webp"
     },
     "animals_5_01_c9": {
-      "thing_id": null,
+      "thing_id": "python",
       "expected_thing": "python",
       "master_file": "tools/pictures/tiles/masters/animals_5_01_c9.png",
       "master_size": [
@@ -6973,9 +7235,11 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/python.webp"
     },
     "dinosaurs_1_01_c1": {
       "thing_id": "tyrannosaurus_rex",
@@ -7026,17 +7290,22 @@
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
+          "yes",
+          "yes"
+        ],
+        "features": [
           "unclear",
           "yes",
-          "yes",
+          "unclear",
           "unclear",
           "yes",
           "yes",
           "yes"
         ],
         "mistakes_shown": [],
-        "comment": "The picture is consistent with Tyrannosaurus rex, showing a heavy skull, tiny two-fingered arms, muscular hind legs, an elevated tail and scaly skin, but absolute size and exact tooth count and serrations cannot be verified.",
+        "comment": "The reconstruction shows a heavy skull, tiny two-fingered arms, strong hind legs, scaly skin and an elevated balancing tail, but absolute dimensions and fine dental details cannot be verified.",
         "sources": [
           "https://www.nhm.ac.uk/discover/dino-directory/tyrannosaurus.html",
           "https://en.wikipedia.org/wiki/Tyrannosaurus",
@@ -7044,13 +7313,40 @@
           "https://www.fieldmuseum.org/blog/sue-t-rex"
         ],
         "passed": true,
-        "reasons": []
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": ""
       },
       "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/tyrannosaurus_rex.webp"
+      "published_file": "Assets/pictures/tyrannosaurus_rex.webp",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "unclear",
+            "yes",
+            "yes",
+            "unclear",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "mistakes_shown": [],
+          "comment": "The picture is consistent with Tyrannosaurus rex, showing a heavy skull, tiny two-fingered arms, muscular hind legs, an elevated tail and scaly skin, but absolute size and exact tooth count and serrations cannot be verified.",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/tyrannosaurus.html",
+            "https://en.wikipedia.org/wiki/Tyrannosaurus",
+            "https://australian.museum/learn/dinosaurs/fact-sheets/tyrannosaurus-rex/",
+            "https://www.fieldmuseum.org/blog/sue-t-rex"
+          ],
+          "passed": true,
+          "reasons": []
+        }
+      ]
     },
     "dinosaurs_1_01_c2": {
-      "thing_id": null,
+      "thing_id": "giganotosaurus",
       "expected_thing": "giganotosaurus",
       "master_file": "tools/pictures/tiles/masters/dinosaurs_1_01_c2.png",
       "master_size": [
@@ -7092,26 +7388,30 @@
         "matches_cell": false,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [],
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
+          "yes"
+        ],
+        "features": [
+          "unclear",
           "unclear",
           "yes",
           "yes",
-          "yes",
-          "yes",
+          "no",
           "unclear",
           "yes",
           "yes"
         ],
         "mistakes_shown": [
-          "Extra small spines along the neck and back."
+          2
         ],
-        "comment": "The reconstruction broadly matches the described anatomy, but its absolute size and tooth serrations cannot be verified, and the added dorsal spines are unsupported.",
+        "comment": "The long, low head and three-fingered arms are shown, but small dorsal spines are present, the chin bump is absent, and absolute size and tooth serrations cannot be judged.",
         "sources": [
           "https://www.nhm.ac.uk/discover/dino-directory/giganotosaurus.html",
           "https://en.wikipedia.org/wiki/Giganotosaurus",
@@ -7119,9 +7419,44 @@
         ],
         "passed": false,
         "reasons": [
-          "shows a known mistake: Extra small spines along the neck and back."
-        ]
-      }
+          "shows a listed mistake: Extra spines, fins or a sail along the back; the sources describe none."
+        ],
+        "reported": [
+          "Lower jaw flattened at the front, with a small downward bump, like a chin, at its tip."
+        ],
+        "sources_disagree": ""
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/giganotosaurus.webp",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "unclear",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "unclear",
+            "yes",
+            "yes"
+          ],
+          "mistakes_shown": [
+            "Extra small spines along the neck and back."
+          ],
+          "comment": "The reconstruction broadly matches the described anatomy, but its absolute size and tooth serrations cannot be verified, and the added dorsal spines are unsupported.",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/giganotosaurus.html",
+            "https://en.wikipedia.org/wiki/Giganotosaurus",
+            "https://australian.museum/learn/dinosaurs/fact-sheets/giganotosaurus-carolinii/"
+          ],
+          "passed": false,
+          "reasons": [
+            "shows a known mistake: Extra small spines along the neck and back."
+          ]
+        }
+      ]
     },
     "dinosaurs_1_01_c3": {
       "thing_id": "allosaurus",
@@ -7172,27 +7507,60 @@
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
+          "yes",
+          "yes"
+        ],
+        "features": [
           "unclear",
           "yes",
           "unclear",
           "unclear",
           "yes",
-          "unclear",
+          "no",
           "yes",
           "yes"
         ],
         "mistakes_shown": [],
-        "comment": "The reconstruction looks consistent with Allosaurus, showing short eye horns, three clawed fingers, pebbly scales and a raised tail, but size, paired snout ridges, tooth serrations and thumb dominance cannot be confirmed from this view.",
+        "comment": "The short horns, three-clawed arms, level body and scaly skin are visible, but the thumb appears smaller than the other fingers, while absolute size, paired snout ridges and tooth serrations cannot be confirmed.",
         "sources": [
           "https://www.nhm.ac.uk/discover/dino-directory/allosaurus.html",
           "https://en.wikipedia.org/wiki/Allosaurus"
         ],
         "passed": true,
-        "reasons": []
+        "reasons": [],
+        "reported": [
+          "The innermost finger (thumb) and its claw are the largest of the three."
+        ],
+        "sources_disagree": ""
       },
       "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/allosaurus.webp"
+      "published_file": "Assets/pictures/allosaurus.webp",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "unclear",
+            "yes",
+            "unclear",
+            "unclear",
+            "yes",
+            "unclear",
+            "yes",
+            "yes"
+          ],
+          "mistakes_shown": [],
+          "comment": "The reconstruction looks consistent with Allosaurus, showing short eye horns, three clawed fingers, pebbly scales and a raised tail, but size, paired snout ridges, tooth serrations and thumb dominance cannot be confirmed from this view.",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/allosaurus.html",
+            "https://en.wikipedia.org/wiki/Allosaurus"
+          ],
+          "passed": true,
+          "reasons": []
+        }
+      ]
     },
     "dinosaurs_1_01_c4": {
       "thing_id": null,
@@ -7243,35 +7611,76 @@
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
-          "unclear",
-          "yes",
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
           "yes",
           "yes",
           "no",
+          "yes"
+        ],
+        "features": [
+          "unclear",
           "yes",
           "yes",
+          "unclear",
+          "no",
+          "yes",
+          "no",
           "yes"
         ],
         "mistakes_shown": [
-          "Long, T. rex-like hind legs rather than the required short hind legs."
+          1
         ],
-        "comment": "The sail, crocodile-like snout, paddle-shaped tail and head crest identify Spinosaurus, but the hind legs are too long and overall size cannot be judged without a scale.",
+        "comment": "The sail, crocodile-like snout and paddle-shaped tail are visible, but the hind legs are too long and the thumb claws are not the largest; absolute body size and sail height cannot be verified.",
         "sources": [
           "https://www.nhm.ac.uk/discover/dino-directory/spinosaurus.html",
           "https://en.wikipedia.org/wiki/Spinosaurus"
         ],
         "passed": false,
         "reasons": [
-          "contradicts: Short back legs, only about a quarter of the body length, far shorter than in other big meat-eaters.",
-          "shows a known mistake: Long, T. rex-like hind legs rather than the required short hind legs.",
-          "the sources disagree: Scientists agree on the crocodile-like snout, the sail, the short back legs and the paddle tail. They still debate whether it walked on two legs or four, and whether it swam after prey or waded like a heron. The tile shows it on two legs, which recent studies favour."
-        ]
+          "does not show what tells it apart: Short back legs",
+          "shows a listed mistake: Older (pre-2014) and film versions with long T. rex-like running legs and a thin, round, pointed tail."
+        ],
+        "reported": [
+          "Short back legs, only about a quarter of the body length, far shorter than in other big meat-eaters.",
+          "Large, stocky arms with three clawed fingers on each hand; the thumb claw is the largest."
+        ],
+        "sources_disagree": "Scientists agree on the crocodile-like snout, the sail, the short back legs and the paddle tail. They still debate whether it walked on two legs or four, and whether it swam after prey or waded like a heron. The tile shows it on two legs, which recent studies favour."
       },
-      "reviewed_on": "2026-10-06"
+      "reviewed_on": "2026-10-06",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "unclear",
+            "yes",
+            "yes",
+            "yes",
+            "no",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "mistakes_shown": [
+            "Long, T. rex-like hind legs rather than the required short hind legs."
+          ],
+          "comment": "The sail, crocodile-like snout, paddle-shaped tail and head crest identify Spinosaurus, but the hind legs are too long and overall size cannot be judged without a scale.",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/spinosaurus.html",
+            "https://en.wikipedia.org/wiki/Spinosaurus"
+          ],
+          "passed": false,
+          "reasons": [
+            "contradicts: Short back legs, only about a quarter of the body length, far shorter than in other big meat-eaters.",
+            "shows a known mistake: Long, T. rex-like hind legs rather than the required short hind legs.",
+            "the sources disagree: Scientists agree on the crocodile-like snout, the sail, the short back legs and the paddle tail. They still debate whether it walked on two legs or four, and whether it swam after prey or waded like a heron. The tile shows it on two legs, which recent studies favour."
+          ]
+        }
+      ]
     },
     "dinosaurs_1_01_c5": {
-      "thing_id": null,
+      "thing_id": "velociraptor",
       "expected_thing": "velociraptor",
       "master_file": "tools/pictures/tiles/masters/dinosaurs_1_01_c5.png",
       "master_size": [
@@ -7313,35 +7722,70 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [],
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
           "unclear",
           "unclear",
           "yes",
           "yes",
-          "yes",
+          "unclear",
           "no",
           "yes"
         ],
-        "mistakes_shown": [
-          "One foot appears to have all its forward toes on the ground, without a raised sickle claw."
-        ],
-        "comment": "The feathered body, wing-like forearm feathers, toothed snout and long tail fit the description, but size cannot be verified and only one foot shows a raised sickle claw.",
+        "mistakes_shown": [],
+        "comment": "The feathered body, long outstretched tail and one raised sickle claw are clear, but the other foot lacks a visibly raised sickle claw, both hands are not fully visible, and size cannot be judged without a scale reference.",
         "sources": [
           "https://www.nhm.ac.uk/discover/dino-directory/velociraptor.html",
           "https://en.wikipedia.org/wiki/Velociraptor"
         ],
-        "passed": false,
-        "reasons": [
-          "contradicts: One large sickle-shaped claw on the second toe of each foot, held raised off the ground.",
-          "shows a known mistake: One foot appears to have all its forward toes on the ground, without a raised sickle claw."
-        ]
-      }
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "One large sickle-shaped claw on the second toe of each foot, held raised off the ground."
+        ],
+        "sources_disagree": ""
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/velociraptor.webp",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "unclear",
+            "unclear",
+            "yes",
+            "yes",
+            "yes",
+            "no",
+            "yes"
+          ],
+          "mistakes_shown": [
+            "One foot appears to have all its forward toes on the ground, without a raised sickle claw."
+          ],
+          "comment": "The feathered body, wing-like forearm feathers, toothed snout and long tail fit the description, but size cannot be verified and only one foot shows a raised sickle claw.",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/velociraptor.html",
+            "https://en.wikipedia.org/wiki/Velociraptor"
+          ],
+          "passed": false,
+          "reasons": [
+            "contradicts: One large sickle-shaped claw on the second toe of each foot, held raised off the ground.",
+            "shows a known mistake: One foot appears to have all its forward toes on the ground, without a raised sickle claw."
+          ]
+        }
+      ]
     },
     "dinosaurs_1_01_c6": {
       "thing_id": "triceratops",
@@ -7392,10 +7836,16 @@
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
           "yes",
           "yes",
+          "yes"
+        ],
+        "features": [
+          "unclear",
           "yes",
+          "unclear",
           "yes",
           "yes",
           "yes",
@@ -7403,19 +7853,45 @@
           "unclear"
         ],
         "mistakes_shown": [],
-        "comment": "The picture clearly shows a Triceratops with the expected build, horns, solid low-bumped frill, beak and upright legs, but exact dimensions and cone-bearing six-sided scales cannot be verified.",
+        "comment": "The visible anatomy matches Triceratops, but absolute body and horn measurements and the finer scale structure cannot be verified from this image.",
         "sources": [
           "https://www.nhm.ac.uk/discover/dino-directory/triceratops.html",
           "https://en.wikipedia.org/wiki/Triceratops"
         ],
         "passed": true,
-        "reasons": []
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": ""
       },
       "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/triceratops.webp"
+      "published_file": "Assets/pictures/triceratops.webp",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "unclear"
+          ],
+          "mistakes_shown": [],
+          "comment": "The picture clearly shows a Triceratops with the expected build, horns, solid low-bumped frill, beak and upright legs, but exact dimensions and cone-bearing six-sided scales cannot be verified.",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/triceratops.html",
+            "https://en.wikipedia.org/wiki/Triceratops"
+          ],
+          "passed": true,
+          "reasons": []
+        }
+      ]
     },
     "dinosaurs_1_01_c7": {
-      "thing_id": null,
+      "thing_id": "stegosaurus",
       "expected_thing": "stegosaurus",
       "master_file": "tools/pictures/tiles/masters/dinosaurs_1_01_c7.png",
       "master_size": [
@@ -7457,39 +7933,72 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [],
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
-          "yes",
-          "yes",
-          "yes",
-          "yes",
-          "no",
-          "yes",
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
           "yes",
           "yes"
         ],
-        "mistakes_shown": [
-          "Some tail spikes point upward rather than sideways."
+        "features": [
+          "unclear",
+          "yes",
+          "yes",
+          "unclear",
+          "unclear",
+          "unclear",
+          "yes",
+          "yes"
         ],
-        "comment": "The picture is recognizably Stegosaurus and shows most requested features, but the tail spikes include conspicuously upward-pointing spikes.",
+        "mistakes_shown": [],
+        "comment": "The staggered upright plates, four outward-projecting tail spikes, small low head, shorter front legs, and raised tail are visible, but the stated absolute dimensions cannot be verified without a scale.",
         "sources": [
           "https://www.nhm.ac.uk/discover/dino-directory/stegosaurus.html",
           "https://en.wikipedia.org/wiki/Stegosaurus"
         ],
-        "passed": false,
-        "reasons": [
-          "contradicts: Four long spikes, 60-90 cm each, near the tail tip, sticking out sideways rather than straight up.",
-          "shows a known mistake: Some tail spikes point upward rather than sideways."
-        ]
-      }
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": ""
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/stegosaurus.webp",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "no",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "mistakes_shown": [
+            "Some tail spikes point upward rather than sideways."
+          ],
+          "comment": "The picture is recognizably Stegosaurus and shows most requested features, but the tail spikes include conspicuously upward-pointing spikes.",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/stegosaurus.html",
+            "https://en.wikipedia.org/wiki/Stegosaurus"
+          ],
+          "passed": false,
+          "reasons": [
+            "contradicts: Four long spikes, 60-90 cm each, near the tail tip, sticking out sideways rather than straight up.",
+            "shows a known mistake: Some tail spikes point upward rather than sideways."
+          ]
+        }
+      ]
     },
     "dinosaurs_1_01_c8": {
-      "thing_id": null,
+      "thing_id": "ankylosaurus",
       "expected_thing": "ankylosaurus",
       "master_file": "tools/pictures/tiles/masters/dinosaurs_1_01_c8.png",
       "master_size": [
@@ -7531,37 +8040,74 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [],
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
-          "yes",
-          "yes",
-          "yes",
-          "yes",
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
           "no",
+          "yes"
+        ],
+        "features": [
+          "unclear",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
           "unclear",
           "unclear",
           "no"
         ],
         "mistakes_shown": [],
-        "comment": "It resembles Ankylosaurus and has a raised tail club, but the head looks rounded rather than wide and triangular, the hind legs appear armoured, and the four head horns and neck half-rings cannot be confirmed.",
+        "comment": "The tail club and low-ridged body armour are clear, but the back is strongly domed rather than flat and the hind legs appear armoured; exact dimensions and several head and neck details cannot be confirmed.",
         "sources": [
           "https://www.nhm.ac.uk/discover/dino-directory/ankylosaurus.html",
           "https://en.wikipedia.org/wiki/Ankylosaurus"
         ],
         "passed": false,
         "reasons": [
-          "contradicts: Wide, low, triangular head with a broad beak at the front.",
-          "contradicts: Short, sturdy legs held upright under the body; back legs longer than front legs and without armour."
-        ]
-      }
+          "does not show what tells it apart: A low, wide, flat-backed body covered in bony armour"
+        ],
+        "reported": [
+          "Short, sturdy legs held upright under the body; back legs longer than front legs and without armour."
+        ],
+        "sources_disagree": ""
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/ankylosaurus.webp",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "no",
+            "unclear",
+            "unclear",
+            "no"
+          ],
+          "mistakes_shown": [],
+          "comment": "It resembles Ankylosaurus and has a raised tail club, but the head looks rounded rather than wide and triangular, the hind legs appear armoured, and the four head horns and neck half-rings cannot be confirmed.",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/ankylosaurus.html",
+            "https://en.wikipedia.org/wiki/Ankylosaurus"
+          ],
+          "passed": false,
+          "reasons": [
+            "contradicts: Wide, low, triangular head with a broad beak at the front.",
+            "contradicts: Short, sturdy legs held upright under the body; back legs longer than front legs and without armour."
+          ]
+        }
+      ]
     },
     "dinosaurs_1_01_c9": {
-      "thing_id": null,
+      "thing_id": "parasaurolophus",
       "expected_thing": "parasaurolophus",
       "master_file": "tools/pictures/tiles/masters/dinosaurs_1_01_c9.png",
       "master_size": [
@@ -7603,38 +8149,75 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [],
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
+          "yes",
+          "no"
+        ],
+        "features": [
           "unclear",
-          "yes",
-          "yes",
-          "yes",
+          "unclear",
+          "unclear",
+          "no",
           "yes",
           "yes",
           "no"
         ],
-        "mistakes_shown": [
-          "A row of enlarged, plate-like bumps runs along the back and tail."
-        ],
-        "comment": "The backward-sweeping crest, duck bill and four-legged posture fit Parasaurolophus, but the raised dorsal bumps contradict the specified small, even scales, and size and weight cannot be verified without a scale reference.",
+        "mistakes_shown": [],
+        "comment": "The backward-sweeping crest and four-legged stance are clear, but the beak looks rounded rather than broad and flat, the back bears enlarged plate-like scales, and measurements and crest hollowness cannot be verified.",
         "sources": [
           "https://www.nhm.ac.uk/discover/dino-directory/parasaurolophus.html",
           "https://en.wikipedia.org/wiki/Parasaurolophus"
         ],
         "passed": false,
         "reasons": [
-          "contradicts: Scaly, pebbly skin of small, even, rounded scales with no plates, spikes or feathers.",
-          "shows a known mistake: A row of enlarged, plate-like bumps runs along the back and tail."
-        ]
-      }
+          "does not show what tells it apart: A flat duck-like beak"
+        ],
+        "reported": [
+          "Broad, flat, duck-like beak at the front of the mouth.",
+          "Scaly, pebbly skin of small, even, rounded scales with no plates, spikes or feathers."
+        ],
+        "sources_disagree": ""
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/parasaurolophus.webp",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "unclear",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "no"
+          ],
+          "mistakes_shown": [
+            "A row of enlarged, plate-like bumps runs along the back and tail."
+          ],
+          "comment": "The backward-sweeping crest, duck bill and four-legged posture fit Parasaurolophus, but the raised dorsal bumps contradict the specified small, even scales, and size and weight cannot be verified without a scale reference.",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/parasaurolophus.html",
+            "https://en.wikipedia.org/wiki/Parasaurolophus"
+          ],
+          "passed": false,
+          "reasons": [
+            "contradicts: Scaly, pebbly skin of small, even, rounded scales with no plates, spikes or feathers.",
+            "shows a known mistake: A row of enlarged, plate-like bumps runs along the back and tail."
+          ]
+        }
+      ]
     },
     "animals_6_01_c1": {
-      "thing_id": null,
+      "thing_id": "anaconda",
       "expected_thing": "anaconda",
       "master_file": "tools/pictures/tiles/masters/animals_6_01_c1.png",
       "master_size": [
@@ -7676,9 +8259,11 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/anaconda.webp"
     },
     "animals_6_01_c2": {
       "thing_id": null,
@@ -7822,7 +8407,7 @@
       "published_file": "Assets/pictures/vasuki_indicus.webp"
     },
     "animals_6_01_c4": {
-      "thing_id": null,
+      "thing_id": "frog",
       "expected_thing": "frog",
       "master_file": "tools/pictures/tiles/masters/animals_6_01_c4.png",
       "master_size": [
@@ -7864,12 +8449,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/frog.webp"
     },
     "animals_6_01_c5": {
-      "thing_id": null,
+      "thing_id": "toad",
       "expected_thing": "toad",
       "master_file": "tools/pictures/tiles/masters/animals_6_01_c5.png",
       "master_size": [
@@ -7911,12 +8498,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/toad.webp"
     },
     "animals_6_01_c6": {
-      "thing_id": null,
+      "thing_id": "tree_frog",
       "expected_thing": "tree_frog",
       "master_file": "tools/pictures/tiles/masters/animals_6_01_c6.png",
       "master_size": [
@@ -7958,9 +8547,11 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/tree_frog.webp"
     },
     "animals_6_01_c7": {
       "thing_id": "titanoboa",
@@ -8146,9 +8737,21 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
-      "review_note": "",
-      "history": []
+      "review": "set aside",
+      "review_note": "a second try; the check rated animals_5_01_c7 better: Its clearly visible head and coiled body make it read as an ordinary snake at a glance.",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "animals_5_01_c7",
+          "animals_6_01_c9"
+        ],
+        "chosen": false,
+        "why": "Its clearly visible head and coiled body make it read as an ordinary snake at a glance.",
+        "cost_usd": 8e-05
+      },
+      "reviewed_on": "2026-10-06"
     },
     "dinosaurs_2_01_c1": {
       "thing_id": "brachiosaurus",
@@ -8264,8 +8867,8 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "the first try; the owner accepted the best of the two, and the check found fewer faults in dinosaurs_4_01_c2",
       "history": [],
       "feature_check": {
         "model": "gpt-6.1-sol",
@@ -8297,10 +8900,11 @@
           "contradicts: Each front foot shows one large inward-pointing claw; the other front toes have no claws.",
           "shows a known mistake: Short, tall, boxy Camarasaurus-style head."
         ]
-      }
+      },
+      "reviewed_on": "2026-10-06"
     },
     "dinosaurs_2_01_c3": {
-      "thing_id": null,
+      "thing_id": "diplodocus",
       "expected_thing": "diplodocus",
       "master_file": "tools/pictures/tiles/masters/dinosaurs_2_01_c3.png",
       "master_size": [
@@ -8344,7 +8948,7 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [],
       "feature_check": {
@@ -8371,10 +8975,12 @@
           "contradicts: Extremely long tail, over half the total length, tapering to a thin whip and balancing the neck.",
           "the sources disagree: The Natural History Museum describes a row of small spines along its back. The encyclopedia says the fossil skin with those spines may belong to a close relative. The tile leaves the spines out, so Amargasaurus stays the only long-neck with spines."
         ]
-      }
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/diplodocus.webp"
     },
     "dinosaurs_2_01_c4": {
-      "thing_id": null,
+      "thing_id": "argentinosaurus",
       "expected_thing": "argentinosaurus",
       "master_file": "tools/pictures/tiles/masters/dinosaurs_2_01_c4.png",
       "master_size": [
@@ -8416,7 +9022,7 @@
         "matches_cell": false,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [],
       "feature_check": {
@@ -8442,10 +9048,12 @@
         "reasons": [
           "the sources disagree: Only a few bones are known: some back and hip bones, a rib and leg bones. Its head, neck, tail and skin are drawn from related giant long-necks, so the whole shape is an informed estimate."
         ]
-      }
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/argentinosaurus.webp"
     },
     "dinosaurs_2_01_c5": {
-      "thing_id": null,
+      "thing_id": "amargasaurus",
       "expected_thing": "amargasaurus",
       "master_file": "tools/pictures/tiles/masters/dinosaurs_2_01_c5.png",
       "master_size": [
@@ -8487,7 +9095,7 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [],
       "feature_check": {
@@ -8514,7 +9122,9 @@
           "contradicts: Over the hips and tail base, a single row of paddle-shaped spines makes a low ridge.",
           "the sources disagree: Scientists agree on two rows of tall spines along the neck. They do not agree whether skin joined them into a sail or they stood as separate spikes. A 2022 study of the bone favours a sail, and the tile follows it."
         ]
-      }
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/amargasaurus.webp"
     },
     "dinosaurs_2_01_c6": {
       "thing_id": "pachycephalosaurus",
@@ -8742,7 +9352,7 @@
       "published_file": "Assets/pictures/pteranodon.webp"
     },
     "dinosaurs_2_01_c9": {
-      "thing_id": null,
+      "thing_id": "quetzalcoatlus",
       "expected_thing": "quetzalcoatlus",
       "master_file": "tools/pictures/tiles/masters/dinosaurs_2_01_c9.png",
       "master_size": [
@@ -8784,7 +9394,7 @@
         "matches_cell": false,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [],
       "feature_check": {
@@ -8813,7 +9423,9 @@
         "reasons": [
           "contradicts: Tail tiny or not visible."
         ]
-      }
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/quetzalcoatlus.webp"
     },
     "dinosaurs_3_01_c1": {
       "thing_id": "mosasaurus",
@@ -8889,7 +9501,7 @@
       "published_file": "Assets/pictures/mosasaurus.webp"
     },
     "dinosaurs_3_01_c2": {
-      "thing_id": null,
+      "thing_id": "tylosaurus",
       "expected_thing": "tylosaurus",
       "master_file": "tools/pictures/tiles/masters/dinosaurs_3_01_c2.png",
       "master_size": [
@@ -8931,7 +9543,7 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [],
       "feature_check": {
@@ -8959,10 +9571,12 @@
         "reasons": [
           "contradicts: Long, narrow cone-shaped head, about 13 to 14 percent of body length, with a longer snout than most mosasaurs."
         ]
-      }
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/tylosaurus.webp"
     },
     "dinosaurs_3_01_c3": {
-      "thing_id": null,
+      "thing_id": "kronosaurus",
       "expected_thing": "kronosaurus",
       "master_file": "tools/pictures/tiles/masters/dinosaurs_3_01_c3.png",
       "master_size": [
@@ -9004,7 +9618,7 @@
         "matches_cell": false,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [],
       "feature_check": {
@@ -9037,7 +9651,9 @@
           "shows a known mistake: The visible hind flipper is shorter than the front flippers.",
           "shows a known mistake: The largest teeth are farther back along the jaws rather than at the front."
         ]
-      }
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/kronosaurus.webp"
     },
     "dinosaurs_3_01_c4": {
       "thing_id": "plesiosaurus",
@@ -9463,8 +10079,8 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "the owner accepted the best of the three; dinosaurs_3_01_c2 is the only one the check took for a Tylosaurus with the snout tip showing",
       "history": [],
       "feature_check": {
         "model": "gpt-6.1-sol",
@@ -9496,10 +10112,11 @@
           "contradicts: Teeth all about the same size: pointed cones curving slightly backward.",
           "shows a known mistake: Teeth reach the lower jaw tip rather than leaving a projecting toothless tip."
         ]
-      }
+      },
+      "reviewed_on": "2026-10-06"
     },
     "dinosaurs_4_01_c1": {
-      "thing_id": null,
+      "thing_id": "spinosaurus",
       "expected_thing": "spinosaurus",
       "master_file": "tools/pictures/tiles/masters/dinosaurs_4_01_c1.png",
       "master_size": [
@@ -9541,36 +10158,73 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [],
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "unclear",
+          "unclear",
+          "yes",
           "unclear",
           "yes",
           "yes",
-          "yes",
-          "yes",
-          "yes",
-          "unclear",
+          "no",
           "yes"
         ],
         "mistakes_shown": [],
-        "comment": "The reconstruction clearly shows Spinosaurus's distinctive snout, sail, short hind legs, paddle-shaped tail and head crest, but absolute size and whether the thumb claw is largest cannot be confirmed.",
+        "comment": "The main identifying features are visible, but absolute size and fine snout details cannot be confirmed, and the thumb claw is not the largest.",
         "sources": [
           "https://www.nhm.ac.uk/discover/dino-directory/spinosaurus.html",
           "https://en.wikipedia.org/wiki/Spinosaurus"
         ],
-        "passed": false,
-        "reasons": [
-          "the sources disagree: Scientists agree on the crocodile-like snout, the sail, the short back legs and the paddle tail. They still debate whether it walked on two legs or four, and whether it swam after prey or waded like a heron. The tile shows it on two legs, which recent studies favour."
-        ]
-      }
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "Large, stocky arms with three clawed fingers on each hand; the thumb claw is the largest."
+        ],
+        "sources_disagree": "Scientists agree on the crocodile-like snout, the sail, the short back legs and the paddle tail. They still debate whether it walked on two legs or four, and whether it swam after prey or waded like a heron. The tile shows it on two legs, which recent studies favour."
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/spinosaurus.webp",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "unclear",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "unclear",
+            "yes"
+          ],
+          "mistakes_shown": [],
+          "comment": "The reconstruction clearly shows Spinosaurus's distinctive snout, sail, short hind legs, paddle-shaped tail and head crest, but absolute size and whether the thumb claw is largest cannot be confirmed.",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/spinosaurus.html",
+            "https://en.wikipedia.org/wiki/Spinosaurus"
+          ],
+          "passed": false,
+          "reasons": [
+            "the sources disagree: Scientists agree on the crocodile-like snout, the sail, the short back legs and the paddle tail. They still debate whether it walked on two legs or four, and whether it swam after prey or waded like a heron. The tile shows it on two legs, which recent studies favour."
+          ]
+        }
+      ]
     },
     "dinosaurs_4_01_c2": {
-      "thing_id": null,
+      "thing_id": "brontosaurus",
       "expected_thing": "brontosaurus",
       "master_file": "tools/pictures/tiles/masters/dinosaurs_4_01_c2.png",
       "master_size": [
@@ -9612,25 +10266,29 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [],
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
-          "yes",
-          "yes",
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
           "no",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "no",
+          "yes",
+          "yes",
           "no",
           "no",
           "unclear",
-          "yes"
+          "unclear"
         ],
-        "mistakes_shown": [
-          "Short, tall, boxy head resembling the incorrect Camarasaurus-style skull."
-        ],
-        "comment": "The stocky body and thick neck fit Brontosaurus, but the head is too boxy, the raised tail is too short, the front feet show multiple claws, and size cannot be verified without a scale reference.",
+        "mistakes_shown": [],
+        "comment": "The thick neck and small, low head fit, but the shoulders appear higher than the hips, the tail is less than half the total length, and the front feet show multiple claws; scale and walking on dry land cannot be confirmed.",
         "sources": [
           "https://news.yale.edu/2022/11/11/strike-pose-yales-iconic-dinosaur-skeletons-get-new-look",
           "https://www.amnh.org/explore/ology/ology-cards/006-apatosaurus-excelsus",
@@ -9639,12 +10297,49 @@
         ],
         "passed": false,
         "reasons": [
-          "contradicts: Very small, low head with a squared-off snout, like the head of Diplodocus.",
-          "contradicts: Tail over half the total length, tapering to a thin whip and carried in the air.",
-          "contradicts: Each front foot shows one large inward-pointing claw; the other front toes have no claws.",
-          "shows a known mistake: Short, tall, boxy head resembling the incorrect Camarasaurus-style skull."
-        ]
-      }
+          "does not show what tells it apart: A heavy body with a level back, the shoulders no higher than the hips"
+        ],
+        "reported": [
+          "Heavily built sauropod on four thick, straight legs; front legs slightly shorter than back legs, back arching highest over the hips.",
+          "Tail over half the total length, tapering to a thin whip and carried in the air.",
+          "Each front foot shows one large inward-pointing claw; the other front toes have no claws."
+        ],
+        "sources_disagree": ""
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/brontosaurus.webp",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "yes",
+            "yes",
+            "no",
+            "no",
+            "no",
+            "unclear",
+            "yes"
+          ],
+          "mistakes_shown": [
+            "Short, tall, boxy head resembling the incorrect Camarasaurus-style skull."
+          ],
+          "comment": "The stocky body and thick neck fit Brontosaurus, but the head is too boxy, the raised tail is too short, the front feet show multiple claws, and size cannot be verified without a scale reference.",
+          "sources": [
+            "https://news.yale.edu/2022/11/11/strike-pose-yales-iconic-dinosaur-skeletons-get-new-look",
+            "https://www.amnh.org/explore/ology/ology-cards/006-apatosaurus-excelsus",
+            "https://www.britannica.com/animal/brontosaurus",
+            "https://en.wikipedia.org/wiki/Brontosaurus"
+          ],
+          "passed": false,
+          "reasons": [
+            "contradicts: Very small, low head with a squared-off snout, like the head of Diplodocus.",
+            "contradicts: Tail over half the total length, tapering to a thin whip and carried in the air.",
+            "contradicts: Each front foot shows one large inward-pointing claw; the other front toes have no claws.",
+            "shows a known mistake: Short, tall, boxy head resembling the incorrect Camarasaurus-style skull."
+          ]
+        }
+      ]
     },
     "dinosaurs_4_01_c3": {
       "thing_id": "pterodactylus",
@@ -9695,16 +10390,22 @@
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
-          "unclear",
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
           "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "unclear",
+          "unclear",
           "yes",
           "yes",
           "yes",
           "yes"
         ],
         "mistakes_shown": [],
-        "comment": "The visible anatomy is consistent with Pterodactylus, but its wingspan and size relative to a person cannot be judged without a scale reference.",
+        "comment": "The reconstruction shows toothed jaws, a low crest, a short tail and fuzzy covering, but its absolute size and precise tooth count and size pattern cannot be confirmed from this view.",
         "sources": [
           "https://www.amnh.org/explore/news-blogs/what-is-a-pterosaur",
           "https://www.amnh.org/explore/ology/paleontology/pterosaurs-the-card-game/meet-the-pterosaurs",
@@ -9714,10 +10415,38 @@
           "https://en.wikipedia.org/wiki/Pterosaur"
         ],
         "passed": true,
-        "reasons": []
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": ""
       },
       "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/pterodactylus.webp"
+      "published_file": "Assets/pictures/pterodactylus.webp",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "unclear",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "mistakes_shown": [],
+          "comment": "The visible anatomy is consistent with Pterodactylus, but its wingspan and size relative to a person cannot be judged without a scale reference.",
+          "sources": [
+            "https://www.amnh.org/explore/news-blogs/what-is-a-pterosaur",
+            "https://www.amnh.org/explore/ology/paleontology/pterosaurs-the-card-game/meet-the-pterosaurs",
+            "https://www.nhm.ac.uk/discover/the-truth-about-pterosaurs.html",
+            "https://www.britannica.com/animal/pterodactyl",
+            "https://en.wikipedia.org/wiki/Pterodactylus",
+            "https://en.wikipedia.org/wiki/Pterosaur"
+          ],
+          "passed": true,
+          "reasons": []
+        }
+      ]
     },
     "dinosaurs_4_01_c4": {
       "thing_id": null,
@@ -9764,13 +10493,19 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "the owner accepted the best of the three; dinosaurs_3_01_c2 is the only one the check took for a Tylosaurus with the snout tip showing",
       "history": [],
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
+          "no",
+          "yes",
+          "yes"
+        ],
+        "features": [
           "yes",
           "no",
           "no",
@@ -9781,9 +10516,9 @@
           "unclear"
         ],
         "mistakes_shown": [
-          "Teeth extend to the snout tip, with no clearly projecting toothless knob."
+          3
         ],
-        "comment": "This looks like a generic mosasaur rather than a clearly identifiable Tylosaurus, lacking the diagnostic projecting jaw tips and proportionally longer, narrower snout.",
+        "comment": "The picture shows four paddles, a bent tail with a two-lobed fin, and dark colouring with a pale belly, but teeth reach the snout tip and the head appears proportionally too long.",
         "sources": [
           "https://en.wikipedia.org/wiki/Tylosaurus",
           "http://oceansofkansas.com/mus-tylo.html",
@@ -9792,15 +10527,52 @@
         ],
         "passed": false,
         "reasons": [
-          "the checker does not think it is this animal",
-          "contradicts: Long, narrow cone-shaped head, about 13 to 14 percent of body length, with a longer snout than most mosasaurs.",
-          "contradicts: Blunt, toothless bony knob at the snout tip, sticking out beyond the front teeth; lower jaw tip projects too.",
-          "shows a known mistake: Teeth extend to the snout tip, with no clearly projecting toothless knob."
-        ]
-      }
+          "does not show what tells it apart: A long narrow snout whose tip sticks out past the front teeth as a blunt toothless end",
+          "shows a listed mistake: Teeth drawn right at the very tip of the snout, which hides the toothless knob."
+        ],
+        "reported": [
+          "Long, narrow cone-shaped head, about 13 to 14 percent of body length, with a longer snout than most mosasaurs.",
+          "Blunt, toothless bony knob at the snout tip, sticking out beyond the front teeth; lower jaw tip projects too."
+        ],
+        "sources_disagree": ""
+      },
+      "reviewed_on": "2026-10-06",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "yes",
+            "no",
+            "no",
+            "yes",
+            "yes",
+            "unclear",
+            "yes",
+            "unclear"
+          ],
+          "mistakes_shown": [
+            "Teeth extend to the snout tip, with no clearly projecting toothless knob."
+          ],
+          "comment": "This looks like a generic mosasaur rather than a clearly identifiable Tylosaurus, lacking the diagnostic projecting jaw tips and proportionally longer, narrower snout.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Tylosaurus",
+            "http://oceansofkansas.com/mus-tylo.html",
+            "https://en.wikipedia.org/wiki/Mosasaur",
+            "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0011998"
+          ],
+          "passed": false,
+          "reasons": [
+            "the checker does not think it is this animal",
+            "contradicts: Long, narrow cone-shaped head, about 13 to 14 percent of body length, with a longer snout than most mosasaurs.",
+            "contradicts: Blunt, toothless bony knob at the snout tip, sticking out beyond the front teeth; lower jaw tip projects too.",
+            "shows a known mistake: Teeth extend to the snout tip, with no clearly projecting toothless knob."
+          ]
+        }
+      ]
     },
     "dinosaurs_4_01_c5": {
-      "thing_id": null,
+      "thing_id": "mixosaurus",
       "expected_thing": "mixosaurus",
       "master_file": "tools/pictures/tiles/masters/dinosaurs_4_01_c5.png",
       "master_size": [
@@ -9844,13 +10616,19 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [],
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
           "unclear",
           "yes",
           "yes",
@@ -9860,18 +10638,47 @@
           "yes"
         ],
         "mistakes_shown": [],
-        "comment": "The visible anatomy matches the described Mixosaurus features, but its approximately one-metre length cannot be verified without a scale reference.",
+        "comment": "The visible anatomy matches the listed features, including four flippers and a long tail with a low triangular fin, but its actual size cannot be judged without a scale.",
         "sources": [
           "https://en.wikipedia.org/wiki/Mixosaurus",
           "https://www.app.pan.pl/article/item/app007312020.html",
           "https://www.app.pan.pl/archive/published/app65/app007312020.html",
           "https://ucmp.berkeley.edu/diapsids/ichthyosauria.html"
         ],
-        "passed": false,
-        "reasons": [
-          "the sources disagree: The encyclopedia article describes a long tail with only a low fin. A 2020 fossil study found a clear triangular tail fin and a fin on the back. The tile follows the 2020 study."
-        ]
-      }
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "The encyclopedia article describes a long tail with only a low fin. A 2020 fossil study found a clear triangular tail fin and a fin on the back. The tile follows the 2020 study."
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/mixosaurus.webp",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "unclear",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "mistakes_shown": [],
+          "comment": "The visible anatomy matches the described Mixosaurus features, but its approximately one-metre length cannot be verified without a scale reference.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Mixosaurus",
+            "https://www.app.pan.pl/article/item/app007312020.html",
+            "https://www.app.pan.pl/archive/published/app65/app007312020.html",
+            "https://ucmp.berkeley.edu/diapsids/ichthyosauria.html"
+          ],
+          "passed": false,
+          "reasons": [
+            "the sources disagree: The encyclopedia article describes a long tail with only a low fin. A 2020 fossil study found a clear triangular tail fin and a fin on the back. The tile follows the 2020 study."
+          ]
+        }
+      ]
     },
     "dinosaurs_4_01_c6": {
       "thing_id": "rhamphorhynchus",
@@ -9922,17 +10729,23 @@
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
           "unclear",
           "yes",
-          "yes",
+          "unclear",
           "yes",
           "yes",
           "yes",
           "yes"
         ],
         "mistakes_shown": [],
-        "comment": "The reconstruction visibly matches the listed anatomical features of Rhamphorhynchus, but its absolute size cannot be judged without a scale reference.",
+        "comment": "The identifying features are visible, but absolute size and tooth interlocking with the jaws closed cannot be verified from this picture.",
         "sources": [
           "https://www.fieldmuseum.org/blog/meet-pterosaur-flock",
           "https://www.amnh.org/explore/news-blogs/pterosaur-fossil",
@@ -9942,9 +10755,38 @@
           "https://www.nhm.ac.uk/discover/the-truth-about-pterosaurs.html"
         ],
         "passed": true,
-        "reasons": []
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": ""
       },
-      "reviewed_on": "2026-10-06"
+      "reviewed_on": "2026-10-06",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "unclear",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "mistakes_shown": [],
+          "comment": "The reconstruction visibly matches the listed anatomical features of Rhamphorhynchus, but its absolute size cannot be judged without a scale reference.",
+          "sources": [
+            "https://www.fieldmuseum.org/blog/meet-pterosaur-flock",
+            "https://www.amnh.org/explore/news-blogs/pterosaur-fossil",
+            "https://www.amnh.org/explore/ology/paleontology/pterosaurs-the-card-game/meet-the-pterosaurs",
+            "https://www.britannica.com/animal/Rhamphorhynchus",
+            "https://en.wikipedia.org/wiki/Rhamphorhynchus",
+            "https://www.nhm.ac.uk/discover/the-truth-about-pterosaurs.html"
+          ],
+          "passed": true,
+          "reasons": []
+        }
+      ]
     },
     "dinosaurs_4_01_c7": {
       "thing_id": "dimorphodon",
@@ -9995,16 +10837,22 @@
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
-          "unclear",
-          "yes",
-          "yes",
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
           "yes",
           "yes",
           "yes"
         ],
+        "features": [
+          "unclear",
+          "unclear",
+          "yes",
+          "yes",
+          "unclear",
+          "yes"
+        ],
         "mistakes_shown": [],
-        "comment": "The reconstruction shows Dimorphodon's large deep head, differentiated teeth, short strong neck, long straight tail and relatively short clawed wings, but absolute size cannot be verified without a scale.",
+        "comment": "The large head, exposed fangs, short neck, clawed wings and long vaneless tail are visible, but absolute measurements and the tail's bone count cannot be judged.",
         "sources": [
           "https://www.amnh.org/explore/ology/ology-cards/356-dimorphodon-macronyx",
           "https://www.nhm.ac.uk/discover/the-truth-about-pterosaurs.html",
@@ -10013,9 +10861,36 @@
           "https://en.wikipedia.org/wiki/Pterosaur"
         ],
         "passed": true,
-        "reasons": []
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": ""
       },
-      "reviewed_on": "2026-10-06"
+      "reviewed_on": "2026-10-06",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "unclear",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "mistakes_shown": [],
+          "comment": "The reconstruction shows Dimorphodon's large deep head, differentiated teeth, short strong neck, long straight tail and relatively short clawed wings, but absolute size cannot be verified without a scale.",
+          "sources": [
+            "https://www.amnh.org/explore/ology/ology-cards/356-dimorphodon-macronyx",
+            "https://www.nhm.ac.uk/discover/the-truth-about-pterosaurs.html",
+            "https://www.britannica.com/animal/Dimorphodon",
+            "https://en.wikipedia.org/wiki/Dimorphodon",
+            "https://en.wikipedia.org/wiki/Pterosaur"
+          ],
+          "passed": true,
+          "reasons": []
+        }
+      ]
     },
     "dinosaurs_4_01_c8": {
       "thing_id": null,
@@ -10066,9 +10941,16 @@
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
-          "unclear",
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
           "yes",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "unclear",
+          "unclear",
           "yes",
           "yes",
           "yes",
@@ -10076,22 +10958,50 @@
           "no",
           "yes"
         ],
-        "mistakes_shown": [
-          "The middle finger claws appear larger than the thumb claws."
-        ],
-        "comment": "This is recognizably Spinosaurus with a crocodile-like snout, tall sail, short hind legs and paddle-shaped tail, but its absolute size cannot be verified without a scale.",
+        "mistakes_shown": [],
+        "comment": "The sail, crocodile-like snout, short hind legs and paddle-shaped tail are visible, but size and detailed snout anatomy are uncertain, and the thumb claws do not appear largest.",
         "sources": [
           "https://www.nhm.ac.uk/discover/dino-directory/spinosaurus.html",
           "https://en.wikipedia.org/wiki/Spinosaurus"
         ],
-        "passed": false,
-        "reasons": [
-          "contradicts: Large, stocky arms with three clawed fingers on each hand; the thumb claw is the largest.",
-          "shows a known mistake: The middle finger claws appear larger than the thumb claws.",
-          "the sources disagree: Scientists agree on the crocodile-like snout, the sail, the short back legs and the paddle tail. They still debate whether it walked on two legs or four, and whether it swam after prey or waded like a heron. The tile shows it on two legs, which recent studies favour."
-        ]
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "Large, stocky arms with three clawed fingers on each hand; the thumb claw is the largest."
+        ],
+        "sources_disagree": "Scientists agree on the crocodile-like snout, the sail, the short back legs and the paddle tail. They still debate whether it walked on two legs or four, and whether it swam after prey or waded like a heron. The tile shows it on two legs, which recent studies favour."
       },
-      "reviewed_on": "2026-10-06"
+      "reviewed_on": "2026-10-06",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "unclear",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "no",
+            "yes"
+          ],
+          "mistakes_shown": [
+            "The middle finger claws appear larger than the thumb claws."
+          ],
+          "comment": "This is recognizably Spinosaurus with a crocodile-like snout, tall sail, short hind legs and paddle-shaped tail, but its absolute size cannot be verified without a scale.",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/spinosaurus.html",
+            "https://en.wikipedia.org/wiki/Spinosaurus"
+          ],
+          "passed": false,
+          "reasons": [
+            "contradicts: Large, stocky arms with three clawed fingers on each hand; the thumb claw is the largest.",
+            "shows a known mistake: The middle finger claws appear larger than the thumb claws.",
+            "the sources disagree: Scientists agree on the crocodile-like snout, the sail, the short back legs and the paddle tail. They still debate whether it walked on two legs or four, and whether it swam after prey or waded like a heron. The tile shows it on two legs, which recent studies favour."
+          ]
+        }
+      ]
     },
     "dinosaurs_4_01_c9": {
       "thing_id": null,
@@ -10142,16 +11052,22 @@
       "feature_check": {
         "model": "gpt-6.1-sol",
         "date": "2026-10-06",
-        "verdicts": [
+        "rule": "v2: fails only on must_show and listed mistakes; other features are reported",
+        "must_show": [
+          "yes",
+          "yes",
+          "unclear"
+        ],
+        "features": [
+          "unclear",
+          "unclear",
           "unclear",
           "yes",
-          "yes",
-          "yes",
-          "yes",
+          "unclear",
           "yes"
         ],
         "mistakes_shown": [],
-        "comment": "The reconstruction visibly matches Pterodactylus’s toothed jaws, low crest, short tail, wing structure and body fuzz, but its absolute size cannot be judged without a scale reference.",
+        "comment": "The toothed jaws, low crest and fuzzy body are visible, but scale, precise tooth details, the short tail and all three free wing fingers cannot be confirmed from this view.",
         "sources": [
           "https://www.amnh.org/explore/news-blogs/what-is-a-pterosaur",
           "https://www.amnh.org/explore/ology/paleontology/pterosaurs-the-card-game/meet-the-pterosaurs",
@@ -10160,13 +11076,40 @@
           "https://en.wikipedia.org/wiki/Pterodactylus",
           "https://en.wikipedia.org/wiki/Pterosaur"
         ],
-        "passed": true,
-        "reasons": []
+        "passed": false,
+        "reasons": [
+          "what tells it apart cannot be seen: A short stub of a tail"
+        ],
+        "reported": [],
+        "sources_disagree": ""
       },
-      "reviewed_on": "2026-10-06"
+      "reviewed_on": "2026-10-06",
+      "earlier_feature_checks": [
+        {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "verdicts": [
+            "unclear",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "mistakes_shown": [],
+          "comment": "The reconstruction visibly matches Pterodactylus’s toothed jaws, low crest, short tail, wing structure and body fuzz, but its absolute size cannot be judged without a scale reference.",
+          "sources": [
+            "https://www.amnh.org/explore/news-blogs/what-is-a-pterosaur",
+            "https://www.amnh.org/explore/ology/paleontology/pterosaurs-the-card-game/meet-the-pterosaurs",
+            "https://www.nhm.ac.uk/discover/the-truth-about-pterosaurs.html",
+            "https://www.britannica.com/animal/pterodactyl",
+            "https://en.wikipedia.org/wiki/Pterodactylus",
+            "https://en.wikipedia.org/wiki/Pterosaur"
+          ],
+          "passed": true,
+          "reasons": []
+        }
+      ]
     }
-  },
-  "redo_later": {
-    "sea": "rejected by the owner: redraw with soft edges like the river and the lake"
   }
 }

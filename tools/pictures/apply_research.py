@@ -38,6 +38,7 @@ def main():
                 cell["draw"] = choice["draw"] + (f"; {pose}" if pose else "")
                 dropped = set(choice.get("drop_features", []))
                 cell["features"] = [f for f in facts["features"] if f not in dropped]
+                cell["must_show"] = choice["must_show"]
                 cell["not_this"] = facts["not_this"]
                 cell["tell_apart"] = choice.get("tell_apart", facts["tell_apart"])
                 cell["disagreement"] = choice["bring_to_owner"]

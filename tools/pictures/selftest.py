@@ -221,6 +221,26 @@ def test_records_and_review():
         assert newer["history"][-1]["earlier_master"] == rejected["master_file"]
 
 
+def test_the_feature_check_fails_only_on_what_tells_apart_and_listed_mistakes():
+    import check_features
+    cell = {"must_show": ["a tall sail", "short back legs"],
+            "not_this": ["long running legs", "four sprawling legs"],
+            "features": ["a small crest", "the thumb claw is the largest"]}
+    fine = {"is_this_animal": True, "must_show": ["yes", "yes"], "mistakes_shown": [],
+            "features": ["yes", "no"]}
+    reasons, reported, _ = check_features.judge(cell, fine, True, [])
+    assert reasons == [] and reported == ["the thumb claw is the largest"]   # reported, not failed
+
+    hidden = dict(fine, must_show=["yes", "unclear"])
+    assert check_features.judge(cell, hidden, True, [])[0] == ["what tells it apart cannot be seen: short back legs"]
+    wrong = dict(fine, must_show=["yes", "no"], mistakes_shown=[1, 7, "long legs"])
+    reasons = check_features.judge(cell, wrong, True, [])[0]
+    assert reasons == ["does not show what tells it apart: short back legs",
+                       "shows a listed mistake: long running legs"]         # only mistakes on the list count
+    assert check_features.judge(cell, dict(fine, is_this_animal=False), True, [])[0]
+    assert check_features.judge(cell, fine, False, ["touches the edge"])[0]
+
+
 def main():
     tests = [value for name, value in globals().items() if name.startswith("test_")]
     for test in tests:

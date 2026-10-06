@@ -1,16 +1,21 @@
 """The stricter check for prehistoric animals: does the tile show what the sources say?
 
 The owner cannot review every prehistoric animal himself. So each one carries, in
-plan.json, a list of identifying features written from museum and encyclopedia
-descriptions (with the sources), the mistakes to avoid, and how to tell it from its
-look-alikes. This asks a stronger vision model to compare the full-resolution master
-against that list, feature by feature.
+plan.json, what was written from museum and encyclopedia descriptions (with the
+sources): the few traits that tell it from its look-alikes (`must_show`), the mistakes
+to avoid (`not_this`), and a longer list of features. This asks a stronger vision model
+to compare the full-resolution master against all three.
 
-A tile PASSES when every feature is seen or cannot be judged from the picture, none is
-contradicted, none of the listed mistakes appears, and the animal is the one intended.
-A passing tile is approved under the owner's standing rule of 6 Oct 2026. A tile that
-fails, or whose sources disagree about its appearance, is left for the owner, with the
-reasons. Nothing is linked to a thing in any other way.
+By the owner's ruling of 6 Oct 2026, a tile FAILS only when
+  - it is not the animal intended, or
+  - a trait that tells it from its look-alikes is not clearly shown, or
+  - one of the listed mistakes appears, or
+  - it did not cut cleanly.
+The other features are compared too, and any the picture contradicts are REPORTED on
+the tile's record, but they do not fail it: many are too fine to see in the game.
+
+A passing tile is approved under the owner's standing rule. A tile that fails, or whose
+sources disagree about how the animal looks, is left for the owner, with the reasons.
 
     python tools/pictures/check_features.py SHEET_ID
 """
@@ -22,27 +27,30 @@ import sys
 from piclib import PLAN, RECORDS, ROOT, load_records, read_json, today, write_json
 
 RULE = "approved under the owner's standing rule of 2026-10-06: it passed the feature check against the cited sources"
+CHECK_RULE = "v2: fails only on must_show and listed mistakes; other features are reported"
 
 
 def ask(client, model: str, picture: bytes, name: str, cell: dict) -> tuple:
     lines = [
         f"This picture is meant to be a scientifically accurate life reconstruction of {name}, "
-        "for a children's game. Compare it with the description below, which was written from "
+        "for a children's game. Compare it with the three lists below, which were written from "
         "museum and encyclopedia sources. Judge only what you can see.",
         "",
-        "Features it should show:",
+        "A. What tells it from its look-alikes. Each of these should be clearly shown:",
     ]
-    lines += [f"{i}. {feature}" for i, feature in enumerate(cell["features"], 1)]
-    lines += ["", "Mistakes it must NOT show:"]
-    lines += [f"- {mistake}" for mistake in cell.get("not_this", [])]
-    if cell.get("tell_apart"):
-        lines += ["", f"How it differs from its look-alikes: {cell['tell_apart']}"]
+    lines += [f"A{i}. {trait}" for i, trait in enumerate(cell["must_show"], 1)]
+    lines += ["", "B. Mistakes it must NOT show:"]
+    lines += [f"B{i}. {mistake}" for i, mistake in enumerate(cell.get("not_this", []), 1)]
+    lines += ["", "C. Other features, in finer detail:"]
+    lines += [f"C{i}. {feature}" for i, feature in enumerate(cell["features"], 1)]
     lines += [
         "",
-        "For each numbered feature answer \"yes\" (clearly shown), \"no\" (the picture contradicts it) "
-        "or \"unclear\" (cannot be judged from this view).",
-        "Reply with JSON only: {\"is_this_animal\": true, \"features\": [\"yes\", \"no\", ...], "
-        "\"mistakes_shown\": [\"...\"], \"comment\": \"one sentence\"}",
+        "For every A item and every C item answer \"yes\" (clearly shown), \"no\" (the picture "
+        "contradicts it) or \"unclear\" (cannot be judged from this view).",
+        "For B, give the numbers of the listed mistakes the picture really shows; an empty list if none. "
+        "Do not add mistakes that are not on list B.",
+        "Reply with JSON only: {\"is_this_animal\": true, \"must_show\": [\"yes\", ...], "
+        "\"mistakes_shown\": [2], \"features\": [\"yes\", \"no\", ...], \"comment\": \"one sentence\"}",
     ]
     reply = client.chat.completions.create(
         model=model,
@@ -54,6 +62,28 @@ def ask(client, model: str, picture: bytes, name: str, cell: dict) -> tuple:
         ]}],
     )
     return json.loads(reply.choices[0].message.content), reply.usage
+
+
+def judge(cell: dict, answer: dict, cut_ok: bool, cut_flags: list) -> tuple:
+    """(reasons it fails, features reported but not failing, the raw verdicts)."""
+    shown = [str(v).lower() for v in answer.get("must_show", [])]
+    verdicts = [str(v).lower() for v in answer.get("features", [])]
+    listed = cell.get("not_this", [])
+    numbers = [n for n in answer.get("mistakes_shown", []) if isinstance(n, int) and 1 <= n <= len(listed)]
+    reasons = []
+    if answer.get("is_this_animal") is not True:
+        reasons.append("the checker does not think it is this animal")
+    if len(shown) != len(cell["must_show"]) or len(verdicts) != len(cell["features"]):
+        reasons.append("the checker did not answer every item")
+    reasons += [f"does not show what tells it apart: {trait}"
+                for trait, v in zip(cell["must_show"], shown) if v == "no"]
+    reasons += [f"what tells it apart cannot be seen: {trait}"
+                for trait, v in zip(cell["must_show"], shown) if v not in ("yes", "no")]
+    reasons += [f"shows a listed mistake: {listed[n - 1]}" for n in numbers]
+    if not cut_ok:
+        reasons.append("it did not cut cleanly: " + "; ".join(cut_flags))
+    reported = [f for f, v in zip(cell["features"], verdicts) if v == "no"]
+    return reasons, reported, {"must_show": shown, "features": verdicts, "mistakes_shown": numbers}
 
 
 def main():
@@ -72,57 +102,57 @@ def main():
     from openai import OpenAI
 
     client, spent = OpenAI(), 0.0
-    passed, for_owner = [], []
+    passed, for_owner, noted = [], [], []
     for tile_id, tile in records["tiles"].items():
         if tile["sheet_id"] != sheet_id:
             continue
         cell = cells[tile["cell"] - 1]
         if not cell.get("features"):
             continue  # not a prehistoric animal: the ordinary check and the owner's review apply
+        if not cell.get("must_show"):
+            raise SystemExit(f"{cell.get('name') or cell['thing']} has no `must_show`. Write what tells it "
+                             "from its look-alikes in research/curated.json, then run apply_research.py.")
         name = sheet["names"][tile["expected_thing"]]
         answer, usage = ask(client, check["model"], (ROOT / tile["master_file"]).read_bytes(), name, cell)
         if usage is not None:
             spent += (usage.prompt_tokens * check["usd_per_million_input_tokens"]
                       + usage.completion_tokens * check["usd_per_million_output_tokens"]) / 1_000_000
-        verdicts = [str(v).lower() for v in answer.get("features", [])]
-        contradicted = [cell["features"][i] for i, v in enumerate(verdicts)
-                        if v == "no" and i < len(cell["features"])]
-        mistakes = [m for m in answer.get("mistakes_shown", []) if str(m).strip()]
-        reasons = []
-        if answer.get("is_this_animal") is not True:
-            reasons.append("the checker does not think it is this animal")
-        if len(verdicts) != len(cell["features"]):
-            reasons.append("the checker did not answer every feature")
-        reasons += [f"contradicts: {f}" for f in contradicted]
-        reasons += [f"shows a known mistake: {m}" for m in mistakes]
-        if not tile["cut"]["ok"]:
-            reasons.append("it did not cut cleanly: " + "; ".join(tile["cut"]["flags"]))
-        if cell.get("disagreement"):
-            reasons.append("the sources disagree: " + cell["disagreement"])
+        reasons, reported, verdicts = judge(cell, answer, tile["cut"]["ok"], tile["cut"]["flags"])
+        disagreement = cell.get("disagreement", "")
+        if tile.get("feature_check"):
+            tile.setdefault("earlier_feature_checks", []).append(tile["feature_check"])
         tile["feature_check"] = {
-            "model": check["model"], "date": today(), "verdicts": verdicts,
-            "mistakes_shown": mistakes, "comment": str(answer.get("comment", "")).strip(),
-            "sources": cell.get("sources", []), "passed": not reasons, "reasons": reasons,
+            "model": check["model"], "date": today(), "rule": CHECK_RULE, **verdicts,
+            "comment": str(answer.get("comment", "")).strip(), "sources": cell.get("sources", []),
+            "passed": not reasons, "reasons": reasons, "reported": reported,
+            "sources_disagree": disagreement,
         }
-        only_disagreement = reasons and all(r.startswith("the sources disagree") for r in reasons)
-        if not reasons and tile["review"] == "waiting for the owner":
+        if not reasons and not disagreement and tile["review"] == "waiting for the owner":
             tile.update(thing_id=tile["expected_thing"], review="approved", review_note=RULE,
                         reviewed_on=today())
+        if reasons or disagreement:
+            for_owner.append((tile_id, name, reasons, disagreement))
+        else:
             passed.append(name)
-        elif reasons:
-            for_owner.append((tile_id, name, reasons, only_disagreement))
-        unclear = verdicts.count("unclear")
-        print(f"  {tile_id} {name}: {'PASS' if not reasons else 'FOR THE OWNER'}"
-              f"  ({verdicts.count('yes')} yes, {unclear} unclear, {verdicts.count('no')} no)"
-              f"  {tile['feature_check']['comment']}")
-    sheet["feature_check_cost_usd"] = round(spent, 5)
+        if reported:
+            noted.append((tile_id, name, reported))
+        state = "FAILS" if reasons else ("SOURCES DISAGREE" if disagreement else "PASS")
+        print(f"  {tile_id} {name}: {state}  (tells apart: {verdicts['must_show'].count('yes')} of "
+              f"{len(cell['must_show'])}; listed mistakes: {len(verdicts['mistakes_shown'])}; "
+              f"finer features contradicted: {len(reported)})  {tile['feature_check']['comment']}")
+    sheet["feature_check_cost_usd"] = round(sheet.get("feature_check_cost_usd", 0) + spent, 5)
     write_json(RECORDS, records)
-    print(f"\nPassed and approved under the owner's rule: {', '.join(passed) or 'none'}")
-    for tile_id, name, reasons, only_disagreement in for_owner:
-        kind = "sources disagree" if only_disagreement else "FAILED"
-        print(f"For the owner ({kind}) - {tile_id} {name}:")
+    print(f"\nPassed: {', '.join(passed) or 'none'}")
+    for tile_id, name, reasons, disagreement in for_owner:
+        print(f"For the owner ({'FAILED' if reasons else 'sources disagree'}) - {tile_id} {name}:")
         for reason in reasons:
             print(f"    - {reason}")
+        if disagreement:
+            print(f"    - the sources disagree: {disagreement}")
+    for tile_id, name, reported in noted:
+        print(f"Reported, not failing - {tile_id} {name}:")
+        for feature in reported:
+            print(f"    - contradicts: {feature}")
     print(f"The check itself cost ${spent:.4f}.")
 
 

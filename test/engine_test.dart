@@ -217,7 +217,10 @@ void main() {
     final lotus = media.forEntity(thing('lotus'));
     expect(lotus.art, 'Assets/pictures/lotus.webp');
     expect(File(lotus.art!).existsSync(), isTrue);
-    expect(media.forEntity(thing('sea')).art, isNull, reason: 'the sea tile was rejected');
+    expect(entities.where((e) => media.forEntity(e).art == null), isEmpty,
+        reason: 'every thing in the game has an approved drawn tile');
+    expect(media.forEntity(Entity(id: 'not_drawn', name: 'Not drawn', fields: {})).art, isNull,
+        reason: 'a thing with no approved tile has no drawn picture');
     expect(media.inStyle(thing('lotus'), 0).art, isNotNull);
     expect(media.inStyle(thing('lotus'), 2).art, isNull, reason: 'an emoji board shows emoji only');
 

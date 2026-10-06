@@ -1,67 +1,136 @@
 {
-  "about": "How each prehistoric animal's researched features are turned into its prompt and its check. `draw` is the prompt wording, written from the features. `bring_to_owner` is filled only where sources disagree, or science is unsettled, about something that changes how the animal LOOKS in its tile; differences in size estimates are left in the research files. `drop_features` lists researched features the check should skip, because a tile on plain white cannot show them (a setting, or a person for scale).",
+  "about": "How each prehistoric animal's researched features are turned into its prompt and its check. `draw` is the prompt wording, written from the features. `bring_to_owner` is filled only where sources disagree, or science is unsettled, about something that changes how the animal LOOKS in its tile; differences in size estimates are left in the research files. `drop_features` lists researched features the check should skip, because a tile on plain white cannot show them (a setting, or a person for scale). `must_show` lists the few visible traits that tell the animal from its look-alikes, written from its researched `tell_apart`: by the owner's ruling of 6 Oct 2026 the check fails a tile only on these and on the listed mistakes, and reports the other features.",
   "animals": {
     "Tyrannosaurus rex": {
       "draw": "a huge two-legged meat-eater with its body held level and its heavy tail stretched out behind, off the ground; a massive deep skull, very wide at the back, with thick banana-shaped teeth; very small arms, each with two clawed fingers; long powerful back legs; scaly skin with no coat of feathers",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "A deep, heavy skull, very wide at the back",
+        "Very small arms"
+      ]
     },
     "Giganotosaurus": {
       "draw": "a giant two-legged meat-eater, a little longer and more lightly built than Tyrannosaurus, with its body level and tail stretched out behind; a long, LOW skull with a rough wrinkled ridge along the top of the snout, a small crest in front of each eye, and a small chin-like bump at the tip of the lower jaw; thin blade-like teeth; short arms with three clawed fingers; scaly skin; no sail or spines on the back",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "A long, low skull, clearly longer than it is deep"
+      ]
     },
     "Allosaurus": {
       "draw": "a large but lighter two-legged meat-eater with its body level and a long tail; a pair of short horns above and just in front of the eyes, with two low ridges along the snout leading back to them; a big but lightly built skull with dagger-like teeth; short strong arms with three fingers ending in large curved claws; pebbly scaly skin",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "Short horns above the eyes",
+        "Arms with large curved claws"
+      ]
     },
     "Spinosaurus": {
       "draw": "a very large, long, LOW-slung meat-eater; its back legs are strikingly SHORT and stubby, far shorter than those of other big meat-eaters, so its long body and belly are carried close to the ground; standing on its two short back legs with its body level; a long, low, narrow crocodile-like snout with straight cone-shaped teeth and a small crest in front of the eyes; a tall skin-covered sail along its back; strong arms with three clawed fingers; a long tail that is tall and flattened from side to side like a paddle or a newt's tail",
       "bring_to_owner": "Scientists agree on the crocodile-like snout, the sail, the short back legs and the paddle tail. They still debate whether it walked on two legs or four, and whether it swam after prey or waded like a heron. The tile shows it on two legs, which recent studies favour.",
-      "second_view": "a second try, walking, seen exactly from the side so the short back legs and the paddle tail are plain"
+      "second_view": "a second try, walking, seen exactly from the side so the short back legs and the paddle tail are plain",
+      "must_show": [
+        "A tall sail along the back",
+        "A long, low, narrow crocodile-like snout",
+        "Short back legs",
+        "A tall tail flattened from side to side like a paddle"
+      ]
     },
     "Velociraptor": {
       "draw": "a small feathered dinosaur the size of a turkey, like a long-tailed, toothed, ground-running bird; body covered in feathers, with longer wing-like feathers on the forearms and feathers on the tail; a long, low, narrow head with a slightly upturned snout and small sharp teeth; three long clawed fingers; one large sickle-shaped claw on the second toe of each foot, held raised off the ground; a long stiff tail held straight out behind",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "A body covered in feathers",
+        "A long stiff tail held straight out behind",
+        "A raised sickle-shaped claw on the second toe of at least one foot"
+      ]
     },
     "Triceratops": {
       "draw": "a big heavy four-legged plant-eater built like a giant rhinoceros; an enormous head with two long brow horns pointing forward, one short nose horn, a parrot-like beak, and a large solid bony frill with no holes, edged with low triangular bumps; sturdy legs held upright under the body; pebbly scaly skin",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "Two long brow horns and one short nose horn",
+        "A large solid neck frill",
+        "A parrot-like beak"
+      ]
     },
     "Stegosaurus": {
       "draw": "a large four-legged plant-eater with a high arched back, highest over the hips, and front legs much shorter than its back legs; a very small narrow head carried low; two staggered rows of upright kite-shaped plates along its neck, back and tail, the largest over the hips; four long spikes near the tip of the tail pointing out sideways; tail held clear of the ground",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "Two rows of tall upright plates along the back",
+        "Spikes near the tip of the tail"
+      ]
     },
     "Ankylosaurus": {
       "draw": "a broad, low, tank-like four-legged plant-eater; back and sides covered in flat and low-ridged bony plates and knobs set in the skin, with no tall spikes; a large rounded bony club at the tip of a stiff tail held off the ground; a wide low triangular head with a broad beak and four short horns at the back; short sturdy legs held upright under the body",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "A low, wide, flat-backed body covered in bony armour",
+        "A large club at the tip of the tail"
+      ]
     },
     "Parasaurolophus": {
       "draw": "a large duck-billed plant-eater standing on all fours, its arms shorter than its legs; one long, hollow, tube-shaped crest sweeping up and back from the top of its head, gently curved and reaching well beyond the back of the head, with no flap of skin joining it to the neck; a broad flat duck-like beak; a deep body with a ridge along the back; pebbly scaly skin with no plates or spikes",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "One long tube-shaped crest sweeping up and back from the head",
+        "A flat duck-like beak"
+      ]
     },
     "Mosasaurus": {
       "draw": "a giant sea lizard with a long streamlined body and a deep barrel-shaped chest; a large cone-shaped head ending in a SHORT BLUNT snout, with big stout pointed teeth right up to the snout tip; four paddle-shaped flippers, the front pair broad and strong; a long tail whose end bends downward and carries a two-lobed shark-like fin; smooth-looking skin, dark on the back and pale on the belly; no crest, frill or fin along the back",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "A short blunt snout with teeth right up to its tip",
+        "Four paddle-shaped flippers",
+        "A tail ending in a two-lobed fin"
+      ]
     },
     "Tylosaurus": {
       "draw": "a giant sea lizard with a long streamlined body, slimmer than Mosasaurus; a long, narrow, cone-shaped head that is small for the body, about one-eighth of the animal's length; the snout runs on a little way past the front teeth as a short, blunt, rounded tip of the snout itself, covered in the same dark skin as the rest of the head (NOT a ball, bulb or pale lump stuck on the nose), and the tip of the lower jaw is toothless too; pointed cone teeth all about the same size; four paddle-shaped flippers; a long tail with a downward bend near the end carrying a two-lobed fin; smooth-looking dark skin with a paler belly; no crest or fin along the back",
       "second_view": "seen from the side and slightly from the front, so the long snout with its blunt toothless tip is clear",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "A long narrow snout whose tip sticks out past the front teeth as a blunt toothless end",
+        "Four paddle-shaped flippers",
+        "A tail ending in a two-lobed fin"
+      ]
     },
     "Kronosaurus": {
       "draw": "a huge sea reptile with an ENORMOUS long head, about a quarter of its whole length, with a long fairly narrow snout and large cone-shaped teeth, biggest at the front; a very short thick neck, so the head seems to join the body directly; a massive deep body; four large wing-like flippers, the hind pair a little longer; a short tail; no crest or dome on the head",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "An enormous head, about a quarter of the animal's length",
+        "A very short neck",
+        "Four large flippers and a short tail with no big tail fin"
+      ]
     },
     "Plesiosaurus": {
       "draw": "a small sea reptile with a small narrow head and thin needle-like teeth; a long slender neck ABOUT AS LONG AS its body and tail together, held out fairly straight in front and not raised like a swan's; a broad stiff turtle-like body with no shell; four long narrow pointed flippers, the front pair larger; a short tail",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "A small head on a long neck",
+        "A neck about as long as the body and tail together, not twice as long",
+        "Four flippers and a short tail"
+      ]
     },
     "Elasmosaurus": {
       "draw": "a sea reptile with an EXTREMELY long neck making up about two-thirds of the whole animal, about twice as long as its body and tail together, held out roughly level with only gentle curves and not raised like a swan's; a very small slender head with long fang-like front teeth; a compact streamlined body; four large paddle-shaped flippers, the front pair longer; a short tail",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "A very small head on an extremely long neck",
+        "A neck clearly longer than the body and tail together",
+        "Four flippers and a short tail"
+      ]
     },
     "Mixosaurus": {
       "draw": "a small fish-shaped sea reptile, deep-bodied at the front and narrowing to a long slim tail; a fairly large head with LONG, NARROW, slender pointed jaws like a dolphin's beak, lined with small sharp teeth, and a large eye; FOUR flippers, the front pair clearly longer than the hind pair; an upright fin on its back, set well forward; a long tail that stays almost straight, with only a LOW triangular fin rising from its upper edge near the end: NOT a forked tail, not a crescent, not the tail of a shark or a tuna; smooth skin; not a dolphin and not a shark",
-      "bring_to_owner": "The encyclopedia article describes a long tail with only a low fin. A 2020 fossil study found a clear triangular tail fin and a fin on the back. The tile follows the 2020 study."
+      "bring_to_owner": "The encyclopedia article describes a long tail with only a low fin. A 2020 fossil study found a clear triangular tail fin and a fin on the back. The tile follows the 2020 study.",
+      "must_show": [
+        "A fish-shaped body with long narrow jaws",
+        "An upright fin on the back",
+        "A long tail with a low triangular fin, not a tall crescent"
+      ]
     },
     "Titanoboa": {
       "draw": "an extinct giant snake, drawn as scientists reconstruct it from its closest living relatives, the boas and anacondas: an enormously long and very thick, heavy body; a head that is small for the body and shaped like a boa's; plain natural olive-brown colouring with dark blotches like an anaconda; no hood, no rattle and no fangs showing",
@@ -71,7 +140,10 @@
         "Shown in or beside water in a hot swampy forest, as an anaconda would be."
       ],
       "tell_apart": "It is drawn like a giant boa or anaconda. Vasuki indicus is drawn like a giant python. The fossils themselves show no reliable visible difference between the two.",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "A very thick, heavy-bodied snake shaped like a boa or an anaconda"
+      ]
     },
     "Vasuki indicus": {
       "draw": "an extinct giant snake from India, drawn as scientists reconstruct it on the model of a very large python: an enormously long, very thick, round-bodied snake; a plain python-like head; natural brown python-like blotched patterning; no hood, no extra heads and no fangs showing",
@@ -81,15 +153,27 @@
         "Shown on land or marshy ground, resting or moving slowly; not swimming in open water."
       ],
       "tell_apart": "It is drawn like a giant python. Titanoboa is drawn like a giant boa or anaconda. The fossils themselves show no reliable visible difference between the two.",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "A very thick, round-bodied snake shaped and patterned like a python"
+      ]
     },
     "Brachiosaurus": {
       "draw": "a very tall giraffe-like long-neck: its FRONT LEGS ARE LONGER than its back legs, so its shoulders stand well above its hips and its back slopes down toward the tail; a very long neck rising steeply upward in a gentle curve; a small head, tall in profile, with a long blunt snout and the nostrils at the front of the snout; a deep chest on four slender straight pillar-like legs, standing on all fours; a muscular tail that is short for a long-neck, held off the ground",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "Front legs longer than the back legs, so the shoulders stand above the hips and the back slopes down to the tail",
+        "A very long neck rising steeply upward"
+      ]
     },
     "Brontosaurus": {
       "draw": "a heavily built long-neck on four thick straight legs; its back is highest over the HIPS and slopes gently down to the shoulders, which are lower than the hips; a long neck that is strikingly THICK, wide and deep, held forward and only gently raised; a very small, LOW, long, flat head with a squared-off snout like the head of Diplodocus, not a tall boxy head; an EXTREMELY long tail, clearly longer than the neck and more than half the animal's whole length, stretching far out behind and tapering to a long thin whip, held in the air and not curled; the front feet are round pillars showing a single thumb claw and no other claws; plain scaly skin with no spines",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "A heavy body with a level back, the shoulders no higher than the hips",
+        "A strikingly thick, deep neck held forward",
+        "A long tail tapering to a thin whip"
+      ]
     },
     "Diplodocus": {
       "draw": "the slimmest and longest long-neck: a light, slender body with a level back on four straight legs, the front legs slightly shorter; a long THIN neck held roughly level or only gently raised, not upright; a very small low head with peg-like teeth only at the front of the mouth; an extremely long tail, more than half its whole length, tapering to a thin whip and held off the ground; small pebbly scales and a smooth back with no spines",
@@ -97,20 +181,38 @@
         "May show a row of narrow pointed spines along the tail, back and neck, like an iguana's."
       ],
       "tell_apart": "The slimmest and longest-looking of the four: a thin neck, a light body, a level back and a whip tail. Brontosaurus has the same layout but is clearly stockier with a much thicker, deeper neck. Brachiosaurus has high shoulders, a sloping back and a short tail. Argentinosaurus is far bulkier and broader, with no whip tail.",
-      "bring_to_owner": "The Natural History Museum describes a row of small spines along its back. The encyclopedia says the fossil skin with those spines may belong to a close relative. The tile leaves the spines out, so Amargasaurus stays the only long-neck with spines."
+      "bring_to_owner": "The Natural History Museum describes a row of small spines along its back. The encyclopedia says the fossil skin with those spines may belong to a close relative. The tile leaves the spines out, so Amargasaurus stays the only long-neck with spines.",
+      "must_show": [
+        "A slim, light body with a level back",
+        "A long thin neck held roughly level",
+        "A very long tail tapering to a thin whip"
+      ]
     },
     "Argentinosaurus": {
       "draw": "one of the largest land animals ever: an enormously massive, broad, deep-bodied long-neck with wide hips, on four very thick straight pillar-like legs; a long thick neck held forward and gently raised, with a small head; its shoulders about level with its hips, not raised like a giraffe's; a long thick tail that tapers evenly, with no thin whip end, held off the ground; plain skin with no crest, sail, spines or armour",
       "tell_apart": "Told from the other long-necks by sheer bulk: a broad, very heavy body with a thick neck, shoulders about level with the hips, a thick tail with no thin whip end, and no spines. Brachiosaurus has high shoulders and a sloping back. Diplodocus and Brontosaurus have a thin whip tail. These proportions come from related giant long-necks, not from Argentinosaurus bones.",
-      "bring_to_owner": "Only a few bones are known: some back and hip bones, a rib and leg bones. Its head, neck, tail and skin are drawn from related giant long-necks, so the whole shape is an informed estimate."
+      "bring_to_owner": "Only a few bones are known: some back and hip bones, a rib and leg bones. Its head, neck, tail and skin are drawn from related giant long-necks, so the whole shape is an informed estimate.",
+      "must_show": [
+        "An enormously massive, broad, deep body on four thick pillar-like legs",
+        "Shoulders about level with the hips, not raised like a giraffe's",
+        "No thin whip end to the tail, and no spines, sail or armour"
+      ]
     },
     "Amargasaurus": {
       "draw": "a small long-neck with a barrel-shaped body on four pillar-like legs, the front legs somewhat shorter; a SHORT neck for a long-neck, carried low or gently sloping, never upright; TWO parallel rows of tall thin spines along the top of the neck, tallest in the middle of the neck and curving backward; in each row the spines are joined by skin for most of their height, so the neck carries a tall double sail with the tips of the spines showing; the paired spines continue, shorter, onto the front of the back; only a low ridge over the hips and the base of the tail; a small head with a broad snout pointing downward; a long tapering tail",
-      "bring_to_owner": "Scientists agree on two rows of tall spines along the neck. They do not agree whether skin joined them into a sail or they stood as separate spikes. A 2022 study of the bone favours a sail, and the prompt asks for one."
+      "bring_to_owner": "Scientists agree on two rows of tall spines along the neck. They do not agree whether skin joined them into a sail or they stood as separate spikes. A 2022 study of the bone favours a sail, and the prompt asks for one.",
+      "must_show": [
+        "Two rows of tall spines along the top of the neck",
+        "A short neck for a long-neck, carried low"
+      ]
     },
     "Pachycephalosaurus": {
       "draw": "a two-legged plant-eater walking on two long strong back legs, with its body level and its heavy tail held stiff and straight out behind, off the ground; a large smooth rounded dome of bone on top of its head; small bony knobs around the back of the dome and short blunt spikes on the snout, with no long horns; a short skull with a small pointed beak and large eyes; short arms with five-fingered hands; a bulky body and a short thick neck",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "A large rounded dome of bone on top of the head",
+        "Walking on two back legs"
+      ]
     },
     "Pterodactylus": {
       "draw": "a SMALL flying reptile, shown flying with its wings spread; long thin straight jaws with many small cone-shaped teeth, the longest at the very tips of the jaws and smaller ones behind; the back of the head is smooth and rounded with NOTHING pointing backward; its only crest is a low, soft, rounded-triangular ridge on top of the head whose highest point is directly above the eyes; a short stub of a tail; each wing a sheet of skin stretched from one very long finger back to the hind leg, with three small clawed fingers free at the front edge of the wing; short fuzz on the head and body, and bare wings",
@@ -119,29 +221,54 @@
         "On the ground it walks on all fours with the outer wings folded up."
       ],
       "bring_to_owner": "",
-      "second_view": "a second try, with its head in clear side view so the teeth and the low crest above the eyes are plain"
+      "second_view": "a second try, with its head in clear side view so the teeth and the low crest above the eyes are plain",
+      "must_show": [
+        "Jaws with teeth",
+        "Only a low crest on top of the head, with no long crest pointing backward",
+        "A short stub of a tail"
+      ]
     },
     "Pteranodon": {
       "draw": "a very LARGE flying reptile, shown flying with its long narrow albatross-like wings spread; a long slender completely TOOTHLESS beak ending in a sharp point; a long blade-like bony crest rising from the back of the skull and sweeping backward; a small body between the wings; a very short tail, hardly visible; each wing a sheet of skin stretched from one hugely long finger, with three small clawed fingers at the front edge; a fuzzy body, not scaly and not feathered",
       "drop_features": [
         "If on the ground, it stands on all fours with wings folded."
       ],
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "A long toothless beak",
+        "A long crest sweeping backward from the back of the skull",
+        "A very short tail"
+      ]
     },
     "Quetzalcoatlus": {
       "draw": "a GIANT flying reptile shown standing on the ground on all fours with its wings folded, as tall as a giraffe; a very long straight stiff neck carried upward; a huge head with a long slender pointed TOOTHLESS beak, far longer than its small body; only a small crest on top of the skull near the base of the beak, with no long crest pointing backward; long stork-like back legs and long folded wing-arms held straight beneath the body; a tiny tail; hair-like fuzz on the body",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "A very long, straight neck",
+        "A long, pointed, toothless beak",
+        "No long crest pointing backward"
+      ]
     },
     "Rhamphorhynchus": {
       "draw": "a small flying reptile, shown flying with its wings spread; a LONG thin stiff tail ending in a flat DIAMOND-shaped vane, like the tail of a kite; a long low slim head with its jaws slightly open, showing long needle-like teeth that slant FORWARD and outward and mesh together like the teeth of two combs; the very tips of both jaws are sharp, toothless and beak-like, the lower tip hooking slightly upward; no crest of any kind; large eyes; a short body and short legs; thin wing skin stretched from one very long finger to the hind legs; fuzz on the body, and bare wings",
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "A long thin tail ending in a diamond-shaped vane",
+        "Teeth showing in the jaws",
+        "No crest on the head"
+      ]
     },
     "Dimorphodon": {
       "draw": "a small stocky flying reptile, shown flying with its wings spread; a very LARGE DEEP head, big for its body, with large eyes; jaws open to show two kinds of teeth: four or five long fangs at the FRONT of BOTH the upper jaw and the lower jaw, and many tiny teeth behind them; a short strong neck; a long stiff straight tail with no vane at its tip; wings rather short for its body; each wing has three small free fingers with curved claws at the bend in the middle of its front edge, and the long wing finger runs on to a plain pointed wing tip with NO claw; nothing on top of the head: no crest and no horns; fuzz on the body",
       "drop_features": [
         "On the ground it goes on all fours with wings folded like an umbrella; a good climber."
       ],
-      "bring_to_owner": ""
+      "bring_to_owner": "",
+      "must_show": [
+        "A very large, deep head",
+        "Long fangs at the front of the jaws",
+        "A long straight tail with no vane at its tip"
+      ]
     }
   }
 }
