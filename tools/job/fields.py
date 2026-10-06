@@ -7,8 +7,12 @@ decide. A field enters the dictionary only when it passes all four:
                              things already in the circle, and new names that pass the
                              familiarity check.
   2. one value each          every thing already in the circle belongs to exactly one
-                             value. Two checks, worded differently, must both say so, and
-                             must agree.
+                             value: two checks, worded differently, must both say so and
+                             agree. At most one thing in eight may truly fit more than
+                             one group; it then lists them and stays off boards sorted by
+                             the field, as the dictionary rules. And the groups must have
+                             sharp edges: both checks must place at least 85 of every 100
+                             names where the proposer did.
   3. one clean solution      sample boards sorted by the field must not also sort cleanly
                              by another field.
   4. not a synonym           it must not ask what an existing field asks in other words,
@@ -28,6 +32,11 @@ CANDIDATES = 3            # fields asked for in one go
 NEW_NAMES = 6             # new things asked for with each value
 FAMILIAR_ENOUGH = 0.7
 SAME_SPLIT = 0.9          # two fields that agree on this share of the things are one field
+# Test 2 was set against the seven fields the owner approved himself (7 Oct 2026): of their
+# things, between none and one in nine has no single value by the two checks, and at least
+# 89 in 100 are placed as recorded. Sharp fields pass; a field of sizes or colours does not.
+ONE_IN = 8                # of the things already in a circle, one in this many may fit more than one group
+SHARP_ENOUGH = 0.85       # the share of all names that both checks must place where the proposer did
 
 PROPOSER = "You design sorting questions for a small child's picture game. You answer only with JSON."
 
@@ -157,6 +166,16 @@ def one_value_each(names: list, first: dict, second: dict, values: list, labels:
     return placed, unclear
 
 
+def values_named(name: str, first: dict, second: dict, values: list, labels: dict = None) -> list:
+    """Every value either check named for a thing: what it lists when it has no single one."""
+    known = {v: v for v in values}
+    known.update({key_of(label): v for v, label in (labels or {}).items()})
+    b = second.get(name)
+    b = [key_of(x) for x in b] if isinstance(b, list) else [key_of(b)] if isinstance(b, str) else []
+    named = [known.get(key_of(first.get(name, "")))] + [known.get(x) for x in b]
+    return list(dict.fromkeys(v for v in named if v))
+
+
 def boards_clean(dictionary: dict, things: dict, path: list, field: str, definition: dict,
                  placed: dict, new: dict, limit: float) -> str:
     """'' when sample boards sorted by the field have one clean solution often enough.
@@ -240,17 +259,39 @@ def test(client, config, spend, dictionary: dict, things: dict, taken: set, path
 
     # 2. one value each, for the things already there and for the new names alike
     first, second = sort_twice(client, config, spend, chain, candidate, list(names) + list(offered))
-    placed, unclear = one_value_each(list(names) + list(offered), first, second, values, result["values"])
+    everything = list(names) + list(offered)
+    placed, unclear = one_value_each(everything, first, second, values, result["values"])
     result["placed"] = {names[n]: v for n, v in placed.items() if n in names}
-    wrong = {n: why for n, why in unclear.items() if n in names}
-    # the proposer's own sorting is a third opinion: where it put a thing in another group than
-    # both checks did, the groups have no sharp edge (a crow: big, or small?)
+    # a thing already there with no single value: it may list two or more and stay off the
+    # board, if only a few do. One that fits no group at all cannot be recorded.
+    several, lost = {}, {}
+    for name in names:
+        if name in unclear:
+            named = values_named(name, first, second, values, result["values"])
+            if len(named) >= 2:
+                several[name] = named
+            else:
+                lost[name] = unclear[name]
+    result["several"] = {names[n]: v for n, v in several.items()}
+    if lost:
+        result["why"].append("not every thing has a value: " + "; ".join(f"{n} - {why}" for n, why in lost.items()))
+        return result
+    allowed = len(names) // ONE_IN
+    if len(several) > allowed:
+        result["why"].append(
+            f"not every thing has one value: {len(several)} of the {len(names)} things there fit more than one group, "
+            f"and at most {allowed} may (" + "; ".join(f"{n}: {' and '.join(v)}" for n, v in several.items()) + ")")
+        return result
+    # the proposer's own sorting is a third opinion: where both checks often put a thing in
+    # another group than it did, the groups have no sharp edges (a crow: big, or small?)
     said = {name: value["key"] for value in candidate["values"] for name in value["members"]}
-    for name, value in placed.items():
-        if name in names and said.get(name, value) != value:
-            wrong[name] = f"the proposer put it in '{said[name]}', both checks in '{value}'"
-    if wrong:
-        result["why"].append("not every thing has one value: " + "; ".join(f"{n} - {why}" for n, why in wrong.items()))
+    said.update(offered)
+    moved = {n: (said[n], placed.get(n)) for n in everything if n in said and placed.get(n) != said[n]}
+    result["sharpness"] = round(1 - len(moved) / len(everything), 2)
+    if result["sharpness"] < SHARP_ENOUGH:
+        shown = "; ".join(f"{n}: '{a}' or '{b or 'no one group'}'" for n, (a, b) in list(moved.items())[:4])
+        result["why"].append(f"its groups have no sharp edges: both checks placed only {result['sharpness']:.0%} of the "
+                             f"things where the proposer did ({shown})")
         return result
 
     # 4. not a synonym (before any more is spent)

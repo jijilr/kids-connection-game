@@ -390,12 +390,20 @@ def add_field(run: dict, entry: dict, result: dict, before: dict) -> bool:
                       "examples": [n for n, o in result["new"].items() if o["value"] == value]}
               for value, label in result["values"].items()}
     proposals = cat.read_json(PROPOSALS) or {}
+    label = result["values"]
     proposals[cid] = {
         "status": f"approved by the rules on {today()}, job run {run['id']}",
         "field": key, "wording": result["wording"], "values": values,
+        # a thing that fits more than one group lists them, and stays off boards sorted by the field
+        "assign": dict(result.get("several", {})),
+        "notes": {thing: {key: "Two checks could not give it one group: " + " and ".join(label[v] for v in fits)
+                          + f". It stays off boards sorted by this field. Job run {run['id']}."}
+                  for thing, fits in result.get("several", {}).items()},
         "familiar": {n: o["familiar"] for n, o in result["new"].items()},
         "tests": {"four familiar things for each value": result["counts"],
-                  "one value for each thing": f"{len(result['placed'])} things already in the circle, placed alike by two checks",
+                  "one value for each thing": f"{len(result['placed'])} things already in the circle placed alike by two "
+                                              f"checks; {len(result.get('several', {}))} fit more than one group; "
+                                              f"sharpness {result.get('sharpness')}",
                   "one clean solution": "sample boards passed", "not a synonym": "no existing field asks or splits the same"},
         "refused_by_the_rules": before.get("refused_by_the_rules", []),
     }
@@ -416,7 +424,8 @@ def add_field(run: dict, entry: dict, result: dict, before: dict) -> bool:
     record_decision(cid, f'the rules added the field "{result["wording"]}" in job run {run["id"]}',
                     "it passed the four tests: " + ", ".join(result["values"].values()), status="added by the rules")
     run["fields_added"].append({"circle": cid, "label": entry["label"], "field": key, "wording": result["wording"],
-                                "values": result["values"], "filled": len(result["placed"]),
+                                "values": result["values"], "filled": len(result["placed"]) + len(result.get("several", {})),
+                                "off_the_board": sorted(result.get("several", {})),
                                 "version": dictionary["version"]})
     return True
 
@@ -773,6 +782,7 @@ def digest(run: dict, budget) -> list:
     lines.append("Circles opened: " + (", ".join(run.get("opened", [])) or "none") + ".")
     lines.append("Fields added: " + ("; ".join(
         f'"{f["wording"]}" for {f["label"]} ({", ".join(f["values"].values())}), filled in on {f["filled"]} things'
+        + (f' ({", ".join(f["off_the_board"])} fit more than one group and stay off that board)' if f.get("off_the_board") else "")
         for f in run.get("fields_added", [])) or "none") + ".")
     lines.append(f"Things added: {len(added)}" + (": " + ", ".join(t["name"] for t in added) if added else "") + ".")
     if drawn:

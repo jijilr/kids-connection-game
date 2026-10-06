@@ -115,7 +115,7 @@ def stand_in(sorting: dict, checking: dict = None, not_birds: tuple = ()):
             return kind if system == field_rules.SORTER else {name: [value] for name, value in kind.items()}
         if system == field_rules.SORTER:
             return dict(sorting)
-        return {name: [value] for name, value in sorting.items()} if checking is None else dict(checking)
+        return {**{name: [value] for name, value in sorting.items()}, **(checking or {})}
     return ask
 
 
@@ -173,27 +173,41 @@ def test_a_suggested_name_that_is_not_a_thing_of_the_circle_does_not_count():
     assert result["not_of_this_circle"] == ["Goose", "Pelican", "Flamingo"]
 
 
-def test_where_the_proposer_and_the_checks_place_a_thing_differently_the_field_fails():
+def test_groups_with_no_sharp_edges_fail():
     def crow_moved(dictionary, things, field):         # the proposer says the yard; both checks say the sky
         field["values"][0]["members"].remove("Crow")
         field["values"][2]["members"].append("Crow")
-    result = run_test(sorting_changes={"Crow": "sky"}, change=crow_moved)
-    assert "Crow - the proposer put it in 'yard', both checks in 'sky'" in result["why"][0]
+    # one thing in twenty placed otherwise than the proposer said: the checks' value stands, and the field passes
+    one = run_test(sorting_changes={"Crow": "sky"}, change=crow_moved)
+    assert one["why"] == [] and one["placed"]["crow"] == "sky" and one["sharpness"] == 0.95
+    # four in twenty: these are not groups a child could tell apart
+    many = run_test(sorting_changes={"Crow": "sky", "Kite": "trees", "Goose": "yard", "Rooster": "sky"}, change=crow_moved)
+    assert "its groups have no sharp edges" in many["why"][0] and "only 80%" in many["why"][0]
 
 
-def test_a_thing_with_two_values_or_none_fails_and_so_does_a_disagreement():
-    two = run_test(checking={**{n: [v] for n, v in {"Eagle": "sky", "Crow": "sky", "Swan": "water", "Hen": "yard",
-                                                    "Peacock": "yard", "Parrot": "trees", "Owl": "trees"}.items()},
-                             "Duck": ["water", "yard"]})
-    assert "not every thing has one value" in two["why"][0] and "Duck - it fits more than one group" in two["why"][0]
+def test_a_few_things_may_fit_two_groups_and_then_stay_off_the_board():
+    # one bird in eight fits two groups: allowed. It lists both, is not counted in either, and the field passes
+    one = run_test(checking={"Duck": ["water", "yard"]})
+    assert one["why"] == [], one["why"]
+    assert one["several"] == {"duck": ["water", "yard"]} and "duck" not in one["placed"]
+    assert one["counts"]["water"] == 4                          # Swan and three new ones, without the duck
+    # two in eight: too many
+    two = run_test(checking={"Duck": ["water", "yard"], "Hen": ["yard", "trees"]})
+    assert "2 of the 8 things there fit more than one group, and at most 1 may" in two["why"][0]
+    # a thing that fits no group cannot be recorded at all
     none = run_test(sorting_changes={"Owl": "none"}, checking={"Owl": []})
-    assert "Owl - it fits no group" in none["why"][0]
-    # the two checks each give one value, but not the same one
+    assert "not every thing has a value: Owl - it fits no group" in none["why"][0]
+    # the two checks each give one value, but not the same one: it has no single value
     names = ["Crow"]
     placed, unclear = field_rules.one_value_each(names, {"Crow": "sky"}, {"Crow": ["trees"]}, ["sky", "trees"])
     assert placed == {} and "the two checks disagree" in unclear["Crow"]
+    assert field_rules.values_named("Crow", {"Crow": "sky"}, {"Crow": ["trees"]}, ["sky", "trees"]) == ["sky", "trees"]
     placed, unclear = field_rules.one_value_each(names, {"Crow": "sky"}, {"Crow": ["sky"]}, ["sky", "trees"])
     assert placed == {"Crow": "sky"} and unclear == {}
+    # a check may name a group by its label instead of its key
+    placed, _ = field_rules.one_value_each(names, {"Crow": "High in the sky"}, {"Crow": ["sky"]}, ["sky", "trees"],
+                                           {"sky": "High in the sky", "trees": "In the trees"})
+    assert placed == {"Crow": "sky"}
 
 
 def test_a_field_that_repeats_an_existing_one_fails():
