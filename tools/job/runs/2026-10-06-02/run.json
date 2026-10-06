@@ -1,0 +1,207 @@
+{
+  "id": "2026-10-06-02",
+  "started": "2026-10-06",
+  "rehearse": "made_by_people/building",
+  "cap_inr": 40.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "made_by_people/building",
+        "chain": "Things people make > Buildings",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building"
+        },
+        "need": 3,
+        "recorded_but_not_in_the_game": [
+          {
+            "name": "Hospital",
+            "status": "waiting for the owner"
+          },
+          {
+            "name": "Farmhouse",
+            "status": "waiting for the owner"
+          }
+        ],
+        "retried": [
+          "Temple",
+          "School",
+          "Shop",
+          "Bridge",
+          "Tower"
+        ],
+        "done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": []
+  },
+  "retry_held": true,
+  "things": [
+    {
+      "name": "Hospital",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Hospital",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building"
+        },
+        "familiar": 0.8,
+        "reviewed": 2,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-01"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
+      },
+      "familiar": 0.8,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "draw": "A big white building with a red cross on top, many windows, and a wide front door with a small driveway",
+      "tries": 1,
+      "tile": "job_2026_10_06_01_1_01_c1",
+      "from_run": "2026-10-06-01"
+    },
+    {
+      "name": "Temple",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Temple",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building"
+        },
+        "familiar": 0.9,
+        "reviewed": 2,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-02"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
+      },
+      "familiar": 0.9,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "draw": "A tall stone building with a wide front porch, many columns, steps, and a triangular roof, in warm sandy colours",
+      "tries": 1,
+      "tile": "job_2026_10_06_02_1_01_c1"
+    },
+    {
+      "name": "School",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "School",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building"
+        },
+        "familiar": 0.9,
+        "reviewed": 2,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-02"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
+      },
+      "familiar": 0.9,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "draw": "A long low building with a red roof, many windows, a big door, and a flagpole, surrounded by green grass",
+      "tries": 1,
+      "tile": "job_2026_10_06_02_1_01_c2"
+    },
+    {
+      "name": "Shop",
+      "passed": false,
+      "why": [
+        "the pages do not show that it belongs in 'Buildings'",
+        "kind_of_made_thing: on a second reading, the sentence does not show it"
+      ],
+      "thing": {
+        "name": "Shop",
+        "fields": {
+          "kind_of_thing": "made_by_people"
+        },
+        "familiar": 0.9,
+        "reviewed": 2,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-02"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
+      },
+      "familiar": 0.9,
+      "judged_not_sourced": [
+        "kind_of_thing"
+      ],
+      "ask": 0
+    },
+    {
+      "name": "Bridge",
+      "passed": false,
+      "why": [
+        "the pages do not show that it belongs in 'Buildings'",
+        "kind_of_made_thing: on a second reading, the sentence does not show it"
+      ],
+      "thing": {
+        "name": "Bridge",
+        "fields": {
+          "kind_of_thing": "made_by_people"
+        },
+        "familiar": 0.8,
+        "reviewed": 2,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-02"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
+      },
+      "familiar": 0.8,
+      "judged_not_sourced": [],
+      "ask": 0
+    },
+    {
+      "name": "Tower",
+      "passed": false,
+      "why": [
+        "the pages do not show that it belongs in 'Buildings'",
+        "kind_of_made_thing: on a second reading, the sentence does not show it"
+      ],
+      "thing": {
+        "name": "Tower",
+        "fields": {
+          "kind_of_thing": "made_by_people"
+        },
+        "familiar": 0.7,
+        "reviewed": 2,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-02"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
+      },
+      "familiar": 0.7,
+      "judged_not_sourced": [],
+      "ask": 0
+    }
+  ],
+  "sheets": [
+    "job_2026_10_06_02_1_01"
+  ],
+  "stopped": "",
+  "spent_usd": {
+    "deepseek": 0.00231,
+    "drawing": 0.1001,
+    "picture_checks": 0.00037
+  }
+}

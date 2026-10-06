@@ -153,37 +153,38 @@
     {
       "name": "Temple",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
       },
       "why": [
-        "the pages do not show that it belongs in 'Buildings'",
-        "kind_of_made_thing: on a second reading, the sentence does not show it"
+        "rehearsal 2026-10-06-02: it passed every check and has a tile (job_2026_10_06_02_1_01_c1); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-02"
       ],
-      "from": "job:2026-10-06-01",
+      "from": "job:2026-10-06-02",
       "familiar": 0.9
     },
     {
       "name": "School",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
       },
       "why": [
-        "the pages do not show that it belongs in 'Buildings'",
-        "kind_of_made_thing: on a second reading, the sentence does not show it"
+        "rehearsal 2026-10-06-02: it passed every check and has a tile (job_2026_10_06_02_1_01_c2); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-02"
       ],
-      "from": "job:2026-10-06-01",
+      "from": "job:2026-10-06-02",
       "familiar": 0.9
     },
     {
       "name": "Shop",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
       },
       "why": [
         "the pages do not show that it belongs in 'Buildings'",
         "kind_of_made_thing: on a second reading, the sentence does not show it"
       ],
-      "from": "job:2026-10-06-01",
+      "from": "job:2026-10-06-02",
       "familiar": 0.9
     },
     {
@@ -193,33 +194,35 @@
         "kind_of_made_thing": "building"
       },
       "why": [
-        "rehearsal 2026-10-06-01: it passed every check and has a tile (job_2026_10_06_01_1_01_c1); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-01"
+        "rehearsal 2026-10-06-02: it passed every check and has a tile (job_2026_10_06_01_1_01_c1); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-02"
       ],
-      "from": "job:2026-10-06-01",
+      "from": "job:2026-10-06-02",
       "familiar": 0.8
     },
     {
       "name": "Bridge",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
       },
       "why": [
         "the pages do not show that it belongs in 'Buildings'",
         "kind_of_made_thing: on a second reading, the sentence does not show it"
       ],
-      "from": "job:2026-10-06-01",
+      "from": "job:2026-10-06-02",
       "familiar": 0.8
     },
     {
       "name": "Tower",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
       },
       "why": [
         "the pages do not show that it belongs in 'Buildings'",
         "kind_of_made_thing: on a second reading, the sentence does not show it"
       ],
-      "from": "job:2026-10-06-01",
+      "from": "job:2026-10-06-02",
       "familiar": 0.7
     },
     {

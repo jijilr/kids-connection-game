@@ -12111,18 +12111,19 @@
       "name": "Temple",
       "status": "waiting for the owner",
       "status_why": [
-        "the pages do not show that it belongs in 'Buildings'",
-        "kind_of_made_thing: on a second reading, the sentence does not show it"
+        "rehearsal 2026-10-06-02: it passed every check and has a tile (job_2026_10_06_02_1_01_c1); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-02"
       ],
-      "held_from": "job:2026-10-06-01",
+      "held_from": "job:2026-10-06-02",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
       },
       "familiar": 0.9,
       "worked_out": {
         "would_join": [
           "seed",
-          "made_by_people"
+          "made_by_people",
+          "made_by_people/building"
         ]
       }
     },
@@ -12130,18 +12131,19 @@
       "name": "School",
       "status": "waiting for the owner",
       "status_why": [
-        "the pages do not show that it belongs in 'Buildings'",
-        "kind_of_made_thing: on a second reading, the sentence does not show it"
+        "rehearsal 2026-10-06-02: it passed every check and has a tile (job_2026_10_06_02_1_01_c2); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-02"
       ],
-      "held_from": "job:2026-10-06-01",
+      "held_from": "job:2026-10-06-02",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
       },
       "familiar": 0.9,
       "worked_out": {
         "would_join": [
           "seed",
-          "made_by_people"
+          "made_by_people",
+          "made_by_people/building"
         ]
       }
     },
@@ -12152,15 +12154,17 @@
         "the pages do not show that it belongs in 'Buildings'",
         "kind_of_made_thing: on a second reading, the sentence does not show it"
       ],
-      "held_from": "job:2026-10-06-01",
+      "held_from": "job:2026-10-06-02",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
       },
       "familiar": 0.9,
       "worked_out": {
         "would_join": [
           "seed",
-          "made_by_people"
+          "made_by_people",
+          "made_by_people/building"
         ]
       }
     },
@@ -12168,9 +12172,9 @@
       "name": "Hospital",
       "status": "waiting for the owner",
       "status_why": [
-        "rehearsal 2026-10-06-01: it passed every check and has a tile (job_2026_10_06_01_1_01_c1); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-01"
+        "rehearsal 2026-10-06-02: it passed every check and has a tile (job_2026_10_06_01_1_01_c1); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-02"
       ],
-      "held_from": "job:2026-10-06-01",
+      "held_from": "job:2026-10-06-02",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building"
@@ -12191,15 +12195,17 @@
         "the pages do not show that it belongs in 'Buildings'",
         "kind_of_made_thing: on a second reading, the sentence does not show it"
       ],
-      "held_from": "job:2026-10-06-01",
+      "held_from": "job:2026-10-06-02",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
       },
       "familiar": 0.8,
       "worked_out": {
         "would_join": [
           "seed",
-          "made_by_people"
+          "made_by_people",
+          "made_by_people/building"
         ]
       }
     },
@@ -12210,15 +12216,17 @@
         "the pages do not show that it belongs in 'Buildings'",
         "kind_of_made_thing: on a second reading, the sentence does not show it"
       ],
-      "held_from": "job:2026-10-06-01",
+      "held_from": "job:2026-10-06-02",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
       },
       "familiar": 0.7,
       "worked_out": {
         "would_join": [
           "seed",
-          "made_by_people"
+          "made_by_people",
+          "made_by_people/building"
         ]
       }
     },
@@ -12698,7 +12706,27 @@
         "steps_from_seed": 2,
         "could_be_filled_by": [
           {
+            "name": "Temple",
+            "status": "waiting for the owner"
+          },
+          {
+            "name": "School",
+            "status": "waiting for the owner"
+          },
+          {
+            "name": "Shop",
+            "status": "waiting for the owner"
+          },
+          {
             "name": "Hospital",
+            "status": "waiting for the owner"
+          },
+          {
+            "name": "Bridge",
+            "status": "waiting for the owner"
+          },
+          {
+            "name": "Tower",
             "status": "waiting for the owner"
           },
           {
@@ -12719,7 +12747,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-10-06-01",
+    "by": "job:2026-10-06-02",
     "on": "2026-10-06"
   }
 }

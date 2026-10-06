@@ -2084,6 +2084,36 @@
           "draw": "A big white building with a red cross on top, many windows, and a wide front door with a small driveway"
         }
       ]
+    },
+    "job_2026_10_06_02_1": {
+      "purpose": "drawn by the job, run 2026-10-06-02",
+      "grid": 2,
+      "size": 1920,
+      "only_for_this_sheet": "Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.",
+      "cells": [
+        {
+          "thing": "temple",
+          "name": "Temple",
+          "draw": "A tall stone building with a wide front porch, many columns, steps, and a triangular roof, in warm sandy colours"
+        },
+        {
+          "thing": "school",
+          "name": "School",
+          "draw": "A long low building with a red roof, many windows, a big door, and a flagpole, surrounded by green grass"
+        },
+        {
+          "thing": "temple",
+          "name": "Temple",
+          "draw": "A tall stone building with a wide front porch, many columns, steps, and a triangular roof, in warm sandy colours; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        },
+        {
+          "thing": "school",
+          "name": "School",
+          "draw": "A long low building with a red roof, many windows, a big door, and a flagpole, surrounded by green grass; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        }
+      ]
     }
   }
 }

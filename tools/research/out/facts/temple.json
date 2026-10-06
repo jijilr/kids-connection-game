@@ -6,16 +6,15 @@
       "quote": "A temple is a building where people go to practice their religion.",
       "source": "wikipedia_simple",
       "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "A temple is a building where people go to practice their religion.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
     }
   },
-  "weak_spots": [
-    {
-      "field": "kind_of_made_thing",
-      "why": "on a second reading, the sentence does not show it",
-      "value": "building",
-      "quote": "A temple is a building where people go to practice their religion."
-    }
-  ],
+  "weak_spots": [],
   "pages": [
     {
       "id": "wikipedia_en",

@@ -797,6 +797,34 @@
       },
       "cost_usd": 0.0537,
       "vision_check_cost_usd": 5e-05
+    },
+    "job_2026_10_06_02_1_01": {
+      "plan_key": "job_2026_10_06_02_1",
+      "purpose": "drawn by the job, run 2026-10-06-02",
+      "file": "tools/pictures/sheets/job_2026_10_06_02_1_01.png",
+      "grid": 2,
+      "size": "1920x1920",
+      "cells": [
+        "temple",
+        "school",
+        "temple",
+        "school"
+      ],
+      "names": {
+        "temple": "Temple",
+        "school": "School"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 2 by 2 grid of 4 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Temple: A tall stone building with a wide front porch, many columns, steps, and a triangular roof, in warm sandy colours.\n2. School: A long low building with a red roof, many windows, a big door, and a flagpole, surrounded by green grass.\n3. Temple: A tall stone building with a wide front porch, many columns, steps, and a triangular roof, in warm sandy colours; a second view of it.\n4. School: A long low building with a red roof, many windows, a big door, and a flagpole, surrounded by green grass; a second view of it.\n\nFor this sheet: Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-06",
+      "tokens": {
+        "image_output_tokens": 3276,
+        "text_input_tokens": 360
+      },
+      "cost_usd": 0.1001,
+      "vision_check_cost_usd": 0.00022
     }
   },
   "tiles": {
@@ -11253,6 +11281,240 @@
       "review": "waiting for the owner",
       "review_note": "",
       "history": []
+    },
+    "job_2026_10_06_02_1_01_c1": {
+      "thing_id": null,
+      "expected_thing": "temple",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_02_1_01_c1.png",
+      "master_size": [
+        973,
+        973
+      ],
+      "master_sha256": "6632dca34123932079db6aed6733150ce5c1d543245d42f361f3ee09262add01",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_02_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_02_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Temple: A tall stone building with a wide front porch, many columns, steps, and a triangular roof, in warm sandy colours",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          60,
+          130,
+          899,
+          837
+        ],
+        "picture_shape": 1.19,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Temple",
+        "shows": "temple",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "job_2026_10_06_02_1_01_c1",
+          "job_2026_10_06_02_1_01_c3"
+        ],
+        "chosen": true,
+        "why": "The straight-on view shows the classic temple columns and triangular roof most clearly.",
+        "cost_usd": 7e-05
+      }
+    },
+    "job_2026_10_06_02_1_01_c2": {
+      "thing_id": null,
+      "expected_thing": "school",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_02_1_01_c2.png",
+      "master_size": [
+        1043,
+        1043
+      ],
+      "master_sha256": "c11dd188e6886a88b13a4b9217863c12dfa6f1a999db0e7e3b55cdf1ef6f5bce",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_02_1_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_02_1_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "School: A long low building with a red roof, many windows, a big door, and a flagpole, surrounded by green grass",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          988,
+          282,
+          1887,
+          820
+        ],
+        "picture_shape": 1.67,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "School",
+        "shows": "school",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "job_2026_10_06_02_1_01_c2",
+          "job_2026_10_06_02_1_01_c4"
+        ],
+        "chosen": true,
+        "why": "The centered, front-facing school building is simpler and easier for a young child to recognize at a glance.",
+        "cost_usd": 8e-05
+      }
+    },
+    "job_2026_10_06_02_1_01_c3": {
+      "thing_id": null,
+      "expected_thing": "temple",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_02_1_01_c3.png",
+      "master_size": [
+        1028,
+        1028
+      ],
+      "master_sha256": "b4b17ab615ac656a802ac28667aea520b9f00010a81bdd8d75cd4a1484764803",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_02_1_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_02_1_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Temple: A tall stone building with a wide front porch, many columns, steps, and a triangular roof, in warm sandy colours; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          38,
+          1055,
+          924,
+          1741
+        ],
+        "picture_shape": 1.29,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Temple",
+        "shows": "temple",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_10_06_02_1_01_c1 better",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "job_2026_10_06_02_1_01_c1",
+          "job_2026_10_06_02_1_01_c3"
+        ],
+        "chosen": false,
+        "why": "The straight-on view shows the classic temple columns and triangular roof most clearly.",
+        "cost_usd": 7e-05
+      },
+      "reviewed_on": "2026-10-06"
+    },
+    "job_2026_10_06_02_1_01_c4": {
+      "thing_id": null,
+      "expected_thing": "school",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_02_1_01_c4.png",
+      "master_size": [
+        1064,
+        1064
+      ],
+      "master_sha256": "5a400b77a36010a946490d6b3e6ed2b03843d1104c8b5bf6efe6015aad59f51f",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_02_1_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_02_1_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "School: A long low building with a red roof, many windows, a big door, and a flagpole, surrounded by green grass; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          987,
+          1191,
+          1904,
+          1748
+        ],
+        "picture_shape": 1.65,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "School",
+        "shows": "school",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_10_06_02_1_01_c2 better",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "job_2026_10_06_02_1_01_c2",
+          "job_2026_10_06_02_1_01_c4"
+        ],
+        "chosen": false,
+        "why": "The centered, front-facing school building is simpler and easier for a young child to recognize at a glance.",
+        "cost_usd": 8e-05
+      },
+      "reviewed_on": "2026-10-06"
     }
   }
 }

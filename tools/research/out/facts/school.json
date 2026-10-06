@@ -6,16 +6,15 @@
       "quote": "A school is an educational institution (and, in the case of in-person learning, the building) designed to provide learning environments for the teaching of students, usually under the direction of teachers.",
       "source": "wikipedia_en",
       "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "A school is an educational institution (and, in the case of in-person learning, the building) designed to provide learning environments for the teaching of students, usually under the direction of teachers.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
     }
   },
-  "weak_spots": [
-    {
-      "field": "kind_of_made_thing",
-      "why": "on a second reading, the sentence does not show it",
-      "value": "building",
-      "quote": "A school is an educational institution (and, in the case of in-person learning, the building) designed to provide learning environments for the teaching of students, usually under the direction of teachers."
-    }
-  ],
+  "weak_spots": [],
   "pages": [
     {
       "id": "wikipedia_en",
