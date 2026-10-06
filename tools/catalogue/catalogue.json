@@ -27383,7 +27383,7 @@
     },
     "hula_hoop": {
       "name": "Hula hoop",
-      "status": "in the game",
+      "status": "taken out of the game",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "toy",
@@ -27397,37 +27397,17 @@
         "how_we_play_with_it": "The pages point to 'Wheel it along'. Two checks, sorting it as a parent would, both put it in 'Throw, kick or bat it'."
       },
       "worked_out": {
-        "circles": [
+        "would_join": [
           "seed",
           "made_by_people",
           "made_by_people/toy",
           "made_by_people/toy/throw"
-        ],
-        "boards": [
-          {
-            "circle": "seed",
-            "sorted_by": "kind_of_thing",
-            "group": "made_by_people",
-            "open_now": true
-          },
-          {
-            "circle": "made_by_people",
-            "sorted_by": "kind_of_made_thing",
-            "group": "toy",
-            "open_now": true
-          },
-          {
-            "circle": "made_by_people/toy",
-            "sorted_by": "how_we_play_with_it",
-            "group": "throw",
-            "open_now": true
-          }
         ]
       },
       "picture": {
         "tile": "job_2026_10_07_08_1_01_c1",
-        "game_file": "Assets/pictures/hula_hoop.webp",
-        "game_sha256": "0ce0799ba067ca21f8dceb4fb59044b65b80b5cfd1988e43abc153e64e015ad5",
+        "game_file": null,
+        "game_sha256": null,
         "master_file": "tools/pictures/tiles/masters/job_2026_10_07_08_1_01_c1.png",
         "master_sha256": "908fe2f7acc8439cffb5ff3ebfe46c96b77dcc726bbb57df951864638125943c",
         "style": "v1",
@@ -27471,7 +27451,10 @@
         "cached": "tools/voice/clips/hula_hoop.mp3",
         "clip_sha256": "630c95d1644fccd748e08b9e9b0316446a66ef40db92e5bca707d5fbe2df2706",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
-      }
+      },
+      "status_why": [
+        "two checks put it with toys we throw, kick or bat, and it is none of these: a hoop is spun round the waist. Run 2026-10-07-08 let it in"
+      ]
     },
     "hut": {
       "name": "Hut",
@@ -27498,11 +27481,11 @@
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 244,
+      "in the game": 243,
       "held by the rules": 62,
       "kept for later": 5,
       "excluded": 3,
-      "taken out of the game": 22
+      "taken out of the game": 23
     },
     "circles_that_can_open_now": [
       "seed",
@@ -27522,7 +27505,7 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 244,
+        "things": 243,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
@@ -27543,8 +27526,8 @@
           },
           "made_by_people": {
             "label": "Things people make",
-            "things": 90,
-            "with_picture": 90
+            "things": 89,
+            "with_picture": 89
           }
         },
         "open_by_its_things": true,
@@ -28325,7 +28308,7 @@
       },
       "made_by_people": {
         "label": "Things people make",
-        "things": 90,
+        "things": 89,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_made_thing",
         "groups": {
@@ -28336,8 +28319,8 @@
           },
           "toy": {
             "label": "Toys",
-            "things": 23,
-            "with_picture": 23
+            "things": 22,
+            "with_picture": 22
           },
           "household": {
             "label": "Things in the house",
@@ -28432,14 +28415,14 @@
       },
       "made_by_people/toy": {
         "label": "Toys",
-        "things": 23,
+        "things": 22,
         "steps_from_seed": 2,
         "sorted_by": "how_we_play_with_it",
         "groups": {
           "throw": {
             "label": "Throw, kick or bat it",
-            "things": 4,
-            "with_picture": 4
+            "things": 3,
+            "with_picture": 3
           },
           "build": {
             "label": "Build or make with it",
@@ -28473,7 +28456,7 @@
       },
       "made_by_people/toy/throw": {
         "label": "Throw, kick or bat it",
-        "things": 4,
+        "things": 3,
         "steps_from_seed": 3,
         "could_be_filled_by": [
           {
@@ -28488,7 +28471,7 @@
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
+          "1 more thing(s): it has fewer than four, so it is not yet a group on the board above it"
         ]
       },
       "made_by_people/toy/ride": {
@@ -28777,7 +28760,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job run 2026-10-07-08",
+    "by": "publish.py",
     "on": "2026-10-07"
   }
 }
