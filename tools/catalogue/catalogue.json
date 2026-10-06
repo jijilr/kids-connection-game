@@ -9564,7 +9564,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/fruit"
         ],
         "boards": [
           {
@@ -9577,6 +9578,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "fruit",
             "open_now": true
           }
         ]
@@ -9648,7 +9655,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/fruit"
         ],
         "boards": [
           {
@@ -9661,6 +9669,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "fruit",
             "open_now": true
           }
         ]
@@ -9728,7 +9742,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/fruit"
         ],
         "boards": [
           {
@@ -9741,6 +9756,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "fruit",
             "open_now": true
           }
         ]
@@ -9817,7 +9838,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/fruit"
         ],
         "boards": [
           {
@@ -9830,6 +9852,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "fruit",
             "open_now": true
           }
         ]
@@ -12880,7 +12908,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/under_the_ground"
         ],
         "boards": [
           {
@@ -12893,6 +12922,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "under_the_ground",
             "open_now": true
           }
         ]
@@ -12977,7 +13012,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/under_the_ground"
         ],
         "boards": [
           {
@@ -12990,6 +13026,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "under_the_ground",
             "open_now": true
           }
         ]
@@ -13073,7 +13115,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/under_the_ground"
         ],
         "boards": [
           {
@@ -13086,6 +13129,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "under_the_ground",
             "open_now": true
           }
         ]
@@ -13169,7 +13218,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/under_the_ground"
         ],
         "boards": [
           {
@@ -13182,6 +13232,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "under_the_ground",
             "open_now": true
           }
         ]
@@ -13265,7 +13321,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/under_the_ground"
         ],
         "boards": [
           {
@@ -13278,6 +13335,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "under_the_ground",
             "open_now": true
           }
         ]
@@ -13345,9 +13408,9 @@
     },
     "beetroot_plant": {
       "name": "Beetroot plant",
-      "status": "waiting for the owner",
+      "status": "taken out of the game",
       "status_why": [
-        "the check doubts a four-year-old would recognise it"
+        "not needed: its group, what grows under the ground, was filled without it"
       ],
       "held_from": "job:2026-10-06-05",
       "fields": {
@@ -13360,7 +13423,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/under_the_ground"
         ]
       },
       "voice": {
@@ -13371,9 +13435,9 @@
     },
     "ginger_plant": {
       "name": "Ginger plant",
-      "status": "waiting for the owner",
+      "status": "taken out of the game",
       "status_why": [
-        "the check doubts a four-year-old would recognise it"
+        "not needed: its group, what grows under the ground, was filled without it"
       ],
       "held_from": "job:2026-10-06-05",
       "fields": {
@@ -13386,7 +13450,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/under_the_ground"
         ]
       },
       "voice": {
@@ -13397,9 +13462,9 @@
     },
     "sweet_potato_plant": {
       "name": "Sweet potato plant",
-      "status": "waiting for the owner",
+      "status": "taken out of the game",
       "status_why": [
-        "the check doubts a four-year-old would recognise it"
+        "not needed: its group, what grows under the ground, was filled without it"
       ],
       "held_from": "job:2026-10-06-05",
       "fields": {
@@ -13412,7 +13477,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/under_the_ground"
         ]
       },
       "voice": {
@@ -13438,7 +13504,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/leaves"
         ],
         "boards": [
           {
@@ -13451,6 +13518,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "leaves",
             "open_now": true
           }
         ]
@@ -13534,7 +13607,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/leaves"
         ],
         "boards": [
           {
@@ -13547,6 +13621,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "leaves",
             "open_now": true
           }
         ]
@@ -13655,6 +13735,10 @@
             "basis": "sourced",
             "source": "wikipedia_en",
             "quote": "Mentha, also known as mint (from Greek μίνθα míntha, Linear B mi-ta), is a genus of flowering plants in the mint family, Lamiaceae."
+          },
+          "extinct": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe mint as a currently existing genus of flowering plants with many species and uses, so it is still living."
           }
         },
         "no_sentence_for": [
@@ -13671,7 +13755,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/leaves"
         ]
       }
     },
@@ -13734,7 +13819,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/leaves"
         ]
       }
     },
@@ -13755,7 +13841,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/leaves"
         ],
         "boards": [
           {
@@ -13768,6 +13855,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "leaves",
             "open_now": true
           }
         ]
@@ -13852,7 +13945,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/leaves"
         ],
         "boards": [
           {
@@ -13865,6 +13959,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "leaves",
             "open_now": true
           }
         ]
@@ -13946,7 +14046,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/leaves"
         ],
         "boards": [
           {
@@ -13959,6 +14060,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "leaves",
             "open_now": true
           }
         ]
@@ -14028,18 +14135,17 @@
     },
     "pea_plant": {
       "name": "Pea plant",
-      "status": "waiting for the owner",
-      "status_why": [
-        "no tile of it passed the checks after 2 sheet(s)"
-      ],
-      "held_from": "job:2026-10-06-06",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
         "kind_of_plant": "vegetable",
         "part_we_eat": "seeds_or_pods"
       },
-      "familiar": 0.8,
+      "familiar": 0.9,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-07",
       "sources": {
         "pages": [
           {
@@ -14092,11 +14198,43 @@
         "clip": null
       },
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "plant",
+            "open_now": true
+          },
+          {
+            "circle": "plant",
+            "sorted_by": "kind_of_plant",
+            "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "seeds_or_pods",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_07_1_01_c3",
+        "game_file": "Assets/pictures/pea_plant.webp",
+        "game_sha256": "5af6ca818e5270dccea77788cf8b9fd9bd1d8fa23c4d3fc956bb5f8b1f046314",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_07_1_01_c3.png",
+        "master_sha256": "03b693bcc9ce30f5ed6e82f4ceea2c6e2c4acf632de8f0ddfe275997cafcfb5c",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 3
       }
     },
     "bean_plant": {
@@ -14116,7 +14254,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ],
         "boards": [
           {
@@ -14130,19 +14269,14 @@
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
             "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "seeds_or_pods",
+            "open_now": true
           }
         ]
-      },
-      "picture": {
-        "tile": "job_2026_10_06_06_2_01_c4",
-        "game_file": "Assets/pictures/bean_plant.webp",
-        "game_sha256": "4e73f49196b5e438d8cd33b28c92e095a9d9eeb3005f1398662b7dedfb915463",
-        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c4.png",
-        "master_sha256": "c037090f3be3b7677f660c7f2fb585dd2dc297d36b30c97b220eaaac09bb8bf0",
-        "style": "v1",
-        "approved": "by the owner",
-        "approved_on": "2026-10-06",
-        "other_tries": 1
       },
       "sources": {
         "pages": [
@@ -14193,6 +14327,17 @@
         "say": "Bean plant",
         "checked_by_ear": false,
         "clip": null
+      },
+      "picture": {
+        "tile": "job_2026_10_06_07_2_01_c1",
+        "game_file": "Assets/pictures/bean_plant.webp",
+        "game_sha256": "3943e1cc57d7316e6c3eb40891d04ed71cc74ff324d471df17fecb6fca33aa05",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_07_2_01_c1.png",
+        "master_sha256": "489f6976eccac4c5c05ddd8ab5064399d8724b33f0aaeab116989bdfbc22f50c",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 3
       }
     },
     "cucumber_plant": {
@@ -14213,7 +14358,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ]
       },
       "sources": {
@@ -14266,7 +14412,7 @@
     },
     "pumpkin_seeds": {
       "name": "Pumpkin seeds",
-      "status": "in the game",
+      "status": "taken out of the game",
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
@@ -14278,36 +14424,12 @@
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
-        "circles": [
+        "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
-        ],
-        "boards": [
-          {
-            "circle": "seed",
-            "sorted_by": "kind_of_thing",
-            "group": "plant",
-            "open_now": true
-          },
-          {
-            "circle": "plant",
-            "sorted_by": "kind_of_plant",
-            "group": "vegetable",
-            "open_now": true
-          }
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ]
-      },
-      "picture": {
-        "tile": "job_2026_10_06_06_2_01_c7",
-        "game_file": "Assets/pictures/pumpkin_seeds.webp",
-        "game_sha256": "81f3fdcf0665da347f3bf82e3a72bccb2ce1761a7f430c76aea25289e9f4df4c",
-        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c7.png",
-        "master_sha256": "0c3bf98123f802000c78b2c785c74aa3b5a4279c9a05bfaffb86b3c4554e854e",
-        "style": "v1",
-        "approved": "by the owner",
-        "approved_on": "2026-10-06",
-        "other_tries": 1
       },
       "sources": {
         "pages": [
@@ -14348,15 +14470,16 @@
         "say": "Pumpkin seeds",
         "checked_by_ear": false,
         "clip": null
-      }
+      },
+      "status_why": [
+        "it is a part of Pumpkin plant, which is already in the game as a plant whose fruit we eat; the job let it through before it had a guard against that (6 Oct 2026)"
+      ]
     },
     "coriander_seeds": {
       "name": "Coriander seeds",
-      "status": "waiting for the owner",
+      "status": "taken out of the game",
       "status_why": [
-        "it could not be settled that it belongs in 'Vegetable plants'",
-        "it could not be settled that it belongs in 'The seeds or pods'",
-        "kind_of_plant: uncertain: two judgements disagree: 'Grasses and grains' and 'Vegetable plants'"
+        "not needed: it is Coriander plant again, or a part of it, and that is already in the game"
       ],
       "held_from": "job:2026-10-06-06",
       "fields": {
@@ -14373,6 +14496,10 @@
           "kind_of_thing": {
             "basis": "judged, not sourced",
             "why": "Coriander seeds are the seeds of the coriander plant, so they are a plant."
+          },
+          "extinct": {
+            "basis": "judged, not sourced",
+            "why": "Coriander seeds come from a plant that is still living and widely grown."
           }
         },
         "no_sentence_for": [
@@ -14389,7 +14516,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ]
       }
     },
@@ -14410,7 +14538,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ],
         "boards": [
           {
@@ -14424,19 +14553,14 @@
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
             "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "seeds_or_pods",
+            "open_now": true
           }
         ]
-      },
-      "picture": {
-        "tile": "job_2026_10_06_06_2_01_c5",
-        "game_file": "Assets/pictures/ladies_finger_plant.webp",
-        "game_sha256": "93e96a9ea5bb811da2662c55583bc7e2f059d06f2af22fc81ecc140de3ffcb45",
-        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c5.png",
-        "master_sha256": "d1a03d1771fe1642c464bb9fc714a8043d45e978307c4498e8499c894a1ab9eb",
-        "style": "v1",
-        "approved": "by the owner",
-        "approved_on": "2026-10-06",
-        "other_tries": 0
       },
       "sources": {
         "pages": [
@@ -14478,6 +14602,17 @@
         "say": "Ladies finger plant",
         "checked_by_ear": false,
         "clip": null
+      },
+      "picture": {
+        "tile": "job_2026_10_06_07_1_01_c2",
+        "game_file": "Assets/pictures/ladies_finger_plant.webp",
+        "game_sha256": "0bb6fa700830c27aa23b17938930b3367849be27e6664015d54bfb9c9620a20f",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_07_1_01_c2.png",
+        "master_sha256": "1fdd6b7d15f79880060f807a74416486db0918fd3f74defa29440353eef29ec9",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 1
       }
     },
     "bottle_gourd_plant": {
@@ -14498,7 +14633,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ]
       },
       "sources": {
@@ -14558,7 +14694,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ]
       },
       "sources": {
@@ -14598,28 +14735,236 @@
         "checked_by_ear": false,
         "clip": null
       }
+    },
+    "lady_finger_plant": {
+      "name": "Lady finger plant",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-07",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "plant",
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "plant",
+            "open_now": true
+          },
+          {
+            "circle": "plant",
+            "sorted_by": "kind_of_plant",
+            "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "seeds_or_pods",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_07_1_01_c4",
+        "game_file": "Assets/pictures/lady_finger_plant.webp",
+        "game_sha256": "8014a48804ea109e6bb9c732a17d3198041720ff633898917ba0a9e48dfdffdb",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_07_1_01_c4.png",
+        "master_sha256": "dcdb5d62eda79611f0c6ff03255be0d87eeb30dce056bfd89939da263a642203",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Okra",
+            "title": "Okra",
+            "asked_for": "Okra",
+            "revision": 1378086927,
+            "fetched_on": "2026-10-06",
+            "sha256": "2fe3d93163d2ceb001c3ace5c9c445e99ddfdafec1b23b7c4910a8d1bfd45bc4"
+          }
+        ],
+        "facts": "tools/research/out/facts/lady_finger_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Okra (US: , UK: ), Abelmoschus esculentus, known in some English-speaking countries as lady's fingers, is a flowering plant in the mallow family native to West Africa."
+          },
+          "extinct": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe okra as a currently cultivated flowering plant, so it is still living."
+          },
+          "kind_of_plant": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Cultivated in tropical, subtropical, and warm temperate regions around the world for its edible green (red in some cultivars) seed pods, okra is used in the cuisines of many countries."
+          },
+          "part_we_eat": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Cultivated in tropical, subtropical, and warm temperate regions around the world for its edible green (red in some cultivars) seed pods, okra is used in the cuisines of many countries."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Lady finger plant",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "drumstick_plant": {
+      "name": "Drumstick plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "the pages and the judgements point to 'Trees', not 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The seeds or pods'"
+      ],
+      "held_from": "job:2026-10-06-07",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "tree_academic": true,
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.7,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
+        ]
+      }
+    },
+    "cluster_bean_plant": {
+      "name": "Cluster bean plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-06-07",
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.6,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
+        ]
+      }
+    },
+    "cowpea_plant": {
+      "name": "Cowpea plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-06-07",
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.6,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
+        ]
+      }
+    },
+    "field_bean_plant": {
+      "name": "Field bean plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-06-07",
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.5,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
+        ]
+      }
+    },
+    "green_gram_plant": {
+      "name": "Green gram plant",
+      "status": "waiting for the owner",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-06-07",
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.5,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
+        ]
+      }
     }
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 156,
+      "in the game": 157,
       "waiting for the owner": 15,
       "kept for later": 5,
       "excluded": 3,
-      "taken out of the game": 3
+      "taken out of the game": 8
     },
     "circles_that_can_open_now": [
       "seed",
       "animal",
       "animal/dinosaur",
       "plant",
+      "plant/vegetable",
       "nature_not_alive",
       "made_by_people"
     ],
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 156,
+        "things": 157,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
@@ -14630,8 +14975,8 @@
           },
           "plant": {
             "label": "Plants",
-            "things": 30,
-            "with_picture": 30
+            "things": 31,
+            "with_picture": 31
           },
           "nature_not_alive": {
             "label": "Things in nature that are not alive",
@@ -14842,7 +15187,7 @@
       },
       "plant": {
         "label": "Plants",
-        "things": 30,
+        "things": 31,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_plant",
         "groups": {
@@ -14863,8 +15208,8 @@
           },
           "vegetable": {
             "label": "Vegetable plants",
-            "things": 17,
-            "with_picture": 17
+            "things": 18,
+            "with_picture": 18
           }
         },
         "open_by_its_things": true,
@@ -14903,7 +15248,7 @@
       },
       "plant/vegetable": {
         "label": "Vegetable plants",
-        "things": 17,
+        "things": 18,
         "steps_from_seed": 2,
         "sorted_by": "part_we_eat",
         "groups": {
@@ -14924,51 +15269,84 @@
           },
           "seeds_or_pods": {
             "label": "The seeds or pods",
-            "things": 3,
-            "with_picture": 3
+            "things": 4,
+            "with_picture": 4
           }
         },
+        "open_by_its_things": true,
+        "can_open_now": true,
+        "needs": []
+      },
+      "plant/vegetable/fruit": {
+        "label": "The fruit",
+        "things": 4,
+        "steps_from_seed": 3,
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
+        ]
+      },
+      "plant/vegetable/under_the_ground": {
+        "label": "What grows under the ground",
+        "things": 5,
+        "steps_from_seed": 3,
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+        ]
+      },
+      "plant/vegetable/leaves": {
+        "label": "The leaves",
+        "things": 5,
+        "steps_from_seed": 3,
         "could_be_filled_by": [
           {
-            "name": "Beetroot plant",
-            "status": "waiting for the owner",
-            "group": "under_the_ground"
-          },
-          {
-            "name": "Ginger plant",
-            "status": "waiting for the owner",
-            "group": "under_the_ground"
-          },
-          {
-            "name": "Sweet potato plant",
-            "status": "waiting for the owner",
-            "group": "under_the_ground"
-          },
-          {
             "name": "Mint plant",
-            "status": "waiting for the owner",
-            "group": "leaves"
+            "status": "waiting for the owner"
           },
           {
             "name": "Curry leaf plant",
-            "status": "waiting for the owner",
-            "group": "leaves"
-          },
-          {
-            "name": "Pea plant",
-            "status": "waiting for the owner",
-            "group": "seeds_or_pods"
-          },
-          {
-            "name": "Coriander seeds",
-            "status": "waiting for the owner",
-            "group": "seeds_or_pods"
+            "status": "waiting for the owner"
           }
         ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "1 more thing(s) in 'The seeds or pods'"
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+        ]
+      },
+      "plant/vegetable/seeds_or_pods": {
+        "label": "The seeds or pods",
+        "things": 4,
+        "steps_from_seed": 3,
+        "could_be_filled_by": [
+          {
+            "name": "Drumstick plant",
+            "status": "waiting for the owner"
+          },
+          {
+            "name": "Cluster bean plant",
+            "status": "waiting for the owner"
+          },
+          {
+            "name": "Cowpea plant",
+            "status": "waiting for the owner"
+          },
+          {
+            "name": "Field bean plant",
+            "status": "waiting for the owner"
+          },
+          {
+            "name": "Green gram plant",
+            "status": "waiting for the owner"
+          }
+        ],
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
         ]
       },
       "nature_not_alive": {
@@ -15159,7 +15537,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job run 2026-10-06-06",
+    "by": "job run 2026-10-06-07",
     "on": "2026-10-06"
   }
 }

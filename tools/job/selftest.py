@@ -55,9 +55,10 @@ def test_a_circle_with_no_field_to_sort_it_is_left_to_the_owner():
 def test_a_thing_in_the_game_without_a_picture_is_planned_for_drawing():
     bare = with_changes(lambda things: things["cup"]["picture"].update(game_file=None))
     # a real run draws it whatever its circle; a rehearsal only inside the circle named
-    assert [a["pictures_for"] for a in job.plan(bare)["asks"] if a.get("pictures_for")] == [["Cup"]]
-    assert [a["pictures_for"] for a in job.plan(bare, rehearse="made_by_people")["asks"] if a.get("pictures_for")] == [["Cup"]]
-    assert not any(a.get("pictures_for") for a in job.plan(bare, rehearse="plant")["asks"])
+    drawn_for = lambda plan: [name for a in plan["asks"] for name in a.get("pictures_for", [])]
+    assert "Cup" in drawn_for(job.plan(bare))
+    assert drawn_for(job.plan(bare, rehearse="made_by_people")) == ["Cup"]
+    assert "Cup" not in drawn_for(job.plan(bare, rehearse="plant"))
 
 
 def test_the_cap_is_hard():

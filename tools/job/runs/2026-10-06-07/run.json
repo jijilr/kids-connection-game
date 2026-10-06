@@ -1,0 +1,316 @@
+{
+  "id": "2026-10-06-07",
+  "started": "2026-10-06",
+  "rehearse": null,
+  "cap_inr": 25.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "plant",
+        "chain": "Plants",
+        "fixed": {
+          "kind_of_thing": "plant"
+        },
+        "need": 0,
+        "pictures_for": [
+          "Bean plant",
+          "Ladies finger plant"
+        ],
+        "recorded_but_not_in_the_game": [],
+        "facts_done": true
+      },
+      {
+        "circle": "plant/vegetable",
+        "chain": "Plants > Vegetable plants > The seeds or pods",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "need": 2,
+        "recorded_but_not_in_the_game": [
+          {
+            "name": "Pea plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Coriander seeds",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          }
+        ],
+        "retried": [
+          "Pea plant",
+          "Coriander seeds"
+        ],
+        "offers_1": [
+          {
+            "name": "Lady finger plant",
+            "familiar": 0.8,
+            "why": "common vegetable plant with pods",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Drumstick plant",
+            "familiar": 0.7,
+            "why": "long pods seen in Indian food",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Cluster bean plant",
+            "familiar": 0.6,
+            "why": "guar beans, common in India",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Cowpea plant",
+            "familiar": 0.6,
+            "why": "lobia pods, familiar vegetable",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Field bean plant",
+            "familiar": 0.5,
+            "why": "hyacinth bean, common in India",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Green gram plant",
+            "familiar": 0.5,
+            "why": "moong pods, familiar in Indian homes",
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": []
+  },
+  "retry_held": true,
+  "things": [
+    {
+      "name": "Bean plant",
+      "passed": true,
+      "in_game": true,
+      "why": [],
+      "ask": 0,
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "draw": "A green bean plant growing in soil, with broad leaves, small white flowers, and several long green pods hanging; one pod split open showing round seeds inside",
+      "tries": 2,
+      "tile": "job_2026_10_06_07_2_01_c1",
+      "no_tile": "no tile of it passed the checks after 1 sheet(s)"
+    },
+    {
+      "name": "Ladies finger plant",
+      "passed": true,
+      "in_game": true,
+      "why": [],
+      "ask": 0,
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.7,
+      "draw": "A tall green okra plant with broad leaves and pale yellow flowers, showing several long green lady's finger pods, one pod split open to reveal round white seeds",
+      "tries": 1,
+      "tile": "job_2026_10_06_07_1_01_c2"
+    },
+    {
+      "name": "Pea plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Pea plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "familiar": 0.9,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-07"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 1,
+      "draw": "A green pea plant with curly tendrils and white flowers, several green pods hanging on the stem, one pod split open showing round green peas inside",
+      "tries": 1,
+      "tile": "job_2026_10_06_07_1_01_c3"
+    },
+    {
+      "name": "Coriander seeds",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.6,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "why": [
+        "it is Coriander plant again, or a part of it, and that is already in the game"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Lady finger plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Lady finger plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "familiar": 0.8,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-07"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 1,
+      "draw": "A tall green okra plant with broad leaves, yellow flowers, and long green lady's finger pods; one pod split open showing round white seeds inside",
+      "tries": 1,
+      "tile": "job_2026_10_06_07_1_01_c4"
+    },
+    {
+      "name": "Drumstick plant",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'Trees', not 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The seeds or pods'"
+      ],
+      "thing": {
+        "name": "Drumstick plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree",
+          "tree_academic": true
+        },
+        "familiar": 0.7,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-07"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "tree_academic": true,
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 1
+    },
+    {
+      "name": "Cluster bean plant",
+      "passed": false,
+      "familiar": 0.6,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 1
+    },
+    {
+      "name": "Cowpea plant",
+      "passed": false,
+      "familiar": 0.6,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 1
+    },
+    {
+      "name": "Field bean plant",
+      "passed": false,
+      "familiar": 0.5,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 1
+    },
+    {
+      "name": "Green gram plant",
+      "passed": false,
+      "familiar": 0.5,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 1
+    }
+  ],
+  "sheets": [
+    "job_2026_10_06_07_1_01",
+    "job_2026_10_06_07_2_01"
+  ],
+  "stopped": "",
+  "spent_usd": {
+    "deepseek": 0.00419,
+    "drawing": 0.1538,
+    "picture_checks": 0.00037
+  }
+}

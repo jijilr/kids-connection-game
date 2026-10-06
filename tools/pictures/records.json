@@ -978,6 +978,60 @@
       },
       "cost_usd": 0.0536,
       "vision_check_cost_usd": 0.00017
+    },
+    "job_2026_10_06_07_1_01": {
+      "plan_key": "job_2026_10_06_07_1",
+      "purpose": "drawn by the job, run 2026-10-06-07",
+      "file": "tools/pictures/sheets/job_2026_10_06_07_1_01.png",
+      "grid": 2,
+      "size": "1920x1920",
+      "cells": [
+        "bean_plant",
+        "ladies_finger_plant",
+        "pea_plant",
+        "lady_finger_plant"
+      ],
+      "names": {
+        "bean_plant": "Bean plant",
+        "ladies_finger_plant": "Ladies finger plant",
+        "pea_plant": "Pea plant",
+        "lady_finger_plant": "Lady finger plant"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 2 by 2 grid of 4 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Bean plant: A green bean plant growing in soil, with broad leaves, small white flowers, and several long green pods hanging; one pod split open showing round seeds inside.\n2. Ladies finger plant: A tall green okra plant with broad leaves and pale yellow flowers, showing several long green lady's finger pods, one pod split open to reveal round white seeds.\n3. Pea plant: A green pea plant with curly tendrils and white flowers, several green pods hanging on the stem, one pod split open showing round green peas inside.\n4. Lady finger plant: A tall green okra plant with broad leaves, yellow flowers, and long green lady's finger pods; one pod split open showing round white seeds inside.\n\nFor this sheet: No people and no animals.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-06",
+      "tokens": {
+        "image_output_tokens": 3276,
+        "text_input_tokens": 355
+      },
+      "cost_usd": 0.1001,
+      "vision_check_cost_usd": 0.00031
+    },
+    "job_2026_10_06_07_2_01": {
+      "plan_key": "job_2026_10_06_07_2",
+      "purpose": "drawn by the job, run 2026-10-06-07, second tries",
+      "file": "tools/pictures/sheets/job_2026_10_06_07_2_01.png",
+      "grid": 1,
+      "size": "1024x1024",
+      "cells": [
+        "bean_plant"
+      ],
+      "names": {
+        "bean_plant": "Bean plant"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image showing exactly one subject, whole and centred, with a wide plain white margin on every side:\n\n1. Bean plant: A green bean plant growing in soil, with broad leaves, small white flowers, and several long green pods hanging; one pod split open showing round seeds inside.\n\nFor this sheet: No people and no animals.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-06",
+      "tokens": {
+        "image_output_tokens": 1756,
+        "text_input_tokens": 194
+      },
+      "cost_usd": 0.0537,
+      "vision_check_cost_usd": 6e-05
     }
   },
   "tiles": {
@@ -12549,7 +12603,7 @@
       "history": []
     },
     "job_2026_10_06_06_2_01_c4": {
-      "thing_id": "bean_plant",
+      "thing_id": null,
       "expected_thing": "bean_plant",
       "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c4.png",
       "master_size": [
@@ -12591,8 +12645,8 @@
         "matches_cell": true,
         "problems": "More than one thing"
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "it shows the pod alone, not the plant; found by the assistant on the job's contact sheet, to be drawn again as the whole plant with its pods",
       "history": [],
       "comparison": {
         "model": "gpt-6-luna",
@@ -12605,11 +12659,10 @@
         "why": "The open pod and clearly visible colorful beans make it easy to recognize at a glance.",
         "cost_usd": 0.0001
       },
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/bean_plant.webp"
+      "reviewed_on": "2026-10-06"
     },
     "job_2026_10_06_06_2_01_c5": {
-      "thing_id": "ladies_finger_plant",
+      "thing_id": null,
       "expected_thing": "ladies_finger_plant",
       "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c5.png",
       "master_size": [
@@ -12651,11 +12704,10 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "it shows the pod alone, not the plant; found by the assistant on the job's contact sheet, to be drawn again as the whole plant with its pods",
       "history": [],
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/ladies_finger_plant.webp"
+      "reviewed_on": "2026-10-06"
     },
     "job_2026_10_06_06_2_01_c6": {
       "thing_id": "mustard_plant",
@@ -12718,7 +12770,7 @@
       "published_file": "Assets/pictures/mustard_plant.webp"
     },
     "job_2026_10_06_06_2_01_c7": {
-      "thing_id": "pumpkin_seeds",
+      "thing_id": null,
       "expected_thing": "pumpkin_seeds",
       "master_file": "tools/pictures/tiles/masters/job_2026_10_06_06_2_01_c7.png",
       "master_size": [
@@ -12760,8 +12812,8 @@
         "matches_cell": true,
         "problems": "single seed"
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "Pumpkin seeds was taken out of the game: it is a part of Pumpkin plant",
       "history": [],
       "comparison": {
         "model": "gpt-6-luna",
@@ -12774,8 +12826,7 @@
         "why": "Its clear, symmetrical seed shape is easiest for a small child to recognize at a glance.",
         "cost_usd": 0.0001
       },
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/pumpkin_seeds.webp"
+      "reviewed_on": "2026-10-06"
     },
     "job_2026_10_06_06_2_01_c8": {
       "thing_id": null,
@@ -12929,6 +12980,249 @@
       "review": "waiting for the owner",
       "review_note": "",
       "history": []
+    },
+    "job_2026_10_06_07_1_01_c1": {
+      "thing_id": null,
+      "expected_thing": "bean_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_07_1_01_c1.png",
+      "master_size": [
+        1041,
+        1041
+      ],
+      "master_sha256": "ca9ea6332b30df3bdbe49d37d2872907844e99447167d646a8ec3d77e3fd3540",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_07_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_07_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Bean plant: A green bean plant growing in soil, with broad leaves, small white flowers, and several long green pods hanging; one pod split open showing round seeds inside",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          117,
+          26,
+          819,
+          923
+        ],
+        "picture_shape": 0.78,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Pea plant",
+        "shows": "pea_plant",
+        "matches_cell": false,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "job_2026_10_06_07_1_01_c2": {
+      "thing_id": "ladies_finger_plant",
+      "expected_thing": "ladies_finger_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_07_1_01_c2.png",
+      "master_size": [
+        1046,
+        1046
+      ],
+      "master_sha256": "8851655be6c32f0200e7ac8d17304b29789d950b0fbdca4ec3917dae43e61902",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_07_1_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_07_1_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Ladies finger plant: A tall green okra plant with broad leaves and pale yellow flowers, showing several long green lady's finger pods, one pod split open to reveal round white seeds",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1019,
+          24,
+          1842,
+          926
+        ],
+        "picture_shape": 0.91,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Ladies finger plant",
+        "shows": "ladies_finger_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/ladies_finger_plant.webp"
+    },
+    "job_2026_10_06_07_1_01_c3": {
+      "thing_id": "pea_plant",
+      "expected_thing": "pea_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_07_1_01_c3.png",
+      "master_size": [
+        1059,
+        1059
+      ],
+      "master_sha256": "fcc7af8d34c9d0c477d890fec8b920a927f54b224b469684a8a347202d63ffad",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_07_1_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_07_1_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Pea plant: A green pea plant with curly tendrils and white flowers, several green pods hanging on the stem, one pod split open showing round green peas inside",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          128,
+          975,
+          850,
+          1888
+        ],
+        "picture_shape": 0.79,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Pea plant",
+        "shows": "pea_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/pea_plant.webp"
+    },
+    "job_2026_10_06_07_1_01_c4": {
+      "thing_id": "lady_finger_plant",
+      "expected_thing": "lady_finger_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_07_1_01_c4.png",
+      "master_size": [
+        1053,
+        1053
+      ],
+      "master_sha256": "765dba14b2f25f67cbfc1b092b38fa25373a121e1787968c1c807d34f39b446a",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_07_1_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_07_1_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Lady finger plant: A tall green okra plant with broad leaves, yellow flowers, and long green lady's finger pods; one pod split open showing round white seeds inside",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1031,
+          981,
+          1854,
+          1889
+        ],
+        "picture_shape": 0.91,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Lady finger plant",
+        "shows": "lady_finger_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/lady_finger_plant.webp"
+    },
+    "job_2026_10_06_07_2_01_c1": {
+      "thing_id": "bean_plant",
+      "expected_thing": "bean_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_07_2_01_c1.png",
+      "master_size": [
+        1090,
+        1090
+      ],
+      "master_sha256": "64c2b9021cce8d0e6f5a3100e55df052e42310ed92e6324ed5fa76e46d63be48",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_07_2_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_07_2_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Bean plant: A green bean plant growing in soil, with broad leaves, small white flowers, and several long green pods hanging; one pod split open showing round seeds inside",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0537,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          196,
+          46,
+          848,
+          986
+        ],
+        "picture_shape": 0.69,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Bean plant",
+        "shows": "bean_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/bean_plant.webp"
     }
   }
 }

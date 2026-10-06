@@ -1858,6 +1858,19 @@
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06"
     },
+    "pea_plant": {
+      "name": "Pea plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.9,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-07"
+    },
     "bean_plant": {
       "name": "Bean plant",
       "fields": {
@@ -1867,19 +1880,6 @@
         "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.8,
-      "reviewed": 3,
-      "source": "job:grounded+checked",
-      "drafted_in": "2026-10-06-06"
-    },
-    "pumpkin_seeds": {
-      "name": "Pumpkin seeds",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "seeds_or_pods"
-      },
-      "familiar": 0.9,
       "reviewed": 3,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06"
@@ -1896,6 +1896,19 @@
       "reviewed": 3,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06"
+    },
+    "lady_finger_plant": {
+      "name": "Lady finger plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.8,
+      "reviewed": 3,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-07"
     }
   }
 }

@@ -34,6 +34,8 @@ everything out again, runs the guard, and rewrites the game's copy and the queue
     python tools/catalogue/catalogue.py queue       what is held, and why
     python tools/catalogue/catalogue.py show ID     one entry
     python tools/catalogue/catalogue.py refresh     read pictures, clips and sources again from their ledgers
+    python tools/catalogue/catalogue.py take-out NAME --why "..."
+                                                    take a thing out of the game; it is kept, marked, with the reason
 """
 import contextlib
 import copy
@@ -568,6 +570,15 @@ def main():
             sync_voice(catalogue)
             sync_sources(catalogue)
         print("Pictures, clips and sources read again from their ledgers.")
+        return
+    if command == "take-out" and len(args) == 4 and args[2] == "--why":
+        with changing("catalogue.py take-out") as catalogue:
+            entry = catalogue["things"].get(slug(args[1]))
+            if entry is None or entry["status"] != IN_GAME:
+                raise SystemExit(f"'{args[1]}' is not a thing in the game.")
+            entry["status"], entry["status_why"] = TAKEN_OUT, [args[3]]
+        print(f"{args[1]} is out of the game, and kept in the catalogue with the reason. If it has a picture, "
+              "set its tile aside (tools/pictures/review.py) and run tools/pictures/publish.py.")
         return
     catalogue = load()
     if command == "check":

@@ -1,0 +1,55 @@
+{
+  "name": "Drumstick plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Moringa oleifera is a short-lived, fast-growing, drought-resistant tree of the family Moringaceae, native to northern India and used extensively in South and Southeast Asia.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "It is widely cultivated for its young seed pods and leaves, used as vegetables and for traditional medicine.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "tree",
+      "quote": "Moringa oleifera is a short-lived, fast-growing, drought-resistant tree of the family Moringaceae, native to northern India and used extensively in South and Southeast Asia.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "tree_academic": {
+      "value": true,
+      "quote": "Moringa oleifera is a short-lived, fast-growing, drought-resistant tree of the family Moringaceae, native to northern India and used extensively in South and Southeast Asia.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Moringa_oleifera",
+      "title": "Moringa oleifera",
+      "asked_for": "Drumstick (vegetable)",
+      "revision": 1377991982,
+      "fetched_on": "2026-10-06",
+      "sha256": "c2151c8d3a89c9cfde700fddbaaf2ae9590b3deb9a626a66ee8e08329b1b81f7"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Drum_stick",
+      "title": "Drum stick",
+      "asked_for": "Drumstick",
+      "revision": 7648741,
+      "fetched_on": "2026-10-06",
+      "sha256": "0c8c1c6a7f3612d4e7392bf6c9efbc15c24cce75cd05e69bdc304d65c0f55c5a"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

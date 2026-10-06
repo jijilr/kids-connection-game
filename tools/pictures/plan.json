@@ -2279,6 +2279,47 @@
           "draw": "A small round green pea seed, smooth and whole, with a tiny pale scar, shown alone on white"
         }
       ]
+    },
+    "job_2026_10_06_07_1": {
+      "purpose": "drawn by the job, run 2026-10-06-07",
+      "grid": 2,
+      "size": 1920,
+      "only_for_this_sheet": "No people and no animals.",
+      "cells": [
+        {
+          "thing": "bean_plant",
+          "name": "Bean plant",
+          "draw": "A green bean plant growing in soil, with broad leaves, small white flowers, and several long green pods hanging; one pod split open showing round seeds inside"
+        },
+        {
+          "thing": "ladies_finger_plant",
+          "name": "Ladies finger plant",
+          "draw": "A tall green okra plant with broad leaves and pale yellow flowers, showing several long green lady's finger pods, one pod split open to reveal round white seeds"
+        },
+        {
+          "thing": "pea_plant",
+          "name": "Pea plant",
+          "draw": "A green pea plant with curly tendrils and white flowers, several green pods hanging on the stem, one pod split open showing round green peas inside"
+        },
+        {
+          "thing": "lady_finger_plant",
+          "name": "Lady finger plant",
+          "draw": "A tall green okra plant with broad leaves, yellow flowers, and long green lady's finger pods; one pod split open showing round white seeds inside"
+        }
+      ]
+    },
+    "job_2026_10_06_07_2": {
+      "purpose": "drawn by the job, run 2026-10-06-07, second tries",
+      "grid": 1,
+      "size": 1024,
+      "only_for_this_sheet": "No people and no animals.",
+      "cells": [
+        {
+          "thing": "bean_plant",
+          "name": "Bean plant",
+          "draw": "A green bean plant growing in soil, with broad leaves, small white flowers, and several long green pods hanging; one pod split open showing round seeds inside"
+        }
+      ]
     }
   }
 }
