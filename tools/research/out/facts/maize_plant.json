@@ -1,0 +1,49 @@
+{
+  "name": "Maize plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Maize (; Zea mays), also known as corn, is a tall stout grass that produces cereal grain.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Maize is cultivated throughout the world; a greater weight of maize is produced each year than any other grain.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "grass_grain",
+      "quote": "Maize (; Zea mays), also known as corn, is a tall stout grass that produces cereal grain.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Maize",
+      "title": "Maize",
+      "asked_for": "Maize",
+      "revision": 1377441710,
+      "fetched_on": "2026-10-06",
+      "sha256": "f209fcf92ab3dc9ee7ce8c3ec9566766d8a25e72c8d1a00ca59bc34a88691c16"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Maize",
+      "title": "Maize",
+      "asked_for": "Maize",
+      "revision": 10301152,
+      "fetched_on": "2026-10-06",
+      "sha256": "dbc459b13558253c586a550a7f4e9ff39ace2b7ccd2d8779de1210caac659d51"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

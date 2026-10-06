@@ -1,0 +1,142 @@
+{
+  "id": "2026-10-06-09",
+  "started": "2026-10-06",
+  "rehearse": null,
+  "cap_inr": 12.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "plant/vegetable",
+        "chain": "Plants > Vegetable plants > The seeds or pods",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "need": 1,
+        "recorded_but_not_in_the_game": [
+          {
+            "name": "Drumstick plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Cluster bean plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Cowpea plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Field bean plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Green gram plant",
+            "status": "waiting for the owner",
+            "group": "seeds_or_pods"
+          }
+        ],
+        "examples": [
+          {
+            "name": "Maize plant",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Drumstick plant",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          }
+        ],
+        "offers_1": [],
+        "offers_2": [],
+        "facts_done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": []
+  },
+  "retry_held": false,
+  "things": [
+    {
+      "name": "Maize plant",
+      "passed": false,
+      "why": [
+        "uncertain: the approved proposal lists it in this group",
+        "the pages and the judgements point to 'Grasses and grains', not 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The seeds or pods'"
+      ],
+      "thing": {
+        "name": "Maize plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "grass_grain"
+        },
+        "familiar": 0.9,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-09"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 0
+    },
+    {
+      "name": "Drumstick plant",
+      "passed": false,
+      "why": [
+        "uncertain: the approved proposal lists it in this group",
+        "the pages and the judgements point to 'Trees', not 'Vegetable plants'",
+        "it could not be settled that it belongs in 'The seeds or pods'"
+      ],
+      "thing": {
+        "name": "Drumstick plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree",
+          "tree_academic": true
+        },
+        "familiar": 0.9,
+        "reviewed": 3,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-09"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "tree_academic": true,
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 0
+    }
+  ],
+  "sheets": [],
+  "stopped": "",
+  "spent_usd": {
+    "deepseek": 0.00198,
+    "drawing": 0.0,
+    "picture_checks": 0.0
+  }
+}
