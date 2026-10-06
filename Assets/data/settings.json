@@ -1,0 +1,5 @@
+{
+  "about": "How the game starts. Kept apart from the data: no thing or field knows it is the start, so this can change without touching either.",
+  "start": { "field": "kind_of_thing", "label": "Everything" },
+  "keep_in_play": { "kind_of_animal": ["dinosaur"] }
+}

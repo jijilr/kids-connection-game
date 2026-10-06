@@ -1,56 +1,51 @@
-/// A single learnable thing — "T-Rex", "Shark". The atom of the knowledge graph.
+/// A single learnable thing — "T. rex", "Mango tree", "Sun".
 ///
-/// Tags are flat strings (PRD Part II). A tag that is a *value* of a dimension
-/// (e.g. "carnivore" for the `diet` dimension) is looked up via the
-/// [DimensionRegistry]; boolean-ish tags (e.g. "flies") are just present or absent.
+/// A thing is a record of plain fields with values (`extinct: true`). Which fields
+/// exist, and which values each may take, is set by the dictionary
+/// ([DimensionRegistry]). A field that does not apply to a thing is simply absent.
 class Entity {
   final String id;
+
+  /// The full name kept in the data, e.g. "Tyrannosaurus rex".
   final String name;
-  final String domain;
-  final List<String> tags;
-  final List<String> facts;
 
-  /// 0..1 — how recognizable to a child. Drives fame / mundane-first ordering
-  /// (PRD IV.3). Placeholder in the migrated seed; scored properly by DeepSeek in P2.
-  final double recognizability;
+  /// How the child says it, e.g. "T. rex". Null when it is the same as [name].
+  final String? shownAs;
 
-  /// Where each atom came from (PRD VII.0). Seed = `human:migrated`.
-  final Map<String, dynamic> provenance;
+  final Map<String, Object?> fields;
+
+  /// Short notes for a grown-up, keyed by the field they are about (or "general").
+  final Map<String, String> notes;
+
+  /// 0..1 — how sure we are a young child recognises it. Familiar things come first.
+  final double familiar;
 
   const Entity({
     required this.id,
     required this.name,
-    required this.domain,
-    required this.tags,
-    this.facts = const [],
-    this.recognizability = 0.5,
-    this.provenance = const {},
+    this.shownAs,
+    this.fields = const {},
+    this.notes = const {},
+    this.familiar = 0.5,
   });
 
-  bool hasTag(String tag) => tags.contains(tag);
+  /// The name shown on a tile and spoken aloud.
+  String get label => shownAs ?? name;
 
-  /// This entity's value for a *valued* dimension, or null if it has none.
-  /// Valued tags are namespaced `dimId:value` (e.g. "category:dinosaur").
-  String? valueFor(String dimId) {
-    final prefix = '$dimId:';
-    for (final t in tags) {
-      if (t.startsWith(prefix)) return t.substring(prefix.length);
-    }
-    return null;
-  }
+  /// This thing's value for a field, spelled as the dictionary spells it ("true" /
+  /// "false" for yes/no fields), or null when the field does not apply to it.
+  String? valueFor(String fieldId) => fields[fieldId]?.toString();
 
-  /// Whether this entity is in a given (dimension, value) group.
-  bool isIn(String dimId, String value) => tags.contains('$dimId:$value');
+  /// Whether this thing is in a given (field, value) group.
+  bool isIn(String fieldId, String value) => valueFor(fieldId) == value;
 
-  factory Entity.fromJson(Map<String, dynamic> json) => Entity(
-        id: json['id'] as String,
+  factory Entity.fromJson(String id, Map<String, dynamic> json) => Entity(
+        id: id,
         name: json['name'] as String,
-        domain: json['domain'] as String? ?? 'unknown',
-        tags: (json['tags'] as List<dynamic>? ?? const []).cast<String>(),
-        facts: (json['facts'] as List<dynamic>? ?? const []).cast<String>(),
-        recognizability: (json['recognizability'] as num?)?.toDouble() ?? 0.5,
-        provenance:
-            (json['provenance'] as Map<String, dynamic>?) ?? const <String, dynamic>{},
+        shownAs: json['shown_as'] as String?,
+        fields: Map<String, Object?>.from((json['fields'] as Map?) ?? const {}),
+        notes: Map<String, String>.from((json['notes'] as Map?) ?? const {}),
+        familiar: (json['familiar'] as num?)?.toDouble() ?? 0.5,
       );
 
   @override

@@ -80,10 +80,11 @@ class EngineProvider extends ChangeNotifier {
   // ---------------------------------------------------------------------- actions
 
   Future<void> init() async {
-    await _repo.load(domain: 'animals');
+    await _repo.load();
+    final start = _repo.settings;
     _stack
       ..clear()
-      ..add(_Level(const [], registry.byId('category')!, 'Animals'));
+      ..add(_Level(const [], registry.byId(start.startField)!, start.startLabel));
     _open();
     isLoading = false;
     notifyListeners();
@@ -91,11 +92,10 @@ class EngineProvider extends ChangeNotifier {
 
   void _open() {
     final lvl = _stack.last;
-    // Root boards keep dinosaurs in play so "dig deeper" stays reachable.
     final b = _repo.assembler.assemble(
         filter: lvl.filter,
         dimension: lvl.dim,
-        preferValues: _stack.length == 1 ? const ['dinosaur'] : const []);
+        preferValues: _repo.settings.keepInPlay[lvl.dim.id] ?? const []);
 
     board = b;
     atFloor = b == null;

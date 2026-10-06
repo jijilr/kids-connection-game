@@ -51,20 +51,29 @@ class BoardAssembler {
 
   bool _pref(Entity e) => preferred?.call(e) ?? true;
 
-  /// Preferred first, then most recognizable (mundane-first, PRD IV.3).
+  /// Preferred first, then most familiar (mundane-first, PRD IV.3).
   int _rank(Entity a, Entity b) {
     final pa = _pref(a), pb = _pref(b);
     if (pa != pb) return pa ? -1 : 1;
-    return b.recognizability.compareTo(a.recognizability);
+    return b.familiar.compareTo(a.familiar);
   }
 
-  /// Pick [n] from [cands]: preferred + well-known first, with a little randomness
-  /// among the top few so boards don't repeat identically.
+  /// Things this close to the best-known candidate count as equally familiar.
+  static const _aboutAsFamiliar = 0.1;
+
+  /// Pick [n] from [cands]: preferred + well-known first. The pool is every preferred
+  /// candidate about as familiar as the best one (never fewer than n + 2), so boards
+  /// vary without reaching for obscure things.
   List<Entity> _pick(List<Entity> cands, int n) {
     final sorted = [...cands]..sort(_rank);
     final prefCount = sorted.where(_pref).length;
     if (prefCount <= n) return sorted.take(n).toList();
-    final pool = sorted.take(min(prefCount, n + 2)).toList()..shuffle(_random);
+    final best = sorted.first.familiar;
+    final close = sorted
+        .take(prefCount)
+        .where((e) => best - e.familiar <= _aboutAsFamiliar)
+        .length;
+    final pool = sorted.take(max(close, min(prefCount, n + 2))).toList()..shuffle(_random);
     return pool.take(n).toList();
   }
 
@@ -121,6 +130,7 @@ class BoardAssembler {
     final pool = _filtered(filter);
     final out = <Dimension>[];
     for (final d in registry.all) {
+      if (!d.sortsBoards) continue;
       final counts = <String, int>{};
       for (final e in pool) {
         final v = e.valueFor(d.id);

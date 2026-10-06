@@ -1,20 +1,20 @@
-// Replaces the broken stock counter test. Real engine tests arrive with P3.
+// Replaces the broken stock counter test. Engine tests live in engine_test.dart.
 import 'package:flutter_test/flutter_test.dart';
 import 'package:connections_game/models/entity.dart';
 
 void main() {
-  test('Entity namespaced tags: valueFor / isIn / hasTag', () {
+  test('Entity fields: valueFor / isIn / label', () {
     const e = Entity(
-      id: 'trex',
-      name: 'T-Rex',
-      domain: 'animals',
-      tags: ['category:dinosaur', 'diet:carnivore', 'extinct'],
+      id: 'tyrannosaurus_rex',
+      name: 'Tyrannosaurus rex',
+      shownAs: 'T. rex',
+      fields: {'kind_of_animal': 'dinosaur', 'extinct': true},
     );
-    expect(e.valueFor('category'), 'dinosaur');
-    expect(e.valueFor('diet'), 'carnivore');
-    expect(e.valueFor('habitat'), isNull);
-    expect(e.isIn('category', 'dinosaur'), isTrue);
-    expect(e.isIn('category', 'reptile'), isFalse);
-    expect(e.hasTag('extinct'), isTrue);
+    expect(e.label, 'T. rex');
+    expect(e.valueFor('kind_of_animal'), 'dinosaur');
+    expect(e.valueFor('extinct'), 'true');
+    expect(e.valueFor('kind_of_dinosaur'), isNull); // a field that does not apply is absent
+    expect(e.isIn('kind_of_animal', 'dinosaur'), isTrue);
+    expect(e.isIn('kind_of_animal', 'reptile'), isFalse);
   });
 }

@@ -103,7 +103,7 @@ class EngineScreen extends StatelessWidget {
     if (audio != null) {
       SoundService().playAsset(audio);
     } else {
-      speakText(e.name);
+      speakText(e.label);
     }
   }
 
@@ -273,7 +273,7 @@ class EngineScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 2),
                     Text(
-                      group.items.map((e) => e.name).join('  ·  '),
+                      group.items.map((e) => e.label).join('  ·  '),
                       style: GoogleFonts.inter(
                           fontSize: 12, color: Colors.white.withOpacity(0.92)),
                       maxLines: 2,

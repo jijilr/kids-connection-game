@@ -28,7 +28,7 @@ class TileCard extends StatelessWidget {
     return Semantics(
       button: true,
       selected: selected,
-      label: entity.name,
+      label: entity.label,
       child: GestureDetector(
         onTap: onTap,
         child: AnimatedScale(
@@ -95,7 +95,7 @@ class TileCard extends StatelessWidget {
           child: FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(
-              entity.name,
+              entity.label,
               maxLines: 1,
               style: GoogleFonts.quicksand(
                 fontWeight: FontWeight.w800,
@@ -141,7 +141,7 @@ class TileCard extends StatelessWidget {
       padding: const EdgeInsets.all(6),
       alignment: Alignment.center,
       child: Text(
-        entity.name,
+        entity.label,
         textAlign: TextAlign.center,
         maxLines: 3,
         overflow: TextOverflow.ellipsis,

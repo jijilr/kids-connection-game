@@ -1,7 +1,8 @@
+import 'dart:convert';
 import 'package:flutter/services.dart' show AssetManifest, rootBundle;
 import '../models/entity.dart';
 
-/// What we can show and play for one animal. Any field may be null.
+/// What we can show and play for one thing. Any field may be null.
 class EntityMedia {
   final String? image; // bundled photo, e.g. Assets/lion_1.png
   final String? emoji; // fallback picture when there is no photo
@@ -11,51 +12,49 @@ class EntityMedia {
   bool get hasPicture => image != null || emoji != null;
 }
 
-/// Resolves photos, emoji and recorded voice clips for entities. Uses the real asset
-/// manifest, so it only ever points at files that actually ship with the app.
+/// Resolves photos, emoji and recorded voice clips for things. Uses the real asset
+/// manifest, so it only ever points at files that actually ship with the app. Which
+/// emoji a thing uses comes from `pictures.json`, not from code.
 class MediaResolver {
   final Set<String> _assets;
-  const MediaResolver(this._assets);
+  final Map<String, String> _emoji;
 
-  const MediaResolver.empty() : _assets = const {};
+  /// Things whose old picture / clip was saved under a different name.
+  final Map<String, String> _fileNames;
+
+  const MediaResolver(
+    this._assets, {
+    Map<String, String> emoji = const {},
+    Map<String, String> fileNames = const {},
+  })  : _emoji = emoji,
+        _fileNames = fileNames;
+
+  const MediaResolver.empty()
+      : _assets = const {},
+        _emoji = const {},
+        _fileNames = const {};
+
+  /// [pictures] is the decoded `pictures.json`.
+  factory MediaResolver.fromJson(Set<String> assets, Map<String, dynamic> pictures) =>
+      MediaResolver(
+        assets,
+        emoji: Map<String, String>.from((pictures['emoji'] as Map?) ?? const {}),
+        fileNames: Map<String, String>.from((pictures['file_names'] as Map?) ?? const {}),
+      );
 
   static Future<MediaResolver> load() async {
     try {
       final manifest = await AssetManifest.loadFromAssetBundle(rootBundle);
-      return MediaResolver(manifest.listAssets().toSet());
+      final pictures = await rootBundle.loadString('Assets/data/pictures.json');
+      return MediaResolver.fromJson(
+          manifest.listAssets().toSet(), json.decode(pictures) as Map<String, dynamic>);
     } catch (_) {
       return const MediaResolver.empty();
     }
   }
 
-  /// Generated ids whose old picture / clip was saved under a different name.
-  static const _alias = {
-    'tyrannosaurus_rex': 'trex',
-    'pterodactylus': 'pterodactyl',
-  };
-
-  /// Emoji stand-ins for animals without a photo. Only emoji that genuinely show the
-  /// animal — e.g. no lizard emoji for salamanders, which would teach the wrong thing.
-  static const _emoji = {
-    'dog': '🐕', 'cat': '🐈', 'elephant': '🐘', 'horse': '🐎', 'cow': '🐄',
-    'pig': '🐖', 'lion': '🦁', 'tiger': '🐅', 'bear': '🐻', 'whale': '🐋',
-    'dolphin': '🐬', 'bat': '🦇',
-    'eagle': '🦅', 'penguin': '🐧', 'parrot': '🦜', 'owl': '🦉', 'duck': '🦆',
-    'chicken': '🐔', 'flamingo': '🦩', 'swan': '🦢', 'robin': '🐦',
-    'goldfish': '🐟', 'clownfish': '🐠', 'shark': '🦈', 'salmon': '🐟',
-    'pufferfish': '🐡', 'angelfish': '🐠', 'catfish': '🐟', 'trout': '🐟',
-    'butterfly': '🦋', 'bee': '🐝', 'ant': '🐜', 'ladybug': '🐞',
-    'grasshopper': '🦗', 'cricket': '🦗',
-    'snake': '🐍', 'turtle': '🐢', 'lizard': '🦎', 'crocodile': '🐊',
-    'alligator': '🐊', 'chameleon': '🦎', 'iguana': '🦎', 'gecko': '🦎',
-    'frog': '🐸', 'toad': '🐸',
-    'tyrannosaurus_rex': '🦖', 'spinosaurus': '🦖', 'velociraptor': '🦖',
-    'allosaurus': '🦖', 'giganotosaurus': '🦖',
-    'diplodocus': '🦕', 'brachiosaurus': '🦕',
-  };
-
   EntityMedia forEntity(Entity e) {
-    final key = _alias[e.id] ?? e.id;
+    final key = _fileNames[e.id] ?? e.id;
     final img = 'Assets/${key}_1.png';
     final aud = 'Assets/audio/names/name_$key.mp3';
     return EntityMedia(
