@@ -2,11 +2,12 @@
   "about": "What the picture pipeline draws and how. The style block is the contract: it is sent word for word with every sheet, so sheets made months apart match. Change the style only by adding a new version; tiles record the version they were drawn in. Anything that applies to one sheet only (such as \"no people and no animals\" for plants) goes in that sheet's `only_for_this_sheet`, never in the shared style.",
   "style": {
     "version": "v1",
-    "status": "NOT APPROVED - the owner wants a realistic style (nature guide or museum catalogue); waiting for its full text. make_sheet.py will not draw until this says \"approved\".",
+    "status": "approved",
     "model": "gpt-image-2.5-flare",
     "quality": "high",
-    "text": "Simple flat illustration for a preschool picture book. Bold, clean shapes with a soft dark outline of even thickness. Bright but natural colours. Gentle, even lighting. No gradients, no photographic texture, no shading beyond one soft shadow under the subject. Plain white background, identical in every cell. No text, letters, numbers, labels, borders or frames. Every subject is drawn whole, centred, filling about three quarters of its cell, seen from the same slightly raised side view. Where the subject is a place, such as a river or a hill, draw it as a small rounded patch of scenery sitting on the same white background.",
-    "layout": "One image containing a {grid} by {grid} grid of {count} equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:"
+    "text": "Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+    "layout": "One image containing a {grid} by {grid} grid of {count} equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:",
+    "approved": "by the owner on 2026-10-06, as drafted from his opening words (realistic, nature guide or museum catalogue)"
   },
   "prices": {
     "usd_per_million_image_output_tokens": 30.0,

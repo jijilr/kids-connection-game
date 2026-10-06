@@ -22,6 +22,8 @@ def show(records: dict, sheet_id=None):
         vision = tile["vision"]
         looks = "not checked yet" if vision is None else (vision["says"] or "?")
         cut = "clean cut" if tile["cut"]["ok"] else "; ".join(tile["cut"]["flags"])
+        if tile["cut"].get("notes"):
+            cut += f" (note: {'; '.join(tile['cut']['notes'])})"
         linked = f" -> {names.get(tile['thing_id'], tile['thing_id'])}" if tile["thing_id"] else ""
         print(f"  {tile_id}: meant {names.get(tile['expected_thing'])}; looks like {looks}; "
               f"{cut}; {tile['review']}{linked}"

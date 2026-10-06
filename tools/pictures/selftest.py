@@ -9,19 +9,23 @@ import pathlib
 import sys
 import tempfile
 
+import numpy as np
 from PIL import Image, ImageDraw
 
 import cut_sheet
 import piclib
 import review
-from cut_sheet import CutError, cell_boxes, cut_tile, ink_mask
+from cut_sheet import CutError, cut_all
 
 COLOURS = ["red", "green", "blue", "orange", "purple", "brown", "teal", "magenta", "olive"]
 
 
+def rgb(name):
+    return Image.new("RGB", (1, 1), name).getpixel((0, 0))
+
+
 def sheet(size, edges_x, edges_y, extra=None):
-    """A white sheet with one coloured blob per cell. edges_* are the cell boundaries,
-    deliberately uneven, so cutting on fixed thirds would slice through pictures."""
+    """A white sheet with one coloured blob per cell. edges_* are the cell boundaries."""
     image = Image.new("RGB", (size, size), "white")
     draw = ImageDraw.Draw(image)
     n = len(edges_x) - 1
@@ -35,79 +39,101 @@ def sheet(size, edges_x, edges_y, extra=None):
     return image
 
 
-def colour_at_centre(tile):
+def centre(tile):
     return tile.getpixel((tile.width // 2, tile.height // 2))
 
 
-def test_cuts_along_the_gaps_not_on_thirds():
-    edges = [0, 380, 620, 900]          # thirds would be 300 and 600
-    image = sheet(900, edges, edges)
-    boxes = cell_boxes(ink_mask(image), 3)
-    assert len(boxes) == 9
-    cuts = sorted({b[0] for b in boxes} | {b[2] for b in boxes})
-    assert abs(cuts[1] - 380) <= 4 and abs(cuts[2] - 620) <= 4, cuts
-    assert abs(cuts[1] - 300) > 40, "it cut on thirds"
-    for number, box in enumerate(boxes):
-        tile, checks = cut_tile(image, ink_mask(image), box)
-        assert tile.size == (512, 512)
-        assert colour_at_centre(tile) == Image.new("RGB", (1, 1), COLOURS[number]).getpixel((0, 0))
-    # an uneven grid makes some cells oblong: 240 wide by 380 tall is flagged, 380 by 380 is not
-    flagged = [cut_tile(image, ink_mask(image), b)[1]["flags"] for b in boxes]
-    assert "its cell is not square" in flagged[1] and "its cell is not square" not in flagged[0], flagged
+def test_each_picture_becomes_its_own_tile_whatever_the_spacing():
+    edges = [0, 340, 610, 900]          # uneven: fixed thirds (300, 600) would slice pictures
+    cut = cut_all(sheet(900, edges, edges), 3)
+    assert len(cut) == 9
+    for number, (tile, checks) in enumerate(cut):
+        assert tile.size == (512, 512) and checks["ok"], checks
+        assert centre(tile) == rgb(COLOURS[number])
+        # the whole blob is there, with white all round it: nothing was sliced
+        assert tile.getpixel((4, 4)) == (255, 255, 255) and tile.getpixel((507, 256)) == (255, 255, 255)
 
 
-def test_clean_even_sheet_passes_every_check():
+def test_pictures_that_overlap_in_height_are_still_separated():
+    """The real case: one picture's foot reaches lower than its neighbour's top begins,
+    so no straight white band runs between the rows, yet white still separates them."""
+    image = Image.new("RGB", (800, 800), "white")
+    draw = ImageDraw.Draw(image)
+    draw.ellipse((60, 40, 340, 460), fill="red")        # top-left, long
+    draw.ellipse((60, 500, 340, 760), fill="green")     # bottom-left
+    draw.ellipse((460, 40, 740, 330), fill="blue")      # top-right, short
+    draw.ellipse((460, 370, 740, 760), fill="orange")   # bottom-right starts above red's foot
+    cut = cut_all(image, 2)
+    assert [centre(tile) for tile, _ in cut] == [rgb(c) for c in ("red", "blue", "green", "orange")]
+    assert all(checks["ok"] for _, checks in cut)
+
+
+def test_two_pictures_that_touch_stop_the_cut():
     edges = [0, 300, 600, 900]
-    image = sheet(900, edges, edges)
-    for box in cell_boxes(ink_mask(image), 3):
-        tile, checks = cut_tile(image, ink_mask(image), box)
-        assert checks["ok"], checks
-
-
-def test_something_crossing_a_gap_stops_the_cut():
-    edges = [0, 300, 600, 900]
-    image = sheet(900, edges, edges, lambda d: d.rectangle((250, 140, 350, 160), fill="black"))
+    image = sheet(900, edges, edges, lambda d: d.rectangle((200, 140, 400, 160), fill="black"))
     try:
-        cell_boxes(ink_mask(image), 3)
+        cut_all(image, 3)
     except CutError as problem:
-        assert "no clear white gap between columns 1 and 2" in str(problem)
+        assert "touch" in str(problem), problem
     else:
-        raise AssertionError("a picture crossing the gap was not caught")
+        raise AssertionError("two joined pictures were not caught")
+
+
+def test_an_empty_cell_stops_the_cut():
+    image = Image.new("RGB", (600, 600), "white")
+    draw = ImageDraw.Draw(image)
+    for box in ((60, 60, 240, 240), (360, 60, 540, 240), (60, 360, 240, 540)):
+        draw.ellipse(box, fill="red")
+    try:
+        cut_all(image, 2)
+    except CutError as problem:
+        assert "no picture found in cell 4" in str(problem), problem
+    else:
+        raise AssertionError("an empty cell was not caught")
 
 
 def test_picture_touching_the_sheet_edge_is_flagged():
     edges = [0, 300, 600, 900]
-    image = sheet(900, edges, edges, lambda d: d.rectangle((0, 100, 60, 200), fill="black"))
-    _, checks = cut_tile(image, ink_mask(image), cell_boxes(ink_mask(image), 3)[0])
-    assert "the picture touches the edge of the sheet" in checks["flags"], checks
+    image = sheet(900, edges, edges, lambda d: d.rectangle((0, 100, 80, 200), fill="red"))
+    _, checks = cut_all(image, 3)[0]
+    assert "the picture touches the edge of the sheet" in checks["flags"] and not checks["ok"], checks
 
 
-def test_tiny_picture_and_empty_cell_are_flagged():
+def test_small_and_thin_pictures_are_noted_but_not_blocked():
     image = Image.new("RGB", (600, 600), "white")
     draw = ImageDraw.Draw(image)
-    draw.ellipse((60, 60, 240, 240), fill="red")       # cell 1: normal
-    draw.ellipse((440, 140, 460, 160), fill="blue")    # cell 2: tiny
-    draw.ellipse((60, 360, 240, 540), fill="green")    # cell 3: normal; cell 4 left empty
-    mask = ink_mask(image)
-    boxes = [(0, 0, 300, 300), (300, 0, 600, 300), (0, 300, 300, 600), (300, 300, 600, 600)]
-    assert "the picture is very small" in cut_tile(image, mask, boxes[1])[1]["flags"]
-    assert "the cell is empty" in cut_tile(image, mask, boxes[3])[1]["flags"]
+    draw.ellipse((60, 60, 240, 240), fill="red")
+    draw.ellipse((430, 130, 470, 170), fill="blue")      # small
+    draw.rectangle((140, 330, 170, 570), fill="green")   # tall and thin
+    draw.ellipse((360, 360, 540, 540), fill="orange")
+    cut = cut_all(image, 2)
+    assert "the picture is very small" in cut[1][1]["notes"] and cut[1][1]["ok"]
+    assert "the picture is far from square" in cut[2][1]["notes"] and cut[2][1]["ok"]
+    assert not cut[0][1]["notes"]
 
 
 def test_a_neighbour_never_shows_in_a_tile():
-    # cell 1 holds a small off-centre picture; cell 2's big picture sits right beside the gap
+    # cell 1 holds a small picture close to cell 2's big one
     image = Image.new("RGB", (600, 300), "white")
     draw = ImageDraw.Draw(image)
     draw.ellipse((200, 100, 280, 180), fill="red")
-    draw.rectangle((320, 20, 580, 280), fill="blue")
-    tile, _ = cut_tile(image, ink_mask(image), (0, 0, 300, 300))
-    blues = [p for p in tile.getdata() if p[2] > 200 and p[0] < 60]
-    assert not blues, "the neighbour's picture leaked into the tile"
+    draw.rectangle((300, 20, 580, 280), fill="blue")
+    mask = cut_sheet.ink_mask(image)
+    owner = np.full(mask.shape, -1)       # which picture each pixel belongs to
+    owner[:, :290][mask[:, :290]] = 0
+    owner[:, 290:][mask[:, 290:]] = 1
+    tile, _ = cut_sheet.cut_tile(image, mask, owner, 0, 2)
+    assert centre(tile) == rgb("red")
+    assert not [p for p in tile.getdata() if p[2] > 200 and p[0] < 60], "the neighbour leaked in"
 
 
-def test_two_by_two():
-    edges = [0, 512, 1024]
-    assert len(cell_boxes(ink_mask(sheet(1024, edges, edges)), 2)) == 4
+def test_loose_bits_join_the_nearest_picture():
+    edges = [0, 300, 600, 900]
+    # a fallen leaf beside the first picture, nearer to it than to anything else
+    image = sheet(900, edges, edges, lambda d: d.ellipse((30, 250, 46, 262), fill="red"))
+    tile, checks = cut_all(image, 3)[0]
+    box = checks["picture_box"]
+    assert box[0] <= 31 and box[3] >= 261, box   # the tile was widened to take the leaf in
 
 
 def test_records_and_review():
@@ -118,7 +144,6 @@ def test_records_and_review():
             module.ROOT = root
             module.RECORDS = root / "records.json"
         cut_sheet.TILES = root / "tiles"
-        piclib.RECORDS = root / "records.json"
 
         plan = piclib.read_json(piclib.PLAN)
         cells = [c["thing"] for c in plan["sheets"]["trial_plants_9"]["cells"]]

@@ -1,14 +1,21 @@
-"""Cut a sheet into tiles along its white gaps, and check each tile.
+"""Cut a sheet into tiles along the white between its pictures, and check each tile.
 
-It never cuts on fixed thirds. It looks for the bands of white that run right across the
-sheet between the cells and cuts down the middle of them. If there is no clear band
-where one should be, something crosses from one cell into the next, and it stops.
+It never cuts on fixed thirds, and it does not need straight gaps. A real sheet is rarely
+a tidy grid: one picture's stem may reach lower than its neighbour's leaves begin, so no
+straight white band runs between them, yet white still separates them. So it finds each
+picture as a patch of ink surrounded by white, and gives every patch to the picture it
+belongs to. The grid is used only to say which picture is which cell (reading order),
+never to decide where to cut. If two pictures actually touch, there is no white between
+them, and it stops.
 
-Each tile is trimmed to its picture, centred on a white square with a margin, and checked:
-  - its cell is roughly square (the grid came out even);
-  - the picture touches neither the edge of the sheet nor the edge of its cell;
-  - nothing reaches the edge of the finished tile;
-  - the picture is not empty or tiny.
+Each tile is its own picture, centred on a white square with a margin; anything that
+belongs to a neighbour is left out. Then it is checked. These stop a tile being approved:
+  - the picture touches the edge of the sheet (it may be cut off);
+  - something reaches the edge of the finished tile;
+  - the cell is empty.
+These are noted for the reviewer but do not block:
+  - the picture is far from square, so it sits small in a square tile;
+  - the picture is very small for its cell.
 A tile that fails a check is still saved and recorded, with the reason, never dropped.
 
 Tiles are named by sheet and cell, not by thing: the model may have swapped cells, so a
@@ -20,13 +27,15 @@ import sys
 
 import numpy as np
 from PIL import Image
+from scipy import ndimage
 
 from piclib import PLAN, RECORDS, ROOT, TILES, load_records, read_json, relative, thing_names, today, write_json
 
 INK_TOLERANCE = 24      # how far from the background colour a pixel must be to count as picture
-BLANK_LINE = 0.002      # a row or column with less ink than this share is white
-MIN_GAP = 0.01          # a gap must be at least this share of the sheet wide
-SQUARE_RANGE = (0.8, 1.25)
+SHRINK = 2              # patches are found on a sheet shrunk by this much
+MAIN_PATCH = 0.005      # a picture's main patch covers at least this share of its cell
+TOO_BIG = 1.5           # a patch this many cells wide or tall is two pictures joined
+SQUARE_RANGE = (0.5, 2.0)
 SMALL_PICTURE = 0.35    # picture's longer side, as a share of its cell
 MARGIN = 0.08           # white margin on each side of the finished tile
 TILE_SIZE = 512
@@ -44,70 +53,101 @@ def ink_mask(image: Image.Image) -> np.ndarray:
     return np.abs(pixels - background).max(axis=2) > INK_TOLERANCE
 
 
-def find_gaps(mask: np.ndarray, axis: int, n: int) -> list:
-    """The n-1 white bands that separate n rows (axis 0) or columns (axis 1)."""
-    lines = mask.mean(axis=1 - axis) <= BLANK_LINE   # one flag per row / column
-    length = len(lines)
-    runs, start = [], None
-    for i, blank in enumerate(list(lines) + [False]):
-        if blank and start is None:
-            start = i
-        elif not blank and start is not None:
-            runs.append((start, i))
-            start = None
-    inner = [r for r in runs if r[0] > 0 and r[1] < length and r[1] - r[0] >= MIN_GAP * length]
-    what = "rows" if axis == 0 else "columns"
-    gaps = []
-    for k in range(1, n):
-        expected, reach = k * length / n, 0.35 * length / n
-        near = [r for r in inner if abs((r[0] + r[1]) / 2 - expected) <= reach]
-        if not near:
-            raise CutError(f"no clear white gap between {what} {k} and {k + 1}: "
-                           "something crosses from one cell into the next")
-        gaps.append(max(near, key=lambda r: r[1] - r[0]))
-    return gaps
-
-
-def cell_boxes(mask: np.ndarray, n: int) -> list:
-    """(left, top, right, bottom) of each cell, reading order, cut mid-way through the gaps."""
+def separate(mask: np.ndarray, n: int) -> np.ndarray:
+    """For every pixel, the cell (0 .. n*n-1, reading order) whose picture it belongs to,
+    or -1 for white. Pictures are told apart by the white between them."""
     height, width = mask.shape
-    xs = [0] + [(a + b) // 2 for a, b in find_gaps(mask, 1, n)] + [width]
-    ys = [0] + [(a + b) // 2 for a, b in find_gaps(mask, 0, n)] + [height]
-    return [(xs[c], ys[r], xs[c + 1], ys[r + 1]) for r in range(n) for c in range(n)]
+    h, w = height // SHRINK, width // SHRINK
+    small = mask[:h * SHRINK, :w * SHRINK].reshape(h, SHRINK, w, SHRINK).any(axis=(1, 3))
+    labels, count = ndimage.label(small, structure=np.ones((3, 3)))
+    if count == 0:
+        return np.full(mask.shape, -1)
+    index = np.arange(1, count + 1)
+    areas = ndimage.sum(small, labels, index)
+    centres = ndimage.center_of_mass(small, labels, index)
+    boxes = ndimage.find_objects(labels)
+
+    def cell_at(y, x):
+        return min(n - 1, int(y * n / h)) * n + min(n - 1, int(x * n / w))
+
+    # A patch much wider or taller than a cell is two pictures touching.
+    for box in boxes:
+        tall, wide = box[0].stop - box[0].start, box[1].stop - box[1].start
+        if tall > TOO_BIG * h / n or wide > TOO_BIG * w / n:
+            first = cell_at(box[0].start, box[1].start) + 1
+            last = cell_at(box[0].stop - 1, box[1].stop - 1) + 1
+            raise CutError(f"the pictures in cells {first} and {last} touch: "
+                           "there is no white between them")
+
+    # Each cell's main patch: the largest one centred in that cell.
+    big = MAIN_PATCH * (h / n) * (w / n)
+    main = {}
+    for i in range(count):
+        cell = cell_at(*centres[i])
+        if areas[i] >= big and (cell not in main or areas[i] > areas[main[cell]]):
+            main[cell] = i
+    missing = [cell + 1 for cell in range(n * n) if cell not in main]
+    if missing:
+        raise CutError(f"no picture found in cell {missing[0]}")
+
+    # Every other patch (a fallen leaf, a ripple, a tuft of grass) joins the nearest main patch.
+    owner_of = np.full(count + 1, -1)
+    for cell, i in main.items():
+        owner_of[i + 1] = cell
+    for i in range(count):
+        if owner_of[i + 1] != -1:
+            continue
+        y, x = centres[i]
+
+        def distance(item):
+            box = boxes[item[1]]
+            dy = max(box[0].start - y, 0, y - box[0].stop)
+            dx = max(box[1].start - x, 0, x - box[1].stop)
+            return dy * dy + dx * dx
+
+        owner_of[i + 1] = min(main.items(), key=distance)[0]
+
+    owner_small = owner_of[labels]
+    owner = np.full(mask.shape, -1)
+    grown = np.repeat(np.repeat(owner_small, SHRINK, axis=0), SHRINK, axis=1)
+    owner[:grown.shape[0], :grown.shape[1]] = grown
+    return owner
 
 
-def cut_tile(image: Image.Image, mask: np.ndarray, box: tuple) -> tuple:
+def cut_tile(image: Image.Image, mask: np.ndarray, owner: np.ndarray, cell: int, n: int) -> tuple:
     """One finished tile and the result of its checks."""
-    left, top, right, bottom = box
     height, width = mask.shape
-    shape = (right - left) / (bottom - top)
-    checks = {"cell_box": list(box), "cell_shape": round(shape, 2), "flags": []}
-    flags = checks["flags"]
-    if not SQUARE_RANGE[0] <= shape <= SQUARE_RANGE[1]:
-        flags.append("its cell is not square")
+    checks = {"flags": [], "notes": []}
+    flags, notes = checks["flags"], checks["notes"]
 
-    ys, xs = np.nonzero(mask[top:bottom, left:right])
+    ys, xs = np.nonzero(mask & (owner == cell))
     if len(xs) == 0:
         flags.append("the cell is empty")
         checks["ok"] = False
         return Image.new("RGB", (TILE_SIZE, TILE_SIZE), "white"), checks
-    x0, x1, y0, y1 = left + xs.min(), left + xs.max() + 1, top + ys.min(), top + ys.max() + 1
+    x0, x1, y0, y1 = int(xs.min()), int(xs.max()) + 1, int(ys.min()), int(ys.max()) + 1
+    checks["picture_box"] = [x0, y0, x1, y1]
+    shape = (x1 - x0) / (y1 - y0)
+    checks["picture_shape"] = round(shape, 2)
     if x0 <= 1 or y0 <= 1 or x1 >= width - 1 or y1 >= height - 1:
         flags.append("the picture touches the edge of the sheet")
-    elif x0 <= left + 1 or y0 <= top + 1 or x1 >= right - 1 or y1 >= bottom - 1:
-        flags.append("the picture touches the edge of its cell")
+    if not SQUARE_RANGE[0] <= shape <= SQUARE_RANGE[1]:
+        notes.append("the picture is far from square")
     longer = max(x1 - x0, y1 - y0)
-    if longer < SMALL_PICTURE * min(right - left, bottom - top):
-        flags.append("the picture is very small")
+    if longer < SMALL_PICTURE * min(width, height) / n:
+        notes.append("the picture is very small")
 
-    # A white square around the picture. Only this cell's pixels are copied in, so a
-    # neighbour can never show in a corner.
+    # A white square around the picture, with everything that belongs to a neighbour
+    # painted out, so a neighbour can never show in a corner.
     side = int(round(longer * (1 + 2 * MARGIN)))
+    ox, oy = (x0 + x1) // 2 - side // 2, (y0 + y1) // 2 - side // 2
+    sx0, sy0, sx1, sy1 = max(ox, 0), max(oy, 0), min(ox + side, width), min(oy + side, height)
+    patch = np.asarray(image.convert("RGB"))[sy0:sy1, sx0:sx1].copy()
+    theirs = owner[sy0:sy1, sx0:sx1]
+    others = ndimage.binary_dilation((theirs != -1) & (theirs != cell), iterations=3)
+    patch[others & (theirs != cell)] = 255
     tile = Image.new("RGB", (side, side), "white")
-    cx, cy = (x0 + x1) // 2, (y0 + y1) // 2
-    ox, oy = cx - side // 2, cy - side // 2
-    sx0, sy0, sx1, sy1 = max(ox, left), max(oy, top), min(ox + side, right), min(oy + side, bottom)
-    tile.paste(image.convert("RGB").crop((sx0, sy0, sx1, sy1)), (sx0 - ox, sy0 - oy))
+    tile.paste(Image.fromarray(patch), (sx0 - ox, sy0 - oy))
     tile = tile.resize((TILE_SIZE, TILE_SIZE), Image.LANCZOS)
 
     ring = ink_mask(tile)
@@ -117,6 +157,13 @@ def cut_tile(image: Image.Image, mask: np.ndarray, box: tuple) -> tuple:
         flags.append("something reaches the edge of the finished tile")
     checks["ok"] = not flags
     return tile, checks
+
+
+def cut_all(image: Image.Image, n: int) -> list:
+    """Every tile of a sheet, reading order, as (tile, checks)."""
+    mask = ink_mask(image)
+    owner = separate(mask, n)
+    return [cut_tile(image, mask, owner, cell, n) for cell in range(n * n)]
 
 
 def main():
@@ -132,9 +179,8 @@ def main():
     draws = {c["thing"]: c["draw"] for c in plan["sheets"][sheet["plan_key"]]["cells"]}
 
     image = Image.open(ROOT / sheet["file"])
-    mask = ink_mask(image)
     try:
-        boxes = cell_boxes(mask, sheet["grid"])
+        cut = cut_all(image, sheet["grid"])
     except CutError as problem:
         sheet["cut_error"] = str(problem)
         write_json(RECORDS, records)
@@ -142,10 +188,9 @@ def main():
     sheet.pop("cut_error", None)
 
     TILES.mkdir(parents=True, exist_ok=True)
-    count = len(boxes)
-    for number, box in enumerate(boxes, 1):
+    count = len(cut)
+    for number, (tile, checks) in enumerate(cut, 1):
         tile_id = f"{sheet_id}_c{number}"
-        tile, checks = cut_tile(image, mask, box)
         path = TILES / f"{tile_id}.png"
         tile.save(path)
         expected = sheet["cells"][number - 1]
@@ -171,9 +216,11 @@ def main():
             "history": history,
         }
         verdict = "ok" if checks["ok"] else "; ".join(checks["flags"])
-        print(f"  {tile_id}  ({names.get(expected, expected)})  {verdict}")
+        noted = f"  [note: {'; '.join(checks['notes'])}]" if checks["notes"] else ""
+        print(f"  {tile_id}  ({names.get(expected, expected)})  {verdict}{noted}")
     write_json(RECORDS, records)
-    print(f"Cut {count} tiles along the white gaps. Next: python tools/pictures/check_tiles.py {sheet_id}")
+    print(f"Cut {count} tiles along the white between the pictures. "
+          f"Next: python tools/pictures/check_tiles.py {sheet_id}")
 
 
 if __name__ == "__main__":
