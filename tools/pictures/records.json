@@ -1229,6 +1229,35 @@
       },
       "cost_usd": 0.0538,
       "vision_check_cost_usd": 5e-05
+    },
+    "job_2026_10_07_01_1_01": {
+      "plan_key": "job_2026_10_07_01_1",
+      "purpose": "drawn by the job, run 2026-10-07-01",
+      "file": "tools/pictures/sheets/job_2026_10_07_01_1_01.png",
+      "grid": 2,
+      "size": "1920x1920",
+      "cells": [
+        "broom",
+        "mop",
+        "sponge",
+        "broom"
+      ],
+      "names": {
+        "broom": "Broom",
+        "mop": "Mop",
+        "sponge": "Sponge"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 2 by 2 grid of 4 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Broom: A whole Indian broom: a long straight wooden stick handle with a thick bundle of stiff golden-brown grass fibres tied at the bottom, fanning out flat, resting on plain ground.\n2. Mop: A floor mop with a long wooden stick and a thick bundle of grey strings at the bottom, resting on the ground.\n3. Sponge: A whole rectangular yellow-and-green synthetic sponge, soft and full of small holes, resting on the ground.\n4. Broom: A whole Indian broom: a long straight wooden stick handle with a thick bundle of stiff golden-brown grass fibres tied at the bottom, fanning out flat, resting on plain ground; a second view of it.\n\nFor this sheet: Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-07",
+      "tokens": {
+        "image_output_tokens": 3276,
+        "text_input_tokens": 373
+      },
+      "cost_usd": 0.1001,
+      "vision_check_cost_usd": 0.00016
     }
   },
   "tiles": {
@@ -15059,6 +15088,229 @@
       "history": [],
       "reviewed_on": "2026-10-06",
       "published_file": "Assets/pictures/houseboat.webp"
+    },
+    "job_2026_10_07_01_1_01_c1": {
+      "thing_id": null,
+      "expected_thing": "broom",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_01_1_01_c1.png",
+      "master_size": [
+        1023,
+        1023
+      ],
+      "master_sha256": "d58082c36426da9e9f8eea74cf2b845b942315b88c6a28e465ce34c9af45557d",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_01_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_01_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Broom: A whole Indian broom: a long straight wooden stick handle with a thick bundle of stiff golden-brown grass fibres tied at the bottom, fanning out flat, resting on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [
+          "the picture is far from square"
+        ],
+        "picture_box": [
+          285,
+          36,
+          691,
+          918
+        ],
+        "picture_shape": 0.46,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Broom",
+        "shows": "broom",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_10_07_01_1_01_c4 better",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "among": [
+          "job_2026_10_07_01_1_01_c1",
+          "job_2026_10_07_01_1_01_c4"
+        ],
+        "chosen": false,
+        "why": "Its larger, clearly defined brush head makes the broom shape easy to recognize at a glance.",
+        "cost_usd": 0.00012
+      },
+      "reviewed_on": "2026-10-07"
+    },
+    "job_2026_10_07_01_1_01_c2": {
+      "thing_id": "mop",
+      "expected_thing": "mop",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_01_1_01_c2.png",
+      "master_size": [
+        1029,
+        1029
+      ],
+      "master_sha256": "545962deadaf8c9abeedc275d886fce913f60a818642809865dc8b1a97047949",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_01_1_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_01_1_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Mop: A floor mop with a long wooden stick and a thick bundle of grey strings at the bottom, resting on the ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [
+          "the picture is far from square"
+        ],
+        "picture_box": [
+          1267,
+          36,
+          1596,
+          923
+        ],
+        "picture_shape": 0.37,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Mop",
+        "shows": "mop",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/mop.webp"
+    },
+    "job_2026_10_07_01_1_01_c3": {
+      "thing_id": "sponge",
+      "expected_thing": "sponge",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_01_1_01_c3.png",
+      "master_size": [
+        904,
+        904
+      ],
+      "master_sha256": "2d82d1f72503b2efbef5fba0e82de958bfc4d52287482ef1e422ab907b778e09",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_01_1_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_01_1_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Sponge: A whole rectangular yellow-and-green synthetic sponge, soft and full of small holes, resting on the ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          102,
+          1212,
+          881,
+          1726
+        ],
+        "picture_shape": 1.52,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Sponge",
+        "shows": "sponge",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/sponge.webp"
+    },
+    "job_2026_10_07_01_1_01_c4": {
+      "thing_id": "broom",
+      "expected_thing": "broom",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_01_1_01_c4.png",
+      "master_size": [
+        1012,
+        1012
+      ],
+      "master_sha256": "4e68d09c7d196aaeae1e7a7f0ce99ac6d17f092e318a76d8ca1a6a728490446f",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_01_1_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_01_1_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Broom: A whole Indian broom: a long straight wooden stick handle with a thick bundle of stiff golden-brown grass fibres tied at the bottom, fanning out flat, resting on plain ground; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [
+          "the picture is far from square"
+        ],
+        "picture_box": [
+          1221,
+          991,
+          1653,
+          1863
+        ],
+        "picture_shape": 0.5,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Broom",
+        "shows": "broom",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "among": [
+          "job_2026_10_07_01_1_01_c1",
+          "job_2026_10_07_01_1_01_c4"
+        ],
+        "chosen": true,
+        "why": "Its larger, clearly defined brush head makes the broom shape easy to recognize at a glance.",
+        "cost_usd": 0.00012
+      },
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/broom.webp"
     }
   }
 }

@@ -17886,6 +17886,17 @@
         "say": "Broom",
         "checked_by_ear": false,
         "clip": null
+      },
+      "picture": {
+        "tile": "job_2026_10_07_01_1_01_c4",
+        "game_file": "Assets/pictures/broom.webp",
+        "game_sha256": "93f315ebefbf3bee64035d46a4ac507b34d18f2dff0177611676e7ed2a813d72",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_07_01_1_01_c4.png",
+        "master_sha256": "96fbb68808bfc4f248d0e6da0e15dbd758e1a6de621b4bc0ce7e3ff783fc3791",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-07",
+        "other_tries": 1
       }
     },
     "mop": {
@@ -17969,6 +17980,17 @@
         "say": "Mop",
         "checked_by_ear": false,
         "clip": null
+      },
+      "picture": {
+        "tile": "job_2026_10_07_01_1_01_c2",
+        "game_file": "Assets/pictures/mop.webp",
+        "game_sha256": "ee4eb63762f956354f9f3c5343823912b56e18cc71e1bee14d32869f45a777f0",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_07_01_1_01_c2.png",
+        "master_sha256": "c0534c29c6665c344341f26fd52592e1b895a68acafb70f309440198581d48d9",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-07",
+        "other_tries": 0
       }
     },
     "sponge": {
@@ -18052,6 +18074,17 @@
         "say": "Sponge",
         "checked_by_ear": false,
         "clip": null
+      },
+      "picture": {
+        "tile": "job_2026_10_07_01_1_01_c3",
+        "game_file": "Assets/pictures/sponge.webp",
+        "game_sha256": "de1496c22fd0f8d7d1826930838ef1d234d0afd559239e7aa61b54eec40ff7ac",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_07_01_1_01_c3.png",
+        "master_sha256": "deff3df72114d7a0abc51cdeea25b8912f91789c29e38c2eefb0a9c0b2e35316",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-07",
+        "other_tries": 0
       }
     }
   },
@@ -18099,7 +18132,7 @@
           "made_by_people": {
             "label": "Things people make",
             "things": 60,
-            "with_picture": 57
+            "with_picture": 60
           }
         },
         "open_by_its_things": true,
@@ -18564,7 +18597,7 @@
           "household": {
             "label": "Things in the house",
             "things": 22,
-            "with_picture": 19
+            "with_picture": 22
           },
           "tool": {
             "label": "Tools",
@@ -18687,7 +18720,7 @@
           "cleaning": {
             "label": "Things to clean with",
             "things": 8,
-            "with_picture": 5
+            "with_picture": 8
           },
           "electric": {
             "label": "Things that run on electricity",
@@ -18772,7 +18805,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "catalogue.py refresh",
+    "by": "job run 2026-10-07-01",
     "on": "2026-10-07"
   }
 }

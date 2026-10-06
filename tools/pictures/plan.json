@@ -2534,6 +2534,35 @@
           "draw": "An Indian houseboat: a wide wooden boat with a flat roof, small windows, and a raised curved front, floating on calm water, painted in natural browns and greens"
         }
       ]
+    },
+    "job_2026_10_07_01_1": {
+      "purpose": "drawn by the job, run 2026-10-07-01",
+      "grid": 2,
+      "size": 1920,
+      "only_for_this_sheet": "Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.",
+      "cells": [
+        {
+          "thing": "broom",
+          "name": "Broom",
+          "draw": "A whole Indian broom: a long straight wooden stick handle with a thick bundle of stiff golden-brown grass fibres tied at the bottom, fanning out flat, resting on plain ground"
+        },
+        {
+          "thing": "mop",
+          "name": "Mop",
+          "draw": "A floor mop with a long wooden stick and a thick bundle of grey strings at the bottom, resting on the ground"
+        },
+        {
+          "thing": "sponge",
+          "name": "Sponge",
+          "draw": "A whole rectangular yellow-and-green synthetic sponge, soft and full of small holes, resting on the ground"
+        },
+        {
+          "thing": "broom",
+          "name": "Broom",
+          "draw": "A whole Indian broom: a long straight wooden stick handle with a thick bundle of stiff golden-brown grass fibres tied at the bottom, fanning out flat, resting on plain ground; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        }
+      ]
     }
   }
 }

@@ -32,13 +32,7 @@
       "level": 2
     }
   },
-  "proposals": [
-    "nature_not_alive/sky",
-    "nature_not_alive/water",
-    "nature_not_alive/land",
-    "nature_not_alive/ground",
-    "animal/mammal"
-  ],
+  "proposals": [],
   "circles": {
     "seed": {
       "label": "Everything",
@@ -83,6 +77,13 @@
           "what": "back with the rules, by the owner's ruling of 7 Oct 2026",
           "why": "he held a field proposed to him; fields are now proposed by the model and decided by four tests, and every circle one step from an open board is to be prepared",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-01",
+          "why": "\"What is its body covered with?\": not every thing has one value: Cow - it fits more than one group: short_hair and spotted_patchy; Tiger - it fits more than one group: fur and spotted_patchy; Horse - it fits more than one group: short_hair and spotted_patchy; Goat - the proposer put it in 'short_hair', both checks in 'fur'; \"What kind of tail does it have?\": not every thing has one value: Elephant - the two checks disagree: 'no_tail' and 'short_tail'; Dog - the proposer put it in 'long_tail', both checks in 'short_tail'; Lion - the proposer put it in 'long_tail', both checks in 'tuft_tail'; \"What do its legs look like?\": not every thing has one value: Elephant - it fits no group; Monkey - it fits no group; Rabbit - it fits no group; Giraffe - the proposer put it in 'hooves', both checks in 'long_legs'; \"What kind of feet does it have?\": not every thing has one value: Rabbit - the proposer put it in 'big_round_feet', both checks in 'paws'; \"What kind of ears does it have?\": not every thing has one value: Cow - the two checks disagree: 'floppy_ears' and 'small_ears'; Dog - the proposer put it in 'pointy_ears', both checks in 'floppy_ears'; Lion - the proposer put it in 'pointy_ears', both checks in 'small_ears'; Tiger - the proposer put it in 'pointy_ears', both checks in 'small_ears'; Horse - the proposer put it in 'small_ears', both checks in 'pointy_ears'; Rabbit - the proposer put it in 'floppy_ears', both checks in 'long_neck_ears'; \"What is its body covered with?\": not every thing has one value: Cow - it fits more than one group: short_hair and spotted_patchy; Elephant - the proposer put it in 'short_hair', both checks in 'wrinkly_skin'; Goat - the proposer put it in 'short_hair', both checks in 'fur'",
+          "members_then": 12,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -93,7 +94,8 @@
       },
       "score": 3.8,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What is its body covered with?\": not every thing has one value: Cow - it fits more than one group: short_hair and spotted_patchy; Tiger - it fits more than one group: fur and spotted_patchy; Horse - it fits more than one group: short_hair and spotted_patchy; Goat - the proposer put it in 'short_hair', both checks in 'fur'; \"What kind of tail does it have?\": not every thing has one value: Elephant - the two checks disagree: 'no_tail' and 'short_tail'; Dog - the proposer put it in 'long_tail', both checks in 'short_tail'; Lion - the proposer put it in 'long_tail', both checks in 'tuft_tail'; \"What do its legs look like?\": not every thing has one value: Elephant - it fits no group; Monkey - it fits no group; Rabbit - it fits no group; Giraffe - the proposer put it in 'hooves', both checks in 'long_legs'; \"What kind of feet does it have?\": not every thing has one value: Rabbit - the proposer put it in 'big_round_feet', both checks in 'paws'; \"What kind of ears does it have?\": not every thing has one value: Cow - the two checks disagree: 'floppy_ears' and 'small_ears'; Dog - the proposer put it in 'pointy_ears', both checks in 'floppy_ears'; Lion - the proposer put it in 'pointy_ears', both checks in 'small_ears'; Tiger - the proposer put it in 'pointy_ears', both checks in 'small_ears'; Horse - the proposer put it in 'small_ears', both checks in 'pointy_ears'; Rabbit - the proposer put it in 'floppy_ears', both checks in 'long_neck_ears'; \"What is its body covered with?\": not every thing has one value: Cow - it fits more than one group: short_hair and spotted_patchy; Elephant - the proposer put it in 'short_hair', both checks in 'wrinkly_skin'; Goat - the proposer put it in 'short_hair', both checks in 'fur'"
     },
     "animal/bird": {
       "label": "Birds",
@@ -105,7 +107,15 @@
         "field": "no field splits it four ways",
         "things": 6
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-01",
+          "why": "\"Where does this bird live?\": not every thing has one value: Crow - it fits more than one group: in_trees and on_farms; Duck - it fits more than one group: in_water and on_farms; Peacock - it fits more than one group: in_trees and on_farms; Owl - the proposer put it in 'in_mountains', both checks in 'in_trees'; \"What color is this bird?\": not every thing has one value: Pigeon - it fits more than one group; Hen - it fits more than one group; Duck - it fits more than one group; Peacock - it fits more than one group; Penguin - it fits more than one group: black and white; Owl - the proposer put it in 'white', both checks in 'brown'; \"What does this bird eat?\": not every thing has one value: Crow - it fits more than one group: meat and seeds and fruits; Parrot - it fits more than one group: seeds and fruits; Hen - it fits more than one group: seeds and meat; Duck - it fits more than one group: seeds and meat; Peacock - it fits more than one group: seeds and meat; Eagle - it fits more than one group: meat and fish; Penguin - it fits more than one group: fish and meat; \"Is this bird big or small?\": not every thing has one value: Peacock - the two checks disagree: 'very_big' and 'big'; Crow - the proposer put it in 'small', both checks in 'big'; \"What shape is this bird?\": not every thing has one value: Eagle - it fits no group; Parrot - the proposer put it in 'long_tail', both checks in 'round_body'; Duck - the proposer put it in 'long_neck', both checks in 'round_body'; Peacock - the proposer put it in 'long_neck', both checks in 'long_tail'; \"Does this bird have long legs or short legs?\": not every thing has one value: Pigeon - the proposer put it in 'short_legs', both checks in 'very_short_legs'; Hen - the proposer put it in 'long_legs', both checks in 'short_legs'; Duck - the proposer put it in 'long_legs', both checks in 'very_short_legs'; Peacock - the proposer put it in 'very_long_legs', both checks in 'long_legs'; Sparrow - the proposer put it in 'short_legs', both checks in 'very_short_legs'",
+          "members_then": 10,
+          "status": "held by the rules"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
         "neglect": 0.33,
@@ -114,7 +124,8 @@
       },
       "score": 3.7,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"Where does this bird live?\": not every thing has one value: Crow - it fits more than one group: in_trees and on_farms; Duck - it fits more than one group: in_water and on_farms; Peacock - it fits more than one group: in_trees and on_farms; Owl - the proposer put it in 'in_mountains', both checks in 'in_trees'; \"What color is this bird?\": not every thing has one value: Pigeon - it fits more than one group; Hen - it fits more than one group; Duck - it fits more than one group; Peacock - it fits more than one group; Penguin - it fits more than one group: black and white; Owl - the proposer put it in 'white', both checks in 'brown'; \"What does this bird eat?\": not every thing has one value: Crow - it fits more than one group: meat and seeds and fruits; Parrot - it fits more than one group: seeds and fruits; Hen - it fits more than one group: seeds and meat; Duck - it fits more than one group: seeds and meat; Peacock - it fits more than one group: seeds and meat; Eagle - it fits more than one group: meat and fish; Penguin - it fits more than one group: fish and meat; \"Is this bird big or small?\": not every thing has one value: Peacock - the two checks disagree: 'very_big' and 'big'; Crow - the proposer put it in 'small', both checks in 'big'; \"What shape is this bird?\": not every thing has one value: Eagle - it fits no group; Parrot - the proposer put it in 'long_tail', both checks in 'round_body'; Duck - the proposer put it in 'long_neck', both checks in 'round_body'; Peacock - the proposer put it in 'long_neck', both checks in 'long_tail'; \"Does this bird have long legs or short legs?\": not every thing has one value: Pigeon - the proposer put it in 'short_legs', both checks in 'very_short_legs'; Hen - the proposer put it in 'long_legs', both checks in 'short_legs'; Duck - the proposer put it in 'long_legs', both checks in 'very_short_legs'; Peacock - the proposer put it in 'very_long_legs', both checks in 'long_legs'; Sparrow - the proposer put it in 'short_legs', both checks in 'very_short_legs'"
     },
     "animal/fish": {
       "label": "Fish",
@@ -126,7 +137,15 @@
         "field": "no field splits it four ways",
         "things": 11
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-01",
+          "why": "\"What shape is the fish?\": not every thing has one value: Catla fish - the two checks disagree: 'long_like_a_stick' and 'round_like_a_ball'; Goldfish - the proposer put it in 'round_like_a_ball', both checks in 'small_and_colorful'; Shark - the proposer put it in 'flat_like_a_plate', both checks in 'long_like_a_stick'; \"Is the fish big or small?\": not every thing has one value: Rohu fish - the proposer put it in 'very_big', both checks in 'big'; Catla fish - the proposer put it in 'very_big', both checks in 'big'; \"What color is the fish?\": not every value has four familiar things: 'Orange fish' has 3, 'Silver or grey fish' has 3, 'Blue fish' has 2, 'Yellow fish' has 1; \"What shape is the fish?\": not every thing has one value: Catla fish - the proposer put it in 'long_and_thin', both checks in 'round_and_plump'; Shark - the proposer put it in 'flat_and_wide', both checks in 'long_and_thin'; \"Is the fish big or small?\": not every thing has one value: Catla fish - the proposer put it in 'very_big', both checks in 'big'; \"What color is the fish?\": not every value has four familiar things: 'Silver or grey' has 3, 'Blue' has 2",
+          "members_then": 5,
+          "status": "held by the rules"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
         "neglect": 0.33,
@@ -135,7 +154,8 @@
       },
       "score": 3.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What shape is the fish?\": not every thing has one value: Catla fish - the two checks disagree: 'long_like_a_stick' and 'round_like_a_ball'; Goldfish - the proposer put it in 'round_like_a_ball', both checks in 'small_and_colorful'; Shark - the proposer put it in 'flat_like_a_plate', both checks in 'long_like_a_stick'; \"Is the fish big or small?\": not every thing has one value: Rohu fish - the proposer put it in 'very_big', both checks in 'big'; Catla fish - the proposer put it in 'very_big', both checks in 'big'; \"What color is the fish?\": not every value has four familiar things: 'Orange fish' has 3, 'Silver or grey fish' has 3, 'Blue fish' has 2, 'Yellow fish' has 1; \"What shape is the fish?\": not every thing has one value: Catla fish - the proposer put it in 'long_and_thin', both checks in 'round_and_plump'; Shark - the proposer put it in 'flat_and_wide', both checks in 'long_and_thin'; \"Is the fish big or small?\": not every thing has one value: Catla fish - the proposer put it in 'very_big', both checks in 'big'; \"What color is the fish?\": not every value has four familiar things: 'Silver or grey' has 3, 'Blue' has 2"
     },
     "animal/insect": {
       "label": "Insects",
@@ -147,7 +167,15 @@
         "field": "no field splits it four ways",
         "things": 8
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-01",
+          "why": "\"Where do you find this insect?\": not every thing has one value: Butterfly - it fits more than one group: in_air and on_plants; Mosquito - it fits more than one group: in_air and in_water; Honeybee - it fits more than one group: in_air and on_plants; Grasshopper - it fits more than one group: on_ground and on_plants; Ladybug - the proposer put it in 'in_air', both checks in 'on_plants'; \"How many legs does it have?\": not every value has four familiar things: 'Eight legs' has 0, 'Many legs' has 0, 'No legs' has 0; \"What does this insect eat?\": not every thing has one value: Ant - it fits more than one group: nectar and other_insects; Housefly - it fits more than one group: nectar and other_insects; Mosquito - it fits more than one group: nectar and blood; Cockroach - it fits more than one group: plants and other_insects; Ladybug - the proposer put it in 'plants', both checks in 'other_insects'; \"Where do you see this insect?\": not every thing has one value: Butterfly - it fits more than one group: in_air and on_plants; Honeybee - it fits more than one group: in_air and on_plants; Grasshopper - it fits more than one group: on_ground and on_plants; \"How does this insect move?\": not every thing has one value: Ladybug - it fits more than one group: flies and crawls; \"What is on this insect's body?\": not every thing has one value: Grasshopper - it fits more than one group: wings and long_legs; Ladybug - it fits more than one group: wings and hard_shell; Cockroach - the proposer put it in 'hard_shell', both checks in 'many_legs'",
+          "members_then": 8,
+          "status": "held by the rules"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
         "neglect": 0.33,
@@ -156,7 +184,8 @@
       },
       "score": 3.7,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"Where do you find this insect?\": not every thing has one value: Butterfly - it fits more than one group: in_air and on_plants; Mosquito - it fits more than one group: in_air and in_water; Honeybee - it fits more than one group: in_air and on_plants; Grasshopper - it fits more than one group: on_ground and on_plants; Ladybug - the proposer put it in 'in_air', both checks in 'on_plants'; \"How many legs does it have?\": not every value has four familiar things: 'Eight legs' has 0, 'Many legs' has 0, 'No legs' has 0; \"What does this insect eat?\": not every thing has one value: Ant - it fits more than one group: nectar and other_insects; Housefly - it fits more than one group: nectar and other_insects; Mosquito - it fits more than one group: nectar and blood; Cockroach - it fits more than one group: plants and other_insects; Ladybug - the proposer put it in 'plants', both checks in 'other_insects'; \"Where do you see this insect?\": not every thing has one value: Butterfly - it fits more than one group: in_air and on_plants; Honeybee - it fits more than one group: in_air and on_plants; Grasshopper - it fits more than one group: on_ground and on_plants; \"How does this insect move?\": not every thing has one value: Ladybug - it fits more than one group: flies and crawls; \"What is on this insect's body?\": not every thing has one value: Grasshopper - it fits more than one group: wings and long_legs; Ladybug - it fits more than one group: wings and hard_shell; Cockroach - the proposer put it in 'hard_shell', both checks in 'many_legs'"
     },
     "animal/reptile": {
       "label": "Reptiles",
@@ -173,6 +202,13 @@
           "date": "2026-10-06",
           "what": "probed reptile names after recalibrating the familiarity check",
           "why": "familiar: gecko, garden lizard, sea turtle, alligator; unfamiliar: iguana, komodo dragon, star tortoise, gharial. Lizards can reach four; turtles would be one short and crocodiles two short"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-01",
+          "why": "\"What is its body covered with?\": not every thing has one value: Tortoise - it fits more than one group: dry_scaly_skin and hard_shell; Turtle - it fits more than one group: dry_scaly_skin and hard_shell; Crocodile - the proposer put it in 'rough_bumpy_skin', both checks in 'dry_scaly_skin'; Titanoboa - the proposer put it in 'smooth_wet_skin', both checks in 'dry_scaly_skin'; Vasuki indicus - the proposer put it in 'smooth_wet_skin', both checks in 'dry_scaly_skin'; \"How many legs does it have?\": not every value has four familiar things: 'Two legs' has 0, 'Many legs' has 0; \"Where does it live?\": not every thing has one value: Crocodile - it fits more than one group: in_water and on_land; Turtle - it fits more than one group: in_water and on_land; Anaconda - it fits more than one group: in_water and on_land; Titanoboa - it fits more than one group: in_water and on_land; Vasuki indicus - it fits more than one group: in_water and on_land; Chameleon - the proposer put it in 'on_land', both checks in 'in_trees'; \"What is its body like?\": not every value has four familiar things: 'Four legs and big jaws' has 3; \"What is its tail like?\": not every thing has one value: Monitor lizard - the two checks disagree: 'thick_heavy_tail' and 'long_thin_tail'; Anaconda - the proposer put it in 'long_thin_tail', both checks in 'thick_heavy_tail'; Python - the proposer put it in 'long_thin_tail', both checks in 'thick_heavy_tail'; Titanoboa - the proposer put it in 'long_thin_tail', both checks in 'thick_heavy_tail'; Vasuki indicus - the proposer put it in 'long_thin_tail', both checks in 'thick_heavy_tail'; \"What is its mouth like?\": not every thing has one value: Chameleon - the two checks disagree: 'small_mouth' and 'wide_mouth'; Crocodile - the proposer put it in 'long_snout', both checks in 'wide_mouth'; Tortoise - the proposer put it in 'small_mouth', both checks in 'beak_like_mouth'; Turtle - the proposer put it in 'small_mouth', both checks in 'beak_like_mouth'; Monitor lizard - the proposer put it in 'long_snout', both checks in 'wide_mouth'",
+          "members_then": 12,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -183,7 +219,8 @@
       },
       "score": 3.8,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What is its body covered with?\": not every thing has one value: Tortoise - it fits more than one group: dry_scaly_skin and hard_shell; Turtle - it fits more than one group: dry_scaly_skin and hard_shell; Crocodile - the proposer put it in 'rough_bumpy_skin', both checks in 'dry_scaly_skin'; Titanoboa - the proposer put it in 'smooth_wet_skin', both checks in 'dry_scaly_skin'; Vasuki indicus - the proposer put it in 'smooth_wet_skin', both checks in 'dry_scaly_skin'; \"How many legs does it have?\": not every value has four familiar things: 'Two legs' has 0, 'Many legs' has 0; \"Where does it live?\": not every thing has one value: Crocodile - it fits more than one group: in_water and on_land; Turtle - it fits more than one group: in_water and on_land; Anaconda - it fits more than one group: in_water and on_land; Titanoboa - it fits more than one group: in_water and on_land; Vasuki indicus - it fits more than one group: in_water and on_land; Chameleon - the proposer put it in 'on_land', both checks in 'in_trees'; \"What is its body like?\": not every value has four familiar things: 'Four legs and big jaws' has 3; \"What is its tail like?\": not every thing has one value: Monitor lizard - the two checks disagree: 'thick_heavy_tail' and 'long_thin_tail'; Anaconda - the proposer put it in 'long_thin_tail', both checks in 'thick_heavy_tail'; Python - the proposer put it in 'long_thin_tail', both checks in 'thick_heavy_tail'; Titanoboa - the proposer put it in 'long_thin_tail', both checks in 'thick_heavy_tail'; Vasuki indicus - the proposer put it in 'long_thin_tail', both checks in 'thick_heavy_tail'; \"What is its mouth like?\": not every thing has one value: Chameleon - the two checks disagree: 'small_mouth' and 'wide_mouth'; Crocodile - the proposer put it in 'long_snout', both checks in 'wide_mouth'; Tortoise - the proposer put it in 'small_mouth', both checks in 'beak_like_mouth'; Turtle - the proposer put it in 'small_mouth', both checks in 'beak_like_mouth'; Monitor lizard - the proposer put it in 'long_snout', both checks in 'wide_mouth'"
     },
     "animal/amphibian": {
       "label": "Amphibians",
@@ -364,6 +401,13 @@
           "what": "back with the rules, by the owner's ruling of 7 Oct 2026",
           "why": "he held a field proposed to him; fields are now proposed by the model and decided by four tests, and every circle one step from an open board is to be prepared",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-01",
+          "why": "\"What shape are the leaves?\": not every thing has one value: Neem tree - the two checks disagree: 'long_pointy' and 'small_round'; \"What is the trunk like?\": it is not a new field: it splits these things the way 'tree_academic' already does; \"What kind of fruit does it give?\": not every value has four familiar things: 'Big juicy fruit' has 1, 'Soft sweet fruit' has 1, 'Hard shell fruit' has 1, 'Small bitter fruit' has 1; \"What shape are the leaves?\": not every thing has one value: Neem tree - the proposer put it in 'long_pointy', both checks in 'small_round'; \"What is the trunk like?\": not every thing has one value: Banana plant - it fits more than one group: smooth_green and no_trunk; \"What kind of fruit does it give?\": not every value has four familiar things: 'Big juicy fruit' has 1, 'Soft sweet fruit' has 1, 'Hard shell fruit' has 1, 'Small bitter fruit' has 1",
+          "members_then": 4,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -374,7 +418,8 @@
       },
       "score": 3.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What shape are the leaves?\": not every thing has one value: Neem tree - the two checks disagree: 'long_pointy' and 'small_round'; \"What is the trunk like?\": it is not a new field: it splits these things the way 'tree_academic' already does; \"What kind of fruit does it give?\": not every value has four familiar things: 'Big juicy fruit' has 1, 'Soft sweet fruit' has 1, 'Hard shell fruit' has 1, 'Small bitter fruit' has 1; \"What shape are the leaves?\": not every thing has one value: Neem tree - the proposer put it in 'long_pointy', both checks in 'small_round'; \"What is the trunk like?\": not every thing has one value: Banana plant - it fits more than one group: smooth_green and no_trunk; \"What kind of fruit does it give?\": not every value has four familiar things: 'Big juicy fruit' has 1, 'Soft sweet fruit' has 1, 'Hard shell fruit' has 1, 'Small bitter fruit' has 1"
     },
     "plant/flower": {
       "label": "Flowers",
@@ -399,6 +444,13 @@
           "what": "back with the rules, by the owner's ruling of 7 Oct 2026",
           "why": "he held a field proposed to him; fields are now proposed by the model and decided by four tests, and every circle one step from an open board is to be prepared",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-01",
+          "why": "\"What shape is the flower?\": not every thing has one value: Marigold - the two checks disagree: 'round_puff' and 'many_petals'; Lotus - the proposer put it in 'cup_shape', both checks in 'many_petals'; \"What color is the flower?\": not every thing has one value: Lotus - it fits more than one group: red and white; \"How big is the flower?\": not every thing has one value: Marigold - the proposer put it in 'medium', both checks in 'small'; \"How many petals does the flower have?\": not every thing has one value: Sunflower - the proposer put it in 'no_petals', both checks in 'many_petals'; Lotus - the proposer put it in 'few_petals', both checks in 'many_petals'; \"What shape is the flower?\": not every thing has one value: Rose - it fits more than one group; Lotus - it fits more than one group; Sunflower - the proposer put it in 'flat', both checks in 'round'; \"Does the flower smell nice?\": not every thing has one value: Lotus - the proposer put it in 'very_fragrant', both checks in 'mildly_fragrant'; Marigold - the proposer put it in 'mildly_fragrant', both checks in 'bad_smell'",
+          "members_then": 4,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -409,7 +461,8 @@
       },
       "score": 3.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What shape is the flower?\": not every thing has one value: Marigold - the two checks disagree: 'round_puff' and 'many_petals'; Lotus - the proposer put it in 'cup_shape', both checks in 'many_petals'; \"What color is the flower?\": not every thing has one value: Lotus - it fits more than one group: red and white; \"How big is the flower?\": not every thing has one value: Marigold - the proposer put it in 'medium', both checks in 'small'; \"How many petals does the flower have?\": not every thing has one value: Sunflower - the proposer put it in 'no_petals', both checks in 'many_petals'; Lotus - the proposer put it in 'few_petals', both checks in 'many_petals'; \"What shape is the flower?\": not every thing has one value: Rose - it fits more than one group; Lotus - it fits more than one group; Sunflower - the proposer put it in 'flat', both checks in 'round'; \"Does the flower smell nice?\": not every thing has one value: Lotus - the proposer put it in 'very_fragrant', both checks in 'mildly_fragrant'; Marigold - the proposer put it in 'mildly_fragrant', both checks in 'bad_smell'"
     },
     "plant/grass_grain": {
       "label": "Grasses and grains",
@@ -434,6 +487,13 @@
           "what": "back with the rules, by the owner's ruling of 7 Oct 2026",
           "why": "he held a field proposed to him; fields are now proposed by the model and decided by four tests, and every circle one step from an open board is to be prepared",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-01",
+          "why": "\"How tall does it grow?\": not every thing has one value: Grass - it fits more than one group: short and medium; Rice plant - the proposer put it in 'tall', both checks in 'medium'; Wheat - the proposer put it in 'tall', both checks in 'medium'; \"What is its stem like?\": not every value has four familiar things: 'Woody stem, hard like a tree' has 1, 'Thick soft stem, like a sugarcane' has 1, 'Thin stem, like a wheat plant' has 2, 'Very thin stem, like grass' has 1; \"Does it give us grains?\": not every value has four familiar things: 'Yes, it gives grains' has 3, 'No, but we get sugar from it' has 1, 'No, but we get wood from it' has 1, 'No, it gives no grains, sugar or wood' has 1; \"What is its stem like?\": not every value has four familiar things: 'Woody stem, hard like a tree' has 1, 'Thick soft stem, like a sugarcane' has 1, 'Thin stem, like a wheat plant' has 2, 'Very thin stem, like grass' has 2; \"What is its leaf like?\": not every thing has one value: Bamboo - the proposer put it in 'small_leaves', both checks in 'long_thin_leaves'; \"What kind of plant is it?\": it is not a new field: it asks the same question as 'kind_of_plant': \"What kind of plant is it?\"",
+          "members_then": 5,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -444,7 +504,8 @@
       },
       "score": 3.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"How tall does it grow?\": not every thing has one value: Grass - it fits more than one group: short and medium; Rice plant - the proposer put it in 'tall', both checks in 'medium'; Wheat - the proposer put it in 'tall', both checks in 'medium'; \"What is its stem like?\": not every value has four familiar things: 'Woody stem, hard like a tree' has 1, 'Thick soft stem, like a sugarcane' has 1, 'Thin stem, like a wheat plant' has 2, 'Very thin stem, like grass' has 1; \"Does it give us grains?\": not every value has four familiar things: 'Yes, it gives grains' has 3, 'No, but we get sugar from it' has 1, 'No, but we get wood from it' has 1, 'No, it gives no grains, sugar or wood' has 1; \"What is its stem like?\": not every value has four familiar things: 'Woody stem, hard like a tree' has 1, 'Thick soft stem, like a sugarcane' has 1, 'Thin stem, like a wheat plant' has 2, 'Very thin stem, like grass' has 2; \"What is its leaf like?\": not every thing has one value: Bamboo - the proposer put it in 'small_leaves', both checks in 'long_thin_leaves'; \"What kind of plant is it?\": it is not a new field: it asks the same question as 'kind_of_plant': \"What kind of plant is it?\""
     },
     "plant/vegetable": {
       "label": "Vegetable plants",
@@ -592,6 +653,13 @@
           "what": "back with the rules, by the owner's ruling of 7 Oct 2026",
           "why": "he held a field proposed to him; fields are now proposed by the model and decided by four tests, and every circle one step from an open board is to be prepared",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-01",
+          "why": "\"What shape is it?\": not every thing has one value: Star - the proposer put it in 'round', both checks in 'pointy'; \"What colour is it?\": not every thing has one value: Star - it fits more than one group: yellow and white; \"When do we see it?\": not every thing has one value: Cloud - it fits more than one group: daytime and nighttime; \"How bright is it in the sky?\": not every thing has one value: Cloud - it fits more than one group: soft and no_light; Star - the two checks disagree: 'soft' and 'bright'; Moon - the proposer put it in 'bright', both checks in 'soft'; \"What is it made of?\": not every thing has one value: Sun - it fits more than one group; \"How far away is it?\": not every thing has one value: Cloud - it fits more than one group: far and near",
+          "members_then": 4,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -602,7 +670,8 @@
       },
       "score": 4.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What shape is it?\": not every thing has one value: Star - the proposer put it in 'round', both checks in 'pointy'; \"What colour is it?\": not every thing has one value: Star - it fits more than one group: yellow and white; \"When do we see it?\": not every thing has one value: Cloud - it fits more than one group: daytime and nighttime; \"How bright is it in the sky?\": not every thing has one value: Cloud - it fits more than one group: soft and no_light; Star - the two checks disagree: 'soft' and 'bright'; Moon - the proposer put it in 'bright', both checks in 'soft'; \"What is it made of?\": not every thing has one value: Sun - it fits more than one group; \"How far away is it?\": not every thing has one value: Cloud - it fits more than one group: far and near"
     },
     "nature_not_alive/water": {
       "label": "Water",
@@ -614,7 +683,15 @@
         "field": "no field splits it four ways",
         "things": 12
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-01",
+          "why": "\"How big is the water?\": not every thing has one value: Lake - the proposer put it in 'small', both checks in 'big'; Pond - the proposer put it in 'tiny', both checks in 'small'; \"Is the water still or moving?\": not every value has four familiar things: 'Wavy water' has 1, 'Falling water' has 2; \"Is the water salty or sweet?\": not every value has four familiar things: 'Salty water' has 1, 'Hot water' has 1; \"Is the water still or moving?\": not every thing has one value: Sea - it fits more than one group: big_still and moving; Lake - it fits more than one group: big_still and still; \"Is the water big or small?\": not every thing has one value: Sea - the proposer put it in 'big', both checks in 'huge'; River - the proposer put it in 'small', both checks in 'big'; \"Is the water salty or sweet?\": not every value has four familiar things: 'Salty water' has 2, 'Hot water' has 0, 'Cold water' has 1",
+          "members_then": 4,
+          "status": "held by the rules"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
         "neglect": 0.67,
@@ -623,7 +700,8 @@
       },
       "score": 4.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"How big is the water?\": not every thing has one value: Lake - the proposer put it in 'small', both checks in 'big'; Pond - the proposer put it in 'tiny', both checks in 'small'; \"Is the water still or moving?\": not every value has four familiar things: 'Wavy water' has 1, 'Falling water' has 2; \"Is the water salty or sweet?\": not every value has four familiar things: 'Salty water' has 1, 'Hot water' has 1; \"Is the water still or moving?\": not every thing has one value: Sea - it fits more than one group: big_still and moving; Lake - it fits more than one group: big_still and still; \"Is the water big or small?\": not every thing has one value: Sea - the proposer put it in 'big', both checks in 'huge'; River - the proposer put it in 'small', both checks in 'big'; \"Is the water salty or sweet?\": not every value has four familiar things: 'Salty water' has 2, 'Hot water' has 0, 'Cold water' has 1"
     },
     "nature_not_alive/land": {
       "label": "Places on land",
@@ -635,7 +713,15 @@
         "field": "no field splits it four ways",
         "things": 10
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-01",
+          "why": "\"What shape is the land here?\": not every value has four familiar things: 'Sandy shore' has 1, 'Hole in the ground' has 1; \"What is the ground made of?\": not every thing has one value: Hill - it fits more than one group: soil and grass; \"Is the land high up or low down?\": not every thing has one value: Beach - the proposer put it in 'low_down', both checks in 'water_edge'; \"What shape is the land?\": not every value has four familiar things: 'Flat open land' has 2, 'Hole in the ground' has 1; \"What is the land made of?\": not every value has four familiar things: 'Sand land' has 2, 'Ice land' has 1; \"Is the land high up or low down?\": not every thing has one value: Beach - the proposer put it in 'low_down', both checks in 'at_water_level'; Cave - the proposer put it in 'low_down', both checks in 'under_ground'",
+          "members_then": 6,
+          "status": "held by the rules"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
         "neglect": 0.67,
@@ -644,7 +730,8 @@
       },
       "score": 4.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What shape is the land here?\": not every value has four familiar things: 'Sandy shore' has 1, 'Hole in the ground' has 1; \"What is the ground made of?\": not every thing has one value: Hill - it fits more than one group: soil and grass; \"Is the land high up or low down?\": not every thing has one value: Beach - the proposer put it in 'low_down', both checks in 'water_edge'; \"What shape is the land?\": not every value has four familiar things: 'Flat open land' has 2, 'Hole in the ground' has 1; \"What is the land made of?\": not every value has four familiar things: 'Sand land' has 2, 'Ice land' has 1; \"Is the land high up or low down?\": not every thing has one value: Beach - the proposer put it in 'low_down', both checks in 'at_water_level'; Cave - the proposer put it in 'low_down', both checks in 'under_ground'"
     },
     "nature_not_alive/ground": {
       "label": "Rocks and soil",
@@ -656,7 +743,15 @@
         "field": "no field splits it four ways",
         "things": 11
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-01",
+          "why": "\"How big are the pieces you can see?\": not every thing has one value: Rock - it fits more than one group: big_single_pieces and hard_and_solid; \"What happens when you add water?\": not every thing has one value: Sand - the two checks disagree: 'stays_hard' and 'washes_away'; Clay - it fits more than one group: gets_sticky and gets_muddy; \"Where do you find it?\": not every value has four familiar things: 'In the water' has 0, 'In the sky' has 0, 'In the house' has 0; \"What is it made of?\": not every thing has one value: Mud - it fits more than one group: soft_wet_earth and sticky_when_wet; Soil - the proposer put it in 'hard_solid', both checks in 'soft_wet_earth'; \"How does it feel when you touch it?\": not every value has four familiar things: 'Rough and hard' has 3, 'Grainy' has 1, 'Soft and crumbly' has 3, 'Sticky and squishy' has 2; \"What happens when it dries?\": not every thing has one value: Soil - the two checks disagree: 'stays_the_same' and 'becomes_dusty'",
+          "members_then": 5,
+          "status": "held by the rules"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
         "neglect": 0.67,
@@ -665,7 +760,8 @@
       },
       "score": 4.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"How big are the pieces you can see?\": not every thing has one value: Rock - it fits more than one group: big_single_pieces and hard_and_solid; \"What happens when you add water?\": not every thing has one value: Sand - the two checks disagree: 'stays_hard' and 'washes_away'; Clay - it fits more than one group: gets_sticky and gets_muddy; \"Where do you find it?\": not every value has four familiar things: 'In the water' has 0, 'In the sky' has 0, 'In the house' has 0; \"What is it made of?\": not every thing has one value: Mud - it fits more than one group: soft_wet_earth and sticky_when_wet; Soil - the proposer put it in 'hard_solid', both checks in 'soft_wet_earth'; \"How does it feel when you touch it?\": not every value has four familiar things: 'Rough and hard' has 3, 'Grainy' has 1, 'Soft and crumbly' has 3, 'Sticky and squishy' has 2; \"What happens when it dries?\": not every thing has one value: Soil - the two checks disagree: 'stays_the_same' and 'becomes_dusty'"
     },
     "made_by_people": {
       "label": "Things people make",
@@ -793,7 +889,15 @@
         "field": "no field splits it four ways",
         "things": 9
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-01",
+          "why": "\"What do you do with it?\": not every thing has one value: Ball - it fits more than one group: throw and push; Kite - it fits no group; Balloon - it fits no group; \"How does it move?\": not every value has four familiar things: 'Flies in the air' has 3, 'Bounces and rolls' has 2; \"What is it made of?\": not every thing has one value: Doll - the proposer put it in 'soft', both checks in 'hard'; \"What shape is it?\": not every thing has one value: Kite - it fits no group; Toy car - the proposer put it in 'shaped_like_a_person_or_animal', both checks in 'boxy'; \"What color is it mostly?\": not every thing has one value: Ball - it fits more than one group; Doll - it fits more than one group; Toy car - it fits more than one group; Balloon - it fits more than one group; Building blocks - the proposer put it in 'brown', both checks in 'many_colors'; \"How do you play with it?\": not every thing has one value: Ball - it fits more than one group: throw_or_catch and push_or_roll; Building blocks - it fits no group; Balloon - it fits more than one group: throw_or_catch and hold_and_fly",
+          "members_then": 7,
+          "status": "held by the rules"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
         "neglect": 0.0,
@@ -802,7 +906,8 @@
       },
       "score": 2.6,
       "move": "deepening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"What do you do with it?\": not every thing has one value: Ball - it fits more than one group: throw and push; Kite - it fits no group; Balloon - it fits no group; \"How does it move?\": not every value has four familiar things: 'Flies in the air' has 3, 'Bounces and rolls' has 2; \"What is it made of?\": not every thing has one value: Doll - the proposer put it in 'soft', both checks in 'hard'; \"What shape is it?\": not every thing has one value: Kite - it fits no group; Toy car - the proposer put it in 'shaped_like_a_person_or_animal', both checks in 'boxy'; \"What color is it mostly?\": not every thing has one value: Ball - it fits more than one group; Doll - it fits more than one group; Toy car - it fits more than one group; Balloon - it fits more than one group; Building blocks - the proposer put it in 'brown', both checks in 'many_colors'; \"How do you play with it?\": not every thing has one value: Ball - it fits more than one group: throw_or_catch and push_or_roll; Building blocks - it fits no group; Balloon - it fits more than one group: throw_or_catch and hold_and_fly"
     },
     "made_by_people/household": {
       "label": "Things in the house",
@@ -933,6 +1038,13 @@
           "what": "back with the rules, by the owner's ruling of 7 Oct 2026",
           "why": "he held a field proposed to him; fields are now proposed by the model and decided by four tests, and every circle one step from an open board is to be prepared",
           "status": "released"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-01",
+          "why": "\"How do we move it to make it work?\": not every value has four familiar things: 'Swing it with our arm' has 2, 'Slide it back and forth' has 2, 'Turn it round and round' has 1; \"What is it made of?\": not every thing has one value: Hammer - it fits more than one group: metal and wood; Spade - it fits more than one group: metal and wood; Saw - it fits more than one group: metal and wood; Screwdriver - it fits more than one group: metal and wood; Axe - it fits more than one group: metal and wood; \"What shape is it?\": not every thing has one value: Spade - it fits more than one group: long_handle and flat_blade; \"What do we do with it?\": not every thing has one value: Axe - the proposer put it in 'hit_things', both checks in 'cut_things'; \"How do we hold it?\": not every thing has one value: Spade - it fits more than one group: one_hand_and_guide and two_hands; Saw - it fits more than one group: one_hand_and_guide and two_hands; Axe - it fits more than one group: one_hand_and_guide and two_hands; \"What does it look like?\": not every value has four familiar things: 'It has a handle and a tip' has 3",
+          "members_then": 5,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -943,7 +1055,8 @@
       },
       "score": 2.6,
       "move": "deepening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"How do we move it to make it work?\": not every value has four familiar things: 'Swing it with our arm' has 2, 'Slide it back and forth' has 2, 'Turn it round and round' has 1; \"What is it made of?\": not every thing has one value: Hammer - it fits more than one group: metal and wood; Spade - it fits more than one group: metal and wood; Saw - it fits more than one group: metal and wood; Screwdriver - it fits more than one group: metal and wood; Axe - it fits more than one group: metal and wood; \"What shape is it?\": not every thing has one value: Spade - it fits more than one group: long_handle and flat_blade; \"What do we do with it?\": not every thing has one value: Axe - the proposer put it in 'hit_things', both checks in 'cut_things'; \"How do we hold it?\": not every thing has one value: Spade - it fits more than one group: one_hand_and_guide and two_hands; Saw - it fits more than one group: one_hand_and_guide and two_hands; Axe - it fits more than one group: one_hand_and_guide and two_hands; \"What does it look like?\": not every value has four familiar things: 'It has a handle and a tip' has 3"
     },
     "made_by_people/building": {
       "label": "Buildings",
@@ -960,6 +1073,13 @@
           "date": "2026-10-06",
           "what": "the job prepared six buildings; the owner accepted Hospital, School and Temple, and ruled that Shop, Bridge and Tower count as buildings for this game",
           "why": "Buildings is now a group of seven on the board of things people make"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the rules found no field for it in job run 2026-10-07-01",
+          "why": "\"Who uses this building?\": not every thing has one value: Temple - the proposer put it in 'everyone', both checks in 'worshippers'; School - the proposer put it in 'everyone', both checks in 'children'; Hospital - the proposer put it in 'everyone', both checks in 'sick_people'; \"What happens inside this building?\": not every thing has one value: Temple - it fits no group; Bridge - it fits no group; Tower - it fits no group; \"What shape is this building?\": not every thing has one value: Temple - the proposer put it in 'pointy', both checks in 'boxy'; \"What is this building made of?\": not every thing has one value: House - it fits more than one group: brick_or_cement and wood_or_bamboo and mud_or_clay and stone_or_rock; Temple - it fits more than one group: stone_or_rock and brick_or_cement and wood_or_bamboo; School - it fits more than one group: brick_or_cement and wood_or_bamboo; Shop - it fits more than one group: brick_or_cement and wood_or_bamboo; Hospital - it fits more than one group; Bridge - it fits more than one group: stone_or_rock and brick_or_cement and wood_or_bamboo; Tower - it fits more than one group: stone_or_rock and brick_or_cement and wood_or_bamboo; \"What shape is the top of this building?\": not every thing has one value: House - it fits more than one group: pointy_roof and flat_roof; Temple - it fits more than one group: pointy_roof and flat_roof and round_roof; School - it fits more than one group: flat_roof and pointy_roof; Shop - it fits more than one group: flat_roof and pointy_roof; Bridge - it fits no group; Tower - it fits more than one group: pointy_roof and flat_roof and round_roof; \"How many floors does this building have?\": not every thing has one value: House - it fits more than one group: one_floor and two_floors and many_floors; Temple - it fits more than one group: one_floor and two_floors and many_floors; School - it fits more than one group: one_floor and two_floors and many_floors; Shop - it fits more than one group: one_floor and two_floors and many_floors; Hospital - it fits more than one group: one_floor and two_floors and many_floors; Tower - it fits more than one group: one_floor and two_floors and many_floors",
+          "members_then": 7,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -970,7 +1090,8 @@
       },
       "score": 2.6,
       "move": "deepening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: \"Who uses this building?\": not every thing has one value: Temple - the proposer put it in 'everyone', both checks in 'worshippers'; School - the proposer put it in 'everyone', both checks in 'children'; Hospital - the proposer put it in 'everyone', both checks in 'sick_people'; \"What happens inside this building?\": not every thing has one value: Temple - it fits no group; Bridge - it fits no group; Tower - it fits no group; \"What shape is this building?\": not every thing has one value: Temple - the proposer put it in 'pointy', both checks in 'boxy'; \"What is this building made of?\": not every thing has one value: House - it fits more than one group: brick_or_cement and wood_or_bamboo and mud_or_clay and stone_or_rock; Temple - it fits more than one group: stone_or_rock and brick_or_cement and wood_or_bamboo; School - it fits more than one group: brick_or_cement and wood_or_bamboo; Shop - it fits more than one group: brick_or_cement and wood_or_bamboo; Hospital - it fits more than one group; Bridge - it fits more than one group: stone_or_rock and brick_or_cement and wood_or_bamboo; Tower - it fits more than one group: stone_or_rock and brick_or_cement and wood_or_bamboo; \"What shape is the top of this building?\": not every thing has one value: House - it fits more than one group: pointy_roof and flat_roof; Temple - it fits more than one group: pointy_roof and flat_roof and round_roof; School - it fits more than one group: flat_roof and pointy_roof; Shop - it fits more than one group: flat_roof and pointy_roof; Bridge - it fits no group; Tower - it fits more than one group: pointy_roof and flat_roof and round_roof; \"How many floors does this building have?\": not every thing has one value: House - it fits more than one group: one_floor and two_floors and many_floors; Temple - it fits more than one group: one_floor and two_floors and many_floors; School - it fits more than one group: one_floor and two_floors and many_floors; Shop - it fits more than one group: one_floor and two_floors and many_floors; Hospital - it fits more than one group: one_floor and two_floors and many_floors; Tower - it fits more than one group: one_floor and two_floors and many_floors"
     }
   }
 }
