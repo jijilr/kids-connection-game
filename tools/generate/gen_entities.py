@@ -54,6 +54,13 @@ def prompt() -> str:
     return "\n".join(lines)
 
 
+def nice_name(name: str) -> str:
+    """Kid-facing display name: 'dog' -> 'Dog', 'komodo dragon' -> 'Komodo Dragon'.
+    Names that already start with a capital (e.g. 'Tyrannosaurus rex') are kept."""
+    name = name.strip()
+    return name if name[:1].isupper() else " ".join(w[:1].upper() + w[1:] for w in name.split())
+
+
 def slug(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_")
 
@@ -85,7 +92,7 @@ def to_entity(a: dict) -> dict | None:
                 tags.append(f"dino_kind:{k}")
         return {
             "id": slug(a["name"]),
-            "name": a["name"],
+            "name": nice_name(a["name"]),
             "domain": "animals",
             "tags": tags,
             "facts": [a["fact"]] if a.get("fact") else [],

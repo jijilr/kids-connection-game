@@ -2,7 +2,7 @@
   "entities": [
     {
       "id": "dog",
-      "name": "Dog",
+      "name": "dog",
       "domain": "animals",
       "tags": [
         "category:mammal",
@@ -15,13 +15,13 @@
       ],
       "recognizability": 0.95,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "cat",
-      "name": "Cat",
+      "name": "cat",
       "domain": "animals",
       "tags": [
         "category:mammal",
@@ -34,13 +34,13 @@
       ],
       "recognizability": 0.95,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "elephant",
-      "name": "Elephant",
+      "name": "elephant",
       "domain": "animals",
       "tags": [
         "category:mammal",
@@ -54,13 +54,13 @@
       ],
       "recognizability": 0.9,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "horse",
-      "name": "Horse",
+      "name": "horse",
       "domain": "animals",
       "tags": [
         "category:mammal",
@@ -74,13 +74,13 @@
       ],
       "recognizability": 0.85,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "cow",
-      "name": "Cow",
+      "name": "cow",
       "domain": "animals",
       "tags": [
         "category:mammal",
@@ -93,13 +93,13 @@
       ],
       "recognizability": 0.8,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "pig",
-      "name": "Pig",
+      "name": "pig",
       "domain": "animals",
       "tags": [
         "category:mammal",
@@ -113,13 +113,13 @@
       ],
       "recognizability": 0.8,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "lion",
-      "name": "Lion",
+      "name": "lion",
       "domain": "animals",
       "tags": [
         "category:mammal",
@@ -132,13 +132,13 @@
       ],
       "recognizability": 0.9,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "tiger",
-      "name": "Tiger",
+      "name": "tiger",
       "domain": "animals",
       "tags": [
         "category:mammal",
@@ -152,13 +152,13 @@
       ],
       "recognizability": 0.85,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "bear",
-      "name": "Bear",
+      "name": "bear",
       "domain": "animals",
       "tags": [
         "category:mammal",
@@ -172,13 +172,13 @@
       ],
       "recognizability": 0.85,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "whale",
-      "name": "Whale",
+      "name": "whale",
       "domain": "animals",
       "tags": [
         "category:mammal",
@@ -192,13 +192,13 @@
       ],
       "recognizability": 0.8,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "dolphin",
-      "name": "Dolphin",
+      "name": "dolphin",
       "domain": "animals",
       "tags": [
         "category:mammal",
@@ -212,18 +212,19 @@
       ],
       "recognizability": 0.85,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "bat",
-      "name": "Bat",
+      "name": "bat",
       "domain": "animals",
       "tags": [
         "category:mammal",
         "size:tiny",
         "habitat:land",
+        "diet:carnivore",
         "flies"
       ],
       "facts": [
@@ -231,33 +232,33 @@
       ],
       "recognizability": 0.7,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "eagle",
-      "name": "Eagle",
+      "name": "eagle",
       "domain": "animals",
       "tags": [
         "category:bird",
+        "size:big",
         "habitat:land",
         "diet:carnivore",
-        "flies",
-        "size:big"
+        "flies"
       ],
       "facts": [
         "Eagles have very sharp eyesight and can spot prey from far away."
       ],
       "recognizability": 0.8,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "penguin",
-      "name": "Penguin",
+      "name": "penguin",
       "domain": "animals",
       "tags": [
         "category:bird",
@@ -271,13 +272,13 @@
       ],
       "recognizability": 0.85,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "parrot",
-      "name": "Parrot",
+      "name": "parrot",
       "domain": "animals",
       "tags": [
         "category:bird",
@@ -291,13 +292,13 @@
       ],
       "recognizability": 0.8,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "owl",
-      "name": "Owl",
+      "name": "owl",
       "domain": "animals",
       "tags": [
         "category:bird",
@@ -311,13 +312,13 @@
       ],
       "recognizability": 0.8,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "duck",
-      "name": "Duck",
+      "name": "duck",
       "domain": "animals",
       "tags": [
         "category:bird",
@@ -332,13 +333,13 @@
       ],
       "recognizability": 0.8,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "chicken",
-      "name": "Chicken",
+      "name": "chicken",
       "domain": "animals",
       "tags": [
         "category:bird",
@@ -351,18 +352,19 @@
       ],
       "recognizability": 0.8,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "flamingo",
-      "name": "Flamingo",
+      "name": "flamingo",
       "domain": "animals",
       "tags": [
         "category:bird",
         "size:big",
         "habitat:water",
+        "diet:herbivore",
         "flies",
         "swims"
       ],
@@ -371,18 +373,19 @@
       ],
       "recognizability": 0.7,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "swan",
-      "name": "Swan",
+      "name": "swan",
       "domain": "animals",
       "tags": [
         "category:bird",
         "size:big",
         "habitat:water",
+        "diet:herbivore",
         "flies",
         "swims"
       ],
@@ -391,13 +394,13 @@
       ],
       "recognizability": 0.7,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "robin",
-      "name": "Robin",
+      "name": "robin",
       "domain": "animals",
       "tags": [
         "category:bird",
@@ -411,13 +414,13 @@
       ],
       "recognizability": 0.6,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "goldfish",
-      "name": "Goldfish",
+      "name": "goldfish",
       "domain": "animals",
       "tags": [
         "category:fish",
@@ -431,13 +434,13 @@
       ],
       "recognizability": 0.8,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "clownfish",
-      "name": "Clownfish",
+      "name": "clownfish",
       "domain": "animals",
       "tags": [
         "category:fish",
@@ -451,13 +454,13 @@
       ],
       "recognizability": 0.8,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "shark",
-      "name": "Shark",
+      "name": "shark",
       "domain": "animals",
       "tags": [
         "category:fish",
@@ -471,13 +474,33 @@
       ],
       "recognizability": 0.9,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
+      }
+    },
+    {
+      "id": "blue_whale",
+      "name": "blue whale",
+      "domain": "animals",
+      "tags": [
+        "category:fish",
+        "size:huge",
+        "habitat:water",
+        "diet:carnivore",
+        "swims"
+      ],
+      "facts": [
+        "Blue whales are the largest animals ever, bigger than any dinosaur."
+      ],
+      "recognizability": 0.7,
+      "provenance": {
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "salmon",
-      "name": "Salmon",
+      "name": "salmon",
       "domain": "animals",
       "tags": [
         "category:fish",
@@ -491,13 +514,13 @@
       ],
       "recognizability": 0.6,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "seahorse",
-      "name": "Seahorse",
+      "name": "seahorse",
       "domain": "animals",
       "tags": [
         "category:fish",
@@ -511,13 +534,13 @@
       ],
       "recognizability": 0.7,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "pufferfish",
-      "name": "Pufferfish",
+      "name": "pufferfish",
       "domain": "animals",
       "tags": [
         "category:fish",
@@ -531,13 +554,13 @@
       ],
       "recognizability": 0.6,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "angelfish",
-      "name": "Angelfish",
+      "name": "angelfish",
       "domain": "animals",
       "tags": [
         "category:fish",
@@ -551,13 +574,13 @@
       ],
       "recognizability": 0.5,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "catfish",
-      "name": "Catfish",
+      "name": "catfish",
       "domain": "animals",
       "tags": [
         "category:fish",
@@ -571,13 +594,13 @@
       ],
       "recognizability": 0.5,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "trout",
-      "name": "Trout",
+      "name": "trout",
       "domain": "animals",
       "tags": [
         "category:fish",
@@ -591,13 +614,13 @@
       ],
       "recognizability": 0.5,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "butterfly",
-      "name": "Butterfly",
+      "name": "butterfly",
       "domain": "animals",
       "tags": [
         "category:insect",
@@ -611,13 +634,13 @@
       ],
       "recognizability": 0.9,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "bee",
-      "name": "Bee",
+      "name": "bee",
       "domain": "animals",
       "tags": [
         "category:insect",
@@ -631,13 +654,13 @@
       ],
       "recognizability": 0.85,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "ant",
-      "name": "Ant",
+      "name": "ant",
       "domain": "animals",
       "tags": [
         "category:insect",
@@ -650,13 +673,13 @@
       ],
       "recognizability": 0.8,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "ladybug",
-      "name": "Ladybug",
+      "name": "ladybug",
       "domain": "animals",
       "tags": [
         "category:insect",
@@ -670,13 +693,13 @@
       ],
       "recognizability": 0.8,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "grasshopper",
-      "name": "Grasshopper",
+      "name": "grasshopper",
       "domain": "animals",
       "tags": [
         "category:insect",
@@ -690,13 +713,13 @@
       ],
       "recognizability": 0.7,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "dragonfly",
-      "name": "Dragonfly",
+      "name": "dragonfly",
       "domain": "animals",
       "tags": [
         "category:insect",
@@ -710,13 +733,13 @@
       ],
       "recognizability": 0.7,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "cricket",
-      "name": "Cricket",
+      "name": "cricket",
       "domain": "animals",
       "tags": [
         "category:insect",
@@ -730,13 +753,13 @@
       ],
       "recognizability": 0.6,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "firefly",
-      "name": "Firefly",
+      "name": "firefly",
       "domain": "animals",
       "tags": [
         "category:insect",
@@ -750,13 +773,13 @@
       ],
       "recognizability": 0.6,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "snake",
-      "name": "Snake",
+      "name": "snake",
       "domain": "animals",
       "tags": [
         "category:reptile",
@@ -770,13 +793,13 @@
       ],
       "recognizability": 0.85,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "turtle",
-      "name": "Turtle",
+      "name": "turtle",
       "domain": "animals",
       "tags": [
         "category:reptile",
@@ -790,13 +813,13 @@
       ],
       "recognizability": 0.85,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "lizard",
-      "name": "Lizard",
+      "name": "lizard",
       "domain": "animals",
       "tags": [
         "category:reptile",
@@ -809,13 +832,13 @@
       ],
       "recognizability": 0.7,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "crocodile",
-      "name": "Crocodile",
+      "name": "crocodile",
       "domain": "animals",
       "tags": [
         "category:reptile",
@@ -829,13 +852,13 @@
       ],
       "recognizability": 0.85,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "alligator",
-      "name": "Alligator",
+      "name": "alligator",
       "domain": "animals",
       "tags": [
         "category:reptile",
@@ -849,13 +872,13 @@
       ],
       "recognizability": 0.8,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "chameleon",
-      "name": "Chameleon",
+      "name": "chameleon",
       "domain": "animals",
       "tags": [
         "category:reptile",
@@ -868,13 +891,13 @@
       ],
       "recognizability": 0.7,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "iguana",
-      "name": "Iguana",
+      "name": "iguana",
       "domain": "animals",
       "tags": [
         "category:reptile",
@@ -888,13 +911,13 @@
       ],
       "recognizability": 0.6,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "gecko",
-      "name": "Gecko",
+      "name": "gecko",
       "domain": "animals",
       "tags": [
         "category:reptile",
@@ -907,13 +930,13 @@
       ],
       "recognizability": 0.6,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "frog",
-      "name": "Frog",
+      "name": "frog",
       "domain": "animals",
       "tags": [
         "category:amphibian",
@@ -927,13 +950,13 @@
       ],
       "recognizability": 0.9,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "salamander",
-      "name": "Salamander",
+      "name": "salamander",
       "domain": "animals",
       "tags": [
         "category:amphibian",
@@ -947,13 +970,13 @@
       ],
       "recognizability": 0.6,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "toad",
-      "name": "Toad",
+      "name": "toad",
       "domain": "animals",
       "tags": [
         "category:amphibian",
@@ -966,13 +989,13 @@
       ],
       "recognizability": 0.7,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "newt",
-      "name": "Newt",
+      "name": "newt",
       "domain": "animals",
       "tags": [
         "category:amphibian",
@@ -986,13 +1009,13 @@
       ],
       "recognizability": 0.5,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "axolotl",
-      "name": "Axolotl",
+      "name": "axolotl",
       "domain": "animals",
       "tags": [
         "category:amphibian",
@@ -1006,13 +1029,13 @@
       ],
       "recognizability": 0.5,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
       "id": "caecilian",
-      "name": "Caecilian",
+      "name": "caecilian",
       "domain": "animals",
       "tags": [
         "category:amphibian",
@@ -1025,8 +1048,8 @@
       ],
       "recognizability": 0.3,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
@@ -1045,8 +1068,8 @@
       ],
       "recognizability": 0.95,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
@@ -1065,8 +1088,8 @@
       ],
       "recognizability": 0.85,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
@@ -1086,8 +1109,8 @@
       ],
       "recognizability": 0.7,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
@@ -1106,8 +1129,8 @@
       ],
       "recognizability": 0.6,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
@@ -1126,8 +1149,8 @@
       ],
       "recognizability": 0.9,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
@@ -1146,8 +1169,8 @@
       ],
       "recognizability": 0.85,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
@@ -1166,8 +1189,8 @@
       ],
       "recognizability": 0.8,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
@@ -1186,8 +1209,8 @@
       ],
       "recognizability": 0.7,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
@@ -1207,8 +1230,8 @@
       ],
       "recognizability": 0.7,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
@@ -1228,8 +1251,8 @@
       ],
       "recognizability": 0.5,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
@@ -1249,8 +1272,8 @@
       ],
       "recognizability": 0.4,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
@@ -1270,8 +1293,8 @@
       ],
       "recognizability": 0.6,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
@@ -1291,8 +1314,8 @@
       ],
       "recognizability": 0.6,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
@@ -1312,8 +1335,8 @@
       ],
       "recognizability": 0.6,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
@@ -1333,8 +1356,8 @@
       ],
       "recognizability": 0.5,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     },
     {
@@ -1354,48 +1377,8 @@
       ],
       "recognizability": 0.4,
       "provenance": {
-        "entity": "deepseek:generated+verified",
-        "tags": "deepseek:generated+verified"
-      }
-    },
-    {
-      "id": "giganotosaurus",
-      "name": "Giganotosaurus",
-      "domain": "animals",
-      "tags": [
-        "category:dinosaur",
-        "size:huge",
-        "habitat:land",
-        "diet:carnivore",
-        "dino_kind:land_hunter"
-      ],
-      "facts": [
-        "Giganotosaurus was one of the biggest meat-eaters, even larger than T. rex."
-      ],
-      "recognizability": 0.55,
-      "provenance": {
-        "entity": "human:added",
-        "tags": "human:added",
-        "dino_kind": "derived:compound"
-      }
-    },
-    {
-      "id": "ostrich",
-      "name": "Ostrich",
-      "domain": "animals",
-      "tags": [
-        "category:bird",
-        "size:huge",
-        "habitat:land",
-        "diet:omnivore"
-      ],
-      "facts": [
-        "The ostrich is the biggest bird in the world, and it cannot fly."
-      ],
-      "recognizability": 0.78,
-      "provenance": {
-        "entity": "human:added",
-        "tags": "human:added"
+        "entity": "deepseek:generated",
+        "tags": "deepseek:generated"
       }
     }
   ]

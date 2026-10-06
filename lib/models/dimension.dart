@@ -2,12 +2,14 @@
 /// [values] maps a tag-value to its kid-facing display label.
 class Dimension {
   final String id;
+  final String title; // short kid-facing name of the rule, e.g. "Size", "Kind of animal"
   final String type; // "intrinsic" (readable off the thing) | "contextual" (needs scene)
   final String question; // announced-mode prompt, e.g. "What does it eat?"
   final Map<String, String> values; // tag-value -> display label
 
   const Dimension({
     required this.id,
+    required this.title,
     required this.type,
     required this.question,
     required this.values,
@@ -20,6 +22,7 @@ class Dimension {
 
   factory Dimension.fromJson(String id, Map<String, dynamic> json) => Dimension(
         id: id,
+        title: json['title'] as String? ?? id,
         type: json['type'] as String? ?? 'intrinsic',
         question: json['question'] as String? ?? '',
         values: Map<String, String>.from(

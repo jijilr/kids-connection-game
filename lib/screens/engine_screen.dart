@@ -1,11 +1,17 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+import '../models/entity.dart';
 import '../providers/engine_provider.dart';
-import '../models/dimension.dart';
 import '../services/board_assembler.dart';
+import '../services/sound_service.dart';
+import '../services/speaker.dart';
 import '../widgets/tile_card.dart';
 
+const _purple = Color(0xFF6C5CE7);
+const _deepPurple = Color(0xFF4A3FB0);
+const _ink = Color(0xFF2D3436);
 const _groupColors = [
   Color(0xFF6C5CE7),
   Color(0xFF138A7C),
@@ -57,8 +63,8 @@ class EngineScreen extends StatelessWidget {
           }
           return Column(
             children: [
-              _breadcrumb(context, g),
-              if (!g.atFloor) _lensBanner(g),
+              _breadcrumb(g),
+              if (!g.atFloor) _promptBanner(g),
               Expanded(
                 child: SingleChildScrollView(
                   padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -66,21 +72,20 @@ class EngineScreen extends StatelessWidget {
                     children: [
                       const SizedBox(height: 8),
                       for (int i = 0; i < g.solved.length; i++)
-                        _solvedBanner(context, g, g.solved[i], i),
-                      if (g.solved.isNotEmpty) const SizedBox(height: 6),
-                      if (g.boardComplete && g.regroupOptions.isNotEmpty)
-                        _regroupSection(context, g),
+                        _solvedBanner(g, g.solved[i], i),
                       if (g.atFloor)
-                        _floorCard(context)
-                      else if (!g.boardComplete)
-                        _grid(context, g),
+                        _floorCard(g)
+                      else if (g.boardFinished)
+                        _celebration(g)
+                      else
+                        _grid(g),
                       const SizedBox(height: 8),
                     ],
                   ),
                 ),
               ),
-              _status(g),
-              _controls(context, g),
+              if (g.message.isNotEmpty && !g.boardFinished) _status(g),
+              if (!g.atFloor && !g.boardFinished) _controls(g),
             ],
           );
         },
@@ -88,14 +93,47 @@ class EngineScreen extends StatelessWidget {
     );
   }
 
-  Widget _breadcrumb(BuildContext context, EngineProvider g) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(16, 10, 8, 6),
+  // ------------------------------------------------------------------- sounds
+
+  void _tapTile(EngineProvider g, Entity e) {
+    final selecting = !g.isSelected(e);
+    g.toggle(e);
+    if (!selecting) return;
+    final audio = g.tileMedia(e).audio;
+    if (audio != null) {
+      SoundService().playAsset(audio);
+    } else {
+      speakText(e.name);
+    }
+  }
+
+  void _submit(EngineProvider g) {
+    final sounds = SoundService();
+    switch (g.submit()) {
+      case SubmitResult.correct:
+        sounds.playCorrect();
+      case SubmitResult.roundDone:
+        sounds.playVictory();
+      case SubmitResult.wrong:
+        sounds.playWrong();
+      case SubmitResult.oneAway:
+        sounds.playOneAway();
+      case SubmitResult.notReady:
+        break;
+    }
+  }
+
+  // ---------------------------------------------------------------- top bits
+
+  Widget _breadcrumb(EngineProvider g) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 10, 8, 4),
       child: Row(
         children: [
           Expanded(
             child: Text.rich(
               TextSpan(
+                style: GoogleFonts.inter(fontSize: 13, color: Colors.grey.shade600),
                 children: [
                   const TextSpan(text: 'You are here:  '),
                   for (int i = 0; i < g.pathLabels.length; i++) ...[
@@ -105,64 +143,75 @@ class EngineScreen extends StatelessWidget {
                         fontWeight: i == g.pathLabels.length - 1
                             ? FontWeight.w800
                             : FontWeight.w500,
-                        color: i == g.pathLabels.length - 1
-                            ? const Color(0xFF2D3436)
-                            : Colors.grey.shade600,
+                        color: i == g.pathLabels.length - 1 ? _ink : null,
                       ),
                     ),
                     if (i < g.pathLabels.length - 1)
                       TextSpan(
-                        text: '  ›  ',
-                        style: TextStyle(color: Colors.grey.shade400),
-                      ),
+                          text: '  ›  ',
+                          style: TextStyle(color: Colors.grey.shade400)),
                   ],
                 ],
-                style: GoogleFonts.inter(fontSize: 13, color: Colors.grey.shade600),
               ),
               overflow: TextOverflow.ellipsis,
             ),
           ),
           if (!g.atRoot)
             TextButton.icon(
-              onPressed: () => g.back(),
+              onPressed: g.back,
               icon: const Icon(Icons.arrow_back_rounded, size: 16),
               label: const Text('Back'),
-              style: TextButton.styleFrom(foregroundColor: const Color(0xFF6C5CE7)),
+              style: TextButton.styleFrom(foregroundColor: _purple),
             ),
         ],
       ),
     );
   }
 
-  Widget _lensBanner(EngineProvider g) {
+  Widget _promptBanner(EngineProvider g) {
     return Container(
       width: double.infinity,
       margin: const EdgeInsets.symmetric(horizontal: 12),
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+      padding: const EdgeInsets.fromLTRB(14, 8, 6, 10),
       decoration: BoxDecoration(
         color: const Color(0xFFEDEBFA),
         borderRadius: BorderRadius.circular(14),
       ),
-      child: Row(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Icon(Icons.search_rounded, size: 18, color: Color(0xFF6C5CE7)),
-          const SizedBox(width: 8),
-          Expanded(
-            child: Text(
-              g.board!.dimension.question,
-              style: GoogleFonts.inter(
-                fontWeight: FontWeight.w700,
-                fontSize: 14,
-                color: const Color(0xFF4A3FB0),
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  'Make 4 groups of 4 — sort by:',
+                  style: GoogleFonts.inter(
+                      fontSize: 11,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.grey.shade600),
+                ),
               ),
-            ),
+              IconButton(
+                tooltip: 'Read it to me',
+                visualDensity: VisualDensity.compact,
+                icon: const Icon(Icons.volume_up_rounded, size: 20, color: _purple),
+                onPressed: () => speakText(g.prompt),
+              ),
+            ],
+          ),
+          Text(
+            g.prompt,
+            style: GoogleFonts.quicksand(
+                fontWeight: FontWeight.w800, fontSize: 16, color: _deepPurple),
           ),
         ],
       ),
     );
   }
 
-  Widget _grid(BuildContext context, EngineProvider g) {
+  // ------------------------------------------------------------------ board
+
+  Widget _grid(EngineProvider g) {
     final tiles = g.openTiles;
     return GridView.builder(
       shrinkWrap: true,
@@ -172,140 +221,159 @@ class EngineScreen extends StatelessWidget {
         crossAxisCount: 4,
         crossAxisSpacing: 8,
         mainAxisSpacing: 8,
-        childAspectRatio: 1.0,
+        childAspectRatio: 0.9,
       ),
       itemBuilder: (context, i) {
         final e = tiles[i];
         return TileCard(
+          key: ValueKey(e.id),
           entity: e,
-          selected: g.selected.any((x) => x.id == e.id),
-          onTap: () => g.toggle(e),
+          media: g.tileMedia(e),
+          selected: g.isSelected(e),
+          onTap: () => _tapTile(g, e),
         );
       },
     );
   }
 
-  Widget _solvedBanner(
-      BuildContext context, EngineProvider g, BoardGroup group, int index) {
+  Widget _solvedBanner(EngineProvider g, BoardGroup group, int index) {
     final color = _groupColors[index % _groupColors.length];
-    final canDescend = g.boardComplete;
-    return GestureDetector(
-      onTap: canDescend ? () => g.descendInto(group) : null,
-      child: Container(
-        width: double.infinity,
-        margin: const EdgeInsets.only(bottom: 8),
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-        decoration: BoxDecoration(
-          color: color,
-          borderRadius: BorderRadius.circular(16),
-          boxShadow: [
-            BoxShadow(color: color.withOpacity(0.35), blurRadius: 8, offset: const Offset(0, 3)),
-          ],
-        ),
-        child: Row(
-          children: [
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    group.label.toUpperCase(),
-                    style: GoogleFonts.quicksand(
-                      fontWeight: FontWeight.w800,
-                      fontSize: 13,
-                      color: Colors.white,
-                      letterSpacing: 0.5,
-                    ),
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    group.items.map((e) => e.name).join('  ·  '),
-                    style: GoogleFonts.inter(
-                      fontSize: 12,
-                      color: Colors.white.withOpacity(0.92),
-                    ),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                ],
-              ),
-            ),
-            if (canDescend)
-              const Row(
-                children: [
-                  Text('dig deeper',
-                      style: TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w600)),
-                  SizedBox(width: 4),
-                  Icon(Icons.south_east_rounded, color: Colors.white, size: 16),
-                ],
-              ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _regroupSection(BuildContext context, EngineProvider g) {
-    return Container(
-      width: double.infinity,
-      margin: const EdgeInsets.only(top: 4, bottom: 4),
-      padding: const EdgeInsets.all(14),
-      decoration: BoxDecoration(
-        color: const Color(0xFFEDEBFA),
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              const Icon(Icons.autorenew_rounded, size: 18, color: Color(0xFF6C5CE7)),
-              const SizedBox(width: 6),
-              Text(
-                'Same animals — a new way to see them',
-                style: GoogleFonts.quicksand(
-                  fontWeight: FontWeight.w800,
-                  fontSize: 14,
-                  color: const Color(0xFF4A3FB0),
-                ),
-              ),
+    final deeper = g.canDescend(group);
+    return BounceInDown(
+      duration: const Duration(milliseconds: 500),
+      child: GestureDetector(
+        onTap: deeper ? () => g.descendInto(group) : null,
+        child: Container(
+          width: double.infinity,
+          margin: const EdgeInsets.only(bottom: 8),
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+          decoration: BoxDecoration(
+            color: color,
+            borderRadius: BorderRadius.circular(16),
+            boxShadow: [
+              BoxShadow(
+                  color: color.withOpacity(0.35),
+                  blurRadius: 8,
+                  offset: const Offset(0, 3)),
             ],
           ),
-          const SizedBox(height: 10),
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: [for (final d in g.regroupOptions) _lensChip(g, d)],
+          child: Row(
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      group.label.toUpperCase(),
+                      style: GoogleFonts.quicksand(
+                          fontWeight: FontWeight.w800,
+                          fontSize: 13,
+                          color: Colors.white,
+                          letterSpacing: 0.5),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      group.items.map((e) => e.name).join('  ·  '),
+                      style: GoogleFonts.inter(
+                          fontSize: 12, color: Colors.white.withOpacity(0.92)),
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ],
+                ),
+              ),
+              if (deeper)
+                Container(
+                  margin: const EdgeInsets.only(left: 8),
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.22),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: const Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text('Dig deeper',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12,
+                              fontWeight: FontWeight.w700)),
+                      SizedBox(width: 4),
+                      Icon(Icons.arrow_forward_rounded,
+                          color: Colors.white, size: 16),
+                    ],
+                  ),
+                ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
 
-  Widget _lensChip(EngineProvider g, Dimension d) {
-    return GestureDetector(
-      onTap: () => g.regroupBy(d),
+  // ------------------------------------------------------------- end states
+
+  Widget _celebration(EngineProvider g) {
+    final detail = g.anyDescendable
+        ? 'Tap a group with “Dig deeper” to explore inside it — or try a new board.'
+        : 'Try a new board!';
+    return BounceInDown(
+      duration: const Duration(milliseconds: 600),
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 9),
+        width: double.infinity,
+        margin: const EdgeInsets.only(top: 6),
+        padding: const EdgeInsets.all(18),
         decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: const Color(0xFF6C5CE7)),
-        ),
-        child: Text(
-          d.question,
-          style: GoogleFonts.inter(
-            fontWeight: FontWeight.w600,
-            fontSize: 13,
-            color: const Color(0xFF6C5CE7),
+          gradient: const LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [Color(0xFFFFF4C2), Color(0xFFFFE0EE)],
           ),
+          borderRadius: BorderRadius.circular(18),
+        ),
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                for (int i = 0; i < 3; i++)
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 3),
+                    child: Text('⭐',
+                        style: TextStyle(
+                            fontSize: 32,
+                            color: i < g.stars ? null : Colors.black12)),
+                  ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Text('You did it!',
+                style: GoogleFonts.quicksand(
+                    fontWeight: FontWeight.w800, fontSize: 22, color: _ink)),
+            const SizedBox(height: 6),
+            Text(detail,
+                textAlign: TextAlign.center,
+                style: GoogleFonts.inter(fontSize: 14, color: Colors.grey.shade800)),
+            const SizedBox(height: 14),
+            ElevatedButton.icon(
+              onPressed: g.newBoard,
+              icon: const Icon(Icons.replay_rounded),
+              label: const Text('New board'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: _ink,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 12),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(24)),
+              ),
+            ),
+          ],
         ),
       ),
     );
   }
 
-  Widget _floorCard(BuildContext context) {
-    final g = context.read<EngineProvider>();
+  Widget _floorCard(EngineProvider g) {
     return Container(
       margin: const EdgeInsets.only(top: 24),
       padding: const EdgeInsets.all(24),
@@ -317,23 +385,15 @@ class EngineScreen extends StatelessWidget {
         children: [
           const Text('🌱', style: TextStyle(fontSize: 40)),
           const SizedBox(height: 10),
-          Text(
-            'The edge of what\'s known here',
-            style: GoogleFonts.quicksand(fontWeight: FontWeight.w800, fontSize: 16),
-          ),
-          const SizedBox(height: 6),
-          Text(
-            'This branch has no deeper split yet. (Compound dimensions and generated content come next.)',
-            textAlign: TextAlign.center,
-            style: GoogleFonts.inter(fontSize: 13, color: Colors.grey.shade600),
-          ),
+          Text('The edge of what’s known here',
+              style: GoogleFonts.quicksand(fontWeight: FontWeight.w800, fontSize: 16)),
           const SizedBox(height: 16),
           ElevatedButton.icon(
-            onPressed: () => g.back(),
+            onPressed: g.back,
             icon: const Icon(Icons.arrow_back_rounded),
             label: const Text('Go back'),
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF6C5CE7),
+              backgroundColor: _purple,
               foregroundColor: Colors.white,
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
             ),
@@ -343,6 +403,8 @@ class EngineScreen extends StatelessWidget {
     );
   }
 
+  // ------------------------------------------------------------ bottom bits
+
   Widget _status(EngineProvider g) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
@@ -350,70 +412,44 @@ class EngineScreen extends StatelessWidget {
         g.message,
         textAlign: TextAlign.center,
         style: GoogleFonts.inter(
-          fontSize: 13,
-          fontWeight: FontWeight.w600,
-          color: g.boardComplete ? const Color(0xFF138A7C) : Colors.grey.shade700,
-        ),
+            fontSize: 14, fontWeight: FontWeight.w700, color: Colors.grey.shade800),
       ),
     );
   }
 
-  Widget _controls(BuildContext context, EngineProvider g) {
-    if (g.atFloor) return const SizedBox(height: 12);
-    return Container(
-      padding: const EdgeInsets.fromLTRB(16, 4, 16, 16),
-      child: Column(
+  Widget _controls(EngineProvider g) {
+    ButtonStyle outlined() => OutlinedButton.styleFrom(
+          foregroundColor: Colors.black87,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        );
+    // Wrap (not Row): on narrow phones or with large system text the buttons flow
+    // onto a second line instead of pushing Submit off-screen.
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 6, 12, 16),
+      child: Wrap(
+        alignment: WrapAlignment.center,
+        spacing: 8,
+        runSpacing: 8,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('Mistakes:', style: GoogleFonts.inter(fontSize: 12, color: Colors.grey.shade600)),
-              const SizedBox(width: 8),
-              ...List.generate(EngineProvider.maxMistakes, (i) {
-                final used = i < g.mistakes;
-                return Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 3),
-                  child: CircleAvatar(
-                    radius: 5,
-                    backgroundColor: used ? const Color(0xFFC24E70) : Colors.grey.shade300,
-                  ),
-                );
-              }),
-            ],
+          OutlinedButton(
+            onPressed: g.selected.isEmpty ? null : g.deselectAll,
+            style: outlined(),
+            child: const Text('Deselect'),
           ),
-          const SizedBox(height: 12),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              OutlinedButton(
-                onPressed: g.selected.isEmpty ? null : () => g.deselectAll(),
-                style: OutlinedButton.styleFrom(
-                  foregroundColor: Colors.black87,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                ),
-                child: const Text('Deselect'),
-              ),
-              const SizedBox(width: 8),
-              OutlinedButton(
-                onPressed: () => g.newBoard(),
-                style: OutlinedButton.styleFrom(
-                  foregroundColor: Colors.black87,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                ),
-                child: const Text('New board'),
-              ),
-              const SizedBox(width: 8),
-              ElevatedButton(
-                onPressed: g.selected.length == 4 ? () => g.submit() : null,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF6C5CE7),
-                  foregroundColor: Colors.white,
-                  disabledBackgroundColor: Colors.grey.shade300,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                ),
-                child: const Text('Submit'),
-              ),
-            ],
+          OutlinedButton(
+            onPressed: g.shuffleTiles,
+            style: outlined(),
+            child: const Text('Shuffle'),
+          ),
+          ElevatedButton(
+            onPressed: g.selected.length == 4 ? () => _submit(g) : null,
+            style: ElevatedButton.styleFrom(
+              backgroundColor: _purple,
+              foregroundColor: Colors.white,
+              disabledBackgroundColor: Colors.grey.shade300,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            ),
+            child: const Text('Submit'),
           ),
         ],
       ),

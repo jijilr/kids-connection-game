@@ -26,16 +26,11 @@ class Board {
   final List<Entity> tiles; // 16, shuffled
   final List<PathFilter> filter;
 
-  /// Dimensions that ALSO cleanly partition these exact tiles into 4×4 — the
-  /// "regroup" lenses (same 16 animals, seen a different way).
-  final List<Dimension> lenses;
-
   const Board({
     required this.dimension,
     required this.groups,
     required this.tiles,
     required this.filter,
-    this.lenses = const [],
   });
 }
 
@@ -46,8 +41,32 @@ class BoardAssembler {
   final DimensionRegistry registry;
   final Random _random;
 
-  BoardAssembler(this.entities, this.registry, {Random? random})
+  /// Entities to favour when several could fill a slot — e.g. "has a picture", so a
+  /// board never mixes picture tiles with bare-text tiles in a way that gives a group
+  /// away (a style difference must never be the answer).
+  bool Function(Entity)? preferred;
+
+  BoardAssembler(this.entities, this.registry, {Random? random, this.preferred})
       : _random = random ?? Random();
+
+  bool _pref(Entity e) => preferred?.call(e) ?? true;
+
+  /// Preferred first, then most recognizable (mundane-first, PRD IV.3).
+  int _rank(Entity a, Entity b) {
+    final pa = _pref(a), pb = _pref(b);
+    if (pa != pb) return pa ? -1 : 1;
+    return b.recognizability.compareTo(a.recognizability);
+  }
+
+  /// Pick [n] from [cands]: preferred + well-known first, with a little randomness
+  /// among the top few so boards don't repeat identically.
+  List<Entity> _pick(List<Entity> cands, int n) {
+    final sorted = [...cands]..sort(_rank);
+    final prefCount = sorted.where(_pref).length;
+    if (prefCount <= n) return sorted.take(n).toList();
+    final pool = sorted.take(min(prefCount, n + 2)).toList()..shuffle(_random);
+    return pool.take(n).toList();
+  }
 
   List<Entity> _filtered(List<PathFilter> filter) =>
       entities.where((e) => filter.every((f) => e.isIn(f.$1, f.$2))).toList();
@@ -58,6 +77,7 @@ class BoardAssembler {
   Board? assemble({
     List<PathFilter> filter = const [],
     required Dimension dimension,
+    List<String> preferValues = const [],
   }) {
     final byValue = <String, List<Entity>>{};
     for (final e in _filtered(filter)) {
@@ -70,15 +90,18 @@ class BoardAssembler {
     if (usable.length < 4) return null;
 
     usable.shuffle(_random);
+    // Values with 4+ preferred members first, and any explicitly wanted values
+    // (e.g. keep "dinosaur" on the board so digging deeper stays possible).
+    int tier(MapEntry<String, List<Entity>> v) =>
+        (preferValues.contains(v.key) ? 0 : 2) +
+        (v.value.where(_pref).length >= 4 ? 0 : 1);
+    usable.sort((a, b) => tier(a).compareTo(tier(b)));
     final chosen = usable.take(4);
 
     final groups = <BoardGroup>[];
     final tiles = <Entity>[];
     for (final entry in chosen) {
-      final members = [...entry.value]..shuffle(_random);
-      // mundane-first: prefer the 4 most recognizable (PRD IV.3, fame-ordering).
-      members.sort((a, b) => b.recognizability.compareTo(a.recognizability));
-      final four = members.take(4).toList();
+      final four = _pick(entry.value, 4);
       groups.add(BoardGroup(
         dimId: dimension.id,
         value: entry.key,
@@ -92,7 +115,7 @@ class BoardAssembler {
   }
 
   /// Dimensions that can actually fill a 4×4 board over [filter] (>= 4 values,
-  /// each with >= 4 members). These are the valid descend / regroup options; an
+  /// each with >= 4 members). These are the valid descend options; an
   /// empty result is the wide-shallow floor for that slice.
   List<Dimension> boardableDimensions(List<PathFilter> filter) {
     final pool = _filtered(filter);
@@ -108,66 +131,5 @@ class BoardAssembler {
       if (counts.values.where((c) => c >= 4).length >= 4) out.add(d);
     }
     return out;
-  }
-
-  /// Group a FIXED set of tiles by [dim]. Returns 4 groups of 4 iff they split
-  /// cleanly (every tile tagged, exactly 4 values, 4 each); else null. This is how
-  /// the SAME 16 tiles get re-partitioned on regroup.
-  List<BoardGroup>? partitionBy(List<Entity> tiles, Dimension dim) {
-    final byValue = <String, List<Entity>>{};
-    for (final e in tiles) {
-      final v = e.valueFor(dim.id);
-      if (v == null || !dim.values.containsKey(v)) return null;
-      byValue.putIfAbsent(v, () => []).add(e);
-    }
-    if (byValue.length != 4 || byValue.values.any((g) => g.length != 4)) return null;
-    final groups = <BoardGroup>[];
-    byValue.forEach((v, items) => groups.add(BoardGroup(
-        dimId: dim.id, value: v, label: dim.label(v), items: items)));
-    return groups;
-  }
-
-  /// Every dimension that cleanly partitions these exact tiles into 4×4 (the lenses).
-  List<Dimension> lensesFor(List<Entity> tiles) =>
-      registry.all.where((d) => partitionBy(tiles, d) != null).toList();
-
-  /// Build a MULTI-LENS board: 16 tiles forming a [rowDim]×[colDim] grid (one entity
-  /// per cell), so the SAME tiles split cleanly by both. Returns null if the pool
-  /// can't fill the grid. This is what makes same-16 regroup possible.
-  Board? assembleGrid({
-    List<PathFilter> filter = const [],
-    required Dimension rowDim,
-    required Dimension colDim,
-  }) {
-    final pool = _filtered(filter);
-    final cols = colDim.values.keys.toList();
-    if (cols.length < 4) return null;
-    final useCols = ([...cols]..shuffle(_random)).take(4).toList();
-    final rowVals = rowDim.values.keys.where((rv) => useCols.every(
-        (cv) => pool.any((e) => e.isIn(rowDim.id, rv) && e.isIn(colDim.id, cv)))).toList();
-    if (rowVals.length < 4) return null;
-    final useRows = ([...rowVals]..shuffle(_random)).take(4).toList();
-
-    final tiles = <Entity>[];
-    final used = <String>{};
-    for (final rv in useRows) {
-      for (final cv in useCols) {
-        final cands = pool
-            .where((e) => e.isIn(rowDim.id, rv) && e.isIn(colDim.id, cv) && !used.contains(e.id))
-            .toList()
-          ..sort((a, b) => b.recognizability.compareTo(a.recognizability));
-        if (cands.isEmpty) return null;
-        used.add(cands.first.id);
-        tiles.add(cands.first);
-      }
-    }
-    final groups = partitionBy(tiles, rowDim)!;
-    return Board(
-      dimension: rowDim,
-      groups: groups,
-      tiles: [...tiles]..shuffle(_random),
-      filter: filter,
-      lenses: lensesFor(tiles),
-    );
   }
 }
