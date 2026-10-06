@@ -47,3 +47,6 @@ app.*.map.json
 # Pages fetched for research: other people's text, kept on this machine only.
 # Each result records the page address, revision and fingerprint instead.
 tools/research/cache/
+
+# the child's saved progress, saved from the game by a grown-up for the job: kept on this machine only
+tools/job/progress.json
