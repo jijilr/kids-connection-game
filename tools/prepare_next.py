@@ -1,48 +1,54 @@
 """Prepare the next level: one command, on the owner's machine, with a hard spending cap.
 
-It reads the circles the owner has APPROVED in the expansion engine and asks the
-catalogue what each one needs. Then, for each need it can meet:
+The system runs itself, one step ahead of the child (the owner's ruling of 7 Oct 2026).
+Nobody approves a circle or a field. Rules decide, and a digest says what was done.
 
-  1. plan      what is missing, read from the catalogue. No model.
-  2. names     DeepSeek suggests things for the group; a second call says which a
+  1. plan      every closed circle one step from an open board, in the order the
+               expansion engine gives (its scores and its balance rules). With the child's
+               saved progress, only the circles one step from where he is. No model.
+  2. field     a circle with no field to sort it by: DeepSeek proposes up to three, and
+               four tests decide (tools/job/fields.py): four familiar things for each
+               value, one value for each thing, one clean solution, not a synonym. A field
+               that passes enters the dictionary and is filled in on every thing it applies
+               to. One that fails is held with the reason.
+  3. names     DeepSeek suggests things for each group; a second call says which a
                four-year-old would know.
-  3. facts     the pages are fetched; DeepSeek fills the dictionary's fields from them,
+  4. facts     the pages are fetched; DeepSeek fills the dictionary's fields from them,
                each with its sentence; a script checks every sentence; the guard checks
-               the record. An everyday field no page states is judged twice, and kept
-               when both judgements agree.
-  4. boards    the new things must not give any board a second clean solution.
-  5. draw      only when enough things passed for the group to open: DeepSeek writes one
+               the record. An everyday field no page states is judged twice. Where the
+               pages use a word in another sense (a broom is "a cleaning tool"), two
+               checks sort the thing as a parent would, and their agreement decides.
+  5. boards    the new things must not give any board a second clean solution.
+  6. draw      only when enough things passed for the group to open: DeepSeek writes one
                line for the painter and the OpenAI image model draws them, pooled onto
-               as few sheets of nine as will hold them. A thing already in the game
-               that has no picture is drawn too.
-  6. check     each tile is cut and a vision model says what it shows. A thing with no
+               as few sheets of nine as will hold them.
+  7. check     each tile is cut and a vision model says what it shows. A thing with no
                good tile gets one second try, if the cap allows.
-  7. finish    what passed every check goes into the game: the thing into the catalogue,
-               its tile into the game's pictures. Everything else goes to the owner's
-               queue with the reason.
-  8. report    what was added, what waits, what was spent; one commit on the work branch.
+  8. finish    what passed every check goes into the game. What did not is held by the
+               rules, with the reason, and a later run takes it up again.
+  9. digest    circles opened, fields added, things added, cost, anything held; one
+               commit on the work branch.
 
-What reaches the owner's queue (his standing rule of 6 Oct 2026): a thing unsuitable for
-a young child, one a four-year-old would not know, or one whose facts are uncertain.
-Everyday things that pass go in without asking him.
+What reaches the owner (his rule): a thing unsuitable for a young child, and an
+uncertainty that two checks could not settle. A change to a hard rule is never made here.
 
-It never adds a field or a value to the dictionary, never approves a proposal, never
-deletes anything, never pushes, never deploys, and never spends past the cap. Keys are
-read from the environment and are written nowhere. No Claude session is involved.
+It never deletes anything, never pushes, never deploys, and never spends past the cap.
+Keys are read from the environment and are written nowhere. No Claude session is involved.
 
     python tools/prepare_next.py --dry-run             the plan and the expected cost; nothing is spent
-    python tools/prepare_next.py --cap 200             do it; the cap is in rupees and is a hard cap
+    python tools/prepare_next.py                       do it, under the default hard cap of Rs 200
+    python tools/prepare_next.py --cap 120             the same, under another hard cap, in rupees
+    python tools/prepare_next.py --progress FILE       the child's saved progress, if it is not at
+                                                       tools/job/progress.json
+    python tools/prepare_next.py --undo RUN            take a run back: its things leave the game and
+                                                       its fields stop sorting boards. All is kept.
     python tools/prepare_next.py --rehearse CIRCLE --cap 40
-                                                       every stage, for a circle the owner has NOT
-                                                       approved; nothing enters the game - the things
-                                                       and their tiles are held for the owner
-    python tools/prepare_next.py --rehearse CIRCLE --retry-held --cap 40
-                                                       first try again the things an earlier run held
-                                                       for this circle, and reuse the tiles it drew
+                                                       every stage for one circle, and nothing enters
+                                                       the game: the results are held for the owner
     python tools/prepare_next.py --accept RUN          put a rehearsal's results into the game
-    python tools/prepare_next.py --resume RUN          carry on a run that the cap or an error stopped
+    python tools/prepare_next.py --resume RUN          carry on a run that an error stopped
 
-Each run keeps its plan, costs and report in tools/job/runs/<run>/.
+Each run keeps its plan, costs and digest in tools/job/runs/<run>/.
 """
 import datetime
 import json
@@ -53,15 +59,17 @@ import subprocess
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-for folder in ("tools/catalogue", "tools/research", "tools/content"):
+for folder in ("tools/catalogue", "tools/research", "tools/content", "tools/job"):
     sys.path.insert(0, str(ROOT / folder))
 
 import catalogue as cat                      # noqa: E402  the master record
 import facts                                 # noqa: E402  grounded dictionary values
 import fetch                                 # noqa: E402  the pages
 import reslib                                # noqa: E402  DeepSeek, with a hard cap
-from boards import members, second_solution_rate, split   # noqa: E402
-from expand import AMBIGUITY_LIMIT, build_circles          # noqa: E402
+import fields as field_rules                 # noqa: E402  the four tests a new field must pass
+from boards import GROUPS, members, second_solution_rate, split   # noqa: E402
+from expand import AMBIGUITY_LIMIT, HELD_BY_RULES, build_circles, in_order   # noqa: E402
+from expand import rebuild as rebuild_tree, record as record_decision      # noqa: E402
 
 RUNS = ROOT / "tools/job/runs"
 PICTURES = ROOT / "tools/pictures"
@@ -69,6 +77,10 @@ PLAN = PICTURES / "plan.json"
 RECORDS = PICTURES / "records.json"
 TREE = ROOT / "tools/content/expansion_tree.json"
 PROPOSALS = ROOT / "tools/content/field_proposals.json"
+PROGRESS = ROOT / "tools/job/progress.json"     # the child's saved progress, saved from the game by a grown-up
+FIELD_TRIES = 2           # times DeepSeek is asked for fields for one circle in a run
+FIELD_LIKELY_USD = 0.03   # what settling one field has cost
+SHARE_OF_CAP = 0.85       # a circle is started only while its likely cost fits in this share of what is left
 DEFAULT_CAP_INR = 200
 SPARE = 1                 # one more thing than a group needs, so it survives one refusal
 FAMILIAR_ENOUGH = 0.7
@@ -185,14 +197,62 @@ def labels_along(dictionary: dict, fixed: dict) -> str:
     return " > ".join(dictionary["fields"][f]["values"][str(v)] for f, v in fixed.items())
 
 
-def plan(catalogue: dict, rehearse: str = None) -> dict:
-    """What each approved circle needs, in a form the later stages can act on."""
+def read_progress(path):
+    """The boards the child has opened, from the file a grown-up saved from the game. None
+    when there is no such file: then he may be anywhere, and every circle one step from
+    an open board is prepared."""
+    data = cat.read_json(path) if path and pathlib.Path(path).exists() else None
+    boards = (data or {}).get("boards")
+    if not isinstance(boards, dict):
+        return None
+    return {board for board, seen in boards.items() if isinstance(seen, dict) and seen.get("opened", 0) > 0}
+
+
+def asks_for(catalogue: dict, cid: str) -> tuple:
+    """What one circle that has its field still needs, group by group, in a form the
+    later stages can act on. Returns (asks, what cannot be prepared and why)."""
     dictionary, settings = cat.read_json(cat.DICTIONARY), cat.read_json(cat.SETTINGS)
-    things = cat.game_copy(catalogue)["things"]
-    raw = build_circles(dictionary, things, settings)
-    tree = (cat.read_json(TREE) or {}).get("circles", {})
-    asks, blocked, nothing = [], [], []
-    if not rehearse:
+    raw = build_circles(dictionary, cat.game_copy(catalogue)["things"], settings)
+    circle, asks, blocked = raw[cid], [], []
+    if circle["open"] or circle["missing"].get("field"):
+        return asks, blocked
+    missing, path = circle["missing"], cat.circle_path(raw, cid)
+    recorded = catalogue["worked_out"]["circles"][cid].get("could_be_filled_by", [])
+    wanted = {}
+    if "why" in missing:        # too few things to be a group on the board above
+        wanted[None] = missing["things"]
+    for value, short in (missing.get("short") or {}).items():
+        wanted[value] = short
+    for value, short in wanted.items():
+        fixed = dict(path)
+        if value is not None:
+            fixed[circle["sorted_by"]] = value
+        there = [t for t in recorded if value is None or t.get("group") == str(value)]
+        ready = [t["name"] for t in there if t["status"] == cat.NOT_YET]
+        if len(ready) >= short:
+            # the owner is keeping these out on purpose; choosing among them is not the job's to do
+            blocked.append(f"{labels_along(dictionary, fixed)}: {' and '.join(ready)} are ready and deliberately "
+                           "not in the game yet. The owner (or the first child) says which goes in.")
+            continue
+        if any(f in fixed for f in ("kind_of_dinosaur",)) or fixed.get("extinct") is True:
+            blocked.append(f"{labels_along(dictionary, fixed)}: prehistoric animals need the feature research "
+                           "before they are drawn, and this job does not run that yet"
+                           + (f". Recorded and not in the game: {', '.join(t['name'] for t in there)}" if there else ""))
+            continue
+        asks.append({"circle": cid, "chain": labels_along(dictionary, fixed), "fixed": fixed, "need": short,
+                     "recorded_but_not_in_the_game": there})
+    return asks, blocked
+
+
+def plan(catalogue: dict, rehearse: str = None, played: set = None) -> dict:
+    """What the run sets out to do. Nobody approves a circle: the engine gives the order,
+    and its rules and the owner's own holds are all that keep a circle back."""
+    dictionary, settings = cat.read_json(cat.DICTIONARY), cat.read_json(cat.SETTINGS)
+    raw = build_circles(dictionary, cat.game_copy(catalogue)["things"], settings)
+    asks, circles, blocked, nothing, held_back = [], [], [], [], []
+    if rehearse:
+        order = [rehearse]
+    else:
         by_kind = {}
         for e in catalogue["things"].values():
             if e["status"] == cat.IN_GAME and not (e.get("picture") or {}).get("game_file"):
@@ -201,66 +261,167 @@ def plan(catalogue: dict, rehearse: str = None) -> dict:
             asks.append({"circle": kind, "chain": dictionary["fields"]["kind_of_thing"]["values"][kind],
                          "fixed": {"kind_of_thing": kind}, "need": 0, "pictures_for": names,
                          "recorded_but_not_in_the_game": []})
-    for cid, circle in raw.items():
-        approved = tree.get(cid, {}).get("status") == "approved by the owner"
-        if not (cid == rehearse or (approved and not rehearse)):
-            continue
-        label, path = circle["label"], cat.circle_path(raw, cid)
+        tree = rebuild_tree(write=False)["circles"]     # planning changes nothing
+        order = in_order(tree, played)
+        held_back = [f"{c['label']}: {c.get('held_by') or c['status']}" for cid, c in tree.items()
+                     if c["status"] in ("held", "rejected") and cid not in order]
+    for cid in order:
+        circle, path = raw[cid], cat.circle_path(raw, cid)
+        label = circle["label"]
+        chain = labels_along(dictionary, dict(path)) or label
         bare = [e["name"] for e in catalogue["things"].values()
                 if e["status"] == cat.IN_GAME and cid in e["worked_out"]["circles"]
                 and not (e.get("picture") or {}).get("game_file")]
         if bare and rehearse:      # in a rehearsal, only the named circle's things
-            asks.append({"circle": cid, "chain": labels_along(dictionary, dict(path)) or label, "fixed": dict(path),
+            asks.append({"circle": cid, "chain": chain, "fixed": dict(path),
                          "need": 0, "pictures_for": bare, "recorded_but_not_in_the_game": []})
         if circle["open"]:
             if not (bare and rehearse):
                 nothing.append(f"{label}: it can already open")
             continue
-        missing = circle["missing"]
-        recorded = catalogue["worked_out"]["circles"][cid].get("could_be_filled_by", [])
-        if missing.get("field"):
-            blocked.append(f"{label}: it needs a field to sort it by, and the dictionary has none. "
-                           "The owner approves a field and its values first.")
+        if circle["missing"].get("field"):
+            if rehearse:
+                blocked.append(f"{label}: it needs a field to sort it by. A rehearsal does not add one; a real run does.")
+                continue
+            if any(f == "kind_of_dinosaur" for f, _ in path):
+                blocked.append(f"{chain}: prehistoric animals need the feature research before they are drawn, "
+                               "and this job does not run that yet")
+                continue
+            circles.append({"circle": cid, "label": label, "chain": chain, "needs_field": True,
+                            "expect_things": circle["missing"]["things"] + GROUPS * SPARE})
             continue
-        wanted = {}
-        if "why" in missing:        # too few things to be a group on the board above
-            wanted[None] = missing["things"]
-        for value, short in (missing.get("short") or {}).items():
-            wanted[value] = short
-        for value, short in wanted.items():
-            fixed = dict(path)
-            if value is not None:
-                fixed[circle["sorted_by"]] = value
-            there = [t for t in recorded if value is None or t.get("group") == str(value)]
-            ready = [t["name"] for t in there if t["status"] == cat.NOT_YET]
-            if len(ready) >= short:
-                # the owner is keeping these out on purpose; choosing among them is not the job's to do
-                blocked.append(f"{labels_along(dictionary, fixed)}: {' and '.join(ready)} are ready and deliberately "
-                               "not in the game yet. The owner (or the first child) says which goes in.")
-                continue
-            if any(f in fixed for f in ("kind_of_dinosaur",)) or fixed.get("extinct") is True:
-                blocked.append(f"{labels_along(dictionary, fixed)}: prehistoric animals need the feature research "
-                               "before they are drawn, and this job does not run that yet"
-                               + (f". Recorded and not in the game: {', '.join(t['name'] for t in there)}" if there else ""))
-                continue
-            asks.append({"circle": cid, "chain": labels_along(dictionary, fixed), "fixed": fixed, "need": short,
-                         "recorded_but_not_in_the_game": there})
-    return {"asks": asks, "blocked": blocked, "nothing_to_do": nothing}
+        its_asks, its_blocked = asks_for(catalogue, cid)
+        blocked += its_blocked
+        if rehearse:
+            asks += its_asks
+        elif its_asks:
+            circles.append({"circle": cid, "label": label, "chain": chain, "needs_field": False,
+                            "expect_things": sum(a["need"] + SPARE for a in its_asks)})
+    return {"asks": asks, "circles": circles, "blocked": blocked, "nothing_to_do": nothing, "held_back": held_back,
+            "played": sorted(played) if played is not None else None}
 
 
-def expected_cost(asks: list, rate: float) -> tuple:
-    """A fair guess before any money is spent, and the most it could be."""
-    things = sum(len(a["pictures_for"]) if a.get("pictures_for") else a["need"] + SPARE for a in asks)
-    if not things:
-        return 0.0, 0.0
+def likely_usd(things: int) -> float:
+    """What drawing and settling this many things has cost so far, on average."""
     full, rest = divmod(things, 9)
     sheets = full * SHEET[9]["most_usd"] + (SHEET[next(n for n in sorted(SHEET) if n >= rest)]["most_usd"] if rest else 0)
-    likely = things * 0.004 + sheets * 0.9
-    most = things * 0.02 + 2 * sheets + 0.05      # with one second try of each sheet
-    return likely * rate, most * rate
+    return things * 0.006 + sheets * 0.9
 
 
-# ------------------------------------------------------------------ 2. names
+def expected_cost(the_plan: dict, rate: float, cap_inr: float) -> tuple:
+    """A fair guess before any money is spent: the likely cost of the circles that fit
+    under the cap, and how many of the circles that is. The cap itself is the most."""
+    things = sum(len(a["pictures_for"]) if a.get("pictures_for") else a["need"] + SPARE for a in the_plan["asks"])
+    fields, fit = 0, 0
+    for entry in the_plan["circles"]:
+        more = things + entry["expect_things"]
+        cost = likely_usd(more) + (fields + entry["needs_field"]) * FIELD_LIKELY_USD
+        if cost * rate > cap_inr * SHARE_OF_CAP:
+            break
+        things, fields, fit = more, fields + entry["needs_field"], fit + 1
+    return (likely_usd(things) + fields * FIELD_LIKELY_USD) * rate if things or fields else 0.0, fit
+
+
+# ------------------------------------------------------------------ 2. field
+
+def settle_field(client, config, deepseek_step, run: dict, entry: dict) -> bool:
+    """A circle with no field: DeepSeek proposes, and the four tests decide. The first
+    candidate to pass enters the dictionary and is filled in on every thing it applies
+    to. If none passes, the circle is held by the rules with the reasons. True if added."""
+    catalogue, dictionary = cat.load(), cat.read_json(cat.DICTIONARY)
+    things = cat.game_copy(catalogue)["things"]
+    raw = build_circles(dictionary, things, cat.read_json(cat.SETTINGS))
+    cid = entry["circle"]
+    path = cat.circle_path(raw, cid)
+    names = [things[k]["name"] for k in members(things, path)]
+    proposals = cat.read_json(PROPOSALS) or {}
+    before = proposals.get(cid) or {}
+    earlier = [f'"{r["wording"]}" ({"; ".join(r["why"])})' for r in before.get("refused_by_the_rules", [])]
+    if before.get("wording") and "held by the owner" in str(before.get("status", "")):
+        earlier.append(f'"{before["wording"]}" (the owner held it)')
+    tried = []
+    for attempt in range(FIELD_TRIES):
+        refused = earlier + [f'"{t["wording"]}" ({"; ".join(t["why"])})' for t in tried]
+        candidates = deepseek_step(lambda spend: field_rules.propose(
+            client, config, spend, dictionary, entry["chain"], names, refused, names))
+        for candidate in candidates:
+            candidate["key"] = field_rules.unique_key(dictionary, candidate["key"], path)
+            result = deepseek_step(lambda spend: field_rules.test(
+                client, config, spend, dictionary, things, set(catalogue["things"]), path, entry["chain"],
+                candidate, recognise, AMBIGUITY_LIMIT))
+            tried.append(result)
+            say(f'  "{result["wording"]}": ' + ("passed the four tests" if not result["why"] else "refused - " + "; ".join(result["why"])))
+            if not result["why"] and add_field(run, entry, result, before):
+                return True
+        if not candidates:
+            break
+    refusals = [{"wording": t["wording"], "values": t["values"], "why": t["why"] or ["it could not be filled in"],
+                 "date": today(), "run": run["id"]} for t in tried]
+    proposals = cat.read_json(PROPOSALS) or {}
+    kept = proposals.get(cid) or {"status": "", "field": None, "wording": "", "values": {}}
+    kept["refused_by_the_rules"] = kept.get("refused_by_the_rules", []) + refusals
+    if not str(kept["status"]).startswith(("approved", "held by the owner")):
+        kept["status"] = f"held by the rules on {today()}: no field passed the tests"
+    proposals[cid] = kept
+    reslib.write_json(PROPOSALS, proposals)
+    why = "; ".join(f'"{t["wording"]}": {t["why"][0] if t["why"] else "it could not be filled in"}' for t in tried) \
+        or "DeepSeek proposed no field"
+    record_decision(cid, f"the rules found no field for it in job run {run['id']}", why,
+                    status=HELD_BY_RULES, members_then=len(names))
+    run["fields_held"].append({"circle": cid, "label": entry["label"], "tried": refusals})
+    return False
+
+
+def add_field(run: dict, entry: dict, result: dict, before: dict) -> bool:
+    """Put a field that passed the tests into the dictionary, as the next version, and fill
+    it in on every thing it applies to. If the fill or the guard fails, the dictionary and
+    the proposals are put back as they were, and nothing has changed."""
+    cid, key = entry["circle"], result["field"]
+    saved = {path: path.read_text(encoding="utf-8") for path in (cat.DICTIONARY, PROPOSALS)}
+    dictionary = cat.read_json(cat.DICTIONARY)
+    dictionary["version"] += 1
+    dictionary["fields"][key] = dict(result["definition"], since=dictionary["version"],
+                                     added_by=f"the rules, job run {run['id']}")
+    dictionary["status"] = (f"version {dictionary['version']}. Versions 1 to 4 were approved by the owner. Since "
+                            "7 Oct 2026 a field is added by the rules when it passes the four tests, and the digest of "
+                            "the run that added it says so. The game reads this file.")
+    values = {value: {"label": label,
+                      "have": [k for k, v in result["placed"].items() if v == value],
+                      "examples": [n for n, o in result["new"].items() if o["value"] == value]}
+              for value, label in result["values"].items()}
+    proposals = cat.read_json(PROPOSALS) or {}
+    proposals[cid] = {
+        "status": f"approved by the rules on {today()}, job run {run['id']}",
+        "field": key, "wording": result["wording"], "values": values,
+        "familiar": {n: o["familiar"] for n, o in result["new"].items()},
+        "tests": {"four familiar things for each value": result["counts"],
+                  "one value for each thing": f"{len(result['placed'])} things already in the circle, placed alike by two checks",
+                  "one clean solution": "sample boards passed", "not a synonym": "no existing field asks or splits the same"},
+        "refused_by_the_rules": before.get("refused_by_the_rules", []),
+    }
+    if before.get("wording"):
+        proposals[cid]["earlier"] = {k: before[k] for k in ("status", "field", "wording", "values") if k in before}
+    reslib.write_json(cat.DICTIONARY, dictionary)
+    reslib.write_json(PROPOSALS, proposals)
+    done = subprocess.run([sys.executable, str(ROOT / "tools/content/fill.py")], capture_output=True, text=True,
+                          encoding="utf-8", errors="replace", cwd=str(ROOT))
+    wrong = [] if done.returncode else cat.problems(cat.load())
+    if done.returncode or wrong:
+        for path, text in saved.items():
+            path.write_text(text, encoding="utf-8", newline="\n")
+        result["why"] = ["it could not be filled in on the things already there: "
+                         + ((done.stdout + done.stderr).strip()[-300:] if done.returncode else "; ".join(wrong[:3]))]
+        say("  put back: " + result["why"][0])
+        return False
+    record_decision(cid, f'the rules added the field "{result["wording"]}" in job run {run["id"]}',
+                    "it passed the four tests: " + ", ".join(result["values"].values()), status="added by the rules")
+    run["fields_added"].append({"circle": cid, "label": entry["label"], "field": key, "wording": result["wording"],
+                                "values": result["values"], "filled": len(result["placed"]),
+                                "version": dictionary["version"]})
+    return True
+
+
+# ------------------------------------------------------------------ 3. names
 
 def recognise(client, config, spend, ask: dict, offers: list):
     """A second call says which of the offered things a four-year-old would know, and
@@ -278,16 +439,17 @@ def recognise(client, config, spend, ask: dict, offers: list):
 
 
 def approved_examples(catalogue: dict, ask: dict) -> list:
-    """The examples the owner approved with the field, for this group, that are not in the
-    game yet. They are tried before any name of DeepSeek's own. His approval stands for
-    their being familiar; their facts are still checked."""
+    """The examples that came with the field, for this group, that are not in the game
+    yet. They are tried before any other name. Their facts are checked like any other's."""
     proposal = (cat.read_json(PROPOSALS) or {}).get(ask["circle"], {})
-    if not str(proposal.get("status", "")).startswith("approved") or not ask["fixed"]:
+    status = str(proposal.get("status", ""))
+    if not status.startswith("approved") or not ask["fixed"]:
         return []
     value = str(list(ask["fixed"].values())[-1])
     names = proposal.get("values", {}).get(value, {}).get("examples", [])
+    familiar = proposal.get("familiar", {})
     in_game = {k for k, e in catalogue["things"].items() if e["status"] == cat.IN_GAME}
-    return [{"name": n, "familiar": 0.9, "recognised": True, "suitable": True, "from_proposal": True}
+    return [{"name": n, "familiar": familiar.get(n, 0.9), "recognised": True, "suitable": True}
             for n in names if cat.slug(n) not in in_game]
 
 
@@ -315,7 +477,27 @@ def suggest(client, config, spend, catalogue: dict, ask: dict, tried: list = ())
     return sorted(offered, key=lambda o: -o["familiar"])
 
 
-# ------------------------------------------------------------------ 3. facts  4. boards
+# ------------------------------------------------------------------ 4. facts  5. boards
+
+def game_sense(client, config, spend, dictionary: dict, things: dict, ask: dict, field: str, name: str) -> tuple:
+    """Where a parent would put the card, asked twice in different words, with a few of
+    each pile's own things as examples. A page may use a word in another sense (a broom
+    is "a cleaning tool"); in the game what counts is the pile a child would choose.
+    Returns (value, '') when both checks give the same single value, else (None, why)."""
+    definition, before = dictionary["fields"][field], {}
+    for f, v in ask["fixed"].items():
+        if f == field:
+            break
+        before[f] = v
+    inside = [t for t in things.values() if all(t["fields"].get(f) == v for f, v in before.items())]
+    values = [{"key": value, "label": label,
+               "such_as": [t["name"] for t in inside if t["fields"].get(field) == value][:4]}
+              for value, label in definition["values"].items()]
+    first, second = field_rules.sort_twice(client, config, spend, labels_along(dictionary, before) or "things of every kind",
+                                           {"wording": definition["wording"], "values": values}, [name])
+    placed, unclear = field_rules.one_value_each([name], first, second, [v["key"] for v in values])
+    return placed.get(name), unclear.get(name, "")
+
 
 def ground_thing(client, config, spend, dictionary: dict, ask: dict, offer: dict, run_id: str) -> dict:
     """One suggested thing: its pages, its grounded fields, and whether it may go in."""
@@ -331,7 +513,8 @@ def ground_thing(client, config, spend, dictionary: dict, ask: dict, offer: dict
                     "why": [f"it is {entry['name']} again, or a part of it, and that is already in the game"]}
     if offer.get("suitable") is False:
         return {"name": name, "passed": False, "familiar": offer["familiar"], "fields": dict(ask["fixed"]),
-                "why": ["the check says it is not suitable for a young child"], "not_recognised": True}
+                "why": ["the check says it is not suitable for a young child"], "not_recognised": True,
+                "for_owner": True}
     if not offer["recognised"] or offer["familiar"] < FAMILIAR_ENOUGH:
         return {"name": name, "passed": False, "familiar": offer["familiar"], "fields": dict(ask["fixed"]),
                 "why": ["the check doubts a four-year-old would recognise it"], "not_recognised": True}
@@ -360,28 +543,52 @@ def ground_thing(client, config, spend, dictionary: dict, ask: dict, offer: dict
             record = facts.ground(client, config, spend, dictionary, name)
     reslib.write_json(facts.FACTS / f"{cat.slug(name)}.json", record)
     fields = {k: v["value"] for k, v in record["fields"].items()}
+    weak, notes, by_game, elsewhere = list(record["weak_spots"]), {}, [], False
     for field, value in ask["fixed"].items():
-        got = fields.get(field)
-        label = dictionary["fields"][field]["values"][str(value)]
-        if got is None:
+        got, definition = fields.get(field), dictionary["fields"][field]
+        label = definition["values"][str(value)]
+        if got == value:
+            continue
+        spelled = lambda v: definition["values"][str(v).lower() if isinstance(v, bool) else str(v)]
+        if field != "kind_of_thing" and definition.get("meaning") == "everyday":
+            placed, unsure = game_sense(client, config, spend, dictionary, cat.game_copy(cat.load())["things"],
+                                        ask, field, name)
+            if placed == value:        # two checks agree with the group it was suggested for
+                fields[field] = value
+                by_game.append(field)
+                weak = [w for w in weak if w["field"] != field]
+                if got is not None:
+                    notes[field] = (f"The pages point to '{spelled(got)}'. Two checks, sorting it as a parent "
+                                    f"would, both put it in '{label}'.")
+                continue
+            if placed is None:
+                reasons.append(f"uncertain: two checks could not settle whether it belongs in '{label}': {unsure}")
+            else:
+                reasons.append(f"two checks both put it in '{spelled(placed)}', not '{label}'")
+                elsewhere = True
+        elif got is None:
             reasons.append(f"it could not be settled that it belongs in '{label}'")
-        elif got != value:
-            other = dictionary["fields"][field]["values"][str(got).lower() if isinstance(got, bool) else str(got)]
-            reasons.append(f"the pages and the judgements point to '{other}', not '{label}'")
-    elsewhere = bool(reasons) and all("point to" in r for r in reasons)
-    reasons += [f"{w['field']}: {w['why']}" for w in record["weak_spots"]]
-    if reasons and offer.get("from_proposal"):
-        reasons.insert(0, "uncertain: the approved proposal lists it in this group")
+        else:
+            reasons.append(f"the pages and the judgements point to '{spelled(got)}', not '{label}'")
+            elsewhere = True
+        break       # what follows depends on this one
+    weak = [w for w in weak if w["field"] in fields or not reasons]
+    reasons += [f"{w['field']}: {w['why']}" for w in weak if w["field"] not in by_game]
+    record["weak_spots"] = [w for w in weak if w["field"] not in by_game]
     thing = {"name": name, "fields": fields, "familiar": offer["familiar"], "reviewed": dictionary["version"],
              "source": "job:grounded+checked", "drafted_in": run_id}
+    if notes:
+        thing["notes"] = notes
     if not reasons:
         reasons += cat.dictionary_guard.problems(dictionary, {"things": {cat.slug(name): thing}})
     return {"name": name, "passed": not reasons, "why": reasons, "thing": thing,
             # what the queue shows: what the pages gave, and the group it was proposed for
             "fields": fields if not reasons else {**fields, **ask["fixed"]}, "familiar": offer["familiar"],
             # it is a sound thing, but of another group: not what this run needs, and not a doubt for the owner
-            "not_needed": elsewhere and not record["weak_spots"] and not offer.get("from_proposal"),
-            "judged_not_sourced": [k for k, v in record["fields"].items() if v.get("basis") != "sourced"]}
+            "not_needed": elsewhere and not record["weak_spots"],
+            # the owner hears of it only when two checks could not settle it
+            "for_owner": any("uncertain" in r for r in reasons),
+            "judged_not_sourced": sorted({k for k, v in record["fields"].items() if v.get("basis") != "sourced"} | set(by_game))}
 
 
 def held_by_earlier_runs(catalogue: dict, ask: dict) -> list:
@@ -392,7 +599,7 @@ def held_by_earlier_runs(catalogue: dict, ask: dict) -> list:
         for t in old.get("things", []):
             entry = catalogue["things"].get(cat.slug(t["name"]))
             if (old["plan"]["asks"][t["ask"]]["fixed"] == ask["fixed"] and entry is not None
-                    and entry["status"] == cat.WAITING and entry.get("held_from") == f"job:{old['id']}"):
+                    and entry["status"] in (cat.WAITING, cat.RULES) and entry.get("held_from") == f"job:{old['id']}"):
                 found.append(dict(t, from_run=old["id"]))
     return found
 
@@ -413,7 +620,7 @@ def boards_stay_clean(catalogue: dict, ask: dict, accepted: list) -> str:
     return f"{rate:.0%} of the boards sorted by '{field}' would have a second clean solution" if rate > AMBIGUITY_LIMIT else ""
 
 
-# ------------------------------------------------------------------ 5. draw  6. check
+# ------------------------------------------------------------------ 6. draw  7. check
 
 def describe(client, config, spend, ask: dict, name: str) -> str:
     sources = reslib.saved_sources(name)
@@ -487,7 +694,7 @@ def keep_one_tile_each(budget: Budget, good: dict) -> dict:
     return chosen
 
 
-# ------------------------------------------------------------------ 7. finish
+# ------------------------------------------------------------------ 8. finish
 
 def put_in_the_game(run: dict):
     """What passed every check goes in: the thing into the catalogue, its tile into the
@@ -509,22 +716,30 @@ def put_in_the_game(run: dict):
         cat.sync_voice(catalogue)
 
 
-def hold_for_the_owner(run: dict, rehearsal: bool):
-    """What reaches the owner's queue, by his standing rule: a thing unfit for a young
-    child, one a four-year-old would not know, or one whose facts are uncertain. In a
-    rehearsal, what passed is held too: nothing enters the game without his word.
-    A sound thing that simply belongs to another group is not a doubt, and is not queued."""
+def held_as(t: dict, run_id: str, rehearsal: bool) -> tuple:
+    """Who holds a thing that is not going into the game, and why. ('', []) if nobody does."""
+    if t.get("in_game") or t.get("not_needed") or (t["passed"] and t.get("tile") and not rehearsal):
+        return "", []     # already in the game, not needed, or going in now
+    if t["passed"] and t.get("tile"):
+        return cat.WAITING, [f"rehearsal {run_id}: it passed every check and has a tile ({t['tile']}); "
+                             f"put it in the game with: python tools/prepare_next.py --accept {run_id}"]
+    if t["passed"]:
+        return cat.RULES, [t.get("no_tile") or "no tile of it passed the checks"]
+    return (cat.WAITING if t.get("for_owner") else cat.RULES), list(t["why"])
+
+
+def hold(run: dict, rehearsal: bool):
+    """What did not go in is kept, with its reason. The owner hears of two kinds only (his
+    rule of 7 Oct 2026): a thing unfit for a young child, and an uncertainty two checks
+    could not settle. Everything else is held by the rules, and a later run takes it up
+    again. In a rehearsal, what passed is held for him too: nothing enters the game.
+    A sound thing that simply belongs to another group is not held at all."""
     held = []
     for t in run["things"]:
-        if t.get("in_game") or t.get("not_needed") or (t["passed"] and t.get("tile") and not rehearsal):
-            continue      # already in the game, not needed, or going in now
-        why = list(t["why"])
-        if t["passed"] and t.get("tile"):
-            why = [f"rehearsal {run['id']}: it passed every check and has a tile ({t['tile']}); "
-                   f"put it in the game with: python tools/prepare_next.py --accept {run['id']}"]
-        elif t["passed"]:
-            why = [t.get("no_tile") or "no tile of it passed the checks"]
-        held.append({"name": t["name"], "fields": t["fields"], "familiar": t["familiar"], "why": why})
+        status, why = held_as(t, run["id"], rehearsal)
+        if status:
+            t["held_as"] = status
+            held.append({"name": t["name"], "fields": t["fields"], "familiar": t["familiar"], "why": why, "status": status})
     cat.set_queue(f"job:{run['id']}", held)
     # a thing an earlier run held, and which this run found is not needed, leaves the queue
     dropped = {cat.slug(t["name"]): t["why"] for t in run["things"] if t.get("not_needed")}
@@ -534,53 +749,130 @@ def hold_for_the_owner(run: dict, rehearsal: bool):
         with cat.changing(f"job run {run['id']}") as catalogue:
             for key in stale:
                 entry = catalogue["things"].get(key)
-                if entry and entry["status"] in cat.HELD and str(entry.get("held_from", "")).startswith("job:"):
+                if entry and entry["status"] in cat.OFF_GAME and str(entry.get("held_from", "")).startswith("job:"):
                     entry["status"] = cat.TAKEN_OUT
                     entry["status_why"] = ["not needed: " + "; ".join(dropped.get(key, ["it went into the game"]))]
 
 
-# ------------------------------------------------------------------ 8. report
+# ------------------------------------------------------------------ 9. digest
 
-def write_report(run: dict, budget: Budget, folder: pathlib.Path):
+def digest(run: dict, budget) -> list:
+    """The short account the owner reads after a run: circles opened, fields added, things
+    added, cost, anything held. He is told, not asked; the last line takes the run back."""
+    added = [t for t in run["things"] if t["passed"] and t.get("tile") and not t.get("in_game") and not run["rehearse"]]
+    drawn = [t["name"] for t in run["things"] if t.get("in_game") and t.get("tile")]
+    for_owner = [t for t in run["things"] if t.get("held_as") == cat.WAITING]
+    by_rules = [t for t in run["things"] if t.get("held_as") == cat.RULES]
+    later = [e["label"] for e in run["plan"]["circles"] if not e.get("done")]
+    lines = [f"DIGEST - job run {run['id']}" + (" (a rehearsal: nothing entered the game)" if run["rehearse"] else "")]
+    if run.get("stopped"):
+        lines.append(f"Stopped early: {run['stopped']}.")
+    if run["plan"].get("played") is not None:
+        lines.append("Prepared one step ahead of the child's saved progress: " + ", ".join(run["plan"]["played"]) + ".")
+    lines.append("Circles opened: " + (", ".join(run.get("opened", [])) or "none") + ".")
+    lines.append("Fields added: " + ("; ".join(
+        f'"{f["wording"]}" for {f["label"]} ({", ".join(f["values"].values())}), filled in on {f["filled"]} things'
+        for f in run.get("fields_added", [])) or "none") + ".")
+    lines.append(f"Things added: {len(added)}" + (": " + ", ".join(t["name"] for t in added) if added else "") + ".")
+    if drawn:
+        lines.append("Pictures drawn for things already in the game: " + ", ".join(drawn) + ".")
+    lines.append(f"Cost: {budget.line()}.")
+    held = [f'{f["label"]}: no field passed the tests' + (f' (the nearest, "{f["tried"][0]["wording"]}": {f["tried"][0]["why"][0]})'
+                                                          if f["tried"] else "") for f in run.get("fields_held", [])]
+    if by_rules:
+        held.append(f"{len(by_rules)} thing(s): " + "; ".join(f"{t['name']} ({(t.get('no_tile') if t['passed'] else t['why'][0])})"
+                                                           for t in by_rules))
+    held += run["plan"]["blocked"]
+    lines.append("Held by the rules: " + ("none." if not held else ""))
+    lines += [f"  - {line}" for line in held]
+    lines.append("For you: " + ("nothing." if not for_owner else ""))
+    lines += [f"  - {t['name']}: {'; '.join(t['why'])}" for t in for_owner]
+    if later:
+        lines.append("Left for a later run, in this order: " + ", ".join(later) + ".")
+    if run.get("sheets"):
+        lines.append("Contact sheets: " + ", ".join(f"tools/pictures/preview/{s}_review.png" for s in run["sheets"]))
+    if not run["rehearse"] and (added or run.get("fields_added")):
+        lines.append(f"To take this run back: python tools/prepare_next.py --undo {run['id']}")
+    return lines
+
+
+def write_report(run: dict, budget, folder: pathlib.Path):
+    """The digest, then the detail behind it, kept with the run."""
     passed = [t for t in run["things"] if t["passed"] and t.get("tile")]
-    waiting = [t for t in run["things"] if not (t["passed"] and t.get("tile")) and not t.get("not_needed")]
     not_needed = [t for t in run["things"] if t.get("not_needed")]
-    lines = [f"# Job run {run['id']}", "",
-             f"{run['started']}. " + ("A REHEARSAL: nothing was put in the game." if run["rehearse"] else "A real run."), "",
-             f"Spent: {budget.line()}.", ""]
-    if run["stopped"]:
-        lines += [f"**The run stopped early:** {run['stopped']}. Carry on with: `python tools/prepare_next.py --resume {run['id']}`", ""]
-    for ask in run["plan"]["asks"]:
-        lines += [f"## {ask['chain']}", "", f"Needed {ask['need']} more thing(s)."]
-        if ask["recorded_but_not_in_the_game"]:
-            lines += ["Recorded and not in the game: " + ", ".join(f"{t['name']} ({t['status']})" for t in ask["recorded_but_not_in_the_game"]) + "."]
-        lines += [""]
-    lines += ["## " + ("Passed every check, and held for the owner" if run["rehearse"] else "Added to the game"), ""]
-    lines += [f"- **{t['name']}**: familiar {t['familiar']}; tile `{t['tile']}`"
-              + (f"; judged, not sourced: {', '.join(t['judged_not_sourced'])}" if t.get("judged_not_sourced") else "")
-              + f". Drawn as: {t.get('draw', '')}" for t in passed] or ["- (nothing)"]
-    lines += ["", "## In the owner's queue", ""]
-    lines += [f"- **{t['name']}**: " + "; ".join(t["why"] or [t.get("no_tile", "no tile of it passed the checks")])
-              for t in waiting if not t.get("in_game")] or ["- (nothing)"]
-    still_bare = [t["name"] for t in waiting if t.get("in_game")]
-    if still_bare:
-        lines += ["", "Already in the game and still without a picture: " + ", ".join(still_bare) + "."]
+    lines = [f"# Job run {run['id']}", "", f"{run['started']}.", "", "```"] + digest(run, budget) + ["```"]
+    for f in run.get("fields_added", []):
+        lines += ["", f"## Field added: {f['wording']}", "", f"For {f['label']}. Dictionary version {f['version']}. "
+                  f"Field name `{f['field']}`. Values: " + ", ".join(f["values"].values()) + "."]
+    for f in run.get("fields_held", []):
+        lines += ["", f"## No field for {f['label']}", ""]
+        lines += [f"- \"{t['wording']}\" ({', '.join(t['values'].values())}): " + "; ".join(t["why"]) for t in f["tried"]]
+    if passed:
+        lines += ["", "## Added to the game" if not run["rehearse"] else "## Passed every check", ""]
+        for t in passed:
+            judged = ", ".join(t.get("judged_not_sourced") or [])
+            lines.append(f"- **{t['name']}**: familiar {t['familiar']}; tile `{t['tile']}`"
+                         + (f"; judged, not sourced: {judged}" if judged else "")
+                         + (f". Drawn as: {t['draw']}" if t.get("draw") else ""))
+    held = [t for t in run["things"] if t.get("held_as")]
+    if held:
+        lines += ["", "## Held", ""]
+        lines += [f"- **{t['name']}** ({t['held_as']}): " + "; ".join([t.get("no_tile")] if t["passed"] and t.get("no_tile") else t["why"])
+                  for t in held]
     if not_needed:
-        lines += ["", "## Suggested, and not needed", "",
-                  "Sound things that belong to another group. They are not in the queue."]
+        lines += ["", "## Suggested, and not needed", "", "Sound things that belong to another group. They are not held."]
         lines += [f"- **{t['name']}**: " + "; ".join(t["why"]) for t in not_needed]
-    for title, items in (("Could not be prepared", run["plan"]["blocked"]), ("Nothing to do", run["plan"]["nothing_to_do"])):
+    for title, items in (("Held back by the engine's rules or the owner's word", run["plan"].get("held_back", [])),
+                         ("Nothing to do", run["plan"]["nothing_to_do"])):
         if items:
             lines += ["", f"## {title}", ""] + [f"- {item}" for item in items]
-    if run.get("sheets"):
-        lines += ["", "## Pictures", "", "Contact sheets to glance at: " + ", ".join(f"`tools/pictures/preview/{s}_review.png`" for s in run["sheets"])]
     (folder / "report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def commit(run: dict, summary: str):
+def undo(run_id: str) -> str:
+    """Take a run back, on the owner's word. Its things leave the game and its fields stop
+    sorting boards, so the circles they opened close again. Nothing is deleted: the things,
+    their pictures and the fields are kept and marked, and the circle is held for the
+    owner so that the next run does not simply do it again."""
+    folder = RUNS / run_id
+    run = cat.read_json(folder / "run.json")
+    if run is None:
+        raise SystemExit(f"No run '{run_id}'. See tools/job/runs/.")
+    dictionary, proposals = cat.read_json(cat.DICTIONARY), cat.read_json(PROPOSALS) or {}
+    for f in run.get("fields_added", []):
+        definition = dictionary["fields"].get(f["field"])
+        if definition is not None:
+            definition["sorts_boards"] = False
+            definition["withdrawn"] = {"on": today(), "why": f"the owner took back job run {run_id}"}
+        if f["circle"] in proposals:
+            proposals[f["circle"]]["status"] = f"withdrawn on {today()}: the owner took back job run {run_id}"
+    reslib.write_json(cat.DICTIONARY, dictionary)
+    reslib.write_json(PROPOSALS, proposals)
+    names = []
+    with cat.changing(f"undo of job run {run_id}") as catalogue:
+        for t in run["things"]:
+            entry = catalogue["things"].get(cat.slug(t["name"]))
+            if entry and entry["status"] == cat.IN_GAME and entry.get("drafted_in") == run_id:
+                entry["status"], entry["status_why"] = cat.TAKEN_OUT, [f"the owner took back job run {run_id}"]
+                names.append(entry["name"])
+    tool("publish.py")
+    for f in run.get("fields_added", []):
+        record_decision(f["circle"], f"the owner took back job run {run_id}",
+                        f'the field "{f["wording"]}" is withdrawn and sorts no board', status="waiting",
+                        retry_when="the owner releases it: expand.py decide CIRCLE --status released")
+    run["undone_on"] = today()
+    reslib.write_json(folder / "run.json", run)
+    fields = ", ".join(f'"{f["wording"]}"' for f in run.get("fields_added", []))
+    summary = (f"taken back: {len(names)} thing(s) out of the game ({', '.join(names) or 'none'})"
+               + (f"; withdrawn: {fields}" if fields else ""))
+    return summary + ".  " + commit(run, summary, title=f"Undo of job run {run_id}")
+
+
+def commit(run: dict, summary: str, title: str = None):
     """One commit on the work branch for the run. Never a push. Refuses if any changed
     file holds something shaped like a key, or a key the environment holds."""
     paths = ["tools/job", "tools/catalogue", "tools/content/review_queue.json", "Assets/data/things.json",
+             "Assets/data/dictionary.json", "tools/content/field_proposals.json", "tools/content/expansion_tree.json",
              "Assets/pictures", "tools/pictures", "tools/research/out"]
     git = lambda *args: subprocess.run(["git", "-C", str(ROOT), *args], capture_output=True, text=True,
                                        encoding="utf-8", errors="replace")
@@ -592,14 +884,15 @@ def commit(run: dict, summary: str):
         raise Stop("a changed file holds something shaped like a key. Nothing was committed.")
     if not git("diff", "--cached", "--name-only").stdout.strip():
         return "nothing to commit"
-    done = git("commit", "-q", "-m", f"Job run {run['id']}: {summary}")
+    done = git("commit", "-q", "-m", f"{title or 'Job run ' + run['id']}: {summary}"[:900])
     return "committed" if done.returncode == 0 else f"the commit failed: {done.stderr.strip()[-200:]}"
 
 
 # ------------------------------------------------------------------ the run
 
 def run_job(run: dict, budget: Budget, folder: pathlib.Path):
-    config, dictionary = cat.read_json(reslib.CONFIG), cat.read_json(cat.DICTIONARY)
+    config = cat.read_json(reslib.CONFIG)
+    state = {"dictionary": cat.read_json(cat.DICTIONARY)}      # read again whenever a field is added
     client = reslib.deepseek()
 
     def deepseek_step(work):
@@ -626,7 +919,7 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
                                           "fields": dict(ask["fixed"]), "familiar": offer.get("familiar", 0),
                                           "why": ["the group was filled without it"]})
                 continue
-            result = deepseek_step(lambda spend: ground_thing(client, config, spend, dictionary, ask, offer, run["id"]))
+            result = deepseek_step(lambda spend: ground_thing(client, config, spend, state["dictionary"], ask, offer, run["id"]))
             result["ask"] = number
             run["things"].append(result)
             say(f"  {result['name']}: " + ("facts settled" if result["passed"] else
@@ -635,11 +928,12 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
                 accepted.append(result)
             save()
 
-    # ---- things and their facts, one need at a time
     asks_of_run = run["plan"]["asks"]
-    for number, ask in enumerate(asks_of_run):
+
+    def do_ask(number, ask):
+        """One need: its things and their facts."""
         if ask.get("facts_done"):
-            continue
+            return
         catalogue = cat.load()
         accepted = [t for t in run["things"] if t.get("ask") == number and t["passed"]]
 
@@ -693,7 +987,7 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
             clash = boards_stay_clean(catalogue, ask, together) if accepted else ""
             if clash:
                 for t in accepted:
-                    t["passed"], t["why"] = False, ["uncertain: " + clash]
+                    t["passed"], t["why"] = False, ["the one-solution rule: " + clash]
                 accepted = []
             if len(accepted) < ask["need"]:
                 # a group that cannot open yet is not worth drawing: the money waits for a run that fills it
@@ -701,9 +995,46 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
                     if not t.get("tile"):
                         t["not_drawn"] = True
                         t["no_tile"] = (f"its facts passed, but only {len(accepted)} of the {ask['need']} things the group "
-                                        "needs did, so it was not drawn. Run again with --retry-held to carry on")
+                                        "needs did, so it was not drawn. A later run carries on from here")
                 say(f"  only {len(accepted)} of the {ask['need']} needed passed; nothing of this group is drawn")
         ask["facts_done"] = True
+        save()
+
+    def affordable(entry) -> bool:
+        """Is a circle worth starting with what is left of the cap? Its likely cost is
+        counted together with the pictures already owed to the things accepted so far."""
+        owed = sum(1 for t in run["things"] if t["passed"] and not t.get("tile") and not t.get("not_drawn"))
+        likely = likely_usd(owed + entry["expect_things"]) + entry["needs_field"] * FIELD_LIKELY_USD
+        return likely <= budget.left * SHARE_OF_CAP
+
+    # ---- pictures owed to things already in the game, and whatever a rehearsal asked for
+    for number, ask in enumerate(list(asks_of_run)):
+        do_ask(number, ask)
+    # ---- the circles, in the engine's order: a field where one is missing, then things and their facts
+    for entry in run["plan"]["circles"]:
+        if entry.get("done"):
+            continue
+        if not affordable(entry):
+            say(f"\n== {entry['label']}: left for a later run; the cap would not cover it ==")
+            break
+        if entry["needs_field"] and not entry.get("field_added"):
+            say(f"\n== {entry['chain']}: it needs a field ==")
+            if not settle_field(client, config, deepseek_step, run, entry):
+                entry["done"] = True
+                save()
+                continue
+            entry["field_added"] = True
+            state["dictionary"] = cat.read_json(cat.DICTIONARY)
+            save()
+        if "asks" not in entry:
+            its_asks, its_blocked = asks_for(cat.load(), entry["circle"])
+            run["plan"]["blocked"] += its_blocked
+            entry["asks"] = list(range(len(asks_of_run), len(asks_of_run) + len(its_asks)))
+            asks_of_run += its_asks
+            save()
+        for number in entry["asks"]:
+            do_ask(number, asks_of_run[number])
+        entry["done"] = True
         save()
 
     # ---- pictures, for everything that needs one, pooled onto as few sheets as will hold them
@@ -737,11 +1068,19 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
                 save()
 
 
+def open_circles() -> dict:
+    return {cid: c["label"] for cid, c in cat.load()["worked_out"]["circles"].items() if c["can_open_now"]}
+
+
 def main():
     argv = sys.argv[1:]
     option = lambda flag: argv[argv.index(flag) + 1] if flag in argv else None
     rate = cat.read_json(PLAN)["prices"]["inr_per_usd"]
     cap = float(option("--cap") or DEFAULT_CAP_INR)
+
+    if "--undo" in argv:
+        say(undo(option("--undo")))
+        return
 
     if "--accept" in argv:
         folder = RUNS / option("--accept")
@@ -749,10 +1088,10 @@ def main():
         if run is None or not run["rehearse"]:
             raise SystemExit("--accept takes the id of a rehearsal run.")
         held = {cat.slug(e["name"]) for e in cat.load()["things"].values()
-                if e.get("held_from") == f"job:{run['id']}" and e["status"] in cat.HELD}
+                if e.get("held_from") == f"job:{run['id']}" and e["status"] in cat.OFF_GAME}
         run["things"] = [dict(t, passed=t["passed"] and cat.slug(t["name"]) in held) for t in run["things"]]
         put_in_the_game(run)
-        hold_for_the_owner(run, rehearsal=False)
+        hold(run, rehearsal=False)
         run["rehearse"], run["accepted_on"] = None, today()
         reslib.write_json(folder / "run.json", run)
         added = [t["name"] for t in run["things"] if t["passed"] and t.get("tile")]
@@ -773,32 +1112,39 @@ def main():
         rehearse = option("--rehearse")
         if rehearse and rehearse not in catalogue["worked_out"]["circles"]:
             raise SystemExit(f"No circle '{rehearse}'. See: python tools/catalogue/catalogue.py circles")
-        the_plan = plan(catalogue, rehearse)
-        likely, most = expected_cost(the_plan["asks"], rate)
+        played = None if rehearse else read_progress(option("--progress") or PROGRESS)
+        the_plan = plan(catalogue, rehearse, played)
+        likely, fit = expected_cost(the_plan, rate, cap)
         say("PLAN" + (f" (a rehearsal of '{rehearse}': nothing will enter the game)" if rehearse else ""))
+        say("  The child's saved progress: " + ("none found, so every circle one step from an open board is prepared"
+                                               if played is None else "he has played " + ", ".join(sorted(played))))
         for ask in the_plan["asks"]:
             if ask.get("pictures_for"):
                 say(f"  {ask['chain']}: draw pictures for {', '.join(ask['pictures_for'])}, already in the game")
             else:
                 say(f"  {ask['chain']}: find {ask['need']} more thing(s), with one to spare; facts, pictures, checks")
+        for number, entry in enumerate(the_plan["circles"]):
+            say(f"  {number + 1}. {entry['chain']}: " + ("a field, then " if entry["needs_field"] else "")
+                + f"about {entry['expect_things']} things" + ("" if number < fit else "  (a later run: the cap)"))
         for line in the_plan["blocked"]:
             say(f"  cannot prepare - {line}")
-        for line in the_plan["nothing_to_do"]:
-            say(f"  nothing to do - {line}")
-        if not (the_plan["asks"] or the_plan["blocked"] or the_plan["nothing_to_do"]):
-            say("  The owner has approved no circle that is still closed. Nothing to prepare.")
-        say(f"Expected cost: about Rs {likely:.0f}; at most Rs {most:.0f}. The hard cap for this run: Rs {cap:.0f}.")
+        for line in the_plan["held_back"]:
+            say(f"  held back - {line}")
+        if not (the_plan["asks"] or the_plan["circles"]):
+            say("  Every circle one step ahead is prepared, or held with its reason. Nothing to do.")
+        say(f"Expected cost of this run: about Rs {likely:.0f}. The hard cap: Rs {cap:.0f}.")
         if "--dry-run" in argv:
             say("A dry run: nothing was sent and nothing was spent.")
             return
-        if not the_plan["asks"]:
+        if not (the_plan["asks"] or the_plan["circles"]):
             return
         RUNS.mkdir(parents=True, exist_ok=True)
         run_id = f"{today()}-{1 + sum(1 for p in RUNS.iterdir() if p.name.startswith(today())):02d}"
         folder = RUNS / run_id
         folder.mkdir()
         run = {"id": run_id, "started": today(), "rehearse": rehearse, "cap_inr": cap, "plan": the_plan,
-               "retry_held": "--retry-held" in argv, "things": [], "sheets": [], "stopped": ""}
+               "retry_held": True, "things": [], "sheets": [], "stopped": "", "fields_added": [], "fields_held": [],
+               "open_before": sorted(open_circles())}
         budget = Budget(cap, rate)
 
     run["stopped"] = ""
@@ -809,16 +1155,21 @@ def main():
         say(f"\nSTOPPED: {stop}")
     if not run["rehearse"]:
         put_in_the_game(run)
-    hold_for_the_owner(run, rehearsal=bool(run["rehearse"]))
+    hold(run, rehearsal=bool(run["rehearse"]))
+    rebuild_tree()        # the engine's file, as the data now stands
+    now_open = open_circles()
+    run["opened"] = [label for cid, label in now_open.items() if cid not in run.get("open_before", [])]
     run["spent_usd"] = budget.spent
     reslib.write_json(folder / "run.json", run)
     write_report(run, budget, folder)
-    passed = [t["name"] for t in run["things"] if t["passed"] and t.get("tile")]
-    waiting = [t["name"] for t in run["things"] if not (t["passed"] and t.get("tile")) and not t.get("not_needed")]
-    summary = (("rehearsal, held for the owner: " if run["rehearse"] else "added ") + (", ".join(passed) or "nothing")
-               + (f"; in the queue: {', '.join(waiting)}" if waiting else ""))
-    say(f"\n{summary}\nSpent: {budget.line()}.")
+    say("\n" + "\n".join(digest(run, budget)))
+    added = [t["name"] for t in run["things"] if t["passed"] and t.get("tile") and not t.get("in_game")]
+    summary = (("rehearsal, held for the owner: " if run["rehearse"] else f"{len(added)} thing(s) added")
+               + (", ".join(added) if run["rehearse"] else "")
+               + (f"; opened {', '.join(run['opened'])}" if run["opened"] else "")
+               + (f"; fields added for {', '.join(f['label'] for f in run['fields_added'])}" if run.get("fields_added") else ""))
     say(f"Report: tools/job/runs/{run['id']}/report.md.  " + commit(run, summary))
+
 
 
 if __name__ == "__main__":

@@ -2249,6 +2249,51 @@
       "reviewed": 4,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10"
+    },
+    "broom": {
+      "name": "Broom",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked, approved by the owner",
+      "drafted_in": "2026-10-06-10",
+      "notes": {
+        "general": "Held at first: uncertain: the approved proposal lists it in this group; the pages and the judgements point to 'Tools', not 'Things in the house'; it could not be settled that it belongs in 'Things to clean with'"
+      }
+    },
+    "mop": {
+      "name": "Mop",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked, approved by the owner",
+      "drafted_in": "2026-10-06-10",
+      "notes": {
+        "general": "Held at first: uncertain: the approved proposal lists it in this group; the pages and the judgements point to 'Tools', not 'Things in the house'; it could not be settled that it belongs in 'Things to clean with'"
+      }
+    },
+    "sponge": {
+      "name": "Sponge",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked, approved by the owner",
+      "drafted_in": "2026-10-06-10",
+      "notes": {
+        "general": "Held at first: read again by its narrowed title, 'Sponge (tool)': run 10 had read the page about the sea animal; the pages and the judgements point to 'Tools', not 'Things in the house'; it could not be settled that it belongs in 'Things to clean with'"
+      }
     }
   }
 }

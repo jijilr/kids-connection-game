@@ -204,7 +204,8 @@ def propose(client, config, spend, dictionary: dict, chain: str, names: list, ea
 def sort_twice(client, config, spend, chain: str, candidate: dict, names: list) -> tuple:
     """The same things sorted by two calls that share no wording: a parent putting each
     card on one pile, and a checker listing every group a thing could go in."""
-    piles = "; ".join(f'{v["key"]} = "{v["label"]}"' for v in candidate["values"])
+    piles = "; ".join(f'{v["key"]} = "{v["label"]}"' + (f' (such as {", ".join(v["such_as"])})' if v.get("such_as") else "")
+                      for v in candidate["values"])
     listing = "\n".join(names)
     most = 200 + 25 * len(names)
     first = reslib.ask(client, config, spend, SORTER, SORT_TASK.format(

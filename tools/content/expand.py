@@ -234,7 +234,7 @@ def what_is_missing(circle: dict) -> str:
     return " and ".join(parts)
 
 
-def rebuild() -> dict:
+def rebuild(write: bool = True) -> dict:
     dictionary = read_json(DICTIONARY)
     things = read_json(THINGS)["things"]
     old = (read_json(TREE, {}) or {}).get("circles", {})
@@ -261,7 +261,8 @@ def rebuild() -> dict:
         "proposals": chosen,
         "circles": circles,
     }
-    write_json(TREE, tree)
+    if write:
+        write_json(TREE, tree)
     return tree
 
 

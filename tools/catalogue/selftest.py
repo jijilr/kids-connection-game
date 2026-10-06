@@ -107,6 +107,7 @@ def test_nothing_is_ever_deleted():
 
 def test_the_queue_is_a_view_of_what_is_held():
     def test():
+        others = {k: e["status"] for k, e in cat.load()["things"].items() if e.get("held_from")}
         cat.set_queue("check:selftest", [{"name": "Glow-worm", "fields": {"kind_of_thing": "animal"},
                                           "familiar": 0.4, "why": ["the checker doubts a four-year-old would recognise it"]}])
         after = cat.load()
@@ -119,7 +120,8 @@ def test_the_queue_is_a_view_of_what_is_held():
         after = cat.load()
         assert after["things"]["glow_worm"]["status"] == cat.TAKEN_OUT and "glow_worm" in after["things"]
         assert all(e["name"] != "Glow-worm" for e in cat.read_json(cat.QUEUE)["for_the_owner"])
-        assert after["things"]["salamander"]["status"] == cat.WAITING      # another script's entry is untouched
+        # what the other scripts hold is untouched
+        assert others and all(after["things"][k]["status"] == status for k, status in others.items())
     in_a_copy(test)
 
 

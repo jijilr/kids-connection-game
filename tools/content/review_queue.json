@@ -1,52 +1,6 @@
 {
   "for_the_owner": [
     {
-      "name": "Wind",
-      "fields": {
-        "kind_of_thing": "nature_not_alive"
-      },
-      "why": [
-        "the drafter was unsure: Wind cannot be seen, only felt, so a child may know the word but not picture it as a thing."
-      ],
-      "from": "check:seed_and_animals"
-    },
-    {
-      "name": "Salamander",
-      "fields": {
-        "kind_of_thing": "animal",
-        "kind_of_animal": "amphibian",
-        "extinct": false
-      },
-      "why": [
-        "the checker doubts a four-year-old would recognise it"
-      ],
-      "from": "check:seed_and_animals"
-    },
-    {
-      "name": "Newt",
-      "fields": {
-        "kind_of_thing": "animal",
-        "kind_of_animal": "amphibian",
-        "extinct": false
-      },
-      "why": [
-        "the checker doubts a four-year-old would recognise it"
-      ],
-      "from": "check:seed_and_animals"
-    },
-    {
-      "name": "Caecilian",
-      "fields": {
-        "kind_of_thing": "animal",
-        "kind_of_animal": "amphibian",
-        "extinct": false
-      },
-      "why": [
-        "the checker doubts a four-year-old would recognise it"
-      ],
-      "from": "check:seed_and_animals"
-    },
-    {
       "name": "Basilisk",
       "fields": {},
       "why": [
@@ -85,199 +39,132 @@
         "a plant the owner is keeping for a later board"
       ],
       "from": "owner"
+    }
+  ],
+  "held_by_the_rules": [
+    {
+      "name": "Wind",
+      "why": [
+        "the drafter was unsure: Wind cannot be seen, only felt, so a child may know the word but not picture it as a thing.",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
+      ],
+      "from": "check:seed_and_animals"
+    },
+    {
+      "name": "Salamander",
+      "why": [
+        "the checker doubts a four-year-old would recognise it",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
+      ],
+      "from": "check:seed_and_animals"
+    },
+    {
+      "name": "Newt",
+      "why": [
+        "the checker doubts a four-year-old would recognise it",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
+      ],
+      "from": "check:seed_and_animals"
+    },
+    {
+      "name": "Caecilian",
+      "why": [
+        "the checker doubts a four-year-old would recognise it",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
+      ],
+      "from": "check:seed_and_animals"
     },
     {
       "name": "Ocean",
-      "fields": {
-        "kind_of_thing": "nature_not_alive",
-        "kind_of_nature": "water"
-      },
       "why": [
-        "the drafter was unsure: A young child may not clearly tell an ocean apart from a sea."
+        "the drafter was unsure: A young child may not clearly tell an ocean apart from a sea.",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
-      "from": "check:made_and_nature",
-      "familiar": 0.75
+      "from": "check:made_and_nature"
     },
     {
       "name": "Sand dune",
-      "fields": {
-        "kind_of_thing": "nature_not_alive",
-        "kind_of_nature": "land"
-      },
       "why": [
-        "the drafter was unsure: A child in India may know sand from beaches but not the word 'dune'."
+        "the drafter was unsure: A child in India may know sand from beaches but not the word 'dune'.",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
-      "from": "check:land_top_up",
-      "familiar": 0.55
+      "from": "check:land_top_up"
     },
     {
       "name": "Drum",
-      "fields": {
-        "kind_of_thing": "made_by_people",
-        "kind_of_made_thing": "toy"
-      },
       "why": [
-        "kind_of_made_thing: debated - A drum is a musical instrument, and while children play with toy drums, its main use is making music rather than being a toy."
+        "kind_of_made_thing: debated - A drum is a musical instrument, and while children play with toy drums, its main use is making music rather than being a toy.",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
-      "from": "check:toys_top_up",
-      "familiar": 0.9
+      "from": "check:toys_top_up"
     },
     {
       "name": "Farmhouse",
-      "fields": {
-        "kind_of_thing": "made_by_people",
-        "kind_of_made_thing": "building"
-      },
       "why": [
-        "the check doubts a four-year-old would recognise it"
+        "the check doubts a four-year-old would recognise it",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
-      "from": "job:2026-10-06-01",
-      "familiar": 0.6
+      "from": "job:2026-10-06-01"
     },
     {
       "name": "Mint plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "leaves"
-      },
       "why": [
         "the pages and the judgements point to 'Flowers', not 'Vegetable plants'",
-        "it could not be settled that it belongs in 'The leaves'"
+        "it could not be settled that it belongs in 'The leaves'",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
-      "from": "job:2026-10-06-06",
-      "familiar": 0.9
+      "from": "job:2026-10-06-06"
     },
     {
       "name": "Curry leaf plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "tree_academic": true,
-        "part_we_eat": "leaves"
-      },
       "why": [
         "the pages and the judgements point to 'Trees', not 'Vegetable plants'",
-        "it could not be settled that it belongs in 'The leaves'"
+        "it could not be settled that it belongs in 'The leaves'",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
-      "from": "job:2026-10-06-06",
-      "familiar": 0.9
+      "from": "job:2026-10-06-06"
     },
     {
       "name": "Drumstick plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "extinct": false,
-        "kind_of_plant": "vegetable",
-        "tree_academic": true,
-        "part_we_eat": "seeds_or_pods"
-      },
       "why": [
         "uncertain: the approved proposal lists it in this group",
         "the pages and the judgements point to 'Trees', not 'Vegetable plants'",
-        "it could not be settled that it belongs in 'The seeds or pods'"
+        "it could not be settled that it belongs in 'The seeds or pods'",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
-      "from": "job:2026-10-06-09",
-      "familiar": 0.9
+      "from": "job:2026-10-06-09"
     },
     {
       "name": "Cluster bean plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "seeds_or_pods"
-      },
       "why": [
-        "the check doubts a four-year-old would recognise it"
+        "the check doubts a four-year-old would recognise it",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
-      "from": "job:2026-10-06-08",
-      "familiar": 0.5
+      "from": "job:2026-10-06-08"
     },
     {
       "name": "Cowpea plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "seeds_or_pods"
-      },
       "why": [
-        "the check doubts a four-year-old would recognise it"
+        "the check doubts a four-year-old would recognise it",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
-      "from": "job:2026-10-06-08",
-      "familiar": 0.5
+      "from": "job:2026-10-06-08"
     },
     {
       "name": "Field bean plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "seeds_or_pods"
-      },
       "why": [
-        "the check doubts a four-year-old would recognise it"
+        "the check doubts a four-year-old would recognise it",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
-      "from": "job:2026-10-06-08",
-      "familiar": 0.5
+      "from": "job:2026-10-06-08"
     },
     {
       "name": "Green gram plant",
-      "fields": {
-        "kind_of_thing": "plant",
-        "kind_of_plant": "vegetable",
-        "part_we_eat": "seeds_or_pods"
-      },
       "why": [
-        "the check doubts a four-year-old would recognise it"
+        "the check doubts a four-year-old would recognise it",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
-      "from": "job:2026-10-06-08",
-      "familiar": 0.5
-    },
-    {
-      "name": "Broom",
-      "fields": {
-        "kind_of_thing": "made_by_people",
-        "kind_of_made_thing": "household",
-        "kind_of_house_thing": "cleaning"
-      },
-      "why": [
-        "uncertain: the approved proposal lists it in this group",
-        "the pages and the judgements point to 'Tools', not 'Things in the house'",
-        "it could not be settled that it belongs in 'Things to clean with'"
-      ],
-      "from": "job:2026-10-06-10",
-      "familiar": 0.9
-    },
-    {
-      "name": "Mop",
-      "fields": {
-        "kind_of_thing": "made_by_people",
-        "kind_of_made_thing": "household",
-        "kind_of_house_thing": "cleaning"
-      },
-      "why": [
-        "uncertain: the approved proposal lists it in this group",
-        "the pages and the judgements point to 'Tools', not 'Things in the house'",
-        "it could not be settled that it belongs in 'Things to clean with'"
-      ],
-      "from": "job:2026-10-06-10",
-      "familiar": 0.9
-    },
-    {
-      "name": "Sponge",
-      "fields": {
-        "kind_of_thing": "made_by_people",
-        "kind_of_made_thing": "household",
-        "kind_of_house_thing": "cleaning"
-      },
-      "why": [
-        "read again by its narrowed title, 'Sponge (tool)': run 10 had read the page about the sea animal",
-        "the pages and the judgements point to 'Tools', not 'Things in the house'",
-        "it could not be settled that it belongs in 'Things to clean with'"
-      ],
-      "from": "job:2026-10-06-10",
-      "familiar": 0.9
+      "from": "job:2026-10-06-08"
     }
   ]
 }

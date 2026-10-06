@@ -11979,9 +11979,10 @@
     },
     "wind": {
       "name": "Wind",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "the drafter was unsure: Wind cannot be seen, only felt, so a child may know the word but not picture it as a thing."
+        "the drafter was unsure: Wind cannot be seen, only felt, so a child may know the word but not picture it as a thing.",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
       "held_from": "check:seed_and_animals",
       "fields": {
@@ -12001,9 +12002,10 @@
     },
     "salamander": {
       "name": "Salamander",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "the checker doubts a four-year-old would recognise it"
+        "the checker doubts a four-year-old would recognise it",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
       "held_from": "check:seed_and_animals",
       "fields": {
@@ -12026,9 +12028,10 @@
     },
     "newt": {
       "name": "Newt",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "the checker doubts a four-year-old would recognise it"
+        "the checker doubts a four-year-old would recognise it",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
       "held_from": "check:seed_and_animals",
       "fields": {
@@ -12051,9 +12054,10 @@
     },
     "caecilian": {
       "name": "Caecilian",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "the checker doubts a four-year-old would recognise it"
+        "the checker doubts a four-year-old would recognise it",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
       "held_from": "check:seed_and_animals",
       "fields": {
@@ -12331,9 +12335,10 @@
     },
     "ocean": {
       "name": "Ocean",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "the drafter was unsure: A young child may not clearly tell an ocean apart from a sea."
+        "the drafter was unsure: A young child may not clearly tell an ocean apart from a sea.",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
       "held_from": "check:made_and_nature",
       "fields": {
@@ -12356,9 +12361,10 @@
     },
     "sand_dune": {
       "name": "Sand dune",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "the drafter was unsure: A child in India may know sand from beaches but not the word 'dune'."
+        "the drafter was unsure: A child in India may know sand from beaches but not the word 'dune'.",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
       "held_from": "check:land_top_up",
       "fields": {
@@ -12381,9 +12387,10 @@
     },
     "drum": {
       "name": "Drum",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "kind_of_made_thing: debated - A drum is a musical instrument, and while children play with toy drums, its main use is making music rather than being a toy."
+        "kind_of_made_thing: debated - A drum is a musical instrument, and while children play with toy drums, its main use is making music rather than being a toy.",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
       "held_from": "check:toys_top_up",
       "fields": {
@@ -12974,9 +12981,10 @@
     },
     "farmhouse": {
       "name": "Farmhouse",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "the check doubts a four-year-old would recognise it"
+        "the check doubts a four-year-old would recognise it",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
       "held_from": "job:2026-10-06-01",
       "fields": {
@@ -13801,10 +13809,11 @@
     },
     "mint_plant": {
       "name": "Mint plant",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
         "the pages and the judgements point to 'Flowers', not 'Vegetable plants'",
-        "it could not be settled that it belongs in 'The leaves'"
+        "it could not be settled that it belongs in 'The leaves'",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
       "held_from": "job:2026-10-06-06",
       "fields": {
@@ -13868,10 +13877,11 @@
     },
     "curry_leaf_plant": {
       "name": "Curry leaf plant",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
         "the pages and the judgements point to 'Trees', not 'Vegetable plants'",
-        "it could not be settled that it belongs in 'The leaves'"
+        "it could not be settled that it belongs in 'The leaves'",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
       "held_from": "job:2026-10-06-06",
       "fields": {
@@ -14910,11 +14920,12 @@
     },
     "drumstick_plant": {
       "name": "Drumstick plant",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
         "uncertain: the approved proposal lists it in this group",
         "the pages and the judgements point to 'Trees', not 'Vegetable plants'",
-        "it could not be settled that it belongs in 'The seeds or pods'"
+        "it could not be settled that it belongs in 'The seeds or pods'",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
       "held_from": "job:2026-10-06-09",
       "fields": {
@@ -14985,9 +14996,10 @@
     },
     "cluster_bean_plant": {
       "name": "Cluster bean plant",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "the check doubts a four-year-old would recognise it"
+        "the check doubts a four-year-old would recognise it",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
       "held_from": "job:2026-10-06-08",
       "fields": {
@@ -15012,9 +15024,10 @@
     },
     "cowpea_plant": {
       "name": "Cowpea plant",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "the check doubts a four-year-old would recognise it"
+        "the check doubts a four-year-old would recognise it",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
       "held_from": "job:2026-10-06-08",
       "fields": {
@@ -15039,9 +15052,10 @@
     },
     "field_bean_plant": {
       "name": "Field bean plant",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "the check doubts a four-year-old would recognise it"
+        "the check doubts a four-year-old would recognise it",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
       "held_from": "job:2026-10-06-08",
       "fields": {
@@ -15066,9 +15080,10 @@
     },
     "green_gram_plant": {
       "name": "Green gram plant",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "the check doubts a four-year-old would recognise it"
+        "the check doubts a four-year-old would recognise it",
+        "held by the rules since 7 Oct 2026: a check's doubt is no longer sent to the owner"
       ],
       "held_from": "job:2026-10-06-08",
       "fields": {
@@ -17792,25 +17807,45 @@
     },
     "broom": {
       "name": "Broom",
-      "status": "waiting for the owner",
-      "status_why": [
-        "uncertain: the approved proposal lists it in this group",
-        "the pages and the judgements point to 'Tools', not 'Things in the house'",
-        "it could not be settled that it belongs in 'Things to clean with'"
-      ],
-      "held_from": "job:2026-10-06-10",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "household",
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked, approved by the owner",
+      "drafted_in": "2026-10-06-10",
+      "notes": {
+        "general": "Held at first: uncertain: the approved proposal lists it in this group; the pages and the judgements point to 'Tools', not 'Things in the house'; it could not be settled that it belongs in 'Things to clean with'"
+      },
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "made_by_people",
           "made_by_people/household",
           "made_by_people/household/cleaning"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "cleaning",
+            "open_now": true
+          }
         ]
       },
       "sources": {
@@ -17855,25 +17890,45 @@
     },
     "mop": {
       "name": "Mop",
-      "status": "waiting for the owner",
-      "status_why": [
-        "uncertain: the approved proposal lists it in this group",
-        "the pages and the judgements point to 'Tools', not 'Things in the house'",
-        "it could not be settled that it belongs in 'Things to clean with'"
-      ],
-      "held_from": "job:2026-10-06-10",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "household",
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked, approved by the owner",
+      "drafted_in": "2026-10-06-10",
+      "notes": {
+        "general": "Held at first: uncertain: the approved proposal lists it in this group; the pages and the judgements point to 'Tools', not 'Things in the house'; it could not be settled that it belongs in 'Things to clean with'"
+      },
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "made_by_people",
           "made_by_people/household",
           "made_by_people/household/cleaning"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "cleaning",
+            "open_now": true
+          }
         ]
       },
       "sources": {
@@ -17918,25 +17973,45 @@
     },
     "sponge": {
       "name": "Sponge",
-      "status": "waiting for the owner",
-      "status_why": [
-        "read again by its narrowed title, 'Sponge (tool)': run 10 had read the page about the sea animal",
-        "the pages and the judgements point to 'Tools', not 'Things in the house'",
-        "it could not be settled that it belongs in 'Things to clean with'"
-      ],
-      "held_from": "job:2026-10-06-10",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "household",
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked, approved by the owner",
+      "drafted_in": "2026-10-06-10",
+      "notes": {
+        "general": "Held at first: read again by its narrowed title, 'Sponge (tool)': run 10 had read the page about the sea animal; the pages and the judgements point to 'Tools', not 'Things in the house'; it could not be settled that it belongs in 'Things to clean with'"
+      },
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "made_by_people",
           "made_by_people/household",
           "made_by_people/household/cleaning"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "cleaning",
+            "open_now": true
+          }
         ]
       },
       "sources": {
@@ -17982,8 +18057,8 @@
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 184,
-      "waiting for the owner": 18,
+      "in the game": 187,
+      "held by the rules": 15,
       "kept for later": 5,
       "excluded": 3,
       "taken out of the game": 9
@@ -18002,7 +18077,7 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 184,
+        "things": 187,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
@@ -18023,7 +18098,7 @@
           },
           "made_by_people": {
             "label": "Things people make",
-            "things": 57,
+            "things": 60,
             "with_picture": 57
           }
         },
@@ -18135,15 +18210,15 @@
         "could_be_filled_by": [
           {
             "name": "Salamander",
-            "status": "waiting for the owner"
+            "status": "held by the rules"
           },
           {
             "name": "Newt",
-            "status": "waiting for the owner"
+            "status": "held by the rules"
           },
           {
             "name": "Caecilian",
-            "status": "waiting for the owner"
+            "status": "held by the rules"
           }
         ],
         "open_by_its_things": false,
@@ -18342,11 +18417,11 @@
         "could_be_filled_by": [
           {
             "name": "Mint plant",
-            "status": "waiting for the owner"
+            "status": "held by the rules"
           },
           {
             "name": "Curry leaf plant",
-            "status": "waiting for the owner"
+            "status": "held by the rules"
           }
         ],
         "open_by_its_things": false,
@@ -18362,23 +18437,23 @@
         "could_be_filled_by": [
           {
             "name": "Drumstick plant",
-            "status": "waiting for the owner"
+            "status": "held by the rules"
           },
           {
             "name": "Cluster bean plant",
-            "status": "waiting for the owner"
+            "status": "held by the rules"
           },
           {
             "name": "Cowpea plant",
-            "status": "waiting for the owner"
+            "status": "held by the rules"
           },
           {
             "name": "Field bean plant",
-            "status": "waiting for the owner"
+            "status": "held by the rules"
           },
           {
             "name": "Green gram plant",
-            "status": "waiting for the owner"
+            "status": "held by the rules"
           }
         ],
         "open_by_its_things": false,
@@ -18435,7 +18510,7 @@
         "could_be_filled_by": [
           {
             "name": "Ocean",
-            "status": "waiting for the owner"
+            "status": "held by the rules"
           }
         ],
         "open_by_its_things": false,
@@ -18451,7 +18526,7 @@
         "could_be_filled_by": [
           {
             "name": "Sand dune",
-            "status": "waiting for the owner"
+            "status": "held by the rules"
           }
         ],
         "open_by_its_things": false,
@@ -18472,7 +18547,7 @@
       },
       "made_by_people": {
         "label": "Things people make",
-        "things": 57,
+        "things": 60,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_made_thing",
         "groups": {
@@ -18488,7 +18563,7 @@
           },
           "household": {
             "label": "Things in the house",
-            "things": 19,
+            "things": 22,
             "with_picture": 19
           },
           "tool": {
@@ -18584,7 +18659,7 @@
         "could_be_filled_by": [
           {
             "name": "Drum",
-            "status": "waiting for the owner"
+            "status": "held by the rules"
           }
         ],
         "open_by_its_things": false,
@@ -18595,7 +18670,7 @@
       },
       "made_by_people/household": {
         "label": "Things in the house",
-        "things": 19,
+        "things": 22,
         "steps_from_seed": 2,
         "sorted_by": "kind_of_house_thing",
         "groups": {
@@ -18611,7 +18686,7 @@
           },
           "cleaning": {
             "label": "Things to clean with",
-            "things": 5,
+            "things": 8,
             "with_picture": 5
           },
           "electric": {
@@ -18646,26 +18721,12 @@
       },
       "made_by_people/household/cleaning": {
         "label": "Things to clean with",
-        "things": 5,
+        "things": 8,
         "steps_from_seed": 3,
-        "could_be_filled_by": [
-          {
-            "name": "Broom",
-            "status": "waiting for the owner"
-          },
-          {
-            "name": "Mop",
-            "status": "waiting for the owner"
-          },
-          {
-            "name": "Sponge",
-            "status": "waiting for the owner"
-          }
-        ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 8 more things"
         ]
       },
       "made_by_people/household/electric": {
@@ -18695,7 +18756,7 @@
         "could_be_filled_by": [
           {
             "name": "Farmhouse",
-            "status": "waiting for the owner"
+            "status": "held by the rules"
           }
         ],
         "open_by_its_things": false,
@@ -18711,7 +18772,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "the assistant, after job run 2026-10-06-10",
-    "on": "2026-10-06"
+    "by": "catalogue.py refresh",
+    "on": "2026-10-07"
   }
 }

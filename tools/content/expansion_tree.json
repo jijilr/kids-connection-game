@@ -2,7 +2,7 @@
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-10-07",
   "dictionary_version": 4,
-  "things": 184,
+  "things": 187,
   "rules": {
     "weights": {
       "nearness": 3,
@@ -33,18 +33,18 @@
     }
   },
   "proposals": [
+    "nature_not_alive/sky",
     "nature_not_alive/water",
     "nature_not_alive/land",
     "nature_not_alive/ground",
-    "animal/reptile",
-    "animal/bird"
+    "animal/mammal"
   ],
   "circles": {
     "seed": {
       "label": "Everything",
       "steps_from_seed": 0,
       "branch": null,
-      "members": 184,
+      "members": 187,
       "open": true,
       "sorted_by": "kind_of_thing",
       "decisions": [],
@@ -77,6 +77,12 @@
           "why": "held without a reason given; Vehicles and Things in the house go first",
           "status": "waiting",
           "retry_when": "the owner takes it up again"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "back with the rules, by the owner's ruling of 7 Oct 2026",
+          "why": "he held a field proposed to him; fields are now proposed by the model and decided by four tests, and every circle one step from an open board is to be prepared",
+          "status": "released"
         }
       ],
       "factors": {
@@ -87,8 +93,7 @@
       },
       "score": 3.8,
       "move": "widening",
-      "status": "held",
-      "held_by": "the owner: held without a reason given; Vehicles and Things in the house go first; until the owner takes it up again"
+      "status": "proposable"
     },
     "animal/bird": {
       "label": "Birds",
@@ -353,6 +358,12 @@
           "why": "thin groups, and one tree can truly give several things (a mango tree gives fruit, shade and wood), which risks a second solution",
           "status": "waiting",
           "retry_when": "a field is found in which each tree has one true value"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "back with the rules, by the owner's ruling of 7 Oct 2026",
+          "why": "he held a field proposed to him; fields are now proposed by the model and decided by four tests, and every circle one step from an open board is to be prepared",
+          "status": "released"
         }
       ],
       "factors": {
@@ -363,8 +374,7 @@
       },
       "score": 3.6,
       "move": "widening",
-      "status": "held",
-      "held_by": "the owner: thin groups, and one tree can truly give several things (a mango tree gives fruit, shade and wood), which risks a second solution; until a field is found in which each tree has one true value"
+      "status": "proposable"
     },
     "plant/flower": {
       "label": "Flowers",
@@ -383,6 +393,12 @@
           "why": "no four-way split that a four-year-old knows well",
           "status": "waiting",
           "retry_when": "a natural four-way split is found"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "back with the rules, by the owner's ruling of 7 Oct 2026",
+          "why": "he held a field proposed to him; fields are now proposed by the model and decided by four tests, and every circle one step from an open board is to be prepared",
+          "status": "released"
         }
       ],
       "factors": {
@@ -393,8 +409,7 @@
       },
       "score": 3.6,
       "move": "widening",
-      "status": "held",
-      "held_by": "the owner: no four-way split that a four-year-old knows well; until a natural four-way split is found"
+      "status": "proposable"
     },
     "plant/grass_grain": {
       "label": "Grasses and grains",
@@ -413,6 +428,12 @@
           "why": "no four-way split that a four-year-old knows well",
           "status": "waiting",
           "retry_when": "a natural four-way split is found"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "back with the rules, by the owner's ruling of 7 Oct 2026",
+          "why": "he held a field proposed to him; fields are now proposed by the model and decided by four tests, and every circle one step from an open board is to be prepared",
+          "status": "released"
         }
       ],
       "factors": {
@@ -423,8 +444,7 @@
       },
       "score": 3.6,
       "move": "widening",
-      "status": "held",
-      "held_by": "the owner: no four-way split that a four-year-old knows well; until a natural four-way split is found"
+      "status": "proposable"
     },
     "plant/vegetable": {
       "label": "Vegetable plants",
@@ -566,6 +586,12 @@
           "why": "no four-way split that a four-year-old knows well",
           "status": "waiting",
           "retry_when": "a natural four-way split is found"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "back with the rules, by the owner's ruling of 7 Oct 2026",
+          "why": "he held a field proposed to him; fields are now proposed by the model and decided by four tests, and every circle one step from an open board is to be prepared",
+          "status": "released"
         }
       ],
       "factors": {
@@ -576,8 +602,7 @@
       },
       "score": 4.6,
       "move": "widening",
-      "status": "held",
-      "held_by": "the owner: no four-way split that a four-year-old knows well; until a natural four-way split is found"
+      "status": "proposable"
     },
     "nature_not_alive/water": {
       "label": "Water",
@@ -646,7 +671,7 @@
       "label": "Things people make",
       "steps_from_seed": 1,
       "branch": "made_by_people",
-      "members": 57,
+      "members": 60,
       "open": true,
       "sorted_by": "kind_of_made_thing",
       "decisions": [],
@@ -783,7 +808,7 @@
       "label": "Things in the house",
       "steps_from_seed": 2,
       "branch": "made_by_people",
-      "members": 19,
+      "members": 22,
       "open": true,
       "sorted_by": "kind_of_house_thing",
       "decisions": [
@@ -845,20 +870,20 @@
       "label": "Things to clean with",
       "steps_from_seed": 3,
       "branch": "made_by_people",
-      "members": 5,
+      "members": 8,
       "open": false,
       "missing": {
         "field": "no field splits it four ways",
-        "things": 11
+        "things": 8
       },
       "decisions": [],
       "factors": {
         "nearness": 0.33,
         "neglect": 0.0,
         "unlocks": 0.33,
-        "cheapness": 0.21
+        "cheapness": 0.25
       },
-      "score": 2.1,
+      "score": 2.2,
       "move": "deepening",
       "status": "held",
       "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
@@ -902,6 +927,12 @@
           "why": "held without a reason given; Vehicles and Things in the house go first",
           "status": "waiting",
           "retry_when": "the owner takes it up again"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "back with the rules, by the owner's ruling of 7 Oct 2026",
+          "why": "he held a field proposed to him; fields are now proposed by the model and decided by four tests, and every circle one step from an open board is to be prepared",
+          "status": "released"
         }
       ],
       "factors": {
@@ -912,8 +943,7 @@
       },
       "score": 2.6,
       "move": "deepening",
-      "status": "held",
-      "held_by": "the owner: held without a reason given; Vehicles and Things in the house go first; until the owner takes it up again"
+      "status": "proposable"
     },
     "made_by_people/building": {
       "label": "Buildings",

@@ -5,10 +5,11 @@
   "rules": [
     "A field holds the everyday meaning, which is what the game sorts by.",
     "An _academic field is added only where science disagrees with the everyday meaning. It never sorts a board and never marks a child wrong.",
-    "A new field enters this file only after the owner has approved its values, and the version number then goes up by one.",
+    "A new field enters this file in one of two ways, and the version number then goes up by one. Up to version 4 the owner approved each field and its values. Since 7 Oct 2026 the job adds a field when it passes four tests: every value has at least four familiar things; every thing it applies to has exactly one value, by two checks that agree; sample boards have one clean solution; and it is not an existing field in other words. Such a field says who added it.",
     "A thing that truly fits more than one value of a field lists them all, and stays off boards sorted by that field.",
     "The value 'depends' is only for things experts debate. It needs a note saying why, and such a thing also stays off boards sorted by that field.",
-    "An _academic field marked `only_where_science_differs` is carried only by the things for which a scientist's answer differs from the everyday one. It is absent everywhere else, and it never sorts a board."
+    "An _academic field marked `only_where_science_differs` is carried only by the things for which a scientist's answer differs from the everyday one. It is absent everywhere else, and it never sorts a board.",
+    "A field marked `withdrawn` was taken back by the owner. It is kept, with the values things carry for it, and never sorts a board."
   ],
   "fields": {
     "kind_of_thing": {
