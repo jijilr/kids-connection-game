@@ -14832,7 +14832,7 @@
       "published_file": "Assets/pictures/ship.webp"
     },
     "job_2026_10_06_11_1_01_c2": {
-      "thing_id": "houseboat",
+      "thing_id": null,
       "expected_thing": "houseboat",
       "master_file": "tools/pictures/tiles/masters/job_2026_10_06_11_1_01_c2.png",
       "master_size": [
@@ -14874,11 +14874,10 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "drawn as a floating box house from abroad, not the houseboat a child in India knows",
       "history": [],
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/houseboat.webp"
+      "reviewed_on": "2026-10-06"
     },
     "job_2026_10_06_11_1_01_c3": {
       "thing_id": "dustpan",
