@@ -1,6 +1,6 @@
 {
-  "version": 9,
-  "status": "version 9. Versions 1 to 4 were approved by the owner. Since 7 Oct 2026 a field is added by the rules when it passes the four tests, and the digest of the run that added it says so. The game reads this file.",
+  "version": 10,
+  "status": "version 10. Versions 1 to 4 were approved by the owner. Since 7 Oct 2026 a field is added by the rules when it passes the four tests, and the digest of the run that added it says so. The game reads this file.",
   "about": "Every field a thing may carry, and the only values that field may take. A field that does not apply to a thing is left out of that thing; it is never written as 'not applicable'. The wording is what a child sees or hears; it is not data.",
   "rules": [
     "A field holds the everyday meaning, which is what the game sorts by.",
@@ -290,6 +290,25 @@
       "since": 9,
       "library": "what_people_do_there",
       "added_by": "the rules, job run 2026-10-07-03"
+    },
+    "how_we_play_with_it": {
+      "wording": "How do we mostly play with it?",
+      "meaning": "everyday",
+      "values": {
+        "throw": "Throw, kick or bat it",
+        "ride": "Ride or sit on it",
+        "build": "Build or make with it",
+        "pretend": "Cuddle it or play pretend",
+        "wheel": "Wheel it along",
+        "fly": "Fly it in the wind",
+        "music": "Make music with it"
+      },
+      "expected_on": {
+        "kind_of_made_thing": "toy"
+      },
+      "since": 10,
+      "library": "how_we_play_with_it",
+      "added_by": "the rules, job run 2026-10-07-06"
     }
   }
 }

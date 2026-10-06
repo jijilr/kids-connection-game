@@ -1,0 +1,27 @@
+{
+  "name": "Toy xylophone",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "basis": "judged, not sourced",
+      "why": "A toy xylophone is a manufactured toy instrument, so it is something people make."
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "basis": "judged, not sourced",
+      "why": "A xylophone is a musical instrument, and a toy xylophone is made for children to play with, so it belongs in the Toys category."
+    },
+    "how_we_play_with_it": {
+      "value": "music",
+      "basis": "judged, not sourced",
+      "why": "A xylophone is a musical instrument you play by striking its bars to make music."
+    }
+  },
+  "weak_spots": [],
+  "pages": [],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

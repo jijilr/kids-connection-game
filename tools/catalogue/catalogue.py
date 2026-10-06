@@ -58,6 +58,8 @@ THINGS = ROOT / "Assets/data/things.json"            # the game's copy
 PICTURE_NAMES = ROOT / "Assets/data/pictures.json"
 PICTURES = ROOT / "Assets/pictures"
 CLIPS = ROOT / "Assets/audio/names"
+VOICE_LEDGER = ROOT / "tools/voice/clips.json"
+PRONUNCIATION = ROOT / "tools/voice/pronunciation.json"
 RECORDS = ROOT / "tools/pictures/records.json"
 QUEUE = ROOT / "tools/content/review_queue.json"
 RESEARCH = ROOT / "tools/research/out"
@@ -509,17 +511,31 @@ def sync_pictures(catalogue: dict):
 
 
 def sync_voice(catalogue: dict):
-    """A clip already in the game's clip folder, for each thing that has one."""
+    """The clip the game plays for each thing, and the cached clip of each thing recorded
+    with Kokoro (tools/voice/record_names.py keeps the ledger). A thing not in the game may
+    have a cached clip and none in the game."""
     file_names = (read_json(PICTURE_NAMES) or {}).get("file_names", {})
+    recorded = (read_json(VOICE_LEDGER) or {}).get("clips", {})
+    hard = (read_json(PRONUNCIATION) or {}).get("names", {})
     for key, entry in catalogue["things"].items():
         voice = entry.setdefault("voice", {"say": entry.get("shown_as") or entry["name"], "checked_by_ear": False})
+        made = recorded.get(key)
+        for stale in ("cached", "clip_sha256", "unsure"):
+            voice.pop(stale, None)
+        if made:
+            voice["cached"] = made["cache"]
+        if hard.get(key, {}).get("unsure"):
+            voice["unsure"] = hard[key]["unsure"]
         clip = CLIPS / f"name_{file_names.get(key, key)}.mp3"
         if clip.exists():
             voice.update(clip=relative(clip), clip_sha256=fingerprint(clip))
-            voice.setdefault("clip_from", "the older game")
+            if made and made["sha256"] == voice["clip_sha256"]:
+                voice["clip_from"] = f"Kokoro, voice {made['voice']}, recorded {made['recorded_on']}"
+            else:
+                voice["clip_from"] = "the older game"
         else:
             voice.update(clip=None)
-            voice.pop("clip_sha256", None)
+            voice.pop("clip_from", None)
 
 
 def sync_sources(catalogue: dict):

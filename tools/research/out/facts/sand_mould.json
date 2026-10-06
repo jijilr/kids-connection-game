@@ -1,0 +1,27 @@
+{
+  "name": "Sand mould",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "basis": "judged, not sourced",
+      "why": "A sand mould is a tool or toy that people make for shaping sand."
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "basis": "judged, not sourced",
+      "why": "A sand mould is a plastic shape children fill with sand to make sandcastles, so it is used as a toy."
+    },
+    "how_we_play_with_it": {
+      "value": "build",
+      "basis": "judged, not sourced",
+      "why": "A sand mould is used to shape and build things out of sand, like castles."
+    }
+  },
+  "weak_spots": [],
+  "pages": [],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

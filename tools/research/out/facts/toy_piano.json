@@ -1,0 +1,38 @@
+{
+  "name": "Toy piano",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "The toy piano, also known as the kinderklavier (lit. 'children's piano' in German), is a small piano-like musical instrument.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "basis": "judged, not sourced",
+      "why": "It is a small piano-like instrument called a toy piano, so a parent would say we use it as a toy."
+    },
+    "how_we_play_with_it": {
+      "value": "music",
+      "basis": "judged, not sourced",
+      "why": "A toy piano is a small piano-like instrument, so you play with it by making music."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Toy_piano",
+      "title": "Toy piano",
+      "asked_for": "Toy piano",
+      "revision": 1366271003,
+      "fetched_on": "2026-10-07",
+      "sha256": "9a094297cb9ebddcf38ad567ccbfccd8c6be74bc7d1a92b0ed1fdd7a38e89c2a"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

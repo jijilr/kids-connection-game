@@ -1,0 +1,27 @@
+{
+  "name": "Windmill toy",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "basis": "judged, not sourced",
+      "why": "A windmill toy is a toy, which is something people make."
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "basis": "judged, not sourced",
+      "why": "A windmill toy is a plaything for children, so it belongs in the Toys category."
+    },
+    "how_we_play_with_it": {
+      "value": "fly",
+      "basis": "judged, not sourced",
+      "why": "A windmill toy spins in the wind, so you play with it by holding it up to fly in the wind."
+    }
+  },
+  "weak_spots": [],
+  "pages": [],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

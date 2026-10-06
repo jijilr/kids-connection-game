@@ -1,0 +1,47 @@
+{
+  "name": "Garden",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A garden is a planned space, usually outdoors, set aside for the cultivation, display, and enjoyment of plants and other forms of nature.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "household",
+      "basis": "judged, not sourced",
+      "why": "A garden is a piece of land around a home where people grow flowers and plants, so a parent would call it part of the household."
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_house_thing",
+      "why": "uncertain: two judgements disagree: 'Things to clean with' and 'Furniture'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Garden",
+      "title": "Garden",
+      "asked_for": "Garden",
+      "revision": 1375288877,
+      "fetched_on": "2026-10-07",
+      "sha256": "ca57dd60009a3ffa4c15f74593bf7814231adafbc6d9e98f0379a6a310f8605c"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Garden",
+      "title": "Garden",
+      "asked_for": "Garden",
+      "revision": 10693443,
+      "fetched_on": "2026-10-07",
+      "sha256": "9d44705b2bb595f37315a21c8430a083ba10763738c3eac12cc3cc2b42fc7095"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

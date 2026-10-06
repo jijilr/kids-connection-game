@@ -2944,6 +2944,125 @@
           "draw": "A flat patch of brown dirt and small grey rocks, the dry ground a child walks on, plain and level, with nothing else around it"
         }
       ]
+    },
+    "job_2026_10_07_06_1": {
+      "purpose": "drawn by the job, run 2026-10-07-06",
+      "grid": 1,
+      "size": 1024,
+      "only_for_this_sheet": "Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.",
+      "cells": [
+        {
+          "thing": "lovebird",
+          "name": "Lovebird",
+          "draw": "A small green lovebird parrot with a red face and yellow chest, perched alone on a plain branch, whole body shown, natural colours, no other birds or scenery"
+        }
+      ]
+    },
+    "job_2026_10_07_06_2": {
+      "purpose": "drawn by the job, run 2026-10-07-06, second tries",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.",
+      "cells": [
+        {
+          "thing": "airport",
+          "name": "Airport",
+          "draw": "A modern Indian airport: a long grey runway with a white plane on it, a tall control tower, a terminal building with glass windows, and a hangar, all on flat ground"
+        },
+        {
+          "thing": "railway_station",
+          "name": "Railway station",
+          "draw": "An Indian railway station: a long low building with a wide roof, a platform beside two steel rails, a small ticket window and benches, painted yellow and cream"
+        },
+        {
+          "thing": "port",
+          "name": "Port",
+          "draw": "A busy Indian harbour: concrete wharf edge with water below, a big modern cargo ship with funnel moored alongside, cranes and stacked containers on the dock, whole scene, natural colours"
+        },
+        {
+          "thing": "metro_station",
+          "name": "Metro station",
+          "draw": "An Indian metro station: a long low building with a wide entrance, blue and white signboard, stairs down to a platform with rails, seen from the front on flat ground"
+        },
+        {
+          "thing": "taxi_stand",
+          "name": "Taxi stand",
+          "draw": "An Indian taxi stand: a row of yellow-and-black auto-rickshaws and white taxis parked nose-to-tail on grey road, waiting in a queue"
+        },
+        {
+          "thing": "toy_kitchen_set",
+          "name": "Toy kitchen set",
+          "draw": "A small child's toy kitchen set in bright red and yellow plastic: a low stove with two burners, an oven door, a sink and a few tiny pots, standing on a plain floor"
+        },
+        {
+          "thing": "doctor_set",
+          "name": "Doctor set",
+          "draw": "A child's doctor set in India: a white plastic stethoscope, a toy syringe, a small red cross box, and a reflex hammer, all in bright colours, resting on the ground"
+        },
+        {
+          "thing": "toy_phone",
+          "name": "Toy phone",
+          "draw": "A bright plastic toy phone, rounded handset shape, in red or yellow, with a small keypad of numbered buttons and a short curly cord, lying flat on plain ground"
+        },
+        {
+          "thing": "toy_drum",
+          "name": "Toy drum",
+          "draw": "A small cylindrical toy drum, red body with yellow and green bands, white drumhead on top, two wooden beaters attached by a string, resting on plain ground"
+        }
+      ]
+    },
+    "job_2026_10_07_06_3": {
+      "purpose": "drawn by the job, run 2026-10-07-06, second tries",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.",
+      "cells": [
+        {
+          "thing": "toy_flute",
+          "name": "Toy flute",
+          "draw": "A small straight bamboo or plastic toy flute, six finger holes on top, one blow hole at the end, natural light brown or bright red, lying flat on plain ground"
+        },
+        {
+          "thing": "toy_piano",
+          "name": "Toy piano",
+          "draw": "A small upright toy piano with a white and black keyboard, rounded wooden body in natural brown, short legs, and a row of little metal rods inside, standing alone on plain ground"
+        },
+        {
+          "thing": "toy_xylophone",
+          "name": "Toy xylophone",
+          "draw": "A toy xylophone: a flat wooden base with a row of rainbow-coloured metal bars, each bar a different bright colour, and two small wooden mallets resting on top"
+        },
+        {
+          "thing": "toy_guitar",
+          "name": "Toy guitar",
+          "draw": "A bright red plastic toy guitar, whole, with six colourful strings, a round sound hole, and a long neck with tuning pegs, lying flat on plain ground"
+        },
+        {
+          "thing": "paper_plane",
+          "name": "Paper plane",
+          "draw": "A white paper plane folded from one sheet, a simple nose-heavy triangle like a dart, resting on plain ground"
+        },
+        {
+          "thing": "windmill_toy",
+          "name": "Windmill toy",
+          "draw": "A small paper windmill toy on a stick, four bright coloured paper vanes, red, yellow, blue and green, pinned at the centre, held upright on its thin stick"
+        },
+        {
+          "thing": "stacking_rings",
+          "name": "Stacking rings",
+          "draw": "A wooden stacking ring toy: a smooth vertical peg on a round base, with five brightly painted rings in red, yellow, green, blue and orange, stacked largest at the bottom to smallest on top"
+        },
+        {
+          "thing": "magnetic_tiles",
+          "name": "Magnetic tiles",
+          "draw": "A set of colourful square magnetic tiles, red, blue, yellow and green, with small magnets along the edges, joined flat on the floor into a simple house shape"
+        },
+        {
+          "thing": "sand_mould",
+          "name": "Sand mould",
+          "draw": "A sand mould in India: a small wooden frame packed with damp brown sand, hollowed into a simple shape, resting on the ground, whole and plain"
+        }
+      ]
     }
   }
 }

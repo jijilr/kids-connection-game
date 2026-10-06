@@ -1606,6 +1606,110 @@
       },
       "cost_usd": 0.0536,
       "vision_check_cost_usd": 4e-05
+    },
+    "job_2026_10_07_06_1_01": {
+      "plan_key": "job_2026_10_07_06_1",
+      "purpose": "drawn by the job, run 2026-10-07-06",
+      "file": "tools/pictures/sheets/job_2026_10_07_06_1_01.png",
+      "grid": 1,
+      "size": "1024x1024",
+      "cells": [
+        "lovebird"
+      ],
+      "names": {
+        "lovebird": "Lovebird"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image showing exactly one subject, whole and centred, with a wide plain white margin on every side:\n\n1. Lovebird: A small green lovebird parrot with a red face and yellow chest, perched alone on a plain branch, whole body shown, natural colours, no other birds or scenery.\n\nFor this sheet: Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-07",
+      "tokens": {
+        "image_output_tokens": 1756,
+        "text_input_tokens": 225
+      },
+      "cost_usd": 0.0538,
+      "vision_check_cost_usd": 6e-05
+    },
+    "job_2026_10_07_06_2_01": {
+      "plan_key": "job_2026_10_07_06_2",
+      "purpose": "drawn by the job, run 2026-10-07-06, second tries",
+      "file": "tools/pictures/sheets/job_2026_10_07_06_2_01.png",
+      "grid": 3,
+      "size": "2880x2880",
+      "cells": [
+        "airport",
+        "railway_station",
+        "port",
+        "metro_station",
+        "taxi_stand",
+        "toy_kitchen_set",
+        "doctor_set",
+        "toy_phone",
+        "toy_drum"
+      ],
+      "names": {
+        "airport": "Airport",
+        "railway_station": "Railway station",
+        "port": "Port",
+        "metro_station": "Metro station",
+        "taxi_stand": "Taxi stand",
+        "toy_kitchen_set": "Toy kitchen set",
+        "doctor_set": "Doctor set",
+        "toy_phone": "Toy phone",
+        "toy_drum": "Toy drum"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 3 by 3 grid of 9 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Airport: A modern Indian airport: a long grey runway with a white plane on it, a tall control tower, a terminal building with glass windows, and a hangar, all on flat ground.\n2. Railway station: An Indian railway station: a long low building with a wide roof, a platform beside two steel rails, a small ticket window and benches, painted yellow and cream.\n3. Port: A busy Indian harbour: concrete wharf edge with water below, a big modern cargo ship with funnel moored alongside, cranes and stacked containers on the dock, whole scene, natural colours.\n4. Metro station: An Indian metro station: a long low building with a wide entrance, blue and white signboard, stairs down to a platform with rails, seen from the front on flat ground.\n5. Taxi stand: An Indian taxi stand: a row of yellow-and-black auto-rickshaws and white taxis parked nose-to-tail on grey road, waiting in a queue.\n6. Toy kitchen set: A small child's toy kitchen set in bright red and yellow plastic: a low stove with two burners, an oven door, a sink and a few tiny pots, standing on a plain floor.\n7. Doctor set: A child's doctor set in India: a white plastic stethoscope, a toy syringe, a small red cross box, and a reflex hammer, all in bright colours, resting on the ground.\n8. Toy phone: A bright plastic toy phone, rounded handset shape, in red or yellow, with a small keypad of numbered buttons and a short curly cord, lying flat on plain ground.\n9. Toy drum: A small cylindrical toy drum, red body with yellow and green bands, white drumhead on top, two wooden beaters attached by a string, resting on plain ground.\n\nFor this sheet: Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-07",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 596
+      },
+      "cost_usd": 0.1809,
+      "vision_check_cost_usd": 0.0007
+    },
+    "job_2026_10_07_06_3_01": {
+      "plan_key": "job_2026_10_07_06_3",
+      "purpose": "drawn by the job, run 2026-10-07-06, second tries",
+      "file": "tools/pictures/sheets/job_2026_10_07_06_3_01.png",
+      "grid": 3,
+      "size": "2880x2880",
+      "cells": [
+        "toy_flute",
+        "toy_piano",
+        "toy_xylophone",
+        "toy_guitar",
+        "paper_plane",
+        "windmill_toy",
+        "stacking_rings",
+        "magnetic_tiles",
+        "sand_mould"
+      ],
+      "names": {
+        "toy_flute": "Toy flute",
+        "toy_piano": "Toy piano",
+        "toy_xylophone": "Toy xylophone",
+        "toy_guitar": "Toy guitar",
+        "paper_plane": "Paper plane",
+        "windmill_toy": "Windmill toy",
+        "stacking_rings": "Stacking rings",
+        "magnetic_tiles": "Magnetic tiles",
+        "sand_mould": "Sand mould"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 3 by 3 grid of 9 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Toy flute: A small straight bamboo or plastic toy flute, six finger holes on top, one blow hole at the end, natural light brown or bright red, lying flat on plain ground.\n2. Toy piano: A small upright toy piano with a white and black keyboard, rounded wooden body in natural brown, short legs, and a row of little metal rods inside, standing alone on plain ground.\n3. Toy xylophone: A toy xylophone: a flat wooden base with a row of rainbow-coloured metal bars, each bar a different bright colour, and two small wooden mallets resting on top.\n4. Toy guitar: A bright red plastic toy guitar, whole, with six colourful strings, a round sound hole, and a long neck with tuning pegs, lying flat on plain ground.\n5. Paper plane: A white paper plane folded from one sheet, a simple nose-heavy triangle like a dart, resting on plain ground.\n6. Windmill toy: A small paper windmill toy on a stick, four bright coloured paper vanes, red, yellow, blue and green, pinned at the centre, held upright on its thin stick.\n7. Stacking rings: A wooden stacking ring toy: a smooth vertical peg on a round base, with five brightly painted rings in red, yellow, green, blue and orange, stacked largest at the bottom to smallest on top.\n8. Magnetic tiles: A set of colourful square magnetic tiles, red, blue, yellow and green, with small magnets along the edges, joined flat on the floor into a simple house shape.\n9. Sand mould: A sand mould in India: a small wooden frame packed with damp brown sand, hollowed into a simple shape, resting on the ground, whole and plain.\n\nFor this sheet: Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-07",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 589
+      },
+      "cost_usd": 0.1808,
+      "vision_check_cost_usd": 0.00058
     }
   },
   "tiles": {
@@ -18560,6 +18664,939 @@
       "review_note": "",
       "history": [],
       "reviewed_on": "2026-10-07"
+    },
+    "job_2026_10_07_06_1_01_c1": {
+      "thing_id": "lovebird",
+      "expected_thing": "lovebird",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_1_01_c1.png",
+      "master_size": [
+        984,
+        984
+      ],
+      "master_sha256": "8f9f0717319b457d1287313f5b43ce509452a021cc50837e0e45a2b78dfaf2b3",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Lovebird: A small green lovebird parrot with a red face and yellow chest, perched alone on a plain branch, whole body shown, natural colours, no other birds or scenery",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0538,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          196,
+          95,
+          831,
+          943
+        ],
+        "picture_shape": 0.75,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Lovebird",
+        "shows": "lovebird",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/lovebird.webp"
+    },
+    "job_2026_10_07_06_2_01_c1": {
+      "thing_id": "airport",
+      "expected_thing": "airport",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_2_01_c1.png",
+      "master_size": [
+        1025,
+        1025
+      ],
+      "master_sha256": "2d1c1f2b0b9376c408f660ed7a394d274f0e142daf368f0f1e3f08d0e1fd107d",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_2_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_2_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Airport: A modern Indian airport: a long grey runway with a white plane on it, a tall control tower, a terminal building with glass windows, and a hangar, all on flat ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          42,
+          200,
+          926,
+          914
+        ],
+        "picture_shape": 1.24,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Airport",
+        "shows": "airport",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/airport.webp"
+    },
+    "job_2026_10_07_06_2_01_c2": {
+      "thing_id": "railway_station",
+      "expected_thing": "railway_station",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_2_01_c2.png",
+      "master_size": [
+        1016,
+        1016
+      ],
+      "master_sha256": "039c261d1dd721121f5a4a5a6e1ab603329a02e81cf7a5be658898b02ff3fbc6",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_2_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_2_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Railway station: An Indian railway station: a long low building with a wide roof, a platform beside two steel rails, a small ticket window and benches, painted yellow and cream",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1002,
+          253,
+          1878,
+          914
+        ],
+        "picture_shape": 1.33,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Railway station",
+        "shows": "railway_station",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/railway_station.webp"
+    },
+    "job_2026_10_07_06_2_01_c3": {
+      "thing_id": "port",
+      "expected_thing": "port",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_2_01_c3.png",
+      "master_size": [
+        1025,
+        1025
+      ],
+      "master_sha256": "6adcec852cab9437eccb999b1cdc6a3f0431bfe90b932b1f7ad11732671db978",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_2_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_2_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Port: A busy Indian harbour: concrete wharf edge with water below, a big modern cargo ship with funnel moored alongside, cranes and stacked containers on the dock, whole scene, natural colours",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1954,
+          213,
+          2838,
+          914
+        ],
+        "picture_shape": 1.26,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Port",
+        "shows": "port",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/port.webp"
+    },
+    "job_2026_10_07_06_2_01_c4": {
+      "thing_id": "metro_station",
+      "expected_thing": "metro_station",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_2_01_c4.png",
+      "master_size": [
+        1000,
+        1000
+      ],
+      "master_sha256": "cd36efa3574b2ba8f41b045f771b854d5eed890c3d35d8b8078eb7422d87fb9c",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_2_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_2_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Metro station: An Indian metro station: a long low building with a wide entrance, blue and white signboard, stairs down to a platform with rails, seen from the front on flat ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          50,
+          1186,
+          912,
+          1783
+        ],
+        "picture_shape": 1.44,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Metro station",
+        "shows": "metro_station",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/metro_station.webp"
+    },
+    "job_2026_10_07_06_2_01_c5": {
+      "thing_id": "taxi_stand",
+      "expected_thing": "taxi_stand",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_2_01_c5.png",
+      "master_size": [
+        1013,
+        1013
+      ],
+      "master_sha256": "1a235075b5707219120d68aedee1c9b6c8c5698bc07cb814f1943ee53f7cb9dd",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_2_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_2_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Taxi stand: An Indian taxi stand: a row of yellow-and-black auto-rickshaws and white taxis parked nose-to-tail on grey road, waiting in a queue",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [
+          "the picture is far from square"
+        ],
+        "picture_box": [
+          1005,
+          1283,
+          1878,
+          1642
+        ],
+        "picture_shape": 2.43,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Taxi stand",
+        "shows": "taxi_stand",
+        "matches_cell": true,
+        "problems": "More than one thing"
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/taxi_stand.webp"
+    },
+    "job_2026_10_07_06_2_01_c6": {
+      "thing_id": "toy_kitchen_set",
+      "expected_thing": "toy_kitchen_set",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_2_01_c6.png",
+      "master_size": [
+        933,
+        933
+      ],
+      "master_sha256": "f8c1c73fc3f0410446e73e6698bb14f608728522c80f8d0571b9c3af52fddbee",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_2_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_2_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Toy kitchen set: A small child's toy kitchen set in bright red and yellow plastic: a low stove with two burners, an oven door, a sink and a few tiny pots, standing on a plain floor",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2051,
+          1031,
+          2779,
+          1835
+        ],
+        "picture_shape": 0.91,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Toy kitchen set",
+        "shows": "toy_kitchen_set",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/toy_kitchen_set.webp"
+    },
+    "job_2026_10_07_06_2_01_c7": {
+      "thing_id": "doctor_set",
+      "expected_thing": "doctor_set",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_2_01_c7.png",
+      "master_size": [
+        956,
+        956
+      ],
+      "master_sha256": "148f9e68b7122ab9ab2eab69601f4faf3886b33aae62e2e9369326f967b05a04",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_2_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_2_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Doctor set: A child's doctor set in India: a white plastic stethoscope, a toy syringe, a small red cross box, and a reflex hammer, all in bright colours, resting on the ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          69,
+          1986,
+          893,
+          2696
+        ],
+        "picture_shape": 1.16,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Doctor set",
+        "shows": "doctor_set",
+        "matches_cell": true,
+        "problems": "more than one thing"
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/doctor_set.webp"
+    },
+    "job_2026_10_07_06_2_01_c8": {
+      "thing_id": "toy_phone",
+      "expected_thing": "toy_phone",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_2_01_c8.png",
+      "master_size": [
+        912,
+        912
+      ],
+      "master_sha256": "d37198b06e6ebc910443ad0520bf7d8ab7641e340a0a9be7012ac1ad1dcb969b",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_2_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_2_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Toy phone: A bright plastic toy phone, rounded handset shape, in red or yellow, with a small keypad of numbered buttons and a short curly cord, lying flat on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1058,
+          2033,
+          1844,
+          2665
+        ],
+        "picture_shape": 1.24,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Toy phone",
+        "shows": "toy_phone",
+        "matches_cell": true,
+        "problems": "writing in the picture"
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/toy_phone.webp"
+    },
+    "job_2026_10_07_06_2_01_c9": {
+      "thing_id": "toy_drum",
+      "expected_thing": "toy_drum",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_2_01_c9.png",
+      "master_size": [
+        863,
+        863
+      ],
+      "master_sha256": "c7cd5e4d904758bb6e4b730c0236d4f2cddf2baeae64d999bff8a55f1bc37cac",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_2_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_2_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Toy drum: A small cylindrical toy drum, red body with yellow and green bands, white drumhead on top, two wooden beaters attached by a string, resting on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2069,
+          2033,
+          2813,
+          2735
+        ],
+        "picture_shape": 1.06,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Toy drum",
+        "shows": "toy_drum",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/toy_drum.webp"
+    },
+    "job_2026_10_07_06_3_01_c1": {
+      "thing_id": "toy_flute",
+      "expected_thing": "toy_flute",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_3_01_c1.png",
+      "master_size": [
+        907,
+        907
+      ],
+      "master_sha256": "2ae364bbae7f9e4632e5e2d529f87f3bb816f04fbd144328a5e84fe02a4cd1c2",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_3_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_3_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Toy flute: A small straight bamboo or plastic toy flute, six finger holes on top, one blow hole at the end, natural light brown or bright red, lying flat on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          84,
+          239,
+          866,
+          705
+        ],
+        "picture_shape": 1.68,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Toy flute",
+        "shows": "toy_flute",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/toy_flute.webp"
+    },
+    "job_2026_10_07_06_3_01_c2": {
+      "thing_id": "toy_piano",
+      "expected_thing": "toy_piano",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_3_01_c2.png",
+      "master_size": [
+        952,
+        952
+      ],
+      "master_sha256": "3b1bf6afbc03ae17d282b267cdd03764ae5e005a21bd0ec41a392332ab2e895d",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_3_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_3_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Toy piano: A small upright toy piano with a white and black keyboard, rounded wooden body in natural brown, short legs, and a row of little metal rods inside, standing alone on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1006,
+          108,
+          1827,
+          851
+        ],
+        "picture_shape": 1.1,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Toy piano",
+        "shows": "toy_piano",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/toy_piano.webp"
+    },
+    "job_2026_10_07_06_3_01_c3": {
+      "thing_id": "toy_xylophone",
+      "expected_thing": "toy_xylophone",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_3_01_c3.png",
+      "master_size": [
+        991,
+        991
+      ],
+      "master_sha256": "20799d1e81a62ff9df7eacc370576681b0e644b6299ac5e1c3db6ea9dd56e4ca",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_3_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_3_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Toy xylophone: A toy xylophone: a flat wooden base with a row of rainbow-coloured metal bars, each bar a different bright colour, and two small wooden mallets resting on top",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1971,
+          225,
+          2825,
+          740
+        ],
+        "picture_shape": 1.66,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Toy xylophone",
+        "shows": "toy_xylophone",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/toy_xylophone.webp"
+    },
+    "job_2026_10_07_06_3_01_c4": {
+      "thing_id": "toy_guitar",
+      "expected_thing": "toy_guitar",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_3_01_c4.png",
+      "master_size": [
+        1003,
+        1003
+      ],
+      "master_sha256": "d045d1c179a1bcb0dd2dc507275dc4a77bc613cc1f67caf8c7b7b586d14964e7",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_3_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_3_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Toy guitar: A bright red plastic toy guitar, whole, with six colourful strings, a round sound hole, and a long neck with tuning pegs, lying flat on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          56,
+          1064,
+          921,
+          1700
+        ],
+        "picture_shape": 1.36,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Toy guitar",
+        "shows": "toy_guitar",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/toy_guitar.webp"
+    },
+    "job_2026_10_07_06_3_01_c5": {
+      "thing_id": "paper_plane",
+      "expected_thing": "paper_plane",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_3_01_c5.png",
+      "master_size": [
+        964,
+        964
+      ],
+      "master_sha256": "a8920834107f0eafeabea09a0c1ebe49714db798007151e7a525d2c51c7a4569",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_3_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_3_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Paper plane: A white paper plane folded from one sheet, a simple nose-heavy triangle like a dart, resting on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1027,
+          1087,
+          1858,
+          1590
+        ],
+        "picture_shape": 1.65,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Paper plane",
+        "shows": "paper_plane",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/paper_plane.webp"
+    },
+    "job_2026_10_07_06_3_01_c6": {
+      "thing_id": "windmill_toy",
+      "expected_thing": "windmill_toy",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_3_01_c6.png",
+      "master_size": [
+        974,
+        974
+      ],
+      "master_sha256": "357852bf4e3b1b63974225b040c0d212578273a4c3ddb7cdb2fd4055ce568b80",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_3_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_3_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Windmill toy: A small paper windmill toy on a stick, four bright coloured paper vanes, red, yellow, blue and green, pinned at the centre, held upright on its thin stick",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2110,
+          969,
+          2595,
+          1809
+        ],
+        "picture_shape": 0.58,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Windmill toy",
+        "shows": "windmill_toy",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/windmill_toy.webp"
+    },
+    "job_2026_10_07_06_3_01_c7": {
+      "thing_id": "stacking_rings",
+      "expected_thing": "stacking_rings",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_3_01_c7.png",
+      "master_size": [
+        979,
+        979
+      ],
+      "master_sha256": "53930931b157368fd56bc62816c635d4c65f778da0aaf8cfdc38766f564be72d",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_3_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_3_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Stacking rings: A wooden stacking ring toy: a smooth vertical peg on a round base, with five brightly painted rings in red, yellow, green, blue and orange, stacked largest at the bottom to smallest on top",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          218,
+          1911,
+          774,
+          2755
+        ],
+        "picture_shape": 0.66,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Stacking rings",
+        "shows": "stacking_rings",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/stacking_rings.webp"
+    },
+    "job_2026_10_07_06_3_01_c8": {
+      "thing_id": "magnetic_tiles",
+      "expected_thing": "magnetic_tiles",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_3_01_c8.png",
+      "master_size": [
+        891,
+        891
+      ],
+      "master_sha256": "f297f48743204e4bf9894c8dabff5cca67770754a313982cf61f44bb76b173b0",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_3_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_3_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Magnetic tiles: A set of colourful square magnetic tiles, red, blue, yellow and green, with small magnets along the edges, joined flat on the floor into a simple house shape",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1140,
+          1924,
+          1721,
+          2692
+        ],
+        "picture_shape": 0.76,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Magnetic tiles",
+        "shows": "magnetic_tiles",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/magnetic_tiles.webp"
+    },
+    "job_2026_10_07_06_3_01_c9": {
+      "thing_id": "sand_mould",
+      "expected_thing": "sand_mould",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_3_01_c9.png",
+      "master_size": [
+        949,
+        949
+      ],
+      "master_sha256": "9ad2ee7a3275f5ecfe9d42fa413a774df8d0acff3e6b1eb76249b6d1f5d3721c",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_06_3_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_06_3_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Sand mould: A sand mould in India: a small wooden frame packed with damp brown sand, hollowed into a simple shape, resting on the ground, whole and plain",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1978,
+          2031,
+          2796,
+          2728
+        ],
+        "picture_shape": 1.17,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Sand mould",
+        "shows": "sand_mould",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/sand_mould.webp"
     }
   }
 }

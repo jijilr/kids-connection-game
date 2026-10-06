@@ -1,0 +1,49 @@
+{
+  "name": "Railway station",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A train station, railroad station, or railway station is a railway facility where trains stop to load or unload passengers, freight, or both.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "It generally consists of at least one platform, one track, and a station building providing such ancillary services as ticket sales, waiting rooms, and baggage/freight service.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_people_do_there": {
+      "value": "travel",
+      "quote": "A train station or railway station (also called a railroad station, rail station, or depot) is a place where passengers of rail transport can get on and off trains and/or goods may be loaded or unloaded.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Train_station",
+      "title": "Train station",
+      "asked_for": "Railway station",
+      "revision": 1373016518,
+      "fetched_on": "2026-10-07",
+      "sha256": "2c1ce70b1f330553e395cd1178a2bd4ba83fcbad8cad58a46ec448edb7d96c94"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Train_station",
+      "title": "Train station",
+      "asked_for": "Railway station",
+      "revision": 9850633,
+      "fetched_on": "2026-10-07",
+      "sha256": "3ef91f3d7ae4bc0420d3c36bfb2134d60f6368510553944781e8ee0e52ac3335"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

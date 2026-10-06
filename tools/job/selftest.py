@@ -50,10 +50,13 @@ def test_circles_are_planned_by_the_engines_rules_and_nobody_approves_them():
     tree = expand.rebuild(write=False)["circles"]
     plan = job.plan(cat.load())
     planned = [e["circle"] for e in plan["circles"]]
-    # only circles the engine calls ready, and in its order: the best score first
-    assert planned and all(tree[cid]["status"] in expand.READY for cid in planned)
-    scores = [tree[cid]["score"] for cid in planned]
-    assert scores == sorted(scores, reverse=True)
+    # only circles the engine calls ready; ONE for each board, and that one the best of its board
+    assert all(tree[cid]["status"] in expand.READY for cid in planned)
+    parent = lambda cid: cid.rsplit("/", 1)[0] if "/" in cid else "seed"
+    assert len({parent(cid) for cid in planned}) == len(planned)
+    for cid in planned:
+        beside = [c for c in tree if parent(c) == parent(cid) and tree[c]["status"] in expand.READY]
+        assert tree[cid]["score"] == max(tree[c]["score"] for c in beside)
     # what a rule or the owner holds back is not planned, and the plan says why
     for cid, circle in tree.items():
         if circle["status"] in ("held", "rejected"):
@@ -81,6 +84,53 @@ def test_with_saved_progress_only_one_step_ahead_of_the_child_is_planned():
                                                               "plant": {"opened": 0, "solved": 0}}}), encoding="utf-8")
         assert job.read_progress(saved) == {"seed", "animal"}
         assert job.read_progress(pathlib.Path(folder) / "none.json") is None
+
+
+def test_an_order_is_one_group_for_each_board_and_the_stuck_boards_come_first():
+    circle = lambda open_, score=0.0: {"open": open_, "score": score, "move": "widening",
+                                       "status": "open" if open_ else "proposable"}
+    tree = {"seed": circle(True), "a": circle(True), "b": circle(True), "c": circle(True),
+            "a/x": circle(False, 3.0), "a/y": circle(False, 2.0),          # nothing inside a is open: he would be stuck
+            "b/x": circle(False, 5.0), "b/z": circle(True),                # b has somewhere deeper to go
+            "c/x": circle(False, 1.0), "c/held": dict(circle(False, 9.0), status="held")}
+    first, waiting = job.orders(tree)
+    assert first == ["a/x", "c/x", "b/x"]              # one for each board; stuck boards first, then by the balance
+    assert waiting == ["a/y"]                          # the second group of a board waits its turn
+    assert "c/held" not in first + waiting             # what a rule or the owner holds is never ordered
+    # a board the child really solved with nowhere to go is served before all the others
+    assert job.orders(tree, asked={"b"})[0][0] == "b/x"
+    # with saved progress, only the boards he has opened are served
+    assert job.orders(tree, played={"seed", "c"})[0] == ["c/x"]
+    # the game writes its orders into the saved progress file, and the job reads them
+    with tempfile.TemporaryDirectory() as folder:
+        saved = pathlib.Path(folder) / "progress.json"
+        saved.write_text(json.dumps({"version": 1, "boards": {"seed": {"opened": 2}},
+                                     "orders": {"made_by_people/vehicle": {"solved": 1}}}), encoding="utf-8")
+        assert job.read_orders(saved) == {"made_by_people/vehicle"}
+        assert job.read_orders(pathlib.Path(folder) / "none.json") == set()
+
+
+def test_make_board_gives_sixteen_things_in_four_groups_with_one_solution_or_nothing():
+    from boards import make_board, second_solution
+    catalogue = cat.load()
+    dictionary, things = cat.read_json(cat.DICTIONARY), cat.game_copy(catalogue)["things"]
+    raw = job.build_circles(dictionary, things, cat.read_json(cat.SETTINGS))
+    made = 0
+    for cid, circle in raw.items():
+        path = cat.circle_path(raw, cid)
+        board = make_board(dictionary, things, path, circle.get("sorted_by"))
+        if not circle["open"]:
+            if not circle.get("sorted_by"):
+                assert make_board(dictionary, things, path) is None        # no field: no board, never a shallower one
+            continue
+        made += 1
+        assert len(board["tiles"]) == 16 and len(set(board["tiles"])) == 16 and len(board["groups"]) == 4
+        assert all(len(group) == 4 for group in board["groups"].values())
+        assert all(things[k]["fields"][board["field"]] == value for value, group in board["groups"].items() for k in group)
+        assert second_solution(dictionary, things, board["tiles"], board["field"]) is None
+        again = make_board(dictionary, things, path, circle.get("sorted_by"), avoid=set(board["tiles"]))
+        assert set(again["tiles"]) != set(board["tiles"])                   # a fresh board is not the same sixteen
+    assert made >= 9
 
 
 def test_a_rehearsal_plans_the_circle_named_and_nothing_else():
@@ -455,6 +505,7 @@ def test_a_thing_settled_before_a_later_field_was_added_is_stamped_against_the_n
     cat.changing = nothing
     real_sync = (cat.sync_sources, cat.sync_voice)
     cat.sync_sources = cat.sync_voice = lambda catalogue: None
+    real_run, job.subprocess.run = job.subprocess.run, lambda *a, **k: type("done", (), {"stdout": "", "returncode": 0})()
     try:
         early = {"name": "Kettle", "passed": True, "tile": "t1", "why": [],
                  "thing": {"name": "Kettle", "familiar": 0.9, "reviewed": dictionary["version"] - 1, "source": "job", "drafted_in": "run",
@@ -467,6 +518,7 @@ def test_a_thing_settled_before_a_later_field_was_added_is_stamped_against_the_n
     finally:
         cat.game_store, cat.put_game_store, job.tool, cat.changing = real
         cat.sync_sources, cat.sync_voice = real_sync
+        job.subprocess.run = real_run
     assert saved["kettle"]["reviewed"] == dictionary["version"]
     assert "raft" not in saved and not lacking["passed"] and "where_it_travels" in lacking["why"][0]
 

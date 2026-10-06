@@ -1,0 +1,47 @@
+{
+  "name": "Airport",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "An airport is a place where airplanes can land or take off.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "basis": "judged, not sourced",
+      "why": "An airport is a place with buildings like terminals and hangars where airplanes land and take off."
+    },
+    "what_people_do_there": {
+      "value": "travel",
+      "basis": "judged, not sourced",
+      "why": "People go to an airport to get on a plane and start a journey to another place."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Airport",
+      "title": "Airport",
+      "asked_for": "Airport",
+      "revision": 1378318697,
+      "fetched_on": "2026-10-07",
+      "sha256": "7d8d2e6fc849f3193457d320173f956378dc1daf3f9b9b972740573b4fdc7c92"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Airport",
+      "title": "Airport",
+      "asked_for": "Airport",
+      "revision": 10951728,
+      "fetched_on": "2026-10-07",
+      "sha256": "6186ec4cb4a2640332c310441143f419e616edf578961f2a31333c29d18763e8"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

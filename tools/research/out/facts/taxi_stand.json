@@ -1,0 +1,42 @@
+{
+  "name": "Taxi stand",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "is a queue area on a street or on private property where taxicabs line up to wait for passengers.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "uncertain: two judgements disagree: 'Vehicles' and 'Buildings'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Taxi_stand",
+      "title": "Taxi stand",
+      "asked_for": "Taxi stand",
+      "revision": 1354853458,
+      "fetched_on": "2026-10-07",
+      "sha256": "73babddfc55a4c82c2204661f0e0367f7c7617a0a7d232f13439b256541e0cba"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Taxicab_stand",
+      "title": "Taxicab stand",
+      "asked_for": "Taxi stand",
+      "revision": 9632846,
+      "fetched_on": "2026-10-07",
+      "sha256": "77fbd06da7fcaa8a057896e633243c2aa171b3fb5e76ded817c66d330a545caa"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

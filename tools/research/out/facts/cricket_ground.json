@@ -1,0 +1,47 @@
+{
+  "name": "Cricket ground",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "In cricket, the ground is a location, such as a stadium, where matches are played.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "basis": "judged, not sourced",
+      "why": "A cricket ground is a stadium, which is a building where matches are played."
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "what_people_do_there",
+      "why": "the pages do not show it: no sentence shows what people do there"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Ground_(cricket)",
+      "title": "Ground (cricket)",
+      "asked_for": "Cricket ground",
+      "revision": 1364760192,
+      "fetched_on": "2026-10-07",
+      "sha256": "57ab17a282af0c4f841dfe9eecdcdc72ab21cbe2e6d55a33019cebb27bca3d26"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cricket",
+      "title": "Cricket",
+      "asked_for": "Cricket ground",
+      "revision": 11021250,
+      "fetched_on": "2026-10-07",
+      "sha256": "d1b5ac418ea284c0f7bbaad7bb396ac382ed004fcdb2a6a8ba59f9346ece6449"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

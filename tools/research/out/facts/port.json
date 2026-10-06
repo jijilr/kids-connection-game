@@ -1,0 +1,48 @@
+{
+  "name": "Port",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A port is a maritime facility comprising one or more wharves or loading areas, where ships load and discharge cargo and passengers.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "A port is a maritime facility comprising one or more wharves or loading areas, where ships load and discharge cargo and passengers.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_people_do_there": {
+      "value": "travel",
+      "basis": "judged, not sourced",
+      "why": "People get on or off ships at a port, starting or ending a journey by water."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Port",
+      "title": "Port",
+      "asked_for": "Port",
+      "revision": 1376476913,
+      "fetched_on": "2026-10-07",
+      "sha256": "e6530495425d0728064e6b542f978d12596d1350bbd11904b4578bc78df0474d"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Port",
+      "title": "Port",
+      "asked_for": "Port",
+      "revision": 5424202,
+      "fetched_on": "2026-10-07",
+      "sha256": "f9cd4682f57636a72309db7d3343b9e9d275ce44ffdb6d22f9185ed302e8eb53"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

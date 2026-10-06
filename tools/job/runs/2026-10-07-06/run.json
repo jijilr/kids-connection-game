@@ -1,0 +1,2562 @@
+{
+  "id": "2026-10-07-06",
+  "started": "2026-10-07",
+  "rehearse": null,
+  "cap_inr": 200.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "nature_not_alive/land",
+        "chain": "Things in nature that are not alive > Places on land > Flat land",
+        "fixed": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "land",
+          "shape_of_the_land": "flat"
+        },
+        "need": 1,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Farm",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Park",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "offers_1": [
+          {
+            "name": "Playground",
+            "familiar": 0.9,
+            "why": "flat place where children play",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Cricket ground",
+            "familiar": 0.8,
+            "why": "flat field for cricket",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Plateau",
+            "familiar": 0.5,
+            "why": "flat high land, in pictures",
+            "recognised": false,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "offers_2": [
+          {
+            "name": "Garden",
+            "familiar": 0.9,
+            "why": "flat green area at home",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Paddy field",
+            "familiar": 0.7,
+            "why": "flat wet field in villages",
+            "recognised": false,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Maidan",
+            "familiar": 0.6,
+            "why": "open flat ground in towns",
+            "recognised": false,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "nature_not_alive/land",
+        "chain": "Things in nature that are not alive > Places on land > Land beside water",
+        "fixed": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "land",
+          "shape_of_the_land": "by_water"
+        },
+        "need": 3,
+        "recorded_but_not_in_the_game": [
+          {
+            "name": "Island",
+            "status": "held by the rules",
+            "group": "by_water"
+          },
+          {
+            "name": "Waterfall",
+            "status": "held by the rules",
+            "group": "by_water"
+          },
+          {
+            "name": "Backwater",
+            "status": "held by the rules",
+            "group": "by_water"
+          },
+          {
+            "name": "Marsh",
+            "status": "held by the rules",
+            "group": "by_water"
+          }
+        ],
+        "retried": [
+          "Island",
+          "Waterfall",
+          "Marsh",
+          "Backwater"
+        ],
+        "examples": [
+          {
+            "name": "River bank",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Lake shore",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Pond edge",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Island",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "offers_1": [
+          {
+            "name": "Stream",
+            "familiar": 0.7,
+            "why": "Small flowing water, seen in hills or rural areas.",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Bay",
+            "familiar": 0.6,
+            "why": "Curved part of sea, less common but known from stories.",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "offers_2": [],
+        "facts_done": true
+      },
+      {
+        "circle": "animal/bird",
+        "chain": "Animals > Birds > Pets at home",
+        "fixed": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "pet_farm_or_wild_of_bird": "pet"
+        },
+        "need": 1,
+        "recorded_but_not_in_the_game": [
+          {
+            "name": "Finch",
+            "status": "held by the rules",
+            "group": "pet"
+          }
+        ],
+        "retried": [
+          "Finch"
+        ],
+        "examples": [
+          {
+            "name": "Lovebird",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Finch",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/building",
+        "chain": "Things people make > Buildings > Get well",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "heal"
+        },
+        "need": 2,
+        "recorded_but_not_in_the_game": [
+          {
+            "name": "Nursing home",
+            "status": "held by the rules",
+            "group": "heal"
+          },
+          {
+            "name": "Doctor's office",
+            "status": "held by the rules",
+            "group": "heal"
+          }
+        ],
+        "retried": [
+          "Doctor's office",
+          "Nursing home"
+        ],
+        "examples": [
+          {
+            "name": "Nursing home",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Doctor's office",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "offers_1": [],
+        "offers_2": [],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/building",
+        "chain": "Things people make > Buildings > Start a journey",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "travel"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Airport",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Railway station",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Bus stand",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Port",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Metro station",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Taxi stand",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/toy",
+        "chain": "Things people make > Toys > Cuddle it or play pretend",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "pretend"
+        },
+        "need": 2,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Toy kitchen set",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Doctor set",
+            "familiar": 0.85,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Toy phone",
+            "familiar": 0.95,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Stuffed rabbit",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Toy camera",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/toy",
+        "chain": "Things people make > Toys > Make music with it",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "music"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Toy drum",
+            "familiar": 0.95,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Toy flute",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Toy piano",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Toy xylophone",
+            "familiar": 0.85,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Toy guitar",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Toy tambourine",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/toy",
+        "chain": "Things people make > Toys > Fly it in the wind",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "fly"
+        },
+        "need": 2,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Paper plane",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Windmill toy",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/toy",
+        "chain": "Things people make > Toys > Build or make with it",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "build"
+        },
+        "need": 3,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Stacking rings",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Magnetic tiles",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Sand mould",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      }
+    ],
+    "circles": [
+      {
+        "circle": "nature_not_alive/land",
+        "label": "Places on land",
+        "chain": "Things in nature that are not alive > Places on land",
+        "needs_field": false,
+        "expect_things": 6,
+        "asks": [
+          0,
+          1
+        ],
+        "done": true
+      },
+      {
+        "circle": "nature_not_alive/ground",
+        "label": "Rocks and soil",
+        "chain": "Things in nature that are not alive > Rocks and soil",
+        "needs_field": true,
+        "expect_things": 11,
+        "done": true
+      },
+      {
+        "circle": "nature_not_alive/sky",
+        "label": "Things in the sky",
+        "chain": "Things in nature that are not alive > Things in the sky",
+        "needs_field": true,
+        "expect_things": 16,
+        "done": true
+      },
+      {
+        "circle": "nature_not_alive/water",
+        "label": "Water",
+        "chain": "Things in nature that are not alive > Water",
+        "needs_field": true,
+        "expect_things": 16,
+        "done": true
+      },
+      {
+        "circle": "animal/bird",
+        "label": "Birds",
+        "chain": "Animals > Birds",
+        "needs_field": false,
+        "expect_things": 2,
+        "asks": [
+          2
+        ],
+        "done": true
+      },
+      {
+        "circle": "plant/tree",
+        "label": "Trees",
+        "chain": "Plants > Trees",
+        "needs_field": true,
+        "expect_things": 16,
+        "done": true
+      },
+      {
+        "circle": "plant/flower",
+        "label": "Flowers",
+        "chain": "Plants > Flowers",
+        "needs_field": true,
+        "expect_things": 16,
+        "done": true
+      },
+      {
+        "circle": "plant/grass_grain",
+        "label": "Grasses and grains",
+        "chain": "Plants > Grasses and grains",
+        "needs_field": true,
+        "expect_things": 15,
+        "done": true
+      },
+      {
+        "circle": "made_by_people/building",
+        "label": "Buildings",
+        "chain": "Things people make > Buildings",
+        "needs_field": false,
+        "expect_things": 3,
+        "asks": [
+          3,
+          4
+        ],
+        "done": true
+      },
+      {
+        "circle": "animal/reptile",
+        "label": "Reptiles",
+        "chain": "Animals > Reptiles",
+        "needs_field": true,
+        "expect_things": 8,
+        "done": true
+      },
+      {
+        "circle": "animal/insect",
+        "label": "Insects",
+        "chain": "Animals > Insects",
+        "needs_field": true,
+        "expect_things": 12,
+        "done": true
+      },
+      {
+        "circle": "animal/fish",
+        "label": "Fish",
+        "chain": "Animals > Fish",
+        "needs_field": true,
+        "expect_things": 15,
+        "done": true
+      },
+      {
+        "circle": "made_by_people/toy",
+        "label": "Toys",
+        "chain": "Things people make > Toys",
+        "needs_field": true,
+        "expect_things": 13,
+        "field_added": true,
+        "asks": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "done": true
+      },
+      {
+        "circle": "made_by_people/tool",
+        "label": "Tools",
+        "chain": "Things people make > Tools",
+        "needs_field": true,
+        "expect_things": 15,
+        "done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": [],
+    "held_back": [
+      "Pets at home: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Farm animals: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Wild animals on land: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Wild animals in water: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Amphibians: rejected",
+      "Land hunters: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Land grazers: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Flyers: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Swimmers: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "The fruit: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "What grows under the ground: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "The leaves: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "The seeds or pods: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "On the road: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "On rails: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "On water: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "In the air: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Furniture: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Things to eat and drink with: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Things to clean with: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
+      "Things that run on electricity: depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+    ],
+    "played": null
+  },
+  "retry_held": true,
+  "things": [
+    {
+      "name": "Farm",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.9,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "flat"
+      },
+      "why": [
+        "it is Field under another name: both are filed under 'Farm'"
+      ],
+      "ask": 0
+    },
+    {
+      "name": "Park",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'Things people make', not 'Things in nature that are not alive'"
+      ],
+      "thing": {
+        "name": "Park",
+        "fields": {
+          "kind_of_thing": "made_by_people"
+        },
+        "familiar": 0.9,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "flat"
+      },
+      "familiar": 0.9,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0
+    },
+    {
+      "name": "Playground",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'Things people make', not 'Things in nature that are not alive'"
+      ],
+      "thing": {
+        "name": "Playground",
+        "fields": {
+          "kind_of_thing": "made_by_people"
+        },
+        "familiar": 0.9,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "flat"
+      },
+      "familiar": 0.9,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0
+    },
+    {
+      "name": "Cricket ground",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'Things people make', not 'Things in nature that are not alive'"
+      ],
+      "thing": {
+        "name": "Cricket ground",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building"
+        },
+        "familiar": 0.8,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_made_thing": "building",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "flat"
+      },
+      "familiar": 0.8,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing"
+      ],
+      "ask": 0
+    },
+    {
+      "name": "Plateau",
+      "passed": false,
+      "familiar": 0.5,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "flat"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Garden",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'Things people make', not 'Things in nature that are not alive'"
+      ],
+      "thing": {
+        "name": "Garden",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household"
+        },
+        "familiar": 0.9,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_made_thing": "household",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "flat"
+      },
+      "familiar": 0.9,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing"
+      ],
+      "ask": 0
+    },
+    {
+      "name": "Paddy field",
+      "passed": false,
+      "familiar": 0.7,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "flat"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Maidan",
+      "passed": false,
+      "familiar": 0.6,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "flat"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Island",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Island",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "land",
+          "shape_of_the_land": "by_water"
+        },
+        "familiar": 0.9,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "shape_of_the_land"
+      ],
+      "ask": 1,
+      "not_drawn": true,
+      "no_tile": "its facts passed, but only 1 of the 3 things the group needs did, so it was not drawn. A later run carries on from here",
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Waterfall",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Places on land': it fits more than one group: water and land"
+      ],
+      "thing": {
+        "name": "Waterfall",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "water"
+        },
+        "familiar": 0.9,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Marsh",
+      "passed": false,
+      "familiar": 0.7,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Backwater",
+      "passed": false,
+      "familiar": 0.6,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "River bank",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.8,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "why": [
+        "it is River again, or a part of it, and that is already in the game"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Lake shore",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.7,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "why": [
+        "it is Lake again, or a part of it, and that is already in the game"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Pond edge",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.7,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "why": [
+        "it is Pond again, or a part of it, and that is already in the game"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Stream",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'Water', not 'Places on land'"
+      ],
+      "thing": {
+        "name": "Stream",
+        "fields": {
+          "kind_of_thing": "nature_not_alive",
+          "kind_of_nature": "water"
+        },
+        "familiar": 0.7,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "familiar": 0.7,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 1
+    },
+    {
+      "name": "Bay",
+      "passed": false,
+      "familiar": 0.6,
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Finch",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Pets at home': it fits more than one group: pet and wild_land"
+      ],
+      "thing": {
+        "name": "Finch",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false,
+          "pet_farm_or_wild_of_bird": "wild_land"
+        },
+        "familiar": 0.8,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "pet"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "extinct",
+        "pet_farm_or_wild_of_bird"
+      ],
+      "ask": 2,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Lovebird",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Lovebird",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "bird",
+          "extinct": false,
+          "pet_farm_or_wild_of_bird": "pet"
+        },
+        "familiar": 0.7,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06",
+        "notes": {
+          "pet_farm_or_wild_of_bird": "The pages point to 'Wild animals on land'. Two checks, sorting it as a parent would, both put it in 'Pets at home'."
+        }
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false,
+        "pet_farm_or_wild_of_bird": "pet"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "pet_farm_or_wild_of_bird"
+      ],
+      "ask": 2,
+      "draw": "A small green lovebird parrot with a red face and yellow chest, perched alone on a plain branch, whole body shown, natural colours, no other birds or scenery",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_1_01_c1"
+    },
+    {
+      "name": "Doctor's office",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Doctor's office",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "heal"
+        },
+        "familiar": 0.8,
+        "reviewed": 9,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "heal"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 3,
+      "not_drawn": true,
+      "no_tile": "its facts passed, but only 1 of the 2 things the group needs did, so it was not drawn. A later run carries on from here",
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Nursing home",
+      "passed": false,
+      "familiar": 0.6,
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "heal"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 3,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Airport",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Airport",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "travel"
+        },
+        "familiar": 0.8,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "travel"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing",
+        "what_people_do_there"
+      ],
+      "ask": 4,
+      "draw": "A modern Indian airport: a long grey runway with a white plane on it, a tall control tower, a terminal building with glass windows, and a hangar, all on flat ground",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_2_01_c1"
+    },
+    {
+      "name": "Railway station",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Railway station",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "travel"
+        },
+        "familiar": 0.9,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "travel"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 4,
+      "draw": "An Indian railway station: a long low building with a wide roof, a platform beside two steel rails, a small ticket window and benches, painted yellow and cream",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_2_01_c2"
+    },
+    {
+      "name": "Bus stand",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.9,
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "travel"
+      },
+      "why": [
+        "it is Bus again, or a part of it, and that is already in the game"
+      ],
+      "ask": 4
+    },
+    {
+      "name": "Port",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Port",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "travel"
+        },
+        "familiar": 0.7,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "travel"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "what_people_do_there"
+      ],
+      "ask": 4,
+      "draw": "A busy Indian harbour: concrete wharf edge with water below, a big modern cargo ship with funnel moored alongside, cranes and stacked containers on the dock, whole scene, natural colours",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_2_01_c3"
+    },
+    {
+      "name": "Metro station",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Metro station",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "travel"
+        },
+        "familiar": 0.8,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "travel"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing"
+      ],
+      "ask": 4,
+      "draw": "An Indian metro station: a long low building with a wide entrance, blue and white signboard, stairs down to a platform with rails, seen from the front on flat ground",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_2_01_c4"
+    },
+    {
+      "name": "Taxi stand",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Taxi stand",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "building",
+          "what_people_do_there": "travel"
+        },
+        "familiar": 0.8,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "travel"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing",
+        "what_people_do_there"
+      ],
+      "ask": 4,
+      "draw": "An Indian taxi stand: a row of yellow-and-black auto-rickshaws and white taxis parked nose-to-tail on grey road, waiting in a queue",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_2_01_c5"
+    },
+    {
+      "name": "Toy kitchen set",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Toy kitchen set",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "pretend"
+        },
+        "familiar": 0.9,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "pretend"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "how_we_play_with_it",
+        "kind_of_made_thing",
+        "kind_of_thing"
+      ],
+      "ask": 5,
+      "draw": "A small child's toy kitchen set in bright red and yellow plastic: a low stove with two burners, an oven door, a sink and a few tiny pots, standing on a plain floor",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_2_01_c6"
+    },
+    {
+      "name": "Doctor set",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Doctor set",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "pretend"
+        },
+        "familiar": 0.85,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "pretend"
+      },
+      "familiar": 0.85,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "how_we_play_with_it",
+        "kind_of_made_thing",
+        "kind_of_thing"
+      ],
+      "ask": 5,
+      "draw": "A child's doctor set in India: a white plastic stethoscope, a toy syringe, a small red cross box, and a reflex hammer, all in bright colours, resting on the ground",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_2_01_c7"
+    },
+    {
+      "name": "Toy phone",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Toy phone",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "pretend"
+        },
+        "familiar": 0.95,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "pretend"
+      },
+      "familiar": 0.95,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "how_we_play_with_it",
+        "kind_of_made_thing",
+        "kind_of_thing"
+      ],
+      "ask": 5,
+      "draw": "A bright plastic toy phone, rounded handset shape, in red or yellow, with a small keypad of numbered buttons and a short curly cord, lying flat on plain ground",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_2_01_c8"
+    },
+    {
+      "name": "Toy drum",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Toy drum",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "music"
+        },
+        "familiar": 0.95,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music"
+      },
+      "familiar": 0.95,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "how_we_play_with_it",
+        "kind_of_made_thing",
+        "kind_of_thing"
+      ],
+      "ask": 6,
+      "draw": "A small cylindrical toy drum, red body with yellow and green bands, white drumhead on top, two wooden beaters attached by a string, resting on plain ground",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_2_01_c9"
+    },
+    {
+      "name": "Toy flute",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Toy flute",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "music"
+        },
+        "familiar": 0.9,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "how_we_play_with_it",
+        "kind_of_made_thing",
+        "kind_of_thing"
+      ],
+      "ask": 6,
+      "draw": "A small straight bamboo or plastic toy flute, six finger holes on top, one blow hole at the end, natural light brown or bright red, lying flat on plain ground",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_3_01_c1"
+    },
+    {
+      "name": "Toy piano",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Toy piano",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "music"
+        },
+        "familiar": 0.9,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "how_we_play_with_it",
+        "kind_of_made_thing"
+      ],
+      "ask": 6,
+      "draw": "A small upright toy piano with a white and black keyboard, rounded wooden body in natural brown, short legs, and a row of little metal rods inside, standing alone on plain ground",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_3_01_c2"
+    },
+    {
+      "name": "Toy xylophone",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Toy xylophone",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "music"
+        },
+        "familiar": 0.85,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music"
+      },
+      "familiar": 0.85,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "how_we_play_with_it",
+        "kind_of_made_thing",
+        "kind_of_thing"
+      ],
+      "ask": 6,
+      "draw": "A toy xylophone: a flat wooden base with a row of rainbow-coloured metal bars, each bar a different bright colour, and two small wooden mallets resting on top",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_3_01_c3"
+    },
+    {
+      "name": "Toy guitar",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Toy guitar",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "music"
+        },
+        "familiar": 0.9,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "how_we_play_with_it",
+        "kind_of_made_thing",
+        "kind_of_thing"
+      ],
+      "ask": 6,
+      "draw": "A bright red plastic toy guitar, whole, with six colourful strings, a round sound hole, and a long neck with tuning pegs, lying flat on plain ground",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_3_01_c4"
+    },
+    {
+      "name": "Paper plane",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Paper plane",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "fly"
+        },
+        "familiar": 0.9,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06",
+        "notes": {
+          "how_we_play_with_it": "The pages point to 'Throw, kick or bat it'. Two checks, sorting it as a parent would, both put it in 'Fly it in the wind'."
+        }
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "fly"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "how_we_play_with_it"
+      ],
+      "ask": 7,
+      "draw": "A white paper plane folded from one sheet, a simple nose-heavy triangle like a dart, resting on plain ground",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_3_01_c5"
+    },
+    {
+      "name": "Windmill toy",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Windmill toy",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "fly"
+        },
+        "familiar": 0.8,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "fly"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "how_we_play_with_it",
+        "kind_of_made_thing",
+        "kind_of_thing"
+      ],
+      "ask": 7,
+      "draw": "A small paper windmill toy on a stick, four bright coloured paper vanes, red, yellow, blue and green, pinned at the centre, held upright on its thin stick",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_3_01_c6"
+    },
+    {
+      "name": "Stacking rings",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Stacking rings",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "build"
+        },
+        "familiar": 0.9,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "build"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "how_we_play_with_it",
+        "kind_of_made_thing",
+        "kind_of_thing"
+      ],
+      "ask": 8,
+      "draw": "A wooden stacking ring toy: a smooth vertical peg on a round base, with five brightly painted rings in red, yellow, green, blue and orange, stacked largest at the bottom to smallest on top",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_3_01_c7"
+    },
+    {
+      "name": "Magnetic tiles",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Magnetic tiles",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "build"
+        },
+        "familiar": 0.8,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "build"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "how_we_play_with_it",
+        "kind_of_made_thing",
+        "kind_of_thing"
+      ],
+      "ask": 8,
+      "draw": "A set of colourful square magnetic tiles, red, blue, yellow and green, with small magnets along the edges, joined flat on the floor into a simple house shape",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_3_01_c8"
+    },
+    {
+      "name": "Sand mould",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Sand mould",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "build"
+        },
+        "familiar": 0.8,
+        "reviewed": 10,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-07-06"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "build"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "how_we_play_with_it",
+        "kind_of_made_thing",
+        "kind_of_thing"
+      ],
+      "ask": 8,
+      "draw": "A sand mould in India: a small wooden frame packed with damp brown sand, hollowed into a simple shape, resting on the ground, whole and plain",
+      "tries": 1,
+      "tile": "job_2026_10_07_06_3_01_c9"
+    }
+  ],
+  "sheets": [
+    "job_2026_10_07_06_1_01",
+    "job_2026_10_07_06_2_01",
+    "job_2026_10_07_06_3_01"
+  ],
+  "stopped": "",
+  "fields_added": [
+    {
+      "circle": "made_by_people/toy",
+      "label": "Toys",
+      "field": "how_we_play_with_it",
+      "wording": "How do we mostly play with it?",
+      "values": {
+        "throw": "Throw, kick or bat it",
+        "ride": "Ride or sit on it",
+        "build": "Build or make with it",
+        "pretend": "Cuddle it or play pretend",
+        "wheel": "Wheel it along",
+        "fly": "Fly it in the wind",
+        "music": "Make music with it"
+      },
+      "filled": 7,
+      "off_the_board": [],
+      "source": "the library",
+      "full_values": [
+        "build",
+        "pretend",
+        "fly",
+        "music"
+      ],
+      "version": 10
+    }
+  ],
+  "fields_held": [
+    {
+      "circle": "nature_not_alive/ground",
+      "label": "Rocks and soil",
+      "tried": [
+        {
+          "wording": "What is it mostly?",
+          "values": {
+            "rock": "Rocks and stones",
+            "soil": "Kinds of soil",
+            "dug_to_use": "Things we dig out to burn or use",
+            "precious": "Shiny precious things"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 76% of the things where the proposer did (Brick: 'rock' or 'no one group'; Concrete: 'rock' or 'no one group'; Marble: 'rock' or 'no one group'; Gold: 'dug_to_use' or 'precious')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "Where do you mostly find it?",
+          "values": {
+            "in_the_ground": "In the ground",
+            "on_the_ground": "On the ground",
+            "on_the_beach": "On the beach",
+            "in_wet_places": "In wet places"
+          },
+          "why": [
+            "not every thing has one value: 6 of the 9 things there fit more than one group, and at most 1 may (Rock: in_the_ground and on_the_ground; Sand: on_the_beach and in_the_ground; Mud: in_wet_places and in_the_ground; Boulder: on_the_ground and in_the_ground; Pebble: on_the_ground and on_the_beach; Gravel: on_the_ground and in_the_ground)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What is it mostly made of?",
+          "values": {
+            "tiny_grains": "Tiny grains",
+            "small_stones": "Small stones",
+            "big_stones": "Big stones",
+            "soft_and_wet": "Soft and wet"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Tiny grains' has 2, 'Small stones' has 4, 'Big stones' has 3, 'Soft and wet' has 3"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "How does it feel when you touch it?",
+          "values": {
+            "hard_and_smooth": "Hard and smooth",
+            "rough_and_grainy": "Rough and grainy",
+            "soft_and_sticky": "Soft and sticky",
+            "big_and_heavy": "Big and heavy"
+          },
+          "why": [
+            "not every thing has one value: 3 of the 9 things there fit more than one group, and at most 1 may (Rock: hard_and_smooth and rough_and_grainy and big_and_heavy; Boulder: big_and_heavy and hard_and_smooth and rough_and_grainy; Pebble: hard_and_smooth and rough_and_grainy)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "nature_not_alive/sky",
+      "label": "Things in the sky",
+      "tried": [
+        {
+          "wording": "What is it mostly?",
+          "values": {
+            "own_light": "A light that shines by itself",
+            "world": "A round world in space",
+            "water": "Water in the air",
+            "air": "Moving air"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'A light that shines by itself' has 3, 'A round world in space' has 4, 'Water in the air' has 3, 'Moving air' has 3"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What kind of light in the sky is it?",
+          "values": {
+            "sun": "The Sun",
+            "moon": "The Moon",
+            "cloud": "A Cloud",
+            "star": "A Star"
+          },
+          "why": [
+            "only 2 of its values have four familiar things, and a board needs four: 'The Sun' has 6, 'The Moon' has 4, 'A Cloud' has 1, 'A Star' has 1"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What kind of thing in the sky is it?",
+          "values": {
+            "sun": "The Sun",
+            "moon": "The Moon",
+            "cloud": "A Cloud",
+            "star": "A Star"
+          },
+          "why": [
+            "not every thing has one value: 3 of the 14 names sorted have no single group, and at most one in 8 may (Sunrise, Sunset, Shooting Star)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What kind of light in the sky at night is it?",
+          "values": {
+            "sun": "The Sun",
+            "moon": "The Moon",
+            "cloud": "A Cloud",
+            "star": "A Star"
+          },
+          "why": [
+            "only 3 of its values have four familiar things, and a board needs four: 'The Sun' has 7, 'The Moon' has 4, 'A Cloud' has 1, 'A Star' has 4"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "nature_not_alive/water",
+      "label": "Water",
+      "tried": [
+        {
+          "wording": "Does the water flow or stay still?",
+          "values": {
+            "flows": "Water that flows",
+            "still": "Water that stays still",
+            "waves": "Water with big waves",
+            "frozen": "Water that is frozen hard"
+          },
+          "why": [
+            "only 3 of its values have four familiar things, and a board needs four: 'Water that flows' has 6, 'Water that stays still' has 6, 'Water with big waves' has 1, 'Water that is frozen hard' has 5"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "Is the water salty or not salty?",
+          "values": {
+            "salty": "Salty water",
+            "not_salty": "Not salty water",
+            "frozen": "Frozen water",
+            "rain": "Water falling from the sky"
+          },
+          "why": [
+            "not every thing has one value: 6 of the 20 names sorted have no single group, and at most one in 8 may (Harbor, Shore, Iceberg, Hail, Mist, Dew)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "Is the water big or small?",
+          "values": {
+            "very_big": "Very big water",
+            "big": "Big water",
+            "small": "Small water",
+            "tiny": "Tiny water"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 78% of the things where the proposer did (Bay: 'very_big' or 'big'; Harbor: 'very_big' or 'big'; Shore: 'very_big' or 'no one group'; Puddle: 'small' or 'tiny')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "plant/tree",
+      "label": "Trees",
+      "tried": [
+        {
+          "wording": "What kind of tree is it mostly?",
+          "values": {
+            "fruit": "Fruit trees",
+            "palm": "Palm trees",
+            "shade": "Big shade trees",
+            "cone": "Trees with needles and cones",
+            "flowering": "Trees grown for their flowers"
+          },
+          "why": [
+            "not every thing has one value: 4 of the 23 names sorted have no single group, and at most one in 8 may (Coconut tree, Date palm, Tamarind tree, Jackfruit tree)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What shape are the leaves?",
+          "values": {
+            "big_round_leaves": "Big round leaves",
+            "long_feathery_leaves": "Long feathery leaves",
+            "big_leafy_leaves": "Big leafy leaves",
+            "small_thin_leaves": "Small thin leaves"
+          },
+          "why": [
+            "not every thing has one value: 5 of the 21 names sorted have no single group, and at most one in 8 may (Guava tree, Ashoka tree, Elephant ear plant, Hibiscus plant, Lemon tree)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What is the trunk like?",
+          "values": {
+            "thick_woody_trunk": "Thick woody trunk",
+            "soft_green_stem": "Soft green stem",
+            "thin_woody_stem": "Thin woody stem",
+            "no_trunk": "No trunk"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 15 names sorted have no single group, and at most one in 8 may (Guava tree, Lemon tree)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What kind of fruit does it give?",
+          "values": {
+            "big_fruit": "Big fruit",
+            "small_fruit": "Small fruit",
+            "no_fruit": "No fruit",
+            "many_seeds_fruit": "Many-seeded fruit"
+          },
+          "why": [
+            "not every thing has a value: Banana plant - it fits more than one group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "plant/flower",
+      "label": "Flowers",
+      "tried": [
+        {
+          "wording": "What does the flower mostly grow on?",
+          "values": {
+            "bush": "On a bush",
+            "small_plant": "On a small soft plant",
+            "tree": "On a tree",
+            "climber": "On a climbing plant",
+            "water": "On a plant in water"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 82% of the things where the proposer did (Marigold: 'bush' or 'small_plant'; Jasmine: 'bush' or 'climber'; Bougainvillea: 'bush' or 'climber')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "Where does it mostly grow?",
+          "values": {
+            "water": "In water",
+            "fields": "In farm fields",
+            "gardens": "In gardens and parks",
+            "forests": "In forests",
+            "dry_places": "In dry, sandy places"
+          },
+          "why": [
+            "only 2 of its values have four familiar things, and a board needs four: 'In water' has 2, 'In farm fields' has 2, 'In gardens and parks' has 8, 'In forests' has 4, 'In dry, sandy places' has 1"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "How does it grow?",
+          "values": {
+            "tree": "Tall, with a woody trunk",
+            "bush": "As a bush",
+            "small_plant": "As a small soft plant",
+            "climber": "Climbing up a support",
+            "creeper": "Creeping along the ground",
+            "grass": "Like grass"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Tall, with a woody trunk' has 0, 'As a bush' has 2, 'As a small soft plant' has 9, 'Climbing up a support' has 2, 'Creeping along the ground' has 0, 'Like grass' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "Where does this flower mostly grow?",
+          "values": {
+            "in_garden": "In a garden",
+            "in_water": "In water",
+            "in_farm_field": "In a farm field",
+            "in_wild_forest": "In the wild forest"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Sunflower: 'in_farm_field' or 'no one group'; Daisy: 'in_garden' or 'no one group'; Bougainvillea: 'in_wild_forest' or 'in_garden')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What do we mostly use this flower for?",
+          "values": {
+            "for_prayer": "For prayer and worship",
+            "for_giving": "For giving as a gift",
+            "for_eating": "For eating or cooking",
+            "for_decorating": "For decorating the house"
+          },
+          "why": [
+            "not every thing has one value: 3 of the 4 things there fit more than one group, and at most 1 may (Rose: for_giving and for_decorating; Sunflower: for_decorating and for_eating; Marigold: for_prayer and for_decorating)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "How long does this flower usually last?",
+          "values": {
+            "one_day": "Lasts only one day",
+            "few_days": "Lasts a few days",
+            "many_days": "Lasts many days",
+            "all_year": "Blooms all year round"
+          },
+          "why": [
+            "not every thing has one value: 4 of the 4 things there fit more than one group, and at most 1 may (Rose: few_days and many_days; Sunflower: few_days and many_days; Lotus: few_days and many_days; Marigold: few_days and many_days)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "plant/grass_grain",
+      "label": "Grasses and grains",
+      "tried": [
+        {
+          "wording": "What do we mostly get from it?",
+          "values": {
+            "grain": "Grain to eat",
+            "sugar": "Sweet juice or sugar",
+            "poles": "Poles, mats and baskets",
+            "feed": "Food for animals, or a lawn"
+          },
+          "why": [
+            "not every thing has one value: 3 of the 10 names sorted have no single group, and at most one in 8 may (Jowar plant, Bajra plant, Ragi plant)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "Where does it grow?",
+          "values": {
+            "in_water": "In water",
+            "on_land": "On land",
+            "in_desert": "In desert",
+            "in_mountains": "In mountains"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'In water' has 1, 'On land' has 4, 'In desert' has 0, 'In mountains' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What do we get from it?",
+          "values": {
+            "grains": "Grains",
+            "sugar": "Sugar",
+            "wood": "Wood",
+            "fodder": "Fodder"
+          },
+          "why": [
+            "only 0 of its values have four familiar things, and a board needs four: 'Grains' has 2, 'Sugar' has 1, 'Wood' has 0, 'Fodder' has 1"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "How does it look?",
+          "values": {
+            "tall_and_thin": "Tall and thin",
+            "short_and_green": "Short and green",
+            "bushy": "Bushy",
+            "creeping": "Creeping"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 5 things there fit more than one group, and at most 1 may (Rice plant: short_and_green and tall_and_thin; Wheat: short_and_green and tall_and_thin)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "animal/reptile",
+      "label": "Reptiles",
+      "tried": [
+        {
+          "wording": "What kind of reptile is it?",
+          "values": {
+            "snake": "Snakes",
+            "lizard": "Lizards",
+            "turtle": "Turtles and tortoises",
+            "crocodile": "Crocodiles and their kin"
+          },
+          "why": [
+            "only 3 of its values have four familiar things, and a board needs four: 'Snakes' has 6, 'Lizards' has 7, 'Turtles and tortoises' has 5, 'Crocodiles and their kin' has 2"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "How does it look?",
+          "values": {
+            "long_and_no_legs": "Long and no legs",
+            "four_legs_and_shell": "Four legs and shell",
+            "four_legs_and_scales": "Four legs and scales",
+            "four_legs_and_bumpy_skin": "Four legs and bumpy skin"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 80% of the things where the proposer did (Crocodile: 'four_legs_and_bumpy_skin' or 'four_legs_and_scales'; Worm: 'long_and_no_legs' or 'no one group'; Eel: 'long_and_no_legs' or 'no one group'; Alligator: 'four_legs_and_bumpy_skin' or 'four_legs_and_scales')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "How does it move?",
+          "values": {
+            "slithers": "Slithers",
+            "walks_slowly": "Walks slowly",
+            "runs_and_climbs": "Runs and climbs",
+            "crawls_and_swims": "Crawls and swims"
+          },
+          "why": [
+            "not every thing has one value: 4 of the 21 names sorted have no single group, and at most one in 8 may (Anaconda, Worm, Eel, Sea snake)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "Where does it live?",
+          "values": {
+            "in_water": "In water",
+            "on_land": "On land",
+            "in_trees": "In trees",
+            "in_houses": "In houses"
+          },
+          "why": [
+            "not every thing has one value: 6 of the 12 things there fit more than one group, and at most 1 may (House lizard: in_houses and on_land; Crocodile: in_water and on_land; Turtle: in_water and on_land; Anaconda: in_water and on_land; Titanoboa: in_water and on_land; Vasuki indicus: in_water and on_land)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "animal/insect",
+      "label": "Insects",
+      "tried": [
+        {
+          "wording": "Where do we mostly see it?",
+          "values": {
+            "house": "In the house",
+            "garden": "In the garden",
+            "flowers": "On flowers",
+            "water": "Near water"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 80% of the things where the proposer did (Ladybug: 'flowers' or 'garden'; Dragonfly: 'garden' or 'water'; Moth: 'flowers' or 'house')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "How does it mostly move?",
+          "values": {
+            "walks": "Walks or runs",
+            "flies": "Flies",
+            "swims": "Swims",
+            "crawls": "Crawls or slithers",
+            "hops": "Hops or jumps"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Ladybug: 'flies' or 'no one group'; Beetle: 'walks' or 'crawls'; Cricket: 'walks' or 'hops'; Wasp: 'walks' or 'flies')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "Where does it spend most of its life?",
+          "values": {
+            "land": "On the ground",
+            "water": "In water",
+            "trees": "In trees",
+            "underground": "Under the ground"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 81% of the things where the proposer did (Mosquito: 'land' or 'water'; Cricket: 'land' or 'no one group'; Wasp: 'land' or 'trees')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "Where does it live?",
+          "values": {
+            "in_the_house": "In the house",
+            "in_the_garden": "In the garden",
+            "in_the_water": "In the water",
+            "in_the_soil": "In the soil"
+          },
+          "why": [
+            "not every thing has one value: 2 of the 8 things there fit more than one group, and at most 1 may (Ant: in_the_soil and in_the_garden and in_the_house; Mosquito: in_the_house and in_the_garden)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What does it do to people?",
+          "values": {
+            "it_bites_or_stings": "It bites or stings",
+            "it_makes_food": "It makes food",
+            "it_cleans_up": "It cleans up",
+            "it_is_pretty": "It is pretty"
+          },
+          "why": [
+            "not every thing has a value: Housefly - the two checks disagree: 'it_bites_or_stings' and 'none'; Cockroach - the two checks disagree: 'it_cleans_up' and 'none'; Grasshopper - it fits no group"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "How many legs does it have?",
+          "values": {
+            "six_legs": "Six legs",
+            "eight_legs": "Eight legs",
+            "many_legs": "Many legs",
+            "no_legs": "No legs"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Six legs' has 13, 'Eight legs' has 0, 'Many legs' has 0, 'No legs' has 0"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "animal/fish",
+      "label": "Fish",
+      "tried": [
+        {
+          "wording": "Where does it mostly live?",
+          "values": {
+            "sea": "In the open sea",
+            "reef": "Among corals and rocks in the sea",
+            "fresh": "In rivers and ponds",
+            "aquarium": "In a tank at home"
+          },
+          "why": [
+            "not every thing has one value: 6 of the 15 names sorted have no single group, and at most one in 8 may (Goldfish, Angelfish, Guppy, Betta fish, Zebra fish, Neon tetra)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "Where does this fish mostly live?",
+          "values": {
+            "home_tank": "In a home tank",
+            "river_or_pond": "In a river or pond",
+            "sea": "In the sea",
+            "deep_sea": "Deep in the sea"
+          },
+          "why": [
+            "not every thing has one value: 8 of the 18 names sorted have no single group, and at most one in 8 may (Goldfish, Guppy, Betta fish, Neon tetra, Angelfish, Zebra fish)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What covers the fish's body?",
+          "values": {
+            "scales": "Has scales",
+            "smooth_skin": "Has smooth skin",
+            "hard_shell": "Has a hard shell",
+            "spines": "Has spines"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Has scales' has 8, 'Has smooth skin' has 2, 'Has a hard shell' has 0, 'Has spines' has 1"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "Where does the fish swim?",
+          "values": {
+            "near_top": "Swims near the top",
+            "middle": "Swims in the middle",
+            "near_bottom": "Swims near the bottom",
+            "hides_in_rocks": "Hides in rocks or coral"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 59% of the things where the proposer did (Goldfish: 'near_top' or 'middle'; Shark: 'near_bottom' or 'middle'; Clownfish: 'near_top' or 'hides_in_rocks'; Zebra fish: 'near_top' or 'middle')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    },
+    {
+      "circle": "made_by_people/tool",
+      "label": "Tools",
+      "tried": [
+        {
+          "wording": "Who mostly uses it?",
+          "values": {
+            "carpenter": "A carpenter",
+            "farmer": "A farmer or gardener",
+            "tailor": "A tailor",
+            "doctor": "A doctor",
+            "mechanic": "A mechanic",
+            "builder": "A builder or mason"
+          },
+          "why": [
+            "not every thing has one value: 4 of the 5 things there fit more than one group, and at most 1 may (Hammer: carpenter and builder; Spade: farmer and builder; Saw: carpenter and builder; Screwdriver: mechanic and carpenter)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What job does it mostly do?",
+          "values": {
+            "cuts": "Cuts",
+            "hits": "Hits or knocks in",
+            "digs": "Digs",
+            "measures": "Measures",
+            "holds": "Holds or grips",
+            "turns": "Turns or tightens"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Nail: 'hits' or 'no one group'; Pestle: 'hits' or 'no one group'; Hatchet: 'hits' or 'cuts'; Pickaxe: 'hits' or 'digs')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What mostly makes it go?",
+          "values": {
+            "muscle": "People or animals",
+            "fuel": "Petrol, diesel or other fuel",
+            "electricity": "Electricity",
+            "wind": "Wind"
+          },
+          "why": [
+            "not every thing has one value: 4 of the 23 names sorted have no single group, and at most one in 8 may (Lawn mower, Water pump, Cement mixer, Sewing machine)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What kind of work does this tool do?",
+          "values": {
+            "hits_and_breaks": "Hits and breaks things",
+            "cuts_and_slices": "Cuts and slices things",
+            "digs_and_scoops": "Digs and scoops things",
+            "turns_and_tightens": "Turns and tightens things"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 80% of the things where the proposer did (Axe: 'hits_and_breaks' or 'cuts_and_slices'; Pickaxe: 'hits_and_breaks' or 'no one group'; Hatchet: 'hits_and_breaks' or 'cuts_and_slices'; Screw: 'turns_and_tightens' or 'no one group')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "How do we use this tool?",
+          "values": {
+            "hit_and_knock": "Hit and knock",
+            "cut_and_chop": "Cut and chop",
+            "dig_and_scoop": "Dig and scoop",
+            "turn_and_tighten": "Turn and tighten"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Axe: 'hit_and_knock' or 'cut_and_chop'; Pickaxe: 'hit_and_knock' or 'no one group'; Hatchet: 'hit_and_knock' or 'cut_and_chop'; Screw: 'turn_and_tighten' or 'no one group')"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What shape is the part that does the work?",
+          "values": {
+            "flat_and_wide": "Flat and wide",
+            "toothed_edge": "Toothed edge",
+            "pointed_and_thin": "Pointed and thin",
+            "cross_shaped": "Cross-shaped"
+          },
+          "why": [
+            "not every thing has one value: 7 of the 20 names sorted have no single group, and at most one in 8 may (Screwdriver, Scissors, Wrench, Pliers, Bolt, Nut)"
+          ],
+          "date": "2026-10-07",
+          "run": "2026-10-07-06",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    }
+  ],
+  "open_before": [
+    "animal",
+    "animal/dinosaur",
+    "animal/mammal",
+    "made_by_people",
+    "made_by_people/household",
+    "made_by_people/vehicle",
+    "nature_not_alive",
+    "plant",
+    "plant/vegetable",
+    "seed"
+  ],
+  "spent_usd": {
+    "deepseek": 0.15163,
+    "drawing": 0.4155,
+    "picture_checks": 0.00134
+  },
+  "opened": [
+    "Birds",
+    "Toys",
+    "Buildings"
+  ]
+}

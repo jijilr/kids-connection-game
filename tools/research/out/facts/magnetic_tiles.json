@@ -1,0 +1,27 @@
+{
+  "name": "Magnetic tiles",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "basis": "judged, not sourced",
+      "why": "Magnetic tiles are toys manufactured by people, not animals, plants, or natural non-living things."
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "basis": "judged, not sourced",
+      "why": "Magnetic tiles are playthings for children, so a parent would call them toys."
+    },
+    "how_we_play_with_it": {
+      "value": "build",
+      "basis": "judged, not sourced",
+      "why": "Magnetic tiles are construction toys that children use to build and make things."
+    }
+  },
+  "weak_spots": [],
+  "pages": [],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}
