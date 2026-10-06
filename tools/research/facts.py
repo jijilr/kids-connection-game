@@ -114,18 +114,18 @@ def applies(rule, kept: dict) -> bool:
 
 def ground(client, config, spend, dictionary: dict, name: str) -> dict:
     sources = saved_sources(name)
-    if not sources:
-        return {"name": name, "fields": {}, "weak_spots": [{"field": "everything", "why": "no page was found for it"}],
-                "pages": [], "read_by": {"model": config["model"], "date": today()}}
+    # With no page there is no sentence to quote, but an everyday thing can still be
+    # judged (twice, and both must agree), by the owner's standing rule of 6 Oct 2026.
     most = config["letters_of_each_page_sent_for_facts"]
     texts = {s["id"]: s["text"] for s in sources}
     block = "\n\n".join(f'<source id="{s["id"]}" title="{s.get("title", "")}">\n{s["text"][:most.get(s["id"], 2000)]}\n</source>'
                         for s in sources)
     other = sorted({s["title"] for s in sources if s.get("title") and s["title"].lower() != name.lower()})
     titles = f' The pages are titled: {", ".join(other)}.' if other else ""
-    answer = ask(client, config, spend, READER,
-                 block + "\n\n" + TASK.format(name=name, titles=titles, fields=describe(dictionary)),
-                 {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"], "most_written": 900})
+    answer = {} if not sources else ask(
+        client, config, spend, READER,
+        block + "\n\n" + TASK.format(name=name, titles=titles, fields=describe(dictionary)),
+        {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"], "most_written": 900})
 
     weak = [{"field": str(c.get("field")), "why": "the pages do not show it: " + str(c.get("why", "")).strip()}
             for c in answer.get("cannot_tell") or [] if isinstance(c, dict) and c.get("field") in dictionary["fields"]]

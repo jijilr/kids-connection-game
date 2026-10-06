@@ -161,7 +161,20 @@ def ask_openings(host: str, wanted: dict) -> dict:
     return found
 
 
-def openings(host: str, names: list, words: dict = None) -> dict:
+def meanings(host: str, title: str) -> tuple:
+    """The articles a page of several meanings points to, and what the page says of them."""
+    reply = requests.get(f"https://{host}/w/api.php", headers=AGENT, timeout=60, params={
+        "action": "query", "format": "json", "formatversion": 2, "titles": title, "redirects": 1,
+        "prop": "links|extracts", "pllimit": 200, "plnamespace": 0, "explaintext": 1})
+    reply.raise_for_status()
+    pages = reply.json()["query"].get("pages", [])
+    time.sleep(1.5)
+    if not pages:
+        return [], ""
+    return [link["title"] for link in pages[0].get("links", [])], pages[0].get("extract", "")[:3000]
+
+
+def openings(host: str, names: list, words: dict = None, choose=None) -> dict:
     """The opening of the article for each name, ten things to a request. A thing's
     fields are settled by how its article begins, so the whole article is not needed,
     and a hundred things cost a dozen requests, not two hundred.
@@ -182,10 +195,20 @@ def openings(host: str, names: list, words: dict = None) -> dict:
         for name, result in again.items():
             if "text" in result:
                 found[name] = dict(result, narrowed_by="the thing's kind")
+    # still several meanings: `choose` picks one from the page's OWN list of meanings, and
+    # only a title on that list is ever fetched
+    for name in names:
+        if choose and found[name].get("problem") == SEVERAL:
+            links, text = meanings(host, found[name]["title"])
+            picked = choose(name, links, text) if links else None
+            if picked in links:
+                result = ask_openings(host, {name: [picked]})[name]
+                if "text" in result:
+                    found[name] = dict(result, narrowed_by="chosen from the page's own list of meanings")
     return found
 
 
-def fetch_openings(names: list, again: bool, words: dict = None) -> dict:
+def fetch_openings(names: list, again: bool, words: dict = None, choose=None) -> dict:
     """Save the two Wikipedia openings for each ordinary thing. A page already saved,
     whole or opening, is kept unless --again is given. `words` narrows a name that has
     several meanings (see openings)."""
@@ -193,7 +216,7 @@ def fetch_openings(names: list, again: bool, words: dict = None) -> dict:
                for name in names}
     for source, host in (("wikipedia_en", "en.wikipedia.org"), ("wikipedia_simple", "simple.wikipedia.org")):
         need = [n for n in names if again or not results[n].get(source, {}).get("file")]
-        for name, found in openings(host, need, words).items():
+        for name, found in openings(host, need, words, choose).items():
             record = {"id": source, "fetched_on": today(), **{k: v for k, v in found.items() if k != "text"}}
             if "text" in found:
                 folder = CACHE / slug(name)
