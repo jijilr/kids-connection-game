@@ -21,7 +21,8 @@ DINOSAURS = {
     "land_grazer": (True, ["Brachiosaurus", "Brontosaurus", "Diplodocus", "Argentinosaurus", "Amargasaurus",
                            "Triceratops", "Ankylosaurus", "Stegosaurus", "Pachycephalosaurus", "Parasaurolophus"]),
     "swimmer": (False, ["Mosasaurus", "Kronosaurus", "Mixosaurus", "Tylosaurus", "Plesiosaurus", "Elasmosaurus"]),
-    "flyer": (False, ["Pterodactylus", "Pteranodon", "Quetzalcoatlus"]),
+    # the owner added both candidate flyers on 6 Oct 2026, so that Dinosaurs can open
+    "flyer": (False, ["Pterodactylus", "Pteranodon", "Quetzalcoatlus", "Rhamphorhynchus", "Dimorphodon"]),
 }
 
 # name -> extinct
@@ -59,8 +60,8 @@ EXCLUDED = {
 # Must be present after the exclusions (the owner's well-known fish).
 REQUIRED = ["goldfish", "shark", "clownfish"]
 
-# Waiting for the owner: the first child picks one as the fourth flyer; the other stays here.
-FLYER_CANDIDATES = ["Rhamphorhynchus", "Dimorphodon"]
+# Things ready but deliberately kept out of the game. None now: both candidate flyers went in.
+FLYER_CANDIDATES = []
 
 # Waiting for a field, or a board, that does not exist yet.
 WAITING = {

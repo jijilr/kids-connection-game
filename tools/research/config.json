@@ -177,8 +177,10 @@
     "made_by_people": []
   },
   "may_be_judged_when_no_page_states_it": {
-    "about": "The owner's ruling of 6 Oct 2026. Pages rarely say outright that the Sun is a thing in nature, or that a hen is still living. For these two only, DeepSeek may judge the value when no sentence states it. The value is recorded as 'judged, not sourced' and does not go to the owner's queue. Every other field still needs its sentence.",
+    "about": "The owner's rulings of 6 Oct 2026. Everyday things suitable for a four-year-old go in without asking him; only the unsuitable, the genuinely unfamiliar and the factually uncertain are queued. So where no page states a value, DeepSeek may judge it, twice and in different words. Agreement is recorded as 'judged, not sourced'. Disagreement is 'uncertain' and goes to the owner.",
     "kind_of_thing": "any value",
-    "extinct": "only 'still living'; a thing judged extinct with no sentence to show it goes to the owner"
+    "every field whose meaning is everyday": "any value",
+    "extinct": "only 'still living'; a thing judged extinct with no sentence to show it goes to the owner",
+    "every field whose meaning is academic": "never judged: it needs its sentence"
   }
 }

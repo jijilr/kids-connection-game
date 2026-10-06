@@ -2,7 +2,7 @@
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-10-06",
   "dictionary_version": 2,
-  "things": 135,
+  "things": 143,
   "rules": {
     "weights": {
       "nearness": 3,
@@ -44,7 +44,7 @@
       "label": "Everything",
       "steps_from_seed": 0,
       "branch": null,
-      "members": 135,
+      "members": 143,
       "open": true,
       "sorted_by": "kind_of_thing",
       "decisions": [],
@@ -54,7 +54,7 @@
       "label": "Animals",
       "steps_from_seed": 1,
       "branch": "animal",
-      "members": 74,
+      "members": 76,
       "open": true,
       "sorted_by": "kind_of_animal",
       "decisions": [],
@@ -204,16 +204,9 @@
       "label": "Dinosaurs",
       "steps_from_seed": 2,
       "branch": "animal",
-      "members": 24,
-      "open": false,
+      "members": 26,
+      "open": true,
       "sorted_by": "kind_of_dinosaur",
-      "missing": {
-        "field": null,
-        "short": {
-          "flyer": 1
-        },
-        "things": 1
-      },
       "decisions": [
         {
           "date": "2026-10-06",
@@ -227,17 +220,102 @@
           "what": "waiting for the first child to choose the fourth flyer",
           "why": "Rhamphorhynchus or Dimorphodon; both are in the review queue",
           "status": "waiting"
+        },
+        {
+          "date": "2026-10-06",
+          "what": "the owner added both candidate flyers, Rhamphorhynchus and Dimorphodon",
+          "why": "so that Dinosaurs can open; it now has five flyers"
         }
       ],
+      "status": "open"
+    },
+    "animal/dinosaur/land_hunter": {
+      "label": "Land hunters",
+      "steps_from_seed": 3,
+      "branch": "animal",
+      "members": 5,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 11
+      },
+      "decisions": [],
       "factors": {
-        "nearness": 0.5,
+        "nearness": 0.33,
         "neglect": 0.0,
         "unlocks": 0.33,
-        "cheapness": 0.8
+        "cheapness": 0.21
       },
-      "score": 3.8,
+      "score": 2.1,
       "move": "deepening",
-      "status": "approved by the owner"
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+    },
+    "animal/dinosaur/land_grazer": {
+      "label": "Land grazers",
+      "steps_from_seed": 3,
+      "branch": "animal",
+      "members": 10,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 6
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.33,
+        "neglect": 0.0,
+        "unlocks": 0.33,
+        "cheapness": 0.29
+      },
+      "score": 2.2,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+    },
+    "animal/dinosaur/flyer": {
+      "label": "Flyers",
+      "steps_from_seed": 3,
+      "branch": "animal",
+      "members": 5,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 11
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.33,
+        "neglect": 0.0,
+        "unlocks": 0.33,
+        "cheapness": 0.21
+      },
+      "score": 2.1,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+    },
+    "animal/dinosaur/swimmer": {
+      "label": "Swimmers",
+      "steps_from_seed": 3,
+      "branch": "animal",
+      "members": 6,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 10
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.33,
+        "neglect": 0.0,
+        "unlocks": 0.33,
+        "cheapness": 0.22
+      },
+      "score": 2.1,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
     },
     "plant": {
       "label": "Plants",
@@ -431,7 +509,7 @@
       "label": "Things people make",
       "steps_from_seed": 1,
       "branch": "made_by_people",
-      "members": 24,
+      "members": 30,
       "open": true,
       "sorted_by": "kind_of_made_thing",
       "decisions": [],
@@ -525,18 +603,24 @@
       "label": "Buildings",
       "steps_from_seed": 2,
       "branch": "made_by_people",
-      "members": 1,
+      "members": 7,
       "open": false,
       "missing": {
-        "things": 3,
-        "why": "fewer than four familiar things, so it is not yet a group on the board above it"
+        "field": "no field splits it four ways",
+        "things": 9
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-10-06",
+          "what": "the job prepared six buildings; the owner accepted Hospital, School and Temple, and ruled that Shop, Bridge and Tower count as buildings for this game",
+          "why": "Buildings is now a group of seven on the board of things people make"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
         "neglect": 0.5,
-        "unlocks": 0.0,
-        "cheapness": 0.57
+        "unlocks": 0.33,
+        "cheapness": 0.24
       },
       "score": 4.1,
       "move": "widening",

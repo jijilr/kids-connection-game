@@ -11,15 +11,33 @@ import prepare_next as job          # noqa: E402
 from prepare_next import cat        # noqa: E402
 
 
+def with_changes(change) -> dict:
+    """A copy of the catalogue with something changed, worked out again. The real one is not touched."""
+    catalogue = copy.deepcopy(cat.load())
+    change(catalogue["things"])
+    cat.work_out(catalogue)
+    return catalogue
+
+
+def keep_only(things: dict, field: str, value: str, count: int, status: str):
+    """Leave `count` things of one group in the game, and give the rest another status."""
+    group = [k for k, e in things.items() if e["status"] == cat.IN_GAME and e["fields"].get(field) == value]
+    for key in group[count:]:
+        things[key]["status"] = status
+
+
 def test_only_what_the_owner_approved_is_planned():
-    plan = job.plan(cat.load())
-    assert plan["asks"] == []                      # nothing approved is waiting for things or pictures
-    # Dinosaurs is approved and one Flyer short, but the two candidates are the owner's to choose between
+    assert job.plan(cat.load())["asks"] == []      # every thing has a picture and no approved circle is short
+    # Dinosaurs is approved. With two flyers ready but held back, choosing between them is the owner's to do
+    held = with_changes(lambda things: keep_only(things, "kind_of_dinosaur", "flyer", 3, cat.NOT_YET))
+    plan = job.plan(held)
+    assert plan["asks"] == []
     assert any("Flyers" in line and "deliberately not in the game yet" in line for line in plan["blocked"])
 
 
 def test_a_rehearsal_plans_the_circle_named_and_nothing_else():
-    plan = job.plan(cat.load(), rehearse="made_by_people/building")
+    one_building = with_changes(lambda things: keep_only(things, "kind_of_made_thing", "building", 1, cat.TAKEN_OUT))
+    plan = job.plan(one_building, rehearse="made_by_people/building")
     assert len(plan["asks"]) == 1
     ask = plan["asks"][0]
     assert ask["fixed"] == {"kind_of_thing": "made_by_people", "kind_of_made_thing": "building"}
@@ -32,12 +50,11 @@ def test_a_circle_with_no_field_to_sort_it_is_left_to_the_owner():
 
 
 def test_a_thing_in_the_game_without_a_picture_is_planned_for_drawing():
-    catalogue = copy.deepcopy(cat.load())
-    catalogue["things"]["cup"]["picture"]["game_file"] = None
-    cat.work_out(catalogue)
-    plan = job.plan(catalogue, rehearse="made_by_people")
-    assert [a["pictures_for"] for a in plan["asks"] if a.get("pictures_for")] == [["Cup"]]
-    assert job.plan(cat.load(), rehearse="made_by_people")["asks"] == []      # and not when every thing has one
+    bare = with_changes(lambda things: things["cup"]["picture"].update(game_file=None))
+    # a real run draws it whatever its circle; a rehearsal only inside the circle named
+    assert [a["pictures_for"] for a in job.plan(bare)["asks"]] == [["Cup"]]
+    assert [a["pictures_for"] for a in job.plan(bare, rehearse="made_by_people")["asks"] if a.get("pictures_for")] == [["Cup"]]
+    assert job.plan(bare, rehearse="plant")["asks"] == []
 
 
 def test_the_cap_is_hard():

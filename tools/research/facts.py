@@ -12,11 +12,13 @@ Then, with no model:
 Then a second DeepSeek call, which did not choose the values, reads each value with
 its sentence only and says whether the sentence shows it. What fails is dropped.
 
-Two fields may be JUDGED when no sentence states them (the owner's ruling of 6 Oct
-2026): what kind of thing it is, and that it is still living. Pages seldom say
-outright that sand is a thing in nature or that a hen is not extinct. DeepSeek judges
-those from what the pages say the thing is, and the value is recorded as "judged, not
-sourced". Every other field still needs its sentence.
+Some fields may be JUDGED when no sentence states them (the owner's rulings of 6 Oct
+2026): what kind of thing it is, any field with an everyday meaning, and that it is
+still living. Pages seldom say outright that sand is a thing in nature, that a shop
+is a building, or that a hen is not extinct. DeepSeek judges those, twice and in
+different words; when both answers agree the value is recorded as "judged, not
+sourced". When they differ the matter is uncertain, and it goes to the owner. A field
+with a scientist's meaning always needs its sentence.
 
 A field left without a kept value is a WEAK SPOT. For a new thing it goes to the
 owner's queue with the reason. Nothing here writes to the game's data.
@@ -74,6 +76,15 @@ No sentence in the sources states the answer to this question outright. Judge it
 {field}
 
 Return JSON: {{"value": "one of the choices, spelled exactly", "why": "one short sentence"}}"""
+
+
+PARENT = "You answer as a parent talking to a four-year-old in India. You answer only with JSON."
+
+PARENT_TASK = """A parent is sorting picture cards with a four-year-old. The card shows: {name}.
+
+{field}
+
+Which choice would the parent put this card under? Return JSON: {{"value": "one of the choices, spelled exactly"}}"""
 
 
 def spell(value) -> str:
@@ -156,39 +167,52 @@ def ground(client, config, spend, dictionary: dict, name: str) -> dict:
         item["basis"] = "sourced"
 
     def judged(key):
-        """DeepSeek's own judgement of one field, for the two fields the owner allows."""
+        """DeepSeek's own judgement of one field, asked twice in different words. The two
+        answers must agree: when they differ, the matter is uncertain and goes to the owner."""
         one = describe({"fields": {key: dictionary["fields"][key]}})
-        reply = ask(client, config, spend, READER.split(" Every value")[0],
-                    block + "\n\n" + JUDGE_TASK.format(name=name, field=one),
-                    {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"],
-                     "most_written": 200})
-        value = spell(reply.get("value"))
-        if value not in dictionary["fields"][key]["values"]:
+        options = {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"], "most_written": 200}
+        first = ask(client, config, spend, READER.split(" Every value")[0],
+                    block + "\n\n" + JUDGE_TASK.format(name=name, field=one), options)
+        second = ask(client, config, spend, PARENT, PARENT_TASK.format(name=name, field=one), options)
+        a, b = spell(first.get("value")), spell(second.get("value"))
+        allowed = dictionary["fields"][key]["values"]
+        if a not in allowed or b not in allowed:
             return None
-        return {"value": value, "basis": "judged, not sourced", "why": str(reply.get("why", "")).strip()}
+        if a != b:
+            return {"uncertain": f"two judgements disagree: '{allowed[a]}' and '{allowed[b]}'"}
+        return {"value": a, "basis": "judged, not sourced", "why": str(first.get("why", "")).strip()}
+
+    def may_judge(key) -> bool:
+        """The fields a page seldom states outright, which the owner lets DeepSeek judge:
+        what kind of thing it is, any field with an everyday meaning, and still living."""
+        return key in ("kind_of_thing", "extinct") or dictionary["fields"][key].get("meaning") == "everyday"
 
     # a field counts only when it applies, read against the values kept so far
-    if "kind_of_thing" not in candidates:
-        verdict = judged("kind_of_thing")
-        if verdict:
-            candidates["kind_of_thing"] = verdict
     kept, order = {}, list(dictionary["fields"])
     for key in order:
-        if key in candidates and applies(dictionary["fields"][key]["expected_on"], kept):
+        if not applies(dictionary["fields"][key]["expected_on"], kept):
+            continue
+        if key in candidates:
             kept[key] = candidates[key]
-    if "extinct" not in kept and applies(dictionary["fields"]["extinct"]["expected_on"], kept):
-        verdict = judged("extinct")
-        if verdict and verdict["value"] == "false":      # still living
-            kept["extinct"] = verdict
-        elif verdict:
-            weak.append({"field": "extinct", "why": "judged extinct, but no sentence in the pages shows it",
-                         "value": verdict["value"]})
+        elif may_judge(key):
+            verdict = judged(key)
+            if verdict and "uncertain" in verdict:
+                weak.append({"field": key, "why": "uncertain: " + verdict["uncertain"]})
+            elif verdict and key == "extinct" and verdict["value"] != "false":
+                weak.append({"field": key, "why": "judged extinct, but no sentence in the pages shows it",
+                             "value": verdict["value"]})
+            elif verdict:
+                kept[key] = verdict
     weak = [w for w in weak if w["field"] not in kept]
+    seen = lambda key: [w for w in weak if w["field"] == key]
     for key in order:
         expected = applies(dictionary["fields"][key]["expected_on"], kept)
-        if expected and key not in kept and not any(w["field"] == key for w in weak):
+        if expected and key not in kept and not seen(key):
             weak.append({"field": key, "why": "the model gave no answer for it"})
-    weak = [w for w in weak if w["field"] == "everything" or applies(dictionary["fields"][w["field"]]["expected_on"], kept)]
+    # a field that was judged in the end keeps only the judgement's own complaint, if any
+    weak = [w for w in weak if w["field"] == "everything"
+            or (applies(dictionary["fields"][w["field"]]["expected_on"], kept)
+                and not (len(seen(w["field"])) > 1 and not w["why"].startswith("uncertain")))]
 
     typed = lambda v: {"true": True, "false": False}.get(v, v)
     return {

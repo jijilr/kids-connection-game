@@ -37,7 +37,8 @@ def test_the_games_copy_holds_only_things_in_the_game_and_only_what_the_game_nee
     game = cat.game_copy(catalogue)["things"]
     assert set(game) == {k for k, e in catalogue["things"].items() if e["status"] == cat.IN_GAME}
     assert all(set(thing) <= set(cat.GAME_KEYS) for thing in game.values())
-    assert "rhamphorhynchus" in catalogue["things"] and "rhamphorhynchus" not in game
+    held = [k for k, e in catalogue["things"].items() if e["status"] != cat.IN_GAME]
+    assert held and not set(held) & set(game)      # recorded, and not in the game's copy
 
 
 def test_the_guard_catches_what_goes_wrong():
@@ -126,9 +127,18 @@ def test_which_circles_can_open_is_worked_out_not_set():
     catalogue = cat.load()
     circles = catalogue["worked_out"]["circles"]
     assert circles["seed"]["can_open_now"] and circles["animal"]["can_open_now"]
-    dinosaurs = circles["animal/dinosaur"]
+
+    # hold two flyers back: Dinosaurs closes by itself, says what it needs, and names what would fill it
+    short = copy.deepcopy(catalogue)
+    flyers = [k for k, e in short["things"].items()
+              if e["status"] == cat.IN_GAME and e["fields"].get("kind_of_dinosaur") == "flyer"]
+    for key in flyers[3:]:
+        short["things"][key]["status"] = cat.NOT_YET
+    cat.work_out(short)
+    dinosaurs = short["worked_out"]["circles"]["animal/dinosaur"]
     assert not dinosaurs["can_open_now"] and any("Flyers" in need for need in dinosaurs["needs"])
-    assert {t["name"] for t in dinosaurs["could_be_filled_by"]} == {"Rhamphorhynchus", "Dimorphodon"}
+    assert {t["name"] for t in dinosaurs["could_be_filled_by"]} == {short["things"][k]["name"] for k in flyers[3:]}
+    assert short["things"][flyers[3]]["worked_out"]["would_join"][-1] == "animal/dinosaur"
 
     # take the pictures away from a group: the circle closes by itself and says what it needs
     bare = copy.deepcopy(catalogue)

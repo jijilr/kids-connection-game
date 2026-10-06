@@ -8,7 +8,8 @@ catalogue what each one needs. Then, for each need it can meet:
                four-year-old would know.
   3. facts     the pages are fetched; DeepSeek fills the dictionary's fields from them,
                each with its sentence; a script checks every sentence; the guard checks
-               the record.
+               the record. An everyday field no page states is judged twice, and kept
+               when both judgements agree.
   4. boards    the new things must not give any board a second clean solution.
   5. draw      only when enough things passed for the group to open: DeepSeek writes one
                line for the painter and the OpenAI image model draws a sheet. A thing
@@ -19,6 +20,10 @@ catalogue what each one needs. Then, for each need it can meet:
                its tile into the game's pictures. Everything else goes to the owner's
                queue with the reason.
   8. report    what was added, what waits, what was spent; one commit on the work branch.
+
+What reaches the owner's queue (his standing rule of 6 Oct 2026): a thing unsuitable for
+a young child, one a four-year-old would not know, or one whose facts are uncertain.
+Everyday things that pass go in without asking him.
 
 It never adds a field or a value to the dictionary, never approves a proposal, never
 deletes anything, never pushes, never deploys, and never spends past the cap. Keys are
@@ -90,9 +95,12 @@ Return JSON: {{"things": [{{"name": "...", "familiar": 0.9, "why": "a few words"
 KNOWER = "You judge what a small child would recognise. You answer only with JSON."
 
 KNOWS_TASK = """A four-year-old in India is shown one clear picture of each thing below, with no caption.
-For each, say whether such a child would recognise it and name it, and how sure you are from 0 to 1.
+For each, answer three things:
+"recognises": would such a child recognise it and name it?
+"familiar": how sure you are of that, from 0 to 1.
+"suitable": is it fit to show a young child? Answer false ONLY for something violent, frightening or meant for adults, such as a gun, a ghost or a cigarette. Everyday things are suitable. So are ordinary places, including places of worship of any religion.
 
-Return JSON: {{"<name>": {{"recognises": true, "familiar": 0.9}}, ...}}
+Return JSON: {{"<name>": {{"recognises": true, "familiar": 0.9, "suitable": true}}, ...}}
 
 {names}"""
 
@@ -169,6 +177,15 @@ def plan(catalogue: dict, rehearse: str = None) -> dict:
     raw = build_circles(dictionary, things, settings)
     tree = (cat.read_json(TREE) or {}).get("circles", {})
     asks, blocked, nothing = [], [], []
+    if not rehearse:
+        by_kind = {}
+        for e in catalogue["things"].values():
+            if e["status"] == cat.IN_GAME and not (e.get("picture") or {}).get("game_file"):
+                by_kind.setdefault(e["fields"]["kind_of_thing"], []).append(e["name"])
+        for kind, names in by_kind.items():   # such as a thing the owner approved from his queue
+            asks.append({"circle": kind, "chain": dictionary["fields"]["kind_of_thing"]["values"][kind],
+                         "fixed": {"kind_of_thing": kind}, "need": 0, "pictures_for": names,
+                         "recorded_but_not_in_the_game": []})
     for cid, circle in raw.items():
         approved = tree.get(cid, {}).get("status") == "approved by the owner"
         if not (cid == rehearse or (approved and not rehearse)):
@@ -177,11 +194,11 @@ def plan(catalogue: dict, rehearse: str = None) -> dict:
         bare = [e["name"] for e in catalogue["things"].values()
                 if e["status"] == cat.IN_GAME and cid in e["worked_out"]["circles"]
                 and not (e.get("picture") or {}).get("game_file")]
-        if bare:      # a thing in the game with no picture, such as one the owner approved from his queue
+        if bare and rehearse:      # in a rehearsal, only the named circle's things
             asks.append({"circle": cid, "chain": labels_along(dictionary, dict(path)) or label, "fixed": dict(path),
                          "need": 0, "pictures_for": bare, "recorded_but_not_in_the_game": []})
         if circle["open"]:
-            if not bare:
+            if not (bare and rehearse):
                 nothing.append(f"{label}: it can already open")
             continue
         missing = circle["missing"]
@@ -249,6 +266,7 @@ def suggest(client, config, spend, catalogue: dict, ask: dict) -> list:
     for item in offered:
         second = known.get(item["name"]) if isinstance(known.get(item["name"]), dict) else {}
         item["recognised"] = second.get("recognises") is True
+        item["suitable"] = second.get("suitable") is not False
         item["familiar"] = round(min(item["familiar"], float(second.get("familiar") or 0)), 2)
     return sorted(offered, key=lambda o: -o["familiar"])
 
@@ -258,6 +276,9 @@ def suggest(client, config, spend, catalogue: dict, ask: dict) -> list:
 def ground_thing(client, config, spend, dictionary: dict, ask: dict, offer: dict, run_id: str) -> dict:
     """One suggested thing: its pages, its grounded fields, and whether it may go in."""
     name, reasons = offer["name"], []
+    if offer.get("suitable") is False:
+        return {"name": name, "passed": False, "familiar": offer["familiar"], "fields": dict(ask["fixed"]),
+                "why": ["the check says it is not suitable for a young child"], "not_recognised": True}
     if not offer["recognised"] or offer["familiar"] < FAMILIAR_ENOUGH:
         return {"name": name, "passed": False, "familiar": offer["familiar"], "fields": dict(ask["fixed"]),
                 "why": ["the check doubts a four-year-old would recognise it"], "not_recognised": True}
@@ -269,7 +290,7 @@ def ground_thing(client, config, spend, dictionary: dict, ask: dict, offer: dict
         got = fields.get(field)
         label = dictionary["fields"][field]["values"][str(value)]
         if got is None:
-            reasons.append(f"the pages do not show that it belongs in '{label}'")
+            reasons.append(f"it could not be settled that it belongs in '{label}'")
         elif got != value:
             reasons.append(f"the pages point to '{dictionary['fields'][field]['values'][str(got).lower() if isinstance(got, bool) else str(got)]}', not '{label}'")
     reasons += [f"{w['field']}: {w['why']}" for w in record["weak_spots"]]

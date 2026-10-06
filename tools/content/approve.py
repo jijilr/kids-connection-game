@@ -39,7 +39,7 @@ def main():
             "fields": entry["fields"],
             "familiar": entry.get("familiar", FAMILIAR_IF_UNKNOWN),
             "reviewed": dictionary["version"],
-            "source": SOURCE,
+            "source": "job:grounded+checked, approved by the owner" if entry["from"].startswith("job:") else SOURCE,
             "drafted_in": entry["from"].split(":", 1)[1],
             "notes": {"general": "Held at first: " + "; ".join(entry["why"])},
         }
