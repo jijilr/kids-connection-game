@@ -2401,18 +2401,6 @@
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03"
     },
-    "plain": {
-      "name": "Plain",
-      "fields": {
-        "kind_of_thing": "nature_not_alive",
-        "kind_of_nature": "land",
-        "shape_of_the_land": "flat"
-      },
-      "familiar": 0.8,
-      "reviewed": 9,
-      "source": "job:grounded+checked",
-      "drafted_in": "2026-10-07-03"
-    },
     "meadow": {
       "name": "Meadow",
       "fields": {
@@ -2486,7 +2474,7 @@
       "drafted_in": "2026-10-07-03"
     },
     "guinea_pig": {
-      "name": "Guinea Pig",
+      "name": "Guinea pig",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "mammal",
@@ -2740,18 +2728,6 @@
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03"
     },
-    "shrine": {
-      "name": "Shrine",
-      "fields": {
-        "kind_of_thing": "made_by_people",
-        "kind_of_made_thing": "building",
-        "what_people_do_there": "pray"
-      },
-      "familiar": 0.7,
-      "reviewed": 9,
-      "source": "job:grounded+checked",
-      "drafted_in": "2026-10-07-03"
-    },
     "market": {
       "name": "Market",
       "fields": {
@@ -2808,18 +2784,6 @@
         "what_people_do_there": "heal"
       },
       "familiar": 0.8,
-      "reviewed": 9,
-      "source": "job:grounded+checked",
-      "drafted_in": "2026-10-07-03"
-    },
-    "health_centre": {
-      "name": "Health centre",
-      "fields": {
-        "kind_of_thing": "made_by_people",
-        "kind_of_made_thing": "building",
-        "what_people_do_there": "heal"
-      },
-      "familiar": 0.7,
       "reviewed": 9,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03"

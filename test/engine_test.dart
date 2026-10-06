@@ -213,11 +213,13 @@ void main() {
     }
   });
 
-  test('Vegetable plants, Vehicles and Things in the house each open into a board of pictures', () {
+  test('Vegetable plants, Vehicles, Things in the house and Mammals each open into a board of pictures', () {
     const circles = <(List<PathFilter>, String)>[
       ([('kind_of_thing', 'plant'), ('kind_of_plant', 'vegetable')], 'part_we_eat'),
       ([('kind_of_thing', 'made_by_people'), ('kind_of_made_thing', 'vehicle')], 'where_it_travels'),
       ([('kind_of_thing', 'made_by_people'), ('kind_of_made_thing', 'household')], 'kind_of_house_thing'),
+      // the first field chosen from the field library by the rules, not approved by hand
+      ([('kind_of_thing', 'animal'), ('kind_of_animal', 'mammal')], 'pet_farm_or_wild'),
     ];
     for (final (filter, field) in circles) {
       for (int seed = 0; seed < 20; seed++) {

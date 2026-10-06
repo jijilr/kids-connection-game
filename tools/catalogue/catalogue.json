@@ -19746,7 +19746,7 @@
     },
     "plain": {
       "name": "Plain",
-      "status": "in the game",
+      "status": "taken out of the game",
       "fields": {
         "kind_of_thing": "nature_not_alive",
         "kind_of_nature": "land",
@@ -19757,30 +19757,16 @@
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
-        "circles": [
+        "would_join": [
           "seed",
           "nature_not_alive",
           "nature_not_alive/land"
-        ],
-        "boards": [
-          {
-            "circle": "seed",
-            "sorted_by": "kind_of_thing",
-            "group": "nature_not_alive",
-            "open_now": true
-          },
-          {
-            "circle": "nature_not_alive",
-            "sorted_by": "kind_of_nature",
-            "group": "land",
-            "open_now": true
-          }
         ]
       },
       "picture": {
         "tile": "job_2026_10_07_03_7_01_c1",
-        "game_file": "Assets/pictures/plain.webp",
-        "game_sha256": "cab0e1862608896631f287cfe6eebb9e5c04d2b8c989e921053fada98dbd47b8",
+        "game_file": null,
+        "game_sha256": null,
         "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_7_01_c1.png",
         "master_sha256": "2a108a47b1d43b8130a45870828d43f2413de7fc1628815d6260ab617f087aa3",
         "style": "v1",
@@ -19833,7 +19819,10 @@
         "say": "Plain",
         "checked_by_ear": false,
         "clip": null
-      }
+      },
+      "status_why": [
+        "its picture cannot be told from Meadow, which the picture check said on its first sheet; not a thing of its own for a child"
+      ]
     },
     "meadow": {
       "name": "Meadow",
@@ -20379,7 +20368,7 @@
       }
     },
     "guinea_pig": {
-      "name": "Guinea Pig",
+      "name": "Guinea pig",
       "status": "in the game",
       "fields": {
         "kind_of_thing": "animal",
@@ -22307,7 +22296,7 @@
     },
     "shrine": {
       "name": "Shrine",
-      "status": "in the game",
+      "status": "taken out of the game",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building",
@@ -22318,30 +22307,16 @@
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
-        "circles": [
+        "would_join": [
           "seed",
           "made_by_people",
           "made_by_people/building"
-        ],
-        "boards": [
-          {
-            "circle": "seed",
-            "sorted_by": "kind_of_thing",
-            "group": "made_by_people",
-            "open_now": true
-          },
-          {
-            "circle": "made_by_people",
-            "sorted_by": "kind_of_made_thing",
-            "group": "building",
-            "open_now": true
-          }
         ]
       },
       "picture": {
         "tile": "job_2026_10_07_03_3_01_c6",
-        "game_file": "Assets/pictures/shrine.webp",
-        "game_sha256": "8370335594821885b4f561e3e0be83e97dfe026aa027a1a5d47967450d3d9e8c",
+        "game_file": null,
+        "game_sha256": null,
         "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_3_01_c6.png",
         "master_sha256": "bf97a8be7a1518c6994c38300c93330839e0915ff6d952cff077501d836ef7aa",
         "style": "v1",
@@ -22394,7 +22369,10 @@
         "say": "Shrine",
         "checked_by_ear": false,
         "clip": null
-      }
+      },
+      "status_why": [
+        "its picture is a prayer cabinet kept inside a house, not a building; run 2026-10-07-03 let it in"
+      ]
     },
     "market": {
       "name": "Market",
@@ -22849,7 +22827,7 @@
     },
     "health_centre": {
       "name": "Health centre",
-      "status": "in the game",
+      "status": "taken out of the game",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building",
@@ -22860,30 +22838,16 @@
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
-        "circles": [
+        "would_join": [
           "seed",
           "made_by_people",
           "made_by_people/building"
-        ],
-        "boards": [
-          {
-            "circle": "seed",
-            "sorted_by": "kind_of_thing",
-            "group": "made_by_people",
-            "open_now": true
-          },
-          {
-            "circle": "made_by_people",
-            "sorted_by": "kind_of_made_thing",
-            "group": "building",
-            "open_now": true
-          }
         ]
       },
       "picture": {
         "tile": "job_2026_10_07_03_6_01_c1",
-        "game_file": "Assets/pictures/health_centre.webp",
-        "game_sha256": "d20e9d8ca7ca16a2bb23317a61874012c8946222eca05d36ae58672e900a9e14",
+        "game_file": null,
+        "game_sha256": null,
         "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_6_01_c1.png",
         "master_sha256": "633bcfce512ffc8ed38b2e1c2601e3dab67c34362828435088e6fb619629244b",
         "style": "v1",
@@ -22925,7 +22889,10 @@
         "say": "Health centre",
         "checked_by_ear": false,
         "clip": null
-      }
+      },
+      "status_why": [
+        "its picture cannot be told from Clinic, which the picture check said on its first sheet; not a thing of its own for a child"
+      ]
     },
     "island": {
       "name": "Island",
@@ -23311,11 +23278,11 @@
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 226,
+      "in the game": 223,
       "held by the rules": 54,
       "kept for later": 5,
       "excluded": 3,
-      "taken out of the game": 12
+      "taken out of the game": 15
     },
     "circles_that_can_open_now": [
       "seed",
@@ -23332,7 +23299,7 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 226,
+        "things": 223,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
@@ -23348,13 +23315,13 @@
           },
           "nature_not_alive": {
             "label": "Things in nature that are not alive",
-            "things": 32,
-            "with_picture": 32
+            "things": 31,
+            "with_picture": 31
           },
           "made_by_people": {
             "label": "Things people make",
-            "things": 72,
-            "with_picture": 72
+            "things": 70,
+            "with_picture": 70
           }
         },
         "open_by_its_things": true,
@@ -23845,7 +23812,7 @@
       },
       "nature_not_alive": {
         "label": "Things in nature that are not alive",
-        "things": 32,
+        "things": 31,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_nature",
         "groups": {
@@ -23861,8 +23828,8 @@
           },
           "land": {
             "label": "Places on land",
-            "things": 14,
-            "with_picture": 14
+            "things": 13,
+            "with_picture": 13
           },
           "ground": {
             "label": "Rocks and soil",
@@ -23902,7 +23869,7 @@
       },
       "nature_not_alive/land": {
         "label": "Places on land",
-        "things": 14,
+        "things": 13,
         "steps_from_seed": 2,
         "sorted_by": "shape_of_the_land",
         "groups": {
@@ -23913,8 +23880,8 @@
           },
           "flat": {
             "label": "Flat land",
-            "things": 4,
-            "with_picture": 4
+            "things": 3,
+            "with_picture": 3
           },
           "by_water": {
             "label": "Land beside water",
@@ -23971,6 +23938,7 @@
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
+          "1 more thing(s) in 'Flat land'",
           "3 more thing(s) in 'Land beside water'"
         ]
       },
@@ -24072,7 +24040,7 @@
       },
       "made_by_people": {
         "label": "Things people make",
-        "things": 72,
+        "things": 70,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_made_thing",
         "groups": {
@@ -24098,8 +24066,8 @@
           },
           "building": {
             "label": "Buildings",
-            "things": 19,
-            "with_picture": 19
+            "things": 17,
+            "with_picture": 17
           }
         },
         "open_by_its_things": true,
@@ -24276,7 +24244,7 @@
       },
       "made_by_people/building": {
         "label": "Buildings",
-        "things": 19,
+        "things": 17,
         "steps_from_seed": 2,
         "sorted_by": "what_people_do_there",
         "groups": {
@@ -24292,8 +24260,8 @@
           },
           "pray": {
             "label": "Pray",
-            "things": 5,
-            "with_picture": 5
+            "things": 4,
+            "with_picture": 4
           },
           "buy": {
             "label": "Buy and sell",
@@ -24302,8 +24270,8 @@
           },
           "heal": {
             "label": "Get well",
-            "things": 3,
-            "with_picture": 3
+            "things": 2,
+            "with_picture": 2
           },
           "cross": {
             "label": "Cross over or climb up",
@@ -24335,7 +24303,7 @@
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "1 more thing(s) in 'Get well'"
+          "2 more thing(s) in 'Get well'"
         ]
       }
     }
@@ -24345,7 +24313,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job run 2026-10-07-03",
+    "by": "the name as a parent writes it",
     "on": "2026-10-07"
   }
 }

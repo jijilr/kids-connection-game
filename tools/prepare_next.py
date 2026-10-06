@@ -1159,6 +1159,18 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
                     t["tile"] = chosen.get(cat.slug(t["name"]))
                     if not t["tile"]:
                         t["no_tile"] = f"no tile of it passed the checks after {attempt} sheet(s)"
+                        # the vision check took its picture for another thing of this game: a child
+                        # could not tell them apart either, so it is not drawn again
+                        tiles = cat.read_json(RECORDS)["tiles"].values()
+                        seen = {(x.get("vision") or {}).get("shows") for x in tiles
+                                if x["sheet_id"] == sheet_id and x["expected_thing"] == cat.slug(t["name"])}
+                        others = {cat.slug(o["name"]): o["name"] for o in run["things"] if o is not t and o["passed"]}
+                        others.update({k: e["name"] for k, e in cat.load()["things"].items() if e["status"] == cat.IN_GAME})
+                        twin = next((others[k] for k in seen if k in others), None)
+                        if twin:
+                            t["tries"] = 2
+                            t["no_tile"] = (f"its picture cannot be told from {twin}: the picture check took it for that, "
+                                            "so it is not a thing of its own for a child")
                 tool("preview.py", sheet_id)
                 say(f"  sheet {sheet_id}: " + ", ".join(f"{t['name']} {'ok' if t['tile'] else 'NOT ok'}" for t in sheet))
                 save()
