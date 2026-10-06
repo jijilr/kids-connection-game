@@ -29,6 +29,8 @@ def show(records: dict, sheet_id=None):
         if tile["cut"].get("notes"):
             cut += f" (note: {'; '.join(tile['cut']['notes'])})"
         linked = f" -> {names.get(tile['thing_id'], tile['thing_id'])}" if tile["thing_id"] else ""
+        if tile.get("look_closely"):
+            linked += f"  ** LOOK CLOSELY: {tile['look_closely']}"
         print(f"  {tile_id}: meant {names.get(tile['expected_thing'])}; looks like {looks}; "
               f"{cut}; {tile['review']}{linked}"
               + (f" ({tile['review_note']})" if tile["review_note"] else ""))

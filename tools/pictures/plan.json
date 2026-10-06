@@ -7,7 +7,8 @@
     "quality": "high",
     "text": "Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
     "layout": "One image containing a {grid} by {grid} grid of {count} equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:",
-    "approved": "by the owner on 2026-10-06, as drafted from his opening words (realistic, nature guide or museum catalogue)"
+    "approved": "by the owner on 2026-10-06, as drafted from his opening words (realistic, nature guide or museum catalogue)",
+    "size_from_now_on": "2880 px sheets of nine, by the owner's ruling on 2026-10-06: about 2 rupees a tile and masters about 1000 px square. 3072 is refused by the service (8.3 megapixel limit)."
   },
   "prices": {
     "usd_per_million_image_output_tokens": 30.0,
@@ -135,6 +136,736 @@
         {
           "thing": "tomato_plant",
           "draw": "a small bushy staked plant with red and green tomatoes"
+        }
+      ]
+    },
+    "size_test_plants_9": {
+      "purpose": "size test: the nine trial plants again, on a 2880 px sheet (the largest square the service allows; 3072 was refused)",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "No people and no animals.",
+      "cells": [
+        {
+          "thing": "mango_tree",
+          "draw": "a leafy tree with a thick trunk and yellow-orange mangoes among dark leaves"
+        },
+        {
+          "thing": "banana_plant",
+          "draw": "a smooth green stem, very large long leaves, one hanging bunch of green bananas"
+        },
+        {
+          "thing": "coconut_tree",
+          "draw": "a tall thin curved trunk, a crown of long feathery leaves, a cluster of green coconuts"
+        },
+        {
+          "thing": "rose",
+          "draw": "one red rose on a thorny stem with a few leaves"
+        },
+        {
+          "thing": "lotus",
+          "draw": "one pink lotus flower with a round flat leaf on a small patch of water"
+        },
+        {
+          "thing": "rice_plant",
+          "draw": "a clump of green stalks with drooping golden grain heads"
+        },
+        {
+          "thing": "sugarcane",
+          "draw": "a clump of tall, thick canes with clearly visible joints and purple-green bands; the long narrow leaves grow only at the very top, so the jointed stems are plainly seen"
+        },
+        {
+          "thing": "tomato_plant",
+          "draw": "a small bushy staked plant with red and green tomatoes"
+        },
+        {
+          "thing": "brinjal_plant",
+          "draw": "a small bushy plant with broad leaves and shiny purple brinjals"
+        }
+      ]
+    },
+    "plants_2": {
+      "purpose": "the remaining plants",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "No people and no animals.",
+      "cells": [
+        {
+          "thing": "neem_tree",
+          "draw": "a broad shady tree with a rough trunk and feathery leaves made of many small pointed leaflets"
+        },
+        {
+          "thing": "sunflower",
+          "draw": "one tall sunflower with a large yellow flower head, a thick stem and broad leaves"
+        },
+        {
+          "thing": "marigold",
+          "draw": "a bushy marigold plant with several round orange and yellow flowers"
+        },
+        {
+          "thing": "grass",
+          "draw": "a thick tuft of fresh green lawn grass growing from a little soil"
+        },
+        {
+          "thing": "wheat",
+          "draw": "a clump of golden ripe wheat stalks with bearded ears"
+        },
+        {
+          "thing": "bamboo",
+          "draw": "a clump of tall green bamboo canes with clear joints and small narrow leaves"
+        },
+        {
+          "thing": "chilli_plant",
+          "draw": "a small bushy plant with slender green leaves and hanging red and green chillies"
+        },
+        {
+          "thing": "pumpkin_plant",
+          "draw": "a trailing vine with large rough leaves, yellow flowers and one big orange pumpkin lying on the ground"
+        },
+        {
+          "thing": "grass",
+          "draw": "a second view: a small square patch of short green grass seen from slightly above",
+          "look_closely": "a second try at grass, which is hard to make recognisable; pick the better of the two"
+        }
+      ]
+    },
+    "nature_2": {
+      "purpose": "sky, water and land",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "No people, no animals and no buildings.",
+      "cells": [
+        {
+          "thing": "sun",
+          "draw": "the bright yellow Sun as a glowing disc with soft rays, on a small patch of pale blue sky"
+        },
+        {
+          "thing": "moon",
+          "draw": "the full Moon, pale grey-white with its darker markings, on a small patch of night sky"
+        },
+        {
+          "thing": "star",
+          "draw": "a few bright twinkling stars on a small patch of dark night sky",
+          "look_closely": "stars are points of light, so this tile may be hard to tell from the Moon's"
+        },
+        {
+          "thing": "cloud",
+          "draw": "one fluffy white cumulus cloud on a small patch of blue sky"
+        },
+        {
+          "thing": "rain",
+          "draw": "a grey rain cloud with lines of rain falling from it"
+        },
+        {
+          "thing": "sea",
+          "draw": "open blue sea with rolling waves, drawn as a rounded patch of water with soft, uneven, fading edges and no straight sides; no beach and no boats",
+          "look_closely": "a redraw: the first sea was rejected for its hard rectangular edges"
+        },
+        {
+          "thing": "pond",
+          "draw": "a small round village pond with still water, a few lily pads and reeds at its edge"
+        },
+        {
+          "thing": "beach",
+          "draw": "a strip of golden sandy beach with small waves washing onto it"
+        },
+        {
+          "thing": "desert",
+          "draw": "rolling golden sand dunes under a clear sky, with no plants"
+        }
+      ]
+    },
+    "made_1": {
+      "purpose": "vehicles and tools",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.",
+      "cells": [
+        {
+          "thing": "car",
+          "draw": "an ordinary small family car, side view"
+        },
+        {
+          "thing": "bicycle",
+          "draw": "a simple bicycle with two wheels, pedals and handlebars, side view"
+        },
+        {
+          "thing": "bus",
+          "draw": "an Indian city bus, side view"
+        },
+        {
+          "thing": "train",
+          "draw": "a train engine pulling two coaches on a short piece of track, side view"
+        },
+        {
+          "thing": "hammer",
+          "draw": "a claw hammer with a wooden handle"
+        },
+        {
+          "thing": "spade",
+          "draw": "a garden spade with a wooden handle and a flat metal blade"
+        },
+        {
+          "thing": "saw",
+          "draw": "a hand saw with a wooden handle and a toothed metal blade"
+        },
+        {
+          "thing": "screwdriver",
+          "draw": "a screwdriver with a coloured handle and a metal shaft"
+        },
+        {
+          "thing": "axe",
+          "draw": "a wood axe with a wooden handle and a steel head"
+        }
+      ]
+    },
+    "made_2": {
+      "purpose": "toys, a house, and one leftover from nature",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.",
+      "cells": [
+        {
+          "thing": "ball",
+          "draw": "a colourful rubber play ball"
+        },
+        {
+          "thing": "teddy_bear",
+          "draw": "a soft brown teddy bear sitting up"
+        },
+        {
+          "thing": "doll",
+          "draw": "a child's cloth doll in a simple dress, standing"
+        },
+        {
+          "thing": "building_blocks",
+          "draw": "a small stack of colourful wooden building blocks, plain with no letters"
+        },
+        {
+          "thing": "toy_car",
+          "draw": "a small bright plastic toy car, clearly a toy with chunky wheels",
+          "look_closely": "it must look like a toy and not like the real car"
+        },
+        {
+          "thing": "kite",
+          "draw": "a diamond-shaped paper kite with a tail and a string"
+        },
+        {
+          "thing": "balloon",
+          "draw": "one shiny red party balloon on a string"
+        },
+        {
+          "thing": "house",
+          "draw": "a small simple house with a door, two windows and a tiled roof"
+        },
+        {
+          "thing": "cave",
+          "draw": "the dark mouth of a rocky cave in a hillside, drawn as a rounded piece of landscape with soft edges",
+          "look_closely": "a nature thing placed on this sheet to fill it"
+        }
+      ]
+    },
+    "made_3": {
+      "purpose": "things in the house, and two leftovers from nature",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.",
+      "cells": [
+        {
+          "thing": "chair",
+          "draw": "a plain wooden chair"
+        },
+        {
+          "thing": "cup",
+          "draw": "a plain ceramic cup with a handle"
+        },
+        {
+          "thing": "spoon",
+          "draw": "a shiny steel spoon"
+        },
+        {
+          "thing": "table",
+          "draw": "a plain wooden table with four legs"
+        },
+        {
+          "thing": "bed",
+          "draw": "a single bed with a mattress, a pillow and a blanket"
+        },
+        {
+          "thing": "plate",
+          "draw": "an empty round steel plate"
+        },
+        {
+          "thing": "glass",
+          "draw": "an empty clear drinking glass"
+        },
+        {
+          "thing": "clay",
+          "draw": "a smooth lump of wet reddish-brown potter's clay",
+          "look_closely": "a nature thing placed on this sheet to fill it; must look different from mud and soil"
+        },
+        {
+          "thing": "mud",
+          "draw": "a patch of wet, shiny brown mud with a small puddle",
+          "look_closely": "a nature thing placed on this sheet to fill it; must look different from clay and soil"
+        }
+      ]
+    },
+    "animals_1": {
+      "purpose": "mammals",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.",
+      "cells": [
+        {
+          "thing": "dog",
+          "draw": "a friendly brown Indian street dog"
+        },
+        {
+          "thing": "cat",
+          "draw": "a tabby house cat"
+        },
+        {
+          "thing": "cow",
+          "draw": "an Indian cow with a hump and short horns"
+        },
+        {
+          "thing": "elephant",
+          "draw": "an Asian elephant"
+        },
+        {
+          "thing": "lion",
+          "draw": "a male lion with a full mane"
+        },
+        {
+          "thing": "tiger",
+          "draw": "a Bengal tiger"
+        },
+        {
+          "thing": "monkey",
+          "draw": "a rhesus monkey"
+        },
+        {
+          "thing": "horse",
+          "draw": "a brown horse"
+        },
+        {
+          "thing": "goat",
+          "draw": "a goat with short horns and a small beard"
+        }
+      ]
+    },
+    "animals_2": {
+      "purpose": "more mammals, and fish",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each cell shows one animal only: the whole animal seen from the side. No people, no other animals and no scenery; no water around the fish.",
+      "cells": [
+        {
+          "thing": "rabbit",
+          "draw": "a white and brown rabbit sitting up"
+        },
+        {
+          "thing": "bear",
+          "draw": "a brown bear standing on four legs"
+        },
+        {
+          "thing": "giraffe",
+          "draw": "a giraffe, the whole animal including its legs"
+        },
+        {
+          "thing": "goldfish",
+          "draw": "an orange goldfish with flowing fins"
+        },
+        {
+          "thing": "rohu_fish",
+          "draw": "a rohu: a silvery river carp with reddish fins and large scales",
+          "look_closely": "rohu and catla look alike; check the two can be told apart"
+        },
+        {
+          "thing": "catla_fish",
+          "draw": "a catla: a deep-bodied river carp with a very large head and an upturned mouth",
+          "look_closely": "rohu and catla look alike; check the two can be told apart"
+        },
+        {
+          "thing": "shark",
+          "draw": "a grey shark with a pointed snout and a tall back fin"
+        },
+        {
+          "thing": "clownfish",
+          "draw": "an orange clownfish with three white bands edged in black"
+        },
+        {
+          "thing": "catla_fish",
+          "draw": "a second view of a catla, showing its big head and upturned mouth clearly",
+          "look_closely": "a second try at catla; pick the better of the two"
+        }
+      ]
+    },
+    "animals_3": {
+      "purpose": "birds",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.",
+      "cells": [
+        {
+          "thing": "crow",
+          "draw": "a black house crow with a grey neck"
+        },
+        {
+          "thing": "pigeon",
+          "draw": "a blue-grey city pigeon"
+        },
+        {
+          "thing": "parrot",
+          "draw": "a green rose-ringed parakeet with a red beak"
+        },
+        {
+          "thing": "hen",
+          "draw": "a brown hen"
+        },
+        {
+          "thing": "duck",
+          "draw": "a white duck with an orange beak"
+        },
+        {
+          "thing": "peacock",
+          "draw": "a peacock with its long tail folded behind it"
+        },
+        {
+          "thing": "sparrow",
+          "draw": "a small brown house sparrow"
+        },
+        {
+          "thing": "eagle",
+          "draw": "a large brown eagle perched, with a hooked beak"
+        },
+        {
+          "thing": "owl",
+          "draw": "a brown owl with large round eyes, perched"
+        }
+      ]
+    },
+    "animals_4": {
+      "purpose": "insects, and a penguin",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.",
+      "cells": [
+        {
+          "thing": "butterfly",
+          "draw": "an orange and black butterfly with open wings, seen from above"
+        },
+        {
+          "thing": "ant",
+          "draw": "a single black ant, shown large"
+        },
+        {
+          "thing": "housefly",
+          "draw": "a single housefly, shown large"
+        },
+        {
+          "thing": "mosquito",
+          "draw": "a single mosquito with long thin legs, shown large"
+        },
+        {
+          "thing": "honeybee",
+          "draw": "a single honeybee with striped body, shown large"
+        },
+        {
+          "thing": "cockroach",
+          "draw": "a single brown cockroach seen from above, shown large"
+        },
+        {
+          "thing": "grasshopper",
+          "draw": "a green grasshopper with long back legs"
+        },
+        {
+          "thing": "ladybug",
+          "draw": "a red ladybird with black spots"
+        },
+        {
+          "thing": "penguin",
+          "draw": "a black and white penguin standing upright",
+          "look_closely": "a bird placed on this sheet to fill it"
+        }
+      ]
+    },
+    "animals_5": {
+      "purpose": "reptiles",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.",
+      "cells": [
+        {
+          "thing": "house_lizard",
+          "draw": "a small pale house gecko of the kind seen on walls"
+        },
+        {
+          "thing": "crocodile",
+          "draw": "a crocodile lying flat with its long jaws closed"
+        },
+        {
+          "thing": "tortoise",
+          "draw": "a land tortoise with a high domed shell and stumpy legs",
+          "look_closely": "tortoise and turtle must be told apart: domed shell and legs here"
+        },
+        {
+          "thing": "turtle",
+          "draw": "a sea turtle with a flat streamlined shell and flippers",
+          "look_closely": "tortoise and turtle must be told apart: flat shell and flippers here"
+        },
+        {
+          "thing": "chameleon",
+          "draw": "a green chameleon on a twig, with a curled tail and turret eyes"
+        },
+        {
+          "thing": "monitor_lizard",
+          "draw": "a large grey-brown monitor lizard with a long neck, a long tail and a forked tongue"
+        },
+        {
+          "thing": "snake",
+          "draw": "a common slender brown-green rat snake, loosely coiled",
+          "look_closely": "must look like an ordinary snake, not a cobra or a python"
+        },
+        {
+          "thing": "cobra",
+          "draw": "an Indian cobra reared up with its hood spread"
+        },
+        {
+          "thing": "python",
+          "draw": "a thick Indian python with brown blotches, loosely coiled",
+          "look_closely": "python and anaconda must be told apart: brown blotched pattern here"
+        }
+      ]
+    },
+    "animals_6": {
+      "purpose": "giant snakes and amphibians",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.",
+      "cells": [
+        {
+          "thing": "anaconda",
+          "draw": "a very thick green anaconda with dark oval spots, loosely coiled",
+          "look_closely": "python and anaconda must be told apart: olive green with dark round spots here"
+        },
+        {
+          "thing": "titanoboa",
+          "draw": "an extinct giant snake about 13 metres long and as thick as a barrel, like an enormous boa with a brown patterned body, loosely coiled",
+          "look_closely": "extinct, known from fossil backbones; the colour and pattern are a guess"
+        },
+        {
+          "thing": "vasuki_indicus",
+          "draw": "an extinct giant snake from India, very long and thick-bodied like an enormous python, stretched out in loose curves",
+          "look_closely": "extinct, known only from backbones; its real appearance is unknown, so this is a reconstruction"
+        },
+        {
+          "thing": "frog",
+          "draw": "a green frog sitting"
+        },
+        {
+          "thing": "toad",
+          "draw": "a brown warty toad sitting",
+          "look_closely": "frog and toad must be told apart: dry, warty and brown here"
+        },
+        {
+          "thing": "tree_frog",
+          "draw": "a small bright green tree frog with sticky toe pads, on a leaf stem"
+        },
+        {
+          "thing": "titanoboa",
+          "draw": "a second view of Titanoboa, stretched out long to show its great length and thickness",
+          "look_closely": "a second try; pick the better of the two"
+        },
+        {
+          "thing": "vasuki_indicus",
+          "draw": "a second view of Vasuki indicus, loosely coiled",
+          "look_closely": "a second try; pick the better of the two"
+        },
+        {
+          "thing": "snake",
+          "draw": "a second view of a common slender snake, stretched out",
+          "look_closely": "a second try at the ordinary snake; pick the better of the two"
+        }
+      ]
+    },
+    "dinosaurs_1": {
+      "purpose": "land hunters and armoured plant-eaters",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each cell shows one prehistoric animal only, as a careful, scientifically informed life reconstruction of the kind printed in a museum guide: the whole animal including the tail, seen from the side, in natural, plausible colours. No people, no other animals, no scenery, no skeletons and no fossils.",
+      "cells": [
+        {
+          "thing": "tyrannosaurus_rex",
+          "draw": "a huge two-legged meat-eater with a massive deep skull and thick teeth, tiny two-fingered arms, powerful hind legs and a long heavy tail held level; scaly skin",
+          "name": "Tyrannosaurus rex"
+        },
+        {
+          "thing": "giganotosaurus",
+          "draw": "as long as T. rex but more lightly built, with a longer, lower, narrower skull, rough ridges above the eyes, and three-fingered arms",
+          "look_closely": "easily drawn as a second T. rex; check the longer, narrower skull and three fingers",
+          "name": "Giganotosaurus"
+        },
+        {
+          "thing": "allosaurus",
+          "draw": "a medium-sized two-legged meat-eater with a pair of short horn-like crests in front of the eyes and three-fingered hands with large claws",
+          "name": "Allosaurus"
+        },
+        {
+          "thing": "spinosaurus",
+          "draw": "a long, low, crocodile-like snout with cone-shaped teeth, a tall sail along its back, short hind legs, and a long deep paddle-shaped tail",
+          "look_closely": "scientists' picture of it has changed; check the paddle tail and short legs",
+          "name": "Spinosaurus"
+        },
+        {
+          "thing": "velociraptor",
+          "draw": "the size of a turkey, covered in feathers with feathered arms and a feathered tail, a long narrow snout, and one raised sickle-shaped claw on each foot",
+          "look_closely": "science says small and feathered; films show it large and scaly. Your decision which he should see",
+          "name": "Velociraptor"
+        },
+        {
+          "thing": "triceratops",
+          "draw": "a four-legged plant-eater with a large bony neck frill, two long brow horns, one short nose horn and a parrot-like beak",
+          "name": "Triceratops"
+        },
+        {
+          "thing": "stegosaurus",
+          "draw": "a four-legged plant-eater with a small low head, two rows of large upright plates along its back and four spikes at the end of its tail",
+          "name": "Stegosaurus"
+        },
+        {
+          "thing": "ankylosaurus",
+          "draw": "low, wide and tank-like, its back covered in bony armour plates and knobs, with a heavy club at the end of its tail",
+          "name": "Ankylosaurus"
+        },
+        {
+          "thing": "parasaurolophus",
+          "draw": "a duck-billed plant-eater with a long, curved, hollow crest sweeping back from its head",
+          "look_closely": "less common; check the long backward crest",
+          "name": "Parasaurolophus"
+        }
+      ]
+    },
+    "dinosaurs_2": {
+      "purpose": "long-necked plant-eaters, a dome-head, and flyers",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each cell shows one prehistoric animal only, as a careful, scientifically informed life reconstruction of the kind printed in a museum guide: the whole animal including the tail, seen from the side, in natural, plausible colours. No people, no other animals, no scenery, no skeletons and no fossils.",
+      "cells": [
+        {
+          "thing": "brachiosaurus",
+          "draw": "giraffe-like, with front legs longer than its back legs so its back slopes down, its neck held high and upright, and a rounded crest on top of its small head",
+          "look_closely": "the four long-necks look alike; check the high neck and sloping back",
+          "name": "Brachiosaurus"
+        },
+        {
+          "thing": "brontosaurus",
+          "draw": "a heavy long-neck with a very thick, deep neck held forward, a level back and a long whip-like tail",
+          "look_closely": "the four long-necks look alike; check the thick neck",
+          "name": "Brontosaurus"
+        },
+        {
+          "thing": "diplodocus",
+          "draw": "very long and slender, its long neck held nearly level, an extremely long thin whip tail longer than its neck, and a small low head",
+          "look_closely": "the four long-necks look alike; check the slender body and very long tail",
+          "name": "Diplodocus"
+        },
+        {
+          "thing": "argentinosaurus",
+          "draw": "one of the largest land animals ever, enormously bulky with a wide body, a long neck held up at an angle, and a shorter tail with no whip end",
+          "look_closely": "known from few bones, so much of this is a reconstruction; must look bulkier than the others",
+          "name": "Argentinosaurus"
+        },
+        {
+          "thing": "amargasaurus",
+          "draw": "a small long-neck with two rows of tall spines running along its neck and back",
+          "look_closely": "less common; check the double row of neck spines",
+          "name": "Amargasaurus"
+        },
+        {
+          "thing": "pachycephalosaurus",
+          "draw": "a two-legged plant-eater with a thick high dome of bone on top of its head, ringed with small knobs and spikes, and short arms",
+          "look_closely": "less common; check the domed head",
+          "name": "Pachycephalosaurus"
+        },
+        {
+          "thing": "pterodactylus",
+          "draw": "a small flying reptile with a one-metre wingspan, long narrow jaws with small teeth, a low soft crest, a very short tail, and skin wings stretched from one very long finger; shown flying",
+          "look_closely": "often drawn as Pteranodon by mistake; it must be small, toothed and without a big crest",
+          "name": "Pterodactylus"
+        },
+        {
+          "thing": "pteranodon",
+          "draw": "a large flying reptile with a long toothless beak, a long bony crest pointing back from its head, and a very short tail; shown flying",
+          "name": "Pteranodon"
+        },
+        {
+          "thing": "quetzalcoatlus",
+          "draw": "a giant flying reptile as tall as a giraffe when standing, with a very long stiff neck, a long pointed toothless beak and a small crest; shown standing on all fours with wings folded",
+          "look_closely": "less common; check the very long neck and its great size",
+          "name": "Quetzalcoatlus"
+        }
+      ]
+    },
+    "dinosaurs_3": {
+      "purpose": "swimmers, and the two flyers he will choose between",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each cell shows one prehistoric animal only, as a careful, scientifically informed life reconstruction of the kind printed in a museum guide: the whole animal including the tail, seen from the side, in natural, plausible colours. No people, no other animals, no scenery, no skeletons and no fossils.",
+      "cells": [
+        {
+          "thing": "mosasaurus",
+          "draw": "a giant sea lizard with a long streamlined body, four paddle-like flippers, cone-shaped teeth and a tail ending in a downturned shark-like fin",
+          "look_closely": "Mosasaurus and Tylosaurus look alike; check they can be told apart",
+          "name": "Mosasaurus"
+        },
+        {
+          "thing": "tylosaurus",
+          "draw": "a sea lizard like Mosasaurus but slimmer, with a longer, narrower snout ending in a blunt toothless tip",
+          "look_closely": "Mosasaurus and Tylosaurus look alike; check the long blunt snout",
+          "name": "Tylosaurus"
+        },
+        {
+          "thing": "kronosaurus",
+          "draw": "a sea reptile with an enormous head a quarter of its body length, a short neck, four large flippers and a short tail",
+          "look_closely": "less common; check the huge head and short neck",
+          "name": "Kronosaurus"
+        },
+        {
+          "thing": "plesiosaurus",
+          "draw": "a small sea reptile with a small head, a fairly long neck, a broad body, four flippers and a short tail",
+          "look_closely": "Plesiosaurus and Elasmosaurus differ mainly in neck length",
+          "name": "Plesiosaurus"
+        },
+        {
+          "thing": "elasmosaurus",
+          "draw": "a sea reptile with a neck far longer than its body and tail together, a tiny head and four flippers",
+          "look_closely": "Plesiosaurus and Elasmosaurus differ mainly in neck length; this neck must be much longer",
+          "name": "Elasmosaurus"
+        },
+        {
+          "thing": "mixosaurus",
+          "draw": "a small dolphin-shaped sea reptile about as long as a person, with a long narrow snout, large eyes, a low back fin and a tail fin with a small upper lobe",
+          "look_closely": "less common; check it looks like a small ichthyosaur and not a dolphin",
+          "name": "Mixosaurus"
+        },
+        {
+          "thing": "rhamphorhynchus",
+          "draw": "a flying reptile with a long tail ending in a diamond-shaped vane and needle-like teeth pointing forward; shown flying",
+          "look_closely": "not in the game yet: one of the two flyers the first child will choose between",
+          "name": "Rhamphorhynchus"
+        },
+        {
+          "thing": "dimorphodon",
+          "draw": "a flying reptile with a large deep head rather like a puffin's, two kinds of teeth and a long tail; shown flying",
+          "look_closely": "not in the game yet: one of the two flyers the first child will choose between",
+          "name": "Dimorphodon"
+        },
+        {
+          "thing": "tylosaurus",
+          "draw": "a second view of Tylosaurus, showing its long narrow snout clearly",
+          "look_closely": "a second try; pick the better of the two",
+          "name": "Tylosaurus"
         }
       ]
     }

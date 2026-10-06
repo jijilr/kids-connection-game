@@ -205,8 +205,8 @@ def main():
         raise SystemExit(f"No sheet '{sheet_id}'. Known: {', '.join(records['sheets']) or 'none'}")
     sheet = records["sheets"][sheet_id]
     plan = read_json(PLAN)
-    names = thing_names()
-    draws = {c["thing"]: c["draw"] for c in plan["sheets"][sheet["plan_key"]]["cells"]}
+    names = dict(thing_names(), **sheet.get("names", {}))
+    planned = plan["sheets"][sheet["plan_key"]]["cells"]
 
     image = Image.open(ROOT / sheet["file"])
     try:
@@ -241,7 +241,8 @@ def main():
             "sheet_id": sheet_id,
             "cell": number,
             "style_version": sheet["style_version"],
-            "prompt": f"{names.get(expected, expected)}: {draws.get(expected, '')}",
+            "prompt": f"{names.get(expected, expected)}: {planned[number - 1]['draw']}",
+            "look_closely": planned[number - 1].get("look_closely", ""),
             "model": sheet["model"],
             "date": sheet["date"],
             "cost_usd": None if sheet["cost_usd"] is None else round(sheet["cost_usd"] / count, 4),

@@ -12,7 +12,7 @@ import os
 import sys
 
 from piclib import (PLAN, RECORDS, SHEETS, build_prompt, load_records, read_json, relative,
-                    thing_names, today, write_json)
+                    sheet_names, today, write_json)
 
 
 def cost_usd(usage, prices: dict):
@@ -37,8 +37,8 @@ def main():
                          f"Sheets in the plan: {', '.join(plan['sheets'])}")
     key = keys[0]
     sheet, style = plan["sheets"][key], plan["style"]
-    names = thing_names()
-    unknown = [c["thing"] for c in sheet["cells"] if c["thing"] not in names]
+    names = sheet_names(sheet)
+    unknown = [thing for thing, name in names.items() if not name]
     if unknown or len(sheet["cells"]) != sheet["grid"] ** 2:
         raise SystemExit(f"The plan for {key} is wrong: unknown things {unknown}, "
                          f"or not {sheet['grid'] ** 2} cells.")
@@ -78,6 +78,7 @@ def main():
         "grid": sheet["grid"],
         "size": size,
         "cells": [c["thing"] for c in sheet["cells"]],
+        "names": names,
         "style_version": style["version"],
         "model": style["model"],
         "quality": style["quality"],

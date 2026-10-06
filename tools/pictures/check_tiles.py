@@ -50,15 +50,15 @@ def main():
 
     check = read_json(PLAN)["vision_check"]
     model, spent = check["model"], 0.0
-    names = thing_names()
+    names = dict(thing_names(), **records["sheets"][sheet_id].get("names", {}))
     wanted = records["sheets"][sheet_id]["cells"]
+    options = list(dict.fromkeys(names[thing] for thing in wanted))  # a second try repeats a name
     by_name = {names[thing].lower(): thing for thing in wanted}
     client = OpenAI()
 
     for tile_id, tile in tiles.items():
         # the game's version is checked, since that is what the child will see
-        answer, usage = ask(client, model, (ROOT / tile["app_file"]).read_bytes(),
-                            [names[t] for t in wanted])
+        answer, usage = ask(client, model, (ROOT / tile["app_file"]).read_bytes(), options)
         if usage is not None:
             spent += (usage.prompt_tokens * check["usd_per_million_input_tokens"]
                       + usage.completion_tokens * check["usd_per_million_output_tokens"]) / 1_000_000

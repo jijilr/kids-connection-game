@@ -82,6 +82,35 @@
       },
       "cost_usd": 0.0541,
       "vision_check_cost_usd": 0.00021
+    },
+    "size_test_plants_9_01": {
+      "plan_key": "size_test_plants_9",
+      "purpose": "size test: the nine trial plants again, on a 2880 px sheet (the largest square the service allows; 3072 was refused)",
+      "file": "tools/pictures/sheets/size_test_plants_9_01.png",
+      "grid": 3,
+      "size": "2880x2880",
+      "cells": [
+        "mango_tree",
+        "banana_plant",
+        "coconut_tree",
+        "rose",
+        "lotus",
+        "rice_plant",
+        "sugarcane",
+        "tomato_plant",
+        "brinjal_plant"
+      ],
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 3 by 3 grid of 9 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Mango tree: a leafy tree with a thick trunk and yellow-orange mangoes among dark leaves.\n2. Banana plant: a smooth green stem, very large long leaves, one hanging bunch of green bananas.\n3. Coconut tree: a tall thin curved trunk, a crown of long feathery leaves, a cluster of green coconuts.\n4. Rose: one red rose on a thorny stem with a few leaves.\n5. Lotus: one pink lotus flower with a round flat leaf on a small patch of water.\n6. Rice plant: a clump of green stalks with drooping golden grain heads.\n7. Sugarcane: a clump of tall, thick canes with clearly visible joints and purple-green bands; the long narrow leaves grow only at the very top, so the jointed stems are plainly seen.\n8. Tomato plant: a small bushy staked plant with red and green tomatoes.\n9. Brinjal plant: a small bushy plant with broad leaves and shiny purple brinjals.\n\nFor this sheet: No people and no animals.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-06",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 416
+      },
+      "cost_usd": 0.18,
+      "vision_check_cost_usd": 0.00061
     }
   },
   "tiles": {
@@ -1213,6 +1242,420 @@
         }
       ],
       "reviewed_on": "2026-10-06"
+    },
+    "size_test_plants_9_01_c1": {
+      "thing_id": null,
+      "expected_thing": "mango_tree",
+      "master_file": "tools/pictures/tiles/masters/size_test_plants_9_01_c1.png",
+      "master_size": [
+        1068,
+        1068
+      ],
+      "master_sha256": "e5f5b0eebb522a491ea0095ab53970aabff8c03a780a7860f35d99e523908629",
+      "app_file": "tools/pictures/tiles/app/size_test_plants_9_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "size_test_plants_9_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Mango tree: a leafy tree with a thick trunk and yellow-orange mangoes among dark leaves",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.02,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          42,
+          26,
+          932,
+          947
+        ],
+        "picture_shape": 0.97,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Mango tree",
+        "shows": "mango_tree",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "size_test_plants_9_01_c2": {
+      "thing_id": null,
+      "expected_thing": "banana_plant",
+      "master_file": "tools/pictures/tiles/masters/size_test_plants_9_01_c2.png",
+      "master_size": [
+        1058,
+        1058
+      ],
+      "master_sha256": "6041b402c578e6cf380c1b361f257dd461d5b090fd73bcb5e5ff50371dbdd7a0",
+      "app_file": "tools/pictures/tiles/app/size_test_plants_9_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "size_test_plants_9_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Banana plant: a smooth green stem, very large long leaves, one hanging bunch of green bananas",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.02,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1003,
+          24,
+          1873,
+          936
+        ],
+        "picture_shape": 0.95,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Banana plant",
+        "shows": "banana_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "size_test_plants_9_01_c3": {
+      "thing_id": null,
+      "expected_thing": "coconut_tree",
+      "master_file": "tools/pictures/tiles/masters/size_test_plants_9_01_c3.png",
+      "master_size": [
+        1080,
+        1080
+      ],
+      "master_sha256": "3a7b803c292dad7cffe63a17f9ddc48b1a6bd63944e3ac9a0fb3610c16e19fd4",
+      "app_file": "tools/pictures/tiles/app/size_test_plants_9_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "size_test_plants_9_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Coconut tree: a tall thin curved trunk, a crown of long feathery leaves, a cluster of green coconuts",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.02,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2056,
+          10,
+          2785,
+          941
+        ],
+        "picture_shape": 0.78,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Coconut tree",
+        "shows": "coconut_tree",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "size_test_plants_9_01_c4": {
+      "thing_id": null,
+      "expected_thing": "rose",
+      "master_file": "tools/pictures/tiles/masters/size_test_plants_9_01_c4.png",
+      "master_size": [
+        1005,
+        1005
+      ],
+      "master_sha256": "1839f76494119d4667ee8aa1757878db786ddcdc892c85a95e2cbb2dde80df2e",
+      "app_file": "tools/pictures/tiles/app/size_test_plants_9_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "size_test_plants_9_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Rose: one red rose on a thorny stem with a few leaves",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.02,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          206,
+          1010,
+          737,
+          1876
+        ],
+        "picture_shape": 0.61,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Rose",
+        "shows": "rose",
+        "matches_cell": true,
+        "problems": "Stem cut off"
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "size_test_plants_9_01_c5": {
+      "thing_id": null,
+      "expected_thing": "lotus",
+      "master_file": "tools/pictures/tiles/masters/size_test_plants_9_01_c5.png",
+      "master_size": [
+        952,
+        952
+      ],
+      "master_sha256": "e9483d3013a95549da0a5338e1402dc9da5043c97a2c1d37fa67bf478400568d",
+      "app_file": "tools/pictures/tiles/app/size_test_plants_9_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "size_test_plants_9_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Lotus: one pink lotus flower with a round flat leaf on a small patch of water",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.02,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1051,
+          1031,
+          1801,
+          1852
+        ],
+        "picture_shape": 0.91,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Lotus",
+        "shows": "lotus",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "size_test_plants_9_01_c6": {
+      "thing_id": null,
+      "expected_thing": "rice_plant",
+      "master_file": "tools/pictures/tiles/masters/size_test_plants_9_01_c6.png",
+      "master_size": [
+        1056,
+        1056
+      ],
+      "master_sha256": "34b44437d42c5871176f264fcb65dc218516e6130481016bdf236c0a61b10e8a",
+      "app_file": "tools/pictures/tiles/app/size_test_plants_9_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "size_test_plants_9_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Rice plant: a clump of green stalks with drooping golden grain heads",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.02,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1968,
+          971,
+          2801,
+          1881
+        ],
+        "picture_shape": 0.92,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Rice plant",
+        "shows": "rice_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "size_test_plants_9_01_c7": {
+      "thing_id": null,
+      "expected_thing": "sugarcane",
+      "master_file": "tools/pictures/tiles/masters/size_test_plants_9_01_c7.png",
+      "master_size": [
+        1102,
+        1102
+      ],
+      "master_sha256": "d3d6163ba68e4250a411585beeb881f4b30ba36139a2b904caa94253e43e9201",
+      "app_file": "tools/pictures/tiles/app/size_test_plants_9_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "size_test_plants_9_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Sugarcane: a clump of tall, thick canes with clearly visible joints and purple-green bands; the long narrow leaves grow only at the very top, so the jointed stems are plainly seen",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.02,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          65,
+          1899,
+          835,
+          2849
+        ],
+        "picture_shape": 0.81,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Sugarcane",
+        "shows": "sugarcane",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "size_test_plants_9_01_c8": {
+      "thing_id": null,
+      "expected_thing": "tomato_plant",
+      "master_file": "tools/pictures/tiles/masters/size_test_plants_9_01_c8.png",
+      "master_size": [
+        1071,
+        1071
+      ],
+      "master_sha256": "d31e24ea5579092331098f9f9719c0a8252bbee0e9cadb63f774422a5da0c95f",
+      "app_file": "tools/pictures/tiles/app/size_test_plants_9_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "size_test_plants_9_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Tomato plant: a small bushy staked plant with red and green tomatoes",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.02,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1061,
+          1927,
+          1785,
+          2850
+        ],
+        "picture_shape": 0.78,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Tomato plant",
+        "shows": "tomato_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "size_test_plants_9_01_c9": {
+      "thing_id": null,
+      "expected_thing": "brinjal_plant",
+      "master_file": "tools/pictures/tiles/masters/size_test_plants_9_01_c9.png",
+      "master_size": [
+        1025,
+        1025
+      ],
+      "master_sha256": "f798d47474a40cfbba19d5cf88bbdc23be7cb0db583be69d59d1e30022bb5def",
+      "app_file": "tools/pictures/tiles/app/size_test_plants_9_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "size_test_plants_9_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Brinjal plant: a small bushy plant with broad leaves and shiny purple brinjals",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.02,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1952,
+          1972,
+          2836,
+          2853
+        ],
+        "picture_shape": 1.0,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Brinjal plant",
+        "shows": "brinjal_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
     }
   },
   "redo_later": {

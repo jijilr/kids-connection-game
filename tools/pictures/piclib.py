@@ -56,6 +56,13 @@ def thing_names() -> dict:
     return {key: thing.get("shown_as") or thing["name"] for key, thing in things.items()}
 
 
+def sheet_names(sheet: dict) -> dict:
+    """thing id -> display name for one planned sheet. A cell may carry its own `name`,
+    for something that is not in the game yet."""
+    names = thing_names()
+    return {cell["thing"]: cell.get("name") or names.get(cell["thing"]) for cell in sheet["cells"]}
+
+
 def build_prompt(plan: dict, sheet: dict, names: dict) -> str:
     style = plan["style"]
     grid = sheet["grid"]
