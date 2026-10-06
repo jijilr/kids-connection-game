@@ -1,8 +1,8 @@
 {
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-10-06",
-  "dictionary_version": 1,
-  "things": 105,
+  "dictionary_version": 2,
+  "things": 132,
   "rules": {
     "weights": {
       "nearness": 3,
@@ -20,29 +20,28 @@
       "level": 1
     },
     "plant": {
-      "boards_open": 0,
-      "level": 0
+      "boards_open": 1,
+      "level": 1
     },
     "nature_not_alive": {
       "boards_open": 0,
       "level": 0
     },
     "made_by_people": {
-      "boards_open": 0,
-      "level": 0
+      "boards_open": 1,
+      "level": 1
     }
   },
   "proposals": [
-    "made_by_people",
-    "plant",
-    "nature_not_alive"
+    "nature_not_alive",
+    "made_by_people/building"
   ],
   "circles": {
     "seed": {
       "label": "Everything",
       "steps_from_seed": 0,
       "branch": null,
-      "members": 105,
+      "members": 132,
       "open": true,
       "sorted_by": "kind_of_thing",
       "decisions": [],
@@ -246,148 +245,122 @@
       "label": "Plants",
       "steps_from_seed": 1,
       "branch": "plant",
-      "members": 10,
+      "members": 17,
+      "open": true,
+      "sorted_by": "kind_of_plant",
+      "decisions": [],
+      "status": "open"
+    },
+    "plant/tree": {
+      "label": "Trees",
+      "steps_from_seed": 2,
+      "branch": "plant",
+      "members": 4,
       "open": false,
       "missing": {
         "field": "no field splits it four ways",
-        "things": 7
+        "things": 12
       },
       "decisions": [],
-      "proposal": {
-        "status": "awaiting the owner's approval",
-        "field": "kind_of_plant",
-        "wording": "What kind of plant is it?",
-        "values": {
-          "tree": {
-            "label": "Trees",
-            "have": [
-              "mango_tree",
-              "coconut_tree",
-              "neem_tree",
-              "banana_plant"
-            ],
-            "examples_to_add": []
-          },
-          "flower": {
-            "label": "Flowers",
-            "have": [
-              "rose",
-              "sunflower",
-              "lotus",
-              "marigold"
-            ],
-            "examples_to_add": []
-          },
-          "crop": {
-            "label": "Crops in a field",
-            "have": [
-              "rice_plant"
-            ],
-            "examples_to_add": [
-              "Wheat",
-              "Sugarcane",
-              "Tomato plant"
-            ]
-          },
-          "potted": {
-            "label": "Plants in pots",
-            "have": [],
-            "examples_to_add": [
-              "Tulsi",
-              "Money plant",
-              "Cactus",
-              "Aloe vera"
-            ]
-          }
-        },
-        "leftovers": {
-          "banana_plant": "a tree in everyday speech, a giant herb to a scientist; counted here as a tree with an _academic twin, or it could be marked 'depends' and kept off this board",
-          "grass": "fits none of the four"
-        },
-        "weak_point": "mango and coconut trees also give food, so the crop group is labelled 'Crops in a field' to keep them apart"
-      },
       "factors": {
-        "nearness": 1.0,
-        "neglect": 1.0,
+        "nearness": 0.5,
+        "neglect": 0.0,
         "unlocks": 0.33,
-        "cheapness": 0.27
+        "cheapness": 0.2
       },
-      "score": 7.2,
-      "move": "widening",
-      "status": "proposable"
+      "score": 2.6,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+    },
+    "plant/flower": {
+      "label": "Flowers",
+      "steps_from_seed": 2,
+      "branch": "plant",
+      "members": 4,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 12
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.5,
+        "neglect": 0.0,
+        "unlocks": 0.33,
+        "cheapness": 0.2
+      },
+      "score": 2.6,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+    },
+    "plant/grass_grain": {
+      "label": "Grasses and grains",
+      "steps_from_seed": 2,
+      "branch": "plant",
+      "members": 5,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 11
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.5,
+        "neglect": 0.0,
+        "unlocks": 0.33,
+        "cheapness": 0.21
+      },
+      "score": 2.6,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+    },
+    "plant/vegetable": {
+      "label": "Vegetable plants",
+      "steps_from_seed": 2,
+      "branch": "plant",
+      "members": 4,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 12
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.5,
+        "neglect": 0.0,
+        "unlocks": 0.33,
+        "cheapness": 0.2
+      },
+      "score": 2.6,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
     },
     "nature_not_alive": {
       "label": "Things in nature that are not alive",
       "steps_from_seed": 1,
       "branch": "nature_not_alive",
-      "members": 9,
+      "members": 17,
       "open": false,
+      "sorted_by": "kind_of_nature",
       "missing": {
-        "field": "no field splits it four ways",
-        "things": 8
+        "field": null,
+        "short": {
+          "land": 1
+        },
+        "things": 1
       },
       "decisions": [],
-      "proposal": {
-        "status": "awaiting the owner's approval",
-        "field": "kind_of_nature",
-        "wording": "What kind of thing in nature is it?",
-        "values": {
-          "sky": {
-            "label": "Things in the sky",
-            "have": [
-              "sun",
-              "moon",
-              "star",
-              "cloud"
-            ],
-            "examples_to_add": []
-          },
-          "water": {
-            "label": "Water",
-            "have": [
-              "river"
-            ],
-            "examples_to_add": [
-              "Sea",
-              "Lake",
-              "Waterfall"
-            ]
-          },
-          "land": {
-            "label": "Places on land",
-            "have": [
-              "mountain"
-            ],
-            "examples_to_add": [
-              "Hill",
-              "Desert",
-              "Volcano"
-            ]
-          },
-          "ground": {
-            "label": "Rocks and soil",
-            "have": [
-              "rock",
-              "sand"
-            ],
-            "examples_to_add": [
-              "Soil",
-              "Clay"
-            ]
-          }
-        },
-        "leftovers": {
-          "rain": "falls from the sky and is water, so it would be marked 'depends' and kept off this board"
-        },
-        "weak_point": "a mountain is made of rock, so 'Places on land' and 'Rocks and soil' need clear pictures to stay apart"
-      },
       "factors": {
         "nearness": 1.0,
         "neglect": 1.0,
         "unlocks": 0.33,
-        "cheapness": 0.25
+        "cheapness": 0.8
       },
-      "score": 7.2,
+      "score": 8.3,
       "move": "widening",
       "status": "proposable"
     },
@@ -395,73 +368,118 @@
       "label": "Things people make",
       "steps_from_seed": 1,
       "branch": "made_by_people",
-      "members": 12,
+      "members": 24,
+      "open": true,
+      "sorted_by": "kind_of_made_thing",
+      "decisions": [],
+      "status": "open"
+    },
+    "made_by_people/vehicle": {
+      "label": "Vehicles",
+      "steps_from_seed": 2,
+      "branch": "made_by_people",
+      "members": 4,
       "open": false,
       "missing": {
         "field": "no field splits it four ways",
-        "things": 5
+        "things": 12
       },
       "decisions": [],
-      "proposal": {
-        "status": "awaiting the owner's approval",
-        "field": "kind_of_made_thing",
-        "wording": "What do we use it for?",
-        "values": {
-          "vehicle": {
-            "label": "Vehicles",
-            "have": [
-              "car",
-              "bicycle",
-              "bus",
-              "train"
-            ],
-            "examples_to_add": []
-          },
-          "toy": {
-            "label": "Toys",
-            "have": [
-              "ball",
-              "teddy_bear",
-              "doll"
-            ],
-            "examples_to_add": [
-              "Kite"
-            ]
-          },
-          "household": {
-            "label": "Things in the house",
-            "have": [
-              "chair",
-              "cup",
-              "spoon"
-            ],
-            "examples_to_add": [
-              "Table"
-            ]
-          },
-          "tool": {
-            "label": "Tools",
-            "have": [
-              "hammer"
-            ],
-            "examples_to_add": [
-              "Scissors",
-              "Screwdriver",
-              "Saw"
-            ]
-          }
-        },
-        "leftovers": {
-          "house": "fits none of the four; proposed fifth value 'building', which stays off the board until it has four members"
-        }
-      },
       "factors": {
-        "nearness": 1.0,
-        "neglect": 1.0,
+        "nearness": 0.5,
+        "neglect": 0.0,
         "unlocks": 0.33,
-        "cheapness": 0.31
+        "cheapness": 0.2
       },
-      "score": 7.3,
+      "score": 2.6,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+    },
+    "made_by_people/toy": {
+      "label": "Toys",
+      "steps_from_seed": 2,
+      "branch": "made_by_people",
+      "members": 7,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 9
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.5,
+        "neglect": 0.0,
+        "unlocks": 0.33,
+        "cheapness": 0.24
+      },
+      "score": 2.6,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+    },
+    "made_by_people/household": {
+      "label": "Things in the house",
+      "steps_from_seed": 2,
+      "branch": "made_by_people",
+      "members": 7,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 9
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.5,
+        "neglect": 0.0,
+        "unlocks": 0.33,
+        "cheapness": 0.24
+      },
+      "score": 2.6,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+    },
+    "made_by_people/tool": {
+      "label": "Tools",
+      "steps_from_seed": 2,
+      "branch": "made_by_people",
+      "members": 5,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 11
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.5,
+        "neglect": 0.0,
+        "unlocks": 0.33,
+        "cheapness": 0.21
+      },
+      "score": 2.6,
+      "move": "deepening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+    },
+    "made_by_people/building": {
+      "label": "Buildings",
+      "steps_from_seed": 2,
+      "branch": "made_by_people",
+      "members": 1,
+      "open": false,
+      "missing": {
+        "things": 3,
+        "why": "fewer than four familiar things, so it is not yet a group on the board above it"
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.5,
+        "neglect": 0.0,
+        "unlocks": 0.0,
+        "cheapness": 0.57
+      },
+      "score": 2.6,
       "move": "widening",
       "status": "proposable"
     }

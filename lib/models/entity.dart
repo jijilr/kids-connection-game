@@ -34,6 +34,10 @@ class Entity {
 
   /// This thing's value for a field, spelled as the dictionary spells it ("true" /
   /// "false" for yes/no fields), or null when the field does not apply to it.
+  ///
+  /// A thing that fits several values of a field lists them all, and one that experts
+  /// debate is marked "depends". Either way the answer here matches no dictionary
+  /// value, so the thing never joins a group on a board sorted by that field.
   String? valueFor(String fieldId) => fields[fieldId]?.toString();
 
   /// Whether this thing is in a given (field, value) group.

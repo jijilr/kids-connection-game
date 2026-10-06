@@ -64,9 +64,11 @@ void main() {
       for (final field in e.fields.keys) {
         final d = registry.byId(field);
         expect(d, isNotNull, reason: '${e.id}: "$field" is not in the dictionary');
-        final value = e.valueFor(field)!;
-        expect(value == 'depends' || d!.values.containsKey(value), isTrue,
-            reason: '${e.id}: "$field: $value" is not an allowed value');
+        // One allowed value; or several, for a thing that fits more than one; or "depends".
+        final raw = e.fields[field];
+        final values = raw is List ? raw.map((v) => '$v').toList() : ['$raw'];
+        expect(raw == 'depends' || values.every(d!.values.containsKey), isTrue,
+            reason: '${e.id}: "$field: $raw" is not an allowed value');
       }
     }
   });
@@ -128,10 +130,6 @@ void main() {
     expect(g.canDescend(animals), isFalse);
     solve(g);
     expect(g.canDescend(animals), isTrue);
-    for (final other in g.board!.groups.where((x) => x.value != 'animal')) {
-      expect(g.canDescend(other), isFalse,
-          reason: '${other.label} has no deeper 4×4, so no "dig deeper"');
-    }
 
     g.descendInto(animals);
     expect(g.pathLabels, [settings.startLabel, 'Animals']);
@@ -143,6 +141,51 @@ void main() {
 
     g.back();
     expect(g.atRoot, isTrue);
+  });
+
+  test('each seed group opens into a board of its own, or not at all', () async {
+    final repo = repoWithSeed(5);
+    final g = await start(5, repo: repo);
+    solve(g);
+    final seedGroups = [...g.board!.groups];
+    for (final grp in seedGroups) {
+      final inside = repo.assembler.boardableDimensions([(grp.dimId, grp.value)]);
+      expect(g.canDescend(grp), inside.isNotEmpty, reason: grp.label);
+      if (inside.isEmpty) continue;
+      g.descendInto(grp);
+      expect(g.board!.dimension.id, inside.first.id);
+      expect(g.board!.groups, hasLength(4));
+      expect(repo.assembler.secondSolution(g.board!.tiles, g.board!.dimension), isNull);
+      g.back();
+      solve(g); // back gives a fresh seed board; solve it so the next group can be opened
+    }
+    expect(repo.assembler.boardableDimensions(const [('kind_of_thing', 'made_by_people')]).first.id,
+        'kind_of_made_thing');
+    expect(repo.assembler.boardableDimensions(const [('kind_of_thing', 'plant')]).first.id,
+        'kind_of_plant');
+  });
+
+  test('a thing that fits two groups stays off the board sorted by that field', () {
+    final rain = thing('rain');
+    expect(rain.fields['kind_of_nature'], ['sky', 'water']);
+    expect(rain.isIn('kind_of_nature', 'sky'), isFalse);
+    expect(rain.isIn('kind_of_nature', 'water'), isFalse);
+
+    // A made-up board with one such thing among plenty of ordinary ones.
+    final dictionary = DimensionRegistry({
+      'k': const Dimension(
+          id: 'k', question: 'Which?', values: {'a': 'A', 'b': 'B', 'c': 'C', 'd': 'D'}),
+    });
+    final things = [
+      for (final v in ['a', 'b', 'c', 'd'])
+        for (int n = 0; n < 4; n++) Entity(id: '$v$n', name: '$v$n', fields: {'k': v}),
+      const Entity(id: 'both', name: 'both', familiar: 1.0, fields: {'k': ['a', 'b']}),
+    ];
+    for (int seed = 0; seed < 20; seed++) {
+      final board = BoardAssembler(things, dictionary, random: Random(seed))
+          .assemble(dimension: dictionary.byId('k')!);
+      expect(board!.tiles.map((e) => e.id), isNot(contains('both')));
+    }
   });
 
   test('a group opens only where a full board exists inside it', () async {
@@ -212,9 +255,15 @@ void main() {
       expect(g.openTiles.map((e) => look(g.tileMedia(e))).toSet(), hasLength(1),
           reason: 'seed board, seed $seed');
       solve(g);
-      g.descendInto(g.board!.groups.singleWhere((x) => x.value == 'animal'));
-      expect(g.openTiles.map((e) => look(g.tileMedia(e))).toSet(), hasLength(1),
-          reason: 'animals board, seed $seed');
+      for (final value in ['animal', 'plant', 'made_by_people']) {
+        final grp = g.board!.groups.singleWhere((x) => x.value == value);
+        if (!g.canDescend(grp)) continue;
+        g.descendInto(grp);
+        expect(g.openTiles.map((e) => look(g.tileMedia(e))).toSet(), hasLength(1),
+            reason: '$value board, seed $seed');
+        g.back();
+        solve(g);
+      }
     }
   });
 

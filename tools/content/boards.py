@@ -10,9 +10,10 @@ PER_GROUP = 4
 
 
 def value_of(thing: dict, field: str):
-    """A thing's value for a field, or None if it has none ("depends" never sorts a board)."""
+    """A thing's single value for a field, or None. A thing marked "depends", or one
+    that lists several values, never takes part in a board sorted by that field."""
     value = thing["fields"].get(field)
-    return None if value is None or value == "depends" else value
+    return None if value is None or value == "depends" or isinstance(value, list) else value
 
 
 def members(things: dict, path: list) -> list:
@@ -34,8 +35,7 @@ def sub_kind(dictionary: dict, things: dict, keys: list, path: list, parent_fiel
     for name in boardable_fields(dictionary):
         if name in used:
             continue
-        allowed = dictionary["fields"][name]["values"]
-        if keys and all(str(value_of(things[k], name)) in allowed for k in keys):
+        if keys and all(name in things[k]["fields"] for k in keys):
             return name
     return None
 

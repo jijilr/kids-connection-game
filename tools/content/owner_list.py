@@ -27,6 +27,12 @@ DINOSAURS = {
 # name -> extinct
 SNAKES = {"Anaconda": False, "Python": False, "Titanoboa": True, "Vasuki indicus": True}
 
+# kind_of_plant -> names. The owner chose these when he ruled on the plants field.
+PLANTS = {
+    "grass_grain": ["Wheat", "Sugarcane", "Bamboo"],
+    "vegetable": ["Tomato plant", "Brinjal plant", "Chilli plant", "Pumpkin plant"],
+}
+
 SHOWN_AS = {"Tyrannosaurus rex": "T. rex", "Pterodactylus": "Pterodactyl"}
 
 # A note is keyed by the field it is about, or "general" when it is about the thing itself.
@@ -52,9 +58,13 @@ REQUIRED = ["goldfish", "shark", "clownfish"]
 # Waiting for the owner: the first child picks one as the fourth flyer; the other stays here.
 FLYER_CANDIDATES = ["Rhamphorhynchus", "Dimorphodon"]
 
-# Waiting for a field the dictionary does not have yet.
+# Waiting for a field, or a board, that does not exist yet.
 WAITING = {
     "Basilisk": "needs a field for real versus story creatures before it can be added",
+    "Cactus": "a plant the owner is keeping for a later board",
+    "Tulsi": "a plant the owner is keeping for a later board",
+    "Money plant": "a plant the owner is keeping for a later board",
+    "Aloe vera": "a plant the owner is keeping for a later board",
 }
 
 
@@ -84,6 +94,10 @@ def main():
     for name, extinct in SNAKES.items():
         fields = {"kind_of_thing": "animal", "kind_of_animal": "reptile", "extinct": extinct}
         things[slug(name)] = record(name, fields, version)
+    for kind, names in PLANTS.items():
+        for name in names:
+            fields = {"kind_of_thing": "plant", "extinct": False, "kind_of_plant": kind}
+            things[slug(name)] = record(name, fields, version)
 
     removed = [key for key in EXCLUDED if things.pop(key, None) is not None]
     missing = [key for key in REQUIRED if key not in things]
@@ -96,7 +110,8 @@ def main():
         for name in FLYER_CANDIDATES
     ] + [{"name": name, "fields": {}, "why": [why]} for name, why in WAITING.items()])
 
-    added = sum(len(names) for _, names in DINOSAURS.values()) + len(SNAKES)
+    added = (sum(len(names) for _, names in DINOSAURS.values()) + len(SNAKES)
+             + sum(len(names) for names in PLANTS.values()))
     print(f"Owner's list: {added} things in place; removed {removed or 'nothing'}.")
     if missing:
         print(f"WARNING - the owner expects these but they are missing: {missing}")

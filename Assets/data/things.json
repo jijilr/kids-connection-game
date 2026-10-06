@@ -1,294 +1,358 @@
 {
-  "dictionary_version": 1,
+  "dictionary_version": 2,
   "things": {
     "mango_tree": {
       "name": "Mango tree",
       "fields": {
         "kind_of_thing": "plant",
-        "extinct": false
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "tree_academic": true
       },
       "familiar": 0.95,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "banana_plant": {
       "name": "Banana plant",
       "fields": {
         "kind_of_thing": "plant",
-        "extinct": false
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "tree_academic": false
       },
       "familiar": 0.9,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "notes": {
+        "tree_academic": "A banana plant has no woody trunk. Its stem is made of tightly rolled leaves, so scientists call it a giant herb."
+      },
+      "drafted_in": "seed_and_animals"
     },
     "coconut_tree": {
       "name": "Coconut tree",
       "fields": {
         "kind_of_thing": "plant",
-        "extinct": false
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "tree_academic": "depends"
       },
       "familiar": 0.9,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "notes": {
+        "tree_academic": "A palm has a tall woody trunk but does not grow wood in rings as other trees do, so botanists differ on whether to call it a true tree."
+      },
+      "drafted_in": "seed_and_animals"
     },
     "rose": {
       "name": "Rose",
       "fields": {
         "kind_of_thing": "plant",
-        "extinct": false
+        "extinct": false,
+        "kind_of_plant": "flower"
       },
       "familiar": 0.85,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "sunflower": {
       "name": "Sunflower",
       "fields": {
         "kind_of_thing": "plant",
-        "extinct": false
+        "extinct": false,
+        "kind_of_plant": "flower"
       },
       "familiar": 0.85,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "lotus": {
       "name": "Lotus",
       "fields": {
         "kind_of_thing": "plant",
-        "extinct": false
+        "extinct": false,
+        "kind_of_plant": "flower"
       },
       "familiar": 0.8,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "marigold": {
       "name": "Marigold",
       "fields": {
         "kind_of_thing": "plant",
-        "extinct": false
+        "extinct": false,
+        "kind_of_plant": "flower"
       },
       "familiar": 0.8,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "rice_plant": {
       "name": "Rice plant",
       "fields": {
         "kind_of_thing": "plant",
-        "extinct": false
+        "extinct": false,
+        "kind_of_plant": "grass_grain"
       },
       "familiar": 0.75,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "grass": {
       "name": "Grass",
       "fields": {
         "kind_of_thing": "plant",
-        "extinct": false
+        "extinct": false,
+        "kind_of_plant": "grass_grain"
       },
       "familiar": 0.9,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "neem_tree": {
       "name": "Neem tree",
       "fields": {
         "kind_of_thing": "plant",
-        "extinct": false
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "tree_academic": true
       },
       "familiar": 0.7,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "sun": {
       "name": "Sun",
       "fields": {
-        "kind_of_thing": "nature_not_alive"
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "sky"
       },
       "familiar": 1.0,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "moon": {
       "name": "Moon",
       "fields": {
-        "kind_of_thing": "nature_not_alive"
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "sky"
       },
       "familiar": 1.0,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "rain": {
       "name": "Rain",
       "fields": {
-        "kind_of_thing": "nature_not_alive"
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": [
+          "sky",
+          "water"
+        ]
       },
       "familiar": 1.0,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
-    },
-    "river": {
-      "name": "River",
-      "fields": {
-        "kind_of_thing": "nature_not_alive"
-      },
-      "familiar": 0.95,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "rock": {
       "name": "Rock",
       "fields": {
-        "kind_of_thing": "nature_not_alive"
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground"
       },
       "familiar": 0.95,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "cloud": {
       "name": "Cloud",
       "fields": {
-        "kind_of_thing": "nature_not_alive"
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "sky"
       },
       "familiar": 0.95,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "sand": {
       "name": "Sand",
       "fields": {
-        "kind_of_thing": "nature_not_alive"
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground"
       },
       "familiar": 0.9,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "mountain": {
       "name": "Mountain",
       "fields": {
-        "kind_of_thing": "nature_not_alive"
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land"
       },
       "familiar": 0.85,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "star": {
       "name": "Star",
       "fields": {
-        "kind_of_thing": "nature_not_alive"
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "sky"
       },
       "familiar": 0.85,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "car": {
       "name": "Car",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle"
       },
       "familiar": 0.98,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "chair": {
       "name": "Chair",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household"
       },
       "familiar": 0.97,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "house": {
       "name": "House",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
       },
       "familiar": 0.97,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "ball": {
       "name": "Ball",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy"
       },
       "familiar": 0.96,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "bicycle": {
       "name": "Bicycle",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle"
       },
       "familiar": 0.95,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "cup": {
       "name": "Cup",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household"
       },
       "familiar": 0.95,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "spoon": {
       "name": "Spoon",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household"
       },
       "familiar": 0.94,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "bus": {
       "name": "Bus",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle"
       },
       "familiar": 0.94,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "teddy_bear": {
       "name": "Teddy bear",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy"
       },
       "familiar": 0.93,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "hammer": {
       "name": "Hammer",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "tool"
       },
       "familiar": 0.9,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "train": {
       "name": "Train",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle"
       },
       "familiar": 0.9,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "doll": {
       "name": "Doll",
       "fields": {
-        "kind_of_thing": "made_by_people"
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy"
       },
       "familiar": 0.9,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "dog": {
       "name": "Dog",
@@ -298,8 +362,9 @@
         "extinct": false
       },
       "familiar": 0.99,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "cat": {
       "name": "Cat",
@@ -309,8 +374,9 @@
         "extinct": false
       },
       "familiar": 0.98,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "cow": {
       "name": "Cow",
@@ -320,8 +386,9 @@
         "extinct": false
       },
       "familiar": 0.98,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "elephant": {
       "name": "Elephant",
@@ -331,8 +398,9 @@
         "extinct": false
       },
       "familiar": 0.97,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "lion": {
       "name": "Lion",
@@ -342,8 +410,9 @@
         "extinct": false
       },
       "familiar": 0.96,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "tiger": {
       "name": "Tiger",
@@ -353,8 +422,9 @@
         "extinct": false
       },
       "familiar": 0.96,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "monkey": {
       "name": "Monkey",
@@ -364,8 +434,9 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "horse": {
       "name": "Horse",
@@ -375,8 +446,9 @@
         "extinct": false
       },
       "familiar": 0.94,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "goat": {
       "name": "Goat",
@@ -386,8 +458,9 @@
         "extinct": false
       },
       "familiar": 0.93,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "rabbit": {
       "name": "Rabbit",
@@ -397,8 +470,9 @@
         "extinct": false
       },
       "familiar": 0.92,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "bear": {
       "name": "Bear",
@@ -408,8 +482,9 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "giraffe": {
       "name": "Giraffe",
@@ -419,8 +494,9 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "crow": {
       "name": "Crow",
@@ -430,8 +506,9 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "pigeon": {
       "name": "Pigeon",
@@ -441,8 +518,9 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "parrot": {
       "name": "Parrot",
@@ -452,8 +530,9 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "hen": {
       "name": "Hen",
@@ -463,8 +542,9 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "duck": {
       "name": "Duck",
@@ -474,8 +554,9 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "peacock": {
       "name": "Peacock",
@@ -485,8 +566,9 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "sparrow": {
       "name": "Sparrow",
@@ -496,8 +578,9 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "eagle": {
       "name": "Eagle",
@@ -507,8 +590,9 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "owl": {
       "name": "Owl",
@@ -518,8 +602,9 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "penguin": {
       "name": "Penguin",
@@ -529,8 +614,9 @@
         "extinct": false
       },
       "familiar": 0.75,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "goldfish": {
       "name": "Goldfish",
@@ -540,8 +626,9 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "rohu_fish": {
       "name": "Rohu fish",
@@ -551,8 +638,9 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "catla_fish": {
       "name": "Catla fish",
@@ -562,8 +650,9 @@
         "extinct": false
       },
       "familiar": 0.75,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "shark": {
       "name": "Shark",
@@ -573,8 +662,9 @@
         "extinct": false
       },
       "familiar": 0.7,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "clownfish": {
       "name": "Clownfish",
@@ -584,8 +674,9 @@
         "extinct": false
       },
       "familiar": 0.65,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "butterfly": {
       "name": "Butterfly",
@@ -595,8 +686,9 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "ant": {
       "name": "Ant",
@@ -606,8 +698,9 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "housefly": {
       "name": "Housefly",
@@ -617,8 +710,9 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "mosquito": {
       "name": "Mosquito",
@@ -628,8 +722,9 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "honeybee": {
       "name": "Honeybee",
@@ -639,8 +734,9 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "cockroach": {
       "name": "Cockroach",
@@ -650,8 +746,9 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "grasshopper": {
       "name": "Grasshopper",
@@ -661,8 +758,9 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "ladybug": {
       "name": "Ladybug",
@@ -672,8 +770,9 @@
         "extinct": false
       },
       "familiar": 0.75,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "house_lizard": {
       "name": "House lizard",
@@ -683,8 +782,9 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "crocodile": {
       "name": "Crocodile",
@@ -694,8 +794,9 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "tortoise": {
       "name": "Tortoise",
@@ -705,8 +806,9 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "snake": {
       "name": "Snake",
@@ -716,8 +818,9 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "turtle": {
       "name": "Turtle",
@@ -727,8 +830,9 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "chameleon": {
       "name": "Chameleon",
@@ -738,8 +842,9 @@
         "extinct": false
       },
       "familiar": 0.7,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "monitor_lizard": {
       "name": "Monitor lizard",
@@ -749,8 +854,9 @@
         "extinct": false
       },
       "familiar": 0.6,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "cobra": {
       "name": "Cobra",
@@ -760,8 +866,9 @@
         "extinct": false
       },
       "familiar": 0.6,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "frog": {
       "name": "Frog",
@@ -771,8 +878,9 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "toad": {
       "name": "Toad",
@@ -782,8 +890,9 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "tree_frog": {
       "name": "Tree frog",
@@ -793,8 +902,9 @@
         "extinct": false
       },
       "familiar": 0.6,
-      "reviewed": 1,
-      "source": "deepseek:drafted+checked"
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
     },
     "tyrannosaurus_rex": {
       "name": "Tyrannosaurus rex",
@@ -806,7 +916,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list",
       "shown_as": "T. rex"
     },
@@ -820,7 +930,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "velociraptor": {
@@ -833,7 +943,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "allosaurus": {
@@ -846,7 +956,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "spinosaurus": {
@@ -859,7 +969,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list",
       "notes": {
         "kind_of_dinosaur": "Scientists debate how much time Spinosaurus spent in water."
@@ -875,7 +985,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "brontosaurus": {
@@ -888,7 +998,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "diplodocus": {
@@ -901,7 +1011,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "argentinosaurus": {
@@ -914,7 +1024,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "amargasaurus": {
@@ -927,7 +1037,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "triceratops": {
@@ -940,7 +1050,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "ankylosaurus": {
@@ -953,7 +1063,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "stegosaurus": {
@@ -966,7 +1076,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "pachycephalosaurus": {
@@ -979,7 +1089,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "parasaurolophus": {
@@ -992,7 +1102,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "mosasaurus": {
@@ -1005,7 +1115,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "kronosaurus": {
@@ -1018,7 +1128,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "mixosaurus": {
@@ -1031,7 +1141,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "tylosaurus": {
@@ -1044,7 +1154,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "plesiosaurus": {
@@ -1057,7 +1167,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "elasmosaurus": {
@@ -1070,7 +1180,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "pterodactylus": {
@@ -1083,7 +1193,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list",
       "shown_as": "Pterodactyl"
     },
@@ -1097,7 +1207,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "quetzalcoatlus": {
@@ -1110,7 +1220,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "anaconda": {
@@ -1121,7 +1231,7 @@
         "extinct": false
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "python": {
@@ -1132,7 +1242,7 @@
         "extinct": false
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "titanoboa": {
@@ -1143,7 +1253,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list"
     },
     "vasuki_indicus": {
@@ -1154,11 +1264,319 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 1,
+      "reviewed": 2,
       "source": "owner:list",
       "notes": {
         "general": "Its length is estimated from fossil backbones, so it is uncertain."
       }
+    },
+    "wheat": {
+      "name": "Wheat",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "grass_grain"
+      },
+      "familiar": 1.0,
+      "reviewed": 2,
+      "source": "owner:list"
+    },
+    "sugarcane": {
+      "name": "Sugarcane",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "grass_grain"
+      },
+      "familiar": 1.0,
+      "reviewed": 2,
+      "source": "owner:list"
+    },
+    "bamboo": {
+      "name": "Bamboo",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "grass_grain"
+      },
+      "familiar": 1.0,
+      "reviewed": 2,
+      "source": "owner:list"
+    },
+    "tomato_plant": {
+      "name": "Tomato plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable"
+      },
+      "familiar": 1.0,
+      "reviewed": 2,
+      "source": "owner:list"
+    },
+    "brinjal_plant": {
+      "name": "Brinjal plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable"
+      },
+      "familiar": 1.0,
+      "reviewed": 2,
+      "source": "owner:list"
+    },
+    "chilli_plant": {
+      "name": "Chilli plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable"
+      },
+      "familiar": 1.0,
+      "reviewed": 2,
+      "source": "owner:list"
+    },
+    "pumpkin_plant": {
+      "name": "Pumpkin plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable"
+      },
+      "familiar": 1.0,
+      "reviewed": 2,
+      "source": "owner:list"
+    },
+    "building_blocks": {
+      "name": "Building blocks",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy"
+      },
+      "familiar": 0.9,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "toy_car": {
+      "name": "Toy car",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy"
+      },
+      "familiar": 0.85,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "table": {
+      "name": "Table",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household"
+      },
+      "familiar": 0.95,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "bed": {
+      "name": "Bed",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household"
+      },
+      "familiar": 0.95,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "plate": {
+      "name": "Plate",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household"
+      },
+      "familiar": 0.95,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "glass": {
+      "name": "Glass",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household"
+      },
+      "familiar": 0.9,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "spade": {
+      "name": "Spade",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "tool"
+      },
+      "familiar": 0.9,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "saw": {
+      "name": "Saw",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "tool"
+      },
+      "familiar": 0.85,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "screwdriver": {
+      "name": "Screwdriver",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "tool"
+      },
+      "familiar": 0.8,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "axe": {
+      "name": "Axe",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "tool"
+      },
+      "familiar": 0.75,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "sea": {
+      "name": "Sea",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "water"
+      },
+      "familiar": 0.9,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "lake": {
+      "name": "Lake",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "water"
+      },
+      "familiar": 0.85,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "pond": {
+      "name": "Pond",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "water"
+      },
+      "familiar": 0.85,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "hill": {
+      "name": "Hill",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land"
+      },
+      "familiar": 0.85,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "beach": {
+      "name": "Beach",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land"
+      },
+      "familiar": 0.8,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "soil": {
+      "name": "Soil",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground"
+      },
+      "familiar": 0.95,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "clay": {
+      "name": "Clay",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground"
+      },
+      "familiar": 0.85,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "mud": {
+      "name": "Mud",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "ground"
+      },
+      "familiar": 0.9,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "made_and_nature"
+    },
+    "river": {
+      "name": "River",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "water"
+      },
+      "familiar": 0.95,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "seed_and_animals"
+    },
+    "kite": {
+      "name": "Kite",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy"
+      },
+      "familiar": 0.97,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "toys_top_up"
+    },
+    "balloon": {
+      "name": "Balloon",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy"
+      },
+      "familiar": 0.96,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked",
+      "drafted_in": "toys_top_up"
     }
   }
 }

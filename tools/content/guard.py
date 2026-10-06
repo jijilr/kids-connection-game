@@ -15,6 +15,14 @@ from collections import Counter, defaultdict
 from lib import DICTIONARY, THINGS, allowed_values, applies, label, read_json
 
 
+def allowed(value, definition: dict) -> bool:
+    """One allowed value; or, for a thing that truly fits several, a list of them; or 'depends'."""
+    choices = allowed_values(definition)
+    if isinstance(value, list):
+        return len(value) >= 2 and all(v in choices for v in value)
+    return value == "depends" or value in choices
+
+
 def problems(dictionary: dict, store: dict) -> list:
     out = []
     version = dictionary["version"]
@@ -23,7 +31,7 @@ def problems(dictionary: dict, store: dict) -> list:
         for name, value in thing["fields"].items():
             if name not in fields:
                 out.append(f"{key}: field '{name}' is not in the dictionary")
-            elif value != "depends" and value not in allowed_values(fields[name]):
+            elif not allowed(value, fields[name]):
                 out.append(f"{key}: '{name}: {value}' is not an allowed value")
             elif value == "depends" and name not in thing.get("notes", {}):
                 out.append(f"{key}: '{name}: depends' needs a note saying why")
@@ -49,7 +57,7 @@ def report(dictionary: dict, store: dict):
         counts = defaultdict(int)
         for thing in things.values():
             value = thing["fields"].get(name)
-            if value is not None and value != "depends":
+            if value is not None and value != "depends" and not isinstance(value, list):
                 counts[label(definition, value)] += 1
         full = [v for v, n in counts.items() if n >= 4]
         can = "can fill a board" if len(full) >= 4 and definition.get("sorts_boards", True) else "cannot fill a board yet"

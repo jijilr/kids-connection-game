@@ -193,7 +193,8 @@ def rebuild() -> dict:
     dictionary = read_json(DICTIONARY)
     things = read_json(THINGS)["things"]
     old = (read_json(TREE, {}) or {}).get("circles", {})
-    proposals = {k: v for k, v in (read_json(PROPOSALS, {}) or {}).items() if k != "about"}
+    proposals = {k: v for k, v in (read_json(PROPOSALS, {}) or {}).items()
+                 if k != "about" and v["status"].startswith("awaiting")}
 
     circles = build_circles(dictionary, things, read_json(SETTINGS))
     branches = branch_stats(circles)

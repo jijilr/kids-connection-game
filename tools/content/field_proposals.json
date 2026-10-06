@@ -1,48 +1,53 @@
 {
-  "about": "Fields proposed for circles that have none, waiting for the owner's approval. Nothing here is in the dictionary and nothing has been drafted. `have` lists things already in the data that would take each value; `examples_to_add` are only examples of the kind of familiar thing needed.",
+  "about": "Fields proposed to the owner for circles that had none, with his ruling on each. Once approved, a field is added to the dictionary and fill.py carries it back to the existing things using the `have` lists, `assign` and `twins` below. `to_draft` are groups still short of four, for draft.py; `waiting` are things held for a later board.",
   "made_by_people": {
-    "status": "awaiting the owner's approval",
+    "status": "approved by the owner on 2026-10-06",
     "field": "kind_of_made_thing",
     "wording": "What do we use it for?",
     "values": {
-      "vehicle":   { "label": "Vehicles",            "have": ["car", "bicycle", "bus", "train"], "examples_to_add": [] },
-      "toy":       { "label": "Toys",                "have": ["ball", "teddy_bear", "doll"],     "examples_to_add": ["Kite"] },
-      "household": { "label": "Things in the house", "have": ["chair", "cup", "spoon"],          "examples_to_add": ["Table"] },
-      "tool":      { "label": "Tools",               "have": ["hammer"],                         "examples_to_add": ["Scissors", "Screwdriver", "Saw"] }
+      "vehicle":   { "label": "Vehicles",            "have": ["car", "bicycle", "bus", "train"] },
+      "toy":       { "label": "Toys",                "have": ["ball", "teddy_bear", "doll"] },
+      "household": { "label": "Things in the house", "have": ["chair", "cup", "spoon"] },
+      "tool":      { "label": "Tools",               "have": ["hammer"] },
+      "building":  { "label": "Buildings",           "have": ["house"] }
     },
-    "leftovers": {
-      "house": "fits none of the four; proposed fifth value 'building', which stays off the board until it has four members"
-    }
-  },
-  "plant": {
-    "status": "awaiting the owner's approval",
-    "field": "kind_of_plant",
-    "wording": "What kind of plant is it?",
-    "values": {
-      "tree":   { "label": "Trees",            "have": ["mango_tree", "coconut_tree", "neem_tree", "banana_plant"], "examples_to_add": [] },
-      "flower": { "label": "Flowers",          "have": ["rose", "sunflower", "lotus", "marigold"],                  "examples_to_add": [] },
-      "crop":   { "label": "Crops in a field", "have": ["rice_plant"],                                              "examples_to_add": ["Wheat", "Sugarcane", "Tomato plant"] },
-      "potted": { "label": "Plants in pots",   "have": [],                                                          "examples_to_add": ["Tulsi", "Money plant", "Cactus", "Aloe vera"] }
-    },
-    "leftovers": {
-      "banana_plant": "a tree in everyday speech, a giant herb to a scientist; counted here as a tree with an _academic twin, or it could be marked 'depends' and kept off this board",
-      "grass": "fits none of the four"
-    },
-    "weak_point": "mango and coconut trees also give food, so the crop group is labelled 'Crops in a field' to keep them apart"
+    "rulings": ["House gets a fifth value, Buildings, which stays off the board until it has four members."]
   },
   "nature_not_alive": {
-    "status": "awaiting the owner's approval",
+    "status": "approved by the owner on 2026-10-06",
     "field": "kind_of_nature",
     "wording": "What kind of thing in nature is it?",
     "values": {
-      "sky":    { "label": "Things in the sky", "have": ["sun", "moon", "star", "cloud"], "examples_to_add": [] },
-      "water":  { "label": "Water",             "have": ["river"],                        "examples_to_add": ["Sea", "Lake", "Waterfall"] },
-      "land":   { "label": "Places on land",    "have": ["mountain"],                     "examples_to_add": ["Hill", "Desert", "Volcano"] },
-      "ground": { "label": "Rocks and soil",    "have": ["rock", "sand"],                 "examples_to_add": ["Soil", "Clay"] }
+      "sky":    { "label": "Things in the sky", "have": ["sun", "moon", "star", "cloud"] },
+      "water":  { "label": "Water",             "have": ["river"] },
+      "land":   { "label": "Places on land",    "have": ["mountain"] },
+      "ground": { "label": "Rocks and soil",    "have": ["rock", "sand"] }
     },
-    "leftovers": {
-      "rain": "falls from the sky and is water, so it would be marked 'depends' and kept off this board"
+    "assign": { "rain": ["sky", "water"] },
+    "rulings": ["Rain fits two groups, so it lists both and stays off this board. It is NOT marked 'depends': that label is only for things experts debate."]
+  },
+  "plant": {
+    "status": "approved by the owner on 2026-10-06, with the groups he chose",
+    "field": "kind_of_plant",
+    "wording": "What kind of plant is it?",
+    "values": {
+      "tree":        { "label": "Trees",              "have": ["mango_tree", "coconut_tree", "neem_tree", "banana_plant"] },
+      "flower":      { "label": "Flowers",            "have": ["rose", "sunflower", "lotus", "marigold"] },
+      "grass_grain": { "label": "Grasses and grains", "have": ["rice_plant", "grass"] },
+      "vegetable":   { "label": "Vegetable plants",   "have": [] }
     },
-    "weak_point": "a mountain is made of rock, so 'Places on land' and 'Rocks and soil' need clear pictures to stay apart"
+    "twins": {
+      "tree_academic": { "mango_tree": true, "neem_tree": true, "banana_plant": false, "coconut_tree": "depends" }
+    },
+    "notes": {
+      "banana_plant": { "tree_academic": "A banana plant has no woody trunk. Its stem is made of tightly rolled leaves, so scientists call it a giant herb." },
+      "coconut_tree": { "tree_academic": "A palm has a tall woody trunk but does not grow wood in rings as other trees do, so botanists differ on whether to call it a true tree." }
+    },
+    "rulings": [
+      "The owner replaced 'Plants in pots' (it sorts by where a plant grows, not what kind it is) with Grasses and grains and Vegetable plants.",
+      "Banana plant is a tree, with an _academic twin.",
+      "The new members of Grasses and grains and Vegetable plants are the owner's own list (see owner_list.py)."
+    ],
+    "waiting": ["Cactus", "Tulsi", "Money plant", "Aloe vera"]
   }
 }

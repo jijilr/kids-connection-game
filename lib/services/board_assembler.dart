@@ -114,7 +114,7 @@ class BoardAssembler {
   Dimension? _subKind(List<Entity> members, Dimension of, List<PathFilter> filter) {
     for (final d in registry.boardable) {
       if (d.id == of.id || filter.any((f) => f.$1 == d.id)) continue;
-      if (members.every((e) => d.values.containsKey(e.valueFor(d.id)))) return d;
+      if (members.every((e) => e.fields.containsKey(d.id))) return d;
     }
     return null;
   }

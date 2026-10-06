@@ -98,9 +98,10 @@ def main():
     write_json(CHECKED, {"dictionary_version": dictionary["version"], "verdicts": verdicts})
 
     store = read_json(THINGS, {"dictionary_version": dictionary["version"], "things": {}})
-    # Things accepted by an earlier run of this script are re-decided from scratch;
-    # things from other sources (the owner's list) are left alone.
-    store["things"] = {k: v for k, v in store["things"].items() if v.get("source") != SOURCE}
+    # Things this same plan produced on an earlier run are re-decided from scratch.
+    # Everything else - other plans, the owner's list - is left exactly as it is.
+    plan = draft["plan"]
+    store["things"] = {k: v for k, v in store["things"].items() if v.get("drafted_in") != plan}
     queue = []
     seen = {}
     for thing in drafted:
@@ -110,7 +111,7 @@ def main():
         if key in seen:
             reasons.append(f"drafted twice (also under {seen[key]})")
         if key in store["things"] and key not in seen:
-            reasons.append("already present from another source")
+            reasons.append("a thing with this name is already in the data")
         if verdict is None:
             reasons.append("the checker returned nothing for it")
         else:
@@ -135,12 +136,13 @@ def main():
             "familiar": round(thing["familiar"], 2),
             "reviewed": dictionary["version"],
             "source": SOURCE,
+            "drafted_in": plan,
         }
 
     store["dictionary_version"] = dictionary["version"]
     write_json(THINGS, store)
-    set_queue("check", queue)
-    accepted = sum(1 for t in store["things"].values() if t.get("source") == SOURCE)
+    set_queue(f"check:{plan}", queue)
+    accepted = len(drafted) - len(queue)
     print(f"Accepted {accepted}; {len(queue)} sent to {REVIEW_QUEUE.name}. Next: python tools/content/guard.py")
 
 

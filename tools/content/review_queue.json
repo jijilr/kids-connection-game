@@ -7,7 +7,8 @@
       },
       "why": [
         "the drafter was unsure: Wind cannot be seen, only felt, so a child may know the word but not picture it as a thing."
-      ]
+      ],
+      "from": "check:seed_and_animals"
     },
     {
       "name": "Salamander",
@@ -18,7 +19,8 @@
       },
       "why": [
         "the checker doubts a four-year-old would recognise it"
-      ]
+      ],
+      "from": "check:seed_and_animals"
     },
     {
       "name": "Newt",
@@ -29,7 +31,8 @@
       },
       "why": [
         "the checker doubts a four-year-old would recognise it"
-      ]
+      ],
+      "from": "check:seed_and_animals"
     },
     {
       "name": "Caecilian",
@@ -40,7 +43,8 @@
       },
       "why": [
         "the checker doubts a four-year-old would recognise it"
-      ]
+      ],
+      "from": "check:seed_and_animals"
     },
     {
       "name": "Rhamphorhynchus",
@@ -77,6 +81,104 @@
         "needs a field for real versus story creatures before it can be added"
       ],
       "from": "owner"
+    },
+    {
+      "name": "Cactus",
+      "fields": {},
+      "why": [
+        "a plant the owner is keeping for a later board"
+      ],
+      "from": "owner"
+    },
+    {
+      "name": "Tulsi",
+      "fields": {},
+      "why": [
+        "a plant the owner is keeping for a later board"
+      ],
+      "from": "owner"
+    },
+    {
+      "name": "Money plant",
+      "fields": {},
+      "why": [
+        "a plant the owner is keeping for a later board"
+      ],
+      "from": "owner"
+    },
+    {
+      "name": "Aloe vera",
+      "fields": {},
+      "why": [
+        "a plant the owner is keeping for a later board"
+      ],
+      "from": "owner"
+    },
+    {
+      "name": "Ocean",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "water"
+      },
+      "why": [
+        "the drafter was unsure: A young child may not clearly tell an ocean apart from a sea."
+      ],
+      "from": "check:made_and_nature"
+    },
+    {
+      "name": "Desert",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land"
+      },
+      "why": [
+        "the drafter was unsure: A four-year-old may know the word from picture books but may not have seen one."
+      ],
+      "from": "check:made_and_nature"
+    },
+    {
+      "name": "Volcano",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land"
+      },
+      "why": [
+        "the drafter was unsure: A child may know it from picture books rather than from daily life, since few children see one."
+      ],
+      "from": "check:land_top_up"
+    },
+    {
+      "name": "Cave",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land"
+      },
+      "why": [
+        "the drafter was unsure: A child may know caves from stories or pictures rather than from visiting one."
+      ],
+      "from": "check:land_top_up"
+    },
+    {
+      "name": "Sand dune",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land"
+      },
+      "why": [
+        "the drafter was unsure: A child in India may know sand from beaches but not the word 'dune'."
+      ],
+      "from": "check:land_top_up"
+    },
+    {
+      "name": "Drum",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy"
+      },
+      "why": [
+        "kind_of_made_thing: debated - A drum is a musical instrument, and while children play with toy drums, its main use is making music rather than being a toy."
+      ],
+      "from": "check:toys_top_up"
     }
   ]
 }

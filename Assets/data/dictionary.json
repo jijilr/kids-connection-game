@@ -1,11 +1,13 @@
 {
-  "version": 1,
-  "status": "version 1 approved by the owner on 2026-10-06; the game does not read this file yet",
+  "version": 2,
+  "status": "version 2 approved by the owner on 2026-10-06 (version 1 the same day). The game reads this file.",
   "about": "Every field a thing may carry, and the only values that field may take. A field that does not apply to a thing is left out of that thing; it is never written as 'not applicable'. The wording is what a child sees or hears; it is not data.",
   "rules": [
     "A field holds the everyday meaning, which is what the game sorts by.",
     "An _academic field is added only where science disagrees with the everyday meaning. It never sorts a board and never marks a child wrong.",
-    "A new field enters this file only after the owner has approved its values, and the version number then goes up by one."
+    "A new field enters this file only after the owner has approved its values, and the version number then goes up by one.",
+    "A thing that truly fits more than one value of a field lists them all, and stays off boards sorted by that field.",
+    "The value 'depends' is only for things experts debate. It needs a note saying why, and such a thing also stays off boards sorted by that field."
   ],
   "fields": {
     "kind_of_thing": {
@@ -60,6 +62,52 @@
       "values": { "true": "Extinct", "false": "Still living" },
       "expected_on": { "kind_of_thing": ["animal", "plant"] },
       "since": 1
+    },
+    "kind_of_plant": {
+      "wording": "What kind of plant is it?",
+      "meaning": "everyday",
+      "values": {
+        "tree": "Trees",
+        "flower": "Flowers",
+        "grass_grain": "Grasses and grains",
+        "vegetable": "Vegetable plants"
+      },
+      "expected_on": { "kind_of_thing": "plant" },
+      "since": 2
+    },
+    "tree_academic": {
+      "wording": "Is it a tree to a scientist?",
+      "meaning": "academic",
+      "everyday_partner": { "kind_of_plant": "tree" },
+      "values": { "true": "A true tree", "false": "Not a tree to a scientist" },
+      "expected_on": { "kind_of_plant": "tree" },
+      "sorts_boards": false,
+      "since": 2
+    },
+    "kind_of_nature": {
+      "wording": "What kind of thing in nature is it?",
+      "meaning": "everyday",
+      "values": {
+        "sky": "Things in the sky",
+        "water": "Water",
+        "land": "Places on land",
+        "ground": "Rocks and soil"
+      },
+      "expected_on": { "kind_of_thing": "nature_not_alive" },
+      "since": 2
+    },
+    "kind_of_made_thing": {
+      "wording": "What do we use it for?",
+      "meaning": "everyday",
+      "values": {
+        "vehicle": "Vehicles",
+        "toy": "Toys",
+        "household": "Things in the house",
+        "tool": "Tools",
+        "building": "Buildings"
+      },
+      "expected_on": { "kind_of_thing": "made_by_people" },
+      "since": 2
     }
   }
 }
