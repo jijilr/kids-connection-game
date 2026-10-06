@@ -1,0 +1,172 @@
+{
+  "name": "Giganotosaurus",
+  "features": [
+    {
+      "claim": "It was a very large meat-eating dinosaur.",
+      "quote": "Giganotosaurus was a very large meat-eating dinosaur that lived in prehistoric South America.",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "It walked on two legs.",
+      "quote": "How it moved: on 2 legs",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Its head was low.",
+      "quote": "Though incompletely known, the skull of Giganotosaurus appears to have been low.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a rough, wrinkled nasal bone.",
+      "quote": "The nasal bone was very rugose (rough and wrinkled), and these rugosities continued backwards, covering the entire upper surface of this bone.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a ridge-like crest on the bone in front of the eye.",
+      "quote": "The lacrimal bone in front of the eye had a prominent, rugose crest (or horn) that pointed up at a backwards angle.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The front of its lower jaw was flattened and had a downward-pointing chin at the tip.",
+      "quote": "The dentary of the lower jaw expanded in height towards the front (by the mandibular symphysis, where the two halves of the lower jaw connected), where it was also flattened, and it had a downwards projection at the tip (which has been referred to as a \"chin\").",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its teeth were long, blade-like and serrated, good for slicing.",
+      "quote": "Teeth: long, blade-like and serrated, ideal for slicing",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Its neck was strong.",
+      "quote": "The neck of Giganotosaurus was strong, and the axis bone (the neck vertebra that articulates with the skull) was robust.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its shoulder girdle was small compared to its body.",
+      "quote": "The pectoral girdle was proportionally shorter than that of Tyrannosaurus, with the ratio between the scapula (shoulder blade) and the femur being less than 0.5.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its thigh bone was sigmoid-shaped with a very robust, upwards pointing head.",
+      "quote": "The femur was sigmoid-shaped, and had a very robust, upwards pointing head, with a deep sulcus (groove).",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "Old pictures that show its skull as very long may be wrong, because the skulls of these dinosaurs were reconstructed too long.",
+      "quote": "In 2010, the paleontologist Gregory S. Paul suggested that the skulls of carcharodontosaurs had been reconstructed as too long in general.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Old pictures that show it as the biggest meat-eater may be wrong, because Spinosaurus was the longest known meat-eating dinosaur.",
+      "quote": "The longest known meat-eating dinosaur was Spinosaurus, at 14 metres long.",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Old pictures that show it running fast may be wrong, because its long limbs would have limited it to walking.",
+      "quote": "The relatively long limbs, which were long argued to indicate good running ability, would instead have mechanically limited it to walking gaits, and it would therefore not have been a high-speed pursuit predator.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [
+    {
+      "claim": "Scientists are not sure exactly how big it was or how it compared to other dinosaurs, because no complete skeleton has been found.",
+      "quote": "Without having the full skeleton, it’s hard to say for sure just how big Giganotosaurus was and how it compared to other dinosaurs.",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "It is impossible to say for certain whether it was larger than Tyrannosaurus.",
+      "quote": "It is therefore impossible to determine with certainty whether it was larger than Tyrannosaurus, for example, which has been considered the largest theropod historically.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [
+      {
+        "claim": "It was about 13 metres long.",
+        "quote": "Length: 13.0m",
+        "source": "nhm_dino_directory",
+        "kind": "features"
+      }
+    ],
+    "second_reading": [
+      {
+        "claim": "It had very strong jaws and could deliver a powerful bite.",
+        "quote": "Either way, Giganotosaurus had very strong jaws and could certainly deliver a powerful bite.",
+        "source": "nhm_dino_directory",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Experts are not sure what it hunted.",
+        "quote": "But experts aren’t sure what it hunted.",
+        "source": "nhm_dino_directory",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Some scientists think it hunted very large sauropods in packs, while others think that is unlikely.",
+        "quote": "Some scientists think they might have preyed on very large sauropod dinosaurs, working together in packs to take down these plant-eating giants.",
+        "source": "nhm_dino_directory",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Giganotosaurus",
+      "title": "Giganotosaurus",
+      "revision": 1373798838,
+      "revision_time": "2026-09-08T00:39:05Z",
+      "fetched_on": "2026-10-06",
+      "chars": 32483,
+      "sha256": "76eef92f17e69c1b0f57695a722ed25e56576706280346999ad46446cff74d82"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Giganotosaurus",
+      "title": "Giganotosaurus",
+      "revision": 8509639,
+      "revision_time": "2022-10-24T23:39:32Z",
+      "fetched_on": "2026-10-06",
+      "chars": 785,
+      "sha256": "113d402118206e61c7263c8948d36895592cd8c04c38b14455bc653a73e33afe"
+    },
+    {
+      "id": "nhm_dino_directory",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/giganotosaurus.html",
+      "title": "Giganotosaurus | Natural History Museum",
+      "revision": null,
+      "revision_time": null,
+      "fetched_on": "2026-10-06",
+      "chars": 3535,
+      "sha256": "85b3d7b8a3c70299bb22ed4779acbf2893dd30b05a36fb16182be6a03407eca9"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "group": "land_hunter",
+  "must_show": [
+    {
+      "claim": "It had a ridge-like crest on the bone in front of the eye.",
+      "quote": "The lacrimal bone in front of the eye had a prominent, rugose crest (or horn) that pointed up at a backwards angle.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The front of its lower jaw was flattened and had a downward-pointing chin at the tip.",
+      "quote": "The dentary of the lower jaw expanded in height towards the front (by the mandibular symphysis, where the two halves of the lower jaw connected), where it was also flattened, and it had a downwards projection at the tip (which has been referred to as a \"chin\").",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its teeth were long, blade-like and serrated, good for slicing.",
+      "quote": "Teeth: long, blade-like and serrated, ideal for slicing",
+      "source": "nhm_dino_directory"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "name": "Elasmosaurus",
+  "features": [
+    {
+      "claim": "It had a streamlined body.",
+      "quote": "Elasmosaurus would have had a streamlined body with paddle-like limbs, a short tail, a small head, and an extremely long neck.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had paddle-like limbs.",
+      "quote": "Elasmosaurus would have had a streamlined body with paddle-like limbs, a short tail, a small head, and an extremely long neck.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a short tail.",
+      "quote": "Elasmosaurus would have had a streamlined body with paddle-like limbs, a short tail, a small head, and an extremely long neck.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a small head.",
+      "quote": "Elasmosaurus would have had a streamlined body with paddle-like limbs, a short tail, a small head, and an extremely long neck.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had an extremely long neck.",
+      "quote": "Elasmosaurus would have had a streamlined body with paddle-like limbs, a short tail, a small head, and an extremely long neck.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its neck alone was around 7.1 meters long.",
+      "quote": "The neck alone was around 7.1 meters (23 ft) long.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It measured 10.3 meters in length.",
+      "quote": "Measuring 10.3 meters (34 ft) in length, Elasmosaurus would have had a streamlined body with paddle-like limbs, a short tail, a small head, and an extremely long neck.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its skull would have been slender and triangular.",
+      "quote": "The skull would have been slender and triangular, with large, fang-like teeth at the front, and smaller teeth towards the back.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had large, fang-like teeth at the front and smaller teeth towards the back.",
+      "quote": "The skull would have been slender and triangular, with large, fang-like teeth at the front, and smaller teeth towards the back.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had large, paddle-like limbs with very long digits.",
+      "quote": "Like other elasmosaurids (and plesiosaurs in general), Elasmosaurus would have had large, paddle-like limbs with very long digits.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The paddles at the front were longer than those at the back.",
+      "quote": "The paddles at the front (the pectoral paddles) were longer than those at the back (the pelvic paddles).",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "Old pictures show its neck held high above the water, but its neck could not be held high above the water surface.",
+      "quote": "Contrary to earlier depictions, their necks were not very flexible, and could not be held high above the water surface.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Old pictures show it with a short neck and a long tail, but that was a mistake.",
+      "quote": "The reconstruction showed Elasmosaurus with a short neck and a long tail, unlike other plesiosaurs, and Cope was also unsure whether it had hind limbs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "An old picture showed the skull at the wrong end of the vertebral column, at the end of the tail instead of the neck.",
+      "quote": "the American paleontologist Joseph Leidy (Cope's mentor) noted that Cope's reconstruction of Elasmosaurus showed the skull at the wrong end of the vertebral column, at the end of the tail instead of the neck.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [
+    {
+      "claim": "The shape of a possible tail-fin is unknown.",
+      "quote": "Since the last tail-vertebrae of elasmosaurids were fused into a structure similar to the pygostyle of birds, it is possible this supported a tail-fin, but the shape it would have had is unknown.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "It had 72 neck vertebrae.",
+        "quote": "Elasmosaurus differed from all other plesiosaurs by having 72 neck vertebrae; more may have been present but were later lost to erosion or after excavation.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It is unknown what their long necks were used for.",
+        "quote": "It is unknown what their long necks were used for, but they may have had a function in feeding.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It is uncertain how many teeth Elasmosaurus had.",
+        "quote": "It is uncertain how many teeth Elasmosaurus had, due to the fragmentary state of the fossils.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "One source says it had 71 cervical vertebrae, while another says 72.",
+        "quote": "It had 71 cervical vertebrae.",
+        "source": "wikipedia_simple",
+        "kind": "debated",
+        "why": "the sentence does not support it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Elasmosaurus",
+      "title": "Elasmosaurus",
+      "revision": 1370052778,
+      "revision_time": "2026-08-18T21:28:22Z",
+      "fetched_on": "2026-10-06",
+      "chars": 55378,
+      "sha256": "b7d1d4620e95da6f44192bdba99745a53dda3f9620d72d7fd61062a6d568bd2d"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Elasmosaurus",
+      "title": "Elasmosaurus",
+      "revision": 5284254,
+      "revision_time": "2015-12-19T15:12:38Z",
+      "fetched_on": "2026-10-06",
+      "chars": 855,
+      "sha256": "2a9bf22a92252dcdffde4cd828b84ec1836c45420eaafb5bee14bab7e6622e3d"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "group": "swimmer",
+  "must_show": [
+    {
+      "claim": "It had an extremely long neck.",
+      "quote": "Elasmosaurus would have had a streamlined body with paddle-like limbs, a short tail, a small head, and an extremely long neck.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its skull would have been slender and triangular.",
+      "quote": "The skull would have been slender and triangular, with large, fang-like teeth at the front, and smaller teeth towards the back.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had large, fang-like teeth at the front and smaller teeth towards the back.",
+      "quote": "The skull would have been slender and triangular, with large, fang-like teeth at the front, and smaller teeth towards the back.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The paddles at the front were longer than those at the back.",
+      "quote": "The paddles at the front (the pectoral paddles) were longer than those at the back (the pelvic paddles).",
+      "source": "wikipedia_en"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "name": "Brontosaurus",
+  "features": [
+    {
+      "claim": "It was a big animal with a long neck and four legs.",
+      "quote": "Brontosaurus was a large, long-necked, quadrupedal animal with a long, whip-like tail, and forelimbs that were slightly shorter than its hindlimbs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its front legs were a little shorter than its back legs.",
+      "quote": "Brontosaurus was a large, long-necked, quadrupedal animal with a long, whip-like tail, and forelimbs that were slightly shorter than its hindlimbs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a long tail that ended like a whip.",
+      "quote": "The anatomy of Brontosaurus is well known, with fossils demonstrating that it was large, long-necked, and quadrupedal with a long tail terminating in a whip-like structure.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its front legs were short and thick, and its back legs were long and thick.",
+      "quote": "The forelimbs were short and stout whereas the hindlimbs were elongated and thick, supported respectively by a heavily built shoulder girdle and pelvis.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a single big claw on each front limb.",
+      "quote": "Brontosaurus had a single large claw on each forelimb which faced towards the body, whereas the rest of the phalanges lacked unguals.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its foot had three claws on the innermost toes.",
+      "quote": "The foot of Brontosaurus has three claws on the innermost digits; the digit formula is 3-4-5-3-2.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its jaws had chisel-like teeth for eating plants.",
+      "quote": "Jaws of Apatosaurus and other diplodocids were lined with spatulate (chisel-like) teeth which were adapted for herbivory.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its snout was squared off and low.",
+      "quote": "Their snouts were squared off and low, in contrast to those of macronarians.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its neck bones carried paired spines, making the neck wide and deep.",
+      "quote": "Like those of other diplodocids, the vertebrae of the neck were deeply bifurcated on the dorsal side; that is, they carried paired spines, resulting in a wide and deep neck.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its back sloped up toward the tail, making an arched back.",
+      "quote": "The neural spines of the dorsals would increase in height further towards the tail, creating an arched back.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "Old pictures gave it a skull like a Camarasaurus, but that was wrong.",
+      "quote": "These skulls were likely those of Camarasaurus, the only other sauropod of which good skull material was known at the time.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Old pictures showed its tail with too few bones.",
+      "quote": "To finish the mount, the rest of the tail was fashioned to appear as Marsh believed it should, which meant it had too few vertebrae.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Old pictures showed its arm bones crossing, but in life they stayed parallel.",
+      "quote": "Charles Gilmore in 1936 noted that previous reconstructions erroneously proposed that the radius and ulna could cross, when in life they would have remained parallel.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [
+    {
+      "claim": "No skull of Brontosaurus has been found, so its skull shape is not known for sure.",
+      "quote": "Although the skull of Brontosaurus has not been found, it was probably similar to the skull of the closely related Apatosaurus.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Some studies say its neck was less flexible than people thought, while others say it held its neck up high.",
+      "quote": "Though some studies have suggested that diplodocid necks were less flexible than previously believed, other studies have found that all tetrapods appear to hold their necks at the maximum possible vertical extension when in a normal, alert posture, and argue that the same would hold true for sauropods barring any unknown, unique characteristics that set the soft tissue anatomy of their necks apart from that of other animals.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Its neck bones were very strong and heavy.",
+        "quote": "The cervical vertebrae are notably extremely robust and heavily built, in contrast to its lightly built relatives Diplodocus and Barosaurus.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It was a plant eater that fed on ferns, cycadeoids, seed ferns and horsetails at ground height.",
+        "quote": "Being a diplodocid sauropod, Brontosaurus was herbivorous and fed on ferns, cycadeoids, seed ferns, and horsetails, eating at ground height as a nonselective browser.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Old pictures showed it living in water, but that is not supported by fossils.",
+        "quote": "This is unsupported by fossil evidence.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Some scientists still think Brontosaurus is the same as Apatosaurus.",
+        "quote": "However, the status of Brontosaurus is still uncertain, with some paleontologists still considering it a synonym of Apatosaurus.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Whether it could crack its tail like a whip is not agreed on.",
+        "quote": "More recently, Baron (2020) has considered the use of the tail as a bullwhip unlikely because of the potentially catastrophic muscle and skeletal damage such speeds could cause on the large and heavy tail.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Brontosaurus",
+      "title": "Brontosaurus",
+      "revision": 1374721241,
+      "revision_time": "2026-09-13T19:11:39Z",
+      "fetched_on": "2026-10-06",
+      "chars": 43198,
+      "sha256": "1f9f4ecea79c03f984744ea6046ecda2700a3c5bfeea4f644cbfc479d7855415"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Brontosaurus",
+      "title": "Brontosaurus",
+      "revision": 6206609,
+      "revision_time": "2018-07-28T21:54:25Z",
+      "fetched_on": "2026-10-06",
+      "chars": 707,
+      "sha256": "0a9a11c82c51cbc12d0c36d8a0ee3c05bf359f7e91e2842d8775d8bff9028e90"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "group": "land_grazer",
+  "must_show": [
+    {
+      "claim": "It had a long tail that ended like a whip.",
+      "quote": "The anatomy of Brontosaurus is well known, with fossils demonstrating that it was large, long-necked, and quadrupedal with a long tail terminating in a whip-like structure.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a single big claw on each front limb.",
+      "quote": "Brontosaurus had a single large claw on each forelimb which faced towards the body, whereas the rest of the phalanges lacked unguals.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its back sloped up toward the tail, making an arched back.",
+      "quote": "The neural spines of the dorsals would increase in height further towards the tail, creating an arched back.",
+      "source": "wikipedia_en"
+    }
+  ]
+}

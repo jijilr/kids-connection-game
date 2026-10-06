@@ -1,0 +1,57 @@
+{
+  "about": "Where the research scripts may read, which model reads for them, and what that costs. Research runs as scripts: a script fetches the pages, DeepSeek reads only the fetched text, and a script checks every quoted sentence against that text. No Claude session is involved.",
+  "sources": {
+    "wikipedia_en": {
+      "what": "English Wikipedia, through its own service, as plain text with the revision number",
+      "host": "en.wikipedia.org",
+      "found_by": "the thing's name"
+    },
+    "wikipedia_simple": {
+      "what": "Simple English Wikipedia, where an article exists",
+      "host": "simple.wikipedia.org",
+      "found_by": "the thing's name"
+    },
+    "nhm_dino_directory": {
+      "what": "Natural History Museum, London: the Dino Directory page",
+      "host": "www.nhm.ac.uk",
+      "found_by": "a fixed address pattern, dinosaurs only",
+      "pattern": "https://www.nhm.ac.uk/discover/dino-directory/{genus}.html"
+    },
+    "amnh": {
+      "what": "American Museum of Natural History",
+      "host": "www.amnh.org",
+      "found_by": "a page address a person has written under `hints`; its addresses cannot be worked out from a name"
+    },
+    "kew": {
+      "what": "Royal Botanic Gardens, Kew: for plants",
+      "host": "powo.science.kew.org",
+      "found_by": "a page address a person has written under `hints`, until a search by name is built"
+    }
+  },
+  "banned": [
+    "fan wikis, such as fandom.com and wikia",
+    "film and toy sites",
+    "anything that looks AI-generated"
+  ],
+  "rule": "A script fetches only from the hosts listed under `sources`. Nothing else is read, so a banned kind of site cannot get in.",
+  "hints": {},
+  "not_in_the_game_yet": {
+    "Rhamphorhynchus": {
+      "kind_of_dinosaur": "flyer"
+    },
+    "Dimorphodon": {
+      "kind_of_dinosaur": "flyer"
+    }
+  },
+  "longest_text_sent_per_source": 60000,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "prices_checked_on": "2026-10-06",
+  "usd_per_million_tokens_at_peak": {
+    "input_cache_hit": 0.006,
+    "input_cache_miss": 0.3,
+    "output": 1.2
+  },
+  "prices_note": "Peak prices are used for every estimate, so the real cost is this or less. Off-peak is half.",
+  "inr_per_usd": 96.38
+}

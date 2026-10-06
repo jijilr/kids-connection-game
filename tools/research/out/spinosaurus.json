@@ -1,0 +1,173 @@
+{
+  "name": "Spinosaurus",
+  "features": [
+    {
+      "claim": "It had a long, low, narrow skull like a crocodile's.",
+      "quote": "The skull of Spinosaurus was long, low, and narrow, similar to that of a modern crocodilian, and bore straight conical teeth with few to no serrations.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its teeth were straight, cone-shaped and smooth.",
+      "quote": "Teeth: smooth and cone-shaped",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "It had a long, muscular neck shaped like an S.",
+      "quote": "As a spinosaurid, Spinosaurus would have had a long, muscular neck, curved in a sigmoid, or S-shape.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had big, strong front limbs with three-fingered hands and a big claw on the first finger.",
+      "quote": "It would have had large, robust forelimbs bearing three-fingered hands, with an enlarged claw on the first digit.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a sail on its back made of long spines.",
+      "quote": "The distinctive neural spines of Spinosaurus, which were long extensions of the vertebrae, grew to at least 1.65 m (5.4 ft) long and were likely to have had skin connecting them, forming a sail-like structure.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its hip bones were small and its legs were very short for its body.",
+      "quote": "The hip bones of Spinosaurus were reduced, and the legs were very short in proportion to the body.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its long, narrow tail was deep and shaped like a paddle.",
+      "quote": "Its long and narrow tail was deepened by tall, thin neural spines and elongated chevrons, forming a paddle-like structure.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a wide, paddle-like tail.",
+      "quote": "It also had a wide, paddle-like tail.",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "It had a narrow snout with a notch near the front of its jaws.",
+      "quote": "Like other members of the spinosaur group, Spinosaurus had a narrow snout and a distinctive notch near the front of its jaws.",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "It had a sail about 1.5 metres high on its back.",
+      "quote": "There are several theories about the impressive 1.5-metre-high sail on Spinosaurus' back.",
+      "source": "nhm_dino_directory"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "Old pictures showed it as a land animal with long hind legs, which is wrong.",
+      "quote": "For most of the last century scientists reconstructed Spinosaurus as a completely land-based animal with long hind legs, like Tyrannosaurus and Allosaurus.",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Old pictures showed it standing upright like other big theropods with a sail, which is out of date.",
+      "quote": "After an influential 1955 skeletal reconstruction by Lapparent and Lavocat based on a 1936 diagram by Stromer, it has been treated as a generalized upright theropod, with a skull similar to that of other large theropods and a sail on its back, even having four-fingered hands.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Old pictures showed it walking on all fours, but many scientists today think it walked on two legs.",
+      "quote": "Some reconstructions of Spinosaurus show it walking on all fours, while many scientists today believe that it was able to walk on two legs.",
+      "source": "nhm_dino_directory"
+    }
+  ],
+  "debated": [
+    {
+      "claim": "Scientists are not sure whether it walked on two legs or on all fours.",
+      "quote": "It's still not clear who is right, and we may need to wait for new discoveries or studies to find out more.",
+      "source": "nhm_dino_directory"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [
+      {
+        "claim": "It was about 14 metres long.",
+        "quote": "Length:\n14.0m",
+        "source": "nhm_dino_directory",
+        "kind": "features"
+      },
+      {
+        "claim": "It weighed about 7400 kilograms.",
+        "quote": "Weight:\n7400kg",
+        "source": "nhm_dino_directory",
+        "kind": "features"
+      }
+    ],
+    "second_reading": [
+      {
+        "claim": "Scientists are not sure whether it swam a lot or mostly lived on the shoreline.",
+        "quote": "It isn't clear whether this dinosaur swam a lot, or mostly lived on the shoreline.",
+        "source": "nhm_dino_directory",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Scientists are not sure what the sail was for.",
+        "quote": "The function of the dinosaur's sail or hump is uncertain; scientists have proposed several hypotheses including heat regulation and display.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Scientists are not sure whether it was mainly a land predator or a fish-eater.",
+        "quote": "It is unclear whether Spinosaurus was primarily a terrestrial predator or a piscivore, as indicated by its elongated jaws, conical teeth and raised nostrils.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Spinosaurus",
+      "title": "Spinosaurus",
+      "revision": 1378610680,
+      "revision_time": "2026-10-05T05:37:02Z",
+      "fetched_on": "2026-10-06",
+      "chars": 54445,
+      "sha256": "ab124982be4a911e953a3c6ff78480d0c89b9e88d35a01ef85567513922dcc78"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Spinosaurus",
+      "title": "Spinosaurus",
+      "revision": 10899300,
+      "revision_time": "2026-06-24T16:57:21Z",
+      "fetched_on": "2026-10-06",
+      "chars": 3669,
+      "sha256": "80e46dc11756cc2bf20c8080025516a04ca8ec6894781a1d79bab8187a9771bf"
+    },
+    {
+      "id": "nhm_dino_directory",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/spinosaurus.html",
+      "title": "Spinosaurus | Natural History Museum",
+      "revision": null,
+      "revision_time": null,
+      "fetched_on": "2026-10-06",
+      "chars": 4153,
+      "sha256": "f91f4865c852c15c5f8c3eff88883c860e13bc703c67585be2f19b49fcfcf22b"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "group": "land_hunter",
+  "must_show": [
+    {
+      "claim": "It had a long, low, narrow skull like a crocodile's.",
+      "quote": "The skull of Spinosaurus was long, low, and narrow, similar to that of a modern crocodilian, and bore straight conical teeth with few to no serrations.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a sail on its back made of long spines.",
+      "quote": "The distinctive neural spines of Spinosaurus, which were long extensions of the vertebrae, grew to at least 1.65 m (5.4 ft) long and were likely to have had skin connecting them, forming a sail-like structure.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a wide, paddle-like tail.",
+      "quote": "It also had a wide, paddle-like tail.",
+      "source": "nhm_dino_directory"
+    }
+  ]
+}

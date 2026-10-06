@@ -1,0 +1,167 @@
+{
+  "name": "Pterodactylus",
+  "features": [
+    {
+      "claim": "It had wings made of a skin and muscle membrane that stretched from its long fourth finger to its hind limbs.",
+      "quote": "Like all pterosaurs, Pterodactylus had wings formed by a skin and muscle membrane stretching from its elongated fourth finger to its hind limbs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It was a small pterosaur.",
+      "quote": "Pterodactylus was a small pterosaur compared to other famous genera such as Pteranodon and Quetzalcoatlus, and it also lived earlier, during the Late Jurassic period, while both Pteranodon and Quetzalcoatlus lived during the Late Cretaceous.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its adult wingspan was about 1.04 meters.",
+      "quote": "Pterodactylus antiquus was a relatively small pterosaur, with an estimated adult wingspan of about 1.04 meters (3 ft 5 in), based on the only known adult specimen, which is represented by an isolated skull.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The skulls of adults were long and thin, with about 90 narrow and conical teeth.",
+      "quote": "The skulls of adult Pterodactylus were long and thin, with about 90 narrow and conical teeth.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The teeth went back from the tips of both jaws and got smaller farther from the jaw tips.",
+      "quote": "The teeth extended back from the tips of both jaws, and became smaller farther away from the jaw tips.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The skull and jaws were straight.",
+      "quote": "Another autapomorphy that Pterodactylus has is that the skull and jaws were straight, which are unlike the upwardly curved jaws seen in the related ctenochasmatids.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a crest on its skull made mainly of soft tissues.",
+      "quote": "Pterodactylus, like related pterosaurs, had a crest on its skull composed mainly of soft tissues.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "In adults the crest extended between the back edge of the antorbital fenestra and the back of the skull.",
+      "quote": "In adult Pterodactylus, this crest extended between the back edge of the antorbital fenestra and the back of the skull.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "In at least one specimen the crest had a short bony base.",
+      "quote": "In at least one specimen, the crest had a short bony base, also seen in related pterosaurs like Germanodactylus.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Solid crests have only been found on large, fully adult specimens.",
+      "quote": "Solid crests have only been found on large, fully adult specimens of Pterodactylus, indicating that this was a display structure that became larger and more well developed as individuals reached maturity.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It was a small pterosaur that lived in the later Jurassic period.",
+      "quote": "Pterodactylus (Pterodactylus Antiquus) was a small pterosaur. It lived in the later Jurassic period, at the same time as many dinosaurs.",
+      "source": "wikipedia_simple"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "Old pictures showed it as a sea creature using its wings as flippers, but that idea was wrong.",
+      "quote": "The idea that pterosaurs were aquatic animals persisted among a minority of scientists as late as 1830, when the German zoologist Johann Georg Wagler published a text on \"amphibians\" which included an illustration of Pterodactylus using its wings as flippers.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Old pictures showed it as a bat or a furred animal, but that idea was wrong.",
+      "quote": "Sömmerring did not change his opinion that these forms were bats and this \"bat model\" for interpreting pterosaurs would remain influential long after a consensus had been reached around 1860 that they were reptiles.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Old pictures showed it as a shore bird, but that idea was wrong.",
+      "quote": "He also refuted a hypothesis by Johann Friedrich Blumenbach that it would have been a shore bird.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Old pictures showed it with a bony crest, but studies say it may not have had one.",
+      "quote": "Studies of Pterodactylus, however, conclude that it may even lack a bony cranial crest, though several analysis have proven that Pterodactylus may in fact have a crest made up of soft tissue instead of bone.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [
+    {
+      "claim": "One researcher found no evidence that the soft tissue crest extended backward behind the skull, though other authors claimed it did.",
+      "quote": "In 2013, pterosaur researcher S. Christopher Bennett noted that other authors claimed that the soft tissue crest of Pterodactylus extended backward behind the skull; Bennett himself, however, didn't find any evidence for the crest extending past the back of the skull.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "The wing membrane was supported inside by collagen fibres and outside by keratinous ridges.",
+        "quote": "It was supported internally by collagen fibres and externally by keratinous ridges.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It is not known whether the genus Aerodactylus is truly valid.",
+        "quote": "However, these smaller specimens have been shown to represent juveniles of Pterodactylus, as well as its contemporary relatives including Ctenochasma, Germanodactylus, Aurorazhdarcho, Gnathosaurus, and hypothetically Aerodactylus if this genus is truly valid.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Fully mature Pterodactylus specimens are unknown, or may have been mistaken for a different genus.",
+        "quote": "Fully mature Pterodactylus specimens remain unknown, or may have been mistakenly classified as a different genus.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Two scientists said the differences between the specimens were enough to make three separate species, while another said they were just growth stages of one species.",
+        "quote": "So, what Bennett considered early growth stages of one species, Vidovic and Martill considered representatives of new species.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Pterodactylus",
+      "title": "Pterodactylus",
+      "revision": 1374731820,
+      "revision_time": "2026-09-13T20:25:57Z",
+      "fetched_on": "2026-10-06",
+      "chars": 32099,
+      "sha256": "33bc9316bcb5cdbdd157e2289e750748ad12b86b22c7a0576f70e9e8bdc5bc77"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Pterodactylus",
+      "title": "Pterodactylus",
+      "revision": 9643491,
+      "revision_time": "2024-07-11T21:01:06Z",
+      "fetched_on": "2026-10-06",
+      "chars": 1000,
+      "sha256": "634e03e753e6aa4e09a2956093b1ea6696a739f11be4f6a7caaf4cb81f032586"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "group": "flyer",
+  "must_show": [
+    {
+      "claim": "The skulls of adults were long and thin, with about 90 narrow and conical teeth.",
+      "quote": "The skulls of adult Pterodactylus were long and thin, with about 90 narrow and conical teeth.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The skull and jaws were straight.",
+      "quote": "Another autapomorphy that Pterodactylus has is that the skull and jaws were straight, which are unlike the upwardly curved jaws seen in the related ctenochasmatids.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a crest on its skull made mainly of soft tissues.",
+      "quote": "Pterodactylus, like related pterosaurs, had a crest on its skull composed mainly of soft tissues.",
+      "source": "wikipedia_en"
+    }
+  ]
+}

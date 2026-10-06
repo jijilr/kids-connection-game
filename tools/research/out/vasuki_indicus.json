@@ -1,0 +1,112 @@
+{
+  "name": "Vasuki indicus",
+  "features": [
+    {
+      "claim": "It was very long, with an estimated body length between about 11 and 15 metres.",
+      "quote": "It has an estimated body length between 10.9–15.2 m (36–50 ft), making it the largest known madtsoiid.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its body may have been longer than Titanoboa's.",
+      "quote": "Although the vertebral dimensions of Vasuki are slightly smaller than those of Titanoboa (estimated at 12.8 m (42 ft) ± 2.2 m (7 ft 3 in)), the upper length estimates indicate a longer body for the former.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It was one of the longest snakes ever found.",
+      "quote": "The highest length estimates place Vasuki among the longest snakes ever discovered.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [
+    {
+      "claim": "Its length is not settled: one method gives about 11 to 12 metres and another gives about 14.5 to 15 metres.",
+      "quote": "The former equation resulted in a body length range of 10.9–12.2 m (36–40 ft), while the latter equation resulted in a body length range of 14.5–15.2 m (48–50 ft).",
+      "source": "wikipedia_en"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "It was a snake.",
+        "quote": "Vasuki indicus is an extinct snake species in the family Madtsoiidae that lived during the Middle Eocene in India.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It is known from several vertebrae.",
+        "quote": "V. indicus is the only species in the genus Vasuki, known from several vertebrae found in the Naredi Formation.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The fossil specimen is made of 27 vertebrae from in front of the cloaca, some of them still joined together.",
+        "quote": "The specimen consists of 27 pre-cloacal vertebrae, some of which were found in articulation.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Its body shape suggests it lived on land, or possibly partly in water.",
+        "quote": "Its vertebral morphology instead suggests a terrestrial (or possibly semi-aquatic) lifestyle when compared to related madtsoiids and modern pythonoids.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It was probably not a water animal.",
+        "quote": "Unlike other large-bodied snakes like Titanoboa, Vasuki was probably not an aquatic animal.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It was not a crocodile, even though early work on the fossils suggested that.",
+        "quote": "The fossil material was found some time after 2004, and preliminary analyses suggested crocodilian affinities for the fossil material without further review.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "One vertebra found later might belong to a second species of Vasuki, or the differences might just be between males and females.",
+        "quote": "However, multiple characters also distinguish the vertebra from the Vasuki indicus holotype, suggesting it may be a second distinct species in the genus. Alternatively, the differences could be explained by sexual dimorphism within the species.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Vasuki_indicus",
+      "title": "Vasuki indicus",
+      "revision": 1369140636,
+      "revision_time": "2026-08-13T03:41:17Z",
+      "fetched_on": "2026-10-06",
+      "chars": 3971,
+      "sha256": "a246910b54e96dc18e11f885e5fe56cfb2a3d0e86e043303155e178850d397f5"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "group": "giant_snake",
+  "must_show": [
+    {
+      "claim": "It was very long, with an estimated body length between about 11 and 15 metres.",
+      "quote": "It has an estimated body length between 10.9–15.2 m (36–50 ft), making it the largest known madtsoiid.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It was one of the longest snakes ever found.",
+      "quote": "The highest length estimates place Vasuki among the longest snakes ever discovered.",
+      "source": "wikipedia_en"
+    }
+  ]
+}

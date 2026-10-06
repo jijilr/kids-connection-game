@@ -43,3 +43,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Pages fetched for research: other people's text, kept on this machine only.
+# Each result records the page address, revision and fingerprint instead.
+tools/research/cache/

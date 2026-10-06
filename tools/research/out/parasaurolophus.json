@@ -1,0 +1,173 @@
+{
+  "name": "Parasaurolophus",
+  "features": [
+    {
+      "claim": "It was a large plant-eater that could grow over 9 metres long and weigh over 5 metric tons.",
+      "quote": "It was a large herbivore that could reach over 9 metres (30 ft) long and weigh over 5 metric tons (5.5 short tons), and were able to move as a biped and a quadruped.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It could walk on either two legs or four legs.",
+      "quote": "Like other hadrosaurids, it was able to walk on either two legs or four.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a big, long, curved tube-shaped crest sticking up and back from its head.",
+      "quote": "This genus is known for its large, elaborate cranial crest, which forms a long curved tube projecting upwards and back from the skull in its largest form.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its skin had uniform bumpy scales and no bigger structures.",
+      "quote": "Skin impressions are known for P. walkeri, showing uniform tubercle-like scales, but no larger structures.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a beak and hundreds of teeth packed into dental batteries, with only a few teeth in use at a time.",
+      "quote": "Its teeth were continually being replaced and were packed into dental batteries containing hundreds of teeth, but only a relative handful of which were in use at any time.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had tall neural spines over its hips that made its back higher.",
+      "quote": "At their tallest over the hips, they increased the height of the back.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its arm was short for a hadrosaurid, with a short but wide shoulder blade.",
+      "quote": "Its single known arm was relatively short for a hadrosaurid, with a short but wide shoulder blade.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had scaly, pebbled skin.",
+      "quote": "Fossilised skin impressions show that Parasaurolophus had scaly, pebbled skin.",
+      "source": "nhm_dino_directory"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "Old pictures showed a skin frill from the crest to the neck, but this idea has fallen out of favour.",
+      "quote": "This led to the frill being depicted in many other sources, though the advent of the now-debunked \"snorkel\" hypothesis, and conflation of the frill hypothesis with the idea that the crest serves as an anchor point for neck ligaments, along with lack of strong evidence for its presence, has seen it fall out of favor in most modern depictions.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [
+    {
+      "claim": "Experts have gone back and forth about whether it walked on two legs or four.",
+      "quote": "Over the years, experts have gone back and forth as to whether Parasaurolophus walked on two legs or four.",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Some skulls had smaller, differently shaped crests, and it is not known if this was because of sex or age.",
+      "quote": "Some of them had smaller, differently shaped crests. Perhaps this was because some were from males and others were from females, or maybe the individuals were different ages.",
+      "source": "nhm_dino_directory"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "The crest was hollow, with tubes running from the nostrils to the end of the crest and back down into the skull.",
+        "quote": "The crest was hollow, with distinct tubes leading from each nostril to the end of the crest before reversing direction and heading back down the crest and into the skull.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It used its beak to crop plants, which were held in the jaws by a cheek-like organ.",
+        "quote": "It used its beak to crop plant material, which was held in the jaws by a cheek-like organ.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It ate leaves, twigs and pine needles.",
+        "quote": "Parasaurolophus had a diet consisting of leaves, twigs, and pine needles which would imply that it was a browser.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Its thighbone was 103 cm long and strong for its length.",
+        "quote": "The thighbone measures 103 cm (41 in) long in P. walkeri and is robust for its length when compared to other hadrosaurids.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The idea that the crest was a snorkel has been debunked.",
+        "quote": "This led to the frill being depicted in many other sources, though the advent of the now-debunked \"snorkel\" hypothesis, and conflation of the frill hypothesis with the idea that the crest serves as an anchor point for neck ligaments, along with lack of strong evidence for its presence, has seen it fall out of favor in most modern depictions.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Scientists are not sure what the crest was for.",
+        "quote": "Nobody knows for sure what the crest was for.",
+        "source": "nhm_dino_directory",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It is not clear which of the crest's possible jobs was most important at different times.",
+        "quote": "It is not clear which was most significant at what times in the evolution of the crest and its internal nasal passages.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Parasaurolophus",
+      "title": "Parasaurolophus",
+      "revision": 1365892867,
+      "revision_time": "2026-07-25T01:29:53Z",
+      "fetched_on": "2026-10-06",
+      "chars": 29543,
+      "sha256": "4bf021915fa783e11ec9f8c9f3196f6333618c0b5fdee47b3fd6805c8af5a5e5"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Parasaurolophus",
+      "title": "Parasaurolophus",
+      "revision": 10720567,
+      "revision_time": "2026-01-20T01:53:26Z",
+      "fetched_on": "2026-10-06",
+      "chars": 801,
+      "sha256": "71380c991c347787bb57346da84e1f487e8d14a97c0e01e679a4eecb9fb6e932"
+    },
+    {
+      "id": "nhm_dino_directory",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/parasaurolophus.html",
+      "title": "Parasaurolophus | Natural History Museum",
+      "revision": null,
+      "revision_time": null,
+      "fetched_on": "2026-10-06",
+      "chars": 4575,
+      "sha256": "932f0364fef922a74458b3354d969d52024d788ecc12d154b550755cafb3e992"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "group": "land_grazer",
+  "must_show": [
+    {
+      "claim": "It had a big, long, curved tube-shaped crest sticking up and back from its head.",
+      "quote": "This genus is known for its large, elaborate cranial crest, which forms a long curved tube projecting upwards and back from the skull in its largest form.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a beak and hundreds of teeth packed into dental batteries, with only a few teeth in use at a time.",
+      "quote": "Its teeth were continually being replaced and were packed into dental batteries containing hundreds of teeth, but only a relative handful of which were in use at any time.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had tall neural spines over its hips that made its back higher.",
+      "quote": "At their tallest over the hips, they increased the height of the back.",
+      "source": "wikipedia_en"
+    }
+  ]
+}

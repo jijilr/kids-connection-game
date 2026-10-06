@@ -1,0 +1,156 @@
+{
+  "name": "Mixosaurus",
+  "features": [
+    {
+      "claim": "It was a small ichthyosaur.",
+      "quote": "Mixosaurus was a small ichthyosaur, measuring 73–100 cm (2.40–3.28 ft) long and weighing 2.2–5.7 kg (4.9–12.6 lb).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a long tail with a low fin.",
+      "quote": "It possessed a long tail with a low fin, suggesting it wasn't as fast as Jurassic Ichthyosaurs, but also possessed a dorsal fin for stability in the water.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a dorsal fin for stability in the water.",
+      "quote": "It possessed a long tail with a low fin, suggesting it wasn't as fast as Jurassic Ichthyosaurs, but also possessed a dorsal fin for stability in the water.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its limbs were paddle-like and had five toes each.",
+      "quote": "The paddle-like limbs were made up of five toes each, unlike the three toes found in later Ichthyosaurs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its front limbs were longer than its back limbs.",
+      "quote": "Noteworthy, however, is that each toe had more individual bones than is usual in reptiles, and the front limbs were longer than the back limbs, both adaptations typical of later ichthyosaurs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its jaws were narrow and had several sharp teeth.",
+      "quote": "The jaws were narrow, with several sharp teeth, that would have been ideal for catching fish.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a relatively large skull compared to its body.",
+      "quote": "They had relatively large skulls compared to their bodies, unlike the basal ichthyosaurs, but resembled fish-shaped ichthyosaurs that appeared later.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a sagittal crest on its skull.",
+      "quote": "M. cornalianus has a sagittal crest associated with the expansion of the upper temporal fenestra.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It was a transitional form between eel-shaped ichthyosaurs and dolphin-shaped ichthyosaurs.",
+      "quote": "The name means \"Mixed Lizard\", and was chosen because it appears to have been a transitional form between the eel-shaped ichthyosaurs such as Cymbospondylus and the later dolphin-shaped ichthyosaurs, such as Ichthyosaurus.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "It had around 50 vertebrae in front of the pelvic girdle.",
+        "quote": "They had around 50 vertebrae in front of the pelvic girdle, around twice as many as terrestrial diapsids.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It had exceptionally strong jaw muscles.",
+        "quote": "This indicates that it had exceptionally strong jaw muscles.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It lived in the Tethys Sea but also ventured further afield.",
+        "quote": "Thus it lived in the Tethys Sea but also ventured further afield.",
+        "source": "wikipedia_simple",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The number of species within Mixosaurus is debated among researchers.",
+        "quote": "The type species is M. cornalianus, and the definitive number of species is debated among researchers.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The identity of species within Mixosaurus is debated among researchers except for M. cornalianus and M. kuhnschnyderi.",
+        "quote": "A 2024 study which described the new species M. luxiensis showed that the identity of species within Mixosaurus is debated among researchers except for M. cornalianus and M. kuhnschnyderi.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "M. xindianensis has been suggested as a species inquirenda and may more likely belong to Phalarodon.",
+        "quote": "M. xindianensis has been suggested as species inquirenda, and it may more likely belong to Phalarodon.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The taxonomy and phylogeny of mixosaurid ichthyosaurs has been a controversial topic in recent years.",
+        "quote": "In recent years the taxonomy and phylogeny of mixosaurid ichthyosaurs has been a controversial topic.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Mixosaurus",
+      "title": "Mixosaurus",
+      "revision": 1314337899,
+      "revision_time": "2025-09-30T22:03:24Z",
+      "fetched_on": "2026-10-06",
+      "chars": 6008,
+      "sha256": "0b0b8fd96fd49468bb6ab94a6aa63312af1abc84a29573c2c000992ba571d338"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Mixosaurus",
+      "title": "Mixosaurus",
+      "revision": 4749402,
+      "revision_time": "2014-03-09T12:28:34Z",
+      "fetched_on": "2026-10-06",
+      "chars": 544,
+      "sha256": "a859493e54eed3184aca4615353b5562ff60f236893dca7d090fa6a096bd8c79"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "group": "swimmer",
+  "must_show": [
+    {
+      "claim": "It had a dorsal fin for stability in the water.",
+      "quote": "It possessed a long tail with a low fin, suggesting it wasn't as fast as Jurassic Ichthyosaurs, but also possessed a dorsal fin for stability in the water.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its limbs were paddle-like and had five toes each.",
+      "quote": "The paddle-like limbs were made up of five toes each, unlike the three toes found in later Ichthyosaurs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a sagittal crest on its skull.",
+      "quote": "M. cornalianus has a sagittal crest associated with the expansion of the upper temporal fenestra.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its jaws were narrow and had several sharp teeth.",
+      "quote": "The jaws were narrow, with several sharp teeth, that would have been ideal for catching fish.",
+      "source": "wikipedia_en"
+    }
+  ]
+}

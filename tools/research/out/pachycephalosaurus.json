@@ -1,0 +1,176 @@
+{
+  "name": "Pachycephalosaurus",
+  "features": [
+    {
+      "claim": "It stood and walked on two legs.",
+      "quote": "Like other pachycephalosaurids, Pachycephalosaurus was a bipedal herbivore, possessing long, strong legs and somewhat small arms with five-fingered hands.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a big bony dome on top of its head.",
+      "quote": "Pachycephalosaurus is famous for having a large, bony dome on top of its skull, up to 25 cm (10 in) thick, which safely cushioned its brain.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "There were bony knobs and short spikes around the back of the dome and on its snout.",
+      "quote": "The dome's rear aspect was edged with bony knobs and short bony spikes projected upwards from the snout.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its skull was short with big round eye sockets facing forward.",
+      "quote": "The skull was short and possessed large, rounded eye sockets that faced forward, suggesting that the animal had binocular vision.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a small muzzle that ended in a pointed beak.",
+      "quote": "Pachycephalosaurus had a small muzzle that ended in a pointed beak.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its teeth were tiny with leaf-shaped crowns.",
+      "quote": "The teeth were tiny, with leaf-shaped crowns.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its neck was carried in an S- or U-shaped curve.",
+      "quote": "The head was supported by an S- or U-shaped neck.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It probably had a short thick neck, short arms, a bulky body, long legs and a heavy tail.",
+      "quote": "Based on other pachycephalosaurids, it probably had a fairly short, thick neck, short arms, a bulky body, long legs, and a heavy tail that was likely held rigid by ossified tendons.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It was about 4.5 metres long and weighed about 370 to 450 kilograms.",
+      "quote": "It has been estimated that Pachycephalosaurus was about 4.5 metres (14.8 ft) long and weighed about 370–450 kilograms (820–990 lb).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a beak for cropping plants and a large bony dome on its head surrounded by spikes and bumps.",
+      "quote": "It stood on two legs, had a beak for cropping plants and had a large bony dome on its head surrounded by spikes and bumps.",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Its front teeth were flat-curved and serrated.",
+      "quote": "Teeth:\nflat-curved and serrated teeth",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Younger ones might have had flatter skulls and bigger horns at the back of the skull.",
+      "quote": "Younger individuals of Pachycephalosaurus might have had flatter skulls and larger horns projecting from the back of the skull.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Old pictures showing Stygimoloch and Dracorex as separate kinds of dinosaurs are out of date.",
+        "quote": "Now, most scientists believe that Stygimoloch and Dracorex were younger forms of Pachycephalosaurus. So those dinosaur names aren't often used.",
+        "source": "nhm_dino_directory",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The idea that it used its dome for head-butting like a ram is disputed.",
+        "quote": "This hypothesis has been disputed in recent years.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The idea that it could not have used its dome for head-butting has been argued.",
+        "quote": "However, there have also been alternative suggestions that the pachycephalosaurs could not have used their domes in this way.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Scientists argue about whether it used its dome for head-butting.",
+        "quote": "Some scientists think that the animal used its hard dome in head-butting contests, similar to the way modern-day rams use their horns.",
+        "source": "nhm_dino_directory",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Other experts think the dome may have been for display.",
+        "quote": "Other experts think that the head dome may have been used for display.",
+        "source": "nhm_dino_directory",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It is not known for sure what it ate.",
+        "quote": "Experts think Pachycephalosaurus was herbivorous, living on a diet of leaves, fruit and seeds. But nobody knows for sure.",
+        "source": "nhm_dino_directory",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Some scientists suggest it might have eaten meat too.",
+        "quote": "Some of the dinosaur's front teeth look a bit like those of carnivorous dinosaurs. This has led some scientists to suggest that Pachycephalosaurus might have eaten meat, too.",
+        "source": "nhm_dino_directory",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Pachycephalosaurus",
+      "title": "Pachycephalosaurus",
+      "revision": 1378367704,
+      "revision_time": "2026-10-04T04:12:13Z",
+      "fetched_on": "2026-10-06",
+      "chars": 21310,
+      "sha256": "cd3e7a46d0b10af72552b4eb29eb0e7e28b39f98aba25591c3cef95f986af292"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Pachycephalosaurus",
+      "title": "Pachycephalosaurus",
+      "revision": 10806633,
+      "revision_time": "2026-04-04T16:56:57Z",
+      "fetched_on": "2026-10-06",
+      "chars": 534,
+      "sha256": "056336e1783db307b8b0a2780848044de10d706eaad6150928b0c662be373c98"
+    },
+    {
+      "id": "nhm_dino_directory",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/pachycephalosaurus.html",
+      "title": "Pachycephalosaurus | Natural History Museum",
+      "revision": null,
+      "revision_time": null,
+      "fetched_on": "2026-10-06",
+      "chars": 3602,
+      "sha256": "d733b9c733998059ecc0c44046deae894962900c6e2379bec8a808f9dafd4192"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "group": "land_grazer",
+  "must_show": [
+    {
+      "claim": "It stood and walked on two legs.",
+      "quote": "Like other pachycephalosaurids, Pachycephalosaurus was a bipedal herbivore, possessing long, strong legs and somewhat small arms with five-fingered hands.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a big bony dome on top of its head.",
+      "quote": "Pachycephalosaurus is famous for having a large, bony dome on top of its skull, up to 25 cm (10 in) thick, which safely cushioned its brain.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "There were bony knobs and short spikes around the back of the dome and on its snout.",
+      "quote": "The dome's rear aspect was edged with bony knobs and short bony spikes projected upwards from the snout.",
+      "source": "wikipedia_en"
+    }
+  ]
+}

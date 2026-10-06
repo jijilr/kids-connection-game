@@ -1,0 +1,174 @@
+{
+  "name": "Tylosaurus",
+  "features": [
+    {
+      "claim": "Tylosaurus had a streamlined body.",
+      "quote": "As such, it had a streamlined body, an elongated tail ending with a downturn supporting a two-lobed fin, and two pairs of flippers.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had an elongated tail that ended in a downturn supporting a two-lobed fin.",
+      "quote": "As such, it had a streamlined body, an elongated tail ending with a downturn supporting a two-lobed fin, and two pairs of flippers.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had two pairs of flippers.",
+      "quote": "As such, it had a streamlined body, an elongated tail ending with a downturn supporting a two-lobed fin, and two pairs of flippers.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its head was strongly conical and its snout was proportionally longer than most mosasaurs.",
+      "quote": "The head was strongly conical and the snout proportionally longer than most mosasaurs, with the exception of Ectenosaurus.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had an elongated toothless rostrum sticking out from its snout.",
+      "quote": "The most recognizable characteristic of Tylosaurus is the elongated edentulous rostrum that protrudes from its snout, for which the genus is named.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its teeth were triangular and curved slightly toward the back of the jaws.",
+      "quote": "Marginal teeth are triangular with a slight recurve towards the back of the jaws so that the lingual (tongue-facing) side forms a U-shaped curve.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its skin had small diamond-shaped scales arranged in oblique rows.",
+      "quote": "These scales were small and diamond-shaped and were arranged in oblique rows, comparable to that found in modern rattlesnakes and other related reptiles.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It may have been dark colored in life, like the leatherback sea turtle.",
+      "quote": "Microscopic analysis of scales in a T. nepaeolicus specimen by Lindgren et al. (2014) detected high traces of the pigment eumelanin indicative of a dark coloration similar to the leatherback sea turtle in life.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It was a large, predatory marine lizard.",
+      "quote": "It was a  large, predatory marine lizard closely related to modern monitor lizards and to snakes.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "The largest well-known specimen has been estimated to measure between 12 and 15.8 meters long.",
+      "quote": "The largest well-known specimen, a skeleton of T. rex from the University of Kansas Natural History Museum nicknamed \"Bunker\" (KUVP 5033), has been previously estimated to measure between 12–15.8 meters (39–52 ft) long.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a tail with a distinct downward curve, suggesting a tail fluke.",
+      "quote": "The tail possesses a distinct downward curve, suggesting the presence of a tail fluke.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "It is wrong to draw it as a giant flippered sea snake.",
+      "quote": "While in the past derived mosasaurs were depicted as akin to giant flippered sea snakes, it is now understood that they were more similar in build to other large marine vertebrates such as ichthyosaurs, marine crocodylomorphs, and archaeocete whales through convergent evolution.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It is wrong to draw it with a long neck.",
+      "quote": "This reconstruction was subsequently adopted in various works published during the late 19th century, although some authors also portrayed the animal with a long neck.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It is wrong to draw it with only front flippers and no back ones.",
+      "quote": "Still according to Cope, the animal would have had only the flippers located at the front of the body, those at the back being absent.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [
+    {
+      "claim": "The distribution of dark and light pigments on its body is unknown.",
+      "quote": "This may have been complemented with countershading, present in many aquatic animals, though the distribution of dark and light pigments in the species remains unknown.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "It used carangiform locomotion, with movement largely concentrated at the tail.",
+        "quote": "However, it is now understood that Tylosaurus actually used carangiform locomotion, meaning that the upper body was less flexible and movement was largely concentrated at the tail like in mackerels.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It is wrong to draw it moving by undulating its whole body like a snake.",
+        "quote": "Scientists previously interpreted Tylosaurus as an anguilliform swimmer that moved by undulating its entire body like a snake due to its close relationship with the animal.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Whether the elongated rostrum was used for ramming or as a sensory tool is debated.",
+        "quote": "An alternate hypothesis holds that the rostrum was used as a sensory tool.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Whether T. kansasensis is the same species as T. nepaeolicus is still debated.",
+        "quote": "The validity of two additional taxa remain unsettled; there is still debate whether T. kansasensis is synonymous with T. nepaeolicus, and T. \"borealis\" has yet to be described in a formal publication.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Whether Hainosaurus should be kept as a separate genus is disputed.",
+        "quote": "Although this new combination has been widely recognized since, some authors nevertheless suggest continuing to maintain the genus Hainosaurus as distinct, justified in particular on the basis of dental traits not detailed in the 2016 revision.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Tylosaurus",
+      "title": "Tylosaurus",
+      "revision": 1378663150,
+      "revision_time": "2026-10-05T15:01:17Z",
+      "fetched_on": "2026-10-06",
+      "chars": 73101,
+      "sha256": "e20bf0031a08780f0c896365e22ab000e3405bbdd48c208046f78172c1e77e9a"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Tylosaurus",
+      "title": "Tylosaurus",
+      "revision": 6734810,
+      "revision_time": "2019-11-30T10:38:45Z",
+      "fetched_on": "2026-10-06",
+      "chars": 680,
+      "sha256": "fee62b5d06139bf67c512c5284b99848c669b7788b8f65426036243b32d07087"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "group": "swimmer",
+  "must_show": [
+    {
+      "claim": "It had an elongated tail that ended in a downturn supporting a two-lobed fin.",
+      "quote": "As such, it had a streamlined body, an elongated tail ending with a downturn supporting a two-lobed fin, and two pairs of flippers.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had an elongated toothless rostrum sticking out from its snout.",
+      "quote": "The most recognizable characteristic of Tylosaurus is the elongated edentulous rostrum that protrudes from its snout, for which the genus is named.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its teeth were triangular and curved slightly toward the back of the jaws.",
+      "quote": "Marginal teeth are triangular with a slight recurve towards the back of the jaws so that the lingual (tongue-facing) side forms a U-shaped curve.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its skin had small diamond-shaped scales arranged in oblique rows.",
+      "quote": "These scales were small and diamond-shaped and were arranged in oblique rows, comparable to that found in modern rattlesnakes and other related reptiles.",
+      "source": "wikipedia_en"
+    }
+  ]
+}

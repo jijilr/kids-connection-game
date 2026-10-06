@@ -1,0 +1,175 @@
+{
+  "name": "Triceratops",
+  "features": [
+    {
+      "claim": "Triceratops had three horns on its head.",
+      "quote": "Its name means three horned face which it gets from having three horns on its head.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Triceratops had a large bony frill.",
+      "quote": "Bearing a large bony frill, three horns on the skull, and a large, four-legged body, exhibiting convergent evolution with rhinoceroses, Triceratops is one of the most recognizable of all dinosaurs and the best-known ceratopsian.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Triceratops had a beak at the front of its jaws.",
+      "quote": "Triceratops was a low browser with a bony beak in front of its jaws.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Triceratops had close-set grinding teeth.",
+      "quote": "The jaws had close-set grinding teeth.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Triceratops walked on four legs.",
+      "quote": "How it moved: on 4 legs",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Triceratops had strong limbs and short hands with three hooves and short feet with four hooves.",
+      "quote": "Both Triceratops species possessed a very sturdy build, with strong limbs, short hands with three hooves each, and short feet with four hooves each.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Triceratops had large, pebbled scales on its skin.",
+      "quote": "Skin impressions have been found for Triceratops, showing that it had large, pebbled scales.",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Triceratops had a single horn on its snout above the nostrils.",
+      "quote": "It bore a single horn on the snout, above the nostrils, and a pair of horns approximately 1 m (3 ft) long, with one above each eye.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Triceratops had a pair of horns about one meter long above its eyes.",
+      "quote": "The skull also featured a pair of supraorbital \"brow\" horns approximately 1 meter (3.3 ft) long, with one above each eye.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Triceratops had a large skull relative to its body size.",
+      "quote": "Like all chasmosaurines, Triceratops had a large skull relative to its body size, among the largest of all land animals.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Triceratops was a very large animal, measuring around 8–9 m in length and weighing up to 6–10 metric tons.",
+      "quote": "Triceratops was a very large animal, measuring around 8–9 m (26–30 ft) in length and weighing up to 6–10 metric tons (6.6–11.0 short tons).",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "Triceratops did not have large holes in its frill like most other ceratopsids.",
+      "quote": "Most other ceratopsids had large holes (fenestrae) in their frills, while those of Triceratops were noticeably solid.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Triceratops did not walk with its front legs sprawling at angles from the thorax.",
+      "quote": "Originally, it was believed that the front legs of the animal had to be sprawling at angles from the thorax, in order to better bear the weight of the head.",
+      "source": "wikipedia_simple"
+    }
+  ],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Triceratops had a vertebral column of ten neck, twelve back, ten sacral, and about forty-five tail vertebrae.",
+        "quote": "The vertebral column consisted of ten neck, twelve back, ten sacral, and about forty-five tail vertebrae.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Triceratops was not related to rhinoceroses.",
+        "quote": "Triceratops wasn’t related to rhinoceroses at all.",
+        "source": "nhm_dino_directory",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Whether Triceratops lived in herds is uncertain.",
+        "quote": "Although Triceratops is commonly portrayed as a herding animal, there is currently little evidence to suggest that they lived in herds.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Whether Triceratops used its horns in combat with each other is disagreed upon.",
+        "quote": "While studies show that such activity would be feasible, if unlike that of present-day horned animals, there is disagreement about whether they did so.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Whether Torosaurus represents mature Triceratops individuals is disputed.",
+        "quote": "This view has been highly disputed, with some morphometric research and the apparent existence of authentic Torosaurus subadults favoring the distinctness of the two genera, according to newer studies.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Whether the differing Triceratops skulls represent individual variation within one or two species is uncertain.",
+        "quote": "With time, the idea that the differing skulls might be representative of individual variation within one (or two) species gained popularity.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Triceratops",
+      "title": "Triceratops",
+      "revision": 1376767985,
+      "revision_time": "2026-09-26T03:14:47Z",
+      "fetched_on": "2026-10-06",
+      "chars": 45570,
+      "sha256": "1e0b963fb9b19a1301afe53ad86672067c5bf992e765d14a16aa695c29b53f12"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Triceratops",
+      "title": "Triceratops",
+      "revision": 10938962,
+      "revision_time": "2026-07-26T15:00:42Z",
+      "fetched_on": "2026-10-06",
+      "chars": 7979,
+      "sha256": "fa35f07b6ab51522ff3c935196bba48d418e0751cd4fdcae943360fe712167d2"
+    },
+    {
+      "id": "nhm_dino_directory",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/triceratops.html",
+      "title": "Triceratops | Natural History Museum",
+      "revision": null,
+      "revision_time": null,
+      "fetched_on": "2026-10-06",
+      "chars": 5680,
+      "sha256": "62810abf10093c2014e12be4f01f8f1adddee8c1607fa8ae814b9ceb6d001588"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "group": "land_grazer",
+  "must_show": [
+    {
+      "claim": "Triceratops had three horns on its head.",
+      "quote": "Its name means three horned face which it gets from having three horns on its head.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Triceratops had a large bony frill.",
+      "quote": "Bearing a large bony frill, three horns on the skull, and a large, four-legged body, exhibiting convergent evolution with rhinoceroses, Triceratops is one of the most recognizable of all dinosaurs and the best-known ceratopsian.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Triceratops had a beak at the front of its jaws.",
+      "quote": "Triceratops was a low browser with a bony beak in front of its jaws.",
+      "source": "wikipedia_simple"
+    }
+  ]
+}

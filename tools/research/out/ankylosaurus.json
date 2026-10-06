@@ -1,0 +1,172 @@
+{
+  "name": "Ankylosaurus",
+  "features": [
+    {
+      "claim": "It had a broad, robust body.",
+      "quote": "It was quadrupedal, with a broad, robust body.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It walked on four legs.",
+      "quote": "How it moved: on 4 legs",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Its hind limbs were longer than its forelimbs.",
+      "quote": "It was quadrupedal, and its hind limbs were longer than its forelimbs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a wide, low skull.",
+      "quote": "It had a wide, low skull, with two horns pointing backward from the back of the head, and two horns below these that pointed backward and down.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a beak at the front of its jaws.",
+      "quote": "The front part of the jaws was covered in a beak, with rows of small, leaf-shaped teeth farther behind it.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its body was covered in armor plates.",
+      "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a large club on the end of its tail.",
+      "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had bony half-rings covering its neck.",
+      "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "Old pictures show it squatting and dragging its tail club on the ground, but modern reconstructions show it standing more upright with its tail held off the ground.",
+      "quote": "Many traditional popular depictions show Ankylosaurus in a squatting posture and with a huge tail club being dragged over the ground. Modern reconstructions show the animal with a more upright limb posture and with the tail held off the ground.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Old pictures show large spines sticking out sideways from its body, but these are not known from Ankylosaurus itself.",
+      "quote": "Likewise, large spines projecting sideways from the body (similar to those of nodosaurid ankylosaurs) are present in many traditional depictions, but are not known from Ankylosaurus itself.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "In the Jurassic Park films it is shown attacking with its tail and running, which paleontologists have criticized as unlikely.",
+      "quote": "Ankylosaurus has been featured in the Jurassic Park franchise, where they are depicted as attacking with their tails and running, abilities that have been criticized as unlikely by paleontologists.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [
+    {
+      "claim": "Nobody knows exactly how its back armor was arranged.",
+      "quote": "Even today, nobody knows exactly how Ankylosaurus' back armour should be arranged.",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "The exact placement of the armor plates on the body is unknown.",
+      "quote": "These have not been found in articulation, so their exact placement on the body is unknown, though inferences can be made based on related animals, and various configurations have been proposed.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The exact arrangement of the neck half-rings is uncertain.",
+      "quote": "Like other ankylosaurids, Ankylosaurus had cervical half-rings (armor plates on the neck), but these are known only from fragments, making their exact arrangement uncertain.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [
+      {
+        "claim": "It was about 8 meters long.",
+        "quote": "Length: 8.0m",
+        "source": "nhm_dino_directory",
+        "kind": "features"
+      },
+      {
+        "claim": "It weighed about 8000 kilograms.",
+        "quote": "Weight: 8000kg",
+        "source": "nhm_dino_directory",
+        "kind": "features"
+      },
+      {
+        "claim": "It ate plants.",
+        "quote": "Diet: herbivorous",
+        "source": "nhm_dino_directory",
+        "kind": "features"
+      }
+    ],
+    "second_reading": [
+      {
+        "claim": "It probably ate ferns, shrubs and fruit.",
+        "quote": "Food: plant material, including ferns, shrubs and fruit",
+        "source": "nhm_dino_directory",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The structure of much of its skeleton, including most of the pelvis, tail, and feet, is still unknown.",
+        "quote": "The structure of much of the skeleton of Ankylosaurus, including most of the pelvis, tail, and feet, is still unknown.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Ankylosaurus",
+      "title": "Ankylosaurus",
+      "revision": 1369993132,
+      "revision_time": "2026-08-18T13:23:52Z",
+      "fetched_on": "2026-10-06",
+      "chars": 38811,
+      "sha256": "1902bfd19797b2d9b90c4f1614fc5e034918718cd1c5a0d0cb4feaa5b875a9d3"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Ankylosaurus",
+      "title": "Ankylosaurus",
+      "revision": 10501541,
+      "revision_time": "2025-09-07T18:56:35Z",
+      "fetched_on": "2026-10-06",
+      "chars": 1944,
+      "sha256": "e0722eea182743f59b2e929fc9f9b42f55de5e7bab66c7973d92f8160ff619fe"
+    },
+    {
+      "id": "nhm_dino_directory",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/ankylosaurus.html",
+      "title": "Ankylosaurus | Natural History Museum",
+      "revision": null,
+      "revision_time": null,
+      "fetched_on": "2026-10-06",
+      "chars": 4252,
+      "sha256": "cd8d7659ff0a23327fb931022f1000a1312f5b08ea77c5f41d4a0cface8029a0"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "group": "land_grazer",
+  "must_show": [
+    {
+      "claim": "Its body was covered in armor plates.",
+      "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a large club on the end of its tail.",
+      "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had bony half-rings covering its neck.",
+      "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
+      "source": "wikipedia_en"
+    }
+  ]
+}

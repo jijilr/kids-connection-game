@@ -1,0 +1,158 @@
+{
+  "name": "Kronosaurus",
+  "features": [
+    {
+      "claim": "It had four flippers instead of legs.",
+      "quote": "Like all plesiosaurs, Kronosaurus has four paddle-like limbs, a short tail and, like most pliosaurids, a long head and a short neck.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its head was long and its neck was short.",
+      "quote": "Like all plesiosaurs, Kronosaurus has four paddle-like limbs, a short tail and, like most pliosaurids, a long head and a short neck.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its tail was short.",
+      "quote": "Like all plesiosaurs, Kronosaurus has four paddle-like limbs, a short tail and, like most pliosaurids, a long head and a short neck.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The front of its skull stretched out into a snout.",
+      "quote": "The front of the skull is elongated into a rostrum (snout).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its teeth were big and cone-shaped.",
+      "quote": "The large cone-shaped teeth of Kronosaurus would have been used for a diet consisting of large prey.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The teeth at the front of its mouth were bigger than the teeth at the back.",
+      "quote": "The front teeth are larger than the back teeth.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its back flippers were bigger than its front flippers.",
+      "quote": "The limbs of Kronosaurus were modified into flippers, with the back pair larger than the front.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its flippers could spread wider than five metres across.",
+      "quote": "The flippers would have given a wingspan of more than 5 m (16 ft) for the largest representatives.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its lower jaws joined together in a long, spoon-shaped front part.",
+      "quote": "The mandibular symphysis of Kronosaurus is elongated and spatulate (spoon-shaped), and like its close relatives Brachauchenius and Megacephalosaurus, it contains up to six pairs of teeth.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a big trunk.",
+      "quote": "Like all plesiosaurs, it had a short tail, a massive trunk and two pairs of large flippers.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It was probably about nine to eleven metres long.",
+      "quote": "Its true length was probably only 9–10.9 meters (30–36 feet).",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Its hind limbs were longer than its forelimbs.",
+      "quote": "The hindlimbs of Kronosaurus are longer than its forelimbs, with the femur being longer and more robust than the humerus.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "Old pictures made it much longer than it really was.",
+      "quote": "The Harvard reconstruction may have included too many vertebrae, exaggerating its length.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "The old Harvard skeleton was rebuilt with too many back bones.",
+      "quote": "According to Australian paleontologist Colin McHenry, the specimen has eight extra vertebrae added to the spine and the skull is not supposed to have a bulbous shaped sagittal crest on top.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The old skeleton was put together with the wrong proportions.",
+      "quote": "In addition, it seems that the skeleton was reconstructed with the wrong proportions.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [
+    {
+      "claim": "Scientists are not sure how big it really was.",
+      "quote": "Kronosaurus is one of the largest pliosaurs identified to date, but several estimates as to its exact size have been proposed during research.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The shape of the top of its skull is uncertain because that part was rebuilt in plaster.",
+      "quote": "However, as White indicates in his description of the specimen in 1935, much of the skull roof is not preserved and is mostly restored in plaster, the real proportions being therefore uncertain.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The real fossil bones are hard to see because so much plaster was added.",
+      "quote": "However, as the latter was massively restored in plaster, it is currently difficult to discern the real fossil material.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The tail is not known from complete fossil skeletons.",
+      "quote": "Although the tail of Kronosaurus is unknown from articulated specimens, the end of the caudal vertebrae would have supported a small caudal fin like in other plesiosaurs.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": []
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Kronosaurus",
+      "title": "Kronosaurus",
+      "revision": 1371114296,
+      "revision_time": "2026-08-24T17:38:36Z",
+      "fetched_on": "2026-10-06",
+      "chars": 41879,
+      "sha256": "ee669c6213b11fdacd2faecf73e556c299f6493b14b515e80cd49c7c55a7a1ed"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Kronosaurus",
+      "title": "Kronosaurus",
+      "revision": 10703352,
+      "revision_time": "2026-01-06T19:03:28Z",
+      "fetched_on": "2026-10-06",
+      "chars": 515,
+      "sha256": "43fc4d11d1d8254371089b60fde8cf3948d69f438a33db3a461d0bc96846ec2d"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "group": "swimmer",
+  "must_show": [
+    {
+      "claim": "Its back flippers were bigger than its front flippers.",
+      "quote": "The limbs of Kronosaurus were modified into flippers, with the back pair larger than the front.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its lower jaws joined together in a long, spoon-shaped front part.",
+      "quote": "The mandibular symphysis of Kronosaurus is elongated and spatulate (spoon-shaped), and like its close relatives Brachauchenius and Megacephalosaurus, it contains up to six pairs of teeth.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its hind limbs were longer than its forelimbs.",
+      "quote": "The hindlimbs of Kronosaurus are longer than its forelimbs, with the femur being longer and more robust than the humerus.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its teeth were big and cone-shaped.",
+      "quote": "The large cone-shaped teeth of Kronosaurus would have been used for a diet consisting of large prey.",
+      "source": "wikipedia_en"
+    }
+  ]
+}

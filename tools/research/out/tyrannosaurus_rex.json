@@ -1,0 +1,175 @@
+{
+  "name": "Tyrannosaurus rex",
+  "features": [
+    {
+      "claim": "It walked on two legs and ate other animals.",
+      "quote": "Like other tyrannosaurids, Tyrannosaurus was a bipedal carnivore with a massive skull balanced by a long, heavy tail.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a very big head and a long, heavy tail.",
+      "quote": "Tyrannosaurus was a bipedal carnivore with a massive skull balanced by a long, heavy tail.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Its arms were short but strong, with two fingers that had claws.",
+      "quote": "Relative to its large and powerful hind limbs, the forelimbs of Tyrannosaurus were short but unusually powerful for their size, and they had two clawed digits.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its back legs were long and strong.",
+      "quote": "In contrast to the arms, the hindlimbs were among the longest in proportion to body size of any theropod.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its neck was short, deep and strong to hold up its huge head.",
+      "quote": "Compared to these, it was exceptionally short, deep and muscular to support the massive head.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its head was wide at the back but had a narrow snout, so it could see well with both eyes.",
+      "quote": "It was extremely wide at the rear but had a narrow snout, allowing unusually good binocular vision.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The front of its upper jaw was shaped like a U.",
+      "quote": "The tip of the upper jaw was U-shaped (most non-tyrannosauroid carnivores had V-shaped upper jaws), which increased the amount of tissue and bone a tyrannosaur could rip out with one bite, although it also increased the stresses on the front teeth.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its teeth were strong and thick, not thin like daggers.",
+      "quote": "The remaining teeth were robust, like \"lethal bananas\" rather than daggers, more widely spaced and also had reinforcing ridges.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had sixty pointed teeth with saw edges for crushing bone.",
+      "quote": "Teeth: 60 saw-edged, bone-crushing, pointed teeth",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Its skin had scales.",
+      "quote": "Preserved skin from Tyrannosaurus and its close relatives shows that these dinosaurs had scales.",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "It held its body about level with the ground and its tail stretched out behind to balance its head.",
+      "quote": "Modern representations in museums, art, and film show T. rex with its body approximately parallel to the ground with the tail extended behind the body to balance the head.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It was about twelve metres long and weighed about seven thousand kilogrammes.",
+      "quote": "Length: 12.0m Weight: 7000kg",
+      "source": "nhm_dino_directory"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "Old pictures showed it standing upright like a tripod with its tail dragging, but that pose was wrong.",
+      "quote": "By 1970, scientists realized this pose was incorrect and could not have been maintained by a living animal, as it would have resulted in the dislocation or weakening of several joints, including the hips and the articulation between the head and the spinal column.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Old pictures gave it long three-fingered arms like Allosaurus, but that was wrong.",
+      "quote": "For the initial mounted skeleton as seen by the public in 1915, Osborn substituted longer, three-fingered forelimbs like those of Allosaurus.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [
+    {
+      "claim": "Scientists are not sure whether it had feathers.",
+      "quote": "However, there's currently no direct evidence that supports the idea of T. rex feathers.",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "Scientists are not sure whether it had lips covering its teeth.",
+      "quote": "A conference abstract published in 2016 posited that theropods such as Tyrannosaurus had their upper teeth covered in lips, instead of bare teeth as seen in crocodilians.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "The idea that it was mainly a scavenger is no longer accepted.",
+        "quote": "Most paleontologists today accept that Tyrannosaurus was a predator, and the idea of Tyrannosaurus being primarily a scavenger has been discredited.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "the sentence does not support it"
+      },
+      {
+        "claim": "Scientists do not agree on what its little arms were used for.",
+        "quote": "Compared to its overall body size, T. rex had surprisingly small arms. How it used them is a matter of debate.",
+        "source": "nhm_dino_directory",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Scientists do not agree on how many species of Tyrannosaurus there were.",
+        "quote": "In a 2022 study, Gregory S. Paul and colleagues argued that Tyrannosaurus rex, as traditionally understood, actually represents three species: the type species Tyrannosaurus rex, and two previously unrecognized species: T. imperator (meaning \"tyrant lizard emperor\") and T. regina (meaning \"tyrant lizard queen\").",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "the sentence does not support it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Tyrannosaurus",
+      "title": "Tyrannosaurus",
+      "revision": 1377765064,
+      "revision_time": "2026-10-01T01:20:01Z",
+      "fetched_on": "2026-10-06",
+      "chars": 98920,
+      "sha256": "7bb3e96b99092c2b2deb18bf9a50dc27dbc5aa030a8a25c60a1a07690777f825"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Tyrannosaurus",
+      "title": "Tyrannosaurus",
+      "revision": 11020814,
+      "revision_time": "2026-10-05T22:31:34Z",
+      "fetched_on": "2026-10-06",
+      "chars": 7872,
+      "sha256": "f8b3d14c67ff12feca793238636ae3bf6158dbdd7dace99263dc97ee3cad603c"
+    },
+    {
+      "id": "nhm_dino_directory",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/tyrannosaurus.html",
+      "title": "Tyrannosaurus | Natural History Museum",
+      "revision": null,
+      "revision_time": null,
+      "fetched_on": "2026-10-06",
+      "chars": 6477,
+      "sha256": "b91950d0436239802e2cb87dfad84253393c8aa5df71d865366814d810570df9"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "group": "land_hunter",
+  "must_show": [
+    {
+      "claim": "It had a very big head and a long, heavy tail.",
+      "quote": "Tyrannosaurus was a bipedal carnivore with a massive skull balanced by a long, heavy tail.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Its arms were short but strong, with two fingers that had claws.",
+      "quote": "Relative to its large and powerful hind limbs, the forelimbs of Tyrannosaurus were short but unusually powerful for their size, and they had two clawed digits.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its head was wide at the back but had a narrow snout, so it could see well with both eyes.",
+      "quote": "It was extremely wide at the rear but had a narrow snout, allowing unusually good binocular vision.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It held its body about level with the ground and its tail stretched out behind to balance its head.",
+      "quote": "Modern representations in museums, art, and film show T. rex with its body approximately parallel to the ground with the tail extended behind the body to balance the head.",
+      "source": "wikipedia_en"
+    }
+  ]
+}
