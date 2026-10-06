@@ -1,0 +1,55 @@
+{
+  "name": "Vulture",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "A vulture is a bird of prey that scavenges on carrion.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "A vulture is a bird of prey that scavenges on carrion.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "There are 23 extant species of vulture (including condors).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild_of_bird": {
+      "value": "wild_land",
+      "quote": "Vultures are large birds of prey that usually feed on the carrion (dead or dying animals).",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Vulture",
+      "title": "Vulture",
+      "asked_for": "Vulture",
+      "revision": 1375285442,
+      "fetched_on": "2026-10-07",
+      "sha256": "fa05f8d00d45be31367a7148c82d9ea0abc833a2373167b7bd81dba7142ec499"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Vulture",
+      "title": "Vulture",
+      "asked_for": "Vulture",
+      "revision": 10266562,
+      "fetched_on": "2026-10-07",
+      "sha256": "89af77042d7a0b51027ccbc9ed119fece82cba33fc2da923275f4bf59e92baf9"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

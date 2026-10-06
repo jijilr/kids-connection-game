@@ -1558,6 +1558,54 @@
       },
       "cost_usd": 0.0537,
       "vision_check_cost_usd": 0.00012
+    },
+    "job_2026_10_07_05_1_01": {
+      "plan_key": "job_2026_10_07_05_1",
+      "purpose": "drawn by the job, run 2026-10-07-05",
+      "file": "tools/pictures/sheets/job_2026_10_07_05_1_01.png",
+      "grid": 1,
+      "size": "1024x1024",
+      "cells": [
+        "turkey"
+      ],
+      "names": {
+        "turkey": "Turkey"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image showing exactly one subject, whole and centred, with a wide plain white margin on every side:\n\n1. Turkey: A whole farm turkey standing on plain ground, plump body with brown and black feathers, bare red head and neck, red wattle, fan tail, two legs, no background.\n\nFor this sheet: Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-07",
+      "tokens": {
+        "image_output_tokens": 1756,
+        "text_input_tokens": 226
+      },
+      "cost_usd": 0.0538,
+      "vision_check_cost_usd": 5e-05
+    },
+    "job_2026_10_07_05_2_01": {
+      "plan_key": "job_2026_10_07_05_2",
+      "purpose": "drawn by the job, run 2026-10-07-05, second tries",
+      "file": "tools/pictures/sheets/job_2026_10_07_05_2_01.png",
+      "grid": 1,
+      "size": "1024x1024",
+      "cells": [
+        "ground"
+      ],
+      "names": {
+        "ground": "Ground"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image showing exactly one subject, whole and centred, with a wide plain white margin on every side:\n\n1. Ground: A flat patch of brown dirt and small grey rocks, the dry ground a child walks on, plain and level, with nothing else around it.\n\nFor this sheet: No people, no animals and no buildings.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-07",
+      "tokens": {
+        "image_output_tokens": 1756,
+        "text_input_tokens": 193
+      },
+      "cost_usd": 0.0536,
+      "vision_check_cost_usd": 4e-05
     }
   },
   "tiles": {
@@ -18416,6 +18464,104 @@
       "review_note": "",
       "history": [],
       "reviewed_on": "2026-10-07"
+    },
+    "job_2026_10_07_05_1_01_c1": {
+      "thing_id": "turkey",
+      "expected_thing": "turkey",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_05_1_01_c1.png",
+      "master_size": [
+        944,
+        944
+      ],
+      "master_sha256": "42070d7b22860a3d8b6c8e6c8ea524f0aa8dcde990fcb6582e70e5d1e5f22beb",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_05_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_05_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Turkey: A whole farm turkey standing on plain ground, plump body with brown and black feathers, bare red head and neck, red wattle, fan tail, two legs, no background",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0538,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          97,
+          122,
+          866,
+          936
+        ],
+        "picture_shape": 0.94,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Turkey",
+        "shows": "turkey",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/turkey.webp"
+    },
+    "job_2026_10_07_05_2_01_c1": {
+      "thing_id": "ground",
+      "expected_thing": "ground",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_07_05_2_01_c1.png",
+      "master_size": [
+        1029,
+        1029
+      ],
+      "master_sha256": "d9779f652a377b4aa9127653b25e5fcad030818521187ebb4ec3ebb3ad403436",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_07_05_2_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_07_05_2_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Ground: A flat patch of brown dirt and small grey rocks, the dry ground a child walks on, plain and level, with nothing else around it",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-07",
+      "cost_usd": 0.0536,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          65,
+          161,
+          952,
+          907
+        ],
+        "picture_shape": 1.19,
+        "ok": true,
+        "on": "2026-10-07"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-07",
+        "says": "Ground",
+        "shows": "ground",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-07",
+      "published_file": "Assets/pictures/ground.webp"
     }
   }
 }

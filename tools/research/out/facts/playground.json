@@ -1,0 +1,42 @@
+{
+  "name": "Playground",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A playground, playpark, or play area is a place designed to provide an environment for children that facilitates play, typically outdoors.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "uncertain: two judgements disagree: 'Toys' and 'Buildings'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Playground",
+      "title": "Playground",
+      "asked_for": "Playground",
+      "revision": 1361981016,
+      "fetched_on": "2026-10-07",
+      "sha256": "079a51a61a2c448e3f0a03318814394d6680c501ba962bacc6213967f54c5bcd"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Playground",
+      "title": "Playground",
+      "asked_for": "Playground",
+      "revision": 10926485,
+      "fetched_on": "2026-10-07",
+      "sha256": "809bef2fabf52195877511fcf24158ecf343e88c007fa649d9b4d820a3e022fe"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

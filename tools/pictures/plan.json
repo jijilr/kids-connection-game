@@ -2918,6 +2918,32 @@
           "draw": "A wide, flat green grassy plain with no hills or mountains, stretching to the horizon, with a few small trees and a river, in natural green and brown colors, as seen in India"
         }
       ]
+    },
+    "job_2026_10_07_05_1": {
+      "purpose": "drawn by the job, run 2026-10-07-05",
+      "grid": 1,
+      "size": 1024,
+      "only_for_this_sheet": "Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.",
+      "cells": [
+        {
+          "thing": "turkey",
+          "name": "Turkey",
+          "draw": "A whole farm turkey standing on plain ground, plump body with brown and black feathers, bare red head and neck, red wattle, fan tail, two legs, no background"
+        }
+      ]
+    },
+    "job_2026_10_07_05_2": {
+      "purpose": "drawn by the job, run 2026-10-07-05, second tries",
+      "grid": 1,
+      "size": 1024,
+      "only_for_this_sheet": "No people, no animals and no buildings.",
+      "cells": [
+        {
+          "thing": "ground",
+          "name": "Ground",
+          "draw": "A flat patch of brown dirt and small grey rocks, the dry ground a child walks on, plain and level, with nothing else around it"
+        }
+      ]
     }
   }
 }

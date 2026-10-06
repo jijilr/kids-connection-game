@@ -21,9 +21,8 @@
     },
     "pet_farm_or_wild_of_bird": {
       "value": "wild_land",
-      "quote": "The ostrich (Struthio camelus) is a large flightless bird that lives in Africa.",
-      "source": "wikipedia_simple",
-      "basis": "sourced"
+      "basis": "judged, not sourced",
+      "why": "Ostriches are wild birds that live in Africa, though they are also farmed."
     }
   },
   "weak_spots": [],

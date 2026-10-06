@@ -1,30 +1,50 @@
 {
   "name": "Turkey",
-  "fields": {},
-  "weak_spots": [
-    {
-      "field": "kind_of_thing",
-      "why": "uncertain: two judgements disagree: 'Things people make' and 'Animals'"
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The turkey is a large bird in the genus Meleagris, native to North America.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "The turkey is a large bird in the genus Meleagris, native to North America.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "There are two extant turkey species: the wild turkey (Meleagris gallopavo) of Southern, Central and Eastern North America, and the ocellated turkey (Meleagris ocellata) of the Yucatán Peninsula in Mexico.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild_of_bird": {
+      "value": "wild_land",
+      "quote": "There are two extant turkey species: the wild turkey (Meleagris gallopavo) of Southern, Central and Eastern North America, and the ocellated turkey (Meleagris ocellata) of the Yucatán Peninsula in Mexico.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
     }
-  ],
+  },
+  "weak_spots": [],
   "pages": [
     {
       "id": "wikipedia_en",
-      "url": "https://en.wikipedia.org/wiki/Turkey",
-      "title": "Turkey",
-      "asked_for": "Turkey",
-      "revision": 1378792754,
+      "url": "https://en.wikipedia.org/wiki/Turkey_(bird)",
+      "title": "Turkey (bird)",
+      "asked_for": "Turkey (bird)",
+      "revision": 1378884286,
       "fetched_on": "2026-10-07",
-      "sha256": "b9dbdd003d4df713f41361465a1af4aec6e68ba9e92fbff969bc8ca3dd609564"
+      "sha256": "edb56e1e384640081b095df930bfb966dc782a6db28dfdb75205d4b9646aedb8"
     },
     {
       "id": "wikipedia_simple",
-      "url": "https://simple.wikipedia.org/wiki/Turkey",
-      "title": "Turkey",
-      "asked_for": "Turkey",
-      "revision": 11019188,
+      "url": "https://simple.wikipedia.org/wiki/Turkey_(bird)",
+      "title": "Turkey (bird)",
+      "asked_for": "Turkey (bird)",
+      "revision": 10314086,
       "fetched_on": "2026-10-07",
-      "sha256": "c07979309ea53a81a424e3d0201cbf10bacdc380c23367a9f6d3116ca1a3fb37"
+      "sha256": "43888b9850463eefa05eae5612a0e9a7045613e2052b6cc205730c0a66b714ad"
     }
   ],
   "read_by": {

@@ -1,0 +1,48 @@
+{
+  "name": "Ground",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "Land, also known as dry land, ground, or earth, is the solid terrestrial surface of Earth not submerged by the ocean or another body of water.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "quote": "Land, also known as dry land, ground, or earth, is the solid terrestrial surface of Earth not submerged by the ocean or another body of water.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "shape_of_the_land": {
+      "value": "flat",
+      "basis": "judged, not sourced",
+      "why": "Ground is described as the solid surface we walk on, which is commonly flat land."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Land",
+      "title": "Land",
+      "asked_for": "Land",
+      "revision": 1378874665,
+      "fetched_on": "2026-10-07",
+      "sha256": "8df9070450f9e152426fb41bb5c5a963387c39788951a3471c4b9a5184ef5e36"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Ground",
+      "title": "Ground",
+      "asked_for": "Ground",
+      "revision": 9603188,
+      "fetched_on": "2026-10-07",
+      "sha256": "ca8a063b6578e00bf7882a2e9f6d9daef49d2d3f862311c8a4fdb6da102d4b93"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

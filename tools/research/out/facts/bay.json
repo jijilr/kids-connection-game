@@ -1,0 +1,43 @@
+{
+  "name": "Bay",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A bay is a recessed, coastal body of water that directly connects to a larger main body of water, such as an ocean, a lake, or another bay.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "water",
+      "quote": "A bay is a large body of water in the land next to a sea or lake between two headlands.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Bay",
+      "title": "Bay",
+      "asked_for": "Bay",
+      "revision": 1376168031,
+      "fetched_on": "2026-10-07",
+      "sha256": "ff2cc3e41f5e530e581104be64d8e2b001943a926da0c6daf591374b5b761a03"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Bay",
+      "title": "Bay",
+      "asked_for": "Bay",
+      "revision": 10044636,
+      "fetched_on": "2026-10-07",
+      "sha256": "76d43e08c7b0ef44cf79ea12b569d70b2d576757aee29c435f6f59e538fc9ed6"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

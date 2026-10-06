@@ -1,0 +1,55 @@
+{
+  "name": "Myna",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The mynas (; also spelled mynah) are a group of birds in the starling family (Sturnidae).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "The mynas (; also spelled mynah) are a group of birds in the starling family (Sturnidae).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "They are passerine birds native to large parts of Central Asia and South Asia, especially Iran, Afghanistan, India, Pakistan, Bangladesh, Nepal and Sri Lanka.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild_of_bird": {
+      "value": "wild_land",
+      "quote": "They are passerine birds native to large parts of Central Asia and South Asia, especially Iran, Afghanistan, India, Pakistan, Bangladesh, Nepal and Sri Lanka.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Myna",
+      "title": "Myna",
+      "asked_for": "Myna",
+      "revision": 1354933978,
+      "fetched_on": "2026-10-07",
+      "sha256": "ed7e4a8f6e88df9def627b8e5ffa47c9c3e15e3c212b3d96c9fd286e083c8040"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Starling",
+      "title": "Starling",
+      "asked_for": "Myna",
+      "revision": 10516229,
+      "fetched_on": "2026-10-07",
+      "sha256": "36befaa7a1679315ae8c29cfe0888e7eb95053b178226b86d25732be7d71cea7"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

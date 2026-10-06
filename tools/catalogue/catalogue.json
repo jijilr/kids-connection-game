@@ -3912,7 +3912,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/wild_land"
         ],
         "boards": [
           {
@@ -3925,6 +3926,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
+            "open_now": true
+          },
+          {
+            "circle": "animal/bird",
+            "sorted_by": "pet_farm_or_wild_of_bird",
+            "group": "wild_land",
             "open_now": true
           }
         ]
@@ -4108,7 +4115,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/pet"
         ],
         "boards": [
           {
@@ -4121,6 +4129,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
+            "open_now": true
+          },
+          {
+            "circle": "animal/bird",
+            "sorted_by": "pet_farm_or_wild_of_bird",
+            "group": "pet",
             "open_now": true
           }
         ]
@@ -4193,7 +4207,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/farm"
         ],
         "boards": [
           {
@@ -4206,6 +4221,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
+            "open_now": true
+          },
+          {
+            "circle": "animal/bird",
+            "sorted_by": "pet_farm_or_wild_of_bird",
+            "group": "farm",
             "open_now": true
           }
         ]
@@ -4287,7 +4308,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/farm"
         ],
         "boards": [
           {
@@ -4300,6 +4322,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
+            "open_now": true
+          },
+          {
+            "circle": "animal/bird",
+            "sorted_by": "pet_farm_or_wild_of_bird",
+            "group": "farm",
             "open_now": true
           }
         ]
@@ -4381,7 +4409,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/farm"
         ],
         "boards": [
           {
@@ -4394,6 +4423,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
+            "open_now": true
+          },
+          {
+            "circle": "animal/bird",
+            "sorted_by": "pet_farm_or_wild_of_bird",
+            "group": "farm",
             "open_now": true
           }
         ]
@@ -4466,7 +4501,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/wild_land"
         ],
         "boards": [
           {
@@ -4479,6 +4515,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
+            "open_now": true
+          },
+          {
+            "circle": "animal/bird",
+            "sorted_by": "pet_farm_or_wild_of_bird",
+            "group": "wild_land",
             "open_now": true
           }
         ]
@@ -4562,7 +4604,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/wild_land"
         ],
         "boards": [
           {
@@ -4575,6 +4618,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
+            "open_now": true
+          },
+          {
+            "circle": "animal/bird",
+            "sorted_by": "pet_farm_or_wild_of_bird",
+            "group": "wild_land",
             "open_now": true
           }
         ]
@@ -4656,7 +4705,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/wild_land"
         ],
         "boards": [
           {
@@ -4669,6 +4719,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
+            "open_now": true
+          },
+          {
+            "circle": "animal/bird",
+            "sorted_by": "pet_farm_or_wild_of_bird",
+            "group": "wild_land",
             "open_now": true
           }
         ]
@@ -4752,7 +4808,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/wild_water"
         ],
         "boards": [
           {
@@ -4765,6 +4822,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
+            "open_now": true
+          },
+          {
+            "circle": "animal/bird",
+            "sorted_by": "pet_farm_or_wild_of_bird",
+            "group": "wild_water",
             "open_now": true
           }
         ]
@@ -21310,7 +21373,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/pet"
         ],
         "boards": [
           {
@@ -21323,6 +21387,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
+            "open_now": true
+          },
+          {
+            "circle": "animal/bird",
+            "sorted_by": "pet_farm_or_wild_of_bird",
+            "group": "pet",
             "open_now": true
           }
         ]
@@ -21398,7 +21468,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/pet"
         ],
         "boards": [
           {
@@ -21411,6 +21482,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
+            "open_now": true
+          },
+          {
+            "circle": "animal/bird",
+            "sorted_by": "pet_farm_or_wild_of_bird",
+            "group": "pet",
             "open_now": true
           }
         ]
@@ -21495,7 +21572,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/pet"
         ],
         "boards": [
           {
@@ -21508,6 +21586,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
+            "open_now": true
+          },
+          {
+            "circle": "animal/bird",
+            "sorted_by": "pet_farm_or_wild_of_bird",
+            "group": "pet",
             "open_now": true
           }
         ]
@@ -21592,7 +21676,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/wild_water"
         ],
         "boards": [
           {
@@ -21605,6 +21690,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
+            "open_now": true
+          },
+          {
+            "circle": "animal/bird",
+            "sorted_by": "pet_farm_or_wild_of_bird",
+            "group": "wild_water",
             "open_now": true
           }
         ]
@@ -21689,7 +21780,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/wild_water"
         ],
         "boards": [
           {
@@ -21702,6 +21794,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
+            "open_now": true
+          },
+          {
+            "circle": "animal/bird",
+            "sorted_by": "pet_farm_or_wild_of_bird",
+            "group": "wild_water",
             "open_now": true
           }
         ]
@@ -21786,7 +21884,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/wild_water"
         ],
         "boards": [
           {
@@ -21799,6 +21898,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
+            "open_now": true
+          },
+          {
+            "circle": "animal/bird",
+            "sorted_by": "pet_farm_or_wild_of_bird",
+            "group": "wild_water",
             "open_now": true
           }
         ]
@@ -22900,13 +23005,58 @@
       "status_why": [
         "its facts passed, but only 1 of the 3 things the group needs did, so it was not drawn. A later run carries on from here"
       ],
-      "held_from": "job:2026-10-07-03",
+      "held_from": "job:2026-10-07-05",
       "fields": {
         "kind_of_thing": "nature_not_alive",
         "kind_of_nature": "land",
         "shape_of_the_land": "by_water"
       },
       "familiar": 0.9,
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Island",
+            "title": "Island",
+            "asked_for": "Island",
+            "revision": 1377722292,
+            "fetched_on": "2026-10-07",
+            "sha256": "5e277c9decd102a51fb14d295d863dd66681ed128740e02684b8a7cad8d1a424"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Island",
+            "title": "Island",
+            "asked_for": "Island",
+            "revision": 10841268,
+            "fetched_on": "2026-10-07",
+            "sha256": "d7adb49e74fa224e87f2ee1c0b3eadd3f8081bebb4d84b304ddf80fc337a98f0"
+          }
+        ],
+        "facts": "tools/research/out/facts/island.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "An island ( EYE-lənd) or isle is a piece of land, distinct from a continent, completely surrounded by water."
+          },
+          "kind_of_nature": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "An island ( EYE-lənd) or isle is a piece of land, distinct from a continent, completely surrounded by water."
+          },
+          "shape_of_the_land": {
+            "basis": "judged, not sourced",
+            "why": "An island is a piece of land completely surrounded by water, so the land is beside water."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Island",
+        "checked_by_ear": false,
+        "clip": null
+      },
       "worked_out": {
         "would_join": [
           "seed",
@@ -22921,13 +23071,52 @@
       "status_why": [
         "uncertain: two checks could not settle whether it belongs in 'Places on land': it fits more than one group: water and land"
       ],
-      "held_from": "job:2026-10-07-03",
+      "held_from": "job:2026-10-07-05",
       "fields": {
         "kind_of_thing": "nature_not_alive",
         "kind_of_nature": "land",
         "shape_of_the_land": "by_water"
       },
-      "familiar": 0.8,
+      "familiar": 0.9,
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Waterfall",
+            "title": "Waterfall",
+            "asked_for": "Waterfall",
+            "revision": 1376058742,
+            "fetched_on": "2026-10-07",
+            "sha256": "b621a20ed448b584d272f05700a839e7888a1391857bb01f142377736fb8f4d4"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Waterfall",
+            "title": "Waterfall",
+            "asked_for": "Waterfall",
+            "revision": 10393932,
+            "fetched_on": "2026-10-07",
+            "sha256": "23688b9837242f4d3171353076d24a124559c0e9b2ecaa201c35df6e7fec3f8e"
+          }
+        ],
+        "facts": "tools/research/out/facts/waterfall.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A waterfall is any point in a river or stream where water flows over a vertical drop or a series of steep drops."
+          }
+        },
+        "no_sentence_for": [
+          "kind_of_nature",
+          "shape_of_the_land"
+        ]
+      },
+      "voice": {
+        "say": "Waterfall",
+        "checked_by_ear": false,
+        "clip": null
+      },
       "worked_out": {
         "would_join": [
           "seed",
@@ -22938,9 +23127,9 @@
     },
     "canal": {
       "name": "Canal",
-      "status": "held by the rules",
+      "status": "taken out of the game",
       "status_why": [
-        "the check doubts a four-year-old would recognise it"
+        "not needed: the pages and the judgements point to 'Things people make', not 'Things in nature that are not alive'"
       ],
       "held_from": "job:2026-10-07-03",
       "fields": {
@@ -22955,6 +23144,40 @@
           "nature_not_alive",
           "nature_not_alive/land"
         ]
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Canal",
+            "title": "Canal",
+            "asked_for": "Canal",
+            "revision": 1364267324,
+            "fetched_on": "2026-10-07",
+            "sha256": "dad77d19cef9313bbd85263e9cdf75126fa84b8973ffb0d0167eb6fbc2ec1966"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Canal",
+            "title": "Canal",
+            "asked_for": "Canal",
+            "revision": 10055847,
+            "fetched_on": "2026-10-07",
+            "sha256": "7c82df5ae8522c4a6000ece073b36295241c80f7486455f8ed0cceae3c223de1"
+          }
+        ],
+        "facts": "tools/research/out/facts/canal.json",
+        "evidence": {},
+        "no_sentence_for": [
+          "kind_of_thing",
+          "kind_of_nature",
+          "shape_of_the_land"
+        ]
+      },
+      "voice": {
+        "say": "Canal",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "backwater": {
@@ -22963,13 +23186,18 @@
       "status_why": [
         "the check doubts a four-year-old would recognise it"
       ],
-      "held_from": "job:2026-10-07-03",
+      "held_from": "job:2026-10-07-05",
       "fields": {
         "kind_of_thing": "nature_not_alive",
         "kind_of_nature": "land",
         "shape_of_the_land": "by_water"
       },
-      "familiar": 0.5,
+      "familiar": 0.6,
+      "voice": {
+        "say": "Backwater",
+        "checked_by_ear": false,
+        "clip": null
+      },
       "worked_out": {
         "would_join": [
           "seed",
@@ -22997,6 +23225,25 @@
           "nature_not_alive",
           "nature_not_alive/land"
         ]
+      },
+      "sources": {
+        "pages": [],
+        "facts": "tools/research/out/facts/pit.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "A pit is a natural hole or depression in the ground, not alive and not made by people."
+          }
+        },
+        "no_sentence_for": [
+          "kind_of_nature",
+          "shape_of_the_land"
+        ]
+      },
+      "voice": {
+        "say": "Pit",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "hole": {
@@ -23018,6 +23265,45 @@
           "nature_not_alive",
           "nature_not_alive/land"
         ]
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Hole",
+            "title": "Hole",
+            "asked_for": "Hole",
+            "revision": 1374255056,
+            "fetched_on": "2026-10-07",
+            "sha256": "273bb1118d4c4edbbf883d6099f6d2b20ed00d8cb44a4583139bd40a172d6acc"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Definition",
+            "title": "Definition",
+            "asked_for": "Definition",
+            "revision": 9453746,
+            "fetched_on": "2026-10-07",
+            "sha256": "b2cbce5230a9dc137f14131b01dc95896e9c3e804ab9fd7e656a3d7d794da1c1"
+          }
+        ],
+        "facts": "tools/research/out/facts/hole.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A hole is an opening in or through a particular medium, usually a solid body."
+          }
+        },
+        "no_sentence_for": [
+          "kind_of_nature",
+          "shape_of_the_land"
+        ]
+      },
+      "voice": {
+        "say": "Hole",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "burrow": {
@@ -23039,27 +23325,149 @@
           "nature_not_alive",
           "nature_not_alive/land"
         ]
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Burrow",
+            "title": "Burrow",
+            "asked_for": "Burrow",
+            "revision": 1358164157,
+            "fetched_on": "2026-10-07",
+            "sha256": "26beada51f390dbc4501ef3ebf422f45758d605d9e8027e7eb225f8d26bef568"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Burrow",
+            "title": "Burrow",
+            "asked_for": "Burrow",
+            "revision": 8856208,
+            "fetched_on": "2026-10-07",
+            "sha256": "27ef81d1bf91a2b877ab3168e34664216d2089201db3f8da9aa0c420422b85c9"
+          }
+        ],
+        "facts": "tools/research/out/facts/burrow.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A burrow is a hole or tunnel in the ground made by an animal."
+          }
+        },
+        "no_sentence_for": [
+          "kind_of_nature",
+          "shape_of_the_land"
+        ]
+      },
+      "voice": {
+        "say": "Burrow",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "turkey": {
       "name": "Turkey",
-      "status": "held by the rules",
-      "status_why": [
-        "it could not be settled that it belongs in 'Animals'"
-      ],
-      "held_from": "job:2026-10-07-03",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
+        "extinct": false,
         "pet_farm_or_wild_of_bird": "farm"
       },
-      "familiar": 0.8,
+      "familiar": 0.9,
+      "reviewed": 9,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-07-05",
+      "notes": {
+        "pet_farm_or_wild_of_bird": "The pages point to 'Wild animals on land'. Two checks, sorting it as a parent would, both put it in 'Farm animals'."
+      },
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/farm"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "bird",
+            "open_now": true
+          },
+          {
+            "circle": "animal/bird",
+            "sorted_by": "pet_farm_or_wild_of_bird",
+            "group": "farm",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_07_05_1_01_c1",
+        "game_file": "Assets/pictures/turkey.webp",
+        "game_sha256": "55b7e38051ad1bd26963e6bb81711b548507faafd4e56a85089915c6ac7422e3",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_07_05_1_01_c1.png",
+        "master_sha256": "589c2cc51f658eda6f7be824f31921c05290a3d876f585976beaf03415090247",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-07",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Turkey_(bird)",
+            "title": "Turkey (bird)",
+            "asked_for": "Turkey (bird)",
+            "revision": 1378884286,
+            "fetched_on": "2026-10-07",
+            "sha256": "edb56e1e384640081b095df930bfb966dc782a6db28dfdb75205d4b9646aedb8"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Turkey_(bird)",
+            "title": "Turkey (bird)",
+            "asked_for": "Turkey (bird)",
+            "revision": 10314086,
+            "fetched_on": "2026-10-07",
+            "sha256": "43888b9850463eefa05eae5612a0e9a7045613e2052b6cc205730c0a66b714ad"
+          }
+        ],
+        "facts": "tools/research/out/facts/turkey.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "The turkey is a large bird in the genus Meleagris, native to North America."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "The turkey is a large bird in the genus Meleagris, native to North America."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "There are two extant turkey species: the wild turkey (Meleagris gallopavo) of Southern, Central and Eastern North America, and the ocellated turkey (Meleagris ocellata) of the Yucatán Peninsula in Mexico."
+          }
+        },
+        "no_sentence_for": [
+          "pet_farm_or_wild_of_bird"
+        ]
+      },
+      "voice": {
+        "say": "Turkey",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "goose": {
@@ -23068,7 +23476,7 @@
       "status_why": [
         "uncertain: two checks could not settle whether it belongs in 'Farm animals': it fits more than one group: farm and wild_water"
       ],
-      "held_from": "job:2026-10-07-03",
+      "held_from": "job:2026-10-07-05",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
@@ -23076,19 +23484,68 @@
         "pet_farm_or_wild_of_bird": "farm"
       },
       "familiar": 0.9,
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Goose",
+            "title": "Goose",
+            "asked_for": "Goose",
+            "revision": 1373187094,
+            "fetched_on": "2026-10-07",
+            "sha256": "83a35a47bfea45dba78ff6fb6435c665f1f5ae2fbe3ba42005e175f6f471ed96"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Goose",
+            "title": "Goose",
+            "asked_for": "Goose",
+            "revision": 10790889,
+            "fetched_on": "2026-10-07",
+            "sha256": "7a73c52f36b58ebe857c537c6a7beae513d80194dae76b593d686b8380262b66"
+          }
+        ],
+        "facts": "tools/research/out/facts/goose.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A goose (pl.: geese) is a bird of any of several waterfowl species in the family Anatidae."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A goose (pl.: geese) is a bird of any of several waterfowl species in the family Anatidae."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Geese migrate in groups in the spring and fall, flying together in a V-shape."
+          }
+        },
+        "no_sentence_for": [
+          "pet_farm_or_wild_of_bird"
+        ]
+      },
+      "voice": {
+        "say": "Goose",
+        "checked_by_ear": false,
+        "clip": null
+      },
       "worked_out": {
         "would_join": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/farm"
         ]
       }
     },
     "myna": {
       "name": "Myna",
-      "status": "held by the rules",
+      "status": "taken out of the game",
       "status_why": [
-        "the check doubts a four-year-old would recognise it"
+        "not needed: two checks both put it in 'Wild animals on land', not 'Farm animals'"
       ],
       "held_from": "job:2026-10-07-03",
       "fields": {
@@ -23101,15 +23558,59 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/farm"
         ]
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Myna",
+            "title": "Myna",
+            "asked_for": "Myna",
+            "revision": 1354933978,
+            "fetched_on": "2026-10-07",
+            "sha256": "ed7e4a8f6e88df9def627b8e5ffa47c9c3e15e3c212b3d96c9fd286e083c8040"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Starling",
+            "title": "Starling",
+            "asked_for": "Myna",
+            "revision": 10516229,
+            "fetched_on": "2026-10-07",
+            "sha256": "36befaa7a1679315ae8c29cfe0888e7eb95053b178226b86d25732be7d71cea7"
+          }
+        ],
+        "facts": "tools/research/out/facts/myna.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The mynas (; also spelled mynah) are a group of birds in the starling family (Sturnidae)."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The mynas (; also spelled mynah) are a group of birds in the starling family (Sturnidae)."
+          }
+        },
+        "no_sentence_for": [
+          "pet_farm_or_wild_of_bird"
+        ]
+      },
+      "voice": {
+        "say": "Myna",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "vulture": {
       "name": "Vulture",
-      "status": "held by the rules",
+      "status": "taken out of the game",
       "status_why": [
-        "the check doubts a four-year-old would recognise it"
+        "not needed: two checks both put it in 'Wild animals on land', not 'Farm animals'"
       ],
       "held_from": "job:2026-10-07-03",
       "fields": {
@@ -23122,8 +23623,52 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/farm"
         ]
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Vulture",
+            "title": "Vulture",
+            "asked_for": "Vulture",
+            "revision": 1375285442,
+            "fetched_on": "2026-10-07",
+            "sha256": "fa05f8d00d45be31367a7148c82d9ea0abc833a2373167b7bd81dba7142ec499"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Vulture",
+            "title": "Vulture",
+            "asked_for": "Vulture",
+            "revision": 10266562,
+            "fetched_on": "2026-10-07",
+            "sha256": "89af77042d7a0b51027ccbc9ed119fece82cba33fc2da923275f4bf59e92baf9"
+          }
+        ],
+        "facts": "tools/research/out/facts/vulture.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A vulture is a bird of prey that scavenges on carrion."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A vulture is a bird of prey that scavenges on carrion."
+          }
+        },
+        "no_sentence_for": [
+          "pet_farm_or_wild_of_bird"
+        ]
+      },
+      "voice": {
+        "say": "Vulture",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "finch": {
@@ -23144,8 +23689,56 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/pet"
         ]
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Finch",
+            "title": "Finch",
+            "asked_for": "Finch",
+            "revision": 1378798637,
+            "fetched_on": "2026-10-07",
+            "sha256": "ea9473d8e2a0f3959b9127bbb05ac860d4fab784cee6270b9f4a8dc5aa3673dc"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Finch",
+            "title": "Finch",
+            "asked_for": "Finch",
+            "revision": 6173753,
+            "fetched_on": "2026-10-07",
+            "sha256": "47274ae460c5c9680d6494cc117f33bcb939a0aee0b81daaa33f727e212ce68d"
+          }
+        ],
+        "facts": "tools/research/out/facts/finch.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The true finches are small to medium-sized passerine birds in the family Fringillidae."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The true finches are small to medium-sized passerine birds in the family Fringillidae."
+          },
+          "extinct": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe finches in the present tense as living birds with many species, and mention no extinction."
+          }
+        },
+        "no_sentence_for": [
+          "pet_farm_or_wild_of_bird"
+        ]
+      },
+      "voice": {
+        "say": "Finch",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "stork": {
@@ -23166,8 +23759,57 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/wild_water"
         ]
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Stork",
+            "title": "Stork",
+            "asked_for": "Stork",
+            "revision": 1373688491,
+            "fetched_on": "2026-10-07",
+            "sha256": "ff4ab8daf6a15dbf6c3041de7766105ea4f246e2e1d8932f89f80b4a76390faa"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Stork",
+            "title": "Stork",
+            "asked_for": "Stork",
+            "revision": 8666198,
+            "fetched_on": "2026-10-07",
+            "sha256": "b0653966b03da5e646b39b40b5fedadc658bd583e3f4c6a99d7c43f62271c8d6"
+          }
+        ],
+        "facts": "tools/research/out/facts/stork.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Storks are a family of birds (Ciconiidae)."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Storks are a family of birds (Ciconiidae)."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "There are 20 living species of storks in six genera."
+          }
+        },
+        "no_sentence_for": [
+          "pet_farm_or_wild_of_bird"
+        ]
+      },
+      "voice": {
+        "say": "Stork",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "heron": {
@@ -23187,8 +23829,14 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/wild_water"
         ]
+      },
+      "voice": {
+        "say": "Heron",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "ibis": {
@@ -23208,8 +23856,14 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird"
+          "animal/bird",
+          "animal/bird/wild_water"
         ]
+      },
+      "voice": {
+        "say": "Ibis",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "subway": {
@@ -23231,21 +23885,94 @@
           "made_by_people",
           "made_by_people/building"
         ]
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Subway_(crossing)",
+            "title": "Subway (crossing)",
+            "asked_for": "Subway (underpass)",
+            "revision": 1373772567,
+            "fetched_on": "2026-10-07",
+            "sha256": "ccb6e0ee651c5f52875e04a7ff54ae82cf1a713b1bd84f3bd61222dabf8192db"
+          }
+        ],
+        "facts": "tools/research/out/facts/subway.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A subway, also known as an underpass, is a grade-separated pedestrian crossing running underneath a road or railway in order to entirely separate pedestrians and cyclists from motor or train traffic."
+          }
+        },
+        "no_sentence_for": [
+          "kind_of_made_thing",
+          "what_people_do_there"
+        ]
+      },
+      "voice": {
+        "say": "Subway",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "nursing_home": {
       "name": "Nursing home",
       "status": "held by the rules",
       "status_why": [
-        "uncertain: two checks could not settle whether it belongs in 'Get well': it fits more than one group: heal and live"
+        "the check doubts a four-year-old would recognise it"
       ],
-      "held_from": "job:2026-10-07-03",
+      "held_from": "job:2026-10-07-05",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building",
         "what_people_do_there": "heal"
       },
-      "familiar": 0.7,
+      "familiar": 0.6,
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Nursing_home",
+            "title": "Nursing home",
+            "asked_for": "Nursing home",
+            "revision": 1358209184,
+            "fetched_on": "2026-10-07",
+            "sha256": "889df14a044d744acdd483a0db39157b11df7d55e7edc3ff8653ac572710aba4"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Nursing_home",
+            "title": "Nursing home",
+            "asked_for": "Nursing home",
+            "revision": 9247129,
+            "fetched_on": "2026-10-07",
+            "sha256": "e0cb4c21138c16159df9cee221a4dd607f9b95108d518773c3d81b5d6ff55631"
+          }
+        ],
+        "facts": "tools/research/out/facts/nursing_home.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A nursing home is a facility for the residential care of older people, senior citizens, or disabled people."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A nursing home is a facility for the residential care of older people, senior citizens, or disabled people."
+          }
+        },
+        "no_sentence_for": [
+          "what_people_do_there"
+        ]
+      },
+      "voice": {
+        "say": "Nursing home",
+        "checked_by_ear": false,
+        "clip": null
+      },
       "worked_out": {
         "would_join": [
           "seed",
@@ -23258,15 +23985,52 @@
       "name": "Doctor's office",
       "status": "held by the rules",
       "status_why": [
-        "no tile of it passed the checks after 2 sheet(s)"
+        "its facts passed, but only 1 of the 2 things the group needs did, so it was not drawn. A later run carries on from here"
       ],
-      "held_from": "job:2026-10-07-03",
+      "held_from": "job:2026-10-07-05",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building",
         "what_people_do_there": "heal"
       },
       "familiar": 0.8,
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Doctor%27s_office",
+            "title": "Doctor's office",
+            "asked_for": "Doctor's office",
+            "revision": 1357017115,
+            "fetched_on": "2026-10-07",
+            "sha256": "5b0e629aa74513600688ec10a4c4f52cc2e4db10acaee0877a8e02416528558b"
+          }
+        ],
+        "facts": "tools/research/out/facts/doctor_s_office.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "is a medical facility in which one or more medical doctors, usually general practitioners (GP), receive and treat patients."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "is a medical facility in which one or more medical doctors, usually general practitioners (GP), receive and treat patients."
+          },
+          "what_people_do_there": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "receive and treat patients."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Doctor's office",
+        "checked_by_ear": false,
+        "clip": null
+      },
       "worked_out": {
         "would_join": [
           "seed",
@@ -23274,20 +24038,132 @@
           "made_by_people/building"
         ]
       }
+    },
+    "ground": {
+      "name": "Ground",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "flat"
+      },
+      "familiar": 0.9,
+      "reviewed": 9,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-07-05",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/land"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "nature_not_alive",
+            "open_now": true
+          },
+          {
+            "circle": "nature_not_alive",
+            "sorted_by": "kind_of_nature",
+            "group": "land",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_07_05_2_01_c1",
+        "game_file": "Assets/pictures/ground.webp",
+        "game_sha256": "8cc5b77dd4906810bf760c0bf758df4f3a59d3b0cd9c59dc3758648112415a78",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_07_05_2_01_c1.png",
+        "master_sha256": "dafffc7ebf6589a3ccb1ae3d52a2031b88487f7efefa92669f5af5b45cfcb0c8",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-07",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Land",
+            "title": "Land",
+            "asked_for": "Land",
+            "revision": 1378874665,
+            "fetched_on": "2026-10-07",
+            "sha256": "8df9070450f9e152426fb41bb5c5a963387c39788951a3471c4b9a5184ef5e36"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Ground",
+            "title": "Ground",
+            "asked_for": "Ground",
+            "revision": 9603188,
+            "fetched_on": "2026-10-07",
+            "sha256": "ca8a063b6578e00bf7882a2e9f6d9daef49d2d3f862311c8a4fdb6da102d4b93"
+          }
+        ],
+        "facts": "tools/research/out/facts/ground.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Land, also known as dry land, ground, or earth, is the solid terrestrial surface of Earth not submerged by the ocean or another body of water."
+          },
+          "kind_of_nature": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Land, also known as dry land, ground, or earth, is the solid terrestrial surface of Earth not submerged by the ocean or another body of water."
+          },
+          "shape_of_the_land": {
+            "basis": "judged, not sourced",
+            "why": "Ground is described as the solid surface we walk on, which is commonly flat land."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Ground",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "marsh": {
+      "name": "Marsh",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "held_from": "job:2026-10-07-05",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land",
+        "shape_of_the_land": "by_water"
+      },
+      "familiar": 0.6,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "nature_not_alive",
+          "nature_not_alive/land"
+        ]
+      }
     }
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 223,
-      "held by the rules": 54,
+      "in the game": 225,
+      "held by the rules": 51,
       "kept for later": 5,
       "excluded": 3,
-      "taken out of the game": 15
+      "taken out of the game": 18
     },
     "circles_that_can_open_now": [
       "seed",
       "animal",
       "animal/mammal",
+      "animal/bird",
       "animal/dinosaur",
       "plant",
       "plant/vegetable",
@@ -23299,14 +24175,14 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 223,
+        "things": 225,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
           "animal": {
             "label": "Animals",
-            "things": 91,
-            "with_picture": 91
+            "things": 92,
+            "with_picture": 92
           },
           "plant": {
             "label": "Plants",
@@ -23315,8 +24191,8 @@
           },
           "nature_not_alive": {
             "label": "Things in nature that are not alive",
-            "things": 31,
-            "with_picture": 31
+            "things": 32,
+            "with_picture": 32
           },
           "made_by_people": {
             "label": "Things people make",
@@ -23330,7 +24206,7 @@
       },
       "animal": {
         "label": "Animals",
-        "things": 91,
+        "things": 92,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_animal",
         "groups": {
@@ -23341,8 +24217,8 @@
           },
           "bird": {
             "label": "Birds",
-            "things": 16,
-            "with_picture": 16
+            "things": 17,
+            "with_picture": 17
           },
           "fish": {
             "label": "Fish",
@@ -23448,7 +24324,7 @@
       },
       "animal/bird": {
         "label": "Birds",
-        "things": 16,
+        "things": 17,
         "steps_from_seed": 2,
         "sorted_by": "pet_farm_or_wild_of_bird",
         "groups": {
@@ -23459,8 +24335,8 @@
           },
           "farm": {
             "label": "Farm animals",
-            "things": 3,
-            "with_picture": 3
+            "things": 4,
+            "with_picture": 4
           },
           "wild_land": {
             "label": "Wild animals on land",
@@ -23473,52 +24349,74 @@
             "with_picture": 4
           }
         },
+        "open_by_its_things": true,
+        "can_open_now": true,
+        "needs": []
+      },
+      "animal/bird/pet": {
+        "label": "Pets at home",
+        "things": 4,
+        "steps_from_seed": 3,
         "could_be_filled_by": [
           {
-            "name": "Turkey",
-            "status": "held by the rules",
-            "group": "farm"
-          },
-          {
-            "name": "Goose",
-            "status": "held by the rules",
-            "group": "farm"
-          },
-          {
-            "name": "Myna",
-            "status": "held by the rules",
-            "group": "farm"
-          },
-          {
-            "name": "Vulture",
-            "status": "held by the rules",
-            "group": "farm"
-          },
-          {
             "name": "Finch",
-            "status": "held by the rules",
-            "group": "pet"
-          },
-          {
-            "name": "Stork",
-            "status": "held by the rules",
-            "group": "wild_water"
-          },
-          {
-            "name": "Heron",
-            "status": "held by the rules",
-            "group": "wild_water"
-          },
-          {
-            "name": "Ibis",
-            "status": "held by the rules",
-            "group": "wild_water"
+            "status": "held by the rules"
           }
         ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "1 more thing(s) in 'Farm animals'"
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
+        ]
+      },
+      "animal/bird/farm": {
+        "label": "Farm animals",
+        "things": 4,
+        "steps_from_seed": 3,
+        "could_be_filled_by": [
+          {
+            "name": "Goose",
+            "status": "held by the rules"
+          }
+        ],
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
+        ]
+      },
+      "animal/bird/wild_land": {
+        "label": "Wild animals on land",
+        "things": 4,
+        "steps_from_seed": 3,
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
+        ]
+      },
+      "animal/bird/wild_water": {
+        "label": "Wild animals in water",
+        "things": 4,
+        "steps_from_seed": 3,
+        "could_be_filled_by": [
+          {
+            "name": "Stork",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Heron",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Ibis",
+            "status": "held by the rules"
+          }
+        ],
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
         ]
       },
       "animal/fish": {
@@ -23812,7 +24710,7 @@
       },
       "nature_not_alive": {
         "label": "Things in nature that are not alive",
-        "things": 31,
+        "things": 32,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_nature",
         "groups": {
@@ -23828,8 +24726,8 @@
           },
           "land": {
             "label": "Places on land",
-            "things": 13,
-            "with_picture": 13
+            "things": 14,
+            "with_picture": 14
           },
           "ground": {
             "label": "Rocks and soil",
@@ -23869,7 +24767,7 @@
       },
       "nature_not_alive/land": {
         "label": "Places on land",
-        "things": 13,
+        "things": 14,
         "steps_from_seed": 2,
         "sorted_by": "shape_of_the_land",
         "groups": {
@@ -23880,8 +24778,8 @@
           },
           "flat": {
             "label": "Flat land",
-            "things": 3,
-            "with_picture": 3
+            "things": 4,
+            "with_picture": 4
           },
           "by_water": {
             "label": "Land beside water",
@@ -23910,11 +24808,6 @@
             "group": "by_water"
           },
           {
-            "name": "Canal",
-            "status": "held by the rules",
-            "group": "by_water"
-          },
-          {
             "name": "Backwater",
             "status": "held by the rules",
             "group": "by_water"
@@ -23933,12 +24826,16 @@
             "name": "Burrow",
             "status": "held by the rules",
             "group": "hollow"
+          },
+          {
+            "name": "Marsh",
+            "status": "held by the rules",
+            "group": "by_water"
           }
         ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "1 more thing(s) in 'Flat land'",
           "3 more thing(s) in 'Land beside water'"
         ]
       },
@@ -24313,7 +25210,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "the name as a parent writes it",
+    "by": "job run 2026-10-07-05",
     "on": "2026-10-07"
   }
 }
