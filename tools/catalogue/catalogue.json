@@ -26911,9 +26911,9 @@
         "say": "Football",
         "checked_by_ear": false,
         "clip": "Assets/audio/names/name_football.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07",
         "cached": "tools/voice/clips/football.mp3",
-        "clip_sha256": "798c8d7b9c8452994a1363b2c95592fa81cf11f745877fb95aa74cb8e84e7f14",
-        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        "clip_sha256": "798c8d7b9c8452994a1363b2c95592fa81cf11f745877fb95aa74cb8e84e7f14"
       }
     },
     "skipping_rope": {
@@ -26981,9 +26981,9 @@
         "say": "Skipping rope",
         "checked_by_ear": false,
         "clip": "Assets/audio/names/name_skipping_rope.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07",
         "cached": "tools/voice/clips/skipping_rope.mp3",
-        "clip_sha256": "aec054e9dacaf4ea20e8524239317d5e4ba6aaad6fdc5b9613f006306f2907db",
-        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        "clip_sha256": "aec054e9dacaf4ea20e8524239317d5e4ba6aaad6fdc5b9613f006306f2907db"
       },
       "status_why": [
         "two checks put it with toys we throw, kick or bat, and it is none of these: a rope is skipped over. Run 2026-10-07-07 let it in"
@@ -27085,9 +27085,9 @@
         "say": "Frisbee",
         "checked_by_ear": false,
         "clip": "Assets/audio/names/name_frisbee.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07",
         "cached": "tools/voice/clips/frisbee.mp3",
-        "clip_sha256": "dfa3116671e65cbca0770a30d028708c8263e2a21a9c6f3ae5cfe459d7b3df2e",
-        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        "clip_sha256": "dfa3116671e65cbca0770a30d028708c8263e2a21a9c6f3ae5cfe459d7b3df2e"
       }
     },
     "grassland": {
@@ -27109,6 +27109,12 @@
           "nature_not_alive",
           "nature_not_alive/land"
         ]
+      },
+      "voice": {
+        "say": "Grassland",
+        "checked_by_ear": false,
+        "clip": null,
+        "cached": "tools/voice/clips/grassland.mp3"
       }
     },
     "river_bank": {
@@ -27130,6 +27136,44 @@
           "nature_not_alive",
           "nature_not_alive/land"
         ]
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Bank_(geography)",
+            "title": "Bank (geography)",
+            "asked_for": "River bank",
+            "revision": 1357360561,
+            "fetched_on": "2026-10-07",
+            "sha256": "3603c125b04e7105d8fb48686c505f5f3d3e8e100000c5adaabff1c1aa5ea14b"
+          }
+        ],
+        "facts": "tools/research/out/facts/river_bank.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "In geography, a bank is the land alongside a body of water."
+          },
+          "kind_of_nature": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "In geography, a bank is the land alongside a body of water."
+          },
+          "shape_of_the_land": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "In geography, a bank is the land alongside a body of water."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "River bank",
+        "checked_by_ear": false,
+        "clip": null,
+        "cached": "tools/voice/clips/river_bank.mp3"
       }
     },
     "lake_shore": {
@@ -27151,6 +27195,26 @@
           "nature_not_alive",
           "nature_not_alive/land"
         ]
+      },
+      "sources": {
+        "pages": [],
+        "facts": "tools/research/out/facts/lake_shore.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "A lake shore is a natural feature of the landscape, not a living thing or something people make."
+          }
+        },
+        "no_sentence_for": [
+          "kind_of_nature",
+          "shape_of_the_land"
+        ]
+      },
+      "voice": {
+        "say": "Lake shore",
+        "checked_by_ear": false,
+        "clip": null,
+        "cached": "tools/voice/clips/lake_shore.mp3"
       }
     },
     "pond_edge": {
@@ -27172,6 +27236,26 @@
           "nature_not_alive",
           "nature_not_alive/land"
         ]
+      },
+      "sources": {
+        "pages": [],
+        "facts": "tools/research/out/facts/pond_edge.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "A pond edge is a part of a pond, a natural feature that is not alive and not made by people."
+          }
+        },
+        "no_sentence_for": [
+          "kind_of_nature",
+          "shape_of_the_land"
+        ]
+      },
+      "voice": {
+        "say": "Pond edge",
+        "checked_by_ear": false,
+        "clip": null,
+        "cached": "tools/voice/clips/pond_edge.mp3"
       }
     },
     "marbles": {
@@ -27180,13 +27264,57 @@
       "status_why": [
         "uncertain: two checks could not settle whether it belongs in 'Throw, kick or bat it': it fits no group"
       ],
-      "held_from": "job:2026-10-07-07",
+      "held_from": "job:2026-10-07-08",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "toy",
         "how_we_play_with_it": "throw"
       },
       "familiar": 0.9,
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Marble_(toy)",
+            "title": "Marble (toy)",
+            "asked_for": "Marbles",
+            "revision": 1373062777,
+            "fetched_on": "2026-10-07",
+            "sha256": "3090f196932d965ff29e20beba413e927ee47ebf3d7d7a4ce5177f44cf8ee43f"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Marble_(toy)",
+            "title": "Marble (toy)",
+            "asked_for": "Marbles",
+            "revision": 8611612,
+            "fetched_on": "2026-10-07",
+            "sha256": "da5e8a4bdbb25ad0c6910072da40fce055e439c036d61957e9ffe94353baf1b9"
+          }
+        ],
+        "facts": "tools/research/out/facts/marbles.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A marble is a small spherical object often made from glass, clay, steel, plastic, or agate."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "These toys can be used for a variety of games called marbles, as well being placed in marble runs or races, or created as a form of art."
+          }
+        },
+        "no_sentence_for": [
+          "how_we_play_with_it"
+        ]
+      },
+      "voice": {
+        "say": "Marbles",
+        "checked_by_ear": false,
+        "clip": null,
+        "cached": "tools/voice/clips/marbles.mp3"
+      },
       "worked_out": {
         "would_join": [
           "seed",
@@ -27200,15 +27328,50 @@
       "name": "Top",
       "status": "held by the rules",
       "status_why": [
-        "uncertain: two checks could not settle whether it belongs in 'Throw, kick or bat it': the two checks disagree: 'spin' and 'throw'"
+        "uncertain: two checks could not settle whether it belongs in 'Throw, kick or bat it': it fits no group"
       ],
-      "held_from": "job:2026-10-07-07",
+      "held_from": "job:2026-10-07-08",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "toy",
         "how_we_play_with_it": "throw"
       },
       "familiar": 0.8,
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Spinning_top",
+            "title": "Spinning top",
+            "asked_for": "Top (toy)",
+            "revision": 1374590375,
+            "fetched_on": "2026-10-07",
+            "sha256": "8f7d200cef54d70b1781cb0ac152e6cfc66936c458fb86d82fd28d85a6197139"
+          }
+        ],
+        "facts": "tools/research/out/facts/top.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A spinning top, or simply a top, is a toy with a squat body and a sharp point at the bottom, designed to be spun on its vertical axis, balancing on the tip due to the gyroscopic effect."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A spinning top, or simply a top, is a toy with a squat body and a sharp point at the bottom, designed to be spun on its vertical axis, balancing on the tip due to the gyroscopic effect."
+          }
+        },
+        "no_sentence_for": [
+          "how_we_play_with_it"
+        ]
+      },
+      "voice": {
+        "say": "Top",
+        "checked_by_ear": false,
+        "clip": null,
+        "cached": "tools/voice/clips/top.mp3"
+      },
       "worked_out": {
         "would_join": [
           "seed",
@@ -27220,30 +27383,122 @@
     },
     "hula_hoop": {
       "name": "Hula hoop",
-      "status": "held by the rules",
-      "status_why": [
-        "uncertain: two checks could not settle whether it belongs in 'Throw, kick or bat it': it fits no group"
-      ],
-      "held_from": "job:2026-10-07-07",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "toy",
         "how_we_play_with_it": "throw"
       },
-      "familiar": 0.8,
+      "familiar": 0.9,
+      "reviewed": 10,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-07-08",
+      "notes": {
+        "how_we_play_with_it": "The pages point to 'Wheel it along'. Two checks, sorting it as a parent would, both put it in 'Throw, kick or bat it'."
+      },
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "made_by_people",
           "made_by_people/toy",
           "made_by_people/toy/throw"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "toy",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/toy",
+            "sorted_by": "how_we_play_with_it",
+            "group": "throw",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_07_08_1_01_c1",
+        "game_file": "Assets/pictures/hula_hoop.webp",
+        "game_sha256": "0ce0799ba067ca21f8dceb4fb59044b65b80b5cfd1988e43abc153e64e015ad5",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_07_08_1_01_c1.png",
+        "master_sha256": "908fe2f7acc8439cffb5ff3ebfe46c96b77dcc726bbb57df951864638125943c",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-07",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Hula_hoop",
+            "title": "Hula hoop",
+            "asked_for": "Hula hoop",
+            "revision": 1378185593,
+            "fetched_on": "2026-10-07",
+            "sha256": "0dab8a4624bd0483d41c0198804c7098b70a1323d6987aa96f30f75c6eea6f7e"
+          }
+        ],
+        "facts": "tools/research/out/facts/hula_hoop.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A hula hoop is a toy hoop that is twirled around the waist, limbs or neck."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A hula hoop is a toy hoop that is twirled around the waist, limbs or neck."
+          }
+        },
+        "no_sentence_for": [
+          "how_we_play_with_it"
+        ]
+      },
+      "voice": {
+        "say": "Hula hoop",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_hula_hoop.mp3",
+        "cached": "tools/voice/clips/hula_hoop.mp3",
+        "clip_sha256": "630c95d1644fccd748e08b9e9b0316446a66ef40db92e5bca707d5fbe2df2706",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      }
+    },
+    "hut": {
+      "name": "Hut",
+      "status": "held by the rules",
+      "status_why": [
+        "its facts passed, but only 1 of the 3 things the group needs did, so it was not drawn. A later run carries on from here"
+      ],
+      "held_from": "job:2026-10-07-08",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building",
+        "what_people_do_there": "live"
+      },
+      "familiar": 0.85,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "made_by_people",
+          "made_by_people/building",
+          "made_by_people/building/live"
         ]
       }
     }
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 243,
+      "in the game": 244,
       "held by the rules": 62,
       "kept for later": 5,
       "excluded": 3,
@@ -27267,7 +27522,7 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 243,
+        "things": 244,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
@@ -27288,8 +27543,8 @@
           },
           "made_by_people": {
             "label": "Things people make",
-            "things": 89,
-            "with_picture": 89
+            "things": 90,
+            "with_picture": 90
           }
         },
         "open_by_its_things": true,
@@ -28070,7 +28325,7 @@
       },
       "made_by_people": {
         "label": "Things people make",
-        "things": 89,
+        "things": 90,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_made_thing",
         "groups": {
@@ -28081,8 +28336,8 @@
           },
           "toy": {
             "label": "Toys",
-            "things": 22,
-            "with_picture": 22
+            "things": 23,
+            "with_picture": 23
           },
           "household": {
             "label": "Things in the house",
@@ -28177,14 +28432,14 @@
       },
       "made_by_people/toy": {
         "label": "Toys",
-        "things": 22,
+        "things": 23,
         "steps_from_seed": 2,
         "sorted_by": "how_we_play_with_it",
         "groups": {
           "throw": {
             "label": "Throw, kick or bat it",
-            "things": 3,
-            "with_picture": 3
+            "things": 4,
+            "with_picture": 4
           },
           "build": {
             "label": "Build or make with it",
@@ -28218,7 +28473,7 @@
       },
       "made_by_people/toy/throw": {
         "label": "Throw, kick or bat it",
-        "things": 3,
+        "things": 4,
         "steps_from_seed": 3,
         "could_be_filled_by": [
           {
@@ -28228,16 +28483,12 @@
           {
             "name": "Top",
             "status": "held by the rules"
-          },
-          {
-            "name": "Hula hoop",
-            "status": "held by the rules"
           }
         ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "1 more thing(s): it has fewer than four, so it is not yet a group on the board above it"
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
         ]
       },
       "made_by_people/toy/ride": {
@@ -28431,6 +28682,12 @@
         "label": "Live",
         "things": 1,
         "steps_from_seed": 3,
+        "could_be_filled_by": [
+          {
+            "name": "Hut",
+            "status": "held by the rules"
+          }
+        ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
@@ -28520,7 +28777,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "publish.py",
+    "by": "job run 2026-10-07-08",
     "on": "2026-10-07"
   }
 }

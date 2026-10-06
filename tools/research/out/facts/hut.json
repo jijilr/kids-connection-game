@@ -1,0 +1,49 @@
+{
+  "name": "Hut",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A hut is a simple shelter that is built by humans.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "A hut is a small dwelling, which may be constructed of various local materials.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_people_do_there": {
+      "value": "live",
+      "quote": "Some indigenous peoples use huts as their permanent place of safety.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Hut",
+      "title": "Hut",
+      "asked_for": "Hut",
+      "revision": 1357376809,
+      "fetched_on": "2026-10-07",
+      "sha256": "481df51395e36034f59e55bf360ef1af6bbcbc1f278edbfcecad84f328f1f436"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Hut_(dwelling)",
+      "title": "Hut (dwelling)",
+      "asked_for": "Hut (dwelling)",
+      "revision": 10844144,
+      "fetched_on": "2026-10-07",
+      "sha256": "a4d5fa47c995a8c00195f6a7465f6553775b88cbc72ff1467d38a230976a27fa"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

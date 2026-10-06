@@ -486,21 +486,21 @@
       "why": [
         "uncertain: two checks could not settle whether it belongs in 'Throw, kick or bat it': it fits no group"
       ],
-      "from": "job:2026-10-07-07"
+      "from": "job:2026-10-07-08"
     },
     {
       "name": "Top",
       "why": [
-        "uncertain: two checks could not settle whether it belongs in 'Throw, kick or bat it': the two checks disagree: 'spin' and 'throw'"
-      ],
-      "from": "job:2026-10-07-07"
-    },
-    {
-      "name": "Hula hoop",
-      "why": [
         "uncertain: two checks could not settle whether it belongs in 'Throw, kick or bat it': it fits no group"
       ],
-      "from": "job:2026-10-07-07"
+      "from": "job:2026-10-07-08"
+    },
+    {
+      "name": "Hut",
+      "why": [
+        "its facts passed, but only 1 of the 3 things the group needs did, so it was not drawn. A later run carries on from here"
+      ],
+      "from": "job:2026-10-07-08"
     }
   ]
 }

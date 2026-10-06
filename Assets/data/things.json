@@ -3044,6 +3044,21 @@
       "reviewed": 10,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-07"
+    },
+    "hula_hoop": {
+      "name": "Hula hoop",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "throw"
+      },
+      "familiar": 0.9,
+      "reviewed": 10,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-07-08",
+      "notes": {
+        "how_we_play_with_it": "The pages point to 'Wheel it along'. Two checks, sorting it as a parent would, both put it in 'Throw, kick or bat it'."
+      }
     }
   }
 }

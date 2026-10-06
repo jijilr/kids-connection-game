@@ -3936,6 +3936,90 @@
       "sha256": "dfa3116671e65cbca0770a30d028708c8263e2a21a9c6f3ae5cfe459d7b3df2e",
       "recorded_on": "2026-10-07",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "grassland": {
+      "say": "Grassland",
+      "text": "Grassland",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "ɡɹˈɑːsland",
+      "seconds": 1.61,
+      "cache": "tools/voice/clips/grassland.mp3",
+      "sha256": "1996e21898ff0b26812e776a10677a5f0a2e48eab2166e3cc3e7f337d51824a4",
+      "recorded_on": "2026-10-07",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "river_bank": {
+      "say": "River bank",
+      "text": "River bank",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "ɹˈɪvə bˈaŋk",
+      "seconds": 1.72,
+      "cache": "tools/voice/clips/river_bank.mp3",
+      "sha256": "5b05ec511e6bf5468b6823286d624ed334cbc68129b5cf13abbd991a0bc32ae6",
+      "recorded_on": "2026-10-07",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "lake_shore": {
+      "say": "Lake shore",
+      "text": "Lake shore",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "lˈAk ʃˈɔː",
+      "seconds": 1.51,
+      "cache": "tools/voice/clips/lake_shore.mp3",
+      "sha256": "c5de56496f2c59aa1bab8df6820ec66142b6b37cbe02b26651588ac31bcf9091",
+      "recorded_on": "2026-10-07",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "pond_edge": {
+      "say": "Pond edge",
+      "text": "Pond edge",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "pˈɒnd ˈɛʤ",
+      "seconds": 1.94,
+      "cache": "tools/voice/clips/pond_edge.mp3",
+      "sha256": "ce584feca1bd8eaeea6da1351486fc13376b57043b4fa75917ce56bf11b9f6d9",
+      "recorded_on": "2026-10-07",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "marbles": {
+      "say": "Marbles",
+      "text": "Marbles",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "mˈɑːbᵊlz",
+      "seconds": 1.39,
+      "cache": "tools/voice/clips/marbles.mp3",
+      "sha256": "9b75a72062f57104c929c103c8594c9230cfb835217dac2778f5be40cfac3be1",
+      "recorded_on": "2026-10-07",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "top": {
+      "say": "Top",
+      "text": "Top",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "tˈɒp",
+      "seconds": 0.94,
+      "cache": "tools/voice/clips/top.mp3",
+      "sha256": "da2de31571473c3ed52a1763020700540355a615845027b51b5e9db86996fbb9",
+      "recorded_on": "2026-10-07",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "hula_hoop": {
+      "say": "Hula hoop",
+      "text": "Hula hoop",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "hˈuːlə hˈuːp",
+      "seconds": 1.67,
+      "cache": "tools/voice/clips/hula_hoop.mp3",
+      "sha256": "630c95d1644fccd748e08b9e9b0316446a66ef40db92e5bca707d5fbe2df2706",
+      "recorded_on": "2026-10-07",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     }
   }
 }
