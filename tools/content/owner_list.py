@@ -11,7 +11,7 @@ tiles and by the voice.
 
     python tools/content/owner_list.py
 """
-from lib import DICTIONARY, THINGS, read_json, set_queue, slug, write_json
+from lib import DICTIONARY, catalogue, read_json, set_queue, slug
 
 SOURCE = "owner:list"
 
@@ -89,7 +89,7 @@ def record(name: str, fields: dict, version: int) -> dict:
 def main():
     dictionary = read_json(DICTIONARY)
     version = dictionary["version"]
-    store = read_json(THINGS, {"dictionary_version": version, "things": {}})
+    store = catalogue().game_store()
     things = {k: v for k, v in store["things"].items() if v.get("source") != SOURCE}
 
     for kind, (academic, names) in DINOSAURS.items():
@@ -107,12 +107,12 @@ def main():
     missing = [key for key in REQUIRED if key not in things]
 
     store["things"] = things
-    write_json(THINGS, store)
+    catalogue().put_game_store(store, by="owner_list.py")
     set_queue("owner", [
-        {"name": name, "fields": dinosaur("flyer", False),
+        {"name": name, "fields": dinosaur("flyer", False), "status": "not in the game yet",
          "why": ["candidate for the fourth flyer: the first child chooses one, the other stays here"]}
         for name in FLYER_CANDIDATES
-    ] + [{"name": name, "fields": {}, "why": [why]} for name, why in WAITING.items()])
+    ] + [{"name": name, "fields": {}, "status": "kept for later", "why": [why]} for name, why in WAITING.items()])
 
     added = (sum(len(names) for _, names in DINOSAURS.values()) + len(SNAKES)
              + sum(len(names) for names in PLANTS.values()))

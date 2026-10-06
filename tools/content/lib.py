@@ -6,7 +6,7 @@ import re
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 DICTIONARY = ROOT / "Assets/data/dictionary.json"
-THINGS = ROOT / "Assets/data/things.json"
+THINGS = ROOT / "Assets/data/things.json"   # the game's copy: read it freely, change it only through catalogue()
 DRAFT = ROOT / "tools/content/_draft.json"
 CHECKED = ROOT / "tools/content/_checked.json"
 REVIEW_QUEUE = ROOT / "tools/content/review_queue.json"
@@ -69,8 +69,17 @@ def ask_json(client, system: str, user: str, temperature: float) -> dict:
     return json.loads(reply.choices[0].message.content)
 
 
+def catalogue():
+    """The master record of every thing (tools/catalogue/catalogue.py). Since 6 Oct 2026
+    things.json is the game's copy of it and the review queue is its list of what is held,
+    so the scripts here read and write things through it. Imported late, because the
+    catalogue itself uses this folder's rules."""
+    import sys
+    sys.path.insert(0, str(ROOT / "tools/catalogue"))
+    import catalogue as module
+    return module
+
+
 def set_queue(sender: str, entries: list):
     """Replace one script's entries in the owner's review queue, leaving the others alone."""
-    queue = (read_json(REVIEW_QUEUE, {}) or {}).get("for_the_owner", [])
-    kept = [e for e in queue if e.get("from", "check") != sender]
-    write_json(REVIEW_QUEUE, {"for_the_owner": kept + [dict(e, **{"from": sender}) for e in entries]})
+    catalogue().set_queue(sender, entries)

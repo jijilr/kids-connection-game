@@ -36,14 +36,6 @@
   ],
   "rule": "A script fetches only from the hosts listed under `sources`. Nothing else is read, so a banned kind of site cannot get in.",
   "hints": {},
-  "not_in_the_game_yet": {
-    "Rhamphorhynchus": {
-      "kind_of_dinosaur": "flyer"
-    },
-    "Dimorphodon": {
-      "kind_of_dinosaur": "flyer"
-    }
-  },
   "longest_text_sent_per_source": 60000,
   "fewest_features_before_asking_the_owner": 5,
   "model": "deepseek-flash",

@@ -8,6 +8,7 @@ matches the owner's review. Masters and original sheets stay where they are.
     python tools/pictures/publish.py
 """
 import shutil
+import sys
 
 from piclib import RECORDS, ROOT, load_records, relative, thing_names, write_json
 
@@ -48,6 +49,14 @@ def main():
         print(f"Removed, because their tiles are no longer approved: {', '.join(removed)}")
     if not_in_game:
         print(f"Approved and kept, but not in the game yet: {', '.join(sorted(not_in_game))}")
+
+    # the catalogue is the master record of what each thing has: tell it, and let its guard
+    # check the published files against it
+    sys.path.insert(0, str(ROOT / "tools/catalogue"))
+    import catalogue
+    with catalogue.changing("publish.py") as master:
+        catalogue.sync_pictures(master)
+    print("The catalogue now names each thing's published tile.")
 
 
 if __name__ == "__main__":

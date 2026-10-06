@@ -12,7 +12,7 @@ It also reports which fields can fill a board (four values, four things each).
 import sys
 from collections import Counter, defaultdict
 
-from lib import DICTIONARY, THINGS, allowed_values, applies, label, read_json
+from lib import DICTIONARY, THINGS, allowed_values, applies, catalogue, label, read_json
 
 
 def allowed(value, definition: dict) -> bool:
@@ -77,6 +77,16 @@ def main():
             print("  -", line)
         sys.exit(1)
     print("\nGuard passed: no orphans, nothing missing, every thing stamped.")
+
+    # the catalogue is the master record: check it against the real files too
+    master = catalogue()
+    wrong = master.problems(master.load())
+    if wrong:
+        print(f"\nCATALOGUE GUARD FAILED - {len(wrong)} problem(s):")
+        for line in wrong:
+            print("  -", line)
+        sys.exit(1)
+    print("Catalogue guard passed: it agrees with the real files, the tile records, the game's copy and the queue.")
 
 
 if __name__ == "__main__":

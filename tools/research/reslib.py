@@ -24,7 +24,8 @@ HERE = ROOT / "tools/research"
 CONFIG = HERE / "config.json"
 CACHE = HERE / "cache"   # fetched pages, kept so the same text is read on every run
 OUT = HERE / "out"       # what the scripts concluded
-THINGS = ROOT / "Assets/data/things.json"
+THINGS = ROOT / "Assets/data/things.json"                   # the game's copy of the catalogue
+CATALOGUE = ROOT / "tools/catalogue/catalogue.json"         # the master record; read here, never written
 
 
 def read_json(path, default=None):

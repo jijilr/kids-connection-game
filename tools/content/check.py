@@ -10,7 +10,7 @@ dictionary version they were reviewed against.
 
     python tools/content/check.py
 """
-from lib import (CHECKED, DICTIONARY, DRAFT, REVIEW_QUEUE, THINGS, ask_json, deepseek, label,
+from lib import (CHECKED, DICTIONARY, DRAFT, REVIEW_QUEUE, THINGS, ask_json, catalogue, deepseek, label,
                  read_json, set_queue, slug, write_json)
 from owner_list import EXCLUDED, FAMILIAR_KINDS
 
@@ -97,7 +97,7 @@ def main():
         print(f"  checked {min(start + BATCH, len(drafted))}/{len(drafted)}")
     write_json(CHECKED, {"dictionary_version": dictionary["version"], "verdicts": verdicts})
 
-    store = read_json(THINGS, {"dictionary_version": dictionary["version"], "things": {}})
+    store = catalogue().game_store()
     # Things this same plan produced on an earlier run are re-decided from scratch.
     # Everything else - other plans, the owner's list - is left exactly as it is.
     plan = draft["plan"]
@@ -142,7 +142,7 @@ def main():
         }
 
     store["dictionary_version"] = dictionary["version"]
-    write_json(THINGS, store)
+    catalogue().put_game_store(store, by=f"check.py, plan {plan}")
     set_queue(f"check:{plan}", queue)
     accepted = len(drafted) - len(queue)
     print(f"Accepted {accepted}; {len(queue)} sent to {REVIEW_QUEUE.name}. Next: python tools/content/guard.py")

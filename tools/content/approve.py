@@ -8,7 +8,7 @@ him. Nothing is changed about it here except that mark.
 """
 import sys
 
-from lib import DICTIONARY, REVIEW_QUEUE, THINGS, read_json, slug, write_json
+from lib import DICTIONARY, catalogue, read_json, slug
 
 SOURCE = "deepseek:drafted+checked, approved by the owner"
 FAMILIAR_IF_UNKNOWN = 0.75  # older queue entries did not record the drafter's figure
@@ -19,8 +19,9 @@ def main():
     if not names:
         raise SystemExit("Name the queued things to approve.")
     dictionary = read_json(DICTIONARY)
-    store = read_json(THINGS)
-    queue = read_json(REVIEW_QUEUE)["for_the_owner"]
+    master = catalogue()
+    store = master.game_store()
+    queue = master.queue_view(master.load())["for_the_owner"]
 
     wanted = {slug(name) for name in names}
     found = [e for e in queue if slug(e["name"]) in wanted and e.get("from", "").startswith("check:")]
@@ -41,8 +42,8 @@ def main():
             "drafted_in": entry["from"].split(":", 1)[1],
             "notes": {"general": "Held at first: " + "; ".join(entry["why"])},
         }
-    write_json(THINGS, store)
-    write_json(REVIEW_QUEUE, {"for_the_owner": [e for e in queue if e not in found]})
+    # in the catalogue the thing's status becomes "in the game", which takes it off the queue
+    master.put_game_store(store, by="approve.py")
     print(f"Approved by the owner and added: {', '.join(e['name'] for e in found)}.")
 
 

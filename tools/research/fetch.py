@@ -24,7 +24,7 @@ from urllib.parse import urlparse
 import requests
 from bs4 import BeautifulSoup
 
-from reslib import CACHE, CONFIG, THINGS, read_json, slug, today, write_json
+from reslib import CACHE, CATALOGUE, CONFIG, THINGS, read_json, slug, today, write_json
 
 AGENT = {"User-Agent": "IshansGamesResearch/0.1 (github.com/jijilr/kids-connection-game; "
                        "a children's learning game; a few pages a day)"}
@@ -43,17 +43,17 @@ def true_dinosaurs() -> set:
 
 
 def prehistoric() -> dict:
-    """name -> the group it must be told apart within. Read from the game's own data,
-    plus the animals drawn but not yet in the game."""
+    """name -> the group it must be told apart within. Read from the catalogue: the
+    animals in the game, and those ready but not in it yet."""
     groups = {}
-    for thing in read_json(THINGS)["things"].values():
+    for thing in read_json(CATALOGUE)["things"].values():
+        if thing["status"] not in ("in the game", "not in the game yet"):
+            continue
         fields = thing["fields"]
         if fields.get("kind_of_dinosaur"):
             groups[thing["name"]] = fields["kind_of_dinosaur"]
         elif fields.get("extinct") is True and fields.get("kind_of_animal") == "reptile":
             groups[thing["name"]] = "giant_snake"
-    for name, fields in read_json(CONFIG)["not_in_the_game_yet"].items():
-        groups[name] = fields["kind_of_dinosaur"]
     return groups
 
 

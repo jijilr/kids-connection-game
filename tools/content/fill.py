@@ -14,7 +14,7 @@ an independent check is the planned next step.
 """
 import sys
 
-from lib import DICTIONARY, ROOT, THINGS, applies, read_json, write_json
+from lib import DICTIONARY, ROOT, applies, catalogue, read_json
 
 PROPOSALS = ROOT / "tools/content/field_proposals.json"
 
@@ -40,7 +40,7 @@ def approved_values() -> tuple:
 def main():
     dictionary = read_json(DICTIONARY)
     version = dictionary["version"]
-    store = read_json(THINGS)
+    store = catalogue().game_store()
     values, notes = approved_values()
 
     filled, unanswered = 0, []
@@ -78,7 +78,7 @@ def main():
             thing["reviewed"] = version
             stamped += 1
     store["dictionary_version"] = version
-    write_json(THINGS, store)
+    catalogue().put_game_store(store, by="fill.py")
     print(f"Filled {filled} value(s); stamped {stamped} thing(s) as reviewed against version {version}.")
 
 
