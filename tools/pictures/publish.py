@@ -17,12 +17,16 @@ GAME = ROOT / "Assets/pictures"
 def main():
     records = load_records()
     names = thing_names()
-    chosen = {}
+    chosen, not_in_game = {}, []
     for tile_id, tile in records["tiles"].items():
         tile.pop("published_file", None)
         if tile["review"] != "approved":
             continue
         thing = tile["thing_id"]
+        if thing not in names:
+            # approved, but the thing is not in the game yet (the flyer the child will choose)
+            not_in_game.append(thing)
+            continue
         if thing in chosen:
             raise SystemExit(f"Two approved tiles for {names.get(thing, thing)}: {chosen[thing]} and "
                              f"{tile_id}. Reject or set aside one of them. Nothing was changed.")
@@ -42,6 +46,8 @@ def main():
     print(f"{len(chosen)} approved tiles are in the game ({relative(GAME)}).")
     if removed:
         print(f"Removed, because their tiles are no longer approved: {', '.join(removed)}")
+    if not_in_game:
+        print(f"Approved and kept, but not in the game yet: {', '.join(sorted(not_in_game))}")
 
 
 if __name__ == "__main__":

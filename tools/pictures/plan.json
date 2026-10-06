@@ -651,13 +651,55 @@
         },
         {
           "thing": "titanoboa",
-          "draw": "an extinct giant snake about 13 metres long and as thick as a barrel, like an enormous boa with a brown patterned body, loosely coiled",
-          "look_closely": "extinct, known from fossil backbones; the colour and pattern are a guess"
+          "draw": "an extinct giant snake, drawn as scientists reconstruct it from its closest living relatives, the boas and anacondas: an enormously long and very thick, heavy body; a head that is small for the body and shaped like a boa's; plain natural olive-brown colouring with dark blotches like an anaconda; no hood, no rattle and no fangs showing; loosely coiled",
+          "features": [
+            "An enormous, heavy-bodied snake with no limbs, built like a giant boa or anaconda.",
+            "About 13 metres long (estimates run 12.8 to 14.3 m): seven to eight adult people head to toe.",
+            "Very thick body, about 1 metre across at its widest: hip to waist high on an adult.",
+            "Head small for the body, roughly 40 cm long, shaped like a boa's.",
+            "Many small, closely set teeth; no long fangs.",
+            "Colour and pattern are unknown: plain, natural boa or anaconda tones are acceptable, nothing bright or invented."
+          ],
+          "not_this": [
+            "A cobra hood, a rattle or long venom fangs; it belonged to the boa group of constrictors.",
+            "Film-monster size far beyond about 14 metres.",
+            "Dinosaurs in the same scene; it lived about six million years after they died out."
+          ],
+          "tell_apart": "It is drawn like a giant boa or anaconda. Vasuki indicus is drawn like a giant python. The fossils themselves show no reliable visible difference between the two.",
+          "disagreement": "",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Titanoboa",
+            "https://www.floridamuseum.ufl.edu/science/titanoboa/",
+            "https://www.floridamuseum.ufl.edu/science/at-45-feet-long-titanoboa-snake-ruled-the-amazon/",
+            "https://floridamuseum.ufl.edu/100-years/object/titanoboa",
+            "https://news.unl.edu/newsrooms/unltoday/article/boa-constructors-titanoboa-arrives-is-assembled-at-morrill-hall"
+          ],
+          "research_file": "sea_reptiles_and_snakes.json"
         },
         {
           "thing": "vasuki_indicus",
-          "draw": "an extinct giant snake from India, very long and thick-bodied like an enormous python, stretched out in loose curves",
-          "look_closely": "extinct, known only from backbones; its real appearance is unknown, so this is a reconstruction"
+          "draw": "an extinct giant snake from India, drawn as scientists reconstruct it on the model of a very large python: an enormously long, very thick, round-bodied snake; a plain python-like head; natural brown python-like blotched patterning; no hood, no extra heads and no fangs showing; stretched out in loose curves",
+          "features": [
+            "A very large, heavy-bodied snake with no limbs, drawn on the build of a big python.",
+            "Broad, round, cylinder-shaped body; not flattened from side to side like a swimming snake.",
+            "Length somewhere between 11 and 15 metres: about six to nine adult people head to toe.",
+            "Very thick body, in keeping with backbone pieces up to 11 cm wide; exact girth unknown.",
+            "Head is not known from fossils: a plain python-like head with no special features.",
+            "Colour and pattern unknown: plain, natural python-like tones are acceptable, nothing bright or invented."
+          ],
+          "not_this": [
+            "A cobra hood, extra heads or other mythical features of the Hindu divine serpent Vasuki it is named after.",
+            "Long venom fangs or a rattle; it is thought to have killed by squeezing, like pythons and anacondas.",
+            "A sea-snake or eel shape with a flattened tail; the bones point to a round-bodied land or marsh snake."
+          ],
+          "tell_apart": "It is drawn like a giant python. Titanoboa is drawn like a giant boa or anaconda. The fossils themselves show no reliable visible difference between the two.",
+          "disagreement": "",
+          "sources": [
+            "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11549349/fullTextXML",
+            "https://en.wikipedia.org/wiki/Vasuki_indicus",
+            "https://www.sci.news/paleontology/vasuki-indicus-12873.html"
+          ],
+          "research_file": "sea_reptiles_and_snakes.json"
         },
         {
           "thing": "frog",
@@ -674,13 +716,57 @@
         },
         {
           "thing": "titanoboa",
-          "draw": "a second view of Titanoboa, stretched out long to show its great length and thickness",
-          "look_closely": "a second try; pick the better of the two"
+          "draw": "an extinct giant snake, drawn as scientists reconstruct it from its closest living relatives, the boas and anacondas: an enormously long and very thick, heavy body; a head that is small for the body and shaped like a boa's; plain natural olive-brown colouring with dark blotches like an anaconda; no hood, no rattle and no fangs showing; stretched out long in gentle curves, to show its great length and thickness",
+          "features": [
+            "An enormous, heavy-bodied snake with no limbs, built like a giant boa or anaconda.",
+            "About 13 metres long (estimates run 12.8 to 14.3 m): seven to eight adult people head to toe.",
+            "Very thick body, about 1 metre across at its widest: hip to waist high on an adult.",
+            "Head small for the body, roughly 40 cm long, shaped like a boa's.",
+            "Many small, closely set teeth; no long fangs.",
+            "Colour and pattern are unknown: plain, natural boa or anaconda tones are acceptable, nothing bright or invented."
+          ],
+          "not_this": [
+            "A cobra hood, a rattle or long venom fangs; it belonged to the boa group of constrictors.",
+            "Film-monster size far beyond about 14 metres.",
+            "Dinosaurs in the same scene; it lived about six million years after they died out."
+          ],
+          "tell_apart": "It is drawn like a giant boa or anaconda. Vasuki indicus is drawn like a giant python. The fossils themselves show no reliable visible difference between the two.",
+          "disagreement": "",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Titanoboa",
+            "https://www.floridamuseum.ufl.edu/science/titanoboa/",
+            "https://www.floridamuseum.ufl.edu/science/at-45-feet-long-titanoboa-snake-ruled-the-amazon/",
+            "https://floridamuseum.ufl.edu/100-years/object/titanoboa",
+            "https://news.unl.edu/newsrooms/unltoday/article/boa-constructors-titanoboa-arrives-is-assembled-at-morrill-hall"
+          ],
+          "research_file": "sea_reptiles_and_snakes.json",
+          "look_closely": "a second try; the better of the two is kept"
         },
         {
           "thing": "vasuki_indicus",
-          "draw": "a second view of Vasuki indicus, loosely coiled",
-          "look_closely": "a second try; pick the better of the two"
+          "draw": "an extinct giant snake from India, drawn as scientists reconstruct it on the model of a very large python: an enormously long, very thick, round-bodied snake; a plain python-like head; natural brown python-like blotched patterning; no hood, no extra heads and no fangs showing; loosely coiled",
+          "features": [
+            "A very large, heavy-bodied snake with no limbs, drawn on the build of a big python.",
+            "Broad, round, cylinder-shaped body; not flattened from side to side like a swimming snake.",
+            "Length somewhere between 11 and 15 metres: about six to nine adult people head to toe.",
+            "Very thick body, in keeping with backbone pieces up to 11 cm wide; exact girth unknown.",
+            "Head is not known from fossils: a plain python-like head with no special features.",
+            "Colour and pattern unknown: plain, natural python-like tones are acceptable, nothing bright or invented."
+          ],
+          "not_this": [
+            "A cobra hood, extra heads or other mythical features of the Hindu divine serpent Vasuki it is named after.",
+            "Long venom fangs or a rattle; it is thought to have killed by squeezing, like pythons and anacondas.",
+            "A sea-snake or eel shape with a flattened tail; the bones point to a round-bodied land or marsh snake."
+          ],
+          "tell_apart": "It is drawn like a giant python. Titanoboa is drawn like a giant boa or anaconda. The fossils themselves show no reliable visible difference between the two.",
+          "disagreement": "",
+          "sources": [
+            "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11549349/fullTextXML",
+            "https://en.wikipedia.org/wiki/Vasuki_indicus",
+            "https://www.sci.news/paleontology/vasuki-indicus-12873.html"
+          ],
+          "research_file": "sea_reptiles_and_snakes.json",
+          "look_closely": "a second try; the better of the two is kept"
         },
         {
           "thing": "snake",
@@ -697,52 +783,246 @@
       "cells": [
         {
           "thing": "tyrannosaurus_rex",
-          "draw": "a huge two-legged meat-eater with a massive deep skull and thick teeth, tiny two-fingered arms, powerful hind legs and a long heavy tail held level; scaly skin",
-          "name": "Tyrannosaurus rex"
+          "draw": "a huge two-legged meat-eater with its body held level and its heavy tail stretched out behind, off the ground; a massive deep skull, very wide at the back, with thick banana-shaped teeth; very small arms, each with two clawed fingers; long powerful back legs; scaly skin with no coat of feathers",
+          "name": "Tyrannosaurus rex",
+          "features": [
+            "Huge two-legged meat-eater about 12 m long and 3.5-4 m tall at the hips, more than twice an adult person's height.",
+            "Body held level, roughly parallel to the ground, with the heavy tail stretched out behind and off the ground to balance the head.",
+            "Massive skull about 1.5 m long, very wide at the back with a narrower snout, on a short, thick, S-curved neck.",
+            "About 60 thick, pointed, saw-edged teeth, the biggest shaped like bananas rather than thin blades.",
+            "Surprisingly small arms for such a large body, each with only two clawed fingers.",
+            "Long, strong, heavily muscled back legs; it walks on two legs only.",
+            "Scaly skin: fossil skin shows small scales on the neck, hips and tail; no thick feather coat."
+          ],
+          "not_this": [
+            "Upright 'living tripod' or kangaroo pose with the body sloping upward and the tail dragging on the ground.",
+            "Three-fingered hands or long grabbing arms.",
+            "A thick coat of feathers all over the body."
+          ],
+          "tell_apart": "Deeper, heavier skull that is very wide at the back; thick banana-like teeth; tiny arms with TWO fingers; bulkier body. Giganotosaurus has a long low skull with a rough snout ridge and three fingers; Allosaurus is much smaller, with short horns above the eyes and three strong-clawed fingers.",
+          "disagreement": "",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/tyrannosaurus.html",
+            "https://en.wikipedia.org/wiki/Tyrannosaurus",
+            "https://australian.museum/learn/dinosaurs/fact-sheets/tyrannosaurus-rex/",
+            "https://www.fieldmuseum.org/blog/sue-t-rex"
+          ],
+          "research_file": "hunters_and_armoured.json"
         },
         {
           "thing": "giganotosaurus",
-          "draw": "as long as T. rex but more lightly built, with a longer, lower, narrower skull, rough ridges above the eyes, and three-fingered arms",
-          "look_closely": "easily drawn as a second T. rex; check the longer, narrower skull and three fingers",
-          "name": "Giganotosaurus"
+          "draw": "a giant two-legged meat-eater, a little longer and more lightly built than Tyrannosaurus, with its body level and tail stretched out behind; a long, LOW skull with a rough wrinkled ridge along the top of the snout, a small crest in front of each eye, and a small chin-like bump at the tip of the lower jaw; thin blade-like teeth; short arms with three clawed fingers; scaly skin; no sail or spines on the back",
+          "name": "Giganotosaurus",
+          "features": [
+            "Giant two-legged meat-eater about 12-13 m long, as long as or a little longer than T. rex.",
+            "Long, low skull, about 1.5-1.8 m, noticeably lower and less deep than the head of T. rex.",
+            "Rough, wrinkled bony surface along the top of the snout.",
+            "A small ridge-like crest or horn just in front of each eye, pointing up and slightly back.",
+            "Lower jaw flattened at the front, with a small downward bump, like a chin, at its tip.",
+            "Teeth long, thin and blade-like with saw edges, flattened from side to side.",
+            "Short arms with three clawed fingers on each hand, not two.",
+            "Strong neck; body held level on two legs with the tail stretched out behind."
+          ],
+          "not_this": [
+            "A copy of T. rex: deep boxy head, thick peg-like teeth and two-fingered arms.",
+            "Extra spines, fins or a sail along the back; the sources describe none.",
+            "Upright pose with the tail dragging on the ground."
+          ],
+          "tell_apart": "Versus T. rex: skull long and low instead of deep and wide; rough snout ridge, small crest in front of each eye and a chin bump on the lower jaw; thin blade teeth; three fingers, not two. Versus Allosaurus: far bigger (12-13 m against roughly 7-10 m) and has low rough ridges rather than Allosaurus's distinct short horns above the eyes.",
+          "disagreement": "",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/giganotosaurus.html",
+            "https://en.wikipedia.org/wiki/Giganotosaurus",
+            "https://australian.museum/learn/dinosaurs/fact-sheets/giganotosaurus-carolinii/"
+          ],
+          "research_file": "hunters_and_armoured.json"
         },
         {
           "thing": "allosaurus",
-          "draw": "a medium-sized two-legged meat-eater with a pair of short horn-like crests in front of the eyes and three-fingered hands with large claws",
-          "name": "Allosaurus"
+          "draw": "a large but lighter two-legged meat-eater with its body level and a long tail; a pair of short horns above and just in front of the eyes, with two low ridges along the snout leading back to them; a big but lightly built skull with dagger-like teeth; short strong arms with three fingers ending in large curved claws; pebbly scaly skin",
+          "name": "Allosaurus",
+          "features": [
+            "Large two-legged meat-eater about 7-10 m long and 2-3 tonnes: much smaller and lighter than T. rex.",
+            "A pair of short horns above and just in front of the eyes.",
+            "Two low ridges running along the top of the snout, leading back into the horns.",
+            "Big but lightly built skull on a short neck, with dozens of dagger-like, saw-edged teeth.",
+            "Short but strong arms, about a third of leg length, with three fingers ending in large, strongly curved claws.",
+            "The innermost finger (thumb) and its claw are the largest of the three.",
+            "Body level with a deep barrel chest, balanced by a long, muscular, slightly sloping tail.",
+            "Scaly skin of small pebbly scales; fossil skin shows scales, not feathers."
+          ],
+          "not_this": [
+            "Two-fingered T. rex hands or a deep, heavy T. rex head.",
+            "Leaving out the horns above the eyes, or drawing them as big bull-like horns; they are short.",
+            "Upright pose with the tail dragging on the ground."
+          ],
+          "tell_apart": "The smallest and lightest of the three big hunters. Look for the short horns above the eyes, the paired snout ridges, and clearly visible three-fingered hands with big curved claws; T. rex has two fingers and a much deeper head, Giganotosaurus is far larger with a long low skull.",
+          "disagreement": "",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/allosaurus.html",
+            "https://en.wikipedia.org/wiki/Allosaurus"
+          ],
+          "research_file": "hunters_and_armoured.json"
         },
         {
           "thing": "spinosaurus",
-          "draw": "a long, low, crocodile-like snout with cone-shaped teeth, a tall sail along its back, short hind legs, and a long deep paddle-shaped tail",
-          "look_closely": "scientists' picture of it has changed; check the paddle tail and short legs",
-          "name": "Spinosaurus"
+          "draw": "a very large, long, LOW-slung meat-eater; its back legs are strikingly SHORT and stubby, far shorter than those of other big meat-eaters, so its long body and belly are carried close to the ground; standing on its two short back legs with its body level; a long, low, narrow crocodile-like snout with straight cone-shaped teeth and a small crest in front of the eyes; a tall skin-covered sail along its back; strong arms with three clawed fingers; a long tail that is tall and flattened from side to side like a paddle or a newt's tail",
+          "name": "Spinosaurus",
+          "features": [
+            "Very large meat-eater about 14 m long, longer than T. rex, with a long, low body.",
+            "Long, low, narrow crocodile-like snout with a notch near the front and a widened tip holding the biggest teeth.",
+            "Straight, smooth, cone-shaped teeth, not curved saw-edged blades.",
+            "Tall skin-covered sail along the back, at least 1.5 m high, held up by long thin spines of the backbone.",
+            "Short back legs, only about a quarter of the body length, far shorter than in other big meat-eaters.",
+            "Long tail that is tall and flattened from side to side like a paddle or a newt's tail.",
+            "Large, stocky arms with three clawed fingers on each hand; the thumb claw is the largest.",
+            "Small bony crest on top of the head in front of the eyes."
+          ],
+          "not_this": [
+            "Older (pre-2014) and film versions with long T. rex-like running legs and a thin, round, pointed tail.",
+            "A short, deep T. rex-style head with curved blade teeth.",
+            "A sail-backed lizard walking on four sprawling legs like Dimetrodon."
+          ],
+          "tell_apart": "Unmistakable among the meat-eaters: back sail, crocodile-like snout, short back legs and a tall paddle-shaped tail. None of the others has any of these.",
+          "disagreement": "Scientists agree on the crocodile-like snout, the sail, the short back legs and the paddle tail. They still debate whether it walked on two legs or four, and whether it swam after prey or waded like a heron. The tile shows it on two legs, which recent studies favour.",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/spinosaurus.html",
+            "https://en.wikipedia.org/wiki/Spinosaurus"
+          ],
+          "research_file": "hunters_and_armoured.json"
         },
         {
           "thing": "velociraptor",
-          "draw": "the size of a turkey, covered in feathers with feathered arms and a feathered tail, a long narrow snout, and one raised sickle-shaped claw on each foot",
-          "look_closely": "science says small and feathered; films show it large and scaly. Your decision which he should see",
-          "name": "Velociraptor"
+          "draw": "a small feathered dinosaur the size of a turkey, like a long-tailed, toothed, ground-running bird; body covered in feathers, with longer wing-like feathers on the forearms and feathers on the tail; a long, low, narrow head with a slightly upturned snout and small sharp teeth; three long clawed fingers; one large sickle-shaped claw on the second toe of each foot, held raised off the ground; a long stiff tail held straight out behind",
+          "name": "Velociraptor",
+          "features": [
+            "Small, about the size of a turkey: roughly 0.5 m tall at the hips, only knee-high to an adult person.",
+            "About 1.5-2 m long from snout to tail tip, with a slim, light body.",
+            "Body covered in feathers, with longer wing-like feathers along the forearms.",
+            "Long, low, narrow head with a slightly upturned snout, dished on top, and many small sharp teeth.",
+            "Three long fingers on each hand, each ending in a strongly curved claw.",
+            "One large sickle-shaped claw on the second toe of each foot, held raised off the ground.",
+            "Walks on two legs with a long tail held out behind, stiffened by bony rods."
+          ],
+          "not_this": [
+            "The film raptor: human-sized, scaly and featherless (the films showed it at least twice real size, based on the larger Deinonychus).",
+            "Bare lizard-like skin with no feathers.",
+            "All toes flat on the ground with no raised sickle claw."
+          ],
+          "tell_apart": "By far the smallest hunter in the set and the only feathered one; it should look like a long-tailed, toothed, ground-running bird about knee-high, never like a small scaly T. rex.",
+          "disagreement": "",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/velociraptor.html",
+            "https://en.wikipedia.org/wiki/Velociraptor"
+          ],
+          "research_file": "hunters_and_armoured.json"
         },
         {
           "thing": "triceratops",
-          "draw": "a four-legged plant-eater with a large bony neck frill, two long brow horns, one short nose horn and a parrot-like beak",
-          "name": "Triceratops"
+          "draw": "a big heavy four-legged plant-eater built like a giant rhinoceros; an enormous head with two long brow horns pointing forward, one short nose horn, a parrot-like beak, and a large solid bony frill with no holes, edged with low triangular bumps; sturdy legs held upright under the body; pebbly scaly skin",
+          "name": "Triceratops",
+          "features": [
+            "Big, heavy four-legged plant-eater about 8-9 m long and 2.3-3 m tall, built like a giant rhinoceros.",
+            "Enormous head, up to about a third of the whole body length.",
+            "Two long brow horns, about 1 m each, one above each eye, pointing forward in adults.",
+            "One short horn on the nose above the nostrils.",
+            "Large bony frill behind the head: solid with no holes, fairly short, edged with low triangular bumps.",
+            "Parrot-like beak at the front of the mouth.",
+            "Sturdy legs held upright under the body, elbows only slightly bowed out; short feet with hoof-like toes.",
+            "Scaly skin of large pebbly scales, some six-sided with a small cone-shaped bump in the middle."
+          ],
+          "not_this": [
+            "Front legs sprawling out sideways like a lizard.",
+            "A frill with open holes or long spikes round its edge, as in other horned dinosaurs; this frill is solid with only low bumps.",
+            "A long nose horn with short brow horns (the wrong way round)."
+          ],
+          "tell_apart": "The only animal in the set with three face horns, a parrot beak and a solid neck frill; rhinoceros-like body on four legs.",
+          "disagreement": "",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/triceratops.html",
+            "https://en.wikipedia.org/wiki/Triceratops"
+          ],
+          "research_file": "hunters_and_armoured.json"
         },
         {
           "thing": "stegosaurus",
-          "draw": "a four-legged plant-eater with a small low head, two rows of large upright plates along its back and four spikes at the end of its tail",
-          "name": "Stegosaurus"
+          "draw": "a large four-legged plant-eater with a high arched back, highest over the hips, and front legs much shorter than its back legs; a very small narrow head carried low; two staggered rows of upright kite-shaped plates along its neck, back and tail, the largest over the hips; four long spikes near the tip of the tail pointing out sideways; tail held clear of the ground",
+          "name": "Stegosaurus",
+          "features": [
+            "Large four-legged plant-eater about 6.5-9 m long with a high arched back, highest over the hips.",
+            "17 to 22 upright, kite-shaped bony plates running along the neck, back and tail.",
+            "Plates stand in two staggered rows, alternating left and right, not in matched pairs.",
+            "Largest plates over the hips, up to about 1 m tall; smaller toward the head and tail tip.",
+            "Four long spikes, 60-90 cm each, near the tail tip, sticking out sideways rather than straight up.",
+            "Very small, narrow head carried low, about 1 m above the ground, with a beak at the front.",
+            "Front legs much shorter than back legs, so the back slopes down toward the head.",
+            "Tail held well clear of the ground."
+          ],
+          "not_this": [
+            "Tail dragging on the ground with a sagging body, as in old books.",
+            "Plates in one single row, in matched pairs, or lying flat on the back.",
+            "More than four tail spikes, or spikes standing straight up."
+          ],
+          "tell_apart": "The only animal here with tall upright plates along the back and four tail spikes; Ankylosaurus is low and flat with a tail club and no tall plates.",
+          "disagreement": "",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/stegosaurus.html",
+            "https://en.wikipedia.org/wiki/Stegosaurus"
+          ],
+          "research_file": "hunters_and_armoured.json"
         },
         {
           "thing": "ankylosaurus",
-          "draw": "low, wide and tank-like, its back covered in bony armour plates and knobs, with a heavy club at the end of its tail",
-          "name": "Ankylosaurus"
+          "draw": "a broad, low, tank-like four-legged plant-eater; back and sides covered in flat and low-ridged bony plates and knobs set in the skin, with no tall spikes; a large rounded bony club at the tip of a stiff tail held off the ground; a wide low triangular head with a broad beak and four short horns at the back; short sturdy legs held upright under the body",
+          "name": "Ankylosaurus",
+          "features": [
+            "Broad, low, tank-like four-legged plant-eater about 6-8 m long and roughly 1.5 m tall at the hips.",
+            "Back and sides covered in bony plates and knobs set in the skin, mostly flat or low-ridged and fairly smooth.",
+            "Large, heavy, rounded bony club at the tail tip, about 60 cm long and 50 cm wide.",
+            "End of the tail stiff like a club handle, held off the ground.",
+            "Wide, low, triangular head with a broad beak at the front.",
+            "Four short horns at the back of the head: two pointing backward, two lower ones pointing backward and down.",
+            "Bony half-rings of armour across the top of the neck.",
+            "Short, sturdy legs held upright under the body; back legs longer than front legs and without armour."
+          ],
+          "not_this": [
+            "Long spikes sticking out sideways from the body or shoulders; those belong to other armoured dinosaurs such as Edmontonia.",
+            "Tall pointed spikes all over the back; the plates are flat or low-keeled.",
+            "Sprawling lizard stance with the tail club dragging on the ground."
+          ],
+          "tell_apart": "Low, wide and flat-backed with a tail club and a horned triangular head; no tall back plates and no tail spikes, unlike Stegosaurus.",
+          "disagreement": "",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/ankylosaurus.html",
+            "https://en.wikipedia.org/wiki/Ankylosaurus"
+          ],
+          "research_file": "hunters_and_armoured.json"
         },
         {
           "thing": "parasaurolophus",
-          "draw": "a duck-billed plant-eater with a long, curved, hollow crest sweeping back from its head",
-          "look_closely": "less common; check the long backward crest",
-          "name": "Parasaurolophus"
+          "draw": "a large duck-billed plant-eater standing on all fours, its arms shorter than its legs; one long, hollow, tube-shaped crest sweeping up and back from the top of its head, gently curved and reaching well beyond the back of the head, with no flap of skin joining it to the neck; a broad flat duck-like beak; a deep body with a ridge along the back; pebbly scaly skin with no plates or spikes",
+          "name": "Parasaurolophus",
+          "features": [
+            "Large duck-billed plant-eater about 9-9.5 m long and about 5 tonnes.",
+            "One long, hollow, tube-shaped crest sweeping upward and backward from the top of the head, gently curved.",
+            "Head and crest together about 1.6 m long, so the crest reaches well beyond the back of the head.",
+            "Broad, flat, duck-like beak at the front of the mouth.",
+            "Usually on all fours but able to rise onto its two back legs; arms shorter than legs.",
+            "Tall ridge along the back from tall backbone spines, giving a deep body.",
+            "Scaly, pebbly skin of small, even, rounded scales with no plates, spikes or feathers."
+          ],
+          "not_this": [
+            "A short stubby crest, or a crest pointing forward or straight up; it sweeps backward.",
+            "Standing bolt upright like a kangaroo with the tail resting on the ground.",
+            "A large flap of skin joining the crest to the neck drawn as fact; evidence for it is weak."
+          ],
+          "tell_apart": "The only animal in the set with a single long backward-pointing tube crest and a duck bill; no horns, plates or armour.",
+          "disagreement": "",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/parasaurolophus.html",
+            "https://en.wikipedia.org/wiki/Parasaurolophus"
+          ],
+          "research_file": "hunters_and_armoured.json"
         }
       ]
     },
@@ -754,56 +1034,253 @@
       "cells": [
         {
           "thing": "brachiosaurus",
-          "draw": "giraffe-like, with front legs longer than its back legs so its back slopes down, its neck held high and upright, and a rounded crest on top of its small head",
-          "look_closely": "the four long-necks look alike; check the high neck and sloping back",
-          "name": "Brachiosaurus"
+          "draw": "a very tall giraffe-like long-neck: its FRONT LEGS ARE LONGER than its back legs, so its shoulders stand well above its hips and its back slopes down toward the tail; a very long neck rising steeply upward in a gentle curve; a small head, tall in profile, with a long blunt snout and the nostrils at the front of the snout; a deep chest on four slender straight pillar-like legs, standing on all fours; a muscular tail that is short for a long-neck, held off the ground",
+          "name": "Brachiosaurus",
+          "features": [
+            "Front legs longer than back legs, so shoulders stand much higher than hips and the back slopes down toward the tail.",
+            "Giraffe-like build: very long neck leaving the shoulders at a steep upward angle, held high in a gentle S-curve.",
+            "Deep chest and large body carried on four slender, straight, column-like legs; always on all fours.",
+            "Small head, tall in profile, with a long blunt snout; nostrils drawn at the front of the snout.",
+            "Tail muscular but noticeably short for a sauropod.",
+            "Roughly 18-22 m long with the head 9-13 m above ground; an adult person stands well below its belly.",
+            "Probably a small hump over the shoulders where the neck muscles attach."
+          ],
+          "not_this": [
+            "Nostrils on top of the head, or the animal standing deep in water using its head as a snorkel (old swamp idea).",
+            "Rearing up on its hind legs as in films; its weight sat too far forward for that.",
+            "A level back with front and back legs the same length."
+          ],
+          "tell_apart": "The only one of the four whose front legs are longer than its back legs: shoulders well above hips, back sloping down to a short tail, neck rising steeply like a giraffe's. Diplodocus and Brontosaurus have a level back, a lower neck and a very long whip tail. Argentinosaurus is far bigger and broader and should not be given the high-shouldered slope.",
+          "disagreement": "",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/brachiosaurus.html",
+            "https://en.wikipedia.org/wiki/Brachiosaurus",
+            "https://en.wikipedia.org/wiki/Sauropoda"
+          ],
+          "research_file": "long_necks_dome_head_flyers.json"
         },
         {
           "thing": "brontosaurus",
-          "draw": "a heavy long-neck with a very thick, deep neck held forward, a level back and a long whip-like tail",
-          "look_closely": "the four long-necks look alike; check the thick neck",
-          "name": "Brontosaurus"
+          "draw": "a heavily built long-neck on four thick straight legs; its back is highest over the HIPS and slopes gently down to the shoulders, which are lower than the hips; a long neck that is strikingly THICK, wide and deep, held forward and only gently raised; a very small, LOW, long, flat head with a squared-off snout like the head of Diplodocus, not a tall boxy head; an EXTREMELY long tail, clearly longer than the neck and more than half the animal's whole length, stretching far out behind and tapering to a long thin whip, held in the air and not curled; the front feet are round pillars showing a single thumb claw and no other claws; plain scaly skin with no spines",
+          "name": "Brontosaurus",
+          "features": [
+            "Heavily built sauropod on four thick, straight legs; front legs slightly shorter than back legs, back arching highest over the hips.",
+            "Long neck that is strikingly thick, wide and deep, about twice as massive as the neck of other diplodocids.",
+            "Very small, low head with a squared-off snout, like the head of Diplodocus.",
+            "Tail over half the total length, tapering to a thin whip and carried in the air.",
+            "Each front foot shows one large inward-pointing claw; the other front toes have no claws.",
+            "About 21-23 m long and 4.5 m tall at the back; an adult person stands under half that height.",
+            "Walking on dry land with legs upright beneath the body, hind legs bending in a stride."
+          ],
+          "not_this": [
+            "Tail dragging on the ground (old museum mounts and books).",
+            "A short, tall, boxy head; early skeletons wore a wrong Camarasaurus-style skull.",
+            "Standing half-sunk in a swamp or lake to support its weight."
+          ],
+          "tell_apart": "Same layout as Diplodocus (level back, whip tail, small low head) but visibly stockier: a thick, deep, wide neck, heavier legs and body, and shorter overall (about 22 m against 26 m). Unlike Brachiosaurus its shoulders are not above its hips and its neck does not rise steeply. Far smaller and less massive than Argentinosaurus.",
+          "disagreement": "",
+          "sources": [
+            "https://news.yale.edu/2022/11/11/strike-pose-yales-iconic-dinosaur-skeletons-get-new-look",
+            "https://www.amnh.org/explore/ology/ology-cards/006-apatosaurus-excelsus",
+            "https://www.britannica.com/animal/brontosaurus",
+            "https://en.wikipedia.org/wiki/Brontosaurus"
+          ],
+          "research_file": "long_necks_dome_head_flyers.json"
         },
         {
           "thing": "diplodocus",
-          "draw": "very long and slender, its long neck held nearly level, an extremely long thin whip tail longer than its neck, and a small low head",
-          "look_closely": "the four long-necks look alike; check the slender body and very long tail",
-          "name": "Diplodocus"
+          "draw": "the slimmest and longest long-neck: a light, slender body with a level back on four straight legs, the front legs slightly shorter; a long THIN neck held roughly level or only gently raised, not upright; a very small low head with peg-like teeth only at the front of the mouth; an extremely long tail, more than half its whole length, tapering to a thin whip and held off the ground; small pebbly scales and a smooth back with no spines",
+          "name": "Diplodocus",
+          "features": [
+            "Very long, slim sauropod, about 24-26 m, lightly built for its length.",
+            "Front legs slightly shorter than back legs, giving a largely horizontal body.",
+            "Long slender neck held roughly level or gently raised, not straight up.",
+            "Extremely long tail, over half the total length, tapering to a thin whip and balancing the neck.",
+            "Very small, low head; peg-like teeth only at the front of the mouth, pointing forward.",
+            "Skin of small pebbly scales; front feet are compact columns with one large thumb claw each."
+          ],
+          "not_this": [
+            "Legs sprawled out sideways like a lizard with the belly near the ground (reconstructions from about 1910).",
+            "Tail dragging along the ground.",
+            "Wading or swimming in deep water as a swamp animal."
+          ],
+          "tell_apart": "The slimmest and longest-looking of the four: a thin neck, a light body, a level back and a whip tail. Brontosaurus has the same layout but is clearly stockier with a much thicker, deeper neck. Brachiosaurus has high shoulders, a sloping back and a short tail. Argentinosaurus is far bulkier and broader, with no whip tail.",
+          "disagreement": "The Natural History Museum describes a row of small spines along its back. The encyclopedia says the fossil skin with those spines may belong to a close relative. The tile leaves the spines out, so Amargasaurus stays the only long-neck with spines.",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/diplodocus.html",
+            "https://en.wikipedia.org/wiki/Diplodocus",
+            "https://en.wikipedia.org/wiki/Sauropoda",
+            "https://news.yale.edu/2022/11/11/strike-pose-yales-iconic-dinosaur-skeletons-get-new-look"
+          ],
+          "research_file": "long_necks_dome_head_flyers.json"
         },
         {
           "thing": "argentinosaurus",
-          "draw": "one of the largest land animals ever, enormously bulky with a wide body, a long neck held up at an angle, and a shorter tail with no whip end",
-          "look_closely": "known from few bones, so much of this is a reconstruction; must look bulkier than the others",
-          "name": "Argentinosaurus"
+          "draw": "one of the largest land animals ever: an enormously massive, broad, deep-bodied long-neck with wide hips, on four very thick straight pillar-like legs; a long thick neck held forward and gently raised, with a small head; its shoulders about level with its hips, not raised like a giraffe's; a long thick tail that tapers evenly, with no thin whip end, held off the ground; plain skin with no crest, sail, spines or armour",
+          "name": "Argentinosaurus",
+          "features": [
+            "Gigantic four-legged sauropod about 30-35 m long; an adult person stands only about knee-high beside it.",
+            "Extremely massive, deep-bodied and wide-hipped (about 65-80 tonnes), far heavier-looking than a Diplodocus of similar length.",
+            "Four straight, column-like legs under the body; back legs about 4.5 m tall, thigh bone alone 2.5 m.",
+            "Long neck with a small head, restored from related titanosaurs; no neck bones or skull have been found.",
+            "Long tapering tail, also restored from relatives; no tail bones have been found.",
+            "Shoulders about 7 m above ground in the museum's mounted skeleton reconstruction.",
+            "Plain skin with no crest, sail, spines or armour; none is known for this animal."
+          ],
+          "not_this": [
+            "Invented details shown as fact: a head crest, back spines, armour plates or a whip tail have no fossil support.",
+            "A high-shouldered giraffe shape copied from Brachiosaurus.",
+            "Tail dragging on the ground, or the animal wading in a swamp."
+          ],
+          "tell_apart": "Told from the other long-necks by sheer bulk: a broad, very heavy body with a thick neck, shoulders about level with the hips, a thick tail with no thin whip end, and no spines. Brachiosaurus has high shoulders and a sloping back. Diplodocus and Brontosaurus have a thin whip tail. These proportions come from related giant long-necks, not from Argentinosaurus bones.",
+          "disagreement": "Only a few bones are known: some back and hip bones, a rib and leg bones. Its head, neck, tail and skin are drawn from related giant long-necks, so the whole shape is an informed estimate.",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/argentinosaurus.html",
+            "https://en.wikipedia.org/wiki/Argentinosaurus",
+            "https://en.wikipedia.org/wiki/Sauropoda"
+          ],
+          "research_file": "long_necks_dome_head_flyers.json"
         },
         {
           "thing": "amargasaurus",
-          "draw": "a small long-neck with two rows of tall spines running along its neck and back",
-          "look_closely": "less common; check the double row of neck spines",
-          "name": "Amargasaurus"
+          "draw": "a small long-neck with a barrel-shaped body on four pillar-like legs, the front legs somewhat shorter; a SHORT neck for a long-neck, carried low or gently sloping, never upright; TWO parallel rows of tall thin spines along the top of the neck, tallest in the middle of the neck and curving backward; in each row the spines are joined by skin for most of their height, so the neck carries a tall double sail with the tips of the spines showing; the paired spines continue, shorter, onto the front of the back; only a low ridge over the hips and the base of the tail; a small head with a broad snout pointing downward; a long tapering tail",
+          "name": "Amargasaurus",
+          "features": [
+            "Small sauropod about 9-13 m long and 2.5 m high, with a barrel-shaped body on four column-like legs.",
+            "Neck short for a sauropod, about 2.4 m, carried low or gently sloping, never upright.",
+            "Two parallel rows of tall, thin, tapering spines along the neck, tallest mid-neck at about 60 cm, curving backward.",
+            "The paired spines continue, shorter, onto the front of the back.",
+            "Over the hips and tail base, a single row of paddle-shaped spines makes a low ridge.",
+            "Small head with a broad, horse-like snout and pencil-like teeth, pointing downward.",
+            "Front legs somewhat shorter than back legs; long tapering tail.",
+            "Spines either joined by skin into a neck sail or shown as separate horn-covered spikes."
+          ],
+          "not_this": [
+            "One tall sail down the middle of the back, like Spinosaurus or Dimetrodon.",
+            "A long neck raised upright like a giraffe's; the spines stopped it lifting the neck vertically.",
+            "A smooth neck with no spines, or only a single row of spines on the neck."
+          ],
+          "tell_apart": "The only sauropod in the game with spines: a double row of tall spines (or a sail) on a short neck. It is also by far the smallest, about 10 m, while the other four are two to three times longer and have smooth necks.",
+          "disagreement": "Scientists agree on two rows of tall spines along the neck. They do not agree whether skin joined them into a sail or they stood as separate spikes. A 2022 study of the bone favours a sail, and the tile follows it.",
+          "sources": [
+            "https://museum.wa.gov.au/explore/dinosaur-discovery/amargasaurus",
+            "https://en.wikipedia.org/wiki/Amargasaurus"
+          ],
+          "research_file": "long_necks_dome_head_flyers.json"
         },
         {
           "thing": "pachycephalosaurus",
-          "draw": "a two-legged plant-eater with a thick high dome of bone on top of its head, ringed with small knobs and spikes, and short arms",
-          "look_closely": "less common; check the domed head",
-          "name": "Pachycephalosaurus"
+          "draw": "a two-legged plant-eater walking on two long strong back legs, with its body level and its heavy tail held stiff and straight out behind, off the ground; a large smooth rounded dome of bone on top of its head; small bony knobs around the back of the dome and short blunt spikes on the snout, with no long horns; a short skull with a small pointed beak and large eyes; short arms with five-fingered hands; a bulky body and a short thick neck",
+          "name": "Pachycephalosaurus",
+          "features": [
+            "Walks on two long, strong back legs; heavy tail held stiff and straight out behind, off the ground.",
+            "Large, smooth, rounded bony dome on top of the head (bone up to 25 cm thick).",
+            "Bony knobs edge the back of the dome; short, blunt spikes point up from the snout.",
+            "Short skull with a small muzzle ending in a pointed beak; large round eyes facing forward.",
+            "Short arms with five-fingered hands, a bulky body, and a fairly short, thick neck.",
+            "About 3-4.5 m long and 370-450 kg; roughly car-length, not a giant."
+          ],
+          "not_this": [
+            "Upright kangaroo pose with the tail resting or dragging on the ground.",
+            "Long sharp horns; adults had short blunt knobs and spikes (long horns belong to young animals once named Stygimoloch).",
+            "A flat head with no dome (the juvenile form once named Dracorex)."
+          ],
+          "tell_apart": "No look-alike among these eleven: it is the only two-legged animal here, with a short neck and a domed head ringed by knobs. It is not a long-necked sauropod and has no wings.",
+          "disagreement": "",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/pachycephalosaurus.html",
+            "https://en.wikipedia.org/wiki/Pachycephalosaurus"
+          ],
+          "research_file": "long_necks_dome_head_flyers.json"
         },
         {
           "thing": "pterodactylus",
-          "draw": "a small flying reptile with a one-metre wingspan, long narrow jaws with small teeth, a low soft crest, a very short tail, and skin wings stretched from one very long finger; shown flying",
-          "look_closely": "often drawn as Pteranodon by mistake; it must be small, toothed and without a big crest",
-          "name": "Pterodactylus"
+          "draw": "a SMALL flying reptile, shown flying with its wings spread; long thin straight jaws with many small cone-shaped teeth, the longest at the very tips of the jaws and smaller ones behind; the back of the head is smooth and rounded with NOTHING pointing backward; its only crest is a low, soft, rounded-triangular ridge on top of the head whose highest point is directly above the eyes; a short stub of a tail; each wing a sheet of skin stretched from one very long finger back to the hind leg, with three small clawed fingers free at the front edge of the wing; short fuzz on the head and body, and bare wings",
+          "name": "Pterodactylus",
+          "features": [
+            "Small pterosaur: wingspan about 1 m (at most 1.5 m), far smaller than a person.",
+            "Long, thin, straight jaws with about 90 small cone-shaped teeth, largest at the jaw tips.",
+            "Short tail, barely visible; no long tail and no tail vane.",
+            "Low soft crest on top of the head, small and triangular with its peak above the eyes.",
+            "Wing is skin stretched from one very long fourth finger back to the hind leg; three small clawed fingers stay free.",
+            "Short hair-like fuzz on head and body; wing membranes bare."
+          ],
+          "not_this": [
+            "Huge size, a toothless beak or a long bony crest pointing backward: that is Pteranodon.",
+            "A long tail with a diamond tip: that is Rhamphorhynchus.",
+            "Bat wings with several fingers in the membrane, bare scaly skin, or standing upright on two legs."
+          ],
+          "tell_apart": "Pteranodon is about six times larger, has no teeth at all and carries a big bony crest sweeping back from the skull; Pterodactylus is small, has a mouth full of small teeth and only a low soft crest above the eyes. Unlike Rhamphorhynchus and Dimorphodon its tail is a short stub. Unlike Quetzalcoatlus it is tiny, toothed and short-necked by comparison.",
+          "disagreement": "",
+          "sources": [
+            "https://www.amnh.org/explore/news-blogs/what-is-a-pterosaur",
+            "https://www.amnh.org/explore/ology/paleontology/pterosaurs-the-card-game/meet-the-pterosaurs",
+            "https://www.nhm.ac.uk/discover/the-truth-about-pterosaurs.html",
+            "https://www.britannica.com/animal/pterodactyl",
+            "https://en.wikipedia.org/wiki/Pterodactylus",
+            "https://en.wikipedia.org/wiki/Pterosaur"
+          ],
+          "research_file": "long_necks_dome_head_flyers.json"
         },
         {
           "thing": "pteranodon",
-          "draw": "a large flying reptile with a long toothless beak, a long bony crest pointing back from its head, and a very short tail; shown flying",
-          "name": "Pteranodon"
+          "draw": "a very LARGE flying reptile, shown flying with its long narrow albatross-like wings spread; a long slender completely TOOTHLESS beak ending in a sharp point; a long blade-like bony crest rising from the back of the skull and sweeping backward; a small body between the wings; a very short tail, hardly visible; each wing a sheet of skin stretched from one hugely long finger, with three small clawed fingers at the front edge; a fuzzy body, not scaly and not feathered",
+          "name": "Pteranodon",
+          "features": [
+            "Very large: adult male wingspan about 5.6-7 m, several times a person's height; females about 3.8 m.",
+            "Long, slender, completely toothless beak ending in a sharp point; upper jaw slightly longer and gently upturned.",
+            "Bony crest rising from the back of the skull and sweeping backward: long and blade-like in males, short and rounded in females.",
+            "Small body, about turkey-sized, between long narrow albatross-like wings.",
+            "Very short tail, about 25 cm at most, hardly visible.",
+            "Wing is skin stretched from one hugely long fourth finger; three small clawed fingers at the wing's front edge.",
+            "Fuzzy, hair-like body covering rather than scales or feathers."
+          ],
+          "not_this": [
+            "Teeth in the beak, as some film and toy versions show.",
+            "Carrying off people or large animals in its feet; it weighed only about 20-50 kg and ate fish.",
+            "A long tail, bat-like wings, or perching upright on two legs like a bird."
+          ],
+          "tell_apart": "Against Pterodactylus: far bigger, no teeth, and a long bony crest pointing backward instead of a low soft crest. Against Quetzalcoatlus: shorter neck, long backswept crest, long narrow seabird wings and a small body, whereas Quetzalcoatlus has a very long neck, long legs and stands giraffe-tall. Against Rhamphorhynchus and Dimorphodon: no long tail and no teeth.",
+          "disagreement": "",
+          "sources": [
+            "https://www.amnh.org/explore/news-blogs/pteranodon-longiceps",
+            "https://www.amnh.org/explore/ology/ology-cards/358-pteranodon-longiceps",
+            "https://www.fieldmuseum.org/blog/meet-pterosaur-flock",
+            "https://www.britannica.com/animal/Pteranodon",
+            "https://en.wikipedia.org/wiki/Pteranodon",
+            "https://en.wikipedia.org/wiki/Pterosaur"
+          ],
+          "research_file": "long_necks_dome_head_flyers.json"
         },
         {
           "thing": "quetzalcoatlus",
-          "draw": "a giant flying reptile as tall as a giraffe when standing, with a very long stiff neck, a long pointed toothless beak and a small crest; shown standing on all fours with wings folded",
-          "look_closely": "less common; check the very long neck and its great size",
-          "name": "Quetzalcoatlus"
+          "draw": "a GIANT flying reptile shown standing on the ground on all fours with its wings folded, as tall as a giraffe; a very long straight stiff neck carried upward; a huge head with a long slender pointed TOOTHLESS beak, far longer than its small body; only a small crest on top of the skull near the base of the beak, with no long crest pointing backward; long stork-like back legs and long folded wing-arms held straight beneath the body; a tiny tail; hair-like fuzz on the body",
+          "name": "Quetzalcoatlus",
+          "features": [
+            "Gigantic: wingspan about 10-11 m, as wide as a small aeroplane.",
+            "Standing on all fours it is giraffe-tall: shoulders about 2.5-3 m, head 4-5 m above ground.",
+            "Very long, straight neck, up to about 3 m, carried upward like a giraffe's.",
+            "Huge head with a long, slender, pointed, toothless beak, far longer than the small body.",
+            "Small crest on top of the skull at the base of the beak; exact shape unknown (squarish or rounded).",
+            "Small torso; long legs and folded wing-arms held straight beneath the body when walking.",
+            "Hair-like fuzz on the body; wing membrane runs from the wing-finger tip to the ankle.",
+            "Tail tiny or not visible."
+          ],
+          "not_this": [
+            "Teeth, or a long backward-pointing Pteranodon-style crest.",
+            "A short neck, or perching upright on two legs with wings spread.",
+            "Bare scaly or leathery dragon skin, or feathers."
+          ],
+          "tell_apart": "Against Pteranodon: much larger, with a very long stiff neck, long stork-like legs and only a small crest near the beak base, and on the ground it stands as tall as a giraffe. Against Pterodactylus: enormously larger and toothless. Against Rhamphorhynchus and Dimorphodon: no long tail, no teeth, giant size.",
+          "disagreement": "",
+          "sources": [
+            "https://www.amnh.org/explore/ology/ology-cards/360-quetzalcoatlus-northropi",
+            "https://www.fieldmuseum.org/blog/meet-pterosaur-flock",
+            "https://www.nhm.ac.uk/discover/the-truth-about-pterosaurs.html",
+            "https://www.britannica.com/animal/Quetzalcoatlus",
+            "https://en.wikipedia.org/wiki/Quetzalcoatlus"
+          ],
+          "research_file": "long_necks_dome_head_flyers.json"
         }
       ]
     },
@@ -815,59 +1292,581 @@
       "cells": [
         {
           "thing": "mosasaurus",
-          "draw": "a giant sea lizard with a long streamlined body, four paddle-like flippers, cone-shaped teeth and a tail ending in a downturned shark-like fin",
-          "look_closely": "Mosasaurus and Tylosaurus look alike; check they can be told apart",
-          "name": "Mosasaurus"
+          "draw": "a giant sea lizard with a long streamlined body and a deep barrel-shaped chest; a large cone-shaped head ending in a SHORT BLUNT snout, with big stout pointed teeth right up to the snout tip; four paddle-shaped flippers, the front pair broad and strong; a long tail whose end bends downward and carries a two-lobed shark-like fin; smooth-looking skin, dark on the back and pale on the belly; no crest, frill or fin along the back",
+          "name": "Mosasaurus",
+          "features": [
+            "Long, streamlined body with a deep, barrel-shaped chest; not thin or eel-like.",
+            "Large cone-shaped head, about one-seventh to one-eleventh of body length, ending in a short, blunt snout.",
+            "Big, stout, pointed teeth along both jaws; snout tip reaches only slightly past the front teeth.",
+            "Four paddle-shaped flippers: front pair broad and strong, hind pair smaller.",
+            "Long tail whose end bends downward and carries a two-lobed, shark-like fin; backbone runs into the lower lobe.",
+            "Skin of tiny overlapping scales that looks smooth from a distance; no crest, frill, spines or back fin.",
+            "Probably dark on the back and pale on the belly, like a great white shark.",
+            "Very large: about 11 to 12 metres, roughly seven adult people lying head to toe."
+          ],
+          "not_this": [
+            "A frill, crest or row of spines along the back; this old error came from misidentified windpipe cartilage.",
+            "A thin, eel-like sea-serpent body with a straight pointed tail and no tail fin.",
+            "Film-style oversized animal with rough, armoured crocodile-like skin; real mosasaur scales were only a few millimetres across."
+          ],
+          "tell_apart": "Versus Tylosaurus: Mosasaurus has a short, blunt snout whose tip reaches only a little past the front teeth, a deeper barrel-shaped chest, robust jaws with big stout cutting teeth, and broad, strong front flippers. Tylosaurus has a proportionally longer, narrower snout ending in an obvious blunt, toothless bony knob that sticks out beyond the front teeth. If the snout tip shows a clear toothless knob, it is Tylosaurus, not Mosasaurus. Both share four flippers and a downturned two-lobed tail, so the head is the main clue.",
+          "disagreement": "",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Mosasaurus",
+            "https://en.wikipedia.org/wiki/Mosasaur",
+            "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0011998",
+            "https://phys.org/news/2013-09-mosasaur-fossil-early-lizards-tails.html"
+          ],
+          "research_file": "sea_reptiles_and_snakes.json"
         },
         {
           "thing": "tylosaurus",
-          "draw": "a sea lizard like Mosasaurus but slimmer, with a longer, narrower snout ending in a blunt toothless tip",
-          "look_closely": "Mosasaurus and Tylosaurus look alike; check the long blunt snout",
-          "name": "Tylosaurus"
+          "draw": "a giant sea lizard with a long streamlined body, slimmer than Mosasaurus; a long, narrow, cone-shaped head that is small for the body, about one-eighth of the animal's length; the snout runs on a little way past the front teeth as a short, blunt, rounded tip of the snout itself, covered in the same dark skin as the rest of the head (NOT a ball, bulb or pale lump stuck on the nose), and the tip of the lower jaw is toothless too; pointed cone teeth all about the same size; four paddle-shaped flippers; a long tail with a downward bend near the end carrying a two-lobed fin; smooth-looking dark skin with a paler belly; no crest or fin along the back",
+          "name": "Tylosaurus",
+          "features": [
+            "Long, streamlined body with four paddle-shaped flippers.",
+            "Long, narrow cone-shaped head, about 13 to 14 percent of body length, with a longer snout than most mosasaurs.",
+            "Blunt, toothless bony knob at the snout tip, sticking out beyond the front teeth; lower jaw tip projects too.",
+            "Teeth all about the same size: pointed cones curving slightly backward.",
+            "Long tail with a clear downward bend near the end, carrying a two-lobed fin.",
+            "Tiny diamond-shaped scales in slanting rows, so the skin looks smooth from a distance; no back crest or fin.",
+            "Dark body colour, shown by fossil pigment, probably with a paler belly.",
+            "Large: about 9 to 13 metres depending on species, roughly five to eight adult people head to toe."
+          ],
+          "not_this": [
+            "A fringe or crest running along the back, as in early paintings; it came from misidentified windpipe cartilage.",
+            "A long, snake-like neck and eel-thin body, as in 1870s drawings.",
+            "Teeth drawn right at the very tip of the snout, which hides the toothless knob."
+          ],
+          "tell_apart": "Versus Mosasaurus: the blunt, toothless bony knob projecting at the tip of the snout (with the lower jaw tip projecting too) is the giveaway, together with a proportionally longer, narrower snout and teeth of nearly equal size. Mosasaurus has a shorter, blunter snout with almost no projection past the teeth, a deeper barrel chest and broader front flippers. Body, flippers and tail are otherwise very alike, so the checker should look at the snout tip first.",
+          "disagreement": "",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Tylosaurus",
+            "http://oceansofkansas.com/mus-tylo.html",
+            "https://en.wikipedia.org/wiki/Mosasaur",
+            "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0011998"
+          ],
+          "research_file": "sea_reptiles_and_snakes.json"
         },
         {
           "thing": "kronosaurus",
-          "draw": "a sea reptile with an enormous head a quarter of its body length, a short neck, four large flippers and a short tail",
-          "look_closely": "less common; check the huge head and short neck",
-          "name": "Kronosaurus"
+          "draw": "a huge sea reptile with an ENORMOUS long head, about a quarter of its whole length, with a long fairly narrow snout and large cone-shaped teeth, biggest at the front; a very short thick neck, so the head seems to join the body directly; a massive deep body; four large wing-like flippers, the hind pair a little longer; a short tail; no crest or dome on the head",
+          "name": "Kronosaurus",
+          "features": [
+            "Huge, long head, over 2 metres: roughly a quarter of the animal's length, with a long, fairly narrow snout.",
+            "Very short, thick neck, so the head seems to join the body almost directly.",
+            "Massive, deep, heavy trunk.",
+            "Four large wing-like flippers; hind pair somewhat longer than the front pair.",
+            "Short tail, perhaps with a small fin; never long or whip-like.",
+            "Large cone-shaped teeth, biggest at the front of the jaws and smaller toward the back.",
+            "About 9 to 10.5 metres long: roughly five to six adult people head to toe."
+          ],
+          "not_this": [
+            "The stretched body of the Harvard 'Plasterosaurus' mount: 12.8 m with extra vertebrae, about three metres too long.",
+            "A tall rounded dome or crest on the back of the skull, another invention of that plaster mount.",
+            "A long neck or a small head, which would make it the other kind of plesiosaur."
+          ],
+          "tell_apart": "Versus Plesiosaurus and Elasmosaurus: all three have four flippers, a stiff body and a short tail, but Kronosaurus has a giant head (over 2 m, about a quarter of its length) on a very short neck, with big cone-shaped teeth. Plesiosaurus and Elasmosaurus have tiny heads on very long necks with thin needle-like teeth. Kronosaurus is about 9 to 10.5 m, roughly three times the length of Plesiosaurus (about 3.5 m) and similar in total length to Elasmosaurus (about 10 m) but far bulkier. Its hind flippers are longer than its front ones, while in the two long-necked animals the front pair is the larger. Versus mosasaurs: Kronosaurus has four long wing-like flippers and a short tail with no large two-lobed fin.",
+          "disagreement": "",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Kronosaurus",
+            "https://australian.museum/learn/australia-over-time/extinct-animals/kronosaurus-queenslandicus/",
+            "https://www.museum.qld.gov.au/collections-and-research/explore/marine-reptiles/",
+            "https://plesiosauria.com/directory/genera/kronosaurus/"
+          ],
+          "research_file": "sea_reptiles_and_snakes.json"
         },
         {
           "thing": "plesiosaurus",
-          "draw": "a small sea reptile with a small head, a fairly long neck, a broad body, four flippers and a short tail",
-          "look_closely": "Plesiosaurus and Elasmosaurus differ mainly in neck length",
-          "name": "Plesiosaurus"
+          "draw": "a small sea reptile with a small narrow head and thin needle-like teeth; a long slender neck ABOUT AS LONG AS its body and tail together, held out fairly straight in front and not raised like a swan's; a broad stiff turtle-like body with no shell; four long narrow pointed flippers, the front pair larger; a short tail",
+          "name": "Plesiosaurus",
+          "features": [
+            "Small head, much narrower than long, with a bluntly triangular snout.",
+            "Long, slender neck, roughly as long as the body and tail put together.",
+            "Broad, stiff, turtle-like body, but with no shell.",
+            "Four long, narrow, pointed flippers; in adults the front pair is larger than the hind pair.",
+            "Short tail, far shorter than the neck.",
+            "Thin, needle-like teeth, slightly curved and pointing forward.",
+            "Neck held out fairly straight in front of the body, not reared up.",
+            "Small animal: about 3 to 3.5 metres, roughly twice the length of an adult person."
+          ],
+          "not_this": [
+            "A swan-like neck lifted high out of the water.",
+            "A neck bent into snake-like coils; plesiosaur necks were rather stiff.",
+            "A neck far longer than the whole body (that is Elasmosaurus) or a big head (that is a pliosaur)."
+          ],
+          "tell_apart": "Versus Elasmosaurus: Plesiosaurus is small (about 3 to 3.5 m, twice a person's length) and its neck is about as long as its body and tail together, so roughly half the animal, with about 40 neck bones. Elasmosaurus is about 10 m long and its neck (about 7 m, 72 neck bones) is roughly two-thirds of the animal, far longer than its body. In the picture, the neck of Plesiosaurus should look about equal to the rest of the animal, never double it. Versus Kronosaurus: Plesiosaurus has a tiny head on a long neck with needle teeth; Kronosaurus has a head over 2 m long on a very short neck with big cone teeth, and is about three times longer overall.",
+          "disagreement": "",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Plesiosaurus",
+            "https://www.nhm.ac.uk/discover/mary-anning-fossils.html",
+            "https://en.wikipedia.org/wiki/Plesiosaur",
+            "https://plesiosauria.com/directory/genera/plesiosaurus/"
+          ],
+          "research_file": "sea_reptiles_and_snakes.json"
         },
         {
           "thing": "elasmosaurus",
-          "draw": "a sea reptile with a neck far longer than its body and tail together, a tiny head and four flippers",
-          "look_closely": "Plesiosaurus and Elasmosaurus differ mainly in neck length; this neck must be much longer",
-          "name": "Elasmosaurus"
+          "draw": "a sea reptile with an EXTREMELY long neck making up about two-thirds of the whole animal, about twice as long as its body and tail together, held out roughly level with only gentle curves and not raised like a swan's; a very small slender head with long fang-like front teeth; a compact streamlined body; four large paddle-shaped flippers, the front pair longer; a short tail",
+          "name": "Elasmosaurus",
+          "features": [
+            "Extremely long neck, about 7 metres: roughly two-thirds of the whole animal and much longer than the body.",
+            "Very small, slender, triangular head at the end of the neck.",
+            "Long fang-like teeth at the front of the jaws, smaller ones behind, interlocking when shut.",
+            "Compact, streamlined, stiff body.",
+            "Four large paddle-shaped flippers, the front pair longer than the hind pair.",
+            "Short tail, tiny compared with the neck; a small tail fin is possible but unproven.",
+            "Neck held out roughly level in front of the body, with gentle curves at most.",
+            "About 10 metres long: roughly six adult people lying head to toe."
+          ],
+          "not_this": [
+            "Neck raised high above the water like a swan; it could lift little more than its head out.",
+            "Neck coiled or looped like a snake, as in Charles Knight's old paintings.",
+            "Head placed on the short tail end (Cope's 1869 mistake), giving a short neck and a long tail."
+          ],
+          "tell_apart": "Versus Plesiosaurus: Elasmosaurus is about three times longer (about 10 m against 3 to 3.5 m) and its neck is far longer in proportion: about two-thirds of the animal, roughly twice the length of body and tail together, whereas the neck of Plesiosaurus only about equals its body and tail. The head looks even smaller against that neck. Versus Kronosaurus: similar total length, but Elasmosaurus is slender with a tiny head and an enormous neck, while Kronosaurus is bulky with a huge head and almost no neck.",
+          "disagreement": "",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Elasmosaurus",
+            "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0070877",
+            "https://en.wikipedia.org/wiki/Plesiosaur"
+          ],
+          "research_file": "sea_reptiles_and_snakes.json"
         },
         {
           "thing": "mixosaurus",
-          "draw": "a small dolphin-shaped sea reptile about as long as a person, with a long narrow snout, large eyes, a low back fin and a tail fin with a small upper lobe",
-          "look_closely": "less common; check it looks like a small ichthyosaur and not a dolphin",
-          "name": "Mixosaurus"
+          "draw": "a small fish-shaped sea reptile, deep-bodied at the front and narrowing to a long slim tail; a fairly large head with LONG, NARROW, slender pointed jaws like a dolphin's beak, lined with small sharp teeth, and a large eye; FOUR flippers, the front pair clearly longer than the hind pair; an upright fin on its back, set well forward; a long tail that stays almost straight, with only a LOW triangular fin rising from its upper edge near the end: NOT a forked tail, not a crescent, not the tail of a shark or a tuna; smooth skin; not a dolphin and not a shark",
+          "name": "Mixosaurus",
+          "features": [
+            "Small fish-shaped reptile about 1 metre long: shorter than an adult person is tall.",
+            "Body deep at the front, narrowing to a slim tail region; longer-bodied than later ichthyosaurs.",
+            "Fairly large head with long, narrow jaws lined with small sharp teeth.",
+            "Four flippers; front pair clearly longer, hind pair less than two-thirds of their length.",
+            "An upright dorsal fin on the back, set well forward, above the rear edge of the front flippers.",
+            "Long tail with an upright fin whose upper lobe is a triangle, not a tall crescent moon.",
+            "Smooth skin with no scales."
+          ],
+          "not_this": [
+            "A tall crescent, tuna-like tail and short compact body copied from Jurassic ichthyosaurs.",
+            "Dolphin features: flat horizontal tail flukes, a blowhole, or only two flippers.",
+            "An eel-like body with no back fin, as drawn before the 2020 soft-tissue fossils."
+          ],
+          "tell_apart": "Versus a dolphin: Mixosaurus has four flippers (a dolphin has two), an upright tail fin (a dolphin's tail flukes lie flat), a long thin snout full of small teeth, no blowhole, and it is only about 1 m long. Versus later ichthyosaurs such as Ichthyosaurus: those are compact and tuna-shaped with a tall crescent tail; Mixosaurus is longer-bodied with a long tail, a lower tail fin with a triangular upper lobe, a dorsal fin placed farther forward, and five-fingered flippers. Versus the earliest eel-shaped ichthyosaurs such as Cymbospondylus: Mixosaurus is shorter and deeper in front, with a clear dorsal fin and a relatively larger head.",
+          "disagreement": "The encyclopedia article describes a long tail with only a low fin. A 2020 fossil study found a clear triangular tail fin and a fin on the back. The tile follows the 2020 study.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Mixosaurus",
+            "https://www.app.pan.pl/article/item/app007312020.html",
+            "https://www.app.pan.pl/archive/published/app65/app007312020.html",
+            "https://ucmp.berkeley.edu/diapsids/ichthyosauria.html"
+          ],
+          "research_file": "sea_reptiles_and_snakes.json"
         },
         {
           "thing": "rhamphorhynchus",
-          "draw": "a flying reptile with a long tail ending in a diamond-shaped vane and needle-like teeth pointing forward; shown flying",
-          "look_closely": "not in the game yet: one of the two flyers the first child will choose between",
-          "name": "Rhamphorhynchus"
+          "draw": "a small flying reptile, shown flying with its wings spread; a LONG thin stiff tail ending in a flat DIAMOND-shaped vane, like the tail of a kite; a long low slim head with its jaws slightly open, showing long needle-like teeth that slant FORWARD and outward and mesh together like the teeth of two combs; the very tips of both jaws are sharp, toothless and beak-like, the lower tip hooking slightly upward; no crest of any kind; large eyes; a short body and short legs; thin wing skin stretched from one very long finger to the hind legs; fuzz on the body, and bare wings",
+          "name": "Rhamphorhynchus",
+          "features": [
+            "Small: wingspan usually about 1 m, at most 1.8 m; body about 50 cm long, hawk-sized.",
+            "Long, thin, stiff tail ending in a flat diamond-shaped vane, like a kite's tail.",
+            "Long, low skull with needle-like teeth slanting forward and interlocking when the jaws close.",
+            "Jaw tips toothless, sharp and beak-like; the lower jaw tip hooks slightly upward.",
+            "No crest of any kind on the head; large eyes.",
+            "Short body and short legs; thin wing membranes stretched from the long fourth finger to the hind legs.",
+            "Probable hair-like fuzz on the body; wing membranes bare."
+          ],
+          "not_this": [
+            "A short tail, or a long tail with no diamond vane at the tip.",
+            "Any head crest (an old report of one was shown to be a mistake).",
+            "A toothless beak, or neat upright teeth; the teeth must jut forward."
+          ],
+          "tell_apart": "Against Dimorphodon: Rhamphorhynchus has a slim, low head with forward-slanting needle teeth and a clear diamond vane on the tail tip; Dimorphodon has a big, deep head, front fangs with tiny teeth behind, shorter wings and no confirmed vane. Against the short-tailed Pterodactylus, Pteranodon and Quetzalcoatlus: a long stiff tail with a vane and no crest.",
+          "disagreement": "",
+          "sources": [
+            "https://www.fieldmuseum.org/blog/meet-pterosaur-flock",
+            "https://www.amnh.org/explore/news-blogs/pterosaur-fossil",
+            "https://www.amnh.org/explore/ology/paleontology/pterosaurs-the-card-game/meet-the-pterosaurs",
+            "https://www.britannica.com/animal/Rhamphorhynchus",
+            "https://en.wikipedia.org/wiki/Rhamphorhynchus",
+            "https://www.nhm.ac.uk/discover/the-truth-about-pterosaurs.html"
+          ],
+          "research_file": "long_necks_dome_head_flyers.json"
         },
         {
           "thing": "dimorphodon",
-          "draw": "a flying reptile with a large deep head rather like a puffin's, two kinds of teeth and a long tail; shown flying",
-          "look_closely": "not in the game yet: one of the two flyers the first child will choose between",
-          "name": "Dimorphodon"
+          "draw": "a small stocky flying reptile, shown flying with its wings spread; a very LARGE DEEP head, big for its body, with large eyes; jaws open to show two kinds of teeth: four or five long fangs at the FRONT of BOTH the upper jaw and the lower jaw, and many tiny teeth behind them; a short strong neck; a long stiff straight tail with no vane at its tip; wings rather short for its body; each wing has three small free fingers with curved claws at the bend in the middle of its front edge, and the long wing finger runs on to a plain pointed wing tip with NO claw; nothing on top of the head: no crest and no horns; fuzz on the body",
+          "name": "Dimorphodon",
+          "features": [
+            "Small and stocky: about 1 m long with a wingspan of about 1.4 m.",
+            "Very large, deep head, about 23 cm long, big for the body, with large eyes.",
+            "Two kinds of teeth: four or five long fangs at the front of each jaw, many tiny teeth behind.",
+            "Short, strong neck.",
+            "Long, stiff, straight tail of about 30 bones; a small vane at the tip is optional, none has been found.",
+            "Wings short for its body; three free fingers with large curved claws on each wing."
+          ],
+          "not_this": [
+            "Running upright on two legs like a little dinosaur (older reconstructions).",
+            "A smooth puffin-style beak hiding the teeth; that beak is speculation and the fangs must show.",
+            "A short tail, a head crest, or long narrow seabird wings."
+          ],
+          "tell_apart": "Against Rhamphorhynchus: Dimorphodon's head is big and deep (tall as well as long) with a few front fangs and tiny back teeth, its wings are short and its build stocky; Rhamphorhynchus has a slim low head, forward-slanting needle teeth and a diamond tail vane. Against the short-tailed Pterodactylus, Pteranodon and Quetzalcoatlus: a long stiff tail, a deep toothy head and no crest.",
+          "disagreement": "",
+          "sources": [
+            "https://www.amnh.org/explore/ology/ology-cards/356-dimorphodon-macronyx",
+            "https://www.nhm.ac.uk/discover/the-truth-about-pterosaurs.html",
+            "https://www.britannica.com/animal/Dimorphodon",
+            "https://en.wikipedia.org/wiki/Dimorphodon",
+            "https://en.wikipedia.org/wiki/Pterosaur"
+          ],
+          "research_file": "long_necks_dome_head_flyers.json"
         },
         {
           "thing": "tylosaurus",
-          "draw": "a second view of Tylosaurus, showing its long narrow snout clearly",
-          "look_closely": "a second try; pick the better of the two",
-          "name": "Tylosaurus"
+          "draw": "a giant sea lizard with a long streamlined body, slimmer than Mosasaurus; a long, narrow, cone-shaped head that is small for the body, about one-eighth of the animal's length; the snout runs on a little way past the front teeth as a short, blunt, rounded tip of the snout itself, covered in the same dark skin as the rest of the head (NOT a ball, bulb or pale lump stuck on the nose), and the tip of the lower jaw is toothless too; pointed cone teeth all about the same size; four paddle-shaped flippers; a long tail with a downward bend near the end carrying a two-lobed fin; smooth-looking dark skin with a paler belly; no crest or fin along the back; seen from the side and slightly from the front, so the long snout with its blunt toothless tip is clear",
+          "name": "Tylosaurus",
+          "features": [
+            "Long, streamlined body with four paddle-shaped flippers.",
+            "Long, narrow cone-shaped head, about 13 to 14 percent of body length, with a longer snout than most mosasaurs.",
+            "Blunt, toothless bony knob at the snout tip, sticking out beyond the front teeth; lower jaw tip projects too.",
+            "Teeth all about the same size: pointed cones curving slightly backward.",
+            "Long tail with a clear downward bend near the end, carrying a two-lobed fin.",
+            "Tiny diamond-shaped scales in slanting rows, so the skin looks smooth from a distance; no back crest or fin.",
+            "Dark body colour, shown by fossil pigment, probably with a paler belly.",
+            "Large: about 9 to 13 metres depending on species, roughly five to eight adult people head to toe."
+          ],
+          "not_this": [
+            "A fringe or crest running along the back, as in early paintings; it came from misidentified windpipe cartilage.",
+            "A long, snake-like neck and eel-thin body, as in 1870s drawings.",
+            "Teeth drawn right at the very tip of the snout, which hides the toothless knob."
+          ],
+          "tell_apart": "Versus Mosasaurus: the blunt, toothless bony knob projecting at the tip of the snout (with the lower jaw tip projecting too) is the giveaway, together with a proportionally longer, narrower snout and teeth of nearly equal size. Mosasaurus has a shorter, blunter snout with almost no projection past the teeth, a deeper barrel chest and broader front flippers. Body, flippers and tail are otherwise very alike, so the checker should look at the snout tip first.",
+          "disagreement": "",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Tylosaurus",
+            "http://oceansofkansas.com/mus-tylo.html",
+            "https://en.wikipedia.org/wiki/Mosasaur",
+            "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0011998"
+          ],
+          "research_file": "sea_reptiles_and_snakes.json",
+          "look_closely": "a second try; the better of the two is kept"
+        }
+      ]
+    },
+    "nature_1_large": {
+      "purpose": "the first nature sheet again, at the larger size, by the owner's ruling",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "No people and no animals.",
+      "cells": [
+        {
+          "thing": "river",
+          "draw": "a winding blue river between green banks"
+        },
+        {
+          "thing": "sea",
+          "draw": "open blue sea with rolling waves, drawn as a rounded patch of water with soft, uneven, fading edges and no straight sides; no beach and no boats"
+        },
+        {
+          "thing": "lake",
+          "draw": "a calm round lake ringed by a low grassy shore"
+        },
+        {
+          "thing": "mountain",
+          "draw": "one tall pointed grey mountain with snow on its peak"
+        },
+        {
+          "thing": "hill",
+          "draw": "one low rounded green hill"
+        },
+        {
+          "thing": "volcano",
+          "draw": "a cone with a crater, red lava and a plume of smoke"
+        },
+        {
+          "thing": "rock",
+          "draw": "one large grey boulder"
+        },
+        {
+          "thing": "sand",
+          "draw": "a small heap of golden sand"
+        },
+        {
+          "thing": "soil",
+          "draw": "a small heap of dark brown crumbly soil"
+        }
+      ]
+    },
+    "dinosaurs_4": {
+      "purpose": "second tries for the seven prehistoric animals whose first tile showed a mistake a child could see; the wording now names each mistake",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each cell shows one prehistoric animal only, as a careful, scientifically informed life reconstruction of the kind printed in a museum guide: the whole animal including the tail, seen from the side, in natural, plausible colours. No people, no other animals, no scenery, no skeletons and no fossils.",
+      "cells": [
+        {
+          "thing": "spinosaurus",
+          "draw": "a very large, long, LOW-slung meat-eater; its back legs are strikingly SHORT and stubby, far shorter than those of other big meat-eaters, so its long body and belly are carried close to the ground; standing on its two short back legs with its body level; a long, low, narrow crocodile-like snout with straight cone-shaped teeth and a small crest in front of the eyes; a tall skin-covered sail along its back; strong arms with three clawed fingers; a long tail that is tall and flattened from side to side like a paddle or a newt's tail",
+          "name": "Spinosaurus",
+          "features": [
+            "Very large meat-eater about 14 m long, longer than T. rex, with a long, low body.",
+            "Long, low, narrow crocodile-like snout with a notch near the front and a widened tip holding the biggest teeth.",
+            "Straight, smooth, cone-shaped teeth, not curved saw-edged blades.",
+            "Tall skin-covered sail along the back, at least 1.5 m high, held up by long thin spines of the backbone.",
+            "Short back legs, only about a quarter of the body length, far shorter than in other big meat-eaters.",
+            "Long tail that is tall and flattened from side to side like a paddle or a newt's tail.",
+            "Large, stocky arms with three clawed fingers on each hand; the thumb claw is the largest.",
+            "Small bony crest on top of the head in front of the eyes."
+          ],
+          "not_this": [
+            "Older (pre-2014) and film versions with long T. rex-like running legs and a thin, round, pointed tail.",
+            "A short, deep T. rex-style head with curved blade teeth.",
+            "A sail-backed lizard walking on four sprawling legs like Dimetrodon."
+          ],
+          "tell_apart": "Unmistakable among the meat-eaters: back sail, crocodile-like snout, short back legs and a tall paddle-shaped tail. None of the others has any of these.",
+          "disagreement": "Scientists agree on the crocodile-like snout, the sail, the short back legs and the paddle tail. They still debate whether it walked on two legs or four, and whether it swam after prey or waded like a heron. The tile shows it on two legs, which recent studies favour.",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/spinosaurus.html",
+            "https://en.wikipedia.org/wiki/Spinosaurus"
+          ],
+          "research_file": "hunters_and_armoured.json"
+        },
+        {
+          "thing": "brontosaurus",
+          "draw": "a heavily built long-neck on four thick straight legs; its back is highest over the HIPS and slopes gently down to the shoulders, which are lower than the hips; a long neck that is strikingly THICK, wide and deep, held forward and only gently raised; a very small, LOW, long, flat head with a squared-off snout like the head of Diplodocus, not a tall boxy head; an EXTREMELY long tail, clearly longer than the neck and more than half the animal's whole length, stretching far out behind and tapering to a long thin whip, held in the air and not curled; the front feet are round pillars showing a single thumb claw and no other claws; plain scaly skin with no spines",
+          "name": "Brontosaurus",
+          "features": [
+            "Heavily built sauropod on four thick, straight legs; front legs slightly shorter than back legs, back arching highest over the hips.",
+            "Long neck that is strikingly thick, wide and deep, about twice as massive as the neck of other diplodocids.",
+            "Very small, low head with a squared-off snout, like the head of Diplodocus.",
+            "Tail over half the total length, tapering to a thin whip and carried in the air.",
+            "Each front foot shows one large inward-pointing claw; the other front toes have no claws.",
+            "About 21-23 m long and 4.5 m tall at the back; an adult person stands under half that height.",
+            "Walking on dry land with legs upright beneath the body, hind legs bending in a stride."
+          ],
+          "not_this": [
+            "Tail dragging on the ground (old museum mounts and books).",
+            "A short, tall, boxy head; early skeletons wore a wrong Camarasaurus-style skull.",
+            "Standing half-sunk in a swamp or lake to support its weight."
+          ],
+          "tell_apart": "Same layout as Diplodocus (level back, whip tail, small low head) but visibly stockier: a thick, deep, wide neck, heavier legs and body, and shorter overall (about 22 m against 26 m). Unlike Brachiosaurus its shoulders are not above its hips and its neck does not rise steeply. Far smaller and less massive than Argentinosaurus.",
+          "disagreement": "",
+          "sources": [
+            "https://news.yale.edu/2022/11/11/strike-pose-yales-iconic-dinosaur-skeletons-get-new-look",
+            "https://www.amnh.org/explore/ology/ology-cards/006-apatosaurus-excelsus",
+            "https://www.britannica.com/animal/brontosaurus",
+            "https://en.wikipedia.org/wiki/Brontosaurus"
+          ],
+          "research_file": "long_necks_dome_head_flyers.json"
+        },
+        {
+          "thing": "pterodactylus",
+          "draw": "a SMALL flying reptile, shown flying with its wings spread; long thin straight jaws with many small cone-shaped teeth, the longest at the very tips of the jaws and smaller ones behind; the back of the head is smooth and rounded with NOTHING pointing backward; its only crest is a low, soft, rounded-triangular ridge on top of the head whose highest point is directly above the eyes; a short stub of a tail; each wing a sheet of skin stretched from one very long finger back to the hind leg, with three small clawed fingers free at the front edge of the wing; short fuzz on the head and body, and bare wings",
+          "name": "Pterodactylus",
+          "features": [
+            "Small pterosaur: wingspan about 1 m (at most 1.5 m), far smaller than a person.",
+            "Long, thin, straight jaws with about 90 small cone-shaped teeth, largest at the jaw tips.",
+            "Short tail, barely visible; no long tail and no tail vane.",
+            "Low soft crest on top of the head, small and triangular with its peak above the eyes.",
+            "Wing is skin stretched from one very long fourth finger back to the hind leg; three small clawed fingers stay free.",
+            "Short hair-like fuzz on head and body; wing membranes bare."
+          ],
+          "not_this": [
+            "Huge size, a toothless beak or a long bony crest pointing backward: that is Pteranodon.",
+            "A long tail with a diamond tip: that is Rhamphorhynchus.",
+            "Bat wings with several fingers in the membrane, bare scaly skin, or standing upright on two legs."
+          ],
+          "tell_apart": "Pteranodon is about six times larger, has no teeth at all and carries a big bony crest sweeping back from the skull; Pterodactylus is small, has a mouth full of small teeth and only a low soft crest above the eyes. Unlike Rhamphorhynchus and Dimorphodon its tail is a short stub. Unlike Quetzalcoatlus it is tiny, toothed and short-necked by comparison.",
+          "disagreement": "",
+          "sources": [
+            "https://www.amnh.org/explore/news-blogs/what-is-a-pterosaur",
+            "https://www.amnh.org/explore/ology/paleontology/pterosaurs-the-card-game/meet-the-pterosaurs",
+            "https://www.nhm.ac.uk/discover/the-truth-about-pterosaurs.html",
+            "https://www.britannica.com/animal/pterodactyl",
+            "https://en.wikipedia.org/wiki/Pterodactylus",
+            "https://en.wikipedia.org/wiki/Pterosaur"
+          ],
+          "research_file": "long_necks_dome_head_flyers.json"
+        },
+        {
+          "thing": "tylosaurus",
+          "draw": "a giant sea lizard with a long streamlined body, slimmer than Mosasaurus; a long, narrow, cone-shaped head that is small for the body, about one-eighth of the animal's length; the snout runs on a little way past the front teeth as a short, blunt, rounded tip of the snout itself, covered in the same dark skin as the rest of the head (NOT a ball, bulb or pale lump stuck on the nose), and the tip of the lower jaw is toothless too; pointed cone teeth all about the same size; four paddle-shaped flippers; a long tail with a downward bend near the end carrying a two-lobed fin; smooth-looking dark skin with a paler belly; no crest or fin along the back",
+          "name": "Tylosaurus",
+          "features": [
+            "Long, streamlined body with four paddle-shaped flippers.",
+            "Long, narrow cone-shaped head, about 13 to 14 percent of body length, with a longer snout than most mosasaurs.",
+            "Blunt, toothless bony knob at the snout tip, sticking out beyond the front teeth; lower jaw tip projects too.",
+            "Teeth all about the same size: pointed cones curving slightly backward.",
+            "Long tail with a clear downward bend near the end, carrying a two-lobed fin.",
+            "Tiny diamond-shaped scales in slanting rows, so the skin looks smooth from a distance; no back crest or fin.",
+            "Dark body colour, shown by fossil pigment, probably with a paler belly.",
+            "Large: about 9 to 13 metres depending on species, roughly five to eight adult people head to toe."
+          ],
+          "not_this": [
+            "A fringe or crest running along the back, as in early paintings; it came from misidentified windpipe cartilage.",
+            "A long, snake-like neck and eel-thin body, as in 1870s drawings.",
+            "Teeth drawn right at the very tip of the snout, which hides the toothless knob."
+          ],
+          "tell_apart": "Versus Mosasaurus: the blunt, toothless bony knob projecting at the tip of the snout (with the lower jaw tip projecting too) is the giveaway, together with a proportionally longer, narrower snout and teeth of nearly equal size. Mosasaurus has a shorter, blunter snout with almost no projection past the teeth, a deeper barrel chest and broader front flippers. Body, flippers and tail are otherwise very alike, so the checker should look at the snout tip first.",
+          "disagreement": "",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Tylosaurus",
+            "http://oceansofkansas.com/mus-tylo.html",
+            "https://en.wikipedia.org/wiki/Mosasaur",
+            "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0011998"
+          ],
+          "research_file": "sea_reptiles_and_snakes.json"
+        },
+        {
+          "thing": "mixosaurus",
+          "draw": "a small fish-shaped sea reptile, deep-bodied at the front and narrowing to a long slim tail; a fairly large head with LONG, NARROW, slender pointed jaws like a dolphin's beak, lined with small sharp teeth, and a large eye; FOUR flippers, the front pair clearly longer than the hind pair; an upright fin on its back, set well forward; a long tail that stays almost straight, with only a LOW triangular fin rising from its upper edge near the end: NOT a forked tail, not a crescent, not the tail of a shark or a tuna; smooth skin; not a dolphin and not a shark",
+          "name": "Mixosaurus",
+          "features": [
+            "Small fish-shaped reptile about 1 metre long: shorter than an adult person is tall.",
+            "Body deep at the front, narrowing to a slim tail region; longer-bodied than later ichthyosaurs.",
+            "Fairly large head with long, narrow jaws lined with small sharp teeth.",
+            "Four flippers; front pair clearly longer, hind pair less than two-thirds of their length.",
+            "An upright dorsal fin on the back, set well forward, above the rear edge of the front flippers.",
+            "Long tail with an upright fin whose upper lobe is a triangle, not a tall crescent moon.",
+            "Smooth skin with no scales."
+          ],
+          "not_this": [
+            "A tall crescent, tuna-like tail and short compact body copied from Jurassic ichthyosaurs.",
+            "Dolphin features: flat horizontal tail flukes, a blowhole, or only two flippers.",
+            "An eel-like body with no back fin, as drawn before the 2020 soft-tissue fossils."
+          ],
+          "tell_apart": "Versus a dolphin: Mixosaurus has four flippers (a dolphin has two), an upright tail fin (a dolphin's tail flukes lie flat), a long thin snout full of small teeth, no blowhole, and it is only about 1 m long. Versus later ichthyosaurs such as Ichthyosaurus: those are compact and tuna-shaped with a tall crescent tail; Mixosaurus is longer-bodied with a long tail, a lower tail fin with a triangular upper lobe, a dorsal fin placed farther forward, and five-fingered flippers. Versus the earliest eel-shaped ichthyosaurs such as Cymbospondylus: Mixosaurus is shorter and deeper in front, with a clear dorsal fin and a relatively larger head.",
+          "disagreement": "The encyclopedia article describes a long tail with only a low fin. A 2020 fossil study found a clear triangular tail fin and a fin on the back. The tile follows the 2020 study.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Mixosaurus",
+            "https://www.app.pan.pl/article/item/app007312020.html",
+            "https://www.app.pan.pl/archive/published/app65/app007312020.html",
+            "https://ucmp.berkeley.edu/diapsids/ichthyosauria.html"
+          ],
+          "research_file": "sea_reptiles_and_snakes.json"
+        },
+        {
+          "thing": "rhamphorhynchus",
+          "draw": "a small flying reptile, shown flying with its wings spread; a LONG thin stiff tail ending in a flat DIAMOND-shaped vane, like the tail of a kite; a long low slim head with its jaws slightly open, showing long needle-like teeth that slant FORWARD and outward and mesh together like the teeth of two combs; the very tips of both jaws are sharp, toothless and beak-like, the lower tip hooking slightly upward; no crest of any kind; large eyes; a short body and short legs; thin wing skin stretched from one very long finger to the hind legs; fuzz on the body, and bare wings",
+          "name": "Rhamphorhynchus",
+          "features": [
+            "Small: wingspan usually about 1 m, at most 1.8 m; body about 50 cm long, hawk-sized.",
+            "Long, thin, stiff tail ending in a flat diamond-shaped vane, like a kite's tail.",
+            "Long, low skull with needle-like teeth slanting forward and interlocking when the jaws close.",
+            "Jaw tips toothless, sharp and beak-like; the lower jaw tip hooks slightly upward.",
+            "No crest of any kind on the head; large eyes.",
+            "Short body and short legs; thin wing membranes stretched from the long fourth finger to the hind legs.",
+            "Probable hair-like fuzz on the body; wing membranes bare."
+          ],
+          "not_this": [
+            "A short tail, or a long tail with no diamond vane at the tip.",
+            "Any head crest (an old report of one was shown to be a mistake).",
+            "A toothless beak, or neat upright teeth; the teeth must jut forward."
+          ],
+          "tell_apart": "Against Dimorphodon: Rhamphorhynchus has a slim, low head with forward-slanting needle teeth and a clear diamond vane on the tail tip; Dimorphodon has a big, deep head, front fangs with tiny teeth behind, shorter wings and no confirmed vane. Against the short-tailed Pterodactylus, Pteranodon and Quetzalcoatlus: a long stiff tail with a vane and no crest.",
+          "disagreement": "",
+          "sources": [
+            "https://www.fieldmuseum.org/blog/meet-pterosaur-flock",
+            "https://www.amnh.org/explore/news-blogs/pterosaur-fossil",
+            "https://www.amnh.org/explore/ology/paleontology/pterosaurs-the-card-game/meet-the-pterosaurs",
+            "https://www.britannica.com/animal/Rhamphorhynchus",
+            "https://en.wikipedia.org/wiki/Rhamphorhynchus",
+            "https://www.nhm.ac.uk/discover/the-truth-about-pterosaurs.html"
+          ],
+          "research_file": "long_necks_dome_head_flyers.json"
+        },
+        {
+          "thing": "dimorphodon",
+          "draw": "a small stocky flying reptile, shown flying with its wings spread; a very LARGE DEEP head, big for its body, with large eyes; jaws open to show two kinds of teeth: four or five long fangs at the FRONT of BOTH the upper jaw and the lower jaw, and many tiny teeth behind them; a short strong neck; a long stiff straight tail with no vane at its tip; wings rather short for its body; each wing has three small free fingers with curved claws at the bend in the middle of its front edge, and the long wing finger runs on to a plain pointed wing tip with NO claw; nothing on top of the head: no crest and no horns; fuzz on the body",
+          "name": "Dimorphodon",
+          "features": [
+            "Small and stocky: about 1 m long with a wingspan of about 1.4 m.",
+            "Very large, deep head, about 23 cm long, big for the body, with large eyes.",
+            "Two kinds of teeth: four or five long fangs at the front of each jaw, many tiny teeth behind.",
+            "Short, strong neck.",
+            "Long, stiff, straight tail of about 30 bones; a small vane at the tip is optional, none has been found.",
+            "Wings short for its body; three free fingers with large curved claws on each wing."
+          ],
+          "not_this": [
+            "Running upright on two legs like a little dinosaur (older reconstructions).",
+            "A smooth puffin-style beak hiding the teeth; that beak is speculation and the fangs must show.",
+            "A short tail, a head crest, or long narrow seabird wings."
+          ],
+          "tell_apart": "Against Rhamphorhynchus: Dimorphodon's head is big and deep (tall as well as long) with a few front fangs and tiny back teeth, its wings are short and its build stocky; Rhamphorhynchus has a slim low head, forward-slanting needle teeth and a diamond tail vane. Against the short-tailed Pterodactylus, Pteranodon and Quetzalcoatlus: a long stiff tail, a deep toothy head and no crest.",
+          "disagreement": "",
+          "sources": [
+            "https://www.amnh.org/explore/ology/ology-cards/356-dimorphodon-macronyx",
+            "https://www.nhm.ac.uk/discover/the-truth-about-pterosaurs.html",
+            "https://www.britannica.com/animal/Dimorphodon",
+            "https://en.wikipedia.org/wiki/Dimorphodon",
+            "https://en.wikipedia.org/wiki/Pterosaur"
+          ],
+          "research_file": "long_necks_dome_head_flyers.json"
+        },
+        {
+          "thing": "spinosaurus",
+          "draw": "a very large, long, LOW-slung meat-eater; its back legs are strikingly SHORT and stubby, far shorter than those of other big meat-eaters, so its long body and belly are carried close to the ground; standing on its two short back legs with its body level; a long, low, narrow crocodile-like snout with straight cone-shaped teeth and a small crest in front of the eyes; a tall skin-covered sail along its back; strong arms with three clawed fingers; a long tail that is tall and flattened from side to side like a paddle or a newt's tail; a second try, walking, seen exactly from the side so the short back legs and the paddle tail are plain",
+          "name": "Spinosaurus",
+          "features": [
+            "Very large meat-eater about 14 m long, longer than T. rex, with a long, low body.",
+            "Long, low, narrow crocodile-like snout with a notch near the front and a widened tip holding the biggest teeth.",
+            "Straight, smooth, cone-shaped teeth, not curved saw-edged blades.",
+            "Tall skin-covered sail along the back, at least 1.5 m high, held up by long thin spines of the backbone.",
+            "Short back legs, only about a quarter of the body length, far shorter than in other big meat-eaters.",
+            "Long tail that is tall and flattened from side to side like a paddle or a newt's tail.",
+            "Large, stocky arms with three clawed fingers on each hand; the thumb claw is the largest.",
+            "Small bony crest on top of the head in front of the eyes."
+          ],
+          "not_this": [
+            "Older (pre-2014) and film versions with long T. rex-like running legs and a thin, round, pointed tail.",
+            "A short, deep T. rex-style head with curved blade teeth.",
+            "A sail-backed lizard walking on four sprawling legs like Dimetrodon."
+          ],
+          "tell_apart": "Unmistakable among the meat-eaters: back sail, crocodile-like snout, short back legs and a tall paddle-shaped tail. None of the others has any of these.",
+          "disagreement": "Scientists agree on the crocodile-like snout, the sail, the short back legs and the paddle tail. They still debate whether it walked on two legs or four, and whether it swam after prey or waded like a heron. The tile shows it on two legs, which recent studies favour.",
+          "sources": [
+            "https://www.nhm.ac.uk/discover/dino-directory/spinosaurus.html",
+            "https://en.wikipedia.org/wiki/Spinosaurus"
+          ],
+          "research_file": "hunters_and_armoured.json",
+          "look_closely": "a second try; the better of the two is kept"
+        },
+        {
+          "thing": "pterodactylus",
+          "draw": "a SMALL flying reptile, shown flying with its wings spread; long thin straight jaws with many small cone-shaped teeth, the longest at the very tips of the jaws and smaller ones behind; the back of the head is smooth and rounded with NOTHING pointing backward; its only crest is a low, soft, rounded-triangular ridge on top of the head whose highest point is directly above the eyes; a short stub of a tail; each wing a sheet of skin stretched from one very long finger back to the hind leg, with three small clawed fingers free at the front edge of the wing; short fuzz on the head and body, and bare wings; a second try, with its head in clear side view so the teeth and the low crest above the eyes are plain",
+          "name": "Pterodactylus",
+          "features": [
+            "Small pterosaur: wingspan about 1 m (at most 1.5 m), far smaller than a person.",
+            "Long, thin, straight jaws with about 90 small cone-shaped teeth, largest at the jaw tips.",
+            "Short tail, barely visible; no long tail and no tail vane.",
+            "Low soft crest on top of the head, small and triangular with its peak above the eyes.",
+            "Wing is skin stretched from one very long fourth finger back to the hind leg; three small clawed fingers stay free.",
+            "Short hair-like fuzz on head and body; wing membranes bare."
+          ],
+          "not_this": [
+            "Huge size, a toothless beak or a long bony crest pointing backward: that is Pteranodon.",
+            "A long tail with a diamond tip: that is Rhamphorhynchus.",
+            "Bat wings with several fingers in the membrane, bare scaly skin, or standing upright on two legs."
+          ],
+          "tell_apart": "Pteranodon is about six times larger, has no teeth at all and carries a big bony crest sweeping back from the skull; Pterodactylus is small, has a mouth full of small teeth and only a low soft crest above the eyes. Unlike Rhamphorhynchus and Dimorphodon its tail is a short stub. Unlike Quetzalcoatlus it is tiny, toothed and short-necked by comparison.",
+          "disagreement": "",
+          "sources": [
+            "https://www.amnh.org/explore/news-blogs/what-is-a-pterosaur",
+            "https://www.amnh.org/explore/ology/paleontology/pterosaurs-the-card-game/meet-the-pterosaurs",
+            "https://www.nhm.ac.uk/discover/the-truth-about-pterosaurs.html",
+            "https://www.britannica.com/animal/pterodactyl",
+            "https://en.wikipedia.org/wiki/Pterodactylus",
+            "https://en.wikipedia.org/wiki/Pterosaur"
+          ],
+          "research_file": "long_necks_dome_head_flyers.json",
+          "look_closely": "a second try; the better of the two is kept"
         }
       ]
     }
+  },
+  "feature_check": {
+    "model": "gpt-6.1-sol",
+    "usd_per_million_input_tokens": 2.0,
+    "usd_per_million_output_tokens": 10.0,
+    "prices_checked_on": "2026-10-06",
+    "source": "https://developers.openai.com/api/docs/models",
+    "why": "prehistoric animals are compared feature by feature with what museum and encyclopedia sources say, on the full-resolution master"
   }
 }

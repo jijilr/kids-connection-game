@@ -38,7 +38,11 @@ SHOWN_AS = {"Tyrannosaurus rex": "T. rex", "Pterodactylus": "Pterodactyl"}
 # A note is keyed by the field it is about, or "general" when it is about the thing itself.
 NOTES = {
     "Spinosaurus": {"kind_of_dinosaur": "Scientists debate how much time Spinosaurus spent in water."},
-    "Vasuki indicus": {"general": "Its length is estimated from fossil backbones, so it is uncertain."},
+    "Vasuki indicus": {"general": "Its length is estimated from fossil backbones, so it is uncertain. "
+                                  "Its picture is drawn like a very large python, the living snake scientists "
+                                  "model it on; what it really looked like is not known."},
+    "Titanoboa": {"general": "Its picture is drawn like a giant boa or anaconda, its closest living relatives; "
+                             "what it really looked like is not known."},
 }
 
 # The owner knows the child. These kinds of thing are familiar to him, and the checker
