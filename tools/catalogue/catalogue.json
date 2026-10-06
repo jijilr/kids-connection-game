@@ -1646,7 +1646,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "road",
-            "open_now": true
+            "open_now": false
           }
         ]
       }
@@ -1996,7 +1996,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "road",
-            "open_now": true
+            "open_now": false
           }
         ]
       }
@@ -2264,7 +2264,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "road",
-            "open_now": true
+            "open_now": false
           }
         ]
       }
@@ -2526,7 +2526,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "rails",
-            "open_now": true
+            "open_now": false
           }
         ]
       }
@@ -15230,7 +15230,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "road",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -15318,7 +15318,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "road",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -15415,7 +15415,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "rails",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -15504,7 +15504,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "rails",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -15593,7 +15593,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "rails",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -15691,7 +15691,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "rails",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -15787,7 +15787,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "water",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -15885,20 +15885,9 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "water",
-            "open_now": true
+            "open_now": false
           }
         ]
-      },
-      "picture": {
-        "tile": "job_2026_10_06_10_1_01_c8",
-        "game_file": "Assets/pictures/ship.webp",
-        "game_sha256": "68b09423b040c422a11a80fd6865399b882bc7b1a8d37acf8320e1115ef53e1f",
-        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c8.png",
-        "master_sha256": "7aee479d136464ea9bcc1ff23613612d256de419f8c483259dc8efc6a9ae07fa",
-        "style": "v1",
-        "approved": "by the owner",
-        "approved_on": "2026-10-06",
-        "other_tries": 0
       },
       "sources": {
         "pages": [
@@ -15983,7 +15972,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "water",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -16081,7 +16070,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "water",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -16179,20 +16168,9 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "water",
-            "open_now": true
+            "open_now": false
           }
         ]
-      },
-      "picture": {
-        "tile": "job_2026_10_06_10_2_01_c2",
-        "game_file": "Assets/pictures/houseboat.webp",
-        "game_sha256": "3320199433069a558e6b5ee3ada843cb9347ab664f9e2b2159f0213dbd390949",
-        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c2.png",
-        "master_sha256": "d4db98591c793f18334482875ef21d3ae07b4009d4d048346e135c086ac08ce3",
-        "style": "v1",
-        "approved": "by the owner",
-        "approved_on": "2026-10-06",
-        "other_tries": 0
       },
       "sources": {
         "pages": [
@@ -16277,7 +16255,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "air",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -16374,7 +16352,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "air",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -16472,7 +16450,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "air",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -16570,7 +16548,7 @@
             "circle": "made_by_people/vehicle",
             "sorted_by": "where_it_travels",
             "group": "air",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -17158,17 +17136,6 @@
             "open_now": true
           }
         ]
-      },
-      "picture": {
-        "tile": "job_2026_10_06_10_3_01_c3",
-        "game_file": "Assets/pictures/dustpan.webp",
-        "game_sha256": "39a3628405fcdd798aa25efefb6191dfed187316d2c6dd8773c9bfab073ff389",
-        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c3.png",
-        "master_sha256": "e7bc070d7e8519c8c635ce8142a9653bdcff7edb117a08c0ba5a00f9eff53695",
-        "style": "v1",
-        "approved": "by the owner",
-        "approved_on": "2026-10-06",
-        "other_tries": 0
       },
       "sources": {
         "pages": [
@@ -17881,7 +17848,6 @@
       "plant/vegetable",
       "nature_not_alive",
       "made_by_people",
-      "made_by_people/vehicle",
       "made_by_people/household"
     ],
     "circles": {
@@ -17909,7 +17875,7 @@
           "made_by_people": {
             "label": "Things people make",
             "things": 57,
-            "with_picture": 57
+            "with_picture": 54
           }
         },
         "open_by_its_things": true,
@@ -18364,7 +18330,7 @@
           "vehicle": {
             "label": "Vehicles",
             "things": 19,
-            "with_picture": 19
+            "with_picture": 17
           },
           "toy": {
             "label": "Toys",
@@ -18374,7 +18340,7 @@
           "household": {
             "label": "Things in the house",
             "things": 19,
-            "with_picture": 19
+            "with_picture": 18
           },
           "tool": {
             "label": "Tools",
@@ -18410,7 +18376,7 @@
           "water": {
             "label": "On water",
             "things": 5,
-            "with_picture": 5
+            "with_picture": 3
           },
           "air": {
             "label": "In the air",
@@ -18419,8 +18385,10 @@
           }
         },
         "open_by_its_things": true,
-        "can_open_now": true,
-        "needs": []
+        "can_open_now": false,
+        "needs": [
+          "pictures for 1 more in 'On water'"
+        ]
       },
       "made_by_people/vehicle/road": {
         "label": "On the road",
@@ -18497,7 +18465,7 @@
           "cleaning": {
             "label": "Things to clean with",
             "things": 5,
-            "with_picture": 5
+            "with_picture": 4
           },
           "electric": {
             "label": "Things that run on electricity",
@@ -18596,7 +18564,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job run 2026-10-06-10",
+    "by": "publish.py",
     "on": "2026-10-06"
   }
 }

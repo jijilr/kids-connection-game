@@ -13713,7 +13713,7 @@
       "published_file": "Assets/pictures/boat.webp"
     },
     "job_2026_10_06_10_1_01_c8": {
-      "thing_id": "ship",
+      "thing_id": null,
       "expected_thing": "ship",
       "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c8.png",
       "master_size": [
@@ -13755,11 +13755,10 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "drawn as an old sailing ship; a child today knows a ship as a big modern one",
       "history": [],
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/ship.webp"
+      "reviewed_on": "2026-10-06"
     },
     "job_2026_10_06_10_1_01_c9": {
       "thing_id": "ferry",
@@ -13860,7 +13859,7 @@
       "published_file": "Assets/pictures/canoe.webp"
     },
     "job_2026_10_06_10_2_01_c2": {
-      "thing_id": "houseboat",
+      "thing_id": null,
       "expected_thing": "houseboat",
       "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c2.png",
       "master_size": [
@@ -13902,11 +13901,10 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "drawn with a scene of trees behind it, not on plain white like the other tiles",
       "history": [],
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/houseboat.webp"
+      "reviewed_on": "2026-10-06"
     },
     "job_2026_10_06_10_2_01_c3": {
       "thing_id": "aeroplane",
@@ -14352,7 +14350,7 @@
       "published_file": "Assets/pictures/towel.webp"
     },
     "job_2026_10_06_10_3_01_c3": {
-      "thing_id": "dustpan",
+      "thing_id": null,
       "expected_thing": "dustpan",
       "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c3.png",
       "master_size": [
@@ -14394,11 +14392,10 @@
         "matches_cell": true,
         "problems": "more than one thing"
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "a broom was drawn beside the dustpan; a tile shows one named thing",
       "history": [],
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/dustpan.webp"
+      "reviewed_on": "2026-10-06"
     },
     "job_2026_10_06_10_3_01_c4": {
       "thing_id": "scrub_brush",

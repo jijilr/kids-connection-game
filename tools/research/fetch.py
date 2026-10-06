@@ -68,8 +68,10 @@ def narrowing_words(fields: dict, config: dict) -> list:
     the most exact kind first: a thing in the house gives 'furniture', 'dishware';
     rocks and soil give 'geology'."""
     table = config["words_that_narrow_a_name"]
-    kinds = [v for k, v in fields.items() if k != "kind_of_thing" and isinstance(v, str)] + [fields.get("kind_of_thing")]
-    return list(dict.fromkeys(word for kind in kinds for word in table.get(kind, [])))
+    kinds = [(k, v) for k, v in fields.items() if k != "kind_of_thing" and isinstance(v, str)][::-1]   # the deepest first
+    kinds.append(("kind_of_thing", fields.get("kind_of_thing")))
+    # the same word can be a value of two fields: a key written field=value speaks for that field only
+    return list(dict.fromkeys(word for field, kind in kinds for word in table.get(f"{field}={kind}", table.get(kind, []))))
 
 
 def other_names(name: str) -> list:
@@ -174,20 +176,22 @@ def meanings(host: str, title: str) -> tuple:
     return [link["title"] for link in pages[0].get("links", [])], pages[0].get("extract", "")[:3000]
 
 
-def openings(host: str, names: list, words: dict = None, choose=None) -> dict:
+def openings(host: str, names: list, words: dict = None, choose=None, narrowed: bool = False) -> dict:
     """The opening of the article for each name, ten things to a request. A thing's
     fields are settled by how its article begins, so the whole article is not needed,
     and a hundred things cost a dozen requests, not two hundred.
 
     A name with several meanings (Table, Rock, Plate) is then asked again with a word
     from the thing's kind in brackets, as Wikipedia files such articles: Table
-    (furniture), Rock (geology). `words` gives those words for each name.
+    (furniture), Rock (geology). `words` gives those words for each name. `narrowed`
+    asks that way even when the plain name has an article: the plain article for
+    Sponge is about the sea animal, and the thing wanted is filed under Sponge (tool).
     Returns name -> what wikipedia() returns."""
     found = {}
     for start in range(0, len(names), 10):
         batch = names[start:start + 10]
         found.update(ask_openings(host, {name: other_names(name) for name in batch}))
-    unclear = [n for n in names if "text" not in found[n] and (words or {}).get(n)]
+    unclear = [n for n in names if (narrowed or "text" not in found[n]) and (words or {}).get(n)]
     for start in range(0, len(unclear), 2):   # few things at a time: each has several titles to try
         batch = unclear[start:start + 2]
         again = ask_openings(host, {name: [f"{base} ({word})" for word in words[name] for base in other_names(name)][:10]
@@ -208,7 +212,7 @@ def openings(host: str, names: list, words: dict = None, choose=None) -> dict:
     return found
 
 
-def fetch_openings(names: list, again: bool, words: dict = None, choose=None) -> dict:
+def fetch_openings(names: list, again: bool, words: dict = None, choose=None, narrowed: bool = False) -> dict:
     """Save the two Wikipedia openings for each ordinary thing. A page already saved,
     whole or opening, is kept unless --again is given. `words` narrows a name that has
     several meanings (see openings)."""
@@ -216,7 +220,7 @@ def fetch_openings(names: list, again: bool, words: dict = None, choose=None) ->
                for name in names}
     for source, host in (("wikipedia_en", "en.wikipedia.org"), ("wikipedia_simple", "simple.wikipedia.org")):
         need = [n for n in names if again or not results[n].get(source, {}).get("file")]
-        for name, found in openings(host, need, words, choose).items():
+        for name, found in openings(host, need, words, choose, narrowed).items():
             record = {"id": source, "fetched_on": today(), **{k: v for k, v in found.items() if k != "text"}}
             if "text" in found:
                 folder = CACHE / slug(name)

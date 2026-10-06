@@ -94,7 +94,7 @@
     "kew": 2000
   },
   "words_that_narrow_a_name": {
-    "about": "When a name has several meanings on Wikipedia, the script asks again with one of these words in brackets, chosen by the thing's kind: Table (furniture), Rock (geology). The owner's ruling of 6 Oct 2026.",
+    "about": "When a name has several meanings on Wikipedia, the script asks again with one of these words in brackets, chosen by the thing's kind: Table (furniture), Rock (geology). The owner's ruling of 6 Oct 2026. A key written field=value is for that field only: 'water' as a kind of nature is geography, as a place a vehicle travels it is a boat.",
     "household": [
       "furniture",
       "dishware",
@@ -174,7 +174,36 @@
       "geology",
       "geography"
     ],
-    "made_by_people": []
+    "made_by_people": [],
+    "cleaning": [
+      "tool",
+      "cleaning"
+    ],
+    "electric": [
+      "appliance",
+      "machine"
+    ],
+    "eating": [
+      "dishware",
+      "tableware"
+    ],
+    "furniture": [
+      "furniture"
+    ],
+    "road": [
+      "vehicle"
+    ],
+    "rails": [
+      "rail transport",
+      "train"
+    ],
+    "air": [
+      "aircraft"
+    ],
+    "where_it_travels=water": [
+      "watercraft",
+      "boat"
+    ]
   },
   "may_be_judged_when_no_page_states_it": {
     "about": "The owner's rulings of 6 Oct 2026. Everyday things suitable for a four-year-old go in without asking him; only the unsuitable, the genuinely unfamiliar and the factually uncertain are queued. So where no page states a value, DeepSeek may judge it, twice and in different words. Agreement is recorded as 'judged, not sourced'. Disagreement is 'uncertain' and goes to the owner.",
