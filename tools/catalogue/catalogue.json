@@ -6767,7 +6767,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/land_hunter"
         ],
         "boards": [
           {
@@ -6780,6 +6781,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_hunter",
             "open_now": true
           }
         ]
@@ -6857,7 +6864,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/land_hunter"
         ],
         "boards": [
           {
@@ -6870,6 +6878,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_hunter",
             "open_now": true
           }
         ]
@@ -6947,7 +6961,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/land_hunter"
         ],
         "boards": [
           {
@@ -6960,6 +6975,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_hunter",
             "open_now": true
           }
         ]
@@ -7037,7 +7058,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/land_hunter"
         ],
         "boards": [
           {
@@ -7050,6 +7072,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_hunter",
             "open_now": true
           }
         ]
@@ -7128,7 +7156,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/land_hunter"
         ],
         "boards": [
           {
@@ -7141,6 +7170,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_hunter",
             "open_now": true
           }
         ]
@@ -7218,7 +7253,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
         ],
         "boards": [
           {
@@ -7231,6 +7267,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_grazer",
             "open_now": true
           }
         ]
@@ -7296,7 +7338,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
         ],
         "boards": [
           {
@@ -7309,6 +7352,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_grazer",
             "open_now": true
           }
         ]
@@ -7384,7 +7433,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
         ],
         "boards": [
           {
@@ -7397,6 +7447,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_grazer",
             "open_now": true
           }
         ]
@@ -7472,7 +7528,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
         ],
         "boards": [
           {
@@ -7485,6 +7542,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_grazer",
             "open_now": true
           }
         ]
@@ -7560,7 +7623,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
         ],
         "boards": [
           {
@@ -7573,6 +7637,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_grazer",
             "open_now": true
           }
         ]
@@ -7650,7 +7720,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
         ],
         "boards": [
           {
@@ -7663,6 +7734,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_grazer",
             "open_now": true
           }
         ]
@@ -7740,7 +7817,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
         ],
         "boards": [
           {
@@ -7753,6 +7831,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_grazer",
             "open_now": true
           }
         ]
@@ -7830,7 +7914,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
         ],
         "boards": [
           {
@@ -7843,6 +7928,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_grazer",
             "open_now": true
           }
         ]
@@ -7918,7 +8009,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
         ],
         "boards": [
           {
@@ -7931,6 +8023,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_grazer",
             "open_now": true
           }
         ]
@@ -8008,7 +8106,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
         ],
         "boards": [
           {
@@ -8021,6 +8120,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_grazer",
             "open_now": true
           }
         ]
@@ -8078,7 +8183,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/swimmer"
         ],
         "boards": [
           {
@@ -8091,6 +8197,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "swimmer",
             "open_now": true
           }
         ]
@@ -8158,7 +8270,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/swimmer"
         ],
         "boards": [
           {
@@ -8171,6 +8284,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "swimmer",
             "open_now": true
           }
         ]
@@ -8236,7 +8355,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/swimmer"
         ],
         "boards": [
           {
@@ -8249,6 +8369,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "swimmer",
             "open_now": true
           }
         ]
@@ -8314,7 +8440,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/swimmer"
         ],
         "boards": [
           {
@@ -8327,6 +8454,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "swimmer",
             "open_now": true
           }
         ]
@@ -8394,7 +8527,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/swimmer"
         ],
         "boards": [
           {
@@ -8407,6 +8541,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "swimmer",
             "open_now": true
           }
         ]
@@ -8474,7 +8614,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/swimmer"
         ],
         "boards": [
           {
@@ -8487,6 +8628,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "swimmer",
             "open_now": true
           }
         ]
@@ -8555,7 +8702,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/flyer"
         ],
         "boards": [
           {
@@ -8568,6 +8716,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "flyer",
             "open_now": true
           }
         ]
@@ -8635,7 +8789,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/flyer"
         ],
         "boards": [
           {
@@ -8648,6 +8803,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "flyer",
             "open_now": true
           }
         ]
@@ -8715,7 +8876,8 @@
         "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/flyer"
         ],
         "boards": [
           {
@@ -8728,6 +8890,12 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "flyer",
             "open_now": true
           }
         ]
@@ -11765,11 +11933,7 @@
     },
     "rhamphorhynchus": {
       "name": "Rhamphorhynchus",
-      "status": "not in the game yet",
-      "status_why": [
-        "candidate for the fourth flyer: the first child chooses one, the other stays here"
-      ],
-      "held_from": "owner",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "dinosaur",
@@ -11777,10 +11941,13 @@
         "kind_of_dinosaur": "flyer",
         "extinct": true
       },
+      "familiar": 1.0,
+      "reviewed": 2,
+      "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c6",
-        "game_file": null,
-        "game_sha256": null,
+        "game_file": "Assets/pictures/rhamphorhynchus.webp",
+        "game_sha256": "69ec4e2cc9e1778487e44d6458d37470e5f173dc83da054e56b0c9a51bdc65da",
         "master_file": "tools/pictures/tiles/masters/dinosaurs_4_01_c6.png",
         "master_sha256": "57464173903051c9bd214bc753750839d65fd40501770af066dd56c367521bb7",
         "style": "v1",
@@ -11820,20 +11987,37 @@
         "told_apart_by": "deepseek-flash"
       },
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/flyer"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "flyer",
+            "open_now": true
+          }
         ]
       }
     },
     "dimorphodon": {
       "name": "Dimorphodon",
-      "status": "not in the game yet",
-      "status_why": [
-        "candidate for the fourth flyer: the first child chooses one, the other stays here"
-      ],
-      "held_from": "owner",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "dinosaur",
@@ -11841,10 +12025,13 @@
         "kind_of_dinosaur": "flyer",
         "extinct": true
       },
+      "familiar": 1.0,
+      "reviewed": 2,
+      "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c7",
-        "game_file": null,
-        "game_sha256": null,
+        "game_file": "Assets/pictures/dimorphodon.webp",
+        "game_sha256": "a5b62cbcd4c1279c429b8b2f1f7129670c49042bba009df52992d3be164cadb2",
         "master_file": "tools/pictures/tiles/masters/dinosaurs_4_01_c7.png",
         "master_sha256": "485c9a36a9da8002b949c33344e4041fb25dbc5a979c1a4eb019e55a25d5f315",
         "style": "v1",
@@ -11884,10 +12071,31 @@
         "told_apart_by": "deepseek-flash"
       },
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "animal",
-          "animal/dinosaur"
+          "animal/dinosaur",
+          "animal/dinosaur/flyer"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "flyer",
+            "open_now": true
+          }
         ]
       }
     },
@@ -12289,17 +12497,18 @@
     },
     "shop": {
       "name": "Shop",
-      "status": "waiting for the owner",
-      "status_why": [
-        "the pages do not show that it belongs in 'Buildings'",
-        "kind_of_made_thing: on a second reading, the sentence does not show it"
-      ],
-      "held_from": "job:2026-10-06-03",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building"
       },
       "familiar": 0.9,
+      "reviewed": 2,
+      "source": "job:grounded+checked, approved by the owner",
+      "drafted_in": "2026-10-06-03",
+      "notes": {
+        "general": "Held at first: the pages do not show that it belongs in 'Buildings'; kind_of_made_thing: on a second reading, the sentence does not show it"
+      },
       "sources": {
         "pages": [
           {
@@ -12331,11 +12540,36 @@
         "clip": null
       },
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "made_by_people",
           "made_by_people/building"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "building",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_04_1_01_c1",
+        "game_file": "Assets/pictures/shop.webp",
+        "game_sha256": "d7a467f4493090715fc343fae1662168bc14efe893f938346cdbcfbeca4aa94c",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_04_1_01_c1.png",
+        "master_sha256": "e39f144732ebaea81b6ff70dc38a76743fdaee67600b8cf478eed6021f83dd3f",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 1
       }
     },
     "hospital": {
@@ -12425,17 +12659,18 @@
     },
     "bridge": {
       "name": "Bridge",
-      "status": "waiting for the owner",
-      "status_why": [
-        "the pages do not show that it belongs in 'Buildings'",
-        "kind_of_made_thing: on a second reading, the sentence does not show it"
-      ],
-      "held_from": "job:2026-10-06-03",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building"
       },
       "familiar": 0.8,
+      "reviewed": 2,
+      "source": "job:grounded+checked, approved by the owner",
+      "drafted_in": "2026-10-06-03",
+      "notes": {
+        "general": "Held at first: the pages do not show that it belongs in 'Buildings'; kind_of_made_thing: on a second reading, the sentence does not show it"
+      },
       "sources": {
         "pages": [
           {
@@ -12475,26 +12710,52 @@
         "clip": null
       },
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "made_by_people",
           "made_by_people/building"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "building",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_04_1_01_c2",
+        "game_file": "Assets/pictures/bridge.webp",
+        "game_sha256": "0949823eb7cf084551738834ab7e7acedb718b56db7ffbabf80fa5d9de2a7623",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_04_1_01_c2.png",
+        "master_sha256": "c297d585b33d6508439eeede58938c40f3a28c79f6999cf35eefe12444e73685",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
       }
     },
     "tower": {
       "name": "Tower",
-      "status": "waiting for the owner",
-      "status_why": [
-        "the pages do not show that it belongs in 'Buildings'",
-        "kind_of_made_thing: on a second reading, the sentence does not show it"
-      ],
-      "held_from": "job:2026-10-06-03",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building"
       },
       "familiar": 0.7,
+      "reviewed": 2,
+      "source": "job:grounded+checked, approved by the owner",
+      "drafted_in": "2026-10-06-03",
+      "notes": {
+        "general": "Held at first: the pages do not show that it belongs in 'Buildings'; kind_of_made_thing: on a second reading, the sentence does not show it"
+      },
       "sources": {
         "pages": [
           {
@@ -12536,11 +12797,36 @@
         "clip": null
       },
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "made_by_people",
           "made_by_people/building"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "building",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_04_1_01_c3",
+        "game_file": "Assets/pictures/tower.webp",
+        "game_sha256": "4d340c010b89bd6081b6a0d6b585a1f8480fefa026abe2ef11adbf7b3492a0d9",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_04_1_01_c3.png",
+        "master_sha256": "a9dd74ebd2fc14f491bf59541e09129995e85f0c86164e7ebe644a2db495c20f",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
       }
     },
     "farmhouse": {
@@ -12571,15 +12857,15 @@
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 138,
-      "waiting for the owner": 11,
-      "not in the game yet": 2,
+      "in the game": 143,
+      "waiting for the owner": 8,
       "kept for later": 5,
       "excluded": 3
     },
     "circles_that_can_open_now": [
       "seed",
       "animal",
+      "animal/dinosaur",
       "plant",
       "nature_not_alive",
       "made_by_people"
@@ -12587,14 +12873,14 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 138,
+        "things": 143,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
           "animal": {
             "label": "Animals",
-            "things": 74,
-            "with_picture": 74
+            "things": 76,
+            "with_picture": 76
           },
           "plant": {
             "label": "Plants",
@@ -12608,8 +12894,8 @@
           },
           "made_by_people": {
             "label": "Things people make",
-            "things": 27,
-            "with_picture": 27
+            "things": 30,
+            "with_picture": 30
           }
         },
         "open_by_its_things": true,
@@ -12618,7 +12904,7 @@
       },
       "animal": {
         "label": "Animals",
-        "things": 74,
+        "things": 76,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_animal",
         "groups": {
@@ -12655,8 +12941,8 @@
           },
           "dinosaur": {
             "label": "Dinosaurs",
-            "things": 24,
-            "with_picture": 24
+            "things": 26,
+            "with_picture": 26
           }
         },
         "open_by_its_things": true,
@@ -12739,7 +13025,7 @@
       },
       "animal/dinosaur": {
         "label": "Dinosaurs",
-        "things": 24,
+        "things": 26,
         "steps_from_seed": 2,
         "sorted_by": "kind_of_dinosaur",
         "groups": {
@@ -12755,8 +13041,8 @@
           },
           "flyer": {
             "label": "Flyers",
-            "things": 3,
-            "with_picture": 3
+            "things": 5,
+            "with_picture": 5
           },
           "swimmer": {
             "label": "Swimmers",
@@ -12764,22 +13050,48 @@
             "with_picture": 6
           }
         },
-        "could_be_filled_by": [
-          {
-            "name": "Rhamphorhynchus",
-            "status": "not in the game yet",
-            "group": "flyer"
-          },
-          {
-            "name": "Dimorphodon",
-            "status": "not in the game yet",
-            "group": "flyer"
-          }
-        ],
+        "open_by_its_things": true,
+        "can_open_now": true,
+        "needs": []
+      },
+      "animal/dinosaur/land_hunter": {
+        "label": "Land hunters",
+        "things": 5,
+        "steps_from_seed": 3,
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "1 more thing(s) in 'Flyers'"
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+        ]
+      },
+      "animal/dinosaur/land_grazer": {
+        "label": "Land grazers",
+        "things": 10,
+        "steps_from_seed": 3,
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 6 more things"
+        ]
+      },
+      "animal/dinosaur/flyer": {
+        "label": "Flyers",
+        "things": 5,
+        "steps_from_seed": 3,
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+        ]
+      },
+      "animal/dinosaur/swimmer": {
+        "label": "Swimmers",
+        "things": 6,
+        "steps_from_seed": 3,
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 10 more things"
         ]
       },
       "plant": {
@@ -12938,7 +13250,7 @@
       },
       "made_by_people": {
         "label": "Things people make",
-        "things": 27,
+        "things": 30,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_made_thing",
         "groups": {
@@ -12964,8 +13276,8 @@
           },
           "building": {
             "label": "Buildings",
-            "things": 4,
-            "with_picture": 4
+            "things": 7,
+            "with_picture": 7
           }
         },
         "open_by_its_things": true,
@@ -13020,21 +13332,9 @@
       },
       "made_by_people/building": {
         "label": "Buildings",
-        "things": 4,
+        "things": 7,
         "steps_from_seed": 2,
         "could_be_filled_by": [
-          {
-            "name": "Shop",
-            "status": "waiting for the owner"
-          },
-          {
-            "name": "Bridge",
-            "status": "waiting for the owner"
-          },
-          {
-            "name": "Tower",
-            "status": "waiting for the owner"
-          },
           {
             "name": "Farmhouse",
             "status": "waiting for the owner"
@@ -13043,7 +13343,7 @@
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 9 more things"
         ]
       }
     }
@@ -13053,7 +13353,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-10-06-03",
+    "by": "job:2026-10-06-04",
     "on": "2026-10-06"
   }
 }

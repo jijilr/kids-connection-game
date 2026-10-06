@@ -849,6 +849,35 @@
       },
       "cost_usd": 0.0538,
       "vision_check_cost_usd": 5e-05
+    },
+    "job_2026_10_06_04_1_01": {
+      "plan_key": "job_2026_10_06_04_1",
+      "purpose": "drawn by the job, run 2026-10-06-04",
+      "file": "tools/pictures/sheets/job_2026_10_06_04_1_01.png",
+      "grid": 2,
+      "size": "1920x1920",
+      "cells": [
+        "shop",
+        "bridge",
+        "tower",
+        "shop"
+      ],
+      "names": {
+        "shop": "Shop",
+        "bridge": "Bridge",
+        "tower": "Tower"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 2 by 2 grid of 4 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Shop: A small Indian corner shop with a colourful awning, shelves of goods, jars, and packets, painted in bright natural colours.\n2. Bridge: A simple grey stone bridge with a flat deck and low walls, arching over a blue river, with green trees on both sides.\n3. Tower: A tall, narrow stone tower, taller than wide, with a pointed top, standing alone, in grey and brown stone colours.\n4. Shop: A small Indian corner shop with a colourful awning, shelves of goods, jars, and packets, painted in bright natural colours; a second view of it.\n\nFor this sheet: Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-06",
+      "tokens": {
+        "image_output_tokens": 3276,
+        "text_input_tokens": 357
+      },
+      "cost_usd": 0.1001,
+      "vision_check_cost_usd": 0.00022
     }
   },
   "tiles": {
@@ -10885,7 +10914,8 @@
           "passed": true,
           "reasons": []
         }
-      ]
+      ],
+      "published_file": "Assets/pictures/rhamphorhynchus.webp"
     },
     "dinosaurs_4_01_c7": {
       "thing_id": "dimorphodon",
@@ -10989,7 +11019,8 @@
           "passed": true,
           "reasons": []
         }
-      ]
+      ],
+      "published_file": "Assets/pictures/dimorphodon.webp"
     },
     "dinosaurs_4_01_c8": {
       "thing_id": null,
@@ -11593,6 +11624,223 @@
       "history": [],
       "reviewed_on": "2026-10-06",
       "published_file": "Assets/pictures/temple.webp"
+    },
+    "job_2026_10_06_04_1_01_c1": {
+      "thing_id": "shop",
+      "expected_thing": "shop",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_04_1_01_c1.png",
+      "master_size": [
+        949,
+        949
+      ],
+      "master_sha256": "0c809b7f0a635369410d3d0498400413959e8bda32c23d3bdcd7be08f28f3733",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_04_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_04_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Shop: A small Indian corner shop with a colourful awning, shelves of goods, jars, and packets, painted in bright natural colours",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          60,
+          139,
+          878,
+          826
+        ],
+        "picture_shape": 1.19,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Shop",
+        "shows": "shop",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "job_2026_10_06_04_1_01_c1",
+          "job_2026_10_06_04_1_01_c4"
+        ],
+        "chosen": true,
+        "why": "The straight-on view makes the colorful awning and stocked counter read clearly as a shop at a glance.",
+        "cost_usd": 8e-05
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/shop.webp"
+    },
+    "job_2026_10_06_04_1_01_c2": {
+      "thing_id": "bridge",
+      "expected_thing": "bridge",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_04_1_01_c2.png",
+      "master_size": [
+        1046,
+        1046
+      ],
+      "master_sha256": "b9035e8b5e9b018251d1ff4e7ed197aeefab253dbffbd80d3cb7461d9f550e4c",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_04_1_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_04_1_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Bridge: A simple grey stone bridge with a flat deck and low walls, arching over a blue river, with green trees on both sides",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          985,
+          190,
+          1887,
+          871
+        ],
+        "picture_shape": 1.32,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Bridge",
+        "shows": "bridge",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/bridge.webp"
+    },
+    "job_2026_10_06_04_1_01_c3": {
+      "thing_id": "tower",
+      "expected_thing": "tower",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_04_1_01_c3.png",
+      "master_size": [
+        1031,
+        1031
+      ],
+      "master_sha256": "85d31c8c3a1596be4113a428496d883af1c2559cd5a6e0c323d3dce42ccdcef8",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_04_1_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_04_1_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Tower: A tall, narrow stone tower, taller than wide, with a pointed top, standing alone, in grey and brown stone colours",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          229,
+          959,
+          723,
+          1848
+        ],
+        "picture_shape": 0.56,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Tower",
+        "shows": "tower",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/tower.webp"
+    },
+    "job_2026_10_06_04_1_01_c4": {
+      "thing_id": null,
+      "expected_thing": "shop",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_04_1_01_c4.png",
+      "master_size": [
+        1044,
+        1044
+      ],
+      "master_sha256": "48d933a5c5fab37699bac93b1249ff6d3e89e188c0afa602567bf97de999f1cb",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_04_1_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_04_1_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Shop: A small Indian corner shop with a colourful awning, shelves of goods, jars, and packets, painted in bright natural colours; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.025,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          978,
+          1084,
+          1878,
+          1857
+        ],
+        "picture_shape": 1.16,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Shop",
+        "shows": "shop",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_10_06_04_1_01_c1 better",
+      "history": [],
+      "comparison": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "among": [
+          "job_2026_10_06_04_1_01_c1",
+          "job_2026_10_06_04_1_01_c4"
+        ],
+        "chosen": false,
+        "why": "The straight-on view makes the colorful awning and stocked counter read clearly as a shop at a glance.",
+        "cost_usd": 8e-05
+      },
+      "reviewed_on": "2026-10-06"
     }
   }
 }

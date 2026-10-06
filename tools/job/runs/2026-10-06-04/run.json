@@ -1,0 +1,86 @@
+{
+  "id": "2026-10-06-04",
+  "started": "2026-10-06",
+  "rehearse": null,
+  "cap_inr": 30.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "made_by_people",
+        "chain": "Things people make",
+        "fixed": {
+          "kind_of_thing": "made_by_people"
+        },
+        "need": 0,
+        "pictures_for": [
+          "Shop",
+          "Bridge",
+          "Tower"
+        ],
+        "recorded_but_not_in_the_game": [],
+        "done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": [
+      "Dinosaurs: it can already open"
+    ]
+  },
+  "retry_held": false,
+  "things": [
+    {
+      "name": "Shop",
+      "passed": true,
+      "in_game": true,
+      "why": [],
+      "ask": 0,
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
+      },
+      "familiar": 0.9,
+      "draw": "A small Indian corner shop with a colourful awning, shelves of goods, jars, and packets, painted in bright natural colours",
+      "tries": 1,
+      "tile": "job_2026_10_06_04_1_01_c1"
+    },
+    {
+      "name": "Bridge",
+      "passed": true,
+      "in_game": true,
+      "why": [],
+      "ask": 0,
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
+      },
+      "familiar": 0.8,
+      "draw": "A simple grey stone bridge with a flat deck and low walls, arching over a blue river, with green trees on both sides",
+      "tries": 1,
+      "tile": "job_2026_10_06_04_1_01_c2"
+    },
+    {
+      "name": "Tower",
+      "passed": true,
+      "in_game": true,
+      "why": [],
+      "ask": 0,
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
+      },
+      "familiar": 0.7,
+      "draw": "A tall, narrow stone tower, taller than wide, with a pointed top, standing alone, in grey and brown stone colours",
+      "tries": 1,
+      "tile": "job_2026_10_06_04_1_01_c3"
+    }
+  ],
+  "sheets": [
+    "job_2026_10_06_04_1_01"
+  ],
+  "stopped": "",
+  "spent_usd": {
+    "deepseek": 0.00058,
+    "drawing": 0.1001,
+    "picture_checks": 0.0003
+  }
+}

@@ -2127,6 +2127,35 @@
           "draw": "A colourful Hindu temple in India: a tall carved stone tower with a golden finial, over a small white shrine with an arched doorway"
         }
       ]
+    },
+    "job_2026_10_06_04_1": {
+      "purpose": "drawn by the job, run 2026-10-06-04",
+      "grid": 2,
+      "size": 1920,
+      "only_for_this_sheet": "Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.",
+      "cells": [
+        {
+          "thing": "shop",
+          "name": "Shop",
+          "draw": "A small Indian corner shop with a colourful awning, shelves of goods, jars, and packets, painted in bright natural colours"
+        },
+        {
+          "thing": "bridge",
+          "name": "Bridge",
+          "draw": "A simple grey stone bridge with a flat deck and low walls, arching over a blue river, with green trees on both sides"
+        },
+        {
+          "thing": "tower",
+          "name": "Tower",
+          "draw": "A tall, narrow stone tower, taller than wide, with a pointed top, standing alone, in grey and brown stone colours"
+        },
+        {
+          "thing": "shop",
+          "name": "Shop",
+          "draw": "A small Indian corner shop with a colourful awning, shelves of goods, jars, and packets, painted in bright natural colours; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        }
+      ]
     }
   }
 }

@@ -47,34 +47,6 @@
       "from": "check:seed_and_animals"
     },
     {
-      "name": "Rhamphorhynchus",
-      "fields": {
-        "kind_of_thing": "animal",
-        "kind_of_animal": "dinosaur",
-        "dinosaur_academic": false,
-        "kind_of_dinosaur": "flyer",
-        "extinct": true
-      },
-      "why": [
-        "candidate for the fourth flyer: the first child chooses one, the other stays here"
-      ],
-      "from": "owner"
-    },
-    {
-      "name": "Dimorphodon",
-      "fields": {
-        "kind_of_thing": "animal",
-        "kind_of_animal": "dinosaur",
-        "dinosaur_academic": false,
-        "kind_of_dinosaur": "flyer",
-        "extinct": true
-      },
-      "why": [
-        "candidate for the fourth flyer: the first child chooses one, the other stays here"
-      ],
-      "from": "owner"
-    },
-    {
       "name": "Basilisk",
       "fields": {},
       "why": [
@@ -149,45 +121,6 @@
       ],
       "from": "check:toys_top_up",
       "familiar": 0.9
-    },
-    {
-      "name": "Shop",
-      "fields": {
-        "kind_of_thing": "made_by_people",
-        "kind_of_made_thing": "building"
-      },
-      "why": [
-        "the pages do not show that it belongs in 'Buildings'",
-        "kind_of_made_thing: on a second reading, the sentence does not show it"
-      ],
-      "from": "job:2026-10-06-03",
-      "familiar": 0.9
-    },
-    {
-      "name": "Bridge",
-      "fields": {
-        "kind_of_thing": "made_by_people",
-        "kind_of_made_thing": "building"
-      },
-      "why": [
-        "the pages do not show that it belongs in 'Buildings'",
-        "kind_of_made_thing: on a second reading, the sentence does not show it"
-      ],
-      "from": "job:2026-10-06-03",
-      "familiar": 0.8
-    },
-    {
-      "name": "Tower",
-      "fields": {
-        "kind_of_thing": "made_by_people",
-        "kind_of_made_thing": "building"
-      },
-      "why": [
-        "the pages do not show that it belongs in 'Buildings'",
-        "kind_of_made_thing: on a second reading, the sentence does not show it"
-      ],
-      "from": "job:2026-10-06-03",
-      "familiar": 0.7
     },
     {
       "name": "Farmhouse",

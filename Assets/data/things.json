@@ -1623,6 +1623,32 @@
         "general": "Held at first: the drafter was unsure: A child may know caves from stories or pictures rather than from visiting one."
       }
     },
+    "rhamphorhynchus": {
+      "name": "Rhamphorhynchus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": false,
+        "kind_of_dinosaur": "flyer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 2,
+      "source": "owner:list"
+    },
+    "dimorphodon": {
+      "name": "Dimorphodon",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": false,
+        "kind_of_dinosaur": "flyer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 2,
+      "source": "owner:list"
+    },
     "temple": {
       "name": "Temple",
       "fields": {
@@ -1645,6 +1671,20 @@
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-02"
     },
+    "shop": {
+      "name": "Shop",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
+      },
+      "familiar": 0.9,
+      "reviewed": 2,
+      "source": "job:grounded+checked, approved by the owner",
+      "drafted_in": "2026-10-06-03",
+      "notes": {
+        "general": "Held at first: the pages do not show that it belongs in 'Buildings'; kind_of_made_thing: on a second reading, the sentence does not show it"
+      }
+    },
     "hospital": {
       "name": "Hospital",
       "fields": {
@@ -1655,6 +1695,34 @@
       "reviewed": 2,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-01"
+    },
+    "bridge": {
+      "name": "Bridge",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
+      },
+      "familiar": 0.8,
+      "reviewed": 2,
+      "source": "job:grounded+checked, approved by the owner",
+      "drafted_in": "2026-10-06-03",
+      "notes": {
+        "general": "Held at first: the pages do not show that it belongs in 'Buildings'; kind_of_made_thing: on a second reading, the sentence does not show it"
+      }
+    },
+    "tower": {
+      "name": "Tower",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
+      },
+      "familiar": 0.7,
+      "reviewed": 2,
+      "source": "job:grounded+checked, approved by the owner",
+      "drafted_in": "2026-10-06-03",
+      "notes": {
+        "general": "Held at first: the pages do not show that it belongs in 'Buildings'; kind_of_made_thing: on a second reading, the sentence does not show it"
+      }
     }
   }
 }
