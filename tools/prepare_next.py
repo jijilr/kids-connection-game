@@ -1199,7 +1199,7 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
             its_asks, its_blocked = asks_for(cat.load(), entry["circle"])
             run["plan"]["blocked"] += its_blocked
             entry["asks"] = list(range(len(asks_of_run), len(asks_of_run) + len(its_asks)))
-            asks_of_run += its_asks
+            asks_of_run.extend(its_asks)      # the run's own list, shared with the stages that follow
             save()
         for number in entry["asks"]:
             do_ask(number, asks_of_run[number])
