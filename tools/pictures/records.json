@@ -27,14 +27,78 @@
         "image_output_tokens": 2511,
         "text_input_tokens": 395
       },
-      "cost_usd": 0.0773
+      "cost_usd": 0.0773,
+      "vision_check_cost_usd": 0.00057
+    },
+    "trial_nature_9_01": {
+      "plan_key": "trial_nature_9",
+      "purpose": "trial: nine things in nature on one sheet",
+      "file": "tools/pictures/sheets/trial_nature_9_01.png",
+      "grid": 3,
+      "size": "1536x1536",
+      "cells": [
+        "river",
+        "sea",
+        "lake",
+        "mountain",
+        "hill",
+        "volcano",
+        "rock",
+        "sand",
+        "soil"
+      ],
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 3 by 3 grid of 9 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. River: a winding blue river between green banks.\n2. Sea: open blue sea with waves to the horizon; no beach and no boats.\n3. Lake: a calm round lake ringed by a low grassy shore.\n4. Mountain: one tall pointed grey mountain with snow on its peak.\n5. Hill: one low rounded green hill.\n6. Volcano: a cone with a crater, red lava and a plume of smoke.\n7. Rock: one large grey boulder.\n8. Sand: a small heap of golden sand.\n9. Soil: a small heap of dark brown crumbly soil.\n\nFor this sheet: No people and no animals.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-06",
+      "tokens": {
+        "image_output_tokens": 2511,
+        "text_input_tokens": 330
+      },
+      "cost_usd": 0.077,
+      "vision_check_cost_usd": 0.00057
+    },
+    "trial_plants_4_01": {
+      "plan_key": "trial_plants_4",
+      "purpose": "trial control: four of the same plants on one sheet, same pixels per tile",
+      "file": "tools/pictures/sheets/trial_plants_4_01.png",
+      "grid": 2,
+      "size": "1024x1024",
+      "cells": [
+        "mango_tree",
+        "banana_plant",
+        "lotus",
+        "tomato_plant"
+      ],
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 2 by 2 grid of 4 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Mango tree: a leafy tree with a thick trunk and yellow-orange mangoes among dark leaves.\n2. Banana plant: a smooth green stem, very large long leaves, one hanging bunch of green bananas.\n3. Lotus: one pink lotus flower with a round flat leaf on a small patch of water.\n4. Tomato plant: a small bushy staked plant with red and green tomatoes.\n\nFor this sheet: No people and no animals.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-06",
+      "tokens": {
+        "image_output_tokens": 1756,
+        "text_input_tokens": 286
+      },
+      "cost_usd": 0.0541,
+      "vision_check_cost_usd": 0.00021
     }
   },
   "tiles": {
     "trial_plants_9_01_c1": {
       "thing_id": null,
       "expected_thing": "mango_tree",
-      "file": "tools/pictures/tiles/trial_plants_9_01_c1.png",
+      "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c1.png",
+      "master_size": [
+        554,
+        554
+      ],
+      "master_sha256": "850f4b593a19bbf8cb7bbb578f6ee5ad57ab6c175906df7ec5c3b07665491193",
+      "app_file": "tools/pictures/tiles/app/trial_plants_9_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
       "sheet_id": "trial_plants_9_01",
       "cell": 1,
       "style_version": "v1",
@@ -55,15 +119,38 @@
         "ok": true,
         "on": "2026-10-06"
       },
-      "vision": null,
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Mango tree",
+        "shows": "mango_tree",
+        "matches_cell": true,
+        "problems": ""
+      },
       "review": "waiting for the owner",
       "review_note": "",
-      "history": []
+      "history": [
+        {
+          "date": "2026-10-06",
+          "event": "cut again",
+          "review_was": "waiting for the owner"
+        }
+      ]
     },
     "trial_plants_9_01_c2": {
       "thing_id": null,
       "expected_thing": "banana_plant",
-      "file": "tools/pictures/tiles/trial_plants_9_01_c2.png",
+      "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c2.png",
+      "master_size": [
+        566,
+        566
+      ],
+      "master_sha256": "430ccd4f965f179e0b04f85a7997e2f7d78cec6e3eb61f9a35f7a901667555a4",
+      "app_file": "tools/pictures/tiles/app/trial_plants_9_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
       "sheet_id": "trial_plants_9_01",
       "cell": 2,
       "style_version": "v1",
@@ -84,15 +171,38 @@
         "ok": true,
         "on": "2026-10-06"
       },
-      "vision": null,
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Banana plant",
+        "shows": "banana_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
       "review": "waiting for the owner",
       "review_note": "",
-      "history": []
+      "history": [
+        {
+          "date": "2026-10-06",
+          "event": "cut again",
+          "review_was": "waiting for the owner"
+        }
+      ]
     },
     "trial_plants_9_01_c3": {
       "thing_id": null,
       "expected_thing": "coconut_tree",
-      "file": "tools/pictures/tiles/trial_plants_9_01_c3.png",
+      "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c3.png",
+      "master_size": [
+        572,
+        572
+      ],
+      "master_sha256": "a2a7c1f9d082ea463072b0e28918e9f69ebfe469714e2756da704b5bdadf761f",
+      "app_file": "tools/pictures/tiles/app/trial_plants_9_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
       "sheet_id": "trial_plants_9_01",
       "cell": 3,
       "style_version": "v1",
@@ -113,15 +223,38 @@
         "ok": true,
         "on": "2026-10-06"
       },
-      "vision": null,
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Coconut tree",
+        "shows": "coconut_tree",
+        "matches_cell": true,
+        "problems": ""
+      },
       "review": "waiting for the owner",
       "review_note": "",
-      "history": []
+      "history": [
+        {
+          "date": "2026-10-06",
+          "event": "cut again",
+          "review_was": "waiting for the owner"
+        }
+      ]
     },
     "trial_plants_9_01_c4": {
       "thing_id": null,
       "expected_thing": "rose",
-      "file": "tools/pictures/tiles/trial_plants_9_01_c4.png",
+      "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c4.png",
+      "master_size": [
+        519,
+        519
+      ],
+      "master_sha256": "aee31ae65392a3882aa9999ce10cffc13bc6aba0eae4ec0845a35c3570013071",
+      "app_file": "tools/pictures/tiles/app/trial_plants_9_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
       "sheet_id": "trial_plants_9_01",
       "cell": 4,
       "style_version": "v1",
@@ -142,15 +275,38 @@
         "ok": true,
         "on": "2026-10-06"
       },
-      "vision": null,
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Rose",
+        "shows": "rose",
+        "matches_cell": true,
+        "problems": "cut off"
+      },
       "review": "waiting for the owner",
       "review_note": "",
-      "history": []
+      "history": [
+        {
+          "date": "2026-10-06",
+          "event": "cut again",
+          "review_was": "waiting for the owner"
+        }
+      ]
     },
     "trial_plants_9_01_c5": {
       "thing_id": null,
       "expected_thing": "lotus",
-      "file": "tools/pictures/tiles/trial_plants_9_01_c5.png",
+      "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c5.png",
+      "master_size": [
+        509,
+        509
+      ],
+      "master_sha256": "3053a4711f3730c5be4bd64940a5f9f0eb2960001c62cf4ffaf866d53877d09e",
+      "app_file": "tools/pictures/tiles/app/trial_plants_9_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
       "sheet_id": "trial_plants_9_01",
       "cell": 5,
       "style_version": "v1",
@@ -171,15 +327,38 @@
         "ok": true,
         "on": "2026-10-06"
       },
-      "vision": null,
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Lotus",
+        "shows": "lotus",
+        "matches_cell": true,
+        "problems": ""
+      },
       "review": "waiting for the owner",
       "review_note": "",
-      "history": []
+      "history": [
+        {
+          "date": "2026-10-06",
+          "event": "cut again",
+          "review_was": "waiting for the owner"
+        }
+      ]
     },
     "trial_plants_9_01_c6": {
       "thing_id": null,
       "expected_thing": "rice_plant",
-      "file": "tools/pictures/tiles/trial_plants_9_01_c6.png",
+      "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c6.png",
+      "master_size": [
+        564,
+        564
+      ],
+      "master_sha256": "0fa1ea31d7bfce0453a2a64c5d44212dfdccdcb15ba791fd1a514a964a10d904",
+      "app_file": "tools/pictures/tiles/app/trial_plants_9_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
       "sheet_id": "trial_plants_9_01",
       "cell": 6,
       "style_version": "v1",
@@ -200,15 +379,38 @@
         "ok": true,
         "on": "2026-10-06"
       },
-      "vision": null,
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Rice plant",
+        "shows": "rice_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
       "review": "waiting for the owner",
       "review_note": "",
-      "history": []
+      "history": [
+        {
+          "date": "2026-10-06",
+          "event": "cut again",
+          "review_was": "waiting for the owner"
+        }
+      ]
     },
     "trial_plants_9_01_c7": {
       "thing_id": null,
       "expected_thing": "sugarcane",
-      "file": "tools/pictures/tiles/trial_plants_9_01_c7.png",
+      "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c7.png",
+      "master_size": [
+        635,
+        635
+      ],
+      "master_sha256": "8e0717ac14f626ce418e04913301997ecb52f98a91c7632974c08226e32e6a73",
+      "app_file": "tools/pictures/tiles/app/trial_plants_9_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
       "sheet_id": "trial_plants_9_01",
       "cell": 7,
       "style_version": "v1",
@@ -229,15 +431,38 @@
         "ok": true,
         "on": "2026-10-06"
       },
-      "vision": null,
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Sugarcane",
+        "shows": "sugarcane",
+        "matches_cell": true,
+        "problems": ""
+      },
       "review": "waiting for the owner",
       "review_note": "",
-      "history": []
+      "history": [
+        {
+          "date": "2026-10-06",
+          "event": "cut again",
+          "review_was": "waiting for the owner"
+        }
+      ]
     },
     "trial_plants_9_01_c8": {
       "thing_id": null,
       "expected_thing": "tomato_plant",
-      "file": "tools/pictures/tiles/trial_plants_9_01_c8.png",
+      "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c8.png",
+      "master_size": [
+        579,
+        579
+      ],
+      "master_sha256": "fd27d096eb8747a606fe523c0c40e6fa1ebea3d18952daed26e9dea26b4087a6",
+      "app_file": "tools/pictures/tiles/app/trial_plants_9_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
       "sheet_id": "trial_plants_9_01",
       "cell": 8,
       "style_version": "v1",
@@ -258,15 +483,38 @@
         "ok": true,
         "on": "2026-10-06"
       },
-      "vision": null,
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Tomato plant",
+        "shows": "tomato_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
       "review": "waiting for the owner",
       "review_note": "",
-      "history": []
+      "history": [
+        {
+          "date": "2026-10-06",
+          "event": "cut again",
+          "review_was": "waiting for the owner"
+        }
+      ]
     },
     "trial_plants_9_01_c9": {
       "thing_id": null,
       "expected_thing": "brinjal_plant",
-      "file": "tools/pictures/tiles/trial_plants_9_01_c9.png",
+      "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c9.png",
+      "master_size": [
+        556,
+        556
+      ],
+      "master_sha256": "ce3833744f7dc869bb5b2bd9d0dfcd71ac4a33f9015725f24ac9a75a1334b26c",
+      "app_file": "tools/pictures/tiles/app/trial_plants_9_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
       "sheet_id": "trial_plants_9_01",
       "cell": 9,
       "style_version": "v1",
@@ -287,10 +535,648 @@
         "ok": true,
         "on": "2026-10-06"
       },
-      "vision": null,
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Brinjal plant",
+        "shows": "brinjal_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": [
+        {
+          "date": "2026-10-06",
+          "event": "cut again",
+          "review_was": "waiting for the owner"
+        }
+      ]
+    },
+    "trial_nature_9_01_c1": {
+      "thing_id": null,
+      "expected_thing": "river",
+      "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c1.png",
+      "master_size": [
+        564,
+        564
+      ],
+      "master_sha256": "d7e3499987834ecc0d002f83c09b56ba56147c8eb0d90a367a71ea550f65f765",
+      "app_file": "tools/pictures/tiles/app/trial_nature_9_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_nature_9_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "River: a winding blue river between green banks",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0086,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          15,
+          85,
+          501,
+          493
+        ],
+        "picture_shape": 1.19,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "River",
+        "shows": "river",
+        "matches_cell": true,
+        "problems": ""
+      },
       "review": "waiting for the owner",
       "review_note": "",
       "history": []
+    },
+    "trial_nature_9_01_c2": {
+      "thing_id": null,
+      "expected_thing": "sea",
+      "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c2.png",
+      "master_size": [
+        513,
+        513
+      ],
+      "master_sha256": "e9f945503aef527c5b23e791310a8cf1b19c4d00000433b68f4ca91228201540",
+      "app_file": "tools/pictures/tiles/app/trial_nature_9_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_nature_9_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Sea: open blue sea with waves to the horizon; no beach and no boats",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0086,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          547,
+          148,
+          989,
+          506
+        ],
+        "picture_shape": 1.23,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Sea",
+        "shows": "sea",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "trial_nature_9_01_c3": {
+      "thing_id": null,
+      "expected_thing": "lake",
+      "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c3.png",
+      "master_size": [
+        567,
+        567
+      ],
+      "master_sha256": "001c65eb7343d4001152a7f44e171ead1678bb808545e1116c39b089ac78db82",
+      "app_file": "tools/pictures/tiles/app/trial_nature_9_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_nature_9_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Lake: a calm round lake ringed by a low grassy shore",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0086,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1033,
+          156,
+          1522,
+          471
+        ],
+        "picture_shape": 1.55,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Lake",
+        "shows": "lake",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "trial_nature_9_01_c4": {
+      "thing_id": null,
+      "expected_thing": "mountain",
+      "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c4.png",
+      "master_size": [
+        557,
+        557
+      ],
+      "master_sha256": "6de967d18942ebca841b319a99afb3fd4ddb6ef9a3ba4513a594811e544cdfc6",
+      "app_file": "tools/pictures/tiles/app/trial_nature_9_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_nature_9_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Mountain: one tall pointed grey mountain with snow on its peak",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0086,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          20,
+          572,
+          500,
+          980
+        ],
+        "picture_shape": 1.18,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Mountain",
+        "shows": "mountain",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "trial_nature_9_01_c5": {
+      "thing_id": null,
+      "expected_thing": "hill",
+      "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c5.png",
+      "master_size": [
+        541,
+        541
+      ],
+      "master_sha256": "a9877a87a50e82b479ae0902afeceb1da299ba42d68845f7373c092ecca30223",
+      "app_file": "tools/pictures/tiles/app/trial_nature_9_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_nature_9_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Hill: one low rounded green hill",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0086,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          536,
+          680,
+          1002,
+          951
+        ],
+        "picture_shape": 1.72,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Hill",
+        "shows": "hill",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "trial_nature_9_01_c6": {
+      "thing_id": null,
+      "expected_thing": "volcano",
+      "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c6.png",
+      "master_size": [
+        551,
+        551
+      ],
+      "master_sha256": "60eac836312956220733477e3b28bd3ecb3d017380c57fb930ec3991f22bd550",
+      "app_file": "tools/pictures/tiles/app/trial_nature_9_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_nature_9_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Volcano: a cone with a crater, red lava and a plume of smoke",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0086,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1039,
+          533,
+          1514,
+          1000
+        ],
+        "picture_shape": 1.02,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Volcano",
+        "shows": "volcano",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "trial_nature_9_01_c7": {
+      "thing_id": null,
+      "expected_thing": "rock",
+      "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c7.png",
+      "master_size": [
+        530,
+        530
+      ],
+      "master_sha256": "7b4d901e08961d9803d64a6f3e887ab9bbd37d58e026903373debfecfecba20d",
+      "app_file": "tools/pictures/tiles/app/trial_nature_9_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_nature_9_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Rock: one large grey boulder",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0086,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          30,
+          1078,
+          487,
+          1449
+        ],
+        "picture_shape": 1.23,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Rock",
+        "shows": "rock",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "trial_nature_9_01_c8": {
+      "thing_id": null,
+      "expected_thing": "sand",
+      "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c8.png",
+      "master_size": [
+        537,
+        537
+      ],
+      "master_sha256": "b823d6b9e80678f2e65f88028253444faa9e59e8847b833945651a589dcd1591",
+      "app_file": "tools/pictures/tiles/app/trial_nature_9_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_nature_9_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Sand: a small heap of golden sand",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0086,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          532,
+          1134,
+          995,
+          1439
+        ],
+        "picture_shape": 1.52,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Sand",
+        "shows": "sand",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "trial_nature_9_01_c9": {
+      "thing_id": null,
+      "expected_thing": "soil",
+      "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c9.png",
+      "master_size": [
+        551,
+        551
+      ],
+      "master_sha256": "d4f22862c2c3703e6a3769b3e252b90693da23fddb3ec2b13ce65504295a1fea",
+      "app_file": "tools/pictures/tiles/app/trial_nature_9_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_nature_9_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Soil: a small heap of dark brown crumbly soil",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0086,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1034,
+          1126,
+          1509,
+          1448
+        ],
+        "picture_shape": 1.48,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Soil",
+        "shows": "soil",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "trial_plants_4_01_c1": {
+      "thing_id": null,
+      "expected_thing": "mango_tree",
+      "master_file": "tools/pictures/tiles/masters/trial_plants_4_01_c1.png",
+      "master_size": [
+        549,
+        549
+      ],
+      "master_sha256": "0e6767c202ed9639d02d68f02726c11a0376c19a9d590f6baa8a213535b8a79d",
+      "app_file": "tools/pictures/tiles/app/trial_plants_4_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_plants_4_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Mango tree: a leafy tree with a thick trunk and yellow-orange mangoes among dark leaves",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0135,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          25,
+          19,
+          491,
+          492
+        ],
+        "picture_shape": 0.99,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Mango tree",
+        "shows": "mango_tree",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": [
+        {
+          "date": "2026-10-06",
+          "event": "cut again",
+          "review_was": "waiting for the owner"
+        }
+      ]
+    },
+    "trial_plants_4_01_c2": {
+      "thing_id": null,
+      "expected_thing": "banana_plant",
+      "master_file": "tools/pictures/tiles/masters/trial_plants_4_01_c2.png",
+      "master_size": [
+        557,
+        557
+      ],
+      "master_sha256": "3f2c4550d12ad8412b956525ba09f31bec064465381a1d47c1f2cc6062d7c6b4",
+      "app_file": "tools/pictures/tiles/app/trial_plants_4_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_plants_4_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Banana plant: a smooth green stem, very large long leaves, one hanging bunch of green bananas",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0135,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          534,
+          15,
+          1002,
+          495
+        ],
+        "picture_shape": 0.97,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Banana plant",
+        "shows": "banana_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": [
+        {
+          "date": "2026-10-06",
+          "event": "cut again",
+          "review_was": "waiting for the owner"
+        }
+      ]
+    },
+    "trial_plants_4_01_c3": {
+      "thing_id": null,
+      "expected_thing": "lotus",
+      "master_file": "tools/pictures/tiles/masters/trial_plants_4_01_c3.png",
+      "master_size": [
+        513,
+        513
+      ],
+      "master_sha256": "dd6971ac11c08cfefc4f53e69a6571383a43389879ad811c723434b3f39ba724",
+      "app_file": "tools/pictures/tiles/app/trial_plants_4_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_plants_4_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Lotus: one pink lotus flower with a round flat leaf on a small patch of water",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0135,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          62,
+          555,
+          467,
+          997
+        ],
+        "picture_shape": 0.92,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Lotus",
+        "shows": "lotus",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": [
+        {
+          "date": "2026-10-06",
+          "event": "cut again",
+          "review_was": "waiting for the owner"
+        }
+      ]
+    },
+    "trial_plants_4_01_c4": {
+      "thing_id": null,
+      "expected_thing": "tomato_plant",
+      "master_file": "tools/pictures/tiles/masters/trial_plants_4_01_c4.png",
+      "master_size": [
+        551,
+        551
+      ],
+      "master_sha256": "62f0391393ba66fe51eeb1b0bed3975b043fdcd67ac1a8f3c2007cc5b8882643",
+      "app_file": "tools/pictures/tiles/app/trial_plants_4_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_plants_4_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Tomato plant: a small bushy staked plant with red and green tomatoes",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0135,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          576,
+          530,
+          942,
+          1005
+        ],
+        "picture_shape": 0.77,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Tomato plant",
+        "shows": "tomato_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": [
+        {
+          "date": "2026-10-06",
+          "event": "cut again",
+          "review_was": "waiting for the owner"
+        }
+      ]
     }
+  },
+  "redo_later": {
+    "sugarcane": "the owner wants the jointed canes more visible (said on 2026-10-06)"
   }
 }

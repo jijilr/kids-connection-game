@@ -55,8 +55,11 @@ def reject(records: dict, tile_ids: list, why: str):
 
 
 def todo(records: dict):
-    """Things a sheet was meant to draw that still have no approved tile."""
+    """Things a sheet was meant to draw that still have no approved tile, and things the
+    owner wants drawn again later."""
     names = thing_names()
+    for thing, why in records.get("redo_later", {}).items():
+        print(f"  {names.get(thing, thing)}: draw again later - {why}")
     approved = {t["thing_id"] for t in records["tiles"].values() if t["review"] == "approved"}
     wanted = {thing for sheet in records["sheets"].values() for thing in sheet["cells"]}
     for thing in sorted(wanted - approved):

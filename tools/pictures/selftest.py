@@ -48,10 +48,11 @@ def test_each_picture_becomes_its_own_tile_whatever_the_spacing():
     cut = cut_all(sheet(900, edges, edges), 3)
     assert len(cut) == 9
     for number, (tile, checks) in enumerate(cut):
-        assert tile.size == (512, 512) and checks["ok"], checks
+        assert tile.width == tile.height and checks["ok"], checks
         assert centre(tile) == rgb(COLOURS[number])
         # the whole blob is there, with white all round it: nothing was sliced
-        assert tile.getpixel((4, 4)) == (255, 255, 255) and tile.getpixel((507, 256)) == (255, 255, 255)
+        assert tile.getpixel((2, 2)) == (255, 255, 255)
+        assert tile.getpixel((tile.width - 3, tile.height // 2)) == (255, 255, 255)
 
 
 def test_pictures_that_overlap_in_height_are_still_separated():
@@ -165,11 +166,17 @@ def test_records_and_review():
         records = piclib.load_records()
         assert len(records["tiles"]) == 9
         tile = records["tiles"]["trial_plants_9_01_c1"]
-        for field in ("thing_id", "file", "sheet_id", "cell", "style_version", "prompt", "model",
-                      "date", "cost_usd", "review"):
+        for field in ("thing_id", "master_file", "app_file", "sheet_id", "cell", "style_version",
+                      "prompt", "model", "date", "cost_usd", "review"):
             assert field in tile, field
         assert tile["thing_id"] is None and tile["review"] == "waiting for the owner"
-        assert tile["cost_usd"] == 0.05 and (root / tile["file"]).exists()
+        assert tile["cost_usd"] == 0.05
+        # a master at the sheet's own resolution, and a small compressed copy for the game
+        with Image.open(root / tile["master_file"]) as master:
+            assert master.format == "PNG" and master.size == tuple(tile["master_size"])
+            assert 150 < master.width < 300, master.size  # the blob as drawn, not blown up
+        with Image.open(root / tile["app_file"]) as app:
+            assert app.format == "WEBP" and app.size == (384, 384)
 
         # no approval before the vision check
         try:
@@ -191,14 +198,27 @@ def test_records_and_review():
         review.reject(records, ["trial_plants_9_01_c3"], "leaves are cut off")
         rejected = records["tiles"]["trial_plants_9_01_c3"]
         assert rejected["review"] == "rejected" and rejected["thing_id"] is None
-        assert (root / rejected["file"]).exists()
+        assert (root / rejected["master_file"]).exists()
         piclib.write_json(piclib.RECORDS, records)
 
-        # cutting again never touches the original sheet, and remembers what came before
+        # cutting again never touches the original sheet, and remembers what came before;
+        # the same picture reuses its master
+        first_master = root / rejected["master_file"]
         cut_sheet.main()
         assert hashlib.sha256(original.read_bytes()).hexdigest() == fingerprint
         again = piclib.load_records()["tiles"]["trial_plants_9_01_c3"]
         assert again["history"][-1]["review_was"] == "rejected"
+        assert again["master_file"] == rejected["master_file"]
+
+        # a different cut never overwrites a master: it is written beside the old one
+        before = first_master.read_bytes()
+        records = piclib.load_records()
+        records["tiles"]["trial_plants_9_01_c3"]["master_sha256"] = "an earlier, different cut"
+        piclib.write_json(piclib.RECORDS, records)
+        cut_sheet.main()
+        newer = piclib.load_records()["tiles"]["trial_plants_9_01_c3"]
+        assert newer["master_file"].endswith("_cut02.png") and first_master.read_bytes() == before
+        assert newer["history"][-1]["earlier_master"] == rejected["master_file"]
 
 
 def main():

@@ -19,7 +19,11 @@
     "stop_if_a_sheet_costs_more_than_usd": 0.6
   },
   "vision_check": {
-    "model": "gpt-6-luna"
+    "model": "gpt-6-luna",
+    "usd_per_million_input_tokens": 0.1,
+    "usd_per_million_output_tokens": 0.5,
+    "prices_checked_on": "2026-10-06",
+    "source": "https://developers.openai.com/api/docs/models"
   },
   "sheets": {
     "trial_plants_9": {

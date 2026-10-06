@@ -9,7 +9,12 @@ never to decide where to cut. If two pictures actually touch, there is no white 
 them, and it stops.
 
 Each tile is its own picture, centred on a white square with a margin; anything that
-belongs to a neighbour is left out. Then it is checked. These stop a tile being approved:
+belongs to a neighbour is left out. Two files are written for it:
+  - a MASTER, at the sheet's full resolution, never resampled and never overwritten
+    (cutting again writes a new master beside the old one);
+  - an APP version for the game, a compressed WebP made from the master, which can be
+    remade at any time.
+Then it is checked. These stop a tile being approved:
   - the picture touches the edge of the sheet (it may be cut off);
   - something reaches the edge of the finished tile;
   - the cell is empty.
@@ -23,6 +28,7 @@ tile is linked to a thing only after the vision check and the owner's review.
 
     python tools/pictures/cut_sheet.py SHEET_ID
 """
+import hashlib
 import sys
 
 import numpy as np
@@ -38,7 +44,9 @@ TOO_BIG = 1.5           # a patch this many cells wide or tall is two pictures j
 SQUARE_RANGE = (0.5, 2.0)
 SMALL_PICTURE = 0.35    # picture's longer side, as a share of its cell
 MARGIN = 0.08           # white margin on each side of the finished tile
-TILE_SIZE = 512
+STRAY_PIXELS = 12       # this few faint pixels on a tile's rim are a neighbour's halo, not a cut-off picture
+APP_SIZE = 384          # the game's version of a tile, in pixels
+APP_QUALITY = 85        # WebP quality of the game's version
 
 
 class CutError(Exception):
@@ -124,7 +132,7 @@ def cut_tile(image: Image.Image, mask: np.ndarray, owner: np.ndarray, cell: int,
     if len(xs) == 0:
         flags.append("the cell is empty")
         checks["ok"] = False
-        return Image.new("RGB", (TILE_SIZE, TILE_SIZE), "white"), checks
+        return Image.new("RGB", (APP_SIZE, APP_SIZE), "white"), checks
     x0, x1, y0, y1 = int(xs.min()), int(xs.max()) + 1, int(ys.min()), int(ys.max()) + 1
     checks["picture_box"] = [x0, y0, x1, y1]
     shape = (x1 - x0) / (y1 - y0)
@@ -147,16 +155,38 @@ def cut_tile(image: Image.Image, mask: np.ndarray, owner: np.ndarray, cell: int,
     others = ndimage.binary_dilation((theirs != -1) & (theirs != cell), iterations=3)
     patch[others & (theirs != cell)] = 255
     tile = Image.new("RGB", (side, side), "white")
-    tile.paste(Image.fromarray(patch), (sx0 - ox, sy0 - oy))
-    tile = tile.resize((TILE_SIZE, TILE_SIZE), Image.LANCZOS)
+    tile.paste(Image.fromarray(patch), (sx0 - ox, sy0 - oy))   # full resolution, not resampled
 
     ring = ink_mask(tile)
-    edge = max(2, TILE_SIZE // 50)
+    edge = max(2, side // 50)
     ring[edge:-edge, edge:-edge] = False
-    if ring.any():
+    if ring.sum() > STRAY_PIXELS:
         flags.append("something reaches the edge of the finished tile")
     checks["ok"] = not flags
     return tile, checks
+
+
+def save_master(folder, tile_id: str, tile: Image.Image, old) -> tuple:
+    """Write the full-resolution master without ever overwriting one. If this exact
+    picture is already saved, that file is reused; otherwise it gets the next number."""
+    digest = hashlib.sha256(tile.tobytes()).hexdigest()
+    if old and old.get("master_sha256") == digest and (ROOT / old["master_file"]).exists():
+        return ROOT / old["master_file"], digest
+    folder.mkdir(parents=True, exist_ok=True)
+    path, number = folder / f"{tile_id}.png", 1
+    while path.exists():
+        number += 1
+        path = folder / f"{tile_id}_cut{number:02d}.png"
+    tile.save(path)
+    return path, digest
+
+
+def save_app_version(folder, tile_id: str, tile: Image.Image):
+    """The game's copy: small and compressed. Made from the master; safe to remake."""
+    folder.mkdir(parents=True, exist_ok=True)
+    path = folder / f"{tile_id}.webp"
+    tile.resize((APP_SIZE, APP_SIZE), Image.LANCZOS).save(path, "WEBP", quality=APP_QUALITY)
+    return path
 
 
 def cut_all(image: Image.Image, n: int) -> list:
@@ -187,21 +217,27 @@ def main():
         raise SystemExit(f"Could not cut {sheet_id}: {problem}. The sheet is kept; nothing was cut.")
     sheet.pop("cut_error", None)
 
-    TILES.mkdir(parents=True, exist_ok=True)
     count = len(cut)
     for number, (tile, checks) in enumerate(cut, 1):
         tile_id = f"{sheet_id}_c{number}"
-        path = TILES / f"{tile_id}.png"
-        tile.save(path)
         expected = sheet["cells"][number - 1]
         old = records["tiles"].get(tile_id)
+        master, digest = save_master(TILES / "masters", tile_id, tile, old)
+        app = save_app_version(TILES / "app", tile_id, tile)
         history = (old or {}).get("history", [])
         if old:
-            history.append({"date": today(), "event": "cut again", "review_was": old["review"]})
+            event = {"date": today(), "event": "cut again", "review_was": old["review"]}
+            if old.get("master_file") and old["master_file"] != relative(master):
+                event["earlier_master"] = old["master_file"]
+            history.append(event)
         records["tiles"][tile_id] = {
             "thing_id": None,
             "expected_thing": expected,
-            "file": relative(path),
+            "master_file": relative(master),
+            "master_size": list(tile.size),
+            "master_sha256": digest,
+            "app_file": relative(app),
+            "app_size": [APP_SIZE, APP_SIZE],
             "sheet_id": sheet_id,
             "cell": number,
             "style_version": sheet["style_version"],
@@ -215,6 +251,11 @@ def main():
             "review_note": "",
             "history": history,
         }
+        if old and old.get("master_sha256") == digest:
+            # the very same picture: what was already found out about it still holds
+            for kept in ("vision", "review", "review_note", "reviewed_on", "thing_id"):
+                if kept in old:
+                    records["tiles"][tile_id][kept] = old[kept]
         verdict = "ok" if checks["ok"] else "; ".join(checks["flags"])
         noted = f"  [note: {'; '.join(checks['notes'])}]" if checks["notes"] else ""
         print(f"  {tile_id}  ({names.get(expected, expected)})  {verdict}{noted}")

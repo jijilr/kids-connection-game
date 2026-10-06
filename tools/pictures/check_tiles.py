@@ -15,7 +15,7 @@ import sys
 from piclib import PLAN, RECORDS, ROOT, load_records, read_json, thing_names, today, write_json
 
 
-def ask(client, model: str, png: bytes, options: list) -> dict:
+def ask(client, model: str, picture: bytes, options: list) -> tuple:
     question = (
         "This picture is one tile from a sorting game for a four-year-old. "
         f"Which ONE of these does it show? {', '.join(options)}. "
@@ -30,10 +30,10 @@ def ask(client, model: str, png: bytes, options: list) -> dict:
         messages=[{"role": "user", "content": [
             {"type": "text", "text": question},
             {"type": "image_url",
-             "image_url": {"url": "data:image/png;base64," + base64.b64encode(png).decode()}},
+             "image_url": {"url": "data:image/webp;base64," + base64.b64encode(picture).decode()}},
         ]}],
     )
-    return json.loads(reply.choices[0].message.content)
+    return json.loads(reply.choices[0].message.content), reply.usage
 
 
 def main():
@@ -48,14 +48,20 @@ def main():
         raise SystemExit("OPENAI_API_KEY is not set in the environment.")
     from openai import OpenAI
 
-    model = read_json(PLAN)["vision_check"]["model"]
+    check = read_json(PLAN)["vision_check"]
+    model, spent = check["model"], 0.0
     names = thing_names()
     wanted = records["sheets"][sheet_id]["cells"]
     by_name = {names[thing].lower(): thing for thing in wanted}
     client = OpenAI()
 
     for tile_id, tile in tiles.items():
-        answer = ask(client, model, (ROOT / tile["file"]).read_bytes(), [names[t] for t in wanted])
+        # the game's version is checked, since that is what the child will see
+        answer, usage = ask(client, model, (ROOT / tile["app_file"]).read_bytes(),
+                            [names[t] for t in wanted])
+        if usage is not None:
+            spent += (usage.prompt_tokens * check["usd_per_million_input_tokens"]
+                      + usage.completion_tokens * check["usd_per_million_output_tokens"]) / 1_000_000
         said = str(answer.get("shows", "")).strip()
         shows = by_name.get(said.lower())
         tile["vision"] = {
@@ -69,7 +75,9 @@ def main():
         mark = "matches" if shows == tile["expected_thing"] else "DIFFERS"
         print(f"  {tile_id}: meant {names[tile['expected_thing']]}, looks like {said or '?'}  "
               f"[{mark}]  {tile['vision']['problems']}")
+    records["sheets"][sheet_id]["vision_check_cost_usd"] = round(spent, 5)
     write_json(RECORDS, records)
+    print(f"The check itself cost ${spent:.5f}.")
 
     seen = [t["vision"]["shows"] for t in tiles.values()]
     if seen != [t["expected_thing"] for t in tiles.values()]:
