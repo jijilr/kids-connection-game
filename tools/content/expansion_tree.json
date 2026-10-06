@@ -2,7 +2,7 @@
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-10-07",
   "dictionary_version": 10,
-  "things": 244,
+  "things": 243,
   "rules": {
     "weights": {
       "nearness": 3,
@@ -33,18 +33,18 @@
     }
   },
   "proposals": [
-    "nature_not_alive/land",
-    "made_by_people/building/heal",
+    "made_by_people/toy/throw",
     "made_by_people/toy/wheel",
     "made_by_people/building/live",
-    "made_by_people/building/learn"
+    "made_by_people/building/learn",
+    "made_by_people/toy/ride"
   ],
   "circles": {
     "seed": {
       "label": "Everything",
       "steps_from_seed": 0,
       "branch": null,
-      "members": 244,
+      "members": 243,
       "open": true,
       "sorted_by": "kind_of_thing",
       "decisions": [],
@@ -1270,6 +1270,13 @@
           "what": "the rules added the field \"What is the land mostly like there?\" in job run 2026-10-07-03",
           "why": "it passed the four tests: High land, Flat land, Land beside water, Hollows and holes in the land",
           "status": "added by the rules"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "job runs 2026-10-07-06 and 07 could not fill it",
+          "why": "too few familiar things of their own: land beside water has Beach, with Island and River bank ready, and needs four; flat land has Desert, Field and Meadow, and needs four",
+          "members_then": 13,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -1280,7 +1287,8 @@
       },
       "score": 5.6,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: too few familiar things of their own: land beside water has Beach, with Island and River bank ready, and needs four; flat land has Desert, Field and Meadow, and needs four"
     },
     "nature_not_alive/ground": {
       "label": "Rocks and soil",
@@ -1354,7 +1362,7 @@
       "label": "Things people make",
       "steps_from_seed": 1,
       "branch": "made_by_people",
-      "members": 90,
+      "members": 89,
       "open": true,
       "sorted_by": "kind_of_made_thing",
       "decisions": [],
@@ -1470,7 +1478,7 @@
       "label": "Toys",
       "steps_from_seed": 2,
       "branch": "made_by_people",
-      "members": 23,
+      "members": 22,
       "open": true,
       "sorted_by": "how_we_play_with_it",
       "decisions": [
@@ -1526,23 +1534,22 @@
       "label": "Throw, kick or bat it",
       "steps_from_seed": 3,
       "branch": "made_by_people",
-      "members": 4,
+      "members": 3,
       "open": false,
       "missing": {
-        "field": "no field splits it four ways",
-        "things": 12
+        "things": 1,
+        "why": "fewer than four familiar things, so it is not yet a group on the board above it"
       },
       "decisions": [],
       "factors": {
         "nearness": 0.33,
         "neglect": 0.0,
-        "unlocks": 0.33,
-        "cheapness": 0.2
+        "unlocks": 0.0,
+        "cheapness": 0.8
       },
-      "score": 2.1,
-      "move": "deepening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+      "score": 2.6,
+      "move": "widening",
+      "status": "proposable"
     },
     "made_by_people/toy/ride": {
       "label": "Ride or sit on it",
@@ -2006,7 +2013,15 @@
         "things": 2,
         "why": "fewer than four familiar things, so it is not yet a group on the board above it"
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-10-07",
+          "what": "job runs 2026-10-07-06 and 07 could not fill it",
+          "why": "too few familiar things of their own: Hospital and Clinic; a health centre and a doctor's office cannot be told from a clinic",
+          "members_then": 2,
+          "status": "held by the rules"
+        }
+      ],
       "factors": {
         "nearness": 0.33,
         "neglect": 0.0,
@@ -2015,7 +2030,8 @@
       },
       "score": 2.3,
       "move": "widening",
-      "status": "proposable"
+      "status": "held",
+      "held_by": "the rules: too few familiar things of their own: Hospital and Clinic; a health centre and a doctor's office cannot be told from a clinic"
     },
     "made_by_people/building/travel": {
       "label": "Start a journey",

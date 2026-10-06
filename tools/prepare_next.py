@@ -1222,6 +1222,16 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
                 asks_of_run.append(ask)
                 entry["asks"].append(len(asks_of_run) - 1)
                 do_ask(len(asks_of_run) - 1, ask)
+        # A need that could not be met with things of their own is not asked for again on every
+        # run: the circle is held by the rules until its things change.
+        unmet = [asks_of_run[n]["chain"] for n in entry["asks"]
+                 if sum(1 for t in run["things"] if t.get("ask") == n and t["passed"]) < asks_of_run[n]["need"]]
+        if unmet and not run["rehearse"]:
+            now = cat.game_copy(cat.load())["things"]
+            raw = build_circles(state["dictionary"], now, cat.read_json(cat.SETTINGS))
+            record_decision(entry["circle"], f"job run {run['id']} could not fill it",
+                            "too few familiar things of their own for: " + "; ".join(unmet),
+                            status=HELD_BY_RULES, members_then=len(members(now, cat.circle_path(raw, entry["circle"]))))
         entry["done"] = True
         save()
         return True
