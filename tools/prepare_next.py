@@ -107,6 +107,7 @@ Suggest {count} things that belong in this group and that such a child would kno
 - One everyday thing each, named as a parent would name it to a child, in one or two words.
 - No brand names, and no single named place or person.
 - Each must look clearly different from the others in a small picture.
+- Prefer the things such a child in India sees often around him to ones he would know only from a book or a film. For birds, a myna, a sparrow, a parrot, a kingfisher or an owl comes before a budgie or a canary.
 - Not any of these, which are already there: {taken}.
 - Things already in this part of the game are named like this: {like}. Name new ones in the same way, and suggest the same sort of thing: a whole thing of that kind, never a part of one or something made from one.
 {tried}
@@ -216,9 +217,11 @@ def read_progress(path):
     return {board for board, seen in boards.items() if isinstance(seen, dict) and seen.get("opened", 0) > 0}
 
 
-def asks_for(catalogue: dict, cid: str) -> tuple:
+def asks_for(catalogue: dict, cid: str, avoid: set = (), filled: set = ()) -> tuple:
     """What one circle that has its field still needs, group by group, in a form the
-    later stages can act on. Returns (asks, what cannot be prepared and why)."""
+    later stages can act on. Returns (asks, what cannot be prepared and why).
+    `avoid` are values a run has tried and could not fill, and `filled` those it has
+    filled: a field with more than four values then turns to another of its values."""
     dictionary, settings = cat.read_json(cat.DICTIONARY), cat.read_json(cat.SETTINGS)
     raw = build_circles(dictionary, cat.game_copy(catalogue)["things"], settings)
     circle, asks, blocked = raw[cid], [], []
@@ -238,8 +241,10 @@ def asks_for(catalogue: dict, cid: str) -> tuple:
         groups = split(things, members(things, path), field)
         have = {str(v): len(groups.get(v, [])) for v in dictionary["fields"][field]["values"]}
         ready = {v: len(proposal.get("values", {}).get(v, {}).get("examples", [])) for v in have}
-        best = sorted(have, key=lambda v: (-min(PER_GROUP + SPARE, have[v] + ready[v]), -have[v]))[:GROUPS]
-        short = {v: PER_GROUP - have[v] for v in best if have[v] < PER_GROUP}
+        full = {v for v in have if have[v] >= PER_GROUP} | set(filled)
+        open_to = sorted((v for v in have if v not in full and v not in avoid),
+                         key=lambda v: (-min(PER_GROUP + SPARE, have[v] + ready[v]), -have[v]))
+        short = {v: PER_GROUP - have[v] for v in open_to[:max(0, GROUPS - len(full))]}
     for value, lacking in short.items():
         wanted[value] = lacking
     for value, short in wanted.items():
@@ -1137,6 +1142,24 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
             save()
         for number in entry["asks"]:
             do_ask(number, asks_of_run[number])
+        # A field may have more than four values. Where a group could not be filled with things
+        # of their own, the run turns to another of the field's values, rather than pad the group.
+        for turn in range(2):
+            value = lambda n: str(list(asks_of_run[n]["fixed"].values())[-1])
+            got = lambda n: sum(1 for t in run["things"] if t.get("ask") == n and t["passed"])
+            groups = [n for n in entry["asks"] if asks_of_run[n]["fixed"]]
+            failed = {value(n) for n in groups if got(n) < asks_of_run[n]["need"]}
+            if not failed:
+                break
+            more, _ = asks_for(cat.load(), entry["circle"], avoid={value(n) for n in groups},
+                               filled={value(n) for n in groups} - failed)
+            if not more:
+                break
+            say(f"  a group could not be filled ({', '.join(sorted(failed))}); trying another of the field's values")
+            for ask in more:
+                asks_of_run.append(ask)
+                entry["asks"].append(len(asks_of_run) - 1)
+                do_ask(len(asks_of_run) - 1, ask)
         entry["done"] = True
         save()
 

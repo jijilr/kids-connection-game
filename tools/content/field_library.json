@@ -1,5 +1,5 @@
 {
-  "about": "The field library: real, teachable sorting questions, drawn from how biology, geography and everyday life already classify things (the owner's ruling of 7 Oct 2026). For a circle with no field, the model CHOOSES questions from here that apply; it does not invent them. The four tests then decide (tools/job/fields.py). The model may propose a new question only when nothing here fits; it goes through the same tests, and if it passes it is added here with a note saying so. A question may have more than four values: a board uses any four that have enough familiar things. Where things overlap, the wording asks what is MOSTLY true.",
+  "about": "The field library: real, teachable sorting questions, drawn from how biology, geography and everyday life already classify things (the owner's ruling of 7 Oct 2026). For a circle with no field, the model CHOOSES questions from here that apply; it does not invent them. The four tests then decide (tools/job/fields.py). The model may propose a new question only when nothing here fits; it goes through the same tests, and if it passes it is added here with a note saying so. A question may have more than four values: a board uses any four that have enough familiar things. Where things overlap, the wording asks what is MOSTLY true. Two rules from the owner, of the night of 7 Oct 2026. Keep profundity: real, teachable distinctions only, never colour or size. And where all the things of a circle share one answer (all fish live in water, all insects have six legs), ask for the real distinction WITHIN them (where the fish mostly lives).",
   "how_to_add": "Add a question by hand under `questions`: an id of its own, the wording as said to the child, where it applies, where the classification comes from, and its values with a short group name each. `for` holds circles as the catalogue names them (python tools/catalogue/catalogue.py circles): `animal` covers every circle inside Animals, `animal/mammal` only Mammals and what is inside it. Nothing else needs changing; the next run can choose it.",
   "questions": [
     {
@@ -139,21 +139,6 @@
       }
     },
     {
-      "id": "flower_colour",
-      "wording": "What colour is its flower mostly?",
-      "for": [
-        "plant/flower"
-      ],
-      "from": "everyday life: colours",
-      "values": {
-        "red": "Red",
-        "yellow": "Yellow or orange",
-        "white": "White",
-        "pink": "Pink or purple",
-        "blue": "Blue"
-      }
-    },
-    {
       "id": "what_the_water_does",
       "wording": "What is the water mostly doing?",
       "for": [
@@ -180,20 +165,6 @@
         "flat": "Flat land",
         "by_water": "Land beside water",
         "hollow": "Hollows and holes in the land"
-      }
-    },
-    {
-      "id": "size_of_its_pieces",
-      "wording": "How big are its pieces mostly?",
-      "for": [
-        "nature_not_alive/ground"
-      ],
-      "from": "geology: boulder, pebble, sand, clay",
-      "values": {
-        "one_big": "One big hard piece",
-        "small": "Small pieces you can pick up",
-        "grains": "Tiny grains",
-        "fine": "Fine, like powder or paste"
       }
     },
     {
@@ -327,13 +298,13 @@
       ],
       "from": "everyday life: kinds of play",
       "values": {
-        "throw": "Throw, kick or hit it",
+        "throw": "Throw, kick or bat it",
         "ride": "Ride or sit on it",
         "build": "Build or make with it",
-        "cuddle": "Cuddle or pretend with it",
-        "roll": "Push or pull it along",
-        "fly": "Fly it",
-        "sound": "Make sounds with it"
+        "pretend": "Cuddle it or play pretend",
+        "wheel": "Wheel it along",
+        "fly": "Fly it in the wind",
+        "music": "Make music with it"
       }
     },
     {
@@ -364,6 +335,169 @@
         "living_room": "The living room",
         "outside": "Outside the house"
       }
+    },
+    {
+      "id": "where_the_fish_lives",
+      "wording": "Where does it mostly live?",
+      "for": [
+        "animal/fish"
+      ],
+      "from": "biology: sea fish, freshwater fish, and the fish people keep. The owner gave sea, river or pond, and home aquarium; coral reefs were added because a board needs four groups",
+      "values": {
+        "sea": "In the open sea",
+        "reef": "Among corals and rocks in the sea",
+        "fresh": "In rivers and ponds",
+        "aquarium": "In a tank at home"
+      }
+    },
+    {
+      "id": "where_we_see_the_insect",
+      "wording": "Where do we mostly see it?",
+      "for": [
+        "animal/insect"
+      ],
+      "from": "everyday life and nature study, as the owner gave it",
+      "values": {
+        "house": "In the house",
+        "garden": "In the garden",
+        "flowers": "On flowers",
+        "water": "Near water"
+      }
+    },
+    {
+      "id": "what_kind_of_reptile",
+      "wording": "What kind of reptile is it?",
+      "for": [
+        "animal/reptile"
+      ],
+      "from": "biology: the orders of reptiles, as the owner gave them",
+      "values": {
+        "snake": "Snakes",
+        "lizard": "Lizards",
+        "turtle": "Turtles and tortoises",
+        "crocodile": "Crocodiles and their kin"
+      }
+    },
+    {
+      "id": "what_kind_of_tree",
+      "wording": "What kind of tree is it mostly?",
+      "for": [
+        "plant/tree"
+      ],
+      "from": "botany and the orchard: palms and cone-bearing trees are true groups; fruit trees and shade trees are how people sort the rest",
+      "values": {
+        "fruit": "Fruit trees",
+        "palm": "Palm trees",
+        "shade": "Big shade trees",
+        "cone": "Trees with needles and cones",
+        "flowering": "Trees grown for their flowers"
+      }
+    },
+    {
+      "id": "what_the_flower_grows_on",
+      "wording": "What does the flower mostly grow on?",
+      "for": [
+        "plant/flower"
+      ],
+      "from": "primary-school science: shrubs, herbs, trees, climbers and water plants",
+      "values": {
+        "bush": "On a bush",
+        "small_plant": "On a small soft plant",
+        "tree": "On a tree",
+        "climber": "On a climbing plant",
+        "water": "On a plant in water"
+      }
+    },
+    {
+      "id": "what_the_grass_gives",
+      "wording": "What do we mostly get from it?",
+      "for": [
+        "plant/grass_grain"
+      ],
+      "from": "farming: cereals, sugar crops, bamboo and fodder",
+      "values": {
+        "grain": "Grain to eat",
+        "sugar": "Sweet juice or sugar",
+        "poles": "Poles, mats and baskets",
+        "feed": "Food for animals, or a lawn"
+      }
+    },
+    {
+      "id": "what_the_sky_thing_is",
+      "wording": "What is it mostly?",
+      "for": [
+        "nature_not_alive/sky"
+      ],
+      "from": "astronomy and weather: stars, worlds, water in the air, moving air",
+      "values": {
+        "own_light": "A light that shines by itself",
+        "world": "A round world in space",
+        "water": "Water in the air",
+        "air": "Moving air"
+      }
+    },
+    {
+      "id": "what_comes_from_the_ground",
+      "wording": "What is it mostly?",
+      "for": [
+        "nature_not_alive/ground"
+      ],
+      "from": "geology: rocks, soils, and the minerals people dig out",
+      "values": {
+        "rock": "Rocks and stones",
+        "soil": "Kinds of soil",
+        "dug_to_use": "Things we dig out to burn or use",
+        "precious": "Shiny precious things"
+      }
+    },
+    {
+      "id": "who_uses_the_tool",
+      "wording": "Who mostly uses it?",
+      "for": [
+        "made_by_people/tool"
+      ],
+      "from": "everyday life and nursery-school lessons: people who help us and their tools",
+      "values": {
+        "carpenter": "A carpenter",
+        "farmer": "A farmer or gardener",
+        "tailor": "A tailor",
+        "doctor": "A doctor",
+        "mechanic": "A mechanic",
+        "builder": "A builder or mason"
+      }
+    }
+  ],
+  "retired": [
+    {
+      "id": "flower_colour",
+      "wording": "What colour is its flower mostly?",
+      "for": [
+        "plant/flower"
+      ],
+      "from": "everyday life: colours",
+      "values": {
+        "red": "Red",
+        "yellow": "Yellow or orange",
+        "white": "White",
+        "pink": "Pink or purple",
+        "blue": "Blue"
+      },
+      "retired_because": "it sorts by colour, which is surface and not what the thing is (the owner, 7 Oct 2026)"
+    },
+    {
+      "id": "size_of_its_pieces",
+      "wording": "How big are its pieces mostly?",
+      "for": [
+        "nature_not_alive/ground"
+      ],
+      "from": "geology: boulder, pebble, sand, clay",
+      "values": {
+        "one_big": "One big hard piece",
+        "small": "Small pieces you can pick up",
+        "grains": "Tiny grains",
+        "fine": "Fine, like powder or paste"
+      },
+      "retired_because": "it sorts by size, which is surface and not what the thing is (the owner, 7 Oct 2026)"
     }
   ]
 }

@@ -3912,8 +3912,7 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/wild_land"
+          "animal/bird"
         ],
         "boards": [
           {
@@ -3926,12 +3925,6 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
-            "open_now": true
-          },
-          {
-            "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
-            "group": "wild_land",
             "open_now": true
           }
         ]
@@ -4115,8 +4108,7 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/pet"
+          "animal/bird"
         ],
         "boards": [
           {
@@ -4129,12 +4121,6 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
-            "open_now": true
-          },
-          {
-            "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
-            "group": "pet",
             "open_now": true
           }
         ]
@@ -4207,8 +4193,7 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/farm"
+          "animal/bird"
         ],
         "boards": [
           {
@@ -4221,12 +4206,6 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
-            "open_now": true
-          },
-          {
-            "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
-            "group": "farm",
             "open_now": true
           }
         ]
@@ -4308,8 +4287,7 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/farm"
+          "animal/bird"
         ],
         "boards": [
           {
@@ -4322,12 +4300,6 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
-            "open_now": true
-          },
-          {
-            "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
-            "group": "farm",
             "open_now": true
           }
         ]
@@ -4409,8 +4381,7 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/farm"
+          "animal/bird"
         ],
         "boards": [
           {
@@ -4423,12 +4394,6 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
-            "open_now": true
-          },
-          {
-            "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
-            "group": "farm",
             "open_now": true
           }
         ]
@@ -4501,8 +4466,7 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/wild_land"
+          "animal/bird"
         ],
         "boards": [
           {
@@ -4515,12 +4479,6 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
-            "open_now": true
-          },
-          {
-            "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
-            "group": "wild_land",
             "open_now": true
           }
         ]
@@ -4604,8 +4562,7 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/wild_land"
+          "animal/bird"
         ],
         "boards": [
           {
@@ -4618,12 +4575,6 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
-            "open_now": true
-          },
-          {
-            "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
-            "group": "wild_land",
             "open_now": true
           }
         ]
@@ -4705,8 +4656,7 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/wild_land"
+          "animal/bird"
         ],
         "boards": [
           {
@@ -4719,12 +4669,6 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
-            "open_now": true
-          },
-          {
-            "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
-            "group": "wild_land",
             "open_now": true
           }
         ]
@@ -4808,8 +4752,7 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/wild_water"
+          "animal/bird"
         ],
         "boards": [
           {
@@ -4822,12 +4765,6 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
-            "open_now": true
-          },
-          {
-            "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
-            "group": "wild_water",
             "open_now": true
           }
         ]
@@ -21373,8 +21310,7 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/pet"
+          "animal/bird"
         ],
         "boards": [
           {
@@ -21387,12 +21323,6 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
-            "open_now": true
-          },
-          {
-            "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
-            "group": "pet",
             "open_now": true
           }
         ]
@@ -21468,8 +21398,7 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/pet"
+          "animal/bird"
         ],
         "boards": [
           {
@@ -21482,12 +21411,6 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
-            "open_now": true
-          },
-          {
-            "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
-            "group": "pet",
             "open_now": true
           }
         ]
@@ -21557,7 +21480,7 @@
     },
     "cockatiel": {
       "name": "Cockatiel",
-      "status": "in the game",
+      "status": "taken out of the game",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
@@ -21569,37 +21492,16 @@
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
-        "circles": [
+        "would_join": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/pet"
-        ],
-        "boards": [
-          {
-            "circle": "seed",
-            "sorted_by": "kind_of_thing",
-            "group": "animal",
-            "open_now": true
-          },
-          {
-            "circle": "animal",
-            "sorted_by": "kind_of_animal",
-            "group": "bird",
-            "open_now": true
-          },
-          {
-            "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
-            "group": "pet",
-            "open_now": true
-          }
+          "animal/bird"
         ]
       },
       "picture": {
         "tile": "job_2026_10_07_03_2_01_c3",
-        "game_file": "Assets/pictures/cockatiel.webp",
-        "game_sha256": "466c1630b61788523fbe56dc73cb8a103acf5e846db39f8b74b299e0e350cd64",
+        "game_file": null,
+        "game_sha256": null,
         "master_file": "tools/pictures/tiles/masters/job_2026_10_07_03_2_01_c3.png",
         "master_sha256": "142cc816e3df03a155aa53b5018424dd956534854b272fc1c6994632376c0f5f",
         "style": "v1",
@@ -21657,7 +21559,10 @@
         "say": "Cockatiel",
         "checked_by_ear": false,
         "clip": null
-      }
+      },
+      "status_why": [
+        "it did not pass the familiarity check when asked again (familiar 0.6); the owner: keep it only if it passes, and prefer birds a child in India sees often"
+      ]
     },
     "seagull": {
       "name": "Seagull",
@@ -21676,8 +21581,7 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/wild_water"
+          "animal/bird"
         ],
         "boards": [
           {
@@ -21690,12 +21594,6 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
-            "open_now": true
-          },
-          {
-            "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
-            "group": "wild_water",
             "open_now": true
           }
         ]
@@ -21780,8 +21678,7 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/wild_water"
+          "animal/bird"
         ],
         "boards": [
           {
@@ -21794,12 +21691,6 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
-            "open_now": true
-          },
-          {
-            "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
-            "group": "wild_water",
             "open_now": true
           }
         ]
@@ -21884,8 +21775,7 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/wild_water"
+          "animal/bird"
         ],
         "boards": [
           {
@@ -21898,12 +21788,6 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
-            "open_now": true
-          },
-          {
-            "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
-            "group": "wild_water",
             "open_now": true
           }
         ]
@@ -23386,8 +23270,7 @@
         "circles": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/farm"
+          "animal/bird"
         ],
         "boards": [
           {
@@ -23400,12 +23283,6 @@
             "circle": "animal",
             "sorted_by": "kind_of_animal",
             "group": "bird",
-            "open_now": true
-          },
-          {
-            "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
-            "group": "farm",
             "open_now": true
           }
         ]
@@ -23536,8 +23413,7 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/farm"
+          "animal/bird"
         ]
       }
     },
@@ -23558,8 +23434,7 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/farm"
+          "animal/bird"
         ]
       },
       "sources": {
@@ -23623,8 +23498,7 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/farm"
+          "animal/bird"
         ]
       },
       "sources": {
@@ -23689,8 +23563,7 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/pet"
+          "animal/bird"
         ]
       },
       "sources": {
@@ -23759,8 +23632,7 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/wild_water"
+          "animal/bird"
         ]
       },
       "sources": {
@@ -23829,8 +23701,7 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/wild_water"
+          "animal/bird"
         ]
       },
       "voice": {
@@ -23856,8 +23727,7 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/wild_water"
+          "animal/bird"
         ]
       },
       "voice": {
@@ -24142,17 +24012,16 @@
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 224,
+      "in the game": 223,
       "held by the rules": 51,
       "kept for later": 5,
       "excluded": 3,
-      "taken out of the game": 19
+      "taken out of the game": 20
     },
     "circles_that_can_open_now": [
       "seed",
       "animal",
       "animal/mammal",
-      "animal/bird",
       "animal/dinosaur",
       "plant",
       "plant/vegetable",
@@ -24164,14 +24033,14 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 224,
+        "things": 223,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
           "animal": {
             "label": "Animals",
-            "things": 92,
-            "with_picture": 92
+            "things": 91,
+            "with_picture": 91
           },
           "plant": {
             "label": "Plants",
@@ -24195,7 +24064,7 @@
       },
       "animal": {
         "label": "Animals",
-        "things": 92,
+        "things": 91,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_animal",
         "groups": {
@@ -24206,8 +24075,8 @@
           },
           "bird": {
             "label": "Birds",
-            "things": 17,
-            "with_picture": 17
+            "things": 16,
+            "with_picture": 16
           },
           "fish": {
             "label": "Fish",
@@ -24313,14 +24182,14 @@
       },
       "animal/bird": {
         "label": "Birds",
-        "things": 17,
+        "things": 16,
         "steps_from_seed": 2,
         "sorted_by": "pet_farm_or_wild_of_bird",
         "groups": {
           "pet": {
             "label": "Pets at home",
-            "things": 4,
-            "with_picture": 4
+            "things": 3,
+            "with_picture": 3
           },
           "farm": {
             "label": "Farm animals",
@@ -24338,74 +24207,37 @@
             "with_picture": 4
           }
         },
-        "open_by_its_things": true,
-        "can_open_now": true,
-        "needs": []
-      },
-      "animal/bird/pet": {
-        "label": "Pets at home",
-        "things": 4,
-        "steps_from_seed": 3,
-        "could_be_filled_by": [
-          {
-            "name": "Finch",
-            "status": "held by the rules"
-          }
-        ],
-        "open_by_its_things": false,
-        "can_open_now": false,
-        "needs": [
-          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
-        ]
-      },
-      "animal/bird/farm": {
-        "label": "Farm animals",
-        "things": 4,
-        "steps_from_seed": 3,
         "could_be_filled_by": [
           {
             "name": "Goose",
-            "status": "held by the rules"
-          }
-        ],
-        "open_by_its_things": false,
-        "can_open_now": false,
-        "needs": [
-          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
-        ]
-      },
-      "animal/bird/wild_land": {
-        "label": "Wild animals on land",
-        "things": 4,
-        "steps_from_seed": 3,
-        "open_by_its_things": false,
-        "can_open_now": false,
-        "needs": [
-          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
-        ]
-      },
-      "animal/bird/wild_water": {
-        "label": "Wild animals in water",
-        "things": 4,
-        "steps_from_seed": 3,
-        "could_be_filled_by": [
+            "status": "held by the rules",
+            "group": "farm"
+          },
+          {
+            "name": "Finch",
+            "status": "held by the rules",
+            "group": "pet"
+          },
           {
             "name": "Stork",
-            "status": "held by the rules"
+            "status": "held by the rules",
+            "group": "wild_water"
           },
           {
             "name": "Heron",
-            "status": "held by the rules"
+            "status": "held by the rules",
+            "group": "wild_water"
           },
           {
             "name": "Ibis",
-            "status": "held by the rules"
+            "status": "held by the rules",
+            "group": "wild_water"
           }
         ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
+          "1 more thing(s) in 'Pets at home'"
         ]
       },
       "animal/fish": {

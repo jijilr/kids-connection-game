@@ -2616,19 +2616,6 @@
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03"
     },
-    "cockatiel": {
-      "name": "Cockatiel",
-      "fields": {
-        "kind_of_thing": "animal",
-        "kind_of_animal": "bird",
-        "extinct": false,
-        "pet_farm_or_wild_of_bird": "pet"
-      },
-      "familiar": 0.7,
-      "reviewed": 9,
-      "source": "job:grounded+checked",
-      "drafted_in": "2026-10-07-03"
-    },
     "seagull": {
       "name": "Seagull",
       "fields": {

@@ -64,6 +64,7 @@ Propose {count} different questions that could sort this part into FOUR groups. 
 - It is a natural four-way split that a four-year-old already knows well. Good ones in this game: vehicles by where they travel (on the road, on rails, on water, in the air); vegetable plants by the part we eat (the fruit, what grows under the ground, the leaves, the seeds or pods).
 - Every thing has ONE true answer. Never a question where a thing truly fits two groups. (Refused before: "What do we get from the tree?", because one tree gives fruit, shade and wood.)
 - It sorts by what the thing is, does or looks like, not by where someone happens to keep it. (Refused before: "plants in pots".)
+- It is a real distinction that a teacher would teach. Never colour and never size: those are surface. If all the things here share one answer to the usual questions (all fish live in water), ask for the real difference WITHIN them (where the fish mostly lives: the sea, a river or pond, a tank at home).
 - Every thing listed above fits exactly one of your four groups.
 - Each group can hold at least five things that such a child knows by sight, counting the ones above.
 - A child could tell the answer from a picture, or knows it from daily life.
@@ -89,13 +90,13 @@ If none of the questions can do that for this part, return an empty list.
 The library:
 {library}
 
-For each question you choose, go through its groups. Under "members" put every thing from the list above that belongs in the group, spelled exactly as given. Under "new" give up to {new} more everyday things of this part of the game ({chain}) that belong in the group and are not in the list: one or two words each, as a parent names them to a child, no brand names, each a different thing that looks clearly different in a small picture. Leave a group's lists empty if nothing of this part belongs in it. Things in this part are named like this: {like}.
+For each question you choose, go through its groups. Under "members" put every thing from the list above that belongs in the group, spelled exactly as given. Under "new" give up to {new} more everyday things of this part of the game ({chain}) that belong in the group and are not in the list: one or two words each, as a parent names them to a child, no brand names, each a different thing that looks clearly different in a small picture. Leave a group's lists empty if nothing of this part belongs in it. Things in this part are named like this: {like}. Prefer the things such a child in India sees often around him to ones he would know only from a book or a film. For birds, a myna, a sparrow, a parrot, a kingfisher or an owl comes before a budgie or a canary.
 
 Return JSON: {{"chosen": [{{"question": "the question's id", "groups": [{{"key": "the group's key", "members": ["..."], "new": ["..."]}}]}}]}}"""
 
 TOPUP_TASK = """A picture game for a four-year-old in India groups pictures of things. This part of the game holds: {chain}. It is sorted by the question: "{wording}"
 
-Some of its groups need more things. For each group below, name up to {new} everyday things of this part of the game ({chain}) that belong in that group{mostly} and that such a child knows by sight. One or two words each, as a parent names them to a child; no brand names; each a different thing that looks clearly different in a small picture. Not any of these, which are there already or were tried: {taken}. If nothing more belongs in a group, give it an empty list.
+Some of its groups need more things. For each group below, name up to {new} everyday things of this part of the game ({chain}) that belong in that group{mostly} and that such a child knows by sight. One or two words each, as a parent names them to a child; no brand names; each a different thing that looks clearly different in a small picture. Not any of these, which are there already or were tried: {taken}. If nothing more belongs in a group, give it an empty list. Prefer the things such a child in India sees often around him to ones he would know only from a book or a film. For birds, a myna, a sparrow, a parrot, a kingfisher or an owl comes before a budgie or a canary.
 
 The groups: {groups}
 
