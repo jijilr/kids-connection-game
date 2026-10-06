@@ -1,0 +1,31 @@
+{
+  "about": "Hard names for the Kokoro voice. `say` is the text the voice is given (the name as the child says it). `sounds_like` is a guide for whoever checks the clip by ear. Nothing here has been checked by ear yet; set checked_by_ear to true only after listening to the finished clip.",
+  "names": {
+    "tyrannosaurus_rex":  { "say": "T. rex",             "sounds_like": "TEE reks",                      "checked_by_ear": false },
+    "giganotosaurus":     { "say": "Giganotosaurus",     "sounds_like": "gig-an-OH-toe-SORE-us",         "checked_by_ear": false },
+    "velociraptor":       { "say": "Velociraptor",       "sounds_like": "vel-OSS-ee-rap-tor",            "checked_by_ear": false },
+    "allosaurus":         { "say": "Allosaurus",         "sounds_like": "AL-oh-SORE-us",                 "checked_by_ear": false },
+    "spinosaurus":        { "say": "Spinosaurus",        "sounds_like": "SPINE-oh-SORE-us",              "checked_by_ear": false },
+    "brachiosaurus":      { "say": "Brachiosaurus",      "sounds_like": "BRAK-ee-oh-SORE-us",            "checked_by_ear": false },
+    "brontosaurus":       { "say": "Brontosaurus",       "sounds_like": "BRON-toe-SORE-us",              "checked_by_ear": false },
+    "diplodocus":         { "say": "Diplodocus",         "sounds_like": "dip-LOD-oh-kus",                "checked_by_ear": false },
+    "argentinosaurus":    { "say": "Argentinosaurus",    "sounds_like": "AR-jen-TEEN-oh-SORE-us",        "checked_by_ear": false },
+    "amargasaurus":       { "say": "Amargasaurus",       "sounds_like": "ah-MAR-gah-SORE-us",            "checked_by_ear": false },
+    "triceratops":        { "say": "Triceratops",        "sounds_like": "try-SERRA-tops",                "checked_by_ear": false },
+    "ankylosaurus":       { "say": "Ankylosaurus",       "sounds_like": "an-KIE-loh-SORE-us",            "checked_by_ear": false },
+    "stegosaurus":        { "say": "Stegosaurus",        "sounds_like": "STEG-oh-SORE-us",               "checked_by_ear": false },
+    "pachycephalosaurus": { "say": "Pachycephalosaurus", "sounds_like": "PAK-ee-SEF-ah-loh-SORE-us",     "checked_by_ear": false },
+    "parasaurolophus":    { "say": "Parasaurolophus",    "sounds_like": "PA-ra-saw-ROL-off-us",          "checked_by_ear": false },
+    "mosasaurus":         { "say": "Mosasaurus",         "sounds_like": "MOZE-ah-SORE-us",               "checked_by_ear": false },
+    "kronosaurus":        { "say": "Kronosaurus",        "sounds_like": "KROH-no-SORE-us",               "checked_by_ear": false },
+    "mixosaurus":         { "say": "Mixosaurus",         "sounds_like": "MIX-oh-SORE-us",                "checked_by_ear": false },
+    "tylosaurus":         { "say": "Tylosaurus",         "sounds_like": "TIE-loh-SORE-us",               "checked_by_ear": false },
+    "plesiosaurus":       { "say": "Plesiosaurus",       "sounds_like": "PLEE-see-oh-SORE-us",           "checked_by_ear": false },
+    "elasmosaurus":       { "say": "Elasmosaurus",       "sounds_like": "eh-LAZ-moh-SORE-us",            "checked_by_ear": false },
+    "pterodactylus":      { "say": "Pterodactyl",        "sounds_like": "TERRA-dak-til",                 "checked_by_ear": false },
+    "pteranodon":         { "say": "Pteranodon",         "sounds_like": "teh-RAN-oh-don",                "checked_by_ear": false },
+    "quetzalcoatlus":     { "say": "Quetzalcoatlus",     "sounds_like": "KWET-zal-koh-AT-lus",           "checked_by_ear": false },
+    "titanoboa":          { "say": "Titanoboa",          "sounds_like": "tie-TAN-oh-BOH-ah",             "checked_by_ear": false },
+    "vasuki_indicus":     { "say": "Vasuki indicus",     "sounds_like": "VAH-soo-kee IN-di-kus",         "checked_by_ear": false }
+  }
+}

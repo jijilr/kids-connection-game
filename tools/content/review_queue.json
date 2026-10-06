@@ -1,0 +1,82 @@
+{
+  "for_the_owner": [
+    {
+      "name": "Wind",
+      "fields": {
+        "kind_of_thing": "nature_not_alive"
+      },
+      "why": [
+        "the drafter was unsure: Wind cannot be seen, only felt, so a child may know the word but not picture it as a thing."
+      ]
+    },
+    {
+      "name": "Salamander",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "amphibian",
+        "extinct": false
+      },
+      "why": [
+        "the checker doubts a four-year-old would recognise it"
+      ]
+    },
+    {
+      "name": "Newt",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "amphibian",
+        "extinct": false
+      },
+      "why": [
+        "the checker doubts a four-year-old would recognise it"
+      ]
+    },
+    {
+      "name": "Caecilian",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "amphibian",
+        "extinct": false
+      },
+      "why": [
+        "the checker doubts a four-year-old would recognise it"
+      ]
+    },
+    {
+      "name": "Rhamphorhynchus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": false,
+        "kind_of_dinosaur": "flyer",
+        "extinct": true
+      },
+      "why": [
+        "candidate for the fourth flyer: the first child chooses one, the other stays here"
+      ],
+      "from": "owner"
+    },
+    {
+      "name": "Dimorphodon",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": false,
+        "kind_of_dinosaur": "flyer",
+        "extinct": true
+      },
+      "why": [
+        "candidate for the fourth flyer: the first child chooses one, the other stays here"
+      ],
+      "from": "owner"
+    },
+    {
+      "name": "Basilisk",
+      "fields": {},
+      "why": [
+        "needs a field for real versus story creatures before it can be added"
+      ],
+      "from": "owner"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "status": "version 1 approved by the owner on 2026-10-06; the game does not read this file yet",
+  "about": "Every field a thing may carry, and the only values that field may take. A field that does not apply to a thing is left out of that thing; it is never written as 'not applicable'. The wording is what a child sees or hears; it is not data.",
+  "rules": [
+    "A field holds the everyday meaning, which is what the game sorts by.",
+    "An _academic field is added only where science disagrees with the everyday meaning. It never sorts a board and never marks a child wrong."
+  ],
+  "fields": {
+    "kind_of_thing": {
+      "wording": "What kind of thing is it?",
+      "values": {
+        "animal": "Animals",
+        "plant": "Plants",
+        "nature_not_alive": "Things in nature that are not alive",
+        "made_by_people": "Things people make"
+      },
+      "expected_on": "everything",
+      "since": 1
+    },
+    "kind_of_animal": {
+      "wording": "What kind of animal is it?",
+      "meaning": "everyday",
+      "values": {
+        "mammal": "Mammals",
+        "bird": "Birds",
+        "fish": "Fish",
+        "insect": "Insects",
+        "reptile": "Reptiles",
+        "amphibian": "Amphibians",
+        "dinosaur": "Dinosaurs"
+      },
+      "expected_on": { "kind_of_thing": "animal" },
+      "since": 1
+    },
+    "dinosaur_academic": {
+      "wording": "Is it a dinosaur to a scientist?",
+      "meaning": "academic",
+      "everyday_partner": { "kind_of_animal": "dinosaur" },
+      "values": { "true": "A true dinosaur", "false": "A cousin of the dinosaurs" },
+      "expected_on": { "kind_of_animal": "dinosaur" },
+      "sorts_boards": false,
+      "since": 1
+    },
+    "kind_of_dinosaur": {
+      "wording": "What kind of dinosaur is it?",
+      "meaning": "everyday",
+      "values": {
+        "land_hunter": "Land hunters",
+        "land_grazer": "Land grazers",
+        "flyer": "Flyers",
+        "swimmer": "Swimmers"
+      },
+      "expected_on": { "kind_of_animal": "dinosaur" },
+      "since": 1
+    },
+    "extinct": {
+      "wording": "Is it extinct or still living?",
+      "values": { "true": "Extinct", "false": "Still living" },
+      "expected_on": { "kind_of_thing": ["animal", "plant"] },
+      "since": 1
+    }
+  }
+}

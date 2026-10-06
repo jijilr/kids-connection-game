@@ -1,0 +1,1164 @@
+{
+  "dictionary_version": 1,
+  "things": {
+    "mango_tree": {
+      "name": "Mango tree",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false
+      },
+      "familiar": 0.95,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "banana_plant": {
+      "name": "Banana plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false
+      },
+      "familiar": 0.9,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "coconut_tree": {
+      "name": "Coconut tree",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false
+      },
+      "familiar": 0.9,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "rose": {
+      "name": "Rose",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false
+      },
+      "familiar": 0.85,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "sunflower": {
+      "name": "Sunflower",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false
+      },
+      "familiar": 0.85,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "lotus": {
+      "name": "Lotus",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false
+      },
+      "familiar": 0.8,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "marigold": {
+      "name": "Marigold",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false
+      },
+      "familiar": 0.8,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "rice_plant": {
+      "name": "Rice plant",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false
+      },
+      "familiar": 0.75,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "grass": {
+      "name": "Grass",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false
+      },
+      "familiar": 0.9,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "neem_tree": {
+      "name": "Neem tree",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false
+      },
+      "familiar": 0.7,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "sun": {
+      "name": "Sun",
+      "fields": {
+        "kind_of_thing": "nature_not_alive"
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "moon": {
+      "name": "Moon",
+      "fields": {
+        "kind_of_thing": "nature_not_alive"
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "rain": {
+      "name": "Rain",
+      "fields": {
+        "kind_of_thing": "nature_not_alive"
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "river": {
+      "name": "River",
+      "fields": {
+        "kind_of_thing": "nature_not_alive"
+      },
+      "familiar": 0.95,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "rock": {
+      "name": "Rock",
+      "fields": {
+        "kind_of_thing": "nature_not_alive"
+      },
+      "familiar": 0.95,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "cloud": {
+      "name": "Cloud",
+      "fields": {
+        "kind_of_thing": "nature_not_alive"
+      },
+      "familiar": 0.95,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "sand": {
+      "name": "Sand",
+      "fields": {
+        "kind_of_thing": "nature_not_alive"
+      },
+      "familiar": 0.9,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "mountain": {
+      "name": "Mountain",
+      "fields": {
+        "kind_of_thing": "nature_not_alive"
+      },
+      "familiar": 0.85,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "star": {
+      "name": "Star",
+      "fields": {
+        "kind_of_thing": "nature_not_alive"
+      },
+      "familiar": 0.85,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "car": {
+      "name": "Car",
+      "fields": {
+        "kind_of_thing": "made_by_people"
+      },
+      "familiar": 0.98,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "chair": {
+      "name": "Chair",
+      "fields": {
+        "kind_of_thing": "made_by_people"
+      },
+      "familiar": 0.97,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "house": {
+      "name": "House",
+      "fields": {
+        "kind_of_thing": "made_by_people"
+      },
+      "familiar": 0.97,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "ball": {
+      "name": "Ball",
+      "fields": {
+        "kind_of_thing": "made_by_people"
+      },
+      "familiar": 0.96,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "bicycle": {
+      "name": "Bicycle",
+      "fields": {
+        "kind_of_thing": "made_by_people"
+      },
+      "familiar": 0.95,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "cup": {
+      "name": "Cup",
+      "fields": {
+        "kind_of_thing": "made_by_people"
+      },
+      "familiar": 0.95,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "spoon": {
+      "name": "Spoon",
+      "fields": {
+        "kind_of_thing": "made_by_people"
+      },
+      "familiar": 0.94,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "bus": {
+      "name": "Bus",
+      "fields": {
+        "kind_of_thing": "made_by_people"
+      },
+      "familiar": 0.94,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "teddy_bear": {
+      "name": "Teddy bear",
+      "fields": {
+        "kind_of_thing": "made_by_people"
+      },
+      "familiar": 0.93,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "hammer": {
+      "name": "Hammer",
+      "fields": {
+        "kind_of_thing": "made_by_people"
+      },
+      "familiar": 0.9,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "train": {
+      "name": "Train",
+      "fields": {
+        "kind_of_thing": "made_by_people"
+      },
+      "familiar": 0.9,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "doll": {
+      "name": "Doll",
+      "fields": {
+        "kind_of_thing": "made_by_people"
+      },
+      "familiar": 0.9,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "dog": {
+      "name": "Dog",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false
+      },
+      "familiar": 0.99,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "cat": {
+      "name": "Cat",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false
+      },
+      "familiar": 0.98,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "cow": {
+      "name": "Cow",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false
+      },
+      "familiar": 0.98,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "elephant": {
+      "name": "Elephant",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false
+      },
+      "familiar": 0.97,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "lion": {
+      "name": "Lion",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false
+      },
+      "familiar": 0.96,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "tiger": {
+      "name": "Tiger",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false
+      },
+      "familiar": 0.96,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "monkey": {
+      "name": "Monkey",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false
+      },
+      "familiar": 0.95,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "horse": {
+      "name": "Horse",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false
+      },
+      "familiar": 0.94,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "goat": {
+      "name": "Goat",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false
+      },
+      "familiar": 0.93,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "rabbit": {
+      "name": "Rabbit",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false
+      },
+      "familiar": 0.92,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "bear": {
+      "name": "Bear",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false
+      },
+      "familiar": 0.9,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "giraffe": {
+      "name": "Giraffe",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false
+      },
+      "familiar": 0.9,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "crow": {
+      "name": "Crow",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false
+      },
+      "familiar": 0.95,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "pigeon": {
+      "name": "Pigeon",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false
+      },
+      "familiar": 0.95,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "parrot": {
+      "name": "Parrot",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false
+      },
+      "familiar": 0.95,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "hen": {
+      "name": "Hen",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false
+      },
+      "familiar": 0.95,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "duck": {
+      "name": "Duck",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false
+      },
+      "familiar": 0.9,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "peacock": {
+      "name": "Peacock",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false
+      },
+      "familiar": 0.9,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "sparrow": {
+      "name": "Sparrow",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false
+      },
+      "familiar": 0.85,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "eagle": {
+      "name": "Eagle",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false
+      },
+      "familiar": 0.8,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "owl": {
+      "name": "Owl",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false
+      },
+      "familiar": 0.8,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "penguin": {
+      "name": "Penguin",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "bird",
+        "extinct": false
+      },
+      "familiar": 0.75,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "goldfish": {
+      "name": "Goldfish",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "fish",
+        "extinct": false
+      },
+      "familiar": 0.9,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "rohu_fish": {
+      "name": "Rohu fish",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "fish",
+        "extinct": false
+      },
+      "familiar": 0.8,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "catla_fish": {
+      "name": "Catla fish",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "fish",
+        "extinct": false
+      },
+      "familiar": 0.75,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "shark": {
+      "name": "Shark",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "fish",
+        "extinct": false
+      },
+      "familiar": 0.7,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "clownfish": {
+      "name": "Clownfish",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "fish",
+        "extinct": false
+      },
+      "familiar": 0.65,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "butterfly": {
+      "name": "Butterfly",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "insect",
+        "extinct": false
+      },
+      "familiar": 0.95,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "ant": {
+      "name": "Ant",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "insect",
+        "extinct": false
+      },
+      "familiar": 0.95,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "housefly": {
+      "name": "Housefly",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "insect",
+        "extinct": false
+      },
+      "familiar": 0.9,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "mosquito": {
+      "name": "Mosquito",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "insect",
+        "extinct": false
+      },
+      "familiar": 0.9,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "honeybee": {
+      "name": "Honeybee",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "insect",
+        "extinct": false
+      },
+      "familiar": 0.85,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "cockroach": {
+      "name": "Cockroach",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "insect",
+        "extinct": false
+      },
+      "familiar": 0.85,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "grasshopper": {
+      "name": "Grasshopper",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "insect",
+        "extinct": false
+      },
+      "familiar": 0.8,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "ladybug": {
+      "name": "Ladybug",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "insect",
+        "extinct": false
+      },
+      "familiar": 0.75,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "house_lizard": {
+      "name": "House lizard",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "reptile",
+        "extinct": false
+      },
+      "familiar": 0.9,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "crocodile": {
+      "name": "Crocodile",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "reptile",
+        "extinct": false
+      },
+      "familiar": 0.9,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "tortoise": {
+      "name": "Tortoise",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "reptile",
+        "extinct": false
+      },
+      "familiar": 0.85,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "snake": {
+      "name": "Snake",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "reptile",
+        "extinct": false
+      },
+      "familiar": 0.85,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "turtle": {
+      "name": "Turtle",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "reptile",
+        "extinct": false
+      },
+      "familiar": 0.8,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "chameleon": {
+      "name": "Chameleon",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "reptile",
+        "extinct": false
+      },
+      "familiar": 0.7,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "monitor_lizard": {
+      "name": "Monitor lizard",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "reptile",
+        "extinct": false
+      },
+      "familiar": 0.6,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "cobra": {
+      "name": "Cobra",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "reptile",
+        "extinct": false
+      },
+      "familiar": 0.6,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "frog": {
+      "name": "Frog",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "amphibian",
+        "extinct": false
+      },
+      "familiar": 0.95,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "toad": {
+      "name": "Toad",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "amphibian",
+        "extinct": false
+      },
+      "familiar": 0.8,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "tree_frog": {
+      "name": "Tree frog",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "amphibian",
+        "extinct": false
+      },
+      "familiar": 0.6,
+      "reviewed": 1,
+      "source": "deepseek:drafted+checked"
+    },
+    "tyrannosaurus_rex": {
+      "name": "Tyrannosaurus rex",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_hunter",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list",
+      "shown_as": "T. rex"
+    },
+    "giganotosaurus": {
+      "name": "Giganotosaurus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_hunter",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "velociraptor": {
+      "name": "Velociraptor",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_hunter",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "allosaurus": {
+      "name": "Allosaurus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_hunter",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "spinosaurus": {
+      "name": "Spinosaurus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_hunter",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list",
+      "notes": {
+        "kind_of_dinosaur": "Scientists debate how much time Spinosaurus spent in water."
+      }
+    },
+    "brachiosaurus": {
+      "name": "Brachiosaurus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "brontosaurus": {
+      "name": "Brontosaurus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "diplodocus": {
+      "name": "Diplodocus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "argentinosaurus": {
+      "name": "Argentinosaurus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "amargasaurus": {
+      "name": "Amargasaurus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "triceratops": {
+      "name": "Triceratops",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "ankylosaurus": {
+      "name": "Ankylosaurus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "stegosaurus": {
+      "name": "Stegosaurus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "pachycephalosaurus": {
+      "name": "Pachycephalosaurus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "parasaurolophus": {
+      "name": "Parasaurolophus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "mosasaurus": {
+      "name": "Mosasaurus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": false,
+        "kind_of_dinosaur": "swimmer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "kronosaurus": {
+      "name": "Kronosaurus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": false,
+        "kind_of_dinosaur": "swimmer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "mixosaurus": {
+      "name": "Mixosaurus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": false,
+        "kind_of_dinosaur": "swimmer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "tylosaurus": {
+      "name": "Tylosaurus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": false,
+        "kind_of_dinosaur": "swimmer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "plesiosaurus": {
+      "name": "Plesiosaurus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": false,
+        "kind_of_dinosaur": "swimmer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "elasmosaurus": {
+      "name": "Elasmosaurus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": false,
+        "kind_of_dinosaur": "swimmer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "pterodactylus": {
+      "name": "Pterodactylus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": false,
+        "kind_of_dinosaur": "flyer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list",
+      "shown_as": "Pterodactyl"
+    },
+    "pteranodon": {
+      "name": "Pteranodon",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": false,
+        "kind_of_dinosaur": "flyer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "quetzalcoatlus": {
+      "name": "Quetzalcoatlus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": false,
+        "kind_of_dinosaur": "flyer",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "anaconda": {
+      "name": "Anaconda",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "reptile",
+        "extinct": false
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "python": {
+      "name": "Python",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "reptile",
+        "extinct": false
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "titanoboa": {
+      "name": "Titanoboa",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "reptile",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list"
+    },
+    "vasuki_indicus": {
+      "name": "Vasuki indicus",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "reptile",
+        "extinct": true
+      },
+      "familiar": 1.0,
+      "reviewed": 1,
+      "source": "owner:list",
+      "notes": {
+        "general": "Its length is estimated from fossil backbones, so it is uncertain."
+      }
+    }
+  }
+}
