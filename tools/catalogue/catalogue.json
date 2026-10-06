@@ -16228,6 +16228,17 @@
         "say": "Houseboat",
         "checked_by_ear": false,
         "clip": null
+      },
+      "picture": {
+        "tile": "job_2026_10_06_12_1_01_c1",
+        "game_file": "Assets/pictures/houseboat.webp",
+        "game_sha256": "9309bca91709e0868510898ea5a849ea2d48369846e9d6587188e43293c8514c",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_12_1_01_c1.png",
+        "master_sha256": "5fea2acd8009b725b19297c052a64675207158535aaac5ae5b7e3473b3fd2b67",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 2
       }
     },
     "aeroplane": {
@@ -18016,7 +18027,7 @@
           "made_by_people": {
             "label": "Things people make",
             "things": 57,
-            "with_picture": 56
+            "with_picture": 57
           }
         },
         "open_by_its_things": true,
@@ -18471,7 +18482,7 @@
           "vehicle": {
             "label": "Vehicles",
             "things": 19,
-            "with_picture": 18
+            "with_picture": 19
           },
           "toy": {
             "label": "Toys",
@@ -18517,7 +18528,7 @@
           "water": {
             "label": "On water",
             "things": 5,
-            "with_picture": 4
+            "with_picture": 5
           },
           "air": {
             "label": "In the air",
@@ -18703,7 +18714,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "publish.py",
+    "by": "job run 2026-10-06-12",
     "on": "2026-10-06"
   }
 }
