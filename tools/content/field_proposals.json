@@ -276,7 +276,8 @@
       }
     },
     "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in.",
-    "refused_by_the_rules": [
+    "refused_by_the_rules": [],
+    "refused_by_an_earlier_test": [
       {
         "wording": "What shape are the leaves?",
         "values": {
@@ -412,7 +413,8 @@
       }
     },
     "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in. Marigold fits none of these cleanly.",
-    "refused_by_the_rules": [
+    "refused_by_the_rules": [],
+    "refused_by_an_earlier_test": [
       {
         "wording": "What shape is the flower?",
         "values": {
@@ -546,7 +548,8 @@
       }
     },
     "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in.",
-    "refused_by_the_rules": [
+    "refused_by_the_rules": [],
+    "refused_by_an_earlier_test": [
       {
         "wording": "How tall does it grow?",
         "values": {
@@ -682,7 +685,8 @@
       }
     },
     "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in. Rain is already listed as both sky and water, so it stays off this board.",
-    "refused_by_the_rules": [
+    "refused_by_the_rules": [],
+    "refused_by_an_earlier_test": [
       {
         "wording": "What shape is it?",
         "values": {
@@ -933,7 +937,8 @@
       }
     },
     "note": "Proposed on 2026-10-06, after the owner asked for circles with natural four-way splits a four-year-old knows well. The examples are suggestions; the job settles each one before it goes in.",
-    "refused_by_the_rules": [
+    "refused_by_the_rules": [],
+    "refused_by_an_earlier_test": [
       {
         "wording": "How do we move it to make it work?",
         "values": {
@@ -1079,7 +1084,8 @@
       }
     },
     "note": "Proposed on 2026-10-06, after the owner asked for circles with natural four-way splits a four-year-old knows well. The examples are suggestions; the job settles each one before it goes in.",
-    "refused_by_the_rules": [
+    "refused_by_the_rules": [],
+    "refused_by_an_earlier_test": [
       {
         "wording": "What is its body covered with?",
         "values": {
@@ -1167,11 +1173,12 @@
     ]
   },
   "nature_not_alive/water": {
-    "status": "held by the rules on 2026-10-07: no field passed the tests",
+    "status": "open: its earlier refusals were by a test since recalibrated",
     "field": null,
     "wording": "",
     "values": {},
-    "refused_by_the_rules": [
+    "refused_by_the_rules": [],
+    "refused_by_an_earlier_test": [
       {
         "wording": "How big is the water?",
         "values": {
@@ -1259,11 +1266,12 @@
     ]
   },
   "nature_not_alive/land": {
-    "status": "held by the rules on 2026-10-07: no field passed the tests",
+    "status": "open: its earlier refusals were by a test since recalibrated",
     "field": null,
     "wording": "",
     "values": {},
-    "refused_by_the_rules": [
+    "refused_by_the_rules": [],
+    "refused_by_an_earlier_test": [
       {
         "wording": "What shape is the land here?",
         "values": {
@@ -1351,11 +1359,12 @@
     ]
   },
   "nature_not_alive/ground": {
-    "status": "held by the rules on 2026-10-07: no field passed the tests",
+    "status": "open: its earlier refusals were by a test since recalibrated",
     "field": null,
     "wording": "",
     "values": {},
-    "refused_by_the_rules": [
+    "refused_by_the_rules": [],
+    "refused_by_an_earlier_test": [
       {
         "wording": "How big are the pieces you can see?",
         "values": {
@@ -1443,11 +1452,12 @@
     ]
   },
   "animal/reptile": {
-    "status": "held by the rules on 2026-10-07: no field passed the tests",
+    "status": "open: its earlier refusals were by a test since recalibrated",
     "field": null,
     "wording": "",
     "values": {},
-    "refused_by_the_rules": [
+    "refused_by_the_rules": [],
+    "refused_by_an_earlier_test": [
       {
         "wording": "What is its body covered with?",
         "values": {
@@ -1535,11 +1545,12 @@
     ]
   },
   "animal/bird": {
-    "status": "held by the rules on 2026-10-07: no field passed the tests",
+    "status": "open: its earlier refusals were by a test since recalibrated",
     "field": null,
     "wording": "",
     "values": {},
-    "refused_by_the_rules": [
+    "refused_by_the_rules": [],
+    "refused_by_an_earlier_test": [
       {
         "wording": "Where does this bird live?",
         "values": {
@@ -1627,11 +1638,12 @@
     ]
   },
   "animal/insect": {
-    "status": "held by the rules on 2026-10-07: no field passed the tests",
+    "status": "open: its earlier refusals were by a test since recalibrated",
     "field": null,
     "wording": "",
     "values": {},
-    "refused_by_the_rules": [
+    "refused_by_the_rules": [],
+    "refused_by_an_earlier_test": [
       {
         "wording": "Where do you find this insect?",
         "values": {
@@ -1719,11 +1731,12 @@
     ]
   },
   "animal/fish": {
-    "status": "held by the rules on 2026-10-07: no field passed the tests",
+    "status": "open: its earlier refusals were by a test since recalibrated",
     "field": null,
     "wording": "",
     "values": {},
-    "refused_by_the_rules": [
+    "refused_by_the_rules": [],
+    "refused_by_an_earlier_test": [
       {
         "wording": "What shape is the fish?",
         "values": {
@@ -1811,11 +1824,12 @@
     ]
   },
   "made_by_people/toy": {
-    "status": "held by the rules on 2026-10-07: no field passed the tests",
+    "status": "open: its earlier refusals were by a test since recalibrated",
     "field": null,
     "wording": "",
     "values": {},
-    "refused_by_the_rules": [
+    "refused_by_the_rules": [],
+    "refused_by_an_earlier_test": [
       {
         "wording": "What do you do with it?",
         "values": {
@@ -1903,11 +1917,12 @@
     ]
   },
   "made_by_people/building": {
-    "status": "held by the rules on 2026-10-07: no field passed the tests",
+    "status": "open: its earlier refusals were by a test since recalibrated",
     "field": null,
     "wording": "",
     "values": {},
-    "refused_by_the_rules": [
+    "refused_by_the_rules": [],
+    "refused_by_an_earlier_test": [
       {
         "wording": "Who uses this building?",
         "values": {
