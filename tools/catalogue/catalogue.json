@@ -24041,7 +24041,7 @@
     },
     "ground": {
       "name": "Ground",
-      "status": "in the game",
+      "status": "taken out of the game",
       "fields": {
         "kind_of_thing": "nature_not_alive",
         "kind_of_nature": "land",
@@ -24052,30 +24052,16 @@
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-05",
       "worked_out": {
-        "circles": [
+        "would_join": [
           "seed",
           "nature_not_alive",
           "nature_not_alive/land"
-        ],
-        "boards": [
-          {
-            "circle": "seed",
-            "sorted_by": "kind_of_thing",
-            "group": "nature_not_alive",
-            "open_now": true
-          },
-          {
-            "circle": "nature_not_alive",
-            "sorted_by": "kind_of_nature",
-            "group": "land",
-            "open_now": true
-          }
         ]
       },
       "picture": {
         "tile": "job_2026_10_07_05_2_01_c1",
-        "game_file": "Assets/pictures/ground.webp",
-        "game_sha256": "8cc5b77dd4906810bf760c0bf758df4f3a59d3b0cd9c59dc3758648112415a78",
+        "game_file": null,
+        "game_sha256": null,
         "master_file": "tools/pictures/tiles/masters/job_2026_10_07_05_2_01_c1.png",
         "master_sha256": "dafffc7ebf6589a3ccb1ae3d52a2031b88487f7efefa92669f5af5b45cfcb0c8",
         "style": "v1",
@@ -24127,7 +24113,10 @@
         "say": "Ground",
         "checked_by_ear": false,
         "clip": null
-      }
+      },
+      "status_why": [
+        "its picture is a patch of bare soil, which is Soil again and not a place on land; run 2026-10-07-05 let it in"
+      ]
     },
     "marsh": {
       "name": "Marsh",
@@ -24153,11 +24142,11 @@
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 225,
+      "in the game": 224,
       "held by the rules": 51,
       "kept for later": 5,
       "excluded": 3,
-      "taken out of the game": 18
+      "taken out of the game": 19
     },
     "circles_that_can_open_now": [
       "seed",
@@ -24175,7 +24164,7 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 225,
+        "things": 224,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
@@ -24191,8 +24180,8 @@
           },
           "nature_not_alive": {
             "label": "Things in nature that are not alive",
-            "things": 32,
-            "with_picture": 32
+            "things": 31,
+            "with_picture": 31
           },
           "made_by_people": {
             "label": "Things people make",
@@ -24710,7 +24699,7 @@
       },
       "nature_not_alive": {
         "label": "Things in nature that are not alive",
-        "things": 32,
+        "things": 31,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_nature",
         "groups": {
@@ -24726,8 +24715,8 @@
           },
           "land": {
             "label": "Places on land",
-            "things": 14,
-            "with_picture": 14
+            "things": 13,
+            "with_picture": 13
           },
           "ground": {
             "label": "Rocks and soil",
@@ -24767,7 +24756,7 @@
       },
       "nature_not_alive/land": {
         "label": "Places on land",
-        "things": 14,
+        "things": 13,
         "steps_from_seed": 2,
         "sorted_by": "shape_of_the_land",
         "groups": {
@@ -24778,8 +24767,8 @@
           },
           "flat": {
             "label": "Flat land",
-            "things": 4,
-            "with_picture": 4
+            "things": 3,
+            "with_picture": 3
           },
           "by_water": {
             "label": "Land beside water",
@@ -24836,6 +24825,7 @@
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
+          "1 more thing(s) in 'Flat land'",
           "3 more thing(s) in 'Land beside water'"
         ]
       },
@@ -25210,7 +25200,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job run 2026-10-07-05",
+    "by": "publish.py",
     "on": "2026-10-07"
   }
 }

@@ -2803,18 +2803,6 @@
       "notes": {
         "pet_farm_or_wild_of_bird": "The pages point to 'Wild animals on land'. Two checks, sorting it as a parent would, both put it in 'Farm animals'."
       }
-    },
-    "ground": {
-      "name": "Ground",
-      "fields": {
-        "kind_of_thing": "nature_not_alive",
-        "kind_of_nature": "land",
-        "shape_of_the_land": "flat"
-      },
-      "familiar": 0.9,
-      "reviewed": 9,
-      "source": "job:grounded+checked",
-      "drafted_in": "2026-10-07-05"
     }
   }
 }
