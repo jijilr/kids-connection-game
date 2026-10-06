@@ -1208,7 +1208,8 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
         for turn in range(2):
             value = lambda n: str(list(asks_of_run[n]["fixed"].values())[-1])
             got = lambda n: sum(1 for t in run["things"] if t.get("ask") == n and t["passed"])
-            groups = [n for n in entry["asks"] if asks_of_run[n]["fixed"]]
+            # (only the needs of the field's own groups: a circle that is itself too thin has no other value to turn to)
+            groups = [n for n in entry["asks"] if len(asks_of_run[n]["fixed"]) > len(entry["circle"].split("/"))]
             failed = {value(n) for n in groups if got(n) < asks_of_run[n]["need"]}
             if not failed:
                 break

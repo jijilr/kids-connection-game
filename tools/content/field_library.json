@@ -344,10 +344,10 @@
       ],
       "from": "biology: sea fish, freshwater fish, and the fish people keep. The owner gave sea, river or pond, and home aquarium; coral reefs were added because a board needs four groups",
       "values": {
-        "sea": "In the open sea",
-        "reef": "Among corals and rocks in the sea",
-        "fresh": "In rivers and ponds",
-        "aquarium": "In a tank at home"
+        "sea": "Wild, in the open sea",
+        "reef": "Wild, among corals in the sea",
+        "fresh": "Wild, in rivers and ponds",
+        "aquarium": "Kept in a tank at home"
       }
     },
     {
@@ -462,8 +462,22 @@
         "farmer": "A farmer or gardener",
         "tailor": "A tailor",
         "doctor": "A doctor",
-        "mechanic": "A mechanic",
-        "builder": "A builder or mason"
+        "mechanic": "A mechanic"
+      }
+    },
+    {
+      "id": "what_the_insect_eats",
+      "wording": "What does it mostly eat?",
+      "for": [
+        "animal/insect"
+      ],
+      "from": "biology: how insects feed. Added after 'in the garden' and 'on flowers' proved to overlap",
+      "values": {
+        "nectar": "Sweet juice from flowers",
+        "blood": "The blood of people and animals",
+        "our_food": "Our food and our rubbish",
+        "leaves": "Leaves and plants",
+        "hunts": "Other small creatures"
       }
     }
   ],
