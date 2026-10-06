@@ -4,8 +4,10 @@ When a circle has no field to sort it by, DeepSeek proposes up to three, and fou
 decide. A field enters the dictionary only when it passes all four:
 
   1. four familiar members   every value has at least four things a four-year-old knows:
-                             things already in the circle, and new names that pass the
-                             familiarity check.
+                             things already in the circle, and new names that belong to
+                             the circle, pass the familiarity check, and are things of
+                             their own: not another name for one already there, nor a
+                             wet, big or coloured sort of it.
   2. one value each          every thing already in the circle belongs to exactly one
                              value: two checks, worded differently, must both say so and
                              agree. At most one thing in eight may truly fit more than
@@ -318,8 +320,11 @@ def test(client, config, spend, dictionary: dict, things: dict, taken: set, path
         new = [o for o in new if belongs.get(o["name"]) == str(here)]
     for value in candidate["values"]:
         batch = [o for o in new if o["value"] == value["key"]]
-        recognise(client, config, spend, {"chain": f"{chain} > {value['label']}"}, batch)
-    known = [o for o in new if o.get("recognised") and o.get("suitable") and o["familiar"] >= FAMILIAR_ENOUGH]
+        others = [o["name"] for o in new if o["value"] != value["key"]]
+        recognise(client, config, spend, {"chain": f"{chain} > {value['label']}", "beside": list(names) + others}, batch)
+    result["not_things_of_their_own"] = [o["name"] for o in new if o.get("own_thing") is False]
+    known = [o for o in new if o.get("recognised") and o.get("suitable") and o["familiar"] >= FAMILIAR_ENOUGH
+             and o.get("own_thing") is not False]
     result["new"] = {o["name"]: {"value": o["value"], "familiar": o["familiar"]} for o in known}
     result["unsuitable"] = [o["name"] for o in new if o.get("suitable") is False]
     counts = {v: sum(1 for x in result["placed"].values() if x == v) + sum(1 for o in known if o["value"] == v)

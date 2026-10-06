@@ -121,7 +121,7 @@ def stand_in(sorting: dict, checking: dict = None, not_birds: tuple = ()):
 
 def know_all(client, config, spend, ask, offers):
     for o in offers:
-        o.update(recognised=True, suitable=True, familiar=0.9)
+        o.update(recognised=True, suitable=True, familiar=0.9, own_thing=True)
 
 
 def candidate() -> dict:
@@ -171,6 +171,21 @@ def test_a_suggested_name_that_is_not_a_thing_of_the_circle_does_not_count():
     result = run_test(not_birds=("Goose", "Pelican", "Flamingo"))
     assert "'On the water' has 2" in result["why"][0]
     assert result["not_of_this_circle"] == ["Goose", "Pelican", "Flamingo"]
+
+
+def test_a_suggested_name_that_is_only_another_name_for_a_thing_there_does_not_count():
+    def renamings(client, config, spend, ask, offers):
+        assert "Duck" in ask["beside"]                 # the check is told what is already there
+        for o in offers:       # the water birds suggested are a duck again: a wet duck, a big duck, a white duck
+            o.update(recognised=True, suitable=True, familiar=0.9, own_thing=o["value"] != "water")
+    result = run_test(recognise=renamings)
+    assert "'On the water' has 2" in result["why"][0]
+    assert result["not_things_of_their_own"] == ["Goose", "Pelican", "Flamingo"]
+    # and when such a name is offered for a group, it is dropped, not held and not sent to anyone
+    offer = {"name": "Wet duck", "familiar": 0.9, "recognised": True, "suitable": True, "own_thing": False}
+    dropped = job.ground_thing(None, {}, None, {"fields": {}}, {"fixed": {"kind_of_thing": "animal"}}, offer, "run")
+    assert dropped["not_needed"] and not dropped["passed"]
+    assert job.held_as(dropped, "run", rehearsal=False) == ("", [])
 
 
 def test_groups_with_no_sharp_edges_fail():
@@ -269,7 +284,7 @@ def test_a_malformed_field_is_refused_before_anything_is_asked():
 def test_the_owner_hears_only_of_the_unsuitable_and_the_unsettled():
     thing = lambda **more: {"name": "X", "passed": False, "why": ["a reason"], **more}
     who = lambda t, rehearsal=False: job.held_as(t, "2026-10-07-01", rehearsal)[0]
-    assert who(thing(for_owner=True)) == cat.WAITING                       # unsuitable, or two checks disagree
+    assert who(thing(for_owner=True)) == cat.WAITING                       # unfit for a young child
     assert who(thing(not_recognised=True)) == cat.RULES                    # a four-year-old would not know it
     assert who(thing()) == cat.RULES                                       # its facts could not be grounded
     assert who(thing(passed=True, why=[])) == cat.RULES                    # no picture of it passed
@@ -289,19 +304,24 @@ def test_the_digest_says_what_was_done_and_how_to_take_it_back():
     run = {"id": "2026-10-07-01", "rehearse": None, "stopped": "", "sheets": ["s1"], "opened": ["Water"],
            "plan": {"circles": [{"label": "Water", "done": True}, {"label": "Birds"}], "blocked": [], "played": None},
            "fields_added": [{"label": "Water", "wording": "Where is the water?", "filled": 4, "field": "where",
+                             "off_the_board": ["sea"],
                              "values": {"a": "In the sky", "b": "On the ground", "c": "In the house", "d": "Under the ground"}}],
            "fields_held": [{"label": "Rocks and soil", "tried": [{"wording": "How hard is it?", "why": ["'Soft' has 2"]}]}],
            "things": [{"name": "Tap", "passed": True, "tile": "t1", "why": []},
                       {"name": "Geyser", "passed": False, "why": ["the check doubts a four-year-old would recognise it"],
                        "held_as": cat.RULES},
                       {"name": "Well", "passed": False, "why": ["uncertain: two checks could not settle it"],
+                       "held_as": cat.RULES},
+                      {"name": "Whirlpool", "passed": False, "why": ["the check says it is not suitable for a young child"],
                        "held_as": cat.WAITING}]}
     text = "\n".join(job.digest(run, budget))
     assert "Circles opened: Water." in text
     assert 'Fields added: "Where is the water?" for Water' in text and "filled in on 4 things" in text
     assert "Things added: 1: Tap." in text and "Cost: Rs 50.0 of a hard cap of Rs 200" in text
     assert "Rocks and soil: no field passed the tests" in text and "Geyser (the check doubts" in text
-    assert "For you: \n  - Well: uncertain" in text.replace("For you: \n", "For you: \n")
+    assert "For you: \n  - Whirlpool: the check says it is not suitable" in text
+    assert 'sea has no one group for "Where is the water?" by two checks, so it stays off that board' in text
+    assert "Well (uncertain: two checks could not settle it)" in text          # held by the rules, not asked of him
     assert "Left for a later run, in this order: Birds." in text
     assert text.endswith("To take this run back: python tools/prepare_next.py --undo 2026-10-07-01")
 

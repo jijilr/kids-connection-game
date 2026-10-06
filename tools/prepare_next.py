@@ -42,6 +42,9 @@ Keys are read from the environment and are written nowhere. No Claude session is
                                                        tools/job/progress.json
     python tools/prepare_next.py --undo RUN            take a run back: its things leave the game and
                                                        its fields stop sorting boards. All is kept.
+    python tools/prepare_next.py --withdraw-field FIELD --why "..."
+                                                       take one field back; one thing is taken back with
+                                                       tools/catalogue/catalogue.py take-out NAME --why "..."
     python tools/prepare_next.py --rehearse CIRCLE --cap 40
                                                        every stage for one circle, and nothing enters
                                                        the game: the results are held for the owner
@@ -115,8 +118,10 @@ For each, answer three things:
 "recognises": would such a child recognise it and name it?
 "familiar": how sure you are of that, from 0 to 1.
 "suitable": is it fit to show a young child? Answer false ONLY for something violent, frightening or meant for adults, such as a gun, a ghost or a cigarette. Everyday things are suitable. So are ordinary places, including places of worship of any religion.
+"own_thing": is it a different thing from everything already in this part of the game, and from the other things asked about here? Answer false if it is another name for one of them, or only a wet, dry, big, small, young or coloured sort of one of them, or a part of one. A child must be able to tell its picture from theirs and give it a name of its own. When two of the things asked about are the same thing, answer true for the first and false for the other.
+Already in this part of the game: {beside}.
 
-Return JSON: {{"<name>": {{"recognises": true, "familiar": 0.9, "suitable": true}}, ...}}
+Return JSON: {{"<name>": {{"recognises": true, "familiar": 0.9, "suitable": true, "own_thing": true}}, ...}}
 
 {names}"""
 
@@ -438,12 +443,14 @@ def recognise(client, config, spend, ask: dict, offers: list):
     if not offers:
         return
     known = reslib.ask(client, config, spend, KNOWER,
-                       KNOWS_TASK.format(chain=ask["chain"], names="\n".join(o["name"] for o in offers)),
-                       {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"], "most_written": 600})
+                       KNOWS_TASK.format(chain=ask["chain"], names="\n".join(o["name"] for o in offers),
+                                         beside=", ".join(ask.get("beside") or []) or "nothing yet"),
+                       {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"], "most_written": 900})
     for item in offers:
         second = known.get(item["name"]) if isinstance(known.get(item["name"]), dict) else {}
         item["recognised"] = second.get("recognises") is True
         item["suitable"] = second.get("suitable") is not False
+        item["own_thing"] = second.get("own_thing") is not False
         item["familiar"] = round(min(item.get("familiar", 1.0), float(second.get("familiar") or 0)), 2)
 
 
@@ -482,7 +489,9 @@ def suggest(client, config, spend, catalogue: dict, ask: dict, tried: list = ())
         if name and cat.slug(name) not in catalogue["things"] and cat.slug(name) not in seen:
             offered.append({"name": name[0].upper() + name[1:], "familiar": float(item.get("familiar") or 0),
                             "why": str(item.get("why", "")).strip()})
-    recognise(client, config, spend, ask, offered)
+    inside = [e["name"] for e in catalogue["things"].values() if e["status"] == cat.IN_GAME
+              and all(e["fields"].get(f) == v for f, v in fixed[:-1])]
+    recognise(client, config, spend, dict(ask, beside=inside), offered)
     return sorted(offered, key=lambda o: -o["familiar"])
 
 
@@ -521,6 +530,10 @@ def ground_thing(client, config, spend, dictionary: dict, ask: dict, offer: dict
             return {"name": name, "passed": False, "not_needed": True, "familiar": offer["familiar"],
                     "fields": dict(ask["fixed"]),
                     "why": [f"it is {entry['name']} again, or a part of it, and that is already in the game"]}
+    if offer.get("own_thing") is False:
+        return {"name": name, "passed": False, "not_needed": True, "familiar": offer["familiar"],
+                "fields": dict(ask["fixed"]),
+                "why": ["it is another name for, or only a sort of, something already in this part of the game"]}
     if offer.get("suitable") is False:
         return {"name": name, "passed": False, "familiar": offer["familiar"], "fields": dict(ask["fixed"]),
                 "why": ["the check says it is not suitable for a young child"], "not_recognised": True,
@@ -596,8 +609,8 @@ def ground_thing(client, config, spend, dictionary: dict, ask: dict, offer: dict
             "fields": fields if not reasons else {**fields, **ask["fixed"]}, "familiar": offer["familiar"],
             # it is a sound thing, but of another group: not what this run needs, and not a doubt for the owner
             "not_needed": elsewhere and not record["weak_spots"],
-            # the owner hears of it only when two checks could not settle it
-            "for_owner": any("uncertain" in r for r in reasons),
+            # a suggested name that two checks cannot place is that name's failure: held by the rules
+            "for_owner": False,
             "judged_not_sourced": sorted({k for k, v in record["fields"].items() if v.get("basis") != "sourced"} | set(by_game))}
 
 
@@ -739,11 +752,12 @@ def held_as(t: dict, run_id: str, rehearsal: bool) -> tuple:
 
 
 def hold(run: dict, rehearsal: bool):
-    """What did not go in is kept, with its reason. The owner hears of two kinds only (his
-    rule of 7 Oct 2026): a thing unfit for a young child, and an uncertainty two checks
-    could not settle. Everything else is held by the rules, and a later run takes it up
-    again. In a rehearsal, what passed is held for him too: nothing enters the game.
-    A sound thing that simply belongs to another group is not held at all."""
+    """What did not go in is kept, with its reason. Of a suggested thing the owner hears
+    only when it is unfit for a young child (his rule of 7 Oct 2026). A name that two
+    checks could not place has simply failed, like one a child would not know: the rules
+    hold it, and another name will do. What two checks could not settle about a thing
+    ALREADY in the game is told to him in the digest. In a rehearsal, what passed is held
+    for him too: nothing enters the game. A sound thing of another group is not held."""
     held = []
     for t in run["things"]:
         status, why = held_as(t, run["id"], rehearsal)
@@ -796,8 +810,10 @@ def digest(run: dict, budget) -> list:
     held += run["plan"]["blocked"]
     lines.append("Held by the rules: " + ("none." if not held else ""))
     lines += [f"  - {line}" for line in held]
-    lines.append("For you: " + ("nothing." if not for_owner else ""))
-    lines += [f"  - {t['name']}: {'; '.join(t['why'])}" for t in for_owner]
+    unsettled = [f'{thing} has no one group for "{f["wording"]}" by two checks, so it stays off that board'
+                 for f in run.get("fields_added", []) for thing in f.get("off_the_board", [])]
+    lines.append("For you: " + ("nothing." if not (for_owner or unsettled) else ""))
+    lines += [f"  - {t['name']}: {'; '.join(t['why'])}" for t in for_owner] + [f"  - {line}" for line in unsettled]
     if later:
         lines.append("Left for a later run, in this order: " + ", ".join(later) + ".")
     if run.get("sheets"):
@@ -838,6 +854,32 @@ def write_report(run: dict, budget, folder: pathlib.Path):
         if items:
             lines += ["", f"## {title}", ""] + [f"- {item}" for item in items]
     (folder / "report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def withdraw_field(field: str, why: str) -> str:
+    """Take one field back. It stays in the dictionary with the values things carry for it,
+    and never sorts a board again, so the circle it opened closes. Its question is put with
+    the refused ones, so it is not proposed again, and the circle goes back to the rules."""
+    dictionary, proposals = cat.read_json(cat.DICTIONARY), cat.read_json(PROPOSALS) or {}
+    definition = dictionary["fields"].get(field)
+    if definition is None:
+        raise SystemExit(f"No field '{field}' in the dictionary.")
+    definition["sorts_boards"] = False
+    definition["withdrawn"] = {"on": today(), "why": why}
+    reslib.write_json(cat.DICTIONARY, dictionary)
+    circles = [cid for cid, p in proposals.items() if cid != "about" and p.get("field") == field]
+    for cid in circles:
+        p = proposals[cid]
+        p["refused_by_the_rules"] = p.get("refused_by_the_rules", []) + [
+            {"wording": p["wording"], "values": {v: g["label"] for v, g in p["values"].items()},
+             "why": ["withdrawn: " + why], "date": today(), "run": "withdrawn"}]
+        p["status"] = f"withdrawn on {today()}: {why}"
+    reslib.write_json(PROPOSALS, proposals)
+    with cat.changing("a field withdrawn"):
+        pass                    # the catalogue works out again which circles can open
+    for cid in circles:
+        record_decision(cid, f'the field "{definition["wording"]}" was withdrawn', why, status="released")
+    return f'"{definition["wording"]}" is withdrawn and sorts no board' + (f"; {', '.join(circles)} is back with the rules" if circles else "") + "."
 
 
 def undo(run_id: str) -> str:
@@ -1091,6 +1133,9 @@ def main():
 
     if "--undo" in argv:
         say(undo(option("--undo")))
+        return
+    if "--withdraw-field" in argv:
+        say(withdraw_field(option("--withdraw-field"), option("--why") or "the owner took it back"))
         return
 
     if "--accept" in argv:
