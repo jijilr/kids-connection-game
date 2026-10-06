@@ -90,9 +90,10 @@ def test_a_rehearsal_plans_the_circle_named_and_nothing_else():
     ask = plan["asks"][0]
     assert ask["fixed"] == {"kind_of_thing": "made_by_people", "kind_of_made_thing": "building"}
     assert ask["need"] == 3 and ask["chain"] == "Things people make > Buildings"
-    # a rehearsal never adds a field
-    no_field = job.plan(cat.load(), rehearse="animal/mammal")
-    assert no_field["asks"] == [] and any("A rehearsal does not add one" in line for line in no_field["blocked"])
+    # a rehearsal never adds a field (tried on whichever circle lacks one today)
+    for cid in [e["circle"] for e in job.plan(cat.load())["circles"] if e["needs_field"]][:1]:
+        no_field = job.plan(cat.load(), rehearse=cid)
+        assert no_field["asks"] == [] and any("A rehearsal does not add one" in line for line in no_field["blocked"])
 
 
 def test_a_thing_in_the_game_without_a_picture_is_planned_for_drawing():
@@ -419,6 +420,38 @@ def test_the_digest_says_what_was_done_and_how_to_take_it_back():
     assert "Well (uncertain: two checks could not settle it)" in text          # held by the rules, not asked of him
     assert "Left for a later run, in this order: Birds." in text
     assert text.endswith("To take this run back: python tools/prepare_next.py --undo 2026-10-07-01")
+
+
+def test_a_thing_settled_before_a_later_field_was_added_is_stamped_against_the_newest_dictionary():
+    # a run may add several fields; things settled early carry an older stamp until they go in
+    dictionary = cat.read_json(cat.DICTIONARY)
+    saved = {}
+    real = (cat.game_store, cat.put_game_store, job.tool, cat.changing)
+    cat.game_store = lambda: {"things": {}, "dictionary_version": dictionary["version"]}
+    cat.put_game_store = lambda store, by: saved.update(store["things"])
+    job.tool = lambda *args: ""
+
+    class nothing:                       # stands in for the catalogue's save
+        def __init__(self, by): pass
+        def __enter__(self): return {"things": {}}
+        def __exit__(self, *a): return False
+    cat.changing = nothing
+    real_sync = (cat.sync_sources, cat.sync_voice)
+    cat.sync_sources = cat.sync_voice = lambda catalogue: None
+    try:
+        early = {"name": "Kettle", "passed": True, "tile": "t1", "why": [],
+                 "thing": {"name": "Kettle", "familiar": 0.9, "reviewed": dictionary["version"] - 1, "source": "job", "drafted_in": "run",
+                           "fields": {"kind_of_thing": "made_by_people", "kind_of_made_thing": "household", "kind_of_house_thing": "eating"}}}
+        # one that a later field does apply to, and which lacks it, is not put in with a false stamp
+        lacking = {"name": "Raft", "passed": True, "tile": "t2", "why": [],
+                   "thing": {"name": "Raft", "familiar": 0.9, "reviewed": dictionary["version"] - 1, "source": "job", "drafted_in": "run",
+                             "fields": {"kind_of_thing": "made_by_people", "kind_of_made_thing": "vehicle"}}}
+        job.put_in_the_game({"id": "run", "things": [early, lacking]})
+    finally:
+        cat.game_store, cat.put_game_store, job.tool, cat.changing = real
+        cat.sync_sources, cat.sync_voice = real_sync
+    assert saved["kettle"]["reviewed"] == dictionary["version"]
+    assert "raft" not in saved and not lacking["passed"] and "where_it_travels" in lacking["why"][0]
 
 
 # ------------------------------------------------------------------ the money

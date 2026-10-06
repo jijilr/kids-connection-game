@@ -758,10 +758,20 @@ def put_in_the_game(run: dict):
         return
     new = [t for t in passed if not t.get("in_game")]
     if new:
-        store = cat.game_store()
+        # A run may add several fields, each a new dictionary version. A thing settled before
+        # the last of them is stamped against the dictionary as it now stands, once the guard
+        # agrees that nothing a later field asks of it is missing.
+        dictionary, store = cat.read_json(cat.DICTIONARY), cat.game_store()
         for t in new:
-            store["things"][cat.slug(t["name"])] = t["thing"]
+            thing = dict(t["thing"], reviewed=dictionary["version"])
+            wrong = cat.dictionary_guard.problems(dictionary, {"things": {cat.slug(t["name"]): thing}})
+            if wrong:
+                t["passed"], t["why"] = False, ["a field added later in this run applies to it: " + "; ".join(wrong)]
+                continue
+            t["thing"] = thing
+            store["things"][cat.slug(t["name"])] = thing
         cat.put_game_store(store, by=f"job run {run['id']}")
+        passed = [t for t in passed if t["passed"]]
     for t in passed:     # linked under the owner's standing rule: it cut cleanly and the vision check named it
         tool("review.py", "approve", t["tile"], "--as", cat.slug(t["name"]))
     tool("publish.py")
