@@ -5,9 +5,21 @@ import '../services/media.dart';
 import 'tile_card.dart';
 
 /// The coloured bar a solved group turns into: the group's name, and under it the
-/// four pictures as small thumbnails. The first child cannot read yet, so the things
+/// four pictures as thumbnails, centred and sized to the bar. The first child cannot read yet, so the things
 /// are shown, not listed, and tapping a thumbnail says its name. Only a board with no
 /// pictures at all falls back to the names as text.
+const double thumbnailGap = 8;
+
+/// How large each thumbnail of a solved group is. It fills the bar's width, shared
+/// between the pictures, unless that would be taller than the screen can spare: four
+/// solved bars must fit one above another under the heading, with room to scroll less.
+double thumbnailSize(double barWidth, double screenHeight, int count) {
+  final byWidth = (barWidth - thumbnailGap * (count - 1)) / count;
+  final byHeight = (screenHeight - 230) / 4 - 56; // 230: headings and buttons; 56: a bar's name and padding
+  final size = byWidth < byHeight ? byWidth : byHeight;
+  return size.clamp(40.0, 160.0);
+}
+
 class SolvedGroupBar extends StatelessWidget {
   final String label;
   final List<Entity> items;
@@ -34,7 +46,7 @@ class SolvedGroupBar extends StatelessWidget {
       child: Container(
         width: double.infinity,
         margin: const EdgeInsets.only(bottom: 8),
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
         decoration: BoxDecoration(
           color: color,
           borderRadius: BorderRadius.circular(16),
@@ -63,19 +75,22 @@ class SolvedGroupBar extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             if (pictured)
-              Row(
-                children: [
-                  for (final e in items)
-                    Flexible(
-                      child: Padding(
-                        padding: const EdgeInsets.only(right: 8),
-                        child: ConstrainedBox(
-                          constraints: const BoxConstraints(maxWidth: 64),
-                          child: AspectRatio(aspectRatio: 1, child: _thumbnail(e)),
-                        ),
-                      ),
-                    ),
-                ],
+              // Centred, and as large as the bar allows: the width is shared between the
+              // four, and the height is what a screen can spare when all four groups are
+              // solved and their bars stand one above another.
+              LayoutBuilder(
+                builder: (context, bar) {
+                  final size = thumbnailSize(bar.maxWidth, MediaQuery.of(context).size.height, items.length);
+                  return Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      for (int i = 0; i < items.length; i++) ...[
+                        if (i > 0) const SizedBox(width: thumbnailGap),
+                        SizedBox(width: size, height: size, child: _thumbnail(items[i])),
+                      ],
+                    ],
+                  );
+                },
               )
             else
               Text(

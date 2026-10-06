@@ -1,6 +1,6 @@
 {
   "about": "The master record of every thing: what is known about it, where that came from, its picture and its voice clip, and (worked out, never set by hand) its circles and boards. Read and written only through tools/catalogue/catalogue.py. Assets/data/things.json is the game's copy of it, and tools/content/review_queue.json is its list of what is held.",
-  "dictionary_version": 2,
+  "dictionary_version": 3,
   "statuses": {
     "in the game": "The game shows it. It is in the game's copy.",
     "waiting for the owner": "A check had a doubt about it. The owner decides.",
@@ -20,7 +20,7 @@
         "tree_academic": true
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -113,7 +113,7 @@
         "tree_academic": false
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "notes": {
         "tree_academic": "A banana plant has no woody trunk. Its stem is made of tightly rolled leaves, so scientists call it a giant herb."
@@ -206,7 +206,7 @@
         "tree_academic": "depends"
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "notes": {
         "tree_academic": "A palm has a tall woody trunk but does not grow wood in rings as other trees do, so botanists differ on whether to call it a true tree."
@@ -302,7 +302,7 @@
         "kind_of_plant": "flower"
       },
       "familiar": 0.85,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -393,7 +393,7 @@
         "kind_of_plant": "flower"
       },
       "familiar": 0.85,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -484,7 +484,7 @@
         "kind_of_plant": "flower"
       },
       "familiar": 0.8,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -566,7 +566,7 @@
         "kind_of_plant": "flower"
       },
       "familiar": 0.8,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -626,7 +626,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 0.75,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -716,7 +716,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -808,7 +808,7 @@
         "tree_academic": true
       },
       "familiar": 0.7,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -903,7 +903,7 @@
         "kind_of_nature": "sky"
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -987,7 +987,7 @@
         "kind_of_nature": "sky"
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1074,7 +1074,7 @@
         ]
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1152,7 +1152,7 @@
         "kind_of_nature": "ground"
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1234,7 +1234,7 @@
         "kind_of_nature": "sky"
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1319,7 +1319,7 @@
         "kind_of_nature": "ground"
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1400,7 +1400,7 @@
         "kind_of_nature": "land"
       },
       "familiar": 0.85,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1485,7 +1485,7 @@
         "kind_of_nature": "sky"
       },
       "familiar": 0.85,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1566,7 +1566,7 @@
         "kind_of_made_thing": "vehicle"
       },
       "familiar": 0.98,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1650,7 +1650,7 @@
         "kind_of_made_thing": "household"
       },
       "familiar": 0.97,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1735,7 +1735,7 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.97,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1817,7 +1817,7 @@
         "kind_of_made_thing": "toy"
       },
       "familiar": 0.96,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1893,7 +1893,7 @@
         "kind_of_made_thing": "vehicle"
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1980,7 +1980,7 @@
         "kind_of_made_thing": "household"
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2056,7 +2056,7 @@
         "kind_of_made_thing": "household"
       },
       "familiar": 0.94,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2138,7 +2138,7 @@
         "kind_of_made_thing": "vehicle"
       },
       "familiar": 0.94,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2220,7 +2220,7 @@
         "kind_of_made_thing": "toy"
       },
       "familiar": 0.93,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2307,7 +2307,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2389,7 +2389,7 @@
         "kind_of_made_thing": "vehicle"
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2473,7 +2473,7 @@
         "kind_of_made_thing": "toy"
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2561,7 +2561,7 @@
         "extinct": false
       },
       "familiar": 0.99,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2652,7 +2652,7 @@
         "extinct": false
       },
       "familiar": 0.98,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2743,7 +2743,7 @@
         "extinct": false
       },
       "familiar": 0.98,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2834,7 +2834,7 @@
         "extinct": false
       },
       "familiar": 0.97,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2927,7 +2927,7 @@
         "extinct": false
       },
       "familiar": 0.96,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3020,7 +3020,7 @@
         "extinct": false
       },
       "familiar": 0.96,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3113,7 +3113,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3203,7 +3203,7 @@
         "extinct": false
       },
       "familiar": 0.94,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3293,7 +3293,7 @@
         "extinct": false
       },
       "familiar": 0.93,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3375,7 +3375,7 @@
         "extinct": false
       },
       "familiar": 0.92,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3466,7 +3466,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3559,7 +3559,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3650,7 +3650,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3741,7 +3741,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3832,7 +3832,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3925,7 +3925,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4007,7 +4007,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4098,7 +4098,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4189,7 +4189,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4271,7 +4271,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4364,7 +4364,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4455,7 +4455,7 @@
         "extinct": false
       },
       "familiar": 0.75,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4548,7 +4548,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4641,7 +4641,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4723,7 +4723,7 @@
         "extinct": false
       },
       "familiar": 0.75,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4805,7 +4805,7 @@
         "extinct": false
       },
       "familiar": 0.7,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4898,7 +4898,7 @@
         "extinct": false
       },
       "familiar": 0.65,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4989,7 +4989,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5081,7 +5081,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5174,7 +5174,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5265,7 +5265,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5356,7 +5356,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5446,7 +5446,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5537,7 +5537,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5627,7 +5627,7 @@
         "extinct": false
       },
       "familiar": 0.75,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5718,7 +5718,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5800,7 +5800,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5891,7 +5891,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5981,7 +5981,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6072,7 +6072,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6163,7 +6163,7 @@
         "extinct": false
       },
       "familiar": 0.7,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6254,7 +6254,7 @@
         "extinct": false
       },
       "familiar": 0.6,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6345,7 +6345,7 @@
         "extinct": false
       },
       "familiar": 0.6,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6436,7 +6436,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6527,7 +6527,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6613,7 +6613,7 @@
         "extinct": false
       },
       "familiar": 0.6,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6705,7 +6705,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "shown_as": "T. rex",
       "picture": {
@@ -6803,7 +6803,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c2",
@@ -6900,7 +6900,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c5",
@@ -6997,7 +6997,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c3",
@@ -7094,7 +7094,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "notes": {
         "kind_of_dinosaur": "Scientists debate how much time Spinosaurus spent in water."
@@ -7192,7 +7192,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c1",
@@ -7289,7 +7289,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c2",
@@ -7374,7 +7374,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c3",
@@ -7469,7 +7469,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c4",
@@ -7564,7 +7564,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c5",
@@ -7659,7 +7659,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c6",
@@ -7756,7 +7756,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c8",
@@ -7853,7 +7853,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c7",
@@ -7950,7 +7950,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c6",
@@ -8045,7 +8045,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c9",
@@ -8142,7 +8142,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c1",
@@ -8219,7 +8219,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c3",
@@ -8306,7 +8306,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c5",
@@ -8391,7 +8391,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c2",
@@ -8476,7 +8476,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c4",
@@ -8563,7 +8563,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c5",
@@ -8650,7 +8650,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "shown_as": "Pterodactyl",
       "picture": {
@@ -8738,7 +8738,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c8",
@@ -8825,7 +8825,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c9",
@@ -8910,7 +8910,7 @@
         "extinct": false
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "animals_6_01_c1",
@@ -9000,7 +9000,7 @@
         "extinct": false
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "animals_5_01_c9",
@@ -9081,7 +9081,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "notes": {
         "general": "Its picture is drawn like a giant boa or anaconda, its closest living relatives; what it really looked like is not known."
@@ -9163,7 +9163,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "notes": {
         "general": "Its length is estimated from fossil backbones, so it is uncertain. Its picture is drawn like a very large python, the living snake scientists model it on; what it really looked like is not known."
@@ -9233,7 +9233,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "plants_2_01_c5",
@@ -9323,7 +9323,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "size_test_plants_9_01_c7",
@@ -9413,7 +9413,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "plants_2_01_c6",
@@ -9499,10 +9499,11 @@
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
-        "kind_of_plant": "vegetable"
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "fruit"
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "size_test_plants_9_01_c8",
@@ -9586,10 +9587,11 @@
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
-        "kind_of_plant": "vegetable"
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "fruit"
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "size_test_plants_9_01_c9",
@@ -9667,10 +9669,11 @@
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
-        "kind_of_plant": "vegetable"
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "fruit"
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "plants_2_01_c7",
@@ -9745,10 +9748,11 @@
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
-        "kind_of_plant": "vegetable"
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "fruit"
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "plants_2_01_c8",
@@ -9834,7 +9838,7 @@
         "kind_of_made_thing": "toy"
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -9906,7 +9910,7 @@
         "kind_of_made_thing": "toy"
       },
       "familiar": 0.85,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -9982,7 +9986,7 @@
         "kind_of_made_thing": "household"
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10067,7 +10071,7 @@
         "kind_of_made_thing": "household"
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10152,7 +10156,7 @@
         "kind_of_made_thing": "household"
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10228,7 +10232,7 @@
         "kind_of_made_thing": "household"
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10313,7 +10317,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10398,7 +10402,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.85,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10483,7 +10487,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.8,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10565,7 +10569,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.75,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10647,7 +10651,7 @@
         "kind_of_nature": "water"
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10732,7 +10736,7 @@
         "kind_of_nature": "water"
       },
       "familiar": 0.85,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10817,7 +10821,7 @@
         "kind_of_nature": "water"
       },
       "familiar": 0.85,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10902,7 +10906,7 @@
         "kind_of_nature": "land"
       },
       "familiar": 0.85,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10987,7 +10991,7 @@
         "kind_of_nature": "land"
       },
       "familiar": 0.8,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11072,7 +11076,7 @@
         "kind_of_nature": "ground"
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11153,7 +11157,7 @@
         "kind_of_nature": "ground"
       },
       "familiar": 0.85,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11238,7 +11242,7 @@
         "kind_of_nature": "ground"
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11323,7 +11327,7 @@
         "kind_of_nature": "water"
       },
       "familiar": 0.95,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -11408,7 +11412,7 @@
         "kind_of_made_thing": "toy"
       },
       "familiar": 0.97,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "toys_top_up",
       "picture": {
@@ -11493,7 +11497,7 @@
         "kind_of_made_thing": "toy"
       },
       "familiar": 0.96,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked",
       "drafted_in": "toys_top_up",
       "picture": {
@@ -11578,7 +11582,7 @@
         "kind_of_nature": "land"
       },
       "familiar": 0.7,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked, approved by the owner",
       "drafted_in": "made_and_nature",
       "notes": {
@@ -11666,7 +11670,7 @@
         "kind_of_nature": "land"
       },
       "familiar": 0.75,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked, approved by the owner",
       "drafted_in": "land_top_up",
       "notes": {
@@ -11754,7 +11758,7 @@
         "kind_of_nature": "land"
       },
       "familiar": 0.7,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "deepseek:drafted+checked, approved by the owner",
       "drafted_in": "land_top_up",
       "notes": {
@@ -11942,7 +11946,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c6",
@@ -12026,7 +12030,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c7",
@@ -12333,7 +12337,7 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-03",
       "worked_out": {
@@ -12418,7 +12422,7 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-02",
       "worked_out": {
@@ -12503,7 +12507,7 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.9,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-03",
       "notes": {
@@ -12580,7 +12584,7 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.8,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-01",
       "worked_out": {
@@ -12665,7 +12669,7 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.8,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-03",
       "notes": {
@@ -12750,7 +12754,7 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.7,
-      "reviewed": 2,
+      "reviewed": 3,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-03",
       "notes": {
@@ -13159,10 +13163,20 @@
         "label": "Vegetable plants",
         "things": 4,
         "steps_from_seed": 2,
+        "sorted_by": "part_we_eat",
+        "groups": {
+          "fruit": {
+            "label": "The fruit",
+            "things": 4,
+            "with_picture": 4
+          }
+        },
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
+          "4 more thing(s) in 'What grows under the ground'",
+          "4 more thing(s) in 'The leaves'",
+          "4 more thing(s) in 'The seeds or pods'"
         ]
       },
       "nature_not_alive": {
@@ -13353,7 +13367,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-10-06-04",
+    "by": "fill.py",
     "on": "2026-10-06"
   }
 }

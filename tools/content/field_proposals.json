@@ -155,13 +155,13 @@
     ]
   },
   "plant/vegetable": {
-    "status": "awaiting the owner",
+    "status": "approved by the owner on 2026-10-06, as proposed",
     "field": "part_we_eat",
     "wording": "Which part of the plant do we eat?",
     "proposer_confidence": "strong: four clear groups, each with four or more plants a child sees at home or in the market",
     "values": {
       "fruit": {
-        "label": "We eat the fruit",
+        "label": "The fruit",
         "have": [
           "tomato_plant",
           "brinjal_plant",
@@ -174,7 +174,7 @@
         ]
       },
       "under_the_ground": {
-        "label": "We eat what grows under the ground",
+        "label": "What grows under the ground",
         "have": [],
         "examples": [
           "Carrot plant",
@@ -185,7 +185,7 @@
         ]
       },
       "leaves": {
-        "label": "We eat the leaves",
+        "label": "The leaves",
         "have": [],
         "examples": [
           "Spinach plant",
@@ -196,7 +196,7 @@
         ]
       },
       "seeds_or_pods": {
-        "label": "We eat the seeds or pods",
+        "label": "The seeds or pods",
         "have": [],
         "examples": [
           "Pea plant",
@@ -209,7 +209,7 @@
     "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in. 'Under the ground' is used and not 'root', so that potato and onion need no scientist's twin."
   },
   "plant/tree": {
-    "status": "awaiting the owner",
+    "status": "held by the owner on 2026-10-06: besides the thin groups, one tree can truly give several things (a mango tree gives fruit, shade and wood), which risks a second solution",
     "field": "tree_gives",
     "wording": "What do we get from the tree?",
     "proposer_confidence": "middling: fruit and shade are easy; nuts and wood are thin for a four-year-old, and many trees look alike in a small picture",
@@ -265,7 +265,7 @@
     "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in."
   },
   "plant/flower": {
-    "status": "awaiting the owner",
+    "status": "held by the owner on 2026-10-06",
     "field": "where_flower_grows",
     "wording": "Where does the flower grow?",
     "proposer_confidence": "weak: no four-way split of flowers is both true of every flower and plain to a four-year-old; colour was rejected because a rose is not one colour",
@@ -315,7 +315,7 @@
     "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in. Marigold fits none of these cleanly."
   },
   "plant/grass_grain": {
-    "status": "awaiting the owner",
+    "status": "held by the owner on 2026-10-06",
     "field": "grass_gives",
     "wording": "What do we get from it?",
     "proposer_confidence": "weak: only the grains reach four familiar members",
@@ -363,7 +363,7 @@
     "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in."
   },
   "nature_not_alive/sky": {
-    "status": "awaiting the owner",
+    "status": "held by the owner on 2026-10-06",
     "field": "kind_of_sky_thing",
     "wording": "What kind of thing in the sky is it?",
     "proposer_confidence": "weak: a four-year-old knows about eight things in the sky, not sixteen",

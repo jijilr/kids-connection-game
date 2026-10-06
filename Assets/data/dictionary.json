@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "status": "version 2 approved by the owner on 2026-10-06 (version 1 the same day). The game reads this file.",
+  "version": 3,
+  "status": "version 3 approved by the owner on 2026-10-06 (versions 1 and 2 the same day). The game reads this file.",
   "about": "Every field a thing may carry, and the only values that field may take. A field that does not apply to a thing is left out of that thing; it is never written as 'not applicable'. The wording is what a child sees or hears; it is not data.",
   "rules": [
     "A field holds the everyday meaning, which is what the game sorts by.",
@@ -33,15 +33,24 @@
         "amphibian": "Amphibians",
         "dinosaur": "Dinosaurs"
       },
-      "expected_on": { "kind_of_thing": "animal" },
+      "expected_on": {
+        "kind_of_thing": "animal"
+      },
       "since": 1
     },
     "dinosaur_academic": {
       "wording": "Is it a dinosaur to a scientist?",
       "meaning": "academic",
-      "everyday_partner": { "kind_of_animal": "dinosaur" },
-      "values": { "true": "A true dinosaur", "false": "A cousin of the dinosaurs" },
-      "expected_on": { "kind_of_animal": "dinosaur" },
+      "everyday_partner": {
+        "kind_of_animal": "dinosaur"
+      },
+      "values": {
+        "true": "A true dinosaur",
+        "false": "A cousin of the dinosaurs"
+      },
+      "expected_on": {
+        "kind_of_animal": "dinosaur"
+      },
       "sorts_boards": false,
       "since": 1
     },
@@ -54,13 +63,23 @@
         "flyer": "Flyers",
         "swimmer": "Swimmers"
       },
-      "expected_on": { "kind_of_animal": "dinosaur" },
+      "expected_on": {
+        "kind_of_animal": "dinosaur"
+      },
       "since": 1
     },
     "extinct": {
       "wording": "Is it extinct or still living?",
-      "values": { "true": "Extinct", "false": "Still living" },
-      "expected_on": { "kind_of_thing": ["animal", "plant"] },
+      "values": {
+        "true": "Extinct",
+        "false": "Still living"
+      },
+      "expected_on": {
+        "kind_of_thing": [
+          "animal",
+          "plant"
+        ]
+      },
       "since": 1
     },
     "kind_of_plant": {
@@ -72,15 +91,24 @@
         "grass_grain": "Grasses and grains",
         "vegetable": "Vegetable plants"
       },
-      "expected_on": { "kind_of_thing": "plant" },
+      "expected_on": {
+        "kind_of_thing": "plant"
+      },
       "since": 2
     },
     "tree_academic": {
       "wording": "Is it a tree to a scientist?",
       "meaning": "academic",
-      "everyday_partner": { "kind_of_plant": "tree" },
-      "values": { "true": "A true tree", "false": "Not a tree to a scientist" },
-      "expected_on": { "kind_of_plant": "tree" },
+      "everyday_partner": {
+        "kind_of_plant": "tree"
+      },
+      "values": {
+        "true": "A true tree",
+        "false": "Not a tree to a scientist"
+      },
+      "expected_on": {
+        "kind_of_plant": "tree"
+      },
       "sorts_boards": false,
       "since": 2
     },
@@ -93,7 +121,9 @@
         "land": "Places on land",
         "ground": "Rocks and soil"
       },
-      "expected_on": { "kind_of_thing": "nature_not_alive" },
+      "expected_on": {
+        "kind_of_thing": "nature_not_alive"
+      },
       "since": 2
     },
     "kind_of_made_thing": {
@@ -106,8 +136,24 @@
         "tool": "Tools",
         "building": "Buildings"
       },
-      "expected_on": { "kind_of_thing": "made_by_people" },
+      "expected_on": {
+        "kind_of_thing": "made_by_people"
+      },
       "since": 2
+    },
+    "part_we_eat": {
+      "wording": "Which part of the plant do we eat?",
+      "meaning": "everyday",
+      "values": {
+        "fruit": "The fruit",
+        "under_the_ground": "What grows under the ground",
+        "leaves": "The leaves",
+        "seeds_or_pods": "The seeds or pods"
+      },
+      "expected_on": {
+        "kind_of_plant": "vegetable"
+      },
+      "since": 3
     }
   }
 }

@@ -27,10 +27,13 @@ def keep_only(things: dict, field: str, value: str, count: int, status: str):
 
 
 def test_only_what_the_owner_approved_is_planned():
-    assert job.plan(cat.load())["asks"] == []      # every thing has a picture and no approved circle is short
-    # Dinosaurs is approved. With two flyers ready but held back, choosing between them is the owner's to do
+    tree = cat.read_json(job.TREE)["circles"]
+    approved = {cid for cid, circle in tree.items() if circle["status"] == "approved by the owner"}
+    for ask in job.plan(cat.load())["asks"]:      # whatever is in the game today
+        assert ask.get("pictures_for") or ask["circle"] in approved
+    # with two flyers ready but held back on purpose, choosing between them is the owner's to do, not the job's
     held = with_changes(lambda things: keep_only(things, "kind_of_dinosaur", "flyer", 3, cat.NOT_YET))
-    plan = job.plan(held)
+    plan = job.plan(held, rehearse="animal/dinosaur")
     assert plan["asks"] == []
     assert any("Flyers" in line and "deliberately not in the game yet" in line for line in plan["blocked"])
 
@@ -52,9 +55,9 @@ def test_a_circle_with_no_field_to_sort_it_is_left_to_the_owner():
 def test_a_thing_in_the_game_without_a_picture_is_planned_for_drawing():
     bare = with_changes(lambda things: things["cup"]["picture"].update(game_file=None))
     # a real run draws it whatever its circle; a rehearsal only inside the circle named
-    assert [a["pictures_for"] for a in job.plan(bare)["asks"]] == [["Cup"]]
+    assert [a["pictures_for"] for a in job.plan(bare)["asks"] if a.get("pictures_for")] == [["Cup"]]
     assert [a["pictures_for"] for a in job.plan(bare, rehearse="made_by_people")["asks"] if a.get("pictures_for")] == [["Cup"]]
-    assert job.plan(bare, rehearse="plant")["asks"] == []
+    assert not any(a.get("pictures_for") for a in job.plan(bare, rehearse="plant")["asks"])
 
 
 def test_the_cap_is_hard():

@@ -1,7 +1,7 @@
 {
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-10-06",
-  "dictionary_version": 2,
+  "dictionary_version": 3,
   "things": 143,
   "rules": {
     "weights": {
@@ -20,8 +20,8 @@
       "level": 2
     },
     "plant": {
-      "boards_open": 1,
-      "level": 1
+      "boards_open": 2,
+      "level": 2
     },
     "nature_not_alive": {
       "boards_open": 1,
@@ -33,11 +33,11 @@
     }
   },
   "proposals": [
-    "plant/tree",
-    "plant/grass_grain",
-    "plant/vegetable",
     "nature_not_alive/sky",
-    "nature_not_alive/water"
+    "nature_not_alive/water",
+    "nature_not_alive/land",
+    "nature_not_alive/ground",
+    "made_by_people/vehicle"
   ],
   "circles": {
     "seed": {
@@ -337,71 +337,23 @@
         "field": "no field splits it four ways",
         "things": 12
       },
-      "decisions": [],
-      "proposal": {
-        "status": "awaiting the owner",
-        "field": "tree_gives",
-        "wording": "What do we get from the tree?",
-        "proposer_confidence": "middling: fruit and shade are easy; nuts and wood are thin for a four-year-old, and many trees look alike in a small picture",
-        "values": {
-          "fruit": {
-            "label": "Fruit",
-            "have": [
-              "mango_tree",
-              "banana_plant"
-            ],
-            "examples": [
-              "Jackfruit tree",
-              "Guava tree",
-              "Papaya tree",
-              "Orange tree"
-            ]
-          },
-          "nuts": {
-            "label": "Nuts",
-            "have": [
-              "coconut_tree"
-            ],
-            "examples": [
-              "Cashew tree",
-              "Areca palm",
-              "Almond tree",
-              "Walnut tree"
-            ]
-          },
-          "shade": {
-            "label": "Shade",
-            "have": [
-              "neem_tree"
-            ],
-            "examples": [
-              "Banyan tree",
-              "Peepal tree",
-              "Rain tree",
-              "Tamarind tree"
-            ]
-          },
-          "wood": {
-            "label": "Wood",
-            "have": [],
-            "examples": [
-              "Teak tree",
-              "Pine tree",
-              "Sandalwood tree",
-              "Rubber tree"
-            ]
-          }
-        },
-        "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in."
-      },
+      "decisions": [
+        {
+          "date": "2026-10-06",
+          "what": "the owner held the proposed field",
+          "why": "thin groups, and one tree can truly give several things (a mango tree gives fruit, shade and wood), which risks a second solution",
+          "status": "waiting",
+          "retry_when": "a field is found in which each tree has one true value"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.5,
+        "neglect": 0.0,
         "unlocks": 0.33,
         "cheapness": 0.2
       },
-      "score": 4.1,
-      "move": "widening",
+      "score": 2.6,
+      "move": "deepening",
       "status": "proposable"
     },
     "plant/flower": {
@@ -412,67 +364,25 @@
       "open": false,
       "missing": {
         "field": "no field splits it four ways",
-        "things": 13
+        "things": 12
       },
-      "decisions": [],
-      "proposal": {
-        "status": "awaiting the owner",
-        "field": "where_flower_grows",
-        "wording": "Where does the flower grow?",
-        "proposer_confidence": "weak: no four-way split of flowers is both true of every flower and plain to a four-year-old; colour was rejected because a rose is not one colour",
-        "values": {
-          "bush": {
-            "label": "On a bush",
-            "have": [
-              "rose"
-            ],
-            "examples": [
-              "Hibiscus",
-              "Jasmine",
-              "Ixora"
-            ]
-          },
-          "water": {
-            "label": "In water",
-            "have": [
-              "lotus"
-            ],
-            "examples": [
-              "Water lily",
-              "Water hyacinth"
-            ]
-          },
-          "tall_stem": {
-            "label": "On one tall stem",
-            "have": [
-              "sunflower"
-            ],
-            "examples": [
-              "Tulip",
-              "Lily",
-              "Tuberose"
-            ]
-          },
-          "tree": {
-            "label": "On a tree",
-            "have": [],
-            "examples": [
-              "Gulmohar",
-              "Champa",
-              "Ashoka"
-            ]
-          }
-        },
-        "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in. Marigold fits none of these cleanly."
-      },
+      "decisions": [
+        {
+          "date": "2026-10-06",
+          "what": "the owner held the proposed field",
+          "why": "no four-way split that a four-year-old knows well",
+          "status": "waiting",
+          "retry_when": "a natural four-way split is found"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.5,
+        "neglect": 0.0,
         "unlocks": 0.33,
-        "cheapness": 0.19
+        "cheapness": 0.2
       },
-      "score": 4.0,
-      "move": "widening",
+      "score": 2.6,
+      "move": "deepening",
       "status": "proposable"
     },
     "plant/grass_grain": {
@@ -485,63 +395,23 @@
         "field": "no field splits it four ways",
         "things": 11
       },
-      "decisions": [],
-      "proposal": {
-        "status": "awaiting the owner",
-        "field": "grass_gives",
-        "wording": "What do we get from it?",
-        "proposer_confidence": "weak: only the grains reach four familiar members",
-        "values": {
-          "grain": {
-            "label": "Grain to eat",
-            "have": [
-              "rice_plant",
-              "wheat"
-            ],
-            "examples": [
-              "Maize plant",
-              "Ragi plant",
-              "Barley"
-            ]
-          },
-          "sweet": {
-            "label": "Something sweet",
-            "have": [
-              "sugarcane"
-            ],
-            "examples": []
-          },
-          "making": {
-            "label": "Something to build or weave with",
-            "have": [
-              "bamboo"
-            ],
-            "examples": [
-              "Reed",
-              "Cane"
-            ]
-          },
-          "grazing": {
-            "label": "Food for animals",
-            "have": [
-              "grass"
-            ],
-            "examples": [
-              "Fodder grass",
-              "Hay"
-            ]
-          }
-        },
-        "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in."
-      },
+      "decisions": [
+        {
+          "date": "2026-10-06",
+          "what": "the owner held the proposed field",
+          "why": "no four-way split that a four-year-old knows well",
+          "status": "waiting",
+          "retry_when": "a natural four-way split is found"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.5,
+        "neglect": 0.0,
         "unlocks": 0.33,
         "cheapness": 0.21
       },
-      "score": 4.1,
-      "move": "widening",
+      "score": 2.6,
+      "move": "deepening",
       "status": "proposable"
     },
     "plant/vegetable": {
@@ -550,74 +420,34 @@
       "branch": "plant",
       "members": 4,
       "open": false,
+      "sorted_by": "part_we_eat",
       "missing": {
-        "field": "no field splits it four ways",
+        "field": null,
+        "short": {
+          "under_the_ground": 4,
+          "leaves": 4,
+          "seeds_or_pods": 4
+        },
         "things": 12
       },
-      "decisions": [],
-      "proposal": {
-        "status": "awaiting the owner",
-        "field": "part_we_eat",
-        "wording": "Which part of the plant do we eat?",
-        "proposer_confidence": "strong: four clear groups, each with four or more plants a child sees at home or in the market",
-        "values": {
-          "fruit": {
-            "label": "We eat the fruit",
-            "have": [
-              "tomato_plant",
-              "brinjal_plant",
-              "chilli_plant",
-              "pumpkin_plant"
-            ],
-            "examples": [
-              "Okra plant",
-              "Cucumber plant"
-            ]
-          },
-          "under_the_ground": {
-            "label": "We eat what grows under the ground",
-            "have": [],
-            "examples": [
-              "Carrot plant",
-              "Radish plant",
-              "Beetroot plant",
-              "Potato plant",
-              "Onion plant"
-            ]
-          },
-          "leaves": {
-            "label": "We eat the leaves",
-            "have": [],
-            "examples": [
-              "Spinach plant",
-              "Cabbage plant",
-              "Coriander plant",
-              "Curry leaf plant",
-              "Mint plant"
-            ]
-          },
-          "seeds_or_pods": {
-            "label": "We eat the seeds or pods",
-            "have": [],
-            "examples": [
-              "Pea plant",
-              "Bean plant",
-              "Maize plant",
-              "Drumstick plant"
-            ]
-          }
-        },
-        "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in. 'Under the ground' is used and not 'root', so that potato and onion need no scientist's twin."
-      },
+      "decisions": [
+        {
+          "date": "2026-10-06",
+          "what": "the owner approved the field part_we_eat as proposed: the fruit, what grows under the ground, the leaves, the seeds or pods",
+          "why": "four clear groups a child sees at home and in the market",
+          "status": "approved",
+          "move": "widening"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.5,
+        "neglect": 0.0,
         "unlocks": 0.33,
-        "cheapness": 0.2
+        "cheapness": 0.25
       },
-      "score": 4.1,
-      "move": "widening",
-      "status": "proposable"
+      "score": 2.7,
+      "move": "deepening",
+      "status": "approved by the owner"
     },
     "nature_not_alive": {
       "label": "Things in nature that are not alive",
@@ -639,57 +469,15 @@
         "field": "no field splits it four ways",
         "things": 12
       },
-      "decisions": [],
-      "proposal": {
-        "status": "awaiting the owner",
-        "field": "kind_of_sky_thing",
-        "wording": "What kind of thing in the sky is it?",
-        "proposer_confidence": "weak: a four-year-old knows about eight things in the sky, not sixteen",
-        "values": {
-          "light": {
-            "label": "Lights far away",
-            "have": [
-              "sun",
-              "moon",
-              "star"
-            ],
-            "examples": [
-              "Planet",
-              "Shooting star",
-              "Comet"
-            ]
-          },
-          "weather": {
-            "label": "Weather",
-            "have": [
-              "cloud"
-            ],
-            "examples": [
-              "Rainbow",
-              "Lightning",
-              "Fog"
-            ]
-          },
-          "falling": {
-            "label": "Things that fall from the sky",
-            "have": [],
-            "examples": [
-              "Snow",
-              "Hail"
-            ]
-          },
-          "time_of_day": {
-            "label": "Times of day",
-            "have": [],
-            "examples": [
-              "Sunrise",
-              "Sunset",
-              "Night sky"
-            ]
-          }
-        },
-        "note": "Proposed on 2026-10-06 for the engine's top proposals. The example members are suggestions; the job grounds each one before it goes in. Rain is already listed as both sky and water, so it stays off this board."
-      },
+      "decisions": [
+        {
+          "date": "2026-10-06",
+          "what": "the owner held the proposed field",
+          "why": "no four-way split that a four-year-old knows well",
+          "status": "waiting",
+          "retry_when": "a natural four-way split is found"
+        }
+      ],
       "factors": {
         "nearness": 0.5,
         "neglect": 0.5,
