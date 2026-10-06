@@ -1,0 +1,90 @@
+{
+  "id": "2026-10-06-11",
+  "started": "2026-10-06",
+  "rehearse": null,
+  "cap_inr": 60.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "made_by_people",
+        "chain": "Things people make",
+        "fixed": {
+          "kind_of_thing": "made_by_people"
+        },
+        "need": 0,
+        "pictures_for": [
+          "Ship",
+          "Houseboat",
+          "Dustpan"
+        ],
+        "recorded_but_not_in_the_game": [],
+        "facts_done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": [
+      "Vehicles: it can already open",
+      "Things in the house: it can already open"
+    ]
+  },
+  "retry_held": false,
+  "things": [
+    {
+      "name": "Ship",
+      "passed": true,
+      "in_game": true,
+      "why": [],
+      "ask": 0,
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "draw": "A large modern cargo ship floating on blue water, long hull, white superstructure at the back, tall funnel, stacked colourful containers on deck, seen from the side",
+      "tries": 1,
+      "tile": "job_2026_10_06_11_1_01_c1"
+    },
+    {
+      "name": "Houseboat",
+      "passed": true,
+      "in_game": true,
+      "why": [],
+      "ask": 0,
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "draw": "A rectangular houseboat floating on water, painted white and blue, with a flat roof, small windows, a door, and a short chimney, moored at a wooden dock",
+      "tries": 1,
+      "tile": "job_2026_10_06_11_1_01_c2"
+    },
+    {
+      "name": "Dustpan",
+      "passed": true,
+      "in_game": true,
+      "why": [],
+      "ask": 0,
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "draw": "A flat metal dustpan with a short handle, painted blue, lying on plain ground, its scoop shape and raised back edge visible, empty and clean",
+      "tries": 1,
+      "tile": "job_2026_10_06_11_1_01_c3"
+    }
+  ],
+  "sheets": [
+    "job_2026_10_06_11_1_01"
+  ],
+  "stopped": "",
+  "spent_usd": {
+    "deepseek": 0.00055,
+    "drawing": 0.1002,
+    "picture_checks": 0.00036
+  }
+}

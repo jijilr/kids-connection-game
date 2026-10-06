@@ -2492,6 +2492,35 @@
           "draw": "A tall green maize plant with long leaves, a tassel on top, and two yellow corn cobs in their green husks, one husk peeled open to show yellow kernels"
         }
       ]
+    },
+    "job_2026_10_06_11_1": {
+      "purpose": "drawn by the job, run 2026-10-06-11",
+      "grid": 2,
+      "size": 1920,
+      "only_for_this_sheet": "Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.",
+      "cells": [
+        {
+          "thing": "ship",
+          "name": "Ship",
+          "draw": "A large modern cargo ship floating on blue water, long hull, white superstructure at the back, tall funnel, stacked colourful containers on deck, seen from the side"
+        },
+        {
+          "thing": "houseboat",
+          "name": "Houseboat",
+          "draw": "A rectangular houseboat floating on water, painted white and blue, with a flat roof, small windows, a door, and a short chimney, moored at a wooden dock"
+        },
+        {
+          "thing": "dustpan",
+          "name": "Dustpan",
+          "draw": "A flat metal dustpan with a short handle, painted blue, lying on plain ground, its scoop shape and raised back edge visible, empty and clean"
+        },
+        {
+          "thing": "ship",
+          "name": "Ship",
+          "draw": "A large modern cargo ship floating on blue water, long hull, white superstructure at the back, tall funnel, stacked colourful containers on deck, seen from the side; a second view of it",
+          "look_closely": "a second try; the better of the two is kept"
+        }
+      ]
     }
   }
 }
