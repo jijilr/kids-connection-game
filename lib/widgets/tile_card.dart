@@ -110,6 +110,19 @@ class TileCard extends StatelessWidget {
   }
 
   Widget _picture() {
+    final art = media.art;
+    if (art != null) {
+      // Drawn on white with its own margin, so it is shown whole rather than cropped.
+      return Padding(
+        padding: const EdgeInsets.all(2),
+        child: Image.asset(
+          art,
+          fit: BoxFit.contain,
+          width: double.infinity,
+          errorBuilder: (_, __, ___) => _emojiOr(),
+        ),
+      );
+    }
     final image = media.image;
     if (image != null) {
       return Image.asset(

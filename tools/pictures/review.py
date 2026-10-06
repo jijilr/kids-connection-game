@@ -7,7 +7,11 @@ know what to draw again.
     python tools/pictures/review.py list [SHEET_ID]
     python tools/pictures/review.py approve TILE_ID... [--as THING_ID]
     python tools/pictures/review.py reject TILE_ID... --why "reason"
+    python tools/pictures/review.py set-aside TILE_ID... --why "reason"
     python tools/pictures/review.py todo
+
+"Set aside" is for a good tile that is deliberately not linked to a thing, such as the
+tiles of a control sheet. It is kept, like every other tile.
 """
 import sys
 
@@ -54,6 +58,13 @@ def reject(records: dict, tile_ids: list, why: str):
         print(f"  {tile_id} rejected ({why}); the file is kept")
 
 
+def set_aside(records: dict, tile_ids: list, why: str):
+    for tile_id in tile_ids:
+        records["tiles"][tile_id].update(thing_id=None, review="set aside", review_note=why,
+                                         reviewed_on=today())
+        print(f"  {tile_id} set aside ({why}); not linked to a thing")
+
+
 def todo(records: dict):
     """Things a sheet was meant to draw that still have no approved tile, and things the
     owner wants drawn again later."""
@@ -73,13 +84,14 @@ def todo(records: dict):
 def main():
     args = sys.argv[1:]
     records = load_records()
-    if not args or args[0] not in ("list", "approve", "reject", "todo"):
+    if not args or args[0] not in ("list", "approve", "reject", "set-aside", "todo"):
         raise SystemExit(__doc__)
     command, rest = args[0], args[1:]
     option = lambda flag: rest[rest.index(flag) + 1] if flag in rest else None
     tile_ids = [a for i, a in enumerate(rest)
                 if not a.startswith("--") and (i == 0 or rest[i - 1] not in ("--as", "--why"))]
-    unknown = [t for t in tile_ids if t not in records["tiles"]] if command in ("approve", "reject") else []
+    acts = command in ("approve", "reject", "set-aside")
+    unknown = [t for t in tile_ids if t not in records["tiles"]] if acts else []
     if unknown:
         raise SystemExit(f"No such tile: {unknown}")
 
@@ -93,7 +105,7 @@ def main():
     else:
         if not option("--why"):
             raise SystemExit("Say why with --why \"...\", so we know what to change next time.")
-        reject(records, tile_ids, option("--why"))
+        (reject if command == "reject" else set_aside)(records, tile_ids, option("--why"))
         write_json(RECORDS, records)
 
 

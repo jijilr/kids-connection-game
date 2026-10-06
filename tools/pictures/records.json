@@ -1,5 +1,5 @@
 {
-  "about": "One record per sheet and per tile. A tile's thing_id stays null until a vision check and the owner's review both agree on what it shows. Review statuses: 'waiting for the owner', 'approved', 'rejected'. Rejected tiles are kept and marked, so we know what to draw again.",
+  "about": "One record per sheet and per tile. A tile's thing_id stays null until a vision check and the owner's review both agree on what it shows. Review statuses: 'waiting for the owner', 'approved', 'rejected', 'set aside' (good, but deliberately not linked). Rejected tiles are kept and marked, so we know what to draw again.",
   "sheets": {
     "trial_plants_9_01": {
       "plan_key": "trial_plants_9",
@@ -86,7 +86,7 @@
   },
   "tiles": {
     "trial_plants_9_01_c1": {
-      "thing_id": null,
+      "thing_id": "mango_tree",
       "expected_thing": "mango_tree",
       "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c1.png",
       "master_size": [
@@ -127,7 +127,7 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [
         {
@@ -135,10 +135,12 @@
           "event": "cut again",
           "review_was": "waiting for the owner"
         }
-      ]
+      ],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/mango_tree.webp"
     },
     "trial_plants_9_01_c2": {
-      "thing_id": null,
+      "thing_id": "banana_plant",
       "expected_thing": "banana_plant",
       "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c2.png",
       "master_size": [
@@ -179,7 +181,7 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [
         {
@@ -187,10 +189,12 @@
           "event": "cut again",
           "review_was": "waiting for the owner"
         }
-      ]
+      ],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/banana_plant.webp"
     },
     "trial_plants_9_01_c3": {
-      "thing_id": null,
+      "thing_id": "coconut_tree",
       "expected_thing": "coconut_tree",
       "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c3.png",
       "master_size": [
@@ -231,7 +235,7 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [
         {
@@ -239,10 +243,12 @@
           "event": "cut again",
           "review_was": "waiting for the owner"
         }
-      ]
+      ],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/coconut_tree.webp"
     },
     "trial_plants_9_01_c4": {
-      "thing_id": null,
+      "thing_id": "rose",
       "expected_thing": "rose",
       "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c4.png",
       "master_size": [
@@ -283,7 +289,7 @@
         "matches_cell": true,
         "problems": "cut off"
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [
         {
@@ -291,10 +297,12 @@
           "event": "cut again",
           "review_was": "waiting for the owner"
         }
-      ]
+      ],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/rose.webp"
     },
     "trial_plants_9_01_c5": {
-      "thing_id": null,
+      "thing_id": "lotus",
       "expected_thing": "lotus",
       "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c5.png",
       "master_size": [
@@ -335,7 +343,7 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [
         {
@@ -343,10 +351,12 @@
           "event": "cut again",
           "review_was": "waiting for the owner"
         }
-      ]
+      ],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/lotus.webp"
     },
     "trial_plants_9_01_c6": {
-      "thing_id": null,
+      "thing_id": "rice_plant",
       "expected_thing": "rice_plant",
       "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c6.png",
       "master_size": [
@@ -387,7 +397,7 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [
         {
@@ -395,10 +405,12 @@
           "event": "cut again",
           "review_was": "waiting for the owner"
         }
-      ]
+      ],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/rice_plant.webp"
     },
     "trial_plants_9_01_c7": {
-      "thing_id": null,
+      "thing_id": "sugarcane",
       "expected_thing": "sugarcane",
       "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c7.png",
       "master_size": [
@@ -439,7 +451,7 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [
         {
@@ -447,10 +459,12 @@
           "event": "cut again",
           "review_was": "waiting for the owner"
         }
-      ]
+      ],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/sugarcane.webp"
     },
     "trial_plants_9_01_c8": {
-      "thing_id": null,
+      "thing_id": "tomato_plant",
       "expected_thing": "tomato_plant",
       "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c8.png",
       "master_size": [
@@ -491,7 +505,7 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [
         {
@@ -499,10 +513,12 @@
           "event": "cut again",
           "review_was": "waiting for the owner"
         }
-      ]
+      ],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/tomato_plant.webp"
     },
     "trial_plants_9_01_c9": {
-      "thing_id": null,
+      "thing_id": "brinjal_plant",
       "expected_thing": "brinjal_plant",
       "master_file": "tools/pictures/tiles/masters/trial_plants_9_01_c9.png",
       "master_size": [
@@ -543,7 +559,7 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [
         {
@@ -551,10 +567,12 @@
           "event": "cut again",
           "review_was": "waiting for the owner"
         }
-      ]
+      ],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/brinjal_plant.webp"
     },
     "trial_nature_9_01_c1": {
-      "thing_id": null,
+      "thing_id": "river",
       "expected_thing": "river",
       "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c1.png",
       "master_size": [
@@ -595,9 +613,11 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/river.webp"
     },
     "trial_nature_9_01_c2": {
       "thing_id": null,
@@ -641,12 +661,13 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
-      "review_note": "",
-      "history": []
+      "review": "rejected",
+      "review_note": "a hard-edged rectangle; the owner wants it redrawn with soft edges like the river and the lake",
+      "history": [],
+      "reviewed_on": "2026-10-06"
     },
     "trial_nature_9_01_c3": {
-      "thing_id": null,
+      "thing_id": "lake",
       "expected_thing": "lake",
       "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c3.png",
       "master_size": [
@@ -687,12 +708,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/lake.webp"
     },
     "trial_nature_9_01_c4": {
-      "thing_id": null,
+      "thing_id": "mountain",
       "expected_thing": "mountain",
       "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c4.png",
       "master_size": [
@@ -733,12 +756,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/mountain.webp"
     },
     "trial_nature_9_01_c5": {
-      "thing_id": null,
+      "thing_id": "hill",
       "expected_thing": "hill",
       "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c5.png",
       "master_size": [
@@ -779,12 +804,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/hill.webp"
     },
     "trial_nature_9_01_c6": {
-      "thing_id": null,
+      "thing_id": "volcano",
       "expected_thing": "volcano",
       "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c6.png",
       "master_size": [
@@ -825,12 +852,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/volcano.webp"
     },
     "trial_nature_9_01_c7": {
-      "thing_id": null,
+      "thing_id": "rock",
       "expected_thing": "rock",
       "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c7.png",
       "master_size": [
@@ -871,12 +900,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/rock.webp"
     },
     "trial_nature_9_01_c8": {
-      "thing_id": null,
+      "thing_id": "sand",
       "expected_thing": "sand",
       "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c8.png",
       "master_size": [
@@ -917,12 +948,14 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/sand.webp"
     },
     "trial_nature_9_01_c9": {
-      "thing_id": null,
+      "thing_id": "soil",
       "expected_thing": "soil",
       "master_file": "tools/pictures/tiles/masters/trial_nature_9_01_c9.png",
       "master_size": [
@@ -963,9 +996,11 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/soil.webp"
     },
     "trial_plants_4_01_c1": {
       "thing_id": null,
@@ -1009,15 +1044,16 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "control sheet for the nine-against-four trial; the owner ruled it stays unlinked",
       "history": [
         {
           "date": "2026-10-06",
           "event": "cut again",
           "review_was": "waiting for the owner"
         }
-      ]
+      ],
+      "reviewed_on": "2026-10-06"
     },
     "trial_plants_4_01_c2": {
       "thing_id": null,
@@ -1061,15 +1097,16 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "control sheet for the nine-against-four trial; the owner ruled it stays unlinked",
       "history": [
         {
           "date": "2026-10-06",
           "event": "cut again",
           "review_was": "waiting for the owner"
         }
-      ]
+      ],
+      "reviewed_on": "2026-10-06"
     },
     "trial_plants_4_01_c3": {
       "thing_id": null,
@@ -1113,15 +1150,16 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "control sheet for the nine-against-four trial; the owner ruled it stays unlinked",
       "history": [
         {
           "date": "2026-10-06",
           "event": "cut again",
           "review_was": "waiting for the owner"
         }
-      ]
+      ],
+      "reviewed_on": "2026-10-06"
     },
     "trial_plants_4_01_c4": {
       "thing_id": null,
@@ -1165,18 +1203,20 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "control sheet for the nine-against-four trial; the owner ruled it stays unlinked",
       "history": [
         {
           "date": "2026-10-06",
           "event": "cut again",
           "review_was": "waiting for the owner"
         }
-      ]
+      ],
+      "reviewed_on": "2026-10-06"
     }
   },
   "redo_later": {
-    "sugarcane": "the owner wants the jointed canes more visible (said on 2026-10-06)"
+    "sugarcane": "the owner wants the jointed canes more visible (said on 2026-10-06)",
+    "sea": "rejected by the owner: redraw with soft edges like the river and the lake"
   }
 }

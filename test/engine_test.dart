@@ -213,6 +213,30 @@ void main() {
     }
   });
 
+  test('approved tiles ship with the game and are the first choice of style', () {
+    final lotus = media.forEntity(thing('lotus'));
+    expect(lotus.art, 'Assets/pictures/lotus.webp');
+    expect(File(lotus.art!).existsSync(), isTrue);
+    expect(media.forEntity(thing('sea')).art, isNull, reason: 'the sea tile was rejected');
+    expect(media.inStyle(thing('lotus'), 0).art, isNotNull);
+    expect(media.inStyle(thing('lotus'), 2).art, isNull, reason: 'an emoji board shows emoji only');
+
+    // A board whose 16 things all have drawn tiles is drawn in them.
+    final dictionary = DimensionRegistry({
+      'k': const Dimension(
+          id: 'k', question: 'Which?', values: {'a': 'A', 'b': 'B', 'c': 'C', 'd': 'D'}),
+    });
+    final things = [
+      for (final v in ['a', 'b', 'c', 'd'])
+        for (int n = 0; n < 4; n++) Entity(id: '$v$n', name: '$v$n', fields: {'k': v}),
+    ];
+    final drawn = MediaResolver({for (final t in things) 'Assets/pictures/${t.id}.webp'});
+    final board = BoardAssembler(things, dictionary, random: Random(1), styles: drawn.styles)
+        .assemble(dimension: dictionary.byId('k')!)!;
+    expect(board.style, 0);
+    expect(board.tiles.every((t) => drawn.inStyle(t, board.style).art != null), isTrue);
+  });
+
   test('a board that could only show names stays closed to the child', () async {
     expect(settings.boardsNeedPictures, isTrue);
     final repo = repoWithSeed(2);
@@ -270,8 +294,9 @@ void main() {
   });
 
   test('every tile on a board is drawn in the same style', () async {
-    String look(EntityMedia m) =>
-        m.image != null ? 'photo' : (m.emoji != null ? 'emoji' : 'name only');
+    String look(EntityMedia m) => m.art != null
+        ? 'drawn tile'
+        : (m.image != null ? 'photo' : (m.emoji != null ? 'emoji' : 'name only'));
     for (int seed = 0; seed < 30; seed++) {
       final g = await start(seed);
       expect(g.openTiles.map((e) => look(g.tileMedia(e))).toSet(), hasLength(1),

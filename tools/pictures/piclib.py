@@ -22,8 +22,9 @@ THINGS = ROOT / "Assets/data/things.json"
 
 ABOUT = ("One record per sheet and per tile. A tile's thing_id stays null until a vision "
          "check and the owner's review both agree on what it shows. Review statuses: "
-         "'waiting for the owner', 'approved', 'rejected'. Rejected tiles are kept and "
-         "marked, so we know what to draw again.")
+         "'waiting for the owner', 'approved', 'rejected', 'set aside' (good, but "
+         "deliberately not linked). Rejected tiles are kept and marked, so we know what "
+         "to draw again.")
 
 
 def read_json(path, default=None):
