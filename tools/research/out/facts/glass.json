@@ -1,14 +1,19 @@
 {
   "name": "Glass",
-  "fields": {},
-  "weak_spots": [
-    {
-      "field": "kind_of_thing",
-      "why": "on a second reading, the sentence does not show it",
+  "fields": {
+    "kind_of_thing": {
       "value": "made_by_people",
-      "quote": "Glass is most often formed by rapid cooling (quenching) of the molten form."
+      "basis": "judged, not sourced",
+      "why": "Glass is manufactured by people, for example by rapidly cooling molten material into window panes, bottles, and lenses."
+    },
+    "kind_of_made_thing": {
+      "value": "household",
+      "quote": "Due to its ease of formability into any shape, glass has been traditionally used for vessels, such as bowls, vases, bottles, jars and drinking glasses.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
     }
-  ],
+  },
+  "weak_spots": [],
   "pages": [
     {
       "id": "wikipedia_en",

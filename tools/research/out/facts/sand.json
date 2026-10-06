@@ -1,11 +1,17 @@
 {
   "name": "Sand",
-  "fields": {},
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "basis": "judged, not sourced",
+      "why": "Sand is a naturally occurring granular material of rock and mineral particles, not a living thing or something people make."
+    }
+  },
   "weak_spots": [
     {
-      "field": "kind_of_thing",
+      "field": "kind_of_nature",
       "why": "the sentence it quoted is not in the saved page",
-      "value": "nature_not_alive"
+      "value": "ground"
     }
   ],
   "pages": [

@@ -4,17 +4,20 @@
     "kind_of_thing": {
       "value": "plant",
       "quote": "The coconut is a palm tree in the family Arecaceae (palm family).",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "basis": "sourced"
     },
     "extinct": {
       "value": false,
       "quote": "Coconuts grow in tropical countries.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "basis": "sourced"
     },
     "kind_of_plant": {
       "value": "tree",
       "quote": "The coconut is a palm tree in the family Arecaceae (palm family).",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "basis": "sourced"
     }
   },
   "weak_spots": [

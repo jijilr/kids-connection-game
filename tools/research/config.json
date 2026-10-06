@@ -100,5 +100,93 @@
     "wikipedia_en": 2500,
     "wikipedia_simple": 1500,
     "kew": 2000
+  },
+  "words_that_narrow_a_name": {
+    "about": "When a name has several meanings on Wikipedia, the script asks again with one of these words in brackets, chosen by the thing's kind: Table (furniture), Rock (geology). The owner's ruling of 6 Oct 2026.",
+    "household": [
+      "furniture",
+      "dishware",
+      "tableware",
+      "household"
+    ],
+    "toy": [
+      "toy"
+    ],
+    "tool": [
+      "tool"
+    ],
+    "vehicle": [
+      "vehicle"
+    ],
+    "building": [
+      "building"
+    ],
+    "ground": [
+      "geology"
+    ],
+    "sky": [
+      "astronomy",
+      "weather"
+    ],
+    "water": [
+      "geography"
+    ],
+    "land": [
+      "geography",
+      "landform"
+    ],
+    "flower": [
+      "flower",
+      "plant"
+    ],
+    "tree": [
+      "tree",
+      "plant"
+    ],
+    "grass_grain": [
+      "plant",
+      "grass"
+    ],
+    "vegetable": [
+      "plant",
+      "vegetable"
+    ],
+    "bird": [
+      "bird"
+    ],
+    "fish": [
+      "fish"
+    ],
+    "insect": [
+      "insect"
+    ],
+    "reptile": [
+      "snake",
+      "reptile",
+      "genus"
+    ],
+    "mammal": [
+      "mammal",
+      "animal"
+    ],
+    "amphibian": [
+      "amphibian"
+    ],
+    "plant": [
+      "plant"
+    ],
+    "animal": [
+      "animal"
+    ],
+    "nature_not_alive": [
+      "geology",
+      "geography"
+    ],
+    "made_by_people": []
+  },
+  "may_be_judged_when_no_page_states_it": {
+    "about": "The owner's ruling of 6 Oct 2026. Pages rarely say outright that the Sun is a thing in nature, or that a hen is still living. For these two only, DeepSeek may judge the value when no sentence states it. The value is recorded as 'judged, not sourced' and does not go to the owner's queue. Every other field still needs its sentence.",
+    "kind_of_thing": "any value",
+    "extinct": "only 'still living'; a thing judged extinct with no sentence to show it goes to the owner"
   }
 }

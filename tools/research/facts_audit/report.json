@@ -4,112 +4,143 @@
   "things_run": 109,
   "things_not_run": [],
   "values": {
-    "agrees": 229,
+    "agrees": 244,
+    "agrees_judged": 19,
     "differs": 1,
-    "not_grounded": 57,
+    "differs_judged": 0,
+    "not_grounded": 23,
     "extra": 0
   },
-  "things_fully_grounded_and_agreeing": 70,
+  "things_fully_grounded_and_agreeing": 88,
   "spend": {
-    "calls": 195,
-    "input_tokens_cache_hit": 0,
-    "input_tokens_cache_miss": 161887,
-    "output_tokens": 21072,
-    "cap_usd": 0.104,
-    "usd_at_peak_prices": 0.0739,
-    "inr_at_peak_prices": 7.1
+    "calls": 94,
+    "input_tokens_cache_hit": 46461,
+    "input_tokens_cache_miss": 35293,
+    "output_tokens": 9640,
+    "cap_usd": 0.052,
+    "usd_at_peak_prices": 0.0224,
+    "inr_at_peak_prices": 2.2
   },
   "rows": [
     {
       "thing": "Glass",
       "field": "kind_of_thing",
       "approved": "made_by_people",
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees_judged",
+      "script": "made_by_people",
+      "quote": "",
+      "source": "",
+      "why": "Glass is manufactured by people, for example by rapidly cooling molten material into window panes, bottles, and lenses."
     },
     {
       "thing": "Glass",
       "field": "kind_of_made_thing",
       "approved": "household",
-      "result": "not_grounded",
-      "why": "no answer"
+      "result": "agrees",
+      "script": "household",
+      "quote": "Due to its ease of formability into any shape, glass has been traditionally used for vessels, such as bowls, vases, bottles, jars and drinking glasses.",
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Clay",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees",
+      "script": "nature_not_alive",
+      "quote": "Clay is a type of fine-grained natural soil  material containing clay minerals (hydrous aluminium phyllosilicates, e.g. kaolinite, Al2Si2O5(OH)4).",
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Clay",
       "field": "kind_of_nature",
       "approved": "ground",
-      "result": "not_grounded",
-      "why": "no answer"
+      "result": "agrees",
+      "script": "ground",
+      "quote": "Clay is a type of fine-grained natural soil  material containing clay minerals (hydrous aluminium phyllosilicates, e.g. kaolinite, Al2Si2O5(OH)4).",
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Sparrow",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "They are small passerine birds which belong to the family Passeridae.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Sparrow",
       "field": "kind_of_animal",
       "approved": "bird",
       "result": "agrees",
+      "script": "bird",
       "quote": "They are small passerine birds which belong to the family Passeridae.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Sparrow",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "This means they are one of the easiest birds to see in the wild.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Spade",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "A spade is a tool primarily for digging, consisting of a long handle and blade, typically with the blade narrower and flatter than the common shovel.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Spade",
       "field": "kind_of_made_thing",
       "approved": "tool",
       "result": "agrees",
+      "script": "tool",
       "quote": "In gardening, a spade is a tool for digging.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Mango tree",
       "field": "kind_of_thing",
       "approved": "plant",
       "result": "agrees",
+      "script": "plant",
       "quote": "Mangifera indica, commonly known as the mango after its fruit, is an evergreen species of flowering plant in the family Anacardiaceae.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Mango tree",
       "field": "extinct",
       "approved": false,
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees_judged",
+      "script": false,
+      "quote": "",
+      "source": "",
+      "why": "The sources describe mango trees as widely cultivated and harvested, so they are still living."
     },
     {
       "thing": "Mango tree",
       "field": "kind_of_plant",
       "approved": "tree",
       "result": "agrees",
+      "script": "tree",
       "quote": "It is a large fruit tree, capable of growing to a height and width of 30 m (100 ft).",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Mango tree",
@@ -123,245 +154,307 @@
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "A honey bee (also spelled honeybee) is a eusocial flying insect from the genus Apis of the largest bee family, Apidae.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Honeybee",
       "field": "kind_of_animal",
       "approved": "insect",
       "result": "agrees",
+      "script": "insect",
       "quote": "A honey bee (also spelled honeybee) is a eusocial flying insect from the genus Apis of the largest bee family, Apidae.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Honeybee",
       "field": "extinct",
       "approved": false,
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees_judged",
+      "script": false,
+      "quote": "",
+      "source": "",
+      "why": "The sources describe honey bees in the present tense as living, farmed insects, so they are still living."
     },
     {
       "thing": "Anaconda",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Anacondas or water boas are a group of large boas of the genus Eunectes.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Anaconda",
       "field": "kind_of_animal",
       "approved": "reptile",
       "result": "agrees",
+      "script": "reptile",
       "quote": "They are a semiaquatic group of snakes found in tropical South America.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Anaconda",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "It is the thickest, heaviest, and second longest known living snake (behind the reticulated python).",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Parrot",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Parrots are birds of the order Psittaciformes.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Parrot",
       "field": "kind_of_animal",
       "approved": "bird",
       "result": "agrees",
+      "script": "bird",
       "quote": "Parrots are birds of the order Psittaciformes.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Parrot",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "As of 2021, about 50 million parrots (half of all parrots) live in captivity, with the vast majority of these living as pets in people's homes.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Teddy bear",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "A teddy bear, or simply a teddy, is a stuffed toy in the form of a bear.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Teddy bear",
       "field": "kind_of_made_thing",
       "approved": "toy",
       "result": "agrees",
+      "script": "toy",
       "quote": "A teddy bear is a type of toy that looks like a bear.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Housefly",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "The housefly (Musca domestica) is a fly of the suborder Cyclorrhapha.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Housefly",
       "field": "kind_of_animal",
       "approved": "insect",
       "result": "agrees",
+      "script": "insect",
       "quote": "Housefly is the common fly often found in houses.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Housefly",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Adult flies normally live for two to four weeks, but can hibernate during the winter.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Penguin",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Penguins are a group of flightless semi-aquatic sea birds which live almost exclusively in the Southern Hemisphere.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Penguin",
       "field": "kind_of_animal",
       "approved": "bird",
       "result": "agrees",
+      "script": "bird",
       "quote": "Penguins are seabirds in the family Spheniscidae.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Penguin",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "They spend about half of their lives on land and the other half in the sea.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Bicycle",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "The bicycle was invented in Europe in the 19th century.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Bicycle",
       "field": "kind_of_made_thing",
       "approved": "vehicle",
       "result": "agrees",
+      "script": "vehicle",
       "quote": "A bicycle, also called a pedal cycle, bike, push-bike or cycle, is a human-powered or motor-assisted, pedal-driven, single-track vehicle, with two wheels attached to a frame, one behind the other.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Cloud",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
       "result": "agrees",
+      "script": "nature_not_alive",
       "quote": "In meteorology, a cloud is an aerosol consisting of a visible mass of miniature liquid droplets, ice crystals, or other particles, suspended in the atmosphere of a planetary body or similar space.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Cloud",
       "field": "kind_of_nature",
       "approved": "sky",
       "result": "agrees",
+      "script": "sky",
       "quote": "Clouds are seen in the Earth's homosphere, which includes the troposphere, stratosphere, and mesosphere.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Sugarcane",
       "field": "kind_of_thing",
       "approved": "plant",
       "result": "agrees",
+      "script": "plant",
       "quote": "Sugarcane (or sugar cane) is a Genus of  plants.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Sugarcane",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Grown in tropical and subtropical regions, sugarcane is the world's largest crop by production quantity, totalling 1.9 billion tonnes in 2020, with Brazil accounting for 40% of the world total.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Sugarcane",
       "field": "kind_of_plant",
       "approved": "grass_grain",
       "result": "agrees",
+      "script": "grass_grain",
       "quote": "Sugarcane or sugar cane is a species of tall, perennial grass (in the genus Saccharum, tribe Andropogoneae) that is used for sugar production.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "River",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
       "result": "agrees",
+      "script": "nature_not_alive",
       "quote": "A river is a natural stream of fresh water that flows on land or inside caves towards another body of water at a lower elevation, such as an ocean, lake, or another river.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "River",
       "field": "kind_of_nature",
       "approved": "water",
       "result": "agrees",
+      "script": "water",
       "quote": "A river is a stream of water that flows through a channel on the surface of the ground.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Cave",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
       "result": "agrees",
+      "script": "nature_not_alive",
       "quote": "Caves and caverns are natural voids under the surface of the Earth and have also been observed in other rocky worlds (e.g., on Mars).",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Cave",
       "field": "kind_of_nature",
       "approved": "land",
       "result": "agrees",
+      "script": "land",
       "quote": "Caves and caverns are natural voids under the surface of the Earth and have also been observed in other rocky worlds (e.g., on Mars).",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Soil",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees_judged",
+      "script": "nature_not_alive",
+      "quote": "",
+      "source": "",
+      "why": "Soil is described as a natural mixture of minerals, water, air, and organic matter that supports plant life, not an animal, plant, or manufactured object."
     },
     {
       "thing": "Soil",
       "field": "kind_of_nature",
       "approved": "ground",
       "result": "not_grounded",
-      "why": "no answer"
+      "why": "on a second reading, the sentence does not show it"
     },
     {
       "thing": "Bus",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "A bus is a large wheeled vehicle meant to carry many passengers along with the bus driver.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Bus",
@@ -375,62 +468,77 @@
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Cattle is a word for certain mammals that belong to the genus Bos.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Cow",
       "field": "kind_of_animal",
       "approved": "mammal",
       "result": "agrees",
+      "script": "mammal",
       "quote": "Cattle is a word for certain mammals that belong to the genus Bos.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Cow",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "There were over 940 million cattle in the world by 2022.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Building blocks",
       "field": "kind_of_thing",
       "approved": "made_by_people",
-      "result": "not_grounded",
-      "why": "no page was found for it"
+      "result": "agrees_judged",
+      "script": "made_by_people",
+      "quote": "",
+      "source": "",
+      "why": "Building blocks are modular construction parts usually made of plastic, so they are manufactured objects rather than animals, plants, or natural non-living things."
     },
     {
       "thing": "Building blocks",
       "field": "kind_of_made_thing",
       "approved": "toy",
       "result": "not_grounded",
-      "why": "no page was found for it"
+      "why": "on a second reading, the sentence does not show it"
     },
     {
       "thing": "Coconut tree",
       "field": "kind_of_thing",
       "approved": "plant",
       "result": "agrees",
+      "script": "plant",
       "quote": "The coconut is a palm tree in the family Arecaceae (palm family).",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Coconut tree",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Coconuts grow in tropical countries.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Coconut tree",
       "field": "kind_of_plant",
       "approved": "tree",
       "result": "agrees",
+      "script": "tree",
       "quote": "The coconut is a palm tree in the family Arecaceae (palm family).",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Coconut tree",
@@ -444,16 +552,20 @@
       "field": "kind_of_thing",
       "approved": "plant",
       "result": "agrees",
+      "script": "plant",
       "quote": "A banana is the common name for a type of fruit and also the name for the herbaceous plants that grow it.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Banana plant",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Today, they are grown in tropical regions around the world.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Banana plant",
@@ -474,117 +586,150 @@
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "The goat or domestic goat (Capra hircus) is a species of goat-antelope that is mostly kept as livestock.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Goat",
       "field": "kind_of_animal",
       "approved": "mammal",
       "result": "agrees",
+      "script": "mammal",
       "quote": "The goat is a member of the family Bovidae and is closely related to the sheep.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Goat",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "In 2022, there were more than 1.1 billion goats living in the world, of which 150 million were in India.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Bear",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Bears are carnivoran mammals of the family Ursidae ()",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Bear",
       "field": "kind_of_animal",
       "approved": "mammal",
       "result": "agrees",
+      "script": "mammal",
       "quote": "Bears are carnivoran mammals of the family Ursidae ()",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Bear",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Although only eight species of bears are extant, they are widespread, appearing in a wide variety of habitats throughout most of the Northern Hemisphere and partially in the Southern Hemisphere.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Mosquito",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "A mosquito is a type of fly.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Mosquito",
       "field": "kind_of_animal",
       "approved": "insect",
       "result": "agrees",
+      "script": "insect",
       "quote": "Mosquitoes, the Culicidae, are a family of small flies consisting of 3,600 species.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Mosquito",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "By transmitting diseases, mosquitoes cause the deaths of over one million people each year.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Sun",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees_judged",
+      "script": "nature_not_alive",
+      "quote": "",
+      "source": "",
+      "why": "The Sun is a star, a natural object in space that is not alive and not made by people."
     },
     {
       "thing": "Sun",
       "field": "kind_of_nature",
       "approved": "sky",
-      "result": "not_grounded",
-      "why": "no answer"
+      "result": "agrees",
+      "script": "sky",
+      "quote": "The Sun is the star located at the centre of the Solar System.",
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Grasshopper",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Grasshoppers are insects with long, powerful back legs which they use for jumping.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Grasshopper",
       "field": "kind_of_animal",
       "approved": "insect",
       "result": "agrees",
+      "script": "insect",
       "quote": "Grasshoppers are insects with long, powerful back legs which they use for jumping.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Grasshopper",
       "field": "extinct",
       "approved": false,
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees_judged",
+      "script": false,
+      "quote": "",
+      "source": "",
+      "why": "The sources describe grasshoppers as living insects that are active, eat plants, and interact with humans today."
     },
     {
       "thing": "Screwdriver",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "A  screwdriver is a tool, manual or powered, used for turning screws.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Screwdriver",
@@ -597,420 +742,531 @@
       "thing": "Table",
       "field": "kind_of_thing",
       "approved": "made_by_people",
-      "result": "not_grounded",
-      "why": "no page was found for it"
+      "result": "agrees",
+      "script": "made_by_people",
+      "quote": "A table is a piece of furniture with a raised flat top and is supported most commonly by 1 to 4 legs (although some can have more).",
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Table",
       "field": "kind_of_made_thing",
       "approved": "household",
-      "result": "not_grounded",
-      "why": "no page was found for it"
+      "result": "agrees",
+      "script": "household",
+      "quote": "A table is a piece of furniture with a raised flat top and is supported most commonly by 1 to 4 legs (although some can have more).",
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Mountain",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
       "result": "agrees",
+      "script": "nature_not_alive",
       "quote": "A mountain is an elevated portion of the surface of a planet, generally with steep sides that show significant exposed bedrock.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Mountain",
       "field": "kind_of_nature",
       "approved": "land",
       "result": "agrees",
+      "script": "land",
       "quote": "A mountain is a large natural rise of the Earth's surface that usually has a \"summit\" (the name for a mountain's top, which can also be called a peak).",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Clownfish",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "The clownfish or anemonefish is a kind of fish.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Clownfish",
       "field": "kind_of_animal",
       "approved": "fish",
       "result": "agrees",
+      "script": "fish",
       "quote": "The clownfish or anemonefish is a kind of fish.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Clownfish",
       "field": "extinct",
       "approved": false,
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees",
+      "script": false,
+      "quote": "Clownfish or anemonefishes (genus Amphiprion) are saltwater fish found in the warm and tropical waters of the Indo-Pacific.",
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Ant",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Ants are eusocial insects of the family Formicidae and, along with the related wasps and bees, belong to the order Hymenoptera.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Ant",
       "field": "kind_of_animal",
       "approved": "insect",
       "result": "agrees",
+      "script": "insect",
       "quote": "Ants are eusocial insects of the family Formicidae and, along with the related wasps and bees, belong to the order Hymenoptera.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Ant",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Ants have colonised almost every landmass on Earth.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Mud",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
       "result": "agrees",
+      "script": "nature_not_alive",
       "quote": "Mud is soil, silt, loam or clay, mixed with water.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Mud",
       "field": "kind_of_nature",
       "approved": "ground",
       "result": "agrees",
+      "script": "ground",
       "quote": "Mud is soil, silt, loam or clay, mixed with water.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Python",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Python is the name given to a genus of constricting snakes.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Python",
       "field": "kind_of_animal",
       "approved": "reptile",
       "result": "agrees",
+      "script": "reptile",
       "quote": "Python is the name given to a genus of constricting snakes.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Python",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Python can be found in Southeast Asia and Africa, and other members of the family are found in New Guinea and Australia, like water pythons, where they live near water, like rivers, swamps, and wetlands.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Ball",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "Balls made from hard-wearing materials are used in engineering applications to provide very low friction bearings, known as ball bearings.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Ball",
       "field": "kind_of_made_thing",
       "approved": "toy",
       "result": "agrees",
+      "script": "toy",
       "quote": "Balls can also be used for simpler activities, such as catch or juggling.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Turtle",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Turtles are one of the many reptiles on earth.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Turtle",
       "field": "kind_of_animal",
       "approved": "reptile",
       "result": "agrees",
+      "script": "reptile",
       "quote": "Turtles (order Testudines) are reptiles characterized by a special shell developed mainly from their ribs.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Turtle",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "There are about 356 species of turtles living on land in all continents except Antarctica.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Elephant",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Elephants are the largest living land animals.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Elephant",
       "field": "kind_of_animal",
       "approved": "mammal",
       "result": "agrees",
+      "script": "mammal",
       "quote": "Elephants are the biggest living land mammals.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Elephant",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Elephants are the largest living land animals.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Goldfish",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "The goldfish (Carassius auratus) is a freshwater fish in the family Cyprinidae of the order Cypriniformes.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Goldfish",
       "field": "kind_of_animal",
       "approved": "fish",
       "result": "agrees",
+      "script": "fish",
       "quote": "The goldfish (Carassius auratus) is a freshwater fish in the family Cyprinidae of the order Cypriniformes.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Goldfish",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "It is commonly kept as a pet in indoor aquariums, and is one of the most popular aquarium fish.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Butterfly",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Butterflies are winged insects from the lepidopteran superfamily Papilionoidea, characterised by large, often brightly coloured wings that often fold together when at rest, and a conspicuous, fluttering flight.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Butterfly",
       "field": "kind_of_animal",
       "approved": "insect",
       "result": "agrees",
+      "script": "insect",
       "quote": "A butterfly is a (usually) day-flying insect of the order Lepidoptera.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Butterfly",
       "field": "extinct",
       "approved": false,
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees_judged",
+      "script": false,
+      "quote": "",
+      "source": "",
+      "why": "The sources describe butterflies as living insects with ongoing life cycles, migrations, and interactions with plants and predators, so they are still living."
     },
     {
       "thing": "Wheat",
       "field": "kind_of_thing",
       "approved": "plant",
       "result": "agrees",
+      "script": "plant",
       "quote": "Wheat is a group of wild and domesticated grasses of the genus Triticum ().",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Wheat",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Now it is cultivated worldwide.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Wheat",
       "field": "kind_of_plant",
       "approved": "grass_grain",
       "result": "agrees",
+      "script": "grass_grain",
       "quote": "Wheat (Genus: Triticum) is a cereal grain.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Crow",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "A crow is a bird of the genus Corvus, or more broadly, a synonym for all of Corvus.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Crow",
       "field": "kind_of_animal",
       "approved": "bird",
       "result": "agrees",
+      "script": "bird",
       "quote": "A crow is a bird of the genus Corvus, or more broadly, a synonym for all of Corvus.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Crow",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "The genus has 40 or so members on all temperate continents except for South America, and some islands.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Plate",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "A plate is a type of dish where food can be placed after being cooked for eating.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Plate",
       "field": "kind_of_made_thing",
       "approved": "household",
       "result": "agrees",
+      "script": "household",
       "quote": "A plate is a type of dish where food can be placed after being cooked for eating.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Tortoise",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Tortoises ( TOR-təs-iz) are reptiles of the family Testudinidae of the order Testudines (Latin for \"tortoise\").",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Tortoise",
       "field": "kind_of_animal",
       "approved": "reptile",
       "result": "agrees",
+      "script": "reptile",
       "quote": "Tortoises ( TOR-təs-iz) are reptiles of the family Testudinidae of the order Testudines (Latin for \"tortoise\").",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Tortoise",
       "field": "extinct",
       "approved": false,
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees_judged",
+      "script": false,
+      "quote": "",
+      "source": "",
+      "why": "The sources describe tortoises as living animals with current species and lifespans, so they are still living."
     },
     {
       "thing": "Volcano",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
       "result": "agrees",
+      "script": "nature_not_alive",
       "quote": "A volcano is a mountain that has lava (hot, liquid rock) coming out from a magma chamber under the ground, or did have in the past.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Volcano",
       "field": "kind_of_nature",
       "approved": "land",
       "result": "agrees",
+      "script": "land",
       "quote": "A volcano is a mountain that has lava (hot, liquid rock) coming out from a magma chamber under the ground, or did have in the past.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Cockroach",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Cockroaches (or roaches) are insects belonging to the order Blattodea (Blattaria).",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Cockroach",
       "field": "kind_of_animal",
       "approved": "insect",
       "result": "agrees",
+      "script": "insect",
       "quote": "Cockroaches (or roaches) are insects belonging to the order Blattodea (Blattaria).",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Cockroach",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "They are common and hardy insects capable of tolerating a wide range of climates, from Arctic cold to tropical heat.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Peacock",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "A peafowl is a bird of the Phasianide family.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Peacock",
       "field": "kind_of_animal",
       "approved": "bird",
       "result": "agrees",
+      "script": "bird",
       "quote": "A peafowl is a bird of the Phasianide family.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Peacock",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "For centuries peafowl have been admired for their beauty and hunted for their meat. Recently peacocks have become more popular in parks and gardens.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Bed",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "A bed is a piece of furniture that is used as a place to sleep, rest, and relax.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Bed",
       "field": "kind_of_made_thing",
       "approved": "household",
       "result": "agrees",
+      "script": "household",
       "quote": "A bed is a piece of furniture that is used as a place to sleep, rest, and relax.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Doll",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "A doll is a model typically of a human or humanoid character, often used as a toy for children.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Doll",
       "field": "kind_of_made_thing",
       "approved": "toy",
       "result": "agrees",
+      "script": "toy",
       "quote": "A doll is a child's toy that looks like a baby or other human being.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "House",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "A house is a building that is made for people to live in.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "House",
@@ -1024,318 +1280,400 @@
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Eagle is a general term for many large birds of prey.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Eagle",
       "field": "kind_of_animal",
       "approved": "bird",
       "result": "agrees",
+      "script": "bird",
       "quote": "Eagle is a general term for many large birds of prey.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Eagle",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Over 60 species have been described, and they live in many parts of the world.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Lake",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
       "result": "agrees",
+      "script": "nature_not_alive",
       "quote": "A lake is often a naturally occurring, relatively large and fixed body of water on or near the Earth's surface.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Lake",
       "field": "kind_of_nature",
       "approved": "water",
       "result": "agrees",
+      "script": "water",
       "quote": "A lake (from Latin: lacus) is a large body of water (larger and deeper than a pond) within a body of land.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Lion",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "The lion (Panthera leo) is a large mammal of the Felidae (cat) family.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Lion",
       "field": "kind_of_animal",
       "approved": "mammal",
       "result": "agrees",
+      "script": "mammal",
       "quote": "The lion (Panthera leo) is a large mammal of the Felidae (cat) family.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Lion",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Today, wild lions live in sub-Saharan Africa and western India.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Pigeon",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Columbidae is a bird family consisting of doves and pigeons.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Pigeon",
       "field": "kind_of_animal",
       "approved": "bird",
       "result": "agrees",
+      "script": "bird",
       "quote": "Pigeons or doves are in the bird family Columbidae.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Pigeon",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "The family occurs worldwide, often in close proximity to humans, but the greatest diversity is in the Indomalayan and Australasian realms.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Cat",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "The cat (Felis catus), also called domestic cat and house cat, is a small domesticated carnivorous mammal.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Cat",
       "field": "kind_of_animal",
       "approved": "mammal",
       "result": "agrees",
+      "script": "mammal",
       "quote": "The cat (Felis catus), also called domestic cat and house cat, is a small domesticated carnivorous mammal.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Cat",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Today, the domestic cat occurs across the globe and is valued by humans for companionship and its ability to kill vermin.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Pond",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
       "result": "agrees",
+      "script": "nature_not_alive",
       "quote": "A pond is a small, still, land-based body of water formed by pooling inside a depression, either naturally or artificially.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Pond",
       "field": "kind_of_nature",
       "approved": "water",
       "result": "agrees",
+      "script": "water",
       "quote": "A pond is a body of water smaller than a lake.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Crocodile",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "A crocodile is a large amphibious reptile.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Crocodile",
       "field": "kind_of_animal",
       "approved": "reptile",
       "result": "agrees",
+      "script": "reptile",
       "quote": "A crocodile is a large amphibious reptile.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Crocodile",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Present-day crocodiles range in size from African dwarf crocodiles that measure rarely over 5 feet (1.5 m) to saltwater crocodiles which can approach 23 feet (7 m).",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Rose",
       "field": "kind_of_thing",
       "approved": "plant",
       "result": "agrees",
+      "script": "plant",
       "quote": "A rose is either a woody perennial flowering plant of the genus Rosa (), in the family Rosaceae (), or the flower it bears.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Rose",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Species, cultivars and hybrids are all widely grown for their beauty and often are fragrant.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Rose",
       "field": "kind_of_plant",
       "approved": "flower",
       "result": "agrees",
+      "script": "flower",
       "quote": "A rose is either a woody perennial flowering plant of the genus Rosa (), in the family Rosaceae (), or the flower it bears.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Monkey",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Monkeys are tree-dwelling (arboreal) simians. They are in the primate order.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Monkey",
       "field": "kind_of_animal",
       "approved": "mammal",
       "result": "agrees",
+      "script": "mammal",
       "quote": "Monkey is a common name that may refer to most mammals of the infraorder Simiiformes, also known as simians.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Monkey",
       "field": "extinct",
       "approved": false,
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees_judged",
+      "script": false,
+      "quote": "",
+      "source": "",
+      "why": "The sources describe monkeys as living animals, including extant groups like Old World and New World monkeys."
     },
     {
       "thing": "Sea",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
       "result": "agrees",
+      "script": "nature_not_alive",
       "quote": "A sea is a very large body of salty water.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Sea",
       "field": "kind_of_nature",
       "approved": "water",
       "result": "agrees",
+      "script": "water",
       "quote": "A sea is a very large body of salty water.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Hen",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Chicken refers to the domesticated subspecies of the red junglefowl.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Hen",
       "field": "kind_of_animal",
       "approved": "bird",
       "result": "agrees",
+      "script": "bird",
       "quote": "Like other female birds, hens lay eggs.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Hen",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "It is raised in many places for its meat and eggs.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Tiger",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "The tiger (Panthera tigris) is a large cat and a member of the genus Panthera native to Asia.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Tiger",
       "field": "kind_of_animal",
       "approved": "mammal",
       "result": "agrees",
+      "script": "mammal",
       "quote": "The tiger (Panthera tigris) is the largest living member of the cat family, the Felidae.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Tiger",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "It is listed as Endangered on the IUCN Red List of Threatened Species, as its range is thought to have declined by 53% to 68% since the late 1990s.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Tree frog",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "A tree frog (or treefrog) is any species of frog that spends a major portion of its lifespan in trees, known as an arboreal state.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Tree frog",
       "field": "kind_of_animal",
       "approved": "amphibian",
       "result": "agrees",
+      "script": "amphibian",
       "quote": "Tree frogs are frogs that spend most of their life in trees.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Tree frog",
       "field": "extinct",
       "approved": false,
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees_judged",
+      "script": false,
+      "quote": "",
+      "source": "",
+      "why": "The sources describe tree frogs in the present tense as living frogs that mate, spawn, and inhabit trees today."
     },
     {
       "thing": "House lizard",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "The Common house gecko (Hemidactylus frenatus) is a gecko native to South and Southeast Asia and Near Oceania.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "House lizard",
       "field": "kind_of_animal",
       "approved": "reptile",
       "result": "agrees",
+      "script": "reptile",
       "quote": "The Common house gecko (Hemidactylus frenatus) is a gecko native to South and Southeast Asia and Near Oceania.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "House lizard",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "They grow to a length of between 7.5–15 cm (3–6 in), and live for about 7 years.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Spoon",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "Present day spoons are made from metal (notably stainless steel, flat silver or silverware, plated or solid), wood, porcelain or plastic.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Spoon",
@@ -1344,77 +1682,95 @@
       "result": "differs",
       "script": "tool",
       "quote": "A spoon is a tool for eating.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Rock",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
-      "result": "not_grounded",
-      "why": "no page was found for it"
+      "result": "agrees",
+      "script": "nature_not_alive",
+      "quote": "In geology, a rock (also called a stone) is any naturally occurring solid mass or aggregate of minerals or mineraloid matter.",
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Rock",
       "field": "kind_of_nature",
       "approved": "ground",
       "result": "not_grounded",
-      "why": "no page was found for it"
+      "why": "on a second reading, the sentence does not show it"
     },
     {
       "thing": "Cup",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "Cups may be made of pottery (including porcelain), glass, metal, wood, stone, polystyrene, plastic, lacquerware, or other materials.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Cup",
       "field": "kind_of_made_thing",
       "approved": "household",
       "result": "agrees",
+      "script": "household",
       "quote": "Modern household shapes of cups generally lack a stem, but this was not always the case.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Rabbit",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Rabbits, or bunnies, are small mammals in the family Leporidae",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Rabbit",
       "field": "kind_of_animal",
       "approved": "mammal",
       "result": "agrees",
+      "script": "mammal",
       "quote": "Rabbits, or bunnies, are small mammals in the family Leporidae",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Rabbit",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "They are familiar throughout the world as a small herbivore, a prey animal, a domesticated form of livestock, and a pet, having a widespread effect on ecologies and cultures.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Pumpkin plant",
       "field": "kind_of_thing",
       "approved": "plant",
       "result": "agrees",
+      "script": "plant",
       "quote": "A pumpkin is a type of a squash which is a fruit.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Pumpkin plant",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "but cultivars are now grown globally for culinary, decorative, and other culturally-specific purposes.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Pumpkin plant",
@@ -1428,8 +1784,10 @@
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "A car, or an automobile, is a motor vehicle with wheels.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Car",
@@ -1443,162 +1801,207 @@
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "A saw is a tool consisting of a tough blade, wire, or chain with a hard toothed edge used to cut through material.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Saw",
       "field": "kind_of_made_thing",
       "approved": "tool",
       "result": "agrees",
+      "script": "tool",
       "quote": "A saw is a tool used to cut things.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Horse",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "The horse (Equus ferus caballus) is a domesticated, one-toed, hoofed mammal.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Horse",
       "field": "kind_of_animal",
       "approved": "mammal",
       "result": "agrees",
+      "script": "mammal",
       "quote": "The horse (Equus ferus caballus) is a domesticated, one-toed, hoofed mammal.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Horse",
       "field": "extinct",
       "approved": false,
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees_judged",
+      "script": false,
+      "quote": "",
+      "source": "",
+      "why": "The sources describe horses as domesticated animals with modern breeds and feral populations, so they are still living."
     },
     {
       "thing": "Star",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees_judged",
+      "script": "nature_not_alive",
+      "quote": "",
+      "source": "",
+      "why": "A star is a glowing ball of plasma in space, a non-living natural object."
     },
     {
       "thing": "Star",
       "field": "kind_of_nature",
       "approved": "sky",
       "result": "not_grounded",
-      "why": "no answer"
+      "why": "the pages do not show it: sources do not say sky, water, land, or ground"
     },
     {
       "thing": "Monitor lizard",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Monitor lizards are lizards in the genus Varanus, the only extant genus in the family Varanidae.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Monitor lizard",
       "field": "kind_of_animal",
       "approved": "reptile",
       "result": "agrees",
+      "script": "reptile",
       "quote": "Monitor lizards are lizards in the genus Varanus, the only extant genus in the family Varanidae.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Monitor lizard",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Monitor lizards are lizards in the genus Varanus, the only extant genus in the family Varanidae.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Lotus",
       "field": "kind_of_thing",
       "approved": "plant",
-      "result": "not_grounded",
-      "why": "no page was found for it"
+      "result": "agrees",
+      "script": "plant",
+      "quote": "Lotus identifies various plant taxa:",
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Lotus",
       "field": "extinct",
       "approved": false,
-      "result": "not_grounded",
-      "why": "no page was found for it"
+      "result": "agrees",
+      "script": false,
+      "quote": "Nelumbo, a genus of aquatic plants with showy flowers known as lotuses, having two extant species:",
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Lotus",
       "field": "kind_of_plant",
       "approved": "flower",
-      "result": "not_grounded",
-      "why": "no page was found for it"
+      "result": "agrees",
+      "script": "flower",
+      "quote": "Nelumbo, a genus of aquatic plants with showy flowers known as lotuses, having two extant species:",
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Balloon",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "Modern-day balloons are made from materials such as rubber, polychloroprene, or a nylon fabric, and can come in many different colors.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Balloon",
       "field": "kind_of_made_thing",
       "approved": "toy",
       "result": "agrees",
+      "script": "toy",
       "quote": "Balloons can also be filled with water, known as \"water balloons\", are a kind of toy, best known for its use of water balloon fights.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Kite",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "A kite is a flying object that is attached to the ground by a rope, or ropes.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Kite",
       "field": "kind_of_made_thing",
       "approved": "toy",
       "result": "agrees",
+      "script": "toy",
       "quote": "Kites can be flown for fun, or in competitions.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Desert",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
       "result": "agrees",
+      "script": "nature_not_alive",
       "quote": "A desert is a landscape where little precipitation occurs and, consequently, living conditions create unique biomes and ecosystems.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Desert",
       "field": "kind_of_nature",
       "approved": "land",
       "result": "agrees",
+      "script": "land",
       "quote": "A desert is an arid (dry) biome.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Tomato plant",
       "field": "kind_of_thing",
       "approved": "plant",
       "result": "agrees",
+      "script": "plant",
       "quote": "The tomato (US: , UK: ; Solanum lycopersicum) is a plant whose fruit is an edible berry that is eaten as a vegetable.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Tomato plant",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Tomato plants are vines, largely annual, and vulnerable to frost, though sometimes living longer in greenhouses.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Tomato plant",
@@ -1612,111 +2015,140 @@
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Frogs are amphibians and vertebrates of the order Anura.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Frog",
       "field": "kind_of_animal",
       "approved": "amphibian",
       "result": "agrees",
+      "script": "amphibian",
       "quote": "Frogs are amphibians and vertebrates of the order Anura.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Frog",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Frogs live all over the world.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Toy car",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "A model car, or toy car, is a miniature representation of an automobile.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Toy car",
       "field": "kind_of_made_thing",
       "approved": "toy",
       "result": "agrees",
+      "script": "toy",
       "quote": "A model car, or toy car, is a miniature representation of an automobile.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Beach",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
       "result": "agrees",
+      "script": "nature_not_alive",
       "quote": "A beach is a landform alongside a body of water which consists of loose particles.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Beach",
       "field": "kind_of_nature",
       "approved": "land",
       "result": "agrees",
+      "script": "land",
       "quote": "A beach is a landform alongside a body of water which consists of loose particles.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Brinjal plant",
       "field": "kind_of_thing",
       "approved": "plant",
       "result": "agrees",
+      "script": "plant",
       "quote": "Solanum melongena is a plant species in the nightshade family Solanaceae, grown worldwide for its edible fruit, typically used as a vegetable in cooking.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Brinjal plant",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Solanum melongena is a plant species in the nightshade family Solanaceae, grown worldwide for its edible fruit, typically used as a vegetable in cooking.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Brinjal plant",
       "field": "kind_of_plant",
       "approved": "vegetable",
       "result": "agrees",
+      "script": "vegetable",
       "quote": "Solanum melongena is a plant species in the nightshade family Solanaceae, grown worldwide for its edible fruit, typically used as a vegetable in cooking.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Bamboo",
       "field": "kind_of_thing",
       "approved": "plant",
       "result": "agrees",
+      "script": "plant",
       "quote": "Bamboos are a diverse group of mostly evergreen perennial flowering plants making up the subfamily Bambusoideae of the grass family Poaceae.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Bamboo",
       "field": "extinct",
       "approved": false,
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees_judged",
+      "script": false,
+      "quote": "",
+      "source": "",
+      "why": "The sources describe bamboo as a living, growing plant with many species, so it is still living."
     },
     {
       "thing": "Bamboo",
       "field": "kind_of_plant",
       "approved": "grass_grain",
       "result": "agrees",
+      "script": "grass_grain",
       "quote": "Bamboo is a name for over 1,400 species of giant grasses in 115 different genera.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Train",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "A train (from Old French trahiner, from Latin trahere, \"to pull, to draw\") is a series of connected vehicles that run along a railway track and transport people or freight.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Train",
@@ -1729,111 +2161,138 @@
       "thing": "Sand",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
-      "result": "not_grounded",
-      "why": "the sentence it quoted is not in the saved page"
+      "result": "agrees_judged",
+      "script": "nature_not_alive",
+      "quote": "",
+      "source": "",
+      "why": "Sand is a naturally occurring granular material of rock and mineral particles, not a living thing or something people make."
     },
     {
       "thing": "Sand",
       "field": "kind_of_nature",
       "approved": "ground",
       "result": "not_grounded",
-      "why": "no answer"
+      "why": "the sentence it quoted is not in the saved page"
     },
     {
       "thing": "Cobra",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Cobra is the common name of various venomous snakes, most of which belong to the genus Naja.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Cobra",
       "field": "kind_of_animal",
       "approved": "reptile",
       "result": "agrees",
+      "script": "reptile",
       "quote": "Cobra is a name of a snake.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Cobra",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Cobras usually live in tropical and desert regions of Asia and Africa.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Hill",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
       "result": "agrees",
+      "script": "nature_not_alive",
       "quote": "A hill is a landform that extends above the surrounding terrain.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Hill",
       "field": "kind_of_nature",
       "approved": "land",
       "result": "agrees",
+      "script": "land",
       "quote": "A hill is a landform that extends above the surrounding terrain.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Catla fish",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Catla (Labeo catla; Bengali: কাতলা, romanized: kātlā) also known as the major South Asian carp, is an economically important South Asian freshwater fish in the carp family Cyprinidae.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Catla fish",
       "field": "kind_of_animal",
       "approved": "fish",
       "result": "agrees",
+      "script": "fish",
       "quote": "Catla (Labeo catla; Bengali: কাতলা, romanized: kātlā) also known as the major South Asian carp, is an economically important South Asian freshwater fish in the carp family Cyprinidae.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Catla fish",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "It is native to rivers and lakes in northern India, Bangladesh, Myanmar, Nepal, and Pakistan, but has also been introduced elsewhere in South Asia and is commonly farmed.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Chameleon",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Chameleons are  a family of lizards.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Chameleon",
       "field": "kind_of_animal",
       "approved": "reptile",
       "result": "agrees",
+      "script": "reptile",
       "quote": "Chameleons are  a family of lizards.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Chameleon",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Chameleons are often kept as household pets.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Axe",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "An axe (or ax) is an ancient tool.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Axe",
@@ -1847,142 +2306,180 @@
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Dogs are mammals, usually to be kept as pets, or work on farms or for the police.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Dog",
       "field": "kind_of_animal",
       "approved": "mammal",
       "result": "agrees",
+      "script": "mammal",
       "quote": "Dogs are mammals, usually to be kept as pets, or work on farms or for the police.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Dog",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "The global dog population is estimated at 700 million to 1 billion, distributed around the world.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Grass",
       "field": "kind_of_thing",
       "approved": "plant",
       "result": "agrees",
+      "script": "plant",
       "quote": "Grass is a type of plant with narrow leaves growing from the base.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Grass",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "There are more than 12,000 species now.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Grass",
       "field": "kind_of_plant",
       "approved": "grass_grain",
       "result": "agrees",
+      "script": "grass_grain",
       "quote": "The true grasses include cereals, bamboo and the grasses of lawns (turf) and grassland.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Rohu fish",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "The rohu, rui, ruhi, rou or roho labeo (Labeo rohita) is a species of fish of the carp family, found in rivers in South Asia.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Rohu fish",
       "field": "kind_of_animal",
       "approved": "fish",
       "result": "agrees",
+      "script": "fish",
       "quote": "The rohu, rui, ruhi, rou or roho labeo (Labeo rohita) is a species of fish of the carp family, found in rivers in South Asia.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Rohu fish",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "It is a large omnivore and extensively used in aquaculture.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Shark",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Sharks are a superorder of fish.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Shark",
       "field": "kind_of_animal",
       "approved": "fish",
       "result": "agrees",
+      "script": "fish",
       "quote": "Sharks are a superorder of fish.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Shark",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "They are found in all seas and are common to depths up to 2,000 metres (6,600 ft).",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Moon",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees_judged",
+      "script": "nature_not_alive",
+      "quote": "",
+      "source": "",
+      "why": "The Moon is a natural satellite, a rocky body in space, not an animal, plant, or something people made."
     },
     {
       "thing": "Moon",
       "field": "kind_of_nature",
       "approved": "sky",
-      "result": "not_grounded",
-      "why": "no answer"
+      "result": "agrees",
+      "script": "sky",
+      "quote": "The Moon is the brightest celestial object in Earth's night sky because of its large apparent size,",
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Sunflower",
       "field": "kind_of_thing",
       "approved": "plant",
       "result": "agrees",
+      "script": "plant",
       "quote": "The common sunflower (Helianthus annuus) is a large annual forb in the daisy family Asteraceae.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Sunflower",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "The common sunflower (Helianthus annuus) is a living annual plant in the family Asteraceae, with a large flower head (capitulum).",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Sunflower",
       "field": "kind_of_plant",
       "approved": "flower",
       "result": "agrees",
+      "script": "flower",
       "quote": "The common sunflower (Helianthus annuus) is a living annual plant in the family Asteraceae, with a large flower head (capitulum).",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Hammer",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "A hammer is a tool for putting nails into objects such as wood.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Hammer",
@@ -1996,98 +2493,127 @@
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Coccinellidae ( ) is a widespread family of small beetles.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Ladybug",
       "field": "kind_of_animal",
       "approved": "insect",
       "result": "agrees",
+      "script": "insect",
       "quote": "Lady beetles are the Coccinellidae, a family of beetles.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Ladybug",
       "field": "extinct",
       "approved": false,
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees",
+      "script": false,
+      "quote": "Coccinellids are found worldwide, with over 5,000 species.",
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Rice plant",
       "field": "kind_of_thing",
       "approved": "plant",
       "result": "agrees",
+      "script": "plant",
       "quote": "Rice is the seed of the grass species Oryza sativa (Asian rice)—or, less commonly, Oryza glaberrima (African rice).",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Rice plant",
       "field": "extinct",
       "approved": false,
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees_judged",
+      "script": false,
+      "quote": "",
+      "source": "",
+      "why": "Rice is described as a widely grown and eaten crop, so the plant is still living."
     },
     {
       "thing": "Rice plant",
       "field": "kind_of_plant",
       "approved": "grass_grain",
       "result": "agrees",
+      "script": "grass_grain",
       "quote": "Rice is a cereal grain and, in its domesticated form, is the staple food of over half of the world's population, particularly in Africa and Asia.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Toad",
       "field": "kind_of_thing",
       "approved": "animal",
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees_judged",
+      "script": "animal",
+      "quote": "",
+      "source": "",
+      "why": "The sources describe toads as frogs, which are amphibians and vertebrates, so a toad is an animal."
     },
     {
       "thing": "Toad",
       "field": "kind_of_animal",
       "approved": "amphibian",
       "result": "not_grounded",
-      "why": "no answer"
+      "why": "on a second reading, the sentence does not show it"
     },
     {
       "thing": "Toad",
       "field": "extinct",
       "approved": false,
-      "result": "not_grounded",
-      "why": "no answer"
+      "result": "agrees_judged",
+      "script": false,
+      "quote": "",
+      "source": "",
+      "why": "The sources describe toads as living animals with habitats and adaptations, not as extinct."
     },
     {
       "thing": "Duck",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Ducks are birds in the family Anatidae.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Duck",
       "field": "kind_of_animal",
       "approved": "bird",
       "result": "agrees",
+      "script": "bird",
       "quote": "Ducks are birds in the family Anatidae.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Duck",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Ducks are mostly aquatic birds, and may be found in both fresh water and sea water.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Rain",
       "field": "kind_of_thing",
       "approved": "nature_not_alive",
-      "result": "not_grounded",
-      "why": "on a second reading, the sentence does not show it"
+      "result": "agrees",
+      "script": "nature_not_alive",
+      "quote": "Rain is a kind of precipitation. Precipitation is any kind of water that falls from clouds in the sky, like rain, hail, sleet and snow.",
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Rain",
@@ -2096,64 +2622,81 @@
         "sky",
         "water"
       ],
-      "result": "not_grounded",
-      "why": "no answer"
+      "result": "agrees",
+      "script": "water",
+      "quote": "Precipitation is any kind of water that falls from clouds in the sky, like rain, hail, sleet and snow.",
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Snake",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Snakes, otherwise known as serpentes, are reptiles.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Snake",
       "field": "kind_of_animal",
       "approved": "reptile",
       "result": "agrees",
+      "script": "reptile",
       "quote": "Snakes, otherwise known as serpentes, are reptiles.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Snake",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Snakes are mostly terrestrial with a cosmopolitan distribution, and extant species are found on every continent except Antarctica, and on most islands",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Neem tree",
       "field": "kind_of_thing",
       "approved": "plant",
       "result": "agrees",
+      "script": "plant",
       "quote": "Neem  is a tree in the mahogany family Meliaceae.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Neem tree",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "It is native to the Indian subcontinent and to parts of Southeast Asia, but is naturalized and grown around the world in tropical and subtropical areas.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Neem tree",
       "field": "kind_of_plant",
       "approved": "tree",
       "result": "agrees",
+      "script": "tree",
       "quote": "Neem  is a tree in the mahogany family Meliaceae.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Neem tree",
       "field": "tree_academic",
       "approved": true,
       "result": "agrees",
+      "script": true,
       "quote": "Azadirachta indica, commonly known as neem, margosa, nimtree or Indian lilac, is a tree in the Mahogany family Meliaceae.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Marigold",
@@ -2181,16 +2724,20 @@
       "field": "kind_of_thing",
       "approved": "plant",
       "result": "agrees",
+      "script": "plant",
       "quote": "Chili pepper is the fruit of a series of plants called Capsicum (nightshade family).",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Chilli plant",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Chilis are now grown all over the world, but originally, they came from Mexico.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Chilli plant",
@@ -2204,64 +2751,80 @@
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Owls are birds from the order Strigiformes (), which includes over 200 species of mostly solitary and nocturnal birds of prey typified by an upright stance, a large, broad head, binocular vision, binaural hearing, sharp talons, and feathers adapted for silent flight.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Owl",
       "field": "kind_of_animal",
       "approved": "bird",
       "result": "agrees",
-      "quote": "Owls are birds in the order Strigiformes.",
-      "source": "wikipedia_simple"
+      "script": "bird",
+      "quote": "Owls are birds from the order Strigiformes (), which includes over 200 species of mostly solitary and nocturnal birds of prey typified by an upright stance, a large, broad head, binocular vision, binaural hearing, sharp talons, and feathers adapted for silent flight.",
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Owl",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
-      "quote": "They are found in all parts of the world except Antarctica, most of Greenland, and some small islands.",
-      "source": "wikipedia_simple"
+      "script": false,
+      "quote": "They are found in all regions of the Earth except the polar ice caps and some remote islands.",
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Chair",
       "field": "kind_of_thing",
       "approved": "made_by_people",
       "result": "agrees",
+      "script": "made_by_people",
       "quote": "A Chair is a piece of furniture that is usually made out of wood or plastic.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Chair",
       "field": "kind_of_made_thing",
       "approved": "household",
       "result": "agrees",
+      "script": "household",
       "quote": "A Chair is a piece of furniture that is usually made out of wood or plastic.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "why": ""
     },
     {
       "thing": "Giraffe",
       "field": "kind_of_thing",
       "approved": "animal",
       "result": "agrees",
+      "script": "animal",
       "quote": "Giraffes (genus Giraffa) are large African hoofed mammals.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Giraffe",
       "field": "kind_of_animal",
       "approved": "mammal",
       "result": "agrees",
+      "script": "mammal",
       "quote": "Giraffes (genus Giraffa) are large African hoofed mammals.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     },
     {
       "thing": "Giraffe",
       "field": "extinct",
       "approved": false,
       "result": "agrees",
+      "script": false,
       "quote": "Giraffes are still found in many national parks and game reserves, and estimates as of 2016 indicate there are approximately 97,500 members of Giraffa in the wild.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "why": ""
     }
   ]
 }

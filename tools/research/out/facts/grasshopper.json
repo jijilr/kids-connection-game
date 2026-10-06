@@ -4,22 +4,22 @@
     "kind_of_thing": {
       "value": "animal",
       "quote": "Grasshoppers are insects with long, powerful back legs which they use for jumping.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "basis": "sourced"
     },
     "kind_of_animal": {
       "value": "insect",
       "quote": "Grasshoppers are insects with long, powerful back legs which they use for jumping.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "The sources describe grasshoppers as living insects that are active, eat plants, and interact with humans today."
     }
   },
-  "weak_spots": [
-    {
-      "field": "extinct",
-      "why": "on a second reading, the sentence does not show it",
-      "value": "false",
-      "quote": "Grasshoppers are diurnal insects, meaning they are most active during the day time."
-    }
-  ],
+  "weak_spots": [],
   "pages": [
     {
       "id": "wikipedia_en",

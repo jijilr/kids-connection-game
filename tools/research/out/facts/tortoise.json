@@ -4,22 +4,22 @@
     "kind_of_thing": {
       "value": "animal",
       "quote": "Tortoises ( TOR-təs-iz) are reptiles of the family Testudinidae of the order Testudines (Latin for \"tortoise\").",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "basis": "sourced"
     },
     "kind_of_animal": {
       "value": "reptile",
       "quote": "Tortoises ( TOR-təs-iz) are reptiles of the family Testudinidae of the order Testudines (Latin for \"tortoise\").",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "The sources describe tortoises as living animals with current species and lifespans, so they are still living."
     }
   },
-  "weak_spots": [
-    {
-      "field": "extinct",
-      "why": "on a second reading, the sentence does not show it",
-      "value": "false",
-      "quote": "Tortoises are the longest-living land animals in the world, although the longest-living species of tortoise is a matter of debate."
-    }
-  ],
+  "weak_spots": [],
   "pages": [
     {
       "id": "wikipedia_en",

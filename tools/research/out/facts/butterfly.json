@@ -4,22 +4,22 @@
     "kind_of_thing": {
       "value": "animal",
       "quote": "Butterflies are winged insects from the lepidopteran superfamily Papilionoidea, characterised by large, often brightly coloured wings that often fold together when at rest, and a conspicuous, fluttering flight.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "basis": "sourced"
     },
     "kind_of_animal": {
       "value": "insect",
       "quote": "A butterfly is a (usually) day-flying insect of the order Lepidoptera.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "The sources describe butterflies as living insects with ongoing life cycles, migrations, and interactions with plants and predators, so they are still living."
     }
   },
-  "weak_spots": [
-    {
-      "field": "extinct",
-      "why": "on a second reading, the sentence does not show it",
-      "value": "false",
-      "quote": "Butterflies are winged insects from the lepidopteran superfamily Papilionoidea, characterised by large, often brightly coloured wings that often fold together when at rest, and a conspicuous, fluttering flight."
-    }
-  ],
+  "weak_spots": [],
   "pages": [
     {
       "id": "wikipedia_en",

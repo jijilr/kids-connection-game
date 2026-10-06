@@ -194,7 +194,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "Massive skull, narrow snout, short deep neck, long hindlimbs; bipedal with heavy tail."
+        "why": "Massive skull, narrow snout, short deep neck, long hindlimbs; no crest or sail."
       }
     },
     {
@@ -372,7 +372,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "Low skull, downward-pointing chin, ridge-like crest in front of eye."
+        "why": "Low skull, downward chin, ridge-like crest; no sail or horns."
       }
     },
     {
@@ -551,6 +551,11 @@
           "source": "wikipedia_en"
         },
         {
+          "claim": "It had a long tail.",
+          "quote": "It was a bipedal, feathered carnivore with a long tail and an enlarged sickle-shaped claw on each hindfoot, which is thought to have been used to tackle and restrain prey.",
+          "source": "wikipedia_en"
+        },
+        {
           "claim": "It had feathers.",
           "quote": "Velociraptor was warm blooded and had feathers.",
           "source": "wikipedia_simple"
@@ -560,7 +565,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "Upturned snout, long three-fingered hands, sickle claw, feathers."
+        "why": "Upturned snout, long three-fingered hands, sickle claw, long tail; feathers."
       }
     },
     {
@@ -742,7 +747,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "Horns above eyes, barrel chest, long slightly sloping tail."
+        "why": "Horns above eyes, barrel chest, long sloping tail; no sail or massive skull."
       }
     },
     {
@@ -923,7 +928,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "Crocodile-like skull, back sail, paddle-like tail, head crest."
+        "why": "Crocodile-like skull, back sail, paddle-like tail, head crest; no feathers or armour."
       }
     },
     {
@@ -1107,7 +1112,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "long neck, longer forelimbs, steep trunk"
+        "why": "Long neck, longer forelimbs, steep trunk and short tail."
       }
     },
     {
@@ -1282,7 +1287,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "whip tail, squared snout, arched back"
+        "why": "Whip-like tail, squared-off snout, arched back."
       }
     },
     {
@@ -1452,9 +1457,9 @@
           "source": "wikipedia_en"
         },
         {
-          "claim": "Its front limbs were a little shorter than its back limbs, so its body was mostly horizontal.",
-          "quote": "Their forelimbs were slightly shorter than their hind limbs, resulting in a largely horizontal posture.",
-          "source": "wikipedia_en"
+          "claim": "Its head was short.",
+          "quote": "It had a short 6 ft long head.",
+          "source": "wikipedia_simple"
         },
         {
           "claim": "Its tail was about 55% of its total body length.",
@@ -1466,7 +1471,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "whip tail, horizontal body, tail half of length"
+        "why": "Whip-like tail, short head, tail about 55% of body length."
       }
     },
     {
@@ -1639,7 +1644,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "long neck, four legs, long tail"
+        "why": "Long neck, long tail, four-legged stance."
       }
     },
     {
@@ -1815,7 +1820,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "tall neck spines, bowed spines, paddle-shaped spines"
+        "why": "Two parallel rows of tall spines, neck spines bowed backward, paddle-shaped spines."
       }
     },
     {
@@ -1996,7 +2001,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "bony frill, three horns, beak"
+        "why": "Large bony frill, three horns, beak."
       }
     },
     {
@@ -2149,8 +2154,8 @@
       "group": "land_grazer",
       "must_show": [
         {
-          "claim": "Ankylosaurus was covered in armor plates, with bony half-rings on its neck.",
-          "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
+          "claim": "Ankylosaurus had a wide, low skull.",
+          "quote": "It had a wide, low skull, with two horns pointing backward from the back of the head, and two horns below these that pointed backward and down.",
           "source": "wikipedia_en"
         },
         {
@@ -2159,8 +2164,13 @@
           "source": "wikipedia_en"
         },
         {
-          "claim": "Ankylosaurus had a wide, low skull.",
-          "quote": "It had a wide, low skull, with two horns pointing backward from the back of the head, and two horns below these that pointed backward and down.",
+          "claim": "Ankylosaurus had a broad muzzle.",
+          "quote": "Its broad muzzle indicates it was a non-selective browser.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "Ankylosaurus was covered in armor plates, with bony half-rings on its neck.",
+          "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
           "source": "wikipedia_en"
         }
       ],
@@ -2168,7 +2178,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "armor plates, tail club, wide low skull"
+        "why": "Wide low skull, tail club, broad muzzle; armor plates."
       }
     },
     {
@@ -2344,8 +2354,8 @@
           "source": "wikipedia_en"
         },
         {
-          "claim": "Stegosaurus had short fore limbs and long hind limbs.",
-          "quote": "They were large, heavily built, herbivorous quadrupeds with rounded backs, short fore limbs, long hind limbs, and tails held high in the air.",
+          "claim": "Stegosaurus had a short neck and a small head.",
+          "quote": "It had a short neck and a small head, meaning it most likely ate low-lying bushes and shrubs.",
           "source": "wikipedia_en"
         }
       ],
@@ -2353,7 +2363,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "back plates, tail spikes, short forelimbs"
+        "why": "Double row of kite-shaped plates, tail spikes, short neck and small head."
       }
     },
     {
@@ -2513,8 +2523,8 @@
           "source": "wikipedia_en"
         },
         {
-          "claim": "The back of the dome had bony knobs, and short bony spikes stuck up from the snout.",
-          "quote": "The dome's rear aspect was edged with bony knobs and short bony spikes projected upwards from the snout.",
+          "claim": "Its head had a small muzzle that ended in a pointed beak.",
+          "quote": "Pachycephalosaurus had a small muzzle that ended in a pointed beak.",
           "source": "wikipedia_en"
         }
       ],
@@ -2522,7 +2532,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "bipedal, bony dome, knobs and snout spikes"
+        "why": "Bipedal stance, bony dome, small muzzle with pointed beak."
       }
     },
     {
@@ -2708,16 +2718,16 @@
           "source": "wikipedia_simple"
         },
         {
-          "claim": "Parasaurolophus could walk on either two legs or four.",
-          "quote": "Like other hadrosaurids, it was able to walk on either two legs or four.",
-          "source": "wikipedia_en"
+          "claim": "It had a beak and toothed jaws.",
+          "quote": "Teeth:\nbeak and toothed jaws",
+          "source": "nhm_dino_directory"
         }
       ],
       "told_apart_by": {
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "long tubular crest, curved crest, two or four legs"
+        "why": "Long tubular crest, beak and toothed jaws."
       }
     },
     {
@@ -2865,8 +2875,8 @@
           "source": "wikipedia_en"
         },
         {
-          "claim": "Its four limbs were shaped into paddles.",
-          "quote": "Its four limbs were shaped into paddles to steer the animal underwater.",
+          "claim": "Its skull was conical and tapered to a short snout that reached a little past the frontmost teeth.",
+          "quote": "The skull of Mosasaurus is conical and tapers off to a short snout which extends a little beyond the frontmost teeth.",
           "source": "wikipedia_en"
         },
         {
@@ -2879,7 +2889,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "Tail with downward fluke, paddle limbs, deep barrel chest."
+        "why": "long tail with fluke, conical skull, deep barrel chest"
       }
     },
     {
@@ -3024,18 +3034,18 @@
       "group": "swimmer",
       "must_show": [
         {
+          "claim": "Kronosaurus had a short tail.",
+          "quote": "Like all plesiosaurs, Kronosaurus has four paddle-like limbs, a short tail and, like most pliosaurids, a long head and a short neck.",
+          "source": "wikipedia_en"
+        },
+        {
           "claim": "Kronosaurus had a long head.",
           "quote": "Like all plesiosaurs, Kronosaurus has four paddle-like limbs, a short tail and, like most pliosaurids, a long head and a short neck.",
           "source": "wikipedia_en"
         },
         {
-          "claim": "Kronosaurus had a short neck.",
-          "quote": "Like all plesiosaurs, Kronosaurus has four paddle-like limbs, a short tail and, like most pliosaurids, a long head and a short neck.",
-          "source": "wikipedia_en"
-        },
-        {
-          "claim": "The back pair of flippers was bigger than the front pair.",
-          "quote": "The limbs of Kronosaurus were modified into flippers, with the back pair larger than the front.",
+          "claim": "The lower jaw bones joined in a long, spoon-shaped front part.",
+          "quote": "The mandibular symphysis of Kronosaurus is elongated and spatulate (spoon-shaped), and like its close relatives Brachauchenius and Megacephalosaurus, it contains up to six pairs of teeth.",
           "source": "wikipedia_en"
         }
       ],
@@ -3043,7 +3053,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "Long head, short neck, bigger rear flippers."
+        "why": "short tail, long head, spoon-shaped lower jaw"
       }
     },
     {
@@ -3172,7 +3182,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "Dorsal fin, longer front limbs, skull crest."
+        "why": "dorsal fin, longer front limbs, sagittal crest"
       }
     },
     {
@@ -3345,7 +3355,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "Two-lobed tail fin, toothless snout knob, long conical snout."
+        "why": "two-lobed tail fin, toothless snout knob, long conical snout"
       }
     },
     {
@@ -3469,8 +3479,8 @@
           "source": "wikipedia_en"
         },
         {
-          "claim": "Plesiosaurus had two pairs of large, elongated paddles.",
-          "quote": "Measuring around 3.5 m (11 ft) long, it is distinguishable by its small head, long and slender neck, broad turtle-like body, a short tail, and two pairs of large, elongated paddles.",
+          "claim": "Plesiosaurus had a U-shaped jaw.",
+          "quote": "Its U-shaped jaw and sharp teeth would have been like a fish trap.",
           "source": "wikipedia_en"
         }
       ],
@@ -3478,7 +3488,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "Long slender neck, broad turtle-like body, large elongated paddles."
+        "why": "long slender neck, broad turtle-like body, U-shaped jaw"
       }
     },
     {
@@ -3632,7 +3642,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "Extremely long neck, slender triangular skull, longer front paddles."
+        "why": "extremely long neck, slender triangular skull, longer front paddles"
       }
     },
     {
@@ -3779,18 +3789,18 @@
       "group": "flyer",
       "must_show": [
         {
-          "claim": "Its wings were made of a skin and muscle membrane stretching from its long fourth finger to its hind limbs.",
-          "quote": "Like all pterosaurs, Pterodactylus had wings formed by a skin and muscle membrane stretching from its elongated fourth finger to its hind limbs.",
-          "source": "wikipedia_en"
-        },
-        {
           "claim": "The skulls of adult Pterodactylus were long and thin.",
           "quote": "The skulls of adult Pterodactylus were long and thin, with about 90 narrow and conical teeth.",
           "source": "wikipedia_en"
         },
         {
-          "claim": "It had a crest on its skull made mainly of soft tissues.",
-          "quote": "Pterodactylus, like related pterosaurs, had a crest on its skull composed mainly of soft tissues.",
+          "claim": "The skull and jaws were straight.",
+          "quote": "Another autapomorphy that Pterodactylus has is that the skull and jaws were straight, which are unlike the upwardly curved jaws seen in the related ctenochasmatids.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "The teeth went back from the tips of both jaws and got smaller farther from the jaw tips.",
+          "quote": "The teeth extended back from the tips of both jaws, and became smaller farther away from the jaw tips.",
           "source": "wikipedia_en"
         }
       ],
@@ -3798,7 +3808,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "long thin skull, soft-tissue crest, wing membrane on long fourth finger"
+        "why": "Long thin straight skull with many small teeth; no crest shown."
       }
     },
     {
@@ -3946,11 +3956,6 @@
       "group": "flyer",
       "must_show": [
         {
-          "claim": "Pteranodon had a big crest at the back of its head.",
-          "quote": "Pteranodon had a big crest at the back of its head.",
-          "source": "wikipedia_simple"
-        },
-        {
           "claim": "Pteranodon had no teeth in its long mouth.",
           "quote": "It had no teeth in its long mouth, and it had a small pouch like a pelican at the back of its jaw.",
           "source": "wikipedia_simple"
@@ -3959,13 +3964,18 @@
           "claim": "The upper jaw, which was longer than the lower jaw, was curved upward.",
           "quote": "The upper jaw, which was longer than the lower jaw, was curved upward; while this normally has been attributed only to the upward-curving beak, one specimen (UALVP 24238) has a curvature corresponding with the beak widening towards the tip.",
           "source": "wikipedia_en"
+        },
+        {
+          "claim": "Pteranodon had a big crest at the back of its head.",
+          "quote": "Pteranodon had a big crest at the back of its head.",
+          "source": "wikipedia_simple"
         }
       ],
       "told_apart_by": {
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "large bony head crest, toothless beak, upward-curved upper jaw"
+        "why": "Toothless long beak with upward-curved upper jaw and big head crest."
       }
     },
     {
@@ -4129,13 +4139,18 @@
           "source": "wikipedia_simple"
         },
         {
-          "claim": "It was covered in hair-like filaments called pycnofibres.",
-          "quote": "As a pterosaur, Quetzalcoatlus would have been covered in hair-like filaments called pycnofibres, and had extensive wing-membranes, which would have been distended by a long wing-finger.",
-          "source": "wikipedia_en"
+          "claim": "It had a long beak with no teeth.",
+          "quote": "The feeding habits of Quetzalcoatlus (which had a long beak with no teeth) are unknown.",
+          "source": "wikipedia_simple"
         },
         {
           "claim": "It had a crest at the base of the beak.",
           "quote": "At the base of the beak, formed from the premaxilla, was a crest, referred to by some authors as a sagittal crest.",
+          "source": "wikipedia_en"
+        },
+        {
+          "claim": "It was covered in hair-like filaments called pycnofibres.",
+          "quote": "As a pterosaur, Quetzalcoatlus would have been covered in hair-like filaments called pycnofibres, and had extensive wing-membranes, which would have been distended by a long wing-finger.",
           "source": "wikipedia_en"
         }
       ],
@@ -4143,7 +4158,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "long neck, pycnofibre body covering, crest at base of beak"
+        "why": "Long neck, long toothless beak, crest at beak base; pycnofibres."
       }
     },
     {
@@ -4301,7 +4316,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "giant boid snake"
+        "why": "giant boid snake body"
       }
     },
     {
@@ -4390,7 +4405,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "very long snake"
+        "why": "very long snake body"
       }
     },
     {
@@ -4530,6 +4545,11 @@
           "source": "wikipedia_en"
         },
         {
+          "claim": "The jaws had needle-like teeth angled forward and a curved, sharp, beak-like tip without teeth.",
+          "quote": "The jaws of Rhamphorhynchus housed needle-like teeth, which were angled forward, with a curved, sharp, beak-like tip lacking teeth.",
+          "source": "wikipedia_simple"
+        },
+        {
           "claim": "Its body was covered with hairs.",
           "quote": "Like other pterosaurs, its body was covered with hairs, which suggests it had temperature regulation ('hot-blooded') and a high rate of metabolism.",
           "source": "wikipedia_simple"
@@ -4539,7 +4559,7 @@
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "long stiff tail with vane, hairy body"
+        "why": "Long stiff tail with vane and beak-tipped jaws with needle teeth."
       }
     },
     {
@@ -4692,21 +4712,21 @@
           "source": "wikipedia_en"
         },
         {
-          "claim": "Dimorphodon had proportionally short wings.",
-          "quote": "The body structure of Dimorphodon displays many \"primitive\" characteristics, such as, according to Owen, a very small brain-pan and proportionally short wings.",
-          "source": "wikipedia_en"
-        },
-        {
           "claim": "Dimorphodon had a big head, a small brain, a tall beak, and two types of teeth.",
           "quote": "It had a big head, a small brain, a tall beak, and two types of teeth.",
           "source": "wikipedia_simple"
+        },
+        {
+          "claim": "Dimorphodon had proportionally short wings.",
+          "quote": "The body structure of Dimorphodon displays many \"primitive\" characteristics, such as, according to Owen, a very small brain-pan and proportionally short wings.",
+          "source": "wikipedia_en"
         }
       ],
       "told_apart_by": {
         "judge": "deepseek-flash",
         "model": "deepseek-flash",
         "date": "2026-10-06",
-        "why": "large bulky skull, short wings, tall beak"
+        "why": "Large bulky tall-beaked skull, short wings, long tail."
       }
     }
   ]

@@ -1,15 +1,43 @@
 {
   "name": "Table",
-  "fields": {},
-  "weak_spots": [
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A table is a piece of furniture with a raised flat top and is supported most commonly by 1 to 4 legs (although some can have more).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "household",
+      "quote": "A table is a piece of furniture with a raised flat top and is supported most commonly by 1 to 4 legs (although some can have more).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
     {
-      "field": "everything",
-      "why": "no page was found for it"
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Table_(furniture)",
+      "title": "Table (furniture)",
+      "asked_for": "Table (furniture)",
+      "revision": 1342499022,
+      "fetched_on": "2026-10-06",
+      "sha256": "35f404176739e9650a723c4bdc5431591c31c198319512382d165326e72d7a8f"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Table_(furniture)",
+      "title": "Table (furniture)",
+      "asked_for": "Table (furniture)",
+      "revision": 10844061,
+      "fetched_on": "2026-10-06",
+      "sha256": "39646823c27ad09f7e618fd68016186979d7c2cda0cec918cfd541a43c65c69d"
     }
   ],
-  "pages": [],
   "read_by": {
     "model": "deepseek-flash",
-    "date": "2026-10-06"
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
   }
 }

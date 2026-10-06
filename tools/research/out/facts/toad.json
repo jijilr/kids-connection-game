@@ -1,11 +1,22 @@
 {
   "name": "Toad",
-  "fields": {},
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "basis": "judged, not sourced",
+      "why": "The sources describe toads as frogs, which are amphibians and vertebrates, so a toad is an animal."
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "The sources describe toads as living animals with habitats and adaptations, not as extinct."
+    }
+  },
   "weak_spots": [
     {
-      "field": "kind_of_thing",
+      "field": "kind_of_animal",
       "why": "on a second reading, the sentence does not show it",
-      "value": "animal",
+      "value": "amphibian",
       "quote": "Frogs are amphibians and vertebrates of the order Anura."
     }
   ],

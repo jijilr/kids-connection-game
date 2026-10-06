@@ -4,22 +4,22 @@
     "kind_of_thing": {
       "value": "animal",
       "quote": "Monkeys are tree-dwelling (arboreal) simians. They are in the primate order.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "basis": "sourced"
     },
     "kind_of_animal": {
       "value": "mammal",
       "quote": "Monkey is a common name that may refer to most mammals of the infraorder Simiiformes, also known as simians.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "The sources describe monkeys as living animals, including extant groups like Old World and New World monkeys."
     }
   },
-  "weak_spots": [
-    {
-      "field": "extinct",
-      "why": "on a second reading, the sentence does not show it",
-      "value": "false",
-      "quote": "Monkeys are tree-dwelling (arboreal) simians. They are in the primate order."
-    }
-  ],
+  "weak_spots": [],
   "pages": [
     {
       "id": "wikipedia_en",

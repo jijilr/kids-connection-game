@@ -4,22 +4,23 @@
     "kind_of_thing": {
       "value": "animal",
       "quote": "Coccinellidae ( ) is a widespread family of small beetles.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "basis": "sourced"
     },
     "kind_of_animal": {
       "value": "insect",
       "quote": "Lady beetles are the Coccinellidae, a family of beetles.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Coccinellids are found worldwide, with over 5,000 species.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
     }
   },
-  "weak_spots": [
-    {
-      "field": "extinct",
-      "why": "on a second reading, the sentence does not show it",
-      "value": "false",
-      "quote": "Coccinellidae ( ) is a widespread family of small beetles."
-    }
-  ],
+  "weak_spots": [],
   "pages": [
     {
       "id": "wikipedia_en",

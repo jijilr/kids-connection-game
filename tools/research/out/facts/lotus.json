@@ -1,15 +1,40 @@
 {
   "name": "Lotus",
-  "fields": {},
-  "weak_spots": [
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Lotus identifies various plant taxa:",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Nelumbo, a genus of aquatic plants with showy flowers known as lotuses, having two extant species:",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "flower",
+      "quote": "Nelumbo, a genus of aquatic plants with showy flowers known as lotuses, having two extant species:",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
     {
-      "field": "everything",
-      "why": "no page was found for it"
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/List_of_plants_known_as_lotus",
+      "title": "List of plants known as lotus",
+      "asked_for": "Lotus (plant)",
+      "revision": 1276481492,
+      "fetched_on": "2026-10-06",
+      "sha256": "59ee1246da6c8f89a993af80824e782339fae2ac3794fb8c7886fc9b43e65b90"
     }
   ],
-  "pages": [],
   "read_by": {
     "model": "deepseek-flash",
-    "date": "2026-10-06"
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
   }
 }

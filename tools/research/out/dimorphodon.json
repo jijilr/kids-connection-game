@@ -148,20 +148,20 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "Dimorphodon had proportionally short wings.",
-      "quote": "The body structure of Dimorphodon displays many \"primitive\" characteristics, such as, according to Owen, a very small brain-pan and proportionally short wings.",
-      "source": "wikipedia_en"
-    },
-    {
       "claim": "Dimorphodon had a big head, a small brain, a tall beak, and two types of teeth.",
       "quote": "It had a big head, a small brain, a tall beak, and two types of teeth.",
       "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Dimorphodon had proportionally short wings.",
+      "quote": "The body structure of Dimorphodon displays many \"primitive\" characteristics, such as, according to Owen, a very small brain-pan and proportionally short wings.",
+      "source": "wikipedia_en"
     }
   ],
   "told_apart_by": {
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "large bulky skull, short wings, tall beak"
+    "why": "Large bulky tall-beaked skull, short wings, long tail."
   }
 }

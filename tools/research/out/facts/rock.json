@@ -1,15 +1,44 @@
 {
   "name": "Rock",
-  "fields": {},
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "In geology, a rock (also called a stone) is any naturally occurring solid mass or aggregate of minerals or mineraloid matter.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
   "weak_spots": [
     {
-      "field": "everything",
-      "why": "no page was found for it"
+      "field": "kind_of_nature",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "ground",
+      "quote": "Rocks form the Earth's outer solid layer, the crust, and most of its interior, except for the liquid outer core and pockets of magma in the asthenosphere."
     }
   ],
-  "pages": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Rock_(geology)",
+      "title": "Rock (geology)",
+      "asked_for": "Rock (geology)",
+      "revision": 1359173537,
+      "fetched_on": "2026-10-06",
+      "sha256": "18c5a9ca7a9f702f26fb93da49fb34bc02c3732035f101d28d294dd4fd0b838e"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Rock_(geology)",
+      "title": "Rock (geology)",
+      "asked_for": "Rock (geology)",
+      "revision": 10732274,
+      "fetched_on": "2026-10-06",
+      "sha256": "87a5406bf850ef291078ab006a609d02ba40a86eebbeb89572bcf6dd7ef3e689"
+    }
+  ],
   "read_by": {
     "model": "deepseek-flash",
-    "date": "2026-10-06"
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
   }
 }

@@ -4,22 +4,22 @@
     "kind_of_thing": {
       "value": "animal",
       "quote": "A tree frog (or treefrog) is any species of frog that spends a major portion of its lifespan in trees, known as an arboreal state.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "basis": "sourced"
     },
     "kind_of_animal": {
       "value": "amphibian",
       "quote": "Tree frogs are frogs that spend most of their life in trees.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "The sources describe tree frogs in the present tense as living frogs that mate, spawn, and inhabit trees today."
     }
   },
-  "weak_spots": [
-    {
-      "field": "extinct",
-      "why": "on a second reading, the sentence does not show it",
-      "value": "false",
-      "quote": "Tree frogs are frogs that spend most of their life in trees."
-    }
-  ],
+  "weak_spots": [],
   "pages": [
     {
       "id": "wikipedia_en",

@@ -4,22 +4,22 @@
     "kind_of_thing": {
       "value": "plant",
       "quote": "Rice is the seed of the grass species Oryza sativa (Asian rice)—or, less commonly, Oryza glaberrima (African rice).",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "basis": "sourced"
     },
     "kind_of_plant": {
       "value": "grass_grain",
       "quote": "Rice is a cereal grain and, in its domesticated form, is the staple food of over half of the world's population, particularly in Africa and Asia.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "Rice is described as a widely grown and eaten crop, so the plant is still living."
     }
   },
-  "weak_spots": [
-    {
-      "field": "extinct",
-      "why": "on a second reading, the sentence does not show it",
-      "value": "false",
-      "quote": "Rice is the seed of the grass species Oryza sativa (Asian rice)—or, less commonly, Oryza glaberrima (African rice)."
-    }
-  ],
+  "weak_spots": [],
   "pages": [
     {
       "id": "wikipedia_en",

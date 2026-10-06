@@ -1,15 +1,34 @@
 {
   "name": "Building blocks",
-  "fields": {},
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "basis": "judged, not sourced",
+      "why": "Building blocks are modular construction parts usually made of plastic, so they are manufactured objects rather than animals, plants, or natural non-living things."
+    }
+  },
   "weak_spots": [
     {
-      "field": "everything",
-      "why": "no page was found for it"
+      "field": "kind_of_made_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "toy",
+      "quote": "Building blocks (also construction blocks) are modular construction parts, usually made of plastic, which can be assembled in a form-fit manner."
     }
   ],
-  "pages": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Building_blocks_(toy)",
+      "title": "Building blocks (toy)",
+      "asked_for": "Building blocks (toy)",
+      "revision": 1375528218,
+      "fetched_on": "2026-10-06",
+      "sha256": "a7619eb6dc39018f1dd0ddb43cf95d09572c02cbc8efb180c6ca42e3bcfa410a"
+    }
+  ],
   "read_by": {
     "model": "deepseek-flash",
-    "date": "2026-10-06"
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
   }
 }

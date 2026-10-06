@@ -159,13 +159,18 @@
       "source": "wikipedia_simple"
     },
     {
-      "claim": "It was covered in hair-like filaments called pycnofibres.",
-      "quote": "As a pterosaur, Quetzalcoatlus would have been covered in hair-like filaments called pycnofibres, and had extensive wing-membranes, which would have been distended by a long wing-finger.",
-      "source": "wikipedia_en"
+      "claim": "It had a long beak with no teeth.",
+      "quote": "The feeding habits of Quetzalcoatlus (which had a long beak with no teeth) are unknown.",
+      "source": "wikipedia_simple"
     },
     {
       "claim": "It had a crest at the base of the beak.",
       "quote": "At the base of the beak, formed from the premaxilla, was a crest, referred to by some authors as a sagittal crest.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It was covered in hair-like filaments called pycnofibres.",
+      "quote": "As a pterosaur, Quetzalcoatlus would have been covered in hair-like filaments called pycnofibres, and had extensive wing-membranes, which would have been distended by a long wing-finger.",
       "source": "wikipedia_en"
     }
   ],
@@ -173,6 +178,6 @@
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "long neck, pycnofibre body covering, crest at base of beak"
+    "why": "Long neck, long toothless beak, crest at beak base; pycnofibres."
   }
 }

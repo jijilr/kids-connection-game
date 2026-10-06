@@ -4,12 +4,14 @@
     "kind_of_thing": {
       "value": "plant",
       "quote": "The tomato (US: , UK: ; Solanum lycopersicum) is a plant whose fruit is an edible berry that is eaten as a vegetable.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "basis": "sourced"
     },
     "extinct": {
       "value": false,
       "quote": "Tomato plants are vines, largely annual, and vulnerable to frost, though sometimes living longer in greenhouses.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "basis": "sourced"
     }
   },
   "weak_spots": [

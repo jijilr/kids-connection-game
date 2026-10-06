@@ -143,11 +143,6 @@
   "group": "flyer",
   "must_show": [
     {
-      "claim": "Pteranodon had a big crest at the back of its head.",
-      "quote": "Pteranodon had a big crest at the back of its head.",
-      "source": "wikipedia_simple"
-    },
-    {
       "claim": "Pteranodon had no teeth in its long mouth.",
       "quote": "It had no teeth in its long mouth, and it had a small pouch like a pelican at the back of its jaw.",
       "source": "wikipedia_simple"
@@ -156,12 +151,17 @@
       "claim": "The upper jaw, which was longer than the lower jaw, was curved upward.",
       "quote": "The upper jaw, which was longer than the lower jaw, was curved upward; while this normally has been attributed only to the upward-curving beak, one specimen (UALVP 24238) has a curvature corresponding with the beak widening towards the tip.",
       "source": "wikipedia_en"
+    },
+    {
+      "claim": "Pteranodon had a big crest at the back of its head.",
+      "quote": "Pteranodon had a big crest at the back of its head.",
+      "source": "wikipedia_simple"
     }
   ],
   "told_apart_by": {
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "large bony head crest, toothless beak, upward-curved upper jaw"
+    "why": "Toothless long beak with upward-curved upper jaw and big head crest."
   }
 }

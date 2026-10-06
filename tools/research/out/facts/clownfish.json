@@ -4,22 +4,23 @@
     "kind_of_thing": {
       "value": "animal",
       "quote": "The clownfish or anemonefish is a kind of fish.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "basis": "sourced"
     },
     "kind_of_animal": {
       "value": "fish",
       "quote": "The clownfish or anemonefish is a kind of fish.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Clownfish or anemonefishes (genus Amphiprion) are saltwater fish found in the warm and tropical waters of the Indo-Pacific.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
     }
   },
-  "weak_spots": [
-    {
-      "field": "extinct",
-      "why": "on a second reading, the sentence does not show it",
-      "value": "false",
-      "quote": "Clownfish or anemonefishes (genus Amphiprion) are saltwater fish found in the warm and tropical waters of the Indo-Pacific."
-    }
-  ],
+  "weak_spots": [],
   "pages": [
     {
       "id": "wikipedia_en",

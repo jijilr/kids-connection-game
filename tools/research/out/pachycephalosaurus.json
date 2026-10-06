@@ -155,8 +155,8 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "The back of the dome had bony knobs, and short bony spikes stuck up from the snout.",
-      "quote": "The dome's rear aspect was edged with bony knobs and short bony spikes projected upwards from the snout.",
+      "claim": "Its head had a small muzzle that ended in a pointed beak.",
+      "quote": "Pachycephalosaurus had a small muzzle that ended in a pointed beak.",
       "source": "wikipedia_en"
     }
   ],
@@ -164,6 +164,6 @@
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "bipedal, bony dome, knobs and snout spikes"
+    "why": "Bipedal stance, bony dome, small muzzle with pointed beak."
   }
 }

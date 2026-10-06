@@ -3,8 +3,8 @@
 This is the one research step that needs judgement, not copying. Animals that appear
 together in the game (the same kind of dinosaur, the giant snakes) are shown to a
 judge side by side, each with its own features, already checked against the saved
-pages. For each animal the judge chooses the few features of shape, proportion and body
-covering that set it apart. It can only choose from the lists, so nothing ungrounded gets in.
+pages. For each animal the judge chooses the few features of shape and proportion that set it
+apart, and may add its body covering (feathers, fuzz, armour) as one more. It can only choose from the lists, so nothing ungrounded gets in.
 
 The judges are listed in config.json: the everyday DeepSeek model, DeepSeek's stronger
 model with reasoning on, and an OpenAI model. All get the same lists and the same
@@ -15,6 +15,7 @@ question, so their choices can be compared.
 
 Each judge's choice is saved in tools/research/out/tell_apart_<judge>.json.
 """
+import re
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
@@ -22,26 +23,34 @@ from concurrent.futures import ThreadPoolExecutor
 from fetch import prehistoric
 from reslib import CONFIG, OUT, Spend, ask, deepseek, openai_client, read_json, slug, today, write_json
 
+# plain skin or scales tell nothing apart in a small picture; kept out even if a judge chooses them
+PLAIN = re.compile(r"\b(scales?|scaly|skin)\b", re.I)
+
 JUDGE = "You compare lists. You choose only from the lists given and add nothing of your own."
 
 TASK = """These extinct animals appear together in a sorting game for a small child. Each is shown as one small picture on a plain white background, so the pictures must be told apart at a glance. Each animal below has a list of features, already checked against sources.
 
 First compare the animals: for each one, what does its outline have that the others here do not?
 
-Then, for EACH animal, choose from ITS OWN list the 2 to 4 features that best tell it from the other animals here.
-- Choose features of SHAPE, PROPORTION and BODY COVERING: the build of the body, the stance, the neck, the shape of the head or snout, crests, horns, plates, sails, spines, fins, flippers, wings, the tail, how long one part is beside another, and what covers the body, such as feathers, fur or fuzz, or bony armour.
+Then, for EACH animal, choose from ITS OWN list in two steps.
+
+"shape": the 2 to 4 features of SHAPE and PROPORTION that best tell it from the other animals here. These are the build of the body, the stance, the neck, the shape of the head, snout or beak, whether the jaws carry teeth or end in a toothless beak, crests, horns, plates, sails, spines, fins, flippers, wings, the tail, and how long one part is beside another.
 - Do not choose size in metres or weight: nothing on a plain background shows how big an animal is.
-- Do not choose fine detail a small picture cannot show, such as the shape of the scales, the number or shape of the teeth, single claws, or bones.
-- Do not choose a feature the other animals here share.
+- Do not choose fine detail a small picture cannot show, such as the shape of the scales, the number or exact shape of the teeth, single claws, or bones.
+- Do not choose a feature every other animal here has too.
 If an animal's list holds nothing of shape that sets it apart, choose its best one or two features and say so in "why".
 
-Return JSON: {{"<animal name>": {{"ids": ["f2", "f5"], "why": "a few words"}}, ...}} using the ids given.
+"covering": after that, at most ONE more feature: what covers its body, if its list names it and it helps tell the animal apart. Feathers, fur or fuzz, and bony armour are coverings. Plain skin or scales are not: leave those out. A covering is ADDED to the shape features. It never takes the place of one: choose the shape features first, exactly as you would if no covering were listed.
+
+Return JSON: {{"<animal name>": {{"shape": ["f2", "f5"], "covering": ["f9"], "why": "a few words"}}, ...}} using the ids given. Use "covering": [] when there is none to add.
 
 {lists}"""
 
 
 def choose(client, config, spend, judge: dict, members: list) -> dict:
-    """For each member: the features chosen from its own checked list, and the judge's reason."""
+    """For each member: the features chosen from its own checked list, and the judge's reason.
+    Shape traits come first, up to four. A body covering may be added as one more, and
+    is kept apart so that it can never push a shape trait out (the owner's ruling)."""
     lists, index = [], {}
     for record in members:
         lines = []
@@ -52,11 +61,18 @@ def choose(client, config, spend, judge: dict, members: list) -> dict:
     answer = ask(client, config, spend, JUDGE, TASK.format(lists="\n\n".join(lists)), judge)
     chosen = {}
     for record in members:
-        reply = answer.get(record["name"]) or {}
-        ids = reply.get("ids") if isinstance(reply, dict) else reply
-        ids = [str(i) for i in ids or [] if (record["name"], str(i)) in index]
-        chosen[record["name"]] = {"must_show": [index[(record["name"], i)] for i in dict.fromkeys(ids)][:4],
-                                  "why": str(reply.get("why", "")).strip() if isinstance(reply, dict) else ""}
+        reply = answer.get(record["name"])
+        reply = reply if isinstance(reply, dict) else {}
+        known = lambda ids: list(dict.fromkeys(str(i) for i in ids or [] if (record["name"], str(i)) in index))
+        shape = known(reply.get("shape"))[:4]
+        covering = [i for i in known(reply.get("covering")) if i not in shape
+                    and not PLAIN.search(index[(record["name"], i)]["claim"])][:1]
+        shape = [i for i in shape if not PLAIN.search(index[(record["name"], i)]["claim"])] or shape
+        chosen[record["name"]] = {
+            "must_show": [index[(record["name"], i)] for i in shape + covering],
+            "covering": [index[(record["name"], i)]["claim"] for i in covering],
+            "why": str(reply.get("why", "")).strip(),
+        }
     return chosen
 
 

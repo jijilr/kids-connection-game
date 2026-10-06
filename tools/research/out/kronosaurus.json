@@ -140,18 +140,18 @@
   "group": "swimmer",
   "must_show": [
     {
+      "claim": "Kronosaurus had a short tail.",
+      "quote": "Like all plesiosaurs, Kronosaurus has four paddle-like limbs, a short tail and, like most pliosaurids, a long head and a short neck.",
+      "source": "wikipedia_en"
+    },
+    {
       "claim": "Kronosaurus had a long head.",
       "quote": "Like all plesiosaurs, Kronosaurus has four paddle-like limbs, a short tail and, like most pliosaurids, a long head and a short neck.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Kronosaurus had a short neck.",
-      "quote": "Like all plesiosaurs, Kronosaurus has four paddle-like limbs, a short tail and, like most pliosaurids, a long head and a short neck.",
-      "source": "wikipedia_en"
-    },
-    {
-      "claim": "The back pair of flippers was bigger than the front pair.",
-      "quote": "The limbs of Kronosaurus were modified into flippers, with the back pair larger than the front.",
+      "claim": "The lower jaw bones joined in a long, spoon-shaped front part.",
+      "quote": "The mandibular symphysis of Kronosaurus is elongated and spatulate (spoon-shaped), and like its close relatives Brachauchenius and Megacephalosaurus, it contains up to six pairs of teeth.",
       "source": "wikipedia_en"
     }
   ],
@@ -159,6 +159,6 @@
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "Long head, short neck, bigger rear flippers."
+    "why": "short tail, long head, spoon-shaped lower jaw"
   }
 }

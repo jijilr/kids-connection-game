@@ -4,12 +4,14 @@
     "kind_of_thing": {
       "value": "plant",
       "quote": "A banana is the common name for a type of fruit and also the name for the herbaceous plants that grow it.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "basis": "sourced"
     },
     "extinct": {
       "value": false,
       "quote": "Today, they are grown in tropical regions around the world.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "basis": "sourced"
     }
   },
   "weak_spots": [

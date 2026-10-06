@@ -1,14 +1,20 @@
 {
   "name": "Clay",
-  "fields": {},
-  "weak_spots": [
-    {
-      "field": "kind_of_thing",
-      "why": "on a second reading, the sentence does not show it",
+  "fields": {
+    "kind_of_thing": {
       "value": "nature_not_alive",
-      "quote": "Clay is a type of fine-grained natural soil  material containing clay minerals"
+      "quote": "Clay is a type of fine-grained natural soil  material containing clay minerals (hydrous aluminium phyllosilicates, e.g. kaolinite, Al2Si2O5(OH)4).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "ground",
+      "quote": "Clay is a type of fine-grained natural soil  material containing clay minerals (hydrous aluminium phyllosilicates, e.g. kaolinite, Al2Si2O5(OH)4).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
     }
-  ],
+  },
+  "weak_spots": [],
   "pages": [
     {
       "id": "wikipedia_en",

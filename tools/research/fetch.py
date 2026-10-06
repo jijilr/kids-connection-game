@@ -58,10 +58,18 @@ def prehistoric() -> dict:
 
 
 def ordinary() -> dict:
-    """name -> is it a plant? Every thing in the game that is not a prehistoric animal."""
+    """name -> its fields. Every thing in the game that is not a prehistoric animal."""
     old_ones = set(prehistoric())
-    return {t["name"]: t["fields"].get("kind_of_thing") == "plant"
-            for t in read_json(THINGS)["things"].values() if t["name"] not in old_ones}
+    return {t["name"]: t["fields"] for t in read_json(THINGS)["things"].values() if t["name"] not in old_ones}
+
+
+def narrowing_words(fields: dict, config: dict) -> list:
+    """Words that say which meaning of a name is wanted, taken from the thing's kind,
+    the most exact kind first: a thing in the house gives 'furniture', 'dishware';
+    rocks and soil give 'geology'."""
+    table = config["words_that_narrow_a_name"]
+    kinds = [v for k, v in fields.items() if k != "kind_of_thing" and isinstance(v, str)] + [fields.get("kind_of_thing")]
+    return list(dict.fromkeys(word for kind in kinds for word in table.get(kind, [])))
 
 
 def other_names(name: str) -> list:
@@ -96,8 +104,7 @@ def wikipedia(host: str, name: str, strict: bool = True) -> dict:
     if page.get("missing") or not page.get("extract"):
         return {"problem": "no article by this name"}
     if "disambiguation" in page.get("pageprops", {}):
-        return {"url": page["fullurl"], "title": page["title"],
-                "problem": "the name has several meanings on Wikipedia, and a script cannot tell which is meant"}
+        return {"url": page["fullurl"], "title": page["title"], "problem": SEVERAL}
     if strict and page["title"].split()[0].lower() != name.split()[0].lower():
         # a redirect to a broader article (Mosasaurus -> Mosasaur) is about something else
         return {"url": page["fullurl"], "title": page["title"],
@@ -108,62 +115,85 @@ def wikipedia(host: str, name: str, strict: bool = True) -> dict:
             "revision_time": page["revisions"][0]["timestamp"], "text": text[:cut.start()] if cut else text}
 
 
-def openings(host: str, names: list) -> dict:
+SEVERAL = "the name has several meanings on Wikipedia, and a script cannot tell which is meant"
+
+
+def ask_openings(host: str, wanted: dict) -> dict:
+    """wanted: name -> the titles to try for it, in order. One request for them all.
+    Returns name -> what wikipedia() returns, for the first title that has an article."""
+    asked = list(dict.fromkeys(title for titles in wanted.values() for title in titles))
+    for attempt in range(4):
+        reply = requests.get(f"https://{host}/w/api.php", headers=AGENT, timeout=60, params={
+            "action": "query", "format": "json", "formatversion": 2, "redirects": 1, "titles": "|".join(asked),
+            "prop": "extracts|revisions|info|pageprops", "exintro": 1, "explaintext": 1, "exlimit": 20,
+            "rvprop": "ids|timestamp", "inprop": "url", "ppprop": "disambiguation"})
+        if reply.status_code != 429 and reply.status_code < 500:
+            break
+        wait = reply.headers.get("Retry-After", "")
+        time.sleep(min(float(wait) if wait.isdigit() else 10 * (attempt + 1), 90))
+    reply.raise_for_status()
+    query = reply.json()["query"]
+    leads_to = {}   # the title asked for -> the title of the page it is filed under
+    for step in ("normalized", "redirects"):
+        for move in query.get(step, []):
+            leads_to[move["from"]] = move["to"]
+    pages = {page["title"]: page for page in query.get("pages", [])}
+    found = {}
+    for name, titles in wanted.items():
+        result = {"problem": "no article by this name"}
+        for candidate in titles:
+            title = leads_to.get(candidate, candidate)
+            title = leads_to.get(title, title)
+            page = pages.get(title)
+            if page is None or page.get("missing"):
+                continue
+            if "disambiguation" in page.get("pageprops", {}):
+                result = {"url": page["fullurl"], "title": page["title"], "problem": SEVERAL}
+                continue
+            if page.get("extract"):
+                result = {"url": page["fullurl"], "title": page["title"], "asked_for": candidate,
+                          "revision": page["revisions"][0]["revid"],
+                          "revision_time": page["revisions"][0]["timestamp"],
+                          "part": "the opening only", "text": page["extract"]}
+                break
+        found[name] = result
+    time.sleep(1.5)
+    return found
+
+
+def openings(host: str, names: list, words: dict = None) -> dict:
     """The opening of the article for each name, ten things to a request. A thing's
     fields are settled by how its article begins, so the whole article is not needed,
     and a hundred things cost a dozen requests, not two hundred.
+
+    A name with several meanings (Table, Rock, Plate) is then asked again with a word
+    from the thing's kind in brackets, as Wikipedia files such articles: Table
+    (furniture), Rock (geology). `words` gives those words for each name.
     Returns name -> what wikipedia() returns."""
     found = {}
     for start in range(0, len(names), 10):
         batch = names[start:start + 10]
-        asked = [candidate for name in batch for candidate in other_names(name)]
-        for attempt in range(4):
-            reply = requests.get(f"https://{host}/w/api.php", headers=AGENT, timeout=60, params={
-                "action": "query", "format": "json", "formatversion": 2, "redirects": 1, "titles": "|".join(asked),
-                "prop": "extracts|revisions|info|pageprops", "exintro": 1, "explaintext": 1, "exlimit": 20,
-                "rvprop": "ids|timestamp", "inprop": "url", "ppprop": "disambiguation"})
-            if reply.status_code != 429 and reply.status_code < 500:
-                break
-            wait = reply.headers.get("Retry-After", "")
-            time.sleep(min(float(wait) if wait.isdigit() else 10 * (attempt + 1), 90))
-        reply.raise_for_status()
-        query = reply.json()["query"]
-        leads_to = {}   # the title asked for -> the title of the page it is filed under
-        for step in ("normalized", "redirects"):
-            for move in query.get(step, []):
-                leads_to[move["from"]] = move["to"]
-        pages = {page["title"]: page for page in query["pages"]}
-        for name in batch:
-            result = {"problem": "no article by this name"}
-            for candidate in other_names(name):
-                title = leads_to.get(candidate, candidate)
-                title = leads_to.get(title, title)
-                page = pages.get(title)
-                if page is None or page.get("missing"):
-                    continue
-                if "disambiguation" in page.get("pageprops", {}):
-                    result = {"url": page["fullurl"], "title": page["title"], "problem":
-                              "the name has several meanings on Wikipedia, and a script cannot tell which is meant"}
-                    continue
-                if page.get("extract"):
-                    result = {"url": page["fullurl"], "title": page["title"], "asked_for": candidate,
-                              "revision": page["revisions"][0]["revid"],
-                              "revision_time": page["revisions"][0]["timestamp"],
-                              "part": "the opening only", "text": page["extract"]}
-                    break
-            found[name] = result
-        time.sleep(1.5)
+        found.update(ask_openings(host, {name: other_names(name) for name in batch}))
+    unclear = [n for n in names if "text" not in found[n] and (words or {}).get(n)]
+    for start in range(0, len(unclear), 2):   # few things at a time: each has several titles to try
+        batch = unclear[start:start + 2]
+        again = ask_openings(host, {name: [f"{base} ({word})" for word in words[name] for base in other_names(name)][:10]
+                                    for name in batch})
+        for name, result in again.items():
+            if "text" in result:
+                found[name] = dict(result, narrowed_by="the thing's kind")
     return found
 
 
-def fetch_openings(names: list, again: bool) -> dict:
+def fetch_openings(names: list, again: bool, words: dict = None) -> dict:
     """Save the two Wikipedia openings for each ordinary thing. A page already saved,
-    whole or opening, is kept unless --again is given."""
+    whole or opening, is kept unless --again is given. `words` narrows a name that has
+    several meanings (see openings)."""
     results = {name: {s["id"]: s for s in read_json(CACHE / slug(name) / "sources.json", {"sources": []})["sources"]}
                for name in names}
     for source, host in (("wikipedia_en", "en.wikipedia.org"), ("wikipedia_simple", "simple.wikipedia.org")):
         need = [n for n in names if again or not results[n].get(source, {}).get("file")]
-        for name, found in openings(host, need).items():
+        for name, found in openings(host, need, words).items():
             record = {"id": source, "fetched_on": today(), **{k: v for k, v in found.items() if k != "text"}}
             if "text" in found:
                 folder = CACHE / slug(name)
@@ -258,11 +288,11 @@ def fetch(name: str, config: dict, again: bool, strict: bool = True, plant: bool
 
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
-    plants = ordinary()
+    things = ordinary()
     if "--prehistoric" in sys.argv:
         names = list(prehistoric())
     elif "--ordinary" in sys.argv:
-        names = list(plants)
+        names = list(things)
     else:
         names = args
     if not names:
@@ -270,14 +300,16 @@ def main():
     config, old_ones = read_json(CONFIG), set(prehistoric())
     if "--ordinary" in sys.argv:
         # openings only, many to a request; Kew turns scripts away, so it is not asked here
-        for name, sources in fetch_openings(names, "--again" in sys.argv).items():
+        words = {name: narrowing_words(things[name], config) for name in names}
+        for name, sources in fetch_openings(names, "--again" in sys.argv, words).items():
             got = ", ".join(f"{s['id']} ({s['chars']:,} letters, filed under '{s['title']}')"
                             for s in sources.values() if s.get("file"))
             missing = ", ".join(f"{s['id']}: {s['problem']}" for s in sources.values() if s.get("problem"))
             print(f"  {name}: {got or 'NOTHING'}" + (f"   [not found - {missing}]" if missing else ""), flush=True)
         return
     for name in names:
-        sources = fetch(name, config, "--again" in sys.argv, strict=name in old_ones, plant=plants.get(name, False))
+        plant = things.get(name, {}).get("kind_of_thing") == "plant"
+        sources = fetch(name, config, "--again" in sys.argv, strict=name in old_ones, plant=plant)
         got = ", ".join(f"{s['id']} ({s['chars']:,} letters)" for s in sources if s.get("file"))
         missing = ", ".join(f"{s['id']}: {s['problem']}" for s in sources if s.get("problem"))
         print(f"  {name}: {got or 'NOTHING'}" + (f"   [not found - {missing}]" if missing else ""), flush=True)

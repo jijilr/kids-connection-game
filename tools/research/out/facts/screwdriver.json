@@ -4,7 +4,8 @@
     "kind_of_thing": {
       "value": "made_by_people",
       "quote": "A  screwdriver is a tool, manual or powered, used for turning screws.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "basis": "sourced"
     }
   },
   "weak_spots": [
@@ -12,7 +13,7 @@
       "field": "kind_of_made_thing",
       "why": "on a second reading, the sentence does not show it",
       "value": "tool",
-      "quote": "A screwdriver is a tool used to turn (or \"drive\") screws into something."
+      "quote": "A  screwdriver is a tool, manual or powered, used for turning screws."
     }
   ],
   "pages": [

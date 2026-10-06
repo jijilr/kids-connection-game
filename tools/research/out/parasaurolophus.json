@@ -181,15 +181,15 @@
       "source": "wikipedia_simple"
     },
     {
-      "claim": "Parasaurolophus could walk on either two legs or four.",
-      "quote": "Like other hadrosaurids, it was able to walk on either two legs or four.",
-      "source": "wikipedia_en"
+      "claim": "It had a beak and toothed jaws.",
+      "quote": "Teeth:\nbeak and toothed jaws",
+      "source": "nhm_dino_directory"
     }
   ],
   "told_apart_by": {
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "long tubular crest, curved crest, two or four legs"
+    "why": "Long tubular crest, beak and toothed jaws."
   }
 }

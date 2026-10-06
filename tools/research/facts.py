@@ -12,11 +12,17 @@ Then, with no model:
 Then a second DeepSeek call, which did not choose the values, reads each value with
 its sentence only and says whether the sentence shows it. What fails is dropped.
 
+Two fields may be JUDGED when no sentence states them (the owner's ruling of 6 Oct
+2026): what kind of thing it is, and that it is still living. Pages seldom say
+outright that sand is a thing in nature or that a hen is not extinct. DeepSeek judges
+those from what the pages say the thing is, and the value is recorded as "judged, not
+sourced". Every other field still needs its sentence.
+
 A field left without a kept value is a WEAK SPOT. For a new thing it goes to the
 owner's queue with the reason. Nothing here writes to the game's data.
 
     python tools/research/facts.py "Mango tree" Cup [--cap 0.02] [--again]
-    python tools/research/facts.py --audit [--cap 0.10]
+    python tools/research/facts.py --audit [--cap 0.10] [--redo-weak]
 
 --audit runs every ordinary thing already in the game and compares the result with
 the approved data, as a test of this script. It writes tools/research/facts_audit/.
@@ -59,6 +65,15 @@ SECOND_TASK = """Each item says something about "{name}" and gives the sentence 
 Return JSON: {{"items": [{{"id": "a", "supported": true}}]}}
 
 {items}"""
+
+
+JUDGE_TASK = """The sources above are about "{name}", one of the things in a sorting game for a four-year-old.
+
+No sentence in the sources states the answer to this question outright. Judge it yourself, from what the sources say {name} is and from what is commonly known.
+
+{field}
+
+Return JSON: {{"value": "one of the choices, spelled exactly", "why": "one short sentence"}}"""
 
 
 def spell(value) -> str:
@@ -136,11 +151,38 @@ def ground(client, config, spend, dictionary: dict, name: str) -> dict:
                              "value": candidates[k]["value"], "quote": candidates[k]["quote"]})
                 del candidates[k]
 
+    for item in candidates.values():
+        item["basis"] = "sourced"
+
+    def judged(key):
+        """DeepSeek's own judgement of one field, for the two fields the owner allows."""
+        one = describe({"fields": {key: dictionary["fields"][key]}})
+        reply = ask(client, config, spend, READER.split(" Every value")[0],
+                    block + "\n\n" + JUDGE_TASK.format(name=name, field=one),
+                    {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"],
+                     "most_written": 200})
+        value = spell(reply.get("value"))
+        if value not in dictionary["fields"][key]["values"]:
+            return None
+        return {"value": value, "basis": "judged, not sourced", "why": str(reply.get("why", "")).strip()}
+
     # a field counts only when it applies, read against the values kept so far
+    if "kind_of_thing" not in candidates:
+        verdict = judged("kind_of_thing")
+        if verdict:
+            candidates["kind_of_thing"] = verdict
     kept, order = {}, list(dictionary["fields"])
     for key in order:
         if key in candidates and applies(dictionary["fields"][key]["expected_on"], kept):
             kept[key] = candidates[key]
+    if "extinct" not in kept and applies(dictionary["fields"]["extinct"]["expected_on"], kept):
+        verdict = judged("extinct")
+        if verdict and verdict["value"] == "false":      # still living
+            kept["extinct"] = verdict
+        elif verdict:
+            weak.append({"field": "extinct", "why": "judged extinct, but no sentence in the pages shows it",
+                         "value": verdict["value"]})
+    weak = [w for w in weak if w["field"] not in kept]
     for key in order:
         expected = applies(dictionary["fields"][key]["expected_on"], kept)
         if expected and key not in kept and not any(w["field"] == key for w in weak):
@@ -161,7 +203,8 @@ def ground(client, config, spend, dictionary: dict, name: str) -> dict:
 def audit(records: list, skipped: list, spend: Spend):
     """Compare what the script could ground with the approved data."""
     approved = {t["name"]: t for t in read_json(THINGS)["things"].values()}
-    rows, counts = [], {"agrees": 0, "differs": 0, "not_grounded": 0, "extra": 0}
+    rows, counts = [], {"agrees": 0, "agrees_judged": 0, "differs": 0, "differs_judged": 0,
+                        "not_grounded": 0, "extra": 0}
     for record in records:
         thing = approved[record["name"]]
         for key, value in thing["fields"].items():
@@ -169,20 +212,20 @@ def audit(records: list, skipped: list, spend: Spend):
             if got is None:
                 why = next((w["why"] for w in record["weak_spots"] if w["field"] in (key, "everything")), "no answer")
                 rows.append({"thing": record["name"], "field": key, "approved": value, "result": "not_grounded", "why": why})
-            elif got["value"] == value or (isinstance(value, list) and got["value"] in value):
-                rows.append({"thing": record["name"], "field": key, "approved": value, "result": "agrees",
-                             "quote": got["quote"], "source": got["source"]})
             else:
-                rows.append({"thing": record["name"], "field": key, "approved": value, "result": "differs",
-                             "script": got["value"], "quote": got["quote"], "source": got["source"]})
+                same = got["value"] == value or (isinstance(value, list) and got["value"] in value)
+                how = "" if got.get("basis", "sourced") == "sourced" else "_judged"
+                rows.append({"thing": record["name"], "field": key, "approved": value,
+                             "result": ("agrees" if same else "differs") + how, "script": got["value"],
+                             "quote": got.get("quote", ""), "source": got.get("source", ""), "why": got.get("why", "")})
         for key, got in record["fields"].items():
             if key not in thing["fields"]:
                 rows.append({"thing": record["name"], "field": key, "approved": None, "result": "extra",
-                             "script": got["value"], "quote": got["quote"], "source": got["source"]})
+                             "script": got["value"], "quote": got.get("quote", ""), "source": got.get("source", "")})
     for row in rows:
         counts[row["result"]] += 1
     whole = [r["name"] for r in records
-             if all(x["result"] == "agrees" for x in rows if x["thing"] == r["name"])]
+             if all(x["result"].startswith("agrees") for x in rows if x["thing"] == r["name"])]
     report = {
         "about": "A test of facts.py: every ordinary thing already in the game, grounded from saved pages and "
                  "compared with the approved data. The approved data was not changed.",
@@ -193,14 +236,17 @@ def audit(records: list, skipped: list, spend: Spend):
     write_json(AUDIT / "report.json", report)
     lines = ["# Grounded facts: a test on the things already in the game", "",
              f"{report['date']}. {len(records)} things run" + (f", {len(skipped)} not run (the cap was reached)" if skipped else "") + ".", "",
-             f"- Values the script grounded and that agree with the approved data: {counts['agrees']}",
+             f"- Values the script grounded with a sentence, and that agree with the approved data: {counts['agrees']}",
+             f"- Values judged, not sourced (kind of thing, still living), that agree: {counts['agrees_judged']}",
              f"- Values where the script's sentence points to a different value: {counts['differs']}",
+             f"- Values judged, not sourced, that differ: {counts['differs_judged']}",
              f"- Values the script could not ground (these would go to the owner's queue): {counts['not_grounded']}",
              f"- Fields the script filled that the approved data does not have: {counts['extra']}",
              f"- Things where every approved value was grounded and agrees: {len(whole)} of {len(records)}", "",
              "## Differs", ""]
-    lines += [f"- **{r['thing']}**, {r['field']}: approved `{r['approved']}`, script `{r['script']}`. \"{r['quote']}\" ({r['source']})"
-              for r in rows if r["result"] == "differs"] or ["- (none)"]
+    lines += [f"- **{r['thing']}**, {r['field']}: approved `{r['approved']}`, script `{r['script']}`. "
+              + (f"\"{r['quote']}\" ({r['source']})" if r["quote"] else f"Judged, not sourced: {r['why']}")
+              for r in rows if r["result"].startswith("differs")] or ["- (none)"]
     lines += ["", "## Could not be grounded", ""]
     lines += [f"- **{r['thing']}**, {r['field']} (`{r['approved']}`): {r['why']}" for r in rows if r["result"] == "not_grounded"] or ["- (none)"]
     lines += ["", "## Extra fields the script filled", ""]
@@ -228,7 +274,9 @@ def main():
     def one(name):
         path = FACTS / f"{slug(name)}.json"
         if path.exists() and "--again" not in argv:
-            return read_json(path)
+            saved = read_json(path)
+            if not ("--redo-weak" in argv and saved["weak_spots"]):
+                return saved
         try:
             record = ground(client, config, spend, dictionary, name)
         except SystemExit:   # the hard cap: this thing is left for the next run

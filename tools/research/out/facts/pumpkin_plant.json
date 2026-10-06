@@ -4,12 +4,14 @@
     "kind_of_thing": {
       "value": "plant",
       "quote": "A pumpkin is a type of a squash which is a fruit.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "basis": "sourced"
     },
     "extinct": {
       "value": false,
       "quote": "but cultivars are now grown globally for culinary, decorative, and other culturally-specific purposes.",
-      "source": "wikipedia_en"
+      "source": "wikipedia_en",
+      "basis": "sourced"
     }
   },
   "weak_spots": [

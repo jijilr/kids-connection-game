@@ -4,12 +4,14 @@
     "kind_of_thing": {
       "value": "plant",
       "quote": "Chili pepper is the fruit of a series of plants called Capsicum (nightshade family).",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "basis": "sourced"
     },
     "extinct": {
       "value": false,
       "quote": "Chilis are now grown all over the world, but originally, they came from Mexico.",
-      "source": "wikipedia_simple"
+      "source": "wikipedia_simple",
+      "basis": "sourced"
     }
   },
   "weak_spots": [

@@ -171,8 +171,8 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "Stegosaurus had short fore limbs and long hind limbs.",
-      "quote": "They were large, heavily built, herbivorous quadrupeds with rounded backs, short fore limbs, long hind limbs, and tails held high in the air.",
+      "claim": "Stegosaurus had a short neck and a small head.",
+      "quote": "It had a short neck and a small head, meaning it most likely ate low-lying bushes and shrubs.",
       "source": "wikipedia_en"
     }
   ],
@@ -180,6 +180,6 @@
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "back plates, tail spikes, short forelimbs"
+    "why": "Double row of kite-shaped plates, tail spikes, short neck and small head."
   }
 }

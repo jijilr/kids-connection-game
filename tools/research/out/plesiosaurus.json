@@ -119,8 +119,8 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "Plesiosaurus had two pairs of large, elongated paddles.",
-      "quote": "Measuring around 3.5 m (11 ft) long, it is distinguishable by its small head, long and slender neck, broad turtle-like body, a short tail, and two pairs of large, elongated paddles.",
+      "claim": "Plesiosaurus had a U-shaped jaw.",
+      "quote": "Its U-shaped jaw and sharp teeth would have been like a fish trap.",
       "source": "wikipedia_en"
     }
   ],
@@ -128,6 +128,6 @@
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "Long slender neck, broad turtle-like body, large elongated paddles."
+    "why": "long slender neck, broad turtle-like body, U-shaped jaw"
   }
 }

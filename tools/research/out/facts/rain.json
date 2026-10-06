@@ -1,14 +1,20 @@
 {
   "name": "Rain",
-  "fields": {},
-  "weak_spots": [
-    {
-      "field": "kind_of_thing",
-      "why": "on a second reading, the sentence does not show it",
+  "fields": {
+    "kind_of_thing": {
       "value": "nature_not_alive",
-      "quote": "Rain is a kind of precipitation."
+      "quote": "Rain is a kind of precipitation. Precipitation is any kind of water that falls from clouds in the sky, like rain, hail, sleet and snow.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "water",
+      "quote": "Precipitation is any kind of water that falls from clouds in the sky, like rain, hail, sleet and snow.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
     }
-  ],
+  },
+  "weak_spots": [],
   "pages": [
     {
       "id": "wikipedia_en",

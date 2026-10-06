@@ -165,9 +165,9 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its front limbs were a little shorter than its back limbs, so its body was mostly horizontal.",
-      "quote": "Their forelimbs were slightly shorter than their hind limbs, resulting in a largely horizontal posture.",
-      "source": "wikipedia_en"
+      "claim": "Its head was short.",
+      "quote": "It had a short 6 ft long head.",
+      "source": "wikipedia_simple"
     },
     {
       "claim": "Its tail was about 55% of its total body length.",
@@ -179,6 +179,6 @@
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "whip tail, horizontal body, tail half of length"
+    "why": "Whip-like tail, short head, tail about 55% of body length."
   }
 }
