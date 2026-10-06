@@ -202,6 +202,14 @@ def options(config: dict, most: int) -> dict:
     return {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"], "most_written": most}
 
 
+def proposer_options(config: dict) -> dict:
+    """How the proposing call is made. config.json may say otherwise under `field_proposer`
+    (a model, thinking on or off, the most it may write); the tests are not affected."""
+    chosen = config.get("field_proposer") or {}
+    return {"provider": "deepseek", "model": chosen.get("model", config["model"]),
+            "thinking": chosen.get("thinking", config["thinking"]), "most_written": chosen.get("most_written", 2600)}
+
+
 def propose(client, config, spend, dictionary: dict, chain: str, names: list, earlier: list, like: list) -> list:
     """Up to three candidate fields from DeepSeek, tidied. `earlier` are fields refused
     for this circle before, each with its reason, so the same one is not offered again."""
@@ -210,7 +218,7 @@ def propose(client, config, spend, dictionary: dict, chain: str, names: list, ea
               + "; ".join(earlier) + ".\n") if earlier else ""
     answer = reslib.ask(client, config, spend, PROPOSER, PROPOSE_TASK.format(
         chain=chain, members=", ".join(names), count=CANDIDATES, new=NEW_NAMES, existing=existing, earlier=before,
-        like=", ".join(like[:8]) or "plain everyday names"), options(config, 2600))
+        like=", ".join(like[:8]) or "plain everyday names"), proposer_options(config))
     found = []
     for raw in answer.get("fields") or []:
         if not isinstance(raw, dict) or not isinstance(raw.get("values"), list):
