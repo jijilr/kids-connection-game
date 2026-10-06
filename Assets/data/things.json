@@ -1622,6 +1622,39 @@
       "notes": {
         "general": "Held at first: the drafter was unsure: A child may know caves from stories or pictures rather than from visiting one."
       }
+    },
+    "temple": {
+      "name": "Temple",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
+      },
+      "familiar": 0.9,
+      "reviewed": 2,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-03"
+    },
+    "school": {
+      "name": "School",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
+      },
+      "familiar": 0.9,
+      "reviewed": 2,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-02"
+    },
+    "hospital": {
+      "name": "Hospital",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "building"
+      },
+      "familiar": 0.8,
+      "reviewed": 2,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-01"
     }
   }
 }

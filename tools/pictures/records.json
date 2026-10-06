@@ -11260,7 +11260,7 @@
       "published_file": "Assets/pictures/moon.webp"
     },
     "job_2026_10_06_01_1_01_c1": {
-      "thing_id": null,
+      "thing_id": "hospital",
       "expected_thing": "hospital",
       "master_file": "tools/pictures/tiles/masters/job_2026_10_06_01_1_01_c1.png",
       "master_size": [
@@ -11302,9 +11302,11 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/hospital.webp"
     },
     "job_2026_10_06_02_1_01_c1": {
       "thing_id": null,
@@ -11366,7 +11368,7 @@
       "reviewed_on": "2026-10-06"
     },
     "job_2026_10_06_02_1_01_c2": {
-      "thing_id": null,
+      "thing_id": "school",
       "expected_thing": "school",
       "master_file": "tools/pictures/tiles/masters/job_2026_10_06_02_1_01_c2.png",
       "master_size": [
@@ -11408,7 +11410,7 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
       "history": [],
       "comparison": {
@@ -11421,7 +11423,9 @@
         "chosen": true,
         "why": "The centered, front-facing school building is simpler and easier for a young child to recognize at a glance.",
         "cost_usd": 8e-05
-      }
+      },
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/school.webp"
     },
     "job_2026_10_06_02_1_01_c3": {
       "thing_id": null,
@@ -11542,7 +11546,7 @@
       "reviewed_on": "2026-10-06"
     },
     "job_2026_10_06_03_1_01_c1": {
-      "thing_id": null,
+      "thing_id": "temple",
       "expected_thing": "temple",
       "master_file": "tools/pictures/tiles/masters/job_2026_10_06_03_1_01_c1.png",
       "master_size": [
@@ -11584,9 +11588,11 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "waiting for the owner",
+      "review": "approved",
       "review_note": "",
-      "history": []
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/temple.webp"
     }
   }
 }

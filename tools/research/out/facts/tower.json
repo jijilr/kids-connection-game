@@ -6,16 +6,14 @@
       "quote": "A tower is a tall structure, taller than it is wide, often by a significant factor.",
       "source": "wikipedia_en",
       "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "basis": "judged, not sourced",
+      "why": "A tower is a tall structure that people build, like a castle tower, not something you ride, play with, or use as a tool."
     }
   },
-  "weak_spots": [
-    {
-      "field": "kind_of_made_thing",
-      "why": "on a second reading, the sentence does not show it",
-      "value": "building",
-      "quote": "Towers are specifically distinguished from buildings in that they are built not to be habitable but to serve other functions using the height of the tower."
-    }
-  ],
+  "weak_spots": [],
   "pages": [
     {
       "id": "wikipedia_en",

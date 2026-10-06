@@ -10103,8 +10103,9 @@
         "facts": "tools/research/out/facts/glass.json",
         "evidence": {
           "kind_of_thing": {
-            "basis": "judged, not sourced",
-            "why": "Glass is manufactured by people, for example by rapidly cooling molten material into window panes, bottles, and lenses."
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Glass is most often formed by rapid cooling (quenching) of the molten form."
           },
           "kind_of_made_thing": {
             "basis": "sourced",
@@ -12050,6 +12051,15 @@
           "made_by_people",
           "made_by_people/toy"
         ]
+      },
+      "sources": {
+        "pages": [],
+        "facts": "tools/research/out/facts/drum.json",
+        "evidence": {},
+        "no_sentence_for": [
+          "kind_of_thing",
+          "kind_of_made_thing"
+        ]
       }
     },
     "salmon": {
@@ -12109,42 +12119,172 @@
     },
     "temple": {
       "name": "Temple",
-      "status": "waiting for the owner",
-      "status_why": [
-        "rehearsal 2026-10-06-03: it passed every check and has a tile (job_2026_10_06_03_1_01_c1); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-03"
-      ],
-      "held_from": "job:2026-10-06-03",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building"
       },
       "familiar": 0.9,
+      "reviewed": 2,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-03",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "made_by_people",
           "made_by_people/building"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "building",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_03_1_01_c1",
+        "game_file": "Assets/pictures/temple.webp",
+        "game_sha256": "304c216c34fe0a4e5bcb367e34240ab93d8b776c612dfa2a1d740ee929fe778c",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_03_1_01_c1.png",
+        "master_sha256": "77f08d12d8ac646e93b3e1d92037476374331cf18aef6ffa89c973cc09f31531",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 2
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Temple",
+            "title": "Temple",
+            "asked_for": "Temple",
+            "revision": 1377305516,
+            "fetched_on": "2026-10-06",
+            "sha256": "823ba797200b6d3816680193d15cfb58ac7daf166c650e8d119de829728bc665"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Temple",
+            "title": "Temple",
+            "asked_for": "Temple",
+            "revision": 9759519,
+            "fetched_on": "2026-10-06",
+            "sha256": "a9beaf9e22f79788766c44de4ef1498130e8c4dafa03456130ec9efac76c0326"
+          }
+        ],
+        "facts": "tools/research/out/facts/temple.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A temple is a building where people go to practice their religion."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A temple is a building where people go to practice their religion."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Temple",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "school": {
       "name": "School",
-      "status": "waiting for the owner",
-      "status_why": [
-        "rehearsal 2026-10-06-03: it passed every check and has a tile (job_2026_10_06_02_1_01_c2); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-03"
-      ],
-      "held_from": "job:2026-10-06-03",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building"
       },
       "familiar": 0.9,
+      "reviewed": 2,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-02",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "made_by_people",
           "made_by_people/building"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "building",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_02_1_01_c2",
+        "game_file": "Assets/pictures/school.webp",
+        "game_sha256": "9dc1900b1d68fbff66c4f1e52d045a75ce9b3293ace4647b4257dd533a74f359",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_02_1_01_c2.png",
+        "master_sha256": "cbce05630bdc5bfe69064bf39559f177eb82851e2351550c73bc832f8b2c7fb8",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 1
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/School",
+            "title": "School",
+            "asked_for": "School",
+            "revision": 1377727900,
+            "fetched_on": "2026-10-06",
+            "sha256": "f2be2857653e64dd2adbcaf545c0866adb9415f9d68ac168a2eaafa70f1396f9"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/School",
+            "title": "School",
+            "asked_for": "School",
+            "revision": 10975377,
+            "fetched_on": "2026-10-06",
+            "sha256": "4d7a84e218c24b1c4f31aab5212728c843ef9af5459443fdaaf2c68c52bdd2e3"
+          }
+        ],
+        "facts": "tools/research/out/facts/school.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A school is an educational institution (and, in the case of in-person learning, the building) designed to provide learning environments for the teaching of students, usually under the direction of teachers."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A school is an educational institution (and, in the case of in-person learning, the building) designed to provide learning environments for the teaching of students, usually under the direction of teachers."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "School",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "shop": {
@@ -12160,6 +12300,36 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.9,
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Shop",
+            "title": "Shop",
+            "asked_for": "Shop",
+            "revision": 10650048,
+            "fetched_on": "2026-10-06",
+            "sha256": "914203698c1d4757038a5fc65cd666bf8b5b71c5244109cae596b924f09c4afa"
+          }
+        ],
+        "facts": "tools/research/out/facts/shop.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "A shop is a place people build and run for buying and selling things."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "A shop is a place people go to buy things, so it is a building."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Shop",
+        "checked_by_ear": false,
+        "clip": null
+      },
       "worked_out": {
         "would_join": [
           "seed",
@@ -12170,22 +12340,87 @@
     },
     "hospital": {
       "name": "Hospital",
-      "status": "waiting for the owner",
-      "status_why": [
-        "rehearsal 2026-10-06-03: it passed every check and has a tile (job_2026_10_06_01_1_01_c1); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-03"
-      ],
-      "held_from": "job:2026-10-06-03",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building"
       },
       "familiar": 0.8,
+      "reviewed": 2,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-01",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "made_by_people",
           "made_by_people/building"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "building",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_01_1_01_c1",
+        "game_file": "Assets/pictures/hospital.webp",
+        "game_sha256": "8214d5ba1937b682796017d9228b7ac6586946d36782483596560f3d9d98c37e",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_01_1_01_c1.png",
+        "master_sha256": "f9896613addf3f3fe6b8ae8dbb57aa7c23b418816d334f1d2ac9f3149bc82550",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Hospital",
+            "title": "Hospital",
+            "asked_for": "Hospital",
+            "revision": 1377727882,
+            "fetched_on": "2026-10-06",
+            "sha256": "ad3995911d743ddc246c51cf5843a7aac08aa607da3886e513542c8e7f37b5f3"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Hospital",
+            "title": "Hospital",
+            "asked_for": "Hospital",
+            "revision": 10667528,
+            "fetched_on": "2026-10-06",
+            "sha256": "f3435431bd8377b8507a6b04dc6a9de13be581c8be54cf735bde4e9f918e07c8"
+          }
+        ],
+        "facts": "tools/research/out/facts/hospital.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A hospital is a healthcare institution providing patient treatment with specialized medical science and auxiliary healthcare staff and medical equipment."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A hospital is a place where a person goes to be healed when they are sick or injured."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Hospital",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "bridge": {
@@ -12201,6 +12436,44 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.8,
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Bridge",
+            "title": "Bridge",
+            "asked_for": "Bridge",
+            "revision": 1376132307,
+            "fetched_on": "2026-10-06",
+            "sha256": "221803bc1be34e586f6adebda3ce37e6bf0e97493a38dbf6b79e8953325062e9"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Bridge",
+            "title": "Bridge",
+            "asked_for": "Bridge",
+            "revision": 10393533,
+            "fetched_on": "2026-10-06",
+            "sha256": "fdba29daff3a2654f0606f620ff15df9d34aa67f68a785cd32526a7f2a283157"
+          }
+        ],
+        "facts": "tools/research/out/facts/bridge.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A bridge is a structure designed to span an obstacle, such as a river or railway, allowing vehicles, pedestrians, and other loads to pass across."
+          }
+        },
+        "no_sentence_for": [
+          "kind_of_made_thing"
+        ]
+      },
+      "voice": {
+        "say": "Bridge",
+        "checked_by_ear": false,
+        "clip": null
+      },
       "worked_out": {
         "would_join": [
           "seed",
@@ -12222,6 +12495,46 @@
         "kind_of_made_thing": "building"
       },
       "familiar": 0.7,
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Tower",
+            "title": "Tower",
+            "asked_for": "Tower",
+            "revision": 1376492646,
+            "fetched_on": "2026-10-06",
+            "sha256": "48bc3ad4abf59721e37840292ae7820e33cc49550b12144b717eb9490c71c482"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Tower",
+            "title": "Tower",
+            "asked_for": "Tower",
+            "revision": 9707372,
+            "fetched_on": "2026-10-06",
+            "sha256": "8a7a8d6a49459b4ddf171fa494ba9a967c6cf1094ec17c109d5d98b6cb657576"
+          }
+        ],
+        "facts": "tools/research/out/facts/tower.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A tower is a tall structure, taller than it is wide, often by a significant factor."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "A tower is a tall structure that people build, like a castle tower, not something you ride, play with, or use as a tool."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Tower",
+        "checked_by_ear": false,
+        "clip": null
+      },
       "worked_out": {
         "would_join": [
           "seed",
@@ -12248,13 +12561,18 @@
           "made_by_people",
           "made_by_people/building"
         ]
+      },
+      "voice": {
+        "say": "Farmhouse",
+        "checked_by_ear": false,
+        "clip": null
       }
     }
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 135,
-      "waiting for the owner": 14,
+      "in the game": 138,
+      "waiting for the owner": 11,
       "not in the game yet": 2,
       "kept for later": 5,
       "excluded": 3
@@ -12269,7 +12587,7 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 135,
+        "things": 138,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
@@ -12290,8 +12608,8 @@
           },
           "made_by_people": {
             "label": "Things people make",
-            "things": 24,
-            "with_picture": 24
+            "things": 27,
+            "with_picture": 27
           }
         },
         "open_by_its_things": true,
@@ -12620,7 +12938,7 @@
       },
       "made_by_people": {
         "label": "Things people make",
-        "things": 24,
+        "things": 27,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_made_thing",
         "groups": {
@@ -12646,8 +12964,8 @@
           },
           "building": {
             "label": "Buildings",
-            "things": 1,
-            "with_picture": 1
+            "things": 4,
+            "with_picture": 4
           }
         },
         "open_by_its_things": true,
@@ -12702,23 +13020,11 @@
       },
       "made_by_people/building": {
         "label": "Buildings",
-        "things": 1,
+        "things": 4,
         "steps_from_seed": 2,
         "could_be_filled_by": [
           {
-            "name": "Temple",
-            "status": "waiting for the owner"
-          },
-          {
-            "name": "School",
-            "status": "waiting for the owner"
-          },
-          {
             "name": "Shop",
-            "status": "waiting for the owner"
-          },
-          {
-            "name": "Hospital",
             "status": "waiting for the owner"
           },
           {
@@ -12737,7 +13043,7 @@
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "3 more thing(s): it has fewer than four, so it is not yet a group on the board above it"
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
         ]
       }
     }

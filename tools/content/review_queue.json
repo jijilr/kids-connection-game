@@ -151,30 +151,6 @@
       "familiar": 0.9
     },
     {
-      "name": "Temple",
-      "fields": {
-        "kind_of_thing": "made_by_people",
-        "kind_of_made_thing": "building"
-      },
-      "why": [
-        "rehearsal 2026-10-06-03: it passed every check and has a tile (job_2026_10_06_03_1_01_c1); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-03"
-      ],
-      "from": "job:2026-10-06-03",
-      "familiar": 0.9
-    },
-    {
-      "name": "School",
-      "fields": {
-        "kind_of_thing": "made_by_people",
-        "kind_of_made_thing": "building"
-      },
-      "why": [
-        "rehearsal 2026-10-06-03: it passed every check and has a tile (job_2026_10_06_02_1_01_c2); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-03"
-      ],
-      "from": "job:2026-10-06-03",
-      "familiar": 0.9
-    },
-    {
       "name": "Shop",
       "fields": {
         "kind_of_thing": "made_by_people",
@@ -186,18 +162,6 @@
       ],
       "from": "job:2026-10-06-03",
       "familiar": 0.9
-    },
-    {
-      "name": "Hospital",
-      "fields": {
-        "kind_of_thing": "made_by_people",
-        "kind_of_made_thing": "building"
-      },
-      "why": [
-        "rehearsal 2026-10-06-03: it passed every check and has a tile (job_2026_10_06_01_1_01_c1); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-03"
-      ],
-      "from": "job:2026-10-06-03",
-      "familiar": 0.8
     },
     {
       "name": "Bridge",

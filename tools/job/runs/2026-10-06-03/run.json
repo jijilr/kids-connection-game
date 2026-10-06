@@ -1,7 +1,7 @@
 {
   "id": "2026-10-06-03",
   "started": "2026-10-06",
-  "rehearse": "made_by_people/building",
+  "rehearse": null,
   "cap_inr": 20.0,
   "plan": {
     "asks": [
@@ -223,5 +223,6 @@
     "deepseek": 0.00126,
     "drawing": 0.0538,
     "picture_checks": 5e-05
-  }
+  },
+  "accepted_on": "2026-10-06"
 }
