@@ -1,0 +1,62 @@
+{
+  "about": "What the picture pipeline draws and how. The style block is the contract: it is sent word for word with every sheet, so sheets made months apart match. Change the style only by adding a new version; tiles record the version they were drawn in.",
+  "style": {
+    "version": "v1",
+    "model": "gpt-image-2.5-flare",
+    "quality": "high",
+    "text": "Simple flat illustration for a preschool picture book. Bold, clean shapes with a soft dark outline of even thickness. Bright but natural colours. Gentle, even lighting. No gradients, no photographic texture, no shading beyond one soft shadow under the subject. Plain white background, identical in every cell. No text, letters, numbers, labels, borders or frames. No people and no animals. Every subject is drawn whole, centred, filling about three quarters of its cell, seen from the same slightly raised side view. Where the subject is a place, such as a river or a hill, draw it as a small rounded patch of scenery sitting on the same white background.",
+    "layout": "One image containing a {grid} by {grid} grid of {count} equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:"
+  },
+  "prices": {
+    "usd_per_million_image_output_tokens": 30.0,
+    "usd_per_million_text_input_tokens": 5.0,
+    "checked_on": "2026-10-06",
+    "source": "https://developers.openai.com/api/docs/pricing"
+  },
+  "vision_check": { "model": "gpt-6-luna" },
+  "sheets": {
+    "trial_plants_9": {
+      "purpose": "trial: nine plants on one sheet",
+      "grid": 3,
+      "size": 1536,
+      "cells": [
+        { "thing": "mango_tree",    "draw": "a leafy tree with a thick trunk and yellow-orange mangoes among dark leaves" },
+        { "thing": "banana_plant",  "draw": "a smooth green stem, very large long leaves, one hanging bunch of green bananas" },
+        { "thing": "coconut_tree",  "draw": "a tall thin curved trunk, a crown of long feathery leaves, a cluster of green coconuts" },
+        { "thing": "rose",          "draw": "one red rose on a thorny stem with a few leaves" },
+        { "thing": "lotus",         "draw": "one pink lotus flower with a round flat leaf on a small patch of water" },
+        { "thing": "rice_plant",    "draw": "a clump of green stalks with drooping golden grain heads" },
+        { "thing": "sugarcane",     "draw": "a clump of tall jointed canes with long narrow leaves at the top" },
+        { "thing": "tomato_plant",  "draw": "a small bushy staked plant with red and green tomatoes" },
+        { "thing": "brinjal_plant", "draw": "a small bushy plant with broad leaves and shiny purple brinjals" }
+      ]
+    },
+    "trial_nature_9": {
+      "purpose": "trial: nine things in nature on one sheet",
+      "grid": 3,
+      "size": 1536,
+      "cells": [
+        { "thing": "river",    "draw": "a winding blue river between green banks" },
+        { "thing": "sea",      "draw": "open blue sea with waves to the horizon; no beach and no boats" },
+        { "thing": "lake",     "draw": "a calm round lake ringed by a low grassy shore" },
+        { "thing": "mountain", "draw": "one tall pointed grey mountain with snow on its peak" },
+        { "thing": "hill",     "draw": "one low rounded green hill" },
+        { "thing": "volcano",  "draw": "a cone with a crater, red lava and a plume of smoke" },
+        { "thing": "rock",     "draw": "one large grey boulder" },
+        { "thing": "sand",     "draw": "a small heap of golden sand" },
+        { "thing": "soil",     "draw": "a small heap of dark brown crumbly soil" }
+      ]
+    },
+    "trial_plants_4": {
+      "purpose": "trial control: four of the same plants on one sheet, same pixels per tile",
+      "grid": 2,
+      "size": 1024,
+      "cells": [
+        { "thing": "mango_tree",   "draw": "a leafy tree with a thick trunk and yellow-orange mangoes among dark leaves" },
+        { "thing": "banana_plant", "draw": "a smooth green stem, very large long leaves, one hanging bunch of green bananas" },
+        { "thing": "lotus",        "draw": "one pink lotus flower with a round flat leaf on a small patch of water" },
+        { "thing": "tomato_plant", "draw": "a small bushy staked plant with red and green tomatoes" }
+      ]
+    }
+  }
+}
