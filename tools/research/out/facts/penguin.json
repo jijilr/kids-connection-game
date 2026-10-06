@@ -1,0 +1,46 @@
+{
+  "name": "Penguin",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Penguins are a group of flightless semi-aquatic sea birds which live almost exclusively in the Southern Hemisphere.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "Penguins are seabirds in the family Spheniscidae.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "They spend about half of their lives on land and the other half in the sea.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Penguin",
+      "title": "Penguin",
+      "asked_for": "Penguin",
+      "revision": 1375836195,
+      "fetched_on": "2026-10-06",
+      "sha256": "f9f774a8092e4684b5b5e4a8d8e3e1c070f33fbe11305261741f9fbf96f03568"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Penguin",
+      "title": "Penguin",
+      "asked_for": "Penguin",
+      "revision": 10998447,
+      "fetched_on": "2026-10-06",
+      "sha256": "95eda7daebb7e2c5137427d3ed0a46bf786bf0776172e6e143b259f0fffef7a3"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

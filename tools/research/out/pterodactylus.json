@@ -142,13 +142,13 @@
   "group": "flyer",
   "must_show": [
     {
-      "claim": "The skulls of adult Pterodactylus were long and thin.",
-      "quote": "The skulls of adult Pterodactylus were long and thin, with about 90 narrow and conical teeth.",
+      "claim": "Its wings were made of a skin and muscle membrane stretching from its long fourth finger to its hind limbs.",
+      "quote": "Like all pterosaurs, Pterodactylus had wings formed by a skin and muscle membrane stretching from its elongated fourth finger to its hind limbs.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "The skull and jaws were straight.",
-      "quote": "Another autapomorphy that Pterodactylus has is that the skull and jaws were straight, which are unlike the upwardly curved jaws seen in the related ctenochasmatids.",
+      "claim": "The skulls of adult Pterodactylus were long and thin.",
+      "quote": "The skulls of adult Pterodactylus were long and thin, with about 90 narrow and conical teeth.",
       "source": "wikipedia_en"
     },
     {
@@ -161,6 +161,6 @@
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "long thin straight skull with soft-tissue crest"
+    "why": "long thin skull, soft-tissue crest, wing membrane on long fourth finger"
   }
 }

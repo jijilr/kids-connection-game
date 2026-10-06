@@ -1,0 +1,41 @@
+{
+  "name": "Desert",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A desert is a landscape where little precipitation occurs and, consequently, living conditions create unique biomes and ecosystems.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "quote": "A desert is an arid (dry) biome.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Desert",
+      "title": "Desert",
+      "asked_for": "Desert",
+      "revision": 1374310187,
+      "fetched_on": "2026-10-06",
+      "sha256": "1852a290140696c7897d51f2a8ac870455927fe0fc389dfaba953419dbbcb482"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Desert",
+      "title": "Desert",
+      "asked_for": "Desert",
+      "revision": 10953001,
+      "fetched_on": "2026-10-06",
+      "sha256": "211cd159d725c792abe3905c1532bf736ff80faef313dc3c3ee361e172980f27"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

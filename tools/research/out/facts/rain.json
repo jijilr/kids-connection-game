@@ -1,0 +1,37 @@
+{
+  "name": "Rain",
+  "fields": {},
+  "weak_spots": [
+    {
+      "field": "kind_of_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "nature_not_alive",
+      "quote": "Rain is a kind of precipitation."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Rain",
+      "title": "Rain",
+      "asked_for": "Rain",
+      "revision": 1376785792,
+      "fetched_on": "2026-10-06",
+      "sha256": "8d08e59f9d0e95f3b2984ea5af0c21250a89f069e618c08dc046834d54047ee9"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Rain",
+      "title": "Rain",
+      "asked_for": "Rain",
+      "revision": 10633726,
+      "fetched_on": "2026-10-06",
+      "sha256": "b4f88356c7628d9ad7f23f33d55fed2bd3bcf6af2f1b8e7d23ec9cdaecf204dc"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

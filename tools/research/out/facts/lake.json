@@ -1,0 +1,41 @@
+{
+  "name": "Lake",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A lake is often a naturally occurring, relatively large and fixed body of water on or near the Earth's surface.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_nature": {
+      "value": "water",
+      "quote": "A lake (from Latin: lacus) is a large body of water (larger and deeper than a pond) within a body of land.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Lake",
+      "title": "Lake",
+      "asked_for": "Lake",
+      "revision": 1373554448,
+      "fetched_on": "2026-10-06",
+      "sha256": "1eacbd93dfe2101afb5e0e174926bb5cdb1ec39d841fd5357705dcca7c783029"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Lake",
+      "title": "Lake",
+      "asked_for": "Lake",
+      "revision": 10304424,
+      "fetched_on": "2026-10-06",
+      "sha256": "72388bb2458258617dc218b302ffabf0b6b4634234e1dab41a6f186a3be72e52"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

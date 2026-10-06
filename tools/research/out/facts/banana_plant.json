@@ -1,0 +1,48 @@
+{
+  "name": "Banana plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "A banana is the common name for a type of fruit and also the name for the herbaceous plants that grow it.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Today, they are grown in tropical regions around the world.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_plant",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "grass_grain",
+      "quote": "Thus, they are technically gigantic herbaceous plants."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Musa_(plant)",
+      "title": "Musa (plant)",
+      "asked_for": "Banana plant",
+      "revision": 1375576308,
+      "fetched_on": "2026-10-06",
+      "sha256": "9a7017d12ae0d884a1aec813c19fb4d6e4bffcd61ddb53090434e5705b32ca60"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Banana",
+      "title": "Banana",
+      "asked_for": "Banana",
+      "revision": 11002730,
+      "fetched_on": "2026-10-06",
+      "sha256": "a6b7490d0cb59ada8416ff6027bfd805e39d54114b20b7f01a46be391c3e6902"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

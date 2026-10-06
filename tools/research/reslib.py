@@ -80,12 +80,17 @@ def sources_block(sources: list, longest: int) -> str:
 
 
 class Spend:
-    """Counts tokens and money across calls, and stops the run at the cap."""
+    """Counts tokens and money across calls, and holds the run to its cap.
+
+    The cap is a HARD cap (the owner's rule of 6 Oct 2026): before each call the most
+    that call could cost is set aside, and the call is refused if that could take the
+    total past the cap. So the total can never pass it, whatever the model writes."""
 
     def __init__(self, config: dict, cap_usd: float, prices: dict = None):
         self.prices, self.cap = prices or config["usd_per_million_tokens_at_peak"], cap_usd
         self.inr = config["inr_per_usd"]
         self.hit = self.miss = self.out = self.calls = 0
+        self.set_aside = 0.0
         self.lock = threading.Lock()
 
     @property
@@ -94,27 +99,37 @@ class Spend:
         return (self.hit * p["input_cache_hit"] + self.miss * p["input_cache_miss"]
                 + self.out * p["output"]) / 1_000_000
 
-    def add(self, usage):
+    def reserve(self, letters_read: int, most_written: int) -> float:
+        """Set aside the most one call could cost: every three letters counted as a
+        token at the full price, and the longest answer the call is allowed."""
+        worst = (letters_read / 3 * self.prices["input_cache_miss"] + most_written * self.prices["output"]) / 1_000_000
         with self.lock:
+            if self.usd + self.set_aside + worst > self.cap:
+                raise SystemExit(f"Stopped at the cap: ${self.usd:.4f} spent of ${self.cap:.4f}, and the next call "
+                                 f"could cost up to ${worst:.4f}. What was finished is saved; run again to continue.")
+            self.set_aside += worst
+        return worst
+
+    def add(self, usage, worst: float = 0.0):
+        with self.lock:
+            self.set_aside = max(0.0, self.set_aside - worst)
+            if usage is None:
+                return
             hit = getattr(usage, "prompt_cache_hit_tokens", 0) or 0
             self.hit += hit
             self.miss += usage.prompt_tokens - hit
             self.out += usage.completion_tokens
             self.calls += 1
 
-    def check(self):
-        if self.usd >= self.cap:
-            raise SystemExit(f"Stopped at the cap: ${self.usd:.3f} of ${self.cap:.2f} spent. "
-                             "What was finished is saved; run again to continue.")
-
     def summary(self) -> dict:
         return {"calls": self.calls, "input_tokens_cache_hit": self.hit,
-                "input_tokens_cache_miss": self.miss, "output_tokens": self.out,
+                "input_tokens_cache_miss": self.miss, "output_tokens": self.out, "cap_usd": self.cap,
                 "usd_at_peak_prices": round(self.usd, 4), "inr_at_peak_prices": round(self.usd * self.inr, 1)}
 
     def line(self) -> str:
         return (f"{self.calls} calls, {self.hit + self.miss:,} tokens read, {self.out:,} written: "
-                f"at most ${self.usd:.3f}, about Rs {self.usd * self.inr:.0f} (peak prices).")
+                f"at most ${self.usd:.4f}, about Rs {self.usd * self.inr:.1f} (peak prices), "
+                f"under a hard cap of ${self.cap:.4f}.")
 
 
 def deepseek():
@@ -143,18 +158,24 @@ def ask(client, config: dict, spend: Spend, system: str, user: str, judge: dict 
     needs none, and with it off the answer is steadier (temperature 0 applies) and
     costs a fraction as much. A judge from config.json may reason at length."""
     judge = judge or {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"]}
-    spend.check()
-    options = {}
+    most_written = judge.get("most_written", 4000)
+    worst = spend.reserve(len(system) + len(user), most_written)
+    # the longest answer allowed is what makes the cap hard: the model cannot write past it
+    options = {"max_completion_tokens" if judge["provider"] == "openai" else "max_tokens": most_written}
     if judge["provider"] == "deepseek":
         options["extra_body"] = {"thinking": {"type": judge["thinking"]}}
         if judge["thinking"] == "disabled":
             options["temperature"] = 0
         elif judge.get("reasoning_effort"):
             options["reasoning_effort"] = judge["reasoning_effort"]
-    reply = client.chat.completions.create(
-        model=judge["model"], response_format={"type": "json_object"},
-        messages=[{"role": "system", "content": system}, {"role": "user", "content": user}], **options)
-    spend.add(reply.usage)
+    try:
+        reply = client.chat.completions.create(
+            model=judge["model"], response_format={"type": "json_object"},
+            messages=[{"role": "system", "content": system}, {"role": "user", "content": user}], **options)
+    except Exception:
+        spend.add(None, worst)   # nothing was spent: give the set-aside money back
+        raise
+    spend.add(reply.usage, worst)
     try:
         return json.loads(reply.choices[0].message.content)
     except (json.JSONDecodeError, TypeError):

@@ -1,0 +1,41 @@
+{
+  "name": "Saw",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A saw is a tool consisting of a tough blade, wire, or chain with a hard toothed edge used to cut through material.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_made_thing": {
+      "value": "tool",
+      "quote": "A saw is a tool used to cut things.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Saw",
+      "title": "Saw",
+      "asked_for": "Saw",
+      "revision": 1369933819,
+      "fetched_on": "2026-10-06",
+      "sha256": "6fb3d25bfb97af0b3d8ba7f9cdba5b42eea2fbff6b588f88e12695d0a6f3e625"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Saw",
+      "title": "Saw",
+      "asked_for": "Saw",
+      "revision": 10569065,
+      "fetched_on": "2026-10-06",
+      "sha256": "d5212d0168351645673a714775e9239a3385c6a2d63a723780e6a46b3abd68cc"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -23,9 +23,10 @@
       "found_by": "a page address a person has written under `hints`; its addresses cannot be worked out from a name"
     },
     "kew": {
-      "what": "Royal Botanic Gardens, Kew: for plants",
-      "host": "powo.science.kew.org",
-      "found_by": "a page address a person has written under `hints`, until a search by name is built"
+      "what": "Royal Botanic Gardens, Kew: its plant pages, for plants only",
+      "host": "www.kew.org",
+      "found_by": "an address guessed from the plant's everyday name; where the guess is wrong there is no page",
+      "pattern": "https://www.kew.org/plants/{name}"
     }
   },
   "banned": [
@@ -50,7 +51,7 @@
   "judges": {
     "about": "The models that can do the one step needing judgement: choosing what tells an animal from its look-alikes. Each chooses only from features already checked against the saved pages. `use` names the one whose choice is written into the results.",
     "use": "deepseek-flash",
-    "use_note": "Provisional, until the owner chooses from the benchmark of 6 Oct 2026: with the same lists and question, the everyday DeepSeek model agreed with the hand-written lists most often and cost least.",
+    "chosen_by": "The owner, on 6 Oct 2026, after the benchmark: with the same lists and question the everyday DeepSeek model agreed with the hand-written lists most often and cost least.",
     "deepseek-flash": {
       "provider": "deepseek",
       "model": "deepseek-flash",
@@ -59,7 +60,8 @@
         "input_cache_hit": 0.006,
         "input_cache_miss": 0.3,
         "output": 1.2
-      }
+      },
+      "most_written": 1500
     },
     "deepseek-pro": {
       "provider": "deepseek",
@@ -70,7 +72,9 @@
         "input_cache_hit": 0.044,
         "input_cache_miss": 1.32,
         "output": 3.96
-      }
+      },
+      "most_written": 16000,
+      "note": "Tried and not chosen: it did worse than the everyday model and cost about eighty times as much."
     },
     "openai": {
       "provider": "openai",
@@ -83,6 +87,7 @@
       "note": "The stronger OpenAI model the picture checks already use, through the same key."
     }
   },
+  "caps": "Every cap is a hard cap: the scripts refuse a call that could take the total past it.",
   "prices_checked_on": "2026-10-06",
   "usd_per_million_tokens_at_peak": {
     "input_cache_hit": 0.006,
@@ -90,5 +95,10 @@
     "output": 1.2
   },
   "prices_note": "Peak prices are used for every estimate, so the real cost is this or less. Off-peak is half.",
-  "inr_per_usd": 96.38
+  "inr_per_usd": 96.38,
+  "letters_of_each_page_sent_for_facts": {
+    "wikipedia_en": 2500,
+    "wikipedia_simple": 1500,
+    "kew": 2000
+  }
 }

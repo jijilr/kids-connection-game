@@ -1,0 +1,37 @@
+{
+  "name": "Glass",
+  "fields": {},
+  "weak_spots": [
+    {
+      "field": "kind_of_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "made_by_people",
+      "quote": "Glass is most often formed by rapid cooling (quenching) of the molten form."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Glass",
+      "title": "Glass",
+      "asked_for": "Glass",
+      "revision": 1377663051,
+      "fetched_on": "2026-10-06",
+      "sha256": "c7dfbcabe4da9ef8b88c5844962f32133d087cb6b7acb87a0316274fc9caeee3"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Glass",
+      "title": "Glass",
+      "asked_for": "Glass",
+      "revision": 10696910,
+      "fetched_on": "2026-10-06",
+      "sha256": "7beef1c5627cd677a2c52760e79e254bbe3f653ddb5f52954527aea647368373"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

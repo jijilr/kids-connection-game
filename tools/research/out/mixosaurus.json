@@ -110,13 +110,13 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "It had a sagittal crest on its skull.",
-      "quote": "M. cornalianus has a sagittal crest associated with the expansion of the upper temporal fenestra.",
+      "claim": "Its front limbs were longer than its back limbs.",
+      "quote": "Noteworthy, however, is that each toe had more individual bones than is usual in reptiles, and the front limbs were longer than the back limbs, both adaptations typical of later ichthyosaurs.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its front limbs were longer than its back limbs.",
-      "quote": "Noteworthy, however, is that each toe had more individual bones than is usual in reptiles, and the front limbs were longer than the back limbs, both adaptations typical of later ichthyosaurs.",
+      "claim": "It had a sagittal crest on its skull.",
+      "quote": "M. cornalianus has a sagittal crest associated with the expansion of the upper temporal fenestra.",
       "source": "wikipedia_en"
     }
   ],
@@ -124,6 +124,6 @@
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "Dorsal fin, skull crest, front limbs longer than back."
+    "why": "Dorsal fin, longer front limbs, skull crest."
   }
 }

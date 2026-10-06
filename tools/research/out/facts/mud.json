@@ -1,0 +1,41 @@
+{
+  "name": "Mud",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "Mud is soil, silt, loam or clay, mixed with water.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_nature": {
+      "value": "ground",
+      "quote": "Mud is soil, silt, loam or clay, mixed with water.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Mud",
+      "title": "Mud",
+      "asked_for": "Mud",
+      "revision": 1366176322,
+      "fetched_on": "2026-10-06",
+      "sha256": "960e49508613e32def75e75115b8e24d97bb9a18e37f0f6762171b0121ccaab3"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Mud",
+      "title": "Mud",
+      "asked_for": "Mud",
+      "revision": 9132156,
+      "fetched_on": "2026-10-06",
+      "sha256": "4a6bb295ea895068835c5c5c6483d586377422c9cad903ebb2b3ae1cf08d8bb4"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Cloud",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "In meteorology, a cloud is an aerosol consisting of a visible mass of miniature liquid droplets, ice crystals, or other particles, suspended in the atmosphere of a planetary body or similar space.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_nature": {
+      "value": "sky",
+      "quote": "Clouds are seen in the Earth's homosphere, which includes the troposphere, stratosphere, and mesosphere.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cloud",
+      "title": "Cloud",
+      "asked_for": "Cloud",
+      "revision": 1378288253,
+      "fetched_on": "2026-10-06",
+      "sha256": "d6d971087a37189c4c4236858391b2af54a35b8c7ad763e854b7950c4684992d"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cloud",
+      "title": "Cloud",
+      "asked_for": "Cloud",
+      "revision": 10950168,
+      "fetched_on": "2026-10-06",
+      "sha256": "8f09ca7466458673a07727d1a5b58862ffbb6b63c775db2b5f1d7f243f2d4023"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

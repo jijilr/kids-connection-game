@@ -1,0 +1,43 @@
+{
+  "name": "Train",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A train (from Old French trahiner, from Latin trahere, \"to pull, to draw\") is a series of connected vehicles that run along a railway track and transport people or freight.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "vehicle",
+      "quote": "A train (from Old French trahiner, from Latin trahere, \"to pull, to draw\") is a series of connected vehicles that run along a railway track and transport people or freight."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Train",
+      "title": "Train",
+      "asked_for": "Train",
+      "revision": 1375704845,
+      "fetched_on": "2026-10-06",
+      "sha256": "cf39dc5ce0def117750b6c5079cef93a68cb3bd78c9595421ec0ad224cd30bc9"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Train",
+      "title": "Train",
+      "asked_for": "Train",
+      "revision": 10981052,
+      "fetched_on": "2026-10-06",
+      "sha256": "14ea2e9e8b8532c0760e86d0db2bae7584ff5bac61869a3242196fedc2a5def7"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Sparrow",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "They are small passerine birds which belong to the family Passeridae.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "They are small passerine birds which belong to the family Passeridae.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "This means they are one of the easiest birds to see in the wild.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Sparrow",
+      "title": "Sparrow",
+      "asked_for": "Sparrow",
+      "revision": 10539819,
+      "fetched_on": "2026-10-06",
+      "sha256": "cdcb475d004cfaba7aa50f5b05c5f20bafcab1140b722c884dffd06421bee180"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

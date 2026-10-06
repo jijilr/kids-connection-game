@@ -166,12 +166,17 @@
       "claim": "Allosaurus had a broad rib cage giving it a barrel chest.",
       "quote": "The rib cage is broad, giving it a barrel chest, especially in comparison to less derived theropods like Ceratosaurus.",
       "source": "wikipedia_en"
+    },
+    {
+      "claim": "Allosaurus had a long, slightly sloping tail.",
+      "quote": "Allosaurus was a typical large theropod, having a massive skull on a short neck, a long, slightly sloping tail, and reduced forelimbs.",
+      "source": "wikipedia_en"
     }
   ],
   "told_apart_by": {
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "horns above eyes, barrel chest"
+    "why": "Horns above eyes, barrel chest, long slightly sloping tail."
   }
 }

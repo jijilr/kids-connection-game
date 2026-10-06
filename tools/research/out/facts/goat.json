@@ -1,0 +1,37 @@
+{
+  "name": "Goat",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The goat or domestic goat (Capra hircus) is a species of goat-antelope that is mostly kept as livestock.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "The goat is a member of the family Bovidae and is closely related to the sheep.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "In 2022, there were more than 1.1 billion goats living in the world, of which 150 million were in India.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Goat",
+      "title": "Goat",
+      "asked_for": "Goat",
+      "revision": 1375838111,
+      "fetched_on": "2026-10-06",
+      "sha256": "ed0d7d1137ae94a9e2d29b0ce01315b80e6c0d365fa85c2e56ae20f38c297af4"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

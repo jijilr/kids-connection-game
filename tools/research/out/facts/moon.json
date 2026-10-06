@@ -1,0 +1,37 @@
+{
+  "name": "Moon",
+  "fields": {},
+  "weak_spots": [
+    {
+      "field": "kind_of_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "nature_not_alive",
+      "quote": "The Moon is the only natural satellite of Earth."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Moon",
+      "title": "Moon",
+      "asked_for": "Moon",
+      "revision": 1378452949,
+      "fetched_on": "2026-10-06",
+      "sha256": "dfc029d42a6b231292d876b6bb24a44d80bd2f07b5efbd686f82685a64fbdf5e"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Moon",
+      "title": "Moon",
+      "asked_for": "Moon",
+      "revision": 10950172,
+      "fetched_on": "2026-10-06",
+      "sha256": "a78f635a3f80c94c4ff1149cca5e91ae3174630662bd8d1a76f234bdac2dc891"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

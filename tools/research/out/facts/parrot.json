@@ -1,0 +1,46 @@
+{
+  "name": "Parrot",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Parrots are birds of the order Psittaciformes.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "Parrots are birds of the order Psittaciformes.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "As of 2021, about 50 million parrots (half of all parrots) live in captivity, with the vast majority of these living as pets in people's homes.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Parrot",
+      "title": "Parrot",
+      "asked_for": "Parrot",
+      "revision": 1378340757,
+      "fetched_on": "2026-10-06",
+      "sha256": "0df2e9fe28810a6f46471ecb5ec73948ad42311f17930e866f268993e0d24409"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Parrot",
+      "title": "Parrot",
+      "asked_for": "Parrot",
+      "revision": 10963859,
+      "fetched_on": "2026-10-06",
+      "sha256": "24301f4dc1d52bebe9f45446e39accee6655595dd9d869cc029cb08168259133"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

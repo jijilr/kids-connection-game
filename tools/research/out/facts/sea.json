@@ -1,0 +1,41 @@
+{
+  "name": "Sea",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A sea is a very large body of salty water.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_nature": {
+      "value": "water",
+      "quote": "A sea is a very large body of salty water.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Sea",
+      "title": "Sea",
+      "asked_for": "Sea",
+      "revision": 1378038170,
+      "fetched_on": "2026-10-06",
+      "sha256": "b3366a29a50cf486e500dbc4d1251231296435c67916f8cb1f25aec63edb88c1"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Sea",
+      "title": "Sea",
+      "asked_for": "Sea",
+      "revision": 9876648,
+      "fetched_on": "2026-10-06",
+      "sha256": "74928aa797a2b8caf861734d27f925b6d0404f8515cbf37c23cf024bddbeb4dd"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

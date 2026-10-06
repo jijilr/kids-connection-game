@@ -1,0 +1,48 @@
+{
+  "name": "Clownfish",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The clownfish or anemonefish is a kind of fish.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "fish",
+      "quote": "The clownfish or anemonefish is a kind of fish.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "extinct",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "false",
+      "quote": "Clownfish or anemonefishes (genus Amphiprion) are saltwater fish found in the warm and tropical waters of the Indo-Pacific."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Clownfish",
+      "title": "Clownfish",
+      "asked_for": "Clownfish",
+      "revision": 1377684861,
+      "fetched_on": "2026-10-06",
+      "sha256": "9ad720dbc1cdd818419747e01b84a9ba1f5b67b352db7d81865a2ae809f2c15a"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Clownfish",
+      "title": "Clownfish",
+      "asked_for": "Clownfish",
+      "revision": 10483820,
+      "fetched_on": "2026-10-06",
+      "sha256": "2040db7e6ec123e7ba54d0365ede23ce1480a8c5d3dcf111bd945787bf77ec70"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Balloon",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "Modern-day balloons are made from materials such as rubber, polychloroprene, or a nylon fabric, and can come in many different colors.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "quote": "Balloons can also be filled with water, known as \"water balloons\", are a kind of toy, best known for its use of water balloon fights.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Balloon",
+      "title": "Balloon",
+      "asked_for": "Balloon",
+      "revision": 1378060080,
+      "fetched_on": "2026-10-06",
+      "sha256": "151598b2432fed4364046a34b01c1e46f1cdaa8c0fad34515c30b9e2bf5e220a"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Balloon",
+      "title": "Balloon",
+      "asked_for": "Balloon",
+      "revision": 11007778,
+      "fetched_on": "2026-10-06",
+      "sha256": "46265173595eab3d1f55808f69352517929542ec79dfb3c4d56beaed102606eb"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

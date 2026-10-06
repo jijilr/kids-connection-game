@@ -1,0 +1,46 @@
+{
+  "name": "Cat",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The cat (Felis catus), also called domestic cat and house cat, is a small domesticated carnivorous mammal.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "The cat (Felis catus), also called domestic cat and house cat, is a small domesticated carnivorous mammal.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Today, the domestic cat occurs across the globe and is valued by humans for companionship and its ability to kill vermin.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cat",
+      "title": "Cat",
+      "asked_for": "Cat",
+      "revision": 1378858485,
+      "fetched_on": "2026-10-06",
+      "sha256": "96bf03cb8178db2ee9f2d269501e52d281d2e06c2a494a4c4bfb93101767dcdc"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cat",
+      "title": "Cat",
+      "asked_for": "Cat",
+      "revision": 11013735,
+      "fetched_on": "2026-10-06",
+      "sha256": "0528953fb297e38cde84064b98065072a662db11813abf8a8a55575f1e309367"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

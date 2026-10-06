@@ -1,0 +1,41 @@
+{
+  "name": "River",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A river is a natural stream of fresh water that flows on land or inside caves towards another body of water at a lower elevation, such as an ocean, lake, or another river.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_nature": {
+      "value": "water",
+      "quote": "A river is a stream of water that flows through a channel on the surface of the ground.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/River",
+      "title": "River",
+      "asked_for": "River",
+      "revision": 1373574441,
+      "fetched_on": "2026-10-06",
+      "sha256": "330d4bc58d5c3f02ec4be9fe322cb65f0464e6be2a4e097179302c43f3776c77"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/River",
+      "title": "River",
+      "asked_for": "River",
+      "revision": 10645133,
+      "fetched_on": "2026-10-06",
+      "sha256": "76aab7192c3b207e5dafd533cc58071c876848e816d092bb7a2d2bd3f0bd0a87"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

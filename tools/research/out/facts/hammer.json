@@ -1,0 +1,43 @@
+{
+  "name": "Hammer",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A hammer is a tool for putting nails into objects such as wood.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "tool",
+      "quote": "A hammer is a tool for putting nails into objects such as wood."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Hammer",
+      "title": "Hammer",
+      "asked_for": "Hammer",
+      "revision": 1367741435,
+      "fetched_on": "2026-10-06",
+      "sha256": "dfaa1039883debde75015b6758980684bae41e349be348112b2de9b7a26a480a"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Hammer",
+      "title": "Hammer",
+      "asked_for": "Hammer",
+      "revision": 10502119,
+      "fetched_on": "2026-10-06",
+      "sha256": "e0f98f2c47250653f9bb81ebfb8a3e326e443d9796cf9ee1d1f7fe78ad189bc2"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

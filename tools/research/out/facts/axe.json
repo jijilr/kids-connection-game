@@ -1,0 +1,43 @@
+{
+  "name": "Axe",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "An axe (or ax) is an ancient tool.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "tool",
+      "quote": "An axe (or ax) is an ancient tool."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Axe",
+      "title": "Axe",
+      "asked_for": "Axe",
+      "revision": 1378313540,
+      "fetched_on": "2026-10-06",
+      "sha256": "a5585575d760c6b0ea82d61046394ccc4c89f09d7d0e80087215bd6509227c93"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Axe",
+      "title": "Axe",
+      "asked_for": "Axe",
+      "revision": 9580523,
+      "fetched_on": "2026-10-06",
+      "sha256": "07b9445115391a9ece6dcb9fbd009fdadb91a00a410e2b84ca95b01996d21839"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

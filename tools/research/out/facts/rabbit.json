@@ -1,0 +1,46 @@
+{
+  "name": "Rabbit",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Rabbits, or bunnies, are small mammals in the family Leporidae",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "Rabbits, or bunnies, are small mammals in the family Leporidae",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "They are familiar throughout the world as a small herbivore, a prey animal, a domesticated form of livestock, and a pet, having a widespread effect on ecologies and cultures.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Rabbit",
+      "title": "Rabbit",
+      "asked_for": "Rabbit",
+      "revision": 1378626872,
+      "fetched_on": "2026-10-06",
+      "sha256": "f732ced9fd97a12813c35b8addb742f539d7518efb2bba22faacd2c868b4fe28"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Rabbit",
+      "title": "Rabbit",
+      "asked_for": "Rabbit",
+      "revision": 10890899,
+      "fetched_on": "2026-10-06",
+      "sha256": "852d98433631dbc261e221e28802f3babf413f9d36f20960b1e3756d3d7dbc2f"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

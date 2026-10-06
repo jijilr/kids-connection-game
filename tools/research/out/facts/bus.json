@@ -1,0 +1,43 @@
+{
+  "name": "Bus",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A bus is a large wheeled vehicle meant to carry many passengers along with the bus driver.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "vehicle",
+      "quote": "A bus is a large wheeled vehicle meant to carry many passengers along with the bus driver."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Bus",
+      "title": "Bus",
+      "asked_for": "Bus",
+      "revision": 1370514147,
+      "fetched_on": "2026-10-06",
+      "sha256": "bf274508ae3b409a232accea1ed595615c694fcaea73332330dbf8b12d30a141"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Bus",
+      "title": "Bus",
+      "asked_for": "Bus",
+      "revision": 10905659,
+      "fetched_on": "2026-10-06",
+      "sha256": "393d8e4373be6f9657924283ff86fc9287e4d1b591c9a563d93d1abf95b61ff6"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

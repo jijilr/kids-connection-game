@@ -1,0 +1,48 @@
+{
+  "name": "Honeybee",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "A honey bee (also spelled honeybee) is a eusocial flying insect from the genus Apis of the largest bee family, Apidae.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "insect",
+      "quote": "A honey bee (also spelled honeybee) is a eusocial flying insect from the genus Apis of the largest bee family, Apidae.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "extinct",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "false",
+      "quote": "Although honey bees represent only a small fraction of the roughly 20,000 known species of bees, they are the bee clade most familiar to humans and are also the most valuable beneficial insects to agriculture and horticulture."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Honey_bee",
+      "title": "Honey bee",
+      "asked_for": "Honeybee",
+      "revision": 1377654009,
+      "fetched_on": "2026-10-06",
+      "sha256": "f237ed7609bb1fbbed73087ee02f2b2b58249d579e8fb63f7a4c21fa068f187d"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Honey_bee",
+      "title": "Honey bee",
+      "asked_for": "Honeybee",
+      "revision": 10938569,
+      "fetched_on": "2026-10-06",
+      "sha256": "2b8b127298064c06ba1cbdc9036400be78de84d7ba1dfb974fd09821cc193a2a"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

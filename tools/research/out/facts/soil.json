@@ -1,0 +1,37 @@
+{
+  "name": "Soil",
+  "fields": {},
+  "weak_spots": [
+    {
+      "field": "kind_of_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "nature_not_alive",
+      "quote": "Soil is a mixture of rock, minerals, water, air, and organic matter."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Soil",
+      "title": "Soil",
+      "asked_for": "Soil",
+      "revision": 1377313926,
+      "fetched_on": "2026-10-06",
+      "sha256": "b27078069ec9b36d511eedeb0db49fbca5b7f842d14ef0934d345ff79fc5489c"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Soil",
+      "title": "Soil",
+      "asked_for": "Soil",
+      "revision": 10942445,
+      "fetched_on": "2026-10-06",
+      "sha256": "bb0b902c282c42f8bc8752a8b55543fb2f42ac2542093e59b3d49f76fe60ba08"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Sun",
+  "fields": {},
+  "weak_spots": [
+    {
+      "field": "kind_of_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "nature_not_alive",
+      "quote": "The Sun is the star located at the centre of the Solar System."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Sun",
+      "title": "Sun",
+      "asked_for": "Sun",
+      "revision": 1378521605,
+      "fetched_on": "2026-10-06",
+      "sha256": "8d9a6a05c4cdf634631c0fbd0c88418bd61a921996e612ceff0dc740853771d2"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Sun",
+      "title": "Sun",
+      "asked_for": "Sun",
+      "revision": 11003282,
+      "fetched_on": "2026-10-06",
+      "sha256": "c8794c81d04bdbdc74b7248e064cac71fd96c27be38ccc2b532d48d3083267d1"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

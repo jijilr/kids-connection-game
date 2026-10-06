@@ -1,0 +1,39 @@
+{
+  "name": "Chilli plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Chili pepper is the fruit of a series of plants called Capsicum (nightshade family).",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Chilis are now grown all over the world, but originally, they came from Mexico.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_plant",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "vegetable",
+      "quote": "They are used as spices or as vegetables, and also have some use in medicine."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Chili_pepper",
+      "title": "Chili pepper",
+      "asked_for": "Chilli",
+      "revision": 10947053,
+      "fetched_on": "2026-10-06",
+      "sha256": "a51f59a1e039966486f1b05a9769150495d9d2c2b53a00ac3c8e3cf5b6e3b7d8"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

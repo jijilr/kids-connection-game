@@ -1,0 +1,46 @@
+{
+  "name": "Goldfish",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The goldfish (Carassius auratus) is a freshwater fish in the family Cyprinidae of the order Cypriniformes.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "fish",
+      "quote": "The goldfish (Carassius auratus) is a freshwater fish in the family Cyprinidae of the order Cypriniformes.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "It is commonly kept as a pet in indoor aquariums, and is one of the most popular aquarium fish.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Goldfish",
+      "title": "Goldfish",
+      "asked_for": "Goldfish",
+      "revision": 1371250621,
+      "fetched_on": "2026-10-06",
+      "sha256": "bef98b9711caa1a0e3e148407c69fcf5f943ee3556795c64481281aea0eabad2"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Goldfish",
+      "title": "Goldfish",
+      "asked_for": "Goldfish",
+      "revision": 10945248,
+      "fetched_on": "2026-10-06",
+      "sha256": "168807602c7ff5ba2145febfafb76fb4fb290351722ba1314c475ec2462bb597"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

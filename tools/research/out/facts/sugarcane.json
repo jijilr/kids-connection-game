@@ -1,0 +1,46 @@
+{
+  "name": "Sugarcane",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Sugarcane (or sugar cane) is a Genus of  plants.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Grown in tropical and subtropical regions, sugarcane is the world's largest crop by production quantity, totalling 1.9 billion tonnes in 2020, with Brazil accounting for 40% of the world total.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_plant": {
+      "value": "grass_grain",
+      "quote": "Sugarcane or sugar cane is a species of tall, perennial grass (in the genus Saccharum, tribe Andropogoneae) that is used for sugar production.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Sugarcane",
+      "title": "Sugarcane",
+      "asked_for": "Sugarcane",
+      "revision": 1378756618,
+      "fetched_on": "2026-10-06",
+      "sha256": "6b6e89a5046503f2aed70e960905b65d34c9c180304cd7c4b7a4b27939c51cf6"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Sugarcane",
+      "title": "Sugarcane",
+      "asked_for": "Sugarcane",
+      "revision": 10936017,
+      "fetched_on": "2026-10-06",
+      "sha256": "42c2c8e52fd87631338c53fbe3527695eb69e51651a5814f6ab0523f89e4860c"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

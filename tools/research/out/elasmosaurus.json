@@ -135,13 +135,13 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "Elasmosaurus had a small head.",
-      "quote": "Measuring 10.3 meters (34 ft) in length, Elasmosaurus would have had a streamlined body with paddle-like limbs, a short tail, a small head, and an extremely long neck.",
+      "claim": "The skull would have been slender and triangular.",
+      "quote": "The skull would have been slender and triangular, with large, fang-like teeth at the front, and smaller teeth towards the back.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Elasmosaurus had a short tail.",
-      "quote": "Measuring 10.3 meters (34 ft) in length, Elasmosaurus would have had a streamlined body with paddle-like limbs, a short tail, a small head, and an extremely long neck.",
+      "claim": "The paddles at the front were longer than those at the back.",
+      "quote": "The paddles at the front (the pectoral paddles) were longer than those at the back (the pelvic paddles).",
       "source": "wikipedia_en"
     }
   ],
@@ -149,6 +149,6 @@
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "Extremely long neck, small head, short tail."
+    "why": "Extremely long neck, slender triangular skull, longer front paddles."
   }
 }

@@ -1,0 +1,43 @@
+{
+  "name": "House",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A house is a building that is made for people to live in.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "building",
+      "quote": "A house is a residential building."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/House",
+      "title": "House",
+      "asked_for": "House",
+      "revision": 1377728146,
+      "fetched_on": "2026-10-06",
+      "sha256": "4c1e1e03192cdcbcfcc72422a013dd8e2244514b6957ada3e70d678cf41e27b2"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/House",
+      "title": "House",
+      "asked_for": "House",
+      "revision": 10933602,
+      "fetched_on": "2026-10-06",
+      "sha256": "f07596d5a2dcd76afee03f0e7f5067e84905797c80ac715f95ffbd1aa006be19"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

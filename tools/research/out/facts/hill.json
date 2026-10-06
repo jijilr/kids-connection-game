@@ -1,0 +1,41 @@
+{
+  "name": "Hill",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A hill is a landform that extends above the surrounding terrain.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "quote": "A hill is a landform that extends above the surrounding terrain.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Hill",
+      "title": "Hill",
+      "asked_for": "Hill",
+      "revision": 1371287462,
+      "fetched_on": "2026-10-06",
+      "sha256": "f27588933f2095a0047ef27442d32ca9326aecd82643878a9ef51a6f6b040a08"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Hill",
+      "title": "Hill",
+      "asked_for": "Hill",
+      "revision": 10828783,
+      "fetched_on": "2026-10-06",
+      "sha256": "acfaf1d8dba25bdbc3b510a794677cf5f170a839cc5a3fb99761022ac84fe089"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

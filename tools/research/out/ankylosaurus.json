@@ -148,11 +148,6 @@
   "group": "land_grazer",
   "must_show": [
     {
-      "claim": "Ankylosaurus had a wide, low skull.",
-      "quote": "It had a wide, low skull, with two horns pointing backward from the back of the head, and two horns below these that pointed backward and down.",
-      "source": "wikipedia_en"
-    },
-    {
       "claim": "Ankylosaurus was covered in armor plates, with bony half-rings on its neck.",
       "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
       "source": "wikipedia_en"
@@ -161,12 +156,17 @@
       "claim": "Ankylosaurus had a large club on the end of its tail.",
       "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
       "source": "wikipedia_en"
+    },
+    {
+      "claim": "Ankylosaurus had a wide, low skull.",
+      "quote": "It had a wide, low skull, with two horns pointing backward from the back of the head, and two horns below these that pointed backward and down.",
+      "source": "wikipedia_en"
     }
   ],
   "told_apart_by": {
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "wide low skull, armor plates, tail club"
+    "why": "armor plates, tail club, wide low skull"
   }
 }

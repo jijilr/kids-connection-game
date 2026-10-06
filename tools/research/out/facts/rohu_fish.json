@@ -1,0 +1,37 @@
+{
+  "name": "Rohu fish",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The rohu, rui, ruhi, rou or roho labeo (Labeo rohita) is a species of fish of the carp family, found in rivers in South Asia.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "fish",
+      "quote": "The rohu, rui, ruhi, rou or roho labeo (Labeo rohita) is a species of fish of the carp family, found in rivers in South Asia.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "It is a large omnivore and extensively used in aquaculture.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Rohu",
+      "title": "Rohu",
+      "asked_for": "Rohu",
+      "revision": 1366667566,
+      "fetched_on": "2026-10-06",
+      "sha256": "7c3b102f7291c658d4ccccdec9ddfd080fe4d373887b9282a23c2c17d99a121c"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

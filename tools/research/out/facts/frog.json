@@ -1,0 +1,46 @@
+{
+  "name": "Frog",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Frogs are amphibians and vertebrates of the order Anura.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "amphibian",
+      "quote": "Frogs are amphibians and vertebrates of the order Anura.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Frogs live all over the world.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Frog",
+      "title": "Frog",
+      "asked_for": "Frog",
+      "revision": 1378507486,
+      "fetched_on": "2026-10-06",
+      "sha256": "705bf3b3f37d329d2038c764d2610e37ee7114a949c8ece00535819ac2c0b1c5"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Frog",
+      "title": "Frog",
+      "asked_for": "Frog",
+      "revision": 10859291,
+      "fetched_on": "2026-10-06",
+      "sha256": "f8317133ea2236bb5f45be8cb63b0ebf4690722629de83eb15998a1206af2410"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

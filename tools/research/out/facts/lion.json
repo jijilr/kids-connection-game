@@ -1,0 +1,46 @@
+{
+  "name": "Lion",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The lion (Panthera leo) is a large mammal of the Felidae (cat) family.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "The lion (Panthera leo) is a large mammal of the Felidae (cat) family.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Today, wild lions live in sub-Saharan Africa and western India.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Lion",
+      "title": "Lion",
+      "asked_for": "Lion",
+      "revision": 1378662097,
+      "fetched_on": "2026-10-06",
+      "sha256": "f56a61e0f8d61be2034d2b8a1cfe844d285c2e9f680e78e7073523c0bac109f8"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Lion",
+      "title": "Lion",
+      "asked_for": "Lion",
+      "revision": 11013456,
+      "fetched_on": "2026-10-06",
+      "sha256": "e2424e0746ed97e58e6b1e890517764403fc39219da9a4746e3987a32fff9969"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

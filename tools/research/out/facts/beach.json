@@ -1,0 +1,41 @@
+{
+  "name": "Beach",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A beach is a landform alongside a body of water which consists of loose particles.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "quote": "A beach is a landform alongside a body of water which consists of loose particles.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Beach",
+      "title": "Beach",
+      "asked_for": "Beach",
+      "revision": 1325598349,
+      "fetched_on": "2026-10-06",
+      "sha256": "a20e87e75697ba939cc7f92522744aca359204c18798e66748690680282d7cbd"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Beach",
+      "title": "Beach",
+      "asked_for": "Beach",
+      "revision": 10443234,
+      "fetched_on": "2026-10-06",
+      "sha256": "6ff524cae0376206f608594f07a1e12633e6e74de973f3f673024e5a90b8b968"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

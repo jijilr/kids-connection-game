@@ -1,0 +1,54 @@
+{
+  "name": "Mango tree",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Mangifera indica, commonly known as the mango after its fruit, is an evergreen species of flowering plant in the family Anacardiaceae.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_plant": {
+      "value": "tree",
+      "quote": "It is a large fruit tree, capable of growing to a height and width of 30 m (100 ft).",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "extinct",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "false",
+      "quote": "It is a large fruit tree, capable of growing to a height and width of 30 m (100 ft)."
+    },
+    {
+      "field": "tree_academic",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "true",
+      "quote": "It is a large fruit tree, capable of growing to a height and width of 30 m (100 ft)."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Mangifera_indica",
+      "title": "Mangifera indica",
+      "asked_for": "Mango tree",
+      "revision": 1377720715,
+      "fetched_on": "2026-10-06",
+      "sha256": "195898543b978b623d468ee8f441130ff0d32f306b40b05823b32181451c76cf"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Mango",
+      "title": "Mango",
+      "asked_for": "Mango tree",
+      "revision": 10999604,
+      "fetched_on": "2026-10-06",
+      "sha256": "cedb73b7d206b89d1e52646d99ba067aa6edeeeebe2f34ab64ba2a029d78cde5"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

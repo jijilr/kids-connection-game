@@ -1,0 +1,46 @@
+{
+  "name": "Crow",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "A crow is a bird of the genus Corvus, or more broadly, a synonym for all of Corvus.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "A crow is a bird of the genus Corvus, or more broadly, a synonym for all of Corvus.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "The genus has 40 or so members on all temperate continents except for South America, and some islands.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Crow",
+      "title": "Crow",
+      "asked_for": "Crow",
+      "revision": 1377278984,
+      "fetched_on": "2026-10-06",
+      "sha256": "cd4bab1e8cd8f3b4906f950fbfb6b029e865ea8367f1b91d001a9fdbff7e20c1"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Crow",
+      "title": "Crow",
+      "asked_for": "Crow",
+      "revision": 11014375,
+      "fetched_on": "2026-10-06",
+      "sha256": "6bfc7ff5e0067750ede425a9dfa7718e74e42c2c4a020a48f706bd0b66b61068"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

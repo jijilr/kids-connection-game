@@ -1,0 +1,48 @@
+{
+  "name": "Pumpkin plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "A pumpkin is a type of a squash which is a fruit.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "but cultivars are now grown globally for culinary, decorative, and other culturally-specific purposes.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_plant",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "vegetable",
+      "quote": "A pumpkin is a type of a squash which is a fruit."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Pumpkin",
+      "title": "Pumpkin",
+      "asked_for": "Pumpkin",
+      "revision": 1378066362,
+      "fetched_on": "2026-10-06",
+      "sha256": "e55f3a2bad1cd11b9c2cd42eb6af326ca5694ca8dec6307006eab9ec116af92c"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Pumpkin",
+      "title": "Pumpkin",
+      "asked_for": "Pumpkin",
+      "revision": 10944853,
+      "fetched_on": "2026-10-06",
+      "sha256": "3774a6cd7684d24f6fdcd37f661e02c26b5e10052c1260e6eb74fd9184276717"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

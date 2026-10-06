@@ -1,0 +1,37 @@
+{
+  "name": "Star",
+  "fields": {},
+  "weak_spots": [
+    {
+      "field": "kind_of_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "nature_not_alive",
+      "quote": "A star is a luminous spheroid of plasma held together by self-gravity."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Star",
+      "title": "Star",
+      "asked_for": "Star",
+      "revision": 1370831113,
+      "fetched_on": "2026-10-06",
+      "sha256": "f2695d5cc0433486541af4534eeeb9fd2881f672ece784cabdb4338d52b5ec85"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Star",
+      "title": "Star",
+      "asked_for": "Star",
+      "revision": 10938079,
+      "fetched_on": "2026-10-06",
+      "sha256": "f9a0aae4e5a590c8136c2b8c0bba499c2b1c142f8cfa7be19f89bf66a3b8a435"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

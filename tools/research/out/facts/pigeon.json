@@ -1,0 +1,46 @@
+{
+  "name": "Pigeon",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Columbidae is a bird family consisting of doves and pigeons.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "Pigeons or doves are in the bird family Columbidae.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "The family occurs worldwide, often in close proximity to humans, but the greatest diversity is in the Indomalayan and Australasian realms.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Columbidae",
+      "title": "Columbidae",
+      "asked_for": "Pigeon",
+      "revision": 1378684651,
+      "fetched_on": "2026-10-06",
+      "sha256": "34e3002f3b4f562e2b37aa07bbfb5ad125461f4e4580a69e95eb8819484c3c37"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Dove",
+      "title": "Dove",
+      "asked_for": "Pigeon",
+      "revision": 10914409,
+      "fetched_on": "2026-10-06",
+      "sha256": "09d7432f8f7d7aa9e83f58e1adf16d4e0fccbe8be2cc41c1b38cd4662ac9597d"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

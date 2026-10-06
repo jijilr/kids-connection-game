@@ -1,0 +1,37 @@
+{
+  "name": "Brinjal plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Solanum melongena is a plant species in the nightshade family Solanaceae, grown worldwide for its edible fruit, typically used as a vegetable in cooking.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Solanum melongena is a plant species in the nightshade family Solanaceae, grown worldwide for its edible fruit, typically used as a vegetable in cooking.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_plant": {
+      "value": "vegetable",
+      "quote": "Solanum melongena is a plant species in the nightshade family Solanaceae, grown worldwide for its edible fruit, typically used as a vegetable in cooking.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Eggplant",
+      "title": "Eggplant",
+      "asked_for": "Brinjal",
+      "revision": 1378219029,
+      "fetched_on": "2026-10-06",
+      "sha256": "b7b489e9f17752023ff0f7cff1badd662ad4aebdb46a349b398d39f3e24e7066"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

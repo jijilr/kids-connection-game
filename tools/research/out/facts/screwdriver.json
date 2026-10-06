@@ -1,0 +1,43 @@
+{
+  "name": "Screwdriver",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A  screwdriver is a tool, manual or powered, used for turning screws.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "tool",
+      "quote": "A screwdriver is a tool used to turn (or \"drive\") screws into something."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Screwdriver",
+      "title": "Screwdriver",
+      "asked_for": "Screwdriver",
+      "revision": 1373940398,
+      "fetched_on": "2026-10-06",
+      "sha256": "21870238a7ed1081d073205bb76489c530e8babaebe5582936dffbfb3131adc2"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Screwdriver",
+      "title": "Screwdriver",
+      "asked_for": "Screwdriver",
+      "revision": 9713262,
+      "fetched_on": "2026-10-06",
+      "sha256": "0ffb54b5eb33d166bd156bc8ef750cc6317bcb3e7ef97f9e3100f8b6d0d438a0"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

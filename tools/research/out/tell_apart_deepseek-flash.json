@@ -2,13 +2,14 @@
   "judge": "deepseek-flash",
   "model": "deepseek-flash",
   "date": "2026-10-06",
-  "seconds": 2,
+  "seconds": 8,
   "spend": {
     "calls": 5,
-    "input_tokens_cache_hit": 0,
-    "input_tokens_cache_miss": 6997,
-    "output_tokens": 1177,
-    "usd_at_peak_prices": 0.0035,
+    "input_tokens_cache_hit": 1792,
+    "input_tokens_cache_miss": 5325,
+    "output_tokens": 1220,
+    "cap_usd": 0.0104,
+    "usd_at_peak_prices": 0.0031,
     "inr_at_peak_prices": 0.3
   },
   "animals": {
@@ -35,7 +36,7 @@
           "source": "wikipedia_en"
         }
       ],
-      "why": "massive skull, narrow snout, short deep neck, long hindlimbs"
+      "why": "Massive skull, narrow snout, short deep neck, long hindlimbs; bipedal with heavy tail."
     },
     "Giganotosaurus": {
       "must_show": [
@@ -55,7 +56,7 @@
           "source": "wikipedia_en"
         }
       ],
-      "why": "low skull, downward chin, ridge crest"
+      "why": "Low skull, downward-pointing chin, ridge-like crest in front of eye."
     },
     "Velociraptor": {
       "must_show": [
@@ -80,7 +81,7 @@
           "source": "wikipedia_simple"
         }
       ],
-      "why": "upturned snout, long-fingered hands, sickle claw, feathers"
+      "why": "Upturned snout, long three-fingered hands, sickle claw, feathers."
     },
     "Allosaurus": {
       "must_show": [
@@ -93,9 +94,14 @@
           "claim": "Allosaurus had a broad rib cage giving it a barrel chest.",
           "quote": "The rib cage is broad, giving it a barrel chest, especially in comparison to less derived theropods like Ceratosaurus.",
           "source": "wikipedia_en"
+        },
+        {
+          "claim": "Allosaurus had a long, slightly sloping tail.",
+          "quote": "Allosaurus was a typical large theropod, having a massive skull on a short neck, a long, slightly sloping tail, and reduced forelimbs.",
+          "source": "wikipedia_en"
         }
       ],
-      "why": "horns above eyes, barrel chest"
+      "why": "Horns above eyes, barrel chest, long slightly sloping tail."
     },
     "Spinosaurus": {
       "must_show": [
@@ -120,7 +126,7 @@
           "source": "wikipedia_simple"
         }
       ],
-      "why": "crocodile-like skull, back sail, paddle tail, head crest"
+      "why": "Crocodile-like skull, back sail, paddle-like tail, head crest."
     },
     "Brachiosaurus": {
       "must_show": [
@@ -180,7 +186,7 @@
           "source": "wikipedia_en"
         }
       ],
-      "why": "whip tail, horizontal body, very long tail"
+      "why": "whip tail, horizontal body, tail half of length"
     },
     "Argentinosaurus": {
       "must_show": [
@@ -190,12 +196,17 @@
           "source": "wikipedia_simple"
         },
         {
+          "claim": "It moved on four legs.",
+          "quote": "How it moved:\non four legs",
+          "source": "nhm_dino_directory"
+        },
+        {
           "claim": "It had a long tail.",
           "quote": "It was an enormous, long-necked, long-tailed, quadrupedal, plant-eater from Argentina, South America during the Cretaceous period.",
           "source": "wikipedia_simple"
         }
       ],
-      "why": "long neck and tail, no unique shape"
+      "why": "long neck, four legs, long tail"
     },
     "Amargasaurus": {
       "must_show": [
@@ -215,7 +226,7 @@
           "source": "wikipedia_en"
         }
       ],
-      "why": "tall neck spines, bowed spines, paddle tips"
+      "why": "tall neck spines, bowed spines, paddle-shaped spines"
     },
     "Triceratops": {
       "must_show": [
@@ -240,11 +251,6 @@
     "Ankylosaurus": {
       "must_show": [
         {
-          "claim": "Ankylosaurus had a wide, low skull.",
-          "quote": "It had a wide, low skull, with two horns pointing backward from the back of the head, and two horns below these that pointed backward and down.",
-          "source": "wikipedia_en"
-        },
-        {
           "claim": "Ankylosaurus was covered in armor plates, with bony half-rings on its neck.",
           "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
           "source": "wikipedia_en"
@@ -253,9 +259,14 @@
           "claim": "Ankylosaurus had a large club on the end of its tail.",
           "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
           "source": "wikipedia_en"
+        },
+        {
+          "claim": "Ankylosaurus had a wide, low skull.",
+          "quote": "It had a wide, low skull, with two horns pointing backward from the back of the head, and two horns below these that pointed backward and down.",
+          "source": "wikipedia_en"
         }
       ],
-      "why": "wide low skull, armor plates, tail club"
+      "why": "armor plates, tail club, wide low skull"
     },
     "Stegosaurus": {
       "must_show": [
@@ -270,12 +281,12 @@
           "source": "wikipedia_en"
         },
         {
-          "claim": "Stegosaurus had a short neck and a small head.",
-          "quote": "It had a short neck and a small head, meaning it most likely ate low-lying bushes and shrubs.",
+          "claim": "Stegosaurus had short fore limbs and long hind limbs.",
+          "quote": "They were large, heavily built, herbivorous quadrupeds with rounded backs, short fore limbs, long hind limbs, and tails held high in the air.",
           "source": "wikipedia_en"
         }
       ],
-      "why": "back plates, tail spikes, short neck"
+      "why": "back plates, tail spikes, short forelimbs"
     },
     "Pachycephalosaurus": {
       "must_show": [
@@ -290,12 +301,12 @@
           "source": "wikipedia_en"
         },
         {
-          "claim": "Its head had a small muzzle that ended in a pointed beak.",
-          "quote": "Pachycephalosaurus had a small muzzle that ended in a pointed beak.",
+          "claim": "The back of the dome had bony knobs, and short bony spikes stuck up from the snout.",
+          "quote": "The dome's rear aspect was edged with bony knobs and short bony spikes projected upwards from the snout.",
           "source": "wikipedia_en"
         }
       ],
-      "why": "bipedal, bony dome, pointed beak"
+      "why": "bipedal, bony dome, knobs and snout spikes"
     },
     "Parasaurolophus": {
       "must_show": [
@@ -315,7 +326,7 @@
           "source": "wikipedia_en"
         }
       ],
-      "why": "long tubular crest, two- or four-legged"
+      "why": "long tubular crest, curved crest, two or four legs"
     },
     "Mosasaurus": {
       "must_show": [
@@ -325,17 +336,17 @@
           "source": "wikipedia_en"
         },
         {
-          "claim": "Its rib cage was unusually deep and formed an almost perfect semicircle, giving a barrel-shaped chest.",
-          "quote": "Compared to other mosasaurs, the rib cage of Mosasaurus is unusually deep and forms an almost perfect semicircle, giving it a barrel-shaped chest.",
+          "claim": "Its four limbs were shaped into paddles.",
+          "quote": "Its four limbs were shaped into paddles to steer the animal underwater.",
           "source": "wikipedia_en"
         },
         {
-          "claim": "Its skull was conical and tapered to a short snout that reached a little past the frontmost teeth.",
-          "quote": "The skull of Mosasaurus is conical and tapers off to a short snout which extends a little beyond the frontmost teeth.",
+          "claim": "Its rib cage was unusually deep and formed an almost perfect semicircle, giving a barrel-shaped chest.",
+          "quote": "Compared to other mosasaurs, the rib cage of Mosasaurus is unusually deep and forms an almost perfect semicircle, giving it a barrel-shaped chest.",
           "source": "wikipedia_en"
         }
       ],
-      "why": "Tail with downward fluke, deep barrel chest, conical skull with short snout."
+      "why": "Tail with downward fluke, paddle limbs, deep barrel chest."
     },
     "Kronosaurus": {
       "must_show": [
@@ -345,7 +356,7 @@
           "source": "wikipedia_en"
         },
         {
-          "claim": "Kronosaurus had a short tail.",
+          "claim": "Kronosaurus had a short neck.",
           "quote": "Like all plesiosaurs, Kronosaurus has four paddle-like limbs, a short tail and, like most pliosaurids, a long head and a short neck.",
           "source": "wikipedia_en"
         },
@@ -355,7 +366,7 @@
           "source": "wikipedia_en"
         }
       ],
-      "why": "Long head, short tail, back flippers bigger than front."
+      "why": "Long head, short neck, bigger rear flippers."
     },
     "Mixosaurus": {
       "must_show": [
@@ -365,28 +376,28 @@
           "source": "wikipedia_en"
         },
         {
-          "claim": "It had a sagittal crest on its skull.",
-          "quote": "M. cornalianus has a sagittal crest associated with the expansion of the upper temporal fenestra.",
-          "source": "wikipedia_en"
-        },
-        {
           "claim": "Its front limbs were longer than its back limbs.",
           "quote": "Noteworthy, however, is that each toe had more individual bones than is usual in reptiles, and the front limbs were longer than the back limbs, both adaptations typical of later ichthyosaurs.",
           "source": "wikipedia_en"
+        },
+        {
+          "claim": "It had a sagittal crest on its skull.",
+          "quote": "M. cornalianus has a sagittal crest associated with the expansion of the upper temporal fenestra.",
+          "source": "wikipedia_en"
         }
       ],
-      "why": "Dorsal fin, skull crest, front limbs longer than back."
+      "why": "Dorsal fin, longer front limbs, skull crest."
     },
     "Tylosaurus": {
       "must_show": [
         {
-          "claim": "Tylosaurus had a long, toothless snout knob sticking out from its snout.",
-          "quote": "The most recognizable characteristic of Tylosaurus is the elongated edentulous rostrum that protrudes from its snout, for which the genus is named.",
+          "claim": "Tylosaurus had an elongated tail that ended in a downturn supporting a two-lobed fin.",
+          "quote": "As such, it had a streamlined body, an elongated tail ending with a downturn supporting a two-lobed fin, and two pairs of flippers.",
           "source": "wikipedia_en"
         },
         {
-          "claim": "Tylosaurus had an elongated tail that ended in a downturn supporting a two-lobed fin.",
-          "quote": "As such, it had a streamlined body, an elongated tail ending with a downturn supporting a two-lobed fin, and two pairs of flippers.",
+          "claim": "Tylosaurus had a long, toothless snout knob sticking out from its snout.",
+          "quote": "The most recognizable characteristic of Tylosaurus is the elongated edentulous rostrum that protrudes from its snout, for which the genus is named.",
           "source": "wikipedia_en"
         },
         {
@@ -395,7 +406,7 @@
           "source": "wikipedia_en"
         }
       ],
-      "why": "Toothless snout knob, downturned two-lobed tail fin, long conical snout."
+      "why": "Two-lobed tail fin, toothless snout knob, long conical snout."
     },
     "Plesiosaurus": {
       "must_show": [
@@ -405,17 +416,17 @@
           "source": "wikipedia_en"
         },
         {
-          "claim": "Plesiosaurus had a small head.",
-          "quote": "Compared to other plesiosaur genera, Plesiosaurus has a small head.",
+          "claim": "Plesiosaurus had a broad turtle-like body.",
+          "quote": "Measuring around 3.5 m (11 ft) long, it is distinguishable by its small head, long and slender neck, broad turtle-like body, a short tail, and two pairs of large, elongated paddles.",
           "source": "wikipedia_en"
         },
         {
-          "claim": "Plesiosaurus had a short tail.",
+          "claim": "Plesiosaurus had two pairs of large, elongated paddles.",
           "quote": "Measuring around 3.5 m (11 ft) long, it is distinguishable by its small head, long and slender neck, broad turtle-like body, a short tail, and two pairs of large, elongated paddles.",
           "source": "wikipedia_en"
         }
       ],
-      "why": "Long slender neck, small head, short tail."
+      "why": "Long slender neck, broad turtle-like body, large elongated paddles."
     },
     "Elasmosaurus": {
       "must_show": [
@@ -425,28 +436,28 @@
           "source": "wikipedia_en"
         },
         {
-          "claim": "Elasmosaurus had a small head.",
-          "quote": "Measuring 10.3 meters (34 ft) in length, Elasmosaurus would have had a streamlined body with paddle-like limbs, a short tail, a small head, and an extremely long neck.",
+          "claim": "The skull would have been slender and triangular.",
+          "quote": "The skull would have been slender and triangular, with large, fang-like teeth at the front, and smaller teeth towards the back.",
           "source": "wikipedia_en"
         },
         {
-          "claim": "Elasmosaurus had a short tail.",
-          "quote": "Measuring 10.3 meters (34 ft) in length, Elasmosaurus would have had a streamlined body with paddle-like limbs, a short tail, a small head, and an extremely long neck.",
+          "claim": "The paddles at the front were longer than those at the back.",
+          "quote": "The paddles at the front (the pectoral paddles) were longer than those at the back (the pelvic paddles).",
           "source": "wikipedia_en"
         }
       ],
-      "why": "Extremely long neck, small head, short tail."
+      "why": "Extremely long neck, slender triangular skull, longer front paddles."
     },
     "Pterodactylus": {
       "must_show": [
         {
-          "claim": "The skulls of adult Pterodactylus were long and thin.",
-          "quote": "The skulls of adult Pterodactylus were long and thin, with about 90 narrow and conical teeth.",
+          "claim": "Its wings were made of a skin and muscle membrane stretching from its long fourth finger to its hind limbs.",
+          "quote": "Like all pterosaurs, Pterodactylus had wings formed by a skin and muscle membrane stretching from its elongated fourth finger to its hind limbs.",
           "source": "wikipedia_en"
         },
         {
-          "claim": "The skull and jaws were straight.",
-          "quote": "Another autapomorphy that Pterodactylus has is that the skull and jaws were straight, which are unlike the upwardly curved jaws seen in the related ctenochasmatids.",
+          "claim": "The skulls of adult Pterodactylus were long and thin.",
+          "quote": "The skulls of adult Pterodactylus were long and thin, with about 90 narrow and conical teeth.",
           "source": "wikipedia_en"
         },
         {
@@ -455,7 +466,7 @@
           "source": "wikipedia_en"
         }
       ],
-      "why": "long thin straight skull with soft-tissue crest"
+      "why": "long thin skull, soft-tissue crest, wing membrane on long fourth finger"
     },
     "Pteranodon": {
       "must_show": [
@@ -475,7 +486,7 @@
           "source": "wikipedia_en"
         }
       ],
-      "why": "large backward head crest, toothless upturned beak"
+      "why": "large bony head crest, toothless beak, upward-curved upper jaw"
     },
     "Quetzalcoatlus": {
       "must_show": [
@@ -485,9 +496,9 @@
           "source": "wikipedia_simple"
         },
         {
-          "claim": "It had a long beak with no teeth.",
-          "quote": "The feeding habits of Quetzalcoatlus (which had a long beak with no teeth) are unknown.",
-          "source": "wikipedia_simple"
+          "claim": "It was covered in hair-like filaments called pycnofibres.",
+          "quote": "As a pterosaur, Quetzalcoatlus would have been covered in hair-like filaments called pycnofibres, and had extensive wing-membranes, which would have been distended by a long wing-finger.",
+          "source": "wikipedia_en"
         },
         {
           "claim": "It had a crest at the base of the beak.",
@@ -495,7 +506,7 @@
           "source": "wikipedia_en"
         }
       ],
-      "why": "long neck, long toothless beak, crest at beak base"
+      "why": "long neck, pycnofibre body covering, crest at base of beak"
     },
     "Rhamphorhynchus": {
       "must_show": [
@@ -510,12 +521,12 @@
           "source": "wikipedia_en"
         },
         {
-          "claim": "The jaws had needle-like teeth angled forward and a curved, sharp, beak-like tip without teeth.",
-          "quote": "The jaws of Rhamphorhynchus housed needle-like teeth, which were angled forward, with a curved, sharp, beak-like tip lacking teeth.",
+          "claim": "Its body was covered with hairs.",
+          "quote": "Like other pterosaurs, its body was covered with hairs, which suggests it had temperature regulation ('hot-blooded') and a high rate of metabolism.",
           "source": "wikipedia_simple"
         }
       ],
-      "why": "long stiff tail with vane, beak-tipped toothy jaws"
+      "why": "long stiff tail with vane, hairy body"
     },
     "Dimorphodon": {
       "must_show": [
@@ -535,7 +546,7 @@
           "source": "wikipedia_simple"
         }
       ],
-      "why": "large bulky tall-beaked skull, short wings"
+      "why": "large bulky skull, short wings, tall beak"
     },
     "Titanoboa": {
       "must_show": [
@@ -545,7 +556,7 @@
           "source": "wikipedia_en"
         }
       ],
-      "why": "giant boid snake body shape"
+      "why": "giant boid snake"
     },
     "Vasuki indicus": {
       "must_show": [
@@ -555,7 +566,7 @@
           "source": "wikipedia_en"
         }
       ],
-      "why": "very long snake body"
+      "why": "very long snake"
     }
   }
 }

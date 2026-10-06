@@ -1,0 +1,46 @@
+{
+  "name": "Ant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Ants are eusocial insects of the family Formicidae and, along with the related wasps and bees, belong to the order Hymenoptera.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "insect",
+      "quote": "Ants are eusocial insects of the family Formicidae and, along with the related wasps and bees, belong to the order Hymenoptera.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Ants have colonised almost every landmass on Earth.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Ant",
+      "title": "Ant",
+      "asked_for": "Ant",
+      "revision": 1378611721,
+      "fetched_on": "2026-10-06",
+      "sha256": "f842330b9ed0c4282dc559ee7459e77c24644d0fd51d8062b587c749b52ba292"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Ant",
+      "title": "Ant",
+      "asked_for": "Ant",
+      "revision": 10938737,
+      "fetched_on": "2026-10-06",
+      "sha256": "2aa8930baa0b3ffe1b4ddb525d3e8c009a3417248e2b21a10412cb8a333be0bc"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

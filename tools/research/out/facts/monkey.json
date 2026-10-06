@@ -1,0 +1,48 @@
+{
+  "name": "Monkey",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Monkeys are tree-dwelling (arboreal) simians. They are in the primate order.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "Monkey is a common name that may refer to most mammals of the infraorder Simiiformes, also known as simians.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "extinct",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "false",
+      "quote": "Monkeys are tree-dwelling (arboreal) simians. They are in the primate order."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Monkey",
+      "title": "Monkey",
+      "asked_for": "Monkey",
+      "revision": 1378006943,
+      "fetched_on": "2026-10-06",
+      "sha256": "fb6446b14145eeb896919f698d20a0231e16bc765f21cbb706d04cce5eeedcdf"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Monkey",
+      "title": "Monkey",
+      "asked_for": "Monkey",
+      "revision": 10957120,
+      "fetched_on": "2026-10-06",
+      "sha256": "9930b5c609f7f2d3c103ee6db003e7e13f4221c09f5603dd7643364cc4a755c4"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

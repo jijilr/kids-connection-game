@@ -1,0 +1,46 @@
+{
+  "name": "Monitor lizard",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Monitor lizards are lizards in the genus Varanus, the only extant genus in the family Varanidae.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "reptile",
+      "quote": "Monitor lizards are lizards in the genus Varanus, the only extant genus in the family Varanidae.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Monitor lizards are lizards in the genus Varanus, the only extant genus in the family Varanidae.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Monitor_lizard",
+      "title": "Monitor lizard",
+      "asked_for": "Monitor lizard",
+      "revision": 1377311926,
+      "fetched_on": "2026-10-06",
+      "sha256": "cc5b80c99a30e4c1bd1f3e6623d6dfe905e19269f5af40c8cb72cfc8354bc8f0"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Monitor_lizard",
+      "title": "Monitor lizard",
+      "asked_for": "Monitor lizard",
+      "revision": 10632808,
+      "fetched_on": "2026-10-06",
+      "sha256": "c27eaae9a6a7738c49158192258f8d0bda46b7ceae953a6805474f0103372502"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

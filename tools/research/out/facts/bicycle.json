@@ -1,0 +1,41 @@
+{
+  "name": "Bicycle",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "The bicycle was invented in Europe in the 19th century.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_made_thing": {
+      "value": "vehicle",
+      "quote": "A bicycle, also called a pedal cycle, bike, push-bike or cycle, is a human-powered or motor-assisted, pedal-driven, single-track vehicle, with two wheels attached to a frame, one behind the other.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Bicycle",
+      "title": "Bicycle",
+      "asked_for": "Bicycle",
+      "revision": 1375091239,
+      "fetched_on": "2026-10-06",
+      "sha256": "cb7d4d8a6cc33ddf7618cf919c420b18d1672ae16df41c33b7ebbcc9329456d4"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Bicycle",
+      "title": "Bicycle",
+      "asked_for": "Bicycle",
+      "revision": 10911070,
+      "fetched_on": "2026-10-06",
+      "sha256": "2ed4959a0c8ef8503966c7d8b45aac5064f3e687e70e4e4a645eedcb316122f0"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

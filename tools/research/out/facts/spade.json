@@ -1,0 +1,41 @@
+{
+  "name": "Spade",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A spade is a tool primarily for digging, consisting of a long handle and blade, typically with the blade narrower and flatter than the common shovel.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_made_thing": {
+      "value": "tool",
+      "quote": "In gardening, a spade is a tool for digging.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Spade",
+      "title": "Spade",
+      "asked_for": "Spade",
+      "revision": 1371526350,
+      "fetched_on": "2026-10-06",
+      "sha256": "e9677eeb06970fb19279eb5acb9b785715ee0c36ae0f91846de7f1a7c6ee47b8"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Spade",
+      "title": "Spade",
+      "asked_for": "Spade",
+      "revision": 7944772,
+      "fetched_on": "2026-10-06",
+      "sha256": "838ca3a20bf088418e5f3a9c7e59aadb31ed975ce51b5bced0abaf2bc5755971"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

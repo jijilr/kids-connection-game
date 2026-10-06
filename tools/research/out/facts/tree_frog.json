@@ -1,0 +1,48 @@
+{
+  "name": "Tree frog",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "A tree frog (or treefrog) is any species of frog that spends a major portion of its lifespan in trees, known as an arboreal state.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "amphibian",
+      "quote": "Tree frogs are frogs that spend most of their life in trees.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "extinct",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "false",
+      "quote": "Tree frogs are frogs that spend most of their life in trees."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Tree_frog",
+      "title": "Tree frog",
+      "asked_for": "Tree frog",
+      "revision": 1375613732,
+      "fetched_on": "2026-10-06",
+      "sha256": "e98bcff8368217267768aff1c385532b4687be9c2c256950d13d37c850b779ba"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Tree_frog",
+      "title": "Tree frog",
+      "asked_for": "Tree frog",
+      "revision": 9332638,
+      "fetched_on": "2026-10-06",
+      "sha256": "974f12cf53bee5e1e2fee6bf7934e500f33b40117a2311fe4b2ee7b613cf51b6"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

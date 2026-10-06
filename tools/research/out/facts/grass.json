@@ -1,0 +1,46 @@
+{
+  "name": "Grass",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Grass is a type of plant with narrow leaves growing from the base.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "There are more than 12,000 species now.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_plant": {
+      "value": "grass_grain",
+      "quote": "The true grasses include cereals, bamboo and the grasses of lawns (turf) and grassland.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Grass",
+      "title": "Grass",
+      "asked_for": "Grass",
+      "revision": 1376742008,
+      "fetched_on": "2026-10-06",
+      "sha256": "8dec0c35f19d8fc5e1ee462c878ccf72e511d60789be132bfcb3af3bacad1a7a"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Grass",
+      "title": "Grass",
+      "asked_for": "Grass",
+      "revision": 11014643,
+      "fetched_on": "2026-10-06",
+      "sha256": "20bc0b91f49984c5371663006ed8be4ad9f253d1c603b4b2547f611e1e3577cd"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

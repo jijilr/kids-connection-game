@@ -1,0 +1,46 @@
+{
+  "name": "Dog",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Dogs are mammals, usually to be kept as pets, or work on farms or for the police.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "Dogs are mammals, usually to be kept as pets, or work on farms or for the police.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "The global dog population is estimated at 700 million to 1 billion, distributed around the world.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Dog",
+      "title": "Dog",
+      "asked_for": "Dog",
+      "revision": 1377727808,
+      "fetched_on": "2026-10-06",
+      "sha256": "e62c6185b99070452ae4582b34750f5d5b829e758f09f9ea3d960c2b6c05f60b"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Dog",
+      "title": "Dog",
+      "asked_for": "Dog",
+      "revision": 10999686,
+      "fetched_on": "2026-10-06",
+      "sha256": "485a953c24dfc1d7ab39b569f2772fb147e45f46dd5e58fde4e924438eafd66b"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

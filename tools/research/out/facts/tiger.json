@@ -1,0 +1,46 @@
+{
+  "name": "Tiger",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The tiger (Panthera tigris) is a large cat and a member of the genus Panthera native to Asia.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "The tiger (Panthera tigris) is the largest living member of the cat family, the Felidae.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "It is listed as Endangered on the IUCN Red List of Threatened Species, as its range is thought to have declined by 53% to 68% since the late 1990s.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Tiger",
+      "title": "Tiger",
+      "asked_for": "Tiger",
+      "revision": 1377410117,
+      "fetched_on": "2026-10-06",
+      "sha256": "7ec87e974aa590fab6d84a99bbbb7b2b66b81c5223af7b283fd2aa86cdd8d94d"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Tiger",
+      "title": "Tiger",
+      "asked_for": "Tiger",
+      "revision": 10967347,
+      "fetched_on": "2026-10-06",
+      "sha256": "81dca5cb0e60c482b63ee92739e1988b20f44e70c0ad2f7bcabbfa2f66197117"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

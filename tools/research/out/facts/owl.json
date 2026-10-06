@@ -1,0 +1,51 @@
+{
+  "name": "Owl",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Owls are birds from the order Strigiformes (), which includes over 200 species of mostly solitary and nocturnal birds of prey typified by an upright stance, a large, broad head, binocular vision, binaural hearing, sharp talons, and feathers adapted for silent flight.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "Owls are birds in the order Strigiformes.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "They are found in all parts of the world except Antarctica, most of Greenland, and some small islands.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_animal",
+      "why": "the pages do not show it: not applicable"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Owl",
+      "title": "Owl",
+      "asked_for": "Owl",
+      "revision": 1376398163,
+      "fetched_on": "2026-10-06",
+      "sha256": "30f59d74afb198eaa0afd3827577940003e41bc732015fed26b7ebe2fa98073b"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Owl",
+      "title": "Owl",
+      "asked_for": "Owl",
+      "revision": 10932733,
+      "fetched_on": "2026-10-06",
+      "sha256": "4bc080fb20228aa7739846f99af4e3751a5c891a061c204dd7dbb49e40893c51"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

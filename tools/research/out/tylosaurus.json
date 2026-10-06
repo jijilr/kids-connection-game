@@ -149,13 +149,13 @@
   "group": "swimmer",
   "must_show": [
     {
-      "claim": "Tylosaurus had a long, toothless snout knob sticking out from its snout.",
-      "quote": "The most recognizable characteristic of Tylosaurus is the elongated edentulous rostrum that protrudes from its snout, for which the genus is named.",
+      "claim": "Tylosaurus had an elongated tail that ended in a downturn supporting a two-lobed fin.",
+      "quote": "As such, it had a streamlined body, an elongated tail ending with a downturn supporting a two-lobed fin, and two pairs of flippers.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Tylosaurus had an elongated tail that ended in a downturn supporting a two-lobed fin.",
-      "quote": "As such, it had a streamlined body, an elongated tail ending with a downturn supporting a two-lobed fin, and two pairs of flippers.",
+      "claim": "Tylosaurus had a long, toothless snout knob sticking out from its snout.",
+      "quote": "The most recognizable characteristic of Tylosaurus is the elongated edentulous rostrum that protrudes from its snout, for which the genus is named.",
       "source": "wikipedia_en"
     },
     {
@@ -168,6 +168,6 @@
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "Toothless snout knob, downturned two-lobed tail fin, long conical snout."
+    "why": "Two-lobed tail fin, toothless snout knob, long conical snout."
   }
 }

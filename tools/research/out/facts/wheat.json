@@ -1,0 +1,46 @@
+{
+  "name": "Wheat",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Wheat is a group of wild and domesticated grasses of the genus Triticum ().",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Now it is cultivated worldwide.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_plant": {
+      "value": "grass_grain",
+      "quote": "Wheat (Genus: Triticum) is a cereal grain.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Wheat",
+      "title": "Wheat",
+      "asked_for": "Wheat",
+      "revision": 1378620969,
+      "fetched_on": "2026-10-06",
+      "sha256": "a021aebe470926cdfdb7497488f5eacebc95bf2435e5fd90548d989246f3fa3f"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Wheat",
+      "title": "Wheat",
+      "asked_for": "Wheat",
+      "revision": 10605254,
+      "fetched_on": "2026-10-06",
+      "sha256": "c09408f8de1281112e5f0e2038be4f1e0a04fffa8e9ab6fca497d3f93d8133e4"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

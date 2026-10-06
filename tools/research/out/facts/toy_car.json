@@ -1,0 +1,32 @@
+{
+  "name": "Toy car",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A model car, or toy car, is a miniature representation of an automobile.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "quote": "A model car, or toy car, is a miniature representation of an automobile.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Model_car",
+      "title": "Model car",
+      "asked_for": "Toy car",
+      "revision": 1374827692,
+      "fetched_on": "2026-10-06",
+      "sha256": "ff15611e07fe59f32e153ff19214bc0f9559a587bb47a429d8faf1ab6a243388"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

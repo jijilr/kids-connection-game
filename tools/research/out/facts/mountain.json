@@ -1,0 +1,41 @@
+{
+  "name": "Mountain",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A mountain is an elevated portion of the surface of a planet, generally with steep sides that show significant exposed bedrock.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "quote": "A mountain is a large natural rise of the Earth's surface that usually has a \"summit\" (the name for a mountain's top, which can also be called a peak).",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Mountain",
+      "title": "Mountain",
+      "asked_for": "Mountain",
+      "revision": 1355628335,
+      "fetched_on": "2026-10-06",
+      "sha256": "066db9a8a54be9e7f1a646936b9769824cd2f79cc322b1218536012bdf09c724"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Mountain",
+      "title": "Mountain",
+      "asked_for": "Mountain",
+      "revision": 10900598,
+      "fetched_on": "2026-10-06",
+      "sha256": "369de5daa97c68a7996afeea78787aa601e8635deb614e256e2147b754880e36"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

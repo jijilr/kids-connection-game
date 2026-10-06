@@ -1,0 +1,41 @@
+{
+  "name": "Doll",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A doll is a model typically of a human or humanoid character, often used as a toy for children.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "quote": "A doll is a child's toy that looks like a baby or other human being.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Doll",
+      "title": "Doll",
+      "asked_for": "Doll",
+      "revision": 1377694599,
+      "fetched_on": "2026-10-06",
+      "sha256": "e47f47046feebbb4d87dfc4655df5df803e534cc9e94707696a26c4ac52ae9d3"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Doll",
+      "title": "Doll",
+      "asked_for": "Doll",
+      "revision": 9668110,
+      "fetched_on": "2026-10-06",
+      "sha256": "41a1afff41a53d218137c8da513ce1d06ddf6dd03d3b61fb71429ce625bdbf88"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Ladybug",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Coccinellidae ( ) is a widespread family of small beetles.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "insect",
+      "quote": "Lady beetles are the Coccinellidae, a family of beetles.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "extinct",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "false",
+      "quote": "Coccinellidae ( ) is a widespread family of small beetles."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Coccinellidae",
+      "title": "Coccinellidae",
+      "asked_for": "Ladybug",
+      "revision": 1377078518,
+      "fetched_on": "2026-10-06",
+      "sha256": "fc84f09e8a0b7f026c1caaa78ade8a4efdbc5dd54e5c1c5e130f75af039d4d4d"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Lady_beetle",
+      "title": "Lady beetle",
+      "asked_for": "Ladybug",
+      "revision": 10855496,
+      "fetched_on": "2026-10-06",
+      "sha256": "bb89d343df0460b5935616192507c25612e1d172dbdde7ade4fb3bfa1e8d60a5"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

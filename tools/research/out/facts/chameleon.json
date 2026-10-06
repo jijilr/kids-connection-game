@@ -1,0 +1,46 @@
+{
+  "name": "Chameleon",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Chameleons are  a family of lizards.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "reptile",
+      "quote": "Chameleons are  a family of lizards.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Chameleons are often kept as household pets.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Chameleon",
+      "title": "Chameleon",
+      "asked_for": "Chameleon",
+      "revision": 1375617328,
+      "fetched_on": "2026-10-06",
+      "sha256": "10991c1caa0235fd4588cfff16a7c432ee5ef77d5fb9b751f012bc5bb414735e"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Chameleon",
+      "title": "Chameleon",
+      "asked_for": "Chameleon",
+      "revision": 10889027,
+      "fetched_on": "2026-10-06",
+      "sha256": "ae82f41efcf1f8fb6b637189d0c835256cc9ff687a42b815407cb71a1df487e8"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

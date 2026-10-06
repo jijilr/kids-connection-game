@@ -1,0 +1,46 @@
+{
+  "name": "Turtle",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Turtles are one of the many reptiles on earth.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "reptile",
+      "quote": "Turtles (order Testudines) are reptiles characterized by a special shell developed mainly from their ribs.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "There are about 356 species of turtles living on land in all continents except Antarctica.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Turtle",
+      "title": "Turtle",
+      "asked_for": "Turtle",
+      "revision": 1375970473,
+      "fetched_on": "2026-10-06",
+      "sha256": "850962a41f31ee755c66d5d40ae7e76df90c65bcfd7d69bb03c61e78021d9d62"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Turtle",
+      "title": "Turtle",
+      "asked_for": "Turtle",
+      "revision": 10938689,
+      "fetched_on": "2026-10-06",
+      "sha256": "2c3e0a6e31b392261103b9198cc143561745e3aa8366d7bef9d7abc132da2a3c"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

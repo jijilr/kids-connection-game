@@ -135,8 +135,8 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "The jaws had needle-like teeth angled forward and a curved, sharp, beak-like tip without teeth.",
-      "quote": "The jaws of Rhamphorhynchus housed needle-like teeth, which were angled forward, with a curved, sharp, beak-like tip lacking teeth.",
+      "claim": "Its body was covered with hairs.",
+      "quote": "Like other pterosaurs, its body was covered with hairs, which suggests it had temperature regulation ('hot-blooded') and a high rate of metabolism.",
       "source": "wikipedia_simple"
     }
   ],
@@ -144,6 +144,6 @@
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "long stiff tail with vane, beak-tipped toothy jaws"
+    "why": "long stiff tail with vane, hairy body"
   }
 }

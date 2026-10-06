@@ -1,0 +1,43 @@
+{
+  "name": "Car",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A car, or an automobile, is a motor vehicle with wheels.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "vehicle",
+      "quote": "A car, or an automobile, is a motor vehicle with wheels."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Car",
+      "title": "Car",
+      "asked_for": "Car",
+      "revision": 1377459785,
+      "fetched_on": "2026-10-06",
+      "sha256": "a3b5cf9767ac76c403876cc1c3c84d04aac14547883a3659ba42dfb586271df0"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Automobile",
+      "title": "Automobile",
+      "asked_for": "Car",
+      "revision": 10957874,
+      "fetched_on": "2026-10-06",
+      "sha256": "80ae4029981502878f0627f50f3a2a3f3ae13989b7d82e3609d78cdf3f78ed44"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

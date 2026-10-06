@@ -3,8 +3,8 @@
 This is the one research step that needs judgement, not copying. Animals that appear
 together in the game (the same kind of dinosaur, the giant snakes) are shown to a
 judge side by side, each with its own features, already checked against the saved
-pages. For each animal the judge chooses the few features of shape and proportion
-that set it apart. It can only choose from the lists, so nothing ungrounded gets in.
+pages. For each animal the judge chooses the few features of shape, proportion and body
+covering that set it apart. It can only choose from the lists, so nothing ungrounded gets in.
 
 The judges are listed in config.json: the everyday DeepSeek model, DeepSeek's stronger
 model with reasoning on, and an OpenAI model. All get the same lists and the same
@@ -29,7 +29,7 @@ TASK = """These extinct animals appear together in a sorting game for a small ch
 First compare the animals: for each one, what does its outline have that the others here do not?
 
 Then, for EACH animal, choose from ITS OWN list the 2 to 4 features that best tell it from the other animals here.
-- Choose features of SHAPE and PROPORTION: the build of the body, the stance, the neck, the shape of the head or snout, crests, horns, plates, sails, spines, fins, flippers, wings, the tail, and how long one part is beside another.
+- Choose features of SHAPE, PROPORTION and BODY COVERING: the build of the body, the stance, the neck, the shape of the head or snout, crests, horns, plates, sails, spines, fins, flippers, wings, the tail, how long one part is beside another, and what covers the body, such as feathers, fur or fuzz, or bony armour.
 - Do not choose size in metres or weight: nothing on a plain background shows how big an animal is.
 - Do not choose fine detail a small picture cannot show, such as the shape of the scales, the number or shape of the teeth, single claws, or bones.
 - Do not choose a feature the other animals here share.
@@ -78,7 +78,9 @@ def judge_all(name: str, cap: float) -> dict:
     client = openai_client() if judge["provider"] == "openai" else deepseek()
     spend, started = Spend(config, cap, judge["usd_per_million_tokens"]), time.time()
     by_group = checked_records()
-    with ThreadPoolExecutor(max_workers=5) as pool:
+    # one group at a time: under a hard cap, calls made together would each set aside
+    # their worst case at once, and five small calls take only seconds anyway
+    with ThreadPoolExecutor(max_workers=1) as pool:
         results = list(pool.map(lambda members: choose(client, config, spend, judge, members), by_group.values()))
     animals = {animal: choice for result in results for animal, choice in result.items()}
     record = {"judge": name, "model": judge["model"], "date": today(), "seconds": round(time.time() - started),
@@ -107,8 +109,8 @@ def use(name: str):
 
 
 def main():
-    argv, cap = sys.argv[1:], 0.30
-    if "--cap" in argv:   # in US dollars
+    argv, cap = sys.argv[1:], 0.01
+    if "--cap" in argv:   # in US dollars; a hard cap
         cap = float(argv[argv.index("--cap") + 1])
     if "--judge" in argv:
         judge_all(argv[argv.index("--judge") + 1], cap)

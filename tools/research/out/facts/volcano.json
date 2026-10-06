@@ -1,0 +1,41 @@
+{
+  "name": "Volcano",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A volcano is a mountain that has lava (hot, liquid rock) coming out from a magma chamber under the ground, or did have in the past.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "quote": "A volcano is a mountain that has lava (hot, liquid rock) coming out from a magma chamber under the ground, or did have in the past.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Volcano",
+      "title": "Volcano",
+      "asked_for": "Volcano",
+      "revision": 1378168594,
+      "fetched_on": "2026-10-06",
+      "sha256": "55a36c4e2b81100cf6b4f938d769551b14e8d0ca07dfa72cea055adabdbcde0a"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Volcano",
+      "title": "Volcano",
+      "asked_for": "Volcano",
+      "revision": 10961960,
+      "fetched_on": "2026-10-06",
+      "sha256": "df14d0c9aa5325c2333b0f16ec1a51fea7e7928f0b5b7d5b307c1b2434d2c460"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

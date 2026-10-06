@@ -1,0 +1,37 @@
+{
+  "name": "Hen",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Chicken refers to the domesticated subspecies of the red junglefowl.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "Like other female birds, hens lay eggs.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "It is raised in many places for its meat and eggs.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Chicken",
+      "title": "Chicken",
+      "asked_for": "Hen",
+      "revision": 10950239,
+      "fetched_on": "2026-10-06",
+      "sha256": "4989125beeb0202ed737e418e754c4ff47b44585ef748c1980021c8bfee5bd0e"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

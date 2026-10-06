@@ -1,0 +1,37 @@
+{
+  "name": "Python",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Python is the name given to a genus of constricting snakes.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "reptile",
+      "quote": "Python is the name given to a genus of constricting snakes.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Python can be found in Southeast Asia and Africa, and other members of the family are found in New Guinea and Australia, like water pythons, where they live near water, like rivers, swamps, and wetlands.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Python",
+      "title": "Python",
+      "asked_for": "Python",
+      "revision": 10588278,
+      "fetched_on": "2026-10-06",
+      "sha256": "18fc40aec5b08219cfdb70187eeba728a957a6299104588d7e2b823a3239b4b2"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

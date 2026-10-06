@@ -154,6 +154,11 @@
       "source": "wikipedia_simple"
     },
     {
+      "claim": "It moved on four legs.",
+      "quote": "How it moved:\non four legs",
+      "source": "nhm_dino_directory"
+    },
+    {
       "claim": "It had a long tail.",
       "quote": "It was an enormous, long-necked, long-tailed, quadrupedal, plant-eater from Argentina, South America during the Cretaceous period.",
       "source": "wikipedia_simple"
@@ -163,6 +168,6 @@
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "long neck and tail, no unique shape"
+    "why": "long neck, four legs, long tail"
   }
 }

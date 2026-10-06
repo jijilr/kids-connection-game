@@ -1,0 +1,48 @@
+{
+  "name": "Bamboo",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Bamboos are a diverse group of mostly evergreen perennial flowering plants making up the subfamily Bambusoideae of the grass family Poaceae.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_plant": {
+      "value": "grass_grain",
+      "quote": "Bamboo is a name for over 1,400 species of giant grasses in 115 different genera.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "extinct",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "false",
+      "quote": "Bamboos are a diverse group of mostly evergreen perennial flowering plants making up the subfamily Bambusoideae of the grass family Poaceae."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Bamboo",
+      "title": "Bamboo",
+      "asked_for": "Bamboo",
+      "revision": 1378036197,
+      "fetched_on": "2026-10-06",
+      "sha256": "55f94a1719e6bd20dd6514b50f6fd7aced238b7c0f7ee66d60690bdaf11b4c82"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Bamboo",
+      "title": "Bamboo",
+      "asked_for": "Bamboo",
+      "revision": 9133382,
+      "fetched_on": "2026-10-06",
+      "sha256": "9153b058185b6be201eb0f150133a12c1d0fb564a98c175d10f5f5ebfa674bb8"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

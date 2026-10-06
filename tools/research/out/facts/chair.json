@@ -1,0 +1,41 @@
+{
+  "name": "Chair",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A Chair is a piece of furniture that is usually made out of wood or plastic.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_made_thing": {
+      "value": "household",
+      "quote": "A Chair is a piece of furniture that is usually made out of wood or plastic.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Chair",
+      "title": "Chair",
+      "asked_for": "Chair",
+      "revision": 1377720539,
+      "fetched_on": "2026-10-06",
+      "sha256": "0def52f5bd3fa99b9f39e4340d1b030aefa5e9a3b5815ae695f08fcbfd0926e7"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Chair",
+      "title": "Chair",
+      "asked_for": "Chair",
+      "revision": 10715057,
+      "fetched_on": "2026-10-06",
+      "sha256": "ece51ff2cae5586ac0f08e55e21c4ca967658b7479f07d4a46b93906aff9707f"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

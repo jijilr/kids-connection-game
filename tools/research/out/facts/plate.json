@@ -1,0 +1,32 @@
+{
+  "name": "Plate",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A plate is a type of dish where food can be placed after being cooked for eating.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_made_thing": {
+      "value": "household",
+      "quote": "A plate is a type of dish where food can be placed after being cooked for eating.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Plate",
+      "title": "Plate",
+      "asked_for": "Plate",
+      "revision": 9097426,
+      "fetched_on": "2026-10-06",
+      "sha256": "e67f0e7eb38cebd7e0e93c23eea19ce23ec0ec08e64453c5e44f7e335789dfaa"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

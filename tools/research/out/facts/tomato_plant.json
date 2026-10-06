@@ -1,0 +1,48 @@
+{
+  "name": "Tomato plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "The tomato (US: , UK: ; Solanum lycopersicum) is a plant whose fruit is an edible berry that is eaten as a vegetable.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Tomato plants are vines, largely annual, and vulnerable to frost, though sometimes living longer in greenhouses.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_plant",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "vegetable",
+      "quote": "The tomato (US: , UK: ; Solanum lycopersicum) is a plant whose fruit is an edible berry that is eaten as a vegetable."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Tomato",
+      "title": "Tomato",
+      "asked_for": "Tomato plant",
+      "revision": 1375083804,
+      "fetched_on": "2026-10-06",
+      "sha256": "4d9030aaf54eab014512f5b7266dfa8b4907cd8501bf21e4ad92a8b9d6596e91"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Tomato",
+      "title": "Tomato",
+      "asked_for": "Tomato",
+      "revision": 10957433,
+      "fetched_on": "2026-10-06",
+      "sha256": "e52fe747a1f7e4a5171abddb8e45510961bcfb25faf8ce1aaa2761a2d2026db7"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

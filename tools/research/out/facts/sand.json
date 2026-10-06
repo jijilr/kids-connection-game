@@ -1,0 +1,36 @@
+{
+  "name": "Sand",
+  "fields": {},
+  "weak_spots": [
+    {
+      "field": "kind_of_thing",
+      "why": "the sentence it quoted is not in the saved page",
+      "value": "nature_not_alive"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Sand",
+      "title": "Sand",
+      "asked_for": "Sand",
+      "revision": 1378188406,
+      "fetched_on": "2026-10-06",
+      "sha256": "730dbc881412133ed22c430481a73bfdd1099752f71b14914a776fb0b1246d93"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Sand",
+      "title": "Sand",
+      "asked_for": "Sand",
+      "revision": 10381107,
+      "fetched_on": "2026-10-06",
+      "sha256": "e82f2f248018f48e04679ee33bb7360c8c7e08781bc0eff2ea1581dea587e68e"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

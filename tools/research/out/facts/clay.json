@@ -1,0 +1,37 @@
+{
+  "name": "Clay",
+  "fields": {},
+  "weak_spots": [
+    {
+      "field": "kind_of_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "nature_not_alive",
+      "quote": "Clay is a type of fine-grained natural soil  material containing clay minerals"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Clay",
+      "title": "Clay",
+      "asked_for": "Clay",
+      "revision": 1376338740,
+      "fetched_on": "2026-10-06",
+      "sha256": "8be853715bc96d16d4f9eea5212ca682719f5698913d752fc700a899244696af"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Clay",
+      "title": "Clay",
+      "asked_for": "Clay",
+      "revision": 10819433,
+      "fetched_on": "2026-10-06",
+      "sha256": "1f0c47d7fd4b27bca6cae1d3f967126d86582a29cc1fc0e6c0bd29c08ef98abb"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

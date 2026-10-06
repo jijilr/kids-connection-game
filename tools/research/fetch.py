@@ -5,10 +5,14 @@ For each thing this saves, under tools/research/cache/<thing>/:
   - the Simple English article, where one exists;
   - the Natural History Museum's Dino Directory page, where there is one;
   - any page a person has listed for it under `hints` in config.json.
+For an ordinary thing it saves the two Wikipedia articles and, for a plant, the page
+of the Royal Botanic Gardens, Kew, where there is one.
+
 Only the hosts listed in config.json are ever read. A page already saved is not
 fetched again unless --again is given, so later runs read exactly the same text.
 
     python tools/research/fetch.py --prehistoric
+    python tools/research/fetch.py --ordinary          every thing in the game that is not prehistoric
     python tools/research/fetch.py "Tyrannosaurus rex" Titanoboa [--again]
 """
 import hashlib
@@ -24,6 +28,7 @@ from reslib import CACHE, CONFIG, THINGS, read_json, slug, today, write_json
 
 AGENT = {"User-Agent": "IshansGamesResearch/0.1 (github.com/jijilr/kids-connection-game; "
                        "a children's learning game; a few pages a day)"}
+REFUSED = {}   # a site that has turned this run away is not asked again in the same run
 BLOCKS = ["p", "div", "li", "ul", "ol", "h1", "h2", "h3", "h4", "h5", "h6", "tr", "td", "th", "dt", "dd",
           "br", "section", "figcaption", "blockquote"]
 ENDS = re.compile(r"\n==\s*(References|See also|External links|Bibliography|Notes|Further reading|"
@@ -52,12 +57,35 @@ def prehistoric() -> dict:
     return groups
 
 
-def wikipedia(host: str, name: str) -> dict:
+def ordinary() -> dict:
+    """name -> is it a plant? Every thing in the game that is not a prehistoric animal."""
+    old_ones = set(prehistoric())
+    return {t["name"]: t["fields"].get("kind_of_thing") == "plant"
+            for t in read_json(THINGS)["things"].values() if t["name"] not in old_ones}
+
+
+def other_names(name: str) -> list:
+    """The name, then the name without a last word that only says what kind of thing it
+    is: 'Tomato plant' is filed under 'Tomato', 'Rohu fish' under 'Rohu'."""
+    words = name.split()
+    return [name] + ([" ".join(words[:-1])] if len(words) > 1 and words[-1].lower() in ("plant", "tree", "fish") else [])
+
+
+def wikipedia(host: str, name: str, strict: bool = True) -> dict:
+    """`strict` is for prehistoric animals, where a redirect to a broader article is about
+    something else. An ordinary thing may be filed under another name (Hen under Chicken),
+    so its redirect is followed and the page's own title is recorded."""
+    if strict is False:   # try each name it may be filed under; None below means "this one name, any title"
+        for candidate in other_names(name):
+            found = wikipedia(host, candidate, strict=None)
+            if "text" in found:
+                return dict(found, asked_for=candidate)
+        return found
     for attempt in range(4):
         reply = requests.get(f"https://{host}/w/api.php", headers=AGENT, timeout=40, params={
             "action": "query", "format": "json", "formatversion": 2, "redirects": 1, "titles": name,
-            "prop": "extracts|revisions|info", "explaintext": 1, "exsectionformat": "wiki",
-            "rvprop": "ids|timestamp", "inprop": "url"})
+            "prop": "extracts|revisions|info|pageprops", "explaintext": 1, "exsectionformat": "wiki",
+            "rvprop": "ids|timestamp", "inprop": "url", "ppprop": "disambiguation"})
         if reply.status_code != 429 and reply.status_code < 500:
             break
         # asked to slow down, or the site is busy: wait as long as it says, then try again
@@ -67,7 +95,10 @@ def wikipedia(host: str, name: str) -> dict:
     page = reply.json()["query"]["pages"][0]
     if page.get("missing") or not page.get("extract"):
         return {"problem": "no article by this name"}
-    if page["title"].split()[0].lower() != name.split()[0].lower():
+    if "disambiguation" in page.get("pageprops", {}):
+        return {"url": page["fullurl"], "title": page["title"],
+                "problem": "the name has several meanings on Wikipedia, and a script cannot tell which is meant"}
+    if strict and page["title"].split()[0].lower() != name.split()[0].lower():
         # a redirect to a broader article (Mosasaurus -> Mosasaur) is about something else
         return {"url": page["fullurl"], "title": page["title"],
                 "problem": f"the name leads to an article about '{page['title']}', not this animal"}
@@ -75,6 +106,75 @@ def wikipedia(host: str, name: str) -> dict:
     cut = ENDS.search(text)   # the reading list at the end is not about the animal
     return {"url": page["fullurl"], "title": page["title"], "revision": page["revisions"][0]["revid"],
             "revision_time": page["revisions"][0]["timestamp"], "text": text[:cut.start()] if cut else text}
+
+
+def openings(host: str, names: list) -> dict:
+    """The opening of the article for each name, ten things to a request. A thing's
+    fields are settled by how its article begins, so the whole article is not needed,
+    and a hundred things cost a dozen requests, not two hundred.
+    Returns name -> what wikipedia() returns."""
+    found = {}
+    for start in range(0, len(names), 10):
+        batch = names[start:start + 10]
+        asked = [candidate for name in batch for candidate in other_names(name)]
+        for attempt in range(4):
+            reply = requests.get(f"https://{host}/w/api.php", headers=AGENT, timeout=60, params={
+                "action": "query", "format": "json", "formatversion": 2, "redirects": 1, "titles": "|".join(asked),
+                "prop": "extracts|revisions|info|pageprops", "exintro": 1, "explaintext": 1, "exlimit": 20,
+                "rvprop": "ids|timestamp", "inprop": "url", "ppprop": "disambiguation"})
+            if reply.status_code != 429 and reply.status_code < 500:
+                break
+            wait = reply.headers.get("Retry-After", "")
+            time.sleep(min(float(wait) if wait.isdigit() else 10 * (attempt + 1), 90))
+        reply.raise_for_status()
+        query = reply.json()["query"]
+        leads_to = {}   # the title asked for -> the title of the page it is filed under
+        for step in ("normalized", "redirects"):
+            for move in query.get(step, []):
+                leads_to[move["from"]] = move["to"]
+        pages = {page["title"]: page for page in query["pages"]}
+        for name in batch:
+            result = {"problem": "no article by this name"}
+            for candidate in other_names(name):
+                title = leads_to.get(candidate, candidate)
+                title = leads_to.get(title, title)
+                page = pages.get(title)
+                if page is None or page.get("missing"):
+                    continue
+                if "disambiguation" in page.get("pageprops", {}):
+                    result = {"url": page["fullurl"], "title": page["title"], "problem":
+                              "the name has several meanings on Wikipedia, and a script cannot tell which is meant"}
+                    continue
+                if page.get("extract"):
+                    result = {"url": page["fullurl"], "title": page["title"], "asked_for": candidate,
+                              "revision": page["revisions"][0]["revid"],
+                              "revision_time": page["revisions"][0]["timestamp"],
+                              "part": "the opening only", "text": page["extract"]}
+                    break
+            found[name] = result
+        time.sleep(1.5)
+    return found
+
+
+def fetch_openings(names: list, again: bool) -> dict:
+    """Save the two Wikipedia openings for each ordinary thing. A page already saved,
+    whole or opening, is kept unless --again is given."""
+    results = {name: {s["id"]: s for s in read_json(CACHE / slug(name) / "sources.json", {"sources": []})["sources"]}
+               for name in names}
+    for source, host in (("wikipedia_en", "en.wikipedia.org"), ("wikipedia_simple", "simple.wikipedia.org")):
+        need = [n for n in names if again or not results[n].get(source, {}).get("file")]
+        for name, found in openings(host, need).items():
+            record = {"id": source, "fetched_on": today(), **{k: v for k, v in found.items() if k != "text"}}
+            if "text" in found:
+                folder = CACHE / slug(name)
+                folder.mkdir(parents=True, exist_ok=True)
+                (folder / f"{source}.txt").write_text(found["text"], encoding="utf-8")
+                record.update(file=f"{source}.txt", chars=len(found["text"]),
+                              sha256=hashlib.sha256(found["text"].encode("utf-8")).hexdigest())
+            results[name][source] = record
+    for name in names:
+        write_json(CACHE / slug(name) / "sources.json", {"thing": name, "sources": list(results[name].values())})
+    return results
 
 
 def web_page(url: str) -> dict:
@@ -98,12 +198,30 @@ def web_page(url: str) -> dict:
     return {"url": url, "title": (soup.title.string or "").strip() if soup.title else "", "text": text}
 
 
-def fetch(name: str, config: dict, again: bool) -> list:
+def kew(name: str, config: dict) -> dict:
+    """Kew's page for a plant, by its everyday name. The address is guessed from the
+    name; where the guess is wrong there is simply no page."""
+    if REFUSED.get("kew"):
+        return {"problem": REFUSED["kew"]}
+    for candidate in other_names(name):
+        found = web_page(config["sources"]["kew"]["pattern"].format(name=candidate.lower().replace(" ", "-")))
+        if "text" in found:
+            return found
+        if "403" in found.get("problem", ""):
+            # the site turns scripts away; asking again for every plant would only be slow and rude
+            REFUSED["kew"] = "Kew's site refuses requests from scripts (it answered 403)"
+            return {"url": found["url"], "problem": REFUSED["kew"]}
+    return found
+
+
+def fetch(name: str, config: dict, again: bool, strict: bool = True, plant: bool = False) -> list:
     folder = CACHE / slug(name)
     known = {s["id"]: s for s in read_json(folder / "sources.json", {"sources": []})["sources"]}
     allowed = {s["host"] for s in config["sources"].values()}
-    wanted = [("wikipedia_en", lambda: wikipedia("en.wikipedia.org", name)),
-              ("wikipedia_simple", lambda: wikipedia("simple.wikipedia.org", name))]
+    wanted = [("wikipedia_en", lambda: wikipedia("en.wikipedia.org", name, strict)),
+              ("wikipedia_simple", lambda: wikipedia("simple.wikipedia.org", name, strict))]
+    if plant:
+        wanted.append(("kew", lambda: kew(name, config)))
     if name in true_dinosaurs():
         wanted.append(("nhm_dino_directory", lambda: web_page(
             config["sources"]["nhm_dino_directory"]["pattern"].format(genus=name.split()[0].lower()))))
@@ -140,15 +258,29 @@ def fetch(name: str, config: dict, again: bool) -> list:
 
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
-    names = list(prehistoric()) if "--prehistoric" in sys.argv else args
+    plants = ordinary()
+    if "--prehistoric" in sys.argv:
+        names = list(prehistoric())
+    elif "--ordinary" in sys.argv:
+        names = list(plants)
+    else:
+        names = args
     if not names:
         raise SystemExit(__doc__)
-    config = read_json(CONFIG)
+    config, old_ones = read_json(CONFIG), set(prehistoric())
+    if "--ordinary" in sys.argv:
+        # openings only, many to a request; Kew turns scripts away, so it is not asked here
+        for name, sources in fetch_openings(names, "--again" in sys.argv).items():
+            got = ", ".join(f"{s['id']} ({s['chars']:,} letters, filed under '{s['title']}')"
+                            for s in sources.values() if s.get("file"))
+            missing = ", ".join(f"{s['id']}: {s['problem']}" for s in sources.values() if s.get("problem"))
+            print(f"  {name}: {got or 'NOTHING'}" + (f"   [not found - {missing}]" if missing else ""), flush=True)
+        return
     for name in names:
-        sources = fetch(name, config, "--again" in sys.argv)
+        sources = fetch(name, config, "--again" in sys.argv, strict=name in old_ones, plant=plants.get(name, False))
         got = ", ".join(f"{s['id']} ({s['chars']:,} letters)" for s in sources if s.get("file"))
         missing = ", ".join(f"{s['id']}: {s['problem']}" for s in sources if s.get("problem"))
-        print(f"  {name}: {got or 'NOTHING'}" + (f"   [not found - {missing}]" if missing else ""))
+        print(f"  {name}: {got or 'NOTHING'}" + (f"   [not found - {missing}]" if missing else ""), flush=True)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,41 @@
+{
+  "name": "Cave",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "Caves and caverns are natural voids under the surface of the Earth and have also been observed in other rocky worlds (e.g., on Mars).",
+      "source": "wikipedia_en"
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "quote": "Caves and caverns are natural voids under the surface of the Earth and have also been observed in other rocky worlds (e.g., on Mars).",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cave",
+      "title": "Cave",
+      "asked_for": "Cave",
+      "revision": 1373031936,
+      "fetched_on": "2026-10-06",
+      "sha256": "f7876f9cbedc1f5edd4c93b92c90b4be0b89defac32df702f18082500267b747"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cave",
+      "title": "Cave",
+      "asked_for": "Cave",
+      "revision": 10839758,
+      "fetched_on": "2026-10-06",
+      "sha256": "fa79e977d7676f993369869ca88e7e6629678bce9cbd9dd7bc22aab72b884f79"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

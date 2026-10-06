@@ -143,13 +143,13 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its rib cage was unusually deep and formed an almost perfect semicircle, giving a barrel-shaped chest.",
-      "quote": "Compared to other mosasaurs, the rib cage of Mosasaurus is unusually deep and forms an almost perfect semicircle, giving it a barrel-shaped chest.",
+      "claim": "Its four limbs were shaped into paddles.",
+      "quote": "Its four limbs were shaped into paddles to steer the animal underwater.",
       "source": "wikipedia_en"
     },
     {
-      "claim": "Its skull was conical and tapered to a short snout that reached a little past the frontmost teeth.",
-      "quote": "The skull of Mosasaurus is conical and tapers off to a short snout which extends a little beyond the frontmost teeth.",
+      "claim": "Its rib cage was unusually deep and formed an almost perfect semicircle, giving a barrel-shaped chest.",
+      "quote": "Compared to other mosasaurs, the rib cage of Mosasaurus is unusually deep and forms an almost perfect semicircle, giving it a barrel-shaped chest.",
       "source": "wikipedia_en"
     }
   ],
@@ -157,6 +157,6 @@
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "Tail with downward fluke, deep barrel chest, conical skull with short snout."
+    "why": "Tail with downward fluke, paddle limbs, deep barrel chest."
   }
 }

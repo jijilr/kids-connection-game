@@ -1,0 +1,46 @@
+{
+  "name": "Giraffe",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Giraffes (genus Giraffa) are large African hoofed mammals.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "Giraffes (genus Giraffa) are large African hoofed mammals.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Giraffes are still found in many national parks and game reserves, and estimates as of 2016 indicate there are approximately 97,500 members of Giraffa in the wild.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Giraffe",
+      "title": "Giraffe",
+      "asked_for": "Giraffe",
+      "revision": 1378687874,
+      "fetched_on": "2026-10-06",
+      "sha256": "b14ed14540f2b93ee23e56cc26fbf7fa865cf6f231801c6f9cb14b6ef53d9f9e"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Giraffe",
+      "title": "Giraffe",
+      "asked_for": "Giraffe",
+      "revision": 10993061,
+      "fetched_on": "2026-10-06",
+      "sha256": "86b6c36865fdebd46b89495aa4a38090d66b33030fb67c1d922827f5fd591ece"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Cup",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "Cups may be made of pottery (including porcelain), glass, metal, wood, stone, polystyrene, plastic, lacquerware, or other materials.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_made_thing": {
+      "value": "household",
+      "quote": "Modern household shapes of cups generally lack a stem, but this was not always the case.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cup",
+      "title": "Cup",
+      "asked_for": "Cup",
+      "revision": 1375374064,
+      "fetched_on": "2026-10-06",
+      "sha256": "987ec2d184f8672a53811e829e7b26f9f8376fdb8dbb2ba12db4b85dec754e58"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

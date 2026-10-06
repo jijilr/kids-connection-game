@@ -1,0 +1,46 @@
+{
+  "name": "Peacock",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "A peafowl is a bird of the Phasianide family.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "A peafowl is a bird of the Phasianide family.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "For centuries peafowl have been admired for their beauty and hunted for their meat. Recently peacocks have become more popular in parks and gardens.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Peafowl",
+      "title": "Peafowl",
+      "asked_for": "Peacock",
+      "revision": 1375989640,
+      "fetched_on": "2026-10-06",
+      "sha256": "64ceb10486f4b6ddb2adb089c3566406387b21b7ae4ed26b266c83a2fd30fa13"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Peafowl",
+      "title": "Peafowl",
+      "asked_for": "Peacock",
+      "revision": 10314026,
+      "fetched_on": "2026-10-06",
+      "sha256": "5f5c108d19affde51f8d44910f0dd2df7ee02dc777f71cf1609ce1a785eb85ba"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

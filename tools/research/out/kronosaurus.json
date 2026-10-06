@@ -145,7 +145,7 @@
       "source": "wikipedia_en"
     },
     {
-      "claim": "Kronosaurus had a short tail.",
+      "claim": "Kronosaurus had a short neck.",
       "quote": "Like all plesiosaurs, Kronosaurus has four paddle-like limbs, a short tail and, like most pliosaurids, a long head and a short neck.",
       "source": "wikipedia_en"
     },
@@ -159,6 +159,6 @@
     "judge": "deepseek-flash",
     "model": "deepseek-flash",
     "date": "2026-10-06",
-    "why": "Long head, short tail, back flippers bigger than front."
+    "why": "Long head, short neck, bigger rear flippers."
   }
 }

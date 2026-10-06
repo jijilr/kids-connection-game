@@ -1,0 +1,46 @@
+{
+  "name": "Snake",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Snakes, otherwise known as serpentes, are reptiles.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "reptile",
+      "quote": "Snakes, otherwise known as serpentes, are reptiles.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Snakes are mostly terrestrial with a cosmopolitan distribution, and extant species are found on every continent except Antarctica, and on most islands",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Snake",
+      "title": "Snake",
+      "asked_for": "Snake",
+      "revision": 1377728591,
+      "fetched_on": "2026-10-06",
+      "sha256": "7474ddc87e398687e22dcf449932bc0d247a4cadc5c182518ae481e3b665fd54"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Snake",
+      "title": "Snake",
+      "asked_for": "Snake",
+      "revision": 10939704,
+      "fetched_on": "2026-10-06",
+      "sha256": "cc9cc1b1b5f0a8790320966b7ec18964197db5eb91d9ad6c605dbe771b100ee5"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

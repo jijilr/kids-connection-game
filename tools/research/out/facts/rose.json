@@ -1,0 +1,46 @@
+{
+  "name": "Rose",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "A rose is either a woody perennial flowering plant of the genus Rosa (), in the family Rosaceae (), or the flower it bears.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Species, cultivars and hybrids are all widely grown for their beauty and often are fragrant.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_plant": {
+      "value": "flower",
+      "quote": "A rose is either a woody perennial flowering plant of the genus Rosa (), in the family Rosaceae (), or the flower it bears.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Rose",
+      "title": "Rose",
+      "asked_for": "Rose",
+      "revision": 1376625769,
+      "fetched_on": "2026-10-06",
+      "sha256": "48269d8ea946521aa144bf4fb4b27cb4ef574bea8fe73965d0ace4aec437865a"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Rose",
+      "title": "Rose",
+      "asked_for": "Rose",
+      "revision": 10747574,
+      "fetched_on": "2026-10-06",
+      "sha256": "7bf71c3cc2c05c6a9234c605ec91c60a699c22d7db924727216fb1aa78b1a797"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

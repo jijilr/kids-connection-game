@@ -1,0 +1,46 @@
+{
+  "name": "Bear",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Bears are carnivoran mammals of the family Ursidae ()",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "Bears are carnivoran mammals of the family Ursidae ()",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Although only eight species of bears are extant, they are widespread, appearing in a wide variety of habitats throughout most of the Northern Hemisphere and partially in the Southern Hemisphere.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Bear",
+      "title": "Bear",
+      "asked_for": "Bear",
+      "revision": 1373603861,
+      "fetched_on": "2026-10-06",
+      "sha256": "7f66636f2d46fc7dd78f871e3a0fa7fdb8e9aed093312ed570030204eb1ffb5a"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Bear",
+      "title": "Bear",
+      "asked_for": "Bear",
+      "revision": 10990349,
+      "fetched_on": "2026-10-06",
+      "sha256": "8d271620dd8d7a3bdba4f853e0a99bd3811e22a379069b869e8dd7fc87c654b9"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

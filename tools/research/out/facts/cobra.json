@@ -1,0 +1,46 @@
+{
+  "name": "Cobra",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Cobra is the common name of various venomous snakes, most of which belong to the genus Naja.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "reptile",
+      "quote": "Cobra is a name of a snake.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Cobras usually live in tropical and desert regions of Asia and Africa.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cobra",
+      "title": "Cobra",
+      "asked_for": "Cobra",
+      "revision": 1260639923,
+      "fetched_on": "2026-10-06",
+      "sha256": "2a7d44f872e8e8bfc21f13445a60ad79378f31915e184fd256966ad080062db0"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cobra",
+      "title": "Cobra",
+      "asked_for": "Cobra",
+      "revision": 10418354,
+      "fetched_on": "2026-10-06",
+      "sha256": "76c37ec5c46e4b5d115d4d65207683ccc263293f5e35267eb930e189e68ff147"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

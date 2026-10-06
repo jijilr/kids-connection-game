@@ -1,0 +1,46 @@
+{
+  "name": "Mosquito",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "A mosquito is a type of fly.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "insect",
+      "quote": "Mosquitoes, the Culicidae, are a family of small flies consisting of 3,600 species.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "By transmitting diseases, mosquitoes cause the deaths of over one million people each year.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Mosquito",
+      "title": "Mosquito",
+      "asked_for": "Mosquito",
+      "revision": 1375789284,
+      "fetched_on": "2026-10-06",
+      "sha256": "47f731cf58511f39bd2efa8683c9ea11bd3b705c5459b226b8edb56b327ccc53"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Mosquito",
+      "title": "Mosquito",
+      "asked_for": "Mosquito",
+      "revision": 10796436,
+      "fetched_on": "2026-10-06",
+      "sha256": "b0b63ac3e160141bc45088e68ced4a55e050be1e74cdf32887007c14b38d426b"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

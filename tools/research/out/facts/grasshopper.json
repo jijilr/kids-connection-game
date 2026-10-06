@@ -1,0 +1,48 @@
+{
+  "name": "Grasshopper",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Grasshoppers are insects with long, powerful back legs which they use for jumping.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "insect",
+      "quote": "Grasshoppers are insects with long, powerful back legs which they use for jumping.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "extinct",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "false",
+      "quote": "Grasshoppers are diurnal insects, meaning they are most active during the day time."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Grasshopper",
+      "title": "Grasshopper",
+      "asked_for": "Grasshopper",
+      "revision": 1378665103,
+      "fetched_on": "2026-10-06",
+      "sha256": "06cb77d35baed15e842be570c6ea857ada02f7f8220aef90ed2944b58adbc8dd"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Grasshopper",
+      "title": "Grasshopper",
+      "asked_for": "Grasshopper",
+      "revision": 8769620,
+      "fetched_on": "2026-10-06",
+      "sha256": "05a68eab38a952182a1fed5ca95b9973edb1424a7bb1642ed7f00f4dc7409062"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Crocodile",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "A crocodile is a large amphibious reptile.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "reptile",
+      "quote": "A crocodile is a large amphibious reptile.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Present-day crocodiles range in size from African dwarf crocodiles that measure rarely over 5 feet (1.5 m) to saltwater crocodiles which can approach 23 feet (7 m).",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Crocodile",
+      "title": "Crocodile",
+      "asked_for": "Crocodile",
+      "revision": 1372417258,
+      "fetched_on": "2026-10-06",
+      "sha256": "e30f93b73112318c8f920b1c577802efd232e71478bd630b92af0913e0ac58a6"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Crocodile",
+      "title": "Crocodile",
+      "asked_for": "Crocodile",
+      "revision": 10992491,
+      "fetched_on": "2026-10-06",
+      "sha256": "fedc0d83e40acebb15e0358fa9f195b974b202d90f384091f547f99e14c789b5"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

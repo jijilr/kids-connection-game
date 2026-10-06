@@ -1,0 +1,46 @@
+{
+  "name": "Cockroach",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Cockroaches (or roaches) are insects belonging to the order Blattodea (Blattaria).",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "insect",
+      "quote": "Cockroaches (or roaches) are insects belonging to the order Blattodea (Blattaria).",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "They are common and hardy insects capable of tolerating a wide range of climates, from Arctic cold to tropical heat.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cockroach",
+      "title": "Cockroach",
+      "asked_for": "Cockroach",
+      "revision": 1376229932,
+      "fetched_on": "2026-10-06",
+      "sha256": "d7b3152b67038c975379bca2d47cb532b99d8ea0f5e2d95c15f83b627b697fd6"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cockroach",
+      "title": "Cockroach",
+      "asked_for": "Cockroach",
+      "revision": 9867689,
+      "fetched_on": "2026-10-06",
+      "sha256": "0202cd9b4d640cf24686055789e88a5ead47f0213d4d772de34470b2c226c909"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

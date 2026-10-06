@@ -1,0 +1,41 @@
+{
+  "name": "Pond",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "A pond is a small, still, land-based body of water formed by pooling inside a depression, either naturally or artificially.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_nature": {
+      "value": "water",
+      "quote": "A pond is a body of water smaller than a lake.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Pond",
+      "title": "Pond",
+      "asked_for": "Pond",
+      "revision": 1376556855,
+      "fetched_on": "2026-10-06",
+      "sha256": "f600bd05eeb7223866c1ccc0c0341698c320f0172047b91bf255051cfa4248ff"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Pond",
+      "title": "Pond",
+      "asked_for": "Pond",
+      "revision": 10022008,
+      "fetched_on": "2026-10-06",
+      "sha256": "6357613a375366135a53a870dcb5b56f0493083dfc64e26a7a48e5501302704a"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

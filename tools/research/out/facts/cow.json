@@ -1,0 +1,46 @@
+{
+  "name": "Cow",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Cattle is a word for certain mammals that belong to the genus Bos.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "Cattle is a word for certain mammals that belong to the genus Bos.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "There were over 940 million cattle in the world by 2022.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cattle",
+      "title": "Cattle",
+      "asked_for": "Cow",
+      "revision": 1377727886,
+      "fetched_on": "2026-10-06",
+      "sha256": "af05a51e61a9f87a1da8b57fa65fd6a1e99f85fb66c454cb3e7359f93b5f9e95"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cattle",
+      "title": "Cattle",
+      "asked_for": "Cow",
+      "revision": 10927182,
+      "fetched_on": "2026-10-06",
+      "sha256": "963993585ebaf06fdc9c196b433603de248b99efad7b0ec1b3bf8086818809fe"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

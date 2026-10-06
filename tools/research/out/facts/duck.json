@@ -1,0 +1,46 @@
+{
+  "name": "Duck",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Ducks are birds in the family Anatidae.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "Ducks are birds in the family Anatidae.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Ducks are mostly aquatic birds, and may be found in both fresh water and sea water.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Duck",
+      "title": "Duck",
+      "asked_for": "Duck",
+      "revision": 1376681070,
+      "fetched_on": "2026-10-06",
+      "sha256": "108806df8d653f5f57520ee7f55e81f93dff855e3fb45e2e1d5d3d3e0e225cfb"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Duck",
+      "title": "Duck",
+      "asked_for": "Duck",
+      "revision": 10955357,
+      "fetched_on": "2026-10-06",
+      "sha256": "bf54d093ea5d04411af8dc5d555feba4d4860f92b952fe7cacd044221ce97faf"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Anaconda",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Anacondas or water boas are a group of large boas of the genus Eunectes.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "reptile",
+      "quote": "They are a semiaquatic group of snakes found in tropical South America.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "It is the thickest, heaviest, and second longest known living snake (behind the reticulated python).",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Anaconda",
+      "title": "Anaconda",
+      "asked_for": "Anaconda",
+      "revision": 1365299367,
+      "fetched_on": "2026-10-06",
+      "sha256": "18f13483392136384067a71ec50cf7dc4a2ebfbd5047fef9e76aca284181baee"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Anaconda",
+      "title": "Anaconda",
+      "asked_for": "Anaconda",
+      "revision": 10919943,
+      "fetched_on": "2026-10-06",
+      "sha256": "cacfe395dfdee6047c8dfe4bff624db404893529209608ff3bfd0f64cb493173"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

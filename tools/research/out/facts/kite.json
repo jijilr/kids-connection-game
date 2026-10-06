@@ -1,0 +1,41 @@
+{
+  "name": "Kite",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A kite is a flying object that is attached to the ground by a rope, or ropes.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "quote": "Kites can be flown for fun, or in competitions.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Kite",
+      "title": "Kite",
+      "asked_for": "Kite",
+      "revision": 1363081193,
+      "fetched_on": "2026-10-06",
+      "sha256": "2bf24de1b8d4bfee1e22c8dac48f41d6a8b4912c6d7a622ef389dc20dbd075ba"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Kite",
+      "title": "Kite",
+      "asked_for": "Kite",
+      "revision": 9498946,
+      "fetched_on": "2026-10-06",
+      "sha256": "f85beb62f427b5be71afe9da7ae79f9dce523a6866ceba74b1b95b976c55b905"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

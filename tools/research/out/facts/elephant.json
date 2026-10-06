@@ -1,0 +1,46 @@
+{
+  "name": "Elephant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Elephants are the largest living land animals.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "Elephants are the biggest living land mammals.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Elephants are the largest living land animals.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Elephant",
+      "title": "Elephant",
+      "asked_for": "Elephant",
+      "revision": 1378665714,
+      "fetched_on": "2026-10-06",
+      "sha256": "8c4987460257d8bb7db97ccec586eb9cf737617e4dc00b2b9efaa99b21e40f57"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Elephant",
+      "title": "Elephant",
+      "asked_for": "Elephant",
+      "revision": 10879973,
+      "fetched_on": "2026-10-06",
+      "sha256": "a77897200e0a11b7adbfd3044ff34920c009cf613f24a0e684e5ffa036ef88d6"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Sunflower",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "The common sunflower (Helianthus annuus) is a large annual forb in the daisy family Asteraceae.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "The common sunflower (Helianthus annuus) is a living annual plant in the family Asteraceae, with a large flower head (capitulum).",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_plant": {
+      "value": "flower",
+      "quote": "The common sunflower (Helianthus annuus) is a living annual plant in the family Asteraceae, with a large flower head (capitulum).",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Common_sunflower",
+      "title": "Common sunflower",
+      "asked_for": "Sunflower",
+      "revision": 1378734771,
+      "fetched_on": "2026-10-06",
+      "sha256": "8f1f8eedebead9a0ccb40e9642516591cc2b050ff121a62944b498c87565bf20"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Sunflower",
+      "title": "Sunflower",
+      "asked_for": "Sunflower",
+      "revision": 10911375,
+      "fetched_on": "2026-10-06",
+      "sha256": "c3f924e464f4585ecfea920faf521e629b21b847c497c452871b7f995efb0d6d"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

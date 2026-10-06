@@ -1,0 +1,41 @@
+{
+  "name": "Bed",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A bed is a piece of furniture that is used as a place to sleep, rest, and relax.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_made_thing": {
+      "value": "household",
+      "quote": "A bed is a piece of furniture that is used as a place to sleep, rest, and relax.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Bed",
+      "title": "Bed",
+      "asked_for": "Bed",
+      "revision": 1377728890,
+      "fetched_on": "2026-10-06",
+      "sha256": "e4e3464a2a3e95783751a972b46cf5fb04ec81b9e751f109ec39fa422c6c1b97"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Bed",
+      "title": "Bed",
+      "asked_for": "Bed",
+      "revision": 10950169,
+      "fetched_on": "2026-10-06",
+      "sha256": "15c368f4e293b9b725fbbdd7f95220a1e512818f4b5df3d846843a3ad05a67d7"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

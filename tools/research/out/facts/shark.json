@@ -1,0 +1,46 @@
+{
+  "name": "Shark",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Sharks are a superorder of fish.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "fish",
+      "quote": "Sharks are a superorder of fish.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "They are found in all seas and are common to depths up to 2,000 metres (6,600 ft).",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Shark",
+      "title": "Shark",
+      "asked_for": "Shark",
+      "revision": 1372165993,
+      "fetched_on": "2026-10-06",
+      "sha256": "9fedc39fa2693f5fdba455eba64bc00b6cdb23a4c48e440507bbe250fcf4f1d6"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Shark",
+      "title": "Shark",
+      "asked_for": "Shark",
+      "revision": 10887500,
+      "fetched_on": "2026-10-06",
+      "sha256": "daee7efb28f20386986f1d7e62b86721e24565091c2e3bfd2839f881993b2265"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

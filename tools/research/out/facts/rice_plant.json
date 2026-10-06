@@ -1,0 +1,48 @@
+{
+  "name": "Rice plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Rice is the seed of the grass species Oryza sativa (Asian rice)—or, less commonly, Oryza glaberrima (African rice).",
+      "source": "wikipedia_en"
+    },
+    "kind_of_plant": {
+      "value": "grass_grain",
+      "quote": "Rice is a cereal grain and, in its domesticated form, is the staple food of over half of the world's population, particularly in Africa and Asia.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "extinct",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "false",
+      "quote": "Rice is the seed of the grass species Oryza sativa (Asian rice)—or, less commonly, Oryza glaberrima (African rice)."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Rice",
+      "title": "Rice",
+      "asked_for": "Rice plant",
+      "revision": 1376837633,
+      "fetched_on": "2026-10-06",
+      "sha256": "b9f9d743331a25cd13190e2638ffd082c4b42384ce33a7faa836ecc1078b4110"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Rice",
+      "title": "Rice",
+      "asked_for": "Rice",
+      "revision": 10966085,
+      "fetched_on": "2026-10-06",
+      "sha256": "672971917ffffd68b6e78a68168482025a8e8b70497f95fd6026115984550f95"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

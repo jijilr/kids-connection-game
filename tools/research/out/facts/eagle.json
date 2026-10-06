@@ -1,0 +1,46 @@
+{
+  "name": "Eagle",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Eagle is a general term for many large birds of prey.",
+      "source": "wikipedia_simple"
+    },
+    "kind_of_animal": {
+      "value": "bird",
+      "quote": "Eagle is a general term for many large birds of prey.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Over 60 species have been described, and they live in many parts of the world.",
+      "source": "wikipedia_simple"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Eagle",
+      "title": "Eagle",
+      "asked_for": "Eagle",
+      "revision": 1370284838,
+      "fetched_on": "2026-10-06",
+      "sha256": "208dbcb266309aa05790817503107fd9b6deaadc1bf8fd404b39a987c553c9b3"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Eagle",
+      "title": "Eagle",
+      "asked_for": "Eagle",
+      "revision": 10330539,
+      "fetched_on": "2026-10-06",
+      "sha256": "1ced60398cda79392cd9fb58640c5ff5957d944b7eecec45edf093d543828dae"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Horse",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The horse (Equus ferus caballus) is a domesticated, one-toed, hoofed mammal.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "The horse (Equus ferus caballus) is a domesticated, one-toed, hoofed mammal.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "extinct",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "false",
+      "quote": "Horses in the subspecies caballus are domesticated, although some domesticated populations live in the wild as feral horses."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Horse",
+      "title": "Horse",
+      "asked_for": "Horse",
+      "revision": 1378595256,
+      "fetched_on": "2026-10-06",
+      "sha256": "a5d7540297e6bd6914d4a7fdc7160e22e028714596ba38411fae40321f579e58"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Horse",
+      "title": "Horse",
+      "asked_for": "Horse",
+      "revision": 10997364,
+      "fetched_on": "2026-10-06",
+      "sha256": "76d71d8d93e8a05d3fb4be90e21fd848972e4aeb551c4d458a248f1aa1f182be"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

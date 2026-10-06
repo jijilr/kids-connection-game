@@ -1,0 +1,37 @@
+{
+  "name": "Catla fish",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Catla (Labeo catla; Bengali: কাতলা, romanized: kātlā) also known as the major South Asian carp, is an economically important South Asian freshwater fish in the carp family Cyprinidae.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "fish",
+      "quote": "Catla (Labeo catla; Bengali: কাতলা, romanized: kātlā) also known as the major South Asian carp, is an economically important South Asian freshwater fish in the carp family Cyprinidae.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "It is native to rivers and lakes in northern India, Bangladesh, Myanmar, Nepal, and Pakistan, but has also been introduced elsewhere in South Asia and is commonly farmed.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Catla",
+      "title": "Catla",
+      "asked_for": "Catla",
+      "revision": 1352084426,
+      "fetched_on": "2026-10-06",
+      "sha256": "0c088dd1bd350e0a85c084e41ddd6794680a4154c8ce60f7fa0610825acb7f1a"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "House lizard",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The Common house gecko (Hemidactylus frenatus) is a gecko native to South and Southeast Asia and Near Oceania.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "reptile",
+      "quote": "The Common house gecko (Hemidactylus frenatus) is a gecko native to South and Southeast Asia and Near Oceania.",
+      "source": "wikipedia_en"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "They grow to a length of between 7.5–15 cm (3–6 in), and live for about 7 years.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Common_house_gecko",
+      "title": "Common house gecko",
+      "asked_for": "House lizard",
+      "revision": 1373671762,
+      "fetched_on": "2026-10-06",
+      "sha256": "872901860ca2d25677a5b4905a720c6de8d6e0de958e125486043d25f30cf58b"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

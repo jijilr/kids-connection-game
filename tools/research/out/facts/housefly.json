@@ -1,0 +1,46 @@
+{
+  "name": "Housefly",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The housefly (Musca domestica) is a fly of the suborder Cyclorrhapha.",
+      "source": "wikipedia_en"
+    },
+    "kind_of_animal": {
+      "value": "insect",
+      "quote": "Housefly is the common fly often found in houses.",
+      "source": "wikipedia_simple"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Adult flies normally live for two to four weeks, but can hibernate during the winter.",
+      "source": "wikipedia_en"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Housefly",
+      "title": "Housefly",
+      "asked_for": "Housefly",
+      "revision": 1378069176,
+      "fetched_on": "2026-10-06",
+      "sha256": "d0855f67636acc533cca3a2672d3c1b5e148a1953155b513522fdd1a00d8a644"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Housefly",
+      "title": "Housefly",
+      "asked_for": "Housefly",
+      "revision": 9894677,
+      "fetched_on": "2026-10-06",
+      "sha256": "96e0020b3e6e8ffa232378fd7823e441cc72bcc038cef627bb16e9ea246c3059"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}
