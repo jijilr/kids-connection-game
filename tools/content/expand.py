@@ -87,13 +87,16 @@ def build_circles(dictionary: dict, things: dict, settings: dict) -> dict:
 
 
 def branch_stats(circles: dict) -> dict:
-    """For each of the seed's branches: how many boards are open in it, and how deep."""
+    """For each of the seed's branches: how many boards are open in it, and how deep.
+    A board the owner has approved counts already, even while it waits for its content:
+    it is committed, and the balance rules must see it."""
     stats = {}
     for circle in circles.values():
         if circle["branch"] is None:
             continue
         branch = stats.setdefault(circle["branch"], {"boards_open": 0, "level": 0})
-        if circle["open"]:
+        approved = any(d.get("status") == "approved" for d in circle["decisions"])
+        if circle["open"] or approved:
             branch["boards_open"] += 1
             branch["level"] = max(branch["level"], circle["steps_from_seed"])
     return stats
@@ -104,7 +107,6 @@ def judge(circles: dict, branches: dict, old: dict, proposals: dict):
     richest = max(b["boards_open"] for b in branches.values())
     shallowest = min(b["level"] for b in branches.values())
     for cid, circle in circles.items():
-        circle["decisions"] = old.get(cid, {}).get("decisions", [])
         if cid in proposals:
             circle["proposal"] = proposals[cid]
         if circle["open"]:
@@ -197,6 +199,8 @@ def rebuild() -> dict:
                  if k != "about" and v["status"].startswith("awaiting")}
 
     circles = build_circles(dictionary, things, read_json(SETTINGS))
+    for cid, circle in circles.items():
+        circle["decisions"] = old.get(cid, {}).get("decisions", [])
     branches = branch_stats(circles)
     judge(circles, branches, old, proposals)
     chosen, share = propose(circles, branches)

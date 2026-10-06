@@ -2,7 +2,7 @@
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-10-06",
   "dictionary_version": 2,
-  "things": 132,
+  "things": 135,
   "rules": {
     "weights": {
       "nearness": 3,
@@ -16,16 +16,16 @@
   },
   "branches": {
     "animal": {
-      "boards_open": 1,
-      "level": 1
+      "boards_open": 2,
+      "level": 2
     },
     "plant": {
       "boards_open": 1,
       "level": 1
     },
     "nature_not_alive": {
-      "boards_open": 0,
-      "level": 0
+      "boards_open": 1,
+      "level": 1
     },
     "made_by_people": {
       "boards_open": 1,
@@ -33,15 +33,18 @@
     }
   },
   "proposals": [
-    "nature_not_alive",
-    "made_by_people/building"
+    "plant/tree",
+    "plant/flower",
+    "plant/grass_grain",
+    "plant/vegetable",
+    "nature_not_alive/sky"
   ],
   "circles": {
     "seed": {
       "label": "Everything",
       "steps_from_seed": 0,
       "branch": null,
-      "members": 132,
+      "members": 135,
       "open": true,
       "sorted_by": "kind_of_thing",
       "decisions": [],
@@ -76,8 +79,7 @@
       },
       "score": 2.8,
       "move": "deepening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+      "status": "proposable"
     },
     "animal/bird": {
       "label": "Birds",
@@ -98,8 +100,7 @@
       },
       "score": 2.7,
       "move": "deepening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+      "status": "proposable"
     },
     "animal/fish": {
       "label": "Fish",
@@ -120,8 +121,7 @@
       },
       "score": 2.6,
       "move": "deepening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+      "status": "proposable"
     },
     "animal/insect": {
       "label": "Insects",
@@ -142,8 +142,7 @@
       },
       "score": 2.7,
       "move": "deepening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+      "status": "proposable"
     },
     "animal/reptile": {
       "label": "Reptiles",
@@ -170,8 +169,7 @@
       },
       "score": 2.8,
       "move": "deepening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+      "status": "proposable"
     },
     "animal/amphibian": {
       "label": "Amphibians",
@@ -264,14 +262,13 @@
       "decisions": [],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.5,
         "unlocks": 0.33,
         "cheapness": 0.2
       },
-      "score": 2.6,
-      "move": "deepening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+      "score": 4.1,
+      "move": "widening",
+      "status": "proposable"
     },
     "plant/flower": {
       "label": "Flowers",
@@ -286,14 +283,13 @@
       "decisions": [],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.5,
         "unlocks": 0.33,
         "cheapness": 0.2
       },
-      "score": 2.6,
-      "move": "deepening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+      "score": 4.1,
+      "move": "widening",
+      "status": "proposable"
     },
     "plant/grass_grain": {
       "label": "Grasses and grains",
@@ -308,14 +304,13 @@
       "decisions": [],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.5,
         "unlocks": 0.33,
         "cheapness": 0.21
       },
-      "score": 2.6,
-      "move": "deepening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+      "score": 4.1,
+      "move": "widening",
+      "status": "proposable"
     },
     "plant/vegetable": {
       "label": "Vegetable plants",
@@ -330,37 +325,105 @@
       "decisions": [],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.5,
         "unlocks": 0.33,
         "cheapness": 0.2
       },
-      "score": 2.6,
-      "move": "deepening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+      "score": 4.1,
+      "move": "widening",
+      "status": "proposable"
     },
     "nature_not_alive": {
       "label": "Things in nature that are not alive",
       "steps_from_seed": 1,
       "branch": "nature_not_alive",
-      "members": 17,
-      "open": false,
+      "members": 20,
+      "open": true,
       "sorted_by": "kind_of_nature",
+      "decisions": [],
+      "status": "open"
+    },
+    "nature_not_alive/sky": {
+      "label": "Things in the sky",
+      "steps_from_seed": 2,
+      "branch": "nature_not_alive",
+      "members": 4,
+      "open": false,
       "missing": {
-        "field": null,
-        "short": {
-          "land": 1
-        },
-        "things": 1
+        "field": "no field splits it four ways",
+        "things": 12
       },
       "decisions": [],
       "factors": {
-        "nearness": 1.0,
-        "neglect": 1.0,
+        "nearness": 0.5,
+        "neglect": 0.5,
         "unlocks": 0.33,
-        "cheapness": 0.8
+        "cheapness": 0.2
       },
-      "score": 8.3,
+      "score": 4.1,
+      "move": "widening",
+      "status": "proposable"
+    },
+    "nature_not_alive/water": {
+      "label": "Water",
+      "steps_from_seed": 2,
+      "branch": "nature_not_alive",
+      "members": 4,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 12
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.5,
+        "neglect": 0.5,
+        "unlocks": 0.33,
+        "cheapness": 0.2
+      },
+      "score": 4.1,
+      "move": "widening",
+      "status": "proposable"
+    },
+    "nature_not_alive/land": {
+      "label": "Places on land",
+      "steps_from_seed": 2,
+      "branch": "nature_not_alive",
+      "members": 6,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 10
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.5,
+        "neglect": 0.5,
+        "unlocks": 0.33,
+        "cheapness": 0.22
+      },
+      "score": 4.1,
+      "move": "widening",
+      "status": "proposable"
+    },
+    "nature_not_alive/ground": {
+      "label": "Rocks and soil",
+      "steps_from_seed": 2,
+      "branch": "nature_not_alive",
+      "members": 5,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 11
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.5,
+        "neglect": 0.5,
+        "unlocks": 0.33,
+        "cheapness": 0.21
+      },
+      "score": 4.1,
       "move": "widening",
       "status": "proposable"
     },
@@ -387,14 +450,13 @@
       "decisions": [],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.5,
         "unlocks": 0.33,
         "cheapness": 0.2
       },
-      "score": 2.6,
-      "move": "deepening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+      "score": 4.1,
+      "move": "widening",
+      "status": "proposable"
     },
     "made_by_people/toy": {
       "label": "Toys",
@@ -409,14 +471,13 @@
       "decisions": [],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.5,
         "unlocks": 0.33,
         "cheapness": 0.24
       },
-      "score": 2.6,
-      "move": "deepening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+      "score": 4.1,
+      "move": "widening",
+      "status": "proposable"
     },
     "made_by_people/household": {
       "label": "Things in the house",
@@ -431,14 +492,13 @@
       "decisions": [],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.5,
         "unlocks": 0.33,
         "cheapness": 0.24
       },
-      "score": 2.6,
-      "move": "deepening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+      "score": 4.1,
+      "move": "widening",
+      "status": "proposable"
     },
     "made_by_people/tool": {
       "label": "Tools",
@@ -453,14 +513,13 @@
       "decisions": [],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.5,
         "unlocks": 0.33,
         "cheapness": 0.21
       },
-      "score": 2.6,
-      "move": "deepening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 2 levels deep while the shallowest branch is at 0"
+      "score": 4.1,
+      "move": "widening",
+      "status": "proposable"
     },
     "made_by_people/building": {
       "label": "Buildings",
@@ -475,11 +534,11 @@
       "decisions": [],
       "factors": {
         "nearness": 0.5,
-        "neglect": 0.0,
+        "neglect": 0.5,
         "unlocks": 0.0,
         "cheapness": 0.57
       },
-      "score": 2.6,
+      "score": 4.1,
       "move": "widening",
       "status": "proposable"
     }

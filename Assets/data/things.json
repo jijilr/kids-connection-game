@@ -1577,6 +1577,48 @@
       "reviewed": 2,
       "source": "deepseek:drafted+checked",
       "drafted_in": "toys_top_up"
+    },
+    "desert": {
+      "name": "Desert",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land"
+      },
+      "familiar": 0.7,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked, approved by the owner",
+      "drafted_in": "made_and_nature",
+      "notes": {
+        "general": "Held at first: the drafter was unsure: A four-year-old may know the word from picture books but may not have seen one."
+      }
+    },
+    "volcano": {
+      "name": "Volcano",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land"
+      },
+      "familiar": 0.75,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked, approved by the owner",
+      "drafted_in": "land_top_up",
+      "notes": {
+        "general": "Held at first: the drafter was unsure: A child may know it from picture books rather than from daily life, since few children see one."
+      }
+    },
+    "cave": {
+      "name": "Cave",
+      "fields": {
+        "kind_of_thing": "nature_not_alive",
+        "kind_of_nature": "land"
+      },
+      "familiar": 0.7,
+      "reviewed": 2,
+      "source": "deepseek:drafted+checked, approved by the owner",
+      "drafted_in": "land_top_up",
+      "notes": {
+        "general": "Held at first: the drafter was unsure: A child may know caves from stories or pictures rather than from visiting one."
+      }
     }
   }
 }

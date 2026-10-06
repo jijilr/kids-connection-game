@@ -63,10 +63,15 @@ class EngineProvider extends ChangeNotifier {
   bool isSelected(Entity e) => selected.any((x) => x.id == e.id);
   bool isSolved(Entity e) => solved.any((g) => g.items.any((x) => x.id == e.id));
 
-  /// Only offer "dig deeper" where there really is a deeper 4×4 to play.
+  /// Only offer "dig deeper" where there really is a deeper 4×4 to play — and, when the
+  /// settings ask for it, only where that board can be drawn in pictures.
   bool canDescend(BoardGroup g) {
     if (!boardFinished) return false;
-    return _repo.assembler.boardableDimensions(_childFilter(g)).isNotEmpty;
+    final filter = _childFilter(g);
+    final dims = _repo.assembler.boardableDimensions(filter);
+    if (dims.isEmpty) return false;
+    return !_repo.settings.boardsNeedPictures ||
+        _repo.assembler.hasPictureBoard(filter, dims.first);
   }
 
   bool get anyDescendable => solved.any(canDescend);

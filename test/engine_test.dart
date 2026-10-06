@@ -149,9 +149,12 @@ void main() {
     solve(g);
     final seedGroups = [...g.board!.groups];
     for (final grp in seedGroups) {
-      final inside = repo.assembler.boardableDimensions([(grp.dimId, grp.value)]);
-      expect(g.canDescend(grp), inside.isNotEmpty, reason: grp.label);
-      if (inside.isEmpty) continue;
+      final filter = <PathFilter>[(grp.dimId, grp.value)];
+      final inside = repo.assembler.boardableDimensions(filter);
+      final opens =
+          inside.isNotEmpty && repo.assembler.hasPictureBoard(filter, inside.first);
+      expect(g.canDescend(grp), opens, reason: grp.label);
+      if (!opens) continue;
       g.descendInto(grp);
       expect(g.board!.dimension.id, inside.first.id);
       expect(g.board!.groups, hasLength(4));
@@ -204,8 +207,27 @@ void main() {
         reason: 'Dinosaurs opens once every kind of dinosaur has four names');
     for (final grp in g.board!.groups) {
       final filter = <PathFilter>[('kind_of_thing', 'animal'), (grp.dimId, grp.value)];
-      expect(g.canDescend(grp), repo.assembler.boardableDimensions(filter).isNotEmpty);
+      final inside = repo.assembler.boardableDimensions(filter);
+      expect(g.canDescend(grp),
+          inside.isNotEmpty && repo.assembler.hasPictureBoard(filter, inside.first));
     }
+  });
+
+  test('a board that could only show names stays closed to the child', () async {
+    expect(settings.boardsNeedPictures, isTrue);
+    final repo = repoWithSeed(2);
+    final g = await start(2, repo: repo);
+    solve(g);
+    for (final grp in g.board!.groups) {
+      final filter = <PathFilter>[(grp.dimId, grp.value)];
+      final inside = repo.assembler.boardableDimensions(filter);
+      if (inside.isEmpty) continue;
+      // The board exists in the data. Whether the child may open it depends on pictures.
+      final board = repo.assembler.assemble(filter: filter, dimension: inside.first)!;
+      expect(g.canDescend(grp), board.style != null, reason: grp.label);
+    }
+    // Things people make has pictures throughout, so it is open.
+    expect(g.canDescend(g.board!.groups.singleWhere((x) => x.value == 'made_by_people')), isTrue);
   });
 
   test('an academic field is stored but never sorts a board', () {

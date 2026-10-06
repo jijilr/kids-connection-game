@@ -101,7 +101,8 @@ def main():
     # Things this same plan produced on an earlier run are re-decided from scratch.
     # Everything else - other plans, the owner's list - is left exactly as it is.
     plan = draft["plan"]
-    store["things"] = {k: v for k, v in store["things"].items() if v.get("drafted_in") != plan}
+    store["things"] = {k: v for k, v in store["things"].items()
+                       if not (v.get("drafted_in") == plan and v.get("source") == SOURCE)}
     queue = []
     seen = {}
     for thing in drafted:
@@ -128,7 +129,8 @@ def main():
         seen.setdefault(key, thing["fields"])
 
         if reasons:
-            queue.append({"name": thing["name"], "fields": thing["fields"], "why": reasons})
+            queue.append({"name": thing["name"], "fields": thing["fields"],
+                          "familiar": round(thing["familiar"], 2), "why": reasons})
             continue
         store["things"][key] = {
             "name": thing["name"],

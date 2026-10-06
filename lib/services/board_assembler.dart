@@ -193,6 +193,20 @@ class BoardAssembler {
 
   static const _maxRebuilds = 20;
 
+  /// Whether a board over [filter] sorted by [dimension] can be drawn in one picture
+  /// style throughout, rather than with names only.
+  bool hasPictureBoard(List<PathFilter> filter, Dimension dimension) {
+    final pool = _filtered(filter);
+    return styles.any((shows) {
+      final counts = <String, int>{};
+      for (final e in pool.where(shows)) {
+        final v = e.valueFor(dimension.id);
+        if (v != null && dimension.values.containsKey(v)) counts[v] = (counts[v] ?? 0) + 1;
+      }
+      return counts.values.where((c) => c >= 4).length >= 4;
+    });
+  }
+
   /// Another field that ALSO splits [tiles] cleanly into four groups of four, or null.
   /// Every stored field is tried, not only the ones that sort boards. A board with a
   /// second clean solution is refused: a child sorting by what he sees could give a

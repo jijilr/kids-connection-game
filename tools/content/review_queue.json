@@ -123,40 +123,8 @@
       "why": [
         "the drafter was unsure: A young child may not clearly tell an ocean apart from a sea."
       ],
-      "from": "check:made_and_nature"
-    },
-    {
-      "name": "Desert",
-      "fields": {
-        "kind_of_thing": "nature_not_alive",
-        "kind_of_nature": "land"
-      },
-      "why": [
-        "the drafter was unsure: A four-year-old may know the word from picture books but may not have seen one."
-      ],
-      "from": "check:made_and_nature"
-    },
-    {
-      "name": "Volcano",
-      "fields": {
-        "kind_of_thing": "nature_not_alive",
-        "kind_of_nature": "land"
-      },
-      "why": [
-        "the drafter was unsure: A child may know it from picture books rather than from daily life, since few children see one."
-      ],
-      "from": "check:land_top_up"
-    },
-    {
-      "name": "Cave",
-      "fields": {
-        "kind_of_thing": "nature_not_alive",
-        "kind_of_nature": "land"
-      },
-      "why": [
-        "the drafter was unsure: A child may know caves from stories or pictures rather than from visiting one."
-      ],
-      "from": "check:land_top_up"
+      "from": "check:made_and_nature",
+      "familiar": 0.75
     },
     {
       "name": "Sand dune",
@@ -167,7 +135,8 @@
       "why": [
         "the drafter was unsure: A child in India may know sand from beaches but not the word 'dune'."
       ],
-      "from": "check:land_top_up"
+      "from": "check:land_top_up",
+      "familiar": 0.55
     },
     {
       "name": "Drum",
@@ -178,7 +147,8 @@
       "why": [
         "kind_of_made_thing: debated - A drum is a musical instrument, and while children play with toy drums, its main use is making music rather than being a toy."
       ],
-      "from": "check:toys_top_up"
+      "from": "check:toys_top_up",
+      "familiar": 0.9
     }
   ]
 }

@@ -14,11 +14,16 @@ class GameSettings {
   /// Values kept off every board for now, e.g. a kind with too few familiar things.
   final Map<String, List<String>> holdBack;
 
+  /// When true, a group opens only if the board inside it can be drawn in pictures.
+  /// A board that could only show names stays closed to a child who cannot read.
+  final bool boardsNeedPictures;
+
   const GameSettings({
     required this.startField,
     required this.startLabel,
     this.keepInPlay = const {},
     this.holdBack = const {},
+    this.boardsNeedPictures = false,
   });
 
   factory GameSettings.fromJson(Map<String, dynamic> json) {
@@ -31,6 +36,7 @@ class GameSettings {
       startLabel: start['label'] as String,
       keepInPlay: lists('keep_in_play'),
       holdBack: lists('hold_back'),
+      boardsNeedPictures: json['boards_need_pictures'] as bool? ?? false,
     );
   }
 }
