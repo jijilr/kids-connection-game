@@ -884,14 +884,9 @@
       "branch": "nature_not_alive",
       "members": 12,
       "open": false,
-      "sorted_by": "what_happens_when_wet",
       "missing": {
-        "field": null,
-        "short": {
-          "gets_sticky": 3,
-          "washes_away": 3
-        },
-        "things": 6
+        "field": "no field splits it four ways",
+        "things": 4
       },
       "decisions": [
         {
@@ -912,15 +907,21 @@
           "what": "the rules added the field \"What happens when it gets wet?\" in job run 2026-10-07-02",
           "why": "it passed the four tests: Stays hard, Gets sticky, Gets mushy, Washes away",
           "status": "added by the rules"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the field \"What happens when it gets wet?\" was withdrawn",
+          "why": "it passed on groups padded with other names for mud; a name must now be a thing of its own",
+          "status": "released"
         }
       ],
       "factors": {
         "nearness": 0.5,
         "neglect": 0.67,
         "unlocks": 0.33,
-        "cheapness": 0.4
+        "cheapness": 0.33
       },
-      "score": 5.0,
+      "score": 4.8,
       "move": "widening",
       "status": "proposable"
     },

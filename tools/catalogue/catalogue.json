@@ -18101,7 +18101,7 @@
     },
     "wet_soil": {
       "name": "Wet soil",
-      "status": "in the game",
+      "status": "taken out of the game",
       "fields": {
         "kind_of_thing": "nature_not_alive",
         "kind_of_nature": "ground",
@@ -18112,30 +18112,16 @@
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-02",
       "worked_out": {
-        "circles": [
+        "would_join": [
           "seed",
           "nature_not_alive",
           "nature_not_alive/ground"
-        ],
-        "boards": [
-          {
-            "circle": "seed",
-            "sorted_by": "kind_of_thing",
-            "group": "nature_not_alive",
-            "open_now": true
-          },
-          {
-            "circle": "nature_not_alive",
-            "sorted_by": "kind_of_nature",
-            "group": "ground",
-            "open_now": true
-          }
         ]
       },
       "picture": {
         "tile": "job_2026_10_07_02_1_01_c8",
-        "game_file": "Assets/pictures/wet_soil.webp",
-        "game_sha256": "06c5b215ea1dc26cea434cfffc6b033160f3a2c85647033e254673c23addca1e",
+        "game_file": null,
+        "game_sha256": null,
         "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c8.png",
         "master_sha256": "1d02ae1794ff2b3431c4bbefb3f7a43cb8b9469d72e622481fbb4bfa5cdb0cdb",
         "style": "v1",
@@ -18166,11 +18152,14 @@
         "say": "Wet soil",
         "checked_by_ear": false,
         "clip": null
-      }
+      },
+      "status_why": [
+        "another name for mud or soil, not a thing of its own; run 2026-10-07-02 let it in before that was checked"
+      ]
     },
     "muck": {
       "name": "Muck",
-      "status": "in the game",
+      "status": "taken out of the game",
       "fields": {
         "kind_of_thing": "nature_not_alive",
         "kind_of_nature": "ground",
@@ -18181,30 +18170,16 @@
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-02",
       "worked_out": {
-        "circles": [
+        "would_join": [
           "seed",
           "nature_not_alive",
           "nature_not_alive/ground"
-        ],
-        "boards": [
-          {
-            "circle": "seed",
-            "sorted_by": "kind_of_thing",
-            "group": "nature_not_alive",
-            "open_now": true
-          },
-          {
-            "circle": "nature_not_alive",
-            "sorted_by": "kind_of_nature",
-            "group": "ground",
-            "open_now": true
-          }
         ]
       },
       "picture": {
         "tile": "job_2026_10_07_02_1_01_c2",
-        "game_file": "Assets/pictures/muck.webp",
-        "game_sha256": "31ee56cb729a89ae3a3e621358f60e48bedc4c2f0d94970c7faf6a15ca13c5f5",
+        "game_file": null,
+        "game_sha256": null,
         "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_1_01_c2.png",
         "master_sha256": "93e44906d6fe890d80be585408b646c98a429d6f017e450ef4658b81f52c2a5c",
         "style": "v1",
@@ -18247,11 +18222,14 @@
         "say": "Muck",
         "checked_by_ear": false,
         "clip": null
-      }
+      },
+      "status_why": [
+        "another name for mud or soil, not a thing of its own; run 2026-10-07-02 let it in before that was checked"
+      ]
     },
     "wet_dirt": {
       "name": "Wet dirt",
-      "status": "in the game",
+      "status": "taken out of the game",
       "fields": {
         "kind_of_thing": "nature_not_alive",
         "kind_of_nature": "ground",
@@ -18262,30 +18240,16 @@
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-02",
       "worked_out": {
-        "circles": [
+        "would_join": [
           "seed",
           "nature_not_alive",
           "nature_not_alive/ground"
-        ],
-        "boards": [
-          {
-            "circle": "seed",
-            "sorted_by": "kind_of_thing",
-            "group": "nature_not_alive",
-            "open_now": true
-          },
-          {
-            "circle": "nature_not_alive",
-            "sorted_by": "kind_of_nature",
-            "group": "ground",
-            "open_now": true
-          }
         ]
       },
       "picture": {
         "tile": "job_2026_10_07_02_2_01_c1",
-        "game_file": "Assets/pictures/wet_dirt.webp",
-        "game_sha256": "e9ba661d3808ebd744b60487a7776c6494bc78a57fb284170d17ae680167cabc",
+        "game_file": null,
+        "game_sha256": null,
         "master_file": "tools/pictures/tiles/masters/job_2026_10_07_02_2_01_c1.png",
         "master_sha256": "d70f44e28c6e8cabfe079ccff5985f2e90b5f925e3e50b72634844254b31a56a",
         "style": "v1",
@@ -18316,7 +18280,10 @@
         "say": "Wet dirt",
         "checked_by_ear": false,
         "clip": null
-      }
+      },
+      "status_why": [
+        "another name for mud or soil, not a thing of its own; run 2026-10-07-02 let it in before that was checked"
+      ]
     },
     "boulder": {
       "name": "Boulder",
@@ -18678,9 +18645,10 @@
     },
     "chalk": {
       "name": "Chalk",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "uncertain: two checks could not settle whether it belongs in 'Stays hard': the two checks disagree: 'gets_mushy' and 'washes_away'"
+        "uncertain: two checks could not settle whether it belongs in 'Stays hard': the two checks disagree: 'gets_mushy' and 'washes_away'",
+        "a suggested name that two checks cannot place is held by the rules, not sent to the owner"
       ],
       "held_from": "job:2026-10-07-02",
       "fields": {
@@ -18741,9 +18709,10 @@
     },
     "slush": {
       "name": "Slush",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "uncertain: two checks could not settle whether it belongs in 'Rocks and soil': it fits more than one group: water and ground"
+        "uncertain: two checks could not settle whether it belongs in 'Rocks and soil': it fits more than one group: water and ground",
+        "a suggested name that two checks cannot place is held by the rules, not sent to the owner"
       ],
       "held_from": "job:2026-10-07-02",
       "fields": {
@@ -18867,9 +18836,10 @@
     },
     "sticky_soil": {
       "name": "Sticky soil",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "uncertain: two checks could not settle whether it belongs in 'Gets sticky': it fits more than one group: gets_sticky and gets_mushy"
+        "uncertain: two checks could not settle whether it belongs in 'Gets sticky': it fits more than one group: gets_sticky and gets_mushy",
+        "a suggested name that two checks cannot place is held by the rules, not sent to the owner"
       ],
       "held_from": "job:2026-10-07-02",
       "fields": {
@@ -18888,9 +18858,10 @@
     },
     "sticky_dirt": {
       "name": "Sticky dirt",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "uncertain: two checks could not settle whether it belongs in 'Gets sticky': it fits more than one group: gets_sticky and gets_mushy"
+        "uncertain: two checks could not settle whether it belongs in 'Gets sticky': it fits more than one group: gets_sticky and gets_mushy",
+        "a suggested name that two checks cannot place is held by the rules, not sent to the owner"
       ],
       "held_from": "job:2026-10-07-02",
       "fields": {
@@ -18909,9 +18880,10 @@
     },
     "sticky_earth": {
       "name": "Sticky earth",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "uncertain: two checks could not settle whether it belongs in 'Gets sticky': it fits more than one group: gets_sticky and gets_mushy"
+        "uncertain: two checks could not settle whether it belongs in 'Gets sticky': it fits more than one group: gets_sticky and gets_mushy",
+        "a suggested name that two checks cannot place is held by the rules, not sent to the owner"
       ],
       "held_from": "job:2026-10-07-02",
       "fields": {
@@ -18930,9 +18902,10 @@
     },
     "white_sand": {
       "name": "White sand",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "uncertain: two checks could not settle whether it belongs in 'Rocks and soil': it fits more than one group: ground and land"
+        "uncertain: two checks could not settle whether it belongs in 'Rocks and soil': it fits more than one group: ground and land",
+        "a suggested name that two checks cannot place is held by the rules, not sent to the owner"
       ],
       "held_from": "job:2026-10-07-02",
       "fields": {
@@ -18951,9 +18924,10 @@
     },
     "yellow_sand": {
       "name": "Yellow sand",
-      "status": "waiting for the owner",
+      "status": "held by the rules",
       "status_why": [
-        "uncertain: two checks could not settle whether it belongs in 'Rocks and soil': it fits more than one group: ground and land"
+        "uncertain: two checks could not settle whether it belongs in 'Rocks and soil': it fits more than one group: ground and land",
+        "a suggested name that two checks cannot place is held by the rules, not sent to the owner"
       ],
       "held_from": "job:2026-10-07-02",
       "fields": {
@@ -19120,12 +19094,11 @@
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 194,
-      "held by the rules": 29,
+      "in the game": 191,
+      "held by the rules": 36,
       "kept for later": 5,
       "excluded": 3,
-      "taken out of the game": 9,
-      "waiting for the owner": 7
+      "taken out of the game": 12
     },
     "circles_that_can_open_now": [
       "seed",
@@ -19141,7 +19114,7 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 194,
+        "things": 191,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
@@ -19157,8 +19130,8 @@
           },
           "nature_not_alive": {
             "label": "Things in nature that are not alive",
-            "things": 27,
-            "with_picture": 27
+            "things": 24,
+            "with_picture": 24
           },
           "made_by_people": {
             "label": "Things people make",
@@ -19528,7 +19501,7 @@
       },
       "nature_not_alive": {
         "label": "Things in nature that are not alive",
-        "things": 27,
+        "things": 24,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_nature",
         "groups": {
@@ -19549,8 +19522,8 @@
           },
           "ground": {
             "label": "Rocks and soil",
-            "things": 12,
-            "with_picture": 12
+            "things": 9,
+            "with_picture": 9
           }
         },
         "open_by_its_things": true,
@@ -19601,143 +19574,98 @@
       },
       "nature_not_alive/ground": {
         "label": "Rocks and soil",
-        "things": 12,
+        "things": 9,
         "steps_from_seed": 2,
-        "sorted_by": "what_happens_when_wet",
-        "groups": {
-          "stays_hard": {
-            "label": "Stays hard",
-            "things": 5,
-            "with_picture": 5
-          },
-          "gets_sticky": {
-            "label": "Gets sticky",
-            "things": 1,
-            "with_picture": 1
-          },
-          "gets_mushy": {
-            "label": "Gets mushy",
-            "things": 5,
-            "with_picture": 5
-          },
-          "washes_away": {
-            "label": "Washes away",
-            "things": 1,
-            "with_picture": 1
-          }
-        },
         "could_be_filled_by": [
           {
             "name": "Chalk",
-            "status": "waiting for the owner",
-            "group": "stays_hard"
+            "status": "held by the rules"
           },
           {
             "name": "Wet clay",
-            "status": "held by the rules",
-            "group": "gets_sticky"
+            "status": "held by the rules"
           },
           {
             "name": "Potter's clay",
-            "status": "held by the rules",
-            "group": "gets_sticky"
+            "status": "held by the rules"
           },
           {
             "name": "Slush",
-            "status": "waiting for the owner",
-            "group": "gets_sticky"
+            "status": "held by the rules"
           },
           {
             "name": "Sludge",
-            "status": "held by the rules",
-            "group": "gets_sticky"
+            "status": "held by the rules"
           },
           {
             "name": "Gumbo",
-            "status": "held by the rules",
-            "group": "gets_sticky"
+            "status": "held by the rules"
           },
           {
             "name": "Ooze",
-            "status": "held by the rules",
-            "group": "gets_sticky"
+            "status": "held by the rules"
           },
           {
             "name": "Adhesive mud",
-            "status": "held by the rules",
-            "group": "gets_sticky"
+            "status": "held by the rules"
           },
           {
             "name": "Mire",
-            "status": "held by the rules",
-            "group": "gets_sticky"
+            "status": "held by the rules"
           },
           {
             "name": "Sticky soil",
-            "status": "waiting for the owner",
-            "group": "gets_sticky"
+            "status": "held by the rules"
           },
           {
             "name": "Sticky dirt",
-            "status": "waiting for the owner",
-            "group": "gets_sticky"
+            "status": "held by the rules"
           },
           {
             "name": "Sticky earth",
-            "status": "waiting for the owner",
-            "group": "gets_sticky"
+            "status": "held by the rules"
           },
           {
             "name": "White sand",
-            "status": "waiting for the owner",
-            "group": "washes_away"
+            "status": "held by the rules"
           },
           {
             "name": "Yellow sand",
-            "status": "waiting for the owner",
-            "group": "washes_away"
+            "status": "held by the rules"
           },
           {
             "name": "Dust",
-            "status": "held by the rules",
-            "group": "washes_away"
+            "status": "held by the rules"
           },
           {
             "name": "Ash",
-            "status": "held by the rules",
-            "group": "washes_away"
+            "status": "held by the rules"
           },
           {
             "name": "Soot",
-            "status": "held by the rules",
-            "group": "washes_away"
+            "status": "held by the rules"
           },
           {
             "name": "Silt",
-            "status": "held by the rules",
-            "group": "washes_away"
+            "status": "held by the rules"
           },
           {
             "name": "Sewage",
-            "status": "held by the rules",
-            "group": "washes_away"
+            "status": "held by the rules"
           },
           {
             "name": "Runoff",
-            "status": "held by the rules",
-            "group": "washes_away"
+            "status": "held by the rules"
           },
           {
             "name": "Sediment",
-            "status": "held by the rules",
-            "group": "washes_away"
+            "status": "held by the rules"
           }
         ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "3 more thing(s) in 'Gets sticky'",
-          "3 more thing(s) in 'Washes away'"
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 7 more things"
         ]
       },
       "made_by_people": {
@@ -19967,7 +19895,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job run 2026-10-07-02",
+    "by": "after job run 2026-10-07-02",
     "on": "2026-10-07"
   }
 }

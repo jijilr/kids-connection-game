@@ -215,7 +215,12 @@
         "kind_of_nature": "ground"
       },
       "since": 5,
-      "added_by": "the rules, job run 2026-10-07-02"
+      "added_by": "the rules, job run 2026-10-07-02",
+      "sorts_boards": false,
+      "withdrawn": {
+        "on": "2026-10-07",
+        "why": "it passed on groups padded with other names for mud; a name must now be a thing of its own"
+      }
     }
   }
 }

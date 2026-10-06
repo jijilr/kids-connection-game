@@ -2039,7 +2039,7 @@
     ]
   },
   "nature_not_alive/ground": {
-    "status": "approved by the rules on 2026-10-07, job run 2026-10-07-02",
+    "status": "withdrawn on 2026-10-07: it passed on groups padded with other names for mud; a name must now be a thing of its own",
     "field": "what_happens_when_wet",
     "wording": "What happens when it gets wet?",
     "values": {
@@ -2122,7 +2122,22 @@
       "one clean solution": "sample boards passed",
       "not a synonym": "no existing field asks or splits the same"
     },
-    "refused_by_the_rules": []
+    "refused_by_the_rules": [
+      {
+        "wording": "What happens when it gets wet?",
+        "values": {
+          "stays_hard": "Stays hard",
+          "gets_sticky": "Gets sticky",
+          "gets_mushy": "Gets mushy",
+          "washes_away": "Washes away"
+        },
+        "why": [
+          "withdrawn: it passed on groups padded with other names for mud; a name must now be a thing of its own"
+        ],
+        "date": "2026-10-07",
+        "run": "withdrawn"
+      }
+    ]
   },
   "animal/reptile": {
     "status": "held by the rules on 2026-10-07: no field passed the tests",

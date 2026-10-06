@@ -2300,42 +2300,6 @@
         "general": "Held at first: read again by its narrowed title, 'Sponge (tool)': run 10 had read the page about the sea animal; the pages and the judgements point to 'Tools', not 'Things in the house'; it could not be settled that it belongs in 'Things to clean with'"
       }
     },
-    "wet_soil": {
-      "name": "Wet soil",
-      "fields": {
-        "kind_of_thing": "nature_not_alive",
-        "kind_of_nature": "ground",
-        "what_happens_when_wet": "gets_mushy"
-      },
-      "familiar": 0.8,
-      "reviewed": 5,
-      "source": "job:grounded+checked",
-      "drafted_in": "2026-10-07-02"
-    },
-    "muck": {
-      "name": "Muck",
-      "fields": {
-        "kind_of_thing": "nature_not_alive",
-        "kind_of_nature": "ground",
-        "what_happens_when_wet": "gets_mushy"
-      },
-      "familiar": 0.7,
-      "reviewed": 5,
-      "source": "job:grounded+checked",
-      "drafted_in": "2026-10-07-02"
-    },
-    "wet_dirt": {
-      "name": "Wet dirt",
-      "fields": {
-        "kind_of_thing": "nature_not_alive",
-        "kind_of_nature": "ground",
-        "what_happens_when_wet": "gets_mushy"
-      },
-      "familiar": 0.8,
-      "reviewed": 5,
-      "source": "job:grounded+checked",
-      "drafted_in": "2026-10-07-02"
-    },
     "boulder": {
       "name": "Boulder",
       "fields": {
