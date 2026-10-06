@@ -773,6 +773,30 @@
       },
       "cost_usd": 0.0537,
       "vision_check_cost_usd": 7e-05
+    },
+    "job_2026_10_06_01_1_01": {
+      "plan_key": "job_2026_10_06_01_1",
+      "purpose": "drawn by the job, run 2026-10-06-01",
+      "file": "tools/pictures/sheets/job_2026_10_06_01_1_01.png",
+      "grid": 1,
+      "size": "1024x1024",
+      "cells": [
+        "hospital"
+      ],
+      "names": {
+        "hospital": "Hospital"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image showing exactly one subject, whole and centred, with a wide plain white margin on every side:\n\n1. Hospital: A big white building with a red cross on top, many windows, and a wide front door with a small driveway.\n\nFor this sheet: Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-06",
+      "tokens": {
+        "image_output_tokens": 1756,
+        "text_input_tokens": 210
+      },
+      "cost_usd": 0.0537,
+      "vision_check_cost_usd": 5e-05
     }
   },
   "tiles": {
@@ -11182,6 +11206,53 @@
       "history": [],
       "reviewed_on": "2026-10-06",
       "published_file": "Assets/pictures/moon.webp"
+    },
+    "job_2026_10_06_01_1_01_c1": {
+      "thing_id": null,
+      "expected_thing": "hospital",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_01_1_01_c1.png",
+      "master_size": [
+        1073,
+        1073
+      ],
+      "master_sha256": "8030538f0a5c95b221a4a453c99dd0f053a014237b3fef6dec5875e38cfb0771",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_01_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_01_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Hospital: A big white building with a red cross on top, many windows, and a wide front door with a small driveway",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0537,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          50,
+          239,
+          975,
+          839
+        ],
+        "picture_shape": 1.54,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Hospital",
+        "shows": "hospital",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
     }
   }
 }

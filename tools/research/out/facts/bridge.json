@@ -1,0 +1,44 @@
+{
+  "name": "Bridge",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A bridge is a structure designed to span an obstacle, such as a river or railway, allowing vehicles, pedestrians, and other loads to pass across.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "building",
+      "quote": "A bridge is a structure to cross an open space or gap."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Bridge",
+      "title": "Bridge",
+      "asked_for": "Bridge",
+      "revision": 1376132307,
+      "fetched_on": "2026-10-06",
+      "sha256": "221803bc1be34e586f6adebda3ce37e6bf0e97493a38dbf6b79e8953325062e9"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Bridge",
+      "title": "Bridge",
+      "asked_for": "Bridge",
+      "revision": 10393533,
+      "fetched_on": "2026-10-06",
+      "sha256": "fdba29daff3a2654f0606f620ff15df9d34aa67f68a785cd32526a7f2a283157"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

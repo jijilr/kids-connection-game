@@ -1,0 +1,43 @@
+{
+  "name": "Hospital",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A hospital is a healthcare institution providing patient treatment with specialized medical science and auxiliary healthcare staff and medical equipment.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "building",
+      "quote": "A hospital is a place where a person goes to be healed when they are sick or injured.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Hospital",
+      "title": "Hospital",
+      "asked_for": "Hospital",
+      "revision": 1377727882,
+      "fetched_on": "2026-10-06",
+      "sha256": "ad3995911d743ddc246c51cf5843a7aac08aa607da3886e513542c8e7f37b5f3"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Hospital",
+      "title": "Hospital",
+      "asked_for": "Hospital",
+      "revision": 10667528,
+      "fetched_on": "2026-10-06",
+      "sha256": "f3435431bd8377b8507a6b04dc6a9de13be581c8be54cf735bde4e9f918e07c8"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

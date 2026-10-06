@@ -1,0 +1,44 @@
+{
+  "name": "Tower",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "Towers are specifically distinguished from buildings in that they are built not to be habitable but to serve other functions using the height of the tower.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "building",
+      "quote": "Towers are distinguished from masts by their lack of guy-wires and are therefore, along with tall buildings, self-supporting structures."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Tower",
+      "title": "Tower",
+      "asked_for": "Tower",
+      "revision": 1376492646,
+      "fetched_on": "2026-10-06",
+      "sha256": "48bc3ad4abf59721e37840292ae7820e33cc49550b12144b717eb9490c71c482"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Tower",
+      "title": "Tower",
+      "asked_for": "Tower",
+      "revision": 9707372,
+      "fetched_on": "2026-10-06",
+      "sha256": "8a7a8d6a49459b4ddf171fa494ba9a967c6cf1094ec17c109d5d98b6cb657576"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

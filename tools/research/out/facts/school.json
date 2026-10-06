@@ -1,0 +1,44 @@
+{
+  "name": "School",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A school is an educational institution (and, in the case of in-person learning, the building) designed to provide learning environments for the teaching of students, usually under the direction of teachers.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "building",
+      "quote": "A school is an educational institution (and, in the case of in-person learning, the building) designed to provide learning environments for the teaching of students, usually under the direction of teachers."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/School",
+      "title": "School",
+      "asked_for": "School",
+      "revision": 1377727900,
+      "fetched_on": "2026-10-06",
+      "sha256": "f2be2857653e64dd2adbcaf545c0866adb9415f9d68ac168a2eaafa70f1396f9"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/School",
+      "title": "School",
+      "asked_for": "School",
+      "revision": 10975377,
+      "fetched_on": "2026-10-06",
+      "sha256": "4d7a84e218c24b1c4f31aab5212728c843ef9af5459443fdaaf2c68c52bdd2e3"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}
