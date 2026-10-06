@@ -495,9 +495,10 @@ def approved_examples(catalogue: dict, ask: dict) -> list:
     value = str(list(ask["fixed"].values())[-1])
     names = proposal.get("values", {}).get(value, {}).get("examples", [])
     familiar = proposal.get("familiar", {})
-    in_game = {k for k, e in catalogue["things"].items() if e["status"] == cat.IN_GAME}
+    # not what is in the game already, and never what was taken out or ruled out on purpose
+    settled = {k for k, e in catalogue["things"].items() if e["status"] in (cat.IN_GAME, cat.TAKEN_OUT, cat.EXCLUDED)}
     return [{"name": n, "familiar": familiar.get(n, 0.9), "recognised": True, "suitable": True}
-            for n in names if cat.slug(n) not in in_game]
+            for n in names if cat.slug(n) not in settled]
 
 
 def suggest(client, config, spend, catalogue: dict, ask: dict, tried: list = ()) -> list:
@@ -552,6 +553,12 @@ def game_sense(client, config, spend, dictionary: dict, things: dict, ask: dict,
 def ground_thing(client, config, spend, dictionary: dict, ask: dict, offer: dict, run_id: str) -> dict:
     """One suggested thing: its pages, its grounded fields, and whether it may go in."""
     name, reasons = offer["name"], []
+    # a thing taken out or ruled out on purpose does not come back by itself, whoever offers it
+    gone = cat.load()["things"].get(cat.slug(name))
+    if gone and gone["status"] in (cat.TAKEN_OUT, cat.EXCLUDED):
+        return {"name": name, "passed": False, "not_needed": True, "familiar": offer.get("familiar", 0),
+                "fields": dict(ask["fixed"]),
+                "why": [f"it was {gone['status']} on purpose: " + "; ".join(gone.get("status_why", []))]}
     # "Pumpkin seeds" when Pumpkin plant is in the game: the same thing again, or a part of it
     kind = ask["fixed"].get("kind_of_thing")
     for entry in cat.load()["things"].values():

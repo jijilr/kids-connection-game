@@ -1,0 +1,42 @@
+{
+  "name": "Canal",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A canal is a waterway made by humans.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "uncertain: two judgements disagree: 'Vehicles' and 'Buildings'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Canal",
+      "title": "Canal",
+      "asked_for": "Canal",
+      "revision": 1364267324,
+      "fetched_on": "2026-10-07",
+      "sha256": "dad77d19cef9313bbd85263e9cdf75126fa84b8973ffb0d0167eb6fbc2ec1966"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Canal",
+      "title": "Canal",
+      "asked_for": "Canal",
+      "revision": 10055847,
+      "fetched_on": "2026-10-07",
+      "sha256": "7c82df5ae8522c4a6000ece073b36295241c80f7486455f8ed0cceae3c223de1"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

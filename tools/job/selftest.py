@@ -422,6 +422,23 @@ def test_the_digest_says_what_was_done_and_how_to_take_it_back():
     assert text.endswith("To take this run back: python tools/prepare_next.py --undo 2026-10-07-01")
 
 
+def test_a_thing_taken_out_on_purpose_does_not_come_back_by_itself():
+    catalogue = cat.load()
+    for entry in [e for e in catalogue["things"].values() if e["status"] in (cat.TAKEN_OUT, cat.EXCLUDED)][:3]:
+        offer = {"name": entry["name"], "familiar": 0.9, "recognised": True, "suitable": True}
+        back = job.ground_thing(None, {}, None, {"fields": {}}, {"fixed": dict(entry.get("fields") or {})}, offer, "run")
+        assert back["not_needed"] and not back["passed"] and "on purpose" in back["why"][0]
+        assert job.held_as(back, "run", rehearsal=False) == ("", [])        # and it is not held again either
+    # nor is it offered from the names that came with a field
+    proposals = cat.read_json(job.PROPOSALS)
+    for cid, proposal in proposals.items():
+        if cid != "about" and str(proposal.get("status", "")).startswith("approved"):
+            for value in proposal.get("values", {}):
+                ask = {"circle": cid, "fixed": {"x": value}}
+                offered = {cat.slug(o["name"]) for o in job.approved_examples(catalogue, ask)}
+                assert not any(catalogue["things"].get(k, {}).get("status") in (cat.TAKEN_OUT, cat.EXCLUDED) for k in offered)
+
+
 def test_a_thing_settled_before_a_later_field_was_added_is_stamped_against_the_newest_dictionary():
     # a run may add several fields; things settled early carry an older stamp until they go in
     dictionary = cat.read_json(cat.DICTIONARY)
