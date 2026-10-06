@@ -35,6 +35,10 @@ NOTES = {
     "Vasuki indicus": {"general": "Its length is estimated from fossil backbones, so it is uncertain."},
 }
 
+# The owner knows the child. These kinds of thing are familiar to him, and the checker
+# is told so: it had been judging familiarity too strictly.
+FAMILIAR_KINDS = ["turtles", "tortoises", "crocodiles", "lizards", "chameleons"]
+
 # Ruled out by the owner; removed here and skipped by check.py on later runs.
 EXCLUDED = {
     "salmon": "not familiar enough to a four-year-old",

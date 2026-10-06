@@ -4,7 +4,8 @@
   "about": "Every field a thing may carry, and the only values that field may take. A field that does not apply to a thing is left out of that thing; it is never written as 'not applicable'. The wording is what a child sees or hears; it is not data.",
   "rules": [
     "A field holds the everyday meaning, which is what the game sorts by.",
-    "An _academic field is added only where science disagrees with the everyday meaning. It never sorts a board and never marks a child wrong."
+    "An _academic field is added only where science disagrees with the everyday meaning. It never sorts a board and never marks a child wrong.",
+    "A new field enters this file only after the owner has approved its values, and the version number then goes up by one."
   ],
   "fields": {
     "kind_of_thing": {

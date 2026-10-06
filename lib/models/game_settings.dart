@@ -11,19 +11,26 @@ class GameSettings {
   /// e.g. keep "dinosaur" among the kinds of animal.
   final Map<String, List<String>> keepInPlay;
 
+  /// Values kept off every board for now, e.g. a kind with too few familiar things.
+  final Map<String, List<String>> holdBack;
+
   const GameSettings({
     required this.startField,
     required this.startLabel,
     this.keepInPlay = const {},
+    this.holdBack = const {},
   });
 
   factory GameSettings.fromJson(Map<String, dynamic> json) {
     final start = json['start'] as Map<String, dynamic>;
-    final keep = (json['keep_in_play'] as Map<String, dynamic>?) ?? const {};
+    Map<String, List<String>> lists(String key) =>
+        ((json[key] as Map<String, dynamic>?) ?? const {})
+            .map((k, v) => MapEntry(k, (v as List).cast<String>()));
     return GameSettings(
       startField: start['field'] as String,
       startLabel: start['label'] as String,
-      keepInPlay: keep.map((k, v) => MapEntry(k, (v as List).cast<String>())),
+      keepInPlay: lists('keep_in_play'),
+      holdBack: lists('hold_back'),
     );
   }
 }

@@ -37,7 +37,6 @@ class EngineProvider extends ChangeNotifier {
   List<Entity> _order = [];
   int mistakes = 0;
   bool atFloor = false;
-  bool _emojiFirst = false;
   String message = '';
 
   DimensionRegistry get registry => _repo.registry;
@@ -57,14 +56,9 @@ class EngineProvider extends ChangeNotifier {
 
   int get stars => mistakes == 0 ? 3 : (mistakes <= 2 ? 2 : 1);
 
-  /// Picture for a tile, in this board's single most uniform style (photos or emoji),
-  /// so a tile's *look* never gives its group away.
-  EntityMedia tileMedia(Entity e) {
-    final m = _repo.media.forEntity(e);
-    if (_emojiFirst && m.emoji != null) return EntityMedia(emoji: m.emoji, audio: m.audio);
-    if (m.image != null) return EntityMedia(image: m.image, audio: m.audio);
-    return m;
-  }
+  /// Picture for a tile, in the one style this whole board is drawn in, so a tile's
+  /// *look* never gives its group away.
+  EntityMedia tileMedia(Entity e) => _repo.media.inStyle(e, board?.style);
 
   bool isSelected(Entity e) => selected.any((x) => x.id == e.id);
   bool isSolved(Entity e) => solved.any((g) => g.items.any((x) => x.id == e.id));
@@ -103,22 +97,8 @@ class EngineProvider extends ChangeNotifier {
     selected.clear();
     mistakes = 0;
     _order = b == null ? [] : [...b.tiles];
-    _emojiFirst = b != null && _uniformity(b, emojiFirst: true) > _uniformity(b, emojiFirst: false);
     message = '';
     notifyListeners();
-  }
-
-  /// Size of the largest same-style group of tiles (photo / emoji / text).
-  int _uniformity(Board b, {required bool emojiFirst}) {
-    final counts = <String, int>{};
-    for (final t in b.tiles) {
-      final m = _repo.media.forEntity(t);
-      final kind = emojiFirst
-          ? (m.emoji != null ? 'emoji' : m.image != null ? 'photo' : 'text')
-          : (m.image != null ? 'photo' : m.emoji != null ? 'emoji' : 'text');
-      counts[kind] = (counts[kind] ?? 0) + 1;
-    }
-    return counts.values.fold(0, max);
   }
 
   /// A fresh board at this level.

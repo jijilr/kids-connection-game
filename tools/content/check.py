@@ -12,7 +12,7 @@ dictionary version they were reviewed against.
 """
 from lib import (CHECKED, DICTIONARY, DRAFT, REVIEW_QUEUE, THINGS, ask_json, deepseek, label,
                  read_json, set_queue, slug, write_json)
-from owner_list import EXCLUDED
+from owner_list import EXCLUDED, FAMILIAR_KINDS
 
 SOURCE = "deepseek:drafted+checked"
 BATCH = 12
@@ -24,6 +24,28 @@ SYSTEM = (
     "a frog is NOT a reptile. If experts or everyday speech genuinely disagree, say 'debated'. "
     "Reply with a single JSON object and nothing else."
 )
+
+
+# How familiarity is judged. Recalibrated on 6 Oct 2026: the first wording was too strict.
+FAMILIARITY = (
+    "Also say whether a four-year-old in India would recognise the thing (true/false). "
+    "Recognising means he would know it on sight or by name from daily life, picture books, "
+    "cartoons or a visit to a zoo. Judge the thing itself, not whether he knows facts about it. "
+    "Do not be strict: ordinary animals and everyday objects count as recognised. Answer false "
+    "only for things most young children have never met. "
+    f"The owner, who knows the child, confirms these kinds of thing are familiar to him: {', '.join(FAMILIAR_KINDS)}."
+)
+
+
+def probe(names: list):
+    """Ask only the familiarity question about some names. Writes nothing; for checking
+    the calibration, or for seeing whether a circle could be filled with familiar things."""
+    lines = [FAMILIARITY, "", "Things:"] + [f"- {name}" for name in names]
+    lines += ["", 'Return exactly: {"things": [{"name": "...", "recognisable": true, "why": "a few words"}]}']
+    reply = ask_json(deepseek(), SYSTEM, "\n".join(lines), temperature=0.0)
+    for item in reply.get("things", []):
+        mark = "familiar  " if item.get("recognisable") is True else "UNFAMILIAR"
+        print(f"  {mark}  {item.get('name')}  - {item.get('why', '')}")
 
 
 def claims(thing: dict, dictionary: dict) -> list:
@@ -40,7 +62,8 @@ def prompt(batch: list, dictionary: dict) -> str:
         "  ok      - true in the everyday sense",
         "  wrong   - false; say what is true instead",
         "  debated - experts or everyday speech genuinely disagree; say why in one sentence",
-        "Also say whether a typical four-year-old in India would recognise the thing (true/false).",
+        "",
+        FAMILIARITY,
         "",
     ]
     for thing in batch:
@@ -122,4 +145,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    if len(sys.argv) > 2 and sys.argv[1] == "--probe":
+        probe(sys.argv[2:])
+    else:
+        main()

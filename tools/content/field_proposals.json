@@ -1,0 +1,48 @@
+{
+  "about": "Fields proposed for circles that have none, waiting for the owner's approval. Nothing here is in the dictionary and nothing has been drafted. `have` lists things already in the data that would take each value; `examples_to_add` are only examples of the kind of familiar thing needed.",
+  "made_by_people": {
+    "status": "awaiting the owner's approval",
+    "field": "kind_of_made_thing",
+    "wording": "What do we use it for?",
+    "values": {
+      "vehicle":   { "label": "Vehicles",            "have": ["car", "bicycle", "bus", "train"], "examples_to_add": [] },
+      "toy":       { "label": "Toys",                "have": ["ball", "teddy_bear", "doll"],     "examples_to_add": ["Kite"] },
+      "household": { "label": "Things in the house", "have": ["chair", "cup", "spoon"],          "examples_to_add": ["Table"] },
+      "tool":      { "label": "Tools",               "have": ["hammer"],                         "examples_to_add": ["Scissors", "Screwdriver", "Saw"] }
+    },
+    "leftovers": {
+      "house": "fits none of the four; proposed fifth value 'building', which stays off the board until it has four members"
+    }
+  },
+  "plant": {
+    "status": "awaiting the owner's approval",
+    "field": "kind_of_plant",
+    "wording": "What kind of plant is it?",
+    "values": {
+      "tree":   { "label": "Trees",            "have": ["mango_tree", "coconut_tree", "neem_tree", "banana_plant"], "examples_to_add": [] },
+      "flower": { "label": "Flowers",          "have": ["rose", "sunflower", "lotus", "marigold"],                  "examples_to_add": [] },
+      "crop":   { "label": "Crops in a field", "have": ["rice_plant"],                                              "examples_to_add": ["Wheat", "Sugarcane", "Tomato plant"] },
+      "potted": { "label": "Plants in pots",   "have": [],                                                          "examples_to_add": ["Tulsi", "Money plant", "Cactus", "Aloe vera"] }
+    },
+    "leftovers": {
+      "banana_plant": "a tree in everyday speech, a giant herb to a scientist; counted here as a tree with an _academic twin, or it could be marked 'depends' and kept off this board",
+      "grass": "fits none of the four"
+    },
+    "weak_point": "mango and coconut trees also give food, so the crop group is labelled 'Crops in a field' to keep them apart"
+  },
+  "nature_not_alive": {
+    "status": "awaiting the owner's approval",
+    "field": "kind_of_nature",
+    "wording": "What kind of thing in nature is it?",
+    "values": {
+      "sky":    { "label": "Things in the sky", "have": ["sun", "moon", "star", "cloud"], "examples_to_add": [] },
+      "water":  { "label": "Water",             "have": ["river"],                        "examples_to_add": ["Sea", "Lake", "Waterfall"] },
+      "land":   { "label": "Places on land",    "have": ["mountain"],                     "examples_to_add": ["Hill", "Desert", "Volcano"] },
+      "ground": { "label": "Rocks and soil",    "have": ["rock", "sand"],                 "examples_to_add": ["Soil", "Clay"] }
+    },
+    "leftovers": {
+      "rain": "falls from the sky and is water, so it would be marked 'depends' and kept off this board"
+    },
+    "weak_point": "a mountain is made of rock, so 'Places on land' and 'Rocks and soil' need clear pictures to stay apart"
+  }
+}

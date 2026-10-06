@@ -182,6 +182,106 @@ void main() {
     }
   });
 
+  test('the animals on the seed board come from four different kinds', () async {
+    for (int seed = 0; seed < 30; seed++) {
+      final g = await start(seed);
+      final animals = g.board!.groups.singleWhere((x) => x.value == 'animal').items;
+      final kinds = animals.map((e) => e.valueFor('kind_of_animal')).toList();
+      expect(kinds.toSet().length, 4, reason: 'seed $seed gave $kinds');
+      expect(kinds.where((k) => k == 'dinosaur').length, lessThanOrEqualTo(1));
+    }
+  });
+
+  test('no group is filled by one sub-kind', () {
+    for (int seed = 0; seed < 30; seed++) {
+      final board = repoWithSeed(seed).assembler.assemble(
+          filter: const [('kind_of_thing', 'animal')],
+          dimension: registry.byId('kind_of_animal')!,
+          preferValues: settings.keepInPlay['kind_of_animal']!);
+      final dinosaurs = board!.groups.singleWhere((x) => x.value == 'dinosaur').items;
+      final kinds = dinosaurs.map((e) => e.valueFor('kind_of_dinosaur')).toSet();
+      expect(kinds.length, greaterThan(1), reason: 'seed $seed gave $kinds');
+    }
+  });
+
+  test('every tile on a board is drawn in the same style', () async {
+    String look(EntityMedia m) =>
+        m.image != null ? 'photo' : (m.emoji != null ? 'emoji' : 'name only');
+    for (int seed = 0; seed < 30; seed++) {
+      final g = await start(seed);
+      expect(g.openTiles.map((e) => look(g.tileMedia(e))).toSet(), hasLength(1),
+          reason: 'seed board, seed $seed');
+      solve(g);
+      g.descendInto(g.board!.groups.singleWhere((x) => x.value == 'animal'));
+      expect(g.openTiles.map((e) => look(g.tileMedia(e))).toSet(), hasLength(1),
+          reason: 'animals board, seed $seed');
+    }
+  });
+
+  test('a held-back kind stays off every board', () async {
+    expect(settings.holdBack['kind_of_animal'], contains('amphibian'));
+    for (int seed = 0; seed < 30; seed++) {
+      final g = await start(seed);
+      expect(g.board!.tiles.where((e) => e.isIn('kind_of_animal', 'amphibian')), isEmpty);
+      solve(g);
+      g.descendInto(g.board!.groups.singleWhere((x) => x.value == 'animal'));
+      expect(g.board!.tiles.where((e) => e.isIn('kind_of_animal', 'amphibian')), isEmpty);
+    }
+  });
+
+  group('one clean solution', () {
+    // 16 or 32 made-up things carrying two four-valued fields, "shape" and "colour".
+    final dictionary = DimensionRegistry({
+      'shape': const Dimension(
+          id: 'shape',
+          question: 'What shape is it?',
+          values: {'a': 'A', 'b': 'B', 'c': 'C', 'd': 'D'}),
+      'colour': const Dimension(
+          id: 'colour',
+          question: 'What colour is it?',
+          values: {'w': 'W', 'x': 'X', 'y': 'Y', 'z': 'Z'}),
+    });
+    Entity made(String shape, String colour, int n) => Entity(
+        id: '$shape$colour$n', name: '$shape$colour$n', fields: {'shape': shape, 'colour': colour});
+
+    test('a board that also sorts cleanly by another field is refused', () {
+      // One thing per shape-and-colour pair: any board by shape is also a board by colour.
+      final grid = [
+        for (final s in ['a', 'b', 'c', 'd'])
+          for (final c in ['w', 'x', 'y', 'z']) made(s, c, 0),
+      ];
+      final asm = BoardAssembler(grid, dictionary, random: Random(1));
+      expect(asm.secondSolution(grid, dictionary.byId('shape')!)!.id, 'colour');
+      expect(asm.assemble(dimension: dictionary.byId('shape')!), isNull);
+    });
+
+    test('it rebuilds until the board has only one clean solution', () {
+      // Two things per pair: some boards by shape also sort by colour, most do not.
+      final things = [
+        for (final s in ['a', 'b', 'c', 'd'])
+          for (final c in ['w', 'x', 'y', 'z'])
+            for (final n in [0, 1]) made(s, c, n),
+      ];
+      for (int seed = 0; seed < 50; seed++) {
+        final asm = BoardAssembler(things, dictionary, random: Random(seed));
+        final board = asm.assemble(dimension: dictionary.byId('shape')!);
+        expect(board, isNotNull);
+        expect(asm.secondSolution(board!.tiles, board.dimension), isNull, reason: 'seed $seed');
+      }
+    });
+
+    test('no board built from the real data has a second clean solution', () async {
+      for (int seed = 0; seed < 30; seed++) {
+        final repo = repoWithSeed(seed);
+        final g = await start(seed, repo: repo);
+        expect(repo.assembler.secondSolution(g.board!.tiles, g.board!.dimension), isNull);
+        solve(g);
+        g.descendInto(g.board!.groups.singleWhere((x) => x.value == 'animal'));
+        expect(repo.assembler.secondSolution(g.board!.tiles, g.board!.dimension), isNull);
+      }
+    });
+  });
+
   test('boards draw on all the familiar things, not the same few', () {
     final seen = <String>{};
     for (int seed = 0; seed < 40; seed++) {

@@ -65,4 +65,22 @@ class MediaResolver {
   }
 
   bool hasPicture(Entity e) => forEntity(e).hasPicture;
+
+  /// The ways a tile can be drawn, best first. A board is drawn in one of them
+  /// throughout (see [BoardAssembler.styles]); [inStyle] takes the index.
+  List<bool Function(Entity)> get styles => [
+        (e) => forEntity(e).image != null,
+        (e) => forEntity(e).emoji != null,
+      ];
+
+  /// What to show for [e] on a board drawn in [style] — only that style's picture, or
+  /// none at all when the board shows names only. The voice clip is kept either way.
+  EntityMedia inStyle(Entity e, int? style) {
+    final m = forEntity(e);
+    return EntityMedia(
+      image: style == 0 ? m.image : null,
+      emoji: style == 1 ? m.emoji : null,
+      audio: m.audio,
+    );
+  }
 }

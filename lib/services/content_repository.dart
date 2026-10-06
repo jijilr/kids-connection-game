@@ -44,9 +44,8 @@ class ContentRepository {
     registry = reg;
     settings = s;
     media = m;
-    // Favour things that have a picture so a board never gives a group away by
-    // mixing picture tiles with bare-text tiles.
-    assembler = BoardAssembler(ents, reg, random: random, preferred: m.hasPicture);
+    assembler = BoardAssembler(ents, reg,
+        random: random, styles: m.styles, heldBack: s.holdBack);
     _loaded = true;
   }
 
