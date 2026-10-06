@@ -12111,9 +12111,9 @@
       "name": "Temple",
       "status": "waiting for the owner",
       "status_why": [
-        "rehearsal 2026-10-06-02: it passed every check and has a tile (job_2026_10_06_02_1_01_c1); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-02"
+        "rehearsal 2026-10-06-03: it passed every check and has a tile (job_2026_10_06_03_1_01_c1); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-03"
       ],
-      "held_from": "job:2026-10-06-02",
+      "held_from": "job:2026-10-06-03",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building"
@@ -12131,9 +12131,9 @@
       "name": "School",
       "status": "waiting for the owner",
       "status_why": [
-        "rehearsal 2026-10-06-02: it passed every check and has a tile (job_2026_10_06_02_1_01_c2); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-02"
+        "rehearsal 2026-10-06-03: it passed every check and has a tile (job_2026_10_06_02_1_01_c2); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-03"
       ],
-      "held_from": "job:2026-10-06-02",
+      "held_from": "job:2026-10-06-03",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building"
@@ -12154,7 +12154,7 @@
         "the pages do not show that it belongs in 'Buildings'",
         "kind_of_made_thing: on a second reading, the sentence does not show it"
       ],
-      "held_from": "job:2026-10-06-02",
+      "held_from": "job:2026-10-06-03",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building"
@@ -12172,9 +12172,9 @@
       "name": "Hospital",
       "status": "waiting for the owner",
       "status_why": [
-        "rehearsal 2026-10-06-02: it passed every check and has a tile (job_2026_10_06_01_1_01_c1); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-02"
+        "rehearsal 2026-10-06-03: it passed every check and has a tile (job_2026_10_06_01_1_01_c1); put it in the game with: python tools/prepare_next.py --accept 2026-10-06-03"
       ],
-      "held_from": "job:2026-10-06-02",
+      "held_from": "job:2026-10-06-03",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building"
@@ -12195,7 +12195,7 @@
         "the pages do not show that it belongs in 'Buildings'",
         "kind_of_made_thing: on a second reading, the sentence does not show it"
       ],
-      "held_from": "job:2026-10-06-02",
+      "held_from": "job:2026-10-06-03",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building"
@@ -12216,7 +12216,7 @@
         "the pages do not show that it belongs in 'Buildings'",
         "kind_of_made_thing: on a second reading, the sentence does not show it"
       ],
-      "held_from": "job:2026-10-06-02",
+      "held_from": "job:2026-10-06-03",
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "building"
@@ -12747,7 +12747,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-10-06-02",
+    "by": "job:2026-10-06-03",
     "on": "2026-10-06"
   }
 }
