@@ -17,6 +17,12 @@ the tile's record, but they do not fail it: many are too fine to see in the game
 A passing tile is approved under the owner's standing rule. A tile that fails, or whose
 sources disagree about how the animal looks, is left for the owner, with the reasons.
 
+The vision model does not always judge a fine point the same way twice. So, by the
+owner's ruling of 6 Oct 2026:
+  - a tile that is already approved (or set aside, or rejected) is never checked again;
+  - a BORDERLINE failure, where the tile is the right animal and fails on one point
+    only, is checked a second time, and the tile fails only if both runs fail.
+
     python tools/pictures/check_features.py SHEET_ID
 """
 import base64
@@ -27,7 +33,8 @@ import sys
 from piclib import PLAN, RECORDS, ROOT, load_records, original, read_json, today, write_json
 
 RULE = "approved under the owner's standing rule of 2026-10-06: it passed the feature check against the cited sources"
-CHECK_RULE = "v2: fails only on must_show and listed mistakes; other features are reported"
+CHECK_RULE = ("v3: fails only on must_show and listed mistakes; other features are reported; "
+              "a one-point failure is checked twice and fails only if both runs fail")
 
 
 def ask(client, model: str, picture: bytes, name: str, cell: dict) -> tuple:
@@ -86,6 +93,12 @@ def judge(cell: dict, answer: dict, cut_ok: bool, cut_flags: list) -> tuple:
     return reasons, reported, {"must_show": shown, "features": verdicts, "mistakes_shown": numbers}
 
 
+def borderline(reasons: list) -> bool:
+    """One point only, and not a doubt about which animal it is or about the cut."""
+    return len(reasons) == 1 and reasons[0].startswith(
+        ("does not show what tells it apart", "what tells it apart cannot be seen", "shows a listed mistake"))
+
+
 def main():
     if len(sys.argv) != 2:
         raise SystemExit("Usage: check_features.py SHEET_ID")
@@ -113,11 +126,28 @@ def main():
             raise SystemExit(f"{cell.get('name') or cell['thing']} has no `must_show`. Write what tells it "
                              "from its look-alikes in research/curated.json, then run apply_research.py.")
         name = sheet["names"][tile["expected_thing"]]
-        answer, usage = ask(client, check["model"], original(ROOT / tile["master_file"]).read_bytes(), name, cell)
-        if usage is not None:
-            spent += (usage.prompt_tokens * check["usd_per_million_input_tokens"]
-                      + usage.completion_tokens * check["usd_per_million_output_tokens"]) / 1_000_000
-        reasons, reported, verdicts = judge(cell, answer, tile["cut"]["ok"], tile["cut"]["flags"])
+        if tile["review"] != "waiting for the owner":
+            print(f"  {tile_id} {name}: not checked again ({tile['review']})")
+            continue
+        picture = original(ROOT / tile["master_file"]).read_bytes()
+
+        def once():
+            nonlocal spent
+            answer, usage = ask(client, check["model"], picture, name, cell)
+            if usage is not None:
+                spent += (usage.prompt_tokens * check["usd_per_million_input_tokens"]
+                          + usage.completion_tokens * check["usd_per_million_output_tokens"]) / 1_000_000
+            return answer, judge(cell, answer, tile["cut"]["ok"], tile["cut"]["flags"])
+
+        answer, (reasons, reported, verdicts) = once()
+        runs = [{"passed": not reasons, "reasons": reasons}]
+        if borderline(reasons):
+            again, (reasons2, reported2, verdicts2) = once()
+            runs.append({"passed": not reasons2, "reasons": reasons2})
+            if not reasons2:   # failed once and passed once: it passes
+                answer, reasons, reported, verdicts = again, reasons2, reported2, verdicts2
+            else:
+                reasons = list(dict.fromkeys(reasons + reasons2))
         disagreement = cell.get("disagreement", "")
         if tile.get("feature_check"):
             tile.setdefault("earlier_feature_checks", []).append(tile["feature_check"])
@@ -125,7 +155,7 @@ def main():
             "model": check["model"], "date": today(), "rule": CHECK_RULE, **verdicts,
             "comment": str(answer.get("comment", "")).strip(), "sources": cell.get("sources", []),
             "passed": not reasons, "reasons": reasons, "reported": reported,
-            "sources_disagree": disagreement,
+            "sources_disagree": disagreement, "runs": runs,
         }
         if not reasons and not disagreement and tile["review"] == "waiting for the owner":
             tile.update(thing_id=tile["expected_thing"], review="approved", review_note=RULE,
@@ -137,6 +167,8 @@ def main():
         if reported:
             noted.append((tile_id, name, reported))
         state = "FAILS" if reasons else ("SOURCES DISAGREE" if disagreement else "PASS")
+        if len(runs) == 2:
+            state += " (borderline: checked twice, " + ("failed both" if reasons else "passed the second time") + ")"
         print(f"  {tile_id} {name}: {state}  (tells apart: {verdicts['must_show'].count('yes')} of "
               f"{len(cell['must_show'])}; listed mistakes: {len(verdicts['mistakes_shown'])}; "
               f"finer features contradicted: {len(reported)})  {tile['feature_check']['comment']}")

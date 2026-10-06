@@ -57,6 +57,10 @@ def main():
     client = OpenAI()
 
     for tile_id, tile in tiles.items():
+        if tile["review"] == "approved" and tile.get("vision"):
+            # the owner's ruling of 6 Oct 2026: an approved tile is never checked again
+            print(f"  {tile_id}: not checked again (approved)")
+            continue
         # the game's version is checked, since that is what the child will see
         answer, usage = ask(client, model, (ROOT / tile["app_file"]).read_bytes(), options)
         if usage is not None:
@@ -75,7 +79,8 @@ def main():
         mark = "matches" if shows == tile["expected_thing"] else "DIFFERS"
         print(f"  {tile_id}: meant {names[tile['expected_thing']]}, looks like {said or '?'}  "
               f"[{mark}]  {tile['vision']['problems']}")
-    records["sheets"][sheet_id]["vision_check_cost_usd"] = round(spent, 5)
+    sheet = records["sheets"][sheet_id]
+    sheet["vision_check_cost_usd"] = round(sheet.get("vision_check_cost_usd", 0) + spent, 5)
     write_json(RECORDS, records)
     print(f"The check itself cost ${spent:.5f}.")
 

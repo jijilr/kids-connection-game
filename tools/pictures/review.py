@@ -8,14 +8,23 @@ know what to draw again.
     python tools/pictures/review.py approve TILE_ID... [--as THING_ID]
     python tools/pictures/review.py reject TILE_ID... --why "reason"
     python tools/pictures/review.py set-aside TILE_ID... --why "reason"
+    python tools/pictures/review.py approve-passed SHEET_ID
     python tools/pictures/review.py todo
+
+"approve-passed" follows the owner's standing rule of 6 Oct 2026: an ordinary tile that
+cut cleanly, and that the vision check named correctly, is approved without waiting for
+him; he glances at the contact sheet afterwards. It leaves alone prehistoric animals
+(they go through check_features.py) and things drawn more than once (choose.py).
 
 "Set aside" is for a good tile that is deliberately not linked to a thing, such as the
 tiles of a control sheet. It is kept, like every other tile.
 """
 import sys
 
-from piclib import RECORDS, load_records, thing_names, today, write_json
+from piclib import PLAN, RECORDS, load_records, read_json, thing_names, today, write_json
+
+PASSED = ("approved under the owner's standing rule of 2026-10-06: it cut cleanly and the "
+          "vision check named it")
 
 
 def show(records: dict, sheet_id=None):
@@ -53,6 +62,35 @@ def approve(records: dict, tile_ids: list, as_thing=None):
         print(f"  {tile_id} approved and linked to {names[thing]}")
 
 
+def approve_passed(records: dict, sheet_id: str):
+    sheet = records["sheets"].get(sheet_id)
+    if sheet is None:
+        raise SystemExit(f"No sheet '{sheet_id}'.")
+    names = dict(thing_names(), **sheet.get("names", {}))
+    cells = read_json(PLAN)["sheets"][sheet["plan_key"]]["cells"]
+    live = lambda thing: [k for k, t in records["tiles"].items() if t["expected_thing"] == thing
+                          and t["review"] in ("approved", "waiting for the owner")]
+    for tile_id, tile in records["tiles"].items():
+        if tile["sheet_id"] != sheet_id or tile["review"] != "waiting for the owner":
+            continue
+        thing, why_not = tile["expected_thing"], ""
+        if cells[tile["cell"] - 1].get("features"):
+            why_not = "a prehistoric animal: it goes through check_features.py"
+        elif not tile["cut"]["ok"]:
+            why_not = "it did not cut cleanly"
+        elif not tile["vision"] or tile["vision"]["shows"] != thing:
+            why_not = "the vision check did not name it"
+        elif thing not in thing_names():
+            why_not = "it is not a thing in the game"
+        elif len(live(thing)) > 1:
+            why_not = "it was drawn more than once: choose with choose.py"
+        if why_not:
+            print(f"  {tile_id} ({names.get(thing, thing)}) left for the owner: {why_not}")
+            continue
+        tile.update(thing_id=thing, review="approved", review_note=PASSED, reviewed_on=today())
+        print(f"  {tile_id} approved and linked to {names[thing]}")
+
+
 def reject(records: dict, tile_ids: list, why: str):
     for tile_id in tile_ids:
         records["tiles"][tile_id].update(thing_id=None, review="rejected", review_note=why,
@@ -86,7 +124,7 @@ def todo(records: dict):
 def main():
     args = sys.argv[1:]
     records = load_records()
-    if not args or args[0] not in ("list", "approve", "reject", "set-aside", "todo"):
+    if not args or args[0] not in ("list", "approve", "approve-passed", "reject", "set-aside", "todo"):
         raise SystemExit(__doc__)
     command, rest = args[0], args[1:]
     option = lambda flag: rest[rest.index(flag) + 1] if flag in rest else None
@@ -101,6 +139,11 @@ def main():
         show(records, tile_ids[0] if tile_ids else None)
     elif command == "todo":
         todo(records)
+    elif command == "approve-passed":
+        if len(rest) != 1:
+            raise SystemExit("Usage: review.py approve-passed SHEET_ID")
+        approve_passed(records, rest[0])
+        write_json(RECORDS, records)
     elif command == "approve":
         approve(records, tile_ids, option("--as"))
         write_json(RECORDS, records)

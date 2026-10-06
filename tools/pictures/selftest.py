@@ -240,6 +240,14 @@ def test_the_feature_check_fails_only_on_what_tells_apart_and_listed_mistakes():
     assert check_features.judge(cell, dict(fine, is_this_animal=False), True, [])[0]
     assert check_features.judge(cell, fine, False, ["touches the edge"])[0]
 
+    # one point only is borderline and earns a second run; a doubt about the animal, the
+    # cut, or two points at once is a plain failure
+    assert check_features.borderline(check_features.judge(cell, hidden, True, [])[0])
+    assert not check_features.borderline(reasons)
+    assert not check_features.borderline(
+        check_features.judge(cell, dict(fine, is_this_animal=False), True, [])[0])
+    assert not check_features.borderline([])
+
 
 def main():
     tests = [value for name, value in globals().items() if name.startswith("test_")]

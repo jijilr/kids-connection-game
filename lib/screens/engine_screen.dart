@@ -7,6 +7,7 @@ import '../providers/engine_provider.dart';
 import '../services/board_assembler.dart';
 import '../services/sound_service.dart';
 import '../services/speaker.dart';
+import '../widgets/solved_group_bar.dart';
 import '../widgets/tile_card.dart';
 
 const _purple = Color(0xFF6C5CE7);
@@ -98,7 +99,11 @@ class EngineScreen extends StatelessWidget {
   void _tapTile(EngineProvider g, Entity e) {
     final selecting = !g.isSelected(e);
     g.toggle(e);
-    if (!selecting) return;
+    if (selecting) _sayName(g, e);
+  }
+
+  /// Says a thing's name: its recorded clip if it has one, the device's voice if not.
+  void _sayName(EngineProvider g, Entity e) {
     final audio = g.tileMedia(e).audio;
     if (audio != null) {
       SoundService().playAsset(audio);
@@ -237,76 +242,15 @@ class EngineScreen extends StatelessWidget {
   }
 
   Widget _solvedBanner(EngineProvider g, BoardGroup group, int index) {
-    final color = _groupColors[index % _groupColors.length];
-    final deeper = g.canDescend(group);
     return BounceInDown(
       duration: const Duration(milliseconds: 500),
-      child: GestureDetector(
-        onTap: deeper ? () => g.descendInto(group) : null,
-        child: Container(
-          width: double.infinity,
-          margin: const EdgeInsets.only(bottom: 8),
-          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-          decoration: BoxDecoration(
-            color: color,
-            borderRadius: BorderRadius.circular(16),
-            boxShadow: [
-              BoxShadow(
-                  color: color.withOpacity(0.35),
-                  blurRadius: 8,
-                  offset: const Offset(0, 3)),
-            ],
-          ),
-          child: Row(
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      group.label.toUpperCase(),
-                      style: GoogleFonts.quicksand(
-                          fontWeight: FontWeight.w800,
-                          fontSize: 13,
-                          color: Colors.white,
-                          letterSpacing: 0.5),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      group.items.map((e) => e.label).join('  ·  '),
-                      style: GoogleFonts.inter(
-                          fontSize: 12, color: Colors.white.withOpacity(0.92)),
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                  ],
-                ),
-              ),
-              if (deeper)
-                Container(
-                  margin: const EdgeInsets.only(left: 8),
-                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.22),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: const Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text('Dig deeper',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w700)),
-                      SizedBox(width: 4),
-                      Icon(Icons.arrow_forward_rounded,
-                          color: Colors.white, size: 16),
-                    ],
-                  ),
-                ),
-            ],
-          ),
-        ),
+      child: SolvedGroupBar(
+        label: group.label,
+        items: group.items,
+        mediaFor: g.tileMedia,
+        color: _groupColors[index % _groupColors.length],
+        onSay: (e) => _sayName(g, e),
+        onDescend: g.canDescend(group) ? () => g.descendInto(group) : null,
       ),
     );
   }

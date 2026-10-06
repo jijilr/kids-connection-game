@@ -749,6 +749,30 @@
       "cost_usd": 0.1859,
       "vision_check_cost_usd": 0.00082,
       "feature_check_cost_usd": 0.11425
+    },
+    "moon_1_01": {
+      "plan_key": "moon_1",
+      "purpose": "the Moon again, on plain white: the first was on a dark background (the owner's ruling of 6 Oct 2026)",
+      "file": "tools/pictures/sheets/moon_1_01.png",
+      "grid": 1,
+      "size": "1024x1024",
+      "cells": [
+        "moon"
+      ],
+      "names": {
+        "moon": "Moon"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image showing exactly one subject, whole and centred, with a wide plain white margin on every side:\n\n1. Moon: the full Moon as a round grey-white disc, with its darker grey patches and small craters clearly visible, and a crisp edge so that it stands out against the white.\n\nFor this sheet: The background is plain white everywhere: no night sky, no dark patch, no glow and no stars.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-06",
+      "tokens": {
+        "image_output_tokens": 1756,
+        "text_input_tokens": 211
+      },
+      "cost_usd": 0.0537,
+      "vision_check_cost_usd": 7e-05
     }
   },
   "tiles": {
@@ -3259,7 +3283,7 @@
       "published_file": "Assets/pictures/sun.webp"
     },
     "nature_2_01_c2": {
-      "thing_id": "moon",
+      "thing_id": null,
       "expected_thing": "moon",
       "master_file": "tools/pictures/tiles/masters/nature_2_01_c2.png",
       "master_size": [
@@ -3301,11 +3325,10 @@
         "matches_cell": true,
         "problems": "More than one thing"
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "rejected",
+      "review_note": "on a dark background, the only such tile he saw; the owner asked for the Moon on plain white (2026-10-06)",
       "history": [],
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/moon.webp"
+      "reviewed_on": "2026-10-06"
     },
     "nature_2_01_c3": {
       "thing_id": "star",
@@ -7318,7 +7341,6 @@
         "sources_disagree": ""
       },
       "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/tyrannosaurus_rex.webp",
       "earlier_feature_checks": [
         {
           "model": "gpt-6.1-sol",
@@ -7343,7 +7365,8 @@
           "passed": true,
           "reasons": []
         }
-      ]
+      ],
+      "published_file": "Assets/pictures/tyrannosaurus_rex.webp"
     },
     "dinosaurs_1_01_c2": {
       "thing_id": "giganotosaurus",
@@ -7427,7 +7450,6 @@
         "sources_disagree": ""
       },
       "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/giganotosaurus.webp",
       "earlier_feature_checks": [
         {
           "model": "gpt-6.1-sol",
@@ -7456,7 +7478,8 @@
             "shows a known mistake: Extra small spines along the neck and back."
           ]
         }
-      ]
+      ],
+      "published_file": "Assets/pictures/giganotosaurus.webp"
     },
     "dinosaurs_1_01_c3": {
       "thing_id": "allosaurus",
@@ -7536,7 +7559,6 @@
         "sources_disagree": ""
       },
       "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/allosaurus.webp",
       "earlier_feature_checks": [
         {
           "model": "gpt-6.1-sol",
@@ -7560,7 +7582,8 @@
           "passed": true,
           "reasons": []
         }
-      ]
+      ],
+      "published_file": "Assets/pictures/allosaurus.webp"
     },
     "dinosaurs_1_01_c4": {
       "thing_id": null,
@@ -7757,7 +7780,6 @@
         "sources_disagree": ""
       },
       "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/velociraptor.webp",
       "earlier_feature_checks": [
         {
           "model": "gpt-6.1-sol",
@@ -7785,7 +7807,8 @@
             "shows a known mistake: One foot appears to have all its forward toes on the ground, without a raised sickle claw."
           ]
         }
-      ]
+      ],
+      "published_file": "Assets/pictures/velociraptor.webp"
     },
     "dinosaurs_1_01_c6": {
       "thing_id": "triceratops",
@@ -7864,7 +7887,6 @@
         "sources_disagree": ""
       },
       "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/triceratops.webp",
       "earlier_feature_checks": [
         {
           "model": "gpt-6.1-sol",
@@ -7888,7 +7910,8 @@
           "passed": true,
           "reasons": []
         }
-      ]
+      ],
+      "published_file": "Assets/pictures/triceratops.webp"
     },
     "dinosaurs_1_01_c7": {
       "thing_id": "stegosaurus",
@@ -7966,7 +7989,6 @@
         "sources_disagree": ""
       },
       "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/stegosaurus.webp",
       "earlier_feature_checks": [
         {
           "model": "gpt-6.1-sol",
@@ -7995,7 +8017,8 @@
             "shows a known mistake: Some tail spikes point upward rather than sideways."
           ]
         }
-      ]
+      ],
+      "published_file": "Assets/pictures/stegosaurus.webp"
     },
     "dinosaurs_1_01_c8": {
       "thing_id": "ankylosaurus",
@@ -8077,7 +8100,6 @@
         "sources_disagree": ""
       },
       "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/ankylosaurus.webp",
       "earlier_feature_checks": [
         {
           "model": "gpt-6.1-sol",
@@ -8104,7 +8126,8 @@
             "contradicts: Short, sturdy legs held upright under the body; back legs longer than front legs and without armour."
           ]
         }
-      ]
+      ],
+      "published_file": "Assets/pictures/ankylosaurus.webp"
     },
     "dinosaurs_1_01_c9": {
       "thing_id": "parasaurolophus",
@@ -8186,7 +8209,6 @@
         "sources_disagree": ""
       },
       "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/parasaurolophus.webp",
       "earlier_feature_checks": [
         {
           "model": "gpt-6.1-sol",
@@ -8214,7 +8236,8 @@
             "shows a known mistake: A row of enlarged, plate-like bumps runs along the back and tail."
           ]
         }
-      ]
+      ],
+      "published_file": "Assets/pictures/parasaurolophus.webp"
     },
     "animals_6_01_c1": {
       "thing_id": "anaconda",
@@ -10195,7 +10218,6 @@
         "sources_disagree": "Scientists agree on the crocodile-like snout, the sail, the short back legs and the paddle tail. They still debate whether it walked on two legs or four, and whether it swam after prey or waded like a heron. The tile shows it on two legs, which recent studies favour."
       },
       "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/spinosaurus.webp",
       "earlier_feature_checks": [
         {
           "model": "gpt-6.1-sol",
@@ -10221,7 +10243,8 @@
             "the sources disagree: Scientists agree on the crocodile-like snout, the sail, the short back legs and the paddle tail. They still debate whether it walked on two legs or four, and whether it swam after prey or waded like a heron. The tile shows it on two legs, which recent studies favour."
           ]
         }
-      ]
+      ],
+      "published_file": "Assets/pictures/spinosaurus.webp"
     },
     "dinosaurs_4_01_c2": {
       "thing_id": "brontosaurus",
@@ -10307,7 +10330,6 @@
         "sources_disagree": ""
       },
       "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/brontosaurus.webp",
       "earlier_feature_checks": [
         {
           "model": "gpt-6.1-sol",
@@ -10339,7 +10361,8 @@
             "shows a known mistake: Short, tall, boxy head resembling the incorrect Camarasaurus-style skull."
           ]
         }
-      ]
+      ],
+      "published_file": "Assets/pictures/brontosaurus.webp"
     },
     "dinosaurs_4_01_c3": {
       "thing_id": "pterodactylus",
@@ -10420,7 +10443,6 @@
         "sources_disagree": ""
       },
       "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/pterodactylus.webp",
       "earlier_feature_checks": [
         {
           "model": "gpt-6.1-sol",
@@ -10446,7 +10468,8 @@
           "passed": true,
           "reasons": []
         }
-      ]
+      ],
+      "published_file": "Assets/pictures/pterodactylus.webp"
     },
     "dinosaurs_4_01_c4": {
       "thing_id": null,
@@ -10651,7 +10674,6 @@
         "sources_disagree": "The encyclopedia article describes a long tail with only a low fin. A 2020 fossil study found a clear triangular tail fin and a fin on the back. The tile follows the 2020 study."
       },
       "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/mixosaurus.webp",
       "earlier_feature_checks": [
         {
           "model": "gpt-6.1-sol",
@@ -10678,7 +10700,8 @@
             "the sources disagree: The encyclopedia article describes a long tail with only a low fin. A 2020 fossil study found a clear triangular tail fin and a fin on the back. The tile follows the 2020 study."
           ]
         }
-      ]
+      ],
+      "published_file": "Assets/pictures/mixosaurus.webp"
     },
     "dinosaurs_4_01_c6": {
       "thing_id": "rhamphorhynchus",
@@ -11110,6 +11133,55 @@
           "reasons": []
         }
       ]
+    },
+    "moon_1_01_c1": {
+      "thing_id": "moon",
+      "expected_thing": "moon",
+      "master_file": "tools/pictures/tiles/masters/moon_1_01_c1.png",
+      "master_size": [
+        856,
+        856
+      ],
+      "master_sha256": "252c8841f45d82fa8b9360053c23f617bbac8720160857d4586adddeb5a83c04",
+      "app_file": "tools/pictures/tiles/app/moon_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "moon_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Moon: the full Moon as a round grey-white disc, with its darker grey patches and small craters clearly visible, and a crisp edge so that it stands out against the white",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0537,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          153,
+          146,
+          870,
+          884
+        ],
+        "picture_shape": 0.97,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Moon",
+        "shows": "moon",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "approved under the owner's standing rule of 2026-10-06: it cut cleanly and the vision check named it",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/moon.webp"
     }
   }
 }

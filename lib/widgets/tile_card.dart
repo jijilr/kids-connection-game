@@ -109,7 +109,38 @@ class TileCard extends StatelessWidget {
     );
   }
 
-  Widget _picture() {
+  Widget _picture() => TilePicture(media: media);
+
+  Widget _nameOnly() {
+    return Container(
+      color: selected ? _purple.withOpacity(0.08) : null,
+      padding: const EdgeInsets.all(6),
+      alignment: Alignment.center,
+      child: Text(
+        entity.label,
+        textAlign: TextAlign.center,
+        maxLines: 3,
+        overflow: TextOverflow.ellipsis,
+        style: GoogleFonts.quicksand(
+          fontWeight: FontWeight.w800,
+          fontSize: 14,
+          height: 1.1,
+          color: selected ? _purple : _ink,
+        ),
+      ),
+    );
+  }
+}
+
+/// The picture of one thing, in whichever style its board uses: a drawn tile, an old
+/// photo or an emoji. Shared by the tile itself and the small thumbnails of a solved group.
+class TilePicture extends StatelessWidget {
+  final EntityMedia media;
+
+  const TilePicture({super.key, required this.media});
+
+  @override
+  Widget build(BuildContext context) {
     final art = media.art;
     if (art != null) {
       // Drawn on white with its own margin, so it is shown whole rather than cropped.
@@ -143,26 +174,6 @@ class TileCard extends StatelessWidget {
         padding: const EdgeInsets.all(6),
         child: FittedBox(
           child: Text(emoji, style: const TextStyle(fontSize: 44)),
-        ),
-      ),
-    );
-  }
-
-  Widget _nameOnly() {
-    return Container(
-      color: selected ? _purple.withOpacity(0.08) : null,
-      padding: const EdgeInsets.all(6),
-      alignment: Alignment.center,
-      child: Text(
-        entity.label,
-        textAlign: TextAlign.center,
-        maxLines: 3,
-        overflow: TextOverflow.ellipsis,
-        style: GoogleFonts.quicksand(
-          fontWeight: FontWeight.w800,
-          fontSize: 14,
-          height: 1.1,
-          color: selected ? _purple : _ink,
         ),
       ),
     );

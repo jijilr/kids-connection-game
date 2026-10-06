@@ -78,7 +78,8 @@ def sheet_names(sheet: dict) -> dict:
 def build_prompt(plan: dict, sheet: dict, names: dict) -> str:
     style = plan["style"]
     grid = sheet["grid"]
-    lines = [style["layout"].format(grid=grid, count=grid * grid), ""]
+    layout = style["layout_single"] if grid == 1 else style["layout"].format(grid=grid, count=grid * grid)
+    lines = [layout, ""]
     for number, cell in enumerate(sheet["cells"], 1):
         lines.append(f"{number}. {names[cell['thing']]}: {cell['draw']}.")
     if sheet.get("only_for_this_sheet"):
