@@ -1,0 +1,40 @@
+{
+  "name": "Metro train",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "Rapid transit, mass rapid transit (MRT) or rail rapid transit (RRT) and commonly referred to as metro, is a type of high-capacity public transport that is generally built in urban areas.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "vehicle",
+      "quote": "Rapid transit systems are usually electric railways that, unlike buses or trams, operate on an exclusive right-of-way, which cannot be accessed by pedestrians or other vehicles.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "where_it_travels": {
+      "value": "rails",
+      "quote": "Modern services on rapid transit systems are provided on designated lines between stations typically using electric multiple units on railway tracks.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Rapid_transit",
+      "title": "Rapid transit",
+      "asked_for": "Metro train",
+      "revision": 1375969337,
+      "fetched_on": "2026-10-06",
+      "sha256": "ebce62f2c4e96e1bad57c7306c9b112008fb11fc8b62511b7b216b1f57925531"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

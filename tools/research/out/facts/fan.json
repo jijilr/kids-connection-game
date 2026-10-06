@@ -1,0 +1,49 @@
+{
+  "name": "Fan",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A fan is a powered machine that creates airflow.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "household",
+      "quote": "Typical applications include climate control and personal thermal comfort (e.g., an electric table or floor fan), vehicle engine cooling systems (e.g., in front of a radiator), machinery cooling systems (e.g., inside computers and audio power amplifiers), ventilation, fume extraction, winnowing (e.g., separating chaff from cereal grains), removing dust (e.g. sucking as in a vacuum cleaner), drying (usually in combination with a heat source) and providing draft for a fire.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_house_thing": {
+      "value": "electric",
+      "quote": "Most fans are powered by electric motors, but other sources of power may be used, including hydraulic motors, handcranks, and internal combustion engines.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Fan_(machine)",
+      "title": "Fan (machine)",
+      "asked_for": "Fan (machine)",
+      "revision": 1378061047,
+      "fetched_on": "2026-10-06",
+      "sha256": "ae158a871ae6103f0f12a82ab15b7a3400447b1297335344a7d8a525196d9caa"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Fan_(machine)",
+      "title": "Fan (machine)",
+      "asked_for": "Fan (machine)",
+      "revision": 10952775,
+      "fetched_on": "2026-10-06",
+      "sha256": "8df6e902ae5057a3a10c674c901bbb60c76afbf59e51144df41adab009a726d4"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

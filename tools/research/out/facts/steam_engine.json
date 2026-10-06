@@ -1,0 +1,47 @@
+{
+  "name": "Steam engine",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A steam engine is a heat engine that performs mechanical work using steam as its working fluid.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "vehicle",
+      "basis": "judged, not sourced",
+      "why": "Steam engines powered locomotives, steam boats, and other machines that move people and goods."
+    },
+    "where_it_travels": {
+      "value": "rails",
+      "basis": "judged, not sourced",
+      "why": "The sources say steam locomotives operated on the railways, so a steam engine travels on rails."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Steam_engine",
+      "title": "Steam engine",
+      "asked_for": "Steam engine",
+      "revision": 1376844426,
+      "fetched_on": "2026-10-06",
+      "sha256": "734098cdaad95c88d117441efea1b03aa1c5a9f63540617a0521e9607c7e4713"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Steam_engine",
+      "title": "Steam engine",
+      "asked_for": "Steam engine",
+      "revision": 10553224,
+      "fetched_on": "2026-10-06",
+      "sha256": "80257a73d51d4969300d395d809e3214439a13c52cc8420f5c0be4a755abdd07"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1032,6 +1032,150 @@
       },
       "cost_usd": 0.0537,
       "vision_check_cost_usd": 6e-05
+    },
+    "job_2026_10_06_10_1_01": {
+      "plan_key": "job_2026_10_06_10_1",
+      "purpose": "drawn by the job, run 2026-10-06-10",
+      "file": "tools/pictures/sheets/job_2026_10_06_10_1_01.png",
+      "grid": 3,
+      "size": "2880x2880",
+      "cells": [
+        "auto_rickshaw",
+        "lorry",
+        "metro_train",
+        "goods_train",
+        "tram",
+        "steam_engine",
+        "boat",
+        "ship",
+        "ferry"
+      ],
+      "names": {
+        "auto_rickshaw": "Auto-rickshaw",
+        "lorry": "Lorry",
+        "metro_train": "Metro train",
+        "goods_train": "Goods train",
+        "tram": "Tram",
+        "steam_engine": "Steam engine",
+        "boat": "Boat",
+        "ship": "Ship",
+        "ferry": "Ferry"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 3 by 3 grid of 9 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Auto-rickshaw: A three-wheeled auto rickshaw with a yellow and green sheet-metal body, black canvas roof, small front cabin with handlebars, and open back for passengers.\n2. Lorry: A whole Indian lorry: a big boxy truck with a separate driver cabin, painted bright colours, six wheels, carrying goods on its back, seen on an Indian road.\n3. Metro train: A long silver metro train on rails, blue stripe along its side, many windows and doors, rounded front, standing whole on a track.\n4. Goods train: A long goods train on rails: a black diesel engine pulling many brown box wagons, some open with grey coal and sacks, whole train side view.\n5. Tram: A long boxy tram with many windows and a pantograph on its roof, running on steel rails set into a city street, painted blue and white.\n6. Steam engine: A black steam locomotive on rails, with a round boiler, tall smokestack, red wheels, and a small cab, whole and side-on.\n7. Boat: A small wooden rowboat floating on blue water, with two oars resting inside, brown wood planks, curved sides, pointed front, seen from the side.\n8. Ship: A big ship floating on blue water, with a tall mast, white sails, a red hull, and a small flag on top.\n9. Ferry: A whole white and blue ferry boat floating on water, with a flat deck, small windows, a cabin, and a few tiny cars and people standing on it.\n\nFor this sheet: Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-06",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 556
+      },
+      "cost_usd": 0.1807,
+      "vision_check_cost_usd": 0.00054
+    },
+    "job_2026_10_06_10_2_01": {
+      "plan_key": "job_2026_10_06_10_2",
+      "purpose": "drawn by the job, run 2026-10-06-10, second tries",
+      "file": "tools/pictures/sheets/job_2026_10_06_10_2_01.png",
+      "grid": 3,
+      "size": "2880x2880",
+      "cells": [
+        "canoe",
+        "houseboat",
+        "aeroplane",
+        "helicopter",
+        "rocket",
+        "hot_air_balloon",
+        "sofa",
+        "cupboard",
+        "bucket"
+      ],
+      "names": {
+        "canoe": "Canoe",
+        "houseboat": "Houseboat",
+        "aeroplane": "Aeroplane",
+        "helicopter": "Helicopter",
+        "rocket": "Rocket",
+        "hot_air_balloon": "Hot-air balloon",
+        "sofa": "Sofa",
+        "cupboard": "Cupboard",
+        "bucket": "Bucket"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 3 by 3 grid of 9 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Canoe: A long narrow wooden canoe, pointed at both ends, open on top, floating on water, with a single wooden paddle resting inside.\n2. Houseboat: A wide flat-bottomed wooden houseboat with a curved roof, small windows, moored on a calm river, painted in natural browns and greens.\n3. Aeroplane: A white aeroplane with long fixed wings, a tail fin, and a row of small windows, flying high in a blue sky above green fields.\n4. Helicopter: A whole helicopter with a rounded glass cabin, one long spinning rotor on top, a small tail rotor, and two landing skids, painted in bright red and white.\n5. Rocket: A tall white rocket with a pointed nose cone, red fins at the bottom, and orange flames shooting from its tail, standing upright on a launch pad.\n6. Hot-air balloon: A big colourful hot air balloon with a striped envelope, a wicker basket hanging below, and a small flame burning above the basket, floating in the sky.\n7. Sofa: A long cushioned sofa with soft back, two armrests, and short wooden legs, covered in bright floral fabric, standing whole in a living room.\n8. Cupboard: A tall wooden cupboard with two closed doors and small round knobs, standing on short legs, painted brown wood, one shelf visible inside, in a kitchen.\n9. Bucket: A blue plastic bucket with a wide open top, flat bottom, and a semicircular metal handle, shown whole and empty in plain view.\n\nFor this sheet: Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-06",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 549
+      },
+      "cost_usd": 0.1806,
+      "vision_check_cost_usd": 0.00054
+    },
+    "job_2026_10_06_10_3_01": {
+      "plan_key": "job_2026_10_06_10_3",
+      "purpose": "drawn by the job, run 2026-10-06-10, second tries",
+      "file": "tools/pictures/sheets/job_2026_10_06_10_3_01.png",
+      "grid": 3,
+      "size": "2880x2880",
+      "cells": [
+        "soap",
+        "towel",
+        "dustpan",
+        "scrub_brush",
+        "fan",
+        "television",
+        "light_bulb",
+        "fridge",
+        "electric_iron"
+      ],
+      "names": {
+        "soap": "Soap",
+        "towel": "Towel",
+        "dustpan": "Dustpan",
+        "scrub_brush": "Scrub brush",
+        "fan": "Fan",
+        "television": "Television",
+        "light_bulb": "Light bulb",
+        "fridge": "Fridge",
+        "electric_iron": "Electric iron"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 3 by 3 grid of 9 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Soap: A single bar of soap, cream or pale yellow, rounded rectangle with soft edges, slightly worn, sitting whole on a small dish, plain and simple.\n2. Towel: A folded cotton terry towel in soft blue with a woven hanging loop, lying flat and whole, its fluffy absorbent surface clearly shown.\n3. Dustpan: A flat metal dustpan with a short handle, painted blue, holding a small pile of brown dust, with a wooden broom resting beside it.\n4. Scrub brush: A round hand scrub brush with a wooden back and stiff brown fibre bristles, like the small coconut-fibre brushes sold in Indian shops.\n5. Fan: A white electric table fan with a round wire cage, three metal blades, and a sturdy base, plugged in with a cord, standing whole on the floor.\n6. Television: A black flat-screen television set with a dark screen, thin grey stand, sitting whole on a table, showing a colourful picture on its screen.\n7. Light bulb: A clear glass bulb with a glowing orange filament inside, on a metal screw base, standing upright, whole and complete, shining bright yellow light.\n8. Fridge: A tall white fridge with two doors, rounded top freezer door and lower fridge door, small black handles on the right, standing whole on four small feet.\n9. Electric iron: A whole electric clothes iron with a handle and flat triangle base, white and blue, with a black electric cord and plug attached, standing upright.\n\nFor this sheet: Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-06",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 539
+      },
+      "cost_usd": 0.1806,
+      "vision_check_cost_usd": 0.00049
+    },
+    "job_2026_10_06_10_4_01": {
+      "plan_key": "job_2026_10_06_10_4",
+      "purpose": "drawn by the job, run 2026-10-06-10, second tries",
+      "file": "tools/pictures/sheets/job_2026_10_06_10_4_01.png",
+      "grid": 1,
+      "size": "1024x1024",
+      "cells": [
+        "maize_plant"
+      ],
+      "names": {
+        "maize_plant": "Maize plant"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image showing exactly one subject, whole and centred, with a wide plain white margin on every side:\n\n1. Maize plant: A tall green maize plant with long leaves, a tassel on top, and two yellow corn cobs in their green husks, one husk peeled open to show yellow kernels.\n\nFor this sheet: No people and no animals.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-10-06",
+      "tokens": {
+        "image_output_tokens": 1756,
+        "text_input_tokens": 200
+      },
+      "cost_usd": 0.0537,
+      "vision_check_cost_usd": 5e-05
     }
   },
   "tiles": {
@@ -13222,6 +13366,1384 @@
       "history": [],
       "reviewed_on": "2026-10-06",
       "published_file": "Assets/pictures/bean_plant.webp"
+    },
+    "job_2026_10_06_10_1_01_c1": {
+      "thing_id": "auto_rickshaw",
+      "expected_thing": "auto_rickshaw",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c1.png",
+      "master_size": [
+        907,
+        907
+      ],
+      "master_sha256": "d602418b61cbc1dda43d96dc1d2568a36fba96847eafd1cbeb738a21ec3f7435",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Auto-rickshaw: A three-wheeled auto rickshaw with a yellow and green sheet-metal body, black canvas roof, small front cabin with handlebars, and open back for passengers",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          78,
+          204,
+          860,
+          865
+        ],
+        "picture_shape": 1.18,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Auto-rickshaw",
+        "shows": "auto_rickshaw",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/auto_rickshaw.webp"
+    },
+    "job_2026_10_06_10_1_01_c2": {
+      "thing_id": "lorry",
+      "expected_thing": "lorry",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c2.png",
+      "master_size": [
+        987,
+        987
+      ],
+      "master_sha256": "908c276719338ab06763b38ab6e7a4c95168233b4d7b48c71c33760957657359",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_1_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_1_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Lorry: A whole Indian lorry: a big boxy truck with a separate driver cabin, painted bright colours, six wheels, carrying goods on its back, seen on an Indian road",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          989,
+          255,
+          1840,
+          793
+        ],
+        "picture_shape": 1.58,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Lorry",
+        "shows": "lorry",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/lorry.webp"
+    },
+    "job_2026_10_06_10_1_01_c3": {
+      "thing_id": "metro_train",
+      "expected_thing": "metro_train",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c3.png",
+      "master_size": [
+        1057,
+        1057
+      ],
+      "master_sha256": "1b9557c0a044c8e0b3d9e11d158b250548ea4f3ed623f3506a6fb866c64a0280",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_1_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_1_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Metro train: A long silver metro train on rails, blue stripe along its side, many windows and doors, rounded front, standing whole on a track",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1929,
+          296,
+          2840,
+          818
+        ],
+        "picture_shape": 1.75,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Metro train",
+        "shows": "metro_train",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/metro_train.webp"
+    },
+    "job_2026_10_06_10_1_01_c4": {
+      "thing_id": "goods_train",
+      "expected_thing": "goods_train",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c4.png",
+      "master_size": [
+        1087,
+        1087
+      ],
+      "master_sha256": "d83f4d0ed26f2a4e94053e56a3142ecf920a8dddf05d044f70b4995bd5e38809",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_1_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_1_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Goods train: A long goods train on rails: a black diesel engine pulling many brown box wagons, some open with grey coal and sacks, whole train side view",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [
+          "the picture is far from square"
+        ],
+        "picture_box": [
+          27,
+          1209,
+          964,
+          1672
+        ],
+        "picture_shape": 2.02,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Goods train",
+        "shows": "goods_train",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/goods_train.webp"
+    },
+    "job_2026_10_06_10_1_01_c5": {
+      "thing_id": "tram",
+      "expected_thing": "tram",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c5.png",
+      "master_size": [
+        1000,
+        1000
+      ],
+      "master_sha256": "7b4fe6a5c9727878819ed68f3be2a990f77414bab6521081a2b333d5549dc464",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_1_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_1_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Tram: A long boxy tram with many windows and a pantograph on its roof, running on steel rails set into a city street, painted blue and white",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          999,
+          1037,
+          1861,
+          1790
+        ],
+        "picture_shape": 1.14,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Tram",
+        "shows": "tram",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/tram.webp"
+    },
+    "job_2026_10_06_10_1_01_c6": {
+      "thing_id": "steam_engine",
+      "expected_thing": "steam_engine",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c6.png",
+      "master_size": [
+        1085,
+        1085
+      ],
+      "master_sha256": "4af3e0e72d75ec6a457a9ac4f60fde890404ee01bdf5df09c736375f4aedb547",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_1_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_1_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Steam engine: A black steam locomotive on rails, with a round boiler, tall smokestack, red wheels, and a small cab, whole and side-on",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1919,
+          1159,
+          2854,
+          1714
+        ],
+        "picture_shape": 1.68,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Steam engine",
+        "shows": "steam_engine",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/steam_engine.webp"
+    },
+    "job_2026_10_06_10_1_01_c7": {
+      "thing_id": "boat",
+      "expected_thing": "boat",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c7.png",
+      "master_size": [
+        1025,
+        1025
+      ],
+      "master_sha256": "94b482c6195137e90136db1b98da0b4f8718ede18ac01ac3ed3b9376cfc5f388",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_1_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_1_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Boat: A small wooden rowboat floating on blue water, with two oars resting inside, brown wood planks, curved sides, pointed front, seen from the side",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          37,
+          2222,
+          921,
+          2750
+        ],
+        "picture_shape": 1.67,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Boat",
+        "shows": "boat",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/boat.webp"
+    },
+    "job_2026_10_06_10_1_01_c8": {
+      "thing_id": "ship",
+      "expected_thing": "ship",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c8.png",
+      "master_size": [
+        1013,
+        1013
+      ],
+      "master_sha256": "00d2cc002cf667a8e5e7d37dc59f5e623608ae31d7904e76de2814f1727cc0f7",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_1_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_1_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Ship: A big ship floating on blue water, with a tall mast, white sails, a red hull, and a small flag on top",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          995,
+          1904,
+          1858,
+          2777
+        ],
+        "picture_shape": 0.99,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Ship",
+        "shows": "ship",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/ship.webp"
+    },
+    "job_2026_10_06_10_1_01_c9": {
+      "thing_id": "ferry",
+      "expected_thing": "ferry",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c9.png",
+      "master_size": [
+        1089,
+        1089
+      ],
+      "master_sha256": "5e32b5ed56a656f6655e2175861b04e37e8aaea75b8713d01d2d924b19c1ff27",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_1_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_1_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Ferry: A whole white and blue ferry boat floating on water, with a flat deck, small windows, a cabin, and a few tiny cars and people standing on it",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1911,
+          2104,
+          2850,
+          2755
+        ],
+        "picture_shape": 1.44,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Ferry",
+        "shows": "ferry",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/ferry.webp"
+    },
+    "job_2026_10_06_10_2_01_c1": {
+      "thing_id": "canoe",
+      "expected_thing": "canoe",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c1.png",
+      "master_size": [
+        956,
+        956
+      ],
+      "master_sha256": "3d910cd967fcf2fe2150f8bad0684b2107a41247b6f2f20b7af4dcfa895f9418",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_2_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_2_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Canoe: A long narrow wooden canoe, pointed at both ends, open on top, floating on water, with a single wooden paddle resting inside",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          69,
+          185,
+          893,
+          888
+        ],
+        "picture_shape": 1.17,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Canoe",
+        "shows": "canoe",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/canoe.webp"
+    },
+    "job_2026_10_06_10_2_01_c2": {
+      "thing_id": "houseboat",
+      "expected_thing": "houseboat",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c2.png",
+      "master_size": [
+        950,
+        950
+      ],
+      "master_sha256": "4d3ea6ca34da5ee56053805a729800b00c95413d93c9aa3bbaf5692c1076d762",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_2_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_2_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Houseboat: A wide flat-bottomed wooden houseboat with a curved roof, small windows, moored on a calm river, painted in natural browns and greens",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1031,
+          202,
+          1850,
+          894
+        ],
+        "picture_shape": 1.18,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Houseboat",
+        "shows": "houseboat",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/houseboat.webp"
+    },
+    "job_2026_10_06_10_2_01_c3": {
+      "thing_id": "aeroplane",
+      "expected_thing": "aeroplane",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c3.png",
+      "master_size": [
+        977,
+        977
+      ],
+      "master_sha256": "89bf44b81f7149c3b8c0c5bbacfcc4cf3abf736302f50a41539a7e0ebc326e06",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_2_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_2_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Aeroplane: A white aeroplane with long fixed wings, a tail fin, and a row of small windows, flying high in a blue sky above green fields",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [
+          "the picture is far from square"
+        ],
+        "picture_box": [
+          1968,
+          256,
+          2810,
+          606
+        ],
+        "picture_shape": 2.41,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Aeroplane",
+        "shows": "aeroplane",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/aeroplane.webp"
+    },
+    "job_2026_10_06_10_2_01_c4": {
+      "thing_id": "helicopter",
+      "expected_thing": "helicopter",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c4.png",
+      "master_size": [
+        995,
+        995
+      ],
+      "master_sha256": "3a7cddd26591c2478e5f1eada850ff1869d87b010e948f1a3a29655923a78612",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_2_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_2_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Helicopter: A whole helicopter with a rounded glass cabin, one long spinning rotor on top, a small tail rotor, and two landing skids, painted in bright red and white",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          58,
+          1146,
+          916,
+          1663
+        ],
+        "picture_shape": 1.66,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Helicopter",
+        "shows": "helicopter",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/helicopter.webp"
+    },
+    "job_2026_10_06_10_2_01_c5": {
+      "thing_id": "rocket",
+      "expected_thing": "rocket",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c5.png",
+      "master_size": [
+        1016,
+        1016
+      ],
+      "master_sha256": "1f14dff16a258c7b6091c7fe4e75c42281bcb283d64122f224d72320fb3cab69",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_2_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_2_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Rocket: A tall white rocket with a pointed nose cone, red fins at the bottom, and orange flames shooting from its tail, standing upright on a launch pad",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1095,
+          999,
+          1792,
+          1875
+        ],
+        "picture_shape": 0.8,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Rocket",
+        "shows": "rocket",
+        "matches_cell": true,
+        "problems": "More than one thing"
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/rocket.webp"
+    },
+    "job_2026_10_06_10_2_01_c6": {
+      "thing_id": "hot_air_balloon",
+      "expected_thing": "hot_air_balloon",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c6.png",
+      "master_size": [
+        996,
+        996
+      ],
+      "master_sha256": "831a30ce899361cfdbfe0c8a1c5ece16e8a1d94598f87c5f1ff5b743216bc672",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_2_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_2_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Hot-air balloon: A big colourful hot air balloon with a striped envelope, a wicker basket hanging below, and a small flame burning above the basket, floating in the sky",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2074,
+          983,
+          2699,
+          1842
+        ],
+        "picture_shape": 0.73,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Hot-air balloon",
+        "shows": "hot_air_balloon",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/hot_air_balloon.webp"
+    },
+    "job_2026_10_06_10_2_01_c7": {
+      "thing_id": "sofa",
+      "expected_thing": "sofa",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c7.png",
+      "master_size": [
+        1042,
+        1042
+      ],
+      "master_sha256": "2f4d9ca17d8e37ae5a1717ae9601dc297145a5b0206bb421edb1e9a2054f43c7",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_2_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_2_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Sofa: A long cushioned sofa with soft back, two armrests, and short wooden legs, covered in bright floral fabric, standing whole in a living room",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          34,
+          2128,
+          932,
+          2645
+        ],
+        "picture_shape": 1.74,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Sofa",
+        "shows": "sofa",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/sofa.webp"
+    },
+    "job_2026_10_06_10_2_01_c8": {
+      "thing_id": "cupboard",
+      "expected_thing": "cupboard",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c8.png",
+      "master_size": [
+        894,
+        894
+      ],
+      "master_sha256": "a60d9c8b434bbab1b8d2e0e3cbdb2c912f4381c1c16ebd1b012f6ca15d301ee4",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_2_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_2_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Cupboard: A tall wooden cupboard with two closed doors and small round knobs, standing on short legs, painted brown wood, one shelf visible inside, in a kitchen",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1183,
+          1967,
+          1692,
+          2738
+        ],
+        "picture_shape": 0.66,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Cupboard",
+        "shows": "cupboard",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/cupboard.webp"
+    },
+    "job_2026_10_06_10_2_01_c9": {
+      "thing_id": "bucket",
+      "expected_thing": "bucket",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c9.png",
+      "master_size": [
+        761,
+        761
+      ],
+      "master_sha256": "e85eabb9411056edb1109d7c0ca8f61a537be80a122dba5705eab16525715a68",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_2_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_2_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Bucket: A blue plastic bucket with a wide open top, flat bottom, and a semicircular metal handle, shown whole and empty in plain view",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2088,
+          2073,
+          2714,
+          2729
+        ],
+        "picture_shape": 0.95,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Bucket",
+        "shows": "bucket",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/bucket.webp"
+    },
+    "job_2026_10_06_10_3_01_c1": {
+      "thing_id": "soap",
+      "expected_thing": "soap",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c1.png",
+      "master_size": [
+        892,
+        892
+      ],
+      "master_sha256": "0ac6f2806c02b3493603b55426d5351359f8565c0b821578b9d4ad274317002e",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_3_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_3_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Soap: A single bar of soap, cream or pale yellow, rounded rectangle with soft edges, slightly worn, sitting whole on a small dish, plain and simple",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          98,
+          242,
+          867,
+          750
+        ],
+        "picture_shape": 1.51,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Soap",
+        "shows": "soap",
+        "matches_cell": true,
+        "problems": "more than one thing"
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/soap.webp"
+    },
+    "job_2026_10_06_10_3_01_c2": {
+      "thing_id": "towel",
+      "expected_thing": "towel",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c2.png",
+      "master_size": [
+        896,
+        896
+      ],
+      "master_sha256": "f9ce64e7d245bd011daf75772889bc41029d18c6d1c1db29f7fda31bf94d779f",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_3_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_3_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Towel: A folded cotton terry towel in soft blue with a woven hanging loop, lying flat and whole, its fluffy absorbent surface clearly shown",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1040,
+          208,
+          1812,
+          789
+        ],
+        "picture_shape": 1.33,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Towel",
+        "shows": "towel",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/towel.webp"
+    },
+    "job_2026_10_06_10_3_01_c3": {
+      "thing_id": "dustpan",
+      "expected_thing": "dustpan",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c3.png",
+      "master_size": [
+        1017,
+        1017
+      ],
+      "master_sha256": "cde8296af0048702105ea2cd774ae477106c7c9b8044b976e7594d3cbe02a031",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_3_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_3_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Dustpan: A flat metal dustpan with a short handle, painted blue, holding a small pile of brown dust, with a wooden broom resting beside it",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1963,
+          33,
+          2840,
+          847
+        ],
+        "picture_shape": 1.08,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Dustpan",
+        "shows": "dustpan",
+        "matches_cell": true,
+        "problems": "more than one thing"
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/dustpan.webp"
+    },
+    "job_2026_10_06_10_3_01_c4": {
+      "thing_id": "scrub_brush",
+      "expected_thing": "scrub_brush",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c4.png",
+      "master_size": [
+        783,
+        783
+      ],
+      "master_sha256": "038e2533a6906a48da40725cbb212a986d98ee937780174ba5c3f174e48a8824",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_3_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_3_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Scrub brush: A round hand scrub brush with a wooden back and stiff brown fibre bristles, like the small coconut-fibre brushes sold in Indian shops",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          161,
+          1087,
+          793,
+          1762
+        ],
+        "picture_shape": 0.94,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Scrub brush",
+        "shows": "scrub_brush",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/scrub_brush.webp"
+    },
+    "job_2026_10_06_10_3_01_c5": {
+      "thing_id": "fan",
+      "expected_thing": "fan",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c5.png",
+      "master_size": [
+        951,
+        951
+      ],
+      "master_sha256": "6461e8f65d0928a53caf0c3e25d7361b26199d4ac0ad93f1a3bc15fb2ef5aee6",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_3_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_3_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Fan: A white electric table fan with a round wire cage, three metal blades, and a sturdy base, plugged in with a cord, standing whole on the floor",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1125,
+          938,
+          1776,
+          1758
+        ],
+        "picture_shape": 0.79,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Fan",
+        "shows": "fan",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/fan.webp"
+    },
+    "job_2026_10_06_10_3_01_c6": {
+      "thing_id": "television",
+      "expected_thing": "television",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c6.png",
+      "master_size": [
+        996,
+        996
+      ],
+      "master_sha256": "3d6261c209efec20f795a0c760bb6b51abde6e78c3734b4ed251a31b530de57c",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_3_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_3_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Television: A black flat-screen television set with a dark screen, thin grey stand, sitting whole on a table, showing a colourful picture on its screen",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1950,
+          1072,
+          2809,
+          1682
+        ],
+        "picture_shape": 1.41,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Television",
+        "shows": "television",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/television.webp"
+    },
+    "job_2026_10_06_10_3_01_c7": {
+      "thing_id": "light_bulb",
+      "expected_thing": "light_bulb",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c7.png",
+      "master_size": [
+        902,
+        902
+      ],
+      "master_sha256": "f189bc70a8125a5c8179fb03bd523a4d1cf05f51e364a395171e6ccac1962524",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_3_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_3_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Light bulb: A clear glass bulb with a glowing orange filament inside, on a metal screw base, standing upright, whole and complete, shining bright yellow light",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          263,
+          1942,
+          686,
+          2720
+        ],
+        "picture_shape": 0.54,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Light bulb",
+        "shows": "light_bulb",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/light_bulb.webp"
+    },
+    "job_2026_10_06_10_3_01_c8": {
+      "thing_id": "fridge",
+      "expected_thing": "fridge",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c8.png",
+      "master_size": [
+        1012,
+        1012
+      ],
+      "master_sha256": "8da7ad9976573a75e757f55404de3de64011c104d22ad44fde4168b148508bf4",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_3_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_3_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Fridge: A tall white fridge with two doors, rounded top freezer door and lower fridge door, small black handles on the right, standing whole on four small feet",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1179,
+          1862,
+          1621,
+          2734
+        ],
+        "picture_shape": 0.51,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Fridge",
+        "shows": "fridge",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/fridge.webp"
+    },
+    "job_2026_10_06_10_3_01_c9": {
+      "thing_id": "electric_iron",
+      "expected_thing": "electric_iron",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c9.png",
+      "master_size": [
+        984,
+        984
+      ],
+      "master_sha256": "2ce8cbea4ad9d28f4996f54e8870570c5a24da0b6d2e95b8aac1af282633543e",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_3_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_3_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Electric iron: A whole electric clothes iron with a handle and flat triangle base, white and blue, with a black electric cord and plug attached, standing upright",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0201,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2073,
+          1911,
+          2768,
+          2759
+        ],
+        "picture_shape": 0.82,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Electric iron",
+        "shows": "electric_iron",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/electric_iron.webp"
+    },
+    "job_2026_10_06_10_4_01_c1": {
+      "thing_id": "maize_plant",
+      "expected_thing": "maize_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_4_01_c1.png",
+      "master_size": [
+        1165,
+        1165
+      ],
+      "master_sha256": "0b85ee198b5feed9d00c6a140364601a4cf7c9d2603d108aa8aa4922c0970252",
+      "app_file": "tools/pictures/tiles/app/job_2026_10_06_10_4_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_10_06_10_4_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Maize plant: A tall green maize plant with long leaves, a tassel on top, and two yellow corn cobs in their green husks, one husk peeled open to show yellow kernels",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-10-06",
+      "cost_usd": 0.0537,
+      "cut": {
+        "flags": [],
+        "notes": [
+          "the picture is far from square"
+        ],
+        "picture_box": [
+          293,
+          10,
+          750,
+          1014
+        ],
+        "picture_shape": 0.46,
+        "ok": true,
+        "on": "2026-10-06"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-10-06",
+        "says": "Maize plant",
+        "shows": "maize_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-10-06",
+      "published_file": "Assets/pictures/maize_plant.webp"
     }
   }
 }

@@ -1,0 +1,49 @@
+{
+  "name": "Dustpan",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A dustpan is a cleaning utensil.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "household",
+      "quote": "Though often hand-held for home use, industrial and commercial enterprises use a hinged variety on the end of a long handle to allow the user to stand instead of stoop while using it.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_house_thing": {
+      "value": "cleaning",
+      "quote": "A dustpan is a cleaning utensil.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Dustpan",
+      "title": "Dustpan",
+      "asked_for": "Dustpan",
+      "revision": 1316239407,
+      "fetched_on": "2026-10-06",
+      "sha256": "38962c3bdc2858e3d6ba9888ca78c08b9eacf32d9b0d57fde67fe23cf54abb6f"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Dustpan",
+      "title": "Dustpan",
+      "asked_for": "Dustpan",
+      "revision": 10026599,
+      "fetched_on": "2026-10-06",
+      "sha256": "09a92e52ccfe14ffe17b2485a8486880d618290f552a26e4ee8f02eb7a348807"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "Soap",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "Soaps are often produced by mixing fats and oils with a base.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "household",
+      "quote": "In a domestic setting, soaps, specifically \"toilet soaps\", are surfactants typically used for washing, bathing, and other types of housekeeping.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_house_thing": {
+      "value": "cleaning",
+      "quote": "In a domestic setting, soaps, specifically \"toilet soaps\", are surfactants typically used for washing, bathing, and other types of housekeeping.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Soap",
+      "title": "Soap",
+      "asked_for": "Soap",
+      "revision": 1376458225,
+      "fetched_on": "2026-10-06",
+      "sha256": "e689ce06a3c994ec94485f50378d820db4f205268bb6d5abc23acacf7737d3a6"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Soap",
+      "title": "Soap",
+      "asked_for": "Soap",
+      "revision": 10935530,
+      "fetched_on": "2026-10-06",
+      "sha256": "39503b99c5977f5d35cc2729d6cc98d6173f832a14e2673764de241cc9ed92ab"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

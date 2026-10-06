@@ -1,0 +1,49 @@
+{
+  "name": "Houseboat",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A houseboat is a boat that has been designed or modified to be used primarily for regular dwelling.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "vehicle",
+      "quote": "A houseboat is a boat that has been designed or modified to be used primarily for regular dwelling.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "where_it_travels": {
+      "value": "water",
+      "quote": "Houseboats are largely found on small inland rivers, lakes, and streams, and in coastal harbours, especially where there is good fishing, in many countries.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Houseboat",
+      "title": "Houseboat",
+      "asked_for": "Houseboat",
+      "revision": 1370193712,
+      "fetched_on": "2026-10-06",
+      "sha256": "10203481d158776192a3b7bf1e1195f8968029270b616558b05b404736eaf713"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Houseboat",
+      "title": "Houseboat",
+      "asked_for": "Houseboat",
+      "revision": 9247100,
+      "fetched_on": "2026-10-06",
+      "sha256": "cf432a449be1b86ae9bee8909cd390926a5a4feb7ffe8342d35d35684639dd1c"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

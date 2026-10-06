@@ -1,0 +1,1321 @@
+{
+  "id": "2026-10-06-10",
+  "started": "2026-10-06",
+  "rehearse": null,
+  "cap_inr": 200.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "plant",
+        "chain": "Plants",
+        "fixed": {
+          "kind_of_thing": "plant"
+        },
+        "need": 0,
+        "pictures_for": [
+          "Maize plant"
+        ],
+        "recorded_but_not_in_the_game": [],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/vehicle",
+        "chain": "Things people make > Vehicles > On the road",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "road"
+        },
+        "need": 1,
+        "recorded_but_not_in_the_game": [],
+        "examples": [
+          {
+            "name": "Auto-rickshaw",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Lorry",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Scooter",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Motorbike",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/vehicle",
+        "chain": "Things people make > Vehicles > On rails",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "rails"
+        },
+        "need": 3,
+        "recorded_but_not_in_the_game": [],
+        "examples": [
+          {
+            "name": "Metro train",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Goods train",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Tram",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Steam engine",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/vehicle",
+        "chain": "Things people make > Vehicles > On water",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "water"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [],
+        "examples": [
+          {
+            "name": "Boat",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Ship",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Ferry",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Canoe",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Houseboat",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/vehicle",
+        "chain": "Things people make > Vehicles > In the air",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "air"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [],
+        "examples": [
+          {
+            "name": "Aeroplane",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Helicopter",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Rocket",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Hot-air balloon",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/household",
+        "chain": "Things people make > Things in the house > Furniture",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household",
+          "kind_of_house_thing": "furniture"
+        },
+        "need": 1,
+        "recorded_but_not_in_the_game": [],
+        "examples": [
+          {
+            "name": "Sofa",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Cupboard",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Stool",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/household",
+        "chain": "Things people make > Things in the house > Things to clean with",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household",
+          "kind_of_house_thing": "cleaning"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [],
+        "examples": [
+          {
+            "name": "Broom",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Bucket",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Soap",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Towel",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Mop",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          }
+        ],
+        "offers_1": [
+          {
+            "name": "Dustpan",
+            "familiar": 0.9,
+            "why": "used with broom, seen at home",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Sponge",
+            "familiar": 0.9,
+            "why": "soft thing for wiping",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Scrub brush",
+            "familiar": 0.8,
+            "why": "small brush for cleaning",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Duster",
+            "familiar": 0.8,
+            "why": "cloth for dusting furniture",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Vacuum cleaner",
+            "familiar": 0.8,
+            "why": "machine that sucks dirt",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Dish rack",
+            "familiar": 0.8,
+            "why": "stand for drying plates",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Wiper",
+            "familiar": 0.7,
+            "why": "rubber tool for floors",
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Scrubber",
+            "familiar": 0.7,
+            "why": "rough pad for dishes",
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "made_by_people/household",
+        "chain": "Things people make > Things in the house > Things that run on electricity",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household",
+          "kind_of_house_thing": "electric"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [],
+        "examples": [
+          {
+            "name": "Fan",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Television",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Light bulb",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Fridge",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          },
+          {
+            "name": "Electric iron",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true,
+            "from_proposal": true
+          }
+        ],
+        "facts_done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": []
+  },
+  "retry_held": false,
+  "things": [
+    {
+      "name": "Maize plant",
+      "passed": true,
+      "in_game": true,
+      "why": [],
+      "ask": 0,
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods",
+        "kind_of_plant_academic": "grass_grain"
+      },
+      "familiar": 0.9,
+      "draw": "A tall green maize plant with long leaves, a tassel on top, and two yellow corn cobs in their green husks, one husk peeled open to show yellow kernels",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_4_01_c1"
+    },
+    {
+      "name": "Auto-rickshaw",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Auto-rickshaw",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "road"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "road"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "where_it_travels"
+      ],
+      "ask": 1,
+      "draw": "A three-wheeled auto rickshaw with a yellow and green sheet-metal body, black canvas roof, small front cabin with handlebars, and open back for passengers",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_1_01_c1"
+    },
+    {
+      "name": "Lorry",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Lorry",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "road"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "road"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "where_it_travels"
+      ],
+      "ask": 1,
+      "draw": "A whole Indian lorry: a big boxy truck with a separate driver cabin, painted bright colours, six wheels, carrying goods on its back, seen on an Indian road",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_1_01_c2"
+    },
+    {
+      "name": "Metro train",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Metro train",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "rails"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "rails"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 2,
+      "draw": "A long silver metro train on rails, blue stripe along its side, many windows and doors, rounded front, standing whole on a track",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_1_01_c3"
+    },
+    {
+      "name": "Goods train",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Goods train",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "rails"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "rails"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 2,
+      "draw": "A long goods train on rails: a black diesel engine pulling many brown box wagons, some open with grey coal and sacks, whole train side view",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_1_01_c4"
+    },
+    {
+      "name": "Tram",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Tram",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "rails"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "rails"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 2,
+      "draw": "A long boxy tram with many windows and a pantograph on its roof, running on steel rails set into a city street, painted blue and white",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_1_01_c5"
+    },
+    {
+      "name": "Steam engine",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Steam engine",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "rails"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "rails"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing",
+        "where_it_travels"
+      ],
+      "ask": 2,
+      "draw": "A black steam locomotive on rails, with a round boiler, tall smokestack, red wheels, and a small cab, whole and side-on",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_1_01_c6"
+    },
+    {
+      "name": "Boat",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Boat",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "water"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 3,
+      "draw": "A small wooden rowboat floating on blue water, with two oars resting inside, brown wood planks, curved sides, pointed front, seen from the side",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_1_01_c7"
+    },
+    {
+      "name": "Ship",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Ship",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "water"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 3,
+      "draw": "A big ship floating on blue water, with a tall mast, white sails, a red hull, and a small flag on top",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_1_01_c8"
+    },
+    {
+      "name": "Ferry",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Ferry",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "water"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 3,
+      "draw": "A whole white and blue ferry boat floating on water, with a flat deck, small windows, a cabin, and a few tiny cars and people standing on it",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_1_01_c9"
+    },
+    {
+      "name": "Canoe",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Canoe",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "water"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 3,
+      "draw": "A long narrow wooden canoe, pointed at both ends, open on top, floating on water, with a single wooden paddle resting inside",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_2_01_c1"
+    },
+    {
+      "name": "Houseboat",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Houseboat",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "water"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 3,
+      "draw": "A wide flat-bottomed wooden houseboat with a curved roof, small windows, moored on a calm river, painted in natural browns and greens",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_2_01_c2"
+    },
+    {
+      "name": "Aeroplane",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Aeroplane",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "air"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "air"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing"
+      ],
+      "ask": 4,
+      "draw": "A white aeroplane with long fixed wings, a tail fin, and a row of small windows, flying high in a blue sky above green fields",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_2_01_c3"
+    },
+    {
+      "name": "Helicopter",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Helicopter",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "air"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "air"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 4,
+      "draw": "A whole helicopter with a rounded glass cabin, one long spinning rotor on top, a small tail rotor, and two landing skids, painted in bright red and white",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_2_01_c4"
+    },
+    {
+      "name": "Rocket",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Rocket",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "air"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "air"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 4,
+      "draw": "A tall white rocket with a pointed nose cone, red fins at the bottom, and orange flames shooting from its tail, standing upright on a launch pad",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_2_01_c5"
+    },
+    {
+      "name": "Hot-air balloon",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Hot-air balloon",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "vehicle",
+          "where_it_travels": "air"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "air"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 4,
+      "draw": "A big colourful hot air balloon with a striped envelope, a wicker basket hanging below, and a small flame burning above the basket, floating in the sky",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_2_01_c6"
+    },
+    {
+      "name": "Sofa",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Sofa",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household",
+          "kind_of_house_thing": "furniture"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "furniture"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "kind_of_thing"
+      ],
+      "ask": 5,
+      "draw": "A long cushioned sofa with soft back, two armrests, and short wooden legs, covered in bright floral fabric, standing whole in a living room",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_2_01_c7"
+    },
+    {
+      "name": "Cupboard",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Cupboard",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household",
+          "kind_of_house_thing": "furniture"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "furniture"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 5,
+      "draw": "A tall wooden cupboard with two closed doors and small round knobs, standing on short legs, painted brown wood, one shelf visible inside, in a kitchen",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_2_01_c8"
+    },
+    {
+      "name": "Broom",
+      "passed": false,
+      "why": [
+        "uncertain: the approved proposal lists it in this group",
+        "the pages and the judgements point to 'Tools', not 'Things in the house'",
+        "it could not be settled that it belongs in 'Things to clean with'"
+      ],
+      "thing": {
+        "name": "Broom",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "tool"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 6
+    },
+    {
+      "name": "Bucket",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Bucket",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household",
+          "kind_of_house_thing": "cleaning"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing",
+        "kind_of_house_thing"
+      ],
+      "ask": 6,
+      "draw": "A blue plastic bucket with a wide open top, flat bottom, and a semicircular metal handle, shown whole and empty in plain view",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_2_01_c9"
+    },
+    {
+      "name": "Soap",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Soap",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household",
+          "kind_of_house_thing": "cleaning"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 6,
+      "draw": "A single bar of soap, cream or pale yellow, rounded rectangle with soft edges, slightly worn, sitting whole on a small dish, plain and simple",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_3_01_c1"
+    },
+    {
+      "name": "Towel",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Towel",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household",
+          "kind_of_house_thing": "cleaning"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 6,
+      "draw": "A folded cotton terry towel in soft blue with a woven hanging loop, lying flat and whole, its fluffy absorbent surface clearly shown",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_3_01_c2"
+    },
+    {
+      "name": "Mop",
+      "passed": false,
+      "why": [
+        "uncertain: the approved proposal lists it in this group",
+        "the pages and the judgements point to 'Tools', not 'Things in the house'",
+        "it could not be settled that it belongs in 'Things to clean with'"
+      ],
+      "thing": {
+        "name": "Mop",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "tool"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 6
+    },
+    {
+      "name": "Dustpan",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Dustpan",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household",
+          "kind_of_house_thing": "cleaning"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 6,
+      "draw": "A flat metal dustpan with a short handle, painted blue, holding a small pile of brown dust, with a wooden broom resting beside it",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_3_01_c3"
+    },
+    {
+      "name": "Sponge",
+      "passed": false,
+      "why": [
+        "the pages and the judgements point to 'Animals', not 'Things people make'",
+        "it could not be settled that it belongs in 'Things in the house'",
+        "it could not be settled that it belongs in 'Things to clean with'",
+        "kind_of_animal: uncertain: two judgements disagree: 'Fish' and 'Mammals'"
+      ],
+      "thing": {
+        "name": "Sponge",
+        "fields": {
+          "kind_of_thing": "animal",
+          "extinct": false
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "extinct": false,
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 6
+    },
+    {
+      "name": "Scrub brush",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Scrub brush",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household",
+          "kind_of_house_thing": "cleaning"
+        },
+        "familiar": 0.8,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing"
+      ],
+      "ask": 6,
+      "draw": "A round hand scrub brush with a wooden back and stiff brown fibre bristles, like the small coconut-fibre brushes sold in Indian shops",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_3_01_c4"
+    },
+    {
+      "name": "Fan",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Fan",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household",
+          "kind_of_house_thing": "electric"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "electric"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [],
+      "ask": 7,
+      "draw": "A white electric table fan with a round wire cage, three metal blades, and a sturdy base, plugged in with a cord, standing whole on the floor",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_3_01_c5"
+    },
+    {
+      "name": "Television",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Television",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household",
+          "kind_of_house_thing": "electric"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "electric"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "kind_of_house_thing"
+      ],
+      "ask": 7,
+      "draw": "A black flat-screen television set with a dark screen, thin grey stand, sitting whole on a table, showing a colourful picture on its screen",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_3_01_c6"
+    },
+    {
+      "name": "Light bulb",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Light bulb",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household",
+          "kind_of_house_thing": "electric"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "electric"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing"
+      ],
+      "ask": 7,
+      "draw": "A clear glass bulb with a glowing orange filament inside, on a metal screw base, standing upright, whole and complete, shining bright yellow light",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_3_01_c7"
+    },
+    {
+      "name": "Fridge",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Fridge",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household",
+          "kind_of_house_thing": "electric"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "electric"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "kind_of_house_thing"
+      ],
+      "ask": 7,
+      "draw": "A tall white fridge with two doors, rounded top freezer door and lower fridge door, small black handles on the right, standing whole on four small feet",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_3_01_c8"
+    },
+    {
+      "name": "Electric iron",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Electric iron",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "household",
+          "kind_of_house_thing": "electric"
+        },
+        "familiar": 0.9,
+        "reviewed": 4,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-10-06-10"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "electric"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "judged_not_sourced": [
+        "kind_of_thing",
+        "kind_of_house_thing"
+      ],
+      "ask": 7,
+      "draw": "A whole electric clothes iron with a handle and flat triangle base, white and blue, with a black electric cord and plug attached, standing upright",
+      "tries": 1,
+      "tile": "job_2026_10_06_10_3_01_c9"
+    }
+  ],
+  "sheets": [
+    "job_2026_10_06_10_1_01",
+    "job_2026_10_06_10_2_01",
+    "job_2026_10_06_10_3_01",
+    "job_2026_10_06_10_4_01"
+  ],
+  "stopped": "",
+  "spent_usd": {
+    "deepseek": 0.0385,
+    "drawing": 0.5956,
+    "picture_checks": 0.00162
+  }
+}

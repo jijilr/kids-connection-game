@@ -1,0 +1,49 @@
+{
+  "name": "Helicopter",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A helicopter (also often used: chopper or heli) is a kind of flying machine or aircraft.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "vehicle",
+      "quote": "A helicopter (also often used: chopper or heli) is a kind of flying machine or aircraft.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "where_it_travels": {
+      "value": "air",
+      "quote": "A helicopter flies differently from an airplane.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Helicopter",
+      "title": "Helicopter",
+      "asked_for": "Helicopter",
+      "revision": 1373885559,
+      "fetched_on": "2026-10-06",
+      "sha256": "884be3e14f75304254ae1b2538c55c9236f2b7a2ca4149e9df3582e3ed65bf47"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Helicopter",
+      "title": "Helicopter",
+      "asked_for": "Helicopter",
+      "revision": 9826512,
+      "fetched_on": "2026-10-06",
+      "sha256": "9fde48099f863a7ca9aeaf5040ef13dc9c1a863943c622f9c114c7ba32ab6a0c"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

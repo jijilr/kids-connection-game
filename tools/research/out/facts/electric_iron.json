@@ -1,0 +1,47 @@
+{
+  "name": "Electric iron",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "basis": "judged, not sourced",
+      "why": "The sources describe it as a small appliance with a handle and flat surface that people make and use to press clothes."
+    },
+    "kind_of_made_thing": {
+      "value": "household",
+      "quote": "A clothes iron, also known as a flatiron, smoothing iron, dry iron, steam iron, and simply iron, is a small appliance that, when heated, is used to press clothes to remove wrinkles and unwanted creases.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_house_thing": {
+      "value": "electric",
+      "basis": "judged, not sourced",
+      "why": "The sources say electricity makes the flat surface hot, so it is a household thing that runs on electricity."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Clothes_iron",
+      "title": "Clothes iron",
+      "asked_for": "Electric iron",
+      "revision": 1376077292,
+      "fetched_on": "2026-10-06",
+      "sha256": "8bce0c6176b828b201c5313e4879f0b3ef3ae5e14e18c4e431cb80e3fbeaf353"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Clothes_iron",
+      "title": "Clothes iron",
+      "asked_for": "Electric iron",
+      "revision": 9738861,
+      "fetched_on": "2026-10-06",
+      "sha256": "19121a0390fbc1f4bd0448ee55fd8636188c2bef5d585c441a5c6b3f2107158a"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

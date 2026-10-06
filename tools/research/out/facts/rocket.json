@@ -1,0 +1,49 @@
+{
+  "name": "Rocket",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A rocket may be a missile, spacecraft, aircraft or other vehicle which is pushed by a rocket engine.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "vehicle",
+      "quote": "A rocket may be a missile, spacecraft, aircraft or other vehicle which is pushed by a rocket engine.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "where_it_travels": {
+      "value": "air",
+      "quote": "consequently a rocket can fly in the vacuum of space, and indeed rocket engines operate more efficiently outside the atmosphere.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Rocket",
+      "title": "Rocket",
+      "asked_for": "Rocket",
+      "revision": 1378862557,
+      "fetched_on": "2026-10-06",
+      "sha256": "232fbc649db674e4b9651110a6d08f98a74bec0468ad295d8cbd5e7344fd96f1"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Rocket",
+      "title": "Rocket",
+      "asked_for": "Rocket",
+      "revision": 10261395,
+      "fetched_on": "2026-10-06",
+      "sha256": "68e8c8582e2e668eaabcf3ae353906d466830202a01279a74809becaa7609ac5"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

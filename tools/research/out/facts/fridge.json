@@ -1,0 +1,48 @@
+{
+  "name": "Fridge",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A refrigerator is a machine used for keeping things cold.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "household",
+      "quote": "A refrigerator, commonly shortened to fridge, is a commercial and home appliance consisting of a thermally insulated compartment and a heat pump (mechanical, electronic, or chemical) that transfers heat from its inside to its external environment so that its inside is cooled to a temperature below the ambient temperature of the room.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_house_thing": {
+      "value": "electric",
+      "basis": "judged, not sourced",
+      "why": "A refrigerator is a household appliance that runs on electricity to keep food cold."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Refrigerator",
+      "title": "Refrigerator",
+      "asked_for": "Fridge",
+      "revision": 1370339781,
+      "fetched_on": "2026-10-06",
+      "sha256": "509d9c75efd86e8cd15e14fe3041e34c770aeec02994f5b992d1bda7eb4db3d1"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Refrigerator",
+      "title": "Refrigerator",
+      "asked_for": "Fridge",
+      "revision": 10462629,
+      "fetched_on": "2026-10-06",
+      "sha256": "036ace970018b029bed7849b8c5d3db9cc5edf4d3e7befb131529dbc27c6cbd6"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

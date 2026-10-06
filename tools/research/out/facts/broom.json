@@ -1,0 +1,43 @@
+{
+  "name": "Broom",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A broom is a cleaning tool.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "tool",
+      "quote": "A broom is a cleaning tool.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Broom",
+      "title": "Broom",
+      "asked_for": "Broom",
+      "revision": 1365114515,
+      "fetched_on": "2026-10-06",
+      "sha256": "42f75f71d127524ade6810738558d97fa176b5c1fcff33bf8657e0b8ec88685a"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Broom",
+      "title": "Broom",
+      "asked_for": "Broom",
+      "revision": 10578001,
+      "fetched_on": "2026-10-06",
+      "sha256": "a6f7187607c53c06249c4fe5a969dd2096c8ae7ce143df9dd6179caef44ec61a"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

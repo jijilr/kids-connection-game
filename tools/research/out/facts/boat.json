@@ -1,0 +1,49 @@
+{
+  "name": "Boat",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A boat is a vehicle used to travel on water.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "vehicle",
+      "quote": "A boat is a vehicle used to travel on water.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "where_it_travels": {
+      "value": "water",
+      "quote": "A boat is a vehicle used to travel on water.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Boat",
+      "title": "Boat",
+      "asked_for": "Boat",
+      "revision": 1358694481,
+      "fetched_on": "2026-10-06",
+      "sha256": "5f9138b513075a55971bbb9c507858e42055f518d6373112dbea40486fcaaa0a"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Boat",
+      "title": "Boat",
+      "asked_for": "Boat",
+      "revision": 10941471,
+      "fetched_on": "2026-10-06",
+      "sha256": "14fd7c187f5834cad6e1cdcd47550fcaeaef6d7a4959d5863ef192273d249f26"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

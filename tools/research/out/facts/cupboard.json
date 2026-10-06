@@ -1,0 +1,49 @@
+{
+  "name": "Cupboard",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A cupboard is a piece of furniture for enclosing dishware or grocery items that are stored in a home.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "household",
+      "quote": "A cupboard, also known as a cabinet, is furniture used for storage.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_house_thing": {
+      "value": "furniture",
+      "quote": "A cupboard, also known as a cabinet, is furniture used for storage.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cupboard",
+      "title": "Cupboard",
+      "asked_for": "Cupboard",
+      "revision": 1366066879,
+      "fetched_on": "2026-10-06",
+      "sha256": "23a7895e95148df3723c590eec60cb7867e5b6d03d737dacdf7f5fe2a9f0c19f"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cupboard",
+      "title": "Cupboard",
+      "asked_for": "Cupboard",
+      "revision": 10367743,
+      "fetched_on": "2026-10-06",
+      "sha256": "1d024ca2bec65d04c2a84e2dafbfcf75d4eff18aa7330d31d706d57064bc8d8b"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

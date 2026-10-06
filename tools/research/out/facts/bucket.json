@@ -1,0 +1,47 @@
+{
+  "name": "Bucket",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A bucket is a container with a wide open top and a handle that is mainly used for carrying liquids.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "household",
+      "basis": "judged, not sourced",
+      "why": "A bucket is a container used for carrying liquids and solids, which is a common household item."
+    },
+    "kind_of_house_thing": {
+      "value": "cleaning",
+      "basis": "judged, not sourced",
+      "why": "A bucket is a container used for carrying water and washing or cleaning around the house."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Bucket",
+      "title": "Bucket",
+      "asked_for": "Bucket",
+      "revision": 1376102111,
+      "fetched_on": "2026-10-06",
+      "sha256": "7a0934d0d686bd9aa9fe107264ac4a24b7ab732cb5ba3c690f17a0462797d010"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Bucket",
+      "title": "Bucket",
+      "asked_for": "Bucket",
+      "revision": 10440845,
+      "fetched_on": "2026-10-06",
+      "sha256": "86ea55deab2863833f6ce4b2257653071f881cd3335de6236f76925197ba37a9"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

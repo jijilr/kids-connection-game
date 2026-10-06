@@ -1,0 +1,48 @@
+{
+  "name": "Sponge",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "A sponge is a member of the phylum Porifera. It is a simple animal with many cells, but no mouth, muscles, heart or brain.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "There are more than 10,000 species of sponge. Most sponges live in the ocean.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_animal",
+      "why": "uncertain: two judgements disagree: 'Fish' and 'Mammals'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Sponge",
+      "title": "Sponge",
+      "asked_for": "Sponge",
+      "revision": 1376024738,
+      "fetched_on": "2026-10-06",
+      "sha256": "ce56dbf845f70135129c5904ed8b082335d2dab4d82ae89d723a78574dc161bc"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Sponge_(animal)",
+      "title": "Sponge (animal)",
+      "asked_for": "Sponge",
+      "revision": 10939213,
+      "fetched_on": "2026-10-06",
+      "sha256": "014a8582f6a8a8e491a40c57131670d110ddbf7d73f54b36a13929e7753fb270"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

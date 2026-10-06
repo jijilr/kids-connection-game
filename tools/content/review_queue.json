@@ -233,6 +233,53 @@
       ],
       "from": "job:2026-10-06-08",
       "familiar": 0.5
+    },
+    {
+      "name": "Broom",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "why": [
+        "uncertain: the approved proposal lists it in this group",
+        "the pages and the judgements point to 'Tools', not 'Things in the house'",
+        "it could not be settled that it belongs in 'Things to clean with'"
+      ],
+      "from": "job:2026-10-06-10",
+      "familiar": 0.9
+    },
+    {
+      "name": "Mop",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "why": [
+        "uncertain: the approved proposal lists it in this group",
+        "the pages and the judgements point to 'Tools', not 'Things in the house'",
+        "it could not be settled that it belongs in 'Things to clean with'"
+      ],
+      "from": "job:2026-10-06-10",
+      "familiar": 0.9
+    },
+    {
+      "name": "Sponge",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "extinct": false,
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "why": [
+        "the pages and the judgements point to 'Animals', not 'Things people make'",
+        "it could not be settled that it belongs in 'Things in the house'",
+        "it could not be settled that it belongs in 'Things to clean with'",
+        "kind_of_animal: uncertain: two judgements disagree: 'Fish' and 'Mammals'"
+      ],
+      "from": "job:2026-10-06-10",
+      "familiar": 0.9
     }
   ]
 }

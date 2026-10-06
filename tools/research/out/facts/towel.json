@@ -1,0 +1,49 @@
+{
+  "name": "Towel",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A towel is a piece of absorbent cloth, or paper, used for drying or wiping a surface.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "household",
+      "quote": "In households, various types of towels are used for a variety of functions, such as hand towels, bath towels, and kitchen towels.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_house_thing": {
+      "value": "cleaning",
+      "quote": "They are also used for such duties such as wiping, cleaning, and drying.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Towel",
+      "title": "Towel",
+      "asked_for": "Towel",
+      "revision": 1373877171,
+      "fetched_on": "2026-10-06",
+      "sha256": "ccd45f99a1b8c372cca7b7d1eba76612857228136b663901313d1b4522b6c61c"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Towel",
+      "title": "Towel",
+      "asked_for": "Towel",
+      "revision": 9498167,
+      "fetched_on": "2026-10-06",
+      "sha256": "76eb4065b53ede8e9b399bb47c45dadecf061992f359ed11761e1d091f4cd335"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

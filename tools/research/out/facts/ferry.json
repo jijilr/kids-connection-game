@@ -1,0 +1,49 @@
+{
+  "name": "Ferry",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A ferry is a boat or ship that transports passengers, and occasionally vehicles and cargo, across a body of water.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "vehicle",
+      "quote": "Ferry is a boat or ship that is used to take people, vehicles or goods across large bodies of water, such as seas, lakes, and rivers.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "where_it_travels": {
+      "value": "water",
+      "quote": "Ferry is a boat or ship that is used to take people, vehicles or goods across large bodies of water, such as seas, lakes, and rivers.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Ferry",
+      "title": "Ferry",
+      "asked_for": "Ferry",
+      "revision": 1377471781,
+      "fetched_on": "2026-10-06",
+      "sha256": "a3320ad04958528da818fa0d9e1183dea406a5b369a1dc060d59c907ed65ea3d"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Ferry",
+      "title": "Ferry",
+      "asked_for": "Ferry",
+      "revision": 10727028,
+      "fetched_on": "2026-10-06",
+      "sha256": "f755a5eedc032b104a0d943b2dd519cc59d6bb77a473b4ebe8f5f1f0d10b6b76"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

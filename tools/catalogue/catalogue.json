@@ -1618,14 +1618,16 @@
           }
         },
         "no_sentence_for": [
-          "kind_of_made_thing"
+          "kind_of_made_thing",
+          "where_it_travels"
         ]
       },
       "worked_out": {
         "circles": [
           "seed",
           "made_by_people",
-          "made_by_people/vehicle"
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/road"
         ],
         "boards": [
           {
@@ -1638,6 +1640,12 @@
             "circle": "made_by_people",
             "sorted_by": "kind_of_made_thing",
             "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "road",
             "open_now": true
           }
         ]
@@ -1705,13 +1713,16 @@
             "basis": "sourced"
           }
         },
-        "no_sentence_for": []
+        "no_sentence_for": [
+          "kind_of_house_thing"
+        ]
       },
       "worked_out": {
         "circles": [
           "seed",
           "made_by_people",
-          "made_by_people/household"
+          "made_by_people/household",
+          "made_by_people/household/furniture"
         ],
         "boards": [
           {
@@ -1724,6 +1735,12 @@
             "circle": "made_by_people",
             "sorted_by": "kind_of_made_thing",
             "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "furniture",
             "open_now": true
           }
         ]
@@ -1951,13 +1968,16 @@
             "basis": "sourced"
           }
         },
-        "no_sentence_for": []
+        "no_sentence_for": [
+          "where_it_travels"
+        ]
       },
       "worked_out": {
         "circles": [
           "seed",
           "made_by_people",
-          "made_by_people/vehicle"
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/road"
         ],
         "boards": [
           {
@@ -1970,6 +1990,12 @@
             "circle": "made_by_people",
             "sorted_by": "kind_of_made_thing",
             "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "road",
             "open_now": true
           }
         ]
@@ -2028,13 +2054,16 @@
             "basis": "sourced"
           }
         },
-        "no_sentence_for": []
+        "no_sentence_for": [
+          "kind_of_house_thing"
+        ]
       },
       "worked_out": {
         "circles": [
           "seed",
           "made_by_people",
-          "made_by_people/household"
+          "made_by_people/household",
+          "made_by_people/household/eating"
         ],
         "boards": [
           {
@@ -2047,6 +2076,12 @@
             "circle": "made_by_people",
             "sorted_by": "kind_of_made_thing",
             "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "eating",
             "open_now": true
           }
         ]
@@ -2110,14 +2145,16 @@
           }
         },
         "no_sentence_for": [
-          "kind_of_made_thing"
+          "kind_of_made_thing",
+          "kind_of_house_thing"
         ]
       },
       "worked_out": {
         "circles": [
           "seed",
           "made_by_people",
-          "made_by_people/household"
+          "made_by_people/household",
+          "made_by_people/household/eating"
         ],
         "boards": [
           {
@@ -2130,6 +2167,12 @@
             "circle": "made_by_people",
             "sorted_by": "kind_of_made_thing",
             "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "eating",
             "open_now": true
           }
         ]
@@ -2193,14 +2236,16 @@
           }
         },
         "no_sentence_for": [
-          "kind_of_made_thing"
+          "kind_of_made_thing",
+          "where_it_travels"
         ]
       },
       "worked_out": {
         "circles": [
           "seed",
           "made_by_people",
-          "made_by_people/vehicle"
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/road"
         ],
         "boards": [
           {
@@ -2213,6 +2258,12 @@
             "circle": "made_by_people",
             "sorted_by": "kind_of_made_thing",
             "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "road",
             "open_now": true
           }
         ]
@@ -2447,14 +2498,16 @@
           }
         },
         "no_sentence_for": [
-          "kind_of_made_thing"
+          "kind_of_made_thing",
+          "where_it_travels"
         ]
       },
       "worked_out": {
         "circles": [
           "seed",
           "made_by_people",
-          "made_by_people/vehicle"
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/rails"
         ],
         "boards": [
           {
@@ -2467,6 +2520,12 @@
             "circle": "made_by_people",
             "sorted_by": "kind_of_made_thing",
             "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "rails",
             "open_now": true
           }
         ]
@@ -9591,7 +9650,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "fruit",
-            "open_now": false
+            "open_now": true
           }
         ]
       }
@@ -9682,7 +9741,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "fruit",
-            "open_now": false
+            "open_now": true
           }
         ]
       }
@@ -9769,7 +9828,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "fruit",
-            "open_now": false
+            "open_now": true
           }
         ]
       }
@@ -9865,7 +9924,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "fruit",
-            "open_now": false
+            "open_now": true
           }
         ]
       }
@@ -10080,13 +10139,16 @@
             "quote": "A table is a piece of furniture with a raised flat top and is supported most commonly by 1 to 4 legs (although some can have more)."
           }
         },
-        "no_sentence_for": []
+        "no_sentence_for": [
+          "kind_of_house_thing"
+        ]
       },
       "worked_out": {
         "circles": [
           "seed",
           "made_by_people",
-          "made_by_people/household"
+          "made_by_people/household",
+          "made_by_people/household/furniture"
         ],
         "boards": [
           {
@@ -10099,6 +10161,12 @@
             "circle": "made_by_people",
             "sorted_by": "kind_of_made_thing",
             "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "furniture",
             "open_now": true
           }
         ]
@@ -10166,13 +10234,16 @@
             "basis": "sourced"
           }
         },
-        "no_sentence_for": []
+        "no_sentence_for": [
+          "kind_of_house_thing"
+        ]
       },
       "worked_out": {
         "circles": [
           "seed",
           "made_by_people",
-          "made_by_people/household"
+          "made_by_people/household",
+          "made_by_people/household/furniture"
         ],
         "boards": [
           {
@@ -10185,6 +10256,12 @@
             "circle": "made_by_people",
             "sorted_by": "kind_of_made_thing",
             "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "furniture",
             "open_now": true
           }
         ]
@@ -10243,13 +10320,16 @@
             "basis": "sourced"
           }
         },
-        "no_sentence_for": []
+        "no_sentence_for": [
+          "kind_of_house_thing"
+        ]
       },
       "worked_out": {
         "circles": [
           "seed",
           "made_by_people",
-          "made_by_people/household"
+          "made_by_people/household",
+          "made_by_people/household/eating"
         ],
         "boards": [
           {
@@ -10262,6 +10342,12 @@
             "circle": "made_by_people",
             "sorted_by": "kind_of_made_thing",
             "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "eating",
             "open_now": true
           }
         ]
@@ -10329,13 +10415,16 @@
             "quote": "Due to its ease of formability into any shape, glass has been traditionally used for vessels, such as bowls, vases, bottles, jars and drinking glasses."
           }
         },
-        "no_sentence_for": []
+        "no_sentence_for": [
+          "kind_of_house_thing"
+        ]
       },
       "worked_out": {
         "circles": [
           "seed",
           "made_by_people",
-          "made_by_people/household"
+          "made_by_people/household",
+          "made_by_people/household/eating"
         ],
         "boards": [
           {
@@ -10348,6 +10437,12 @@
             "circle": "made_by_people",
             "sorted_by": "kind_of_made_thing",
             "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "eating",
             "open_now": true
           }
         ]
@@ -12939,7 +13034,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "under_the_ground",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -13043,7 +13138,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "under_the_ground",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -13146,7 +13241,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "under_the_ground",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -13249,7 +13344,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "under_the_ground",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -13352,7 +13447,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "under_the_ground",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -13535,7 +13630,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "leaves",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -13638,7 +13733,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "leaves",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -13872,7 +13967,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "leaves",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -13976,7 +14071,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "leaves",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -14077,7 +14172,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "leaves",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -14232,7 +14327,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "seeds_or_pods",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -14285,7 +14380,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "seeds_or_pods",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -14569,7 +14664,7 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "seeds_or_pods",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -14837,6 +14932,55 @@
           "plant/vegetable",
           "plant/vegetable/seeds_or_pods"
         ]
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Moringa_oleifera",
+            "title": "Moringa oleifera",
+            "asked_for": "Drumstick (vegetable)",
+            "revision": 1377991982,
+            "fetched_on": "2026-10-06",
+            "sha256": "c2151c8d3a89c9cfde700fddbaaf2ae9590b3deb9a626a66ee8e08329b1b81f7"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Drum_stick",
+            "title": "Drum stick",
+            "asked_for": "Drumstick",
+            "revision": 7648741,
+            "fetched_on": "2026-10-06",
+            "sha256": "0c8c1c6a7f3612d4e7392bf6c9efbc15c24cce75cd05e69bdc304d65c0f55c5a"
+          }
+        ],
+        "facts": "tools/research/out/facts/drumstick_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Moringa oleifera is a short-lived, fast-growing, drought-resistant tree of the family Moringaceae, native to northern India and used extensively in South and Southeast Asia."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "It is widely cultivated for its young seed pods and leaves, used as vegetables and for traditional medicine."
+          },
+          "tree_academic": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Moringa oleifera is a short-lived, fast-growing, drought-resistant tree of the family Moringaceae, native to northern India and used extensively in South and Southeast Asia."
+          }
+        },
+        "no_sentence_for": [
+          "kind_of_plant",
+          "part_we_eat"
+        ]
+      },
+      "voice": {
+        "say": "Drumstick plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "cluster_bean_plant": {
@@ -14859,6 +15003,11 @@
           "plant/vegetable",
           "plant/vegetable/seeds_or_pods"
         ]
+      },
+      "voice": {
+        "say": "Cluster bean plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "cowpea_plant": {
@@ -14881,6 +15030,11 @@
           "plant/vegetable",
           "plant/vegetable/seeds_or_pods"
         ]
+      },
+      "voice": {
+        "say": "Cowpea plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "field_bean_plant": {
@@ -14903,6 +15057,11 @@
           "plant/vegetable",
           "plant/vegetable/seeds_or_pods"
         ]
+      },
+      "voice": {
+        "say": "Field bean plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "green_gram_plant": {
@@ -14925,6 +15084,11 @@
           "plant/vegetable",
           "plant/vegetable/seeds_or_pods"
         ]
+      },
+      "voice": {
+        "say": "Green gram plant",
+        "checked_by_ear": false,
+        "clip": null
       }
     },
     "maize_plant": {
@@ -14969,16 +15133,2742 @@
             "circle": "plant/vegetable",
             "sorted_by": "part_we_eat",
             "group": "seeds_or_pods",
-            "open_now": false
+            "open_now": true
           }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_4_01_c1",
+        "game_file": "Assets/pictures/maize_plant.webp",
+        "game_sha256": "ed989bf13f790aa3d05c36fb9e853697d4cd5f52cf8c26700c8251d4ed47a64c",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_4_01_c1.png",
+        "master_sha256": "173f0547ec996610994e6ce309544899b87200c2957c8ee3275a7235a7307b17",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Maize",
+            "title": "Maize",
+            "asked_for": "Maize",
+            "revision": 1377441710,
+            "fetched_on": "2026-10-06",
+            "sha256": "f209fcf92ab3dc9ee7ce8c3ec9566766d8a25e72c8d1a00ca59bc34a88691c16"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Maize",
+            "title": "Maize",
+            "asked_for": "Maize",
+            "revision": 10301152,
+            "fetched_on": "2026-10-06",
+            "sha256": "dbc459b13558253c586a550a7f4e9ff39ace2b7ccd2d8779de1210caac659d51"
+          }
+        ],
+        "facts": "tools/research/out/facts/maize_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Maize (; Zea mays), also known as corn, is a tall stout grass that produces cereal grain."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Maize is cultivated throughout the world; a greater weight of maize is produced each year than any other grain."
+          }
+        },
+        "no_sentence_for": [
+          "kind_of_plant",
+          "part_we_eat",
+          "kind_of_plant_academic"
+        ]
+      },
+      "voice": {
+        "say": "Maize plant",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "auto_rickshaw": {
+      "name": "Auto-rickshaw",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "road"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/road"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "road",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_1_01_c1",
+        "game_file": "Assets/pictures/auto_rickshaw.webp",
+        "game_sha256": "f5e3d9bb44e5ad55d65fa468c00a56eb45fa5fa378cf72710519a8068d29a482",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c1.png",
+        "master_sha256": "70f7e8d884568bc00bc1fcb4d6dea600462739c071f35f17cbb8173f9021b698",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Auto_rickshaw",
+            "title": "Auto rickshaw",
+            "asked_for": "Auto-rickshaw",
+            "revision": 1376251680,
+            "fetched_on": "2026-10-06",
+            "sha256": "4b3d9240181ee5e2ad7d31941fb30794a9731d32ba34eabce041b7a022e8a9e6"
+          }
+        ],
+        "facts": "tools/research/out/facts/auto_rickshaw.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "An auto rickshaw is a motorized version of the pulled rickshaw or cycle rickshaw."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The auto rickshaw is a common form of transport around the world (especially in South Asian countries like India and Pakistan) both as a vehicle for hire and  private use."
+          },
+          "where_it_travels": {
+            "basis": "judged, not sourced",
+            "why": "An auto rickshaw is a three-wheeled motor vehicle used as transport on roads."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Auto-rickshaw",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "lorry": {
+      "name": "Lorry",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "road"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/road"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "road",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_1_01_c2",
+        "game_file": "Assets/pictures/lorry.webp",
+        "game_sha256": "6118eb740e0da4bb29b574108b6bd0d1f601bce5a867d9541cfe63601e51b0b4",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c2.png",
+        "master_sha256": "ab3114cd5122b28eda697b9a48eca76f5dda8556b9074f0e93f14d72742561ed",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Truck",
+            "title": "Truck",
+            "asked_for": "Lorry",
+            "revision": 1376757450,
+            "fetched_on": "2026-10-06",
+            "sha256": "d4c79dbc7cce0603cb97f2daacf3f953c15eca389d7bdcc55dca0f3fe254c55b"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Truck",
+            "title": "Truck",
+            "asked_for": "Lorry",
+            "revision": 11005723,
+            "fetched_on": "2026-10-06",
+            "sha256": "3c8f62cef1eb008c422b0112db9d4c577c81f755972b16da73ea0454b7d1d8b6"
+          }
+        ],
+        "facts": "tools/research/out/facts/lorry.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A truck (North American and Australian English) or lorry (British English) is a motor vehicle designed to transport freight, carry specialized payloads, or perform other utilitarian work."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A truck (or lorry in British English) is a motor vehicle used to transport cargo, goods, materials, or troops."
+          },
+          "where_it_travels": {
+            "basis": "judged, not sourced",
+            "why": "A truck is a motor vehicle that carries goods on roads, as when the source says the road spreads the truck's weight."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Lorry",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "metro_train": {
+      "name": "Metro train",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "rails"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/rails"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "rails",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_1_01_c3",
+        "game_file": "Assets/pictures/metro_train.webp",
+        "game_sha256": "38194ac746333a4d56b8c3f753b417d30712042741b5c214e1d826250d747b58",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c3.png",
+        "master_sha256": "d94a2da4da63dc5a1ed210f1bdcd9bfdd30df4f0b256c39da5b1d7f7a4c0d7e1",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Rapid_transit",
+            "title": "Rapid transit",
+            "asked_for": "Metro train",
+            "revision": 1375969337,
+            "fetched_on": "2026-10-06",
+            "sha256": "ebce62f2c4e96e1bad57c7306c9b112008fb11fc8b62511b7b216b1f57925531"
+          }
+        ],
+        "facts": "tools/research/out/facts/metro_train.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Rapid transit, mass rapid transit (MRT) or rail rapid transit (RRT) and commonly referred to as metro, is a type of high-capacity public transport that is generally built in urban areas."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Rapid transit systems are usually electric railways that, unlike buses or trams, operate on an exclusive right-of-way, which cannot be accessed by pedestrians or other vehicles."
+          },
+          "where_it_travels": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Modern services on rapid transit systems are provided on designated lines between stations typically using electric multiple units on railway tracks."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Metro train",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "goods_train": {
+      "name": "Goods train",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "rails"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/rails"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "rails",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_1_01_c4",
+        "game_file": "Assets/pictures/goods_train.webp",
+        "game_sha256": "e3a629e4106000700bb412e47727e67964c1985862dd4fd560a4bdf9a5bf1394",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c4.png",
+        "master_sha256": "d689f1f835ec2e95306e4a18e42c791866acd8907958600599a2f78e3ca211d8",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Freight_train",
+            "title": "Freight train",
+            "asked_for": "Goods train",
+            "revision": 1360353485,
+            "fetched_on": "2026-10-06",
+            "sha256": "6bf12163c748d12d7a35e623a5f9406ae2b1f904b7033c698c2bd6f31524983f"
+          }
+        ],
+        "facts": "tools/research/out/facts/goods_train.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A freight train, goods train, or cargo train, is a railway train that is used to carry cargo, as opposed to passengers."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A freight train, goods train, or cargo train, is a railway train that is used to carry cargo, as opposed to passengers."
+          },
+          "where_it_travels": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A freight train, goods train, or cargo train, is a railway train that is used to carry cargo, as opposed to passengers."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Goods train",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "tram": {
+      "name": "Tram",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "rails"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/rails"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "rails",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_1_01_c5",
+        "game_file": "Assets/pictures/tram.webp",
+        "game_sha256": "9e5e85584c27f71cc14d2e42832d09e9a8fa60eba140b331d2587c3bd82eaaf9",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c5.png",
+        "master_sha256": "b1fba226faef8b43dc87bca273f6be800de9ca84d23f24da5c9229ddda3b8ce6",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Tram",
+            "title": "Tram",
+            "asked_for": "Tram",
+            "revision": 1378854758,
+            "fetched_on": "2026-10-06",
+            "sha256": "d6dd86010f612d105a3dcb8795111cbec2a897b7376b3e168883b7d34f7140ee"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Tram",
+            "title": "Tram",
+            "asked_for": "Tram",
+            "revision": 10127615,
+            "fetched_on": "2026-10-06",
+            "sha256": "7304c54a63798d2afd2dcd1dea4cbfea73be349946c1140747d1217a91cdad0c"
+          }
+        ],
+        "facts": "tools/research/out/facts/tram.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A tram, also known as a tramcar, streetcar or trolley is a form of urban rail transit in which vehicles, whether individual railcars or multiple-unit trains, run on tramway tracks laid on or parallel to public streets, or operate in segregated right-of-ways."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A tram (tramcar, streetcar or trolley) is a passenger vehicle that is like a light train."
+          },
+          "where_it_travels": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A tram, also known as a tramcar, streetcar or trolley is a form of urban rail transit in which vehicles, whether individual railcars or multiple-unit trains, run on tramway tracks laid on or parallel to public streets, or operate in segregated right-of-ways."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Tram",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "steam_engine": {
+      "name": "Steam engine",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "rails"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/rails"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "rails",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_1_01_c6",
+        "game_file": "Assets/pictures/steam_engine.webp",
+        "game_sha256": "d7b9ca123d4727698731efe5d1c8e34b72e6208aca819d45b021015b5d47c063",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c6.png",
+        "master_sha256": "67d81133da7299131910d36cc74ebab1e454f1c77f2aa466c1b037b0f96c2bf5",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Steam_engine",
+            "title": "Steam engine",
+            "asked_for": "Steam engine",
+            "revision": 1376844426,
+            "fetched_on": "2026-10-06",
+            "sha256": "734098cdaad95c88d117441efea1b03aa1c5a9f63540617a0521e9607c7e4713"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Steam_engine",
+            "title": "Steam engine",
+            "asked_for": "Steam engine",
+            "revision": 10553224,
+            "fetched_on": "2026-10-06",
+            "sha256": "80257a73d51d4969300d395d809e3214439a13c52cc8420f5c0be4a755abdd07"
+          }
+        ],
+        "facts": "tools/research/out/facts/steam_engine.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A steam engine is a heat engine that performs mechanical work using steam as its working fluid."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "Steam engines powered locomotives, steam boats, and other machines that move people and goods."
+          },
+          "where_it_travels": {
+            "basis": "judged, not sourced",
+            "why": "The sources say steam locomotives operated on the railways, so a steam engine travels on rails."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Steam engine",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "boat": {
+      "name": "Boat",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/water"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "water",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_1_01_c7",
+        "game_file": "Assets/pictures/boat.webp",
+        "game_sha256": "34b78f83eb81131f699ea46af0d4532077793318aff169345b98e3db3e2a6cdd",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c7.png",
+        "master_sha256": "3acbf0eddec1be06e2bb8016cfaf0496049ec1cc8983c79e1c05caf9ae140ca6",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Boat",
+            "title": "Boat",
+            "asked_for": "Boat",
+            "revision": 1358694481,
+            "fetched_on": "2026-10-06",
+            "sha256": "5f9138b513075a55971bbb9c507858e42055f518d6373112dbea40486fcaaa0a"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Boat",
+            "title": "Boat",
+            "asked_for": "Boat",
+            "revision": 10941471,
+            "fetched_on": "2026-10-06",
+            "sha256": "14fd7c187f5834cad6e1cdcd47550fcaeaef6d7a4959d5863ef192273d249f26"
+          }
+        ],
+        "facts": "tools/research/out/facts/boat.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A boat is a vehicle used to travel on water."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A boat is a vehicle used to travel on water."
+          },
+          "where_it_travels": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A boat is a vehicle used to travel on water."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Boat",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "ship": {
+      "name": "Ship",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/water"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "water",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_1_01_c8",
+        "game_file": "Assets/pictures/ship.webp",
+        "game_sha256": "68b09423b040c422a11a80fd6865399b882bc7b1a8d37acf8320e1115ef53e1f",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c8.png",
+        "master_sha256": "7aee479d136464ea9bcc1ff23613612d256de419f8c483259dc8efc6a9ae07fa",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Ship",
+            "title": "Ship",
+            "asked_for": "Ship",
+            "revision": 1376888020,
+            "fetched_on": "2026-10-06",
+            "sha256": "2cb8d902a10e54da56f7694f8c78594adc6127b1f6d1136cdae3e27fdda85e29"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Ship",
+            "title": "Ship",
+            "asked_for": "Ship",
+            "revision": 10942592,
+            "fetched_on": "2026-10-06",
+            "sha256": "a048a64693b6447fa56e9dcf5b6c05c4162b4d86d91e3151257c2867df380ece"
+          }
+        ],
+        "facts": "tools/research/out/facts/ship.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A ship is a large vehicle used to travel on water."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A ship is a large vehicle used to travel on water."
+          },
+          "where_it_travels": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A ship is a large vehicle used to travel on water."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Ship",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "ferry": {
+      "name": "Ferry",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/water"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "water",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_1_01_c9",
+        "game_file": "Assets/pictures/ferry.webp",
+        "game_sha256": "836571693221fc25003f94d729ed1aeb1f836618ee0f5d76920538dbabb5917f",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_1_01_c9.png",
+        "master_sha256": "f16ff109605be065023792e0c8445404862203da3a6b7cc17de3205175df0526",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Ferry",
+            "title": "Ferry",
+            "asked_for": "Ferry",
+            "revision": 1377471781,
+            "fetched_on": "2026-10-06",
+            "sha256": "a3320ad04958528da818fa0d9e1183dea406a5b369a1dc060d59c907ed65ea3d"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Ferry",
+            "title": "Ferry",
+            "asked_for": "Ferry",
+            "revision": 10727028,
+            "fetched_on": "2026-10-06",
+            "sha256": "f755a5eedc032b104a0d943b2dd519cc59d6bb77a473b4ebe8f5f1f0d10b6b76"
+          }
+        ],
+        "facts": "tools/research/out/facts/ferry.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A ferry is a boat or ship that transports passengers, and occasionally vehicles and cargo, across a body of water."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Ferry is a boat or ship that is used to take people, vehicles or goods across large bodies of water, such as seas, lakes, and rivers."
+          },
+          "where_it_travels": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Ferry is a boat or ship that is used to take people, vehicles or goods across large bodies of water, such as seas, lakes, and rivers."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Ferry",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "canoe": {
+      "name": "Canoe",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/water"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "water",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_2_01_c1",
+        "game_file": "Assets/pictures/canoe.webp",
+        "game_sha256": "639db0ba2ae49a6a90ea8c843bdf6fd2891b3e6c7eb28e590ea6682e7373c3c8",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c1.png",
+        "master_sha256": "e8ae16070c523ef2a8f3dc9e3cba0bc6a88652e57e58a38fe10b282b84b0b62f",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Canoe",
+            "title": "Canoe",
+            "asked_for": "Canoe",
+            "revision": 1376203319,
+            "fetched_on": "2026-10-06",
+            "sha256": "c0443c497dd452b4a3051c0a3c778dac0ff7ece968d7fe35f6c601c894bdf6ed"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Canoe",
+            "title": "Canoe",
+            "asked_for": "Canoe",
+            "revision": 10471017,
+            "fetched_on": "2026-10-06",
+            "sha256": "506ccd95f70fd53980644d290b726344f2551dca8bfbe1fa17d8e07954a2b02e"
+          }
+        ],
+        "facts": "tools/research/out/facts/canoe.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A canoe is a lightweight, narrow watercraft, typically pointed at both ends and open on top, propelled by one or more seated or kneeling paddlers facing the direction of travel and using paddles."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A canoe is a small boat, usually powered by paddling, but sometimes sailed."
+          },
+          "where_it_travels": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A canoe is a small boat, usually powered by paddling, but sometimes sailed."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Canoe",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "houseboat": {
+      "name": "Houseboat",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/water"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "water",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_2_01_c2",
+        "game_file": "Assets/pictures/houseboat.webp",
+        "game_sha256": "3320199433069a558e6b5ee3ada843cb9347ab664f9e2b2159f0213dbd390949",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c2.png",
+        "master_sha256": "d4db98591c793f18334482875ef21d3ae07b4009d4d048346e135c086ac08ce3",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Houseboat",
+            "title": "Houseboat",
+            "asked_for": "Houseboat",
+            "revision": 1370193712,
+            "fetched_on": "2026-10-06",
+            "sha256": "10203481d158776192a3b7bf1e1195f8968029270b616558b05b404736eaf713"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Houseboat",
+            "title": "Houseboat",
+            "asked_for": "Houseboat",
+            "revision": 9247100,
+            "fetched_on": "2026-10-06",
+            "sha256": "cf432a449be1b86ae9bee8909cd390926a5a4feb7ffe8342d35d35684639dd1c"
+          }
+        ],
+        "facts": "tools/research/out/facts/houseboat.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A houseboat is a boat that has been designed or modified to be used primarily for regular dwelling."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A houseboat is a boat that has been designed or modified to be used primarily for regular dwelling."
+          },
+          "where_it_travels": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Houseboats are largely found on small inland rivers, lakes, and streams, and in coastal harbours, especially where there is good fishing, in many countries."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Houseboat",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "aeroplane": {
+      "name": "Aeroplane",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "air"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/air"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "air",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_2_01_c3",
+        "game_file": "Assets/pictures/aeroplane.webp",
+        "game_sha256": "b79fa1642ea0f4a5f5d60fb43aa86b5fb113ca43828a9d9f848d242dbc48039b",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c3.png",
+        "master_sha256": "28ad15281b5548731946eea8ca88bf734d0e98ae89729f033c93d9c63b91a477",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Airplane",
+            "title": "Airplane",
+            "asked_for": "Aeroplane",
+            "revision": 1370047140,
+            "fetched_on": "2026-10-06",
+            "sha256": "0db60ff72db0fce849777159f123bfbb15d387f757ce3e3c23b03cbc3539fc15"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Airplane",
+            "title": "Airplane",
+            "asked_for": "Aeroplane",
+            "revision": 10926601,
+            "fetched_on": "2026-10-06",
+            "sha256": "2a29eb7b6a7f571084d1bab6ac3727438bbe17afe992264182313e16afb00081"
+          }
+        ],
+        "facts": "tools/research/out/facts/aeroplane.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "An airplane (American English), or aeroplane (Commonwealth English), also plane, is a fixed-wing aircraft that is propelled forward by thrust from a jet engine, propeller, or rocket engine."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "Airplanes are used to carry people and goods from place to place, so they are vehicles."
+          },
+          "where_it_travels": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Airplanes fly between many cities all over the world, carrying people and cargo."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Aeroplane",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "helicopter": {
+      "name": "Helicopter",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "air"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/air"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "air",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_2_01_c4",
+        "game_file": "Assets/pictures/helicopter.webp",
+        "game_sha256": "53351fa188b62384d48ca4759e07c788c6f85b2886e6da05aa018f6dc83d4cb7",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c4.png",
+        "master_sha256": "2fa7a35e95d5302812df4994bdf2fd13d9edde68a673093345e8d30d3f60ec33",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Helicopter",
+            "title": "Helicopter",
+            "asked_for": "Helicopter",
+            "revision": 1373885559,
+            "fetched_on": "2026-10-06",
+            "sha256": "884be3e14f75304254ae1b2538c55c9236f2b7a2ca4149e9df3582e3ed65bf47"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Helicopter",
+            "title": "Helicopter",
+            "asked_for": "Helicopter",
+            "revision": 9826512,
+            "fetched_on": "2026-10-06",
+            "sha256": "9fde48099f863a7ca9aeaf5040ef13dc9c1a863943c622f9c114c7ba32ab6a0c"
+          }
+        ],
+        "facts": "tools/research/out/facts/helicopter.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A helicopter (also often used: chopper or heli) is a kind of flying machine or aircraft."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A helicopter (also often used: chopper or heli) is a kind of flying machine or aircraft."
+          },
+          "where_it_travels": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A helicopter flies differently from an airplane."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Helicopter",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "rocket": {
+      "name": "Rocket",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "air"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/air"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "air",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_2_01_c5",
+        "game_file": "Assets/pictures/rocket.webp",
+        "game_sha256": "0ba262d75fa1080e81c91ad7f958d3810826b57ee1918ffec6f18e5387aa2ad8",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c5.png",
+        "master_sha256": "99476494da5d26e313bc53dcc617cdf6e762a5e749852940556e0a74e3bf53a1",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Rocket",
+            "title": "Rocket",
+            "asked_for": "Rocket",
+            "revision": 1378862557,
+            "fetched_on": "2026-10-06",
+            "sha256": "232fbc649db674e4b9651110a6d08f98a74bec0468ad295d8cbd5e7344fd96f1"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Rocket",
+            "title": "Rocket",
+            "asked_for": "Rocket",
+            "revision": 10261395,
+            "fetched_on": "2026-10-06",
+            "sha256": "68e8c8582e2e668eaabcf3ae353906d466830202a01279a74809becaa7609ac5"
+          }
+        ],
+        "facts": "tools/research/out/facts/rocket.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A rocket may be a missile, spacecraft, aircraft or other vehicle which is pushed by a rocket engine."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A rocket may be a missile, spacecraft, aircraft or other vehicle which is pushed by a rocket engine."
+          },
+          "where_it_travels": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "consequently a rocket can fly in the vacuum of space, and indeed rocket engines operate more efficiently outside the atmosphere."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Rocket",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "hot_air_balloon": {
+      "name": "Hot-air balloon",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "air"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/vehicle",
+          "made_by_people/vehicle/air"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "vehicle",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/vehicle",
+            "sorted_by": "where_it_travels",
+            "group": "air",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_2_01_c6",
+        "game_file": "Assets/pictures/hot_air_balloon.webp",
+        "game_sha256": "807a52bde62726949acd5b2a4a1ebf500411740257567cf7b1b1f68bf170760f",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c6.png",
+        "master_sha256": "c79668865424e3da4e5c057e648ae730d5a46e33db25d4c50322fb487e3dac74",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Hot_air_balloon",
+            "title": "Hot air balloon",
+            "asked_for": "Hot-air balloon",
+            "revision": 1378553923,
+            "fetched_on": "2026-10-06",
+            "sha256": "b203aea66d5658a5567c39167278bfc8e7955b5b26d1d9dd21815891a6b65d4b"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Hot_air_balloon",
+            "title": "Hot air balloon",
+            "asked_for": "Hot-air balloon",
+            "revision": 10493442,
+            "fetched_on": "2026-10-06",
+            "sha256": "40662b096b3a2f765d2de445887adbc63c533a8a1b17289a3b4856d64f46f9a1"
+          }
+        ],
+        "facts": "tools/research/out/facts/hot_air_balloon.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A hot air balloon is a lighter-than-air aircraft consisting of a bag, called an envelope, which contains heated air."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A hot air balloon is a type of aircraft."
+          },
+          "where_it_travels": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Hot air balloons that can be propelled through the air rather than simply drifting with the wind are known as thermal airships."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Hot-air balloon",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "sofa": {
+      "name": "Sofa",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "furniture"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/household",
+          "made_by_people/household/furniture"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "furniture",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_2_01_c7",
+        "game_file": "Assets/pictures/sofa.webp",
+        "game_sha256": "e0591445fc8a23a363c676a870d9da098c59aaa5ac23be1c9fcd0fc58e608996",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c7.png",
+        "master_sha256": "11ab18109298a03125ff686a920af073cfaa8346b2ccb91a934679d418fdef62",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Couch",
+            "title": "Couch",
+            "asked_for": "Sofa",
+            "revision": 1364341561,
+            "fetched_on": "2026-10-06",
+            "sha256": "7bd859545f487f083b0000e06f73b458edff4624721db459c01a96a511aac9f3"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Couch",
+            "title": "Couch",
+            "asked_for": "Sofa",
+            "revision": 10369189,
+            "fetched_on": "2026-10-06",
+            "sha256": "3932485e7decd21a893a64b04a11e31a4a55d803decf894833e29dad225afbd8"
+          }
+        ],
+        "facts": "tools/research/out/facts/sofa.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "Both sources describe a couch/sofa as a piece of furniture, which is something people make."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "In homes, couches are normally put in the family room, living room, den, or lounge."
+          },
+          "kind_of_house_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A couch, also known as a sofa, settee, chesterfield, or davenport, is a cushioned piece of furniture that can seat multiple people."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Sofa",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "cupboard": {
+      "name": "Cupboard",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "furniture"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/household",
+          "made_by_people/household/furniture"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "furniture",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_2_01_c8",
+        "game_file": "Assets/pictures/cupboard.webp",
+        "game_sha256": "fc806b1d2f54811f305bb5e6df8320b474c5b37f06a58e97661a2819419937b9",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c8.png",
+        "master_sha256": "e1128c6849a62cf47a223be6730fb2d8dcf29d2d4c2357ac5e913a4b5e1f5849",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Cupboard",
+            "title": "Cupboard",
+            "asked_for": "Cupboard",
+            "revision": 1366066879,
+            "fetched_on": "2026-10-06",
+            "sha256": "23a7895e95148df3723c590eec60cb7867e5b6d03d737dacdf7f5fe2a9f0c19f"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Cupboard",
+            "title": "Cupboard",
+            "asked_for": "Cupboard",
+            "revision": 10367743,
+            "fetched_on": "2026-10-06",
+            "sha256": "1d024ca2bec65d04c2a84e2dafbfcf75d4eff18aa7330d31d706d57064bc8d8b"
+          }
+        ],
+        "facts": "tools/research/out/facts/cupboard.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A cupboard is a piece of furniture for enclosing dishware or grocery items that are stored in a home."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A cupboard, also known as a cabinet, is furniture used for storage."
+          },
+          "kind_of_house_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A cupboard, also known as a cabinet, is furniture used for storage."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Cupboard",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "bucket": {
+      "name": "Bucket",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/household",
+          "made_by_people/household/cleaning"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "cleaning",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_2_01_c9",
+        "game_file": "Assets/pictures/bucket.webp",
+        "game_sha256": "a1190636b00a776092bfb7bb66f2085b1897cfb5c2c0689552d980570cddac1b",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_2_01_c9.png",
+        "master_sha256": "c49c5f6ad15066e2cf027f7b28942f0941f05a76ee4b099063c7fe2964d23f00",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Bucket",
+            "title": "Bucket",
+            "asked_for": "Bucket",
+            "revision": 1376102111,
+            "fetched_on": "2026-10-06",
+            "sha256": "7a0934d0d686bd9aa9fe107264ac4a24b7ab732cb5ba3c690f17a0462797d010"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Bucket",
+            "title": "Bucket",
+            "asked_for": "Bucket",
+            "revision": 10440845,
+            "fetched_on": "2026-10-06",
+            "sha256": "86ea55deab2863833f6ce4b2257653071f881cd3335de6236f76925197ba37a9"
+          }
+        ],
+        "facts": "tools/research/out/facts/bucket.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A bucket is a container with a wide open top and a handle that is mainly used for carrying liquids."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "A bucket is a container used for carrying liquids and solids, which is a common household item."
+          },
+          "kind_of_house_thing": {
+            "basis": "judged, not sourced",
+            "why": "A bucket is a container used for carrying water and washing or cleaning around the house."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Bucket",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "soap": {
+      "name": "Soap",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/household",
+          "made_by_people/household/cleaning"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "cleaning",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_3_01_c1",
+        "game_file": "Assets/pictures/soap.webp",
+        "game_sha256": "5a7f40a4d75194262bcfca3c1a436eb8dcda69fa928c366c892be90c7e4aa816",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c1.png",
+        "master_sha256": "779adf541b11d82dd1596ef6667e5e1413626ec64aeca0f12ffc2c96c6bb1e3c",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Soap",
+            "title": "Soap",
+            "asked_for": "Soap",
+            "revision": 1376458225,
+            "fetched_on": "2026-10-06",
+            "sha256": "e689ce06a3c994ec94485f50378d820db4f205268bb6d5abc23acacf7737d3a6"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Soap",
+            "title": "Soap",
+            "asked_for": "Soap",
+            "revision": 10935530,
+            "fetched_on": "2026-10-06",
+            "sha256": "39503b99c5977f5d35cc2729d6cc98d6173f832a14e2673764de241cc9ed92ab"
+          }
+        ],
+        "facts": "tools/research/out/facts/soap.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Soaps are often produced by mixing fats and oils with a base."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "In a domestic setting, soaps, specifically \"toilet soaps\", are surfactants typically used for washing, bathing, and other types of housekeeping."
+          },
+          "kind_of_house_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "In a domestic setting, soaps, specifically \"toilet soaps\", are surfactants typically used for washing, bathing, and other types of housekeeping."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Soap",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "towel": {
+      "name": "Towel",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/household",
+          "made_by_people/household/cleaning"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "cleaning",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_3_01_c2",
+        "game_file": "Assets/pictures/towel.webp",
+        "game_sha256": "343f8672d25b4662d0ecda06746c15980283bd7477da55d18d04245b98f117ed",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c2.png",
+        "master_sha256": "dd4a5f0fb882688a1487c044f9ccaa8ec2088745cc32e9bac6bd34b1149f462b",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Towel",
+            "title": "Towel",
+            "asked_for": "Towel",
+            "revision": 1373877171,
+            "fetched_on": "2026-10-06",
+            "sha256": "ccd45f99a1b8c372cca7b7d1eba76612857228136b663901313d1b4522b6c61c"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Towel",
+            "title": "Towel",
+            "asked_for": "Towel",
+            "revision": 9498167,
+            "fetched_on": "2026-10-06",
+            "sha256": "76eb4065b53ede8e9b399bb47c45dadecf061992f359ed11761e1d091f4cd335"
+          }
+        ],
+        "facts": "tools/research/out/facts/towel.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A towel is a piece of absorbent cloth, or paper, used for drying or wiping a surface."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "In households, various types of towels are used for a variety of functions, such as hand towels, bath towels, and kitchen towels."
+          },
+          "kind_of_house_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "They are also used for such duties such as wiping, cleaning, and drying."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Towel",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "dustpan": {
+      "name": "Dustpan",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/household",
+          "made_by_people/household/cleaning"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "cleaning",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_3_01_c3",
+        "game_file": "Assets/pictures/dustpan.webp",
+        "game_sha256": "39a3628405fcdd798aa25efefb6191dfed187316d2c6dd8773c9bfab073ff389",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c3.png",
+        "master_sha256": "e7bc070d7e8519c8c635ce8142a9653bdcff7edb117a08c0ba5a00f9eff53695",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Dustpan",
+            "title": "Dustpan",
+            "asked_for": "Dustpan",
+            "revision": 1316239407,
+            "fetched_on": "2026-10-06",
+            "sha256": "38962c3bdc2858e3d6ba9888ca78c08b9eacf32d9b0d57fde67fe23cf54abb6f"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Dustpan",
+            "title": "Dustpan",
+            "asked_for": "Dustpan",
+            "revision": 10026599,
+            "fetched_on": "2026-10-06",
+            "sha256": "09a92e52ccfe14ffe17b2485a8486880d618290f552a26e4ee8f02eb7a348807"
+          }
+        ],
+        "facts": "tools/research/out/facts/dustpan.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A dustpan is a cleaning utensil."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Though often hand-held for home use, industrial and commercial enterprises use a hinged variety on the end of a long handle to allow the user to stand instead of stoop while using it."
+          },
+          "kind_of_house_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A dustpan is a cleaning utensil."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Dustpan",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "scrub_brush": {
+      "name": "Scrub brush",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.8,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/household",
+          "made_by_people/household/cleaning"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "cleaning",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_3_01_c4",
+        "game_file": "Assets/pictures/scrub_brush.webp",
+        "game_sha256": "cb041cec02907a41b4ba14ca5fa772507ccd513b53ab013cd1f8e2179ff6a5e2",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c4.png",
+        "master_sha256": "d252f39799d3db7e03143f644e5425b56d37fb1204bb09de6d8bfad797babb21",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Tawashi",
+            "title": "Tawashi",
+            "asked_for": "Tawashi",
+            "revision": 1367360521,
+            "fetched_on": "2026-10-06",
+            "sha256": "a525cf1f73e1ce8786d387ba085bcc95d97900e438b91d0d91d8e66211120a0e"
+          }
+        ],
+        "facts": "tools/research/out/facts/scrub_brush.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A tawashi (たわし or 束子; lit. a bundle) is a scrubbing brush for wet cleaning, of a style that is popular in Japan."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "A tawashi is a scrubbing brush used for cleaning in the home, so it is a household thing."
+          },
+          "kind_of_house_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A tawashi (たわし or 束子; lit. a bundle) is a scrubbing brush for wet cleaning, of a style that is popular in Japan."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Scrub brush",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "fan": {
+      "name": "Fan",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "electric"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/household",
+          "made_by_people/household/electric"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "electric",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_3_01_c5",
+        "game_file": "Assets/pictures/fan.webp",
+        "game_sha256": "9b1d48a03149c409bf3b6d869df75a2b16a71e71709b885da718dd0265f78209",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c5.png",
+        "master_sha256": "76a309d8379c908285f5c2ca3a3fbee34d40c81ca61927bf4eae5bdf6d9b7835",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Fan_(machine)",
+            "title": "Fan (machine)",
+            "asked_for": "Fan (machine)",
+            "revision": 1378061047,
+            "fetched_on": "2026-10-06",
+            "sha256": "ae158a871ae6103f0f12a82ab15b7a3400447b1297335344a7d8a525196d9caa"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Fan_(machine)",
+            "title": "Fan (machine)",
+            "asked_for": "Fan (machine)",
+            "revision": 10952775,
+            "fetched_on": "2026-10-06",
+            "sha256": "8df6e902ae5057a3a10c674c901bbb60c76afbf59e51144df41adab009a726d4"
+          }
+        ],
+        "facts": "tools/research/out/facts/fan.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A fan is a powered machine that creates airflow."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Typical applications include climate control and personal thermal comfort (e.g., an electric table or floor fan), vehicle engine cooling systems (e.g., in front of a radiator), machinery cooling systems (e.g., inside computers and audio power amplifiers), ventilation, fume extraction, winnowing (e.g., separating chaff from cereal grains), removing dust (e.g. sucking as in a vacuum cleaner), drying (usually in combination with a heat source) and providing draft for a fire."
+          },
+          "kind_of_house_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Most fans are powered by electric motors, but other sources of power may be used, including hydraulic motors, handcranks, and internal combustion engines."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Fan",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "television": {
+      "name": "Television",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "electric"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/household",
+          "made_by_people/household/electric"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "electric",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_3_01_c6",
+        "game_file": "Assets/pictures/television.webp",
+        "game_sha256": "53837335ae06d5bfb975c325c8140ff960eceb28ed8017226924eaf837c15c10",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c6.png",
+        "master_sha256": "cf90ad6c18ddfc9698a5a0417db29700b12e29aeb9a324fb9a51650753055e98",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Television",
+            "title": "Television",
+            "asked_for": "Television",
+            "revision": 1378820924,
+            "fetched_on": "2026-10-06",
+            "sha256": "8db50bec1793b91634228eeb471cfb413ac0cb69621d0215575f7870641d50bf"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Television",
+            "title": "Television",
+            "asked_for": "Television",
+            "revision": 10997588,
+            "fetched_on": "2026-10-06",
+            "sha256": "56d5f35f180679f697b925d2627d9b16f32c9926511fee09744c20ed9afdae18"
+          }
+        ],
+        "facts": "tools/research/out/facts/television.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Television (TV) is a telecommunication medium for transmitting moving images and sound."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "television sets became commonplace in homes, businesses, and institutions"
+          },
+          "kind_of_house_thing": {
+            "basis": "judged, not sourced",
+            "why": "A television is a machine with a screen that receives signals and runs on electricity, so a parent would call it an electric thing in the house."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Television",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "light_bulb": {
+      "name": "Light bulb",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "electric"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/household",
+          "made_by_people/household/electric"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "electric",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_3_01_c7",
+        "game_file": "Assets/pictures/light_bulb.webp",
+        "game_sha256": "f152ad4c4300251e7b41005e7f738f2edb1a218e6d96ace2298bb0d3d8323e4c",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c7.png",
+        "master_sha256": "ac5d66dc9a64a88a9a2799a35580d533d15fb942b1aac99c04a3d43213fda373",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Electric_light",
+            "title": "Electric light",
+            "asked_for": "Light bulb",
+            "revision": 1377806390,
+            "fetched_on": "2026-10-06",
+            "sha256": "2aa80110dc18a72a893e7929179bd9a4065e9886e8c7bf5215019aad46e8e78b"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Light_bulb",
+            "title": "Light bulb",
+            "asked_for": "Light bulb",
+            "revision": 11003777,
+            "fetched_on": "2026-10-06",
+            "sha256": "68a932511bf4d3443772e935cbf1b9f5d9fb7521b34e8fabaf04c5742b154a61"
+          }
+        ],
+        "facts": "tools/research/out/facts/light_bulb.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "An electric light, lamp, or light bulb is an electrical device that produces light from electricity."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "A light bulb is used to light a dark space in homes, so it is a household thing."
+          },
+          "kind_of_house_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "An electric light, lamp, or light bulb is an electrical device that produces light from electricity."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Light bulb",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "fridge": {
+      "name": "Fridge",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "electric"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/household",
+          "made_by_people/household/electric"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "electric",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_3_01_c8",
+        "game_file": "Assets/pictures/fridge.webp",
+        "game_sha256": "b55352e9ac569cd44482bb74d270cc7b7e962b87fab476feb134e8215a056d97",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c8.png",
+        "master_sha256": "fdc67e09feae75ef5c5dd3004209045a23b57e53e5db3b925ccf92081f0aaba0",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Refrigerator",
+            "title": "Refrigerator",
+            "asked_for": "Fridge",
+            "revision": 1370339781,
+            "fetched_on": "2026-10-06",
+            "sha256": "509d9c75efd86e8cd15e14fe3041e34c770aeec02994f5b992d1bda7eb4db3d1"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Refrigerator",
+            "title": "Refrigerator",
+            "asked_for": "Fridge",
+            "revision": 10462629,
+            "fetched_on": "2026-10-06",
+            "sha256": "036ace970018b029bed7849b8c5d3db9cc5edf4d3e7befb131529dbc27c6cbd6"
+          }
+        ],
+        "facts": "tools/research/out/facts/fridge.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A refrigerator is a machine used for keeping things cold."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A refrigerator, commonly shortened to fridge, is a commercial and home appliance consisting of a thermally insulated compartment and a heat pump (mechanical, electronic, or chemical) that transfers heat from its inside to its external environment so that its inside is cooled to a temperature below the ambient temperature of the room."
+          },
+          "kind_of_house_thing": {
+            "basis": "judged, not sourced",
+            "why": "A refrigerator is a household appliance that runs on electricity to keep food cold."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Fridge",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "electric_iron": {
+      "name": "Electric iron",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "electric"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/household",
+          "made_by_people/household/electric"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "household",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/household",
+            "sorted_by": "kind_of_house_thing",
+            "group": "electric",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_10_06_10_3_01_c9",
+        "game_file": "Assets/pictures/electric_iron.webp",
+        "game_sha256": "72abeadcee48db2f1a83b9d2f11bda20bdb782c57bcce2f483cd7154d1c492e8",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_06_10_3_01_c9.png",
+        "master_sha256": "ce5aa5217582f5f2b27aa96c656970cc6e4586a106ba0b306286af3895a59ce0",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-06",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Clothes_iron",
+            "title": "Clothes iron",
+            "asked_for": "Electric iron",
+            "revision": 1376077292,
+            "fetched_on": "2026-10-06",
+            "sha256": "8bce0c6176b828b201c5313e4879f0b3ef3ae5e14e18c4e431cb80e3fbeaf353"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Clothes_iron",
+            "title": "Clothes iron",
+            "asked_for": "Electric iron",
+            "revision": 9738861,
+            "fetched_on": "2026-10-06",
+            "sha256": "19121a0390fbc1f4bd0448ee55fd8636188c2bef5d585c441a5c6b3f2107158a"
+          }
+        ],
+        "facts": "tools/research/out/facts/electric_iron.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe it as a small appliance with a handle and flat surface that people make and use to press clothes."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A clothes iron, also known as a flatiron, smoothing iron, dry iron, steam iron, and simply iron, is a small appliance that, when heated, is used to press clothes to remove wrinkles and unwanted creases."
+          },
+          "kind_of_house_thing": {
+            "basis": "judged, not sourced",
+            "why": "The sources say electricity makes the flat surface hot, so it is a household thing that runs on electricity."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Electric iron",
+        "checked_by_ear": false,
+        "clip": null
+      }
+    },
+    "broom": {
+      "name": "Broom",
+      "status": "waiting for the owner",
+      "status_why": [
+        "uncertain: the approved proposal lists it in this group",
+        "the pages and the judgements point to 'Tools', not 'Things in the house'",
+        "it could not be settled that it belongs in 'Things to clean with'"
+      ],
+      "held_from": "job:2026-10-06-10",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "made_by_people",
+          "made_by_people/household",
+          "made_by_people/household/cleaning"
+        ]
+      }
+    },
+    "mop": {
+      "name": "Mop",
+      "status": "waiting for the owner",
+      "status_why": [
+        "uncertain: the approved proposal lists it in this group",
+        "the pages and the judgements point to 'Tools', not 'Things in the house'",
+        "it could not be settled that it belongs in 'Things to clean with'"
+      ],
+      "held_from": "job:2026-10-06-10",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "made_by_people",
+          "made_by_people/household",
+          "made_by_people/household/cleaning"
+        ]
+      }
+    },
+    "sponge": {
+      "name": "Sponge",
+      "status": "waiting for the owner",
+      "status_why": [
+        "the pages and the judgements point to 'Animals', not 'Things people make'",
+        "it could not be settled that it belongs in 'Things in the house'",
+        "it could not be settled that it belongs in 'Things to clean with'",
+        "kind_of_animal: uncertain: two judgements disagree: 'Fish' and 'Mammals'"
+      ],
+      "held_from": "job:2026-10-06-10",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "extinct": false,
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "made_by_people",
+          "made_by_people/household",
+          "made_by_people/household/cleaning"
         ]
       }
     }
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 157,
-      "waiting for the owner": 15,
+      "in the game": 184,
+      "waiting for the owner": 18,
       "kept for later": 5,
       "excluded": 3,
       "taken out of the game": 9
@@ -14988,13 +17878,16 @@
       "animal",
       "animal/dinosaur",
       "plant",
+      "plant/vegetable",
       "nature_not_alive",
-      "made_by_people"
+      "made_by_people",
+      "made_by_people/vehicle",
+      "made_by_people/household"
     ],
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 157,
+        "things": 184,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
@@ -15006,7 +17899,7 @@
           "plant": {
             "label": "Plants",
             "things": 31,
-            "with_picture": 30
+            "with_picture": 31
           },
           "nature_not_alive": {
             "label": "Things in nature that are not alive",
@@ -15015,8 +17908,8 @@
           },
           "made_by_people": {
             "label": "Things people make",
-            "things": 30,
-            "with_picture": 30
+            "things": 57,
+            "with_picture": 57
           }
         },
         "open_by_its_things": true,
@@ -15239,7 +18132,7 @@
           "vegetable": {
             "label": "Vegetable plants",
             "things": 18,
-            "with_picture": 17
+            "with_picture": 18
           }
         },
         "open_by_its_things": true,
@@ -15300,14 +18193,12 @@
           "seeds_or_pods": {
             "label": "The seeds or pods",
             "things": 4,
-            "with_picture": 3
+            "with_picture": 4
           }
         },
         "open_by_its_things": true,
-        "can_open_now": false,
-        "needs": [
-          "pictures for 1 more in 'The seeds or pods'"
-        ]
+        "can_open_now": true,
+        "needs": []
       },
       "plant/vegetable/fruit": {
         "label": "The fruit",
@@ -15466,14 +18357,14 @@
       },
       "made_by_people": {
         "label": "Things people make",
-        "things": 30,
+        "things": 57,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_made_thing",
         "groups": {
           "vehicle": {
             "label": "Vehicles",
-            "things": 4,
-            "with_picture": 4
+            "things": 19,
+            "with_picture": 19
           },
           "toy": {
             "label": "Toys",
@@ -15482,8 +18373,8 @@
           },
           "household": {
             "label": "Things in the house",
-            "things": 7,
-            "with_picture": 7
+            "things": 19,
+            "with_picture": 19
           },
           "tool": {
             "label": "Tools",
@@ -15502,28 +18393,73 @@
       },
       "made_by_people/vehicle": {
         "label": "Vehicles",
-        "things": 4,
+        "things": 19,
         "steps_from_seed": 2,
         "sorted_by": "where_it_travels",
         "groups": {
           "road": {
             "label": "On the road",
-            "things": 3,
-            "with_picture": 3
+            "things": 5,
+            "with_picture": 5
           },
           "rails": {
             "label": "On rails",
-            "things": 1,
-            "with_picture": 1
+            "things": 5,
+            "with_picture": 5
+          },
+          "water": {
+            "label": "On water",
+            "things": 5,
+            "with_picture": 5
+          },
+          "air": {
+            "label": "In the air",
+            "things": 4,
+            "with_picture": 4
           }
         },
+        "open_by_its_things": true,
+        "can_open_now": true,
+        "needs": []
+      },
+      "made_by_people/vehicle/road": {
+        "label": "On the road",
+        "things": 5,
+        "steps_from_seed": 3,
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "1 more thing(s) in 'On the road'",
-          "3 more thing(s) in 'On rails'",
-          "4 more thing(s) in 'On water'",
-          "4 more thing(s) in 'In the air'"
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+        ]
+      },
+      "made_by_people/vehicle/rails": {
+        "label": "On rails",
+        "things": 5,
+        "steps_from_seed": 3,
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+        ]
+      },
+      "made_by_people/vehicle/water": {
+        "label": "On water",
+        "things": 5,
+        "steps_from_seed": 3,
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+        ]
+      },
+      "made_by_people/vehicle/air": {
+        "label": "In the air",
+        "things": 4,
+        "steps_from_seed": 3,
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
         ]
       },
       "made_by_people/toy": {
@@ -15544,27 +18480,87 @@
       },
       "made_by_people/household": {
         "label": "Things in the house",
-        "things": 7,
+        "things": 19,
         "steps_from_seed": 2,
         "sorted_by": "kind_of_house_thing",
         "groups": {
           "furniture": {
             "label": "Furniture",
-            "things": 3,
-            "with_picture": 3
+            "things": 5,
+            "with_picture": 5
           },
           "eating": {
             "label": "Things to eat and drink with",
             "things": 4,
             "with_picture": 4
+          },
+          "cleaning": {
+            "label": "Things to clean with",
+            "things": 5,
+            "with_picture": 5
+          },
+          "electric": {
+            "label": "Things that run on electricity",
+            "things": 5,
+            "with_picture": 5
           }
         },
+        "open_by_its_things": true,
+        "can_open_now": true,
+        "needs": []
+      },
+      "made_by_people/household/furniture": {
+        "label": "Furniture",
+        "things": 5,
+        "steps_from_seed": 3,
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "1 more thing(s) in 'Furniture'",
-          "4 more thing(s) in 'Things to clean with'",
-          "4 more thing(s) in 'Things that run on electricity'"
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+        ]
+      },
+      "made_by_people/household/eating": {
+        "label": "Things to eat and drink with",
+        "things": 4,
+        "steps_from_seed": 3,
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
+        ]
+      },
+      "made_by_people/household/cleaning": {
+        "label": "Things to clean with",
+        "things": 5,
+        "steps_from_seed": 3,
+        "could_be_filled_by": [
+          {
+            "name": "Broom",
+            "status": "waiting for the owner"
+          },
+          {
+            "name": "Mop",
+            "status": "waiting for the owner"
+          },
+          {
+            "name": "Sponge",
+            "status": "waiting for the owner"
+          }
+        ],
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+        ]
+      },
+      "made_by_people/household/electric": {
+        "label": "Things that run on electricity",
+        "things": 5,
+        "steps_from_seed": 3,
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
         ]
       },
       "made_by_people/tool": {
@@ -15600,7 +18596,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "fill.py",
+    "by": "job run 2026-10-06-10",
     "on": "2026-10-06"
   }
 }

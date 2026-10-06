@@ -1,0 +1,49 @@
+{
+  "name": "Hot-air balloon",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A hot air balloon is a lighter-than-air aircraft consisting of a bag, called an envelope, which contains heated air.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "vehicle",
+      "quote": "A hot air balloon is a type of aircraft.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "where_it_travels": {
+      "value": "air",
+      "quote": "Hot air balloons that can be propelled through the air rather than simply drifting with the wind are known as thermal airships.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Hot_air_balloon",
+      "title": "Hot air balloon",
+      "asked_for": "Hot-air balloon",
+      "revision": 1378553923,
+      "fetched_on": "2026-10-06",
+      "sha256": "b203aea66d5658a5567c39167278bfc8e7955b5b26d1d9dd21815891a6b65d4b"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Hot_air_balloon",
+      "title": "Hot air balloon",
+      "asked_for": "Hot-air balloon",
+      "revision": 10493442,
+      "fetched_on": "2026-10-06",
+      "sha256": "40662b096b3a2f765d2de445887adbc63c533a8a1b17289a3b4856d64f46f9a1"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

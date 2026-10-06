@@ -1,0 +1,48 @@
+{
+  "name": "Light bulb",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "An electric light, lamp, or light bulb is an electrical device that produces light from electricity.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "household",
+      "basis": "judged, not sourced",
+      "why": "A light bulb is used to light a dark space in homes, so it is a household thing."
+    },
+    "kind_of_house_thing": {
+      "value": "electric",
+      "quote": "An electric light, lamp, or light bulb is an electrical device that produces light from electricity.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Electric_light",
+      "title": "Electric light",
+      "asked_for": "Light bulb",
+      "revision": 1377806390,
+      "fetched_on": "2026-10-06",
+      "sha256": "2aa80110dc18a72a893e7929179bd9a4065e9886e8c7bf5215019aad46e8e78b"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Light_bulb",
+      "title": "Light bulb",
+      "asked_for": "Light bulb",
+      "revision": 11003777,
+      "fetched_on": "2026-10-06",
+      "sha256": "68a932511bf4d3443772e935cbf1b9f5d9fb7521b34e8fabaf04c5742b154a61"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-06",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

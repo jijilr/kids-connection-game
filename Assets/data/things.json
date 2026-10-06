@@ -1925,6 +1925,330 @@
         "general": "Held at first: uncertain: the approved proposal lists it in this group; the pages and the judgements point to 'Grasses and grains', not 'Vegetable plants'; it could not be settled that it belongs in 'The seeds or pods'",
         "kind_of_plant_academic": "To a scientist maize is a tall grass, and its seeds are a cereal grain. In this game it is a vegetable plant whose seeds we eat."
       }
+    },
+    "auto_rickshaw": {
+      "name": "Auto-rickshaw",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "road"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "lorry": {
+      "name": "Lorry",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "road"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "metro_train": {
+      "name": "Metro train",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "rails"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "goods_train": {
+      "name": "Goods train",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "rails"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "tram": {
+      "name": "Tram",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "rails"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "steam_engine": {
+      "name": "Steam engine",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "rails"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "boat": {
+      "name": "Boat",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "ship": {
+      "name": "Ship",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "ferry": {
+      "name": "Ferry",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "canoe": {
+      "name": "Canoe",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "houseboat": {
+      "name": "Houseboat",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "water"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "aeroplane": {
+      "name": "Aeroplane",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "air"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "helicopter": {
+      "name": "Helicopter",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "air"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "rocket": {
+      "name": "Rocket",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "air"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "hot_air_balloon": {
+      "name": "Hot-air balloon",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "vehicle",
+        "where_it_travels": "air"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "sofa": {
+      "name": "Sofa",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "furniture"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "cupboard": {
+      "name": "Cupboard",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "furniture"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "bucket": {
+      "name": "Bucket",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "soap": {
+      "name": "Soap",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "towel": {
+      "name": "Towel",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "dustpan": {
+      "name": "Dustpan",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "scrub_brush": {
+      "name": "Scrub brush",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "cleaning"
+      },
+      "familiar": 0.8,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "fan": {
+      "name": "Fan",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "electric"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "television": {
+      "name": "Television",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "electric"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "light_bulb": {
+      "name": "Light bulb",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "electric"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "fridge": {
+      "name": "Fridge",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "electric"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
+    },
+    "electric_iron": {
+      "name": "Electric iron",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "household",
+        "kind_of_house_thing": "electric"
+      },
+      "familiar": 0.9,
+      "reviewed": 4,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-10-06-10"
     }
   }
 }
