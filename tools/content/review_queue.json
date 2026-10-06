@@ -323,23 +323,23 @@
     {
       "name": "Island",
       "why": [
-        "its facts passed, but only 1 of the 3 things the group needs did, so it was not drawn. A later run carries on from here"
+        "its facts passed, but only 2 of the 3 things the group needs did, so it was not drawn. A later run carries on from here"
       ],
-      "from": "job:2026-10-07-06"
+      "from": "job:2026-10-07-07"
     },
     {
       "name": "Waterfall",
       "why": [
         "uncertain: two checks could not settle whether it belongs in 'Places on land': it fits more than one group: water and land"
       ],
-      "from": "job:2026-10-07-06"
+      "from": "job:2026-10-07-07"
     },
     {
       "name": "Backwater",
       "why": [
         "the check doubts a four-year-old would recognise it"
       ],
-      "from": "job:2026-10-07-06"
+      "from": "job:2026-10-07-07"
     },
     {
       "name": "Pit",
@@ -409,49 +409,98 @@
       "why": [
         "the check doubts a four-year-old would recognise it"
       ],
-      "from": "job:2026-10-07-06"
+      "from": "job:2026-10-07-07"
     },
     {
       "name": "Doctor's office",
       "why": [
         "its facts passed, but only 1 of the 2 things the group needs did, so it was not drawn. A later run carries on from here"
       ],
-      "from": "job:2026-10-07-06"
+      "from": "job:2026-10-07-07"
     },
     {
       "name": "Marsh",
       "why": [
         "the check doubts a four-year-old would recognise it"
       ],
-      "from": "job:2026-10-07-06"
+      "from": "job:2026-10-07-07"
     },
     {
       "name": "Plateau",
       "why": [
         "the check doubts a four-year-old would recognise it"
       ],
-      "from": "job:2026-10-07-06"
+      "from": "job:2026-10-07-07"
     },
     {
       "name": "Paddy field",
       "why": [
-        "the check doubts a four-year-old would recognise it"
+        "it could not be settled that it belongs in 'Things in nature that are not alive'"
       ],
-      "from": "job:2026-10-07-06"
+      "from": "job:2026-10-07-07"
     },
     {
       "name": "Maidan",
       "why": [
         "the check doubts a four-year-old would recognise it"
       ],
-      "from": "job:2026-10-07-06"
+      "from": "job:2026-10-07-07"
     },
     {
       "name": "Bay",
       "why": [
         "the check doubts a four-year-old would recognise it"
       ],
-      "from": "job:2026-10-07-06"
+      "from": "job:2026-10-07-07"
+    },
+    {
+      "name": "Grassland",
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "from": "job:2026-10-07-07"
+    },
+    {
+      "name": "River bank",
+      "why": [
+        "its facts passed, but only 2 of the 3 things the group needs did, so it was not drawn. A later run carries on from here"
+      ],
+      "from": "job:2026-10-07-07"
+    },
+    {
+      "name": "Lake shore",
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Places on land': it fits more than one group: land and water"
+      ],
+      "from": "job:2026-10-07-07"
+    },
+    {
+      "name": "Pond edge",
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Places on land': it fits more than one group: water and land"
+      ],
+      "from": "job:2026-10-07-07"
+    },
+    {
+      "name": "Marbles",
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Throw, kick or bat it': it fits no group"
+      ],
+      "from": "job:2026-10-07-07"
+    },
+    {
+      "name": "Top",
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Throw, kick or bat it': the two checks disagree: 'spin' and 'throw'"
+      ],
+      "from": "job:2026-10-07-07"
+    },
+    {
+      "name": "Hula hoop",
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Throw, kick or bat it': it fits no group"
+      ],
+      "from": "job:2026-10-07-07"
     }
   ]
 }

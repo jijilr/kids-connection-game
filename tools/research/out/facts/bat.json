@@ -1,0 +1,55 @@
+{
+  "name": "Bat",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Bats (order Chiroptera ) are winged mammals, the only mammals capable of true and sustained flight.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "Bats (order Chiroptera ) are winged mammals, the only mammals capable of true and sustained flight.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Bats are distributed globally in almost all regions.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_land",
+      "quote": "Most bats are nocturnal, and many roost in caves or other refuges; it is uncertain whether bats have these behaviours to escape predators.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Bat",
+      "title": "Bat",
+      "asked_for": "Bat",
+      "revision": 1376905005,
+      "fetched_on": "2026-10-07",
+      "sha256": "a3ad09f0d4596687f98282675355c680571840522118325b03d0145e87f5d063"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Bat",
+      "title": "Bat",
+      "asked_for": "Bat",
+      "revision": 10868160,
+      "fetched_on": "2026-10-07",
+      "sha256": "251d72da7e6c770aa44b85d7555ec403320152d26a92d5abc77eaa4da7a8c765"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

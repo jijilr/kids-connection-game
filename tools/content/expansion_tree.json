@@ -2,7 +2,7 @@
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-10-07",
   "dictionary_version": 10,
-  "things": 242,
+  "things": 244,
   "rules": {
     "weights": {
       "nearness": 3,
@@ -35,16 +35,16 @@
   "proposals": [
     "nature_not_alive/land",
     "made_by_people/building/heal",
-    "made_by_people/toy/throw",
     "made_by_people/toy/wheel",
-    "made_by_people/building/live"
+    "made_by_people/building/live",
+    "made_by_people/building/learn"
   ],
   "circles": {
     "seed": {
       "label": "Everything",
       "steps_from_seed": 0,
       "branch": null,
-      "members": 242,
+      "members": 244,
       "open": true,
       "sorted_by": "kind_of_thing",
       "decisions": [],
@@ -1354,7 +1354,7 @@
       "label": "Things people make",
       "steps_from_seed": 1,
       "branch": "made_by_people",
-      "members": 88,
+      "members": 90,
       "open": true,
       "sorted_by": "kind_of_made_thing",
       "decisions": [],
@@ -1470,7 +1470,7 @@
       "label": "Toys",
       "steps_from_seed": 2,
       "branch": "made_by_people",
-      "members": 20,
+      "members": 23,
       "open": true,
       "sorted_by": "how_we_play_with_it",
       "decisions": [
@@ -1526,22 +1526,23 @@
       "label": "Throw, kick or bat it",
       "steps_from_seed": 3,
       "branch": "made_by_people",
-      "members": 1,
+      "members": 4,
       "open": false,
       "missing": {
-        "things": 3,
-        "why": "fewer than four familiar things, so it is not yet a group on the board above it"
+        "field": "no field splits it four ways",
+        "things": 12
       },
       "decisions": [],
       "factors": {
         "nearness": 0.33,
         "neglect": 0.0,
-        "unlocks": 0.0,
-        "cheapness": 0.57
+        "unlocks": 0.33,
+        "cheapness": 0.2
       },
       "score": 2.1,
-      "move": "widening",
-      "status": "proposable"
+      "move": "deepening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
     },
     "made_by_people/toy/ride": {
       "label": "Ride or sit on it",
@@ -1865,7 +1866,7 @@
       "label": "Buildings",
       "steps_from_seed": 2,
       "branch": "made_by_people",
-      "members": 22,
+      "members": 21,
       "open": true,
       "sorted_by": "what_people_do_there",
       "decisions": [
@@ -2020,18 +2021,18 @@
       "label": "Start a journey",
       "steps_from_seed": 3,
       "branch": "made_by_people",
-      "members": 5,
+      "members": 4,
       "open": false,
       "missing": {
         "field": "no field splits it four ways",
-        "things": 11
+        "things": 12
       },
       "decisions": [],
       "factors": {
         "nearness": 0.33,
         "neglect": 0.0,
         "unlocks": 0.33,
-        "cheapness": 0.21
+        "cheapness": 0.2
       },
       "score": 2.1,
       "move": "deepening",

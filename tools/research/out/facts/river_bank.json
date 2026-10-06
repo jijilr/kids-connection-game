@@ -1,0 +1,40 @@
+{
+  "name": "River bank",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "quote": "In geography, a bank is the land alongside a body of water.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_nature": {
+      "value": "land",
+      "quote": "In geography, a bank is the land alongside a body of water.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "shape_of_the_land": {
+      "value": "by_water",
+      "quote": "In geography, a bank is the land alongside a body of water.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Bank_(geography)",
+      "title": "Bank (geography)",
+      "asked_for": "River bank",
+      "revision": 1357360561,
+      "fetched_on": "2026-10-07",
+      "sha256": "3603c125b04e7105d8fb48686c505f5f3d3e8e100000c5adaabff1c1aa5ea14b"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

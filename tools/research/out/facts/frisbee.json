@@ -1,0 +1,49 @@
+{
+  "name": "Frisbee",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "is a gliding toy or sporting item generally made of injection-molded plastic",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "quote": "is a gliding toy or sporting item generally made of injection-molded plastic",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "how_we_play_with_it": {
+      "value": "throw",
+      "quote": "It is used recreationally and competitively for throwing and catching, as in flying disc games.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Frisbee",
+      "title": "Frisbee",
+      "asked_for": "Frisbee",
+      "revision": 1378880575,
+      "fetched_on": "2026-10-07",
+      "sha256": "ffde2abee739ad095f40167dc5db300c6ec1b2327acbe84efde971c67d028114"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Flying_disc",
+      "title": "Flying disc",
+      "asked_for": "Frisbee",
+      "revision": 11010498,
+      "fetched_on": "2026-10-07",
+      "sha256": "bb08c2f0c6ba726d4a53bf6de80b30876661d49db0e229446a55c6ce2185e0f3"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

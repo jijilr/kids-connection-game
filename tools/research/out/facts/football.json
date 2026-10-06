@@ -1,0 +1,46 @@
+{
+  "name": "Football",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "basis": "judged, not sourced",
+      "why": "Football is a team sport with rules and codes that people created and play."
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "basis": "judged, not sourced",
+      "why": "Football is a ball game that children play for fun, so a parent would call it a toy."
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "how_we_play_with_it",
+      "why": "the model gave no answer for it"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Football",
+      "title": "Football",
+      "asked_for": "Football",
+      "revision": 1376650204,
+      "fetched_on": "2026-10-07",
+      "sha256": "4a6e50bb5e69cc40195d4cb049a4396cabab819f8b3e3860404e40ed4213f8a7"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Football",
+      "title": "Football",
+      "asked_for": "Football",
+      "revision": 11011808,
+      "fetched_on": "2026-10-07",
+      "sha256": "594de76e689150ecb08c90e32ab7633d753389c9200a7bde32914b0a737ccc76"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

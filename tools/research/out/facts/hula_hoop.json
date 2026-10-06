@@ -1,0 +1,40 @@
+{
+  "name": "Hula hoop",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A hula hoop is a toy hoop that is twirled around the waist, limbs or neck.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "quote": "A hula hoop is a toy hoop that is twirled around the waist, limbs or neck.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "how_we_play_with_it": {
+      "value": "wheel",
+      "quote": "Hoops can also be used for hoop rolling, wheeled along the ground like a wheel with careful execution and practice.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Hula_hoop",
+      "title": "Hula hoop",
+      "asked_for": "Hula hoop",
+      "revision": 1378185593,
+      "fetched_on": "2026-10-07",
+      "sha256": "0dab8a4624bd0483d41c0198804c7098b70a1323d6987aa96f30f75c6eea6f7e"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

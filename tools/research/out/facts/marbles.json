@@ -1,0 +1,49 @@
+{
+  "name": "Marbles",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A marble is a small spherical object often made from glass, clay, steel, plastic, or agate.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "quote": "These toys can be used for a variety of games called marbles, as well being placed in marble runs or races, or created as a form of art.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "how_we_play_with_it": {
+      "value": "build",
+      "quote": "These toys can be used to make marble runs, a form of art, or they can be used in marble races, a kind of race using marbles.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Marble_(toy)",
+      "title": "Marble (toy)",
+      "asked_for": "Marbles",
+      "revision": 1373062777,
+      "fetched_on": "2026-10-07",
+      "sha256": "3090f196932d965ff29e20beba413e927ee47ebf3d7d7a4ce5177f44cf8ee43f"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Marble_(toy)",
+      "title": "Marble (toy)",
+      "asked_for": "Marbles",
+      "revision": 8611612,
+      "fetched_on": "2026-10-07",
+      "sha256": "da5e8a4bdbb25ad0c6910072da40fce055e439c036d61957e9ffe94353baf1b9"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

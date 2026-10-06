@@ -1,0 +1,39 @@
+{
+  "name": "Top",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A spinning top, or simply a top, is a toy with a squat body and a sharp point at the bottom, designed to be spun on its vertical axis, balancing on the tip due to the gyroscopic effect.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "quote": "A spinning top, or simply a top, is a toy with a squat body and a sharp point at the bottom, designed to be spun on its vertical axis, balancing on the tip due to the gyroscopic effect.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "how_we_play_with_it",
+      "why": "uncertain: two judgements disagree: 'Throw, kick or bat it' and 'Fly it in the wind'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Spinning_top",
+      "title": "Spinning top",
+      "asked_for": "Top (toy)",
+      "revision": 1374590375,
+      "fetched_on": "2026-10-07",
+      "sha256": "8f7d200cef54d70b1781cb0ac152e6cfc66936c458fb86d82fd28d85a6197139"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

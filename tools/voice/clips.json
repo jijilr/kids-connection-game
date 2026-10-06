@@ -3900,6 +3900,42 @@
       "sha256": "275a29cb8802b05a466e999ddaff4e0b50b94e843791eb126d92e225637d50ff",
       "recorded_on": "2026-10-07",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "football": {
+      "say": "Football",
+      "text": "Football",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "fˈʊtbɔːl",
+      "seconds": 1.19,
+      "cache": "tools/voice/clips/football.mp3",
+      "sha256": "798c8d7b9c8452994a1363b2c95592fa81cf11f745877fb95aa74cb8e84e7f14",
+      "recorded_on": "2026-10-07",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "skipping_rope": {
+      "say": "Skipping rope",
+      "text": "Skipping rope",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "skˈɪpɪŋ ɹˈQp",
+      "seconds": 1.79,
+      "cache": "tools/voice/clips/skipping_rope.mp3",
+      "sha256": "aec054e9dacaf4ea20e8524239317d5e4ba6aaad6fdc5b9613f006306f2907db",
+      "recorded_on": "2026-10-07",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "frisbee": {
+      "say": "Frisbee",
+      "text": "Frisbee",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "fɹˈɪzbiː",
+      "seconds": 1.26,
+      "cache": "tools/voice/clips/frisbee.mp3",
+      "sha256": "dfa3116671e65cbca0770a30d028708c8263e2a21a9c6f3ae5cfe459d7b3df2e",
+      "recorded_on": "2026-10-07",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     }
   }
 }

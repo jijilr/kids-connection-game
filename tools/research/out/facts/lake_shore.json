@@ -1,0 +1,22 @@
+{
+  "name": "Lake shore",
+  "fields": {
+    "kind_of_thing": {
+      "value": "nature_not_alive",
+      "basis": "judged, not sourced",
+      "why": "A lake shore is a natural feature of the landscape, not a living thing or something people make."
+    },
+    "kind_of_nature": {
+      "value": "water",
+      "basis": "judged, not sourced",
+      "why": "A lake shore is the edge of a lake, and a lake is a body of water."
+    }
+  },
+  "weak_spots": [],
+  "pages": [],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

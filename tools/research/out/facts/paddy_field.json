@@ -1,0 +1,35 @@
+{
+  "name": "Paddy field",
+  "fields": {},
+  "weak_spots": [
+    {
+      "field": "kind_of_thing",
+      "why": "uncertain: two judgements disagree: 'Things people make' and 'Things in nature that are not alive'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Paddy_field",
+      "title": "Paddy field",
+      "asked_for": "Paddy field",
+      "revision": 1372195861,
+      "fetched_on": "2026-10-07",
+      "sha256": "99dd9a05548a2b271119e1889d7bbdb93d89c4e258729536c0e42f0c1776505f"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Paddy_field",
+      "title": "Paddy field",
+      "asked_for": "Paddy field",
+      "revision": 9480908,
+      "fetched_on": "2026-10-07",
+      "sha256": "0399a55475bcb5d540fe176163c5437f805352419360ee9b917740ede0320f33"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-10-07",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}
