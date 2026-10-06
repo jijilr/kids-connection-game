@@ -267,9 +267,13 @@ class EngineScreen extends StatelessWidget {
   // ------------------------------------------------------------- end states
 
   Widget _celebration(EngineProvider g) {
-    final detail = g.anyDescendable
-        ? 'Tap a group with “Dig deeper” to explore inside it — or try a new board.'
-        : 'Try a new board!';
+    // Where he goes next is one tap away, so he never waits. If a group can be dug into,
+    // the button leans toward the branch he has visited least; if none can, it opens a
+    // parallel board at the same depth.
+    final lean = g.suggestedDig;
+    final detail = lean != null
+        ? 'Dig deeper into a group, or tap the arrow for the one you know least.'
+        : 'Here comes another board.';
     return BounceInDown(
       duration: const Duration(milliseconds: 600),
       child: Container(
@@ -309,9 +313,10 @@ class EngineScreen extends StatelessWidget {
                 style: GoogleFonts.inter(fontSize: 14, color: Colors.grey.shade800)),
             const SizedBox(height: 14),
             ElevatedButton.icon(
-              onPressed: g.newBoard,
-              icon: const Icon(Icons.replay_rounded),
-              label: const Text('New board'),
+              key: const ValueKey('next'),
+              onPressed: lean != null ? () => g.descendInto(lean) : g.nextBoard,
+              icon: Icon(lean != null ? Icons.arrow_downward_rounded : Icons.arrow_forward_rounded),
+              label: Text(lean != null ? 'Dig deeper: ${lean.label}' : 'Next board'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: _ink,
                 foregroundColor: Colors.white,

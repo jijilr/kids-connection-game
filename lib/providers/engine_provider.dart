@@ -44,6 +44,7 @@ class EngineProvider extends ChangeNotifier {
   bool isLoading = true;
 
   final List<_Level> _stack = [];
+  Set<String> _lastTiles = {};
 
   Board? board;
   final List<BoardGroup> solved = [];
@@ -90,6 +91,27 @@ class EngineProvider extends ChangeNotifier {
 
   bool get anyDescendable => solved.any(canDescend);
 
+  /// The solved groups that have a board inside them.
+  List<BoardGroup> get diggable => solved.where(canDescend).toList();
+
+  /// Of those, the one to lean toward: the branch he has visited least. A well-rounded
+  /// child, not a specialist: the game does not keep sending him where he already goes.
+  BoardGroup? get suggestedDig {
+    BoardGroup? best;
+    int fewest = 0;
+    for (final g in diggable) {
+      final visits = progress.timesOpened(Progress.boardId(_childFilter(g)));
+      if (best == null || visits < fewest) {
+        best = g;
+        fewest = visits;
+      }
+    }
+    return best;
+  }
+
+  /// He has solved this board and no group of it can be dug into.
+  bool get atADeadEnd => boardFinished && diggable.isEmpty;
+
   // ---------------------------------------------------------------------- actions
 
   Future<void> init() async {
@@ -106,10 +128,12 @@ class EngineProvider extends ChangeNotifier {
 
   void _open() {
     final lvl = _stack.last;
-    final b = _repo.assembler.assemble(
+    final b = _repo.assembler.makeBoard(BoardContext(
         filter: lvl.filter,
         dimension: lvl.dim,
-        preferValues: _repo.settings.keepInPlay[lvl.dim.id] ?? const []);
+        preferValues: _repo.settings.keepInPlay[lvl.dim.id] ?? const [],
+        lastTiles: _lastTiles));
+    if (b != null) _lastTiles = {for (final e in b.tiles) e.id};
 
     board = b;
     atFloor = b == null;
@@ -162,6 +186,8 @@ class EngineProvider extends ChangeNotifier {
       selected.clear();
       if (boardFinished) {
         progress.solved(Progress.boardId(_stack.last.filter), _now());
+        // Nowhere deeper to go from here: an order for more content, which the job reads.
+        if (diggable.isEmpty) progress.order(Progress.boardId(_stack.last.filter), _now());
         unawaited(_progressStore.save(progress));
         message = 'Solved!';
         notifyListeners();
@@ -186,6 +212,41 @@ class EngineProvider extends ChangeNotifier {
     final f = _childFilter(g);
     final dims = _repo.assembler.boardableDimensions(f);
     _stack.add(_Level(f, dims.first, g.label));
+    _open();
+  }
+
+  /// A parallel board, so that he never waits: another circle at the same depth, the one
+  /// he has seen least recently. If there is no other, this circle again with other things.
+  void nextBoard() {
+    final depth = _stack.length - 1;
+    final here = Progress.boardId(_stack.last.filter);
+    final others = _repo.assembler
+        .circlesAtDepth(depth, _stack.first.dim, needPictures: _repo.settings.boardsNeedPictures)
+        .where((filter) => Progress.boardId(filter) != here)
+        .toList();
+    if (others.isEmpty) {
+      _open();
+      return;
+    }
+    final never = DateTime.fromMillisecondsSinceEpoch(0);
+    others.sort((a, b) => (progress.lastSeen(Progress.boardId(a)) ?? never)
+        .compareTo(progress.lastSeen(Progress.boardId(b)) ?? never));
+    _goTo(others.first);
+  }
+
+  /// Stand at the circle [filter] leads to, with the way back to the seed intact.
+  void _goTo(List<PathFilter> filter) {
+    final seed = _stack.first;
+    _stack
+      ..clear()
+      ..add(seed);
+    for (int i = 0; i < filter.length; i++) {
+      final path = filter.sublist(0, i + 1);
+      final dims = _repo.assembler.boardableDimensions(path);
+      if (dims.isEmpty) break;
+      final step = filter[i];
+      _stack.add(_Level(path, dims.first, registry.byId(step.$1)?.label(step.$2) ?? step.$2));
+    }
     _open();
   }
 

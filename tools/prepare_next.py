@@ -3,6 +3,23 @@
 The system runs itself, one step ahead of the child (the owner's ruling of 7 Oct 2026).
 Nobody approves a circle or a field. Rules decide, and a digest says what was done.
 
+Two functions carry the whole design (his ruling of the night of 7 Oct 2026):
+
+  make_board(context)   sixteen things, four groups, exactly one solution, from what the
+                        game already holds. In the game it is BoardAssembler.makeBoard
+                        (lib/services/board_assembler.dart), used for the first board, for
+                        "Dig deeper" and for a parallel board at the same depth. The
+                        worker's copy is tools/content/boards.py: make_board.
+  fetch_nodes(request)  the ONLY way new nodes are made: DeepSeek facts, OpenAI sheets of
+                        nine, cutting, checks, catalogue. It is this file. It is called
+                        only for an order, and asks only for what is missing.
+
+An order is one group for one board. In the game it arises when a board is solved and no
+group of it can be dug into: he gets a parallel board at once, and the order is written
+into his saved progress. Until the game is online the worker anticipates the orders: it
+treats every open board as solved. No board is ever made shallow to make it possible: no
+filler members, no surface fields.
+
   1. plan      every closed circle one step from an open board, in the order the
                expansion engine gives (its scores and its balance rules). With the child's
                saved progress, only the circles one step from where he is. No model.
@@ -74,7 +91,7 @@ import facts                                 # noqa: E402  grounded dictionary v
 import fetch                                 # noqa: E402  the pages
 import reslib                                # noqa: E402  DeepSeek, with a hard cap
 import fields as field_rules                 # noqa: E402  the four tests a new field must pass
-from boards import GROUPS, PER_GROUP, members, second_solution_rate, split   # noqa: E402
+from boards import GROUPS, PER_GROUP, make_board, members, second_solution_rate, split   # noqa: E402
 from expand import AMBIGUITY_LIMIT, HELD_BY_RULES, build_circles, in_order   # noqa: E402
 from expand import rebuild as rebuild_tree, record as record_decision      # noqa: E402
 
@@ -217,6 +234,34 @@ def read_progress(path):
     return {board for board, seen in boards.items() if isinstance(seen, dict) and seen.get("opened", 0) > 0}
 
 
+def read_orders(path) -> set:
+    """The boards he solved with nowhere deeper to go, as the game wrote them into his
+    saved progress. Empty when there is no such file."""
+    data = cat.read_json(path) if path and pathlib.Path(path).exists() else None
+    asked = (data or {}).get("orders")
+    return set(asked) if isinstance(asked, dict) else set()
+
+
+def orders(tree: dict, played: set = None, asked: set = ()) -> tuple:
+    """The orders for new nodes: ONE group for each board (the owner's ruling of 7 Oct
+    2026). An order arises when a board is solved and no group of it can be dug into.
+    The game writes such orders into the child's saved progress (`asked`). Until the game
+    is online the worker anticipates them by treating every open board as solved: first
+    the boards with nowhere deeper to go, where he would be stuck; then the boards where
+    some group is still closed, so that the next level is ready wherever he goes. For
+    each board the group is the one the engine's depth and breadth balance puts first.
+    With saved progress, only the boards he has opened are served.
+    Returns (the circles to fetch, in order; the circles that wait their board's turn)."""
+    parent = lambda cid: cid.rsplit("/", 1)[0] if "/" in cid else "seed"
+    by_board = {}
+    for cid in in_order(tree):                      # every closed circle no rule holds, best first
+        by_board.setdefault(parent(cid), []).append(cid)
+    stuck = lambda board: not any(c["open"] for cid, c in tree.items() if cid != "seed" and parent(cid) == board)
+    boards = [b for b in by_board if played is None or b in played | {"seed"}]
+    boards.sort(key=lambda b: (b not in asked, not stuck(b), -tree[by_board[b][0]]["score"]))
+    return [by_board[b][0] for b in boards], [cid for b in boards for cid in by_board[b][1:]]
+
+
 def asks_for(catalogue: dict, cid: str, avoid: set = (), filled: set = ()) -> tuple:
     """What one circle that has its field still needs, group by group, in a form the
     later stages can act on. Returns (asks, what cannot be prepared and why).
@@ -268,9 +313,10 @@ def asks_for(catalogue: dict, cid: str, avoid: set = (), filled: set = ()) -> tu
     return asks, blocked
 
 
-def plan(catalogue: dict, rehearse: str = None, played: set = None) -> dict:
-    """What the run sets out to do. Nobody approves a circle: the engine gives the order,
-    and its rules and the owner's own holds are all that keep a circle back."""
+def plan(catalogue: dict, rehearse: str = None, played: set = None, asked: set = ()) -> dict:
+    """What the run sets out to do: the orders, one group for each board. Nobody approves
+    a circle: the engine's balance chooses the group, and its rules and the owner's own
+    holds are all that keep a circle back."""
     dictionary, settings = cat.read_json(cat.DICTIONARY), cat.read_json(cat.SETTINGS)
     raw = build_circles(dictionary, cat.game_copy(catalogue)["things"], settings)
     asks, circles, blocked, nothing, held_back = [], [], [], [], []
@@ -286,9 +332,11 @@ def plan(catalogue: dict, rehearse: str = None, played: set = None) -> dict:
                          "fixed": {"kind_of_thing": kind}, "need": 0, "pictures_for": names,
                          "recorded_but_not_in_the_game": []})
         tree = rebuild_tree(write=False)["circles"]     # planning changes nothing
-        order = in_order(tree, played)
+        order, waiting = orders(tree, played, asked)
         held_back = [f"{c['label']}: {c.get('held_by') or c['status']}" for cid, c in tree.items()
                      if c["status"] in ("held", "rejected") and cid not in order]
+        held_back += [f"{tree[cid]['label']}: it waits its turn; one group is fetched for each board at a time"
+                      for cid in waiting]
     for cid in order:
         circle, path = raw[cid], cat.circle_path(raw, cid)
         label = circle["label"]
@@ -790,6 +838,11 @@ def put_in_the_game(run: dict):
     with cat.changing(f"job run {run['id']}") as catalogue:
         cat.sync_sources(catalogue)
         cat.sync_voice(catalogue)
+    # The names of what went in are spoken with the owner's Kokoro, if it is on this machine.
+    # Where it is not, nothing fails: the game falls back to the browser's own voice.
+    voices = subprocess.run([sys.executable, str(ROOT / "tools/voice/record_names.py")], capture_output=True,
+                            text=True, encoding="utf-8", errors="replace")
+    say("  voices: " + " ".join(voices.stdout.strip().splitlines()[-2:]) if voices.stdout.strip() else "  voices: not recorded")
 
 
 def held_as(t: dict, run_id: str, rehearsal: bool) -> tuple:
@@ -981,7 +1034,7 @@ def commit(run: dict, summary: str, title: str = None):
     file holds something shaped like a key, or a key the environment holds."""
     paths = ["tools/job", "tools/catalogue", "tools/content/review_queue.json", "Assets/data/things.json",
              "Assets/data/dictionary.json", "tools/content/field_proposals.json", "tools/content/expansion_tree.json",
-             "Assets/pictures", "tools/pictures", "tools/research/out"]
+             "Assets/pictures", "tools/pictures", "tools/research/out", "Assets/audio/names", "tools/voice"]
     git = lambda *args: subprocess.run(["git", "-C", str(ROOT), *args], capture_output=True, text=True,
                                        encoding="utf-8", errors="replace")
     git("add", "--", *paths)
@@ -1119,18 +1172,24 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
     for number, ask in enumerate(list(asks_of_run)):
         do_ask(number, ask)
     # ---- the circles, in the engine's order: a field where one is missing, then things and their facts
-    for entry in run["plan"]["circles"]:
+    def fetch_nodes(entry) -> bool:
+        """THE one way new nodes are made (the owner's ruling of 7 Oct 2026). `entry` is an
+        order: one circle that a board needs opened, and what it lacks. A field where it has
+        none, then the things each group is short of and no more, each with grounded facts.
+        Their pictures are drawn afterwards with those of the other orders, nine to a sheet,
+        checked, and only then do the things enter the catalogue and the game.
+        Returns False when the cap would not cover it."""
         if entry.get("done"):
-            continue
+            return True
         if not affordable(entry):
             say(f"\n== {entry['label']}: left for a later run; the cap would not cover it ==")
-            break
+            return False
         if entry["needs_field"] and not entry.get("field_added"):
             say(f"\n== {entry['chain']}: it needs a field ==")
             if not settle_field(client, config, deepseek_step, run, entry):
                 entry["done"] = True
                 save()
-                continue
+                return True
             entry["field_added"] = True
             state["dictionary"] = cat.read_json(cat.DICTIONARY)
             save()
@@ -1162,6 +1221,11 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
                 do_ask(len(asks_of_run) - 1, ask)
         entry["done"] = True
         save()
+        return True
+
+    for entry in run["plan"]["circles"]:
+        if not fetch_nodes(entry):
+            break
 
     # ---- pictures, for everything that needs one, pooled onto as few sheets as will hold them
     asks = run["plan"]["asks"]
@@ -1254,11 +1318,13 @@ def main():
         if rehearse and rehearse not in catalogue["worked_out"]["circles"]:
             raise SystemExit(f"No circle '{rehearse}'. See: python tools/catalogue/catalogue.py circles")
         played = None if rehearse else read_progress(option("--progress") or PROGRESS)
-        the_plan = plan(catalogue, rehearse, played)
+        asked = set() if rehearse else read_orders(option("--progress") or PROGRESS)
+        the_plan = plan(catalogue, rehearse, played, asked)
         likely, fit = expected_cost(the_plan, rate, cap)
         say("PLAN" + (f" (a rehearsal of '{rehearse}': nothing will enter the game)" if rehearse else ""))
-        say("  The child's saved progress: " + ("none found, so every circle one step from an open board is prepared"
-                                               if played is None else "he has played " + ", ".join(sorted(played))))
+        say("  The child's saved progress: " + ("none found, so every open board is treated as solved: one group is fetched for each"
+                                               if played is None else "he has played " + ", ".join(sorted(played))
+                                               + (f"; he was left with nowhere deeper to go on {', '.join(sorted(asked))}" if asked else "")))
         for ask in the_plan["asks"]:
             if ask.get("pictures_for"):
                 say(f"  {ask['chain']}: draw pictures for {', '.join(ask['pictures_for'])}, already in the game")

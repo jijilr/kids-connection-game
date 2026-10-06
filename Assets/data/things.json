@@ -2862,18 +2862,6 @@
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06"
     },
-    "taxi_stand": {
-      "name": "Taxi stand",
-      "fields": {
-        "kind_of_thing": "made_by_people",
-        "kind_of_made_thing": "building",
-        "what_people_do_there": "travel"
-      },
-      "familiar": 0.8,
-      "reviewed": 10,
-      "source": "job:grounded+checked",
-      "drafted_in": "2026-10-07-06"
-    },
     "toy_kitchen_set": {
       "name": "Toy kitchen set",
       "fields": {

@@ -64,6 +64,36 @@ def second_solution(dictionary: dict, things: dict, tiles: list, sorted_by: str)
     return None
 
 
+def make_board(dictionary: dict, things: dict, path: list, field: str = None, avoid: set = (),
+               rng: random.Random = None, tries: int = 20):
+    """THE way a board is made (the owner's ruling of 7 Oct 2026): sixteen things in four
+    groups of four, sorted by one field, with exactly one clean solution, from what the
+    game already holds. The game does the same in BoardAssembler.makeBoard; this is the
+    worker's copy, so that it can tell what a child would meet. `avoid` are the sixteen
+    of the board just played. Returns {"field", "groups": {value: [keys]}, "tiles"}, or
+    None when the circle cannot fill such a board. It never pads a group and never sorts
+    by a shallower field to make a board possible."""
+    rng = rng or random.Random(0)
+    keys = members(things, path)
+    field = field or sub_kind(dictionary, things, keys, path, path[-1][0] if path else None)
+    if field is None or not dictionary["fields"][field].get("sorts_boards", True):
+        return None
+    groups = split(things, keys, field)
+    full = [value for value, inside in groups.items() if len(inside) >= PER_GROUP]
+    if len(full) < GROUPS:
+        return None
+    board = None
+    for _ in range(tries):
+        chosen = {value: rng.sample(groups[value], PER_GROUP) for value in rng.sample(full, GROUPS)}
+        tiles = [key for inside in chosen.values() for key in inside]
+        if second_solution(dictionary, things, tiles, field):
+            continue
+        board = {"field": field, "groups": chosen, "tiles": tiles}
+        if set(tiles) != set(avoid):
+            break
+    return board
+
+
 def second_solution_rate(dictionary: dict, things: dict, groups: dict, sorted_by: str,
                          samples: int = 200) -> float:
     """Share of random boards over these groups that have a second clean solution.

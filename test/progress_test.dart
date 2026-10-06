@@ -79,7 +79,7 @@ void main() {
       ..solved('seed', noon)
       ..opened('made_by_people/vehicle', noon);
     final file = jsonDecode(progress.toFileText()) as Map<String, dynamic>;
-    expect(file.keys, unorderedEquals(['what', 'version', 'updated', 'last_board', 'boards']));
+    expect(file.keys, unorderedEquals(['what', 'version', 'updated', 'last_board', 'boards', 'orders']));
     expect(file['version'], 1);
     expect(file['last_board'], 'made_by_people/vehicle');
     expect(file['boards']['seed'], {'opened': 1, 'solved': 1, 'last': '2026-10-07T12:00:00.000Z'});

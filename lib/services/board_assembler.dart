@@ -39,6 +39,26 @@ class Board {
   });
 }
 
+/// What a board is wanted for: the circle it is drawn from, and what to steer clear of.
+class BoardContext {
+  /// The steps that lead to the circle; empty for the seed.
+  final List<PathFilter> filter;
+
+  /// The field to sort by. Null takes the circle's own: the first that can fill a board.
+  final Dimension? dimension;
+  final List<String> preferValues;
+
+  /// The tiles of the board just played, so that a fresh board is not the same sixteen.
+  final Set<String> lastTiles;
+
+  const BoardContext({
+    this.filter = const [],
+    this.dimension,
+    this.preferValues = const [],
+    this.lastTiles = const {},
+  });
+}
+
 /// Builds 4×4 boards from the cached graph — pure, deterministic, no LLM (PRD VI.0:
 /// "cache the graph, not the boards"). Boards are assembled fresh on demand.
 class BoardAssembler {
@@ -192,6 +212,50 @@ class BoardAssembler {
   }
 
   static const _maxRebuilds = 20;
+
+  /// THE way a board is made (the owner's ruling of 7 Oct 2026): sixteen things in four
+  /// groups of four, sorted by one field, with exactly one clean solution, from what the
+  /// game already holds. It serves the first board, "Dig deeper", and a parallel board at
+  /// the same depth. It never pads a group and never falls back to a shallower sorting:
+  /// when the circle cannot fill such a board, it returns null.
+  Board? makeBoard(BoardContext context) {
+    var dimension = context.dimension;
+    if (dimension == null) {
+      final own = boardableDimensions(context.filter);
+      if (own.isEmpty) return null;
+      dimension = own.first;
+    }
+    Board? board;
+    for (int attempt = 0; attempt < 4; attempt++) {
+      board = assemble(
+          filter: context.filter, dimension: dimension, preferValues: context.preferValues);
+      if (board == null) return null;
+      final repeated = board.tiles.where((e) => context.lastTiles.contains(e.id)).length;
+      if (repeated < board.tiles.length) return board; // not the very same sixteen again
+    }
+    return board;
+  }
+
+  /// Every circle [depth] steps from the seed that can make a board now, as the path
+  /// that leads to it. With [needPictures], only those that can be drawn in pictures.
+  List<List<PathFilter>> circlesAtDepth(int depth, Dimension start, {bool needPictures = true}) {
+    var level = <List<PathFilter>>[const []];
+    for (int step = 0; step < depth; step++) {
+      final next = <List<PathFilter>>[];
+      for (final filter in level) {
+        final sortedBy = filter.isEmpty ? start : boardableDimensions(filter).first;
+        for (final value in sortedBy.values.keys) {
+          final child = <PathFilter>[...filter, (sortedBy.id, value)];
+          final inside = boardableDimensions(child);
+          if (inside.isEmpty) continue;
+          if (needPictures && !hasPictureBoard(child, inside.first)) continue;
+          next.add(child);
+        }
+      }
+      level = next;
+    }
+    return level;
+  }
 
   /// Whether a board over [filter] sorted by [dimension] can be drawn in one picture
   /// style throughout, rather than with names only.

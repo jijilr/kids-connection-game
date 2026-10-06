@@ -11,12 +11,22 @@ import 'board_assembler.dart';
 /// "prepare the next level" job reads a saved copy of it to know where he is, so it
 /// can prepare one step ahead of him (the owner's ruling of 7 Oct 2026).
 class Progress {
-  Progress({Map<String, BoardProgress>? boards, this.lastBoard, this.updated})
-      : boards = boards ?? {};
+  Progress({
+    Map<String, BoardProgress>? boards,
+    Map<String, BoardProgress>? orders,
+    this.lastBoard,
+    this.updated,
+  })  : boards = boards ?? {},
+        orders = orders ?? {};
 
   /// Board id -> what happened there. A board's id is the path that leads to it:
   /// `seed`, `animal`, `animal/dinosaur`. The job names circles the same way.
   final Map<String, BoardProgress> boards;
+
+  /// Boards he solved from which there was nowhere deeper to go: an order for more
+  /// content there. For each, how often it happened (kept in `solved`) and when last.
+  /// The job that prepares the next level reads these and fetches one group for each.
+  final Map<String, BoardProgress> orders;
   String? lastBoard;
   DateTime? updated;
 
@@ -42,6 +52,20 @@ class Progress {
     updated = now;
   }
 
+  /// He solved [board] and no group of it could be dug into: more is wanted there.
+  void order(String board, DateTime now) {
+    orders.putIfAbsent(board, BoardProgress.new)
+      ..solved += 1
+      ..last = now;
+    updated = now;
+  }
+
+  /// How often he has opened [board].
+  int timesOpened(String board) => boards[board]?.opened ?? 0;
+
+  /// When he last opened [board], or null if never.
+  DateTime? lastSeen(String board) => boards[board]?.last;
+
   /// Boards he has opened at least once: where he has been.
   List<String> get played =>
       [for (final e in boards.entries) if (e.value.opened > 0) e.key];
@@ -52,6 +76,7 @@ class Progress {
         'updated': updated?.toUtc().toIso8601String(),
         'last_board': lastBoard,
         'boards': {for (final e in boards.entries) e.key: e.value.toJson()},
+        'orders': {for (final e in orders.entries) e.key: e.value.toJson()},
       };
 
   /// The text of the file a grown-up saves for the job.
@@ -65,8 +90,16 @@ class Progress {
         if (value is Map) boards['$key'] = BoardProgress.fromJson(Map<String, dynamic>.from(value));
       });
     }
+    final orders = <String, BoardProgress>{};
+    final asked = json['orders'];
+    if (asked is Map) {
+      asked.forEach((key, value) {
+        if (value is Map) orders['$key'] = BoardProgress.fromJson(Map<String, dynamic>.from(value));
+      });
+    }
     return Progress(
       boards: boards,
+      orders: orders,
       lastBoard: json['last_board'] as String?,
       updated: DateTime.tryParse('${json['updated'] ?? ''}'),
     );

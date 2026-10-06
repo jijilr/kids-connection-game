@@ -129,7 +129,9 @@ def test_make_board_gives_sixteen_things_in_four_groups_with_one_solution_or_not
         assert all(things[k]["fields"][board["field"]] == value for value, group in board["groups"].items() for k in group)
         assert second_solution(dictionary, things, board["tiles"], board["field"]) is None
         again = make_board(dictionary, things, path, circle.get("sorted_by"), avoid=set(board["tiles"]))
-        assert set(again["tiles"]) != set(board["tiles"])                   # a fresh board is not the same sixteen
+        groups = job.split(things, job.members(things, path), board["field"])
+        only_one = sum(len(g) for g in groups.values() if len(g) >= 4) == 16     # four groups of exactly four
+        assert only_one or set(again["tiles"]) != set(board["tiles"])       # a fresh board is not the same sixteen
     assert made >= 9
 
 

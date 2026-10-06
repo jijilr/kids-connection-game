@@ -1,5 +1,5 @@
 {
-  "about": "Hard names for the Kokoro voice. `say` is the text the voice is given (the name as the child says it). `sounds_like` is a guide for whoever checks the clip by ear. Nothing here has been checked by ear yet; set checked_by_ear to true only after listening to the finished clip.",
+  "about": "Hard names for the Kokoro voice. `say` is the text the voice is given (the name as the child says it). `sounds_like` is a guide for whoever checks the clip by ear. Nothing here has been checked by ear yet; set checked_by_ear to true only after listening to the finished clip. `kokoro`, where present, is the exact text given to Kokoro, with the sounds spelled in its own notation; it was added on 7 Oct 2026 where Kokoro's own reading differed from `sounds_like`. `unsure` says why a clip should be listened to first.",
   "names": {
     "tyrannosaurus_rex": {
       "say": "T. rex",
@@ -9,7 +9,9 @@
     "giganotosaurus": {
       "say": "Giganotosaurus",
       "sounds_like": "gig-an-OH-toe-SORE-us",
-      "checked_by_ear": false
+      "checked_by_ear": false,
+      "kokoro": "[Giganotosaurus](/ɡˌɪɡənˌQtəsˈɔːɹəs/)",
+      "unsure": "Kokoro said JYE-guh-no-tuh-SORE-us; the list has a hard g. Both are heard among scientists"
     },
     "velociraptor": {
       "say": "Velociraptor",
@@ -24,7 +26,9 @@
     "spinosaurus": {
       "say": "Spinosaurus",
       "sounds_like": "SPINE-oh-SORE-us",
-      "checked_by_ear": false
+      "checked_by_ear": false,
+      "kokoro": "[Spinosaurus](/spˌInQsˈɔːɹəs/)",
+      "unsure": "Kokoro said SPIN-uh-SORE-us; the list has SPINE"
     },
     "brachiosaurus": {
       "say": "Brachiosaurus",
@@ -44,12 +48,16 @@
     "argentinosaurus": {
       "say": "Argentinosaurus",
       "sounds_like": "AR-jen-TEEN-oh-SORE-us",
-      "checked_by_ear": false
+      "checked_by_ear": false,
+      "kokoro": "[Argentinosaurus](/ˌɑːʤəntˌiːnQsˈɔːɹəs/)",
+      "unsure": "Kokoro said TIN; the list has TEEN"
     },
     "amargasaurus": {
       "say": "Amargasaurus",
       "sounds_like": "ah-MAR-gah-SORE-us",
-      "checked_by_ear": false
+      "checked_by_ear": false,
+      "kokoro": "[Amargasaurus](/əmˌɑːɡəsˈɔːɹəs/)",
+      "unsure": "Kokoro stressed AM; the list stresses MAR"
     },
     "triceratops": {
       "say": "Triceratops",
@@ -59,7 +67,9 @@
     "ankylosaurus": {
       "say": "Ankylosaurus",
       "sounds_like": "an-KIE-loh-SORE-us",
-      "checked_by_ear": false
+      "checked_by_ear": false,
+      "kokoro": "[Ankylosaurus](/aŋkˌIlQsˈɔːɹəs/)",
+      "unsure": "Kokoro said ANK-i-loh; the list has an-KIE-loh"
     },
     "stegosaurus": {
       "say": "Stegosaurus",
@@ -69,22 +79,29 @@
     "pachycephalosaurus": {
       "say": "Pachycephalosaurus",
       "sounds_like": "PAK-ee-SEF-ah-loh-SORE-us",
-      "checked_by_ear": false
+      "checked_by_ear": false,
+      "unsure": "a long name; Kokoro's reading agrees with the list on paper"
     },
     "parasaurolophus": {
       "say": "Parasaurolophus",
       "sounds_like": "PA-ra-saw-ROL-off-us",
-      "checked_by_ear": false
+      "checked_by_ear": false,
+      "kokoro": "[Parasaurolophus](/pˌaɹəsɔːɹˈɒləfəs/)",
+      "unsure": "Kokoro stressed LOF; the list stresses ROL"
     },
     "mosasaurus": {
       "say": "Mosasaurus",
       "sounds_like": "MOZE-ah-SORE-us",
-      "checked_by_ear": false
+      "checked_by_ear": false,
+      "kokoro": "[Mosasaurus](/mˌQzəsˈɔːɹəs/)",
+      "unsure": "Kokoro said MOSS-uh; the list has MOZE-ah"
     },
     "kronosaurus": {
       "say": "Kronosaurus",
       "sounds_like": "KROH-no-SORE-us",
-      "checked_by_ear": false
+      "checked_by_ear": false,
+      "kokoro": "[Kronosaurus](/kɹˌQnQsˈɔːɹəs/)",
+      "unsure": "Kokoro said KRON-uh; the list has KROH-no"
     },
     "mixosaurus": {
       "say": "Mixosaurus",
@@ -99,7 +116,8 @@
     "plesiosaurus": {
       "say": "Plesiosaurus",
       "sounds_like": "PLEE-see-oh-SORE-us",
-      "checked_by_ear": false
+      "checked_by_ear": false,
+      "unsure": "Kokoro says PLEE-zi-uh; the list has PLEE-see-oh. Both are heard"
     },
     "elasmosaurus": {
       "say": "Elasmosaurus",
@@ -119,17 +137,29 @@
     "quetzalcoatlus": {
       "say": "Quetzalcoatlus",
       "sounds_like": "KWET-zal-koh-AT-lus",
-      "checked_by_ear": false
+      "checked_by_ear": false,
+      "unsure": "a long name from Nahuatl; Kokoro's reading agrees with the list on paper"
     },
     "titanoboa": {
       "say": "Titanoboa",
       "sounds_like": "tie-TAN-oh-BOH-ah",
-      "checked_by_ear": false
+      "checked_by_ear": false,
+      "kokoro": "[Titanoboa](/tItˌanQbˈQə/)",
+      "unsure": "Kokoro stressed TIE-tuh-nuh; the list has tie-TAN-oh"
     },
     "vasuki_indicus": {
       "say": "Vasuki indicus",
       "sounds_like": "VAH-soo-kee IN-di-kus",
-      "checked_by_ear": false
+      "checked_by_ear": false,
+      "kokoro": "[Vasuki](/vˈɑːsʊki/) indicus",
+      "unsure": "Kokoro said vas-YOO-kee; the list has VAH-soo-kee. An Indian name"
+    },
+    "myna": {
+      "say": "Myna",
+      "sounds_like": "MY-nah",
+      "checked_by_ear": false,
+      "kokoro": "[Myna](/mˈInə/)",
+      "unsure": "Kokoro said MEE-nuh"
     }
   },
   "moved": "Folded into the catalogue on 2026-10-06: each entry's `voice` part now holds how to say its name. This file is kept, and is no longer read."
