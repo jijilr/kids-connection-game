@@ -47,11 +47,13 @@ def main():
 
     if "--dry-run" in flags:
         print(f"SHEET {key}: {size}, model {style['model']}, quality {style['quality']}, "
-              f"style {style['version']}\n")
+              f"style {style['version']} ({style.get('status', 'no status')})\n")
         print(prompt)
         print("\nNothing was sent and nothing was spent.")
         return
 
+    if style.get("status") != "approved":
+        raise SystemExit(f"Not drawing: the style is not approved by the owner.\n  {style.get('status')}")
     if not os.environ.get("OPENAI_API_KEY"):
         raise SystemExit("OPENAI_API_KEY is not set in the environment.")
     from openai import OpenAI
@@ -86,8 +88,17 @@ def main():
     }
     write_json(RECORDS, records)
     print(f"Saved {relative(path)}")
-    print(f"Cost: {'unknown (the service reported no usage)' if cost is None else f'${cost:.4f}'}"
-          f"  {tokens or ''}")
+    if cost is None:
+        print("Cost: unknown (the service reported no usage). Check the account before drawing another.")
+    else:
+        rupees = cost * plan["prices"]["inr_per_usd"]
+        tiles = sheet["grid"] ** 2
+        print(f"Cost: ${cost:.4f}, about Rs {rupees:.0f} for the sheet "
+              f"(Rs {rupees / tiles:.1f} a tile)  {tokens}")
+        limit = plan["prices"]["stop_if_a_sheet_costs_more_than_usd"]
+        if cost > limit:
+            print(f"STOP: that is over the owner's limit of ${limit:.2f} a sheet. Draw nothing more "
+                  "until he has seen this.")
     print(f"Next: python tools/pictures/cut_sheet.py {sheet_id}")
 
 

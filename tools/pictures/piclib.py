@@ -61,5 +61,7 @@ def build_prompt(plan: dict, sheet: dict, names: dict) -> str:
     lines = [style["layout"].format(grid=grid, count=grid * grid), ""]
     for number, cell in enumerate(sheet["cells"], 1):
         lines.append(f"{number}. {names[cell['thing']]}: {cell['draw']}.")
+    if sheet.get("only_for_this_sheet"):
+        lines += ["", "For this sheet: " + sheet["only_for_this_sheet"]]
     lines += ["", "Style: " + style["text"]]
     return "\n".join(lines)
