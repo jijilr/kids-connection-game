@@ -169,17 +169,14 @@
       "name": "Drumstick plant",
       "fields": {
         "kind_of_thing": "plant",
-        "extinct": false,
         "kind_of_plant": "vegetable",
-        "tree_academic": true,
         "part_we_eat": "seeds_or_pods"
       },
       "why": [
-        "the pages and the judgements point to 'Trees', not 'Vegetable plants'",
-        "it could not be settled that it belongs in 'The seeds or pods'"
+        "the check doubts a four-year-old would recognise it"
       ],
-      "from": "job:2026-10-06-07",
-      "familiar": 0.7
+      "from": "job:2026-10-06-08",
+      "familiar": 0.6
     },
     {
       "name": "Cluster bean plant",
@@ -191,8 +188,8 @@
       "why": [
         "the check doubts a four-year-old would recognise it"
       ],
-      "from": "job:2026-10-06-07",
-      "familiar": 0.6
+      "from": "job:2026-10-06-08",
+      "familiar": 0.5
     },
     {
       "name": "Cowpea plant",
@@ -204,8 +201,8 @@
       "why": [
         "the check doubts a four-year-old would recognise it"
       ],
-      "from": "job:2026-10-06-07",
-      "familiar": 0.6
+      "from": "job:2026-10-06-08",
+      "familiar": 0.5
     },
     {
       "name": "Field bean plant",
@@ -217,7 +214,7 @@
       "why": [
         "the check doubts a four-year-old would recognise it"
       ],
-      "from": "job:2026-10-06-07",
+      "from": "job:2026-10-06-08",
       "familiar": 0.5
     },
     {
@@ -230,7 +227,7 @@
       "why": [
         "the check doubts a four-year-old would recognise it"
       ],
-      "from": "job:2026-10-06-07",
+      "from": "job:2026-10-06-08",
       "familiar": 0.5
     }
   ]

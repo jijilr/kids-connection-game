@@ -13127,7 +13127,7 @@
       "published_file": "Assets/pictures/pea_plant.webp"
     },
     "job_2026_10_06_07_1_01_c4": {
-      "thing_id": "lady_finger_plant",
+      "thing_id": null,
       "expected_thing": "lady_finger_plant",
       "master_file": "tools/pictures/tiles/masters/job_2026_10_06_07_1_01_c4.png",
       "master_size": [
@@ -13169,11 +13169,10 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "Lady finger plant was taken out of the game: it is Ladies finger plant again",
       "history": [],
-      "reviewed_on": "2026-10-06",
-      "published_file": "Assets/pictures/lady_finger_plant.webp"
+      "reviewed_on": "2026-10-06"
     },
     "job_2026_10_06_07_2_01_c1": {
       "thing_id": "bean_plant",
