@@ -18,6 +18,10 @@ if not. No clip here has been checked by ear: the catalogue says so for each.
     python tools/voice/record_names.py             record what has no clip yet, then publish
     python tools/voice/record_names.py --again NAME [NAME...]    record these again
     python tools/voice/record_names.py --publish   only put the cached clips of things in the game into the game
+
+The same voice speaks the clues and the explanation of every group (tools/content/
+group_words.py writes them): tools/voice/clips/groups/ is their cache, and
+Assets/audio/groups/ is where the game plays them from.
 """
 import datetime
 import json
@@ -122,6 +126,75 @@ def publish() -> int:
     return put
 
 
+def group_parts(catalogue: dict) -> list:
+    """Every clue and explanation that has words: (ledger key, file stem, text)."""
+    parts = []
+    for key, group in catalogue.get("groups", {}).items():
+        stem = key.replace("=", "__")
+        for i, clue in enumerate(group.get("clues", []), 1):
+            parts.append((f"{key}:clue{i}", f"{stem}__clue{i}", clue["text"]))
+        if (group.get("explanation") or {}).get("text"):
+            parts.append((f"{key}:explanation", f"{stem}__explanation", group["explanation"]["text"]))
+    return parts
+
+
+def record_groups(again: bool = False) -> int:
+    """Speak the clues and explanations that have no clip yet, or whose words have changed,
+    put them where the game plays them from, and tell the catalogue."""
+    catalogue, ledger = cat.load(), read_ledger()
+    spoken = ledger.setdefault("groups", {})
+    wanted = []
+    for key, stem, text in group_parts(catalogue):
+        made = spoken.get(key)
+        fresh = made and made["text"] == text and made["voice"] == VOICE and (ROOT / made["cache"]).exists()
+        if again or not fresh:
+            wanted.append({"key": key, "text": text, "out": str(CACHE / "groups" / f"{stem}.mp3"), "stem": stem})
+    if wanted and not KOKORO_PYTHON.exists():
+        print(f"Kokoro is not at {KOKORO}, so {len(wanted)} clue(s) and explanation(s) were not recorded. "
+              "The game uses the browser's voice for them.")
+        wanted = []
+    if wanted:
+        (CACHE / "groups").mkdir(parents=True, exist_ok=True)
+        with tempfile.TemporaryDirectory() as folder:
+            listing, result = pathlib.Path(folder) / "list.json", pathlib.Path(folder) / "result.json"
+            listing.write_text(json.dumps({"kokoro": str(KOKORO), "voice": VOICE, "speed": SPEED, "clips": wanted},
+                                          ensure_ascii=False), encoding="utf-8")
+            done = subprocess.run([str(KOKORO_PYTHON), str(SPEAKER), str(listing), str(result)], capture_output=True,
+                                  text=True, encoding="utf-8", errors="replace")
+            if done.returncode != 0 or not result.exists():
+                print("Kokoro did not run, so no clue was recorded:", (done.stdout + done.stderr).strip()[-400:])
+                return 0
+            answer = json.loads(result.read_text(encoding="utf-8"))
+        for item in wanted:
+            made = answer["clips"].get(item["key"])
+            if not made:
+                continue
+            clip = CACHE / "groups" / f"{item['stem']}.mp3"
+            spoken[item["key"]] = {
+                "text": item["text"], "voice": VOICE, "speed": SPEED, "seconds": made["seconds"],
+                "cache": cat.relative(clip), "sha256": cat.fingerprint(clip),
+                "game_file": f"Assets/audio/groups/{item['stem']}.mp3",
+                "recorded_on": datetime.date.today().isoformat(), "made_on": answer["device"]}
+        cat.write_json(LEDGER, ledger)
+        for key, why in answer["failed"].items():
+            print(f"  not recorded - {key}: {why}")
+        print(f"{len(answer['clips'])} clue(s) and explanation(s) recorded with Kokoro, voice {VOICE}.")
+    # into the game's own folder; a clip whose words are no longer in the catalogue is left out of it
+    GROUP_GAME = ROOT / "Assets/audio/groups"
+    GROUP_GAME.mkdir(parents=True, exist_ok=True)
+    live = {key for key, _, _ in group_parts(catalogue)}
+    for key, made in spoken.items():
+        target = ROOT / made["game_file"]
+        if key in live and (ROOT / made["cache"]).exists():
+            if not target.exists() or cat.fingerprint(target) != made["sha256"]:
+                shutil.copyfile(ROOT / made["cache"], target)
+        elif target.exists():
+            target.unlink()         # the cached copy stays
+    with cat.changing("record_names.py") as changed:
+        cat.sync_group_voice(changed)
+    return len(wanted)
+
+
 def main():
     args = sys.argv[1:]
     again = set()
@@ -130,6 +203,7 @@ def main():
     if "--publish" not in args:
         record(again)
     publish()
+    record_groups(again="--again-groups" in args)
 
 
 if __name__ == "__main__":

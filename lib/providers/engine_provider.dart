@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/foundation.dart';
 import '../models/entity.dart';
 import '../models/dimension.dart';
+import '../models/group_words.dart';
 import '../services/board_assembler.dart';
 import '../services/content_repository.dart';
 import '../services/media.dart';
@@ -45,6 +46,19 @@ class EngineProvider extends ChangeNotifier {
 
   final List<_Level> _stack = [];
   Set<String> _lastTiles = {};
+
+  // Clues: a ladder for one group at a time. Asking for a clue never costs a star.
+  String? _clueGroup;
+  int _clueStep = -1;
+
+  /// The clue now showing, or null.
+  Spoken? clue;
+
+  /// How many clues he has asked for on this board. Kept to see how he plays, never to mark him.
+  int cluesUsed = 0;
+
+  /// The explanation of the group he has just found, or null.
+  Spoken? explanation;
 
   Board? board;
   final List<BoardGroup> solved = [];
@@ -90,6 +104,47 @@ class EngineProvider extends ChangeNotifier {
   }
 
   bool get anyDescendable => solved.any(canDescend);
+
+  GroupWords? _wordsOf(BoardGroup g) => _repo.words.of(g.dimId, g.value);
+
+  List<BoardGroup> get _groupsWithClues => board == null
+      ? const []
+      : [
+          for (final g in board!.groups)
+            if (!_isSolvedGroup(g) && (_wordsOf(g)?.clues.isNotEmpty ?? false)) g
+        ];
+
+  /// Whether a clue can be given now.
+  bool get hasClue => !boardFinished && _groupsWithClues.isNotEmpty;
+
+  /// The next clue: one step up the ladder of the group he is working on. The group is
+  /// the one most of his chosen tiles belong to; failing that, the one the ladder is
+  /// already on; failing that, the first group still to be found. A clue points at the
+  /// group's idea and never names a tile. It costs no star and no mistake.
+  Spoken? nextClue() {
+    final open = _groupsWithClues;
+    if (boardFinished || open.isEmpty) return null;
+    BoardGroup? target;
+    int most = 0;
+    for (final g in open) {
+      final chosen = g.items.where(isSelected).length;
+      if (chosen > most) {
+        most = chosen;
+        target = g;
+      }
+    }
+    target ??= open.where((g) => g.value == _clueGroup).firstOrNull ?? open.first;
+    final ladder = _wordsOf(target)!.clues;
+    _clueStep = target.value == _clueGroup ? min(_clueStep + 1, ladder.length - 1) : 0;
+    _clueGroup = target.value;
+    clue = ladder[_clueStep];
+    cluesUsed++;
+    notifyListeners();
+    return clue;
+  }
+
+  /// The explanation written for [g], if any: why these belong together, and one true fact.
+  Spoken? explanationOf(BoardGroup g) => _wordsOf(g)?.explanation;
 
   /// The solved groups that have a board inside them.
   List<BoardGroup> get diggable => solved.where(canDescend).toList();
@@ -142,6 +197,11 @@ class EngineProvider extends ChangeNotifier {
     mistakes = 0;
     _order = b == null ? [] : [...b.tiles];
     message = '';
+    _clueGroup = null;
+    _clueStep = -1;
+    clue = null;
+    cluesUsed = 0;
+    explanation = null;
     if (b != null) {
       progress.opened(Progress.boardId(lvl.filter), _now());
       unawaited(_progressStore.save(progress));
@@ -184,6 +244,12 @@ class EngineProvider extends ChangeNotifier {
       if (_isSolvedGroup(g) || !_same(g, ids)) continue;
       solved.add(g);
       selected.clear();
+      explanation = explanationOf(g);
+      if (g.value == _clueGroup) {
+        _clueGroup = null;
+        _clueStep = -1;
+        clue = null;
+      }
       if (boardFinished) {
         progress.solved(Progress.boardId(_stack.last.filter), _now());
         // Nowhere deeper to go from here: an order for more content, which the job reads.

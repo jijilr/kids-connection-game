@@ -525,6 +525,59 @@ def test_a_thing_settled_before_a_later_field_was_added_is_stamped_against_the_n
     assert "raft" not in saved and not lacking["passed"] and "where_it_travels" in lacking["why"][0]
 
 
+# ------------------------------------------------------------------ clues and explanations
+
+def test_a_clue_never_names_a_thing_of_its_group_and_a_ladder_has_three():
+    import group_words as gw
+    group = {"label": "The leaves", "question": "Which part of the plant do we eat?"}
+    names = ["Spinach plant", "Cabbage plant", "Coriander plant", "Fenugreek plant", "Mustard plant"]
+    banned = gw.banned_words(group, names)
+    assert {"spinach", "cabbage", "coriander"} <= banned
+    assert "plant" not in banned and "leaves" not in banned          # the idea's own words are not names
+    good = ["Think about the green part of a plant.", "It grows above the ground.", "We cook the soft leaves."]
+    assert gw.clue_problems(good, banned) == []
+    assert "names a thing of the group: spinach" in gw.clue_problems(good[:2] + ["Think of spinach."], banned)[0]
+    assert "names a thing of the group: cabbages" in gw.clue_problems(good[:2] + ["Like cabbages."], banned)[0]
+    assert "a ladder needs 3" in gw.clue_problems(good[:2], banned)[0]
+
+
+def test_the_words_of_a_group_are_kept_only_when_the_checks_agree():
+    import group_words as gw
+    group = {"field": "part_we_eat", "value": "leaves", "label": "The leaves",
+             "question": "Which part of the plant do we eat?", "members": ["Spinach plant", "Cabbage plant"]}
+    page = "Spinach is a green, leafy vegetable. It is eaten cooked or raw."
+    written = {"clues": ["Think about the green part.", "It grows above the ground.", "We cook the soft green part."],
+               "explanation": {"together": "We eat the leaves of these plants.", "fact": "Spinach is a green leafy plant.",
+                               "quote": "Spinach is a green, leafy vegetable.", "source": "spinach_plant:wikipedia_simple"}}
+    agreed = {"clues": [{"true": True, "names": False, "simple": True}] * 3, "ladder": True, "supported": True,
+              "explains": True, "for_a_child": True}
+
+    def run(writer, checker):
+        real = (gw.reslib.ask, gw.sources_for)
+        gw.reslib.ask = lambda client, config, spend, system, user, options=None: dict(writer if system == gw.WRITER else checker)
+        gw.sources_for = lambda names: ("<source>", {"spinach_plant:wikipedia_simple": page}, {})
+        try:
+            return gw.write_one(None, {"model": "x", "thinking": "off"}, None, group, "Vegetable plants", ["The fruit"],
+                                ["Spinach plant", "Cabbage plant"])
+        finally:
+            gw.reslib.ask, gw.sources_for = real
+
+    kept = run(written, agreed)
+    assert "held" not in kept and len(kept["clues"]) == 3
+    assert kept["explanation"]["text"] == "We eat the leaves of these plants. Spinach is a green leafy plant."
+    # a fact whose sentence is not in the saved page is not kept; the clues still are
+    invented = dict(written, explanation=dict(written["explanation"], quote="Spinach makes you fly."))
+    partly = run(invented, agreed)
+    assert partly["explanation"] is None and len(partly["clues"]) == 3
+    assert "not in the saved page" in partly["held"][0]
+    # a clue the second reading calls untrue is not kept
+    doubted = dict(agreed, clues=[{"true": False, "names": False, "simple": True}] * 3)
+    assert run(written, doubted)["clues"] == []
+    # an explanation of four sentences is refused
+    long = dict(written, explanation=dict(written["explanation"], together="We eat the leaves. They are green. They are soft."))
+    assert "two or three" in run(long, agreed)["held"][0]
+
+
 # ------------------------------------------------------------------ the money
 
 def test_the_cap_is_hard():

@@ -1,0 +1,1021 @@
+{
+  "about": "The game's copy of the clues and explanations, one entry for each group (a field and one of its values). Written from the catalogue on every save. Nobody edits it.",
+  "groups": {
+    "kind_of_thing=plant": {
+      "clues": [
+        {
+          "text": "Think about things that grow in the ground.",
+          "audio": "Assets/audio/groups/kind_of_thing__plant__clue1.mp3"
+        },
+        {
+          "text": "They are alive and they do not walk or fly.",
+          "audio": "Assets/audio/groups/kind_of_thing__plant__clue2.mp3"
+        },
+        {
+          "text": "They have roots, stems, and leaves, and they make their own food.",
+          "audio": "Assets/audio/groups/kind_of_thing__plant__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These all grow from the ground and are alive. They make their own food with sunlight. A carrot is a plant, and we eat its orange root.",
+        "audio": "Assets/audio/groups/kind_of_thing__plant__explanation.mp3"
+      }
+    },
+    "part_we_eat=leaves": {
+      "clues": [
+        {
+          "text": "Think about the green part of a plant.",
+          "audio": "Assets/audio/groups/part_we_eat__leaves__clue1.mp3"
+        },
+        {
+          "text": "This green part grows up high, not under the ground.",
+          "audio": "Assets/audio/groups/part_we_eat__leaves__clue2.mp3"
+        },
+        {
+          "text": "We pick this soft green part and cook it for our food.",
+          "audio": "Assets/audio/groups/part_we_eat__leaves__clue3.mp3"
+        }
+      ],
+      "explanation": null
+    },
+    "where_it_travels=rails": {
+      "clues": [
+        {
+          "text": "Think about a path that wheels roll along.",
+          "audio": "Assets/audio/groups/where_it_travels__rails__clue1.mp3"
+        },
+        {
+          "text": "This path is made of two long metal lines.",
+          "audio": "Assets/audio/groups/where_it_travels__rails__clue2.mp3"
+        },
+        {
+          "text": "The wheels stay on these lines and cannot go off.",
+          "audio": "Assets/audio/groups/where_it_travels__rails__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "All of these move along metal lines on the ground. They cannot go anywhere else. A train can carry very heavy things, like coal, over long distances.",
+        "audio": "Assets/audio/groups/where_it_travels__rails__explanation.mp3"
+      }
+    },
+    "pet_farm_or_wild_of_bird=wild_water": {
+      "clues": [
+        {
+          "text": "Think about birds that spend lots of time in the water.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_water__clue1.mp3"
+        },
+        {
+          "text": "These birds find their food in the water.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_water__clue2.mp3"
+        },
+        {
+          "text": "These birds are not pets and do not live on a farm.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_water__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These birds all live near water and find their food there. They are wild birds, not pets or farm animals. Penguins use their flippers to swim underwater, but they cannot fly in the air.",
+        "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_water__explanation.mp3"
+      }
+    },
+    "kind_of_thing=animal": {
+      "clues": [
+        {
+          "text": "Think about something that is alive and can move on its own.",
+          "audio": "Assets/audio/groups/kind_of_thing__animal__clue1.mp3"
+        },
+        {
+          "text": "It can find its own food and eat it.",
+          "audio": "Assets/audio/groups/kind_of_thing__animal__clue2.mp3"
+        },
+        {
+          "text": "It can have babies, and it breathes and grows.",
+          "audio": "Assets/audio/groups/kind_of_thing__animal__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These all are living things that move, eat and grow. They are not plants, not rocks or water, and not things people make. A giraffe is the tallest animal that lives on land.",
+        "audio": "Assets/audio/groups/kind_of_thing__animal__explanation.mp3"
+      }
+    },
+    "kind_of_thing=nature_not_alive": {
+      "clues": [
+        {
+          "text": "Think about things you can see outside that are not alive.",
+          "audio": "Assets/audio/groups/kind_of_thing__nature_not_alive__clue1.mp3"
+        },
+        {
+          "text": "These things are not animals and not plants.",
+          "audio": "Assets/audio/groups/kind_of_thing__nature_not_alive__clue2.mp3"
+        },
+        {
+          "text": "People do not make these things; they are just there in the world.",
+          "audio": "Assets/audio/groups/kind_of_thing__nature_not_alive__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These are all things we find in nature. They are not alive and nobody makes them. A mountain is a very big, high bump on the land.",
+        "audio": "Assets/audio/groups/kind_of_thing__nature_not_alive__explanation.mp3"
+      }
+    },
+    "kind_of_thing=made_by_people": {
+      "clues": [
+        {
+          "text": "Think about things that are not found growing or walking on their own.",
+          "audio": "Assets/audio/groups/kind_of_thing__made_by_people__clue1.mp3"
+        },
+        {
+          "text": "People use their hands and tools to make these things.",
+          "audio": "Assets/audio/groups/kind_of_thing__made_by_people__clue2.mp3"
+        },
+        {
+          "text": "These things would not be here if nobody had made them.",
+          "audio": "Assets/audio/groups/kind_of_thing__made_by_people__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These things are all made by people. They are not animals, plants, or things in nature. A bus can carry many people at once.",
+        "audio": "Assets/audio/groups/kind_of_thing__made_by_people__explanation.mp3"
+      }
+    },
+    "kind_of_animal=mammal": {
+      "clues": [
+        {
+          "text": "Think about animals that drink their mother's milk when they are babies.",
+          "audio": "Assets/audio/groups/kind_of_animal__mammal__clue1.mp3"
+        },
+        {
+          "text": "These animals have hair or fur on their bodies.",
+          "audio": "Assets/audio/groups/kind_of_animal__mammal__clue2.mp3"
+        },
+        {
+          "text": "These animals are warm when you touch them, even when it is cold outside.",
+          "audio": "Assets/audio/groups/kind_of_animal__mammal__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "They all drink milk from their mothers when they are little, and they have fur or hair. The biggest animal on land is one of these, and it has a long nose called a trunk.",
+        "audio": "Assets/audio/groups/kind_of_animal__mammal__explanation.mp3"
+      }
+    },
+    "kind_of_animal=bird": {
+      "clues": [
+        {
+          "text": "Think about animals that have feathers.",
+          "audio": "Assets/audio/groups/kind_of_animal__bird__clue1.mp3"
+        },
+        {
+          "text": "These animals have wings and a beak.",
+          "audio": "Assets/audio/groups/kind_of_animal__bird__clue2.mp3"
+        },
+        {
+          "text": "Most of them can fly, but some cannot.",
+          "audio": "Assets/audio/groups/kind_of_animal__bird__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "They all have feathers and wings. Many of them can fly. A penguin has flippers to swim, but it cannot fly in the air.",
+        "audio": "Assets/audio/groups/kind_of_animal__bird__explanation.mp3"
+      }
+    },
+    "kind_of_animal=fish": {
+      "clues": [
+        {
+          "text": "Think about animals that live in water all the time.",
+          "audio": "Assets/audio/groups/kind_of_animal__fish__clue1.mp3"
+        },
+        {
+          "text": "They swim with fins and have a tail for swimming.",
+          "audio": "Assets/audio/groups/kind_of_animal__fish__clue2.mp3"
+        },
+        {
+          "text": "They breathe in the water with gills, not air.",
+          "audio": "Assets/audio/groups/kind_of_animal__fish__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These animals all live in water and swim with fins. They breathe using gills. A goldfish can learn to push a small ball under the water.",
+        "audio": "Assets/audio/groups/kind_of_animal__fish__explanation.mp3"
+      }
+    },
+    "kind_of_animal=reptile": {
+      "clues": [
+        {
+          "text": "Think about animals with dry, scaly skin.",
+          "audio": "Assets/audio/groups/kind_of_animal__reptile__clue1.mp3"
+        },
+        {
+          "text": "These animals often lay eggs on land.",
+          "audio": "Assets/audio/groups/kind_of_animal__reptile__clue2.mp3"
+        },
+        {
+          "text": "They are cold-blooded and many crawl on their bellies.",
+          "audio": "Assets/audio/groups/kind_of_animal__reptile__clue3.mp3"
+        }
+      ],
+      "explanation": null
+    },
+    "kind_of_animal=dinosaur": {
+      "clues": [
+        {
+          "text": "Think about animals that lived very, very long ago.",
+          "audio": "Assets/audio/groups/kind_of_animal__dinosaur__clue1.mp3"
+        },
+        {
+          "text": "These animals are all gone now, and we only see their bones.",
+          "audio": "Assets/audio/groups/kind_of_animal__dinosaur__clue2.mp3"
+        },
+        {
+          "text": "Some of these animals were huge, and some had sharp teeth or horns.",
+          "audio": "Assets/audio/groups/kind_of_animal__dinosaur__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These animals all lived long ago and are not alive today. We know about them from their bones. Some of these animals were very big, with long necks and long tails.",
+        "audio": "Assets/audio/groups/kind_of_animal__dinosaur__explanation.mp3"
+      }
+    },
+    "kind_of_dinosaur=land_hunter": {
+      "clues": [
+        {
+          "text": "Some dinosaurs ate other animals.",
+          "audio": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue1.mp3"
+        },
+        {
+          "text": "These dinosaurs hunted other dinosaurs on land.",
+          "audio": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue2.mp3"
+        },
+        {
+          "text": "They used strong legs and sharp teeth to catch their food.",
+          "audio": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue3.mp3"
+        }
+      ],
+      "explanation": null
+    },
+    "kind_of_dinosaur=flyer": {
+      "clues": [
+        {
+          "text": "Think about animals that can go up in the sky.",
+          "audio": "Assets/audio/groups/kind_of_dinosaur__flyer__clue1.mp3"
+        },
+        {
+          "text": "These animals had big wings and could fly.",
+          "audio": "Assets/audio/groups/kind_of_dinosaur__flyer__clue2.mp3"
+        },
+        {
+          "text": "They lived long ago and flew over the land and sea.",
+          "audio": "Assets/audio/groups/kind_of_dinosaur__flyer__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These are all flyers. They had wings and could fly in the sky. One of them was as tall as a giraffe when it stood on the ground.",
+        "audio": "Assets/audio/groups/kind_of_dinosaur__flyer__explanation.mp3"
+      }
+    },
+    "kind_of_dinosaur=swimmer": {
+      "clues": [
+        {
+          "text": "Think about animals that live in the water all the time.",
+          "audio": "Assets/audio/groups/kind_of_dinosaur__swimmer__clue1.mp3"
+        },
+        {
+          "text": "They swim in the sea and never walk on land.",
+          "audio": "Assets/audio/groups/kind_of_dinosaur__swimmer__clue2.mp3"
+        },
+        {
+          "text": "They use flippers or paddles to move through the water.",
+          "audio": "Assets/audio/groups/kind_of_dinosaur__swimmer__clue3.mp3"
+        }
+      ],
+      "explanation": null
+    },
+    "kind_of_plant=flower": {
+      "clues": [
+        {
+          "text": "Think about the pretty part of a plant that bees visit.",
+          "audio": "Assets/audio/groups/kind_of_plant__flower__clue1.mp3"
+        },
+        {
+          "text": "This part is often bright and smells nice.",
+          "audio": "Assets/audio/groups/kind_of_plant__flower__clue2.mp3"
+        },
+        {
+          "text": "This part makes seeds after it is done blooming.",
+          "audio": "Assets/audio/groups/kind_of_plant__flower__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These are all flowers. They have pretty petals that make seeds. A sunflower can grow as tall as three metres, taller than a grown-up!",
+        "audio": "Assets/audio/groups/kind_of_plant__flower__explanation.mp3"
+      }
+    },
+    "kind_of_plant=vegetable": {
+      "clues": [
+        {
+          "text": "Think about a plant we grow to eat.",
+          "audio": "Assets/audio/groups/kind_of_plant__vegetable__clue1.mp3"
+        },
+        {
+          "text": "We eat a part of this plant in our meals.",
+          "audio": "Assets/audio/groups/kind_of_plant__vegetable__clue2.mp3"
+        },
+        {
+          "text": "This plant gives us food for our lunch or dinner.",
+          "audio": "Assets/audio/groups/kind_of_plant__vegetable__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These plants all give us food we can eat. We grow them to eat in our meals. People eat the head of the garlic plant, which grows at the bottom of a long green stalk.",
+        "audio": "Assets/audio/groups/kind_of_plant__vegetable__explanation.mp3"
+      }
+    },
+    "kind_of_nature=sky": {
+      "clues": [
+        {
+          "text": "Think about things you can see when you look up.",
+          "audio": "Assets/audio/groups/kind_of_nature__sky__clue1.mp3"
+        },
+        {
+          "text": "You can see these things high above your head.",
+          "audio": "Assets/audio/groups/kind_of_nature__sky__clue2.mp3"
+        },
+        {
+          "text": "These things are far away, up in the sky.",
+          "audio": "Assets/audio/groups/kind_of_nature__sky__clue3.mp3"
+        }
+      ],
+      "explanation": null
+    },
+    "kind_of_nature=water": {
+      "clues": [
+        {
+          "text": "Think about something wet you can see outside.",
+          "audio": "Assets/audio/groups/kind_of_nature__water__clue1.mp3"
+        },
+        {
+          "text": "It is not alive, but plants and animals need it.",
+          "audio": "Assets/audio/groups/kind_of_nature__water__clue2.mp3"
+        },
+        {
+          "text": "It can be big or small, and it stays in one place or moves.",
+          "audio": "Assets/audio/groups/kind_of_nature__water__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "They are all wet places in nature. They are not alive, but they are full of water. A river starts small on high ground and gets bigger as it flows down.",
+        "audio": "Assets/audio/groups/kind_of_nature__water__explanation.mp3"
+      }
+    },
+    "kind_of_nature=land": {
+      "clues": [
+        {
+          "text": "Think about a place you can walk on, outside.",
+          "audio": "Assets/audio/groups/kind_of_nature__land__clue1.mp3"
+        },
+        {
+          "text": "It is a part of the ground, not water or sky.",
+          "audio": "Assets/audio/groups/kind_of_nature__land__clue2.mp3"
+        },
+        {
+          "text": "You can stand on it and look around.",
+          "audio": "Assets/audio/groups/kind_of_nature__land__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These are all places on the land where you can go and stand. A hill is smaller than a mountain and not as steep.",
+        "audio": "Assets/audio/groups/kind_of_nature__land__explanation.mp3"
+      }
+    },
+    "kind_of_nature=ground": {
+      "clues": [
+        {
+          "text": "Think about the hard ground under your feet.",
+          "audio": "Assets/audio/groups/kind_of_nature__ground__clue1.mp3"
+        },
+        {
+          "text": "You can pick it up, but it was never alive.",
+          "audio": "Assets/audio/groups/kind_of_nature__ground__clue2.mp3"
+        },
+        {
+          "text": "It is not water, not sky, and not a place you live.",
+          "audio": "Assets/audio/groups/kind_of_nature__ground__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These are all bits of the ground. They are not alive and you can touch them. Sand is made of tiny pieces of rock, smaller than gravel.",
+        "audio": "Assets/audio/groups/kind_of_nature__ground__explanation.mp3"
+      }
+    },
+    "kind_of_made_thing=vehicle": {
+      "clues": [
+        {
+          "text": "Think about something that takes you from one place to another.",
+          "audio": "Assets/audio/groups/kind_of_made_thing__vehicle__clue1.mp3"
+        },
+        {
+          "text": "It moves, and it carries people or things.",
+          "audio": "Assets/audio/groups/kind_of_made_thing__vehicle__clue2.mp3"
+        },
+        {
+          "text": "You can ride in it on land, on water, or in the sky.",
+          "audio": "Assets/audio/groups/kind_of_made_thing__vehicle__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "All of these carry people or things from one place to another. Some go on roads, some on tracks, some on water, and some in the sky. A ship is a big vehicle that travels on water, and it is bigger than a boat.",
+        "audio": "Assets/audio/groups/kind_of_made_thing__vehicle__explanation.mp3"
+      }
+    },
+    "kind_of_made_thing=toy": {
+      "clues": [
+        {
+          "text": "Think about things you play with.",
+          "audio": "Assets/audio/groups/kind_of_made_thing__toy__clue1.mp3"
+        },
+        {
+          "text": "You hold them, move them, or make them go.",
+          "audio": "Assets/audio/groups/kind_of_made_thing__toy__clue2.mp3"
+        },
+        {
+          "text": "They are made just for fun, not for work.",
+          "audio": "Assets/audio/groups/kind_of_made_thing__toy__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These are all things you play with. They are made to be fun for children. A paper plane can stay up in the air for almost 28 seconds.",
+        "audio": "Assets/audio/groups/kind_of_made_thing__toy__explanation.mp3"
+      }
+    },
+    "kind_of_made_thing=household": {
+      "clues": [
+        {
+          "text": "Think about things you find inside a home.",
+          "audio": "Assets/audio/groups/kind_of_made_thing__household__clue1.mp3"
+        },
+        {
+          "text": "These things help us sit, eat, rest, or keep clean.",
+          "audio": "Assets/audio/groups/kind_of_made_thing__household__clue2.mp3"
+        },
+        {
+          "text": "You use them every day in your own house.",
+          "audio": "Assets/audio/groups/kind_of_made_thing__household__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These things all belong in a house. We use them every day for sitting, eating, resting, or cleaning. A sponge has many little holes that help it soak up water and wipe away dirt.",
+        "audio": "Assets/audio/groups/kind_of_made_thing__household__explanation.mp3"
+      }
+    },
+    "kind_of_made_thing=tool": {
+      "clues": [
+        {
+          "text": "Think about something you hold in your hand to help you do work.",
+          "audio": "Assets/audio/groups/kind_of_made_thing__tool__clue1.mp3"
+        },
+        {
+          "text": "It helps you build or fix things.",
+          "audio": "Assets/audio/groups/kind_of_made_thing__tool__clue2.mp3"
+        },
+        {
+          "text": "You use it to make or change things.",
+          "audio": "Assets/audio/groups/kind_of_made_thing__tool__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These are all tools. People use them to build, fix, or make things. A hammer is used to put nails into wood.",
+        "audio": "Assets/audio/groups/kind_of_made_thing__tool__explanation.mp3"
+      }
+    },
+    "part_we_eat=fruit": {
+      "clues": [
+        {
+          "text": "Think about the part of the plant that holds the seeds.",
+          "audio": "Assets/audio/groups/part_we_eat__fruit__clue1.mp3"
+        },
+        {
+          "text": "This part grows from a flower and can be round or long.",
+          "audio": "Assets/audio/groups/part_we_eat__fruit__clue2.mp3"
+        },
+        {
+          "text": "We often pick it when it is ripe and eat it in our food.",
+          "audio": "Assets/audio/groups/part_we_eat__fruit__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These plants all give us a part we can eat. That part grows from a flower and has seeds inside. The chilli we eat is the fruit of the chilli plant.",
+        "audio": "Assets/audio/groups/part_we_eat__fruit__explanation.mp3"
+      }
+    },
+    "part_we_eat=under_the_ground": {
+      "clues": [
+        {
+          "text": "Think about the part of a plant that hides in the dark.",
+          "audio": "Assets/audio/groups/part_we_eat__under_the_ground__clue1.mp3"
+        },
+        {
+          "text": "This part grows down in the soil, not up in the air.",
+          "audio": "Assets/audio/groups/part_we_eat__under_the_ground__clue2.mp3"
+        },
+        {
+          "text": "We dig it out of the ground when we want to eat it.",
+          "audio": "Assets/audio/groups/part_we_eat__under_the_ground__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These plants all keep their tasty part under the ground. We dig them up to eat them. The part of the potato plant that we eat grows under the ground.",
+        "audio": "Assets/audio/groups/part_we_eat__under_the_ground__explanation.mp3"
+      }
+    },
+    "part_we_eat=seeds_or_pods": {
+      "clues": [
+        {
+          "text": "Think about the part of a plant that holds the baby plant.",
+          "audio": "Assets/audio/groups/part_we_eat__seeds_or_pods__clue1.mp3"
+        },
+        {
+          "text": "This part can be small and round, or long and thin.",
+          "audio": "Assets/audio/groups/part_we_eat__seeds_or_pods__clue2.mp3"
+        },
+        {
+          "text": "We often open it to find the little ones inside.",
+          "audio": "Assets/audio/groups/part_we_eat__seeds_or_pods__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "We eat the seeds or pods of these plants. The seeds are inside the pods. A pea can be a small round seed or a pod with seeds inside.",
+        "audio": "Assets/audio/groups/part_we_eat__seeds_or_pods__explanation.mp3"
+      }
+    },
+    "where_it_travels=road": {
+      "clues": [
+        {
+          "text": "Think about how people go from one place to another.",
+          "audio": "Assets/audio/groups/where_it_travels__road__clue1.mp3"
+        },
+        {
+          "text": "They move along a hard, flat path.",
+          "audio": "Assets/audio/groups/where_it_travels__road__clue2.mp3"
+        },
+        {
+          "text": "They have wheels that roll on the ground.",
+          "audio": "Assets/audio/groups/where_it_travels__road__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "All of these carry people or goods and they roll on wheels along the road. A bicycle has two wheels, and you push the pedals with your feet to make it go.",
+        "audio": "Assets/audio/groups/where_it_travels__road__explanation.mp3"
+      }
+    },
+    "where_it_travels=water": {
+      "clues": [
+        {
+          "text": "Think about a place where you see lots of water.",
+          "audio": "Assets/audio/groups/where_it_travels__water__clue1.mp3"
+        },
+        {
+          "text": "This kind of vehicle moves on top of the water.",
+          "audio": "Assets/audio/groups/where_it_travels__water__clue2.mp3"
+        },
+        {
+          "text": "It can carry people or things across the water.",
+          "audio": "Assets/audio/groups/where_it_travels__water__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These all travel on water. They carry people or things across rivers, lakes, and seas. A ship is a big vehicle that travels on water, and it is bigger than a boat.",
+        "audio": "Assets/audio/groups/where_it_travels__water__explanation.mp3"
+      }
+    },
+    "where_it_travels=air": {
+      "clues": [
+        {
+          "text": "Think about things that go high up, above your head.",
+          "audio": "Assets/audio/groups/where_it_travels__air__clue1.mp3"
+        },
+        {
+          "text": "They do not need a road or a track to move.",
+          "audio": "Assets/audio/groups/where_it_travels__air__clue2.mp3"
+        },
+        {
+          "text": "They move up in the sky, not on the ground or water.",
+          "audio": "Assets/audio/groups/where_it_travels__air__clue3.mp3"
+        }
+      ],
+      "explanation": null
+    },
+    "kind_of_house_thing=furniture": {
+      "clues": [
+        {
+          "text": "Think about the things in a house that people use every day.",
+          "audio": "Assets/audio/groups/kind_of_house_thing__furniture__clue1.mp3"
+        },
+        {
+          "text": "These things are big and heavy, and they stay in one place.",
+          "audio": "Assets/audio/groups/kind_of_house_thing__furniture__clue2.mp3"
+        },
+        {
+          "text": "You sit on them, sleep on them, or keep your things inside them.",
+          "audio": "Assets/audio/groups/kind_of_house_thing__furniture__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These are all big things in a house that people use to sit, sleep, or keep things. A bed can be small for one person or big for two people.",
+        "audio": "Assets/audio/groups/kind_of_house_thing__furniture__explanation.mp3"
+      }
+    },
+    "kind_of_house_thing=eating": {
+      "clues": [
+        {
+          "text": "Think about what you use when you are hungry or thirsty.",
+          "audio": "Assets/audio/groups/kind_of_house_thing__eating__clue1.mp3"
+        },
+        {
+          "text": "You hold these in your hands at the table.",
+          "audio": "Assets/audio/groups/kind_of_house_thing__eating__clue2.mp3"
+        },
+        {
+          "text": "They help food or drink go into your mouth.",
+          "audio": "Assets/audio/groups/kind_of_house_thing__eating__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These are all things you use at the table when you eat or drink. You hold them in your hands to help you. A spoon is a tool people use for eating foods that are like liquids, such as soup.",
+        "audio": "Assets/audio/groups/kind_of_house_thing__eating__explanation.mp3"
+      }
+    },
+    "kind_of_house_thing=cleaning": {
+      "clues": [
+        {
+          "text": "Think about things that help make a place clean.",
+          "audio": "Assets/audio/groups/kind_of_house_thing__cleaning__clue1.mp3"
+        },
+        {
+          "text": "You use them when something is dirty.",
+          "audio": "Assets/audio/groups/kind_of_house_thing__cleaning__clue2.mp3"
+        },
+        {
+          "text": "They help you wash or sweep away the dirt.",
+          "audio": "Assets/audio/groups/kind_of_house_thing__cleaning__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These are all things you use to clean up messes and dirt. A sponge is full of tiny holes that soak up water and dirt.",
+        "audio": "Assets/audio/groups/kind_of_house_thing__cleaning__explanation.mp3"
+      }
+    },
+    "kind_of_house_thing=electric": {
+      "clues": [
+        {
+          "text": "Think about things in your home that need power to work.",
+          "audio": "Assets/audio/groups/kind_of_house_thing__electric__clue1.mp3"
+        },
+        {
+          "text": "They stop working when the power goes off.",
+          "audio": "Assets/audio/groups/kind_of_house_thing__electric__clue2.mp3"
+        },
+        {
+          "text": "You plug them in or switch them on to make them go.",
+          "audio": "Assets/audio/groups/kind_of_house_thing__electric__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These things all need electricity to work. When you switch them on, they do their job for you. A fridge keeps food cold so it stays good to eat for many days.",
+        "audio": "Assets/audio/groups/kind_of_house_thing__electric__explanation.mp3"
+      }
+    },
+    "shape_of_the_land=high": {
+      "clues": [
+        {
+          "text": "Think about land that goes up high.",
+          "audio": "Assets/audio/groups/shape_of_the_land__high__clue1.mp3"
+        },
+        {
+          "text": "It is much taller than the ground around it.",
+          "audio": "Assets/audio/groups/shape_of_the_land__high__clue2.mp3"
+        },
+        {
+          "text": "You would have to climb up to reach the top.",
+          "audio": "Assets/audio/groups/shape_of_the_land__high__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These are all places where the land goes up high. They are tall and steep, not flat. A mountain is a very big, tall bump on the land.",
+        "audio": "Assets/audio/groups/shape_of_the_land__high__explanation.mp3"
+      }
+    },
+    "shape_of_the_land=hollow": {
+      "clues": [
+        {
+          "text": "Think about a place that goes down, not up.",
+          "audio": "Assets/audio/groups/shape_of_the_land__hollow__clue1.mp3"
+        },
+        {
+          "text": "It is a low or empty spot in the ground.",
+          "audio": "Assets/audio/groups/shape_of_the_land__hollow__clue2.mp3"
+        },
+        {
+          "text": "You can look down into it, and it is not flat or high.",
+          "audio": "Assets/audio/groups/shape_of_the_land__hollow__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These are all places where the land goes down low. Some are big and some are small. A crater is a round dent on the ground, like a big bowl.",
+        "audio": "Assets/audio/groups/shape_of_the_land__hollow__explanation.mp3"
+      }
+    },
+    "pet_farm_or_wild=pet": {
+      "clues": [
+        {
+          "text": "Think about an animal that lives in your house with you.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__pet__clue1.mp3"
+        },
+        {
+          "text": "This animal stays close to people and is cared for by them.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__pet__clue2.mp3"
+        },
+        {
+          "text": "People feed it, love it, and it stays in the home.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__pet__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These animals all live with people in their homes. People feed them and take care of them every day. Dogs like to be near people and are often called a person's best friend.",
+        "audio": "Assets/audio/groups/pet_farm_or_wild__pet__explanation.mp3"
+      }
+    },
+    "pet_farm_or_wild=farm": {
+      "clues": [
+        {
+          "text": "Think about animals that live where people grow food.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__farm__clue1.mp3"
+        },
+        {
+          "text": "These animals are kept by people who work outside in fields.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__farm__clue2.mp3"
+        },
+        {
+          "text": "People raise these animals to help them and to give them things they need.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__farm__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These animals all live with people on farms. People take care of them and use them for many things. A baby cow can walk just a few minutes after it is born.",
+        "audio": "Assets/audio/groups/pet_farm_or_wild__farm__explanation.mp3"
+      }
+    },
+    "pet_farm_or_wild=wild_land": {
+      "clues": [
+        {
+          "text": "Think about animals that live far away from people.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue1.mp3"
+        },
+        {
+          "text": "They find their own food and make their own homes.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue2.mp3"
+        },
+        {
+          "text": "They live on the ground, not in water or in a house.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These animals all live on their own in the wild. They do not live in a house or in water. The giraffe is the tallest animal that lives on land.",
+        "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__explanation.mp3"
+      }
+    },
+    "pet_farm_or_wild=wild_water": {
+      "clues": [
+        {
+          "text": "Think about animals that live in the water.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue1.mp3"
+        },
+        {
+          "text": "These animals swim in the big, salty sea.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue2.mp3"
+        },
+        {
+          "text": "They are not pets and not farm animals, and they do not live on land.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "They all live in the water and are wild animals. They swim in the sea, not in a house or on a farm. A whale breathes air from above the water, just like you and me.",
+        "audio": "Assets/audio/groups/pet_farm_or_wild__wild_water__explanation.mp3"
+      }
+    },
+    "pet_farm_or_wild_of_bird=pet": {
+      "clues": [
+        {
+          "text": "Think of a bird that lives in a home with people.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__pet__clue1.mp3"
+        },
+        {
+          "text": "This bird sits in a cage or on a stand inside the house.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__pet__clue2.mp3"
+        },
+        {
+          "text": "People feed it, talk to it, and keep it as a friendly companion.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__pet__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These birds all live with people in their homes. People feed them and take care of them. Some of these birds can copy the sounds people make.",
+        "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__pet__explanation.mp3"
+      }
+    },
+    "pet_farm_or_wild_of_bird=farm": {
+      "clues": [
+        {
+          "text": "This bird lives near people and gets its food from them.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__farm__clue1.mp3"
+        },
+        {
+          "text": "This bird gives people something to eat or to use.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__farm__clue2.mp3"
+        },
+        {
+          "text": "People keep many of these birds together in one place.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__farm__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These birds live with people on farms. Farmers feed them and keep them safe. A mother hen lays eggs, and baby chicks come out of the eggs.",
+        "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__farm__explanation.mp3"
+      }
+    },
+    "pet_farm_or_wild_of_bird=wild_land": {
+      "clues": [
+        {
+          "text": "Think about birds that live free in the open.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3"
+        },
+        {
+          "text": "They find their own food and make their own homes.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3"
+        },
+        {
+          "text": "They do not live with people or on a farm.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3"
+        }
+      ],
+      "explanation": null
+    },
+    "what_people_do_there=pray": {
+      "clues": [
+        {
+          "text": "Think about a quiet place where people go to talk to God.",
+          "audio": "Assets/audio/groups/what_people_do_there__pray__clue1.mp3"
+        },
+        {
+          "text": "People go there to say thank you or ask for help from God.",
+          "audio": "Assets/audio/groups/what_people_do_there__pray__clue2.mp3"
+        },
+        {
+          "text": "People sit or stand together and show love to God there.",
+          "audio": "Assets/audio/groups/what_people_do_there__pray__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These are all special buildings where people go to pray and show love to God. In a temple, people do special things and pray to God.",
+        "audio": "Assets/audio/groups/what_people_do_there__pray__explanation.mp3"
+      }
+    },
+    "what_people_do_there=buy": {
+      "clues": [
+        {
+          "text": "Think about a place where people go to get things.",
+          "audio": "Assets/audio/groups/what_people_do_there__buy__clue1.mp3"
+        },
+        {
+          "text": "People give money there and take something home.",
+          "audio": "Assets/audio/groups/what_people_do_there__buy__clue2.mp3"
+        },
+        {
+          "text": "It is a busy place where people buy and sell.",
+          "audio": "Assets/audio/groups/what_people_do_there__buy__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "In all these places, people go to buy things or sell things. A market is a place where people go to buy or sell things.",
+        "audio": "Assets/audio/groups/what_people_do_there__buy__explanation.mp3"
+      }
+    },
+    "what_people_do_there=travel": {
+      "clues": [
+        {
+          "text": "Think about going from one place to a faraway place.",
+          "audio": "Assets/audio/groups/what_people_do_there__travel__clue1.mp3"
+        },
+        {
+          "text": "You go there when you are ready to leave.",
+          "audio": "Assets/audio/groups/what_people_do_there__travel__clue2.mp3"
+        },
+        {
+          "text": "You wait there, then you go away on a big trip.",
+          "audio": "Assets/audio/groups/what_people_do_there__travel__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "People come to these places to start a trip. They get on a train, plane, or boat and go. The busiest railway station in the world is in Tokyo, Japan.",
+        "audio": "Assets/audio/groups/what_people_do_there__travel__explanation.mp3"
+      }
+    },
+    "what_people_do_there=cross": {
+      "clues": [
+        {
+          "text": "Think about going from one side to the other side.",
+          "audio": "Assets/audio/groups/what_people_do_there__cross__clue1.mp3"
+        },
+        {
+          "text": "You do not stay here; you go across or go up.",
+          "audio": "Assets/audio/groups/what_people_do_there__cross__clue2.mp3"
+        },
+        {
+          "text": "It helps you get over something, like water or a road.",
+          "audio": "Assets/audio/groups/what_people_do_there__cross__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These are all places where you cross over something or climb up high. You use them to get to the other side or to go up. People have walked across bridges for thousands of years.",
+        "audio": "Assets/audio/groups/what_people_do_there__cross__explanation.mp3"
+      }
+    },
+    "how_we_play_with_it=build": {
+      "clues": [
+        {
+          "text": "Think about making something new with your hands.",
+          "audio": "Assets/audio/groups/how_we_play_with_it__build__clue1.mp3"
+        },
+        {
+          "text": "You put the pieces one on top of another.",
+          "audio": "Assets/audio/groups/how_we_play_with_it__build__clue2.mp3"
+        },
+        {
+          "text": "When you finish, you have made a shape or a thing.",
+          "audio": "Assets/audio/groups/how_we_play_with_it__build__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These toys are for making things. You put the pieces together to build something. You can press the blocks together and they stick, so you can build big things.",
+        "audio": "Assets/audio/groups/how_we_play_with_it__build__explanation.mp3"
+      }
+    },
+    "how_we_play_with_it=pretend": {
+      "clues": [
+        {
+          "text": "Think about a toy you hold close and love.",
+          "audio": "Assets/audio/groups/how_we_play_with_it__pretend__clue1.mp3"
+        },
+        {
+          "text": "This toy is soft or small, and you use it in your arms or in make-believe.",
+          "audio": "Assets/audio/groups/how_we_play_with_it__pretend__clue2.mp3"
+        },
+        {
+          "text": "You hug it, or you act like it is real in a story.",
+          "audio": "Assets/audio/groups/how_we_play_with_it__pretend__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These toys are for hugging and for pretend play. You hold them close or make up stories with them. A teddy bear is a soft toy that looks like a baby bear.",
+        "audio": "Assets/audio/groups/how_we_play_with_it__pretend__explanation.mp3"
+      }
+    },
+    "how_we_play_with_it=fly": {
+      "clues": [
+        {
+          "text": "Think about something that goes up in the air.",
+          "audio": "Assets/audio/groups/how_we_play_with_it__fly__clue1.mp3"
+        },
+        {
+          "text": "You do not push it or roll it on the ground.",
+          "audio": "Assets/audio/groups/how_we_play_with_it__fly__clue2.mp3"
+        },
+        {
+          "text": "The wind lifts it and carries it up high.",
+          "audio": "Assets/audio/groups/how_we_play_with_it__fly__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "All of these go up in the air and float or glide with the wind. In India, people fly kites on Makar Sankranti.",
+        "audio": "Assets/audio/groups/how_we_play_with_it__fly__explanation.mp3"
+      }
+    },
+    "how_we_play_with_it=music": {
+      "clues": [
+        {
+          "text": "Think about things that make sounds you can sing along to.",
+          "audio": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3"
+        },
+        {
+          "text": "You use your hands or your breath to make the sound.",
+          "audio": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3"
+        },
+        {
+          "text": "People play these to make a happy tune.",
+          "audio": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3"
+        }
+      ],
+      "explanation": null
+    }
+  }
+}

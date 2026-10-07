@@ -156,6 +156,10 @@ class SoundService {
   /// Play one specific bundled clip right away (e.g. a recorded animal name).
   Future<void> playAsset(String assetPath) => _enqueue(assetPath, priority: true);
 
+  /// Play a clip once whatever is playing or waiting has finished: an explanation after
+  /// the sound that says "right".
+  Future<void> playAfter(String assetPath) => _enqueue(assetPath);
+
   // ============ FEEDBACK SOUNDS ============
   
   /// Play a random "correct" sound when a group is solved

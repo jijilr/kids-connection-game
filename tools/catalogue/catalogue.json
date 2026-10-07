@@ -28830,5 +28830,2306 @@
   "last_change": {
     "by": "record_names.py",
     "on": "2026-10-07"
+  },
+  "groups": {
+    "kind_of_thing=plant": {
+      "field": "kind_of_thing",
+      "value": "plant",
+      "label": "Plants",
+      "question": "What kind of thing is it?",
+      "clues": [
+        {
+          "text": "Think about things that grow in the ground.",
+          "cached": "tools/voice/clips/groups/kind_of_thing__plant__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_thing__plant__clue1.mp3",
+          "clip_sha256": "58cccebf8db0cbbbb1602e0a0a7cb0302aa5ccaaa12232238d185d3681cef1bb",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They are alive and they do not walk or fly.",
+          "cached": "tools/voice/clips/groups/kind_of_thing__plant__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_thing__plant__clue2.mp3",
+          "clip_sha256": "a95571fc3b60bdb4ecb2ff33455fc581d6590d8dc89bb6eb0a1262b9d5f98c39",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They have roots, stems, and leaves, and they make their own food.",
+          "cached": "tools/voice/clips/groups/kind_of_thing__plant__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_thing__plant__clue3.mp3",
+          "clip_sha256": "398a4f19cd26a6c22b4776c50c858071bd43945fa467d93fca70ab9102bac718",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These all grow from the ground and are alive. They make their own food with sunlight. A carrot is a plant, and we eat its orange root.",
+        "together": "These all grow from the ground and are alive. They make their own food with sunlight.",
+        "fact": "A carrot is a plant, and we eat its orange root.",
+        "quote": "The carrot (pronounced CARE-ot) is a type of root vegetable and a plant.",
+        "source": "carrot_plant:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Carrot",
+        "cached": "tools/voice/clips/groups/kind_of_thing__plant__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_thing__plant__explanation.mp3",
+        "clip_sha256": "e9f4ea48f0713605b1ff4e423dc86947b6c74a9b16e3e4abba5642883f467369",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "part_we_eat=leaves": {
+      "field": "part_we_eat",
+      "value": "leaves",
+      "label": "The leaves",
+      "question": "Which part of the plant do we eat?",
+      "clues": [
+        {
+          "text": "Think about the green part of a plant.",
+          "cached": "tools/voice/clips/groups/part_we_eat__leaves__clue1.mp3",
+          "clip": "Assets/audio/groups/part_we_eat__leaves__clue1.mp3",
+          "clip_sha256": "9fb39ca4678ebc62c87f402fde19dc793dc8b289597e21daa962c5d77f5edc16",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "This green part grows up high, not under the ground.",
+          "cached": "tools/voice/clips/groups/part_we_eat__leaves__clue2.mp3",
+          "clip": "Assets/audio/groups/part_we_eat__leaves__clue2.mp3",
+          "clip_sha256": "29ee7db471b978fbe2c73fc72b79074c17090360615511ce500f5ac64c0f2544",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "We pick this soft green part and cook it for our food.",
+          "cached": "tools/voice/clips/groups/part_we_eat__leaves__clue3.mp3",
+          "clip": "Assets/audio/groups/part_we_eat__leaves__clue3.mp3",
+          "clip_sha256": "a65063c85abb6a373e245288f541e008f2e62e876ceb71fa46105d7ae0e6194f",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": null,
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
+      ]
+    },
+    "where_it_travels=rails": {
+      "field": "where_it_travels",
+      "value": "rails",
+      "label": "On rails",
+      "question": "Where does it travel?",
+      "clues": [
+        {
+          "text": "Think about a path that wheels roll along.",
+          "cached": "tools/voice/clips/groups/where_it_travels__rails__clue1.mp3",
+          "clip": "Assets/audio/groups/where_it_travels__rails__clue1.mp3",
+          "clip_sha256": "8964cdee587255fc1cad47cf0894f70fc69ce70664fa4e92f9ba4ab2937ae172",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "This path is made of two long metal lines.",
+          "cached": "tools/voice/clips/groups/where_it_travels__rails__clue2.mp3",
+          "clip": "Assets/audio/groups/where_it_travels__rails__clue2.mp3",
+          "clip_sha256": "f51402a6742524028ef9274c3858e4ff37da38bfd791a5f2447c483d3cc2b518",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "The wheels stay on these lines and cannot go off.",
+          "cached": "tools/voice/clips/groups/where_it_travels__rails__clue3.mp3",
+          "clip": "Assets/audio/groups/where_it_travels__rails__clue3.mp3",
+          "clip_sha256": "0b910ecf9b446cc6cc9a7364bfc8ae7cc3fc66574c5cb189e993fc488254e50d",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "All of these move along metal lines on the ground. They cannot go anywhere else. A train can carry very heavy things, like coal, over long distances.",
+        "together": "All of these move along metal lines on the ground. They cannot go anywhere else.",
+        "fact": "A train can carry very heavy things, like coal, over long distances.",
+        "quote": "A wide variety of cargoes are carried on trains, but the low friction inherent to rail transport means that freight trains are especially suited to carrying bulk and heavy loads over longer distances.",
+        "source": "goods_train:wikipedia_en",
+        "source_url": "https://en.wikipedia.org/wiki/Freight_train",
+        "cached": "tools/voice/clips/groups/where_it_travels__rails__explanation.mp3",
+        "clip": "Assets/audio/groups/where_it_travels__rails__explanation.mp3",
+        "clip_sha256": "762d5361cc7931a82eb3d3f041b7c086a61d269c5d27e85aefea82b2f24e1aa5",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "pet_farm_or_wild_of_bird=wild_water": {
+      "field": "pet_farm_or_wild_of_bird",
+      "value": "wild_water",
+      "label": "Wild animals in water",
+      "question": "Is it mostly a pet, a farm animal or a wild animal?",
+      "clues": [
+        {
+          "text": "Think about birds that spend lots of time in the water.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_water__clue1.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_water__clue1.mp3",
+          "clip_sha256": "8d2915032b04e757764da7549473efc41718ca63aae33942c1e70a429bd1c036",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "These birds find their food in the water.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_water__clue2.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_water__clue2.mp3",
+          "clip_sha256": "1fe102924403d11f512043c6b7997653468551e36d179a1d7b062944007983e6",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "These birds are not pets and do not live on a farm.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_water__clue3.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_water__clue3.mp3",
+          "clip_sha256": "3a4c3958721c55aabc9b5bdb0ff15e4f8ec39603da66ceb58480e8a8cce01c0f",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These birds all live near water and find their food there. They are wild birds, not pets or farm animals. Penguins use their flippers to swim underwater, but they cannot fly in the air.",
+        "together": "These birds all live near water and find their food there. They are wild birds, not pets or farm animals.",
+        "fact": "Penguins use their flippers to swim underwater, but they cannot fly in the air.",
+        "quote": "They use their flippers to swim underwater, but they cannot fly in the air.",
+        "source": "penguin:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Penguin",
+        "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_water__explanation.mp3",
+        "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_water__explanation.mp3",
+        "clip_sha256": "924cd9c4ed212347042ae50e583cfcb102ae12bbede7ee86b70aea7fee70ee7e",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_thing=animal": {
+      "field": "kind_of_thing",
+      "value": "animal",
+      "label": "Animals",
+      "question": "What kind of thing is it?",
+      "clues": [
+        {
+          "text": "Think about something that is alive and can move on its own.",
+          "cached": "tools/voice/clips/groups/kind_of_thing__animal__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_thing__animal__clue1.mp3",
+          "clip_sha256": "888041e00e9bac41fb33cd3f6c412d08fa9ac0665552c036027f8c01422f69b0",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "It can find its own food and eat it.",
+          "cached": "tools/voice/clips/groups/kind_of_thing__animal__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_thing__animal__clue2.mp3",
+          "clip_sha256": "95ed9fcf70df40940998c4d3a46d5c12384e6d9758da365b66254fc2f2c156a6",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "It can have babies, and it breathes and grows.",
+          "cached": "tools/voice/clips/groups/kind_of_thing__animal__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_thing__animal__clue3.mp3",
+          "clip_sha256": "6c3977de6ca637904c630670a92435fee6d7751a7862b97659d15e7af8cbfe6f",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These all are living things that move, eat and grow. They are not plants, not rocks or water, and not things people make. A giraffe is the tallest animal that lives on land.",
+        "together": "These all are living things that move, eat and grow. They are not plants, not rocks or water, and not things people make.",
+        "fact": "A giraffe is the tallest animal that lives on land.",
+        "quote": "Giraffes have an even number of toes and are the tallest land animals.",
+        "source": "giraffe:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Giraffe",
+        "cached": "tools/voice/clips/groups/kind_of_thing__animal__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_thing__animal__explanation.mp3",
+        "clip_sha256": "80c999a8dd1797be5490fe87abf61a43ed1cdd18e003ac77f85ce2f087957230",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_thing=nature_not_alive": {
+      "field": "kind_of_thing",
+      "value": "nature_not_alive",
+      "label": "Things in nature that are not alive",
+      "question": "What kind of thing is it?",
+      "clues": [
+        {
+          "text": "Think about things you can see outside that are not alive.",
+          "cached": "tools/voice/clips/groups/kind_of_thing__nature_not_alive__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_thing__nature_not_alive__clue1.mp3",
+          "clip_sha256": "8e1c60ad89a2255dc7a5561697816b82accf2b94c338e454d5d99c9e8652ed80",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "These things are not animals and not plants.",
+          "cached": "tools/voice/clips/groups/kind_of_thing__nature_not_alive__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_thing__nature_not_alive__clue2.mp3",
+          "clip_sha256": "85c307973b716960f3f3afa151de7731d0819e4a161174ffbe7e7cf278cb3891",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "People do not make these things; they are just there in the world.",
+          "cached": "tools/voice/clips/groups/kind_of_thing__nature_not_alive__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_thing__nature_not_alive__clue3.mp3",
+          "clip_sha256": "952e6899cf887f25d96a513603c0f53e7dae27c96196254157c74c8b06cbb752",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These are all things we find in nature. They are not alive and nobody makes them. A mountain is a very big, high bump on the land.",
+        "together": "These are all things we find in nature. They are not alive and nobody makes them.",
+        "fact": "A mountain is a very big, high bump on the land.",
+        "quote": "A mountain is a large natural rise of the Earth's surface that usually has a \"summit\" (the name for a mountain's top, which can also be called a peak).",
+        "source": "mountain:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Mountain",
+        "cached": "tools/voice/clips/groups/kind_of_thing__nature_not_alive__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_thing__nature_not_alive__explanation.mp3",
+        "clip_sha256": "27cfa83b73b0fa81705deb6523f84b33fa03c43bf5961cd8c876e362dde8a6df",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_thing=made_by_people": {
+      "field": "kind_of_thing",
+      "value": "made_by_people",
+      "label": "Things people make",
+      "question": "What kind of thing is it?",
+      "clues": [
+        {
+          "text": "Think about things that are not found growing or walking on their own.",
+          "cached": "tools/voice/clips/groups/kind_of_thing__made_by_people__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_thing__made_by_people__clue1.mp3",
+          "clip_sha256": "12188f0497f98eb6847cc4fb85c3f1d6dfbc74e86160cd6a7f3b45f7875c5fff",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "People use their hands and tools to make these things.",
+          "cached": "tools/voice/clips/groups/kind_of_thing__made_by_people__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_thing__made_by_people__clue2.mp3",
+          "clip_sha256": "4f21621ada5c51ec27e7c0fd8aec404af8d05be767dede5b55da20b5647ec1bb",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "These things would not be here if nobody had made them.",
+          "cached": "tools/voice/clips/groups/kind_of_thing__made_by_people__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_thing__made_by_people__clue3.mp3",
+          "clip_sha256": "37d921ead21f1a3f487acdf1ec475b09ffdfc8918ffccacf17e8700146351951",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These things are all made by people. They are not animals, plants, or things in nature. A bus can carry many people at once.",
+        "together": "These things are all made by people. They are not animals, plants, or things in nature.",
+        "fact": "A bus can carry many people at once.",
+        "quote": "A bus is a large wheeled vehicle meant to carry many passengers along with the bus driver.",
+        "source": "bus:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Bus",
+        "cached": "tools/voice/clips/groups/kind_of_thing__made_by_people__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_thing__made_by_people__explanation.mp3",
+        "clip_sha256": "29c507ff1c5e285483ae1cb2d2db99bedbc9a495a883fbbabd0b1cbd71b7d8af",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_animal=mammal": {
+      "field": "kind_of_animal",
+      "value": "mammal",
+      "label": "Mammals",
+      "question": "What kind of animal is it?",
+      "clues": [
+        {
+          "text": "Think about animals that drink their mother's milk when they are babies.",
+          "cached": "tools/voice/clips/groups/kind_of_animal__mammal__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_animal__mammal__clue1.mp3",
+          "clip_sha256": "7e611aa56b67a2a68a4b9681bf1242a595ff68952b2f6e3c7ae0f7633829255f",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "These animals have hair or fur on their bodies.",
+          "cached": "tools/voice/clips/groups/kind_of_animal__mammal__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_animal__mammal__clue2.mp3",
+          "clip_sha256": "be558b6ef7c9ff88c7bb4d8bf5965c6323ee09cc8d83de74068cc4c975d38a46",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "These animals are warm when you touch them, even when it is cold outside.",
+          "cached": "tools/voice/clips/groups/kind_of_animal__mammal__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_animal__mammal__clue3.mp3",
+          "clip_sha256": "3de9f87f27d58ed3bb91d9212c924209f4635fac9b11361f50e2a683dc9f9b14",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "They all drink milk from their mothers when they are little, and they have fur or hair. The biggest animal on land is one of these, and it has a long nose called a trunk.",
+        "together": "They all drink milk from their mothers when they are little, and they have fur or hair.",
+        "fact": "The biggest animal on land is one of these, and it has a long nose called a trunk.",
+        "quote": "Elephants are the biggest living land mammals.",
+        "source": "elephant:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Elephant",
+        "cached": "tools/voice/clips/groups/kind_of_animal__mammal__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_animal__mammal__explanation.mp3",
+        "clip_sha256": "e6bff7302ee9e304479dbf69f925de97050b97da739dc35a0734b3cc7161ed79",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_animal=bird": {
+      "field": "kind_of_animal",
+      "value": "bird",
+      "label": "Birds",
+      "question": "What kind of animal is it?",
+      "clues": [
+        {
+          "text": "Think about animals that have feathers.",
+          "cached": "tools/voice/clips/groups/kind_of_animal__bird__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_animal__bird__clue1.mp3",
+          "clip_sha256": "aafd63ae97027b1695b77b6dbfd399cc2937de3e692dc9df00e3d629d09d5cc4",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "These animals have wings and a beak.",
+          "cached": "tools/voice/clips/groups/kind_of_animal__bird__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_animal__bird__clue2.mp3",
+          "clip_sha256": "e5b88d94a2c6da7a999b241665cc2bebedeef0194f22bd8b73a02473261e1847",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "Most of them can fly, but some cannot.",
+          "cached": "tools/voice/clips/groups/kind_of_animal__bird__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_animal__bird__clue3.mp3",
+          "clip_sha256": "aa658fa699dffad10237722da80850b7bab0fb6777577edb1f38e632d064cc37",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "They all have feathers and wings. Many of them can fly. A penguin has flippers to swim, but it cannot fly in the air.",
+        "together": "They all have feathers and wings. Many of them can fly.",
+        "fact": "A penguin has flippers to swim, but it cannot fly in the air.",
+        "quote": "They use their flippers to swim underwater, but they cannot fly in the air.",
+        "source": "penguin:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Penguin",
+        "cached": "tools/voice/clips/groups/kind_of_animal__bird__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_animal__bird__explanation.mp3",
+        "clip_sha256": "a31eb2530fe9edabf7539838d29b8e19f0b9865ab2b2f74aec50c5d773e9b235",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_animal=fish": {
+      "field": "kind_of_animal",
+      "value": "fish",
+      "label": "Fish",
+      "question": "What kind of animal is it?",
+      "clues": [
+        {
+          "text": "Think about animals that live in water all the time.",
+          "cached": "tools/voice/clips/groups/kind_of_animal__fish__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_animal__fish__clue1.mp3",
+          "clip_sha256": "9dca70ddfc5880dcf0ce20c7aba98fd9fabf2e513bf86210b5d47ec14ffce950",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They swim with fins and have a tail for swimming.",
+          "cached": "tools/voice/clips/groups/kind_of_animal__fish__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_animal__fish__clue2.mp3",
+          "clip_sha256": "68d0759a319650ead7759fc0fdf8ccc71122f9d242ded3e3cfa32cba8e85072a",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They breathe in the water with gills, not air.",
+          "cached": "tools/voice/clips/groups/kind_of_animal__fish__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_animal__fish__clue3.mp3",
+          "clip_sha256": "b96509c801794d3dba44685dc9744a65d8bf99554959613430e41ba24a6bc3f7",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These animals all live in water and swim with fins. They breathe using gills. A goldfish can learn to push a small ball under the water.",
+        "together": "These animals all live in water and swim with fins. They breathe using gills.",
+        "fact": "A goldfish can learn to push a small ball under the water.",
+        "quote": "In experiments, a goldfish was trained to kick a small ball under water.",
+        "source": "goldfish:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Goldfish",
+        "cached": "tools/voice/clips/groups/kind_of_animal__fish__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_animal__fish__explanation.mp3",
+        "clip_sha256": "af0bf3dab0a70534f612ff5343ef29aba8529ca263490a827a7ed44b29c3562a",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_animal=insect": {
+      "field": "kind_of_animal",
+      "value": "insect",
+      "label": "Insects",
+      "question": "What kind of animal is it?",
+      "clues": [],
+      "explanation": null,
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no clues were kept: clue 3 is not true of every thing in the group",
+        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
+      ]
+    },
+    "kind_of_animal=reptile": {
+      "field": "kind_of_animal",
+      "value": "reptile",
+      "label": "Reptiles",
+      "question": "What kind of animal is it?",
+      "clues": [
+        {
+          "text": "Think about animals with dry, scaly skin.",
+          "cached": "tools/voice/clips/groups/kind_of_animal__reptile__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_animal__reptile__clue1.mp3",
+          "clip_sha256": "9f36f21f7c4be3a4bd650a0482bfe434fbb081dac97ea25858a4b93daffb6c8b",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "These animals often lay eggs on land.",
+          "cached": "tools/voice/clips/groups/kind_of_animal__reptile__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_animal__reptile__clue2.mp3",
+          "clip_sha256": "439631eeb034c05a55fb0a5a4f6f04530ed9f3102337f362cd23a7475239f041",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They are cold-blooded and many crawl on their bellies.",
+          "cached": "tools/voice/clips/groups/kind_of_animal__reptile__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_animal__reptile__clue3.mp3",
+          "clip_sha256": "2498db1067b0081f04683dbc5209b02acdc0827d55f5501520a423423de20b28",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": null,
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
+      ]
+    },
+    "kind_of_animal=dinosaur": {
+      "field": "kind_of_animal",
+      "value": "dinosaur",
+      "label": "Dinosaurs",
+      "question": "What kind of animal is it?",
+      "clues": [
+        {
+          "text": "Think about animals that lived very, very long ago.",
+          "cached": "tools/voice/clips/groups/kind_of_animal__dinosaur__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_animal__dinosaur__clue1.mp3",
+          "clip_sha256": "0964f98ff3c3ddfb634966f121be4ba47a1fcfaada4b412a11e29b09960890b3",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "These animals are all gone now, and we only see their bones.",
+          "cached": "tools/voice/clips/groups/kind_of_animal__dinosaur__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_animal__dinosaur__clue2.mp3",
+          "clip_sha256": "5d8668929761b45aee5f17a06d6d3e6271f706e0dca67809da74ef845df50383",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "Some of these animals were huge, and some had sharp teeth or horns.",
+          "cached": "tools/voice/clips/groups/kind_of_animal__dinosaur__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_animal__dinosaur__clue3.mp3",
+          "clip_sha256": "74c8f109078b64013543005cdeb86e8158918ea1601f5753055681a23e11bf51",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These animals all lived long ago and are not alive today. We know about them from their bones. Some of these animals were very big, with long necks and long tails.",
+        "together": "These animals all lived long ago and are not alive today. We know about them from their bones.",
+        "fact": "Some of these animals were very big, with long necks and long tails.",
+        "quote": "Diplodocus was a long-necked, whip-tailed giant and could grow up to 27 m long.",
+        "source": "diplodocus:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Diplodocus",
+        "cached": "tools/voice/clips/groups/kind_of_animal__dinosaur__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_animal__dinosaur__explanation.mp3",
+        "clip_sha256": "19d7618fc555465ec0c694cdfb3bbd03f4b8877380d0fb0e14623ef1b4e9be89",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_dinosaur=land_hunter": {
+      "field": "kind_of_dinosaur",
+      "value": "land_hunter",
+      "label": "Land hunters",
+      "question": "What kind of dinosaur is it?",
+      "clues": [
+        {
+          "text": "Some dinosaurs ate other animals.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__land_hunter__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue1.mp3",
+          "clip_sha256": "50d885bac5dd306be46bbb5752733ac6c8a420262613a7566c36f46774c978f8",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "These dinosaurs hunted other dinosaurs on land.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__land_hunter__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue2.mp3",
+          "clip_sha256": "a2f4faa4cafa9f4d2b5a930217cb9b57e400d2f81e8d179bfcd30cefbdf4c96f",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They used strong legs and sharp teeth to catch their food.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__land_hunter__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue3.mp3",
+          "clip_sha256": "d37ef2bc4fb1e96dac56581658a27d0812b2f9986309d6674f875cf634ab6f84",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": null,
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no explanation was kept: the explanation has 5 sentences; it must have two or three"
+      ]
+    },
+    "kind_of_dinosaur=land_grazer": {
+      "field": "kind_of_dinosaur",
+      "value": "land_grazer",
+      "label": "Land grazers",
+      "question": "What kind of dinosaur is it?",
+      "clues": [],
+      "explanation": null,
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no clues were kept: clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 3 is not true of every thing in the group",
+        "no explanation was kept: the explanation does not say simply why they belong together"
+      ]
+    },
+    "kind_of_dinosaur=flyer": {
+      "field": "kind_of_dinosaur",
+      "value": "flyer",
+      "label": "Flyers",
+      "question": "What kind of dinosaur is it?",
+      "clues": [
+        {
+          "text": "Think about animals that can go up in the sky.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__flyer__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__flyer__clue1.mp3",
+          "clip_sha256": "052f74616c3ce15374415a20624c9fbaba7b05bd7733f3e15774ad390c3aea8f",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "These animals had big wings and could fly.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__flyer__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__flyer__clue2.mp3",
+          "clip_sha256": "66802abeef0d8848d39d50b7cca5f17f6ccd1f51e0593bb135a952351d4f81da",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They lived long ago and flew over the land and sea.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__flyer__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__flyer__clue3.mp3",
+          "clip_sha256": "7b7156c2f259baf7a452274d8a832f37693b46290e9a9eaeb36b8bd4b69060b4",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These are all flyers. They had wings and could fly in the sky. One of them was as tall as a giraffe when it stood on the ground.",
+        "together": "These are all flyers. They had wings and could fly in the sky.",
+        "fact": "One of them was as tall as a giraffe when it stood on the ground.",
+        "quote": "Quetzalcoatlus had an unusually long neck, and when it stood on the ground it was as tall as a giraffe.",
+        "source": "quetzalcoatlus:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Quetzalcoatlus",
+        "cached": "tools/voice/clips/groups/kind_of_dinosaur__flyer__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_dinosaur__flyer__explanation.mp3",
+        "clip_sha256": "d33f282ba4d0426a43e136476b660929c77f01a57819ec196de4fd6f9f871013",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_dinosaur=swimmer": {
+      "field": "kind_of_dinosaur",
+      "value": "swimmer",
+      "label": "Swimmers",
+      "question": "What kind of dinosaur is it?",
+      "clues": [
+        {
+          "text": "Think about animals that live in the water all the time.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__swimmer__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__swimmer__clue1.mp3",
+          "clip_sha256": "0c9d16c930fa559641b0a9eb0ad120bbd69e4ee9ed346ed1b171390e24823123",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They swim in the sea and never walk on land.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__swimmer__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__swimmer__clue2.mp3",
+          "clip_sha256": "8539078077c5bacd13f29fc4282467c153b8a371aaa15615f55b5d847c72ebf7",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They use flippers or paddles to move through the water.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__swimmer__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__swimmer__clue3.mp3",
+          "clip_sha256": "38f0e6a988063c5b46fec81bd5eac846ecce5a22b6f471633a851a45e00fde7e",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": null,
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
+      ]
+    },
+    "kind_of_plant=tree": {
+      "field": "kind_of_plant",
+      "value": "tree",
+      "label": "Trees",
+      "question": "What kind of plant is it?",
+      "clues": [],
+      "explanation": null,
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no clues were kept: clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 3 is not true of every thing in the group",
+        "no explanation was kept: the explanation does not say simply why they belong together"
+      ]
+    },
+    "kind_of_plant=flower": {
+      "field": "kind_of_plant",
+      "value": "flower",
+      "label": "Flowers",
+      "question": "What kind of plant is it?",
+      "clues": [
+        {
+          "text": "Think about the pretty part of a plant that bees visit.",
+          "cached": "tools/voice/clips/groups/kind_of_plant__flower__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_plant__flower__clue1.mp3",
+          "clip_sha256": "cee9bb9f63becc4e989d8674105f19425d970cb8214850771c61c0991542b4f8",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "This part is often bright and smells nice.",
+          "cached": "tools/voice/clips/groups/kind_of_plant__flower__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_plant__flower__clue2.mp3",
+          "clip_sha256": "1545c8c204bc280ded483fb063a007227192fe0fb51ac279777a81aaa9a62a0c",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "This part makes seeds after it is done blooming.",
+          "cached": "tools/voice/clips/groups/kind_of_plant__flower__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_plant__flower__clue3.mp3",
+          "clip_sha256": "d77afda5a337a1afefbe1b19ab99d7d3c33d33239ed534bb7ca330a5ff2d76c8",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These are all flowers. They have pretty petals that make seeds. A sunflower can grow as tall as three metres, taller than a grown-up!",
+        "together": "These are all flowers. They have pretty petals that make seeds.",
+        "fact": "A sunflower can grow as tall as three metres, taller than a grown-up!",
+        "quote": "The stem of the flower can grow up to 3 metres tall, with a flower head that can be 30 cm wide.",
+        "source": "sunflower:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Sunflower",
+        "cached": "tools/voice/clips/groups/kind_of_plant__flower__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_plant__flower__explanation.mp3",
+        "clip_sha256": "24cf159327e32d2f9cad6bcaa537deb91020cdf00c56f4ea61e2a99ea7d0d471",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_plant=grass_grain": {
+      "field": "kind_of_plant",
+      "value": "grass_grain",
+      "label": "Grasses and grains",
+      "question": "What kind of plant is it?",
+      "clues": [],
+      "explanation": null,
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no clues were kept: clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 3 is not true of every thing in the group",
+        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
+      ]
+    },
+    "kind_of_plant=vegetable": {
+      "field": "kind_of_plant",
+      "value": "vegetable",
+      "label": "Vegetable plants",
+      "question": "What kind of plant is it?",
+      "clues": [
+        {
+          "text": "Think about a plant we grow to eat.",
+          "cached": "tools/voice/clips/groups/kind_of_plant__vegetable__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_plant__vegetable__clue1.mp3",
+          "clip_sha256": "ea78ede24dec0b4a471eff04a9affbb594ce86a8b3372dc0e9c5997553890f0d",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "We eat a part of this plant in our meals.",
+          "cached": "tools/voice/clips/groups/kind_of_plant__vegetable__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_plant__vegetable__clue2.mp3",
+          "clip_sha256": "96e51d755aeeb28f9fbcb4b697a94b3e9d2605770c8ba2483a864c4e9aef7f91",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "This plant gives us food for our lunch or dinner.",
+          "cached": "tools/voice/clips/groups/kind_of_plant__vegetable__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_plant__vegetable__clue3.mp3",
+          "clip_sha256": "a2f0f7d7ec8873de48a22889087c04d6092b2d94c66d90abddecbb5afe2d6713",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These plants all give us food we can eat. We grow them to eat in our meals. People eat the head of the garlic plant, which grows at the bottom of a long green stalk.",
+        "together": "These plants all give us food we can eat. We grow them to eat in our meals.",
+        "fact": "People eat the head of the garlic plant, which grows at the bottom of a long green stalk.",
+        "quote": "The part of the garlic plant that people eat is called the head or bulb. It grows at the bottom of a long green stalk.",
+        "source": "garlic_plant:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Garlic",
+        "cached": "tools/voice/clips/groups/kind_of_plant__vegetable__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_plant__vegetable__explanation.mp3",
+        "clip_sha256": "664f0e544b6d86ff2c3d440f93377d2751029c1e54aa4d35fd3ca85ca0ea3c3c",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_nature=sky": {
+      "field": "kind_of_nature",
+      "value": "sky",
+      "label": "Things in the sky",
+      "question": "What kind of thing in nature is it?",
+      "clues": [
+        {
+          "text": "Think about things you can see when you look up.",
+          "cached": "tools/voice/clips/groups/kind_of_nature__sky__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_nature__sky__clue1.mp3",
+          "clip_sha256": "0201d98d104723dcd424f2c66324530830aa1391d0f152c4263ba557140f81e3",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You can see these things high above your head.",
+          "cached": "tools/voice/clips/groups/kind_of_nature__sky__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_nature__sky__clue2.mp3",
+          "clip_sha256": "2fe1937d1201183fe34d47a48faf83fcde1c3c916b7e8cff4f299b442399944e",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "These things are far away, up in the sky.",
+          "cached": "tools/voice/clips/groups/kind_of_nature__sky__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_nature__sky__clue3.mp3",
+          "clip_sha256": "eb09a6bd6a779106b8b37a46db3c3febcfe261601dc0dcec551f4755c3cf8273",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": null,
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no explanation was kept: the explanation has 4 sentences; it must have two or three"
+      ]
+    },
+    "kind_of_nature=water": {
+      "field": "kind_of_nature",
+      "value": "water",
+      "label": "Water",
+      "question": "What kind of thing in nature is it?",
+      "clues": [
+        {
+          "text": "Think about something wet you can see outside.",
+          "cached": "tools/voice/clips/groups/kind_of_nature__water__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_nature__water__clue1.mp3",
+          "clip_sha256": "aa109f6e796cee14a78c521c6e3989d6d0a07ec375ead2d224a4d297810a307c",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "It is not alive, but plants and animals need it.",
+          "cached": "tools/voice/clips/groups/kind_of_nature__water__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_nature__water__clue2.mp3",
+          "clip_sha256": "d8403b9961235e67491350b885d379964ed1537c4368aead18b882b626ae985c",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "It can be big or small, and it stays in one place or moves.",
+          "cached": "tools/voice/clips/groups/kind_of_nature__water__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_nature__water__clue3.mp3",
+          "clip_sha256": "16ce1abe39019bfb9ec9d60b6c8995c2c74fa03bed0518e52aaa613d785ed598",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "They are all wet places in nature. They are not alive, but they are full of water. A river starts small on high ground and gets bigger as it flows down.",
+        "together": "They are all wet places in nature. They are not alive, but they are full of water.",
+        "fact": "A river starts small on high ground and gets bigger as it flows down.",
+        "quote": "A river begins as a small stream and gets bigger the farther it flows.",
+        "source": "river:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/River",
+        "cached": "tools/voice/clips/groups/kind_of_nature__water__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_nature__water__explanation.mp3",
+        "clip_sha256": "446bed9c35595c52a2c020f7a7efadacc747b4015e79f1057537725c44ef4b37",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_nature=land": {
+      "field": "kind_of_nature",
+      "value": "land",
+      "label": "Places on land",
+      "question": "What kind of thing in nature is it?",
+      "clues": [
+        {
+          "text": "Think about a place you can walk on, outside.",
+          "cached": "tools/voice/clips/groups/kind_of_nature__land__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_nature__land__clue1.mp3",
+          "clip_sha256": "3759f912e04d229d6d8be699e1bbce02068fc41549c233316fde289637658a9f",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "It is a part of the ground, not water or sky.",
+          "cached": "tools/voice/clips/groups/kind_of_nature__land__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_nature__land__clue2.mp3",
+          "clip_sha256": "f616811f78ef1834060779bac018a5f1eb9f91155ffb492822bc9fa674a2d3f8",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You can stand on it and look around.",
+          "cached": "tools/voice/clips/groups/kind_of_nature__land__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_nature__land__clue3.mp3",
+          "clip_sha256": "b47e32347dc48f9090fb58f2be9b25fc793403d1c401beea9c96f20208a405ad",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These are all places on the land where you can go and stand. A hill is smaller than a mountain and not as steep.",
+        "together": "These are all places on the land where you can go and stand.",
+        "fact": "A hill is smaller than a mountain and not as steep.",
+        "quote": "A hill is a landform that is higher than the surrounding terrain and that is smaller than a mountain.",
+        "source": "hill:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Hill",
+        "cached": "tools/voice/clips/groups/kind_of_nature__land__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_nature__land__explanation.mp3",
+        "clip_sha256": "6fd10a88bdea48021cac0f8ee6e7b828a10e005531456a6041eced8ffd4a9f38",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_nature=ground": {
+      "field": "kind_of_nature",
+      "value": "ground",
+      "label": "Rocks and soil",
+      "question": "What kind of thing in nature is it?",
+      "clues": [
+        {
+          "text": "Think about the hard ground under your feet.",
+          "cached": "tools/voice/clips/groups/kind_of_nature__ground__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_nature__ground__clue1.mp3",
+          "clip_sha256": "d30b4832524992247beda85e510be950a77783ed75d224d3a981af722bef114b",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You can pick it up, but it was never alive.",
+          "cached": "tools/voice/clips/groups/kind_of_nature__ground__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_nature__ground__clue2.mp3",
+          "clip_sha256": "9b4b156215276cecc1668ed33578c8671ca67766be809b90371112e17d4f16b1",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "It is not water, not sky, and not a place you live.",
+          "cached": "tools/voice/clips/groups/kind_of_nature__ground__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_nature__ground__clue3.mp3",
+          "clip_sha256": "31f6c7fe02496b02c3f2fb9a3529c52f031ff473aada259b327d7887eb4cf28e",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These are all bits of the ground. They are not alive and you can touch them. Sand is made of tiny pieces of rock, smaller than gravel.",
+        "together": "These are all bits of the ground. They are not alive and you can touch them.",
+        "fact": "Sand is made of tiny pieces of rock, smaller than gravel.",
+        "quote": "Sand grains are smaller than gravel grains, (from 2 mm to 64 mm), and larger than silt, (around 0.0625 mm to 0.004 mm).",
+        "source": "sand:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Sand",
+        "cached": "tools/voice/clips/groups/kind_of_nature__ground__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_nature__ground__explanation.mp3",
+        "clip_sha256": "2b1f9bab5a0a87973fa7aacbb578be4451bda0d0ad1613255b235104d1a760f0",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_made_thing=vehicle": {
+      "field": "kind_of_made_thing",
+      "value": "vehicle",
+      "label": "Vehicles",
+      "question": "What do we use it for?",
+      "clues": [
+        {
+          "text": "Think about something that takes you from one place to another.",
+          "cached": "tools/voice/clips/groups/kind_of_made_thing__vehicle__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_made_thing__vehicle__clue1.mp3",
+          "clip_sha256": "f18f65922f16f903770bf5246a33d551a5610d4829de2a1601fe8e3b585b97eb",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "It moves, and it carries people or things.",
+          "cached": "tools/voice/clips/groups/kind_of_made_thing__vehicle__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_made_thing__vehicle__clue2.mp3",
+          "clip_sha256": "81e541cfd0616b707a75c1e8c2c9749539f4370453bb0d2845c7dd252e9c3cd2",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You can ride in it on land, on water, or in the sky.",
+          "cached": "tools/voice/clips/groups/kind_of_made_thing__vehicle__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_made_thing__vehicle__clue3.mp3",
+          "clip_sha256": "bde60aa47569d179e9fb391f469a7de6c5983ded1c8f553d4ab0fd79ebcb80e0",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "All of these carry people or things from one place to another. Some go on roads, some on tracks, some on water, and some in the sky. A ship is a big vehicle that travels on water, and it is bigger than a boat.",
+        "together": "All of these carry people or things from one place to another. Some go on roads, some on tracks, some on water, and some in the sky.",
+        "fact": "A ship is a big vehicle that travels on water, and it is bigger than a boat.",
+        "quote": "A ship is a large vehicle used to travel on water.",
+        "source": "ship:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Ship",
+        "cached": "tools/voice/clips/groups/kind_of_made_thing__vehicle__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_made_thing__vehicle__explanation.mp3",
+        "clip_sha256": "3917c43f5bd8858fab722fd006c661dd8d235a50b5b4db0a71e05791d6c3ece9",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_made_thing=toy": {
+      "field": "kind_of_made_thing",
+      "value": "toy",
+      "label": "Toys",
+      "question": "What do we use it for?",
+      "clues": [
+        {
+          "text": "Think about things you play with.",
+          "cached": "tools/voice/clips/groups/kind_of_made_thing__toy__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_made_thing__toy__clue1.mp3",
+          "clip_sha256": "a7c3822d230cb24c80678ba230419578962933c7621e4ef23ced77d830db5145",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You hold them, move them, or make them go.",
+          "cached": "tools/voice/clips/groups/kind_of_made_thing__toy__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_made_thing__toy__clue2.mp3",
+          "clip_sha256": "322845f12c97be366f3d32826989941baf8efc09c91b80c8c0e3156f344546a4",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They are made just for fun, not for work.",
+          "cached": "tools/voice/clips/groups/kind_of_made_thing__toy__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_made_thing__toy__clue3.mp3",
+          "clip_sha256": "37b70d79a4ffa555fc6b2f940f9cc0e75e70f910a6430287ed87b1b3db317d57",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These are all things you play with. They are made to be fun for children. A paper plane can stay up in the air for almost 28 seconds.",
+        "together": "These are all things you play with. They are made to be fun for children.",
+        "fact": "A paper plane can stay up in the air for almost 28 seconds.",
+        "quote": "Takuo Toda holds the world record for the longest time in air (27.9 seconds).",
+        "source": "paper_plane:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Paper_plane",
+        "cached": "tools/voice/clips/groups/kind_of_made_thing__toy__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_made_thing__toy__explanation.mp3",
+        "clip_sha256": "7e9dcc49797f17c202de06125e5cfc9a879d2e10598a7beb3c45a8b90ab54bc0",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_made_thing=household": {
+      "field": "kind_of_made_thing",
+      "value": "household",
+      "label": "Things in the house",
+      "question": "What do we use it for?",
+      "clues": [
+        {
+          "text": "Think about things you find inside a home.",
+          "cached": "tools/voice/clips/groups/kind_of_made_thing__household__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_made_thing__household__clue1.mp3",
+          "clip_sha256": "88f5c6d5a629fde08154fde233abde74fd08ed6c71de4dbdebdee1a3edabf7e4",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "These things help us sit, eat, rest, or keep clean.",
+          "cached": "tools/voice/clips/groups/kind_of_made_thing__household__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_made_thing__household__clue2.mp3",
+          "clip_sha256": "3713bb3969dc428fad01d14ca9798b116416c68066470cc478b0d26b7fa9ce4d",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You use them every day in your own house.",
+          "cached": "tools/voice/clips/groups/kind_of_made_thing__household__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_made_thing__household__clue3.mp3",
+          "clip_sha256": "15e5fca0ee91874c6fd13c5e823d69f0987300eec8eb4c0f52812a8566fe8323",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These things all belong in a house. We use them every day for sitting, eating, resting, or cleaning. A sponge has many little holes that help it soak up water and wipe away dirt.",
+        "together": "These things all belong in a house. We use them every day for sitting, eating, resting, or cleaning.",
+        "fact": "A sponge has many little holes that help it soak up water and wipe away dirt.",
+        "quote": "The sponge is made of a special material, with many holes.",
+        "source": "sponge:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Sponge_(tool)",
+        "cached": "tools/voice/clips/groups/kind_of_made_thing__household__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_made_thing__household__explanation.mp3",
+        "clip_sha256": "b1da249097cd70162f9aa97f5c391bd24214977d98c51a738615e7fb5289e28b",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_made_thing=tool": {
+      "field": "kind_of_made_thing",
+      "value": "tool",
+      "label": "Tools",
+      "question": "What do we use it for?",
+      "clues": [
+        {
+          "text": "Think about something you hold in your hand to help you do work.",
+          "cached": "tools/voice/clips/groups/kind_of_made_thing__tool__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_made_thing__tool__clue1.mp3",
+          "clip_sha256": "ac50f1a3b61bae5605284bf755cb4fd4f0504f1f0c0b9ddf06b8203298530595",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "It helps you build or fix things.",
+          "cached": "tools/voice/clips/groups/kind_of_made_thing__tool__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_made_thing__tool__clue2.mp3",
+          "clip_sha256": "249d4a128b78ac0bd44c07494ed022d1b066a147d46e7d5abf3cd42f6248ad35",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You use it to make or change things.",
+          "cached": "tools/voice/clips/groups/kind_of_made_thing__tool__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_made_thing__tool__clue3.mp3",
+          "clip_sha256": "168c530dfa4e6913cfc722bd17c3aa8c1bbab486fcba9a37b307ec69fddb10b3",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These are all tools. People use them to build, fix, or make things. A hammer is used to put nails into wood.",
+        "together": "These are all tools. People use them to build, fix, or make things.",
+        "fact": "A hammer is used to put nails into wood.",
+        "quote": "A hammer is a tool for putting nails into objects such as wood.",
+        "source": "hammer:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Hammer",
+        "cached": "tools/voice/clips/groups/kind_of_made_thing__tool__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_made_thing__tool__explanation.mp3",
+        "clip_sha256": "fa5ef2aca7e977e3f889aae519dd0959508000696eb8465c4e17a1f199ecbd7d",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_made_thing=building": {
+      "field": "kind_of_made_thing",
+      "value": "building",
+      "label": "Buildings",
+      "question": "What do we use it for?",
+      "clues": [],
+      "explanation": null,
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no clues were kept: clue 1 is not true of every thing in the group; clue 3 is not true of every thing in the group",
+        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
+      ]
+    },
+    "part_we_eat=fruit": {
+      "field": "part_we_eat",
+      "value": "fruit",
+      "label": "The fruit",
+      "question": "Which part of the plant do we eat?",
+      "clues": [
+        {
+          "text": "Think about the part of the plant that holds the seeds.",
+          "cached": "tools/voice/clips/groups/part_we_eat__fruit__clue1.mp3",
+          "clip": "Assets/audio/groups/part_we_eat__fruit__clue1.mp3",
+          "clip_sha256": "96c852c919888c3081717ff9ce6c6cecfb8c9845be099f889ad76bb03e789b8c",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "This part grows from a flower and can be round or long.",
+          "cached": "tools/voice/clips/groups/part_we_eat__fruit__clue2.mp3",
+          "clip": "Assets/audio/groups/part_we_eat__fruit__clue2.mp3",
+          "clip_sha256": "c74f38f3a644edfc6b2df76b87ff4398b46a44e0544ad32e5c8b97fe439b6016",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "We often pick it when it is ripe and eat it in our food.",
+          "cached": "tools/voice/clips/groups/part_we_eat__fruit__clue3.mp3",
+          "clip": "Assets/audio/groups/part_we_eat__fruit__clue3.mp3",
+          "clip_sha256": "fb75958068c0047efd2794fe629178dfee8273fb6601ddf3d628ffa817f136e5",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These plants all give us a part we can eat. That part grows from a flower and has seeds inside. The chilli we eat is the fruit of the chilli plant.",
+        "together": "These plants all give us a part we can eat. That part grows from a flower and has seeds inside.",
+        "fact": "The chilli we eat is the fruit of the chilli plant.",
+        "quote": "Chili pepper is the fruit of a series of plants called Capsicum (nightshade family).",
+        "source": "chilli_plant:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Chili_pepper",
+        "cached": "tools/voice/clips/groups/part_we_eat__fruit__explanation.mp3",
+        "clip": "Assets/audio/groups/part_we_eat__fruit__explanation.mp3",
+        "clip_sha256": "109028c491ea108f32a9334b60ccf0735b8ae974d05f7b4e40868652bdd45089",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "part_we_eat=under_the_ground": {
+      "field": "part_we_eat",
+      "value": "under_the_ground",
+      "label": "What grows under the ground",
+      "question": "Which part of the plant do we eat?",
+      "clues": [
+        {
+          "text": "Think about the part of a plant that hides in the dark.",
+          "cached": "tools/voice/clips/groups/part_we_eat__under_the_ground__clue1.mp3",
+          "clip": "Assets/audio/groups/part_we_eat__under_the_ground__clue1.mp3",
+          "clip_sha256": "6c2159276f08c7ea5bc0f5d4d058db9b2b4e45ed348f73dbf8ae10ba7bfff63e",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "This part grows down in the soil, not up in the air.",
+          "cached": "tools/voice/clips/groups/part_we_eat__under_the_ground__clue2.mp3",
+          "clip": "Assets/audio/groups/part_we_eat__under_the_ground__clue2.mp3",
+          "clip_sha256": "91aea0bd7bcade9ce06c74ec44eb8ca86fcdd6c122a66f11b0788715fd5e83ed",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "We dig it out of the ground when we want to eat it.",
+          "cached": "tools/voice/clips/groups/part_we_eat__under_the_ground__clue3.mp3",
+          "clip": "Assets/audio/groups/part_we_eat__under_the_ground__clue3.mp3",
+          "clip_sha256": "10ad56fb53f4632efa4aef719a94d6be85c369649d2866062c3e794a9439b1a1",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These plants all keep their tasty part under the ground. We dig them up to eat them. The part of the potato plant that we eat grows under the ground.",
+        "together": "These plants all keep their tasty part under the ground. We dig them up to eat them.",
+        "fact": "The part of the potato plant that we eat grows under the ground.",
+        "quote": "The part of the potato that people eat is a tuber that grows under the ground.",
+        "source": "potato_plant:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Potato",
+        "cached": "tools/voice/clips/groups/part_we_eat__under_the_ground__explanation.mp3",
+        "clip": "Assets/audio/groups/part_we_eat__under_the_ground__explanation.mp3",
+        "clip_sha256": "704e3b125bce2d948e772b206a7b3fe90f8b5ad46a3034326496851144fc14f7",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "part_we_eat=seeds_or_pods": {
+      "field": "part_we_eat",
+      "value": "seeds_or_pods",
+      "label": "The seeds or pods",
+      "question": "Which part of the plant do we eat?",
+      "clues": [
+        {
+          "text": "Think about the part of a plant that holds the baby plant.",
+          "cached": "tools/voice/clips/groups/part_we_eat__seeds_or_pods__clue1.mp3",
+          "clip": "Assets/audio/groups/part_we_eat__seeds_or_pods__clue1.mp3",
+          "clip_sha256": "66380a557b4c78e28f9816ac211304c9342ccce5b521ffdfe437c44fa0a94387",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "This part can be small and round, or long and thin.",
+          "cached": "tools/voice/clips/groups/part_we_eat__seeds_or_pods__clue2.mp3",
+          "clip": "Assets/audio/groups/part_we_eat__seeds_or_pods__clue2.mp3",
+          "clip_sha256": "d2c51d6ecace8096113c71ad6d754f3d4e96bab48999196e9c5fc372c7375804",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "We often open it to find the little ones inside.",
+          "cached": "tools/voice/clips/groups/part_we_eat__seeds_or_pods__clue3.mp3",
+          "clip": "Assets/audio/groups/part_we_eat__seeds_or_pods__clue3.mp3",
+          "clip_sha256": "0c4440ba110a21033613e147798ab1102d49fcecaabbda714b089873f10a807e",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "We eat the seeds or pods of these plants. The seeds are inside the pods. A pea can be a small round seed or a pod with seeds inside.",
+        "together": "We eat the seeds or pods of these plants. The seeds are inside the pods.",
+        "fact": "A pea can be a small round seed or a pod with seeds inside.",
+        "quote": "A pea, although treated as a vegetable in cooking, is botanically a fruit; the term is most commonly used to describe the small spherical seeds or the pods of the legume Pisum sativum.",
+        "source": "pea_plant:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Pea",
+        "cached": "tools/voice/clips/groups/part_we_eat__seeds_or_pods__explanation.mp3",
+        "clip": "Assets/audio/groups/part_we_eat__seeds_or_pods__explanation.mp3",
+        "clip_sha256": "9903841fea2ba8c629eebf653dac47b731206996236ed0b8a6bfabdabacdd6a3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "where_it_travels=road": {
+      "field": "where_it_travels",
+      "value": "road",
+      "label": "On the road",
+      "question": "Where does it travel?",
+      "clues": [
+        {
+          "text": "Think about how people go from one place to another.",
+          "cached": "tools/voice/clips/groups/where_it_travels__road__clue1.mp3",
+          "clip": "Assets/audio/groups/where_it_travels__road__clue1.mp3",
+          "clip_sha256": "69e75229ba3efef4a2e19d8a583f2c5833b9bb2e4d5c08f69c9bf9caa579e204",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They move along a hard, flat path.",
+          "cached": "tools/voice/clips/groups/where_it_travels__road__clue2.mp3",
+          "clip": "Assets/audio/groups/where_it_travels__road__clue2.mp3",
+          "clip_sha256": "a05d5b2577efea0147446c3f729a7170c263297b86313065f5045e1155d0fbac",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They have wheels that roll on the ground.",
+          "cached": "tools/voice/clips/groups/where_it_travels__road__clue3.mp3",
+          "clip": "Assets/audio/groups/where_it_travels__road__clue3.mp3",
+          "clip_sha256": "3bbb4d1f8ce4f855d250899be1b7c6741818bd42ee1924aef29a28f5686f9c6a",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "All of these carry people or goods and they roll on wheels along the road. A bicycle has two wheels, and you push the pedals with your feet to make it go.",
+        "together": "All of these carry people or goods and they roll on wheels along the road.",
+        "fact": "A bicycle has two wheels, and you push the pedals with your feet to make it go.",
+        "quote": "A bicycle (or bike) is a small, human powered land vehicle with a seat, two wheels, two pedals, and a metal chain connected to cogs on the pedals and rear wheel.",
+        "source": "bicycle:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Bicycle",
+        "cached": "tools/voice/clips/groups/where_it_travels__road__explanation.mp3",
+        "clip": "Assets/audio/groups/where_it_travels__road__explanation.mp3",
+        "clip_sha256": "6cb8f1247a0a1b70d33bb38f7c526eb7adf2b3b11920b439ce7214cee9de4687",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "where_it_travels=water": {
+      "field": "where_it_travels",
+      "value": "water",
+      "label": "On water",
+      "question": "Where does it travel?",
+      "clues": [
+        {
+          "text": "Think about a place where you see lots of water.",
+          "cached": "tools/voice/clips/groups/where_it_travels__water__clue1.mp3",
+          "clip": "Assets/audio/groups/where_it_travels__water__clue1.mp3",
+          "clip_sha256": "43acf7ac610514b38553f03bfd94e39e1c7a3f360ddb3d5ef8f87c569d0559a4",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "This kind of vehicle moves on top of the water.",
+          "cached": "tools/voice/clips/groups/where_it_travels__water__clue2.mp3",
+          "clip": "Assets/audio/groups/where_it_travels__water__clue2.mp3",
+          "clip_sha256": "f1d9031258dffee1c82894f4dbf845c549518b94067e8f4230d84d608452221b",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "It can carry people or things across the water.",
+          "cached": "tools/voice/clips/groups/where_it_travels__water__clue3.mp3",
+          "clip": "Assets/audio/groups/where_it_travels__water__clue3.mp3",
+          "clip_sha256": "2e0e342446656516189bb9af62e5fd9cbb9ff82ccff73c9f6b9434aa35c078be",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These all travel on water. They carry people or things across rivers, lakes, and seas. A ship is a big vehicle that travels on water, and it is bigger than a boat.",
+        "together": "These all travel on water. They carry people or things across rivers, lakes, and seas.",
+        "fact": "A ship is a big vehicle that travels on water, and it is bigger than a boat.",
+        "quote": "A ship is a large vehicle used to travel on water.",
+        "source": "ship:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Ship",
+        "cached": "tools/voice/clips/groups/where_it_travels__water__explanation.mp3",
+        "clip": "Assets/audio/groups/where_it_travels__water__explanation.mp3",
+        "clip_sha256": "5d265d1e7b35fcf92419d2903fb4e7950f3b94fba03bc447e62e080cbfd59812",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "where_it_travels=air": {
+      "field": "where_it_travels",
+      "value": "air",
+      "label": "In the air",
+      "question": "Where does it travel?",
+      "clues": [
+        {
+          "text": "Think about things that go high up, above your head.",
+          "cached": "tools/voice/clips/groups/where_it_travels__air__clue1.mp3",
+          "clip": "Assets/audio/groups/where_it_travels__air__clue1.mp3",
+          "clip_sha256": "3a04abaf7e8032eb3cb15447fc779ad3c20bcce8ff947e906a3aa42ea805fbdb",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They do not need a road or a track to move.",
+          "cached": "tools/voice/clips/groups/where_it_travels__air__clue2.mp3",
+          "clip": "Assets/audio/groups/where_it_travels__air__clue2.mp3",
+          "clip_sha256": "a5a57276288460c8b81d820e3e8ec623423a2335ce23ad50c780273266aba4f8",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They move up in the sky, not on the ground or water.",
+          "cached": "tools/voice/clips/groups/where_it_travels__air__clue3.mp3",
+          "clip": "Assets/audio/groups/where_it_travels__air__clue3.mp3",
+          "clip_sha256": "b20c713de9bca1e1dd085b94a01b5583f5506bb99f15c8c057fd579bc0c9640c",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": null,
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
+      ]
+    },
+    "kind_of_house_thing=furniture": {
+      "field": "kind_of_house_thing",
+      "value": "furniture",
+      "label": "Furniture",
+      "question": "What kind of thing in the house is it?",
+      "clues": [
+        {
+          "text": "Think about the things in a house that people use every day.",
+          "cached": "tools/voice/clips/groups/kind_of_house_thing__furniture__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_house_thing__furniture__clue1.mp3",
+          "clip_sha256": "01bf2fbf78699b4b97497fab1cf7c6d85dbfe1430d6e392fabc0412abcde6740",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "These things are big and heavy, and they stay in one place.",
+          "cached": "tools/voice/clips/groups/kind_of_house_thing__furniture__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_house_thing__furniture__clue2.mp3",
+          "clip_sha256": "c6c729bece83a73585388388c63abb9af6f8d3b899689d07a86c0902365d0f28",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You sit on them, sleep on them, or keep your things inside them.",
+          "cached": "tools/voice/clips/groups/kind_of_house_thing__furniture__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_house_thing__furniture__clue3.mp3",
+          "clip_sha256": "638de82cd8dd4274ab71cdd2485d137c6abc991272127feef501131f47efdf9b",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These are all big things in a house that people use to sit, sleep, or keep things. A bed can be small for one person or big for two people.",
+        "together": "These are all big things in a house that people use to sit, sleep, or keep things.",
+        "fact": "A bed can be small for one person or big for two people.",
+        "quote": "A bed comes in many different sizes including a single, double and king size.",
+        "source": "bed:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Bed",
+        "cached": "tools/voice/clips/groups/kind_of_house_thing__furniture__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_house_thing__furniture__explanation.mp3",
+        "clip_sha256": "3e189ffa9e35c1fd908046e8f05a6f6c547c8a35f4a49ed24124503d8944630a",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_house_thing=eating": {
+      "field": "kind_of_house_thing",
+      "value": "eating",
+      "label": "Things to eat and drink with",
+      "question": "What kind of thing in the house is it?",
+      "clues": [
+        {
+          "text": "Think about what you use when you are hungry or thirsty.",
+          "cached": "tools/voice/clips/groups/kind_of_house_thing__eating__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_house_thing__eating__clue1.mp3",
+          "clip_sha256": "27781a417dc2b9599e0f7ac4b23cb6212f5c4858fcf4a15bac7818645494c43c",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You hold these in your hands at the table.",
+          "cached": "tools/voice/clips/groups/kind_of_house_thing__eating__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_house_thing__eating__clue2.mp3",
+          "clip_sha256": "bd32d59e3a63b4bdbc0bfab005e56c3790f3ac766bbb3b7b8468d389c38132de",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They help food or drink go into your mouth.",
+          "cached": "tools/voice/clips/groups/kind_of_house_thing__eating__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_house_thing__eating__clue3.mp3",
+          "clip_sha256": "f0a2f6de59c2f3a7a616b5efe9b776f82db9eb4e71a68426cec040b44328a485",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These are all things you use at the table when you eat or drink. You hold them in your hands to help you. A spoon is a tool people use for eating foods that are like liquids, such as soup.",
+        "together": "These are all things you use at the table when you eat or drink. You hold them in your hands to help you.",
+        "fact": "A spoon is a tool people use for eating foods that are like liquids, such as soup.",
+        "quote": "A spoon is a tool for eating.",
+        "source": "spoon:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Spoon",
+        "cached": "tools/voice/clips/groups/kind_of_house_thing__eating__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_house_thing__eating__explanation.mp3",
+        "clip_sha256": "2f399319be12ad0f127e9c9bcf1ed8c16a4030f5a8c1a88a0df3e3eb7093f0a9",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_house_thing=cleaning": {
+      "field": "kind_of_house_thing",
+      "value": "cleaning",
+      "label": "Things to clean with",
+      "question": "What kind of thing in the house is it?",
+      "clues": [
+        {
+          "text": "Think about things that help make a place clean.",
+          "cached": "tools/voice/clips/groups/kind_of_house_thing__cleaning__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_house_thing__cleaning__clue1.mp3",
+          "clip_sha256": "bdffdc5523cd019bcad915196d6e69374e5ceafadcfece2a1a23acb505c9f21f",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You use them when something is dirty.",
+          "cached": "tools/voice/clips/groups/kind_of_house_thing__cleaning__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_house_thing__cleaning__clue2.mp3",
+          "clip_sha256": "232df9ac957cbf1fcec4c98afe96015d73e09d8db30d475ecaaedf1e4a7e2543",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They help you wash or sweep away the dirt.",
+          "cached": "tools/voice/clips/groups/kind_of_house_thing__cleaning__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_house_thing__cleaning__clue3.mp3",
+          "clip_sha256": "c27e90914880c93277b1d8bb288d160b1cf5c4d7a7cbd1aefb6ce2d2f2b39b43",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These are all things you use to clean up messes and dirt. A sponge is full of tiny holes that soak up water and dirt.",
+        "together": "These are all things you use to clean up messes and dirt.",
+        "fact": "A sponge is full of tiny holes that soak up water and dirt.",
+        "quote": "The sponge is made of a special material, with many holes.",
+        "source": "sponge:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Sponge_(tool)",
+        "cached": "tools/voice/clips/groups/kind_of_house_thing__cleaning__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_house_thing__cleaning__explanation.mp3",
+        "clip_sha256": "5bdfdd74904526a0df1594549574e0c6656306974f398a78170b284c6b45f13b",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "kind_of_house_thing=electric": {
+      "field": "kind_of_house_thing",
+      "value": "electric",
+      "label": "Things that run on electricity",
+      "question": "What kind of thing in the house is it?",
+      "clues": [
+        {
+          "text": "Think about things in your home that need power to work.",
+          "cached": "tools/voice/clips/groups/kind_of_house_thing__electric__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_house_thing__electric__clue1.mp3",
+          "clip_sha256": "8305d51fcda074bd387a0951b3853aec31c093fab3affadda84150558ff9b4f4",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They stop working when the power goes off.",
+          "cached": "tools/voice/clips/groups/kind_of_house_thing__electric__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_house_thing__electric__clue2.mp3",
+          "clip_sha256": "c779cfb19b57fba55ebb1d5d67cfca885201b4f2cdf17b05405e7d16768ba486",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You plug them in or switch them on to make them go.",
+          "cached": "tools/voice/clips/groups/kind_of_house_thing__electric__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_house_thing__electric__clue3.mp3",
+          "clip_sha256": "3a0977e004086659991963384255eab2208b5b06f515625a81258f143e6fe455",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These things all need electricity to work. When you switch them on, they do their job for you. A fridge keeps food cold so it stays good to eat for many days.",
+        "together": "These things all need electricity to work. When you switch them on, they do their job for you.",
+        "fact": "A fridge keeps food cold so it stays good to eat for many days.",
+        "quote": "People put food and drinks in it, to keep those items cold or good (unspoiled) for a longer time.",
+        "source": "fridge:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Refrigerator",
+        "cached": "tools/voice/clips/groups/kind_of_house_thing__electric__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_house_thing__electric__explanation.mp3",
+        "clip_sha256": "39ac361841a2d42e41d521bd2f2a78e8e6892f85863d316deacad9f7b24979ac",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "shape_of_the_land=high": {
+      "field": "shape_of_the_land",
+      "value": "high",
+      "label": "High land",
+      "question": "What is the land mostly like there?",
+      "clues": [
+        {
+          "text": "Think about land that goes up high.",
+          "cached": "tools/voice/clips/groups/shape_of_the_land__high__clue1.mp3",
+          "clip": "Assets/audio/groups/shape_of_the_land__high__clue1.mp3",
+          "clip_sha256": "3b5ebaf3f530e7ed0d7caf32e4a6f4e09fd3704fb9ea0be6a57581eca0e95240",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "It is much taller than the ground around it.",
+          "cached": "tools/voice/clips/groups/shape_of_the_land__high__clue2.mp3",
+          "clip": "Assets/audio/groups/shape_of_the_land__high__clue2.mp3",
+          "clip_sha256": "556c587aa7f4dbefb3a3d418069cde437a6db44fc3e021df192102c156decb18",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You would have to climb up to reach the top.",
+          "cached": "tools/voice/clips/groups/shape_of_the_land__high__clue3.mp3",
+          "clip": "Assets/audio/groups/shape_of_the_land__high__clue3.mp3",
+          "clip_sha256": "f705c5a838cb459adfce73e5edb139dd12105f05effe3d300e2fd850b27fb241",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These are all places where the land goes up high. They are tall and steep, not flat. A mountain is a very big, tall bump on the land.",
+        "together": "These are all places where the land goes up high. They are tall and steep, not flat.",
+        "fact": "A mountain is a very big, tall bump on the land.",
+        "quote": "A mountain is a large natural rise of the Earth's surface that usually has a \"summit\" (the name for a mountain's top, which can also be called a peak).",
+        "source": "mountain:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Mountain",
+        "cached": "tools/voice/clips/groups/shape_of_the_land__high__explanation.mp3",
+        "clip": "Assets/audio/groups/shape_of_the_land__high__explanation.mp3",
+        "clip_sha256": "666d04eddd9ca6569783ab0738eaf62b8c1a881a311362b004973b0acafffcb6",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "shape_of_the_land=hollow": {
+      "field": "shape_of_the_land",
+      "value": "hollow",
+      "label": "Hollows and holes in the land",
+      "question": "What is the land mostly like there?",
+      "clues": [
+        {
+          "text": "Think about a place that goes down, not up.",
+          "cached": "tools/voice/clips/groups/shape_of_the_land__hollow__clue1.mp3",
+          "clip": "Assets/audio/groups/shape_of_the_land__hollow__clue1.mp3",
+          "clip_sha256": "c80ac9921cb00c9e95a54dab414c973417ec15bfd23ad5de036f20ec31646399",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "It is a low or empty spot in the ground.",
+          "cached": "tools/voice/clips/groups/shape_of_the_land__hollow__clue2.mp3",
+          "clip": "Assets/audio/groups/shape_of_the_land__hollow__clue2.mp3",
+          "clip_sha256": "ce2a2a2c173c4dab0d75d451f0e9a8e752f3874c7541af56d8380b3af29525fa",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You can look down into it, and it is not flat or high.",
+          "cached": "tools/voice/clips/groups/shape_of_the_land__hollow__clue3.mp3",
+          "clip": "Assets/audio/groups/shape_of_the_land__hollow__clue3.mp3",
+          "clip_sha256": "9eb4aaf7b836d0f9e0a7dc9c6d61f4a4943adb4872c47ec8400baf5bae85da31",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These are all places where the land goes down low. Some are big and some are small. A crater is a round dent on the ground, like a big bowl.",
+        "together": "These are all places where the land goes down low. Some are big and some are small.",
+        "fact": "A crater is a round dent on the ground, like a big bowl.",
+        "quote": "A crater is a round dent on a planet.",
+        "source": "crater:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Crater",
+        "cached": "tools/voice/clips/groups/shape_of_the_land__hollow__explanation.mp3",
+        "clip": "Assets/audio/groups/shape_of_the_land__hollow__explanation.mp3",
+        "clip_sha256": "15f9f435d12303186f4aebeb7138b15203d52a238a6ff95c58a1e25becca4f68",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "pet_farm_or_wild=pet": {
+      "field": "pet_farm_or_wild",
+      "value": "pet",
+      "label": "Pets at home",
+      "question": "Is it mostly a pet, a farm animal or a wild animal?",
+      "clues": [
+        {
+          "text": "Think about an animal that lives in your house with you.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__pet__clue1.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__pet__clue1.mp3",
+          "clip_sha256": "2fda727cef83047943a8f442c6c476958bf86733a019fdc9519406c3ad878ed5",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "This animal stays close to people and is cared for by them.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__pet__clue2.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__pet__clue2.mp3",
+          "clip_sha256": "5b74a9f4783e46fa454ba18736330cfd71f93615d24a736494e5489ac77c6cc1",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "People feed it, love it, and it stays in the home.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__pet__clue3.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__pet__clue3.mp3",
+          "clip_sha256": "89d3c0d56706974c06345585fc27e4896bd2e1e4d4fa1c37bd794a9467660a38",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These animals all live with people in their homes. People feed them and take care of them every day. Dogs like to be near people and are often called a person's best friend.",
+        "together": "These animals all live with people in their homes. People feed them and take care of them every day.",
+        "fact": "Dogs like to be near people and are often called a person's best friend.",
+        "quote": "Dogs are sometimes known as \"human's best friend\" because they are kept as pets, are usually loyal, and like being around humans.",
+        "source": "dog:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Dog",
+        "cached": "tools/voice/clips/groups/pet_farm_or_wild__pet__explanation.mp3",
+        "clip": "Assets/audio/groups/pet_farm_or_wild__pet__explanation.mp3",
+        "clip_sha256": "2724a8f2e9866abf37e6fdc865cc462b4959445d57af3bbedba1e1c8a8e864c4",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "pet_farm_or_wild=farm": {
+      "field": "pet_farm_or_wild",
+      "value": "farm",
+      "label": "Farm animals",
+      "question": "Is it mostly a pet, a farm animal or a wild animal?",
+      "clues": [
+        {
+          "text": "Think about animals that live where people grow food.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__farm__clue1.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__farm__clue1.mp3",
+          "clip_sha256": "e75c2168b76fc71932fc042a2f1b45a07d5d17e07aa2cd9a56ada7268bd6e9a6",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "These animals are kept by people who work outside in fields.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__farm__clue2.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__farm__clue2.mp3",
+          "clip_sha256": "75b43e3367a720e457b8d1a7dc197c1d260a10c6ae88685d1cf5347944de4ac3",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "People raise these animals to help them and to give them things they need.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__farm__clue3.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__farm__clue3.mp3",
+          "clip_sha256": "23105d8cd3e5324b87168d6745e0bdc78b281561d4541abb19260a3dd4809750",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These animals all live with people on farms. People take care of them and use them for many things. A baby cow can walk just a few minutes after it is born.",
+        "together": "These animals all live with people on farms. People take care of them and use them for many things.",
+        "fact": "A baby cow can walk just a few minutes after it is born.",
+        "quote": "The calves have long strong legs and can walk a few minutes after they are born, so they can follow the herd.",
+        "source": "cow:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Cattle",
+        "cached": "tools/voice/clips/groups/pet_farm_or_wild__farm__explanation.mp3",
+        "clip": "Assets/audio/groups/pet_farm_or_wild__farm__explanation.mp3",
+        "clip_sha256": "d1483c81ecbf6a16123212ec4e25f1451e4cdb7b1acf69bc2f099012f8f49aa7",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "pet_farm_or_wild=wild_land": {
+      "field": "pet_farm_or_wild",
+      "value": "wild_land",
+      "label": "Wild animals on land",
+      "question": "Is it mostly a pet, a farm animal or a wild animal?",
+      "clues": [
+        {
+          "text": "Think about animals that live far away from people.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__clue1.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue1.mp3",
+          "clip_sha256": "74ff489d22e684ce5d2415172ded6a54e5729744f99ce3e68c047a1180f2cbfc",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They find their own food and make their own homes.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__clue2.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue2.mp3",
+          "clip_sha256": "982f016468d101888c65dfdfe19cdd1c3c03ca34ab56e1e6d99a7f0ffef84fe4",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They live on the ground, not in water or in a house.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__clue3.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue3.mp3",
+          "clip_sha256": "d43026fa929b7775b54e3e91d0b2a3a369ad4ff1a685407e92d206cc00f97fd9",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These animals all live on their own in the wild. They do not live in a house or in water. The giraffe is the tallest animal that lives on land.",
+        "together": "These animals all live on their own in the wild. They do not live in a house or in water.",
+        "fact": "The giraffe is the tallest animal that lives on land.",
+        "quote": "Giraffes have an even number of toes and are the tallest land animals.",
+        "source": "giraffe:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Giraffe",
+        "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__explanation.mp3",
+        "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__explanation.mp3",
+        "clip_sha256": "7c260eda8ffab1e8324667cde055cb4da37c4441b26ccadfe57488d56d798b4a",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "pet_farm_or_wild=wild_water": {
+      "field": "pet_farm_or_wild",
+      "value": "wild_water",
+      "label": "Wild animals in water",
+      "question": "Is it mostly a pet, a farm animal or a wild animal?",
+      "clues": [
+        {
+          "text": "Think about animals that live in the water.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_water__clue1.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue1.mp3",
+          "clip_sha256": "adaba78592406226ac9cac7de957bea2cba88164ce0763c1870040b1c1b0d609",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "These animals swim in the big, salty sea.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_water__clue2.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue2.mp3",
+          "clip_sha256": "da054b3b3c93fe4090d443cc2c70e5b09af9279ffcea0b388d88628d16ec170f",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They are not pets and not farm animals, and they do not live on land.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_water__clue3.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue3.mp3",
+          "clip_sha256": "a684a8ae4b7770f4b379bde5544846c7b37bcc531a41b51f7b16df8d7095d023",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "They all live in the water and are wild animals. They swim in the sea, not in a house or on a farm. A whale breathes air from above the water, just like you and me.",
+        "together": "They all live in the water and are wild animals. They swim in the sea, not in a house or on a farm.",
+        "fact": "A whale breathes air from above the water, just like you and me.",
+        "quote": "Like other mammals, they breathe oxygen from the air, have a small amount of hair, and are warm blooded.",
+        "source": "whale:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Whale",
+        "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_water__explanation.mp3",
+        "clip": "Assets/audio/groups/pet_farm_or_wild__wild_water__explanation.mp3",
+        "clip_sha256": "4cd68707c43916b6dbc7624798ec40b2fd0c1d0aa258b8c3140e625a5bfdc495",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "pet_farm_or_wild_of_bird=pet": {
+      "field": "pet_farm_or_wild_of_bird",
+      "value": "pet",
+      "label": "Pets at home",
+      "question": "Is it mostly a pet, a farm animal or a wild animal?",
+      "clues": [
+        {
+          "text": "Think of a bird that lives in a home with people.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__pet__clue1.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__pet__clue1.mp3",
+          "clip_sha256": "997be9e6de372d28d0979852fe1455bdb59f48b1697abe7c2ce0b8af39b985ed",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "This bird sits in a cage or on a stand inside the house.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__pet__clue2.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__pet__clue2.mp3",
+          "clip_sha256": "05cdc5cd280cf4aec289ba47444f663cee7a69a42260f10c984bf33d97405e1b",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "People feed it, talk to it, and keep it as a friendly companion.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__pet__clue3.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__pet__clue3.mp3",
+          "clip_sha256": "7a643482b5270464ae6317c783e76bd13b303790e4903286e0191fc9fb6681c8",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These birds all live with people in their homes. People feed them and take care of them. Some of these birds can copy the sounds people make.",
+        "together": "These birds all live with people in their homes. People feed them and take care of them.",
+        "fact": "Some of these birds can copy the sounds people make.",
+        "quote": "Because some species have the ability to make sounds like human voices and have plumages with bright colors, many species are kept as pets.",
+        "source": "parrot:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Parrot",
+        "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__pet__explanation.mp3",
+        "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__pet__explanation.mp3",
+        "clip_sha256": "7227f51ee42cc3ea98c2bff39960fe2634a3944a47c8cb4f3069ef4fc466c70c",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "pet_farm_or_wild_of_bird=farm": {
+      "field": "pet_farm_or_wild_of_bird",
+      "value": "farm",
+      "label": "Farm animals",
+      "question": "Is it mostly a pet, a farm animal or a wild animal?",
+      "clues": [
+        {
+          "text": "This bird lives near people and gets its food from them.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__farm__clue1.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__farm__clue1.mp3",
+          "clip_sha256": "170e0d9a2f929f174ca44992f0d85f3d1a05a9c1c7b1a2061122bdcd0be27e83",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "This bird gives people something to eat or to use.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__farm__clue2.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__farm__clue2.mp3",
+          "clip_sha256": "a42166b65607ed7f50303104ed94f149be6778921db190f7a7fdf271abe20f93",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "People keep many of these birds together in one place.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__farm__clue3.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__farm__clue3.mp3",
+          "clip_sha256": "c989c8351caf76dda874d66b0856e638ef4edf5942dface52bd9b9bdc445afe9",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These birds live with people on farms. Farmers feed them and keep them safe. A mother hen lays eggs, and baby chicks come out of the eggs.",
+        "together": "These birds live with people on farms. Farmers feed them and keep them safe.",
+        "fact": "A mother hen lays eggs, and baby chicks come out of the eggs.",
+        "quote": "Like other female birds, hens lay eggs. Chicks hatch out of the eggs.",
+        "source": "hen:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Chicken",
+        "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__farm__explanation.mp3",
+        "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__farm__explanation.mp3",
+        "clip_sha256": "8ae76122c43e31c62e2de3eb801b3fd1914ad5f65aa7b5b709eee12fa2650fcf",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "pet_farm_or_wild_of_bird=wild_land": {
+      "field": "pet_farm_or_wild_of_bird",
+      "value": "wild_land",
+      "label": "Wild animals on land",
+      "question": "Is it mostly a pet, a farm animal or a wild animal?",
+      "clues": [
+        {
+          "text": "Think about birds that live free in the open.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
+          "clip_sha256": "d545d0863990efb4fd1ec537d6f1e11a4343df9c52ef0c8e129d18cf093e27f6",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They find their own food and make their own homes.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
+          "clip_sha256": "208b91e2b0af21b229ad55cb1f6a1c3ad4e4e39493482f7dd26054b30d612bdd",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "They do not live with people or on a farm.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
+          "clip_sha256": "4197b4eff7468bcd2931729a0608a55f613a5fb64c48236c49f843c8c391e376",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": null,
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
+      ]
+    },
+    "what_people_do_there=pray": {
+      "field": "what_people_do_there",
+      "value": "pray",
+      "label": "Pray",
+      "question": "What do people mostly do there?",
+      "clues": [
+        {
+          "text": "Think about a quiet place where people go to talk to God.",
+          "cached": "tools/voice/clips/groups/what_people_do_there__pray__clue1.mp3",
+          "clip": "Assets/audio/groups/what_people_do_there__pray__clue1.mp3",
+          "clip_sha256": "001110151ad4fb1041bab3e3828558f91c24290ffc1dd23767b5bc8264a6953d",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "People go there to say thank you or ask for help from God.",
+          "cached": "tools/voice/clips/groups/what_people_do_there__pray__clue2.mp3",
+          "clip": "Assets/audio/groups/what_people_do_there__pray__clue2.mp3",
+          "clip_sha256": "da91c34511398e37865c27bee9fbb7b990f75e8e00d81bc94c6e1e4f82c97a98",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "People sit or stand together and show love to God there.",
+          "cached": "tools/voice/clips/groups/what_people_do_there__pray__clue3.mp3",
+          "clip": "Assets/audio/groups/what_people_do_there__pray__clue3.mp3",
+          "clip_sha256": "acef4817f54ed98631d09201f5ccfe0f28af7dad12c1b2642a3456488d424fbb",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These are all special buildings where people go to pray and show love to God. In a temple, people do special things and pray to God.",
+        "together": "These are all special buildings where people go to pray and show love to God.",
+        "fact": "In a temple, people do special things and pray to God.",
+        "quote": "In a temple people may perform religious rituals, ceremonies, and pray.",
+        "source": "temple:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Temple",
+        "cached": "tools/voice/clips/groups/what_people_do_there__pray__explanation.mp3",
+        "clip": "Assets/audio/groups/what_people_do_there__pray__explanation.mp3",
+        "clip_sha256": "897a4ffe4111476aa38bf7c346cfd2c224413a4a7e2dda385c51315633323019",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "what_people_do_there=buy": {
+      "field": "what_people_do_there",
+      "value": "buy",
+      "label": "Buy and sell",
+      "question": "What do people mostly do there?",
+      "clues": [
+        {
+          "text": "Think about a place where people go to get things.",
+          "cached": "tools/voice/clips/groups/what_people_do_there__buy__clue1.mp3",
+          "clip": "Assets/audio/groups/what_people_do_there__buy__clue1.mp3",
+          "clip_sha256": "6977724edfd48adb1cd5001482d659c01133c99cb3ff6aa26bbb91036c759ece",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "People give money there and take something home.",
+          "cached": "tools/voice/clips/groups/what_people_do_there__buy__clue2.mp3",
+          "clip": "Assets/audio/groups/what_people_do_there__buy__clue2.mp3",
+          "clip_sha256": "fe166f19ac5cf59fbcee8229a93fc04dbea510fd352044c1ac00afebaab80757",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "It is a busy place where people buy and sell.",
+          "cached": "tools/voice/clips/groups/what_people_do_there__buy__clue3.mp3",
+          "clip": "Assets/audio/groups/what_people_do_there__buy__clue3.mp3",
+          "clip_sha256": "71f761fd18ac5f76e44ac4ea1ab891b04c2d35169a28133c01921d70f33d7246",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "In all these places, people go to buy things or sell things. A market is a place where people go to buy or sell things.",
+        "together": "In all these places, people go to buy things or sell things.",
+        "fact": "A market is a place where people go to buy or sell things.",
+        "quote": "A market is a place where people go to buy or sell things.",
+        "source": "market:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Market",
+        "cached": "tools/voice/clips/groups/what_people_do_there__buy__explanation.mp3",
+        "clip": "Assets/audio/groups/what_people_do_there__buy__explanation.mp3",
+        "clip_sha256": "7ff596c2ea9dc1514de5f0d5a47faf148e14dece41b075a2cb2e5ada0a35fe7b",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "what_people_do_there=travel": {
+      "field": "what_people_do_there",
+      "value": "travel",
+      "label": "Start a journey",
+      "question": "What do people mostly do there?",
+      "clues": [
+        {
+          "text": "Think about going from one place to a faraway place.",
+          "cached": "tools/voice/clips/groups/what_people_do_there__travel__clue1.mp3",
+          "clip": "Assets/audio/groups/what_people_do_there__travel__clue1.mp3",
+          "clip_sha256": "82febfa33eb284999a1432258e7dc0582156316de9ab501649a32be8d9c18544",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You go there when you are ready to leave.",
+          "cached": "tools/voice/clips/groups/what_people_do_there__travel__clue2.mp3",
+          "clip": "Assets/audio/groups/what_people_do_there__travel__clue2.mp3",
+          "clip_sha256": "5770d94886dd17297e21cf2aea786d8dd571f75e984bdba89ca1b18626d1ca64",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You wait there, then you go away on a big trip.",
+          "cached": "tools/voice/clips/groups/what_people_do_there__travel__clue3.mp3",
+          "clip": "Assets/audio/groups/what_people_do_there__travel__clue3.mp3",
+          "clip_sha256": "470ad211ed6b2d271752c6859fecea7d6d90840595ef15380370d1467ed2dc6c",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "People come to these places to start a trip. They get on a train, plane, or boat and go. The busiest railway station in the world is in Tokyo, Japan.",
+        "together": "People come to these places to start a trip. They get on a train, plane, or boat and go.",
+        "fact": "The busiest railway station in the world is in Tokyo, Japan.",
+        "quote": "The busiest railway station in the world is Shinjuku Station in Tokyo, Japan.",
+        "source": "railway_station:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Train_station",
+        "cached": "tools/voice/clips/groups/what_people_do_there__travel__explanation.mp3",
+        "clip": "Assets/audio/groups/what_people_do_there__travel__explanation.mp3",
+        "clip_sha256": "7805de47de04bbbba516a625de027c590c8bc6a779a08de9e2d9c92e8e6201f1",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "what_people_do_there=cross": {
+      "field": "what_people_do_there",
+      "value": "cross",
+      "label": "Cross over or climb up",
+      "question": "What do people mostly do there?",
+      "clues": [
+        {
+          "text": "Think about going from one side to the other side.",
+          "cached": "tools/voice/clips/groups/what_people_do_there__cross__clue1.mp3",
+          "clip": "Assets/audio/groups/what_people_do_there__cross__clue1.mp3",
+          "clip_sha256": "98e2ca18300e49112efd201206d753e47105e91b49ee851b25ef9af2675c86c4",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You do not stay here; you go across or go up.",
+          "cached": "tools/voice/clips/groups/what_people_do_there__cross__clue2.mp3",
+          "clip": "Assets/audio/groups/what_people_do_there__cross__clue2.mp3",
+          "clip_sha256": "7bc2c8e1145c53e19e21896572d57d338e16423e114f3ea0db5cd3c738463d8a",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "It helps you get over something, like water or a road.",
+          "cached": "tools/voice/clips/groups/what_people_do_there__cross__clue3.mp3",
+          "clip": "Assets/audio/groups/what_people_do_there__cross__clue3.mp3",
+          "clip_sha256": "49134a7d66df8f8fd02fce53fb0d49d2260d41dd102b68b754da34161051406b",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These are all places where you cross over something or climb up high. You use them to get to the other side or to go up. People have walked across bridges for thousands of years.",
+        "together": "These are all places where you cross over something or climb up high. You use them to get to the other side or to go up.",
+        "fact": "People have walked across bridges for thousands of years.",
+        "quote": "Nowadays most big bridges are made to carry vehicles but people have also walked across bridges for thousands of years.",
+        "source": "bridge:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Bridge",
+        "cached": "tools/voice/clips/groups/what_people_do_there__cross__explanation.mp3",
+        "clip": "Assets/audio/groups/what_people_do_there__cross__explanation.mp3",
+        "clip_sha256": "f225e8096348de7178fc08c4475b54e74eaba1909b65b107de1f63e0c5215ef9",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "how_we_play_with_it=build": {
+      "field": "how_we_play_with_it",
+      "value": "build",
+      "label": "Build or make with it",
+      "question": "How do we mostly play with it?",
+      "clues": [
+        {
+          "text": "Think about making something new with your hands.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__build__clue1.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__build__clue1.mp3",
+          "clip_sha256": "cf0ec3586434490656f9169049d8c99dac6d270a64c5b72fb44d70bc651e88c0",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You put the pieces one on top of another.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__build__clue2.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__build__clue2.mp3",
+          "clip_sha256": "42cf6e02a369268be6bde3eb54ce272ab2da484908cbad78c4f848e5539289a6",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "When you finish, you have made a shape or a thing.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__build__clue3.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__build__clue3.mp3",
+          "clip_sha256": "24fcd2000a7a1168870c5414dc7eb4c16092892fc686e4314dc4a1ff7cbf45a7",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These toys are for making things. You put the pieces together to build something. You can press the blocks together and they stick, so you can build big things.",
+        "together": "These toys are for making things. You put the pieces together to build something.",
+        "fact": "You can press the blocks together and they stick, so you can build big things.",
+        "quote": "The design allows the parts to be connected with compressive force and the blocks to be clamped with plastic pins.",
+        "source": "building_blocks:wikipedia_en",
+        "source_url": "https://en.wikipedia.org/wiki/Building_blocks_(toy)",
+        "cached": "tools/voice/clips/groups/how_we_play_with_it__build__explanation.mp3",
+        "clip": "Assets/audio/groups/how_we_play_with_it__build__explanation.mp3",
+        "clip_sha256": "052b1539288215bb9f8d54b5f240672cc72770fa4246c95eb772a302bf163f56",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "how_we_play_with_it=pretend": {
+      "field": "how_we_play_with_it",
+      "value": "pretend",
+      "label": "Cuddle it or play pretend",
+      "question": "How do we mostly play with it?",
+      "clues": [
+        {
+          "text": "Think about a toy you hold close and love.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__pretend__clue1.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__pretend__clue1.mp3",
+          "clip_sha256": "a442145973d79e8e26a8d46a08bac5eb6438152aaeff82c7ecc1b0e189e9d2df",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "This toy is soft or small, and you use it in your arms or in make-believe.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__pretend__clue2.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__pretend__clue2.mp3",
+          "clip_sha256": "29282c5fbe0c4a66a28809ec715d03a9d57a0f25301d0ff3bac71be5bd984a0a",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You hug it, or you act like it is real in a story.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__pretend__clue3.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__pretend__clue3.mp3",
+          "clip_sha256": "6cbecafeb49ce20b2258578379f1a453798bc907ae9d9a920b94ebfd7362c496",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "These toys are for hugging and for pretend play. You hold them close or make up stories with them. A teddy bear is a soft toy that looks like a baby bear.",
+        "together": "These toys are for hugging and for pretend play. You hold them close or make up stories with them.",
+        "fact": "A teddy bear is a soft toy that looks like a baby bear.",
+        "quote": "A teddy bear is a type of toy that looks like a bear.",
+        "source": "teddy_bear:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Teddy_bear",
+        "cached": "tools/voice/clips/groups/how_we_play_with_it__pretend__explanation.mp3",
+        "clip": "Assets/audio/groups/how_we_play_with_it__pretend__explanation.mp3",
+        "clip_sha256": "233ddbab49b1afedc7d8d7a8a8ffab4ab436ed2a113d2124cca1ad9984a35459",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "how_we_play_with_it=fly": {
+      "field": "how_we_play_with_it",
+      "value": "fly",
+      "label": "Fly it in the wind",
+      "question": "How do we mostly play with it?",
+      "clues": [
+        {
+          "text": "Think about something that goes up in the air.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__fly__clue1.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__fly__clue1.mp3",
+          "clip_sha256": "5db1cf63fc2874ff0bc37851ce9d2cfd19e7bcc57fb35d814db96f4b8503abca",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You do not push it or roll it on the ground.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__fly__clue2.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__fly__clue2.mp3",
+          "clip_sha256": "48a755febec1cfbe873fdb0dd0f1bceb02351aa4739bc4b6ab8d12690174076c",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "The wind lifts it and carries it up high.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__fly__clue3.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__fly__clue3.mp3",
+          "clip_sha256": "c34a0a9f45b555a2b360f8af3f3447096589783cd136d2293cbc6c615014c38c",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": {
+        "text": "All of these go up in the air and float or glide with the wind. In India, people fly kites on Makar Sankranti.",
+        "together": "All of these go up in the air and float or glide with the wind.",
+        "fact": "In India, people fly kites on Makar Sankranti.",
+        "quote": "In India, people fly kites on Makar Sankranti.",
+        "source": "kite:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Kite",
+        "cached": "tools/voice/clips/groups/how_we_play_with_it__fly__explanation.mp3",
+        "clip": "Assets/audio/groups/how_we_play_with_it__fly__explanation.mp3",
+        "clip_sha256": "fa895c20691c7a96ae2316e75b3782456a52ec41a6071823083a00eb32e7242e",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "how_we_play_with_it=music": {
+      "field": "how_we_play_with_it",
+      "value": "music",
+      "label": "Make music with it",
+      "question": "How do we mostly play with it?",
+      "clues": [
+        {
+          "text": "Think about things that make sounds you can sing along to.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue1.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3",
+          "clip_sha256": "f52dd494db9edc8bb59d79447130ce7b6e81c6b46ddebbdfe8753c6bd9a3c024",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "You use your hands or your breath to make the sound.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue2.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3",
+          "clip_sha256": "ce61a8778579f4c23bfcb6a652741844eccdaaa01d53b73bd05c027e0e0a2349",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        },
+        {
+          "text": "People play these to make a happy tune.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue3.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3",
+          "clip_sha256": "2fceca9410d4f812b0e52763bcde88560366448d8497b51ce60334f15e8849f2",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        }
+      ],
+      "explanation": null,
+      "written_by": "deepseek-flash",
+      "written_on": "2026-10-07",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
+      ]
+    }
   }
 }

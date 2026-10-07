@@ -59,6 +59,9 @@ PICTURE_NAMES = ROOT / "Assets/data/pictures.json"
 PICTURES = ROOT / "Assets/pictures"
 CLIPS = ROOT / "Assets/audio/names"
 VOICE_LEDGER = ROOT / "tools/voice/clips.json"
+GROUP_WORDS = ROOT / "Assets/data/groups.json"     # the game's copy of the clues and explanations
+GROUP_CLIPS = ROOT / "Assets/audio/groups"
+MIN_CLUES = 3
 PRONUNCIATION = ROOT / "tools/voice/pronunciation.json"
 RECORDS = ROOT / "tools/pictures/records.json"
 QUEUE = ROOT / "tools/content/review_queue.json"
@@ -137,7 +140,43 @@ def load() -> dict:
     catalogue = read_json(CATALOGUE)
     if catalogue is None:
         raise SystemExit("There is no catalogue yet. Build it with: python tools/catalogue/build.py")
+    catalogue.setdefault("groups", {})
     return catalogue
+
+
+def group_key(field: str, value) -> str:
+    """How a group is named everywhere: the field and its value, as `part_we_eat=leaves`."""
+    return f"{field}={str(value).lower() if isinstance(value, bool) else value}"
+
+
+def groups_on_boards(catalogue: dict) -> dict:
+    """Every group a child can meet: each value of a field that sorts boards which at
+    least four things in the game carry. group key -> {field, value, label, question, members}."""
+    dictionary, things = read_json(DICTIONARY), game_copy(catalogue)["things"]
+    found = {}
+    for field, definition in dictionary["fields"].items():
+        if not definition.get("sorts_boards", True) or len(definition["values"]) < GROUPS:
+            continue
+        for value, label in definition["values"].items():
+            inside = [t.get("shown_as") or t["name"] for t in things.values() if value_of(t, field) == value]
+            if len(inside) >= PER_GROUP:
+                found[group_key(field, value)] = {"field": field, "value": value, "label": label,
+                                                  "question": definition["wording"], "members": inside}
+    return found
+
+
+def groups_copy(catalogue: dict) -> dict:
+    """What the game reads about groups: for each one that has its words, the ladder of
+    clues and the explanation, each with the clip that speaks it."""
+    out = {}
+    for key, group in catalogue.get("groups", {}).items():
+        clues = [{"text": c["text"], "audio": c.get("clip")} for c in group.get("clues", [])]
+        told = group.get("explanation") or {}
+        if len(clues) >= MIN_CLUES or told.get("text"):
+            out[key] = {"clues": clues if len(clues) >= MIN_CLUES else [],
+                        "explanation": {"text": told["text"], "audio": told.get("clip")} if told.get("text") else None}
+    return {"about": "The game's copy of the clues and explanations, one entry for each group (a field and one of its "
+                     "values). Written from the catalogue on every save. Nobody edits it.", "groups": out}
 
 
 def game_copy(catalogue: dict) -> dict:
@@ -360,6 +399,24 @@ def problems(catalogue: dict, about_to_save: bool = False) -> list:
         out.append("Assets/data/things.json is not what the catalogue would write: someone edited the game's copy")
     if read_json(QUEUE) != queue_view(catalogue):
         out.append("tools/content/review_queue.json is not what the catalogue would write")
+
+    # 7. the words of the groups: clues that are a ladder, and clips that are really there
+    for key, group in catalogue.get("groups", {}).items():
+        clues = group.get("clues", [])
+        if clues and len(clues) < MIN_CLUES:
+            out.append(f"group {key}: it has {len(clues)} clue(s); a ladder needs at least {MIN_CLUES}")
+        spoken = clues + ([group["explanation"]] if group.get("explanation") else [])
+        for words in spoken:
+            if not str(words.get("text", "")).strip():
+                out.append(f"group {key}: a clue or the explanation has no text")
+            if words.get("clip"):
+                path = ROOT / words["clip"]
+                if not path.exists():
+                    out.append(f"group {key}: its clip {words['clip']} is not there")
+                elif fingerprint(path) != words.get("clip_sha256"):
+                    out.append(f"group {key}: {words['clip']} is not the file the catalogue recorded (its fingerprint differs)")
+    if not about_to_save and (read_json(GROUP_WORDS) or groups_copy({})) != groups_copy(catalogue):
+        out.append("Assets/data/groups.json is not what the catalogue would write: someone edited the game's copy")
     return out
 
 
@@ -381,6 +438,15 @@ def notes(catalogue: dict) -> list:
     waiting = [t["thing_id"] for tile_id, t in tiles.items() if t["review"] == "approved" and tile_id not in chosen]
     if waiting:
         out.append(f"approved in the tile records but not yet in the catalogue (run publish.py): {', '.join(waiting)}")
+    met, written = groups_on_boards(catalogue), catalogue.get("groups", {})
+    wordless = [g["label"] for key, g in met.items() if len(written.get(key, {}).get("clues", [])) < MIN_CLUES
+                or not (written.get(key, {}).get("explanation") or {}).get("text")]
+    out.append(f"{len(met) - len(wordless)} of the {len(met)} groups a child can meet have their clues and explanation"
+               + (f"; without: {', '.join(wordless)}" if wordless else ""))
+    unspoken = sum(1 for g in written.values() for w in g.get("clues", []) + ([g["explanation"]] if g.get("explanation") else [])
+                   if not w.get("clip"))
+    if unspoken:
+        out.append(f"{unspoken} clue(s) or explanation(s) have no voice clip yet")
     held = [v for c in circles.values() for v, g in c.get("groups", {}).items() if g.get("held_back_in_settings")]
     if held:
         out.append(f"held off boards by hand in settings.json, not worked out: {', '.join(sorted(set(held)))}")
@@ -397,6 +463,7 @@ def save(catalogue: dict):
     write_json(CATALOGUE, catalogue)
     write_json(THINGS, game_copy(catalogue))
     write_json(QUEUE, queue_view(catalogue))
+    write_json(GROUP_WORDS, groups_copy(catalogue))
 
 
 @contextlib.contextmanager
@@ -536,6 +603,27 @@ def sync_voice(catalogue: dict):
         else:
             voice.update(clip=None)
             voice.pop("clip_from", None)
+
+
+def sync_group_voice(catalogue: dict):
+    """The clip that speaks each clue and each explanation, from the voice ledger. A clip is
+    named only once it is in the game's own folder and is the one the ledger recorded."""
+    recorded = (read_json(VOICE_LEDGER) or {}).get("groups", {})
+    for key, group in catalogue.get("groups", {}).items():
+        spoken = [(f"clue{i + 1}", clue) for i, clue in enumerate(group.get("clues", []))]
+        if group.get("explanation"):
+            spoken.append(("explanation", group["explanation"]))
+        for part, words in spoken:
+            made = recorded.get(f"{key}:{part}")
+            for stale in ("clip", "clip_sha256", "cached", "clip_from"):
+                words.pop(stale, None)
+            if not made or made["text"] != words["text"]:
+                continue        # never spoken, or the words have changed since
+            words["cached"] = made["cache"]
+            clip = ROOT / made["game_file"]
+            if clip.exists() and fingerprint(clip) == made["sha256"]:
+                words.update(clip=made["game_file"], clip_sha256=made["sha256"],
+                             clip_from=f"Kokoro, voice {made['voice']}, recorded {made['recorded_on']}")
 
 
 def sync_sources(catalogue: dict):

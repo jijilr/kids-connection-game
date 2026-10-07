@@ -47,7 +47,9 @@ filler members, no surface fields.
                good tile gets one second try, if the cap allows.
   8. finish    what passed every check goes into the game. What did not is held by the
                rules, with the reason, and a later run takes it up again.
-  9. digest    circles opened, fields added, things added, cost, anything held; one
+  9. words     every group a child can meet gets a ladder of clues and an explanation
+               (tools/content/group_words.py), spoken with the owner's Kokoro.
+ 10. digest    circles opened, fields added, things added, cost, anything held; one
                commit on the work branch.
 
 What reaches the owner (his rule): a thing unsuitable for a young child, and an
@@ -104,6 +106,7 @@ PROPOSALS = ROOT / "tools/content/field_proposals.json"
 PROGRESS = ROOT / "tools/job/progress.json"     # the child's saved progress, saved from the game by a grown-up
 FIELD_LIKELY_USD = 0.03   # what settling one field has cost
 SHARE_OF_CAP = 0.85       # a circle is started only while its likely cost fits in this share of what is left
+GROUP_WORDS_CAP_INR = 5   # the most a run spends on clues and explanations for groups that have none
 DEFAULT_CAP_INR = 200
 SPARE = 1                 # one more thing than a group needs, so it survives one refusal
 FAMILIAR_ENOUGH = 0.7
@@ -847,6 +850,29 @@ def put_in_the_game(run: dict):
     say("  voices: " + " ".join(voices.stdout.strip().splitlines()[-2:]) if voices.stdout.strip() else "  voices: not recorded")
 
 
+def words_for_new_groups(budget):
+    """A group that has become possible gets its clues and its explanation, written and
+    checked by tools/content/group_words.py and spoken with the owner's Kokoro. What it
+    costs is counted against the run's hard cap; with too little of the cap left it waits
+    for the next run. Nothing here can fail the run."""
+    left = min(GROUP_WORDS_CAP_INR, budget.left * budget.rate)
+    if left < 0.5:
+        say("  clues and explanations: left for the next run; the cap would not cover them")
+        return
+    done = subprocess.run([sys.executable, str(ROOT / "tools/content/group_words.py"), "--cap", f"{left:.2f}"],
+                          capture_output=True, text=True, encoding="utf-8", errors="replace")
+    spent = re.search(r"Spent: Rs ([0-9.]+)", done.stdout or "")
+    if spent:
+        budget.add("deepseek", float(spent.group(1)) / budget.rate)
+    lines = (done.stdout or "").strip().splitlines()
+    say("  clues and explanations: " + (lines[-2] if len(lines) >= 2 else "not written"))
+    voices = subprocess.run([sys.executable, str(ROOT / "tools/voice/record_names.py")], capture_output=True,
+                            text=True, encoding="utf-8", errors="replace")
+    said = [line for line in (voices.stdout or "").splitlines() if "clue" in line]
+    if said:
+        say("  " + said[-1])
+
+
 def held_as(t: dict, run_id: str, rehearsal: bool) -> tuple:
     """Who holds a thing that is not going into the game, and why. ('', []) if nobody does."""
     if t.get("in_game") or t.get("not_needed") or (t["passed"] and t.get("tile") and not rehearsal):
@@ -1036,7 +1062,8 @@ def commit(run: dict, summary: str, title: str = None):
     file holds something shaped like a key, or a key the environment holds."""
     paths = ["tools/job", "tools/catalogue", "tools/content/review_queue.json", "Assets/data/things.json",
              "Assets/data/dictionary.json", "tools/content/field_proposals.json", "tools/content/expansion_tree.json",
-             "Assets/pictures", "tools/pictures", "tools/research/out", "Assets/audio/names", "tools/voice"]
+             "Assets/pictures", "tools/pictures", "tools/research/out", "Assets/audio/names", "tools/voice",
+             "Assets/data/groups.json", "Assets/audio/groups"]
     git = lambda *args: subprocess.run(["git", "-C", str(ROOT), *args], capture_output=True, text=True,
                                        encoding="utf-8", errors="replace")
     git("add", "--", *paths)
@@ -1377,6 +1404,7 @@ def main():
         say(f"\nSTOPPED: {stop}")
     if not run["rehearse"]:
         put_in_the_game(run)
+        words_for_new_groups(budget)
     hold(run, rehearsal=bool(run["rehearse"]))
     rebuild_tree()        # the engine's file, as the data now stands
     now_open = open_circles()

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import '../models/entity.dart';
+import '../models/group_words.dart';
 import '../providers/engine_provider.dart';
 import '../services/board_assembler.dart';
 import '../services/sound_service.dart';
@@ -94,6 +95,8 @@ class EngineScreen extends StatelessWidget {
                   ),
                 ),
               ),
+              if (g.explanation != null) _words(g.explanation!, const Color(0xFFE6F4EA), Icons.auto_stories_rounded, 'explanation'),
+              if (g.clue != null && !g.boardFinished) _words(g.clue!, const Color(0xFFFFF4C2), Icons.lightbulb_rounded, 'clue'),
               if (g.message.isNotEmpty && !g.boardFinished) _status(g),
               if (!g.atFloor && !g.boardFinished) _controls(g),
             ],
@@ -121,9 +124,23 @@ class EngineScreen extends StatelessWidget {
     }
   }
 
+  /// Says a clue or an explanation: its recorded clip if it has one, the device's voice
+  /// if not. With [after], the clip waits for the sound now playing to finish.
+  void _sayWords(Spoken words, {bool after = false}) {
+    final audio = words.audio;
+    if (audio == null) {
+      speakText(words.text);
+    } else if (after) {
+      SoundService().playAfter(audio);
+    } else {
+      SoundService().playAsset(audio);
+    }
+  }
+
   void _submit(EngineProvider g) {
     final sounds = SoundService();
-    switch (g.submit()) {
+    final result = g.submit();
+    switch (result) {
       case SubmitResult.correct:
         sounds.playCorrect();
       case SubmitResult.roundDone:
@@ -134,6 +151,10 @@ class EngineScreen extends StatelessWidget {
         sounds.playOneAway();
       case SubmitResult.notReady:
         break;
+    }
+    // A group found: say why these belong together, once the sound for "right" is over.
+    if ((result == SubmitResult.correct || result == SubmitResult.roundDone) && g.explanation != null) {
+      _sayWords(g.explanation!, after: true);
     }
   }
 
@@ -375,6 +396,32 @@ class EngineScreen extends StatelessWidget {
     );
   }
 
+  /// A clue or an explanation, shown for the grown-up beside him and spoken for the
+  /// child. Tapping it says it again.
+  Widget _words(Spoken words, Color tint, IconData icon, String name) {
+    return GestureDetector(
+      key: ValueKey(name),
+      onTap: () => _sayWords(words),
+      child: Container(
+        width: double.infinity,
+        margin: const EdgeInsets.fromLTRB(12, 4, 12, 0),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        decoration: BoxDecoration(color: tint, borderRadius: BorderRadius.circular(14)),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Icon(icon, size: 20, color: _deepPurple),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Text(words.text,
+                  style: GoogleFonts.inter(fontSize: 14, height: 1.3, color: _ink)),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   Widget _controls(EngineProvider g) {
     ButtonStyle outlined() => OutlinedButton.styleFrom(
           foregroundColor: Colors.black87,
@@ -398,6 +445,19 @@ class EngineScreen extends StatelessWidget {
             onPressed: g.shuffleTiles,
             style: outlined(),
             child: const Text('Shuffle'),
+          ),
+          // A clue leads him toward a group without naming a tile, and never costs a star.
+          OutlinedButton.icon(
+            key: const ValueKey('clue-button'),
+            onPressed: g.hasClue
+                ? () {
+                    final clue = g.nextClue();
+                    if (clue != null) _sayWords(clue);
+                  }
+                : null,
+            style: outlined(),
+            icon: const Icon(Icons.lightbulb_rounded, size: 18),
+            label: const Text('Clue'),
           ),
           ElevatedButton(
             onPressed: g.selected.length == 4 ? () => _submit(g) : null,

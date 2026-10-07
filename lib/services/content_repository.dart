@@ -4,6 +4,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import '../models/entity.dart';
 import '../models/dimension.dart';
 import '../models/game_settings.dart';
+import '../models/group_words.dart';
 import 'board_assembler.dart';
 import 'media.dart';
 
@@ -16,6 +17,9 @@ class ContentRepository {
   late GameSettings settings;
   late BoardAssembler assembler;
   MediaResolver media = const MediaResolver.empty();
+
+  /// The clues and the explanation of each group. Empty until they are written.
+  GroupWordsBook words = const GroupWordsBook.empty();
   bool _loaded = false;
 
   ContentRepository();
@@ -27,8 +31,10 @@ class ContentRepository {
     GameSettings settings, {
     Random? random,
     MediaResolver media = const MediaResolver.empty(),
+    GroupWordsBook words = const GroupWordsBook.empty(),
   }) {
     _set(ents, reg, settings, media, random);
+    this.words = words;
   }
 
   /// The things in a decoded `things.json`, in file order.
@@ -57,5 +63,10 @@ class ContentRepository {
     final reg = DimensionRegistry.fromJson(await read('dictionary.json'));
     final s = GameSettings.fromJson(await read('settings.json'));
     _set(things, reg, s, await MediaResolver.load(), null);
+    try {
+      words = GroupWordsBook.fromJson(await read('groups.json'));
+    } catch (_) {
+      // no words yet: the game plays without clues and explanations
+    }
   }
 }
