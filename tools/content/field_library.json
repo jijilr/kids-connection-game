@@ -513,5 +513,40 @@
       },
       "retired_because": "it sorts by size, which is surface and not what the thing is (the owner, 7 Oct 2026)"
     }
-  ]
+  ],
+  "parked_for_other_games": {
+    "about": "Sound splits into THREE groups. A board keeps four groups (the owner, 7 Oct 2026), so these make no board. They are kept for the odd-one-out and true-or-false games, which are not built yet.",
+    "splits": [
+      {
+        "circle": "animal/reptile",
+        "wording": "What kind of reptile is it?",
+        "values": {
+          "snake": "Snakes",
+          "lizard": "Lizards",
+          "turtle": "Turtles and tortoises"
+        },
+        "note": "Crocodiles and their kin has only Crocodile and Alligator as familiar members"
+      },
+      {
+        "circle": "animal/fish",
+        "wording": "Where does it mostly live?",
+        "values": {
+          "sea": "In the sea",
+          "fresh": "In rivers and ponds",
+          "aquarium": "In a tank at home"
+        },
+        "note": "The owner's own three. The checks place a goldfish in both of the last two, which a true-or-false game can use"
+      },
+      {
+        "circle": "nature_not_alive/water",
+        "wording": "What is the water mostly doing?",
+        "values": {
+          "flows": "Flowing along",
+          "still": "Standing still",
+          "frozen": "Frozen hard"
+        },
+        "note": "Salty sea water has two familiar members and water falling from the sky has none of its own"
+      }
+    ]
+  }
 }

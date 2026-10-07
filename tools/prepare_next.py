@@ -1250,7 +1250,9 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
             break
         for t in wanted:
             if "draw" not in t:
-                t["draw"] = deepseek_step(lambda spend: describe(client, config, spend, asks[t["ask"]], t["name"]))
+                # where the owner has said how a thing is to be drawn (`draw_as` in the catalogue), that is the line
+                said = (cat.load()["things"].get(cat.slug(t["name"])) or {}).get("draw_as")
+                t["draw"] = said or deepseek_step(lambda spend: describe(client, config, spend, asks[t["ask"]], t["name"]))
         save()
         for kind in sorted({kind_of(t) for t in wanted}):
             same = [t for t in wanted if kind_of(t) == kind]

@@ -1900,7 +1900,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "live",
-            "open_now": true
+            "open_now": false
           }
         ]
       }
@@ -13211,7 +13211,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "pray",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -13309,7 +13309,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "learn",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -13445,7 +13445,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "buy",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -13497,7 +13497,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "heal",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -13640,7 +13640,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "cross",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -13740,7 +13740,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "cross",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -22745,7 +22745,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "cross",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -22843,7 +22843,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "cross",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -22937,7 +22937,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "pray",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -23035,7 +23035,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "pray",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -23136,7 +23136,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "pray",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -23309,7 +23309,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "buy",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -23408,7 +23408,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "buy",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -23509,7 +23509,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "buy",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -23609,7 +23609,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "buy",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -23710,7 +23710,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "heal",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -25159,7 +25159,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "travel",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -25258,7 +25258,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "travel",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -25359,20 +25359,9 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "travel",
-            "open_now": true
+            "open_now": false
           }
         ]
-      },
-      "picture": {
-        "tile": "job_2026_10_07_06_2_01_c3",
-        "game_file": "Assets/pictures/port.webp",
-        "game_sha256": "6b52ac87214727b5d8f19486f037eec5aa2962211f09f145a7c502ffdb310a1d",
-        "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_2_01_c3.png",
-        "master_sha256": "e3ffb3012b7b114c2d06254454e51de47f8b0efa32ee230f2d53f49f42cc611b",
-        "style": "v1",
-        "approved": "by the owner",
-        "approved_on": "2026-10-07",
-        "other_tries": 0
       },
       "sources": {
         "pages": [
@@ -25421,7 +25410,8 @@
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07",
         "cached": "tools/voice/clips/port.mp3",
         "clip_sha256": "580a01461b952287d7f5e0e7608813dde9dd548ea49e8c538704e8c426fb5830"
-      }
+      },
+      "draw_as": "A harbour seen from the shore: a long concrete dock with two tall cargo cranes and rows of stacked containers beside calm water. No ship as the main subject: at most one small boat far off. As a child in India would see it at a sea port"
     },
     "metro_station": {
       "name": "Metro station",
@@ -25459,7 +25449,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "travel",
-            "open_now": true
+            "open_now": false
           }
         ]
       },
@@ -25897,12 +25887,16 @@
         "no_sentence_for": []
       },
       "voice": {
-        "say": "Toy drum",
+        "say": "Drum",
         "checked_by_ear": false,
         "clip": "Assets/audio/names/name_toy_drum.mp3",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07",
         "cached": "tools/voice/clips/toy_drum.mp3",
-        "clip_sha256": "f77b7682821098822ecec29cbfcfcceb703d345fae8f7b9e609f233f10eab14e"
+        "clip_sha256": "8213717de21ed80d722acc2b8239966d7c67dd38d84345bbbe8d434bf0f6c51d"
+      },
+      "shown_as": "Drum",
+      "notes": {
+        "general": "Shown and spoken as 'Drum', by the owner's word: the group must not be spotted by a word its labels share."
       }
     },
     "toy_flute": {
@@ -25976,12 +25970,16 @@
         "no_sentence_for": []
       },
       "voice": {
-        "say": "Toy flute",
+        "say": "Flute",
         "checked_by_ear": false,
         "clip": "Assets/audio/names/name_toy_flute.mp3",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07",
         "cached": "tools/voice/clips/toy_flute.mp3",
-        "clip_sha256": "f9c7d0feb62740b4c3ace5baff33bea61b492a8bd943b1500340bbf8280a57c6"
+        "clip_sha256": "f115ac17780ae5310c607d980a01db4d85834a43fa4982b65835670fe0dd7511"
+      },
+      "shown_as": "Flute",
+      "notes": {
+        "general": "Shown and spoken as 'Flute', by the owner's word: the group must not be spotted by a word its labels share."
       }
     },
     "toy_piano": {
@@ -26145,12 +26143,16 @@
         "no_sentence_for": []
       },
       "voice": {
-        "say": "Toy xylophone",
+        "say": "Xylophone",
         "checked_by_ear": false,
         "clip": "Assets/audio/names/name_toy_xylophone.mp3",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07",
         "cached": "tools/voice/clips/toy_xylophone.mp3",
-        "clip_sha256": "6ceadd6866690a5dc32fa5f6a897c4367debcd9ed2a3b37b9b3cc5d57cd2206a"
+        "clip_sha256": "2180d7499d6f0a09354a36f3a3bcb224244d432a84b52a4acd58a98611485ced"
+      },
+      "shown_as": "Xylophone",
+      "notes": {
+        "general": "Shown and spoken as 'Xylophone', by the owner's word: the group must not be spotted by a word its labels share."
       }
     },
     "toy_guitar": {
@@ -26224,12 +26226,16 @@
         "no_sentence_for": []
       },
       "voice": {
-        "say": "Toy guitar",
+        "say": "Guitar",
         "checked_by_ear": false,
         "clip": "Assets/audio/names/name_toy_guitar.mp3",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07",
         "cached": "tools/voice/clips/toy_guitar.mp3",
-        "clip_sha256": "851105b534666a144604e4db390a9f1c396d20c737e8aa6e4c4966af93069d95"
+        "clip_sha256": "0d8220a2b1ddfa37999ea7a74712ccacb497cd76788b2f189ac9a10e9eefa6ba"
+      },
+      "shown_as": "Guitar",
+      "notes": {
+        "general": "Shown and spoken as 'Guitar', by the owner's word: the group must not be spotted by a word its labels share."
       }
     },
     "paper_plane": {
@@ -27448,9 +27454,9 @@
         "say": "Hula hoop",
         "checked_by_ear": false,
         "clip": "Assets/audio/names/name_hula_hoop.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07",
         "cached": "tools/voice/clips/hula_hoop.mp3",
-        "clip_sha256": "630c95d1644fccd748e08b9e9b0316446a66ef40db92e5bca707d5fbe2df2706",
-        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        "clip_sha256": "630c95d1644fccd748e08b9e9b0316446a66ef40db92e5bca707d5fbe2df2706"
       },
       "status_why": [
         "two checks put it with toys we throw, kick or bat, and it is none of these: a hoop is spun round the waist. Run 2026-10-07-08 let it in"
@@ -27476,6 +27482,12 @@
           "made_by_people/building",
           "made_by_people/building/live"
         ]
+      },
+      "voice": {
+        "say": "Hut",
+        "checked_by_ear": false,
+        "cached": "tools/voice/clips/hut.mp3",
+        "clip": null
       }
     }
   },
@@ -27499,8 +27511,7 @@
       "made_by_people",
       "made_by_people/vehicle",
       "made_by_people/toy",
-      "made_by_people/household",
-      "made_by_people/building"
+      "made_by_people/household"
     ],
     "circles": {
       "seed": {
@@ -27527,7 +27538,7 @@
           "made_by_people": {
             "label": "Things people make",
             "things": 89,
-            "with_picture": 89
+            "with_picture": 88
           }
         },
         "open_by_its_things": true,
@@ -28335,7 +28346,7 @@
           "building": {
             "label": "Buildings",
             "things": 21,
-            "with_picture": 21
+            "with_picture": 20
           }
         },
         "open_by_its_things": true,
@@ -28649,7 +28660,7 @@
           "travel": {
             "label": "Start a journey",
             "things": 4,
-            "with_picture": 4
+            "with_picture": 3
           },
           "cross": {
             "label": "Cross over or climb up",
@@ -28658,8 +28669,10 @@
           }
         },
         "open_by_its_things": true,
-        "can_open_now": true,
-        "needs": []
+        "can_open_now": false,
+        "needs": [
+          "pictures for 1 more in 'Start a journey'"
+        ]
       },
       "made_by_people/building/live": {
         "label": "Live",

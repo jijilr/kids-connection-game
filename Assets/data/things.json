@@ -2908,7 +2908,11 @@
       "familiar": 0.95,
       "reviewed": 10,
       "source": "job:grounded+checked",
-      "drafted_in": "2026-10-07-06"
+      "drafted_in": "2026-10-07-06",
+      "shown_as": "Drum",
+      "notes": {
+        "general": "Shown and spoken as 'Drum', by the owner's word: the group must not be spotted by a word its labels share."
+      }
     },
     "toy_flute": {
       "name": "Toy flute",
@@ -2920,7 +2924,11 @@
       "familiar": 0.9,
       "reviewed": 10,
       "source": "job:grounded+checked",
-      "drafted_in": "2026-10-07-06"
+      "drafted_in": "2026-10-07-06",
+      "shown_as": "Flute",
+      "notes": {
+        "general": "Shown and spoken as 'Flute', by the owner's word: the group must not be spotted by a word its labels share."
+      }
     },
     "toy_piano": {
       "name": "Toy piano",
@@ -2944,7 +2952,11 @@
       "familiar": 0.85,
       "reviewed": 10,
       "source": "job:grounded+checked",
-      "drafted_in": "2026-10-07-06"
+      "drafted_in": "2026-10-07-06",
+      "shown_as": "Xylophone",
+      "notes": {
+        "general": "Shown and spoken as 'Xylophone', by the owner's word: the group must not be spotted by a word its labels share."
+      }
     },
     "toy_guitar": {
       "name": "Toy guitar",
@@ -2956,7 +2968,11 @@
       "familiar": 0.9,
       "reviewed": 10,
       "source": "job:grounded+checked",
-      "drafted_in": "2026-10-07-06"
+      "drafted_in": "2026-10-07-06",
+      "shown_as": "Guitar",
+      "notes": {
+        "general": "Shown and spoken as 'Guitar', by the owner's word: the group must not be spotted by a word its labels share."
+      }
     },
     "paper_plane": {
       "name": "Paper plane",

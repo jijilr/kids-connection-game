@@ -18866,7 +18866,7 @@
       "published_file": "Assets/pictures/railway_station.webp"
     },
     "job_2026_10_07_06_2_01_c3": {
-      "thing_id": "port",
+      "thing_id": null,
       "expected_thing": "port",
       "master_file": "tools/pictures/tiles/masters/job_2026_10_07_06_2_01_c3.png",
       "master_size": [
@@ -18908,11 +18908,10 @@
         "matches_cell": true,
         "problems": ""
       },
-      "review": "approved",
-      "review_note": "",
+      "review": "set aside",
+      "review_note": "the owner: a ship is its main subject; to be drawn again as a harbour with docks and cranes",
       "history": [],
-      "reviewed_on": "2026-10-07",
-      "published_file": "Assets/pictures/port.webp"
+      "reviewed_on": "2026-10-07"
     },
     "job_2026_10_07_06_2_01_c4": {
       "thing_id": "metro_station",

@@ -2,7 +2,7 @@
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-10-07",
   "dictionary_version": 10,
-  "things": 244,
+  "things": 243,
   "rules": {
     "weights": {
       "nearness": 3,
@@ -33,6 +33,7 @@
     }
   },
   "proposals": [
+    "made_by_people/toy/throw",
     "made_by_people/toy/wheel",
     "made_by_people/building/learn",
     "made_by_people/toy/ride"
@@ -42,7 +43,7 @@
       "label": "Everything",
       "steps_from_seed": 0,
       "branch": null,
-      "members": 244,
+      "members": 243,
       "open": true,
       "sorted_by": "kind_of_thing",
       "decisions": [],
@@ -389,6 +390,11 @@
           "why": "\"Where does it mostly live?\": not every thing has one value: 6 of the 15 names sorted have no single group, and at most one in 8 may (Goldfish, Angelfish, Guppy, Betta fish, Zebra fish, Neon tetra); \"Where does this fish mostly live?\": not every thing has one value: 8 of the 18 names sorted have no single group, and at most one in 8 may (Goldfish, Guppy, Betta fish, Neon tetra, Angelfish, Zebra fish); \"What covers the fish's body?\": only 1 of its values have four familiar things, and a board needs four: 'Has scales' has 8, 'Has smooth skin' has 2, 'Has a hard shell' has 0, 'Has spines' has 1; \"Where does the fish swim?\": its groups have no sharp edges: both checks placed only 59% of the things where the proposer did (Goldfish: 'near_top' or 'middle'; Shark: 'near_bottom' or 'middle'; Clownfish: 'near_top' or 'hides_in_rocks'; Zebra fish: 'near_top' or 'middle')",
           "members_then": 5,
           "status": "held by the rules"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the owner keeps the four-group rule; its three-way split is parked for the odd-one-out and true-or-false games",
+          "why": "see parked_for_other_games in the field library"
         }
       ],
       "factors": {
@@ -532,6 +538,11 @@
           "why": "\"What kind of reptile is it?\": only 3 of its values have four familiar things, and a board needs four: 'Snakes' has 6, 'Lizards' has 7, 'Turtles and tortoises' has 5, 'Crocodiles and their kin' has 2; \"How does it look?\": its groups have no sharp edges: both checks placed only 80% of the things where the proposer did (Crocodile: 'four_legs_and_bumpy_skin' or 'four_legs_and_scales'; Worm: 'long_and_no_legs' or 'no one group'; Eel: 'long_and_no_legs' or 'no one group'; Alligator: 'four_legs_and_bumpy_skin' or 'four_legs_and_scales'); \"How does it move?\": not every thing has one value: 4 of the 21 names sorted have no single group, and at most one in 8 may (Anaconda, Worm, Eel, Sea snake); \"Where does it live?\": not every thing has one value: 6 of the 12 things there fit more than one group, and at most 1 may (House lizard: in_houses and on_land; Crocodile: in_water and on_land; Turtle: in_water and on_land; Anaconda: in_water and on_land; Titanoboa: in_water and on_land; Vasuki indicus: in_water and on_land)",
           "members_then": 12,
           "status": "held by the rules"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the owner keeps the four-group rule; its three-way split is parked for the odd-one-out and true-or-false games",
+          "why": "see parked_for_other_games in the field library"
         }
       ],
       "factors": {
@@ -1208,6 +1219,11 @@
           "why": "\"Does the water flow or stay still?\": only 3 of its values have four familiar things, and a board needs four: 'Water that flows' has 6, 'Water that stays still' has 6, 'Water with big waves' has 1, 'Water that is frozen hard' has 5; \"Is the water salty or not salty?\": not every thing has one value: 6 of the 20 names sorted have no single group, and at most one in 8 may (Harbor, Shore, Iceberg, Hail, Mist, Dew); \"Is the water big or small?\": its groups have no sharp edges: both checks placed only 78% of the things where the proposer did (Bay: 'very_big' or 'big'; Harbor: 'very_big' or 'big'; Shore: 'very_big' or 'no one group'; Puddle: 'small' or 'tiny')",
           "members_then": 4,
           "status": "held by the rules"
+        },
+        {
+          "date": "2026-10-07",
+          "what": "the owner keeps the four-group rule; its three-way split is parked for the odd-one-out and true-or-false games",
+          "why": "see parked_for_other_games in the field library"
         }
       ],
       "factors": {
@@ -1360,7 +1376,7 @@
       "label": "Things people make",
       "steps_from_seed": 1,
       "branch": "made_by_people",
-      "members": 90,
+      "members": 89,
       "open": true,
       "sorted_by": "kind_of_made_thing",
       "decisions": [],
@@ -1476,7 +1492,7 @@
       "label": "Toys",
       "steps_from_seed": 2,
       "branch": "made_by_people",
-      "members": 23,
+      "members": 22,
       "open": true,
       "sorted_by": "how_we_play_with_it",
       "decisions": [
@@ -1532,23 +1548,22 @@
       "label": "Throw, kick or bat it",
       "steps_from_seed": 3,
       "branch": "made_by_people",
-      "members": 4,
+      "members": 3,
       "open": false,
       "missing": {
-        "field": "no field splits it four ways",
-        "things": 12
+        "things": 1,
+        "why": "fewer than four familiar things, so it is not yet a group on the board above it"
       },
       "decisions": [],
       "factors": {
         "nearness": 0.33,
         "neglect": 0.0,
-        "unlocks": 0.33,
-        "cheapness": 0.2
+        "unlocks": 0.0,
+        "cheapness": 0.8
       },
-      "score": 2.1,
-      "move": "deepening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+      "score": 2.6,
+      "move": "widening",
+      "status": "proposable"
     },
     "made_by_people/toy/ride": {
       "label": "Ride or sit on it",
