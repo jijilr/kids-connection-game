@@ -1900,7 +1900,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "live",
-            "open_now": false
+            "open_now": true
           }
         ]
       }
@@ -13211,7 +13211,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "pray",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -13309,7 +13309,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "learn",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -13445,7 +13445,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "buy",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -13497,7 +13497,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "heal",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -13640,7 +13640,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "cross",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -13740,7 +13740,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "cross",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -22745,7 +22745,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "cross",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -22843,7 +22843,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "cross",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -22937,7 +22937,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "pray",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -23035,7 +23035,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "pray",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -23136,7 +23136,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "pray",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -23309,7 +23309,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "buy",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -23408,7 +23408,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "buy",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -23509,7 +23509,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "buy",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -23609,7 +23609,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "buy",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -23710,7 +23710,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "heal",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -25159,7 +25159,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "travel",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -25258,7 +25258,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "travel",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -25359,7 +25359,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "travel",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -25411,7 +25411,18 @@
         "cached": "tools/voice/clips/port.mp3",
         "clip_sha256": "580a01461b952287d7f5e0e7608813dde9dd548ea49e8c538704e8c426fb5830"
       },
-      "draw_as": "A harbour seen from the shore: a long concrete dock with two tall cargo cranes and rows of stacked containers beside calm water. No ship as the main subject: at most one small boat far off. As a child in India would see it at a sea port"
+      "draw_as": "A harbour seen from the shore: a long concrete dock with two tall cargo cranes and rows of stacked containers beside calm water. No ship as the main subject: at most one small boat far off. As a child in India would see it at a sea port",
+      "picture": {
+        "tile": "job_2026_10_07_09_1_01_c1",
+        "game_file": "Assets/pictures/port.webp",
+        "game_sha256": "7360dfdf410ded5f890d231a6505c55c6d84c730cebd0b64bb03d84d3d2522d8",
+        "master_file": "tools/pictures/tiles/masters/job_2026_10_07_09_1_01_c1.png",
+        "master_sha256": "d06ee8aa04b49b253d5db9eedb034b01f3bc0021aec58cc527a5c346f32f254a",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-10-07",
+        "other_tries": 1
+      }
     },
     "metro_station": {
       "name": "Metro station",
@@ -25449,7 +25460,7 @@
             "circle": "made_by_people/building",
             "sorted_by": "what_people_do_there",
             "group": "travel",
-            "open_now": false
+            "open_now": true
           }
         ]
       },
@@ -27486,8 +27497,49 @@
       "voice": {
         "say": "Hut",
         "checked_by_ear": false,
-        "cached": "tools/voice/clips/hut.mp3",
-        "clip": null
+        "clip": null,
+        "cached": "tools/voice/clips/hut.mp3"
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Hut",
+            "title": "Hut",
+            "asked_for": "Hut",
+            "revision": 1357376809,
+            "fetched_on": "2026-10-07",
+            "sha256": "481df51395e36034f59e55bf360ef1af6bbcbc1f278edbfcecad84f328f1f436"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Hut_(dwelling)",
+            "title": "Hut (dwelling)",
+            "asked_for": "Hut (dwelling)",
+            "revision": 10844144,
+            "fetched_on": "2026-10-07",
+            "sha256": "a4d5fa47c995a8c00195f6a7465f6553775b88cbc72ff1467d38a230976a27fa"
+          }
+        ],
+        "facts": "tools/research/out/facts/hut.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A hut is a simple shelter that is built by humans."
+          },
+          "kind_of_made_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A hut is a small dwelling, which may be constructed of various local materials."
+          },
+          "what_people_do_there": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Some indigenous peoples use huts as their permanent place of safety."
+          }
+        },
+        "no_sentence_for": []
       }
     }
   },
@@ -27511,7 +27563,8 @@
       "made_by_people",
       "made_by_people/vehicle",
       "made_by_people/toy",
-      "made_by_people/household"
+      "made_by_people/household",
+      "made_by_people/building"
     ],
     "circles": {
       "seed": {
@@ -27538,7 +27591,7 @@
           "made_by_people": {
             "label": "Things people make",
             "things": 89,
-            "with_picture": 88
+            "with_picture": 89
           }
         },
         "open_by_its_things": true,
@@ -28346,7 +28399,7 @@
           "building": {
             "label": "Buildings",
             "things": 21,
-            "with_picture": 20
+            "with_picture": 21
           }
         },
         "open_by_its_things": true,
@@ -28660,7 +28713,7 @@
           "travel": {
             "label": "Start a journey",
             "things": 4,
-            "with_picture": 3
+            "with_picture": 4
           },
           "cross": {
             "label": "Cross over or climb up",
@@ -28669,10 +28722,8 @@
           }
         },
         "open_by_its_things": true,
-        "can_open_now": false,
-        "needs": [
-          "pictures for 1 more in 'Start a journey'"
-        ]
+        "can_open_now": true,
+        "needs": []
       },
       "made_by_people/building/live": {
         "label": "Live",
@@ -28773,7 +28824,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "publish.py",
+    "by": "job run 2026-10-07-09",
     "on": "2026-10-07"
   }
 }
