@@ -26075,12 +26075,16 @@
         "no_sentence_for": []
       },
       "voice": {
-        "say": "Toy piano",
+        "say": "Piano",
         "checked_by_ear": false,
         "clip": "Assets/audio/names/name_toy_piano.mp3",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07",
         "cached": "tools/voice/clips/toy_piano.mp3",
-        "clip_sha256": "ad952c386618482569d80daf799bdeea5f45a68e2c35c9c7a97b0bf61aded4c8"
+        "clip_sha256": "57dffcba697165355e3b9fd3e400f1445602b1db99b156d05b149da4d47eaba2"
+      },
+      "shown_as": "Piano",
+      "notes": {
+        "general": "Shown and spoken as 'Piano', by the owner's word: the group must not be spotted by a word its labels share."
       }
     },
     "toy_xylophone": {
@@ -28824,7 +28828,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job run 2026-10-07-09",
+    "by": "record_names.py",
     "on": "2026-10-07"
   }
 }

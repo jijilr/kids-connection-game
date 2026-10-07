@@ -3758,14 +3758,14 @@
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "toy_piano": {
-      "say": "Toy piano",
-      "text": "Toy piano",
+      "say": "Piano",
+      "text": "Piano",
       "voice": "bf_emma",
       "speed": 0.9,
-      "sounds": "tˈY pɪˈanQ",
-      "seconds": 1.84,
+      "sounds": "pɪˈanQ",
+      "seconds": 1.39,
       "cache": "tools/voice/clips/toy_piano.mp3",
-      "sha256": "ad952c386618482569d80daf799bdeea5f45a68e2c35c9c7a97b0bf61aded4c8",
+      "sha256": "57dffcba697165355e3b9fd3e400f1445602b1db99b156d05b149da4d47eaba2",
       "recorded_on": "2026-10-07",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
