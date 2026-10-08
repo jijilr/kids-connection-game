@@ -1,0 +1,27 @@
+{
+ "about": "The narrator's lines for the film 'How the game is played'. Each line is spoken by Kokoro (the owner's installation, used where it stands) and shown on screen word for word, so the film reads the same with the sound off. A line marked 'shown_only' is on screen while the game itself is speaking, and the narrator keeps quiet. 'say' is what Kokoro is given when the words on screen would be read wrongly. The narrator is a different voice from the game's own (bf_emma), so the two are never confused.",
+ "kokoro": "D:/Projects/Kokoro",
+ "voice": "bm_george",
+ "speed": 1.0,
+ "lines": [
+  {"id": "board", "label": "The board", "text": "The game opens on sixteen pictures. Hidden in them are four groups of four."},
+  {"id": "touch", "label": "A name", "text": "Touch a picture, and the game says its name."},
+  {"id": "four", "label": "Four that belong", "text": "The child looks for four that belong together."},
+  {"id": "submit", "label": "Four that belong", "text": "Four are chosen. Then, Submit."},
+  {"id": "why", "label": "Why they belong", "shown_only": true, "text": "The game says why they belong together, and adds one true thing."},
+  {"id": "wrong", "label": "A wrong guess", "text": "A wrong guess is answered kindly. Try again."},
+  {"id": "stuck", "label": "A clue", "text": "Stuck? There is a clue."},
+  {"id": "clearer", "label": "A clue", "text": "And then a clearer one."},
+  {"id": "clue_free", "label": "A clue", "text": "A clue never names a picture, and never costs a star."},
+  {"id": "until_done", "label": "The board is done", "text": "Group by group, until the board is done."},
+  {"id": "dig", "label": "Dig deeper", "text": "Then one button leads on: Dig deeper."},
+  {"id": "finer", "label": "Dig deeper", "text": "Now every picture is an animal, and the question is finer."},
+  {"id": "deeper", "label": "Deeper again", "text": "Deeper again: inside the mammals."},
+  {"id": "same_dog", "label": "Deeper again", "text": "One idea on every board, and a finer one at each step down."},
+  {"id": "another", "label": "Another board", "text": "Where nothing is deeper yet, the button brings another board. No waiting."},
+  {"id": "whole", "label": "The whole game", "text": "This is the whole game today: {things} things, on {boards} boards.", "say": "This is the whole game today: {things_said} things, on {boards_said} boards."},
+  {"id": "path", "label": "The whole game", "text": "From Everything, to Animals, to Mammals: that was the path just played."},
+  {"id": "grey", "label": "The whole game", "text": "The grey ones have no board inside them yet. The game is still growing."},
+  {"id": "three", "label": "", "text": "Touch to hear. Choose four. Dig deeper."}
+ ]
+}

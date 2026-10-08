@@ -53,3 +53,7 @@ tools/job/progress.json
 
 # Blender's own backup copies of a scene file
 *.blend1
+
+# the film of the game: its frames, clips and fetched fonts, and the film itself, are made by tools/film
+tools/film/out/
+docs/*.mp4

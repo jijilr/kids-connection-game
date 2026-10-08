@@ -2,10 +2,13 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:provider/provider.dart';
 import 'package:connections_game/models/dimension.dart';
 import 'package:connections_game/models/game_settings.dart';
 import 'package:connections_game/providers/engine_provider.dart';
+import 'package:connections_game/screens/engine_screen.dart';
 import 'package:connections_game/services/board_assembler.dart';
 import 'package:connections_game/services/content_repository.dart';
 import 'package:connections_game/services/media.dart';
@@ -151,4 +154,31 @@ void main() {
     expect(g.atRoot, isTrue);
     expect({for (final e in g.board!.tiles) e.id}, isNot(equals(before)));
   });
+
+  // The card that ends a board stands under four solved groups. On a phone or a small
+  // tablet that is below the edge of the screen, and a child who cannot read will not
+  // go looking for it: it must come onto the screen by itself.
+  for (final screen in const [Size(600, 960), Size(390, 800), Size(360, 640)]) {
+    testWidgets('the button that leads on is on the screen when a board is done, at ${screen.width.round()} x ${screen.height.round()}',
+        (tester) async {
+      tester.view.physicalSize = screen;
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      final g = EngineProvider(repo: repo(4), random: Random(4), clock: () => now);
+      await g.init();
+      await tester.pumpWidget(MaterialApp(
+        home: ChangeNotifierProvider<EngineProvider>.value(value: g, child: const EngineScreen()),
+      ));
+      await tester.pump();
+      solve(g);
+      for (int i = 0; i < 8; i++) {
+        await tester.pump(const Duration(milliseconds: 250));
+      }
+      final button = tester.getRect(find.byKey(const ValueKey('next')));
+      final list = tester.getRect(find.byType(SingleChildScrollView));
+      expect(button.top, greaterThanOrEqualTo(list.top), reason: 'the button is not above the list');
+      expect(button.bottom, lessThanOrEqualTo(list.bottom), reason: 'the button is not below the edge');
+      expect(list.bottom, lessThanOrEqualTo(screen.height));
+    });
+  }
 }

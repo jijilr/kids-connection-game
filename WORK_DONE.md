@@ -18,7 +18,7 @@ Last updated: 8 Oct 2026. Branch: `fresh-start`. The live site (branch `main`) h
 | Dictionary | version 10, 19 fields (one withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups a child can meet | 57: 52 have a ladder of clues, 44 have an explanation |
-| Tests | 44 in the game, 28 for the job, 8 for the catalogue, 10 for the pictures. All pass |
+| Tests | 47 in the game, 28 for the job, 8 for the catalogue, 10 for the pictures. All pass |
 
 **The thirteen boards:** Everything, Animals, Mammals, Birds, Dinosaurs, Plants, Vegetable plants,
 Things in nature that are not alive, Things people make, Vehicles, Toys, Things in the house, Buildings.
@@ -109,6 +109,9 @@ Things in nature that are not alive, Things people make, Vehicles, Toys, Things 
   a tile and never costs a star.
 - **Explanation:** when a group is found, the game shows and speaks why its things belong together, with
   one true fact.
+- **The card that ends a board comes onto the screen by itself** (8 Oct). Under four solved groups it
+  stood below the edge of a phone or small tablet, and the button that leads on had to be found by
+  scrolling. Found while filming the game; tested at three screen sizes.
 - **Saved progress:** boards opened and solved are kept on the device. A long press on the title opens a
   panel for the grown-up, which saves the record as a file. Put it at `tools/job/progress.json` and the job
   prepares one step ahead of where the child is.
@@ -139,6 +142,25 @@ Things in nature that are not alive, Things people make, Vehicles, Toys, Things 
   `tools/illustration/game_map_data.py` asks the board maker what can open and writes `game_map.json`;
   `tools/illustration/game_map_blender.py` builds the scene and renders it. It costs nothing.
 - It shows the game as it stood on 8 Oct: 243 things, 13 boards. It does not update itself.
+
+### A film of how the game is played (8 Oct)
+- `docs/how_the_game_is_played.mp4`: 1920 x 1080, 2 min 48. The owner asked for it,
+  with his Glym film as the thing to be parallel to. The film file is not in git; what makes it is.
+- **The game in it is the game.** `tools/film/film_game_test.dart` starts the game's own screen with the
+  things, pictures, clues and explanations as shipped, on a screen the size of a small tablet, plays it by
+  presses a finger would make, and saves every frame. The boards are dealt from a fixed seed, so it can be
+  made again. Every sound of the game in it is the clip the game asked for, at the moment it asked.
+- **Drawn by the film:** the tablet's frame, the dot where the finger is, the narrator's line, a box with
+  the words the game is saying (for a viewer with the sound off), the rings on the map, the two cards.
+- **The narrator** is Kokoro's `bm_george`, a different voice from the game's own, from the owner's
+  installation, used where it stands. His lines are in `tools/film/how_it_is_played.voice.json`.
+- **What it shows:** a touch says a name; four that belong become a bar and the game says why; a wrong
+  guess; two clues; the board done; Dig deeper into Animals, then Mammals; Next board where nothing is
+  deeper; the map of the whole game with the path just played ringed.
+- Four stretches of play are left out, each with a dissolve. It was made without hearing it.
+- `tools/film/README.md` says what is real and what is drawn, what to check by ear, and how to change it.
+- `tools/illustration/game_map_blender.py` now also writes where each circle stands in the picture
+  (`game_map_points.json`), which the film reads.
 
 ---
 
@@ -223,6 +245,12 @@ other names for mud.
 - His own test of the end-of-board button, the clue button, the explanations and the clips in a browser.
 - Listening to the fourteen flagged names, the five renamed toys, and the 200 clue and explanation clips.
 - A glance at the picture review sheets in `tools/pictures/preview/`.
+- Watching the film with the sound on. It was made without hearing it: `tools/film/README.md` lists what
+  to listen for.
+- A decision the film brought up: the explanation of the last group found stays at the foot of the screen
+  until the next group is found. With a clue showing too, the lowest row of pictures is partly under them
+  on a small tablet. Nothing was changed. One way: let the explanation leave when he touches the next
+  picture.
 
 **Closed for a reason**
 - Places on land: only Beach, Island and River bank are familiar land beside water. No filler was added.
@@ -265,6 +293,7 @@ other names for mud.
 | What waits for the owner; what the rules hold | `python tools/catalogue/catalogue.py queue` ; `... held` |
 | Write missing clues and explanations | `python tools/content/group_words.py` |
 | Record missing voices | `python tools/voice/record_names.py` |
+| Make the film again | `python tools/film/film_voice.py`, then `flutter test tools/film/film_game_test.dart --dart-define=SEED=40`, then `python tools/film/film_make.py` |
 | Make the picture of the game again | `python tools/illustration/game_map_data.py`, then `blender --background --python tools/illustration/game_map_blender.py -- docs/game_map.png` |
 | Run the tests | `flutter test` ; `python tools/job/selftest.py` ; `python tools/catalogue/selftest.py` ; `python tools/pictures/selftest.py` |
 
@@ -296,3 +325,5 @@ other names for mud.
 **8 Oct 2026**
 - This record started.
 - A picture of what the game holds, made in Blender: `docs/game_map.png`.
+- A film of how the game is played: `docs/how_the_game_is_played.mp4`. The card that ends a board now
+  comes onto the screen by itself.

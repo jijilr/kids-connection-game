@@ -295,7 +295,8 @@ class EngineScreen extends StatelessWidget {
     final detail = lean != null
         ? 'Dig deeper into a group, or tap the arrow for the one you know least.'
         : 'Here comes another board.';
-    return BounceInDown(
+    return _ShowOnScreen(
+        child: BounceInDown(
       duration: const Duration(milliseconds: 600),
       child: Container(
         width: double.infinity,
@@ -349,7 +350,7 @@ class EngineScreen extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ));
   }
 
   Widget _floorCard(EngineProvider g) {
@@ -473,4 +474,35 @@ class EngineScreen extends StatelessWidget {
       ),
     );
   }
+}
+
+/// Brings its child onto the screen when it first appears. The card that ends a board
+/// stands under four solved groups, and on a phone or a small tablet that is below the
+/// edge of the screen: the button that leads on must not wait there for a child to find
+/// it by scrolling.
+class _ShowOnScreen extends StatefulWidget {
+  final Widget child;
+  const _ShowOnScreen({required this.child});
+
+  @override
+  State<_ShowOnScreen> createState() => _ShowOnScreenState();
+}
+
+class _ShowOnScreenState extends State<_ShowOnScreen> {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      Scrollable.ensureVisible(
+        context,
+        alignment: 1.0, // its foot at the foot of the list
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.easeOutCubic,
+      );
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) => widget.child;
 }

@@ -18,6 +18,7 @@ import sys
 
 import bmesh
 import bpy
+from bpy_extras.object_utils import world_to_camera_view
 from mathutils import Euler, Vector
 
 HERE = pathlib.Path(__file__).resolve().parent
@@ -185,6 +186,7 @@ for branch, degrees in ANGLE.items():
         facing[child["id"]] = Vector((math.cos(a), math.sin(a), 0))
 
 box("ground", (160, 160, 0.2), (0, 0, -0.1), GROUND)
+platform = {}
 
 for node in data["nodes"]:
     cid, at = node["id"], place[node["id"]]
@@ -198,7 +200,7 @@ for node in data["nodes"]:
         radius, height, tile, mat = 2.05, 0.5, 1.3, flat("board " + branch, LIGHT[branch], 0.55)
     else:
         radius, height, tile, mat = 1.25, 0.2, 1.2, CLOSED
-    disc(node["label"], radius, height, at, mat)
+    platform[cid] = disc(node["label"], radius, height, at, mat)
 
     # the path from the board above
     if node["parent"]:
@@ -286,6 +288,21 @@ eye = Vector(((west + east) / 2, (south + north) / 2 / math.cos(TILT), 0)) - loo
 scene.camera = add("map camera", camera, eye, rotation=tilt)
 scene.render.resolution_x, scene.render.resolution_y = 2600, round(2600 * up / across)
 scene.render.resolution_percentage = 100
+
+# where each circle stands in the picture: the middle of its top and its radius, in pixels.
+# The film of the game (tools/film) reads this to ring the circles a child has been through.
+scene.view_layers[0].update()
+wide, high = scene.render.resolution_x, scene.render.resolution_y
+points = {}
+for cid, made in platform.items():
+    top = made.location + Vector((0, 0, made.dimensions.z))
+    middle = world_to_camera_view(scene, scene.camera, top)
+    edge = world_to_camera_view(scene, scene.camera, top + Vector((made.dimensions.x / 2, 0, 0)))
+    points[cid] = [round(middle.x * wide, 1), round((1 - middle.y) * high, 1), round((edge.x - middle.x) * wide, 1)]
+(HERE / "game_map_points.json").write_text(json.dumps({
+    "about": "Where each circle of docs/game_map.png stands in the picture: x, y of its middle and its radius, "
+             "in pixels. Written by game_map_blender.py whenever it builds the map.",
+    "image": [wide, high], "points": points}, indent=1) + "\n", encoding="utf-8", newline="\n")
 
 for engine in ("BLENDER_EEVEE_NEXT", "BLENDER_EEVEE"):
     try:

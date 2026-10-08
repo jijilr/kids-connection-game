@@ -1,0 +1,134 @@
+{
+ "about": "Where each circle of docs/game_map.png stands in the picture: x, y of its middle and its radius, in pixels. Written by game_map_blender.py whenever it builds the map.",
+ "image": [
+  2600,
+  2530
+ ],
+ "points": {
+  "seed": [
+   1320.3,
+   1379.8,
+   157.0
+  ],
+  "animal": [
+   983.8,
+   1076.3,
+   138.0
+  ],
+  "animal/mammal": [
+   1241.9,
+   477.5,
+   97.5
+  ],
+  "animal/bird": [
+   1011.5,
+   519.3,
+   97.5
+  ],
+  "animal/fish": [
+   613.7,
+   747.9,
+   59.5
+  ],
+  "animal/insect": [
+   468.3,
+   916.4,
+   59.5
+  ],
+  "animal/reptile": [
+   369.9,
+   1111.3,
+   59.5
+  ],
+  "animal/amphibian": [
+   324.1,
+   1321.7,
+   59.5
+  ],
+  "animal/dinosaur": [
+   798.2,
+   609.2,
+   97.5
+  ],
+  "plant": [
+   1656.8,
+   1076.3,
+   138.0
+  ],
+  "plant/tree": [
+   1928.6,
+   669.1,
+   59.5
+  ],
+  "plant/flower": [
+   2113.1,
+   837.6,
+   59.5
+  ],
+  "plant/grass_grain": [
+   2243.5,
+   1044.0,
+   59.5
+  ],
+  "plant/vegetable": [
+   1702.7,
+   544.2,
+   97.5
+  ],
+  "nature_not_alive": [
+   1656.8,
+   1691.1,
+   138.0
+  ],
+  "nature_not_alive/sky": [
+   1702.7,
+   2236.8,
+   59.5
+  ],
+  "nature_not_alive/water": [
+   1928.6,
+   2117.6,
+   59.5
+  ],
+  "nature_not_alive/land": [
+   2113.1,
+   1949.1,
+   59.5
+  ],
+  "nature_not_alive/ground": [
+   2243.5,
+   1742.7,
+   59.5
+  ],
+  "made_by_people": [
+   983.8,
+   1691.1,
+   138.0
+  ],
+  "made_by_people/vehicle": [
+   1061.7,
+   2269.4,
+   97.5
+  ],
+  "made_by_people/toy": [
+   820.7,
+   2178.2,
+   97.5
+  ],
+  "made_by_people/household": [
+   613.7,
+   2033.1,
+   97.5
+  ],
+  "made_by_people/tool": [
+   355.1,
+   1629.6,
+   59.5
+  ],
+  "made_by_people/building": [
+   454.9,
+   1844.0,
+   97.5
+  ]
+ }
+}

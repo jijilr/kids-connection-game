@@ -44,6 +44,22 @@ class AppColors {
   );
 }
 
+/// The look of the whole game. The film of the game (tools/film) uses it too, so that
+/// what it shows is the game's own screen.
+ThemeData appTheme() => ThemeData(
+      primaryColor: AppColors.primaryPurple,
+      scaffoldBackgroundColor: AppColors.backgroundStart,
+      textTheme: GoogleFonts.quicksandTextTheme().apply(
+        bodyColor: AppColors.textPrimary,
+        displayColor: AppColors.textPrimary,
+      ),
+      useMaterial3: true,
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: AppColors.primaryPurple,
+        brightness: Brightness.light,
+      ),
+    );
+
 class ConnectionsGameApp extends StatelessWidget {
   const ConnectionsGameApp({Key? key}) : super(key: key);
 
@@ -57,19 +73,7 @@ class ConnectionsGameApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Connections Game',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primaryColor: AppColors.primaryPurple,
-          scaffoldBackgroundColor: AppColors.backgroundStart,
-          textTheme: GoogleFonts.quicksandTextTheme().apply(
-            bodyColor: AppColors.textPrimary,
-            displayColor: AppColors.textPrimary,
-          ),
-          useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(
-            seedColor: AppColors.primaryPurple,
-            brightness: Brightness.light,
-          ),
-        ),
+        theme: appTheme(),
         home: const ResponsiveWrapper(child: EngineScreen()),
       ),
     );
