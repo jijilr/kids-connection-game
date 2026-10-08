@@ -50,3 +50,6 @@ tools/research/cache/
 
 # the child's saved progress, saved from the game by a grown-up for the job: kept on this machine only
 tools/job/progress.json
+
+# Blender's own backup copies of a scene file
+*.blend1

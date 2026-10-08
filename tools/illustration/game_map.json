@@ -1,0 +1,435 @@
+{
+ "things": 243,
+ "boards": 13,
+ "nodes": [
+  {
+   "id": "seed",
+   "label": "Everything",
+   "level": 0,
+   "parent": null,
+   "open": true,
+   "things": 243,
+   "tiles": [
+    "Assets/pictures/dog.webp",
+    "Assets/pictures/mango_tree.webp",
+    "Assets/pictures/sun.webp",
+    "Assets/pictures/car.webp"
+   ],
+   "groups": [
+    "Animals",
+    "Plants",
+    "Things in nature that are not alive",
+    "Things people make"
+   ],
+   "question": "What kind of thing is it?"
+  },
+  {
+   "id": "animal",
+   "label": "Animals",
+   "level": 1,
+   "parent": "seed",
+   "open": true,
+   "things": 92,
+   "tiles": [
+    "Assets/pictures/dog.webp",
+    "Assets/pictures/crow.webp",
+    "Assets/pictures/goldfish.webp",
+    "Assets/pictures/butterfly.webp"
+   ],
+   "groups": [
+    "Mammals",
+    "Birds",
+    "Fish",
+    "Insects"
+   ],
+   "question": "What kind of animal is it?"
+  },
+  {
+   "id": "animal/mammal",
+   "label": "Mammals",
+   "level": 2,
+   "parent": "animal",
+   "open": true,
+   "things": 21,
+   "tiles": [
+    "Assets/pictures/dog.webp",
+    "Assets/pictures/cow.webp",
+    "Assets/pictures/elephant.webp",
+    "Assets/pictures/whale.webp"
+   ],
+   "groups": [
+    "Pets at home",
+    "Farm animals",
+    "Wild animals on land",
+    "Wild animals in water"
+   ],
+   "question": "Is it mostly a pet, a farm animal or a wild animal?"
+  },
+  {
+   "id": "animal/bird",
+   "label": "Birds",
+   "level": 2,
+   "parent": "animal",
+   "open": true,
+   "things": 17,
+   "tiles": [
+    "Assets/pictures/parrot.webp",
+    "Assets/pictures/hen.webp",
+    "Assets/pictures/crow.webp",
+    "Assets/pictures/penguin.webp"
+   ],
+   "groups": [
+    "Pets at home",
+    "Farm animals",
+    "Wild animals on land",
+    "Wild animals in water"
+   ],
+   "question": "Is it mostly a pet, a farm animal or a wild animal?"
+  },
+  {
+   "id": "animal/fish",
+   "label": "Fish",
+   "level": 2,
+   "parent": "animal",
+   "open": false,
+   "things": 5,
+   "tiles": [
+    "Assets/pictures/goldfish.webp"
+   ],
+   "groups": [],
+   "question": null
+  },
+  {
+   "id": "animal/insect",
+   "label": "Insects",
+   "level": 2,
+   "parent": "animal",
+   "open": false,
+   "things": 8,
+   "tiles": [
+    "Assets/pictures/butterfly.webp"
+   ],
+   "groups": [],
+   "question": null
+  },
+  {
+   "id": "animal/reptile",
+   "label": "Reptiles",
+   "level": 2,
+   "parent": "animal",
+   "open": false,
+   "things": 12,
+   "tiles": [
+    "Assets/pictures/house_lizard.webp"
+   ],
+   "groups": [],
+   "question": null
+  },
+  {
+   "id": "animal/amphibian",
+   "label": "Amphibians",
+   "level": 2,
+   "parent": "animal",
+   "open": false,
+   "things": 3,
+   "tiles": [
+    "Assets/pictures/frog.webp"
+   ],
+   "groups": [],
+   "question": null
+  },
+  {
+   "id": "animal/dinosaur",
+   "label": "Dinosaurs",
+   "level": 2,
+   "parent": "animal",
+   "open": true,
+   "things": 26,
+   "tiles": [
+    "Assets/pictures/tyrannosaurus_rex.webp",
+    "Assets/pictures/brachiosaurus.webp",
+    "Assets/pictures/pterodactylus.webp",
+    "Assets/pictures/mosasaurus.webp"
+   ],
+   "groups": [
+    "Land hunters",
+    "Land grazers",
+    "Flyers",
+    "Swimmers"
+   ],
+   "question": "What kind of dinosaur is it?"
+  },
+  {
+   "id": "plant",
+   "label": "Plants",
+   "level": 1,
+   "parent": "seed",
+   "open": true,
+   "things": 31,
+   "tiles": [
+    "Assets/pictures/mango_tree.webp",
+    "Assets/pictures/rose.webp",
+    "Assets/pictures/rice_plant.webp",
+    "Assets/pictures/tomato_plant.webp"
+   ],
+   "groups": [
+    "Trees",
+    "Flowers",
+    "Grasses and grains",
+    "Vegetable plants"
+   ],
+   "question": "What kind of plant is it?"
+  },
+  {
+   "id": "plant/tree",
+   "label": "Trees",
+   "level": 2,
+   "parent": "plant",
+   "open": false,
+   "things": 4,
+   "tiles": [
+    "Assets/pictures/mango_tree.webp"
+   ],
+   "groups": [],
+   "question": null
+  },
+  {
+   "id": "plant/flower",
+   "label": "Flowers",
+   "level": 2,
+   "parent": "plant",
+   "open": false,
+   "things": 4,
+   "tiles": [
+    "Assets/pictures/rose.webp"
+   ],
+   "groups": [],
+   "question": null
+  },
+  {
+   "id": "plant/grass_grain",
+   "label": "Grasses and grains",
+   "level": 2,
+   "parent": "plant",
+   "open": false,
+   "things": 5,
+   "tiles": [
+    "Assets/pictures/rice_plant.webp"
+   ],
+   "groups": [],
+   "question": null
+  },
+  {
+   "id": "plant/vegetable",
+   "label": "Vegetable plants",
+   "level": 2,
+   "parent": "plant",
+   "open": true,
+   "things": 18,
+   "tiles": [
+    "Assets/pictures/tomato_plant.webp",
+    "Assets/pictures/carrot_plant.webp",
+    "Assets/pictures/coriander_plant.webp",
+    "Assets/pictures/pea_plant.webp"
+   ],
+   "groups": [
+    "The fruit",
+    "What grows under the ground",
+    "The leaves",
+    "The seeds or pods"
+   ],
+   "question": "Which part of the plant do we eat?"
+  },
+  {
+   "id": "nature_not_alive",
+   "label": "Things in nature that are not alive",
+   "level": 1,
+   "parent": "seed",
+   "open": true,
+   "things": 31,
+   "tiles": [
+    "Assets/pictures/sun.webp",
+    "Assets/pictures/sea.webp",
+    "Assets/pictures/mountain.webp",
+    "Assets/pictures/rock.webp"
+   ],
+   "groups": [
+    "Things in the sky",
+    "Water",
+    "Places on land",
+    "Rocks and soil"
+   ],
+   "question": "What kind of thing in nature is it?"
+  },
+  {
+   "id": "nature_not_alive/sky",
+   "label": "Things in the sky",
+   "level": 2,
+   "parent": "nature_not_alive",
+   "open": false,
+   "things": 4,
+   "tiles": [
+    "Assets/pictures/sun.webp"
+   ],
+   "groups": [],
+   "question": null
+  },
+  {
+   "id": "nature_not_alive/water",
+   "label": "Water",
+   "level": 2,
+   "parent": "nature_not_alive",
+   "open": false,
+   "things": 4,
+   "tiles": [
+    "Assets/pictures/sea.webp"
+   ],
+   "groups": [],
+   "question": null
+  },
+  {
+   "id": "nature_not_alive/land",
+   "label": "Places on land",
+   "level": 2,
+   "parent": "nature_not_alive",
+   "open": false,
+   "things": 13,
+   "tiles": [
+    "Assets/pictures/mountain.webp"
+   ],
+   "groups": [],
+   "question": null
+  },
+  {
+   "id": "nature_not_alive/ground",
+   "label": "Rocks and soil",
+   "level": 2,
+   "parent": "nature_not_alive",
+   "open": false,
+   "things": 9,
+   "tiles": [
+    "Assets/pictures/rock.webp"
+   ],
+   "groups": [],
+   "question": null
+  },
+  {
+   "id": "made_by_people",
+   "label": "Things people make",
+   "level": 1,
+   "parent": "seed",
+   "open": true,
+   "things": 89,
+   "tiles": [
+    "Assets/pictures/car.webp",
+    "Assets/pictures/ball.webp",
+    "Assets/pictures/chair.webp",
+    "Assets/pictures/hammer.webp"
+   ],
+   "groups": [
+    "Vehicles",
+    "Toys",
+    "Things in the house",
+    "Tools"
+   ],
+   "question": "What do we use it for?"
+  },
+  {
+   "id": "made_by_people/vehicle",
+   "label": "Vehicles",
+   "level": 2,
+   "parent": "made_by_people",
+   "open": true,
+   "things": 19,
+   "tiles": [
+    "Assets/pictures/car.webp",
+    "Assets/pictures/train.webp",
+    "Assets/pictures/boat.webp",
+    "Assets/pictures/aeroplane.webp"
+   ],
+   "groups": [
+    "On the road",
+    "On rails",
+    "On water",
+    "In the air"
+   ],
+   "question": "Where does it travel?"
+  },
+  {
+   "id": "made_by_people/toy",
+   "label": "Toys",
+   "level": 2,
+   "parent": "made_by_people",
+   "open": true,
+   "things": 22,
+   "tiles": [
+    "Assets/pictures/building_blocks.webp",
+    "Assets/pictures/teddy_bear.webp",
+    "Assets/pictures/kite.webp",
+    "Assets/pictures/toy_drum.webp"
+   ],
+   "groups": [
+    "Build or make with it",
+    "Cuddle it or play pretend",
+    "Fly it in the wind",
+    "Make music with it"
+   ],
+   "question": "How do we mostly play with it?"
+  },
+  {
+   "id": "made_by_people/household",
+   "label": "Things in the house",
+   "level": 2,
+   "parent": "made_by_people",
+   "open": true,
+   "things": 22,
+   "tiles": [
+    "Assets/pictures/chair.webp",
+    "Assets/pictures/cup.webp",
+    "Assets/pictures/bucket.webp",
+    "Assets/pictures/fan.webp"
+   ],
+   "groups": [
+    "Furniture",
+    "Things to eat and drink with",
+    "Things to clean with",
+    "Things that run on electricity"
+   ],
+   "question": "What kind of thing in the house is it?"
+  },
+  {
+   "id": "made_by_people/tool",
+   "label": "Tools",
+   "level": 2,
+   "parent": "made_by_people",
+   "open": false,
+   "things": 5,
+   "tiles": [
+    "Assets/pictures/hammer.webp"
+   ],
+   "groups": [],
+   "question": null
+  },
+  {
+   "id": "made_by_people/building",
+   "label": "Buildings",
+   "level": 2,
+   "parent": "made_by_people",
+   "open": true,
+   "things": 21,
+   "tiles": [
+    "Assets/pictures/temple.webp",
+    "Assets/pictures/shop.webp",
+    "Assets/pictures/airport.webp",
+    "Assets/pictures/bridge.webp"
+   ],
+   "groups": [
+    "Pray",
+    "Buy and sell",
+    "Start a journey",
+    "Cross over or climb up"
+   ],
+   "question": "What do people mostly do there?"
+  }
+ ]
+}

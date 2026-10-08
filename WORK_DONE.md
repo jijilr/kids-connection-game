@@ -128,6 +128,18 @@ Things in nature that are not alive, Things people make, Vehicles, Toys, Things 
   page word for word; two or three sentences; a second reading agrees.
 - The catalogue's `groups` section is the master record. `Assets/data/groups.json` is the game's copy.
 
+### A picture of what the game holds (8 Oct)
+- `docs/game_map.png`: a map of the game, made in Blender. The seed is in the middle, the four kinds of
+  thing around it, and the circles inside each kind on the outer ring. A board a child can open is a
+  coloured platform with four tiles, one from each of four of its groups. A group with no board inside it
+  yet is a small grey pad with one tile. Each carries its name and how many things it holds.
+- `docs/game_map.blend` is the Blender scene, for opening and changing by hand. The tiles on it are the
+  game's own pictures in `Assets/pictures/`, linked, not copied.
+- The picture is made from the game's own data, so it can be made again as the game grows:
+  `tools/illustration/game_map_data.py` asks the board maker what can open and writes `game_map.json`;
+  `tools/illustration/game_map_blender.py` builds the scene and renders it. It costs nothing.
+- It shows the game as it stood on 8 Oct: 243 things, 13 boards. It does not update itself.
+
 ---
 
 ## 3. The owner's rulings, in order
@@ -253,6 +265,7 @@ other names for mud.
 | What waits for the owner; what the rules hold | `python tools/catalogue/catalogue.py queue` ; `... held` |
 | Write missing clues and explanations | `python tools/content/group_words.py` |
 | Record missing voices | `python tools/voice/record_names.py` |
+| Make the picture of the game again | `python tools/illustration/game_map_data.py`, then `blender --background --python tools/illustration/game_map_blender.py -- docs/game_map.png` |
 | Run the tests | `flutter test` ; `python tools/job/selftest.py` ; `python tools/catalogue/selftest.py` ; `python tools/pictures/selftest.py` |
 
 ---
@@ -282,3 +295,4 @@ other names for mud.
 
 **8 Oct 2026**
 - This record started.
+- A picture of what the game holds, made in Blender: `docs/game_map.png`.
