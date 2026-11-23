@@ -230,7 +230,7 @@ def read_progress(path):
     """The boards the child has opened, from the file a grown-up saved from the game. None
     when there is no such file: then he may be anywhere, and every circle one step from
     an open board is prepared."""
-    data = cat.read_json(path) if path and pathlib.Path(path).exists() else None
+    data = cat.read_json(pathlib.Path(path)) if path and pathlib.Path(path).exists() else None
     boards = (data or {}).get("boards")
     if not isinstance(boards, dict):
         return None
@@ -240,12 +240,52 @@ def read_progress(path):
 def read_orders(path) -> set:
     """The boards he solved with nowhere deeper to go, as the game wrote them into his
     saved progress. Empty when there is no such file."""
-    data = cat.read_json(path) if path and pathlib.Path(path).exists() else None
+    data = cat.read_json(pathlib.Path(path)) if path and pathlib.Path(path).exists() else None
     asked = (data or {}).get("orders")
     return set(asked) if isinstance(asked, dict) else set()
 
 
-def orders(tree: dict, played: set = None, asked: set = ()) -> tuple:
+def read_mastery(path) -> set:
+    """The groups he has shown mastery of, from the file a grown-up saved from the game:
+    each found cleanly (no wrong guess took in its things, no clue asked for it) on at
+    least as many different days as settings.json asks (`next_board.mastery_days`). A
+    group's id is the id of the board inside it, as the job names circles. Empty when
+    there is no such file, or it was saved before the game recorded groups."""
+    data = cat.read_json(pathlib.Path(path)) if path and pathlib.Path(path).exists() else None
+    found = (data or {}).get("groups")
+    if not isinstance(found, dict):
+        return set()
+    days = int(((cat.read_json(cat.SETTINGS) or {}).get("next_board") or {}).get("mastery_days", 2))
+    return {group for group, seen in found.items()
+            if isinstance(seen, dict) and isinstance(seen.get("clean_days"), list) and len(set(seen["clean_days"])) >= days}
+
+
+def deeper_share() -> float:
+    """The share of the orders that go where he has shown mastery (the owner's ruling of
+    23 Nov 2026: 0.8), from settings.json, the same number the game uses after a board."""
+    return float(((cat.read_json(cat.SETTINGS) or {}).get("next_board") or {}).get("deeper_share", 0.8))
+
+
+def four_in_five(strong: list, other: list, share: float) -> list:
+    """Both lists in one order: `share` of the places to `strong`, the rest to `other`,
+    spread evenly (at 0.8: four, then one, then four...). When one list runs out, the
+    other goes on alone."""
+    other_part = round((1 - share) * 100)
+    out, s, o = [], 0, 0
+    while s < len(strong) or o < len(other):
+        i = len(out)
+        other_turn = (i + 1) * other_part // 100 > i * other_part // 100
+        if (other_turn and o < len(other)) or s >= len(strong):
+            out.append(other[o])
+            o += 1
+        else:
+            out.append(strong[s])
+            s += 1
+    return out
+
+
+def orders(tree: dict, played: set = None, asked: set = (), mastered: set = frozenset(),
+           share: float = 0.8) -> tuple:
     """The orders for new nodes: ONE group for each board (the owner's ruling of 7 Oct
     2026). An order arises when a board is solved and no group of it can be dug into.
     The game writes such orders into the child's saved progress (`asked`). Until the game
@@ -254,14 +294,33 @@ def orders(tree: dict, played: set = None, asked: set = ()) -> tuple:
     some group is still closed, so that the next level is ready wherever he goes. For
     each board the group is the one the engine's depth and breadth balance puts first.
     With saved progress, only the boards he has opened are served.
+
+    Where he has shown mastery (the owner's ruling of 23 Nov 2026, from the groups in his
+    saved progress): a circle is his strength when he has mastered its own group or the
+    group that leads to its board. On each board such a circle goes first; of all the
+    orders, `share` go to his strengths and the rest elsewhere, four then one; and the
+    engine's depth gap does not hold back a circle inside what he has mastered, since
+    going deeper there is the point.
     Returns (the circles to fetch, in order; the circles that wait their board's turn)."""
     parent = lambda cid: cid.rsplit("/", 1)[0] if "/" in cid else "seed"
+    strength = lambda cid: cid in mastered or parent(cid) in mastered
+    ready = in_order(tree)                          # every closed circle no rule holds, best first
+    deeper = [cid for cid, c in tree.items() if c["status"] == "held" and strength(cid)
+              and str(c.get("held_by", "")).startswith("depth gap")]
+    candidates = sorted(ready + deeper, key=lambda cid: -tree[cid]["score"]) if deeper else ready
     by_board = {}
-    for cid in in_order(tree):                      # every closed circle no rule holds, best first
+    for cid in candidates:
         by_board.setdefault(parent(cid), []).append(cid)
+    for board in by_board:                          # on each board, his strengths first
+        by_board[board].sort(key=lambda cid: not strength(cid))
     stuck = lambda board: not any(c["open"] for cid, c in tree.items() if cid != "seed" and parent(cid) == board)
-    boards = [b for b in by_board if played is None or b in played | {"seed"}]
+    # one step ahead of where he has been, and of where his strengths lead: the game sends
+    # him into a group he has mastered four times in five, so its board is where he goes next
+    boards = [b for b in by_board if played is None or b in played | {"seed"} | set(mastered)]
     boards.sort(key=lambda b: (b not in asked, not stuck(b), -tree[by_board[b][0]]["score"]))
+    if mastered:
+        boards = four_in_five([b for b in boards if strength(by_board[b][0])],
+                              [b for b in boards if not strength(by_board[b][0])], share)
     return [by_board[b][0] for b in boards], [cid for b in boards for cid in by_board[b][1:]]
 
 
@@ -316,7 +375,8 @@ def asks_for(catalogue: dict, cid: str, avoid: set = (), filled: set = ()) -> tu
     return asks, blocked
 
 
-def plan(catalogue: dict, rehearse: str = None, played: set = None, asked: set = ()) -> dict:
+def plan(catalogue: dict, rehearse: str = None, played: set = None, asked: set = (),
+         mastered: set = frozenset()) -> dict:
     """What the run sets out to do: the orders, one group for each board. Nobody approves
     a circle: the engine's balance chooses the group, and its rules and the owner's own
     holds are all that keep a circle back."""
@@ -335,7 +395,7 @@ def plan(catalogue: dict, rehearse: str = None, played: set = None, asked: set =
                          "fixed": {"kind_of_thing": kind}, "need": 0, "pictures_for": names,
                          "recorded_but_not_in_the_game": []})
         tree = rebuild_tree(write=False)["circles"]     # planning changes nothing
-        order, waiting = orders(tree, played, asked)
+        order, waiting = orders(tree, played, asked, mastered, deeper_share())
         held_back = [f"{c['label']}: {c.get('held_by') or c['status']}" for cid, c in tree.items()
                      if c["status"] in ("held", "rejected") and cid not in order]
         held_back += [f"{tree[cid]['label']}: it waits its turn; one group is fetched for each board at a time"
@@ -372,8 +432,16 @@ def plan(catalogue: dict, rehearse: str = None, played: set = None, asked: set =
         elif its_asks:
             circles.append({"circle": cid, "label": label, "chain": chain, "needs_field": False,
                             "expect_things": sum(a["need"] + SPARE for a in its_asks)})
+    parent = lambda cid: cid.rsplit("/", 1)[0] if "/" in cid else "seed"
+    for entry in circles:
+        entry["his_strength"] = entry["circle"] in mastered or parent(entry["circle"]) in mastered
+    if any(m.startswith("animal/dinosaur") for m in mastered) and any("prehistoric" in line for line in blocked):
+        # said plainly, since this block stands exactly where he has shown mastery
+        blocked.append("He has shown mastery of dinosaurs, but deeper dinosaur boards cannot be prepared "
+                       "until the job runs the feature research for prehistoric animals.")
     return {"asks": asks, "circles": circles, "blocked": blocked, "nothing_to_do": nothing, "held_back": held_back,
-            "played": sorted(played) if played is not None else None}
+            "played": sorted(played) if played is not None else None,
+            "mastered": sorted(mastered)}
 
 
 def likely_usd(things: int) -> float:
@@ -927,6 +995,11 @@ def digest(run: dict, budget) -> list:
         lines.append(f"Stopped early: {run['stopped']}.")
     if run["plan"].get("played") is not None:
         lines.append("Prepared one step ahead of the child's saved progress: " + ", ".join(run["plan"]["played"]) + ".")
+    if run["plan"].get("mastered"):
+        strong = [e["label"] for e in run["plan"]["circles"] if e.get("his_strength")]
+        lines.append(f"He has shown mastery of: {', '.join(run['plan']['mastered'])}. "
+                     f"{len(strong)} of the {len(run['plan']['circles'])} circles planned are inside what he has mastered"
+                     + (f" ({', '.join(strong)})" if strong else "") + "; about four in five, by the owner's rule.")
     lines.append("Circles opened: " + (", ".join(run.get("opened", [])) or "none") + ".")
     lines.append("Fields added: " + ("; ".join(
         f'"{f["wording"]}" for {f["label"]}, from {f.get("source") or "the model"} '
@@ -1361,7 +1434,8 @@ def main():
             raise SystemExit(f"No circle '{rehearse}'. See: python tools/catalogue/catalogue.py circles")
         played = None if rehearse else read_progress(option("--progress") or PROGRESS)
         asked = set() if rehearse else read_orders(option("--progress") or PROGRESS)
-        the_plan = plan(catalogue, rehearse, played, asked)
+        mastered = set() if rehearse else read_mastery(option("--progress") or PROGRESS)
+        the_plan = plan(catalogue, rehearse, played, asked, mastered)
         likely, fit = expected_cost(the_plan, rate, cap)
         say("PLAN" + (f" (a rehearsal of '{rehearse}': nothing will enter the game)" if rehearse else ""))
         say("  The child's saved progress: " + ("none found, so every open board is treated as solved: one group is fetched for each"

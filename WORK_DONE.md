@@ -18,7 +18,7 @@ Last updated: 23 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 | Dictionary | version 10, 19 fields (one withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups a child can meet | 57: 52 have a ladder of clues, 44 have an explanation |
-| Tests | 47 in the game, 28 for the job, 8 for the catalogue, 10 for the pictures. All pass |
+| Tests | 57 in the game, 29 for the job, 8 for the catalogue, 10 for the pictures. All pass |
 
 **The thirteen boards:** Everything, Animals, Mammals, Birds, Dinosaurs, Plants, Vegetable plants,
 Things in nature that are not alive, Things people make, Vehicles, Toys, Things in the house, Buildings.
@@ -108,8 +108,15 @@ Things in nature that are not alive, Things people make, Vehicles, Toys, Things 
   has its stars and words on one line, and on a large screen the game's frame reaches nearer the top and
   foot of the window. At 1400 by 960 a finished board, its card and the explanation now stand on one
   screen; before, the last group was cut off and the card was below the edge.
-- After a solved board one button takes the child on: Dig deeper into the branch he has visited least, or,
-  where nothing is deeper, a parallel board at the same depth, not recently seen.
+- After a solved board one button takes the child on (the owner's ruling of 23 Nov, which replaced "the
+  branch he has visited least"): **four boards in five go deeper where he has shown mastery, one in five
+  to a set he has not mastered.** A group is mastered when he has found it cleanly (no wrong guess took in
+  its things, no clue was asked for it) on two different days. Deeper first means a board inside a group
+  just found, then the one he has solved least; the one in five goes to the board he has opened least,
+  inside a group just found first. Until he has mastered anything, the button keeps the old balance: the
+  least visited first. With nothing to choose, a parallel board at once. The share (0.8) and the days (2)
+  are in `Assets/data/settings.json` under `next_board`. Stars are unchanged; a clue still costs no star.
+  Code: `EngineProvider._chooseNext`; tests: `test/mastery_test.dart`.
 - A fresh board is never the same sixteen again, where another is possible.
 - **Clue button:** one step up a ladder of three clues for the group he is working on. A clue never names
   a tile and never costs a star.
@@ -118,7 +125,8 @@ Things in nature that are not alive, Things people make, Vehicles, Toys, Things 
 - **The card that ends a board comes onto the screen by itself** (8 Oct). Under four solved groups it
   stood below the edge of a phone or small tablet, and the button that leads on had to be found by
   scrolling. Found while filming the game; tested at three screen sizes.
-- **Saved progress:** boards opened and solved are kept on the device. A long press on the title opens a
+- **Saved progress:** boards opened and solved are kept on the device, and since 23 Nov each group he
+  found, how often cleanly, and on which days (file version 2; a version 1 file still loads). A long press on the title opens a
   panel for the grown-up, which saves the record as a file. Put it at `tools/job/progress.json` and the job
   prepares one step ahead of where the child is.
 
@@ -197,6 +205,16 @@ Things in nature that are not alive, Things people make, Vehicles, Toys, Things 
 - Port drawn again as a harbour with docks and cranes.
 - Clues and explanations, for each group.
 
+**23 Nov 2026**
+- "Can you save some vertical space?": done (see section 2).
+- Breadth and depth by mastery, like a recommender: four boards in five go deeper where he has shown
+  mastery, one in five to a set he has not. This replaces "a well-rounded child, not a specialist: the
+  branch he has visited least" of 6 Oct, which now lives on only in the one in five. The job follows the
+  same rule, and the engine's depth gap no longer holds back a circle inside what he has mastered.
+- His results reach this machine as the file a grown-up saves from the game, as before.
+- The job runs by itself once a week, at most 200 rupees a week, and nothing goes to the live site without
+  his yes.
+
 ---
 
 ## 4. Job runs and what they cost
@@ -258,6 +276,13 @@ other names for mud.
   on a small tablet. Nothing was changed. One way: let the explanation leave when he touches the next
   picture.
 
+- **Deeper dinosaur boards cannot be made yet.** The job blocks prehistoric animals until it runs the
+  feature research (`tools/research/extract.py`) that tells look-alikes apart. If he shows mastery of
+  dinosaurs, the game sends him to the Dinosaurs board, but nothing deeper inside it can be prepared.
+- The weekly run uses the progress file a grown-up last saved into `tools/job/progress.json`. None has
+  been saved yet, so until one is, the job treats every open board as solved and knows nothing of his
+  mastery.
+
 **Closed for a reason**
 - Places on land: only Beach, Island and River bank are familiar land beside water. No filler was added.
 - No field passes for: Rocks and soil, Things in the sky, Water, Reptiles, Insects, Fish, Trees, Flowers,
@@ -291,6 +316,7 @@ other names for mud.
 | Start the game | `flutter run -d web-server --web-port 8123 --web-hostname 127.0.0.1`, then open http://localhost:8123 |
 | See what the job would do, spending nothing | `python tools/prepare_next.py --dry-run` |
 | Prepare the next level | `python tools/prepare_next.py` |
+| The weekly run (Sundays 11:00, at most 200 rupees a week) | runs by itself; its digest is in `tools/job/weekly/LATEST.md`. By hand: `python tools/job/weekly.py`; plan only: `--dry-run`; register again: `--install` |
 | Take a run back | `python tools/prepare_next.py --undo RUN` |
 | Take one field back | `python tools/prepare_next.py --withdraw-field FIELD --why "..."` |
 | Take one thing out | `python tools/catalogue/catalogue.py take-out "NAME" --why "..."` |
@@ -337,3 +363,6 @@ other names for mud.
 **23 Nov 2026**
 - Less height spent on the game's screen: the title bar, the question, the found groups, the card
   that ends a board.
+- Mastery on the device; the button after a board goes deeper where he has shown mastery four times in
+  five; the job orders its work the same way; a weekly run of the job, 200 rupees a week at most.
+- Fixed: `prepare_next.py --progress FILE` stopped with an error for any file named on the command line.

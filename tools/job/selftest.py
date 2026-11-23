@@ -110,6 +110,48 @@ def test_an_order_is_one_group_for_each_board_and_the_stuck_boards_come_first():
         assert job.read_orders(pathlib.Path(folder) / "none.json") == set()
 
 
+def test_four_orders_in_five_go_where_he_has_shown_mastery():
+    """The owner's ruling of 23 Nov 2026: deeper where he has shown mastery, four in five."""
+    assert job.four_in_five(list("SSSSSSSS"), list("ooo"), 0.8) == list("SSSSoSSSSoo")
+    assert job.four_in_five(list("SS"), list("oooo"), 0.8) == list("SSoooo")     # one list runs out: the other goes on
+    assert job.four_in_five([], list("oo"), 0.8) == list("oo")
+    circle = lambda open_, score=0.0, **more: dict({"open": open_, "score": score, "move": "widening",
+                                                    "status": "open" if open_ else "proposable"}, **more)
+    tree = {"seed": circle(True), "a": circle(True), "b": circle(True), "c": circle(True), "d": circle(True),
+            "e": circle(True), "f": circle(True),
+            "a/x": circle(False, 1.0), "b/x": circle(False, 2.0), "c/x": circle(False, 3.0),
+            "d/x": circle(False, 4.0), "e/x": circle(False, 5.0), "f/x": circle(False, 6.0),
+            "a/y": circle(False, 0.5, status="held", held_by="depth gap: its branch would be 2 levels deep"),
+            "b/y": circle(False, 0.5, status="held", held_by="the owner: not yet")}
+    plain, _ = job.orders(tree)
+    assert plain == ["f/x", "e/x", "d/x", "c/x", "b/x", "a/x"]        # without mastery: as before, by the balance
+    first, _ = job.orders(tree, mastered={"a", "b", "c", "d", "e"}, share=0.8)
+    strong = lambda cid: cid.split("/")[0] in {"a", "b", "c", "d", "e"}
+    assert [strong(c) for c in first[:5]] == [True, True, True, True, False]
+    assert "f/x" == first[4]                                           # the one in five: what he has not mastered
+    # inside what he has mastered the depth gap does not hold a circle back; the owner's own hold still does
+    first, waiting = job.orders(tree, mastered={"a"})
+    assert "a/y" in first + waiting and "b/y" not in first + waiting
+    # with saved progress, the boards inside what he has mastered are served too: the game sends him there
+    assert job.orders(tree, played={"seed", "c"}, mastered={"e"})[0] == ["e/x", "c/x"]
+    # a circle whose own group he has mastered goes first on its board
+    first, waiting = job.orders(dict(tree, **{"a/z": circle(False, 0.1)}), mastered={"a/z"})
+    assert first[0] == "a/z" and "a/x" in waiting
+    # the game saves the groups and their clean days; the job reads the mastered ones
+    with tempfile.TemporaryDirectory() as folder:
+        saved = pathlib.Path(folder) / "progress.json"
+        saved.write_text(json.dumps({"version": 2, "boards": {"seed": {"opened": 3}}, "groups": {
+            "animal": {"found": 3, "clean": 3, "clean_days": ["2026-11-23", "2026-11-24"]},
+            "plant": {"found": 2, "clean": 2, "clean_days": ["2026-11-23"]},
+            "animal/dinosaur": {"found": 1, "clean": 0, "clean_days": []}}}), encoding="utf-8")
+        assert job.read_mastery(saved) == {"animal"}
+        old = pathlib.Path(folder) / "old.json"
+        old.write_text(json.dumps({"version": 1, "boards": {"seed": {"opened": 1}}}), encoding="utf-8")
+        assert job.read_mastery(old) == set()                           # saved before groups were recorded
+        assert job.read_mastery(pathlib.Path(folder) / "none.json") == set()
+    assert job.deeper_share() == 0.8                                    # the same number the game uses
+
+
 def test_make_board_gives_sixteen_things_in_four_groups_with_one_solution_or_nothing():
     from boards import make_board, second_solution
     catalogue = cat.load()

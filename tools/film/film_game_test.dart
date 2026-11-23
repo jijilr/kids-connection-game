@@ -934,17 +934,18 @@ void main() {
         }
 
         solve(const ['animal', 'plant']);
-        final dig = g.suggestedDig;
-        if (dig?.value == 'animal') {
-          g.descendInto(dig!);
+        final dig = g.nextStep;
+        if (dig != null && dig.inside && dig.id == 'animal') {
+          g.goNext();
           lines.add(_deal(g));
           if (g.board!.groups.any((x) => x.value == 'mammal')) {
             solve(const ['mammal']);
-            g.descendInto(g.suggestedDig!);
+            g.goNext();
             lines.add(_deal(g));
             solve(const ['pet']);
-            lines.add('    then: ${g.suggestedDig == null ? 'Next board' : 'Dig deeper: ${g.suggestedDig!.label}'}');
-            g.nextBoard();
+            final then = g.nextStep;
+            lines.add('    then: ${then == null ? 'Next board' : then.inside ? 'Dig deeper: ${then.label}' : 'Next: ${then.label}'}');
+            g.goNext();
             lines.add(_deal(g));
           } else {
             lines.add('    (no mammals on the second board)');
@@ -1170,7 +1171,10 @@ void main() {
       await film.spoken(0.5);
 
       // ------------------------------------------------------------ nothing deeper yet: another board
-      expect(find.text('Next board'), findsOneWidget, reason: 'nothing is deeper than the third board yet');
+      // Since 23 Nov 2026 the button names the board it brings ("Next: Plants"); the film
+      // of 8 Oct shows "Next board", from before that change.
+      expect(find.byWidgetPredicate((w) => w is Text && (w.data ?? '').startsWith('Next')), findsOneWidget,
+          reason: 'nothing is deeper than the third board yet');
       film.mark('another');
       await film.say('another');
       await film.hold(2.4);

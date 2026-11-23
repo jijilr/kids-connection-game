@@ -14,10 +14,10 @@ import 'package:connections_game/services/content_repository.dart';
 import 'package:connections_game/services/media.dart';
 import 'package:connections_game/services/progress.dart';
 
-/// What happens after a board is solved (the owner's ruling of 7 Oct 2026): "Dig deeper"
-/// where there is a board inside, leaning toward the branch he has visited least; where
-/// there is none, a parallel board at the same depth at once, and an order for more.
-/// And the one way a board is made: makeBoard.
+/// What happens after a board is solved (the owner's rulings of 7 Oct 2026, and of
+/// 23 Nov 2026 for where the button leads; see mastery_test.dart): "Dig deeper" where
+/// there is a board inside; where there is none, another board at once, and an order for
+/// more. And the one way a board is made: makeBoard.
 Map<String, dynamic> readData(String file) =>
     jsonDecode(File('Assets/data/$file').readAsStringSync()) as Map<String, dynamic>;
 
@@ -92,7 +92,7 @@ void main() {
     }
   });
 
-  test('Dig deeper leans toward the branch he has visited least', () async {
+  test('with nothing mastered yet, the button leads into the group he has visited least', () async {
     final store = MemoryProgressStore();
     final visited = Progress();
     for (int i = 0; i < 6; i++) {
@@ -105,11 +105,13 @@ void main() {
     await g.init();
     solve(g);
     expect(g.diggable, isNotEmpty);
-    final least = g.suggestedDig!;
-    final visits = g.progress.timesOpened(least.value);
-    expect(g.diggable.every((x) => g.progress.timesOpened(x.value) >= visits), isTrue);
-    expect(least.value, 'nature_not_alive', reason: 'the one branch he has never opened');
+    final next = g.nextStep!;
+    expect(next.inside, isTrue);
+    expect(next.mastered, isFalse);
+    expect(next.id, 'nature_not_alive', reason: 'the one branch he has never opened');
     expect(g.atADeadEnd, isFalse);
+    g.goNext();
+    expect(Progress.boardId(g.board!.filter), 'nature_not_alive');
   });
 
   test('with nowhere deeper to go he gets a parallel board at once, and an order is placed', () async {
@@ -120,7 +122,8 @@ void main() {
     expect(g.pathLabels, hasLength(3));
     solve(g);
     expect(g.atADeadEnd, isTrue, reason: 'no group of Vehicles has a board inside it yet');
-    expect(g.suggestedDig, isNull);
+    expect(g.diggable, isEmpty);
+    expect(g.nextStep?.inside ?? false, isFalse, reason: 'nothing inside to dig into');
     expect(g.progress.orders.keys, contains('made_by_people/vehicle'));
 
     // the next board is another circle at the same depth, and never the one just left

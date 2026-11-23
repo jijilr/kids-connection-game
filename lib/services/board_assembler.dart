@@ -257,6 +257,30 @@ class BoardAssembler {
     return level;
   }
 
+  /// Every circle from one step below the seed down to [maxDepth] steps that can make a
+  /// board now, as the paths that lead to them, nearest first. One walk, so that choosing
+  /// where to go after a board looks at the whole game at once.
+  List<List<PathFilter>> circlesBelow(Dimension start, {int maxDepth = 6, bool needPictures = true}) {
+    final all = <List<PathFilter>>[];
+    var level = <List<PathFilter>>[const []];
+    for (int step = 0; step < maxDepth && level.isNotEmpty; step++) {
+      final next = <List<PathFilter>>[];
+      for (final filter in level) {
+        final sortedBy = filter.isEmpty ? start : boardableDimensions(filter).first;
+        for (final value in sortedBy.values.keys) {
+          final child = <PathFilter>[...filter, (sortedBy.id, value)];
+          final inside = boardableDimensions(child);
+          if (inside.isEmpty) continue;
+          if (needPictures && !hasPictureBoard(child, inside.first)) continue;
+          next.add(child);
+        }
+      }
+      all.addAll(next);
+      level = next;
+    }
+    return all;
+  }
+
   /// Whether a board over [filter] sorted by [dimension] can be drawn in one picture
   /// style throughout, rather than with names only.
   bool hasPictureBoard(List<PathFilter> filter, Dimension dimension) {
