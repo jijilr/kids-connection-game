@@ -52,6 +52,10 @@ Left out: four stretches of play, each a dissolve. The game lived through them (
 all): the rest of each board being solved, and the explanations that follow. A clip the
 game began inside a cut is not heard.
 
+The game's screen has changed since the film was made: on 23 Nov 2026 it was made to spend less
+height (see `WORK_DONE.md`). The film shows the screen as it was on 8 Oct; making it again shows
+the new one.
+
 One thing differs from a child's device: the stars on "You did it!" are drawn with this
 computer's emoji (Segoe UI Emoji). A browser or a tablet draws its own.
 

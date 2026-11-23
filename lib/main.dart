@@ -127,8 +127,9 @@ class ResponsiveWrapper extends StatelessWidget {
           child: Center(
             child: Container(
               width: optimalWidth,
-              constraints: BoxConstraints(maxHeight: screenHeight * 0.95),
-              margin: const EdgeInsets.symmetric(vertical: 20),
+              // As tall as the window, less a narrow margin above and below.
+              constraints: BoxConstraints(maxHeight: screenHeight - 24),
+              margin: const EdgeInsets.symmetric(vertical: 12),
               decoration: BoxDecoration(
                 gradient: AppColors.sunshineGradient,
                 borderRadius: BorderRadius.circular(30),

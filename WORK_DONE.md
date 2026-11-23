@@ -4,7 +4,7 @@ A running record of the work on the learning game, kept in the project so it can
 It is updated after each piece of work. The fuller story, with the reasons, is in the Claude Doc
 "The Learning Engine" (https://claude.ai/code/artifact/c3f3f0d3-5f91-4df4-8786-d894ef1d12df).
 
-Last updated: 8 Oct 2026. Branch: `fresh-start`. The live site (branch `main`) has not been touched.
+Last updated: 23 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) has not been touched.
 
 ---
 
@@ -102,6 +102,12 @@ Things in nature that are not alive, Things people make, Vehicles, Toys, Things 
 ### The game (Flutter, `lib/`)
 - Starts at the four-group seed. Tiles are pictures. Tapping a tile says its name.
 - A solved group becomes a coloured bar with its four pictures, centred and sized to the screen.
+- **Less height spent** (23 Nov, the owner asked "Can you save some vertical space?"). The title bar is
+  lower, the button that reads the question aloud sits beside the question, the pictures in a found
+  group are at most 120 (never below 68 on a phone, larger than the first 64), the card "You did it!"
+  has its stars and words on one line, and on a large screen the game's frame reaches nearer the top and
+  foot of the window. At 1400 by 960 a finished board, its card and the explanation now stand on one
+  screen; before, the last group was cut off and the card was below the edge.
 - After a solved board one button takes the child on: Dig deeper into the branch he has visited least, or,
   where nothing is deeper, a parallel board at the same depth, not recently seen.
 - A fresh board is never the same sixteen again, where another is possible.
@@ -327,3 +333,7 @@ other names for mud.
 - A picture of what the game holds, made in Blender: `docs/game_map.png`.
 - A film of how the game is played: `docs/how_the_game_is_played.mp4`. The card that ends a board now
   comes onto the screen by itself.
+
+**23 Nov 2026**
+- Less height spent on the game's screen: the title bar, the question, the found groups, the card
+  that ends a board.

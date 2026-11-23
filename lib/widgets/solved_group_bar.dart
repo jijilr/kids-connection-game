@@ -11,13 +11,24 @@ import 'tile_card.dart';
 const double thumbnailGap = 8;
 
 /// How large each thumbnail of a solved group is. It fills the bar's width, shared
-/// between the pictures, unless that would be taller than the screen can spare: four
-/// solved bars must fit one above another under the heading, with room to scroll less.
+/// between the pictures, unless that would be taller than the screen can spare: when a
+/// board is done, its four solved bars, the card that leads on and the explanation
+/// should stand on one screen together, with as little scrolling as can be.
+///
+/// The height never takes a picture below [thumbnailFloor] (larger than the first
+/// version's 64 on a phone), and no picture is larger than [thumbnailCeiling]: a group
+/// already found needs to be recognised, not studied.
+const double thumbnailFloor = 68;
+const double thumbnailCeiling = 120;
+const double screenSpentElsewhere = 380; // the title bar, the question, the card that leads on, the explanation
+const double barSpentElsewhere = 50; // a bar's name, its padding and the gap under it
+
 double thumbnailSize(double barWidth, double screenHeight, int count) {
   final byWidth = (barWidth - thumbnailGap * (count - 1)) / count;
-  final byHeight = (screenHeight - 230) / 4 - 56; // 230: headings and buttons; 56: a bar's name and padding
+  final byHeight = ((screenHeight - screenSpentElsewhere) / 4 - barSpentElsewhere)
+      .clamp(thumbnailFloor, thumbnailCeiling);
   final size = byWidth < byHeight ? byWidth : byHeight;
-  return size.clamp(40.0, 160.0);
+  return size.clamp(40.0, thumbnailCeiling);
 }
 
 class SolvedGroupBar extends StatelessWidget {
@@ -46,7 +57,7 @@ class SolvedGroupBar extends StatelessWidget {
       child: Container(
         width: double.infinity,
         margin: const EdgeInsets.only(bottom: 8),
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+        padding: const EdgeInsets.fromLTRB(12, 6, 12, 10),
         decoration: BoxDecoration(
           color: color,
           borderRadius: BorderRadius.circular(16),
@@ -73,7 +84,7 @@ class SolvedGroupBar extends StatelessWidget {
                 if (onDescend != null) _digDeeper(),
               ],
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: 6),
             if (pictured)
               // Centred, and as large as the bar allows: the width is shared between the
               // four, and the height is what a screen can spare when all four groups are
@@ -127,7 +138,7 @@ class SolvedGroupBar extends StatelessWidget {
   Widget _digDeeper() {
     return Container(
       margin: const EdgeInsets.only(left: 8),
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       decoration: BoxDecoration(
         color: Colors.white.withOpacity(0.22),
         borderRadius: BorderRadius.circular(20),

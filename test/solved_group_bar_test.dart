@@ -75,11 +75,13 @@ void main() {
   });
 
   test('the size follows the width until the height would be too much', () {
-    expect(thumbnailSize(308, 800, 4), closeTo((308 - 24) / 4, 0.01)); // a tall phone: the width decides
-    expect(thumbnailSize(308, 720, 4), closeTo((720 - 230) / 4 - 56, 0.01)); // a shorter phone: the height decides
-    expect(thumbnailSize(1200, 700, 4), closeTo((700 - 230) / 4 - 56, 0.01)); // a wide, short window: the height decides
+    expect(thumbnailSize(308, 1100, 4), closeTo((308 - 24) / 4, 0.01)); // a very tall phone: the width decides
+    expect(thumbnailSize(260, 800, 4), closeTo((260 - 24) / 4, 0.01)); // a narrow phone: the width decides
+    expect(thumbnailSize(502, 960, 4), closeTo((960 - 380) / 4 - 50, 0.01)); // a laptop: the height decides
+    expect(thumbnailSize(308, 720, 4), thumbnailFloor); // a phone: the height, but never below the floor
+    expect(thumbnailSize(1200, 700, 4), thumbnailFloor); // a wide, short window: the same
     expect(thumbnailSize(120, 400, 4), 40); // never too small to see
-    expect(thumbnailSize(5000, 5000, 4), 160); // never absurdly large
+    expect(thumbnailSize(5000, 5000, 4), thumbnailCeiling); // never larger than a found group needs
   });
 
   testWidgets('a group with no pictures at all still lists its names', (tester) async {

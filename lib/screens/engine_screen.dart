@@ -32,6 +32,7 @@ class EngineScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
+        toolbarHeight: 48,
         flexibleSpace: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
@@ -162,7 +163,7 @@ class EngineScreen extends StatelessWidget {
 
   Widget _breadcrumb(EngineProvider g) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 10, 8, 4),
+      padding: const EdgeInsets.fromLTRB(16, 6, 8, 4),
       child: Row(
         children: [
           Expanded(
@@ -196,48 +197,56 @@ class EngineScreen extends StatelessWidget {
               onPressed: g.back,
               icon: const Icon(Icons.arrow_back_rounded, size: 16),
               label: const Text('Back'),
-              style: TextButton.styleFrom(foregroundColor: _purple),
+              style: TextButton.styleFrom(
+                foregroundColor: _purple,
+                visualDensity: VisualDensity.compact,
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                minimumSize: const Size(0, 32),
+                tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              ),
             ),
         ],
       ),
     );
   }
 
+  /// The question of the board, with the button that reads it aloud beside it rather
+  /// than on a line of its own.
   Widget _promptBanner(EngineProvider g) {
     return Container(
       width: double.infinity,
       margin: const EdgeInsets.symmetric(horizontal: 12),
-      padding: const EdgeInsets.fromLTRB(14, 8, 6, 10),
+      padding: const EdgeInsets.fromLTRB(14, 6, 4, 6),
       decoration: BoxDecoration(
         color: const Color(0xFFEDEBFA),
         borderRadius: BorderRadius.circular(14),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      child: Row(
         children: [
-          Row(
-            children: [
-              Expanded(
-                child: Text(
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
                   'Make 4 groups of 4 — sort by:',
                   style: GoogleFonts.inter(
                       fontSize: 11,
                       fontWeight: FontWeight.w600,
                       color: Colors.grey.shade600),
                 ),
-              ),
-              IconButton(
-                tooltip: 'Read it to me',
-                visualDensity: VisualDensity.compact,
-                icon: const Icon(Icons.volume_up_rounded, size: 20, color: _purple),
-                onPressed: () => speakText(g.prompt),
-              ),
-            ],
+                const SizedBox(height: 2),
+                Text(
+                  g.prompt,
+                  style: GoogleFonts.quicksand(
+                      fontWeight: FontWeight.w800, fontSize: 16, color: _deepPurple),
+                ),
+              ],
+            ),
           ),
-          Text(
-            g.prompt,
-            style: GoogleFonts.quicksand(
-                fontWeight: FontWeight.w800, fontSize: 16, color: _deepPurple),
+          IconButton(
+            tooltip: 'Read it to me',
+            icon: const Icon(Icons.volume_up_rounded, size: 22, color: _purple),
+            onPressed: () => speakText(g.prompt),
           ),
         ],
       ),
@@ -300,8 +309,8 @@ class EngineScreen extends StatelessWidget {
       duration: const Duration(milliseconds: 600),
       child: Container(
         width: double.infinity,
-        margin: const EdgeInsets.only(top: 6),
-        padding: const EdgeInsets.all(18),
+        margin: const EdgeInsets.only(top: 2),
+        padding: const EdgeInsets.fromLTRB(14, 10, 14, 14),
         decoration: BoxDecoration(
           gradient: const LinearGradient(
             begin: Alignment.topLeft,
@@ -312,28 +321,35 @@ class EngineScreen extends StatelessWidget {
         ),
         child: Column(
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+            // The stars and "You did it!" on one line.
+            Wrap(
+              alignment: WrapAlignment.center,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              spacing: 10,
               children: [
-                for (int i = 0; i < 3; i++)
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 3),
-                    child: Text('⭐',
-                        style: TextStyle(
-                            fontSize: 32,
-                            color: i < g.stars ? null : Colors.black12)),
-                  ),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    for (int i = 0; i < 3; i++)
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 2),
+                        child: Text('⭐',
+                            style: TextStyle(
+                                fontSize: 26,
+                                color: i < g.stars ? null : Colors.black12)),
+                      ),
+                  ],
+                ),
+                Text('You did it!',
+                    style: GoogleFonts.quicksand(
+                        fontWeight: FontWeight.w800, fontSize: 22, color: _ink)),
               ],
             ),
-            const SizedBox(height: 8),
-            Text('You did it!',
-                style: GoogleFonts.quicksand(
-                    fontWeight: FontWeight.w800, fontSize: 22, color: _ink)),
-            const SizedBox(height: 6),
+            const SizedBox(height: 4),
             Text(detail,
                 textAlign: TextAlign.center,
                 style: GoogleFonts.inter(fontSize: 14, color: Colors.grey.shade800)),
-            const SizedBox(height: 14),
+            const SizedBox(height: 10),
             ElevatedButton.icon(
               key: const ValueKey('next'),
               onPressed: lean != null ? () => g.descendInto(lean) : g.nextBoard,
@@ -431,7 +447,7 @@ class EngineScreen extends StatelessWidget {
     // Wrap (not Row): on narrow phones or with large system text the buttons flow
     // onto a second line instead of pushing Submit off-screen.
     return Padding(
-      padding: const EdgeInsets.fromLTRB(12, 6, 12, 16),
+      padding: const EdgeInsets.fromLTRB(12, 6, 12, 12),
       child: Wrap(
         alignment: WrapAlignment.center,
         spacing: 8,
