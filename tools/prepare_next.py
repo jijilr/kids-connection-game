@@ -435,10 +435,13 @@ def plan(catalogue: dict, rehearse: str = None, played: set = None, asked: set =
     parent = lambda cid: cid.rsplit("/", 1)[0] if "/" in cid else "seed"
     for entry in circles:
         entry["his_strength"] = entry["circle"] in mastered or parent(entry["circle"]) in mastered
-    if any(m.startswith("animal/dinosaur") for m in mastered) and any("prehistoric" in line for line in blocked):
-        # said plainly, since this block stands exactly where he has shown mastery
-        blocked.append("He has shown mastery of dinosaurs, but deeper dinosaur boards cannot be prepared "
-                       "until the job runs the feature research for prehistoric animals.")
+    # Wherever he has shown mastery and nothing inside it is planned, say so: that is where
+    # the system was meant to go deeper and could not. No kind of thing is named here.
+    planned_in = {parent(e["circle"]) for e in circles} | {e["circle"] for e in circles}
+    for group in sorted(mastered):
+        if group in raw and group not in planned_in:
+            blocked.append(f"He has shown mastery of {labels_along(dictionary, dict(cat.circle_path(raw, group))) or raw[group]['label']}, "
+                           "but nothing deeper inside it can be prepared in this run; the reasons are in the lines above and below.")
     return {"asks": asks, "circles": circles, "blocked": blocked, "nothing_to_do": nothing, "held_back": held_back,
             "played": sorted(played) if played is not None else None,
             "mastered": sorted(mastered)}
