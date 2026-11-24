@@ -32592,8 +32592,8 @@
       "voice": {
         "say": "Spider",
         "checked_by_ear": false,
-        "cached": "tools/voice/clips/spider.mp3",
-        "clip": null
+        "clip": null,
+        "cached": "tools/voice/clips/spider.mp3"
       }
     },
     "black_widow": {
@@ -32618,8 +32618,8 @@
       "voice": {
         "say": "Black widow",
         "checked_by_ear": false,
-        "cached": "tools/voice/clips/black_widow.mp3",
-        "clip": null
+        "clip": null,
+        "cached": "tools/voice/clips/black_widow.mp3"
       }
     },
     "mite": {
@@ -32645,8 +32645,8 @@
       "voice": {
         "say": "Mite",
         "checked_by_ear": false,
-        "cached": "tools/voice/clips/mite.mp3",
-        "clip": null
+        "clip": null,
+        "cached": "tools/voice/clips/mite.mp3"
       }
     },
     "jumping_spider": {
@@ -32671,8 +32671,8 @@
       "voice": {
         "say": "Jumping spider",
         "checked_by_ear": false,
-        "cached": "tools/voice/clips/jumping_spider.mp3",
-        "clip": null
+        "clip": null,
+        "cached": "tools/voice/clips/jumping_spider.mp3"
       }
     }
   },
@@ -34202,7 +34202,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-11-24-24",
+    "by": "job:2026-11-24-25",
     "on": "2026-11-24"
   },
   "groups": {
