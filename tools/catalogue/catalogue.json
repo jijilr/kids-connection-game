@@ -34246,7 +34246,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-11-24-40",
+    "by": "job:2026-11-24-41",
     "on": "2026-11-24"
   },
   "groups": {
@@ -36310,22 +36310,22 @@
       "question": "Is it mostly a pet, a farm animal or a wild animal?",
       "clues": [],
       "explanation": {
-        "text": "These animals all live free on land, away from people. They find their own food and homes outdoors. A cheetah can run faster than any other animal on land.",
-        "together": "These animals all live free on land, away from people. They find their own food and homes outdoors.",
-        "fact": "A cheetah can run faster than any other animal on land.",
+        "text": "These animals all live free on land, in forests and grasslands, far from our homes and farms. A cheetah can run faster than any other animal on land, as fast as a car on a road.",
+        "together": "These animals all live free on land, in forests and grasslands, far from our homes and farms.",
+        "fact": "A cheetah can run faster than any other animal on land, as fast as a car on a road.",
         "quote": "It is the fastest land animal and can run up to 105 kilometres per hour (65 mph), and accelerate from 0 to 97 kilometres per hour (60 mph) in less than 3 seconds.",
         "source": "cheetah:wikipedia_simple",
         "source_url": "https://simple.wikipedia.org/wiki/Cheetah",
         "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__explanation.mp3",
         "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__explanation.mp3",
-        "clip_sha256": "d3c75134c51cd17c9d365d5bd86bf34dce0ffe171dabe48d22a36bf4e4849e0e",
+        "clip_sha256": "1c3e37b2726555d38841a55bb42f1ca8e625cc5a7b65d0668430965ff8d945e7",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
-        "no clues were kept: clue 2 names a thing of the group: house; clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
+        "no clues were kept: clue 2 names a thing of the group: house; clue 2 would fit a thing of another group as well; clue 3 would fit a thing of another group as well"
       ],
       "clues_set_aside": {
         "on": "2026-11-24",
