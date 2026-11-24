@@ -1,0 +1,132 @@
+{
+  "name": "Scorpion",
+  "group": "Animals > Arachnids",
+  "features": [
+    {
+      "claim": "A scorpion has eight legs.",
+      "quote": "Scorpions are eight legged venomous arachnids of the order Scorpiones.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "It has a pair of grasping pincers.",
+      "quote": "Scorpions (order Scorpiones) are predatory arachnids with eight legs, a pair of grasping pincers and a narrow, segmented tail, often carried in a characteristic forward curve over the back and always ending with a stinger.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its tail is narrow and made of segments, usually curved forward over its back, and ends in a stinger.",
+      "quote": "The tail is narrow, with segments. It usually has a forward curve over the back, ending with a venomous stinger.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Its body is covered by a hard exoskeleton that protects it.",
+      "quote": "The body is covered by an exoskeleton which gives them good protection.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Its body is divided into three parts: the front cephalothorax, the abdomen called the mesosoma, and the tail called the metasoma.",
+      "quote": "Their body is in three parts. The front section is the cephalothorax; the abdomen is called the mesosoma, and the tail is the metasoma.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "It has two eyes on top of the front part of its body and usually two to five pairs of eyes along the front corners.",
+      "quote": "Scorpions have two eyes on the top of the cephalothorax, and usually two to five pairs of eyes along the front corners of the cephalothorax.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its mouth parts at the front are pincer-like, with three segments and teeth.",
+      "quote": "The chelicerae are at the front and below the carapace. They are pincer-like and have three segments and \"teeth\".",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The tail is divided into five segments plus the stinger part at the end.",
+      "quote": "The \"tail\" or metasoma is divided into five segments and the telson, which is not strictly a segment.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The stinger is curved and has sensory hairs on it.",
+      "quote": "Externally it bears the curved stinger, the hypodermic aculeus, equipped with sensory hairs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has comb-like pectines on the underside of its body that it uses as sense organs.",
+      "quote": "Sternite 2 forms the basal plate bearing the comb-like pectines, which function as sensory organs.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Its pincers are segmented claws, and its legs are covered with bristles and hair-like setae.",
+        "quote": "They are covered with many proprioceptors (position sensors), bristles and sensory hair-like setae.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "the sentence does not support it"
+      },
+      {
+        "claim": "Its exoskeleton contains fluorescent chemicals and glows under ultraviolet light.",
+        "quote": "The exoskeleton contains fluorescent chemicals and glows under ultraviolet light.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Whether the earliest scorpions lived in water or on land has been argued about.",
+        "quote": "Whether the early scorpions were marine or terrestrial has been debated, and while they had book lungs like modern terrestrial species, the most basal such as Eramoscorpius were originally considered as still aquatic, until it was found that Eramoscorpius had book lungs.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The family tree within scorpions has been argued about.",
+        "quote": "The internal phylogeny of the scorpions has been debated, but genomic analysis consistently places the Bothriuridae as sister to a clade consisting of Scorpionoidea and Chactoidea.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Scorpion",
+      "title": "Scorpion",
+      "revision": 1382926110,
+      "revision_time": "2026-10-31T01:09:00Z",
+      "fetched_on": "2026-11-24",
+      "chars": 29806,
+      "sha256": "783a3335ceae75464678e47f0e39e6b34f905d6bab03912ed8658d631d3364b0"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Scorpion",
+      "title": "Scorpion",
+      "revision": 10543316,
+      "revision_time": "2025-09-30T17:23:52Z",
+      "fetched_on": "2026-11-24",
+      "chars": 2943,
+      "sha256": "1cc327aab5fb31327ef894370ca0be52a31ed96e005784368d44419f2bd2852f"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "It has a pair of grasping pincers.",
+    "Its body is divided into three parts: the front cephalothorax, the abdomen called the mesosoma, and the tail called the metasoma.",
+    "The tail is divided into five segments plus the stinger part at the end.",
+    "Its body is covered by a hard exoskeleton that protects it."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "pincers plus segmented tail curved over back ending in stinger; hard exoskeleton",
+    "covering": [
+      "Its body is covered by a hard exoskeleton that protects it."
+    ]
+  }
+}

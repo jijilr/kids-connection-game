@@ -19,7 +19,9 @@ forced into one answer. Two keys, and both must turn:
   1. THE SOURCES SAY SO. From the thing's own whole pages the model copies, for each
      answer the pages give it, one sentence that says so, and one sentence saying that the
      answer is disputed or on the border, if there is one. A script checks every sentence
-     against the saved text, word for word. Two answers with their sentences: the thing
+     against the saved text, word for word, and a second call, shown only the sentence of
+     dispute, says whether it speaks of today: a dispute of the past, settled now, does not
+     count. Two answers with their sentences: the thing
      lists both. A sentence of dispute: it is marked "depends", and the sentence is its
      note. "The world does not agree" is a fact and goes in; "we could not find out" is
      not, and such a thing stays held as before.
@@ -94,6 +96,18 @@ From the sources only, never from what you know:
 Copy the sentences exactly, word for word.
 
 Return JSON: {{"answers": {{"<answer key>": "the sentence"}}, "disputed": "the sentence, or an empty string"}}"""
+
+
+JUDGE = "You judge one sentence. You judge only from the sentence itself, never from what you know. You answer only with JSON."
+
+TODAY_TASK = """This sentence is about "{name}":
+
+"{sentence}"
+
+Judging only from the sentence: does it say that the matter is open TODAY? That is, that people who study {name} do not agree now, or that it is on a border between kinds, or that it is none of the usual kinds.
+Answer false if the sentence speaks of the past (early students of it, what was once thought, what used to be), or if it says the matter is settled.
+
+Return JSON: {{"today": true or false}}"""
 
 
 def options(config: dict, most: int) -> dict:
@@ -196,6 +210,13 @@ def read_between(client, config, spend, name: str, definition: dict, sources: li
             if key in said and reslib.quote_found(str(said[key]), text)}
     disputed = str(answer.get("disputed") or "").strip()
     disputed = disputed if reslib.quote_found(disputed, text) else ""
+    if disputed and len(kept) < 2:
+        # A dispute of the past does not make a thing in between today. A second call, which
+        # sees only the sentence, says whether it speaks of now. (Tried on 24 Nov 2026: a page
+        # said that "early taxonomists" found a thing hard to classify, and it passed.)
+        now = reslib.ask(client, config, spend, JUDGE, TODAY_TASK.format(name=name, sentence=disputed), options(config, 40))
+        if now.get("today") is not True:
+            disputed = ""
     if len(kept) >= 2:
         return {"value": list(kept), "sentences": dict(kept, **({"disputed": disputed} if disputed else {})), "why": ""}
     if disputed:

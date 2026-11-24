@@ -32286,12 +32286,376 @@
         "clip": null,
         "cached": "tools/voice/clips/sitar.mp3"
       }
+    },
+    "scorpion": {
+      "name": "Scorpion",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids",
+        "extinct": false
+      },
+      "familiar": 0.85,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-23",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "animal",
+          "animal/arachnids"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "arachnids",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_23_1_01_c2",
+        "game_file": "Assets/pictures/scorpion.webp",
+        "game_sha256": "45b008c16c458c917295c38eeac74c5af17850d2b99be0b25c74e076a384b163",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_23_1_01_c2.png",
+        "master_sha256": "ef3880c5e070c00175a310043b536de83eb9a574275d7b2492da5853af0bf878",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 1
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Scorpion",
+            "title": "Scorpion",
+            "asked_for": "Scorpion",
+            "revision": 1382926110,
+            "fetched_on": "2026-11-24",
+            "sha256": "d172fe451ffb37721186bc9bb9007bafe206c6219d5b3c5c9736395fd67acccf"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Scorpion",
+            "title": "Scorpion",
+            "asked_for": "Scorpion",
+            "revision": 10543316,
+            "fetched_on": "2026-11-24",
+            "sha256": "24dd84568b1f97b80ceec50c44b2c8bc776857e889f8c56ba0b49d283253d6c6"
+          }
+        ],
+        "facts": "tools/research/out/facts/scorpion.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Scorpions are eight legged venomous arachnids of the order Scorpiones."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Scorpions are eight legged venomous arachnids of the order Scorpiones."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "There are over 2,500 described species, with 22 extant (living) families recognized to date."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Scorpion",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_scorpion.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/scorpion.mp3",
+        "clip_sha256": "b323ba19e15b3e4cdbdae5a26b4e77b2380cc3a5da33b44f43d963ddc9a8e502"
+      }
+    },
+    "tick": {
+      "name": "Tick",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids",
+        "extinct": false
+      },
+      "familiar": 0.7,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-23",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "animal",
+          "animal/arachnids"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "arachnids",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_23_1_01_c3",
+        "game_file": "Assets/pictures/tick.webp",
+        "game_sha256": "6061587501416a36fccdf72472863593707c013cd382190fc86a0c03b4b425bf",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_23_1_01_c3.png",
+        "master_sha256": "63830b67eb7d7fed2dd48a0f60918c3586ebfa7631a77ffd13d565cc885f30c9",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 1
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Tick",
+            "title": "Tick",
+            "asked_for": "Tick",
+            "revision": 1376012002,
+            "fetched_on": "2026-11-24",
+            "sha256": "2e42c01ed6d559a12f7caae0da538f232dce2a5fdc2c0f21e3290f4b88528121"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Acarina",
+            "title": "Acarina",
+            "asked_for": "Tick",
+            "revision": 9724867,
+            "fetched_on": "2026-11-24",
+            "sha256": "635bdc1c0ab7d383bf1aee3b0ce5ddcee69bac21a60c3af3b58a978440a188c3"
+          }
+        ],
+        "facts": "tools/research/out/facts/tick.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "The Acarina, or Acari, are the mites and ticks."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "They are an order of Arachnids."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Over 50,000 species have been described, but a million or more species may be living."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Tick",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_tick.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/tick.mp3",
+        "clip_sha256": "e7164a1b88f6ba635abb154d308a503afde2e06dbb4f8971ed0b7b0eff5c8dcb"
+      }
+    },
+    "tarantula": {
+      "name": "Tarantula",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids",
+        "extinct": false
+      },
+      "familiar": 0.6,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-23",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "animal",
+          "animal/arachnids"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "arachnids",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_23_1_01_c4",
+        "game_file": "Assets/pictures/tarantula.webp",
+        "game_sha256": "f713ec72e883ed49ae37b062225555574ffac8927ca8622b72859167f3a70712",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_23_1_01_c4.png",
+        "master_sha256": "b86bbfe592cdb188f79c26fc9e584c1a584d160eef84b5582c703a3175445ee5",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 1
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Tarantula",
+            "title": "Tarantula",
+            "asked_for": "Tarantula",
+            "revision": 1386785244,
+            "fetched_on": "2026-11-24",
+            "sha256": "6f0a4eda935a19e3083ffbd36ead57cb56031839fa474a2a20d2aadce182827d"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Tarantula",
+            "title": "Tarantula",
+            "asked_for": "Tarantula",
+            "revision": 9981904,
+            "fetched_on": "2026-11-24",
+            "sha256": "60a87ba1b5a25aac9d724aad3e164af121e7dbf722f4b98abbf946299d7e5840"
+          }
+        ],
+        "facts": "tools/research/out/facts/tarantula.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Tarantulas are a group of large and often hairy spiders of the family Theraphosidae."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Tarantulas are a group of \"hairy\" and often very large spiders belonging to the family Theraphosidae."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "These spiders are found in warmer regions around the world."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Tarantula",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_tarantula.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/tarantula.mp3",
+        "clip_sha256": "154b27ca00b55637205f53dd2e8d14251c3de555bc58fc17919a8b6a572d4593"
+      }
+    },
+    "spider": {
+      "name": "Spider",
+      "status": "held by the rules",
+      "status_why": [
+        "its picture cannot be told from Tarantula: the picture check took it for that, so it is not a thing of its own for a child"
+      ],
+      "held_from": "job:2026-11-24-23",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids",
+        "extinct": false
+      },
+      "familiar": 0.95,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/arachnids"
+        ]
+      }
+    },
+    "black_widow": {
+      "name": "Black widow",
+      "status": "held by the rules",
+      "status_why": [
+        "extinct: on a second reading, the sentence does not show it"
+      ],
+      "held_from": "job:2026-11-24-23",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids"
+      },
+      "familiar": 0.55,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/arachnids"
+        ]
+      }
+    },
+    "mite": {
+      "name": "Mite",
+      "status": "held by the rules",
+      "status_why": [
+        "its picture cannot be told from Tick: the picture check took it for that, so it is not a thing of its own for a child"
+      ],
+      "held_from": "job:2026-11-24-23",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids",
+        "extinct": false
+      },
+      "familiar": 0.5,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/arachnids"
+        ]
+      }
+    },
+    "jumping_spider": {
+      "name": "Jumping spider",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "held_from": "job:2026-11-24-23",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids"
+      },
+      "familiar": 0.3,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/arachnids"
+        ]
+      }
     }
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 273,
-      "held by the rules": 82,
+      "in the game": 276,
+      "held by the rules": 86,
       "kept for later": 5,
       "excluded": 3,
       "taken out of the game": 26
@@ -32316,14 +32680,14 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 273,
+        "things": 276,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
           "animal": {
             "label": "Animals",
-            "things": 107,
-            "with_picture": 107
+            "things": 110,
+            "with_picture": 110
           },
           "plant": {
             "label": "Plants",
@@ -32347,7 +32711,7 @@
       },
       "animal": {
         "label": "Animals",
-        "things": 107,
+        "things": 110,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_animal",
         "groups": {
@@ -32386,6 +32750,11 @@
             "label": "Dinosaurs",
             "things": 29,
             "with_picture": 29
+          },
+          "arachnids": {
+            "label": "Arachnids",
+            "things": 3,
+            "with_picture": 3
           }
         },
         "open_by_its_things": true,
@@ -32814,6 +33183,34 @@
         "can_open_now": false,
         "needs": [
           "a field to sort it by: no field in the dictionary splits it four ways, and about 10 more things"
+        ]
+      },
+      "animal/arachnids": {
+        "label": "Arachnids",
+        "things": 3,
+        "steps_from_seed": 2,
+        "could_be_filled_by": [
+          {
+            "name": "Spider",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Black widow",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Mite",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Jumping spider",
+            "status": "held by the rules"
+          }
+        ],
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "1 more thing(s): it has fewer than four, so it is not yet a group on the board above it"
         ]
       },
       "plant": {
@@ -33781,7 +34178,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "record_names.py",
+    "by": "job run 2026-11-24-23",
     "on": "2026-11-24"
   },
   "groups": {
@@ -33974,7 +34371,7 @@
       }
     },
     "kind_of_thing=animal": {
-      "written_for": "dd030c632575",
+      "written_for": "bbf9f138763a",
       "field": "kind_of_thing",
       "value": "animal",
       "label": "Animals",
@@ -34003,15 +34400,15 @@
         }
       ],
       "explanation": {
-        "text": "All of these are living creatures that can move, eat and grow. That is why they belong together. A mother frog lays eggs, and baby frogs come out as tadpoles with tails.",
-        "together": "All of these are living creatures that can move, eat and grow. That is why they belong together.",
-        "fact": "A mother frog lays eggs, and baby frogs come out as tadpoles with tails.",
-        "quote": "They usually hatch as tadpoles  from eggs, which are laid by a female frog.",
-        "source": "frog:wikipedia_simple",
-        "source_url": "https://simple.wikipedia.org/wiki/Frog",
+        "text": "All of these are living things that move about and find their own food. They have bodies, and they breathe and eat. A hedgehog has thousands of sharp spines on its back, and it curls up when it feels scared.",
+        "together": "All of these are living things that move about and find their own food. They have bodies, and they breathe and eat.",
+        "fact": "A hedgehog has thousands of sharp spines on its back, and it curls up when it feels scared.",
+        "quote": "It has between 5000 and 7000 spines on its back.",
+        "source": "hedgehog:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Hedgehog",
         "cached": "tools/voice/clips/groups/kind_of_thing__animal__explanation.mp3",
         "clip": "Assets/audio/groups/kind_of_thing__animal__explanation.mp3",
-        "clip_sha256": "c86d2fa4e41a93ac48529a0d5f0569ce0717bd44f277064200d2577993434dd6",
+        "clip_sha256": "cf475329f2782e3c4c63773f6276debf65ea36782e3fb0e444ea0eb7032c616f",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
@@ -34019,7 +34416,7 @@
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "new_clues_refused": {
         "on": "2026-11-24",
-        "why": "clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well"
+        "why": "clue 2 would fit a thing of another group as well; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
       }
     },
     "kind_of_thing=nature_not_alive": {
@@ -34121,7 +34518,7 @@
       }
     },
     "kind_of_animal=mammal": {
-      "written_for": "85c3860e7737",
+      "written_for": "059ab60a3db2",
       "field": "kind_of_animal",
       "value": "mammal",
       "label": "Mammals",
@@ -34150,27 +34547,27 @@
         }
       ],
       "explanation": {
-        "text": "They all drink milk from their mothers when they are little, and they have fur or hair. The biggest animal on land is one of these, and it has a long nose called a trunk.",
-        "together": "They all drink milk from their mothers when they are little, and they have fur or hair.",
-        "fact": "The biggest animal on land is one of these, and it has a long nose called a trunk.",
-        "quote": "Elephants are the biggest living land mammals.",
-        "source": "elephant:wikipedia_simple",
-        "source_url": "https://simple.wikipedia.org/wiki/Elephant",
+        "text": "All these animals drink their mother's milk when they are small. They also have fur or hair on their bodies. A mother sheep is called a ewe, and her baby is called a lamb.",
+        "together": "All these animals drink their mother's milk when they are small. They also have fur or hair on their bodies.",
+        "fact": "A mother sheep is called a ewe, and her baby is called a lamb.",
+        "quote": "Female sheep are called ewes. Male sheep are called rams. Young sheep are called lambs.",
+        "source": "sheep:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Domestic_sheep",
         "cached": "tools/voice/clips/groups/kind_of_animal__mammal__explanation.mp3",
         "clip": "Assets/audio/groups/kind_of_animal__mammal__explanation.mp3",
-        "clip_sha256": "e6bff7302ee9e304479dbf69f925de97050b97da739dc35a0734b3cc7161ed79",
-        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+        "clip_sha256": "7ed398ce9cd1b2b14fec0d17347791e0209a3079e9fcc0b5e18fc222e50a42e3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "new_clues_refused": {
         "on": "2026-11-24",
-        "why": "clue 3 is not true of every thing in the group"
+        "why": "clue 2 would fit a thing of another group as well; clue 3 is too hard for a four-year-old; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
       }
     },
     "kind_of_animal=bird": {
-      "written_for": "19ff48a4186b",
+      "written_for": "7b52c7ff65d2",
       "field": "kind_of_animal",
       "value": "bird",
       "label": "Birds",
@@ -34215,11 +34612,11 @@
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "new_clues_refused": {
         "on": "2026-11-24",
-        "why": "clue 1 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
+        "why": "clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
       }
     },
     "kind_of_animal=fish": {
-      "written_for": "ff65d848bc41",
+      "written_for": "a8d2bf32e078",
       "field": "kind_of_animal",
       "value": "fish",
       "label": "Fish",
@@ -34261,10 +34658,11 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "checked_again_on": "2026-11-24"
     },
     "kind_of_animal=insect": {
-      "written_for": "9fa3242a400a",
+      "written_for": "1dd7712357a9",
       "field": "kind_of_animal",
       "value": "insect",
       "label": "Insects",
@@ -34293,15 +34691,15 @@
         }
       ],
       "explanation": {
-        "text": "These little creatures all have six legs and a hard shell outside. They have no bones inside. A ladybug has bright red wings with black spots that warn birds to stay away.",
-        "together": "These little creatures all have six legs and a hard shell outside. They have no bones inside.",
-        "fact": "A ladybug has bright red wings with black spots that warn birds to stay away.",
+        "text": "These little creatures all have six legs and a hard shell outside. Many of them can fly or buzz around us. A ladybug has bright red wings with black spots to warn other animals to stay away.",
+        "together": "These little creatures all have six legs and a hard shell outside. Many of them can fly or buzz around us.",
+        "fact": "A ladybug has bright red wings with black spots to warn other animals to stay away.",
         "quote": "All species are protected by noxious fluids based on cyanide, and most have warning colouration, such as red with black spots or black stripes.",
         "source": "ladybug:wikipedia_simple",
         "source_url": "https://simple.wikipedia.org/wiki/Lady_beetle",
         "cached": "tools/voice/clips/groups/kind_of_animal__insect__explanation.mp3",
         "clip": "Assets/audio/groups/kind_of_animal__insect__explanation.mp3",
-        "clip_sha256": "a1361a9b90a022e2aafec1261b64f9b2404ce299013c48f9d18b72c8aa57fe26",
+        "clip_sha256": "a1884bc635bde2223dcf1d091b3f80855bc2452f0fcd61ecdff681720e2f46e5",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
@@ -34313,102 +34711,94 @@
       }
     },
     "kind_of_animal=reptile": {
-      "written_for": "739da0f4b016",
+      "written_for": "02d7f4a0c643",
       "field": "kind_of_animal",
       "value": "reptile",
       "label": "Reptiles",
       "question": "What kind of animal is it?",
       "clues": [
         {
-          "text": "Think about animals with dry, scaly skin.",
+          "text": "Think of animals whose skin is dry and covered in scales.",
           "cached": "tools/voice/clips/groups/kind_of_animal__reptile__clue1.mp3",
           "clip": "Assets/audio/groups/kind_of_animal__reptile__clue1.mp3",
-          "clip_sha256": "9f36f21f7c4be3a4bd650a0482bfe434fbb081dac97ea25858a4b93daffb6c8b",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "clip_sha256": "eb148ec99a2772d962e01c06f58c200d4930d16538aaf2065d1a745b3d9275a8",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "These animals often lay eggs on land.",
+          "text": "These animals are cold when you touch them, and they lie in the sun to get warm.",
           "cached": "tools/voice/clips/groups/kind_of_animal__reptile__clue2.mp3",
           "clip": "Assets/audio/groups/kind_of_animal__reptile__clue2.mp3",
-          "clip_sha256": "439631eeb034c05a55fb0a5a4f6f04530ed9f3102337f362cd23a7475239f041",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "clip_sha256": "b7f88eac2870259fd15803e86505b2561ebb08cadc481786a696a65bf387f620",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "They are cold-blooded and many crawl on their bellies.",
+          "text": "These animals have scaly skin and most of them lay eggs on land, not in water.",
           "cached": "tools/voice/clips/groups/kind_of_animal__reptile__clue3.mp3",
           "clip": "Assets/audio/groups/kind_of_animal__reptile__clue3.mp3",
-          "clip_sha256": "2498db1067b0081f04683dbc5209b02acdc0827d55f5501520a423423de20b28",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "clip_sha256": "5169b9d7eb24d2db710617f124a0dd8054b2cdf084e1dba912652c2e076510a3",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
       "explanation": {
-        "text": "They all have dry scaly skin and hatch from eggs. They are all reptiles. A turtle's hard shell keeps it safe from other animals.",
-        "together": "They all have dry scaly skin and hatch from eggs. They are all reptiles.",
-        "fact": "A turtle's hard shell keeps it safe from other animals.",
+        "text": "They all have dry, scaly skin and lay their eggs on land. That is what makes them one family. A turtle has a hard shell that keeps it safe from other animals.",
+        "together": "They all have dry, scaly skin and lay their eggs on land. That is what makes them one family.",
+        "fact": "A turtle has a hard shell that keeps it safe from other animals.",
         "quote": "They have a hard shell, which is useful for camouflage and protection from other animals.",
         "source": "turtle:wikipedia_simple",
         "source_url": "https://simple.wikipedia.org/wiki/Turtle",
         "cached": "tools/voice/clips/groups/kind_of_animal__reptile__explanation.mp3",
         "clip": "Assets/audio/groups/kind_of_animal__reptile__explanation.mp3",
-        "clip_sha256": "5164047a0b2507b0654153471c455706bd36f40c15e3853dc4975e907b81cef4",
+        "clip_sha256": "a07c05675eed7acc33f4269e7a1924834ed5fa8c9455d81b027b4e1d72452970",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "new_clues_refused": {
-        "on": "2026-11-24",
-        "why": "clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     },
     "kind_of_animal=dinosaur": {
-      "written_for": "cf835c2b4945",
+      "written_for": "00561d2f5beb",
       "field": "kind_of_animal",
       "value": "dinosaur",
       "label": "Dinosaurs",
       "question": "What kind of animal is it?",
       "clues": [
         {
-          "text": "Think about animals that lived very, very long ago.",
+          "text": "Long, long ago, these animals lived on our Earth, and now we only see their bones.",
           "cached": "tools/voice/clips/groups/kind_of_animal__dinosaur__clue1.mp3",
           "clip": "Assets/audio/groups/kind_of_animal__dinosaur__clue1.mp3",
-          "clip_sha256": "0964f98ff3c3ddfb634966f121be4ba47a1fcfaada4b412a11e29b09960890b3",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "clip_sha256": "34b1fb5f98e5131e2117ee0426ce4da0753a1eff8d51fc9d3e90a5484d72b202",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "These animals are all gone now, and we only see their bones.",
+          "text": "Their bones are hard and old, and people dig them out of the ground to look at them.",
           "cached": "tools/voice/clips/groups/kind_of_animal__dinosaur__clue2.mp3",
           "clip": "Assets/audio/groups/kind_of_animal__dinosaur__clue2.mp3",
-          "clip_sha256": "5d8668929761b45aee5f17a06d6d3e6271f706e0dca67809da74ef845df50383",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "clip_sha256": "889adbcf97fe63bf4b1643b785e3ea13e73796cfc95f32771a2ea08a7a7f4d8d",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "Some of these animals were huge, and some had sharp teeth or horns.",
+          "text": "These animals are not alive today at all — they all died out long before anyone's grandma was born.",
           "cached": "tools/voice/clips/groups/kind_of_animal__dinosaur__clue3.mp3",
           "clip": "Assets/audio/groups/kind_of_animal__dinosaur__clue3.mp3",
-          "clip_sha256": "74c8f109078b64013543005cdeb86e8158918ea1601f5753055681a23e11bf51",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "clip_sha256": "26266250fde13895ad631ff89b81ec6ece011e380879453eafdf4bf669b599f8",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
       "explanation": {
-        "text": "These all belong together because they are the big, old animals we call dinosaurs and their flying and swimming cousins. One of these had a long neck and could stand as tall as a giraffe.",
-        "together": "These all belong together because they are the big, old animals we call dinosaurs and their flying and swimming cousins.",
-        "fact": "One of these had a long neck and could stand as tall as a giraffe.",
-        "quote": "Quetzalcoatlus had an unusually long neck, and when it stood on the ground it was as tall as a giraffe.",
-        "source": "quetzalcoatlus:wikipedia_simple",
-        "source_url": "https://simple.wikipedia.org/wiki/Quetzalcoatlus",
+        "text": "These all lived very long ago and are gone now. We know them from the old bones people dig up. One of these had two rows of big flat plates on its back and long spikes on its tail.",
+        "together": "These all lived very long ago and are gone now. We know them from the old bones people dig up.",
+        "fact": "One of these had two rows of big flat plates on its back and long spikes on its tail.",
+        "quote": "It is one of the most easily recognized dinosaurs, with its distinctive double row of kite-shaped plates on its back, and the long spikes on its tail.",
+        "source": "stegosaurus:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Stegosaurus",
         "cached": "tools/voice/clips/groups/kind_of_animal__dinosaur__explanation.mp3",
         "clip": "Assets/audio/groups/kind_of_animal__dinosaur__explanation.mp3",
-        "clip_sha256": "2b8b8c610b033115134266ff50795063f3dcaa1e813493db7a0876a1063c0c41",
+        "clip_sha256": "58a2587c68f3d322efed777b834160aaba8f2fd06bd737ef1b67a5f6e4210701",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "new_clues_refused": {
-        "on": "2026-11-24",
-        "why": "clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     },
     "kind_of_dinosaur=land_hunter": {
       "written_for": "7874321293cb",
@@ -35249,7 +35639,9 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "written_for": "871465354a1e",
+      "checked_again_on": "2026-11-24"
     },
     "part_we_eat=under_the_ground": {
       "written_for": "26d95ee1ee79",
@@ -35338,7 +35730,9 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "written_for": "6955c27e97f2",
+      "checked_again_on": "2026-11-24"
     },
     "where_it_travels=road": {
       "written_for": "779885af1da9",

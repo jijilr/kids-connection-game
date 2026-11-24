@@ -2111,6 +2111,45 @@
       },
       "cost_usd": 0.0538,
       "vision_check_cost_usd": 5e-05
+    },
+    "job_2026_11_24_23_1_01": {
+      "plan_key": "job_2026_11_24_23_1",
+      "purpose": "drawn by the job, run 2026-11-24-23",
+      "file": "tools/pictures/sheets/job_2026_11_24_23_1_01.png",
+      "grid": 3,
+      "rows": 3,
+      "cols": 3,
+      "size": "2880x2880",
+      "cells": [
+        "spider",
+        "scorpion",
+        "tick",
+        "tarantula",
+        "mite",
+        "spider",
+        "scorpion",
+        "tick",
+        "tarantula"
+      ],
+      "names": {
+        "spider": "Spider",
+        "scorpion": "Scorpion",
+        "tick": "Tick",
+        "tarantula": "Tarantula",
+        "mite": "Mite"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 3 by 3 grid of 9 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Spider: A brown hairy spider with eight legs, its body in two parts joined by a small cylindrical waist, the rear part soft and egg-shaped, short movable spinnerets at the back giving out silk, bristly hairs all over, no antennae, standing on the ground.\n2. Scorpion: A whole scorpion with a hard exoskeleton, its body in three parts: front cephalothorax, middle abdomen, and a narrow tail of five segments ending in a stinger, curved forward over its back; two grasping pincers in front, eight legs, sandy brown.\n3. Tick: A small eight-legged tick with a pear-shaped body, its head and body fully joined, a hard shield on its back, and legs folded tightly against its body, drawn whole in brown on plain ground.\n4. Tarantula: A large hairy spider with eight legs, two fangs pointing down, and pedipalps on its front body, joined by a narrow waist to a big abdomen with spinnerets at its end, all covered in bristles, standing on the ground.\n5. Mite: A tiny eight-legged mite, whole, with a simple unsegmented oval body, its two body parts fused so only the leg joints show the old segments, four pairs of legs, hardened plates on its back, and a small retractable mouthpart of chelicerae and pedipalps at the front.\n6. Spider: A brown hairy spider with eight legs, its body in two parts joined by a small cylindrical waist, the rear part soft and egg-shaped, short movable spinnerets at the back giving out silk, bristly hairs all over, no antennae, standing on the ground; a second view of it.\n7. Scorpion: A whole scorpion with a hard exoskeleton, its body in three parts: front cephalothorax, middle abdomen, and a narrow tail of five segments ending in a stinger, curved forward over its back; two grasping pincers in front, eight legs, sandy brown; a second view of it.\n8. Tick: A small eight-legged tick with a pear-shaped body, its head and body fully joined, a hard shield on its back, and legs folded tightly against its body, drawn whole in brown on plain ground; a second view of it.\n9. Tarantula: A large hairy spider with eight legs, two fangs pointing down, and pedipalps on its front body, joined by a narrow waist to a big abdomen with spinnerets at its end, all covered in bristles, standing on the ground; a second view of it.\n\nFor this sheet: Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-11-24",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 775
+      },
+      "cost_usd": 0.1818,
+      "vision_check_cost_usd": 0.00058,
+      "feature_check_cost_usd": 0.05741
     }
   },
   "tiles": {
@@ -24388,6 +24427,823 @@
       "history": [],
       "reviewed_on": "2026-11-24",
       "published_file": "Assets/pictures/toy_synthesizer.webp"
+    },
+    "job_2026_11_24_23_1_01_c1": {
+      "thing_id": "spider",
+      "expected_thing": "spider",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_23_1_01_c1.png",
+      "master_size": [
+        1028,
+        1028
+      ],
+      "master_sha256": "a8ab9bcea999b4a0313283bf678722a0b40bfbb5b639e246e1cf1092ea3b0967",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_23_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_23_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Spider: A brown hairy spider with eight legs, its body in two parts joined by a small cylindrical waist, the rear part soft and egg-shaped, short movable spinnerets at the back giving out silk, bristly hairs all over, no antennae, standing on the ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0202,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          44,
+          236,
+          930,
+          814
+        ],
+        "picture_shape": 1.53,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Tarantula",
+        "shows": "tarantula",
+        "matches_cell": false,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "approved under the owner's standing rule of 2026-10-06: it passed the feature check against the cited sources",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The spider shows eight legs, an egg-shaped abdomen, rear spinnerets and abundant bristles, but its narrow body connection, full eye arrangement, shell composition and fine claw-tip tufts cannot be clearly judged.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Spider",
+          "https://simple.wikipedia.org/wiki/Spider"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "cannot be seen: A spider's body is in two parts joined by a small cylindrical section."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24"
+    },
+    "job_2026_11_24_23_1_01_c2": {
+      "thing_id": "scorpion",
+      "expected_thing": "scorpion",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_23_1_01_c2.png",
+      "master_size": [
+        966,
+        966
+      ],
+      "master_sha256": "049b8663766bbec0d7a3365e6dc4bc273788222b71fff792fa42455982cb9119",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_23_1_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_23_1_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Scorpion: A whole scorpion with a hard exoskeleton, its body in three parts: front cephalothorax, middle abdomen, and a narrow tail of five segments ending in a stinger, curved forward over its back; two grasping pincers in front, eight legs, sandy brown",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0202,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1021,
+          135,
+          1854,
+          775
+        ],
+        "picture_shape": 1.3,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Scorpion",
+        "shows": "scorpion",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "unclear",
+          "yes",
+          "yes",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The pincers, three main body regions, armored covering, and five-segmented tail with a curved, hairy stinger are visible, but the full leg count, eye arrangement, mouthpart details, and underside pectines cannot be confirmed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Scorpion",
+          "https://simple.wikipedia.org/wiki/Scorpion"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/scorpion.webp"
+    },
+    "job_2026_11_24_23_1_01_c3": {
+      "thing_id": "tick",
+      "expected_thing": "tick",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_23_1_01_c3.png",
+      "master_size": [
+        610,
+        610
+      ],
+      "master_sha256": "6b1193d95abd16e882866a8b7c7c003920f77363f187b9ffb66377e39ebde098",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_23_1_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_23_1_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Tick: A small eight-legged tick with a pear-shaped body, its head and body fully joined, a hard shield on its back, and legs folded tightly against its body, drawn whole in brown on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0202,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2202,
+          211,
+          2606,
+          737
+        ],
+        "picture_shape": 0.77,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Tick",
+        "shows": "tick",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "unclear",
+          "yes",
+          "no",
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
+          "yes",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The image shows a brown, oval tick with a visible dorsal shield and folded, hairy legs, but it appears to have ten legs rather than eight.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tick",
+          "https://simple.wikipedia.org/wiki/Acarina"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "A tick has eight legs."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/tick.webp"
+    },
+    "job_2026_11_24_23_1_01_c4": {
+      "thing_id": "tarantula",
+      "expected_thing": "tarantula",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_23_1_01_c4.png",
+      "master_size": [
+        1023,
+        1023
+      ],
+      "master_sha256": "a3920af11a0c10dc35fce194de4847bbca0e9d6242c66ad78e941c037751c206",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_23_1_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_23_1_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Tarantula: A large hairy spider with eight legs, two fangs pointing down, and pedipalps on its front body, joined by a narrow waist to a big abdomen with spinnerets at its end, all covered in bristles, standing on the ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0202,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          27,
+          1085,
+          909,
+          1803
+        ],
+        "picture_shape": 1.23,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Tarantula",
+        "shows": "tarantula",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "unclear",
+          "unclear",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "unclear",
+          "unclear",
+          "unclear",
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The hairy two-part body, downward-pointing fangs, and rear spinnerets are visible, but the pedicel, complete appendage arrangement, finer anatomical counts, and actual size cannot be clearly judged.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tarantula",
+          "https://simple.wikipedia.org/wiki/Tarantula"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "cannot be seen: The two body parts are joined by a narrow waist-like piece called the pedicel.",
+          "cannot be seen: A tarantula has eight legs, two chelicerae with fangs, and pedipalps, all attached to the front body part."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/tarantula.webp"
+    },
+    "job_2026_11_24_23_1_01_c5": {
+      "thing_id": "mite",
+      "expected_thing": "mite",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_23_1_01_c5.png",
+      "master_size": [
+        611,
+        611
+      ],
+      "master_sha256": "2504d9b38dc03a143c7b673c1be18c2b87d4f3b9d27d24c4723026f64a461579",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_23_1_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_23_1_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Mite: A tiny eight-legged mite, whole, with a simple unsegmented oval body, its two body parts fused so only the leg joints show the old segments, four pairs of legs, hardened plates on its back, and a small retractable mouthpart of chelicerae and pedipalps at the front",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0202,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1177,
+          1164,
+          1704,
+          1672
+        ],
+        "picture_shape": 1.04,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Tick",
+        "shows": "tick",
+        "matches_cell": false,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "approved under the owner's standing rule of 2026-10-06: it passed the feature check against the cited sources",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
+          "yes",
+          "yes",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The brown, fused oval body, four pairs of bristled legs and dorsal plates are visible, but size, detailed feeding structures, complete leg segmentation and underside features cannot be confirmed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mite",
+          "https://simple.wikipedia.org/wiki/Acarina"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "cannot be seen: At the front is a retractable feeding part made of the chelicerae, the pedipalps and the mouth cavity."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24"
+    },
+    "job_2026_11_24_23_1_01_c6": {
+      "thing_id": "spider",
+      "expected_thing": "spider",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_23_1_01_c6.png",
+      "master_size": [
+        989,
+        989
+      ],
+      "master_sha256": "89e60fc61a15d3f9d7d43b15e83357f9781ee5699f00a629c7fe47647b575c09",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_23_1_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_23_1_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Spider: A brown hairy spider with eight legs, its body in two parts joined by a small cylindrical waist, the rear part soft and egg-shaped, short movable spinnerets at the back giving out silk, bristly hairs all over, no antennae, standing on the ground; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0202,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1982,
+          1083,
+          2835,
+          1795
+        ],
+        "picture_shape": 1.2,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Tarantula",
+        "shows": "tarantula",
+        "matches_cell": false,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "approved under the owner's standing rule of 2026-10-06: it passed the feature check against the cited sources",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The spider visibly has eight legs, an egg-shaped abdomen, rear spinnerets and abundant bristles, but its narrow body connection, full eye arrangement, shell composition and fine claw tufts cannot be clearly judged.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Spider",
+          "https://simple.wikipedia.org/wiki/Spider"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "cannot be seen: A spider's body is in two parts joined by a small cylindrical section."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24"
+    },
+    "job_2026_11_24_23_1_01_c7": {
+      "thing_id": null,
+      "expected_thing": "scorpion",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_23_1_01_c7.png",
+      "master_size": [
+        951,
+        951
+      ],
+      "master_sha256": "d21e89d28493b36f99b727c5191ac69b60ec5ad0653f8ffc8a6dfff1ad5ac97e",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_23_1_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_23_1_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Scorpion: A whole scorpion with a hard exoskeleton, its body in three parts: front cephalothorax, middle abdomen, and a narrow tail of five segments ending in a stinger, curved forward over its back; two grasping pincers in front, eight legs, sandy brown; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0202,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          87,
+          2039,
+          907,
+          2692
+        ],
+        "picture_shape": 1.26,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Scorpion",
+        "shows": "scorpion",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_11_24_23_1_01_c2 better",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "unclear",
+          "yes",
+          "yes",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The pincers, three body regions, hard outer covering, and five-segmented tail with a curved, hairy stinger are visible, but the full leg count, detailed eyes, mouthparts, and underside pectines cannot be confirmed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Scorpion",
+          "https://simple.wikipedia.org/wiki/Scorpion"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24"
+    },
+    "job_2026_11_24_23_1_01_c8": {
+      "thing_id": null,
+      "expected_thing": "tick",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_23_1_01_c8.png",
+      "master_size": [
+        617,
+        617
+      ],
+      "master_sha256": "9a14265ace9adac73e219e9603b102b0927b2d97f7e8c45cd03b10be0a078569",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_23_1_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_23_1_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Tick: A small eight-legged tick with a pear-shaped body, its head and body fully joined, a hard shield on its back, and legs folded tightly against its body, drawn whole in brown on plain ground; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0202,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1230,
+          2115,
+          1650,
+          2647
+        ],
+        "picture_shape": 0.79,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Tick",
+        "shows": "tick",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_11_24_23_1_01_c3 better",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "unclear",
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
+          "yes",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The picture shows a brown, oval hard tick with a visible dorsal shield, front mouthparts, and eight hairy legs folded close to its body.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tick",
+          "https://simple.wikipedia.org/wiki/Acarina"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24"
+    },
+    "job_2026_11_24_23_1_01_c9": {
+      "thing_id": null,
+      "expected_thing": "tarantula",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_23_1_01_c9.png",
+      "master_size": [
+        1000,
+        1000
+      ],
+      "master_sha256": "4c40eef28e41ab96a3c2aa7bb552bb3e22062d3f2b717d3fea4f1820febd0c0f",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_23_1_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_23_1_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Tarantula: A large hairy spider with eight legs, two fangs pointing down, and pedipalps on its front body, joined by a narrow waist to a big abdomen with spinnerets at its end, all covered in bristles, standing on the ground; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0202,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1963,
+          2071,
+          2825,
+          2794
+        ],
+        "picture_shape": 1.19,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Tarantula",
+        "shows": "tarantula",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_11_24_23_1_01_c4 better",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "unclear",
+          "unclear",
+          "yes",
+          "unclear",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "unclear",
+          "unclear",
+          "unclear",
+          "yes",
+          "yes",
+          "no",
+          "unclear",
+          "unclear",
+          "yes",
+          "unclear",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The hairy two-part body and downward-pointing fangs are clear, but the pedicel, complete appendage count, leg segments, and spinnerets are not clearly visible, and only two prominent eyes are shown.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tarantula",
+          "https://simple.wikipedia.org/wiki/Tarantula"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "The eyes are small and usually set in two rows of four.",
+          "cannot be seen: The two body parts are joined by a narrow waist-like piece called the pedicel.",
+          "cannot be seen: A tarantula has eight legs, two chelicerae with fangs, and pedipalps, all attached to the front body part.",
+          "cannot be seen: The spinnerets are at the end of the abdomen."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24"
     }
   }
 }

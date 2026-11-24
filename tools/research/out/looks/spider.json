@@ -1,0 +1,153 @@
+{
+  "name": "Spider",
+  "group": "Animals > Arachnids",
+  "features": [
+    {
+      "claim": "A spider's body is in two parts joined by a small cylindrical section.",
+      "quote": "In spiders, the cephalothorax and abdomen are connected by a small cylindrical section, the pedicel.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The front part of a spider's body is covered on top by a single rounded shell.",
+      "quote": "The upper surface of the cephalothorax is covered by a single, convex carapace, while the underside is covered by two rather flat plates.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A spider's rear body part is soft and shaped like an egg.",
+      "quote": "The abdomen is soft and egg-shaped.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A spider has eight legs.",
+      "quote": "They have eight legs, and mouthparts (chelicerae) with fangs that inject venom.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "A spider has no antennae.",
+      "quote": "Unlike insects, spiders do not have antennae.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A spider has four pairs of eyes on the top-front of its body.",
+      "quote": "Spiders have primarily four pairs of eyes on the top-front area of the cephalothorax, arranged in patterns that vary from one family to another.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A spider has short, movable spinnerets at the back that give out silk.",
+      "quote": "The abdomen has no appendages except those that have been modified to form one to four (usually three) pairs of short, movable spinnerets, which emit silk.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A spider's whole body is covered in a shell made of chitin and proteins.",
+      "quote": "As arthropods, they have: segmented bodies with jointed limbs, all covered in a cuticle made of chitin and proteins",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A spider's body is covered with bristles that sense touch and chemicals.",
+      "quote": "Various touch sensors, mostly bristles called setae, respond to different levels of force, from strong contact to very weak air currents.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Spiders that hunt without webs have dense tufts of fine bristles between the claws at the tips of their legs.",
+      "quote": "Most spiders that hunt actively, rather than relying on webs, have dense tufts of fine bristles between the paired claws at the tips of their legs.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "A spider does not have antennae on its head.",
+      "quote": "Unlike insects, spiders do not have antennae.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [
+      {
+        "claim": "A spider's fangs are hollow like needles.",
+        "quote": "The fangs are hollow, like the needles used to give injections.",
+        "source": "wikipedia_en",
+        "kind": "features"
+      }
+    ],
+    "second_reading": [
+      {
+        "claim": "Each leg is made of seven separate parts and ends in a claw.",
+        "quote": "Each of the eight legs of a spider consists of seven distinct parts.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "the sentence does not support it"
+      },
+      {
+        "claim": "A spider's legs do not have muscles that push them out; they are straightened by fluid pressure.",
+        "quote": "Unlike most arthropods, spiders have no extensor muscles in their limbs and instead extend them by hydraulic pressure.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Scientists argue about whether the front body part should be called a cephalothorax.",
+        "quote": "there exists an argument against the validity of the term cephalothorax, which means fused cephalon (head) and the thorax",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Scientists argue about whether the rear body part should be called an abdomen.",
+        "quote": "arguments can be formed against the use of the term \"abdomen\", as the opisthosoma of all spiders contains a heart and respiratory organs, organs atypical of an abdomen",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The number of spider families recorded differs between the two sources.",
+        "quote": "As of January 2026, 53,680 spider species in 139 families have been recorded by taxonomists.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "the sentence does not support it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Spider",
+      "title": "Spider",
+      "revision": 1385950530,
+      "revision_time": "2026-11-16T02:32:42Z",
+      "fetched_on": "2026-11-24",
+      "chars": 55353,
+      "sha256": "71660df9b4ccfdc515df4db4bc0588706f93ee22d22fbd259ce61e9c1bf169d2"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Spider",
+      "title": "Spider",
+      "revision": 11059189,
+      "revision_time": "2026-11-08T09:50:20Z",
+      "fetched_on": "2026-11-24",
+      "chars": 19203,
+      "sha256": "02f08d881c2601e98ca462719b9db3c520c221ea33339de312152fb8cb59b51e"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "A spider's body is in two parts joined by a small cylindrical section.",
+    "A spider's rear body part is soft and shaped like an egg.",
+    "A spider has eight legs.",
+    "A spider has short, movable spinnerets at the back that give out silk.",
+    "A spider's body is covered with bristles that sense touch and chemicals."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "two-part body with egg-shaped abdomen, eight legs, rear spinnerets; bristly covering",
+    "covering": [
+      "A spider's body is covered with bristles that sense touch and chemicals."
+    ]
+  }
+}

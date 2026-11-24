@@ -1,0 +1,142 @@
+{
+  "name": "Mite",
+  "group": "Animals > Arachnids",
+  "features": [
+    {
+      "claim": "A mite is very small, usually less than one millimetre long.",
+      "quote": "Most mites are tiny, less than 1 mm (0.04 in) in length, and have a simple, unsegmented body plan.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its body is simple and not divided into segments.",
+      "quote": "Most mites are tiny, less than 1 mm (0.04 in) in length, and have a simple, unsegmented body plan.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its body has two parts, a front part and a rear part, that are joined together.",
+      "quote": "The body plan has two regions, a cephalothorax (with no separate head) or prosoma, and an opisthosoma or abdomen.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The two body parts are fused, and only where the legs are shows where the segments were.",
+      "quote": "Segmentation has almost entirely been lost and the prosoma and opisthosoma are fused, only the positioning of the limbs indicating the location of the segments.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "At the front is a retractable feeding part made of the chelicerae, the pedipalps and the mouth cavity.",
+      "quote": "This is not a head and does not contain the eyes or the brain, but is a retractable feeding apparatus consisting of the chelicerae, the pedipalps and the oral cavity.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Most mites have four pairs of legs.",
+      "quote": "Most mites have four pairs of legs (two pairs in Eriophyoidea), each with six segments, which may be modified for swimming or other purposes.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Each leg has six segments.",
+      "quote": "Most mites have four pairs of legs (two pairs in Eriophyoidea), each with six segments, which may be modified for swimming or other purposes.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The upper surface of the body is covered with hardened plates.",
+      "quote": "The dorsal surface of the body is clad in hardened tergites and the ventral surface by hardened sclerites; sometimes these form transverse ridges.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The underside of the body is covered with hardened plates.",
+      "quote": "The dorsal surface of the body is clad in hardened tergites and the ventral surface by hardened sclerites; sometimes these form transverse ridges.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The body and legs carry bristles called setae.",
+      "quote": "Both body and limbs bear setae (bristles) which may be simple, flattened, club-shaped or sensory.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Mites are usually some shade of brown.",
+      "quote": "Mites are usually some shade of brown, but some species are red, orange, black or green, or some combination of these colours.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The genital opening is on the underside between the fourth pair of legs.",
+      "quote": "The gonopore (genital opening) is located on the ventral surface between the fourth pair of legs.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [
+    {
+      "claim": "How many eyes a mite has varies: some have one to five, and many are blind.",
+      "quote": "Some species have one to five median or lateral eyes but many species are blind, and slit and pit sense organs are common.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Scientists disagree about whether the two big mite groups are each other's closest relatives.",
+        "quote": "However, most recent genetic analyses do not recover the two as each other's closest relative within Arachnida, rendering the group invalid as a clade.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Some studies say the mite groups do form one natural group, but others doubt this.",
+        "quote": "However, a few phylogenomic studies have found strong support for monophyly of Acari and a sister relationship between Acariformes and Parasitiformes, although this finding has been questioned, with other studies suggesting that this likely represents a long branch attraction artefact as a result of inadequate sampling.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Recent genetic research suggests mites come from more than one origin.",
+        "quote": "Recent genetic research has suggested that Acari is polyphyletic (of multiple origins).",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Mite",
+      "title": "Mite",
+      "revision": 1381130488,
+      "revision_time": "2026-10-20T05:16:45Z",
+      "fetched_on": "2026-11-24",
+      "chars": 17230,
+      "sha256": "44ca350c227fa7972185a7bd88f50d8f971afc9ec4dcf9f927aed1e2ffa5dbb8"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Acarina",
+      "title": "Acarina",
+      "revision": 9724867,
+      "revision_time": "2024-08-24T09:14:09Z",
+      "fetched_on": "2026-11-24",
+      "chars": 2333,
+      "sha256": "213c17e166f986c720f0631b452ed4869fc9addcc307816d4b97e847af741da6"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "Its body is simple and not divided into segments.",
+    "The two body parts are fused, and only where the legs are shows where the segments were.",
+    "At the front is a retractable feeding part made of the chelicerae, the pedipalps and the mouth cavity.",
+    "Most mites have four pairs of legs.",
+    "The upper surface of the body is covered with hardened plates."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "simple fused body, retractable front feeding part, four leg pairs; hardened plates",
+    "covering": [
+      "The upper surface of the body is covered with hardened plates."
+    ]
+  }
+}

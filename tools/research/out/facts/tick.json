@@ -1,0 +1,49 @@
+{
+  "name": "Tick",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The Acarina, or Acari, are the mites and ticks.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "arachnids",
+      "quote": "They are an order of Arachnids.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Over 50,000 species have been described, but a million or more species may be living.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Tick",
+      "title": "Tick",
+      "asked_for": "Tick",
+      "revision": 1376012002,
+      "fetched_on": "2026-11-24",
+      "sha256": "2e42c01ed6d559a12f7caae0da538f232dce2a5fdc2c0f21e3290f4b88528121"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Acarina",
+      "title": "Acarina",
+      "asked_for": "Tick",
+      "revision": 9724867,
+      "fetched_on": "2026-11-24",
+      "sha256": "635bdc1c0ab7d383bf1aee3b0ce5ddcee69bac21a60c3af3b58a978440a188c3"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

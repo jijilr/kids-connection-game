@@ -1,0 +1,49 @@
+{
+  "name": "Mite",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Mites are small arachnids (eight-legged arthropods) of two large orders, the Acariformes and the Parasitiformes, which were historically grouped together in the subclass Acari.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "arachnids",
+      "quote": "Mites are small arachnids (eight-legged arthropods) of two large orders, the Acariformes and the Parasitiformes, which were historically grouped together in the subclass Acari.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Most species are harmless to humans, but a few are associated with allergies or may transmit diseases.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Mite",
+      "title": "Mite",
+      "asked_for": "Mite",
+      "revision": 1381130488,
+      "fetched_on": "2026-11-24",
+      "sha256": "5e47fa67d0ee478ab146c111839e26aaa350497e2630cd2d37acd9f0983e86bd"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Acarina",
+      "title": "Acarina",
+      "asked_for": "Mite",
+      "revision": 9724867,
+      "fetched_on": "2026-11-24",
+      "sha256": "635bdc1c0ab7d383bf1aee3b0ce5ddcee69bac21a60c3af3b58a978440a188c3"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

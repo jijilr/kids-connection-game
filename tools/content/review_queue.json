@@ -634,6 +634,34 @@
         "uncertain: two checks could not settle whether it belongs in 'Toys': it fits no group"
       ],
       "from": "job:2026-11-24-11"
+    },
+    {
+      "name": "Spider",
+      "why": [
+        "its picture cannot be told from Tarantula: the picture check took it for that, so it is not a thing of its own for a child"
+      ],
+      "from": "job:2026-11-24-23"
+    },
+    {
+      "name": "Black widow",
+      "why": [
+        "extinct: on a second reading, the sentence does not show it"
+      ],
+      "from": "job:2026-11-24-23"
+    },
+    {
+      "name": "Mite",
+      "why": [
+        "its picture cannot be told from Tick: the picture check took it for that, so it is not a thing of its own for a child"
+      ],
+      "from": "job:2026-11-24-23"
+    },
+    {
+      "name": "Jumping spider",
+      "why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "from": "job:2026-11-24-23"
     }
   ]
 }

@@ -1,0 +1,50 @@
+{
+  "name": "Black widow",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Black widows are spiders.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "arachnids",
+      "quote": "Black widows are spiders.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "extinct",
+      "why": "on a second reading, the sentence does not show it",
+      "value": "false",
+      "quote": "Black widows are spiders."
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Latrodectus",
+      "title": "Latrodectus",
+      "asked_for": "Black widow",
+      "revision": 1381696314,
+      "fetched_on": "2026-11-24",
+      "sha256": "d27f33e2398f9d1628a17fc33f83bafbdd16af8b4eae12d876696e1e5139a597"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Black_widow",
+      "title": "Black widow",
+      "asked_for": "Black widow",
+      "revision": 10352372,
+      "fetched_on": "2026-11-24",
+      "sha256": "3f49d63f15a1f58a054516588c1385de348f9e1ffc5fe01dcf674284f5fb730a"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

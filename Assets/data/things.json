@@ -3499,6 +3499,42 @@
       "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-12"
+    },
+    "scorpion": {
+      "name": "Scorpion",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids",
+        "extinct": false
+      },
+      "familiar": 0.85,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-23"
+    },
+    "tick": {
+      "name": "Tick",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids",
+        "extinct": false
+      },
+      "familiar": 0.7,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-23"
+    },
+    "tarantula": {
+      "name": "Tarantula",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids",
+        "extinct": false
+      },
+      "familiar": 0.6,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-23"
     }
   }
 }

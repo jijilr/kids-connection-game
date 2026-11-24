@@ -1,0 +1,49 @@
+{
+  "name": "Scorpion",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Scorpions are eight legged venomous arachnids of the order Scorpiones.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "arachnids",
+      "quote": "Scorpions are eight legged venomous arachnids of the order Scorpiones.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "There are over 2,500 described species, with 22 extant (living) families recognized to date.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Scorpion",
+      "title": "Scorpion",
+      "asked_for": "Scorpion",
+      "revision": 1382926110,
+      "fetched_on": "2026-11-24",
+      "sha256": "d172fe451ffb37721186bc9bb9007bafe206c6219d5b3c5c9736395fd67acccf"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Scorpion",
+      "title": "Scorpion",
+      "asked_for": "Scorpion",
+      "revision": 10543316,
+      "fetched_on": "2026-11-24",
+      "sha256": "24dd84568b1f97b80ceec50c44b2c8bc776857e889f8c56ba0b49d283253d6c6"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

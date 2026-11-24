@@ -1,0 +1,490 @@
+{
+  "id": "2026-11-24-23",
+  "started": "2026-11-24",
+  "rehearse": null,
+  "cap_inr": 45.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "animal",
+        "chain": "Animals > Arachnids",
+        "fixed": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "arachnids"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [],
+        "examples": [
+          {
+            "name": "Spider",
+            "familiar": 0.95,
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Scorpion",
+            "familiar": 0.85,
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Tick",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Tarantula",
+            "familiar": 0.6,
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Black widow",
+            "familiar": 0.55,
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Mite",
+            "familiar": 0.5,
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "retried": [],
+        "facts_done": true,
+        "topped_up": true
+      }
+    ],
+    "circles": [
+      {
+        "circle": "animal",
+        "label": "Animals",
+        "chain": "Animals",
+        "needs_field": false,
+        "widen": true,
+        "expect_things": 5,
+        "kinds_tried": [
+          {
+            "kind": "Arachnids",
+            "why": [],
+            "names": [
+              "Spider",
+              "Scorpion",
+              "Tick",
+              "Mite",
+              "Tarantula",
+              "Black widow"
+            ]
+          }
+        ],
+        "asks": [
+          0
+        ],
+        "done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": [],
+    "held_back": [],
+    "played": null,
+    "mastered": [],
+    "widen": "animal"
+  },
+  "retry_held": true,
+  "things": [
+    {
+      "name": "Spider",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Spider",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "arachnids",
+          "extinct": false
+        },
+        "familiar": 0.95,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-23"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids",
+        "extinct": false
+      },
+      "familiar": 0.95,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "look": {
+        "must_show": [
+          "A spider's body is in two parts joined by a small cylindrical section.",
+          "A spider's rear body part is soft and shaped like an egg.",
+          "A spider has eight legs.",
+          "A spider has short, movable spinnerets at the back that give out silk.",
+          "A spider's body is covered with bristles that sense touch and chemicals."
+        ],
+        "not_this": [
+          "A spider does not have antennae on its head."
+        ],
+        "features": [
+          "A spider's body is in two parts joined by a small cylindrical section.",
+          "The front part of a spider's body is covered on top by a single rounded shell.",
+          "A spider's rear body part is soft and shaped like an egg.",
+          "A spider has eight legs.",
+          "A spider has no antennae.",
+          "A spider has four pairs of eyes on the top-front of its body.",
+          "A spider has short, movable spinnerets at the back that give out silk.",
+          "A spider's whole body is covered in a shell made of chitin and proteins.",
+          "A spider's body is covered with bristles that sense touch and chemicals.",
+          "Spiders that hunt without webs have dense tufts of fine bristles between the claws at the tips of their legs."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/Spider",
+          "https://simple.wikipedia.org/wiki/Spider"
+        ]
+      },
+      "draw": "A brown hairy spider with eight legs, its body in two parts joined by a small cylindrical waist, the rear part soft and egg-shaped, short movable spinnerets at the back giving out silk, bristly hairs all over, no antennae, standing on the ground",
+      "tries": 2,
+      "tile": null,
+      "no_tile": "its picture cannot be told from Tarantula: the picture check took it for that, so it is not a thing of its own for a child",
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Scorpion",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Scorpion",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "arachnids",
+          "extinct": false
+        },
+        "familiar": 0.85,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-23"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids",
+        "extinct": false
+      },
+      "familiar": 0.85,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "look": {
+        "must_show": [
+          "It has a pair of grasping pincers.",
+          "Its body is divided into three parts: the front cephalothorax, the abdomen called the mesosoma, and the tail called the metasoma.",
+          "The tail is divided into five segments plus the stinger part at the end.",
+          "Its body is covered by a hard exoskeleton that protects it."
+        ],
+        "not_this": [],
+        "features": [
+          "A scorpion has eight legs.",
+          "It has a pair of grasping pincers.",
+          "Its tail is narrow and made of segments, usually curved forward over its back, and ends in a stinger.",
+          "Its body is covered by a hard exoskeleton that protects it.",
+          "Its body is divided into three parts: the front cephalothorax, the abdomen called the mesosoma, and the tail called the metasoma.",
+          "It has two eyes on top of the front part of its body and usually two to five pairs of eyes along the front corners.",
+          "Its mouth parts at the front are pincer-like, with three segments and teeth.",
+          "The tail is divided into five segments plus the stinger part at the end.",
+          "The stinger is curved and has sensory hairs on it.",
+          "It has comb-like pectines on the underside of its body that it uses as sense organs."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/Scorpion",
+          "https://simple.wikipedia.org/wiki/Scorpion"
+        ]
+      },
+      "draw": "A whole scorpion with a hard exoskeleton, its body in three parts: front cephalothorax, middle abdomen, and a narrow tail of five segments ending in a stinger, curved forward over its back; two grasping pincers in front, eight legs, sandy brown",
+      "tries": 1,
+      "tile": "job_2026_11_24_23_1_01_c2"
+    },
+    {
+      "name": "Tick",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Tick",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "arachnids",
+          "extinct": false
+        },
+        "familiar": 0.7,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-23"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids",
+        "extinct": false
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "look": {
+        "must_show": [
+          "A tick's body is ovoid or pear-shaped.",
+          "A tick's head-part and body are completely joined together.",
+          "A hard tick has a hard shield on its back called a scutum.",
+          "When a tick is not moving, its legs stay folded tightly against its body."
+        ],
+        "not_this": [],
+        "features": [
+          "An adult tick is about 3 to 5 mm long.",
+          "A tick's body is ovoid or pear-shaped.",
+          "A tick has eight legs.",
+          "A tick's body swells up with blood when it feeds.",
+          "A tick's head-part and body are completely joined together.",
+          "A hard tick has a hard shield on its back called a scutum.",
+          "A hard tick has a beak-like part at the front holding its mouthparts.",
+          "A soft tick's mouthparts are on the underside of its body, so you cannot see them from above.",
+          "Most ticks are plain brown or reddish brown.",
+          "A tick's legs have seven segments and end in a pair of claws.",
+          "A tick's legs often have sensory or tactile hairs on them.",
+          "When a tick is not moving, its legs stay folded tightly against its body."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tick",
+          "https://simple.wikipedia.org/wiki/Acarina"
+        ]
+      },
+      "draw": "A small eight-legged tick with a pear-shaped body, its head and body fully joined, a hard shield on its back, and legs folded tightly against its body, drawn whole in brown on plain ground",
+      "tries": 1,
+      "tile": "job_2026_11_24_23_1_01_c3"
+    },
+    {
+      "name": "Tarantula",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Tarantula",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "arachnids",
+          "extinct": false
+        },
+        "familiar": 0.6,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-23"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids",
+        "extinct": false
+      },
+      "familiar": 0.6,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "look": {
+        "must_show": [
+          "The two body parts are joined by a narrow waist-like piece called the pedicel.",
+          "A tarantula has eight legs, two chelicerae with fangs, and pedipalps, all attached to the front body part.",
+          "The fangs point downward.",
+          "The spinnerets are at the end of the abdomen.",
+          "The body is covered in bristles called setae."
+        ],
+        "not_this": [],
+        "features": [
+          "A tarantula's body has two main parts: the front part (prosoma) and the abdomen (opisthosoma).",
+          "The two body parts are joined by a narrow waist-like piece called the pedicel.",
+          "A tarantula has eight legs, two chelicerae with fangs, and pedipalps, all attached to the front body part.",
+          "Each leg has seven segments.",
+          "The fangs point downward.",
+          "The chelicerae sit just below the eyes and in front of the mouth.",
+          "The eyes are small and usually set in two rows of four.",
+          "The spinnerets are at the end of the abdomen.",
+          "Tarantulas have two or four spinnerets.",
+          "The body is covered in bristles called setae.",
+          "Many tarantulas have a dense covering of irritating bristles called urticating hairs on the abdomen.",
+          "Tarantulas are large and often hairy spiders."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tarantula",
+          "https://simple.wikipedia.org/wiki/Tarantula"
+        ]
+      },
+      "draw": "A large hairy spider with eight legs, two fangs pointing down, and pedipalps on its front body, joined by a narrow waist to a big abdomen with spinnerets at its end, all covered in bristles, standing on the ground",
+      "tries": 1,
+      "tile": "job_2026_11_24_23_1_01_c4"
+    },
+    {
+      "name": "Black widow",
+      "passed": false,
+      "why": [
+        "extinct: on a second reading, the sentence does not show it"
+      ],
+      "thing": {
+        "name": "Black widow",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "arachnids"
+        },
+        "familiar": 0.55,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-23"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids"
+      },
+      "familiar": 0.55,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Mite",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Mite",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "arachnids",
+          "extinct": false
+        },
+        "familiar": 0.5,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-23"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids",
+        "extinct": false
+      },
+      "familiar": 0.5,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "look": {
+        "must_show": [
+          "Its body is simple and not divided into segments.",
+          "The two body parts are fused, and only where the legs are shows where the segments were.",
+          "At the front is a retractable feeding part made of the chelicerae, the pedipalps and the mouth cavity.",
+          "Most mites have four pairs of legs.",
+          "The upper surface of the body is covered with hardened plates."
+        ],
+        "not_this": [],
+        "features": [
+          "A mite is very small, usually less than one millimetre long.",
+          "Its body is simple and not divided into segments.",
+          "Its body has two parts, a front part and a rear part, that are joined together.",
+          "The two body parts are fused, and only where the legs are shows where the segments were.",
+          "At the front is a retractable feeding part made of the chelicerae, the pedipalps and the mouth cavity.",
+          "Most mites have four pairs of legs.",
+          "Each leg has six segments.",
+          "The upper surface of the body is covered with hardened plates.",
+          "The underside of the body is covered with hardened plates.",
+          "The body and legs carry bristles called setae.",
+          "Mites are usually some shade of brown.",
+          "The genital opening is on the underside between the fourth pair of legs."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mite",
+          "https://simple.wikipedia.org/wiki/Acarina"
+        ]
+      },
+      "draw": "A tiny eight-legged mite, whole, with a simple unsegmented oval body, its two body parts fused so only the leg joints show the old segments, four pairs of legs, hardened plates on its back, and a small retractable mouthpart of chelicerae and pedipalps at the front",
+      "tries": 2,
+      "tile": null,
+      "no_tile": "its picture cannot be told from Tick: the picture check took it for that, so it is not a thing of its own for a child",
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Jumping spider",
+      "passed": false,
+      "familiar": 0.3,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids"
+      },
+      "why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "not_recognised": true,
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Wolf spider",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.2,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "arachnids"
+      },
+      "why": [
+        "it is Wolf again, or a part of it, and that is already in the game"
+      ],
+      "ask": 0
+    }
+  ],
+  "sheets": [
+    "job_2026_11_24_23_1_01"
+  ],
+  "stopped": "",
+  "fields_added": [],
+  "fields_held": [],
+  "open_before": [
+    "animal",
+    "animal/bird",
+    "animal/dinosaur",
+    "animal/mammal",
+    "animal/mammal/wild_land",
+    "made_by_people",
+    "made_by_people/building",
+    "made_by_people/household",
+    "made_by_people/toy",
+    "made_by_people/toy/music",
+    "made_by_people/vehicle",
+    "nature_not_alive",
+    "plant",
+    "plant/vegetable",
+    "seed"
+  ],
+  "spent_usd": {
+    "deepseek": 0.04865,
+    "drawing": 0.1818,
+    "picture_checks": 0.05799
+  },
+  "kinds_added": [
+    {
+      "circle": "animal",
+      "label": "Animals",
+      "field": "kind_of_animal",
+      "value": "arachnids",
+      "kind": "Arachnids",
+      "why": "eight-legged land arthropods, not insects"
+    }
+  ],
+  "opened": []
+}

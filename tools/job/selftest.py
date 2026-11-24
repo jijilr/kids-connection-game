@@ -976,9 +976,14 @@ def test_a_thing_is_in_between_only_when_its_sources_say_so_and_two_checks_give_
             return widen.read_between(None, {"model": "m", "thinking": "t"}, None, "It", definition, sources, "<source/>")
         finally:
             widen.reslib.ask = real
-    disputed = read({"answers": {}, "disputed": "Scientific opinions differ on whether viruses are a form of life or "
-                                                "structures that interact with living things."})
+    disputed = read({"answers": {}, "today": True,
+                     "disputed": "Scientific opinions differ on whether viruses are a form of life or "
+                                 "structures that interact with living things."})
     assert disputed["value"] == "depends" and "disputed" in disputed["sentences"]
+    # a dispute of the past, settled now, does not make a thing in between today
+    settled = read({"answers": {"animal": "Corals are animals of the sea."}, "today": False,
+                    "disputed": "Coral was once thought to be a plant, which is now settled."})
+    assert settled["value"] is None and "one answer, 'Animals'" in settled["why"]
     # a sentence that is not in the saved text proves nothing, however true it sounds
     invented = read({"answers": {}, "disputed": "Biologists have argued for a century about whether a virus is alive."})
     assert invented["value"] is None and "no sentence" in invented["why"]

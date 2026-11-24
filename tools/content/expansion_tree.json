@@ -2,7 +2,7 @@
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-11-24",
   "dictionary_version": 13,
-  "things": 273,
+  "things": 276,
   "rules": {
     "weights": {
       "nearness": 3,
@@ -33,6 +33,7 @@
     }
   },
   "proposals": [
+    "animal/arachnids",
     "made_by_people/toy/throw",
     "made_by_people/toy/wheel",
     "made_by_people/building/learn",
@@ -43,7 +44,7 @@
       "label": "Everything",
       "steps_from_seed": 0,
       "branch": null,
-      "members": 273,
+      "members": 276,
       "open": true,
       "sorted_by": "kind_of_thing",
       "decisions": [],
@@ -53,10 +54,17 @@
       "label": "Animals",
       "steps_from_seed": 1,
       "branch": "animal",
-      "members": 107,
+      "members": 110,
       "open": true,
       "sorted_by": "kind_of_animal",
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-11-24",
+          "what": "the rules added the kind \"Arachnids\" in job run 2026-11-24-23",
+          "why": "eight-legged land arthropods, not insects",
+          "status": "added by the rules"
+        }
+      ],
       "status": "open"
     },
     "animal/mammal": {
@@ -830,6 +838,27 @@
       "move": "widening",
       "status": "held",
       "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+    },
+    "animal/arachnids": {
+      "label": "Arachnids",
+      "steps_from_seed": 2,
+      "branch": "animal",
+      "members": 3,
+      "open": false,
+      "missing": {
+        "things": 1,
+        "why": "fewer than four familiar things, so it is not yet a group on the board above it"
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.5,
+        "neglect": 0.17,
+        "unlocks": 0.0,
+        "cheapness": 0.8
+      },
+      "score": 3.6,
+      "move": "widening",
+      "status": "proposable"
     },
     "plant": {
       "label": "Plants",

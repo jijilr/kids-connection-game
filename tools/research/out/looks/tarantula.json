@@ -1,0 +1,129 @@
+{
+  "name": "Tarantula",
+  "group": "Animals > Arachnids",
+  "features": [
+    {
+      "claim": "A tarantula's body has two main parts: the front part (prosoma) and the abdomen (opisthosoma).",
+      "quote": "a tarantula's body comprises two main parts, the prosoma (or cephalothorax) and the opisthosoma (or abdomen)",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The two body parts are joined by a narrow waist-like piece called the pedicel.",
+      "quote": "The prosoma and opisthosoma are connected by the pedicel, or pregenital somite.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A tarantula has eight legs, two chelicerae with fangs, and pedipalps, all attached to the front body part.",
+      "quote": "The eight legs, the two chelicerae with their fangs, and the pedipalps are attached to the prosoma.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Each leg has seven segments.",
+      "quote": "Each leg has seven segments, which from the prosoma out are: coxa, trochanter, femur, patella, tibia, tarsus and pretarsus, and claw.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The fangs point downward.",
+      "quote": "Tarantula fangs face downward, as opposed to those of true spiders, which face each other, allowing them to make pincerlike motions.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The chelicerae sit just below the eyes and in front of the mouth.",
+      "quote": "The chelicerae are two double-segmented appendages located just below the eyes and directly forward of the mouth.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The eyes are small and usually set in two rows of four.",
+      "quote": "They are small and are usually set in two rows of four.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The spinnerets are at the end of the abdomen.",
+      "quote": "Tarantulas, like almost all other spiders, have their primary spinnerets at the end of the opisthosoma.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Tarantulas have two or four spinnerets.",
+      "quote": "tarantula species have two or four spinnerets",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The body is covered in bristles called setae.",
+      "quote": "A tarantula perceives its surroundings primarily via sensory organs called setae (bristles or spines, sometimes referred to as hairs).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Many tarantulas have a dense covering of irritating bristles called urticating hairs on the abdomen.",
+      "quote": "some tarantulas also have a dense covering of irritating bristles called urticating hairs, on the opisthosoma, that they sometimes use as protection against enemies",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Tarantulas are large and often hairy spiders.",
+      "quote": "Tarantulas are a group of large and often hairy spiders of the family Theraphosidae.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "The sources do not agree on how many species of tarantula there are.",
+        "quote": "More than a thousand species have been identified, within almost 200 genera.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "the sentence does not support it"
+      },
+      {
+        "claim": "The sources do not agree on how many species of tarantula there are.",
+        "quote": "Approximately 900 species have been found.",
+        "source": "wikipedia_simple",
+        "kind": "debated",
+        "why": "the sentence does not support it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Tarantula",
+      "title": "Tarantula",
+      "revision": 1386785244,
+      "revision_time": "2026-11-20T15:51:44Z",
+      "fetched_on": "2026-11-24",
+      "chars": 30657,
+      "sha256": "4214c31445a5b2794f1918482c24971c44e504c1639be4e43657d5638c43b61e"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Tarantula",
+      "title": "Tarantula",
+      "revision": 9981904,
+      "revision_time": "2024-12-30T12:25:29Z",
+      "fetched_on": "2026-11-24",
+      "chars": 789,
+      "sha256": "b61c3506a20d7329ea0d317635bcd0505fe7321542191f070b721892d32f98b1"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "The two body parts are joined by a narrow waist-like piece called the pedicel.",
+    "A tarantula has eight legs, two chelicerae with fangs, and pedipalps, all attached to the front body part.",
+    "The fangs point downward.",
+    "The spinnerets are at the end of the abdomen.",
+    "The body is covered in bristles called setae."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "narrow pedicel waist, downward fangs, spinnerets at abdomen end; setae covering",
+    "covering": [
+      "The body is covered in bristles called setae."
+    ]
+  }
+}

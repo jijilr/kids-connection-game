@@ -34,12 +34,22 @@
         "insect": "Insects",
         "reptile": "Reptiles",
         "amphibian": "Amphibians",
-        "dinosaur": "Dinosaurs"
+        "dinosaur": "Dinosaurs",
+        "arachnids": "Arachnids"
       },
       "expected_on": {
         "kind_of_thing": "animal"
       },
-      "since": 1
+      "since": 1,
+      "widened": [
+        {
+          "value": "arachnids",
+          "on": "2026-11-24",
+          "run": "2026-11-24-23",
+          "why": "eight-legged land arthropods, not insects",
+          "tests": "two checks put 6 of its things in it, none of the things already there, and found no place for its things among the kinds that were there"
+        }
+      ]
     },
     "dinosaur_academic": {
       "wording": "Is it a dinosaur to a scientist?",

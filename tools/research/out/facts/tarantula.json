@@ -1,0 +1,49 @@
+{
+  "name": "Tarantula",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Tarantulas are a group of large and often hairy spiders of the family Theraphosidae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "arachnids",
+      "quote": "Tarantulas are a group of \"hairy\" and often very large spiders belonging to the family Theraphosidae.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "These spiders are found in warmer regions around the world.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Tarantula",
+      "title": "Tarantula",
+      "asked_for": "Tarantula",
+      "revision": 1386785244,
+      "fetched_on": "2026-11-24",
+      "sha256": "6f0a4eda935a19e3083ffbd36ead57cb56031839fa474a2a20d2aadce182827d"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Tarantula",
+      "title": "Tarantula",
+      "asked_for": "Tarantula",
+      "revision": 9981904,
+      "fetched_on": "2026-11-24",
+      "sha256": "60a87ba1b5a25aac9d724aad3e164af121e7dbf722f4b98abbf946299d7e5840"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

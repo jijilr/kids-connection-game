@@ -4668,6 +4668,42 @@
       "sha256": "f614206e3b91fe102a0b32de81e1758822485a1150a4e3e0c512034c68829696",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "scorpion": {
+      "say": "Scorpion",
+      "text": "Scorpion",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "skˈɔːpɪən",
+      "seconds": 1.36,
+      "cache": "tools/voice/clips/scorpion.mp3",
+      "sha256": "b323ba19e15b3e4cdbdae5a26b4e77b2380cc3a5da33b44f43d963ddc9a8e502",
+      "recorded_on": "2026-11-24",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "tick": {
+      "say": "Tick",
+      "text": "Tick",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "tˈɪk",
+      "seconds": 0.94,
+      "cache": "tools/voice/clips/tick.mp3",
+      "sha256": "e7164a1b88f6ba635abb154d308a503afde2e06dbb4f8971ed0b7b0eff5c8dcb",
+      "recorded_on": "2026-11-24",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "tarantula": {
+      "say": "Tarantula",
+      "text": "Tarantula",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "təɹˈantjʊlə",
+      "seconds": 1.72,
+      "cache": "tools/voice/clips/tarantula.mp3",
+      "sha256": "154b27ca00b55637205f53dd2e8d14251c3de555bc58fc17919a8b6a572d4593",
+      "recorded_on": "2026-11-24",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     }
   },
   "groups": {
@@ -4881,12 +4917,12 @@
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "kind_of_thing=animal:explanation": {
-      "text": "All of these are living creatures that can move, eat and grow. That is why they belong together. A mother frog lays eggs, and baby frogs come out as tadpoles with tails.",
+      "text": "All of these are living things that move about and find their own food. They have bodies, and they breathe and eat. A hedgehog has thousands of sharp spines on its back, and it curls up when it feels scared.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 11.12,
+      "seconds": 12.27,
       "cache": "tools/voice/clips/groups/kind_of_thing__animal__explanation.mp3",
-      "sha256": "c86d2fa4e41a93ac48529a0d5f0569ce0717bd44f277064200d2577993434dd6",
+      "sha256": "cf475329f2782e3c4c63773f6276debf65ea36782e3fb0e444ea0eb7032c616f",
       "game_file": "Assets/audio/groups/kind_of_thing__animal__explanation.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
@@ -5013,14 +5049,14 @@
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "kind_of_animal=mammal:explanation": {
-      "text": "They all drink milk from their mothers when they are little, and they have fur or hair. The biggest animal on land is one of these, and it has a long nose called a trunk.",
+      "text": "All these animals drink their mother's milk when they are small. They also have fur or hair on their bodies. A mother sheep is called a ewe, and her baby is called a lamb.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 10.39,
+      "seconds": 10.54,
       "cache": "tools/voice/clips/groups/kind_of_animal__mammal__explanation.mp3",
-      "sha256": "e6bff7302ee9e304479dbf69f925de97050b97da739dc35a0734b3cc7161ed79",
+      "sha256": "7ed398ce9cd1b2b14fec0d17347791e0209a3079e9fcc0b5e18fc222e50a42e3",
       "game_file": "Assets/audio/groups/kind_of_animal__mammal__explanation.mp3",
-      "recorded_on": "2026-10-07",
+      "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "kind_of_animal=bird:clue1": {
@@ -5112,78 +5148,78 @@
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "kind_of_animal=reptile:clue1": {
-      "text": "Think about animals with dry, scaly skin.",
+      "text": "Think of animals whose skin is dry and covered in scales.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 3.77,
+      "seconds": 4.37,
       "cache": "tools/voice/clips/groups/kind_of_animal__reptile__clue1.mp3",
-      "sha256": "9f36f21f7c4be3a4bd650a0482bfe434fbb081dac97ea25858a4b93daffb6c8b",
+      "sha256": "eb148ec99a2772d962e01c06f58c200d4930d16538aaf2065d1a745b3d9275a8",
       "game_file": "Assets/audio/groups/kind_of_animal__reptile__clue1.mp3",
-      "recorded_on": "2026-10-07",
+      "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "kind_of_animal=reptile:clue2": {
-      "text": "These animals often lay eggs on land.",
+      "text": "These animals are cold when you touch them, and they lie in the sun to get warm.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 3.67,
+      "seconds": 5.46,
       "cache": "tools/voice/clips/groups/kind_of_animal__reptile__clue2.mp3",
-      "sha256": "439631eeb034c05a55fb0a5a4f6f04530ed9f3102337f362cd23a7475239f041",
+      "sha256": "b7f88eac2870259fd15803e86505b2561ebb08cadc481786a696a65bf387f620",
       "game_file": "Assets/audio/groups/kind_of_animal__reptile__clue2.mp3",
-      "recorded_on": "2026-10-07",
+      "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "kind_of_animal=reptile:clue3": {
-      "text": "They are cold-blooded and many crawl on their bellies.",
+      "text": "These animals have scaly skin and most of them lay eggs on land, not in water.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 3.84,
+      "seconds": 6.19,
       "cache": "tools/voice/clips/groups/kind_of_animal__reptile__clue3.mp3",
-      "sha256": "2498db1067b0081f04683dbc5209b02acdc0827d55f5501520a423423de20b28",
+      "sha256": "5169b9d7eb24d2db710617f124a0dd8054b2cdf084e1dba912652c2e076510a3",
       "game_file": "Assets/audio/groups/kind_of_animal__reptile__clue3.mp3",
-      "recorded_on": "2026-10-07",
+      "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "kind_of_animal=dinosaur:clue1": {
-      "text": "Think about animals that lived very, very long ago.",
+      "text": "Long, long ago, these animals lived on our Earth, and now we only see their bones.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 4.07,
+      "seconds": 5.92,
       "cache": "tools/voice/clips/groups/kind_of_animal__dinosaur__clue1.mp3",
-      "sha256": "0964f98ff3c3ddfb634966f121be4ba47a1fcfaada4b412a11e29b09960890b3",
+      "sha256": "34b1fb5f98e5131e2117ee0426ce4da0753a1eff8d51fc9d3e90a5484d72b202",
       "game_file": "Assets/audio/groups/kind_of_animal__dinosaur__clue1.mp3",
-      "recorded_on": "2026-10-07",
+      "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "kind_of_animal=dinosaur:clue2": {
-      "text": "These animals are all gone now, and we only see their bones.",
+      "text": "Their bones are hard and old, and people dig them out of the ground to look at them.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 4.57,
+      "seconds": 5.51,
       "cache": "tools/voice/clips/groups/kind_of_animal__dinosaur__clue2.mp3",
-      "sha256": "5d8668929761b45aee5f17a06d6d3e6271f706e0dca67809da74ef845df50383",
+      "sha256": "889adbcf97fe63bf4b1643b785e3ea13e73796cfc95f32771a2ea08a7a7f4d8d",
       "game_file": "Assets/audio/groups/kind_of_animal__dinosaur__clue2.mp3",
-      "recorded_on": "2026-10-07",
+      "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "kind_of_animal=dinosaur:clue3": {
-      "text": "Some of these animals were huge, and some had sharp teeth or horns.",
+      "text": "These animals are not alive today at all — they all died out long before anyone's grandma was born.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 5.07,
+      "seconds": 6.82,
       "cache": "tools/voice/clips/groups/kind_of_animal__dinosaur__clue3.mp3",
-      "sha256": "74c8f109078b64013543005cdeb86e8158918ea1601f5753055681a23e11bf51",
+      "sha256": "26266250fde13895ad631ff89b81ec6ece011e380879453eafdf4bf669b599f8",
       "game_file": "Assets/audio/groups/kind_of_animal__dinosaur__clue3.mp3",
-      "recorded_on": "2026-10-07",
+      "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "kind_of_animal=dinosaur:explanation": {
-      "text": "These all belong together because they are the big, old animals we call dinosaurs and their flying and swimming cousins. One of these had a long neck and could stand as tall as a giraffe.",
+      "text": "These all lived very long ago and are gone now. We know them from the old bones people dig up. One of these had two rows of big flat plates on its back and long spikes on its tail.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 12.19,
+      "seconds": 11.21,
       "cache": "tools/voice/clips/groups/kind_of_animal__dinosaur__explanation.mp3",
-      "sha256": "2b8b8c610b033115134266ff50795063f3dcaa1e813493db7a0876a1063c0c41",
+      "sha256": "58a2587c68f3d322efed777b834160aaba8f2fd06bd737ef1b67a5f6e4210701",
       "game_file": "Assets/audio/groups/kind_of_animal__dinosaur__explanation.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
@@ -6883,12 +6919,12 @@
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "kind_of_animal=reptile:explanation": {
-      "text": "They all have dry scaly skin and hatch from eggs. They are all reptiles. A turtle's hard shell keeps it safe from other animals.",
+      "text": "They all have dry, scaly skin and lay their eggs on land. That is what makes them one family. A turtle has a hard shell that keeps it safe from other animals.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 8.94,
+      "seconds": 10.89,
       "cache": "tools/voice/clips/groups/kind_of_animal__reptile__explanation.mp3",
-      "sha256": "5164047a0b2507b0654153471c455706bd36f40c15e3853dc4975e907b81cef4",
+      "sha256": "a07c05675eed7acc33f4269e7a1924834ed5fa8c9455d81b027b4e1d72452970",
       "game_file": "Assets/audio/groups/kind_of_animal__reptile__explanation.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
@@ -7411,12 +7447,12 @@
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "kind_of_animal=insect:explanation": {
-      "text": "These little creatures all have six legs and a hard shell outside. They have no bones inside. A ladybug has bright red wings with black spots that warn birds to stay away.",
+      "text": "These little creatures all have six legs and a hard shell outside. Many of them can fly or buzz around us. A ladybug has bright red wings with black spots to warn other animals to stay away.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 11.52,
+      "seconds": 12.71,
       "cache": "tools/voice/clips/groups/kind_of_animal__insect__explanation.mp3",
-      "sha256": "a1361a9b90a022e2aafec1261b64f9b2404ce299013c48f9d18b72c8aa57fe26",
+      "sha256": "a1884bc635bde2223dcf1d091b3f80855bc2452f0fcd61ecdff681720e2f46e5",
       "game_file": "Assets/audio/groups/kind_of_animal__insect__explanation.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"

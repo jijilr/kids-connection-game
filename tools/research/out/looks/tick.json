@@ -1,0 +1,126 @@
+{
+  "name": "Tick",
+  "group": "Animals > Arachnids",
+  "features": [
+    {
+      "claim": "An adult tick is about 3 to 5 mm long.",
+      "quote": "Adult ticks are approximately 3 to 5 mm in length depending on age, sex, and species, but can become larger when engorged.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A tick's body is ovoid or pear-shaped.",
+      "quote": "Adults have ovoid/pear-shaped bodies (idiosomas) which become engorged with blood when they feed, and eight legs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A tick has eight legs.",
+      "quote": "Adults have ovoid/pear-shaped bodies (idiosomas) which become engorged with blood when they feed, and eight legs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A tick's body swells up with blood when it feeds.",
+      "quote": "Adults have ovoid/pear-shaped bodies (idiosomas) which become engorged with blood when they feed, and eight legs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A tick's head-part and body are completely joined together.",
+      "quote": "Their cephalothorax and abdomen are completely fused.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A hard tick has a hard shield on its back called a scutum.",
+      "quote": "In addition to having a hard shield on their dorsal surfaces, known as the scutum, hard ticks have a beak-like structure at the front containing the mouthparts, whereas soft ticks have their mouthparts on the underside of their bodies.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A hard tick has a beak-like part at the front holding its mouthparts.",
+      "quote": "In addition to having a hard shield on their dorsal surfaces, known as the scutum, hard ticks have a beak-like structure at the front containing the mouthparts, whereas soft ticks have their mouthparts on the underside of their bodies.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A soft tick's mouthparts are on the underside of its body, so you cannot see them from above.",
+      "quote": "The mouthparts cannot be seen from above, as they are on the ventral surface.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Most ticks are plain brown or reddish brown.",
+      "quote": "Most ticks are plain brown or reddish brown.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A tick's legs have seven segments and end in a pair of claws.",
+      "quote": "In the nymphal and adult stages, ticks have eight legs, each of which has seven segments and is tipped with a pair of claws.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A tick's legs often have sensory or tactile hairs on them.",
+      "quote": "The legs are sometimes ornamented and usually bear sensory or tactile hairs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "When a tick is not moving, its legs stay folded tightly against its body.",
+      "quote": "When stationary, their legs remain tightly folded against the body.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Ticks cannot jump onto animals.",
+        "quote": "A common misconception about ticks is they jump onto their host: They are incapable of jumping, although static electricity from their hosts has been shown to be capable of pulling the tick over distances several times their own body length.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "When ticks first appeared is not certain.",
+        "quote": "The timing of the origin of ticks is uncertain, though the oldest known tick fossils are around 100 million years old, and come from the Cretaceous period.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Tick",
+      "title": "Tick",
+      "revision": 1376012002,
+      "revision_time": "2026-09-21T13:26:36Z",
+      "fetched_on": "2026-11-24",
+      "chars": 30437,
+      "sha256": "18546ef8981ac20e08bd0c734754f856b2e8eaa23296bdf582d3cc7b8307f1e1"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Acarina",
+      "title": "Acarina",
+      "revision": 9724867,
+      "revision_time": "2024-08-24T09:14:09Z",
+      "fetched_on": "2026-11-24",
+      "chars": 2333,
+      "sha256": "213c17e166f986c720f0631b452ed4869fc9addcc307816d4b97e847af741da6"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "A tick's body is ovoid or pear-shaped.",
+    "A tick's head-part and body are completely joined together.",
+    "A hard tick has a hard shield on its back called a scutum.",
+    "When a tick is not moving, its legs stay folded tightly against its body."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "pear-shaped body with head fused to body, scutum shield, legs folded tight",
+    "covering": []
+  }
+}

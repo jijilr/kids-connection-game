@@ -1,0 +1,49 @@
+{
+  "name": "Spider",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Spiders (order Araneae) are air-breathing arthropods that have eight limbs, chelicerae with fangs generally able to inject venom, and spinnerets that extrude silk.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "arachnids",
+      "quote": "Spiders (class Arachnida, order Araneae) are air-breathing arthropods.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Spiders are found worldwide on every continent except Antarctica, and have become established in nearly every land habitat.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Spider",
+      "title": "Spider",
+      "asked_for": "Spider",
+      "revision": 1385950530,
+      "fetched_on": "2026-11-24",
+      "sha256": "401130149f36d7970b70b7b57149a9003e8489b2ca51fb641c9d725d763721fd"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Spider",
+      "title": "Spider",
+      "asked_for": "Spider",
+      "revision": 11059189,
+      "fetched_on": "2026-11-24",
+      "sha256": "08867000ec55cf2fa57adaa943d9b62742989c70250f35cc3ebb4b219ce5c5bb"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -4262,6 +4262,289 @@
           "draw": "A small red plastic toy synthesizer keyboard with white and black keys, a few colored buttons, and a little speaker grille, resting flat on plain ground"
         }
       ]
+    },
+    "job_2026_11_24_23_1": {
+      "purpose": "drawn by the job, run 2026-11-24-23",
+      "grid": 3,
+      "size": 2880,
+      "only_for_this_sheet": "Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.",
+      "cells": [
+        {
+          "thing": "spider",
+          "name": "Spider",
+          "draw": "A brown hairy spider with eight legs, its body in two parts joined by a small cylindrical waist, the rear part soft and egg-shaped, short movable spinnerets at the back giving out silk, bristly hairs all over, no antennae, standing on the ground",
+          "must_show": [
+            "A spider's body is in two parts joined by a small cylindrical section.",
+            "A spider's rear body part is soft and shaped like an egg.",
+            "A spider has eight legs.",
+            "A spider has short, movable spinnerets at the back that give out silk.",
+            "A spider's body is covered with bristles that sense touch and chemicals."
+          ],
+          "not_this": [
+            "A spider does not have antennae on its head."
+          ],
+          "features": [
+            "A spider's body is in two parts joined by a small cylindrical section.",
+            "The front part of a spider's body is covered on top by a single rounded shell.",
+            "A spider's rear body part is soft and shaped like an egg.",
+            "A spider has eight legs.",
+            "A spider has no antennae.",
+            "A spider has four pairs of eyes on the top-front of its body.",
+            "A spider has short, movable spinnerets at the back that give out silk.",
+            "A spider's whole body is covered in a shell made of chitin and proteins.",
+            "A spider's body is covered with bristles that sense touch and chemicals.",
+            "Spiders that hunt without webs have dense tufts of fine bristles between the claws at the tips of their legs."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Spider",
+            "https://simple.wikipedia.org/wiki/Spider"
+          ]
+        },
+        {
+          "thing": "scorpion",
+          "name": "Scorpion",
+          "draw": "A whole scorpion with a hard exoskeleton, its body in three parts: front cephalothorax, middle abdomen, and a narrow tail of five segments ending in a stinger, curved forward over its back; two grasping pincers in front, eight legs, sandy brown",
+          "must_show": [
+            "It has a pair of grasping pincers.",
+            "Its body is divided into three parts: the front cephalothorax, the abdomen called the mesosoma, and the tail called the metasoma.",
+            "The tail is divided into five segments plus the stinger part at the end.",
+            "Its body is covered by a hard exoskeleton that protects it."
+          ],
+          "not_this": [],
+          "features": [
+            "A scorpion has eight legs.",
+            "It has a pair of grasping pincers.",
+            "Its tail is narrow and made of segments, usually curved forward over its back, and ends in a stinger.",
+            "Its body is covered by a hard exoskeleton that protects it.",
+            "Its body is divided into three parts: the front cephalothorax, the abdomen called the mesosoma, and the tail called the metasoma.",
+            "It has two eyes on top of the front part of its body and usually two to five pairs of eyes along the front corners.",
+            "Its mouth parts at the front are pincer-like, with three segments and teeth.",
+            "The tail is divided into five segments plus the stinger part at the end.",
+            "The stinger is curved and has sensory hairs on it.",
+            "It has comb-like pectines on the underside of its body that it uses as sense organs."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Scorpion",
+            "https://simple.wikipedia.org/wiki/Scorpion"
+          ]
+        },
+        {
+          "thing": "tick",
+          "name": "Tick",
+          "draw": "A small eight-legged tick with a pear-shaped body, its head and body fully joined, a hard shield on its back, and legs folded tightly against its body, drawn whole in brown on plain ground",
+          "must_show": [
+            "A tick's body is ovoid or pear-shaped.",
+            "A tick's head-part and body are completely joined together.",
+            "A hard tick has a hard shield on its back called a scutum.",
+            "When a tick is not moving, its legs stay folded tightly against its body."
+          ],
+          "not_this": [],
+          "features": [
+            "An adult tick is about 3 to 5 mm long.",
+            "A tick's body is ovoid or pear-shaped.",
+            "A tick has eight legs.",
+            "A tick's body swells up with blood when it feeds.",
+            "A tick's head-part and body are completely joined together.",
+            "A hard tick has a hard shield on its back called a scutum.",
+            "A hard tick has a beak-like part at the front holding its mouthparts.",
+            "A soft tick's mouthparts are on the underside of its body, so you cannot see them from above.",
+            "Most ticks are plain brown or reddish brown.",
+            "A tick's legs have seven segments and end in a pair of claws.",
+            "A tick's legs often have sensory or tactile hairs on them.",
+            "When a tick is not moving, its legs stay folded tightly against its body."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Tick",
+            "https://simple.wikipedia.org/wiki/Acarina"
+          ]
+        },
+        {
+          "thing": "tarantula",
+          "name": "Tarantula",
+          "draw": "A large hairy spider with eight legs, two fangs pointing down, and pedipalps on its front body, joined by a narrow waist to a big abdomen with spinnerets at its end, all covered in bristles, standing on the ground",
+          "must_show": [
+            "The two body parts are joined by a narrow waist-like piece called the pedicel.",
+            "A tarantula has eight legs, two chelicerae with fangs, and pedipalps, all attached to the front body part.",
+            "The fangs point downward.",
+            "The spinnerets are at the end of the abdomen.",
+            "The body is covered in bristles called setae."
+          ],
+          "not_this": [],
+          "features": [
+            "A tarantula's body has two main parts: the front part (prosoma) and the abdomen (opisthosoma).",
+            "The two body parts are joined by a narrow waist-like piece called the pedicel.",
+            "A tarantula has eight legs, two chelicerae with fangs, and pedipalps, all attached to the front body part.",
+            "Each leg has seven segments.",
+            "The fangs point downward.",
+            "The chelicerae sit just below the eyes and in front of the mouth.",
+            "The eyes are small and usually set in two rows of four.",
+            "The spinnerets are at the end of the abdomen.",
+            "Tarantulas have two or four spinnerets.",
+            "The body is covered in bristles called setae.",
+            "Many tarantulas have a dense covering of irritating bristles called urticating hairs on the abdomen.",
+            "Tarantulas are large and often hairy spiders."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Tarantula",
+            "https://simple.wikipedia.org/wiki/Tarantula"
+          ]
+        },
+        {
+          "thing": "mite",
+          "name": "Mite",
+          "draw": "A tiny eight-legged mite, whole, with a simple unsegmented oval body, its two body parts fused so only the leg joints show the old segments, four pairs of legs, hardened plates on its back, and a small retractable mouthpart of chelicerae and pedipalps at the front",
+          "must_show": [
+            "Its body is simple and not divided into segments.",
+            "The two body parts are fused, and only where the legs are shows where the segments were.",
+            "At the front is a retractable feeding part made of the chelicerae, the pedipalps and the mouth cavity.",
+            "Most mites have four pairs of legs.",
+            "The upper surface of the body is covered with hardened plates."
+          ],
+          "not_this": [],
+          "features": [
+            "A mite is very small, usually less than one millimetre long.",
+            "Its body is simple and not divided into segments.",
+            "Its body has two parts, a front part and a rear part, that are joined together.",
+            "The two body parts are fused, and only where the legs are shows where the segments were.",
+            "At the front is a retractable feeding part made of the chelicerae, the pedipalps and the mouth cavity.",
+            "Most mites have four pairs of legs.",
+            "Each leg has six segments.",
+            "The upper surface of the body is covered with hardened plates.",
+            "The underside of the body is covered with hardened plates.",
+            "The body and legs carry bristles called setae.",
+            "Mites are usually some shade of brown.",
+            "The genital opening is on the underside between the fourth pair of legs."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Mite",
+            "https://simple.wikipedia.org/wiki/Acarina"
+          ]
+        },
+        {
+          "thing": "spider",
+          "name": "Spider",
+          "draw": "A brown hairy spider with eight legs, its body in two parts joined by a small cylindrical waist, the rear part soft and egg-shaped, short movable spinnerets at the back giving out silk, bristly hairs all over, no antennae, standing on the ground; a second view of it",
+          "must_show": [
+            "A spider's body is in two parts joined by a small cylindrical section.",
+            "A spider's rear body part is soft and shaped like an egg.",
+            "A spider has eight legs.",
+            "A spider has short, movable spinnerets at the back that give out silk.",
+            "A spider's body is covered with bristles that sense touch and chemicals."
+          ],
+          "not_this": [
+            "A spider does not have antennae on its head."
+          ],
+          "features": [
+            "A spider's body is in two parts joined by a small cylindrical section.",
+            "The front part of a spider's body is covered on top by a single rounded shell.",
+            "A spider's rear body part is soft and shaped like an egg.",
+            "A spider has eight legs.",
+            "A spider has no antennae.",
+            "A spider has four pairs of eyes on the top-front of its body.",
+            "A spider has short, movable spinnerets at the back that give out silk.",
+            "A spider's whole body is covered in a shell made of chitin and proteins.",
+            "A spider's body is covered with bristles that sense touch and chemicals.",
+            "Spiders that hunt without webs have dense tufts of fine bristles between the claws at the tips of their legs."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Spider",
+            "https://simple.wikipedia.org/wiki/Spider"
+          ],
+          "look_closely": "a second try; the better of the two is kept"
+        },
+        {
+          "thing": "scorpion",
+          "name": "Scorpion",
+          "draw": "A whole scorpion with a hard exoskeleton, its body in three parts: front cephalothorax, middle abdomen, and a narrow tail of five segments ending in a stinger, curved forward over its back; two grasping pincers in front, eight legs, sandy brown; a second view of it",
+          "must_show": [
+            "It has a pair of grasping pincers.",
+            "Its body is divided into three parts: the front cephalothorax, the abdomen called the mesosoma, and the tail called the metasoma.",
+            "The tail is divided into five segments plus the stinger part at the end.",
+            "Its body is covered by a hard exoskeleton that protects it."
+          ],
+          "not_this": [],
+          "features": [
+            "A scorpion has eight legs.",
+            "It has a pair of grasping pincers.",
+            "Its tail is narrow and made of segments, usually curved forward over its back, and ends in a stinger.",
+            "Its body is covered by a hard exoskeleton that protects it.",
+            "Its body is divided into three parts: the front cephalothorax, the abdomen called the mesosoma, and the tail called the metasoma.",
+            "It has two eyes on top of the front part of its body and usually two to five pairs of eyes along the front corners.",
+            "Its mouth parts at the front are pincer-like, with three segments and teeth.",
+            "The tail is divided into five segments plus the stinger part at the end.",
+            "The stinger is curved and has sensory hairs on it.",
+            "It has comb-like pectines on the underside of its body that it uses as sense organs."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Scorpion",
+            "https://simple.wikipedia.org/wiki/Scorpion"
+          ],
+          "look_closely": "a second try; the better of the two is kept"
+        },
+        {
+          "thing": "tick",
+          "name": "Tick",
+          "draw": "A small eight-legged tick with a pear-shaped body, its head and body fully joined, a hard shield on its back, and legs folded tightly against its body, drawn whole in brown on plain ground; a second view of it",
+          "must_show": [
+            "A tick's body is ovoid or pear-shaped.",
+            "A tick's head-part and body are completely joined together.",
+            "A hard tick has a hard shield on its back called a scutum.",
+            "When a tick is not moving, its legs stay folded tightly against its body."
+          ],
+          "not_this": [],
+          "features": [
+            "An adult tick is about 3 to 5 mm long.",
+            "A tick's body is ovoid or pear-shaped.",
+            "A tick has eight legs.",
+            "A tick's body swells up with blood when it feeds.",
+            "A tick's head-part and body are completely joined together.",
+            "A hard tick has a hard shield on its back called a scutum.",
+            "A hard tick has a beak-like part at the front holding its mouthparts.",
+            "A soft tick's mouthparts are on the underside of its body, so you cannot see them from above.",
+            "Most ticks are plain brown or reddish brown.",
+            "A tick's legs have seven segments and end in a pair of claws.",
+            "A tick's legs often have sensory or tactile hairs on them.",
+            "When a tick is not moving, its legs stay folded tightly against its body."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Tick",
+            "https://simple.wikipedia.org/wiki/Acarina"
+          ],
+          "look_closely": "a second try; the better of the two is kept"
+        },
+        {
+          "thing": "tarantula",
+          "name": "Tarantula",
+          "draw": "A large hairy spider with eight legs, two fangs pointing down, and pedipalps on its front body, joined by a narrow waist to a big abdomen with spinnerets at its end, all covered in bristles, standing on the ground; a second view of it",
+          "must_show": [
+            "The two body parts are joined by a narrow waist-like piece called the pedicel.",
+            "A tarantula has eight legs, two chelicerae with fangs, and pedipalps, all attached to the front body part.",
+            "The fangs point downward.",
+            "The spinnerets are at the end of the abdomen.",
+            "The body is covered in bristles called setae."
+          ],
+          "not_this": [],
+          "features": [
+            "A tarantula's body has two main parts: the front part (prosoma) and the abdomen (opisthosoma).",
+            "The two body parts are joined by a narrow waist-like piece called the pedicel.",
+            "A tarantula has eight legs, two chelicerae with fangs, and pedipalps, all attached to the front body part.",
+            "Each leg has seven segments.",
+            "The fangs point downward.",
+            "The chelicerae sit just below the eyes and in front of the mouth.",
+            "The eyes are small and usually set in two rows of four.",
+            "The spinnerets are at the end of the abdomen.",
+            "Tarantulas have two or four spinnerets.",
+            "The body is covered in bristles called setae.",
+            "Many tarantulas have a dense covering of irritating bristles called urticating hairs on the abdomen.",
+            "Tarantulas are large and often hairy spiders."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Tarantula",
+            "https://simple.wikipedia.org/wiki/Tarantula"
+          ],
+          "look_closely": "a second try; the better of the two is kept"
+        }
+      ]
     }
   }
 }
