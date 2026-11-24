@@ -882,9 +882,22 @@
       }
     },
     "pet_farm_or_wild=wild_land": {
-      "clues": [],
+      "clues": [
+        {
+          "text": "Think of a creature that lives free, far from people's homes.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue1.mp3"
+        },
+        {
+          "text": "It walks or crawls on the ground, not in water, and nobody feeds it.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue2.mp3"
+        },
+        {
+          "text": "It finds its own food in the forest or grassland, all by itself.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue3.mp3"
+        }
+      ],
       "explanation": {
-        "text": "These animals all live free on land, away from people. Nobody feeds them or keeps them in a house. A cheetah can run very fast, faster than any other animal on land.",
+        "text": "These animals all live free on land, away from homes and farms. They find their own food and make their own homes outdoors. A cheetah can run very, very fast, as fast as a car on a big road.",
         "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__explanation.mp3"
       }
     },

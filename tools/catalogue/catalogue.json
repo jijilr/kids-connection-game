@@ -34246,7 +34246,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-11-24-48",
+    "by": "job:2026-11-24-49",
     "on": "2026-11-24"
   },
   "groups": {
@@ -36308,25 +36308,44 @@
       "value": "wild_land",
       "label": "Wild animals on land",
       "question": "Is it mostly a pet, a farm animal or a wild animal?",
-      "clues": [],
+      "clues": [
+        {
+          "text": "Think of a creature that lives free, far from people's homes.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__clue1.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue1.mp3",
+          "clip_sha256": "9626a060189ab00b2f89d018041039f611fafe428cc4ccc834c449b49b13b091",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "It walks or crawls on the ground, not in water, and nobody feeds it.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__clue2.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue2.mp3",
+          "clip_sha256": "31cf1bbe31b0d57953031875e5275d8106684bebc4a882b16b37374b0ce81172",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "It finds its own food in the forest or grassland, all by itself.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__clue3.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue3.mp3",
+          "clip_sha256": "4a679b769a769797a10055baaed2456df3612cc74c7b983d079df65f2f66cd72",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        }
+      ],
       "explanation": {
-        "text": "These animals all live free on land, away from people. Nobody feeds them or keeps them in a house. A cheetah can run very fast, faster than any other animal on land.",
-        "together": "These animals all live free on land, away from people. Nobody feeds them or keeps them in a house.",
-        "fact": "A cheetah can run very fast, faster than any other animal on land.",
+        "text": "These animals all live free on land, away from homes and farms. They find their own food and make their own homes outdoors. A cheetah can run very, very fast, as fast as a car on a big road.",
+        "together": "These animals all live free on land, away from homes and farms. They find their own food and make their own homes outdoors.",
+        "fact": "A cheetah can run very, very fast, as fast as a car on a big road.",
         "quote": "It is the fastest land animal and can run up to 105 kilometres per hour (65 mph), and accelerate from 0 to 97 kilometres per hour (60 mph) in less than 3 seconds.",
         "source": "cheetah:wikipedia_simple",
         "source_url": "https://simple.wikipedia.org/wiki/Cheetah",
         "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__explanation.mp3",
         "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__explanation.mp3",
-        "clip_sha256": "1080359083481e51f7ec4dd76f79bc565b78741d04ccafa0ae7a3b91a6d5c58d",
+        "clip_sha256": "c1ffecb6c6f3f08a829af3a3a09484ed5bc8e7d2f72c8a659c2c5a7cb072cb16",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "held": [
-        "no clues were kept: clue 3 names a thing of the group: house; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      ],
       "clues_set_aside": {
         "on": "2026-11-24",
         "why": "they were written for the wild land mammals; the group now holds birds, insects and reptiles, and they are no longer true of every thing",
