@@ -1867,6 +1867,86 @@
       "cost_usd": 0.1008,
       "vision_check_cost_usd": 0.0004,
       "feature_check_cost_usd": 0.02129
+    },
+    "job_2026_11_24_04_1_01": {
+      "plan_key": "job_2026_11_24_04_1",
+      "purpose": "drawn by the job, run 2026-11-24-04",
+      "file": "tools/pictures/sheets/job_2026_11_24_04_1_01.png",
+      "grid": null,
+      "rows": 3,
+      "cols": 4,
+      "size": "2880x2880",
+      "cells": [
+        "wolf",
+        "cheetah",
+        "leopard",
+        "anteater",
+        "hedgehog",
+        "aardvark",
+        "armadillo",
+        "meerkat",
+        "zebra",
+        "deer",
+        "raccoon",
+        "chimpanzee"
+      ],
+      "names": {
+        "wolf": "Wolf",
+        "cheetah": "Cheetah",
+        "leopard": "Leopard",
+        "anteater": "Anteater",
+        "hedgehog": "Hedgehog",
+        "aardvark": "Aardvark",
+        "armadillo": "Armadillo",
+        "meerkat": "Meerkat",
+        "zebra": "Zebra",
+        "deer": "Deer",
+        "raccoon": "Raccoon",
+        "chimpanzee": "Chimpanzee"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a grid of 3 rows and 4 columns: 12 equal cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Wolf: A grey wolf standing alone on plain ground: large heavy head with wide forehead, powerful jaws and long blunt muzzle, legs a little longer than other wild dogs, thick fluffy mottled white, brown, grey and black coat.\n2. Cheetah: A slim, lightly built cheetah with a small rounded head, short snout, long thin legs and a long spotted tail; tawny fur with evenly spaced solid black spots, not rosettes, and black tear-like streaks from its eyes down to its mouth.\n3. Leopard: A whole leopard standing on plain ground: pale yellowish to dark golden fur with dark spots in rosettes, a slender muscular body, relatively short limbs, a broad head, and a ringed tail shorter than its body.\n4. Anteater: A giant anteater standing on the ground: thick shaggy fur all over, a very long thin snout, and big claws on the third toe of its front feet, with a long bushy tail.\n5. Hedgehog: A small round hedgehog with a pig-like snout and a back covered in many straight, unbarbed spines, in brown and cream natural colours, curled slightly, standing alone on plain ground.\n6. Aardvark: A stout, pale grey-brown aardvark with a prominently arched back, longer rear legs than front, a greatly elongated snout on a short thick neck, and very long upright ears, standing whole on bare ground.\n7. Armadillo: A small armadillo with short legs, a leathery armored shell over its back, stiff shields over shoulders and hips with bands between them across the back and sides, soft unarmored belly, long sharp claws, pointed snout and a tail, standing on plain ground.\n8. Meerkat: Draw one small slim mongoose standing upright on its long back legs, thin tapering tail down as a balance prop, not bushy; broad head, large eyes, pointed snout, light grey-brown coat with faint dark bands on the back, small digging foreclaws.\n9. Zebra: A whole zebra standing on plain ground: horse-like body with a long neck and long erect mane, elongated face, thin legs with hard hooves, mostly vertical black-and-white stripes on the body and horizontal stripes on the legs.\n10. Deer: A brown deer standing on the ground, whole body, long strong legs, a very small tail, and a male with bony branched antlers on its head (not cow-like horns); no female with antlers.\n11. Raccoon: A raccoon standing on the ground: compact body on short legs, grayish-brown fur, pointed nose, small ears, and a bushy tail with alternating light and dark rings; its face has a dark mask around the eyes.\n12. Chimpanzee: A whole chimpanzee standing on all four limbs on bare ground: coarse black hair, bare face, fingers and toes, arms longer than its legs, short wide body, long hips wide at the top, rounded head with jutting jaw and strong brow ridge.\n\nFor this sheet: Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-11-24",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 880
+      },
+      "cost_usd": 0.1823,
+      "vision_check_cost_usd": 0.00068,
+      "feature_check_cost_usd": 0.06322
+    },
+    "job_2026_11_24_04_2_01": {
+      "plan_key": "job_2026_11_24_04_2",
+      "purpose": "drawn by the job, run 2026-11-24-04, second tries",
+      "file": "tools/pictures/sheets/job_2026_11_24_04_2_01.png",
+      "grid": 2,
+      "rows": 2,
+      "cols": 2,
+      "size": "1920x1920",
+      "cells": [
+        "cheetah",
+        "chimpanzee",
+        "cheetah",
+        "chimpanzee"
+      ],
+      "names": {
+        "cheetah": "Cheetah",
+        "chimpanzee": "Chimpanzee"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 2 by 2 grid of 4 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Cheetah: A slim, lightly built cheetah with a small rounded head, short snout, long thin legs and a long spotted tail; tawny fur with evenly spaced solid black spots, not rosettes, and black tear-like streaks from its eyes down to its mouth.\n2. Chimpanzee: A whole chimpanzee standing on all four limbs on bare ground: coarse black hair, bare face, fingers and toes, arms longer than its legs, short wide body, long hips wide at the top, rounded head with jutting jaw and strong brow ridge.\n3. Cheetah: A slim, lightly built cheetah with a small rounded head, short snout, long thin legs and a long spotted tail; tawny fur with evenly spaced solid black spots, not rosettes, and black tear-like streaks from its eyes down to its mouth; a second view of it.\n4. Chimpanzee: A whole chimpanzee standing on all four limbs on bare ground: coarse black hair, bare face, fingers and toes, arms longer than its legs, short wide body, long hips wide at the top, rounded head with jutting jaw and strong brow ridge; a second view of it.\n\nFor this sheet: Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-11-24",
+      "tokens": {
+        "image_output_tokens": 3276,
+        "text_input_tokens": 489
+      },
+      "cost_usd": 0.1007,
+      "vision_check_cost_usd": 0.00021,
+      "feature_check_cost_usd": 0.03508
     }
   },
   "tiles": {
@@ -20994,6 +21074,1458 @@
         ]
       },
       "reviewed_on": "2026-11-24"
+    },
+    "job_2026_11_24_04_1_01_c1": {
+      "thing_id": "wolf",
+      "expected_thing": "wolf",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c1.png",
+      "master_size": [
+        784,
+        784
+      ],
+      "master_sha256": "5a036869ec8478539c6fa94fd665f8fc8c0b4c526ada84336c8488adeafebb2e",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_04_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_04_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Wolf: A grey wolf standing alone on plain ground: large heavy head with wide forehead, powerful jaws and long blunt muzzle, legs a little longer than other wild dogs, thick fluffy mottled white, brown, grey and black coat",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0152,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          25,
+          185,
+          667,
+          861
+        ],
+        "picture_shape": 0.95,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Wolf",
+        "shows": "wolf",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The wolf shows a broad, heavy head, blunt muzzle, small pointed ears, yellow eyes, long legs, and a thick coat mottled grey, white, brown and black.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Wolf",
+          "https://simple.wikipedia.org/wiki/Wolf"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/wolf.webp"
+    },
+    "job_2026_11_24_04_1_01_c2": {
+      "thing_id": null,
+      "expected_thing": "cheetah",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c2.png",
+      "master_size": [
+        755,
+        755
+      ],
+      "master_sha256": "59b836269a5997f1837185b21b2b43a2942c45bf16153697c969830c813f1204",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_04_1_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_04_1_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Cheetah: A slim, lightly built cheetah with a small rounded head, short snout, long thin legs and a long spotted tail; tawny fur with evenly spaced solid black spots, not rosettes, and black tear-like streaks from its eyes down to its mouth",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0152,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          704,
+          189,
+          1350,
+          840
+        ],
+        "picture_shape": 0.99,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Cheetah",
+        "shows": "cheetah",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "yes",
+          "no",
+          "no",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
+          "unclear",
+          "yes"
+        ],
+        "mistakes_shown": [
+          1
+        ],
+        "comment": "The picture shows a recognizable cheetah with tear streaks, but some spots resemble rosettes and the lower legs have markings.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cheetah",
+          "https://simple.wikipedia.org/wiki/Cheetah"
+        ],
+        "passed": false,
+        "reasons": [
+          "shows a listed mistake: A cheetah does not have the leopard's rosettes, and it does have tear streaks."
+        ],
+        "reported": [
+          "Its body is covered with about 2,000 evenly spaced solid black spots.",
+          "Its chin, throat, belly and the lower parts of its legs are white with no markings."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": false,
+            "reasons": [
+              "shows a listed mistake: A cheetah does not have the leopard's rosettes, and it does have tear streaks."
+            ]
+          },
+          {
+            "passed": false,
+            "reasons": [
+              "shows a listed mistake: A cheetah does not have the leopard's rosettes, and it does have tear streaks."
+            ]
+          }
+        ]
+      }
+    },
+    "job_2026_11_24_04_1_01_c3": {
+      "thing_id": "leopard",
+      "expected_thing": "leopard",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c3.png",
+      "master_size": [
+        818,
+        818
+      ],
+      "master_sha256": "17cb6e05273007db17d6a22cfc52b7d00164a09f319edd3f61fea0e2665984e3",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_04_1_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_04_1_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Leopard: A whole leopard standing on plain ground: pale yellowish to dark golden fur with dark spots in rosettes, a slender muscular body, relatively short limbs, a broad head, and a ringed tail shorter than its body",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0152,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1388,
+          245,
+          2093,
+          817
+        ],
+        "picture_shape": 1.23,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Leopard",
+        "shows": "leopard",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "no",
+          "yes",
+          "unclear",
+          "unclear",
+          "no",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The leopard has golden rosetted fur, a white underside, and a shorter ringed tail, but its tail tip is dark and its spots remain prominent on the belly and lower legs.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Leopard",
+          "https://simple.wikipedia.org/wiki/Leopard"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "Its tail has a white tip and is white underneath.",
+          "Its spots fade toward the white underbelly and the insides and lower parts of the legs."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/leopard.webp"
+    },
+    "job_2026_11_24_04_1_01_c4": {
+      "thing_id": "anteater",
+      "expected_thing": "anteater",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c4.png",
+      "master_size": [
+        821,
+        821
+      ],
+      "master_sha256": "dd8f4c95f1d9d5dc807b5acce7ba4896fa5516cc99a60c856b68d25b029243eb",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_04_1_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_04_1_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Anteater: A giant anteater standing on the ground: thick shaggy fur all over, a very long thin snout, and big claws on the third toe of its front feet, with a long bushy tail",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0152,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2151,
+          288,
+          2859,
+          821
+        ],
+        "picture_shape": 1.33,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Anteater",
+        "shows": "anteater",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "no"
+        ],
+        "mistakes_shown": [],
+        "comment": "The anteater has a long, thin snout, large central front claws, thick fur and a long tail, but toothlessness cannot be verified and its front toes are not curled under for knuckle-walking.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Anteater",
+          "https://simple.wikipedia.org/wiki/Anteater"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "Big anteaters that walk on the ground knuckle-walk, curling their front toes under."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/anteater.webp"
+    },
+    "job_2026_11_24_04_1_01_c5": {
+      "thing_id": "hedgehog",
+      "expected_thing": "hedgehog",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c5.png",
+      "master_size": [
+        662,
+        662
+      ],
+      "master_sha256": "d1feccf72cdb6ea7f1f2ca35be9a192c369d422ceb7dc6479153140fd6a71877",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_04_1_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_04_1_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Hedgehog: A small round hedgehog with a pig-like snout and a back covered in many straight, unbarbed spines, in brown and cream natural colours, curled slightly, standing alone on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0152,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          51,
+          1203,
+          622,
+          1707
+        ],
+        "picture_shape": 1.13,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Hedgehog",
+        "shows": "hedgehog",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The hedgehog has a pig-like snout, brown spines with pale tips and no visible barbs, and fur on its face, underside and feet, but spine count and newborn traits cannot be judged.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hedgehog",
+          "https://simple.wikipedia.org/wiki/Hedgehog"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/hedgehog.webp"
+    },
+    "job_2026_11_24_04_1_01_c6": {
+      "thing_id": "aardvark",
+      "expected_thing": "aardvark",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c6.png",
+      "master_size": [
+        834,
+        834
+      ],
+      "master_sha256": "462512725098ab07f139f7e9d467596ca3a9e7eef2f62182c3200447da36ddea",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_04_1_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_04_1_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Aardvark: A stout, pale grey-brown aardvark with a prominently arched back, longer rear legs than front, a greatly elongated snout on a short thick neck, and very long upright ears, standing whole on bare ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0152,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          712,
+          1097,
+          1431,
+          1731
+        ],
+        "picture_shape": 1.13,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Aardvark",
+        "shows": "aardvark",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "no",
+          "no",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "unclear",
+          "yes",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The picture clearly resembles an aardvark, but the visible toe counts and pointed rather than shovel-like nails do not match the listed details.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Aardvark",
+          "https://simple.wikipedia.org/wiki/Aardvark"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "Its front feet have four toes and its rear feet have five.",
+          "Each toe has a large, robust, somewhat flattened shovel-like nail."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/aardvark.webp"
+    },
+    "job_2026_11_24_04_1_01_c7": {
+      "thing_id": "armadillo",
+      "expected_thing": "armadillo",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c7.png",
+      "master_size": [
+        781,
+        781
+      ],
+      "master_sha256": "2a2ec310c339622984a6939cfecc82a9a37de4f53bfd9adf87c2627c7b3debf2",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_04_1_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_04_1_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Armadillo: A small armadillo with short legs, a leathery armored shell over its back, stiff shields over shoulders and hips with bands between them across the back and sides, soft unarmored belly, long sharp claws, pointed snout and a tail, standing on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0152,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1525,
+          1226,
+          2198,
+          1706
+        ],
+        "picture_shape": 1.4,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Armadillo",
+        "shows": "armadillo",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "yes",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The picture clearly shows an armadillo with short legs, banded armor, armored head and tail, and digging claws, but its underside, actual size, and ultraviolet glow cannot be judged.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Armadillo",
+          "https://simple.wikipedia.org/wiki/Armadillo"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/armadillo.webp"
+    },
+    "job_2026_11_24_04_1_01_c8": {
+      "thing_id": "meerkat",
+      "expected_thing": "meerkat",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c8.png",
+      "master_size": [
+        819,
+        819
+      ],
+      "master_sha256": "839e85aa17b9da0d58a1cf497a85b04755310cd0637243971233a545ba51753b",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_04_1_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_04_1_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Meerkat: Draw one small slim mongoose standing upright on its long back legs, thin tapering tail down as a balance prop, not bushy; broad head, large eyes, pointed snout, light grey-brown coat with faint dark bands on the back, small digging foreclaws",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0152,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2286,
+          1023,
+          2700,
+          1729
+        ],
+        "picture_shape": 0.59,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Meerkat",
+        "shows": "meerkat",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "yes",
+          "no",
+          "unclear",
+          "yes",
+          "unclear",
+          "unclear",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The picture clearly shows a slim, upright meerkat with a thin, black-tipped balancing tail, but its underparts appear pale and well furred rather than sparsely covered with dark reddish-brown fur.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Meerkat",
+          "https://simple.wikipedia.org/wiki/Meerkat"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "Its underparts have sparse dark reddish-brown fur with dark skin showing through."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/meerkat.webp"
+    },
+    "job_2026_11_24_04_1_01_c9": {
+      "thing_id": "zebra",
+      "expected_thing": "zebra",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c9.png",
+      "master_size": [
+        849,
+        849
+      ],
+      "master_sha256": "f4bd75c604c3f991440f045bed7308dc0a553e104821ce2caf985deab331db07",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_04_1_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_04_1_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Zebra: A whole zebra standing on plain ground: horse-like body with a long neck and long erect mane, elongated face, thin legs with hard hooves, mostly vertical black-and-white stripes on the body and horizontal stripes on the legs",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0152,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          48,
+          1936,
+          699,
+          2668
+        ],
+        "picture_shape": 0.89,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Zebra",
+        "shows": "zebra",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "unclear",
+          "unclear",
+          "yes",
+          "unclear",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The zebra's defining features are clearly shown, but ear mobility, skin color, the spinal stripe, and stripe-pattern uniqueness cannot be confirmed from this view.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Zebra",
+          "https://simple.wikipedia.org/wiki/Zebra"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/zebra.webp"
+    },
+    "job_2026_11_24_04_1_01_c10": {
+      "thing_id": "deer",
+      "expected_thing": "deer",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c10.png",
+      "master_size": [
+        904,
+        904
+      ],
+      "master_sha256": "8ef44347f8e40895be39473e06e3dab5d3060389a38df57f5242524809d6e76b",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_04_1_01_c10.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_04_1_01",
+      "cell": 10,
+      "style_version": "v1",
+      "prompt": "Deer: A brown deer standing on the ground, whole body, long strong legs, a very small tail, and a male with bony branched antlers on its head (not cow-like horns); no female with antlers",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0152,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          747,
+          1889,
+          1398,
+          2668
+        ],
+        "picture_shape": 0.84,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Deer",
+        "shows": "deer",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The deer has long legs, a short tail, long ears, a brown coat and branched antlers, but facial glands, antler composition and young-deer markings cannot be judged.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Deer",
+          "https://simple.wikipedia.org/wiki/Deer"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/deer.webp"
+    },
+    "job_2026_11_24_04_1_01_c11": {
+      "thing_id": "raccoon",
+      "expected_thing": "raccoon",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c11.png",
+      "master_size": [
+        747,
+        747
+      ],
+      "master_sha256": "5844e9ca01c9616a09722d959a40e88bd89d7741320c28d463c62d0e34e8913d",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_04_1_01_c11.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_04_1_01",
+      "cell": 11,
+      "style_version": "v1",
+      "prompt": "Raccoon: A raccoon standing on the ground: compact body on short legs, grayish-brown fur, pointed nose, small ears, and a bushy tail with alternating light and dark rings; its face has a dark mask around the eyes",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0152,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1460,
+          2157,
+          2104,
+          2657
+        ],
+        "picture_shape": 1.29,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Raccoon",
+        "shows": "raccoon",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "unclear",
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "unclear",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The raccoon’s compact body, pointed muzzle, small ears, facial mask, and ringed tail are visible, but exact measurements and several paw and movement details cannot be confirmed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Raccoon",
+          "https://simple.wikipedia.org/wiki/Raccoon"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/raccoon.webp"
+    },
+    "job_2026_11_24_04_1_01_c12": {
+      "thing_id": null,
+      "expected_thing": "chimpanzee",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c12.png",
+      "master_size": [
+        796,
+        796
+      ],
+      "master_sha256": "311a18e794e693253016f4d0a182f36d8f66f0207fea6b25a87943eabfebdce1",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_04_1_01_c12.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_04_1_01",
+      "cell": 12,
+      "style_version": "v1",
+      "prompt": "Chimpanzee: A whole chimpanzee standing on all four limbs on bare ground: coarse black hair, bare face, fingers and toes, arms longer than its legs, short wide body, long hips wide at the top, rounded head with jutting jaw and strong brow ridge",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0152,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2261,
+          2006,
+          2818,
+          2692
+        ],
+        "picture_shape": 0.81,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Chimpanzee",
+        "shows": "chimpanzee",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "unclear",
+          "yes",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The picture clearly shows a chimpanzee knuckle-walking, but its hip structure, full hand proportions, hidden palms and soles, and actual height cannot be confirmed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Chimpanzee",
+          "https://simple.wikipedia.org/wiki/Chimpanzee"
+        ],
+        "passed": false,
+        "reasons": [
+          "what tells it apart cannot be seen: Its body is short and wide, and its hips are long with a wide top."
+        ],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": false,
+            "reasons": [
+              "what tells it apart cannot be seen: Its body is short and wide, and its hips are long with a wide top."
+            ]
+          },
+          {
+            "passed": false,
+            "reasons": [
+              "what tells it apart cannot be seen: Its body is short and wide, and its hips are long with a wide top."
+            ]
+          }
+        ]
+      }
+    },
+    "job_2026_11_24_04_2_01_c1": {
+      "thing_id": "cheetah",
+      "expected_thing": "cheetah",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_2_01_c1.png",
+      "master_size": [
+        1028,
+        1028
+      ],
+      "master_sha256": "8b5735739aa738c665fded009ade4fc8129bca27ee2bde2058035c4e01849857",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_04_2_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_04_2_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Cheetah: A slim, lightly built cheetah with a small rounded head, short snout, long thin legs and a long spotted tail; tawny fur with evenly spaced solid black spots, not rosettes, and black tear-like streaks from its eyes down to its mouth",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0252,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          35,
+          88,
+          921,
+          824
+        ],
+        "picture_shape": 1.2,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Cheetah",
+        "shows": "cheetah",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "no",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
+          "unclear",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The picture clearly shows a cheetah with solid spots and tear streaks, but its belly and lower legs are marked rather than unmarked white.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cheetah",
+          "https://simple.wikipedia.org/wiki/Cheetah"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "Its chin, throat, belly and the lower parts of its legs are white with no markings."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/cheetah.webp"
+    },
+    "job_2026_11_24_04_2_01_c2": {
+      "thing_id": null,
+      "expected_thing": "chimpanzee",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_2_01_c2.png",
+      "master_size": [
+        898,
+        898
+      ],
+      "master_sha256": "a1ef40382b77d4c02d0f8fead08d5d1ab3684aa516da0ab82dbed1cace68c5eb",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_04_2_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_04_2_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Chimpanzee: A whole chimpanzee standing on all four limbs on bare ground: coarse black hair, bare face, fingers and toes, arms longer than its legs, short wide body, long hips wide at the top, rounded head with jutting jaw and strong brow ridge",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0252,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1068,
+          132,
+          1842,
+          863
+        ],
+        "picture_shape": 1.06,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Chimpanzee",
+        "shows": "chimpanzee",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
+          "unclear",
+          "yes",
+          "yes",
+          "unclear",
+          "unclear",
+          "yes",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The chimpanzee clearly shows long arms, coarse black hair, a projecting jaw and knuckle-supported posture, but its hip shape, hidden hand and foot surfaces, grasping toe and height cannot be confirmed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Chimpanzee",
+          "https://simple.wikipedia.org/wiki/Chimpanzee"
+        ],
+        "passed": false,
+        "reasons": [
+          "what tells it apart cannot be seen: Its body is short and wide, and its hips are long with a wide top."
+        ],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": false,
+            "reasons": [
+              "what tells it apart cannot be seen: Its body is short and wide, and its hips are long with a wide top."
+            ]
+          },
+          {
+            "passed": false,
+            "reasons": [
+              "what tells it apart cannot be seen: Its body is short and wide, and its hips are long with a wide top."
+            ]
+          }
+        ]
+      }
+    },
+    "job_2026_11_24_04_2_01_c3": {
+      "thing_id": null,
+      "expected_thing": "cheetah",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_2_01_c3.png",
+      "master_size": [
+        1031,
+        1031
+      ],
+      "master_sha256": "7032e0cbc6ed72d7ae173689e25ba10bb3c2ce394eb3241e7a6e2dc0050bd6ef",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_04_2_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_04_2_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Cheetah: A slim, lightly built cheetah with a small rounded head, short snout, long thin legs and a long spotted tail; tawny fur with evenly spaced solid black spots, not rosettes, and black tear-like streaks from its eyes down to its mouth; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0252,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          25,
+          1061,
+          914,
+          1798
+        ],
+        "picture_shape": 1.21,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Cheetah",
+        "shows": "cheetah",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_11_24_04_2_01_c1 better",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "no",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
+          "unclear",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The picture clearly shows a cheetah's build, solid spots and tear streaks, but its lower legs are spotted rather than unmarked white, and ear-back markings, claw details and actual size cannot be fully judged.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cheetah",
+          "https://simple.wikipedia.org/wiki/Cheetah"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "Its chin, throat, belly and the lower parts of its legs are white with no markings."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24"
+    },
+    "job_2026_11_24_04_2_01_c4": {
+      "thing_id": null,
+      "expected_thing": "chimpanzee",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_2_01_c4.png",
+      "master_size": [
+        930,
+        930
+      ],
+      "master_sha256": "70c9e95aa143264fc285bf17b2d4857bf6e47eeac2a697df15ea19012f2b845d",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_04_2_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_04_2_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Chimpanzee: A whole chimpanzee standing on all four limbs on bare ground: coarse black hair, bare face, fingers and toes, arms longer than its legs, short wide body, long hips wide at the top, rounded head with jutting jaw and strong brow ridge; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0252,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1053,
+          1094,
+          1855,
+          1832
+        ],
+        "picture_shape": 1.09,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Chimpanzee",
+        "shows": "chimpanzee",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
+          "unclear",
+          "yes",
+          "yes",
+          "unclear",
+          "unclear",
+          "yes",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The picture clearly shows a chimpanzee in a knuckle-walking stance, but its hip structure, full hand and foot details, and height cannot be judged confidently.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Chimpanzee",
+          "https://simple.wikipedia.org/wiki/Chimpanzee"
+        ],
+        "passed": false,
+        "reasons": [
+          "what tells it apart cannot be seen: Its body is short and wide, and its hips are long with a wide top."
+        ],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": false,
+            "reasons": [
+              "what tells it apart cannot be seen: Its body is short and wide, and its hips are long with a wide top."
+            ]
+          },
+          {
+            "passed": false,
+            "reasons": [
+              "what tells it apart cannot be seen: Its body is short and wide, and its hips are long with a wide top."
+            ]
+          }
+        ]
+      }
     }
   }
 }

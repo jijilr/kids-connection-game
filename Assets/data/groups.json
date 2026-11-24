@@ -928,11 +928,11 @@
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3"
         },
         {
-          "text": "These birds find their own food out in the open.",
+          "text": "These birds find their own food and make their own homes outside.",
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3"
         },
         {
-          "text": "You would see these birds flying high or sitting in a tree, far from people.",
+          "text": "You would see these birds flying high or sitting in a tree far from people.",
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3"
         }
       ],
@@ -1085,11 +1085,11 @@
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3"
         },
         {
-          "text": "You can tap or blow or press to make it.",
+          "text": "You can tap, blow or strum to make this sound.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3"
         },
         {
-          "text": "People sing and dance when they hear this sound.",
+          "text": "People move and dance when they hear this sound.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3"
         }
       ],
@@ -1133,6 +1133,53 @@
       "explanation": {
         "text": "These dinosaurs all have horns and a big bony shield on their heads. That is why they go together in one group. Triceratops had three horns on its head, and its name even means three horned face.",
         "audio": "Assets/audio/groups/dinosaur_group__horned__explanation.mp3"
+      }
+    },
+    "what_it_eats=eats_plants": {
+      "clues": [
+        {
+          "text": "Think about the green, leafy food that grows in the ground.",
+          "audio": "Assets/audio/groups/what_it_eats__eats_plants__clue1.mp3"
+        },
+        {
+          "text": "This animal fills its tummy with leaves and grass all day.",
+          "audio": "Assets/audio/groups/what_it_eats__eats_plants__clue2.mp3"
+        },
+        {
+          "text": "It never eats meat or bugs, only green growing things.",
+          "audio": "Assets/audio/groups/what_it_eats__eats_plants__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "All of these animals fill their tummies with leaves and grass. They do not eat other animals. A giraffe is the tallest animal that lives on land.",
+        "audio": "Assets/audio/groups/what_it_eats__eats_plants__explanation.mp3"
+      }
+    },
+    "what_it_eats=eats_meat": {
+      "clues": [],
+      "explanation": {
+        "text": "All of these animals hunt other animals and eat them. They do not eat plants. A cheetah can run very, very fast, as fast as a car on a big road.",
+        "audio": "Assets/audio/groups/what_it_eats__eats_meat__explanation.mp3"
+      }
+    },
+    "what_it_eats=eats_insects": {
+      "clues": [
+        {
+          "text": "Think about tiny crawling things with six legs.",
+          "audio": "Assets/audio/groups/what_it_eats__eats_insects__clue1.mp3"
+        },
+        {
+          "text": "These animals hunt for very small bugs to fill their tummies.",
+          "audio": "Assets/audio/groups/what_it_eats__eats_insects__clue2.mp3"
+        },
+        {
+          "text": "They use long noses or sticky tongues to catch little bugs.",
+          "audio": "Assets/audio/groups/what_it_eats__eats_insects__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These animals all get most of their food by eating little bugs. Their bodies help them find and catch them. An anteater's tongue can be as long as a grown-up's arm, and it uses it to lick up ants.",
+        "audio": "Assets/audio/groups/what_it_eats__eats_insects__explanation.mp3"
       }
     }
   }

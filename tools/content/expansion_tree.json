@@ -2,7 +2,7 @@
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-11-24",
   "dictionary_version": 12,
-  "things": 246,
+  "things": 257,
   "rules": {
     "weights": {
       "nearness": 3,
@@ -43,7 +43,7 @@
       "label": "Everything",
       "steps_from_seed": 0,
       "branch": null,
-      "members": 246,
+      "members": 257,
       "open": true,
       "sorted_by": "kind_of_thing",
       "decisions": [],
@@ -53,7 +53,7 @@
       "label": "Animals",
       "steps_from_seed": 1,
       "branch": "animal",
-      "members": 95,
+      "members": 106,
       "open": true,
       "sorted_by": "kind_of_animal",
       "decisions": [],
@@ -63,7 +63,7 @@
       "label": "Mammals",
       "steps_from_seed": 2,
       "branch": "animal",
-      "members": 21,
+      "members": 32,
       "open": true,
       "sorted_by": "pet_farm_or_wild",
       "decisions": [
@@ -163,18 +163,15 @@
       "label": "Wild animals on land",
       "steps_from_seed": 3,
       "branch": "animal",
-      "members": 6,
+      "members": 17,
       "open": false,
       "sorted_by": "what_it_eats",
       "missing": {
         "field": null,
         "short": {
-          "eats_plants": 2,
-          "eats_meat": 2,
-          "eats_both": 2,
-          "eats_insects": 4
+          "eats_both": 1
         },
-        "things": 10
+        "things": 1
       },
       "decisions": [
         {
@@ -188,9 +185,9 @@
         "nearness": 0.33,
         "neglect": 0.2,
         "unlocks": 0.33,
-        "cheapness": 0.29
+        "cheapness": 0.8
       },
-      "score": 2.8,
+      "score": 3.9,
       "move": "widening",
       "status": "held",
       "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"

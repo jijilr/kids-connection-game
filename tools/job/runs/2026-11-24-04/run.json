@@ -237,7 +237,9 @@
         ]
       },
       "draw": "A grey wolf standing alone on plain ground: large heavy head with wide forehead, powerful jaws and long blunt muzzle, legs a little longer than other wild dogs, thick fluffy mottled white, brown, grey and black coat",
-      "held_as": "held by the rules"
+      "held_as": "held by the rules",
+      "tries": 1,
+      "tile": "job_2026_11_24_04_1_01_c1"
     },
     {
       "name": "Cheetah",
@@ -298,7 +300,10 @@
         ]
       },
       "draw": "A slim, lightly built cheetah with a small rounded head, short snout, long thin legs and a long spotted tail; tawny fur with evenly spaced solid black spots, not rosettes, and black tear-like streaks from its eyes down to its mouth",
-      "held_as": "held by the rules"
+      "held_as": "held by the rules",
+      "tries": 2,
+      "tile": "job_2026_11_24_04_2_01_c1",
+      "no_tile": "no tile of it passed the checks after 1 sheet(s)"
     },
     {
       "name": "Leopard",
@@ -356,7 +361,9 @@
         ]
       },
       "draw": "A whole leopard standing on plain ground: pale yellowish to dark golden fur with dark spots in rosettes, a slender muscular body, relatively short limbs, a broad head, and a ringed tail shorter than its body",
-      "held_as": "held by the rules"
+      "held_as": "held by the rules",
+      "tries": 1,
+      "tile": "job_2026_11_24_04_1_01_c3"
     },
     {
       "name": "Anteater",
@@ -411,7 +418,9 @@
         ]
       },
       "draw": "A giant anteater standing on the ground: thick shaggy fur all over, a very long thin snout, and big claws on the third toe of its front feet, with a long bushy tail",
-      "held_as": "held by the rules"
+      "held_as": "held by the rules",
+      "tries": 1,
+      "tile": "job_2026_11_24_04_1_01_c4"
     },
     {
       "name": "Hedgehog",
@@ -465,7 +474,9 @@
         ]
       },
       "draw": "A small round hedgehog with a pig-like snout and a back covered in many straight, unbarbed spines, in brown and cream natural colours, curled slightly, standing alone on plain ground",
-      "held_as": "held by the rules"
+      "held_as": "held by the rules",
+      "tries": 1,
+      "tile": "job_2026_11_24_04_1_01_c5"
     },
     {
       "name": "Aardvark",
@@ -526,7 +537,9 @@
         ]
       },
       "draw": "A stout, pale grey-brown aardvark with a prominently arched back, longer rear legs than front, a greatly elongated snout on a short thick neck, and very long upright ears, standing whole on bare ground",
-      "held_as": "held by the rules"
+      "held_as": "held by the rules",
+      "tries": 1,
+      "tile": "job_2026_11_24_04_1_01_c6"
     },
     {
       "name": "Armadillo",
@@ -588,7 +601,9 @@
         ]
       },
       "draw": "A small armadillo with short legs, a leathery armored shell over its back, stiff shields over shoulders and hips with bands between them across the back and sides, soft unarmored belly, long sharp claws, pointed snout and a tail, standing on plain ground",
-      "held_as": "held by the rules"
+      "held_as": "held by the rules",
+      "tries": 1,
+      "tile": "job_2026_11_24_04_1_01_c7"
     },
     {
       "name": "Meerkat",
@@ -649,7 +664,9 @@
         ]
       },
       "draw": "Draw one small slim mongoose standing upright on its long back legs, thin tapering tail down as a balance prop, not bushy; broad head, large eyes, pointed snout, light grey-brown coat with faint dark bands on the back, small digging foreclaws",
-      "held_as": "held by the rules"
+      "held_as": "held by the rules",
+      "tries": 1,
+      "tile": "job_2026_11_24_04_1_01_c8"
     },
     {
       "name": "Zebra",
@@ -709,7 +726,9 @@
         ]
       },
       "draw": "A whole zebra standing on plain ground: horse-like body with a long neck and long erect mane, elongated face, thin legs with hard hooves, mostly vertical black-and-white stripes on the body and horizontal stripes on the legs",
-      "held_as": "held by the rules"
+      "held_as": "held by the rules",
+      "tries": 1,
+      "tile": "job_2026_11_24_04_1_01_c9"
     },
     {
       "name": "Deer",
@@ -770,7 +789,9 @@
         ]
       },
       "draw": "A brown deer standing on the ground, whole body, long strong legs, a very small tail, and a male with bony branched antlers on its head (not cow-like horns); no female with antlers",
-      "held_as": "held by the rules"
+      "held_as": "held by the rules",
+      "tries": 1,
+      "tile": "job_2026_11_24_04_1_01_c10"
     },
     {
       "name": "Raccoon",
@@ -828,7 +849,9 @@
         ]
       },
       "draw": "A raccoon standing on the ground: compact body on short legs, grayish-brown fur, pointed nose, small ears, and a bushy tail with alternating light and dark rings; its face has a dark mask around the eyes",
-      "held_as": "held by the rules"
+      "held_as": "held by the rules",
+      "tries": 1,
+      "tile": "job_2026_11_24_04_1_01_c11"
     },
     {
       "name": "Chimpanzee",
@@ -890,11 +913,17 @@
         ]
       },
       "draw": "A whole chimpanzee standing on all four limbs on bare ground: coarse black hair, bare face, fingers and toes, arms longer than its legs, short wide body, long hips wide at the top, rounded head with jutting jaw and strong brow ridge",
-      "held_as": "held by the rules"
+      "held_as": "held by the rules",
+      "tries": 2,
+      "tile": null,
+      "no_tile": "no tile of it passed the checks after 2 sheet(s)"
     }
   ],
-  "sheets": [],
-  "stopped": "the cap: drawing and checking a sheet could cost up to Rs 91, and only Rs 83 of the cap is left",
+  "sheets": [
+    "job_2026_11_24_04_1_01",
+    "job_2026_11_24_04_2_01"
+  ],
+  "stopped": "",
   "fields_added": [
     {
       "circle": "animal/mammal/wild_land",
@@ -936,9 +965,9 @@
     "seed"
   ],
   "spent_usd": {
-    "deepseek": 0.07735,
-    "drawing": 0.0,
-    "picture_checks": 0.0
+    "deepseek": 0.0842,
+    "drawing": 0.283,
+    "picture_checks": 0.09919
   },
   "opened": []
 }

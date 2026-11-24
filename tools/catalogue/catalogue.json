@@ -3129,7 +3129,8 @@
           }
         },
         "no_sentence_for": [
-          "pet_farm_or_wild"
+          "pet_farm_or_wild",
+          "what_it_eats"
         ]
       },
       "worked_out": {
@@ -3234,7 +3235,8 @@
           }
         },
         "no_sentence_for": [
-          "pet_farm_or_wild"
+          "pet_farm_or_wild",
+          "what_it_eats"
         ]
       },
       "worked_out": {
@@ -3339,7 +3341,8 @@
           }
         },
         "no_sentence_for": [
-          "pet_farm_or_wild"
+          "pet_farm_or_wild",
+          "what_it_eats"
         ]
       },
       "worked_out": {
@@ -3443,7 +3446,8 @@
           }
         },
         "no_sentence_for": [
-          "pet_farm_or_wild"
+          "pet_farm_or_wild",
+          "what_it_eats"
         ]
       },
       "worked_out": {
@@ -3850,7 +3854,8 @@
           }
         },
         "no_sentence_for": [
-          "pet_farm_or_wild"
+          "pet_farm_or_wild",
+          "what_it_eats"
         ]
       },
       "worked_out": {
@@ -3955,7 +3960,8 @@
           }
         },
         "no_sentence_for": [
-          "pet_farm_or_wild"
+          "pet_farm_or_wild",
+          "what_it_eats"
         ]
       },
       "worked_out": {
@@ -27945,6 +27951,57 @@
         "checked_by_ear": false,
         "clip": null,
         "cached": "tools/voice/clips/chasmosaurus.mp3"
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Chasmosaurus",
+            "title": "Chasmosaurus",
+            "asked_for": "Chasmosaurus",
+            "revision": 1374377095,
+            "fetched_on": "2026-11-24",
+            "sha256": "d251448655c862a0c5da4630178a165cd8a221f1dec00e8a021f3e1dc9833bdd"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Chasmosaurus",
+            "title": "Chasmosaurus",
+            "asked_for": "Chasmosaurus",
+            "revision": 10181706,
+            "fetched_on": "2026-11-24",
+            "sha256": "5f9312c9773ef4bf20251a1394649d3ed4ad291b51108b2645c9ab46f076382e"
+          }
+        ],
+        "facts": "tools/research/out/facts/chasmosaurus.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Chasmosaurus was a rhinoceros-like dinosaur, similar to a triceratops, but smaller, the order of bird-hipped, herbivorous dinosaurs."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Chasmosaurus was a rhinoceros-like dinosaur, similar to a triceratops, but smaller, the order of bird-hipped, herbivorous dinosaurs."
+          },
+          "dinosaur_academic": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Chasmosaurus ( KAZ-moh-SOR-əs) is a genus of ceratopsid dinosaur from the Late Cretaceous Period in North America."
+          },
+          "kind_of_dinosaur": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "It was a member of the suborder Marginocephalia, and the family of large, horned, herding herbivores, the ceratopsians."
+          },
+          "dinosaur_group": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "It was a member of the suborder Marginocephalia, and the family of large, horned, herding herbivores, the ceratopsians."
+          }
+        },
+        "no_sentence_for": []
       }
     },
     "pachyrhinosaurus": {
@@ -27975,6 +28032,57 @@
         "checked_by_ear": false,
         "clip": null,
         "cached": "tools/voice/clips/pachyrhinosaurus.mp3"
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Pachyrhinosaurus",
+            "title": "Pachyrhinosaurus",
+            "asked_for": "Pachyrhinosaurus",
+            "revision": 1382109316,
+            "fetched_on": "2026-11-24",
+            "sha256": "317812ffd6ca0701c3c0c4bb8258087c9eb7912390e9510ab4ca8c03028530a7"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Pachyrhinosaurus",
+            "title": "Pachyrhinosaurus",
+            "asked_for": "Pachyrhinosaurus",
+            "revision": 7639250,
+            "fetched_on": "2026-11-24",
+            "sha256": "f191be5f9de5f76b0862447b8ca0a9a4a5bec149fa5c9276137e876c6c5f42af"
+          }
+        ],
+        "facts": "tools/research/out/facts/pachyrhinosaurus.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Pachyrhinosaurus was a large, plant-eating dinosaur that had a bony, spiked neck frill, four short legs, and a short tail."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Pachyrhinosaurus was a large, plant-eating dinosaur that had a bony, spiked neck frill, four short legs, and a short tail."
+          },
+          "dinosaur_academic": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Pachyrhinosaurus (from Ancient Greek παχύς (pachys), thick; ῥίς (rhis), nose; and σαυρος (sauros), lizard) is a genus of centrosaurine ceratopsid dinosaur from the Late Cretaceous period of North America."
+          },
+          "kind_of_dinosaur": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Pachyrhinosaurus was a large, plant-eating dinosaur that had a bony, spiked neck frill, four short legs, and a short tail."
+          },
+          "dinosaur_group": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Pachyrhinosaurus was a short-frilled ceratopsian dinosaur that was 18 to 23 feet (5.5 to 7 m) long."
+          }
+        },
+        "no_sentence_for": []
       }
     },
     "centrosaurus": {
@@ -28005,6 +28113,56 @@
         "checked_by_ear": false,
         "clip": null,
         "cached": "tools/voice/clips/centrosaurus.mp3"
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Centrosaurus",
+            "title": "Centrosaurus",
+            "asked_for": "Centrosaurus",
+            "revision": 1341159086,
+            "fetched_on": "2026-11-24",
+            "sha256": "e1ab97439021ae5965b37de6b111f2678a2b9d672dbd02506d10c71f38c33dd3"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Centrosaurus",
+            "title": "Centrosaurus",
+            "asked_for": "Centrosaurus",
+            "revision": 10717720,
+            "fetched_on": "2026-11-24",
+            "sha256": "326b2432720c7aa0faca55eb243a2573911d5d79bd8df4a43b418229ea22ed0b"
+          }
+        ],
+        "facts": "tools/research/out/facts/centrosaurus.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Centrosaurus is a genus of herbivorous ceratopsian dinosaurs from the Upper Cretaceous of Canada."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Centrosaurus is a genus of herbivorous ceratopsian dinosaurs from the Upper Cretaceous of Canada."
+          },
+          "dinosaur_academic": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Centrosaurus ( SEN-troh-SOR-əs; lit. 'pointed lizard') is a genus of centrosaurine ceratopsid dinosaur from the Campanian age of the Late Cretaceous of Canada."
+          },
+          "kind_of_dinosaur": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Centrosaurus is a genus of herbivorous ceratopsian dinosaurs from the Upper Cretaceous of Canada."
+          },
+          "dinosaur_group": {
+            "basis": "judged, not sourced",
+            "why": "The sources call Centrosaurus a ceratopsid/ceratopsian, the group commonly known as horned and frilled dinosaurs."
+          }
+        },
+        "no_sentence_for": []
       }
     },
     "euoplocephalus": {
@@ -28035,6 +28193,57 @@
         "checked_by_ear": false,
         "clip": null,
         "cached": "tools/voice/clips/euoplocephalus.mp3"
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Euoplocephalus",
+            "title": "Euoplocephalus",
+            "asked_for": "Euoplocephalus",
+            "revision": 1377846331,
+            "fetched_on": "2026-11-24",
+            "sha256": "b38577b72ac0d2b0ea892dc54be8f90f37c1640ccaee5787910ad5702428a823"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Euoplocephalus",
+            "title": "Euoplocephalus",
+            "asked_for": "Euoplocephalus",
+            "revision": 10128249,
+            "fetched_on": "2026-11-24",
+            "sha256": "b58c186e3bb222d18fd4163f92c9b85866ef30a7562da2c24eaaf498bef0e980"
+          }
+        ],
+        "facts": "tools/research/out/facts/euoplocephalus.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Euoplocephalus ( yoo-OP-loh-SEF-ə-ləs) is a genus of large herbivorous ankylosaurid dinosaurs, living during the Late Cretaceous of Canada."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Euoplocephalus ( yoo-OP-loh-SEF-ə-ləs) is a genus of large herbivorous ankylosaurid dinosaurs, living during the Late Cretaceous of Canada."
+          },
+          "dinosaur_academic": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Euoplocephalus ( yoo-OP-loh-SEF-ə-ləs) is a genus of large herbivorous ankylosaurid dinosaurs, living during the Late Cretaceous of Canada."
+          },
+          "kind_of_dinosaur": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Its head had a short drooping snout with a horny beak to bite off plants that were digested in the large gut."
+          },
+          "dinosaur_group": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Like other ankylosaurids, Euoplocephalus was largely covered by bony armor plates, among them rows of large high-ridged oval scutes."
+          }
+        },
+        "no_sentence_for": []
       }
     },
     "kentrosaurus": {
@@ -28065,6 +28274,57 @@
         "checked_by_ear": false,
         "clip": null,
         "cached": "tools/voice/clips/kentrosaurus.mp3"
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Kentrosaurus",
+            "title": "Kentrosaurus",
+            "asked_for": "Kentrosaurus",
+            "revision": 1380979988,
+            "fetched_on": "2026-11-24",
+            "sha256": "b1d4a009f8c26eb5da82cb4b630609f63f72b493d1685ebaddbc4c0b6c3cdf23"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Kentrosaurus",
+            "title": "Kentrosaurus",
+            "asked_for": "Kentrosaurus",
+            "revision": 10717700,
+            "fetched_on": "2026-11-24",
+            "sha256": "6b2557601f7f507fbc72715dd769074cfea54d09989b082244470f7778954a5e"
+          }
+        ],
+        "facts": "tools/research/out/facts/kentrosaurus.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Kentrosaurus ( KEN-troh-SOR-əs; lit. 'prickle lizard') is a genus of stegosaurid dinosaur from the Late Jurassic in Lindi Region of Tanzania."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Kentrosaurus ( KEN-troh-SOR-əs; lit. 'prickle lizard') is a genus of stegosaurid dinosaur from the Late Jurassic in Lindi Region of Tanzania."
+          },
+          "dinosaur_academic": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Kentrosaurus ( KEN-troh-SOR-əs; lit. 'prickle lizard') is a genus of stegosaurid dinosaur from the Late Jurassic in Lindi Region of Tanzania."
+          },
+          "kind_of_dinosaur": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "It had a small, elongated head with a beak used to bite off plant material that would be digested in a large gut."
+          },
+          "dinosaur_group": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "It had a, probably double, row of small plates running down its neck and back."
+          }
+        },
+        "no_sentence_for": []
       }
     },
     "nodosaurus": {
@@ -28269,6 +28529,57 @@
         "checked_by_ear": false,
         "clip": null,
         "cached": "tools/voice/clips/stygimoloch.mp3"
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Stygimoloch",
+            "title": "Stygimoloch",
+            "asked_for": "Stygimoloch",
+            "revision": 1379706296,
+            "fetched_on": "2026-11-24",
+            "sha256": "76bce948253cbf9a49d10d74f010928ef7091365b952a0b3f272aef3e453f323"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Stygimoloch",
+            "title": "Stygimoloch",
+            "asked_for": "Stygimoloch",
+            "revision": 10974226,
+            "fetched_on": "2026-11-24",
+            "sha256": "7746a86b1b7b6a1129ceb0592542ea05a92002ba2f020fd9204b8c71a3634aaf"
+          }
+        ],
+        "facts": "tools/research/out/facts/stygimoloch.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Stygimoloch is a dubious genus of herbivorous dinosaur."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Stygimoloch is a dubious genus of herbivorous dinosaur."
+          },
+          "dinosaur_academic": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Stygimoloch is a disputed genus of pachycephalosaur (dome-headed dinosaur) from the end of the Cretaceous period, roughly 66 million years ago."
+          },
+          "kind_of_dinosaur": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Like other pachycephalosaurids, Stygimoloch was a bipedal herbivore with short forelimbs and a thick, domed skull, likely used in intraspecific head-butting."
+          },
+          "dinosaur_group": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Stygimoloch is a disputed genus of pachycephalosaur (dome-headed dinosaur) from the end of the Cretaceous period, roughly 66 million years ago."
+          }
+        },
+        "no_sentence_for": []
       }
     },
     "stegoceras": {
@@ -28418,11 +28729,7 @@
     },
     "wolf": {
       "name": "Wolf",
-      "status": "held by the rules",
-      "status_why": [
-        "no tile of it passed the checks"
-      ],
-      "held_from": "job:2026-11-24-04",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "mammal",
@@ -28431,22 +28738,110 @@
         "what_it_eats": "eats_meat"
       },
       "familiar": 0.95,
+      "reviewed": 12,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-04",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "animal",
           "animal/mammal",
           "animal/mammal/wild_land"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "mammal",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal",
+            "sorted_by": "pet_farm_or_wild",
+            "group": "wild_land",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_04_1_01_c1",
+        "game_file": "Assets/pictures/wolf.webp",
+        "game_sha256": "b8ef06c34e729f075383705401a84498e62fbcd46d20dca1f9e864c92c247e32",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c1.png",
+        "master_sha256": "49ec5ff1f4adc8e92806427abac2c87be58cc8bb0e5e135dac255f19e28b76f0",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Wolf",
+            "title": "Wolf",
+            "asked_for": "Wolf",
+            "revision": 1387456408,
+            "fetched_on": "2026-11-24",
+            "sha256": "b177e99defc50057099878b36eaceaef7e4c7f48865460001e1a10af7e0a84fa"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Wolf",
+            "title": "Wolf",
+            "asked_for": "Wolf",
+            "revision": 10972266,
+            "fetched_on": "2026-11-24",
+            "sha256": "9c6045611f0f76d700764dd05ca92b62d40511b3711c7a9432b4aa4335c5356a"
+          }
+        ],
+        "facts": "tools/research/out/facts/wolf.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "The wolf (Canis lupus) is a wild dog of the order Carnivora."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The wolf (Canis lupus; pl.: wolves), also known as the grey wolf or gray wolf, is a canine native to Eurasia and North America."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The global wild grey wolf population is estimated to be 300,000 and has been assessed as Least Concern by the International Union for Conservation of Nature (IUCN)."
+          },
+          "pet_farm_or_wild": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "The wolf (Canis lupus) is a wild dog of the order Carnivora."
+          },
+          "what_it_eats": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe the wolf as a carnivore and apex predator that feeds on large hooved mammals and other animals."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Wolf",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_wolf.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/wolf.mp3",
+        "clip_sha256": "2258905de0cec85b9fb6b4e72dc79edff3bb66d36938aa8e7a94d4453673f083"
       }
     },
     "cheetah": {
       "name": "Cheetah",
-      "status": "held by the rules",
-      "status_why": [
-        "no tile of it passed the checks"
-      ],
-      "held_from": "job:2026-11-24-04",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "mammal",
@@ -28455,22 +28850,111 @@
         "what_it_eats": "eats_meat"
       },
       "familiar": 0.9,
+      "reviewed": 12,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-04",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "animal",
           "animal/mammal",
           "animal/mammal/wild_land"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "mammal",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal",
+            "sorted_by": "pet_farm_or_wild",
+            "group": "wild_land",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_04_2_01_c1",
+        "game_file": "Assets/pictures/cheetah.webp",
+        "game_sha256": "90496eba6bc6aa7093c014f285f08b5f92e124cbb220b1cfe8bafe524477361c",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_2_01_c1.png",
+        "master_sha256": "59ccd6118a05935c2af3a407b6eb18163852b347c0748368f69a0c2d61cdf264",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 2
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Cheetah",
+            "title": "Cheetah",
+            "asked_for": "Cheetah",
+            "revision": 1387302607,
+            "fetched_on": "2026-11-24",
+            "sha256": "356f229900396bd887d78426d983256eb40e636dfbd448e9906ab194a23eef80"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Cheetah",
+            "title": "Cheetah",
+            "asked_for": "Cheetah",
+            "revision": 10906678,
+            "fetched_on": "2026-11-24",
+            "sha256": "28935820e95f579975d39cba11078acf96ecfe348dc6fa68759e353ce49a0088"
+          }
+        ],
+        "facts": "tools/research/out/facts/cheetah.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The cheetah (Acinonyx jubatus) is a species of large feline and the only living member of the genus Acinonyx."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A cheetah (Acinonyx jubatus) is a medium large cat which lives in Africa and Asia."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "It is now distributed mainly in small, fragmented populations in northwestern, eastern and southern Africa and central Iran."
+          },
+          "pet_farm_or_wild": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "It lives in a variety of habitats such as savannahs in the Serengeti, arid mountain ranges in the Sahara, and hilly desert terrain."
+          },
+          "what_it_eats": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "It feeds on small- to medium-sized prey, mostly weighing under 40 kg (88 lb), and prefers medium-sized ungulates such as impala, springbok and Thomson's gazelles."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Cheetah",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_cheetah.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/cheetah.mp3",
+        "clip_sha256": "6ea0a788c41e2953ae7b6acb7653939ea61f33c061dc00dc948ffa23cbb5738b"
       }
     },
     "leopard": {
       "name": "Leopard",
-      "status": "held by the rules",
-      "status_why": [
-        "no tile of it passed the checks"
-      ],
-      "held_from": "job:2026-11-24-04",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "mammal",
@@ -28479,22 +28963,111 @@
         "what_it_eats": "eats_meat"
       },
       "familiar": 0.9,
+      "reviewed": 12,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-04",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "animal",
           "animal/mammal",
           "animal/mammal/wild_land"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "mammal",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal",
+            "sorted_by": "pet_farm_or_wild",
+            "group": "wild_land",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_04_1_01_c3",
+        "game_file": "Assets/pictures/leopard.webp",
+        "game_sha256": "e226daeaa5f994f91154d8c759dac319600058edd472a3a14ff580728f6b7302",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c3.png",
+        "master_sha256": "100c0ad470bb51db2f4b659cc498eb2cd214e5f5ab0a746783fb42b4c460d326",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Leopard",
+            "title": "Leopard",
+            "asked_for": "Leopard",
+            "revision": 1387276203,
+            "fetched_on": "2026-11-24",
+            "sha256": "21ce9fae83353e32304b12c815a924dbf5cf9bcfb1f92c19c8470b2a685d6904"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Leopard",
+            "title": "Leopard",
+            "asked_for": "Leopard",
+            "revision": 10963854,
+            "fetched_on": "2026-11-24",
+            "sha256": "9eeafec064a3c41d3e0aef205069f300860428e3b41d18b64f2a18e5a8adbd4b"
+          }
+        ],
+        "facts": "tools/research/out/facts/leopard.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The leopard (Panthera pardus) is one of the five extant cat species in the genus Panthera."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The leopard (Panthera pardus) is one of the five extant cat species in the genus Panthera."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The leopard (Panthera pardus) is one of the five extant cat species in the genus Panthera."
+          },
+          "pet_farm_or_wild": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "It is a solitary animal outside the mating season and when raising cubs."
+          },
+          "what_it_eats": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "It is an opportunistic predator, hunting mostly hooved mammals and primates."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Leopard",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_leopard.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/leopard.mp3",
+        "clip_sha256": "bcb6563d3aeeb6cdee428d7dc9de99ec76a8f1b5a0500e35fed40dc39013b66f"
       }
     },
     "anteater": {
       "name": "Anteater",
-      "status": "held by the rules",
-      "status_why": [
-        "no tile of it passed the checks"
-      ],
-      "held_from": "job:2026-11-24-04",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "mammal",
@@ -28503,22 +29076,110 @@
         "what_it_eats": "eats_insects"
       },
       "familiar": 0.6,
+      "reviewed": 12,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-04",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "animal",
           "animal/mammal",
           "animal/mammal/wild_land"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "mammal",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal",
+            "sorted_by": "pet_farm_or_wild",
+            "group": "wild_land",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_04_1_01_c4",
+        "game_file": "Assets/pictures/anteater.webp",
+        "game_sha256": "ab4d757dcdafd68ac05f859310b9ff419e1b4a81bdcad04ec69f96b6f42c192b",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c4.png",
+        "master_sha256": "d6a65c09ec7851605a750aa0da67c607d5c9f17665d8738f14f3aca3fb03b5a7",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Anteater",
+            "title": "Anteater",
+            "asked_for": "Anteater",
+            "revision": 1384945180,
+            "fetched_on": "2026-11-24",
+            "sha256": "6776cca74d5474a0ada21f1e2fe9870b1c970f795073d49d7ad9f608c021a78d"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Anteater",
+            "title": "Anteater",
+            "asked_for": "Anteater",
+            "revision": 10726623,
+            "fetched_on": "2026-11-24",
+            "sha256": "6ecb98bb2c4185c5e3190b1a5d69f354724d2587ef6561b6b627f5b40ab2801d"
+          }
+        ],
+        "facts": "tools/research/out/facts/anteater.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Anteaters are the four extant mammal species in the suborder Vermilingua (meaning 'worm tongue'), commonly known for eating ants and termites."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "An anteater is a mammal of the family Myrmecophagidae and the suborder Vermilingua."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Anteaters are the four extant mammal species in the suborder Vermilingua (meaning 'worm tongue'), commonly known for eating ants and termites."
+          },
+          "pet_farm_or_wild": {
+            "basis": "judged, not sourced",
+            "why": "Anteaters are wild mammals that live in South and Central America, not pets or farm animals."
+          },
+          "what_it_eats": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Anteaters eat ants and termites."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Anteater",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_anteater.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/anteater.mp3",
+        "clip_sha256": "6524436f40f7b130d0bfe07ea419eeea37a71a07197e1af81ab627d118a8824a"
       }
     },
     "hedgehog": {
       "name": "Hedgehog",
-      "status": "held by the rules",
-      "status_why": [
-        "no tile of it passed the checks"
-      ],
-      "held_from": "job:2026-11-24-04",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "mammal",
@@ -28527,22 +29188,111 @@
         "what_it_eats": "eats_insects"
       },
       "familiar": 0.7,
+      "reviewed": 12,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-04",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "animal",
           "animal/mammal",
           "animal/mammal/wild_land"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "mammal",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal",
+            "sorted_by": "pet_farm_or_wild",
+            "group": "wild_land",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_04_1_01_c5",
+        "game_file": "Assets/pictures/hedgehog.webp",
+        "game_sha256": "e1257c22ccb9262cb2d94e4a190a3a31aefc337635f8d192d0bda3276a6cdcaa",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c5.png",
+        "master_sha256": "a56d7c3472476ccaf83b19410ae1b1104e6b54c8695e6e34b646adab2db06a83",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Hedgehog",
+            "title": "Hedgehog",
+            "asked_for": "Hedgehog",
+            "revision": 1379774013,
+            "fetched_on": "2026-11-24",
+            "sha256": "aa71e75f0b31d86038748f6b337c9bf8f9bdd3f50780fedf2f4b9b38f96dea6b"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Hedgehog",
+            "title": "Hedgehog",
+            "asked_for": "Hedgehog",
+            "revision": 10620091,
+            "fetched_on": "2026-11-24",
+            "sha256": "def51ef364ee627209f2e46c224a766bb7dd00c7b705b4a7441db5d02c794c7d"
+          }
+        ],
+        "facts": "tools/research/out/facts/hedgehog.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A  hedgehog  is a spiny mammal of the subfamily Erinaceinae, in the eulipotyphlan family Erinaceidae."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A  hedgehog  is a spiny mammal of the subfamily Erinaceinae, in the eulipotyphlan family Erinaceidae."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "There are 17 species of hedgehog in five genera found throughout parts of Europe, Asia, and Africa, and in New Zealand by introduction."
+          },
+          "pet_farm_or_wild": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "There are 17 species of hedgehog in five genera found throughout parts of Europe, Asia, and Africa, and in New Zealand by introduction."
+          },
+          "what_it_eats": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Hedgehogs eat insects, snails, frogs and toads, snakes, bird eggs, carrion, mushrooms, berries and melons."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Hedgehog",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_hedgehog.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/hedgehog.mp3",
+        "clip_sha256": "78b01c7010ab095483a5a0e629886df3dadc2cb6d014999de39449f1685cf7e7"
       }
     },
     "aardvark": {
       "name": "Aardvark",
-      "status": "held by the rules",
-      "status_why": [
-        "no tile of it passed the checks"
-      ],
-      "held_from": "job:2026-11-24-04",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "mammal",
@@ -28551,22 +29301,110 @@
         "what_it_eats": "eats_insects"
       },
       "familiar": 0.4,
+      "reviewed": 12,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-04",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "animal",
           "animal/mammal",
           "animal/mammal/wild_land"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "mammal",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal",
+            "sorted_by": "pet_farm_or_wild",
+            "group": "wild_land",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_04_1_01_c6",
+        "game_file": "Assets/pictures/aardvark.webp",
+        "game_sha256": "9acb6e22572e8198beda16f0c3acd46d381223ee53338fb71f1559600638aaa6",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c6.png",
+        "master_sha256": "3e472227d992cc9569b6c5063605ab0c5d9ab0f825001090d8597fcadc429a68",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Aardvark",
+            "title": "Aardvark",
+            "asked_for": "Aardvark",
+            "revision": 1387319386,
+            "fetched_on": "2026-11-24",
+            "sha256": "f865db1c7c61eb7e55223483d8d647862bd21871c58bc943f32fb9912dc0dd32"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Aardvark",
+            "title": "Aardvark",
+            "asked_for": "Aardvark",
+            "revision": 10916573,
+            "fetched_on": "2026-11-24",
+            "sha256": "f15ad6ddfb591b0daf2b4493e715d6c8f04cb1566819b2f9c4fa59247274a8f4"
+          }
+        ],
+        "facts": "tools/research/out/facts/aardvark.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The aardvark ( ; Orycteropus afer) is a medium-sized, burrowing, nocturnal mammal native to Africa."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The aardvark ( ; Orycteropus afer) is a medium-sized, burrowing, nocturnal mammal native to Africa."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The aardvark is the only living member of the genus Orycteropus, the family Orycteropodidae and the order Tubulidentata."
+          },
+          "pet_farm_or_wild": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe the aardvark as a nocturnal burrowing mammal native to Africa that lives in the wild, not as a pet or farm animal."
+          },
+          "what_it_eats": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A nocturnal feeder, the aardvark subsists on ants and termites (myrmecophagy) by using its sharp claws and powerful legs to dig the insects out of their hills, and its long snout to sniff out food."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Aardvark",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_aardvark.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/aardvark.mp3",
+        "clip_sha256": "ce387a47018ab7f04e2ffa866a1d9d5bd3d8930a8e1d967e33c4dd25c3713ada"
       }
     },
     "armadillo": {
       "name": "Armadillo",
-      "status": "held by the rules",
-      "status_why": [
-        "no tile of it passed the checks"
-      ],
-      "held_from": "job:2026-11-24-04",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "mammal",
@@ -28575,22 +29413,110 @@
         "what_it_eats": "eats_insects"
       },
       "familiar": 0.6,
+      "reviewed": 12,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-04",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "animal",
           "animal/mammal",
           "animal/mammal/wild_land"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "mammal",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal",
+            "sorted_by": "pet_farm_or_wild",
+            "group": "wild_land",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_04_1_01_c7",
+        "game_file": "Assets/pictures/armadillo.webp",
+        "game_sha256": "a39bd393b6cd72b58c20bf0e122b99b51d13f0ea592683b4001c45e32c57f966",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c7.png",
+        "master_sha256": "e433a292f4ef62d96ee38085c29dc6a98271f6e0bc3b825c10efa68875c71e47",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Armadillo",
+            "title": "Armadillo",
+            "asked_for": "Armadillo",
+            "revision": 1384047661,
+            "fetched_on": "2026-11-24",
+            "sha256": "5c326140ddb29adc0b91933252d196ac590a415bc3f2b6d74e0f49bf8fbd6dc9"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Armadillo",
+            "title": "Armadillo",
+            "asked_for": "Armadillo",
+            "revision": 10378110,
+            "fetched_on": "2026-11-24",
+            "sha256": "3a26e7dadaf2e5a23e26e6e9b117d49d4519de90972d2ac11e1d81fdf07f84f9"
+          }
+        ],
+        "facts": "tools/research/out/facts/armadillo.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Armadillos (Spanish for 'little armored ones') are placental mammals in the order Cingulata."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Armadillos (Spanish for 'little armored ones') are placental mammals in the order Cingulata."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Twenty-one extant species of armadillo have been described, some of which are distinguished by the number of bands on their armor."
+          },
+          "pet_farm_or_wild": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "All species are native to the Americas, where they inhabit a variety of environments."
+          },
+          "what_it_eats": {
+            "basis": "judged, not sourced",
+            "why": "Armadillos are commonly known to feed mainly on insects, though the sources themselves do not state their diet."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Armadillo",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_armadillo.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/armadillo.mp3",
+        "clip_sha256": "11796c6fd4c38dea1143cc0364dd4c6a9bbd99603db7f05ee9af1b5449630419"
       }
     },
     "meerkat": {
       "name": "Meerkat",
-      "status": "held by the rules",
-      "status_why": [
-        "no tile of it passed the checks"
-      ],
-      "held_from": "job:2026-11-24-04",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "mammal",
@@ -28599,22 +29525,111 @@
         "what_it_eats": "eats_insects"
       },
       "familiar": 0.7,
+      "reviewed": 12,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-04",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "animal",
           "animal/mammal",
           "animal/mammal/wild_land"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "mammal",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal",
+            "sorted_by": "pet_farm_or_wild",
+            "group": "wild_land",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_04_1_01_c8",
+        "game_file": "Assets/pictures/meerkat.webp",
+        "game_sha256": "f0c781e28701457d4e664ed42e993383477c1bd0817ad7dc4176d7bfb905bc0b",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c8.png",
+        "master_sha256": "39c406db9145cbb654d96ee17043621043472307dab9bf77a4e54a5a61a7d44f",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Meerkat",
+            "title": "Meerkat",
+            "asked_for": "Meerkat",
+            "revision": 1387420429,
+            "fetched_on": "2026-11-24",
+            "sha256": "18df41f5115465e1fa5c792d6e382b87f78314643ccb7fd98faae3132e61ac4c"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Meerkat",
+            "title": "Meerkat",
+            "asked_for": "Meerkat",
+            "revision": 10857547,
+            "fetched_on": "2026-11-24",
+            "sha256": "06b3c3b0273bd051c1c0fae7d6b7fed808c0fa1605aba351eb5cfa4b6c4abf78"
+          }
+        ],
+        "facts": "tools/research/out/facts/meerkat.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A meerkat (Suricata suricatta) is a small mammal that lives in the Kalahari Desert in southern Africa."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A meerkat (Suricata suricatta) is a small mammal that lives in the Kalahari Desert in southern Africa."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A meerkat (Suricata suricatta) is a small mammal that lives in the Kalahari Desert in southern Africa."
+          },
+          "pet_farm_or_wild": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Commonly living in arid, open habitats with little woody vegetation, meerkats occur in southwestern Botswana, western and southern Namibia, and northern and western South Africa; the range barely extends into southwestern Angola."
+          },
+          "what_it_eats": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Primarily insectivorous, meerkats feed heavily on beetles and lepidopterans, arthropods, amphibians, small birds, reptiles, and plants."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Meerkat",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_meerkat.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/meerkat.mp3",
+        "clip_sha256": "812a626a787ba62ed8d0b2c9b709185a71bb68c2857f771572641ea9b44b7994"
       }
     },
     "zebra": {
       "name": "Zebra",
-      "status": "held by the rules",
-      "status_why": [
-        "no tile of it passed the checks"
-      ],
-      "held_from": "job:2026-11-24-04",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "mammal",
@@ -28623,22 +29638,111 @@
         "what_it_eats": "eats_plants"
       },
       "familiar": 0.95,
+      "reviewed": 12,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-04",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "animal",
           "animal/mammal",
           "animal/mammal/wild_land"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "mammal",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal",
+            "sorted_by": "pet_farm_or_wild",
+            "group": "wild_land",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_04_1_01_c9",
+        "game_file": "Assets/pictures/zebra.webp",
+        "game_sha256": "c27398df6b906b1b36e85c9c697067ff5fadbd9f0f413ba8fe8bdea08d9e0f77",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c9.png",
+        "master_sha256": "83dad91dad4f68ac495f1f1f68fd946477a0901fb8e2e852ce192c05cc51ce2a",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Zebra",
+            "title": "Zebra",
+            "asked_for": "Zebra",
+            "revision": 1385573374,
+            "fetched_on": "2026-11-24",
+            "sha256": "ae53af2e6088e915a637e3a4f14ebc8a0a0c80a8bdd1be220eeb89ba68949885"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Zebra",
+            "title": "Zebra",
+            "asked_for": "Zebra",
+            "revision": 11039018,
+            "fetched_on": "2026-11-24",
+            "sha256": "bcf8f834b6ffbe5b4ca5e60132d4aff061bd4eb9b941dcf11c479cea863b41bd"
+          }
+        ],
+        "facts": "tools/research/out/facts/zebra.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Zebras are mammals of the family Equidae."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Zebras are mammals of the family Equidae."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "There are three living species: Grévy's zebra (Equus grevyi), the plains zebra (E. quagga), and the mountain zebra (E. zebra)."
+          },
+          "pet_farm_or_wild": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Zebras inhabit eastern and southern Africa and can be found in a variety of habitats such as savannahs, grasslands, woodlands, shrublands, and mountainous areas."
+          },
+          "what_it_eats": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Zebras are primarily grazers and can subsist on lower-quality vegetation."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Zebra",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_zebra.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/zebra.mp3",
+        "clip_sha256": "8b7c95330d8cfafa2b6a8c50dee40648bd8603693825184ca1ec40192a6c22f0"
       }
     },
     "deer": {
       "name": "Deer",
-      "status": "held by the rules",
-      "status_why": [
-        "no tile of it passed the checks"
-      ],
-      "held_from": "job:2026-11-24-04",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "mammal",
@@ -28647,22 +29751,109 @@
         "what_it_eats": "eats_plants"
       },
       "familiar": 0.9,
+      "reviewed": 12,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-04",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "animal",
           "animal/mammal",
           "animal/mammal/wild_land"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "mammal",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal",
+            "sorted_by": "pet_farm_or_wild",
+            "group": "wild_land",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_04_1_01_c10",
+        "game_file": "Assets/pictures/deer.webp",
+        "game_sha256": "789a4641faa3744c28ccf6166c04e7a11cfb684c4b0c33ef3625174412482956",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c10.png",
+        "master_sha256": "547ee5894337dd6cb187b1d4b7817d06ab467570efe36166d43b58a1b9ac77a9",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Deer",
+            "title": "Deer",
+            "asked_for": "Deer",
+            "revision": 1387138168,
+            "fetched_on": "2026-11-24",
+            "sha256": "c652c938c42e969fb9ba3f175edbe6c192021b5a4ef40abfebe5def7a4356249"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Deer",
+            "title": "Deer",
+            "asked_for": "Deer",
+            "revision": 10439642,
+            "fetched_on": "2026-11-24",
+            "sha256": "0321e4b5652a063d5cccf49cb478fe9b435e757b7d18ebebefdb6d104a0e23c4"
+          }
+        ],
+        "facts": "tools/research/out/facts/deer.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A deer is a even-toed ungulate mammal in the family Cervidae."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A deer is a even-toed ungulate mammal in the family Cervidae."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "They originally lived in the Northern Hemisphere, and now are native to Europe, Asia, North America and South America."
+          },
+          "pet_farm_or_wild": {
+            "basis": "judged, not sourced",
+            "why": "Deer are wild mammals that live in forests and other natural habitats, not pets or farm animals."
+          },
+          "what_it_eats": {
+            "basis": "judged, not sourced",
+            "why": "Deer are described as hoofed ruminant ungulates, and ruminants like deer are commonly known to eat plants such as grass and leaves."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Deer",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_deer.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/deer.mp3",
+        "clip_sha256": "75be2bdf961179e0a31894e30e0708e761864d22ba08fa436e8636cf7b8aa2a7"
       }
     },
     "raccoon": {
       "name": "Raccoon",
-      "status": "held by the rules",
-      "status_why": [
-        "no tile of it passed the checks"
-      ],
-      "held_from": "job:2026-11-24-04",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "mammal",
@@ -28671,20 +29862,113 @@
         "what_it_eats": "eats_both"
       },
       "familiar": 0.85,
+      "reviewed": 12,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-04",
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "animal",
           "animal/mammal",
           "animal/mammal/wild_land"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "mammal",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal",
+            "sorted_by": "pet_farm_or_wild",
+            "group": "wild_land",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_04_1_01_c11",
+        "game_file": "Assets/pictures/raccoon.webp",
+        "game_sha256": "d04b49b99a8906424da5a484a1ccf82db2cbb46e1f908f5b8fa52ff91a294279",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_04_1_01_c11.png",
+        "master_sha256": "a911654bd3a644c12da37e383270b1d71b720a88d7c6ee41905bd353d276c234",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Raccoon",
+            "title": "Raccoon",
+            "asked_for": "Raccoon",
+            "revision": 1387277206,
+            "fetched_on": "2026-11-24",
+            "sha256": "0e4bffbe96b5b464bebb2bb97509c7e7625815dc031e891c4a712091b70a457a"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Raccoon",
+            "title": "Raccoon",
+            "asked_for": "Raccoon",
+            "revision": 10989986,
+            "fetched_on": "2026-11-24",
+            "sha256": "198e8bd910f3355cfb3f547be7574e9ae119847456d74777120b7fa708830f50"
+          }
+        ],
+        "facts": "tools/research/out/facts/raccoon.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "The raccoon (Procyon lotor, common raccoon,) is a mammal."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "The raccoon (Procyon lotor, common raccoon,) is a mammal."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Most raccoons live in the wild."
+          },
+          "pet_farm_or_wild": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Most raccoons live in the wild."
+          },
+          "what_it_eats": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Raccoons are omnivores."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Raccoon",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_raccoon.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/raccoon.mp3",
+        "clip_sha256": "23ee9882294e8ba4d810330cfdd03778f57517f37eb2aae4669db3ab7f412ee9"
       }
     },
     "chimpanzee": {
       "name": "Chimpanzee",
       "status": "held by the rules",
       "status_why": [
-        "no tile of it passed the checks"
+        "no tile of it passed the checks after 2 sheet(s)"
       ],
       "held_from": "job:2026-11-24-04",
       "fields": {
@@ -28695,6 +29979,62 @@
         "what_it_eats": "eats_both"
       },
       "familiar": 0.9,
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Chimpanzee",
+            "title": "Chimpanzee",
+            "asked_for": "Chimpanzee",
+            "revision": 1387141999,
+            "fetched_on": "2026-11-24",
+            "sha256": "01df3d84beb3e65b5b1b81dfd3db02c582b05b41b0ec60b1f31ce315f1ea01b7"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Chimpanzee",
+            "title": "Chimpanzee",
+            "asked_for": "Chimpanzee",
+            "revision": 11067630,
+            "fetched_on": "2026-11-24",
+            "sha256": "b6989fe0701c746911b75c1c31cb25299979b5fc04ec918e2e2f366e417a5f53"
+          }
+        ],
+        "facts": "tools/research/out/facts/chimpanzee.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The chimpanzee (; Pan troglodytes), commonly abbreviated to chimp, is a medium-sized great ape species found in the forests and savannas of equatorial Africa."
+          },
+          "kind_of_animal": {
+            "basis": "judged, not sourced",
+            "why": "The sources call the chimpanzee a great ape, and apes are mammals."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Between 170,000 and 300,000 individuals are estimated across its range."
+          },
+          "pet_farm_or_wild": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The chimpanzee (; Pan troglodytes), commonly abbreviated to chimp, is a medium-sized great ape species found in the forests and savannas of equatorial Africa."
+          },
+          "what_it_eats": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Chimpanzees primarily eat fruit, but will also consume other plant material, as well as insects and will even hunt smaller monkeys."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Chimpanzee",
+        "checked_by_ear": false,
+        "clip": null,
+        "cached": "tools/voice/clips/chimpanzee.mp3"
+      },
       "worked_out": {
         "would_join": [
           "seed",
@@ -28707,8 +30047,8 @@
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 246,
-      "held by the rules": 91,
+      "in the game": 257,
+      "held by the rules": 80,
       "kept for later": 5,
       "excluded": 3,
       "taken out of the game": 23
@@ -28731,14 +30071,14 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 246,
+        "things": 257,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
           "animal": {
             "label": "Animals",
-            "things": 95,
-            "with_picture": 95
+            "things": 106,
+            "with_picture": 106
           },
           "plant": {
             "label": "Plants",
@@ -28762,14 +30102,14 @@
       },
       "animal": {
         "label": "Animals",
-        "things": 95,
+        "things": 106,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_animal",
         "groups": {
           "mammal": {
             "label": "Mammals",
-            "things": 21,
-            "with_picture": 21
+            "things": 32,
+            "with_picture": 32
           },
           "bird": {
             "label": "Birds",
@@ -28809,7 +30149,7 @@
       },
       "animal/mammal": {
         "label": "Mammals",
-        "things": 21,
+        "things": 32,
         "steps_from_seed": 2,
         "sorted_by": "pet_farm_or_wild",
         "groups": {
@@ -28825,8 +30165,8 @@
           },
           "wild_land": {
             "label": "Wild animals on land",
-            "things": 6,
-            "with_picture": 6
+            "things": 17,
+            "with_picture": 17
           },
           "wild_water": {
             "label": "Wild animals in water",
@@ -28860,82 +30200,32 @@
       },
       "animal/mammal/wild_land": {
         "label": "Wild animals on land",
-        "things": 6,
+        "things": 17,
         "steps_from_seed": 3,
         "sorted_by": "what_it_eats",
         "groups": {
           "eats_plants": {
             "label": "Eats only plants",
-            "things": 2,
-            "with_picture": 2
+            "things": 4,
+            "with_picture": 4
           },
           "eats_meat": {
             "label": "Eats only meat",
-            "things": 2,
-            "with_picture": 2
+            "things": 5,
+            "with_picture": 5
           },
           "eats_both": {
             "label": "Eats plants and meat",
-            "things": 2,
-            "with_picture": 2
+            "things": 3,
+            "with_picture": 3
+          },
+          "eats_insects": {
+            "label": "Eats mostly insects",
+            "things": 5,
+            "with_picture": 5
           }
         },
         "could_be_filled_by": [
-          {
-            "name": "Wolf",
-            "status": "held by the rules",
-            "group": "eats_meat"
-          },
-          {
-            "name": "Cheetah",
-            "status": "held by the rules",
-            "group": "eats_meat"
-          },
-          {
-            "name": "Leopard",
-            "status": "held by the rules",
-            "group": "eats_meat"
-          },
-          {
-            "name": "Anteater",
-            "status": "held by the rules",
-            "group": "eats_insects"
-          },
-          {
-            "name": "Hedgehog",
-            "status": "held by the rules",
-            "group": "eats_insects"
-          },
-          {
-            "name": "Aardvark",
-            "status": "held by the rules",
-            "group": "eats_insects"
-          },
-          {
-            "name": "Armadillo",
-            "status": "held by the rules",
-            "group": "eats_insects"
-          },
-          {
-            "name": "Meerkat",
-            "status": "held by the rules",
-            "group": "eats_insects"
-          },
-          {
-            "name": "Zebra",
-            "status": "held by the rules",
-            "group": "eats_plants"
-          },
-          {
-            "name": "Deer",
-            "status": "held by the rules",
-            "group": "eats_plants"
-          },
-          {
-            "name": "Raccoon",
-            "status": "held by the rules",
-            "group": "eats_both"
-          },
           {
             "name": "Chimpanzee",
             "status": "held by the rules",
@@ -28945,10 +30235,7 @@
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "2 more thing(s) in 'Eats only plants'",
-          "2 more thing(s) in 'Eats only meat'",
-          "2 more thing(s) in 'Eats plants and meat'",
-          "4 more thing(s) in 'Eats mostly insects'"
+          "1 more thing(s) in 'Eats plants and meat'"
         ]
       },
       "animal/mammal/wild_water": {
@@ -30139,7 +31426,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-11-24-04",
+    "by": "job run 2026-11-24-04",
     "on": "2026-11-24"
   },
   "groups": {
@@ -30595,7 +31882,7 @@
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
         "no clues were kept: clue 3 is not true of every thing in the group",
-        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
+        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
       ]
     },
     "kind_of_animal=reptile": {
@@ -32211,17 +33498,17 @@
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "These birds find their own food out in the open.",
+          "text": "These birds find their own food and make their own homes outside.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
-          "clip_sha256": "4268912e786ef7ee48126ecfd4cf1d548e6586ad5a4aa91370e3ff37d5d224b9",
+          "clip_sha256": "b0528e8172f884a23c38de556242ab774584d64bc68a0eb041627a2d03c1c7d9",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You would see these birds flying high or sitting in a tree, far from people.",
+          "text": "You would see these birds flying high or sitting in a tree far from people.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
-          "clip_sha256": "42e3a1f4ec1614105b2a3b6348e078f6a12deb511bed82ee88644008a731366f",
+          "clip_sha256": "963177b8cfabc1a891226735605ce56455cb850e72a8e64dec5a1a1cbef9409c",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
@@ -32555,17 +33842,17 @@
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You can tap or blow or press to make it.",
+          "text": "You can tap, blow or strum to make this sound.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue2.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3",
-          "clip_sha256": "c9b5b2471cab5eaf8a2a678b3d0013021140a359a404033d3473e4d76943f06c",
+          "clip_sha256": "9c3a3a91bc52914c0f2e4d3c11a2cde2a03f6a918439eedbd1e0ac0bd15e5853",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "People sing and dance when they hear this sound.",
+          "text": "People move and dance when they hear this sound.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue3.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3",
-          "clip_sha256": "c4c6588818d8a73e88877e704cf7aac44ff4ceea2901d82a4a47db8efddfbbca",
+          "clip_sha256": "4b99747eb5c2ae4da7a356657ccf3ab29d877f2711464ba8dfb2ff3a81a21bb6",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
@@ -32659,6 +33946,119 @@
         "cached": "tools/voice/clips/groups/dinosaur_group__horned__explanation.mp3",
         "clip": "Assets/audio/groups/dinosaur_group__horned__explanation.mp3",
         "clip_sha256": "d98693f970b07b05c5aa8d3b00d5ad99145697b8f0f2ab684c24d7fe3490faf9",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-11-24",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "what_it_eats=eats_plants": {
+      "field": "what_it_eats",
+      "value": "eats_plants",
+      "label": "Eats only plants",
+      "question": "What does this animal mostly eat?",
+      "clues": [
+        {
+          "text": "Think about the green, leafy food that grows in the ground.",
+          "cached": "tools/voice/clips/groups/what_it_eats__eats_plants__clue1.mp3",
+          "clip": "Assets/audio/groups/what_it_eats__eats_plants__clue1.mp3",
+          "clip_sha256": "d25a70e67aedc31873327998425ae9b885419ce3507c993776d29087adfa9f7a",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "This animal fills its tummy with leaves and grass all day.",
+          "cached": "tools/voice/clips/groups/what_it_eats__eats_plants__clue2.mp3",
+          "clip": "Assets/audio/groups/what_it_eats__eats_plants__clue2.mp3",
+          "clip_sha256": "1d47254e1ca7f9b0ea4a0c2ce3714eb8f23c20be0fb1feb8fc067d847a82d85e",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "It never eats meat or bugs, only green growing things.",
+          "cached": "tools/voice/clips/groups/what_it_eats__eats_plants__clue3.mp3",
+          "clip": "Assets/audio/groups/what_it_eats__eats_plants__clue3.mp3",
+          "clip_sha256": "34d63c0553c5c38f531dad50a1db265d7094196efcfa024fbcb07567155da5ae",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        }
+      ],
+      "explanation": {
+        "text": "All of these animals fill their tummies with leaves and grass. They do not eat other animals. A giraffe is the tallest animal that lives on land.",
+        "together": "All of these animals fill their tummies with leaves and grass. They do not eat other animals.",
+        "fact": "A giraffe is the tallest animal that lives on land.",
+        "quote": "Giraffes have an even number of toes and are the tallest land animals.",
+        "source": "giraffe:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Giraffe",
+        "cached": "tools/voice/clips/groups/what_it_eats__eats_plants__explanation.mp3",
+        "clip": "Assets/audio/groups/what_it_eats__eats_plants__explanation.mp3",
+        "clip_sha256": "21a0710a88c5726fcaeb7f7d79cac049540f5b3c2442c95c02e6d35199799019",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-11-24",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "what_it_eats=eats_meat": {
+      "field": "what_it_eats",
+      "value": "eats_meat",
+      "label": "Eats only meat",
+      "question": "What does this animal mostly eat?",
+      "clues": [],
+      "explanation": {
+        "text": "All of these animals hunt other animals and eat them. They do not eat plants. A cheetah can run very, very fast, as fast as a car on a big road.",
+        "together": "All of these animals hunt other animals and eat them. They do not eat plants.",
+        "fact": "A cheetah can run very, very fast, as fast as a car on a big road.",
+        "quote": "It is the fastest land animal and can run up to 105 kilometres per hour (65 mph), and accelerate from 0 to 97 kilometres per hour (60 mph) in less than 3 seconds.",
+        "source": "cheetah:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Cheetah",
+        "cached": "tools/voice/clips/groups/what_it_eats__eats_meat__explanation.mp3",
+        "clip": "Assets/audio/groups/what_it_eats__eats_meat__explanation.mp3",
+        "clip_sha256": "f84a00680756e7c22cafc1c77d8d017d91ef12d79860837c3328c20b4ffbd652",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-11-24",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no clues were kept: the clues do not grow more helpful one after another"
+      ]
+    },
+    "what_it_eats=eats_insects": {
+      "field": "what_it_eats",
+      "value": "eats_insects",
+      "label": "Eats mostly insects",
+      "question": "What does this animal mostly eat?",
+      "clues": [
+        {
+          "text": "Think about tiny crawling things with six legs.",
+          "cached": "tools/voice/clips/groups/what_it_eats__eats_insects__clue1.mp3",
+          "clip": "Assets/audio/groups/what_it_eats__eats_insects__clue1.mp3",
+          "clip_sha256": "063f04b8dfff99ef436d04629dc686d8e92fba0c06303117204b1020ea24d43a",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "These animals hunt for very small bugs to fill their tummies.",
+          "cached": "tools/voice/clips/groups/what_it_eats__eats_insects__clue2.mp3",
+          "clip": "Assets/audio/groups/what_it_eats__eats_insects__clue2.mp3",
+          "clip_sha256": "d58e6899ac42584c880378b966365f4718f44a7751424611330b8e27f9d14982",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "They use long noses or sticky tongues to catch little bugs.",
+          "cached": "tools/voice/clips/groups/what_it_eats__eats_insects__clue3.mp3",
+          "clip": "Assets/audio/groups/what_it_eats__eats_insects__clue3.mp3",
+          "clip_sha256": "7907ed775ed1788f683bd8c77f5ba7b1c2c80d80a9f7a716bced1c9a5fe0ec7c",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        }
+      ],
+      "explanation": {
+        "text": "These animals all get most of their food by eating little bugs. Their bodies help them find and catch them. An anteater's tongue can be as long as a grown-up's arm, and it uses it to lick up ants.",
+        "together": "These animals all get most of their food by eating little bugs. Their bodies help them find and catch them.",
+        "fact": "An anteater's tongue can be as long as a grown-up's arm, and it uses it to lick up ants.",
+        "quote": "The tongue can be up to 60 cm long, as long as a person's arm.",
+        "source": "anteater:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Anteater",
+        "cached": "tools/voice/clips/groups/what_it_eats__eats_insects__explanation.mp3",
+        "clip": "Assets/audio/groups/what_it_eats__eats_insects__explanation.mp3",
+        "clip_sha256": "81eb1605250afd26d286abea2c564406523116c093d5af804bd2555e94acb7e8",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",

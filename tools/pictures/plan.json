@@ -3653,6 +3653,138 @@
           ]
         }
       ]
+    },
+    "job_2026_11_24_04_2": {
+      "purpose": "drawn by the job, run 2026-11-24-04, second tries",
+      "grid": 2,
+      "size": 1920,
+      "only_for_this_sheet": "Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.",
+      "cells": [
+        {
+          "thing": "cheetah",
+          "name": "Cheetah",
+          "draw": "A slim, lightly built cheetah with a small rounded head, short snout, long thin legs and a long spotted tail; tawny fur with evenly spaced solid black spots, not rosettes, and black tear-like streaks from its eyes down to its mouth",
+          "must_show": [
+            "The cheetah has a slim, lightly built body with a small, streamlined head and a short snout.",
+            "It has long thin legs and a long spotted tail.",
+            "Black tear-like streaks run from the corners of its eyes down the nose to the mouth."
+          ],
+          "not_this": [
+            "A cheetah does not have the leopard's rosettes, and it does have tear streaks.",
+            "Its claws are not fully retractable like other big cats' claws."
+          ],
+          "features": [
+            "The cheetah has a slim, lightly built body with a small, streamlined head and a short snout.",
+            "It has long thin legs and a long spotted tail.",
+            "Its fur is tawny to creamy white or pale buff, darker along the middle of the back.",
+            "Its body is covered with about 2,000 evenly spaced solid black spots.",
+            "Its chin, throat, belly and the lower parts of its legs are white with no markings.",
+            "Black tear-like streaks run from the corners of its eyes down the nose to the mouth.",
+            "Its ears are small, short and rounded, with black patches on the back.",
+            "It has a short, rough mane along the neck and shoulders.",
+            "Its claws are slightly curved, blunt and only partly retractable.",
+            "It stands 67–94 cm tall at the shoulder and its head-and-body length is 1.1 to 1.5 m.",
+            "Its eyes are set high and have round pupils."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Cheetah",
+            "https://simple.wikipedia.org/wiki/Cheetah"
+          ]
+        },
+        {
+          "thing": "chimpanzee",
+          "name": "Chimpanzee",
+          "draw": "A whole chimpanzee standing on all four limbs on bare ground: coarse black hair, bare face, fingers and toes, arms longer than its legs, short wide body, long hips wide at the top, rounded head with jutting jaw and strong brow ridge",
+          "must_show": [
+            "Its arms are longer than its legs.",
+            "Its head is rounded or flattened with a jaw that juts forward and a strong brow ridge.",
+            "Its body is short and wide, and its hips are long with a wide top.",
+            "It can walk on the ground on two legs or on all four limbs.",
+            "It is covered in coarse black hair."
+          ],
+          "not_this": [],
+          "features": [
+            "It is covered in coarse black hair.",
+            "Its face, fingers, toes, palms and soles are bare of hair.",
+            "Its arms are longer than its legs.",
+            "Its hands are long with long fingers and short thumbs.",
+            "Its big toe can be turned to grasp like a thumb.",
+            "Its head is rounded or flattened with a jaw that juts forward and a strong brow ridge.",
+            "It has eyes facing forward, a small nose, round ears without lobes and a long flexible upper lip.",
+            "Its body is short and wide, and its hips are long with a wide top.",
+            "It stands about 150 cm tall on average.",
+            "It can walk on the ground on two legs or on all four limbs.",
+            "It walks on all fours by resting on its knuckles."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Chimpanzee",
+            "https://simple.wikipedia.org/wiki/Chimpanzee"
+          ]
+        },
+        {
+          "thing": "cheetah",
+          "name": "Cheetah",
+          "draw": "A slim, lightly built cheetah with a small rounded head, short snout, long thin legs and a long spotted tail; tawny fur with evenly spaced solid black spots, not rosettes, and black tear-like streaks from its eyes down to its mouth; a second view of it",
+          "must_show": [
+            "The cheetah has a slim, lightly built body with a small, streamlined head and a short snout.",
+            "It has long thin legs and a long spotted tail.",
+            "Black tear-like streaks run from the corners of its eyes down the nose to the mouth."
+          ],
+          "not_this": [
+            "A cheetah does not have the leopard's rosettes, and it does have tear streaks.",
+            "Its claws are not fully retractable like other big cats' claws."
+          ],
+          "features": [
+            "The cheetah has a slim, lightly built body with a small, streamlined head and a short snout.",
+            "It has long thin legs and a long spotted tail.",
+            "Its fur is tawny to creamy white or pale buff, darker along the middle of the back.",
+            "Its body is covered with about 2,000 evenly spaced solid black spots.",
+            "Its chin, throat, belly and the lower parts of its legs are white with no markings.",
+            "Black tear-like streaks run from the corners of its eyes down the nose to the mouth.",
+            "Its ears are small, short and rounded, with black patches on the back.",
+            "It has a short, rough mane along the neck and shoulders.",
+            "Its claws are slightly curved, blunt and only partly retractable.",
+            "It stands 67–94 cm tall at the shoulder and its head-and-body length is 1.1 to 1.5 m.",
+            "Its eyes are set high and have round pupils."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Cheetah",
+            "https://simple.wikipedia.org/wiki/Cheetah"
+          ],
+          "look_closely": "a second try; the better of the two is kept"
+        },
+        {
+          "thing": "chimpanzee",
+          "name": "Chimpanzee",
+          "draw": "A whole chimpanzee standing on all four limbs on bare ground: coarse black hair, bare face, fingers and toes, arms longer than its legs, short wide body, long hips wide at the top, rounded head with jutting jaw and strong brow ridge; a second view of it",
+          "must_show": [
+            "Its arms are longer than its legs.",
+            "Its head is rounded or flattened with a jaw that juts forward and a strong brow ridge.",
+            "Its body is short and wide, and its hips are long with a wide top.",
+            "It can walk on the ground on two legs or on all four limbs.",
+            "It is covered in coarse black hair."
+          ],
+          "not_this": [],
+          "features": [
+            "It is covered in coarse black hair.",
+            "Its face, fingers, toes, palms and soles are bare of hair.",
+            "Its arms are longer than its legs.",
+            "Its hands are long with long fingers and short thumbs.",
+            "Its big toe can be turned to grasp like a thumb.",
+            "Its head is rounded or flattened with a jaw that juts forward and a strong brow ridge.",
+            "It has eyes facing forward, a small nose, round ears without lobes and a long flexible upper lip.",
+            "Its body is short and wide, and its hips are long with a wide top.",
+            "It stands about 150 cm tall on average.",
+            "It can walk on the ground on two legs or on all four limbs.",
+            "It walks on all fours by resting on its knuckles."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Chimpanzee",
+            "https://simple.wikipedia.org/wiki/Chimpanzee"
+          ],
+          "look_closely": "a second try; the better of the two is kept"
+        }
+      ]
     }
   }
 }
