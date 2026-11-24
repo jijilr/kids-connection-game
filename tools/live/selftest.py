@@ -77,6 +77,14 @@ def test_what_can_open_and_what_can_never_be_made_is_read_from_the_map():
     assert helper.can_open_now(real)["seed"] is True and len(real) > 50
 
 
+def test_the_owners_page_reads_the_same_map_the_game_reads():
+    page = helper.MAP_PAGE.read_text(encoding="utf-8")
+    assert "assets/Assets/data/places.json" in page and "live/state" in page
+    assert "innerHTML" not in page, "what the map says is written as text, never as markup"
+    for state in ("ready", "can be made", "held", "end", "a group only"):
+        assert f'"{state}"' in page, f"the page knows the state: {state}"
+
+
 def main():
     tests = [value for name, value in globals().items() if name.startswith("test_")]
     for test in tests:

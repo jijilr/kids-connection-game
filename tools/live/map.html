@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The map of the game</title>
+<style>
+  :root {
+    --page: #f6f4fb; --card: #ffffff; --ink: #24242b; --soft: #62626e; --line: #e2dfee;
+    --ready: #138a7c; --make: #b4791a; --held: #a34a66; --end: #2e7d4f; --group: #7a7a86; --accent: #5b4bd6;
+    --ready-bg: #dff3ef; --make-bg: #fbeed6; --held-bg: #f8e3ea; --end-bg: #e1f1e6; --group-bg: #ececf1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page: #17171c; --card: #212128; --ink: #ecebf2; --soft: #a5a4b3; --line: #33333d;
+      --ready: #5fd0bf; --make: #e9b65c; --held: #e58aa6; --end: #7fcf9c; --group: #a9a9b6; --accent: #a79cf5;
+      --ready-bg: #17332f; --make-bg: #3a2e16; --held-bg: #3a1f29; --end-bg: #1b3324; --group-bg: #2c2c35;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page); color: var(--ink); font: 15px/1.5 system-ui, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 980px; margin: 0 auto; padding: 20px 16px 60px; }
+  h1 { font-size: 24px; margin: 0 0 2px; letter-spacing: -0.01em; }
+  .lede { color: var(--soft); margin: 0 0 18px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; margin-bottom: 14px; }
+  .card h2 { font-size: 13px; text-transform: none; color: var(--soft); font-weight: 600; margin: 0 0 8px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { border: 1.5px solid transparent; border-radius: 999px; padding: 5px 12px; font: inherit; font-weight: 600; cursor: pointer;
+          display: inline-flex; align-items: center; gap: 7px; background: var(--group-bg); color: var(--ink); }
+  .chip[aria-pressed="false"] { opacity: 0.45; }
+  .chip:focus-visible, .row:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+  .s-ready { color: var(--ready); } .s-ready .dot, .dot.s-ready { background: var(--ready); }
+  .s-make { color: var(--make); } .s-make .dot, .dot.s-make { background: var(--make); }
+  .s-held { color: var(--held); } .s-held .dot, .dot.s-held { background: var(--held); }
+  .s-end { color: var(--end); } .s-end .dot, .dot.s-end { background: var(--end); }
+  .s-group { color: var(--group); } .s-group .dot, .dot.s-group { background: var(--group); }
+  .chip.s-ready { background: var(--ready-bg); } .chip.s-make { background: var(--make-bg); }
+  .chip.s-held { background: var(--held-bg); } .chip.s-end { background: var(--end-bg); }
+  .tools { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 12px; }
+  input[type=search] { flex: 1 1 220px; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--page); color: var(--ink); font: inherit; }
+  .facts { display: flex; flex-wrap: wrap; gap: 6px 22px; color: var(--soft); font-size: 14px; }
+  .facts b { color: var(--ink); font-variant-numeric: tabular-nums; }
+  ol.lines { margin: 0; padding-left: 20px; } ol.lines li { margin: 2px 0; }
+  .tree { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+  .row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 10px; align-items: start; width: 100%; text-align: left;
+         padding: 9px 14px; border: 0; border-top: 1px solid var(--line); background: none; color: inherit; font: inherit; cursor: pointer; }
+  .place:first-child > .row { border-top: 0; }
+  .row:hover { background: var(--page); }
+  .row .dot { margin-top: 7px; }
+  .title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; }
+  .name { font-weight: 650; }
+  .id { font: 12px ui-monospace, Consolas, monospace; color: var(--soft); overflow-wrap: anywhere; }
+  .why { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+  ol.lines .id, ol.lines .state { margin-left: 8px; }
+  .sub { color: var(--soft); font-size: 14px; }
+  .count { color: var(--soft); font-variant-numeric: tabular-nums; white-space: nowrap; font-size: 14px; padding-top: 2px; }
+  .kinds { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 5px; }
+  .kind { border: 1px solid var(--line); border-radius: 8px; padding: 1px 8px; font-size: 13px; }
+  .kind.off { opacity: 0.5; border-style: dashed; }
+  .state { font-size: 12px; font-weight: 700; border-radius: 6px; padding: 1px 7px; white-space: nowrap; }
+  .state.s-ready { background: var(--ready-bg); } .state.s-make { background: var(--make-bg); }
+  .state.s-held { background: var(--held-bg); } .state.s-end { background: var(--end-bg); } .state.s-group { background: var(--group-bg); }
+  .more { padding: 4px 14px 14px 34px; font-size: 14px; display: none; border-top: 1px dashed var(--line); }
+  .place.open > .more { display: block; }
+  .more dl { margin: 8px 0 0; display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; }
+  .more dt { color: var(--soft); } .more dd { margin: 0; overflow-wrap: anywhere; }
+  .history { margin: 6px 0 0; padding-left: 18px; color: var(--soft); } .history li { margin: 3px 0; }
+  .children { margin-left: 18px; border-left: 2px solid var(--line); }
+  @media (max-width: 520px) {
+    .children { margin-left: 8px; }
+    .row { padding: 9px 10px; gap: 8px; }
+    .more { padding-left: 26px; }
+  }
+  .hidden { display: none; }
+  .note { color: var(--soft); font-size: 13px; margin-top: 12px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>The map of the game</h1>
+  <p class="lede">Every place there is, what is asked there, and why a place cannot be played yet.</p>
+
+  <section class="card" aria-label="Summary">
+    <div class="facts" id="facts"></div>
+    <div class="tools">
+      <div class="chips" id="chips" role="group" aria-label="Show places by state"></div>
+      <input type="search" id="find" placeholder="Find a place by name" aria-label="Find a place by name">
+    </div>
+  </section>
+
+  <section class="card" id="lines-card" aria-label="His lines">
+    <h2>The lines the game means to follow, best first</h2>
+    <ol class="lines" id="lines"></ol>
+  </section>
+
+  <div class="tree" id="tree" aria-label="Every place"></div>
+  <p class="note" id="note"></p>
+</main>
+
+<script>
+const STATES = [
+  ["ready", "s-ready", "Ready", "a set can be made now"],
+  ["can be made", "s-make", "Can be made", "the job may prepare it"],
+  ["held", "s-held", "Held", "the rules or the owner hold it"],
+  ["end", "s-end", "End of a branch", "nothing lies below"],
+  ["a group only", "s-group", "A group only", "it has no set of its own"],
+];
+const cls = Object.fromEntries(STATES.map(s => [s[0], s[1]]));
+const label = Object.fromEntries(STATES.map(s => [s[0], s[2]]));
+const shown = new Set(STATES.map(s => s[0]));
+const el = (tag, className, text) => { const n = document.createElement(tag); if (className) n.className = className; if (text != null) n.textContent = text; return n; };
+
+async function load() {
+  const [mapReply, stateReply] = await Promise.all([
+    fetch("assets/Assets/data/places.json", {cache: "no-store"}),
+    fetch("live/state", {cache: "no-store"}).catch(() => null),
+  ]);
+  const map = await mapReply.json();
+  const state = stateReply && stateReply.ok ? await stateReply.json() : null;
+  draw(map, state);
+}
+
+function draw(map, state) {
+  const places = map.places;
+  const ids = Object.keys(places);
+
+  const facts = document.getElementById("facts");
+  facts.replaceChildren();
+  const fact = (n, words) => { const s = el("span"); s.append(el("b", null, String(n)), " " + words); facts.append(s); };
+  fact(ids.length, "places");
+  fact(map.things, "things in the game");
+  if (state) fact("Rs " + Math.round(state.spent_today_inr) + " of " + state.day_cap_inr, "spent today");
+  if (state && state.making) fact(state.making, "is being made now");
+  facts.append(el("span", null, "built on " + map.built_on));
+
+  const chips = document.getElementById("chips");
+  chips.replaceChildren();
+  for (const [key, c, name] of STATES) {
+    const n = ids.filter(id => places[id].state === key).length;
+    if (!n) continue;
+    const b = el("button", "chip " + c);
+    b.type = "button";
+    b.setAttribute("aria-pressed", shown.has(key));
+    b.append(el("span", "dot"), name + " " + n);
+    b.onclick = () => { shown.has(key) ? shown.delete(key) : shown.add(key); b.setAttribute("aria-pressed", shown.has(key)); filter(places); };
+    chips.append(b);
+  }
+
+  const lines = document.getElementById("lines");
+  lines.replaceChildren();
+  const his = state ? state.lines : [];
+  document.getElementById("lines-card").classList.toggle("hidden", !his.length);
+  for (const id of his) {
+    const li = el("li");
+    const p = places[id];
+    li.append(p ? p.name : id, el("span", "id", id));
+    if (p) li.append(el("span", "state " + cls[p.state], label[p.state]));
+    else li.append(el("span", "state s-group", "not on the map"));
+    if (state.making === id) li.append(" being made now");
+    lines.append(li);
+  }
+
+  // each place hangs from the place one circle wider on the old single road, or from the first it lies in
+  const parentOf = id => {
+    const p = places[id];
+    if (!p.circles.length) return null;
+    const road = p.circles.slice(0, -1).map(c => c[1]).join("/") || "seed";
+    return places[road] && p.lies_in[road] ? road : Object.keys(p.lies_in)[0] || "seed";
+  };
+  const children = {};
+  for (const id of ids) { const up = parentOf(id); if (up) (children[up] = children[up] || []).push(id); }
+
+  const node = id => {
+    const p = places[id];
+    const box = el("div", "place");
+    box.dataset.id = id; box.dataset.state = p.state; box.dataset.text = (p.name + " " + id).toLowerCase();
+    const row = el("button", "row");
+    row.type = "button";
+    row.setAttribute("aria-expanded", "false");
+    row.append(el("span", "dot " + cls[p.state]));
+    const middle = el("div");
+    const title = el("div", "title");
+    title.append(el("span", "name", p.name), el("span", "id", id), el("span", "state " + cls[p.state], label[p.state]));
+    middle.append(title);
+    for (const a of p.asks) {
+      middle.append(el("div", "sub", a.wording + (a.makes_a_set ? "" : " (no set yet)")));
+      const kinds = el("div", "kinds");
+      for (const k of Object.values(a.kinds)) kinds.append(el("span", "kind" + (k.ready ? "" : " off"), k.name + " " + k.things));
+      if (a.in_between) kinds.append(el("span", "kind" + (a.in_between_ready ? "" : " off"), "In between " + a.in_between));
+      middle.append(kinds);
+    }
+    if (p.state !== "ready" && p.why) middle.append(el("div", "sub why", p.why));
+    row.append(middle, el("span", "count", p.things + (p.things === 1 ? " thing" : " things")));
+    const more = el("div", "more");
+    const dl = el("dl");
+    const fact = (k, v) => { if (v) dl.append(el("dt", null, k), el("dd", null, v)); };
+    if (p.state !== "ready") fact("Why it is not ready", p.why);
+    fact("Circles", p.circles.map(c => c[0] + " = " + c[1]).join(", ") || "none: this is where the game begins");
+    fact("Lies in", Object.keys(p.lies_in).map(x => places[x] ? places[x].name + " (" + x + ")" : x).join("; "));
+    fact("A set leads here from", p.reached_from.map(x => places[x] ? places[x].name : x).join("; "));
+    fact("Pictures", p.with_pictures + " of " + p.things + " things have one");
+    fact("Could be sorted by", (p.could_ask || []).map(c => c.wording + ", with " + c.more_things_needed + " more thing(s): "
+      + Object.entries(c.fill).map(([k, n]) => n + " in " + k).join(", ")).join("; "));
+    fact("The job's own tree", p.known_to_the_job ? "knows this place" : "does not know this place: it exists where circles cross");
+    more.append(dl);
+    if (p.history.length) {
+      more.append(el("div", "sub", "What was decided, in order:"));
+      const list = el("ul", "history");
+      for (const d of p.history) list.append(el("li", null, d.date + ": " + d.what + (d.why ? " (" + d.why + ")" : "")));
+      more.append(list);
+    }
+    row.onclick = () => { const open = box.classList.toggle("open"); row.setAttribute("aria-expanded", open); };
+    box.append(row, more);
+    if (children[id]) { const kids = el("div", "children"); for (const c of children[id]) kids.append(node(c)); box.append(kids); }
+    return box;
+  };
+  const tree = document.getElementById("tree");
+  tree.replaceChildren(node("seed"));
+  document.getElementById("note").textContent =
+    "This page reads the same map the game reads (Assets/data/places.json), which one program builds from the things, the dictionary and the decisions on record. Touch a place for its circles, what it lies in and its history.";
+  document.getElementById("find").oninput = () => filter(places);
+  filter(places);
+}
+
+// A place shows when its state is chosen and it matches the words typed; a place above a shown place shows too.
+function filter(places) {
+  const words = document.getElementById("find").value.trim().toLowerCase();
+  const visit = box => {
+    let any = false;
+    for (const kid of box.querySelectorAll(":scope > .children > .place")) any = visit(kid) || any;
+    const own = shown.has(box.dataset.state) && (!words || box.dataset.text.includes(words));
+    box.classList.toggle("hidden", !(own || any));
+    return own || any;
+  };
+  const root = document.querySelector("#tree > .place");
+  if (root) visit(root);
+}
+
+load().catch(error => { document.getElementById("note").textContent = "The map could not be read: " + error; });
+</script>
+</body>
+</html>

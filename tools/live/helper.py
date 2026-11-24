@@ -20,6 +20,9 @@ served straight from the project's Assets folder, so what the job adds shows at 
     python tools/live/helper.py --lan           also for a tablet on the same Wi-Fi
     python tools/live/helper.py --no-making     serve only: nothing is made, nothing is spent
 
+The owner's page of the whole map is at http://localhost:8200/map: every place, what is
+asked there, its state and the reason, and the lines the game means to follow.
+
 Spending: at most Rs 200 a day (the owner's figure while this is a demo) and at most
 Rs 90 for one set, as hard caps handed to the job. It never pushes and never deploys.
 What it does is written to tools/live/out/ (kept out of git): helper.log, ledger.json.
@@ -40,6 +43,7 @@ WEB = ROOT / "build/web"
 ASSETS = ROOT / "Assets"
 OUT = ROOT / "tools/live/out"
 LEDGER = OUT / "ledger.json"
+MAP_PAGE = ROOT / "tools/live/map.html"      # the owner's page of the whole map, served at /map
 PROGRESS = ROOT / "tools/job/progress.json"
 RUNS = ROOT / "tools/job/runs"
 BUFFER = 3              # ready sets kept ahead of him (the owner: "max 3 to 4 sets at any time")
@@ -252,6 +256,8 @@ def handler_for(helper: Helper):
             path = urllib.parse.unquote(urllib.parse.urlparse(self.path).path).lstrip("/")
             if path == "live/state":
                 return self.reply_json(helper.state())
+            if path == "map":       # the owner's page: every place on the map, by its state
+                return self.reply(200, MAP_PAGE.read_bytes(), "text/html; charset=utf-8")
             file = None
             if path.startswith("assets/Assets/"):       # the game's data, pictures and sounds: live from the project
                 file = inside(ASSETS, path[len("assets/Assets/"):])

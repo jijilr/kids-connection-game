@@ -505,7 +505,7 @@ On the night it was first built the map held 82 places: 16 ready, 52 held, 5 tha
 | 1 | The builder and the map, with a test that the map and the game agree on every place | **built** |
 | 2 | The game reads the map and drops its own copy of the rules | **built** |
 | 3 | The helper and the job read the map and write their results to the master records | **built**, with one part left (below) |
-| 4 | A page for the owner: the whole map, every place by its state | not built |
+| 4 | A page for the owner: the whole map, every place by its state | **built** |
 | 5 | Things stored by place, so a phone loads only the places near his lines | not built |
 
 **Since step 2 the rules of what a place is are written once, in the builder.** The game reads
@@ -554,6 +554,20 @@ through its own tree (`tools/content/expand.py`) and the catalogue's `worked_out
 with the map, and the map carries their decisions, but the rule "the first question that
 sorts a place" is still written there as well. Only a dry run and the self-tests have exercised
 the making of a crossing place; no money has been spent on a real one.
+
+### Step 4: the owner's page
+
+`http://localhost:8200/map`, served by the helper (`tools/live/map.html`). It reads the same
+map the game reads, each time it is opened, so it is never behind. It shows:
+
+- how many places there are in each state, as buttons that show or hide that state;
+- the lines the game means to follow, best first, each with its state;
+- every place, set under the place it lies in: its name, its state, the questions asked there
+  with each kind and its count, and where a place cannot be played, why;
+- on a touch, a place's circles, every place it lies in, the roads to it, what it would take
+  to make it, and every decision ever made about it.
+
+It works on a phone on the same Wi-Fi, at the PC's address with `/map`.
 
 Command: `python tools/catalogue/places.py` builds the map and lists it;
 `python tools/catalogue/places.py show PLACE` prints one record.

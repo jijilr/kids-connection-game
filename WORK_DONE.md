@@ -18,7 +18,7 @@ Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 | Dictionary | version 12, 21 fields (two withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups with words | 61, each with a ladder of clues; 59 have an explanation |
-| Tests | 110 in the game, 45 for the job, 5 for the helper, 10 for the catalogue, 10 for the pictures. All pass |
+| Tests | 110 in the game, 45 for the job, 6 for the helper, 10 for the catalogue, 10 for the pictures. All pass |
 
 **The fifteen sets:** Everything, Animals, Mammals, Wild animals on land and Make music with it (both
 made on 24 Nov by the helper, the second while the owner played), Birds, Dinosaurs, Plants, Vegetable
@@ -359,6 +359,10 @@ copy of the rules, and had drifted apart. Step 1 of five is built (`DESIGN.md`, 
   and the job can make it: `--only animal/wild_water` plans it from the map. Decisions about such a place
   are kept in the catalogue under `places`. Left of step 3: for old-road places the job still plans
   through its own tree. Only dry runs and self-tests have exercised the making of a crossing place.
+- **Step 4: the owner's page of the whole map**, at `http://localhost:8200/map` (`tools/live/map.html`,
+  served by the helper). Every place under the place it lies in, with its state, its questions and
+  kinds, and the reason where it cannot be played; the lines the game means to follow; a touch opens a
+  place's circles, roads and history. Looked at in the browser at desktop and phone width.
 
 ### Room for the set on a phone (24 Nov, night)
 The owner played on his phone and sent two pictures: the explanation "takes away too much vertical space
