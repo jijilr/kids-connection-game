@@ -7,8 +7,8 @@
  "places_by_state": {
   "ready": 16,
   "held": 52,
-  "can be made": 5,
-  "a group only": 9
+  "can be made": 9,
+  "a group only": 5
  },
  "places": {
   "seed": {
@@ -68,6 +68,7 @@
      "in_between_place": "in_between"
     }
    ],
+   "could_ask": [],
    "state": "ready",
    "why": "",
    "known_to_the_job": true,
@@ -216,6 +217,7 @@
      "in_between_place": "animal/in_between"
     }
    ],
+   "could_ask": [],
    "state": "ready",
    "why": "",
    "known_to_the_job": true,
@@ -297,6 +299,7 @@
      "in_between_place": "plant/in_between"
     }
    ],
+   "could_ask": [],
    "state": "ready",
    "why": "",
    "known_to_the_job": true,
@@ -371,6 +374,7 @@
      "in_between_place": "nature_not_alive/in_between"
     }
    ],
+   "could_ask": [],
    "state": "ready",
    "why": "",
    "known_to_the_job": true,
@@ -454,6 +458,7 @@
      "in_between_place": "made_by_people/in_between"
     }
    ],
+   "could_ask": [],
    "state": "ready",
    "why": "",
    "known_to_the_job": true,
@@ -532,6 +537,7 @@
      "in_between_place": "animal/mammal/in_between"
     }
    ],
+   "could_ask": [],
    "state": "ready",
    "why": "",
    "known_to_the_job": true,
@@ -656,6 +662,7 @@
      "in_between_place": "animal/bird/in_between"
     }
    ],
+   "could_ask": [],
    "state": "ready",
    "why": "",
    "known_to_the_job": true,
@@ -719,6 +726,18 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [
+    {
+     "question": "pet_farm_or_wild",
+     "wording": "Is it mostly a pet, a farm animal or a wild animal?",
+     "fill": {
+      "pet": 4,
+      "farm": 4,
+      "wild_land": 4
+     },
+     "more_things_needed": 12
+    }
+   ],
    "state": "held",
    "why": "the rules: \"Where does it mostly live?\": not every thing has one value: 6 of the 15 names sorted have no single group, and at most one in 8 may (Goldfish, Angelfish, Guppy, Betta fish, Zebra fish, Neon tetra); \"Where does this fish mostly live?\": not every thing has one value: 8 of the 18 names sorted have no single group, and at most one in 8 may (Goldfish, Guppy, Betta fish, Neon tetra, Angelfish, Zebra fish); \"What covers the fish's body?\": only 1 of its values have four familiar things, and a board needs four: 'Has scales' has 8, 'Has smooth skin' has 2, 'Has a hard shell' has 0, 'Has spines' has 1; \"Where does the fish swim?\": its groups have no sharp edges: both checks placed only 59% of the things where the proposer did (Goldfish: 'near_top' or 'middle'; Shark: 'near_bottom' or 'middle'; Clownfish: 'near_top' or 'hides_in_rocks'; Zebra fish: 'near_top' or 'middle')",
    "known_to_the_job": true,
@@ -801,6 +820,18 @@
    "things": 8,
    "with_pictures": 8,
    "asks": [],
+   "could_ask": [
+    {
+     "question": "pet_farm_or_wild",
+     "wording": "Is it mostly a pet, a farm animal or a wild animal?",
+     "fill": {
+      "pet": 4,
+      "farm": 4,
+      "wild_water": 4
+     },
+     "more_things_needed": 12
+    }
+   ],
    "state": "held",
    "why": "the rules: \"Where do we mostly see it?\": its groups have no sharp edges: both checks placed only 80% of the things where the proposer did (Ladybug: 'flowers' or 'garden'; Dragonfly: 'garden' or 'water'; Moth: 'flowers' or 'house'); \"How does it mostly move?\": its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Ladybug: 'flies' or 'no one group'; Beetle: 'walks' or 'crawls'; Cricket: 'walks' or 'hops'; Wasp: 'walks' or 'flies'); \"Where does it spend most of its life?\": its groups have no sharp edges: both checks placed only 81% of the things where the proposer did (Mosquito: 'land' or 'water'; Cricket: 'land' or 'no one group'; Wasp: 'land' or 'trees'); \"Where does it live?\": not every thing has one value: 2 of the 8 things there fit more than one group, and at most 1 may (Ant: in_the_soil and in_the_garden and in_the_house; Mosquito: in_the_house and in_the_garden); \"What does it do to people?\": not every thing has a value: Housefly - the two checks disagree: 'it_bites_or_stings' and 'none'; Cockroach - the two checks disagree: 'it_cleans_up' and 'none'; Grasshopper - it fits no group; \"How many legs does it have?\": only 1 of its values have four familiar things, and a board needs four: 'Six legs' has 13, 'Eight legs' has 0, 'Many legs' has 0, 'No legs' has 0",
    "known_to_the_job": true,
@@ -878,6 +909,7 @@
    "things": 12,
    "with_pictures": 12,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "the rules: \"What kind of reptile is it?\": only 3 of its values have four familiar things, and a board needs four: 'Snakes' has 6, 'Lizards' has 7, 'Turtles and tortoises' has 5, 'Crocodiles and their kin' has 2; \"How does it look?\": its groups have no sharp edges: both checks placed only 80% of the things where the proposer did (Crocodile: 'four_legs_and_bumpy_skin' or 'four_legs_and_scales'; Worm: 'long_and_no_legs' or 'no one group'; Eel: 'long_and_no_legs' or 'no one group'; Alligator: 'four_legs_and_bumpy_skin' or 'four_legs_and_scales'); \"How does it move?\": not every thing has one value: 4 of the 21 names sorted have no single group, and at most one in 8 may (Anaconda, Worm, Eel, Sea snake); \"Where does it live?\": not every thing has one value: 6 of the 12 things there fit more than one group, and at most 1 may (House lizard: in_houses and on_land; Crocodile: in_water and on_land; Turtle: in_water and on_land; Anaconda: in_water and on_land; Titanoboa: in_water and on_land; Vasuki indicus: in_water and on_land)",
    "known_to_the_job": true,
@@ -965,6 +997,7 @@
    "things": 0,
    "with_pictures": 0,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "the owner rejected it",
    "known_to_the_job": true,
@@ -1051,6 +1084,7 @@
      "in_between_place": "animal/dinosaur/in_between"
     }
    ],
+   "could_ask": [],
    "state": "ready",
    "why": "",
    "known_to_the_job": true,
@@ -1100,6 +1134,19 @@
    "things": 3,
    "with_pictures": 3,
    "asks": [],
+   "could_ask": [
+    {
+     "question": "pet_farm_or_wild",
+     "wording": "Is it mostly a pet, a farm animal or a wild animal?",
+     "fill": {
+      "wild_land": 1,
+      "pet": 4,
+      "farm": 4,
+      "wild_water": 4
+     },
+     "more_things_needed": 13
+    }
+   ],
    "state": "can be made",
    "why": "the job may prepare it: proposable",
    "known_to_the_job": true,
@@ -1130,8 +1177,19 @@
    "things": 9,
    "with_pictures": 9,
    "asks": [],
-   "state": "a group only",
-   "why": "it has no set of its own, and it exists only where circles cross: the job does not know such places yet",
+   "could_ask": [
+    {
+     "question": "kind_of_animal",
+     "wording": "What kind of animal is it?",
+     "fill": {
+      "fish": 4,
+      "insect": 4
+     },
+     "more_things_needed": 8
+    }
+   ],
+   "state": "can be made",
+   "why": "8 more thing(s) would let it be sorted by \"What kind of animal is it?\"",
    "known_to_the_job": false,
    "history": []
   },
@@ -1160,8 +1218,19 @@
    "things": 9,
    "with_pictures": 9,
    "asks": [],
-   "state": "a group only",
-   "why": "it has no set of its own, and it exists only where circles cross: the job does not know such places yet",
+   "could_ask": [
+    {
+     "question": "kind_of_animal",
+     "wording": "What kind of animal is it?",
+     "fill": {
+      "fish": 4,
+      "insect": 4
+     },
+     "more_things_needed": 8
+    }
+   ],
+   "state": "can be made",
+   "why": "8 more thing(s) would let it be sorted by \"What kind of animal is it?\"",
    "known_to_the_job": false,
    "history": []
   },
@@ -1265,6 +1334,7 @@
      "in_between_place": "animal/in_between/wild_land"
     }
    ],
+   "could_ask": [],
    "state": "ready",
    "why": "",
    "known_to_the_job": false,
@@ -1295,8 +1365,18 @@
    "things": 15,
    "with_pictures": 15,
    "asks": [],
-   "state": "a group only",
-   "why": "it has no set of its own, and it exists only where circles cross: the job does not know such places yet",
+   "could_ask": [
+    {
+     "question": "kind_of_animal",
+     "wording": "What kind of animal is it?",
+     "fill": {
+      "reptile": 2
+     },
+     "more_things_needed": 2
+    }
+   ],
+   "state": "can be made",
+   "why": "2 more thing(s) would let it be sorted by \"What kind of animal is it?\"",
    "known_to_the_job": false,
    "history": []
   },
@@ -1325,8 +1405,21 @@
    "things": 2,
    "with_pictures": 2,
    "asks": [],
-   "state": "a group only",
-   "why": "it has no set of its own, and it exists only where circles cross: the job does not know such places yet",
+   "could_ask": [
+    {
+     "question": "kind_of_animal",
+     "wording": "What kind of animal is it?",
+     "fill": {
+      "bird": 3,
+      "fish": 3,
+      "mammal": 4,
+      "insect": 4
+     },
+     "more_things_needed": 14
+    }
+   ],
+   "state": "can be made",
+   "why": "14 more thing(s) would let it be sorted by \"What kind of animal is it?\"",
    "known_to_the_job": false,
    "history": []
   },
@@ -1355,6 +1448,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "the rules: \"What kind of tree is it mostly?\": not every thing has one value: 4 of the 23 names sorted have no single group, and at most one in 8 may (Coconut tree, Date palm, Tamarind tree, Jackfruit tree); \"What shape are the leaves?\": not every thing has one value: 5 of the 21 names sorted have no single group, and at most one in 8 may (Guava tree, Ashoka tree, Elephant ear plant, Hibiscus plant, Lemon tree); \"What is the trunk like?\": not every thing has one value: 2 of the 15 names sorted have no single group, and at most one in 8 may (Guava tree, Lemon tree); \"What kind of fruit does it give?\": not every thing has a value: Banana plant - it fits more than one group",
    "known_to_the_job": true,
@@ -1445,6 +1539,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "the rules: \"What does the flower mostly grow on?\": its groups have no sharp edges: both checks placed only 82% of the things where the proposer did (Marigold: 'bush' or 'small_plant'; Jasmine: 'bush' or 'climber'; Bougainvillea: 'bush' or 'climber'); \"Where does it mostly grow?\": only 2 of its values have four familiar things, and a board needs four: 'In water' has 2, 'In farm fields' has 2, 'In gardens and parks' has 8, 'In forests' has 4, 'In dry, sandy places' has 1; \"How does it grow?\": only 1 of its values have four familiar things, and a board needs four: 'Tall, with a woody trunk' has 0, 'As a bush' has 2, 'As a small soft plant' has 9, 'Climbing up a support' has 2, 'Creeping along the ground' has 0, 'Like grass' has 0; \"Where does this flower mostly grow?\": its groups have no sharp edges: both checks placed only 83% of the things where the proposer did (Sunflower: 'in_farm_field' or 'no one group'; Daisy: 'in_garden' or 'no one group'; Bougainvillea: 'in_wild_forest' or 'in_garden'); \"What do we mostly use this flower for?\": not every thing has one value: 3 of the 4 things there fit more than one group, and at most 1 may (Rose: for_giving and for_decorating; Sunflower: for_decorating and for_eating; Marigold: for_prayer and for_decorating); \"How long does this flower usually last?\": not every thing has one value: 4 of the 4 things there fit more than one group, and at most 1 may (Rose: few_days and many_days; Sunflower: few_days and many_days; Lotus: few_days and many_days; Marigold: few_days and many_days)",
    "known_to_the_job": true,
@@ -1535,6 +1630,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "the rules: \"What do we mostly get from it?\": not every thing has one value: 3 of the 10 names sorted have no single group, and at most one in 8 may (Jowar plant, Bajra plant, Ragi plant); \"Where does it grow?\": only 1 of its values have four familiar things, and a board needs four: 'In water' has 1, 'On land' has 4, 'In desert' has 0, 'In mountains' has 0; \"What do we get from it?\": only 0 of its values have four familiar things, and a board needs four: 'Grains' has 2, 'Sugar' has 1, 'Wood' has 0, 'Fodder' has 1; \"How does it look?\": not every thing has one value: 2 of the 5 things there fit more than one group, and at most 1 may (Rice plant: short_and_green and tall_and_thin; Wheat: short_and_green and tall_and_thin)",
    "known_to_the_job": true,
@@ -1673,6 +1769,7 @@
      "in_between_place": "plant/vegetable/in_between"
     }
    ],
+   "could_ask": [],
    "state": "ready",
    "why": "",
    "known_to_the_job": true,
@@ -1731,6 +1828,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "the rules: \"What is it mostly?\": only 1 of its values have four familiar things, and a board needs four: 'A light that shines by itself' has 3, 'A round world in space' has 4, 'Water in the air' has 3, 'Moving air' has 3; \"What kind of light in the sky is it?\": only 2 of its values have four familiar things, and a board needs four: 'The Sun' has 6, 'The Moon' has 4, 'A Cloud' has 1, 'A Star' has 1; \"What kind of thing in the sky is it?\": not every thing has one value: 3 of the 14 names sorted have no single group, and at most one in 8 may (Sunrise, Sunset, Shooting Star); \"What kind of light in the sky at night is it?\": only 3 of its values have four familiar things, and a board needs four: 'The Sun' has 7, 'The Moon' has 4, 'A Cloud' has 1, 'A Star' has 4",
    "known_to_the_job": true,
@@ -1821,6 +1919,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "the rules: \"Does the water flow or stay still?\": only 3 of its values have four familiar things, and a board needs four: 'Water that flows' has 6, 'Water that stays still' has 6, 'Water with big waves' has 1, 'Water that is frozen hard' has 5; \"Is the water salty or not salty?\": not every thing has one value: 6 of the 20 names sorted have no single group, and at most one in 8 may (Harbor, Shore, Iceberg, Hail, Mist, Dew); \"Is the water big or small?\": its groups have no sharp edges: both checks placed only 78% of the things where the proposer did (Bay: 'very_big' or 'big'; Harbor: 'very_big' or 'big'; Shore: 'very_big' or 'no one group'; Puddle: 'small' or 'tiny')",
    "known_to_the_job": true,
@@ -1903,6 +2002,17 @@
    "things": 13,
    "with_pictures": 13,
    "asks": [],
+   "could_ask": [
+    {
+     "question": "shape_of_the_land",
+     "wording": "What is the land mostly like there?",
+     "fill": {
+      "flat": 1,
+      "by_water": 3
+     },
+     "more_things_needed": 4
+    }
+   ],
    "state": "held",
    "why": "the rules: too few familiar things of their own: land beside water has Beach, with Island and River bank ready, and needs four; flat land has Desert, Field and Meadow, and needs four",
    "known_to_the_job": true,
@@ -1973,6 +2083,7 @@
    "things": 9,
    "with_pictures": 9,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "the rules: \"What is it mostly?\": its groups have no sharp edges: both checks placed only 76% of the things where the proposer did (Brick: 'rock' or 'no one group'; Concrete: 'rock' or 'no one group'; Marble: 'rock' or 'no one group'; Gold: 'dug_to_use' or 'precious'); \"Where do you mostly find it?\": not every thing has one value: 6 of the 9 things there fit more than one group, and at most 1 may (Rock: in_the_ground and on_the_ground; Sand: on_the_beach and in_the_ground; Mud: in_wet_places and in_the_ground; Boulder: on_the_ground and in_the_ground; Pebble: on_the_ground and on_the_beach; Gravel: on_the_ground and in_the_ground); \"What is it mostly made of?\": only 1 of its values have four familiar things, and a board needs four: 'Tiny grains' has 2, 'Small stones' has 4, 'Big stones' has 3, 'Soft and wet' has 3; \"How does it feel when you touch it?\": not every thing has one value: 3 of the 9 things there fit more than one group, and at most 1 may (Rock: hard_and_smooth and rough_and_grainy and big_and_heavy; Boulder: big_and_heavy and hard_and_smooth and rough_and_grainy; Pebble: hard_and_smooth and rough_and_grainy)",
    "known_to_the_job": true,
@@ -2049,8 +2160,9 @@
    "things": 1,
    "with_pictures": 1,
    "asks": [],
+   "could_ask": [],
    "state": "a group only",
-   "why": "it has no set of its own, and it exists only where circles cross: the job does not know such places yet",
+   "why": "it has no set of its own: no question that all its things answer has four kinds",
    "known_to_the_job": false,
    "history": []
   },
@@ -2127,6 +2239,7 @@
      "in_between_place": "made_by_people/vehicle/in_between"
     }
    ],
+   "could_ask": [],
    "state": "ready",
    "why": "",
    "known_to_the_job": true,
@@ -2240,6 +2353,7 @@
      "in_between_place": "made_by_people/toy/in_between"
     }
    ],
+   "could_ask": [],
    "state": "ready",
    "why": "",
    "known_to_the_job": true,
@@ -2364,6 +2478,7 @@
      "in_between_place": "made_by_people/household/in_between"
     }
    ],
+   "could_ask": [],
    "state": "ready",
    "why": "",
    "known_to_the_job": true,
@@ -2402,6 +2517,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "the rules: \"Who mostly uses it?\": not every thing has one value: 4 of the 5 things there fit more than one group, and at most 1 may (Hammer: carpenter and builder; Spade: farmer and builder; Saw: carpenter and builder; Screwdriver: mechanic and carpenter); \"What job does it mostly do?\": its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Nail: 'hits' or 'no one group'; Pestle: 'hits' or 'no one group'; Hatchet: 'hits' or 'cuts'; Pickaxe: 'hits' or 'digs'); \"What mostly makes it go?\": not every thing has one value: 4 of the 23 names sorted have no single group, and at most one in 8 may (Lawn mower, Water pump, Cement mixer, Sewing machine); \"What kind of work does this tool do?\": its groups have no sharp edges: both checks placed only 80% of the things where the proposer did (Axe: 'hits_and_breaks' or 'cuts_and_slices'; Pickaxe: 'hits_and_breaks' or 'no one group'; Hatchet: 'hits_and_breaks' or 'cuts_and_slices'; Screw: 'turns_and_tightens' or 'no one group'); \"How do we use this tool?\": its groups have no sharp edges: both checks placed only 79% of the things where the proposer did (Axe: 'hit_and_knock' or 'cut_and_chop'; Pickaxe: 'hit_and_knock' or 'no one group'; Hatchet: 'hit_and_knock' or 'cut_and_chop'; Screw: 'turn_and_tighten' or 'no one group'); \"What shape is the part that does the work?\": not every thing has one value: 7 of the 20 names sorted have no single group, and at most one in 8 may (Screwdriver, Scissors, Wrench, Pliers, Bolt, Nut)",
    "known_to_the_job": true,
@@ -2567,6 +2683,7 @@
      "in_between_place": "made_by_people/building/in_between"
     }
    ],
+   "could_ask": [],
    "state": "ready",
    "why": "",
    "known_to_the_job": true,
@@ -2643,6 +2760,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -2681,6 +2799,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -2768,6 +2887,7 @@
      "in_between_place": "animal/mammal/wild_land/in_between"
     }
    ],
+   "could_ask": [],
    "state": "ready",
    "why": "",
    "known_to_the_job": true,
@@ -2813,6 +2933,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -2851,6 +2972,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -2889,6 +3011,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -2928,6 +3051,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -2966,6 +3090,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3004,8 +3129,9 @@
    "things": 1,
    "with_pictures": 1,
    "asks": [],
+   "could_ask": [],
    "state": "a group only",
-   "why": "it has no set of its own, and it exists only where circles cross: the job does not know such places yet",
+   "why": "it has no set of its own: no question that all its things answer has four kinds",
    "known_to_the_job": false,
    "history": []
   },
@@ -3038,6 +3164,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3072,6 +3199,7 @@
    "things": 13,
    "with_pictures": 13,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "the rules: \"Which dinosaur family does it belong to?\": not every thing has a value: Parasaurolophus - it fits no group; \"What does its body look like?\": only 2 of its values have four familiar things, and a board needs four: 'Huge with a long neck' has 9, 'Big head with horns' has 4, 'Armour plates and tail club' has 2, 'Duck bill with a crest' has 3, 'Bone head with a dome' has 1; \"How does it stand?\": it has 2 values, and a board needs four; \"What does it use to fight?\": only 2 of its values have four familiar things, and a board needs four: 'Horns on its head' has 5, 'A club on its tail' has 1, 'Spikes on its tail' has 2, 'A hard bone head' has 1, 'No weapon, just big' has 11",
    "known_to_the_job": true,
@@ -3152,6 +3280,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3186,6 +3315,7 @@
    "things": 6,
    "with_pictures": 6,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3224,8 +3354,9 @@
    "things": 8,
    "with_pictures": 8,
    "asks": [],
+   "could_ask": [],
    "state": "a group only",
-   "why": "it has no set of its own, and it exists only where circles cross: the job does not know such places yet",
+   "why": "it has no set of its own: no question that all its things answer has four kinds",
    "known_to_the_job": false,
    "history": []
   },
@@ -3262,8 +3393,9 @@
    "things": 8,
    "with_pictures": 8,
    "asks": [],
+   "could_ask": [],
    "state": "a group only",
-   "why": "it has no set of its own, and it exists only where circles cross: the job does not know such places yet",
+   "why": "it has no set of its own: no question that all its things answer has four kinds",
    "known_to_the_job": false,
    "history": []
   },
@@ -3300,8 +3432,9 @@
    "things": 3,
    "with_pictures": 3,
    "asks": [],
+   "could_ask": [],
    "state": "a group only",
-   "why": "it has no set of its own, and it exists only where circles cross: the job does not know such places yet",
+   "why": "it has no set of its own: no question that all its things answer has four kinds",
    "known_to_the_job": false,
    "history": []
   },
@@ -3334,6 +3467,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3368,6 +3502,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3402,6 +3537,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3436,6 +3572,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3470,6 +3607,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3504,6 +3642,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3538,6 +3677,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3572,6 +3712,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3606,6 +3747,7 @@
    "things": 3,
    "with_pictures": 3,
    "asks": [],
+   "could_ask": [],
    "state": "can be made",
    "why": "the job may prepare it: proposable",
    "known_to_the_job": true,
@@ -3640,6 +3782,7 @@
    "things": 0,
    "with_pictures": 0,
    "asks": [],
+   "could_ask": [],
    "state": "can be made",
    "why": "the job may prepare it: proposable",
    "known_to_the_job": true,
@@ -3674,6 +3817,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3708,6 +3852,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3742,6 +3887,7 @@
    "things": 1,
    "with_pictures": 1,
    "asks": [],
+   "could_ask": [],
    "state": "can be made",
    "why": "the job may prepare it: proposable",
    "known_to_the_job": true,
@@ -3776,6 +3922,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3858,6 +4005,7 @@
      "in_between_place": "made_by_people/toy/music/in_between"
     }
    ],
+   "could_ask": [],
    "state": "ready",
    "why": "",
    "known_to_the_job": true,
@@ -3899,6 +4047,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3933,6 +4082,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -3967,6 +4117,7 @@
    "things": 8,
    "with_pictures": 8,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -4001,6 +4152,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -4035,6 +4187,7 @@
    "things": 1,
    "with_pictures": 1,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "the rules: too few familiar things of their own for: Things people make > Buildings > Live",
    "known_to_the_job": true,
@@ -4077,6 +4230,7 @@
    "things": 1,
    "with_pictures": 1,
    "asks": [],
+   "could_ask": [],
    "state": "can be made",
    "why": "the job may prepare it: proposable",
    "known_to_the_job": true,
@@ -4111,6 +4265,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -4145,6 +4300,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -4179,6 +4335,7 @@
    "things": 2,
    "with_pictures": 2,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "the rules: too few familiar things of their own: Hospital and Clinic; a health centre and a doctor's office cannot be told from a clinic",
    "known_to_the_job": true,
@@ -4221,6 +4378,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -4255,6 +4413,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -4293,6 +4452,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 4 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -4331,6 +4491,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 4 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -4369,6 +4530,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 4 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -4407,6 +4569,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 4 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -4445,6 +4608,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 4 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -4483,6 +4647,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 4 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -4521,6 +4686,7 @@
    "things": 4,
    "with_pictures": 4,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 4 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,
@@ -4559,6 +4725,7 @@
    "things": 5,
    "with_pictures": 5,
    "asks": [],
+   "could_ask": [],
    "state": "held",
    "why": "depth gap: its branch would be 4 levels deep while the shallowest branch is at 1",
    "known_to_the_job": true,

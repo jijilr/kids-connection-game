@@ -57,6 +57,26 @@ def test_the_state_names_what_the_game_needs():
     assert any(name.startswith("Assets/audio/names/") for name in state["files"])
 
 
+def test_what_can_open_and_what_can_never_be_made_is_read_from_the_map():
+    places = {"animal": {"state": "ready"}, "animal/wild_land": {"state": "ready"},
+              "animal/wild_water": {"state": "can be made", "why": "2 more things"},
+              "animal/bird/pet": {"state": "held", "why": "the rules: too few"},
+              "nature_not_alive/sky/planet": {"state": "end", "why": "the world holds only 8"},
+              "animal/in_between": {"state": "a group only", "why": "no question"}}
+    opens, never = helper.can_open_now(places), helper.cannot_be_made(places)
+    assert opens["animal/wild_land"] is True, "a place that exists only where circles cross is known now"
+    assert opens["animal/wild_water"] is False and "animal/wild_water" not in never, "it can be made: it is wanted"
+    assert never == {"animal/bird/pet": "held: the rules: too few",
+                     "nature_not_alive/sky/planet": "end: the world holds only 8",
+                     "animal/in_between": "a group only: no question"}
+    lines = ["nature_not_alive/sky/planet", "animal/bird/pet", "animal/wild_land", "animal/wild_water", "animal"]
+    assert helper.next_to_make(lines, opens, never, buffer=3) == "animal/wild_water", \
+        "the end and the held place take no room in the buffer; the first of his best three that is not ready is made"
+    # and the real map answers for the real places
+    real = helper.places_now()
+    assert helper.can_open_now(real)["seed"] is True and len(real) > 50
+
+
 def main():
     tests = [value for name, value in globals().items() if name.startswith("test_")]
     for test in tests:

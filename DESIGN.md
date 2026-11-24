@@ -504,7 +504,7 @@ On the night it was first built the map held 82 places: 16 ready, 52 held, 5 tha
 |---|---|---|
 | 1 | The builder and the map, with a test that the map and the game agree on every place | **built** |
 | 2 | The game reads the map and drops its own copy of the rules | **built** |
-| 3 | The helper and the job read the map and write their results to the master records | not built |
+| 3 | The helper and the job read the map and write their results to the master records | **built**, with one part left (below) |
 | 4 | A page for the owner: the whole map, every place by its state | not built |
 | 5 | Things stored by place, so a phone loads only the places near his lines | not built |
 
@@ -531,6 +531,29 @@ How the two ends are held together:
 - The map and the things are written a moment apart. The map says how many things it was built
   for, and the game does not take up a map and a list of things that do not match.
 - Without a map the game can still play its first set, and nothing beyond it.
+
+### Step 3: the helper and the job
+
+- **The helper reads the map** and nothing else to know about places: what can open, what is
+  never to be tried and why (an end, a place the rules hold, a group no question can sort),
+  and which of his lines to make next. It no longer reads the job's printed words to guess why
+  a set could not be made. It tells the game, for each of his lines, the state and the reason.
+- **A place that cannot make a set says what it would take.** The map's `could_ask` names the
+  question it could be sorted by and the kinds that are short. "Wild animals in water" needs
+  two more reptiles to be sorted by kind of animal.
+- **The job makes such a place** from what the map says: each short kind is an ordinary need,
+  and its things must lie in every circle of the place (`plan_place` in
+  `tools/prepare_next.py`). So `--only animal/wild_water` now works; before, the job did not
+  know the place existed.
+- **What was decided about such a place is kept in the catalogue**, under `places`
+  (`record_place`), and the map carries it as the place's history and state: tried and not
+  filled means held, until its things change.
+
+What is left of step 3: for the places on the old single road, the job's planning still goes
+through its own tree (`tools/content/expand.py`) and the catalogue's `worked_out`. They agree
+with the map, and the map carries their decisions, but the rule "the first question that
+sorts a place" is still written there as well. Only a dry run and the self-tests have exercised
+the making of a crossing place; no money has been spent on a real one.
 
 Command: `python tools/catalogue/places.py` builds the map and lists it;
 `python tools/catalogue/places.py show PLACE` prints one record.
@@ -566,7 +589,7 @@ With general use decided, that wording is the next thing to turn into a setting.
 | In between (7) | built | the two keys are written, tested and tried; no run uses them yet (one rule is open) |
 | Widening (8) | meets a wider place by rule 5 | built as a command; the helper does not widen by itself |
 | Circles that cross (8a) | built | one question widened by a command; the job and helper still know one road |
-| The map of places (8b) | reads it, and works out no place for itself | the builder writes it; the job and helper do not read it yet (step 3) |
+| The map of places (8b) | reads it, and works out no place for itself | the helper reads only the map; the job makes crossing places from it, and plans old-road places from its tree still |
 
 ## 11. Open questions
 

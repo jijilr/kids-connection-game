@@ -121,6 +121,7 @@ import reslib                                # noqa: E402  DeepSeek, with a hard
 import fields as field_rules                 # noqa: E402  the four tests a new field must pass
 import ends                                  # noqa: E402  the end of a branch: counted, not judged
 import widen                                 # noqa: E402  a new kind beside the kinds a set already has
+import places as place_map                   # noqa: E402  the map of every place: the one statement of what a place is
 from boards import GROUPS, PER_GROUP, make_board, members, second_solution_rate, split   # noqa: E402
 from expand import AMBIGUITY_LIMIT, HELD_BY_RULES, build_circles, in_order   # noqa: E402
 from expand import rebuild as rebuild_tree, record as record_decision      # noqa: E402
@@ -510,6 +511,35 @@ def plan(catalogue: dict, rehearse: str = None, played: set = None, asked: set =
     return {"asks": asks, "circles": circles, "blocked": blocked, "nothing_to_do": nothing, "held_back": held_back,
             "played": sorted(played) if played is not None else None,
             "mastered": sorted(mastered)}
+
+
+def plan_place(the_map: dict, pid: str) -> dict:
+    """What a run sets out to do for a place that is on the map and not in the job's tree: a
+    place that exists only where circles cross (the wild animals in water, across every kind
+    of animal). The map says which question it could be sorted by and which kinds are short;
+    each short kind becomes an ordinary need, and its things must lie in every circle of the
+    place. The job works nothing out about the place for itself."""
+    place = the_map["places"][pid]
+    dictionary = cat.read_json(cat.DICTIONARY)
+    chain = " > ".join(dictionary["fields"][f]["values"].get(str(v), str(v)) for f, v in place["circles"]) or place["name"]
+    plan = {"asks": [], "circles": [], "blocked": [], "nothing_to_do": [], "held_back": [], "played": None,
+            "mastered": [], "place": pid}
+    if place["state"] == "ready":
+        plan["nothing_to_do"].append(f"{place['name']}: it can already open")
+    elif place["state"] in ("end", "held", "a group only") or not place.get("could_ask"):
+        plan["blocked"].append(f"{place['name']}: {place['state']}: {place['why']}")
+    else:
+        best = place["could_ask"][0]
+        asks = []
+        for kind, need in best["fill"].items():
+            fixed = {**{f: v for f, v in place["circles"]}, best["question"]: kind}     # the kind last: it is the group
+            asks.append({"circle": pid, "chain": labels_along(dictionary, fixed), "fixed": fixed, "need": need,
+                         "recorded_but_not_in_the_game": []})
+        plan["circles"].append({"circle": pid, "label": place["name"], "chain": chain, "needs_field": False,
+                                "on_the_map_only": True, "question": best["question"],
+                                "path": [list(step) for step in place["circles"]], "asks_from_the_map": asks,
+                                "expect_things": sum(a["need"] + SPARE for a in asks)})
+    return plan
 
 
 def plan_widen(catalogue: dict, cid: str) -> dict:
@@ -1558,6 +1588,10 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
             entry["field_added"] = True
             state["dictionary"] = cat.read_json(cat.DICTIONARY)
             save()
+        if "asks" not in entry and entry.get("on_the_map_only"):
+            entry["asks"] = list(range(len(asks_of_run), len(asks_of_run) + len(entry["asks_from_the_map"])))
+            asks_of_run.extend(entry["asks_from_the_map"])
+            save()
         if "asks" not in entry:
             its_asks, its_blocked = asks_for(cat.load(), entry["circle"])
             run["plan"]["blocked"] += its_blocked
@@ -1568,7 +1602,7 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
             do_ask(number, asks_of_run[number])
         # A field may have more than four values. Where a group could not be filled with things
         # of their own, the run turns to another of the field's values, rather than pad the group.
-        for turn in range(2):
+        for turn in range(0 if entry.get("on_the_map_only") else 2):
             value = lambda n: str(list(asks_of_run[n]["fixed"].values())[-1])
             got = lambda n: sum(1 for t in run["things"] if t.get("ask") == n and t["passed"])
             # (only the needs of the field's own groups: a circle that is itself too thin has no other value to turn to)
@@ -1589,6 +1623,16 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
         # run: the circle is held by the rules until its things change.
         unmet = [asks_of_run[n]["chain"] for n in entry["asks"]
                  if sum(1 for t in run["things"] if t.get("ask") == n and t["passed"]) < asks_of_run[n]["need"]]
+        if entry.get("on_the_map_only"):
+            # a place the tree does not know: what happened is written on the place, in the catalogue
+            if unmet and not run["rehearse"]:
+                inside = len(members(cat.game_copy(cat.load())["things"], [tuple(step) for step in entry["path"]]))
+                cat.record_place(entry["circle"], f"job run {run['id']} could not fill it",
+                                 "too few well-known things of their own for: " + "; ".join(unmet),
+                                 status=HELD_BY_RULES, things_then=inside, run=run["id"])
+            entry["done"] = True
+            save()
+            return True
         if unmet and not run["rehearse"]:
             now = cat.game_copy(cat.load())["things"]
             raw = build_circles(state["dictionary"], now, cat.read_json(cat.SETTINGS))
@@ -1823,14 +1867,17 @@ def main():
         if wrong:
             raise SystemExit("The catalogue's guard fails, so the job will not start:\n  - " + "\n  - ".join(wrong))
         rehearse, only, wider = option("--rehearse"), option("--only"), option("--widen")
+        the_map = place_map.write()                 # the map as the data now stands
+        on_the_map_only = bool(only) and only not in catalogue["worked_out"]["circles"] and only in the_map["places"]
         for named in (rehearse, only, wider):
-            if named and named not in catalogue["worked_out"]["circles"]:
-                raise SystemExit(f"No circle '{named}'. See: python tools/catalogue/catalogue.py circles")
+            if named and named not in catalogue["worked_out"]["circles"] and not (named == only and on_the_map_only):
+                raise SystemExit(f"No place '{named}'. See: python tools/catalogue/places.py")
         alone = rehearse or only or wider
         played = None if alone else read_progress(option("--progress") or PROGRESS)
         asked = set() if alone else read_orders(option("--progress") or PROGRESS)
         mastered = set() if alone else read_mastery(option("--progress") or PROGRESS)
-        the_plan = plan_widen(catalogue, wider) if wider else plan(catalogue, rehearse, played, asked, mastered, only)
+        the_plan = (plan_place(the_map, only) if on_the_map_only else plan_widen(catalogue, wider) if wider
+                    else plan(catalogue, rehearse, played, asked, mastered, only))
         likely, fit = expected_cost(the_plan, rate, cap)
         say("PLAN" + (f" (a rehearsal of '{rehearse}': nothing will enter the game)" if rehearse else ""))
         if only:

@@ -1149,6 +1149,33 @@ def test_words_that_are_no_longer_true_of_a_widened_group_are_set_aside_not_kept
     assert [w for w in wrong if "not true" in w] == wrong[-2:] or len([w for w in wrong if "not true" in w]) == 2
 
 
+# ------------------------------------------------------------------ the map of places
+
+def test_a_place_the_tree_never_knew_is_planned_from_the_map():
+    """The owner, 24 Nov 2026: the map is "the nerve system of the whole thing". The job works
+    nothing out about such a place for itself: the map says what it could be asked and which
+    kinds are short, and each short kind is an ordinary need inside every circle of the place."""
+    the_map = {"places": {
+        "animal/wild_water": {"name": "Wild animals in water", "state": "can be made", "why": "2 more",
+                              "circles": [["kind_of_thing", "animal"], ["pet_farm_or_wild", "wild_water"]],
+                              "could_ask": [{"question": "kind_of_animal", "wording": "What kind of animal is it?",
+                                             "fill": {"reptile": 2}, "more_things_needed": 2}]},
+        "animal/wild_land": {"name": "Wild animals on land", "state": "ready", "why": "", "circles": [], "could_ask": []},
+        "animal/bird/pet": {"name": "Pets at home", "state": "held", "why": "the rules: too few", "circles": [], "could_ask": []},
+    }}
+    plan = job.plan_place(the_map, "animal/wild_water")
+    entry = plan["circles"][0]
+    assert entry["on_the_map_only"] and entry["circle"] == "animal/wild_water" and not entry["needs_field"]
+    ask = entry["asks_from_the_map"][0]
+    assert list(ask["fixed"].items()) == [("kind_of_thing", "animal"), ("pet_farm_or_wild", "wild_water"),
+                                          ("kind_of_animal", "reptile")], "every circle of the place, and the kind last"
+    assert ask["need"] == 2 and ask["circle"] == "animal/wild_water"
+    assert ask["chain"] == "Animals > Wild animals in water > Reptiles"
+    assert job.plan_place(the_map, "animal/wild_land")["nothing_to_do"] == ["Wild animals on land: it can already open"]
+    held = job.plan_place(the_map, "animal/bird/pet")
+    assert held["circles"] == [] and held["blocked"] == ["Pets at home: held: the rules: too few"]
+
+
 def main():
     tests = [value for name, value in globals().items() if name.startswith("test_")]
     for test in tests:

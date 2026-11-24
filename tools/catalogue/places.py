@@ -151,6 +151,31 @@ class World:
         self._asked[key] = asked
         return asked
 
+    def could_ask(self, circles: list) -> list:
+        """For a place that cannot make a set yet: the questions it could be sorted by once it
+        has more things. A question counts when it is not one of the place's circles, every
+        thing of the place answers it, and it has four kinds or more. For each: how many
+        things with pictures each kind has here, and the fewest more that would give four
+        kinds of four, taking the kinds nearest to full."""
+        pool = self.inside(circles)
+        if not pool or self.asked_at(circles):
+            return []
+        taken, out = {f for f, _ in circles}, []
+        for name, field in self.fields.items():
+            if name in taken or not field["sorts"] or len(field["kinds"]) < GROUPS:
+                continue
+            if not all(name in self.things[k]["fields"] for k in pool):
+                continue
+            drawn = self.shown_counts(circles, name, self.styles[0] if self.styles else None)
+            have = {v: min(drawn.get(v, 0), PER_GROUP) for v in field["kinds"] if v not in self.held_back.get(name, ())}
+            nearest = sorted(have, key=lambda v: -have[v])[:GROUPS]
+            if len(nearest) < GROUPS:
+                continue
+            out.append({"question": name, "wording": field["wording"],
+                        "fill": {v: PER_GROUP - have[v] for v in nearest if have[v] < PER_GROUP},
+                        "more_things_needed": sum(PER_GROUP - have[v] for v in nearest)})
+        return sorted(out, key=lambda c: c["more_things_needed"])
+
     def shown_counts(self, circles: list, question: str, style) -> dict:
         """kind -> how many of its things here can be shown in a style (None: by name only)."""
         counts = {}
@@ -184,14 +209,18 @@ def styles_on_disk(things: dict) -> list:
 
 
 def build(dictionary: dict = None, things: dict = None, settings: dict = None, styles: list = None,
-          tree: dict = None, words: dict = None) -> dict:
-    """The map, from the master records as they stand on disk (or as given, for a test)."""
+          tree: dict = None, words: dict = None, decided: dict = None) -> dict:
+    """The map, from the master records as they stand on disk (or as given, for a test).
+    `decided` are the decisions on record about places the job's tree does not know (those
+    that exist only where circles cross): place -> {"decisions": [...]}, kept in the catalogue."""
     dictionary = dictionary or read_json(DATA / "dictionary.json")
     things = things if things is not None else read_json(DATA / "things.json")["things"]
     settings = settings or read_json(DATA / "settings.json")
     world = World(dictionary, things, settings, styles if styles is not None else styles_on_disk(things))
     tree = tree if tree is not None else (read_json(TREE, {}) or {}).get("circles", {})
-    words = words if words is not None else (read_json(CATALOGUE, {}) or {}).get("groups", {})
+    master = read_json(CATALOGUE, {}) or {}
+    words = words if words is not None else master.get("groups", {})
+    decided = decided if decided is not None else master.get("places", {})
     need_pictures = settings.get("boards_need_pictures", False)
     ends = dictionary.get("ends", {})
 
@@ -249,6 +278,9 @@ def build(dictionary: dict = None, things: dict = None, settings: dict = None, s
                 if any(q == step[0] for q, _ in world.asked_at(rest)):
                     roads.append(world.name_of(rest))
         old = tree.get(name, {})
+        history = old.get("decisions", []) + (decided.get(name) or {}).get("decisions", [])
+        last = next((d for d in reversed((decided.get(name) or {}).get("decisions", [])) if d.get("status")), {})
+        could = world.could_ask(circles)
         ready = any(a["makes_a_set"] for a in asks)
         if name in ends:
             mark = ends[name]
@@ -259,9 +291,15 @@ def build(dictionary: dict = None, things: dict = None, settings: dict = None, s
             state, why = "held", old.get("held_by") or ("the owner rejected it" if old["status"] == "rejected" else "")
         elif old:
             state, why = "can be made", "the job may prepare it: " + str(old.get("status", ""))
+        elif last.get("status") == "held by the rules" and last.get("things_then") == len(pool):
+            # tried and not filled: held until its things change, as the job's tree holds its own
+            state, why = "held", "the rules: " + str(last.get("why", ""))
+        elif could:
+            best = could[0]
+            state, why = "can be made", (f'{best["more_things_needed"]} more thing(s) would let it be sorted by '
+                                         f'"{best["wording"]}"')
         else:
-            state, why = "a group only", ("it has no set of its own, and it exists only where circles cross: "
-                                          "the job does not know such places yet")
+            state, why = "a group only", "it has no set of its own: no question that all its things answer has four kinds"
         last = circles[-1] if circles else None
         records[name] = {
             "name": world.fields[last[0]]["values"].get(last[1], last[1]) if last else settings["start"]["label"],
@@ -272,10 +310,11 @@ def build(dictionary: dict = None, things: dict = None, settings: dict = None, s
             "things": len(pool),
             "with_pictures": sum(1 for k in pool if world.styles and k in world.styles[0]),
             "asks": asks,
+            "could_ask": could,
             "state": state,
             "why": why,
             "known_to_the_job": name in tree,
-            "history": old.get("decisions", []),
+            "history": history,
         }
     counts = {}
     for record in records.values():

@@ -35,8 +35,6 @@ import threading
 import urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "tools/catalogue"))
-import catalogue as cat      # noqa: E402  the master record: which sets can open now
 
 WEB = ROOT / "build/web"
 ASSETS = ROOT / "Assets"
@@ -98,15 +96,24 @@ def spent_inr(run_folder: pathlib.Path) -> float:
     return round(sum((run.get("spent_usd") or {}).values()) * rate, 1)
 
 
-def can_open_now() -> dict:
-    return {cid: bool(c.get("can_open_now")) for cid, c in cat.load()["worked_out"]["circles"].items()}
+def places_now() -> dict:
+    """The map of every place, as it stands (Assets/data/places.json, built by
+    tools/catalogue/places.py). Since 24 Nov 2026 the helper works nothing out about places
+    for itself: what can open, what cannot and why, and what is the end of a branch is read
+    from the map, the same one the game reads."""
+    return (read_json(ASSETS / "data/places.json", {}) or {}).get("places", {})
 
 
-def ends_now() -> dict:
-    """Circles that are the end of their branch (tools/job/ends.py): circle -> why. Nothing
-    lies below them, so they are never made, and the game lets such a line go."""
-    tree = read_json(ROOT / "tools/content/expansion_tree.json", {}).get("circles", {})
-    return {cid: c.get("held_by", "") for cid, c in tree.items() if c.get("status") == "end"}
+def can_open_now(places: dict = None) -> dict:
+    """place -> whether its set can be made from the data as it stands, for every place on the map."""
+    return {pid: p.get("state") == "ready" for pid, p in (places_now() if places is None else places).items()}
+
+
+def cannot_be_made(places: dict = None) -> dict:
+    """Places that are not to be tried: the end of a branch, what the rules or the owner
+    hold, and a group that no question can sort. place -> why, in the map's own words."""
+    return {pid: f"{p['state']}: {p.get('why', '')}" for pid, p in (places_now() if places is None else places).items()
+            if p.get("state") in ("end", "held", "a group only")}
 
 
 # ------------------------------------------------------------------ the state the game asks for
@@ -137,13 +144,17 @@ class Helper:
         self.lock = threading.Lock()
 
     def state(self) -> dict:
-        opens = can_open_now()
+        places = places_now()
+        opens, never = can_open_now(places), cannot_be_made(places)
         lines = lines_of(read_json(PROGRESS, {}))
         return {"version": version(), "files": files(),
                 "lines": lines, "ready": [line for line in lines if opens.get(line)],
                 "making": self.making,
-                "dead": sorted(set(self.dead) | set(ends_now()) | {line for line in lines if line not in opens}),
-                "why_not": {**ends_now(), **self.dead}, "note": self.note,
+                "dead": sorted(set(self.dead) | {line for line in lines if line not in opens or line in never}),
+                # for each of his lines: what the map says of it, so the game need not guess
+                "his_lines": {line: {"state": places[line]["state"], "why": places[line].get("why", "")}
+                              for line in lines if line in places},
+                "why_not": {**{line: never[line] for line in lines if line in never}, **self.dead}, "note": self.note,
                 "spent_today_inr": spent_today(read_json(LEDGER, []), datetime.date.today()), "day_cap_inr": DAY_CAP_INR}
 
     def take_progress(self, body: bytes) -> dict:
@@ -153,9 +164,10 @@ class Helper:
         with self.lock:
             PROGRESS.write_text(json.dumps(progress, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         self.wake.set()
-        opens = can_open_now()
-        return {"ok": True, "dead": sorted(set(self.dead) | set(ends_now())
-                                           | {line for line in lines_of(progress) if line not in opens})}
+        places = places_now()
+        opens, never = can_open_now(places), cannot_be_made(places)
+        return {"ok": True, "dead": sorted(set(self.dead) | {line for line in lines_of(progress)
+                                                             if line not in opens or line in never})}
 
     def work(self):
         """Keep sets ready ahead of him, one at a time, inside the day's cap."""
@@ -171,7 +183,9 @@ class Helper:
 
     def make_one(self) -> bool:
         """Make the next set, if one is wanted and the day's money allows. True if a run was made."""
-        target = next_to_make(lines_of(read_json(PROGRESS, {})), can_open_now(), {**ends_now(), **self.dead}, self.buffer)
+        places = places_now()
+        target = next_to_make(lines_of(read_json(PROGRESS, {})), can_open_now(places),
+                              {**cannot_be_made(places), **self.dead}, self.buffer)
         if target is None:
             self.note = ""
             return False
@@ -195,12 +209,16 @@ class Helper:
         ledger.append({"date": today.isoformat(), "set": target, "run": after.name if after and after != before else None,
                        "spent_inr": spent, "cap_inr": round(cap)})
         LEDGER.write_text(json.dumps(ledger, indent=1) + "\n", encoding="utf-8")
-        if can_open_now().get(target):
+        after_run = places_now()
+        if can_open_now(after_run).get(target):
             log(f"ready: {target} (Rs {spent:.1f})")
         else:
-            why = next((line.strip() for line in output.splitlines()
-                        if line.strip().startswith(("cannot prepare", "held", "STOPPED", "Held by the rules"))), "")
-            self.dead[target] = ends_now().get(target) or why or "the job could not make it; see its log in tools/live/out"
+            # why not: the map says it where the run settled it (held, or the end of a branch);
+            # otherwise the run's own words (the cap would not cover it, or it stopped)
+            why = cannot_be_made(after_run).get(target) or next(
+                (line.strip() for line in output.splitlines()
+                 if "left for a later run" in line or line.strip().startswith(("cannot prepare", "STOPPED"))), "")
+            self.dead[target] = why or "the job could not make it; see its log in tools/live/out"
             log(f"could not make {target} (Rs {spent:.1f}): {self.dead[target]}")
         self.making = None
         return True

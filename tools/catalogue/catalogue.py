@@ -508,6 +508,18 @@ def changing(by: str):
         LOCK.unlink(missing_ok=True)
 
 
+def record_place(place: str, what: str, why: str, status: str = None, **more):
+    """Write down a decision about a place that the job's tree does not know: one that
+    exists only where circles cross. It is kept in the catalogue, under `places`, and the
+    map of places (places.py) carries it as that place's history and, where it says the
+    rules hold the place, as its state."""
+    with changing(f"a decision about the place {place}") as catalogue:
+        decision = {"date": today(), "what": what, "why": why, **more}
+        if status:
+            decision["status"] = status
+        catalogue.setdefault("places", {}).setdefault(place, {"decisions": []})["decisions"].append(decision)
+
+
 # ------------------------------------------------------------------ what the older scripts call
 
 def game_store() -> dict:

@@ -18,7 +18,7 @@ Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 | Dictionary | version 12, 21 fields (two withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups with words | 61, each with a ladder of clues; 59 have an explanation |
-| Tests | 110 in the game, 44 for the job, 4 for the helper, 10 for the catalogue, 10 for the pictures. All pass |
+| Tests | 110 in the game, 45 for the job, 5 for the helper, 10 for the catalogue, 10 for the pictures. All pass |
 
 **The fifteen sets:** Everything, Animals, Mammals, Wild animals on land and Make music with it (both
 made on 24 Nov by the helper, the second while the owner played), Birds, Dinosaurs, Plants, Vegetable
@@ -352,8 +352,13 @@ copy of the rules, and had drifted apart. Step 1 of five is built (`DESIGN.md`, 
   sets and nothing else. The rules of what a place is are written once, in the builder. The game's
   tests on made-up games ask the builder for their maps, so they need Python. Nothing changes for the
   player: all 110 game tests pass with their meaning unchanged.
-- Still to come: the helper and the job read the map (step 3), a page of the whole map for the owner
-  (step 4), things stored by place (step 5).
+- **Step 3: the helper and the job read the map.** The helper now knows every place the game knows,
+  takes what can open and what is never to be tried from the map, with the map's own reasons, and no
+  longer reads a run's printed words to guess why it failed. A place that cannot make a set says on the
+  map what it would take ("Wild animals in water": two more reptiles, to be sorted by kind of animal),
+  and the job can make it: `--only animal/wild_water` plans it from the map. Decisions about such a place
+  are kept in the catalogue under `places`. Left of step 3: for old-road places the job still plans
+  through its own tree. Only dry runs and self-tests have exercised the making of a crossing place.
 
 ### Room for the set on a phone (24 Nov, night)
 The owner played on his phone and sent two pictures: the explanation "takes away too much vertical space

@@ -213,6 +213,18 @@ def test_the_map_names_a_place_by_its_circles_and_asks_a_question_where_it_has_i
     # a thing with no single answer is in between: counted, and a place of its own only because it has a thing
     assert the_map["seed"]["asks"][0]["in_between"] == 1 and the_map["in_between"]["things"] == 1
     assert "a/in_between" not in the_map, "an empty overlap is no place"
+    # a place that cannot make a set says what it would take: the circle h0 holds three sorts, and a set needs four
+    h0 = the_map["a/h0"]
+    assert h0["asks"] == [] and h0["state"] == "can be made" and "4 more thing(s)" in h0["why"]
+    assert h0["could_ask"] == [{"question": "sort", "wording": "Which sort?", "fill": {"s3": 4}, "more_things_needed": 4}]
+    # what the job decided about such a place is kept in the catalogue, and the map carries it
+    tried = {"a/h0": {"decisions": [{"date": "2026-11-24", "what": "a run could not fill it", "why": "too few",
+                                     "status": "held by the rules", "things_then": h0["things"]}]}}
+    held = places.build(dictionary, things, settings, styles=[], tree={}, words={}, decided=tried)["places"]["a/h0"]
+    assert held["state"] == "held" and held["why"] == "the rules: too few" and len(held["history"]) == 1
+    tried["a/h0"]["decisions"][0]["things_then"] -= 1       # its things have changed since: it may be tried again
+    again = places.build(dictionary, things, settings, styles=[], tree={}, words={}, decided=tried)["places"]["a/h0"]
+    assert again["state"] == "can be made"
 
 
 def main():
