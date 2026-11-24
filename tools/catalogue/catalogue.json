@@ -34246,7 +34246,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-11-24-44",
+    "by": "job:2026-11-24-45",
     "on": "2026-11-24"
   },
   "groups": {
@@ -36310,15 +36310,15 @@
       "question": "Is it mostly a pet, a farm animal or a wild animal?",
       "clues": [],
       "explanation": {
-        "text": "These animals all live free on land, away from homes and farms. Nobody feeds them or keeps them. A cheetah can run faster than any other animal on land.",
-        "together": "These animals all live free on land, away from homes and farms. Nobody feeds them or keeps them.",
-        "fact": "A cheetah can run faster than any other animal on land.",
+        "text": "These animals all live free on land, away from people. They find their own food and homes outdoors. A cheetah can run very, very fast, faster than any other animal on land.",
+        "together": "These animals all live free on land, away from people. They find their own food and homes outdoors.",
+        "fact": "A cheetah can run very, very fast, faster than any other animal on land.",
         "quote": "It is the fastest land animal and can run up to 105 kilometres per hour (65 mph), and accelerate from 0 to 97 kilometres per hour (60 mph) in less than 3 seconds.",
         "source": "cheetah:wikipedia_simple",
         "source_url": "https://simple.wikipedia.org/wiki/Cheetah",
         "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__explanation.mp3",
         "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__explanation.mp3",
-        "clip_sha256": "0af82e5973398df498202cdcfcf46031a3542bdd3fd5e730a237d96a69899f68",
+        "clip_sha256": "13e16891ed89db9abbd6da3de5fdc4ffe9bdcf873449664fbc48a88f65687cfa",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",

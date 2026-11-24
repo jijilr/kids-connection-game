@@ -16,10 +16,9 @@ places one circle wider, the questions asked there with their kinds, its state a
 reason, and its history. Nobody edits that file. It is written again whenever the
 catalogue is saved or the engine's tree is rebuilt.
 
-STEP 1 (this file, 24 Nov 2026): the map is built and checked against the game. The rules
-here are a second copy of the game's for now, and a test holds the two together
-(test/places_map_test.dart). Step 2 makes the game read the map and drops its own copy;
-step 3 does the same for the helper and the job.
+Step 1 (24 Nov 2026): the map was built and checked against the game, place by place.
+Step 2 (the same night): the game reads the map and has dropped its own copy of these
+rules. They are written once now, here. Step 3 does the same for the helper and the job.
 
 The rules, as the game has them:
   - A place is where circles overlap. It is named by the answers that define it, in the
@@ -33,6 +32,7 @@ The rules, as the game has them:
 
     python tools/catalogue/places.py              build the map and say what it holds
     python tools/catalogue/places.py show PLACE   one place's record
+    python tools/catalogue/places.py for FILE     print the map of a made-up game (for the game's tests)
 """
 import datetime
 import json
@@ -236,6 +236,7 @@ def build(dictionary: dict = None, things: dict = None, settings: dict = None, s
             asks.append({"question": question, "wording": field["wording"], "asked_because": why,
                          "makes_a_set": world.makes_a_picture_set(circles, question) if need_pictures else len(ready) >= GROUPS,
                          "kinds": kinds, "in_between": counts.get(IN_BETWEEN, 0),
+                         "in_between_ready": IN_BETWEEN in ready,
                          "in_between_place": world.name_of(world.canon(circles + [(question, IN_BETWEEN)]))
                          if IN_BETWEEN in field["values"] else None})
         # the places one circle wider, with the answer this place adds to each: a fact about the
@@ -305,6 +306,13 @@ def write() -> dict:
 
 def main():
     args = sys.argv[1:]
+    if args[:1] == ["for"]:
+        # The map of a made-up game, for a test: FILE holds {"dictionary", "things", "settings"}.
+        # Printed, never written. The game's own tests ask for their maps this way, so that
+        # the rules of what a place is are written once, here.
+        world = read_json(args[1])
+        print(json.dumps(build(world["dictionary"], world["things"], world["settings"], styles=[], tree={}, words={})))
+        return
     the_map = write()
     places = the_map["places"]
     if args[:1] == ["show"]:

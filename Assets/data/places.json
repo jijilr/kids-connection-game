@@ -64,6 +64,7 @@
       }
      },
      "in_between": 0,
+     "in_between_ready": false,
      "in_between_place": "in_between"
     }
    ],
@@ -164,6 +165,7 @@
       }
      },
      "in_between": 0,
+     "in_between_ready": false,
      "in_between_place": "animal/in_between"
     },
     {
@@ -210,6 +212,7 @@
       }
      },
      "in_between": 2,
+     "in_between_ready": false,
      "in_between_place": "animal/in_between"
     }
    ],
@@ -290,6 +293,7 @@
       }
      },
      "in_between": 0,
+     "in_between_ready": false,
      "in_between_place": "plant/in_between"
     }
    ],
@@ -363,6 +367,7 @@
       }
      },
      "in_between": 1,
+     "in_between_ready": false,
      "in_between_place": "nature_not_alive/in_between"
     }
    ],
@@ -445,6 +450,7 @@
       }
      },
      "in_between": 0,
+     "in_between_ready": false,
      "in_between_place": "made_by_people/in_between"
     }
    ],
@@ -522,6 +528,7 @@
       }
      },
      "in_between": 0,
+     "in_between_ready": false,
      "in_between_place": "animal/mammal/in_between"
     }
    ],
@@ -645,6 +652,7 @@
       }
      },
      "in_between": 1,
+     "in_between_ready": false,
      "in_between_place": "animal/bird/in_between"
     }
    ],
@@ -1039,6 +1047,7 @@
       }
      },
      "in_between": 0,
+     "in_between_ready": false,
      "in_between_place": "animal/dinosaur/in_between"
     }
    ],
@@ -1252,6 +1261,7 @@
       }
      },
      "in_between": 0,
+     "in_between_ready": false,
      "in_between_place": "animal/in_between/wild_land"
     }
    ],
@@ -1659,6 +1669,7 @@
       }
      },
      "in_between": 0,
+     "in_between_ready": false,
      "in_between_place": "plant/vegetable/in_between"
     }
    ],
@@ -2112,6 +2123,7 @@
       }
      },
      "in_between": 0,
+     "in_between_ready": false,
      "in_between_place": "made_by_people/vehicle/in_between"
     }
    ],
@@ -2224,6 +2236,7 @@
       }
      },
      "in_between": 0,
+     "in_between_ready": false,
      "in_between_place": "made_by_people/toy/in_between"
     }
    ],
@@ -2347,6 +2360,7 @@
       }
      },
      "in_between": 0,
+     "in_between_ready": false,
      "in_between_place": "made_by_people/household/in_between"
     }
    ],
@@ -2549,6 +2563,7 @@
       }
      },
      "in_between": 0,
+     "in_between_ready": false,
      "in_between_place": "made_by_people/building/in_between"
     }
    ],
@@ -2749,6 +2764,7 @@
       }
      },
      "in_between": 0,
+     "in_between_ready": false,
      "in_between_place": "animal/mammal/wild_land/in_between"
     }
    ],
@@ -3838,6 +3854,7 @@
       }
      },
      "in_between": 0,
+     "in_between_ready": false,
      "in_between_place": "made_by_people/toy/music/in_between"
     }
    ],
