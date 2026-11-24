@@ -228,7 +228,9 @@ void main() {
       for (int seed = 0; seed < 20; seed++) {
         final repo = repoWithSeed(seed);
         final inside = repo.assembler.boardableDimensions(filter);
-        expect(inside.map((d) => d.id), [field], reason: '$filter');
+        // the set's own question comes first; a question made later for a set deeper inside it
+        // (what wild mammals eat) may follow, and sorts nothing here
+        expect(inside.first.id, field, reason: '$filter');
         expect(repo.assembler.hasPictureBoard(filter, inside.first), isTrue, reason: field);
         final board = repo.assembler.assemble(filter: filter, dimension: inside.first)!;
         expect(board.groups, hasLength(4));
