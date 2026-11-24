@@ -1,8 +1,10 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'providers/engine_provider.dart';
 import 'screens/engine_screen.dart';
+import 'services/live_link.dart';
 import 'services/progress.dart';
 
 void main() {
@@ -68,7 +70,11 @@ class ConnectionsGameApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-            create: (_) => EngineProvider(progressStore: DeviceProgressStore())..init()),
+            // On the web the game looks for the helper on the owner's PC, which makes sets
+            // ahead of the child; where there is none it plays from what it ships with.
+            create: (_) => EngineProvider(
+                progressStore: DeviceProgressStore(), live: kIsWeb ? HttpLiveLink() : null)
+              ..init()),
       ],
       child: MaterialApp(
         title: 'Connections Game',

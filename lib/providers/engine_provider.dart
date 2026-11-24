@@ -6,6 +6,7 @@ import '../models/dimension.dart';
 import '../models/group_words.dart';
 import '../services/board_assembler.dart';
 import '../services/content_repository.dart';
+import '../services/live_link.dart';
 import '../services/media.dart';
 import '../services/progress.dart';
 
@@ -48,10 +49,18 @@ class EngineProvider extends ChangeNotifier {
     Random? random,
     ProgressStore? progressStore,
     DateTime Function()? clock,
+    LiveLink? live,
   })  : _repo = repo ?? ContentRepository(),
         _random = random ?? Random(),
         _progressStore = progressStore ?? MemoryProgressStore(),
-        _now = clock ?? DateTime.now;
+        _now = clock ?? DateTime.now,
+        _live = live;
+
+  /// The link to the helper on the owner's PC, which makes sets ahead of him. Null where
+  /// there is none: the game then plays from what it ships with.
+  final LiveLink? _live;
+  String? _liveVersion;
+  double? _roll; // the dice for this set's next step, thrown once
 
   final ContentRepository _repo;
   final Random _random;
@@ -231,7 +240,7 @@ class EngineProvider extends ChangeNotifier {
         return t != 0 ? t : ready.indexOf(a).compareTo(ready.indexOf(b));
       });
 
-    final follow = _random.nextDouble() < _repo.settings.deeperShare;
+    final follow = (_roll ??= _random.nextDouble()) < _repo.settings.deeperShare;
     final List<PathFilter>? chosen = follow
         ? (shown.isNotEmpty ? shown.first : (rest.isNotEmpty ? rest.first : null))
         : (rest.isNotEmpty ? rest.first : (shown.isNotEmpty ? shown.first : null));
@@ -257,6 +266,12 @@ class EngineProvider extends ChangeNotifier {
   Future<void> init() async {
     await _repo.load();
     progress = await _progressStore.load();
+    final live = _live;
+    if (live != null) {
+      // the data as it stands now on the owner's PC, with every set made so far
+      final now = await live.state();
+      if (now != null && await _repo.loadLive(live, now)) _liveVersion = now.version;
+    }
     final start = _repo.settings;
     _stack
       ..clear()
@@ -264,6 +279,33 @@ class EngineProvider extends ChangeNotifier {
     _open();
     isLoading = false;
     notifyListeners();
+    unawaited(syncLive());
+  }
+
+  /// Tell the helper where he is, and take up whatever it has made since: a set he
+  /// earned may have become ready while he played another. Called when a set is
+  /// finished. Without a helper it does nothing.
+  Future<void> syncLive() async {
+    final live = _live;
+    if (live == null) return;
+    final dead = await live.send(progress);
+    if (dead.any(progress.lines.contains)) {
+      progress.drop(dead);
+      unawaited(_progressStore.save(progress));
+    }
+    final now = await live.state();
+    if (now == null) return;
+    if (now.version != _liveVersion && await _repo.loadLive(live, now)) {
+      _liveVersion = now.version;
+      for (int i = 0; i < _stack.length; i++) {
+        final lvl = _stack[i];
+        _stack[i] = _Level(lvl.filter, registry.byId(lvl.dim.id) ?? lvl.dim, lvl.label);
+      }
+    }
+    if (boardFinished) {
+      nextStep = _chooseNext();
+      notifyListeners();
+    }
   }
 
   void _open() {
@@ -290,6 +332,7 @@ class EngineProvider extends ChangeNotifier {
     _firstAttempt.clear();
     _clued.clear();
     _guesses = 0;
+    _roll = null;
     nextStep = null;
     explanation = null;
     if (b != null) {
@@ -360,6 +403,7 @@ class EngineProvider extends ChangeNotifier {
         nextStep = _chooseNext();
         message = 'Solved!';
         notifyListeners();
+        unawaited(syncLive());
         return SubmitResult.roundDone;
       }
       unawaited(_progressStore.save(progress));
