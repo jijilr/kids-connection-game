@@ -139,7 +139,8 @@ cells_on = lambda shape: shape["rows"] * shape["cols"] if "rows" in shape else s
 NEW_TO_HIM = False
 WELL_KNOWN_ENOUGH = 0.4
 VISION_CHECK_MOST_USD = 0.01
-FEATURE_CHECK_MOST_USD = 0.03   # the stricter check of one tile against its sources, at most, once (set aside under the cap)
+FEATURE_CHECK_MOST_USD = 0.012  # the stricter check of one tile, once: set aside under the cap. Twice what it has cost
+                                # on average ($0.0062); 0.03 set aside Rs 91 for one sheet of twelve and stopped a run
 FEATURE_CHECK_LIKELY_USD = 0.0065  # what it has cost on average: $0.0062 a check over the first 58 checks
 LOOK_LIKELY_USD = 0.006         # reading a thing's whole pages for how it looks, and telling it apart
 SHEET_WORDING = {   # the per-sheet instruction already used for each kind of thing
