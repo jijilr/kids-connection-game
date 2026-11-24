@@ -3486,6 +3486,19 @@
       "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-11"
+    },
+    "toy_synthesizer": {
+      "name": "Toy synthesizer",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "press_keys"
+      },
+      "familiar": 0.6,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-12"
     }
   }
 }

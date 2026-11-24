@@ -1121,15 +1121,15 @@
     "how_we_play_with_it=music": {
       "clues": [
         {
-          "text": "Think about something you can hear and tap your feet to.",
+          "text": "Think about toys that make a sound you can hear.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3"
         },
         {
-          "text": "You use your hands or your breath to make it sound.",
+          "text": "You blow, bang or pluck it, and out comes a tune or a beat.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3"
         },
         {
-          "text": "It makes music, not a picture or a story.",
+          "text": "It is a toy you can play to make music with your hands or your breath.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3"
         }
       ],
@@ -1298,16 +1298,33 @@
     "how_it_makes_sound=pluck_strings": {
       "clues": [
         {
-          "text": "Think about toys that have strings on them.",
+          "text": "Think about how your fingers move on the toy to start the sound.",
           "audio": "Assets/audio/groups/how_it_makes_sound__pluck_strings__clue1.mp3"
         },
         {
-          "text": "You use your fingers to make the strings move.",
+          "text": "Your fingers pull or sweep across thin lines to make the sound.",
           "audio": "Assets/audio/groups/how_it_makes_sound__pluck_strings__clue2.mp3"
         },
         {
-          "text": "You pull the strings with your fingers to make music.",
+          "text": "The sound comes from fingers moving over tight strings, not from hitting or blowing.",
           "audio": "Assets/audio/groups/how_it_makes_sound__pluck_strings__clue3.mp3"
+        }
+      ],
+      "explanation": null
+    },
+    "how_it_makes_sound=press_keys": {
+      "clues": [
+        {
+          "text": "Some toys make music when your fingers push something down.",
+          "audio": "Assets/audio/groups/how_it_makes_sound__press_keys__clue1.mp3"
+        },
+        {
+          "text": "You do not hit it or blow it or pull strings to hear it.",
+          "audio": "Assets/audio/groups/how_it_makes_sound__press_keys__clue2.mp3"
+        },
+        {
+          "text": "Your fingers go tap, tap on little buttons, and music comes out.",
+          "audio": "Assets/audio/groups/how_it_makes_sound__press_keys__clue3.mp3"
         }
       ],
       "explanation": null

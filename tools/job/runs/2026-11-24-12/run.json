@@ -1,0 +1,271 @@
+{
+  "id": "2026-11-24-12",
+  "started": "2026-11-24",
+  "rehearse": null,
+  "cap_inr": 40.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "made_by_people/toy/music",
+        "chain": "Things people make > Toys > Make music with it > Press keys to play",
+        "fixed": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "music",
+          "how_it_makes_sound": "press_keys"
+        },
+        "need": 1,
+        "recorded_but_not_in_the_game": [
+          {
+            "name": "Organ",
+            "status": "held by the rules",
+            "group": "press_keys"
+          },
+          {
+            "name": "Keyboard",
+            "status": "held by the rules",
+            "group": "press_keys"
+          },
+          {
+            "name": "Toy synthesizer",
+            "status": "held by the rules",
+            "group": "press_keys"
+          },
+          {
+            "name": "Toy concertina",
+            "status": "held by the rules",
+            "group": "press_keys"
+          }
+        ],
+        "retried": [
+          "Keyboard",
+          "Organ",
+          "Toy synthesizer",
+          "Toy concertina"
+        ],
+        "examples": [
+          {
+            "name": "Organ",
+            "familiar": 0.8,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Keyboard",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Toy synthesizer",
+            "familiar": 0.6,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Toy concertina",
+            "familiar": 0.4,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      }
+    ],
+    "circles": [
+      {
+        "circle": "made_by_people/toy/music",
+        "label": "Make music with it",
+        "chain": "Things people make > Toys > Make music with it",
+        "needs_field": false,
+        "expect_things": 2,
+        "his_strength": false,
+        "asks": [
+          0
+        ],
+        "clever_kid": {
+          "sets_looked_at": 3,
+          "with_another_way": 0,
+          "ideas": []
+        },
+        "done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": [],
+    "held_back": [],
+    "played": null,
+    "mastered": []
+  },
+  "retry_held": true,
+  "things": [
+    {
+      "name": "Keyboard",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'Things in the house', not 'Toys'"
+      ],
+      "thing": {
+        "name": "Keyboard",
+        "fields": {
+          "kind_of_thing": "made_by_people"
+        },
+        "familiar": 0.9,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-12"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "press_keys"
+      },
+      "familiar": 0.9,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0
+    },
+    {
+      "name": "Organ",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Toys': it fits no group"
+      ],
+      "thing": {
+        "name": "Organ",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "tool"
+        },
+        "familiar": 0.8,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-12"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "press_keys"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_made_thing"
+      ],
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Toy synthesizer",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Toy synthesizer",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "music",
+          "how_it_makes_sound": "press_keys"
+        },
+        "familiar": 0.6,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-12"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "press_keys"
+      },
+      "familiar": 0.6,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "how_it_makes_sound",
+        "how_we_play_with_it",
+        "kind_of_made_thing",
+        "kind_of_thing"
+      ],
+      "ask": 0,
+      "look": {
+        "must_show": [],
+        "not_this": [],
+        "features": [],
+        "sources": []
+      },
+      "draw": "A small red plastic toy synthesizer keyboard with white and black keys, a few colored buttons, and a little speaker grille, resting flat on plain ground",
+      "tries": 1,
+      "tile": "job_2026_11_24_12_1_01_c1"
+    },
+    {
+      "name": "Toy concertina",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Press keys to play': it fits more than one group: press_keys and blow_into"
+      ],
+      "thing": {
+        "name": "Toy concertina",
+        "fields": {
+          "kind_of_thing": "made_by_people",
+          "kind_of_made_thing": "toy",
+          "how_we_play_with_it": "music"
+        },
+        "familiar": 0.4,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-12"
+      },
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "press_keys"
+      },
+      "familiar": 0.4,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "how_we_play_with_it",
+        "kind_of_made_thing",
+        "kind_of_thing"
+      ],
+      "ask": 0,
+      "held_as": "held by the rules"
+    }
+  ],
+  "sheets": [
+    "job_2026_11_24_12_1_01"
+  ],
+  "stopped": "",
+  "fields_added": [],
+  "fields_held": [],
+  "open_before": [
+    "animal",
+    "animal/bird",
+    "animal/dinosaur",
+    "animal/mammal",
+    "animal/mammal/wild_land",
+    "made_by_people",
+    "made_by_people/building",
+    "made_by_people/household",
+    "made_by_people/toy",
+    "made_by_people/vehicle",
+    "nature_not_alive",
+    "plant",
+    "plant/vegetable",
+    "seed"
+  ],
+  "spent_usd": {
+    "deepseek": 0.01217,
+    "drawing": 0.0538,
+    "picture_checks": 5e-05
+  },
+  "opened": [
+    "Make music with it"
+  ]
+}
