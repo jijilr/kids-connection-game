@@ -225,7 +225,8 @@ def test_the_feature_check_fails_only_on_what_tells_apart_and_listed_mistakes():
     import check_features
     cell = {"must_show": ["a tall sail", "short back legs"],
             "not_this": ["long running legs", "four sprawling legs"],
-            "features": ["a small crest", "the thumb claw is the largest"]}
+            "features": ["a small crest", "the thumb claw is the largest"],
+            "research_file": "researched by hand: its traits were chosen to be seen"}
     fine = {"is_this_animal": True, "must_show": ["yes", "yes"], "mistakes_shown": [],
             "features": ["yes", "no"]}
     reasons, reported, _ = check_features.judge(cell, fine, True, [])
@@ -233,6 +234,12 @@ def test_the_feature_check_fails_only_on_what_tells_apart_and_listed_mistakes():
 
     hidden = dict(fine, must_show=["yes", "unclear"])
     assert check_features.judge(cell, hidden, True, [])[0] == ["what tells it apart cannot be seen: short back legs"]
+    # a thing whose traits a script chose from its pages: one that no picture shows is reported, not failed
+    by_script = {k: v for k, v in cell.items() if k != "research_file"}
+    reasons, reported, _ = check_features.judge(by_script, hidden, True, [])
+    assert reasons == [] and "cannot be seen: short back legs" in reported
+    assert check_features.judge(by_script, dict(fine, must_show=["yes", "no"]), True, [])[0] == [
+        "does not show what tells it apart: short back legs"]              # a trait the picture contradicts still fails
     wrong = dict(fine, must_show=["yes", "no"], mistakes_shown=[1, 7, "long legs"])
     reasons = check_features.judge(cell, wrong, True, [])[0]
     assert reasons == ["does not show what tells it apart: short back legs",
