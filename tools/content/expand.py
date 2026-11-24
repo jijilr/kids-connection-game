@@ -107,8 +107,24 @@ def branch_stats(circles: dict) -> dict:
     return stats
 
 
-def judge(circles: dict, branches: dict, old: dict, proposals: dict):
-    """Score every closed circle and decide its status. Decisions come from the old tree."""
+def ends_in(dictionary: dict, circles: dict) -> dict:
+    """Circles that are the end of their branch (tools/job/ends.py): circle id -> why. The
+    mark is on the question the circle is an answer to, in the dictionary."""
+    found = {}
+    for cid in circles:
+        if cid == "seed":
+            continue
+        parent = cid.rsplit("/", 1)[0] if "/" in cid else "seed"
+        field = circles.get(parent, {}).get("sorted_by")
+        marked = dictionary["fields"].get(field, {}).get("ends", {}).get(cid.rsplit("/", 1)[-1]) if field else None
+        if marked:
+            found[cid] = marked.get("why", "") if isinstance(marked, dict) else str(marked)
+    return found
+
+
+def judge(circles: dict, branches: dict, old: dict, proposals: dict, ends: dict = None):
+    """Score every closed circle and decide its status. Decisions come from the old tree.
+    A circle that is the end of its branch (`ends`) is never prepared: nothing lies below."""
     richest = max(b["boards_open"] for b in branches.values())
     shallowest = min(b["level"] for b in branches.values())
     for cid, circle in circles.items():
@@ -142,7 +158,10 @@ def judge(circles: dict, branches: dict, old: dict, proposals: dict):
         last = [d for d in circle["decisions"] if d.get("status")][-1] if statuses else {}
         too_deep = opens_a_board and circle["steps_from_seed"] > shallowest + GAP_LIMIT
         circle.pop("held_by", None)
-        if statuses and statuses[-1] == "rejected":
+        if cid in (ends or {}):
+            circle["status"] = "end"
+            circle["held_by"] = "the end of this branch: " + ends[cid]
+        elif statuses and statuses[-1] == "rejected":
             circle["status"] = "rejected"
         elif statuses and statuses[-1] == "waiting":
             # the owner held it himself: it is left alone until he says otherwise
@@ -245,7 +264,7 @@ def rebuild(write: bool = True) -> dict:
     for cid, circle in circles.items():
         circle["decisions"] = old.get(cid, {}).get("decisions", [])
     branches = branch_stats(circles)
-    judge(circles, branches, old, proposals)
+    judge(circles, branches, old, proposals, ends_in(dictionary, circles))
     chosen, share = propose(circles, branches)
 
     tree = {

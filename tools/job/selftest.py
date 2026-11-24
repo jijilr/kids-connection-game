@@ -844,6 +844,54 @@ def test_a_run_takes_only_the_circles_its_cap_can_cover():
     assert job.expected_cost(plan(*[circle(16)] * 8), 96, 40)[1] < fit_many      # a smaller cap covers fewer
 
 
+# ------------------------------------------------------------------ the end of a branch
+
+def test_a_branch_ends_where_the_world_holds_too_few_and_a_script_does_the_counting():
+    """The owner, 24 Nov 2026: "there is no more below that... therefor that is the end of that brach"."""
+    import ends
+    asked = []
+    def ask(client, config, spend, system, user, options=None):
+        asked.append(user)
+        if "Names:" in user:        # the second, strict call: Pangaea is no continent of today
+            return {"Europe": True, "Africa": True, "Atlantis": True, "Oceania": True, "Australia": True, "Pangaea": False}
+        return {"things": ["Europe", "Asia", "Africa", "Atlantis", "asia", "Oceania", "Australia", "Pangaea"]}
+    articles = {"Europe": "Europe", "Africa": "Africa", "Oceania": "Oceania", "Australia": "Oceania"}
+    real, ends.reslib.ask = ends.reslib.ask, ask
+    try:
+        world = ends.count_the_world(None, {"model": "m", "thinking": "t"}, None, "Places on land > Continents",
+                                     ["Asia", "Antarctica"], lambda names: {n: articles[n] for n in names if n in articles})
+    finally:
+        ends.reslib.ask = real
+    assert world["with_an_article"] == ["Europe", "Africa", "Oceania"], "what the game has is not counted twice"
+    assert world["not_members"] == ["Pangaea"], "a second, strict call keeps only true members"
+    assert world["no_article"] == ["Atlantis"], "the model's word is not enough: the article must exist"
+    assert world["one_article_twice"] == ["Australia"], "two names filed under one article are one thing"
+    assert world["count"] == 5 and ends.is_end(world)
+    assert "only 5" in ends.why(world) and "Antarctica" in ends.why(world)
+    assert "Never pad" in asked[0] and "breeds" in asked[0]
+    assert not ends.is_end({"count": 16}), "sixteen can be sorted four by four: not an end"
+
+    # the mark is on the question; the engine then never prepares the circle
+    dictionary = copy.deepcopy(cat.read_json(cat.DICTIONARY))
+    circles = expand.build_circles(dictionary, cat.game_copy(cat.load())["things"], cat.read_json(cat.SETTINGS))
+    closed = next(cid for cid, c in circles.items() if not c["open"] and cid != "seed")
+    field, value = ends.step_of(circles, closed)
+    assert ends.step_of(circles, "seed") is None
+    ends.mark(dictionary, field, value, ends.why(world), "a-test")
+    assert ends.end_circles(dictionary, circles) == {closed: ends.why(world)}
+    assert expand.ends_in(dictionary, circles) == {closed: ends.why(world)}
+    for circle in circles.values():
+        circle["decisions"] = []
+    expand.judge(circles, expand.branch_stats(circles), {}, {}, expand.ends_in(dictionary, circles))
+    assert circles[closed]["status"] == "end" and circles[closed]["held_by"].startswith("the end of this branch")
+    assert closed not in expand.in_order(circles)
+    # taken back: the mark is kept, and nothing is deleted
+    assert ends.reopen(dictionary, field, value, "a sixth was found")
+    assert "ends" not in dictionary["fields"][field]
+    assert dictionary["fields"][field]["ends_taken_back"][0]["taken_back_why"] == "a sixth was found"
+    assert not ends.reopen(dictionary, field, value, "again")
+
+
 def main():
     tests = [value for name, value in globals().items() if name.startswith("test_")]
     for test in tests:

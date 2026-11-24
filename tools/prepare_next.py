@@ -23,7 +23,12 @@ filler members, no surface fields.
   1. plan      every closed circle one step from an open board, in the order the
                expansion engine gives (its scores and its balance rules). With the child's
                saved progress, only the circles one step from where he is. No model.
-  2. field     a circle with no field to sort it by: the model CHOOSES up to three
+  2. end?      before a question is looked for: does the world hold enough such things to
+               sort them further? The model lists those with an article of their own, a
+               script checks each article exists, and with fewer than sixteen the group is
+               marked as the end of its branch (tools/job/ends.py; the owner's ruling of the
+               evening of 24 Nov 2026). An end is never tried again.
+     field     a circle with no field to sort it by: the model CHOOSES up to three
                questions from the field library (tools/content/field_library.json), which
                holds real ways of sorting from biology, geography and everyday life. It
                does not invent them. Four tests decide (tools/job/fields.py): four familiar
@@ -107,6 +112,7 @@ import fetch                                 # noqa: E402  the pages
 import looks                                 # noqa: E402  what a thing looks like, from its sources
 import reslib                                # noqa: E402  DeepSeek, with a hard cap
 import fields as field_rules                 # noqa: E402  the four tests a new field must pass
+import ends                                  # noqa: E402  the end of a branch: counted, not judged
 from boards import GROUPS, PER_GROUP, make_board, members, second_solution_rate, split   # noqa: E402
 from expand import AMBIGUITY_LIMIT, HELD_BY_RULES, build_circles, in_order   # noqa: E402
 from expand import rebuild as rebuild_tree, record as record_decision      # noqa: E402
@@ -424,7 +430,7 @@ def plan(catalogue: dict, rehearse: str = None, played: set = None, asked: set =
         # between branches does not hold it back: going deeper there is the point. What the
         # owner holds, what he rejected, and what the rules tried and could not make, stand.
         circle = rebuild_tree(write=False)["circles"][only]
-        stands = circle["status"] == "rejected" or (circle["status"] == "held" and not str(
+        stands = circle["status"] in ("rejected", "end") or (circle["status"] == "held" and not str(
             circle.get("held_by", "")).startswith("depth gap"))
         order = [] if stands else [only]
         if stands:
@@ -441,7 +447,7 @@ def plan(catalogue: dict, rehearse: str = None, played: set = None, asked: set =
         tree = rebuild_tree(write=False)["circles"]     # planning changes nothing
         order, waiting = orders(tree, played, asked, mastered, deeper_share())
         held_back = [f"{c['label']}: {c.get('held_by') or c['status']}" for cid, c in tree.items()
-                     if c["status"] in ("held", "rejected") and cid not in order]
+                     if c["status"] in ("held", "rejected", "end") and cid not in order]
         held_back += [f"{tree[cid]['label']}: it waits its turn; one group is fetched for each board at a time"
                       for cid in waiting]
     for cid in order:
@@ -574,6 +580,39 @@ def settle_field(client, config, deepseek_step, run: dict, entry: dict) -> bool:
                     status=HELD_BY_RULES, members_then=len(names))
     run["fields_held"].append({"circle": cid, "label": entry["label"], "tried": refusals})
     return False
+
+
+def with_articles(names: list) -> dict:
+    """For each of these names that has an encyclopedia article of its own, the article's
+    title. A script's answer: the article is asked for, ten names to a request. Two names
+    may lead to one article; the caller counts it once. A name with several meanings
+    counts, under its own name, since one of the meanings is the thing."""
+    found = fetch.openings("en.wikipedia.org", list(names))
+    return {name: (page.get("title") or name) if "text" in page else name for name, page in found.items()
+            if "text" in page or page.get("problem") == fetch.SEVERAL}
+
+
+def count_the_world(client, config, spend, entry: dict) -> dict:
+    """How many things of this circle the world holds (tools/job/ends.py): what is recorded
+    for it here, in the game or held, and whatever else has an article of its own."""
+    catalogue, dictionary = cat.load(), cat.read_json(cat.DICTIONARY)
+    raw = build_circles(dictionary, cat.game_copy(catalogue)["things"], cat.read_json(cat.SETTINGS))
+    path = cat.circle_path(raw, entry["circle"])
+    recorded = [e["name"] for e in catalogue["things"].values()
+                if e["status"] not in (cat.TAKEN_OUT, cat.EXCLUDED) and e.get("fields")
+                and all(e["fields"].get(f) == v for f, v in path)]
+    return ends.count_the_world(client, config, spend, entry["chain"], recorded, with_articles)
+
+
+def mark_end(run: dict, entry: dict):
+    """Write the end on its question in the dictionary, and tell the engine's tree."""
+    dictionary = cat.read_json(cat.DICTIONARY)
+    raw = build_circles(dictionary, cat.game_copy(cat.load())["things"], cat.read_json(cat.SETTINGS))
+    field, value = ends.step_of(raw, entry["circle"])
+    reason = ends.why(entry["world"])
+    reslib.write_json(cat.DICTIONARY, ends.mark(dictionary, field, value, reason, run["id"]))
+    record_decision(entry["circle"], f"job run {run['id']} found the end of this branch", reason, status="end")
+    run.setdefault("ends", []).append({"circle": entry["circle"], "label": entry["label"], "why": reason})
 
 
 def add_field(run: dict, entry: dict, result: dict, before: dict) -> bool:
@@ -1155,6 +1194,9 @@ def digest(run: dict, budget) -> list:
         + (f' ({", ".join(f["off_the_board"])} fit more than one group and stay off that board)' if f.get("off_the_board") else "")
         for f in run.get("fields_added", [])) or "none") + ".")
     lines.append(f"Things added: {len(added)}" + (": " + ", ".join(t["name"] for t in added) if added else "") + ".")
+    for end in run.get("ends", []):
+        lines.append(f"The end of a branch: {end['label']}. Nothing lies below it: {end['why']}. "
+                     f"To take that back: python tools/job/ends.py reopen {end['circle']} --why \"...\"")
     if drawn:
         lines.append("Pictures drawn for things already in the game: " + ", ".join(drawn) + ".")
     lines.append(f"Cost: {budget.line()}.")
@@ -1433,6 +1475,16 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
         if not affordable(entry):
             say(f"\n== {entry['label']}: left for a later run; the cap would not cover it ==")
             return False
+        if entry["needs_field"] and not entry.get("field_added") and not run["rehearse"] and "world" not in entry:
+            entry["world"] = deepseek_step(lambda spend: count_the_world(client, config, spend, entry))
+            save()
+            if ends.is_end(entry["world"]):
+                say(f"\n== {entry['chain']}: the end of this branch ==")
+                say("  " + ends.why(entry["world"]))
+                mark_end(run, entry)
+                entry["done"] = True
+                save()
+                return True
         if entry["needs_field"] and not entry.get("field_added"):
             say(f"\n== {entry['chain']}: it needs a field ==")
             if not settle_field(client, config, deepseek_step, run, entry):

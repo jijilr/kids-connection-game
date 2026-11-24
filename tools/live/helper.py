@@ -102,6 +102,13 @@ def can_open_now() -> dict:
     return {cid: bool(c.get("can_open_now")) for cid, c in cat.load()["worked_out"]["circles"].items()}
 
 
+def ends_now() -> dict:
+    """Circles that are the end of their branch (tools/job/ends.py): circle -> why. Nothing
+    lies below them, so they are never made, and the game lets such a line go."""
+    tree = read_json(ROOT / "tools/content/expansion_tree.json", {}).get("circles", {})
+    return {cid: c.get("held_by", "") for cid, c in tree.items() if c.get("status") == "end"}
+
+
 # ------------------------------------------------------------------ the state the game asks for
 
 def version() -> str:
@@ -134,8 +141,9 @@ class Helper:
         lines = lines_of(read_json(PROGRESS, {}))
         return {"version": version(), "files": files(),
                 "lines": lines, "ready": [line for line in lines if opens.get(line)],
-                "making": self.making, "dead": sorted(set(self.dead) | {line for line in lines if line not in opens}),
-                "why_not": self.dead, "note": self.note,
+                "making": self.making,
+                "dead": sorted(set(self.dead) | set(ends_now()) | {line for line in lines if line not in opens}),
+                "why_not": {**ends_now(), **self.dead}, "note": self.note,
                 "spent_today_inr": spent_today(read_json(LEDGER, []), datetime.date.today()), "day_cap_inr": DAY_CAP_INR}
 
     def take_progress(self, body: bytes) -> dict:
@@ -146,7 +154,8 @@ class Helper:
             PROGRESS.write_text(json.dumps(progress, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         self.wake.set()
         opens = can_open_now()
-        return {"ok": True, "dead": sorted(set(self.dead) | {line for line in lines_of(progress) if line not in opens})}
+        return {"ok": True, "dead": sorted(set(self.dead) | set(ends_now())
+                                           | {line for line in lines_of(progress) if line not in opens})}
 
     def work(self):
         """Keep sets ready ahead of him, one at a time, inside the day's cap."""
@@ -162,7 +171,7 @@ class Helper:
 
     def make_one(self) -> bool:
         """Make the next set, if one is wanted and the day's money allows. True if a run was made."""
-        target = next_to_make(lines_of(read_json(PROGRESS, {})), can_open_now(), self.dead, self.buffer)
+        target = next_to_make(lines_of(read_json(PROGRESS, {})), can_open_now(), {**ends_now(), **self.dead}, self.buffer)
         if target is None:
             self.note = ""
             return False
@@ -191,7 +200,7 @@ class Helper:
         else:
             why = next((line.strip() for line in output.splitlines()
                         if line.strip().startswith(("cannot prepare", "held", "STOPPED", "Held by the rules"))), "")
-            self.dead[target] = why or "the job could not make it; see its log in tools/live/out"
+            self.dead[target] = ends_now().get(target) or why or "the job could not make it; see its log in tools/live/out"
             log(f"could not make {target} (Rs {spent:.1f}): {self.dead[target]}")
         self.making = None
         return True

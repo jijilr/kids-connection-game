@@ -149,15 +149,43 @@ A line can stop for three different reasons, and they must not be confused:
 | **No question found** | There are enough things, but no question sorts them cleanly yet. | Held by the rules, with the reasons. A better question may come later. |
 | **The audience's bar** | There are enough things, but too few that this audience knows. | A setting (section 9), not a fact about the world. |
 
-How a true end is decided: by counting, not by opinion. The job asks for every such thing that
-has a source page of its own and checks that each page exists. Fewer than sixteen: the group is
-an end, and the count and the names are written down as the reason.
+How a true end is decided: by counting, not by opinion. Three keys, and the last is a script's.
+
+1. The model lists every such thing that has an article of its own. Kinds, sorts, breeds,
+   varieties and named examples all count, because a deeper set may be made of any of them.
+2. A second, strict call keeps only true members. The first call pads a short list with near
+   things: seas among the oceans, continents of the past among the continents.
+3. A script asks for each article and counts each article once. Two names filed under one
+   article are one thing.
+
+With what the game already holds, fewer than sixteen: the group is an end, and the count and
+the names are written down as the reason. The count leans toward "not an end": a wrong end
+would close a branch, while a missed end only costs a search for a question.
 
 In the data an end is written on the question, in `dictionary.json`: `"ends": {"<kind>":
-{"on": "...", "why": "..."}}`.
+{"on": "...", "why": "...", "run": "..."}}`. An end can be taken back; the mark is kept.
 
-Built in the game: an end is never a line; the web shows a leaf on it.
-**Not built yet:** see section 10 for the state of the job.
+Tried for real on 24 Nov 2026 (Rs 0.3 in all), on groups the game does not have yet:
+
+| Group | Count | Verdict |
+|---|---|---|
+| Planets that go round the Sun | 8 | an end |
+| Continents | 7 | an end |
+| Land grazers (dinosaurs) | 59 | not an end |
+| Things in the sky | 34 | not an end |
+| Variants of the virus that causes COVID-19 | 21 | not an end |
+
+The owner's own example, the variants, is not an end by the count: enough named variants and
+lineages have articles of their own. One variant is a thing, and things are always leaves.
+
+Built. In the game: an end is never a line; the web shows a leaf on it. In the job: the count
+runs before a question is looked for, the engine's tree gives the place the status "end", and
+the helper never tries to make it. No place in the game has been found to end yet.
+
+Code: `tools/job/ends.py`; `count_the_world`, `mark_end` in `tools/prepare_next.py`;
+`ends_in`, `judge` in `tools/content/expand.py`; `ends_now` in `tools/live/helper.py`.
+Commands: `python tools/job/ends.py` lists the ends; `python tools/job/ends.py reopen CIRCLE
+--why "..."` takes one back.
 
 ## 7. Things that resist classification
 
@@ -271,7 +299,7 @@ With general use decided, that wording is the next thing to turn into a setting.
 |---|---|---|
 | Next set from his lines (4) | built | built (helper) |
 | More kinds than four (5) | built | fills four kinds only |
-| The end of a branch (6) | built: never a line, leaf on the web | not built: nothing marks an end yet |
+| The end of a branch (6) | built: never a line, leaf on the web | built: counted before a question is looked for |
 | In between (7) | built | not built: nothing makes such things on purpose yet |
 | Widening (8) | meets a wider place by rule 5 | not built |
 

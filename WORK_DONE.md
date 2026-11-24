@@ -18,7 +18,7 @@ Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 | Dictionary | version 12, 21 fields (two withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups with words | 61, each with a ladder of clues; 59 have an explanation |
-| Tests | 91 in the game, 37 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
+| Tests | 91 in the game, 38 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
 
 **The fifteen sets:** Everything, Animals, Mammals, Wild animals on land and Make music with it (both
 made on 24 Nov by the helper, the second while the owner played), Birds, Dinosaurs, Plants, Vegetable
@@ -279,6 +279,17 @@ The rules and their reasons are written down in `DESIGN.md`, a new file at the r
   things it was last shown with.
 - Tests: `test/more_than_four_test.dart` (17), on small made-up games, so they do not depend on what
   the real game holds.
+
+Built in the job, the same evening: **how an end is found.** Before a question is looked for, the job
+counts what the world holds of the group: the model lists the things with an article of their own, a
+second strict call keeps only true members, and a script asks for each article and counts it once.
+Fewer than sixteen, with what the game holds: the group is marked as the end of its branch in the
+dictionary, the engine's tree gives it the status "end", and the helper never tries to make it
+(`tools/job/ends.py`). An end can be taken back; the mark is kept. Tried for real for Rs 0.3 on groups
+the game does not have: the planets (8) and the continents (7) are ends; the things in the sky (34),
+the land grazers (59) and the variants of the COVID-19 virus (21) are not. The first trial counted
+sixteen "continents" and thirty "oceans", because one call pads a short list; that is why there is a
+second, strict call.
 
 ### The Vegetable plants set, after the owner was caught by it (24 Nov)
 He played it and could not tell the last two groups apart ("you help me. haha").
@@ -610,4 +621,4 @@ other names for mud.
   "Make music with it" finished. Spent on the day by the helper's ledger: Rs 136 of 200.
 - A small picture of his web beside Next; clues for every group under the new rule (Rs 13).
 - Evening: more kinds than four in the fewest sets, the end of a branch, and "in between", in the game;
-  `DESIGN.md` written. Nothing spent.
+  `DESIGN.md` written. The job now finds the end of a branch by counting (trials: Rs 0.3).
