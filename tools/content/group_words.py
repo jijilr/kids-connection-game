@@ -51,7 +51,7 @@ TASK = """A picture game for a four-year-old in India. A board shows 16 pictures
 The question: "{question}" It is asked about: {chain}.
 The group you write for: "{label}".
 The things in this group now: {members}.
-The other groups this question makes: {others}.
+The other groups this question makes, with their things: {others}.
 
 Write two things for this group.
 
@@ -59,7 +59,7 @@ Write two things for this group.
 - Clue 1 points at the idea, gently. (For a group of plants whose leaves we eat: "Think about the green part of a plant.")
 - Clue 2 narrows it.
 - Clue 3 is nearly there.
-Each clue is ONE short sentence said to the child. A clue describes the IDEA of the group. It must NEVER name any thing in the group or any other example of it, and it must not describe one particular picture. It must be true of every thing in the group, and it should not fit the other groups.
+Each clue is ONE short sentence said to the child. A clue describes the IDEA of the group. It must NEVER name any thing in the group or any other example of it, and it must not describe one particular picture. It must be true of every thing in the group. And it must NOT fit the things of the other groups: a child holding a picture from another group must not think the clue is about it. So say what THIS group has that the others do not. (If the others are also parts of a plant with seeds in them, "it holds the seeds" tells nothing: say what is different about how we eat this one.) Clue 1 may be gentle, but clues 2 and 3 must fit this group only.
 
 2. EXPLANATION. It is said when the child has found the group.
 - "together": one or two short sentences saying why these belong together. Say it naturally; do not just repeat the group's name.
@@ -76,7 +76,7 @@ Return JSON: {{"clues": ["...", "...", "..."], "explanation": {{"together": "...
 CHECKER = "You check words written for a small child's sorting game. You are strict. You answer only with JSON."
 
 CHECK_TASK = """A sorting game for four-year-olds. The question is "{question}", asked about: {chain}.
-The group is "{label}". Its things: {members}. The other groups: {others}.
+The group is "{label}". Its things: {members}. The other groups, with their things: {others}.
 
 Clues written for this group, meant as a ladder from a gentle hint to nearly there:
 {clues}
@@ -85,6 +85,7 @@ For each clue answer:
 "true": is it true of EVERY thing in the group?
 "names": does it name one of the things, or point plainly at one particular thing or example rather than at the idea?
 "simple": could a four-year-old follow it?
+"only_here": does it point to THIS group and away from the others? Answer false if a child holding a thing from another group would think the clue is about his thing just as much. (A clue about shape or size alone nearly always fails this: "small and round, or long and thin" fits a tomato and a chilli as well as a pea and a bean.)
 Then "ladder": is each clue more helpful than the one before it?
 
 An explanation was also written: "{explanation}"
@@ -92,7 +93,7 @@ An explanation was also written: "{explanation}"
 "explains": does the explanation say, simply and truly, why these things belong together?
 "for_a_child": is every word of the explanation one a four-year-old knows, and is the fact one he would enjoy hearing?
 
-Return JSON: {{"clues": [{{"true": true, "names": false, "simple": true}}], "ladder": true, "supported": true, "explains": true, "for_a_child": true}}"""
+Return JSON: {{"clues": [{{"true": true, "names": false, "simple": true, "only_here": true}}], "ladder": true, "supported": true, "explains": true, "for_a_child": true}}"""
 
 
 def words_of(text: str) -> list:
@@ -155,7 +156,7 @@ def write_one(client, config, spend, group: dict, chain: str, others: list, name
     banned = banned_words(group, names + group["members"])
     opts = lambda most: {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"], "most_written": most}
     complaint, kept_clues, kept_told, why = "", None, None, []
-    for attempt in (1, 2):
+    for attempt in (1, 2, 3):      # a third try: telling one group from its neighbours is the hard part
         answer = reslib.ask(client, config, spend, WRITER, TASK.format(
             question=group["question"], chain=chain, label=group["label"], members=", ".join(group["members"]),
             others=", ".join(others), longest=LONGEST_SENTENCE, sources=block,
@@ -187,6 +188,8 @@ def write_one(client, config, spend, group: dict, chain: str, others: list, name
                 why.append(f"clue {i} points at one thing, not at the idea")
             if mark.get("simple") is not True:
                 why.append(f"clue {i} is too hard for a four-year-old")
+            if i >= 2 and mark.get("only_here") is not True:      # the first clue may be gentle
+                why.append(f"clue {i} would fit a thing of another group as well")
         if clues and verdict.get("ladder") is not True:
             why.append("the clues do not grow more helpful one after another")
         if not fact_wrong and verdict.get("supported") is not True:
@@ -243,7 +246,11 @@ def main():
     for key in todo:
         group = met[key]
         names = [t["name"] for t in things.values() if cat.value_of(t, group["field"]) == group["value"]]
-        others = [label for value, label in dictionary["fields"][group["field"]]["values"].items() if value != group["value"]]
+        others = []
+        for value, label in dictionary["fields"][group["field"]]["values"].items():
+            if str(value) != str(group["value"]).lower():
+                theirs = [t["name"] for t in things.values() if str(cat.value_of(t, group["field"])).lower() == str(value)]
+                others.append(f"{label} ({', '.join(theirs[:8])})" if theirs else label)
         try:
             record = write_one(client, config, spend, group, chain_of(dictionary, group["field"]), others, names)
         except SystemExit as stop:          # the hard cap

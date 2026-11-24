@@ -743,8 +743,8 @@ def test_the_words_of_a_group_are_kept_only_when_the_checks_agree():
     written = {"clues": ["Think about the green part.", "It grows above the ground.", "We cook the soft green part."],
                "explanation": {"together": "We eat the leaves of these plants.", "fact": "Spinach is a green leafy plant.",
                                "quote": "Spinach is a green, leafy vegetable.", "source": "spinach_plant:wikipedia_simple"}}
-    agreed = {"clues": [{"true": True, "names": False, "simple": True}] * 3, "ladder": True, "supported": True,
-              "explains": True, "for_a_child": True}
+    agreed = {"clues": [{"true": True, "names": False, "simple": True, "only_here": True}] * 3, "ladder": True,
+              "supported": True, "explains": True, "for_a_child": True}
 
     def run(writer, checker):
         real = (gw.reslib.ask, gw.sources_for)
@@ -764,6 +764,12 @@ def test_the_words_of_a_group_are_kept_only_when_the_checks_agree():
     partly = run(invented, agreed)
     assert partly["explanation"] is None and len(partly["clues"]) == 3
     assert "not in the saved page" in partly["held"][0]
+    # a later clue that would fit a thing of another group as well is not kept (the owner was caught
+    # on 24 Nov 2026 by two groups whose clues said nearly the same); the first clue may be gentle
+    broad = lambda which: dict(agreed, clues=[dict(agreed["clues"][0], only_here=i not in which) for i in range(3)])
+    refused = run(written, broad({1}))
+    assert refused["clues"] == [] and "fit a thing of another group" in refused["held"][0]
+    assert len(run(written, broad({0}))["clues"]) == 3
     # a clue the second reading calls untrue is not kept
     doubted = dict(agreed, clues=[{"true": False, "names": False, "simple": True}] * 3)
     assert run(written, doubted)["clues"] == []

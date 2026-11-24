@@ -151,13 +151,16 @@
         "fruit": "The fruit",
         "under_the_ground": "What grows under the ground",
         "leaves": "The leaves",
-        "seeds_or_pods": "The seeds or pods"
+        "seeds_or_pods": "The seeds"
       },
       "expected_on": {
         "kind_of_plant": "vegetable"
       },
       "since": 3,
-      "library": "part_we_eat"
+      "library": "part_we_eat",
+      "history": [
+        "24 Nov 2026: 'The seeds or pods' became 'The seeds'. The owner played the set and was caught by Ladies finger, a pod we eat whole like a fruit; with 'pods' in the name no clue could tell this group from the fruit. Its things (pea, bean, maize, cowpea) are the ones whose seeds we eat."
+      ]
     },
     "kind_of_plant_academic": {
       "wording": "What kind of plant is it to a scientist?",

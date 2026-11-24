@@ -139,7 +139,9 @@ def test_which_circles_can_open_is_worked_out_not_set():
     cat.work_out(short)
     dinosaurs = short["worked_out"]["circles"]["animal/dinosaur"]
     assert not dinosaurs["can_open_now"] and any("Flyers" in need for need in dinosaurs["needs"])
-    assert {t["name"] for t in dinosaurs["could_be_filled_by"]} == {short["things"][k]["name"] for k in flyers[3:]}
+    # (other dinosaurs may be waiting too, for other groups: only the flyers are looked at here)
+    assert {t["name"] for t in dinosaurs["could_be_filled_by"] if t.get("group") == "flyer"} >= {
+        short["things"][k]["name"] for k in flyers[3:]}
     assert short["things"][flyers[3]]["worked_out"]["would_join"][-1] == "animal/dinosaur"
 
     # take the pictures away from a group: the circle closes by itself and says what it needs
