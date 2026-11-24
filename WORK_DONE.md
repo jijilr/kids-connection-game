@@ -18,7 +18,7 @@ Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 | Dictionary | version 12, 21 fields (two withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups with words | 61, each with a ladder of clues; 59 have an explanation |
-| Tests | 103 in the game, 44 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
+| Tests | 105 in the game, 44 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
 
 **The fifteen sets:** Everything, Animals, Mammals, Wild animals on land and Make music with it (both
 made on 24 Nov by the helper, the second while the owner played), Birds, Dinosaurs, Plants, Vegetable
@@ -332,6 +332,16 @@ the small proof." The whole of it is in `DESIGN.md`, section 8a. In short:
   job's self-test.
 - The helper now also serves the Wi-Fi (`--lan` in `.claude/launch.json`), so the game opens on a phone
   at `http://<this PC's address>:8200`.
+
+### Room for the set on a phone (24 Nov, night)
+The owner played on his phone and sent two pictures: the explanation "takes away too much vertical space
+and make it less fun to play", and the line "Yes! Plants" used room that "can be used better".
+- **The explanation can be kept small.** A small arrow on it puts it away; a small book then stands in
+  the question bar, and a touch on it brings the words back. The choice is remembered on the device. The
+  explanation is still spoken either way.
+- **The answer to a guess** ("Yes! Plants", "So close", "Not quite") no longer has a line of its own. It
+  appears over the middle of the set, stays a moment and fades. It never stands in the way of a touch.
+- Tests: `test/room_on_a_phone_test.dart` (2), at 360 by 640.
 
 Seen in that run and not fixed: "Wolf spider" was turned away as "Wolf again, or a part of it". The
 rule that stops "Pumpkin seeds" when Pumpkin plant is there reads any name that begins with a name in
@@ -673,3 +683,5 @@ other names for mud.
 - Late night: the small proof of circles that cross, built: one question asked of every animal it fits,
   a place named by its circles, more than one question at a place (about Rs 3.5 with the clue work).
   The game on the phone over Wi-Fi. Spent on the day by the helper's ledger: Rs 165 of 200.
+- After his first play on the phone: the explanation can be kept small, and the answer to a guess fades
+  over the middle of the set.

@@ -130,6 +130,17 @@ class EngineProvider extends ChangeNotifier {
     await _progressStore.saveFlag('automate', on);
   }
 
+  /// The explanation of a group is kept small: the owner's choice (24 Nov 2026: on a phone
+  /// "this takes away too much vertical space and make it less fun to play"). It is still
+  /// spoken. A small book in the question bar brings the words back. Remembered on the device.
+  bool wordsSmall = false;
+
+  Future<void> setWordsSmall(bool small) async {
+    wordsSmall = small;
+    notifyListeners();
+    await _progressStore.saveFlag('words_small', small);
+  }
+
   /// The link to the helper on the owner's PC, which makes sets ahead of him. Null where
   /// there is none: the game then plays from what it ships with.
   final LiveLink? _live;
@@ -187,6 +198,10 @@ class EngineProvider extends ChangeNotifier {
   int mistakes = 0;
   bool atFloor = false;
   String message = '';
+
+  /// Goes up with every guess, so the screen can show [message] afresh each time, even
+  /// when two guesses in a row are answered with the same words.
+  int guessCount = 0;
 
   DimensionRegistry get registry => _repo.registry;
   bool get atRoot => _stack.length <= 1;
@@ -599,6 +614,7 @@ class EngineProvider extends ChangeNotifier {
     await _repo.load();
     progress = await _progressStore.load();
     automate = await _progressStore.loadFlag('automate', otherwise: true);
+    wordsSmall = await _progressStore.loadFlag('words_small', otherwise: false);
     final live = _live;
     if (live != null) {
       // the data as it stands now on the owner's PC, with every set made so far
@@ -771,12 +787,14 @@ class EngineProvider extends ChangeNotifier {
         _setsThisSitting++;
         nextStep = _chooseNext();
         message = 'Solved!';
+        guessCount++;
         notifyListeners();
         unawaited(syncLive());
         return SubmitResult.roundDone;
       }
       unawaited(_progressStore.save(progress));
       message = 'Yes! ${g.label}';
+      guessCount++;
       notifyListeners();
       return SubmitResult.correct;
     }
@@ -790,6 +808,7 @@ class EngineProvider extends ChangeNotifier {
     final near = b.groups.any((g) =>
         !_isSolvedGroup(g) && g.items.where((e) => ids.contains(e.id)).length == 3);
     message = near ? 'So close — one away!' : 'Not quite — try another group.';
+    guessCount++;
     selected.clear();
     notifyListeners();
     return near ? SubmitResult.oneAway : SubmitResult.wrong;

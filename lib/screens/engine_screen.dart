@@ -134,27 +134,36 @@ class EngineScreen extends StatelessWidget {
               _breadcrumb(g),
               if (!g.atFloor) _promptBanner(g),
               Expanded(
-                child: SingleChildScrollView(
-                  padding: const EdgeInsets.symmetric(horizontal: 12),
-                  child: Column(
-                    children: [
-                      const SizedBox(height: 8),
-                      for (int i = 0; i < g.solved.length; i++)
-                        _solvedBanner(g, g.solved[i], i),
-                      if (g.atFloor)
-                        _floorCard(g)
-                      else if (g.boardFinished)
-                        _celebration(context, g)
-                      else
-                        _grid(g),
-                      const SizedBox(height: 8),
-                    ],
-                  ),
+                child: Stack(
+                  children: [
+                    SingleChildScrollView(
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
+                      child: Column(
+                        children: [
+                          const SizedBox(height: 8),
+                          for (int i = 0; i < g.solved.length; i++)
+                            _solvedBanner(g, g.solved[i], i),
+                          if (g.atFloor)
+                            _floorCard(g)
+                          else if (g.boardFinished)
+                            _celebration(context, g)
+                          else
+                            _grid(g),
+                          const SizedBox(height: 8),
+                        ],
+                      ),
+                    ),
+                    // "Yes! Plants", "So close": over the middle of the set, then gone. It
+                    // takes no room of its own (the owner, 24 Nov 2026).
+                    if (!g.boardFinished)
+                      Positioned.fill(child: _Flash(text: g.message, serial: g.guessCount)),
+                  ],
                 ),
               ),
-              if (g.explanation != null) _words(g.explanation!, const Color(0xFFE6F4EA), Icons.auto_stories_rounded, 'explanation'),
+              if (g.explanation != null && !g.wordsSmall)
+                _words(g.explanation!, const Color(0xFFE6F4EA), Icons.auto_stories_rounded, 'explanation',
+                    onSmall: () => g.setWordsSmall(true)),
               if (g.clue != null && !g.boardFinished) _words(g.clue!, const Color(0xFFFFF4C2), Icons.lightbulb_rounded, 'clue'),
-              if (g.message.isNotEmpty && !g.boardFinished) _status(g),
               if (!g.atFloor && !g.boardFinished) _controls(g),
             ],
           );
@@ -299,6 +308,14 @@ class EngineScreen extends StatelessWidget {
               ],
             ),
           ),
+          // the explanation, kept small by his choice: a touch brings the words back
+          if (g.explanation != null && g.wordsSmall)
+            IconButton(
+              key: const ValueKey('explanation-open'),
+              tooltip: 'Show why these belong together',
+              icon: const Icon(Icons.auto_stories_rounded, size: 22, color: Color(0xFF138A7C)),
+              onPressed: () => g.setWordsSmall(false),
+            ),
           IconButton(
             tooltip: 'Read it to me',
             icon: const Icon(Icons.volume_up_rounded, size: 22, color: _purple),
@@ -509,28 +526,17 @@ class EngineScreen extends StatelessWidget {
 
   // ------------------------------------------------------------ bottom bits
 
-  Widget _status(EngineProvider g) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-      child: Text(
-        g.message,
-        textAlign: TextAlign.center,
-        style: GoogleFonts.inter(
-            fontSize: 14, fontWeight: FontWeight.w700, color: Colors.grey.shade800),
-      ),
-    );
-  }
-
   /// A clue or an explanation, shown for the grown-up beside him and spoken for the
-  /// child. Tapping it says it again.
-  Widget _words(Spoken words, Color tint, IconData icon, String name) {
+  /// child. Tapping it says it again. With [onSmall] it carries a small arrow that puts it
+  /// away: on a phone the words take room the set needs.
+  Widget _words(Spoken words, Color tint, IconData icon, String name, {VoidCallback? onSmall}) {
     return GestureDetector(
       key: ValueKey(name),
       onTap: () => _sayWords(words),
       child: Container(
         width: double.infinity,
         margin: const EdgeInsets.fromLTRB(12, 4, 12, 0),
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        padding: EdgeInsets.fromLTRB(12, 8, onSmall == null ? 12 : 2, 8),
         decoration: BoxDecoration(color: tint, borderRadius: BorderRadius.circular(14)),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -541,6 +547,16 @@ class EngineScreen extends StatelessWidget {
               child: Text(words.text,
                   style: GoogleFonts.inter(fontSize: 14, height: 1.3, color: _ink)),
             ),
+            if (onSmall != null)
+              IconButton(
+                key: ValueKey('$name-small'),
+                tooltip: 'Keep these small',
+                icon: Icon(Icons.keyboard_arrow_down_rounded, size: 24, color: Colors.grey.shade700),
+                onPressed: onSmall,
+                visualDensity: VisualDensity.compact,
+                padding: EdgeInsets.zero,
+                constraints: const BoxConstraints(minWidth: 36, minHeight: 28),
+              ),
           ],
         ),
       ),
@@ -629,4 +645,84 @@ class _ShowOnScreenState extends State<_ShowOnScreen> {
 
   @override
   Widget build(BuildContext context) => widget.child;
+}
+
+/// The answer to a guess, shown over the middle of the set: it comes in, stays a moment
+/// and fades. It takes no room of its own and never stands in the way of a touch.
+class _Flash extends StatefulWidget {
+  const _Flash({required this.text, required this.serial});
+  final String text;
+
+  /// Changes with every guess: the same words are shown afresh.
+  final int serial;
+
+  @override
+  State<_Flash> createState() => _FlashState();
+}
+
+class _FlashState extends State<_Flash> with SingleTickerProviderStateMixin {
+  late final AnimationController _life =
+      AnimationController(vsync: this, duration: const Duration(milliseconds: 1700));
+  String _shown = '';
+
+  @override
+  void didUpdateWidget(_Flash old) {
+    super.didUpdateWidget(old);
+    if (widget.serial != old.serial && widget.text.isNotEmpty) {
+      _shown = widget.text;
+      _life.forward(from: 0);
+    }
+  }
+
+  @override
+  void dispose() {
+    _life.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return IgnorePointer(
+      child: AnimatedBuilder(
+        animation: _life,
+        builder: (context, _) {
+          final t = _life.value;
+          if (_shown.isEmpty || t <= 0 || t >= 1) return const SizedBox.shrink();
+          // in quickly, a moment at rest, then away
+          final seen = t < 0.12 ? t / 0.12 : (t > 0.7 ? (1 - t) / 0.3 : 1.0);
+          final right = _shown.startsWith('Yes');
+          final close = _shown.startsWith('So close');
+          final ink = right
+              ? const Color(0xFF138A7C)
+              : close
+                  ? const Color(0xFFB4791A)
+                  : const Color(0xFFC24E70);
+          return Center(
+            child: Opacity(
+              opacity: seen.clamp(0.0, 1.0),
+              child: Transform.scale(
+                scale: 0.9 + 0.1 * (t < 0.12 ? t / 0.12 : 1.0),
+                child: Container(
+                  key: const ValueKey('flash'),
+                  margin: const EdgeInsets.symmetric(horizontal: 28),
+                  padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 12),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withValues(alpha: 0.96),
+                    borderRadius: BorderRadius.circular(22),
+                    border: Border.all(color: ink.withValues(alpha: 0.55), width: 2),
+                    boxShadow: [
+                      BoxShadow(color: Colors.black.withValues(alpha: 0.18), blurRadius: 16, offset: const Offset(0, 5)),
+                    ],
+                  ),
+                  child: Text(_shown,
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.quicksand(fontSize: 24, height: 1.15, fontWeight: FontWeight.w800, color: ink)),
+                ),
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
 }
