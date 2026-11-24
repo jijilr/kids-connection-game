@@ -137,17 +137,16 @@ def test_four_orders_in_five_go_where_he_has_shown_mastery():
     # a circle whose own group he has mastered goes first on its board
     first, waiting = job.orders(dict(tree, **{"a/z": circle(False, 0.1)}), mastered={"a/z"})
     assert first[0] == "a/z" and "a/x" in waiting
-    # the game saves the groups and their clean days; the job reads the mastered ones
+    # the game keeps the lines to follow in the saved progress; the job reads them
     with tempfile.TemporaryDirectory() as folder:
         saved = pathlib.Path(folder) / "progress.json"
-        saved.write_text(json.dumps({"version": 2, "boards": {"seed": {"opened": 3}}, "groups": {
-            "animal": {"found": 3, "clean": 3, "clean_days": ["2026-11-23", "2026-11-24"]},
-            "plant": {"found": 2, "clean": 2, "clean_days": ["2026-11-23"]},
-            "animal/dinosaur": {"found": 1, "clean": 0, "clean_days": []}}}), encoding="utf-8")
-        assert job.read_mastery(saved) == {"animal"}
+        saved.write_text(json.dumps({"version": 3, "boards": {"seed": {"opened": 3}},
+                                     "groups": {"animal": {"found": 3, "clean": 3}, "plant": {"found": 2, "clean": 0}},
+                                     "lines": ["animal/mammal", "animal"]}), encoding="utf-8")
+        assert job.read_mastery(saved) == {"animal", "animal/mammal"}
         old = pathlib.Path(folder) / "old.json"
         old.write_text(json.dumps({"version": 1, "boards": {"seed": {"opened": 1}}}), encoding="utf-8")
-        assert job.read_mastery(old) == set()                           # saved before groups were recorded
+        assert job.read_mastery(old) == set()                           # saved before the game kept lines
         assert job.read_mastery(pathlib.Path(folder) / "none.json") == set()
     assert job.deeper_share() == 0.8                                    # the same number the game uses
 
@@ -316,6 +315,40 @@ def test_a_group_is_looked_up_once_and_kept():
     assert first["Pteranodon"]["must_show"] == ["Pteranodon shape"] == again["Pteranodon"]["must_show"]
     assert ("apart", ("Pteranodon", "Quetzalcoatlus"), ("Dimorphodon", "Pteranodon", "Quetzalcoatlus")) in calls
     assert calls.count("Pteranodon") == 1                                       # the second time it is read from what was kept
+
+
+def test_the_clever_kid_check_counts_only_a_real_second_way_to_sort_the_sixteen():
+    """The owner's example: T. rex among four dinosaurs and Tiger among four modern animals is fine,
+    but a set that could also be sorted by eating habits must not be allowed."""
+    intended = {"Dinosaurs": ["T. rex", "Triceratops", "Stegosaurus", "Velociraptor"],
+                "Wild animals": ["Tiger", "Deer", "Wolf", "Zebra"],
+                "Farm animals": ["Cow", "Goat", "Hen", "Pig"],
+                "Pets": ["Dog", "Cat", "Rabbit", "Parrot"]}
+    by_food = {"idea": "what it eats", "groups": {
+        "meat": ["T. rex", "Velociraptor", "Tiger", "Wolf"], "grass": ["Triceratops", "Stegosaurus", "Deer", "Zebra"],
+        "grain and scraps": ["Cow", "Goat", "Hen", "Pig"], "food from people": ["Dog", "Cat", "Rabbit", "Parrot"]}}
+    assert job.other_ways({"other_ways": [by_food]}, intended) == ["what it eats"]
+    assert job.other_ways({"other_ways": []}, intended) == []
+    assert job.other_ways({}, intended) == []
+    same_again = {"idea": "kinds", "groups": {k.lower(): v for k, v in intended.items()}}
+    three_groups = {"idea": "x", "groups": dict(list(by_food["groups"].items())[:3])}
+    five_in_one = {"idea": "x", "groups": dict(by_food["groups"], meat=["T. rex", "Velociraptor", "Tiger", "Wolf", "Dog"])}
+    a_name_missing = {"idea": "x", "groups": dict(by_food["groups"], meat=["T. rex", "Velociraptor", "Tiger", "Lion"])}
+    for loose in (same_again, three_groups, five_in_one, a_name_missing):
+        assert job.other_ways({"other_ways": [loose]}, intended) == [], loose["idea"]
+    # on the game's own data: the samples are sets a child would meet, and the answer is counted
+    dictionary, things = cat.read_json(cat.DICTIONARY), cat.game_copy(cat.load())["things"]
+    asked = []
+    def ask(client, config, spend, system, user, options=None):
+        asked.append(user)
+        return {"other_ways": []} if len(asked) > 1 else {"other_ways": [{"idea": "nonsense", "groups": {"a": ["x"]}}]}
+    real, job.reslib.ask = job.reslib.ask, ask
+    try:
+        seen = job.clever_kid(None, cat.read_json(job.reslib.CONFIG), None, dictionary, things, [("kind_of_thing", "animal")], None)
+    finally:
+        job.reslib.ask = real
+    assert seen == {"sets_looked_at": 3, "with_another_way": 0, "ideas": []}
+    assert "What kind of animal is it?" in asked[0] and asked[0].count("\n- ") == 4
 
 
 # ------------------------------------------------------------------ a field is decided by four tests

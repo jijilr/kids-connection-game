@@ -39,7 +39,11 @@ filler members, no surface fields.
                the record. An everyday field no page states is judged twice. Where the
                pages use a word in another sense (a broom is "a cleaning tool"), two
                checks sort the thing as a parent would, and their agreement decides.
-  5. boards    the new things must not give any board a second clean solution.
+  5. boards    the new things must not give any board a second clean solution: by any
+               stored field (a script), and by any idea a sharp child might bring that is
+               stored nowhere, such as when it lived or what it eats (a model looks at
+               sample sets of sixteen; the owner's "clever-kid" check of June 2026, built
+               on 24 Nov 2026). A set that can always be sorted another way is held.
   6. draw      only when enough things passed for the group to open: first how each thing
                looks, from its own whole pages, checked sentence by sentence, and what tells
                it from the others of its group (tools/research/looks.py; for every thing,
@@ -67,6 +71,10 @@ Keys are read from the environment and are written nowhere. No Claude session is
     python tools/prepare_next.py --cap 120             the same, under another hard cap, in rupees
     python tools/prepare_next.py --progress FILE       the child's saved progress, if it is not at
                                                        tools/job/progress.json
+    python tools/prepare_next.py --only CIRCLE --new-to-him --cap 90
+                                                       one set, asked for by the helper while the child plays
+                                                       (tools/live/helper.py): the set inside a group he did
+                                                       well. Its things may be new to him: the best-known first.
     python tools/prepare_next.py --undo RUN            take a run back: its things leave the game and
                                                        its fields stop sorting boards. All is kept.
     python tools/prepare_next.py --withdraw-field FIELD --why "..."
@@ -84,6 +92,7 @@ import datetime
 import json
 import os
 import pathlib
+import random
 import re
 import subprocess
 import sys
@@ -118,7 +127,17 @@ FAMILIAR_ENOUGH = 0.7
 # a sheet's size by how many pictures it holds, and the most it has ever cost at that size
 SHEET = {1: {"grid": 1, "size": 1024, "most_usd": 0.07},
          4: {"grid": 2, "size": 1920, "most_usd": 0.21},
-         9: {"grid": 3, "size": 2880, "most_usd": 0.21}}
+         9: {"grid": 3, "size": 2880, "most_usd": 0.21},
+         # twelve on a sheet, 3 rows of 4 (the owner's word of 24 Nov 2026; tried that day: Rs 1.4 a picture)
+         12: {"rows": 3, "cols": 4, "size": 2880, "most_usd": 0.21}}
+MOST_ON_A_SHEET = max(SHEET)
+cells_on = lambda shape: shape["rows"] * shape["cols"] if "rows" in shape else shape["grid"] ** 2
+# When a set is prepared for a child who did its group well, its things may be new to him:
+# "of course he has to see things he has not seen... but it will be extension of what he has
+# seen" (the owner, 24 Nov 2026). The check then asks how well known a thing is among the
+# things of its group, not whether a four-year-old already knows it, and the bar is lower.
+NEW_TO_HIM = False
+WELL_KNOWN_ENOUGH = 0.4
 VISION_CHECK_MOST_USD = 0.01
 FEATURE_CHECK_MOST_USD = 0.03   # the stricter check of one tile against its sources, at most, once (set aside under the cap)
 FEATURE_CHECK_LIKELY_USD = 0.0065  # what it has cost on average: $0.0062 a check over the first 58 checks
@@ -141,6 +160,22 @@ Suggest {count} things that belong in this group and that such a child would kno
 {tried}
 Return JSON: {{"things": [{{"name": "...", "familiar": 0.9, "why": "a few words"}}]}}
 "familiar" runs from 0 to 1: how surely a four-year-old in India knows it by sight."""
+
+NAMES_NEW = """
+The child did this group well and is ready for more of it: the things may be new to him. Suggest the best-known things of the group first, the ones most people would name, before any that only a specialist knows."""
+
+KNOWS_NEW_TASK = """A child has met the things listed under "Already in this part of the game", did that group well, and is ready for more things of the same kind. They may be new to him.
+Each thing below is offered for this group: {chain}. Its picture shows what the group's name describes, in plain view.
+For each, answer four things:
+"recognises": is it a real, single kind of thing that belongs in this group, that one clear picture can show, and that a parent could name to a child?
+"familiar": how well known it is among the things of this group, from 0 to 1. The ones most people would name first score highest; ones only a specialist knows score lowest.
+"suitable": is it fit to show a young child? Answer false ONLY for something violent, frightening or meant for adults. Everyday things, animals, places of worship of any religion, and things of science are suitable.
+"own_thing": is it a different thing from everything already in this part of the game, and from the other things asked about here? Answer false if it is another name for one of them, or only a wet, dry, big, small, young or coloured sort of one of them, or a part of one. When two of the things asked about are the same thing, answer true for the first and false for the other.
+Already in this part of the game: {beside}.
+
+Return JSON: {{"<name>": {{"recognises": true, "familiar": 0.9, "suitable": true, "own_thing": true}}, ...}}
+
+{names}"""
 
 KNOWER = "You judge what a small child would recognise. You answer only with JSON."
 
@@ -254,18 +289,13 @@ def read_orders(path) -> set:
 
 
 def read_mastery(path) -> set:
-    """The groups he has shown mastery of, from the file a grown-up saved from the game:
-    each found cleanly (no wrong guess took in its things, no clue asked for it) on at
-    least as many different days as settings.json asks (`next_board.mastery_days`). A
-    group's id is the id of the board inside it, as the job names circles. Empty when
-    there is no such file, or it was saved before the game recorded groups."""
+    """The groups he did well and whose own set he has not played yet: the lines to follow,
+    as the game keeps them in his saved progress (`lines`, best first; version 3 of the
+    file). A group's id is the id of the set inside it, as the job names circles. Empty
+    when there is no such file, or it was saved before the game kept lines."""
     data = cat.read_json(pathlib.Path(path)) if path and pathlib.Path(path).exists() else None
-    found = (data or {}).get("groups")
-    if not isinstance(found, dict):
-        return set()
-    days = int(((cat.read_json(cat.SETTINGS) or {}).get("next_board") or {}).get("mastery_days", 2))
-    return {group for group, seen in found.items()
-            if isinstance(seen, dict) and isinstance(seen.get("clean_days"), list) and len(set(seen["clean_days"])) >= days}
+    lines = (data or {}).get("lines")
+    return {line for line in lines if isinstance(line, str)} if isinstance(lines, list) else set()
 
 
 def deeper_share() -> float:
@@ -379,7 +409,7 @@ def asks_for(catalogue: dict, cid: str, avoid: set = (), filled: set = ()) -> tu
 
 
 def plan(catalogue: dict, rehearse: str = None, played: set = None, asked: set = (),
-         mastered: set = frozenset()) -> dict:
+         mastered: set = frozenset(), only: str = None) -> dict:
     """What the run sets out to do: the orders, one group for each board. Nobody approves
     a circle: the engine's balance chooses the group, and its rules and the owner's own
     holds are all that keep a circle back."""
@@ -388,6 +418,16 @@ def plan(catalogue: dict, rehearse: str = None, played: set = None, asked: set =
     asks, circles, blocked, nothing, held_back = [], [], [], [], []
     if rehearse:
         order = [rehearse]
+    elif only:
+        # one set, asked for by the helper because the child did its group well. The balance
+        # between branches does not hold it back: going deeper there is the point. What the
+        # owner holds, what he rejected, and what the rules tried and could not make, stand.
+        circle = rebuild_tree(write=False)["circles"][only]
+        stands = circle["status"] == "rejected" or (circle["status"] == "held" and not str(
+            circle.get("held_by", "")).startswith("depth gap"))
+        order = [] if stands else [only]
+        if stands:
+            blocked.append(f"{circle['label']}: {circle.get('held_by') or circle['status']}")
     else:
         by_kind = {}
         for e in catalogue["things"].values():
@@ -448,8 +488,8 @@ def plan(catalogue: dict, rehearse: str = None, played: set = None, asked: set =
 
 def likely_usd(things: int) -> float:
     """What drawing and settling this many things has cost so far, on average."""
-    full, rest = divmod(things, 9)
-    sheets = full * SHEET[9]["most_usd"] + (SHEET[next(n for n in sorted(SHEET) if n >= rest)]["most_usd"] if rest else 0)
+    full, rest = divmod(things, MOST_ON_A_SHEET)
+    sheets = full * SHEET[MOST_ON_A_SHEET]["most_usd"] + (SHEET[next(n for n in sorted(SHEET) if n >= rest)]["most_usd"] if rest else 0)
     # settling, then drawing from the sources: how it looks, and a stricter check of its two tiles
     return things * (0.006 + LOOK_LIKELY_USD + 2 * FEATURE_CHECK_LIKELY_USD) + sheets * 0.9
 
@@ -601,7 +641,7 @@ def recognise(client, config, spend, ask: dict, offers: list):
     if not offers:
         return
     known = reslib.ask(client, config, spend, KNOWER,
-                       KNOWS_TASK.format(chain=ask["chain"], names="\n".join(o["name"] for o in offers),
+                       (KNOWS_NEW_TASK if NEW_TO_HIM else KNOWS_TASK).format(chain=ask["chain"], names="\n".join(o["name"] for o in offers),
                                          beside=", ".join(ask.get("beside") or []) or "nothing yet"),
                        {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"], "most_written": 900})
     for item in offers:
@@ -638,7 +678,7 @@ def suggest(client, config, spend, catalogue: dict, ask: dict, tried: list = ())
     again = (f"- These were tried for this group and did not fit, so suggest different ones: {', '.join(tried)}.\n"
              if tried else "")
     answer = reslib.ask(client, config, spend, NAMER,
-                        NAMES_TASK.format(chain=ask["chain"], count=count, taken=", ".join(taken), tried=again,
+                        (NAMES_TASK + (NAMES_NEW if NEW_TO_HIM else "")).format(chain=ask["chain"], count=count, taken=", ".join(taken), tried=again,
                                           like=", ".join(beside[:8]) or "plain everyday names"),
                         {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"], "most_written": 700})
     offered = []
@@ -705,9 +745,10 @@ def ground_thing(client, config, spend, dictionary: dict, ask: dict, offer: dict
         return {"name": name, "passed": False, "familiar": offer["familiar"], "fields": dict(ask["fixed"]),
                 "why": ["the check says it is not suitable for a young child"], "not_recognised": True,
                 "for_owner": True}
-    if not offer["recognised"] or offer["familiar"] < FAMILIAR_ENOUGH:
+    if not offer["recognised"] or offer["familiar"] < (WELL_KNOWN_ENOUGH if NEW_TO_HIM else FAMILIAR_ENOUGH):
         return {"name": name, "passed": False, "familiar": offer["familiar"], "fields": dict(ask["fixed"]),
-                "why": ["the check doubts a four-year-old would recognise it"], "not_recognised": True}
+                "why": ["the check doubts it is a well-known thing of this group" if NEW_TO_HIM
+                        else "the check doubts a four-year-old would recognise it"], "not_recognised": True}
     def choose(thing, links, text):     # which meaning of the name, from the page's own list
         reply = reslib.ask(client, config, spend, CHOOSER,
                            CHOOSE_TASK.format(name=thing, chain=ask["chain"], text=text, links="\n".join(links[:120])),
@@ -810,6 +851,62 @@ def boards_stay_clean(catalogue: dict, ask: dict, accepted: list) -> str:
     return f"{rate:.0%} of the boards sorted by '{field}' would have a second clean solution" if rate > AMBIGUITY_LIMIT else ""
 
 
+CLEVER_KID = "You look for other ways to sort a set of things. You answer only with JSON."
+
+CLEVER_TASK = """A sorting game shows a child sixteen pictures. The intended answer sorts them into four groups of four by this question: {question}
+{groups}
+
+A sharp child may see ANOTHER way to sort all sixteen. Look for one: a different single idea (when it lived, what it eats, where it lives, how it moves, what covers it, its shape, what it is used for, or anything else a child could see in the pictures or would know) that ALSO sorts ALL sixteen into four groups of exactly four, each thing in exactly one group, and that is true of the things.
+It must be a different sorting: at least one of its groups must differ from the intended groups.
+Most sets have none. If there is none, say so; do not force one.
+
+Return JSON: {{"other_ways": [{{"idea": "a few words", "groups": {{"<label>": ["<name>", "<name>", "<name>", "<name>"]}}}}]}}
+with an empty list when there is none."""
+
+CLEVER_SAMPLES = 3
+
+
+def other_ways(answer: dict, intended: dict) -> list:
+    """The ideas in a model's answer that really are another way to sort the same sixteen:
+    four groups of four, every name once, and not the intended groups. Checked by a script,
+    so a loose answer proves nothing. `intended` is label -> its four names."""
+    names = {n for four in intended.values() for n in four}
+    same = {frozenset(four) for four in intended.values()}
+    found = []
+    for way in answer.get("other_ways") or []:
+        groups = way.get("groups") if isinstance(way, dict) else None
+        if not isinstance(groups, dict) or len(groups) != GROUPS:
+            continue
+        fours = [frozenset(str(n) for n in four) for four in groups.values() if isinstance(four, list)]
+        if (len(fours) == GROUPS and all(len(four) == PER_GROUP for four in fours)
+                and frozenset().union(*fours) == names and set(fours) != same):
+            found.append(str(way.get("idea", "")).strip() or "another idea")
+    return found
+
+
+def clever_kid(client, config, spend, dictionary: dict, things: dict, path: list, field: str) -> dict:
+    """The owner's "clever-kid" check (PRD of June 2026, IV.2): the script's test sees a
+    second solution only along fields that are stored, and a set made on the fly arrives
+    with few. So a model is shown sample sets of sixteen, as a child would meet them, and
+    asked for any other way to sort all of them. Returns how many samples were looked at,
+    how many had another way, and the ideas."""
+    looked, hit, ideas = 0, 0, []
+    for sample in range(CLEVER_SAMPLES):
+        board = make_board(dictionary, things, path, field, rng=random.Random(sample))
+        if board is None:
+            break
+        labels = dictionary["fields"][board["field"]]["values"]
+        intended = {labels[str(value)]: [things[k]["name"] for k in keys] for value, keys in board["groups"].items()}
+        listing = "\n".join(f"- {label}: {', '.join(four)}" for label, four in intended.items())
+        answer = reslib.ask(client, config, spend, CLEVER_KID,
+                            CLEVER_TASK.format(question=dictionary["fields"][board["field"]]["wording"], groups=listing),
+                            {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"], "most_written": 500})
+        found = other_ways(answer, intended)
+        looked, hit = looked + 1, hit + (1 if found else 0)
+        ideas += [idea for idea in found if idea not in ideas]
+    return {"sets_looked_at": looked, "with_another_way": hit, "ideas": ideas}
+
+
 # ------------------------------------------------------------------ 6. draw  7. check
 
 LOOK_TASK = """
@@ -858,7 +955,7 @@ def plan_sheet(run_id: str, attempt: int, wanted: list, kind: str) -> str:
     cells hold a second view of the first things, so each has two tries."""
     shape = SHEET[next(n for n in sorted(SHEET) if n >= len(wanted))]
     cells = [cell_for(w) for w in wanted]
-    spare, i = shape["grid"] ** 2 - len(cells), 0
+    spare, i = cells_on(shape) - len(cells), 0
     while spare > 0:
         w = wanted[i % len(wanted)]
         cells.append(dict(cell_for(w), draw=w["draw"] + "; a second view of it",
@@ -868,7 +965,7 @@ def plan_sheet(run_id: str, attempt: int, wanted: list, kind: str) -> str:
     key = f"job_{run_id.replace('-', '_')}_{attempt}"
     plan_file["sheets"][key] = {
         "purpose": f"drawn by the job, run {run_id}" + (", second tries" if attempt > 1 else ""),
-        "grid": shape["grid"], "size": shape["size"],
+        **{k: shape[k] for k in ("grid", "rows", "cols") if k in shape}, "size": shape["size"],
         "only_for_this_sheet": plan_file["sheets"][SHEET_WORDING[kind]]["only_for_this_sheet"],
         "cells": cells,
     }
@@ -1379,6 +1476,29 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
             record_decision(entry["circle"], f"job run {run['id']} could not fill it",
                             "too few familiar things of their own for: " + "; ".join(unmet),
                             status=HELD_BY_RULES, members_then=len(members(now, cat.circle_path(raw, entry["circle"]))))
+        if not unmet and not run["rehearse"]:
+            # the set can be made: before its pictures are paid for, would a sharp child sort it another way?
+            mine = [t for t in run["things"] if t["passed"] and t.get("thing") and not t.get("in_game")
+                    and asks_of_run[t["ask"]]["circle"] == entry["circle"]]
+            now = dict(cat.game_copy(cat.load())["things"])
+            now.update({cat.slug(t["name"]): t["thing"] for t in mine})
+            raw = build_circles(state["dictionary"], now, cat.read_json(cat.SETTINGS))
+            if entry["circle"] in raw and raw[entry["circle"]].get("sorted_by"):
+                seen = deepseek_step(lambda spend: clever_kid(
+                    client, config, spend, state["dictionary"], now,
+                    cat.circle_path(raw, entry["circle"]), raw[entry["circle"]]["sorted_by"]))
+                entry["clever_kid"] = seen
+                if seen["sets_looked_at"] and seen["with_another_way"] == seen["sets_looked_at"]:
+                    why = ("a sharp child could also sort every sample set another way: " + "; ".join(seen["ideas"]))
+                    say(f"  held: {why}")
+                    for t in mine:
+                        t["passed"], t["why"] = False, [why]
+                    record_decision(entry["circle"], f"job run {run['id']}: the clever-kid check", why,
+                                    status=HELD_BY_RULES, members_then=len(members(
+                                        cat.game_copy(cat.load())["things"], cat.circle_path(raw, entry["circle"]))))
+                elif seen["ideas"]:
+                    say(f"  note: {seen['with_another_way']} of {seen['sets_looked_at']} sample sets could also be sorted by: "
+                        + "; ".join(seen["ideas"]))
         entry["done"] = True
         save()
         return True
@@ -1418,8 +1538,8 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
         save()
         for kind in sorted({kind_of(t) for t in wanted}):
             same = [t for t in wanted if kind_of(t) == kind]
-            for first in range(0, len(same), 9):
-                sheet = same[first:first + 9]
+            for first in range(0, len(same), MOST_ON_A_SHEET):
+                sheet = same[first:first + MOST_ON_A_SHEET]
                 key = plan_sheet(run["id"], len(run["sheets"]) + 1, sheet, kind)
                 say(f"\n  drawing {', '.join(t['name'] for t in sheet)}" + (" again" if attempt == 2 else ""))
                 sheet_id, good = draw_and_check(budget, key)
@@ -1456,6 +1576,10 @@ def main():
     option = lambda flag: argv[argv.index(flag) + 1] if flag in argv else None
     rate = cat.read_json(PLAN)["prices"]["inr_per_usd"]
     cap = float(option("--cap") or DEFAULT_CAP_INR)
+    if "--new-to-him" in argv:      # see NEW_TO_HIM: the best-known things of the group, not only those he knows
+        global NEW_TO_HIM
+        NEW_TO_HIM = True
+        field_rules.FAMILIAR_ENOUGH = WELL_KNOWN_ENOUGH
 
     if "--undo" in argv:
         say(undo(option("--undo")))
@@ -1491,15 +1615,19 @@ def main():
         wrong = cat.problems(catalogue)
         if wrong:
             raise SystemExit("The catalogue's guard fails, so the job will not start:\n  - " + "\n  - ".join(wrong))
-        rehearse = option("--rehearse")
-        if rehearse and rehearse not in catalogue["worked_out"]["circles"]:
-            raise SystemExit(f"No circle '{rehearse}'. See: python tools/catalogue/catalogue.py circles")
-        played = None if rehearse else read_progress(option("--progress") or PROGRESS)
-        asked = set() if rehearse else read_orders(option("--progress") or PROGRESS)
-        mastered = set() if rehearse else read_mastery(option("--progress") or PROGRESS)
-        the_plan = plan(catalogue, rehearse, played, asked, mastered)
+        rehearse, only = option("--rehearse"), option("--only")
+        for named in (rehearse, only):
+            if named and named not in catalogue["worked_out"]["circles"]:
+                raise SystemExit(f"No circle '{named}'. See: python tools/catalogue/catalogue.py circles")
+        alone = rehearse or only
+        played = None if alone else read_progress(option("--progress") or PROGRESS)
+        asked = set() if alone else read_orders(option("--progress") or PROGRESS)
+        mastered = set() if alone else read_mastery(option("--progress") or PROGRESS)
+        the_plan = plan(catalogue, rehearse, played, asked, mastered, only)
         likely, fit = expected_cost(the_plan, rate, cap)
         say("PLAN" + (f" (a rehearsal of '{rehearse}': nothing will enter the game)" if rehearse else ""))
+        if only:
+            say(f"  One set, asked for while the child plays: {only}." + ("  Its things may be new to him." if NEW_TO_HIM else ""))
         say("  The child's saved progress: " + ("none found, so every open board is treated as solved: one group is fetched for each"
                                                if played is None else "he has played " + ", ".join(sorted(played))
                                                + (f"; he was left with nowhere deeper to go on {', '.join(sorted(asked))}" if asked else "")))
