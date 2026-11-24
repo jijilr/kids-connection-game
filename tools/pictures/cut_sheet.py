@@ -62,9 +62,10 @@ def ink_mask(image: Image.Image) -> np.ndarray:
     return np.abs(pixels - background).max(axis=2) > INK_TOLERANCE
 
 
-def separate(mask: np.ndarray, n: int) -> np.ndarray:
-    """For every pixel, the cell (0 .. n*n-1, reading order) whose picture it belongs to,
+def separate(mask: np.ndarray, rows: int, cols: int = None) -> np.ndarray:
+    """For every pixel, the cell (0 .. rows*cols-1, reading order) whose picture it belongs to,
     or -1 for white. Pictures are told apart by the white between them."""
+    cols = cols or rows
     height, width = mask.shape
     h, w = height // SHRINK, width // SHRINK
     small = mask[:h * SHRINK, :w * SHRINK].reshape(h, SHRINK, w, SHRINK).any(axis=(1, 3))
@@ -77,25 +78,25 @@ def separate(mask: np.ndarray, n: int) -> np.ndarray:
     boxes = ndimage.find_objects(labels)
 
     def cell_at(y, x):
-        return min(n - 1, int(y * n / h)) * n + min(n - 1, int(x * n / w))
+        return min(rows - 1, int(y * rows / h)) * cols + min(cols - 1, int(x * cols / w))
 
     # A patch much wider or taller than a cell is two pictures touching.
     for box in boxes:
         tall, wide = box[0].stop - box[0].start, box[1].stop - box[1].start
-        if tall > TOO_BIG * h / n or wide > TOO_BIG * w / n:
+        if tall > TOO_BIG * h / rows or wide > TOO_BIG * w / cols:
             first = cell_at(box[0].start, box[1].start) + 1
             last = cell_at(box[0].stop - 1, box[1].stop - 1) + 1
             raise CutError(f"the pictures in cells {first} and {last} touch: "
                            "there is no white between them")
 
     # Each cell's main patch: the largest one centred in that cell.
-    big = MAIN_PATCH * (h / n) * (w / n)
+    big = MAIN_PATCH * (h / rows) * (w / cols)
     main = {}
     for i in range(count):
         cell = cell_at(*centres[i])
         if areas[i] >= big and (cell not in main or areas[i] > areas[main[cell]]):
             main[cell] = i
-    missing = [cell + 1 for cell in range(n * n) if cell not in main]
+    missing = [cell + 1 for cell in range(rows * cols) if cell not in main]
     if missing:
         raise CutError(f"no picture found in cell {missing[0]}")
 
@@ -123,7 +124,7 @@ def separate(mask: np.ndarray, n: int) -> np.ndarray:
     return owner
 
 
-def cut_tile(image: Image.Image, mask: np.ndarray, owner: np.ndarray, cell: int, n: int) -> tuple:
+def cut_tile(image: Image.Image, mask: np.ndarray, owner: np.ndarray, cell: int, n: int, cols: int = None) -> tuple:
     """One finished tile and the result of its checks."""
     height, width = mask.shape
     checks = {"flags": [], "notes": []}
@@ -143,7 +144,7 @@ def cut_tile(image: Image.Image, mask: np.ndarray, owner: np.ndarray, cell: int,
     if not SQUARE_RANGE[0] <= shape <= SQUARE_RANGE[1]:
         notes.append("the picture is far from square")
     longer = max(x1 - x0, y1 - y0)
-    if longer < SMALL_PICTURE * min(width, height) / n:
+    if longer < SMALL_PICTURE * min(width / (cols or n), height / n):
         notes.append("the picture is very small")
 
     # A white square around the picture, with everything that belongs to a neighbour
@@ -190,11 +191,13 @@ def save_app_version(folder, tile_id: str, tile: Image.Image):
     return path
 
 
-def cut_all(image: Image.Image, n: int) -> list:
-    """Every tile of a sheet, reading order, as (tile, checks)."""
+def cut_all(image: Image.Image, n: int, cols: int = None) -> list:
+    """Every tile of a sheet, reading order, as (tile, checks). `n` rows; `cols` columns
+    when the sheet is not square."""
+    cols = cols or n
     mask = ink_mask(image)
-    owner = separate(mask, n)
-    return [cut_tile(image, mask, owner, cell, n) for cell in range(n * n)]
+    owner = separate(mask, n, cols)
+    return [cut_tile(image, mask, owner, cell, n, cols) for cell in range(n * cols)]
 
 
 def main():
@@ -211,7 +214,7 @@ def main():
 
     image = Image.open(original(ROOT / sheet["file"]))
     try:
-        cut = cut_all(image, sheet["grid"])
+        cut = cut_all(image, sheet.get("rows") or sheet["grid"], sheet.get("cols") or sheet["grid"])
     except CutError as problem:
         sheet["cut_error"] = str(problem)
         write_json(RECORDS, records)

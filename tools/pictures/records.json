@@ -1787,6 +1787,54 @@
       },
       "cost_usd": 0.0539,
       "vision_check_cost_usd": 0.00013
+    },
+    "trial_3x4_01": {
+      "plan_key": "trial_3x4",
+      "purpose": "a trial of twelve pictures on one sheet, 3 rows of 4 (the owner's word of 24 Nov 2026); things already in the game, drawn by their own lines, so the tiles can be compared with the ones from sheets of nine",
+      "file": "tools/pictures/sheets/trial_3x4_01.png",
+      "grid": null,
+      "rows": 3,
+      "cols": 4,
+      "size": "2880x2880",
+      "cells": [
+        "cow",
+        "dog",
+        "elephant",
+        "horse",
+        "crow",
+        "parrot",
+        "peacock",
+        "owl",
+        "butterfly",
+        "ant",
+        "honeybee",
+        "mosquito"
+      ],
+      "names": {
+        "cow": "Cow",
+        "dog": "Dog",
+        "elephant": "Elephant",
+        "horse": "Horse",
+        "crow": "Crow",
+        "parrot": "Parrot",
+        "peacock": "Peacock",
+        "owl": "Owl",
+        "butterfly": "Butterfly",
+        "ant": "Ant",
+        "honeybee": "Honeybee",
+        "mosquito": "Mosquito"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a grid of 3 rows and 4 columns: 12 equal cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Cow: an Indian cow with a hump and short horns.\n2. Dog: a friendly brown Indian street dog.\n3. Elephant: an Asian elephant.\n4. Horse: a brown horse.\n5. Crow: a black house crow with a grey neck.\n6. Parrot: a green rose-ringed parakeet with a red beak.\n7. Peacock: a peacock with its long tail folded behind it.\n8. Owl: a brown owl with large round eyes, perched.\n9. Butterfly: an orange and black butterfly with open wings, seen from above.\n10. Ant: a single black ant, shown large.\n11. Honeybee: a single honeybee with striped body, shown large.\n12. Mosquito: a single mosquito with long thin legs, shown large.\n\nFor this sheet: Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-11-24",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 398
+      },
+      "cost_usd": 0.1799,
+      "vision_check_cost_usd": 0.0006
     }
   },
   "tiles": {
@@ -19985,6 +20033,582 @@
       "history": [],
       "reviewed_on": "2026-10-07",
       "published_file": "Assets/pictures/port.webp"
+    },
+    "trial_3x4_01_c1": {
+      "thing_id": null,
+      "expected_thing": "cow",
+      "master_file": "tools/pictures/tiles/masters/trial_3x4_01_c1.png",
+      "master_size": [
+        827,
+        827
+      ],
+      "master_sha256": "0fafb647b1591ecb654b2152ab7e8a9a92524e0566a3da02acec3c965bbbb3ba",
+      "app_file": "tools/pictures/tiles/app/trial_3x4_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_3x4_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Cow: an Indian cow with a hump and short horns",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.015,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          39,
+          238,
+          740,
+          951
+        ],
+        "picture_shape": 0.98,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Cow",
+        "shows": "cow",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a trial of twelve on one sheet, 24 Nov 2026: kept for comparison, not for the game",
+      "history": [],
+      "reviewed_on": "2026-11-24"
+    },
+    "trial_3x4_01_c2": {
+      "thing_id": null,
+      "expected_thing": "dog",
+      "master_file": "tools/pictures/tiles/masters/trial_3x4_01_c2.png",
+      "master_size": [
+        731,
+        731
+      ],
+      "master_sha256": "2107c3c6dbcc0d968b07b8e1b550abdc325369d7e0a91e3e3c29832a7447a798",
+      "app_file": "tools/pictures/tiles/app/trial_3x4_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_3x4_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Dog: a friendly brown Indian street dog",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.015,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          758,
+          301,
+          1388,
+          929
+        ],
+        "picture_shape": 1.0,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Dog",
+        "shows": "dog",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a trial of twelve on one sheet, 24 Nov 2026: kept for comparison, not for the game",
+      "history": [],
+      "reviewed_on": "2026-11-24"
+    },
+    "trial_3x4_01_c3": {
+      "thing_id": null,
+      "expected_thing": "elephant",
+      "master_file": "tools/pictures/tiles/masters/trial_3x4_01_c3.png",
+      "master_size": [
+        810,
+        810
+      ],
+      "master_sha256": "f5d272e7df007eec377fd75dd386dbc16323ccaea4fd002308ebd1dc1e3ce99d",
+      "app_file": "tools/pictures/tiles/app/trial_3x4_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_3x4_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Elephant: an Asian elephant",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.015,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1468,
+          240,
+          2086,
+          938
+        ],
+        "picture_shape": 0.89,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Elephant",
+        "shows": "elephant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a trial of twelve on one sheet, 24 Nov 2026: kept for comparison, not for the game",
+      "history": [],
+      "reviewed_on": "2026-11-24"
+    },
+    "trial_3x4_01_c4": {
+      "thing_id": null,
+      "expected_thing": "horse",
+      "master_file": "tools/pictures/tiles/masters/trial_3x4_01_c4.png",
+      "master_size": [
+        921,
+        921
+      ],
+      "master_sha256": "e834707a9db06109a37f39874223942a128a5a7cada7bd961bc1126a88666a11",
+      "app_file": "tools/pictures/tiles/app/trial_3x4_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_3x4_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Horse: a brown horse",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.015,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2172,
+          191,
+          2855,
+          985
+        ],
+        "picture_shape": 0.86,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Horse",
+        "shows": "horse",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a trial of twelve on one sheet, 24 Nov 2026: kept for comparison, not for the game",
+      "history": [],
+      "reviewed_on": "2026-11-24"
+    },
+    "trial_3x4_01_c5": {
+      "thing_id": null,
+      "expected_thing": "crow",
+      "master_file": "tools/pictures/tiles/masters/trial_3x4_01_c5.png",
+      "master_size": [
+        771,
+        771
+      ],
+      "master_sha256": "befe55ef52daa3063d7b39b057594d46653d0865e2753046668d45f4a193e818",
+      "app_file": "tools/pictures/tiles/app/trial_3x4_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_3x4_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Crow: a black house crow with a grey neck",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.015,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          39,
+          1163,
+          704,
+          1791
+        ],
+        "picture_shape": 1.06,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Crow",
+        "shows": "crow",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a trial of twelve on one sheet, 24 Nov 2026: kept for comparison, not for the game",
+      "history": [],
+      "reviewed_on": "2026-11-24"
+    },
+    "trial_3x4_01_c6": {
+      "thing_id": null,
+      "expected_thing": "parrot",
+      "master_file": "tools/pictures/tiles/masters/trial_3x4_01_c6.png",
+      "master_size": [
+        755,
+        755
+      ],
+      "master_sha256": "604e8d2fb65f51e16b0908ff36f7710099f141a343498a98020f18e8a3f84f0a",
+      "app_file": "tools/pictures/tiles/app/trial_3x4_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_3x4_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Parrot: a green rose-ringed parakeet with a red beak",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.015,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          745,
+          1140,
+          1388,
+          1791
+        ],
+        "picture_shape": 0.99,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Parrot",
+        "shows": "parrot",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a trial of twelve on one sheet, 24 Nov 2026: kept for comparison, not for the game",
+      "history": [],
+      "reviewed_on": "2026-11-24"
+    },
+    "trial_3x4_01_c7": {
+      "thing_id": null,
+      "expected_thing": "peacock",
+      "master_file": "tools/pictures/tiles/masters/trial_3x4_01_c7.png",
+      "master_size": [
+        783,
+        783
+      ],
+      "master_sha256": "53e4b279ae6ea9deb7b418c5b7c89d09e886e97f5fcee5d8883c1164d1b01796",
+      "app_file": "tools/pictures/tiles/app/trial_3x4_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_3x4_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Peacock: a peacock with its long tail folded behind it",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.015,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1506,
+          1120,
+          2144,
+          1795
+        ],
+        "picture_shape": 0.95,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Peacock",
+        "shows": "peacock",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a trial of twelve on one sheet, 24 Nov 2026: kept for comparison, not for the game",
+      "history": [],
+      "reviewed_on": "2026-11-24"
+    },
+    "trial_3x4_01_c8": {
+      "thing_id": null,
+      "expected_thing": "owl",
+      "master_file": "tools/pictures/tiles/masters/trial_3x4_01_c8.png",
+      "master_size": [
+        854,
+        854
+      ],
+      "master_sha256": "cca33ecb67207d36a566091bf6efa6d37b14e9c347ec2b2900ad66a8b89f0d5f",
+      "app_file": "tools/pictures/tiles/app/trial_3x4_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_3x4_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Owl: a brown owl with large round eyes, perched",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.015,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2261,
+          1112,
+          2763,
+          1848
+        ],
+        "picture_shape": 0.68,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Owl",
+        "shows": "owl",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a trial of twelve on one sheet, 24 Nov 2026: kept for comparison, not for the game",
+      "history": [],
+      "reviewed_on": "2026-11-24"
+    },
+    "trial_3x4_01_c9": {
+      "thing_id": null,
+      "expected_thing": "butterfly",
+      "master_file": "tools/pictures/tiles/masters/trial_3x4_01_c9.png",
+      "master_size": [
+        754,
+        754
+      ],
+      "master_sha256": "cc1081756f65c652b9db70c0081f22fb22cc68d1b970ebcd410c2e217a9dc7a4",
+      "app_file": "tools/pictures/tiles/app/trial_3x4_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_3x4_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Butterfly: an orange and black butterfly with open wings, seen from above",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.015,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          40,
+          2067,
+          690,
+          2519
+        ],
+        "picture_shape": 1.44,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Butterfly",
+        "shows": "butterfly",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a trial of twelve on one sheet, 24 Nov 2026: kept for comparison, not for the game",
+      "history": [],
+      "reviewed_on": "2026-11-24"
+    },
+    "trial_3x4_01_c10": {
+      "thing_id": null,
+      "expected_thing": "ant",
+      "master_file": "tools/pictures/tiles/masters/trial_3x4_01_c10.png",
+      "master_size": [
+        734,
+        734
+      ],
+      "master_sha256": "bdc3ded28cf568b3f4e3c6f5a1aec26b40be31eb172f88304f25a5f68a793d23",
+      "app_file": "tools/pictures/tiles/app/trial_3x4_01_c10.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_3x4_01",
+      "cell": 10,
+      "style_version": "v1",
+      "prompt": "Ant: a single black ant, shown large",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.015,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          745,
+          2182,
+          1378,
+          2557
+        ],
+        "picture_shape": 1.69,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Ant",
+        "shows": "ant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a trial of twelve on one sheet, 24 Nov 2026: kept for comparison, not for the game",
+      "history": [],
+      "reviewed_on": "2026-11-24"
+    },
+    "trial_3x4_01_c11": {
+      "thing_id": null,
+      "expected_thing": "honeybee",
+      "master_file": "tools/pictures/tiles/masters/trial_3x4_01_c11.png",
+      "master_size": [
+        698,
+        698
+      ],
+      "master_sha256": "75fbdf3d25f7ec629fcae859e7699922c15728d01f53f37495da19d00ddf9f07",
+      "app_file": "tools/pictures/tiles/app/trial_3x4_01_c11.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_3x4_01",
+      "cell": 11,
+      "style_version": "v1",
+      "prompt": "Honeybee: a single honeybee with striped body, shown large",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.015,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1493,
+          2081,
+          2095,
+          2546
+        ],
+        "picture_shape": 1.29,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Honeybee",
+        "shows": "honeybee",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a trial of twelve on one sheet, 24 Nov 2026: kept for comparison, not for the game",
+      "history": [],
+      "reviewed_on": "2026-11-24"
+    },
+    "trial_3x4_01_c12": {
+      "thing_id": null,
+      "expected_thing": "mosquito",
+      "master_file": "tools/pictures/tiles/masters/trial_3x4_01_c12.png",
+      "master_size": [
+        771,
+        771
+      ],
+      "master_sha256": "9e2111ea6d2142753127d7220af7adcd202c715f0f832dbe6019648a02a75845",
+      "app_file": "tools/pictures/tiles/app/trial_3x4_01_c12.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "trial_3x4_01",
+      "cell": 12,
+      "style_version": "v1",
+      "prompt": "Mosquito: a single mosquito with long thin legs, shown large",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.015,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2148,
+          2132,
+          2813,
+          2591
+        ],
+        "picture_shape": 1.45,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Mosquito",
+        "shows": "mosquito",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a trial of twelve on one sheet, 24 Nov 2026: kept for comparison, not for the game",
+      "history": [],
+      "reviewed_on": "2026-11-24"
     }
   }
 }

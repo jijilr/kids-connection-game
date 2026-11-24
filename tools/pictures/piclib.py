@@ -75,10 +75,21 @@ def sheet_names(sheet: dict) -> dict:
     return {cell["thing"]: cell.get("name") or names.get(cell["thing"]) for cell in sheet["cells"]}
 
 
+def shape_of(sheet: dict) -> tuple:
+    """(rows, columns) of a sheet. Most sheets are square (`grid` by `grid`); a sheet may
+    instead name `rows` and `cols`, such as 3 rows of 4: twelve pictures on one sheet
+    (the owner's word of 24 Nov 2026, to save cost)."""
+    return sheet.get("rows", sheet.get("grid")), sheet.get("cols", sheet.get("grid"))
+
+
 def build_prompt(plan: dict, sheet: dict, names: dict) -> str:
     style = plan["style"]
-    grid = sheet["grid"]
-    layout = style["layout_single"] if grid == 1 else style["layout"].format(grid=grid, count=grid * grid)
+    rows, cols = shape_of(sheet)
+    if rows == cols:
+        grid = rows
+        layout = style["layout_single"] if grid == 1 else style["layout"].format(grid=grid, count=grid * grid)
+    else:
+        layout = style["layout_rows"].format(rows=rows, cols=cols, count=rows * cols)
     lines = [layout, ""]
     for number, cell in enumerate(sheet["cells"], 1):
         lines.append(f"{number}. {names[cell['thing']]}: {cell['draw']}.")

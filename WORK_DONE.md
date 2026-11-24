@@ -165,6 +165,15 @@ Now every thing the job draws goes through the same step, `tools/research/looks.
   filed under the article about the material.
 - It adds about Rs 2 a thing to a run (the reading, and the stricter check of two tiles).
 
+### Twelve pictures on one sheet (24 Nov)
+The owner asked for a grid of 3 by 4 to save cost. The picture tools now draw and cut a sheet that is
+not square (`rows` and `cols` in `tools/pictures/plan.json`; `layout_rows` in its style). One trial,
+Rs 17: twelve animals already in the game, drawn by their own lines. All twelve cut cleanly and the
+vision check named each one. A tile comes out about 700 to 900 pixels across (900 to 1,050 from a sheet
+of nine); the game shows 384. Rs 1.4 a picture in place of Rs 1.9. The comparison is
+`tools/pictures/preview/trial_3x4_compare.png`. The trial tiles are set aside, not in the game. The job
+does not use sheets of twelve yet.
+
 ### A picture of what the game holds (8 Oct)
 - `docs/game_map.png`: a map of the game, made in Blender. The seed is in the middle, the four kinds of
   thing around it, and the circles inside each kind on the outer ring. A board a child can open is a
@@ -240,6 +249,20 @@ Now every thing the job draws goes through the same step, `tools/research/looks.
   that. I gave you prehistoric as just an example." Nothing is special-cased by kind. Asked whether every
   thing should be drawn from what its sources say it looks like: "yes, build it for everything". His
   picture rule widens from "prehistoric animals are checked against sources" to every thing.
+- **The direction, in his words: "there is a one game... data is dynamic."** The start and the sets under
+  its four groups are shipped. After each set, the group "solved with most mastery and confidence" decides
+  the next. A set that is not there is fetched (DeepSeek for facts, the image model for pictures) while
+  he plays others. A buffer of "max 3 to 4 sets at any time"; "as one is used up... we prepare (either from
+  the existing data or made from api calls)... just like how chess branches are assessed by engines". It
+  is "as deep as wikipedia itself", "till virus to even covid and ebola in some line's end".
+- Ties go to the group "the user attempted earliest". New things are "extension of what he has seen".
+  The helper runs on this PC first. Rs 200 a day while it is a demo. Twelve pictures on a sheet.
+- At least four sub-divisions; with six, "we can do combinations of that level". A set that could also be
+  solved another way (by era, by eating habits) "must not be allowed".
+- He pointed to his June documents for these exceptions. Found there and not built: the check where a
+  model lists every grouping a sharp child might try (`PRD.md` IV.2), the ranking of groups by fewest
+  wrong guesses, then earliest, then fastest (III.4), and preparing the likeliest next sets while he
+  plays (VI.0). This replaces the weekly job and the two-day mastery rule of 23 Nov. **Not built yet.**
 
 ---
 
@@ -397,3 +420,5 @@ other names for mud.
 **24 Nov 2026**
 - No hard-coding: the job no longer names any kind of thing; every thing is drawn from what its sources
   say it looks like, and checked against them. Deeper dinosaur circles are planned like any other.
+- The owner restated the direction: one game, dynamic data, a buffer of prepared sets (see section 3).
+- A trial sheet of twelve pictures: it works, at Rs 1.4 a picture.

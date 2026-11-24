@@ -12,7 +12,7 @@ import os
 import sys
 
 from piclib import (PLAN, RECORDS, SHEETS, build_prompt, load_records, read_json, relative,
-                    sheet_names, today, write_json)
+                    shape_of, sheet_names, today, write_json)
 
 
 def cost_usd(usage, prices: dict):
@@ -39,9 +39,10 @@ def main():
     sheet, style = plan["sheets"][key], plan["style"]
     names = sheet_names(sheet)
     unknown = [thing for thing, name in names.items() if not name]
-    if unknown or len(sheet["cells"]) != sheet["grid"] ** 2:
+    rows, cols = shape_of(sheet)
+    if unknown or len(sheet["cells"]) != rows * cols:
         raise SystemExit(f"The plan for {key} is wrong: unknown things {unknown}, "
-                         f"or not {sheet['grid'] ** 2} cells.")
+                         f"or not {rows * cols} cells.")
     prompt = build_prompt(plan, sheet, names)
     size = f"{sheet['size']}x{sheet['size']}"
 
@@ -75,7 +76,9 @@ def main():
         "plan_key": key,
         "purpose": sheet["purpose"],
         "file": relative(path),
-        "grid": sheet["grid"],
+        "grid": sheet.get("grid"),
+        "rows": rows,
+        "cols": cols,
         "size": size,
         "cells": [c["thing"] for c in sheet["cells"]],
         "names": names,
@@ -93,7 +96,7 @@ def main():
         print("Cost: unknown (the service reported no usage). Check the account before drawing another.")
     else:
         rupees = cost * plan["prices"]["inr_per_usd"]
-        tiles = sheet["grid"] ** 2
+        tiles = rows * cols
         print(f"Cost: ${cost:.4f}, about Rs {rupees:.0f} for the sheet "
               f"(Rs {rupees / tiles:.1f} a tile)  {tokens}")
         limit = plan["prices"]["stop_if_a_sheet_costs_more_than_usd"]

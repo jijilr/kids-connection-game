@@ -29,11 +29,11 @@ def font(size):
 def contact(records: dict, sheet_id: str) -> Image.Image:
     sheet = records["sheets"][sheet_id]
     names = dict(thing_names(), **sheet.get("names", {}))
-    n = sheet["grid"]
+    rows, n = sheet.get("rows") or sheet["grid"], sheet.get("cols") or sheet["grid"]
     cell = SIZE + LABEL
-    image = Image.new("RGB", (n * SIZE + (n + 1) * GAP, n * cell + (n + 1) * GAP), BACK)
+    image = Image.new("RGB", (n * SIZE + (n + 1) * GAP, rows * cell + (rows + 1) * GAP), BACK)
     draw = ImageDraw.Draw(image)
-    for number in range(1, n * n + 1):
+    for number in range(1, rows * n + 1):
         tile = records["tiles"].get(f"{sheet_id}_c{number}")
         if tile is None:
             continue

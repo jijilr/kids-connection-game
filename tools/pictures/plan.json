@@ -7,6 +7,7 @@
     "quality": "high",
     "text": "Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
     "layout": "One image containing a {grid} by {grid} grid of {count} equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:",
+    "layout_rows": "One image containing a grid of {rows} rows and {cols} columns: {count} equal cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:",
     "approved": "by the owner on 2026-10-06, as drafted from his opening words (realistic, nature guide or museum catalogue)",
     "size_from_now_on": "2880 px sheets of nine, by the owner's ruling on 2026-10-06: about 2 rupees a tile and masters about 1000 px square. 3072 is refused by the service (8.3 megapixel limit).",
     "layout_single": "One image showing exactly one subject, whole and centred, with a wide plain white margin on every side:"
@@ -3116,6 +3117,75 @@
           "thing": "port",
           "name": "Port",
           "draw": "A harbour seen from the shore: a long concrete dock with two tall cargo cranes and rows of stacked containers beside calm water. No ship as the main subject: at most one small boat far off. As a child in India would see it at a sea port"
+        }
+      ]
+    },
+    "trial_3x4": {
+      "purpose": "a trial of twelve pictures on one sheet, 3 rows of 4 (the owner's word of 24 Nov 2026); things already in the game, drawn by their own lines, so the tiles can be compared with the ones from sheets of nine",
+      "rows": 3,
+      "cols": 4,
+      "size": 2880,
+      "only_for_this_sheet": "Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.",
+      "cells": [
+        {
+          "thing": "cow",
+          "name": "Cow",
+          "draw": "an Indian cow with a hump and short horns"
+        },
+        {
+          "thing": "dog",
+          "name": "Dog",
+          "draw": "a friendly brown Indian street dog"
+        },
+        {
+          "thing": "elephant",
+          "name": "Elephant",
+          "draw": "an Asian elephant"
+        },
+        {
+          "thing": "horse",
+          "name": "Horse",
+          "draw": "a brown horse"
+        },
+        {
+          "thing": "crow",
+          "name": "Crow",
+          "draw": "a black house crow with a grey neck"
+        },
+        {
+          "thing": "parrot",
+          "name": "Parrot",
+          "draw": "a green rose-ringed parakeet with a red beak"
+        },
+        {
+          "thing": "peacock",
+          "name": "Peacock",
+          "draw": "a peacock with its long tail folded behind it"
+        },
+        {
+          "thing": "owl",
+          "name": "Owl",
+          "draw": "a brown owl with large round eyes, perched"
+        },
+        {
+          "thing": "butterfly",
+          "name": "Butterfly",
+          "draw": "an orange and black butterfly with open wings, seen from above"
+        },
+        {
+          "thing": "ant",
+          "name": "Ant",
+          "draw": "a single black ant, shown large"
+        },
+        {
+          "thing": "honeybee",
+          "name": "Honeybee",
+          "draw": "a single honeybee with striped body, shown large"
+        },
+        {
+          "thing": "mosquito",
+          "name": "Mosquito",
+          "draw": "a single mosquito with long thin legs, shown large"
         }
       ]
     }
