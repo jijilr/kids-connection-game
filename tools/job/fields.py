@@ -176,7 +176,7 @@ def synonym_of(dictionary: dict, things: dict, placed: dict, candidate: dict) ->
         if len(shared) >= max(GROUPS - 1, len(labels) - 1):
             return f"its groups are those of '{name}': {', '.join(sorted(shared))}"
     for name, definition in dictionary["fields"].items():
-        if definition.get("withdrawn"):
+        if definition.get("withdrawn") or definition.get("merged_into"):
             continue
         carried = {key: things[key]["fields"][name] for key in placed
                    if not isinstance(things[key]["fields"].get(name), (list, type(None)))}

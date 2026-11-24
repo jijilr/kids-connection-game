@@ -4704,6 +4704,54 @@
       "sha256": "154b27ca00b55637205f53dd2e8d14251c3de555bc58fc17919a8b6a572d4593",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "spider": {
+      "say": "Spider",
+      "text": "Spider",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "spˈIdə",
+      "seconds": 1.17,
+      "cache": "tools/voice/clips/spider.mp3",
+      "sha256": "b74298cd4cc0f7f84bfec4339a991afa78e8d6750141e5b24a1d2d5b57169e40",
+      "recorded_on": "2026-11-24",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "black_widow": {
+      "say": "Black widow",
+      "text": "Black widow",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "blˈak wˈɪdQ",
+      "seconds": 1.97,
+      "cache": "tools/voice/clips/black_widow.mp3",
+      "sha256": "6c34d5940d8de5febe88d6f66a471fa9dc3a5d4584caaddc19ae28d8794a2bc0",
+      "recorded_on": "2026-11-24",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "mite": {
+      "say": "Mite",
+      "text": "Mite",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "mˈIt",
+      "seconds": 1.04,
+      "cache": "tools/voice/clips/mite.mp3",
+      "sha256": "5adc008ef9c0b1be749627e6ea6c3312c8e12ac78ac15fbc96eed46febcbe357",
+      "recorded_on": "2026-11-24",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "jumping_spider": {
+      "say": "Jumping spider",
+      "text": "Jumping spider",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "sounds": "ʤˈʌmpɪŋ spˈIdə",
+      "seconds": 2.37,
+      "cache": "tools/voice/clips/jumping_spider.mp3",
+      "sha256": "fa9b237b59d6b9af6b68056d2b0f0160a8f974dd442effa54d24ccff0ee33fd2",
+      "recorded_on": "2026-11-24",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     }
   },
   "groups": {

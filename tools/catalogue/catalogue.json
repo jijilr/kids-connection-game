@@ -32588,6 +32588,12 @@
           "animal",
           "animal/arachnids"
         ]
+      },
+      "voice": {
+        "say": "Spider",
+        "checked_by_ear": false,
+        "cached": "tools/voice/clips/spider.mp3",
+        "clip": null
       }
     },
     "black_widow": {
@@ -32608,6 +32614,12 @@
           "animal",
           "animal/arachnids"
         ]
+      },
+      "voice": {
+        "say": "Black widow",
+        "checked_by_ear": false,
+        "cached": "tools/voice/clips/black_widow.mp3",
+        "clip": null
       }
     },
     "mite": {
@@ -32629,6 +32641,12 @@
           "animal",
           "animal/arachnids"
         ]
+      },
+      "voice": {
+        "say": "Mite",
+        "checked_by_ear": false,
+        "cached": "tools/voice/clips/mite.mp3",
+        "clip": null
       }
     },
     "jumping_spider": {
@@ -32649,6 +32667,12 @@
           "animal",
           "animal/arachnids"
         ]
+      },
+      "voice": {
+        "say": "Jumping spider",
+        "checked_by_ear": false,
+        "cached": "tools/voice/clips/jumping_spider.mp3",
+        "clip": null
       }
     }
   },
@@ -34178,7 +34202,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job run 2026-11-24-23",
+    "by": "job:2026-11-24-24",
     "on": "2026-11-24"
   },
   "groups": {
