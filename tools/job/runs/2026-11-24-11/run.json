@@ -436,7 +436,8 @@
       "not_needed": false,
       "for_owner": false,
       "judged_not_sourced": [],
-      "ask": 1
+      "ask": 1,
+      "held_as": "held by the rules"
     },
     {
       "name": "Recorder",
@@ -520,7 +521,8 @@
       "not_needed": false,
       "for_owner": false,
       "judged_not_sourced": [],
-      "ask": 1
+      "ask": 1,
+      "held_as": "held by the rules"
     },
     {
       "name": "Harmonica",
@@ -701,7 +703,8 @@
       "not_needed": false,
       "for_owner": false,
       "judged_not_sourced": [],
-      "ask": 2
+      "ask": 2,
+      "held_as": "held by the rules"
     },
     {
       "name": "Keyboard",
@@ -729,7 +732,8 @@
       "not_needed": false,
       "for_owner": false,
       "judged_not_sourced": [],
-      "ask": 2
+      "ask": 2,
+      "held_as": "held by the rules"
     },
     {
       "name": "Toy accordion",
@@ -859,7 +863,8 @@
       "draw": "A small rectangular toy synthesizer in bright red and yellow plastic, with a row of white and black piano keys along the front and a few round colored buttons on top, resting on plain ground",
       "tries": 2,
       "tile": null,
-      "no_tile": "its picture cannot be told from Toy organ: the picture check took it for that, so it is not a thing of its own for a child"
+      "no_tile": "its picture cannot be told from Toy organ: the picture check took it for that, so it is not a thing of its own for a child",
+      "held_as": "held by the rules"
     },
     {
       "name": "Toy concertina",
@@ -893,7 +898,8 @@
         "kind_of_made_thing",
         "kind_of_thing"
       ],
-      "ask": 2
+      "ask": 2,
+      "held_as": "held by the rules"
     },
     {
       "name": "Violin",
@@ -921,7 +927,8 @@
       "not_needed": false,
       "for_owner": false,
       "judged_not_sourced": [],
-      "ask": 3
+      "ask": 3,
+      "held_as": "held by the rules"
     },
     {
       "name": "Harp",
@@ -1111,7 +1118,8 @@
       "not_needed": false,
       "for_owner": false,
       "judged_not_sourced": [],
-      "ask": 3
+      "ask": 3,
+      "held_as": "held by the rules"
     },
     {
       "name": "Lute",
@@ -1220,8 +1228,9 @@
     "seed"
   ],
   "spent_usd": {
-    "deepseek": 0.07081,
+    "deepseek": 0.08067,
     "drawing": 0.2822,
     "picture_checks": 0.04873
-  }
+  },
+  "opened": []
 }

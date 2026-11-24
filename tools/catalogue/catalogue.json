@@ -31628,12 +31628,196 @@
         "cached": "tools/voice/clips/lute.mp3",
         "clip_sha256": "bb217db8890c3712cbc4c07a8f5631baf1c081a63302cee024f662fb25da6534"
       }
+    },
+    "whistle": {
+      "name": "Whistle",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'Toys': it fits more than one group: toy and tool"
+      ],
+      "held_from": "job:2026-11-24-11",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "blow_into"
+      },
+      "familiar": 0.9,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ]
+      }
+    },
+    "trumpet": {
+      "name": "Trumpet",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'Toys': it fits no group"
+      ],
+      "held_from": "job:2026-11-24-11",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "blow_into"
+      },
+      "familiar": 0.95,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ]
+      }
+    },
+    "organ": {
+      "name": "Organ",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'Toys': it fits no group"
+      ],
+      "held_from": "job:2026-11-24-11",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "press_keys"
+      },
+      "familiar": 0.8,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ]
+      }
+    },
+    "keyboard": {
+      "name": "Keyboard",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'Toys': it fits no group"
+      ],
+      "held_from": "job:2026-11-24-11",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "press_keys"
+      },
+      "familiar": 0.9,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ]
+      }
+    },
+    "toy_synthesizer": {
+      "name": "Toy synthesizer",
+      "status": "held by the rules",
+      "status_why": [
+        "its picture cannot be told from Toy organ: the picture check took it for that, so it is not a thing of its own for a child"
+      ],
+      "held_from": "job:2026-11-24-11",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "press_keys"
+      },
+      "familiar": 0.6,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ]
+      }
+    },
+    "toy_concertina": {
+      "name": "Toy concertina",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'Press keys to play': it fits more than one group: press_keys and blow_into"
+      ],
+      "held_from": "job:2026-11-24-11",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "press_keys"
+      },
+      "familiar": 0.4,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ]
+      }
+    },
+    "violin": {
+      "name": "Violin",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'Toys': it fits no group"
+      ],
+      "held_from": "job:2026-11-24-11",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "pluck_strings"
+      },
+      "familiar": 0.95,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ]
+      }
+    },
+    "sitar": {
+      "name": "Sitar",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'Toys': it fits no group"
+      ],
+      "held_from": "job:2026-11-24-11",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "pluck_strings"
+      },
+      "familiar": 0.6,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ]
+      }
     }
   },
   "worked_out": {
     "things_by_status": {
       "in the game": 272,
-      "held by the rules": 76,
+      "held by the rules": 84,
       "kept for later": 5,
       "excluded": 3,
       "taken out of the game": 25
@@ -32822,6 +33006,48 @@
             "with_picture": 5
           }
         },
+        "could_be_filled_by": [
+          {
+            "name": "Whistle",
+            "status": "held by the rules",
+            "group": "blow_into"
+          },
+          {
+            "name": "Trumpet",
+            "status": "held by the rules",
+            "group": "blow_into"
+          },
+          {
+            "name": "Organ",
+            "status": "held by the rules",
+            "group": "press_keys"
+          },
+          {
+            "name": "Keyboard",
+            "status": "held by the rules",
+            "group": "press_keys"
+          },
+          {
+            "name": "Toy synthesizer",
+            "status": "held by the rules",
+            "group": "press_keys"
+          },
+          {
+            "name": "Toy concertina",
+            "status": "held by the rules",
+            "group": "press_keys"
+          },
+          {
+            "name": "Violin",
+            "status": "held by the rules",
+            "group": "pluck_strings"
+          },
+          {
+            "name": "Sitar",
+            "status": "held by the rules",
+            "group": "pluck_strings"
+          }
+        ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
@@ -33054,7 +33280,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "record_names.py",
+    "by": "job run 2026-11-24-11",
     "on": "2026-11-24"
   },
   "groups": {
@@ -33532,7 +33758,11 @@
         "fact": "A ladybug has bright red wings with black spots that warn birds to stay away.",
         "quote": "All species are protected by noxious fluids based on cyanide, and most have warning colouration, such as red with black spots or black stripes.",
         "source": "ladybug:wikipedia_simple",
-        "source_url": "https://simple.wikipedia.org/wiki/Lady_beetle"
+        "source_url": "https://simple.wikipedia.org/wiki/Lady_beetle",
+        "cached": "tools/voice/clips/groups/kind_of_animal__insect__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_animal__insect__explanation.mp3",
+        "clip_sha256": "a1361a9b90a022e2aafec1261b64f9b2404ce299013c48f9d18b72c8aa57fe26",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
@@ -35517,13 +35747,25 @@
       "question": "How do we mostly play with it?",
       "clues": [
         {
-          "text": "Think about something you can hear and tap your feet to."
+          "text": "Think about something you can hear and tap your feet to.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue1.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3",
+          "clip_sha256": "b0da2fa45585c39f3eaa75369bef5d097cf3ffbc5d5c8bd9b93414775d94dc5a",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You use your hands or your breath to make it sound."
+          "text": "You use your hands or your breath to make it sound.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue2.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3",
+          "clip_sha256": "041639f9f18c9c93597d50184a45c533f47e6f9506731c05527e0aead0aa86c2",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "It makes music, not a picture or a story."
+          "text": "It makes music, not a picture or a story.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue3.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3",
+          "clip_sha256": "c2ab2180d9adceedb6cd493e64fe84032c513aa33869057e22d9309a775054de",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
       "explanation": null,
@@ -35805,13 +36047,25 @@
       "question": "How does this toy make its sound?",
       "clues": [
         {
-          "text": "Think about a toy you must touch to start its sound."
+          "text": "Think about a toy you must touch to start its sound.",
+          "cached": "tools/voice/clips/groups/how_it_makes_sound__hit_or_strike__clue1.mp3",
+          "clip": "Assets/audio/groups/how_it_makes_sound__hit_or_strike__clue1.mp3",
+          "clip_sha256": "3491494278364954eff8c8d70dcc4f2f7440149f5a0c1ca1353f0b3532ee48ac",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You do not blow air into it, and you do not press keys."
+          "text": "You do not blow air into it, and you do not press keys.",
+          "cached": "tools/voice/clips/groups/how_it_makes_sound__hit_or_strike__clue2.mp3",
+          "clip": "Assets/audio/groups/how_it_makes_sound__hit_or_strike__clue2.mp3",
+          "clip_sha256": "ef917fd273ee95078a701e7befc8300c1c3a0dcf6443429e02b838f2279865ea",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You tap it, shake it, or bang it, and then it rings out loud."
+          "text": "You tap it, shake it, or bang it, and then it rings out loud.",
+          "cached": "tools/voice/clips/groups/how_it_makes_sound__hit_or_strike__clue3.mp3",
+          "clip": "Assets/audio/groups/how_it_makes_sound__hit_or_strike__clue3.mp3",
+          "clip_sha256": "76d6e47ab62f4d705349fe5f480052403193085c1e58e38b1e48235002b7b1ed",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
       "explanation": {
@@ -35820,7 +36074,11 @@
         "fact": "A tambourine is like a little drum, and it has tiny metal pairs around its edge that jingle.",
         "quote": "The tambourine looks like a small hand-held drum. But in addition to the skin (drumhead) there are also small pairs of jingles - like tiny cymbals - in slots around the frame.",
         "source": "tambourine:wikipedia_simple",
-        "source_url": "https://simple.wikipedia.org/wiki/Tambourine"
+        "source_url": "https://simple.wikipedia.org/wiki/Tambourine",
+        "cached": "tools/voice/clips/groups/how_it_makes_sound__hit_or_strike__explanation.mp3",
+        "clip": "Assets/audio/groups/how_it_makes_sound__hit_or_strike__explanation.mp3",
+        "clip_sha256": "6748b9a8b4a4085c4ff0079ae09213f01ac77782bbe88172582d2698b3f22375",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
@@ -35833,13 +36091,25 @@
       "question": "How does this toy make its sound?",
       "clues": [
         {
-          "text": "Think about how the air goes in to make the music."
+          "text": "Think about how the air goes in to make the music.",
+          "cached": "tools/voice/clips/groups/how_it_makes_sound__blow_into__clue1.mp3",
+          "clip": "Assets/audio/groups/how_it_makes_sound__blow_into__clue1.mp3",
+          "clip_sha256": "6fcc6dc92dae9be4a58227c02bcf173f636f72539cd993505330fe5a2c4b0308",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You use your mouth and your breath to play it."
+          "text": "You use your mouth and your breath to play it.",
+          "cached": "tools/voice/clips/groups/how_it_makes_sound__blow_into__clue2.mp3",
+          "clip": "Assets/audio/groups/how_it_makes_sound__blow_into__clue2.mp3",
+          "clip_sha256": "1cd9f34fb32d317486993c1b17335a2bc62fa6058a123429445bfd15f7d69b3e",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You blow into it, and the air makes the sound."
+          "text": "You blow into it, and the air makes the sound.",
+          "cached": "tools/voice/clips/groups/how_it_makes_sound__blow_into__clue3.mp3",
+          "clip": "Assets/audio/groups/how_it_makes_sound__blow_into__clue3.mp3",
+          "clip_sha256": "dae47fd63313c04a06e89dbe7e6cdf1579e5fba83536b10ab0ac270f2a009a97",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
       "explanation": {
@@ -35848,7 +36118,11 @@
         "fact": "A harmonica is small and you play it by blowing into little holes on its side.",
         "quote": "A harmonica is small musical instrument that is played with the mouth by blowing into holes in its side.",
         "source": "harmonica:wikipedia_simple",
-        "source_url": "https://simple.wikipedia.org/wiki/Harmonica"
+        "source_url": "https://simple.wikipedia.org/wiki/Harmonica",
+        "cached": "tools/voice/clips/groups/how_it_makes_sound__blow_into__explanation.mp3",
+        "clip": "Assets/audio/groups/how_it_makes_sound__blow_into__explanation.mp3",
+        "clip_sha256": "9803e5de59f5fc0a41e983dac79e3a6a3e63ddce23be30aa85dccace02e611fa",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
@@ -35861,13 +36135,25 @@
       "question": "How does this toy make its sound?",
       "clues": [
         {
-          "text": "Think about toys that have strings on them."
+          "text": "Think about toys that have strings on them.",
+          "cached": "tools/voice/clips/groups/how_it_makes_sound__pluck_strings__clue1.mp3",
+          "clip": "Assets/audio/groups/how_it_makes_sound__pluck_strings__clue1.mp3",
+          "clip_sha256": "d954e947edab5120b5055ceae1dc3f6ff4f4a989528e18ce406ff5231484885e",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You use your fingers to make the strings move."
+          "text": "You use your fingers to make the strings move.",
+          "cached": "tools/voice/clips/groups/how_it_makes_sound__pluck_strings__clue2.mp3",
+          "clip": "Assets/audio/groups/how_it_makes_sound__pluck_strings__clue2.mp3",
+          "clip_sha256": "28d2184b88c308962b9ec1c7f966979c7f17d10e272ee90406ef357d79e5ebd1",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You pull the strings with your fingers to make music."
+          "text": "You pull the strings with your fingers to make music.",
+          "cached": "tools/voice/clips/groups/how_it_makes_sound__pluck_strings__clue3.mp3",
+          "clip": "Assets/audio/groups/how_it_makes_sound__pluck_strings__clue3.mp3",
+          "clip_sha256": "0dac6a1d4d4af6a822d6d33e9830247e23ed2aada12a51d41d21b3b3287221a7",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
       "explanation": null,

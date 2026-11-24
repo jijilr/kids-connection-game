@@ -592,6 +592,62 @@
         "the check doubts it is a well-known thing of this group"
       ],
       "from": "job:2026-11-24-02"
+    },
+    {
+      "name": "Whistle",
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Toys': it fits more than one group: toy and tool"
+      ],
+      "from": "job:2026-11-24-11"
+    },
+    {
+      "name": "Trumpet",
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Toys': it fits no group"
+      ],
+      "from": "job:2026-11-24-11"
+    },
+    {
+      "name": "Organ",
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Toys': it fits no group"
+      ],
+      "from": "job:2026-11-24-11"
+    },
+    {
+      "name": "Keyboard",
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Toys': it fits no group"
+      ],
+      "from": "job:2026-11-24-11"
+    },
+    {
+      "name": "Toy synthesizer",
+      "why": [
+        "its picture cannot be told from Toy organ: the picture check took it for that, so it is not a thing of its own for a child"
+      ],
+      "from": "job:2026-11-24-11"
+    },
+    {
+      "name": "Toy concertina",
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Press keys to play': it fits more than one group: press_keys and blow_into"
+      ],
+      "from": "job:2026-11-24-11"
+    },
+    {
+      "name": "Violin",
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Toys': it fits no group"
+      ],
+      "from": "job:2026-11-24-11"
+    },
+    {
+      "name": "Sitar",
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Toys': it fits no group"
+      ],
+      "from": "job:2026-11-24-11"
     }
   ]
 }
