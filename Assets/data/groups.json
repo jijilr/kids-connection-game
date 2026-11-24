@@ -884,8 +884,15 @@
     "pet_farm_or_wild=wild_land": {
       "clues": [],
       "explanation": {
-        "text": "These animals all live free in the wild, away from homes and farms, and they move about on land. A cheetah can run faster than any other animal on land, as fast as a car on a big road.",
+        "text": "These animals all live free on land, away from homes and farms. They find their own food and homes in nature. A cheetah can run faster than any other animal on land.",
         "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__explanation.mp3"
+      }
+    },
+    "pet_farm_or_wild=wild_water": {
+      "clues": [],
+      "explanation": {
+        "text": "These animals all live in water — in rivers, seas or the sea. That is why they go together in one group. A penguin uses its flippers to swim under the water, but it cannot fly in the air.",
+        "audio": "Assets/audio/groups/pet_farm_or_wild__wild_water__explanation.mp3"
       }
     },
     "pet_farm_or_wild_of_bird=pet": {

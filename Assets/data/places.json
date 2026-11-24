@@ -206,7 +206,7 @@
        "ready": true,
        "place": "animal/wild_water",
        "clues": 0,
-       "explanation": false
+       "explanation": true
       }
      },
      "in_between": 2,
@@ -518,7 +518,7 @@
        "ready": true,
        "place": "animal/mammal/wild_water",
        "clues": 0,
-       "explanation": false
+       "explanation": true
       }
      },
      "in_between": 0,
@@ -641,7 +641,7 @@
        "ready": true,
        "place": "animal/bird/wild_water",
        "clues": 0,
-       "explanation": false
+       "explanation": true
       }
      },
      "in_between": 1,

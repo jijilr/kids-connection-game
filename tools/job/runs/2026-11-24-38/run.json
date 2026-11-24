@@ -1,0 +1,53 @@
+{
+  "id": "2026-11-24-38",
+  "started": "2026-11-24",
+  "rehearse": null,
+  "cap_inr": 32.0,
+  "plan": {
+    "asks": [],
+    "circles": [
+      {
+        "circle": "animal/mammal/wild_water",
+        "label": "Wild animals in water",
+        "chain": "Animals > Mammals > Wild animals in water",
+        "needs_field": true,
+        "expect_things": 15,
+        "his_strength": false
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": [],
+    "held_back": [],
+    "played": null,
+    "mastered": []
+  },
+  "retry_held": true,
+  "things": [],
+  "sheets": [],
+  "stopped": "",
+  "fields_added": [],
+  "fields_held": [],
+  "open_before": [
+    "animal",
+    "animal/bird",
+    "animal/dinosaur",
+    "animal/mammal",
+    "animal/mammal/wild_land",
+    "made_by_people",
+    "made_by_people/building",
+    "made_by_people/household",
+    "made_by_people/toy",
+    "made_by_people/toy/music",
+    "made_by_people/vehicle",
+    "nature_not_alive",
+    "plant",
+    "plant/vegetable",
+    "seed"
+  ],
+  "opened": [],
+  "spent_usd": {
+    "deepseek": 0.00425,
+    "drawing": 0.0,
+    "picture_checks": 0.0
+  }
+}

@@ -34246,7 +34246,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-11-24-37",
+    "by": "job:2026-11-24-38",
     "on": "2026-11-24"
   },
   "groups": {
@@ -36310,22 +36310,22 @@
       "question": "Is it mostly a pet, a farm animal or a wild animal?",
       "clues": [],
       "explanation": {
-        "text": "These animals all live free in the wild, away from homes and farms, and they move about on land. A cheetah can run faster than any other animal on land, as fast as a car on a big road.",
-        "together": "These animals all live free in the wild, away from homes and farms, and they move about on land.",
-        "fact": "A cheetah can run faster than any other animal on land, as fast as a car on a big road.",
+        "text": "These animals all live free on land, away from homes and farms. They find their own food and homes in nature. A cheetah can run faster than any other animal on land.",
+        "together": "These animals all live free on land, away from homes and farms. They find their own food and homes in nature.",
+        "fact": "A cheetah can run faster than any other animal on land.",
         "quote": "It is the fastest land animal and can run up to 105 kilometres per hour (65 mph), and accelerate from 0 to 97 kilometres per hour (60 mph) in less than 3 seconds.",
         "source": "cheetah:wikipedia_simple",
         "source_url": "https://simple.wikipedia.org/wiki/Cheetah",
         "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__explanation.mp3",
         "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__explanation.mp3",
-        "clip_sha256": "ee5aa3838f55b84994b7ded476e635916ad70c2da82dac5f26de7498f28bbd0e",
+        "clip_sha256": "2ac15db81bcccbd2a5b8551a29098e5e935428652d168a7cbd600f870dfc9ce5",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
-        "no clues were kept: clue 2 would fit a thing of another group as well; clue 3 would fit a thing of another group as well"
+        "no clues were kept: clue 2 names a thing of the group: house; clue 2 would fit a thing of another group as well; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
       ],
       "clues_set_aside": {
         "on": "2026-11-24",
@@ -36350,13 +36350,23 @@
       "label": "Wild animals in water",
       "question": "Is it mostly a pet, a farm animal or a wild animal?",
       "clues": [],
-      "explanation": null,
+      "explanation": {
+        "text": "These animals all live in water — in rivers, seas or the sea. That is why they go together in one group. A penguin uses its flippers to swim under the water, but it cannot fly in the air.",
+        "together": "These animals all live in water — in rivers, seas or the sea. That is why they go together in one group.",
+        "fact": "A penguin uses its flippers to swim under the water, but it cannot fly in the air.",
+        "quote": "They use their flippers to swim underwater, but they cannot fly in the air.",
+        "source": "penguin:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Penguin",
+        "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_water__explanation.mp3",
+        "clip": "Assets/audio/groups/pet_farm_or_wild__wild_water__explanation.mp3",
+        "clip_sha256": "b12953c8b5cd36587cf6896d558b84358df59a09a1e217e9ce4a2add911e342f",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+      },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
-        "no clues were kept: clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another",
-        "no explanation was kept: the explanation does not say simply why they belong together"
+        "no clues were kept: clue 3 is too long for a small child; clue 3 is not true of every thing in the group"
       ],
       "clues_set_aside": {
         "on": "2026-11-24",
