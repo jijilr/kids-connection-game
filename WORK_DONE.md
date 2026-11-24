@@ -12,13 +12,13 @@ Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 
 | | |
 |---|---|
-| Things in the game | 273 at noon on 24 Nov, each with a drawn picture and a spoken name. The helper adds more as the game is played |
+| Things in the game | 276 on the night of 24 Nov (273 at noon), each with a drawn picture and a spoken name. The helper adds more as the game is played |
 | Things recorded in all | 368 (79 held by the rules, 23 taken out and kept, 5 kept for later by the owner, 3 ruled out) |
 | Sets a child can open | 15 |
 | Dictionary | version 12, 21 fields (two withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups with words | 61, each with a ladder of clues; 59 have an explanation |
-| Tests | 91 in the game, 38 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
+| Tests | 91 in the game, 41 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
 
 **The fifteen sets:** Everything, Animals, Mammals, Wild animals on land and Make music with it (both
 made on 24 Nov by the helper, the second while the owner played), Birds, Dinosaurs, Plants, Vegetable
@@ -290,6 +290,25 @@ the game does not have: the planets (8) and the continents (7) are ends; the thi
 the land grazers (59) and the variants of the COVID-19 virus (21) are not. The first trial counted
 sixteen "continents" and thirty "oceans", because one call pads a short list; that is why there is a
 second, strict call.
+
+**Widening a place** (`python tools/prepare_next.py --widen CIRCLE --cap N`, `tools/job/widen.py`).
+The job could only make a whole new set under a group; now it can add to a place that has its set. It
+fills the kinds a question has but cannot show, and adds at most one kind the question lacks, if two
+separate sortings put four of its things in it, take nothing that is already there, and find no place
+for its things among the old kinds. Trials (Rs 0.8): Arachnids and Crustaceans pass for Animals;
+"In space" is refused for Vehicles because Rocket is already "In the air"; "Clothing" passed at the
+first place, wrongly, which is why the third test was added. **The first real run** (2026-11-24-23,
+Rs 27.8): Animals gained the kind "Arachnids", with Scorpion, Tick and Tarantula. Spider and Mite were
+refused by the picture check (taken for the tarantula and the tick), so the kind has three things and
+is not shown yet.
+
+**The two keys for "in between"** are written and tested in the same file, and tried for real
+(Rs 2.2): of fifteen things the model offered at the first place, only the virus passed. No run uses
+them yet. One rule is open (a kind that is itself in between); see `DESIGN.md`, section 7.
+
+Seen in that run and not fixed: "Wolf spider" was turned away as "Wolf again, or a part of it". The
+rule that stops "Pumpkin seeds" when Pumpkin plant is there reads any name that begins with a name in
+the game as the same thing.
 
 ### The Vegetable plants set, after the owner was caught by it (24 Nov)
 He played it and could not tell the last two groups apart ("you help me. haha").
@@ -622,3 +641,6 @@ other names for mud.
 - A small picture of his web beside Next; clues for every group under the new rule (Rs 13).
 - Evening: more kinds than four in the fewest sets, the end of a branch, and "in between", in the game;
   `DESIGN.md` written. The job now finds the end of a branch by counting (trials: Rs 0.3).
+- Night: the job can widen a place; Animals gained "Arachnids" (three things so far, Rs 27.8); the two
+  keys for "in between" tried (Rs 3). The owner raised the concentric-circles paradigm itself; written
+  down in `DESIGN.md`, section 8a, not built. Spent on the day by the helper's ledger: Rs 164 of 200.

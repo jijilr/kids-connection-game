@@ -249,7 +249,57 @@ These knots are the bridges between branches. They answer the owner's earlier wo
 
 Built in the game. Code: `Dimension.inBetween`, `Entity.valueFor`, `Entity.sidesOf`,
 `EngineProvider._notYet`, `_knows`. Tests: `test/more_than_four_test.dart`.
-**Not built yet:** see section 10 for the state of the job.
+
+### How a thing is proved to be in between
+
+Two keys, and both must turn. They are written and tested in `tools/job/widen.py`.
+
+1. **Its own pages say so.** From the thing's whole pages the model copies one sentence for each
+   answer the pages give it, and one sentence saying the answer is disputed, if there is one. A
+   script checks every sentence against the saved text, word for word. A second call, shown
+   only the sentence of dispute, says whether it speaks of today.
+2. **Two checks give it no one place.** The same two sortings that settle every other thing are
+   asked. If both put it in one and the same kind, it has a place after all.
+
+### What a real trial showed (24 Nov 2026, Rs 2.2)
+
+At the first place the model was asked twice for things with no single answer. It offered
+fifteen. The keys refused fourteen:
+
+| Offered | Why it was refused |
+|---|---|
+| Venus flytrap, sea anemone, moss | They only surprise. Their pages give them one kind. |
+| Coral | Its dispute is of the past: "presently, corals are classified as species of animals". |
+| Mushroom, bacteria | They belong to kinds the question lacks. That is widening (section 8). |
+| Beaver dam, bird nest, spider web, fossil | Their pages give them one kind. |
+
+**The virus passed both keys.** Its sentence: "Scientific opinions differ on whether viruses are
+a form of life or organic structures that interact with living organisms."
+
+One more thing passed on a sentence about what "early taxonomists" found hard. That is why the
+second call about today was added.
+
+What this means: honest in-between things are rare, which is as it should be. At the first
+place there is one sure thing, the virus, and a group needs four. The group cannot be made of
+four unrelated oddities.
+
+### Not built yet, and why: a kind that is in between
+
+What can fill the group is four different viruses. Each is in between because it is a virus,
+not because its own page argues the point. That needs one more rule, which the owner has not
+ruled on:
+
+> A thing is also in between when it is a member of a kind that is. Two sentences prove it:
+> one from its own page saying it is of that kind, and one from the kind's page saying the
+> kind is disputed.
+
+With that rule, "In between" at the first place is in effect the door to the viruses, and the
+place below it can be sorted further like any other: kinds of virus, then coronaviruses, then
+their variants. This is one answer to the owner's question of how "Everything" reaches the
+virus. He was about to give his own; this section waits for it.
+
+Until then nothing makes in-between things on purpose, and the catalogue's copy of the rule
+(which writes the clues for the group) is not written either. The game is ready for them.
 
 ## 8. Widening a place
 
@@ -263,14 +313,90 @@ Widening adds to a place that already has a set:
   disputes it; they need a kind of their own.
 - **The group "in between"** (section 7).
 
-A new kind passes the same tests as a new question: four things with pictures, one answer for
-each thing by two checks that agree, sets with one clean solution, and it must not be an
-existing kind in other words.
+A new kind must pass three tests, by two separate sortings that share no wording:
+
+1. **Four of its things are put in it** by both sortings.
+2. **It takes nothing that is already there.** If either sorting would put a thing the place
+   holds into the new kind, it is not a kind of its own.
+3. **It stands beside the kinds there, not inside one.** Sorted over the old kinds alone, its
+   things must have no place.
+
+Its things then go through every stage like any other: pages, facts with their sentences, the
+one-solution rule, pictures, checks.
 
 When the game meets the wider place is settled by section 5: a place with an untested kind
 becomes a line again.
 
-**Not built yet:** see section 10.
+Tried for real on 24 Nov 2026 (Rs 0.8), before anything was built on it:
+
+| Place | Kind proposed | Verdict |
+|---|---|---|
+| Animals | Arachnids; Crustaceans | both pass |
+| Plants | Herbs and spices; Ferns and mosses | both pass |
+| Vehicles | On snow and ice | passes |
+| Vehicles | In space | refused: Rocket, already "In the air", would belong to it |
+| Everything | Furniture | refused: Chair, already there, would belong to it |
+| Everything | Clothing | passed at first, wrongly. Clothes are things people make. Test 3 was added for this. |
+
+Built: `python tools/prepare_next.py --widen CIRCLE --cap N`. It fills the kinds a question has
+but cannot show, and adds at most one new kind in a run. A kind the owner holds back in
+`settings.json` is left alone. Code: `tools/job/widen.py`; `plan_widen`, `add_kind` and
+`widen_place` in `tools/prepare_next.py`.
+
+The first real run (24 Nov 2026, job run 2026-11-24-23, Rs 27.8): Animals gained the kind
+"Arachnids". Scorpion, Tick and Tarantula went into the game with their pictures. Spider and
+Mite did not: the picture check took the spider for the tarantula and the mite for the tick,
+so a player could not tell them apart either. With three things the kind is not shown yet; one
+more run fills it. Nothing was padded to make four.
+
+**Not built yet:** the helper does not widen by itself. Today widening is a command.
+
+## 8a. Circles that cross (raised, not decided)
+
+Owner, 24 Nov 2026, late evening: "inspite of being accomodating, we still assume concentric
+circles paradigm. but knowledge is never that... while tomato could be part of the vegitable
+circle, it could be also part of the hard to define category... how do we accomadate other
+possible circles along with the main center and concentric circle".
+
+What is true today:
+
+- **The data is not concentric.** A thing is a list of answers to questions. Tomato plant
+  carries two: it is a vegetable plant, and the part we eat is the fruit. Both are true, and
+  neither is "in between". It already stands in two circles.
+- **The game is concentric**, because of three choices in the engine, not in the data:
+  1. A question lives inside one circle. "Which part do we eat?" is asked only of vegetable
+     plants, so "we eat the fruit" can never take in the mango tree. And one question is
+     stored twice: "pet, farm or wild?" once for mammals and once for birds.
+  2. A place asks one question.
+  3. A place is named by the road to it (`animal/bird`). Two roads to the same things would be
+     two places.
+
+What accommodating other circles would mean:
+
+1. A question belongs to every thing it is true of, not to one place.
+2. A place is where circles overlap, named by the circles and not by the road.
+3. A place may ask more than one question. Each set still asks one, and the same sixteen are
+   never grouped a second way: those rules stand.
+
+The centre and the rings stay, as the spine. After a group done well the game could then go
+three ways instead of two: deeper, elsewhere, or across to another circle the same things
+belong to. On the web such a place has more than one thread. Depth becomes the number of
+circles a place lies inside, whatever the road.
+
+What it costs:
+
+- The one-solution rule refuses more sets, because more questions can sort the same sixteen.
+- Most overlaps hold fewer than sixteen things. They are ends (section 6).
+- A crossing circle needs facts for more things, but no new pictures: its sets are made of
+  things the game already has.
+- Place names, lines, the web and the job's tree all assume one road today.
+
+The assistant's advice: prove it small first. "Pet, farm or wild?" across all animals uses
+answers fifty animals already carry.
+
+One thing this changes about section 7: many "hard to define" things stop being hard once
+circles may cross. The tomato needs no "in between". What is left for "in between" is what no
+second question resolves, such as the virus.
 
 ## 9. The measures, and the audience
 
@@ -300,8 +426,8 @@ With general use decided, that wording is the next thing to turn into a setting.
 | Next set from his lines (4) | built | built (helper) |
 | More kinds than four (5) | built | fills four kinds only |
 | The end of a branch (6) | built: never a line, leaf on the web | built: counted before a question is looked for |
-| In between (7) | built | not built: nothing makes such things on purpose yet |
-| Widening (8) | meets a wider place by rule 5 | not built |
+| In between (7) | built | the two keys are written, tested and tried; no run uses them yet (one rule is open) |
+| Widening (8) | meets a wider place by rule 5 | built as a command; the helper does not widen by itself |
 
 ## 11. Open questions
 
@@ -317,6 +443,11 @@ With general use decided, that wording is the next thing to turn into a setting.
   place" may suit a question better; a question can set its own.
 - **Automatic widening.** Whether the helper should widen places by itself, inside the day's
   money, or only on a command.
+- **Circles that cross.** Section 8a. The largest open question: whether the engine stays a
+  tree with bridges, or becomes overlapping circles with the tree as its spine.
+- **A kind that is in between.** The rule in section 7 that would let four viruses fill the
+  group at the first place. It needs the owner's word, because it decides what stands beside
+  Animals and Plants on the first set.
 
 ## 12. The owner's rulings, in order
 
@@ -329,3 +460,4 @@ With general use decided, that wording is the next thing to turn into a setting.
 | 24 Nov 2026 | No special cases: "I gave you prehistoric example just as an example." Build the general thing. |
 | 24 Nov 2026 | Automate is the design; "Dig deeper" is a test feature. The web of what he has found; breadth and depth. |
 | 24 Nov 2026, evening | More kinds than four, covered in the fewest rounds. A branch can end. Things resist classification, and the first place must take them in. General use. Write the decisions down. |
+| 24 Nov 2026, late | Raised, not ruled: the concentric-circles paradigm itself. A thing belongs to more than one circle (section 8a). |
