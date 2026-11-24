@@ -351,6 +351,17 @@ def test_the_clever_kid_check_counts_only_a_real_second_way_to_sort_the_sixteen(
     assert "What kind of animal is it?" in asked[0] and asked[0].count("\n- ") == 4
 
 
+def test_a_group_left_short_by_a_failed_picture_is_tried_once_more_in_the_same_run():
+    """The owner's word of 24 Nov 2026: a set that ends one thing short because a picture failed
+    gets one more try on its own. The run's code is read here, since a run cannot be staged offline."""
+    code = pathlib.Path(job.__file__).read_text(encoding="utf-8")
+    after = code[code.index("    draw_all()\n    # A group left short only because a picture failed"):code.index("def open_circles()")]
+    assert "suggest(client, config, spend, cat.load(), ask, tried)" in after      # more names for that group
+    assert "ground_each(" in after and after.rstrip().endswith("draw_all()")     # their facts, then their pictures
+    assert 'ask.get("topped_up")' in after and 'ask["topped_up"] = True' in after  # once, not for ever
+    assert 'not t.get("not_drawn")' in after                                      # only what was drawn and failed
+
+
 # ------------------------------------------------------------------ a field is decided by four tests
 
 def stand_in(sorting: dict, checking: dict = None, not_birds: tuple = (), more: dict = None):

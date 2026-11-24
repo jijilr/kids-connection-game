@@ -1513,62 +1513,92 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
     # ---- pictures, for everything that needs one, pooled onto as few sheets as will hold them
     asks = run["plan"]["asks"]
     kind_of = lambda t: (t.get("thing") or t)["fields"]["kind_of_thing"]
-    for attempt in (1, 2):
-        wanted = [t for t in run["things"] if t["passed"] and not t.get("tile") and not t.get("not_drawn")
-                  and t.get("tries", 0) < attempt]
-        if not wanted:
-            break
-        # how each thing looks, from its own sources, before a line is written for it: for EVERY
-        # thing, group by group, so that what tells it apart is chosen against its group-mates
-        # (the owner's ruling of 24 Nov 2026). The owner's own word on how to draw a thing wins.
-        said_by_owner = lambda t: (cat.load()["things"].get(cat.slug(t["name"])) or {}).get("draw_as")
-        to_look = [t for t in wanted if "look" not in t and "draw" not in t and not said_by_owner(t)]
-        for ask_number in sorted({t["ask"] for t in to_look}):
-            ask = asks[ask_number]
-            group = [t for t in to_look if t["ask"] == ask_number]
-            beside = [e["name"] for e in cat.load()["things"].values() if e["status"] == cat.IN_GAME
-                      and all(e["fields"].get(f) == v for f, v in ask["fixed"].items())]
-            found = deepseek_step(lambda spend: looks.look_up(client, config, spend, [t["name"] for t in group],
-                                                              ask["chain"], beside))
-            for t in group:
-                t["look"] = look_of(found.get(t["name"], {}))
-            save()
-        for t in wanted:
-            if "draw" not in t:
-                said = said_by_owner(t)
-                t["draw"] = said or deepseek_step(lambda spend: describe(client, config, spend, asks[t["ask"]],
-                                                                         t["name"], t.get("look")))
-        save()
-        for kind in sorted({kind_of(t) for t in wanted}):
-            same = [t for t in wanted if kind_of(t) == kind]
-            for first in range(0, len(same), MOST_ON_A_SHEET):
-                sheet = same[first:first + MOST_ON_A_SHEET]
-                key = plan_sheet(run["id"], len(run["sheets"]) + 1, sheet, kind)
-                say(f"\n  drawing {', '.join(t['name'] for t in sheet)}" + (" again" if attempt == 2 else ""))
-                sheet_id, good = draw_and_check(budget, key)
-                run["sheets"].append(sheet_id)
-                chosen = keep_one_tile_each(budget, good)
-                for t in sheet:
-                    t["tries"] = attempt
-                    t["tile"] = chosen.get(cat.slug(t["name"]))
-                    if not t["tile"]:
-                        t["no_tile"] = f"no tile of it passed the checks after {attempt} sheet(s)"
-                        # the vision check took its picture for another thing of this game: a child
-                        # could not tell them apart either, so it is not drawn again
-                        tiles = cat.read_json(RECORDS)["tiles"].values()
-                        seen = {(x.get("vision") or {}).get("shows") for x in tiles
-                                if x["sheet_id"] == sheet_id and x["expected_thing"] == cat.slug(t["name"])}
-                        others = {cat.slug(o["name"]): o["name"] for o in run["things"] if o is not t and o["passed"]}
-                        others.update({k: e["name"] for k, e in cat.load()["things"].items() if e["status"] == cat.IN_GAME})
-                        twin = next((others[k] for k in seen if k in others), None)
-                        if twin:
-                            t["tries"] = 2
-                            t["no_tile"] = (f"its picture cannot be told from {twin}: the picture check took it for that, "
-                                            "so it is not a thing of its own for a child")
-                tool("preview.py", sheet_id)
-                say(f"  sheet {sheet_id}: " + ", ".join(f"{t['name']} {'ok' if t['tile'] else 'NOT ok'}" for t in sheet))
+    def draw_all():
+        """Draw every accepted thing that has no tile yet: one sheet, and a second for what failed."""
+        for attempt in (1, 2):
+            wanted = [t for t in run["things"] if t["passed"] and not t.get("tile") and not t.get("not_drawn")
+                      and t.get("tries", 0) < attempt]
+            if not wanted:
+                break
+            # how each thing looks, from its own sources, before a line is written for it: for EVERY
+            # thing, group by group, so that what tells it apart is chosen against its group-mates
+            # (the owner's ruling of 24 Nov 2026). The owner's own word on how to draw a thing wins.
+            said_by_owner = lambda t: (cat.load()["things"].get(cat.slug(t["name"])) or {}).get("draw_as")
+            to_look = [t for t in wanted if "look" not in t and "draw" not in t and not said_by_owner(t)]
+            for ask_number in sorted({t["ask"] for t in to_look}):
+                ask = asks[ask_number]
+                group = [t for t in to_look if t["ask"] == ask_number]
+                beside = [e["name"] for e in cat.load()["things"].values() if e["status"] == cat.IN_GAME
+                          and all(e["fields"].get(f) == v for f, v in ask["fixed"].items())]
+                found = deepseek_step(lambda spend: looks.look_up(client, config, spend, [t["name"] for t in group],
+                                                                  ask["chain"], beside))
+                for t in group:
+                    t["look"] = look_of(found.get(t["name"], {}))
                 save()
+            for t in wanted:
+                if "draw" not in t:
+                    said = said_by_owner(t)
+                    t["draw"] = said or deepseek_step(lambda spend: describe(client, config, spend, asks[t["ask"]],
+                                                                             t["name"], t.get("look")))
+            save()
+            for kind in sorted({kind_of(t) for t in wanted}):
+                same = [t for t in wanted if kind_of(t) == kind]
+                for first in range(0, len(same), MOST_ON_A_SHEET):
+                    sheet = same[first:first + MOST_ON_A_SHEET]
+                    key = plan_sheet(run["id"], len(run["sheets"]) + 1, sheet, kind)
+                    say(f"\n  drawing {', '.join(t['name'] for t in sheet)}" + (" again" if attempt == 2 else ""))
+                    sheet_id, good = draw_and_check(budget, key)
+                    run["sheets"].append(sheet_id)
+                    chosen = keep_one_tile_each(budget, good)
+                    for t in sheet:
+                        t["tries"] = attempt
+                        t["tile"] = chosen.get(cat.slug(t["name"]))
+                        if not t["tile"]:
+                            t["no_tile"] = f"no tile of it passed the checks after {attempt} sheet(s)"
+                            # the vision check took its picture for another thing of this game: a child
+                            # could not tell them apart either, so it is not drawn again
+                            tiles = cat.read_json(RECORDS)["tiles"].values()
+                            seen = {(x.get("vision") or {}).get("shows") for x in tiles
+                                    if x["sheet_id"] == sheet_id and x["expected_thing"] == cat.slug(t["name"])}
+                            others = {cat.slug(o["name"]): o["name"] for o in run["things"] if o is not t and o["passed"]}
+                            others.update({k: e["name"] for k, e in cat.load()["things"].items() if e["status"] == cat.IN_GAME})
+                            twin = next((others[k] for k in seen if k in others), None)
+                            if twin:
+                                t["tries"] = 2
+                                t["no_tile"] = (f"its picture cannot be told from {twin}: the picture check took it for that, "
+                                                "so it is not a thing of its own for a child")
+                    tool("preview.py", sheet_id)
+                    say(f"  sheet {sheet_id}: " + ", ".join(f"{t['name']} {'ok' if t['tile'] else 'NOT ok'}" for t in sheet))
+                    save()
 
+
+    draw_all()
+    # A group left short only because a picture failed gets one more try on its own (the owner's
+    # word of 24 Nov 2026, after "Make music with it" ended one thing short for a toy whose
+    # picture failed, at Rs 40): more names for that group, their facts, and their pictures.
+    if not run["rehearse"]:
+        topped = False
+        for number, ask in enumerate(asks_of_run):
+            if ask.get("pictures_for") or ask.get("topped_up"):
+                continue
+            mine = [t for t in run["things"] if t.get("ask") == number and t["passed"]]
+            have = [t for t in mine if t.get("tile")]
+            lost = [t for t in mine if not t.get("tile") and t.get("no_tile") and not t.get("not_drawn")]
+            short = ask["need"] - len(have)
+            if short <= 0 or not lost:
+                continue
+            ask["topped_up"] = True
+            say(f"\n== {ask['chain']}: {short} more thing(s) needed, because no picture of "
+                f"{', '.join(t['name'] for t in lost)} passed ==")
+            tried = [t["name"] for t in run["things"] if t.get("ask") == number]
+            offers = deepseek_step(lambda spend: suggest(client, config, spend, cat.load(), ask, tried))
+            say("  suggested: " + ", ".join(f"{o['name']} ({o['familiar']})" for o in offers))
+            # counted from the things that do have a picture: the lost ones fill no place
+            ground_each(dict(ask, need=ask["need"] - SPARE), number, offers, have)
+            topped = True
+            save()
+        if topped:
+            draw_all()
 
 def open_circles() -> dict:
     return {cid: c["label"] for cid, c in cat.load()["worked_out"]["circles"].items() if c["can_open_now"]}
