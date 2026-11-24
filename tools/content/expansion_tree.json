@@ -1,6 +1,6 @@
 {
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
-  "updated": "2026-10-07",
+  "updated": "2026-11-24",
   "dictionary_version": 10,
   "things": 243,
   "rules": {
@@ -646,7 +646,21 @@
         "field": "no field splits it four ways",
         "things": 6
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-11-24",
+          "what": "the rules found no field for it in job run 2026-11-24-01",
+          "why": "\"How does it mostly move?\": only 1 of its values have four familiar things, and a board needs four: 'Walks or runs' has 10, 'Flies' has 0, 'Swims' has 0, 'Crawls or slithers' has 0, 'Hops or jumps' has 0; \"What does it mostly eat?\": only 1 of its values have four familiar things, and a board needs four: 'Mostly plants' has 9, 'Mostly meat or fish' has 0, 'Mostly insects and worms' has 0, 'Plants and meat alike' has 0; \"How many legs does it have?\": only 1 of its values have four familiar things, and a board needs four: 'No legs' has 0, 'Two legs' has 0, 'Four legs' has 10, 'Six legs' has 0, 'Eight legs' has 0, 'Many legs' has 0; \"What is its body covered with?\": not every thing has a value: Parasaurolophus - it fits no group; \"What shape is its body?\": only 1 of its values have four familiar things, and a board needs four: 'Huge with a long neck' has 5, 'Low and wide, near the ground' has 2, 'Big head with horns' has 1, 'Stands up on two legs' has 2; \"What is on top of its head?\": its groups have no sharp edges: both checks placed only 58% of the things where the proposer did (Brachiosaurus: 'nothing_special' or 'tall_crest_or_tube'; Amargasaurus: 'nothing_special' or 'tall_crest_or_tube'; Ankylosaurus: 'nothing_special' or 'bony_helmet_dome'; Stegosaurus: 'tall_crest_or_tube' or 'nothing_special')",
+          "members_then": 10,
+          "status": "held by the rules"
+        },
+        {
+          "date": "2026-11-24",
+          "what": "released for another try",
+          "why": "the run of 24 Nov failed because the proposer was told to offer only things a small child already knows; that is fixed",
+          "status": "released"
+        }
+      ],
       "factors": {
         "nearness": 0.33,
         "neglect": 0.2,

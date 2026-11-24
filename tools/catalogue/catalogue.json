@@ -28828,8 +28828,8 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "record_names.py",
-    "on": "2026-10-07"
+    "by": "group_words.py",
+    "on": "2026-11-24"
   },
   "groups": {
     "kind_of_thing=plant": {
@@ -28890,23 +28890,15 @@
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
         },
         {
-          "text": "This green part grows up high, not under the ground.",
-          "cached": "tools/voice/clips/groups/part_we_eat__leaves__clue2.mp3",
-          "clip": "Assets/audio/groups/part_we_eat__leaves__clue2.mp3",
-          "clip_sha256": "29ee7db471b978fbe2c73fc72b79074c17090360615511ce500f5ac64c0f2544",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "It is the flat, green part that grows up towards the sun."
         },
         {
-          "text": "We pick this soft green part and cook it for our food.",
-          "cached": "tools/voice/clips/groups/part_we_eat__leaves__clue3.mp3",
-          "clip": "Assets/audio/groups/part_we_eat__leaves__clue3.mp3",
-          "clip_sha256": "a65063c85abb6a373e245288f541e008f2e62e876ceb71fa46105d7ae0e6194f",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "We pick these green parts and cook them for dinner."
         }
       ],
       "explanation": null,
       "written_by": "deepseek-flash",
-      "written_on": "2026-10-07",
+      "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
         "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
@@ -29272,7 +29264,7 @@
       "clues": [],
       "explanation": null,
       "written_by": "deepseek-flash",
-      "written_on": "2026-10-07",
+      "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
         "no clues were kept: clue 3 is not true of every thing in the group",
@@ -29307,13 +29299,17 @@
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
         }
       ],
-      "explanation": null,
+      "explanation": {
+        "text": "They all have dry scaly skin and hatch from eggs. They are all reptiles. A turtle's hard shell keeps it safe from other animals.",
+        "together": "They all have dry scaly skin and hatch from eggs. They are all reptiles.",
+        "fact": "A turtle's hard shell keeps it safe from other animals.",
+        "quote": "They have a hard shell, which is useful for camouflage and protection from other animals.",
+        "source": "turtle:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Turtle"
+      },
       "written_by": "deepseek-flash",
-      "written_on": "2026-10-07",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "held": [
-        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
-      ]
+      "written_on": "2026-11-24",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     },
     "kind_of_animal=dinosaur": {
       "field": "kind_of_animal",
@@ -29366,33 +29362,21 @@
       "question": "What kind of dinosaur is it?",
       "clues": [
         {
-          "text": "Some dinosaurs ate other animals.",
-          "cached": "tools/voice/clips/groups/kind_of_dinosaur__land_hunter__clue1.mp3",
-          "clip": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue1.mp3",
-          "clip_sha256": "50d885bac5dd306be46bbb5752733ac6c8a420262613a7566c36f46774c978f8",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "Think about a dinosaur that eats other animals."
         },
         {
-          "text": "These dinosaurs hunted other dinosaurs on land.",
-          "cached": "tools/voice/clips/groups/kind_of_dinosaur__land_hunter__clue2.mp3",
-          "clip": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue2.mp3",
-          "clip_sha256": "a2f4faa4cafa9f4d2b5a930217cb9b57e400d2f81e8d179bfcd30cefbdf4c96f",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "Think about a big animal that hunts its food on land."
         },
         {
-          "text": "They used strong legs and sharp teeth to catch their food.",
-          "cached": "tools/voice/clips/groups/kind_of_dinosaur__land_hunter__clue3.mp3",
-          "clip": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue3.mp3",
-          "clip_sha256": "d37ef2bc4fb1e96dac56581658a27d0812b2f9986309d6674f875cf634ab6f84",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "Think about a hunter with sharp teeth and claws that chases other dinosaurs."
         }
       ],
       "explanation": null,
       "written_by": "deepseek-flash",
-      "written_on": "2026-10-07",
+      "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
-        "no explanation was kept: the explanation has 5 sentences; it must have two or three"
+        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
       ]
     },
     "kind_of_dinosaur=land_grazer": {
@@ -29403,11 +29387,11 @@
       "clues": [],
       "explanation": null,
       "written_by": "deepseek-flash",
-      "written_on": "2026-10-07",
+      "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
-        "no clues were kept: clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 3 is not true of every thing in the group",
-        "no explanation was kept: the explanation does not say simply why they belong together"
+        "no clues were kept: the clues do not grow more helpful one after another",
+        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
       ]
     },
     "kind_of_dinosaur=flyer": {
@@ -29468,26 +29452,18 @@
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
         },
         {
-          "text": "They swim in the sea and never walk on land.",
-          "cached": "tools/voice/clips/groups/kind_of_dinosaur__swimmer__clue2.mp3",
-          "clip": "Assets/audio/groups/kind_of_dinosaur__swimmer__clue2.mp3",
-          "clip_sha256": "8539078077c5bacd13f29fc4282467c153b8a371aaa15615f55b5d847c72ebf7",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "These animals move through the water to find their food."
         },
         {
-          "text": "They use flippers or paddles to move through the water.",
-          "cached": "tools/voice/clips/groups/kind_of_dinosaur__swimmer__clue3.mp3",
-          "clip": "Assets/audio/groups/kind_of_dinosaur__swimmer__clue3.mp3",
-          "clip_sha256": "38f0e6a988063c5b46fec81bd5eac846ecce5a22b6f471633a851a45e00fde7e",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "They swim with flippers or paddles, not with legs for walking."
         }
       ],
       "explanation": null,
       "written_by": "deepseek-flash",
-      "written_on": "2026-10-07",
+      "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
-        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
+        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
       ]
     },
     "kind_of_plant=tree": {
@@ -29498,7 +29474,7 @@
       "clues": [],
       "explanation": null,
       "written_by": "deepseek-flash",
-      "written_on": "2026-10-07",
+      "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
         "no clues were kept: clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 3 is not true of every thing in the group",
@@ -29554,13 +29530,22 @@
       "value": "grass_grain",
       "label": "Grasses and grains",
       "question": "What kind of plant is it?",
-      "clues": [],
+      "clues": [
+        {
+          "text": "Think of plants with long, thin leaves that grow from the bottom."
+        },
+        {
+          "text": "These plants have stems you can see joints on, like little rings."
+        },
+        {
+          "text": "These plants are not trees, not flowers, and not the leafy plants we pick for food."
+        }
+      ],
       "explanation": null,
       "written_by": "deepseek-flash",
-      "written_on": "2026-10-07",
+      "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
-        "no clues were kept: clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 3 is not true of every thing in the group",
         "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
       ]
     },
@@ -29615,34 +29600,26 @@
       "question": "What kind of thing in nature is it?",
       "clues": [
         {
-          "text": "Think about things you can see when you look up.",
-          "cached": "tools/voice/clips/groups/kind_of_nature__sky__clue1.mp3",
-          "clip": "Assets/audio/groups/kind_of_nature__sky__clue1.mp3",
-          "clip_sha256": "0201d98d104723dcd424f2c66324530830aa1391d0f152c4263ba557140f81e3",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "Think about what you see when you look up high above your head."
         },
         {
-          "text": "You can see these things high above your head.",
-          "cached": "tools/voice/clips/groups/kind_of_nature__sky__clue2.mp3",
-          "clip": "Assets/audio/groups/kind_of_nature__sky__clue2.mp3",
-          "clip_sha256": "2fe1937d1201183fe34d47a48faf83fcde1c3c916b7e8cff4f299b442399944e",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "You can see these far above you, but you cannot touch them with your hands."
         },
         {
-          "text": "These things are far away, up in the sky.",
-          "cached": "tools/voice/clips/groups/kind_of_nature__sky__clue3.mp3",
-          "clip": "Assets/audio/groups/kind_of_nature__sky__clue3.mp3",
-          "clip_sha256": "eb09a6bd6a779106b8b37a46db3c3febcfe261601dc0dcec551f4755c3cf8273",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "They are up high in the open air, and you can spot them on a clear day or a dark night."
         }
       ],
-      "explanation": null,
+      "explanation": {
+        "text": "These are all up high above us, in the open air over our heads. We look up to see them. The Sun is really a star, and it is the star closest to us.",
+        "together": "These are all up high above us, in the open air over our heads. We look up to see them.",
+        "fact": "The Sun is really a star, and it is the star closest to us.",
+        "quote": "The Sun is an example of a star.",
+        "source": "star:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Star"
+      },
       "written_by": "deepseek-flash",
-      "written_on": "2026-10-07",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "held": [
-        "no explanation was kept: the explanation has 4 sentences; it must have two or three"
-      ]
+      "written_on": "2026-11-24",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     },
     "kind_of_nature=water": {
       "field": "kind_of_nature",
@@ -29957,15 +29934,28 @@
       "value": "building",
       "label": "Buildings",
       "question": "What do we use it for?",
-      "clues": [],
-      "explanation": null,
+      "clues": [
+        {
+          "text": "Think about places you can go inside or walk on."
+        },
+        {
+          "text": "People go to these places to do something or to get something."
+        },
+        {
+          "text": "Some are big and some are small, but people made them all."
+        }
+      ],
+      "explanation": {
+        "text": "People made all of these. We go to them for many things, like praying, learning, shopping or crossing a road. A footbridge is a bridge made just for people to walk on, not for cars.",
+        "together": "People made all of these. We go to them for many things, like praying, learning, shopping or crossing a road.",
+        "fact": "A footbridge is a bridge made just for people to walk on, not for cars.",
+        "quote": "A footbridge is a bridge that was built to be mainly used by pedestrians.",
+        "source": "footbridge:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Footbridge"
+      },
       "written_by": "deepseek-flash",
-      "written_on": "2026-10-07",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "held": [
-        "no clues were kept: clue 1 is not true of every thing in the group; clue 3 is not true of every thing in the group",
-        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
-      ]
+      "written_on": "2026-11-24",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     },
     "part_we_eat=fruit": {
       "field": "part_we_eat",
@@ -30201,27 +30191,23 @@
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
         },
         {
-          "text": "They do not need a road or a track to move.",
-          "cached": "tools/voice/clips/groups/where_it_travels__air__clue2.mp3",
-          "clip": "Assets/audio/groups/where_it_travels__air__clue2.mp3",
-          "clip_sha256": "a5a57276288460c8b81d820e3e8ec623423a2335ce23ad50c780273266aba4f8",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "These things do not need a road or a track to move."
         },
         {
-          "text": "They move up in the sky, not on the ground or water.",
-          "cached": "tools/voice/clips/groups/where_it_travels__air__clue3.mp3",
-          "clip": "Assets/audio/groups/where_it_travels__air__clue3.mp3",
-          "clip_sha256": "b20c713de9bca1e1dd085b94a01b5583f5506bb99f15c8c057fd579bc0c9640c",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "They move through the sky, up where the birds fly."
         }
       ],
-      "explanation": null,
+      "explanation": {
+        "text": "These all travel up in the sky, not on the ground or on water. A helicopter can stop and stay still in the air, high above the ground.",
+        "together": "These all travel up in the sky, not on the ground or on water.",
+        "fact": "A helicopter can stop and stay still in the air, high above the ground.",
+        "quote": "An airplane must move forward to stay in the air, but because the helicopter's rotor blades are always moving, the helicopter can stop and stay in one place above the ground.",
+        "source": "helicopter:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Helicopter"
+      },
       "written_by": "deepseek-flash",
-      "written_on": "2026-10-07",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "held": [
-        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
-      ]
+      "written_on": "2026-11-24",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     },
     "kind_of_house_thing=furniture": {
       "field": "kind_of_house_thing",
@@ -30758,30 +30744,18 @@
       "question": "Is it mostly a pet, a farm animal or a wild animal?",
       "clues": [
         {
-          "text": "Think about birds that live free in the open.",
-          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
-          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
-          "clip_sha256": "d545d0863990efb4fd1ec537d6f1e11a4343df9c52ef0c8e129d18cf093e27f6",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "Think about birds that live out in the open, not in a house."
         },
         {
-          "text": "They find their own food and make their own homes.",
-          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
-          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
-          "clip_sha256": "208b91e2b0af21b229ad55cb1f6a1c3ad4e4e39493482f7dd26054b30d612bdd",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "These birds find their own food and make their own homes outside."
         },
         {
-          "text": "They do not live with people or on a farm.",
-          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
-          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
-          "clip_sha256": "4197b4eff7468bcd2931729a0608a55f613a5fb64c48236c49f843c8c391e376",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "These birds fly free in the sky, over trees and hills."
         }
       ],
       "explanation": null,
       "written_by": "deepseek-flash",
-      "written_on": "2026-10-07",
+      "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
         "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
@@ -31109,23 +31083,15 @@
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
         },
         {
-          "text": "You use your hands or your breath to make the sound.",
-          "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue2.mp3",
-          "clip": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3",
-          "clip_sha256": "ce61a8778579f4c23bfcb6a652741844eccdaaa01d53b73bd05c027e0e0a2349",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "You hit, blow or press them to make a sound."
         },
         {
-          "text": "People play these to make a happy tune.",
-          "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue3.mp3",
-          "clip": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3",
-          "clip_sha256": "2fceca9410d4f812b0e52763bcde88560366448d8497b51ce60334f15e8849f2",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "text": "The sound they make is music, not noise."
         }
       ],
       "explanation": null,
       "written_by": "deepseek-flash",
-      "written_on": "2026-10-07",
+      "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
         "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"

@@ -1073,7 +1073,7 @@ def words_for_new_groups(budget):
         return
     done = subprocess.run([sys.executable, str(ROOT / "tools/content/group_words.py"), "--cap", f"{left:.2f}"],
                           capture_output=True, text=True, encoding="utf-8", errors="replace")
-    spent = re.search(r"Spent: Rs ([0-9.]+)", done.stdout or "")
+    spent = re.search(r"Spent: Rs ([0-9]+(?:\.[0-9]+)?)", done.stdout or "")     # "Rs 2.04." ends a sentence
     if spent:
         budget.add("deepseek", float(spent.group(1)) / budget.rate)
     lines = (done.stdout or "").strip().splitlines()
@@ -1580,6 +1580,7 @@ def main():
         global NEW_TO_HIM
         NEW_TO_HIM = True
         field_rules.FAMILIAR_ENOUGH = WELL_KNOWN_ENOUGH
+        field_rules.NEW_TO_HIM = True
 
     if "--undo" in argv:
         say(undo(option("--undo")))

@@ -1,0 +1,157 @@
+{
+  "id": "2026-11-24-01",
+  "started": "2026-11-24",
+  "rehearse": null,
+  "cap_inr": 90.0,
+  "plan": {
+    "asks": [],
+    "circles": [
+      {
+        "circle": "animal/dinosaur/land_grazer",
+        "label": "Land grazers",
+        "chain": "Animals > Dinosaurs > Land grazers",
+        "needs_field": true,
+        "expect_things": 10,
+        "his_strength": false,
+        "done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": [],
+    "held_back": [],
+    "played": null,
+    "mastered": []
+  },
+  "retry_held": true,
+  "things": [],
+  "sheets": [],
+  "stopped": "",
+  "fields_added": [],
+  "fields_held": [
+    {
+      "circle": "animal/dinosaur/land_grazer",
+      "label": "Land grazers",
+      "tried": [
+        {
+          "wording": "How does it mostly move?",
+          "values": {
+            "walks": "Walks or runs",
+            "flies": "Flies",
+            "swims": "Swims",
+            "crawls": "Crawls or slithers",
+            "hops": "Hops or jumps"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Walks or runs' has 10, 'Flies' has 0, 'Swims' has 0, 'Crawls or slithers' has 0, 'Hops or jumps' has 0"
+          ],
+          "date": "2026-11-24",
+          "run": "2026-11-24-01",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What does it mostly eat?",
+          "values": {
+            "plants": "Mostly plants",
+            "meat": "Mostly meat or fish",
+            "insects": "Mostly insects and worms",
+            "both": "Plants and meat alike"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Mostly plants' has 9, 'Mostly meat or fish' has 0, 'Mostly insects and worms' has 0, 'Plants and meat alike' has 0"
+          ],
+          "date": "2026-11-24",
+          "run": "2026-11-24-01",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "How many legs does it have?",
+          "values": {
+            "no_legs": "No legs",
+            "two": "Two legs",
+            "four": "Four legs",
+            "six": "Six legs",
+            "eight": "Eight legs",
+            "many": "Many legs"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'No legs' has 0, 'Two legs' has 0, 'Four legs' has 10, 'Six legs' has 0, 'Eight legs' has 0, 'Many legs' has 0"
+          ],
+          "date": "2026-11-24",
+          "run": "2026-11-24-01",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What is its body covered with?",
+          "values": {
+            "bumpy_plates_and_spikes": "Bumpy plates and spikes",
+            "long_neck_smooth_skin": "Long neck, smooth skin",
+            "horned_face": "Horns on its face",
+            "bony_head_dome": "Hard bony head"
+          },
+          "why": [
+            "not every thing has a value: Parasaurolophus - it fits no group"
+          ],
+          "date": "2026-11-24",
+          "run": "2026-11-24-01",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What shape is its body?",
+          "values": {
+            "huge_long_neck": "Huge with a long neck",
+            "low_and_wide": "Low and wide, near the ground",
+            "big_head_with_horns": "Big head with horns",
+            "stands_on_two_legs": "Stands up on two legs"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'Huge with a long neck' has 5, 'Low and wide, near the ground' has 2, 'Big head with horns' has 1, 'Stands up on two legs' has 2"
+          ],
+          "date": "2026-11-24",
+          "run": "2026-11-24-01",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What is on top of its head?",
+          "values": {
+            "nothing_special": "Nothing special on top",
+            "horns": "Horns",
+            "bony_helmet_dome": "A hard bony helmet",
+            "tall_crest_or_tube": "A tall crest or tube"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 58% of the things where the proposer did (Brachiosaurus: 'nothing_special' or 'tall_crest_or_tube'; Amargasaurus: 'nothing_special' or 'tall_crest_or_tube'; Ankylosaurus: 'nothing_special' or 'bony_helmet_dome'; Stegosaurus: 'tall_crest_or_tube' or 'nothing_special')"
+          ],
+          "date": "2026-11-24",
+          "run": "2026-11-24-01",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    }
+  ],
+  "open_before": [
+    "animal",
+    "animal/bird",
+    "animal/dinosaur",
+    "animal/mammal",
+    "made_by_people",
+    "made_by_people/building",
+    "made_by_people/household",
+    "made_by_people/toy",
+    "made_by_people/vehicle",
+    "nature_not_alive",
+    "plant",
+    "plant/vegetable",
+    "seed"
+  ],
+  "spent_usd": {
+    "deepseek": 0.00967,
+    "drawing": 0.0,
+    "picture_checks": 0.0
+  }
+}

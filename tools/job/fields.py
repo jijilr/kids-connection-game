@@ -45,6 +45,14 @@ LIBRARY = pathlib.Path(__file__).resolve().parents[1] / "content/field_library.j
 
 CANDIDATES = 3            # fields asked for in one go
 NEW_NAMES = 6             # new things asked for with each value
+# A set made for a child who did its group well may hold things new to him (the owner,
+# 24 Nov 2026: "extension of what he has seen"). The job sets this; the one who proposes
+# or chooses a question is then told so, or it offers only what a small child already
+# knows and a group of dinosaurs or of planets can never be filled.
+NEW_TO_HIM = False
+NEW_NOTE = """
+
+One thing is different this time, and it overrides the lines above about what the child already knows: the child did this part of the game well and is ready for more of it. The new things may be NEW to him. For each group, give the best-known real things that belong in it, the ones most people who know this subject would name first, even if a small child has not met them yet. They must still be real, each a kind of its own, and clearly different from one another in a small picture."""
 FAMILIAR_ENOUGH = 0.7
 SAME_SPLIT = 0.9          # two fields that agree on this share of the things are one field
 # Test 2 was set against the seven fields the owner approved himself (7 Oct 2026): of their
@@ -278,7 +286,7 @@ def choose(client, config, spend, questions: list, chain: str, names: list, earl
               + "; ".join(earlier) + ".\n") if earlier else ""
     answer = reslib.ask(client, config, spend, CHOOSER, CHOOSE_TASK.format(
         chain=chain, members=", ".join(names), count=CANDIDATES, new=NEW_NAMES, library=listing, earlier=before,
-        like=", ".join(like[:8]) or "plain everyday names"), proposer_options(config, 3400))
+        like=", ".join(like[:8]) or "plain everyday names") + (NEW_NOTE if NEW_TO_HIM else ""), proposer_options(config, 3400))
     by_id, found = {q["id"]: q for q in questions}, []
     clean = lambda items: [str(x).strip() for x in items or [] if str(x).strip()]
     for raw in answer.get("chosen") or []:
@@ -314,7 +322,7 @@ def propose(client, config, spend, dictionary: dict, chain: str, names: list, ea
               + "; ".join(earlier) + ".\n") if earlier else ""
     answer = reslib.ask(client, config, spend, PROPOSER, PROPOSE_TASK.format(
         chain=chain, members=", ".join(names), count=CANDIDATES, new=NEW_NAMES, existing=existing, earlier=before,
-        like=", ".join(like[:8]) or "plain everyday names"), proposer_options(config))
+        like=", ".join(like[:8]) or "plain everyday names") + (NEW_NOTE if NEW_TO_HIM else ""), proposer_options(config))
     found = []
     for raw in answer.get("fields") or []:
         if not isinstance(raw, dict) or not isinstance(raw.get("values"), list):
@@ -473,13 +481,15 @@ def test(client, config, spend, dictionary: dict, things: dict, taken: set, path
     known.extend(of_this_circle([o for o in familiar if placed.get(o["name"]) == o["value"]]))
     counts = count()
     short = [v for v in values if counts[v] < PER_GROUP]
-    if GROUPS - 2 <= len(values) - len(short) < GROUPS:
-        # nearly there: ask once more for names for the groups that are short, and vet them the same way
+    if (0 if NEW_TO_HIM else GROUPS - 2) <= len(values) - len(short) < GROUPS:
+        # nearly there: ask once more for names for the groups that are short, and vet them the same way.
+        # (When the things may be new to him, any short group is asked for once: the first
+        # names offered are often only the few a small child already knows.)
         tried = set(everything) | set(result["not_of_this_circle"]) | set(result["not_things_of_their_own"])
         more = reslib.ask(client, config, spend, PROPOSER, TOPUP_TASK.format(
             chain=chain, wording=candidate["wording"], new=NEW_NAMES, taken=", ".join(sorted(tried)),
             mostly=" most of the time" if re.search(r"\bmost(ly)?\b", candidate["wording"].lower()) else "",
-            groups="; ".join(f'{v} = "{labels[v]}"' for v in short)), options(config, 900))
+            groups="; ".join(f'{v} = "{labels[v]}"' for v in short)) + (NEW_NOTE if NEW_TO_HIM else ""), options(config, 900))
         again = {}
         for value in short:
             for name in more.get(value) or [] if isinstance(more.get(value), list) else []:
