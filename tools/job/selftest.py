@@ -892,6 +892,140 @@ def test_a_branch_ends_where_the_world_holds_too_few_and_a_script_does_the_count
     assert not ends.reopen(dictionary, field, value, "again")
 
 
+# ------------------------------------------------------------------ widening a place, and "in between"
+
+ANIMALS = {"wording": "What kind of animal is it?",
+           "values": {"mammal": "Mammals", "bird": "Birds", "fish": "Fish", "insect": "Insects"}}
+SUCH_AS = {"mammal": ["Cow", "Dog"], "bird": ["Crow", "Owl"], "fish": ["Shark"], "insect": ["Ant", "Bee"]}
+
+
+def sortings(place: dict, also: dict = None):
+    """Stands in for the two sortings: both put each name where `place` says; a name in
+    `also` is listed by the second, strict one under a further pile as well."""
+    def sort_twice(client, config, spend, chain, candidate, names):
+        piles = {v["key"] for v in candidate["values"]}
+        at = lambda n: place.get(n) if place.get(n) in piles else "none"
+        return ({n: at(n) for n in names},
+                {n: [x for x in [at(n), (also or {}).get(n)] if x in piles] for n in names})
+    return sort_twice
+
+
+def test_a_new_kind_must_stand_beside_the_kinds_there_not_inside_one_and_take_nothing_from_them():
+    """The owner, 24 Nov 2026: a node may have more than four kinds. Tried for real the same evening:
+    spiders and crabs are kinds the animals lacked; "Clothing" at the first place is not, for clothes
+    are things people make; "In space" for vehicles is not, for the rocket was already "In the air"."""
+    import widen
+    spiders = {"key": "arachnid", "label": "Spiders and their kin", "why": "eight legs",
+               "new": ["Spider", "Scorpion", "Tick", "Mite", "Tarantula"]}
+    there = ["Cow", "Crow", "Shark", "Ant"]
+    home = {"Cow": "mammal", "Crow": "bird", "Shark": "fish", "Ant": "insect"}
+    run = lambda place, also=None: with_sortings(widen, sortings(place, also), lambda: widen.test_kind(
+        None, {}, None, "Animals", ANIMALS, SUCH_AS, spiders, there))
+    passed = run({**home, **{n: "arachnid" for n in spiders["new"]}})
+    assert passed["why"] == [] and passed["names"] == spiders["new"]
+    # only three of its things are put in it by both checks: no group
+    thin = run({**home, "Spider": "arachnid", "Scorpion": "arachnid", "Tick": "arachnid", "Mite": "insect", "Tarantula": "insect"})
+    assert "only 3 of its 5" in thin["why"][0]
+    # the strict check would also put an animal that is already there in it: it swallows what is there
+    greedy = run({**home, **{n: "arachnid" for n in spiders["new"]}}, also={"Ant": "arachnid"})
+    assert "Ant, already here, would belong to it" in greedy["why"][0]
+    # sorted over the old kinds alone, its things all have a place: it lies inside one of them
+    def inside(client, config, spend, chain, candidate, names):
+        piles = {v["key"] for v in candidate["values"]}
+        where = (lambda n: "arachnid" if n in spiders["new"] else home[n]) if "arachnid" in piles else (lambda n: "insect")
+        return {n: where(n) for n in names}, {n: [where(n)] for n in names}
+    nested = with_sortings(widen, inside, lambda: widen.test_kind(None, {}, None, "Animals", ANIMALS, SUCH_AS, spiders, there))
+    assert "it lies inside a kind that is there" in nested["why"][0] and "'Insects'" in nested["why"][0]
+
+    # what the model offers is cleaned before anything is tested: no catch-all, no kind under a name already there
+    offered = {"kinds": [{"key": "others", "label": "Other animals", "new": ["x"]},
+                         {"key": "birdies", "label": "birds", "new": ["x"]},
+                         {"key": "Arachnid", "label": "Spiders and their kin", "why": "eight legs", "new": ["Spider", "Spider", "Tick"]},
+                         "nonsense"]}
+    real, widen.reslib.ask = widen.reslib.ask, lambda *a, **k: offered
+    try:
+        kinds = widen.propose_kinds(None, {"model": "m", "thinking": "t"}, None, "Animals", ANIMALS, SUCH_AS)
+    finally:
+        widen.reslib.ask = real
+    assert [(k["key"], k["new"]) for k in kinds] == [("arachnid", ["Spider", "Tick"])]
+
+
+def with_sortings(module, stand_in, work):
+    real, module.field_rules.sort_twice = module.field_rules.sort_twice, stand_in
+    try:
+        return work()
+    finally:
+        module.field_rules.sort_twice = real
+
+
+def test_a_thing_is_in_between_only_when_its_sources_say_so_and_two_checks_give_it_no_one_place():
+    """The owner, 24 Nov 2026: "Virus, Pluto... things resist binary classification." The world
+    not agreeing is a fact and goes in; our not finding out is not. Tried for real the same evening:
+    of fifteen things the model offered at the first place, only the virus passed."""
+    import widen
+    alive = {"wording": "What kind of thing is it?",
+             "values": {"animal": "Animals", "plant": "Plants", "not_alive": "Things that are not alive"}}
+    page = ("A virus is a tiny agent that multiplies only inside living cells. Scientific opinions differ on whether "
+            "viruses are a form of life or structures that interact with living things. Corals are animals of the sea. "
+            "Coral was once thought to be a plant, which is now settled. Rain is water that falls from clouds in the sky. "
+            "Rain is liquid water in the form of droplets.")
+    sources = [{"id": "wikipedia_en", "text": page}]
+    def read(answer, definition=alive):
+        real, widen.reslib.ask = widen.reslib.ask, lambda *a, **k: answer
+        try:
+            return widen.read_between(None, {"model": "m", "thinking": "t"}, None, "It", definition, sources, "<source/>")
+        finally:
+            widen.reslib.ask = real
+    disputed = read({"answers": {}, "disputed": "Scientific opinions differ on whether viruses are a form of life or "
+                                                "structures that interact with living things."})
+    assert disputed["value"] == "depends" and "disputed" in disputed["sentences"]
+    # a sentence that is not in the saved text proves nothing, however true it sounds
+    invented = read({"answers": {}, "disputed": "Biologists have argued for a century about whether a virus is alive."})
+    assert invented["value"] is None and "no sentence" in invented["why"]
+    # two answers, each with its own sentence: it lists both
+    sky = {"wording": "What kind of thing in nature is it?", "values": {"sky": "Things in the sky", "water": "Water", "land": "Land"}}
+    both = read({"answers": {"sky": "Rain is water that falls from clouds in the sky.",
+                             "water": "Rain is liquid water in the form of droplets.", "land": "It lands on land, I am sure of it."},
+                 "disputed": ""}, sky)
+    assert both["value"] == ["sky", "water"] and "land" not in both["sentences"]
+    # one answer and no dispute: it has a place, and is not in between
+    one = read({"answers": {"animal": "Corals are animals of the sea."}, "disputed": ""})
+    assert one["value"] is None and "one answer, 'Animals'" in one["why"]
+    note = widen.note_for(alive, disputed)
+    assert "Scientific opinions differ" in note and note.startswith("It has no single answer here")
+
+    # the second key: two sortings that both give it one and the same place mean it has a place after all
+    placed = with_sortings(widen, sortings({"Coral": "animal"}),
+                           lambda: widen.one_place(None, {}, None, "Everything", alive, {}, "Coral"))
+    assert placed == "animal"
+    torn = with_sortings(widen, sortings({"Virus": "not_alive"}, also={"Virus": "animal"}),
+                         lambda: widen.one_place(None, {}, None, "Everything", alive, {}, "Virus"))
+    assert torn is None
+    # names offered: only kinds the question has are kept as sides, and nothing the game already holds
+    offers = {"things": [{"name": "virus", "between": ["animal", "nonsense", "not_alive"], "why": "edge of life"},
+                         {"name": "Cow", "between": []}, {"name": "Virus", "between": []}, 7]}
+    real, widen.reslib.ask = widen.reslib.ask, lambda *a, **k: offers
+    try:
+        named = widen.propose_between(None, {"model": "m", "thinking": "t"}, None, "Everything", alive, ["Cow"])
+    finally:
+        widen.reslib.ask = real
+    assert named == [{"name": "Virus", "between": ["animal", "not_alive"], "why": "edge of life"}]
+
+
+def test_a_widening_run_is_planned_for_one_place_that_has_its_question():
+    plan = job.plan_widen(cat.load(), "animal")
+    assert [e["circle"] for e in plan["circles"]] == ["animal"] and plan["circles"][0]["widen"] is True
+    assert plan["asks"] == [] and plan["blocked"] == [] and plan["widen"] == "animal"
+    no_question = next(cid for cid, c in cat.load()["worked_out"]["circles"].items() if not c.get("sorted_by"))
+    refused = job.plan_widen(cat.load(), no_question)
+    assert refused["circles"] == [] and "it has no question yet" in refused["blocked"][0]
+    # a thing of a kind added later, or with no single first kind, is drawn as a thing of nature
+    assert job.sheet_kind({"fields": {"kind_of_thing": "animal"}}) == "animal"
+    assert job.sheet_kind({"fields": {"kind_of_thing": "a_kind_added_later"}}) == "nature_not_alive"
+    assert job.sheet_kind({"fields": {"kind_of_thing": ["plant", "animal"]}}) == "plant"
+    assert job.sheet_kind({"fields": {"kind_of_thing": "depends"}}) == "nature_not_alive"
+
+
 def main():
     tests = [value for name, value in globals().items() if name.startswith("test_")]
     for test in tests:

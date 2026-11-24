@@ -80,6 +80,13 @@ Keys are read from the environment and are written nowhere. No Claude session is
                                                        one set, asked for by the helper while the child plays
                                                        (tools/live/helper.py): the set inside a group he did
                                                        well. Its things may be new to him: the best-known first.
+    python tools/prepare_next.py --widen CIRCLE --cap 60
+                                                       add to a place that already has its question: the kinds
+                                                       it has but cannot show yet are filled, and one kind the
+                                                       question lacks is added if it passes its tests
+                                                       (tools/job/widen.py; the owner's ruling of the evening
+                                                       of 24 Nov 2026). The game then comes back to that place
+                                                       by itself: a place with an untested kind is a line again.
     python tools/prepare_next.py --undo RUN            take a run back: its things leave the game and
                                                        its fields stop sorting boards. All is kept.
     python tools/prepare_next.py --withdraw-field FIELD --why "..."
@@ -113,6 +120,7 @@ import looks                                 # noqa: E402  what a thing looks li
 import reslib                                # noqa: E402  DeepSeek, with a hard cap
 import fields as field_rules                 # noqa: E402  the four tests a new field must pass
 import ends                                  # noqa: E402  the end of a branch: counted, not judged
+import widen                                 # noqa: E402  a new kind beside the kinds a set already has
 from boards import GROUPS, PER_GROUP, make_board, members, second_solution_rate, split   # noqa: E402
 from expand import AMBIGUITY_LIMIT, HELD_BY_RULES, build_circles, in_order   # noqa: E402
 from expand import rebuild as rebuild_tree, record as record_decision      # noqa: E402
@@ -151,6 +159,17 @@ FEATURE_CHECK_LIKELY_USD = 0.0065  # what it has cost on average: $0.0062 a chec
 LOOK_LIKELY_USD = 0.006         # reading a thing's whole pages for how it looks, and telling it apart
 SHEET_WORDING = {   # the per-sheet instruction already used for each kind of thing
     "made_by_people": "made_1", "animal": "animals_1", "plant": "plants_2", "nature_not_alive": "nature_2"}
+
+MOST_KINDS_A_RUN = 2      # kinds one widening run fills: each costs what a whole group costs
+
+
+def sheet_kind(thing: dict) -> str:
+    """Which of the sheet wordings a thing is drawn with: that of its first kind. A thing of
+    a kind added later, or one with no single first kind, is drawn as a thing of nature."""
+    kind = thing["fields"].get("kind_of_thing")
+    kind = kind[0] if isinstance(kind, list) and kind else kind
+    return kind if isinstance(kind, str) and kind in SHEET_WORDING else "nature_not_alive"
+
 
 NAMER = "You suggest everyday things for a children's sorting game. You answer only with JSON."
 
@@ -491,6 +510,40 @@ def plan(catalogue: dict, rehearse: str = None, played: set = None, asked: set =
     return {"asks": asks, "circles": circles, "blocked": blocked, "nothing_to_do": nothing, "held_back": held_back,
             "played": sorted(played) if played is not None else None,
             "mastered": sorted(mastered)}
+
+
+def plan_widen(catalogue: dict, cid: str) -> dict:
+    """What a widening run sets out to do: one place that has its question, and no other.
+    What it will ask for is only known once the model has been asked, so the plan names
+    the place and a fair guess of the things."""
+    dictionary, settings = cat.read_json(cat.DICTIONARY), cat.read_json(cat.SETTINGS)
+    raw = build_circles(dictionary, cat.game_copy(catalogue)["things"], settings)
+    circle = raw[cid]
+    chain = labels_along(dictionary, dict(cat.circle_path(raw, cid))) or circle["label"]
+    blocked = [] if circle.get("sorted_by") else [
+        f"{circle['label']}: it has no question yet. Widening adds a kind to a question that is there."]
+    entry = {"circle": cid, "label": circle["label"], "chain": chain, "needs_field": False, "widen": True,
+             "expect_things": PER_GROUP + SPARE}
+    return {"asks": [], "circles": [] if blocked else [entry], "blocked": blocked, "nothing_to_do": [],
+            "held_back": [], "played": None, "mastered": [], "widen": cid}
+
+
+def add_kind(run: dict, entry: dict, field: str, kind: dict, result: dict):
+    """Put a kind that passed its tests into the dictionary, beside the kinds its question
+    has. Nothing else changes: no thing carries it yet, and a kind with fewer than four
+    things is never shown."""
+    dictionary = cat.read_json(cat.DICTIONARY)
+    definition = dictionary["fields"][field]
+    definition["values"][kind["key"]] = kind["label"]
+    definition.setdefault("widened", []).append({
+        "value": kind["key"], "on": today(), "run": run["id"], "why": kind["why"],
+        "tests": f"two checks put {len(result['names'])} of its things in it, none of the things already "
+                 "there, and found no place for its things among the kinds that were there"})
+    reslib.write_json(cat.DICTIONARY, dictionary)
+    record_decision(entry["circle"], f'the rules added the kind "{kind["label"]}" in job run {run["id"]}',
+                    kind["why"] or "it passed its tests", status="added by the rules")
+    run.setdefault("kinds_added", []).append({"circle": entry["circle"], "label": entry["label"], "field": field,
+                                              "value": kind["key"], "kind": kind["label"], "why": kind["why"]})
 
 
 def likely_usd(things: int) -> float:
@@ -1194,6 +1247,13 @@ def digest(run: dict, budget) -> list:
         + (f' ({", ".join(f["off_the_board"])} fit more than one group and stay off that board)' if f.get("off_the_board") else "")
         for f in run.get("fields_added", [])) or "none") + ".")
     lines.append(f"Things added: {len(added)}" + (": " + ", ".join(t["name"] for t in added) if added else "") + ".")
+    for kind in run.get("kinds_added", []):
+        lines.append(f'A kind added to {kind["label"]}: "{kind["kind"]}" ({kind["why"] or "it passed its tests"}). '
+                     "It is shown once it has four things with pictures.")
+    for entry in run["plan"]["circles"]:
+        for tried in entry.get("kinds_tried", []):
+            if tried["why"]:
+                lines.append(f'A kind refused for {entry["label"]}: "{tried["kind"]}": ' + "; ".join(tried["why"]) + ".")
     for end in run.get("ends", []):
         lines.append(f"The end of a branch: {end['label']}. Nothing lies below it: {end['why']}. "
                      f"To take that back: python tools/job/ends.py reopen {end['circle']} --why \"...\"")
@@ -1475,6 +1535,8 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
         if not affordable(entry):
             say(f"\n== {entry['label']}: left for a later run; the cap would not cover it ==")
             return False
+        if entry.get("widen"):
+            return widen_place(entry)
         if entry["needs_field"] and not entry.get("field_added") and not run["rehearse"] and "world" not in entry:
             entry["world"] = deepseek_step(lambda spend: count_the_world(client, config, spend, entry))
             save()
@@ -1558,13 +1620,70 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
         save()
         return True
 
+    def widen_place(entry) -> bool:
+        """Add to a place that already has its question (tools/job/widen.py): the kinds it
+        has that cannot be shown yet are filled, and one kind the question lacks is added
+        if it passes its tests. Each is then an ordinary need: names, pages, facts with
+        their sentences, the one-solution rule, pictures, checks."""
+        cid = entry["circle"]
+        if "asks" not in entry:
+            things = cat.game_copy(cat.load())["things"]
+            raw = build_circles(state["dictionary"], things, cat.read_json(cat.SETTINGS))
+            path, field = cat.circle_path(raw, cid), raw[cid]["sorted_by"]
+            definition = state["dictionary"]["fields"][field]
+            groups = {str(v): keys for v, keys in split(things, members(things, path), field).items()}
+            such_as = {v: [things[k]["name"] for k in sorted(keys, key=lambda k: -things[k].get("familiar", 0))]
+                       for v, keys in groups.items()}
+            held_back = {str(v) for v in cat.read_json(cat.SETTINGS).get("hold_back", {}).get(field, [])}
+            say(f'\n== {entry["chain"]}: widening "{definition["wording"]}" ==')
+            # 1. the kinds the question has that cannot be shown yet
+            wanted = [(v, PER_GROUP - len(groups.get(v, [])), []) for v in definition["values"]
+                      if len(groups.get(v, [])) < PER_GROUP and v not in held_back]
+            for value, need, _ in wanted:
+                say(f'  "{definition["values"][value]}" has {PER_GROUP - need} thing(s) and cannot be shown yet')
+            # 2. one kind the question lacks
+            offered = deepseek_step(lambda spend: widen.propose_kinds(client, config, spend, entry["chain"], definition, such_as))
+            there = [name for names in such_as.values() for name in names[:6]]
+            entry["kinds_tried"] = []
+            for kind in offered:
+                result = deepseek_step(lambda spend: widen.test_kind(
+                    client, config, spend, entry["chain"], definition, such_as, kind, there))
+                entry["kinds_tried"].append({"kind": kind["label"], "why": result["why"], "names": result["names"]})
+                say(f'  a kind it lacks, "{kind["label"]}": '
+                    + ("passed its tests" if not result["why"] else "refused - " + "; ".join(result["why"])))
+                save()
+                if not result["why"]:
+                    add_kind(run, entry, field, kind, result)
+                    state["dictionary"] = cat.read_json(cat.DICTIONARY)
+                    wanted.append((kind["key"], PER_GROUP, result["names"]))
+                    break       # one new kind in a run
+            if not offered:
+                say("  no kind that it lacks was proposed")
+            entry["asks"] = []
+            for value, need, examples in wanted[-MOST_KINDS_A_RUN:]:    # the new kind, and the fullest of the others
+                fixed = {**dict(path), field: value}
+                ask = {"circle": cid, "chain": labels_along(state["dictionary"], fixed), "fixed": fixed, "need": need,
+                       "recorded_but_not_in_the_game": []}
+                if examples:    # the names the kind came with: judged like any other suggestion
+                    offers = [{"name": name, "familiar": 1.0} for name in examples]
+                    deepseek_step(lambda spend: recognise(client, config, spend, dict(ask, beside=there), offers))
+                    ask["examples"] = sorted(offers, key=lambda o: -o["familiar"])
+                asks_of_run.append(ask)
+                entry["asks"].append(len(asks_of_run) - 1)
+            save()
+        for number in entry["asks"]:
+            do_ask(number, asks_of_run[number])
+        entry["done"] = True
+        save()
+        return True
+
     for entry in run["plan"]["circles"]:
         if not fetch_nodes(entry):
             break
 
     # ---- pictures, for everything that needs one, pooled onto as few sheets as will hold them
     asks = run["plan"]["asks"]
-    kind_of = lambda t: (t.get("thing") or t)["fields"]["kind_of_thing"]
+    kind_of = lambda t: sheet_kind(t.get("thing") or t)
     def draw_all():
         """Draw every accepted thing that has no tile yet: one sheet, and a second for what failed."""
         for attempt in (1, 2):
@@ -1661,7 +1780,7 @@ def main():
     option = lambda flag: argv[argv.index(flag) + 1] if flag in argv else None
     rate = cat.read_json(PLAN)["prices"]["inr_per_usd"]
     cap = float(option("--cap") or DEFAULT_CAP_INR)
-    if "--new-to-him" in argv:      # see NEW_TO_HIM: the best-known things of the group, not only those he knows
+    if "--new-to-him" in argv or "--widen" in argv:      # see NEW_TO_HIM: the best-known things of the group, not only those he knows
         global NEW_TO_HIM
         NEW_TO_HIM = True
         field_rules.FAMILIAR_ENOUGH = WELL_KNOWN_ENOUGH
@@ -1701,19 +1820,22 @@ def main():
         wrong = cat.problems(catalogue)
         if wrong:
             raise SystemExit("The catalogue's guard fails, so the job will not start:\n  - " + "\n  - ".join(wrong))
-        rehearse, only = option("--rehearse"), option("--only")
-        for named in (rehearse, only):
+        rehearse, only, wider = option("--rehearse"), option("--only"), option("--widen")
+        for named in (rehearse, only, wider):
             if named and named not in catalogue["worked_out"]["circles"]:
                 raise SystemExit(f"No circle '{named}'. See: python tools/catalogue/catalogue.py circles")
-        alone = rehearse or only
+        alone = rehearse or only or wider
         played = None if alone else read_progress(option("--progress") or PROGRESS)
         asked = set() if alone else read_orders(option("--progress") or PROGRESS)
         mastered = set() if alone else read_mastery(option("--progress") or PROGRESS)
-        the_plan = plan(catalogue, rehearse, played, asked, mastered, only)
+        the_plan = plan_widen(catalogue, wider) if wider else plan(catalogue, rehearse, played, asked, mastered, only)
         likely, fit = expected_cost(the_plan, rate, cap)
         say("PLAN" + (f" (a rehearsal of '{rehearse}': nothing will enter the game)" if rehearse else ""))
         if only:
             say(f"  One set, asked for while the child plays: {only}." + ("  Its things may be new to him." if NEW_TO_HIM else ""))
+        if wider:
+            say(f"  One place is widened: {wider}. The kinds its question has but cannot show are filled, and one kind "
+                "it lacks is added if it passes its tests. What that is, only the run can say.")
         say("  The child's saved progress: " + ("none found, so every open board is treated as solved: one group is fetched for each"
                                                if played is None else "he has played " + ", ".join(sorted(played))
                                                + (f"; he was left with nowhere deeper to go on {', '.join(sorted(asked))}" if asked else "")))
