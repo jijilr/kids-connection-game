@@ -684,6 +684,13 @@
           "what": "released for another try",
           "why": "a proposed question may now have five or six groups, and a sentence placing an animal in the far past shows it is extinct",
           "status": "released"
+        },
+        {
+          "date": "2026-11-24",
+          "what": "the rules found no field for it in job run 2026-11-24-03",
+          "why": "\"Which dinosaur family does it belong to?\": not every thing has a value: Parasaurolophus - it fits no group; \"What does its body look like?\": only 2 of its values have four familiar things, and a board needs four: 'Huge with a long neck' has 9, 'Big head with horns' has 4, 'Armour plates and tail club' has 2, 'Duck bill with a crest' has 3, 'Bone head with a dome' has 1; \"How does it stand?\": it has 2 values, and a board needs four; \"What does it use to fight?\": only 2 of its values have four familiar things, and a board needs four: 'Horns on its head' has 5, 'A club on its tail' has 1, 'Spikes on its tail' has 2, 'A hard bone head' has 1, 'No weapon, just big' has 11",
+          "members_then": 13,
+          "status": "held by the rules"
         }
       ],
       "factors": {
@@ -695,7 +702,7 @@
       "score": 3.0,
       "move": "widening",
       "status": "held",
-      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+      "held_by": "the rules: \"Which dinosaur family does it belong to?\": not every thing has a value: Parasaurolophus - it fits no group; \"What does its body look like?\": only 2 of its values have four familiar things, and a board needs four: 'Huge with a long neck' has 9, 'Big head with horns' has 4, 'Armour plates and tail club' has 2, 'Duck bill with a crest' has 3, 'Bone head with a dome' has 1; \"How does it stand?\": it has 2 values, and a board needs four; \"What does it use to fight?\": only 2 of its values have four familiar things, and a board needs four: 'Horns on its head' has 5, 'A club on its tail' has 1, 'Spikes on its tail' has 2, 'A hard bone head' has 1, 'No weapon, just big' has 11"
     },
     "animal/dinosaur/flyer": {
       "label": "Flyers",

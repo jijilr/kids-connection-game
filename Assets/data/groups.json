@@ -244,15 +244,15 @@
     "kind_of_dinosaur=land_hunter": {
       "clues": [
         {
-          "text": "Think about a dinosaur that eats other animals.",
+          "text": "Think about a big animal that eats other animals for its food.",
           "audio": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue1.mp3"
         },
         {
-          "text": "Think about a big animal that walks on two legs and hunts.",
+          "text": "This animal hunts its food on the ground, not in the water or the sky.",
           "audio": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue2.mp3"
         },
         {
-          "text": "Think about a hunter that chases and catches its food on land.",
+          "text": "This animal has sharp teeth and hunts other animals to eat them.",
           "audio": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue3.mp3"
         }
       ],
@@ -341,19 +341,22 @@
     "kind_of_plant=grass_grain": {
       "clues": [
         {
-          "text": "Think of plants with long, thin leaves that grow from the bottom.",
+          "text": "Think about plants with long, thin leaves.",
           "audio": "Assets/audio/groups/kind_of_plant__grass_grain__clue1.mp3"
         },
         {
-          "text": "These plants have stems you can see joints on, like little rings.",
+          "text": "These plants grow in big open fields, not in pots.",
           "audio": "Assets/audio/groups/kind_of_plant__grass_grain__clue2.mp3"
         },
         {
-          "text": "These plants are not trees, not flowers, and not the leafy plants we pick for food.",
+          "text": "Many of these plants give us food we eat every day.",
           "audio": "Assets/audio/groups/kind_of_plant__grass_grain__clue3.mp3"
         }
       ],
-      "explanation": null
+      "explanation": {
+        "text": "These plants all have long, thin leaves and grow close together in fields. We eat them or use them to make food. Bamboo is a giant grass, and it can grow very tall, as tall as a big tree.",
+        "audio": "Assets/audio/groups/kind_of_plant__grass_grain__explanation.mp3"
+      }
     },
     "kind_of_plant=vegetable": {
       "clues": [
@@ -1079,11 +1082,11 @@
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3"
         },
         {
-          "text": "You use your hands or your breath to make the sound.",
+          "text": "You hit, blow or press them to make a tune.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3"
         },
         {
-          "text": "People tap, blow or press these to make a happy tune.",
+          "text": "People play these to make songs and music.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3"
         }
       ],
