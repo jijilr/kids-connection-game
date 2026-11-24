@@ -546,7 +546,9 @@ def settle_field(client, config, deepseek_step, run: dict, entry: dict) -> bool:
         for candidate in candidates:
             candidate["key"] = field_rules.unique_key(dictionary, candidate["key"], path)
             result = deepseek_step(lambda spend: field_rules.test(
-                client, config, spend, dictionary, things, set(catalogue["things"]), path, entry["chain"],
+                client, config, spend, dictionary, things,
+                # a name an earlier run left held by the rules may be offered again: it is waiting for just this
+                {k for k, e in catalogue["things"].items() if e["status"] != cat.RULES}, path, entry["chain"],
                 candidate, recognise, AMBIGUITY_LIMIT))
             result["source"] = source
             tried.append(result)
