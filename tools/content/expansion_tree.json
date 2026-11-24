@@ -1144,7 +1144,15 @@
         "field": "no field splits it four ways",
         "things": 11
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-11-24",
+          "what": "the rules found no field for it in job run 2026-11-24-06",
+          "why": "\"Which part of the plant do we mostly eat?\": only 1 of its values have four familiar things, and a board needs four: 'The fruit' has 0, 'What grows under the ground' has 8, 'The leaves' has 0, 'The seeds or pods' has 0, 'The stem' has 0, 'The flower' has 0; \"What shape is the part we eat?\": its groups have no sharp edges: both checks placed only 65% of the things where the proposer did (Radish plant: 'long_taproot' or 'round_bulb'; Beetroot: 'long_taproot' or 'round_bulb'; Turnip: 'long_taproot' or 'round_bulb'; Leek: 'round_bulb' or 'swollen_base'); \"What colour is the outside of the part we eat?\": not every thing has one value: 6 of the 27 names sorted have no single group, and at most one in 8 may (Onion plant, Sweet potato, Turmeric, Apricot, Watermelon, Celeriac); \"How does it taste when we eat it?\": only 2 of its values have four familiar things, and a board needs four: 'Sweet to eat' has 5, 'Sharp and peppery' has 6, 'Bitter to eat' has 0, 'Mild and plain' has 2",
+          "members_then": 5,
+          "status": "held by the rules"
+        }
+      ],
       "factors": {
         "nearness": 0.33,
         "neglect": 0.6,
@@ -1154,7 +1162,7 @@
       "score": 3.9,
       "move": "widening",
       "status": "held",
-      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+      "held_by": "the rules: \"Which part of the plant do we mostly eat?\": only 1 of its values have four familiar things, and a board needs four: 'The fruit' has 0, 'What grows under the ground' has 8, 'The leaves' has 0, 'The seeds or pods' has 0, 'The stem' has 0, 'The flower' has 0; \"What shape is the part we eat?\": its groups have no sharp edges: both checks placed only 65% of the things where the proposer did (Radish plant: 'long_taproot' or 'round_bulb'; Beetroot: 'long_taproot' or 'round_bulb'; Turnip: 'long_taproot' or 'round_bulb'; Leek: 'round_bulb' or 'swollen_base'); \"What colour is the outside of the part we eat?\": not every thing has one value: 6 of the 27 names sorted have no single group, and at most one in 8 may (Onion plant, Sweet potato, Turmeric, Apricot, Watermelon, Celeriac); \"How does it taste when we eat it?\": only 2 of its values have four familiar things, and a board needs four: 'Sweet to eat' has 5, 'Sharp and peppery' has 6, 'Bitter to eat' has 0, 'Mild and plain' has 2"
     },
     "plant/vegetable/leaves": {
       "label": "The leaves",

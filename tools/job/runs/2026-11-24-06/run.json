@@ -1,0 +1,126 @@
+{
+  "id": "2026-11-24-06",
+  "started": "2026-11-24",
+  "rehearse": null,
+  "cap_inr": 90.0,
+  "plan": {
+    "asks": [],
+    "circles": [
+      {
+        "circle": "plant/vegetable/under_the_ground",
+        "label": "What grows under the ground",
+        "chain": "Plants > Vegetable plants > What grows under the ground",
+        "needs_field": true,
+        "expect_things": 15,
+        "his_strength": false,
+        "done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": [],
+    "held_back": [],
+    "played": null,
+    "mastered": []
+  },
+  "retry_held": true,
+  "things": [],
+  "sheets": [],
+  "stopped": "",
+  "fields_added": [],
+  "fields_held": [
+    {
+      "circle": "plant/vegetable/under_the_ground",
+      "label": "What grows under the ground",
+      "tried": [
+        {
+          "wording": "Which part of the plant do we mostly eat?",
+          "values": {
+            "fruit": "The fruit",
+            "under_the_ground": "What grows under the ground",
+            "leaves": "The leaves",
+            "seeds_or_pods": "The seeds or pods",
+            "stem": "The stem",
+            "flower": "The flower"
+          },
+          "why": [
+            "only 1 of its values have four familiar things, and a board needs four: 'The fruit' has 0, 'What grows under the ground' has 8, 'The leaves' has 0, 'The seeds or pods' has 0, 'The stem' has 0, 'The flower' has 0"
+          ],
+          "date": "2026-11-24",
+          "run": "2026-11-24-06",
+          "library": null,
+          "source": "the library"
+        },
+        {
+          "wording": "What shape is the part we eat?",
+          "values": {
+            "long_taproot": "Long and tapering",
+            "round_bulb": "Round and bulb-shaped",
+            "lumpy_tuber": "Lumpy and knobbly",
+            "swollen_base": "Swollen at the base"
+          },
+          "why": [
+            "its groups have no sharp edges: both checks placed only 65% of the things where the proposer did (Radish plant: 'long_taproot' or 'round_bulb'; Beetroot: 'long_taproot' or 'round_bulb'; Turnip: 'long_taproot' or 'round_bulb'; Leek: 'round_bulb' or 'swollen_base')"
+          ],
+          "date": "2026-11-24",
+          "run": "2026-11-24-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "What colour is the outside of the part we eat?",
+          "values": {
+            "orange_skin": "Orange outside",
+            "red_skin": "Red or pink outside",
+            "white_skin": "White or pale outside",
+            "brown_skin": "Brown outside"
+          },
+          "why": [
+            "not every thing has one value: 6 of the 27 names sorted have no single group, and at most one in 8 may (Onion plant, Sweet potato, Turmeric, Apricot, Watermelon, Celeriac)"
+          ],
+          "date": "2026-11-24",
+          "run": "2026-11-24-06",
+          "library": null,
+          "source": "the model"
+        },
+        {
+          "wording": "How does it taste when we eat it?",
+          "values": {
+            "sweet_taste": "Sweet to eat",
+            "sharp_taste": "Sharp and peppery",
+            "bitter_taste": "Bitter to eat",
+            "mild_taste": "Mild and plain"
+          },
+          "why": [
+            "only 2 of its values have four familiar things, and a board needs four: 'Sweet to eat' has 5, 'Sharp and peppery' has 6, 'Bitter to eat' has 0, 'Mild and plain' has 2"
+          ],
+          "date": "2026-11-24",
+          "run": "2026-11-24-06",
+          "library": null,
+          "source": "the model"
+        }
+      ]
+    }
+  ],
+  "open_before": [
+    "animal",
+    "animal/bird",
+    "animal/dinosaur",
+    "animal/mammal",
+    "animal/mammal/wild_land",
+    "made_by_people",
+    "made_by_people/building",
+    "made_by_people/household",
+    "made_by_people/toy",
+    "made_by_people/vehicle",
+    "nature_not_alive",
+    "plant",
+    "plant/vegetable",
+    "seed"
+  ],
+  "spent_usd": {
+    "deepseek": 0.01627,
+    "drawing": 0.0,
+    "picture_checks": 0.0
+  },
+  "opened": []
+}

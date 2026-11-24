@@ -321,6 +321,13 @@
         "audio": "Assets/audio/groups/kind_of_dinosaur__swimmer__explanation.mp3"
       }
     },
+    "kind_of_plant=tree": {
+      "clues": [],
+      "explanation": {
+        "text": "These are all tall plants with a strong trunk. They stand up high and live for many years. A coconut can float on the sea for many days and still grow on a new shore.",
+        "audio": "Assets/audio/groups/kind_of_plant__tree__explanation.mp3"
+      }
+    },
     "kind_of_plant=flower": {
       "clues": [
         {
@@ -924,15 +931,15 @@
     "pet_farm_or_wild_of_bird=wild_land": {
       "clues": [
         {
-          "text": "Think about birds that live out in the open, not in a house or a pen.",
+          "text": "Think about birds that live out in the open, not in a house.",
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3"
         },
         {
-          "text": "These birds find their own food and make their own homes outside.",
+          "text": "These birds find their own food and make their own homes.",
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3"
         },
         {
-          "text": "These birds fly free in the sky and are not kept by people.",
+          "text": "These birds fly free in the sky, not in a cage or a pond.",
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3"
         }
       ],

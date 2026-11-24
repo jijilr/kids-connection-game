@@ -6257,34 +6257,34 @@
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "pet_farm_or_wild_of_bird=wild_land:clue1": {
-      "text": "Think about birds that live out in the open, not in a house or a pen.",
+      "text": "Think about birds that live out in the open, not in a house.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 5.01,
+      "seconds": 4.39,
       "cache": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
-      "sha256": "35981c115e5da8e22ee6fa64a31538b4bf2e6ead9efe58219e73a4c5d7456244",
+      "sha256": "9631550d1d72a602bd609ee220d2473a29760a6cda11a50387b9149841c20cc6",
       "game_file": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "pet_farm_or_wild_of_bird=wild_land:clue2": {
-      "text": "These birds find their own food and make their own homes outside.",
+      "text": "These birds find their own food and make their own homes.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 4.92,
+      "seconds": 4.32,
       "cache": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
-      "sha256": "b0528e8172f884a23c38de556242ab774584d64bc68a0eb041627a2d03c1c7d9",
+      "sha256": "9f01fafef12a7b849f1c7997535a34df5eac470b2411293de374702eea6b3282",
       "game_file": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "pet_farm_or_wild_of_bird=wild_land:clue3": {
-      "text": "These birds fly free in the sky and are not kept by people.",
+      "text": "These birds fly free in the sky, not in a cage or a pond.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 4.57,
+      "seconds": 4.76,
       "cache": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
-      "sha256": "9cfb951c61cab12dc02ad96ebd6e7202578292b83c1eb4c6e6d1e7af4a3ccaa2",
+      "sha256": "9de3089480068c2bacb8b493a0936688d7ce1e565a8f01fd70b8c6575b1722ef",
       "game_file": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
@@ -7078,6 +7078,17 @@
       "cache": "tools/voice/clips/groups/what_it_eats__eats_both__explanation.mp3",
       "sha256": "69601d16febfeeef2bc0ea6a1d61e5c586012e6f8dbc52c4b390e4965d7887f3",
       "game_file": "Assets/audio/groups/what_it_eats__eats_both__explanation.mp3",
+      "recorded_on": "2026-11-24",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "kind_of_plant=tree:explanation": {
+      "text": "These are all tall plants with a strong trunk. They stand up high and live for many years. A coconut can float on the sea for many days and still grow on a new shore.",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "seconds": 10.44,
+      "cache": "tools/voice/clips/groups/kind_of_plant__tree__explanation.mp3",
+      "sha256": "fe2d40a66aa15ded563d6fb633d33e83f5fa542c5f8434a3592511d87b74d0bf",
+      "game_file": "Assets/audio/groups/kind_of_plant__tree__explanation.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     }

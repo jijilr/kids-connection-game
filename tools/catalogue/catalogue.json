@@ -31616,7 +31616,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job run 2026-11-24-05",
+    "by": "job:2026-11-24-06",
     "on": "2026-11-24"
   },
   "groups": {
@@ -32072,7 +32072,7 @@
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
         "no clues were kept: clue 3 is not true of every thing in the group",
-        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
+        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
       ]
     },
     "kind_of_animal=reptile": {
@@ -32345,13 +32345,23 @@
       "label": "Trees",
       "question": "What kind of plant is it?",
       "clues": [],
-      "explanation": null,
+      "explanation": {
+        "text": "These are all tall plants with a strong trunk. They stand up high and live for many years. A coconut can float on the sea for many days and still grow on a new shore.",
+        "together": "These are all tall plants with a strong trunk. They stand up high and live for many years.",
+        "fact": "A coconut can float on the sea for many days and still grow on a new shore.",
+        "quote": "Coconuts float on water and can float to another island and germinate there.",
+        "source": "coconut_tree:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Coconut_palm",
+        "cached": "tools/voice/clips/groups/kind_of_plant__tree__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_plant__tree__explanation.mp3",
+        "clip_sha256": "fe2d40a66aa15ded563d6fb633d33e83f5fa542c5f8434a3592511d87b74d0bf",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+      },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
-        "no clues were kept: clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 3 is not true of every thing in the group",
-        "no explanation was kept: the explanation does not say simply why they belong together"
+        "no clues were kept: clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 3 is not true of every thing in the group"
       ]
     },
     "kind_of_plant=flower": {
@@ -33681,24 +33691,24 @@
       "question": "Is it mostly a pet, a farm animal or a wild animal?",
       "clues": [
         {
-          "text": "Think about birds that live out in the open, not in a house or a pen.",
+          "text": "Think about birds that live out in the open, not in a house.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
-          "clip_sha256": "35981c115e5da8e22ee6fa64a31538b4bf2e6ead9efe58219e73a4c5d7456244",
+          "clip_sha256": "9631550d1d72a602bd609ee220d2473a29760a6cda11a50387b9149841c20cc6",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "These birds find their own food and make their own homes outside.",
+          "text": "These birds find their own food and make their own homes.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
-          "clip_sha256": "b0528e8172f884a23c38de556242ab774584d64bc68a0eb041627a2d03c1c7d9",
+          "clip_sha256": "9f01fafef12a7b849f1c7997535a34df5eac470b2411293de374702eea6b3282",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "These birds fly free in the sky and are not kept by people.",
+          "text": "These birds fly free in the sky, not in a cage or a pond.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
-          "clip_sha256": "9cfb951c61cab12dc02ad96ebd6e7202578292b83c1eb4c6e6d1e7af4a3ccaa2",
+          "clip_sha256": "9de3089480068c2bacb8b493a0936688d7ce1e565a8f01fd70b8c6575b1722ef",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
