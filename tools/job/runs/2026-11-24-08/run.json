@@ -1,0 +1,288 @@
+{
+  "id": "2026-11-24-08",
+  "started": "2026-11-24",
+  "rehearse": null,
+  "cap_inr": 30.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "plant/vegetable",
+        "chain": "Plants > Vegetable plants > The seeds or pods",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "need": 1,
+        "recorded_but_not_in_the_game": [
+          {
+            "name": "Drumstick plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Cluster bean plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Cowpea plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Field bean plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Green gram plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          }
+        ],
+        "retried": [
+          "Drumstick plant",
+          "Cowpea plant",
+          "Cluster bean plant",
+          "Field bean plant",
+          "Green gram plant"
+        ],
+        "examples": [
+          {
+            "name": "Drumstick plant",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      }
+    ],
+    "circles": [
+      {
+        "circle": "plant/vegetable",
+        "label": "Vegetable plants",
+        "chain": "Plants > Vegetable plants",
+        "needs_field": false,
+        "expect_things": 2,
+        "his_strength": false,
+        "asks": [
+          0
+        ],
+        "clever_kid": {
+          "sets_looked_at": 3,
+          "with_another_way": 0,
+          "ideas": []
+        },
+        "done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": [],
+    "held_back": [],
+    "played": null,
+    "mastered": []
+  },
+  "retry_held": true,
+  "things": [
+    {
+      "name": "Drumstick plant",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'Vegetable plants': the two checks disagree: 'vegetable' and 'tree'"
+      ],
+      "thing": {
+        "name": "Drumstick plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree",
+          "tree_academic": true
+        },
+        "familiar": 0.6,
+        "reviewed": 12,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-08"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "tree_academic": true,
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.6,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Cowpea plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Cowpea plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "familiar": 0.6,
+        "reviewed": 12,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-08"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.6,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "look": {
+        "must_show": [
+          "The cowpea plant can also grow like a vine, climbing supports or trailing along the ground up to 2 m high.",
+          "It has long stalks, 20 to 50 cm, that hold the flowers and seed pods.",
+          "One of these stalks can hold four or more seed pods."
+        ],
+        "not_this": [],
+        "features": [
+          "The cowpea plant can be short and bushy, as short as 20 cm.",
+          "The cowpea plant can also grow like a vine, climbing supports or trailing along the ground up to 2 m high.",
+          "It can stand upright, be partly trailing, or climb.",
+          "It has long stalks, 20 to 50 cm, that hold the flowers and seed pods.",
+          "One of these stalks can hold four or more seed pods.",
+          "Its flowers come in shades of purple, pink, yellow, white and blue.",
+          "Its seeds are usually kidney-shaped.",
+          "A pod holds six to 13 seeds.",
+          "Its seeds can be white, cream, green, red, brown or black, or a mix of these.",
+          "Its seeds can have a smooth or rough coat and be speckled, mottled or blotchy.",
+          "Its leaves vary greatly in size and shape."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cowpea",
+          "https://simple.wikipedia.org/wiki/Cowpea"
+        ]
+      },
+      "draw": "A whole cowpea plant in India: a trailing, climbing vine up to 2 m, with long 20–50 cm stalks holding four or more long green pods, one pod split open to show its seeds",
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Cluster bean plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Cluster bean plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "familiar": 0.5,
+        "reviewed": 12,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-08"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.5,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_plant",
+        "part_we_eat"
+      ],
+      "ask": 0,
+      "look": {
+        "must_show": [
+          "The plant grows upright and can reach up to 2 to 3 metres tall.",
+          "Its leaves are fine, long and oval-shaped, about 5 to 10 centimetres long.",
+          "The leaves and stems are mostly hairy."
+        ],
+        "not_this": [],
+        "features": [
+          "The plant grows upright and can reach up to 2 to 3 metres tall.",
+          "It has one main stem, which may branch at the base or finely along the stem.",
+          "Its leaves are fine, long and oval-shaped, about 5 to 10 centimetres long.",
+          "The leaves and stems are mostly hairy.",
+          "Clusters of flowers grow where the leaf meets the stem and are white to bluish in colour.",
+          "The pods are rather flat and slim and hold 5 to 12 small oval seeds about 5 millimetres long.",
+          "Mature seeds are usually white or gray."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/Guar"
+        ]
+      },
+      "draw": "An upright bushy green cluster bean plant, 2 to 3 metres tall, with fine long oval hairy leaves 5 to 10 cm long and hairy stems; show several long green pods hanging on it, one pod split open to reveal small round seeds",
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Field bean plant",
+      "passed": false,
+      "not_needed": true,
+      "ask": 0,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.5,
+      "why": [
+        "the group was filled without it"
+      ]
+    },
+    {
+      "name": "Green gram plant",
+      "passed": false,
+      "not_needed": true,
+      "ask": 0,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "familiar": 0.5,
+      "why": [
+        "the group was filled without it"
+      ]
+    }
+  ],
+  "sheets": [],
+  "stopped": "the cap: drawing and checking a sheet could cost up to Rs 30, and only Rs 29 of the cap is left",
+  "fields_added": [],
+  "fields_held": [],
+  "open_before": [
+    "animal",
+    "animal/bird",
+    "animal/dinosaur",
+    "animal/mammal",
+    "animal/mammal/wild_land",
+    "made_by_people",
+    "made_by_people/building",
+    "made_by_people/household",
+    "made_by_people/toy",
+    "made_by_people/vehicle",
+    "nature_not_alive",
+    "plant",
+    "seed"
+  ],
+  "spent_usd": {
+    "deepseek": 0.01435,
+    "drawing": 0.0,
+    "picture_checks": 0.0
+  },
+  "opened": []
+}

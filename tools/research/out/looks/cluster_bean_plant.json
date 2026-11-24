@@ -1,0 +1,92 @@
+{
+  "name": "Cluster bean plant",
+  "group": "Plants > Vegetable plants > The seeds or pods",
+  "features": [
+    {
+      "claim": "The plant grows upright and can reach up to 2 to 3 metres tall.",
+      "quote": "Cyamopsis tetragonoloba grows upright, reaching a maximum height of up to 2–3 metres (7–10 ft).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has one main stem, which may branch at the base or finely along the stem.",
+      "quote": "It has a main single stem with either basal branching or fine branching along the stem.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its leaves are fine, long and oval-shaped, about 5 to 10 centimetres long.",
+      "quote": "Its fine leaves have an elongated oval shape (5 to 10 centimetres (2 to 4 in)) and of alternate position.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The leaves and stems are mostly hairy.",
+      "quote": "Its leaves and stems are mostly hairy, depending on the cultivar.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Clusters of flowers grow where the leaf meets the stem and are white to bluish in colour.",
+      "quote": "Clusters of flowers grow in the plant axil and are white to blueish in color.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The pods are rather flat and slim and hold 5 to 12 small oval seeds about 5 millimetres long.",
+      "quote": "The developing pods are rather flat and slim containing 5 to 12 small oval seeds of 5 millimetres (1⁄4 in) length (TGW = 25–40 grams (1–1+1⁄2 oz)).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Mature seeds are usually white or gray.",
+      "quote": "Usually mature seeds are white or gray, but with excess moisture they can turn black and lose germination capacity.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "It has a taproot that can reach soil moisture deep down.",
+        "quote": "Guar taproots can access soil moisture in low soil depths.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It forms root nodules with nitrogen-fixing bacteria in the upper part of its root system.",
+        "quote": "This legume develops root nodules with nitrogen-fixing soil bacteria rhizobia in the surface part of its rooting system.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Guar",
+      "title": "Guar",
+      "revision": 1369086281,
+      "revision_time": "2026-08-12T20:34:05Z",
+      "fetched_on": "2026-11-24",
+      "chars": 9200,
+      "sha256": "27349929eedfa86530f6ac8b3618469352fcd3b68a4ff4d6fdad7d476bf631d4"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "The plant grows upright and can reach up to 2 to 3 metres tall.",
+    "Its leaves are fine, long and oval-shaped, about 5 to 10 centimetres long.",
+    "The leaves and stems are mostly hairy."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "Upright single-stem plant with fine long oval leaves; hairy leaves and stems",
+    "covering": [
+      "The leaves and stems are mostly hairy."
+    ]
+  }
+}

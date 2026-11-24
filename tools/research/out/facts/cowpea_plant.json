@@ -1,0 +1,55 @@
+{
+  "name": "Cowpea plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "The cowpea (Vigna unguiculata) is an annual herbaceous legume from the genus Vigna.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "It was domesticated in Africa and is one of the oldest crops to be farmed.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "vegetable",
+      "quote": "The crop is mainly grown for its seeds, which are high in protein, although the leaves and immature seed pods can also be consumed.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "part_we_eat": {
+      "value": "seeds_or_pods",
+      "quote": "The crop is mainly grown for its seeds, which are high in protein, although the leaves and immature seed pods can also be consumed.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cowpea",
+      "title": "Cowpea",
+      "asked_for": "Cowpea",
+      "revision": 1382950060,
+      "fetched_on": "2026-11-24",
+      "sha256": "e66ff8a5abe08352b16ea461c49c9091cf90caac39df19897732635aca420113"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cowpea",
+      "title": "Cowpea",
+      "asked_for": "Cowpea",
+      "revision": 8145819,
+      "fetched_on": "2026-11-24",
+      "sha256": "80f32542bfed1d7cb85c5cdf97c0b1ffa213d4ae40b374e05f7e992958648213"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

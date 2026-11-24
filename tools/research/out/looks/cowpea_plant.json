@@ -1,0 +1,119 @@
+{
+  "name": "Cowpea plant",
+  "group": "Plants > Vegetable plants > The seeds or pods",
+  "features": [
+    {
+      "claim": "The cowpea plant can be short and bushy, as short as 20 cm.",
+      "quote": "Cowpeas can either be short and bushy (as short as 20 cm or 8 in) or act like a vine by climbing supports or trailing along the ground (to a height of 2 m or 6 ft 7 in).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The cowpea plant can also grow like a vine, climbing supports or trailing along the ground up to 2 m high.",
+      "quote": "Cowpeas can either be short and bushy (as short as 20 cm or 8 in) or act like a vine by climbing supports or trailing along the ground (to a height of 2 m or 6 ft 7 in).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It can stand upright, be partly trailing, or climb.",
+      "quote": "It can be erect, semierect (trailing), or climbing.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has long stalks, 20 to 50 cm, that hold the flowers and seed pods.",
+      "quote": "Another distinguishing feature of cowpeas is the long 20–50 cm (8–20 in) peduncles, which hold the flowers and seed pods.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "One of these stalks can hold four or more seed pods.",
+      "quote": "One peduncle can support four or more seed pods.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its flowers come in shades of purple, pink, yellow, white and blue.",
+      "quote": "Flower colour varies through different shades of purple, pink, yellow, and white and blue.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its seeds are usually kidney-shaped.",
+      "quote": "A pod can contain six to 13 seeds that are usually kidney-shaped, although the seeds become more spherical the more restricted they are within the pod.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A pod holds six to 13 seeds.",
+      "quote": "A pod can contain six to 13 seeds that are usually kidney-shaped, although the seeds become more spherical the more restricted they are within the pod.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its seeds can be white, cream, green, red, brown or black, or a mix of these.",
+      "quote": "Colours include white, cream, green, red, brown, and black, or various combinations.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its seeds can have a smooth or rough coat and be speckled, mottled or blotchy.",
+      "quote": "They can have a smooth or rough coat and be speckled, mottled, or blotchy.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its leaves vary greatly in size and shape.",
+      "quote": "The size and shape of the leaves vary greatly, making this an important feature for classifying and distinguishing cowpea varieties.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [
+    {
+      "claim": "Cultivated cowpea pods can be anywhere from 10 to 110 cm long.",
+      "quote": "Seeds and seed pods from wild cowpeas are very small, whereas cultivated varieties can have pods between 10 and 110 cm (4 and 43 in) long.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Its taproot can go down 2.4 m into the soil.",
+        "quote": "The taproot can penetrate to a depth of 2.4 m (7 ft 10 in) after eight weeks.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cowpea",
+      "title": "Cowpea",
+      "revision": 1382950060,
+      "revision_time": "2026-10-31T04:12:47Z",
+      "fetched_on": "2026-11-24",
+      "chars": 16400,
+      "sha256": "868881c030a4b256499f6f588bdece371855f281cfe23909f980c3e72cff79bc"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cowpea",
+      "title": "Cowpea",
+      "revision": 8145819,
+      "revision_time": "2022-04-02T00:06:30Z",
+      "fetched_on": "2026-11-24",
+      "chars": 123,
+      "sha256": "80f32542bfed1d7cb85c5cdf97c0b1ffa213d4ae40b374e05f7e992958648213"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "The cowpea plant can also grow like a vine, climbing supports or trailing along the ground up to 2 m high.",
+    "It has long stalks, 20 to 50 cm, that hold the flowers and seed pods.",
+    "One of these stalks can hold four or more seed pods."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "Vining/trailing habit with long flower-and-pod stalks holding several pods",
+    "covering": []
+  }
+}

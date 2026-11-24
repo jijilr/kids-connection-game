@@ -15687,12 +15687,14 @@
       "name": "Drumstick plant",
       "status": "held by the rules",
       "status_why": [
-        "the check doubts a four-year-old would recognise it"
+        "uncertain: two checks could not settle whether it belongs in 'Vegetable plants': the two checks disagree: 'vegetable' and 'tree'"
       ],
-      "held_from": "job:2026-11-24-07",
+      "held_from": "job:2026-11-24-08",
       "fields": {
         "kind_of_thing": "plant",
+        "extinct": false,
         "kind_of_plant": "vegetable",
+        "tree_academic": true,
         "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.6,
@@ -15758,15 +15760,16 @@
       "name": "Cluster bean plant",
       "status": "held by the rules",
       "status_why": [
-        "the check doubts a four-year-old would recognise it"
+        "no tile of it passed the checks"
       ],
-      "held_from": "job:2026-11-24-07",
+      "held_from": "job:2026-11-24-08",
       "fields": {
         "kind_of_thing": "plant",
+        "extinct": false,
         "kind_of_plant": "vegetable",
         "part_we_eat": "seeds_or_pods"
       },
-      "familiar": 0.3,
+      "familiar": 0.5,
       "voice": {
         "say": "Cluster bean plant",
         "checked_by_ear": false,
@@ -15785,15 +15788,16 @@
       "name": "Cowpea plant",
       "status": "held by the rules",
       "status_why": [
-        "the check doubts a four-year-old would recognise it"
+        "no tile of it passed the checks"
       ],
-      "held_from": "job:2026-11-24-07",
+      "held_from": "job:2026-11-24-08",
       "fields": {
         "kind_of_thing": "plant",
+        "extinct": false,
         "kind_of_plant": "vegetable",
         "part_we_eat": "seeds_or_pods"
       },
-      "familiar": 0.3,
+      "familiar": 0.6,
       "voice": {
         "say": "Cowpea plant",
         "checked_by_ear": false,
@@ -15810,9 +15814,9 @@
     },
     "field_bean_plant": {
       "name": "Field bean plant",
-      "status": "held by the rules",
+      "status": "taken out of the game",
       "status_why": [
-        "the check doubts a four-year-old would recognise it"
+        "not needed: the group was filled without it"
       ],
       "held_from": "job:2026-11-24-07",
       "fields": {
@@ -15837,9 +15841,9 @@
     },
     "green_gram_plant": {
       "name": "Green gram plant",
-      "status": "held by the rules",
+      "status": "taken out of the game",
       "status_why": [
-        "the check doubts a four-year-old would recognise it"
+        "not needed: the group was filled without it"
       ],
       "held_from": "job:2026-11-24-07",
       "fields": {
@@ -30058,10 +30062,10 @@
   "worked_out": {
     "things_by_status": {
       "in the game": 258,
-      "held by the rules": 79,
+      "held by the rules": 77,
       "kept for later": 5,
       "excluded": 3,
-      "taken out of the game": 23
+      "taken out of the game": 25
     },
     "circles_that_can_open_now": [
       "seed",
@@ -30692,16 +30696,6 @@
           },
           {
             "name": "Cowpea plant",
-            "status": "held by the rules",
-            "group": "seeds_or_pods"
-          },
-          {
-            "name": "Field bean plant",
-            "status": "held by the rules",
-            "group": "seeds_or_pods"
-          },
-          {
-            "name": "Green gram plant",
             "status": "held by the rules",
             "group": "seeds_or_pods"
           }
@@ -31434,7 +31428,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-11-24-07",
+    "by": "job run 2026-11-24-08",
     "on": "2026-11-24"
   },
   "groups": {
@@ -31911,7 +31905,7 @@
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
-        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
+        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
       ]
     },
     "kind_of_animal=reptile": {
@@ -33530,24 +33524,24 @@
       "question": "Is it mostly a pet, a farm animal or a wild animal?",
       "clues": [
         {
-          "text": "Think about a bird that lives free, not in a house or a cage.",
+          "text": "Think about birds that live free, not in a house or a pen.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
-          "clip_sha256": "75c13d86aad476f77116660b71481d5d8c660abfe55099a7efcb15dc414660c1",
+          "clip_sha256": "84b0c5ec079773a7f1c10069d11c05fe3a86579b2d7993bd0f9cc78dd11299ef",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "It flies in the open sky and finds its own food.",
+          "text": "These birds find their own food out in the open.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
-          "clip_sha256": "cf28a8ea93a5fb99bd4143c81c8de061e58dab6eba450cff0c86917f02341d8b",
+          "clip_sha256": "cf525a576cfe1541df82c4c9c3e9bb6d24aee2fa118c195f341b6d470437ca1a",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "It is not kept by people and it does not live in water.",
+          "text": "You would see these birds flying high or sitting in a tree, far from people.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
-          "clip_sha256": "06300747aa98fde462294d9d90caf47a6a932becec1d392a624bb763c367b16a",
+          "clip_sha256": "20c744064b0b158566e2534dadba087672f569e13b8fa3007a7a7139a6c0e8ae",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
@@ -33874,24 +33868,24 @@
       "question": "How do we mostly play with it?",
       "clues": [
         {
-          "text": "Think about things that make a sound you can sing along to.",
+          "text": "Think about something you can hear and tap along to.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue1.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3",
-          "clip_sha256": "8e6e28c3bc3b6acb20c5965b20aac060b2e488ac070f2008199f09ce3715e91c",
+          "clip_sha256": "87fa6463b11fbcc4248b87baa572d54226aee7ed65593e6498b1521f7ebe3ce2",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You hit it, blow it, or press it to hear a tune.",
+          "text": "You use your hands or your breath to make it.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue2.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3",
-          "clip_sha256": "0b10936a8133cc820d8a5e58ace86236b092ad728c6895802f2d2b01581a9ad5",
+          "clip_sha256": "eacbeac84370120df0da93255580146f0db53082c277f9074a6abc485ec14803",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "People tap their feet and clap when these sounds play.",
+          "text": "It makes a happy sound you can sing with.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue3.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3",
-          "clip_sha256": "f78d8fd0340d1de8492dd29699a0c18801e9fc74cbb4a957e3a48cc7318fd299",
+          "clip_sha256": "1e86401c7ef90283c476d6ce4e2eaf7495c6522cd8fcece97174c3fea076ee72",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
