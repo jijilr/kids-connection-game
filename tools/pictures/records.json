@@ -1974,6 +1974,37 @@
       "cost_usd": 0.0539,
       "vision_check_cost_usd": 5e-05,
       "feature_check_cost_usd": 0.00558
+    },
+    "job_2026_11_24_08_1_01": {
+      "plan_key": "job_2026_11_24_08_1",
+      "purpose": "drawn by the job, run 2026-11-24-08",
+      "file": "tools/pictures/sheets/job_2026_11_24_08_1_01.png",
+      "grid": 2,
+      "rows": 2,
+      "cols": 2,
+      "size": "1920x1920",
+      "cells": [
+        "cowpea_plant",
+        "cluster_bean_plant",
+        "cowpea_plant",
+        "cluster_bean_plant"
+      ],
+      "names": {
+        "cowpea_plant": "Cowpea plant",
+        "cluster_bean_plant": "Cluster bean plant"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 2 by 2 grid of 4 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Cowpea plant: A whole cowpea plant in India: a trailing, climbing vine up to 2 m, with long 20–50 cm stalks holding four or more long green pods, one pod split open to show its seeds.\n2. Cluster bean plant: An upright bushy green cluster bean plant, 2 to 3 metres tall, with fine long oval hairy leaves 5 to 10 cm long and hairy stems; show several long green pods hanging on it, one pod split open to reveal small round seeds.\n3. Cowpea plant: A whole cowpea plant in India: a trailing, climbing vine up to 2 m, with long 20–50 cm stalks holding four or more long green pods, one pod split open to show its seeds; a second view of it.\n4. Cluster bean plant: An upright bushy green cluster bean plant, 2 to 3 metres tall, with fine long oval hairy leaves 5 to 10 cm long and hairy stems; show several long green pods hanging on it, one pod split open to reveal small round seeds; a second view of it.\n\nFor this sheet: No people and no animals.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-11-24",
+      "tokens": {
+        "image_output_tokens": 3276,
+        "text_input_tokens": 437
+      },
+      "cost_usd": 0.1005,
+      "vision_check_cost_usd": 0.0004,
+      "feature_check_cost_usd": 0.02555
     }
   },
   "tiles": {
@@ -22645,6 +22676,349 @@
       },
       "reviewed_on": "2026-11-24",
       "published_file": "Assets/pictures/chimpanzee.webp"
+    },
+    "job_2026_11_24_08_1_01_c1": {
+      "thing_id": "cowpea_plant",
+      "expected_thing": "cowpea_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_08_1_01_c1.png",
+      "master_size": [
+        1038,
+        1038
+      ],
+      "master_sha256": "cd7ae0aba483b9d536e5a640c5b45ff338421a2f4b5c0d6907a9388fc5223b40",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_08_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_08_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Cowpea plant: A whole cowpea plant in India: a trailing, climbing vine up to 2 m, with long 20–50 cm stalks holding four or more long green pods, one pod split open to show its seeds",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0251,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          225,
+          31,
+          786,
+          926
+        ],
+        "picture_shape": 0.63,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Cowpea plant",
+        "shows": "cowpea_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The climbing plant shows long flower-bearing stalks, clusters of several pods, varied leaves, and an open pod containing cream-colored, dark-marked seeds, but its flowers and short bushy form are not shown.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cowpea",
+          "https://simple.wikipedia.org/wiki/Cowpea"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/cowpea_plant.webp"
+    },
+    "job_2026_11_24_08_1_01_c2": {
+      "thing_id": "cluster_bean_plant",
+      "expected_thing": "cluster_bean_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_08_1_01_c2.png",
+      "master_size": [
+        1039,
+        1039
+      ],
+      "master_sha256": "966c32516aeaea4bd63f62b6d2083ff2bb6e44b03414f7b0781849a9320b3bf2",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_08_1_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_08_1_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Cluster bean plant: An upright bushy green cluster bean plant, 2 to 3 metres tall, with fine long oval hairy leaves 5 to 10 cm long and hairy stems; show several long green pods hanging on it, one pod split open to reveal small round seeds",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0251,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1062,
+          32,
+          1780,
+          928
+        ],
+        "picture_shape": 0.8,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Cowpea plant",
+        "shows": "cowpea_plant",
+        "matches_cell": false,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "approved under the owner's standing rule of 2026-10-06: it passed the feature check against the cited sources",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "unclear",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The upright, branching plant shows elongated oval leaves, hairy stems and leaves, and slim pods with several small seeds, but exact dimensions, flower colour and mature seed colour cannot be confirmed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Guar"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "cannot be seen: The plant grows upright and can reach up to 2 to 3 metres tall."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24"
+    },
+    "job_2026_11_24_08_1_01_c3": {
+      "thing_id": null,
+      "expected_thing": "cowpea_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_08_1_01_c3.png",
+      "master_size": [
+        1042,
+        1042
+      ],
+      "master_sha256": "e7333c2f76a073925b0e17aa571b0638b3add3abb219e3cdc06e596afbcc7a07",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_08_1_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_08_1_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Cowpea plant: A whole cowpea plant in India: a trailing, climbing vine up to 2 m, with long 20–50 cm stalks holding four or more long green pods, one pod split open to show its seeds; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0251,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          133,
+          989,
+          842,
+          1887
+        ],
+        "picture_shape": 0.79,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Cowpea plant",
+        "shows": "cowpea_plant",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_11_24_08_1_01_c1 better",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The climbing plant shows long pod-bearing stalks, clustered pods, varied leaves, and an opened pod containing pale seeds with dark markings.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cowpea",
+          "https://simple.wikipedia.org/wiki/Cowpea"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24"
+    },
+    "job_2026_11_24_08_1_01_c4": {
+      "thing_id": "cluster_bean_plant",
+      "expected_thing": "cluster_bean_plant",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_08_1_01_c4.png",
+      "master_size": [
+        1041,
+        1041
+      ],
+      "master_sha256": "d1d3816e348a7886396d19f03cd043207ff487cb23e91d91679eedadf6b3c179",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_08_1_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_08_1_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Cluster bean plant: An upright bushy green cluster bean plant, 2 to 3 metres tall, with fine long oval hairy leaves 5 to 10 cm long and hairy stems; show several long green pods hanging on it, one pod split open to reveal small round seeds; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0251,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1067,
+          989,
+          1799,
+          1886
+        ],
+        "picture_shape": 0.82,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Cowpea plant",
+        "shows": "cowpea_plant",
+        "matches_cell": false,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "approved under the owner's standing rule of 2026-10-06: it passed the feature check against the cited sources",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "unclear",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "unclear",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The upright, branching plant shows elongated oval leaves, conspicuous hairs and slim pods with several seeds, but its height, flower colour and mature seed colour cannot be verified.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Guar"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "cannot be seen: The plant grows upright and can reach up to 2 to 3 metres tall."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24"
     }
   }
 }

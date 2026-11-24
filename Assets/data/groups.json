@@ -339,9 +339,22 @@
       }
     },
     "kind_of_plant=tree": {
-      "clues": [],
+      "clues": [
+        {
+          "text": "Think about a plant with a big, hard stem called a trunk.",
+          "audio": "Assets/audio/groups/kind_of_plant__tree__clue1.mp3"
+        },
+        {
+          "text": "This plant grows very tall and has branches up high.",
+          "audio": "Assets/audio/groups/kind_of_plant__tree__clue2.mp3"
+        },
+        {
+          "text": "Birds like to sit and rest in this tall plant.",
+          "audio": "Assets/audio/groups/kind_of_plant__tree__clue3.mp3"
+        }
+      ],
       "explanation": {
-        "text": "These are all tall plants with a strong trunk. They stand up high and live for many years. A coconut can float on the sea for many days and still grow on a new shore.",
+        "text": "These all grow tall with a hard trunk and branches up high. They are big plants that live for many years. The coconut tree can grow as tall as 30 metres, which is taller than many houses.",
         "audio": "Assets/audio/groups/kind_of_plant__tree__explanation.mp3"
       }
     },
@@ -948,15 +961,15 @@
     "pet_farm_or_wild_of_bird=wild_land": {
       "clues": [
         {
-          "text": "Think about birds that live free, not in a house or a pen.",
+          "text": "Think about a bird that lives free, not in a house or a cage.",
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3"
         },
         {
-          "text": "These birds find their own food out in the open.",
+          "text": "It flies in the open sky and finds its own food.",
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3"
         },
         {
-          "text": "You would see these birds flying high or sitting in a tree, far from people.",
+          "text": "It does not live with people or on a farm.",
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3"
         }
       ],
@@ -1105,15 +1118,15 @@
     "how_we_play_with_it=music": {
       "clues": [
         {
-          "text": "Think about something you can hear and tap along to.",
+          "text": "Think about things that make a happy sound for your ears.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3"
         },
         {
-          "text": "You use your hands or your breath to make it.",
+          "text": "You can tap, blow or shake them to hear a tune.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3"
         },
         {
-          "text": "It makes a happy sound you can sing with.",
+          "text": "People play them to make songs you can sing along to.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3"
         }
       ],

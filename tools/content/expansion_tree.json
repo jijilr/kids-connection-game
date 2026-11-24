@@ -2,7 +2,7 @@
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-11-24",
   "dictionary_version": 12,
-  "things": 258,
+  "things": 259,
   "rules": {
     "weights": {
       "nearness": 3,
@@ -43,7 +43,7 @@
       "label": "Everything",
       "steps_from_seed": 0,
       "branch": null,
-      "members": 258,
+      "members": 259,
       "open": true,
       "sorted_by": "kind_of_thing",
       "decisions": [],
@@ -835,7 +835,7 @@
       "label": "Plants",
       "steps_from_seed": 1,
       "branch": "plant",
-      "members": 31,
+      "members": 32,
       "open": true,
       "sorted_by": "kind_of_plant",
       "decisions": [],
@@ -1091,16 +1091,9 @@
       "label": "Vegetable plants",
       "steps_from_seed": 2,
       "branch": "plant",
-      "members": 18,
-      "open": false,
+      "members": 19,
+      "open": true,
       "sorted_by": "part_we_eat",
-      "missing": {
-        "field": null,
-        "short": {
-          "seeds_or_pods": 1
-        },
-        "things": 1
-      },
       "decisions": [
         {
           "date": "2026-10-06",
@@ -1130,15 +1123,95 @@
           "status": "released"
         }
       ],
+      "status": "open"
+    },
+    "plant/vegetable/fruit": {
+      "label": "The fruit",
+      "steps_from_seed": 3,
+      "branch": "plant",
+      "members": 5,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 11
+      },
+      "decisions": [],
       "factors": {
-        "nearness": 0.5,
+        "nearness": 0.33,
         "neglect": 0.6,
         "unlocks": 0.33,
-        "cheapness": 0.8
+        "cheapness": 0.21
       },
-      "score": 5.6,
+      "score": 3.9,
       "move": "widening",
-      "status": "approved by the owner"
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+    },
+    "plant/vegetable/under_the_ground": {
+      "label": "What grows under the ground",
+      "steps_from_seed": 3,
+      "branch": "plant",
+      "members": 5,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 11
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.33,
+        "neglect": 0.6,
+        "unlocks": 0.33,
+        "cheapness": 0.21
+      },
+      "score": 3.9,
+      "move": "widening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+    },
+    "plant/vegetable/leaves": {
+      "label": "The leaves",
+      "steps_from_seed": 3,
+      "branch": "plant",
+      "members": 5,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 11
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.33,
+        "neglect": 0.6,
+        "unlocks": 0.33,
+        "cheapness": 0.21
+      },
+      "score": 3.9,
+      "move": "widening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+    },
+    "plant/vegetable/seeds_or_pods": {
+      "label": "The seeds or pods",
+      "steps_from_seed": 3,
+      "branch": "plant",
+      "members": 4,
+      "open": false,
+      "missing": {
+        "field": "no field splits it four ways",
+        "things": 12
+      },
+      "decisions": [],
+      "factors": {
+        "nearness": 0.33,
+        "neglect": 0.6,
+        "unlocks": 0.33,
+        "cheapness": 0.2
+      },
+      "score": 3.9,
+      "move": "widening",
+      "status": "held",
+      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
     },
     "nature_not_alive": {
       "label": "Things in nature that are not alive",

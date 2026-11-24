@@ -134,14 +134,7 @@
     {
       "name": "Cluster bean plant",
       "why": [
-        "no tile of it passed the checks"
-      ],
-      "from": "job:2026-11-24-08"
-    },
-    {
-      "name": "Cowpea plant",
-      "why": [
-        "no tile of it passed the checks"
+        "its picture cannot be told from Cowpea plant: the picture check took it for that, so it is not a thing of its own for a child"
       ],
       "from": "job:2026-11-24-08"
     },

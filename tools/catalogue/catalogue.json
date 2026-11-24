@@ -10230,7 +10230,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/fruit"
         ],
         "boards": [
           {
@@ -10243,6 +10244,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "fruit",
             "open_now": true
           }
         ]
@@ -10317,7 +10324,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/fruit"
         ],
         "boards": [
           {
@@ -10330,6 +10338,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "fruit",
             "open_now": true
           }
         ]
@@ -10400,7 +10414,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/fruit"
         ],
         "boards": [
           {
@@ -10413,6 +10428,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "fruit",
             "open_now": true
           }
         ]
@@ -10492,7 +10513,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/fruit"
         ],
         "boards": [
           {
@@ -10505,6 +10527,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "fruit",
             "open_now": true
           }
         ]
@@ -13836,7 +13864,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/under_the_ground"
         ],
         "boards": [
           {
@@ -13849,6 +13878,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "under_the_ground",
             "open_now": true
           }
         ]
@@ -13936,7 +13971,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/under_the_ground"
         ],
         "boards": [
           {
@@ -13949,6 +13985,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "under_the_ground",
             "open_now": true
           }
         ]
@@ -14035,7 +14077,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/under_the_ground"
         ],
         "boards": [
           {
@@ -14048,6 +14091,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "under_the_ground",
             "open_now": true
           }
         ]
@@ -14134,7 +14183,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/under_the_ground"
         ],
         "boards": [
           {
@@ -14147,6 +14197,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "under_the_ground",
             "open_now": true
           }
         ]
@@ -14233,7 +14289,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/under_the_ground"
         ],
         "boards": [
           {
@@ -14246,6 +14303,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "under_the_ground",
             "open_now": true
           }
         ]
@@ -14331,7 +14394,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/under_the_ground"
         ]
       },
       "voice": {
@@ -14358,7 +14422,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/under_the_ground"
         ]
       },
       "voice": {
@@ -14385,7 +14450,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/under_the_ground"
         ]
       },
       "voice": {
@@ -14412,7 +14478,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/leaves"
         ],
         "boards": [
           {
@@ -14425,6 +14492,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "leaves",
             "open_now": true
           }
         ]
@@ -14511,7 +14584,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/leaves"
         ],
         "boards": [
           {
@@ -14524,6 +14598,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "leaves",
             "open_now": true
           }
         ]
@@ -14657,7 +14737,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/leaves"
         ]
       }
     },
@@ -14722,7 +14803,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/leaves"
         ]
       }
     },
@@ -14743,7 +14825,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/leaves"
         ],
         "boards": [
           {
@@ -14756,6 +14839,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "leaves",
             "open_now": true
           }
         ]
@@ -14843,7 +14932,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/leaves"
         ],
         "boards": [
           {
@@ -14856,6 +14946,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "leaves",
             "open_now": true
           }
         ]
@@ -14940,7 +15036,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/leaves"
         ],
         "boards": [
           {
@@ -14953,6 +15050,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "leaves",
             "open_now": true
           }
         ]
@@ -15094,7 +15197,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ],
         "boards": [
           {
@@ -15107,6 +15211,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "seeds_or_pods",
             "open_now": true
           }
         ]
@@ -15140,7 +15250,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ],
         "boards": [
           {
@@ -15153,6 +15264,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "seeds_or_pods",
             "open_now": true
           }
         ]
@@ -15240,7 +15357,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ]
       },
       "sources": {
@@ -15309,7 +15427,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ]
       },
       "sources": {
@@ -15399,7 +15518,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ]
       }
     },
@@ -15416,11 +15536,15 @@
       "reviewed": 12,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
+      "notes": {
+        "part_we_eat": "The owner's word of 2026-11-24: he played the set on 24 Nov and it caught him: we eat the whole of it, like a tomato or a brinjal, and nobody opens it for the seeds (It was 'The seeds or pods'.)"
+      },
       "worked_out": {
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/fruit"
         ],
         "boards": [
           {
@@ -15433,6 +15557,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "fruit",
             "open_now": true
           }
         ]
@@ -15464,14 +15594,11 @@
             "basis": "sourced",
             "source": "wikipedia_en",
             "quote": "Cultivated in tropical, subtropical, and warm temperate regions around the world for its edible green (red in some cultivars) seed pods, okra is used in the cuisines of many countries."
-          },
-          "part_we_eat": {
-            "basis": "sourced",
-            "source": "wikipedia_en",
-            "quote": "Cultivated in tropical, subtropical, and warm temperate regions around the world for its edible green (red in some cultivars) seed pods, okra is used in the cuisines of many countries."
           }
         },
-        "no_sentence_for": []
+        "no_sentence_for": [
+          "part_we_eat"
+        ]
       },
       "voice": {
         "say": "Ladies finger plant",
@@ -15491,9 +15618,6 @@
         "approved": "by the owner",
         "approved_on": "2026-10-06",
         "other_tries": 1
-      },
-      "notes": {
-        "part_we_eat": "The owner's word of 2026-11-24: he played the set on 24 Nov and it caught him: we eat the whole of it, like a tomato or a brinjal, and nobody opens it for the seeds (It was 'The seeds or pods'.)"
       }
     },
     "bottle_gourd_plant": {
@@ -15514,7 +15638,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ]
       },
       "sources": {
@@ -15575,7 +15700,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ]
       },
       "sources": {
@@ -15634,7 +15760,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ]
       },
       "sources": {
@@ -15752,7 +15879,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ]
       }
     },
@@ -15760,7 +15888,7 @@
       "name": "Cluster bean plant",
       "status": "held by the rules",
       "status_why": [
-        "no tile of it passed the checks"
+        "its picture cannot be told from Cowpea plant: the picture check took it for that, so it is not a thing of its own for a child"
       ],
       "held_from": "job:2026-11-24-08",
       "fields": {
@@ -15776,21 +15904,53 @@
         "clip": null,
         "cached": "tools/voice/clips/cluster_bean_plant.mp3"
       },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Guar",
+            "title": "Guar",
+            "asked_for": "Cluster bean",
+            "revision": 1369086281,
+            "fetched_on": "2026-11-24",
+            "sha256": "43f8df80ccf35b2970ad3d013f44174ab80cdf4af107c2822fd420c5071bea35"
+          }
+        ],
+        "facts": "tools/research/out/facts/cluster_bean_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The guar (from Hindi: ग्वार: gvār) or cluster bean, with the botanical name Cyamopsis tetragonoloba, is an annual legume and the source of guar gum."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "It was further domesticated in South Asia, where it has been cultivated for centuries."
+          },
+          "kind_of_plant": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe it as an annual legume grown as a crop, which fits the everyday vegetable-plant category rather than a tree, flower, or grass."
+          },
+          "part_we_eat": {
+            "basis": "judged, not sourced",
+            "why": "The source says the plant's seeds are its most important part, used to make guar gum, and it is a legume grown for its pods and seeds."
+          }
+        },
+        "no_sentence_for": []
+      },
       "worked_out": {
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ]
       }
     },
     "cowpea_plant": {
       "name": "Cowpea plant",
-      "status": "held by the rules",
-      "status_why": [
-        "no tile of it passed the checks"
-      ],
-      "held_from": "job:2026-11-24-08",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
@@ -15798,18 +15958,101 @@
         "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.6,
+      "reviewed": 12,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-08",
       "voice": {
         "say": "Cowpea plant",
         "checked_by_ear": false,
-        "clip": null,
-        "cached": "tools/voice/clips/cowpea_plant.mp3"
+        "clip": "Assets/audio/names/name_cowpea_plant.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07",
+        "cached": "tools/voice/clips/cowpea_plant.mp3",
+        "clip_sha256": "70f0fc3be17fe7abc33f86856067104bc118b9eadad531923b6c27179473a8db"
       },
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "plant",
+            "open_now": true
+          },
+          {
+            "circle": "plant",
+            "sorted_by": "kind_of_plant",
+            "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "seeds_or_pods",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_08_1_01_c1",
+        "game_file": "Assets/pictures/cowpea_plant.webp",
+        "game_sha256": "91d749fbdfbb58b5f75b745331d7753244e93a43414c2034c50c9580235afc87",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_08_1_01_c1.png",
+        "master_sha256": "aa0d4dba45c5d133daf54ee331720a7d644b8a2b5bdad1e0b0728933db4e42e4",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 1
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Cowpea",
+            "title": "Cowpea",
+            "asked_for": "Cowpea",
+            "revision": 1382950060,
+            "fetched_on": "2026-11-24",
+            "sha256": "e66ff8a5abe08352b16ea461c49c9091cf90caac39df19897732635aca420113"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Cowpea",
+            "title": "Cowpea",
+            "asked_for": "Cowpea",
+            "revision": 8145819,
+            "fetched_on": "2026-11-24",
+            "sha256": "80f32542bfed1d7cb85c5cdf97c0b1ffa213d4ae40b374e05f7e992958648213"
+          }
+        ],
+        "facts": "tools/research/out/facts/cowpea_plant.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The cowpea (Vigna unguiculata) is an annual herbaceous legume from the genus Vigna."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "It was domesticated in Africa and is one of the oldest crops to be farmed."
+          },
+          "kind_of_plant": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The crop is mainly grown for its seeds, which are high in protein, although the leaves and immature seed pods can also be consumed."
+          },
+          "part_we_eat": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The crop is mainly grown for its seeds, which are high in protein, although the leaves and immature seed pods can also be consumed."
+          }
+        },
+        "no_sentence_for": []
       }
     },
     "field_bean_plant": {
@@ -15835,7 +16078,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ]
       }
     },
@@ -15862,7 +16106,8 @@
         "would_join": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ]
       }
     },
@@ -15888,7 +16133,8 @@
         "circles": [
           "seed",
           "plant",
-          "plant/vegetable"
+          "plant/vegetable",
+          "plant/vegetable/seeds_or_pods"
         ],
         "boards": [
           {
@@ -15901,6 +16147,12 @@
             "circle": "plant",
             "sorted_by": "kind_of_plant",
             "group": "vegetable",
+            "open_now": true
+          },
+          {
+            "circle": "plant/vegetable",
+            "sorted_by": "part_we_eat",
+            "group": "seeds_or_pods",
             "open_now": true
           }
         ]
@@ -30061,8 +30313,8 @@
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 258,
-      "held by the rules": 77,
+      "in the game": 259,
+      "held by the rules": 76,
       "kept for later": 5,
       "excluded": 3,
       "taken out of the game": 25
@@ -30075,6 +30327,7 @@
       "animal/bird",
       "animal/dinosaur",
       "plant",
+      "plant/vegetable",
       "nature_not_alive",
       "made_by_people",
       "made_by_people/vehicle",
@@ -30085,7 +30338,7 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 258,
+        "things": 259,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
@@ -30096,8 +30349,8 @@
           },
           "plant": {
             "label": "Plants",
-            "things": 31,
-            "with_picture": 31
+            "things": 32,
+            "with_picture": 32
           },
           "nature_not_alive": {
             "label": "Things in nature that are not alive",
@@ -30587,7 +30840,7 @@
       },
       "plant": {
         "label": "Plants",
-        "things": 31,
+        "things": 32,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_plant",
         "groups": {
@@ -30608,8 +30861,8 @@
           },
           "vegetable": {
             "label": "Vegetable plants",
-            "things": 18,
-            "with_picture": 18
+            "things": 19,
+            "with_picture": 19
           }
         },
         "open_by_its_things": true,
@@ -30648,7 +30901,7 @@
       },
       "plant/vegetable": {
         "label": "Vegetable plants",
-        "things": 18,
+        "things": 19,
         "steps_from_seed": 2,
         "sorted_by": "part_we_eat",
         "groups": {
@@ -30669,41 +30922,72 @@
           },
           "seeds_or_pods": {
             "label": "The seeds or pods",
-            "things": 3,
-            "with_picture": 3
+            "things": 4,
+            "with_picture": 4
           }
         },
+        "open_by_its_things": true,
+        "can_open_now": true,
+        "needs": []
+      },
+      "plant/vegetable/fruit": {
+        "label": "The fruit",
+        "things": 5,
+        "steps_from_seed": 3,
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+        ]
+      },
+      "plant/vegetable/under_the_ground": {
+        "label": "What grows under the ground",
+        "things": 5,
+        "steps_from_seed": 3,
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+        ]
+      },
+      "plant/vegetable/leaves": {
+        "label": "The leaves",
+        "things": 5,
+        "steps_from_seed": 3,
         "could_be_filled_by": [
           {
             "name": "Mint plant",
-            "status": "held by the rules",
-            "group": "leaves"
+            "status": "held by the rules"
           },
           {
             "name": "Curry leaf plant",
-            "status": "held by the rules",
-            "group": "leaves"
-          },
-          {
-            "name": "Drumstick plant",
-            "status": "held by the rules",
-            "group": "seeds_or_pods"
-          },
-          {
-            "name": "Cluster bean plant",
-            "status": "held by the rules",
-            "group": "seeds_or_pods"
-          },
-          {
-            "name": "Cowpea plant",
-            "status": "held by the rules",
-            "group": "seeds_or_pods"
+            "status": "held by the rules"
           }
         ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "1 more thing(s) in 'The seeds or pods'"
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+        ]
+      },
+      "plant/vegetable/seeds_or_pods": {
+        "label": "The seeds or pods",
+        "things": 4,
+        "steps_from_seed": 3,
+        "could_be_filled_by": [
+          {
+            "name": "Drumstick plant",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Cluster bean plant",
+            "status": "held by the rules"
+          }
+        ],
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
         ]
       },
       "nature_not_alive": {
@@ -31905,7 +32189,7 @@
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
-        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
+        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
       ]
     },
     "kind_of_animal=reptile": {
@@ -32177,25 +32461,44 @@
       "value": "tree",
       "label": "Trees",
       "question": "What kind of plant is it?",
-      "clues": [],
+      "clues": [
+        {
+          "text": "Think about a plant with a big, hard stem called a trunk.",
+          "cached": "tools/voice/clips/groups/kind_of_plant__tree__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_plant__tree__clue1.mp3",
+          "clip_sha256": "1c434b8dc71831e334f11116f20b6726c4b446e6e942a89afac4d6f06bd6dbc4",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "This plant grows very tall and has branches up high.",
+          "cached": "tools/voice/clips/groups/kind_of_plant__tree__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_plant__tree__clue2.mp3",
+          "clip_sha256": "61a1545e98def6fb95ef26bb483ba0ff9c113f4dc4723e18f2ef41439858397e",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "Birds like to sit and rest in this tall plant.",
+          "cached": "tools/voice/clips/groups/kind_of_plant__tree__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_plant__tree__clue3.mp3",
+          "clip_sha256": "24cd6b4fb152f176ce76675cd0b796e210d7a764b5bb42ed9725ad6c25915087",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        }
+      ],
       "explanation": {
-        "text": "These are all tall plants with a strong trunk. They stand up high and live for many years. A coconut can float on the sea for many days and still grow on a new shore.",
-        "together": "These are all tall plants with a strong trunk. They stand up high and live for many years.",
-        "fact": "A coconut can float on the sea for many days and still grow on a new shore.",
-        "quote": "Coconuts float on water and can float to another island and germinate there.",
+        "text": "These all grow tall with a hard trunk and branches up high. They are big plants that live for many years. The coconut tree can grow as tall as 30 metres, which is taller than many houses.",
+        "together": "These all grow tall with a hard trunk and branches up high. They are big plants that live for many years.",
+        "fact": "The coconut tree can grow as tall as 30 metres, which is taller than many houses.",
+        "quote": "It is a large palm, growing to 30 m tall.",
         "source": "coconut_tree:wikipedia_simple",
         "source_url": "https://simple.wikipedia.org/wiki/Coconut_palm",
         "cached": "tools/voice/clips/groups/kind_of_plant__tree__explanation.mp3",
         "clip": "Assets/audio/groups/kind_of_plant__tree__explanation.mp3",
-        "clip_sha256": "fe2d40a66aa15ded563d6fb633d33e83f5fa542c5f8434a3592511d87b74d0bf",
+        "clip_sha256": "47a16938d59e05ad8157bd90cff7f5a4509d81a791949685d6fbca58da7f723c",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "held": [
-        "no clues were kept: clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 3 is not true of every thing in the group"
-      ]
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     },
     "kind_of_plant=flower": {
       "field": "kind_of_plant",
@@ -33524,24 +33827,24 @@
       "question": "Is it mostly a pet, a farm animal or a wild animal?",
       "clues": [
         {
-          "text": "Think about birds that live free, not in a house or a pen.",
+          "text": "Think about a bird that lives free, not in a house or a cage.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
-          "clip_sha256": "84b0c5ec079773a7f1c10069d11c05fe3a86579b2d7993bd0f9cc78dd11299ef",
+          "clip_sha256": "9d41be23c783555dd81f00dc0772d89fb6c23df0bc5f766d0453c5f08963f2cd",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "These birds find their own food out in the open.",
+          "text": "It flies in the open sky and finds its own food.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
-          "clip_sha256": "cf525a576cfe1541df82c4c9c3e9bb6d24aee2fa118c195f341b6d470437ca1a",
+          "clip_sha256": "62069e98267dd1815ff5bad34b28cebeb7b5e3711e300c1336c603454d77e806",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You would see these birds flying high or sitting in a tree, far from people.",
+          "text": "It does not live with people or on a farm.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
-          "clip_sha256": "20c744064b0b158566e2534dadba087672f569e13b8fa3007a7a7139a6c0e8ae",
+          "clip_sha256": "416fec67c59d37eae6f52b45d3a35c37d50d3e9d931375ea02564ce91bc62239",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
@@ -33868,24 +34171,24 @@
       "question": "How do we mostly play with it?",
       "clues": [
         {
-          "text": "Think about something you can hear and tap along to.",
+          "text": "Think about things that make a happy sound for your ears.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue1.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3",
-          "clip_sha256": "87fa6463b11fbcc4248b87baa572d54226aee7ed65593e6498b1521f7ebe3ce2",
+          "clip_sha256": "cf006105585640d2e2d702e656339584b38d619471ff88540e996b3267956193",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You use your hands or your breath to make it.",
+          "text": "You can tap, blow or shake them to hear a tune.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue2.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3",
-          "clip_sha256": "eacbeac84370120df0da93255580146f0db53082c277f9074a6abc485ec14803",
+          "clip_sha256": "4c18e052c5b26ec0420d7d10bd5f8738df95b8a41c4d0a19ba88ca7b81e0b315",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "It makes a happy sound you can sing with.",
+          "text": "People play them to make songs you can sing along to.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue3.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3",
-          "clip_sha256": "1e86401c7ef90283c476d6ce4e2eaf7495c6522cd8fcece97174c3fea076ee72",
+          "clip_sha256": "cc07ac0e52c9d4bedb681727db913138b430faac983d84b3a5dd9808112cf565",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],

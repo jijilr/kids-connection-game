@@ -173,7 +173,9 @@
         ]
       },
       "draw": "A whole cowpea plant in India: a trailing, climbing vine up to 2 m, with long 20–50 cm stalks holding four or more long green pods, one pod split open to show its seeds",
-      "held_as": "held by the rules"
+      "held_as": "held by the rules",
+      "tries": 1,
+      "tile": "job_2026_11_24_08_1_01_c1"
     },
     {
       "name": "Cluster bean plant",
@@ -227,7 +229,10 @@
         ]
       },
       "draw": "An upright bushy green cluster bean plant, 2 to 3 metres tall, with fine long oval hairy leaves 5 to 10 cm long and hairy stems; show several long green pods hanging on it, one pod split open to reveal small round seeds",
-      "held_as": "held by the rules"
+      "held_as": "held by the rules",
+      "tries": 2,
+      "tile": null,
+      "no_tile": "its picture cannot be told from Cowpea plant: the picture check took it for that, so it is not a thing of its own for a child"
     },
     {
       "name": "Field bean plant",
@@ -260,8 +265,10 @@
       ]
     }
   ],
-  "sheets": [],
-  "stopped": "the cap: drawing and checking a sheet could cost up to Rs 30, and only Rs 29 of the cap is left",
+  "sheets": [
+    "job_2026_11_24_08_1_01"
+  ],
+  "stopped": "",
   "fields_added": [],
   "fields_held": [],
   "open_before": [
@@ -280,9 +287,11 @@
     "seed"
   ],
   "spent_usd": {
-    "deepseek": 0.01435,
-    "drawing": 0.0,
-    "picture_checks": 0.0
+    "deepseek": 0.01767,
+    "drawing": 0.1005,
+    "picture_checks": 0.02595
   },
-  "opened": []
+  "opened": [
+    "Vegetable plants"
+  ]
 }
