@@ -1121,15 +1121,15 @@
     "how_we_play_with_it=music": {
       "clues": [
         {
-          "text": "Think about toys that make a sound you can hear.",
+          "text": "Think about toys that make a sound you can sing along to.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3"
         },
         {
-          "text": "You blow, bang or pluck it, and out comes a tune or a beat.",
+          "text": "You use your hands or your breath to make the sound.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3"
         },
         {
-          "text": "It is a toy you can play to make music with your hands or your breath.",
+          "text": "You can tap it, blow it, or pluck it to make a tune.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3"
         }
       ],
@@ -1298,36 +1298,42 @@
     "how_it_makes_sound=pluck_strings": {
       "clues": [
         {
-          "text": "Think about how your fingers move on the toy to start the sound.",
+          "text": "Think about how your fingers touch the toy to start the sound.",
           "audio": "Assets/audio/groups/how_it_makes_sound__pluck_strings__clue1.mp3"
         },
         {
-          "text": "Your fingers pull or sweep across thin lines to make the sound.",
+          "text": "You move your fingers along tight lines to make the sound.",
           "audio": "Assets/audio/groups/how_it_makes_sound__pluck_strings__clue2.mp3"
         },
         {
-          "text": "The sound comes from fingers moving over tight strings, not from hitting or blowing.",
+          "text": "Your fingers pull or sweep across these lines, and they are not keys or holes.",
           "audio": "Assets/audio/groups/how_it_makes_sound__pluck_strings__clue3.mp3"
         }
       ],
-      "explanation": null
+      "explanation": {
+        "text": "You make music on these by pulling or sweeping your fingers over tight strings. A harp is a very old string toy; people played it long, long ago in Egypt.",
+        "audio": "Assets/audio/groups/how_it_makes_sound__pluck_strings__explanation.mp3"
+      }
     },
     "how_it_makes_sound=press_keys": {
       "clues": [
         {
-          "text": "Some toys make music when your fingers push something down.",
+          "text": "Think about a toy you play with your fingers.",
           "audio": "Assets/audio/groups/how_it_makes_sound__press_keys__clue1.mp3"
         },
         {
-          "text": "You do not hit it or blow it or pull strings to hear it.",
+          "text": "You do not hit it or blow it or pull its strings.",
           "audio": "Assets/audio/groups/how_it_makes_sound__press_keys__clue2.mp3"
         },
         {
-          "text": "Your fingers go tap, tap on little buttons, and music comes out.",
+          "text": "You touch its little buttons and music comes out.",
           "audio": "Assets/audio/groups/how_it_makes_sound__press_keys__clue3.mp3"
         }
       ],
-      "explanation": null
+      "explanation": {
+        "text": "You play all of these with your fingers on little parts. When you touch them, music comes out. A toy piano makes its sound from little round metal rods inside, not from strings.",
+        "audio": "Assets/audio/groups/how_it_makes_sound__press_keys__explanation.mp3"
+      }
     }
   }
 }

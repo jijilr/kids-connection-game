@@ -33781,7 +33781,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job run 2026-11-24-12",
+    "by": "job:2026-11-24-13",
     "on": "2026-11-24"
   },
   "groups": {
@@ -36248,24 +36248,24 @@
       "question": "How do we mostly play with it?",
       "clues": [
         {
-          "text": "Think about toys that make a sound you can hear.",
+          "text": "Think about toys that make a sound you can sing along to.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue1.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3",
-          "clip_sha256": "d4f92fe353b4e20c5071ab9af2c140432988451df5831b42a8420651f15a9f45",
+          "clip_sha256": "c8a93a483361541c0b356e29fe84534c1b9532e01d882e0155d0d8eb1e7e2816",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You blow, bang or pluck it, and out comes a tune or a beat.",
+          "text": "You use your hands or your breath to make the sound.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue2.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3",
-          "clip_sha256": "67860d4c532d030c54f9c82b3ff8fabcad8549c4f2ba26707b8f653fe9b5c878",
+          "clip_sha256": "9753de1db34506e56ede9824a4c41f27a761a486047f44ae5148a9d9470a18bd",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "It is a toy you can play to make music with your hands or your breath.",
+          "text": "You can tap it, blow it, or pluck it to make a tune.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue3.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3",
-          "clip_sha256": "d4f9b7372d3d7fa0a598ac9ba35154d63e80a1682dc47b24486fbc4616cfdd23",
+          "clip_sha256": "e89438522de851da2874f81f57f8a2c8bf3d2d3d5da9f99d8e795f57dfffc77e",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
@@ -36636,34 +36636,42 @@
       "question": "How does this toy make its sound?",
       "clues": [
         {
-          "text": "Think about how your fingers move on the toy to start the sound.",
+          "text": "Think about how your fingers touch the toy to start the sound.",
           "cached": "tools/voice/clips/groups/how_it_makes_sound__pluck_strings__clue1.mp3",
           "clip": "Assets/audio/groups/how_it_makes_sound__pluck_strings__clue1.mp3",
-          "clip_sha256": "3e369e017ad492be44e9db655fcb1c8e40524538b2b47fbde1dc1e36ab61a574",
+          "clip_sha256": "1d7995cbe1e63e8fd7107740c8f9cbc08f0268b38a43fa4f4597d67004865cf3",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "Your fingers pull or sweep across thin lines to make the sound.",
+          "text": "You move your fingers along tight lines to make the sound.",
           "cached": "tools/voice/clips/groups/how_it_makes_sound__pluck_strings__clue2.mp3",
           "clip": "Assets/audio/groups/how_it_makes_sound__pluck_strings__clue2.mp3",
-          "clip_sha256": "5f293338cacd0b5fc2b46be71df25daedec43833f9740d9eeba7d4e2b9bb892e",
+          "clip_sha256": "d9fa4de7b1d829abca80f078c709adb7a06bda5bdb2e8cee3f1ce30b255e592b",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "The sound comes from fingers moving over tight strings, not from hitting or blowing.",
+          "text": "Your fingers pull or sweep across these lines, and they are not keys or holes.",
           "cached": "tools/voice/clips/groups/how_it_makes_sound__pluck_strings__clue3.mp3",
           "clip": "Assets/audio/groups/how_it_makes_sound__pluck_strings__clue3.mp3",
-          "clip_sha256": "64dd110152b8c0b9b601a4e8e0a4f0974bfcd9ea4e4b960b827ae559191f06ed",
+          "clip_sha256": "b024c6fe777f5652b45621cc9b48cfae4a05a8f37515f7b766200b7e61adaad9",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
-      "explanation": null,
+      "explanation": {
+        "text": "You make music on these by pulling or sweeping your fingers over tight strings. A harp is a very old string toy; people played it long, long ago in Egypt.",
+        "together": "You make music on these by pulling or sweeping your fingers over tight strings.",
+        "fact": "A harp is a very old string toy; people played it long, long ago in Egypt.",
+        "quote": "It dates back to 4000 BC when the Egyptians used them in holy places.",
+        "source": "harp:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Harp",
+        "cached": "tools/voice/clips/groups/how_it_makes_sound__pluck_strings__explanation.mp3",
+        "clip": "Assets/audio/groups/how_it_makes_sound__pluck_strings__explanation.mp3",
+        "clip_sha256": "fbef6477c4b7a09d094774e71063e4d989c208fbf794f206cc74dd7682ddd070",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+      },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "held": [
-        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
-      ]
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     },
     "how_it_makes_sound=press_keys": {
       "field": "how_it_makes_sound",
@@ -36672,34 +36680,42 @@
       "question": "How does this toy make its sound?",
       "clues": [
         {
-          "text": "Some toys make music when your fingers push something down.",
+          "text": "Think about a toy you play with your fingers.",
           "cached": "tools/voice/clips/groups/how_it_makes_sound__press_keys__clue1.mp3",
           "clip": "Assets/audio/groups/how_it_makes_sound__press_keys__clue1.mp3",
-          "clip_sha256": "fdea0870f5ee3dd8eaa7fe5f8f27948355abe75862237b641d6f8605df0cda0f",
+          "clip_sha256": "d34ee95329244e196f426efa4970cff3bd54fa69c21bcfa65c86d9aa7e91e53d",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You do not hit it or blow it or pull strings to hear it.",
+          "text": "You do not hit it or blow it or pull its strings.",
           "cached": "tools/voice/clips/groups/how_it_makes_sound__press_keys__clue2.mp3",
           "clip": "Assets/audio/groups/how_it_makes_sound__press_keys__clue2.mp3",
-          "clip_sha256": "82a24c1726771b34b63abc5d73bbb834d5bf806f285237080028134ea3a3fe54",
+          "clip_sha256": "bb94ebb9e6bf91e5c1b49fc3bdf7c9e98896f69a6e23a524b0f0bdad2256ae60",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "Your fingers go tap, tap on little buttons, and music comes out.",
+          "text": "You touch its little buttons and music comes out.",
           "cached": "tools/voice/clips/groups/how_it_makes_sound__press_keys__clue3.mp3",
           "clip": "Assets/audio/groups/how_it_makes_sound__press_keys__clue3.mp3",
-          "clip_sha256": "ae1b3da108b62b91bf3552bcb485290f3551f2bb5b0e81066af00548f408d1b2",
+          "clip_sha256": "90ac6b4a425861ebac13e756ec9dbba84ebb4f43ba9abe8119f773f9ed85c1de",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
-      "explanation": null,
+      "explanation": {
+        "text": "You play all of these with your fingers on little parts. When you touch them, music comes out. A toy piano makes its sound from little round metal rods inside, not from strings.",
+        "together": "You play all of these with your fingers on little parts. When you touch them, music comes out.",
+        "fact": "A toy piano makes its sound from little round metal rods inside, not from strings.",
+        "quote": "Most modern toy pianos use round metal rods, as opposed to strings in a regular piano, to produce sound.",
+        "source": "toy_piano:wikipedia_en",
+        "source_url": "https://en.wikipedia.org/wiki/Toy_piano",
+        "cached": "tools/voice/clips/groups/how_it_makes_sound__press_keys__explanation.mp3",
+        "clip": "Assets/audio/groups/how_it_makes_sound__press_keys__explanation.mp3",
+        "clip_sha256": "5172157c66b2267e1c8469ba5f044756f696143f304305458c227ac7b896105e",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+      },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "held": [
-        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
-      ]
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     }
   }
 }
