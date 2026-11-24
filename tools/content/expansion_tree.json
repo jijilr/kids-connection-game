@@ -1,7 +1,7 @@
 {
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-11-24",
-  "dictionary_version": 12,
+  "dictionary_version": 13,
   "things": 259,
   "rules": {
     "weights": {
@@ -1821,18 +1821,32 @@
       "branch": "made_by_people",
       "members": 5,
       "open": false,
+      "sorted_by": "how_it_makes_sound",
       "missing": {
-        "field": "no field splits it four ways",
+        "field": null,
+        "short": {
+          "hit_or_strike": 2,
+          "blow_into": 3,
+          "press_keys": 3,
+          "pluck_strings": 3
+        },
         "things": 11
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-11-24",
+          "what": "the rules added the field \"How does this toy make its sound?\" in job run 2026-11-24-11",
+          "why": "it passed the four tests: Hit it to make sound, Blow into it, Press keys to play, Pluck or strum strings",
+          "status": "added by the rules"
+        }
+      ],
       "factors": {
         "nearness": 0.33,
         "neglect": 0.0,
         "unlocks": 0.33,
-        "cheapness": 0.21
+        "cheapness": 0.27
       },
-      "score": 2.1,
+      "score": 2.2,
       "move": "deepening",
       "status": "held",
       "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"

@@ -1,0 +1,113 @@
+{
+  "name": "Lute",
+  "group": "Things people make > Toys > Make music with it > Pluck or strum strings",
+  "features": [
+    {
+      "claim": "A lute has a neck and a deep round back around a hollow cavity.",
+      "quote": "A lute  ( or ) is any plucked string instrument with a neck and a deep round back enclosing a hollow cavity, usually with a sound hole or opening in the body.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A lute has an oval-shaped back made of strips of wood.",
+      "quote": "A lute has an oval-shaped back, made of strips of wood.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "A lute has a flat front with a neck attached to it.",
+      "quote": "It has a flat front, with a neck attached to it.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "The front of the body is a flat piece of wood called the sound board.",
+      "quote": "The front part of the body is made of a flat piece of wood, and known as the sound board.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "The sound board has a carved hole in the center called the rose.",
+      "quote": "It has a beautifully carved hole in the center which is called the rose.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "The soundboard is a teardrop-shaped thin flat plate of wood.",
+      "quote": "The soundboard is a teardrop-shaped thin flat plate of resonant wood (typically spruce).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The sound hole is covered with a carved grille shaped like an intertwining vine or decorative knot.",
+      "quote": "The sound hole is not open, but rather covered with a grille in the form of an intertwining vine or a decorative knot, carved directly out of the wood of the soundboard.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The back is built from thin strips of hardwood called ribs, joined edge to edge.",
+      "quote": "The back or the shell is assembled from thin strips of hardwood (maple, cherry, ebony, rosewood, gran, wood and/or other tonewoods) called ribs, joined (with glue) edge to edge to form a deep rounded body for the instrument.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The neck is made of light wood with a hardwood veneer under the strings.",
+      "quote": "The neck is made of light wood, with a veneer of hardwood (usually ebony) to provide durability for the fretboard beneath the strings.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The strings are attached to pegs at the end of the neck.",
+      "quote": "The strings are attached to pegs or posts at the end of the neck, which have some type of turning mechanism to enable the player to tighten the tension on the string or loosen the tension before playing",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The bridge is attached to the soundboard and the strings attach directly into holes bored in it.",
+      "quote": "The bridge, sometimes made of a fruitwood, is attached to the soundboard typically between a fifth and a seventh of the belly length. It does not have a separate saddle but has holes bored into it to which the strings attach directly.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "The strings are tied around the neck as frets.",
+        "quote": "Beneath these strings, there were strings tied to the neck, where the player pressed down to make the notes.",
+        "source": "wikipedia_simple",
+        "kind": "features",
+        "why": "the sentence does not support it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Lute",
+      "title": "Lute",
+      "revision": 1386172887,
+      "revision_time": "2026-11-17T02:48:01Z",
+      "fetched_on": "2026-11-24",
+      "chars": 34250,
+      "sha256": "f7d463d57feaa405910fa4466f20c789b5f8c2f5e3f6ab341b605c2526d0ddb7"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Lute",
+      "title": "Lute",
+      "revision": 10859320,
+      "revision_time": "2026-05-16T18:25:19Z",
+      "fetched_on": "2026-11-24",
+      "chars": 1256,
+      "sha256": "e332868773e2f0bd3f011f63e3817d9a33184aea73f390e87e8bee2ee5088070"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "A lute has a neck and a deep round back around a hollow cavity.",
+    "The soundboard is a teardrop-shaped thin flat plate of wood.",
+    "The sound board has a carved hole in the center called the rose."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "Deep round back with teardrop flat soundboard and central rose",
+    "covering": []
+  }
+}

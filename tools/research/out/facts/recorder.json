@@ -1,0 +1,54 @@
+{
+  "name": "Recorder",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "Recorders were traditionally constructed from wood or ivory.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "basis": "judged, not sourced",
+      "why": "The sources say the recorder is a musical instrument that is popular for children to learn and play, so a parent would call it a toy."
+    },
+    "how_we_play_with_it": {
+      "value": "music",
+      "quote": "The recorder is a musical instrument that is a type of flute.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "how_it_makes_sound": {
+      "value": "blow_into",
+      "quote": "A recorder player puts the bigger end in their mouth and blows into it.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Recorder_(musical_instrument)",
+      "title": "Recorder (musical instrument)",
+      "asked_for": "Recorder (musical instrument)",
+      "revision": 1385979824,
+      "fetched_on": "2026-11-24",
+      "sha256": "98c3cd5c93dc74baf73fa850483fd29542c9c9867c98ead830b80369fc95a044"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Recorder",
+      "title": "Recorder",
+      "asked_for": "Recorder",
+      "revision": 9644241,
+      "fetched_on": "2026-11-24",
+      "sha256": "5e7ba2070a0e92d57ed70841ee7541f89fb9bee3d317636149f8366462545ec3"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Keyboard",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "An electronic keyboard, portable keyboard, or digital keyboard is an electronic musical instrument based on keyboard instruments.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "uncertain: two judgements disagree: 'Toys' and 'Tools'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Electronic_keyboard",
+      "title": "Electronic keyboard",
+      "asked_for": "Electronic keyboard",
+      "revision": 1379427466,
+      "fetched_on": "2026-11-24",
+      "sha256": "b66f846b569c91aeb4fb4130cbf092aff64330b62d307ec15897da4e9a2f6b02"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Keyboard_instrument",
+      "title": "Keyboard instrument",
+      "asked_for": "Keyboard instrument",
+      "revision": 10515763,
+      "fetched_on": "2026-11-24",
+      "sha256": "f9ab2f406b93d17a3d5c38867639375004a8956cb4c15cdbe518d1760d8c3565"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

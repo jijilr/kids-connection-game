@@ -29,6 +29,7 @@ class EngineScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final auto = context.select<EngineProvider, bool>((g) => g.automate);
+    final grew = context.select<EngineProvider, int>((g) => g.newKnots.length);
     return Scaffold(
       backgroundColor: Colors.transparent,
       appBar: AppBar(
@@ -101,7 +102,14 @@ class EngineScreen extends StatelessWidget {
           IconButton(
             key: const ValueKey('web'),
             tooltip: 'The web of what he has found',
-            icon: const Icon(Icons.hub_rounded, color: Colors.white),
+            // a small mark when the web has grown since he last looked at it
+            icon: Badge(
+              isLabelVisible: grew > 0,
+              backgroundColor: const Color(0xFFFFC107),
+              textColor: _ink,
+              label: Text('+$grew'),
+              child: const Icon(Icons.hub_rounded, color: Colors.white),
+            ),
             onPressed: () {
               final g = context.read<EngineProvider>();
               Navigator.of(context).push(MaterialPageRoute<void>(
@@ -136,7 +144,7 @@ class EngineScreen extends StatelessWidget {
                       if (g.atFloor)
                         _floorCard(g)
                       else if (g.boardFinished)
-                        _celebration(g)
+                        _celebration(context, g)
                       else
                         _grid(g),
                       const SizedBox(height: 8),
@@ -345,7 +353,7 @@ class EngineScreen extends StatelessWidget {
 
   // ------------------------------------------------------------- end states
 
-  Widget _celebration(EngineProvider g) {
+  Widget _celebration(BuildContext context, EngineProvider g) {
     // Where he goes next is one tap away, so he never waits. Four times in five the
     // button follows the best line he has shown, once in five it leads to a set he has
     // not proven (EngineProvider._chooseNext); with nothing chosen, a parallel board.
@@ -414,7 +422,16 @@ class EngineScreen extends StatelessWidget {
             const SizedBox(height: 10),
             ElevatedButton.icon(
               key: const ValueKey('next'),
-              onPressed: g.goNext,
+              // after a few sets the web opens first, if it has grown, and then the game goes on
+              onPressed: () async {
+                if (g.webMomentDue) {
+                  g.webMomentShown();
+                  await Navigator.of(context).push(MaterialPageRoute<void>(
+                      builder: (_) => ChangeNotifierProvider<EngineProvider>.value(
+                          value: g, child: const WebScreen(thenNext: true))));
+                }
+                g.goNext();
+              },
               icon: Icon(!g.automate && next != null && next.inside
                   ? Icons.arrow_downward_rounded
                   : Icons.arrow_forward_rounded),

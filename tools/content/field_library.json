@@ -493,6 +493,20 @@
         "armoured": "Armoured and plated dinosaurs",
         "bone_headed": "Bone-headed dinosaurs"
       }
+    },
+    {
+      "id": "how_it_makes_sound",
+      "wording": "How does this toy make its sound?",
+      "for": [
+        "made_by_people/toy/music"
+      ],
+      "from": "proposed by the model for Make music with it; it passed the four tests in job run 2026-11-24-11",
+      "values": {
+        "hit_or_strike": "Hit it to make sound",
+        "blow_into": "Blow into it",
+        "press_keys": "Press keys to play",
+        "pluck_strings": "Pluck or strum strings"
+      }
     }
   ],
   "retired": [

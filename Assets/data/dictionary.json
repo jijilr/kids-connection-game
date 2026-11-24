@@ -1,6 +1,6 @@
 {
-  "version": 12,
-  "status": "version 12. Versions 1 to 4 were approved by the owner. Since 7 Oct 2026 a field is added by the rules when it passes the four tests, and the digest of the run that added it says so. The game reads this file.",
+  "version": 13,
+  "status": "version 13. Versions 1 to 4 were approved by the owner. Since 7 Oct 2026 a field is added by the rules when it passes the four tests, and the digest of the run that added it says so. The game reads this file.",
   "about": "Every field a thing may carry, and the only values that field may take. A field that does not apply to a thing is left out of that thing; it is never written as 'not applicable'. The wording is what a child sees or hears; it is not data.",
   "rules": [
     "A field holds the everyday meaning, which is what the game sorts by.",
@@ -347,6 +347,21 @@
       },
       "since": 12,
       "added_by": "the rules, job run 2026-11-24-04"
+    },
+    "how_it_makes_sound": {
+      "wording": "How does this toy make its sound?",
+      "meaning": "everyday",
+      "values": {
+        "hit_or_strike": "Hit it to make sound",
+        "blow_into": "Blow into it",
+        "press_keys": "Press keys to play",
+        "pluck_strings": "Pluck or strum strings"
+      },
+      "expected_on": {
+        "how_we_play_with_it": "music"
+      },
+      "since": 13,
+      "added_by": "the rules, job run 2026-11-24-11"
     }
   }
 }

@@ -1,0 +1,83 @@
+{
+  "name": "Pan pipes",
+  "group": "Things people make > Toys > Make music with it > Blow into it",
+  "features": [
+    {
+      "claim": "It is made of several pipes that get longer one after another.",
+      "quote": "consisting of multiple pipes of gradually increasing length (and occasionally girth)",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The pipes are placed side by side in a row and bound together.",
+      "quote": "Then, Pan cut several reeds, placed them in parallel one next to the other, and bound them together to make a melodic musical instrument.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "In the Romanian style the pipes are arranged in a curved row and glued solidly together.",
+      "quote": "The Romanian pan flute has the pipes arranged in a curved array, solidly glued together, unlike Andean versions, which are usually tied together.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "The pipes are usually made of bamboo, giant cane or local reeds.",
+        "quote": "The pipes are typically made from bamboo, giant cane, or local reeds.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The pipes can also be made of wood, plastic, metal or clay.",
+        "quote": "Other materials include wood, plastic, metal, and clay.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Each pipe is stopped up at one end.",
+        "quote": "The pan flute's tubes are stopped at one end, at which the standing wave is reflected giving a note an octave lower than that produced by an open pipe of equal length.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "You blow across the open end of the pipes to play it.",
+        "quote": "The pan flute is played by blowing horizontally across an open end against the sharp inner edge of the pipes.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Pan_flute",
+      "title": "Pan flute",
+      "revision": 1382921722,
+      "revision_time": "2026-10-31T00:40:20Z",
+      "fetched_on": "2026-11-24",
+      "chars": 8161,
+      "sha256": "9f861f9395991069303e5773a93c65a1e3d0e5b2b8587960d825bca2359330f7"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "It is made of several pipes that get longer one after another.",
+    "The pipes are placed side by side in a row and bound together."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "Row of side-by-side pipes increasing in length and bound together.",
+    "covering": []
+  }
+}

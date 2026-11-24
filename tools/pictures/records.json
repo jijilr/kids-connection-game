@@ -2005,6 +2005,86 @@
       "cost_usd": 0.1005,
       "vision_check_cost_usd": 0.0004,
       "feature_check_cost_usd": 0.02555
+    },
+    "job_2026_11_24_11_1_01": {
+      "plan_key": "job_2026_11_24_11_1",
+      "purpose": "drawn by the job, run 2026-11-24-11",
+      "file": "tools/pictures/sheets/job_2026_11_24_11_1_01.png",
+      "grid": null,
+      "rows": 3,
+      "cols": 4,
+      "size": "2880x2880",
+      "cells": [
+        "tambourine",
+        "triangle",
+        "cymbals",
+        "recorder",
+        "harmonica",
+        "kazoo",
+        "pan_pipes",
+        "toy_accordion",
+        "toy_organ",
+        "toy_synthesizer",
+        "harp",
+        "banjo"
+      ],
+      "names": {
+        "tambourine": "Tambourine",
+        "triangle": "Triangle",
+        "cymbals": "Cymbals",
+        "recorder": "Recorder",
+        "harmonica": "Harmonica",
+        "kazoo": "Kazoo",
+        "pan_pipes": "Pan pipes",
+        "toy_accordion": "Toy accordion",
+        "toy_organ": "Toy organ",
+        "toy_synthesizer": "Toy synthesizer",
+        "harp": "Harp",
+        "banjo": "Banjo"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a grid of 3 rows and 4 columns: 12 equal cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Tambourine: A round hand-held tambourine, like a small drum: a circular wooden frame with a skin drumhead, and pairs of small metal jingles set in slots around the frame, in natural wood and silver colours.\n2. Triangle: A shiny metal triangle percussion instrument with one rounded corner and a small open gap, hanging from a thin string, with a short metal striker beside it, resting on plain ground.\n3. Cymbals: A thin round metal plate, bronze-gold, with a raised bump in the middle around a small hole, a strap through the hole; whole, seen flat, resting on the ground.\n4. Recorder: A wooden recorder: a straight tube, wider at the top mouth end and narrower at the bottom, with a row of seven finger holes and one thumb hole on the back, in natural light-brown wood.\n5. Harmonica: A small flat rectangular harmonica, silver metal case with a row of small holes along one long edge, held sideways to blow into; draw it whole, alone, resting on plain ground.\n6. Kazoo: A small plastic kazoo: a short straight tube, wider and flattened at the mouth end where the player hums, with a raised circular hole on top of the tube; bright colours, whole, on plain ground.\n7. Pan pipes: A row of bamboo pipes of increasing length bound side by side, closed at the bottom, natural pale yellow-brown bamboo, resting on the ground.\n8. Toy accordion: A small toy accordion in bright red and yellow plastic, with two rows of white and black keys and a folded bellows, standing whole on plain ground.\n9. Toy organ: A small colourful plastic toy organ in India, a rectangular keyboard with about a dozen white and black keys, small speaker grille, red and yellow casing, standing alone on plain ground.\n10. Toy synthesizer: A small rectangular toy synthesizer in bright red and yellow plastic, with a row of white and black piano keys along the front and a few round colored buttons on top, resting on plain ground.\n11. Harp: A wooden harp, triangular, with a tall pillar at its long end holding up many strings that run at a slant to its soundboard, plucked with the fingers, in natural wood colours, standing whole on the ground.\n12. Banjo: A modern banjo: a round body with a thin pale circular membrane stretched over a frame, a long wooden neck with strings, plucked with the fingers.\n\nFor this sheet: Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-11-24",
+      "tokens": {
+        "image_output_tokens": 5930,
+        "text_input_tokens": 748
+      },
+      "cost_usd": 0.1816,
+      "vision_check_cost_usd": 0.00096,
+      "feature_check_cost_usd": 0.02834
+    },
+    "job_2026_11_24_11_2_01": {
+      "plan_key": "job_2026_11_24_11_2",
+      "purpose": "drawn by the job, run 2026-11-24-11, second tries",
+      "file": "tools/pictures/sheets/job_2026_11_24_11_2_01.png",
+      "grid": 2,
+      "rows": 2,
+      "cols": 2,
+      "size": "1920x1920",
+      "cells": [
+        "ukulele",
+        "lute",
+        "ukulele",
+        "lute"
+      ],
+      "names": {
+        "ukulele": "Ukulele",
+        "lute": "Lute"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image containing a 2 by 2 grid of 4 equal square cells. Wide white gaps separate the cells, each gap at least one twentieth of the image width, with no dividing lines. Nothing in one cell touches or crosses into another. Each cell shows exactly one subject, in this order, left to right, top to bottom:\n\n1. Ukulele: A small wooden ukulele with a figure-eight guitar-shaped body, a round sound hole, a long neck with frets, and four nylon strings running from the bridge up the neck to the tuning pegs on the head.\n2. Lute: A modern lute: a deep round bowl-shaped back, a thin flat teardrop-shaped wooden soundboard with a carved round rose hole in the centre, and a neck with pegs and frets, strung with strings, in natural wood brown.\n3. Ukulele: A small wooden ukulele with a figure-eight guitar-shaped body, a round sound hole, a long neck with frets, and four nylon strings running from the bridge up the neck to the tuning pegs on the head; a second view of it.\n4. Lute: A modern lute: a deep round bowl-shaped back, a thin flat teardrop-shaped wooden soundboard with a carved round rose hole in the centre, and a neck with pegs and frets, strung with strings, in natural wood brown; a second view of it.\n\nFor this sheet: Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-11-24",
+      "tokens": {
+        "image_output_tokens": 3276,
+        "text_input_tokens": 454
+      },
+      "cost_usd": 0.1006,
+      "vision_check_cost_usd": 0.00031,
+      "feature_check_cost_usd": 0.01912
     }
   },
   "tiles": {
@@ -23009,6 +23089,1220 @@
         "reasons": [],
         "reported": [
           "cannot be seen: The plant grows upright and can reach up to 2 to 3 metres tall."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24"
+    },
+    "job_2026_11_24_11_1_01_c1": {
+      "thing_id": "tambourine",
+      "expected_thing": "tambourine",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c1.png",
+      "master_size": [
+        739,
+        739
+      ],
+      "master_sha256": "88a6643bb124280f205ef5f9ec3e2293f7e40c346c4237a7e47fd61e6a68fe96",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_11_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_11_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Tambourine: A round hand-held tambourine, like a small drum: a circular wooden frame with a skin drumhead, and pairs of small metal jingles set in slots around the frame, in natural wood and silver colours",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0151,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          51,
+          226,
+          688,
+          804
+        ],
+        "picture_shape": 1.1,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Tambourine",
+        "shows": "tambourine",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The picture clearly shows a round, compact tambourine with a wooden frame, a stretched drumhead, and paired metal jingles in slots around the frame.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tambourine",
+          "https://simple.wikipedia.org/wiki/Tambourine"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/tambourine.webp"
+    },
+    "job_2026_11_24_11_1_01_c2": {
+      "thing_id": "triangle",
+      "expected_thing": "triangle",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c2.png",
+      "master_size": [
+        771,
+        771
+      ],
+      "master_sha256": "32c196e5fe2b85b71b2cc66fd7865cf19a3779c8aa7e9a61d5a3f3298cfa3c99",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_11_1_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_11_1_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Triangle: A shiny metal triangle percussion instrument with one rounded corner and a small open gap, hanging from a thin string, with a short metal striker beside it, resting on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0151,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          773,
+          126,
+          1350,
+          791
+        ],
+        "picture_shape": 0.87,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Triangle",
+        "shows": "triangle",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/triangle.webp"
+    },
+    "job_2026_11_24_11_1_01_c3": {
+      "thing_id": "cymbals",
+      "expected_thing": "cymbals",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c3.png",
+      "master_size": [
+        712,
+        712
+      ],
+      "master_sha256": "7a80072636de8f3f23431561cb7749d627c30e99765485ef9bcd7300d9bf4c54",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_11_1_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_11_1_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Cymbals: A thin round metal plate, bronze-gold, with a raised bump in the middle around a small hole, a strap through the hole; whole, seen flat, resting on the ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0151,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1511,
+          211,
+          2109,
+          825
+        ],
+        "picture_shape": 0.97,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Cymbals",
+        "shows": "cymbals",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The picture clearly shows a thin, round cymbal with a raised central bell, a hole and a strap, but provides no size reference or second cymbal.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cymbal",
+          "https://simple.wikipedia.org/wiki/Cymbal"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/cymbals.webp"
+    },
+    "job_2026_11_24_11_1_01_c4": {
+      "thing_id": "recorder",
+      "expected_thing": "recorder",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c4.png",
+      "master_size": [
+        927,
+        927
+      ],
+      "master_sha256": "e7b6bc8038ab62512f6dcdb718862f838fd9014fe22c290b0ef07698bac226fd",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_11_1_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_11_1_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Recorder: A wooden recorder: a straight tube, wider at the top mouth end and narrower at the bottom, with a row of seven finger holes and one thumb hole on the back, in natural light-brown wood",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0151,
+      "cut": {
+        "flags": [],
+        "notes": [
+          "the picture is far from square"
+        ],
+        "picture_box": [
+          2462,
+          87,
+          2566,
+          886
+        ],
+        "picture_shape": 0.13,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Recorder",
+        "shows": "recorder",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "unclear"
+        ],
+        "features": [
+          "yes",
+          "unclear",
+          "unclear",
+          "yes",
+          "no",
+          "yes",
+          "no",
+          "no",
+          "no"
+        ],
+        "mistakes_shown": [],
+        "comment": "The wooden recorder shows seven open front finger holes and a flared end, but its rear thumb-hole is not visible.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Recorder_(musical_instrument)",
+          "https://simple.wikipedia.org/wiki/Recorder"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "Student recorders are commonly made of moulded plastic.",
+          "Some recorders have keys to cover tone holes that are too far apart or too large for the fingers.",
+          "A bocal may be used so the player can blow into it while keeping a comfortable hand position.",
+          "Some recorders have a bent bore that brings the windway closer to the keys or finger holes.",
+          "cannot be seen: It has holes for seven fingers and one thumb."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/recorder.webp"
+    },
+    "job_2026_11_24_11_1_01_c5": {
+      "thing_id": "harmonica",
+      "expected_thing": "harmonica",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c5.png",
+      "master_size": [
+        768,
+        768
+      ],
+      "master_sha256": "04e33471abf4e829bbc39a59bff96a5f9928898bcabe128b35322c3be16f4843",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_11_1_01_c5.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_11_1_01",
+      "cell": 5,
+      "style_version": "v1",
+      "prompt": "Harmonica: A small flat rectangular harmonica, silver metal case with a row of small holes along one long edge, held sideways to blow into; draw it whole, alone, resting on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0151,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          43,
+          1189,
+          705,
+          1572
+        ],
+        "picture_shape": 1.73,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Harmonica",
+        "shows": "harmonica",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "unclear",
+          "yes",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The harmonica shows a row of mouthpiece holes, a black comb, thin plate edges and metal covers, but its internal reeds and chamber arrangement are not visible.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Harmonica",
+          "https://simple.wikipedia.org/wiki/Harmonica"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/harmonica.webp"
+    },
+    "job_2026_11_24_11_1_01_c6": {
+      "thing_id": "kazoo",
+      "expected_thing": "kazoo",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c6.png",
+      "master_size": [
+        632,
+        632
+      ],
+      "master_sha256": "3549079a2535be32c19d4e7108b5f4c7d8191e701f11149db5f2e7c9310ad894",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_11_1_01_c6.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_11_1_01",
+      "cell": 6,
+      "style_version": "v1",
+      "prompt": "Kazoo: A small plastic kazoo: a short straight tube, wider and flattened at the mouth end where the player hums, with a raised circular hole on top of the tube; bright colours, whole, on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0151,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          807,
+          1167,
+          1352,
+          1565
+        ],
+        "picture_shape": 1.37,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Kazoo",
+        "shows": "kazoo",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "unclear"
+        ],
+        "features": [
+          "yes",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The kazoo has a raised circular opening and a wider, flattened end, but no player is shown humming into it.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kazoo"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "cannot be seen: The player hums into the wider and flattened side of the kazoo."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/kazoo.webp"
+    },
+    "job_2026_11_24_11_1_01_c7": {
+      "thing_id": "pan_pipes",
+      "expected_thing": "pan_pipes",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c7.png",
+      "master_size": [
+        905,
+        905
+      ],
+      "master_sha256": "96ee04549cc2e4e946036d2120c4721a3397b335eb30fc04db8e225bd8dc49f8",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_11_1_01_c7.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_11_1_01",
+      "cell": 7,
+      "style_version": "v1",
+      "prompt": "Pan pipes: A row of bamboo pipes of increasing length bound side by side, closed at the bottom, natural pale yellow-brown bamboo, resting on the ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0151,
+      "cut": {
+        "flags": [],
+        "notes": [
+          "the picture is far from square"
+        ],
+        "picture_box": [
+          1596,
+          1024,
+          1978,
+          1804
+        ],
+        "picture_shape": 0.49,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Pan pipes",
+        "shows": "pan_pipes",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "no"
+        ],
+        "mistakes_shown": [],
+        "comment": "The pipes increase progressively in length and are bound side by side with cord in a straight rather than curved row.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pan_flute"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "In the Romanian style the pipes are arranged in a curved row and glued solidly together."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/pan_pipes.webp"
+    },
+    "job_2026_11_24_11_1_01_c8": {
+      "thing_id": "toy_accordion",
+      "expected_thing": "toy_accordion",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c8.png",
+      "master_size": [
+        748,
+        748
+      ],
+      "master_sha256": "653a1c673b53d131b1e788f98eed49ae0b1fedf3d594b0dee3502dbd94ab8319",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_11_1_01_c8.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_11_1_01",
+      "cell": 8,
+      "style_version": "v1",
+      "prompt": "Toy accordion: A small toy accordion in bright red and yellow plastic, with two rows of white and black keys and a folded bellows, standing whole on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0151,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2184,
+          1111,
+          2829,
+          1712
+        ],
+        "picture_shape": 1.07,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Toy accordion",
+        "shows": "toy_accordion",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/toy_accordion.webp"
+    },
+    "job_2026_11_24_11_1_01_c9": {
+      "thing_id": "toy_organ",
+      "expected_thing": "toy_organ",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c9.png",
+      "master_size": [
+        740,
+        740
+      ],
+      "master_sha256": "9078ca118288673f91f79fa3e981e905337c575d3e54a596b65e28770720fe44",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_11_1_01_c9.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_11_1_01",
+      "cell": 9,
+      "style_version": "v1",
+      "prompt": "Toy organ: A small colourful plastic toy organ in India, a rectangular keyboard with about a dozen white and black keys, small speaker grille, red and yellow casing, standing alone on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0151,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          34,
+          2146,
+          672,
+          2560
+        ],
+        "picture_shape": 1.54,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Toy organ",
+        "shows": "toy_organ",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/toy_organ.webp"
+    },
+    "job_2026_11_24_11_1_01_c10": {
+      "thing_id": null,
+      "expected_thing": "toy_synthesizer",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c10.png",
+      "master_size": [
+        783,
+        783
+      ],
+      "master_sha256": "2eb658a57d6cc8e0839c29a76cb4b917e3e73ff9b031dff9a4e69a547514c9fc",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_11_1_01_c10.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_11_1_01",
+      "cell": 10,
+      "style_version": "v1",
+      "prompt": "Toy synthesizer: A small rectangular toy synthesizer in bright red and yellow plastic, with a row of white and black piano keys along the front and a few round colored buttons on top, resting on plain ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0151,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          760,
+          2121,
+          1435,
+          2560
+        ],
+        "picture_shape": 1.54,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Toy organ",
+        "shows": "toy_organ",
+        "matches_cell": false,
+        "problems": ""
+      },
+      "review": "waiting for the owner",
+      "review_note": "",
+      "history": []
+    },
+    "job_2026_11_24_11_1_01_c11": {
+      "thing_id": "harp",
+      "expected_thing": "harp",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c11.png",
+      "master_size": [
+        1045,
+        1045
+      ],
+      "master_sha256": "d1aa87f622cbf415b111548d617a4d4e8f3274d038632207af957fb6751e08c3",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_11_1_01_c11.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_11_1_01",
+      "cell": 11,
+      "style_version": "v1",
+      "prompt": "Harp: A wooden harp, triangular, with a tall pillar at its long end holding up many strings that run at a slant to its soundboard, plucked with the fingers, in natural wood colours, standing whole on the ground",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0151,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          1596,
+          1879,
+          2057,
+          2780
+        ],
+        "picture_shape": 0.51,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Harp",
+        "shows": "harp",
+        "matches_cell": true,
+        "problems": "Faint object cut off at left"
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "unclear",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The harp clearly shows a triangular wooden frame, supporting pillar, curved neck with tuning pegs, and strings slanting to the soundboard, but string materials and attachment knots cannot be confirmed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Harp",
+          "https://simple.wikipedia.org/wiki/Harp"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/harp.webp"
+    },
+    "job_2026_11_24_11_1_01_c12": {
+      "thing_id": "banjo",
+      "expected_thing": "banjo",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c12.png",
+      "master_size": [
+        1058,
+        1058
+      ],
+      "master_sha256": "a24c4077284cfb2bf3bf90182c507632d5b8a87677d8bc6c0ca382cd41259577",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_11_1_01_c12.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_11_1_01",
+      "cell": 12,
+      "style_version": "v1",
+      "prompt": "Banjo: A modern banjo: a round body with a thin pale circular membrane stretched over a frame, a long wooden neck with strings, plucked with the fingers",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0151,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          2307,
+          1824,
+          2782,
+          2736
+        ],
+        "picture_shape": 0.52,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Banjo",
+        "shows": "banjo",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The banjo clearly shows a round membrane stretched over a rim, a wooden neck, and strings.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Banjo",
+          "https://simple.wikipedia.org/wiki/Banjo"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/banjo.webp"
+    },
+    "job_2026_11_24_11_2_01_c1": {
+      "thing_id": "ukulele",
+      "expected_thing": "ukulele",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_2_01_c1.png",
+      "master_size": [
+        985,
+        985
+      ],
+      "master_sha256": "878a9a248dd7dbed4e029f195c50f0528074f66ef933a2c7803a879f29636825",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_11_2_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_11_2_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Ukulele: A small wooden ukulele with a figure-eight guitar-shaped body, a round sound hole, a long neck with frets, and four nylon strings running from the bridge up the neck to the tuning pegs on the head",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0251,
+      "cut": {
+        "flags": [],
+        "notes": [
+          "the picture is far from square"
+        ],
+        "picture_box": [
+          333,
+          43,
+          629,
+          892
+        ],
+        "picture_shape": 0.35,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Ukulele",
+        "shows": "ukulele",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "no",
+          "yes",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The instrument has a wooden figure-eight body and four strings, but fewer than 16 visible frets, and its absolute size cannot be judged without a scale reference.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ukulele",
+          "https://simple.wikipedia.org/wiki/Ukulele"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "A ukulele has 16 to 22 frets, depending on its size."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/ukulele.webp"
+    },
+    "job_2026_11_24_11_2_01_c2": {
+      "thing_id": "lute",
+      "expected_thing": "lute",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_2_01_c2.png",
+      "master_size": [
+        985,
+        985
+      ],
+      "master_sha256": "1e8c6a9c6003012c33dad367a1bf1f494bbaa154f71c24250afc9cf3127afd5c",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_11_2_01_c2.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_11_2_01",
+      "cell": 2,
+      "style_version": "v1",
+      "prompt": "Lute: A modern lute: a deep round bowl-shaped back, a thin flat teardrop-shaped wooden soundboard with a carved round rose hole in the centre, and a neck with pegs and frets, strung with strings, in natural wood brown",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0251,
+      "cut": {
+        "flags": [],
+        "notes": [
+          "the picture is far from square"
+        ],
+        "picture_box": [
+          1241,
+          51,
+          1574,
+          900
+        ],
+        "picture_shape": 0.39,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Lute",
+        "shows": "lute",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The image clearly shows a lute’s rounded ribbed body, flat teardrop-shaped soundboard, carved rose, and tuning pegs, but the neck materials and bridge holes cannot be confirmed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lute",
+          "https://simple.wikipedia.org/wiki/Lute"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/lute.webp"
+    },
+    "job_2026_11_24_11_2_01_c3": {
+      "thing_id": null,
+      "expected_thing": "ukulele",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_2_01_c3.png",
+      "master_size": [
+        991,
+        991
+      ],
+      "master_sha256": "b5d2717d585583af97510d9a3f0275e1fe01e53b3b95a274b73d2e7af655a0c4",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_11_2_01_c3.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_11_2_01",
+      "cell": 3,
+      "style_version": "v1",
+      "prompt": "Ukulele: A small wooden ukulele with a figure-eight guitar-shaped body, a round sound hole, a long neck with frets, and four nylon strings running from the bridge up the neck to the tuning pegs on the head; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0251,
+      "cut": {
+        "flags": [],
+        "notes": [
+          "the picture is far from square"
+        ],
+        "picture_box": [
+          332,
+          1002,
+          629,
+          1856
+        ],
+        "picture_shape": 0.35,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Ukulele",
+        "shows": "ukulele",
+        "matches_cell": true,
+        "problems": "Hard to recognise (shown from the back)"
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_11_24_11_2_01_c1 better",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "unclear",
+          "unclear",
+          "yes",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The rear view clearly shows a wooden, figure-eight body, but the strings, frets, and absolute size cannot be judged.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ukulele",
+          "https://simple.wikipedia.org/wiki/Ukulele"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24"
+    },
+    "job_2026_11_24_11_2_01_c4": {
+      "thing_id": null,
+      "expected_thing": "lute",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_2_01_c4.png",
+      "master_size": [
+        980,
+        980
+      ],
+      "master_sha256": "f4ae581e2eea9365907462bdd3402a008122776bac82376624229a6a8e4df8bd",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_11_2_01_c4.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_11_2_01",
+      "cell": 4,
+      "style_version": "v1",
+      "prompt": "Lute: A modern lute: a deep round bowl-shaped back, a thin flat teardrop-shaped wooden soundboard with a carved round rose hole in the centre, and a neck with pegs and frets, strung with strings, in natural wood brown; a second view of it",
+      "look_closely": "a second try; the better of the two is kept",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0251,
+      "cut": {
+        "flags": [],
+        "notes": [
+          "the picture is far from square"
+        ],
+        "picture_box": [
+          1294,
+          1013,
+          1590,
+          1858
+        ],
+        "picture_shape": 0.35,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Lute",
+        "shows": "lute",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "set aside",
+      "review_note": "a second try; the check rated job_2026_11_24_11_2_01_c2 better",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "unclear",
+          "unclear"
+        ],
+        "features": [
+          "yes",
+          "yes",
+          "unclear",
+          "unclear",
+          "unclear",
+          "unclear",
+          "unclear",
+          "yes",
+          "unclear",
+          "unclear",
+          "unclear"
+        ],
+        "mistakes_shown": [],
+        "comment": "The rounded, ribbed back and neck are clearly visible, but this view does not reveal the soundboard, rose, or string attachments.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lute",
+          "https://simple.wikipedia.org/wiki/Lute"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "cannot be seen: The soundboard is a teardrop-shaped thin flat plate of wood.",
+          "cannot be seen: The sound board has a carved hole in the center called the rose."
         ],
         "sources_disagree": "",
         "runs": [

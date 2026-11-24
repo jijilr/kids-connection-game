@@ -1,0 +1,32 @@
+{
+  "name": "Toy accordion",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "basis": "judged, not sourced",
+      "why": "A toy accordion is a manufactured plaything, so it is something people make."
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "basis": "judged, not sourced",
+      "why": "A toy accordion is a plaything for children, so it belongs in the Toys category."
+    },
+    "how_we_play_with_it": {
+      "value": "music",
+      "basis": "judged, not sourced",
+      "why": "An accordion is a musical instrument, so a toy accordion is mostly played by making music with it."
+    },
+    "how_it_makes_sound": {
+      "value": "press_keys",
+      "basis": "judged, not sourced",
+      "why": "An accordion is played by pressing its keys and buttons while squeezing the bellows, so a toy accordion makes sound by pressing keys."
+    }
+  },
+  "weak_spots": [],
+  "pages": [],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

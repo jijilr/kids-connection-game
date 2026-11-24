@@ -1,0 +1,105 @@
+{
+  "name": "Banjo",
+  "group": "Things people make > Toys > Make music with it > Pluck or strum strings",
+  "features": [
+    {
+      "claim": "A thin membrane is stretched over a frame or cavity to make its resonator.",
+      "quote": "The banjo is a stringed musical instrument with a thin membrane stretched over a frame or cavity to form a resonator.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The membrane is usually round.",
+      "quote": "The membrane is typically circular, and in modern forms is usually made of mylar (BOPET), whereas earlier examples of banjos had membranes made of goat skin.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has a neck made of wood.",
+      "quote": "Their African-style instruments were crafted from split gourds with animal skins stretched across them. Strings, from gut or vegetable fibers, were attached to a wooden neck.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has strings.",
+      "quote": "Strings, from gut or vegetable fibers, were attached to a wooden neck.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "It is a stringed musical instrument.",
+        "quote": "The banjo is a stringed musical instrument with a thin membrane stretched over a frame or cavity to form a resonator.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "In modern forms the membrane is usually made of mylar.",
+        "quote": "The membrane is typically circular, and in modern forms is usually made of mylar (BOPET), whereas earlier examples of banjos had membranes made of goat skin.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It comes in four-string and five-string versions.",
+        "quote": "The modern banjo comes in a variety of forms, including four- and five-string versions.",
+        "source": "wikipedia_simple",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It is not certain where the name banjo came from.",
+        "quote": "The term banjo has several possible etymological origins.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It is not certain whether the name comes from a Kimbundu word or a Senegambian word.",
+        "quote": "The name banjo may have come from a Kimbundu word: mbanza, but it could have also come from a Senegambian word for the bamboo stick used for the banjo's neck.",
+        "source": "wikipedia_simple",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Banjo",
+      "title": "Banjo",
+      "revision": 1385950857,
+      "revision_time": "2026-11-16T02:35:13Z",
+      "fetched_on": "2026-11-24",
+      "chars": 43278,
+      "sha256": "876e965f9d8661cc93753a14dd0b29d0f0a5d6be46ca5a0bce3acf1dce062404"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Banjo",
+      "title": "Banjo",
+      "revision": 10802536,
+      "revision_time": "2026-04-01T00:39:06Z",
+      "fetched_on": "2026-11-24",
+      "chars": 688,
+      "sha256": "af677c3a9eac00976c8b1c35e30a770537340c2ea186247f0fd29c869eabe760"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "A thin membrane is stretched over a frame or cavity to make its resonator.",
+    "It has a neck made of wood."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "Round drum-like body with a stretched membrane, unlike the wooden bodies here",
+    "covering": []
+  }
+}

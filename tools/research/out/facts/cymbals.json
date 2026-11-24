@@ -1,0 +1,52 @@
+{
+  "name": "Cymbals",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "The cymbals ( ) are common percussion instruments.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "basis": "judged, not sourced",
+      "why": "Cymbals are percussion instruments played to make music, so a parent would class them with toys rather than vehicles, household items, tools, or buildings."
+    },
+    "how_we_play_with_it": {
+      "value": "music",
+      "basis": "judged, not sourced",
+      "why": "The sources say cymbals are percussion instruments that are banged together or hit with a beater to make sounds."
+    },
+    "how_it_makes_sound": {
+      "value": "hit_or_strike",
+      "basis": "judged, not sourced",
+      "why": "Cymbals are played by banging or hitting them together or striking them with a beater or stick."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cymbal",
+      "title": "Cymbal",
+      "asked_for": "Cymbals",
+      "revision": 1384313559,
+      "fetched_on": "2026-11-24",
+      "sha256": "ce80491c8ef74451b2a38782b4f70f503f39ac7a190ffddc64be7932cc12666c"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cymbal",
+      "title": "Cymbal",
+      "asked_for": "Cymbals",
+      "revision": 8997125,
+      "fetched_on": "2026-11-24",
+      "sha256": "888b28978fd423ec58b1fd8a008b98bddd1342e9c35fc2fbb3cd3a2942a12d9d"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

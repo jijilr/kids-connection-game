@@ -8,6 +8,7 @@ import '../providers/engine_provider.dart';
 import '../widgets/tile_card.dart';
 
 const _ink = Color(0xFF2D3436);
+const _amber = Color(0xFFFFC107);
 const _branchColors = [
   Color(0xFF6C5CE7),
   Color(0xFF138A7C),
@@ -24,12 +25,58 @@ const _branchColors = [
 /// and its ring is whole when every find was clean, partial otherwise. A small arrow
 /// marks the lines the app will follow next. Nothing he has not met is shown: the web
 /// only grows.
-class WebScreen extends StatelessWidget {
-  const WebScreen({super.key});
+///
+/// "Your web grew": the knots he has not been shown before light up one by one when the
+/// web opens. Faint rings count the steps from the middle, and one line for the grown-up
+/// gives the owner's two measures: breadth (how many ends the web has) and depth (how
+/// many steps to an end, on average and at the deepest).
+class WebScreen extends StatefulWidget {
+  const WebScreen({super.key, this.thenNext = false});
+
+  /// Opened by the game itself between two sets: one big button leads on.
+  final bool thenNext;
+
+  @override
+  State<WebScreen> createState() => _WebScreenState();
+}
+
+class _WebScreenState extends State<WebScreen> with SingleTickerProviderStateMixin {
+  late final AnimationController _grow;
+  late final List<String> _fresh; // the new knots, in the order they light up
+
+  @override
+  void initState() {
+    super.initState();
+    final g = context.read<EngineProvider>();
+    _fresh = g.newKnots;
+    _grow = AnimationController(
+        vsync: this, duration: Duration(milliseconds: 600 + 450 * min(_fresh.length, 14)));
+    if (_fresh.isNotEmpty) _grow.forward();
+    // he is being shown them now; the lighting up goes on from the list taken above
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) g.markWebSeen();
+    });
+  }
+
+  @override
+  void dispose() {
+    _grow.dispose();
+    super.dispose();
+  }
+
+  /// How far a knot has come in: 0 not yet, 1 there. A new knot springs in at its turn.
+  double _in(String id) {
+    final i = _fresh.indexOf(id);
+    if (i < 0 || _fresh.isEmpty) return 1;
+    final n = _fresh.length;
+    final from = i / (n + 1), to = min(1.0, (i + 2) / (n + 1));
+    return Interval(from, to, curve: Curves.elasticOut).transform(_grow.value);
+  }
 
   @override
   Widget build(BuildContext context) {
     final nodes = context.watch<EngineProvider>().web;
+    final measure = measureWeb(nodes);
     return Scaffold(
       backgroundColor: const Color(0xFFFFF9E6),
       appBar: AppBar(
@@ -50,21 +97,42 @@ class WebScreen extends StatelessWidget {
               final layout = WebLayout(nodes, max(700.0, min(box.maxWidth, box.maxHeight)));
               return Column(
                 children: [
+                  if (_fresh.isNotEmpty) _grew(),
                   Expanded(
                     child: _WholeAtFirst(
                       side: layout.side,
                       child: SizedBox(
                         width: layout.side,
                         height: layout.side,
-                        child: Stack(
-                          children: [
-                            Positioned.fill(child: CustomPaint(painter: _Threads(layout))),
-                            for (final n in nodes) _node(n, layout),
-                          ],
+                        child: AnimatedBuilder(
+                          animation: _grow,
+                          builder: (context, _) => Stack(
+                            children: [
+                              Positioned.fill(child: CustomPaint(painter: _Threads(layout, _in, _grow.value))),
+                              for (final n in nodes) _node(n, layout),
+                            ],
+                          ),
                         ),
                       ),
                     ),
                   ),
+                  if (widget.thenNext)
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 8),
+                      child: ElevatedButton.icon(
+                        key: const ValueKey('web-next'),
+                        onPressed: () => Navigator.of(context).pop(),
+                        icon: const Icon(Icons.arrow_forward_rounded),
+                        label: const Text('Next'),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: _ink,
+                          foregroundColor: Colors.white,
+                          padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 14),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+                        ),
+                      ),
+                    ),
+                  _measures(measure),
                   _legend(),
                 ],
               );
@@ -72,64 +140,130 @@ class WebScreen extends StatelessWidget {
     );
   }
 
+  /// "Your web grew", with how many new knots.
+  Widget _grew() {
+    return Container(
+      key: const ValueKey('web-grew'),
+      width: double.infinity,
+      color: _amber.withValues(alpha: 0.28),
+      padding: const EdgeInsets.symmetric(vertical: 8),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Icon(Icons.auto_awesome_rounded, size: 20, color: Color(0xFFB4791A)),
+          const SizedBox(width: 8),
+          Text('Your web grew: ${_fresh.length} new',
+              style: GoogleFonts.quicksand(fontWeight: FontWeight.w800, fontSize: 17, color: _ink)),
+        ],
+      ),
+    );
+  }
+
+  /// The owner's two measures, for the grown-up.
+  Widget _measures(WebMeasure m) {
+    final steps = m.averageDepth.toStringAsFixed(1);
+    return Container(
+      key: const ValueKey('web-measure'),
+      width: double.infinity,
+      color: Colors.white,
+      padding: const EdgeInsets.fromLTRB(14, 8, 14, 2),
+      child: Column(
+        children: [
+          Text.rich(
+            TextSpan(style: GoogleFonts.inter(fontSize: 13.5, color: _ink), children: [
+              const TextSpan(text: 'Breadth: ', style: TextStyle(fontWeight: FontWeight.w800)),
+              TextSpan(text: '${m.ends} ${m.ends == 1 ? 'end' : 'ends'}'),
+              const TextSpan(text: '     Depth: ', style: TextStyle(fontWeight: FontWeight.w800)),
+              TextSpan(text: '$steps steps on average, deepest ${m.deepest}'),
+            ]),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: 2),
+          Text(
+            'A step is one of this game\'s own questions. The numbers show how his web grows, not how much he knows.',
+            textAlign: TextAlign.center,
+            style: GoogleFonts.inter(fontSize: 10.5, color: Colors.grey.shade600),
+          ),
+        ],
+      ),
+    );
+  }
+
   Widget _node(WebNode n, WebLayout layout) {
     final at = layout.at[n.id]!;
     final size = layout.sizeOf(n);
     final color = layout.colorOf(n);
+    final t = _in(n.id);
+    final lighting = _fresh.contains(n.id) && _grow.isAnimating && t > 0 && t < 1.0;
     return Positioned(
       key: ValueKey('web-${n.id}'),
       left: at.dx - 60,
       top: at.dy - size / 2,
       width: 120,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          SizedBox(
-            width: size,
-            height: size,
-            child: Stack(
-              clipBehavior: Clip.none,
-              children: [
-                // the ring: whole when every find was clean, a part of it otherwise
-                Positioned.fill(
-                  child: CustomPaint(painter: _Ring(color, n.found == 0 ? 0 : n.clean / n.found)),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(5),
-                  child: ClipOval(
-                    child: Container(
-                      color: Colors.white,
-                      child: n.picture == null
-                          ? Center(
-                              child: Text(n.isStart ? '★' : '•',
-                                  style: TextStyle(fontSize: size / 2.6, color: color)))
-                          : TilePicture(media: n.picture!),
+      child: Opacity(
+        opacity: t.clamp(0.0, 1.0),
+        child: Transform.scale(
+          scale: t,
+          alignment: Alignment.topCenter,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              SizedBox(
+                width: size,
+                height: size,
+                child: Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    if (lighting)
+                      Positioned.fill(
+                        child: Container(
+                          decoration: BoxDecoration(shape: BoxShape.circle, boxShadow: [
+                            BoxShadow(color: _amber.withValues(alpha: 0.8), blurRadius: 18, spreadRadius: 6),
+                          ]),
+                        ),
+                      ),
+                    // the ring: whole when every find was clean, a part of it otherwise
+                    Positioned.fill(
+                      child: CustomPaint(painter: _Ring(color, n.found == 0 ? 0 : n.clean / n.found)),
                     ),
-                  ),
-                ),
-                if (n.line)
-                  Positioned(
-                    right: -4,
-                    top: -4,
-                    child: Container(
-                      padding: const EdgeInsets.all(3),
-                      decoration: const BoxDecoration(color: Color(0xFFFFC107), shape: BoxShape.circle),
-                      child: const Icon(Icons.arrow_forward_rounded, size: 13, color: _ink),
+                    Padding(
+                      padding: const EdgeInsets.all(5),
+                      child: ClipOval(
+                        child: Container(
+                          color: Colors.white,
+                          child: n.picture == null
+                              ? Center(
+                                  child: Text(n.isStart ? '★' : '•',
+                                      style: TextStyle(fontSize: size / 2.6, color: color)))
+                              : TilePicture(media: n.picture!),
+                        ),
+                      ),
                     ),
-                  ),
-              ],
-            ),
+                    if (n.line)
+                      Positioned(
+                        right: -4,
+                        top: -4,
+                        child: Container(
+                          padding: const EdgeInsets.all(3),
+                          decoration: const BoxDecoration(color: _amber, shape: BoxShape.circle),
+                          child: const Icon(Icons.arrow_forward_rounded, size: 13, color: _ink),
+                        ),
+                      ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 2),
+              Text(n.label,
+                  textAlign: TextAlign.center,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: GoogleFonts.inter(fontSize: 11, height: 1.15, fontWeight: FontWeight.w700, color: _ink)),
+              if (n.found > 0)
+                Text('found ${n.found}, clean ${n.clean}',
+                    style: GoogleFonts.inter(fontSize: 9.5, color: Colors.grey.shade600)),
+            ],
           ),
-          const SizedBox(height: 2),
-          Text(n.label,
-              textAlign: TextAlign.center,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              style: GoogleFonts.inter(fontSize: 11, height: 1.15, fontWeight: FontWeight.w700, color: _ink)),
-          if (n.found > 0)
-            Text('found ${n.found}, clean ${n.clean}',
-                style: GoogleFonts.inter(fontSize: 9.5, color: Colors.grey.shade600)),
-        ],
+        ),
       ),
     );
   }
@@ -155,10 +289,11 @@ class WebScreen extends StatelessWidget {
           item(
               Container(
                 padding: const EdgeInsets.all(2),
-                decoration: const BoxDecoration(color: Color(0xFFFFC107), shape: BoxShape.circle),
+                decoration: const BoxDecoration(color: _amber, shape: BoxShape.circle),
                 child: const Icon(Icons.arrow_forward_rounded, size: 11, color: _ink),
               ),
               'the app follows this next'),
+          item(const Icon(Icons.radio_button_unchecked, size: 15, color: Colors.grey), 'faint rings: steps from the middle'),
           item(const Icon(Icons.pinch_rounded, size: 15, color: Colors.grey), 'pinch or scroll to zoom, drag to move'),
         ],
       ),
@@ -228,11 +363,11 @@ class WebLayout {
 
     int depthOf(String id) => 1 + (children[id] ?? const []).fold(0, (m, k) => max(m, depthOf(k.id)));
     final start = nodes.firstWhere((n) => n.isStart);
-    final rings = depthOf(start.id) - 1;
+    rings = depthOf(start.id) - 1;
     // room for the pictures: a ring is wide enough for its most crowded slice
     side = max(least, 2 * (rings * 150.0 + 90));
-    final ring = (side / 2 - 80) / max(1, rings);
-    final centre = Offset(side / 2, side / 2);
+    ring = (side / 2 - 80) / max(1, rings);
+    centre = Offset(side / 2, side / 2);
     at[start.id] = centre;
     branch[start.id] = 0;
 
@@ -260,6 +395,11 @@ class WebLayout {
 
   final List<WebNode> nodes;
   late final double side;
+
+  /// How many rings the web has, and how far apart they are: one ring for each step.
+  late final int rings;
+  late final double ring;
+  late final Offset centre;
   final at = <String, Offset>{};
   final branch = <String, int>{};
 
@@ -270,17 +410,40 @@ class WebLayout {
 }
 
 class _Threads extends CustomPainter {
-  _Threads(this.layout);
+  _Threads(this.layout, this.shown, this.tick);
   final WebLayout layout;
+  final double Function(String id) shown;
+  final double tick;
 
   @override
   void paint(Canvas canvas, Size size) {
+    // faint rings: one for each step from the middle, with its number
+    final faint = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1
+      ..color = Colors.black.withValues(alpha: 0.09);
+    for (int step = 1; step <= layout.rings; step++) {
+      final radius = layout.ring * step;
+      canvas.drawCircle(layout.centre, radius, faint);
+      final label = TextPainter(
+        text: TextSpan(
+            text: step == 1 ? '1 step' : '$step steps',
+            style: TextStyle(fontSize: 10.5, color: Colors.black.withValues(alpha: 0.38))),
+        textDirection: TextDirection.ltr,
+      )..layout();
+      // just inside the ring, a little past its lowest point, where few knots stand
+      final angle = pi / 2 + 0.16;
+      label.paint(canvas,
+          layout.centre + Offset(cos(angle), sin(angle)) * (radius - 4) - Offset(label.width, label.height));
+    }
     for (final n in layout.nodes) {
       final from = layout.at[n.parent], to = layout.at[n.id];
       if (from == null || to == null) continue;
+      final t = shown(n.id).clamp(0.0, 1.0);
+      if (t <= 0) continue;
       canvas.drawLine(
           from,
-          to,
+          Offset.lerp(from, to, t)!,
           Paint()
             ..color = layout.colorOf(n).withValues(alpha: 0.45)
             ..strokeWidth = 2 + min(n.found, 6) * 0.5
@@ -289,7 +452,7 @@ class _Threads extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(_Threads old) => old.layout != layout;
+  bool shouldRepaint(_Threads old) => old.layout != layout || old.tick != tick;
 }
 
 class _Ring extends CustomPainter {

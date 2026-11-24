@@ -1,0 +1,54 @@
+{
+  "name": "Harmonica",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A harmonica is small musical instrument that is played with the mouth by blowing into holes in its side.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "basis": "judged, not sourced",
+      "why": "A harmonica is a small, cheap musical instrument that people play for fun, so a parent would call it a toy-like thing to play with."
+    },
+    "how_we_play_with_it": {
+      "value": "music",
+      "quote": "A harmonica is small musical instrument that is played with the mouth by blowing into holes in its side.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "how_it_makes_sound": {
+      "value": "blow_into",
+      "quote": "A harmonica is small musical instrument that is played with the mouth by blowing into holes in its side.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Harmonica",
+      "title": "Harmonica",
+      "asked_for": "Harmonica",
+      "revision": 1384085968,
+      "fetched_on": "2026-11-24",
+      "sha256": "88beb29b9fbddabb0e915bc158d69fdeb1c6019949929374720058b0f61285f5"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Harmonica",
+      "title": "Harmonica",
+      "asked_for": "Harmonica",
+      "revision": 9706745,
+      "fetched_on": "2026-11-24",
+      "sha256": "39971994e2bdd6638a7dd5b945d42e5f1a72ca5dd5f439a5bfaf5df511245afc"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

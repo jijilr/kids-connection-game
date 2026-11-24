@@ -1,0 +1,32 @@
+{
+  "name": "Toy synthesizer",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "basis": "judged, not sourced",
+      "why": "A toy synthesizer is a manufactured toy instrument, so it is something people make."
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "basis": "judged, not sourced",
+      "why": "A toy synthesizer is a plaything for children, so it belongs in the Toys category."
+    },
+    "how_we_play_with_it": {
+      "value": "music",
+      "basis": "judged, not sourced",
+      "why": "A toy synthesizer is an instrument meant for making music."
+    },
+    "how_it_makes_sound": {
+      "value": "press_keys",
+      "basis": "judged, not sourced",
+      "why": "A synthesizer is played by pressing its keys to produce sound."
+    }
+  },
+  "weak_spots": [],
+  "pages": [],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

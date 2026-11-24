@@ -1,0 +1,127 @@
+{
+  "name": "Harmonica",
+  "group": "Things people make > Toys > Make music with it > Blow into it",
+  "features": [
+    {
+      "claim": "It is a small instrument played with the mouth by blowing into holes in its side.",
+      "quote": "A harmonica is small musical instrument that is played with the mouth by blowing into holes in its side.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "It has a mouthpiece that covers one edge along most of its length, with holes along it.",
+      "quote": "The harmonica is played by using the lips and tongue to direct air into or out of one (or more) holes along a mouthpiece (which covers one edge of the harmonica for most of its length).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The basic parts are the comb, the reed plates and the cover plates.",
+      "quote": "The basic parts of the harmonica are the comb, reed plates, and cover plates.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The comb looks like a hair comb, which may be where its name comes from.",
+      "quote": "The term \"comb\" may originate from the similarity between this part of a harmonica and a hair comb.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Each reed is a flat, long spring fixed at one end over a slot.",
+      "quote": "The harmonica reed is a flat, elongated spring typically made of brass, stainless steel, or bronze, which is secured at one end over a slot that serves as an airway.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The cover plates cover the reed plates and are usually made of metal.",
+      "quote": "Cover plates cover the reed plates and are usually made of metal, though wood and plastic have also been used.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The mouthpiece sits between the air chambers and the player's mouth.",
+      "quote": "The mouthpiece is placed between the air chambers of the instrument and the player's mouth.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Behind each hole is a chamber that holds at least one reed.",
+        "quote": "Behind each hole is a chamber containing at least one reed.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The comb is the main body and forms the air chambers for the reeds.",
+        "quote": "The comb is the main body of the instrument, which, when assembled with the reed plates, forms air chambers for the reeds.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The reed plate is a group of several reeds held in a single housing.",
+        "quote": "The reed plate is a grouping of several reeds in a single housing.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The reeds are usually made of brass.",
+        "quote": "The reeds are usually made of brass, but steel, aluminium, and plastic are occasionally used.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The most common kind has ten air passages and twenty reeds.",
+        "quote": "The most common type of harmonica is a diatonic Richter-tuned instrument with ten air passages and twenty reeds, often called a blues harp.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Players disagree about whether the material of the comb changes the tone.",
+        "quote": "Dispute exists among players about whether comb material affects the tone of a harmonica.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Harmonica",
+      "title": "Harmonica",
+      "revision": 1384085968,
+      "revision_time": "2026-11-06T14:17:03Z",
+      "fetched_on": "2026-11-24",
+      "chars": 35840,
+      "sha256": "b5812e5244ee643461e97fd29cfb5b202aec823641312047c1393813ba9c5fbe"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Harmonica",
+      "title": "Harmonica",
+      "revision": 9706745,
+      "revision_time": "2024-08-16T22:00:47Z",
+      "fetched_on": "2026-11-24",
+      "chars": 2302,
+      "sha256": "dbad997d762e57c2103694f40e174bdfa7261e582dece9a16e5984f05fe3701c"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "It is a small instrument played with the mouth by blowing into holes in its side.",
+    "It has a mouthpiece that covers one edge along most of its length, with holes along it."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "Small mouth-blown block with a long mouthpiece edge; metal cover plates set it apart.",
+    "covering": []
+  }
+}

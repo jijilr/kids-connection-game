@@ -1,0 +1,42 @@
+{
+  "name": "Trumpet",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "The trumpet is a brass instrument.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "uncertain: two judgements disagree: 'Tools' and 'Toys'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Trumpet",
+      "title": "Trumpet",
+      "asked_for": "Trumpet",
+      "revision": 1382388981,
+      "fetched_on": "2026-11-24",
+      "sha256": "43e0eb4814f8238e5980bda5c8687e46de9d51702907ef13df7f35226235758f"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Trumpet",
+      "title": "Trumpet",
+      "asked_for": "Trumpet",
+      "revision": 10505597,
+      "fetched_on": "2026-11-24",
+      "sha256": "b5d253aa2f0e28d765eabaa9d91a1a3eeafbf973dbc91baa56e943fe87f261c7"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

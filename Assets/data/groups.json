@@ -216,7 +216,10 @@
           "audio": "Assets/audio/groups/kind_of_animal__insect__clue3.mp3"
         }
       ],
-      "explanation": null
+      "explanation": {
+        "text": "These little creatures all have six legs and a hard shell outside. They have no bones inside. A ladybug has bright red wings with black spots that warn birds to stay away.",
+        "audio": null
+      }
     },
     "kind_of_animal=reptile": {
       "clues": [
@@ -1118,16 +1121,16 @@
     "how_we_play_with_it=music": {
       "clues": [
         {
-          "text": "Think about things you can hear and enjoy with your ears.",
-          "audio": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3"
+          "text": "Think about something you can hear and tap your feet to.",
+          "audio": null
         },
         {
-          "text": "You can tap, blow or pluck it to make a sound.",
-          "audio": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3"
+          "text": "You use your hands or your breath to make it sound.",
+          "audio": null
         },
         {
-          "text": "It makes a sound you can sing or dance along to.",
-          "audio": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3"
+          "text": "It makes music, not a picture or a story.",
+          "audio": null
         }
       ],
       "explanation": null
@@ -1251,6 +1254,63 @@
         "text": "These animals eat plants and also eat other animals. Both kinds of food go in their tummy. A raccoon eats many things, like fruit, nuts, mice, and insects.",
         "audio": "Assets/audio/groups/what_it_eats__eats_both__explanation.mp3"
       }
+    },
+    "how_it_makes_sound=hit_or_strike": {
+      "clues": [
+        {
+          "text": "Think about a toy you must touch to start its sound.",
+          "audio": null
+        },
+        {
+          "text": "You do not blow air into it, and you do not press keys.",
+          "audio": null
+        },
+        {
+          "text": "You tap it, shake it, or bang it, and then it rings out loud.",
+          "audio": null
+        }
+      ],
+      "explanation": {
+        "text": "You make these sounds by hitting or shaking them. Your hand or a stick starts the sound. A tambourine is like a little drum, and it has tiny metal pairs around its edge that jingle.",
+        "audio": null
+      }
+    },
+    "how_it_makes_sound=blow_into": {
+      "clues": [
+        {
+          "text": "Think about how the air goes in to make the music.",
+          "audio": null
+        },
+        {
+          "text": "You use your mouth and your breath to play it.",
+          "audio": null
+        },
+        {
+          "text": "You blow into it, and the air makes the sound.",
+          "audio": null
+        }
+      ],
+      "explanation": {
+        "text": "You play all of these by blowing air into them with your mouth. Your breath makes the music come out. A harmonica is small and you play it by blowing into little holes on its side.",
+        "audio": null
+      }
+    },
+    "how_it_makes_sound=pluck_strings": {
+      "clues": [
+        {
+          "text": "Think about toys that have strings on them.",
+          "audio": null
+        },
+        {
+          "text": "You use your fingers to make the strings move.",
+          "audio": null
+        },
+        {
+          "text": "You pull the strings with your fingers to make music.",
+          "audio": null
+        }
+      ],
+      "explanation": null
     }
   }
 }

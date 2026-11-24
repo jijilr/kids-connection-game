@@ -16,12 +16,14 @@ class Progress {
     Map<String, BoardProgress>? orders,
     Map<String, GroupProgress>? groups,
     List<String>? lines,
+    Set<String>? webSeen,
     this.lastBoard,
     this.updated,
   })  : boards = boards ?? {},
         orders = orders ?? {},
         groups = groups ?? {},
-        lines = lines ?? [];
+        lines = lines ?? [],
+        webSeen = webSeen ?? {};
 
   /// Board id -> what happened there. A board's id is the path that leads to it:
   /// `seed`, `animal`, `animal/dinosaur`. The job names circles the same way.
@@ -44,6 +46,10 @@ class Progress {
   /// first of these that is ready; the helper on the owner's PC prepares the ones that
   /// are not, a few ahead of him (the owner's design of 24 Nov 2026).
   final List<String> lines;
+
+  /// The knots of his web that he has been shown already. What is not in here is new,
+  /// and lights up the next time the web opens ("your web grew").
+  final Set<String> webSeen;
 
   /// 3 since 24 Nov 2026: the lines to follow. (2 recorded the groups found.)
   static const version = 3;
@@ -117,6 +123,7 @@ class Progress {
         'orders': {for (final e in orders.entries) e.key: e.value.toJson()},
         'groups': {for (final e in groups.entries) e.key: e.value.toJson()},
         'lines': lines,
+        'web_seen': webSeen.toList()..sort(),
       };
 
   /// The text of the file a grown-up saves for the job.
@@ -152,6 +159,10 @@ class Progress {
         for (final id in (json['lines'] is List ? json['lines'] as List : const []))
           if (id is String) id
       ],
+      webSeen: {
+        for (final id in (json['web_seen'] is List ? json['web_seen'] as List : const []))
+          if (id is String) id
+      },
       lastBoard: json['last_board'] as String?,
       updated: DateTime.tryParse('${json['updated'] ?? ''}'),
     );

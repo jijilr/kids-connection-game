@@ -1,0 +1,42 @@
+{
+  "name": "Violin",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "The violin is a string instrument which has four strings and is played with a bow.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "uncertain: two judgements disagree: 'Tools' and 'Toys'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Violin",
+      "title": "Violin",
+      "asked_for": "Violin",
+      "revision": 1384524170,
+      "fetched_on": "2026-11-24",
+      "sha256": "38d0f9b3165f5522f08ae78aa4e2c71511150d8552caab9df5c21348dc282a25"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Violin",
+      "title": "Violin",
+      "asked_for": "Violin",
+      "revision": 11044678,
+      "fetched_on": "2026-11-24",
+      "sha256": "0c7d0b88e581d9604249f94aa1d8fa15777e8092bc1511b35f55f08f5f94546b"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "about": "The master record of every thing: what is known about it, where that came from, its picture and its voice clip, and (worked out, never set by hand) its circles and boards. Read and written only through tools/catalogue/catalogue.py. Assets/data/things.json is the game's copy of it, and tools/content/review_queue.json is its list of what is held.",
-  "dictionary_version": 12,
+  "dictionary_version": 13,
   "statuses": {
     "in the game": "The game shows it. It is in the game's copy.",
     "waiting for the owner": "A check had a doubt about it. The owner decides.",
@@ -20,7 +20,7 @@
         "tree_academic": true
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -116,7 +116,7 @@
         "tree_academic": false
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "notes": {
         "tree_academic": "A banana plant has no woody trunk. Its stem is made of tightly rolled leaves, so scientists call it a giant herb."
@@ -212,7 +212,7 @@
         "tree_academic": "depends"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "notes": {
         "tree_academic": "A palm has a tall woody trunk but does not grow wood in rings as other trees do, so botanists differ on whether to call it a true tree."
@@ -311,7 +311,7 @@
         "kind_of_plant": "flower"
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -405,7 +405,7 @@
         "kind_of_plant": "flower"
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -499,7 +499,7 @@
         "kind_of_plant": "flower"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -584,7 +584,7 @@
         "kind_of_plant": "flower"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -647,7 +647,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 0.75,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -740,7 +740,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -835,7 +835,7 @@
         "tree_academic": true
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -933,7 +933,7 @@
         "kind_of_nature": "sky"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1020,7 +1020,7 @@
         "kind_of_nature": "sky"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1110,7 +1110,7 @@
         ]
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1192,7 +1192,7 @@
         "what_happens_when_wet": "stays_hard"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1278,7 +1278,7 @@
         "kind_of_nature": "sky"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1367,7 +1367,7 @@
         "what_happens_when_wet": "washes_away"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1453,7 +1453,7 @@
         "shape_of_the_land": "high"
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1543,7 +1543,7 @@
         "kind_of_nature": "sky"
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1628,7 +1628,7 @@
         "where_it_travels": "road"
       },
       "familiar": 0.98,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1722,7 +1722,7 @@
         "kind_of_house_thing": "furniture"
       },
       "familiar": 0.97,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1820,7 +1820,7 @@
         "what_people_do_there": "live"
       },
       "familiar": 0.97,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1914,7 +1914,7 @@
         "how_we_play_with_it": "throw"
       },
       "familiar": 0.96,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2003,7 +2003,7 @@
         "where_it_travels": "road"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2101,7 +2101,7 @@
         "kind_of_house_thing": "eating"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2190,7 +2190,7 @@
         "kind_of_house_thing": "eating"
       },
       "familiar": 0.94,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2284,7 +2284,7 @@
         "where_it_travels": "road"
       },
       "familiar": 0.94,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2378,7 +2378,7 @@
         "how_we_play_with_it": "pretend"
       },
       "familiar": 0.93,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2475,7 +2475,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2561,7 +2561,7 @@
         "where_it_travels": "rails"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2655,7 +2655,7 @@
         "how_we_play_with_it": "pretend"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2754,7 +2754,7 @@
         "pet_farm_or_wild": "pet"
       },
       "familiar": 0.99,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2858,7 +2858,7 @@
         "pet_farm_or_wild": "pet"
       },
       "familiar": 0.98,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2962,7 +2962,7 @@
         "pet_farm_or_wild": "farm"
       },
       "familiar": 0.98,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3067,7 +3067,7 @@
         "what_it_eats": "eats_plants"
       },
       "familiar": 0.97,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3180,7 +3180,7 @@
         "what_it_eats": "eats_meat"
       },
       "familiar": 0.96,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3293,7 +3293,7 @@
         "what_it_eats": "eats_meat"
       },
       "familiar": 0.96,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3406,7 +3406,7 @@
         "what_it_eats": "eats_both"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3517,7 +3517,7 @@
         "pet_farm_or_wild": "farm"
       },
       "familiar": 0.94,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3620,7 +3620,7 @@
         "pet_farm_or_wild": "farm"
       },
       "familiar": 0.93,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3715,7 +3715,7 @@
         "pet_farm_or_wild": "pet"
       },
       "familiar": 0.92,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3820,7 +3820,7 @@
         "what_it_eats": "eats_both"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3933,7 +3933,7 @@
         "what_it_eats": "eats_plants"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4045,7 +4045,7 @@
         "pet_farm_or_wild_of_bird": "wild_land"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4152,7 +4152,7 @@
         ]
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "notes": {
@@ -4252,7 +4252,7 @@
         "pet_farm_or_wild_of_bird": "pet"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4356,7 +4356,7 @@
         "pet_farm_or_wild_of_bird": "farm"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4451,7 +4451,7 @@
         "pet_farm_or_wild_of_bird": "farm"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4555,7 +4555,7 @@
         "pet_farm_or_wild_of_bird": "farm"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4659,7 +4659,7 @@
         "pet_farm_or_wild_of_bird": "wild_land"
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4754,7 +4754,7 @@
         "pet_farm_or_wild_of_bird": "wild_land"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4858,7 +4858,7 @@
         "pet_farm_or_wild_of_bird": "wild_land"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4962,7 +4962,7 @@
         "pet_farm_or_wild_of_bird": "wild_water"
       },
       "familiar": 0.75,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5065,7 +5065,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5159,7 +5159,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5244,7 +5244,7 @@
         "extinct": false
       },
       "familiar": 0.75,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5329,7 +5329,7 @@
         "extinct": false
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5423,7 +5423,7 @@
         "extinct": false
       },
       "familiar": 0.65,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5517,7 +5517,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5610,7 +5610,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5704,7 +5704,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5798,7 +5798,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5892,7 +5892,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5985,7 +5985,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6079,7 +6079,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6172,7 +6172,7 @@
         "extinct": false
       },
       "familiar": 0.75,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6266,7 +6266,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6351,7 +6351,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6445,7 +6445,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6538,7 +6538,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6632,7 +6632,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6726,7 +6726,7 @@
         "extinct": false
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6820,7 +6820,7 @@
         "extinct": false
       },
       "familiar": 0.6,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6914,7 +6914,7 @@
         "extinct": false
       },
       "familiar": 0.6,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -7008,7 +7008,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -7102,7 +7102,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -7191,7 +7191,7 @@
         "extinct": false
       },
       "familiar": 0.6,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -7286,7 +7286,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "shown_as": "T. rex",
       "picture": {
@@ -7385,7 +7385,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c2",
@@ -7484,7 +7484,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c5",
@@ -7582,7 +7582,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c3",
@@ -7680,7 +7680,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "notes": {
         "kind_of_dinosaur": "Scientists debate how much time Spinosaurus spent in water."
@@ -7783,7 +7783,7 @@
         "dinosaur_group": "long_necked"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c1",
@@ -7882,7 +7882,7 @@
         "dinosaur_group": "long_necked"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c2",
@@ -7971,7 +7971,7 @@
         "dinosaur_group": "long_necked"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c3",
@@ -8070,7 +8070,7 @@
         "dinosaur_group": "long_necked"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c4",
@@ -8170,7 +8170,7 @@
         "dinosaur_group": "long_necked"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c5",
@@ -8270,7 +8270,7 @@
         "dinosaur_group": "horned"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c6",
@@ -8369,7 +8369,7 @@
         "dinosaur_group": "armoured"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c8",
@@ -8469,7 +8469,7 @@
         "dinosaur_group": "armoured"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c7",
@@ -8568,7 +8568,7 @@
         "dinosaur_group": "bone_headed"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c6",
@@ -8668,7 +8668,7 @@
         "dinosaur_group": "bone_headed"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c9",
@@ -8767,7 +8767,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c1",
@@ -8846,7 +8846,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c3",
@@ -8935,7 +8935,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c5",
@@ -9023,7 +9023,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c2",
@@ -9111,7 +9111,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c4",
@@ -9200,7 +9200,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c5",
@@ -9288,7 +9288,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "shown_as": "Pterodactyl",
       "picture": {
@@ -9377,7 +9377,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c8",
@@ -9465,7 +9465,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c9",
@@ -9552,7 +9552,7 @@
         "extinct": false
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "animals_6_01_c1",
@@ -9645,7 +9645,7 @@
         "extinct": false
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "animals_5_01_c9",
@@ -9729,7 +9729,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "notes": {
         "general": "Its picture is drawn like a giant boa or anaconda, its closest living relatives; what it really looked like is not known."
@@ -9813,7 +9813,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "notes": {
         "general": "Its length is estimated from fossil backbones, so it is uncertain. Its picture is drawn like a very large python, the living snake scientists model it on; what it really looked like is not known."
@@ -9887,7 +9887,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "plants_2_01_c5",
@@ -9980,7 +9980,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "size_test_plants_9_01_c7",
@@ -10073,7 +10073,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "plants_2_01_c6",
@@ -10166,7 +10166,7 @@
         "part_we_eat": "fruit"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "size_test_plants_9_01_c8",
@@ -10265,7 +10265,7 @@
         "part_we_eat": "fruit"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "size_test_plants_9_01_c9",
@@ -10359,7 +10359,7 @@
         "part_we_eat": "fruit"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "plants_2_01_c7",
@@ -10449,7 +10449,7 @@
         "part_we_eat": "fruit"
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "plants_2_01_c8",
@@ -10547,7 +10547,7 @@
         "how_we_play_with_it": "build"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10631,7 +10631,7 @@
         "how_we_play_with_it": "wheel"
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10720,7 +10720,7 @@
         "kind_of_house_thing": "furniture"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10818,7 +10818,7 @@
         "kind_of_house_thing": "furniture"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10916,7 +10916,7 @@
         "kind_of_house_thing": "eating"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11005,7 +11005,7 @@
         "kind_of_house_thing": "eating"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11102,7 +11102,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11190,7 +11190,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11278,7 +11278,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11363,7 +11363,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.75,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11448,7 +11448,7 @@
         "kind_of_nature": "water"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11536,7 +11536,7 @@
         "kind_of_nature": "water"
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11624,7 +11624,7 @@
         "kind_of_nature": "water"
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11713,7 +11713,7 @@
         "shape_of_the_land": "high"
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11804,7 +11804,7 @@
         "shape_of_the_land": "by_water"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11895,7 +11895,7 @@
         "what_happens_when_wet": "gets_mushy"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11981,7 +11981,7 @@
         "what_happens_when_wet": "gets_sticky"
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -12072,7 +12072,7 @@
         "what_happens_when_wet": "gets_mushy"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -12162,7 +12162,7 @@
         "kind_of_nature": "water"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -12251,7 +12251,7 @@
         "how_we_play_with_it": "fly"
       },
       "familiar": 0.97,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "toys_top_up",
       "picture": {
@@ -12349,7 +12349,7 @@
         "how_we_play_with_it": "fly"
       },
       "familiar": 0.96,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "drafted_in": "toys_top_up",
       "picture": {
@@ -12447,7 +12447,7 @@
         "shape_of_the_land": "flat"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked, approved by the owner",
       "drafted_in": "made_and_nature",
       "notes": {
@@ -12541,7 +12541,7 @@
         "shape_of_the_land": "high"
       },
       "familiar": 0.75,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked, approved by the owner",
       "drafted_in": "land_top_up",
       "notes": {
@@ -12635,7 +12635,7 @@
         "shape_of_the_land": "hollow"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "deepseek:drafted+checked, approved by the owner",
       "drafted_in": "land_top_up",
       "notes": {
@@ -12836,7 +12836,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c6",
@@ -12923,7 +12923,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c7",
@@ -13248,7 +13248,7 @@
         "what_people_do_there": "pray"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-03",
       "worked_out": {
@@ -13346,7 +13346,7 @@
         "what_people_do_there": "learn"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-02",
       "worked_out": {
@@ -13444,7 +13444,7 @@
         "what_people_do_there": "buy"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-03",
       "notes": {
@@ -13534,7 +13534,7 @@
         "what_people_do_there": "heal"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-01",
       "worked_out": {
@@ -13632,7 +13632,7 @@
         "what_people_do_there": "cross"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-03",
       "notes": {
@@ -13729,7 +13729,7 @@
         "what_people_do_there": "cross"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-03",
       "notes": {
@@ -13857,7 +13857,7 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -13964,7 +13964,7 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14070,7 +14070,7 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14176,7 +14176,7 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14282,7 +14282,7 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14471,7 +14471,7 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14577,7 +14577,7 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14818,7 +14818,7 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14925,7 +14925,7 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -15029,7 +15029,7 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -15136,7 +15136,7 @@
         "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-07",
       "sources": {
@@ -15243,7 +15243,7 @@
         "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -15533,7 +15533,7 @@
         "part_we_eat": "fruit"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "notes": {
@@ -15958,7 +15958,7 @@
         "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.6,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-08",
       "voice": {
@@ -16122,7 +16122,7 @@
         "kind_of_plant_academic": "grass_grain"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-09",
       "notes": {
@@ -16226,7 +16226,7 @@
         "where_it_travels": "road"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16317,7 +16317,7 @@
         "where_it_travels": "road"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16417,7 +16417,7 @@
         "where_it_travels": "rails"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16509,7 +16509,7 @@
         "where_it_travels": "rails"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16601,7 +16601,7 @@
         "where_it_travels": "rails"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16702,7 +16702,7 @@
         "where_it_travels": "rails"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16801,7 +16801,7 @@
         "where_it_travels": "water"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16902,7 +16902,7 @@
         "where_it_travels": "water"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17003,7 +17003,7 @@
         "where_it_travels": "water"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17104,7 +17104,7 @@
         "where_it_travels": "water"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17205,7 +17205,7 @@
         "where_it_travels": "water"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17306,7 +17306,7 @@
         "where_it_travels": "air"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17406,7 +17406,7 @@
         "where_it_travels": "air"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17507,7 +17507,7 @@
         "where_it_travels": "air"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17608,7 +17608,7 @@
         "where_it_travels": "air"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17709,7 +17709,7 @@
         "kind_of_house_thing": "furniture"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17809,7 +17809,7 @@
         "kind_of_house_thing": "furniture"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17910,7 +17910,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18009,7 +18009,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18110,7 +18110,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18211,7 +18211,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18312,7 +18312,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18403,7 +18403,7 @@
         "kind_of_house_thing": "electric"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18504,7 +18504,7 @@
         "kind_of_house_thing": "electric"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18604,7 +18604,7 @@
         "kind_of_house_thing": "electric"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18704,7 +18704,7 @@
         "kind_of_house_thing": "electric"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18804,7 +18804,7 @@
         "kind_of_house_thing": "electric"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18903,7 +18903,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-10",
       "notes": {
@@ -19000,7 +19000,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-10",
       "notes": {
@@ -19097,7 +19097,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-10",
       "notes": {
@@ -19383,7 +19383,7 @@
         "what_happens_when_wet": "stays_hard"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-02",
       "worked_out": {
@@ -19476,7 +19476,7 @@
         "what_happens_when_wet": "stays_hard"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-02",
       "worked_out": {
@@ -19569,7 +19569,7 @@
         "what_happens_when_wet": "stays_hard"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-02",
       "worked_out": {
@@ -19660,7 +19660,7 @@
         "what_happens_when_wet": "stays_hard"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-02",
       "worked_out": {
@@ -20594,7 +20594,7 @@
         "shape_of_the_land": "flat"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -20766,7 +20766,7 @@
         "shape_of_the_land": "flat"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -20858,7 +20858,7 @@
         "shape_of_the_land": "hollow"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -20952,7 +20952,7 @@
         "shape_of_the_land": "hollow"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21046,7 +21046,7 @@
         "shape_of_the_land": "hollow"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21140,7 +21140,7 @@
         "shape_of_the_land": "hollow"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21234,7 +21234,7 @@
         "shape_of_the_land": "high"
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21328,7 +21328,7 @@
         "pet_farm_or_wild": "pet"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21426,7 +21426,7 @@
         "pet_farm_or_wild": "pet"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21533,7 +21533,7 @@
         "pet_farm_or_wild": "farm"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21640,7 +21640,7 @@
         "pet_farm_or_wild": "farm"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21746,7 +21746,7 @@
         "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21853,7 +21853,7 @@
         "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21960,7 +21960,7 @@
         "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22067,7 +22067,7 @@
         "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22174,7 +22174,7 @@
         "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22281,7 +22281,7 @@
         "pet_farm_or_wild_of_bird": "pet"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22379,7 +22379,7 @@
         "pet_farm_or_wild_of_bird": "pet"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22574,7 +22574,7 @@
         "pet_farm_or_wild_of_bird": "wild_water"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22681,7 +22681,7 @@
         "pet_farm_or_wild_of_bird": "wild_water"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22788,7 +22788,7 @@
         "pet_farm_or_wild_of_bird": "wild_water"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22890,7 +22890,7 @@
         "what_people_do_there": "cross"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22988,7 +22988,7 @@
         "what_people_do_there": "cross"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -23082,7 +23082,7 @@
         "what_people_do_there": "pray"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -23180,7 +23180,7 @@
         "what_people_do_there": "pray"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -23281,7 +23281,7 @@
         "what_people_do_there": "pray"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -23454,7 +23454,7 @@
         "what_people_do_there": "buy"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -23553,7 +23553,7 @@
         "what_people_do_there": "buy"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -23654,7 +23654,7 @@
         "what_people_do_there": "buy"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -23754,7 +23754,7 @@
         "what_people_do_there": "buy"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -23855,7 +23855,7 @@
         "what_people_do_there": "heal"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -24401,7 +24401,7 @@
         "pet_farm_or_wild_of_bird": "farm"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-05",
       "notes": {
@@ -25198,7 +25198,7 @@
         "pet_farm_or_wild_of_bird": "pet"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "notes": {
@@ -25304,7 +25304,7 @@
         "what_people_do_there": "travel"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -25403,7 +25403,7 @@
         "what_people_do_there": "travel"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -25504,7 +25504,7 @@
         "what_people_do_there": "travel"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -25605,7 +25605,7 @@
         "what_people_do_there": "travel"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -25771,7 +25771,7 @@
         "how_we_play_with_it": "pretend"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -25850,7 +25850,7 @@
         "how_we_play_with_it": "pretend"
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -25929,7 +25929,7 @@
         "how_we_play_with_it": "pretend"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -26005,10 +26005,11 @@
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "toy",
-        "how_we_play_with_it": "music"
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "hit_or_strike"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "shown_as": "Drum",
@@ -26071,7 +26072,9 @@
             "why": "A toy drum is an instrument you hit to make music."
           }
         },
-        "no_sentence_for": []
+        "no_sentence_for": [
+          "how_it_makes_sound"
+        ]
       },
       "voice": {
         "say": "Drum",
@@ -26088,10 +26091,11 @@
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "toy",
-        "how_we_play_with_it": "music"
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "blow_into"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "shown_as": "Flute",
@@ -26154,7 +26158,9 @@
             "why": "A toy flute is played by blowing into it to make musical sounds."
           }
         },
-        "no_sentence_for": []
+        "no_sentence_for": [
+          "how_it_makes_sound"
+        ]
       },
       "voice": {
         "say": "Flute",
@@ -26171,10 +26177,11 @@
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "toy",
-        "how_we_play_with_it": "music"
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "press_keys"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "shown_as": "Piano",
@@ -26248,7 +26255,9 @@
             "why": "A toy piano is a small piano-like instrument, so you play with it by making music."
           }
         },
-        "no_sentence_for": []
+        "no_sentence_for": [
+          "how_it_makes_sound"
+        ]
       },
       "voice": {
         "say": "Piano",
@@ -26265,10 +26274,11 @@
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "toy",
-        "how_we_play_with_it": "music"
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "hit_or_strike"
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "shown_as": "Xylophone",
@@ -26331,7 +26341,9 @@
             "why": "A xylophone is a musical instrument you play by striking its bars to make music."
           }
         },
-        "no_sentence_for": []
+        "no_sentence_for": [
+          "how_it_makes_sound"
+        ]
       },
       "voice": {
         "say": "Xylophone",
@@ -26348,10 +26360,11 @@
       "fields": {
         "kind_of_thing": "made_by_people",
         "kind_of_made_thing": "toy",
-        "how_we_play_with_it": "music"
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "pluck_strings"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "shown_as": "Guitar",
@@ -26414,7 +26427,9 @@
             "why": "A toy guitar is played by strumming or plucking it to make music."
           }
         },
-        "no_sentence_for": []
+        "no_sentence_for": [
+          "how_it_makes_sound"
+        ]
       },
       "voice": {
         "say": "Guitar",
@@ -26434,7 +26449,7 @@
         "how_we_play_with_it": "fly"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "notes": {
@@ -26535,7 +26550,7 @@
         "how_we_play_with_it": "fly"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -26614,7 +26629,7 @@
         "how_we_play_with_it": "build"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -26693,7 +26708,7 @@
         "how_we_play_with_it": "build"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -26772,7 +26787,7 @@
         "how_we_play_with_it": "build"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -27022,7 +27037,7 @@
         "how_we_play_with_it": "throw"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-07",
       "worked_out": {
@@ -27191,7 +27206,7 @@
         "how_we_play_with_it": "throw"
       },
       "familiar": 0.8,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-07",
       "worked_out": {
@@ -27730,7 +27745,7 @@
         "dinosaur_group": "horned"
       },
       "familiar": 0.6,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-02",
       "worked_out": {
@@ -27849,7 +27864,7 @@
         "dinosaur_group": "horned"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-02",
       "worked_out": {
@@ -27967,7 +27982,7 @@
         "dinosaur_group": "horned"
       },
       "familiar": 0.5,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-02",
       "worked_out": {
@@ -28888,7 +28903,7 @@
         "what_it_eats": "eats_meat"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-04",
       "worked_out": {
@@ -29007,7 +29022,7 @@
         "what_it_eats": "eats_meat"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-04",
       "worked_out": {
@@ -29127,7 +29142,7 @@
         "what_it_eats": "eats_meat"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-04",
       "worked_out": {
@@ -29247,7 +29262,7 @@
         "what_it_eats": "eats_insects"
       },
       "familiar": 0.6,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-04",
       "worked_out": {
@@ -29366,7 +29381,7 @@
         "what_it_eats": "eats_insects"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-04",
       "worked_out": {
@@ -29486,7 +29501,7 @@
         "what_it_eats": "eats_insects"
       },
       "familiar": 0.4,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-04",
       "worked_out": {
@@ -29605,7 +29620,7 @@
         "what_it_eats": "eats_insects"
       },
       "familiar": 0.6,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-04",
       "worked_out": {
@@ -29724,7 +29739,7 @@
         "what_it_eats": "eats_insects"
       },
       "familiar": 0.7,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-04",
       "worked_out": {
@@ -29844,7 +29859,7 @@
         "what_it_eats": "eats_plants"
       },
       "familiar": 0.95,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-04",
       "worked_out": {
@@ -29964,7 +29979,7 @@
         "what_it_eats": "eats_plants"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-04",
       "worked_out": {
@@ -30082,7 +30097,7 @@
         "what_it_eats": "eats_both"
       },
       "familiar": 0.85,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-04",
       "worked_out": {
@@ -30202,7 +30217,7 @@
         "what_it_eats": "eats_both"
       },
       "familiar": 0.9,
-      "reviewed": 12,
+      "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-05",
       "sources": {
@@ -30309,11 +30324,1315 @@
         "approved_on": "2026-11-24",
         "other_tries": 3
       }
+    },
+    "tambourine": {
+      "name": "Tambourine",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "hit_or_strike"
+      },
+      "familiar": 0.9,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-11",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "toy",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/toy",
+            "sorted_by": "how_we_play_with_it",
+            "group": "music",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_11_1_01_c1",
+        "game_file": "Assets/pictures/tambourine.webp",
+        "game_sha256": "6e8ee79ee0bc055b58f8c820a099cc8c028a1510304270fd3f4309d56f5a0e85",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c1.png",
+        "master_sha256": "9e91bf7a81216940c3778980d67e4120e52e6e8ec7331eab8b9e143d0b01d1c6",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Tambourine",
+            "title": "Tambourine",
+            "asked_for": "Tambourine",
+            "revision": 1382481420,
+            "fetched_on": "2026-11-24",
+            "sha256": "fd7087b30729b909cb7636dfb04806392b476a6d6a4e89a251e174a5f0093bcd"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Tambourine",
+            "title": "Tambourine",
+            "asked_for": "Tambourine",
+            "revision": 10220412,
+            "fetched_on": "2026-11-24",
+            "sha256": "409c2f03deda4f7524aa23e5afcb929a78d8d707c3edf839eef5344bdc1066e9"
+          }
+        ],
+        "facts": "tools/research/out/facts/tambourine.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The tambourine is a musical instrument in the percussion family consisting of a frame, often of wood or plastic, with pairs of small metal jingles, called \"zills\"."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "It is a small hand-held percussion instrument that children play and shake, so a parent would call it a toy."
+          },
+          "how_we_play_with_it": {
+            "basis": "judged, not sourced",
+            "why": "The sources describe the tambourine as a percussion instrument that is tapped, hit, or shaken to make music."
+          },
+          "how_it_makes_sound": {
+            "basis": "judged, not sourced",
+            "why": "The sources say it is played by tapping, hitting, or shaking it, so it makes sound when struck."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Tambourine",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_tambourine.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/tambourine.mp3",
+        "clip_sha256": "1feec5dc8b61f0da02e77065ac7e2322a13df186a343a62f853d8c28515ad83d"
+      }
+    },
+    "triangle": {
+      "name": "Triangle",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "hit_or_strike"
+      },
+      "familiar": 0.85,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-11",
+      "notes": {
+        "how_we_play_with_it": "The pages point to 'Build or make with it'. Two checks, sorting it as a parent would, both put it in 'Make music with it'."
+      },
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "toy",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/toy",
+            "sorted_by": "how_we_play_with_it",
+            "group": "music",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_11_1_01_c2",
+        "game_file": "Assets/pictures/triangle.webp",
+        "game_sha256": "fdc341e4730cf3fc3a85f41315830b2fb0bb7c9c32c7eede51c3ad21cea37bd8",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c2.png",
+        "master_sha256": "c28c4322ab2a03673bc3002e4f0f9470b85893310fd39906c1d67ce23a7a956e",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Triangle",
+            "title": "Triangle",
+            "asked_for": "Triangle",
+            "revision": 1379331296,
+            "fetched_on": "2026-11-24",
+            "sha256": "ddc4c1fc21e5b0f5413f79e435187ae56f010ad99ab1a8ffbb5d031d5ed6f5b9"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Triangle",
+            "title": "Triangle",
+            "asked_for": "Triangle",
+            "revision": 11017192,
+            "fetched_on": "2026-11-24",
+            "sha256": "ada5368bd42372f654b16f8bb2536f4dd42eb49eb2d7bcb3464f1f783c3b086c"
+          }
+        ],
+        "facts": "tools/research/out/facts/triangle.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "A triangle is a geometric shape concept, not an animal, plant, or natural object, so it fits the made-by-people category."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "The sources say triangles are basic shapes used in drawings and that computers use them to make pictures, so as a made thing a triangle is most like a toy or plaything for a child."
+          }
+        },
+        "no_sentence_for": [
+          "how_we_play_with_it",
+          "how_it_makes_sound"
+        ]
+      },
+      "voice": {
+        "say": "Triangle",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_triangle.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/triangle.mp3",
+        "clip_sha256": "23f8b5ac70aad6a42000c38e338ee9ccbfd584674dc0d812aa3d7d6a565b8129"
+      }
+    },
+    "cymbals": {
+      "name": "Cymbals",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "hit_or_strike"
+      },
+      "familiar": 0.8,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-11",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "toy",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/toy",
+            "sorted_by": "how_we_play_with_it",
+            "group": "music",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_11_1_01_c3",
+        "game_file": "Assets/pictures/cymbals.webp",
+        "game_sha256": "5008903df6bcc329b869c052f0e13be6389dbf376c05abb74de69d33d5bb3292",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c3.png",
+        "master_sha256": "2b46fb913267cc683321c89a300c4d7f7117bfdb2c672768f0b0630a80037516",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Cymbal",
+            "title": "Cymbal",
+            "asked_for": "Cymbals",
+            "revision": 1384313559,
+            "fetched_on": "2026-11-24",
+            "sha256": "ce80491c8ef74451b2a38782b4f70f503f39ac7a190ffddc64be7932cc12666c"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Cymbal",
+            "title": "Cymbal",
+            "asked_for": "Cymbals",
+            "revision": 8997125,
+            "fetched_on": "2026-11-24",
+            "sha256": "888b28978fd423ec58b1fd8a008b98bddd1342e9c35fc2fbb3cd3a2942a12d9d"
+          }
+        ],
+        "facts": "tools/research/out/facts/cymbals.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The cymbals ( ) are common percussion instruments."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "Cymbals are percussion instruments played to make music, so a parent would class them with toys rather than vehicles, household items, tools, or buildings."
+          },
+          "how_we_play_with_it": {
+            "basis": "judged, not sourced",
+            "why": "The sources say cymbals are percussion instruments that are banged together or hit with a beater to make sounds."
+          },
+          "how_it_makes_sound": {
+            "basis": "judged, not sourced",
+            "why": "Cymbals are played by banging or hitting them together or striking them with a beater or stick."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Cymbals",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_cymbals.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/cymbals.mp3",
+        "clip_sha256": "61bd2da660aa9aac7a4b52923d0059b0e0de1aa802110f4534eed1001bc49a54"
+      }
+    },
+    "recorder": {
+      "name": "Recorder",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "blow_into"
+      },
+      "familiar": 0.85,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-11",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "toy",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/toy",
+            "sorted_by": "how_we_play_with_it",
+            "group": "music",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_11_1_01_c4",
+        "game_file": "Assets/pictures/recorder.webp",
+        "game_sha256": "9ea34d5c10833a95cd3075a6b588e06c61f471682237e12dd08b387dd9d1ffd2",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c4.png",
+        "master_sha256": "14e3e025c14eb310690720e5d3f1fc39c6242ee6ff2ecfa8f1c9793bba7afa9f",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Recorder_(musical_instrument)",
+            "title": "Recorder (musical instrument)",
+            "asked_for": "Recorder (musical instrument)",
+            "revision": 1385979824,
+            "fetched_on": "2026-11-24",
+            "sha256": "98c3cd5c93dc74baf73fa850483fd29542c9c9867c98ead830b80369fc95a044"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Recorder",
+            "title": "Recorder",
+            "asked_for": "Recorder",
+            "revision": 9644241,
+            "fetched_on": "2026-11-24",
+            "sha256": "5e7ba2070a0e92d57ed70841ee7541f89fb9bee3d317636149f8366462545ec3"
+          }
+        ],
+        "facts": "tools/research/out/facts/recorder.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Recorders were traditionally constructed from wood or ivory."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "The sources say the recorder is a musical instrument that is popular for children to learn and play, so a parent would call it a toy."
+          },
+          "how_we_play_with_it": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "The recorder is a musical instrument that is a type of flute."
+          },
+          "how_it_makes_sound": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A recorder player puts the bigger end in their mouth and blows into it."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Recorder",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_recorder.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/recorder.mp3",
+        "clip_sha256": "988f02475bd4b6c96e440882a4b90d79a4ec85d7b720660274ce8f3ee7b8b663"
+      }
+    },
+    "harmonica": {
+      "name": "Harmonica",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "blow_into"
+      },
+      "familiar": 0.9,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-11",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "toy",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/toy",
+            "sorted_by": "how_we_play_with_it",
+            "group": "music",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_11_1_01_c5",
+        "game_file": "Assets/pictures/harmonica.webp",
+        "game_sha256": "214a5c791ec0d7b0007093a94fda76560275565d0ff165835205c520b5c1df89",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c5.png",
+        "master_sha256": "b939cc0c8f7909989762c3a29487cbcf227516f02263105f77bb9312a70020ae",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Harmonica",
+            "title": "Harmonica",
+            "asked_for": "Harmonica",
+            "revision": 1384085968,
+            "fetched_on": "2026-11-24",
+            "sha256": "88beb29b9fbddabb0e915bc158d69fdeb1c6019949929374720058b0f61285f5"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Harmonica",
+            "title": "Harmonica",
+            "asked_for": "Harmonica",
+            "revision": 9706745,
+            "fetched_on": "2026-11-24",
+            "sha256": "39971994e2bdd6638a7dd5b945d42e5f1a72ca5dd5f439a5bfaf5df511245afc"
+          }
+        ],
+        "facts": "tools/research/out/facts/harmonica.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A harmonica is small musical instrument that is played with the mouth by blowing into holes in its side."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "A harmonica is a small, cheap musical instrument that people play for fun, so a parent would call it a toy-like thing to play with."
+          },
+          "how_we_play_with_it": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A harmonica is small musical instrument that is played with the mouth by blowing into holes in its side."
+          },
+          "how_it_makes_sound": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "A harmonica is small musical instrument that is played with the mouth by blowing into holes in its side."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Harmonica",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_harmonica.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/harmonica.mp3",
+        "clip_sha256": "eaa84fdd16b6d1fb506bdfb1ba2627e95c426bc24099cb6122a5c146e80eeb43"
+      }
+    },
+    "kazoo": {
+      "name": "Kazoo",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "blow_into"
+      },
+      "familiar": 0.8,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-11",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "toy",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/toy",
+            "sorted_by": "how_we_play_with_it",
+            "group": "music",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_11_1_01_c6",
+        "game_file": "Assets/pictures/kazoo.webp",
+        "game_sha256": "5cfa43505f501e1491d8defec7b8caddc20a9a5433c6b8b09a11b06e84fc9a3f",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c6.png",
+        "master_sha256": "1347b6ecb2618360395dcdbc4a4a1b53a474d616ea34abcf63fed19cae5ffc43",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Kazoo",
+            "title": "Kazoo",
+            "asked_for": "Kazoo",
+            "revision": 1368356060,
+            "fetched_on": "2026-11-24",
+            "sha256": "b79a43371da28a1153f193ebcefbaa065d9a200a8e84f27904bacb5e46c10b34"
+          }
+        ],
+        "facts": "tools/research/out/facts/kazoo.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The kazoo is a musical instrument that adds a buzzing timbral quality to a player's voice when the player vocalizes into it."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "A kazoo is a small musical instrument that people, especially children, play with for fun, so a parent would call it a toy."
+          },
+          "how_we_play_with_it": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The kazoo is a musical instrument that adds a buzzing timbral quality to a player's voice when the player vocalizes into it."
+          },
+          "how_it_makes_sound": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The kazoo is a musical instrument that adds a buzzing timbral quality to a player's voice when the player vocalizes into it."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Kazoo",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_kazoo.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/kazoo.mp3",
+        "clip_sha256": "e4f83f103bbbc1b564284e6f3ba60866e4d5930d246febeae3be208121dffd72"
+      }
+    },
+    "pan_pipes": {
+      "name": "Pan pipes",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "blow_into"
+      },
+      "familiar": 0.7,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-11",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "toy",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/toy",
+            "sorted_by": "how_we_play_with_it",
+            "group": "music",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_11_1_01_c7",
+        "game_file": "Assets/pictures/pan_pipes.webp",
+        "game_sha256": "db3774d532b71e3b92afc688fa619cfc3e30b691f822759d7590a2f738403a9c",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c7.png",
+        "master_sha256": "9e840772016d628cb6cf4f79f717f9e03471426810f37ea82c7ac5ce5a31349c",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Pan_flute",
+            "title": "Pan flute",
+            "asked_for": "Pan pipes",
+            "revision": 1382921722,
+            "fetched_on": "2026-11-24",
+            "sha256": "11bfcca6749508b164c5222ac5f9f36b425b66fe524a2ff8038bc320ca11e036"
+          }
+        ],
+        "facts": "tools/research/out/facts/pan_pipes.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A pan flute (also known as panpipes or syrinx) is a musical instrument based on the principle of the closed tube, consisting of multiple pipes of gradually increasing length (and occasionally girth)."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "A pan flute is a musical instrument, and for a four-year-old's sorting game it fits best as a toy rather than a vehicle, household item, tool, or building."
+          },
+          "how_we_play_with_it": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "A pan flute (also known as panpipes or syrinx) is a musical instrument based on the principle of the closed tube, consisting of multiple pipes of gradually increasing length (and occasionally girth)."
+          },
+          "how_it_makes_sound": {
+            "basis": "judged, not sourced",
+            "why": "A pan flute is played by blowing air into its pipes to make sound."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Pan pipes",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_pan_pipes.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/pan_pipes.mp3",
+        "clip_sha256": "e7b13bef7cbb96bb088bbc2f26765dcdb6c8d16a221b760be2d29a4083ba192e"
+      }
+    },
+    "toy_accordion": {
+      "name": "Toy accordion",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "press_keys"
+      },
+      "familiar": 0.7,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-11",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "toy",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/toy",
+            "sorted_by": "how_we_play_with_it",
+            "group": "music",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_11_1_01_c8",
+        "game_file": "Assets/pictures/toy_accordion.webp",
+        "game_sha256": "e348b12356884cbf5a54a9e744a00d858c33e72b396ca1b1bb65e91f2328cecd",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c8.png",
+        "master_sha256": "3a81c4900b81a77c3405faf2d05f80cb3f21d77670ee5da0dd5bb0fd71e9aa76",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [],
+        "facts": "tools/research/out/facts/toy_accordion.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "A toy accordion is a manufactured plaything, so it is something people make."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "A toy accordion is a plaything for children, so it belongs in the Toys category."
+          },
+          "how_we_play_with_it": {
+            "basis": "judged, not sourced",
+            "why": "An accordion is a musical instrument, so a toy accordion is mostly played by making music with it."
+          },
+          "how_it_makes_sound": {
+            "basis": "judged, not sourced",
+            "why": "An accordion is played by pressing its keys and buttons while squeezing the bellows, so a toy accordion makes sound by pressing keys."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Toy accordion",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_toy_accordion.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/toy_accordion.mp3",
+        "clip_sha256": "1a475c0a727506c250f5ca5c719f2e050138ac2dd2ab8e92a971660f6384d954"
+      }
+    },
+    "toy_organ": {
+      "name": "Toy organ",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "press_keys"
+      },
+      "familiar": 0.75,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-11",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "toy",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/toy",
+            "sorted_by": "how_we_play_with_it",
+            "group": "music",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_11_1_01_c9",
+        "game_file": "Assets/pictures/toy_organ.webp",
+        "game_sha256": "fde2b9b5a0ea8f8e770f2c332376e6c221c2bb2b9b19de1bdf9913c8bcd4ead7",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c9.png",
+        "master_sha256": "d02f673c6389d4a4b799b0975a72f5e2c20e9b41899694d34fee9f0692084f25",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [],
+        "facts": "tools/research/out/facts/toy_organ.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "judged, not sourced",
+            "why": "A toy organ is a toy musical instrument, and toys are manufactured objects made by people."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "A toy organ is a small musical instrument made for children to play with, so it is used as a toy."
+          },
+          "how_we_play_with_it": {
+            "basis": "judged, not sourced",
+            "why": "A toy organ is an instrument you press keys on to make music."
+          },
+          "how_it_makes_sound": {
+            "basis": "judged, not sourced",
+            "why": "A toy organ is a small keyboard instrument played by pressing its keys to make musical notes."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Toy organ",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_toy_organ.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/toy_organ.mp3",
+        "clip_sha256": "cdb7e004ace68f5bc02dcf63d77a0c9d52296d8ba1a046a64296a3c9c0b8485c"
+      }
+    },
+    "harp": {
+      "name": "Harp",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "pluck_strings"
+      },
+      "familiar": 0.9,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-11",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "toy",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/toy",
+            "sorted_by": "how_we_play_with_it",
+            "group": "music",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_11_1_01_c11",
+        "game_file": "Assets/pictures/harp.webp",
+        "game_sha256": "b2e8d3a687ef5f7be789e1dd92e2edcffefc6cb27e3c2e1d5dcfd5ec6c0d6742",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c11.png",
+        "master_sha256": "1a1cfdbff6eeb7b8e6c941bce30c901fd9eae62d40640a3693d20b6b92db2794",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Harp",
+            "title": "Harp",
+            "asked_for": "Harp",
+            "revision": 1386585659,
+            "fetched_on": "2026-11-24",
+            "sha256": "c5d3a76b6aea5244fe41514b3bb4fca482e8a7ca02cde4534d943d77564500b2"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Harp",
+            "title": "Harp",
+            "asked_for": "Harp",
+            "revision": 7679286,
+            "fetched_on": "2026-11-24",
+            "sha256": "da48a9c763b33676490a915df0426c84ed054cf21250f791d6efbadaef644a95"
+          }
+        ],
+        "facts": "tools/research/out/facts/harp.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Most commonly, harps are made of wood and are triangular in shape."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "A harp is a musical instrument, and for a four-year-old's sorting game it fits best as a plaything rather than a vehicle, tool, building, or household item."
+          },
+          "how_we_play_with_it": {
+            "basis": "judged, not sourced",
+            "why": "The sources say the harp is a stringed musical instrument whose strings are plucked with the fingers, so it is played by making music."
+          },
+          "how_it_makes_sound": {
+            "basis": "judged, not sourced",
+            "why": "The sources say a harp's strings are plucked with the fingers to make sound."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Harp",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_harp.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/harp.mp3",
+        "clip_sha256": "b7d70d85c3724437db7968752205196f1e705504840c3156855883a74057ec43"
+      }
+    },
+    "banjo": {
+      "name": "Banjo",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "pluck_strings"
+      },
+      "familiar": 0.8,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-11",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "toy",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/toy",
+            "sorted_by": "how_we_play_with_it",
+            "group": "music",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_11_1_01_c12",
+        "game_file": "Assets/pictures/banjo.webp",
+        "game_sha256": "942bcfa4b8f5f20dd8a034c552e5d77acc1367dbe01f2135b2d23465ef823058",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_1_01_c12.png",
+        "master_sha256": "26079535dccc898db4ed37a1b44db54afd902f7387a68031d70a24270d88afdc",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Banjo",
+            "title": "Banjo",
+            "asked_for": "Banjo",
+            "revision": 1385950857,
+            "fetched_on": "2026-11-24",
+            "sha256": "feaf174575da90e3beb99dd8ad392f7c9157bf1ec65a15de60c931ccc3cd05cd"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Banjo",
+            "title": "Banjo",
+            "asked_for": "Banjo",
+            "revision": 10802536,
+            "fetched_on": "2026-11-24",
+            "sha256": "1903193eb578053359257272445f0e60be3503f4126568ca0a0958f35d29fd1e"
+          }
+        ],
+        "facts": "tools/research/out/facts/banjo.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The banjo is a stringed musical instrument with a thin membrane stretched over a frame or cavity to form a resonator."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "It is a musical instrument, which is not a vehicle, tool, building, or household item, so among the choices it best fits as a plaything."
+          },
+          "how_we_play_with_it": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The banjo is a stringed musical instrument with a thin membrane stretched over a frame or cavity to form a resonator."
+          },
+          "how_it_makes_sound": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "In almost all of its forms, banjo playing is characterized by a fast arpeggiated plucking, though many different playing styles exist."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Banjo",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_banjo.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/banjo.mp3",
+        "clip_sha256": "004e9529a3b08eaa14587f9eca8668f129318b94bcef374d18c2b2e46510f538"
+      }
+    },
+    "ukulele": {
+      "name": "Ukulele",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "pluck_strings"
+      },
+      "familiar": 0.85,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-11",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "toy",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/toy",
+            "sorted_by": "how_we_play_with_it",
+            "group": "music",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_11_2_01_c1",
+        "game_file": "Assets/pictures/ukulele.webp",
+        "game_sha256": "b4fbe39e7c8cf4a25037828f71bd83fccab6707115e687584f341f630239b9bd",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_2_01_c1.png",
+        "master_sha256": "5456bd85b703d231f3778fdcb7d6a050cffcfa37068285c21e1d2ed4d65f3219",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 1
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Ukulele",
+            "title": "Ukulele",
+            "asked_for": "Ukulele",
+            "revision": 1382137227,
+            "fetched_on": "2026-11-24",
+            "sha256": "b966979cff1c868120d5124f57e1077261629ddc96d9b531c8cc6c1fbc07d39b"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Ukulele",
+            "title": "Ukulele",
+            "asked_for": "Ukulele",
+            "revision": 9030799,
+            "fetched_on": "2026-11-24",
+            "sha256": "d9ed713a75f06f737bc75f13f5c6e8461a74824a4f1f02a5bb7d1a1785a24cd9"
+          }
+        ],
+        "facts": "tools/research/out/facts/ukulele.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The ukulele is of Portuguese origin and was popularized in Hawaii."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "A ukulele is a small musical instrument, and small instruments like this are commonly played with as toys by young children."
+          },
+          "how_we_play_with_it": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "The ukulele (pronounced /ˌjʉːkəˈlɛɪli/ from the Hawaiian ʻukulele, pronounced /ˈʔukuˈlɛlɛ/) is a musical instrument with four strings."
+          },
+          "how_it_makes_sound": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Ukuleles generally have four nylon strings  tuned to GCEA (except baritone, which is normally tuned DGBE)."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Ukulele",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_ukulele.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/ukulele.mp3",
+        "clip_sha256": "f5e303d6e103cb30a2d6f367a8f32a4a1c0def29dd8717ca4b608dcee7c95f26"
+      }
+    },
+    "lute": {
+      "name": "Lute",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "made_by_people",
+        "kind_of_made_thing": "toy",
+        "how_we_play_with_it": "music",
+        "how_it_makes_sound": "pluck_strings"
+      },
+      "familiar": 0.5,
+      "reviewed": 13,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-11",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "made_by_people",
+          "made_by_people/toy",
+          "made_by_people/toy/music"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "made_by_people",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people",
+            "sorted_by": "kind_of_made_thing",
+            "group": "toy",
+            "open_now": true
+          },
+          {
+            "circle": "made_by_people/toy",
+            "sorted_by": "how_we_play_with_it",
+            "group": "music",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_11_2_01_c2",
+        "game_file": "Assets/pictures/lute.webp",
+        "game_sha256": "aec74509dccfb382ad62757d583ae5f940cbd0bc9ebaafb4705f2cb431c235eb",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_11_2_01_c2.png",
+        "master_sha256": "09e8d28dfa36b12ced8da965ff9254323db4c51da59b3f1d94c490aca1ab4696",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 1
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Lute",
+            "title": "Lute",
+            "asked_for": "Lute",
+            "revision": 1386172887,
+            "fetched_on": "2026-11-24",
+            "sha256": "8c823c1280eaafd1dc9adbafb4cc158ea42dfceaf81722889f1776a349b49961"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Lute",
+            "title": "Lute",
+            "asked_for": "Lute",
+            "revision": 10859320,
+            "fetched_on": "2026-11-24",
+            "sha256": "e332868773e2f0bd3f011f63e3817d9a33184aea73f390e87e8bee2ee5088070"
+          }
+        ],
+        "facts": "tools/research/out/facts/lute.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "The lute is a kind of musical instrument with strings."
+          },
+          "kind_of_made_thing": {
+            "basis": "judged, not sourced",
+            "why": "A lute is a musical instrument, and for a four-year-old's sorting game it fits best with toys and playthings rather than vehicles, tools, buildings, or household items."
+          },
+          "how_we_play_with_it": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "The lute is a kind of musical instrument with strings."
+          },
+          "how_it_makes_sound": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "The lute is plucked with one hand while the other hand \"frets\" (presses down) the strings on the neck's fingerboard."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Lute",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_lute.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/lute.mp3",
+        "clip_sha256": "bb217db8890c3712cbc4c07a8f5631baf1c081a63302cee024f662fb25da6534"
+      }
     }
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 259,
+      "in the game": 272,
       "held by the rules": 76,
       "kept for later": 5,
       "excluded": 3,
@@ -30338,7 +31657,7 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 259,
+        "things": 272,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
@@ -30359,8 +31678,8 @@
           },
           "made_by_people": {
             "label": "Things people make",
-            "things": 89,
-            "with_picture": 89
+            "things": 102,
+            "with_picture": 102
           }
         },
         "open_by_its_things": true,
@@ -31260,7 +32579,7 @@
       },
       "made_by_people": {
         "label": "Things people make",
-        "things": 89,
+        "things": 102,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_made_thing",
         "groups": {
@@ -31271,8 +32590,8 @@
           },
           "toy": {
             "label": "Toys",
-            "things": 22,
-            "with_picture": 22
+            "things": 35,
+            "with_picture": 35
           },
           "household": {
             "label": "Things in the house",
@@ -31367,7 +32686,7 @@
       },
       "made_by_people/toy": {
         "label": "Toys",
-        "things": 22,
+        "things": 35,
         "steps_from_seed": 2,
         "sorted_by": "how_we_play_with_it",
         "groups": {
@@ -31398,8 +32717,8 @@
           },
           "music": {
             "label": "Make music with it",
-            "things": 5,
-            "with_picture": 5
+            "things": 18,
+            "with_picture": 18
           }
         },
         "open_by_its_things": true,
@@ -31478,12 +32797,35 @@
       },
       "made_by_people/toy/music": {
         "label": "Make music with it",
-        "things": 5,
+        "things": 18,
         "steps_from_seed": 3,
+        "sorted_by": "how_it_makes_sound",
+        "groups": {
+          "hit_or_strike": {
+            "label": "Hit it to make sound",
+            "things": 5,
+            "with_picture": 5
+          },
+          "blow_into": {
+            "label": "Blow into it",
+            "things": 5,
+            "with_picture": 5
+          },
+          "press_keys": {
+            "label": "Press keys to play",
+            "things": 3,
+            "with_picture": 3
+          },
+          "pluck_strings": {
+            "label": "Pluck or strum strings",
+            "things": 5,
+            "with_picture": 5
+          }
+        },
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+          "1 more thing(s) in 'Press keys to play'"
         ]
       },
       "made_by_people/household": {
@@ -31712,7 +33054,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-11-24-10",
+    "by": "record_names.py",
     "on": "2026-11-24"
   },
   "groups": {
@@ -32184,13 +33526,17 @@
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
-      "explanation": null,
+      "explanation": {
+        "text": "These little creatures all have six legs and a hard shell outside. They have no bones inside. A ladybug has bright red wings with black spots that warn birds to stay away.",
+        "together": "These little creatures all have six legs and a hard shell outside. They have no bones inside.",
+        "fact": "A ladybug has bright red wings with black spots that warn birds to stay away.",
+        "quote": "All species are protected by noxious fluids based on cyanide, and most have warning colouration, such as red with black spots or black stripes.",
+        "source": "ladybug:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Lady_beetle"
+      },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "held": [
-        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
-      ]
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     },
     "kind_of_animal=reptile": {
       "field": "kind_of_animal",
@@ -33853,7 +35199,7 @@
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
-        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
+        "no explanation was kept: the explanation does not say simply why they belong together"
       ]
     },
     "what_people_do_there=pray": {
@@ -34171,25 +35517,13 @@
       "question": "How do we mostly play with it?",
       "clues": [
         {
-          "text": "Think about things you can hear and enjoy with your ears.",
-          "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue1.mp3",
-          "clip": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3",
-          "clip_sha256": "2a3f41a24f5181d6946d6dbdd01d18d56402ef5cc2e24d6c3371af30c4b54d3b",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+          "text": "Think about something you can hear and tap your feet to."
         },
         {
-          "text": "You can tap, blow or pluck it to make a sound.",
-          "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue2.mp3",
-          "clip": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3",
-          "clip_sha256": "fe3c37f601f33861ac1ee8948a3b531660a2f3d14ffe8d5f348ef9ad77087354",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+          "text": "You use your hands or your breath to make it sound."
         },
         {
-          "text": "It makes a sound you can sing or dance along to.",
-          "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue3.mp3",
-          "clip": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3",
-          "clip_sha256": "b867cea38dac1ef9a06c808e144ad2858bf44bfa69cae65bcacaf89e90caa832",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+          "text": "It makes music, not a picture or a story."
         }
       ],
       "explanation": null,
@@ -34463,6 +35797,86 @@
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "how_it_makes_sound=hit_or_strike": {
+      "field": "how_it_makes_sound",
+      "value": "hit_or_strike",
+      "label": "Hit it to make sound",
+      "question": "How does this toy make its sound?",
+      "clues": [
+        {
+          "text": "Think about a toy you must touch to start its sound."
+        },
+        {
+          "text": "You do not blow air into it, and you do not press keys."
+        },
+        {
+          "text": "You tap it, shake it, or bang it, and then it rings out loud."
+        }
+      ],
+      "explanation": {
+        "text": "You make these sounds by hitting or shaking them. Your hand or a stick starts the sound. A tambourine is like a little drum, and it has tiny metal pairs around its edge that jingle.",
+        "together": "You make these sounds by hitting or shaking them. Your hand or a stick starts the sound.",
+        "fact": "A tambourine is like a little drum, and it has tiny metal pairs around its edge that jingle.",
+        "quote": "The tambourine looks like a small hand-held drum. But in addition to the skin (drumhead) there are also small pairs of jingles - like tiny cymbals - in slots around the frame.",
+        "source": "tambourine:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Tambourine"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-11-24",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "how_it_makes_sound=blow_into": {
+      "field": "how_it_makes_sound",
+      "value": "blow_into",
+      "label": "Blow into it",
+      "question": "How does this toy make its sound?",
+      "clues": [
+        {
+          "text": "Think about how the air goes in to make the music."
+        },
+        {
+          "text": "You use your mouth and your breath to play it."
+        },
+        {
+          "text": "You blow into it, and the air makes the sound."
+        }
+      ],
+      "explanation": {
+        "text": "You play all of these by blowing air into them with your mouth. Your breath makes the music come out. A harmonica is small and you play it by blowing into little holes on its side.",
+        "together": "You play all of these by blowing air into them with your mouth. Your breath makes the music come out.",
+        "fact": "A harmonica is small and you play it by blowing into little holes on its side.",
+        "quote": "A harmonica is small musical instrument that is played with the mouth by blowing into holes in its side.",
+        "source": "harmonica:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Harmonica"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-11-24",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "how_it_makes_sound=pluck_strings": {
+      "field": "how_it_makes_sound",
+      "value": "pluck_strings",
+      "label": "Pluck or strum strings",
+      "question": "How does this toy make its sound?",
+      "clues": [
+        {
+          "text": "Think about toys that have strings on them."
+        },
+        {
+          "text": "You use your fingers to make the strings move."
+        },
+        {
+          "text": "You pull the strings with your fingers to make music."
+        }
+      ],
+      "explanation": null,
+      "written_by": "deepseek-flash",
+      "written_on": "2026-11-24",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
+      ]
     }
   }
 }

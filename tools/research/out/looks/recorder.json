@@ -1,0 +1,116 @@
+{
+  "name": "Recorder",
+  "group": "Things people make > Toys > Make music with it > Blow into it",
+  "features": [
+    {
+      "claim": "It is shaped like a tube with one end bigger than the other.",
+      "quote": "It is shaped like a tube with one end bigger than the other end.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "It has holes for seven fingers and one thumb.",
+      "quote": "It has holes for seven fingers and one thumb.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "It has a thumb-hole for the upper hand and holes for seven fingers: three for the upper hand and four for the lower.",
+      "quote": "A recorder can be distinguished from other duct flutes by the presence of a thumb-hole for the upper hand and holes for seven fingers: three for the upper hand and four for the lower.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It is traditionally made from wood or ivory.",
+      "quote": "Recorders were traditionally constructed from wood or ivory.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Student recorders are commonly made of moulded plastic.",
+      "quote": "student and scholastic recorders are commonly made of moulded plastic",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its finger holes are open.",
+      "quote": "This ability, coupled with its open finger holes, allow it to produce a wide variety of tone colours and special effects.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Some recorders have keys to cover tone holes that are too far apart or too large for the fingers.",
+      "quote": "In either case, more ergonomically placed keys can be used to cover the tone holes.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A bocal may be used so the player can blow into it while keeping a comfortable hand position.",
+      "quote": "In this case, a bocal may be used to allow the player to blow into the recorder while maintaining a comfortable hand position.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Some recorders have a bent bore that brings the windway closer to the keys or finger holes.",
+      "quote": "Alternatively, some recorders have a bent bore that positions the windway closer to the keys or finger holes so the player can comfortably reach both.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "The player puts the bigger end in their mouth and blows into it.",
+        "quote": "A recorder player puts the bigger end in their mouth and blows into it.",
+        "source": "wikipedia_simple",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The player blows into a narrow channel in the head joint called the windway.",
+        "quote": "In normal play, the player blows into the windway (B), a narrow channel in the head joint, which directs a stream of air across a gap called the window, at a sharp edge called the labium (C).",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Its bore is generally reverse conical, tapering towards the foot, or cylindrical.",
+        "quote": "the bore is generally reverse conical (i.e. tapering towards the foot) to cylindrical",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Recorder_(musical_instrument)",
+      "title": "Recorder (musical instrument)",
+      "revision": 1385979824,
+      "revision_time": "2026-11-16T06:18:32Z",
+      "fetched_on": "2026-11-24",
+      "chars": 99100,
+      "sha256": "6cece8d14d22808a8f635871f6d1b5640510a8d9faac9faeee53ac766c324845"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Recorder",
+      "title": "Recorder",
+      "revision": 9644241,
+      "revision_time": "2024-07-12T05:31:02Z",
+      "fetched_on": "2026-11-24",
+      "chars": 5403,
+      "sha256": "1c236b08e95c448c82eebe7ed2043c19cfcbddc8ff7f8cd5181cf1af73316ee9"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "It is shaped like a tube with one end bigger than the other.",
+    "It has holes for seven fingers and one thumb."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "Tube with a wider end and a row of finger holes; the others lack this hole pattern.",
+    "covering": []
+  }
+}

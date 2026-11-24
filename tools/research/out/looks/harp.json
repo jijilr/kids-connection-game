@@ -1,0 +1,112 @@
+{
+  "name": "Harp",
+  "group": "Things people make > Toys > Make music with it > Pluck or strum strings",
+  "features": [
+    {
+      "claim": "A harp is usually shaped like a triangle.",
+      "quote": "Most commonly, harps are made of wood and are triangular in shape.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A harp is mostly made of wood.",
+      "quote": "Most commonly, harps are made of wood and are triangular in shape.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A harp has strings that run at a slant to its soundboard.",
+      "quote": "The harp is a stringed musical instrument that has individual strings running at an angle to its soundboard; the strings are plucked with the fingers.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A harp has a neck, a resonator and strings.",
+      "quote": "All harps have a neck, resonator, and strings, frame harps or triangular harps have a pillar at their long end to support the strings, while open harps, such as arch harps and bow harps, do not.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A harp's frame has a pillar at its long end that holds up the strings.",
+      "quote": "All harps have a neck, resonator, and strings, frame harps or triangular harps have a pillar at their long end to support the strings, while open harps, such as arch harps and bow harps, do not.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The top of each string is fixed to the crossbar or neck, where there is a tuning peg.",
+      "quote": "The top end of each string is secured on the crossbar or neck, where each will have a tuning peg or similar device to adjust the pitch.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Each string runs down from the crossbar to the sounding board on the resonating body, where it is tied with a knot.",
+      "quote": "From the crossbar, the string runs down to the sounding board on the resonating body, where it is secured with a knot; on modern harps the string's hole is protected with an eyelet to limit wear on the wood.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The strings are made of gut or wire, and often nylon or metal today.",
+      "quote": "Strings are made of gut or wire, often replaced in the modern day by nylon or metal.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The frame is usually a triangle made of wood.",
+      "quote": "Harps have strings that are tied to the frame, which is usually a triangle made of wood.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "The side of the triangle that leans on the player's body is called the sound box.",
+      "quote": "The side of the triangle that leans on the player's body is called the \"sound box\".",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "The top side of the triangle has many pegs, one for each string.",
+      "quote": "The top side of the triangle has a lot of pegs in it. There is one peg for each string on the harp.",
+      "source": "wikipedia_simple"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "The body of a harp is hollow.",
+        "quote": "The body is hollow, and when a taut string is plucked, the body resonates, projecting sound.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Harp",
+      "title": "Harp",
+      "revision": 1386585659,
+      "revision_time": "2026-11-19T08:20:16Z",
+      "fetched_on": "2026-11-24",
+      "chars": 26266,
+      "sha256": "149858b0a96732c6ad2e05dc5661f31cd1a26f20863086485daa3599b9fd78aa"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Harp",
+      "title": "Harp",
+      "revision": 7679286,
+      "revision_time": "2021-07-25T15:52:38Z",
+      "fetched_on": "2026-11-24",
+      "chars": 4346,
+      "sha256": "632bf4d38a99724f67335c2ac7475da9eaa9a31e159ac73f4fb3693a6611636f"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "A harp's frame has a pillar at its long end that holds up the strings.",
+    "A harp has strings that run at a slant to its soundboard."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "Tall triangular frame with a pillar; strings slant to the soundboard",
+    "covering": []
+  }
+}

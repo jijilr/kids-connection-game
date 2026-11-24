@@ -1,0 +1,54 @@
+{
+  "name": "Banjo",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "The banjo is a stringed musical instrument with a thin membrane stretched over a frame or cavity to form a resonator.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "basis": "judged, not sourced",
+      "why": "It is a musical instrument, which is not a vehicle, tool, building, or household item, so among the choices it best fits as a plaything."
+    },
+    "how_we_play_with_it": {
+      "value": "music",
+      "quote": "The banjo is a stringed musical instrument with a thin membrane stretched over a frame or cavity to form a resonator.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "how_it_makes_sound": {
+      "value": "pluck_strings",
+      "quote": "In almost all of its forms, banjo playing is characterized by a fast arpeggiated plucking, though many different playing styles exist.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Banjo",
+      "title": "Banjo",
+      "asked_for": "Banjo",
+      "revision": 1385950857,
+      "fetched_on": "2026-11-24",
+      "sha256": "feaf174575da90e3beb99dd8ad392f7c9157bf1ec65a15de60c931ccc3cd05cd"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Banjo",
+      "title": "Banjo",
+      "asked_for": "Banjo",
+      "revision": 10802536,
+      "fetched_on": "2026-11-24",
+      "sha256": "1903193eb578053359257272445f0e60be3503f4126568ca0a0958f35d29fd1e"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

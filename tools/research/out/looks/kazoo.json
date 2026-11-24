@@ -1,0 +1,71 @@
+{
+  "name": "Kazoo",
+  "group": "Things people make > Toys > Make music with it > Blow into it",
+  "features": [
+    {
+      "claim": "A kazoo is a tube with a circular hole that is raised above the length of the tube.",
+      "quote": "Frost's kazoo did not have the streamlined, submarine shape of modern kazoos, but it was similar in that the aperture was circular and elevated above the length of the tube.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The player hums into the wider and flattened side of the kazoo.",
+      "quote": "A kazoo player hums, rather than blows, into the wider and flattened side of the instrument.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "A kazoo has a membrane that vibrates when the player hums into it.",
+        "quote": "The oscillating air pressure of the hum makes the kazoo's membrane vibrate.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The membrane is made of goldbeater's skin or a material with similar characteristics.",
+        "quote": "one of a class of instruments that modify the player's voice by way of a vibrating membrane of goldbeater's skin or material with similar characteristics",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "The first metal kazoo, the modern one, was made of metal.",
+        "quote": "The modern kazoo—also the first one made of metal—was patented by George D. Smith of Buffalo, New York,  May 27, 1902.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Kazoo",
+      "title": "Kazoo",
+      "revision": 1368356060,
+      "revision_time": "2026-08-08T15:51:42Z",
+      "fetched_on": "2026-11-24",
+      "chars": 8921,
+      "sha256": "b38118408e1fb1f8e475068edda889756881cb013d68f5ee317734fec8e65230"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "A kazoo is a tube with a circular hole that is raised above the length of the tube.",
+    "The player hums into the wider and flattened side of the kazoo."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "Tube with a raised circular hole and a wider flattened blowing end.",
+    "covering": []
+  }
+}

@@ -23,6 +23,10 @@ class GameSettings {
   /// 23 Nov 2026: 0.8).
   final double deeperShare;
 
+  /// After this many sets in one sitting the web opens by itself, if it has grown, and
+  /// the new knots light up ("your web grew"). 0: never by itself.
+  final int webAfterSets;
+
   const GameSettings({
     required this.startField,
     required this.startLabel,
@@ -30,6 +34,7 @@ class GameSettings {
     this.holdBack = const {},
     this.boardsNeedPictures = false,
     this.deeperShare = 0.8,
+    this.webAfterSets = 4,
   });
 
   factory GameSettings.fromJson(Map<String, dynamic> json) {
@@ -44,6 +49,7 @@ class GameSettings {
       holdBack: lists('hold_back'),
       boardsNeedPictures: json['boards_need_pictures'] as bool? ?? false,
       deeperShare: ((json['next_board'] as Map<String, dynamic>?)?['deeper_share'] as num?)?.toDouble() ?? 0.8,
+      webAfterSets: ((json['web'] as Map<String, dynamic>?)?['after_sets'] as num?)?.toInt() ?? 4,
     );
   }
 }

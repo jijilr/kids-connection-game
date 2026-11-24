@@ -1,0 +1,81 @@
+{
+  "name": "Ukulele",
+  "group": "Things people make > Toys > Make music with it > Pluck or strum strings",
+  "features": [
+    {
+      "claim": "A ukulele has a figure-eight body shape like a small acoustic guitar.",
+      "quote": "Typically, ukuleles have a figure-eight body shape similar to that of a small acoustic guitar.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A ukulele usually has four strings.",
+      "quote": "These instruments usually have four strings; some strings may be paired in courses, giving the instrument a total of six or eight strings (primarily for greater strumming volume.)",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A ukulele has 16 to 22 frets, depending on its size.",
+      "quote": "They have 16–22 frets depending on the size.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A ukulele is generally made of wood.",
+      "quote": "The ukulele is generally made of wood, though variants have been composed partially or entirely of plastic or other materials.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A ukulele is a small instrument with four strings.",
+      "quote": "The ukulele (pronounced /ˌjʉːkəˈlɛɪli/ from the Hawaiian ʻukulele, pronounced /ˈʔukuˈlɛlɛ/) is a musical instrument with four strings.",
+      "source": "wikipedia_simple"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "The strings of a ukulele are made of nylon or similar synthetic materials.",
+        "quote": "Modern ukuleles use strings made from nylon polymers, synthetic gut, or fluorocarbon or wound strings composed of a (typically) nylon core wound with metal or polymers, including aluminium and silver-plated copper.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Ukulele",
+      "title": "Ukulele",
+      "revision": 1382137227,
+      "revision_time": "2026-10-26T21:02:29Z",
+      "fetched_on": "2026-11-24",
+      "chars": 16035,
+      "sha256": "90e03861320fa12757e3e91121b7771ad11650ccd2eab953a670dfa29e74ae82"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Ukulele",
+      "title": "Ukulele",
+      "revision": 9030799,
+      "revision_time": "2023-08-28T22:07:54Z",
+      "fetched_on": "2026-11-24",
+      "chars": 841,
+      "sha256": "d9ed713a75f06f737bc75f13f5c6e8461a74824a4f1f02a5bb7d1a1785a24cd9"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "A ukulele has a figure-eight body shape like a small acoustic guitar."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "Figure-eight guitar-like body; no other shape feature sets it apart from the toy guitar",
+    "covering": []
+  }
+}

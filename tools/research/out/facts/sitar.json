@@ -1,0 +1,42 @@
+{
+  "name": "Sitar",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "The sitar (English:   or ; IAST: sitāra) is a plucked stringed instrument originating from the Indian subcontinent and used in Hindustani classical music.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "kind_of_made_thing",
+      "why": "uncertain: two judgements disagree: 'Tools' and 'Toys'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Sitar",
+      "title": "Sitar",
+      "asked_for": "Sitar",
+      "revision": 1386234734,
+      "fetched_on": "2026-11-24",
+      "sha256": "3f2ff8fb3b5f5c796a9f8e79e45105924d97b1e3c6c1fdd2ce9b7dc10ce58de3"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Sitar",
+      "title": "Sitar",
+      "asked_for": "Sitar",
+      "revision": 10977377,
+      "fetched_on": "2026-11-24",
+      "sha256": "0a70f3ce7a9d9132948ea6a20846a6cfb14960667bdb37ae04d210dc8a6b71b1"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

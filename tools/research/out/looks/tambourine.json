@@ -1,0 +1,95 @@
+{
+  "name": "Tambourine",
+  "group": "Things people make > Toys > Make music with it > Hit it to make sound",
+  "features": [
+    {
+      "claim": "A tambourine is a percussion instrument made of a frame.",
+      "quote": "The tambourine is a musical instrument in the percussion family consisting of a frame, often of wood or plastic, with pairs of small metal jingles, called \"zills\".",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The frame usually has pairs of small metal jingles set in it.",
+      "quote": "The tambourine is a musical instrument in the percussion family consisting of a frame, often of wood or plastic, with pairs of small metal jingles, called \"zills\".",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The frame is often made of wood or plastic.",
+      "quote": "The tambourine is a musical instrument in the percussion family consisting of a frame, often of wood or plastic, with pairs of small metal jingles, called \"zills\".",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The most common shape of a tambourine is round.",
+      "quote": "Tambourines come in many shapes with the most common being circular.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A tambourine usually has a drumhead, a skin stretched over it.",
+      "quote": "Classically the term tambourine denotes an instrument with a drumhead, though some variants may not have a head.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A tambourine looks like a small drum you can hold in your hand.",
+      "quote": "The tambourine looks like a small hand-held drum.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Besides the drumhead, it has small pairs of jingles like tiny cymbals set in slots around the frame.",
+      "quote": "But in addition to the skin (drumhead) there are also small pairs of jingles - like tiny cymbals - in slots around the frame.",
+      "source": "wikipedia_simple"
+    }
+  ],
+  "not_this": [],
+  "debated": [
+    {
+      "claim": "Some tambourines are made without a skin, so a picture may or may not show a drumhead.",
+      "quote": "Some are made without a skin, particularly for use in schools.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Not every tambourine has a drumhead, though the classic kind does.",
+      "quote": "Classically the term tambourine denotes an instrument with a drumhead, though some variants may not have a head.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": []
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Tambourine",
+      "title": "Tambourine",
+      "revision": 1382481420,
+      "revision_time": "2026-10-28T22:40:46Z",
+      "fetched_on": "2026-11-24",
+      "chars": 14447,
+      "sha256": "827d1b7707e8d0bd4e89b36acff9011a413b1156e5396921368eb74e155dc075"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Tambourine",
+      "title": "Tambourine",
+      "revision": 10220412,
+      "revision_time": "2025-04-27T18:31:41Z",
+      "fetched_on": "2026-11-24",
+      "chars": 1735,
+      "sha256": "02d62ab2df7df0a826ed5033e84cbf23c493fa70f64f8b13ace4e2b506bbf1da"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "The most common shape of a tambourine is round.",
+    "A tambourine looks like a small drum you can hold in your hand."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "round frame with jingle pairs, held like a small drum",
+    "covering": []
+  }
+}

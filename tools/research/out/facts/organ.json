@@ -1,0 +1,43 @@
+{
+  "name": "Organ",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "In music, the organ is a keyboard instrument of one or more pipe divisions or other means (generally woodwind or electric) for producing tones.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "tool",
+      "quote": "In music, organ is a word that can mean several kinds of musical instruments.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Organ_(music)",
+      "title": "Organ (music)",
+      "asked_for": "Organ (music)",
+      "revision": 1384881352,
+      "fetched_on": "2026-11-24",
+      "sha256": "c0e3ef8c1b394549cac95e64d45a555c6f47209019ce23be1acf886e65e62312"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Organ_(music)",
+      "title": "Organ (music)",
+      "asked_for": "Organ (music)",
+      "revision": 10410733,
+      "fetched_on": "2026-11-24",
+      "sha256": "a8e3e60bb1e69437c35e5aaedaed031dad701c8ae4ffa7bcf10281ba27bd4739"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

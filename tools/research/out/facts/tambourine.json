@@ -1,0 +1,52 @@
+{
+  "name": "Tambourine",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "The tambourine is a musical instrument in the percussion family consisting of a frame, often of wood or plastic, with pairs of small metal jingles, called \"zills\".",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "basis": "judged, not sourced",
+      "why": "It is a small hand-held percussion instrument that children play and shake, so a parent would call it a toy."
+    },
+    "how_we_play_with_it": {
+      "value": "music",
+      "basis": "judged, not sourced",
+      "why": "The sources describe the tambourine as a percussion instrument that is tapped, hit, or shaken to make music."
+    },
+    "how_it_makes_sound": {
+      "value": "hit_or_strike",
+      "basis": "judged, not sourced",
+      "why": "The sources say it is played by tapping, hitting, or shaking it, so it makes sound when struck."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Tambourine",
+      "title": "Tambourine",
+      "asked_for": "Tambourine",
+      "revision": 1382481420,
+      "fetched_on": "2026-11-24",
+      "sha256": "fd7087b30729b909cb7636dfb04806392b476a6d6a4e89a251e174a5f0093bcd"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Tambourine",
+      "title": "Tambourine",
+      "asked_for": "Tambourine",
+      "revision": 10220412,
+      "fetched_on": "2026-11-24",
+      "sha256": "409c2f03deda4f7524aa23e5afcb929a78d8d707c3edf839eef5344bdc1066e9"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

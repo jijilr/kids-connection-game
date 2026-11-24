@@ -1,0 +1,103 @@
+{
+  "name": "Cymbals",
+  "group": "Things people make > Toys > Make music with it > Hit it to make sound",
+  "features": [
+    {
+      "claim": "A cymbal is a thin, round plate.",
+      "quote": "Often used in pairs, cymbals consist of thin, normally round plates of various copper alloys.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A cymbal is a disc.",
+      "quote": "They are discs made of copper, bronze or a special alloy.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "There is a hole drilled in the center of the cymbal.",
+      "quote": "A hole is drilled in the center of the cymbal, which is used to either mount the cymbal on a stand or for tying straps through (for hand playing).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The bell is the raised part right around the hole.",
+      "quote": "The bell, dome, or cup is the raised section immediately surrounding the hole.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The bow is the rest of the surface around the bell.",
+      "quote": "The bow is the rest of the surface surrounding the bell.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The edge is the outer rim of the cymbal.",
+      "quote": "The edge or rim is the immediate circumference of the cymbal.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "In the middle the cymbal juts out a little and has straps that pass through a hole.",
+      "quote": "They look rather like saucepan lids, but in the middle they jut out a little and they have straps there that pass through a hole.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Cymbals come in different sizes, from about 25 cm across to about 60 cm across.",
+      "quote": "Some may be just 25 cm across, large ones may be up to 60 cm across.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "A pair of cymbals is held by a strap set in the bell of each one.",
+      "quote": "Orchestral clash cymbals are traditionally used in pairs, each one having a strap set in the bell of the cymbal by which they are held.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Cymbals are made of copper, bronze or a special alloy.",
+        "quote": "They are discs made of copper, bronze or a special alloy.",
+        "source": "wikipedia_simple",
+        "kind": "features",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cymbal",
+      "title": "Cymbal",
+      "revision": 1384313559,
+      "revision_time": "2026-11-07T17:58:04Z",
+      "fetched_on": "2026-11-24",
+      "chars": 18912,
+      "sha256": "c2bce977c02b273e3a318d88dace8fd0838c2bab0f17eb0af9efd2a917a462e1"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cymbal",
+      "title": "Cymbal",
+      "revision": 8997125,
+      "revision_time": "2023-08-11T23:59:47Z",
+      "fetched_on": "2026-11-24",
+      "chars": 2639,
+      "sha256": "4897d283589fe9022c149636b6fc1d9d4e872fb9d918424647b087217e8d4ea4"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "A cymbal is a thin, round plate.",
+    "The bell is the raised part right around the hole.",
+    "In the middle the cymbal juts out a little and has straps that pass through a hole."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "thin round plate with raised center bell and strap",
+    "covering": []
+  }
+}

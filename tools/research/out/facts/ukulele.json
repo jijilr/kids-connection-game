@@ -1,0 +1,54 @@
+{
+  "name": "Ukulele",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "The ukulele is of Portuguese origin and was popularized in Hawaii.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "basis": "judged, not sourced",
+      "why": "A ukulele is a small musical instrument, and small instruments like this are commonly played with as toys by young children."
+    },
+    "how_we_play_with_it": {
+      "value": "music",
+      "quote": "The ukulele (pronounced /ˌjʉːkəˈlɛɪli/ from the Hawaiian ʻukulele, pronounced /ˈʔukuˈlɛlɛ/) is a musical instrument with four strings.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "how_it_makes_sound": {
+      "value": "pluck_strings",
+      "quote": "Ukuleles generally have four nylon strings  tuned to GCEA (except baritone, which is normally tuned DGBE).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Ukulele",
+      "title": "Ukulele",
+      "asked_for": "Ukulele",
+      "revision": 1382137227,
+      "fetched_on": "2026-11-24",
+      "sha256": "b966979cff1c868120d5124f57e1077261629ddc96d9b531c8cc6c1fbc07d39b"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Ukulele",
+      "title": "Ukulele",
+      "asked_for": "Ukulele",
+      "revision": 9030799,
+      "fetched_on": "2026-11-24",
+      "sha256": "d9ed713a75f06f737bc75f13f5c6e8461a74824a4f1f02a5bb7d1a1785a24cd9"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

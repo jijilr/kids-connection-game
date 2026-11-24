@@ -1,0 +1,44 @@
+{
+  "name": "Pan pipes",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "A pan flute (also known as panpipes or syrinx) is a musical instrument based on the principle of the closed tube, consisting of multiple pipes of gradually increasing length (and occasionally girth).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "basis": "judged, not sourced",
+      "why": "A pan flute is a musical instrument, and for a four-year-old's sorting game it fits best as a toy rather than a vehicle, household item, tool, or building."
+    },
+    "how_we_play_with_it": {
+      "value": "music",
+      "quote": "A pan flute (also known as panpipes or syrinx) is a musical instrument based on the principle of the closed tube, consisting of multiple pipes of gradually increasing length (and occasionally girth).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "how_it_makes_sound": {
+      "value": "blow_into",
+      "basis": "judged, not sourced",
+      "why": "A pan flute is played by blowing air into its pipes to make sound."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Pan_flute",
+      "title": "Pan flute",
+      "asked_for": "Pan pipes",
+      "revision": 1382921722,
+      "fetched_on": "2026-11-24",
+      "sha256": "11bfcca6749508b164c5222ac5f9f36b425b66fe524a2ff8038bc320ca11e036"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

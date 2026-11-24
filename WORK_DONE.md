@@ -18,7 +18,7 @@ Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 | Dictionary | version 12, 21 fields (two withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups with words | 61, each with a ladder of clues; 59 have an explanation |
-| Tests | 67 in the game, 35 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
+| Tests | 72 in the game, 35 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
 
 **The fourteen sets:** Everything, Animals, Mammals, Wild animals on land (made on 24 Nov by the helper,
 while "playing"), Birds, Dinosaurs, Plants, Vegetable plants, Things in nature that are not alive, Things
@@ -223,6 +223,22 @@ The owner's design, in his words in section 3. Built the same day, in five steps
   follows next. Only what he has met is shown, so it only grows. It opens whole and can be zoomed and
   moved. It draws groups, not yet single things: the game does not record which things he has met.
   (`lib/screens/web_screen.dart`, `EngineProvider.web`.)
+
+- **Breadth and depth** (the owner's two measures, 24 Nov). He saw the difficulty himself: if the first
+  four groups are called the branches, "we assume we are the authorities to define that epistemological
+  decision", and "one branch might share elements with another". So both are counted on his own web, not
+  on any list of subjects of ours. An end is a knot with nothing found beyond it. **Breadth** is the
+  number of ends. **Depth** is the number of steps from the middle to an end: the average, and the
+  deepest beside it, because an average hides one long arm among short ones. Sets are counted, never
+  things, so a thing that sits in two arms does no harm. A step is one of this game's own questions, and
+  the screen says so: the numbers show how his web grows, not how much he knows. Faint rings on the web
+  count the steps. (`measureWeb` in `lib/providers/engine_provider.dart`.)
+- **"Your web grew."** The knots he has not been shown before spring in one by one when the web opens,
+  under a line that says how many are new; the web button carries a mark while something is new. After
+  four sets in one sitting the web opens by itself before the next set, with one button, Next, that
+  leads on (`web.after_sets` in `Assets/data/settings.json`; 0 for never). What he has been shown is kept
+  in his saved progress (`web_seen`). There is no sound or spoken line for it yet.
+  (`test/web_grew_test.dart`.)
 
 ### The Vegetable plants set, after the owner was caught by it (24 Nov)
 He played it and could not tell the last two groups apart ("you help me. haha").
@@ -515,3 +531,4 @@ other names for mud.
   the first set made while "playing" (Wild animals on land).
 - The owner played it and was caught by Vegetable plants: the set, its clues and the clue writer fixed.
 - Automate at the top, on by default; the web of what he has found. Spent on the day: about Rs 110.
+- Breadth and depth, counted on his own web; faint rings; "your web grew".

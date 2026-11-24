@@ -3935,6 +3935,320 @@
           "look_closely": "a second try; the better of the two is kept"
         }
       ]
+    },
+    "job_2026_11_24_11_1": {
+      "purpose": "drawn by the job, run 2026-11-24-11",
+      "rows": 3,
+      "cols": 4,
+      "size": 2880,
+      "only_for_this_sheet": "Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.",
+      "cells": [
+        {
+          "thing": "tambourine",
+          "name": "Tambourine",
+          "draw": "A round hand-held tambourine, like a small drum: a circular wooden frame with a skin drumhead, and pairs of small metal jingles set in slots around the frame, in natural wood and silver colours",
+          "must_show": [
+            "The most common shape of a tambourine is round.",
+            "A tambourine looks like a small drum you can hold in your hand."
+          ],
+          "not_this": [],
+          "features": [
+            "A tambourine is a percussion instrument made of a frame.",
+            "The frame usually has pairs of small metal jingles set in it.",
+            "The frame is often made of wood or plastic.",
+            "The most common shape of a tambourine is round.",
+            "A tambourine usually has a drumhead, a skin stretched over it.",
+            "A tambourine looks like a small drum you can hold in your hand.",
+            "Besides the drumhead, it has small pairs of jingles like tiny cymbals set in slots around the frame."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Tambourine",
+            "https://simple.wikipedia.org/wiki/Tambourine"
+          ]
+        },
+        {
+          "thing": "triangle",
+          "name": "Triangle",
+          "draw": "A shiny metal triangle percussion instrument with one rounded corner and a small open gap, hanging from a thin string, with a short metal striker beside it, resting on plain ground"
+        },
+        {
+          "thing": "cymbals",
+          "name": "Cymbals",
+          "draw": "A thin round metal plate, bronze-gold, with a raised bump in the middle around a small hole, a strap through the hole; whole, seen flat, resting on the ground",
+          "must_show": [
+            "A cymbal is a thin, round plate.",
+            "The bell is the raised part right around the hole.",
+            "In the middle the cymbal juts out a little and has straps that pass through a hole."
+          ],
+          "not_this": [],
+          "features": [
+            "A cymbal is a thin, round plate.",
+            "A cymbal is a disc.",
+            "There is a hole drilled in the center of the cymbal.",
+            "The bell is the raised part right around the hole.",
+            "The bow is the rest of the surface around the bell.",
+            "The edge is the outer rim of the cymbal.",
+            "In the middle the cymbal juts out a little and has straps that pass through a hole.",
+            "Cymbals come in different sizes, from about 25 cm across to about 60 cm across.",
+            "A pair of cymbals is held by a strap set in the bell of each one."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Cymbal",
+            "https://simple.wikipedia.org/wiki/Cymbal"
+          ]
+        },
+        {
+          "thing": "recorder",
+          "name": "Recorder",
+          "draw": "A wooden recorder: a straight tube, wider at the top mouth end and narrower at the bottom, with a row of seven finger holes and one thumb hole on the back, in natural light-brown wood",
+          "must_show": [
+            "It is shaped like a tube with one end bigger than the other.",
+            "It has holes for seven fingers and one thumb."
+          ],
+          "not_this": [],
+          "features": [
+            "It is shaped like a tube with one end bigger than the other.",
+            "It has holes for seven fingers and one thumb.",
+            "It has a thumb-hole for the upper hand and holes for seven fingers: three for the upper hand and four for the lower.",
+            "It is traditionally made from wood or ivory.",
+            "Student recorders are commonly made of moulded plastic.",
+            "Its finger holes are open.",
+            "Some recorders have keys to cover tone holes that are too far apart or too large for the fingers.",
+            "A bocal may be used so the player can blow into it while keeping a comfortable hand position.",
+            "Some recorders have a bent bore that brings the windway closer to the keys or finger holes."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Recorder_(musical_instrument)",
+            "https://simple.wikipedia.org/wiki/Recorder"
+          ]
+        },
+        {
+          "thing": "harmonica",
+          "name": "Harmonica",
+          "draw": "A small flat rectangular harmonica, silver metal case with a row of small holes along one long edge, held sideways to blow into; draw it whole, alone, resting on plain ground",
+          "must_show": [
+            "It is a small instrument played with the mouth by blowing into holes in its side.",
+            "It has a mouthpiece that covers one edge along most of its length, with holes along it."
+          ],
+          "not_this": [],
+          "features": [
+            "It is a small instrument played with the mouth by blowing into holes in its side.",
+            "It has a mouthpiece that covers one edge along most of its length, with holes along it.",
+            "The basic parts are the comb, the reed plates and the cover plates.",
+            "The comb looks like a hair comb, which may be where its name comes from.",
+            "Each reed is a flat, long spring fixed at one end over a slot.",
+            "The cover plates cover the reed plates and are usually made of metal.",
+            "The mouthpiece sits between the air chambers and the player's mouth."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Harmonica",
+            "https://simple.wikipedia.org/wiki/Harmonica"
+          ]
+        },
+        {
+          "thing": "kazoo",
+          "name": "Kazoo",
+          "draw": "A small plastic kazoo: a short straight tube, wider and flattened at the mouth end where the player hums, with a raised circular hole on top of the tube; bright colours, whole, on plain ground",
+          "must_show": [
+            "A kazoo is a tube with a circular hole that is raised above the length of the tube.",
+            "The player hums into the wider and flattened side of the kazoo."
+          ],
+          "not_this": [],
+          "features": [
+            "A kazoo is a tube with a circular hole that is raised above the length of the tube.",
+            "The player hums into the wider and flattened side of the kazoo."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Kazoo"
+          ]
+        },
+        {
+          "thing": "pan_pipes",
+          "name": "Pan pipes",
+          "draw": "A row of bamboo pipes of increasing length bound side by side, closed at the bottom, natural pale yellow-brown bamboo, resting on the ground",
+          "must_show": [
+            "It is made of several pipes that get longer one after another.",
+            "The pipes are placed side by side in a row and bound together."
+          ],
+          "not_this": [],
+          "features": [
+            "It is made of several pipes that get longer one after another.",
+            "The pipes are placed side by side in a row and bound together.",
+            "In the Romanian style the pipes are arranged in a curved row and glued solidly together."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Pan_flute"
+          ]
+        },
+        {
+          "thing": "toy_accordion",
+          "name": "Toy accordion",
+          "draw": "A small toy accordion in bright red and yellow plastic, with two rows of white and black keys and a folded bellows, standing whole on plain ground"
+        },
+        {
+          "thing": "toy_organ",
+          "name": "Toy organ",
+          "draw": "A small colourful plastic toy organ in India, a rectangular keyboard with about a dozen white and black keys, small speaker grille, red and yellow casing, standing alone on plain ground"
+        },
+        {
+          "thing": "toy_synthesizer",
+          "name": "Toy synthesizer",
+          "draw": "A small rectangular toy synthesizer in bright red and yellow plastic, with a row of white and black piano keys along the front and a few round colored buttons on top, resting on plain ground"
+        },
+        {
+          "thing": "harp",
+          "name": "Harp",
+          "draw": "A wooden harp, triangular, with a tall pillar at its long end holding up many strings that run at a slant to its soundboard, plucked with the fingers, in natural wood colours, standing whole on the ground",
+          "must_show": [
+            "A harp's frame has a pillar at its long end that holds up the strings.",
+            "A harp has strings that run at a slant to its soundboard."
+          ],
+          "not_this": [],
+          "features": [
+            "A harp is usually shaped like a triangle.",
+            "A harp is mostly made of wood.",
+            "A harp has strings that run at a slant to its soundboard.",
+            "A harp has a neck, a resonator and strings.",
+            "A harp's frame has a pillar at its long end that holds up the strings.",
+            "The top of each string is fixed to the crossbar or neck, where there is a tuning peg.",
+            "Each string runs down from the crossbar to the sounding board on the resonating body, where it is tied with a knot.",
+            "The strings are made of gut or wire, and often nylon or metal today.",
+            "The frame is usually a triangle made of wood.",
+            "The side of the triangle that leans on the player's body is called the sound box.",
+            "The top side of the triangle has many pegs, one for each string."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Harp",
+            "https://simple.wikipedia.org/wiki/Harp"
+          ]
+        },
+        {
+          "thing": "banjo",
+          "name": "Banjo",
+          "draw": "A modern banjo: a round body with a thin pale circular membrane stretched over a frame, a long wooden neck with strings, plucked with the fingers",
+          "must_show": [
+            "A thin membrane is stretched over a frame or cavity to make its resonator.",
+            "It has a neck made of wood."
+          ],
+          "not_this": [],
+          "features": [
+            "A thin membrane is stretched over a frame or cavity to make its resonator.",
+            "The membrane is usually round.",
+            "It has a neck made of wood.",
+            "It has strings."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Banjo",
+            "https://simple.wikipedia.org/wiki/Banjo"
+          ]
+        }
+      ]
+    },
+    "job_2026_11_24_11_2": {
+      "purpose": "drawn by the job, run 2026-11-24-11, second tries",
+      "grid": 2,
+      "size": 1920,
+      "only_for_this_sheet": "Each object is shown alone, clean and complete, as in a catalogue. No people, no hands, no brand names, no logos and no writing.",
+      "cells": [
+        {
+          "thing": "ukulele",
+          "name": "Ukulele",
+          "draw": "A small wooden ukulele with a figure-eight guitar-shaped body, a round sound hole, a long neck with frets, and four nylon strings running from the bridge up the neck to the tuning pegs on the head",
+          "must_show": [
+            "A ukulele has a figure-eight body shape like a small acoustic guitar."
+          ],
+          "not_this": [],
+          "features": [
+            "A ukulele has a figure-eight body shape like a small acoustic guitar.",
+            "A ukulele usually has four strings.",
+            "A ukulele has 16 to 22 frets, depending on its size.",
+            "A ukulele is generally made of wood.",
+            "A ukulele is a small instrument with four strings."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Ukulele",
+            "https://simple.wikipedia.org/wiki/Ukulele"
+          ]
+        },
+        {
+          "thing": "lute",
+          "name": "Lute",
+          "draw": "A modern lute: a deep round bowl-shaped back, a thin flat teardrop-shaped wooden soundboard with a carved round rose hole in the centre, and a neck with pegs and frets, strung with strings, in natural wood brown",
+          "must_show": [
+            "A lute has a neck and a deep round back around a hollow cavity.",
+            "The soundboard is a teardrop-shaped thin flat plate of wood.",
+            "The sound board has a carved hole in the center called the rose."
+          ],
+          "not_this": [],
+          "features": [
+            "A lute has a neck and a deep round back around a hollow cavity.",
+            "A lute has an oval-shaped back made of strips of wood.",
+            "A lute has a flat front with a neck attached to it.",
+            "The front of the body is a flat piece of wood called the sound board.",
+            "The sound board has a carved hole in the center called the rose.",
+            "The soundboard is a teardrop-shaped thin flat plate of wood.",
+            "The sound hole is covered with a carved grille shaped like an intertwining vine or decorative knot.",
+            "The back is built from thin strips of hardwood called ribs, joined edge to edge.",
+            "The neck is made of light wood with a hardwood veneer under the strings.",
+            "The strings are attached to pegs at the end of the neck.",
+            "The bridge is attached to the soundboard and the strings attach directly into holes bored in it."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Lute",
+            "https://simple.wikipedia.org/wiki/Lute"
+          ]
+        },
+        {
+          "thing": "ukulele",
+          "name": "Ukulele",
+          "draw": "A small wooden ukulele with a figure-eight guitar-shaped body, a round sound hole, a long neck with frets, and four nylon strings running from the bridge up the neck to the tuning pegs on the head; a second view of it",
+          "must_show": [
+            "A ukulele has a figure-eight body shape like a small acoustic guitar."
+          ],
+          "not_this": [],
+          "features": [
+            "A ukulele has a figure-eight body shape like a small acoustic guitar.",
+            "A ukulele usually has four strings.",
+            "A ukulele has 16 to 22 frets, depending on its size.",
+            "A ukulele is generally made of wood.",
+            "A ukulele is a small instrument with four strings."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Ukulele",
+            "https://simple.wikipedia.org/wiki/Ukulele"
+          ],
+          "look_closely": "a second try; the better of the two is kept"
+        },
+        {
+          "thing": "lute",
+          "name": "Lute",
+          "draw": "A modern lute: a deep round bowl-shaped back, a thin flat teardrop-shaped wooden soundboard with a carved round rose hole in the centre, and a neck with pegs and frets, strung with strings, in natural wood brown; a second view of it",
+          "must_show": [
+            "A lute has a neck and a deep round back around a hollow cavity.",
+            "The soundboard is a teardrop-shaped thin flat plate of wood.",
+            "The sound board has a carved hole in the center called the rose."
+          ],
+          "not_this": [],
+          "features": [
+            "A lute has a neck and a deep round back around a hollow cavity.",
+            "A lute has an oval-shaped back made of strips of wood.",
+            "A lute has a flat front with a neck attached to it.",
+            "The front of the body is a flat piece of wood called the sound board.",
+            "The sound board has a carved hole in the center called the rose.",
+            "The soundboard is a teardrop-shaped thin flat plate of wood.",
+            "The sound hole is covered with a carved grille shaped like an intertwining vine or decorative knot.",
+            "The back is built from thin strips of hardwood called ribs, joined edge to edge.",
+            "The neck is made of light wood with a hardwood veneer under the strings.",
+            "The strings are attached to pegs at the end of the neck.",
+            "The bridge is attached to the soundboard and the strings attach directly into holes bored in it."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Lute",
+            "https://simple.wikipedia.org/wiki/Lute"
+          ],
+          "look_closely": "a second try; the better of the two is kept"
+        }
+      ]
     }
   }
 }

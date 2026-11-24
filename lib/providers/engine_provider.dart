@@ -62,6 +62,29 @@ class WebNode {
   bool get isStart => parent == null;
 }
 
+/// How wide and how deep his web is (the owner's two measures of 24 Nov 2026), counted on
+/// the web itself and not on any list of subjects of ours. An end is a knot with nothing
+/// found beyond it. Breadth is the number of ends. Depth is the number of steps from the
+/// middle to an end: its average, and the deepest. A step is one of this game's own
+/// questions, so the numbers show how his web grows; they are not a measure of how much
+/// he knows.
+class WebMeasure {
+  final int ends;
+  final double averageDepth;
+  final int deepest;
+  const WebMeasure(this.ends, this.averageDepth, this.deepest);
+}
+
+WebMeasure measureWeb(List<WebNode> nodes) {
+  final parents = {for (final n in nodes) if (n.parent != null) n.parent!};
+  final depths = [
+    for (final n in nodes)
+      if (!n.isStart && !parents.contains(n.id)) n.id.split('/').length
+  ];
+  if (depths.isEmpty) return const WebMeasure(0, 0, 0);
+  return WebMeasure(depths.length, depths.reduce((a, b) => a + b) / depths.length, depths.reduce(max));
+}
+
 /// Game state for the text/picture engine: a 4×4 board assembled fresh from the
 /// graph (one named rule per board) and the filter-stack traversal (dig deeper / back).
 class EngineProvider extends ChangeNotifier {
@@ -273,6 +296,37 @@ class EngineProvider extends ChangeNotifier {
     return nodes.values.toList();
   }
 
+  /// The knots of his web he has not been shown yet, nearest the middle first.
+  List<String> get newKnots => [
+        for (final n in web)
+          if (!n.isStart && !progress.webSeen.contains(n.id)) n.id
+      ];
+
+  /// He has been shown the web as it stands.
+  void markWebSeen() {
+    final before = progress.webSeen.length;
+    progress.webSeen.addAll(web.where((n) => !n.isStart).map((n) => n.id));
+    if (progress.webSeen.length == before) return;
+    unawaited(_progressStore.save(progress));
+    notifyListeners();
+  }
+
+  // "Your web grew": after a few sets in one sitting the web opens by itself, if it has grown.
+  int _setsThisSitting = 0;
+  int _momentShownAt = 0;
+
+  /// It is time to show him his web before the next set.
+  bool get webMomentDue {
+    final every = _repo.settings.webAfterSets;
+    return every > 0 &&
+        _setsThisSitting > 0 &&
+        _setsThisSitting % every == 0 &&
+        _momentShownAt != _setsThisSitting &&
+        newKnots.isNotEmpty;
+  }
+
+  void webMomentShown() => _momentShownAt = _setsThisSitting;
+
   /// The groups of this set in the order he did them best (the owner's rule of 24 Nov
   /// 2026): fewest wrong guesses that took in its things, then no clue, and a tie goes
   /// to the one he attempted earliest.
@@ -481,6 +535,7 @@ class EngineProvider extends ChangeNotifier {
             all: [for (final g in b.groups) idOf(g)],
             didWell: [for (final g in ranked) if (didWell(g)) idOf(g)]);
         unawaited(_progressStore.save(progress));
+        _setsThisSitting++;
         nextStep = _chooseNext();
         message = 'Solved!';
         notifyListeners();

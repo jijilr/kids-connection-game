@@ -5319,5 +5319,111 @@
         "source": "the model"
       }
     ]
+  },
+  "made_by_people/toy/music": {
+    "status": "approved by the rules on 2026-11-24, job run 2026-11-24-11",
+    "field": "how_it_makes_sound",
+    "wording": "How does this toy make its sound?",
+    "values": {
+      "hit_or_strike": {
+        "label": "Hit it to make sound",
+        "have": [
+          "toy_drum",
+          "toy_xylophone"
+        ],
+        "examples": [
+          "Tambourine",
+          "Triangle",
+          "Cymbals",
+          "Maracas",
+          "Castanets",
+          "Gong"
+        ]
+      },
+      "blow_into": {
+        "label": "Blow into it",
+        "have": [
+          "toy_flute"
+        ],
+        "examples": [
+          "Whistle",
+          "Recorder",
+          "Trumpet",
+          "Harmonica",
+          "Kazoo",
+          "Pan pipes"
+        ]
+      },
+      "press_keys": {
+        "label": "Press keys to play",
+        "have": [
+          "toy_piano"
+        ],
+        "examples": [
+          "Organ",
+          "Keyboard",
+          "Toy accordion",
+          "Toy organ",
+          "Toy synthesizer",
+          "Toy concertina"
+        ]
+      },
+      "pluck_strings": {
+        "label": "Pluck or strum strings",
+        "have": [
+          "toy_guitar"
+        ],
+        "examples": [
+          "Violin",
+          "Harp",
+          "Banjo",
+          "Ukulele",
+          "Sitar",
+          "Lute"
+        ]
+      }
+    },
+    "library": null,
+    "source": "the model",
+    "assign": {},
+    "notes": {},
+    "familiar": {
+      "Tambourine": 0.9,
+      "Triangle": 0.85,
+      "Cymbals": 0.8,
+      "Maracas": 0.85,
+      "Castanets": 0.7,
+      "Gong": 0.75,
+      "Whistle": 0.9,
+      "Recorder": 0.85,
+      "Trumpet": 0.95,
+      "Harmonica": 0.9,
+      "Kazoo": 0.8,
+      "Pan pipes": 0.7,
+      "Organ": 0.8,
+      "Keyboard": 0.9,
+      "Violin": 0.95,
+      "Harp": 0.9,
+      "Banjo": 0.8,
+      "Ukulele": 0.85,
+      "Sitar": 0.6,
+      "Lute": 0.5,
+      "Toy accordion": 0.7,
+      "Toy organ": 0.75,
+      "Toy synthesizer": 0.6,
+      "Toy concertina": 0.4
+    },
+    "tests": {
+      "four familiar things in at least four values": {
+        "hit_or_strike": 8,
+        "blow_into": 7,
+        "press_keys": 7,
+        "pluck_strings": 7
+      },
+      "one value for each thing": "5 things already in the circle placed alike by two checks; 0 fit more than one group; sharpness 0.86",
+      "one clean solution": "sample boards passed",
+      "not a synonym": "no existing field asks or splits the same"
+    },
+    "refused_by_the_rules": []
   }
 }

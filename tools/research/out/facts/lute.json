@@ -1,0 +1,54 @@
+{
+  "name": "Lute",
+  "fields": {
+    "kind_of_thing": {
+      "value": "made_by_people",
+      "quote": "The lute is a kind of musical instrument with strings.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_made_thing": {
+      "value": "toy",
+      "basis": "judged, not sourced",
+      "why": "A lute is a musical instrument, and for a four-year-old's sorting game it fits best with toys and playthings rather than vehicles, tools, buildings, or household items."
+    },
+    "how_we_play_with_it": {
+      "value": "music",
+      "quote": "The lute is a kind of musical instrument with strings.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "how_it_makes_sound": {
+      "value": "pluck_strings",
+      "quote": "The lute is plucked with one hand while the other hand \"frets\" (presses down) the strings on the neck's fingerboard.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Lute",
+      "title": "Lute",
+      "asked_for": "Lute",
+      "revision": 1386172887,
+      "fetched_on": "2026-11-24",
+      "sha256": "8c823c1280eaafd1dc9adbafb4cc158ea42dfceaf81722889f1776a349b49961"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Lute",
+      "title": "Lute",
+      "asked_for": "Lute",
+      "revision": 10859320,
+      "fetched_on": "2026-11-24",
+      "sha256": "e332868773e2f0bd3f011f63e3817d9a33184aea73f390e87e8bee2ee5088070"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}
