@@ -199,6 +199,125 @@ def test_a_thing_in_the_game_without_a_picture_is_planned_for_drawing():
     assert "Cup" not in drawn_for(job.plan(bare, rehearse="plant"))
 
 
+# ------------------------------------------------------------------ every thing drawn from its sources
+
+def test_no_kind_of_thing_is_named_in_the_job():
+    """The owner's ruling of 24 Nov 2026: no hard-coding. The job treats every circle alike,
+    so no field or value of the dictionary may appear in its code as a special case."""
+    import ast
+
+    def code_lines(path) -> list:
+        """The lines that run: no descriptions, no comments."""
+        text = pathlib.Path(path).read_text(encoding="utf-8")
+        described = set()
+        for node in ast.walk(ast.parse(text)):
+            body = getattr(node, "body", None)
+            if (isinstance(node, (ast.Module, ast.FunctionDef, ast.ClassDef)) and body and isinstance(body[0], ast.Expr)
+                    and isinstance(body[0].value, ast.Constant) and isinstance(body[0].value.value, str)):
+                described.update(range(body[0].lineno, body[0].end_lineno + 1))
+        return [line.split("  #")[0] for n, line in enumerate(text.splitlines(), 1)
+                if n not in described and not line.lstrip().startswith("#")]
+
+    code = code_lines(job.__file__) + code_lines(job.looks.__file__)
+    for word in ("kind_of_dinosaur", "dinosaur", "prehistoric", '"extinct"', "kind_of_animal", "kind_of_plant"):
+        lines = [line for line in code if word in line]
+        assert not lines, f"the job names '{word}': {lines[0].strip()}"
+    # and no circle is held back by what it is: nothing in the plan says a kind cannot be prepared
+    assert not [line for line in job.plan(cat.load())["blocked"] if "prehistoric" in line]
+
+
+def test_a_look_keeps_only_what_a_page_says_word_for_word_and_a_picture_can_show():
+    looks = job.looks
+    page = ("The kingfisher has a large head, a long, sharp, pointed bill and short legs. "
+            "Its back is bright blue. It eats small fish that it catches in rivers.")
+    sources = [{"id": "wikipedia_en", "title": "Kingfisher", "text": page}]
+    def ask(client, config, spend, system, user, options=None):
+        if system == looks.READER:
+            return {"features": [
+                {"claim": "It has a long, sharp bill.", "quote": "a long, sharp, pointed bill", "source": "wikipedia_en"},
+                {"claim": "Its back is bright blue.", "quote": "Its back is bright blue.", "source": "wikipedia_en"},
+                {"claim": "It has a red crest.", "quote": "It has a red crest", "source": "wikipedia_en"},    # no such sentence
+                {"claim": "It eats fish.", "quote": "It eats small fish that it catches in rivers.", "source": "wikipedia_en"}],
+                "not_this": [], "debated": []}
+        return {"items": [{"id": "f1", "supported": True, "visible": True},
+                          {"id": "f2", "supported": True, "visible": True},
+                          {"id": "f3", "supported": True, "visible": False}]}       # what it eats does not show
+    real, looks.ask = looks.ask, ask
+    try:
+        record = looks.read_look(None, cat.read_json(looks.CONFIG), None, "Kingfisher", "Birds", sources)
+    finally:
+        looks.ask = real
+    assert [i["claim"] for i in record["features"]] == ["It has a long, sharp bill.", "Its back is bright blue."]
+    assert [i["claim"] for i in record["dropped"]["quote_not_in_the_page"]] == ["It has a red crest."]
+    assert record["dropped"]["second_reading"][0]["why"] == "a picture could not show it"
+
+
+def test_what_tells_a_thing_apart_is_chosen_from_its_own_list_against_its_group():
+    looks, asked = job.looks, []
+    records = [{"name": "Kingfisher", "features": [{"claim": "a long, sharp bill"}, {"claim": "a bright blue back"},
+                                                   {"claim": "smooth scaly legs"}, {"claim": "it often has a white throat"}]},
+               {"name": "Owl", "features": [{"claim": "a round flat face"}, {"claim": "big forward-facing eyes"},
+                                            {"claim": "soft feathers"}]},
+               {"name": "Cup", "features": []}]
+    def ask(client, config, spend, system, user, options=None):
+        asked.append(user)
+        return {"Kingfisher": {"shape": ["f1", "f9", "f3", "f4"], "covering": [], "why": "the bill"},   # f9 is not on its list
+                "Owl": {"shape": ["f1", "f2"], "covering": ["f3"], "why": "the face"}}
+    real, looks.ask = looks.ask, ask
+    try:
+        chosen = looks.tell_apart(None, cat.read_json(looks.CONFIG), None, "Birds", records, ["Crow", "Owl"])
+    finally:
+        looks.ask = real
+    assert chosen["Kingfisher"]["must_show"] == ["a long, sharp bill"]          # an id not on its list, plain scales, and "often", are dropped
+    assert chosen["Owl"]["must_show"] == ["a round flat face", "big forward-facing eyes", "soft feathers"]
+    assert chosen["Cup"]["must_show"] == []                                     # its pages say nothing of its look: drawn as before
+    assert "already in the game: Crow." in asked[0] and "Cup" not in asked[0]
+
+
+def test_the_painter_line_and_the_cell_are_drawn_from_the_look():
+    said = []
+    def ask(client, config, spend, system, user, options=None):
+        said.append(user)
+        return {"draw": "a kingfisher with a long sharp bill and a bright blue back"}
+    real, job.reslib.ask = job.reslib.ask, ask
+    try:
+        look = {"must_show": ["a long, sharp bill"], "not_this": ["a short, hooked bill"],
+                "features": ["a long, sharp bill", "a bright blue back"], "sources": ["https://en.wikipedia.org/wiki/Kingfisher"]}
+        line = job.describe(None, cat.read_json(job.reslib.CONFIG), None, {"chain": "Animals > Birds"}, "Kingfisher", look)
+        job.describe(None, cat.read_json(job.reslib.CONFIG), None, {"chain": "Things people make"}, "Cup", {"must_show": []})
+    finally:
+        job.reslib.ask = real
+    assert "- a long, sharp bill" in said[0] and "- a short, hooked bill" in said[0] and "Return JSON" in said[0]
+    assert "checked sentence by sentence" not in said[1]                       # nothing from its sources: drawn as before
+    assert line.startswith("a kingfisher")
+    cell = job.cell_for({"name": "Kingfisher", "draw": line, "look": look})
+    assert cell["must_show"] == ["a long, sharp bill"] and cell["features"] and cell["not_this"]
+    assert "must_show" not in job.cell_for({"name": "Cup", "draw": "a cup", "look": {"must_show": []}})
+
+
+def test_a_group_is_looked_up_once_and_kept():
+    looks, calls = job.looks, []
+    def read_look(client, config, spend, name, group, sources):
+        calls.append(name)
+        return {"name": name, "group": group, "features": [{"claim": f"{name} shape"}], "not_this": [], "debated": [],
+                "dropped": {}, "sources": []}
+    def tell_apart(client, config, spend, group, records, others=()):
+        calls.append(("apart", tuple(r["name"] for r in records), tuple(others)))
+        return {r["name"]: {"must_show": [r["features"][0]["claim"]], "covering": [], "why": "w"} for r in records}
+    saved = (looks.LOOKS, looks.read_look, looks.tell_apart, looks.whole_pages)
+    with tempfile.TemporaryDirectory() as folder:
+        looks.LOOKS, looks.read_look, looks.tell_apart = pathlib.Path(folder), read_look, tell_apart
+        looks.whole_pages = lambda name, config: []
+        try:
+            first = looks.look_up(None, {"judges": {"use": "x"}}, None, ["Pteranodon", "Quetzalcoatlus"], "Flyers", ["Dimorphodon"])
+            again = looks.look_up(None, {"judges": {"use": "x"}}, None, ["Pteranodon", "Quetzalcoatlus"], "Flyers")
+        finally:
+            looks.LOOKS, looks.read_look, looks.tell_apart, looks.whole_pages = saved
+    assert first["Pteranodon"]["must_show"] == ["Pteranodon shape"] == again["Pteranodon"]["must_show"]
+    assert ("apart", ("Pteranodon", "Quetzalcoatlus"), ("Dimorphodon", "Pteranodon", "Quetzalcoatlus")) in calls
+    assert calls.count("Pteranodon") == 1                                       # the second time it is read from what was kept
+
+
 # ------------------------------------------------------------------ a field is decided by four tests
 
 def stand_in(sorting: dict, checking: dict = None, not_birds: tuple = (), more: dict = None):

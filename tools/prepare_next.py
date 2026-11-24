@@ -40,11 +40,15 @@ filler members, no surface fields.
                pages use a word in another sense (a broom is "a cleaning tool"), two
                checks sort the thing as a parent would, and their agreement decides.
   5. boards    the new things must not give any board a second clean solution.
-  6. draw      only when enough things passed for the group to open: DeepSeek writes one
-               line for the painter and the OpenAI image model draws them, pooled onto
+  6. draw      only when enough things passed for the group to open: first how each thing
+               looks, from its own whole pages, checked sentence by sentence, and what tells
+               it from the others of its group (tools/research/looks.py; for every thing,
+               of every kind: the owner's ruling of 24 Nov 2026). DeepSeek writes the
+               painter's line from that, and the OpenAI image model draws them, pooled onto
                as few sheets of nine as will hold them.
-  7. check     each tile is cut and a vision model says what it shows. A thing with no
-               good tile gets one second try, if the cap allows.
+  7. check     each tile is cut and a vision model says what it shows; a thing drawn from
+               its sources is also checked against them (tools/pictures/check_features.py).
+               A thing with no good tile gets one second try, if the cap allows.
   8. finish    what passed every check goes into the game. What did not is held by the
                rules, with the reason, and a later run takes it up again.
   9. words     every group a child can meet gets a ladder of clues and an explanation
@@ -91,6 +95,7 @@ for folder in ("tools/catalogue", "tools/research", "tools/content", "tools/job"
 import catalogue as cat                      # noqa: E402  the master record
 import facts                                 # noqa: E402  grounded dictionary values
 import fetch                                 # noqa: E402  the pages
+import looks                                 # noqa: E402  what a thing looks like, from its sources
 import reslib                                # noqa: E402  DeepSeek, with a hard cap
 import fields as field_rules                 # noqa: E402  the four tests a new field must pass
 from boards import GROUPS, PER_GROUP, make_board, members, second_solution_rate, split   # noqa: E402
@@ -115,6 +120,9 @@ SHEET = {1: {"grid": 1, "size": 1024, "most_usd": 0.07},
          4: {"grid": 2, "size": 1920, "most_usd": 0.21},
          9: {"grid": 3, "size": 2880, "most_usd": 0.21}}
 VISION_CHECK_MOST_USD = 0.01
+FEATURE_CHECK_MOST_USD = 0.03   # the stricter check of one tile against its sources, at most, once (set aside under the cap)
+FEATURE_CHECK_LIKELY_USD = 0.0065  # what it has cost on average: $0.0062 a check over the first 58 checks
+LOOK_LIKELY_USD = 0.006         # reading a thing's whole pages for how it looks, and telling it apart
 SHEET_WORDING = {   # the per-sheet instruction already used for each kind of thing
     "made_by_people": "made_1", "animal": "animals_1", "plant": "plants_2", "nature_not_alive": "nature_2"}
 
@@ -365,11 +373,6 @@ def asks_for(catalogue: dict, cid: str, avoid: set = (), filled: set = ()) -> tu
             blocked.append(f"{labels_along(dictionary, fixed)}: {' and '.join(ready)} are ready and deliberately "
                            "not in the game yet. The owner (or the first child) says which goes in.")
             continue
-        if any(f in fixed for f in ("kind_of_dinosaur",)) or fixed.get("extinct") is True:
-            blocked.append(f"{labels_along(dictionary, fixed)}: prehistoric animals need the feature research "
-                           "before they are drawn, and this job does not run that yet"
-                           + (f". Recorded and not in the game: {', '.join(t['name'] for t in there)}" if there else ""))
-            continue
         asks.append({"circle": cid, "chain": labels_along(dictionary, fixed), "fixed": fixed, "need": short,
                      "recorded_but_not_in_the_game": there})
     return asks, blocked
@@ -418,10 +421,6 @@ def plan(catalogue: dict, rehearse: str = None, played: set = None, asked: set =
             if rehearse:
                 blocked.append(f"{label}: it needs a field to sort it by. A rehearsal does not add one; a real run does.")
                 continue
-            if any(f == "kind_of_dinosaur" for f, _ in path):
-                blocked.append(f"{chain}: prehistoric animals need the feature research before they are drawn, "
-                               "and this job does not run that yet")
-                continue
             circles.append({"circle": cid, "label": label, "chain": chain, "needs_field": True,
                             "expect_things": circle["missing"]["things"] + GROUPS * SPARE})
             continue
@@ -451,7 +450,8 @@ def likely_usd(things: int) -> float:
     """What drawing and settling this many things has cost so far, on average."""
     full, rest = divmod(things, 9)
     sheets = full * SHEET[9]["most_usd"] + (SHEET[next(n for n in sorted(SHEET) if n >= rest)]["most_usd"] if rest else 0)
-    return things * 0.006 + sheets * 0.9
+    # settling, then drawing from the sources: how it looks, and a stricter check of its two tiles
+    return things * (0.006 + LOOK_LIKELY_USD + 2 * FEATURE_CHECK_LIKELY_USD) + sheets * 0.9
 
 
 def expected_cost(the_plan: dict, rate: float, cap_inr: float) -> tuple:
@@ -812,24 +812,57 @@ def boards_stay_clean(catalogue: dict, ask: dict, accepted: list) -> str:
 
 # ------------------------------------------------------------------ 6. draw  7. check
 
-def describe(client, config, spend, ask: dict, name: str) -> str:
+LOOK_TASK = """
+From its sources, checked sentence by sentence (the owner's ruling of 24 Nov 2026: every thing is drawn from what its sources say it looks like):
+What tells it from the other things of its group. The line MUST make each of these plain:
+{must_show}
+Mistakes pictures make that the sources say are wrong. The line must steer clear of them:
+{not_this}
+Write the line from these first; then add its typical look where they say nothing. At most 55 words."""
+
+
+def describe(client, config, spend, ask: dict, name: str, look: dict = None) -> str:
     sources = reslib.saved_sources(name)
     block = "\n\n".join(f'<source id="{s["id"]}">\n{s["text"][:2000]}\n</source>' for s in sources)
-    answer = reslib.ask(client, config, spend, PAINTER, block + "\n\n" + PAINT_TASK.format(name=name, chain=ask["chain"]),
-                        {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"], "most_written": 200})
+    task = PAINT_TASK.format(name=name, chain=ask["chain"])
+    if look and look.get("must_show"):
+        task = task.replace("Return JSON:", LOOK_TASK.format(
+            must_show="\n".join(f"- {c}" for c in look["must_show"]),
+            not_this="\n".join(f"- {c}" for c in look.get("not_this") or []) or "- none listed") + "\n\nReturn JSON:")
+    answer = reslib.ask(client, config, spend, PAINTER, block + "\n\n" + task,
+                        {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"], "most_written": 260})
     return str(answer.get("draw", "")).strip().rstrip(".") or f"one typical {name.lower()}, whole"
+
+
+def look_of(record: dict) -> dict:
+    """What a drawing and its stricter check need from a thing's look: the claims only."""
+    return {"must_show": record.get("must_show", []),
+            "not_this": [i["claim"] for i in record.get("not_this", [])],
+            "features": [i["claim"] for i in record.get("features", [])],
+            "sources": [s.get("url") for s in record.get("sources", []) if s.get("url")]}
+
+
+def cell_for(w: dict) -> dict:
+    """One cell of a sheet for a thing to draw. A thing drawn from its sources carries what
+    the stricter picture check compares the tile with (tools/pictures/check_features.py)."""
+    cell = {"thing": cat.slug(w["name"]), "name": w["name"], "draw": w["draw"]}
+    look = w.get("look") or {}
+    if look.get("must_show"):
+        cell.update(must_show=look["must_show"], not_this=look.get("not_this", []),
+                    features=look.get("features") or look["must_show"], sources=look.get("sources", []))
+    return cell
 
 
 def plan_sheet(run_id: str, attempt: int, wanted: list, kind: str) -> str:
     """Add one sheet for these things to the picture plan and return its key. Spare
     cells hold a second view of the first things, so each has two tries."""
     shape = SHEET[next(n for n in sorted(SHEET) if n >= len(wanted))]
-    cells = [{"thing": cat.slug(w["name"]), "name": w["name"], "draw": w["draw"]} for w in wanted]
+    cells = [cell_for(w) for w in wanted]
     spare, i = shape["grid"] ** 2 - len(cells), 0
     while spare > 0:
         w = wanted[i % len(wanted)]
-        cells.append({"thing": cat.slug(w["name"]), "name": w["name"], "draw": w["draw"] + "; a second view of it",
-                      "look_closely": "a second try; the better of the two is kept"})
+        cells.append(dict(cell_for(w), draw=w["draw"] + "; a second view of it",
+                          look_closely="a second try; the better of the two is kept"))
         spare, i = spare - 1, i + 1
     plan_file = cat.read_json(PLAN)
     key = f"job_{run_id.replace('-', '_')}_{attempt}"
@@ -846,8 +879,12 @@ def plan_sheet(run_id: str, attempt: int, wanted: list, kind: str) -> str:
 def draw_and_check(budget: Budget, key: str) -> tuple:
     """Draw one planned sheet, cut it, and ask the vision model what each tile shows.
     Returns the sheet's id and, for each thing, its tiles that passed."""
-    shape = next(s for s in SHEET.values() if s["size"] == cat.read_json(PLAN)["sheets"][key]["size"])
-    budget.need(shape["most_usd"] + VISION_CHECK_MOST_USD, "drawing and checking a sheet")
+    planned = cat.read_json(PLAN)["sheets"][key]
+    shape = next(s for s in SHEET.values() if s["size"] == planned["size"])
+    from_sources = sum(1 for c in planned["cells"] if c.get("must_show"))
+    # a tile drawn from its sources is checked against them, and a one-point failure twice
+    budget.need(shape["most_usd"] + VISION_CHECK_MOST_USD + from_sources * 2 * FEATURE_CHECK_MOST_USD,
+                "drawing and checking a sheet")
     before = set(cat.read_json(RECORDS)["sheets"])
     tool("make_sheet.py", key, "--yes")
     records = cat.read_json(RECORDS)
@@ -855,11 +892,18 @@ def draw_and_check(budget: Budget, key: str) -> tuple:
     budget.add("drawing", records["sheets"][sheet_id]["cost_usd"])
     tool("cut_sheet.py", sheet_id)
     tool("check_tiles.py", sheet_id)
+    if from_sources:
+        tool("check_features.py", sheet_id)
     records = cat.read_json(RECORDS)
-    budget.add("picture_checks", records["sheets"][sheet_id].get("vision_check_cost_usd", 0))
+    budget.add("picture_checks", records["sheets"][sheet_id].get("vision_check_cost_usd", 0)
+               + records["sheets"][sheet_id].get("feature_check_cost_usd", 0))
+    cells = planned["cells"]
     good = {}
     for tile_id, tile in records["tiles"].items():
         if tile["sheet_id"] == sheet_id and tile["cut"]["ok"] and tile["vision"] and tile["vision"]["shows"] == tile["expected_thing"]:
+            # drawn from its sources: it must also show what tells it apart, and none of the listed mistakes
+            if cells[tile["cell"] - 1].get("must_show") and not (tile.get("feature_check") or {}).get("passed"):
+                continue
             good.setdefault(tile["expected_thing"], []).append(tile_id)
     return sheet_id, good
 
@@ -1351,11 +1395,26 @@ def run_job(run: dict, budget: Budget, folder: pathlib.Path):
                   and t.get("tries", 0) < attempt]
         if not wanted:
             break
+        # how each thing looks, from its own sources, before a line is written for it: for EVERY
+        # thing, group by group, so that what tells it apart is chosen against its group-mates
+        # (the owner's ruling of 24 Nov 2026). The owner's own word on how to draw a thing wins.
+        said_by_owner = lambda t: (cat.load()["things"].get(cat.slug(t["name"])) or {}).get("draw_as")
+        to_look = [t for t in wanted if "look" not in t and "draw" not in t and not said_by_owner(t)]
+        for ask_number in sorted({t["ask"] for t in to_look}):
+            ask = asks[ask_number]
+            group = [t for t in to_look if t["ask"] == ask_number]
+            beside = [e["name"] for e in cat.load()["things"].values() if e["status"] == cat.IN_GAME
+                      and all(e["fields"].get(f) == v for f, v in ask["fixed"].items())]
+            found = deepseek_step(lambda spend: looks.look_up(client, config, spend, [t["name"] for t in group],
+                                                              ask["chain"], beside))
+            for t in group:
+                t["look"] = look_of(found.get(t["name"], {}))
+            save()
         for t in wanted:
             if "draw" not in t:
-                # where the owner has said how a thing is to be drawn (`draw_as` in the catalogue), that is the line
-                said = (cat.load()["things"].get(cat.slug(t["name"])) or {}).get("draw_as")
-                t["draw"] = said or deepseek_step(lambda spend: describe(client, config, spend, asks[t["ask"]], t["name"]))
+                said = said_by_owner(t)
+                t["draw"] = said or deepseek_step(lambda spend: describe(client, config, spend, asks[t["ask"]],
+                                                                         t["name"], t.get("look")))
         save()
         for kind in sorted({kind_of(t) for t in wanted}):
             same = [t for t in wanted if kind_of(t) == kind]

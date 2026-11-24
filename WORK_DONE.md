@@ -4,7 +4,7 @@ A running record of the work on the learning game, kept in the project so it can
 It is updated after each piece of work. The fuller story, with the reasons, is in the Claude Doc
 "The Learning Engine" (https://claude.ai/code/artifact/c3f3f0d3-5f91-4df4-8786-d894ef1d12df).
 
-Last updated: 23 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) has not been touched.
+Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) has not been touched.
 
 ---
 
@@ -18,7 +18,7 @@ Last updated: 23 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 | Dictionary | version 10, 19 fields (one withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups a child can meet | 57: 52 have a ladder of clues, 44 have an explanation |
-| Tests | 57 in the game, 29 for the job, 8 for the catalogue, 10 for the pictures. All pass |
+| Tests | 57 in the game, 34 for the job, 8 for the catalogue, 10 for the pictures. All pass |
 
 **The thirteen boards:** Everything, Animals, Mammals, Birds, Dinosaurs, Plants, Vegetable plants,
 Things in nature that are not alive, Things people make, Vehicles, Toys, Things in the house, Buildings.
@@ -145,6 +145,26 @@ Things in nature that are not alive, Things people make, Vehicles, Toys, Things 
   page word for word; two or three sentences; a second reading agrees.
 - The catalogue's `groups` section is the master record. `Assets/data/groups.json` is the game's copy.
 
+### Every thing drawn from its sources (24 Nov)
+The owner's ruling: no kind of thing is special. Until then the job refused anything under Dinosaurs
+or marked extinct, because only a fixed list of prehistoric animals had been researched before drawing.
+Now every thing the job draws goes through the same step, `tools/research/looks.py`:
+- the whole Wikipedia articles of the pages already chosen for it (the job had kept only their
+  openings), and any museum or Kew page already saved;
+- DeepSeek lists what a picture of it would show, the mistakes pictures make, and what is uncertain,
+  each with a sentence a script finds word for word in the page; a second reading keeps only what the
+  sentence supports and a picture can show. Pages about something else of the same name (Glass the
+  material) give nothing. Only what is true of every ordinary one counts: no variant, nothing "often";
+- the judge picks the two to four features that tell it from the other things of its group;
+- the painter's line is written from those, and the stricter picture check (`check_features.py`,
+  begun for dinosaurs) compares the tile with them. A thing whose pages say nothing of its look is
+  drawn from its typical look, as before. The owner's own `draw_as` still wins.
+- A guard in the job's self-test fails if a kind of thing is ever named in the job's code again.
+- Trial on 24 Nov, about Rs 4: Triceratops, Stegosaurus, Ankylosaurus, Cup, Spoon and Glass. The
+  dinosaurs came out with frill, horns and beak; plates and tail spikes; tail club. Glass was found to be
+  filed under the article about the material.
+- It adds about Rs 2 a thing to a run (the reading, and the stricter check of two tiles).
+
 ### A picture of what the game holds (8 Oct)
 - `docs/game_map.png`: a map of the game, made in Blender. The seed is in the middle, the four kinds of
   thing around it, and the circles inside each kind on the outer ring. A board a child can open is a
@@ -215,6 +235,12 @@ Things in nature that are not alive, Things people make, Vehicles, Toys, Things 
 - The job runs by itself once a week, at most 200 rupees a week, and nothing goes to the live site without
   his yes.
 
+**24 Nov 2026**
+- "No one does it for prehistoric animals... that is hard coding. What I want is dynamically reaching all
+  that. I gave you prehistoric as just an example." Nothing is special-cased by kind. Asked whether every
+  thing should be drawn from what its sources say it looks like: "yes, build it for everything". His
+  picture rule widens from "prehistoric animals are checked against sources" to every thing.
+
 ---
 
 ## 4. Job runs and what they cost
@@ -276,9 +302,9 @@ other names for mud.
   on a small tablet. Nothing was changed. One way: let the explanation leave when he touches the next
   picture.
 
-- **Deeper dinosaur boards cannot be made yet.** The job blocks prehistoric animals until it runs the
-  feature research (`tools/research/extract.py`) that tells look-alikes apart. If he shows mastery of
-  dinosaurs, the game sends him to the Dinosaurs board, but nothing deeper inside it can be prepared.
+- **Glass is filed under the article about glass the material** (since 6 Oct), so the pages it was
+  settled from are not about a drinking glass. Its look is now drawn from its typical look; its fields
+  could be settled again from the right page.
 - The weekly run uses the progress file a grown-up last saved into `tools/job/progress.json`. None has
   been saved yet, so until one is, the job treats every open board as solved and knows nothing of his
   mastery.
@@ -323,6 +349,7 @@ other names for mud.
 | Check the data | `python tools/content/guard.py` |
 | See which circles can open | `python tools/catalogue/catalogue.py circles` |
 | What waits for the owner; what the rules hold | `python tools/catalogue/catalogue.py queue` ; `... held` |
+| How a thing looks, from its sources | `python tools/research/looks.py NAME ... --group "Animals > Birds" --cap-inr 5` (the job runs it by itself) |
 | Write missing clues and explanations | `python tools/content/group_words.py` |
 | Record missing voices | `python tools/voice/record_names.py` |
 | Make the film again | `python tools/film/film_voice.py`, then `flutter test tools/film/film_game_test.dart --dart-define=SEED=40`, then `python tools/film/film_make.py` |
@@ -366,3 +393,7 @@ other names for mud.
 - Mastery on the device; the button after a board goes deeper where he has shown mastery four times in
   five; the job orders its work the same way; a weekly run of the job, 200 rupees a week at most.
 - Fixed: `prepare_next.py --progress FILE` stopped with an error for any file named on the command line.
+
+**24 Nov 2026**
+- No hard-coding: the job no longer names any kind of thing; every thing is drawn from what its sources
+  say it looks like, and checked against them. Deeper dinosaur circles are planned like any other.

@@ -13,8 +13,8 @@ know what to draw again.
 
 "approve-passed" follows the owner's standing rule of 6 Oct 2026: an ordinary tile that
 cut cleanly, and that the vision check named correctly, is approved without waiting for
-him; he glances at the contact sheet afterwards. It leaves alone prehistoric animals
-(they go through check_features.py) and things drawn more than once (choose.py).
+him; he glances at the contact sheet afterwards. It leaves alone things drawn from their
+sources, of any kind (they go through check_features.py) and things drawn more than once (choose.py).
 
 "Set aside" is for a good tile that is deliberately not linked to a thing, such as the
 tiles of a control sheet. It is kept, like every other tile.
@@ -75,7 +75,7 @@ def approve_passed(records: dict, sheet_id: str):
             continue
         thing, why_not = tile["expected_thing"], ""
         if cells[tile["cell"] - 1].get("features"):
-            why_not = "a prehistoric animal: it goes through check_features.py"
+            why_not = "drawn from its sources: it goes through check_features.py"
         elif not tile["cut"]["ok"]:
             why_not = "it did not cut cleanly"
         elif not tile["vision"] or tile["vision"]["shows"] != thing:

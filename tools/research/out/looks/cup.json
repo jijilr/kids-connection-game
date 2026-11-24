@@ -1,0 +1,106 @@
+{
+  "name": "Cup",
+  "group": "Things people make > Things in the house > Things to eat and drink with",
+  "features": [
+    {
+      "claim": "A cup has a flattened half-sphere shape.",
+      "quote": "typically with a flattened hemispherical shape",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A cup holds about 6 to 16 US fluid ounces.",
+      "quote": "often with a capacity of about 6–16 US fluid ounces (177–473 ml)",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A cup can be made of pottery, glass, metal, wood, stone, plastic or other materials.",
+      "quote": "Cups may be made of pottery (including porcelain), glass, metal, wood, stone, polystyrene, plastic, lacquerware, or other materials.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Many cups have handles.",
+      "quote": "They also often have handles",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Modern household cups usually have no stem.",
+      "quote": "Modern household shapes of cups generally lack a stem",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [
+      {
+        "claim": "A cup has an open mouth.",
+        "quote": "and an open \"mouth\"",
+        "source": "wikipedia_en",
+        "kind": "features"
+      }
+    ],
+    "second_reading": [
+      {
+        "claim": "A cup is a small container for holding liquids to drink.",
+        "quote": "A cup is a small container used to hold liquids for drinking",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "A cup is brought to the mouth to drink from it.",
+        "quote": "Normally, a cup is brought in contact with the mouth for drinking",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "What counts as a real cup is not fixed and has changed between generations.",
+        "quote": "The definition of a cup is fluid",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Some people expect a cup to be porcelain with a handle and saucer, while others do not.",
+        "quote": "the \"older generation\" expected a cup to be made of porcelain and have both a handle and a saucer, so that the plastic cup with neither a handle, nor a saucer, was not a \"real cup\", while the \"younger generation\" made no such distinction",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Cups, mugs and glasses are near-synonyms, though they can be told apart.",
+        "quote": "cups, mugs and glasses are \"near-synonyms\", although \"sufficient differences\" can be found that divide them into different groups",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cup",
+      "title": "Cup",
+      "revision": 1383176729,
+      "revision_time": "2026-11-01T10:40:49Z",
+      "fetched_on": "2026-11-24",
+      "chars": 19314,
+      "sha256": "8f857dfab54e16d12f9729fa985aeeac2c9962183d4138576f4e2a487267f0e3"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "A cup has a flattened half-sphere shape."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "flattened half-sphere body, no stem",
+    "covering": []
+  }
+}

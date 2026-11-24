@@ -1,0 +1,156 @@
+{
+  "name": "Ankylosaurus",
+  "group": "Animals > Dinosaurs > Land grazers",
+  "features": [
+    {
+      "claim": "It had a broad, robust body.",
+      "quote": "It was quadrupedal, with a broad, robust body.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It walked on four legs.",
+      "quote": "It was quadrupedal, with a broad, robust body.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its hind legs were longer than its front legs.",
+      "quote": "It was quadrupedal, and its hind limbs were longer than its forelimbs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a wide, low skull.",
+      "quote": "It had a wide, low skull, with two horns pointing backward from the back of the head, and two horns below these that pointed backward and down.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Two horns pointed backward from the back of its head, and two more below them pointed backward and down.",
+      "quote": "It had a wide, low skull, with two horns pointing backward from the back of the head, and two horns below these that pointed backward and down.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The front of its jaws was covered in a beak.",
+      "quote": "The front part of the jaws was covered in a beak, with rows of small, leaf-shaped teeth farther behind it.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had rows of small, leaf-shaped teeth behind the beak.",
+      "quote": "The front part of the jaws was covered in a beak, with rows of small, leaf-shaped teeth farther behind it.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its body was covered in armor plates called osteoderms.",
+      "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Bony half-rings covered its neck.",
+      "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a large club on the end of its tail.",
+      "quote": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its nostrils faced sideways rather than toward the front.",
+      "quote": "Unlike other ankylosaurs, its nostrils faced sideways rather than towards the front.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Four large pyramidal horns stuck out from the rear corners of its skull.",
+      "quote": "Tough, rounded scales protected the top of the skull, while four large pyramidal horns projected outwards from its rear corners.",
+      "source": "wikipedia_simple"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "It is wrong to draw it with a short, drooping tail that has no club.",
+      "quote": "Brown's stegosaur-like reconstruction showed robust forelimbs, a strongly arched back, a pelvis with prongs projecting forwards from the ilium and pubis, as well as a short, drooping tail without a tail club, which was unknown at the time.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It is wrong to draw its armor plates in parallel rows running down the back, as Brown did.",
+      "quote": "Brown also reconstructed the armor plates in parallel rows running down the back; this arrangement was purely hypothetical.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [
+    {
+      "claim": "Nobody knows exactly how its back armor was arranged.",
+      "quote": "These have not been found in articulation, so their exact placement on the body is unknown, though inferences can be made based on related animals, and various configurations have been proposed.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The exact arrangement of the armor plates on its neck is uncertain.",
+      "quote": "Like other ankylosaurids, Ankylosaurus had cervical half-rings (armor plates on the neck), but these are known only from fragments, making their exact arrangement uncertain.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Scientists still have not found a whole skeleton, so much of its skeleton is unknown.",
+      "quote": "The structure of much of the skeleton of Ankylosaurus, including most of the pelvis, tail, and feet, is still unknown.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Nobody knows exactly how its back armor should be arranged.",
+      "quote": "Even today, nobody knows exactly how Ankylosaurus' back armour should be arranged.",
+      "source": "nhm_dino_directory"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": []
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Ankylosaurus",
+      "title": "Ankylosaurus",
+      "revision": 1386170452,
+      "revision_time": "2026-11-17T02:27:23Z",
+      "fetched_on": "2026-11-24",
+      "chars": 38811,
+      "sha256": "1902bfd19797b2d9b90c4f1614fc5e034918718cd1c5a0d0cb4feaa5b875a9d3"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Ankylosaurus",
+      "title": "Ankylosaurus",
+      "revision": 10501541,
+      "revision_time": "2025-09-07T18:56:35Z",
+      "fetched_on": "2026-11-24",
+      "chars": 1944,
+      "sha256": "e0722eea182743f59b2e929fc9f9b42f55de5e7bab66c7973d92f8160ff619fe"
+    },
+    {
+      "id": "nhm_dino_directory",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/ankylosaurus.html",
+      "title": "Ankylosaurus | Natural History Museum",
+      "revision": null,
+      "revision_time": null,
+      "fetched_on": "2026-11-24",
+      "chars": 4252,
+      "sha256": "cd8d7659ff0a23327fb931022f1000a1312f5b08ea77c5f41d4a0cface8029a0"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "It had a large club on the end of its tail.",
+    "It had a wide, low skull.",
+    "Two horns pointed backward from the back of its head, and two more below them pointed backward and down.",
+    "It had a broad, robust body.",
+    "Its body was covered in armor plates called osteoderms."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "tail club, wide low skull with rear horns, broad body",
+    "covering": [
+      "Its body was covered in armor plates called osteoderms."
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "name": "Spoon",
+  "group": "Things people make > Things in the house > Things to eat and drink with",
+  "features": [
+    {
+      "claim": "A spoon has a shallow bowl that is oval or round.",
+      "quote": "A spoon (UK: , US:  SPOON) is a utensil consisting of a shallow bowl (also known as a head), oval or round, at the end of a handle.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The bowl sits at the end of a handle.",
+      "quote": "A spoon (UK: , US:  SPOON) is a utensil consisting of a shallow bowl (also known as a head), oval or round, at the end of a handle.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A spoon is made of two parts: a bowl and a handle.",
+      "quote": "The spoon consists of a bowl and a handle.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The bowl of a modern spoon is narrower at the tip than at the base.",
+      "quote": "The modern form, with the tip of the bowl narrower than the base and the rounded end of the handle turned down, came into use about 1760.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The rounded end of the handle is turned down.",
+      "quote": "The modern form, with the tip of the bowl narrower than the base and the rounded end of the handle turned down, came into use about 1760.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Spoons today are made from metal, wood, porcelain or plastic.",
+        "quote": "Present day spoons are made from metal (notably stainless steel, flat silver or silverware, plated or solid), wood, porcelain or plastic.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Spoon",
+      "title": "Spoon",
+      "revision": 1378988408,
+      "revision_time": "2026-10-07T06:31:29Z",
+      "fetched_on": "2026-11-24",
+      "chars": 10483,
+      "sha256": "ea47e3214770a720dd57107e6920a75850d84adcb03a4f49baf3916b610237c4"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Spoon",
+      "title": "Spoon",
+      "revision": 9891723,
+      "revision_time": "2024-11-18T23:11:51Z",
+      "fetched_on": "2026-11-24",
+      "chars": 948,
+      "sha256": "0b7241976caf5f62fabbf7685395b0b1c4243deedbc74d2880e6565e55ace262"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "A spoon has a shallow bowl that is oval or round.",
+    "The bowl sits at the end of a handle.",
+    "The bowl of a modern spoon is narrower at the tip than at the base."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "oval bowl on a handle, narrower at tip",
+    "covering": []
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "name": "Triceratops",
+  "group": "Animals > Dinosaurs > Land grazers",
+  "features": [
+    {
+      "claim": "It was a very large, four-legged animal with a large bony frill and three horns on its skull.",
+      "quote": "Bearing a large bony frill, three horns on the skull, and a large, four-legged body, exhibiting convergent evolution with rhinoceroses, Triceratops is one of the most recognizable of all dinosaurs and the best-known ceratopsian.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It measured around 8 to 9 metres long.",
+      "quote": "It was also one of the largest, measuring around 8–9 m (26–30 ft) long and weighing up to 6–10 t (5.9–9.8 long tons; 6.6–11.0 short tons).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a large beak at the front of its head, in front of its teeth.",
+      "quote": "The front of the head was equipped with a large beak in front of its teeth.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a single horn on its snout above the nostrils.",
+      "quote": "The skull bore a single horn on the snout above the nostrils.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a pair of brow horns about a metre long, one above each eye.",
+      "quote": "The skull also featured a pair of supraorbital \"brow\" horns approximately 1 meter (3.3 ft) long, with one above each eye.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its frill was relatively short and solid, without the large openings most other ceratopsids had.",
+      "quote": "Most other ceratopsids had large parietal fenestrae, openings in their frills, but those of Triceratops were noticeably solid, unless the genus Torosaurus represents mature Triceratops individuals, which it most likely does not.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had strong limbs, short hands with three hooves each, and short feet with four hooves each.",
+      "quote": "Both Triceratops species possessed a very sturdy build, with strong limbs, short hands with three hooves each, and short feet with four hooves each.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It walked with most of its fingers pointing out and away from the body.",
+      "quote": "Triceratops, like other ceratopsians and related quadrupedal ornithopods (together forming the Cerapoda), walked with most of their fingers pointing out and away from the body, the original condition for dinosaurs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its body was covered in large pebbled scales, with bigger six- or seven-sided scales scattered among them.",
+      "quote": "Regularly scattered (approximately 15–20 centimetres (5.9–7.9 in) from each other, though in no particular pattern) amongst the basement scales are large feature scales, exceeding 10 centimetres (3.9 in) across, which are hexagonal (six-sided) to heptagonal (seven-sided) in shape.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It stood with an upright stance, elbows flexed and slightly bowed out, like a modern rhinoceros.",
+      "quote": "Ichnological evidence in the form of trackways from horned dinosaurs and recent reconstructions of skeletons (both physical and digital) seem to show that Triceratops and other ceratopsids maintained an upright stance during normal locomotion, with the elbows flexed to behind and slightly bowed out, in an intermediate state between fully upright and fully sprawling, comparable to the modern rhinoceros.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its skin had large, pebbled scales.",
+      "quote": "Skin impressions have been found for Triceratops, showing that it had large, pebbled scales.",
+      "source": "nhm_dino_directory"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "It is wrong to draw it with its front legs sprawling out at a wide angle from the body.",
+      "quote": "Originally, it was believed that the front legs of the animal had to be sprawling at a considerable angle from the thorax in order to better bear the weight of the head.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It is wrong to show it with large holes in its frill.",
+      "quote": "Most other ceratopsids had large parietal fenestrae, openings in their frills, but those of Triceratops were noticeably solid, unless the genus Torosaurus represents mature Triceratops individuals, which it most likely does not.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Its skull was enormous, among the largest of all land animals, and could be almost a third of the whole animal's length.",
+        "quote": "Like all chasmosaurines, Triceratops had a large skull relative to its body size, among the largest of all land animals.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "the sentence does not support it"
+      },
+      {
+        "claim": "Whether the frill and horns were mainly for fighting predators or for display is debated, with display now thought most likely.",
+        "quote": "The two main theories have revolved around use in combat, or display in courtship, with the latter thought now to be the most likely primary function.",
+        "source": "wikipedia_simple",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Whether Triceratops fought each other with locked horns is disagreed about.",
+        "quote": "While studies show that such activity would be feasible, if unlike that of present-day horned animals, there is disagreement about whether they did so.",
+        "source": "wikipedia_simple",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Whether Torosaurus is really a mature Triceratops is disputed.",
+        "quote": "This view has been highly disputed, with some morphometric research and the apparent existence of authentic Torosaurus subadults favoring the distinctness of the two genera, according to newer studies.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Whether the differing skulls mean one species or two is still open to interpretation.",
+        "quote": "It is still possible to interpret the differences as representing a single species with sexual dimorphism.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Triceratops",
+      "title": "Triceratops",
+      "revision": 1386183657,
+      "revision_time": "2026-11-17T04:15:13Z",
+      "fetched_on": "2026-11-24",
+      "chars": 45568,
+      "sha256": "317f79781c105f31e941cec0543910be1c999d5e752fdee11ce19737846cb87b"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Triceratops",
+      "title": "Triceratops",
+      "revision": 11037827,
+      "revision_time": "2026-10-22T04:22:16Z",
+      "fetched_on": "2026-11-24",
+      "chars": 7980,
+      "sha256": "5f9619d14b722d861b2160b188acb0c5a60287e81469096f354176564098cb34"
+    },
+    {
+      "id": "nhm_dino_directory",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/triceratops.html",
+      "title": "Triceratops | Natural History Museum",
+      "revision": null,
+      "revision_time": null,
+      "fetched_on": "2026-11-24",
+      "chars": 5680,
+      "sha256": "62810abf10093c2014e12be4f01f8f1adddee8c1607fa8ae814b9ceb6d001588"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "It was a very large, four-legged animal with a large bony frill and three horns on its skull.",
+    "It had a pair of brow horns about a metre long, one above each eye.",
+    "It had a large beak at the front of its head, in front of its teeth.",
+    "It stood with an upright stance, elbows flexed and slightly bowed out, like a modern rhinoceros."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "frill and brow horns, beak, rhino-like stance",
+    "covering": []
+  }
+}

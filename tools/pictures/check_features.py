@@ -1,10 +1,13 @@
-"""The stricter check for prehistoric animals: does the tile show what the sources say?
+"""The stricter check for every thing drawn from its sources: does the tile show what they say?
 
-The owner cannot review every prehistoric animal himself. So each one carries, in
-plan.json, what was written from museum and encyclopedia descriptions (with the
-sources): the few traits that tell it from its look-alikes (`must_show`), the mistakes
-to avoid (`not_this`), and a longer list of features. This asks a stronger vision model
-to compare the full-resolution master against all three.
+Begun for prehistoric animals on 6 Oct 2026; since the owner's ruling of 24 Nov 2026
+("build it for everything") it applies to any thing, of any kind, whose cell in
+plan.json carries what was written from its sources (tools/research/looks.py for the
+job, or the older research for the first dinosaurs): the few traits that tell it from
+the other things of its group (`must_show`), the mistakes to avoid (`not_this`), and a
+longer list of features. This asks a stronger vision model to compare the
+full-resolution master against all three. A cell without them is left to the ordinary
+check.
 
 By the owner's ruling of 6 Oct 2026, a tile FAILS only when
   - it is not the animal intended, or
@@ -39,11 +42,11 @@ CHECK_RULE = ("v3: fails only on must_show and listed mistakes; other features a
 
 def ask(client, model: str, picture: bytes, name: str, cell: dict) -> tuple:
     lines = [
-        f"This picture is meant to be a scientifically accurate life reconstruction of {name}, "
-        "for a children's game. Compare it with the three lists below, which were written from "
-        "museum and encyclopedia sources. Judge only what you can see.",
+        f"This picture is meant to show {name}, as its sources describe it, for a children's game. "
+        "Compare it with the three lists below, which were written from museum and encyclopedia "
+        "sources. Judge only what you can see.",
         "",
-        "A. What tells it from its look-alikes. Each of these should be clearly shown:",
+        "A. What tells it from the other things of its group. Each of these should be clearly shown:",
     ]
     lines += [f"A{i}. {trait}" for i, trait in enumerate(cell["must_show"], 1)]
     lines += ["", "B. Mistakes it must NOT show:"]
@@ -56,7 +59,7 @@ def ask(client, model: str, picture: bytes, name: str, cell: dict) -> tuple:
         "contradicts it) or \"unclear\" (cannot be judged from this view).",
         "For B, give the numbers of the listed mistakes the picture really shows; an empty list if none. "
         "Do not add mistakes that are not on list B.",
-        "Reply with JSON only: {\"is_this_animal\": true, \"must_show\": [\"yes\", ...], "
+        "Reply with JSON only: {\"is_this_thing\": true, \"must_show\": [\"yes\", ...], "
         "\"mistakes_shown\": [2], \"features\": [\"yes\", \"no\", ...], \"comment\": \"one sentence\"}",
     ]
     reply = client.chat.completions.create(
@@ -78,8 +81,9 @@ def judge(cell: dict, answer: dict, cut_ok: bool, cut_flags: list) -> tuple:
     listed = cell.get("not_this", [])
     numbers = [n for n in answer.get("mistakes_shown", []) if isinstance(n, int) and 1 <= n <= len(listed)]
     reasons = []
-    if answer.get("is_this_animal") is not True:
-        reasons.append("the checker does not think it is this animal")
+    # `is_this_animal` is how the answer was named while only animals were checked
+    if answer.get("is_this_thing", answer.get("is_this_animal")) is not True:
+        reasons.append("the checker does not think it is this thing")
     if len(shown) != len(cell["must_show"]) or len(verdicts) != len(cell["features"]):
         reasons.append("the checker did not answer every item")
     reasons += [f"does not show what tells it apart: {trait}"
@@ -121,7 +125,7 @@ def main():
             continue
         cell = cells[tile["cell"] - 1]
         if not cell.get("features"):
-            continue  # not a prehistoric animal: the ordinary check and the owner's review apply
+            continue  # not drawn from its sources: the ordinary check and the owner's review apply
         if not cell.get("must_show"):
             raise SystemExit(f"{cell.get('name') or cell['thing']} has no `must_show`. Write what tells it "
                              "from its look-alikes in research/curated.json, then run apply_research.py.")

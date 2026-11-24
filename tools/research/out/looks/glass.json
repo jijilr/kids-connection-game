@@ -1,0 +1,32 @@
+{
+  "name": "Glass",
+  "group": "Things people make > Things in the house > Things to eat and drink with",
+  "features": [],
+  "not_this": [],
+  "debated": [],
+  "dropped": {},
+  "problem": "its pages are about something else of the same name",
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Glass",
+      "title": "Glass"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Glass",
+      "title": "Glass"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24"
+  },
+  "must_show": [],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "its pages say nothing of how it looks",
+    "covering": []
+  }
+}

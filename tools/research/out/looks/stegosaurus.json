@@ -1,0 +1,170 @@
+{
+  "name": "Stegosaurus",
+  "group": "Animals > Dinosaurs > Land grazers",
+  "features": [
+    {
+      "claim": "It had a double row of kite-shaped plates standing upright along its rounded back.",
+      "quote": "the distinctive double row of kite-shaped plates rising vertically along the rounded back",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had two pairs of long spikes near the end of its tail.",
+      "quote": "the two pairs of long spikes extending horizontally near the end of the tail",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It walked on four legs.",
+      "quote": "The quadrupedal Stegosaurus is one of the most easily identifiable dinosaur genera",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It was heavily built, with a rounded back, short front legs and long back legs.",
+      "quote": "They were large, heavily built, herbivorous quadrupeds with rounded backs, short fore limbs, long hind limbs, and tails held high in the air.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a short neck and a small head.",
+      "quote": "It had a short neck and a small head, meaning it most likely ate low-lying bushes and shrubs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its plates stood upright, alternating on either side of the spine.",
+      "quote": "Marsh realised that they stood vertically, alternately on either side of the spine.",
+      "source": "nhm_dino_directory"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "It is wrong to draw the plates lying flat on its back like roof tiles.",
+      "quote": "When O C Marsh described the first fossil of a Stegosaurus, he concluded that the plates would have lain flat on its back.",
+      "source": "nhm_dino_directory"
+    },
+    {
+      "claim": "It is wrong to draw the plates lying flat, because they actually stood on edge.",
+      "quote": "As further and complete plates were found, their form showed they stood on edge, rather than lying flat.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [
+    {
+      "claim": "The way the plates were arranged on the back has been argued about for a long time.",
+      "quote": "One of the major subjects of books and articles about Stegosaurus is the plate arrangement.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [
+      {
+        "claim": "Its skull was long and narrow.",
+        "quote": "The skull of Stegosaurus was long and narrow.",
+        "source": "wikipedia_en",
+        "kind": "features"
+      },
+      {
+        "claim": "It had no front teeth but had a beak covered in horn.",
+        "quote": "It had no front teeth, but it did have a horn-covered beak.",
+        "source": "wikipedia_en",
+        "kind": "features"
+      },
+      {
+        "claim": "Its back legs each had three toes and its front legs had five.",
+        "quote": "The back legs each had three short toes, while the front legs had five toes.",
+        "source": "wikipedia_en",
+        "kind": "features"
+      }
+    ],
+    "second_reading": [
+      {
+        "claim": "Its plates were set in the skin, not joined to its skeleton.",
+        "quote": "The bony plates along its back were embedded in the skin of the animal, not attached to its skeleton",
+        "source": "nhm_dino_directory",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It was a large, slow-moving plant-eater.",
+        "quote": "A large, slow moving plant-eater, Stegosaurus would have defended itself from predators like Allosaurus and Ceratosaurus with its powerful spiked tail.",
+        "source": "nhm_dino_directory",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It is wrong to draw the plates in a single row along the back.",
+        "quote": "By 1891, Marsh published a more familiar view of Stegosaurus, with a single row of plates.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "the sentence does not support it"
+      },
+      {
+        "claim": "It is wrong to draw the plates in a paired double row along the back.",
+        "quote": "The plates were paired in a double row along the back, such as in Knight's 1901 reconstruction and the 1933 film King Kong.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "the sentence does not support it"
+      },
+      {
+        "claim": "Scientists are not sure what the plates were for.",
+        "quote": "Scientists are not exactly sure what the plates were used for.",
+        "source": "nhm_dino_directory",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It is uncertain whether the plates were mainly for display and secondarily for controlling body temperature.",
+        "quote": "while their plates may have been used primarily for display, and secondarily for thermoregulatory functions",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Stegosaurus",
+      "title": "Stegosaurus",
+      "revision": 1387393352,
+      "revision_time": "2026-11-23T19:35:13Z",
+      "fetched_on": "2026-11-24",
+      "chars": 55396,
+      "sha256": "7a30d3763c31e25a7dd26acdd573061b2a6af1f9163f67eb0a5c0188896820ed"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Stegosaurus",
+      "title": "Stegosaurus",
+      "revision": 11057087,
+      "revision_time": "2026-11-07T03:05:57Z",
+      "fetched_on": "2026-11-24",
+      "chars": 3692,
+      "sha256": "dc07f1e71ec839108d173a23caeb492d723c136243a5c4aac50fa16b7b63691a"
+    },
+    {
+      "id": "nhm_dino_directory",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/stegosaurus.html",
+      "title": "Stegosaurus | Natural History Museum",
+      "revision": null,
+      "revision_time": null,
+      "fetched_on": "2026-11-24",
+      "chars": 2896,
+      "sha256": "a2a1664f9654dfde1c19734c3f981bd9e4c2cef4c8ed6b76c41a229645c90458"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "It had a double row of kite-shaped plates standing upright along its rounded back.",
+    "It had two pairs of long spikes near the end of its tail.",
+    "It was heavily built, with a rounded back, short front legs and long back legs.",
+    "It had a short neck and a small head."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "upright back plates and tail spikes, humped build",
+    "covering": []
+  }
+}
