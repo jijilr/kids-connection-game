@@ -478,6 +478,8 @@ def save(catalogue: dict):
     write_json(THINGS, game_copy(catalogue))
     write_json(QUEUE, queue_view(catalogue))
     write_json(GROUP_WORDS, groups_copy(catalogue))
+    import places                      # the map of every place, built from what was just written
+    places.write()
 
 
 @contextlib.contextmanager

@@ -155,6 +155,66 @@ def test_which_circles_can_open_is_worked_out_not_set():
     assert json.dumps(catalogue["worked_out"]) != json.dumps(bare["worked_out"])
 
 
+# ------------------------------------------------------------------ the map of every place
+
+def test_the_map_on_disk_is_the_map_the_builder_makes_now():
+    """Nobody edits Assets/data/places.json, and it is never left behind the data."""
+    import places
+    on_disk = json.loads(places.PLACES.read_text(encoding="utf-8"))
+    fresh = places.build()
+    same = lambda m: {k: v for k, v in m.items() if k != "built_on"}
+    assert same(on_disk) == same(fresh), "the map is stale: run python tools/catalogue/places.py"
+    tree = json.loads(places.TREE.read_text(encoding="utf-8"))["circles"]
+    missing = [cid for cid in tree if cid not in fresh["places"]]
+    assert missing == [], f"places the job knows that are not on the map: {missing}"
+    assert fresh["places"]["seed"]["lies_in"] == {} and fresh["places"]["seed"]["state"] == "ready"
+    assert sum(fresh["places_by_state"].values()) == len(fresh["places"])
+
+
+def test_the_map_names_a_place_by_its_circles_and_asks_a_question_where_it_has_its_home():
+    """A small made-up game: kind "a" answers two questions, "sort" and "home"; the things of
+    sort s3 do not answer "home" at all, as no dinosaur answers "pet, farm or wild"."""
+    import places
+    things = {}
+    for s in range(4):
+        for h in range(4):
+            for i in range(4):
+                fields = {"kind": "a", "sort": f"s{s}"}
+                if s != 3:
+                    fields["home"] = f"h{h}"
+                things[f"a_{s}{h}{i}"] = {"name": f"a {s} {h} {i}", "fields": fields}
+    for k in "bcd":
+        for i in range(6):
+            things[f"{k}_{i}"] = {"name": f"{k} {i}", "fields": {"kind": k}}
+    things["odd"] = {"name": "Odd", "fields": {"kind": ["a", "b"]}}
+    dictionary = {"version": 1, "ends": {"b": {"why": "only six such things"}}, "fields": {
+        "kind": {"wording": "What kind?", "values": {k: k.upper() for k in "abcd"}},
+        "sort": {"wording": "Which sort?", "values": {f"s{i}": f"S{i}" for i in range(4)}},
+        "home": {"wording": "Where is its home?", "values": {f"h{i}": f"H{i}" for i in range(4)}},
+        "home_again": {"wording": "Where is its home?", "merged_into": "home", "sorts_boards": False,
+                       "values": {f"h{i}": f"H{i}" for i in range(4)}}}}
+    settings = {"start": {"field": "kind", "label": "Everything"}, "boards_need_pictures": False}
+    the_map = places.build(dictionary, things, settings, styles=[], tree={}, words={})["places"]
+    asks = lambda name: [a["question"] for a in the_map[name]["asks"]]
+    assert asks("seed") == ["kind"], "every thing that answers the others is an a: their home is lower down"
+    assert asks("a") == ["sort", "home"], "not every a answers home, but no smaller place holds all that do"
+    assert the_map["a"]["asks"][1]["asked_because"] == "its home is here"
+    assert asks("a/s0") == ["home"] and asks("a/s3") == [], "nothing of sort s3 answers it"
+    # a place is named by its circles in the dictionary's order, whichever road leads to it
+    assert the_map["a"]["asks"][1]["kinds"]["h0"]["place"] == "a/h0"
+    assert the_map["a/s0"]["asks"][0]["kinds"]["h0"]["place"] == "a/s0/h0"
+    assert set(the_map["a/s0/h0"]["lies_in"]) == {"a/s0", "a/h0"}, "it lies in both circles"
+    assert the_map["a/s0/h0"]["reached_from"] == ["a/s0"],         "only three sorts answer in h0, so no set there asks for the sort: one road leads here, though two circles hold it"
+    assert the_map["a/s0/h0"]["circles"] == [["kind", "a"], ["sort", "s0"], ["home", "h0"]]
+    assert "home_again" not in str(the_map["a"]["asks"]), "a merged field is the same question: not seen twice"
+    # states: an end is an end whatever else is true of it; a group with no set and no record is a group only
+    assert the_map["b"]["state"] == "end" and the_map["b"]["why"] == "only six such things"
+    assert the_map["a"]["state"] == "ready" and the_map["a/s0/h0"]["state"] == "a group only" and the_map["a/s0/h0"]["why"]
+    # a thing with no single answer is in between: counted, and a place of its own only because it has a thing
+    assert the_map["seed"]["asks"][0]["in_between"] == 1 and the_map["in_between"]["things"] == 1
+    assert "a/in_between" not in the_map, "an empty overlap is no place"
+
+
 def main():
     tests = [value for name, value in globals().items() if name.startswith("test_")]
     for test in tests:

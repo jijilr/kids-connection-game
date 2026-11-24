@@ -18,7 +18,7 @@ Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 | Dictionary | version 12, 21 fields (two withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups with words | 61, each with a ladder of clues; 59 have an explanation |
-| Tests | 105 in the game, 44 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
+| Tests | 110 in the game, 44 for the job, 4 for the helper, 10 for the catalogue, 10 for the pictures. All pass |
 
 **The fifteen sets:** Everything, Animals, Mammals, Wild animals on land and Make music with it (both
 made on 24 Nov by the helper, the second while the owner played), Birds, Dinosaurs, Plants, Vegetable
@@ -332,6 +332,22 @@ the small proof." The whole of it is in `DESIGN.md`, section 8a. In short:
   job's self-test.
 - The helper now also serves the Wi-Fi (`--lan` in `.claude/launch.json`), so the game opens on a phone
   at `http://<this PC's address>:8200`.
+
+### The map of places, step 1 (24 Nov, night)
+The owner: "don't we have some kind of json with meta data of each node?... that is the nerve system of
+the whole thing." Until now the game, the job and the helper each worked the places out by their own
+copy of the rules, and had drifted apart. Step 1 of five is built (`DESIGN.md`, section 8b):
+- **One builder**, `tools/catalogue/places.py`, writes **one map**, `Assets/data/places.json`: a record
+  for each place with the circles it lies in, the places one circle wider, the roads that lead to it,
+  the questions asked there and each kind with its count, its state and the reason, and its history.
+  It is built again whenever the catalogue is saved or the engine's tree is rebuilt. Nobody edits it.
+- First built, it holds 82 places: 16 ready, 52 held, 5 that can be made, 9 that are a group only.
+- **The map and the game agree on every place.** `test/places_map_test.dart` (5) checks, on the real
+  data: which places can make a set, each place's name and things, its questions, the kinds that can
+  be shown, and where each kind leads. Two more checks in the catalogue's self-test, one of which
+  fails if the file on disk is not what the builder makes now.
+- Nothing reads the map yet. The game still works the places out for itself (step 2), and so do the
+  helper and the job (step 3).
 
 ### Room for the set on a phone (24 Nov, night)
 The owner played on his phone and sent two pictures: the explanation "takes away too much vertical space
@@ -685,3 +701,4 @@ other names for mud.
   The game on the phone over Wi-Fi. Spent on the day by the helper's ledger: Rs 165 of 200.
 - After his first play on the phone: the explanation can be kept small, and the answer to a guess fades
   over the middle of the set.
+- The map of places, step 1: one builder, one file, and a test that it agrees with the game. Nothing spent.

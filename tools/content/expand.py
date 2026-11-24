@@ -274,6 +274,11 @@ def rebuild(write: bool = True) -> dict:
     }
     if write:
         write_json(TREE, tree)
+        import sys
+        if str(ROOT / "tools/catalogue") not in sys.path:
+            sys.path.insert(0, str(ROOT / "tools/catalogue"))
+        import places                  # the map of every place carries what the tree has decided
+        places.write()
     return tree
 
 

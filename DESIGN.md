@@ -451,6 +451,72 @@ Code: `tools/job/cross.py` (the data); `BoardAssembler.canon`, `questionsAt`, `c
 - **Only one question has been widened.** "Which part do we eat?" is still asked only of
   vegetable plants, so the mango tree still cannot join the tomato.
 
+## 8b. The map of places: the nerve system
+
+Owner, 24 Nov 2026, night: "don't we have some kind of json with meta data of each node?...
+if it is not integrated... that is the nerve system of the whole thing."
+
+### Why it is needed
+
+Three programs must agree on what the places are: the game, the job that makes content, and
+the helper that decides what to make. Each worked the places out for itself, by its own copy
+of the rules, and they had drifted apart:
+
+- The game opened "Wild animals on land" across all animals. The helper had never heard of it
+  and told the game to drop it. The game was patched to ignore the helper there.
+- "A question has its home at a place" was written in the game's code only. The job could not
+  use it.
+- What was decided about a place lay in three files: ends in the dictionary, holds in the
+  engine's tree, words in the catalogue.
+
+The larger reason is depth. A phone cannot load every thing and work the places out from them.
+It needs the map first, and the things of a place only when it goes there. An engine does not
+hold every position; it holds the tree, with a judgement on each node.
+
+### What it is
+
+One file, `Assets/data/places.json`, with one record for each place. One program builds it,
+`tools/catalogue/places.py`, from the master records: the things in the game, the dictionary,
+the settings, the decisions on record, the words of each group. It is built again whenever the
+catalogue is saved or the engine's tree is rebuilt. Nobody edits it.
+
+| Part of a record | Example, for the wild land animals among the mammals |
+|---|---|
+| `name` | Wild animals on land |
+| `circles` | animal, mammal, wild on land, in the dictionary's order |
+| `lies_in` | the places one circle wider, with the answer this place adds: Mammals; Wild animals on land |
+| `reached_from` | of those, the places where a set leads here |
+| `things`, `with_pictures` | 18, 18 |
+| `asks` | each question asked there, why it is asked there, whether it makes a set, and each kind with its count, whether it can be shown, where it leads, and whether it has clues and an explanation |
+| `state`, `why` | ready / can be made / held / end / a group only, and the reason |
+| `known_to_the_job` | whether the job's tree has this place (a place that exists only by crossing does not) |
+| `history` | every decision about it, with date and reason |
+
+What stays out: the player's progress, which is one layer per device over the same place
+names; and the facts about things, which stay in the catalogue.
+
+On the night it was first built the map held 82 places: 16 ready, 52 held, 5 that can be made,
+9 that are a group only.
+
+### The steps
+
+| Step | What | State |
+|---|---|---|
+| 1 | The builder and the map, with a test that the map and the game agree on every place | **built** |
+| 2 | The game reads the map and drops its own copy of the rules | not built |
+| 3 | The helper and the job read the map and write their results to the master records | not built |
+| 4 | A page for the owner: the whole map, every place by its state | not built |
+| 5 | Things stored by place, so a phone loads only the places near his lines | not built |
+
+Until step 2 the rules exist twice, in the builder and in the game. The test
+`test/places_map_test.dart` holds them together: on the real data, the map and the game must
+say the same about every place (which can make a set, its name, its things, its questions, the
+kinds that can be shown, where each kind leads). A second test, in
+`tools/catalogue/selftest.py`, fails if the file on disk is not what the builder makes now.
+
+Command: `python tools/catalogue/places.py` builds the map and lists it;
+`python tools/catalogue/places.py show PLACE` prints one record.
+
 ## 9. The measures, and the audience
 
 **Breadth and depth** (built). Counted on the player's own web, not on a list of subjects of
@@ -482,6 +548,7 @@ With general use decided, that wording is the next thing to turn into a setting.
 | In between (7) | built | the two keys are written, tested and tried; no run uses them yet (one rule is open) |
 | Widening (8) | meets a wider place by rule 5 | built as a command; the helper does not widen by itself |
 | Circles that cross (8a) | built | one question widened by a command; the job and helper still know one road |
+| The map of places (8b) | does not read it yet (step 2) | the builder writes it; the job and helper do not read it yet (step 3) |
 
 ## 11. Open questions
 
@@ -517,3 +584,4 @@ With general use decided, that wording is the next thing to turn into a setting.
 | 24 Nov 2026 | Automate is the design; "Dig deeper" is a test feature. The web of what he has found; breadth and depth. |
 | 24 Nov 2026, evening | More kinds than four, covered in the fewest rounds. A branch can end. Things resist classification, and the first place must take them in. General use. Write the decisions down. |
 | 24 Nov 2026, late | The concentric-circles paradigm itself: a thing belongs to more than one circle. "Yes, build the small proof" (section 8a). |
+| 24 Nov 2026, night | One record for each place, integrated: "the nerve system of the whole thing". "Yes, start with step 1" (section 8b). |

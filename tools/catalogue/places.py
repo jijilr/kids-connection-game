@@ -206,6 +206,9 @@ def build(dictionary: dict = None, things: dict = None, settings: dict = None, s
                     name = world.name_of(child)
                     if name in places:
                         continue
+                    # an empty overlap is no place, unless the job knows it as one still to be filled
+                    if name not in tree and not world.inside(child):
+                        continue
                     places[name] = child
                     if world.asked_at(child):
                         following.append(child)
@@ -235,12 +238,15 @@ def build(dictionary: dict = None, things: dict = None, settings: dict = None, s
                          "kinds": kinds, "in_between": counts.get(IN_BETWEEN, 0),
                          "in_between_place": world.name_of(world.canon(circles + [(question, IN_BETWEEN)]))
                          if IN_BETWEEN in field["values"] else None})
-        # the places one circle wider, and the answer this place adds to each
-        wider = {}
+        # the places one circle wider, with the answer this place adds to each: a fact about the
+        # circles. And, of those, the places where a question leads here: a road to it.
+        wider, roads = {}, []
         for i, step in enumerate(circles):
             rest = circles[:i] + circles[i + 1:]
-            if world.name_of(rest) in places and any(q == step[0] for q, _ in world.asked_at(rest)):
+            if world.name_of(rest) in places:
                 wider[world.name_of(rest)] = list(step)
+                if any(q == step[0] for q, _ in world.asked_at(rest)):
+                    roads.append(world.name_of(rest))
         old = tree.get(name, {})
         ready = any(a["makes_a_set"] for a in asks)
         if name in ends:
@@ -261,6 +267,7 @@ def build(dictionary: dict = None, things: dict = None, settings: dict = None, s
             "circles": [list(step) for step in circles],
             "depth": len(circles),
             "lies_in": wider,
+            "reached_from": roads,
             "things": len(pool),
             "with_pictures": sum(1 for k in pool if world.styles and k in world.styles[0]),
             "asks": asks,
