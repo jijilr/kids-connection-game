@@ -11,6 +11,7 @@ import 'package:connections_game/services/board_assembler.dart';
 import 'package:connections_game/services/content_repository.dart';
 import 'package:connections_game/services/media.dart';
 import 'package:connections_game/services/progress.dart';
+import 'support/places_for.dart';
 
 /// Which set comes next (the owner's design of 24 Nov 2026). After each set its groups
 /// are ranked by how well he did them: fewest wrong guesses that took in its things,
@@ -34,7 +35,8 @@ ContentRepository repo(int seed) {
       GameSettings.fromJson(readData('settings.json')),
       random: Random(seed),
       media: MediaResolver.fromJson(assets, readData('pictures.json')),
-      words: GroupWordsBook.fromJson(readData('groups.json')));
+      words: GroupWordsBook.fromJson(readData('groups.json')),
+      places: realPlaces());
 }
 
 /// A dice that always shows the same number, so a test can choose the four in five or

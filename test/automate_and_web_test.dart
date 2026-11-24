@@ -13,6 +13,7 @@ import 'package:connections_game/screens/web_screen.dart';
 import 'package:connections_game/services/content_repository.dart';
 import 'package:connections_game/services/media.dart';
 import 'package:connections_game/services/progress.dart';
+import 'support/places_for.dart';
 
 /// Two things the owner asked for on 24 Nov 2026.
 /// Automate: "dig deeper is not a choice for the user. this is a test feature... the dig
@@ -34,7 +35,8 @@ ContentRepository repo(int seed) {
       DimensionRegistry.fromJson(readData('dictionary.json')),
       GameSettings.fromJson(readData('settings.json')),
       random: Random(seed),
-      media: MediaResolver.fromJson(assets, readData('pictures.json')));
+      media: MediaResolver.fromJson(assets, readData('pictures.json')),
+      places: realPlaces());
 }
 
 class Roll implements Random {

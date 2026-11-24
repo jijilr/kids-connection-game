@@ -503,16 +503,34 @@ On the night it was first built the map held 82 places: 16 ready, 52 held, 5 tha
 | Step | What | State |
 |---|---|---|
 | 1 | The builder and the map, with a test that the map and the game agree on every place | **built** |
-| 2 | The game reads the map and drops its own copy of the rules | not built |
+| 2 | The game reads the map and drops its own copy of the rules | **built** |
 | 3 | The helper and the job read the map and write their results to the master records | not built |
 | 4 | A page for the owner: the whole map, every place by its state | not built |
 | 5 | Things stored by place, so a phone loads only the places near his lines | not built |
 
-Until step 2 the rules exist twice, in the builder and in the game. The test
-`test/places_map_test.dart` holds them together: on the real data, the map and the game must
-say the same about every place (which can make a set, its name, its things, its questions, the
-kinds that can be shown, where each kind leads). A second test, in
-`tools/catalogue/selftest.py`, fails if the file on disk is not what the builder makes now.
+**Since step 2 the rules of what a place is are written once, in the builder.** The game reads
+the map (`lib/models/places_map.dart`) and works out nothing about places for itself: which
+places there are, what each is called, what is asked there, which kinds can be shown, where
+each kind leads, what lies in what, and which places are ends. What the game still does by
+itself is what must happen while he plays: choosing sixteen things, and seeing that they have
+one clean solution (`lib/services/board_assembler.dart`, which now makes sets and nothing else).
+
+How the two ends are held together:
+
+- Before the game's copy of the rules was removed, a test compared it with the map on the real
+  data, place by place. They agreed on all 82 places. That test did its work and is gone with
+  the rules it checked.
+- `test/places_map_test.dart` now checks the other way round: wherever the map says a question
+  makes a set, the game makes one, in pictures, with one clean solution, of kinds the map calls
+  ready; and every place holds the things the map counts.
+- The game's own tests on made-up games ask the builder for their maps
+  (`test/support/places_for.dart` runs `places.py for FILE`), so no test carries a private idea
+  of what a place is. This means the game's tests need Python on the machine.
+- A check in `tools/catalogue/selftest.py` fails if the file on disk is not what the builder
+  makes now.
+- The map and the things are written a moment apart. The map says how many things it was built
+  for, and the game does not take up a map and a list of things that do not match.
+- Without a map the game can still play its first set, and nothing beyond it.
 
 Command: `python tools/catalogue/places.py` builds the map and lists it;
 `python tools/catalogue/places.py show PLACE` prints one record.
@@ -548,7 +566,7 @@ With general use decided, that wording is the next thing to turn into a setting.
 | In between (7) | built | the two keys are written, tested and tried; no run uses them yet (one rule is open) |
 | Widening (8) | meets a wider place by rule 5 | built as a command; the helper does not widen by itself |
 | Circles that cross (8a) | built | one question widened by a command; the job and helper still know one road |
-| The map of places (8b) | does not read it yet (step 2) | the builder writes it; the job and helper do not read it yet (step 3) |
+| The map of places (8b) | reads it, and works out no place for itself | the builder writes it; the job and helper do not read it yet (step 3) |
 
 ## 11. Open questions
 

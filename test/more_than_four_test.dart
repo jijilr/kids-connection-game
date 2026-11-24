@@ -11,6 +11,7 @@ import 'package:connections_game/screens/web_screen.dart';
 import 'package:connections_game/services/board_assembler.dart';
 import 'package:connections_game/services/content_repository.dart';
 import 'package:connections_game/services/progress.dart';
+import 'support/places_for.dart';
 
 /// The owner's rulings of the evening of 24 Nov 2026, each on a small made-up game so
 /// that nothing here depends on what the real game holds today.
@@ -45,7 +46,7 @@ ContentRepository game(List<String> kinds,
         },
     ...extra,
   };
-  final registry = DimensionRegistry.fromJson({
+  final dictionary = <String, dynamic>{
     'version': 1,
     'ends': ends,
     'fields': {
@@ -56,12 +57,13 @@ ContentRepository game(List<String> kinds,
       },
       ...fields,
     }
-  });
+  };
   return ContentRepository.fromData(
       [for (final e in things.entries) Entity.fromJson(e.key, e.value)],
-      registry,
+      DimensionRegistry.fromJson(dictionary),
       const GameSettings(startField: 'kind', startLabel: 'Everything'),
-      random: Random(seed));
+      random: Random(seed),
+      places: placesFor(dictionary: dictionary, things: things, startField: 'kind'));
 }
 
 class Roll implements Random {
@@ -412,9 +414,10 @@ void main() {
   });
 
   test('the end of a branch is no line to follow, and the web knows it', () async {
-    final g = await start(game(['a', 'b', 'c', 'd'], ends: const {
+    final r = game(['a', 'b', 'c', 'd'], ends: const {
       'b': {'on': '2026-11-24', 'why': 'only five such things have a page of their own'}
-    }));
+    });
+    final g = await start(r);
     solve(g, ['b', 'a']);
     expect(g.didWell(g.board!.groups.firstWhere((x) => x.value == 'b')), isTrue);
     expect(g.progress.lines, isNot(contains('b')), reason: 'nothing lies below it');
@@ -422,7 +425,8 @@ void main() {
     final web = {for (final n in g.web) n.id: n};
     expect(web['b']!.end, isTrue);
     expect(web['a']!.end, isFalse);
-    expect(g.registry.ends['b'], contains('only five'));
+    expect(r.places['b']!.isEnd, isTrue);
+    expect(r.places['b']!.why, contains('only five'), reason: 'the map says why');
   });
 
   testWidgets('the web shows a leaf on the end of a branch, and ties "in between" to both sides', (tester) async {

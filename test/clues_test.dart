@@ -10,6 +10,7 @@ import 'package:connections_game/models/group_words.dart';
 import 'package:connections_game/providers/engine_provider.dart';
 import 'package:connections_game/services/content_repository.dart';
 import 'package:connections_game/services/media.dart';
+import 'support/places_for.dart';
 
 /// Clues and explanations (the owner's ruling of 7 Oct 2026). A clue leads the child
 /// toward a group without naming its members, climbs a ladder, and never costs a star.
@@ -31,7 +32,8 @@ ContentRepository repo(int seed, {GroupWordsBook? book}) {
   return ContentRepository.fromData(entities, registry, GameSettings.fromJson(readData('settings.json')),
       random: Random(seed),
       media: MediaResolver.fromJson(assets, readData('pictures.json')),
-      words: book ?? words);
+      words: book ?? words,
+      places: realPlaces());
 }
 
 void find(EngineProvider g, String value) {

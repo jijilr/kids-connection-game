@@ -8,12 +8,14 @@ import 'package:provider/provider.dart';
 import 'package:connections_game/models/dimension.dart';
 import 'package:connections_game/models/entity.dart';
 import 'package:connections_game/models/game_settings.dart';
+import 'package:connections_game/models/places_map.dart';
 import 'package:connections_game/providers/engine_provider.dart';
 import 'package:connections_game/screens/web_screen.dart';
 import 'package:connections_game/services/board_assembler.dart';
 import 'package:connections_game/services/content_repository.dart';
 import 'package:connections_game/services/media.dart';
 import 'package:connections_game/services/progress.dart';
+import 'support/places_for.dart';
 
 /// Circles that cross (the owner, on the night of 24 Nov 2026): "inspite of being
 /// accomodating, we still assume concentric circles paradigm. but knowledge is never
@@ -47,7 +49,7 @@ ContentRepository game({int seed = 1, Map<String, dynamic> more = const {}, Stri
           'fields': {'kind': k}
         },
   };
-  final registry = DimensionRegistry.fromJson({
+  final dictionary = <String, dynamic>{
     'version': 1,
     'fields': {
       'kind': {
@@ -64,12 +66,13 @@ ContentRepository game({int seed = 1, Map<String, dynamic> more = const {}, Stri
       },
       ...more,
     }
-  });
+  };
   return ContentRepository.fromData(
       [for (final e in things.entries) Entity.fromJson(e.key, e.value)],
-      registry,
+      DimensionRegistry.fromJson(dictionary),
       const GameSettings(startField: 'kind', startLabel: 'Everything'),
-      random: Random(seed));
+      random: Random(seed),
+      places: placesFor(dictionary: dictionary, things: things, startField: 'kind'));
 }
 
 class Roll implements Random {
@@ -109,7 +112,7 @@ String here(EngineProvider g) => Progress.boardId(g.board!.filter);
 void main() {
   test('a place may ask more than one question: each one that every thing of it answers', () {
     final r = game();
-    List<String> asked(List<PathFilter> filter) => [for (final d in r.assembler.questionsAt(filter)) d.id];
+    List<String> asked(List<PathFilter> filter) => [for (final a in r.places.at(filter)?.asks ?? const <Asked>[]) a.question];
     expect(asked(const []), ['kind'], reason: 'only "kind" is answered by every thing');
     expect(asked(const [('kind', 'a')]), ['sort', 'home'], reason: 'two questions about the whole of a');
     expect(asked(const [('kind', 'a'), ('sort', 's0')]), ['home']);
@@ -120,7 +123,7 @@ void main() {
   test('a question has a reach: it is asked at the smallest place that holds every thing it is true of', () {
     // the things of sort s3 do not answer "home" at all
     final r = game(homeless: 's3');
-    List<String> asked(List<PathFilter> filter) => [for (final d in r.assembler.questionsAt(filter)) d.id];
+    List<String> asked(List<PathFilter> filter) => [for (final a in r.places.at(filter)?.asks ?? const <Asked>[]) a.question];
     expect(asked(const []), ['kind'], reason: 'every thing that answers "home" is an a: its home is lower down');
     expect(asked(const [('kind', 'a')]), ['sort', 'home'],
         reason: 'not every a answers "home", but no smaller place holds all that do: its home is here');
@@ -135,17 +138,18 @@ void main() {
     // and the circle h0 is still a place: it crosses the sorts that answer
     final h0 = const [('kind', 'a'), ('home', 'h0')];
     expect(asked(h0), isEmpty, reason: 'three sorts answer: too few kinds for a set of their own');
-    expect(r.assembler.kindsReady(const [('kind', 'a')], r.registry.byId('home')!), hasLength(4));
+    final home = r.places['a']!.asks.singleWhere((a) => a.question == 'home');
+    expect(home.kinds.values.where((k) => k.ready), hasLength(4));
   });
 
   test('a place is named by the circles it lies in, not by the road to it', () {
     final r = game();
-    final one = r.assembler.canon(const [('kind', 'a'), ('sort', 's1'), ('home', 'h0')]);
-    final other = r.assembler.canon(const [('kind', 'a'), ('home', 'h0'), ('sort', 's1')]);
+    final one = r.places.canon(const [('kind', 'a'), ('sort', 's1'), ('home', 'h0')]);
+    final other = r.places.canon(const [('kind', 'a'), ('home', 'h0'), ('sort', 's1')]);
     expect(one, other);
     expect(Progress.boardId(one), 'a/s1/h0');
     // the places of the game: each once, however many roads lead to it
-    final places = [for (final f in r.assembler.circlesBelow(r.registry.byId('kind')!, needPictures: false)) Progress.boardId(f)];
+    final places = [for (final place in r.places.ready) place.id];
     expect(places.toSet(), hasLength(places.length), reason: 'no place twice');
     expect(places, containsAll(['a', 'a/s0', 'a/s3', 'a/h0', 'a/h3']));
     expect(places, isNot(contains('a/s0/h0')), reason: 'four things: a group, but no set of its own');
@@ -268,7 +272,6 @@ void main() {
     });
     expect(r.registry.byId('home2'), isNull);
     expect(r.registry.byId('home'), isNotNull);
-    expect(r.registry.positionOf('sort'), lessThan(r.registry.positionOf('home')));
   });
 
   // ------------------------------------------------------------------ the real game
@@ -289,19 +292,21 @@ void main() {
           DimensionRegistry.fromJson(readData('dictionary.json')),
           GameSettings.fromJson(readData('settings.json')),
           random: Random(seed),
-          media: MediaResolver.fromJson(assets, readData('pictures.json')));
+          media: MediaResolver.fromJson(assets, readData('pictures.json')),
+          places: realPlaces());
     }
 
     const animals = [('kind_of_thing', 'animal')];
 
     test('Animals asks two questions, and the second has its home there', () {
       final r = real(1);
-      expect([for (final d in r.assembler.questionsAt(animals)) d.id], ['kind_of_animal', 'pet_farm_or_wild']);
-      expect([for (final d in r.assembler.questionsAt(const [])) d.id], ['kind_of_thing'],
+      List<String> asked(List<PathFilter> filter) => [for (final a in r.places.at(filter)!.asks) a.question];
+      expect(asked(animals), ['kind_of_animal', 'pet_farm_or_wild']);
+      expect(asked(const []), ['kind_of_thing'],
           reason: 'every thing that answers it is an animal: it is not a question about Everything');
       expect(r.registry.byId('pet_farm_or_wild_of_bird'), isNull, reason: 'the second copy is gone from the game');
-      expect([for (final d in r.assembler.questionsAt(const [...animals, ('kind_of_animal', 'bird')])) d.id],
-          ['pet_farm_or_wild'], reason: 'Birds is sorted by the same question as Mammals now');
+      expect(asked(const [...animals, ('kind_of_animal', 'bird')]), ['pet_farm_or_wild'],
+          reason: 'Birds is sorted by the same question as Mammals now');
     });
 
     test('"Pets at home" holds a dog and a parrot, and no set by this question shows a dinosaur', () {
@@ -320,19 +325,19 @@ void main() {
 
     test('every place has one name, and the old names have not changed', () {
       final r = real(3);
-      final places = r.assembler.circlesBelow(r.registry.byId('kind_of_thing')!);
-      final ids = [for (final f in places) Progress.boardId(f)];
+      final ids = [for (final place in r.places.ready) place.id];
       expect(ids.toSet(), hasLength(ids.length), reason: 'no two places share a name');
       expect(ids, containsAll(['animal', 'animal/mammal', 'animal/bird', 'animal/dinosaur', 'animal/mammal/wild_land',
         'made_by_people/toy/music', 'plant/vegetable']));
       // a place reached by the new road has the name the old road gave it
-      expect(Progress.boardId(r.assembler.canon(const [...animals, ('pet_farm_or_wild', 'wild_land'), ('kind_of_animal', 'mammal')])),
+      expect(r.places.idOf(const [...animals, ('pet_farm_or_wild', 'wild_land'), ('kind_of_animal', 'mammal')]),
           'animal/mammal/wild_land');
       // and the circle that crosses the kinds is a place of its own, with a set by kind of animal
-      final wild = r.assembler.canon(const [...animals, ('pet_farm_or_wild', 'wild_land')]);
+      final wild = r.places.canon(const [...animals, ('pet_farm_or_wild', 'wild_land')]);
       expect(Progress.boardId(wild), 'animal/wild_land');
       expect(ids, contains('animal/wild_land'));
-      final board = r.assembler.makeBoard(BoardContext(filter: wild, dimension: r.assembler.questionsAt(wild).first))!;
+      final board = r.assembler
+          .makeBoard(BoardContext(filter: wild, dimension: r.registry.byId(r.places.at(wild)!.asks.first.question)))!;
       expect(board.dimension.id, 'kind_of_animal');
       expect(board.tiles.every((e) => e.valueFor('pet_farm_or_wild') == 'wild_land'), isTrue);
     });

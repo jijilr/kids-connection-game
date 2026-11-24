@@ -5,6 +5,7 @@ import '../models/entity.dart';
 import '../models/dimension.dart';
 import '../models/game_settings.dart';
 import '../models/group_words.dart';
+import '../models/places_map.dart';
 import 'board_assembler.dart';
 import 'live_link.dart';
 import 'media.dart';
@@ -21,6 +22,10 @@ class ContentRepository {
 
   /// The clues and the explanation of each group. Empty until they are written.
   GroupWordsBook words = const GroupWordsBook.empty();
+
+  /// The map of every place: what there is, what is asked where, what lies in what. The
+  /// game reads it and works out nothing about places for itself.
+  PlacesMap places = PlacesMap.empty();
   bool _loaded = false;
   Random? _random;
 
@@ -34,9 +39,11 @@ class ContentRepository {
     Random? random,
     MediaResolver media = const MediaResolver.empty(),
     GroupWordsBook words = const GroupWordsBook.empty(),
+    PlacesMap? places,
   }) {
     _set(ents, reg, settings, media, random);
     this.words = words;
+    if (places != null) this.places = places;
   }
 
   /// The things in a decoded `things.json`, in file order.
@@ -67,6 +74,11 @@ class ContentRepository {
     final s = GameSettings.fromJson(await read('settings.json'));
     _set(things, reg, s, await MediaResolver.load(), null);
     try {
+      places = PlacesMap.fromJson(await read('places.json'));
+    } catch (_) {
+      // no map: the game can play its first set, and nothing beyond it
+    }
+    try {
       words = GroupWordsBook.fromJson(await read('groups.json'));
     } catch (_) {
       // no words yet: the game plays without clues and explanations
@@ -88,10 +100,17 @@ class ContentRepository {
       final dictionary = await read('dictionary.json');
       final start = await read('settings.json');
       final pictures = await read('pictures.json');
-      if (things == null || dictionary == null || start == null || pictures == null) return false;
+      final map = await read('places.json');
+      if (things == null || dictionary == null || start == null || pictures == null || map == null) return false;
+      // The map and the things are written a moment apart. A map built for another number
+      // of things was read in between: nothing is taken up, and the next look tries again.
+      final fresh = PlacesMap.fromJson(map);
+      final list = thingsFromJson(things);
+      if (fresh.things != list.length) return false;
       final book = await read('groups.json');
-      _set(thingsFromJson(things), DimensionRegistry.fromJson(dictionary), GameSettings.fromJson(start),
+      _set(list, DimensionRegistry.fromJson(dictionary), GameSettings.fromJson(start),
           MediaResolver.fromJson(state.files, pictures), null);
+      places = fresh;
       if (book != null) words = GroupWordsBook.fromJson(book);
       return true;
     } catch (_) {

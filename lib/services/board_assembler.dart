@@ -82,6 +82,11 @@ class BoardContext {
 
 /// Builds 4×4 boards from the cached graph — pure, deterministic, no LLM (PRD VI.0:
 /// "cache the graph, not the boards"). Boards are assembled fresh on demand.
+///
+/// It makes sets and nothing else. Which places there are, what is asked at each and
+/// which kinds can be shown is not worked out here: the game reads that from the map of
+/// places (lib/models/places_map.dart), built by tools/catalogue/places.py, where those
+/// rules are written once (the owner, 24 Nov 2026: the map is "the nerve system").
 class BoardAssembler {
   final List<Entity> entities;
   final DimensionRegistry registry;
@@ -214,25 +219,6 @@ class BoardAssembler {
     return [...other, ..._pick(again, 4 - other.length)];
   }
 
-  /// The kinds of [dimension] that can be a group of a set over [filter] now: each has
-  /// four things that can be shown in the style such a set would be drawn in. Empty when
-  /// no set can be made there.
-  List<String> kindsReady(List<PathFilter> filter, Dimension dimension) {
-    final byValue = <String, List<Entity>>{};
-    for (final e in _filtered(filter)) {
-      final v = e.valueFor(dimension.id);
-      if (v != null && dimension.values.containsKey(v)) byValue.putIfAbsent(v, () => []).add(e);
-    }
-    for (final int? style in [for (int i = 0; i < styles.length; i++) i, null]) {
-      final ready = [
-        for (final entry in byValue.entries)
-          if (entry.value.where((e) => style == null || styles[style](e)).length >= 4) entry.key
-      ];
-      if (ready.where((v) => v != Dimension.inBetween).length >= 4) return ready;
-    }
-    return const [];
-  }
-
   bool _isHeldBack(Entity e) =>
       heldBack.entries.any((h) => h.value.contains(e.valueFor(h.key)));
 
@@ -336,131 +322,6 @@ class BoardAssembler {
       if (repeated < board.tiles.length) return board; // not the very same sixteen again
     }
     return board;
-  }
-
-  /// Every circle [depth] steps from the seed that can make a board now, as the path
-  /// that leads to it. With [needPictures], only those that can be drawn in pictures.
-  List<List<PathFilter>> circlesAtDepth(int depth, Dimension start, {bool needPictures = true}) {
-    var level = <List<PathFilter>>[const []];
-    for (int step = 0; step < depth; step++) {
-      final next = <List<PathFilter>>[];
-      for (final filter in level) {
-        final sortedBy = filter.isEmpty ? start : boardableDimensions(filter).first;
-        for (final value in sortedBy.values.keys) {
-          final child = <PathFilter>[...filter, (sortedBy.id, value)];
-          final inside = boardableDimensions(child);
-          if (inside.isEmpty) continue;
-          if (needPictures && !hasPictureBoard(child, inside.first)) continue;
-          next.add(child);
-        }
-      }
-      level = next;
-    }
-    return level;
-  }
-
-  /// The circles a place lies in, in the dictionary's order, whatever the road that led
-  /// there (the owner, 24 Nov 2026: the game assumed concentric circles, "but knowledge is
-  /// never that"). A place is where circles overlap. The wild land animals among the
-  /// mammals are one place, whether he came through Mammals or through Wild animals on
-  /// land, so it has one name and one knot on his web. For every place on the old single
-  /// road the order is the road's own, so no saved name changes.
-  List<PathFilter> canon(List<PathFilter> filter) {
-    final ordered = [...filter];
-    final at = {for (int i = 0; i < filter.length; i++) filter[i]: i};
-    ordered.sort((a, b) {
-      final p = registry.positionOf(a.$1).compareTo(registry.positionOf(b.$1));
-      return p != 0 ? p : at[a]!.compareTo(at[b]!);
-    });
-    return ordered;
-  }
-
-  final Map<String, List<Dimension>> _questions = {};
-
-  /// The questions a place can be sorted by. Each can fill a set there, and is either
-  ///  - a question about the whole place: every thing of the place answers it; or
-  ///  - a question that has its home here: only part of the place answers it, but this is
-  ///    the smallest place that holds every thing that does. A question has a reach: it
-  ///    belongs to the things it is true of, and only to those ("pet, farm or wild?" is
-  ///    asked of the living animals; no dinosaur answers it, so its home is Animals, and
-  ///    a set sorted by it simply shows no dinosaur).
-  /// A place may have more than one (Animals: by kind, and by pet, farm or wild). The
-  /// first is the one the place has always had. Where none of this holds, the first
-  /// question that can fill a set stands, as before.
-  List<Dimension> questionsAt(List<PathFilter> filter) {
-    final key = filter.map((f) => '${f.$1}=${f.$2}').join('/');
-    return _questions.putIfAbsent(key, () {
-      final able = [
-        for (final d in boardableDimensions(filter))
-          if (!filter.any((f) => f.$1 == d.id)) d
-      ];
-      final pool = _filtered(filter);
-      bool whole(Dimension d) => pool.every((e) => e.fields.containsKey(d.id));
-      final wholes = able.where(whole).toList();
-      final everything = _filtered(const []);
-      final atHome = <Dimension>[];
-      for (final d in able) {
-        if (whole(d)) continue;
-        final answer = everything.where((e) => e.fields.containsKey(d.id)).toList();
-        // some thing that answers it lies outside this place: its home is higher up
-        if (!answer.every((e) => filter.every((f) => e.isIn(f.$1, f.$2)))) continue;
-        // one answer to a question about the whole place holds them all: its home is lower down
-        final lower = wholes.any((q) {
-          final first = answer.first.valueFor(q.id);
-          return first != null && answer.every((e) => e.valueFor(q.id) == first);
-        });
-        if (!lower) atHome.add(d);
-      }
-      final asked = [...wholes, ...atHome];
-      return asked.isNotEmpty ? asked : boardableDimensions(filter).take(1).toList();
-    });
-  }
-
-  /// Every place below the seed, down to [maxDepth] circles deep, that can make a set now:
-  /// each as the circles it lies in (see [canon]), nearest first, each once however many
-  /// roads lead to it. One walk, so that choosing where to go after a set looks at the
-  /// whole game at once. [start] is the question of the first set.
-  List<List<PathFilter>> circlesBelow(Dimension start, {int maxDepth = 6, bool needPictures = true}) {
-    final all = <List<PathFilter>>[];
-    final seen = <String>{};
-    var level = <List<PathFilter>>[const []];
-    for (int step = 0; step < maxDepth && level.isNotEmpty; step++) {
-      final next = <List<PathFilter>>[];
-      for (final filter in level) {
-        final asked = filter.isEmpty
-            ? [start, ...questionsAt(filter).where((d) => d.id != start.id)]
-            : questionsAt(filter);
-        for (final question in asked) {
-          for (final value in question.values.keys) {
-            final child = canon([...filter, (question.id, value)]);
-            if (!seen.add(child.map((f) => '${f.$1}=${f.$2}').join('/'))) continue;
-            final inside = questionsAt(child);
-            if (inside.isEmpty) continue;
-            if (needPictures && !inside.any((d) => hasPictureBoard(child, d))) continue;
-            next.add(child);
-          }
-        }
-      }
-      all.addAll(next);
-      level = next;
-    }
-    return all;
-  }
-
-  /// Whether a board over [filter] sorted by [dimension] can be drawn in one picture
-  /// style throughout, rather than with names only.
-  bool hasPictureBoard(List<PathFilter> filter, Dimension dimension) {
-    final pool = _filtered(filter);
-    return styles.any((shows) {
-      final counts = <String, int>{};
-      for (final e in pool.where(shows)) {
-        final v = e.valueFor(dimension.id);
-        if (v != null && v != Dimension.inBetween && dimension.values.containsKey(v)) {
-          counts[v] = (counts[v] ?? 0) + 1;
-        }
-      }
-      return counts.values.where((c) => c >= 4).length >= 4;
-    });
   }
 
   /// Another field that ALSO splits [tiles] cleanly into four groups of four, or null.

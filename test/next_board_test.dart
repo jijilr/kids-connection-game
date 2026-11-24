@@ -13,6 +13,7 @@ import 'package:connections_game/services/board_assembler.dart';
 import 'package:connections_game/services/content_repository.dart';
 import 'package:connections_game/services/media.dart';
 import 'package:connections_game/services/progress.dart';
+import 'support/places_for.dart';
 
 /// What happens after a board is solved (the owner's rulings of 7 Oct 2026, and of
 /// 23 Nov 2026 for where the button leads; see mastery_test.dart): "Dig deeper" where
@@ -35,7 +36,8 @@ ContentRepository repo(int seed) {
       registry,
       GameSettings.fromJson(readData('settings.json')),
       random: Random(seed),
-      media: MediaResolver.fromJson(assets, readData('pictures.json')));
+      media: MediaResolver.fromJson(assets, readData('pictures.json')),
+      places: realPlaces());
 }
 
 void solve(EngineProvider g) {
@@ -67,9 +69,16 @@ void main() {
     final r = repo(1);
     final start = registry.byId(readData('settings.json')['start']['field'] as String)!;
     for (int depth = 0; depth <= 4; depth++) {
-      for (final circle in r.assembler.circlesAtDepth(depth, start)) {
+      // every place the map of places calls ready, by the first question that makes a set there
+      final circles = [
+        if (depth == 0) const <PathFilter>[],
+        for (final place in r.places.ready)
+          if (place.circles.length == depth) place.circles
+      ];
+      for (final circle in circles) {
+        final asks = r.places.at(circle)!.asks.firstWhere((a) => a.makesASet).question;
         final board = r.assembler.makeBoard(BoardContext(
-            filter: circle, dimension: circle.isEmpty ? start : null))!;
+            filter: circle, dimension: circle.isEmpty ? start : registry.byId(asks)))!;
         expect(board.tiles, hasLength(16), reason: '$circle');
         expect(board.groups, hasLength(4));
         expect(board.groups.every((g) => g.items.length == 4), isTrue);

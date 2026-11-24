@@ -11,6 +11,7 @@ import 'package:connections_game/services/content_repository.dart';
 import 'package:connections_game/services/media.dart';
 import 'package:connections_game/services/progress.dart';
 import 'package:connections_game/widgets/grown_up_panel.dart';
+import 'support/places_for.dart';
 
 /// Saved progress: which boards were opened and solved on this device, kept between
 /// visits, and saved as a file the job can read.
@@ -28,7 +29,8 @@ ContentRepository repo(int seed) {
       DimensionRegistry.fromJson(readData('dictionary.json')),
       GameSettings.fromJson(readData('settings.json')),
       random: Random(seed),
-      media: MediaResolver.fromJson(assets, readData('pictures.json')));
+      media: MediaResolver.fromJson(assets, readData('pictures.json')),
+      places: realPlaces());
 }
 
 void solve(EngineProvider g) {

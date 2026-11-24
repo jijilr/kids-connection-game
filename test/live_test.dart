@@ -41,6 +41,14 @@ class FakeHelper implements LiveLink {
   @override
   Future<String?> read(String asset) async {
     final text = readText(asset.split('/').last);
+    if (!birdsMade && asset.endsWith('places.json')) {
+      // the map as it stood before the set of birds was made: Birds asks nothing yet
+      final map = jsonDecode(text) as Map<String, dynamic>;
+      final birds = (map['places'] as Map)['animal/bird'] as Map;
+      birds['asks'] = [];
+      birds['state'] = 'can be made';
+      return jsonEncode(map);
+    }
     if (birdsMade || !asset.endsWith('things.json')) return text;
     final data = jsonDecode(text) as Map<String, dynamic>;
     for (final thing in (data['things'] as Map).values) {

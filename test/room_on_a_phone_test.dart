@@ -13,6 +13,7 @@ import 'package:connections_game/screens/engine_screen.dart';
 import 'package:connections_game/services/content_repository.dart';
 import 'package:connections_game/services/media.dart';
 import 'package:connections_game/services/progress.dart';
+import 'support/places_for.dart';
 
 /// Room for the set on a phone (the owner, 24 Nov 2026, of the explanation: "in my phone
 /// this takes away too much vertical space and make it less fun to play... is there a way
@@ -33,7 +34,8 @@ ContentRepository repo(int seed) {
       GameSettings.fromJson(readData('settings.json')),
       random: Random(seed),
       media: MediaResolver.fromJson(assets, readData('pictures.json')),
-      words: GroupWordsBook.fromJson(readData('groups.json')));
+      words: GroupWordsBook.fromJson(readData('groups.json')),
+      places: realPlaces());
 }
 
 void guess(EngineProvider g, List<String> ids) {

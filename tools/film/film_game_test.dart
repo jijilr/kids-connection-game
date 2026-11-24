@@ -37,6 +37,7 @@ import 'package:connections_game/models/dimension.dart';
 import 'package:connections_game/models/entity.dart';
 import 'package:connections_game/models/game_settings.dart';
 import 'package:connections_game/models/group_words.dart';
+import 'package:connections_game/models/places_map.dart';
 import 'package:connections_game/providers/engine_provider.dart';
 import 'package:connections_game/screens/engine_screen.dart';
 import 'package:connections_game/services/board_assembler.dart';
@@ -96,6 +97,7 @@ ContentRepository _repo(int seed) => ContentRepository.fromData(
       random: Random(seed),
       media: MediaResolver.fromJson(_assets, _read('Assets/data/pictures.json')),
       words: _words,
+      places: PlacesMap.fromJson(_read('Assets/data/places.json')),
     );
 
 // ---------------------------------------------------------------------------

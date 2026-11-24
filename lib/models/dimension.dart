@@ -59,28 +59,10 @@ class DimensionRegistry {
   /// Goes up by one each time the dictionary gains a field.
   final int version;
 
-  /// The places below which nothing lies: the end of a branch (place -> why). The job
-  /// writes these when it finds that the world holds too few such things to sort them
-  /// further. An end is a place, named by all the circles it lies in: since a question may
-  /// be asked across several places, one answer to it no longer names one place (the pets
-  /// among the mammals are not the pets among the birds).
-  final Map<String, String> ends;
-
-  const DimensionRegistry(this._byId, {this.version = 1, this.ends = const {}});
+  const DimensionRegistry(this._byId, {this.version = 1});
 
   Dimension? byId(String id) => _byId[id];
   Iterable<Dimension> get all => _byId.values;
-
-  /// Where a field stands in the dictionary. A place is named by the circles it lies in,
-  /// in this order, whatever the road that led to it (see BoardAssembler.canon).
-  int positionOf(String id) {
-    int i = 0;
-    for (final key in _byId.keys) {
-      if (key == id) return i;
-      i++;
-    }
-    return i;
-  }
 
   /// Fields that could fill a 4-group board (>= 4 values, and allowed to sort one).
   Iterable<Dimension> get boardable =>
@@ -95,11 +77,6 @@ class DimensionRegistry {
       if ((v as Map<String, dynamic>)['merged_into'] != null) return;
       map[id] = Dimension.fromJson(id, v);
     });
-    final ends = json['ends'];
-    return DimensionRegistry(map, version: json['version'] as int? ?? 1, ends: {
-      if (ends is Map)
-        for (final e in ends.entries)
-          '${e.key}': e.value is Map ? '${(e.value as Map)['why'] ?? ''}' : '${e.value}'
-    });
+    return DimensionRegistry(map, version: json['version'] as int? ?? 1);
   }
 }

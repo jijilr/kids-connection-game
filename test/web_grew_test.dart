@@ -13,6 +13,7 @@ import 'package:connections_game/screens/web_screen.dart';
 import 'package:connections_game/services/content_repository.dart';
 import 'package:connections_game/services/media.dart';
 import 'package:connections_game/services/progress.dart';
+import 'support/places_for.dart';
 
 /// The owner's two measures, and "your web grew" (24 Nov 2026).
 /// Breadth and depth are counted on his own web, not on a list of subjects of ours:
@@ -33,7 +34,8 @@ ContentRepository repo(int seed) {
       DimensionRegistry.fromJson(readData('dictionary.json')),
       GameSettings.fromJson(readData('settings.json')),
       random: Random(seed),
-      media: MediaResolver.fromJson(assets, readData('pictures.json')));
+      media: MediaResolver.fromJson(assets, readData('pictures.json')),
+      places: realPlaces());
 }
 
 class Roll implements Random {

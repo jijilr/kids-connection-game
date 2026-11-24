@@ -10,6 +10,7 @@ import 'package:connections_game/providers/engine_provider.dart';
 import 'package:connections_game/services/board_assembler.dart';
 import 'package:connections_game/services/content_repository.dart';
 import 'package:connections_game/services/media.dart';
+import 'support/places_for.dart';
 
 /// Real data + a media resolver built from the real Assets folder (what the asset
 /// manifest would list), so these tests exercise the game as shipped.
@@ -23,7 +24,7 @@ Map<String, dynamic> readData(String file) =>
 
 ContentRepository repoWithSeed(int seed) =>
     ContentRepository.fromData(entities, registry, settings,
-        random: Random(seed), media: media);
+        random: Random(seed), media: media, places: realPlaces());
 
 Future<EngineProvider> start(int seed, {ContentRepository? repo}) async {
   final g = EngineProvider(repo: repo ?? repoWithSeed(seed), random: Random(seed));
@@ -150,13 +151,12 @@ void main() {
     final seedGroups = [...g.board!.groups];
     for (final grp in seedGroups) {
       final filter = <PathFilter>[(grp.dimId, grp.value)];
-      final inside = repo.assembler.boardableDimensions(filter);
-      final opens =
-          inside.isNotEmpty && repo.assembler.hasPictureBoard(filter, inside.first);
+      // whether a group has a set of its own is what the map of places says
+      final opens = repo.places.at(filter)?.ready ?? false;
       expect(g.canDescend(grp), opens, reason: grp.label);
       if (!opens) continue;
       g.descendInto(grp);
-      expect(g.board!.dimension.id, inside.first.id);
+      expect(g.board!.dimension.id, repo.places.at(filter)!.asks.first.question);
       expect(g.board!.groups, hasLength(4));
       expect(repo.assembler.secondSolution(g.board!.tiles, g.board!.dimension), isNull);
       g.back();
@@ -207,9 +207,7 @@ void main() {
         reason: 'Dinosaurs opens once every kind of dinosaur has four names');
     for (final grp in g.board!.groups) {
       final filter = <PathFilter>[('kind_of_thing', 'animal'), (grp.dimId, grp.value)];
-      final inside = repo.assembler.boardableDimensions(filter);
-      expect(g.canDescend(grp),
-          inside.isNotEmpty && repo.assembler.hasPictureBoard(filter, inside.first));
+      expect(g.canDescend(grp), repo.places.at(filter)?.ready ?? false);
     }
   });
 
@@ -232,7 +230,8 @@ void main() {
         // the set's own question comes first; a question made later for a set deeper inside it
         // (what wild mammals eat) may follow, and sorts nothing here
         expect(inside.first.id, field, reason: '$filter');
-        expect(repo.assembler.hasPictureBoard(filter, inside.first), isTrue, reason: field);
+        expect(repo.places.at(filter)!.asks.first.question, field, reason: 'the map says the same');
+        expect(repo.places.at(filter)!.asks.first.makesASet, isTrue, reason: field);
         final board = repo.assembler.assemble(filter: filter, dimension: inside.first)!;
         expect(board.groups, hasLength(4));
         expect(board.style, isNotNull, reason: 'drawn, not names only');

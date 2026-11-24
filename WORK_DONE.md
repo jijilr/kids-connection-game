@@ -346,8 +346,14 @@ copy of the rules, and had drifted apart. Step 1 of five is built (`DESIGN.md`, 
   data: which places can make a set, each place's name and things, its questions, the kinds that can
   be shown, and where each kind leads. Two more checks in the catalogue's self-test, one of which
   fails if the file on disk is not what the builder makes now.
-- Nothing reads the map yet. The game still works the places out for itself (step 2), and so do the
-  helper and the job (step 3).
+- **Step 2, the same night: the game reads the map.** Its own copy of the rules is gone
+  (`questionsAt`, `circlesBelow`, `canon`, `kindsReady`, `hasPictureBoard` and the walk that turned a
+  name back into circles). `lib/models/places_map.dart` holds what it reads; the set maker now makes
+  sets and nothing else. The rules of what a place is are written once, in the builder. The game's
+  tests on made-up games ask the builder for their maps, so they need Python. Nothing changes for the
+  player: all 110 game tests pass with their meaning unchanged.
+- Still to come: the helper and the job read the map (step 3), a page of the whole map for the owner
+  (step 4), things stored by place (step 5).
 
 ### Room for the set on a phone (24 Nov, night)
 The owner played on his phone and sent two pictures: the explanation "takes away too much vertical space
@@ -702,3 +708,4 @@ other names for mud.
 - After his first play on the phone: the explanation can be kept small, and the answer to a guess fades
   over the middle of the set.
 - The map of places, step 1: one builder, one file, and a test that it agrees with the game. Nothing spent.
+- Step 2: the game reads the map and has no rule of its own about places.
