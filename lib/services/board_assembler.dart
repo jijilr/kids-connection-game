@@ -51,11 +51,32 @@ class BoardContext {
   /// The tiles of the board just played, so that a fresh board is not the same sixteen.
   final Set<String> lastTiles;
 
+  /// How well he has done each kind of this circle so far, from 0 to 1. A kind that is
+  /// not in here has not been tested yet. Null when nothing is known: any four will do.
+  ///
+  /// A circle may hold more kinds than the four a set shows (the owner's ruling of 24 Nov
+  /// 2026). They are covered in the fewest sets: the untested kinds come first, and the
+  /// places left over are filled with kinds already used, the ones he did worst first.
+  /// Five kinds take two sets (four, then the one left with three used again); six take
+  /// two (four, then the two left with two used again).
+  final Map<String, double>? tested;
+
+  /// For a kind: the things it was last shown with. A kind that is used again is shown
+  /// with other things where it has them.
+  final Map<String, Set<String>> shownBefore;
+
+  /// Kinds that are not to be shown yet: "in between", until he knows the kinds on both
+  /// sides of it.
+  final Set<String> notYet;
+
   const BoardContext({
     this.filter = const [],
     this.dimension,
     this.preferValues = const [],
     this.lastTiles = const {},
+    this.tested,
+    this.shownBefore = const {},
+    this.notYet = const {},
   });
 }
 
@@ -139,6 +160,79 @@ class BoardAssembler {
     return null;
   }
 
+  /// Every four of [kinds], the best first.
+  ///
+  /// With [tested] (how well he has done each kind so far; a kind not in it is untested):
+  /// the four with the most untested kinds first, so that every kind is covered in the
+  /// fewest sets; among those, the four whose used-again kinds he did worst. The order is
+  /// also the way out when a four cannot make a set with exactly one clean solution: the
+  /// same four are tried with other things first (by the caller), then a four with another
+  /// used-again kind, and only then a four with fewer untested kinds, which costs him one
+  /// more set and never the one-solution rule. [prefer] decides between fours that are
+  /// otherwise alike, and chance decides the rest, so sets vary.
+  List<List<String>> _fours(List<String> kinds, Map<String, double>? tested, List<String> prefer) {
+    final k = [...kinds]..shuffle(_random);
+    final all = <List<String>>[];
+    for (int a = 0; a < k.length; a++) {
+      for (int b = a + 1; b < k.length; b++) {
+        for (int c = b + 1; c < k.length; c++) {
+          for (int d = c + 1; d < k.length; d++) {
+            all.add([k[a], k[b], k[c], k[d]]);
+          }
+        }
+      }
+    }
+    int fresh(List<String> four) =>
+        tested == null ? 0 : four.where((v) => !tested.containsKey(v)).length;
+    double known(List<String> four) =>
+        tested == null ? 0 : four.fold(0.0, (sum, v) => sum + (tested[v] ?? 0));
+    int wanted(List<String> four) => four.where(prefer.contains).length;
+    final order = {for (int i = 0; i < all.length; i++) all[i]: i};
+    all.sort((x, y) {
+      final f = fresh(y).compareTo(fresh(x));
+      if (f != 0) return f;
+      final w = known(x).compareTo(known(y));
+      if (w != 0) return w;
+      final p = wanted(y).compareTo(wanted(x));
+      return p != 0 ? p : order[x]!.compareTo(order[y]!);
+    });
+    return all;
+  }
+
+  /// Four things for one group. A kind he has been shown before is shown with other
+  /// things where it has them: [seen] are the things it had last time.
+  List<Entity> _fourOf(List<Entity> pool, Dimension? sub, bool evenSpread, Set<String> seen) {
+    List<Entity> pick(List<Entity> from) => sub == null
+        ? _pick(from, 4)
+        : evenSpread
+            ? _pickSpread(from, 4, sub)
+            : _pickMixed(from, 4, sub);
+    if (seen.isEmpty) return pick(pool);
+    final other = pool.where((e) => !seen.contains(e.id)).toList();
+    if (other.length >= 4) return pick(other);
+    final again = pool.where((e) => seen.contains(e.id)).toList();
+    return [...other, ..._pick(again, 4 - other.length)];
+  }
+
+  /// The kinds of [dimension] that can be a group of a set over [filter] now: each has
+  /// four things that can be shown in the style such a set would be drawn in. Empty when
+  /// no set can be made there.
+  List<String> kindsReady(List<PathFilter> filter, Dimension dimension) {
+    final byValue = <String, List<Entity>>{};
+    for (final e in _filtered(filter)) {
+      final v = e.valueFor(dimension.id);
+      if (v != null && dimension.values.containsKey(v)) byValue.putIfAbsent(v, () => []).add(e);
+    }
+    for (final int? style in [for (int i = 0; i < styles.length; i++) i, null]) {
+      final ready = [
+        for (final entry in byValue.entries)
+          if (entry.value.where((e) => style == null || styles[style](e)).length >= 4) entry.key
+      ];
+      if (ready.where((v) => v != Dimension.inBetween).length >= 4) return ready;
+    }
+    return const [];
+  }
+
   bool _isHeldBack(Entity e) =>
       heldBack.entries.any((h) => h.value.contains(e.valueFor(h.key)));
 
@@ -154,6 +248,9 @@ class BoardAssembler {
     List<PathFilter> filter = const [],
     required Dimension dimension,
     List<String> preferValues = const [],
+    Map<String, double>? tested,
+    Map<String, Set<String>> shownBefore = const {},
+    Set<String> notYet = const {},
   }) {
     final byValue = <String, List<Entity>>{};
     for (final e in _filtered(filter)) {
@@ -170,48 +267,48 @@ class BoardAssembler {
       final usable = <String, List<Entity>>{};
       byValue.forEach((value, members) {
         final shown = members.where(shows).toList();
-        if (shown.length >= 4) usable[value] = shown;
+        if (shown.length >= 4 && !notYet.contains(value)) usable[value] = shown;
       });
-      if (usable.length < 4) continue;
+      // "In between" is a group among the real kinds; it never makes up the number.
+      if (usable.keys.where((v) => v != Dimension.inBetween).length < 4) continue;
 
-      // Hard rule: exactly one clean solution. Rebuild until no other field also
-      // splits these 16 tiles four by four, then give up on this style.
-      for (int attempt = 0; attempt < _maxRebuilds; attempt++) {
-        // When all four groups share a sub-kind field, spreading each one evenly builds
-        // a perfect grid — itself a second solution. So the later attempts mix less evenly.
-        final evenSpread = attempt < _maxRebuilds ~/ 2;
-        // Any explicitly wanted values first (e.g. keep "dinosaur" on the board).
-        final values = usable.keys.toList()..shuffle(_random);
-        values.sort((a, b) => (preferValues.contains(a) ? 0 : 1)
-            .compareTo(preferValues.contains(b) ? 0 : 1));
-
-        final groups = <BoardGroup>[];
-        final tiles = <Entity>[];
-        for (final value in values.take(4)) {
-          final sub = _subKind(byValue[value]!, dimension, filter);
-          final four = sub == null
-              ? _pick(usable[value]!, 4)
-              : evenSpread
-                  ? _pickSpread(usable[value]!, 4, sub)
-                  : _pickMixed(usable[value]!, 4, sub);
-          groups.add(BoardGroup(
-            dimId: dimension.id,
-            value: value,
-            label: dimension.label(value),
-            items: four,
-          ));
-          tiles.addAll(four);
+      // Which four kinds: the best four first, then the next best when a four cannot make
+      // a set with exactly one clean solution (see _fours).
+      for (final four in _fours(usable.keys.toList(), tested, preferValues).take(_maxFours)) {
+        // Hard rule: exactly one clean solution. Rebuild until no other field also
+        // splits these 16 tiles four by four, then give up on this four.
+        for (int attempt = 0; attempt < _maxRebuilds; attempt++) {
+          // When all four groups share a sub-kind field, spreading each one evenly builds
+          // a perfect grid — itself a second solution. So the later attempts mix less evenly.
+          final evenSpread = attempt < _maxRebuilds ~/ 2;
+          final groups = <BoardGroup>[];
+          final tiles = <Entity>[];
+          for (final value in four) {
+            final sub = _subKind(byValue[value]!, dimension, filter);
+            final things =
+                _fourOf(usable[value]!, sub, evenSpread, shownBefore[value] ?? const {});
+            groups.add(BoardGroup(
+              dimId: dimension.id,
+              value: value,
+              label: dimension.label(value),
+              items: things,
+            ));
+            tiles.addAll(things);
+          }
+          if (secondSolution(tiles, dimension) != null) continue;
+          tiles.shuffle(_random);
+          return Board(
+              dimension: dimension, groups: groups, tiles: tiles, filter: filter, style: style);
         }
-        if (secondSolution(tiles, dimension) != null) continue;
-        tiles.shuffle(_random);
-        return Board(
-            dimension: dimension, groups: groups, tiles: tiles, filter: filter, style: style);
       }
     }
     return null;
   }
 
   static const _maxRebuilds = 20;
+
+  /// How many fours of kinds are tried before a style is given up.
+  static const _maxFours = 40;
 
   /// THE way a board is made (the owner's ruling of 7 Oct 2026): sixteen things in four
   /// groups of four, sorted by one field, with exactly one clean solution, from what the
@@ -228,7 +325,12 @@ class BoardAssembler {
     Board? board;
     for (int attempt = 0; attempt < 4; attempt++) {
       board = assemble(
-          filter: context.filter, dimension: dimension, preferValues: context.preferValues);
+          filter: context.filter,
+          dimension: dimension,
+          preferValues: context.preferValues,
+          tested: context.tested,
+          shownBefore: context.shownBefore,
+          notYet: context.notYet);
       if (board == null) return null;
       final repeated = board.tiles.where((e) => context.lastTiles.contains(e.id)).length;
       if (repeated < board.tiles.length) return board; // not the very same sixteen again
@@ -289,7 +391,9 @@ class BoardAssembler {
       final counts = <String, int>{};
       for (final e in pool.where(shows)) {
         final v = e.valueFor(dimension.id);
-        if (v != null && dimension.values.containsKey(v)) counts[v] = (counts[v] ?? 0) + 1;
+        if (v != null && v != Dimension.inBetween && dimension.values.containsKey(v)) {
+          counts[v] = (counts[v] ?? 0) + 1;
+        }
       }
       return counts.values.where((c) => c >= 4).length >= 4;
     });
@@ -327,7 +431,7 @@ class BoardAssembler {
       final counts = <String, int>{};
       for (final e in pool) {
         final v = e.valueFor(d.id);
-        if (v != null && d.values.containsKey(v)) {
+        if (v != null && v != Dimension.inBetween && d.values.containsKey(v)) {
           counts[v] = (counts[v] ?? 0) + 1;
         }
       }

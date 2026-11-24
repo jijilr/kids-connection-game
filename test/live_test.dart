@@ -94,7 +94,17 @@ void main() {
     }
     solve(g, ['bird']);
     await g.syncLive();
+    // six kinds of animal, four on a set: the set of animals comes once more, then his best line
+    expect(g.progress.lines.take(2), ['animal', 'animal/bird']);
+    g.goNext();
+    expect(g.pathLabels.last, 'Animals');
+    for (int tries = 0; tries < 60 && !g.board!.groups.any((x) => x.value == 'bird'); tries++) {
+      g.newBoard();
+    }
+    solve(g, ['bird']);
+    await g.syncLive();
     expect(g.progress.lines.first, 'animal/bird');
+    expect(g.progress.lines, isNot(contains('animal')), reason: 'every kind of animal has been tested');
     expect(helper.sent.last['lines'], g.progress.lines, reason: 'the helper is told the lines he follows');
     expect(g.nextStep!.id, isNot('animal/bird'), reason: 'the set of birds is not made yet: he plays another');
 

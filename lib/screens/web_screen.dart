@@ -12,6 +12,7 @@ import '../widgets/tile_card.dart';
 
 const _ink = Color(0xFF2D3436);
 const _amber = Color(0xFFFFC107);
+const _leaf = Color(0xFF2E9E5B); // the end of a branch
 const _edge = Color(0xFFFCE9F1); // the page, and the rim of the picture
 const _branchColors = [
   Color(0xFF6C5CE7),
@@ -193,7 +194,7 @@ class _WebScreenState extends State<WebScreen> with TickerProviderStateMixin {
                       ),
                     ),
                   _measures(measure),
-                  _legend(),
+                  _legend(nodes),
                 ],
               );
             }),
@@ -281,7 +282,9 @@ class _WebScreenState extends State<WebScreen> with TickerProviderStateMixin {
               Tooltip(
                 message: n.isStart
                     ? 'Where the game begins'
-                    : '${n.label}: found ${n.found} ${n.found == 1 ? 'time' : 'times'}, ${n.clean} of them clean',
+                    : '${n.label}: found ${n.found} ${n.found == 1 ? 'time' : 'times'}, ${n.clean} of them clean'
+                        '${n.end ? '. Nothing lies below it: the end of this branch' : ''}'
+                        '${n.between.isEmpty ? '' : '. These have no single answer: they lie between the groups they are tied to'}',
                 child: SizedBox(
                   width: size,
                   height: size,
@@ -330,6 +333,22 @@ class _WebScreenState extends State<WebScreen> with TickerProviderStateMixin {
                             child: const Icon(Icons.arrow_forward_rounded, size: 13, color: _ink),
                           ),
                         ),
+                      // a leaf: the end of a branch, nothing lies below
+                      if (n.end)
+                        Positioned(
+                          key: ValueKey('web-end-${n.id}'),
+                          left: -3,
+                          top: -3,
+                          child: Container(
+                            padding: const EdgeInsets.all(3),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              shape: BoxShape.circle,
+                              border: Border.all(color: _leaf, width: 2),
+                            ),
+                            child: const Icon(Icons.eco_rounded, size: 13, color: _leaf),
+                          ),
+                        ),
                       if (n.found > 1)
                         Positioned(
                           right: -4,
@@ -371,7 +390,7 @@ class _WebScreenState extends State<WebScreen> with TickerProviderStateMixin {
     );
   }
 
-  Widget _legend() {
+  Widget _legend(List<WebNode> nodes) {
     Widget item(Widget mark, String text) => Text.rich(
           TextSpan(children: [
             WidgetSpan(alignment: PlaceholderAlignment.middle, child: mark),
@@ -398,6 +417,11 @@ class _WebScreenState extends State<WebScreen> with TickerProviderStateMixin {
                 child: const Icon(Icons.arrow_forward_rounded, size: 11, color: _ink),
               ),
               'the app follows this next'),
+          if (nodes.any((n) => n.end))
+            item(const Icon(Icons.eco_rounded, size: 15, color: _leaf), 'a leaf: the end of a branch, nothing lies below'),
+          if (nodes.any((n) => n.between.isNotEmpty))
+            item(const Icon(Icons.more_horiz_rounded, size: 17, color: Colors.grey),
+                'dotted threads: in between, tied to both sides'),
           item(const Icon(Icons.radio_button_unchecked, size: 15, color: Colors.grey), 'faint rings: steps from the middle'),
           item(const Icon(Icons.pinch_rounded, size: 15, color: Colors.grey), 'pinch or scroll to zoom, drag to move'),
         ],
@@ -525,6 +549,7 @@ class WebLayout {
   final angleOf = <String, double>{};
   final step = <String, int>{};
   final branch = <String, int>{};
+  late final Map<String, WebNode> byId = {for (final n in nodes) n.id: n};
 
   double radiusOf(int ring) => _radius[ring];
 
@@ -615,6 +640,34 @@ class _Sky extends CustomPainter {
           canvas.drawCircle(where, 5.5,
               Paint()..color = Colors.white.withValues(alpha: 0.55)..maskFilter = const MaskFilter.blur(BlurStyle.normal, 4));
           canvas.drawCircle(where, 2.2, Paint()..color = Colors.white);
+        }
+      }
+    }
+
+    // "In between" is tied to the groups it lies between as well: dotted threads, each in
+    // the colour of the side it reaches. Such a knot is a bridge between branches.
+    for (final n in layout.nodes) {
+      final from = layout.at[n.id];
+      final t = shown(n.id).clamp(0.0, 1.0);
+      if (from == null || t <= 0) continue;
+      for (final side in n.between) {
+        final to = layout.at[side];
+        final other = layout.byId[side];
+        if (to == null || other == null) continue;
+        // bent a little toward the middle, so it does not lie on the ring
+        final half = Offset.lerp(from, to, 0.5)!;
+        final bend = Offset.lerp(half, layout.centre, 0.35)!;
+        final whole = Path()
+          ..moveTo(from.dx, from.dy)
+          ..quadraticBezierTo(bend.dx, bend.dy, to.dx, to.dy);
+        final metric = whole.computeMetrics().first;
+        final paint = Paint()
+          ..style = PaintingStyle.stroke
+          ..strokeCap = StrokeCap.round
+          ..strokeWidth = 2.6
+          ..color = layout.colorOf(other).withValues(alpha: 0.55 * t);
+        for (double d = 0; d < metric.length * t; d += 11) {
+          canvas.drawPath(metric.extractPath(d, min(d + 1.5, metric.length)), paint);
         }
       }
     }

@@ -55,22 +55,41 @@ class Progress {
   static const version = 3;
 
   /// He found [group] on a set. Clean means no wrong guess took in any of its things and
-  /// no clue was asked for it.
-  void found(String group, DateTime now, {required bool clean}) {
+  /// no clue was asked. [wrong] is how many wrong guesses took in one of its things, and
+  /// [things] the four it was shown with: a kind that comes up again is then shown with
+  /// other things where it can be.
+  void found(String group, DateTime now,
+      {required bool clean, int wrong = 0, List<String> things = const []}) {
     final g = groups.putIfAbsent(group, GroupProgress.new)
       ..found += 1
+      ..wrong += wrong
       ..last = now;
     if (clean) g.clean += 1;
+    if (things.isNotEmpty) g.things = [...things];
     updated = now;
   }
 
   /// He finished the set [board], whose groups were [all]. [didWell] are the ones he did
-  /// well, best first. The set itself is used up as a line; the groups he did well go to
-  /// the front, so the best line of the newest set is followed first; a group he did not
-  /// do well this time is no longer a line to follow.
-  void finished(String board, {required List<String> all, required List<String> didWell}) {
+  /// well, best first. The groups he did well go to the front, so the best line of the
+  /// newest set is followed first; a group he did not do well this time is no longer a
+  /// line to follow.
+  ///
+  /// A set shows four kinds, and its place may hold more (the owner's ruling of 24 Nov
+  /// 2026). [unfinished] are the sets he has played in which a kind is still untested.
+  /// Such a set is not used up: if it is this one, it comes first of all, so that its
+  /// kinds are covered in the fewest rounds before any of them is gone into ("get it
+  /// over with"); only then is it known which of them he does best. Another such set, in
+  /// which a kind has appeared since he played it, follows the groups he has just done
+  /// well.
+  void finished(String board,
+      {required List<String> all, required List<String> didWell, List<String> unfinished = const []}) {
     lines.removeWhere((id) => id == board || all.contains(id));
     lines.insertAll(0, didWell);
+    lines.insertAll(didWell.length, [
+      for (final id in unfinished)
+        if (id != board && !lines.contains(id)) id
+    ]);
+    if (unfinished.contains(board)) lines.insert(0, board);
   }
 
   /// Lines that can never be made into a set (the helper says so) are let go.
@@ -185,19 +204,38 @@ class BoardProgress {
       );
 }
 
-/// How he has found one group: how often, and how often cleanly.
+/// How he has found one group: how often, how often cleanly, how many wrong guesses took
+/// in its things, and the things it was last shown with.
 class GroupProgress {
-  GroupProgress({this.found = 0, this.clean = 0, this.last});
+  GroupProgress({this.found = 0, this.clean = 0, this.wrong = 0, List<String>? things, this.last})
+      : things = things ?? [];
   int found;
   int clean;
+  int wrong;
+  List<String> things;
   DateTime? last;
 
-  Map<String, dynamic> toJson() =>
-      {'found': found, 'clean': clean, 'last': last?.toUtc().toIso8601String()};
+  /// How well he does this kind, from 0 to 1: the share of times he found it cleanly, and
+  /// between kinds alike in that, the one with fewer wrong guesses is the better.
+  double get howWell =>
+      found == 0 ? 0 : clean / found - (wrong / found).clamp(0, 9) / 100;
+
+  Map<String, dynamic> toJson() => {
+        'found': found,
+        'clean': clean,
+        'wrong': wrong,
+        'things': things,
+        'last': last?.toUtc().toIso8601String(),
+      };
 
   factory GroupProgress.fromJson(Map<String, dynamic> json) => GroupProgress(
         found: json['found'] is num ? (json['found'] as num).toInt() : 0,
         clean: json['clean'] is num ? (json['clean'] as num).toInt() : 0,
+        wrong: json['wrong'] is num ? (json['wrong'] as num).toInt() : 0,
+        things: [
+          for (final id in (json['things'] is List ? json['things'] as List : const []))
+            if (id is String) id
+        ],
         last: DateTime.tryParse('${json['last'] ?? ''}'),
       );
 }

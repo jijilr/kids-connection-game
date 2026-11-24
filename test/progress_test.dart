@@ -113,7 +113,8 @@ void main() {
       ..found('plant', noon, clean: false)
       ..finished('seed', all: ['animal', 'plant', 'made_by_people', 'nature_not_alive'], didWell: ['animal']);
     final file = jsonDecode(progress.toFileText()) as Map<String, dynamic>;
-    expect(file['groups']['animal'], {'found': 2, 'clean': 2, 'last': '2026-10-07T12:00:00.000Z'});
+    expect(file['groups']['animal'],
+        {'found': 2, 'clean': 2, 'wrong': 0, 'things': [], 'last': '2026-10-07T12:00:00.000Z'});
     expect(file['lines'], ['animal']);
     final back = Progress.fromJson(file);
     expect(back.lines, ['animal']);

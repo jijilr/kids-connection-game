@@ -154,7 +154,12 @@ void main() {
     final deeper = g.web.where((n) => n.parent == 'animal').toList();
     expect(deeper, hasLength(4));
     expect(deeper.every((n) => n.id.startsWith('animal/') && n.found == 1), isTrue);
-    expect(g.web.singleWhere((n) => n.id == 'animal').line, isFalse, reason: 'its set is played: no longer a line');
+    expect(g.web.singleWhere((n) => n.id == 'animal').line, isTrue,
+        reason: 'two kinds of animal are still untested: its set comes once more');
+    g.goNext();
+    solve(g);
+    expect(g.web.where((n) => n.parent == 'animal'), hasLength(6), reason: 'every kind of animal that can be shown');
+    expect(g.web.singleWhere((n) => n.id == 'animal').line, isFalse, reason: 'its set is played out: no longer a line');
   });
 
   testWidgets('the web screen draws each group once, and says so when there is nothing yet', (tester) async {

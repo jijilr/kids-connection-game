@@ -127,11 +127,23 @@ void main() {
     }
     final deep = g.board!.groups.firstWhere((x) => notReady.contains(x.value)).value;
     solve(g, [deep]);
-    expect(g.progress.lines.first, 'animal/$deep', reason: 'what he did best: the helper prepares it');
-    expect(g.progress.lines, isNot(contains('animal')), reason: 'the set just played is used up');
+    // Animals holds six kinds and a set shows four (the owner's ruling of the evening of
+    // 24 Nov 2026): the set is not used up, and comes once more before any kind is gone into
+    expect(g.progress.lines.first, 'animal', reason: 'two kinds of animal are still untested');
+    expect(g.progress.lines[1], 'animal/$deep', reason: 'what he did best: the helper prepares it');
+    expect(g.nextStep!.id, 'animal');
+    final firstRound = {for (final x in g.board!.groups) x.value};
+    g.goNext();
+    expect(g.pathLabels.last, 'Animals');
+    final secondRound = {for (final x in g.board!.groups) x.value};
+    expect(secondRound.difference(firstRound), hasLength(2), reason: 'the two kinds left');
+    final waits = secondRound.firstWhere(notReady.contains);
+    solve(g, [waits]);
+    expect(g.progress.lines.first, 'animal/$waits', reason: 'what he did best: the helper prepares it');
+    expect(g.progress.lines, isNot(contains('animal')), reason: 'every kind is tested: the set is used up');
     expect(g.progress.lines, containsAllInOrder(['made_by_people', 'nature_not_alive', 'plant']));
     final next = g.nextStep!;
-    expect(next.id, isNot('animal/$deep'));
+    expect(next.id, isNot('animal/$waits'));
     expect(next.proven, isTrue);
     expect(g.progress.lines.indexOf(next.id), greaterThan(0), reason: 'the first line that is ready');
     final r = repo(5);

@@ -56,8 +56,21 @@ class WebNode {
   /// A picture of one thing of the group, for a child who cannot read its name.
   final EntityMedia? picture;
 
+  /// Nothing lies below this group: the end of a branch. The world holds too few such
+  /// things to sort them further.
+  final bool end;
+
+  /// For the group "in between": the knots it lies between, on the same set. It is tied
+  /// to them as well as to its set, so such a knot is a bridge between branches.
+  final List<String> between;
+
   const WebNode(this.id, this.label, this.parent,
-      {this.found = 0, this.clean = 0, this.line = false, this.picture});
+      {this.found = 0,
+      this.clean = 0,
+      this.line = false,
+      this.picture,
+      this.end = false,
+      this.between = const []});
 
   bool get isStart => parent == null;
 }
@@ -148,6 +161,12 @@ class EngineProvider extends ChangeNotifier {
   final Map<String, int> _firstAttempt = {};
   final Set<String> _clued = {};
   int _guesses = 0;
+
+  // The kinds of this set's place that he had been tested on when the set opened, and
+  // the places where a set tested no new kind although one was untested: such a place
+  // is not offered again in this sitting, so he is never sent round in a ring.
+  Set<String> _testedAtOpen = {};
+  final Set<String> _noNewKind = {};
 
   /// Where the button that ends this board leads, chosen once when the board is done.
   /// Null before then, and when nothing fits: the button then brings a parallel board.
@@ -277,11 +296,21 @@ class EngineProvider extends ChangeNotifier {
           final seen = progress.groups[here];
           final pool = _repo.entities.where((e) => filter.every((f) => e.isIn(f.$1, f.$2)));
           final shown = pool.map(_repo.media.forEntity).where((m) => m.art != null || m.image != null);
-          nodes[here] = WebNode(here, label, i == 0 ? 'seed' : values.sublist(0, i).join('/'),
+          final before = values.sublist(0, i);
+          final sides = <String>{};
+          if (values[i] == Dimension.inBetween) {
+            for (final e in pool) {
+              final named = e.sidesOf(dim.id);
+              sides.addAll(named.isEmpty ? dim.kinds : named);
+            }
+          }
+          nodes[here] = WebNode(here, label, i == 0 ? 'seed' : before.join('/'),
               found: seen?.found ?? 0,
               clean: seen?.clean ?? 0,
               line: progress.lines.contains(here),
-              picture: shown.isEmpty ? null : shown.first);
+              picture: shown.isEmpty ? null : shown.first,
+              end: dim.ends.containsKey(values[i]),
+              between: [for (final side in sides) [...before, side].join('/')]);
         }
         if (i < values.length - 1) {
           final inside = _repo.assembler.boardableDimensions(filter);
@@ -352,10 +381,13 @@ class EngineProvider extends ChangeNotifier {
   NextStep? _chooseNext() {
     final hereFilter = _stack.last.filter;
     final here = Progress.boardId(hereFilter);
-    final ready = _repo.assembler
-        .circlesBelow(_stack.first.dim, needPictures: _repo.settings.boardsNeedPictures)
-        .where((f) => Progress.boardId(f) != here)
-        .toList();
+    // A set he has played stays a line while one of its kinds is untested: so the first
+    // set, and the one he has just finished, may come again.
+    final ready = [
+      if (progress.lines.contains('seed')) const <PathFilter>[],
+      ..._repo.assembler
+          .circlesBelow(_stack.first.dim, needPictures: _repo.settings.boardsNeedPictures),
+    ].where((f) => Progress.boardId(f) != here || progress.lines.contains(here)).toList();
     bool inside(List<PathFilter> f) =>
         f.length == hereFilter.length + 1 &&
         Progress.boardId(f.sublist(0, hereFilter.length)) == here &&
@@ -379,10 +411,86 @@ class EngineProvider extends ChangeNotifier {
         ? (shown.isNotEmpty ? shown.first : (rest.isNotEmpty ? rest.first : null))
         : (rest.isNotEmpty ? rest.first : (shown.isNotEmpty ? shown.first : null));
     if (chosen == null) return null;
-    final step = chosen.last;
-    return NextStep(chosen, registry.byId(step.$1)?.label(step.$2) ?? step.$2,
+    final label = chosen.isEmpty
+        ? _stack.first.label
+        : registry.byId(chosen.last.$1)?.label(chosen.last.$2) ?? chosen.last.$2;
+    return NextStep(chosen, label,
         inside: inside(chosen), proven: progress.lines.contains(Progress.boardId(chosen)));
   }
+
+  // ------------------------------------------------- more kinds than four, and "in between"
+
+  /// What he has shown of the kinds of the set at [filter], sorted by [dim]: how well he
+  /// has done each kind he was tested on, the things each was last shown with, and the
+  /// kinds that are not to be shown yet.
+  ({Map<String, double> tested, Map<String, Set<String>> shown, Set<String> notYet}) _coverage(
+      List<PathFilter> filter, Dimension dim) {
+    final tested = <String, double>{};
+    final shown = <String, Set<String>>{};
+    for (final value in dim.values.keys) {
+      final g = progress.groups[Progress.boardId([...filter, (dim.id, value)])];
+      if (g == null || g.found == 0) continue;
+      tested[value] = g.howWell;
+      shown[value] = g.things.toSet();
+    }
+    return (tested: tested, shown: shown, notYet: _notYet(filter, dim));
+  }
+
+  /// "In between" waits until he knows the kinds on both sides of it (the owner's rule
+  /// that new things extend what he has seen: a thing that fits no kind means nothing to
+  /// one who does not know the kinds). The sides are the answers its things lie between;
+  /// a thing that names none (the people who know do not agree) lies between them all.
+  Set<String> _notYet(List<PathFilter> filter, Dimension dim) {
+    if (!dim.values.containsKey(Dimension.inBetween)) return const {};
+    final between = _repo.entities.where((e) =>
+        filter.every((f) => e.isIn(f.$1, f.$2)) && e.valueFor(dim.id) == Dimension.inBetween);
+    if (between.isEmpty) return const {};
+    final ready = _repo.assembler.kindsReady(filter, dim).where((v) => v != Dimension.inBetween).toSet();
+    final sides = <String>{};
+    for (final e in between) {
+      final named = e.sidesOf(dim.id);
+      sides.addAll(named.isEmpty ? ready : named.where(ready.contains));
+    }
+    return sides.every((side) => _knows([...filter, (dim.id, side)]))
+        ? const {}
+        : const {Dimension.inBetween};
+  }
+
+  /// He knows the group at [side]: he has found it, and where it has a set of its own he
+  /// has played that set through.
+  bool _knows(List<PathFilter> side) {
+    final id = Progress.boardId(side);
+    if ((progress.groups[id]?.found ?? 0) == 0) return false;
+    final inside = _repo.assembler.boardableDimensions(side);
+    final hasSet = inside.isNotEmpty &&
+        (!_repo.settings.boardsNeedPictures || _repo.assembler.hasPictureBoard(side, inside.first));
+    return !hasSet || (progress.boards[id]?.solved ?? 0) > 0;
+  }
+
+  /// The sets he has played in which a kind is still untested and can be shown now.
+  List<String> _unfinished() {
+    final start = _stack.first;
+    final out = <String>[];
+    final places = [
+      const <PathFilter>[],
+      ..._repo.assembler.circlesBelow(start.dim, needPictures: _repo.settings.boardsNeedPictures),
+    ];
+    for (final filter in places) {
+      final id = Progress.boardId(filter);
+      if (_noNewKind.contains(id) || (progress.boards[id]?.solved ?? 0) == 0) continue;
+      final dim = filter.isEmpty ? start.dim : _repo.assembler.boardableDimensions(filter).first;
+      final c = _coverage(filter, dim);
+      final ready = _repo.assembler.kindsReady(filter, dim);
+      if (ready.any((v) => !c.tested.containsKey(v) && !c.notYet.contains(v))) out.add(id);
+    }
+    return out;
+  }
+
+  /// Whether the group [g] of the set just played leads on to a set of its own, made or
+  /// still to be made. The end of a branch does not; "in between" does only where its
+  /// things can themselves be sorted.
+  bool _leadsOn(Board b, BoardGroup g) =>
+      !b.dimension.ends.containsKey(g.value) && (g.value != Dimension.inBetween || canDescend(g));
 
   /// The button that ends a board: to the board chosen for him, or, when nothing was
   /// chosen, a parallel board at once, so he never waits.
@@ -445,11 +553,16 @@ class EngineProvider extends ChangeNotifier {
 
   void _open() {
     final lvl = _stack.last;
+    final known = _coverage(lvl.filter, lvl.dim);
+    _testedAtOpen = known.tested.keys.toSet();
     final b = _repo.assembler.makeBoard(BoardContext(
         filter: lvl.filter,
         dimension: lvl.dim,
         preferValues: _repo.settings.keepInPlay[lvl.dim.id] ?? const [],
-        lastTiles: _lastTiles));
+        lastTiles: _lastTiles,
+        tested: known.tested,
+        shownBefore: known.shown,
+        notYet: known.notYet));
     if (b != null) _lastTiles = {for (final e in b.tiles) e.id};
 
     board = b;
@@ -518,7 +631,10 @@ class EngineProvider extends ChangeNotifier {
       if (_isSolvedGroup(g) || !_same(g, ids)) continue;
       solved.add(g);
       selected.clear();
-      progress.found(Progress.boardId(_childFilter(g)), _now(), clean: didWell(g));
+      progress.found(Progress.boardId(_childFilter(g)), _now(),
+          clean: didWell(g),
+          wrong: _wrongGuesses[g.value] ?? 0,
+          things: [for (final e in g.items) e.id]);
       explanation = explanationOf(g);
       if (g.value == _clueGroup) {
         _clueGroup = null;
@@ -529,11 +645,16 @@ class EngineProvider extends ChangeNotifier {
         progress.solved(Progress.boardId(_stack.last.filter), _now());
         // Nowhere deeper to go from here: an order for more content, which the job reads.
         if (diggable.isEmpty) progress.order(Progress.boardId(_stack.last.filter), _now());
-        // the lines to follow next: this set is used up; the groups he did well go first
+        // The lines to follow next: the groups he did well go first. The set itself is
+        // used up only when every kind of its place has been tested; a set that tested no
+        // new kind is not offered again in this sitting.
         String idOf(BoardGroup g) => Progress.boardId(_childFilter(g));
-        progress.finished(Progress.boardId(_stack.last.filter),
+        final hereId = Progress.boardId(_stack.last.filter);
+        if (b.groups.every((g) => _testedAtOpen.contains(g.value))) _noNewKind.add(hereId);
+        progress.finished(hereId,
             all: [for (final g in b.groups) idOf(g)],
-            didWell: [for (final g in ranked) if (didWell(g)) idOf(g)]);
+            didWell: [for (final g in ranked) if (didWell(g) && _leadsOn(b, g)) idOf(g)],
+            unfinished: _unfinished());
         unawaited(_progressStore.save(progress));
         _setsThisSitting++;
         nextStep = _chooseNext();

@@ -1,3 +1,5 @@
+import 'dimension.dart';
+
 /// A single learnable thing — "T. rex", "Mango tree", "Sun".
 ///
 /// A thing is a record of plain fields with values (`extinct: true`). Which fields
@@ -36,9 +38,22 @@ class Entity {
   /// "false" for yes/no fields), or null when the field does not apply to it.
   ///
   /// A thing that fits several values of a field lists them all, and one that experts
-  /// debate is marked "depends". Either way the answer here matches no dictionary
-  /// value, so the thing never joins a group on a board sorted by that field.
-  String? valueFor(String fieldId) => fields[fieldId]?.toString();
+  /// debate is marked "depends". Such a thing has no single answer: its answer here is
+  /// [Dimension.inBetween]. Until four of them can be a group of their own on a set
+  /// sorted by that field, it joins no group there, as before.
+  String? valueFor(String fieldId) {
+    final value = fields[fieldId];
+    if (value == null) return null;
+    if (value == 'depends' || (value is List && value.length > 1)) return Dimension.inBetween;
+    return value is List ? (value.isEmpty ? null : '${value.first}') : value.toString();
+  }
+
+  /// The answers this thing lies between, for a field it has no single answer to. Empty
+  /// when it names none: the people who know simply do not agree.
+  List<String> sidesOf(String fieldId) {
+    final value = fields[fieldId];
+    return value is List && value.length > 1 ? [for (final v in value) '$v'] : const [];
+  }
 
   /// Whether this thing is in a given (field, value) group.
   bool isIn(String fieldId, String value) => valueFor(fieldId) == value;

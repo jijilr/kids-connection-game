@@ -18,7 +18,7 @@ Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 | Dictionary | version 12, 21 fields (two withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups with words | 61, each with a ladder of clues; 59 have an explanation |
-| Tests | 74 in the game, 37 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
+| Tests | 91 in the game, 37 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
 
 **The fifteen sets:** Everything, Animals, Mammals, Wild animals on land and Make music with it (both
 made on 24 Nov by the helper, the second while the owner played), Birds, Dinosaurs, Plants, Vegetable
@@ -257,6 +257,29 @@ The owner's design, in his words in section 3. Built the same day, in five steps
   card. The web also still opens by itself after four sets. (`WebMiniature` in
   `lib/screens/web_screen.dart`.) The web screen's legend now wraps on a narrow phone.
 
+### More kinds than four, the end of a branch, and "in between" (24 Nov, evening)
+The owner named three limits he foresaw, and said to build for general use, not for one child of four.
+The rules and their reasons are written down in `DESIGN.md`, a new file at the root, as he asked
+("document them... as my june md helped"). Built in the game:
+- **More kinds than four at a place.** A set shows four kinds; a place may hold more. They are covered
+  in the fewest sets: untested kinds first, and the places left over are filled with the kinds he did
+  worst, shown with other things where they have them. Five kinds take two sets, six take two. The
+  place stays a line, at the front, until every kind is tested. When a four cannot make a set with one
+  clean solution, another used-again kind is tried, and only then does it cost one more set. Animals
+  (six kinds that can be shown) now comes twice before the game goes into one of its kinds.
+- **The end of a branch.** A kind marked as an end in the dictionary (`"ends"` on its question) is never
+  a line to follow, and the web shows a leaf on it.
+- **In between.** "Things resist binary classification" (virus, Pluto). A thing that lists two answers
+  to a question, or is marked "depends", was kept off every set. Now four such things at a place are
+  the group "In between" on a set sorted by that question. It waits until he knows the kinds on both
+  sides, and it never makes up the number of kinds a set needs. On the web it is tied by dotted threads
+  to the kinds it lies between. Nothing in the game changes yet: today only Rain and Pigeon are such
+  things, one at each of two places.
+- Saved progress now also keeps, for each group, the wrong guesses that took in its things and the four
+  things it was last shown with.
+- Tests: `test/more_than_four_test.dart` (17), on small made-up games, so they do not depend on what
+  the real game holds.
+
 ### The Vegetable plants set, after the owner was caught by it (24 Nov)
 He played it and could not tell the last two groups apart ("you help me. haha").
 - Ladies finger is with the fruit now: his word, kept in the catalogue with the reason (new command
@@ -444,6 +467,15 @@ All are kept in the catalogue, marked, with their pictures.
 Withdrawn field: "What happens when it gets wet?" for Rocks and soil. It had passed on groups padded with
 other names for mud.
 
+- **24 Nov, evening.** Three limits he foresaw, and general use. (1) "we can have more than 4. and we
+  will have to have combinations of them to cover testing each"; with five, "to test 5th item, we might
+  reuse 3 which are already used"; with six, "I prefer getting it done in 2 rounds". (2) Some branches
+  end: "delta varient... there is no more below that". (3) "Virus, Pluto, Schrödinger's cat, Centaur,
+  Photon... things resist binary classification"; "we will have to force this in everything node...
+  without this we will lose real richness in the long run". And: "don't worry about my son now... we
+  are departing to the general use now. so proceed with whatever is needed... also document them."
+  See `DESIGN.md`.
+
 ---
 
 ## 6. Open
@@ -576,3 +608,6 @@ other names for mud.
 - A small picture of his web beside Next, as the child's way in.
 - The web made to look its best, and saved as a picture; a group left one short is tried once more;
   "Make music with it" finished. Spent on the day by the helper's ledger: Rs 136 of 200.
+- A small picture of his web beside Next; clues for every group under the new rule (Rs 13).
+- Evening: more kinds than four in the fewest sets, the end of a branch, and "in between", in the game;
+  `DESIGN.md` written. Nothing spent.
