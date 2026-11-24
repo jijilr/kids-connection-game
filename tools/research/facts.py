@@ -56,13 +56,13 @@ Fill in the fields below. Answer a field only when its condition holds.
 {fields}
 
 Return JSON: {{"fields": [{{"field": "kind_of_thing", "value": "animal", "quote": "exact words from a source", "source": "the source id"}}], "cannot_tell": [{{"field": "...", "why": "a few words"}}]}}
-The value must be one of the choices for that field, spelled exactly as given. The quote must be the sentence that shows it. If no sentence in the sources shows it, put the field under cannot_tell: do not guess."""
+The value must be one of the choices for that field, spelled exactly as given. The quote must be the sentence that shows it. An everyday reading is enough: a sentence saying that a living thing lived millions of years ago, or in a named age of the far past, shows that it is extinct. If no sentence in the sources shows it, put the field under cannot_tell: do not guess."""
 
 SECOND_READER = "You check a claim against a quoted sentence. You judge only from the quote, never from your own knowledge."
 
 SECOND_TASK = """Each item says something about "{name}" and gives the sentence it is said to come from.
 
-"supported": would a careful reader agree, from this sentence alone, that {name} belongs in that group? An everyday reading is enough: a sentence saying it is "a motor vehicle" shows it belongs with Vehicles; "a building where people go to pray" shows it belongs with Buildings; a sentence saying people drink from it shows it belongs with Things in the house. Answer false if the sentence is about something else, or does not show it.
+"supported": would a careful reader agree, from this sentence alone, that {name} belongs in that group? An everyday reading is enough: a sentence saying it is "a motor vehicle" shows it belongs with Vehicles; "a building where people go to pray" shows it belongs with Buildings; a sentence saying people drink from it shows it belongs with Things in the house; a sentence saying a living thing lived millions of years ago, or in a named age of the far past, shows it is extinct. Answer false if the sentence is about something else, or does not show it.
 
 Return JSON: {{"items": [{{"id": "a", "supported": true}}]}}
 

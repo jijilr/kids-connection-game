@@ -4892,7 +4892,7 @@
     ]
   },
   "animal/dinosaur/land_grazer": {
-    "status": "approved by the rules on 2026-11-24, job run 2026-11-24-02",
+    "status": "withdrawn on 2026-11-24: its fourth group, bone-headed dinosaurs, has only two well-known members, so no set could open; the job may now propose five or six groups",
     "field": "dinosaur_group",
     "wording": "Which dinosaur family does it belong to?",
     "values": {
@@ -5081,6 +5081,20 @@
         "run": "2026-11-24-01",
         "library": null,
         "source": "the model"
+      },
+      {
+        "wording": "Which dinosaur family does it belong to?",
+        "values": {
+          "long_necked": "Long-necked plant eaters",
+          "horned": "Horned and frilled dinosaurs",
+          "armoured": "Armoured and plated dinosaurs",
+          "bone_headed": "Bone-headed dinosaurs"
+        },
+        "why": [
+          "withdrawn: its fourth group, bone-headed dinosaurs, has only two well-known members, so no set could open; the job may now propose five or six groups"
+        ],
+        "date": "2026-11-24",
+        "run": "withdrawn"
       }
     ]
   }

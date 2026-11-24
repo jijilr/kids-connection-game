@@ -479,6 +479,20 @@
         "leaves": "Leaves and plants",
         "hunts": "Other small creatures"
       }
+    },
+    {
+      "id": "dinosaur_group",
+      "wording": "Which dinosaur family does it belong to?",
+      "for": [
+        "animal/dinosaur/land_grazer"
+      ],
+      "from": "proposed by the model for Land grazers; it passed the four tests in job run 2026-11-24-02",
+      "values": {
+        "long_necked": "Long-necked plant eaters",
+        "horned": "Horned and frilled dinosaurs",
+        "armoured": "Armoured and plated dinosaurs",
+        "bone_headed": "Bone-headed dinosaurs"
+      }
     }
   ],
   "retired": [

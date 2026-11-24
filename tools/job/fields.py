@@ -68,12 +68,12 @@ PROPOSE_TASK = """A picture game for a four-year-old in India, who cannot read y
 This part of the game holds: {chain}.
 The things in it now: {members}.
 
-Propose {count} different questions that could sort this part into FOUR groups. Best first. A question is good only if ALL of these hold:
+Propose {count} different questions that could sort this part into FOUR OR MORE groups (four to six). Best first. A question is good only if ALL of these hold:
 - It is a natural four-way split that a four-year-old already knows well. Good ones in this game: vehicles by where they travel (on the road, on rails, on water, in the air); vegetable plants by the part we eat (the fruit, what grows under the ground, the leaves, the seeds or pods).
 - Every thing has ONE true answer. Never a question where a thing truly fits two groups. (Refused before: "What do we get from the tree?", because one tree gives fruit, shade and wood.)
 - It sorts by what the thing is, does or looks like, not by where someone happens to keep it. (Refused before: "plants in pots".)
 - It is a real distinction that a teacher would teach. Never colour and never size: those are surface. If all the things here share one answer to the usual questions (all fish live in water), ask for the real difference WITHIN them (where the fish mostly lives: the sea, a river or pond, a tank at home).
-- Every thing listed above fits exactly one of your four groups.
+- Every thing listed above fits exactly one of your groups.
 - Each group can hold at least five things that such a child knows by sight, counting the ones above.
 - A child could tell the answer from a picture, or knows it from daily life.
 - It is not one of the questions the game already asks: {existing}.
@@ -81,7 +81,7 @@ Propose {count} different questions that could sort this part into FOUR groups. 
 For each group, put every thing from the list above that belongs in it under "members", spelled exactly as given, and under "new" give {new} more everyday things that belong in it and are not in the list: one or two words each, as a parent names them to a child, no brand names, each looking clearly different in a small picture. Things in this part are named like this: {like}.
 
 Return JSON: {{"fields": [{{"key": "short_snake_case_name", "wording": "The question, as said to the child", "why": "a few words", "values": [{{"key": "snake_case", "label": "The group's name, two to five words", "members": ["..."], "new": ["..."]}}]}}]}}
-Each field has exactly four values."""
+Each field has four to six values. Give five or six where the subject truly has that many kinds: a set uses any four of them that can be filled, so a kind that turns out to have too few well-known things does no harm."""
 
 CHOOSER = "You choose sorting questions for a small child's picture game from a given list. You answer only with JSON."
 

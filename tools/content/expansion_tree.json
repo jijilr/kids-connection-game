@@ -642,14 +642,9 @@
       "branch": "animal",
       "members": 13,
       "open": false,
-      "sorted_by": "dinosaur_group",
       "missing": {
-        "field": null,
-        "short": {
-          "armoured": 2,
-          "bone_headed": 2
-        },
-        "things": 4
+        "field": "no field splits it four ways",
+        "things": 3
       },
       "decisions": [
         {
@@ -677,15 +672,27 @@
           "why": "too few familiar things of their own for: Animals > Dinosaurs > Land grazers > Armoured and plated dinosaurs; Animals > Dinosaurs > Land grazers > Bone-headed dinosaurs",
           "members_then": 10,
           "status": "held by the rules"
+        },
+        {
+          "date": "2026-11-24",
+          "what": "the field \"Which dinosaur family does it belong to?\" was withdrawn",
+          "why": "its fourth group, bone-headed dinosaurs, has only two well-known members, so no set could open; the job may now propose five or six groups",
+          "status": "released"
+        },
+        {
+          "date": "2026-11-24",
+          "what": "released for another try",
+          "why": "a proposed question may now have five or six groups, and a sentence placing an animal in the far past shows it is extinct",
+          "status": "released"
         }
       ],
       "factors": {
         "nearness": 0.33,
         "neglect": 0.2,
         "unlocks": 0.33,
-        "cheapness": 0.5
+        "cheapness": 0.36
       },
-      "score": 3.3,
+      "score": 3.0,
       "move": "widening",
       "status": "held",
       "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"

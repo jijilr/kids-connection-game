@@ -323,7 +323,12 @@
         "kind_of_dinosaur": "land_grazer"
       },
       "since": 11,
-      "added_by": "the rules, job run 2026-11-24-02"
+      "added_by": "the rules, job run 2026-11-24-02",
+      "sorts_boards": false,
+      "withdrawn": {
+        "on": "2026-11-24",
+        "why": "its fourth group, bone-headed dinosaurs, has only two well-known members, so no set could open; the job may now propose five or six groups"
+      }
     }
   }
 }

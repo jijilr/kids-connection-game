@@ -28678,121 +28678,80 @@
         "label": "Land grazers",
         "things": 13,
         "steps_from_seed": 3,
-        "sorted_by": "dinosaur_group",
-        "groups": {
-          "long_necked": {
-            "label": "Long-necked plant eaters",
-            "things": 5,
-            "with_picture": 5
-          },
-          "horned": {
-            "label": "Horned and frilled dinosaurs",
-            "things": 4,
-            "with_picture": 4
-          },
-          "armoured": {
-            "label": "Armoured and plated dinosaurs",
-            "things": 2,
-            "with_picture": 2
-          },
-          "bone_headed": {
-            "label": "Bone-headed dinosaurs",
-            "things": 2,
-            "with_picture": 2
-          }
-        },
         "could_be_filled_by": [
           {
             "name": "Chasmosaurus",
-            "status": "held by the rules",
-            "group": "horned"
+            "status": "held by the rules"
           },
           {
             "name": "Pachyrhinosaurus",
-            "status": "held by the rules",
-            "group": "horned"
+            "status": "held by the rules"
           },
           {
             "name": "Centrosaurus",
-            "status": "held by the rules",
-            "group": "horned"
+            "status": "held by the rules"
           },
           {
             "name": "Euoplocephalus",
-            "status": "held by the rules",
-            "group": "armoured"
+            "status": "held by the rules"
           },
           {
             "name": "Kentrosaurus",
-            "status": "held by the rules",
-            "group": "armoured"
+            "status": "held by the rules"
           },
           {
             "name": "Nodosaurus",
-            "status": "held by the rules",
-            "group": "armoured"
+            "status": "held by the rules"
           },
           {
             "name": "Sauropelta",
-            "status": "held by the rules",
-            "group": "armoured"
+            "status": "held by the rules"
           },
           {
             "name": "Edmontonia",
-            "status": "held by the rules",
-            "group": "armoured"
+            "status": "held by the rules"
           },
           {
             "name": "Scelidosaurus",
-            "status": "held by the rules",
-            "group": "armoured"
+            "status": "held by the rules"
           },
           {
             "name": "Polacanthus",
-            "status": "held by the rules",
-            "group": "armoured"
+            "status": "held by the rules"
           },
           {
             "name": "Panoplosaurus",
-            "status": "held by the rules",
-            "group": "armoured"
+            "status": "held by the rules"
           },
           {
             "name": "Stygimoloch",
-            "status": "held by the rules",
-            "group": "bone_headed"
+            "status": "held by the rules"
           },
           {
             "name": "Stegoceras",
-            "status": "held by the rules",
-            "group": "bone_headed"
+            "status": "held by the rules"
           },
           {
             "name": "Prenocephale",
-            "status": "held by the rules",
-            "group": "bone_headed"
+            "status": "held by the rules"
           },
           {
             "name": "Homalocephale",
-            "status": "held by the rules",
-            "group": "bone_headed"
+            "status": "held by the rules"
           },
           {
             "name": "Sphaerotholus",
-            "status": "held by the rules",
-            "group": "bone_headed"
+            "status": "held by the rules"
           },
           {
             "name": "Colepiocephale",
-            "status": "held by the rules",
-            "group": "bone_headed"
+            "status": "held by the rules"
           }
         ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "2 more thing(s) in 'Armoured and plated dinosaurs'",
-          "2 more thing(s) in 'Bone-headed dinosaurs'"
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 3 more things"
         ]
       },
       "animal/dinosaur/flyer": {
@@ -29701,7 +29660,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job run 2026-11-24-02",
+    "by": "a field withdrawn",
     "on": "2026-11-24"
   },
   "groups": {
