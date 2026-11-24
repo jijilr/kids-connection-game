@@ -6850,34 +6850,34 @@
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "how_we_play_with_it=music:clue1": {
-      "text": "Think about toys that make a sound you can sing along to.",
+      "text": "Think about toys that make a sound you can hear.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 4.32,
+      "seconds": 3.64,
       "cache": "tools/voice/clips/groups/how_we_play_with_it__music__clue1.mp3",
-      "sha256": "c8a93a483361541c0b356e29fe84534c1b9532e01d882e0155d0d8eb1e7e2816",
+      "sha256": "2bb0fbf90911f0b9fa795bd414fadf78e465ad7ad85174ec3d695395efecd991",
       "game_file": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "how_we_play_with_it=music:clue2": {
-      "text": "You use your hands or your breath to make the sound.",
+      "text": "You blow, bang or pluck it to make the sound.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 4.01,
+      "seconds": 3.64,
       "cache": "tools/voice/clips/groups/how_we_play_with_it__music__clue2.mp3",
-      "sha256": "9753de1db34506e56ede9824a4c41f27a761a486047f44ae5148a9d9470a18bd",
+      "sha256": "8815f66f6aa3e0dd1f1b5a0ed3601f77c284654cca2fa1cd677b363006a914ed",
       "game_file": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "how_we_play_with_it=music:clue3": {
-      "text": "You can tap it, blow it, or pluck it to make a tune.",
+      "text": "It makes music, not noise from wheels or wind.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 3.96,
+      "seconds": 4.07,
       "cache": "tools/voice/clips/groups/how_we_play_with_it__music__clue3.mp3",
-      "sha256": "e89438522de851da2874f81f57f8a2c8bf3d2d3d5da9f99d8e795f57dfffc77e",
+      "sha256": "222594a9be379269f033f978964934d622c95e1e02537db0c2eee480e3ed8e04",
       "game_file": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
@@ -7594,6 +7594,17 @@
       "cache": "tools/voice/clips/groups/how_it_makes_sound__press_keys__explanation.mp3",
       "sha256": "5172157c66b2267e1c8469ba5f044756f696143f304305458c227ac7b896105e",
       "game_file": "Assets/audio/groups/how_it_makes_sound__press_keys__explanation.mp3",
+      "recorded_on": "2026-11-24",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "how_we_play_with_it=music:explanation": {
+      "text": "These toys all make music when you blow, bang or pluck them. A recorder is a good instrument for children to learn about music.",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "seconds": 8.69,
+      "cache": "tools/voice/clips/groups/how_we_play_with_it__music__explanation.mp3",
+      "sha256": "79b5c0fb099dd811f529dc3ed4e41012db47ea752dcaf31c650cafef03a015ae",
+      "game_file": "Assets/audio/groups/how_we_play_with_it__music__explanation.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     }

@@ -33781,7 +33781,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-11-24-13",
+    "by": "job:2026-11-24-14",
     "on": "2026-11-24"
   },
   "groups": {
@@ -36248,34 +36248,42 @@
       "question": "How do we mostly play with it?",
       "clues": [
         {
-          "text": "Think about toys that make a sound you can sing along to.",
+          "text": "Think about toys that make a sound you can hear.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue1.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3",
-          "clip_sha256": "c8a93a483361541c0b356e29fe84534c1b9532e01d882e0155d0d8eb1e7e2816",
+          "clip_sha256": "2bb0fbf90911f0b9fa795bd414fadf78e465ad7ad85174ec3d695395efecd991",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You use your hands or your breath to make the sound.",
+          "text": "You blow, bang or pluck it to make the sound.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue2.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3",
-          "clip_sha256": "9753de1db34506e56ede9824a4c41f27a761a486047f44ae5148a9d9470a18bd",
+          "clip_sha256": "8815f66f6aa3e0dd1f1b5a0ed3601f77c284654cca2fa1cd677b363006a914ed",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You can tap it, blow it, or pluck it to make a tune.",
+          "text": "It makes music, not noise from wheels or wind.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue3.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3",
-          "clip_sha256": "e89438522de851da2874f81f57f8a2c8bf3d2d3d5da9f99d8e795f57dfffc77e",
+          "clip_sha256": "222594a9be379269f033f978964934d622c95e1e02537db0c2eee480e3ed8e04",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
-      "explanation": null,
+      "explanation": {
+        "text": "These toys all make music when you blow, bang or pluck them. A recorder is a good instrument for children to learn about music.",
+        "together": "These toys all make music when you blow, bang or pluck them.",
+        "fact": "A recorder is a good instrument for children to learn about music.",
+        "quote": "A second reason was that the recorder is a good instrument for children to learn about music.",
+        "source": "recorder:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Recorder",
+        "cached": "tools/voice/clips/groups/how_we_play_with_it__music__explanation.mp3",
+        "clip": "Assets/audio/groups/how_we_play_with_it__music__explanation.mp3",
+        "clip_sha256": "79b5c0fb099dd811f529dc3ed4e41012db47ea752dcaf31c650cafef03a015ae",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+      },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "held": [
-        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
-      ]
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     },
     "dinosaur_group=long_necked": {
       "field": "dinosaur_group",

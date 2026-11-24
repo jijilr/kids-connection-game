@@ -1121,19 +1121,22 @@
     "how_we_play_with_it=music": {
       "clues": [
         {
-          "text": "Think about toys that make a sound you can sing along to.",
+          "text": "Think about toys that make a sound you can hear.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3"
         },
         {
-          "text": "You use your hands or your breath to make the sound.",
+          "text": "You blow, bang or pluck it to make the sound.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3"
         },
         {
-          "text": "You can tap it, blow it, or pluck it to make a tune.",
+          "text": "It makes music, not noise from wheels or wind.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3"
         }
       ],
-      "explanation": null
+      "explanation": {
+        "text": "These toys all make music when you blow, bang or pluck them. A recorder is a good instrument for children to learn about music.",
+        "audio": "Assets/audio/groups/how_we_play_with_it__music__explanation.mp3"
+      }
     },
     "dinosaur_group=long_necked": {
       "clues": [
