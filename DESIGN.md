@@ -162,8 +162,9 @@ With what the game already holds, fewer than sixteen: the group is an end, and t
 the names are written down as the reason. The count leans toward "not an end": a wrong end
 would close a branch, while a missed end only costs a search for a question.
 
-In the data an end is written on the question, in `dictionary.json`: `"ends": {"<kind>":
-{"on": "...", "why": "...", "run": "..."}}`. An end can be taken back; the mark is kept.
+In the data an end is written on the place, in `dictionary.json`, under the place's own name:
+`"ends": {"animal/mammal/pet": {"on": "...", "why": "...", "run": "..."}}`. It is a place and not
+an answer to a question (section 8a). An end can be taken back; the mark is kept.
 
 Tried for real on 24 Nov 2026 (Rs 0.3 in all), on groups the game does not have yet:
 
@@ -351,52 +352,104 @@ more run fills it. Nothing was padded to make four.
 
 **Not built yet:** the helper does not widen by itself. Today widening is a command.
 
-## 8a. Circles that cross (raised, not decided)
+## 8a. Circles that cross
 
 Owner, 24 Nov 2026, late evening: "inspite of being accomodating, we still assume concentric
 circles paradigm. but knowledge is never that... while tomato could be part of the vegitable
 circle, it could be also part of the hard to define category... how do we accomadate other
-possible circles along with the main center and concentric circle".
+possible circles along with the main center and concentric circle". And then: "yes, build the
+small proof."
 
-What is true today:
+**The data was never concentric.** A thing is a list of answers to questions. Tomato plant
+carries two: it is a vegetable plant, and the part we eat is the fruit. Both are true, and
+neither is "in between". It already stood in two circles.
 
-- **The data is not concentric.** A thing is a list of answers to questions. Tomato plant
-  carries two: it is a vegetable plant, and the part we eat is the fruit. Both are true, and
-  neither is "in between". It already stands in two circles.
-- **The game is concentric**, because of three choices in the engine, not in the data:
-  1. A question lives inside one circle. "Which part do we eat?" is asked only of vegetable
-     plants, so "we eat the fruit" can never take in the mango tree. And one question is
-     stored twice: "pet, farm or wild?" once for mammals and once for birds.
-  2. A place asks one question.
-  3. A place is named by the road to it (`animal/bird`). Two roads to the same things would be
-     two places.
+**The game was concentric**, by three choices in the engine. Each is now undone:
 
-What accommodating other circles would mean:
+| The old choice | What it is now |
+|---|---|
+| A question lived inside one circle. "Pet, farm or wild?" was asked of mammals and stored again, as a second field, for birds. | A question belongs to every thing it is true of. It is one field. |
+| A place asked one question. | A place may ask more than one. Each set still asks one, and the same sixteen are never grouped a second way. |
+| A place was named by the road to it. | A place is named by the circles it lies in, in the dictionary's order. Two roads to the same things reach one place, with one name and one knot on the web. |
 
-1. A question belongs to every thing it is true of, not to one place.
-2. A place is where circles overlap, named by the circles and not by the road.
-3. A place may ask more than one question. Each set still asks one, and the same sixteen are
-   never grouped a second way: those rules stand.
+The centre and the rings stay, as the spine: every place on the old single road keeps its name,
+so nothing saved is lost.
 
-The centre and the rings stay, as the spine. After a group done well the game could then go
-three ways instead of two: deeper, elsewhere, or across to another circle the same things
-belong to. On the web such a place has more than one thread. Depth becomes the number of
-circles a place lies inside, whatever the road.
+### A question has a reach
 
-What it costs:
+The first real run taught this. "Is it mostly a pet, a farm animal or a wild animal?" was put
+to the sixty animals that had never been asked. Two checks, sharing no wording, placed the fish
+and the insects, and both refused every dinosaur and the two extinct snakes. A dinosaur is not
+a pet, a farm animal or a wild animal. It is gone.
 
-- The one-solution rule refuses more sets, because more questions can sort the same sixteen.
-- Most overlaps hold fewer than sixteen things. They are ends (section 6).
-- A crossing circle needs facts for more things, but no new pictures: its sets are made of
-  things the game already has.
-- Place names, lines, the web and the job's tree all assume one road today.
+So the rule is: **a question belongs to every thing it is true of, and only to those.** A thing
+it does not fit carries no answer, and a set sorted by the question simply does not show it.
+Nothing is forced.
 
-The assistant's advice: prove it small first. "Pet, farm or wild?" across all animals uses
-answers fifty animals already carry.
+A question is asked at a place when it can fill a set there and either
 
-One thing this changes about section 7: many "hard to define" things stop being hard once
-circles may cross. The tomato needs no "in between". What is left for "in between" is what no
-second question resolves, such as the virus.
+- every thing of the place answers it, or
+- the place is the question's **home**: the smallest place that holds every thing that answers.
+
+"Pet, farm or wild?" has its home at Animals. It is not a question about Everything, because
+every thing that answers it is an animal.
+
+### What the player meets
+
+1. Animals comes twice for its six kinds, as before (section 5).
+2. Animals then stays a line for its second question. It does not come at once: it follows the
+   groups he has just done well.
+3. When it comes, the set asks "pet, farm or wild?" of animals of every kind. "Pets at home"
+   holds a dog and a parrot.
+4. A group done well there is a line like any other. "Wild animals on land" is a place of its
+   own, with a set sorted by kind of animal: mammals, birds, insects, reptiles.
+5. The wild land animals among the mammals are one place, whether he came through Mammals or
+   through Wild animals on land. On the web it is one knot, tied by a dotted thread to the
+   other circle it lies in.
+
+Depth is the number of circles a place lies inside, whatever the road.
+
+### What it changed elsewhere
+
+- **An end is a place, not an answer.** "Pets at home" among the mammals and among the birds
+  are two places, and one may end where the other does not. The mark moved from the question
+  to the place (section 6).
+- **Words can become untrue.** A group that grows past what its clues were written for must
+  not keep them. The wild animals in water were whales and seals, and "comes up to breathe
+  air" was true; then the fish joined. When the keep-fit check finds a clue or an explanation
+  no longer true of every thing, and nothing better passes, the words are set aside (kept on
+  record, not shown). No clue is better than a false one.
+- **A question its things already answer is not offered to them again**, so no second copy of
+  a question can be made.
+
+### The real numbers (24 Nov 2026, Rs 1.7 in all)
+
+| | |
+|---|---|
+| Animals that already carried the answer | 33 mammals |
+| Answers taken over from the second copy | 17 birds |
+| Placed by both checks | 28: 21 wild on land, 7 wild in water |
+| Listed two groups | 1: Goldfish, a pet and a wild animal in water |
+| The question does not fit | 31: every dinosaur, and two extinct snakes |
+| Groups after the change | Pets 9, Farm 9, Wild on land 43, Wild in water 16 |
+
+Code: `tools/job/cross.py` (the data); `BoardAssembler.canon`, `questionsAt`, `circlesBelow`;
+`EngineProvider._questionFor`, `_resolve`, `_widerThan`, the `web` getter. Tests:
+`test/crossing_circles_test.dart` (12), and three in `tools/job/selftest.py`.
+
+### What the proof does not cover
+
+- **The job and the helper still know only the old single road.** They cannot make a set for
+  a place that exists only by crossing. Such a place plays from things the game already has,
+  and the game no longer drops its line because the helper has never heard of it.
+- **Two widened groups have no clues now**, and one has no explanation: "Wild animals on land"
+  and "Wild animals in water". Their old words were written for mammals. New ones were refused
+  three times each. A group this broad may be too broad to hint at.
+- **A wider circle is a looser idea.** "Wild animals on land" now holds a lion, a crow, a
+  housefly and a house lizard. Two checks agree that each belongs. Whether such a group still
+  teaches something is a question for the owner.
+- **Only one question has been widened.** "Which part do we eat?" is still asked only of
+  vegetable plants, so the mango tree still cannot join the tomato.
 
 ## 9. The measures, and the audience
 
@@ -428,6 +481,7 @@ With general use decided, that wording is the next thing to turn into a setting.
 | The end of a branch (6) | built: never a line, leaf on the web | built: counted before a question is looked for |
 | In between (7) | built | the two keys are written, tested and tried; no run uses them yet (one rule is open) |
 | Widening (8) | meets a wider place by rule 5 | built as a command; the helper does not widen by itself |
+| Circles that cross (8a) | built | one question widened by a command; the job and helper still know one road |
 
 ## 11. Open questions
 
@@ -443,8 +497,10 @@ With general use decided, that wording is the next thing to turn into a setting.
   place" may suit a question better; a question can set its own.
 - **Automatic widening.** Whether the helper should widen places by itself, inside the day's
   money, or only on a command.
-- **Circles that cross.** Section 8a. The largest open question: whether the engine stays a
-  tree with bridges, or becomes overlapping circles with the tree as its spine.
+- **Circles that cross, beyond the proof.** Section 8a. Which other questions to widen, and
+  whether the job and the helper should learn that a place has more than one road.
+- **How broad a group may be.** A widened group can lose its clues (section 8a). Is a group
+  with no clue acceptable, or should a question not be widened that far?
 - **A kind that is in between.** The rule in section 7 that would let four viruses fill the
   group at the first place. It needs the owner's word, because it decides what stands beside
   Animals and Plants on the first set.
@@ -460,4 +516,4 @@ With general use decided, that wording is the next thing to turn into a setting.
 | 24 Nov 2026 | No special cases: "I gave you prehistoric example just as an example." Build the general thing. |
 | 24 Nov 2026 | Automate is the design; "Dig deeper" is a test feature. The web of what he has found; breadth and depth. |
 | 24 Nov 2026, evening | More kinds than four, covered in the fewest rounds. A branch can end. Things resist classification, and the first place must take them in. General use. Write the decisions down. |
-| 24 Nov 2026, late | Raised, not ruled: the concentric-circles paradigm itself. A thing belongs to more than one circle (section 8a). |
+| 24 Nov 2026, late | The concentric-circles paradigm itself: a thing belongs to more than one circle. "Yes, build the small proof" (section 8a). |

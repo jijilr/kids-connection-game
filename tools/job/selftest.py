@@ -10,7 +10,7 @@ import sys
 import tempfile
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
-import prepare_next as job          # noqa: E402
+import prepare_next as job          # noqa: E402  (it puts the other tool folders on the path)
 from prepare_next import cat, field_rules       # noqa: E402
 import expand                       # noqa: E402
 
@@ -875,9 +875,7 @@ def test_a_branch_ends_where_the_world_holds_too_few_and_a_script_does_the_count
     dictionary = copy.deepcopy(cat.read_json(cat.DICTIONARY))
     circles = expand.build_circles(dictionary, cat.game_copy(cat.load())["things"], cat.read_json(cat.SETTINGS))
     closed = next(cid for cid, c in circles.items() if not c["open"] and cid != "seed")
-    field, value = ends.step_of(circles, closed)
-    assert ends.step_of(circles, "seed") is None
-    ends.mark(dictionary, field, value, ends.why(world), "a-test")
+    ends.mark(dictionary, closed, ends.why(world), "a-test")
     assert ends.end_circles(dictionary, circles) == {closed: ends.why(world)}
     assert expand.ends_in(dictionary, circles) == {closed: ends.why(world)}
     for circle in circles.values():
@@ -886,10 +884,11 @@ def test_a_branch_ends_where_the_world_holds_too_few_and_a_script_does_the_count
     assert circles[closed]["status"] == "end" and circles[closed]["held_by"].startswith("the end of this branch")
     assert closed not in expand.in_order(circles)
     # taken back: the mark is kept, and nothing is deleted
-    assert ends.reopen(dictionary, field, value, "a sixth was found")
-    assert "ends" not in dictionary["fields"][field]
-    assert dictionary["fields"][field]["ends_taken_back"][0]["taken_back_why"] == "a sixth was found"
-    assert not ends.reopen(dictionary, field, value, "again")
+    assert ends.reopen(dictionary, closed, "a sixth was found")
+    assert "ends" not in dictionary
+    assert dictionary["ends_taken_back"][0]["taken_back_why"] == "a sixth was found"
+    assert dictionary["ends_taken_back"][0]["place"] == closed
+    assert not ends.reopen(dictionary, closed, "again")
 
 
 # ------------------------------------------------------------------ widening a place, and "in between"
@@ -1029,6 +1028,125 @@ def test_a_widening_run_is_planned_for_one_place_that_has_its_question():
     assert job.sheet_kind({"fields": {"kind_of_thing": "a_kind_added_later"}}) == "nature_not_alive"
     assert job.sheet_kind({"fields": {"kind_of_thing": ["plant", "animal"]}}) == "plant"
     assert job.sheet_kind({"fields": {"kind_of_thing": "depends"}}) == "nature_not_alive"
+
+
+# ------------------------------------------------------------------ circles that cross
+
+def crossing_world() -> tuple:
+    """Mammals and birds each answer "how does it move?" under a field of their own; fish and
+    dinosaurs have never been asked. What a mammal that walks eats hangs from that answer."""
+    moves = {"walks": "Walks", "flies": "Flies", "swims": "Swims", "crawls": "Crawls"}
+    dictionary = {"version": 1, "fields": {
+        "kind_of_thing": {"wording": "What kind of thing is it?", "expected_on": "everything",
+                          "values": {"animal": "Animals", "plant": "Plants", "made": "Made things", "nature": "Nature"}},
+        "kind_of_animal": {"wording": "What kind of animal is it?", "expected_on": {"kind_of_thing": "animal"},
+                           "values": {"mammal": "Mammals", "bird": "Birds", "fish": "Fish", "dinosaur": "Dinosaurs"}},
+        "how_it_moves": {"wording": "How does it mostly move?", "library": "how_it_moves",
+                         "expected_on": {"kind_of_animal": "mammal"}, "values": dict(moves)},
+        "how_it_moves_of_bird": {"wording": "How does it mostly move?", "library": "how_it_moves",
+                                 "expected_on": {"kind_of_animal": "bird"}, "values": dict(moves)},
+        "what_it_eats": {"wording": "What does it eat?", "expected_on": {"how_it_moves": "walks"},
+                         "values": {"plants": "Plants", "meat": "Meat", "both": "Both", "insects": "Insects"}},
+    }}
+    def animal(kind, **more):
+        return {"fields": {"kind_of_thing": "animal", "kind_of_animal": kind, **more}, "familiar": 0.9}
+    things = {"cow": animal("mammal", how_it_moves="walks", what_it_eats="plants"), "bat": animal("mammal", how_it_moves="flies"),
+              "crow": animal("bird", how_it_moves_of_bird="flies"), "duck": animal("bird", how_it_moves_of_bird="swims"),
+              "shark": animal("fish"), "eel": animal("fish"), "t_rex": animal("dinosaur"),
+              "mango": {"fields": {"kind_of_thing": "plant"}, "familiar": 0.9}}
+    for key, thing in things.items():
+        thing["name"] = key.replace("_", " ").capitalize()
+    return dictionary, things, [("kind_of_thing", "animal")]
+
+
+def test_a_question_asked_of_a_wider_circle_takes_over_its_twin_and_sorts_only_what_is_left():
+    """The owner, 24 Nov 2026: "we still assume concentric circles paradigm. but knowledge is never
+    that." A question belongs to every thing it is true of, not to one place."""
+    import cross
+    dictionary, things, path = crossing_world()
+    todo = cross.plan(dictionary, things, "how_it_moves", path)
+    assert todo["keep"] == ["cow", "bat"], "the mammals have answered"
+    assert todo["take_over"] == {"crow": ("how_it_moves_of_bird", "flies"), "duck": ("how_it_moves_of_bird", "swims")}, \
+        "the birds answered the same question under another field: nothing is asked again"
+    assert todo["to_sort"] == ["shark", "eel", "t_rex"] and todo["twins"] == ["how_it_moves_of_bird"]
+    assert todo["hangs"] == ["what_it_eats"]
+    assert "mango" not in todo["keep"] + todo["to_sort"], "a plant is outside the circle"
+    assert cross.same_question(dictionary["fields"]["how_it_moves"], dictionary["fields"]["how_it_moves_of_bird"])
+    assert not cross.same_question(dictionary["fields"]["how_it_moves"], dictionary["fields"]["what_it_eats"])
+
+    # the piles are shown with things of every kind that has answered, not of one kind only
+    shown = cross.examples(things, {"cow": "walks", "bat": "flies", "crow": "flies", "duck": "swims"}, "kind_of_animal")
+    assert shown == {"walks": ["Cow"], "flies": ["Bat", "Crow"], "swims": ["Duck"]}
+
+
+def test_a_question_has_a_reach_and_a_thing_it_does_not_fit_carries_no_answer():
+    """The first real run: both checks placed the fish and the insects, and both refused every
+    dinosaur. A dinosaur is not a pet, a farm animal or a wild animal; it is gone."""
+    import cross
+    dictionary, things, path = crossing_world()
+    def sort_twice(client, config, spend, chain, candidate, names):
+        where = {"Shark": ("swims", ["swims"]), "Eel": ("swims", ["crawls"]), "T rex": ("none", [])}
+        return {n: where[n][0] for n in names}, {n: where[n][1] for n in names}
+    real, cross.field_rules.sort_twice = cross.field_rules.sort_twice, sort_twice
+    try:
+        placed, several, nowhere = cross.sort_them(None, {}, None, "Animals", dictionary["fields"]["how_it_moves"], {},
+                                                   ["Shark", "Eel", "T rex"])
+    finally:
+        cross.field_rules.sort_twice = real
+    assert placed == {"Shark": "swims"}, "both checks, one group"
+    assert several == {"Eel": ["swims", "crawls"]}, "the checks differ: it lists both, and stays off such sets"
+    assert nowhere == ["T rex"], "neither can place it: the question is not about it"
+
+    after = cross.rules_after(copy.deepcopy(dictionary), "how_it_moves", path, ["how_it_moves_of_bird"], everywhere=False)["fields"]
+    assert after["how_it_moves"]["expected_on"] == {"kind_of_thing": "animal"} and after["how_it_moves"]["where_it_fits"] is True
+    assert after["how_it_moves"]["crossed"][0]["was_asked_of"] == {"kind_of_animal": "mammal"}
+    assert after["how_it_moves_of_bird"]["merged_into"] == "how_it_moves" and after["how_it_moves_of_bird"]["sorts_boards"] is False
+    assert after["what_it_eats"]["expected_on"] == {"kind_of_animal": "mammal", "how_it_moves": "walks"}, \
+        "what hung from one of its answers stays where it was: it is not suddenly asked of every animal that walks"
+    whole = cross.rules_after(copy.deepcopy(dictionary), "how_it_moves", path, [], everywhere=True)["fields"]
+    assert "where_it_fits" not in whole["how_it_moves"]
+
+    # the guard: a thing the question does not fit may lack the answer, and a merged field is asked of nobody
+    import guard
+    stamped = lambda fields: {"things": {"x": {"name": "X", "fields": fields, "reviewed": 1}}}
+    rules = {"version": 1, "fields": after}
+    dinosaur = {"kind_of_thing": "animal", "kind_of_animal": "dinosaur"}
+    assert guard.problems(rules, stamped(dinosaur)) == []
+    assert guard.problems(rules, stamped({"kind_of_thing": "animal", "kind_of_animal": "bird", "how_it_moves": "flies"})) == []
+    strict = {"version": 1, "fields": whole}
+    assert any("missing 'how_it_moves'" in line for line in guard.problems(strict, stamped(dinosaur)))
+    # and to the worker's set rules a merged field is no second way to sort a set
+    from boards import second_solution
+    sixteen = {f"t{i}": {"fields": {"how_it_moves": list(after["how_it_moves"]["values"])[i // 4],
+                                    "how_it_moves_of_bird": list(after["how_it_moves"]["values"])[i // 4]}} for i in range(16)}
+    assert second_solution(rules, sixteen, list(sixteen), "how_it_moves") is None
+    assert second_solution({"version": 1, "fields": dictionary["fields"]}, sixteen, list(sixteen), "how_it_moves") == "how_it_moves_of_bird"
+
+
+def test_words_that_are_no_longer_true_of_a_widened_group_are_set_aside_not_kept():
+    """A group may grow past what its words were written for: the wild animals in water were whales
+    and seals, and "comes up to breathe air" was true; then the fish joined them. No clue is better
+    than a false one."""
+    import group_words
+    asked = {}
+    def ask(client, config, spend, system, user, options=None):
+        asked["user"] = user
+        return {"clues": [{"true": False, "names": False, "simple": True, "only_here": True},
+                          {"true": True, "names": False, "simple": True, "only_here": True},
+                          {"true": True, "names": False, "simple": True, "only_here": True}], "ladder": True, "explains": False}
+    real, group_words.reslib.ask = group_words.reslib.ask, ask
+    try:
+        wrong = group_words.still_fit(None, {"model": "m", "thinking": "t"}, None,
+                                      {"question": "Is it a pet, a farm animal or a wild animal?", "label": "Wild animals in water",
+                                       "field": "f", "value": "wild_water"}, "Animals", ["Pets (Dog)"], ["Whale", "Shark"],
+                                      ["It comes up to breathe air.", "It swims.", "It lives in water."],
+                                      "They all breathe air from above the water.")
+    finally:
+        group_words.reslib.ask = real
+    assert "They all breathe air" in asked["user"], "the explanation is read again as well"
+    assert any(w.startswith("clue 1") and "not true" in w for w in wrong)
+    assert any(w.startswith("the explanation") and "not true" in w for w in wrong)
+    assert [w for w in wrong if "not true" in w] == wrong[-2:] or len([w for w in wrong if "not true" in w]) == 2
 
 
 def main():

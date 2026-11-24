@@ -18,13 +18,19 @@ thing of a circle above it:
      `merged_into` (kept, with its values on the things; it sorts nothing and is no longer
      compared with anything).
   2. Every other thing of the circle is sorted twice, by two calls that share no wording,
-     with the question's own groups and a few of each group's things as examples. Both
-     must give the same single group. A thing the two put in different groups lists both,
-     as the dictionary rules, and so stays off sets sorted by the question until four such
-     things can be the group "in between". A thing neither can place stops the run:
-     nothing is written, and the owner is told (his rule for what two checks cannot settle).
-  3. The dictionary says where the question is now expected. A field that hung from one
-     of its answers (what a wild land animal eats, asked of mammals) is told to stay where
+     with the question's own groups and a few of each group's things as examples, taken
+     from every kind that has answered so far. Both must give the same single group. A
+     thing the two put in different groups lists both, as the dictionary rules, and so
+     stays off sets sorted by the question until four such things can be the group "in
+     between".
+  3. A QUESTION HAS A REACH. A thing that neither check can place is not forced into a
+     group and does not stop the run: the question is not about it, and it does not carry
+     the answer. (The first real run, 24 Nov 2026: both checks placed the fish and the
+     insects, and both refused every dinosaur. A dinosaur is not a pet, a farm animal or
+     a wild animal; it is gone.) So a question belongs to every thing it is true of, and
+     only to those. The dictionary then says the question is asked `where_it_fits`.
+  4. The dictionary says where the question is now asked. A field that hung from one of
+     its answers (what a wild land animal eats, asked of mammals) is told to stay where
      it was.
 
 Nothing is drawn and no thing is added: a crossing circle is made of things the game
@@ -106,7 +112,26 @@ def sort_them(client, config, spend, chain: str, definition: dict, such_as: dict
     return placed, several, nowhere
 
 
-def rules_after(dictionary: dict, field: str, path: list, twins: list) -> dict:
+def examples(things: dict, answered: dict, kinds_by: str = None) -> dict:
+    """A few things of each group to show the two sortings: the best known, and from every
+    kind of thing that has answered so far, so that a pile does not look as if it were
+    for one kind only. (With mammals alone as examples, one check placed no fish at all.)"""
+    by = {}
+    for key in sorted(answered, key=lambda k: -things[k].get("familiar", 0)):
+        if isinstance(answered[key], str):
+            kind = things[key]["fields"].get(kinds_by) if kinds_by else None
+            by.setdefault(answered[key], {}).setdefault(str(kind), []).append(things[key]["name"])
+    out = {}
+    for value, kinds in by.items():
+        out[value] = []
+        for i in range(EXAMPLES):
+            for names in kinds.values():
+                if i < len(names) and len(out[value]) < EXAMPLES:
+                    out[value].append(names[i])
+    return out
+
+
+def rules_after(dictionary: dict, field: str, path: list, twins: list, everywhere: bool = True) -> dict:
     """The dictionary as it stands once the question is asked of the whole circle. A field
     that hung from one of the question's answers stays where it was: it is still expected
     only where the question used to be asked."""
@@ -122,6 +147,9 @@ def rules_after(dictionary: dict, field: str, path: list, twins: list) -> dict:
                 other["expected_on"] = {**was[asked], **rule, field: answer}
                 rule = other["expected_on"]
     fields[field]["expected_on"] = dict(path)
+    if not everywhere:
+        # it is asked wherever it fits inside the circle: a thing it does not fit carries no answer
+        fields[field]["where_it_fits"] = True
     fields[field].setdefault("crossed", []).append({
         "on": reslib.today(), "now_asked_of": dict(path), "was_asked_of": was[field],
         "why": "the owner, 24 Nov 2026: circles cross; a question belongs to every thing it is true of"})
@@ -165,24 +193,21 @@ def main():
     cap = float(args[args.index("--cap") + 1]) if "--cap" in args else DEFAULT_CAP_INR
     spend = reslib.Spend(config, cap / config["inr_per_usd"])
     names = [things[k]["name"] for k in todo["to_sort"]]
-    such_as = {}
-    for key in sorted(todo["keep"], key=lambda k: -things[k].get("familiar", 0)):
-        value = things[key]["fields"][field]
-        if isinstance(value, str):
-            such_as.setdefault(value, []).append(things[key]["name"])
+    answered = {k: things[k]["fields"][field] for k in todo["keep"]}
+    answered.update({k: value for k, (_, value) in todo["take_over"].items()})
+    such_as = examples(things, answered, circles[cid].get("sorted_by"))
     chain = " > ".join(dictionary["fields"][f]["values"][str(v)] for f, v in path)
     placed, several, nowhere = sort_them(reslib.deepseek(), config, spend, chain, definition, such_as, names) if names else ({}, {}, [])
     spent = f"Spent: Rs {spend.usd * config['inr_per_usd']:.2f}."
-    if nowhere:
-        print("Two checks could place neither of these, so nothing was changed: " + ", ".join(nowhere) + ". " + spent)
-        raise SystemExit(1)
 
     saved = {p: p.read_text(encoding="utf-8") for p in (cat.DICTIONARY, LIBRARY)}
-    reslib.write_json(cat.DICTIONARY, rules_after(dictionary, field, path, todo["twins"]))
+    reslib.write_json(cat.DICTIONARY, rules_after(dictionary, field, path, todo["twins"], everywhere=not nowhere))
     library = cat.read_json(LIBRARY)
     for question in library.get("questions", []):
-        if question.get("id") == definition.get("library") and cid not in question.get("for", []):
-            question.setdefault("for", []).append(cid)
+        # noted, not offered more widely: `for` still says which circles may take the question
+        # as their own, and a circle whose things already answer it is never offered it again
+        if question.get("id") == definition.get("library") and cid not in question.get("asked_across", []):
+            question.setdefault("asked_across", []).append(cid)
     reslib.write_json(LIBRARY, library)
     labels = definition["values"]
     try:
@@ -193,6 +218,8 @@ def main():
                     changed["things"][key].setdefault("notes", {})[field] = changed["things"][key]["notes"][twin]
             for key in todo["to_sort"]:
                 name = things[key]["name"]
+                if name in nowhere:
+                    continue        # the question is not about it
                 if name in placed:
                     changed["things"][key]["fields"][field] = placed[name]
                 else:
@@ -211,6 +238,9 @@ def main():
     print("Sorted: " + ", ".join(f"{n} in '{label}'" for label, n in counts.items()) + ".")
     for name, values in several.items():
         print(f"  {name}: the two checks named {' and '.join(labels[v] for v in values)}; it lists both.")
+    if nowhere:
+        print(f"The question does not fit {len(nowhere)} thing(s), by both checks or by one; they carry no answer to it: "
+              + ", ".join(nowhere) + ".")
     print(f'Done. "{definition["wording"]}" is now asked of all of {circles[cid]["label"]}. ' + spent)
 
 

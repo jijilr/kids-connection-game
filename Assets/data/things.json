@@ -536,7 +536,7 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "wild_land"
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.95,
       "reviewed": 13,
@@ -549,7 +549,7 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": [
+        "pet_farm_or_wild": [
           "pet",
           "wild_land"
         ]
@@ -559,7 +559,7 @@
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "notes": {
-        "pet_farm_or_wild_of_bird": "Two checks could not give it one group: Pets at home and Wild animals on land. It stays off boards sorted by this field. Job run 2026-10-07-03."
+        "pet_farm_or_wild": "Two checks could not give it one group: Pets at home and Wild animals on land. It stays off boards sorted by this field. Job run 2026-10-07-03."
       }
     },
     "parrot": {
@@ -568,7 +568,7 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "pet"
+        "pet_farm_or_wild": "pet"
       },
       "familiar": 0.95,
       "reviewed": 13,
@@ -581,7 +581,7 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "farm"
+        "pet_farm_or_wild": "farm"
       },
       "familiar": 0.95,
       "reviewed": 13,
@@ -594,7 +594,7 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "farm"
+        "pet_farm_or_wild": "farm"
       },
       "familiar": 0.9,
       "reviewed": 13,
@@ -607,7 +607,7 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "farm"
+        "pet_farm_or_wild": "farm"
       },
       "familiar": 0.9,
       "reviewed": 13,
@@ -620,7 +620,7 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "wild_land"
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.85,
       "reviewed": 13,
@@ -633,7 +633,7 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "wild_land"
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -646,7 +646,7 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "wild_land"
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -659,7 +659,7 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "wild_water"
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.75,
       "reviewed": 13,
@@ -671,19 +671,27 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "fish",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": [
+          "pet",
+          "wild_water"
+        ]
       },
       "familiar": 0.9,
       "reviewed": 13,
       "source": "deepseek:drafted+checked",
-      "drafted_in": "seed_and_animals"
+      "drafted_in": "seed_and_animals",
+      "notes": {
+        "pet_farm_or_wild": "Two checks could not give it one group: Pets at home and Wild animals in water. It stays off sets sorted by this question. Asked of all of Animals on 2026-11-24."
+      }
     },
     "rohu_fish": {
       "name": "Rohu fish",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "fish",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -695,7 +703,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "fish",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.75,
       "reviewed": 13,
@@ -707,7 +716,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "fish",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.7,
       "reviewed": 13,
@@ -719,7 +729,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "fish",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.65,
       "reviewed": 13,
@@ -731,7 +742,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "insect",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.95,
       "reviewed": 13,
@@ -743,7 +755,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "insect",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.95,
       "reviewed": 13,
@@ -755,7 +768,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "insect",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.9,
       "reviewed": 13,
@@ -767,7 +781,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "insect",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.9,
       "reviewed": 13,
@@ -779,7 +794,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "insect",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.85,
       "reviewed": 13,
@@ -791,7 +807,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "insect",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.85,
       "reviewed": 13,
@@ -803,7 +820,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "insect",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -815,7 +833,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "insect",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.75,
       "reviewed": 13,
@@ -827,7 +846,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.9,
       "reviewed": 13,
@@ -839,7 +859,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.9,
       "reviewed": 13,
@@ -851,7 +872,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.85,
       "reviewed": 13,
@@ -863,7 +885,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.85,
       "reviewed": 13,
@@ -875,7 +898,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -887,7 +911,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.7,
       "reviewed": 13,
@@ -899,7 +924,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.6,
       "reviewed": 13,
@@ -911,7 +937,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.6,
       "reviewed": 13,
@@ -923,7 +950,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "amphibian",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.95,
       "reviewed": 13,
@@ -935,7 +963,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "amphibian",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -947,7 +976,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "amphibian",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.6,
       "reviewed": 13,
@@ -1286,7 +1316,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 1.0,
       "reviewed": 13,
@@ -1297,7 +1328,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 1.0,
       "reviewed": 13,
@@ -2635,7 +2667,7 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "pet"
+        "pet_farm_or_wild": "pet"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -2648,7 +2680,7 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "pet"
+        "pet_farm_or_wild": "pet"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -2661,7 +2693,7 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "wild_water"
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -2674,7 +2706,7 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "wild_water"
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.7,
       "reviewed": 13,
@@ -2687,7 +2719,7 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "wild_water"
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.7,
       "reviewed": 13,
@@ -2820,14 +2852,14 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "farm"
+        "pet_farm_or_wild": "farm"
       },
       "familiar": 0.9,
       "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-05",
       "notes": {
-        "pet_farm_or_wild_of_bird": "The pages point to 'Wild animals on land'. Two checks, sorting it as a parent would, both put it in 'Farm animals'."
+        "pet_farm_or_wild": "The pages point to 'Wild animals on land'. Two checks, sorting it as a parent would, both put it in 'Farm animals'."
       }
     },
     "lovebird": {
@@ -2836,14 +2868,14 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "pet"
+        "pet_farm_or_wild": "pet"
       },
       "familiar": 0.7,
       "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "notes": {
-        "pet_farm_or_wild_of_bird": "The pages point to 'Wild animals on land'. Two checks, sorting it as a parent would, both put it in 'Pets at home'."
+        "pet_farm_or_wild": "The pages point to 'Wild animals on land'. Two checks, sorting it as a parent would, both put it in 'Pets at home'."
       }
     },
     "airport": {
@@ -3505,7 +3537,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "arachnids",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.85,
       "reviewed": 13,
@@ -3517,7 +3550,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "arachnids",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.7,
       "reviewed": 13,
@@ -3529,7 +3563,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "arachnids",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.6,
       "reviewed": 13,

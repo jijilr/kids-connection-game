@@ -300,7 +300,7 @@
       "branch": "animal",
       "members": 17,
       "open": true,
-      "sorted_by": "pet_farm_or_wild_of_bird",
+      "sorted_by": "pet_farm_or_wild",
       "decisions": [
         {
           "date": "2026-10-07",
@@ -431,9 +431,15 @@
       "branch": "animal",
       "members": 5,
       "open": false,
+      "sorted_by": "pet_farm_or_wild",
       "missing": {
-        "field": "no field splits it four ways",
-        "things": 11
+        "field": null,
+        "short": {
+          "pet": 4,
+          "farm": 4,
+          "wild_land": 4
+        },
+        "things": 12
       },
       "decisions": [
         {
@@ -492,9 +498,9 @@
         "nearness": 0.5,
         "neglect": 0.17,
         "unlocks": 0.33,
-        "cheapness": 0.21
+        "cheapness": 0.25
       },
-      "score": 3.1,
+      "score": 3.2,
       "move": "widening",
       "status": "held",
       "held_by": "the rules: \"Where does it mostly live?\": not every thing has one value: 6 of the 15 names sorted have no single group, and at most one in 8 may (Goldfish, Angelfish, Guppy, Betta fish, Zebra fish, Neon tetra); \"Where does this fish mostly live?\": not every thing has one value: 8 of the 18 names sorted have no single group, and at most one in 8 may (Goldfish, Guppy, Betta fish, Neon tetra, Angelfish, Zebra fish); \"What covers the fish's body?\": only 1 of its values have four familiar things, and a board needs four: 'Has scales' has 8, 'Has smooth skin' has 2, 'Has a hard shell' has 0, 'Has spines' has 1; \"Where does the fish swim?\": its groups have no sharp edges: both checks placed only 59% of the things where the proposer did (Goldfish: 'near_top' or 'middle'; Shark: 'near_bottom' or 'middle'; Clownfish: 'near_top' or 'hides_in_rocks'; Zebra fish: 'near_top' or 'middle')"
@@ -505,9 +511,15 @@
       "branch": "animal",
       "members": 8,
       "open": false,
+      "sorted_by": "pet_farm_or_wild",
       "missing": {
-        "field": "no field splits it four ways",
-        "things": 8
+        "field": null,
+        "short": {
+          "pet": 4,
+          "farm": 4,
+          "wild_water": 4
+        },
+        "things": 12
       },
       "decisions": [
         {

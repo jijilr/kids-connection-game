@@ -140,7 +140,10 @@ void main() {
     final waits = secondRound.firstWhere(notReady.contains);
     solve(g, [waits]);
     expect(g.progress.lines.first, 'animal/$waits', reason: 'what he did best: the helper prepares it');
-    expect(g.progress.lines, isNot(contains('animal')), reason: 'every kind is tested: the set is used up');
+    // Every kind of animal is tested, so Animals no longer comes first. It stays a line all
+    // the same: the place has a second question (pet, farm or wild), and comes again for
+    // it after what he has just earned.
+    expect(g.progress.lines.indexOf('animal'), 4);
     expect(g.progress.lines, containsAllInOrder(['made_by_people', 'nature_not_alive', 'plant']));
     final next = g.nextStep!;
     expect(next.id, isNot('animal/$waits'));

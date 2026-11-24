@@ -220,7 +220,8 @@ void main() {
       ([('kind_of_thing', 'made_by_people'), ('kind_of_made_thing', 'household')], 'kind_of_house_thing'),
       // the first field chosen from the field library by the rules, not approved by hand
       ([('kind_of_thing', 'animal'), ('kind_of_animal', 'mammal')], 'pet_farm_or_wild'),
-      ([('kind_of_thing', 'animal'), ('kind_of_animal', 'bird')], 'pet_farm_or_wild_of_bird'),
+      // since 24 Nov 2026 one question for both: it is asked of every animal it fits
+      ([('kind_of_thing', 'animal'), ('kind_of_animal', 'bird')], 'pet_farm_or_wild'),
       ([('kind_of_thing', 'made_by_people'), ('kind_of_made_thing', 'toy')], 'how_we_play_with_it'),
       ([('kind_of_thing', 'made_by_people'), ('kind_of_made_thing', 'building')], 'what_people_do_there'),
     ];

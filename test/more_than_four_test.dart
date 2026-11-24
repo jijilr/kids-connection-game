@@ -34,7 +34,8 @@ ContentRepository game(List<String> kinds,
     int seed = 1,
     Map<String, Map<String, dynamic>> extra = const {},
     Map<String, dynamic> fields = const {},
-    Map<String, dynamic> kind = const {}}) {
+    Map<String, dynamic> kind = const {},
+    Map<String, dynamic> ends = const {}}) {
   final things = <String, Map<String, dynamic>>{
     for (final k in kinds)
       for (int i = 0; i < each; i++)
@@ -46,6 +47,7 @@ ContentRepository game(List<String> kinds,
   };
   final registry = DimensionRegistry.fromJson({
     'version': 1,
+    'ends': ends,
     'fields': {
       'kind': {
         'wording': 'What kind is it?',
@@ -410,10 +412,8 @@ void main() {
   });
 
   test('the end of a branch is no line to follow, and the web knows it', () async {
-    final g = await start(game(['a', 'b', 'c', 'd'], kind: const {
-      'ends': {
-        'b': {'on': '2026-11-24', 'why': 'only five such things have a page of their own'}
-      }
+    final g = await start(game(['a', 'b', 'c', 'd'], ends: const {
+      'b': {'on': '2026-11-24', 'why': 'only five such things have a page of their own'}
     }));
     solve(g, ['b', 'a']);
     expect(g.didWell(g.board!.groups.firstWhere((x) => x.value == 'b')), isTrue);
@@ -422,7 +422,7 @@ void main() {
     final web = {for (final n in g.web) n.id: n};
     expect(web['b']!.end, isTrue);
     expect(web['a']!.end, isFalse);
-    expect(g.registry.byId('kind')!.ends['b'], contains('only five'));
+    expect(g.registry.ends['b'], contains('only five'));
   });
 
   testWidgets('the web shows a leaf on the end of a branch, and ties "in between" to both sides', (tester) async {
@@ -438,8 +438,9 @@ void main() {
           }
         },
     }, kind: const {
-      'ends': {'b': 'only five such things have a page of their own'},
       'in_between': {'label': 'Hard to place'},
+    }, ends: const {
+      'b': 'only five such things have a page of their own'
     }));
     solve(g);
     g.goNext();

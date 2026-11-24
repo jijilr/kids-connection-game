@@ -4042,7 +4042,8 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "wild_land"
+        "pet_farm_or_wild_of_bird": "wild_land",
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.95,
       "reviewed": 13,
@@ -4132,7 +4133,7 @@
           },
           {
             "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
+            "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
             "open_now": true
           }
@@ -4149,6 +4150,10 @@
         "pet_farm_or_wild_of_bird": [
           "pet",
           "wild_land"
+        ],
+        "pet_farm_or_wild": [
+          "pet",
+          "wild_land"
         ]
       },
       "familiar": 0.95,
@@ -4156,7 +4161,8 @@
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "notes": {
-        "pet_farm_or_wild_of_bird": "Two checks could not give it one group: Pets at home and Wild animals on land. It stays off boards sorted by this field. Job run 2026-10-07-03."
+        "pet_farm_or_wild_of_bird": "Two checks could not give it one group: Pets at home and Wild animals on land. It stays off boards sorted by this field. Job run 2026-10-07-03.",
+        "pet_farm_or_wild": "Two checks could not give it one group: Pets at home and Wild animals on land. It stays off boards sorted by this field. Job run 2026-10-07-03."
       },
       "picture": {
         "tile": "animals_3_01_c2",
@@ -4249,7 +4255,8 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "pet"
+        "pet_farm_or_wild_of_bird": "pet",
+        "pet_farm_or_wild": "pet"
       },
       "familiar": 0.95,
       "reviewed": 13,
@@ -4339,7 +4346,7 @@
           },
           {
             "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
+            "sorted_by": "pet_farm_or_wild",
             "group": "pet",
             "open_now": true
           }
@@ -4353,7 +4360,8 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "farm"
+        "pet_farm_or_wild_of_bird": "farm",
+        "pet_farm_or_wild": "farm"
       },
       "familiar": 0.95,
       "reviewed": 13,
@@ -4434,7 +4442,7 @@
           },
           {
             "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
+            "sorted_by": "pet_farm_or_wild",
             "group": "farm",
             "open_now": true
           }
@@ -4448,7 +4456,8 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "farm"
+        "pet_farm_or_wild_of_bird": "farm",
+        "pet_farm_or_wild": "farm"
       },
       "familiar": 0.9,
       "reviewed": 13,
@@ -4538,7 +4547,7 @@
           },
           {
             "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
+            "sorted_by": "pet_farm_or_wild",
             "group": "farm",
             "open_now": true
           }
@@ -4552,7 +4561,8 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "farm"
+        "pet_farm_or_wild_of_bird": "farm",
+        "pet_farm_or_wild": "farm"
       },
       "familiar": 0.9,
       "reviewed": 13,
@@ -4642,7 +4652,7 @@
           },
           {
             "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
+            "sorted_by": "pet_farm_or_wild",
             "group": "farm",
             "open_now": true
           }
@@ -4656,7 +4666,8 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "wild_land"
+        "pet_farm_or_wild_of_bird": "wild_land",
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.85,
       "reviewed": 13,
@@ -4737,7 +4748,7 @@
           },
           {
             "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
+            "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
             "open_now": true
           }
@@ -4751,7 +4762,8 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "wild_land"
+        "pet_farm_or_wild_of_bird": "wild_land",
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -4841,7 +4853,7 @@
           },
           {
             "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
+            "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
             "open_now": true
           }
@@ -4855,7 +4867,8 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "wild_land"
+        "pet_farm_or_wild_of_bird": "wild_land",
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -4945,7 +4958,7 @@
           },
           {
             "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
+            "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
             "open_now": true
           }
@@ -4959,7 +4972,8 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "wild_water"
+        "pet_farm_or_wild_of_bird": "wild_water",
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.75,
       "reviewed": 13,
@@ -5049,7 +5063,7 @@
           },
           {
             "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
+            "sorted_by": "pet_farm_or_wild",
             "group": "wild_water",
             "open_now": true
           }
@@ -5062,7 +5076,11 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "fish",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": [
+          "pet",
+          "wild_water"
+        ]
       },
       "familiar": 0.9,
       "reviewed": 13,
@@ -5148,6 +5166,9 @@
             "open_now": true
           }
         ]
+      },
+      "notes": {
+        "pet_farm_or_wild": "Two checks could not give it one group: Pets at home and Wild animals in water. It stays off sets sorted by this question. Asked of all of Animals on 2026-11-24."
       }
     },
     "rohu_fish": {
@@ -5156,7 +5177,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "fish",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -5241,7 +5263,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "fish",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.75,
       "reviewed": 13,
@@ -5326,7 +5349,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "fish",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.7,
       "reviewed": 13,
@@ -5420,7 +5444,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "fish",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.65,
       "reviewed": 13,
@@ -5514,7 +5539,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "insect",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.95,
       "reviewed": 13,
@@ -5607,7 +5633,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "insect",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.95,
       "reviewed": 13,
@@ -5701,7 +5728,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "insect",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.9,
       "reviewed": 13,
@@ -5795,7 +5823,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "insect",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.9,
       "reviewed": 13,
@@ -5889,7 +5918,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "insect",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.85,
       "reviewed": 13,
@@ -5982,7 +6012,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "insect",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.85,
       "reviewed": 13,
@@ -6076,7 +6107,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "insect",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -6169,7 +6201,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "insect",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.75,
       "reviewed": 13,
@@ -6263,7 +6296,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.9,
       "reviewed": 13,
@@ -6348,7 +6382,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.9,
       "reviewed": 13,
@@ -6442,7 +6477,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.85,
       "reviewed": 13,
@@ -6535,7 +6571,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.85,
       "reviewed": 13,
@@ -6629,7 +6666,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -6723,7 +6761,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.7,
       "reviewed": 13,
@@ -6817,7 +6856,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.6,
       "reviewed": 13,
@@ -6911,7 +6951,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.6,
       "reviewed": 13,
@@ -7005,7 +7046,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "amphibian",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.95,
       "reviewed": 13,
@@ -7099,7 +7141,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "amphibian",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -7188,7 +7231,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "amphibian",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.6,
       "reviewed": 13,
@@ -9549,7 +9593,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 1.0,
       "reviewed": 13,
@@ -9642,7 +9687,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "reptile",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 1.0,
       "reviewed": 13,
@@ -22278,7 +22324,8 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "pet"
+        "pet_farm_or_wild_of_bird": "pet",
+        "pet_farm_or_wild": "pet"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -22306,7 +22353,7 @@
           },
           {
             "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
+            "sorted_by": "pet_farm_or_wild",
             "group": "pet",
             "open_now": true
           }
@@ -22376,7 +22423,8 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "pet"
+        "pet_farm_or_wild_of_bird": "pet",
+        "pet_farm_or_wild": "pet"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -22404,7 +22452,7 @@
           },
           {
             "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
+            "sorted_by": "pet_farm_or_wild",
             "group": "pet",
             "open_now": true
           }
@@ -22493,8 +22541,7 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/pet"
+          "animal/bird"
         ]
       },
       "picture": {
@@ -22571,7 +22618,8 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "wild_water"
+        "pet_farm_or_wild_of_bird": "wild_water",
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.8,
       "reviewed": 13,
@@ -22599,7 +22647,7 @@
           },
           {
             "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
+            "sorted_by": "pet_farm_or_wild",
             "group": "wild_water",
             "open_now": true
           }
@@ -22678,7 +22726,8 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "wild_water"
+        "pet_farm_or_wild_of_bird": "wild_water",
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.7,
       "reviewed": 13,
@@ -22706,7 +22755,7 @@
           },
           {
             "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
+            "sorted_by": "pet_farm_or_wild",
             "group": "wild_water",
             "open_now": true
           }
@@ -22785,7 +22834,8 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "wild_water"
+        "pet_farm_or_wild_of_bird": "wild_water",
+        "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.7,
       "reviewed": 13,
@@ -22813,7 +22863,7 @@
           },
           {
             "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
+            "sorted_by": "pet_farm_or_wild",
             "group": "wild_water",
             "open_now": true
           }
@@ -24398,14 +24448,16 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "farm"
+        "pet_farm_or_wild_of_bird": "farm",
+        "pet_farm_or_wild": "farm"
       },
       "familiar": 0.9,
       "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-05",
       "notes": {
-        "pet_farm_or_wild_of_bird": "The pages point to 'Wild animals on land'. Two checks, sorting it as a parent would, both put it in 'Farm animals'."
+        "pet_farm_or_wild_of_bird": "The pages point to 'Wild animals on land'. Two checks, sorting it as a parent would, both put it in 'Farm animals'.",
+        "pet_farm_or_wild": "The pages point to 'Wild animals on land'. Two checks, sorting it as a parent would, both put it in 'Farm animals'."
       },
       "worked_out": {
         "circles": [
@@ -24429,7 +24481,7 @@
           },
           {
             "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
+            "sorted_by": "pet_farm_or_wild",
             "group": "farm",
             "open_now": true
           }
@@ -24565,8 +24617,7 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/farm"
+          "animal/bird"
         ]
       }
     },
@@ -24587,8 +24638,7 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/farm"
+          "animal/bird"
         ]
       },
       "sources": {
@@ -24654,8 +24704,7 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/farm"
+          "animal/bird"
         ]
       },
       "sources": {
@@ -24769,8 +24818,7 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/pet"
+          "animal/bird"
         ]
       }
     },
@@ -24792,8 +24840,7 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/wild_water"
+          "animal/bird"
         ]
       },
       "sources": {
@@ -24863,8 +24910,7 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/wild_water"
+          "animal/bird"
         ]
       },
       "voice": {
@@ -24891,8 +24937,7 @@
         "would_join": [
           "seed",
           "animal",
-          "animal/bird",
-          "animal/bird/wild_water"
+          "animal/bird"
         ]
       },
       "voice": {
@@ -25195,14 +25240,16 @@
         "kind_of_thing": "animal",
         "kind_of_animal": "bird",
         "extinct": false,
-        "pet_farm_or_wild_of_bird": "pet"
+        "pet_farm_or_wild_of_bird": "pet",
+        "pet_farm_or_wild": "pet"
       },
       "familiar": 0.7,
       "reviewed": 13,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "notes": {
-        "pet_farm_or_wild_of_bird": "The pages point to 'Wild animals on land'. Two checks, sorting it as a parent would, both put it in 'Pets at home'."
+        "pet_farm_or_wild_of_bird": "The pages point to 'Wild animals on land'. Two checks, sorting it as a parent would, both put it in 'Pets at home'.",
+        "pet_farm_or_wild": "The pages point to 'Wild animals on land'. Two checks, sorting it as a parent would, both put it in 'Pets at home'."
       },
       "worked_out": {
         "circles": [
@@ -25226,7 +25273,7 @@
           },
           {
             "circle": "animal/bird",
-            "sorted_by": "pet_farm_or_wild_of_bird",
+            "sorted_by": "pet_farm_or_wild",
             "group": "pet",
             "open_now": true
           }
@@ -32293,7 +32340,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "arachnids",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.85,
       "reviewed": 13,
@@ -32387,7 +32435,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "arachnids",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.7,
       "reviewed": 13,
@@ -32481,7 +32530,8 @@
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "arachnids",
-        "extinct": false
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.6,
       "reviewed": 13,
@@ -32921,7 +32971,7 @@
         "label": "Birds",
         "things": 17,
         "steps_from_seed": 2,
-        "sorted_by": "pet_farm_or_wild_of_bird",
+        "sorted_by": "pet_farm_or_wild",
         "groups": {
           "pet": {
             "label": "Pets at home",
@@ -32952,12 +33002,6 @@
         "label": "Pets at home",
         "things": 4,
         "steps_from_seed": 3,
-        "could_be_filled_by": [
-          {
-            "name": "Finch",
-            "status": "held by the rules"
-          }
-        ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
@@ -32968,12 +33012,6 @@
         "label": "Farm animals",
         "things": 4,
         "steps_from_seed": 3,
-        "could_be_filled_by": [
-          {
-            "name": "Goose",
-            "status": "held by the rules"
-          }
-        ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
@@ -32994,20 +33032,6 @@
         "label": "Wild animals in water",
         "things": 4,
         "steps_from_seed": 3,
-        "could_be_filled_by": [
-          {
-            "name": "Stork",
-            "status": "held by the rules"
-          },
-          {
-            "name": "Heron",
-            "status": "held by the rules"
-          },
-          {
-            "name": "Ibis",
-            "status": "held by the rules"
-          }
-        ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
@@ -33018,20 +33042,40 @@
         "label": "Fish",
         "things": 5,
         "steps_from_seed": 2,
+        "sorted_by": "pet_farm_or_wild",
+        "groups": {
+          "wild_water": {
+            "label": "Wild animals in water",
+            "things": 4,
+            "with_picture": 4
+          }
+        },
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+          "4 more thing(s) in 'Pets at home'",
+          "4 more thing(s) in 'Farm animals'",
+          "4 more thing(s) in 'Wild animals on land'"
         ]
       },
       "animal/insect": {
         "label": "Insects",
         "things": 8,
         "steps_from_seed": 2,
+        "sorted_by": "pet_farm_or_wild",
+        "groups": {
+          "wild_land": {
+            "label": "Wild animals on land",
+            "things": 8,
+            "with_picture": 8
+          }
+        },
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "a field to sort it by: no field in the dictionary splits it four ways, and about 8 more things"
+          "4 more thing(s) in 'Pets at home'",
+          "4 more thing(s) in 'Farm animals'",
+          "4 more thing(s) in 'Wild animals in water'"
         ]
       },
       "animal/reptile": {
@@ -34202,7 +34246,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-11-24-30",
+    "by": "what was set aside is kept on record",
     "on": "2026-11-24"
   },
   "groups": {
@@ -36168,7 +36212,7 @@
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     },
     "pet_farm_or_wild=pet": {
-      "written_for": "8615e9e402f0",
+      "written_for": "8a07020a4167",
       "field": "pet_farm_or_wild",
       "value": "pet",
       "label": "Pets at home",
@@ -36210,150 +36254,118 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "checked_again_on": "2026-11-24"
     },
     "pet_farm_or_wild=farm": {
-      "written_for": "0ab82eb682c8",
+      "written_for": "f950d75ddfd6",
       "field": "pet_farm_or_wild",
       "value": "farm",
       "label": "Farm animals",
       "question": "Is it mostly a pet, a farm animal or a wild animal?",
       "clues": [
         {
-          "text": "Think about animals that live where people grow food.",
+          "text": "Think about animals that live where a farmer can look after them.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild__farm__clue1.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild__farm__clue1.mp3",
-          "clip_sha256": "e75c2168b76fc71932fc042a2f1b45a07d5d17e07aa2cd9a56ada7268bd6e9a6",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "clip_sha256": "69cbbe904b3367f09b14a5fc63e5ac50d932172fae01b3a1a9c549daca6694a9",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "These animals are kept by people who work outside in fields.",
+          "text": "These animals give the farmer food or wool or eggs to use.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild__farm__clue2.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild__farm__clue2.mp3",
-          "clip_sha256": "75b43e3367a720e457b8d1a7dc197c1d260a10c6ae88685d1cf5347944de4ac3",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "clip_sha256": "e86858046aad3194c49d01533fed6063f7ba273a9d1b8895b00c32dc546f6e0b",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "People raise these animals to help them and to give them things they need.",
+          "text": "The farmer keeps them in a yard, a coop or a field, not in the house.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild__farm__clue3.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild__farm__clue3.mp3",
-          "clip_sha256": "23105d8cd3e5324b87168d6745e0bdc78b281561d4541abb19260a3dd4809750",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "clip_sha256": "90c89ed09291e317174827588cb4c2ae0501303f6d4253ef2d90c56775846c25",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
       "explanation": {
-        "text": "These animals all live on a farm, and a farmer looks after them. A mother cow can have one baby cow each year, and the baby can walk just minutes after it is born.",
-        "together": "These animals all live on a farm, and a farmer looks after them.",
-        "fact": "A mother cow can have one baby cow each year, and the baby can walk just minutes after it is born.",
-        "quote": "The cows usually give birth to one calf a year, though twins are also known to be born. The calves have long strong legs and can walk a few minutes after they are born, so they can follow the herd.",
-        "source": "cow:wikipedia_simple",
-        "source_url": "https://simple.wikipedia.org/wiki/Cattle",
+        "text": "A farmer looks after these animals and keeps them for food, eggs or wool. A mother sheep is called a ewe, and her baby is called a lamb.",
+        "together": "A farmer looks after these animals and keeps them for food, eggs or wool.",
+        "fact": "A mother sheep is called a ewe, and her baby is called a lamb.",
+        "quote": "Female sheep are called ewes. Male sheep are called rams. Young sheep are called lambs.",
+        "source": "sheep:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Domestic_sheep",
         "cached": "tools/voice/clips/groups/pet_farm_or_wild__farm__explanation.mp3",
         "clip": "Assets/audio/groups/pet_farm_or_wild__farm__explanation.mp3",
-        "clip_sha256": "2004d723474179886d4136698270f1bacfbb6414c0c788759392415e8a3f720a",
+        "clip_sha256": "e3c5abe6ad3a23834966660d5166781bb6971b37ce0c294800d7a74c49b6c104",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
-      },
-      "written_by": "deepseek-flash",
-      "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "new_clues_refused": {
-        "on": "2026-11-24",
-        "why": "clue 2 would fit a thing of another group as well"
-      }
-    },
-    "pet_farm_or_wild=wild_land": {
-      "written_for": "206a97e829c6",
-      "field": "pet_farm_or_wild",
-      "value": "wild_land",
-      "label": "Wild animals on land",
-      "question": "Is it mostly a pet, a farm animal or a wild animal?",
-      "clues": [
-        {
-          "text": "Think about animals that live far away from people.",
-          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__clue1.mp3",
-          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue1.mp3",
-          "clip_sha256": "74ff489d22e684ce5d2415172ded6a54e5729744f99ce3e68c047a1180f2cbfc",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
-        },
-        {
-          "text": "They find their own food and make their own homes.",
-          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__clue2.mp3",
-          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue2.mp3",
-          "clip_sha256": "982f016468d101888c65dfdfe19cdd1c3c03ca34ab56e1e6d99a7f0ffef84fe4",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
-        },
-        {
-          "text": "They live on the ground, not in water or in a house.",
-          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__clue3.mp3",
-          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue3.mp3",
-          "clip_sha256": "d43026fa929b7775b54e3e91d0b2a3a369ad4ff1a685407e92d206cc00f97fd9",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
-        }
-      ],
-      "explanation": {
-        "text": "These animals all live free out in the open. Nobody keeps them at home or on a farm. A giraffe is the tallest animal that lives on land.",
-        "together": "These animals all live free out in the open. Nobody keeps them at home or on a farm.",
-        "fact": "A giraffe is the tallest animal that lives on land.",
-        "quote": "Giraffes have an even number of toes and are the tallest land animals.",
-        "source": "giraffe:wikipedia_simple",
-        "source_url": "https://simple.wikipedia.org/wiki/Giraffe",
-        "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__explanation.mp3",
-        "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__explanation.mp3",
-        "clip_sha256": "47d6a00e8f2ff61bedd38eff14634332e532494e71d8c7b7c4e80e4f186605a6",
-        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
-      },
-      "written_by": "deepseek-flash",
-      "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "new_clues_refused": {
-        "on": "2026-11-24",
-        "why": "clue 2 would fit a thing of another group as well"
-      }
-    },
-    "pet_farm_or_wild=wild_water": {
-      "written_for": "309d8504ce7a",
-      "field": "pet_farm_or_wild",
-      "value": "wild_water",
-      "label": "Wild animals in water",
-      "question": "Is it mostly a pet, a farm animal or a wild animal?",
-      "clues": [
-        {
-          "text": "Think about a place that is full of water, like a big sea.",
-          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_water__clue1.mp3",
-          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue1.mp3",
-          "clip_sha256": "831d83a38fe43db333c0fc5979bbbdf60ec10f82265fc711f74e0c15b74e1907",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
-        },
-        {
-          "text": "This animal spends most of its life in the water and comes up to breathe air.",
-          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_water__clue2.mp3",
-          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue2.mp3",
-          "clip_sha256": "0634683ac99f02f4e52d06e115db2d6a86edbd6f7378fa7fd6a8717c115efc90",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
-        },
-        {
-          "text": "This animal lives in the sea or a river, not in a house or a field.",
-          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_water__clue3.mp3",
-          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue3.mp3",
-          "clip_sha256": "cc0950b3dcb6bc0d32c72d897f0a5f3e368852d4ef5b82cd1dd553bb9b80fc3a",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
-        }
-      ],
-      "explanation": {
-        "text": "They all live in the water and are wild animals. They swim in the sea, not in a house or on a farm. A whale breathes air from above the water, just like you and me.",
-        "together": "They all live in the water and are wild animals. They swim in the sea, not in a house or on a farm.",
-        "fact": "A whale breathes air from above the water, just like you and me.",
-        "quote": "Like other mammals, they breathe oxygen from the air, have a small amount of hair, and are warm blooded.",
-        "source": "whale:wikipedia_simple",
-        "source_url": "https://simple.wikipedia.org/wiki/Whale",
-        "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_water__explanation.mp3",
-        "clip": "Assets/audio/groups/pet_farm_or_wild__wild_water__explanation.mp3",
-        "clip_sha256": "4cd68707c43916b6dbc7624798ec40b2fd0c1d0aa258b8c3140e625a5bfdc495",
-        "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "pet_farm_or_wild=wild_land": {
+      "written_for": "88f6ec33547a",
+      "field": "pet_farm_or_wild",
+      "value": "wild_land",
+      "label": "Wild animals on land",
+      "question": "Is it mostly a pet, a farm animal or a wild animal?",
+      "clues": [],
+      "explanation": null,
+      "written_by": "deepseek-flash",
+      "written_on": "2026-11-24",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no clues were kept: clue 2 names a thing of the group: house; clue 2 would fit a thing of another group as well; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another",
+        "no explanation was kept: the explanation does not say simply why they belong together"
+      ],
+      "clues_set_aside": {
+        "on": "2026-11-24",
+        "why": "they were written for the wild land mammals; the group now holds birds, insects and reptiles, and they are no longer true of every thing",
+        "were": [
+          "Think about animals that live far away from people.",
+          "They find their own food and make their own homes.",
+          "They live on the ground, not in water or in a house."
+        ]
+      },
+      "explanation_set_aside": {
+        "on": "2026-11-24",
+        "by": "the assistant, by hand",
+        "why": "it says these animals live away from homes and farms, and the group now holds the housefly, the cockroach, the house lizard, the crow and the sparrow",
+        "was": "These animals all live free on land, away from homes and farms. A cheetah can run very, very fast, faster than any other animal on land."
+      }
+    },
+    "pet_farm_or_wild=wild_water": {
+      "written_for": "48674bf60ee6",
+      "field": "pet_farm_or_wild",
+      "value": "wild_water",
+      "label": "Wild animals in water",
+      "question": "Is it mostly a pet, a farm animal or a wild animal?",
+      "clues": [],
+      "explanation": null,
+      "written_by": "deepseek-flash",
+      "written_on": "2026-11-24",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "held": [
+        "no clues were kept: clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another",
+        "no explanation was kept: the explanation does not say simply why they belong together"
+      ],
+      "new_clues_refused": {
+        "on": "2026-11-24",
+        "why": "clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
+      },
+      "clues_set_aside": {
+        "on": "2026-11-24",
+        "why": "clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 3 is not true of every thing in the group",
+        "were": [
+          "Think about a place that is full of water, like a big sea.",
+          "This animal spends most of its life in the water and comes up to breathe air.",
+          "This animal lives in the sea or a river, not in a house or a field."
+        ]
+      },
+      "explanation_set_aside": {
+        "on": "2026-11-24",
+        "why": "it no longer says truly why these belong together",
+        "was": "They all live in the water and are wild animals. They swim in the sea, not in a house or on a farm. A whale breathes air from above the water, just like you and me."
+      }
     },
     "pet_farm_or_wild_of_bird=pet": {
       "written_for": "49f9cbe722bb",

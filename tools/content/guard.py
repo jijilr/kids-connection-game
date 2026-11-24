@@ -36,9 +36,12 @@ def problems(dictionary: dict, store: dict) -> list:
             elif value == "depends" and name not in thing.get("notes", {}):
                 out.append(f"{key}: '{name}: depends' needs a note saying why")
         for name, definition in fields.items():
+            if definition.get("merged_into"):      # the same question lives on under another field
+                continue
             expected = applies(definition["expected_on"], thing["fields"])
             differs_only = definition.get("only_where_science_differs")
-            if expected and name not in thing["fields"] and not differs_only:
+            # a question asked `where_it_fits` belongs to the things it is true of, and only to those
+            if expected and name not in thing["fields"] and not differs_only and not definition.get("where_it_fits"):
                 out.append(f"{key}: missing '{name}', which the dictionary expects on it")
             if differs_only and thing["fields"].get(name) is not None \
                     and thing["fields"].get(name) == thing["fields"].get(definition["everyday_partner"]):

@@ -19,16 +19,11 @@ class Dimension {
   /// False for fields that are stored but never sort a board (the `_academic` ones).
   final bool sortsBoards;
 
-  /// The answers below which nothing lies: the end of a branch (value -> why). The job
-  /// writes these when it finds that the world holds too few such things to sort further.
-  final Map<String, String> ends;
-
   const Dimension({
     required this.id,
     required this.question,
     required this.values,
     this.sortsBoards = true,
-    this.ends = const {},
   });
 
   /// The real answers to the question: every value but [inBetween].
@@ -47,16 +42,11 @@ class Dimension {
       final own = json['in_between'];
       values[inBetween] = own is Map && own['label'] is String ? own['label'] as String : 'In between';
     }
-    final ends = json['ends'];
     return Dimension(
       id: id,
       question: json['wording'] as String? ?? '',
       values: values,
       sortsBoards: sorts,
-      ends: {
-        if (ends is Map)
-          for (final e in ends.entries) '${e.key}': e.value is Map ? '${(e.value as Map)['why'] ?? ''}' : '${e.value}'
-      },
     );
   }
 }
@@ -69,10 +59,28 @@ class DimensionRegistry {
   /// Goes up by one each time the dictionary gains a field.
   final int version;
 
-  const DimensionRegistry(this._byId, {this.version = 1});
+  /// The places below which nothing lies: the end of a branch (place -> why). The job
+  /// writes these when it finds that the world holds too few such things to sort them
+  /// further. An end is a place, named by all the circles it lies in: since a question may
+  /// be asked across several places, one answer to it no longer names one place (the pets
+  /// among the mammals are not the pets among the birds).
+  final Map<String, String> ends;
+
+  const DimensionRegistry(this._byId, {this.version = 1, this.ends = const {}});
 
   Dimension? byId(String id) => _byId[id];
   Iterable<Dimension> get all => _byId.values;
+
+  /// Where a field stands in the dictionary. A place is named by the circles it lies in,
+  /// in this order, whatever the road that led to it (see BoardAssembler.canon).
+  int positionOf(String id) {
+    int i = 0;
+    for (final key in _byId.keys) {
+      if (key == id) return i;
+      i++;
+    }
+    return i;
+  }
 
   /// Fields that could fill a 4-group board (>= 4 values, and allowed to sort one).
   Iterable<Dimension> get boardable =>
@@ -80,8 +88,18 @@ class DimensionRegistry {
 
   factory DimensionRegistry.fromJson(Map<String, dynamic> json) {
     final map = <String, Dimension>{};
-    (json['fields'] as Map<String, dynamic>).forEach(
-        (id, v) => map[id] = Dimension.fromJson(id, v as Map<String, dynamic>));
-    return DimensionRegistry(map, version: json['version'] as int? ?? 1);
+    (json['fields'] as Map<String, dynamic>).forEach((id, v) {
+      // A field merged into another asked the very same question inside a smaller circle
+      // (tools/job/cross.py). The game does not see it: its answers live on under the
+      // field it was merged into, and it must never count as a second way to sort a set.
+      if ((v as Map<String, dynamic>)['merged_into'] != null) return;
+      map[id] = Dimension.fromJson(id, v);
+    });
+    final ends = json['ends'];
+    return DimensionRegistry(map, version: json['version'] as int? ?? 1, ends: {
+      if (ends is Map)
+        for (final e in ends.entries)
+          '${e.key}': e.value is Map ? '${(e.value as Map)['why'] ?? ''}' : '${e.value}'
+    });
   }
 }

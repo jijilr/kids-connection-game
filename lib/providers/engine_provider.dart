@@ -64,13 +64,18 @@ class WebNode {
   /// to them as well as to its set, so such a knot is a bridge between branches.
   final List<String> between;
 
+  /// The other places this one lies inside, beside [parent]: a place is where circles
+  /// overlap, so more than one road may lead to it. It is tied to each of them.
+  final List<String> also;
+
   const WebNode(this.id, this.label, this.parent,
       {this.found = 0,
       this.clean = 0,
       this.line = false,
       this.picture,
       this.end = false,
-      this.between = const []});
+      this.between = const [],
+      this.also = const []});
 
   bool get isStart => parent == null;
 }
@@ -211,11 +216,91 @@ class EngineProvider extends ChangeNotifier {
   /// settings ask for it, only where that board can be drawn in pictures.
   bool canDescend(BoardGroup g) {
     if (!boardFinished) return false;
-    final filter = _childFilter(g);
-    final dims = _repo.assembler.boardableDimensions(filter);
-    if (dims.isEmpty) return false;
-    return !_repo.settings.boardsNeedPictures ||
-        _repo.assembler.hasPictureBoard(filter, dims.first);
+    return _hasSet(_childFilter(g));
+  }
+
+  // ------------------------------------------------------- places are overlaps of circles
+
+  /// The name of a place: the circles it lies in, in the dictionary's order, whatever the
+  /// road that led to it.
+  String _id(List<PathFilter> filter) => Progress.boardId(_repo.assembler.canon(filter));
+
+  /// The questions the place at [filter] can be sorted by; the first set has its own.
+  List<Dimension> _questionsAt(List<PathFilter> filter) {
+    final asked = _repo.assembler.questionsAt(filter);
+    if (filter.isNotEmpty || _stack.isEmpty) return asked;
+    final first = _stack.first.dim;
+    return [first, ...asked.where((d) => d.id != first.id)];
+  }
+
+  /// The questions of a place that can make a set now, in pictures where the settings ask.
+  List<Dimension> _setsAt(List<PathFilter> filter) => [
+        for (final d in _questionsAt(filter))
+          if (!_repo.settings.boardsNeedPictures || _repo.assembler.hasPictureBoard(filter, d)) d
+      ];
+
+  bool _hasSet(List<PathFilter> filter) => _setsAt(filter).isNotEmpty;
+
+  /// The kinds of [question] at a place that he has not been tested on and can be shown.
+  List<String> _untestedAt(List<PathFilter> filter, Dimension question) {
+    final known = _coverage(filter, question);
+    return [
+      for (final v in _repo.assembler.kindsReady(filter, question))
+        if (!known.tested.containsKey(v) && !known.notYet.contains(v)) v
+    ];
+  }
+
+  /// Which question the next set at a place asks. The first question of the place that
+  /// still has a kind he has not been tested on; when every kind of every question has
+  /// been tested, the question he has met least, so a place seen again is seen another way.
+  Dimension? _questionFor(List<PathFilter> filter) {
+    final asked = _setsAt(filter);
+    if (asked.isEmpty) return null;
+    final id = _id(filter);
+    for (final q in asked) {
+      if (!_noNewKind.contains('$id|${q.id}') && _untestedAt(filter, q).isNotEmpty) return q;
+    }
+    int met(Dimension q) => q.values.keys
+        .fold(0, (sum, v) => sum + (progress.groups[_id([...filter, (q.id, v)])]?.found ?? 0));
+    return asked.reduce((a, b) => met(b) < met(a) ? b : a);
+  }
+
+  /// The circles the place named [id] lies in, or null when the name fits no place (its
+  /// question was withdrawn). The name holds the answers only, so each is matched to a
+  /// question asked at the place reached so far, by whichever road fits.
+  List<PathFilter>? _resolve(String id, [Map<String, List<PathFilter>?>? memo]) {
+    if (id == 'seed') return const [];
+    if (memo != null && memo.containsKey(id)) return memo[id];
+    List<PathFilter>? walk(List<PathFilter> at, List<String> left) {
+      if (left.isEmpty) return at;
+      for (final q in _questionsAt(at)) {
+        for (int i = 0; i < left.length; i++) {
+          if (!q.values.containsKey(left[i])) continue;
+          final found = walk(_repo.assembler.canon([...at, (q.id, left[i])]), [...left]..removeAt(i));
+          if (found != null) return found;
+        }
+      }
+      return null;
+    }
+
+    final filter = walk(const [], id.split('/'));
+    final right = filter != null && Progress.boardId(filter) == id ? filter : null;
+    memo?[id] = right;
+    return right;
+  }
+
+  /// The places one circle wider than the place at [filter]: for each, the answer this
+  /// place adds to it. The first set is `seed`.
+  Map<String, PathFilter> _widerThan(List<PathFilter> filter) {
+    final out = <String, PathFilter>{};
+    for (int i = 0; i < filter.length; i++) {
+      final rest = [...filter]..removeAt(i);
+      if (rest.isNotEmpty && _resolve(Progress.boardId(rest)) == null) continue;
+      if (_questionsAt(rest).any((q) => q.id == filter[i].$1)) {
+        out[rest.isEmpty ? 'seed' : Progress.boardId(rest)] = filter[i];
+      }
+    }
+    return out;
   }
 
   bool get anyDescendable => solved.any(canDescend);
@@ -276,51 +361,58 @@ class EngineProvider extends ChangeNotifier {
     final start = _stack.isEmpty ? null : _stack.first;
     if (start == null) return const [];
     final nodes = <String, WebNode>{'seed': WebNode('seed', start.label, null)};
-    final ids = progress.groups.keys.where((id) => (progress.groups[id]?.found ?? 0) > 0).toList()
-      ..sort((a, b) => a.split('/').length.compareTo(b.split('/').length));
-    for (final id in ids) {
-      final values = id.split('/');
-      var dim = start.dim;
-      final filter = <PathFilter>[];
-      String? label;
-      for (int i = 0; i < values.length; i++) {
-        if (!dim.values.containsKey(values[i])) {
-          label = null;
-          break;
-        }
-        label = dim.label(values[i]);
-        filter.add((dim.id, values[i]));
-        final here = values.sublist(0, i + 1).join('/');
-        if (!nodes.containsKey(here)) {
-          // a set he went through without having found its group: a plain knot on the way
-          final seen = progress.groups[here];
-          final pool = _repo.entities.where((e) => filter.every((f) => e.isIn(f.$1, f.$2)));
-          final shown = pool.map(_repo.media.forEntity).where((m) => m.art != null || m.image != null);
-          final before = values.sublist(0, i);
-          final sides = <String>{};
-          if (values[i] == Dimension.inBetween) {
-            for (final e in pool) {
-              final named = e.sidesOf(dim.id);
-              sides.addAll(named.isEmpty ? dim.kinds : named);
-            }
-          }
-          nodes[here] = WebNode(here, label, i == 0 ? 'seed' : before.join('/'),
-              found: seen?.found ?? 0,
-              clean: seen?.clean ?? 0,
-              line: progress.lines.contains(here),
-              picture: shown.isEmpty ? null : shown.first,
-              end: dim.ends.containsKey(values[i]),
-              between: [for (final side in sides) [...before, side].join('/')]);
-        }
-        if (i < values.length - 1) {
-          final inside = _repo.assembler.boardableDimensions(filter);
-          if (inside.isEmpty) {
-            label = null;
-            break;
-          }
-          dim = inside.first;
+    final found = {
+      for (final e in progress.groups.entries)
+        if (e.value.found > 0) e.key
+    };
+    final ids = found.toList()..sort((a, b) => a.split('/').length.compareTo(b.split('/').length));
+    final memo = <String, List<PathFilter>?>{};
+
+    // Adds the knot for the place named [id], and before it any knot on the way to it.
+    void add(String id) {
+      if (nodes.containsKey(id)) return;
+      final filter = _resolve(id, memo);
+      if (filter == null || filter.isEmpty) return;
+      final wider = _widerThan(filter);
+      if (wider.isEmpty) return;
+      // It hangs from a place he has found: the one on the old single road first. Where
+      // he has found none of them, from the one on the old road, as a plain knot on the way.
+      final road = filter.length == 1 ? 'seed' : Progress.boardId(filter.sublist(0, filter.length - 1));
+      bool his(String place) => place == 'seed' || found.contains(place);
+      final parent = wider.containsKey(road) && his(road)
+          ? road
+          : wider.keys.firstWhere(his, orElse: () => wider.containsKey(road) ? road : wider.keys.first);
+      add(parent);
+      if (!nodes.containsKey(parent)) return;
+      final step = wider[parent]!;
+      final dim = registry.byId(step.$1);
+      if (dim == null) return;
+      final seen = progress.groups[id];
+      final pool = _repo.entities.where((e) => filter.every((f) => e.isIn(f.$1, f.$2)));
+      final shown = pool.map(_repo.media.forEntity).where((m) => m.art != null || m.image != null);
+      final sides = <String>{};
+      if (step.$2 == Dimension.inBetween) {
+        for (final e in pool) {
+          final named = e.sidesOf(dim.id);
+          sides.addAll(named.isEmpty ? dim.kinds : named);
         }
       }
+      final rest = [...filter]..remove(step);
+      nodes[id] = WebNode(id, dim.label(step.$2), parent,
+          found: seen?.found ?? 0,
+          clean: seen?.clean ?? 0,
+          line: progress.lines.contains(id),
+          picture: shown.isEmpty ? null : shown.first,
+          end: registry.ends.containsKey(id),
+          between: [for (final side in sides) _id([...rest, (dim.id, side)])],
+          also: [
+            for (final other in wider.keys)
+              if (other != parent && his(other)) other
+          ]);
+    }
+
+    for (final id in ids) {
+      add(id);
     }
     return nodes.values.toList();
   }
@@ -380,7 +472,7 @@ class EngineProvider extends ChangeNotifier {
   /// never waits.
   NextStep? _chooseNext() {
     final hereFilter = _stack.last.filter;
-    final here = Progress.boardId(hereFilter);
+    final here = _id(hereFilter);
     // A set he has played stays a line while one of its kinds is untested: so the first
     // set, and the one he has just finished, may come again.
     final ready = [
@@ -390,8 +482,8 @@ class EngineProvider extends ChangeNotifier {
     ].where((f) => Progress.boardId(f) != here || progress.lines.contains(here)).toList();
     bool inside(List<PathFilter> f) =>
         f.length == hereFilter.length + 1 &&
-        Progress.boardId(f.sublist(0, hereFilter.length)) == here &&
-        solved.any((g) => g.dimId == f.last.$1 && g.value == f.last.$2);
+        hereFilter.every(f.contains) &&
+        solved.any((g) => f.contains((g.dimId, g.value)));
     final byId = {for (final f in ready) Progress.boardId(f): f};
     final shown = [for (final id in progress.lines) if (byId.containsKey(id)) byId[id]!];
     final never = DateTime.fromMillisecondsSinceEpoch(0);
@@ -428,7 +520,7 @@ class EngineProvider extends ChangeNotifier {
     final tested = <String, double>{};
     final shown = <String, Set<String>>{};
     for (final value in dim.values.keys) {
-      final g = progress.groups[Progress.boardId([...filter, (dim.id, value)])];
+      final g = progress.groups[_id([...filter, (dim.id, value)])];
       if (g == null || g.found == 0) continue;
       tested[value] = g.howWell;
       shown[value] = g.things.toSet();
@@ -459,29 +551,26 @@ class EngineProvider extends ChangeNotifier {
   /// He knows the group at [side]: he has found it, and where it has a set of its own he
   /// has played that set through.
   bool _knows(List<PathFilter> side) {
-    final id = Progress.boardId(side);
+    final id = _id(side);
     if ((progress.groups[id]?.found ?? 0) == 0) return false;
-    final inside = _repo.assembler.boardableDimensions(side);
-    final hasSet = inside.isNotEmpty &&
-        (!_repo.settings.boardsNeedPictures || _repo.assembler.hasPictureBoard(side, inside.first));
-    return !hasSet || (progress.boards[id]?.solved ?? 0) > 0;
+    return !_hasSet(side) || (progress.boards[id]?.solved ?? 0) > 0;
   }
 
-  /// The sets he has played in which a kind is still untested and can be shown now.
+  /// The places he has played where a kind is still untested and can be shown now, by
+  /// any of the questions the place can be sorted by.
   List<String> _unfinished() {
-    final start = _stack.first;
     final out = <String>[];
     final places = [
       const <PathFilter>[],
-      ..._repo.assembler.circlesBelow(start.dim, needPictures: _repo.settings.boardsNeedPictures),
+      ..._repo.assembler.circlesBelow(_stack.first.dim, needPictures: _repo.settings.boardsNeedPictures),
     ];
     for (final filter in places) {
       final id = Progress.boardId(filter);
-      if (_noNewKind.contains(id) || (progress.boards[id]?.solved ?? 0) == 0) continue;
-      final dim = filter.isEmpty ? start.dim : _repo.assembler.boardableDimensions(filter).first;
-      final c = _coverage(filter, dim);
-      final ready = _repo.assembler.kindsReady(filter, dim);
-      if (ready.any((v) => !c.tested.containsKey(v) && !c.notYet.contains(v))) out.add(id);
+      if ((progress.boards[id]?.solved ?? 0) == 0) continue;
+      if (_setsAt(filter)
+          .any((q) => !_noNewKind.contains('$id|${q.id}') && _untestedAt(filter, q).isNotEmpty)) {
+        out.add(id);
+      }
     }
     return out;
   }
@@ -490,7 +579,8 @@ class EngineProvider extends ChangeNotifier {
   /// still to be made. The end of a branch does not; "in between" does only where its
   /// things can themselves be sorted.
   bool _leadsOn(Board b, BoardGroup g) =>
-      !b.dimension.ends.containsKey(g.value) && (g.value != Dimension.inBetween || canDescend(g));
+      !registry.ends.containsKey(_id(_childFilter(g))) &&
+      (g.value != Dimension.inBetween || canDescend(g));
 
   /// The button that ends a board: to the board chosen for him, or, when nothing was
   /// chosen, a parallel board at once, so he never waits.
@@ -531,7 +621,19 @@ class EngineProvider extends ChangeNotifier {
   Future<void> syncLive() async {
     final live = _live;
     if (live == null) return;
-    final dead = await live.send(progress);
+    // A line the helper cannot make is let go, unless the game can open it by itself: a
+    // place where circles cross is made of things the game already has, and the helper,
+    // which knows only the old single road, has never heard of it.
+    final mine = {
+      'seed',
+      for (final f in _repo.assembler
+          .circlesBelow(_stack.first.dim, needPictures: _repo.settings.boardsNeedPictures))
+        Progress.boardId(f)
+    };
+    final dead = [
+      for (final id in await live.send(progress))
+        if (!mine.contains(id)) id
+    ];
     if (dead.any(progress.lines.contains)) {
       progress.drop(dead);
       unawaited(_progressStore.save(progress));
@@ -552,6 +654,12 @@ class EngineProvider extends ChangeNotifier {
   }
 
   void _open() {
+    // A place may be sorted by more than one question: this set asks the one that still
+    // has a kind he has not been tested on.
+    final asks = _questionFor(_stack.last.filter);
+    if (asks != null && asks.id != _stack.last.dim.id) {
+      _stack[_stack.length - 1] = _Level(_stack.last.filter, asks, _stack.last.label);
+    }
     final lvl = _stack.last;
     final known = _coverage(lvl.filter, lvl.dim);
     _testedAtOpen = known.tested.keys.toSet();
@@ -584,7 +692,7 @@ class EngineProvider extends ChangeNotifier {
     nextStep = null;
     explanation = null;
     if (b != null) {
-      progress.opened(Progress.boardId(lvl.filter), _now());
+      progress.opened(_id(lvl.filter), _now());
       unawaited(_progressStore.save(progress));
     }
     notifyListeners();
@@ -631,7 +739,7 @@ class EngineProvider extends ChangeNotifier {
       if (_isSolvedGroup(g) || !_same(g, ids)) continue;
       solved.add(g);
       selected.clear();
-      progress.found(Progress.boardId(_childFilter(g)), _now(),
+      progress.found(_id(_childFilter(g)), _now(),
           clean: didWell(g),
           wrong: _wrongGuesses[g.value] ?? 0,
           things: [for (final e in g.items) e.id]);
@@ -642,19 +750,23 @@ class EngineProvider extends ChangeNotifier {
         clue = null;
       }
       if (boardFinished) {
-        progress.solved(Progress.boardId(_stack.last.filter), _now());
+        progress.solved(_id(_stack.last.filter), _now());
         // Nowhere deeper to go from here: an order for more content, which the job reads.
-        if (diggable.isEmpty) progress.order(Progress.boardId(_stack.last.filter), _now());
+        if (diggable.isEmpty) progress.order(_id(_stack.last.filter), _now());
         // The lines to follow next: the groups he did well go first. The set itself is
         // used up only when every kind of its place has been tested; a set that tested no
         // new kind is not offered again in this sitting.
-        String idOf(BoardGroup g) => Progress.boardId(_childFilter(g));
-        final hereId = Progress.boardId(_stack.last.filter);
-        if (b.groups.every((g) => _testedAtOpen.contains(g.value))) _noNewKind.add(hereId);
+        String idOf(BoardGroup g) => _id(_childFilter(g));
+        final hereId = _id(_stack.last.filter);
+        final asked = '$hereId|${b.dimension.id}';
+        if (b.groups.every((g) => _testedAtOpen.contains(g.value))) _noNewKind.add(asked);
         progress.finished(hereId,
             all: [for (final g in b.groups) idOf(g)],
             didWell: [for (final g in ranked) if (didWell(g) && _leadsOn(b, g)) idOf(g)],
-            unfinished: _unfinished());
+            unfinished: _unfinished(),
+            // the same question has kinds left: its rounds follow one another
+            roundsLeft: !_noNewKind.contains(asked) &&
+                _untestedAt(_stack.last.filter, b.dimension).isNotEmpty);
         unawaited(_progressStore.save(progress));
         _setsThisSitting++;
         nextStep = _chooseNext();
@@ -686,8 +798,7 @@ class EngineProvider extends ChangeNotifier {
   void descendInto(BoardGroup g) {
     if (!canDescend(g)) return;
     final f = _childFilter(g);
-    final dims = _repo.assembler.boardableDimensions(f);
-    _stack.add(_Level(f, dims.first, g.label));
+    _stack.add(_Level(f, _setsAt(f).first, g.label));
     _open();
   }
 
@@ -695,7 +806,7 @@ class EngineProvider extends ChangeNotifier {
   /// he has seen least recently. If there is no other, this circle again with other things.
   void nextBoard() {
     final depth = _stack.length - 1;
-    final here = Progress.boardId(_stack.last.filter);
+    final here = _id(_stack.last.filter);
     final others = _repo.assembler
         .circlesAtDepth(depth, _stack.first.dim, needPictures: _repo.settings.boardsNeedPictures)
         .where((filter) => Progress.boardId(filter) != here)
@@ -718,7 +829,7 @@ class EngineProvider extends ChangeNotifier {
       ..add(seed);
     for (int i = 0; i < filter.length; i++) {
       final path = filter.sublist(0, i + 1);
-      final dims = _repo.assembler.boardableDimensions(path);
+      final dims = _questionsAt(path);
       if (dims.isEmpty) break;
       final step = filter[i];
       _stack.add(_Level(path, dims.first, registry.byId(step.$1)?.label(step.$2) ?? step.$2));
@@ -735,7 +846,7 @@ class EngineProvider extends ChangeNotifier {
   // --------------------------------------------------------------------- helpers
 
   List<PathFilter> _childFilter(BoardGroup g) =>
-      <PathFilter>[..._stack.last.filter, (g.dimId, g.value)];
+      _repo.assembler.canon([..._stack.last.filter, (g.dimId, g.value)]);
 
   bool _isSolvedGroup(BoardGroup g) =>
       solved.any((s) => s.dimId == g.dimId && s.value == g.value);

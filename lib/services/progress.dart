@@ -81,15 +81,25 @@ class Progress {
   /// over with"); only then is it known which of them he does best. Another such set, in
   /// which a kind has appeared since he played it, follows the groups he has just done
   /// well.
+  ///
+  /// A place may also be sorted by a second question (circles cross: the owner, 24 Nov
+  /// 2026). [roundsLeft] says whether the question just asked still has kinds left. When
+  /// it has none and only another question has, the place does not come at once: it
+  /// follows the groups he has just done well, like any place that has gained something.
   void finished(String board,
-      {required List<String> all, required List<String> didWell, List<String> unfinished = const []}) {
+      {required List<String> all,
+      required List<String> didWell,
+      List<String> unfinished = const [],
+      bool? roundsLeft}) {
+    // Without a word on it, an unfinished place is taken to have rounds left.
+    final front = unfinished.contains(board) && (roundsLeft ?? true);
     lines.removeWhere((id) => id == board || all.contains(id));
     lines.insertAll(0, didWell);
     lines.insertAll(didWell.length, [
       for (final id in unfinished)
-        if (id != board && !lines.contains(id)) id
+        if ((id != board || !front) && !lines.contains(id)) id
     ]);
-    if (unfinished.contains(board)) lines.insert(0, board);
+    if (front) lines.insert(0, board);
   }
 
   /// Lines that can never be made into a set (the helper says so) are let go.

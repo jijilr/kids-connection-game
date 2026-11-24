@@ -183,10 +183,21 @@ def groups_copy(catalogue: dict) -> dict:
 
 
 def game_copy(catalogue: dict) -> dict:
-    """What the game reads: the things in the game, each with only what the game needs."""
+    """What the game reads: the things in the game, each with only what the game needs.
+    A field merged into another (tools/job/cross.py) asked the same question inside a
+    smaller circle: the catalogue keeps its values, and the game's copy leaves them out."""
+    merged = {name for name, definition in read_json(DICTIONARY)["fields"].items() if definition.get("merged_into")}
+
+    def needed(entry: dict) -> dict:
+        out = {k: entry[k] for k in entry if k in GAME_KEYS}
+        if merged & set(out.get("fields", {})):
+            out["fields"] = {f: v for f, v in out["fields"].items() if f not in merged}
+            if out.get("notes"):
+                out["notes"] = {f: v for f, v in out["notes"].items() if f not in merged}
+        return out
+
     return {"dictionary_version": catalogue["dictionary_version"],
-            "things": {key: {k: entry[k] for k in entry if k in GAME_KEYS}
-                       for key, entry in catalogue["things"].items() if entry["status"] == IN_GAME}}
+            "things": {key: needed(entry) for key, entry in catalogue["things"].items() if entry["status"] == IN_GAME}}
 
 
 def queue_view(catalogue: dict) -> dict:

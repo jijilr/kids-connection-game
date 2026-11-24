@@ -359,22 +359,86 @@ class BoardAssembler {
     return level;
   }
 
-  /// Every circle from one step below the seed down to [maxDepth] steps that can make a
-  /// board now, as the paths that lead to them, nearest first. One walk, so that choosing
-  /// where to go after a board looks at the whole game at once.
+  /// The circles a place lies in, in the dictionary's order, whatever the road that led
+  /// there (the owner, 24 Nov 2026: the game assumed concentric circles, "but knowledge is
+  /// never that"). A place is where circles overlap. The wild land animals among the
+  /// mammals are one place, whether he came through Mammals or through Wild animals on
+  /// land, so it has one name and one knot on his web. For every place on the old single
+  /// road the order is the road's own, so no saved name changes.
+  List<PathFilter> canon(List<PathFilter> filter) {
+    final ordered = [...filter];
+    final at = {for (int i = 0; i < filter.length; i++) filter[i]: i};
+    ordered.sort((a, b) {
+      final p = registry.positionOf(a.$1).compareTo(registry.positionOf(b.$1));
+      return p != 0 ? p : at[a]!.compareTo(at[b]!);
+    });
+    return ordered;
+  }
+
+  final Map<String, List<Dimension>> _questions = {};
+
+  /// The questions a place can be sorted by. Each can fill a set there, and is either
+  ///  - a question about the whole place: every thing of the place answers it; or
+  ///  - a question that has its home here: only part of the place answers it, but this is
+  ///    the smallest place that holds every thing that does. A question has a reach: it
+  ///    belongs to the things it is true of, and only to those ("pet, farm or wild?" is
+  ///    asked of the living animals; no dinosaur answers it, so its home is Animals, and
+  ///    a set sorted by it simply shows no dinosaur).
+  /// A place may have more than one (Animals: by kind, and by pet, farm or wild). The
+  /// first is the one the place has always had. Where none of this holds, the first
+  /// question that can fill a set stands, as before.
+  List<Dimension> questionsAt(List<PathFilter> filter) {
+    final key = filter.map((f) => '${f.$1}=${f.$2}').join('/');
+    return _questions.putIfAbsent(key, () {
+      final able = [
+        for (final d in boardableDimensions(filter))
+          if (!filter.any((f) => f.$1 == d.id)) d
+      ];
+      final pool = _filtered(filter);
+      bool whole(Dimension d) => pool.every((e) => e.fields.containsKey(d.id));
+      final wholes = able.where(whole).toList();
+      final everything = _filtered(const []);
+      final atHome = <Dimension>[];
+      for (final d in able) {
+        if (whole(d)) continue;
+        final answer = everything.where((e) => e.fields.containsKey(d.id)).toList();
+        // some thing that answers it lies outside this place: its home is higher up
+        if (!answer.every((e) => filter.every((f) => e.isIn(f.$1, f.$2)))) continue;
+        // one answer to a question about the whole place holds them all: its home is lower down
+        final lower = wholes.any((q) {
+          final first = answer.first.valueFor(q.id);
+          return first != null && answer.every((e) => e.valueFor(q.id) == first);
+        });
+        if (!lower) atHome.add(d);
+      }
+      final asked = [...wholes, ...atHome];
+      return asked.isNotEmpty ? asked : boardableDimensions(filter).take(1).toList();
+    });
+  }
+
+  /// Every place below the seed, down to [maxDepth] circles deep, that can make a set now:
+  /// each as the circles it lies in (see [canon]), nearest first, each once however many
+  /// roads lead to it. One walk, so that choosing where to go after a set looks at the
+  /// whole game at once. [start] is the question of the first set.
   List<List<PathFilter>> circlesBelow(Dimension start, {int maxDepth = 6, bool needPictures = true}) {
     final all = <List<PathFilter>>[];
+    final seen = <String>{};
     var level = <List<PathFilter>>[const []];
     for (int step = 0; step < maxDepth && level.isNotEmpty; step++) {
       final next = <List<PathFilter>>[];
       for (final filter in level) {
-        final sortedBy = filter.isEmpty ? start : boardableDimensions(filter).first;
-        for (final value in sortedBy.values.keys) {
-          final child = <PathFilter>[...filter, (sortedBy.id, value)];
-          final inside = boardableDimensions(child);
-          if (inside.isEmpty) continue;
-          if (needPictures && !hasPictureBoard(child, inside.first)) continue;
-          next.add(child);
+        final asked = filter.isEmpty
+            ? [start, ...questionsAt(filter).where((d) => d.id != start.id)]
+            : questionsAt(filter);
+        for (final question in asked) {
+          for (final value in question.values.keys) {
+            final child = canon([...filter, (question.id, value)]);
+            if (!seen.add(child.map((f) => '${f.$1}=${f.$2}').join('/'))) continue;
+            final inside = questionsAt(child);
+            if (inside.isEmpty) continue;
+            if (needPictures && !inside.any((d) => hasPictureBoard(child, d))) continue;
+            next.add(child);
+          }
         }
       }
       all.addAll(next);

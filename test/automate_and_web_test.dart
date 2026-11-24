@@ -159,7 +159,9 @@ void main() {
     g.goNext();
     solve(g);
     expect(g.web.where((n) => n.parent == 'animal'), hasLength(6), reason: 'every kind of animal that can be shown');
-    expect(g.web.singleWhere((n) => n.id == 'animal').line, isFalse, reason: 'its set is played out: no longer a line');
+    expect(g.progress.lines.first, isNot('animal'), reason: 'its kinds are all tested: it no longer comes first');
+    expect(g.web.singleWhere((n) => n.id == 'animal').line, isTrue,
+        reason: 'it stays a line for its second question: pet, farm or wild');
   });
 
   testWidgets('the web screen draws each group once, and says so when there is nothing yet', (tester) async {

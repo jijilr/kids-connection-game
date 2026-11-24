@@ -590,7 +590,12 @@ def settle_field(client, config, deepseek_step, run: dict, entry: dict) -> bool:
         earlier.append(f'"{before["wording"]}" (the owner held it)')
     # a library question already refused for this circle is not offered to it again
     refused_before = {r.get("library") for r in before.get("refused_by_the_rules", [])}
-    questions = [q for q in field_rules.library_for(field_rules.load_library(), cid) if q["id"] not in refused_before]
+    # ...nor one that its things already answer: since 24 Nov 2026 a question may be asked across a
+    # whole circle (tools/job/cross.py), and asking it again inside would make a second copy of it
+    answered = {d.get("library") for f, d in dictionary["fields"].items() if d.get("library") and not d.get("merged_into")
+                and any(f in things[k]["fields"] for k in members(things, path))}
+    questions = [q for q in field_rules.library_for(field_rules.load_library(), cid)
+                 if q["id"] not in refused_before and q["id"] not in answered]
     sources = (("the library", lambda spend, refused: field_rules.choose(
                     client, config, spend, questions, entry["chain"], names, refused, names)),
                ("the model", lambda spend, refused: field_rules.propose(
@@ -659,11 +664,8 @@ def count_the_world(client, config, spend, entry: dict) -> dict:
 
 def mark_end(run: dict, entry: dict):
     """Write the end on its question in the dictionary, and tell the engine's tree."""
-    dictionary = cat.read_json(cat.DICTIONARY)
-    raw = build_circles(dictionary, cat.game_copy(cat.load())["things"], cat.read_json(cat.SETTINGS))
-    field, value = ends.step_of(raw, entry["circle"])
     reason = ends.why(entry["world"])
-    reslib.write_json(cat.DICTIONARY, ends.mark(dictionary, field, value, reason, run["id"]))
+    reslib.write_json(cat.DICTIONARY, ends.mark(cat.read_json(cat.DICTIONARY), entry["circle"], reason, run["id"]))
     record_decision(entry["circle"], f"job run {run['id']} found the end of this branch", reason, status="end")
     run.setdefault("ends", []).append({"circle": entry["circle"], "label": entry["label"], "why": reason})
 

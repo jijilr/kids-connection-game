@@ -284,7 +284,8 @@ class _WebScreenState extends State<WebScreen> with TickerProviderStateMixin {
                     ? 'Where the game begins'
                     : '${n.label}: found ${n.found} ${n.found == 1 ? 'time' : 'times'}, ${n.clean} of them clean'
                         '${n.end ? '. Nothing lies below it: the end of this branch' : ''}'
-                        '${n.between.isEmpty ? '' : '. These have no single answer: they lie between the groups they are tied to'}',
+                        '${n.between.isEmpty ? '' : '. These have no single answer: they lie between the groups they are tied to'}'
+                        '${n.also.isEmpty ? '' : '. More than one road leads here: it lies in each circle it is tied to'}',
                 child: SizedBox(
                   width: size,
                   height: size,
@@ -422,6 +423,9 @@ class _WebScreenState extends State<WebScreen> with TickerProviderStateMixin {
           if (nodes.any((n) => n.between.isNotEmpty))
             item(const Icon(Icons.more_horiz_rounded, size: 17, color: Colors.grey),
                 'dotted threads: in between, tied to both sides'),
+          if (nodes.any((n) => n.also.isNotEmpty))
+            item(const Icon(Icons.more_horiz_rounded, size: 17, color: Colors.grey),
+                'dotted threads: it lies in that circle too'),
           item(const Icon(Icons.radio_button_unchecked, size: 15, color: Colors.grey), 'faint rings: steps from the middle'),
           item(const Icon(Icons.pinch_rounded, size: 15, color: Colors.grey), 'pinch or scroll to zoom, drag to move'),
         ],
@@ -644,13 +648,14 @@ class _Sky extends CustomPainter {
       }
     }
 
-    // "In between" is tied to the groups it lies between as well: dotted threads, each in
-    // the colour of the side it reaches. Such a knot is a bridge between branches.
+    // Dotted threads, each in the colour of the knot it reaches: from "in between" to the
+    // groups it lies between, and from a place where circles cross to the other places it
+    // lies inside. Such a knot is a bridge between branches.
     for (final n in layout.nodes) {
       final from = layout.at[n.id];
       final t = shown(n.id).clamp(0.0, 1.0);
       if (from == null || t <= 0) continue;
-      for (final side in n.between) {
+      for (final side in [...n.between, ...n.also]) {
         final to = layout.at[side];
         final other = layout.byId[side];
         if (to == null || other == null) continue;

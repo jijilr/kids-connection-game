@@ -864,61 +864,21 @@
     "pet_farm_or_wild=farm": {
       "clues": [
         {
-          "text": "Think about animals that live where people grow food.",
+          "text": "Think about animals that live where a farmer can look after them.",
           "audio": "Assets/audio/groups/pet_farm_or_wild__farm__clue1.mp3"
         },
         {
-          "text": "These animals are kept by people who work outside in fields.",
+          "text": "These animals give the farmer food or wool or eggs to use.",
           "audio": "Assets/audio/groups/pet_farm_or_wild__farm__clue2.mp3"
         },
         {
-          "text": "People raise these animals to help them and to give them things they need.",
+          "text": "The farmer keeps them in a yard, a coop or a field, not in the house.",
           "audio": "Assets/audio/groups/pet_farm_or_wild__farm__clue3.mp3"
         }
       ],
       "explanation": {
-        "text": "These animals all live on a farm, and a farmer looks after them. A mother cow can have one baby cow each year, and the baby can walk just minutes after it is born.",
+        "text": "A farmer looks after these animals and keeps them for food, eggs or wool. A mother sheep is called a ewe, and her baby is called a lamb.",
         "audio": "Assets/audio/groups/pet_farm_or_wild__farm__explanation.mp3"
-      }
-    },
-    "pet_farm_or_wild=wild_land": {
-      "clues": [
-        {
-          "text": "Think about animals that live far away from people.",
-          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue1.mp3"
-        },
-        {
-          "text": "They find their own food and make their own homes.",
-          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue2.mp3"
-        },
-        {
-          "text": "They live on the ground, not in water or in a house.",
-          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue3.mp3"
-        }
-      ],
-      "explanation": {
-        "text": "These animals all live free out in the open. Nobody keeps them at home or on a farm. A giraffe is the tallest animal that lives on land.",
-        "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__explanation.mp3"
-      }
-    },
-    "pet_farm_or_wild=wild_water": {
-      "clues": [
-        {
-          "text": "Think about a place that is full of water, like a big sea.",
-          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue1.mp3"
-        },
-        {
-          "text": "This animal spends most of its life in the water and comes up to breathe air.",
-          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue2.mp3"
-        },
-        {
-          "text": "This animal lives in the sea or a river, not in a house or a field.",
-          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue3.mp3"
-        }
-      ],
-      "explanation": {
-        "text": "They all live in the water and are wild animals. They swim in the sea, not in a house or on a farm. A whale breathes air from above the water, just like you and me.",
-        "audio": "Assets/audio/groups/pet_farm_or_wild__wild_water__explanation.mp3"
       }
     },
     "pet_farm_or_wild_of_bird=pet": {

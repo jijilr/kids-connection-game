@@ -44,7 +44,8 @@ class FakeHelper implements LiveLink {
     if (birdsMade || !asset.endsWith('things.json')) return text;
     final data = jsonDecode(text) as Map<String, dynamic>;
     for (final thing in (data['things'] as Map).values) {
-      ((thing as Map)['fields'] as Map).remove('pet_farm_or_wild_of_bird');
+      final fields = (thing as Map)['fields'] as Map;
+      if (fields['kind_of_animal'] == 'bird') fields.remove('pet_farm_or_wild');
     }
     return jsonEncode(data);
   }
@@ -104,7 +105,8 @@ void main() {
     solve(g, ['bird']);
     await g.syncLive();
     expect(g.progress.lines.first, 'animal/bird');
-    expect(g.progress.lines, isNot(contains('animal')), reason: 'every kind of animal has been tested');
+    expect(g.progress.lines.indexOf('animal'), greaterThan(0),
+        reason: 'every kind of animal is tested; it waits, after his new lines, for its second question');
     expect(helper.sent.last['lines'], g.progress.lines, reason: 'the helper is told the lines he follows');
     expect(g.nextStep!.id, isNot('animal/bird'), reason: 'the set of birds is not made yet: he plays another');
 
@@ -118,17 +120,22 @@ void main() {
     expect(g.board!.tiles, hasLength(16));
   });
 
-  test('a line the helper says can never be made is let go', () async {
+  test('a line the helper says can never be made is let go, unless the game can open it by itself', () async {
     final helper = FakeHelper();
     final g = EngineProvider(repo: ContentRepository(), random: Roll(), clock: () => day, live: helper);
     TestWidgetsFlutterBinding.ensureInitialized();
     await g.init();
     solve(g, ['plant', 'animal']);
     expect(g.progress.lines.first, 'plant');
-    helper.dead = ['plant'];
+    // a line whose set is not made, and that the helper says it cannot make
+    g.progress.lines.insert(0, 'animal/fish');
+    helper.dead = ['animal/fish', 'plant'];
     await g.syncLive();
-    expect(g.progress.lines, isNot(contains('plant')));
-    expect(g.nextStep!.id, 'animal');
+    expect(g.progress.lines, isNot(contains('animal/fish')));
+    // The helper knows only the old single road. A place the game can open from what it
+    // holds is not lost because the helper has never heard of it (circles that cross).
+    expect(g.progress.lines.first, 'plant');
+    expect(g.nextStep!.id, 'plant');
   });
 
   test('with no helper there the game plays from what it ships with', () async {

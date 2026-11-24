@@ -109,17 +109,9 @@ def branch_stats(circles: dict) -> dict:
 
 def ends_in(dictionary: dict, circles: dict) -> dict:
     """Circles that are the end of their branch (tools/job/ends.py): circle id -> why. The
-    mark is on the question the circle is an answer to, in the dictionary."""
-    found = {}
-    for cid in circles:
-        if cid == "seed":
-            continue
-        parent = cid.rsplit("/", 1)[0] if "/" in cid else "seed"
-        field = circles.get(parent, {}).get("sorted_by")
-        marked = dictionary["fields"].get(field, {}).get("ends", {}).get(cid.rsplit("/", 1)[-1]) if field else None
-        if marked:
-            found[cid] = marked.get("why", "") if isinstance(marked, dict) else str(marked)
-    return found
+    mark is on the place itself, in the dictionary, under the place's own name."""
+    return {cid: (marked.get("why", "") if isinstance(marked, dict) else str(marked))
+            for cid, marked in dictionary.get("ends", {}).items() if cid in circles}
 
 
 def judge(circles: dict, branches: dict, old: dict, proposals: dict, ends: dict = None):

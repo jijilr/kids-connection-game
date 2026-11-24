@@ -22,8 +22,11 @@ Tried on 24 Nov 2026 (Rs 0.2): the planets that go round the Sun are an end (8).
 oceans and the continents were not, until the second call was added: the first call
 padded them with seas and with continents of the past.
 
-An end is written on the question that the group is an answer to, in the dictionary:
-    "ends": {"<value>": {"on": "...", "why": "...", "run": "..."}}
+An end is written on the place, in the dictionary, under the place's own name:
+    "ends": {"animal/mammal/pet": {"on": "...", "why": "...", "run": "..."}}
+It is a place and not an answer to a question: since a question may be asked across
+several places (tools/job/cross.py), "Pets at home" among the mammals and among the birds
+are two places, and one may end where the other does not.
 The game reads it: an end is never a line to follow, and the web shows a leaf on it.
 Nothing is deleted when an end is taken back: the mark moves to "ends_taken_back".
 
@@ -119,46 +122,35 @@ def why(world: dict) -> str:
             f"({', '.join(known) or 'none'}); sorting them further needs {ENOUGH}")
 
 
-def mark(dictionary: dict, field: str, value: str, reason: str, run_id: str) -> dict:
-    """Write the end on its question. Returns the dictionary, changed in place."""
-    dictionary["fields"][field].setdefault("ends", {})[str(value)] = {
+def mark(dictionary: dict, cid: str, reason: str, run_id: str) -> dict:
+    """Write the end on its place. Returns the dictionary, changed in place."""
+    dictionary.setdefault("ends", {})[cid] = {
         "on": datetime.date.today().isoformat(), "why": reason, "run": run_id}
     return dictionary
 
 
-def step_of(circles: dict, cid: str):
-    """The (field, value) a circle is an answer to, or None for the first place."""
-    if cid == "seed" or cid not in circles:
-        return None
-    parent = cid.rsplit("/", 1)[0] if "/" in cid else "seed"
-    field = circles.get(parent, {}).get("sorted_by")
-    return (field, cid.rsplit("/", 1)[-1]) if field else None
-
-
-def end_of(dictionary: dict, circles: dict, cid: str):
+def end_of(dictionary: dict, cid: str):
     """Why the circle is the end of its branch, or None."""
-    step = step_of(circles, cid)
-    if step is None:
-        return None
-    marked = dictionary["fields"].get(step[0], {}).get("ends", {}).get(step[1])
-    return (marked.get("why") if isinstance(marked, dict) else str(marked)) if marked else None
+    marked = dictionary.get("ends", {}).get(cid)
+    return (marked.get("why", "") if isinstance(marked, dict) else str(marked)) if marked else None
 
 
 def end_circles(dictionary: dict, circles: dict) -> dict:
     """Every circle that is the end of its branch: circle id -> why."""
-    return {cid: reason for cid in circles for reason in [end_of(dictionary, circles, cid)] if reason}
+    return {cid: reason for cid in circles for reason in [end_of(dictionary, cid)] if reason is not None}
 
 
-def reopen(dictionary: dict, field: str, value: str, reason: str) -> bool:
+def reopen(dictionary: dict, cid: str, reason: str) -> bool:
     """Take an end back. The mark is kept, under "ends_taken_back". True if there was one."""
-    ends = dictionary["fields"][field].get("ends", {})
-    if str(value) not in ends:
+    marks = dictionary.get("ends", {})
+    if cid not in marks:
         return False
-    was = ends.pop(str(value))
-    if not ends:
-        dictionary["fields"][field].pop("ends")
-    dictionary["fields"][field].setdefault("ends_taken_back", []).append(
-        dict(was, value=str(value), taken_back_on=datetime.date.today().isoformat(), taken_back_why=reason))
+    was = marks.pop(cid)
+    if not marks:
+        dictionary.pop("ends")
+    dictionary.setdefault("ends_taken_back", []).append(
+        dict(was if isinstance(was, dict) else {"why": str(was)}, place=cid,
+             taken_back_on=datetime.date.today().isoformat(), taken_back_why=reason))
     return True
 
 
@@ -170,15 +162,14 @@ def main():
                                    reslib.read_json(ROOT / "Assets/data/settings.json"))
     if args[:1] == ["reopen"]:
         cid = args[1]
-        step = step_of(circles, cid)
         reason = args[args.index("--why") + 1] if "--why" in args else ""
         if not reason:
             raise SystemExit('Say why: reopen CIRCLE --why "..."')
-        if step is None or not reopen(dictionary, step[0], step[1], reason):
+        if not reopen(dictionary, cid, reason):
             raise SystemExit(f"'{cid}' is not marked as the end of a branch.")
         reslib.write_json(DICTIONARY, dictionary)
         expand.rebuild()
-        print(f"{circles[cid]['label']} is no longer the end of its branch. The mark is kept under ends_taken_back.")
+        print(f"{circles.get(cid, {}).get('label', cid)} is no longer the end of its branch. The mark is kept under ends_taken_back.")
         return
     found = end_circles(dictionary, circles)
     if not found:

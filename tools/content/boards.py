@@ -54,7 +54,8 @@ def second_solution(dictionary: dict, things: dict, tiles: list, sorted_by: str)
     """Another field that ALSO splits these 16 tiles cleanly four by four, or None.
     Every stored field is tried, not only the ones that sort boards."""
     for name, definition in dictionary["fields"].items():
-        if name == sorted_by or len(definition["values"]) < GROUPS:
+        # a field merged into another asks the very same question: it is no second way
+        if name == sorted_by or len(definition["values"]) < GROUPS or definition.get("merged_into"):
             continue
         groups = split(things, tiles, name)
         counted = sum(len(g) for g in groups.values())

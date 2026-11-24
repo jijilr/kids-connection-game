@@ -111,13 +111,21 @@ def written_for(names: list, others: list) -> str:
     return hashlib.sha1(json.dumps([sorted(names), sorted(others)], ensure_ascii=False).encode("utf-8")).hexdigest()[:12]
 
 
-def still_fit(client, config, spend, group: dict, chain: str, others: list, names: list, clues: list) -> list:
-    """Do clues written earlier still hold, now that the group's things or its neighbours'
-    have changed? One checking call. Returns what is wrong; empty when they still fit."""
+UNTRUE = "is not true of every thing in the group"
+
+
+def still_fit(client, config, spend, group: dict, chain: str, others: list, names: list, clues: list,
+              explanation: str = "") -> list:
+    """Do words written earlier still hold, now that the group's things or its neighbours'
+    have changed? One checking call. Returns what is wrong; empty when they still fit.
+    A group may have grown past what its words were written for (the wild animals in
+    water were whales and seals, and "comes up to breathe air" was true; then the fish
+    joined them). So the explanation is read again as well: does it still say truly why
+    these things belong together?"""
     verdict = reslib.ask(client, config, spend, CHECKER, CHECK_TASK.format(
         question=group["question"], chain=chain, label=group["label"], members=", ".join(names),
         others=", ".join(others), clues="\n".join(f"{i}. {c}" for i, c in enumerate(clues, 1)),
-        explanation="(not asked about this time)", fact="", quote=""),
+        explanation=explanation or "(not asked about this time)", fact="", quote=""),
         {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"], "most_written": 300})
     marks = verdict.get("clues") if isinstance(verdict.get("clues"), list) else []
     wrong = clue_problems(clues, banned_words(group, names))
@@ -129,6 +137,8 @@ def still_fit(client, config, spend, group: dict, chain: str, others: list, name
             wrong.append(f"clue {i} points at one thing, not at the idea")
         if i >= 2 and mark.get("only_here") is not True:
             wrong.append(f"clue {i} would fit a thing of another group as well")
+    if explanation and verdict.get("explains") is not True:
+        wrong.append("the explanation " + UNTRUE.replace("is not true", "no longer says truly why they belong together; it is not true"))
     return wrong
 
 
@@ -297,11 +307,15 @@ def main():
     print(f"{len(met)} groups a child can meet; {len(todo)} to write"
           + (f"; {len(changed_since)} to look at again, because their things have changed." if changed_since else "."))
     client, written, stopped = reslib.deepseek() if todo or changed_since else None, {}, ""
-    looked = {"still fit": 0, "written again": 0, "old words kept": 0}
+    looked = {"still fit": 0, "written again": 0, "old words kept": 0, "set aside as untrue": 0}
 
-    def write(key, why_again: str = "") -> bool:
+    def write(key, why_again: str = "", untrue: list = ()) -> bool:
         """Write one group's words. Old words that were kept are never pushed out by new
-        ones that were refused; the run then says the old ones stay, and why."""
+        ones that were refused; the run then says the old ones stay, and why. The one
+        exception is truth (`untrue`: what the check found untrue in the old words). A
+        clue or an explanation that is no longer true of every thing in the group is set
+        aside when nothing better passes: no clue is better than a false one. It is kept
+        in the catalogue, marked, and the game does not show it."""
         nonlocal stopped
         group, names, others = setting(key)
         try:
@@ -311,23 +325,42 @@ def main():
             return False
         before, stays = catalogue["groups"].get(key, {}), []
         if "--again" not in args:
+            clue_untrue = [u for u in untrue if u.startswith("clue")]
+            told_untrue = [u for u in untrue if u.startswith("the explanation")]
             if not record["clues"] and len(before.get("clues", [])) >= cat.MIN_CLUES:
                 refused = next((h for h in record.get("held", []) if h.startswith("no clues")), "")
-                record["clues"] = before["clues"]
                 record["new_clues_refused"] = {"on": datetime.date.today().isoformat(),
                                                "why": refused.replace("no clues were kept: ", "")}
-                stays.append("the old clues stay; new ones were refused (" + record["new_clues_refused"]["why"] + ")")
+                if clue_untrue:
+                    record["clues_set_aside"] = {"on": datetime.date.today().isoformat(), "why": "; ".join(clue_untrue),
+                                                 "were": [c["text"] for c in before["clues"]]}
+                    stays.append("the old clues are set aside, for they are no longer true of every thing, and no new "
+                                 "ones passed: the group has no clues (" + "; ".join(clue_untrue) + ")")
+                else:
+                    record["clues"] = before["clues"]
+                    stays.append("the old clues stay; new ones were refused (" + record["new_clues_refused"]["why"] + ")")
             if not record["explanation"] and (before.get("explanation") or {}).get("text"):
-                record["explanation"] = before["explanation"]
-                stays.append("the old explanation stays")
+                if told_untrue:
+                    record["explanation_set_aside"] = {"on": datetime.date.today().isoformat(),
+                                                       "why": "it no longer says truly why these belong together",
+                                                       "was": before["explanation"]["text"]}
+                    stays.append("the old explanation is set aside, for it is no longer true of the group, and no new "
+                                 "one passed: the group has no explanation")
+                else:
+                    record["explanation"] = before["explanation"]
+                    stays.append("the old explanation stays")
             record["held"] = [h for h in record.get("held", [])
                               if (h.startswith("no clues") and not record["clues"])
                               or (h.startswith("no explanation") and not record["explanation"])]
             if not record["held"]:
                 record.pop("held")
+        for kept in ("clues_set_aside", "explanation_set_aside"):     # what was set aside before stays on record
+            if kept in before and kept not in record:
+                record[kept] = before[kept]
         written[key] = record
         if why_again:
-            looked["old words kept" if any("clues stay" in x for x in stays) else "written again"] += 1
+            looked["set aside as untrue" if any("set aside" in x for x in stays)
+                   else "old words kept" if any("clues stay" in x for x in stays) else "written again"] += 1
         print(f"  {key}: " + (why_again + " -> " if why_again else "")
               + ("; ".join(record["held"]) if record.get("held") else "; ".join(stays) or "new clues and explanation kept"))
         return True
@@ -342,7 +375,7 @@ def main():
         before = catalogue["groups"][key]
         try:
             wrong = still_fit(client, config, spend, group, chain_of(dictionary, group["field"]), others, names,
-                              [c["text"] for c in before["clues"]])
+                              [c["text"] for c in before["clues"]], (before.get("explanation") or {}).get("text", ""))
         except SystemExit as stop:
             stopped = str(stop).split(". What was")[0]
             break
@@ -352,7 +385,7 @@ def main():
             looked["still fit"] += 1
             print(f"  {key}: its things changed; its clues still fit")
         else:
-            write(key, why_again="its things changed and " + wrong[0])
+            write(key, why_again="its things changed and " + wrong[0], untrue=[w for w in wrong if "not true" in w])
     if written:
         with cat.changing("group_words.py") as changed:
             for key, record in written.items():

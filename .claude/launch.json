@@ -21,7 +21,8 @@
       "runtimeArgs": [
         "tools/live/helper.py",
         "--port",
-        "8200"
+        "8200",
+        "--lan"
       ],
       "port": 8200
     },

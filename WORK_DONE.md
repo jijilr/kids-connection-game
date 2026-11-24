@@ -18,7 +18,7 @@ Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 | Dictionary | version 12, 21 fields (two withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups with words | 61, each with a ladder of clues; 59 have an explanation |
-| Tests | 91 in the game, 41 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
+| Tests | 103 in the game, 44 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
 
 **The fifteen sets:** Everything, Animals, Mammals, Wild animals on land and Make music with it (both
 made on 24 Nov by the helper, the second while the owner played), Birds, Dinosaurs, Plants, Vegetable
@@ -305,6 +305,33 @@ is not shown yet.
 **The two keys for "in between"** are written and tested in the same file, and tried for real
 (Rs 2.2): of fifteen things the model offered at the first place, only the virus passed. No run uses
 them yet. One rule is open (a kind that is itself in between); see `DESIGN.md`, section 7.
+
+### Circles that cross: the small proof (24 Nov, night)
+The owner: "we still assume concentric circles paradigm. but knowledge is never that"; then "yes, build
+the small proof." The whole of it is in `DESIGN.md`, section 8a. In short:
+- **One question, asked across.** "Is it mostly a pet, a farm animal or a wild animal?" was a field for
+  mammals and a second field for birds. It is one field now, asked of every animal it fits
+  (`python tools/job/cross.py pet_farm_or_wild --of animal`, Rs 0.16). The birds' answers were taken
+  over; two checks placed 28 more animals; Goldfish lists two groups; and the question does not fit the
+  29 dinosaurs and two extinct snakes, which carry no answer. The old second field is kept, marked
+  `merged_into`, and the game does not see it.
+- **The game.** A place may ask more than one question. A place is named by the circles it lies in,
+  not by the road to it, so the same things reached two ways are one place with one knot on the web,
+  tied to both circles. A question is asked where every thing answers it, or at its home: the smallest
+  place that holds all that do. Animals now asks two questions; "Wild animals on land" is a place of its
+  own, sorted by kind of animal. Every old name stands, so saved progress is untouched.
+- **An end is now marked on the place**, not on an answer to a question: the pets among the mammals
+  are not the pets among the birds.
+- **Words that are no longer true are set aside.** The clues of "Wild animals on land" and "Wild animals
+  in water" were written for mammals ("comes up to breathe air"). The keep-fit step now also reads the
+  explanation again, and sets aside what is no longer true when nothing better passes. Both groups have
+  no clues now, and one has no explanation; "Farm animals" was written again. Clue work: Rs 1.5.
+- Not covered: the job and the helper still know only the old single road, so they cannot make a set
+  for a place that exists only by crossing.
+- Tests: `test/crossing_circles_test.dart` (12, four of them on the real game), three more in the
+  job's self-test.
+- The helper now also serves the Wi-Fi (`--lan` in `.claude/launch.json`), so the game opens on a phone
+  at `http://<this PC's address>:8200`.
 
 Seen in that run and not fixed: "Wolf spider" was turned away as "Wolf again, or a part of it". The
 rule that stops "Pumpkin seeds" when Pumpkin plant is there reads any name that begins with a name in
@@ -642,5 +669,7 @@ other names for mud.
 - Evening: more kinds than four in the fewest sets, the end of a branch, and "in between", in the game;
   `DESIGN.md` written. The job now finds the end of a branch by counting (trials: Rs 0.3).
 - Night: the job can widen a place; Animals gained "Arachnids" (three things so far, Rs 27.8); the two
-  keys for "in between" tried (Rs 3). The owner raised the concentric-circles paradigm itself; written
-  down in `DESIGN.md`, section 8a, not built. Spent on the day by the helper's ledger: Rs 164 of 200.
+  keys for "in between" tried (Rs 3). The owner raised the concentric-circles paradigm itself.
+- Late night: the small proof of circles that cross, built: one question asked of every animal it fits,
+  a place named by its circles, more than one question at a place (about Rs 3.5 with the clue work).
+  The game on the phone over Wi-Fi. Spent on the day by the helper's ledger: Rs 165 of 200.

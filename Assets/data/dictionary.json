@@ -263,11 +263,24 @@
         "wild_water": "Wild animals in water"
       },
       "expected_on": {
-        "kind_of_animal": "mammal"
+        "kind_of_thing": "animal"
       },
       "since": 7,
       "library": "pet_farm_or_wild",
-      "added_by": "the rules, job run 2026-10-07-03"
+      "added_by": "the rules, job run 2026-10-07-03",
+      "where_it_fits": true,
+      "crossed": [
+        {
+          "on": "2026-11-24",
+          "now_asked_of": {
+            "kind_of_thing": "animal"
+          },
+          "was_asked_of": {
+            "kind_of_animal": "mammal"
+          },
+          "why": "the owner, 24 Nov 2026: circles cross; a question belongs to every thing it is true of"
+        }
+      ]
     },
     "pet_farm_or_wild_of_bird": {
       "wording": "Is it mostly a pet, a farm animal or a wild animal?",
@@ -283,7 +296,13 @@
       },
       "since": 8,
       "library": "pet_farm_or_wild",
-      "added_by": "the rules, job run 2026-10-07-03"
+      "added_by": "the rules, job run 2026-10-07-03",
+      "merged_into": "pet_farm_or_wild",
+      "sorts_boards": false,
+      "merged": {
+        "on": "2026-11-24",
+        "why": "it asks the same question as pet_farm_or_wild, which is now asked of the whole circle; its values are kept on the things"
+      }
     },
     "what_people_do_there": {
       "wording": "What do people mostly do there?",
@@ -353,6 +372,7 @@
         "eats_insects": "Eats mostly insects"
       },
       "expected_on": {
+        "kind_of_animal": "mammal",
         "pet_farm_or_wild": "wild_land"
       },
       "since": 12,
