@@ -1,6 +1,6 @@
 {
-  "version": 10,
-  "status": "version 10. Versions 1 to 4 were approved by the owner. Since 7 Oct 2026 a field is added by the rules when it passes the four tests, and the digest of the run that added it says so. The game reads this file.",
+  "version": 11,
+  "status": "version 11. Versions 1 to 4 were approved by the owner. Since 7 Oct 2026 a field is added by the rules when it passes the four tests, and the digest of the run that added it says so. The game reads this file.",
   "about": "Every field a thing may carry, and the only values that field may take. A field that does not apply to a thing is left out of that thing; it is never written as 'not applicable'. The wording is what a child sees or hears; it is not data.",
   "rules": [
     "A field holds the everyday meaning, which is what the game sorts by.",
@@ -309,6 +309,21 @@
       "since": 10,
       "library": "how_we_play_with_it",
       "added_by": "the rules, job run 2026-10-07-06"
+    },
+    "dinosaur_group": {
+      "wording": "Which dinosaur family does it belong to?",
+      "meaning": "everyday",
+      "values": {
+        "long_necked": "Long-necked plant eaters",
+        "horned": "Horned and frilled dinosaurs",
+        "armoured": "Armoured and plated dinosaurs",
+        "bone_headed": "Bone-headed dinosaurs"
+      },
+      "expected_on": {
+        "kind_of_dinosaur": "land_grazer"
+      },
+      "since": 11,
+      "added_by": "the rules, job run 2026-11-24-02"
     }
   }
 }

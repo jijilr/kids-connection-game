@@ -1,0 +1,61 @@
+{
+  "name": "Chasmosaurus",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Chasmosaurus was a rhinoceros-like dinosaur, similar to a triceratops, but smaller, the order of bird-hipped, herbivorous dinosaurs.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "dinosaur",
+      "quote": "Chasmosaurus was a rhinoceros-like dinosaur, similar to a triceratops, but smaller, the order of bird-hipped, herbivorous dinosaurs.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "dinosaur_academic": {
+      "value": true,
+      "quote": "Chasmosaurus ( KAZ-moh-SOR-əs) is a genus of ceratopsid dinosaur from the Late Cretaceous Period in North America.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_dinosaur": {
+      "value": "land_grazer",
+      "quote": "It was a member of the suborder Marginocephalia, and the family of large, horned, herding herbivores, the ceratopsians.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "dinosaur_group": {
+      "value": "horned",
+      "quote": "It was a member of the suborder Marginocephalia, and the family of large, horned, herding herbivores, the ceratopsians.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Chasmosaurus",
+      "title": "Chasmosaurus",
+      "asked_for": "Chasmosaurus",
+      "revision": 1374377095,
+      "fetched_on": "2026-11-24",
+      "sha256": "d251448655c862a0c5da4630178a165cd8a221f1dec00e8a021f3e1dc9833bdd"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Chasmosaurus",
+      "title": "Chasmosaurus",
+      "asked_for": "Chasmosaurus",
+      "revision": 10181706,
+      "fetched_on": "2026-11-24",
+      "sha256": "5f9312c9773ef4bf20251a1394649d3ed4ad291b51108b2645c9ab46f076382e"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

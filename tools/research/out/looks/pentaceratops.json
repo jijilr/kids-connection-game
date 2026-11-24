@@ -1,0 +1,117 @@
+{
+  "name": "Pentaceratops",
+  "group": "Animals > Dinosaurs > Land grazers > Horned and frilled dinosaurs",
+  "features": [
+    {
+      "claim": "It had a short nose horn that pointed upward and backward.",
+      "quote": "The nose horn of Pentaceratops is small and points upward and backward.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had two very long brow horns that curved strongly forward.",
+      "quote": "The brow horns are very long and curve strongly forward.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had long horns on the jugal bones, sticking out sideways under its eyes.",
+      "quote": "It had a short nose horn, two long brow horns, and long horns on the jugal bones.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its skull had a very long frill with triangular hornlets along the edge.",
+      "quote": "Its skull had a very long frill with triangular hornlets on the edge.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The frill was somewhat tilted upward and had two large holes in it.",
+      "quote": "The somewhat upward tilted frill of Pentaceratops is considerably longer than that of Triceratops, with two large holes (parietal fenestrae) in it.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The frill was rectangular and decorated with large triangular bony bumps, biggest at the rear corners.",
+      "quote": "It is rectangular, adorned by large triangular osteoderms: up to twelve episquamosals at the squamosal and three epiparietals at the parietal bone.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The frill had a large U-shaped notch at the middle of its back edge.",
+      "quote": "These are largest at the rear corners of the frill, and are separated by a large U-shaped notch at the midline, a feature not recognized until 1981 when specimen UKVP 16100 was described.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its torso was tall and wide.",
+      "quote": "The torso of Pentaceratops is tall and wide.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its skull was huge, over two meters long.",
+      "quote": "The skull length of AMNH 1624 is 2.3 meters (7.5 ft) while PMU R.200 has a length of 2.16 meters (7.1 ft).",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Pentaceratops was a large dinosaur with four legs and a horned, frilled head, about 5.5 to 6 meters long.",
+        "quote": "Pentaceratops was about 5.5–6 meters (18–20 ft) long, and has been estimated to have weighed around 2.5 metric tons (2.8 short tons).",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "the sentence does not support it"
+      },
+      {
+        "claim": "It had a long, sharp beak for biting off branches.",
+        "quote": "It would have used its sharp ceratopsian beak to bite off the branches which were then shredded - leaves, needles, and all - by the tooth batteries, providing a self-sharpening continuous cutting edge in both upper and lower jaws.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "the sentence does not support it"
+      },
+      {
+        "claim": "One source says it was almost 11 meters long and 4 meters tall, while another says it was about 5.5 to 6 meters long.",
+        "quote": "It was almost 11 meters in length and 4 meters tall.",
+        "source": "wikipedia_simple",
+        "kind": "debated",
+        "why": "the sentence does not support it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Pentaceratops",
+      "title": "Pentaceratops",
+      "revision": 1335313617,
+      "revision_time": "2026-01-28T15:13:40Z",
+      "fetched_on": "2026-11-24",
+      "chars": 9501,
+      "sha256": "513cfad61458c01ef3f7dc79ac4c1e720d9d0438dc361383f5da682a2472417e"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Pentaceratops",
+      "title": "Pentaceratops",
+      "revision": 6064114,
+      "revision_time": "2018-04-14T12:37:07Z",
+      "fetched_on": "2026-11-24",
+      "chars": 137,
+      "sha256": "83dafb81986ae34ad17b92e109155884c48c7f9f4b4695a8bf4a26486ea33d0f"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "It had two very long brow horns that curved strongly forward.",
+    "It had long horns on the jugal bones, sticking out sideways under its eyes.",
+    "The frill had a large U-shaped notch at the middle of its back edge."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "very long forward-curving brow horns, sideways jugal horns, notched frill",
+    "covering": []
+  }
+}

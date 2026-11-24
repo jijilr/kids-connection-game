@@ -1,0 +1,66 @@
+{
+  "name": "Styracosaurus",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Styracosaurus was a genus of herbivorous ceratopsian dinosaur from the Upper Cretaceous, about 76.5 to 75 million years ago.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "dinosaur",
+      "quote": "Styracosaurus was a genus of herbivorous ceratopsian dinosaur from the Upper Cretaceous, about 76.5 to 75 million years ago.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "dinosaur_academic": {
+      "value": true,
+      "quote": "Styracosaurus was a genus of herbivorous ceratopsian dinosaur from the Upper Cretaceous, about 76.5 to 75 million years ago.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_dinosaur": {
+      "value": "land_grazer",
+      "basis": "judged, not sourced",
+      "why": "The sources say Styracosaurus was a herbivorous dinosaur with four short legs and a bulky body, so it walked on land and ate plants."
+    },
+    "extinct": {
+      "value": true,
+      "quote": "Styracosaurus ( sti-RAK-ə-SOR-əs; meaning \"spiked lizard\" from the Ancient Greek styrax/στύραξ \"spike at the butt-end of a spear-shaft\" and sauros/σαῦρος \"lizard\") is an extinct genus of herbivorous dinosaur from the Late Cretaceous (Campanian stage) of North America.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "dinosaur_group": {
+      "value": "horned",
+      "quote": "It had four to six long parietal spikes extending from its neck frill, a smaller jugal horn on each of its cheeks, and a single horn protruding from its nose, which may have been up to 60 centimeters (2 feet) long and 15 centimeters (6 inches) wide.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Styracosaurus",
+      "title": "Styracosaurus",
+      "asked_for": "Styracosaurus",
+      "revision": 1383322592,
+      "fetched_on": "2026-11-24",
+      "sha256": "b737adb784d50eb38fb8b7039ee910650180267dba507e9de4f16c821d72c630"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Styracosaurus",
+      "title": "Styracosaurus",
+      "asked_for": "Styracosaurus",
+      "revision": 10717718,
+      "fetched_on": "2026-11-24",
+      "sha256": "24e8e701d00d6d61a96c1a881434bfb390d5811f0cabb92fd5ca3eaf37701f17"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

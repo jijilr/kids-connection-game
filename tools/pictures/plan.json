@@ -3188,6 +3188,124 @@
           "draw": "a single mosquito with long thin legs, shown large"
         }
       ]
+    },
+    "job_2026_11_24_02_1": {
+      "purpose": "drawn by the job, run 2026-11-24-02",
+      "grid": 2,
+      "size": 1920,
+      "only_for_this_sheet": "Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.",
+      "cells": [
+        {
+          "thing": "torosaurus",
+          "name": "Torosaurus",
+          "draw": "A four-legged plant-eating dinosaur with a huge bony frill swept back from its head, the frill very long and pierced by two large oval holes, and two big horns above its eyes curving forward, plus a short nose horn; grey-brown scaly skin, standing on bare ground",
+          "must_show": [
+            "It had a very long frill compared with the rest of its skull.",
+            "Its frill had large oval openings in it.",
+            "It had horns above its eyes that could be large and curved forward."
+          ],
+          "not_this": [],
+          "features": [
+            "It had a very long frill compared with the rest of its skull.",
+            "Its frill had large oval openings in it.",
+            "The back edge of its frill carried ten or more small triangular bony bumps.",
+            "It had a short upright horn on its nose.",
+            "It had three horns on its large head.",
+            "It walked on four legs.",
+            "It was a big animal, about 7.5 to 9 metres long.",
+            "Its skull was enormous, up to about 2.77 metres long.",
+            "It had a beak like a parrot's.",
+            "It had horns above its eyes that could be large and curved forward."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Torosaurus",
+            "https://simple.wikipedia.org/wiki/Torosaurus"
+          ]
+        },
+        {
+          "thing": "styracosaurus",
+          "name": "Styracosaurus",
+          "draw": "A bulky four-legged plant-eating dinosaur with a short tail, standing on bare ground: one horn on its nose, a beak, and four to six long spikes sticking out from the bony frill around its neck, in plain brownish-grey skin",
+          "must_show": [
+            "It had a single horn sticking out of its nose.",
+            "It had four to six long spikes sticking out from the frill around its neck.",
+            "Its tail was rather short."
+          ],
+          "not_this": [],
+          "features": [
+            "It was a fairly large dinosaur, about 5 to 5.5 metres long.",
+            "It stood about 1.8 metres tall.",
+            "It had four short legs and a bulky body.",
+            "Its tail was rather short.",
+            "It had a single horn sticking out of its nose.",
+            "It had four to six long spikes sticking out from the frill around its neck.",
+            "It had a smaller horn on each of its cheeks.",
+            "Its skull had a beak at the front of the mouth.",
+            "Its body was bulky, like a rhinoceros.",
+            "It had powerful shoulders.",
+            "Each toe had a hooflike claw covered in horn.",
+            "The skull was massive, with a large nostril and a tall straight nose horn."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Styracosaurus",
+            "https://simple.wikipedia.org/wiki/Styracosaurus"
+          ]
+        },
+        {
+          "thing": "pentaceratops",
+          "name": "Pentaceratops",
+          "draw": "A big four-legged dinosaur with a huge neck frill that has a U-shaped notch in the middle of its back edge, two very long brow horns curving strongly forward, and long horns sticking out sideways from its cheeks under its eyes, standing on bare ground",
+          "must_show": [
+            "It had two very long brow horns that curved strongly forward.",
+            "It had long horns on the jugal bones, sticking out sideways under its eyes.",
+            "The frill had a large U-shaped notch at the middle of its back edge."
+          ],
+          "not_this": [],
+          "features": [
+            "It had a short nose horn that pointed upward and backward.",
+            "It had two very long brow horns that curved strongly forward.",
+            "It had long horns on the jugal bones, sticking out sideways under its eyes.",
+            "Its skull had a very long frill with triangular hornlets along the edge.",
+            "The frill was somewhat tilted upward and had two large holes in it.",
+            "The frill was rectangular and decorated with large triangular bony bumps, biggest at the rear corners.",
+            "The frill had a large U-shaped notch at the middle of its back edge.",
+            "Its torso was tall and wide.",
+            "Its skull was huge, over two meters long."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Pentaceratops",
+            "https://simple.wikipedia.org/wiki/Pentaceratops"
+          ]
+        },
+        {
+          "thing": "torosaurus",
+          "name": "Torosaurus",
+          "draw": "A four-legged plant-eating dinosaur with a huge bony frill swept back from its head, the frill very long and pierced by two large oval holes, and two big horns above its eyes curving forward, plus a short nose horn; grey-brown scaly skin, standing on bare ground; a second view of it",
+          "must_show": [
+            "It had a very long frill compared with the rest of its skull.",
+            "Its frill had large oval openings in it.",
+            "It had horns above its eyes that could be large and curved forward."
+          ],
+          "not_this": [],
+          "features": [
+            "It had a very long frill compared with the rest of its skull.",
+            "Its frill had large oval openings in it.",
+            "The back edge of its frill carried ten or more small triangular bony bumps.",
+            "It had a short upright horn on its nose.",
+            "It had three horns on its large head.",
+            "It walked on four legs.",
+            "It was a big animal, about 7.5 to 9 metres long.",
+            "Its skull was enormous, up to about 2.77 metres long.",
+            "It had a beak like a parrot's.",
+            "It had horns above its eyes that could be large and curved forward."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Torosaurus",
+            "https://simple.wikipedia.org/wiki/Torosaurus"
+          ],
+          "look_closely": "a second try; the better of the two is kept"
+        }
+      ]
     }
   }
 }

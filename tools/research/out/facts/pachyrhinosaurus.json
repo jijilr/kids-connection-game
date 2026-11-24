@@ -1,0 +1,61 @@
+{
+  "name": "Pachyrhinosaurus",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Pachyrhinosaurus was a large, plant-eating dinosaur that had a bony, spiked neck frill, four short legs, and a short tail.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "dinosaur",
+      "quote": "Pachyrhinosaurus was a large, plant-eating dinosaur that had a bony, spiked neck frill, four short legs, and a short tail.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "dinosaur_academic": {
+      "value": true,
+      "quote": "Pachyrhinosaurus (from Ancient Greek παχύς (pachys), thick; ῥίς (rhis), nose; and σαυρος (sauros), lizard) is a genus of centrosaurine ceratopsid dinosaur from the Late Cretaceous period of North America.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_dinosaur": {
+      "value": "land_grazer",
+      "quote": "Pachyrhinosaurus was a large, plant-eating dinosaur that had a bony, spiked neck frill, four short legs, and a short tail.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "dinosaur_group": {
+      "value": "horned",
+      "quote": "Pachyrhinosaurus was a short-frilled ceratopsian dinosaur that was 18 to 23 feet (5.5 to 7 m) long.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Pachyrhinosaurus",
+      "title": "Pachyrhinosaurus",
+      "asked_for": "Pachyrhinosaurus",
+      "revision": 1382109316,
+      "fetched_on": "2026-11-24",
+      "sha256": "317812ffd6ca0701c3c0c4bb8258087c9eb7912390e9510ab4ca8c03028530a7"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Pachyrhinosaurus",
+      "title": "Pachyrhinosaurus",
+      "asked_for": "Pachyrhinosaurus",
+      "revision": 7639250,
+      "fetched_on": "2026-11-24",
+      "sha256": "f191be5f9de5f76b0862447b8ca0a9a4a5bec149fa5c9276137e876c6c5f42af"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

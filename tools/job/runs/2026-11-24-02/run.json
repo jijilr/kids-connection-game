@@ -1,0 +1,935 @@
+{
+  "id": "2026-11-24-02",
+  "started": "2026-11-24",
+  "rehearse": null,
+  "cap_inr": 90.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "animal/dinosaur/land_grazer",
+        "chain": "Animals > Dinosaurs > Land grazers > Horned and frilled dinosaurs",
+        "fixed": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "dinosaur",
+          "kind_of_dinosaur": "land_grazer",
+          "dinosaur_group": "horned"
+        },
+        "need": 3,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Torosaurus",
+            "familiar": 0.6,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Styracosaurus",
+            "familiar": 0.7,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Pentaceratops",
+            "familiar": 0.5,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Chasmosaurus",
+            "familiar": 0.5,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Pachyrhinosaurus",
+            "familiar": 0.5,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Centrosaurus",
+            "familiar": 0.5,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "animal/dinosaur/land_grazer",
+        "chain": "Animals > Dinosaurs > Land grazers > Armoured and plated dinosaurs",
+        "fixed": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "dinosaur",
+          "kind_of_dinosaur": "land_grazer",
+          "dinosaur_group": "armoured"
+        },
+        "need": 2,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Euoplocephalus",
+            "familiar": 0.4,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Kentrosaurus",
+            "familiar": 0.45,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "offers_1": [
+          {
+            "name": "Nodosaurus",
+            "familiar": 0.35,
+            "why": "armoured plated dinosaur, bony back",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Sauropelta",
+            "familiar": 0.3,
+            "why": "plated dinosaur with spiky shoulders",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Edmontonia",
+            "familiar": 0.28,
+            "why": "armoured dinosaur, low and plated",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Scelidosaurus",
+            "familiar": 0.25,
+            "why": "early armoured plated dinosaur",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Polacanthus",
+            "familiar": 0.22,
+            "why": "spiky plated dinosaur back",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Panoplosaurus",
+            "familiar": 0.2,
+            "why": "armoured dinosaur, plated body",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "offers_2": [
+          {
+            "name": "Protoceratops",
+            "familiar": 0.55,
+            "why": "Small frilled horned dinosaur",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Styracosaurus",
+            "familiar": 0.5,
+            "why": "Many-horned frilled dinosaur",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "facts_done": true
+      },
+      {
+        "circle": "animal/dinosaur/land_grazer",
+        "chain": "Animals > Dinosaurs > Land grazers > Bone-headed dinosaurs",
+        "fixed": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "dinosaur",
+          "kind_of_dinosaur": "land_grazer",
+          "dinosaur_group": "bone_headed"
+        },
+        "need": 2,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Stygimoloch",
+            "familiar": 0.55,
+            "recognised": true,
+            "suitable": true
+          },
+          {
+            "name": "Dracorex",
+            "familiar": 0.45,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "offers_1": [
+          {
+            "name": "Stegoceras",
+            "familiar": 0.3,
+            "why": "small dome-headed dinosaur, common in books",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Prenocephale",
+            "familiar": 0.25,
+            "why": "round-headed grazer, seen in dinosaur books",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Homalocephale",
+            "familiar": 0.2,
+            "why": "flat-headed bone-head, dinosaur picture books",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Sphaerotholus",
+            "familiar": 0.15,
+            "why": "dome-skulled grazer, toy dinosaur sets",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Colepiocephale",
+            "familiar": 0.1,
+            "why": "small bone-headed dinosaur, specialist books",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "offers_2": [],
+        "facts_done": true
+      }
+    ],
+    "circles": [
+      {
+        "circle": "animal/dinosaur/land_grazer",
+        "label": "Land grazers",
+        "chain": "Animals > Dinosaurs > Land grazers",
+        "needs_field": true,
+        "expect_things": 10,
+        "his_strength": false,
+        "field_added": true,
+        "asks": [
+          0,
+          1,
+          2
+        ],
+        "done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": [],
+    "held_back": [],
+    "played": null,
+    "mastered": []
+  },
+  "retry_held": true,
+  "things": [
+    {
+      "name": "Torosaurus",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Torosaurus",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "dinosaur",
+          "dinosaur_academic": true,
+          "kind_of_dinosaur": "land_grazer",
+          "extinct": true,
+          "dinosaur_group": "horned"
+        },
+        "familiar": 0.6,
+        "reviewed": 11,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-02"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true,
+        "dinosaur_group": "horned"
+      },
+      "familiar": 0.6,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "look": {
+        "must_show": [
+          "It had a very long frill compared with the rest of its skull.",
+          "Its frill had large oval openings in it.",
+          "It had horns above its eyes that could be large and curved forward."
+        ],
+        "not_this": [],
+        "features": [
+          "It had a very long frill compared with the rest of its skull.",
+          "Its frill had large oval openings in it.",
+          "The back edge of its frill carried ten or more small triangular bony bumps.",
+          "It had a short upright horn on its nose.",
+          "It had three horns on its large head.",
+          "It walked on four legs.",
+          "It was a big animal, about 7.5 to 9 metres long.",
+          "Its skull was enormous, up to about 2.77 metres long.",
+          "It had a beak like a parrot's.",
+          "It had horns above its eyes that could be large and curved forward."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/Torosaurus",
+          "https://simple.wikipedia.org/wiki/Torosaurus"
+        ]
+      },
+      "draw": "A four-legged plant-eating dinosaur with a huge bony frill swept back from its head, the frill very long and pierced by two large oval holes, and two big horns above its eyes curving forward, plus a short nose horn; grey-brown scaly skin, standing on bare ground",
+      "tries": 1,
+      "tile": "job_2026_11_24_02_1_01_c1"
+    },
+    {
+      "name": "Styracosaurus",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Styracosaurus",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "dinosaur",
+          "dinosaur_academic": true,
+          "kind_of_dinosaur": "land_grazer",
+          "extinct": true,
+          "dinosaur_group": "horned"
+        },
+        "familiar": 0.7,
+        "reviewed": 11,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-02"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true,
+        "dinosaur_group": "horned"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_dinosaur"
+      ],
+      "ask": 0,
+      "look": {
+        "must_show": [
+          "It had a single horn sticking out of its nose.",
+          "It had four to six long spikes sticking out from the frill around its neck.",
+          "Its tail was rather short."
+        ],
+        "not_this": [],
+        "features": [
+          "It was a fairly large dinosaur, about 5 to 5.5 metres long.",
+          "It stood about 1.8 metres tall.",
+          "It had four short legs and a bulky body.",
+          "Its tail was rather short.",
+          "It had a single horn sticking out of its nose.",
+          "It had four to six long spikes sticking out from the frill around its neck.",
+          "It had a smaller horn on each of its cheeks.",
+          "Its skull had a beak at the front of the mouth.",
+          "Its body was bulky, like a rhinoceros.",
+          "It had powerful shoulders.",
+          "Each toe had a hooflike claw covered in horn.",
+          "The skull was massive, with a large nostril and a tall straight nose horn."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/Styracosaurus",
+          "https://simple.wikipedia.org/wiki/Styracosaurus"
+        ]
+      },
+      "draw": "A bulky four-legged plant-eating dinosaur with a short tail, standing on bare ground: one horn on its nose, a beak, and four to six long spikes sticking out from the bony frill around its neck, in plain brownish-grey skin",
+      "tries": 1,
+      "tile": "job_2026_11_24_02_1_01_c2"
+    },
+    {
+      "name": "Pentaceratops",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Pentaceratops",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "dinosaur",
+          "dinosaur_academic": true,
+          "kind_of_dinosaur": "land_grazer",
+          "extinct": true,
+          "dinosaur_group": "horned"
+        },
+        "familiar": 0.5,
+        "reviewed": 11,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-02"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true,
+        "dinosaur_group": "horned"
+      },
+      "familiar": 0.5,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "dinosaur_group"
+      ],
+      "ask": 0,
+      "look": {
+        "must_show": [
+          "It had two very long brow horns that curved strongly forward.",
+          "It had long horns on the jugal bones, sticking out sideways under its eyes.",
+          "The frill had a large U-shaped notch at the middle of its back edge."
+        ],
+        "not_this": [],
+        "features": [
+          "It had a short nose horn that pointed upward and backward.",
+          "It had two very long brow horns that curved strongly forward.",
+          "It had long horns on the jugal bones, sticking out sideways under its eyes.",
+          "Its skull had a very long frill with triangular hornlets along the edge.",
+          "The frill was somewhat tilted upward and had two large holes in it.",
+          "The frill was rectangular and decorated with large triangular bony bumps, biggest at the rear corners.",
+          "The frill had a large U-shaped notch at the middle of its back edge.",
+          "Its torso was tall and wide.",
+          "Its skull was huge, over two meters long."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pentaceratops",
+          "https://simple.wikipedia.org/wiki/Pentaceratops"
+        ]
+      },
+      "draw": "A big four-legged dinosaur with a huge neck frill that has a U-shaped notch in the middle of its back edge, two very long brow horns curving strongly forward, and long horns sticking out sideways from its cheeks under its eyes, standing on bare ground",
+      "tries": 1,
+      "tile": "job_2026_11_24_02_1_01_c3"
+    },
+    {
+      "name": "Chasmosaurus",
+      "passed": false,
+      "why": [
+        "chasmosaurus: missing 'extinct', which the dictionary expects on it"
+      ],
+      "thing": {
+        "name": "Chasmosaurus",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "dinosaur",
+          "dinosaur_academic": true,
+          "kind_of_dinosaur": "land_grazer",
+          "dinosaur_group": "horned"
+        },
+        "familiar": 0.5,
+        "reviewed": 11,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-02"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "horned"
+      },
+      "familiar": 0.5,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Pachyrhinosaurus",
+      "passed": false,
+      "why": [
+        "pachyrhinosaurus: missing 'extinct', which the dictionary expects on it"
+      ],
+      "thing": {
+        "name": "Pachyrhinosaurus",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "dinosaur",
+          "dinosaur_academic": true,
+          "kind_of_dinosaur": "land_grazer",
+          "dinosaur_group": "horned"
+        },
+        "familiar": 0.5,
+        "reviewed": 11,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-02"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "horned"
+      },
+      "familiar": 0.5,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Centrosaurus",
+      "passed": false,
+      "why": [
+        "centrosaurus: missing 'extinct', which the dictionary expects on it"
+      ],
+      "thing": {
+        "name": "Centrosaurus",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "dinosaur",
+          "dinosaur_academic": true,
+          "kind_of_dinosaur": "land_grazer",
+          "dinosaur_group": "horned"
+        },
+        "familiar": 0.5,
+        "reviewed": 11,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-02"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "horned"
+      },
+      "familiar": 0.5,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "dinosaur_group"
+      ],
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Euoplocephalus",
+      "passed": false,
+      "why": [
+        "euoplocephalus: missing 'extinct', which the dictionary expects on it"
+      ],
+      "thing": {
+        "name": "Euoplocephalus",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "dinosaur",
+          "dinosaur_academic": true,
+          "kind_of_dinosaur": "land_grazer",
+          "dinosaur_group": "armoured"
+        },
+        "familiar": 0.4,
+        "reviewed": 11,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-02"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "armoured"
+      },
+      "familiar": 0.4,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Kentrosaurus",
+      "passed": false,
+      "why": [
+        "kentrosaurus: missing 'extinct', which the dictionary expects on it"
+      ],
+      "thing": {
+        "name": "Kentrosaurus",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "dinosaur",
+          "dinosaur_academic": true,
+          "kind_of_dinosaur": "land_grazer",
+          "dinosaur_group": "armoured"
+        },
+        "familiar": 0.45,
+        "reviewed": 11,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-02"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "armoured"
+      },
+      "familiar": 0.45,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Nodosaurus",
+      "passed": false,
+      "familiar": 0.35,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "armoured"
+      },
+      "why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "not_recognised": true,
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Sauropelta",
+      "passed": false,
+      "familiar": 0.3,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "armoured"
+      },
+      "why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "not_recognised": true,
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Edmontonia",
+      "passed": false,
+      "familiar": 0.28,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "armoured"
+      },
+      "why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "not_recognised": true,
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Scelidosaurus",
+      "passed": false,
+      "familiar": 0.25,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "armoured"
+      },
+      "why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "not_recognised": true,
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Polacanthus",
+      "passed": false,
+      "familiar": 0.22,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "armoured"
+      },
+      "why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "not_recognised": true,
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Panoplosaurus",
+      "passed": false,
+      "familiar": 0.2,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "armoured"
+      },
+      "why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "not_recognised": true,
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Protoceratops",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'Horned and frilled dinosaurs', not 'Armoured and plated dinosaurs'"
+      ],
+      "thing": {
+        "name": "Protoceratops",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "dinosaur",
+          "dinosaur_academic": true,
+          "kind_of_dinosaur": "land_grazer",
+          "extinct": true,
+          "dinosaur_group": "horned"
+        },
+        "familiar": 0.55,
+        "reviewed": 11,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-02"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true,
+        "dinosaur_group": "armoured"
+      },
+      "familiar": 0.55,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "dinosaur_group"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Stygimoloch",
+      "passed": false,
+      "why": [
+        "stygimoloch: missing 'extinct', which the dictionary expects on it"
+      ],
+      "thing": {
+        "name": "Stygimoloch",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "dinosaur",
+          "dinosaur_academic": true,
+          "kind_of_dinosaur": "land_grazer",
+          "dinosaur_group": "bone_headed"
+        },
+        "familiar": 0.55,
+        "reviewed": 11,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-02"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "bone_headed"
+      },
+      "familiar": 0.55,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 2,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Dracorex",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.45,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "bone_headed"
+      },
+      "why": [
+        "it is Pachycephalosaurus under another name: both are filed under 'Pachycephalosaurus'"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Stegoceras",
+      "passed": false,
+      "familiar": 0.3,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "bone_headed"
+      },
+      "why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "not_recognised": true,
+      "ask": 2,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Prenocephale",
+      "passed": false,
+      "familiar": 0.25,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "bone_headed"
+      },
+      "why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "not_recognised": true,
+      "ask": 2,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Homalocephale",
+      "passed": false,
+      "familiar": 0.2,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "bone_headed"
+      },
+      "why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "not_recognised": true,
+      "ask": 2,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Sphaerotholus",
+      "passed": false,
+      "familiar": 0.15,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "bone_headed"
+      },
+      "why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "not_recognised": true,
+      "ask": 2,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Colepiocephale",
+      "passed": false,
+      "familiar": 0.1,
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "bone_headed"
+      },
+      "why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "not_recognised": true,
+      "ask": 2,
+      "held_as": "held by the rules"
+    }
+  ],
+  "sheets": [
+    "job_2026_11_24_02_1_01"
+  ],
+  "stopped": "",
+  "fields_added": [
+    {
+      "circle": "animal/dinosaur/land_grazer",
+      "label": "Land grazers",
+      "field": "dinosaur_group",
+      "wording": "Which dinosaur family does it belong to?",
+      "values": {
+        "long_necked": "Long-necked plant eaters",
+        "horned": "Horned and frilled dinosaurs",
+        "armoured": "Armoured and plated dinosaurs",
+        "bone_headed": "Bone-headed dinosaurs"
+      },
+      "filled": 10,
+      "off_the_board": [],
+      "source": "the model",
+      "full_values": [
+        "long_necked",
+        "horned",
+        "armoured",
+        "bone_headed"
+      ],
+      "version": 11
+    }
+  ],
+  "fields_held": [],
+  "open_before": [
+    "animal",
+    "animal/bird",
+    "animal/dinosaur",
+    "animal/mammal",
+    "made_by_people",
+    "made_by_people/building",
+    "made_by_people/household",
+    "made_by_people/toy",
+    "made_by_people/vehicle",
+    "nature_not_alive",
+    "plant",
+    "plant/vegetable",
+    "seed"
+  ],
+  "spent_usd": {
+    "deepseek": 0.04708,
+    "drawing": 0.1008,
+    "picture_checks": 0.02169
+  },
+  "opened": []
+}

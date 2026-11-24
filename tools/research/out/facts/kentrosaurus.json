@@ -1,0 +1,61 @@
+{
+  "name": "Kentrosaurus",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Kentrosaurus ( KEN-troh-SOR-əs; lit. 'prickle lizard') is a genus of stegosaurid dinosaur from the Late Jurassic in Lindi Region of Tanzania.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "dinosaur",
+      "quote": "Kentrosaurus ( KEN-troh-SOR-əs; lit. 'prickle lizard') is a genus of stegosaurid dinosaur from the Late Jurassic in Lindi Region of Tanzania.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "dinosaur_academic": {
+      "value": true,
+      "quote": "Kentrosaurus ( KEN-troh-SOR-əs; lit. 'prickle lizard') is a genus of stegosaurid dinosaur from the Late Jurassic in Lindi Region of Tanzania.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_dinosaur": {
+      "value": "land_grazer",
+      "quote": "It had a small, elongated head with a beak used to bite off plant material that would be digested in a large gut.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "dinosaur_group": {
+      "value": "armoured",
+      "quote": "It had a, probably double, row of small plates running down its neck and back.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Kentrosaurus",
+      "title": "Kentrosaurus",
+      "asked_for": "Kentrosaurus",
+      "revision": 1380979988,
+      "fetched_on": "2026-11-24",
+      "sha256": "b1d4a009f8c26eb5da82cb4b630609f63f72b493d1685ebaddbc4c0b6c3cdf23"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Kentrosaurus",
+      "title": "Kentrosaurus",
+      "asked_for": "Kentrosaurus",
+      "revision": 10717700,
+      "fetched_on": "2026-11-24",
+      "sha256": "6b2557601f7f507fbc72715dd769074cfea54d09989b082244470f7778954a5e"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

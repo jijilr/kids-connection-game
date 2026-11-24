@@ -28,15 +28,18 @@
           "audio": "Assets/audio/groups/part_we_eat__leaves__clue1.mp3"
         },
         {
-          "text": "It is the flat, green part that grows up towards the sun.",
-          "audio": null
+          "text": "It grows up high, not down in the soil.",
+          "audio": "Assets/audio/groups/part_we_eat__leaves__clue2.mp3"
         },
         {
-          "text": "We pick these green parts and cook them for dinner.",
-          "audio": null
+          "text": "We pick it and cook it, but we do not wait for a fruit or a seed.",
+          "audio": "Assets/audio/groups/part_we_eat__leaves__clue3.mp3"
         }
       ],
-      "explanation": null
+      "explanation": {
+        "text": "We eat the green leafy part of these plants. That is why they go together. Spinach has lots of iron in it, which helps your body grow strong.",
+        "audio": "Assets/audio/groups/part_we_eat__leaves__explanation.mp3"
+      }
     },
     "where_it_travels=rails": {
       "clues": [
@@ -215,7 +218,7 @@
       ],
       "explanation": {
         "text": "They all have dry scaly skin and hatch from eggs. They are all reptiles. A turtle's hard shell keeps it safe from other animals.",
-        "audio": null
+        "audio": "Assets/audio/groups/kind_of_animal__reptile__explanation.mp3"
       }
     },
     "kind_of_animal=dinosaur": {
@@ -242,18 +245,38 @@
       "clues": [
         {
           "text": "Think about a dinosaur that eats other animals.",
-          "audio": null
+          "audio": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue1.mp3"
         },
         {
-          "text": "Think about a big animal that hunts its food on land.",
-          "audio": null
+          "text": "Think about a big animal that walks on two legs and hunts.",
+          "audio": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue2.mp3"
         },
         {
-          "text": "Think about a hunter with sharp teeth and claws that chases other dinosaurs.",
-          "audio": null
+          "text": "Think about a hunter that chases and catches its food on land.",
+          "audio": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue3.mp3"
         }
       ],
       "explanation": null
+    },
+    "kind_of_dinosaur=land_grazer": {
+      "clues": [
+        {
+          "text": "Think about a dinosaur that eats green plants all day.",
+          "audio": "Assets/audio/groups/kind_of_dinosaur__land_grazer__clue1.mp3"
+        },
+        {
+          "text": "This dinosaur walks on the ground and eats plants, not meat.",
+          "audio": "Assets/audio/groups/kind_of_dinosaur__land_grazer__clue2.mp3"
+        },
+        {
+          "text": "This plant-eater stays on land and never flies or swims.",
+          "audio": "Assets/audio/groups/kind_of_dinosaur__land_grazer__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "All of these dinosaurs stayed on land and ate plants. They did not hunt other animals, fly, or swim. One of these plant-eaters had a long neck to reach leaves high in the trees.",
+        "audio": "Assets/audio/groups/kind_of_dinosaur__land_grazer__explanation.mp3"
+      }
     },
     "kind_of_dinosaur=flyer": {
       "clues": [
@@ -282,15 +305,18 @@
           "audio": "Assets/audio/groups/kind_of_dinosaur__swimmer__clue1.mp3"
         },
         {
-          "text": "These animals move through the water to find their food.",
-          "audio": null
+          "text": "These animals move through the water to get around.",
+          "audio": "Assets/audio/groups/kind_of_dinosaur__swimmer__clue2.mp3"
         },
         {
-          "text": "They swim with flippers or paddles, not with legs for walking.",
-          "audio": null
+          "text": "They swim in the sea, not walk on land or fly in the sky.",
+          "audio": "Assets/audio/groups/kind_of_dinosaur__swimmer__clue3.mp3"
         }
       ],
-      "explanation": null
+      "explanation": {
+        "text": "These animals all lived in the water and swam to move around. One of these sea animals had a smaller sea animal inside its tummy!",
+        "audio": "Assets/audio/groups/kind_of_dinosaur__swimmer__explanation.mp3"
+      }
     },
     "kind_of_plant=flower": {
       "clues": [
@@ -316,15 +342,15 @@
       "clues": [
         {
           "text": "Think of plants with long, thin leaves that grow from the bottom.",
-          "audio": null
+          "audio": "Assets/audio/groups/kind_of_plant__grass_grain__clue1.mp3"
         },
         {
           "text": "These plants have stems you can see joints on, like little rings.",
-          "audio": null
+          "audio": "Assets/audio/groups/kind_of_plant__grass_grain__clue2.mp3"
         },
         {
           "text": "These plants are not trees, not flowers, and not the leafy plants we pick for food.",
-          "audio": null
+          "audio": "Assets/audio/groups/kind_of_plant__grass_grain__clue3.mp3"
         }
       ],
       "explanation": null
@@ -353,20 +379,20 @@
       "clues": [
         {
           "text": "Think about what you see when you look up high above your head.",
-          "audio": null
+          "audio": "Assets/audio/groups/kind_of_nature__sky__clue1.mp3"
         },
         {
           "text": "You can see these far above you, but you cannot touch them with your hands.",
-          "audio": null
+          "audio": "Assets/audio/groups/kind_of_nature__sky__clue2.mp3"
         },
         {
           "text": "They are up high in the open air, and you can spot them on a clear day or a dark night.",
-          "audio": null
+          "audio": "Assets/audio/groups/kind_of_nature__sky__clue3.mp3"
         }
       ],
       "explanation": {
         "text": "These are all up high above us, in the open air over our heads. We look up to see them. The Sun is really a star, and it is the star closest to us.",
-        "audio": null
+        "audio": "Assets/audio/groups/kind_of_nature__sky__explanation.mp3"
       }
     },
     "kind_of_nature=water": {
@@ -513,20 +539,20 @@
       "clues": [
         {
           "text": "Think about places you can go inside or walk on.",
-          "audio": null
+          "audio": "Assets/audio/groups/kind_of_made_thing__building__clue1.mp3"
         },
         {
           "text": "People go to these places to do something or to get something.",
-          "audio": null
+          "audio": "Assets/audio/groups/kind_of_made_thing__building__clue2.mp3"
         },
         {
           "text": "Some are big and some are small, but people made them all.",
-          "audio": null
+          "audio": "Assets/audio/groups/kind_of_made_thing__building__clue3.mp3"
         }
       ],
       "explanation": {
         "text": "People made all of these. We go to them for many things, like praying, learning, shopping or crossing a road. A footbridge is a bridge made just for people to walk on, not for cars.",
-        "audio": null
+        "audio": "Assets/audio/groups/kind_of_made_thing__building__explanation.mp3"
       }
     },
     "part_we_eat=fruit": {
@@ -637,16 +663,16 @@
         },
         {
           "text": "These things do not need a road or a track to move.",
-          "audio": null
+          "audio": "Assets/audio/groups/where_it_travels__air__clue2.mp3"
         },
         {
           "text": "They move through the sky, up where the birds fly.",
-          "audio": null
+          "audio": "Assets/audio/groups/where_it_travels__air__clue3.mp3"
         }
       ],
       "explanation": {
         "text": "These all travel up in the sky, not on the ground or on water. A helicopter can stop and stay still in the air, high above the ground.",
-        "audio": null
+        "audio": "Assets/audio/groups/where_it_travels__air__explanation.mp3"
       }
     },
     "kind_of_house_thing=furniture": {
@@ -892,16 +918,16 @@
     "pet_farm_or_wild_of_bird=wild_land": {
       "clues": [
         {
-          "text": "Think about birds that live out in the open, not in a house.",
-          "audio": null
+          "text": "Think about birds that live free, not in a house or a pen.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3"
         },
         {
           "text": "These birds find their own food and make their own homes outside.",
-          "audio": null
+          "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3"
         },
         {
-          "text": "These birds fly free in the sky, over trees and hills.",
-          "audio": null
+          "text": "You would see these birds flying high or sitting in a tree far from people.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3"
         }
       ],
       "explanation": null
@@ -1049,19 +1075,59 @@
     "how_we_play_with_it=music": {
       "clues": [
         {
-          "text": "Think about things that make sounds you can sing along to.",
+          "text": "Think about things that make a sound you can sing along to.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3"
         },
         {
-          "text": "You hit, blow or press them to make a sound.",
-          "audio": null
+          "text": "You use your hands or your breath to make the sound.",
+          "audio": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3"
         },
         {
-          "text": "The sound they make is music, not noise.",
-          "audio": null
+          "text": "People tap, blow or press these to make a happy tune.",
+          "audio": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3"
         }
       ],
       "explanation": null
+    },
+    "dinosaur_group=long_necked": {
+      "clues": [
+        {
+          "text": "Think about a very long neck reaching up high.",
+          "audio": "Assets/audio/groups/dinosaur_group__long_necked__clue1.mp3"
+        },
+        {
+          "text": "These dinosaurs had long necks and ate plants all day.",
+          "audio": "Assets/audio/groups/dinosaur_group__long_necked__clue2.mp3"
+        },
+        {
+          "text": "They walked on four legs and stretched their necks to eat leaves.",
+          "audio": "Assets/audio/groups/dinosaur_group__long_necked__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These dinosaurs all had very long necks and ate plants. They used their long necks to reach leaves high up. One of these dinosaurs, Brachiosaurus, could reach leaves as high as a tall building.",
+        "audio": "Assets/audio/groups/dinosaur_group__long_necked__explanation.mp3"
+      }
+    },
+    "dinosaur_group=horned": {
+      "clues": [
+        {
+          "text": "Think about a head with something special on top.",
+          "audio": "Assets/audio/groups/dinosaur_group__horned__clue1.mp3"
+        },
+        {
+          "text": "Some of these heads have pointy parts sticking out.",
+          "audio": "Assets/audio/groups/dinosaur_group__horned__clue2.mp3"
+        },
+        {
+          "text": "Their heads also have a big bony shield behind the pointy parts.",
+          "audio": "Assets/audio/groups/dinosaur_group__horned__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These dinosaurs all have horns and a big bony shield on their heads. That is why they go together in one group. Triceratops had three horns on its head, and its name even means three horned face.",
+        "audio": "Assets/audio/groups/dinosaur_group__horned__explanation.mp3"
+      }
     }
   }
 }

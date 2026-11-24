@@ -1,0 +1,134 @@
+{
+  "name": "Styracosaurus",
+  "group": "Animals > Dinosaurs > Land grazers > Horned and frilled dinosaurs",
+  "features": [
+    {
+      "claim": "It was a fairly large dinosaur, about 5 to 5.5 metres long.",
+      "quote": "Styracosaurus was a relatively large dinosaur, reaching lengths of 5–5.5 metres (16–18 ft) and weighing about 1.8–2.7 metric tons (2.0–3.0 short tons).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It stood about 1.8 metres tall.",
+      "quote": "It stood about 1.8 meters (5.9 feet) tall.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had four short legs and a bulky body.",
+      "quote": "Styracosaurus possessed four short legs and a bulky body.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its tail was rather short.",
+      "quote": "Its tail was rather short.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a single horn sticking out of its nose.",
+      "quote": "a single horn protruding from its nose, which may have been up to 60 centimeters (2 feet) long and 15 centimeters (6 inches) wide",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had four to six long spikes sticking out from the frill around its neck.",
+      "quote": "It had four to six long parietal spikes extending from its neck frill",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a smaller horn on each of its cheeks.",
+      "quote": "a smaller jugal horn on each of its cheeks",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its skull had a beak at the front of the mouth.",
+      "quote": "The skull had a beak and shearing cheek teeth arranged in continuous dental batteries, suggesting that the animal sliced up plants.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its body was bulky, like a rhinoceros.",
+      "quote": "The bulky body of Styracosaurus resembled that of a rhinoceros.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had powerful shoulders.",
+      "quote": "It had powerful shoulders which may have been useful in intraspecies combat.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Each toe had a hooflike claw covered in horn.",
+      "quote": "Each toe bore a hooflike ungual which was sheathed in horn.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The skull was massive, with a large nostril and a tall straight nose horn.",
+      "quote": "The skull was massive, with a large nostril, a tall straight nose horn, and a parietal squamosal frill (a neck frill) crowned with at least four large spikes.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [
+    {
+      "claim": "The exact length of the nose horn is uncertain, because its tip was not preserved.",
+      "quote": "The nasal horn was estimated by Lambe at 57 centimeters (22 inches) long in the type specimen, but the tip had not been preserved.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The small horns and knobs on the frill's edge varied from one individual to another.",
+      "quote": "Aside from the large nasal horn and four long frill spikes, the cranial ornamentation was variable.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "How its legs were held has been proposed in different ways.",
+      "quote": "Various limb positions have been proposed for Styracosaurus and ceratopsids in general, including forelegs which were held underneath the body, or, alternatively, held in a sprawling position.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "What the horns and frill were for has been argued about for many years.",
+        "quote": "The function or functions of the horns and frills have been debated for many years.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Styracosaurus",
+      "title": "Styracosaurus",
+      "revision": 1383322592,
+      "revision_time": "2026-11-02T02:50:09Z",
+      "fetched_on": "2026-11-24",
+      "chars": 27406,
+      "sha256": "bdc2b17140e068f00789b54a858b7053a00a2219e0de45fe35110d4dcd6a9ea8"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Styracosaurus",
+      "title": "Styracosaurus",
+      "revision": 10717718,
+      "revision_time": "2026-01-18T00:45:11Z",
+      "fetched_on": "2026-11-24",
+      "chars": 124,
+      "sha256": "24e8e701d00d6d61a96c1a881434bfb390d5811f0cabb92fd5ca3eaf37701f17"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "It had a single horn sticking out of its nose.",
+    "It had four to six long spikes sticking out from the frill around its neck.",
+    "Its tail was rather short."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "single nose horn plus long frill spikes; short tail",
+    "covering": []
+  }
+}

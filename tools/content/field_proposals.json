@@ -4892,10 +4892,96 @@
     ]
   },
   "animal/dinosaur/land_grazer": {
-    "status": "held by the rules on 2026-11-24: no field passed the tests",
-    "field": null,
-    "wording": "",
-    "values": {},
+    "status": "approved by the rules on 2026-11-24, job run 2026-11-24-02",
+    "field": "dinosaur_group",
+    "wording": "Which dinosaur family does it belong to?",
+    "values": {
+      "long_necked": {
+        "label": "Long-necked plant eaters",
+        "have": [
+          "brachiosaurus",
+          "brontosaurus",
+          "diplodocus",
+          "argentinosaurus",
+          "amargasaurus"
+        ],
+        "examples": [
+          "Apatosaurus",
+          "Camarasaurus",
+          "Cetiosaurus",
+          "Mamenchisaurus",
+          "Nigersaurus"
+        ]
+      },
+      "horned": {
+        "label": "Horned and frilled dinosaurs",
+        "have": [
+          "triceratops"
+        ],
+        "examples": [
+          "Torosaurus",
+          "Styracosaurus",
+          "Pentaceratops",
+          "Chasmosaurus",
+          "Pachyrhinosaurus",
+          "Centrosaurus"
+        ]
+      },
+      "armoured": {
+        "label": "Armoured and plated dinosaurs",
+        "have": [
+          "ankylosaurus",
+          "stegosaurus"
+        ],
+        "examples": [
+          "Euoplocephalus",
+          "Kentrosaurus"
+        ]
+      },
+      "bone_headed": {
+        "label": "Bone-headed dinosaurs",
+        "have": [
+          "pachycephalosaurus",
+          "parasaurolophus"
+        ],
+        "examples": [
+          "Stygimoloch",
+          "Dracorex"
+        ]
+      }
+    },
+    "library": null,
+    "source": "the model",
+    "assign": {},
+    "notes": {},
+    "familiar": {
+      "Apatosaurus": 0.9,
+      "Camarasaurus": 0.6,
+      "Cetiosaurus": 0.4,
+      "Mamenchisaurus": 0.5,
+      "Nigersaurus": 0.4,
+      "Torosaurus": 0.6,
+      "Styracosaurus": 0.7,
+      "Pentaceratops": 0.5,
+      "Chasmosaurus": 0.5,
+      "Pachyrhinosaurus": 0.5,
+      "Centrosaurus": 0.5,
+      "Euoplocephalus": 0.4,
+      "Kentrosaurus": 0.45,
+      "Stygimoloch": 0.55,
+      "Dracorex": 0.45
+    },
+    "tests": {
+      "four familiar things in at least four values": {
+        "long_necked": 10,
+        "horned": 7,
+        "armoured": 4,
+        "bone_headed": 4
+      },
+      "one value for each thing": "10 things already in the circle placed alike by two checks; 0 fit more than one group; sharpness 0.89",
+      "one clean solution": "sample boards passed",
+      "not a synonym": "no existing field asks or splits the same"
+    },
     "refused_by_the_rules": [
       {
         "wording": "How does it mostly move?",

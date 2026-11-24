@@ -1,8 +1,8 @@
 {
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-11-24",
-  "dictionary_version": 10,
-  "things": 243,
+  "dictionary_version": 11,
+  "things": 246,
   "rules": {
     "weights": {
       "nearness": 3,
@@ -43,7 +43,7 @@
       "label": "Everything",
       "steps_from_seed": 0,
       "branch": null,
-      "members": 243,
+      "members": 246,
       "open": true,
       "sorted_by": "kind_of_thing",
       "decisions": [],
@@ -53,7 +53,7 @@
       "label": "Animals",
       "steps_from_seed": 1,
       "branch": "animal",
-      "members": 92,
+      "members": 95,
       "open": true,
       "sorted_by": "kind_of_animal",
       "decisions": [],
@@ -589,7 +589,7 @@
       "label": "Dinosaurs",
       "steps_from_seed": 2,
       "branch": "animal",
-      "members": 26,
+      "members": 29,
       "open": true,
       "sorted_by": "kind_of_dinosaur",
       "decisions": [
@@ -640,11 +640,16 @@
       "label": "Land grazers",
       "steps_from_seed": 3,
       "branch": "animal",
-      "members": 10,
+      "members": 13,
       "open": false,
+      "sorted_by": "dinosaur_group",
       "missing": {
-        "field": "no field splits it four ways",
-        "things": 6
+        "field": null,
+        "short": {
+          "armoured": 2,
+          "bone_headed": 2
+        },
+        "things": 4
       },
       "decisions": [
         {
@@ -659,15 +664,28 @@
           "what": "released for another try",
           "why": "the run of 24 Nov failed because the proposer was told to offer only things a small child already knows; that is fixed",
           "status": "released"
+        },
+        {
+          "date": "2026-11-24",
+          "what": "the rules added the field \"Which dinosaur family does it belong to?\" in job run 2026-11-24-02",
+          "why": "it passed the four tests: Long-necked plant eaters, Horned and frilled dinosaurs, Armoured and plated dinosaurs, Bone-headed dinosaurs",
+          "status": "added by the rules"
+        },
+        {
+          "date": "2026-11-24",
+          "what": "job run 2026-11-24-02 could not fill it",
+          "why": "too few familiar things of their own for: Animals > Dinosaurs > Land grazers > Armoured and plated dinosaurs; Animals > Dinosaurs > Land grazers > Bone-headed dinosaurs",
+          "members_then": 10,
+          "status": "held by the rules"
         }
       ],
       "factors": {
         "nearness": 0.33,
         "neglect": 0.2,
         "unlocks": 0.33,
-        "cheapness": 0.29
+        "cheapness": 0.5
       },
-      "score": 2.8,
+      "score": 3.3,
       "move": "widening",
       "status": "held",
       "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"

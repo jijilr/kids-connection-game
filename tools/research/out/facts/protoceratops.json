@@ -1,0 +1,66 @@
+{
+  "name": "Protoceratops",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Protoceratops was a ceratopsian dinosaur from Mongolia.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "dinosaur",
+      "quote": "Protoceratops was a ceratopsian dinosaur from Mongolia.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "dinosaur_academic": {
+      "value": true,
+      "quote": "Protoceratops (; lit. 'first horned face') is a genus of small protoceratopsid dinosaurs that lived in Asia during the Late Cretaceous, around 75 to 71 million years ago.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_dinosaur": {
+      "value": "land_grazer",
+      "quote": "Protoceratops, like many other ceratopsians, were herbivores equipped with prominent jaws and teeth suited for chopping foliage and other plant material.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": true,
+      "quote": "Protoceratops (; lit. 'first horned face') is a genus of small protoceratopsid dinosaurs that lived in Asia during the Late Cretaceous, around 75 to 71 million years ago.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "dinosaur_group": {
+      "value": "horned",
+      "basis": "judged, not sourced",
+      "why": "The sources call Protoceratops a ceratopsian with a neck frill and a horn-like structure on its nose, matching the horned and frilled group."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Protoceratops",
+      "title": "Protoceratops",
+      "asked_for": "Protoceratops",
+      "revision": 1384562875,
+      "fetched_on": "2026-11-24",
+      "sha256": "3b9a457a15681b8b783191a43dd52c6cb3da70c8d28bd7f010527407627bc867"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Protoceratops",
+      "title": "Protoceratops",
+      "asked_for": "Protoceratops",
+      "revision": 8576362,
+      "fetched_on": "2026-11-24",
+      "sha256": "580d2945140ff16a4ee642d740bd2523c85b8a5ba647ea601e10467950b2721a"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

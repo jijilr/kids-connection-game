@@ -1,0 +1,61 @@
+{
+  "name": "Euoplocephalus",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Euoplocephalus ( yoo-OP-loh-SEF-ə-ləs) is a genus of large herbivorous ankylosaurid dinosaurs, living during the Late Cretaceous of Canada.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "dinosaur",
+      "quote": "Euoplocephalus ( yoo-OP-loh-SEF-ə-ləs) is a genus of large herbivorous ankylosaurid dinosaurs, living during the Late Cretaceous of Canada.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "dinosaur_academic": {
+      "value": true,
+      "quote": "Euoplocephalus ( yoo-OP-loh-SEF-ə-ləs) is a genus of large herbivorous ankylosaurid dinosaurs, living during the Late Cretaceous of Canada.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_dinosaur": {
+      "value": "land_grazer",
+      "quote": "Its head had a short drooping snout with a horny beak to bite off plants that were digested in the large gut.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "dinosaur_group": {
+      "value": "armoured",
+      "quote": "Like other ankylosaurids, Euoplocephalus was largely covered by bony armor plates, among them rows of large high-ridged oval scutes.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Euoplocephalus",
+      "title": "Euoplocephalus",
+      "asked_for": "Euoplocephalus",
+      "revision": 1377846331,
+      "fetched_on": "2026-11-24",
+      "sha256": "b38577b72ac0d2b0ea892dc54be8f90f37c1640ccaee5787910ad5702428a823"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Euoplocephalus",
+      "title": "Euoplocephalus",
+      "asked_for": "Euoplocephalus",
+      "revision": 10128249,
+      "fetched_on": "2026-11-24",
+      "sha256": "b58c186e3bb222d18fd4163f92c9b85866ef30a7562da2c24eaaf498bef0e980"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

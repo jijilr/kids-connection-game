@@ -1,6 +1,6 @@
 {
   "about": "The master record of every thing: what is known about it, where that came from, its picture and its voice clip, and (worked out, never set by hand) its circles and boards. Read and written only through tools/catalogue/catalogue.py. Assets/data/things.json is the game's copy of it, and tools/content/review_queue.json is its list of what is held.",
-  "dictionary_version": 10,
+  "dictionary_version": 11,
   "statuses": {
     "in the game": "The game shows it. It is in the game's copy.",
     "waiting for the owner": "A check had a doubt about it. The owner decides.",
@@ -20,7 +20,7 @@
         "tree_academic": true
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -116,7 +116,7 @@
         "tree_academic": false
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "notes": {
         "tree_academic": "A banana plant has no woody trunk. Its stem is made of tightly rolled leaves, so scientists call it a giant herb."
@@ -212,7 +212,7 @@
         "tree_academic": "depends"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "notes": {
         "tree_academic": "A palm has a tall woody trunk but does not grow wood in rings as other trees do, so botanists differ on whether to call it a true tree."
@@ -311,7 +311,7 @@
         "kind_of_plant": "flower"
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -405,7 +405,7 @@
         "kind_of_plant": "flower"
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -499,7 +499,7 @@
         "kind_of_plant": "flower"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -584,7 +584,7 @@
         "kind_of_plant": "flower"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -647,7 +647,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 0.75,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -740,7 +740,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -835,7 +835,7 @@
         "tree_academic": true
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -933,7 +933,7 @@
         "kind_of_nature": "sky"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1020,7 +1020,7 @@
         "kind_of_nature": "sky"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1110,7 +1110,7 @@
         ]
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1192,7 +1192,7 @@
         "what_happens_when_wet": "stays_hard"
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1278,7 +1278,7 @@
         "kind_of_nature": "sky"
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1367,7 +1367,7 @@
         "what_happens_when_wet": "washes_away"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1453,7 +1453,7 @@
         "shape_of_the_land": "high"
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1543,7 +1543,7 @@
         "kind_of_nature": "sky"
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1628,7 +1628,7 @@
         "where_it_travels": "road"
       },
       "familiar": 0.98,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1722,7 +1722,7 @@
         "kind_of_house_thing": "furniture"
       },
       "familiar": 0.97,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1820,7 +1820,7 @@
         "what_people_do_there": "live"
       },
       "familiar": 0.97,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -1914,7 +1914,7 @@
         "how_we_play_with_it": "throw"
       },
       "familiar": 0.96,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2003,7 +2003,7 @@
         "where_it_travels": "road"
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2101,7 +2101,7 @@
         "kind_of_house_thing": "eating"
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2190,7 +2190,7 @@
         "kind_of_house_thing": "eating"
       },
       "familiar": 0.94,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2284,7 +2284,7 @@
         "where_it_travels": "road"
       },
       "familiar": 0.94,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2378,7 +2378,7 @@
         "how_we_play_with_it": "pretend"
       },
       "familiar": 0.93,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2475,7 +2475,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2561,7 +2561,7 @@
         "where_it_travels": "rails"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2655,7 +2655,7 @@
         "how_we_play_with_it": "pretend"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2754,7 +2754,7 @@
         "pet_farm_or_wild": "pet"
       },
       "familiar": 0.99,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2766,7 +2766,7 @@
         "style": "v1",
         "approved": "by the owner",
         "approved_on": "2026-10-06",
-        "other_tries": 0
+        "other_tries": 1
       },
       "voice": {
         "say": "Dog",
@@ -2858,7 +2858,7 @@
         "pet_farm_or_wild": "pet"
       },
       "familiar": 0.98,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2962,7 +2962,7 @@
         "pet_farm_or_wild": "farm"
       },
       "familiar": 0.98,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -2974,7 +2974,7 @@
         "style": "v1",
         "approved": "by the owner",
         "approved_on": "2026-10-06",
-        "other_tries": 0
+        "other_tries": 1
       },
       "voice": {
         "say": "Cow",
@@ -3066,7 +3066,7 @@
         "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.97,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3078,7 +3078,7 @@
         "style": "v1",
         "approved": "by the owner",
         "approved_on": "2026-10-06",
-        "other_tries": 0
+        "other_tries": 1
       },
       "voice": {
         "say": "Elephant",
@@ -3170,7 +3170,7 @@
         "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.96,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3274,7 +3274,7 @@
         "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.96,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3378,7 +3378,7 @@
         "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3481,7 +3481,7 @@
         "pet_farm_or_wild": "farm"
       },
       "familiar": 0.94,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3493,7 +3493,7 @@
         "style": "v1",
         "approved": "by the owner",
         "approved_on": "2026-10-06",
-        "other_tries": 0
+        "other_tries": 1
       },
       "voice": {
         "say": "Horse",
@@ -3584,7 +3584,7 @@
         "pet_farm_or_wild": "farm"
       },
       "familiar": 0.93,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3679,7 +3679,7 @@
         "pet_farm_or_wild": "pet"
       },
       "familiar": 0.92,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3783,7 +3783,7 @@
         "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3887,7 +3887,7 @@
         "pet_farm_or_wild": "wild_land"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -3991,7 +3991,7 @@
         "pet_farm_or_wild_of_bird": "wild_land"
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4003,7 +4003,7 @@
         "style": "v1",
         "approved": "by the owner",
         "approved_on": "2026-10-06",
-        "other_tries": 0
+        "other_tries": 1
       },
       "voice": {
         "say": "Crow",
@@ -4098,7 +4098,7 @@
         ]
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "notes": {
@@ -4198,7 +4198,7 @@
         "pet_farm_or_wild_of_bird": "pet"
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4210,7 +4210,7 @@
         "style": "v1",
         "approved": "by the owner",
         "approved_on": "2026-10-06",
-        "other_tries": 0
+        "other_tries": 1
       },
       "voice": {
         "say": "Parrot",
@@ -4302,7 +4302,7 @@
         "pet_farm_or_wild_of_bird": "farm"
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4397,7 +4397,7 @@
         "pet_farm_or_wild_of_bird": "farm"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4501,7 +4501,7 @@
         "pet_farm_or_wild_of_bird": "farm"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4513,7 +4513,7 @@
         "style": "v1",
         "approved": "by the owner",
         "approved_on": "2026-10-06",
-        "other_tries": 0
+        "other_tries": 1
       },
       "voice": {
         "say": "Peacock",
@@ -4605,7 +4605,7 @@
         "pet_farm_or_wild_of_bird": "wild_land"
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4700,7 +4700,7 @@
         "pet_farm_or_wild_of_bird": "wild_land"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4804,7 +4804,7 @@
         "pet_farm_or_wild_of_bird": "wild_land"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -4816,7 +4816,7 @@
         "style": "v1",
         "approved": "by the owner",
         "approved_on": "2026-10-06",
-        "other_tries": 0
+        "other_tries": 1
       },
       "voice": {
         "say": "Owl",
@@ -4908,7 +4908,7 @@
         "pet_farm_or_wild_of_bird": "wild_water"
       },
       "familiar": 0.75,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5011,7 +5011,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5105,7 +5105,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5190,7 +5190,7 @@
         "extinct": false
       },
       "familiar": 0.75,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5275,7 +5275,7 @@
         "extinct": false
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5369,7 +5369,7 @@
         "extinct": false
       },
       "familiar": 0.65,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5463,7 +5463,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5475,7 +5475,7 @@
         "style": "v1",
         "approved": "by the owner",
         "approved_on": "2026-10-06",
-        "other_tries": 0
+        "other_tries": 1
       },
       "voice": {
         "say": "Butterfly",
@@ -5556,7 +5556,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5568,7 +5568,7 @@
         "style": "v1",
         "approved": "by the owner",
         "approved_on": "2026-10-06",
-        "other_tries": 0
+        "other_tries": 1
       },
       "voice": {
         "say": "Ant",
@@ -5650,7 +5650,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5744,7 +5744,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5756,7 +5756,7 @@
         "style": "v1",
         "approved": "by the owner",
         "approved_on": "2026-10-06",
-        "other_tries": 0
+        "other_tries": 1
       },
       "voice": {
         "say": "Mosquito",
@@ -5838,7 +5838,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -5850,7 +5850,7 @@
         "style": "v1",
         "approved": "by the owner",
         "approved_on": "2026-10-06",
-        "other_tries": 0
+        "other_tries": 1
       },
       "voice": {
         "say": "Honeybee",
@@ -5931,7 +5931,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6025,7 +6025,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6118,7 +6118,7 @@
         "extinct": false
       },
       "familiar": 0.75,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6212,7 +6212,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6297,7 +6297,7 @@
         "extinct": false
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6391,7 +6391,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6484,7 +6484,7 @@
         "extinct": false
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6578,7 +6578,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6672,7 +6672,7 @@
         "extinct": false
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6766,7 +6766,7 @@
         "extinct": false
       },
       "familiar": 0.6,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6860,7 +6860,7 @@
         "extinct": false
       },
       "familiar": 0.6,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -6954,7 +6954,7 @@
         "extinct": false
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -7048,7 +7048,7 @@
         "extinct": false
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -7137,7 +7137,7 @@
         "extinct": false
       },
       "familiar": 0.6,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -7232,7 +7232,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "shown_as": "T. rex",
       "picture": {
@@ -7331,7 +7331,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c2",
@@ -7430,7 +7430,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c5",
@@ -7528,7 +7528,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c3",
@@ -7626,7 +7626,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "notes": {
         "kind_of_dinosaur": "Scientists debate how much time Spinosaurus spent in water."
@@ -7725,10 +7725,11 @@
         "kind_of_animal": "dinosaur",
         "dinosaur_academic": true,
         "kind_of_dinosaur": "land_grazer",
-        "extinct": true
+        "extinct": true,
+        "dinosaur_group": "long_necked"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c1",
@@ -7823,10 +7824,11 @@
         "kind_of_animal": "dinosaur",
         "dinosaur_academic": true,
         "kind_of_dinosaur": "land_grazer",
-        "extinct": true
+        "extinct": true,
+        "dinosaur_group": "long_necked"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c2",
@@ -7911,10 +7913,11 @@
         "kind_of_animal": "dinosaur",
         "dinosaur_academic": true,
         "kind_of_dinosaur": "land_grazer",
-        "extinct": true
+        "extinct": true,
+        "dinosaur_group": "long_necked"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c3",
@@ -8009,10 +8012,11 @@
         "kind_of_animal": "dinosaur",
         "dinosaur_academic": true,
         "kind_of_dinosaur": "land_grazer",
-        "extinct": true
+        "extinct": true,
+        "dinosaur_group": "long_necked"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c4",
@@ -8108,10 +8112,11 @@
         "kind_of_animal": "dinosaur",
         "dinosaur_academic": true,
         "kind_of_dinosaur": "land_grazer",
-        "extinct": true
+        "extinct": true,
+        "dinosaur_group": "long_necked"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c5",
@@ -8207,10 +8212,11 @@
         "kind_of_animal": "dinosaur",
         "dinosaur_academic": true,
         "kind_of_dinosaur": "land_grazer",
-        "extinct": true
+        "extinct": true,
+        "dinosaur_group": "horned"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c6",
@@ -8305,10 +8311,11 @@
         "kind_of_animal": "dinosaur",
         "dinosaur_academic": true,
         "kind_of_dinosaur": "land_grazer",
-        "extinct": true
+        "extinct": true,
+        "dinosaur_group": "armoured"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c8",
@@ -8404,10 +8411,11 @@
         "kind_of_animal": "dinosaur",
         "dinosaur_academic": true,
         "kind_of_dinosaur": "land_grazer",
-        "extinct": true
+        "extinct": true,
+        "dinosaur_group": "armoured"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c7",
@@ -8502,10 +8510,11 @@
         "kind_of_animal": "dinosaur",
         "dinosaur_academic": true,
         "kind_of_dinosaur": "land_grazer",
-        "extinct": true
+        "extinct": true,
+        "dinosaur_group": "bone_headed"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c6",
@@ -8601,10 +8610,11 @@
         "kind_of_animal": "dinosaur",
         "dinosaur_academic": true,
         "kind_of_dinosaur": "land_grazer",
-        "extinct": true
+        "extinct": true,
+        "dinosaur_group": "bone_headed"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_1_01_c9",
@@ -8703,7 +8713,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c1",
@@ -8782,7 +8792,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c3",
@@ -8871,7 +8881,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c5",
@@ -8959,7 +8969,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c2",
@@ -9047,7 +9057,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c4",
@@ -9136,7 +9146,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_3_01_c5",
@@ -9224,7 +9234,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "shown_as": "Pterodactyl",
       "picture": {
@@ -9313,7 +9323,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c8",
@@ -9401,7 +9411,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_2_01_c9",
@@ -9488,7 +9498,7 @@
         "extinct": false
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "animals_6_01_c1",
@@ -9581,7 +9591,7 @@
         "extinct": false
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "animals_5_01_c9",
@@ -9665,7 +9675,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "notes": {
         "general": "Its picture is drawn like a giant boa or anaconda, its closest living relatives; what it really looked like is not known."
@@ -9749,7 +9759,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "notes": {
         "general": "Its length is estimated from fossil backbones, so it is uncertain. Its picture is drawn like a very large python, the living snake scientists model it on; what it really looked like is not known."
@@ -9823,7 +9833,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "plants_2_01_c5",
@@ -9916,7 +9926,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "size_test_plants_9_01_c7",
@@ -10009,7 +10019,7 @@
         "kind_of_plant": "grass_grain"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "plants_2_01_c6",
@@ -10102,7 +10112,7 @@
         "part_we_eat": "fruit"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "size_test_plants_9_01_c8",
@@ -10201,7 +10211,7 @@
         "part_we_eat": "fruit"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "size_test_plants_9_01_c9",
@@ -10295,7 +10305,7 @@
         "part_we_eat": "fruit"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "plants_2_01_c7",
@@ -10385,7 +10395,7 @@
         "part_we_eat": "fruit"
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "plants_2_01_c8",
@@ -10483,7 +10493,7 @@
         "how_we_play_with_it": "build"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10567,7 +10577,7 @@
         "how_we_play_with_it": "wheel"
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10656,7 +10666,7 @@
         "kind_of_house_thing": "furniture"
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10754,7 +10764,7 @@
         "kind_of_house_thing": "furniture"
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10852,7 +10862,7 @@
         "kind_of_house_thing": "eating"
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -10941,7 +10951,7 @@
         "kind_of_house_thing": "eating"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11038,7 +11048,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11126,7 +11136,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11214,7 +11224,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11299,7 +11309,7 @@
         "kind_of_made_thing": "tool"
       },
       "familiar": 0.75,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11384,7 +11394,7 @@
         "kind_of_nature": "water"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11472,7 +11482,7 @@
         "kind_of_nature": "water"
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11560,7 +11570,7 @@
         "kind_of_nature": "water"
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11649,7 +11659,7 @@
         "shape_of_the_land": "high"
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11740,7 +11750,7 @@
         "shape_of_the_land": "by_water"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11831,7 +11841,7 @@
         "what_happens_when_wet": "gets_mushy"
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -11917,7 +11927,7 @@
         "what_happens_when_wet": "gets_sticky"
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -12008,7 +12018,7 @@
         "what_happens_when_wet": "gets_mushy"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "made_and_nature",
       "picture": {
@@ -12098,7 +12108,7 @@
         "kind_of_nature": "water"
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -12187,7 +12197,7 @@
         "how_we_play_with_it": "fly"
       },
       "familiar": 0.97,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "toys_top_up",
       "picture": {
@@ -12285,7 +12295,7 @@
         "how_we_play_with_it": "fly"
       },
       "familiar": 0.96,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked",
       "drafted_in": "toys_top_up",
       "picture": {
@@ -12383,7 +12393,7 @@
         "shape_of_the_land": "flat"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked, approved by the owner",
       "drafted_in": "made_and_nature",
       "notes": {
@@ -12477,7 +12487,7 @@
         "shape_of_the_land": "high"
       },
       "familiar": 0.75,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked, approved by the owner",
       "drafted_in": "land_top_up",
       "notes": {
@@ -12571,7 +12581,7 @@
         "shape_of_the_land": "hollow"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "deepseek:drafted+checked, approved by the owner",
       "drafted_in": "land_top_up",
       "notes": {
@@ -12772,7 +12782,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c6",
@@ -12859,7 +12869,7 @@
         "extinct": true
       },
       "familiar": 1.0,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "owner:list",
       "picture": {
         "tile": "dinosaurs_4_01_c7",
@@ -13184,7 +13194,7 @@
         "what_people_do_there": "pray"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-03",
       "worked_out": {
@@ -13282,7 +13292,7 @@
         "what_people_do_there": "learn"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-02",
       "worked_out": {
@@ -13380,7 +13390,7 @@
         "what_people_do_there": "buy"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-03",
       "notes": {
@@ -13470,7 +13480,7 @@
         "what_people_do_there": "heal"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-01",
       "worked_out": {
@@ -13568,7 +13578,7 @@
         "what_people_do_there": "cross"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-03",
       "notes": {
@@ -13665,7 +13675,7 @@
         "what_people_do_there": "cross"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-03",
       "notes": {
@@ -13793,7 +13803,7 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -13900,7 +13910,7 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14006,7 +14016,7 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14112,7 +14122,7 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14218,7 +14228,7 @@
         "part_we_eat": "under_the_ground"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14407,7 +14417,7 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14513,7 +14523,7 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14754,7 +14764,7 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14861,7 +14871,7 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -14965,7 +14975,7 @@
         "part_we_eat": "leaves"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -15072,7 +15082,7 @@
         "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-07",
       "sources": {
@@ -15179,7 +15189,7 @@
         "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -15469,7 +15479,7 @@
         "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-06",
       "worked_out": {
@@ -15950,7 +15960,7 @@
         "kind_of_plant_academic": "grass_grain"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-09",
       "notes": {
@@ -16054,7 +16064,7 @@
         "where_it_travels": "road"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16145,7 +16155,7 @@
         "where_it_travels": "road"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16245,7 +16255,7 @@
         "where_it_travels": "rails"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16337,7 +16347,7 @@
         "where_it_travels": "rails"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16429,7 +16439,7 @@
         "where_it_travels": "rails"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16530,7 +16540,7 @@
         "where_it_travels": "rails"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16629,7 +16639,7 @@
         "where_it_travels": "water"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16730,7 +16740,7 @@
         "where_it_travels": "water"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16831,7 +16841,7 @@
         "where_it_travels": "water"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -16932,7 +16942,7 @@
         "where_it_travels": "water"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17033,7 +17043,7 @@
         "where_it_travels": "water"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17134,7 +17144,7 @@
         "where_it_travels": "air"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17234,7 +17244,7 @@
         "where_it_travels": "air"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17335,7 +17345,7 @@
         "where_it_travels": "air"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17436,7 +17446,7 @@
         "where_it_travels": "air"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17537,7 +17547,7 @@
         "kind_of_house_thing": "furniture"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17637,7 +17647,7 @@
         "kind_of_house_thing": "furniture"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17738,7 +17748,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17837,7 +17847,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -17938,7 +17948,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18039,7 +18049,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18140,7 +18150,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18231,7 +18241,7 @@
         "kind_of_house_thing": "electric"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18332,7 +18342,7 @@
         "kind_of_house_thing": "electric"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18432,7 +18442,7 @@
         "kind_of_house_thing": "electric"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18532,7 +18542,7 @@
         "kind_of_house_thing": "electric"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18632,7 +18642,7 @@
         "kind_of_house_thing": "electric"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-06-10",
       "worked_out": {
@@ -18731,7 +18741,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-10",
       "notes": {
@@ -18828,7 +18838,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-10",
       "notes": {
@@ -18925,7 +18935,7 @@
         "kind_of_house_thing": "cleaning"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked, approved by the owner",
       "drafted_in": "2026-10-06-10",
       "notes": {
@@ -19211,7 +19221,7 @@
         "what_happens_when_wet": "stays_hard"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-02",
       "worked_out": {
@@ -19304,7 +19314,7 @@
         "what_happens_when_wet": "stays_hard"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-02",
       "worked_out": {
@@ -19397,7 +19407,7 @@
         "what_happens_when_wet": "stays_hard"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-02",
       "worked_out": {
@@ -19488,7 +19498,7 @@
         "what_happens_when_wet": "stays_hard"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-02",
       "worked_out": {
@@ -20422,7 +20432,7 @@
         "shape_of_the_land": "flat"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -20594,7 +20604,7 @@
         "shape_of_the_land": "flat"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -20686,7 +20696,7 @@
         "shape_of_the_land": "hollow"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -20780,7 +20790,7 @@
         "shape_of_the_land": "hollow"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -20874,7 +20884,7 @@
         "shape_of_the_land": "hollow"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -20968,7 +20978,7 @@
         "shape_of_the_land": "hollow"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21062,7 +21072,7 @@
         "shape_of_the_land": "high"
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21156,7 +21166,7 @@
         "pet_farm_or_wild": "pet"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21254,7 +21264,7 @@
         "pet_farm_or_wild": "pet"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21361,7 +21371,7 @@
         "pet_farm_or_wild": "farm"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21468,7 +21478,7 @@
         "pet_farm_or_wild": "farm"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21574,7 +21584,7 @@
         "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21681,7 +21691,7 @@
         "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21788,7 +21798,7 @@
         "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -21895,7 +21905,7 @@
         "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22002,7 +22012,7 @@
         "pet_farm_or_wild": "wild_water"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22109,7 +22119,7 @@
         "pet_farm_or_wild_of_bird": "pet"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22207,7 +22217,7 @@
         "pet_farm_or_wild_of_bird": "pet"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22402,7 +22412,7 @@
         "pet_farm_or_wild_of_bird": "wild_water"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22509,7 +22519,7 @@
         "pet_farm_or_wild_of_bird": "wild_water"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22616,7 +22626,7 @@
         "pet_farm_or_wild_of_bird": "wild_water"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22718,7 +22728,7 @@
         "what_people_do_there": "cross"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22816,7 +22826,7 @@
         "what_people_do_there": "cross"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -22910,7 +22920,7 @@
         "what_people_do_there": "pray"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -23008,7 +23018,7 @@
         "what_people_do_there": "pray"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -23109,7 +23119,7 @@
         "what_people_do_there": "pray"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -23282,7 +23292,7 @@
         "what_people_do_there": "buy"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -23381,7 +23391,7 @@
         "what_people_do_there": "buy"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -23482,7 +23492,7 @@
         "what_people_do_there": "buy"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -23582,7 +23592,7 @@
         "what_people_do_there": "buy"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -23683,7 +23693,7 @@
         "what_people_do_there": "heal"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-03",
       "worked_out": {
@@ -24229,7 +24239,7 @@
         "pet_farm_or_wild_of_bird": "farm"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-05",
       "notes": {
@@ -25026,7 +25036,7 @@
         "pet_farm_or_wild_of_bird": "pet"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "notes": {
@@ -25132,7 +25142,7 @@
         "what_people_do_there": "travel"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -25231,7 +25241,7 @@
         "what_people_do_there": "travel"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -25332,7 +25342,7 @@
         "what_people_do_there": "travel"
       },
       "familiar": 0.7,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -25433,7 +25443,7 @@
         "what_people_do_there": "travel"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -25599,7 +25609,7 @@
         "how_we_play_with_it": "pretend"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -25678,7 +25688,7 @@
         "how_we_play_with_it": "pretend"
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -25757,7 +25767,7 @@
         "how_we_play_with_it": "pretend"
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -25836,9 +25846,13 @@
         "how_we_play_with_it": "music"
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
+      "shown_as": "Drum",
+      "notes": {
+        "general": "Shown and spoken as 'Drum', by the owner's word: the group must not be spotted by a word its labels share."
+      },
       "worked_out": {
         "circles": [
           "seed",
@@ -25904,10 +25918,6 @@
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07",
         "cached": "tools/voice/clips/toy_drum.mp3",
         "clip_sha256": "8213717de21ed80d722acc2b8239966d7c67dd38d84345bbbe8d434bf0f6c51d"
-      },
-      "shown_as": "Drum",
-      "notes": {
-        "general": "Shown and spoken as 'Drum', by the owner's word: the group must not be spotted by a word its labels share."
       }
     },
     "toy_flute": {
@@ -25919,9 +25929,13 @@
         "how_we_play_with_it": "music"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
+      "shown_as": "Flute",
+      "notes": {
+        "general": "Shown and spoken as 'Flute', by the owner's word: the group must not be spotted by a word its labels share."
+      },
       "worked_out": {
         "circles": [
           "seed",
@@ -25987,10 +26001,6 @@
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07",
         "cached": "tools/voice/clips/toy_flute.mp3",
         "clip_sha256": "f115ac17780ae5310c607d980a01db4d85834a43fa4982b65835670fe0dd7511"
-      },
-      "shown_as": "Flute",
-      "notes": {
-        "general": "Shown and spoken as 'Flute', by the owner's word: the group must not be spotted by a word its labels share."
       }
     },
     "toy_piano": {
@@ -26002,9 +26012,13 @@
         "how_we_play_with_it": "music"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
+      "shown_as": "Piano",
+      "notes": {
+        "general": "Shown and spoken as 'Piano', by the owner's word: the group must not be spotted by a word its labels share."
+      },
       "worked_out": {
         "circles": [
           "seed",
@@ -26081,10 +26095,6 @@
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07",
         "cached": "tools/voice/clips/toy_piano.mp3",
         "clip_sha256": "57dffcba697165355e3b9fd3e400f1445602b1db99b156d05b149da4d47eaba2"
-      },
-      "shown_as": "Piano",
-      "notes": {
-        "general": "Shown and spoken as 'Piano', by the owner's word: the group must not be spotted by a word its labels share."
       }
     },
     "toy_xylophone": {
@@ -26096,9 +26106,13 @@
         "how_we_play_with_it": "music"
       },
       "familiar": 0.85,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
+      "shown_as": "Xylophone",
+      "notes": {
+        "general": "Shown and spoken as 'Xylophone', by the owner's word: the group must not be spotted by a word its labels share."
+      },
       "worked_out": {
         "circles": [
           "seed",
@@ -26164,10 +26178,6 @@
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07",
         "cached": "tools/voice/clips/toy_xylophone.mp3",
         "clip_sha256": "2180d7499d6f0a09354a36f3a3bcb224244d432a84b52a4acd58a98611485ced"
-      },
-      "shown_as": "Xylophone",
-      "notes": {
-        "general": "Shown and spoken as 'Xylophone', by the owner's word: the group must not be spotted by a word its labels share."
       }
     },
     "toy_guitar": {
@@ -26179,9 +26189,13 @@
         "how_we_play_with_it": "music"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
+      "shown_as": "Guitar",
+      "notes": {
+        "general": "Shown and spoken as 'Guitar', by the owner's word: the group must not be spotted by a word its labels share."
+      },
       "worked_out": {
         "circles": [
           "seed",
@@ -26247,10 +26261,6 @@
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07",
         "cached": "tools/voice/clips/toy_guitar.mp3",
         "clip_sha256": "0d8220a2b1ddfa37999ea7a74712ccacb497cd76788b2f189ac9a10e9eefa6ba"
-      },
-      "shown_as": "Guitar",
-      "notes": {
-        "general": "Shown and spoken as 'Guitar', by the owner's word: the group must not be spotted by a word its labels share."
       }
     },
     "paper_plane": {
@@ -26262,7 +26272,7 @@
         "how_we_play_with_it": "fly"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "notes": {
@@ -26363,7 +26373,7 @@
         "how_we_play_with_it": "fly"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -26442,7 +26452,7 @@
         "how_we_play_with_it": "build"
       },
       "familiar": 0.9,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -26521,7 +26531,7 @@
         "how_we_play_with_it": "build"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -26600,7 +26610,7 @@
         "how_we_play_with_it": "build"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-06",
       "worked_out": {
@@ -26850,7 +26860,7 @@
         "how_we_play_with_it": "throw"
       },
       "familiar": 0.95,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-07",
       "worked_out": {
@@ -27019,7 +27029,7 @@
         "how_we_play_with_it": "throw"
       },
       "familiar": 0.8,
-      "reviewed": 10,
+      "reviewed": 11,
       "source": "job:grounded+checked",
       "drafted_in": "2026-10-07-07",
       "worked_out": {
@@ -27545,12 +27555,764 @@
         },
         "no_sentence_for": []
       }
+    },
+    "torosaurus": {
+      "name": "Torosaurus",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true,
+        "dinosaur_group": "horned"
+      },
+      "familiar": 0.6,
+      "reviewed": 11,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-02",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_grazer",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_02_1_01_c1",
+        "game_file": "Assets/pictures/torosaurus.webp",
+        "game_sha256": "4d87207e79886528372b05fd52bef7fbea922013fbf7b8191507b3b0d2ef0c67",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_02_1_01_c1.png",
+        "master_sha256": "11240e3975fae660d71b61ede6d521660f03406adc0f50fc56375a71ac3ad5a2",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 1
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Torosaurus",
+            "title": "Torosaurus",
+            "asked_for": "Torosaurus",
+            "revision": 1375992171,
+            "fetched_on": "2026-11-24",
+            "sha256": "5a029292521960c66f5ece7093a41a37cd6db6d914aef908b5d73556a4af0139"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Torosaurus",
+            "title": "Torosaurus",
+            "asked_for": "Torosaurus",
+            "revision": 10717721,
+            "fetched_on": "2026-11-24",
+            "sha256": "151460862d67f3355aa3a615a45be774bbf3ac7bcd09714928cc19a14e242241"
+          }
+        ],
+        "facts": "tools/research/out/facts/torosaurus.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Torosaurus (meaning \"perforated lizard\", in reference to the large openings in its frill) is a genus of herbivorous chasmosaurine ceratopsian dinosaur which lived during the Maastrichtian Stage of the Cretaceous Period between 68 and 66 million years ago, although it is possible that the species range might extend back as far back as 69 million years ago."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Torosaurus (meaning \"pierced lizard\") was a large, quadrupedal, plant-eating Ceratopsian dinosaur with three horns on its large head."
+          },
+          "dinosaur_academic": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Torosaurus (meaning \"perforated lizard\", in reference to the large openings in its frill) is a genus of herbivorous chasmosaurine ceratopsian dinosaur which lived during the Maastrichtian Stage of the Cretaceous Period between 68 and 66 million years ago, although it is possible that the species range might extend back as far back as 69 million years ago."
+          },
+          "kind_of_dinosaur": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Torosaurus (meaning \"pierced lizard\") was a large, quadrupedal, plant-eating Ceratopsian dinosaur with three horns on its large head."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Torosaurus lived during the Upper Cretaceous, about 70–65 million years ago, in what is now western North America."
+          },
+          "dinosaur_group": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Torosaurus (meaning \"pierced lizard\") was a large, quadrupedal, plant-eating Ceratopsian dinosaur with three horns on its large head."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Torosaurus",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_torosaurus.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/torosaurus.mp3",
+        "clip_sha256": "9d951605e94ca3d63de2009d8780c2ddf2166a78841607270670ba2606d4ce5f"
+      }
+    },
+    "styracosaurus": {
+      "name": "Styracosaurus",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true,
+        "dinosaur_group": "horned"
+      },
+      "familiar": 0.7,
+      "reviewed": 11,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-02",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_grazer",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_02_1_01_c2",
+        "game_file": "Assets/pictures/styracosaurus.webp",
+        "game_sha256": "21e8f64535cdd7fb2ad688d25d3989d19f7198ea5fc552fb68dc4f1c43da3ce1",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_02_1_01_c2.png",
+        "master_sha256": "21520eb3260e2e4ce3af6f54c8592a2132196acacd03adb3a02564db5f9320a1",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Styracosaurus",
+            "title": "Styracosaurus",
+            "asked_for": "Styracosaurus",
+            "revision": 1383322592,
+            "fetched_on": "2026-11-24",
+            "sha256": "b737adb784d50eb38fb8b7039ee910650180267dba507e9de4f16c821d72c630"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Styracosaurus",
+            "title": "Styracosaurus",
+            "asked_for": "Styracosaurus",
+            "revision": 10717718,
+            "fetched_on": "2026-11-24",
+            "sha256": "24e8e701d00d6d61a96c1a881434bfb390d5811f0cabb92fd5ca3eaf37701f17"
+          }
+        ],
+        "facts": "tools/research/out/facts/styracosaurus.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Styracosaurus was a genus of herbivorous ceratopsian dinosaur from the Upper Cretaceous, about 76.5 to 75 million years ago."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Styracosaurus was a genus of herbivorous ceratopsian dinosaur from the Upper Cretaceous, about 76.5 to 75 million years ago."
+          },
+          "dinosaur_academic": {
+            "basis": "sourced",
+            "source": "wikipedia_simple",
+            "quote": "Styracosaurus was a genus of herbivorous ceratopsian dinosaur from the Upper Cretaceous, about 76.5 to 75 million years ago."
+          },
+          "kind_of_dinosaur": {
+            "basis": "judged, not sourced",
+            "why": "The sources say Styracosaurus was a herbivorous dinosaur with four short legs and a bulky body, so it walked on land and ate plants."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Styracosaurus ( sti-RAK-ə-SOR-əs; meaning \"spiked lizard\" from the Ancient Greek styrax/στύραξ \"spike at the butt-end of a spear-shaft\" and sauros/σαῦρος \"lizard\") is an extinct genus of herbivorous dinosaur from the Late Cretaceous (Campanian stage) of North America."
+          },
+          "dinosaur_group": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "It had four to six long parietal spikes extending from its neck frill, a smaller jugal horn on each of its cheeks, and a single horn protruding from its nose, which may have been up to 60 centimeters (2 feet) long and 15 centimeters (6 inches) wide."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Styracosaurus",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_styracosaurus.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/styracosaurus.mp3",
+        "clip_sha256": "c4de2013c4eadad3613b5b9bd5edabd7a95f840c7beb6216a447acaf78880c16"
+      }
+    },
+    "pentaceratops": {
+      "name": "Pentaceratops",
+      "status": "in the game",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "extinct": true,
+        "dinosaur_group": "horned"
+      },
+      "familiar": 0.5,
+      "reviewed": 11,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-02",
+      "worked_out": {
+        "circles": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "dinosaur",
+            "open_now": true
+          },
+          {
+            "circle": "animal/dinosaur",
+            "sorted_by": "kind_of_dinosaur",
+            "group": "land_grazer",
+            "open_now": true
+          }
+        ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_02_1_01_c3",
+        "game_file": "Assets/pictures/pentaceratops.webp",
+        "game_sha256": "1f4ff7d9be665431d95cf4566973f8c4f51025fe6da5029821498687f84f8714",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_02_1_01_c3.png",
+        "master_sha256": "1b3d9f487ca04da84828079fc41dcd6f40942725b554ce7338d4cc843d59c9a0",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 0
+      },
+      "sources": {
+        "pages": [
+          {
+            "id": "wikipedia_en",
+            "url": "https://en.wikipedia.org/wiki/Pentaceratops",
+            "title": "Pentaceratops",
+            "asked_for": "Pentaceratops",
+            "revision": 1335313617,
+            "fetched_on": "2026-11-24",
+            "sha256": "f8390440049e4d40c5f4174166bdc06d38e47d340c584f6e2ee72737369ac254"
+          },
+          {
+            "id": "wikipedia_simple",
+            "url": "https://simple.wikipedia.org/wiki/Pentaceratops",
+            "title": "Pentaceratops",
+            "asked_for": "Pentaceratops",
+            "revision": 6064114,
+            "fetched_on": "2026-11-24",
+            "sha256": "83dafb81986ae34ad17b92e109155884c48c7f9f4b4695a8bf4a26486ea33d0f"
+          }
+        ],
+        "facts": "tools/research/out/facts/pentaceratops.json",
+        "evidence": {
+          "kind_of_thing": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Pentaceratops (\"five-horned face\") is a genus of herbivorous ceratopsid dinosaur from the late Cretaceous Period of what is now North America."
+          },
+          "kind_of_animal": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Pentaceratops (\"five-horned face\") is a genus of herbivorous ceratopsid dinosaur from the late Cretaceous Period of what is now North America."
+          },
+          "dinosaur_academic": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Pentaceratops (\"five-horned face\") is a genus of herbivorous ceratopsid dinosaur from the late Cretaceous Period of what is now North America."
+          },
+          "kind_of_dinosaur": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Pentaceratops (\"five-horned face\") is a genus of herbivorous ceratopsid dinosaur from the late Cretaceous Period of what is now North America."
+          },
+          "extinct": {
+            "basis": "sourced",
+            "source": "wikipedia_en",
+            "quote": "Pentaceratops (\"five-horned face\") is a genus of herbivorous ceratopsid dinosaur from the late Cretaceous Period of what is now North America."
+          },
+          "dinosaur_group": {
+            "basis": "judged, not sourced",
+            "why": "The sources call Pentaceratops a ceratopsid with horns and a long frill, which is the horned and frilled dinosaur group."
+          }
+        },
+        "no_sentence_for": []
+      },
+      "voice": {
+        "say": "Pentaceratops",
+        "checked_by_ear": false,
+        "clip": "Assets/audio/names/name_pentaceratops.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/pentaceratops.mp3",
+        "clip_sha256": "88ea44b1b3478c683b4f937800d30f48209b4a1c4d124af34d9d01e87366b941"
+      }
+    },
+    "chasmosaurus": {
+      "name": "Chasmosaurus",
+      "status": "held by the rules",
+      "status_why": [
+        "chasmosaurus: missing 'extinct', which the dictionary expects on it"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "horned"
+      },
+      "familiar": 0.5,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
+    },
+    "pachyrhinosaurus": {
+      "name": "Pachyrhinosaurus",
+      "status": "held by the rules",
+      "status_why": [
+        "pachyrhinosaurus: missing 'extinct', which the dictionary expects on it"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "horned"
+      },
+      "familiar": 0.5,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
+    },
+    "centrosaurus": {
+      "name": "Centrosaurus",
+      "status": "held by the rules",
+      "status_why": [
+        "centrosaurus: missing 'extinct', which the dictionary expects on it"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "horned"
+      },
+      "familiar": 0.5,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
+    },
+    "euoplocephalus": {
+      "name": "Euoplocephalus",
+      "status": "held by the rules",
+      "status_why": [
+        "euoplocephalus: missing 'extinct', which the dictionary expects on it"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "armoured"
+      },
+      "familiar": 0.4,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
+    },
+    "kentrosaurus": {
+      "name": "Kentrosaurus",
+      "status": "held by the rules",
+      "status_why": [
+        "kentrosaurus: missing 'extinct', which the dictionary expects on it"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "armoured"
+      },
+      "familiar": 0.45,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
+    },
+    "nodosaurus": {
+      "name": "Nodosaurus",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "armoured"
+      },
+      "familiar": 0.35,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
+    },
+    "sauropelta": {
+      "name": "Sauropelta",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "armoured"
+      },
+      "familiar": 0.3,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
+    },
+    "edmontonia": {
+      "name": "Edmontonia",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "armoured"
+      },
+      "familiar": 0.28,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
+    },
+    "scelidosaurus": {
+      "name": "Scelidosaurus",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "armoured"
+      },
+      "familiar": 0.25,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
+    },
+    "polacanthus": {
+      "name": "Polacanthus",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "armoured"
+      },
+      "familiar": 0.22,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
+    },
+    "panoplosaurus": {
+      "name": "Panoplosaurus",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "armoured"
+      },
+      "familiar": 0.2,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
+    },
+    "stygimoloch": {
+      "name": "Stygimoloch",
+      "status": "held by the rules",
+      "status_why": [
+        "stygimoloch: missing 'extinct', which the dictionary expects on it"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "dinosaur_academic": true,
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "bone_headed"
+      },
+      "familiar": 0.55,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
+    },
+    "stegoceras": {
+      "name": "Stegoceras",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "bone_headed"
+      },
+      "familiar": 0.3,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
+    },
+    "prenocephale": {
+      "name": "Prenocephale",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "bone_headed"
+      },
+      "familiar": 0.25,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
+    },
+    "homalocephale": {
+      "name": "Homalocephale",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "bone_headed"
+      },
+      "familiar": 0.2,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
+    },
+    "sphaerotholus": {
+      "name": "Sphaerotholus",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "bone_headed"
+      },
+      "familiar": 0.15,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
+    },
+    "colepiocephale": {
+      "name": "Colepiocephale",
+      "status": "held by the rules",
+      "status_why": [
+        "the check doubts it is a well-known thing of this group"
+      ],
+      "held_from": "job:2026-11-24-02",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "dinosaur",
+        "kind_of_dinosaur": "land_grazer",
+        "dinosaur_group": "bone_headed"
+      },
+      "familiar": 0.1,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "animal",
+          "animal/dinosaur",
+          "animal/dinosaur/land_grazer"
+        ]
+      }
     }
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 243,
-      "held by the rules": 62,
+      "in the game": 246,
+      "held by the rules": 79,
       "kept for later": 5,
       "excluded": 3,
       "taken out of the game": 23
@@ -27573,14 +28335,14 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 243,
+        "things": 246,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
           "animal": {
             "label": "Animals",
-            "things": 92,
-            "with_picture": 92
+            "things": 95,
+            "with_picture": 95
           },
           "plant": {
             "label": "Plants",
@@ -27604,7 +28366,7 @@
       },
       "animal": {
         "label": "Animals",
-        "things": 92,
+        "things": 95,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_animal",
         "groups": {
@@ -27641,8 +28403,8 @@
           },
           "dinosaur": {
             "label": "Dinosaurs",
-            "things": 26,
-            "with_picture": 26
+            "things": 29,
+            "with_picture": 29
           }
         },
         "open_by_its_things": true,
@@ -27873,7 +28635,7 @@
       },
       "animal/dinosaur": {
         "label": "Dinosaurs",
-        "things": 26,
+        "things": 29,
         "steps_from_seed": 2,
         "sorted_by": "kind_of_dinosaur",
         "groups": {
@@ -27884,8 +28646,8 @@
           },
           "land_grazer": {
             "label": "Land grazers",
-            "things": 10,
-            "with_picture": 10
+            "things": 13,
+            "with_picture": 13
           },
           "flyer": {
             "label": "Flyers",
@@ -27914,12 +28676,123 @@
       },
       "animal/dinosaur/land_grazer": {
         "label": "Land grazers",
-        "things": 10,
+        "things": 13,
         "steps_from_seed": 3,
+        "sorted_by": "dinosaur_group",
+        "groups": {
+          "long_necked": {
+            "label": "Long-necked plant eaters",
+            "things": 5,
+            "with_picture": 5
+          },
+          "horned": {
+            "label": "Horned and frilled dinosaurs",
+            "things": 4,
+            "with_picture": 4
+          },
+          "armoured": {
+            "label": "Armoured and plated dinosaurs",
+            "things": 2,
+            "with_picture": 2
+          },
+          "bone_headed": {
+            "label": "Bone-headed dinosaurs",
+            "things": 2,
+            "with_picture": 2
+          }
+        },
+        "could_be_filled_by": [
+          {
+            "name": "Chasmosaurus",
+            "status": "held by the rules",
+            "group": "horned"
+          },
+          {
+            "name": "Pachyrhinosaurus",
+            "status": "held by the rules",
+            "group": "horned"
+          },
+          {
+            "name": "Centrosaurus",
+            "status": "held by the rules",
+            "group": "horned"
+          },
+          {
+            "name": "Euoplocephalus",
+            "status": "held by the rules",
+            "group": "armoured"
+          },
+          {
+            "name": "Kentrosaurus",
+            "status": "held by the rules",
+            "group": "armoured"
+          },
+          {
+            "name": "Nodosaurus",
+            "status": "held by the rules",
+            "group": "armoured"
+          },
+          {
+            "name": "Sauropelta",
+            "status": "held by the rules",
+            "group": "armoured"
+          },
+          {
+            "name": "Edmontonia",
+            "status": "held by the rules",
+            "group": "armoured"
+          },
+          {
+            "name": "Scelidosaurus",
+            "status": "held by the rules",
+            "group": "armoured"
+          },
+          {
+            "name": "Polacanthus",
+            "status": "held by the rules",
+            "group": "armoured"
+          },
+          {
+            "name": "Panoplosaurus",
+            "status": "held by the rules",
+            "group": "armoured"
+          },
+          {
+            "name": "Stygimoloch",
+            "status": "held by the rules",
+            "group": "bone_headed"
+          },
+          {
+            "name": "Stegoceras",
+            "status": "held by the rules",
+            "group": "bone_headed"
+          },
+          {
+            "name": "Prenocephale",
+            "status": "held by the rules",
+            "group": "bone_headed"
+          },
+          {
+            "name": "Homalocephale",
+            "status": "held by the rules",
+            "group": "bone_headed"
+          },
+          {
+            "name": "Sphaerotholus",
+            "status": "held by the rules",
+            "group": "bone_headed"
+          },
+          {
+            "name": "Colepiocephale",
+            "status": "held by the rules",
+            "group": "bone_headed"
+          }
+        ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "a field to sort it by: no field in the dictionary splits it four ways, and about 6 more things"
+          "2 more thing(s) in 'Armoured and plated dinosaurs'",
+          "2 more thing(s) in 'Bone-headed dinosaurs'"
         ]
       },
       "animal/dinosaur/flyer": {
@@ -28828,7 +29701,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "group_words.py",
+    "by": "job run 2026-11-24-02",
     "on": "2026-11-24"
   },
   "groups": {
@@ -28890,19 +29763,35 @@
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
         },
         {
-          "text": "It is the flat, green part that grows up towards the sun."
+          "text": "It grows up high, not down in the soil.",
+          "cached": "tools/voice/clips/groups/part_we_eat__leaves__clue2.mp3",
+          "clip": "Assets/audio/groups/part_we_eat__leaves__clue2.mp3",
+          "clip_sha256": "1ed51128702d20f1e8e5e06b819510c3b9bb25049efc95efe66d603287b7816b",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "We pick these green parts and cook them for dinner."
+          "text": "We pick it and cook it, but we do not wait for a fruit or a seed.",
+          "cached": "tools/voice/clips/groups/part_we_eat__leaves__clue3.mp3",
+          "clip": "Assets/audio/groups/part_we_eat__leaves__clue3.mp3",
+          "clip_sha256": "e10ad3673b97d537f0809c209a17f4d111afcec8fef9ebf17aa2ed5e4bdf0a16",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
-      "explanation": null,
+      "explanation": {
+        "text": "We eat the green leafy part of these plants. That is why they go together. Spinach has lots of iron in it, which helps your body grow strong.",
+        "together": "We eat the green leafy part of these plants. That is why they go together.",
+        "fact": "Spinach has lots of iron in it, which helps your body grow strong.",
+        "quote": "Spinach, along with other green, leafy vegetables, is rich in iron.",
+        "source": "spinach_plant:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Spinach",
+        "cached": "tools/voice/clips/groups/part_we_eat__leaves__explanation.mp3",
+        "clip": "Assets/audio/groups/part_we_eat__leaves__explanation.mp3",
+        "clip_sha256": "6c9824ef88600c9f51a06b640188a06e035941a196e1480c72a4a92010b3333d",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+      },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "held": [
-        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
-      ]
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     },
     "where_it_travels=rails": {
       "field": "where_it_travels",
@@ -29268,7 +30157,7 @@
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
         "no clues were kept: clue 3 is not true of every thing in the group",
-        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
+        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
       ]
     },
     "kind_of_animal=reptile": {
@@ -29305,7 +30194,11 @@
         "fact": "A turtle's hard shell keeps it safe from other animals.",
         "quote": "They have a hard shell, which is useful for camouflage and protection from other animals.",
         "source": "turtle:wikipedia_simple",
-        "source_url": "https://simple.wikipedia.org/wiki/Turtle"
+        "source_url": "https://simple.wikipedia.org/wiki/Turtle",
+        "cached": "tools/voice/clips/groups/kind_of_animal__reptile__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_animal__reptile__explanation.mp3",
+        "clip_sha256": "5164047a0b2507b0654153471c455706bd36f40c15e3853dc4975e907b81cef4",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
@@ -29362,13 +30255,25 @@
       "question": "What kind of dinosaur is it?",
       "clues": [
         {
-          "text": "Think about a dinosaur that eats other animals."
+          "text": "Think about a dinosaur that eats other animals.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__land_hunter__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue1.mp3",
+          "clip_sha256": "da86b39d194cb3bd588ef2e98e48b7f4a8d0fc0ad90412d25e13d75f5c5e5174",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "Think about a big animal that hunts its food on land."
+          "text": "Think about a big animal that walks on two legs and hunts.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__land_hunter__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue2.mp3",
+          "clip_sha256": "2db7857e238b42d257a5ad5c4a7b6430b58a0574cd57f78decfda9d25285edf1",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "Think about a hunter with sharp teeth and claws that chases other dinosaurs."
+          "text": "Think about a hunter that chases and catches its food on land.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__land_hunter__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue3.mp3",
+          "clip_sha256": "b055671c8cb2a56fe68f2ba8f668b02cc22865c2dc353c1e8cbc345c327ce33e",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
       "explanation": null,
@@ -29384,15 +30289,44 @@
       "value": "land_grazer",
       "label": "Land grazers",
       "question": "What kind of dinosaur is it?",
-      "clues": [],
-      "explanation": null,
+      "clues": [
+        {
+          "text": "Think about a dinosaur that eats green plants all day.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__land_grazer__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__land_grazer__clue1.mp3",
+          "clip_sha256": "114d38376a2b6b5af189bfe0dcc60470aa4dcabb1ab50fa6a956308c8380e934",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "This dinosaur walks on the ground and eats plants, not meat.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__land_grazer__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__land_grazer__clue2.mp3",
+          "clip_sha256": "105c632df27199c413cf00829f2f4f89cd994c5d1d12aa604a43a8e3b3be3413",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "This plant-eater stays on land and never flies or swims.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__land_grazer__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__land_grazer__clue3.mp3",
+          "clip_sha256": "87a2db45fbc4b15f45a544aff70535a53650f766dc663c5d242509177db2c338",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        }
+      ],
+      "explanation": {
+        "text": "All of these dinosaurs stayed on land and ate plants. They did not hunt other animals, fly, or swim. One of these plant-eaters had a long neck to reach leaves high in the trees.",
+        "together": "All of these dinosaurs stayed on land and ate plants. They did not hunt other animals, fly, or swim.",
+        "fact": "One of these plant-eaters had a long neck to reach leaves high in the trees.",
+        "quote": "Its long neck enabled it to browse foliage at heights that were inaccessible to most other herbivorous dinosaurs.",
+        "source": "brachiosaurus:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Brachiosaurus",
+        "cached": "tools/voice/clips/groups/kind_of_dinosaur__land_grazer__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_dinosaur__land_grazer__explanation.mp3",
+        "clip_sha256": "8d83c436052c2836a1445cfec525df1f999e401aa3daa5115d991a41e7c9e110",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+      },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "held": [
-        "no clues were kept: the clues do not grow more helpful one after another",
-        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
-      ]
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     },
     "kind_of_dinosaur=flyer": {
       "field": "kind_of_dinosaur",
@@ -29452,19 +30386,35 @@
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
         },
         {
-          "text": "These animals move through the water to find their food."
+          "text": "These animals move through the water to get around.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__swimmer__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__swimmer__clue2.mp3",
+          "clip_sha256": "d91835e4e293da1076966a091299a76f113c98a7b5606b3468ec85b5c87db891",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "They swim with flippers or paddles, not with legs for walking."
+          "text": "They swim in the sea, not walk on land or fly in the sky.",
+          "cached": "tools/voice/clips/groups/kind_of_dinosaur__swimmer__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_dinosaur__swimmer__clue3.mp3",
+          "clip_sha256": "6bd3ce502a03008569acf7c8244cf2e61b1fefe6c06c8ba57e83aaf5567c47c8",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
-      "explanation": null,
+      "explanation": {
+        "text": "These animals all lived in the water and swam to move around. One of these sea animals had a smaller sea animal inside its tummy!",
+        "together": "These animals all lived in the water and swam to move around.",
+        "fact": "One of these sea animals had a smaller sea animal inside its tummy!",
+        "quote": "In 1918, Charles H. Sternberg found a Tylosaurus with the remains of a plesiosaur in its stomach.",
+        "source": "tylosaurus:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Tylosaurus",
+        "cached": "tools/voice/clips/groups/kind_of_dinosaur__swimmer__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_dinosaur__swimmer__explanation.mp3",
+        "clip_sha256": "0ab9e4256ff3d6df64460b8d3574a854f746548532b8da454cf54337484f0103",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+      },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "held": [
-        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
-      ]
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     },
     "kind_of_plant=tree": {
       "field": "kind_of_plant",
@@ -29532,13 +30482,25 @@
       "question": "What kind of plant is it?",
       "clues": [
         {
-          "text": "Think of plants with long, thin leaves that grow from the bottom."
+          "text": "Think of plants with long, thin leaves that grow from the bottom.",
+          "cached": "tools/voice/clips/groups/kind_of_plant__grass_grain__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_plant__grass_grain__clue1.mp3",
+          "clip_sha256": "95a6345df69bdd7a6336fee75304593575fc5599585715a41c20483a4c315a3b",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "These plants have stems you can see joints on, like little rings."
+          "text": "These plants have stems you can see joints on, like little rings.",
+          "cached": "tools/voice/clips/groups/kind_of_plant__grass_grain__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_plant__grass_grain__clue2.mp3",
+          "clip_sha256": "0f408f14561d6d4c31ef88c526b7235b1e6c6091e8cc22a84d49735ff1da052b",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "These plants are not trees, not flowers, and not the leafy plants we pick for food."
+          "text": "These plants are not trees, not flowers, and not the leafy plants we pick for food.",
+          "cached": "tools/voice/clips/groups/kind_of_plant__grass_grain__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_plant__grass_grain__clue3.mp3",
+          "clip_sha256": "4bd916327662d7a73a35e7c326523f0f66769da272e8382fb8f3ac3d0f659ef4",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
       "explanation": null,
@@ -29546,7 +30508,7 @@
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
-        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
+        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
       ]
     },
     "kind_of_plant=vegetable": {
@@ -29600,13 +30562,25 @@
       "question": "What kind of thing in nature is it?",
       "clues": [
         {
-          "text": "Think about what you see when you look up high above your head."
+          "text": "Think about what you see when you look up high above your head.",
+          "cached": "tools/voice/clips/groups/kind_of_nature__sky__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_nature__sky__clue1.mp3",
+          "clip_sha256": "ab6a3e4ef8a6e5f50e99ff6a93ec77f5f1b8df4aa1405c340170480395693287",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You can see these far above you, but you cannot touch them with your hands."
+          "text": "You can see these far above you, but you cannot touch them with your hands.",
+          "cached": "tools/voice/clips/groups/kind_of_nature__sky__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_nature__sky__clue2.mp3",
+          "clip_sha256": "c33eede6bfa8183e387dd74310b3b871b8858e9deee3d5a16308ea365f517b42",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "They are up high in the open air, and you can spot them on a clear day or a dark night."
+          "text": "They are up high in the open air, and you can spot them on a clear day or a dark night.",
+          "cached": "tools/voice/clips/groups/kind_of_nature__sky__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_nature__sky__clue3.mp3",
+          "clip_sha256": "0fc46afa10ad04b3fa4897e0946f59066474f51d99c36af1a3f8d34693e9ccdc",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
       "explanation": {
@@ -29615,7 +30589,11 @@
         "fact": "The Sun is really a star, and it is the star closest to us.",
         "quote": "The Sun is an example of a star.",
         "source": "star:wikipedia_simple",
-        "source_url": "https://simple.wikipedia.org/wiki/Star"
+        "source_url": "https://simple.wikipedia.org/wiki/Star",
+        "cached": "tools/voice/clips/groups/kind_of_nature__sky__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_nature__sky__explanation.mp3",
+        "clip_sha256": "c7b661b55373973986a5a8d3cb6d235d76db1786bbb56ab5cc7ae94097a262c3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
@@ -29936,13 +30914,25 @@
       "question": "What do we use it for?",
       "clues": [
         {
-          "text": "Think about places you can go inside or walk on."
+          "text": "Think about places you can go inside or walk on.",
+          "cached": "tools/voice/clips/groups/kind_of_made_thing__building__clue1.mp3",
+          "clip": "Assets/audio/groups/kind_of_made_thing__building__clue1.mp3",
+          "clip_sha256": "8abdb842ed99002334e4d974750f487bede8324dbfa84cfd4c2f04d167bc45ea",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "People go to these places to do something or to get something."
+          "text": "People go to these places to do something or to get something.",
+          "cached": "tools/voice/clips/groups/kind_of_made_thing__building__clue2.mp3",
+          "clip": "Assets/audio/groups/kind_of_made_thing__building__clue2.mp3",
+          "clip_sha256": "daab3b238dff439ba7f342315bc97234e03416dcaf2b70038f45ef9e4b11e0d6",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "Some are big and some are small, but people made them all."
+          "text": "Some are big and some are small, but people made them all.",
+          "cached": "tools/voice/clips/groups/kind_of_made_thing__building__clue3.mp3",
+          "clip": "Assets/audio/groups/kind_of_made_thing__building__clue3.mp3",
+          "clip_sha256": "3bd64d074f47370bcf836c8d1e798273828a6c8fc8ba860b9475c48fbdc39048",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
       "explanation": {
@@ -29951,7 +30941,11 @@
         "fact": "A footbridge is a bridge made just for people to walk on, not for cars.",
         "quote": "A footbridge is a bridge that was built to be mainly used by pedestrians.",
         "source": "footbridge:wikipedia_simple",
-        "source_url": "https://simple.wikipedia.org/wiki/Footbridge"
+        "source_url": "https://simple.wikipedia.org/wiki/Footbridge",
+        "cached": "tools/voice/clips/groups/kind_of_made_thing__building__explanation.mp3",
+        "clip": "Assets/audio/groups/kind_of_made_thing__building__explanation.mp3",
+        "clip_sha256": "afb534fb6ed34e0448b7e72eac1a8a90d35961ccf45174f7c488f31390673e05",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
@@ -30191,10 +31185,18 @@
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
         },
         {
-          "text": "These things do not need a road or a track to move."
+          "text": "These things do not need a road or a track to move.",
+          "cached": "tools/voice/clips/groups/where_it_travels__air__clue2.mp3",
+          "clip": "Assets/audio/groups/where_it_travels__air__clue2.mp3",
+          "clip_sha256": "8bee5b3c03b262360c7b487b2848af321a153ab277a0d63ebd3ba6be5bca3716",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "They move through the sky, up where the birds fly."
+          "text": "They move through the sky, up where the birds fly.",
+          "cached": "tools/voice/clips/groups/where_it_travels__air__clue3.mp3",
+          "clip": "Assets/audio/groups/where_it_travels__air__clue3.mp3",
+          "clip_sha256": "745e5c5f84c2539e7621791f372b41c9fac08388838c4563be581610f4f927f4",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
       "explanation": {
@@ -30203,7 +31205,11 @@
         "fact": "A helicopter can stop and stay still in the air, high above the ground.",
         "quote": "An airplane must move forward to stay in the air, but because the helicopter's rotor blades are always moving, the helicopter can stop and stay in one place above the ground.",
         "source": "helicopter:wikipedia_simple",
-        "source_url": "https://simple.wikipedia.org/wiki/Helicopter"
+        "source_url": "https://simple.wikipedia.org/wiki/Helicopter",
+        "cached": "tools/voice/clips/groups/where_it_travels__air__explanation.mp3",
+        "clip": "Assets/audio/groups/where_it_travels__air__explanation.mp3",
+        "clip_sha256": "149ff56e4a7845587f8a4745394e6bee0b9609ebb692ee038f6088909f507ee8",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
@@ -30744,13 +31750,25 @@
       "question": "Is it mostly a pet, a farm animal or a wild animal?",
       "clues": [
         {
-          "text": "Think about birds that live out in the open, not in a house."
+          "text": "Think about birds that live free, not in a house or a pen.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
+          "clip_sha256": "d5fb8b0e36051c688da1b8871f918aff07e0a8e204d810d2bcb2c81ffec4acb4",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "These birds find their own food and make their own homes outside."
+          "text": "These birds find their own food and make their own homes outside.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
+          "clip_sha256": "634a66879cdf3a35576910213bd82da20efd65c8da6513bc8f0157ae55d78215",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "These birds fly free in the sky, over trees and hills."
+          "text": "You would see these birds flying high or sitting in a tree far from people.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
+          "clip_sha256": "76e1b385292e9e8b277aec9b48d41f2a70a4a0c33b9a4e22099090e63b66b567",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
       "explanation": null,
@@ -31076,17 +32094,25 @@
       "question": "How do we mostly play with it?",
       "clues": [
         {
-          "text": "Think about things that make sounds you can sing along to.",
+          "text": "Think about things that make a sound you can sing along to.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue1.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3",
-          "clip_sha256": "f52dd494db9edc8bb59d79447130ce7b6e81c6b46ddebbdfe8753c6bd9a3c024",
-          "clip_from": "Kokoro, voice bf_emma, recorded 2026-10-07"
+          "clip_sha256": "cfd9ba324e3b415c407964bd249cbcccb969c238ac7c03564d50f81fc6098859",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You hit, blow or press them to make a sound."
+          "text": "You use your hands or your breath to make the sound.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue2.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3",
+          "clip_sha256": "36a91c0d8977f478b5534265a80d8cde13b473c36a4a778b908a2a6e3150a21b",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "The sound they make is music, not noise."
+          "text": "People tap, blow or press these to make a happy tune.",
+          "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue3.mp3",
+          "clip": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3",
+          "clip_sha256": "3f0bb5f015473dadee65899dfffedae37d3fc6eb103a04637b70e4473ab67962",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
       "explanation": null,
@@ -31096,6 +32122,94 @@
       "held": [
         "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
       ]
+    },
+    "dinosaur_group=long_necked": {
+      "field": "dinosaur_group",
+      "value": "long_necked",
+      "label": "Long-necked plant eaters",
+      "question": "Which dinosaur family does it belong to?",
+      "clues": [
+        {
+          "text": "Think about a very long neck reaching up high.",
+          "cached": "tools/voice/clips/groups/dinosaur_group__long_necked__clue1.mp3",
+          "clip": "Assets/audio/groups/dinosaur_group__long_necked__clue1.mp3",
+          "clip_sha256": "5251ee8339e96d311e29008ecf5b101730181959a4db052ecf397624aea9077b",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "These dinosaurs had long necks and ate plants all day.",
+          "cached": "tools/voice/clips/groups/dinosaur_group__long_necked__clue2.mp3",
+          "clip": "Assets/audio/groups/dinosaur_group__long_necked__clue2.mp3",
+          "clip_sha256": "f283d4e798514bed96bce318852e53dd6cb5a17f27c7ff1ae5064d23ba770826",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "They walked on four legs and stretched their necks to eat leaves.",
+          "cached": "tools/voice/clips/groups/dinosaur_group__long_necked__clue3.mp3",
+          "clip": "Assets/audio/groups/dinosaur_group__long_necked__clue3.mp3",
+          "clip_sha256": "eac63f122f500cb8378ae0d100c195740277389040293f7a22738c3beb57a385",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        }
+      ],
+      "explanation": {
+        "text": "These dinosaurs all had very long necks and ate plants. They used their long necks to reach leaves high up. One of these dinosaurs, Brachiosaurus, could reach leaves as high as a tall building.",
+        "together": "These dinosaurs all had very long necks and ate plants. They used their long necks to reach leaves high up.",
+        "fact": "One of these dinosaurs, Brachiosaurus, could reach leaves as high as a tall building.",
+        "quote": "At full stretch, Brachiosaurus could reach heights of up to 16 meters (52 feet).",
+        "source": "brachiosaurus:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Brachiosaurus",
+        "cached": "tools/voice/clips/groups/dinosaur_group__long_necked__explanation.mp3",
+        "clip": "Assets/audio/groups/dinosaur_group__long_necked__explanation.mp3",
+        "clip_sha256": "176e6828e2ebf8b3942887e7a54b12b6ed4c7178fe4e6b296f54b10390245f89",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-11-24",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "dinosaur_group=horned": {
+      "field": "dinosaur_group",
+      "value": "horned",
+      "label": "Horned and frilled dinosaurs",
+      "question": "Which dinosaur family does it belong to?",
+      "clues": [
+        {
+          "text": "Think about a head with something special on top.",
+          "cached": "tools/voice/clips/groups/dinosaur_group__horned__clue1.mp3",
+          "clip": "Assets/audio/groups/dinosaur_group__horned__clue1.mp3",
+          "clip_sha256": "9a667d73d3d595538f3d7e63eb72b4f25e96a689747349fe6180b94d71f18f97",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "Some of these heads have pointy parts sticking out.",
+          "cached": "tools/voice/clips/groups/dinosaur_group__horned__clue2.mp3",
+          "clip": "Assets/audio/groups/dinosaur_group__horned__clue2.mp3",
+          "clip_sha256": "fb96e03b9ed9bdaef1378713f0f87378db158658e1eac8121614e71b77f949d9",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "Their heads also have a big bony shield behind the pointy parts.",
+          "cached": "tools/voice/clips/groups/dinosaur_group__horned__clue3.mp3",
+          "clip": "Assets/audio/groups/dinosaur_group__horned__clue3.mp3",
+          "clip_sha256": "63cfe386e9c6dc5e2b6bdfb6877b0bad342014f68ed138fbe76c74cb3a8c5d6f",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        }
+      ],
+      "explanation": {
+        "text": "These dinosaurs all have horns and a big bony shield on their heads. That is why they go together in one group. Triceratops had three horns on its head, and its name even means three horned face.",
+        "together": "These dinosaurs all have horns and a big bony shield on their heads. That is why they go together in one group.",
+        "fact": "Triceratops had three horns on its head, and its name even means three horned face.",
+        "quote": "Its name means three horned face which it gets from having three horns on its head.",
+        "source": "triceratops:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Triceratops",
+        "cached": "tools/voice/clips/groups/dinosaur_group__horned__explanation.mp3",
+        "clip": "Assets/audio/groups/dinosaur_group__horned__explanation.mp3",
+        "clip_sha256": "d98693f970b07b05c5aa8d3b00d5ad99145697b8f0f2ab684c24d7fe3490faf9",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-11-24",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     }
   }
 }

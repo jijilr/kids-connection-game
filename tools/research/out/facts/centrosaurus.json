@@ -1,0 +1,60 @@
+{
+  "name": "Centrosaurus",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Centrosaurus is a genus of herbivorous ceratopsian dinosaurs from the Upper Cretaceous of Canada.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "dinosaur",
+      "quote": "Centrosaurus is a genus of herbivorous ceratopsian dinosaurs from the Upper Cretaceous of Canada.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "dinosaur_academic": {
+      "value": true,
+      "quote": "Centrosaurus ( SEN-troh-SOR-əs; lit. 'pointed lizard') is a genus of centrosaurine ceratopsid dinosaur from the Campanian age of the Late Cretaceous of Canada.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_dinosaur": {
+      "value": "land_grazer",
+      "quote": "Centrosaurus is a genus of herbivorous ceratopsian dinosaurs from the Upper Cretaceous of Canada.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "dinosaur_group": {
+      "value": "horned",
+      "basis": "judged, not sourced",
+      "why": "The sources call Centrosaurus a ceratopsid/ceratopsian, the group commonly known as horned and frilled dinosaurs."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Centrosaurus",
+      "title": "Centrosaurus",
+      "asked_for": "Centrosaurus",
+      "revision": 1341159086,
+      "fetched_on": "2026-11-24",
+      "sha256": "e1ab97439021ae5965b37de6b111f2678a2b9d672dbd02506d10c71f38c33dd3"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Centrosaurus",
+      "title": "Centrosaurus",
+      "asked_for": "Centrosaurus",
+      "revision": 10717720,
+      "fetched_on": "2026-11-24",
+      "sha256": "326b2432720c7aa0faca55eb243a2573911d5d79bd8df4a43b418229ea22ed0b"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Stygimoloch",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Stygimoloch is a dubious genus of herbivorous dinosaur.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "dinosaur",
+      "quote": "Stygimoloch is a dubious genus of herbivorous dinosaur.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "dinosaur_academic": {
+      "value": true,
+      "quote": "Stygimoloch is a disputed genus of pachycephalosaur (dome-headed dinosaur) from the end of the Cretaceous period, roughly 66 million years ago.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_dinosaur": {
+      "value": "land_grazer",
+      "quote": "Like other pachycephalosaurids, Stygimoloch was a bipedal herbivore with short forelimbs and a thick, domed skull, likely used in intraspecific head-butting.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "dinosaur_group": {
+      "value": "bone_headed",
+      "quote": "Stygimoloch is a disputed genus of pachycephalosaur (dome-headed dinosaur) from the end of the Cretaceous period, roughly 66 million years ago.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Stygimoloch",
+      "title": "Stygimoloch",
+      "asked_for": "Stygimoloch",
+      "revision": 1379706296,
+      "fetched_on": "2026-11-24",
+      "sha256": "76bce948253cbf9a49d10d74f010928ef7091365b952a0b3f272aef3e453f323"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Stygimoloch",
+      "title": "Stygimoloch",
+      "asked_for": "Stygimoloch",
+      "revision": 10974226,
+      "fetched_on": "2026-11-24",
+      "sha256": "7746a86b1b7b6a1129ceb0592542ea05a92002ba2f020fd9204b8c71a3634aaf"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "name": "Torosaurus",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Torosaurus (meaning \"perforated lizard\", in reference to the large openings in its frill) is a genus of herbivorous chasmosaurine ceratopsian dinosaur which lived during the Maastrichtian Stage of the Cretaceous Period between 68 and 66 million years ago, although it is possible that the species range might extend back as far back as 69 million years ago.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "dinosaur",
+      "quote": "Torosaurus (meaning \"pierced lizard\") was a large, quadrupedal, plant-eating Ceratopsian dinosaur with three horns on its large head.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "dinosaur_academic": {
+      "value": true,
+      "quote": "Torosaurus (meaning \"perforated lizard\", in reference to the large openings in its frill) is a genus of herbivorous chasmosaurine ceratopsian dinosaur which lived during the Maastrichtian Stage of the Cretaceous Period between 68 and 66 million years ago, although it is possible that the species range might extend back as far back as 69 million years ago.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_dinosaur": {
+      "value": "land_grazer",
+      "quote": "Torosaurus (meaning \"pierced lizard\") was a large, quadrupedal, plant-eating Ceratopsian dinosaur with three horns on its large head.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": true,
+      "quote": "Torosaurus lived during the Upper Cretaceous, about 70–65 million years ago, in what is now western North America.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "dinosaur_group": {
+      "value": "horned",
+      "quote": "Torosaurus (meaning \"pierced lizard\") was a large, quadrupedal, plant-eating Ceratopsian dinosaur with three horns on its large head.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Torosaurus",
+      "title": "Torosaurus",
+      "asked_for": "Torosaurus",
+      "revision": 1375992171,
+      "fetched_on": "2026-11-24",
+      "sha256": "5a029292521960c66f5ece7093a41a37cd6db6d914aef908b5d73556a4af0139"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Torosaurus",
+      "title": "Torosaurus",
+      "asked_for": "Torosaurus",
+      "revision": 10717721,
+      "fetched_on": "2026-11-24",
+      "sha256": "151460862d67f3355aa3a615a45be774bbf3ac7bcd09714928cc19a14e242241"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

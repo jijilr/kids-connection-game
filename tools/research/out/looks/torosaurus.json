@@ -1,0 +1,140 @@
+{
+  "name": "Torosaurus",
+  "group": "Animals > Dinosaurs > Land grazers > Horned and frilled dinosaurs",
+  "features": [
+    {
+      "claim": "It had a very long frill compared with the rest of its skull.",
+      "quote": "The frill is extremely long in comparison to the remainder of the skull.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its frill had large oval openings in it.",
+      "quote": "Torosaurus is thought to have been the same size as the contemporary Triceratops, but is distinguished by an elongated frill with large oval shaped openings, long squamosal bones of the frill with a trough on their upper surface, and the presence of five or more pairs of hornlets on the back of the frill.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The back edge of its frill carried ten or more small triangular bony bumps.",
+      "quote": "The rear edge of the frill bears ten or more epiperietals, or triangular osteoderms.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a short upright horn on its nose.",
+      "quote": "Torosaurus possessed a short upright nose horn similar to that seen in Triceratops horridus.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had three horns on its large head.",
+      "quote": "Torosaurus (meaning \"pierced lizard\") was a large, quadrupedal, plant-eating Ceratopsian dinosaur with three horns on its large head.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "It walked on four legs.",
+      "quote": "Torosaurus (meaning \"pierced lizard\") was a large, quadrupedal, plant-eating Ceratopsian dinosaur with three horns on its large head.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "It was a big animal, about 7.5 to 9 metres long.",
+      "quote": "Measuring between 7.5 and 9 m (25 and 30 ft) and weighing around 8 t (18,000 lb), Torosaurus possessed the longest skull of any known land animal, with the frilled skull reaching 2.77 metres (9.1 ft) in length.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its skull was enormous, up to about 2.77 metres long.",
+      "quote": "Measuring between 7.5 and 9 m (25 and 30 ft) and weighing around 8 t (18,000 lb), Torosaurus possessed the longest skull of any known land animal, with the frilled skull reaching 2.77 metres (9.1 ft) in length.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had a beak like a parrot's.",
+      "quote": "In 1891, Marsh placed Torosaurus in the Ceratopsidae family of Ceratopsia (Greek: \"horned faces\"), a group of herbivorous dinosaurs with parrot-like beaks that thrived in North America and Asia during the Jurassic and Cretaceous Periods.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It had horns above its eyes that could be large and curved forward.",
+      "quote": "The orbital \"brow\" horns are sometimes large and curved to the front, as with MOR 981, or sometimes short and straight, as shown by MOR 1122 and ANSP 15191.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [
+    {
+      "claim": "The brow horns vary: sometimes large and curved forward, sometimes short and straight.",
+      "quote": "The orbital \"brow\" horns are sometimes large and curved to the front, as with MOR 981, or sometimes short and straight, as shown by MOR 1122 and ANSP 15191.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The nose horn varies from a straight upright horn to at most a low bump.",
+      "quote": "YPM 1831 and, to a lesser extent, YPM 1830 have a straight, upright nasal horn, but MOR 981, ANSP 15192, and especially MOR 1122 possess a low bump at most.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "It is not the same animal as Triceratops; newer studies say they are separate kinds.",
+        "quote": "Consequently, newer research has favored the interpretation that Torosaurus is indeed a separate genus from Triceratops.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Its name does not mean bull lizard.",
+        "quote": "The name Torosaurus is frequently mistranslated as \"bull lizard\" from the Latin noun taurus or the Spanish word toro, but is much more likely derived from the Greek verb τορέω (toreo), which means \"to perforate\".",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Some studies said Torosaurus was just the fully grown form of Triceratops.",
+        "quote": "They concluded that Torosaurus indeed represents the mature form of Triceratops.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Other studies say the two are definitely different kinds.",
+        "quote": "However, latest thinking is that the two are definitely different genera.",
+        "source": "wikipedia_simple",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Torosaurus",
+      "title": "Torosaurus",
+      "revision": 1375992171,
+      "revision_time": "2026-09-21T09:18:23Z",
+      "fetched_on": "2026-11-24",
+      "chars": 26099,
+      "sha256": "9d89d57b41c96af8c9968ef5a8d817bba41df4f5ce2b0af5a7b10989520f0657"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Torosaurus",
+      "title": "Torosaurus",
+      "revision": 10717721,
+      "revision_time": "2026-01-18T00:45:42Z",
+      "fetched_on": "2026-11-24",
+      "chars": 940,
+      "sha256": "f1249d6a3cb418a52ff8cb408c1580c7c7839f8af7db2516ee6e837cacaccde7"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "It had a very long frill compared with the rest of its skull.",
+    "Its frill had large oval openings in it.",
+    "It had horns above its eyes that could be large and curved forward."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "very long frill with large oval openings; long forward-curving brow horns",
+    "covering": []
+  }
+}
