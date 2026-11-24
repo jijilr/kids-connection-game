@@ -1,0 +1,292 @@
+{
+  "id": "2026-11-24-07",
+  "started": "2026-11-24",
+  "rehearse": null,
+  "cap_inr": 30.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "plant/vegetable",
+        "chain": "Plants > Vegetable plants > The seeds or pods",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "need": 1,
+        "recorded_but_not_in_the_game": [
+          {
+            "name": "Drumstick plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Cluster bean plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Cowpea plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Field bean plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Green gram plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          }
+        ],
+        "retried": [
+          "Drumstick plant",
+          "Cluster bean plant",
+          "Cowpea plant",
+          "Field bean plant",
+          "Green gram plant"
+        ],
+        "examples": [
+          {
+            "name": "Drumstick plant",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "offers_1": [],
+        "offers_2": [],
+        "facts_done": true
+      },
+      {
+        "circle": "plant/vegetable",
+        "chain": "Plants > Vegetable plants > The seeds or pods",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "need": 1,
+        "recorded_but_not_in_the_game": [
+          {
+            "name": "Drumstick plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Cluster bean plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Cowpea plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Field bean plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Green gram plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          }
+        ],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Drumstick plant",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "offers_1": [],
+        "offers_2": [],
+        "facts_done": true
+      },
+      {
+        "circle": "plant/vegetable",
+        "chain": "Plants > Vegetable plants > The seeds or pods",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "kind_of_plant": "vegetable",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "need": 1,
+        "recorded_but_not_in_the_game": [
+          {
+            "name": "Drumstick plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Cluster bean plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Cowpea plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Field bean plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          },
+          {
+            "name": "Green gram plant",
+            "status": "held by the rules",
+            "group": "seeds_or_pods"
+          }
+        ],
+        "retried": [],
+        "examples": [
+          {
+            "name": "Drumstick plant",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "offers_1": [],
+        "offers_2": [],
+        "facts_done": true
+      }
+    ],
+    "circles": [
+      {
+        "circle": "plant/vegetable",
+        "label": "Vegetable plants",
+        "chain": "Plants > Vegetable plants",
+        "needs_field": false,
+        "expect_things": 2,
+        "his_strength": false,
+        "asks": [
+          0,
+          1,
+          2
+        ],
+        "done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": [],
+    "held_back": [],
+    "played": null,
+    "mastered": []
+  },
+  "retry_held": true,
+  "things": [
+    {
+      "name": "Drumstick plant",
+      "passed": false,
+      "familiar": 0.6,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Cluster bean plant",
+      "passed": false,
+      "familiar": 0.3,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Cowpea plant",
+      "passed": false,
+      "familiar": 0.3,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Field bean plant",
+      "passed": false,
+      "familiar": 0.25,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Green gram plant",
+      "passed": false,
+      "familiar": 0.25,
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "vegetable",
+        "part_we_eat": "seeds_or_pods"
+      },
+      "why": [
+        "the check doubts a four-year-old would recognise it"
+      ],
+      "not_recognised": true,
+      "ask": 0,
+      "held_as": "held by the rules"
+    }
+  ],
+  "sheets": [],
+  "stopped": "",
+  "fields_added": [],
+  "fields_held": [],
+  "open_before": [
+    "animal",
+    "animal/bird",
+    "animal/dinosaur",
+    "animal/mammal",
+    "animal/mammal/wild_land",
+    "made_by_people",
+    "made_by_people/building",
+    "made_by_people/household",
+    "made_by_people/toy",
+    "made_by_people/vehicle",
+    "nature_not_alive",
+    "plant",
+    "seed"
+  ],
+  "spent_usd": {
+    "deepseek": 0.00609,
+    "drawing": 0.0,
+    "picture_checks": 0.0
+  },
+  "opened": []
+}

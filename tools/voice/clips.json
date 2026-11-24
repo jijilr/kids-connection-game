@@ -6257,34 +6257,34 @@
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "pet_farm_or_wild_of_bird=wild_land:clue1": {
-      "text": "Think about birds that live out in the open, not in a house.",
+      "text": "Think about a bird that lives free, not in a house or a cage.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 4.39,
+      "seconds": 4.59,
       "cache": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
-      "sha256": "9631550d1d72a602bd609ee220d2473a29760a6cda11a50387b9149841c20cc6",
+      "sha256": "75c13d86aad476f77116660b71481d5d8c660abfe55099a7efcb15dc414660c1",
       "game_file": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "pet_farm_or_wild_of_bird=wild_land:clue2": {
-      "text": "These birds find their own food and make their own homes.",
+      "text": "It flies in the open sky and finds its own food.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 4.32,
+      "seconds": 4.26,
       "cache": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
-      "sha256": "9f01fafef12a7b849f1c7997535a34df5eac470b2411293de374702eea6b3282",
+      "sha256": "cf28a8ea93a5fb99bd4143c81c8de061e58dab6eba450cff0c86917f02341d8b",
       "game_file": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "pet_farm_or_wild_of_bird=wild_land:clue3": {
-      "text": "These birds fly free in the sky, not in a cage or a pond.",
+      "text": "It is not kept by people and it does not live in water.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 4.76,
+      "seconds": 4.57,
       "cache": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
-      "sha256": "9de3089480068c2bacb8b493a0936688d7ce1e565a8f01fd70b8c6575b1722ef",
+      "sha256": "06300747aa98fde462294d9d90caf47a6a932becec1d392a624bb763c367b16a",
       "game_file": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
@@ -6609,23 +6609,23 @@
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "how_we_play_with_it=music:clue2": {
-      "text": "You use your hands or your breath to make the sound.",
+      "text": "You hit it, blow it, or press it to hear a tune.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 4.01,
+      "seconds": 3.79,
       "cache": "tools/voice/clips/groups/how_we_play_with_it__music__clue2.mp3",
-      "sha256": "e3b0360edb586aaae992736b7c3517e174d9f8fe3d8cc437bc31b9375bb596fe",
+      "sha256": "0b10936a8133cc820d8a5e58ace86236b092ad728c6895802f2d2b01581a9ad5",
       "game_file": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     },
     "how_we_play_with_it=music:clue3": {
-      "text": "People tap, blow or press these to make a happy tune.",
+      "text": "People tap their feet and clap when these sounds play.",
       "voice": "bf_emma",
       "speed": 0.9,
-      "seconds": 4.14,
+      "seconds": 4.04,
       "cache": "tools/voice/clips/groups/how_we_play_with_it__music__clue3.mp3",
-      "sha256": "a5db4af8898f04cac990518ebee0632fa7850084bc782a4fea3c787a686c1631",
+      "sha256": "f78d8fd0340d1de8492dd29699a0c18801e9fc74cbb4a957e3a48cc7318fd299",
       "game_file": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
@@ -7089,6 +7089,39 @@
       "cache": "tools/voice/clips/groups/kind_of_plant__tree__explanation.mp3",
       "sha256": "fe2d40a66aa15ded563d6fb633d33e83f5fa542c5f8434a3592511d87b74d0bf",
       "game_file": "Assets/audio/groups/kind_of_plant__tree__explanation.mp3",
+      "recorded_on": "2026-11-24",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "kind_of_animal=insect:clue1": {
+      "text": "Think about tiny creatures with six legs.",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "seconds": 3.69,
+      "cache": "tools/voice/clips/groups/kind_of_animal__insect__clue1.mp3",
+      "sha256": "b65af429eb8fdb40c098f4a52f78ca756880ce9ffbc14ce7b9628f21ea7f380f",
+      "game_file": "Assets/audio/groups/kind_of_animal__insect__clue1.mp3",
+      "recorded_on": "2026-11-24",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "kind_of_animal=insect:clue2": {
+      "text": "These little creatures often have wings too.",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "seconds": 3.74,
+      "cache": "tools/voice/clips/groups/kind_of_animal__insect__clue2.mp3",
+      "sha256": "42616ce59b536c69937292b78eec716751e2a2a464f4449cd010f1665361f3a9",
+      "game_file": "Assets/audio/groups/kind_of_animal__insect__clue2.mp3",
+      "recorded_on": "2026-11-24",
+      "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    },
+    "kind_of_animal=insect:clue3": {
+      "text": "You can see many of them buzzing or crawling near you.",
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "seconds": 3.99,
+      "cache": "tools/voice/clips/groups/kind_of_animal__insect__clue3.mp3",
+      "sha256": "af35efe5c1b939e7bef25f1790cca0518c05e0d798b644cb5d618547f0ed2d68",
+      "game_file": "Assets/audio/groups/kind_of_animal__insect__clue3.mp3",
       "recorded_on": "2026-11-24",
       "made_on": "NVIDIA GeForce RTX 4070 Laptop GPU"
     }

@@ -35,6 +35,9 @@ everything out again, runs the guard, and rewrites the game's copy and the queue
     python tools/catalogue/catalogue.py show ID     one entry
     python tools/catalogue/catalogue.py refresh     read pictures, clips and sources again from their ledgers
     python tools/catalogue/catalogue.py take-out NAME --why "..."
+    python tools/catalogue/catalogue.py set NAME FIELD VALUE --why "..."
+                                                    the owner's own word on one value of one thing (he
+                                                    played the set and found the thing in the wrong group)
                                                     take a thing out of the game; it is kept, marked, with the reason
 """
 import contextlib
@@ -690,6 +693,22 @@ def main():
             entry["status"], entry["status_why"] = TAKEN_OUT, [args[3]]
         print(f"{args[1]} is out of the game, and kept in the catalogue with the reason. If it has a picture, "
               "set its tile aside (tools/pictures/review.py) and run tools/pictures/publish.py.")
+        return
+    if command == "set" and len(args) == 6 and args[4] == "--why":
+        name, field, value, why = args[1], args[2], args[3], args[5]
+        definition = read_json(DICTIONARY)["fields"].get(field)
+        if definition is None or value not in definition["values"]:
+            raise SystemExit(f"The dictionary has no value '{value}' for a field '{field}'.")
+        with changing("catalogue.py set") as catalogue:
+            entry = catalogue["things"].get(slug(name))
+            if entry is None:
+                raise SystemExit(f"'{name}' is not in the catalogue.")
+            before = entry["fields"].get(field)
+            entry["fields"][field] = {"true": True, "false": False}.get(value, value)
+            spelled = lambda v: definition["values"].get(str(v).lower() if isinstance(v, bool) else str(v), v)
+            entry.setdefault("notes", {})[field] = (
+                f"The owner's word of {datetime.date.today().isoformat()}: {why} (It was '{spelled(before)}'.)")
+        print(f"{name}: {definition['wording']} -> {definition['values'][value]}. Kept in the catalogue with the reason.")
         return
     catalogue = load()
     if command == "check":

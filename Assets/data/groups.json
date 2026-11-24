@@ -201,6 +201,23 @@
         "audio": "Assets/audio/groups/kind_of_animal__fish__explanation.mp3"
       }
     },
+    "kind_of_animal=insect": {
+      "clues": [
+        {
+          "text": "Think about tiny creatures with six legs.",
+          "audio": "Assets/audio/groups/kind_of_animal__insect__clue1.mp3"
+        },
+        {
+          "text": "These little creatures often have wings too.",
+          "audio": "Assets/audio/groups/kind_of_animal__insect__clue2.mp3"
+        },
+        {
+          "text": "You can see many of them buzzing or crawling near you.",
+          "audio": "Assets/audio/groups/kind_of_animal__insect__clue3.mp3"
+        }
+      ],
+      "explanation": null
+    },
     "kind_of_animal=reptile": {
       "clues": [
         {
@@ -931,15 +948,15 @@
     "pet_farm_or_wild_of_bird=wild_land": {
       "clues": [
         {
-          "text": "Think about birds that live out in the open, not in a house.",
+          "text": "Think about a bird that lives free, not in a house or a cage.",
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3"
         },
         {
-          "text": "These birds find their own food and make their own homes.",
+          "text": "It flies in the open sky and finds its own food.",
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3"
         },
         {
-          "text": "These birds fly free in the sky, not in a cage or a pond.",
+          "text": "It is not kept by people and it does not live in water.",
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3"
         }
       ],
@@ -1092,11 +1109,11 @@
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3"
         },
         {
-          "text": "You use your hands or your breath to make the sound.",
+          "text": "You hit it, blow it, or press it to hear a tune.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3"
         },
         {
-          "text": "People tap, blow or press these to make a happy tune.",
+          "text": "People tap their feet and clap when these sounds play.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3"
         }
       ],

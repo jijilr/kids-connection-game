@@ -1092,8 +1092,15 @@
       "steps_from_seed": 2,
       "branch": "plant",
       "members": 18,
-      "open": true,
+      "open": false,
       "sorted_by": "part_we_eat",
+      "missing": {
+        "field": null,
+        "short": {
+          "seeds_or_pods": 1
+        },
+        "things": 1
+      },
       "decisions": [
         {
           "date": "2026-10-06",
@@ -1108,105 +1115,25 @@
           "why": "the scientist's answer, a grass whose seeds are a grain, is kept apart in kind_of_plant_academic and never sorts a board",
           "status": "approved",
           "move": ""
-        }
-      ],
-      "status": "open"
-    },
-    "plant/vegetable/fruit": {
-      "label": "The fruit",
-      "steps_from_seed": 3,
-      "branch": "plant",
-      "members": 4,
-      "open": false,
-      "missing": {
-        "field": "no field splits it four ways",
-        "things": 12
-      },
-      "decisions": [],
-      "factors": {
-        "nearness": 0.33,
-        "neglect": 0.6,
-        "unlocks": 0.33,
-        "cheapness": 0.2
-      },
-      "score": 3.9,
-      "move": "widening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
-    },
-    "plant/vegetable/under_the_ground": {
-      "label": "What grows under the ground",
-      "steps_from_seed": 3,
-      "branch": "plant",
-      "members": 5,
-      "open": false,
-      "missing": {
-        "field": "no field splits it four ways",
-        "things": 11
-      },
-      "decisions": [
+        },
         {
           "date": "2026-11-24",
-          "what": "the rules found no field for it in job run 2026-11-24-06",
-          "why": "\"Which part of the plant do we mostly eat?\": only 1 of its values have four familiar things, and a board needs four: 'The fruit' has 0, 'What grows under the ground' has 8, 'The leaves' has 0, 'The seeds or pods' has 0, 'The stem' has 0, 'The flower' has 0; \"What shape is the part we eat?\": its groups have no sharp edges: both checks placed only 65% of the things where the proposer did (Radish plant: 'long_taproot' or 'round_bulb'; Beetroot: 'long_taproot' or 'round_bulb'; Turnip: 'long_taproot' or 'round_bulb'; Leek: 'round_bulb' or 'swollen_base'); \"What colour is the outside of the part we eat?\": not every thing has one value: 6 of the 27 names sorted have no single group, and at most one in 8 may (Onion plant, Sweet potato, Turmeric, Apricot, Watermelon, Celeriac); \"How does it taste when we eat it?\": only 2 of its values have four familiar things, and a board needs four: 'Sweet to eat' has 5, 'Sharp and peppery' has 6, 'Bitter to eat' has 0, 'Mild and plain' has 2",
-          "members_then": 5,
+          "what": "job run 2026-11-24-07 could not fill it",
+          "why": "too few familiar things of their own for: Plants > Vegetable plants > The seeds or pods; Plants > Vegetable plants > The seeds or pods; Plants > Vegetable plants > The seeds or pods",
+          "members_then": 18,
           "status": "held by the rules"
         }
       ],
       "factors": {
-        "nearness": 0.33,
+        "nearness": 0.5,
         "neglect": 0.6,
         "unlocks": 0.33,
-        "cheapness": 0.21
+        "cheapness": 0.8
       },
-      "score": 3.9,
+      "score": 5.6,
       "move": "widening",
       "status": "held",
-      "held_by": "the rules: \"Which part of the plant do we mostly eat?\": only 1 of its values have four familiar things, and a board needs four: 'The fruit' has 0, 'What grows under the ground' has 8, 'The leaves' has 0, 'The seeds or pods' has 0, 'The stem' has 0, 'The flower' has 0; \"What shape is the part we eat?\": its groups have no sharp edges: both checks placed only 65% of the things where the proposer did (Radish plant: 'long_taproot' or 'round_bulb'; Beetroot: 'long_taproot' or 'round_bulb'; Turnip: 'long_taproot' or 'round_bulb'; Leek: 'round_bulb' or 'swollen_base'); \"What colour is the outside of the part we eat?\": not every thing has one value: 6 of the 27 names sorted have no single group, and at most one in 8 may (Onion plant, Sweet potato, Turmeric, Apricot, Watermelon, Celeriac); \"How does it taste when we eat it?\": only 2 of its values have four familiar things, and a board needs four: 'Sweet to eat' has 5, 'Sharp and peppery' has 6, 'Bitter to eat' has 0, 'Mild and plain' has 2"
-    },
-    "plant/vegetable/leaves": {
-      "label": "The leaves",
-      "steps_from_seed": 3,
-      "branch": "plant",
-      "members": 5,
-      "open": false,
-      "missing": {
-        "field": "no field splits it four ways",
-        "things": 11
-      },
-      "decisions": [],
-      "factors": {
-        "nearness": 0.33,
-        "neglect": 0.6,
-        "unlocks": 0.33,
-        "cheapness": 0.21
-      },
-      "score": 3.9,
-      "move": "widening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
-    },
-    "plant/vegetable/seeds_or_pods": {
-      "label": "The seeds or pods",
-      "steps_from_seed": 3,
-      "branch": "plant",
-      "members": 4,
-      "open": false,
-      "missing": {
-        "field": "no field splits it four ways",
-        "things": 12
-      },
-      "decisions": [],
-      "factors": {
-        "nearness": 0.33,
-        "neglect": 0.6,
-        "unlocks": 0.33,
-        "cheapness": 0.2
-      },
-      "score": 3.9,
-      "move": "widening",
-      "status": "held",
-      "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"
+      "held_by": "the rules: too few familiar things of their own for: Plants > Vegetable plants > The seeds or pods; Plants > Vegetable plants > The seeds or pods; Plants > Vegetable plants > The seeds or pods"
     },
     "nature_not_alive": {
       "label": "Things in nature that are not alive",

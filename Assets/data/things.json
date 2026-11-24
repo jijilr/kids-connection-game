@@ -1970,12 +1970,15 @@
         "kind_of_thing": "plant",
         "extinct": false,
         "kind_of_plant": "vegetable",
-        "part_we_eat": "seeds_or_pods"
+        "part_we_eat": "fruit"
       },
       "familiar": 0.7,
       "reviewed": 12,
       "source": "job:grounded+checked",
-      "drafted_in": "2026-10-06-06"
+      "drafted_in": "2026-10-06-06",
+      "notes": {
+        "part_we_eat": "The owner's word of 2026-11-24: he played the set on 24 Nov and it caught him: we eat the whole of it, like a tomato or a brinjal, and nobody opens it for the seeds (It was 'The seeds or pods'.)"
+      }
     },
     "maize_plant": {
       "name": "Maize plant",
