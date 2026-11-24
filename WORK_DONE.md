@@ -12,17 +12,18 @@ Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 
 | | |
 |---|---|
-| Things in the game | 259, each with a drawn picture and a spoken name |
+| Things in the game | 273 at noon on 24 Nov, each with a drawn picture and a spoken name. The helper adds more as the game is played |
 | Things recorded in all | 368 (79 held by the rules, 23 taken out and kept, 5 kept for later by the owner, 3 ruled out) |
-| Sets a child can open | 14 |
+| Sets a child can open | 15 |
 | Dictionary | version 12, 21 fields (two withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups with words | 61, each with a ladder of clues; 59 have an explanation |
-| Tests | 72 in the game, 35 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
+| Tests | 72 in the game, 36 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
 
-**The fourteen sets:** Everything, Animals, Mammals, Wild animals on land (made on 24 Nov by the helper,
-while "playing"), Birds, Dinosaurs, Plants, Vegetable plants, Things in nature that are not alive, Things
-people make, Vehicles, Toys, Things in the house, Buildings.
+**The fifteen sets:** Everything, Animals, Mammals, Wild animals on land and Make music with it (both
+made on 24 Nov by the helper, the second while the owner played), Birds, Dinosaurs, Plants, Vegetable
+plants, Things in nature that are not alive, Things people make, Vehicles, Toys, Things in the house,
+Buildings.
 
 **Not yet seen by the first child.** The owner has played it. Nothing is deployed.
 
@@ -240,6 +241,15 @@ The owner's design, in his words in section 3. Built the same day, in five steps
   in his saved progress (`web_seen`). There is no sound or spoken line for it yet.
   (`test/web_grew_test.dart`.)
 
+- **The web, made to look its best** (the owner: "web is so good... but can you make a good quality
+  one"). Threads of light: each thread curves toward its knot, glows in its branch's colour and carries a
+  small spark; a soft glow breathes under every knot; pictures stand on white discs, larger nearer the
+  middle; names sit on white labels; a ring lies far enough out that its knots do not crowd; the page takes
+  the colour of the picture's rim. Hover a knot for how often it was found. **The button at the top right
+  saves the web as one large picture** (about 3,000 dots across, with the date and the two measures at
+  its foot), to print for the wall. Saving was not tried in the browser by the assistant: a download needs
+  the owner's own click.
+
 ### The Vegetable plants set, after the owner was caught by it (24 Nov)
 He played it and could not tell the last two groups apart ("you help me. haha").
 - Ladies finger is with the fruit now: his word, kept in the catalogue with the reason (new command
@@ -255,6 +265,14 @@ He played it and could not tell the last two groups apart ("you help me. haha").
   new clues ("You can see the little seeds inside when you cut it open" against "We take these out and
   cook them, not the soft juicy part around them"), recorded with Kokoro. The other 59 groups keep their
   old clues until they are written again (`python tools/content/group_words.py --again`, about Rs 10).
+
+### A group left one short is tried once more (24 Nov)
+While the owner played, the helper made "Make music with it" (question: "How does this toy make its
+sound?", 13 instruments, Rs 39.7) and it ended one thing short: the toy synthesizer's picture failed, and
+the set waited. Now, in the same run, a group left short only because a picture failed gets more names,
+their facts and their pictures, once. The set was then finished by hand (Rs 6.4): fifteen sets.
+Still true: while the helper is making a set, the data on disk is mid-change for a few minutes (a new
+clue may have no recording yet; the game then uses the device's voice).
 
 ### Twelve pictures on one sheet (24 Nov)
 The owner asked for a grid of 3 by 4 to save cost. The picture tools now draw and cut a sheet that is
@@ -532,3 +550,5 @@ other names for mud.
 - The owner played it and was caught by Vegetable plants: the set, its clues and the clue writer fixed.
 - Automate at the top, on by default; the web of what he has found. Spent on the day: about Rs 110.
 - Breadth and depth, counted on his own web; faint rings; "your web grew".
+- The web made to look its best, and saved as a picture; a group left one short is tried once more;
+  "Make music with it" finished. Spent on the day by the helper's ledger: Rs 136 of 200.
