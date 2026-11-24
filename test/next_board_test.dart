@@ -66,7 +66,7 @@ void main() {
   test('makeBoard gives sixteen things in four groups with one clean solution, or nothing', () {
     final r = repo(1);
     final start = registry.byId(readData('settings.json')['start']['field'] as String)!;
-    for (int depth = 0; depth <= 2; depth++) {
+    for (int depth = 0; depth <= 4; depth++) {
       for (final circle in r.assembler.circlesAtDepth(depth, start)) {
         final board = r.assembler.makeBoard(BoardContext(
             filter: circle, dimension: circle.isEmpty ? start : null))!;

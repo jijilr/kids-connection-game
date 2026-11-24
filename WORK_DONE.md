@@ -12,16 +12,17 @@ Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 
 | | |
 |---|---|
-| Things in the game | 243, each with a drawn picture and a spoken name |
-| Things recorded in all | 336 (62 held by the rules, 23 taken out and kept, 5 kept for later by the owner, 3 ruled out) |
-| Boards a child can open | 13 |
-| Dictionary | version 10, 19 fields (one withdrawn) |
+| Things in the game | 258, each with a drawn picture and a spoken name |
+| Things recorded in all | 368 (79 held by the rules, 23 taken out and kept, 5 kept for later by the owner, 3 ruled out) |
+| Sets a child can open | 14 |
+| Dictionary | version 12, 21 fields (two withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
-| Groups a child can meet | 57: 52 have a ladder of clues, 44 have an explanation |
-| Tests | 57 in the game, 34 for the job, 8 for the catalogue, 10 for the pictures. All pass |
+| Groups with words | 61, each with a ladder of clues; 59 have an explanation |
+| Tests | 61 in the game, 35 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
 
-**The thirteen boards:** Everything, Animals, Mammals, Birds, Dinosaurs, Plants, Vegetable plants,
-Things in nature that are not alive, Things people make, Vehicles, Toys, Things in the house, Buildings.
+**The fourteen sets:** Everything, Animals, Mammals, Wild animals on land (made on 24 Nov by the helper,
+while "playing"), Birds, Dinosaurs, Plants, Vegetable plants, Things in nature that are not alive, Things
+people make, Vehicles, Toys, Things in the house, Buildings.
 
 **Not yet seen by the first child.** The owner has played it. Nothing is deployed.
 
@@ -165,6 +166,48 @@ Now every thing the job draws goes through the same step, `tools/research/looks.
   filed under the article about the material.
 - It adds about Rs 2 a thing to a run (the reading, and the stricter check of two tiles).
 
+### One game, dynamic data (24 Nov)
+The owner's design, in his words in section 3. Built the same day, in five steps:
+1. **The game ranks the groups of each set** by how well he did them: fewest wrong guesses that took in
+   its things, then no clue, and a tie goes to the group he attempted earliest. The groups he did well
+   become **lines to follow**, kept in his saved progress (file version 3), the newest set's first. A set
+   played is used up as a line. Four times in five the button follows the first line whose set is ready;
+   once in five it leads to a set he has not proven. This replaces the two-day rule of 23 Nov.
+   (`EngineProvider.ranked`, `_chooseNext`; `test/lines_test.dart`.)
+2. **The helper on this PC** (`tools/live/helper.py`) serves the built game and, live from the project,
+   its data, pictures and sounds. It keeps his best three lines ready, best first: a missing set is made
+   by the job while he plays others. At most Rs 200 a day and Rs 90 a set, as hard caps. It never pushes
+   or deploys. Its log and ledger are in `tools/live/out/` (not in git).
+3. **The game takes up a new set with no rebuild** (`lib/services/live_link.dart`): on the web it reads its
+   data through the helper, tells it his lines when a set is finished, and re-reads the data when the
+   helper says it has changed. With no helper there it plays from what it ships with.
+4. **The clever-kid check** (his `PRD.md` IV.2 of June, never built until now): before a set's pictures are
+   paid for, a model is shown sample sets of sixteen and asked for any other way to sort all of them; a
+   script counts only a real second sorting. A set that can always be sorted another way is held.
+5. **New sets are drawn twelve to a sheet**, and the job takes `--only CIRCLE` (one named set) and
+   `--new-to-him` (the best-known things of the group, not only those a four-year-old already knows).
+
+**The first real sets, and what they showed** (runs 2026-11-24-01 to -05, Rs 70.5 in all):
+- *Land grazers* (the owner's own example, dinosaurs), three tries, Rs 19: no set. A question passed and
+  three new dinosaurs were made (Torosaurus, Styracosaurus, Pentaceratops), but not four groups of four
+  well-known ones: the armoured and the bone-headed dinosaurs run out. It is held by the rules. The tries
+  found and fixed four general faults: the proposer offered only things a small child knows; a question
+  could have only four groups (now four to six, any four that fill make a set); "extinct" needed the word
+  itself (now a sentence that places a living thing in the far past shows it); names held by an earlier
+  run could not be offered again.
+- *Wild animals on land* (under Mammals): **made, Rs 51.5 over two runs, about ten minutes in all.** The
+  job chose "What does this animal mostly eat?" (only plants, only meat, plants and meat, mostly insects),
+  settled twelve new animals from their pages, drew them on one sheet of twelve, checked them, recorded
+  their names, and the helper reported the set ready. The game's own set maker makes it in pictures, and
+  the helper serves the new pictures, which are not in the build. Two more faults fixed on the way: the
+  money set aside for the stricter picture check was five times its real cost and stopped the run; and
+  a trait no picture can show (the shape of a chimpanzee's hips) failed three good pictures, where it
+  should only be reported.
+- The clever-kid check, tried on existing sets: nothing for the first set and Dinosaurs; one sample in
+  three of Animals, Mammals' new set and Vehicles could also be sorted by number of legs or wheels.
+- Not seen with my own eyes: the new set on the game's screen. It is behind four other lines in the test
+  browser's progress, and I did not play through them.
+
 ### Twelve pictures on one sheet (24 Nov)
 The owner asked for a grid of 3 by 4 to save cost. The picture tools now draw and cut a sheet that is
 not square (`rows` and `cols` in `tools/pictures/plan.json`; `layout_rows` in its style). One trial,
@@ -262,7 +305,9 @@ does not use sheets of twelve yet.
 - He pointed to his June documents for these exceptions. Found there and not built: the check where a
   model lists every grouping a sharp child might try (`PRD.md` IV.2), the ranking of groups by fewest
   wrong guesses, then earliest, then fastest (III.4), and preparing the likeliest next sets while he
-  plays (VI.0). This replaces the weekly job and the two-day mastery rule of 23 Nov. **Not built yet.**
+  plays (VI.0). This replaces the weekly job and the two-day mastery rule of 23 Nov. Built on 24 Nov:
+  see "One game, dynamic data" in section 2. The Sunday task is switched off (it can be switched on again
+  in Windows Task Scheduler).
 
 ---
 
@@ -332,6 +377,13 @@ other names for mud.
   been saved yet, so until one is, the job treats every open board as solved and knows nothing of his
   mastery.
 
+- **Land grazers has no set** (see section 2): there are not four groups of four well-known plant-eating
+  dinosaurs by any question tried. The bar for "well-known" is 0.4 (`WELL_KNOWN_ENOUGH` in
+  `tools/prepare_next.py`); lowering it lets lesser-known dinosaurs in. The owner's to say.
+- A sharp child could sort one sample in three of Animals and of Vehicles by number of legs or wheels
+  (the clever-kid check). The game's own test cannot see this, because legs and wheels are not stored.
+- The helper's choice of the next set to make has only been driven by test progress, not by a child.
+
 **Closed for a reason**
 - Places on land: only Beach, Island and River bank are familiar land beside water. No filler was added.
 - No field passes for: Rocks and soil, Things in the sky, Water, Reptiles, Insects, Fish, Trees, Flowers,
@@ -373,6 +425,8 @@ other names for mud.
 | See which circles can open | `python tools/catalogue/catalogue.py circles` |
 | What waits for the owner; what the rules hold | `python tools/catalogue/catalogue.py queue` ; `... held` |
 | How a thing looks, from its sources | `python tools/research/looks.py NAME ... --group "Animals > Birds" --cap-inr 5` (the job runs it by itself) |
+| Serve the game with sets made ahead of the child | `flutter build web` once, then `python tools/live/helper.py` and open http://localhost:8200 (`--lan` for a tablet on the same Wi-Fi; `--no-making` to spend nothing) |
+| Make one named set by hand | `python tools/prepare_next.py --only CIRCLE --new-to-him --cap 90` |
 | Write missing clues and explanations | `python tools/content/group_words.py` |
 | Record missing voices | `python tools/voice/record_names.py` |
 | Make the film again | `python tools/film/film_voice.py`, then `flutter test tools/film/film_game_test.dart --dart-define=SEED=40`, then `python tools/film/film_make.py` |
@@ -422,3 +476,5 @@ other names for mud.
   say it looks like, and checked against them. Deeper dinosaur circles are planned like any other.
 - The owner restated the direction: one game, dynamic data, a buffer of prepared sets (see section 3).
 - A trial sheet of twelve pictures: it works, at Rs 1.4 a picture.
+- One game, dynamic data: the ranking and the lines, the helper, the live link, the clever-kid check;
+  the first set made while "playing" (Wild animals on land). Spent on the day: about Rs 93.
