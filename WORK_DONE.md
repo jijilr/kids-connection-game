@@ -18,7 +18,7 @@ Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 | Dictionary | version 12, 21 fields (two withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups with words | 61, each with a ladder of clues; 59 have an explanation |
-| Tests | 72 in the game, 36 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
+| Tests | 74 in the game, 36 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
 
 **The fifteen sets:** Everything, Animals, Mammals, Wild animals on land and Make music with it (both
 made on 24 Nov by the helper, the second while the owner played), Birds, Dinosaurs, Plants, Vegetable
@@ -249,6 +249,13 @@ The owner's design, in his words in section 3. Built the same day, in five steps
   saves the web as one large picture** (about 3,000 dots across, with the date and the two measures at
   its foot), to print for the wall. Saving was not tried in the browser by the assistant: a download needs
   the owner's own click.
+
+- **The child's own way into the web** (the owner: "how does the user access to the web"). The button at
+  the top is small and its sign means nothing to a four-year-old. So the card that ends every set shows,
+  beside Next, a small round picture of his own web as it stands, drawn from the same places as the web
+  itself, with a mark when something is new. A touch opens the web; the arrow at the top goes back to the
+  card. The web also still opens by itself after four sets. (`WebMiniature` in
+  `lib/screens/web_screen.dart`.) The web screen's legend now wraps on a narrow phone.
 
 ### The Vegetable plants set, after the owner was caught by it (24 Nov)
 He played it and could not tell the last two groups apart ("you help me. haha").
@@ -550,5 +557,6 @@ other names for mud.
 - The owner played it and was caught by Vegetable plants: the set, its clues and the clue writer fixed.
 - Automate at the top, on by default; the web of what he has found. Spent on the day: about Rs 110.
 - Breadth and depth, counted on his own web; faint rings; "your web grew".
+- A small picture of his web beside Next, as the child's way in.
 - The web made to look its best, and saved as a picture; a group left one short is tried once more;
   "Make music with it" finished. Spent on the day by the helper's ledger: Rs 136 of 200.

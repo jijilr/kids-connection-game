@@ -199,4 +199,41 @@ void main() {
     expect(g.boardFinished, isFalse, reason: 'the next set has begun');
     expect(g.board!.tiles, hasLength(16));
   });
+
+  // The child's own way into the web: a small round picture of it beside Next, on the card
+  // that ends every set (the owner's word of 24 Nov 2026). He cannot read a button's name.
+  for (final screen in const [Size(700, 1000), Size(360, 640)]) {
+    testWidgets('a small picture of his web stands beside Next and opens the web, at ${screen.width.round()} wide',
+        (tester) async {
+      tester.view.physicalSize = screen;
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      final g = EngineProvider(repo: repo(6), random: Roll(), clock: () => day);
+      await g.init();
+      await tester.pumpWidget(MaterialApp(
+        home: ChangeNotifierProvider<EngineProvider>.value(value: g, child: const EngineScreen()),
+      ));
+      await tester.pump();
+      expect(find.byKey(const ValueKey('web-mini')), findsNothing, reason: 'not while a set is being played');
+      solve(g, ['animal']);
+      await settle(tester);
+      expect(tester.takeException(), isNull, reason: 'nothing overflows');
+      final mini = tester.getRect(find.byKey(const ValueKey('web-mini')));
+      final next = tester.getRect(find.byKey(const ValueKey('next')));
+      final list = tester.getRect(find.byType(SingleChildScrollView));
+      expect(mini.bottom, lessThanOrEqualTo(list.bottom), reason: 'on the screen, like Next');
+      expect(next.bottom, lessThanOrEqualTo(list.bottom));
+      expect(mini.width, greaterThanOrEqualTo(48), reason: 'large enough for a small finger');
+      expect(find.text('+4'), findsWidgets, reason: 'marked: four groups are new on his web');
+
+      await tester.tap(find.byKey(const ValueKey('web-mini')));
+      await settle(tester, 16);
+      expect(find.text('What he has found'), findsOneWidget);
+      expect(find.byKey(const ValueKey('web-next')), findsNothing, reason: 'he came to look; the arrow at the top goes back');
+      await tester.pageBack();
+      await settle(tester);
+      expect(find.byKey(const ValueKey('next')), findsOneWidget, reason: 'back on the card, Next still there');
+      expect(find.text('+4'), findsNothing, reason: 'he has seen them now');
+    });
+  }
 }

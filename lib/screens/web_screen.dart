@@ -220,8 +220,11 @@ class _WebScreenState extends State<WebScreen> with TickerProviderStateMixin {
         children: [
           const Icon(Icons.auto_awesome_rounded, size: 20, color: Color(0xFFB4791A)),
           const SizedBox(width: 8),
-          Text('Your web grew: ${_fresh.length} new',
-              style: GoogleFonts.quicksand(fontWeight: FontWeight.w800, fontSize: 17, color: _ink)),
+          Flexible(
+            child: Text('Your web grew: ${_fresh.length} new',
+                textAlign: TextAlign.center,
+                style: GoogleFonts.quicksand(fontWeight: FontWeight.w800, fontSize: 17, color: _ink)),
+          ),
         ],
       ),
     );
@@ -369,11 +372,13 @@ class _WebScreenState extends State<WebScreen> with TickerProviderStateMixin {
   }
 
   Widget _legend() {
-    Widget item(Widget mark, String text) => Row(mainAxisSize: MainAxisSize.min, children: [
-          mark,
-          const SizedBox(width: 5),
-          Text(text, style: GoogleFonts.inter(fontSize: 11.5, color: Colors.grey.shade800)),
-        ]);
+    Widget item(Widget mark, String text) => Text.rich(
+          TextSpan(children: [
+            WidgetSpan(alignment: PlaceholderAlignment.middle, child: mark),
+            TextSpan(text: '  $text'),
+          ]),
+          style: GoogleFonts.inter(fontSize: 11.5, color: Colors.grey.shade800),
+        );
     return Container(
       width: double.infinity,
       color: Colors.white,
@@ -660,4 +665,64 @@ class _Ring extends CustomPainter {
 
   @override
   bool shouldRepaint(_Ring old) => old.color != color || old.share != share || old.width != width;
+}
+
+/// A small round picture of his own web, as it stands: the way into the web for a child,
+/// who cannot read a button's name (the owner's word of 24 Nov 2026). It is drawn from
+/// the same places as the web itself, so he sees his own shape grow, arm by arm.
+class WebMiniature extends StatelessWidget {
+  const WebMiniature({super.key, required this.nodes, this.size = 58});
+  final List<WebNode> nodes;
+  final double size;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        gradient: const RadialGradient(colors: [Color(0xFFFFFDF4), Color(0xFFFFF0D2), _edge], stops: [0, 0.6, 1]),
+        border: Border.all(color: Colors.white, width: 3),
+        boxShadow: [BoxShadow(color: _ink.withValues(alpha: 0.22), blurRadius: 8, offset: const Offset(0, 3))],
+      ),
+      child: ClipOval(child: CustomPaint(painter: _MiniWeb(nodes))),
+    );
+  }
+}
+
+class _MiniWeb extends CustomPainter {
+  _MiniWeb(this.nodes);
+  final List<WebNode> nodes;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final middle = size.center(Offset.zero);
+    if (nodes.length <= 1) {
+      canvas.drawCircle(middle, size.width * 0.13, Paint()..color = _amber);
+      return;
+    }
+    final layout = WebLayout(nodes, 700);
+    // the whole web inside the round, with a little air at the rim
+    final outermost = nodes.map((n) => (layout.at[n.id]! - layout.centre).distance).fold(1.0, max);
+    final scale = size.width * 0.42 / outermost;
+    Offset place(String id) => middle + (layout.at[id]! - layout.centre) * scale;
+    for (final n in nodes) {
+      if (n.parent == null) continue;
+      canvas.drawLine(
+          place(n.parent!),
+          place(n.id),
+          Paint()
+            ..color = layout.colorOf(n).withValues(alpha: 0.75)
+            ..strokeWidth = 1.4
+            ..strokeCap = StrokeCap.round);
+    }
+    for (final n in nodes) {
+      final step = layout.step[n.id] ?? 0;
+      canvas.drawCircle(place(n.id), n.isStart ? 4.6 : max(1.8, 3.4 - 0.6 * step), Paint()..color = layout.colorOf(n));
+    }
+  }
+
+  @override
+  bool shouldRepaint(_MiniWeb old) => old.nodes.length != nodes.length;
 }

@@ -420,29 +420,56 @@ class EngineScreen extends StatelessWidget {
                   style: GoogleFonts.inter(fontSize: 14, color: Colors.grey.shade800)),
             ],
             const SizedBox(height: 10),
-            ElevatedButton.icon(
-              key: const ValueKey('next'),
-              // after a few sets the web opens first, if it has grown, and then the game goes on
-              onPressed: () async {
-                if (g.webMomentDue) {
-                  g.webMomentShown();
-                  await Navigator.of(context).push(MaterialPageRoute<void>(
-                      builder: (_) => ChangeNotifierProvider<EngineProvider>.value(
-                          value: g, child: const WebScreen(thenNext: true))));
-                }
-                g.goNext();
-              },
-              icon: Icon(!g.automate && next != null && next.inside
-                  ? Icons.arrow_downward_rounded
-                  : Icons.arrow_forward_rounded),
-              label: Text(label),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: _ink,
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 12),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(24)),
-              ),
+            // Next, and beside it a small round picture of his own web: the way into the web
+            // for a child, who cannot read a button's name. It is marked when the web has grown.
+            Wrap(
+              alignment: WrapAlignment.center,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              spacing: 14,
+              runSpacing: 8,
+              children: [
+                Tooltip(
+                  message: 'The web of what he has found',
+                  child: InkWell(
+                    key: const ValueKey('web-mini'),
+                    customBorder: const CircleBorder(),
+                    onTap: () => Navigator.of(context).push(MaterialPageRoute<void>(
+                        builder: (_) =>
+                            ChangeNotifierProvider<EngineProvider>.value(value: g, child: const WebScreen()))),
+                    child: Badge(
+                      isLabelVisible: g.newKnots.isNotEmpty,
+                      backgroundColor: const Color(0xFFFFC107),
+                      textColor: _ink,
+                      label: Text('+${g.newKnots.length}'),
+                      child: WebMiniature(nodes: g.web),
+                    ),
+                  ),
+                ),
+                ElevatedButton.icon(
+                  key: const ValueKey('next'),
+                  // after a few sets the web opens first, if it has grown, and then the game goes on
+                  onPressed: () async {
+                    if (g.webMomentDue) {
+                      g.webMomentShown();
+                      await Navigator.of(context).push(MaterialPageRoute<void>(
+                          builder: (_) => ChangeNotifierProvider<EngineProvider>.value(
+                              value: g, child: const WebScreen(thenNext: true))));
+                    }
+                    g.goNext();
+                  },
+                  icon: Icon(!g.automate && next != null && next.inside
+                      ? Icons.arrow_downward_rounded
+                      : Icons.arrow_forward_rounded),
+                  label: Text(label),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: _ink,
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 12),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(24)),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
