@@ -924,7 +924,7 @@
     "pet_farm_or_wild_of_bird=wild_land": {
       "clues": [
         {
-          "text": "Think about birds that live free, not in a house or a pen.",
+          "text": "Think about birds that live out in the open, not in a house or a pen.",
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3"
         },
         {
@@ -932,7 +932,7 @@
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3"
         },
         {
-          "text": "You would see these birds flying high or sitting in a tree far from people.",
+          "text": "These birds fly free in the sky and are not kept by people.",
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3"
         }
       ],
@@ -1081,15 +1081,15 @@
     "how_we_play_with_it=music": {
       "clues": [
         {
-          "text": "Think about things that make a happy sound.",
+          "text": "Think about things that make a sound you can sing along to.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3"
         },
         {
-          "text": "You can tap, blow or strum to make this sound.",
+          "text": "You use your hands or your breath to make the sound.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3"
         },
         {
-          "text": "People move and dance when they hear this sound.",
+          "text": "People tap, blow or press these to make a happy tune.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3"
         }
       ],
@@ -1156,9 +1156,22 @@
       }
     },
     "what_it_eats=eats_meat": {
-      "clues": [],
+      "clues": [
+        {
+          "text": "Think about what a hunter catches to eat.",
+          "audio": "Assets/audio/groups/what_it_eats__eats_meat__clue1.mp3"
+        },
+        {
+          "text": "Its food is other animals, not leaves or grass.",
+          "audio": "Assets/audio/groups/what_it_eats__eats_meat__clue2.mp3"
+        },
+        {
+          "text": "It eats nothing but the meat of animals it catches.",
+          "audio": "Assets/audio/groups/what_it_eats__eats_meat__clue3.mp3"
+        }
+      ],
       "explanation": {
-        "text": "All of these animals hunt other animals and eat them. They do not eat plants. A cheetah can run very, very fast, as fast as a car on a big road.",
+        "text": "These animals all hunt other animals and eat their meat. That is why they belong together. A cheetah can run very fast, as fast as 105 kilometres in one hour.",
         "audio": "Assets/audio/groups/what_it_eats__eats_meat__explanation.mp3"
       }
     },
@@ -1180,6 +1193,26 @@
       "explanation": {
         "text": "These animals all get most of their food by eating little bugs. Their bodies help them find and catch them. An anteater's tongue can be as long as a grown-up's arm, and it uses it to lick up ants.",
         "audio": "Assets/audio/groups/what_it_eats__eats_insects__explanation.mp3"
+      }
+    },
+    "what_it_eats=eats_both": {
+      "clues": [
+        {
+          "text": "Some animals eat green things, and also eat other animals.",
+          "audio": "Assets/audio/groups/what_it_eats__eats_both__clue1.mp3"
+        },
+        {
+          "text": "This animal fills its tummy with two kinds of food.",
+          "audio": "Assets/audio/groups/what_it_eats__eats_both__clue2.mp3"
+        },
+        {
+          "text": "It eats leaves or fruit, and also eats small animals.",
+          "audio": "Assets/audio/groups/what_it_eats__eats_both__clue3.mp3"
+        }
+      ],
+      "explanation": {
+        "text": "These animals eat plants and also eat other animals. Both kinds of food go in their tummy. A raccoon eats many things, like fruit, nuts, mice, and insects.",
+        "audio": "Assets/audio/groups/what_it_eats__eats_both__explanation.mp3"
       }
     }
   }

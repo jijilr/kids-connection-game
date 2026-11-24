@@ -1947,6 +1947,33 @@
       "cost_usd": 0.1007,
       "vision_check_cost_usd": 0.00021,
       "feature_check_cost_usd": 0.03508
+    },
+    "job_2026_11_24_05_1_01": {
+      "plan_key": "job_2026_11_24_05_1",
+      "purpose": "drawn by the job, run 2026-11-24-05",
+      "file": "tools/pictures/sheets/job_2026_11_24_05_1_01.png",
+      "grid": 1,
+      "rows": 1,
+      "cols": 1,
+      "size": "1024x1024",
+      "cells": [
+        "chimpanzee"
+      ],
+      "names": {
+        "chimpanzee": "Chimpanzee"
+      },
+      "style_version": "v1",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "prompt": "One image showing exactly one subject, whole and centred, with a wide plain white margin on every side:\n\n1. Chimpanzee: A chimpanzee standing on all fours on the ground, covered in coarse black hair with a bare face, fingers and toes; its arms are longer than its legs, its body short and wide, its head rounded with a jutting jaw and strong brow ridge, and long hips wide at the top.\n\nFor this sheet: Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.\n\nStyle: Realistic, natural-looking image in the style of a high-quality nature guide or museum catalogue. True-to-life shape, colour and proportion, with fine natural detail. Soft, even daylight with no dramatic shadows. Each subject is shown whole, centred, filling about three quarters of its cell, isolated on a plain white background that is identical in every cell. No text, letters, numbers, labels, borders or frames. Where the subject is a place, such as a river or a hill, show it as a small self-contained piece of landscape with soft edges on the same white background.",
+      "date": "2026-11-24",
+      "tokens": {
+        "image_output_tokens": 1756,
+        "text_input_tokens": 253
+      },
+      "cost_usd": 0.0539,
+      "vision_check_cost_usd": 5e-05,
+      "feature_check_cost_usd": 0.00558
     }
   },
   "tiles": {
@@ -22526,6 +22553,98 @@
           }
         ]
       }
+    },
+    "job_2026_11_24_05_1_01_c1": {
+      "thing_id": "chimpanzee",
+      "expected_thing": "chimpanzee",
+      "master_file": "tools/pictures/tiles/masters/job_2026_11_24_05_1_01_c1.png",
+      "master_size": [
+        954,
+        954
+      ],
+      "master_sha256": "01ecf0be263fc32876fb884847c89e63e760936875d501248d3d4c667b000ae8",
+      "app_file": "tools/pictures/tiles/app/job_2026_11_24_05_1_01_c1.webp",
+      "app_size": [
+        384,
+        384
+      ],
+      "sheet_id": "job_2026_11_24_05_1_01",
+      "cell": 1,
+      "style_version": "v1",
+      "prompt": "Chimpanzee: A chimpanzee standing on all fours on the ground, covered in coarse black hair with a bare face, fingers and toes; its arms are longer than its legs, its body short and wide, its head rounded with a jutting jaw and strong brow ridge, and long hips wide at the top",
+      "look_closely": "",
+      "model": "gpt-image-2.5-flare",
+      "date": "2026-11-24",
+      "cost_usd": 0.0539,
+      "cut": {
+        "flags": [],
+        "notes": [],
+        "picture_box": [
+          162,
+          122,
+          891,
+          944
+        ],
+        "picture_shape": 0.89,
+        "ok": true,
+        "on": "2026-11-24"
+      },
+      "vision": {
+        "model": "gpt-6-luna",
+        "date": "2026-11-24",
+        "says": "Chimpanzee",
+        "shows": "chimpanzee",
+        "matches_cell": true,
+        "problems": ""
+      },
+      "review": "approved",
+      "review_note": "",
+      "history": [],
+      "feature_check": {
+        "model": "gpt-6.1-sol",
+        "date": "2026-11-24",
+        "rule": "v3: fails only on must_show and listed mistakes; other features are reported; a one-point failure is checked twice and fails only if both runs fail",
+        "must_show": [
+          "yes",
+          "yes",
+          "unclear",
+          "yes",
+          "yes"
+        ],
+        "features": [
+          "yes",
+          "unclear",
+          "yes",
+          "unclear",
+          "yes",
+          "yes",
+          "unclear",
+          "unclear",
+          "unclear",
+          "yes",
+          "yes"
+        ],
+        "mistakes_shown": [],
+        "comment": "The picture clearly shows a black-haired chimpanzee in a knuckle-walking stance, but its hip structure, full hand proportions, hidden skin surfaces and height cannot be confirmed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Chimpanzee",
+          "https://simple.wikipedia.org/wiki/Chimpanzee"
+        ],
+        "passed": true,
+        "reasons": [],
+        "reported": [
+          "cannot be seen: Its body is short and wide, and its hips are long with a wide top."
+        ],
+        "sources_disagree": "",
+        "runs": [
+          {
+            "passed": true,
+            "reasons": []
+          }
+        ]
+      },
+      "reviewed_on": "2026-11-24",
+      "published_file": "Assets/pictures/chimpanzee.webp"
     }
   }
 }

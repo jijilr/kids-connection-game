@@ -3785,6 +3785,44 @@
           "look_closely": "a second try; the better of the two is kept"
         }
       ]
+    },
+    "job_2026_11_24_05_1": {
+      "purpose": "drawn by the job, run 2026-11-24-05",
+      "grid": 1,
+      "size": 1024,
+      "only_for_this_sheet": "Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.",
+      "cells": [
+        {
+          "thing": "chimpanzee",
+          "name": "Chimpanzee",
+          "draw": "A chimpanzee standing on all fours on the ground, covered in coarse black hair with a bare face, fingers and toes; its arms are longer than its legs, its body short and wide, its head rounded with a jutting jaw and strong brow ridge, and long hips wide at the top",
+          "must_show": [
+            "Its arms are longer than its legs.",
+            "Its head is rounded or flattened with a jaw that juts forward and a strong brow ridge.",
+            "Its body is short and wide, and its hips are long with a wide top.",
+            "It can walk on the ground on two legs or on all four limbs.",
+            "It is covered in coarse black hair."
+          ],
+          "not_this": [],
+          "features": [
+            "It is covered in coarse black hair.",
+            "Its face, fingers, toes, palms and soles are bare of hair.",
+            "Its arms are longer than its legs.",
+            "Its hands are long with long fingers and short thumbs.",
+            "Its big toe can be turned to grasp like a thumb.",
+            "Its head is rounded or flattened with a jaw that juts forward and a strong brow ridge.",
+            "It has eyes facing forward, a small nose, round ears without lobes and a long flexible upper lip.",
+            "Its body is short and wide, and its hips are long with a wide top.",
+            "It stands about 150 cm tall on average.",
+            "It can walk on the ground on two legs or on all four limbs.",
+            "It walks on all fours by resting on its knuckles."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Chimpanzee",
+            "https://simple.wikipedia.org/wiki/Chimpanzee"
+          ]
+        }
+      ]
     }
   }
 }

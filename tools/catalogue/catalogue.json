@@ -3138,7 +3138,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_plants"
         ],
         "boards": [
           {
@@ -3157,6 +3158,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_plants",
             "open_now": true
           }
         ]
@@ -3244,7 +3251,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_meat"
         ],
         "boards": [
           {
@@ -3263,6 +3271,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_meat",
             "open_now": true
           }
         ]
@@ -3350,7 +3364,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_meat"
         ],
         "boards": [
           {
@@ -3369,6 +3384,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_meat",
             "open_now": true
           }
         ]
@@ -3455,7 +3476,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_both"
         ],
         "boards": [
           {
@@ -3474,6 +3496,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_both",
             "open_now": true
           }
         ]
@@ -3863,7 +3891,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_both"
         ],
         "boards": [
           {
@@ -3882,6 +3911,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_both",
             "open_now": true
           }
         ]
@@ -3969,7 +4004,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_plants"
         ],
         "boards": [
           {
@@ -3988,6 +4024,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_plants",
             "open_now": true
           }
         ]
@@ -28746,7 +28788,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_meat"
         ],
         "boards": [
           {
@@ -28765,6 +28808,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_meat",
             "open_now": true
           }
         ]
@@ -28858,7 +28907,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_meat"
         ],
         "boards": [
           {
@@ -28877,6 +28927,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_meat",
             "open_now": true
           }
         ]
@@ -28971,7 +29027,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_meat"
         ],
         "boards": [
           {
@@ -28990,6 +29047,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_meat",
             "open_now": true
           }
         ]
@@ -29084,7 +29147,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_insects"
         ],
         "boards": [
           {
@@ -29103,6 +29167,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_insects",
             "open_now": true
           }
         ]
@@ -29196,7 +29266,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_insects"
         ],
         "boards": [
           {
@@ -29215,6 +29286,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_insects",
             "open_now": true
           }
         ]
@@ -29309,7 +29386,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_insects"
         ],
         "boards": [
           {
@@ -29328,6 +29406,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_insects",
             "open_now": true
           }
         ]
@@ -29421,7 +29505,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_insects"
         ],
         "boards": [
           {
@@ -29440,6 +29525,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_insects",
             "open_now": true
           }
         ]
@@ -29533,7 +29624,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_insects"
         ],
         "boards": [
           {
@@ -29552,6 +29644,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_insects",
             "open_now": true
           }
         ]
@@ -29646,7 +29744,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_plants"
         ],
         "boards": [
           {
@@ -29665,6 +29764,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_plants",
             "open_now": true
           }
         ]
@@ -29759,7 +29864,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_plants"
         ],
         "boards": [
           {
@@ -29778,6 +29884,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_plants",
             "open_now": true
           }
         ]
@@ -29870,7 +29982,8 @@
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_both"
         ],
         "boards": [
           {
@@ -29889,6 +30002,12 @@
             "circle": "animal/mammal",
             "sorted_by": "pet_farm_or_wild",
             "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_both",
             "open_now": true
           }
         ]
@@ -29966,11 +30085,7 @@
     },
     "chimpanzee": {
       "name": "Chimpanzee",
-      "status": "held by the rules",
-      "status_why": [
-        "no tile of it passed the checks after 2 sheet(s)"
-      ],
-      "held_from": "job:2026-11-24-04",
+      "status": "in the game",
       "fields": {
         "kind_of_thing": "animal",
         "kind_of_animal": "mammal",
@@ -29979,6 +30094,9 @@
         "what_it_eats": "eats_both"
       },
       "familiar": 0.9,
+      "reviewed": 12,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-05",
       "sources": {
         "pages": [
           {
@@ -30032,23 +30150,63 @@
       "voice": {
         "say": "Chimpanzee",
         "checked_by_ear": false,
-        "clip": null,
-        "cached": "tools/voice/clips/chimpanzee.mp3"
+        "clip": "Assets/audio/names/name_chimpanzee.mp3",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24",
+        "cached": "tools/voice/clips/chimpanzee.mp3",
+        "clip_sha256": "242352e53cfd6e61eede230bb255f386d80b20690da1c4ba5d01ea9b64cab604"
       },
       "worked_out": {
-        "would_join": [
+        "circles": [
           "seed",
           "animal",
           "animal/mammal",
-          "animal/mammal/wild_land"
+          "animal/mammal/wild_land",
+          "animal/mammal/wild_land/eats_both"
+        ],
+        "boards": [
+          {
+            "circle": "seed",
+            "sorted_by": "kind_of_thing",
+            "group": "animal",
+            "open_now": true
+          },
+          {
+            "circle": "animal",
+            "sorted_by": "kind_of_animal",
+            "group": "mammal",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal",
+            "sorted_by": "pet_farm_or_wild",
+            "group": "wild_land",
+            "open_now": true
+          },
+          {
+            "circle": "animal/mammal/wild_land",
+            "sorted_by": "what_it_eats",
+            "group": "eats_both",
+            "open_now": true
+          }
         ]
+      },
+      "picture": {
+        "tile": "job_2026_11_24_05_1_01_c1",
+        "game_file": "Assets/pictures/chimpanzee.webp",
+        "game_sha256": "d54256f0e7e8f8ae358ca2f919014af456ffbc8f158bfff75117197ea7f986a3",
+        "master_file": "tools/pictures/tiles/masters/job_2026_11_24_05_1_01_c1.png",
+        "master_sha256": "3bbfa7ab9e2748d2d6609a62542e0b7c547c1ed3dd07496f877de32f31d284be",
+        "style": "v1",
+        "approved": "by the owner",
+        "approved_on": "2026-11-24",
+        "other_tries": 3
       }
     }
   },
   "worked_out": {
     "things_by_status": {
-      "in the game": 257,
-      "held by the rules": 80,
+      "in the game": 258,
+      "held by the rules": 79,
       "kept for later": 5,
       "excluded": 3,
       "taken out of the game": 23
@@ -30057,6 +30215,7 @@
       "seed",
       "animal",
       "animal/mammal",
+      "animal/mammal/wild_land",
       "animal/bird",
       "animal/dinosaur",
       "plant",
@@ -30071,14 +30230,14 @@
     "circles": {
       "seed": {
         "label": "Everything",
-        "things": 257,
+        "things": 258,
         "steps_from_seed": 0,
         "sorted_by": "kind_of_thing",
         "groups": {
           "animal": {
             "label": "Animals",
-            "things": 106,
-            "with_picture": 106
+            "things": 107,
+            "with_picture": 107
           },
           "plant": {
             "label": "Plants",
@@ -30102,14 +30261,14 @@
       },
       "animal": {
         "label": "Animals",
-        "things": 106,
+        "things": 107,
         "steps_from_seed": 1,
         "sorted_by": "kind_of_animal",
         "groups": {
           "mammal": {
             "label": "Mammals",
-            "things": 32,
-            "with_picture": 32
+            "things": 33,
+            "with_picture": 33
           },
           "bird": {
             "label": "Birds",
@@ -30149,7 +30308,7 @@
       },
       "animal/mammal": {
         "label": "Mammals",
-        "things": 32,
+        "things": 33,
         "steps_from_seed": 2,
         "sorted_by": "pet_farm_or_wild",
         "groups": {
@@ -30165,8 +30324,8 @@
           },
           "wild_land": {
             "label": "Wild animals on land",
-            "things": 17,
-            "with_picture": 17
+            "things": 18,
+            "with_picture": 18
           },
           "wild_water": {
             "label": "Wild animals in water",
@@ -30200,7 +30359,7 @@
       },
       "animal/mammal/wild_land": {
         "label": "Wild animals on land",
-        "things": 17,
+        "things": 18,
         "steps_from_seed": 3,
         "sorted_by": "what_it_eats",
         "groups": {
@@ -30216,8 +30375,8 @@
           },
           "eats_both": {
             "label": "Eats plants and meat",
-            "things": 3,
-            "with_picture": 3
+            "things": 4,
+            "with_picture": 4
           },
           "eats_insects": {
             "label": "Eats mostly insects",
@@ -30225,17 +30384,48 @@
             "with_picture": 5
           }
         },
-        "could_be_filled_by": [
-          {
-            "name": "Chimpanzee",
-            "status": "held by the rules",
-            "group": "eats_both"
-          }
-        ],
+        "open_by_its_things": true,
+        "can_open_now": true,
+        "needs": []
+      },
+      "animal/mammal/wild_land/eats_plants": {
+        "label": "Eats only plants",
+        "things": 4,
+        "steps_from_seed": 4,
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
-          "1 more thing(s) in 'Eats plants and meat'"
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
+        ]
+      },
+      "animal/mammal/wild_land/eats_meat": {
+        "label": "Eats only meat",
+        "things": 5,
+        "steps_from_seed": 4,
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
+        ]
+      },
+      "animal/mammal/wild_land/eats_both": {
+        "label": "Eats plants and meat",
+        "things": 4,
+        "steps_from_seed": 4,
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 12 more things"
+        ]
+      },
+      "animal/mammal/wild_land/eats_insects": {
+        "label": "Eats mostly insects",
+        "things": 5,
+        "steps_from_seed": 4,
+        "open_by_its_things": false,
+        "can_open_now": false,
+        "needs": [
+          "a field to sort it by: no field in the dictionary splits it four ways, and about 11 more things"
         ]
       },
       "animal/mammal/wild_water": {
@@ -31426,7 +31616,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job run 2026-11-24-04",
+    "by": "job run 2026-11-24-05",
     "on": "2026-11-24"
   },
   "groups": {
@@ -33491,10 +33681,10 @@
       "question": "Is it mostly a pet, a farm animal or a wild animal?",
       "clues": [
         {
-          "text": "Think about birds that live free, not in a house or a pen.",
+          "text": "Think about birds that live out in the open, not in a house or a pen.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3",
-          "clip_sha256": "d5fb8b0e36051c688da1b8871f918aff07e0a8e204d810d2bcb2c81ffec4acb4",
+          "clip_sha256": "35981c115e5da8e22ee6fa64a31538b4bf2e6ead9efe58219e73a4c5d7456244",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
@@ -33505,10 +33695,10 @@
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You would see these birds flying high or sitting in a tree far from people.",
+          "text": "These birds fly free in the sky and are not kept by people.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3",
-          "clip_sha256": "963177b8cfabc1a891226735605ce56455cb850e72a8e64dec5a1a1cbef9409c",
+          "clip_sha256": "9cfb951c61cab12dc02ad96ebd6e7202578292b83c1eb4c6e6d1e7af4a3ccaa2",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
@@ -33835,24 +34025,24 @@
       "question": "How do we mostly play with it?",
       "clues": [
         {
-          "text": "Think about things that make a happy sound.",
+          "text": "Think about things that make a sound you can sing along to.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue1.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3",
-          "clip_sha256": "e503dc12942a0a72e14e3c5bdfab7132c5918cb70b113b2f889372b04d79d36a",
+          "clip_sha256": "8e6e28c3bc3b6acb20c5965b20aac060b2e488ac070f2008199f09ce3715e91c",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You can tap, blow or strum to make this sound.",
+          "text": "You use your hands or your breath to make the sound.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue2.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3",
-          "clip_sha256": "9c3a3a91bc52914c0f2e4d3c11a2cde2a03f6a918439eedbd1e0ac0bd15e5853",
+          "clip_sha256": "e3b0360edb586aaae992736b7c3517e174d9f8fe3d8cc437bc31b9375bb596fe",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "People move and dance when they hear this sound.",
+          "text": "People tap, blow or press these to make a happy tune.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue3.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3",
-          "clip_sha256": "4b99747eb5c2ae4da7a356657ccf3ab29d877f2711464ba8dfb2ff3a81a21bb6",
+          "clip_sha256": "a5db4af8898f04cac990518ebee0632fa7850084bc782a4fea3c787a686c1631",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
@@ -34001,25 +34191,44 @@
       "value": "eats_meat",
       "label": "Eats only meat",
       "question": "What does this animal mostly eat?",
-      "clues": [],
+      "clues": [
+        {
+          "text": "Think about what a hunter catches to eat.",
+          "cached": "tools/voice/clips/groups/what_it_eats__eats_meat__clue1.mp3",
+          "clip": "Assets/audio/groups/what_it_eats__eats_meat__clue1.mp3",
+          "clip_sha256": "39c74b8fdd1c1295ab1ae2f842f00603eeb6c9554d47a88836faebcba5e98cf6",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "Its food is other animals, not leaves or grass.",
+          "cached": "tools/voice/clips/groups/what_it_eats__eats_meat__clue2.mp3",
+          "clip": "Assets/audio/groups/what_it_eats__eats_meat__clue2.mp3",
+          "clip_sha256": "dd5fabe23813d5f4af495e9412b3344584ef70d3c9f967c3f5e43c4387381338",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "It eats nothing but the meat of animals it catches.",
+          "cached": "tools/voice/clips/groups/what_it_eats__eats_meat__clue3.mp3",
+          "clip": "Assets/audio/groups/what_it_eats__eats_meat__clue3.mp3",
+          "clip_sha256": "ec3a86d7db3051b70b2e3d1786a3aeefc30541355448981f1775feeffc3eac6a",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        }
+      ],
       "explanation": {
-        "text": "All of these animals hunt other animals and eat them. They do not eat plants. A cheetah can run very, very fast, as fast as a car on a big road.",
-        "together": "All of these animals hunt other animals and eat them. They do not eat plants.",
-        "fact": "A cheetah can run very, very fast, as fast as a car on a big road.",
+        "text": "These animals all hunt other animals and eat their meat. That is why they belong together. A cheetah can run very fast, as fast as 105 kilometres in one hour.",
+        "together": "These animals all hunt other animals and eat their meat. That is why they belong together.",
+        "fact": "A cheetah can run very fast, as fast as 105 kilometres in one hour.",
         "quote": "It is the fastest land animal and can run up to 105 kilometres per hour (65 mph), and accelerate from 0 to 97 kilometres per hour (60 mph) in less than 3 seconds.",
         "source": "cheetah:wikipedia_simple",
         "source_url": "https://simple.wikipedia.org/wiki/Cheetah",
         "cached": "tools/voice/clips/groups/what_it_eats__eats_meat__explanation.mp3",
         "clip": "Assets/audio/groups/what_it_eats__eats_meat__explanation.mp3",
-        "clip_sha256": "f84a00680756e7c22cafc1c77d8d017d91ef12d79860837c3328c20b4ffbd652",
+        "clip_sha256": "4c9306c77aec373d834f18c1030687dfae844f0f9442cdf0a1e7b7e0f9d1cd71",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "held": [
-        "no clues were kept: the clues do not grow more helpful one after another"
-      ]
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
     },
     "what_it_eats=eats_insects": {
       "field": "what_it_eats",
@@ -34059,6 +34268,50 @@
         "cached": "tools/voice/clips/groups/what_it_eats__eats_insects__explanation.mp3",
         "clip": "Assets/audio/groups/what_it_eats__eats_insects__explanation.mp3",
         "clip_sha256": "81eb1605250afd26d286abea2c564406523116c093d5af804bd2555e94acb7e8",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+      },
+      "written_by": "deepseek-flash",
+      "written_on": "2026-11-24",
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+    },
+    "what_it_eats=eats_both": {
+      "field": "what_it_eats",
+      "value": "eats_both",
+      "label": "Eats plants and meat",
+      "question": "What does this animal mostly eat?",
+      "clues": [
+        {
+          "text": "Some animals eat green things, and also eat other animals.",
+          "cached": "tools/voice/clips/groups/what_it_eats__eats_both__clue1.mp3",
+          "clip": "Assets/audio/groups/what_it_eats__eats_both__clue1.mp3",
+          "clip_sha256": "dc7850bac37cc30f74f7921325a07d1d8eef5ab3bae7bd7c7fe008b931ae3db7",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "This animal fills its tummy with two kinds of food.",
+          "cached": "tools/voice/clips/groups/what_it_eats__eats_both__clue2.mp3",
+          "clip": "Assets/audio/groups/what_it_eats__eats_both__clue2.mp3",
+          "clip_sha256": "0d3d2936b2e25e412a8855a12a8b7d86ccac5f2c25c964a3cf0b805aad5790fb",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "It eats leaves or fruit, and also eats small animals.",
+          "cached": "tools/voice/clips/groups/what_it_eats__eats_both__clue3.mp3",
+          "clip": "Assets/audio/groups/what_it_eats__eats_both__clue3.mp3",
+          "clip_sha256": "a5a5acc267b9200e17ae439aeed8c976491f664c8ecd5fc2416b093ef11a8460",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        }
+      ],
+      "explanation": {
+        "text": "These animals eat plants and also eat other animals. Both kinds of food go in their tummy. A raccoon eats many things, like fruit, nuts, mice, and insects.",
+        "together": "These animals eat plants and also eat other animals. Both kinds of food go in their tummy.",
+        "fact": "A raccoon eats many things, like fruit, nuts, mice, and insects.",
+        "quote": "They feed on mice, squirrels, rabbits, birds, fish, frogs, turtles, lizards, snakes, eggs, insects, worms, fruit, and nuts.",
+        "source": "raccoon:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Raccoon",
+        "cached": "tools/voice/clips/groups/what_it_eats__eats_both__explanation.mp3",
+        "clip": "Assets/audio/groups/what_it_eats__eats_both__explanation.mp3",
+        "clip_sha256": "69601d16febfeeef2bc0ea6a1d61e5c586012e6f8dbc52c4b390e4965d7887f3",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",

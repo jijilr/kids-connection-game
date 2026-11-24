@@ -3279,6 +3279,20 @@
       "reviewed": 12,
       "source": "job:grounded+checked",
       "drafted_in": "2026-11-24-04"
+    },
+    "chimpanzee": {
+      "name": "Chimpanzee",
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land",
+        "what_it_eats": "eats_both"
+      },
+      "familiar": 0.9,
+      "reviewed": 12,
+      "source": "job:grounded+checked",
+      "drafted_in": "2026-11-24-05"
     }
   }
 }

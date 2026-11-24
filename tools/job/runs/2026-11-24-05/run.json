@@ -1,0 +1,161 @@
+{
+  "id": "2026-11-24-05",
+  "started": "2026-11-24",
+  "rehearse": null,
+  "cap_inr": 90.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "animal/mammal/wild_land",
+        "chain": "Animals > Mammals > Wild animals on land > Eats plants and meat",
+        "fixed": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "mammal",
+          "pet_farm_or_wild": "wild_land",
+          "what_it_eats": "eats_both"
+        },
+        "need": 1,
+        "recorded_but_not_in_the_game": [
+          {
+            "name": "Chimpanzee",
+            "status": "held by the rules",
+            "group": "eats_both"
+          }
+        ],
+        "retried": [
+          "Chimpanzee"
+        ],
+        "examples": [
+          {
+            "name": "Chimpanzee",
+            "familiar": 0.9,
+            "recognised": true,
+            "suitable": true
+          }
+        ],
+        "facts_done": true
+      }
+    ],
+    "circles": [
+      {
+        "circle": "animal/mammal/wild_land",
+        "label": "Wild animals on land",
+        "chain": "Animals > Mammals > Wild animals on land",
+        "needs_field": false,
+        "expect_things": 2,
+        "his_strength": false,
+        "asks": [
+          0
+        ],
+        "clever_kid": {
+          "sets_looked_at": 3,
+          "with_another_way": 1,
+          "ideas": [
+            "number of legs"
+          ]
+        },
+        "done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": [],
+    "held_back": [],
+    "played": null,
+    "mastered": []
+  },
+  "retry_held": true,
+  "things": [
+    {
+      "name": "Chimpanzee",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Chimpanzee",
+        "fields": {
+          "kind_of_thing": "animal",
+          "kind_of_animal": "mammal",
+          "extinct": false,
+          "pet_farm_or_wild": "wild_land",
+          "what_it_eats": "eats_both"
+        },
+        "familiar": 0.9,
+        "reviewed": 12,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-24-05"
+      },
+      "fields": {
+        "kind_of_thing": "animal",
+        "kind_of_animal": "mammal",
+        "extinct": false,
+        "pet_farm_or_wild": "wild_land",
+        "what_it_eats": "eats_both"
+      },
+      "familiar": 0.9,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_animal"
+      ],
+      "ask": 0,
+      "look": {
+        "must_show": [
+          "Its arms are longer than its legs.",
+          "Its head is rounded or flattened with a jaw that juts forward and a strong brow ridge.",
+          "Its body is short and wide, and its hips are long with a wide top.",
+          "It can walk on the ground on two legs or on all four limbs.",
+          "It is covered in coarse black hair."
+        ],
+        "not_this": [],
+        "features": [
+          "It is covered in coarse black hair.",
+          "Its face, fingers, toes, palms and soles are bare of hair.",
+          "Its arms are longer than its legs.",
+          "Its hands are long with long fingers and short thumbs.",
+          "Its big toe can be turned to grasp like a thumb.",
+          "Its head is rounded or flattened with a jaw that juts forward and a strong brow ridge.",
+          "It has eyes facing forward, a small nose, round ears without lobes and a long flexible upper lip.",
+          "Its body is short and wide, and its hips are long with a wide top.",
+          "It stands about 150 cm tall on average.",
+          "It can walk on the ground on two legs or on all four limbs.",
+          "It walks on all fours by resting on its knuckles."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/Chimpanzee",
+          "https://simple.wikipedia.org/wiki/Chimpanzee"
+        ]
+      },
+      "draw": "A chimpanzee standing on all fours on the ground, covered in coarse black hair with a bare face, fingers and toes; its arms are longer than its legs, its body short and wide, its head rounded with a jutting jaw and strong brow ridge, and long hips wide at the top",
+      "tries": 1,
+      "tile": "job_2026_11_24_05_1_01_c1"
+    }
+  ],
+  "sheets": [
+    "job_2026_11_24_05_1_01"
+  ],
+  "stopped": "",
+  "fields_added": [],
+  "fields_held": [],
+  "open_before": [
+    "animal",
+    "animal/bird",
+    "animal/dinosaur",
+    "animal/mammal",
+    "made_by_people",
+    "made_by_people/building",
+    "made_by_people/household",
+    "made_by_people/toy",
+    "made_by_people/vehicle",
+    "nature_not_alive",
+    "plant",
+    "plant/vegetable",
+    "seed"
+  ],
+  "spent_usd": {
+    "deepseek": 0.00741,
+    "drawing": 0.0539,
+    "picture_checks": 0.00563
+  },
+  "opened": [
+    "Wild animals on land"
+  ]
+}
