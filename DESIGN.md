@@ -448,8 +448,12 @@ Code: `tools/job/cross.py` (the data); `BoardAssembler.canon`, `questionsAt`, `c
 - **A wider circle is a looser idea.** "Wild animals on land" now holds a lion, a crow, a
   housefly and a house lizard. Two checks agree that each belongs. Whether such a group still
   teaches something is a question for the owner.
-- **Only one question has been widened.** "Which part do we eat?" is still asked only of
-  vegetable plants, so the mango tree still cannot join the tomato.
+- **Two questions have been widened.** "Which part of the plant do we eat?" is now asked of
+  every plant it fits: the mango tree and the banana plant join the tomato under "the fruit",
+  rice, wheat and the sunflower join the seeds, the coconut tree lists two parts, and the
+  question does not fit the rose, the lotus, the marigold, grass, the neem tree, sugarcane or
+  bamboo. One pass over a long list proved too careless to say a question does not fit a
+  thing: a thing only one check placed is now asked again by itself.
 
 ## 8b. The map of places: the nerve system
 
@@ -601,6 +605,45 @@ unaffected.
 
 Command: `python tools/catalogue/places.py` builds the map and lists it;
 `python tools/catalogue/places.py show PLACE` prints one record.
+
+## 8c. Clues live with the kinds
+
+Owner, 24 Nov 2026: "it is a bad habit to have to deal with this - when we create it... as meta
+data of classification is extracted. can you look at the meta data, dictionary entries etc...
+and add clues parallel to the particular metadata (for classification) we use when we pick the
+card as clue? if we don't have this, can you add them yourself?"
+
+**What was wrong.** A group's clues were written afterwards, by a separate pass that looked at
+the things that happened to be in the group that day. A group that grew was left with clues
+that were no longer true, or with none. "Wild animals on land" was twice given "they live far
+from people's homes", with a housefly in it.
+
+**The rule now.** A clue comes from what defines the kind, so it is true of every thing that
+can ever belong to it.
+
+- Each question in the dictionary carries, beside `values`, a `clues` entry: for each kind a
+  ladder of three, from a gentle hint to nearly there.
+- **A kind is made with its clues.** Whoever proposes or chooses a question, or adds a kind to
+  one, gives the three clues of each group with it (`tools/job/fields.py`, `widen.py`), and
+  they go into the dictionary with the kind.
+- Every group a player can meet takes its ladder from the dictionary each time the catalogue is
+  saved. A ladder is used only if it passes the check that needs no model, against the things
+  the group holds now: three clues, none too long, none holding a thing's name.
+- The writer of words (`tools/content/group_words.py`) no longer writes or replaces these
+  clues. It writes the explanation, and it is now told what defines the kind: the reason it
+  gives must say that and claim nothing more. The fact in an explanation is still taken from
+  a saved page, word for word.
+
+**The one move for what was already there** (`tools/content/clues_into_dictionary.py`): all 71
+kinds of the questions that sort sets have their ladder in the dictionary. 58 were taken over
+as they stood. 13 were written by the assistant by hand, from the kind's definition, as the
+owner asked: the eleven kinds that had none, and two whose clues were no longer true of the
+kind ("Wild animals on land", "The fruit"). Two explanations were written by hand the same
+way, each fact checked word for word against its saved page.
+
+The group "in between" at the first question is named **"Hard to place"** in the dictionary,
+with its own three clues (the owner: "the branch in the main node which saying 'hard to
+classify' (or some apt shorter name)").
 
 ## 9. The measures, and the audience
 

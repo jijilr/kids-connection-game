@@ -61,6 +61,21 @@ SAME_SPLIT = 0.9          # two fields that agree on this share of the things ar
 ONE_IN = 8                # of the things already in a circle, one in this many may fit more than one group
 SHARP_ENOUGH = 0.85       # the share of all names that both checks must place where the proposer did
 
+# A kind is made with its clues (the owner, 24 Nov 2026: clues are "parallel to the particular
+# metadata (for classification) we use when we pick the card"). Whoever proposes or chooses a
+# question says, for each group, the three hints that follow from what makes a thing belong
+# there. They are kept in the dictionary beside the group's name.
+CLUES_NOTE = """
+
+For each group also give "clues": three short hints for a child who is looking for that group, each one plain sentence. They must come from what makes a thing belong in the group, the very reason things are put there, so that each is true of EVERY thing that could ever belong in it, not only of the ones listed. The first is a gentle hint; the last nearly gives it away. Never name a thing of the group. The second and third must not be true of a thing of another group. Add them inside each group, as "clues": ["...", "...", "..."]."""
+
+
+def ladder_of(raw) -> list:
+    """Three clues or more, each a short sentence, or nothing: a ladder is kept whole or not at all."""
+    clues = [" ".join(str(c).split()) for c in raw or [] if str(c).strip()] if isinstance(raw, list) else []
+    return clues[:3] if len(clues) >= 3 and all(len(c.split()) <= 24 for c in clues[:3]) else []
+
+
 PROPOSER = "You design sorting questions for a small child's picture game. You answer only with JSON."
 
 PROPOSE_TASK = """A picture game for a four-year-old in India, who cannot read yet. A board shows 16 pictures. The child sorts them into four groups of four, by ONE question.
@@ -286,7 +301,8 @@ def choose(client, config, spend, questions: list, chain: str, names: list, earl
               + "; ".join(earlier) + ".\n") if earlier else ""
     answer = reslib.ask(client, config, spend, CHOOSER, CHOOSE_TASK.format(
         chain=chain, members=", ".join(names), count=CANDIDATES, new=NEW_NAMES, library=listing, earlier=before,
-        like=", ".join(like[:8]) or "plain everyday names") + (NEW_NOTE if NEW_TO_HIM else ""), proposer_options(config, 3400))
+        like=", ".join(like[:8]) or "plain everyday names") + CLUES_NOTE + (NEW_NOTE if NEW_TO_HIM else ""),
+        proposer_options(config, 4600))
     by_id, found = {q["id"]: q for q in questions}, []
     clean = lambda items: [str(x).strip() for x in items or [] if str(x).strip()]
     for raw in answer.get("chosen") or []:
@@ -296,8 +312,11 @@ def choose(client, config, spend, questions: list, chain: str, names: list, earl
         groups = {key_of(g.get("key", "")): g for g in raw.get("groups") or [] if isinstance(g, dict)}
         found.append({"key": question["id"], "library": question["id"], "wording": question["wording"],
                       "why": question["from"],
+                      # the library's own clues for a group, where it has them, before the model's
                       "values": [{"key": key, "label": label, "members": clean(groups.get(key, {}).get("members")),
-                                  "new": clean(groups.get(key, {}).get("new"))}
+                                  "new": clean(groups.get(key, {}).get("new")),
+                                  "clues": ladder_of((question.get("clues") or {}).get(key))
+                                  or ladder_of(groups.get(key, {}).get("clues"))}
                                  for key, label in question["values"].items()]})
     return found[:CANDIDATES]
 
@@ -322,7 +341,8 @@ def propose(client, config, spend, dictionary: dict, chain: str, names: list, ea
               + "; ".join(earlier) + ".\n") if earlier else ""
     answer = reslib.ask(client, config, spend, PROPOSER, PROPOSE_TASK.format(
         chain=chain, members=", ".join(names), count=CANDIDATES, new=NEW_NAMES, existing=existing, earlier=before,
-        like=", ".join(like[:8]) or "plain everyday names") + (NEW_NOTE if NEW_TO_HIM else ""), proposer_options(config))
+        like=", ".join(like[:8]) or "plain everyday names") + CLUES_NOTE + (NEW_NOTE if NEW_TO_HIM else ""),
+        proposer_options(config, 3800))
     found = []
     for raw in answer.get("fields") or []:
         if not isinstance(raw, dict) or not isinstance(raw.get("values"), list):
@@ -332,7 +352,8 @@ def propose(client, config, spend, dictionary: dict, chain: str, names: list, ea
             if isinstance(value, dict):
                 clean = lambda items: [str(x).strip() for x in items or [] if str(x).strip()]
                 values.append({"key": key_of(value.get("key", "")), "label": str(value.get("label", "")).strip(),
-                               "members": clean(value.get("members")), "new": clean(value.get("new"))})
+                               "members": clean(value.get("members")), "new": clean(value.get("new")),
+                               "clues": ladder_of(value.get("clues"))})
         found.append({"key": key_of(raw.get("key", "")), "wording": str(raw.get("wording", "")).strip(),
                       "why": str(raw.get("why", "")).strip(), "values": values})
     return found[:CANDIDATES]
@@ -519,6 +540,10 @@ def test(client, config, spend, dictionary: dict, things: dict, taken: set, path
     if candidate.get("library"):
         definition["library"] = candidate["library"]
     result["library"] = candidate.get("library")
+    # the clues that came with each group go into the dictionary with it
+    made_with = {v["key"]: v["clues"] for v in candidate["values"] if v.get("clues") and v["key"] in result["values"]}
+    if made_with:
+        definition["clues"] = made_with
     clash = boards_clean(dictionary, things, path, candidate["key"], definition, result["placed"],
                          {name: o["value"] for name, o in result["new"].items()}, limit)
     if clash:

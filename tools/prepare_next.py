@@ -565,6 +565,8 @@ def add_kind(run: dict, entry: dict, field: str, kind: dict, result: dict):
     dictionary = cat.read_json(cat.DICTIONARY)
     definition = dictionary["fields"][field]
     definition["values"][kind["key"]] = kind["label"]
+    if kind.get("clues"):       # a kind is made with its clues, from what defines it
+        definition.setdefault("clues", {})[kind["key"]] = kind["clues"]
     definition.setdefault("widened", []).append({
         "value": kind["key"], "on": today(), "run": run["id"], "why": kind["why"],
         "tests": f"two checks put {len(result['names'])} of its things in it, none of the things already "

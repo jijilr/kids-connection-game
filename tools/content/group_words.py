@@ -62,7 +62,7 @@ The question: "{question}" It is asked about: {chain}.
 The group you write for: "{label}".
 The things in this group now: {members}.
 The other groups this question makes, with their things: {others}.
-
+{definition}
 Write two things for this group.
 
 1. CLUES. A ladder of three clues that lead the child toward this group without giving it away.
@@ -98,12 +98,30 @@ For each clue answer:
 "only_here": does it point to THIS group and away from the others? Answer false if a child holding a thing from another group would think the clue is about his thing just as much. (A clue about shape or size alone nearly always fails this: "small and round, or long and thin" fits a tomato and a chilli as well as a pea and a bean.)
 Then "ladder": is each clue more helpful than the one before it?
 
-An explanation was also written: "{explanation}"
+{definition}An explanation was also written: "{explanation}"
 "supported": reading ONLY this quoted sentence, would a careful reader agree that the fact "{fact}" is true? The quote: "{quote}"
 "explains": does the explanation say, simply and truly, why these things belong together?
 "for_a_child": is every word of the explanation one a four-year-old knows, and is the fact one he would enjoy hearing?
 
 Return JSON: {{"clues": [{{"true": true, "names": false, "simple": true, "only_here": true}}], "ladder": true, "supported": true, "explains": true, "for_a_child": true}}"""
+
+
+def defined_as(group: dict, to_check: bool = False) -> str:
+    """What makes a thing belong in the group, in the dictionary's own words: the clues that
+    were made with the kind (the owner's word of 24 Nov 2026: the words about a group come
+    from the classification itself). The writer must give this as the reason and add nothing
+    to it; the checker must refuse a reason that says more than this. A group that grew
+    was twice given "they live far from people's homes", with a housefly in it."""
+    ladder = (cat.read_json(cat.DICTIONARY)["fields"].get(group.get("field"), {}).get("clues") or {}).get(str(group.get("value")))
+    if not ladder:
+        return ""
+    meaning = " ".join(ladder)
+    if to_check:
+        return (f'What makes a thing belong in this group is only this: "{meaning}" The explanation "explains" only if its '
+                "reason says this and claims nothing more about where these things live, what they look like or what they do.\n")
+    return (f'\nWhat makes a thing belong in this group is only this: "{meaning}" In the explanation, "together" must say '
+            "this reason in your own warm words and must claim nothing more: no place they live, no look and no habit that "
+            "this does not say. Many more things will join this group later, and it must stay true of them all.\n")
 
 
 def written_for(names: list, others: list) -> str:
@@ -125,7 +143,8 @@ def still_fit(client, config, spend, group: dict, chain: str, others: list, name
     verdict = reslib.ask(client, config, spend, CHECKER, CHECK_TASK.format(
         question=group["question"], chain=chain, label=group["label"], members=", ".join(names),
         others=", ".join(others), clues="\n".join(f"{i}. {c}" for i, c in enumerate(clues, 1)),
-        explanation=explanation or "(not asked about this time)", fact="", quote=""),
+        explanation=explanation or "(not asked about this time)", fact="", quote="",
+        definition=defined_as(group, to_check=True)),
         {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"], "most_written": 300})
     marks = verdict.get("clues") if isinstance(verdict.get("clues"), list) else []
     wrong = clue_problems(clues, banned_words(group, names))
@@ -205,7 +224,7 @@ def write_one(client, config, spend, group: dict, chain: str, others: list, name
     for attempt in (1, 2, 3):      # a third try: telling one group from its neighbours is the hard part
         answer = reslib.ask(client, config, spend, WRITER, TASK.format(
             question=group["question"], chain=chain, label=group["label"], members=", ".join(group["members"]),
-            others=", ".join(others), longest=LONGEST_SENTENCE, sources=block,
+            others=", ".join(others), longest=LONGEST_SENTENCE, sources=block, definition=defined_as(group),
             complaint=("\nYour last try was refused: " + complaint + " Write it again without that fault.\n") if complaint else ""),
             opts(700))
         clues = [str(c).strip() for c in answer.get("clues") or [] if str(c).strip()]
@@ -224,7 +243,8 @@ def write_one(client, config, spend, group: dict, chain: str, others: list, name
         verdict = reslib.ask(client, config, spend, CHECKER, CHECK_TASK.format(
             question=group["question"], chain=chain, label=group["label"], members=", ".join(group["members"]),
             others=", ".join(others), clues="\n".join(f"{i}. {c}" for i, c in enumerate(clues, 1)),
-            explanation=f"{together} {fact}".strip(), fact=fact, quote=quote), opts(300)) if clues else {}
+            explanation=f"{together} {fact}".strip(), fact=fact, quote=quote,
+            definition=defined_as(group, to_check=True)), opts(300)) if clues else {}
         marks = verdict.get("clues") if isinstance(verdict.get("clues"), list) else []
         for i, clue in enumerate(clues, 1):
             mark = marks[i - 1] if i - 1 < len(marks) and isinstance(marks[i - 1], dict) else {}
@@ -324,6 +344,12 @@ def main():
             stopped = str(stop).split(". What was")[0]
             return False
         before, stays = catalogue["groups"].get(key, {}), []
+        if before.get("clues_from") == "the dictionary":
+            # The clues of this group are the dictionary's: made with the kind, from what defines
+            # it (the owner's word of 24 Nov 2026). They are not written here and not replaced
+            # here; this run is for the explanation.
+            record["clues"], record["clues_from"] = before["clues"], "the dictionary"
+            record["held"] = [h for h in record.get("held", []) if not h.startswith("no clues")]
         if "--again" not in args:
             clue_untrue = [u for u in untrue if u.startswith("clue")]
             told_untrue = [u for u in untrue if u.startswith("the explanation")]
@@ -374,8 +400,12 @@ def main():
         group, names, others = setting(key)
         before = catalogue["groups"][key]
         try:
+            # clues that are the dictionary's come from what defines the kind: only the explanation,
+            # which was written about the things, is read again
+            mine = [] if before.get("clues_from") == "the dictionary" else [c["text"] for c in before["clues"]]
             wrong = still_fit(client, config, spend, group, chain_of(dictionary, group["field"]), others, names,
-                              [c["text"] for c in before["clues"]], (before.get("explanation") or {}).get("text", ""))
+                              mine, (before.get("explanation") or {}).get("text", ""))
+            wrong = [w for w in wrong if mine or not w.startswith("there are 0 clues")]
         except SystemExit as stop:
             stopped = str(stop).split(". What was")[0]
             break

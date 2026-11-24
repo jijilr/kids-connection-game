@@ -94,9 +94,9 @@ def sort_them(client, config, spend, chain: str, definition: dict, such_as: dict
     values = [{"key": key, "label": label, "such_as": such_as.get(key, [])[:EXAMPLES]}
               for key, label in definition["values"].items()]
     keys, labels = [v["key"] for v in values], {v["key"]: v["label"] for v in values}
-    placed, several, nowhere = {}, {}, []
-    for start in range(0, len(names), 30):      # thirty cards to a call: a long list is sorted less carefully
-        batch = names[start:start + 30]
+    placed, several, nowhere, alone = {}, {}, [], []
+    for start in range(0, len(names), 12):      # a dozen cards to a call: a long list is sorted less carefully
+        batch = names[start:start + 12]
         first, second = field_rules.sort_twice(client, config, spend, chain,
                                                {"wording": definition["wording"], "values": values}, batch)
         one, _ = field_rules.one_value_each(batch, first, second, keys, labels)
@@ -107,7 +107,24 @@ def sort_them(client, config, spend, chain: str, definition: dict, such_as: dict
             named = [v for v in keys if v in field_rules.values_named(name, first, second, keys, labels)]
             if len(named) >= 2:
                 several[name] = named
+            elif len(named) == 1:
+                alone.append(name)      # one check gave it a group and the other gave it none
             else:
+                nowhere.append(name)
+    # A card among cards that fit nowhere is itself called "none" too easily (the mango tree,
+    # asked beside the rose and the grass). Where only one check placed a thing, it is asked
+    # again by itself; it is placed only if both checks then agree.
+    for name in alone:
+        first, second = field_rules.sort_twice(client, config, spend, chain,
+                                               {"wording": definition["wording"], "values": values}, [name])
+        one, _ = field_rules.one_value_each([name], first, second, keys, labels)
+        if name in one:
+            placed[name] = one[name]
+        else:
+            named = [v for v in keys if v in field_rules.values_named(name, first, second, keys, labels)]
+            several[name] = named if len(named) >= 2 else several.get(name)
+            if not several[name]:
+                del several[name]
                 nowhere.append(name)
     return placed, several, nowhere
 
@@ -146,13 +163,15 @@ def rules_after(dictionary: dict, field: str, path: list, twins: list, everywher
                 answer = rule.pop(asked)
                 other["expected_on"] = {**was[asked], **rule, field: answer}
                 rule = other["expected_on"]
+    already = fields[field].get("expected_on") == dict(path)
     fields[field]["expected_on"] = dict(path)
     if not everywhere:
         # it is asked wherever it fits inside the circle: a thing it does not fit carries no answer
         fields[field]["where_it_fits"] = True
-    fields[field].setdefault("crossed", []).append({
-        "on": reslib.today(), "now_asked_of": dict(path), "was_asked_of": was[field],
-        "why": "the owner, 24 Nov 2026: circles cross; a question belongs to every thing it is true of"})
+    if not already:
+        fields[field].setdefault("crossed", []).append({
+            "on": reslib.today(), "now_asked_of": dict(path), "was_asked_of": was[field],
+            "why": "the owner, 24 Nov 2026: circles cross; a question belongs to every thing it is true of"})
     for twin in twins:
         fields[twin]["merged_into"] = field
         fields[twin]["sorts_boards"] = False
@@ -174,7 +193,8 @@ def main():
         raise SystemExit(f"No such field or circle. Circles: python tools/catalogue/catalogue.py circles")
     path = cat.circle_path(circles, cid)
     definition = dictionary["fields"][field]
-    if not inside(definition.get("expected_on"), path):
+    again = definition.get("expected_on") == dict(path)     # asked of this circle already: only what is left is sorted
+    if not again and not inside(definition.get("expected_on"), path):
         raise SystemExit(f'"{definition["wording"]}" is not asked inside {circles[cid]["label"]} today, so it cannot be widened to it.')
     todo = plan(dictionary, things, field, path)
     print(f'"{definition["wording"]}" is to be asked of all of {circles[cid]["label"]}.')
@@ -197,11 +217,22 @@ def main():
     answered.update({k: value for k, (_, value) in todo["take_over"].items()})
     such_as = examples(things, answered, circles[cid].get("sorted_by"))
     chain = " > ".join(dictionary["fields"][f]["values"][str(v)] for f, v in path)
-    placed, several, nowhere = sort_them(reslib.deepseek(), config, spend, chain, definition, such_as, names) if names else ({}, {}, [])
+    client = reslib.deepseek() if names else None
+    placed, several, nowhere = sort_them(client, config, spend, chain, definition, such_as, names) if names else ({}, {}, [])
+    if nowhere and (placed or several):
+        # One pass over a long list is not careful enough to say that a question does not fit a
+        # thing (the first run left the mango tree out of "the fruit"). What was not placed is
+        # asked once more, a few at a time, with what was placed shown among the examples.
+        for name, value in placed.items():
+            such_as.setdefault(value, []).insert(0, name)
+        more, more_several, nowhere = sort_them(client, config, spend, chain, definition, such_as, nowhere)
+        placed.update(more)
+        several.update(more_several)
     spent = f"Spent: Rs {spend.usd * config['inr_per_usd']:.2f}."
 
     saved = {p: p.read_text(encoding="utf-8") for p in (cat.DICTIONARY, LIBRARY)}
-    reslib.write_json(cat.DICTIONARY, rules_after(dictionary, field, path, todo["twins"], everywhere=not nowhere))
+    reslib.write_json(cat.DICTIONARY, rules_after(dictionary, field, path, todo["twins"],
+                                                  everywhere=not nowhere and not definition.get("where_it_fits")))
     library = cat.read_json(LIBRARY)
     for question in library.get("questions", []):
         # noted, not offered more widely: `for` still says which circles may take the question

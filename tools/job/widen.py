@@ -64,7 +64,9 @@ Which other true answers does this question have for things of this part: kinds 
 
 For each kind give {new} of its members under "new", the best known first, named as the things above are named.
 
-Return JSON: {{"kinds": [{{"key": "short_snake_case", "label": "The group's name, one to four words", "why": "a few words", "new": ["..."]}}]}}"""
+For each kind also give "clues": three short hints for a child who is looking for that group, each one plain sentence. They must come from what makes a thing belong in the kind, so that each is true of EVERY thing that could ever belong in it. The first is a gentle hint; the last nearly gives it away. Never name a thing of the kind. The second and third must not be true of a thing of another kind.
+
+Return JSON: {{"kinds": [{{"key": "short_snake_case", "label": "The group's name, one to four words", "why": "a few words", "new": ["..."], "clues": ["...", "...", "..."]}}]}}"""
 
 BETWEEN_TASK = """A sorting game holds this part: {chain}.
 It is sorted by the question: "{wording}"
@@ -126,7 +128,7 @@ def propose_kinds(client, config, spend, chain: str, definition: dict, such_as: 
     kinds = "\n".join(f'- {label}: {", ".join(such_as.get(key, [])[:8]) or "nothing yet"}'
                       for key, label in definition["values"].items())
     answer = reslib.ask(client, config, spend, KINDER, KINDS_TASK.format(
-        chain=chain, wording=definition["wording"], kinds=kinds, count=NEW_KINDS, new=NEW_NAMES), options(config, 700))
+        chain=chain, wording=definition["wording"], kinds=kinds, count=NEW_KINDS, new=NEW_NAMES), options(config, 1000))
     taken_labels = {field_rules.norm(label) for label in definition["values"].values()}
     out = []
     for item in answer.get("kinds") or []:
@@ -138,7 +140,8 @@ def propose_kinds(client, config, spend, chain: str, definition: dict, such_as: 
             continue
         if field_rules.norm(label) in taken_labels or key in {o["key"] for o in out}:
             continue
-        out.append({"key": key, "label": label, "why": str(item.get("why", "")).strip(), "new": names})
+        out.append({"key": key, "label": label, "why": str(item.get("why", "")).strip(), "new": names,
+                    "clues": field_rules.ladder_of(item.get("clues"))})
     return out[:NEW_KINDS]
 
 

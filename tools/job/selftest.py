@@ -1085,15 +1085,17 @@ def test_a_question_has_a_reach_and_a_thing_it_does_not_fit_carries_no_answer():
     import cross
     dictionary, things, path = crossing_world()
     def sort_twice(client, config, spend, chain, candidate, names):
-        where = {"Shark": ("swims", ["swims"]), "Eel": ("swims", ["crawls"]), "T rex": ("none", [])}
+        where = {"Shark": ("swims", ["swims"]), "Eel": ("swims", ["crawls"]), "T rex": ("none", []),
+                 # one check places it and the other does not, among the others; asked alone, both agree
+                 "Ray": ("none", ["swims"]) if len(names) > 1 else ("swims", ["swims"])}
         return {n: where[n][0] for n in names}, {n: where[n][1] for n in names}
     real, cross.field_rules.sort_twice = cross.field_rules.sort_twice, sort_twice
     try:
         placed, several, nowhere = cross.sort_them(None, {}, None, "Animals", dictionary["fields"]["how_it_moves"], {},
-                                                   ["Shark", "Eel", "T rex"])
+                                                   ["Shark", "Eel", "T rex", "Ray"])
     finally:
         cross.field_rules.sort_twice = real
-    assert placed == {"Shark": "swims"}, "both checks, one group"
+    assert placed == {"Shark": "swims", "Ray": "swims"}, "both checks, one group; the ray once it was asked by itself"
     assert several == {"Eel": ["swims", "crawls"]}, "the checks differ: it lists both, and stays off such sets"
     assert nowhere == ["T rex"], "neither can place it: the question is not about it"
 
@@ -1174,6 +1176,44 @@ def test_a_place_the_tree_never_knew_is_planned_from_the_map():
     assert job.plan_place(the_map, "animal/wild_land")["nothing_to_do"] == ["Wild animals on land: it can already open"]
     held = job.plan_place(the_map, "animal/bird/pet")
     assert held["circles"] == [] and held["blocked"] == ["Pets at home: held: the rules: too few"]
+
+
+# ------------------------------------------------------------------ a kind is made with its clues
+
+def test_a_question_is_proposed_with_the_clues_of_each_of_its_groups():
+    """The owner, 24 Nov 2026: "it is a bad habit to have to deal with this" afterwards. Whoever
+    proposes a question gives, with each group, the three hints that follow from what makes a
+    thing belong there; they go into the dictionary with the group."""
+    assert field_rules.ladder_of(["One.", "Two  words.", "Three."]) == ["One.", "Two words.", "Three."]
+    assert field_rules.ladder_of(["One.", "Two."]) == [], "a ladder is kept whole or not at all"
+    assert field_rules.ladder_of("not a list") == [] and field_rules.ladder_of(None) == []
+    assert field_rules.ladder_of(["a " * 30, "b", "c"]) == [], "a clue is one short sentence"
+    answer = {"fields": [{"key": "how_it_moves", "wording": "How does it move?", "why": "a real difference", "values": [
+        {"key": "flies", "label": "Flies", "members": ["Crow"], "new": ["Kite bird"],
+         "clues": ["Think about going up.", "It has wings to hold it in the air.", "It moves through the sky, not on the ground."]},
+        {"key": "swims", "label": "Swims", "members": ["Duck"], "new": [], "clues": ["Only one."]}]}]}
+    asked = []
+    def ask(client, config, spend, system, user, options=None):
+        asked.append(user)
+        return answer
+    real, field_rules.reslib.ask = field_rules.reslib.ask, ask
+    try:
+        found = field_rules.propose(None, {"model": "m", "thinking": "t"}, None, {"fields": {}}, "Animals > Birds", ["Crow", "Duck"], [], [])
+    finally:
+        field_rules.reslib.ask = real
+    assert "true of EVERY thing that could ever belong" in asked[0], "the model is asked for clues from what defines the group"
+    values = {v["key"]: v for v in found[0]["values"]}
+    assert values["flies"]["clues"][2] == "It moves through the sky, not on the ground." and values["swims"]["clues"] == []
+    # and a kind added to a question comes with its clues as well
+    import widen
+    offered = {"kinds": [{"key": "arachnid", "label": "Spiders and their kin", "why": "eight legs", "new": ["Spider"],
+                          "clues": ["Many legs.", "Count them: eight.", "Eight legs and no wings."]}]}
+    real, widen.reslib.ask = widen.reslib.ask, lambda *a, **k: offered
+    try:
+        kind = widen.propose_kinds(None, {"model": "m", "thinking": "t"}, None, "Animals", ANIMALS, SUCH_AS)[0]
+    finally:
+        widen.reslib.ask = real
+    assert kind["clues"] == ["Many legs.", "Count them: eight.", "Eight legs and no wings."]
 
 
 def main():

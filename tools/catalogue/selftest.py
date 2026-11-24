@@ -248,6 +248,43 @@ def test_each_place_that_can_make_a_set_has_a_small_file_of_its_own_things():
     assert places.file_of("animal/mammal/wild_land") == "places/animal__mammal__wild_land.json"
 
 
+def test_clues_live_with_the_kinds_in_the_dictionary_and_every_group_takes_its_own_from_there():
+    """The owner, 24 Nov 2026: clues are "parallel to the particular metadata (for classification)
+    we use when we pick the card". A clue made from what defines a kind stays true as the kind grows."""
+    dictionary = cat.read_json(cat.DICTIONARY)
+    for field, definition in dictionary["fields"].items():
+        if definition.get("merged_into") or not definition.get("sorts_boards", True) or len(definition["values"]) < cat.GROUPS:
+            continue
+        for value, label in definition["values"].items():
+            ladder = (definition.get("clues") or {}).get(value)
+            assert ladder and len(ladder) == 3 and all(isinstance(c, str) and c.strip() for c in ladder), \
+                f"{label} ({field}) has no ladder of three clues in the dictionary"
+    catalogue = cat.load()
+    for key, group in cat.groups_on_boards(catalogue).items():
+        ladder = dictionary["fields"][group["field"]]["clues"][str(group["value"])]
+        record = catalogue["groups"][key]
+        assert [c["text"] for c in record["clues"]] == ladder and record["clues_from"] == "the dictionary", key
+    # a ladder that names a thing of its group is not used, and the group keeps what it had
+    changed = copy.deepcopy(catalogue)
+    group = next(g for g in cat.groups_on_boards(changed).values() if g["field"] == "kind_of_animal" and g["value"] == "bird")
+    before = [c["text"] for c in changed["groups"]["kind_of_animal=bird"]["clues"]]
+    real, cat.read_json = cat.read_json, lambda path, default=None: (
+        _with_clue(real(path, default), "kind_of_animal", "bird", ["It is a parrot.", "It has feathers.", "It has wings."])
+        if path == cat.DICTIONARY else real(path, default))
+    try:
+        refused = cat.sync_dictionary_clues(changed)
+    finally:
+        cat.read_json = real
+    assert any("Birds" in line and "parrot" in line for line in refused)
+    assert [c["text"] for c in changed["groups"]["kind_of_animal=bird"]["clues"]] == before
+
+
+def _with_clue(dictionary: dict, field: str, value: str, ladder: list) -> dict:
+    dictionary = copy.deepcopy(dictionary)
+    dictionary["fields"][field]["clues"][value] = ladder
+    return dictionary
+
+
 def main():
     tests = [value for name, value in globals().items() if name.startswith("test_")]
     for test in tests:

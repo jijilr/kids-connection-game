@@ -1,6 +1,6 @@
 {
  "place": "plant",
- "stamp": "eea29a75f5ef",
+ "stamp": "27dbf636b31f",
  "things": {
   "mango_tree": {
    "name": "Mango tree",
@@ -8,7 +8,8 @@
     "kind_of_thing": "plant",
     "extinct": false,
     "kind_of_plant": "tree",
-    "tree_academic": true
+    "tree_academic": true,
+    "part_we_eat": "fruit"
    },
    "familiar": 0.95,
    "reviewed": 13,
@@ -21,7 +22,8 @@
     "kind_of_thing": "plant",
     "extinct": false,
     "kind_of_plant": "tree",
-    "tree_academic": false
+    "tree_academic": false,
+    "part_we_eat": "fruit"
    },
    "familiar": 0.9,
    "reviewed": 13,
@@ -37,13 +39,18 @@
     "kind_of_thing": "plant",
     "extinct": false,
     "kind_of_plant": "tree",
-    "tree_academic": "depends"
+    "tree_academic": "depends",
+    "part_we_eat": [
+     "fruit",
+     "seeds_or_pods"
+    ]
    },
    "familiar": 0.9,
    "reviewed": 13,
    "source": "deepseek:drafted+checked",
    "notes": {
-    "tree_academic": "A palm has a tall woody trunk but does not grow wood in rings as other trees do, so botanists differ on whether to call it a true tree."
+    "tree_academic": "A palm has a tall woody trunk but does not grow wood in rings as other trees do, so botanists differ on whether to call it a true tree.",
+    "part_we_eat": "Two checks could not give it one group: The fruit and The seeds. It stays off sets sorted by this question. Asked of all of Plants on 2026-11-24."
    },
    "drafted_in": "seed_and_animals"
   },
@@ -77,7 +84,8 @@
    "fields": {
     "kind_of_thing": "plant",
     "extinct": false,
-    "kind_of_plant": "flower"
+    "kind_of_plant": "flower",
+    "part_we_eat": "seeds_or_pods"
    },
    "familiar": 0.85,
    "reviewed": 13,
@@ -113,7 +121,8 @@
    "fields": {
     "kind_of_thing": "plant",
     "extinct": false,
-    "kind_of_plant": "grass_grain"
+    "kind_of_plant": "grass_grain",
+    "part_we_eat": "seeds_or_pods"
    },
    "familiar": 1.0,
    "reviewed": 13,
@@ -158,7 +167,8 @@
    "fields": {
     "kind_of_thing": "plant",
     "extinct": false,
-    "kind_of_plant": "grass_grain"
+    "kind_of_plant": "grass_grain",
+    "part_we_eat": "seeds_or_pods"
    },
    "familiar": 0.75,
    "reviewed": 13,
@@ -322,6 +332,99 @@
    "reviewed": 13,
    "source": "job:grounded+checked",
    "drafted_in": "2026-10-06-06"
+  },
+  "pumpkin_plant": {
+   "name": "Pumpkin plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "fruit"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "ladies_finger_plant": {
+   "name": "Ladies finger plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "fruit"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06",
+   "notes": {
+    "part_we_eat": "The owner's word of 2026-11-24: he played the set on 24 Nov and it caught him: we eat the whole of it, like a tomato or a brinjal, and nobody opens it for the seeds (It was 'The seeds or pods'.)"
+   }
+  },
+  "potato_plant": {
+   "name": "Potato plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "under_the_ground"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "garlic_plant": {
+   "name": "Garlic plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "under_the_ground"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "fenugreek_plant": {
+   "name": "Fenugreek plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "leaves"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "mustard_plant": {
+   "name": "Mustard plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "leaves"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "cowpea_plant": {
+   "name": "Cowpea plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "seeds_or_pods"
+   },
+   "familiar": 0.6,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-08"
   }
  }
 }

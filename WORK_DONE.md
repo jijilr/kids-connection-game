@@ -18,7 +18,7 @@ Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 | Dictionary | version 12, 21 fields (two withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups with words | 61, each with a ladder of clues; 59 have an explanation |
-| Tests | 114 in the game, 45 for the job, 6 for the helper, 11 for the catalogue, 10 for the pictures. All pass |
+| Tests | 114 in the game, 46 for the job, 6 for the helper, 12 for the catalogue, 10 for the pictures. All pass |
 
 **The fifteen sets:** Everything, Animals, Mammals, Wild animals on land and Make music with it (both
 made on 24 Nov by the helper, the second while the owner played), Birds, Dinosaurs, Plants, Vegetable
@@ -371,6 +371,25 @@ copy of the rules, and had drifted apart. Step 1 of five is built (`DESIGN.md`, 
   from another moment is refused. `things.json` is still written, for the job and as the fallback.
   Tests: `test/things_by_place_test.dart` (4): the real app's loading; the fetch ahead; a stale file
   refused; and that each place's file is enough by itself for every set the map says can be made there.
+
+### Clues live with the kinds, in the dictionary (24 Nov, night)
+The owner: "it is a bad habit to have to deal with this - when we create it... add clues parallel to the
+particular metadata (for classification)... if we don't have this, can you add them yourself?" The whole
+of it is in `DESIGN.md`, section 8c.
+- Each question in the dictionary now carries a `clues` entry: for each kind, a ladder of three made
+  from what defines the kind. All 71 kinds have one: 58 taken over as they stood, 13 written by the
+  assistant by hand (the eleven that had none, and two that were no longer true).
+- Every group a player can meet takes its clues from the dictionary on every save. The pass that used
+  to write clues afterwards no longer writes or replaces them; it writes explanations, and is now told
+  what defines the kind and may say no more than that.
+- A kind is made with its clues from now on: the job asks for them when it proposes or chooses a
+  question, and when it adds a kind.
+- "Wild animals on land" and "Wild animals in water" have true clues again, and an explanation each,
+  written by hand with the fact checked word for word against its saved page.
+- The group "in between" at the first question is named "Hard to place".
+- **"Which part of the plant do we eat?" is asked of every plant it fits** (Rs 0.2): the mango tree and
+  the banana plant join the tomato under "the fruit".
+- The helper now runs in the owner's Terminal panel, where the app does not stop it.
 
 ### Room for the set on a phone (24 Nov, night)
 The owner played on his phone and sent two pictures: the explanation "takes away too much vertical space

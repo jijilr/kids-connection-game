@@ -604,20 +604,20 @@
     "part_we_eat=fruit": {
       "clues": [
         {
-          "text": "Think about the part of the plant that holds the seeds inside.",
+          "text": "Think about the part of the plant that holds the seeds.",
           "audio": "Assets/audio/groups/part_we_eat__fruit__clue1.mp3"
         },
         {
-          "text": "We eat this soft, round part that grows after the flower falls.",
+          "text": "It grows where a flower was.",
           "audio": "Assets/audio/groups/part_we_eat__fruit__clue2.mp3"
         },
         {
-          "text": "You can see the little seeds inside when you cut it open.",
+          "text": "We eat this part, the one that has the plant's seeds inside it.",
           "audio": "Assets/audio/groups/part_we_eat__fruit__clue3.mp3"
         }
       ],
       "explanation": {
-        "text": "We eat these soft, ripe parts that grow from flowers. They hold the seeds inside them. A pumpkin is a fruit, and it can be orange, red, blue, or white.",
+        "text": "These all belong together because we eat the part that grew from a flower and holds the plant's seeds inside. A tomato is called a fruit because it has seeds inside it.",
         "audio": "Assets/audio/groups/part_we_eat__fruit__explanation.mp3"
       }
     },
@@ -884,27 +884,40 @@
     "pet_farm_or_wild=wild_land": {
       "clues": [
         {
-          "text": "Think of a creature that lives free, far from people's homes.",
+          "text": "Think about an animal that nobody owns.",
           "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue1.mp3"
         },
         {
-          "text": "It walks or crawls on the ground, not in water, and nobody feeds it.",
+          "text": "Nobody feeds it and nobody keeps it: it finds its own food.",
           "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue2.mp3"
         },
         {
-          "text": "It finds its own food in the forest or grassland, all by itself.",
+          "text": "It lives free, and it lives on land, not in water.",
           "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue3.mp3"
         }
       ],
       "explanation": {
-        "text": "These animals all live free on land, away from homes and farms. They find their own food and make their own homes outdoors. A cheetah can run very, very fast, as fast as a car on a big road.",
+        "text": "Nobody owns these animals, and nobody feeds them. They find their own food, and they live on land. An elephant is the biggest animal that lives on land.",
         "audio": "Assets/audio/groups/pet_farm_or_wild__wild_land__explanation.mp3"
       }
     },
     "pet_farm_or_wild=wild_water": {
-      "clues": [],
+      "clues": [
+        {
+          "text": "Think about an animal that is at home where it is wet.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue1.mp3"
+        },
+        {
+          "text": "Nobody feeds it and nobody keeps it: it finds its own food.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue2.mp3"
+        },
+        {
+          "text": "It lives free, in the sea, in a river or a pond, or right beside one.",
+          "audio": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue3.mp3"
+        }
+      ],
       "explanation": {
-        "text": "These animals all live in water — in rivers, seas or the sea. That is why they go together in one group. A penguin uses its flippers to swim under the water, but it cannot fly in the air.",
+        "text": "Nobody owns these animals, and nobody feeds them. They find their own food in the water, or right beside it. A penguin swims under the water with its flippers, but it cannot fly.",
         "audio": "Assets/audio/groups/pet_farm_or_wild__wild_water__explanation.mp3"
       }
     },

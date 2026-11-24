@@ -471,6 +471,8 @@ def notes(catalogue: dict) -> list:
 
 def save(catalogue: dict):
     work_out(catalogue)
+    for line in sync_dictionary_clues(catalogue):
+        print("  note: " + line)
     wrong = problems(catalogue, about_to_save=True)
     if wrong:
         raise SystemExit("The catalogue was NOT saved. The guard found:\n  - " + "\n  - ".join(wrong))
@@ -652,6 +654,33 @@ def sync_group_voice(catalogue: dict):
             if clip.exists() and fingerprint(clip) == made["sha256"]:
                 words.update(clip=made["game_file"], clip_sha256=made["sha256"],
                              clip_from=f"Kokoro, voice {made['voice']}, recorded {made['recorded_on']}")
+
+
+def sync_dictionary_clues(catalogue: dict) -> list:
+    """Clues live with the kinds they are clues to: in the dictionary, beside each kind's
+    name, made when the kind is made (the owner's word of 24 Nov 2026). Here each group a
+    child can meet takes its ladder from there. A ladder is used only if it passes the check
+    that needs no model, against the things the group holds NOW: three clues, none too long,
+    none holding a thing's name. One that fails is not used, and the reason is returned; the
+    group then keeps whatever clues it had. Returns the reasons."""
+    import group_words                         # the check; it loads this module, so it is brought in here
+    dictionary, things, refused = read_json(DICTIONARY), game_copy(catalogue)["things"], []
+    for key, group in groups_on_boards(catalogue).items():
+        ladder = (dictionary["fields"][group["field"]].get("clues") or {}).get(str(group["value"]))
+        if not ladder:
+            continue
+        names = [t.get("shown_as") or t["name"] for t in things.values() if value_of(t, group["field"]) == group["value"]]
+        wrong = group_words.clue_problems(ladder, group_words.banned_words(group, names))
+        if wrong:
+            refused.append(f"the dictionary's clues for {group['label']} are not used: " + "; ".join(wrong))
+            continue
+        record = catalogue.setdefault("groups", {}).setdefault(key, {
+            "field": group["field"], "value": group["value"], "label": group["label"], "question": group["question"]})
+        if [c.get("text") for c in record.get("clues", [])] != ladder:
+            record["clues"] = [{"text": text} for text in ladder]
+        record["clues_from"] = "the dictionary"
+    sync_group_voice(catalogue)
+    return refused
 
 
 def sync_sources(catalogue: dict):

@@ -22,7 +22,37 @@
         "made_by_people": "Things people make"
       },
       "expected_on": "everything",
-      "since": 1
+      "since": 1,
+      "clues": {
+        "animal": [
+          "Think about something that is alive and can move on its own.",
+          "It can find its own food and eat it.",
+          "It can have babies, and it breathes and grows."
+        ],
+        "plant": [
+          "Think about things that grow in the ground.",
+          "They are alive and they do not walk or fly.",
+          "They have roots, stems, and leaves, and they make their own food."
+        ],
+        "nature_not_alive": [
+          "Think about things you can see outside that are not alive.",
+          "These things are not animals and not plants.",
+          "People do not make these things; they are just there in the world."
+        ],
+        "made_by_people": [
+          "Think about things that are not found growing or walking on their own.",
+          "People use their hands and tools to make these things.",
+          "These things would not be here if nobody had made them."
+        ]
+      },
+      "in_between": {
+        "label": "Hard to place",
+        "clues": [
+          "Think about things that do not fit in just one group.",
+          "They are a little like one kind of thing, and a little like another.",
+          "Even the people who study them do not agree where they belong."
+        ]
+      }
     },
     "kind_of_animal": {
       "wording": "What kind of animal is it?",
@@ -49,7 +79,49 @@
           "why": "eight-legged land arthropods, not insects",
           "tests": "two checks put 6 of its things in it, none of the things already there, and found no place for its things among the kinds that were there"
         }
-      ]
+      ],
+      "clues": {
+        "mammal": [
+          "Think about animals that drink their mother's milk when they are babies.",
+          "These animals have hair or fur on their bodies.",
+          "These animals are warm when you touch them, even when it is cold outside."
+        ],
+        "bird": [
+          "Think about animals that have feathers.",
+          "These animals have wings and a beak.",
+          "Most of them can fly, but some cannot."
+        ],
+        "fish": [
+          "Think about a creature that lives in water all its life.",
+          "It breathes water through gills, not air.",
+          "It has fins to swim and no legs at all."
+        ],
+        "insect": [
+          "Think about tiny creatures with six legs.",
+          "These little creatures often have wings too.",
+          "You can see many of them buzzing or crawling near you."
+        ],
+        "reptile": [
+          "Think of animals whose skin is dry and covered in scales.",
+          "These animals are cold when you touch them, and they lie in the sun to get warm.",
+          "These animals have scaly skin and most of them lay eggs on land, not in water."
+        ],
+        "amphibian": [
+          "Think about an animal that lives two lives.",
+          "It begins its life in water, as a little swimmer with a tail.",
+          "When it grows up it gets legs, and then it can live on land too."
+        ],
+        "dinosaur": [
+          "Long, long ago, these animals lived on our Earth, and now we only see their bones.",
+          "Their bones are hard and old, and people dig them out of the ground to look at them.",
+          "These animals are not alive today at all — they all died out long before anyone's grandma was born."
+        ],
+        "arachnids": [
+          "Think about a small creature with many legs.",
+          "Count its legs: there are eight, not six.",
+          "It has eight legs and no wings, and it is not an insect."
+        ]
+      }
     },
     "dinosaur_academic": {
       "wording": "Is it a dinosaur to a scientist?",
@@ -79,7 +151,29 @@
       "expected_on": {
         "kind_of_animal": "dinosaur"
       },
-      "since": 1
+      "since": 1,
+      "clues": {
+        "land_hunter": [
+          "Think about a dinosaur that eats other animals.",
+          "It hunts other dinosaurs on dry land, not in water or in the sky.",
+          "It has strong legs for running after its food, and sharp teeth for eating it."
+        ],
+        "land_grazer": [
+          "Think about a dinosaur that eats green plants all day.",
+          "This dinosaur walks on the ground and eats plants, not meat.",
+          "This plant-eater stays on land and never flies or swims."
+        ],
+        "flyer": [
+          "Think about a creature up in the sky with big wings.",
+          "This animal had wings and could fly, but it was not a bird.",
+          "Its wings were made of skin, and it flew high above the ground."
+        ],
+        "swimmer": [
+          "Think about animals that live in the water all the time.",
+          "These animals swim in the sea and never walk on land.",
+          "They use flippers or paddles to move through the water."
+        ]
+      }
     },
     "extinct": {
       "wording": "Is it extinct or still living?",
@@ -107,7 +201,29 @@
       "expected_on": {
         "kind_of_thing": "plant"
       },
-      "since": 2
+      "since": 2,
+      "clues": {
+        "tree": [
+          "Think about a plant with a big, hard stem called a trunk.",
+          "This plant grows very tall and has branches up high.",
+          "Birds like to sit and rest in this tall plant."
+        ],
+        "flower": [
+          "Think of a plant part that is pretty to look at and smells nice.",
+          "This plant part is often put in a vase or given as a gift.",
+          "Bees and butterflies come to this bright, colourful part of a plant."
+        ],
+        "grass_grain": [
+          "Think about plants with long, thin leaves.",
+          "These plants grow in big open fields, not in pots.",
+          "Many of these plants give us food we eat every day."
+        ],
+        "vegetable": [
+          "Think about the plants we grow to eat at dinner.",
+          "We cook and eat these plants, not just look at them.",
+          "These plants go into our curry or our sabzi."
+        ]
+      }
     },
     "tree_academic": {
       "wording": "Is it a tree to a scientist?",
@@ -137,7 +253,29 @@
       "expected_on": {
         "kind_of_thing": "nature_not_alive"
       },
-      "since": 2
+      "since": 2,
+      "clues": {
+        "sky": [
+          "Think about what you see when you look up high above your head.",
+          "You can see these far away, but you cannot walk to them or touch them.",
+          "They look like they float or shine up above, not down here on the ground."
+        ],
+        "water": [
+          "Think about something wet you can see outside.",
+          "It is not alive, but plants and animals need it.",
+          "It can be big or small, and it stays in one place or moves."
+        ],
+        "land": [
+          "Think about a place you can walk on, outside.",
+          "It is a part of the ground, not water or sky.",
+          "You can stand on it and look around."
+        ],
+        "ground": [
+          "Think about the hard ground under your feet.",
+          "You can pick it up, but it was never alive.",
+          "It is not water, not sky, and not a place you live."
+        ]
+      }
     },
     "kind_of_made_thing": {
       "wording": "What do we use it for?",
@@ -152,7 +290,34 @@
       "expected_on": {
         "kind_of_thing": "made_by_people"
       },
-      "since": 2
+      "since": 2,
+      "clues": {
+        "vehicle": [
+          "Think about things that take people or loads from one place to another.",
+          "You do not carry it in your hand; you sit in it or climb on it to go somewhere.",
+          "It has wheels, or wings, or floats, and it moves you far away."
+        ],
+        "toy": [
+          "Think about things you play with.",
+          "You hold them, move them, or make them go.",
+          "They are made just for fun, not for work."
+        ],
+        "household": [
+          "Think about the things you find inside a home.",
+          "You use these every day, and they stay in one place.",
+          "These are not for going places or for playing; they help you live at home."
+        ],
+        "tool": [
+          "Think about something you hold in your hand to help you do a job.",
+          "You use it to make or fix things, not to ride in or play with.",
+          "It is hard and strong, and it helps your hand do work like hitting, digging or cutting."
+        ],
+        "building": [
+          "Think about places you can go inside or walk on.",
+          "People go to these places to do something or to get something.",
+          "Some are big and some are small, but people made them all."
+        ]
+      }
     },
     "part_we_eat": {
       "wording": "Which part of the plant do we eat?",
@@ -164,12 +329,47 @@
         "seeds_or_pods": "The seeds"
       },
       "expected_on": {
-        "kind_of_plant": "vegetable"
+        "kind_of_thing": "plant"
       },
       "since": 3,
       "library": "part_we_eat",
       "history": [
         "24 Nov 2026: 'The seeds or pods' became 'The seeds'. The owner played the set and was caught by Ladies finger, a pod we eat whole like a fruit; with 'pods' in the name no clue could tell this group from the fruit. Its things (pea, bean, maize, cowpea) are the ones whose seeds we eat."
+      ],
+      "clues": {
+        "fruit": [
+          "Think about the part of the plant that holds the seeds.",
+          "It grows where a flower was.",
+          "We eat this part, the one that has the plant's seeds inside it."
+        ],
+        "under_the_ground": [
+          "Think about the part of a plant that hides down in the soil.",
+          "We dig it out of the ground to eat it.",
+          "It grows down low, under the dirt, not up high in the sun."
+        ],
+        "leaves": [
+          "Think about the green, flat part of a plant that grows up in the sun.",
+          "We pick this green part and cook it, but we do not dig it up from under the soil.",
+          "We eat this soft green part, and we do not wait for a fruit or a seed to grow."
+        ],
+        "seeds_or_pods": [
+          "Think about the little hard parts inside a plant that can grow into a new plant.",
+          "We take these out and cook them, not the soft juicy part around them.",
+          "We dry them and keep them in jars to eat later, like little hard bits."
+        ]
+      },
+      "where_it_fits": true,
+      "crossed": [
+        {
+          "on": "2026-11-24",
+          "now_asked_of": {
+            "kind_of_thing": "plant"
+          },
+          "was_asked_of": {
+            "kind_of_plant": "vegetable"
+          },
+          "why": "the owner, 24 Nov 2026: circles cross; a question belongs to every thing it is true of"
+        }
       ]
     },
     "kind_of_plant_academic": {
@@ -201,7 +401,29 @@
       "expected_on": {
         "kind_of_made_thing": "vehicle"
       },
-      "since": 4
+      "since": 4,
+      "clues": {
+        "road": [
+          "Think about how people go from one place to another on land.",
+          "These things roll on wheels and stop for people or goods.",
+          "These things share the road with other traffic and need a driver or rider."
+        ],
+        "rails": [
+          "Think about how a thing moves along a special path.",
+          "It rolls on two long metal lines.",
+          "It cannot turn away to the left or the right."
+        ],
+        "water": [
+          "Think about where a thing can move along, not on a hard path.",
+          "It moves on something soft and wet that you can splash in.",
+          "It floats and moves on the water, not on land or in the sky."
+        ],
+        "air": [
+          "Think about something that goes high above your head.",
+          "It does not need a road, a track, or water to move.",
+          "It stays up in the sky while it carries people or things."
+        ]
+      }
     },
     "kind_of_house_thing": {
       "wording": "What kind of thing in the house is it?",
@@ -215,7 +437,29 @@
       "expected_on": {
         "kind_of_made_thing": "household"
       },
-      "since": 4
+      "since": 4,
+      "clues": {
+        "furniture": [
+          "Think about the big, heavy things in a house that stay in one place.",
+          "You do not carry these around; they stay put and hold you or your things.",
+          "You sit on it, sleep on it, eat at it, or keep things inside it."
+        ],
+        "eating": [
+          "Think about things we use when we are hungry or thirsty.",
+          "We hold these in our hands at the table when we eat.",
+          "We put food or drink on or in these, then it goes to our mouth."
+        ],
+        "cleaning": [
+          "Think about things that help make a place clean.",
+          "You use them when something is dirty.",
+          "They help you wash or sweep away the dirt."
+        ],
+        "electric": [
+          "Think about things in your house that need power to work.",
+          "These things stop working when the power goes off.",
+          "You must plug these things in or switch them on to use them."
+        ]
+      }
     },
     "what_happens_when_wet": {
       "wording": "What happens when it gets wet?",
@@ -251,7 +495,29 @@
       },
       "since": 6,
       "library": "shape_of_the_land",
-      "added_by": "the rules, job run 2026-10-07-03"
+      "added_by": "the rules, job run 2026-10-07-03",
+      "clues": {
+        "high": [
+          "Think about land that goes up, up, up.",
+          "This land is tall and steep, not flat at all.",
+          "You would have to climb up to stand on this land."
+        ],
+        "flat": [
+          "Think about land where you can see far, all around you.",
+          "The ground does not go up, and it does not go down.",
+          "It is wide and level, with no hill and no hole."
+        ],
+        "by_water": [
+          "Think about a place where the ground meets the wet.",
+          "On one side there is land, and on the other there is water.",
+          "It is the edge of the land, right beside a sea, a river or a lake."
+        ],
+        "hollow": [
+          "Think about a place where the ground goes down, not up.",
+          "It is a low or empty spot you could look down into.",
+          "It is a dip or a hole in the ground, not a flat or high place."
+        ]
+      }
     },
     "pet_farm_or_wild": {
       "wording": "Is it mostly a pet, a farm animal or a wild animal?",
@@ -280,7 +546,29 @@
           },
           "why": "the owner, 24 Nov 2026: circles cross; a question belongs to every thing it is true of"
         }
-      ]
+      ],
+      "clues": {
+        "pet": [
+          "Think about an animal that lives inside your house with you.",
+          "This animal likes to stay close to people and be cared for by them.",
+          "People feed it, keep it safe, and it stays with the family at home."
+        ],
+        "farm": [
+          "Think about animals that live where a farmer can look after them.",
+          "These animals give the farmer food or wool or eggs to use.",
+          "The farmer keeps them in a yard, a coop or a field, not in the house."
+        ],
+        "wild_land": [
+          "Think about an animal that nobody owns.",
+          "Nobody feeds it and nobody keeps it: it finds its own food.",
+          "It lives free, and it lives on land, not in water."
+        ],
+        "wild_water": [
+          "Think about an animal that is at home where it is wet.",
+          "Nobody feeds it and nobody keeps it: it finds its own food.",
+          "It lives free, in the sea, in a river or a pond, or right beside one."
+        ]
+      }
     },
     "pet_farm_or_wild_of_bird": {
       "wording": "Is it mostly a pet, a farm animal or a wild animal?",
@@ -321,7 +609,44 @@
       },
       "since": 9,
       "library": "what_people_do_there",
-      "added_by": "the rules, job run 2026-10-07-03"
+      "added_by": "the rules, job run 2026-10-07-03",
+      "clues": {
+        "live": [
+          "Think about a place where a family stays.",
+          "People sleep there, cook there, and come back there every day.",
+          "It is somebody's home."
+        ],
+        "learn": [
+          "Think about a place full of books and questions.",
+          "Children and grown-ups go there to find things out.",
+          "A teacher helps people learn there."
+        ],
+        "pray": [
+          "Think of a place where people go to talk to God.",
+          "People go there to sing, to pray, and to be quiet with God.",
+          "People sit together there and fold their hands to pray."
+        ],
+        "buy": [
+          "Think about a place where money and things change hands.",
+          "People come here to get things they need or want, and they pay for them.",
+          "Here you can pick a thing up, pay money for it, and carry it home."
+        ],
+        "heal": [
+          "Think about a place people go to when they are sick or hurt.",
+          "Doctors and nurses work there.",
+          "People go there to get well again."
+        ],
+        "travel": [
+          "Think about a place where you go to begin a trip far away.",
+          "People wait there with bags, ready to go somewhere new.",
+          "You go there to get on a big thing that carries you away."
+        ],
+        "cross": [
+          "Think about going from one side to the other side.",
+          "You do not stay here; you go across or go up.",
+          "It helps you get over something, like water or a road."
+        ]
+      }
     },
     "how_we_play_with_it": {
       "wording": "How do we mostly play with it?",
@@ -340,7 +665,44 @@
       },
       "since": 10,
       "library": "how_we_play_with_it",
-      "added_by": "the rules, job run 2026-10-07-06"
+      "added_by": "the rules, job run 2026-10-07-06",
+      "clues": {
+        "throw": [
+          "Think about a toy that does not stay in your hands.",
+          "You send it away from you, and someone sends it back.",
+          "You throw it, kick it or hit it, and off it goes."
+        ],
+        "ride": [
+          "Think about a toy that carries you.",
+          "You climb on it, and it holds you up.",
+          "You sit on it, and you ride, rock or roll along."
+        ],
+        "build": [
+          "Think about making something new with your hands.",
+          "You put the pieces one on top of another.",
+          "When you finish, you have made a shape or a thing."
+        ],
+        "pretend": [
+          "Think about a toy you hold close and love.",
+          "This toy is soft or small, and you use it in your arms or in make-believe.",
+          "You hug it, or you act like it is real in a story."
+        ],
+        "wheel": [
+          "Think about a toy that rolls.",
+          "It has wheels, and your hand pushes or pulls it along the floor.",
+          "You do not sit on it: it rolls along on its own little wheels."
+        ],
+        "fly": [
+          "Think about a toy that goes up in the air and floats.",
+          "You hold it with a string or your hand, and the air lifts it.",
+          "It moves through the air above you, not on the ground."
+        ],
+        "music": [
+          "Think about toys that make sounds you can hear.",
+          "You use your hands or your mouth to make the sound come out.",
+          "The sound is music, not a bang or a beep."
+        ]
+      }
     },
     "dinosaur_group": {
       "wording": "Which dinosaur family does it belong to?",
@@ -376,7 +738,29 @@
         "pet_farm_or_wild": "wild_land"
       },
       "since": 12,
-      "added_by": "the rules, job run 2026-11-24-04"
+      "added_by": "the rules, job run 2026-11-24-04",
+      "clues": {
+        "eats_plants": [
+          "Think about what grows green in the ground.",
+          "This animal's tummy is happy with grass and leaves.",
+          "It never wants meat or bugs, only green things."
+        ],
+        "eats_meat": [
+          "This animal eats other animals, not plants.",
+          "It hunts other animals and eats only their meat.",
+          "Its food is meat, and it never eats plants or bugs."
+        ],
+        "eats_both": [
+          "This animal eats two kinds of food, not just one.",
+          "It eats green things that grow, and also eats other animals.",
+          "Its tummy gets full from plants and from meat too."
+        ],
+        "eats_insects": [
+          "Think about tiny crawling things with six legs.",
+          "These animals hunt for very small bugs to fill their tummies.",
+          "They use long noses or sticky tongues to catch little bugs."
+        ]
+      }
     },
     "how_it_makes_sound": {
       "wording": "How does this toy make its sound?",
@@ -391,7 +775,29 @@
         "how_we_play_with_it": "music"
       },
       "since": 13,
-      "added_by": "the rules, job run 2026-11-24-11"
+      "added_by": "the rules, job run 2026-11-24-11",
+      "clues": {
+        "hit_or_strike": [
+          "Think about how your hand makes a sound on something.",
+          "You use a stick or your hand to tap it.",
+          "When you tap or bang it, it makes a loud sound."
+        ],
+        "blow_into": [
+          "You use your breath to make the sound.",
+          "Your mouth goes on it, and the air goes in.",
+          "You blow in, and the air makes the music."
+        ],
+        "press_keys": [
+          "Think about a toy you play with your fingers.",
+          "You do not hit it or blow it or pull its strings.",
+          "You touch small parts on top, and music comes out."
+        ],
+        "pluck_strings": [
+          "Think about how your fingers touch the toy to start the sound.",
+          "You move your fingers along tight lines to make the sound.",
+          "Your fingers pull or sweep the tight lines, and they are not keys or holes."
+        ]
+      }
     }
   }
 }

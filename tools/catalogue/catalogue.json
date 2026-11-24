@@ -17,7 +17,8 @@
         "kind_of_thing": "plant",
         "extinct": false,
         "kind_of_plant": "tree",
-        "tree_academic": true
+        "tree_academic": true,
+        "part_we_eat": "fruit"
       },
       "familiar": 0.95,
       "reviewed": 13,
@@ -113,7 +114,8 @@
         "kind_of_thing": "plant",
         "extinct": false,
         "kind_of_plant": "tree",
-        "tree_academic": false
+        "tree_academic": false,
+        "part_we_eat": "fruit"
       },
       "familiar": 0.9,
       "reviewed": 13,
@@ -209,13 +211,18 @@
         "kind_of_thing": "plant",
         "extinct": false,
         "kind_of_plant": "tree",
-        "tree_academic": "depends"
+        "tree_academic": "depends",
+        "part_we_eat": [
+          "fruit",
+          "seeds_or_pods"
+        ]
       },
       "familiar": 0.9,
       "reviewed": 13,
       "source": "deepseek:drafted+checked",
       "notes": {
-        "tree_academic": "A palm has a tall woody trunk but does not grow wood in rings as other trees do, so botanists differ on whether to call it a true tree."
+        "tree_academic": "A palm has a tall woody trunk but does not grow wood in rings as other trees do, so botanists differ on whether to call it a true tree.",
+        "part_we_eat": "Two checks could not give it one group: The fruit and The seeds. It stays off sets sorted by this question. Asked of all of Plants on 2026-11-24."
       },
       "drafted_in": "seed_and_animals",
       "picture": {
@@ -402,7 +409,8 @@
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
-        "kind_of_plant": "flower"
+        "kind_of_plant": "flower",
+        "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.85,
       "reviewed": 13,
@@ -644,7 +652,8 @@
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
-        "kind_of_plant": "grass_grain"
+        "kind_of_plant": "grass_grain",
+        "part_we_eat": "seeds_or_pods"
       },
       "familiar": 0.75,
       "reviewed": 13,
@@ -9930,7 +9939,8 @@
       "fields": {
         "kind_of_thing": "plant",
         "extinct": false,
-        "kind_of_plant": "grass_grain"
+        "kind_of_plant": "grass_grain",
+        "part_we_eat": "seeds_or_pods"
       },
       "familiar": 1.0,
       "reviewed": 13,
@@ -34246,7 +34256,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-11-24-50",
+    "by": "record_names.py",
     "on": "2026-11-24"
   },
   "groups": {
@@ -34297,10 +34307,11 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 2 would fit a thing of another group as well; clue 3 is too hard for a four-year-old; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "part_we_eat=leaves": {
-      "written_for": "51d6105d077f",
+      "written_for": "b2bc8c985be8",
       "field": "part_we_eat",
       "value": "leaves",
       "label": "The leaves",
@@ -34342,7 +34353,9 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary",
+      "checked_again_on": "2026-11-24"
     },
     "where_it_travels=rails": {
       "written_for": "44510f12734b",
@@ -34387,7 +34400,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "pet_farm_or_wild_of_bird=wild_water": {
       "written_for": "27752212adbc",
@@ -34485,7 +34499,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 2 would fit a thing of another group as well; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "kind_of_thing=nature_not_alive": {
       "written_for": "c5a4ed14dfcd",
@@ -34534,7 +34549,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 2 would fit a thing of another group as well; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "kind_of_thing=made_by_people": {
       "written_for": "879526345d5c",
@@ -34583,7 +34599,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 2 would fit a thing of another group as well; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "kind_of_animal=mammal": {
       "written_for": "059ab60a3db2",
@@ -34632,7 +34649,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 2 would fit a thing of another group as well; clue 3 is too hard for a four-year-old; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "kind_of_animal=bird": {
       "written_for": "7b52c7ff65d2",
@@ -34681,7 +34699,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "kind_of_animal=fish": {
       "written_for": "a8d2bf32e078",
@@ -34727,7 +34746,8 @@
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "checked_again_on": "2026-11-24"
+      "checked_again_on": "2026-11-24",
+      "clues_from": "the dictionary"
     },
     "kind_of_animal=insect": {
       "written_for": "1dd7712357a9",
@@ -34776,7 +34796,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "kind_of_animal=reptile": {
       "written_for": "02d7f4a0c643",
@@ -34821,7 +34842,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "kind_of_animal=dinosaur": {
       "written_for": "00561d2f5beb",
@@ -34866,7 +34888,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "kind_of_dinosaur=land_hunter": {
       "written_for": "7874321293cb",
@@ -34911,7 +34934,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "kind_of_dinosaur=land_grazer": {
       "written_for": "af86987f8fc1",
@@ -34960,7 +34984,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 2 would fit a thing of another group as well; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "kind_of_dinosaur=flyer": {
       "written_for": "94b23d8efd7e",
@@ -35005,7 +35030,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "kind_of_dinosaur=swimmer": {
       "written_for": "7d1105294f72",
@@ -35050,7 +35076,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "kind_of_plant=tree": {
       "written_for": "2050903f8db7",
@@ -35099,7 +35126,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "kind_of_plant=flower": {
       "written_for": "6e518413949e",
@@ -35144,7 +35172,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "kind_of_plant=grass_grain": {
       "written_for": "585be118699f",
@@ -35193,7 +35222,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "kind_of_plant=vegetable": {
       "written_for": "9d2e19518108",
@@ -35238,7 +35268,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "kind_of_nature=sky": {
       "written_for": "bc7b5c59c28d",
@@ -35283,7 +35314,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "kind_of_nature=water": {
       "written_for": "63c5f316f930",
@@ -35332,7 +35364,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "kind_of_nature=land": {
       "written_for": "4f11d1e9d29b",
@@ -35381,7 +35414,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "kind_of_nature=ground": {
       "written_for": "dae49ae8a4a6",
@@ -35430,7 +35464,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "kind_of_made_thing=vehicle": {
       "written_for": "99b1066293bd",
@@ -35475,7 +35510,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "kind_of_made_thing=toy": {
       "written_for": "15cd5bd53d9f",
@@ -35524,7 +35560,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 2 would fit a thing of another group as well"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "kind_of_made_thing=household": {
       "written_for": "d9f018cbc48f",
@@ -35569,7 +35606,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "kind_of_made_thing=tool": {
       "written_for": "6a0fe6a4de94",
@@ -35614,7 +35652,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "kind_of_made_thing=building": {
       "written_for": "484be0eb630f",
@@ -35663,56 +35702,62 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "part_we_eat=fruit": {
+      "written_for": "efbf9b89ef67",
       "field": "part_we_eat",
       "value": "fruit",
       "label": "The fruit",
       "question": "Which part of the plant do we eat?",
       "clues": [
         {
-          "text": "Think about the part of the plant that holds the seeds inside.",
+          "text": "Think about the part of the plant that holds the seeds.",
           "cached": "tools/voice/clips/groups/part_we_eat__fruit__clue1.mp3",
           "clip": "Assets/audio/groups/part_we_eat__fruit__clue1.mp3",
-          "clip_sha256": "e55d730221bc9b88105a6259ac86e9165c0fdd0fc2c740080d3ab00279edcb88",
+          "clip_sha256": "5085d36fc27357eb68677b94aae37da9c56ba6653ff59f87c1d4b7f6a2bc7568",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "We eat this soft, round part that grows after the flower falls.",
+          "text": "It grows where a flower was.",
           "cached": "tools/voice/clips/groups/part_we_eat__fruit__clue2.mp3",
           "clip": "Assets/audio/groups/part_we_eat__fruit__clue2.mp3",
-          "clip_sha256": "fbc092cb85b19251551a026d11ad339bd9cd2215b9ba0a6c3fb95d886ba70a2e",
+          "clip_sha256": "52372bd2c7003b011f2844dffe2af1bccd7ff2eeb35410657d3b3beec9d68a66",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You can see the little seeds inside when you cut it open.",
+          "text": "We eat this part, the one that has the plant's seeds inside it.",
           "cached": "tools/voice/clips/groups/part_we_eat__fruit__clue3.mp3",
           "clip": "Assets/audio/groups/part_we_eat__fruit__clue3.mp3",
-          "clip_sha256": "d8052bb79cb8146a4ba187b96b03fb6482a9031fa58a5f105d8bb23082260c62",
+          "clip_sha256": "529202146b973982f165aa26d3b4605c203d59e642e93cac9299a3902fed292f",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
       "explanation": {
-        "text": "We eat these soft, ripe parts that grow from flowers. They hold the seeds inside them. A pumpkin is a fruit, and it can be orange, red, blue, or white.",
-        "together": "We eat these soft, ripe parts that grow from flowers. They hold the seeds inside them.",
-        "fact": "A pumpkin is a fruit, and it can be orange, red, blue, or white.",
-        "quote": "A pumpkin is a type of a squash which is a fruit. They are usually orange, but they can also be purple, red, blue, or white.",
-        "source": "pumpkin_plant:wikipedia_simple",
-        "source_url": "https://simple.wikipedia.org/wiki/Pumpkin",
+        "text": "These all belong together because we eat the part that grew from a flower and holds the plant's seeds inside. A tomato is called a fruit because it has seeds inside it.",
+        "together": "These all belong together because we eat the part that grew from a flower and holds the plant's seeds inside.",
+        "fact": "A tomato is called a fruit because it has seeds inside it.",
+        "quote": "Tomatoes are called fruit, because they contain seeds.",
+        "source": "tomato_plant:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Tomato",
         "cached": "tools/voice/clips/groups/part_we_eat__fruit__explanation.mp3",
         "clip": "Assets/audio/groups/part_we_eat__fruit__explanation.mp3",
-        "clip_sha256": "acbce198ac056b75525d996a0cf1ed19f0994192ec9bcb75c0b71d3335bec46a",
+        "clip_sha256": "c40c95065ab994055b0559658f4c084e416b06db206029f452bec837ef834b69",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "written_for": "871465354a1e",
-      "checked_again_on": "2026-11-24"
+      "clues_from": "the dictionary",
+      "explanation_set_aside": {
+        "on": "2026-11-24",
+        "why": "it no longer says truly why these belong together",
+        "was": "We eat these soft, ripe parts that grow from flowers. They hold the seeds inside them. A pumpkin is a fruit, and it can be orange, red, blue, or white."
+      }
     },
     "part_we_eat=under_the_ground": {
-      "written_for": "26d95ee1ee79",
+      "written_for": "5e8ba81e229c",
       "field": "part_we_eat",
       "value": "under_the_ground",
       "label": "What grows under the ground",
@@ -35754,7 +35799,9 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary",
+      "checked_again_on": "2026-11-24"
     },
     "part_we_eat=seeds_or_pods": {
       "field": "part_we_eat",
@@ -35799,8 +35846,9 @@
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "written_for": "6955c27e97f2",
-      "checked_again_on": "2026-11-24"
+      "written_for": "1497fddcedf4",
+      "checked_again_on": "2026-11-24",
+      "clues_from": "the dictionary"
     },
     "where_it_travels=road": {
       "written_for": "779885af1da9",
@@ -35845,7 +35893,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "where_it_travels=water": {
       "written_for": "7581ad2db17f",
@@ -35890,7 +35939,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "where_it_travels=air": {
       "written_for": "a467c19e1dcd",
@@ -35935,7 +35985,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "kind_of_house_thing=furniture": {
       "written_for": "c347f18222c4",
@@ -35980,7 +36031,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "kind_of_house_thing=eating": {
       "written_for": "a665b62b580c",
@@ -36025,7 +36077,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "kind_of_house_thing=cleaning": {
       "written_for": "6efd71228476",
@@ -36074,7 +36127,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 3 names a thing of the group: scrub; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "kind_of_house_thing=electric": {
       "written_for": "e80770a46a58",
@@ -36119,7 +36173,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "shape_of_the_land=high": {
       "written_for": "630e49310c2c",
@@ -36164,7 +36219,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "shape_of_the_land=hollow": {
       "written_for": "ad7ec4a9391e",
@@ -36209,7 +36265,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "pet_farm_or_wild=pet": {
       "written_for": "8a07020a4167",
@@ -36255,7 +36312,8 @@
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "checked_again_on": "2026-11-24"
+      "checked_again_on": "2026-11-24",
+      "clues_from": "the dictionary"
     },
     "pet_farm_or_wild=farm": {
       "written_for": "f950d75ddfd6",
@@ -36300,7 +36358,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "pet_farm_or_wild=wild_land": {
       "written_for": "88f6ec33547a",
@@ -36310,42 +36369,44 @@
       "question": "Is it mostly a pet, a farm animal or a wild animal?",
       "clues": [
         {
-          "text": "Think of a creature that lives free, far from people's homes.",
+          "text": "Think about an animal that nobody owns.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__clue1.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue1.mp3",
-          "clip_sha256": "9626a060189ab00b2f89d018041039f611fafe428cc4ccc834c449b49b13b091",
+          "clip_sha256": "c20f0981f86a48f811299c28f2b766b790d27b0c89ee392adaaa5d24691cb968",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "It walks or crawls on the ground, not in water, and nobody feeds it.",
+          "text": "Nobody feeds it and nobody keeps it: it finds its own food.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__clue2.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue2.mp3",
-          "clip_sha256": "31cf1bbe31b0d57953031875e5275d8106684bebc4a882b16b37374b0ce81172",
+          "clip_sha256": "8154b05e873764e0dbe89dd50b0d68cc01b6de066c08b2358697f66d675aa03a",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "It finds its own food in the forest or grassland, all by itself.",
+          "text": "It lives free, and it lives on land, not in water.",
           "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__clue3.mp3",
           "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__clue3.mp3",
-          "clip_sha256": "4a679b769a769797a10055baaed2456df3612cc74c7b983d079df65f2f66cd72",
+          "clip_sha256": "de60eae5b039ff50ec490138a03e5ad9c20c03b53d3ee81f475b02bac89f55c8",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
       "explanation": {
-        "text": "These animals all live free on land, away from homes and farms. They find their own food and make their own homes outdoors. A cheetah can run very, very fast, as fast as a car on a big road.",
-        "together": "These animals all live free on land, away from homes and farms. They find their own food and make their own homes outdoors.",
-        "fact": "A cheetah can run very, very fast, as fast as a car on a big road.",
-        "quote": "It is the fastest land animal and can run up to 105 kilometres per hour (65 mph), and accelerate from 0 to 97 kilometres per hour (60 mph) in less than 3 seconds.",
-        "source": "cheetah:wikipedia_simple",
-        "source_url": "https://simple.wikipedia.org/wiki/Cheetah",
+        "text": "Nobody owns these animals, and nobody feeds them. They find their own food, and they live on land. An elephant is the biggest animal that lives on land.",
+        "together": "Nobody owns these animals, and nobody feeds them. They find their own food, and they live on land.",
+        "fact": "An elephant is the biggest animal that lives on land.",
+        "quote": "Elephants are the largest living land animals.",
+        "source": "elephant:wikipedia_en",
+        "source_url": "https://en.wikipedia.org/wiki/Elephant",
+        "written_by": "the assistant, by hand, from the kind's own definition (the owner's word of 24 Nov 2026)",
         "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__explanation.mp3",
         "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__explanation.mp3",
-        "clip_sha256": "c1ffecb6c6f3f08a829af3a3a09484ed5bc8e7d2f72c8a659c2c5a7cb072cb16",
+        "clip_sha256": "41d96ca096607e633b23342901e0cfeb4bdc971a4bd3d7cbadcb025cc8cd6453",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary",
       "clues_set_aside": {
         "on": "2026-11-24",
         "why": "they were written for the wild land mammals; the group now holds birds, insects and reptiles, and they are no longer true of every thing",
@@ -36358,8 +36419,8 @@
       "explanation_set_aside": {
         "on": "2026-11-24",
         "by": "the assistant, by hand",
-        "why": "it says these animals live away from homes and farms, and the group now holds the housefly, the cockroach, the house lizard, the crow and the sparrow",
-        "was": "These animals all live free on land, away from homes and farms. A cheetah can run very, very fast, faster than any other animal on land."
+        "why": "it says these animals live away from homes and farms, and the group holds the housefly, the crow and the house lizard",
+        "was": "These animals all live free on land, away from homes and farms. They find their own food and make their own homes outdoors. A cheetah can run very, very fast, as fast as a car on a big road."
       }
     },
     "pet_farm_or_wild=wild_water": {
@@ -36368,25 +36429,46 @@
       "value": "wild_water",
       "label": "Wild animals in water",
       "question": "Is it mostly a pet, a farm animal or a wild animal?",
-      "clues": [],
+      "clues": [
+        {
+          "text": "Think about an animal that is at home where it is wet.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_water__clue1.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue1.mp3",
+          "clip_sha256": "4f8cfdbb883f06050e080df419cdb747f4abc1144911e6258a2e22931c4a2719",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "Nobody feeds it and nobody keeps it: it finds its own food.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_water__clue2.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue2.mp3",
+          "clip_sha256": "81afee96881cbb3103cee82629a95e7fc2ba6df01a2d7e794cf365fbbd3951d2",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        },
+        {
+          "text": "It lives free, in the sea, in a river or a pond, or right beside one.",
+          "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_water__clue3.mp3",
+          "clip": "Assets/audio/groups/pet_farm_or_wild__wild_water__clue3.mp3",
+          "clip_sha256": "d099b7eb43480e1fa4aaa16f17e68368226922e3e5fd27f021f618c1f8026339",
+          "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+        }
+      ],
       "explanation": {
-        "text": "These animals all live in water — in rivers, seas or the sea. That is why they go together in one group. A penguin uses its flippers to swim under the water, but it cannot fly in the air.",
-        "together": "These animals all live in water — in rivers, seas or the sea. That is why they go together in one group.",
-        "fact": "A penguin uses its flippers to swim under the water, but it cannot fly in the air.",
+        "text": "Nobody owns these animals, and nobody feeds them. They find their own food in the water, or right beside it. A penguin swims under the water with its flippers, but it cannot fly.",
+        "together": "Nobody owns these animals, and nobody feeds them. They find their own food in the water, or right beside it.",
+        "fact": "A penguin swims under the water with its flippers, but it cannot fly.",
         "quote": "They use their flippers to swim underwater, but they cannot fly in the air.",
         "source": "penguin:wikipedia_simple",
         "source_url": "https://simple.wikipedia.org/wiki/Penguin",
+        "written_by": "the assistant, by hand, from the kind's own definition (the owner's word of 24 Nov 2026)",
         "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_water__explanation.mp3",
         "clip": "Assets/audio/groups/pet_farm_or_wild__wild_water__explanation.mp3",
-        "clip_sha256": "b12953c8b5cd36587cf6896d558b84358df59a09a1e217e9ce4a2add911e342f",
+        "clip_sha256": "a69ca5fbbec167d17ca910ac1ec8846d7fc3cbb4287fe8d8f8e023d6dfa407f6",
         "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
-      "held": [
-        "no clues were kept: clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      ],
+      "clues_from": "the dictionary",
       "clues_set_aside": {
         "on": "2026-11-24",
         "why": "clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 3 is not true of every thing in the group",
@@ -36398,8 +36480,9 @@
       },
       "explanation_set_aside": {
         "on": "2026-11-24",
-        "why": "it no longer says truly why these belong together",
-        "was": "They all live in the water and are wild animals. They swim in the sea, not in a house or on a farm. A whale breathes air from above the water, just like you and me."
+        "by": "the assistant, by hand",
+        "why": "it says they all live in water; the seagull, the pelican and the crane live beside it",
+        "was": "These animals all live in water — in rivers, seas or the sea. That is why they go together in one group. A penguin uses its flippers to swim under the water, but it cannot fly in the air."
       }
     },
     "pet_farm_or_wild_of_bird=pet": {
@@ -36576,7 +36659,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "what_people_do_there=buy": {
       "written_for": "3504119c7cff",
@@ -36621,7 +36705,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "what_people_do_there=travel": {
       "written_for": "a28fa60ff0f1",
@@ -36666,7 +36751,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "what_people_do_there=cross": {
       "written_for": "e386169b066e",
@@ -36715,7 +36801,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "how_we_play_with_it=build": {
       "written_for": "29c289c027d0",
@@ -36764,7 +36851,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 3 is not true of every thing in the group"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "how_we_play_with_it=pretend": {
       "written_for": "a021010fb6cb",
@@ -36813,7 +36901,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "how_we_play_with_it=fly": {
       "written_for": "5bd916686fc4",
@@ -36858,7 +36947,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "how_we_play_with_it=music": {
       "written_for": "dfef8d2aa4ab",
@@ -36903,7 +36993,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "dinosaur_group=long_necked": {
       "field": "dinosaur_group",
@@ -37036,7 +37127,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "what_it_eats=eats_meat": {
       "written_for": "a61a4b0e910b",
@@ -37081,7 +37173,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "what_it_eats=eats_insects": {
       "written_for": "1a369b9f0164",
@@ -37130,7 +37223,8 @@
       "new_clues_refused": {
         "on": "2026-11-24",
         "why": "clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
-      }
+      },
+      "clues_from": "the dictionary"
     },
     "what_it_eats=eats_both": {
       "written_for": "7ffd0ab8fd8d",
@@ -37175,7 +37269,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "how_it_makes_sound=hit_or_strike": {
       "written_for": "7a12fb22f24f",
@@ -37220,7 +37315,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "how_it_makes_sound=blow_into": {
       "written_for": "b4e3551cae25",
@@ -37265,7 +37361,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "how_it_makes_sound=pluck_strings": {
       "written_for": "cbe22955aa7f",
@@ -37310,7 +37407,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     },
     "how_it_makes_sound=press_keys": {
       "written_for": "c93b4dc98435",
@@ -37355,7 +37453,8 @@
       },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
-      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed"
+      "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
+      "clues_from": "the dictionary"
     }
   }
 }

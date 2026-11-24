@@ -1,5 +1,5 @@
 {
- "stamp": "eea29a75f5ef",
+ "stamp": "27dbf636b31f",
  "about": "The map: one record for each place of the game. Built by tools/catalogue/places.py from the things, the dictionary, the settings and the decisions on record, whenever any of them changes. Nobody edits it. A place is where circles overlap; its name is the answers that define it, in the dictionary's order.",
  "built_on": "2026-11-24",
  "dictionary_version": 13,
@@ -8,7 +8,7 @@
  "places_by_state": {
   "ready": 16,
   "held": 52,
-  "can be made": 9,
+  "can be made": 14,
   "a group only": 5
  },
  "places": {
@@ -211,7 +211,7 @@
        "with_pictures": 15,
        "ready": true,
        "place": "animal/wild_water",
-       "clues": 0,
+       "clues": 3,
        "explanation": true
       }
      },
@@ -307,6 +307,57 @@
      "in_between": 0,
      "in_between_ready": false,
      "in_between_place": "plant/in_between"
+    },
+    {
+     "question": "part_we_eat",
+     "wording": "Which part of the plant do we eat?",
+     "asked_because": "its home is here",
+     "makes_a_set": true,
+     "kinds": {
+      "fruit": {
+       "name": "The fruit",
+       "things": 7,
+       "with_pictures": 7,
+       "ready": true,
+       "place": "plant/fruit",
+       "clues": 3,
+       "explanation": true
+      },
+      "under_the_ground": {
+       "name": "What grows under the ground",
+       "things": 5,
+       "with_pictures": 5,
+       "ready": true,
+       "place": "plant/under_the_ground",
+       "clues": 3,
+       "explanation": true
+      },
+      "leaves": {
+       "name": "The leaves",
+       "things": 5,
+       "with_pictures": 5,
+       "ready": true,
+       "place": "plant/leaves",
+       "clues": 3,
+       "explanation": true
+      },
+      "seeds_or_pods": {
+       "name": "The seeds",
+       "things": 7,
+       "with_pictures": 7,
+       "ready": true,
+       "place": "plant/seeds_or_pods",
+       "clues": 3,
+       "explanation": true
+      }
+     },
+     "in_between": 1,
+     "in_between_ready": false,
+     "in_between_place": "plant/in_between",
+     "in_between_sides": [
+      "fruit",
+      "seeds_or_pods"
+     ]
     }
    ],
    "could_ask": [],
@@ -548,7 +599,7 @@
        "with_pictures": 5,
        "ready": true,
        "place": "animal/mammal/wild_water",
-       "clues": 0,
+       "clues": 3,
        "explanation": true
       }
      },
@@ -675,7 +726,7 @@
        "with_pictures": 4,
        "ready": true,
        "place": "animal/bird/wild_water",
-       "clues": 0,
+       "clues": 3,
        "explanation": true
       }
      },
@@ -1852,6 +1903,226 @@
    ],
    "picture": "tomato_plant",
    "things_file": "places/plant__vegetable.json"
+  },
+  "plant/fruit": {
+   "name": "The fruit",
+   "circles": [
+    [
+     "kind_of_thing",
+     "plant"
+    ],
+    [
+     "part_we_eat",
+     "fruit"
+    ]
+   ],
+   "depth": 2,
+   "lies_in": {
+    "plant": [
+     "part_we_eat",
+     "fruit"
+    ]
+   },
+   "reached_from": [
+    "plant"
+   ],
+   "things": 7,
+   "with_pictures": 7,
+   "asks": [],
+   "could_ask": [
+    {
+     "question": "kind_of_plant",
+     "wording": "What kind of plant is it?",
+     "fill": {
+      "tree": 2,
+      "flower": 4,
+      "grass_grain": 4
+     },
+     "more_things_needed": 10
+    }
+   ],
+   "state": "can be made",
+   "why": "10 more thing(s) would let it be sorted by \"What kind of plant is it?\"",
+   "known_to_the_job": false,
+   "history": [],
+   "picture": "tomato_plant"
+  },
+  "plant/under_the_ground": {
+   "name": "What grows under the ground",
+   "circles": [
+    [
+     "kind_of_thing",
+     "plant"
+    ],
+    [
+     "part_we_eat",
+     "under_the_ground"
+    ]
+   ],
+   "depth": 2,
+   "lies_in": {
+    "plant": [
+     "part_we_eat",
+     "under_the_ground"
+    ]
+   },
+   "reached_from": [
+    "plant"
+   ],
+   "things": 5,
+   "with_pictures": 5,
+   "asks": [],
+   "could_ask": [
+    {
+     "question": "kind_of_plant",
+     "wording": "What kind of plant is it?",
+     "fill": {
+      "tree": 4,
+      "flower": 4,
+      "grass_grain": 4
+     },
+     "more_things_needed": 12
+    }
+   ],
+   "state": "can be made",
+   "why": "12 more thing(s) would let it be sorted by \"What kind of plant is it?\"",
+   "known_to_the_job": false,
+   "history": [],
+   "picture": "carrot_plant"
+  },
+  "plant/leaves": {
+   "name": "The leaves",
+   "circles": [
+    [
+     "kind_of_thing",
+     "plant"
+    ],
+    [
+     "part_we_eat",
+     "leaves"
+    ]
+   ],
+   "depth": 2,
+   "lies_in": {
+    "plant": [
+     "part_we_eat",
+     "leaves"
+    ]
+   },
+   "reached_from": [
+    "plant"
+   ],
+   "things": 5,
+   "with_pictures": 5,
+   "asks": [],
+   "could_ask": [
+    {
+     "question": "kind_of_plant",
+     "wording": "What kind of plant is it?",
+     "fill": {
+      "tree": 4,
+      "flower": 4,
+      "grass_grain": 4
+     },
+     "more_things_needed": 12
+    }
+   ],
+   "state": "can be made",
+   "why": "12 more thing(s) would let it be sorted by \"What kind of plant is it?\"",
+   "known_to_the_job": false,
+   "history": [],
+   "picture": "coriander_plant"
+  },
+  "plant/seeds_or_pods": {
+   "name": "The seeds",
+   "circles": [
+    [
+     "kind_of_thing",
+     "plant"
+    ],
+    [
+     "part_we_eat",
+     "seeds_or_pods"
+    ]
+   ],
+   "depth": 2,
+   "lies_in": {
+    "plant": [
+     "part_we_eat",
+     "seeds_or_pods"
+    ]
+   },
+   "reached_from": [
+    "plant"
+   ],
+   "things": 7,
+   "with_pictures": 7,
+   "asks": [],
+   "could_ask": [
+    {
+     "question": "kind_of_plant",
+     "wording": "What kind of plant is it?",
+     "fill": {
+      "grass_grain": 2,
+      "flower": 3,
+      "tree": 4
+     },
+     "more_things_needed": 9
+    }
+   ],
+   "state": "can be made",
+   "why": "9 more thing(s) would let it be sorted by \"What kind of plant is it?\"",
+   "known_to_the_job": false,
+   "history": [],
+   "picture": "wheat"
+  },
+  "plant/in_between": {
+   "name": "In between",
+   "circles": [
+    [
+     "kind_of_thing",
+     "plant"
+    ],
+    [
+     "part_we_eat",
+     "in_between"
+    ]
+   ],
+   "depth": 2,
+   "lies_in": {
+    "plant": [
+     "part_we_eat",
+     "in_between"
+    ]
+   },
+   "reached_from": [
+    "plant"
+   ],
+   "things": 1,
+   "with_pictures": 1,
+   "asks": [],
+   "could_ask": [
+    {
+     "question": "kind_of_plant",
+     "wording": "What kind of plant is it?",
+     "fill": {
+      "tree": 3,
+      "flower": 4,
+      "grass_grain": 4,
+      "vegetable": 4
+     },
+     "more_things_needed": 15
+    }
+   ],
+   "state": "can be made",
+   "why": "15 more thing(s) would let it be sorted by \"What kind of plant is it?\"",
+   "known_to_the_job": false,
+   "history": [],
+   "picture": "coconut_tree",
+   "between": [
+    "plant/fruit",
+    "plant/seeds_or_pods"
+   ]
   },
   "nature_not_alive/sky": {
    "name": "Things in the sky",
@@ -3545,6 +3816,10 @@
    ],
    "depth": 3,
    "lies_in": {
+    "plant/fruit": [
+     "kind_of_plant",
+     "vegetable"
+    ],
     "plant/vegetable": [
      "part_we_eat",
      "fruit"
@@ -3581,6 +3856,10 @@
    ],
    "depth": 3,
    "lies_in": {
+    "plant/under_the_ground": [
+     "kind_of_plant",
+     "vegetable"
+    ],
     "plant/vegetable": [
      "part_we_eat",
      "under_the_ground"
@@ -3617,6 +3896,10 @@
    ],
    "depth": 3,
    "lies_in": {
+    "plant/leaves": [
+     "kind_of_plant",
+     "vegetable"
+    ],
     "plant/vegetable": [
      "part_we_eat",
      "leaves"
@@ -3653,6 +3936,10 @@
    ],
    "depth": 3,
    "lies_in": {
+    "plant/seeds_or_pods": [
+     "kind_of_plant",
+     "vegetable"
+    ],
     "plant/vegetable": [
      "part_we_eat",
      "seeds_or_pods"

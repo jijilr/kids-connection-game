@@ -1,6 +1,6 @@
 {
  "place": "seed",
- "stamp": "eea29a75f5ef",
+ "stamp": "27dbf636b31f",
  "things": {
   "tyrannosaurus_rex": {
    "name": "Tyrannosaurus rex",
@@ -174,7 +174,8 @@
    "fields": {
     "kind_of_thing": "plant",
     "extinct": false,
-    "kind_of_plant": "grass_grain"
+    "kind_of_plant": "grass_grain",
+    "part_we_eat": "seeds_or_pods"
    },
    "familiar": 1.0,
    "reviewed": 13,
@@ -198,7 +199,8 @@
     "kind_of_thing": "plant",
     "extinct": false,
     "kind_of_plant": "tree",
-    "tree_academic": true
+    "tree_academic": true,
+    "part_we_eat": "fruit"
    },
    "familiar": 0.95,
    "reviewed": 13,
@@ -246,7 +248,8 @@
     "kind_of_thing": "plant",
     "extinct": false,
     "kind_of_plant": "tree",
-    "tree_academic": false
+    "tree_academic": false,
+    "part_we_eat": "fruit"
    },
    "familiar": 0.9,
    "reviewed": 13,
@@ -261,7 +264,8 @@
    "fields": {
     "kind_of_thing": "plant",
     "extinct": false,
-    "kind_of_plant": "flower"
+    "kind_of_plant": "flower",
+    "part_we_eat": "seeds_or_pods"
    },
    "familiar": 0.85,
    "reviewed": 13,
@@ -297,13 +301,18 @@
     "kind_of_thing": "plant",
     "extinct": false,
     "kind_of_plant": "tree",
-    "tree_academic": "depends"
+    "tree_academic": "depends",
+    "part_we_eat": [
+     "fruit",
+     "seeds_or_pods"
+    ]
    },
    "familiar": 0.9,
    "reviewed": 13,
    "source": "deepseek:drafted+checked",
    "notes": {
-    "tree_academic": "A palm has a tall woody trunk but does not grow wood in rings as other trees do, so botanists differ on whether to call it a true tree."
+    "tree_academic": "A palm has a tall woody trunk but does not grow wood in rings as other trees do, so botanists differ on whether to call it a true tree.",
+    "part_we_eat": "Two checks could not give it one group: The fruit and The seeds. It stays off sets sorted by this question. Asked of all of Plants on 2026-11-24."
    },
    "drafted_in": "seed_and_animals"
   },
