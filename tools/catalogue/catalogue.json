@@ -31712,7 +31712,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "record_names.py",
+    "by": "job:2026-11-24-09",
     "on": "2026-11-24"
   },
   "groups": {
@@ -32189,7 +32189,7 @@
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
-        "no explanation was kept: the explanation uses words too hard for a four-year-old, or its fact is dull"
+        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
       ]
     },
     "kind_of_animal=reptile": {
@@ -34171,24 +34171,24 @@
       "question": "How do we mostly play with it?",
       "clues": [
         {
-          "text": "Think about things that make a happy sound for your ears.",
+          "text": "Think about things that make sounds you can sing along to.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue1.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3",
-          "clip_sha256": "cf006105585640d2e2d702e656339584b38d619471ff88540e996b3267956193",
+          "clip_sha256": "fb92ec9e58fc6a3ef5cfac6c2c01d144a1c553b4ce0c937714feb9d9306af682",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "You can tap, blow or shake them to hear a tune.",
+          "text": "You use your hands or your breath to make the sound.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue2.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3",
-          "clip_sha256": "4c18e052c5b26ec0420d7d10bd5f8738df95b8a41c4d0a19ba88ca7b81e0b315",
+          "clip_sha256": "43b4cea2ad0df959b1196950e7c42bc597062d0a4b6504e0d2b5ef721a44d078",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         },
         {
-          "text": "People play them to make songs you can sing along to.",
+          "text": "You can tap it, blow it, or pluck it to hear a tune.",
           "cached": "tools/voice/clips/groups/how_we_play_with_it__music__clue3.mp3",
           "clip": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3",
-          "clip_sha256": "cc07ac0e52c9d4bedb681727db913138b430faac983d84b3a5dd9808112cf565",
+          "clip_sha256": "beba4647190567fd31c9998baf369b121e2303be7748f82fb1df1f859214ded1",
           "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
         }
       ],
