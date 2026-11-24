@@ -789,6 +789,35 @@ def test_the_words_of_a_group_are_kept_only_when_the_checks_agree():
     assert "two or three" in run(long, agreed)["held"][0]
 
 
+def test_words_are_looked_at_again_when_a_groups_things_change():
+    """The owner's question of 24 Nov 2026: are clues made in a solid way for what is added later?
+    A group's words carry a mark of the things they were written for; when its own things or a
+    neighbour's change, the clues are checked against the things as they now stand."""
+    import group_words as gw
+    fruit = ["The fruit (Tomato plant, Brinjal plant)"]
+    mark = gw.written_for(["Pea plant", "Bean plant"], fruit)
+    assert mark == gw.written_for(["Bean plant", "Pea plant"], fruit)                       # the order does not matter
+    assert mark != gw.written_for(["Pea plant", "Bean plant", "Cowpea plant"], fruit)       # a new thing of its own
+    assert mark != gw.written_for(["Pea plant", "Bean plant"], ["The fruit (Tomato plant, Brinjal plant, Ladies finger plant)"])
+    group = {"field": "part_we_eat", "value": "seeds_or_pods", "label": "The seeds",
+             "question": "Which part of the plant do we eat?", "members": ["Pea plant", "Bean plant"]}
+    clues = ["Think about the little hard parts.", "We take these out and cook them.", "We keep them dry in jars."]
+    good = {"true": True, "names": False, "simple": True, "only_here": True}
+
+    def fit(marks, these=clues):
+        real, gw.reslib.ask = gw.reslib.ask, lambda *a, **k: {"clues": marks}
+        try:
+            return gw.still_fit(None, {"model": "x", "thinking": "off"}, None, group, "Vegetable plants", fruit,
+                                ["Pea plant", "Bean plant", "Cowpea plant"], these)
+        finally:
+            gw.reslib.ask = real
+    assert fit([good] * 3) == []
+    assert "clue 2 would fit a thing of another group" in fit([good, dict(good, only_here=False), good])[0]
+    assert fit([dict(good, only_here=False), good, good]) == []                             # the first clue may be gentle
+    assert "not true of every thing" in fit([good, good, dict(good, true=False)])[0]        # a new thing it is not true of
+    assert "names a thing of the group: cowpea" in fit([good] * 3, ["Think of the cowpea.", clues[1], clues[2]])[0]
+
+
 # ------------------------------------------------------------------ the money
 
 def test_the_cap_is_hard():

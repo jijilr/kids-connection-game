@@ -24,8 +24,18 @@ copy is Assets/data/groups.json. tools/voice/record_names.py then speaks them.
     python tools/content/group_words.py --cap 8       another hard cap, in rupees
     python tools/content/group_words.py --only part_we_eat=leaves [...]   only these groups
     python tools/content/group_words.py --again       write them all again
+
+Words are kept fit as the game grows (the owner's question of 24 Nov 2026: are clues made
+in a solid way for what is added later?). Every group's words carry a mark of the things
+they were written for: the group's own things and those of the other groups beside it. On
+every plain run, and so after every run of the job, a group whose things have changed since
+is looked at again: its clues are checked against the things as they now stand, and are
+written again only if a clue no longer holds or now fits a neighbour. New clues that are
+refused never push out old ones that were kept: the old stay, and the run says so.
 """
 import datetime
+import hashlib
+import json
 import pathlib
 import random
 import re
@@ -94,6 +104,32 @@ An explanation was also written: "{explanation}"
 "for_a_child": is every word of the explanation one a four-year-old knows, and is the fact one he would enjoy hearing?
 
 Return JSON: {{"clues": [{{"true": true, "names": false, "simple": true, "only_here": true}}], "ladder": true, "supported": true, "explains": true, "for_a_child": true}}"""
+
+
+def written_for(names: list, others: list) -> str:
+    """A mark of the things a group's words were written for: its own, and its neighbours'."""
+    return hashlib.sha1(json.dumps([sorted(names), sorted(others)], ensure_ascii=False).encode("utf-8")).hexdigest()[:12]
+
+
+def still_fit(client, config, spend, group: dict, chain: str, others: list, names: list, clues: list) -> list:
+    """Do clues written earlier still hold, now that the group's things or its neighbours'
+    have changed? One checking call. Returns what is wrong; empty when they still fit."""
+    verdict = reslib.ask(client, config, spend, CHECKER, CHECK_TASK.format(
+        question=group["question"], chain=chain, label=group["label"], members=", ".join(names),
+        others=", ".join(others), clues="\n".join(f"{i}. {c}" for i, c in enumerate(clues, 1)),
+        explanation="(not asked about this time)", fact="", quote=""),
+        {"provider": "deepseek", "model": config["model"], "thinking": config["thinking"], "most_written": 300})
+    marks = verdict.get("clues") if isinstance(verdict.get("clues"), list) else []
+    wrong = clue_problems(clues, banned_words(group, names))
+    for i in range(1, len(clues) + 1):
+        mark = marks[i - 1] if i - 1 < len(marks) and isinstance(marks[i - 1], dict) else {}
+        if mark.get("true") is not True:
+            wrong.append(f"clue {i} is not true of every thing in the group")
+        if mark.get("names") is not False:
+            wrong.append(f"clue {i} points at one thing, not at the idea")
+        if i >= 2 and mark.get("only_here") is not True:
+            wrong.append(f"clue {i} would fit a thing of another group as well")
+    return wrong
 
 
 def words_of(text: str) -> list:
@@ -211,7 +247,8 @@ def write_one(client, config, spend, group: dict, chain: str, others: list, name
         held.append("no clues were kept: " + "; ".join(why))
     if kept_told is None:
         held.append("no explanation was kept: " + "; ".join(fact_wrong))
-    record = {"field": group["field"], "value": group["value"], "label": group["label"], "question": group["question"],
+    record = {"written_for": written_for(names, others),
+              "field": group["field"], "value": group["value"], "label": group["label"], "question": group["question"],
               "clues": [{"text": c} for c in kept_clues or []], "explanation": kept_told,
               "written_by": config["model"], "written_on": datetime.date.today().isoformat(),
               "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; "
@@ -239,11 +276,9 @@ def main():
     catalogue = cat.load()
     met, things = cat.groups_on_boards(catalogue), cat.game_copy(catalogue)["things"]
     complete = lambda g: len(g.get("clues", [])) >= cat.MIN_CLUES and (g.get("explanation") or {}).get("text")
-    todo = [key for key in met if (only is None or key in only)
-            and ("--again" in args or only is not None or not complete(catalogue["groups"].get(key, {})))]
-    print(f"{len(met)} groups a child can meet; {len(todo)} to write.")
-    client, written, stopped = reslib.deepseek() if todo else None, {}, ""
-    for key in todo:
+
+    def setting(key) -> tuple:
+        """A group, its own things, and the other groups of its question with theirs."""
         group = met[key]
         names = [t["name"] for t in things.values() if cat.value_of(t, group["field"]) == group["value"]]
         others = []
@@ -251,33 +286,84 @@ def main():
             if str(value) != str(group["value"]).lower():
                 theirs = [t["name"] for t in things.values() if str(cat.value_of(t, group["field"])).lower() == str(value)]
                 others.append(f"{label} ({', '.join(theirs[:8])})" if theirs else label)
+        return group, names, others
+
+    todo = [key for key in met if (only is None or key in only)
+            and ("--again" in args or only is not None or not complete(catalogue["groups"].get(key, {})))]
+    # on a plain run: the groups whose things have changed since their words were written
+    changed_since = [] if only is not None or "--again" in args else [
+        key for key in met if key not in todo and complete(catalogue["groups"].get(key, {}))
+        and catalogue["groups"][key].get("written_for") != written_for(*setting(key)[1:])]
+    print(f"{len(met)} groups a child can meet; {len(todo)} to write"
+          + (f"; {len(changed_since)} to look at again, because their things have changed." if changed_since else "."))
+    client, written, stopped = reslib.deepseek() if todo or changed_since else None, {}, ""
+    looked = {"still fit": 0, "written again": 0, "old words kept": 0}
+
+    def write(key, why_again: str = "") -> bool:
+        """Write one group's words. Old words that were kept are never pushed out by new
+        ones that were refused; the run then says the old ones stay, and why."""
+        nonlocal stopped
+        group, names, others = setting(key)
         try:
             record = write_one(client, config, spend, group, chain_of(dictionary, group["field"]), others, names)
         except SystemExit as stop:          # the hard cap
             stopped = str(stop).split(". What was")[0]
-            break
-        # what an earlier pass already kept is not thrown away for a new try that failed
-        before = catalogue["groups"].get(key, {})
+            return False
+        before, stays = catalogue["groups"].get(key, {}), []
         if "--again" not in args:
             if not record["clues"] and len(before.get("clues", [])) >= cat.MIN_CLUES:
+                refused = next((h for h in record.get("held", []) if h.startswith("no clues")), "")
                 record["clues"] = before["clues"]
+                record["new_clues_refused"] = {"on": datetime.date.today().isoformat(),
+                                               "why": refused.replace("no clues were kept: ", "")}
+                stays.append("the old clues stay; new ones were refused (" + record["new_clues_refused"]["why"] + ")")
             if not record["explanation"] and (before.get("explanation") or {}).get("text"):
                 record["explanation"] = before["explanation"]
+                stays.append("the old explanation stays")
             record["held"] = [h for h in record.get("held", [])
                               if (h.startswith("no clues") and not record["clues"])
                               or (h.startswith("no explanation") and not record["explanation"])]
             if not record["held"]:
                 record.pop("held")
         written[key] = record
-        print(f"  {key}: " + ("; ".join(record["held"]) if record.get("held") else "clues and explanation kept"))
+        if why_again:
+            looked["old words kept" if any("clues stay" in x for x in stays) else "written again"] += 1
+        print(f"  {key}: " + (why_again + " -> " if why_again else "")
+              + ("; ".join(record["held"]) if record.get("held") else "; ".join(stays) or "new clues and explanation kept"))
+        return True
+
+    for key in todo:
+        if not write(key):
+            break
+    for key in changed_since:
+        if stopped:
+            break
+        group, names, others = setting(key)
+        before = catalogue["groups"][key]
+        try:
+            wrong = still_fit(client, config, spend, group, chain_of(dictionary, group["field"]), others, names,
+                              [c["text"] for c in before["clues"]])
+        except SystemExit as stop:
+            stopped = str(stop).split(". What was")[0]
+            break
+        if not wrong:
+            written[key] = dict(before, written_for=written_for(names, others),
+                                checked_again_on=datetime.date.today().isoformat())
+            looked["still fit"] += 1
+            print(f"  {key}: its things changed; its clues still fit")
+        else:
+            write(key, why_again="its things changed and " + wrong[0])
     if written:
         with cat.changing("group_words.py") as changed:
             for key, record in written.items():
                 changed["groups"][key] = record
             cat.sync_group_voice(changed)
-    kept = sum(1 for r in written.values() if not r.get("held"))
-    print(f"{kept} group(s) have their words; {len(written) - kept} partly or not; "
-          f"{len(todo) - len(written)} not reached." + (f" Stopped: {stopped}." if stopped else ""))
+    if changed_since:
+        print("Looked at again: " + ", ".join(f"{n} {what}" for what, n in looked.items()) + ".")
+    kept = sum(1 for key in todo if key in written and not written[key].get("held"))
+    done = sum(1 for key in todo if key in written)
+    print(f"{kept} group(s) have their words; {done - kept} partly or not; "
+          f"{len(todo) - done} not reached." + (f" Stopped: {stopped}." if stopped else ""))
     print(f"Spent: Rs {spend.usd * config['inr_per_usd']:.2f}.")
 
 

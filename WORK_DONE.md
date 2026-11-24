@@ -18,7 +18,7 @@ Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 | Dictionary | version 12, 21 fields (two withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups with words | 61, each with a ladder of clues; 59 have an explanation |
-| Tests | 74 in the game, 36 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
+| Tests | 74 in the game, 37 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
 
 **The fifteen sets:** Everything, Animals, Mammals, Wild animals on land and Make music with it (both
 made on 24 Nov by the helper, the second while the owner played), Birds, Dinosaurs, Plants, Vegetable
@@ -272,6 +272,22 @@ He played it and could not tell the last two groups apart ("you help me. haha").
   new clues ("You can see the little seeds inside when you cut it open" against "We take these out and
   cook them, not the soft juicy part around them"), recorded with Kokoro. The other 59 groups keep their
   old clues until they are written again (`python tools/content/group_words.py --again`, about Rs 10).
+
+### Clues for every group under the new rule, and kept fit from now on (24 Nov)
+The owner asked for the other groups' clues to be written again, and whether clues for what is added
+later are made in a solid way.
+- **Written again** (Rs 13.05, 63 groups): 37 groups have new clues (27 with a new explanation too). **25
+  keep their old clues**, because three tries at new ones were all refused by the stricter check; they are
+  marked in the catalogue (`new_clues_refused`, with the reason). These include the four first groups and
+  most kinds of animal. Not yet looked into: whether the check is too strict for such broad groups or the
+  writer too weak. One group (wild land birds) has no explanation.
+- **For what is added later:** after every run of the job the words of new groups are written by the same
+  rule (writer and checker see the neighbours' things; a later clue that fits a neighbour is refused;
+  three tries) and spoken with Kokoro. And words are now **kept fit**: each group's words carry a mark of
+  the things they were written for; when the group's own things or a neighbour's change, the clues are
+  checked against the things as they stand and written again only if one no longer holds. New clues that
+  are refused never push out old ones that were kept. (`written_for`, `still_fit` in
+  `tools/content/group_words.py`.)
 
 ### A group left one short is tried once more (24 Nov)
 While the owner played, the helper made "Make music with it" (question: "How does this toy make its
