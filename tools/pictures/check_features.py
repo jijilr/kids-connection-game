@@ -88,12 +88,20 @@ def judge(cell: dict, answer: dict, cut_ok: bool, cut_flags: list) -> tuple:
         reasons.append("the checker did not answer every item")
     reasons += [f"does not show what tells it apart: {trait}"
                 for trait, v in zip(cell["must_show"], shown) if v == "no"]
-    reasons += [f"what tells it apart cannot be seen: {trait}"
-                for trait, v in zip(cell["must_show"], shown) if v not in ("yes", "no")]
+    # A trait the picture does not let one judge: for the animals researched by hand in Oct 2026
+    # (`research_file`) their traits were chosen to be seen, so that fails the tile, as the owner
+    # ruled. For a thing whose traits a script chose from its pages (looks.py), one of them may
+    # be something no picture shows (the shape of a chimpanzee's hips): that is reported, and
+    # only a trait the picture contradicts fails the tile.
+    unseen = [trait for trait, v in zip(cell["must_show"], shown) if v not in ("yes", "no")]
+    if cell.get("research_file"):
+        reasons += [f"what tells it apart cannot be seen: {trait}" for trait in unseen]
     reasons += [f"shows a listed mistake: {listed[n - 1]}" for n in numbers]
     if not cut_ok:
         reasons.append("it did not cut cleanly: " + "; ".join(cut_flags))
     reported = [f for f, v in zip(cell["features"], verdicts) if v == "no"]
+    if not cell.get("research_file"):
+        reported += [f"cannot be seen: {trait}" for trait in unseen]
     return reasons, reported, {"must_show": shown, "features": verdicts, "mistakes_shown": numbers}
 
 
