@@ -1,0 +1,389 @@
+{
+ "place": "animal/dinosaur",
+ "stamp": "eea29a75f5ef",
+ "things": {
+  "tyrannosaurus_rex": {
+   "name": "Tyrannosaurus rex",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_hunter",
+    "extinct": true
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list",
+   "shown_as": "T. rex"
+  },
+  "giganotosaurus": {
+   "name": "Giganotosaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_hunter",
+    "extinct": true
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "velociraptor": {
+   "name": "Velociraptor",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_hunter",
+    "extinct": true
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "allosaurus": {
+   "name": "Allosaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_hunter",
+    "extinct": true
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "spinosaurus": {
+   "name": "Spinosaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_hunter",
+    "extinct": true
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list",
+   "notes": {
+    "kind_of_dinosaur": "Scientists debate how much time Spinosaurus spent in water."
+   }
+  },
+  "brachiosaurus": {
+   "name": "Brachiosaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_grazer",
+    "extinct": true,
+    "dinosaur_group": "long_necked"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "brontosaurus": {
+   "name": "Brontosaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_grazer",
+    "extinct": true,
+    "dinosaur_group": "long_necked"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "diplodocus": {
+   "name": "Diplodocus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_grazer",
+    "extinct": true,
+    "dinosaur_group": "long_necked"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "argentinosaurus": {
+   "name": "Argentinosaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_grazer",
+    "extinct": true,
+    "dinosaur_group": "long_necked"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "amargasaurus": {
+   "name": "Amargasaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_grazer",
+    "extinct": true,
+    "dinosaur_group": "long_necked"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "triceratops": {
+   "name": "Triceratops",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_grazer",
+    "extinct": true,
+    "dinosaur_group": "horned"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "ankylosaurus": {
+   "name": "Ankylosaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_grazer",
+    "extinct": true,
+    "dinosaur_group": "armoured"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "stegosaurus": {
+   "name": "Stegosaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_grazer",
+    "extinct": true,
+    "dinosaur_group": "armoured"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "pachycephalosaurus": {
+   "name": "Pachycephalosaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_grazer",
+    "extinct": true,
+    "dinosaur_group": "bone_headed"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "parasaurolophus": {
+   "name": "Parasaurolophus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_grazer",
+    "extinct": true,
+    "dinosaur_group": "bone_headed"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "styracosaurus": {
+   "name": "Styracosaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_grazer",
+    "extinct": true,
+    "dinosaur_group": "horned"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-02"
+  },
+  "torosaurus": {
+   "name": "Torosaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": true,
+    "kind_of_dinosaur": "land_grazer",
+    "extinct": true,
+    "dinosaur_group": "horned"
+   },
+   "familiar": 0.6,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-02"
+  },
+  "pterodactylus": {
+   "name": "Pterodactylus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": false,
+    "kind_of_dinosaur": "flyer",
+    "extinct": true
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list",
+   "shown_as": "Pterodactyl"
+  },
+  "pteranodon": {
+   "name": "Pteranodon",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": false,
+    "kind_of_dinosaur": "flyer",
+    "extinct": true
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "quetzalcoatlus": {
+   "name": "Quetzalcoatlus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": false,
+    "kind_of_dinosaur": "flyer",
+    "extinct": true
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "rhamphorhynchus": {
+   "name": "Rhamphorhynchus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": false,
+    "kind_of_dinosaur": "flyer",
+    "extinct": true
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "dimorphodon": {
+   "name": "Dimorphodon",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": false,
+    "kind_of_dinosaur": "flyer",
+    "extinct": true
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "mosasaurus": {
+   "name": "Mosasaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": false,
+    "kind_of_dinosaur": "swimmer",
+    "extinct": true
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "kronosaurus": {
+   "name": "Kronosaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": false,
+    "kind_of_dinosaur": "swimmer",
+    "extinct": true
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "mixosaurus": {
+   "name": "Mixosaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": false,
+    "kind_of_dinosaur": "swimmer",
+    "extinct": true
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "tylosaurus": {
+   "name": "Tylosaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": false,
+    "kind_of_dinosaur": "swimmer",
+    "extinct": true
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "plesiosaurus": {
+   "name": "Plesiosaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": false,
+    "kind_of_dinosaur": "swimmer",
+    "extinct": true
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "elasmosaurus": {
+   "name": "Elasmosaurus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "dinosaur",
+    "dinosaur_academic": false,
+    "kind_of_dinosaur": "swimmer",
+    "extinct": true
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  }
+ }
+}

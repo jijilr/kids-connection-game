@@ -40,7 +40,7 @@ class FakeHelper implements LiveLink {
 
   @override
   Future<String?> read(String asset) async {
-    final text = readText(asset.split('/').last);
+    final text = readText(asset.replaceFirst('Assets/data/', ''));
     if (!birdsMade && asset.endsWith('places.json')) {
       // the map as it stood before the set of birds was made: Birds asks nothing yet
       final map = jsonDecode(text) as Map<String, dynamic>;
@@ -96,7 +96,7 @@ void main() {
     expect(g.board!.tiles, hasLength(16), reason: 'the data came through the helper');
 
     solve(g, ['animal']);
-    g.goNext();
+    await g.goNext();
     expect(g.pathLabels.last, 'Animals');
     for (int tries = 0; tries < 60 && !g.board!.groups.any((x) => x.value == 'bird'); tries++) {
       g.newBoard();
@@ -105,7 +105,7 @@ void main() {
     await g.syncLive();
     // six kinds of animal, four on a set: the set of animals comes once more, then his best line
     expect(g.progress.lines.take(2), ['animal', 'animal/bird']);
-    g.goNext();
+    await g.goNext();
     expect(g.pathLabels.last, 'Animals');
     for (int tries = 0; tries < 60 && !g.board!.groups.any((x) => x.value == 'bird'); tries++) {
       g.newBoard();
@@ -123,7 +123,7 @@ void main() {
     await g.syncLive();
     expect(g.nextStep!.id, 'animal/bird');
     expect(g.nextStep!.proven, isTrue);
-    g.goNext();
+    await g.goNext();
     expect(g.pathLabels, ['Everything', 'Animals', 'Birds']);
     expect(g.board!.tiles, hasLength(16));
   });

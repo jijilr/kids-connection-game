@@ -1,0 +1,257 @@
+{
+ "place": "plant/vegetable",
+ "stamp": "eea29a75f5ef",
+ "things": {
+  "tomato_plant": {
+   "name": "Tomato plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "fruit"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "brinjal_plant": {
+   "name": "Brinjal plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "fruit"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "chilli_plant": {
+   "name": "Chilli plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "fruit"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "pumpkin_plant": {
+   "name": "Pumpkin plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "fruit"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "ladies_finger_plant": {
+   "name": "Ladies finger plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "fruit"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06",
+   "notes": {
+    "part_we_eat": "The owner's word of 2026-11-24: he played the set on 24 Nov and it caught him: we eat the whole of it, like a tomato or a brinjal, and nobody opens it for the seeds (It was 'The seeds or pods'.)"
+   }
+  },
+  "carrot_plant": {
+   "name": "Carrot plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "under_the_ground"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "radish_plant": {
+   "name": "Radish plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "under_the_ground"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "onion_plant": {
+   "name": "Onion plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "under_the_ground"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "potato_plant": {
+   "name": "Potato plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "under_the_ground"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "garlic_plant": {
+   "name": "Garlic plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "under_the_ground"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "coriander_plant": {
+   "name": "Coriander plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "leaves"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "cabbage_plant": {
+   "name": "Cabbage plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "leaves"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "spinach_plant": {
+   "name": "Spinach plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "leaves"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "fenugreek_plant": {
+   "name": "Fenugreek plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "leaves"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "mustard_plant": {
+   "name": "Mustard plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "leaves"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "pea_plant": {
+   "name": "Pea plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "seeds_or_pods"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-07"
+  },
+  "maize_plant": {
+   "name": "Maize plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "seeds_or_pods",
+    "kind_of_plant_academic": "grass_grain"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked, approved by the owner",
+   "drafted_in": "2026-10-06-09",
+   "notes": {
+    "general": "Held at first: uncertain: the approved proposal lists it in this group; the pages and the judgements point to 'Grasses and grains', not 'Vegetable plants'; it could not be settled that it belongs in 'The seeds or pods'",
+    "kind_of_plant_academic": "To a scientist maize is a tall grass, and its seeds are a cereal grain. In this game it is a vegetable plant whose seeds we eat."
+   }
+  },
+  "bean_plant": {
+   "name": "Bean plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "seeds_or_pods"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "cowpea_plant": {
+   "name": "Cowpea plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "seeds_or_pods"
+   },
+   "familiar": 0.6,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-08"
+  }
+ }
+}

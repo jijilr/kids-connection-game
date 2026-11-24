@@ -30,11 +30,20 @@ The rules, as the game has them:
     between" for that question.
   - A kind held back in the settings is left out everywhere.
 
+THINGS BY PLACE (step 5). A phone cannot load every thing there is. So each place that can
+make a set has a small file of its own, Assets/data/places/<place>.json, holding what a set
+there needs and no more: of each kind that can be shown, the twelve best-known things,
+spread over the kinds below it, and the things that are "in between" there. The game loads
+a place's file when it goes there. However large the game grows, a place's file stays small:
+the rest of a kind's things are met deeper in, at the kind's own place. The map and every
+file carry one stamp, so the game never uses a map and a file from different moments.
+
     python tools/catalogue/places.py              build the map and say what it holds
     python tools/catalogue/places.py show PLACE   one place's record
     python tools/catalogue/places.py for FILE     print the map of a made-up game (for the game's tests)
 """
 import datetime
+import hashlib
 import json
 import pathlib
 import sys
@@ -42,6 +51,8 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 DATA = ROOT / "Assets/data"
 PLACES = DATA / "places.json"
+BY_PLACE = DATA / "places"         # the things of each place that can make a set, one small file a place
+OF_EACH_KIND = 12                  # things of one kind kept in a place's file: three sets of four without a repeat
 TREE = ROOT / "tools/content/expansion_tree.json"
 CATALOGUE = ROOT / "tools/catalogue/catalogue.json"
 IN_BETWEEN = "in_between"
@@ -198,6 +209,41 @@ class World:
         return []
 
 
+def file_of(place: str) -> str:
+    """The name of a place's file of things, beside the map: places/animal__bird.json."""
+    return "places/" + place.replace("/", "__") + ".json"
+
+
+def things_for(world, circles: list) -> list:
+    """The things a set at this place needs, and no more: of each kind that can be shown by a
+    question that makes a set here, the best known, taken in turn from the kinds below it so
+    that no one of them fills the list; and the things that are in between there."""
+    chosen = []
+    familiar = lambda k: -world.things[k].get("familiar", 0.5)
+    for question, _ in world.asked_at(circles):
+        ready = set(world.kinds_ready(circles, question))
+        pool = world.inside(circles)
+        for value in world.fields[question]["values"]:
+            mine = sorted((k for k in pool if world.answer(k, question) == value), key=familiar)
+            if value == IN_BETWEEN:
+                chosen += mine[:OF_EACH_KIND]        # few, and needed to know what they lie between
+                continue
+            if value not in ready:
+                continue
+            below = world.asked_at(world.canon(circles + [(question, value)]))
+            sub = below[0][0] if below else None
+            rows = {}
+            for k in mine:
+                rows.setdefault(world.answer(k, sub) if sub else None, []).append(k)
+            taken = []
+            while len(taken) < min(OF_EACH_KIND, len(mine)):
+                for row in rows.values():
+                    if row and len(taken) < OF_EACH_KIND:
+                        taken.append(row.pop(0))
+            chosen += taken
+    return list(dict.fromkeys(chosen))
+
+
 def styles_on_disk(things: dict) -> list:
     """The ways a tile can be drawn, best first, as the game has them: its own drawn picture,
     an older photograph, an emoji. Each as the set of things that can be drawn that way."""
@@ -243,7 +289,7 @@ def build(dictionary: dict = None, things: dict = None, settings: dict = None, s
                         following.append(child)
         level = following
 
-    records = {}
+    records, by_place = {}, {}
     for name, circles in places.items():
         pool = world.inside(circles)
         asks = []
@@ -316,10 +362,39 @@ def build(dictionary: dict = None, things: dict = None, settings: dict = None, s
             "known_to_the_job": name in tree,
             "history": history,
         }
+        drawn = [k for k in pool if world.styles and k in world.styles[0]]
+        if drawn:           # the picture that stands for the place on his web: its best-known thing
+            records[name]["picture"] = max(drawn, key=lambda k: world.things[k].get("familiar", 0.5))
+        if last and last[1] == IN_BETWEEN:      # what its things lie between: the kinds they name, or all of them
+            sides = set()
+            for k in pool:
+                value = world.things[k]["fields"].get(last[0])
+                sides |= set(map(str, value)) if isinstance(value, list) else set(world.fields[last[0]]["kinds"])
+            rest = [step for step in circles if step != last]
+            records[name]["between"] = [world.name_of(world.canon(rest + [(last[0], side)]))
+                                        for side in world.fields[last[0]]["kinds"] if side in sides]
+        if ready and state == "ready":
+            keys = things_for(world, circles)
+            records[name]["things_file"] = file_of(name)
+            by_place[name] = {k: things[k] for k in keys}
+        for ask in asks:    # the kinds "in between" lies between, for the game to know when it may be shown
+            if ask["in_between"]:
+                named = set()
+                for k in pool:
+                    value = world.things[k]["fields"].get(ask["question"])
+                    if isinstance(value, list) and len(value) > 1:
+                        named |= set(map(str, value))
+                    elif value == "depends":
+                        named |= set(world.fields[ask["question"]]["kinds"])
+                ask["in_between_sides"] = [v for v in world.fields[ask["question"]]["kinds"] if v in named]
     counts = {}
     for record in records.values():
         counts[record["state"]] = counts.get(record["state"], 0) + 1
+    stamp = hashlib.sha1(json.dumps([dictionary, things, settings.get("hold_back"), sorted(map(sorted, world.styles))],
+                                    sort_keys=True, ensure_ascii=False).encode("utf-8")).hexdigest()[:12]
     return {
+        "stamp": stamp,
+        "by_place": by_place,
         "about": "The map: one record for each place of the game. Built by tools/catalogue/places.py from the "
                  "things, the dictionary, the settings and the decisions on record, whenever any of them "
                  "changes. Nobody edits it. A place is where circles overlap; its name is the answers that "
@@ -334,8 +409,21 @@ def build(dictionary: dict = None, things: dict = None, settings: dict = None, s
 
 
 def write() -> dict:
-    """Build the map from what is on disk and write it. Returns it."""
+    """Build the map from what is on disk and write it, with a file of things for each place
+    that can make a set. Returns the map as it is on disk."""
     the_map = build()
+    by_place = the_map.pop("by_place")
+    BY_PLACE.mkdir(parents=True, exist_ok=True)
+    wanted = {}
+    for place, its_things in by_place.items():
+        wanted[BY_PLACE.parent / file_of(place)] = json.dumps(
+            {"place": place, "stamp": the_map["stamp"], "things": its_things}, indent=1, ensure_ascii=False) + "\n"
+    for path, text in wanted.items():
+        if not path.exists() or path.read_text(encoding="utf-8") != text:
+            path.write_text(text, encoding="utf-8", newline="\n")
+    for stale in BY_PLACE.glob("*.json"):      # a place that can no longer make a set keeps no file
+        if stale not in wanted:
+            stale.unlink()
     old = read_json(PLACES)
     if old is not None and {k: v for k, v in old.items() if k != "built_on"} == {k: v for k, v in the_map.items() if k != "built_on"}:
         return old          # nothing has changed: the file, and its date, stay as they are
@@ -350,7 +438,9 @@ def main():
         # Printed, never written. The game's own tests ask for their maps this way, so that
         # the rules of what a place is are written once, here.
         world = read_json(args[1])
-        print(json.dumps(build(world["dictionary"], world["things"], world["settings"], styles=[], tree={}, words={})))
+        made = build(world["dictionary"], world["things"], world["settings"], styles=[], tree={}, words={}, decided={})
+        made.pop("by_place")
+        print(json.dumps(made))
         return
     the_map = write()
     places = the_map["places"]

@@ -1417,7 +1417,7 @@ def commit(run: dict, summary: str, title: str = None):
     paths = ["tools/job", "tools/catalogue", "tools/content/review_queue.json", "Assets/data/things.json",
              "Assets/data/dictionary.json", "tools/content/field_proposals.json", "tools/content/expansion_tree.json",
              "Assets/pictures", "tools/pictures", "tools/research/out", "Assets/audio/names", "tools/voice",
-             "Assets/data/groups.json", "Assets/audio/groups", "Assets/data/places.json"]
+             "Assets/data/groups.json", "Assets/audio/groups", "Assets/data/places.json", "Assets/data/places"]
     git = lambda *args: subprocess.run(["git", "-C", str(ROOT), *args], capture_output=True, text=True,
                                        encoding="utf-8", errors="replace")
     git("add", "--", *paths)

@@ -1,0 +1,341 @@
+{
+ "place": "made_by_people/toy",
+ "stamp": "eea29a75f5ef",
+ "things": {
+  "building_blocks": {
+   "name": "Building blocks",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "build"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "stacking_rings": {
+   "name": "Stacking rings",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "build"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06"
+  },
+  "magnetic_tiles": {
+   "name": "Magnetic tiles",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "build"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06"
+  },
+  "sand_mould": {
+   "name": "Sand mould",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "build"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06"
+  },
+  "toy_phone": {
+   "name": "Toy phone",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "pretend"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06"
+  },
+  "teddy_bear": {
+   "name": "Teddy bear",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "pretend"
+   },
+   "familiar": 0.93,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "doll": {
+   "name": "Doll",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "pretend"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "toy_kitchen_set": {
+   "name": "Toy kitchen set",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "pretend"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06"
+  },
+  "doctor_set": {
+   "name": "Doctor set",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "pretend"
+   },
+   "familiar": 0.85,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06"
+  },
+  "kite": {
+   "name": "Kite",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "fly"
+   },
+   "familiar": 0.97,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "toys_top_up"
+  },
+  "balloon": {
+   "name": "Balloon",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "fly"
+   },
+   "familiar": 0.96,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "toys_top_up"
+  },
+  "paper_plane": {
+   "name": "Paper plane",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "fly"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06",
+   "notes": {
+    "how_we_play_with_it": "The pages point to 'Throw, kick or bat it'. Two checks, sorting it as a parent would, both put it in 'Fly it in the wind'."
+   }
+  },
+  "windmill_toy": {
+   "name": "Windmill toy",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "fly"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06"
+  },
+  "toy_drum": {
+   "name": "Toy drum",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "music",
+    "how_it_makes_sound": "hit_or_strike"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06",
+   "shown_as": "Drum",
+   "notes": {
+    "general": "Shown and spoken as 'Drum', by the owner's word: the group must not be spotted by a word its labels share."
+   }
+  },
+  "toy_flute": {
+   "name": "Toy flute",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "music",
+    "how_it_makes_sound": "blow_into"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06",
+   "shown_as": "Flute",
+   "notes": {
+    "general": "Shown and spoken as 'Flute', by the owner's word: the group must not be spotted by a word its labels share."
+   }
+  },
+  "toy_piano": {
+   "name": "Toy piano",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "music",
+    "how_it_makes_sound": "press_keys"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06",
+   "shown_as": "Piano",
+   "notes": {
+    "general": "Shown and spoken as 'Piano', by the owner's word: the group must not be spotted by a word its labels share."
+   }
+  },
+  "toy_guitar": {
+   "name": "Toy guitar",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "music",
+    "how_it_makes_sound": "pluck_strings"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06",
+   "shown_as": "Guitar",
+   "notes": {
+    "general": "Shown and spoken as 'Guitar', by the owner's word: the group must not be spotted by a word its labels share."
+   }
+  },
+  "tambourine": {
+   "name": "Tambourine",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "music",
+    "how_it_makes_sound": "hit_or_strike"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-11"
+  },
+  "harmonica": {
+   "name": "Harmonica",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "music",
+    "how_it_makes_sound": "blow_into"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-11"
+  },
+  "toy_organ": {
+   "name": "Toy organ",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "music",
+    "how_it_makes_sound": "press_keys"
+   },
+   "familiar": 0.75,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-11"
+  },
+  "harp": {
+   "name": "Harp",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "music",
+    "how_it_makes_sound": "pluck_strings"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-11"
+  },
+  "toy_xylophone": {
+   "name": "Toy xylophone",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "music",
+    "how_it_makes_sound": "hit_or_strike"
+   },
+   "familiar": 0.85,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06",
+   "shown_as": "Xylophone",
+   "notes": {
+    "general": "Shown and spoken as 'Xylophone', by the owner's word: the group must not be spotted by a word its labels share."
+   }
+  },
+  "recorder": {
+   "name": "Recorder",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "music",
+    "how_it_makes_sound": "blow_into"
+   },
+   "familiar": 0.85,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-11"
+  },
+  "toy_accordion": {
+   "name": "Toy accordion",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "music",
+    "how_it_makes_sound": "press_keys"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-11"
+  },
+  "ukulele": {
+   "name": "Ukulele",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "music",
+    "how_it_makes_sound": "pluck_strings"
+   },
+   "familiar": 0.85,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-11"
+  }
+ }
+}

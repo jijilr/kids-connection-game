@@ -406,23 +406,19 @@ class EngineProvider extends ChangeNotifier {
       final dim = registry.byId(step.$1);
       if (dim == null) return;
       final seen = progress.groups[id];
-      final pool = _repo.entities.where((e) => filter.every((f) => e.isIn(f.$1, f.$2)));
-      final shown = pool.map(_repo.media.forEntity).where((m) => m.art != null || m.image != null);
-      final sides = <String>{};
-      if (step.$2 == Dimension.inBetween) {
-        for (final e in pool) {
-          final named = e.sidesOf(dim.id);
-          sides.addAll(named.isEmpty ? dim.kinds : named);
-        }
-      }
-      final rest = [...filter]..remove(step);
+      // The picture that stands for the place, and what a group "in between" lies between,
+      // are on the map: its things may not be on this device at all.
+      final place = _repo.places[id]!;
+      final stands = place.picture == null
+          ? null
+          : _repo.media.forEntity(Entity(id: place.picture!, name: place.name));
       nodes[id] = WebNode(id, dim.label(step.$2), parent,
           found: seen?.found ?? 0,
           clean: seen?.clean ?? 0,
           line: progress.lines.contains(id),
-          picture: shown.isEmpty ? null : shown.first,
+          picture: stands != null && (stands.art != null || stands.image != null) ? stands : null,
           end: _repo.places[id]?.isEnd ?? false,
-          between: [for (final side in sides) _id([...rest, (dim.id, side)])],
+          between: place.between,
           also: [
             for (final other in wider.keys)
               if (other != parent && his(other)) other
@@ -551,15 +547,10 @@ class EngineProvider extends ChangeNotifier {
   /// a thing that names none (the people who know do not agree) lies between them all.
   Set<String> _notYet(List<PathFilter> filter, Dimension dim) {
     if (!dim.values.containsKey(Dimension.inBetween)) return const {};
-    final between = _repo.entities.where((e) =>
-        filter.every((f) => e.isIn(f.$1, f.$2)) && e.valueFor(dim.id) == Dimension.inBetween);
-    if (between.isEmpty) return const {};
+    final asked = _asked(filter, dim.id);
+    if (asked == null || asked.inBetweenSides.isEmpty) return const {};
     final ready = _kindsReady(filter, dim).where((v) => v != Dimension.inBetween).toSet();
-    final sides = <String>{};
-    for (final e in between) {
-      final named = e.sidesOf(dim.id);
-      sides.addAll(named.isEmpty ? ready : named.where(ready.contains));
-    }
+    final sides = asked.inBetweenSides.where(ready.contains);
     return sides.every((side) => _knows([...filter, (dim.id, side)]))
         ? const {}
         : const {Dimension.inBetween};
@@ -601,13 +592,41 @@ class EngineProvider extends ChangeNotifier {
 
   /// The button that ends a board: to the board chosen for him, or, when nothing was
   /// chosen, a parallel board at once, so he never waits.
-  void goNext() {
+  /// The returned future ends when he has arrived: at once, unless the things of the
+  /// place had to be fetched first.
+  Future<void> goNext() {
     final step = nextStep;
     if (step == null) {
       nextBoard();
-    } else {
-      _goTo(step.filter);
+      return Future.value();
     }
+    return _travel(step.id, () => _goTo(step.filter));
+  }
+
+  /// Do [arrive] once the things of [place] are on this device. They nearly always are:
+  /// the place he goes to next is fetched while he looks at the set he has finished. When
+  /// they are not, the game waits a moment; if they cannot be had, he stays where he is.
+  Future<void> _travel(String place, void Function() arrive) {
+    if (_repo.has(place)) {
+      arrive();
+      return Future.value();
+    }
+    isLoading = true;
+    notifyListeners();
+    return _repo.ensure(place).then((here) {
+      isLoading = false;
+      if (here) {
+        arrive();
+      } else {
+        notifyListeners();
+      }
+    });
+  }
+
+  /// Fetch, without waiting, the things of the place the button will lead to.
+  void _fetchAhead() {
+    final step = nextStep;
+    if (step != null) unawaited(_repo.ensure(step.id));
   }
 
   // ---------------------------------------------------------------------- actions
@@ -662,6 +681,7 @@ class EngineProvider extends ChangeNotifier {
     }
     if (boardFinished) {
       nextStep = _chooseNext();
+      _fetchAhead();
       notifyListeners();
     }
   }
@@ -783,6 +803,7 @@ class EngineProvider extends ChangeNotifier {
         unawaited(_progressStore.save(progress));
         _setsThisSitting++;
         nextStep = _chooseNext();
+        _fetchAhead();
         message = 'Solved!';
         guessCount++;
         notifyListeners();
@@ -814,8 +835,10 @@ class EngineProvider extends ChangeNotifier {
   void descendInto(BoardGroup g) {
     if (!canDescend(g)) return;
     final f = _childFilter(g);
-    _stack.add(_Level(f, _setsAt(f).first, g.label));
-    _open();
+    _travel(_id(f), () {
+      _stack.add(_Level(f, _setsAt(f).first, g.label));
+      _open();
+    });
   }
 
   /// A parallel board, so that he never waits: another circle at the same depth, the one
@@ -834,7 +857,7 @@ class EngineProvider extends ChangeNotifier {
     final never = DateTime.fromMillisecondsSinceEpoch(0);
     others.sort((a, b) => (progress.lastSeen(Progress.boardId(a)) ?? never)
         .compareTo(progress.lastSeen(Progress.boardId(b)) ?? never));
-    _goTo(others.first);
+    _travel(Progress.boardId(others.first), () => _goTo(others.first));
   }
 
   /// Stand at the circle [filter] leads to, with the way back to the seed intact.
@@ -855,8 +878,10 @@ class EngineProvider extends ChangeNotifier {
 
   void back() {
     if (_stack.length <= 1) return;
-    _stack.removeLast();
-    _open();
+    _travel(_id(_stack[_stack.length - 2].filter), () {
+      _stack.removeLast();
+      _open();
+    });
   }
 
   // --------------------------------------------------------------------- helpers

@@ -18,7 +18,7 @@ Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 | Dictionary | version 12, 21 fields (two withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups with words | 61, each with a ladder of clues; 59 have an explanation |
-| Tests | 110 in the game, 45 for the job, 6 for the helper, 10 for the catalogue, 10 for the pictures. All pass |
+| Tests | 114 in the game, 45 for the job, 6 for the helper, 11 for the catalogue, 10 for the pictures. All pass |
 
 **The fifteen sets:** Everything, Animals, Mammals, Wild animals on land and Make music with it (both
 made on 24 Nov by the helper, the second while the owner played), Birds, Dinosaurs, Plants, Vegetable
@@ -363,6 +363,14 @@ copy of the rules, and had drifted apart. Step 1 of five is built (`DESIGN.md`, 
   served by the helper). Every place under the place it lies in, with its state, its questions and
   kinds, and the reason where it cannot be played; the lines the game means to follow; a touch opens a
   place's circles, roads and history. Looked at in the browser at desktop and phone width.
+- **Step 5: things stored by place.** Each place that can make a set has a small file of its own
+  (`Assets/data/places/`, sixteen files): the twelve best-known things of each kind that can be shown
+  there, and its "in between" things. The game starts with the first place's file (48 things, 13 KB,
+  where it loaded 276 in 95 KB), takes up a place's file when it goes there, and fetches the next place
+  ahead while he looks at the set he has finished. The map and every file carry one stamp, and a file
+  from another moment is refused. `things.json` is still written, for the job and as the fallback.
+  Tests: `test/things_by_place_test.dart` (4): the real app's loading; the fetch ahead; a stale file
+  refused; and that each place's file is enough by itself for every set the map says can be made there.
 
 ### Room for the set on a phone (24 Nov, night)
 The owner played on his phone and sent two pictures: the explanation "takes away too much vertical space
@@ -718,3 +726,5 @@ other names for mud.
   over the middle of the set.
 - The map of places, step 1: one builder, one file, and a test that it agrees with the game. Nothing spent.
 - Step 2: the game reads the map and has no rule of its own about places.
+- Steps 3 to 5, while the owner was away for an hour: the helper and the job read the map; the page of
+  the whole map at `/map`; things stored by place. Nothing spent beyond the helper's own few paise.

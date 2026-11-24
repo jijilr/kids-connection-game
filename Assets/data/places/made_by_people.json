@@ -1,0 +1,656 @@
+{
+ "place": "made_by_people",
+ "stamp": "eea29a75f5ef",
+ "things": {
+  "car": {
+   "name": "Car",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "vehicle",
+    "where_it_travels": "road"
+   },
+   "familiar": 0.98,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "train": {
+   "name": "Train",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "vehicle",
+    "where_it_travels": "rails"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "boat": {
+   "name": "Boat",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "vehicle",
+    "where_it_travels": "water"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-10"
+  },
+  "aeroplane": {
+   "name": "Aeroplane",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "vehicle",
+    "where_it_travels": "air"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-10"
+  },
+  "bicycle": {
+   "name": "Bicycle",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "vehicle",
+    "where_it_travels": "road"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "metro_train": {
+   "name": "Metro train",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "vehicle",
+    "where_it_travels": "rails"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-10"
+  },
+  "ship": {
+   "name": "Ship",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "vehicle",
+    "where_it_travels": "water"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-10"
+  },
+  "helicopter": {
+   "name": "Helicopter",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "vehicle",
+    "where_it_travels": "air"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-10"
+  },
+  "bus": {
+   "name": "Bus",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "vehicle",
+    "where_it_travels": "road"
+   },
+   "familiar": 0.94,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "goods_train": {
+   "name": "Goods train",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "vehicle",
+    "where_it_travels": "rails"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-10"
+  },
+  "ferry": {
+   "name": "Ferry",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "vehicle",
+    "where_it_travels": "water"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-10"
+  },
+  "rocket": {
+   "name": "Rocket",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "vehicle",
+    "where_it_travels": "air"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-10"
+  },
+  "kite": {
+   "name": "Kite",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "fly"
+   },
+   "familiar": 0.97,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "toys_top_up"
+  },
+  "ball": {
+   "name": "Ball",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "throw"
+   },
+   "familiar": 0.96,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "toy_phone": {
+   "name": "Toy phone",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "pretend"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06"
+  },
+  "toy_drum": {
+   "name": "Toy drum",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "music",
+    "how_it_makes_sound": "hit_or_strike"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06",
+   "shown_as": "Drum",
+   "notes": {
+    "general": "Shown and spoken as 'Drum', by the owner's word: the group must not be spotted by a word its labels share."
+   }
+  },
+  "building_blocks": {
+   "name": "Building blocks",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "build"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "toy_car": {
+   "name": "Toy car",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "wheel"
+   },
+   "familiar": 0.85,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "balloon": {
+   "name": "Balloon",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "fly"
+   },
+   "familiar": 0.96,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "toys_top_up"
+  },
+  "football": {
+   "name": "Football",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "throw"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-07"
+  },
+  "teddy_bear": {
+   "name": "Teddy bear",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "pretend"
+   },
+   "familiar": 0.93,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "toy_flute": {
+   "name": "Toy flute",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "music",
+    "how_it_makes_sound": "blow_into"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06",
+   "shown_as": "Flute",
+   "notes": {
+    "general": "Shown and spoken as 'Flute', by the owner's word: the group must not be spotted by a word its labels share."
+   }
+  },
+  "stacking_rings": {
+   "name": "Stacking rings",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "build"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06"
+  },
+  "paper_plane": {
+   "name": "Paper plane",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "toy",
+    "how_we_play_with_it": "fly"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06",
+   "notes": {
+    "how_we_play_with_it": "The pages point to 'Throw, kick or bat it'. Two checks, sorting it as a parent would, both put it in 'Fly it in the wind'."
+   }
+  },
+  "chair": {
+   "name": "Chair",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "household",
+    "kind_of_house_thing": "furniture"
+   },
+   "familiar": 0.97,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "cup": {
+   "name": "Cup",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "household",
+    "kind_of_house_thing": "eating"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "bucket": {
+   "name": "Bucket",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "household",
+    "kind_of_house_thing": "cleaning"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-10"
+  },
+  "fan": {
+   "name": "Fan",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "household",
+    "kind_of_house_thing": "electric"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-10"
+  },
+  "table": {
+   "name": "Table",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "household",
+    "kind_of_house_thing": "furniture"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "plate": {
+   "name": "Plate",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "household",
+    "kind_of_house_thing": "eating"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "soap": {
+   "name": "Soap",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "household",
+    "kind_of_house_thing": "cleaning"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-10"
+  },
+  "television": {
+   "name": "Television",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "household",
+    "kind_of_house_thing": "electric"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-10"
+  },
+  "bed": {
+   "name": "Bed",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "household",
+    "kind_of_house_thing": "furniture"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "spoon": {
+   "name": "Spoon",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "household",
+    "kind_of_house_thing": "eating"
+   },
+   "familiar": 0.94,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "towel": {
+   "name": "Towel",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "household",
+    "kind_of_house_thing": "cleaning"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-10"
+  },
+  "light_bulb": {
+   "name": "Light bulb",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "household",
+    "kind_of_house_thing": "electric"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-10"
+  },
+  "hammer": {
+   "name": "Hammer",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "tool"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "spade": {
+   "name": "Spade",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "tool"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "saw": {
+   "name": "Saw",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "tool"
+   },
+   "familiar": 0.85,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "screwdriver": {
+   "name": "Screwdriver",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "tool"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "axe": {
+   "name": "Axe",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "tool"
+   },
+   "familiar": 0.75,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "house": {
+   "name": "House",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "live"
+   },
+   "familiar": 0.97,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "temple": {
+   "name": "Temple",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "pray"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-03"
+  },
+  "school": {
+   "name": "School",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "learn"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-02"
+  },
+  "shop": {
+   "name": "Shop",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "buy"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked, approved by the owner",
+   "drafted_in": "2026-10-06-03",
+   "notes": {
+    "general": "Held at first: the pages do not show that it belongs in 'Buildings'; kind_of_made_thing: on a second reading, the sentence does not show it"
+   }
+  },
+  "railway_station": {
+   "name": "Railway station",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "travel"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06"
+  },
+  "hospital": {
+   "name": "Hospital",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "heal"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-01"
+  },
+  "bridge": {
+   "name": "Bridge",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "cross"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked, approved by the owner",
+   "drafted_in": "2026-10-06-03",
+   "notes": {
+    "general": "Held at first: the pages do not show that it belongs in 'Buildings'; kind_of_made_thing: on a second reading, the sentence does not show it"
+   }
+  },
+  "church": {
+   "name": "Church",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "pray"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "market": {
+   "name": "Market",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "buy"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "airport": {
+   "name": "Airport",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "travel"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06"
+  },
+  "clinic": {
+   "name": "Clinic",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "heal"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "footbridge": {
+   "name": "Footbridge",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "cross"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  }
+ }
+}

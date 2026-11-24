@@ -1,0 +1,219 @@
+{
+ "place": "made_by_people/building",
+ "stamp": "eea29a75f5ef",
+ "things": {
+  "temple": {
+   "name": "Temple",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "pray"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-03"
+  },
+  "church": {
+   "name": "Church",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "pray"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "mosque": {
+   "name": "Mosque",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "pray"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "gurudwara": {
+   "name": "Gurudwara",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "pray"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "shop": {
+   "name": "Shop",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "buy"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked, approved by the owner",
+   "drafted_in": "2026-10-06-03",
+   "notes": {
+    "general": "Held at first: the pages do not show that it belongs in 'Buildings'; kind_of_made_thing: on a second reading, the sentence does not show it"
+   }
+  },
+  "market": {
+   "name": "Market",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "buy"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "mall": {
+   "name": "Mall",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "buy"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "bakery": {
+   "name": "Bakery",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "buy"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "supermarket": {
+   "name": "Supermarket",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "buy"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "railway_station": {
+   "name": "Railway station",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "travel"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06"
+  },
+  "airport": {
+   "name": "Airport",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "travel"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06"
+  },
+  "metro_station": {
+   "name": "Metro station",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "travel"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06"
+  },
+  "port": {
+   "name": "Port",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "travel"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06"
+  },
+  "bridge": {
+   "name": "Bridge",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "cross"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked, approved by the owner",
+   "drafted_in": "2026-10-06-03",
+   "notes": {
+    "general": "Held at first: the pages do not show that it belongs in 'Buildings'; kind_of_made_thing: on a second reading, the sentence does not show it"
+   }
+  },
+  "footbridge": {
+   "name": "Footbridge",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "cross"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "tower": {
+   "name": "Tower",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "cross"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked, approved by the owner",
+   "drafted_in": "2026-10-06-03",
+   "notes": {
+    "general": "Held at first: the pages do not show that it belongs in 'Buildings'; kind_of_made_thing: on a second reading, the sentence does not show it"
+   }
+  },
+  "flyover": {
+   "name": "Flyover",
+   "fields": {
+    "kind_of_thing": "made_by_people",
+    "kind_of_made_thing": "building",
+    "what_people_do_there": "cross"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  }
+ }
+}

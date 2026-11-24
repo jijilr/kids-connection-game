@@ -162,6 +162,7 @@ def test_the_map_on_disk_is_the_map_the_builder_makes_now():
     import places
     on_disk = json.loads(places.PLACES.read_text(encoding="utf-8"))
     fresh = places.build()
+    fresh.pop("by_place")       # the things of each place go to files of their own, not into the map
     same = lambda m: {k: v for k, v in m.items() if k != "built_on"}
     assert same(on_disk) == same(fresh), "the map is stale: run python tools/catalogue/places.py"
     tree = json.loads(places.TREE.read_text(encoding="utf-8"))["circles"]
@@ -225,6 +226,26 @@ def test_the_map_names_a_place_by_its_circles_and_asks_a_question_where_it_has_i
     tried["a/h0"]["decisions"][0]["things_then"] -= 1       # its things have changed since: it may be tried again
     again = places.build(dictionary, things, settings, styles=[], tree={}, words={}, decided=tried)["places"]["a/h0"]
     assert again["state"] == "can be made"
+
+
+def test_each_place_that_can_make_a_set_has_a_small_file_of_its_own_things():
+    import places
+    the_map = json.loads(places.PLACES.read_text(encoding="utf-8"))
+    fresh = places.build()
+    by_place = fresh.pop("by_place")
+    ready = [name for name, record in the_map["places"].items() if record["state"] == "ready"]
+    on_disk = sorted(p.name for p in places.BY_PLACE.glob("*.json"))
+    assert on_disk == sorted(pathlib.Path(places.file_of(name)).name for name in ready), "one file for each such place, and no other"
+    everything = json.loads((places.DATA / "things.json").read_text(encoding="utf-8"))["things"]
+    for name in ready:
+        record = json.loads((places.DATA / places.file_of(name)).read_text(encoding="utf-8"))
+        assert record["stamp"] == the_map["stamp"], f"{name}: its file was written with the map"
+        assert record["things"] == by_place[name], f"{name}: its file is what the builder makes now"
+        assert all(everything[key] == thing for key, thing in record["things"].items()), "a thing is the same wherever it is kept"
+        assert the_map["places"][name]["things_file"] == places.file_of(name)
+    seed = json.loads((places.DATA / places.file_of("seed")).read_text(encoding="utf-8"))["things"]
+    assert len(seed) <= 4 * places.OF_EACH_KIND + 12 < len(everything), "the first place needs a small part of what there is"
+    assert places.file_of("animal/mammal/wild_land") == "places/animal__mammal__wild_land.json"
 
 
 def main():

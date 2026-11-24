@@ -1,0 +1,239 @@
+{
+ "place": "animal/bird",
+ "stamp": "eea29a75f5ef",
+ "things": {
+  "parrot": {
+   "name": "Parrot",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": "pet"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "budgie": {
+   "name": "Budgie",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": "pet"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "canary": {
+   "name": "Canary",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": "pet"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "lovebird": {
+   "name": "Lovebird",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": "pet"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-06",
+   "notes": {
+    "pet_farm_or_wild": "The pages point to 'Wild animals on land'. Two checks, sorting it as a parent would, both put it in 'Pets at home'."
+   }
+  },
+  "hen": {
+   "name": "Hen",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": "farm"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "duck": {
+   "name": "Duck",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": "farm"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "peacock": {
+   "name": "Peacock",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": "farm"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "turkey": {
+   "name": "Turkey",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": "farm"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-05",
+   "notes": {
+    "pet_farm_or_wild": "The pages point to 'Wild animals on land'. Two checks, sorting it as a parent would, both put it in 'Farm animals'."
+   }
+  },
+  "crow": {
+   "name": "Crow",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_land"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "sparrow": {
+   "name": "Sparrow",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_land"
+   },
+   "familiar": 0.85,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "eagle": {
+   "name": "Eagle",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_land"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "owl": {
+   "name": "Owl",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_land"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "seagull": {
+   "name": "Seagull",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_water"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "penguin": {
+   "name": "Penguin",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_water"
+   },
+   "familiar": 0.75,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "pelican": {
+   "name": "Pelican",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_water"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "crane": {
+   "name": "Crane",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_water"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "pigeon": {
+   "name": "Pigeon",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "bird",
+    "extinct": false,
+    "pet_farm_or_wild": [
+     "pet",
+     "wild_land"
+    ]
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals",
+   "notes": {
+    "pet_farm_or_wild": "Two checks could not give it one group: Pets at home and Wild animals on land. It stays off boards sorted by this field. Job run 2026-10-07-03."
+   }
+  }
+ }
+}

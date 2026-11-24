@@ -1,0 +1,369 @@
+{
+ "place": "animal/mammal",
+ "stamp": "eea29a75f5ef",
+ "things": {
+  "dog": {
+   "name": "Dog",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "pet"
+   },
+   "familiar": 0.99,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "cat": {
+   "name": "Cat",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "pet"
+   },
+   "familiar": 0.98,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "rabbit": {
+   "name": "Rabbit",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "pet"
+   },
+   "familiar": 0.92,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "hamster": {
+   "name": "Hamster",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "pet"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "guinea_pig": {
+   "name": "Guinea pig",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "pet"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "cow": {
+   "name": "Cow",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "farm"
+   },
+   "familiar": 0.98,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "horse": {
+   "name": "Horse",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "farm"
+   },
+   "familiar": 0.94,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "goat": {
+   "name": "Goat",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "farm"
+   },
+   "familiar": 0.93,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "sheep": {
+   "name": "Sheep",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "farm"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "pig": {
+   "name": "Pig",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "farm"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "elephant": {
+   "name": "Elephant",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_land",
+    "what_it_eats": "eats_plants"
+   },
+   "familiar": 0.97,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "lion": {
+   "name": "Lion",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_land",
+    "what_it_eats": "eats_meat"
+   },
+   "familiar": 0.96,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "monkey": {
+   "name": "Monkey",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_land",
+    "what_it_eats": "eats_both"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "hedgehog": {
+   "name": "Hedgehog",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_land",
+    "what_it_eats": "eats_insects"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-04"
+  },
+  "zebra": {
+   "name": "Zebra",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_land",
+    "what_it_eats": "eats_plants"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-04"
+  },
+  "tiger": {
+   "name": "Tiger",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_land",
+    "what_it_eats": "eats_meat"
+   },
+   "familiar": 0.96,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "bear": {
+   "name": "Bear",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_land",
+    "what_it_eats": "eats_both"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "meerkat": {
+   "name": "Meerkat",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_land",
+    "what_it_eats": "eats_insects"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-04"
+  },
+  "giraffe": {
+   "name": "Giraffe",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_land",
+    "what_it_eats": "eats_plants"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "wolf": {
+   "name": "Wolf",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_land",
+    "what_it_eats": "eats_meat"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-04"
+  },
+  "chimpanzee": {
+   "name": "Chimpanzee",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_land",
+    "what_it_eats": "eats_both"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-05"
+  },
+  "anteater": {
+   "name": "Anteater",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_land",
+    "what_it_eats": "eats_insects"
+   },
+   "familiar": 0.6,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-11-24-04"
+  },
+  "whale": {
+   "name": "Whale",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_water"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "dolphin": {
+   "name": "Dolphin",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_water"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "seal": {
+   "name": "Seal",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_water"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "walrus": {
+   "name": "Walrus",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_water"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "otter": {
+   "name": "Otter",
+   "fields": {
+    "kind_of_thing": "animal",
+    "kind_of_animal": "mammal",
+    "extinct": false,
+    "pet_farm_or_wild": "wild_water"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  }
+ }
+}

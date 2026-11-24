@@ -21,12 +21,16 @@ class Asked {
   final String? inBetweenPlace;
   final bool inBetweenReady;
 
+  /// The kinds its "in between" things lie between: it is shown only when he knows them.
+  final List<String> inBetweenSides;
+
   const Asked({
     required this.question,
     required this.makesASet,
     required this.kinds,
     this.inBetweenPlace,
     this.inBetweenReady = false,
+    this.inBetweenSides = const [],
   });
 }
 
@@ -53,6 +57,16 @@ class Place {
   final String state;
   final String why;
 
+  /// The file that holds the things a set here needs (`places/animal__bird.json`), for a
+  /// place that can make a set. The game loads it when it goes there.
+  final String? thingsFile;
+
+  /// The thing whose picture stands for the place on his web.
+  final String? picture;
+
+  /// For a group "in between": the places it lies between.
+  final List<String> between;
+
   const Place({
     required this.id,
     required this.name,
@@ -62,6 +76,9 @@ class Place {
     this.asks = const [],
     this.state = 'a group only',
     this.why = '',
+    this.thingsFile,
+    this.picture,
+    this.between = const [],
   });
 
   /// A set can be made here now.
@@ -87,15 +104,23 @@ class PlacesMap {
   /// were read at different moments, and are not used together.
   final int things;
 
+  /// The mark of the moment the map was built. Every place's file of things carries the
+  /// same mark; a file with another mark was written at another moment and is not used.
+  final String stamp;
+
   final Map<String, String> _byCircles;
 
-  PlacesMap(this._places, {this.things = 0})
+  PlacesMap(this._places, {this.things = 0, this.stamp = ''})
       : _byCircles = {for (final p in _places.values) _key(p.circles): p.id};
 
   PlacesMap.empty()
       : _places = const {},
         things = 0,
+        stamp = '',
         _byCircles = const {};
+
+  /// The things are stored by place: the first place has a file of its own.
+  bool get byPlace => _places['seed']?.thingsFile != null;
 
   static String _key(List<PathFilter> circles) =>
       (circles.map((c) => '${c.$1}=${c.$2}').toList()..sort()).join('&');
@@ -141,6 +166,7 @@ class PlacesMap {
               makesASet: a['makes_a_set'] == true,
               inBetweenPlace: a['in_between_place'] as String?,
               inBetweenReady: a['in_between_ready'] == true,
+              inBetweenSides: [for (final s in (a['in_between_sides'] as List? ?? const [])) '$s'],
               kinds: {
                 for (final k in ((a['kinds'] as Map?) ?? const {}).entries)
                   '${k.key}': KindAt(
@@ -153,8 +179,12 @@ class PlacesMap {
         ],
         state: '${p['state'] ?? ''}',
         why: '${p['why'] ?? ''}',
+        thingsFile: p['things_file'] as String?,
+        picture: p['picture'] as String?,
+        between: [for (final b in (p['between'] as List? ?? const [])) '$b'],
       );
     });
-    return PlacesMap(places, things: (json['things'] as num?)?.toInt() ?? 0);
+    return PlacesMap(places,
+        things: (json['things'] as num?)?.toInt() ?? 0, stamp: '${json['stamp'] ?? ''}');
   }
 }

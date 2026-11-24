@@ -1,0 +1,327 @@
+{
+ "place": "plant",
+ "stamp": "eea29a75f5ef",
+ "things": {
+  "mango_tree": {
+   "name": "Mango tree",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "tree",
+    "tree_academic": true
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "banana_plant": {
+   "name": "Banana plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "tree",
+    "tree_academic": false
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "notes": {
+    "tree_academic": "A banana plant has no woody trunk. Its stem is made of tightly rolled leaves, so scientists call it a giant herb."
+   },
+   "drafted_in": "seed_and_animals"
+  },
+  "coconut_tree": {
+   "name": "Coconut tree",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "tree",
+    "tree_academic": "depends"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "notes": {
+    "tree_academic": "A palm has a tall woody trunk but does not grow wood in rings as other trees do, so botanists differ on whether to call it a true tree."
+   },
+   "drafted_in": "seed_and_animals"
+  },
+  "neem_tree": {
+   "name": "Neem tree",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "tree",
+    "tree_academic": true
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "rose": {
+   "name": "Rose",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "flower"
+   },
+   "familiar": 0.85,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "sunflower": {
+   "name": "Sunflower",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "flower"
+   },
+   "familiar": 0.85,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "lotus": {
+   "name": "Lotus",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "flower"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "marigold": {
+   "name": "Marigold",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "flower"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "wheat": {
+   "name": "Wheat",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "grass_grain"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "sugarcane": {
+   "name": "Sugarcane",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "grass_grain"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "bamboo": {
+   "name": "Bamboo",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "grass_grain"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "grass": {
+   "name": "Grass",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "grass_grain"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "rice_plant": {
+   "name": "Rice plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "grass_grain"
+   },
+   "familiar": 0.75,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "tomato_plant": {
+   "name": "Tomato plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "fruit"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "carrot_plant": {
+   "name": "Carrot plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "under_the_ground"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "coriander_plant": {
+   "name": "Coriander plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "leaves"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "pea_plant": {
+   "name": "Pea plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "seeds_or_pods"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-07"
+  },
+  "brinjal_plant": {
+   "name": "Brinjal plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "fruit"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "radish_plant": {
+   "name": "Radish plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "under_the_ground"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "cabbage_plant": {
+   "name": "Cabbage plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "leaves"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "maize_plant": {
+   "name": "Maize plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "seeds_or_pods",
+    "kind_of_plant_academic": "grass_grain"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked, approved by the owner",
+   "drafted_in": "2026-10-06-09",
+   "notes": {
+    "general": "Held at first: uncertain: the approved proposal lists it in this group; the pages and the judgements point to 'Grasses and grains', not 'Vegetable plants'; it could not be settled that it belongs in 'The seeds or pods'",
+    "kind_of_plant_academic": "To a scientist maize is a tall grass, and its seeds are a cereal grain. In this game it is a vegetable plant whose seeds we eat."
+   }
+  },
+  "chilli_plant": {
+   "name": "Chilli plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "fruit"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "owner:list"
+  },
+  "onion_plant": {
+   "name": "Onion plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "under_the_ground"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "spinach_plant": {
+   "name": "Spinach plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "leaves"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  },
+  "bean_plant": {
+   "name": "Bean plant",
+   "fields": {
+    "kind_of_thing": "plant",
+    "extinct": false,
+    "kind_of_plant": "vegetable",
+    "part_we_eat": "seeds_or_pods"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-06-06"
+  }
+ }
+}

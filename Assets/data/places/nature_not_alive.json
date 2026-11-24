@@ -1,0 +1,369 @@
+{
+ "place": "nature_not_alive",
+ "stamp": "eea29a75f5ef",
+ "things": {
+  "sun": {
+   "name": "Sun",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "sky"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "moon": {
+   "name": "Moon",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "sky"
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "cloud": {
+   "name": "Cloud",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "sky"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "star": {
+   "name": "Star",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "sky"
+   },
+   "familiar": 0.85,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "river": {
+   "name": "River",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "water"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "sea": {
+   "name": "Sea",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "water"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "lake": {
+   "name": "Lake",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "water"
+   },
+   "familiar": 0.85,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "pond": {
+   "name": "Pond",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "water"
+   },
+   "familiar": 0.85,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "field": {
+   "name": "Field",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "land",
+    "shape_of_the_land": "flat"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "valley": {
+   "name": "Valley",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "land",
+    "shape_of_the_land": "hollow"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "pothole": {
+   "name": "Pothole",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "land",
+    "shape_of_the_land": "hollow"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "mountain": {
+   "name": "Mountain",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "land",
+    "shape_of_the_land": "high"
+   },
+   "familiar": 0.85,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "hill": {
+   "name": "Hill",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "land",
+    "shape_of_the_land": "high"
+   },
+   "familiar": 0.85,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "cliff": {
+   "name": "Cliff",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "land",
+    "shape_of_the_land": "high"
+   },
+   "familiar": 0.85,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "beach": {
+   "name": "Beach",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "land",
+    "shape_of_the_land": "by_water"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "volcano": {
+   "name": "Volcano",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "land",
+    "shape_of_the_land": "high"
+   },
+   "familiar": 0.75,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked, approved by the owner",
+   "drafted_in": "land_top_up",
+   "notes": {
+    "general": "Held at first: the drafter was unsure: A child may know it from picture books rather than from daily life, since few children see one."
+   }
+  },
+  "desert": {
+   "name": "Desert",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "land",
+    "shape_of_the_land": "flat"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked, approved by the owner",
+   "drafted_in": "made_and_nature",
+   "notes": {
+    "general": "Held at first: the drafter was unsure: A four-year-old may know the word from picture books but may not have seen one."
+   }
+  },
+  "cave": {
+   "name": "Cave",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "land",
+    "shape_of_the_land": "hollow"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked, approved by the owner",
+   "drafted_in": "land_top_up",
+   "notes": {
+    "general": "Held at first: the drafter was unsure: A child may know caves from stories or pictures rather than from visiting one."
+   }
+  },
+  "meadow": {
+   "name": "Meadow",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "land",
+    "shape_of_the_land": "flat"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "canyon": {
+   "name": "Canyon",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "land",
+    "shape_of_the_land": "hollow"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-03"
+  },
+  "rock": {
+   "name": "Rock",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "ground",
+    "what_happens_when_wet": "stays_hard"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "soil": {
+   "name": "Soil",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "ground",
+    "what_happens_when_wet": "gets_mushy"
+   },
+   "familiar": 0.95,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "sand": {
+   "name": "Sand",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "ground",
+    "what_happens_when_wet": "washes_away"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  },
+  "mud": {
+   "name": "Mud",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "ground",
+    "what_happens_when_wet": "gets_mushy"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "pebble": {
+   "name": "Pebble",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "ground",
+    "what_happens_when_wet": "stays_hard"
+   },
+   "familiar": 0.9,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-02"
+  },
+  "clay": {
+   "name": "Clay",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "ground",
+    "what_happens_when_wet": "gets_sticky"
+   },
+   "familiar": 0.85,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "made_and_nature"
+  },
+  "boulder": {
+   "name": "Boulder",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "ground",
+    "what_happens_when_wet": "stays_hard"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-02"
+  },
+  "gravel": {
+   "name": "Gravel",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "ground",
+    "what_happens_when_wet": "stays_hard"
+   },
+   "familiar": 0.8,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-02"
+  },
+  "coal": {
+   "name": "Coal",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": "ground",
+    "what_happens_when_wet": "stays_hard"
+   },
+   "familiar": 0.7,
+   "reviewed": 13,
+   "source": "job:grounded+checked",
+   "drafted_in": "2026-10-07-02"
+  },
+  "rain": {
+   "name": "Rain",
+   "fields": {
+    "kind_of_thing": "nature_not_alive",
+    "kind_of_nature": [
+     "sky",
+     "water"
+    ]
+   },
+   "familiar": 1.0,
+   "reviewed": 13,
+   "source": "deepseek:drafted+checked",
+   "drafted_in": "seed_and_animals"
+  }
+ }
+}

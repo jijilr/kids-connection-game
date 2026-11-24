@@ -506,7 +506,7 @@ On the night it was first built the map held 82 places: 16 ready, 52 held, 5 tha
 | 2 | The game reads the map and drops its own copy of the rules | **built** |
 | 3 | The helper and the job read the map and write their results to the master records | **built**, with one part left (below) |
 | 4 | A page for the owner: the whole map, every place by its state | **built** |
-| 5 | Things stored by place, so a phone loads only the places near his lines | not built |
+| 5 | Things stored by place, so a phone loads only the places near his lines | **built** |
 
 **Since step 2 the rules of what a place is are written once, in the builder.** The game reads
 the map (`lib/models/places_map.dart`) and works out nothing about places for itself: which
@@ -569,6 +569,36 @@ map the game reads, each time it is opened, so it is never behind. It shows:
 
 It works on a phone on the same Wi-Fi, at the PC's address with `/map`.
 
+### Step 5: things stored by place
+
+A phone cannot load every thing there is. So each place that can make a set has a small file
+of its own, `Assets/data/places/<place>.json`, written by the builder with the map.
+
+- **What a place's file holds:** of each kind that can be shown by a question asked there, the
+  twelve best-known things, taken in turn from the kinds below it so that no one of them fills
+  the list; and the things that are "in between" there. Twelve is three sets of four without
+  a repeat.
+- **The rest of a kind's things are met deeper in**, at the kind's own place. However large the
+  game grows, a place's file stays small.
+- **The game starts with the first place's file only** and takes up another place's file when
+  it goes there. The place the button will lead to is fetched while he looks at the set he has
+  just finished, so he does not wait.
+- **One stamp.** The map and every file carry the mark of the moment they were built. A file
+  with another mark is not used; he stays where he is, and the next try reads it again.
+- The picture that stands for a place on his web, and what a group "in between" lies between,
+  are written on the map, because the things themselves may not be on the device.
+
+On the night it was built: the first set needs 48 things in 13 KB, where the game used to load
+all 276 in 95 KB. Sixteen files, the largest 21 KB.
+
+What changes for the player: at a high place he meets the best-known twelve of each kind, not
+any of the kind. With 276 things that is hardly felt. It is the price of a file that stays
+small when a kind holds ten thousand.
+
+The full list, `things.json`, is still written. The job reads it, and the game falls back to
+it where there are no files by place. Tests that give the game all its things at once are
+unaffected.
+
 Command: `python tools/catalogue/places.py` builds the map and lists it;
 `python tools/catalogue/places.py show PLACE` prints one record.
 
@@ -603,7 +633,7 @@ With general use decided, that wording is the next thing to turn into a setting.
 | In between (7) | built | the two keys are written, tested and tried; no run uses them yet (one rule is open) |
 | Widening (8) | meets a wider place by rule 5 | built as a command; the helper does not widen by itself |
 | Circles that cross (8a) | built | one question widened by a command; the job and helper still know one road |
-| The map of places (8b) | reads it, and works out no place for itself | the helper reads only the map; the job makes crossing places from it, and plans old-road places from its tree still |
+| The map of places (8b) | reads it, works out no place for itself, and loads things place by place | the helper reads only the map; the job makes crossing places from it, and plans old-road places from its tree still |
 
 ## 11. Open questions
 
