@@ -298,8 +298,8 @@ class EngineScreen extends StatelessWidget {
 
   Widget _celebration(EngineProvider g) {
     // Where he goes next is one tap away, so he never waits. Four times in five the
-    // button goes deeper where he has shown mastery, once in five to a set he has not
-    // mastered (EngineProvider._chooseNext); with nothing chosen, a parallel board.
+    // button follows the best line he has shown, once in five it leads to a set he has
+    // not proven (EngineProvider._chooseNext); with nothing chosen, a parallel board.
     final next = g.nextStep;
     final detail = g.diggable.isNotEmpty
         ? 'Dig deeper into a group, or tap the arrow.'

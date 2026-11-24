@@ -18,13 +18,10 @@ class GameSettings {
   /// A board that could only show names stays closed to a child who cannot read.
   final bool boardsNeedPictures;
 
-  /// After a board, the share of the time the button leads deeper where he has shown
-  /// mastery; the rest of the time it leads to a set where he has not (the owner's
-  /// ruling of 23 Nov 2026: 0.8).
+  /// After a set, the share of the time the button follows the best line he has shown;
+  /// the rest of the time it leads to a set he has not proven (the owner's ruling of
+  /// 23 Nov 2026: 0.8).
   final double deeperShare;
-
-  /// On how many different days a group must be found cleanly to count as mastered.
-  final int masteryDays;
 
   const GameSettings({
     required this.startField,
@@ -33,7 +30,6 @@ class GameSettings {
     this.holdBack = const {},
     this.boardsNeedPictures = false,
     this.deeperShare = 0.8,
-    this.masteryDays = 2,
   });
 
   factory GameSettings.fromJson(Map<String, dynamic> json) {
@@ -48,7 +44,6 @@ class GameSettings {
       holdBack: lists('hold_back'),
       boardsNeedPictures: json['boards_need_pictures'] as bool? ?? false,
       deeperShare: ((json['next_board'] as Map<String, dynamic>?)?['deeper_share'] as num?)?.toDouble() ?? 0.8,
-      masteryDays: ((json['next_board'] as Map<String, dynamic>?)?['mastery_days'] as num?)?.toInt() ?? 2,
     );
   }
 }

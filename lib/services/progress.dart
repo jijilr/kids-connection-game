@@ -15,11 +15,13 @@ class Progress {
     Map<String, BoardProgress>? boards,
     Map<String, BoardProgress>? orders,
     Map<String, GroupProgress>? groups,
+    List<String>? lines,
     this.lastBoard,
     this.updated,
   })  : boards = boards ?? {},
         orders = orders ?? {},
-        groups = groups ?? {};
+        groups = groups ?? {},
+        lines = lines ?? [];
 
   /// Board id -> what happened there. A board's id is the path that leads to it:
   /// `seed`, `animal`, `animal/dinosaur`. The job names circles the same way.
@@ -37,34 +39,36 @@ class Progress {
   String? lastBoard;
   DateTime? updated;
 
-  /// 2 since 23 Nov 2026: the groups he has found, and how cleanly.
-  static const version = 2;
+  /// The lines to follow next, best first: the groups he did well whose own set he has
+  /// not played yet. A group's id is the id of the set inside it. The game shows the
+  /// first of these that is ready; the helper on the owner's PC prepares the ones that
+  /// are not, a few ahead of him (the owner's design of 24 Nov 2026).
+  final List<String> lines;
 
-  /// He found [group] on a board. Clean means no wrong guess on that board took in any of
-  /// its things and no clue was asked for it: a find that shows he knows it, not luck.
+  /// 3 since 24 Nov 2026: the lines to follow. (2 recorded the groups found.)
+  static const version = 3;
+
+  /// He found [group] on a set. Clean means no wrong guess took in any of its things and
+  /// no clue was asked for it.
   void found(String group, DateTime now, {required bool clean}) {
     final g = groups.putIfAbsent(group, GroupProgress.new)
       ..found += 1
       ..last = now;
-    if (clean) {
-      g.clean += 1;
-      final day = _day(now);
-      if (!g.cleanDays.contains(day)) {
-        g.cleanDays.add(day);
-        if (g.cleanDays.length > GroupProgress.daysKept) g.cleanDays.removeAt(0);
-      }
-    }
+    if (clean) g.clean += 1;
     updated = now;
   }
 
-  /// Whether he has shown mastery of [group]: found cleanly on at least [days] different
-  /// days. One lucky find proves nothing; the same find on another day does.
-  bool mastered(String group, {int days = 2}) => (groups[group]?.cleanDays.length ?? 0) >= days;
-
-  static String _day(DateTime t) {
-    final d = t.toLocal();
-    return '${d.year.toString().padLeft(4, '0')}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}';
+  /// He finished the set [board], whose groups were [all]. [didWell] are the ones he did
+  /// well, best first. The set itself is used up as a line; the groups he did well go to
+  /// the front, so the best line of the newest set is followed first; a group he did not
+  /// do well this time is no longer a line to follow.
+  void finished(String board, {required List<String> all, required List<String> didWell}) {
+    lines.removeWhere((id) => id == board || all.contains(id));
+    lines.insertAll(0, didWell);
   }
+
+  /// Lines that can never be made into a set (the helper says so) are let go.
+  void drop(Iterable<String> dead) => lines.removeWhere(dead.contains);
 
   /// The id of the board reached by [filter]: the values chosen on the way, in order.
   static String boardId(List<PathFilter> filter) =>
@@ -112,6 +116,7 @@ class Progress {
         'boards': {for (final e in boards.entries) e.key: e.value.toJson()},
         'orders': {for (final e in orders.entries) e.key: e.value.toJson()},
         'groups': {for (final e in groups.entries) e.key: e.value.toJson()},
+        'lines': lines,
       };
 
   /// The text of the file a grown-up saves for the job.
@@ -143,6 +148,10 @@ class Progress {
       boards: boards,
       orders: orders,
       groups: groups,
+      lines: [
+        for (final id in (json['lines'] is List ? json['lines'] as List : const []))
+          if (id is String) id
+      ],
       lastBoard: json['last_board'] as String?,
       updated: DateTime.tryParse('${json['updated'] ?? ''}'),
     );
@@ -165,33 +174,19 @@ class BoardProgress {
       );
 }
 
-/// How he has found one group: how often, how often cleanly, and on which days cleanly.
+/// How he has found one group: how often, and how often cleanly.
 class GroupProgress {
-  GroupProgress({this.found = 0, this.clean = 0, List<String>? cleanDays, this.last})
-      : cleanDays = cleanDays ?? [];
+  GroupProgress({this.found = 0, this.clean = 0, this.last});
   int found;
   int clean;
-
-  /// The days (yyyy-mm-dd, on the device's clock) he found it cleanly; the latest few.
-  final List<String> cleanDays;
   DateTime? last;
 
-  static const daysKept = 5;
-
-  Map<String, dynamic> toJson() => {
-        'found': found,
-        'clean': clean,
-        'clean_days': cleanDays,
-        'last': last?.toUtc().toIso8601String(),
-      };
+  Map<String, dynamic> toJson() =>
+      {'found': found, 'clean': clean, 'last': last?.toUtc().toIso8601String()};
 
   factory GroupProgress.fromJson(Map<String, dynamic> json) => GroupProgress(
-        found: (json['found'] as num?)?.toInt() ?? 0,
-        clean: (json['clean'] as num?)?.toInt() ?? 0,
-        cleanDays: [
-          for (final d in (json['clean_days'] is List ? json['clean_days'] as List : const []))
-            if (d is String) d
-        ],
+        found: json['found'] is num ? (json['found'] as num).toInt() : 0,
+        clean: json['clean'] is num ? (json['clean'] as num).toInt() : 0,
         last: DateTime.tryParse('${json['last'] ?? ''}'),
       );
 }

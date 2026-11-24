@@ -30,12 +30,12 @@ class NextStep {
   /// A board inside one of the groups just found: the button says "Dig deeper".
   final bool inside;
 
-  /// Chosen because he has shown mastery of the group that leads to it (the four in
-  /// five); false when it is a set he has not mastered (the one in five, or when he has
-  /// mastered nothing that leads anywhere yet).
-  final bool mastered;
+  /// It follows a line he has shown: the set inside a group he did well (the four in
+  /// five). False when it is a set he has not proven (the one in five, or when no line
+  /// he has shown is ready).
+  final bool proven;
 
-  const NextStep(this.filter, this.label, {required this.inside, required this.mastered});
+  const NextStep(this.filter, this.label, {required this.inside, required this.proven});
 
   String get id => Progress.boardId(filter);
 }
@@ -76,10 +76,13 @@ class EngineProvider extends ChangeNotifier {
   /// How many clues he has asked for on this board. Kept to see how he plays, never to mark him.
   int cluesUsed = 0;
 
-  // On this board: the groups a wrong guess took in, and the groups a clue was asked for.
-  // A group found after either is found, but not cleanly: it does not count toward mastery.
-  final Set<String> _shaken = {};
+  // On this set, for each group: how many wrong guesses took in one of its things, the
+  // number of the guess that first took it in (so that "attempted earliest" is known),
+  // and whether a clue was asked for it.
+  final Map<String, int> _wrongGuesses = {};
+  final Map<String, int> _firstAttempt = {};
   final Set<String> _clued = {};
+  int _guesses = 0;
 
   /// Where the button that ends this board leads, chosen once when the board is done.
   /// Null before then, and when nothing fits: the button then brings a parallel board.
@@ -181,70 +184,61 @@ class EngineProvider extends ChangeNotifier {
   /// He has solved this board and no group of it can be dug into.
   bool get atADeadEnd => boardFinished && diggable.isEmpty;
 
-  /// Whether he has shown mastery of the group that leads to the board at [id].
-  bool masteredGroup(String id) => progress.mastered(id, days: _repo.settings.masteryDays);
+  /// The groups of this set in the order he did them best (the owner's rule of 24 Nov
+  /// 2026): fewest wrong guesses that took in its things, then no clue, and a tie goes
+  /// to the one he attempted earliest.
+  List<BoardGroup> get ranked => [...solved]..sort((a, b) {
+      final w = (_wrongGuesses[a.value] ?? 0).compareTo(_wrongGuesses[b.value] ?? 0);
+      if (w != 0) return w;
+      final c = (_clued.contains(a.value) ? 1 : 0).compareTo(_clued.contains(b.value) ? 1 : 0);
+      if (c != 0) return c;
+      final t = (_firstAttempt[a.value] ?? 0).compareTo(_firstAttempt[b.value] ?? 0);
+      return t != 0 ? t : solved.indexOf(a).compareTo(solved.indexOf(b)); // the same guess: the one found first
+    });
 
-  /// Where the button that ends a board leads. The owner's ruling of 23 Nov 2026, which
-  /// replaces "lean toward the branch he has visited least": like a good recommender,
-  /// four boards in five go deeper where he has shown mastery, and one in five goes to a
-  /// set where he has not, so that he is not only fed what he already knows.
-  ///
-  /// Deeper where he has shown mastery: a board inside a group he has mastered. Inside a
-  /// group just found comes first, then one he has solved least, then the one he saw
-  /// longest ago.
-  /// A set he has not mastered: inside a group just found comes first, then the board he
-  /// has opened least, nearest the seed first. Until he has mastered anything, this is
-  /// the only kind there is, and it keeps the old balance: the least visited first.
+  /// He did this group well: no wrong guess took in its things, and no clue was asked.
+  bool didWell(BoardGroup g) => (_wrongGuesses[g.value] ?? 0) == 0 && !_clued.contains(g.value);
+
+  /// Where the button that ends a set leads (the owner's design of 24 Nov 2026). There
+  /// is one game and its data grows: the lines he has shown, best first, are kept in his
+  /// saved progress, and the helper on the owner's PC prepares the sets they lead to, a
+  /// few ahead of him. Four times in five the button follows the first of those lines
+  /// whose set is ready. Once in five it leads to a set he has not proven: the one he
+  /// has opened least, nearest first. When no line is ready he goes there too, so he
+  /// never waits.
   NextStep? _chooseNext() {
     final hereFilter = _stack.last.filter;
     final here = Progress.boardId(hereFilter);
-    final circles = _repo.assembler
+    final ready = _repo.assembler
         .circlesBelow(_stack.first.dim, needPictures: _repo.settings.boardsNeedPictures)
         .where((f) => Progress.boardId(f) != here)
         .toList();
     bool inside(List<PathFilter> f) =>
         f.length == hereFilter.length + 1 &&
-        Progress.boardId(f.sublist(0, hereFilter.length)) == Progress.boardId(hereFilter) &&
+        Progress.boardId(f.sublist(0, hereFilter.length)) == here &&
         solved.any((g) => g.dimId == f.last.$1 && g.value == f.last.$2);
+    final byId = {for (final f in ready) Progress.boardId(f): f};
+    final shown = [for (final id in progress.lines) if (byId.containsKey(id)) byId[id]!];
     final never = DateTime.fromMillisecondsSinceEpoch(0);
-    // Ties go to the group found first on this board, then to the game's own order.
-    int place(List<PathFilter> f) {
-      final found = solved.indexWhere((g) => inside(f) && g.dimId == f.last.$1 && g.value == f.last.$2);
-      return found >= 0 ? found : solved.length + circles.indexOf(f);
-    }
-    int compareSeen(List<PathFilter> a, List<PathFilter> b) {
-      final s = (progress.lastSeen(Progress.boardId(a)) ?? never)
-          .compareTo(progress.lastSeen(Progress.boardId(b)) ?? never);
-      return s != 0 ? s : place(a).compareTo(place(b));
-    }
-    int insideFirst(List<PathFilter> a, List<PathFilter> b) => (inside(a) ? 0 : 1).compareTo(inside(b) ? 0 : 1);
-
-    final strong = circles.where((f) => masteredGroup(Progress.boardId(f))).toList()
+    final rest = ready.where((f) => !progress.lines.contains(Progress.boardId(f))).toList()
       ..sort((a, b) {
-        final c = insideFirst(a, b);
-        if (c != 0) return c;
-        final s = (progress.boards[Progress.boardId(a)]?.solved ?? 0)
-            .compareTo(progress.boards[Progress.boardId(b)]?.solved ?? 0);
-        return s != 0 ? s : compareSeen(a, b);
-      });
-    final open = circles.where((f) => !masteredGroup(Progress.boardId(f))).toList()
-      ..sort((a, b) {
-        final c = insideFirst(a, b);
-        if (c != 0) return c;
         final o = progress.timesOpened(Progress.boardId(a)).compareTo(progress.timesOpened(Progress.boardId(b)));
         if (o != 0) return o;
         final d = a.length.compareTo(b.length);
-        return d != 0 ? d : compareSeen(a, b);
+        if (d != 0) return d;
+        final t = (progress.lastSeen(Progress.boardId(a)) ?? never)
+            .compareTo(progress.lastSeen(Progress.boardId(b)) ?? never);
+        return t != 0 ? t : ready.indexOf(a).compareTo(ready.indexOf(b));
       });
 
-    final deeper = _random.nextDouble() < _repo.settings.deeperShare;
-    final List<PathFilter>? chosen = deeper
-        ? (strong.isNotEmpty ? strong.first : (open.isNotEmpty ? open.first : null))
-        : (open.isNotEmpty ? open.first : (strong.isNotEmpty ? strong.first : null));
+    final follow = _random.nextDouble() < _repo.settings.deeperShare;
+    final List<PathFilter>? chosen = follow
+        ? (shown.isNotEmpty ? shown.first : (rest.isNotEmpty ? rest.first : null))
+        : (rest.isNotEmpty ? rest.first : (shown.isNotEmpty ? shown.first : null));
     if (chosen == null) return null;
     final step = chosen.last;
     return NextStep(chosen, registry.byId(step.$1)?.label(step.$2) ?? step.$2,
-        inside: inside(chosen), mastered: masteredGroup(Progress.boardId(chosen)));
+        inside: inside(chosen), proven: progress.lines.contains(Progress.boardId(chosen)));
   }
 
   /// The button that ends a board: to the board chosen for him, or, when nothing was
@@ -292,8 +286,10 @@ class EngineProvider extends ChangeNotifier {
     _clueStep = -1;
     clue = null;
     cluesUsed = 0;
-    _shaken.clear();
+    _wrongGuesses.clear();
+    _firstAttempt.clear();
     _clued.clear();
+    _guesses = 0;
     nextStep = null;
     explanation = null;
     if (b != null) {
@@ -333,13 +329,18 @@ class EngineProvider extends ChangeNotifier {
     final b = board;
     if (b == null || selected.length != 4 || boardFinished) return SubmitResult.notReady;
     final ids = selected.map((e) => e.id).toSet();
+    _guesses++;
+    for (final g in b.groups) {
+      if (!_isSolvedGroup(g) && g.items.any((e) => ids.contains(e.id))) {
+        _firstAttempt.putIfAbsent(g.value, () => _guesses);
+      }
+    }
 
     for (final g in b.groups) {
       if (_isSolvedGroup(g) || !_same(g, ids)) continue;
       solved.add(g);
       selected.clear();
-      progress.found(Progress.boardId(_childFilter(g)), _now(),
-          clean: !_shaken.contains(g.value) && !_clued.contains(g.value));
+      progress.found(Progress.boardId(_childFilter(g)), _now(), clean: didWell(g));
       explanation = explanationOf(g);
       if (g.value == _clueGroup) {
         _clueGroup = null;
@@ -350,6 +351,11 @@ class EngineProvider extends ChangeNotifier {
         progress.solved(Progress.boardId(_stack.last.filter), _now());
         // Nowhere deeper to go from here: an order for more content, which the job reads.
         if (diggable.isEmpty) progress.order(Progress.boardId(_stack.last.filter), _now());
+        // the lines to follow next: this set is used up; the groups he did well go first
+        String idOf(BoardGroup g) => Progress.boardId(_childFilter(g));
+        progress.finished(Progress.boardId(_stack.last.filter),
+            all: [for (final g in b.groups) idOf(g)],
+            didWell: [for (final g in ranked) if (didWell(g)) idOf(g)]);
         unawaited(_progressStore.save(progress));
         nextStep = _chooseNext();
         message = 'Solved!';
@@ -364,7 +370,9 @@ class EngineProvider extends ChangeNotifier {
 
     mistakes++;
     for (final g in b.groups) {
-      if (!_isSolvedGroup(g) && g.items.any((e) => ids.contains(e.id))) _shaken.add(g.value);
+      if (!_isSolvedGroup(g) && g.items.any((e) => ids.contains(e.id))) {
+        _wrongGuesses[g.value] = (_wrongGuesses[g.value] ?? 0) + 1;
+      }
     }
     final near = b.groups.any((g) =>
         !_isSolvedGroup(g) && g.items.where((e) => ids.contains(e.id)).length == 3);

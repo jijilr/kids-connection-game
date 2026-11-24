@@ -92,7 +92,7 @@ void main() {
     }
   });
 
-  test('with nothing mastered yet, the button leads into the group he has visited least', () async {
+  test('when he did no group well, the button leads into the group he has visited least', () async {
     final store = MemoryProgressStore();
     final visited = Progress();
     for (int i = 0; i < 6; i++) {
@@ -103,11 +103,17 @@ void main() {
     await store.save(visited);
     final g = EngineProvider(repo: repo(3), random: Random(3), progressStore: store, clock: clock);
     await g.init();
+    // one wrong guess that takes in a thing of every group: none is done well
+    for (final grp in g.board!.groups) {
+      g.toggle(grp.items.first);
+    }
+    expect(g.submit(), SubmitResult.wrong);
     solve(g);
+    expect(g.progress.lines, isEmpty);
     expect(g.diggable, isNotEmpty);
     final next = g.nextStep!;
     expect(next.inside, isTrue);
-    expect(next.mastered, isFalse);
+    expect(next.proven, isFalse);
     expect(next.id, 'nature_not_alive', reason: 'the one branch he has never opened');
     expect(g.atADeadEnd, isFalse);
     g.goNext();

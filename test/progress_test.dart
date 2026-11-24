@@ -79,8 +79,8 @@ void main() {
       ..solved('seed', noon)
       ..opened('made_by_people/vehicle', noon);
     final file = jsonDecode(progress.toFileText()) as Map<String, dynamic>;
-    expect(file.keys, unorderedEquals(['what', 'version', 'updated', 'last_board', 'boards', 'orders', 'groups']));
-    expect(file['version'], 2);
+    expect(file.keys, unorderedEquals(['what', 'version', 'updated', 'last_board', 'boards', 'orders', 'groups', 'lines']));
+    expect(file['version'], 3);
     expect(file['last_board'], 'made_by_people/vehicle');
     expect(file['boards']['seed'], {'opened': 1, 'solved': 1, 'last': '2026-10-07T12:00:00.000Z'});
 
@@ -92,10 +92,10 @@ void main() {
   test('a broken or empty saved copy starts afresh instead of stopping the game', () {
     expect(Progress.fromJson(const {}).boards, isEmpty);
     expect(Progress.fromJson(const {'boards': 'nonsense', 'updated': 'x'}).boards, isEmpty);
-    expect(Progress.fromJson(const {'groups': {'animal': {'clean_days': 'x'}}}).groups['animal']!.cleanDays, isEmpty);
+    expect(Progress.fromJson(const {'groups': {'animal': {'clean': 'x'}}, 'lines': 'x'}).lines, isEmpty);
   });
 
-  test('a copy saved before groups were recorded (version 1) still loads', () {
+  test('a copy saved before groups and lines were recorded (version 1) still loads', () {
     final old = Progress.fromJson(const {
       'version': 1,
       'boards': {'seed': {'opened': 2, 'solved': 1, 'last': '2026-10-07T12:00:00.000Z'}},
@@ -103,28 +103,38 @@ void main() {
     });
     expect(old.boards['seed']!.opened, 2);
     expect(old.groups, isEmpty);
-    expect(old.mastered('animal'), isFalse);
+    expect(old.lines, isEmpty);
   });
 
-  test('the groups he found, and on which days cleanly, are saved and read back', () {
-    final day1 = DateTime(2026, 11, 23, 10), day2 = DateTime(2026, 11, 24, 10);
+  test('the groups he found and the lines to follow are saved and read back', () {
     final progress = Progress()
-      ..found('animal', day1, clean: true)
-      ..found('animal', day1, clean: true)
-      ..found('plant', day1, clean: false);
-    expect(progress.mastered('animal'), isFalse, reason: 'two clean finds on one day are not yet two days');
-    progress.found('animal', day2, clean: true);
-    expect(progress.mastered('animal'), isTrue);
-    expect(progress.mastered('plant'), isFalse);
-
+      ..found('animal', noon, clean: true)
+      ..found('animal', noon, clean: true)
+      ..found('plant', noon, clean: false)
+      ..finished('seed', all: ['animal', 'plant', 'made_by_people', 'nature_not_alive'], didWell: ['animal']);
     final file = jsonDecode(progress.toFileText()) as Map<String, dynamic>;
-    expect(file['groups']['animal']['found'], 3);
-    expect(file['groups']['animal']['clean'], 3);
-    expect(file['groups']['animal']['clean_days'], ['2026-11-23', '2026-11-24']);
+    expect(file['groups']['animal'], {'found': 2, 'clean': 2, 'last': '2026-10-07T12:00:00.000Z'});
+    expect(file['lines'], ['animal']);
     final back = Progress.fromJson(file);
-    expect(back.mastered('animal'), isTrue);
-    expect(back.groups['plant']!.found, 1);
+    expect(back.lines, ['animal']);
     expect(back.groups['plant']!.clean, 0);
+  });
+
+  test('a finished set is used up as a line, and its best groups go to the front', () {
+    final progress = Progress()
+      ..finished('seed', all: ['animal', 'plant', 'made_by_people', 'nature_not_alive'],
+          didWell: ['animal', 'made_by_people', 'plant']);
+    expect(progress.lines, ['animal', 'made_by_people', 'plant']);
+    progress.finished('animal',
+        all: ['animal/mammal', 'animal/bird', 'animal/fish', 'animal/dinosaur'],
+        didWell: ['animal/fish', 'animal/mammal']);
+    expect(progress.lines, ['animal/fish', 'animal/mammal', 'made_by_people', 'plant'],
+        reason: 'the newest set first; the set just played is no longer a line');
+    // a group he did well before and not this time is no longer followed
+    progress.finished('seed', all: ['animal', 'plant', 'made_by_people', 'nature_not_alive'], didWell: ['plant']);
+    expect(progress.lines, ['plant', 'animal/fish', 'animal/mammal']);
+    progress.drop(['animal/fish']);
+    expect(progress.lines, ['plant', 'animal/mammal']);
   });
 
   testWidgets('the grown-up panel lists the boards and saves the file', (tester) async {
