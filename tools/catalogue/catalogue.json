@@ -34246,7 +34246,7 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "job:2026-11-24-32",
+    "by": "job:2026-11-24-33",
     "on": "2026-11-24"
   },
   "groups": {
@@ -36309,13 +36309,23 @@
       "label": "Wild animals on land",
       "question": "Is it mostly a pet, a farm animal or a wild animal?",
       "clues": [],
-      "explanation": null,
+      "explanation": {
+        "text": "These animals all live free on land, away from homes and farms. They find their own food and make their own homes. A cheetah can run very, very fast, faster than any other animal on land.",
+        "together": "These animals all live free on land, away from homes and farms. They find their own food and make their own homes.",
+        "fact": "A cheetah can run very, very fast, faster than any other animal on land.",
+        "quote": "It is the fastest land animal and can run up to 105 kilometres per hour (65 mph), and accelerate from 0 to 97 kilometres per hour (60 mph) in less than 3 seconds.",
+        "source": "cheetah:wikipedia_simple",
+        "source_url": "https://simple.wikipedia.org/wiki/Cheetah",
+        "cached": "tools/voice/clips/groups/pet_farm_or_wild__wild_land__explanation.mp3",
+        "clip": "Assets/audio/groups/pet_farm_or_wild__wild_land__explanation.mp3",
+        "clip_sha256": "fa4009c98738c5226e0cdfebd70df587e566ebe844ed298c4ff0f37f5fe5069b",
+        "clip_from": "Kokoro, voice bf_emma, recorded 2026-11-24"
+      },
       "written_by": "deepseek-flash",
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "held": [
-        "no clues were kept: clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another",
-        "no explanation was kept: on a second reading, the quoted sentence does not show the fact"
+        "no clues were kept: clue 2 names a thing of the group: house; clue 1 is not true of every thing in the group; clue 2 is not true of every thing in the group; clue 2 would fit a thing of another group as well; clue 3 is not true of every thing in the group; clue 3 would fit a thing of another group as well; the clues do not grow more helpful one after another"
       ],
       "clues_set_aside": {
         "on": "2026-11-24",
