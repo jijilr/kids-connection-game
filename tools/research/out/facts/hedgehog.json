@@ -1,0 +1,61 @@
+{
+  "name": "Hedgehog",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "A  hedgehog  is a spiny mammal of the subfamily Erinaceinae, in the eulipotyphlan family Erinaceidae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "A  hedgehog  is a spiny mammal of the subfamily Erinaceinae, in the eulipotyphlan family Erinaceidae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "There are 17 species of hedgehog in five genera found throughout parts of Europe, Asia, and Africa, and in New Zealand by introduction.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_land",
+      "quote": "There are 17 species of hedgehog in five genera found throughout parts of Europe, Asia, and Africa, and in New Zealand by introduction.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_it_eats": {
+      "value": "eats_insects",
+      "quote": "Hedgehogs eat insects, snails, frogs and toads, snakes, bird eggs, carrion, mushrooms, berries and melons.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Hedgehog",
+      "title": "Hedgehog",
+      "asked_for": "Hedgehog",
+      "revision": 1379774013,
+      "fetched_on": "2026-11-24",
+      "sha256": "aa71e75f0b31d86038748f6b337c9bf8f9bdd3f50780fedf2f4b9b38f96dea6b"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Hedgehog",
+      "title": "Hedgehog",
+      "asked_for": "Hedgehog",
+      "revision": 10620091,
+      "fetched_on": "2026-11-24",
+      "sha256": "def51ef364ee627209f2e46c224a766bb7dd00c7b705b4a7441db5d02c794c7d"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

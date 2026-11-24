@@ -1,0 +1,117 @@
+{
+  "name": "Chimpanzee",
+  "group": "Animals > Mammals > Wild animals on land > Eats plants and meat",
+  "features": [
+    {
+      "claim": "It is covered in coarse black hair.",
+      "quote": "It is covered in coarse black hair but has a bare face, fingers, toes, palms of the hands, and soles of the feet.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its face, fingers, toes, palms and soles are bare of hair.",
+      "quote": "Chimpanzee bodies are covered by coarse hair, except for the face, ears, fingers, toes, palms of the hands, and soles of the feet.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its arms are longer than its legs.",
+      "quote": "The chimpanzee has longer arms than legs, with an average arm length of 83 cm (2.72 ft).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its hands are long with long fingers and short thumbs.",
+      "quote": "The elongated hands have long fingers with short thumbs and flat fingernails.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its big toe can be turned to grasp like a thumb.",
+      "quote": "The big toe is opposable, allowing the ape to grasp with its feet.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its head is rounded or flattened with a jaw that juts forward and a strong brow ridge.",
+      "quote": "A chimpanzee's head is rounded or flattened with a forward-projecting jaw and a pronounced brow ridge.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has eyes facing forward, a small nose, round ears without lobes and a long flexible upper lip.",
+      "quote": "It has forward-facing eyes, a small nose, circular non-lobed ears and a long flexible upper lip.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its body is short and wide, and its hips are long with a wide top.",
+      "quote": "The body or thorax is short and wide, while the hips are long with a wide top.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It stands about 150 cm tall on average.",
+      "quote": "Adult chimpanzees have an average standing height of 150 cm (4 ft 11 in).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It can walk on the ground on two legs or on all four limbs.",
+      "quote": "On the ground, chimpanzees move both bipedally (on two legs) and quadrupedally (on all four limbs), which differ little in physical and energetic demands.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It walks on all fours by resting on its knuckles.",
+      "quote": "As with bonobos and gorillas, chimpanzees move quadrupedally by knuckle-walking, which probably evolved independently in Pan and Gorilla.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Its hair can also be shades of brown or ginger, and older ones may show white or grey patches.",
+        "quote": "While normally black, chimpanzee hair can also be shades of brown or ginger.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "the sentence does not support it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Chimpanzee",
+      "title": "Chimpanzee",
+      "revision": 1387141999,
+      "revision_time": "2026-11-22T19:28:19Z",
+      "fetched_on": "2026-11-24",
+      "chars": 49413,
+      "sha256": "4a68bce5a916688f3b34975ca2994f37d8a35ddc62b3d355f8d889ca5a66082e"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Chimpanzee",
+      "title": "Chimpanzee",
+      "revision": 11067630,
+      "revision_time": "2026-11-12T22:52:33Z",
+      "fetched_on": "2026-11-24",
+      "chars": 6106,
+      "sha256": "30df1a87633f461e41e047c242b7bf0235a5526b6a34d3c2cecd05405831fdc2"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "Its arms are longer than its legs.",
+    "Its head is rounded or flattened with a jaw that juts forward and a strong brow ridge.",
+    "Its body is short and wide, and its hips are long with a wide top.",
+    "It can walk on the ground on two legs or on all four limbs.",
+    "It is covered in coarse black hair."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "long arms, jutting jaw, wide body, upright or knuckle-walking; black hair",
+    "covering": [
+      "It is covered in coarse black hair."
+    ]
+  }
+}

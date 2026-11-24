@@ -1,0 +1,131 @@
+{
+  "name": "Leopard",
+  "group": "Animals > Mammals > Wild animals on land > Eats only meat",
+  "features": [
+    {
+      "claim": "It has a slender, muscular body.",
+      "quote": "Its body is slender and muscular, reaching a length of 92–183 cm (36–72 in) with a 66–102 cm (26–40 in) long tail and a shoulder height of 60–70 cm (24–28 in).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its fur is pale yellowish to dark golden with dark spots grouped in rosettes.",
+      "quote": "It has a pale yellowish to dark golden fur with dark spots grouped in rosettes.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its underbelly is white.",
+      "quote": "Its underbelly is white and its ringed tail is shorter than its body.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its tail is ringed and shorter than its body.",
+      "quote": "Its underbelly is white and its ringed tail is shorter than its body.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its pupils are round.",
+      "quote": "Its pupils are round.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its fur is generally soft and thick, softer on the belly than on the back.",
+      "quote": "The leopard's fur is generally soft and thick, notably softer on the belly than on the back.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its tail has a white tip and is white underneath.",
+      "quote": "Its white-tipped tail is about 60–100 cm (23.6–39.4 in) long, white underneath and with spots that form incomplete bands toward the end of the tail.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has relatively short limbs and a broad head.",
+      "quote": "The leopard is a slender and muscular cat, with relatively short limbs and a broad head.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Males are larger and heavier than females.",
+      "quote": "It is sexually dimorphic with males larger and heavier than females.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has whitish spots on the back of its ears.",
+      "quote": "The whitish spots on the back of its ears are thought to play a role in communication.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its spots fade toward the white underbelly and the insides and lower parts of the legs.",
+      "quote": "Spots fade toward the white underbelly and the insides and lower parts of the legs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has well-camouflaged fur, usually tan, with spots called rosettes and a lighter-coloured underside.",
+      "quote": "They have well-camouflaged fur, which is usually tan, and spots (called rosettes). They usually have a lighter-coloured underside.",
+      "source": "wikipedia_simple"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "The sources do not agree on how many subspecies of leopard there are.",
+        "quote": "Today, eight subspecies are recognised in its wide range in Africa and Asia.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "the sentence does not support it"
+      },
+      {
+        "claim": "The simple source says there are nine subspecies, one in Africa and eight in Asia.",
+        "quote": "There are nine subspecies of leopards recognized today, one in Africa and eight in Asia.",
+        "source": "wikipedia_simple",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It is not well understood why some leopards have a reddish 'strawberry' colour.",
+        "quote": "The cause of this morph known as a \"strawberry leopard\" or \"pink panther\" is not well understood.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Leopard",
+      "title": "Leopard",
+      "revision": 1387276203,
+      "revision_time": "2026-11-23T07:09:39Z",
+      "fetched_on": "2026-11-24",
+      "chars": 29150,
+      "sha256": "188213543c91f248866627b6ec5507ab172943580409c9f86a060950d8bea9b0"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Leopard",
+      "title": "Leopard",
+      "revision": 10963854,
+      "revision_time": "2026-08-15T23:56:22Z",
+      "fetched_on": "2026-11-24",
+      "chars": 3424,
+      "sha256": "29f090da314e973d6c688165f1f23412e96188b3559517f93edb9f54e02257fa"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "It has relatively short limbs and a broad head.",
+    "Its tail is ringed and shorter than its body."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "short limbs and broad head, ringed tail shorter than body",
+    "covering": []
+  }
+}

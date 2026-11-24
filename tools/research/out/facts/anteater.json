@@ -1,0 +1,60 @@
+{
+  "name": "Anteater",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Anteaters are the four extant mammal species in the suborder Vermilingua (meaning 'worm tongue'), commonly known for eating ants and termites.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "An anteater is a mammal of the family Myrmecophagidae and the suborder Vermilingua.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Anteaters are the four extant mammal species in the suborder Vermilingua (meaning 'worm tongue'), commonly known for eating ants and termites.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_land",
+      "basis": "judged, not sourced",
+      "why": "Anteaters are wild mammals that live in South and Central America, not pets or farm animals."
+    },
+    "what_it_eats": {
+      "value": "eats_insects",
+      "quote": "Anteaters eat ants and termites.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Anteater",
+      "title": "Anteater",
+      "asked_for": "Anteater",
+      "revision": 1384945180,
+      "fetched_on": "2026-11-24",
+      "sha256": "6776cca74d5474a0ada21f1e2fe9870b1c970f795073d49d7ad9f608c021a78d"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Anteater",
+      "title": "Anteater",
+      "asked_for": "Anteater",
+      "revision": 10726623,
+      "fetched_on": "2026-11-24",
+      "sha256": "6ecb98bb2c4185c5e3190b1a5d69f354724d2587ef6561b6b627f5b40ab2801d"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

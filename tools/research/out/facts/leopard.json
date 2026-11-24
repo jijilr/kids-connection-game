@@ -1,0 +1,61 @@
+{
+  "name": "Leopard",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The leopard (Panthera pardus) is one of the five extant cat species in the genus Panthera.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "The leopard (Panthera pardus) is one of the five extant cat species in the genus Panthera.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "The leopard (Panthera pardus) is one of the five extant cat species in the genus Panthera.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_land",
+      "quote": "It is a solitary animal outside the mating season and when raising cubs.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_it_eats": {
+      "value": "eats_meat",
+      "quote": "It is an opportunistic predator, hunting mostly hooved mammals and primates.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Leopard",
+      "title": "Leopard",
+      "asked_for": "Leopard",
+      "revision": 1387276203,
+      "fetched_on": "2026-11-24",
+      "sha256": "21ce9fae83353e32304b12c815a924dbf5cf9bcfb1f92c19c8470b2a685d6904"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Leopard",
+      "title": "Leopard",
+      "asked_for": "Leopard",
+      "revision": 10963854,
+      "fetched_on": "2026-11-24",
+      "sha256": "9eeafec064a3c41d3e0aef205069f300860428e3b41d18b64f2a18e5a8adbd4b"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

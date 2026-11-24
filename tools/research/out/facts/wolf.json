@@ -1,0 +1,60 @@
+{
+  "name": "Wolf",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The wolf (Canis lupus) is a wild dog of the order Carnivora.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "The wolf (Canis lupus; pl.: wolves), also known as the grey wolf or gray wolf, is a canine native to Eurasia and North America.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "The global wild grey wolf population is estimated to be 300,000 and has been assessed as Least Concern by the International Union for Conservation of Nature (IUCN).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_land",
+      "quote": "The wolf (Canis lupus) is a wild dog of the order Carnivora.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "what_it_eats": {
+      "value": "eats_meat",
+      "basis": "judged, not sourced",
+      "why": "The sources describe the wolf as a carnivore and apex predator that feeds on large hooved mammals and other animals."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Wolf",
+      "title": "Wolf",
+      "asked_for": "Wolf",
+      "revision": 1387456408,
+      "fetched_on": "2026-11-24",
+      "sha256": "b177e99defc50057099878b36eaceaef7e4c7f48865460001e1a10af7e0a84fa"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Wolf",
+      "title": "Wolf",
+      "asked_for": "Wolf",
+      "revision": 10972266,
+      "fetched_on": "2026-11-24",
+      "sha256": "9c6045611f0f76d700764dd05ca92b62d40511b3711c7a9432b4aa4335c5356a"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

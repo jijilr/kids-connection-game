@@ -1,0 +1,113 @@
+{
+  "name": "Raccoon",
+  "group": "Animals > Mammals > Wild animals on land > Eats plants and meat",
+  "features": [
+    {
+      "claim": "A raccoon's body is 40 to 70 cm long, not counting its tail.",
+      "quote": "Head to hindquarters, raccoons measure between 40 and 70 cm (16 and 28 in), not including the bushy tail",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its tail is bushy and can be 20 to 40 cm long.",
+      "quote": "not including the bushy tail which can measure between 20 and 40 cm (7.9 and 15.7 in)",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has short legs compared with its compact body.",
+      "quote": "As raccoons have short legs compared to their compact torso, they are usually not able to run quickly or jump great distances.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has a pointed nose and small ears.",
+      "quote": "The raccoon has short legs, a pointed nose, small ears, grayish-brown fur, and a bushy tail.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Its ears are slightly rounded and edged with white fur.",
+      "quote": "The slightly rounded ears are also bordered by white fur.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has black fur around its eyes, like a bandit's mask, against a white face.",
+      "quote": "The most characteristic physical feature of the raccoon is the area of black fur around the eyes, which contrasts sharply with the surrounding white face coloring.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its tail has alternating light and dark rings.",
+      "quote": "the alternating light and dark rings on the tail",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its coat is grayish, mostly gray with some brown.",
+      "quote": "the long and stiff guard hairs, which shed moisture, are usually colored in shades of gray and, to a lesser extent, brown",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has dexterous front paws with five fingers and no webbing between them.",
+      "quote": "The five digits of the paws have no webbing between them, which is unusual for a carnivoran.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its claws are sharp and cannot be pulled back.",
+      "quote": "They are able to identify objects before touching them with vibrissae located above their sharp, nonretractable claws.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It usually stands flat on its feet, and can stand up on its hind legs.",
+      "quote": "The raccoon, whose method of locomotion is usually considered to be plantigrade, can stand on its hind legs to examine objects with its front paws.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Its dense underfur makes up almost 90% of the coat.",
+        "quote": "The dense underfur, which accounts for almost 90% of the coat, insulates against cold weather and is composed of 2 to 3 cm (0.79 to 1.18 in) long hairs.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Raccoon",
+      "title": "Raccoon",
+      "revision": 1387277206,
+      "revision_time": "2026-11-23T07:15:43Z",
+      "fetched_on": "2026-11-24",
+      "chars": 48504,
+      "sha256": "d8b7f739335e24d0cc09cea0c61a2b7e8e05a7f6240406c8c72d1a53b46f0198"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Raccoon",
+      "title": "Raccoon",
+      "revision": 10989986,
+      "revision_time": "2026-09-08T17:46:49Z",
+      "fetched_on": "2026-11-24",
+      "chars": 1898,
+      "sha256": "198e8bd910f3355cfb3f547be7574e9ae119847456d74777120b7fa708830f50"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "It has short legs compared with its compact body.",
+    "It has a pointed nose and small ears.",
+    "Its tail has alternating light and dark rings."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "bushy ringed tail, short legs, pointed nose; gray fur",
+    "covering": []
+  }
+}

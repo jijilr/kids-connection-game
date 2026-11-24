@@ -244,19 +244,22 @@
     "kind_of_dinosaur=land_hunter": {
       "clues": [
         {
-          "text": "Think about a big animal that eats other animals for its food.",
+          "text": "Think about a dinosaur that eats other animals.",
           "audio": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue1.mp3"
         },
         {
-          "text": "This animal hunts its food on the ground, not in the water or the sky.",
+          "text": "Think about a big animal that hunts its food on the ground.",
           "audio": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue2.mp3"
         },
         {
-          "text": "This animal has sharp teeth and hunts other animals to eat them.",
+          "text": "Think about a hunter with strong legs and sharp teeth that chases other dinosaurs.",
           "audio": "Assets/audio/groups/kind_of_dinosaur__land_hunter__clue3.mp3"
         }
       ],
-      "explanation": null
+      "explanation": {
+        "text": "These dinosaurs all hunted other animals for food, and they walked and ran on land. The T. rex had a bite so strong it could break the bones of smaller dinosaurs.",
+        "audio": "Assets/audio/groups/kind_of_dinosaur__land_hunter__explanation.mp3"
+      }
     },
     "kind_of_dinosaur=land_grazer": {
       "clues": [
@@ -925,11 +928,11 @@
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue1.mp3"
         },
         {
-          "text": "These birds find their own food and make their own homes outside.",
+          "text": "These birds find their own food out in the open.",
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue2.mp3"
         },
         {
-          "text": "You would see these birds flying high or sitting in a tree far from people.",
+          "text": "You would see these birds flying high or sitting in a tree, far from people.",
           "audio": "Assets/audio/groups/pet_farm_or_wild_of_bird__wild_land__clue3.mp3"
         }
       ],
@@ -1078,15 +1081,15 @@
     "how_we_play_with_it=music": {
       "clues": [
         {
-          "text": "Think about things that make a sound you can sing along to.",
+          "text": "Think about things that make a happy sound.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue1.mp3"
         },
         {
-          "text": "You hit, blow or press them to make a tune.",
+          "text": "You can tap or blow or press to make it.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue2.mp3"
         },
         {
-          "text": "People play these to make songs and music.",
+          "text": "People sing and dance when they hear this sound.",
           "audio": "Assets/audio/groups/how_we_play_with_it__music__clue3.mp3"
         }
       ],

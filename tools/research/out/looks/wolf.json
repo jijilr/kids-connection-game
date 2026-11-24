@@ -1,0 +1,116 @@
+{
+  "name": "Wolf",
+  "group": "Animals > Mammals > Wild animals on land > Eats only meat",
+  "features": [
+    {
+      "claim": "A wolf is slender and powerfully built.",
+      "quote": "It is slender and powerfully built, with an extensive, low-hanging rib cage, a sloping back, and a heavily muscled neck.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A wolf has a large, heavy head with a wide forehead, powerful jaws and a long, blunt muzzle.",
+      "quote": "The wolf's head is large and heavy, with a wide forehead, powerful jaws, and a long, blunt muzzle.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A wolf has small, wide-set eyes and small pointed ears.",
+      "quote": "It has small, wide-set eyes and small pointed ears.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A wolf's legs are a little longer than those of other canids.",
+      "quote": "The wolf's legs are moderately longer than those of other canids, which enables the animal to move swiftly and through deep snow, though shorter-legged ecomorphs are found in some wolf populations.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A wolf's coat is mottled grey, but can range from white to brown to black.",
+      "quote": "Wolves are generally mottled grey, but can vary from white to brown to black.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A wolf's coat has grey, white, brown and black hairs.",
+      "quote": "Their coats typically have grey, white, brown and black hairs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A wolf's fur is usually mottled white, brown, grey and black.",
+      "quote": "The wolf's fur is usually mottled white, brown, grey, and black, although subspecies in the Arctic region may be nearly all white.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A wolf's eyes are yellow, light brown or green.",
+      "quote": "The eyes are yellow, light brown, or green.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "A wolf has a thick, fluffy winter coat.",
+      "quote": "The wolf has a thick and fluffy winter coat, with the guard hairs being longer and rougher than the undercoat.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [
+      {
+        "claim": "A wolf has a long muzzle, short upright ears, long legs and a long bushy tail.",
+        "quote": "The wolf has a long muzzle, short upright ears, long legs, and a long bushy tail.",
+        "source": "wikipedia_en",
+        "kind": "features"
+      },
+      {
+        "claim": "A wolf's fur has two layers, a dirt-resistant top layer and a water-resistant under-layer.",
+        "quote": "Wolves have fur made up of two layers.",
+        "source": "wikipedia_en",
+        "kind": "features"
+      },
+      {
+        "claim": "A wolf's underparts and legs are usually creamy-gray.",
+        "quote": "The underparts and legs are usually creamy-gray.",
+        "source": "wikipedia_en",
+        "kind": "features"
+      }
+    ],
+    "second_reading": []
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Wolf",
+      "title": "Wolf",
+      "revision": 1387456408,
+      "revision_time": "2026-11-24T00:58:02Z",
+      "fetched_on": "2026-11-24",
+      "chars": 51755,
+      "sha256": "670f6d95aea678e581d3889872b4c72d73c0d484318cdb6796645b5b7d3927e2"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Wolf",
+      "title": "Wolf",
+      "revision": 10972266,
+      "revision_time": "2026-08-24T14:59:13Z",
+      "fetched_on": "2026-11-24",
+      "chars": 6582,
+      "sha256": "511526e8ab761975342fac1f5ef81c902575114b852953445b01bf8c687ad54a"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "A wolf has a large, heavy head with a wide forehead, powerful jaws and a long, blunt muzzle.",
+    "A wolf's legs are a little longer than those of other canids.",
+    "A wolf has a thick, fluffy winter coat."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "heavy wide-headed muzzle and longer legs; thick fluffy coat",
+    "covering": [
+      "A wolf has a thick, fluffy winter coat."
+    ]
+  }
+}

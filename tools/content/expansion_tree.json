@@ -1,7 +1,7 @@
 {
   "about": "The expansion engine's memory. Rebuilt from the data on every run; the decisions are carried forward and are the only record of what was tried, held, approved or rejected. Edit decisions with `expand.py decide`.",
   "updated": "2026-11-24",
-  "dictionary_version": 11,
+  "dictionary_version": 12,
   "things": 246,
   "rules": {
     "weights": {
@@ -165,18 +165,32 @@
       "branch": "animal",
       "members": 6,
       "open": false,
+      "sorted_by": "what_it_eats",
       "missing": {
-        "field": "no field splits it four ways",
+        "field": null,
+        "short": {
+          "eats_plants": 2,
+          "eats_meat": 2,
+          "eats_both": 2,
+          "eats_insects": 4
+        },
         "things": 10
       },
-      "decisions": [],
+      "decisions": [
+        {
+          "date": "2026-11-24",
+          "what": "the rules added the field \"What does this animal mostly eat?\" in job run 2026-11-24-04",
+          "why": "it passed the four tests: Eats only plants, Eats only meat, Eats plants and meat, Eats mostly insects",
+          "status": "added by the rules"
+        }
+      ],
       "factors": {
         "nearness": 0.33,
         "neglect": 0.2,
         "unlocks": 0.33,
-        "cheapness": 0.22
+        "cheapness": 0.29
       },
-      "score": 2.7,
+      "score": 2.8,
       "move": "widening",
       "status": "held",
       "held_by": "depth gap: its branch would be 3 levels deep while the shallowest branch is at 1"

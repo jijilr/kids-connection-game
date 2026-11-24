@@ -1,0 +1,60 @@
+{
+  "name": "Aardvark",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The aardvark ( ; Orycteropus afer) is a medium-sized, burrowing, nocturnal mammal native to Africa.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "The aardvark ( ; Orycteropus afer) is a medium-sized, burrowing, nocturnal mammal native to Africa.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "The aardvark is the only living member of the genus Orycteropus, the family Orycteropodidae and the order Tubulidentata.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_land",
+      "basis": "judged, not sourced",
+      "why": "The sources describe the aardvark as a nocturnal burrowing mammal native to Africa that lives in the wild, not as a pet or farm animal."
+    },
+    "what_it_eats": {
+      "value": "eats_insects",
+      "quote": "A nocturnal feeder, the aardvark subsists on ants and termites (myrmecophagy) by using its sharp claws and powerful legs to dig the insects out of their hills, and its long snout to sniff out food.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Aardvark",
+      "title": "Aardvark",
+      "asked_for": "Aardvark",
+      "revision": 1387319386,
+      "fetched_on": "2026-11-24",
+      "sha256": "f865db1c7c61eb7e55223483d8d647862bd21871c58bc943f32fb9912dc0dd32"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Aardvark",
+      "title": "Aardvark",
+      "asked_for": "Aardvark",
+      "revision": 10916573,
+      "fetched_on": "2026-11-24",
+      "sha256": "f15ad6ddfb591b0daf2b4493e715d6c8f04cb1566819b2f9c4fa59247274a8f4"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

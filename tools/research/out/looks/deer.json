@@ -1,0 +1,123 @@
+{
+  "name": "Deer",
+  "group": "Animals > Mammals > Wild animals on land > Eats only plants",
+  "features": [
+    {
+      "claim": "A deer has long, strong legs.",
+      "quote": "Characteristics typical of deer include long, powerful legs, a diminutive tail and long ears.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A deer has a very small tail.",
+      "quote": "Characteristics typical of deer include long, powerful legs, a diminutive tail and long ears.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A deer has long ears.",
+      "quote": "Characteristics typical of deer include long, powerful legs, a diminutive tail and long ears.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A deer's coat is usually red or brown.",
+      "quote": "Coat colour generally varies between red and brown, though it can be as dark as chocolate brown in the tufted deer or have a grayish tinge as in elk.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A deer has a gland on its face in front of each eye.",
+      "quote": "Nearly all deer have a facial gland in front of each eye.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Male deer have antlers on their heads.",
+      "quote": "All male deer have antlers, with the exception of the water deer, in which males have long tusk-like canines that reach below the lower jaw.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A deer's antlers are made of bone growing out of the skull.",
+      "quote": "These antlers are bony extensions of the skull and are often used for combat between males.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A young deer is often born with white spots on its fur.",
+      "quote": "Most fawns are born with their fur covered with white spots, though in many species they lose these spots by the end of their first winter.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "It is wrong to draw a female deer with antlers, except for reindeer.",
+      "quote": "Only male deer have antlers, except for reindeer (caribou), where both sexes carry antlers.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "It is wrong to draw a deer with permanent horns like a cow's.",
+      "quote": "deer are strongly distinguished from antelopes by their antlers, which are temporary and regularly regrown unlike the permanent horns of bovids",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "A deer has a four-chambered stomach.",
+        "quote": "Deer are ruminants, or cud-chewers, and have a four-chambered stomach.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "A deer has no upper front teeth, but a tough pad at the front of its upper jaw.",
+        "quote": "The teeth of deer are adapted to feeding on vegetation, and like other ruminants, they lack upper incisors, instead having a tough pad at the front of their upper jaw.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "A deer's eyes shine at night because of a tapetum lucidum.",
+        "quote": "Deer also have a tapetum lucidum, which gives them sufficiently good night vision.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Deer",
+      "title": "Deer",
+      "revision": 1387138168,
+      "revision_time": "2026-11-22T19:08:47Z",
+      "fetched_on": "2026-11-24",
+      "chars": 40105,
+      "sha256": "94a091d990ce120bcd0c0ce0b3e69c0cf5072cded3a6b462ae6583e54ecf451c"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Deer",
+      "title": "Deer",
+      "revision": 10439642,
+      "revision_time": "2025-08-05T06:27:16Z",
+      "fetched_on": "2026-11-24",
+      "chars": 5453,
+      "sha256": "596189220747db2abbb42d45cc9e21e2407dae778e20e0ab525dbdcf8bc86ac5"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "A deer has long, strong legs.",
+    "A deer has a very small tail.",
+    "Male deer have antlers on their heads."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "long strong legs, tiny tail, antlers on head; brown coat",
+    "covering": []
+  }
+}

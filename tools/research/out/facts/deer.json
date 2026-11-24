@@ -1,0 +1,59 @@
+{
+  "name": "Deer",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "A deer is a even-toed ungulate mammal in the family Cervidae.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "A deer is a even-toed ungulate mammal in the family Cervidae.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "They originally lived in the Northern Hemisphere, and now are native to Europe, Asia, North America and South America.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_land",
+      "basis": "judged, not sourced",
+      "why": "Deer are wild mammals that live in forests and other natural habitats, not pets or farm animals."
+    },
+    "what_it_eats": {
+      "value": "eats_plants",
+      "basis": "judged, not sourced",
+      "why": "Deer are described as hoofed ruminant ungulates, and ruminants like deer are commonly known to eat plants such as grass and leaves."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Deer",
+      "title": "Deer",
+      "asked_for": "Deer",
+      "revision": 1387138168,
+      "fetched_on": "2026-11-24",
+      "sha256": "c652c938c42e969fb9ba3f175edbe6c192021b5a4ef40abfebe5def7a4356249"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Deer",
+      "title": "Deer",
+      "asked_for": "Deer",
+      "revision": 10439642,
+      "fetched_on": "2026-11-24",
+      "sha256": "0321e4b5652a063d5cccf49cb478fe9b435e757b7d18ebebefdb6d104a0e23c4"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

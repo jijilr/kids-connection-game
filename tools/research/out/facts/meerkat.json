@@ -1,0 +1,61 @@
+{
+  "name": "Meerkat",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "A meerkat (Suricata suricatta) is a small mammal that lives in the Kalahari Desert in southern Africa.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "A meerkat (Suricata suricatta) is a small mammal that lives in the Kalahari Desert in southern Africa.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "A meerkat (Suricata suricatta) is a small mammal that lives in the Kalahari Desert in southern Africa.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_land",
+      "quote": "Commonly living in arid, open habitats with little woody vegetation, meerkats occur in southwestern Botswana, western and southern Namibia, and northern and western South Africa; the range barely extends into southwestern Angola.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_it_eats": {
+      "value": "eats_insects",
+      "quote": "Primarily insectivorous, meerkats feed heavily on beetles and lepidopterans, arthropods, amphibians, small birds, reptiles, and plants.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Meerkat",
+      "title": "Meerkat",
+      "asked_for": "Meerkat",
+      "revision": 1387420429,
+      "fetched_on": "2026-11-24",
+      "sha256": "18df41f5115465e1fa5c792d6e382b87f78314643ccb7fd98faae3132e61ac4c"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Meerkat",
+      "title": "Meerkat",
+      "asked_for": "Meerkat",
+      "revision": 10857547,
+      "fetched_on": "2026-11-24",
+      "sha256": "06b3c3b0273bd051c1c0fae7d6b7fed808c0fa1605aba351eb5cfa4b6c4abf78"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

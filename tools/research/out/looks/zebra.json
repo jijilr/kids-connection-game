@@ -1,0 +1,128 @@
+{
+  "name": "Zebra",
+  "group": "Animals > Mammals > Wild animals on land > Eats only plants",
+  "features": [
+    {
+      "claim": "A zebra has a barrel-chested body.",
+      "quote": "zebras have barrel-chested bodies with tufted tails, elongated faces and long necks with long, erect manes",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A zebra has a tufted tail.",
+      "quote": "zebras have barrel-chested bodies with tufted tails, elongated faces and long necks with long, erect manes",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A zebra has an elongated face.",
+      "quote": "zebras have barrel-chested bodies with tufted tails, elongated faces and long necks with long, erect manes",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A zebra has a long neck with a long, erect mane.",
+      "quote": "zebras have barrel-chested bodies with tufted tails, elongated faces and long necks with long, erect manes",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A zebra has thin legs, each ending in a spade-shaped toe covered by a hard hoof.",
+      "quote": "Their thin legs are each supported by a spade-shaped toe covered in a hard hoof.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A zebra's eyes sit at the sides and far up its head.",
+      "quote": "The eyes of zebras are at the sides and far up the head, which allows them to look over the tall grass while feeding.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A zebra's ears are moderately long, erect and movable.",
+      "quote": "Their moderately long, erect ears are movable and can locate the source of a sound.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A zebra's coat looks white with black stripes, but its skin is black.",
+      "quote": "The coat appears to be white with black stripes, as indicated by the belly and legs when unstriped, but the skin is black.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A zebra has a dark line running down its spine.",
+      "quote": "They also have a dark line directly down their spine.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "The main part of a zebra's body has mostly vertical stripes, and its legs have horizontal stripes.",
+      "quote": "The main part of the body has mostly vertical stripes, and the legs have horizontal stripes.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Each zebra has its own unique stripe pattern.",
+      "quote": "Each zebra has a unique pattern.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "A zebra has very short fur.",
+      "quote": "All zebras have very short fur because they live in hot areas.",
+      "source": "wikipedia_simple"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Scientists do not really know what advantage the stripes give a zebra.",
+        "quote": "Despite many attempts, we do not really know what the advantage is of having those characteristic stripes.",
+        "source": "wikipedia_simple",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "It is unclear how the stripes keep flies away.",
+        "quote": "How the stripes repel flies is less clear.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Zebra",
+      "title": "Zebra",
+      "revision": 1385573374,
+      "revision_time": "2026-11-14T00:36:37Z",
+      "fetched_on": "2026-11-24",
+      "chars": 33875,
+      "sha256": "4ca72749e01e11d12310927b4292c6d1349c0c4c70ce405e439e66dae367a1ac"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Zebra",
+      "title": "Zebra",
+      "revision": 11039018,
+      "revision_time": "2026-10-23T03:21:37Z",
+      "fetched_on": "2026-11-24",
+      "chars": 1629,
+      "sha256": "82106bb846b34b219ce90df036776b2b497c35c7dffc0e45bfdc45771ba1573f"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "A zebra has a long neck with a long, erect mane.",
+    "A zebra has thin legs, each ending in a spade-shaped toe covered by a hard hoof.",
+    "A zebra has an elongated face.",
+    "The main part of a zebra's body has mostly vertical stripes, and its legs have horizontal stripes."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "long erect mane on long neck, thin hooved legs, elongated face; striped coat",
+    "covering": [
+      "The main part of a zebra's body has mostly vertical stripes, and its legs have horizontal stripes."
+    ]
+  }
+}

@@ -3306,6 +3306,353 @@
           "look_closely": "a second try; the better of the two is kept"
         }
       ]
+    },
+    "job_2026_11_24_04_1": {
+      "purpose": "drawn by the job, run 2026-11-24-04",
+      "rows": 3,
+      "cols": 4,
+      "size": 2880,
+      "only_for_this_sheet": "Each cell shows one animal only: the whole animal, in a natural standing or resting pose, seen from the side. No people, no other animals and no scenery.",
+      "cells": [
+        {
+          "thing": "wolf",
+          "name": "Wolf",
+          "draw": "A grey wolf standing alone on plain ground: large heavy head with wide forehead, powerful jaws and long blunt muzzle, legs a little longer than other wild dogs, thick fluffy mottled white, brown, grey and black coat",
+          "must_show": [
+            "A wolf has a large, heavy head with a wide forehead, powerful jaws and a long, blunt muzzle.",
+            "A wolf's legs are a little longer than those of other canids.",
+            "A wolf has a thick, fluffy winter coat."
+          ],
+          "not_this": [],
+          "features": [
+            "A wolf is slender and powerfully built.",
+            "A wolf has a large, heavy head with a wide forehead, powerful jaws and a long, blunt muzzle.",
+            "A wolf has small, wide-set eyes and small pointed ears.",
+            "A wolf's legs are a little longer than those of other canids.",
+            "A wolf's coat is mottled grey, but can range from white to brown to black.",
+            "A wolf's coat has grey, white, brown and black hairs.",
+            "A wolf's fur is usually mottled white, brown, grey and black.",
+            "A wolf's eyes are yellow, light brown or green.",
+            "A wolf has a thick, fluffy winter coat."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Wolf",
+            "https://simple.wikipedia.org/wiki/Wolf"
+          ]
+        },
+        {
+          "thing": "cheetah",
+          "name": "Cheetah",
+          "draw": "A slim, lightly built cheetah with a small rounded head, short snout, long thin legs and a long spotted tail; tawny fur with evenly spaced solid black spots, not rosettes, and black tear-like streaks from its eyes down to its mouth",
+          "must_show": [
+            "The cheetah has a slim, lightly built body with a small, streamlined head and a short snout.",
+            "It has long thin legs and a long spotted tail.",
+            "Black tear-like streaks run from the corners of its eyes down the nose to the mouth."
+          ],
+          "not_this": [
+            "A cheetah does not have the leopard's rosettes, and it does have tear streaks.",
+            "Its claws are not fully retractable like other big cats' claws."
+          ],
+          "features": [
+            "The cheetah has a slim, lightly built body with a small, streamlined head and a short snout.",
+            "It has long thin legs and a long spotted tail.",
+            "Its fur is tawny to creamy white or pale buff, darker along the middle of the back.",
+            "Its body is covered with about 2,000 evenly spaced solid black spots.",
+            "Its chin, throat, belly and the lower parts of its legs are white with no markings.",
+            "Black tear-like streaks run from the corners of its eyes down the nose to the mouth.",
+            "Its ears are small, short and rounded, with black patches on the back.",
+            "It has a short, rough mane along the neck and shoulders.",
+            "Its claws are slightly curved, blunt and only partly retractable.",
+            "It stands 67–94 cm tall at the shoulder and its head-and-body length is 1.1 to 1.5 m.",
+            "Its eyes are set high and have round pupils."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Cheetah",
+            "https://simple.wikipedia.org/wiki/Cheetah"
+          ]
+        },
+        {
+          "thing": "leopard",
+          "name": "Leopard",
+          "draw": "A whole leopard standing on plain ground: pale yellowish to dark golden fur with dark spots in rosettes, a slender muscular body, relatively short limbs, a broad head, and a ringed tail shorter than its body",
+          "must_show": [
+            "It has relatively short limbs and a broad head.",
+            "Its tail is ringed and shorter than its body."
+          ],
+          "not_this": [],
+          "features": [
+            "It has a slender, muscular body.",
+            "Its fur is pale yellowish to dark golden with dark spots grouped in rosettes.",
+            "Its underbelly is white.",
+            "Its tail is ringed and shorter than its body.",
+            "Its pupils are round.",
+            "Its fur is generally soft and thick, softer on the belly than on the back.",
+            "Its tail has a white tip and is white underneath.",
+            "It has relatively short limbs and a broad head.",
+            "Males are larger and heavier than females.",
+            "It has whitish spots on the back of its ears.",
+            "Its spots fade toward the white underbelly and the insides and lower parts of the legs.",
+            "It has well-camouflaged fur, usually tan, with spots called rosettes and a lighter-coloured underside."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Leopard",
+            "https://simple.wikipedia.org/wiki/Leopard"
+          ]
+        },
+        {
+          "thing": "anteater",
+          "name": "Anteater",
+          "draw": "A giant anteater standing on the ground: thick shaggy fur all over, a very long thin snout, and big claws on the third toe of its front feet, with a long bushy tail",
+          "must_show": [
+            "It has a very long, thin snout.",
+            "Its front feet have big claws on the third toe.",
+            "Its whole body is covered in thick fur."
+          ],
+          "not_this": [],
+          "features": [
+            "It has a very long, thin snout.",
+            "Its mouth is small and has no teeth.",
+            "Its front feet have big claws on the third toe.",
+            "Its whole body is covered in thick fur.",
+            "It has a long tail, and in some kinds the tail is as long as the rest of the body.",
+            "Big anteaters that walk on the ground knuckle-walk, curling their front toes under."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Anteater",
+            "https://simple.wikipedia.org/wiki/Anteater"
+          ]
+        },
+        {
+          "thing": "hedgehog",
+          "name": "Hedgehog",
+          "draw": "A small round hedgehog with a pig-like snout and a back covered in many straight, unbarbed spines, in brown and cream natural colours, curled slightly, standing alone on plain ground",
+          "must_show": [
+            "A hedgehog has a snout like a pig's.",
+            "A hedgehog is covered with spines on its back."
+          ],
+          "not_this": [
+            "A hedgehog's spines are not barbed like a porcupine's quills."
+          ],
+          "features": [
+            "A hedgehog is covered with spines on its back.",
+            "A hedgehog has between 5000 and 7000 spines on its back.",
+            "A hedgehog's spines are usually brown with pale tips.",
+            "A hedgehog has a snout like a pig's.",
+            "A hedgehog has a furry face, feet and belly.",
+            "A newborn hedgehog is blind and its quills are covered by a protective membrane."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Hedgehog",
+            "https://simple.wikipedia.org/wiki/Hedgehog"
+          ]
+        },
+        {
+          "thing": "aardvark",
+          "name": "Aardvark",
+          "draw": "A stout, pale grey-brown aardvark with a prominently arched back, longer rear legs than front, a greatly elongated snout on a short thick neck, and very long upright ears, standing whole on bare ground",
+          "must_show": [
+            "It has a stout body with a prominently arched back.",
+            "Its rear legs are longer than its front legs.",
+            "It has a greatly elongated head on a short, thick neck.",
+            "Its ears are disproportionately long, about 20 to 25 centimetres."
+          ],
+          "not_this": [],
+          "features": [
+            "It has a stout body with a prominently arched back.",
+            "Its rear legs are longer than its front legs.",
+            "Its front feet have four toes and its rear feet have five.",
+            "Each toe has a large, robust, somewhat flattened shovel-like nail.",
+            "It is pale yellowish-grey and often stained reddish-brown by soil.",
+            "It has a greatly elongated head on a short, thick neck.",
+            "Its snout looks like an elongated pig snout.",
+            "Its mouth is small and tubular.",
+            "It has a long, thin, snakelike, protruding tongue.",
+            "Its ears are disproportionately long, about 20 to 25 centimetres.",
+            "Its eyes are small for its head."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Aardvark",
+            "https://simple.wikipedia.org/wiki/Aardvark"
+          ]
+        },
+        {
+          "thing": "armadillo",
+          "name": "Armadillo",
+          "draw": "A small armadillo with short legs, a leathery armored shell over its back, stiff shields over shoulders and hips with bands between them across the back and sides, soft unarmored belly, long sharp claws, pointed snout and a tail, standing on plain ground",
+          "must_show": [
+            "An armadillo has short legs.",
+            "Most armadillos have stiff shields over the shoulders and hips, with bands between them across the back and sides.",
+            "An armadillo has a leathery armor shell covering it."
+          ],
+          "not_this": [
+            "The underside of an armadillo is not armored."
+          ],
+          "features": [
+            "An armadillo has a leathery armor shell covering it.",
+            "An armadillo has long, sharp claws that it uses for digging.",
+            "An armadillo has short legs.",
+            "An armadillo is about 75 cm long, counting its tail.",
+            "The armor is made of plates of bone covered in small overlapping scales called scutes.",
+            "Most armadillos have stiff shields over the shoulders and hips, with bands between them across the back and sides.",
+            "Extra armor covers the top of the head, the upper parts of the limbs, and the tail.",
+            "The underside of an armadillo is never armored; it is covered with soft skin and fur.",
+            "An armadillo has five clawed toes on its hind feet.",
+            "An armadillo has three to five toes with heavy digging claws on its front feet.",
+            "An armadillo's skin can glow under ultraviolet light."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Armadillo",
+            "https://simple.wikipedia.org/wiki/Armadillo"
+          ]
+        },
+        {
+          "thing": "meerkat",
+          "name": "Meerkat",
+          "draw": "Draw one small slim mongoose standing upright on its long back legs, thin tapering tail down as a balance prop, not bushy; broad head, large eyes, pointed snout, light grey-brown coat with faint dark bands on the back, small digging foreclaws",
+          "must_show": [
+            "It is a small mongoose with a slim build.",
+            "It has long legs and a thin tapering tail.",
+            "It stands up on its back legs and uses its tail to balance."
+          ],
+          "not_this": [
+            "Its tail is not bushy like many other mongooses' tails."
+          ],
+          "features": [
+            "It is a small mongoose with a slim build.",
+            "It has a broad head with large eyes and a pointed snout.",
+            "It has long legs and a thin tapering tail.",
+            "Its head and body together are about 24 to 35 cm long.",
+            "Its soft coat is light grey to yellowish brown with poorly defined light and dark bands on the back.",
+            "Its head is mostly white.",
+            "Its underparts have sparse dark reddish-brown fur with dark skin showing through.",
+            "Its slim yellowish tail is 17 to 25 cm long and tipped with black.",
+            "It has big, sharp, curved front claws for digging.",
+            "Its black, crescent-like ears can be closed.",
+            "It has four toes on each foot with thick pads underneath.",
+            "It stands up on its back legs and uses its tail to balance."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Meerkat",
+            "https://simple.wikipedia.org/wiki/Meerkat"
+          ]
+        },
+        {
+          "thing": "zebra",
+          "name": "Zebra",
+          "draw": "A whole zebra standing on plain ground: horse-like body with a long neck and long erect mane, elongated face, thin legs with hard hooves, mostly vertical black-and-white stripes on the body and horizontal stripes on the legs",
+          "must_show": [
+            "A zebra has a long neck with a long, erect mane.",
+            "A zebra has thin legs, each ending in a spade-shaped toe covered by a hard hoof.",
+            "A zebra has an elongated face.",
+            "The main part of a zebra's body has mostly vertical stripes, and its legs have horizontal stripes."
+          ],
+          "not_this": [],
+          "features": [
+            "A zebra has a barrel-chested body.",
+            "A zebra has a tufted tail.",
+            "A zebra has an elongated face.",
+            "A zebra has a long neck with a long, erect mane.",
+            "A zebra has thin legs, each ending in a spade-shaped toe covered by a hard hoof.",
+            "A zebra's eyes sit at the sides and far up its head.",
+            "A zebra's ears are moderately long, erect and movable.",
+            "A zebra's coat looks white with black stripes, but its skin is black.",
+            "A zebra has a dark line running down its spine.",
+            "The main part of a zebra's body has mostly vertical stripes, and its legs have horizontal stripes.",
+            "Each zebra has its own unique stripe pattern.",
+            "A zebra has very short fur."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Zebra",
+            "https://simple.wikipedia.org/wiki/Zebra"
+          ]
+        },
+        {
+          "thing": "deer",
+          "name": "Deer",
+          "draw": "A brown deer standing on the ground, whole body, long strong legs, a very small tail, and a male with bony branched antlers on its head (not cow-like horns); no female with antlers",
+          "must_show": [
+            "A deer has long, strong legs.",
+            "A deer has a very small tail.",
+            "Male deer have antlers on their heads."
+          ],
+          "not_this": [
+            "It is wrong to draw a female deer with antlers, except for reindeer.",
+            "It is wrong to draw a deer with permanent horns like a cow's."
+          ],
+          "features": [
+            "A deer has long, strong legs.",
+            "A deer has a very small tail.",
+            "A deer has long ears.",
+            "A deer's coat is usually red or brown.",
+            "A deer has a gland on its face in front of each eye.",
+            "Male deer have antlers on their heads.",
+            "A deer's antlers are made of bone growing out of the skull.",
+            "A young deer is often born with white spots on its fur."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Deer",
+            "https://simple.wikipedia.org/wiki/Deer"
+          ]
+        },
+        {
+          "thing": "raccoon",
+          "name": "Raccoon",
+          "draw": "A raccoon standing on the ground: compact body on short legs, grayish-brown fur, pointed nose, small ears, and a bushy tail with alternating light and dark rings; its face has a dark mask around the eyes",
+          "must_show": [
+            "It has short legs compared with its compact body.",
+            "It has a pointed nose and small ears.",
+            "Its tail has alternating light and dark rings."
+          ],
+          "not_this": [],
+          "features": [
+            "A raccoon's body is 40 to 70 cm long, not counting its tail.",
+            "Its tail is bushy and can be 20 to 40 cm long.",
+            "It has short legs compared with its compact body.",
+            "It has a pointed nose and small ears.",
+            "Its ears are slightly rounded and edged with white fur.",
+            "It has black fur around its eyes, like a bandit's mask, against a white face.",
+            "Its tail has alternating light and dark rings.",
+            "Its coat is grayish, mostly gray with some brown.",
+            "It has dexterous front paws with five fingers and no webbing between them.",
+            "Its claws are sharp and cannot be pulled back.",
+            "It usually stands flat on its feet, and can stand up on its hind legs."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Raccoon",
+            "https://simple.wikipedia.org/wiki/Raccoon"
+          ]
+        },
+        {
+          "thing": "chimpanzee",
+          "name": "Chimpanzee",
+          "draw": "A whole chimpanzee standing on all four limbs on bare ground: coarse black hair, bare face, fingers and toes, arms longer than its legs, short wide body, long hips wide at the top, rounded head with jutting jaw and strong brow ridge",
+          "must_show": [
+            "Its arms are longer than its legs.",
+            "Its head is rounded or flattened with a jaw that juts forward and a strong brow ridge.",
+            "Its body is short and wide, and its hips are long with a wide top.",
+            "It can walk on the ground on two legs or on all four limbs.",
+            "It is covered in coarse black hair."
+          ],
+          "not_this": [],
+          "features": [
+            "It is covered in coarse black hair.",
+            "Its face, fingers, toes, palms and soles are bare of hair.",
+            "Its arms are longer than its legs.",
+            "Its hands are long with long fingers and short thumbs.",
+            "Its big toe can be turned to grasp like a thumb.",
+            "Its head is rounded or flattened with a jaw that juts forward and a strong brow ridge.",
+            "It has eyes facing forward, a small nose, round ears without lobes and a long flexible upper lip.",
+            "Its body is short and wide, and its hips are long with a wide top.",
+            "It stands about 150 cm tall on average.",
+            "It can walk on the ground on two legs or on all four limbs.",
+            "It walks on all fours by resting on its knuckles."
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/Chimpanzee",
+            "https://simple.wikipedia.org/wiki/Chimpanzee"
+          ]
+        }
+      ]
     }
   }
 }

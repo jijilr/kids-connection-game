@@ -1,0 +1,123 @@
+{
+  "name": "Hedgehog",
+  "group": "Animals > Mammals > Wild animals on land > Eats mostly insects",
+  "features": [
+    {
+      "claim": "A hedgehog is covered with spines on its back.",
+      "quote": "Hedgehogs are easily recognized by their spines, which are hollow hairs made stiff with keratin.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A hedgehog has between 5000 and 7000 spines on its back.",
+      "quote": "It has between 5000 and 7000 spines on its back.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "A hedgehog's spines are usually brown with pale tips.",
+      "quote": "Hedgehogs are usually brown, with pale tips to the spines, though leucistic 'blonde' hedgehogs are found on the Channel Island of Alderney.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A hedgehog has a snout like a pig's.",
+      "quote": "from its piglike snout",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A hedgehog has a furry face, feet and belly.",
+      "quote": "Hedgehogs roll into a tight spiny ball when threatened, tucking in the furry face, feet, and belly.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "A newborn hedgehog is blind and its quills are covered by a protective membrane.",
+      "quote": "Newborn hoglets are blind, with their quills covered by a protective membrane which dries and shrinks over several hours, and falls off after cleaning, allowing the quills to emerge.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "A hedgehog's spines are not barbed like a porcupine's quills.",
+      "quote": "Their spines are not poisonous or barbed and, unlike the quills of a porcupine, do not easily detach from their bodies.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [
+      {
+        "claim": "When threatened, a hedgehog rolls up into a tight spiny ball.",
+        "quote": "Hedgehogs roll into a tight spiny ball when threatened, tucking in the furry face, feet, and belly.",
+        "source": "wikipedia_simple",
+        "kind": "features"
+      }
+    ],
+    "second_reading": [
+      {
+        "claim": "A hedgehog's back has two large muscles that move the quills.",
+        "quote": "The hedgehog's back contains two large muscles that direct the quills.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "A hedgehog's spines do not come off easily.",
+        "quote": "They do not come off easily, unlike porcupines, but in baby hedgehogs, the baby quills drop off and are replaced with adult quills.",
+        "source": "wikipedia_simple",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "A hedgehog's spines are not poisonous.",
+        "quote": "Their spines are not poisonous or barbed and, unlike the quills of a porcupine, do not easily detach from their bodies.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "A hedgehog's spines are not poisonous and are safe for humans to touch.",
+        "quote": "Their quills are not poisonous: they are safe for humans to feel and touch, as they are not very sharp, or harmful.",
+        "source": "wikipedia_simple",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Hedgehog",
+      "title": "Hedgehog",
+      "revision": 1379774013,
+      "revision_time": "2026-10-11T21:43:26Z",
+      "fetched_on": "2026-11-24",
+      "chars": 12727,
+      "sha256": "9328e8540fbce85edbcefdceeebdddb6ea4bff07bb176b3b775339e8307e9610"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Hedgehog",
+      "title": "Hedgehog",
+      "revision": 10620091,
+      "revision_time": "2025-11-09T15:07:04Z",
+      "fetched_on": "2026-11-24",
+      "chars": 1193,
+      "sha256": "2a589c3477d935316500469fb1391a553da3064043d6f0b3e2ddce3c09e4ca84"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "A hedgehog has a snout like a pig's.",
+    "A hedgehog is covered with spines on its back."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "pig-like snout; spiny back is its covering",
+    "covering": [
+      "A hedgehog is covered with spines on its back."
+    ]
+  }
+}

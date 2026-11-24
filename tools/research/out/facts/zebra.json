@@ -1,0 +1,61 @@
+{
+  "name": "Zebra",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Zebras are mammals of the family Equidae.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "Zebras are mammals of the family Equidae.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "There are three living species: Grévy's zebra (Equus grevyi), the plains zebra (E. quagga), and the mountain zebra (E. zebra).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_land",
+      "quote": "Zebras inhabit eastern and southern Africa and can be found in a variety of habitats such as savannahs, grasslands, woodlands, shrublands, and mountainous areas.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_it_eats": {
+      "value": "eats_plants",
+      "quote": "Zebras are primarily grazers and can subsist on lower-quality vegetation.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Zebra",
+      "title": "Zebra",
+      "asked_for": "Zebra",
+      "revision": 1385573374,
+      "fetched_on": "2026-11-24",
+      "sha256": "ae53af2e6088e915a637e3a4f14ebc8a0a0c80a8bdd1be220eeb89ba68949885"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Zebra",
+      "title": "Zebra",
+      "asked_for": "Zebra",
+      "revision": 11039018,
+      "fetched_on": "2026-11-24",
+      "sha256": "bcf8f834b6ffbe5b4ca5e60132d4aff061bd4eb9b941dcf11c479cea863b41bd"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

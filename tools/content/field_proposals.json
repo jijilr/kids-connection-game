@@ -5161,5 +5161,89 @@
         "source": "the model"
       }
     ]
+  },
+  "animal/mammal/wild_land": {
+    "status": "approved by the rules on 2026-11-24, job run 2026-11-24-04",
+    "field": "what_it_eats",
+    "wording": "What does this animal mostly eat?",
+    "values": {
+      "eats_plants": {
+        "label": "Eats only plants",
+        "have": [
+          "elephant",
+          "giraffe"
+        ],
+        "examples": [
+          "Zebra",
+          "Deer"
+        ]
+      },
+      "eats_meat": {
+        "label": "Eats only meat",
+        "have": [
+          "lion",
+          "tiger"
+        ],
+        "examples": [
+          "Wolf",
+          "Cheetah",
+          "Leopard",
+          "Hyena"
+        ]
+      },
+      "eats_both": {
+        "label": "Eats plants and meat",
+        "have": [
+          "monkey",
+          "bear"
+        ],
+        "examples": [
+          "Raccoon",
+          "Chimpanzee"
+        ]
+      },
+      "eats_insects": {
+        "label": "Eats mostly insects",
+        "have": [],
+        "examples": [
+          "Anteater",
+          "Hedgehog",
+          "Aardvark",
+          "Armadillo",
+          "Meerkat"
+        ]
+      }
+    },
+    "library": null,
+    "source": "the model",
+    "assign": {},
+    "notes": {},
+    "familiar": {
+      "Zebra": 0.95,
+      "Deer": 0.9,
+      "Wolf": 0.95,
+      "Cheetah": 0.9,
+      "Leopard": 0.9,
+      "Hyena": 0.8,
+      "Raccoon": 0.85,
+      "Chimpanzee": 0.9,
+      "Anteater": 0.6,
+      "Hedgehog": 0.7,
+      "Aardvark": 0.4,
+      "Armadillo": 0.6,
+      "Meerkat": 0.7
+    },
+    "tests": {
+      "four familiar things in at least four values": {
+        "eats_plants": 4,
+        "eats_meat": 6,
+        "eats_both": 4,
+        "eats_insects": 5
+      },
+      "one value for each thing": "6 things already in the circle placed alike by two checks; 0 fit more than one group; sharpness 0.89",
+      "one clean solution": "sample boards passed",
+      "not a synonym": "no existing field asks or splits the same"
+    },
+    "refused_by_the_rules": []
   }
 }

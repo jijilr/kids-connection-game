@@ -1,0 +1,61 @@
+{
+  "name": "Cheetah",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The cheetah (Acinonyx jubatus) is a species of large feline and the only living member of the genus Acinonyx.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "A cheetah (Acinonyx jubatus) is a medium large cat which lives in Africa and Asia.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "It is now distributed mainly in small, fragmented populations in northwestern, eastern and southern Africa and central Iran.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_land",
+      "quote": "It lives in a variety of habitats such as savannahs in the Serengeti, arid mountain ranges in the Sahara, and hilly desert terrain.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_it_eats": {
+      "value": "eats_meat",
+      "quote": "It feeds on small- to medium-sized prey, mostly weighing under 40 kg (88 lb), and prefers medium-sized ungulates such as impala, springbok and Thomson's gazelles.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cheetah",
+      "title": "Cheetah",
+      "asked_for": "Cheetah",
+      "revision": 1387302607,
+      "fetched_on": "2026-11-24",
+      "sha256": "356f229900396bd887d78426d983256eb40e636dfbd448e9906ab194a23eef80"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cheetah",
+      "title": "Cheetah",
+      "asked_for": "Cheetah",
+      "revision": 10906678,
+      "fetched_on": "2026-11-24",
+      "sha256": "28935820e95f579975d39cba11078acf96ecfe348dc6fa68759e353ce49a0088"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

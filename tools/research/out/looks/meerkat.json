@@ -1,0 +1,116 @@
+{
+  "name": "Meerkat",
+  "group": "Animals > Mammals > Wild animals on land > Eats mostly insects",
+  "features": [
+    {
+      "claim": "It is a small mongoose with a slim build.",
+      "quote": "The meerkat is a small mongoose of slim build characterised by a broad head, large eyes, a pointed snout, long legs, a thin tapering tail, and a brindled coat pattern.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has a broad head with large eyes and a pointed snout.",
+      "quote": "It is characterised by a broad head, large eyes, a pointed snout, long legs, a thin tapering tail, and a brindled coat pattern.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has long legs and a thin tapering tail.",
+      "quote": "It is characterised by a broad head, large eyes, a pointed snout, long legs, a thin tapering tail, and a brindled coat pattern.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its head and body together are about 24 to 35 cm long.",
+      "quote": "The head-and-body length is around 24–35 cm (9.4–13.8 in), and the weight is typically between 0.62 and 0.97 kg (1.4 and 2.1 lb).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its soft coat is light grey to yellowish brown with poorly defined light and dark bands on the back.",
+      "quote": "The soft coat is light grey to yellowish brown with alternate, poorly defined light and dark bands on the back.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its head is mostly white.",
+      "quote": "Its head is mostly white, and the underparts are covered sparsely with dark reddish-brown fur, with the dark skin underneath showing through.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its underparts have sparse dark reddish-brown fur with dark skin showing through.",
+      "quote": "Its head is mostly white, and the underparts are covered sparsely with dark reddish-brown fur, with the dark skin underneath showing through.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its slim yellowish tail is 17 to 25 cm long and tipped with black.",
+      "quote": "The slim, yellowish tail, unlike the bushy tails of many other mongooses, measures 17 to 25 cm (6.7 to 9.8 in), and is tipped with black.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has big, sharp, curved front claws for digging.",
+      "quote": "The big, sharp and curved foreclaws (slightly longer than the hindclaws) are highly specialised among the feliforms, and enable the meerkat to dig efficiently.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its black, crescent-like ears can be closed.",
+      "quote": "The black, crescent-like ears can be closed to prevent the entry of dirt and debris while digging.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has four toes on each foot with thick pads underneath.",
+      "quote": "Digitigrade, the meerkat has four digits on each foot with thick pads underneath.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It stands up on its back legs and uses its tail to balance.",
+      "quote": "The meerkat uses its tail to balance because it stands up on its back legs to look for predators.",
+      "source": "wikipedia_simple"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "Its tail is not bushy like many other mongooses' tails.",
+      "quote": "The slim, yellowish tail, unlike the bushy tails of many other mongooses, measures 17 to 25 cm (6.7 to 9.8 in), and is tipped with black.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": []
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Meerkat",
+      "title": "Meerkat",
+      "revision": 1387420429,
+      "revision_time": "2026-11-23T21:49:21Z",
+      "fetched_on": "2026-11-24",
+      "chars": 26272,
+      "sha256": "c45ebf6f9003f779721edd20d26d54d63803aac5e686c522beec09345f6199e9"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Meerkat",
+      "title": "Meerkat",
+      "revision": 10857547,
+      "revision_time": "2026-05-15T13:30:12Z",
+      "fetched_on": "2026-11-24",
+      "chars": 5153,
+      "sha256": "7916111f63f31ea642ee81a52a8f77206da71162841b3a77d421fc01e115a135"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "It is a small mongoose with a slim build.",
+    "It has long legs and a thin tapering tail.",
+    "It stands up on its back legs and uses its tail to balance."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "slim build, long legs with thin tapering tail, upright stance",
+    "covering": []
+  }
+}

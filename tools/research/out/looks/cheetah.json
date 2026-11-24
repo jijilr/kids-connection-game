@@ -1,0 +1,145 @@
+{
+  "name": "Cheetah",
+  "group": "Animals > Mammals > Wild animals on land > Eats only meat",
+  "features": [
+    {
+      "claim": "The cheetah has a slim, lightly built body with a small, streamlined head and a short snout.",
+      "quote": "The cheetah is a slim-bodied, spotted cat characterised by a small, streamlined head, a short snout, black tear-like facial streaks, a deep chest, long limbs and a long tail.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has long thin legs and a long spotted tail.",
+      "quote": "Its long thin legs and long spotted tail are necessary for fast running.",
+      "source": "wikipedia_simple"
+    },
+    {
+      "claim": "Its fur is tawny to creamy white or pale buff, darker along the middle of the back.",
+      "quote": "The cheetah's coat is typically tawny to creamy white or pale buff, but darker in the mid-back portion.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its body is covered with about 2,000 evenly spaced solid black spots.",
+      "quote": "The rest of the body is covered with around 2,000 evenly spaced, oval or round solid black spots, each measuring roughly 3–5 cm (1.2–2.0 in).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its chin, throat, belly and the lower parts of its legs are white with no markings.",
+      "quote": "The chin, throat and underparts of the legs and the belly are white and devoid of markings.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Black tear-like streaks run from the corners of its eyes down the nose to the mouth.",
+      "quote": "The pronounced tear streaks are unique to the cheetah and originate from the corners of the eyes and run down the nose to the mouth.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its ears are small, short and rounded, with black patches on the back.",
+      "quote": "The ears are small, short and rounded; they are tawny at the base and on the edges and marked with black patches on the back.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has a short, rough mane along the neck and shoulders.",
+      "quote": "There is a short, rough mane, covering at least 8 cm (3.1 in) along the neck and the shoulders; this feature is more prominent in males.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its claws are slightly curved, blunt and only partly retractable.",
+      "quote": "The slightly curved claws are shorter and straighter than those of other cats, lack a protective sheath and are partly retractile.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It stands 67–94 cm tall at the shoulder and its head-and-body length is 1.1 to 1.5 m.",
+      "quote": "It has a height of 67–94 cm (2.20–3.08 ft) at the shoulder, and the head-and-body length is between 1.1 and 1.5 m (3 ft 7 in and 4 ft 11 in).",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its eyes are set high and have round pupils.",
+      "quote": "The eyes are set high and have round pupils.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "A cheetah does not have the leopard's rosettes, and it does have tear streaks.",
+      "quote": "Although similar at first glance, the leopard has rosettes instead of spots and does not have tear streaks.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its claws are not fully retractable like other big cats' claws.",
+      "quote": "This is a major point of difference between the cheetah and the other big cats, which have fully retractable claws.",
+      "source": "wikipedia_simple"
+    }
+  ],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Its tail ends in a bushy white tuft and its last third has four to six dark rings or stripes.",
+        "quote": "While the first two-thirds of the tail are covered in spots, the final third is marked with four to six dark rings or stripes.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "the sentence does not support it"
+      },
+      {
+        "claim": "The sources give different shoulder heights and weights for the cheetah.",
+        "quote": "The cheetah stands 70–90 centimetres (28–35 in) at the shoulder, and weighs 21–72 kilograms (46–159 lb).",
+        "source": "wikipedia_simple",
+        "kind": "debated",
+        "why": "the sentence does not support it"
+      },
+      {
+        "claim": "The sources give different head-and-body lengths for the cheetah.",
+        "quote": "The head-and-body length ranges from 112–150 centimetres (44–59 in).",
+        "source": "wikipedia_simple",
+        "kind": "debated",
+        "why": "the sentence does not support it"
+      },
+      {
+        "claim": "What the tear streaks are for is not well understood.",
+        "quote": "The role of these streaks is not well understood, they may protect the eyes from the sun's glare or could be used to define facial expressions.",
+        "source": "wikipedia_en",
+        "kind": "debated",
+        "why": "a picture could not show it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cheetah",
+      "title": "Cheetah",
+      "revision": 1387302607,
+      "revision_time": "2026-11-23T09:41:33Z",
+      "fetched_on": "2026-11-24",
+      "chars": 58738,
+      "sha256": "22196dd97c69319695454e4001b96ac9905ee1ee2b833975e2cc96108ebb87f3"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cheetah",
+      "title": "Cheetah",
+      "revision": 10906678,
+      "revision_time": "2026-07-01T18:19:42Z",
+      "fetched_on": "2026-11-24",
+      "chars": 3823,
+      "sha256": "27b70f39ee4e7380fbb85befd261ebec69fca5409592ce0cac62a57d8f9a20c1"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "The cheetah has a slim, lightly built body with a small, streamlined head and a short snout.",
+    "It has long thin legs and a long spotted tail.",
+    "Black tear-like streaks run from the corners of its eyes down the nose to the mouth."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "slim streamlined body, long thin legs and long tail, tear streaks",
+    "covering": []
+  }
+}

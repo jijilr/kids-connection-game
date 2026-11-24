@@ -1,0 +1,95 @@
+{
+  "name": "Anteater",
+  "group": "Animals > Mammals > Wild animals on land > Eats mostly insects",
+  "features": [
+    {
+      "claim": "It has a very long, thin snout.",
+      "quote": "All anteaters have extremely elongated snouts equipped with a thin and long tongue that is coated with sticky saliva produced by enlarged submaxillary glands.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its mouth is small and has no teeth.",
+      "quote": "The mouth is small and has no teeth.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its front feet have big claws on the third toe.",
+      "quote": "The frontal feet have large claws on the third digit, used to break into the mounds of termites and ants, and the remaining digits are usually slightly smaller or lacking entirely.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its whole body is covered in thick fur.",
+      "quote": "The entire body is covered with dense fur.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has a long tail, and in some kinds the tail is as long as the rest of the body.",
+      "quote": "The tail is long, in some cases as long as the rest of the body, covered with varying amounts of fur, and prehensile in all species except for the giant anteater.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Big anteaters that walk on the ground knuckle-walk, curling their front toes under.",
+      "quote": "Large anteaters that move on the ground knuckle-walk, bending their front toes under when they move the way gorillas do.",
+      "source": "wikipedia_simple"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [
+      {
+        "claim": "It has long, sharp claws and a long, sticky tongue.",
+        "quote": "They have long, sharp claws and a long, sticky tongue.",
+        "source": "wikipedia_en",
+        "kind": "features"
+      },
+      {
+        "claim": "Its tongue can be as long as a person's arm.",
+        "quote": "The tongue can be up to 60 cm long, as long as a person's arm.",
+        "source": "wikipedia_en",
+        "kind": "features"
+      }
+    ],
+    "second_reading": []
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Anteater",
+      "title": "Anteater",
+      "revision": 1384945180,
+      "revision_time": "2026-11-10T23:33:49Z",
+      "fetched_on": "2026-11-24",
+      "chars": 14197,
+      "sha256": "53b97e053762e66716c7c86ecb7e544d5480e72489d3e2170671067d0e60598a"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Anteater",
+      "title": "Anteater",
+      "revision": 10726623,
+      "revision_time": "2026-01-24T18:26:39Z",
+      "fetched_on": "2026-11-24",
+      "chars": 585,
+      "sha256": "75ecfa5f4cf7b2f832986efb5beaaec206efa1126a20488d053c67e69af95b47"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "It has a very long, thin snout.",
+    "Its front feet have big claws on the third toe.",
+    "Its whole body is covered in thick fur."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "very long thin snout, big front claws, long tail; thick fur",
+    "covering": [
+      "Its whole body is covered in thick fur."
+    ]
+  }
+}

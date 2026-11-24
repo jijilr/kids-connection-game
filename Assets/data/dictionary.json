@@ -1,6 +1,6 @@
 {
-  "version": 11,
-  "status": "version 11. Versions 1 to 4 were approved by the owner. Since 7 Oct 2026 a field is added by the rules when it passes the four tests, and the digest of the run that added it says so. The game reads this file.",
+  "version": 12,
+  "status": "version 12. Versions 1 to 4 were approved by the owner. Since 7 Oct 2026 a field is added by the rules when it passes the four tests, and the digest of the run that added it says so. The game reads this file.",
   "about": "Every field a thing may carry, and the only values that field may take. A field that does not apply to a thing is left out of that thing; it is never written as 'not applicable'. The wording is what a child sees or hears; it is not data.",
   "rules": [
     "A field holds the everyday meaning, which is what the game sorts by.",
@@ -329,6 +329,21 @@
         "on": "2026-11-24",
         "why": "its fourth group, bone-headed dinosaurs, has only two well-known members, so no set could open; the job may now propose five or six groups"
       }
+    },
+    "what_it_eats": {
+      "wording": "What does this animal mostly eat?",
+      "meaning": "everyday",
+      "values": {
+        "eats_plants": "Eats only plants",
+        "eats_meat": "Eats only meat",
+        "eats_both": "Eats plants and meat",
+        "eats_insects": "Eats mostly insects"
+      },
+      "expected_on": {
+        "pet_farm_or_wild": "wild_land"
+      },
+      "since": 12,
+      "added_by": "the rules, job run 2026-11-24-04"
     }
   }
 }

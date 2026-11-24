@@ -1,0 +1,61 @@
+{
+  "name": "Raccoon",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The raccoon (Procyon lotor, common raccoon,) is a mammal.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "The raccoon (Procyon lotor, common raccoon,) is a mammal.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Most raccoons live in the wild.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_land",
+      "quote": "Most raccoons live in the wild.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "what_it_eats": {
+      "value": "eats_both",
+      "quote": "Raccoons are omnivores.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Raccoon",
+      "title": "Raccoon",
+      "asked_for": "Raccoon",
+      "revision": 1387277206,
+      "fetched_on": "2026-11-24",
+      "sha256": "0e4bffbe96b5b464bebb2bb97509c7e7625815dc031e891c4a712091b70a457a"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Raccoon",
+      "title": "Raccoon",
+      "asked_for": "Raccoon",
+      "revision": 10989986,
+      "fetched_on": "2026-11-24",
+      "sha256": "198e8bd910f3355cfb3f547be7574e9ae119847456d74777120b7fa708830f50"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

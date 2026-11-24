@@ -1,0 +1,114 @@
+{
+  "name": "Aardvark",
+  "group": "Animals > Mammals > Wild animals on land > Eats mostly insects",
+  "features": [
+    {
+      "claim": "It has a stout body with a prominently arched back.",
+      "quote": "Its body is stout with a prominently arched back and is sparsely covered with coarse hairs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its rear legs are longer than its front legs.",
+      "quote": "The limbs are of moderate length, with the rear legs being longer than the forelegs.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its front feet have four toes and its rear feet have five.",
+      "quote": "The front feet have lost the pollex (or 'thumb'), resulting in four toes, while the rear feet have all five toes.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Each toe has a large, robust, somewhat flattened shovel-like nail.",
+      "quote": "Each toe bears a large, robust nail which is somewhat flattened and shovel-like, and appears to be intermediate between a claw and a hoof.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It is pale yellowish-grey and often stained reddish-brown by soil.",
+      "quote": "The aardvark is pale yellowish-grey in colour and often stained reddish-brown by soil.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has a greatly elongated head on a short, thick neck.",
+      "quote": "The greatly elongated head is set on a short, thick neck, and the end of the snout bears a disc, which houses the nostrils.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its snout looks like an elongated pig snout.",
+      "quote": "The snout resembles an elongated pig snout.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its mouth is small and tubular.",
+      "quote": "The mouth is small and tubular, typical of species that feed on ants and termites.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "It has a long, thin, snakelike, protruding tongue.",
+      "quote": "The aardvark has a long, thin, snakelike, protruding tongue (as much as 30 centimetres (12 in) long) and elaborate structures supporting a keen sense of smell.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its ears are disproportionately long, about 20 to 25 centimetres.",
+      "quote": "The ears, which are very effective, are disproportionately long, about 20–25 centimetres (7.9–9.8 in) long.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Its eyes are small for its head.",
+      "quote": "The eyes are small for its head, and consist only of rods.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "Its coat is thin, with short hair on the head and tail and longer hair on the legs.",
+        "quote": "Its hair is short on its head and tail; however its legs tend to have longer hair.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "the sentence does not support it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Aardvark",
+      "title": "Aardvark",
+      "revision": 1387319386,
+      "revision_time": "2026-11-23T11:25:54Z",
+      "fetched_on": "2026-11-24",
+      "chars": 20867,
+      "sha256": "34924632e7f136e3e39efbeeb0cabd2d2bfe8bec4a47af4ae65a4a0bcf42e188"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Aardvark",
+      "title": "Aardvark",
+      "revision": 10916573,
+      "revision_time": "2026-07-11T00:21:05Z",
+      "fetched_on": "2026-11-24",
+      "chars": 2725,
+      "sha256": "ebcb132497e6142cebe9e58eb6ba12bff8f7c2dae167fb3be4ae42623e398b2e"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "It has a stout body with a prominently arched back.",
+    "Its rear legs are longer than its front legs.",
+    "It has a greatly elongated head on a short, thick neck.",
+    "Its ears are disproportionately long, about 20 to 25 centimetres."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "arched back, longer rear legs, elongated head on thick neck, long ears",
+    "covering": []
+  }
+}

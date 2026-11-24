@@ -1,0 +1,142 @@
+{
+  "name": "Armadillo",
+  "group": "Animals > Mammals > Wild animals on land > Eats mostly insects",
+  "features": [
+    {
+      "claim": "An armadillo has a leathery armor shell covering it.",
+      "quote": "Living armadillos are characterized by a leathery armor shell and long, sharp claws for digging.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "An armadillo has long, sharp claws that it uses for digging.",
+      "quote": "Living armadillos are characterized by a leathery armor shell and long, sharp claws for digging.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "An armadillo has short legs.",
+      "quote": "They have short legs, but can move quite quickly.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "An armadillo is about 75 cm long, counting its tail.",
+      "quote": "The average length of an armadillo is about 75 cm (30 in), including its tail.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The armor is made of plates of bone covered in small overlapping scales called scutes.",
+      "quote": "The armor is formed by plates of dermal bone covered in relatively small overlapping epidermal scales called \"scutes\" which are composed of keratin.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Most armadillos have stiff shields over the shoulders and hips, with bands between them across the back and sides.",
+      "quote": "Most species have rigid shields over the shoulders and hips, with a number of bands separated by flexible skin covering the back and flanks.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "Extra armor covers the top of the head, the upper parts of the limbs, and the tail.",
+      "quote": "Additional armor covers the top of the head, the upper parts of the limbs, and the tail.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "The underside of an armadillo is never armored; it is covered with soft skin and fur.",
+      "quote": "The underside of the animal is never armored and is simply covered with soft skin and fur.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "An armadillo has five clawed toes on its hind feet.",
+      "quote": "They have five clawed toes on their hind feet, and three to five toes with heavy digging claws on their fore feet.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "An armadillo has three to five toes with heavy digging claws on its front feet.",
+      "quote": "They have five clawed toes on their hind feet, and three to five toes with heavy digging claws on their fore feet.",
+      "source": "wikipedia_en"
+    },
+    {
+      "claim": "An armadillo's skin can glow under ultraviolet light.",
+      "quote": "The skin of an armadillo can glow under ultraviolet light.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "not_this": [
+    {
+      "claim": "The underside of an armadillo is not armored.",
+      "quote": "The underside of the animal is never armored and is simply covered with soft skin and fur.",
+      "source": "wikipedia_en"
+    }
+  ],
+  "debated": [],
+  "dropped": {
+    "quote_not_in_the_page": [],
+    "second_reading": [
+      {
+        "claim": "An armadillo has many cheek teeth, with no incisors or canines.",
+        "quote": "Armadillos have numerous cheek teeth which are not divided into premolars and molars, but usually have no incisors or canines.",
+        "source": "wikipedia_en",
+        "kind": "features",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Not every armadillo can roll up into a ball; only the Tolypeutes species can.",
+        "quote": "When threatened by a predator, Tolypeutes species frequently roll up into a ball; they are the only species of armadillo capable of this.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "Other armadillos cannot roll up because they have too many plates.",
+        "quote": "Other armadillo species cannot roll up because they have too many plates.",
+        "source": "wikipedia_en",
+        "kind": "not_this",
+        "why": "a picture could not show it"
+      },
+      {
+        "claim": "One source says the giant armadillo can grow to 150 cm and weigh up to 54 kg, while another says up to 100 cm and 30 kg.",
+        "quote": "The giant armadillo grows up to 100 cm (39 in) and weigh 30 kg (66lbs).",
+        "source": "wikipedia_simple",
+        "kind": "debated",
+        "why": "the sentence does not support it"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Armadillo",
+      "title": "Armadillo",
+      "revision": 1384047661,
+      "revision_time": "2026-11-06T08:11:18Z",
+      "fetched_on": "2026-11-24",
+      "chars": 12939,
+      "sha256": "90295daa47653db7219fbde4c1f3a7a9d45cfc574d9def3590146a2e2ef470ef"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Armadillo",
+      "title": "Armadillo",
+      "revision": 10378110,
+      "revision_time": "2025-07-07T14:17:09Z",
+      "fetched_on": "2026-11-24",
+      "chars": 1575,
+      "sha256": "8ead4ff458d343eb4918b37f69920b50c55dc5ce3092a00b03216b61e0171c7e"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every item carries a sentence found word for word in the saved page"
+  },
+  "must_show": [
+    "An armadillo has short legs.",
+    "Most armadillos have stiff shields over the shoulders and hips, with bands between them across the back and sides.",
+    "An armadillo has a leathery armor shell covering it."
+  ],
+  "told_apart_by": {
+    "judge": "deepseek-flash",
+    "date": "2026-11-24",
+    "why": "short legs and banded shields; leathery armor shell",
+    "covering": [
+      "An armadillo has a leathery armor shell covering it."
+    ]
+  }
+}

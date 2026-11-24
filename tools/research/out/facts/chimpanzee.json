@@ -1,0 +1,60 @@
+{
+  "name": "Chimpanzee",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "The chimpanzee (; Pan troglodytes), commonly abbreviated to chimp, is a medium-sized great ape species found in the forests and savannas of equatorial Africa.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "basis": "judged, not sourced",
+      "why": "The sources call the chimpanzee a great ape, and apes are mammals."
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Between 170,000 and 300,000 individuals are estimated across its range.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_land",
+      "quote": "The chimpanzee (; Pan troglodytes), commonly abbreviated to chimp, is a medium-sized great ape species found in the forests and savannas of equatorial Africa.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_it_eats": {
+      "value": "eats_both",
+      "quote": "Chimpanzees primarily eat fruit, but will also consume other plant material, as well as insects and will even hunt smaller monkeys.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Chimpanzee",
+      "title": "Chimpanzee",
+      "asked_for": "Chimpanzee",
+      "revision": 1387141999,
+      "fetched_on": "2026-11-24",
+      "sha256": "01df3d84beb3e65b5b1b81dfd3db02c582b05b41b0ec60b1f31ce315f1ea01b7"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Chimpanzee",
+      "title": "Chimpanzee",
+      "asked_for": "Chimpanzee",
+      "revision": 11067630,
+      "fetched_on": "2026-11-24",
+      "sha256": "b6989fe0701c746911b75c1c31cb25299979b5fc04ec918e2e2f366e417a5f53"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

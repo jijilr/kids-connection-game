@@ -1,0 +1,60 @@
+{
+  "name": "Armadillo",
+  "fields": {
+    "kind_of_thing": {
+      "value": "animal",
+      "quote": "Armadillos (Spanish for 'little armored ones') are placental mammals in the order Cingulata.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_animal": {
+      "value": "mammal",
+      "quote": "Armadillos (Spanish for 'little armored ones') are placental mammals in the order Cingulata.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Twenty-one extant species of armadillo have been described, some of which are distinguished by the number of bands on their armor.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "pet_farm_or_wild": {
+      "value": "wild_land",
+      "quote": "All species are native to the Americas, where they inhabit a variety of environments.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "what_it_eats": {
+      "value": "eats_insects",
+      "basis": "judged, not sourced",
+      "why": "Armadillos are commonly known to feed mainly on insects, though the sources themselves do not state their diet."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Armadillo",
+      "title": "Armadillo",
+      "asked_for": "Armadillo",
+      "revision": 1384047661,
+      "fetched_on": "2026-11-24",
+      "sha256": "5c326140ddb29adc0b91933252d196ac590a415bc3f2b6d74e0f49bf8fbd6dc9"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Armadillo",
+      "title": "Armadillo",
+      "asked_for": "Armadillo",
+      "revision": 10378110,
+      "fetched_on": "2026-11-24",
+      "sha256": "3a26e7dadaf2e5a23e26e6e9b117d49d4519de90972d2ac11e1d81fdf07f84f9"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-24",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}
