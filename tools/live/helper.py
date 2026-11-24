@@ -14,7 +14,8 @@ It runs on this PC because the keys are here and must never be in the game. The 
 the built web app (build/web), served from here; its data, pictures and sounds are
 served straight from the project's Assets folder, so what the job adds shows at once.
 
-    flutter build web                           once, and after the game's own code changes
+    flutter build web --pwa-strategy=none       once, and after the game's own code changes (without the
+                                                offline cache, so a reload always shows the game as built)
     python tools/live/helper.py                 serve at http://localhost:8200 and keep sets ready
     python tools/live/helper.py --lan           also for a tablet on the same Wi-Fi
     python tools/live/helper.py --no-making     serve only: nothing is made, nothing is spent
@@ -248,7 +249,7 @@ def main():
     port = int(argv[argv.index("--port") + 1]) if "--port" in argv else 8200
     buffer = int(argv[argv.index("--buffer") + 1]) if "--buffer" in argv else BUFFER
     if not (WEB / "index.html").exists():
-        raise SystemExit("The game is not built yet. Run:  flutter build web")
+        raise SystemExit("The game is not built yet. Run:  flutter build web --pwa-strategy=none")
     mimetypes.add_type("application/wasm", ".wasm")
     mimetypes.add_type("image/webp", ".webp")
     helper = Helper(making="--no-making" not in argv, buffer=buffer)

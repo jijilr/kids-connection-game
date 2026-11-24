@@ -195,6 +195,10 @@ class GroupProgress {
 abstract class ProgressStore {
   Future<Progress> load();
   Future<void> save(Progress progress);
+
+  /// A switch kept on this device, such as whether the app chooses the way by itself.
+  Future<bool> loadFlag(String name, {required bool otherwise});
+  Future<void> saveFlag(String name, bool value);
 }
 
 /// Kept in memory only: for tests, and the fallback when the device refuses storage.
@@ -206,6 +210,12 @@ class MemoryProgressStore implements ProgressStore {
       : Progress.fromJson(jsonDecode(_text!) as Map<String, dynamic>);
   @override
   Future<void> save(Progress progress) async => _text = jsonEncode(progress.toJson());
+
+  final _flags = <String, bool>{};
+  @override
+  Future<bool> loadFlag(String name, {required bool otherwise}) async => _flags[name] ?? otherwise;
+  @override
+  Future<void> saveFlag(String name, bool value) async => _flags[name] = value;
 }
 
 /// Kept on the device: the browser's own storage on the web, the app's preferences
@@ -230,6 +240,24 @@ class DeviceProgressStore implements ProgressStore {
       await (await SharedPreferences.getInstance()).setString(_key, jsonEncode(progress.toJson()));
     } catch (_) {
       // nothing to do: the game goes on, and the next save tries again
+    }
+  }
+
+  @override
+  Future<bool> loadFlag(String name, {required bool otherwise}) async {
+    try {
+      return (await SharedPreferences.getInstance()).getBool('flag_$name') ?? otherwise;
+    } catch (_) {
+      return otherwise;
+    }
+  }
+
+  @override
+  Future<void> saveFlag(String name, bool value) async {
+    try {
+      await (await SharedPreferences.getInstance()).setBool('flag_$name', value);
+    } catch (_) {
+      // as with progress: the game goes on
     }
   }
 }

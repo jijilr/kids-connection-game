@@ -11,6 +11,7 @@ import '../services/speaker.dart';
 import '../widgets/grown_up_panel.dart';
 import '../widgets/solved_group_bar.dart';
 import '../widgets/tile_card.dart';
+import 'web_screen.dart';
 
 const _purple = Color(0xFF6C5CE7);
 const _deepPurple = Color(0xFF4A3FB0);
@@ -27,12 +28,48 @@ class EngineScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final auto = context.select<EngineProvider, bool>((g) => g.automate);
     return Scaffold(
       backgroundColor: Colors.transparent,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
         toolbarHeight: 48,
+        // Automate: the app chooses the way, which is what it is designed for. Switched off,
+        // the test features show (Dig deeper on each group, Back, a new set at will).
+        leadingWidth: 112,
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 10, top: 9, bottom: 9),
+          child: Tooltip(
+            message: auto
+                ? 'Automate is on: the app chooses the next set'
+                : 'Automate is off: test features are showing',
+            child: InkWell(
+              key: const ValueKey('automate'),
+              borderRadius: BorderRadius.circular(16),
+              onTap: () => context.read<EngineProvider>().setAutomate(!auto),
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                decoration: BoxDecoration(
+                  color: auto ? Colors.white : Colors.transparent,
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(color: Colors.white, width: 1.2),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(auto ? Icons.auto_mode_rounded : Icons.science_outlined,
+                        size: 15, color: auto ? _deepPurple : Colors.white),
+                    const SizedBox(width: 4),
+                    Text(auto ? 'Auto' : 'Test',
+                        style: GoogleFonts.inter(
+                            fontSize: 12, fontWeight: FontWeight.w700, color: auto ? _deepPurple : Colors.white)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
         flexibleSpace: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
@@ -62,10 +99,21 @@ class EngineScreen extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            tooltip: 'New board',
-            icon: const Icon(Icons.refresh_rounded, color: Colors.white),
-            onPressed: () => context.read<EngineProvider>().newBoard(),
+            key: const ValueKey('web'),
+            tooltip: 'The web of what he has found',
+            icon: const Icon(Icons.hub_rounded, color: Colors.white),
+            onPressed: () {
+              final g = context.read<EngineProvider>();
+              Navigator.of(context).push(MaterialPageRoute<void>(
+                  builder: (_) => ChangeNotifierProvider<EngineProvider>.value(value: g, child: const WebScreen())));
+            },
           ),
+          if (!auto)
+            IconButton(
+              tooltip: 'New board',
+              icon: const Icon(Icons.refresh_rounded, color: Colors.white),
+              onPressed: () => context.read<EngineProvider>().newBoard(),
+            ),
         ],
       ),
       body: Consumer<EngineProvider>(
@@ -192,7 +240,7 @@ class EngineScreen extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
             ),
           ),
-          if (!g.atRoot)
+          if (!g.atRoot && !g.automate)
             TextButton.icon(
               onPressed: g.back,
               icon: const Icon(Icons.arrow_back_rounded, size: 16),
@@ -289,7 +337,8 @@ class EngineScreen extends StatelessWidget {
         mediaFor: g.tileMedia,
         color: _groupColors[index % _groupColors.length],
         onSay: (e) => _sayName(g, e),
-        onDescend: g.canDescend(group) ? () => g.descendInto(group) : null,
+        // a test feature: when the app chooses the way, a found group is not a door
+        onDescend: !g.automate && g.canDescend(group) ? () => g.descendInto(group) : null,
       ),
     );
   }
@@ -301,14 +350,20 @@ class EngineScreen extends StatelessWidget {
     // button follows the best line he has shown, once in five it leads to a set he has
     // not proven (EngineProvider._chooseNext); with nothing chosen, a parallel board.
     final next = g.nextStep;
-    final detail = g.diggable.isNotEmpty
-        ? 'Dig deeper into a group, or tap the arrow.'
-        : 'Here comes another board.';
-    final label = next == null
-        ? 'Next board'
-        : next.inside
-            ? 'Dig deeper: ${next.label}'
-            : 'Next: ${next.label}';
+    final detail = g.automate
+        ? ''
+        : g.diggable.isNotEmpty
+            ? 'Dig deeper into a group, or tap the arrow.'
+            : 'Here comes another board.';
+    // When the app chooses the way the button only says Next: where it leads is the app's
+    // business, not a choice put to the child. In test mode it says where.
+    final label = g.automate
+        ? 'Next'
+        : next == null
+            ? 'Next board'
+            : next.inside
+                ? 'Dig deeper: ${next.label}'
+                : 'Next: ${next.label}';
     return _ShowOnScreen(
         child: BounceInDown(
       duration: const Duration(milliseconds: 600),
@@ -350,15 +405,19 @@ class EngineScreen extends StatelessWidget {
                         fontWeight: FontWeight.w800, fontSize: 22, color: _ink)),
               ],
             ),
-            const SizedBox(height: 4),
-            Text(detail,
-                textAlign: TextAlign.center,
-                style: GoogleFonts.inter(fontSize: 14, color: Colors.grey.shade800)),
+            if (detail.isNotEmpty) ...[
+              const SizedBox(height: 4),
+              Text(detail,
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.inter(fontSize: 14, color: Colors.grey.shade800)),
+            ],
             const SizedBox(height: 10),
             ElevatedButton.icon(
               key: const ValueKey('next'),
               onPressed: g.goNext,
-              icon: Icon(next != null && next.inside ? Icons.arrow_downward_rounded : Icons.arrow_forward_rounded),
+              icon: Icon(!g.automate && next != null && next.inside
+                  ? Icons.arrow_downward_rounded
+                  : Icons.arrow_forward_rounded),
               label: Text(label),
               style: ElevatedButton.styleFrom(
                 backgroundColor: _ink,

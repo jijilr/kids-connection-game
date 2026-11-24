@@ -42,6 +42,7 @@ import 'package:connections_game/screens/engine_screen.dart';
 import 'package:connections_game/services/board_assembler.dart';
 import 'package:connections_game/services/content_repository.dart';
 import 'package:connections_game/services/media.dart';
+import 'package:connections_game/services/progress.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
@@ -987,7 +988,9 @@ void main() {
     ]);
     _log('pictures loaded');
 
-    final engine = EngineProvider(repo: _repo(_seed), random: Random(_seed));
+    // the film of 8 Oct shows "Dig deeper"; since 24 Nov that is a test feature, off by default
+    final engine = EngineProvider(
+        repo: _repo(_seed), random: Random(_seed), progressStore: MemoryProgressStore()..saveFlag('automate', false));
     unawaited(engine.init());
     await tester.pump();
 

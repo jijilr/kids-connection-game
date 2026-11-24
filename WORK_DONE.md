@@ -12,13 +12,13 @@ Last updated: 24 Nov 2026. Branch: `fresh-start`. The live site (branch `main`) 
 
 | | |
 |---|---|
-| Things in the game | 258, each with a drawn picture and a spoken name |
+| Things in the game | 259, each with a drawn picture and a spoken name |
 | Things recorded in all | 368 (79 held by the rules, 23 taken out and kept, 5 kept for later by the owner, 3 ruled out) |
 | Sets a child can open | 14 |
 | Dictionary | version 12, 21 fields (two withdrawn) |
 | Field library | 32 questions, 2 retired, 3 three-way splits parked |
 | Groups with words | 61, each with a ladder of clues; 59 have an explanation |
-| Tests | 61 in the game, 35 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
+| Tests | 67 in the game, 35 for the job, 4 for the helper, 8 for the catalogue, 10 for the pictures. All pass |
 
 **The fourteen sets:** Everything, Animals, Mammals, Wild animals on land (made on 24 Nov by the helper,
 while "playing"), Birds, Dinosaurs, Plants, Vegetable plants, Things in nature that are not alive, Things
@@ -208,6 +208,38 @@ The owner's design, in his words in section 3. Built the same day, in five steps
 - Not seen with my own eyes: the new set on the game's screen. It is behind four other lines in the test
   browser's progress, and I did not play through them.
 
+### Automate, and the web of what he has found (24 Nov)
+- **Automate** (the owner: "dig deeper is not a choice for the user. this is a test feature... the dig
+  deeper is done by the app... keep an 'automate' button on the top. automate is what the app is designed
+  for"). A switch at the top left, on by default and kept on the device. On ("Auto"): a found group is not
+  a door, there is no Back and no new-set button, and a finished set shows one button, Next, which goes
+  where the app chose. Off ("Test"): the test features show, as before: "Dig deeper" on each group, Back,
+  a new set at will, and the button says where it leads. One tap on Next is kept in Auto, so that the
+  explanation can be heard out. (`EngineProvider.automate`; `test/automate_and_web_test.dart`.)
+- **The web of what he has found** (the owner: "an interface to see the web diagram of mastery so far";
+  the mastery web of his June design). The button at the top right. The first set is in the middle; every
+  group he has found is a picture joined to the set it was found in. A picture is larger the more often he
+  found the group; its ring is whole when every find was clean; a small arrow marks the lines the app
+  follows next. Only what he has met is shown, so it only grows. It opens whole and can be zoomed and
+  moved. It draws groups, not yet single things: the game does not record which things he has met.
+  (`lib/screens/web_screen.dart`, `EngineProvider.web`.)
+
+### The Vegetable plants set, after the owner was caught by it (24 Nov)
+He played it and could not tell the last two groups apart ("you help me. haha").
+- Ladies finger is with the fruit now: his word, kept in the catalogue with the reason (new command
+  `catalogue.py set NAME FIELD VALUE --why`).
+- The job found a plant for the other group: Cowpea, drawn with long pods, one open. No fourth one that
+  a four-year-old already knows passed, so a well-known one that may be new to him was allowed. Cluster
+  bean was refused: its picture could not be told from Cowpea's.
+- **The group "The seeds or pods" is now named "The seeds".** With pods in its name no clue could tell it
+  from the fruit, since a ladies finger is a pod too. This changes a wording the owner approved on 6 Oct;
+  it is in the dictionary's history and is his to reverse.
+- Clue writing, for every group from now on: the writer and the checker see the things of the other
+  groups, and a second or third clue that would fit one of them is refused. Three tries. Both groups have
+  new clues ("You can see the little seeds inside when you cut it open" against "We take these out and
+  cook them, not the soft juicy part around them"), recorded with Kokoro. The other 59 groups keep their
+  old clues until they are written again (`python tools/content/group_words.py --again`, about Rs 10).
+
 ### Twelve pictures on one sheet (24 Nov)
 The owner asked for a grid of 3 by 4 to save cost. The picture tools now draw and cut a sheet that is
 not square (`rows` and `cols` in `tools/pictures/plan.json`; `layout_rows` in its style). One trial,
@@ -302,6 +334,8 @@ does not use sheets of twelve yet.
   The helper runs on this PC first. Rs 200 a day while it is a demo. Twelve pictures on a sheet.
 - At least four sub-divisions; with six, "we can do combinations of that level". A set that could also be
   solved another way (by era, by eating habits) "must not be allowed".
+- "dig deeper is not a choice for the user. this is a test feature." Automate is what the app is designed
+  for; a button for it at the top. And a way to see "the web diagram of mastery so far". Both built.
 - He pointed to his June documents for these exceptions. Found there and not built: the check where a
   model lists every grouping a sharp child might try (`PRD.md` IV.2), the ranking of groups by fewest
   wrong guesses, then earliest, then fastest (III.4), and preparing the likeliest next sets while he
@@ -425,7 +459,8 @@ other names for mud.
 | See which circles can open | `python tools/catalogue/catalogue.py circles` |
 | What waits for the owner; what the rules hold | `python tools/catalogue/catalogue.py queue` ; `... held` |
 | How a thing looks, from its sources | `python tools/research/looks.py NAME ... --group "Animals > Birds" --cap-inr 5` (the job runs it by itself) |
-| Serve the game with sets made ahead of the child | `flutter build web` once, then `python tools/live/helper.py` and open http://localhost:8200 (`--lan` for a tablet on the same Wi-Fi; `--no-making` to spend nothing) |
+| Serve the game with sets made ahead of the child | `flutter build web --pwa-strategy=none` once (and after the game's code changes), then `python tools/live/helper.py` and open http://localhost:8200 (`--lan` for a tablet on the same Wi-Fi; `--no-making` to spend nothing) |
+| The owner's word on one value of one thing | `python tools/catalogue/catalogue.py set "NAME" FIELD VALUE --why "..."` |
 | Make one named set by hand | `python tools/prepare_next.py --only CIRCLE --new-to-him --cap 90` |
 | Write missing clues and explanations | `python tools/content/group_words.py` |
 | Record missing voices | `python tools/voice/record_names.py` |
@@ -477,4 +512,6 @@ other names for mud.
 - The owner restated the direction: one game, dynamic data, a buffer of prepared sets (see section 3).
 - A trial sheet of twelve pictures: it works, at Rs 1.4 a picture.
 - One game, dynamic data: the ranking and the lines, the helper, the live link, the clever-kid check;
-  the first set made while "playing" (Wild animals on land). Spent on the day: about Rs 93.
+  the first set made while "playing" (Wild animals on land).
+- The owner played it and was caught by Vegetable plants: the set, its clues and the clue writer fixed.
+- Automate at the top, on by default; the web of what he has found. Spent on the day: about Rs 110.

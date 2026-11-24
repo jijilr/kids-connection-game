@@ -41,6 +41,27 @@ class NextStep {
   String get id => Progress.boardId(filter);
 }
 
+/// One knot of the web of what he has found: the first set, or a group he has found. Its
+/// parent is the set it was found in.
+class WebNode {
+  final String id;
+  final String label;
+  final String? parent;
+  final int found;
+  final int clean;
+
+  /// The app will follow this line next: he did the group well and has not played its set.
+  final bool line;
+
+  /// A picture of one thing of the group, for a child who cannot read its name.
+  final EntityMedia? picture;
+
+  const WebNode(this.id, this.label, this.parent,
+      {this.found = 0, this.clean = 0, this.line = false, this.picture});
+
+  bool get isStart => parent == null;
+}
+
 /// Game state for the text/picture engine: a 4×4 board assembled fresh from the
 /// graph (one named rule per board) and the filter-stack traversal (dig deeper / back).
 class EngineProvider extends ChangeNotifier {
@@ -55,6 +76,18 @@ class EngineProvider extends ChangeNotifier {
         _progressStore = progressStore ?? MemoryProgressStore(),
         _now = clock ?? DateTime.now,
         _live = live;
+
+  /// The app chooses the way by itself: what it is designed for (the owner's word of
+  /// 24 Nov 2026: "dig deeper is not a choice for the user. this is a test feature... the
+  /// dig deeper is done by the app"). On by default. Switched off, the test features show:
+  /// "Dig deeper" on each group, Back, a new set at will.
+  bool automate = true;
+
+  Future<void> setAutomate(bool on) async {
+    automate = on;
+    notifyListeners();
+    await _progressStore.saveFlag('automate', on);
+  }
 
   /// The link to the helper on the owner's PC, which makes sets ahead of him. Null where
   /// there is none: the game then plays from what it ships with.
@@ -193,6 +226,53 @@ class EngineProvider extends ChangeNotifier {
   /// He has solved this board and no group of it can be dug into.
   bool get atADeadEnd => boardFinished && diggable.isEmpty;
 
+  /// The web of what he has found so far, for the web screen: the first set, and every
+  /// group he has found, each joined to the set it was found in. Nothing he has not met
+  /// is in it, so it only grows. A group whose place in the game can no longer be worked
+  /// out (its question was withdrawn) is left out.
+  List<WebNode> get web {
+    final start = _stack.isEmpty ? null : _stack.first;
+    if (start == null) return const [];
+    final nodes = <String, WebNode>{'seed': WebNode('seed', start.label, null)};
+    final ids = progress.groups.keys.where((id) => (progress.groups[id]?.found ?? 0) > 0).toList()
+      ..sort((a, b) => a.split('/').length.compareTo(b.split('/').length));
+    for (final id in ids) {
+      final values = id.split('/');
+      var dim = start.dim;
+      final filter = <PathFilter>[];
+      String? label;
+      for (int i = 0; i < values.length; i++) {
+        if (!dim.values.containsKey(values[i])) {
+          label = null;
+          break;
+        }
+        label = dim.label(values[i]);
+        filter.add((dim.id, values[i]));
+        final here = values.sublist(0, i + 1).join('/');
+        if (!nodes.containsKey(here)) {
+          // a set he went through without having found its group: a plain knot on the way
+          final seen = progress.groups[here];
+          final pool = _repo.entities.where((e) => filter.every((f) => e.isIn(f.$1, f.$2)));
+          final shown = pool.map(_repo.media.forEntity).where((m) => m.art != null || m.image != null);
+          nodes[here] = WebNode(here, label, i == 0 ? 'seed' : values.sublist(0, i).join('/'),
+              found: seen?.found ?? 0,
+              clean: seen?.clean ?? 0,
+              line: progress.lines.contains(here),
+              picture: shown.isEmpty ? null : shown.first);
+        }
+        if (i < values.length - 1) {
+          final inside = _repo.assembler.boardableDimensions(filter);
+          if (inside.isEmpty) {
+            label = null;
+            break;
+          }
+          dim = inside.first;
+        }
+      }
+    }
+    return nodes.values.toList();
+  }
+
   /// The groups of this set in the order he did them best (the owner's rule of 24 Nov
   /// 2026): fewest wrong guesses that took in its things, then no clue, and a tie goes
   /// to the one he attempted earliest.
@@ -266,6 +346,7 @@ class EngineProvider extends ChangeNotifier {
   Future<void> init() async {
     await _repo.load();
     progress = await _progressStore.load();
+    automate = await _progressStore.loadFlag('automate', otherwise: true);
     final live = _live;
     if (live != null) {
       // the data as it stands now on the owner's PC, with every set made so far
