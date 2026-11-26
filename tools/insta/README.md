@@ -1,6 +1,6 @@
 # The Instagram reel of the game
 
-`docs/insta_connections.mp4`: upright, 1080 x 1920, 30 frames a second, about 43 seconds; its cover is
+`docs/insta_connections.mp4`: upright, 1080 x 1920, 30 frames a second, about 46 seconds; its cover is
 `docs/insta_connections_cover.jpg`. Neither is in git (large, and made again with every cut); everything
 that makes them is.
 
@@ -8,7 +8,13 @@ Asked for by the owner on 26 Nov 2026: "make an insta video of the game that way
 promos (`vocabulary_swipe_app/tool/deck_engine/blender`, read and never changed). After two cuts he said:
 "the vocabulary app's details I had given was not for you to replicate (the wooden background) but to be
 inspired and make better than that", and "supress the voice from the app and you tell what is that you are
-clicking". This is the third cut.
+clicking". This is the third cut, with one change after a review of it (below): the clue is given time.
+
+The review said: "the clue frame is mostly hidden behind the 'Stuck?' caption. Let it show for a beat longer
+so people can read 'Think about things you can see outside that are not alive.'" So once the clue appears the
+"Stuck?" words go, the dark band over the top and the small name lift, the camera goes close on the clue's
+words, and the narrator reads them aloud: about five seconds on the clue alone, where there had been two
+and a half under the words.
 
 ## What happens in it
 
@@ -18,9 +24,10 @@ clicking". This is the third cut.
 | 0:05 | The finger touches each animal as it is named; Submit; "Yes! Animals" | Find four that belong together. | "Dog. Hen. A fish. And a stegosaurus." A chime. "Yes! Four animals." |
 | 0:11 | Coconut tree, grass, rose and soil; Submit; "So close, one away!" | **Wrong?** It tells him how close he was. | "Coconut tree. Grass. Rose. And... soil?" A low note. "So close. One away." |
 | 0:18 | The Clue button; the clue appears | **Stuck?** A clue, never the answer. | The narrator |
-| 0:23 | Ten sets at five times speed, going deeper | Set after set, deeper and wider. A sign: "5x speed" | The narrator |
-| 0:32 | His web on the phone; the phone slides away and the web grows in 3D behind it, knot by knot, each knot one of his own pictures, joined by threads of light in its branch's colour | Everything he finds grows his own web. | The narrator; a faint sparkle as each knot comes in |
-| 0:37 | The whole web | **Connections.** A picture game that grows with your child. | The narrator |
+| 0:22 | Close on the clue's words, nothing over them | (none) | The narrator reads the clue: "Think about things you can see outside that are not alive." |
+| 0:27 | Ten sets at five times speed, going deeper | Set after set, deeper and wider. A sign: "5x speed" | The narrator |
+| 0:36 | His web on the phone; the phone slides away and the web grows in 3D behind it, knot by knot, each knot one of his own pictures, joined by threads of light in its branch's colour | Everything he finds grows his own web. | The narrator; a faint sparkle as each knot comes in |
+| 0:41 | The whole web | **Connections.** A picture game that grows with your child. | The narrator |
 
 ## The look
 
@@ -71,6 +78,7 @@ half every group is found at the first try, so each set's groups become lines an
     python tools/insta/insta_make.py                      the reel (about 35 minutes of Blender)
 
 To change the words, edit `WORDS` and `CLOSE` in `insta_make.py` and run it again: rendered frames are kept,
-so only the words, the sound and the encoding are done again. To change the camera or the set, delete
-`tools/insta/out/frames` first. Space: about 0.6 GB in `tools/insta/out`; the finished frames are streamed into
+so only the words, the sound and the encoding are done again. To change the camera or the set, or after the
+game has filmed itself again, delete `tools/insta/out/frames` first (a new film replaces the phone's screen
+track by itself). Space: about 0.6 GB in `tools/insta/out`; the finished frames are streamed into
 the encoder, never saved.

@@ -71,7 +71,8 @@ WORDS = [
     ("hook", "touch", [("16 pictures.", "big"), ("4 hidden groups.", "big"), ("Can your child find them?", "mid")]),
     ("touch", "wrong", [("Find four that", "mid"), ("belong together.", "mid")]),
     ("wrong", "clue", [("Wrong?", "big"), ("It tells him how close he was.", "mid")]),
-    ("clue", "fast", [("Stuck?", "big"), ("A clue, never the answer.", "mid")]),
+    ("clue", "cluesays", [("Stuck?", "big"), ("A clue, never the answer.", "mid")]),
+    # then nothing over the clue while it is read aloud: a viewer reads it too
     # the second half, fast forward (the owner, 26 Nov 2026), so the web at the end is rich
     ("fast", "web", [("Set after set,", "mid"), ("deeper and wider.", "mid")]),
     ("web", "close", [("Everything he finds", "mid"), ("grows his own web.", "mid")]),
@@ -161,7 +162,11 @@ def ease(u: float) -> float:
 
 def words_at(t: float, marks: dict, total: float) -> list:
     """What is laid over the picture at time t: (image, opacity, rise in px)."""
-    out = [(shade(), 1.0, 0)]
+    # while the clue is read there are no words over the top, so the dark over the top lifts and nothing
+    # hangs over the clue
+    q0, q1 = marks["cluesays"], marks["fast"]
+    quiet = min(ease((t - q0) / 0.5), ease((q1 - t) / 0.4)) if q0 <= t < q1 else 0.0
+    out = [(shade(), 1.0 - quiet, 0)]
     for start, end, lines in WORDS:
         a, b = marks[start], marks[end]
         if a - 0.05 <= t < b:
@@ -181,7 +186,7 @@ def words_at(t: float, marks: dict, total: float) -> list:
         u = ease((t - c) / 0.8)
         out.append((block(tuple(CLOSE), 170), u, round(18 * (1 - u))))
     if t < c + 0.2:
-        out.append((mark(), 1.0, None))
+        out.append((mark(), 1.0 - quiet, None))
     return out
 
 
@@ -227,10 +232,12 @@ def make_track():
     """The game's frames as the phone's screen: JPEG, numbered from 1 as Blender's frames are. The PNGs go."""
     TRACK.mkdir(parents=True, exist_ok=True)
     pngs = sorted(SCREEN.glob("f*.png"))
+    # a new film replaces the old track whole: its frames are other moments, even where the numbers match
+    for old in TRACK.glob("t*.jpg"):
+        old.unlink()
     for png in pngs:
         jpg = TRACK / f"t{int(png.stem[1:]) + 1:05d}.jpg"
-        if not jpg.exists():
-            Image.open(png).convert("RGB").save(jpg, quality=93)
+        Image.open(png).convert("RGB").save(jpg, quality=93)
         png.unlink()
     print(f"track: {len(list(TRACK.glob('t*.jpg')))} frames")
 
@@ -246,6 +253,8 @@ def make_times() -> dict:
     full = (-30, -40, sw + 30, sh + 40)
     board = tuple(boxes["board"])
     lower = (10, sh * 0.56, sw - 10, sh * 0.93)        # the clue's words and the buttons
+    cw = boxes["cluewords"]                            # the clue's words alone, with room around them
+    clue_words = (cw[0] + 40, cw[1] - 170, cw[2] - 40, cw[3] + 50)  # its words edge to edge, a little low
     web_screen = (sw * 0.04, sh * 0.12, sw * 0.96, sh * 0.62)
     total = e["frames"] / FPS
     land_from, land_to = 1.7, 3.9                      # the sixteen pictures fly in as "Can your child..." is said
@@ -266,7 +275,8 @@ def make_times() -> dict:
         (marks["wrong"] + 0.4, board, (6, 4)),
         (marks["oneaway"] + 1.0, full, (7, 0)),
         (marks["clue"] + 1.8, lower, (6, -3)),                        # in on the clue
-        (marks["done"] - 0.5, lower, (6, -5)),
+        (marks["cluesays"] + 0.2, clue_words, (4, 0)),                 # close on its words, as they are read
+        (marks["done"] - 0.6, clue_words, (4, -2)),
         (marks["done"] + 0.4, full, (8, -2)),
         (marks["fast"] + 1.0, full, (9, -8)),                         # the fast half: the whole phone, turning
         (marks["slow"] - 0.4, (0, sh * 0.08, sw, sh * 0.92), (8, 6)),

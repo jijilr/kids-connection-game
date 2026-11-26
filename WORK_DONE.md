@@ -435,6 +435,13 @@ own, no desk: a deep violet studio in the game's colours, the phone standing in 
 pictures flying into it in the opening, and his web growing at the close as a 3D constellation of his own
 pictures joined by threads of light (`tools/insta/insta_scene.py`, `insta_web.py`). About 43 seconds.
 
+The fourth cut, the same day, after a review of the third pasted by the owner ("the clue frame is mostly hidden
+behind the 'Stuck?' caption. Let it show for a beat longer so people can read..."): once the clue appears, the
+words over the top, the dark band and the small name all lift, the camera goes close on the clue, and the
+narrator reads it aloud (one new line, about 60 characters of ElevenLabs; the film checks it is the clue the
+game shows). About five seconds on the clue alone. Also fixed: a new film of the game now replaces the phone's
+screen track whole (the old frames had been kept where the numbers matched). About 46 seconds.
+
 ### Room for the set on a phone (24 Nov, night)
 The owner played on his phone and sent two pictures: the explanation "takes away too much vertical space
 and make it less fun to play", and the line "Yes! Plants" used room that "can be used better".

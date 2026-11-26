@@ -678,7 +678,16 @@ void main() {
       film.box('clue', tester.getRect(find.byKey(const ValueKey('clue-button'))).inflate(30));
       await film.press(at(find.byKey(const ValueKey('clue-button'))), 'button');
       expect(engine.cluesUsed, 1);
-      await film.spoken(1.1);
+      await film.spoken(0.2);
+      // A beat on the clue itself, read aloud, so a viewer can read it too (a review of the third cut: "the
+      // clue frame is mostly hidden behind the 'Stuck?' caption. Let it show for a beat longer").
+      await film.hold(0.1);
+      film.box('cluewords', tester.getRect(find.byKey(const ValueKey('clue'))));
+      expect(engine.clue!.text, (voice['cluesays'] as Map<String, dynamic>)['text'],
+          reason: 'the narrator reads the clue the game shows (insta.voice.json, seed 4)');
+      film.mark('cluesays');
+      await film.say('cluesays');
+      await film.spoken(1.0);
       await film.cut(() async {
         for (final rest in engine.board!.groups.where((x) => !engine.solved.contains(x)).toList()) {
           for (final e in rest.items) {
