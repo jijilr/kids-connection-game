@@ -1,0 +1,56 @@
+{
+  "name": "Ashoka tree",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Ashoka tree is a common name for two plants which are frequently confused with each other:",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "The sources describe the Ashoka tree as plant species native to South and Southeast Asia, with no mention of extinction."
+    },
+    "kind_of_plant": {
+      "value": "tree",
+      "basis": "judged, not sourced",
+      "why": "The sources call it the Ashoka tree, so it is a tree."
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "tree_academic",
+      "why": "the pages do not show it: no sentence gives a scientist's view"
+    },
+    {
+      "field": "part_we_eat",
+      "why": "uncertain: two judgements disagree: 'The fruit' and 'The leaves'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Ashoka_tree",
+      "title": "Ashoka tree",
+      "asked_for": "Ashoka tree",
+      "revision": 1214750835,
+      "fetched_on": "2026-11-26",
+      "sha256": "9c78d729d1edcdfb62d276030441b4687e37b0d4b3ace04b07ce394ecf6bd29f"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Ashoka",
+      "title": "Ashoka",
+      "asked_for": "Ashoka",
+      "revision": 10952388,
+      "fetched_on": "2026-11-26",
+      "sha256": "c43454472656c19a9585dcd11c189f852ccb797b20550b7c304a7125c97debde"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-26",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Dahlia plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Dahlia is a genus of plants with large brightly-colored flowers.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Dahlia are often grown in flower gardens.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "flower",
+      "quote": "Dahlia is a genus of plants with large brightly-colored flowers.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "part_we_eat": {
+      "value": "under_the_ground",
+      "basis": "judged, not sourced",
+      "why": "The sources say dahlias have tubers, which are the underground parts people eat."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Dahlia",
+      "title": "Dahlia",
+      "asked_for": "Dahlia",
+      "revision": 1382150540,
+      "fetched_on": "2026-11-26",
+      "sha256": "44df08ab5d5d9eea036f289dfa199866549303c489717eb18404d37873241624"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Dahlia",
+      "title": "Dahlia",
+      "asked_for": "Dahlia",
+      "revision": 10235510,
+      "fetched_on": "2026-11-26",
+      "sha256": "9e0a89d43807d91d1fef46ddf1149865d3506d7ceea3a50c63b4d173a52a6312"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-26",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

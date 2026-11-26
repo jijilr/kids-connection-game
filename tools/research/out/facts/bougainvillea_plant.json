@@ -1,0 +1,54 @@
+{
+  "name": "Bougainvillea plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Bougainvillea is a genus of flowering plants.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "it is often grown as gardening plant in warm climate.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "flower",
+      "quote": "Bougainvillea is a genus of flowering plants.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "part_we_eat",
+      "why": "uncertain: two judgements disagree: 'The seeds' and 'The leaves'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Bougainvillea",
+      "title": "Bougainvillea",
+      "asked_for": "Bougainvillea",
+      "revision": 1383634514,
+      "fetched_on": "2026-11-26",
+      "sha256": "98481927cb99626ca7f8ec614ab4ee3cf5c7937a9cf015de8dd1abb0c2519fed"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Bougainvillea",
+      "title": "Bougainvillea",
+      "asked_for": "Bougainvillea",
+      "revision": 6602556,
+      "fetched_on": "2026-11-26",
+      "sha256": "6d785b38c65d39a53bc989ac6645ac9c026933ca395e47cb62aba721dedf98d3"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-26",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

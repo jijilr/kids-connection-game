@@ -1,0 +1,54 @@
+{
+  "name": "Barley plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Barley is a member of the grass family of plants.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "Barley is described as a currently grown cereal grain, so it is still living."
+    },
+    "kind_of_plant": {
+      "value": "grass_grain",
+      "quote": "Barley is a member of the grass family of plants.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "part_we_eat": {
+      "value": "seeds_or_pods",
+      "quote": "Its seeds are a cereal grain.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Barley",
+      "title": "Barley",
+      "asked_for": "Barley",
+      "revision": 1386027526,
+      "fetched_on": "2026-11-26",
+      "sha256": "07a33530bd426927258e0db35247ff9cbeff4d86c228d7d2d3e78460c92a4f03"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Barley",
+      "title": "Barley",
+      "asked_for": "Barley",
+      "revision": 10169447,
+      "fetched_on": "2026-11-26",
+      "sha256": "4f587c549159135512efa8a3a2556ea312ff651bb6b0eace4554edd6bb607039"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-26",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

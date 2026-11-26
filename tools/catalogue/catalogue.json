@@ -32734,12 +32734,320 @@
         "clip": null,
         "cached": "tools/voice/clips/jumping_spider.mp3"
       }
+    },
+    "banyan_tree": {
+      "name": "Banyan tree",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "held_from": "job:2026-11-26-02",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.85,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/tree"
+        ]
+      }
+    },
+    "peepal_tree": {
+      "name": "Peepal tree",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "held_from": "job:2026-11-26-02",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.85,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/tree"
+        ]
+      }
+    },
+    "gulmohar_tree": {
+      "name": "Gulmohar tree",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "held_from": "job:2026-11-26-02",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.7,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/tree"
+        ]
+      }
+    },
+    "ashoka_tree": {
+      "name": "Ashoka tree",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "held_from": "job:2026-11-26-02",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.65,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/tree"
+        ]
+      }
+    },
+    "teak_tree": {
+      "name": "Teak tree",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "held_from": "job:2026-11-26-02",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "tree_academic": true,
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.6,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/tree"
+        ]
+      }
+    },
+    "silk_cotton_tree": {
+      "name": "Silk cotton tree",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "held_from": "job:2026-11-26-02",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.55,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/tree"
+        ]
+      }
+    },
+    "marigold_plant": {
+      "name": "Marigold plant",
+      "status": "held by the rules",
+      "status_why": [
+        "its facts passed, but only 2 of the 4 things the group needs did, so it was not drawn. A later run carries on from here"
+      ],
+      "held_from": "job:2026-11-26-02",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "flower",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.85,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/flower"
+        ]
+      }
+    },
+    "jasmine_plant": {
+      "name": "Jasmine plant",
+      "status": "held by the rules",
+      "status_why": [
+        "its facts passed, but only 2 of the 4 things the group needs did, so it was not drawn. A later run carries on from here"
+      ],
+      "held_from": "job:2026-11-26-02",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "flower",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.8,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/flower"
+        ]
+      }
+    },
+    "hibiscus_plant": {
+      "name": "Hibiscus plant",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "held_from": "job:2026-11-26-02",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "flower",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.75,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/flower"
+        ]
+      }
+    },
+    "bougainvillea_plant": {
+      "name": "Bougainvillea plant",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "held_from": "job:2026-11-26-02",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "flower",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.6,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/flower"
+        ]
+      }
+    },
+    "dahlia_plant": {
+      "name": "Dahlia plant",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "held_from": "job:2026-11-26-02",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "flower",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.6,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/flower"
+        ]
+      }
+    },
+    "lemon_grass": {
+      "name": "Lemon grass",
+      "status": "held by the rules",
+      "status_why": [
+        "its facts passed, but only 1 of the 4 things the group needs did, so it was not drawn. A later run carries on from here"
+      ],
+      "held_from": "job:2026-11-26-02",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "grass_grain",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.6,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/grass_grain"
+        ]
+      }
+    },
+    "reed": {
+      "name": "Reed",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "held_from": "job:2026-11-26-02",
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "grass_grain",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.5,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/grass_grain"
+        ]
+      }
+    },
+    "khus_grass": {
+      "name": "Khus grass",
+      "status": "held by the rules",
+      "status_why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "held_from": "job:2026-11-26-02",
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "grass_grain",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.4,
+      "worked_out": {
+        "would_join": [
+          "seed",
+          "plant",
+          "plant/grass_grain"
+        ]
+      }
     }
   },
   "worked_out": {
     "things_by_status": {
       "in the game": 276,
-      "held by the rules": 86,
+      "held by the rules": 100,
       "kept for later": 5,
       "excluded": 3,
       "taken out of the game": 26
@@ -33326,6 +33634,32 @@
         "label": "Trees",
         "things": 4,
         "steps_from_seed": 2,
+        "could_be_filled_by": [
+          {
+            "name": "Banyan tree",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Peepal tree",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Gulmohar tree",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Ashoka tree",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Teak tree",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Silk cotton tree",
+            "status": "held by the rules"
+          }
+        ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
@@ -33336,6 +33670,28 @@
         "label": "Flowers",
         "things": 4,
         "steps_from_seed": 2,
+        "could_be_filled_by": [
+          {
+            "name": "Marigold plant",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Jasmine plant",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Hibiscus plant",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Bougainvillea plant",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Dahlia plant",
+            "status": "held by the rules"
+          }
+        ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
@@ -33346,6 +33702,20 @@
         "label": "Grasses and grains",
         "things": 5,
         "steps_from_seed": 2,
+        "could_be_filled_by": [
+          {
+            "name": "Lemon grass",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Reed",
+            "status": "held by the rules"
+          },
+          {
+            "name": "Khus grass",
+            "status": "held by the rules"
+          }
+        ],
         "open_by_its_things": false,
         "can_open_now": false,
         "needs": [
@@ -34256,8 +34626,8 @@
     "from": "things.json, the review queue, the owner's lists, the tile records, the pronunciation list and the research results"
   },
   "last_change": {
-    "by": "record_names.py",
-    "on": "2026-11-24"
+    "by": "job run 2026-11-26-02",
+    "on": "2026-11-26"
   },
   "groups": {
     "kind_of_thing=plant": {
@@ -37455,6 +37825,20 @@
       "written_on": "2026-11-24",
       "checks": "no thing of the group is named in a clue; the quoted sentence is in the saved page; a second reading agreed",
       "clues_from": "the dictionary"
+    }
+  },
+  "places": {
+    "plant/leaves": {
+      "decisions": [
+        {
+          "date": "2026-11-26",
+          "what": "job run 2026-11-26-02 could not fill it",
+          "why": "too few well-known things of their own for: Plants > The leaves > Trees; Plants > The leaves > Flowers; Plants > The leaves > Grasses and grains",
+          "things_then": 5,
+          "run": "2026-11-26-02",
+          "status": "held by the rules"
+        }
+      ]
     }
   }
 }

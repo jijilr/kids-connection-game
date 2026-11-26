@@ -1,0 +1,60 @@
+{
+  "name": "Teak tree",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Teak (Tectona grandis) is a tropical hardwood tree species in the family Lamiaceae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "It is a large, deciduous tree that occurs in mixed hardwood forests.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "tree",
+      "quote": "Teak (Tectona grandis) is a tropical hardwood tree species in the family Lamiaceae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "tree_academic": {
+      "value": true,
+      "quote": "Teak (Tectona grandis) is a tropical hardwood tree species in the family Lamiaceae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "part_we_eat",
+      "why": "uncertain: two judgements disagree: 'The leaves' and 'The seeds'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Teak",
+      "title": "Teak",
+      "asked_for": "Teak tree",
+      "revision": 1385641910,
+      "fetched_on": "2026-11-26",
+      "sha256": "2eb1edcc0accaccc5fa107086df65351c9de6b67ef6cf92c841904ea544cc033"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Teak",
+      "title": "Teak",
+      "asked_for": "Teak",
+      "revision": 10490667,
+      "fetched_on": "2026-11-26",
+      "sha256": "250ee845f73f086883fe4dcfb166dce9a7648433ba905561b73c8e2927422d88"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-26",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

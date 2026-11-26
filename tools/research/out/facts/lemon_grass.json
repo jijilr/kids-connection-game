@@ -1,0 +1,54 @@
+{
+  "name": "Lemon grass",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Cymbopogon, also known as lemongrass, barbed wire grass, silky heads, oily heads, Cochin grass, Malabar grass, citronella grass or fever grass, is a genus of Asian, African, Australian, and tropical island plants in the grass family.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Some species (particularly Cymbopogon citratus) are commonly cultivated as culinary and medicinal herbs because of their scent, resembling that of lemons (Citrus limon).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "grass_grain",
+      "quote": "Cymbopogon, also known as lemongrass, barbed wire grass, silky heads, oily heads, Cochin grass, Malabar grass, citronella grass or fever grass, is a genus of Asian, African, Australian, and tropical island plants in the grass family.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "part_we_eat": {
+      "value": "leaves",
+      "basis": "judged, not sourced",
+      "why": "Lemongrass is a grass grown as a culinary herb, and the part used in cooking is its leaves."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Cymbopogon",
+      "title": "Cymbopogon",
+      "asked_for": "Lemon grass",
+      "revision": 1374628561,
+      "fetched_on": "2026-11-26",
+      "sha256": "43ec01300d812239d06734d1ea983228897e6bf0e45f76d98af2b17f29784c4b"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Cymbopogon",
+      "title": "Cymbopogon",
+      "asked_for": "Lemon grass",
+      "revision": 9640372,
+      "fetched_on": "2026-11-26",
+      "sha256": "eacd5cbfec54de409e87067aae9e44cced655f6c8796b1cf8afde4e9a4321cc8"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-26",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

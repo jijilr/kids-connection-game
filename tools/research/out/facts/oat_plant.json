@@ -1,0 +1,55 @@
+{
+  "name": "Oat plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "The oat (Avena sativa), sometimes called the common oat, is a species of cereal grass (Avena) grown for fodder and for its seed, which is known by the same name (usually in the plural).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Oats grow thickly and vigorously, allowing them to outcompete many weeds, and compared to other cereals are relatively free from diseases.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "grass_grain",
+      "quote": "The oat (Avena sativa) is a cereal grain.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "part_we_eat": {
+      "value": "seeds_or_pods",
+      "quote": "The oat (Avena sativa), sometimes called the common oat, is a species of cereal grass (Avena) grown for fodder and for its seed, which is known by the same name (usually in the plural).",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Oat",
+      "title": "Oat",
+      "asked_for": "Oat",
+      "revision": 1387456394,
+      "fetched_on": "2026-11-26",
+      "sha256": "15134cbcd620ca7ee1e2132ca4069722016b38b34119fdabb7d5568c92777a03"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Oat",
+      "title": "Oat",
+      "asked_for": "Oat",
+      "revision": 10935524,
+      "fetched_on": "2026-11-26",
+      "sha256": "26b49e205a6a75d9ab558f8e3577c95cc6b3ccdd67176f533056290bcbff3869"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-26",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

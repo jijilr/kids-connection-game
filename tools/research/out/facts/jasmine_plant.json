@@ -1,0 +1,54 @@
+{
+  "name": "Jasmine plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Jasmine is a genus of plants, Jasminum.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Jasmines are widely cultivated for the characteristic fragrance of their flowers.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "flower",
+      "quote": "Jasmine flowers are white or yellow in colour, although in rare instances they can be slightly reddish.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "part_we_eat": {
+      "value": "leaves",
+      "basis": "judged, not sourced",
+      "why": "The sources mention tea made from jasmine flowers and jasmine used for oil and perfume, but nothing about eating fruit, seeds, or roots, so among the choices only leaves fits a plant used for tea."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Jasmine",
+      "title": "Jasmine",
+      "asked_for": "Jasmine",
+      "revision": 1384972343,
+      "fetched_on": "2026-11-26",
+      "sha256": "9b648b37f9eba7fe2b2bad8885a26b752732f26ca2aefbcd03fd6fd3d558b550"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Jasmine",
+      "title": "Jasmine",
+      "asked_for": "Jasmine",
+      "revision": 10096000,
+      "fetched_on": "2026-11-26",
+      "sha256": "42ddeb6e9675ff63254732892351c9e2fdd529b03f658504d51bccd4015a0682"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-26",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

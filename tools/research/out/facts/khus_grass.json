@@ -1,0 +1,31 @@
+{
+  "name": "Khus grass",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "basis": "judged, not sourced",
+      "why": "The sources describe Khus grass as a grass, which is a kind of plant."
+    },
+    "kind_of_plant": {
+      "value": "grass_grain",
+      "basis": "judged, not sourced",
+      "why": "The sources name it \"Khus grass,\" so it is a grass."
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "part_we_eat",
+      "why": "uncertain: two judgements disagree: 'What grows under the ground' and 'The leaves'"
+    },
+    {
+      "field": "extinct",
+      "why": "the model gave no answer for it"
+    }
+  ],
+  "pages": [],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-26",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

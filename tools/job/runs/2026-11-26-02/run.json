@@ -1,0 +1,1342 @@
+{
+  "id": "2026-11-26-02",
+  "started": "2026-11-26",
+  "rehearse": null,
+  "cap_inr": 90.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "plant/leaves",
+        "chain": "Plants > The leaves > Trees",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "part_we_eat": "leaves",
+          "kind_of_plant": "tree"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [],
+        "offers_1": [
+          {
+            "name": "Banyan tree",
+            "familiar": 0.85,
+            "why": "huge tree seen in villages and parks",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Peepal tree",
+            "familiar": 0.85,
+            "why": "common roadside and temple tree",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Papaya tree",
+            "familiar": 0.8,
+            "why": "tall leafy tree in many gardens",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Jamun tree",
+            "familiar": 0.75,
+            "why": "purple fruit tree children know",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Gulmohar tree",
+            "familiar": 0.7,
+            "why": "bright orange flowers in summer",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Ashoka tree",
+            "familiar": 0.65,
+            "why": "common garden and street tree",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Teak tree",
+            "familiar": 0.6,
+            "why": "big leaves, common forest tree",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Silk cotton tree",
+            "familiar": 0.55,
+            "why": "red flowers and cotton pods",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "offers_2": [],
+        "facts_done": true
+      },
+      {
+        "circle": "plant/leaves",
+        "chain": "Plants > The leaves > Flowers",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "part_we_eat": "leaves",
+          "kind_of_plant": "flower"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [],
+        "offers_1": [
+          {
+            "name": "Rose plant",
+            "familiar": 0.95,
+            "why": "common garden flower",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Sunflower plant",
+            "familiar": 0.9,
+            "why": "big bright flower, common",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Marigold plant",
+            "familiar": 0.85,
+            "why": "seen at festivals and gardens",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Lotus plant",
+            "familiar": 0.85,
+            "why": "ponds and national flower",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Jasmine plant",
+            "familiar": 0.8,
+            "why": "fragrant flowers in gardens",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Hibiscus plant",
+            "familiar": 0.75,
+            "why": "common garden shrub",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Bougainvillea plant",
+            "familiar": 0.6,
+            "why": "bright climber on walls",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Dahlia plant",
+            "familiar": 0.6,
+            "why": "common winter garden flower",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "offers_2": [],
+        "facts_done": true
+      },
+      {
+        "circle": "plant/leaves",
+        "chain": "Plants > The leaves > Grasses and grains",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "part_we_eat": "leaves",
+          "kind_of_plant": "grass_grain"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [],
+        "offers_1": [
+          {
+            "name": "Wheat plant",
+            "familiar": 0.85,
+            "why": "common crop, wheat flour at home",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Sugarcane plant",
+            "familiar": 0.85,
+            "why": "tall canes sold on streets",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Bamboo plant",
+            "familiar": 0.8,
+            "why": "tall green stems in gardens",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Lemon grass",
+            "familiar": 0.6,
+            "why": "thin grassy clumps in gardens",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Oat plant",
+            "familiar": 0.55,
+            "why": "grassy cereal, oats at breakfast",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Barley plant",
+            "familiar": 0.5,
+            "why": "grain stalks with whiskery ears",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "offers_2": [
+          {
+            "name": "Millet plant",
+            "familiar": 0.6,
+            "why": "bajra and ragi crops",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Sorghum plant",
+            "familiar": 0.55,
+            "why": "jowar stalks in fields",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Reed",
+            "familiar": 0.5,
+            "why": "tall grass by ponds",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Khus grass",
+            "familiar": 0.4,
+            "why": "fragrant roots sold in summer",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "facts_done": true
+      }
+    ],
+    "circles": [
+      {
+        "circle": "plant/leaves",
+        "label": "The leaves",
+        "chain": "Plants > The leaves",
+        "needs_field": false,
+        "on_the_map_only": true,
+        "question": "kind_of_plant",
+        "path": [
+          [
+            "kind_of_thing",
+            "plant"
+          ],
+          [
+            "part_we_eat",
+            "leaves"
+          ]
+        ],
+        "asks_from_the_map": [
+          {
+            "circle": "plant/leaves",
+            "chain": "Plants > The leaves > Trees",
+            "fixed": {
+              "kind_of_thing": "plant",
+              "part_we_eat": "leaves",
+              "kind_of_plant": "tree"
+            },
+            "need": 4,
+            "recorded_but_not_in_the_game": [],
+            "retried": [],
+            "examples": [],
+            "offers_1": [
+              {
+                "name": "Banyan tree",
+                "familiar": 0.85,
+                "why": "huge tree seen in villages and parks",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Peepal tree",
+                "familiar": 0.85,
+                "why": "common roadside and temple tree",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Papaya tree",
+                "familiar": 0.8,
+                "why": "tall leafy tree in many gardens",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Jamun tree",
+                "familiar": 0.75,
+                "why": "purple fruit tree children know",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Gulmohar tree",
+                "familiar": 0.7,
+                "why": "bright orange flowers in summer",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Ashoka tree",
+                "familiar": 0.65,
+                "why": "common garden and street tree",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Teak tree",
+                "familiar": 0.6,
+                "why": "big leaves, common forest tree",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Silk cotton tree",
+                "familiar": 0.55,
+                "why": "red flowers and cotton pods",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              }
+            ],
+            "offers_2": [],
+            "facts_done": true
+          },
+          {
+            "circle": "plant/leaves",
+            "chain": "Plants > The leaves > Flowers",
+            "fixed": {
+              "kind_of_thing": "plant",
+              "part_we_eat": "leaves",
+              "kind_of_plant": "flower"
+            },
+            "need": 4,
+            "recorded_but_not_in_the_game": [],
+            "retried": [],
+            "examples": [],
+            "offers_1": [
+              {
+                "name": "Rose plant",
+                "familiar": 0.95,
+                "why": "common garden flower",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Sunflower plant",
+                "familiar": 0.9,
+                "why": "big bright flower, common",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Marigold plant",
+                "familiar": 0.85,
+                "why": "seen at festivals and gardens",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Lotus plant",
+                "familiar": 0.85,
+                "why": "ponds and national flower",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Jasmine plant",
+                "familiar": 0.8,
+                "why": "fragrant flowers in gardens",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Hibiscus plant",
+                "familiar": 0.75,
+                "why": "common garden shrub",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Bougainvillea plant",
+                "familiar": 0.6,
+                "why": "bright climber on walls",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Dahlia plant",
+                "familiar": 0.6,
+                "why": "common winter garden flower",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              }
+            ],
+            "offers_2": [],
+            "facts_done": true
+          },
+          {
+            "circle": "plant/leaves",
+            "chain": "Plants > The leaves > Grasses and grains",
+            "fixed": {
+              "kind_of_thing": "plant",
+              "part_we_eat": "leaves",
+              "kind_of_plant": "grass_grain"
+            },
+            "need": 4,
+            "recorded_but_not_in_the_game": [],
+            "retried": [],
+            "examples": [],
+            "offers_1": [
+              {
+                "name": "Wheat plant",
+                "familiar": 0.85,
+                "why": "common crop, wheat flour at home",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Sugarcane plant",
+                "familiar": 0.85,
+                "why": "tall canes sold on streets",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Bamboo plant",
+                "familiar": 0.8,
+                "why": "tall green stems in gardens",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Lemon grass",
+                "familiar": 0.6,
+                "why": "thin grassy clumps in gardens",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Oat plant",
+                "familiar": 0.55,
+                "why": "grassy cereal, oats at breakfast",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Barley plant",
+                "familiar": 0.5,
+                "why": "grain stalks with whiskery ears",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              }
+            ],
+            "offers_2": [
+              {
+                "name": "Millet plant",
+                "familiar": 0.6,
+                "why": "bajra and ragi crops",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Sorghum plant",
+                "familiar": 0.55,
+                "why": "jowar stalks in fields",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Reed",
+                "familiar": 0.5,
+                "why": "tall grass by ponds",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Khus grass",
+                "familiar": 0.4,
+                "why": "fragrant roots sold in summer",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              }
+            ],
+            "facts_done": true
+          }
+        ],
+        "expect_things": 15,
+        "asks": [
+          0,
+          1,
+          2
+        ],
+        "done": true
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": [],
+    "held_back": [],
+    "played": null,
+    "mastered": [],
+    "place": "plant/leaves"
+  },
+  "retry_held": true,
+  "things": [
+    {
+      "name": "Banyan tree",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "thing": {
+        "name": "Banyan tree",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree",
+          "part_we_eat": "fruit"
+        },
+        "familiar": 0.85,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.85,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "extinct",
+        "part_we_eat"
+      ],
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Peepal tree",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "thing": {
+        "name": "Peepal tree",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree"
+        },
+        "familiar": 0.85,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.85,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_plant"
+      ],
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Papaya tree",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'The fruit', not 'The leaves'"
+      ],
+      "thing": {
+        "name": "Papaya tree",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree",
+          "tree_academic": false,
+          "part_we_eat": "fruit"
+        },
+        "familiar": 0.8,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "tree_academic": false,
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.8,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_plant"
+      ],
+      "ask": 0
+    },
+    {
+      "name": "Jamun tree",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'The fruit', not 'The leaves'"
+      ],
+      "thing": {
+        "name": "Jamun tree",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree",
+          "tree_academic": true,
+          "part_we_eat": "fruit"
+        },
+        "familiar": 0.75,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "tree_academic": true,
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.75,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0
+    },
+    {
+      "name": "Gulmohar tree",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "thing": {
+        "name": "Gulmohar tree",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree"
+        },
+        "familiar": 0.7,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Ashoka tree",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "thing": {
+        "name": "Ashoka tree",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree"
+        },
+        "familiar": 0.65,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.65,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "extinct",
+        "kind_of_plant"
+      ],
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Teak tree",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "thing": {
+        "name": "Teak tree",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree",
+          "tree_academic": true
+        },
+        "familiar": 0.6,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "tree_academic": true,
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.6,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Silk cotton tree",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "thing": {
+        "name": "Silk cotton tree",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree"
+        },
+        "familiar": 0.55,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.55,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "extinct",
+        "kind_of_plant"
+      ],
+      "ask": 0,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Rose plant",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.95,
+      "fields": {
+        "kind_of_thing": "plant",
+        "part_we_eat": "leaves",
+        "kind_of_plant": "flower"
+      },
+      "why": [
+        "it is Rose under another name: both are filed under 'Rose'"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Sunflower plant",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.9,
+      "fields": {
+        "kind_of_thing": "plant",
+        "part_we_eat": "leaves",
+        "kind_of_plant": "flower"
+      },
+      "why": [
+        "it is Sunflower under another name: both are filed under 'Common sunflower'"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Marigold plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Marigold plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "flower",
+          "part_we_eat": "leaves"
+        },
+        "familiar": 0.85,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "flower",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.85,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "part_we_eat"
+      ],
+      "ask": 1,
+      "not_drawn": true,
+      "no_tile": "its facts passed, but only 2 of the 4 things the group needs did, so it was not drawn. A later run carries on from here",
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Lotus plant",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.85,
+      "fields": {
+        "kind_of_thing": "plant",
+        "part_we_eat": "leaves",
+        "kind_of_plant": "flower"
+      },
+      "why": [
+        "it is Lotus under another name: both are filed under 'List of plants known as lotus'"
+      ],
+      "ask": 1
+    },
+    {
+      "name": "Jasmine plant",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Jasmine plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "flower",
+          "part_we_eat": "leaves"
+        },
+        "familiar": 0.8,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "flower",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "part_we_eat"
+      ],
+      "ask": 1,
+      "not_drawn": true,
+      "no_tile": "its facts passed, but only 2 of the 4 things the group needs did, so it was not drawn. A later run carries on from here",
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Hibiscus plant",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "thing": {
+        "name": "Hibiscus plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "flower"
+        },
+        "familiar": 0.75,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "flower",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.75,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Bougainvillea plant",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "thing": {
+        "name": "Bougainvillea plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "flower"
+        },
+        "familiar": 0.6,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "flower",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.6,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Dahlia plant",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "thing": {
+        "name": "Dahlia plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "flower",
+          "part_we_eat": "under_the_ground"
+        },
+        "familiar": 0.6,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "flower",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.6,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "part_we_eat"
+      ],
+      "ask": 1,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Wheat plant",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.85,
+      "fields": {
+        "kind_of_thing": "plant",
+        "part_we_eat": "leaves",
+        "kind_of_plant": "grass_grain"
+      },
+      "why": [
+        "it is Wheat under another name: both are filed under 'Wheat'"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Sugarcane plant",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.85,
+      "fields": {
+        "kind_of_thing": "plant",
+        "part_we_eat": "leaves",
+        "kind_of_plant": "grass_grain"
+      },
+      "why": [
+        "it is Sugarcane under another name: both are filed under 'Sugarcane'"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Bamboo plant",
+      "passed": false,
+      "not_needed": true,
+      "familiar": 0.8,
+      "fields": {
+        "kind_of_thing": "plant",
+        "part_we_eat": "leaves",
+        "kind_of_plant": "grass_grain"
+      },
+      "why": [
+        "it is Bamboo under another name: both are filed under 'Bamboo'"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Lemon grass",
+      "passed": true,
+      "why": [],
+      "thing": {
+        "name": "Lemon grass",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "grass_grain",
+          "part_we_eat": "leaves"
+        },
+        "familiar": 0.6,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "grass_grain",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.6,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "part_we_eat"
+      ],
+      "ask": 2,
+      "not_drawn": true,
+      "no_tile": "its facts passed, but only 1 of the 4 things the group needs did, so it was not drawn. A later run carries on from here",
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Oat plant",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'The seeds', not 'The leaves'"
+      ],
+      "thing": {
+        "name": "Oat plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "grass_grain",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "familiar": 0.55,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "grass_grain",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.55,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 2
+    },
+    {
+      "name": "Barley plant",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'The seeds', not 'The leaves'"
+      ],
+      "thing": {
+        "name": "Barley plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "grass_grain",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "familiar": 0.5,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "grass_grain",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.5,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Millet plant",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'The seeds', not 'The leaves'"
+      ],
+      "thing": {
+        "name": "Millet plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "grass_grain",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "familiar": 0.6,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "grass_grain",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.6,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "part_we_eat"
+      ],
+      "ask": 2
+    },
+    {
+      "name": "Sorghum plant",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'The seeds', not 'The leaves'"
+      ],
+      "thing": {
+        "name": "Sorghum plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "grass_grain",
+          "part_we_eat": "seeds_or_pods"
+        },
+        "familiar": 0.55,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "grass_grain",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.55,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 2
+    },
+    {
+      "name": "Reed",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "thing": {
+        "name": "Reed",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "grass_grain"
+        },
+        "familiar": 0.5,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "grass_grain",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.5,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 2,
+      "held_as": "held by the rules"
+    },
+    {
+      "name": "Khus grass",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'The leaves': it fits no group"
+      ],
+      "thing": {
+        "name": "Khus grass",
+        "fields": {
+          "kind_of_thing": "plant",
+          "kind_of_plant": "grass_grain"
+        },
+        "familiar": 0.4,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-02"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "grass_grain",
+        "part_we_eat": "leaves"
+      },
+      "familiar": 0.4,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_plant",
+        "kind_of_thing"
+      ],
+      "ask": 2,
+      "held_as": "held by the rules"
+    }
+  ],
+  "sheets": [],
+  "stopped": "",
+  "fields_added": [],
+  "fields_held": [],
+  "open_before": [
+    "animal",
+    "animal/bird",
+    "animal/dinosaur",
+    "animal/mammal",
+    "animal/mammal/wild_land",
+    "made_by_people",
+    "made_by_people/building",
+    "made_by_people/household",
+    "made_by_people/toy",
+    "made_by_people/toy/music",
+    "made_by_people/vehicle",
+    "nature_not_alive",
+    "plant",
+    "plant/vegetable",
+    "seed"
+  ],
+  "spent_usd": {
+    "deepseek": 0.03259,
+    "drawing": 0.0,
+    "picture_checks": 0.0
+  },
+  "opened": []
+}

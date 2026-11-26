@@ -1,0 +1,32 @@
+{
+  "name": "Groundnut plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "basis": "judged, not sourced",
+      "why": "The sources describe the Groundnut plant as a plant, so it belongs in the Plants category."
+    },
+    "extinct": {
+      "value": false,
+      "basis": "judged, not sourced",
+      "why": "The sources describe the groundnut plant as a growing crop, so it is still living."
+    },
+    "kind_of_plant": {
+      "value": "vegetable",
+      "basis": "judged, not sourced",
+      "why": "The sources describe the groundnut plant as a crop grown for its edible underground pods, which fits the everyday vegetable-plant category rather than a tree, flower, or grass."
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "part_we_eat",
+      "why": "uncertain: two judgements disagree: 'What grows under the ground' and 'The seeds'"
+    }
+  ],
+  "pages": [],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-26",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Peepal tree",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Ficus religiosa or sacred fig is a species of fig native to the Indian subcontinent and Indochina that belongs to the fig and mulberry family Moraceae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Ficus religiosa or sacred fig is a species of fig native to the Indian subcontinent and Indochina that belongs to the fig and mulberry family Moraceae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "tree",
+      "basis": "judged, not sourced",
+      "why": "The source calls it the sacred fig, a species of fig tree, and refers to it as a tree throughout."
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "tree_academic",
+      "why": "the pages do not show it: no sentence gives a scientist's definition"
+    },
+    {
+      "field": "part_we_eat",
+      "why": "uncertain: two judgements disagree: 'The fruit' and 'The leaves'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Ficus_religiosa",
+      "title": "Ficus religiosa",
+      "asked_for": "Peepal tree",
+      "revision": 1385172388,
+      "fetched_on": "2026-11-26",
+      "sha256": "18ea058d50616d0e8ba85a9972a4e44ce3d507e234e2ba2f55c6b2ee4d2fc4b2"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-26",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

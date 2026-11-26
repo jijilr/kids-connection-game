@@ -1,0 +1,54 @@
+{
+  "name": "Marigold plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Calendula officinalis, Mary's gold, common marigold, the pot marigold, Scotch marigold, or ruddles, is a flowering plant in the daisy family, Asteraceae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "It is probably native to southern Europe, but its long history of cultivation makes its precise origin unknown, and it is widely naturalised.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "flower",
+      "quote": "Calendula officinalis, Mary's gold, common marigold, the pot marigold, Scotch marigold, or ruddles, is a flowering plant in the daisy family, Asteraceae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "part_we_eat": {
+      "value": "leaves",
+      "basis": "judged, not sourced",
+      "why": "The sources say the florets are edible, but among the given choices the closest everyday edible part is the leaves."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Calendula_officinalis",
+      "title": "Calendula officinalis",
+      "asked_for": "Calendula officinalis",
+      "revision": 1370530450,
+      "fetched_on": "2026-11-26",
+      "sha256": "30529a94865737b550fb97b78c044dba7a723b795dee94f7b726ce945e6e6c0a"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Calendula_officinalis",
+      "title": "Calendula officinalis",
+      "asked_for": "Calendula officinalis",
+      "revision": 9563666,
+      "fetched_on": "2026-11-26",
+      "sha256": "b4246aaa5c3f2517a913264f3cded23a37b5f68a93f35051d1633bd9d1c51e3b"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-26",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

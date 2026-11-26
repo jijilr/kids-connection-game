@@ -1,14 +1,14 @@
 {
  "stamp": "27dbf636b31f",
  "about": "The map: one record for each place of the game. Built by tools/catalogue/places.py from the things, the dictionary, the settings and the decisions on record, whenever any of them changes. Nobody edits it. A place is where circles overlap; its name is the answers that define it, in the dictionary's order.",
- "built_on": "2026-11-24",
+ "built_on": "2026-11-26",
  "dictionary_version": 13,
  "things": 276,
  "start": "seed",
  "places_by_state": {
   "ready": 16,
-  "held": 52,
-  "can be made": 14,
+  "held": 53,
+  "can be made": 13,
   "a group only": 5
  },
  "places": {
@@ -2027,10 +2027,19 @@
      "more_things_needed": 12
     }
    ],
-   "state": "can be made",
-   "why": "12 more thing(s) would let it be sorted by \"What kind of plant is it?\"",
+   "state": "held",
+   "why": "the rules: too few well-known things of their own for: Plants > The leaves > Trees; Plants > The leaves > Flowers; Plants > The leaves > Grasses and grains",
    "known_to_the_job": false,
-   "history": [],
+   "history": [
+    {
+     "date": "2026-11-26",
+     "what": "job run 2026-11-26-02 could not fill it",
+     "why": "too few well-known things of their own for: Plants > The leaves > Trees; Plants > The leaves > Flowers; Plants > The leaves > Grasses and grains",
+     "things_then": 5,
+     "run": "2026-11-26-02",
+     "status": "held by the rules"
+    }
+   ],
    "picture": "coriander_plant"
   },
   "plant/seeds_or_pods": {

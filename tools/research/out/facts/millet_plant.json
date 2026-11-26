@@ -1,0 +1,54 @@
+{
+  "name": "Millet plant",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Millets () are a highly varied group of small-seeded grasses, widely grown around the world as a staple cereal crop.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Millets () are a highly varied group of small-seeded grasses, widely grown around the world as a staple cereal crop.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "grass_grain",
+      "quote": "Millets () are a highly varied group of small-seeded grasses, widely grown around the world as a staple cereal crop.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "part_we_eat": {
+      "value": "seeds_or_pods",
+      "basis": "judged, not sourced",
+      "why": "Millet is described as a small-seeded grain crop, and we eat the seeds."
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Millet",
+      "title": "Millet",
+      "asked_for": "Millet",
+      "revision": 1386372163,
+      "fetched_on": "2026-11-26",
+      "sha256": "5981042f84ef8fecb03b2d4da4db767f945f5b39aebad2d73b8eceb7a1bcdd4f"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Millet",
+      "title": "Millet",
+      "asked_for": "Millet",
+      "revision": 11083297,
+      "fetched_on": "2026-11-26",
+      "sha256": "4408983bc9747f3625609449d0670d61db68b78a88ac450d87c1dbd6b7f3ebcd"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-26",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

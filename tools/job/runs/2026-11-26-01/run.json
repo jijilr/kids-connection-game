@@ -1,0 +1,529 @@
+{
+  "id": "2026-11-26-01",
+  "started": "2026-11-26",
+  "rehearse": null,
+  "cap_inr": 90.0,
+  "plan": {
+    "asks": [
+      {
+        "circle": "plant/under_the_ground",
+        "chain": "Plants > What grows under the ground > Trees",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "part_we_eat": "under_the_ground",
+          "kind_of_plant": "tree"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [],
+        "offers_1": [
+          {
+            "name": "Banyan tree",
+            "familiar": 0.8,
+            "why": "big spreading tree",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Peepal tree",
+            "familiar": 0.75,
+            "why": "common roadside tree",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Gulmohar tree",
+            "familiar": 0.6,
+            "why": "bright orange flowers",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Jamun tree",
+            "familiar": 0.6,
+            "why": "purple fruit tree",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Ashoka tree",
+            "familiar": 0.55,
+            "why": "green roadside tree",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          }
+        ],
+        "offers_2": [],
+        "facts_done": true
+      },
+      {
+        "circle": "plant/under_the_ground",
+        "chain": "Plants > What grows under the ground > Flowers",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "part_we_eat": "under_the_ground",
+          "kind_of_plant": "flower"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": [],
+        "retried": [],
+        "examples": [],
+        "offers_1": [
+          {
+            "name": "Groundnut plant",
+            "familiar": 0.7,
+            "why": "pods grow underground, seen often",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Yam plant",
+            "familiar": 0.7,
+            "why": "big tuber, sold in markets",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Turnip plant",
+            "familiar": 0.65,
+            "why": "round white root vegetable",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Turmeric plant",
+            "familiar": 0.6,
+            "why": "root spice in every kitchen",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Lotus root plant",
+            "familiar": 0.5,
+            "why": "root in ponds, seen in sabzi",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          },
+          {
+            "name": "Colocasia plant",
+            "familiar": 0.4,
+            "why": "arbi, big leaves, eaten often",
+            "recognised": true,
+            "suitable": true,
+            "own_thing": true
+          }
+        ]
+      },
+      {
+        "circle": "plant/under_the_ground",
+        "chain": "Plants > What grows under the ground > Grasses and grains",
+        "fixed": {
+          "kind_of_thing": "plant",
+          "part_we_eat": "under_the_ground",
+          "kind_of_plant": "grass_grain"
+        },
+        "need": 4,
+        "recorded_but_not_in_the_game": []
+      }
+    ],
+    "circles": [
+      {
+        "circle": "plant/under_the_ground",
+        "label": "What grows under the ground",
+        "chain": "Plants > What grows under the ground",
+        "needs_field": false,
+        "on_the_map_only": true,
+        "question": "kind_of_plant",
+        "path": [
+          [
+            "kind_of_thing",
+            "plant"
+          ],
+          [
+            "part_we_eat",
+            "under_the_ground"
+          ]
+        ],
+        "asks_from_the_map": [
+          {
+            "circle": "plant/under_the_ground",
+            "chain": "Plants > What grows under the ground > Trees",
+            "fixed": {
+              "kind_of_thing": "plant",
+              "part_we_eat": "under_the_ground",
+              "kind_of_plant": "tree"
+            },
+            "need": 4,
+            "recorded_but_not_in_the_game": [],
+            "retried": [],
+            "examples": [],
+            "offers_1": [
+              {
+                "name": "Banyan tree",
+                "familiar": 0.8,
+                "why": "big spreading tree",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Peepal tree",
+                "familiar": 0.75,
+                "why": "common roadside tree",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Gulmohar tree",
+                "familiar": 0.6,
+                "why": "bright orange flowers",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Jamun tree",
+                "familiar": 0.6,
+                "why": "purple fruit tree",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Ashoka tree",
+                "familiar": 0.55,
+                "why": "green roadside tree",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              }
+            ],
+            "offers_2": [],
+            "facts_done": true
+          },
+          {
+            "circle": "plant/under_the_ground",
+            "chain": "Plants > What grows under the ground > Flowers",
+            "fixed": {
+              "kind_of_thing": "plant",
+              "part_we_eat": "under_the_ground",
+              "kind_of_plant": "flower"
+            },
+            "need": 4,
+            "recorded_but_not_in_the_game": [],
+            "retried": [],
+            "examples": [],
+            "offers_1": [
+              {
+                "name": "Groundnut plant",
+                "familiar": 0.7,
+                "why": "pods grow underground, seen often",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Yam plant",
+                "familiar": 0.7,
+                "why": "big tuber, sold in markets",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Turnip plant",
+                "familiar": 0.65,
+                "why": "round white root vegetable",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Turmeric plant",
+                "familiar": 0.6,
+                "why": "root spice in every kitchen",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Lotus root plant",
+                "familiar": 0.5,
+                "why": "root in ponds, seen in sabzi",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              },
+              {
+                "name": "Colocasia plant",
+                "familiar": 0.4,
+                "why": "arbi, big leaves, eaten often",
+                "recognised": true,
+                "suitable": true,
+                "own_thing": true
+              }
+            ]
+          },
+          {
+            "circle": "plant/under_the_ground",
+            "chain": "Plants > What grows under the ground > Grasses and grains",
+            "fixed": {
+              "kind_of_thing": "plant",
+              "part_we_eat": "under_the_ground",
+              "kind_of_plant": "grass_grain"
+            },
+            "need": 4,
+            "recorded_but_not_in_the_game": []
+          }
+        ],
+        "expect_things": 15,
+        "asks": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "blocked": [],
+    "nothing_to_do": [],
+    "held_back": [],
+    "played": null,
+    "mastered": [],
+    "place": "plant/under_the_ground"
+  },
+  "retry_held": true,
+  "things": [
+    {
+      "name": "Banyan tree",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'What grows under the ground': it fits no group"
+      ],
+      "thing": {
+        "name": "Banyan tree",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree"
+        },
+        "familiar": 0.8,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-01"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.8,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "extinct"
+      ],
+      "ask": 0
+    },
+    {
+      "name": "Peepal tree",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'What grows under the ground': it fits no group"
+      ],
+      "thing": {
+        "name": "Peepal tree",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree"
+        },
+        "familiar": 0.75,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-01"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.75,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "extinct",
+        "kind_of_plant"
+      ],
+      "ask": 0
+    },
+    {
+      "name": "Gulmohar tree",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'What grows under the ground': it fits no group"
+      ],
+      "thing": {
+        "name": "Gulmohar tree",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree"
+        },
+        "familiar": 0.6,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-01"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.6,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [],
+      "ask": 0
+    },
+    {
+      "name": "Jamun tree",
+      "passed": false,
+      "why": [
+        "two checks both put it in 'The fruit', not 'What grows under the ground'"
+      ],
+      "thing": {
+        "name": "Jamun tree",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "tree",
+          "tree_academic": true,
+          "part_we_eat": "fruit"
+        },
+        "familiar": 0.6,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-01"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "tree",
+        "tree_academic": true,
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.6,
+      "not_needed": true,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "part_we_eat"
+      ],
+      "ask": 0
+    },
+    {
+      "name": "Ashoka tree",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'What grows under the ground': it fits no group"
+      ],
+      "thing": {
+        "name": "Ashoka tree",
+        "fields": {
+          "kind_of_thing": "plant",
+          "kind_of_plant": "tree"
+        },
+        "familiar": 0.55,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-01"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "kind_of_plant": "tree",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.55,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "kind_of_plant"
+      ],
+      "ask": 0
+    },
+    {
+      "name": "Groundnut plant",
+      "passed": false,
+      "why": [
+        "uncertain: two checks could not settle whether it belongs in 'What grows under the ground': it fits more than one group: seeds_or_pods and under_the_ground"
+      ],
+      "thing": {
+        "name": "Groundnut plant",
+        "fields": {
+          "kind_of_thing": "plant",
+          "extinct": false,
+          "kind_of_plant": "vegetable"
+        },
+        "familiar": 0.7,
+        "reviewed": 13,
+        "source": "job:grounded+checked",
+        "drafted_in": "2026-11-26-01"
+      },
+      "fields": {
+        "kind_of_thing": "plant",
+        "extinct": false,
+        "kind_of_plant": "flower",
+        "part_we_eat": "under_the_ground"
+      },
+      "familiar": 0.7,
+      "not_needed": false,
+      "for_owner": false,
+      "judged_not_sourced": [
+        "extinct",
+        "kind_of_plant",
+        "kind_of_thing"
+      ],
+      "ask": 1
+    }
+  ],
+  "sheets": [],
+  "stopped": "",
+  "fields_added": [],
+  "fields_held": [],
+  "open_before": [
+    "animal",
+    "animal/bird",
+    "animal/dinosaur",
+    "animal/mammal",
+    "animal/mammal/wild_land",
+    "made_by_people",
+    "made_by_people/building",
+    "made_by_people/household",
+    "made_by_people/toy",
+    "made_by_people/toy/music",
+    "made_by_people/vehicle",
+    "nature_not_alive",
+    "plant",
+    "plant/vegetable",
+    "seed"
+  ],
+  "spent_usd": {
+    "deepseek": 0.01239,
+    "drawing": 0.0,
+    "picture_checks": 0.0
+  }
+}

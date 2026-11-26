@@ -1,0 +1,49 @@
+{
+  "name": "Gulmohar tree",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "Delonix regia is a species of flowering plant in the bean family Fabaceae, subfamily Caesalpinioideae native to Madagascar.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "In many tropical parts of the world it is grown as an ornamental tree.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "tree",
+      "quote": "In many tropical parts of the world it is grown as an ornamental tree.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [
+    {
+      "field": "tree_academic",
+      "why": "the pages do not show it: no sentence gives a scientist's definition"
+    },
+    {
+      "field": "part_we_eat",
+      "why": "uncertain: two judgements disagree: 'The seeds' and 'The fruit'"
+    }
+  ],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Delonix_regia",
+      "title": "Delonix regia",
+      "asked_for": "Gulmohar tree",
+      "revision": 1387359665,
+      "fetched_on": "2026-11-26",
+      "sha256": "0f56137f5be209a81789460c22c326e2a9abf9671908cd8189ea331c9d31b73b"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-26",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}

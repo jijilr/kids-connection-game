@@ -1,0 +1,60 @@
+{
+  "name": "Papaya tree",
+  "fields": {
+    "kind_of_thing": {
+      "value": "plant",
+      "quote": "The papaya (, US: ) is the plant species Carica papaya, one of the 3 accepted species in the genus Carica of the family Caricaceae.",
+      "source": "wikipedia_en",
+      "basis": "sourced"
+    },
+    "extinct": {
+      "value": false,
+      "quote": "Now these plants are grown in all tropical regions of the world.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "kind_of_plant": {
+      "value": "tree",
+      "basis": "judged, not sourced",
+      "why": "The sources call it a tall herbaceous plant and a plant species, and its common name is \"Papaya tree,\" so a parent would call it a tree."
+    },
+    "tree_academic": {
+      "value": false,
+      "quote": "Papaya is a tall herbaceous plant in the genus Carica; its edible fruit is also called papaya.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    },
+    "part_we_eat": {
+      "value": "fruit",
+      "quote": "Papaya is a tall herbaceous plant in the genus Carica; its edible fruit is also called papaya.",
+      "source": "wikipedia_simple",
+      "basis": "sourced"
+    }
+  },
+  "weak_spots": [],
+  "pages": [
+    {
+      "id": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Papaya",
+      "title": "Papaya",
+      "asked_for": "Papaya",
+      "revision": 1383654418,
+      "fetched_on": "2026-11-26",
+      "sha256": "0b10b8e3bb8c34fd8300f83e77b4522c0252f822eff658a48f2f73c7a84246f4"
+    },
+    {
+      "id": "wikipedia_simple",
+      "url": "https://simple.wikipedia.org/wiki/Papaya",
+      "title": "Papaya",
+      "asked_for": "Papaya",
+      "revision": 11054498,
+      "fetched_on": "2026-11-26",
+      "sha256": "7f54e7eb0d5d8df6981051dbd9e4fc95b8561c016d0d632e2502e4ff4237dc74"
+    }
+  ],
+  "read_by": {
+    "model": "deepseek-flash",
+    "date": "2026-11-26",
+    "rule": "every value carries a sentence found word for word in the saved page"
+  }
+}
