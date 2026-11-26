@@ -391,6 +391,17 @@ of it is in `DESIGN.md`, section 8c.
   the banana plant join the tomato under "the fruit".
 - The helper now runs in the owner's Terminal panel, where the app does not stop it.
 
+### An Instagram reel of the game (26 Nov)
+The owner: "make an insta video of the game that way", the way his Glym promos were made (read in
+`vocabulary_swipe_app`, never changed). `tools/insta/` (see its README): the real game films itself on a
+phone-shaped screen (`insta_game_test.dart`, Automate on, the explanation kept small as on a phone); Blender
+lays that film on a phone on a desk with a camera that follows the story (`insta_scene.py`, CC0 light and wood
+from Poly Haven); the words go over the top, the narrator (Kokoro `af_heart`) and the game's own clips are laid
+at their moments, and the frames are streamed into the encoder (`insta_make.py`). About 45 seconds, upright:
+the hook, touch and hear, "Yes! Animals", a wrong guess answered with "one away", a clue, the web growing, the
+deeper set, the name. Output `docs/insta_connections.mp4`, not in git. Nothing spent. Open: where to get the
+game, music, and the post's caption.
+
 ### Room for the set on a phone (24 Nov, night)
 The owner played on his phone and sent two pictures: the explanation "takes away too much vertical space
 and make it less fun to play", and the line "Yes! Plants" used room that "can be used better".
