@@ -28,6 +28,7 @@ the right edge; the narrator never speaks over the game.
 It costs nothing: Kokoro, Blender and ffmpeg run on this PC.
 """
 import argparse
+import math
 import json
 import pathlib
 import shutil
@@ -250,7 +251,13 @@ def make_times() -> dict:
     land_from, land_to = 1.7, 3.9                      # the sixteen pictures fly in as "Can your child..." is said
     web_slide = marks["web"] + 1.3                     # the phone goes, and his web grows behind it
     web_from, web_to = web_slide + 0.4, marks["close"] - 0.1
-    whole = lambda m: {"web": [-m, -m, m, m]}
+    # his web is lopsided (one branch holds most of it), so the camera frames where its knots are, not its radius
+    angle, depth, _ = insta_web.layout(e["web"])
+    deepest = max(depth.values()) or 1
+    xs = [-math.sin(angle[i]) * depth[i] / deepest for i in angle]
+    zs = [-math.cos(angle[i]) * depth[i] / deepest for i in angle]
+    edge = 0.1                                           # a knot's own size, and a little air
+    whole = lambda m: {"web": [min(xs) * m - edge, min(zs) * m - edge, max(xs) * m + edge, max(zs) * m + edge]}
     shots = [
         (0.0, board, (9, -13)),                                       # the cards in the air, from frame 0
         (land_to + 0.3, board, (6, -6)),
@@ -265,10 +272,10 @@ def make_times() -> dict:
         (marks["slow"] - 0.4, (0, sh * 0.08, sw, sh * 0.92), (8, 6)),
         (marks["web"] + 0.7, web_screen, (6, 0)),                     # the web on the phone
         (web_slide + 0.1, web_screen, (7, -2)),
-        (web_from + 0.9, whole(0.5), (8, -6)),                        # then in 3D, from its middle
-        (web_to, whole(0.86), (10, 4)),                               # the whole of it
-        (marks["close"] + 2.2, whole(0.95), (12, 8)),
-        (total, whole(0.98), (13, 10)),
+        (web_from + 0.9, {"web": [-0.45, -0.45, 0.45, 0.45]}, (8, -5)),                        # then in 3D, from its middle
+        (web_to, whole(1.0), (9, 2)),                               # the whole of it
+        (marks["close"] + 2.2, whole(1.03), (11, 5)),
+        (total, whole(1.05), (12, 6)),
     ]
     times = {"screen_px": [sw, sh], "total": round(total, 3), "marks": marks, "shots": shots,
              "tiles": e["tiles"], "web": e["web"], "land_from": land_from, "land_to": land_to,
@@ -352,8 +359,9 @@ def sound(times: dict) -> pathlib.Path:
             sys.exit(f"two voices at once at {start:.1f} s: {path.name} begins while {last} is still heard")
         until, last = start + seconds_of(path), path.name
     tap = tone("tap", "0.5*sin(2*PI*1320*t)*exp(-55*t)+0.25*sin(2*PI*2640*t)*exp(-80*t)", 0.14)
-    right = tone("right", "0.32*sin(2*PI*988*t)*exp(-5*t)+0.32*sin(2*PI*1319*max(t-0.11,0))*exp(-5*max(t-0.11,0))*(t>0.11)", 0.9)
-    near = tone("near", "0.32*sin(2*PI*523*t)*exp(-6*t)+0.3*sin(2*PI*440*max(t-0.13,0))*exp(-6*max(t-0.13,0))*(t>0.13)", 0.8)
+    # each note its own sound, laid a moment apart: a formula with a comma in it is not read by ffmpeg's lavfi
+    high, higher = tone("right1", "0.32*sin(2*PI*988*t)*exp(-5*t)", 0.9), tone("right2", "0.32*sin(2*PI*1319*t)*exp(-5*t)", 0.9)
+    low, lower = tone("near1", "0.32*sin(2*PI*523*t)*exp(-6*t)", 0.8), tone("near2", "0.3*sin(2*PI*440*t)*exp(-6*t)", 0.8)
     air = tone("air", "0.10*sin(2*PI*(300+900*t)*t)*sin(PI*t/1.6)+0.05*sin(2*PI*(600+1500*t)*t)*sin(PI*t/1.6)", 1.6)
     notes = [1568, 1760, 2093, 2349, 2637]
     sparks = [tone(f"spark{n}", f"0.22*sin(2*PI*{n}*t)*exp(-14*t)", 0.35) for n in notes]
@@ -368,9 +376,9 @@ def sound(times: dict) -> pathlib.Path:
         kind = p["kind"]
         effects.append((tap, p["t"] + 0.06, -4.0))
         if kind == "submit":
-            effects.append((right, p["t"] + 0.12, -3.0))
+            effects += [(high, p["t"] + 0.12, -3.0), (higher, p["t"] + 0.23, -3.0)]
         elif kind == "wrong":
-            effects.append((near, p["t"] + 0.12, -4.0))
+            effects += [(low, p["t"] + 0.12, -4.0), (lower, p["t"] + 0.25, -4.0)]
     for k, (i, t) in enumerate(sorted(insta_web.appear_times(times["web"], times["web_from"], times["web_to"]).items(),
                                       key=lambda x: x[1])):
         effects.append((sparks[k % len(sparks)], t, -9.0))
