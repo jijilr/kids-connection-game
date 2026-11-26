@@ -1,14 +1,16 @@
 {
- "about": "The narrator's lines for the Instagram film of the game (tools/insta). Spoken by Kokoro, the owner's installation, used where it stands. The narrator is af_heart, a different voice from the game's own (bf_emma). The narrator never speaks over the game: the game's names, its 'right' and 'one away', and its clue are heard in its own voice. 'shown' is the words laid over the picture; 'say' is what Kokoro is given when it differs.",
- "kokoro": "D:/Projects/Kokoro",
- "voice": "af_heart",
- "speed": 1.0,
+ "about": "The narrator's lines for the Instagram reel of the game (tools/insta). Since 26 Nov 2026 the narrator is ElevenLabs Bella, calm and a little slow, with the settings of the owner's Glym films (his word: 'use 11 labs voice... something a bit more soothing'). The first cut used Kokoro af_heart, which said 'Stuck?' as 'Stock?'. The narrator never speaks over the game: the game's names, its 'right' and 'one away', and its clue are heard in its own voice. 'say' is what the voice is given when it differs from the words.",
+ "provider": "elevenlabs",
+ "voice": "EXAVITQu4vr4xnSDxMaL",
+ "voice_name": "Bella (calm, as the Glym films)",
+ "model": "eleven_multilingual_v2",
+ "settings": {"stability": 0.62, "similarity_boost": 0.75, "style": 0.0, "use_speaker_boost": true, "speed": 0.87},
  "lines": [
   {"id": "hook", "text": "Sixteen pictures. Four hidden groups. Can your child find them?"},
   {"id": "wrong", "text": "Wrong? It tells him how close he was."},
   {"id": "clue", "text": "Stuck? A clue that never gives the answer away."},
-  {"id": "web", "text": "Everything he finds grows his own web."},
-  {"id": "deeper", "text": "And what he does well opens a deeper set."},
+  {"id": "fast", "text": "Then set after set, he goes deeper."},
+  {"id": "web", "text": "And everything he finds grows his own web."},
   {"id": "close", "text": "Connections. A picture game that grows with your child."}
  ]
 }

@@ -326,7 +326,7 @@ class _Phone extends StatelessWidget {
 class _Film {
   _Film(this.tester, this.players, this.voice) {
     players.onStart = (asset, seconds) =>
-        _heard.add({'asset': asset, 'seconds': seconds, 'frame': frames, 't': frames / _fps, 'filmed': filming});
+        _heard.add({'asset': asset, 'seconds': seconds, 'frame': frames, 't': frames / _fps, 'filmed': filming && speed == 1});
   }
 
   final WidgetTester tester;
@@ -335,6 +335,11 @@ class _Film {
   int frames = 0;
   int lived = 0;
   bool filming = true;
+
+  /// One frame kept in this many: 1 at the game's own pace; more in the second half, which runs
+  /// fast forward (the owner, 26 Nov 2026: "the second one is a bit more fast forwarded"). The
+  /// game's own clips are not heard while it does.
+  int speed = 1;
   int _pointer = 20;
   int _voiceEnds = 0;
   final _heard = <Map<String, Object>>[];
@@ -366,7 +371,7 @@ class _Film {
   Future<void> frame() async {
     await tester.pump(_frame);
     lived++;
-    if (!filming) return;
+    if (!filming || lived % speed != 0) return;
     final path = '$_out/screen/f${frames.toString().padLeft(5, '0')}.png';
     await tester.runAsync(() async {
       final image = await _boundary.toImage(pixelRatio: _ratio);
@@ -399,9 +404,9 @@ class _Film {
     }
   }
 
-  /// The narrator begins a line: never over the game's own voice.
+  /// The narrator begins a line: never over the game's own voice (in the fast half that voice is not heard).
   Future<void> say(String id) async {
-    await quiet(0.1);
+    if (speed == 1) await quiet(0.1);
     final line = voice[id] as Map<String, dynamic>;
     _spoken.add({'id': id, 'frame': frames, 't': frames / _fps});
     _voiceEnds = frames + ((line['seconds'] as num) * _fps).ceil();
@@ -429,6 +434,24 @@ class _Film {
     await hold(0.07);
     await g.up();
     await _fingerFade(at, down: false);
+  }
+
+  /// A press as a quick child makes it, for the fast-forward half: the game still sees a real tap.
+  Future<void> tap(Offset at) async {
+    final g = await tester.startGesture(at, pointer: _pointer++);
+    _touch.value = _Touch(at, 1);
+    await frame();
+    await frame();
+    await g.up();
+    _touch.value = null;
+    await frame();
+  }
+
+  /// Lives [n] frames, whatever is kept of them.
+  Future<void> live(int n) async {
+    for (var i = 0; i < n; i++) {
+      await frame();
+    }
   }
 
   /// Leaves out a stretch of play: the game lives through [during] unfilmed, and the picture
@@ -641,7 +664,53 @@ void main() {
       film.mark('done');
       await film.hold(0.7);
 
-      // ------------------------------------------------ the web of what he has found
+      // ------------------------------------------------ the second half: set after set, fast forward
+      // The owner, 26 Nov 2026: "the second one is a bit more fast forwarded... such that when you show the
+      // diagram... it looks more rich". The game plays on as a quick child plays it, every group found at
+      // once, and one frame in five is kept. Where the game opens his web by itself (after four sets in a
+      // sitting), its own button leads on. The sets are the ones Automate chooses.
+      film.mark('fast');
+      film.speed = 5;
+      await film.say('fast');
+      var sets = 0;
+      Future<void> onward() async {
+        final next = find.byKey(const ValueKey('next'));
+        await film.tap(at(next));
+        await film.live(14);
+        final web = find.byKey(const ValueKey('web-next'));
+        if (web.evaluate().isNotEmpty) {
+          await film.live(40);
+          await film.tap(at(web));
+          await film.live(12);
+        }
+      }
+
+      while (sets < 10) {
+        await onward();
+        if (engine.board == null || engine.boardFinished) break;
+        for (final g in [...engine.board!.groups]) {
+          for (final e in g.items) {
+            await film.tap(onTile(e));
+          }
+          await film.tap(at(find.text('Submit')));
+          await film.live(6);
+        }
+        expect(engine.boardFinished, isTrue);
+        sets++;
+        _log('fast: set $sets, ${engine.pathLabels.join(' > ')}');
+        await film.live(12);
+      }
+      await film.spoken(0.0);
+      // what the game is still saying of its last set runs on, fast and unheard, before the pace slows
+      while (players.playing) {
+        await film.frame();
+      }
+      await film.live(10);
+      film.speed = 1;
+      film.mark('slow');
+      await film.hold(0.3);
+
+      // ------------------------------------------------ the web of what he has found, now rich
       film.mark('web');
       await film.press(at(find.byKey(const ValueKey('web-mini'))));
       await film.say('web');
@@ -649,17 +718,8 @@ void main() {
       if (find.byKey(const ValueKey('web-grew')).evaluate().isNotEmpty) {
         film.box('grew', tester.getRect(find.byKey(const ValueKey('web-grew'))).inflate(16));
       }
-      await film.spoken(0.9);
-      await film.press(at(find.byType(BackButton)));
-      await film.hold(0.6);
-
-      // ------------------------------------------------ deeper: the set inside Animals
-      film.mark('deeper');
-      await film.press(at(find.byKey(const ValueKey('next'))));
-      await film.hold(0.5);
-      expect(engine.pathLabels.last, 'Animals', reason: 'what he did well leads deeper');
-      await film.say('deeper');
-      await film.spoken(0.6);
+      await film.spoken(1.8);
+      _log('the web: ${engine.web.length} knots, ${engine.progress.lines.length} lines');
 
       // ------------------------------------------------ the close
       film.mark('close');

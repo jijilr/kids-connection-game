@@ -68,10 +68,12 @@ WORDS = [
     ("touch", "right", [("Touch a picture:", "mid"), ("it says its name.", "mid")]),
     ("right", "wrong", [("Find four that", "mid"), ("belong together.", "mid")]),
     ("wrong", "clue", [("Wrong?", "big"), ("It tells him how close he was.", "mid")]),
-    ("clue", "done", [("Stuck?", "big"), ("A clue, never the answer.", "mid")]),
-    ("done", "deeper", [("Everything he finds", "mid"), ("grows his own web.", "mid")]),
-    ("deeper", "close", [("What he does well", "mid"), ("opens a deeper set.", "mid")]),
+    ("clue", "fast", [("Stuck?", "big"), ("A clue, never the answer.", "mid")]),
+    # the second half, fast forward (the owner, 26 Nov 2026), so the web at the end is rich
+    ("fast", "web", [("Set after set,", "mid"), ("deeper and wider.", "mid")]),
+    ("web", "close", [("Everything he finds", "mid"), ("grows his own web.", "mid")]),
 ]
+FAST = ("fast", "slow")     # while the game runs fast forward, a small sign says so
 CLOSE = [("Connections", "title"), ("A picture game that", "mid"), ("grows with your child.", "mid")]
 
 
@@ -116,6 +118,24 @@ def mark() -> Image.Image:
 
 
 @lru_cache(maxsize=None)
+def fast_sign() -> Image.Image:
+    """A small pill under the words: two forward triangles and the speed, so no one takes it for the game's pace."""
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    f = font("quick", 40)
+    text = "5x speed"
+    tw = d.textlength(text, font=f)
+    w = round(tw + 120)
+    x0, y0 = (W - w) // 2, 400
+    d.rounded_rectangle((x0, y0, x0 + w, y0 + 64), radius=32, fill=(255, 201, 64, 235))
+    for k in (0, 26):
+        x = x0 + 30 + k
+        d.polygon([(x, y0 + 18), (x + 24, y0 + 32), (x, y0 + 46)], fill=(45, 52, 54, 255))
+    d.text((x0 + 92, y0 + 33), text, font=f, fill=(45, 52, 54, 255), anchor="lm")
+    return img
+
+
+@lru_cache(maxsize=None)
 def block(lines: tuple, top: int) -> Image.Image:
     """A few lines of words, centred, with a soft shadow, starting at y = top."""
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -150,6 +170,9 @@ def words_at(t: float, marks: dict, total: float) -> list:
                 out.append((block(tuple(lines[2:]), 150 + 2 * round(108 * 1.18) + 22), ease((t - 2.3) / 0.4), 0))
             else:
                 out.append((block(tuple(lines), 210), min(fade_in, fade_out), round(14 * (1 - fade_in))))
+    a, b = marks[FAST[0]], marks[FAST[1]]
+    if a <= t < b:
+        out.append((fast_sign(), min(ease((t - a) / 0.3), ease((b - t) / 0.3)), 0))
     c = marks["close"]
     if t >= c - 0.1:
         u = ease((t - c) / 0.8)
@@ -219,23 +242,23 @@ def make_times() -> dict:
     full = (-24, -36, sw + 24, sh + 36)
     board = tuple(boxes["board"])
     lower = (10, sh * 0.56, sw - 10, sh * 0.93)        # the clue's words and the buttons
-    web = (20, 40, sw - 20, sh * 0.78)
+    web = (sw * 0.06, sh * 0.16, sw * 0.94, sh * 0.58)   # the web's drawing, not the notes under it
     wide = (-sw * 0.85, -sh * 0.45, sw * 1.85, sh * 1.45)
     total = e["frames"] / FPS
     shots = [
-        (0.0, (-sw * 0.08, -sh * 0.05, sw * 1.08, sh * 1.05), (63, -9)),  # moving from the first frame
-        (marks["touch"] - 0.4, full, (68, -5)),
+        (0.0, board, (64, -8)),                                           # the sixteen pictures, from frame 0, moving
+        (marks["touch"] - 0.4, board, (70, -4)),
         (marks["touch"] + 0.8, board, (73, -2)),                          # in on the pictures as they are touched
         (marks["right"] + 1.6, board, (74, 1)),
         (marks["wrong"] + 0.5, board, (73, 3)),
         (marks["wrong"] + 4.6, full, (69, 1)),                            # back as the narrator speaks
         (marks["clue"] + 2.6, lower, (74, 2)),                            # in on the clue as it is said
         (marks["done"] - 0.6, lower, (74, 4)),
-        (marks["done"] + 0.4, full, (69, 0)),
+        (marks["done"] + 0.5, full, (69, 0)),
+        (marks["fast"] + 1.0, full, (70, -5)),                            # the fast half: the whole phone, drifting
+        (marks["slow"] - 0.4, (0, sh * 0.08, sw, sh * 0.92), (72, 4)),
         (marks["web"] + 1.4, web, (72, -3)),                              # the web, as it grows
-        (marks["deeper"] - 0.2, web, (72, -1)),
-        (marks["deeper"] + 1.0, board, (73, 2)),                          # the deeper set
-        (marks["close"] - 0.1, board, (72, 4)),
+        (marks["close"] - 0.1, web, (73, -1)),
         (marks["close"] + 2.2, wide, (58, 12)),                           # wide for the close
         (total, wide, (55, 15)),
     ]
@@ -288,6 +311,11 @@ def mean_volume(path: pathlib.Path) -> float:
     return float(found.group(1)) if found else LEVEL
 
 
+def seconds_of(path: pathlib.Path) -> float:
+    return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
+                                 str(path)], capture_output=True, text=True, check=True).stdout)
+
+
 def sound(total: float) -> pathlib.Path:
     """The narrator and the game's own clips, each at its moment, at one loudness; a clip still heard where
     the film cuts forward is faded there, and one the game began inside a cut is not heard."""
@@ -304,7 +332,13 @@ def sound(total: float) -> pathlib.Path:
             continue
         clips.append((ROOT / heard["asset"], start, None if cut is None else cut - start))
     clips.sort(key=lambda c: c[1])
-    cmd = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error"]
+    # never two voices at once: not the narrator over the game, nor the game over itself (the owner's
+    # question of 26 Nov 2026, "check the current video's background sound overlap with narration")
+    until, last = 0.0, ""
+    for path, start, lasts in clips:
+        if start < until - 0.05:
+            sys.exit(f"two voices at once at {start:.1f} s: {path.name} begins while {last} is still heard")
+        until, last = start + (lasts if lasts is not None else seconds_of(path)), path.name
     parts, names = [], []
     for i, (path, start, lasts) in enumerate(clips):
         cmd += ["-i", str(path)]

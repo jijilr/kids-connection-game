@@ -402,6 +402,12 @@ the hook, touch and hear, "Yes! Animals", a wrong guess answered with "one away"
 deeper set, the name. Output `docs/insta_connections.mp4`, not in git. Nothing spent. Open: where to get the
 game, music, and the post's caption.
 
+The second cut, the same day, after the owner played it: the narrator is ElevenLabs Bella with the calm
+settings of his Glym films (279 characters; Kokoro had said "Stuck?" as "Stock?"); the reel has two halves,
+the second at five times speed through ten sets, so the web at the end holds 35 ends, 2.5 steps deep on
+average and 4 at the deepest; it opens on the sixteen pictures, close. The sound was checked: the narrator
+and the game never overlapped, and the make script now stops if two voices ever would. About 51 seconds.
+
 ### Room for the set on a phone (24 Nov, night)
 The owner played on his phone and sent two pictures: the explanation "takes away too much vertical space
 and make it less fun to play", and the line "Yes! Plants" used room that "can be used better".
