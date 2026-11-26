@@ -6,6 +6,7 @@ import 'providers/engine_provider.dart';
 import 'screens/engine_screen.dart';
 import 'services/live_link.dart';
 import 'services/progress.dart';
+import 'services/sound_service.dart';
 
 void main() {
   runApp(const ConnectionsGameApp());
@@ -72,14 +73,19 @@ class ConnectionsGameApp extends StatelessWidget {
         ChangeNotifierProvider(
             // On the web the game looks for the helper on the owner's PC, which makes sets
             // ahead of the child; where there is none it plays from what it ships with.
+            // When a set moves on, nothing of it is heard any more.
             create: (_) => EngineProvider(
-                progressStore: DeviceProgressStore(), live: kIsWeb ? HttpLiveLink() : null)
+                progressStore: DeviceProgressStore(),
+                live: kIsWeb ? HttpLiveLink() : null,
+                onLeaveSet: () => SoundService().hush())
               ..init()),
       ],
       child: MaterialApp(
         title: 'Connections Game',
         debugShowCheckedModeBanner: false,
         theme: appTheme(),
+        // A page opened or closed (his web, the map) hushes the game's sound too.
+        navigatorObservers: [HushOnPageChange()],
         home: const ResponsiveWrapper(child: EngineScreen()),
       ),
     );
@@ -154,5 +160,28 @@ class ResponsiveWrapper extends StatelessWidget {
         );
       },
     );
+  }
+}
+
+/// Hushes the game's sound whenever a page opens or closes: what was said belongs to the
+/// page that was left. Dialogs and menus are not pages and leave the sound alone.
+class HushOnPageChange extends NavigatorObserver {
+  HushOnPageChange({void Function()? hush}) : _hush = hush ?? (() => SoundService().hush());
+
+  final void Function() _hush;
+
+  @override
+  void didPush(Route<dynamic> route, Route<dynamic>? previousRoute) {
+    if (route is PageRoute && previousRoute != null) _hush();
+  }
+
+  @override
+  void didPop(Route<dynamic> route, Route<dynamic>? previousRoute) {
+    if (route is PageRoute) _hush();
+  }
+
+  @override
+  void didReplace({Route<dynamic>? newRoute, Route<dynamic>? oldRoute}) {
+    if (newRoute is PageRoute) _hush();
   }
 }

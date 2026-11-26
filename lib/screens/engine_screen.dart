@@ -7,7 +7,6 @@ import '../models/group_words.dart';
 import '../providers/engine_provider.dart';
 import '../services/board_assembler.dart';
 import '../services/sound_service.dart';
-import '../services/speaker.dart';
 import '../widgets/grown_up_panel.dart';
 import '../widgets/solved_group_bar.dart';
 import '../widgets/tile_card.dart';
@@ -180,26 +179,21 @@ class EngineScreen extends StatelessWidget {
     if (selecting) _sayName(g, e);
   }
 
+  // All of it goes through the game's one voice (SoundService): what starts now stops
+  // whatever was playing, the recorded clips and the device's voice alike.
+
   /// Says a thing's name: its recorded clip if it has one, the device's voice if not.
   void _sayName(EngineProvider g, Entity e) {
-    final audio = g.tileMedia(e).audio;
-    if (audio != null) {
-      SoundService().playAsset(audio);
-    } else {
-      speakText(e.label);
-    }
+    SoundService().say(e.label, clip: g.tileMedia(e).audio);
   }
 
   /// Says a clue or an explanation: its recorded clip if it has one, the device's voice
-  /// if not. With [after], the clip waits for the sound now playing to finish.
+  /// if not. With [after], it waits for the sound now playing (the one that says "right").
   void _sayWords(Spoken words, {bool after = false}) {
-    final audio = words.audio;
-    if (audio == null) {
-      speakText(words.text);
-    } else if (after) {
-      SoundService().playAfter(audio);
+    if (after) {
+      SoundService().sayAfter(words.text, clip: words.audio);
     } else {
-      SoundService().playAsset(audio);
+      SoundService().say(words.text, clip: words.audio);
     }
   }
 
@@ -319,7 +313,7 @@ class EngineScreen extends StatelessWidget {
           IconButton(
             tooltip: 'Read it to me',
             icon: const Icon(Icons.volume_up_rounded, size: 22, color: _purple),
-            onPressed: () => speakText(g.prompt),
+            onPressed: () => SoundService().say(g.prompt),
           ),
         ],
       ),

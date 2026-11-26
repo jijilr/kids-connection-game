@@ -645,6 +645,36 @@ The group "in between" at the first question is named **"Hard to place"** in the
 with its own three clues (the owner: "the branch in the main node which saying 'hard to
 classify' (or some apt shorter name)").
 
+## 8d. One voice
+
+Owner, 26 Nov 2026: "fix the sound overlap please... when a set moves on nothing from that set
+must be playing... when a new audio starts playing all the previous one must shut up and go
+away.... you can add more".
+
+Every sound of the game goes through one place (`lib/services/sound_service.dart`): the
+recorded clips and the device's own voice alike. Its rules:
+
+1. **One sound at a time.** A clip or the device's voice, never both. Before this the two
+   did not know of each other and could speak over one another.
+2. **The newest wins** (his). What starts now stops whatever was playing and whatever was
+   waiting. Before this, a name waited its turn: four quick touches were said one after
+   another, long after the touches.
+3. **One chain only.** A group's explanation waits for the sound that says "right", and
+   nothing else waits for anything.
+4. **When a set moves on, nothing of it is heard** (his). The game hushes the moment a set
+   is left (Next, a new set, deeper, back), before the next set shows, even while the next
+   set is still being fetched.
+5. **A page opened or closed hushes** (added). Opening his web or the map, or coming back
+   from it. A dialog does not.
+6. **Put away, silent** (added). When the page is hidden (another tab, a locked phone) or
+   the app is put away, everything stops.
+7. **Nothing hushed comes back** (added). A clip still loading when it was hushed never
+   starts, and what waited behind it is dropped. The calls to the player run one after
+   another, so a stop can never land in the middle of a start.
+8. **Taking a picture back is silent.** A touch that unselects says nothing (as before).
+
+Tests: `test/one_voice_test.dart` (8), with a stand-in player.
+
 ## 9. The measures, and the audience
 
 **Breadth and depth** (built). Counted on the player's own web, not on a list of subjects of
@@ -713,3 +743,4 @@ With general use decided, that wording is the next thing to turn into a setting.
 | 24 Nov 2026, evening | More kinds than four, covered in the fewest rounds. A branch can end. Things resist classification, and the first place must take them in. General use. Write the decisions down. |
 | 24 Nov 2026, late | The concentric-circles paradigm itself: a thing belongs to more than one circle. "Yes, build the small proof" (section 8a). |
 | 24 Nov 2026, night | One record for each place, integrated: "the nerve system of the whole thing". "Yes, start with step 1" (section 8b). |
+| 26 Nov 2026 | One voice: a new sound stops all before it; when a set moves on, nothing of it is heard (section 8d). |

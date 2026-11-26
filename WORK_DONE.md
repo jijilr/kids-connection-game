@@ -391,6 +391,25 @@ of it is in `DESIGN.md`, section 8c.
   the banana plant join the tomato under "the fruit".
 - The helper now runs in the owner's Terminal panel, where the app does not stop it.
 
+### One voice: the sound overlap fixed (26 Nov)
+The owner: "fix the sound overlap please... when a set moves on nothing from that set must be playing...
+when a new audio starts playing all the previous one must shut up and go away.... you can add more".
+What was wrong: a name touched while another was playing waited its turn, so quick touches were said late,
+one after another; the device's voice (for words with no recording) and the recorded clips did not know of
+each other and spoke over one another; nothing stopped when a set moved on or a page opened; a clip still
+loading when it was stopped could start anyway.
+- `lib/services/sound_service.dart` is now the game's one voice, for clips and the device's voice alike: the
+  newest wins; the only chain is "right" then its explanation; `hush()` stops everything, and nothing hushed
+  comes back (a count that goes up at each hush, and calls to the player that never interleave).
+- The game hushes when a set is left (`onLeaveSet` on the provider, wired in `main.dart`), when a page opens
+  or closes (`HushOnPageChange`), and when the page is hidden or the app put away.
+- `speaker_web.dart` can now stop the device's voice and tell when it has finished.
+- `DESIGN.md` section 8d holds the rules. Tests: `test/one_voice_test.dart` (8); all 122 tests pass.
+- Seen in the browser (the built game on a plain local server, not the helper): four quick touches, each name
+  cut off by the next and only the last heard to the end; the question's speaker cut off a name; a new set and
+  opening the web both hushed. The "right, then why" chain is shown by the tests only: the browser pane went
+  hidden between my steps, which (rightly) hushed it each time.
+
 ### An Instagram reel of the game (26 Nov)
 The owner: "make an insta video of the game that way", the way his Glym promos were made (read in
 `vocabulary_swipe_app`, never changed). `tools/insta/` (see its README): the real game films itself on a

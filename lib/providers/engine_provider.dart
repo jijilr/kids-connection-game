@@ -113,6 +113,7 @@ class EngineProvider extends ChangeNotifier {
     ProgressStore? progressStore,
     DateTime Function()? clock,
     LiveLink? live,
+    this.onLeaveSet,
   })  : _repo = repo ?? ContentRepository(),
         _random = random ?? Random(),
         _progressStore = progressStore ?? MemoryProgressStore(),
@@ -145,6 +146,11 @@ class EngineProvider extends ChangeNotifier {
   /// The link to the helper on the owner's PC, which makes sets ahead of him. Null where
   /// there is none: the game then plays from what it ships with.
   final LiveLink? _live;
+
+  /// Called the moment a set is left, before anything of the next one shows: the game
+  /// hushes its sound there, so that nothing of a set is heard once it has moved on (the
+  /// owner's rule of 26 Nov 2026).
+  final void Function()? onLeaveSet;
   String? _liveVersion;
   double? _roll; // the dice for this set's next step, thrown once
 
@@ -607,6 +613,7 @@ class EngineProvider extends ChangeNotifier {
   /// the place he goes to next is fetched while he looks at the set he has finished. When
   /// they are not, the game waits a moment; if they cannot be had, he stays where he is.
   Future<void> _travel(String place, void Function() arrive) {
+    onLeaveSet?.call();
     if (_repo.has(place)) {
       arrive();
       return Future.value();
@@ -687,6 +694,7 @@ class EngineProvider extends ChangeNotifier {
   }
 
   void _open() {
+    onLeaveSet?.call();
     // A place may be sorted by more than one question: this set asks the one that still
     // has a kind he has not been tested on.
     final asks = _questionFor(_stack.last.filter);

@@ -36,6 +36,20 @@
         "--no-making"
       ],
       "port": 8201
+    },
+    {
+      "name": "built-web",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8130",
+        "--bind",
+        "127.0.0.1",
+        "--directory",
+        "build/web"
+      ],
+      "port": 8130
     }
   ]
 }

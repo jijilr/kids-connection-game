@@ -1,15 +1,23 @@
 import 'package:audioplayers/audioplayers.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/foundation.dart' show kIsWeb, debugPrint;
+import 'package:flutter/widgets.dart' show AppLifecycleListener;
 import 'dart:math';
 import 'dart:async';
 import 'dart:collection';
+import 'speaker.dart';
 
-/// Comprehensive sound service for the Connections game.
-/// Handles all audio playback including feedback sounds, category announcements,
-/// item name pronunciations, and educational content.
-/// 
-/// Features a queueing system to ensure no two audio files play simultaneously.
-/// Includes web-specific handling for browser autoplay policies.
+/// The game's one voice: every sound of the game, recorded clips and the device's voice
+/// alike, goes through here. Its rules (the owner's words of 26 Nov 2026: "when a set moves
+/// on nothing from that set must be playing... when a new audio starts playing all the
+/// previous one must shut up and go away"):
+///
+///  - One sound at a time: a clip or the device's voice, never both at once.
+///  - The newest wins: a sound that starts now stops whatever was playing or waiting.
+///  - One chain only: a group's explanation waits for the sound that says "right".
+///  - [hush] stops everything at once. The game calls it when the set changes, when a
+///    page opens or closes, and when the game is put away (another tab, a locked phone).
+///  - Nothing hushed comes back: a sound that was still loading when it was hushed never
+///    starts.
 class SoundService {
   static final SoundService _instance = SoundService._internal();
   factory SoundService() => _instance;
@@ -19,34 +27,50 @@ class SoundService {
 
   final AudioPlayer _player = AudioPlayer();
   final Random _random = Random();
-  
-  // Audio queue system
+
   final Queue<_AudioTask> _audioQueue = Queue<_AudioTask>();
   bool _isPlaying = false;
+  _AudioTask? _current;
   Completer<void>? _currentPlayCompleter;
-  
+
+  /// Goes up at every [hush]: anything started under an older number is stale and is
+  /// neither started nor allowed to start what was waiting behind it.
+  int _generation = 0;
+
+  /// Calls on the player run one after another, never interleaved, so a stop can never
+  /// land in the middle of a start and let the old clip through.
+  Future<void> _ops = Future.value();
+
+  // Kept so it keeps listening.
+  // ignore: unused_field
+  AppLifecycleListener? _lifecycle;
+
   // Web-specific: Track if user has interacted (required for autoplay)
   bool _userHasInteracted = false;
 
   void _initPlayer() {
-    // Listen for when audio completes to play next in queue
+    // A clip has ended: what was waiting behind it may start.
     _player.onPlayerComplete.listen((_) {
-      _onAudioComplete();
+      if (_current?.assetPath != null) _finished(_generation);
     });
-    
-    // Also handle errors
-    _player.onPlayerStateChanged.listen((state) {
-      if (state == PlayerState.stopped || state == PlayerState.completed) {
-        // Already handled by onPlayerComplete
-      }
-    });
-    
-    // Set audio context for web - log mode for debugging
+
     if (kIsWeb) {
       _player.setReleaseMode(ReleaseMode.stop);
     }
+
+    // Put away, nothing keeps talking: on the web when the page is hidden (another tab,
+    // a locked phone), elsewhere when the app is hidden or paused.
+    if (kIsWeb) {
+      whenPageHidden(hush);
+    } else {
+      try {
+        _lifecycle = AppLifecycleListener(onHide: hush, onPause: hush);
+      } catch (_) {
+        // No app binding (a plain unit test): nothing to listen to.
+      }
+    }
   }
-  
+
   /// Call this when user interacts with the app (tap, click, etc.)
   /// This unlocks audio playback on web browsers.
   void notifyUserInteraction() {
@@ -54,56 +78,60 @@ class SoundService {
       _userHasInteracted = true;
       // On web, try to "warm up" the audio context with a silent play
       if (kIsWeb) {
-        _player.setVolume(0);
-        _playAsset('Assets/audio/feedback/correct_01.mp3').then((_) {
-          _player.stop();
-          _player.setVolume(1.0);
-        }).catchError((_) {
-          _player.setVolume(1.0);
+        _run(() async {
+          try {
+            await _player.setVolume(0);
+            await _playAsset('Assets/audio/feedback/correct_01.mp3');
+            await _player.stop();
+          } finally {
+            await _player.setVolume(1.0);
+          }
         });
       }
     }
   }
 
-  void _onAudioComplete() {
+  Future<void> _run(Future<void> Function() op) {
+    final next = _ops.then((_) => op()).catchError((Object e) {
+      debugPrint('Sound: $e');
+    });
+    _ops = next;
+    return next;
+  }
+
+  /// The sound of [generation] has ended (or could not be played): start what waits.
+  void _finished(int generation) {
+    if (generation != _generation || !_isPlaying) return;
     _isPlaying = false;
+    _current = null;
     _currentPlayCompleter?.complete();
     _currentPlayCompleter = null;
     _processQueue();
   }
 
-  /// Add an audio task to the queue and start processing if not already playing
-  Future<void> _enqueue(String assetPath, {bool priority = false}) async {
-    final task = _AudioTask(assetPath);
-    
-    if (priority) {
-      // Priority items go to front of queue (but after currently playing)
-      final currentTasks = _audioQueue.toList();
-      _audioQueue.clear();
-      _audioQueue.add(task);
-      _audioQueue.addAll(currentTasks);
-    } else {
-      _audioQueue.add(task);
-    }
-    
-    _processQueue();
-  }
-
-  /// Process the next item in the queue
   void _processQueue() {
     if (_isPlaying || _audioQueue.isEmpty) return;
-    
     _isPlaying = true;
     final task = _audioQueue.removeFirst();
-    
+    _current = task;
     _currentPlayCompleter = Completer<void>();
-    
-    _playAsset(task.assetPath).catchError((e) {
-      print('Error playing audio: ${task.assetPath} - $e');
-      _onAudioComplete();
+    final gen = _generation;
+    final text = task.text;
+    if (text != null) {
+      speakText(text, onDone: () => _finished(gen));
+      return;
+    }
+    _run(() async {
+      if (gen != _generation) return; // hushed before it could start
+      try {
+        await _playAsset(task.assetPath!);
+      } catch (e) {
+        debugPrint('Error playing audio: ${task.assetPath} - $e');
+        _finished(gen);
+      }
     });
   }
-  
+
   /// Play an asset with platform-specific handling
   /// On web: use UrlSource with direct path (audioplayers AssetSource adds extra 'assets/' prefix)
   /// On native: use AssetSource which works correctly
@@ -120,20 +148,45 @@ class SoundService {
     }
   }
 
-  /// Clear the queue and stop current audio
-  Future<void> stopAll() async {
+  /// The newest wins: stop everything, then start [task].
+  Future<void> _sayNow(_AudioTask task) {
+    hush();
+    _audioQueue.add(task);
+    _processQueue();
+    return Future.value();
+  }
+
+  /// Start [task] once what is playing or waiting has ended.
+  Future<void> _sayAfter(_AudioTask task) {
+    _audioQueue.add(task);
+    _processQueue();
+    return Future.value();
+  }
+
+  /// A clip: at once ([priority], which stops everything else) or after what is playing.
+  Future<void> _enqueue(String assetPath, {bool priority = false}) =>
+      priority ? _sayNow(_AudioTask.clip(assetPath)) : _sayAfter(_AudioTask.clip(assetPath));
+
+  /// Stop everything at once: the clip playing, everything waiting, the device's voice.
+  Future<void> hush() {
+    _generation++;
     _audioQueue.clear();
-    await _player.stop();
     _isPlaying = false;
+    _current = null;
     _currentPlayCompleter?.complete();
     _currentPlayCompleter = null;
+    stopSpeaking();
+    return _run(() => _player.stop());
   }
+
+  /// The same as [hush].
+  Future<void> stopAll() => hush();
 
   /// Clear only queued items but let current audio finish
   void clearQueue() {
     _audioQueue.clear();
   }
-  
+
   /// Wait for the current audio to complete (if any is playing)
   /// Returns immediately if no audio is playing
   Future<void> waitForCurrentAudio() async {
@@ -141,7 +194,7 @@ class SoundService {
       await _currentPlayCompleter!.future;
     }
   }
-  
+
   /// Wait for all queued audio to complete
   Future<void> waitForAllAudio() async {
     while (_isPlaying || _audioQueue.isNotEmpty) {
@@ -153,7 +206,18 @@ class SoundService {
     }
   }
 
-  /// Play one specific bundled clip right away (e.g. a recorded animal name).
+  /// Say something now, stopping everything else: its recorded [clip] if it has one, the
+  /// device's voice saying [text] if not.
+  Future<void> say(String text, {String? clip}) =>
+      _sayNow(clip != null ? _AudioTask.clip(clip) : _AudioTask.speech(text));
+
+  /// Say something once what is playing now has ended: a group's explanation after the
+  /// sound that says "right".
+  Future<void> sayAfter(String text, {String? clip}) =>
+      _sayAfter(clip != null ? _AudioTask.clip(clip) : _AudioTask.speech(text));
+
+  /// Play one specific bundled clip right away (e.g. a recorded animal name), stopping
+  /// everything else.
   Future<void> playAsset(String assetPath) => _enqueue(assetPath, priority: true);
 
   /// Play a clip once whatever is playing or waiting has finished: an explanation after
@@ -423,9 +487,12 @@ class SoundService {
   }
 }
 
-/// Internal class to represent an audio task in the queue
+
+/// One thing to be heard: a recorded clip, or words for the device's voice.
 class _AudioTask {
-  final String assetPath;
-  
-  _AudioTask(this.assetPath);
+  final String? assetPath;
+  final String? text;
+
+  _AudioTask.clip(String this.assetPath) : text = null;
+  _AudioTask.speech(String this.text) : assetPath = null;
 }
