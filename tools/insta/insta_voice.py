@@ -66,6 +66,23 @@ def eleven(spec: dict, text: str, previous: str, following: str, out: pathlib.Pa
         sys.exit(f"ElevenLabs returned {e.code} for '{text}': {e.read().decode('utf-8', 'replace')[:300]}")
 
 
+def cue_times(clip: pathlib.Path, cues: list) -> list:
+    """The start of each cue word in the clip, in order, from Whisper's word times (on the GPU)."""
+    from faster_whisper import WhisperModel
+    model = WhisperModel("medium.en", device="cuda", compute_type="float16")
+    segments, _ = model.transcribe(str(clip), word_timestamps=True)
+    words = [(w.word.strip(" .,?!").lower(), w.start) for s in segments for w in s.words]
+    out, k = [], 0
+    for cue in cues:
+        while k < len(words) and not words[k][0].startswith(cue[:4]):
+            k += 1
+        if k == len(words):
+            sys.exit(f"the cue '{cue}' was not heard in {clip.name}: {[w for w, _ in words]}")
+        out.append(round(words[k][1], 3))
+        k += 1
+    return out
+
+
 def narrator(again: bool):
     spec = json.loads(LINES.read_text(encoding="utf-8"))
     if spec.get("provider") != "elevenlabs":     # Kokoro: the game's other film's speaker does it
@@ -89,6 +106,9 @@ def narrator(again: bool):
             spoken += 1
         lines[line["id"]] = {"label": "", "text": line["text"], "said": said[i], "clip": clip.name,
                              "seconds": film_voice.seconds(clip)}
+        if line.get("cues"):     # when, in the clip, each cue word is said: the film touches each picture then
+            before_cues = before.get("cue_times") if before.get("said") == said[i] and not again else None
+            lines[line["id"]]["cue_times"] = before_cues or cue_times(clip, line["cues"])
     manifest_file.write_text(json.dumps({"who": who, "lines": lines}, indent=1, ensure_ascii=False) + "\n",
                              encoding="utf-8", newline="\n")
     total = sum(line["seconds"] for line in lines.values())

@@ -347,6 +347,9 @@ class _Film {
   final _cuts = <Map<String, Object>>[];
   final _marks = <Map<String, Object>>[];
   final _boxes = <String, List<double>>{};
+  final _presses = <Map<String, Object>>[];
+  List<Map<String, Object?>> tiles = [];
+  List<Map<String, Object?>> web = [];
 
   void mark(String name) => _marks.add({'mark': name, 'frame': frames, 't': frames / _fps});
 
@@ -363,6 +366,9 @@ class _Film {
         'cuts': _cuts,
         'marks': _marks,
         'boxes': _boxes,
+        'presses': _presses,
+        'tiles': tiles,
+        'web': web,
       }));
 
   RenderRepaintBoundary get _boundary =>
@@ -406,7 +412,6 @@ class _Film {
 
   /// The narrator begins a line: never over the game's own voice (in the fast half that voice is not heard).
   Future<void> say(String id) async {
-    if (speed == 1) await quiet(0.1);
     final line = voice[id] as Map<String, dynamic>;
     _spoken.add({'id': id, 'frame': frames, 't': frames / _fps});
     _voiceEnds = frames + ((line['seconds'] as num) * _fps).ceil();
@@ -428,7 +433,8 @@ class _Film {
     if (!down) _touch.value = null;
   }
 
-  Future<void> press(Offset at) async {
+  Future<void> press(Offset at, [String kind = 'tile']) async {
+    if (speed == 1 && filming) _presses.add({'t': frames / _fps, 'kind': kind});
     final g = await tester.startGesture(at, pointer: _pointer++);
     await _fingerFade(at, down: true);
     await hold(0.07);
@@ -599,70 +605,93 @@ void main() {
       film.box('board', tester.getRect(find.byType(SingleChildScrollView).first));
       film.box('top', Rect.fromLTWH(0, 0, _screen.width, 200));
 
+      // The game's own voice is left out of the reel (the owner, 26 Nov 2026: "supress the voice from the
+      // app and you tell what is that you are clicking"). The narrator says what is touched, and the pace is
+      // hers: the finger touches each picture as its name is said.
+      final names = <String, Entity>{for (final e in engine.board!.tiles) e.id: e};
+      film.tiles = [
+        for (final e in engine.board!.tiles)
+          {
+            'id': e.id,
+            'label': e.label,
+            'rect': [
+              for (final v in [
+                tester.getRect(find.byKey(ValueKey(e.id))).left,
+                tester.getRect(find.byKey(ValueKey(e.id))).top,
+                tester.getRect(find.byKey(ValueKey(e.id))).right,
+                tester.getRect(find.byKey(ValueKey(e.id))).bottom,
+              ])
+                v * _ratio
+            ],
+          }
+      ];
+
+      /// The narrator says [line], and the finger touches [things] as each cue word of it is said.
+      Future<void> touchAsSaid(String line, List<Entity> things) async {
+        final cues = ((voice[line] as Map<String, dynamic>)['cue_times'] as List).cast<num>();
+        expect(cues, hasLength(things.length));
+        final from = film.frames;
+        await film.say(line);
+        for (var i = 0; i < things.length; i++) {
+          final due = from + (cues[i] * _fps).round() - 2; // the finger lands just as the word begins
+          while (film.frames < due) {
+            await film.frame();
+          }
+          await film.press(onTile(things[i]));
+        }
+        await film.spoken(0.15);
+      }
+
       // ------------------------------------------------ the hook: sixteen pictures
       film.mark('hook');
       await film.say('hook');
-      await film.spoken(0.1);
+      await film.spoken(0.25);
 
-      // ------------------------------------------------ touch: each picture says its name; four animals, right
-      // Two are touched on camera, each named; the other two in a cut, so the reel stays short.
+      // ------------------------------------------------ four animals, each named as it is touched; right
       film.mark('touch');
-      final animals = _animals(engine);
-      for (final e in animals.take(2)) {
-        await touch(e);
-      }
-      await film.cut(() async {
-        for (final e in animals.skip(2)) {
-          await touch(e);
-        }
-      });
-      film.box('buttons', tester.getRect(find.text('Submit')).inflate(40));
+      final animals = [for (final id in const ['dog', 'hen', 'catla_fish', 'stegosaurus']) names[id]!];
+      expect(animals.every((e) => group('animal').items.contains(e)), isTrue,
+          reason: 'the narrator names these four (insta.voice.json): the deal must be seed 4');
+      await touchAsSaid('animals', animals);
       film.mark('right');
-      await submit();
-      await film.untilGameSays('explanation');
-      film.mark('explained');
-      await film.hold(0.5);
+      await film.press(at(find.text('Submit')), 'submit');
+      await film.hold(0.15);
       expect(engine.solved.single.value, 'animal');
-      await film.cut(() => film.quiet(0.2));
+      await film.say('right');
+      await film.spoken(0.35);
 
       // ------------------------------------------------ a wrong guess: one away
-      // Three plants are chosen in a cut; on camera, the thing of nature that does not belong.
-      final plants = group('plant').items;
-      await film.cut(() async {
-        for (final e in plants.take(3)) {
-          await touch(e);
-        }
-      });
       film.mark('wrong');
-      await touch(_stray(engine)!);
-      await submit();
-      await film.quiet(0.2);
+      final plants = [for (final id in const ['coconut_tree', 'grass', 'rose', 'soil']) names[id]!];
+      await touchAsSaid('plants', plants);
+      film.mark('oneaway');
+      await film.press(at(find.text('Submit')), 'wrong');
+      await film.hold(0.15);
       expect(engine.mistakes, 1);
-      await film.say('wrong');
-      await film.spoken(0.2);
+      await film.say('oneaway');
+      await film.spoken(0.3);
 
       // ------------------------------------------------ a clue
       film.mark('clue');
       await film.say('clue');
-      await film.spoken(0.1);
+      await film.hold(1.2);
       film.box('clue', tester.getRect(find.byKey(const ValueKey('clue-button'))).inflate(30));
-      await film.press(at(find.byKey(const ValueKey('clue-button'))));
-      await film.quiet(0.3);
+      await film.press(at(find.byKey(const ValueKey('clue-button'))), 'button');
       expect(engine.cluesUsed, 1);
+      await film.spoken(1.1);
       await film.cut(() async {
-        await film.quiet();
         for (final rest in engine.board!.groups.where((x) => !engine.solved.contains(x)).toList()) {
           for (final e in rest.items) {
             await film.press(onTile(e));
           }
           await submit();
-          await film.quiet();
+          await film.hold(0.3);
         }
-        await film.quiet(0.3);
+        await film.hold(0.5);
       });
       expect(engine.boardFinished, isTrue);
       film.mark('done');
-      await film.hold(0.7);
+      await film.hold(0.5);
 
       // ------------------------------------------------ the second half: set after set, fast forward
       // The owner, 26 Nov 2026: "the second one is a bit more fast forwarded... such that when you show the
@@ -701,10 +730,6 @@ void main() {
         await film.live(12);
       }
       await film.spoken(0.0);
-      // what the game is still saying of its last set runs on, fast and unheard, before the pace slows
-      while (players.playing) {
-        await film.frame();
-      }
       await film.live(10);
       film.speed = 1;
       film.mark('slow');
@@ -712,7 +737,7 @@ void main() {
 
       // ------------------------------------------------ the web of what he has found, now rich
       film.mark('web');
-      await film.press(at(find.byKey(const ValueKey('web-mini'))));
+      await film.press(at(find.byKey(const ValueKey('web-mini'))), 'button');
       await film.say('web');
       await film.hold(0.4);
       if (find.byKey(const ValueKey('web-grew')).evaluate().isNotEmpty) {
@@ -720,6 +745,19 @@ void main() {
       }
       await film.spoken(1.8);
       _log('the web: ${engine.web.length} knots, ${engine.progress.lines.length} lines');
+      // his web, as the game holds it, for the 3D web of the reel's close
+      film.web = [
+        for (final n in engine.web)
+          {
+            'id': n.id,
+            'label': n.label,
+            'parent': n.parent,
+            'found': n.found,
+            'picture': n.picture?.art,
+            'also': n.also,
+            'end': n.end,
+          }
+      ];
 
       // ------------------------------------------------ the close
       film.mark('close');

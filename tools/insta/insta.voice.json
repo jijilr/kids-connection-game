@@ -1,16 +1,64 @@
 {
- "about": "The narrator's lines for the Instagram reel of the game (tools/insta). Since 26 Nov 2026 the narrator is ElevenLabs Bella, calm and a little slow, with the settings of the owner's Glym films (his word: 'use 11 labs voice... something a bit more soothing'). The first cut used Kokoro af_heart, which said 'Stuck?' as 'Stock?'. The narrator never speaks over the game: the game's names, its 'right' and 'one away', and its clue are heard in its own voice. 'say' is what the voice is given when it differs from the words.",
+ "about": "The narrator's lines for the Instagram reel of the game (tools/insta). ElevenLabs Bella, calm and a little slow, with the settings of the owner's Glym films. Since the third cut (26 Nov 2026) the game's own voice is left out of the reel altogether and the narrator says what is touched and what happens (the owner: 'supress the voice from the app and you tell what is that you are clicking'), so there is one voice and nothing can overlap. Each set of four names is one line, so the voice flows; 'cues' are the words at which the finger touches each picture, timed in the clip by Whisper. The names are those of the deal the film plays (seed 4); insta_game_test.dart checks that the pictures it touches are these. 'say' is what the voice is given when it differs from the words.",
  "provider": "elevenlabs",
  "voice": "EXAVITQu4vr4xnSDxMaL",
  "voice_name": "Bella (calm, as the Glym films)",
  "model": "eleven_multilingual_v2",
- "settings": {"stability": 0.62, "similarity_boost": 0.75, "style": 0.0, "use_speaker_boost": true, "speed": 0.87},
+ "settings": {
+  "stability": 0.62,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 0.87
+ },
  "lines": [
-  {"id": "hook", "text": "Sixteen pictures. Four hidden groups. Can your child find them?"},
-  {"id": "wrong", "text": "Wrong? It tells him how close he was."},
-  {"id": "clue", "text": "Stuck? A clue that never gives the answer away."},
-  {"id": "fast", "text": "Then set after set, he goes deeper."},
-  {"id": "web", "text": "And everything he finds grows his own web."},
-  {"id": "close", "text": "Connections. A picture game that grows with your child."}
+  {
+   "id": "hook",
+   "text": "Sixteen pictures. Four hidden groups. Can your child find them?"
+  },
+  {
+   "id": "animals",
+   "text": "Dog. Hen. A fish. And a stegosaurus.",
+   "cues": [
+    "dog",
+    "hen",
+    "fish",
+    "stegosaurus"
+   ]
+  },
+  {
+   "id": "right",
+   "text": "Yes! Four animals."
+  },
+  {
+   "id": "plants",
+   "text": "Coconut tree. Grass. Rose. And... soil?",
+   "cues": [
+    "coconut",
+    "grass",
+    "rose",
+    "soil"
+   ]
+  },
+  {
+   "id": "oneaway",
+   "text": "So close. One away."
+  },
+  {
+   "id": "clue",
+   "text": "Stuck? A clue that never gives the answer away."
+  },
+  {
+   "id": "fast",
+   "text": "Then set after set, he goes deeper."
+  },
+  {
+   "id": "web",
+   "text": "And everything he finds grows his own web."
+  },
+  {
+   "id": "close",
+   "text": "Connections. A picture game that grows with your child."
+  }
  ]
 }

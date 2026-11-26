@@ -408,6 +408,14 @@ the second at five times speed through ten sets, so the web at the end holds 35 
 average and 4 at the deepest; it opens on the sixteen pictures, close. The sound was checked: the narrator
 and the game never overlapped, and the make script now stops if two voices ever would. About 51 seconds.
 
+The third cut, the same day. The owner: "this is bad... supress the voice from the app and you tell what is
+that you are clicking", and "the vocabulary app's details I had given was not for you to replicate (the wooden
+background) but to be inspired and make better than that". So: one voice, the narrator, saying each picture as
+the finger touches it (timed by Whisper), with quiet sounds made here under her; and a new set of the game's
+own, no desk: a deep violet studio in the game's colours, the phone standing in the light, the sixteen real
+pictures flying into it in the opening, and his web growing at the close as a 3D constellation of his own
+pictures joined by threads of light (`tools/insta/insta_scene.py`, `insta_web.py`). About 43 seconds.
+
 ### Room for the set on a phone (24 Nov, night)
 The owner played on his phone and sent two pictures: the explanation "takes away too much vertical space
 and make it less fun to play", and the line "Yes! Plants" used room that "can be used better".

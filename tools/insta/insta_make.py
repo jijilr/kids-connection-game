@@ -37,6 +37,9 @@ from functools import lru_cache
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import insta_web  # noqa: E402  when each knot of his web comes in, for its sparkle
+
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 HERE = pathlib.Path(__file__).resolve().parent
 OUT = HERE / "out"
@@ -65,8 +68,7 @@ GOLD = (255, 201, 64)
 # Each: from, to, the lines, which of them is large. The first is on frame 0.
 WORDS = [
     ("hook", "touch", [("16 pictures.", "big"), ("4 hidden groups.", "big"), ("Can your child find them?", "mid")]),
-    ("touch", "right", [("Touch a picture:", "mid"), ("it says its name.", "mid")]),
-    ("right", "wrong", [("Find four that", "mid"), ("belong together.", "mid")]),
+    ("touch", "wrong", [("Find four that", "mid"), ("belong together.", "mid")]),
     ("wrong", "clue", [("Wrong?", "big"), ("It tells him how close he was.", "mid")]),
     ("clue", "fast", [("Stuck?", "big"), ("A clue, never the answer.", "mid")]),
     # the second half, fast forward (the owner, 26 Nov 2026), so the web at the end is rich
@@ -233,36 +235,44 @@ def make_track():
 
 
 def make_times() -> dict:
-    """Where the camera looks at each moment: a box of the screen's picture (pixels; past it, the desk), and a
-    view (elevation, azimuth: a person looking down at a desk), at a time."""
+    """When the pictures land, when the web grows, and where the camera looks: a box of the screen's picture
+    (pixels; past it, the air around the phone) or of his web's plane (shares of its radius), and a view
+    (elevation, azimuth: the phone stands, so the camera looks at it nearly level), at a time."""
     e = events()
     marks = {m["mark"]: m["t"] for m in e["marks"]}
     sw, sh = e["size"]
     boxes = e["boxes"]
-    full = (-24, -36, sw + 24, sh + 36)
+    full = (-30, -40, sw + 30, sh + 40)
     board = tuple(boxes["board"])
     lower = (10, sh * 0.56, sw - 10, sh * 0.93)        # the clue's words and the buttons
-    web = (sw * 0.06, sh * 0.16, sw * 0.94, sh * 0.58)   # the web's drawing, not the notes under it
-    wide = (-sw * 0.85, -sh * 0.45, sw * 1.85, sh * 1.45)
+    web_screen = (sw * 0.04, sh * 0.12, sw * 0.96, sh * 0.62)
     total = e["frames"] / FPS
+    land_from, land_to = 1.7, 3.9                      # the sixteen pictures fly in as "Can your child..." is said
+    web_slide = marks["web"] + 1.3                     # the phone goes, and his web grows behind it
+    web_from, web_to = web_slide + 0.4, marks["close"] - 0.1
+    whole = lambda m: {"web": [-m, -m, m, m]}
     shots = [
-        (0.0, board, (64, -8)),                                           # the sixteen pictures, from frame 0, moving
-        (marks["touch"] - 0.4, board, (70, -4)),
-        (marks["touch"] + 0.8, board, (73, -2)),                          # in on the pictures as they are touched
-        (marks["right"] + 1.6, board, (74, 1)),
-        (marks["wrong"] + 0.5, board, (73, 3)),
-        (marks["wrong"] + 4.6, full, (69, 1)),                            # back as the narrator speaks
-        (marks["clue"] + 2.6, lower, (74, 2)),                            # in on the clue as it is said
-        (marks["done"] - 0.6, lower, (74, 4)),
-        (marks["done"] + 0.5, full, (69, 0)),
-        (marks["fast"] + 1.0, full, (70, -5)),                            # the fast half: the whole phone, drifting
-        (marks["slow"] - 0.4, (0, sh * 0.08, sw, sh * 0.92), (72, 4)),
-        (marks["web"] + 1.4, web, (72, -3)),                              # the web, as it grows
-        (marks["close"] - 0.1, web, (73, -1)),
-        (marks["close"] + 2.2, wide, (58, 12)),                           # wide for the close
-        (total, wide, (55, 15)),
+        (0.0, board, (9, -13)),                                       # the cards in the air, from frame 0
+        (land_to + 0.3, board, (6, -6)),
+        (marks["touch"] + 0.6, board, (5, -3)),                       # the pictures as they are named
+        (marks["right"] + 1.4, board, (5, 2)),
+        (marks["wrong"] + 0.4, board, (6, 4)),
+        (marks["oneaway"] + 1.0, full, (7, 0)),
+        (marks["clue"] + 1.8, lower, (6, -3)),                        # in on the clue
+        (marks["done"] - 0.5, lower, (6, -5)),
+        (marks["done"] + 0.4, full, (8, -2)),
+        (marks["fast"] + 1.0, full, (9, -8)),                         # the fast half: the whole phone, turning
+        (marks["slow"] - 0.4, (0, sh * 0.08, sw, sh * 0.92), (8, 6)),
+        (marks["web"] + 0.7, web_screen, (6, 0)),                     # the web on the phone
+        (web_slide + 0.1, web_screen, (7, -2)),
+        (web_from + 0.9, whole(0.5), (8, -6)),                        # then in 3D, from its middle
+        (web_to, whole(0.86), (10, 4)),                               # the whole of it
+        (marks["close"] + 2.2, whole(0.95), (12, 8)),
+        (total, whole(0.98), (13, 10)),
     ]
-    times = {"screen_px": [sw, sh], "total": round(total, 3), "marks": marks, "shots": shots}
+    times = {"screen_px": [sw, sh], "total": round(total, 3), "marks": marks, "shots": shots,
+             "tiles": e["tiles"], "web": e["web"], "land_from": land_from, "land_to": land_to,
+             "web_slide": web_slide, "web_from": web_from, "web_to": web_to}
     TIMES.write_text(json.dumps(times, indent=1), encoding="utf-8")
     return times
 
@@ -316,38 +326,62 @@ def seconds_of(path: pathlib.Path) -> float:
                                  str(path)], capture_output=True, text=True, check=True).stdout)
 
 
-def sound(total: float) -> pathlib.Path:
-    """The narrator and the game's own clips, each at its moment, at one loudness; a clip still heard where
-    the film cuts forward is faded there, and one the game began inside a cut is not heard."""
+def tone(name: str, expr: str, seconds: float) -> pathlib.Path:
+    """A short sound made here, from a formula: nothing borrowed, nothing to license."""
+    out = OUT / "sfx" / f"{name}.wav"
+    if not out.exists():
+        out.parent.mkdir(parents=True, exist_ok=True)
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i",
+                        f"aevalsrc='{expr}':s=48000:d={seconds}", "-ac", "2", str(out)], check=True)
+    return out
+
+
+def sound(times: dict) -> pathlib.Path:
+    """The narrator alone, at one loudness: the game's own voice is left out of the reel (the owner, 26 Nov
+    2026: "supress the voice from the app and you tell what is that you are clicking"), so there is one voice
+    and nothing can overlap. Under it, quiet sounds made here: a soft tap for each touch, a chime when a group
+    is right, a low note when it is one away, a breath of air as the pictures fly in, and a faint sparkle as
+    each knot of his web comes in."""
     e = events()
+    total = times["total"]
     voice = json.loads((OUT / "voice/manifest.json").read_text(encoding="utf-8"))["lines"]
-    cuts = sorted(c["t"] for c in e["cuts"])
-    clips = [(OUT / "voice" / voice[s["id"]]["clip"], s["t"], None) for s in e["voice"]]
-    for heard in e["game"]:
-        if not heard["filmed"]:
-            continue
-        start, lasts = heard["t"], heard["seconds"]
-        cut = next((c for c in cuts if start < c < start + lasts), None)
-        if cut is not None and cut - start < HEARD_AT_LEAST:
-            continue
-        clips.append((ROOT / heard["asset"], start, None if cut is None else cut - start))
-    clips.sort(key=lambda c: c[1])
-    # never two voices at once: not the narrator over the game, nor the game over itself (the owner's
-    # question of 26 Nov 2026, "check the current video's background sound overlap with narration")
+    said = sorted(((OUT / "voice" / voice[s["id"]]["clip"], s["t"]) for s in e["voice"]), key=lambda c: c[1])
     until, last = 0.0, ""
-    for path, start, lasts in clips:
+    for path, start in said:
         if start < until - 0.05:
             sys.exit(f"two voices at once at {start:.1f} s: {path.name} begins while {last} is still heard")
-        until, last = start + (lasts if lasts is not None else seconds_of(path)), path.name
+        until, last = start + seconds_of(path), path.name
+    tap = tone("tap", "0.5*sin(2*PI*1320*t)*exp(-55*t)+0.25*sin(2*PI*2640*t)*exp(-80*t)", 0.14)
+    right = tone("right", "0.32*sin(2*PI*988*t)*exp(-5*t)+0.32*sin(2*PI*1319*max(t-0.11,0))*exp(-5*max(t-0.11,0))*(t>0.11)", 0.9)
+    near = tone("near", "0.32*sin(2*PI*523*t)*exp(-6*t)+0.3*sin(2*PI*440*max(t-0.13,0))*exp(-6*max(t-0.13,0))*(t>0.13)", 0.8)
+    air = tone("air", "0.10*sin(2*PI*(300+900*t)*t)*sin(PI*t/1.6)+0.05*sin(2*PI*(600+1500*t)*t)*sin(PI*t/1.6)", 1.6)
+    notes = [1568, 1760, 2093, 2349, 2637]
+    sparks = [tone(f"spark{n}", f"0.22*sin(2*PI*{n}*t)*exp(-14*t)", 0.35) for n in notes]
+    # presses inside a cut have the cut's own moment; they were not seen, and are not heard
+    seen = {}
+    for p in e["presses"]:
+        seen[round(p["t"], 2)] = seen.get(round(p["t"], 2), 0) + 1
+    effects = [(air, times["land_from"] - 0.2, -2.0)]
+    for p in e["presses"]:
+        if seen[round(p["t"], 2)] > 1:
+            continue
+        kind = p["kind"]
+        effects.append((tap, p["t"] + 0.06, -4.0))
+        if kind == "submit":
+            effects.append((right, p["t"] + 0.12, -3.0))
+        elif kind == "wrong":
+            effects.append((near, p["t"] + 0.12, -4.0))
+    for k, (i, t) in enumerate(sorted(insta_web.appear_times(times["web"], times["web_from"], times["web_to"]).items(),
+                                      key=lambda x: x[1])):
+        effects.append((sparks[k % len(sparks)], t, -9.0))
+    cmd = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error"]
     parts, names = [], []
-    for i, (path, start, lasts) in enumerate(clips):
+    clips = [(path, start, LEVEL - mean_volume(path)) for path, start in said] + effects
+    for i, (path, start, gain) in enumerate(clips):
         cmd += ["-i", str(path)]
-        gain = max(-12.0, min(12.0, LEVEL - mean_volume(path)))
-        chain = ["aformat=sample_rates=48000:channel_layouts=stereo", f"volume={gain:.1f}dB"]
-        if lasts is not None:
-            chain += [f"atrim=0:{lasts:.3f}", f"afade=t=out:st={max(0.0, lasts - FADE):.3f}:d={FADE}"]
-        chain.append(f"adelay={round(start * 1000)}:all=1")
-        parts.append(f"[{i}:a]{','.join(chain)}[a{i}]")
+        gain = max(-14.0, min(12.0, gain))
+        parts.append(f"[{i}:a]aformat=sample_rates=48000:channel_layouts=stereo,volume={gain:.1f}dB,"
+                     f"adelay={max(0, round(start * 1000))}:all=1[a{i}]")
         names.append(f"[a{i}]")
     parts.append(f"{''.join(names)}amix=inputs={len(names)}:normalize=0:dropout_transition=0,"
                  f"alimiter=limit=0.9,apad,atrim=0:{total:.3f}[out]")
@@ -358,8 +392,7 @@ def sound(total: float) -> pathlib.Path:
     done = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
     if done.returncode != 0:
         sys.exit("ffmpeg (sound) failed:\n" + done.stderr[-2000:])
-    print(f"sound: {sum(1 for c in clips if 'voice' in str(c[0]))} narrator lines, "
-          f"{sum(1 for c in clips if 'Assets' in str(c[0]))} clips of the game")
+    print(f"sound: {len(said)} narrator lines, {len(effects)} quiet sounds made here; none of the game's own voice")
     return wav
 
 
@@ -367,7 +400,7 @@ def film(times: dict):
     """The rendered frames, the words laid over each, streamed into the encoder with the sound."""
     total = times["total"]
     marks = times["marks"]
-    wav = sound(total)
+    wav = sound(times)
     n = round(total * FPS)
     FILM.parent.mkdir(parents=True, exist_ok=True)
     enc = subprocess.Popen(
@@ -410,7 +443,6 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--stills", help="times, comma separated: a look at half size, words on")
     args = ap.parse_args()
-    ensure_set()
     if any(SCREEN.glob("f*.png")):
         make_track()
     times = make_times()
